@@ -1481,12 +1481,13 @@ function private function_42673a26(player) {
     self sethintstring(self.stub.hint_string);
 }
 
-// Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x0
-// Checksum 0xb1570792, Offset: 0x5988
-// Size: 0x144
-function function_3012605d(unitrigger) {
-    /#
+/#
+
+    // Namespace zm_crafting/zm_crafting
+    // Params 1, eflags: 0x0
+    // Checksum 0xb1570792, Offset: 0x5988
+    // Size: 0x144
+    function function_3012605d(unitrigger) {
         if (!isdefined(level.var_644b04e2)) {
             level.var_644b04e2 = [];
         }
@@ -1503,24 +1504,21 @@ function function_3012605d(unitrigger) {
         util::waittill_can_add_debug_command();
         str_cmd = "<unknown string>" + table_id + "<unknown string>" + name + "<unknown string>" + table_id + "<unknown string>";
         adddebugcommand(str_cmd);
-    #/
-}
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x0
-// Checksum 0x2dfedea8, Offset: 0x5ad8
-// Size: 0x10
-function function_e197bb07(foundry) {
-    /#
-    #/
-}
+    // Namespace zm_crafting/zm_crafting
+    // Params 1, eflags: 0x0
+    // Checksum 0x2dfedea8, Offset: 0x5ad8
+    // Size: 0x10
+    function function_e197bb07(foundry) {
+        
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x0
-// Checksum 0x224d368d, Offset: 0x5af0
-// Size: 0xd0
-function function_e5af6b6e(blueprint) {
-    /#
+    // Namespace zm_crafting/zm_crafting
+    // Params 1, eflags: 0x0
+    // Checksum 0x224d368d, Offset: 0x5af0
+    // Size: 0xd0
+    function function_e5af6b6e(blueprint) {
         name = blueprint.name;
         if (blueprint.displayname != "<unknown string>") {
             name = blueprint.displayname;
@@ -1528,37 +1526,32 @@ function function_e5af6b6e(blueprint) {
         foreach (component in blueprint.components) {
             function_e9e4a1d0(name, component);
         }
-    #/
-}
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 2, eflags: 0x0
-// Checksum 0xf4cd06f3, Offset: 0x5bc8
-// Size: 0xa4
-function function_e9e4a1d0(var_a13e8cac, component) {
-    /#
+    // Namespace zm_crafting/zm_crafting
+    // Params 2, eflags: 0x0
+    // Checksum 0xf4cd06f3, Offset: 0x5bc8
+    // Size: 0xa4
+    function function_e9e4a1d0(var_a13e8cac, component) {
         util::waittill_can_add_debug_command();
         name = getweaponname(component);
         str_cmd = "<unknown string>" + var_a13e8cac + "<unknown string>" + name + "<unknown string>" + name + "<unknown string>";
         adddebugcommand(str_cmd);
-    #/
-}
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x0
-// Checksum 0x46ee9660, Offset: 0x5c78
-// Size: 0x10
-function function_4765f5b3(component) {
-    /#
-    #/
-}
+    // Namespace zm_crafting/zm_crafting
+    // Params 1, eflags: 0x0
+    // Checksum 0x46ee9660, Offset: 0x5c78
+    // Size: 0x10
+    function function_4765f5b3(component) {
+        
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x0
-// Checksum 0x81b388cf, Offset: 0x5c90
-// Size: 0xf4
-function devgui_get_players() {
-    /#
+    // Namespace zm_crafting/zm_crafting
+    // Params 0, eflags: 0x0
+    // Checksum 0x81b388cf, Offset: 0x5c90
+    // Size: 0xf4
+    function devgui_get_players() {
         var_4ab6b47 = getdvarstring(#"hash_7c8c0c3f35357a53");
         if (var_4ab6b47 != "<unknown string>") {
             player_id = int(var_4ab6b47);
@@ -1569,15 +1562,13 @@ function devgui_get_players() {
             }
         }
         return getplayers();
-    #/
-}
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 0, eflags: 0x0
-// Checksum 0xbae89ca5, Offset: 0x5d90
-// Size: 0x276
-function devgui_think() {
-    /#
+    // Namespace zm_crafting/zm_crafting
+    // Params 0, eflags: 0x0
+    // Checksum 0xbae89ca5, Offset: 0x5d90
+    // Size: 0x276
+    function devgui_think() {
         setdvar(#"hash_7c8c0c3f35357a53", "<unknown string>");
         util::waittill_can_add_debug_command();
         str_cmd = "<unknown string>";
@@ -1602,25 +1593,21 @@ function devgui_think() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x0
-// Checksum 0xd2d71efb, Offset: 0x6010
-// Size: 0x24
-function function_3e29352d(w_comp) {
-    /#
+    // Namespace zm_crafting/zm_crafting
+    // Params 1, eflags: 0x0
+    // Checksum 0xd2d71efb, Offset: 0x6010
+    // Size: 0x24
+    function function_3e29352d(w_comp) {
         self giveweapon(w_comp);
-    #/
-}
+    }
 
-// Namespace zm_crafting/zm_crafting
-// Params 1, eflags: 0x0
-// Checksum 0xa1bad28e, Offset: 0x6040
-// Size: 0x1e4
-function function_fe738a08(table_id) {
-    /#
+    // Namespace zm_crafting/zm_crafting
+    // Params 1, eflags: 0x0
+    // Checksum 0xa1bad28e, Offset: 0x6040
+    // Size: 0x1e4
+    function function_fe738a08(table_id) {
         unitrigger = level.var_644b04e2[table_id];
         entnum = self getentitynumber();
         origin = unitrigger.origin;
@@ -1644,6 +1631,6 @@ function function_fe738a08(table_id) {
         }
         self setorigin(plorigin);
         self setplayerangles(var_21f5823e);
-    #/
-}
+    }
 
+#/

@@ -82,18 +82,20 @@ function self_destruct_start(localclientnum, oldval, newval, bnewent, binitialsn
     }
 }
 
-// Namespace gadget_radiation_field/gadget_radiation_field
-// Params 2, eflags: 0x0
-// Checksum 0xc0779014, Offset: 0x868
-// Size: 0x9c
-function function_1a7aaaa8(localclientnum, text) {
-    /#
+/#
+
+    // Namespace gadget_radiation_field/gadget_radiation_field
+    // Params 2, eflags: 0x0
+    // Checksum 0xc0779014, Offset: 0x868
+    // Size: 0x9c
+    function function_1a7aaaa8(localclientnum, text) {
         if (getdvarint(#"hash_4e684995fef4afd7", 0) != 0) {
             inkillcam = function_1cbf351b(localclientnum);
             println("<unknown string>" + text + (inkillcam ? "<unknown string>" : "<unknown string>"));
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace gadget_radiation_field/gadget_radiation_field
 // Params 3, eflags: 0x1 linked

@@ -15,34 +15,31 @@
 
 #namespace zm_orange_devgui;
 
-// Namespace zm_orange_devgui/zm_orange_devgui
-// Params 0, eflags: 0x0
-// Checksum 0x60da2a13, Offset: 0xd0
-// Size: 0x1c
-function init() {
-    /#
-        level thread devgui();
-    #/
-}
+/#
 
-// Namespace zm_orange_devgui/zm_orange_devgui
-// Params 1, eflags: 0x4
-// Checksum 0x58721bff, Offset: 0xf8
-// Size: 0x6c
-function private jump_to(str_dest) {
-    /#
+    // Namespace zm_orange_devgui/zm_orange_devgui
+    // Params 0, eflags: 0x0
+    // Checksum 0x60da2a13, Offset: 0xd0
+    // Size: 0x1c
+    function init() {
+        level thread devgui();
+    }
+
+    // Namespace zm_orange_devgui/zm_orange_devgui
+    // Params 1, eflags: 0x4
+    // Checksum 0x58721bff, Offset: 0xf8
+    // Size: 0x6c
+    function private jump_to(str_dest) {
         s_dest = struct::get(str_dest);
         self setorigin(s_dest.origin);
         self setplayerangles(s_dest.angles);
-    #/
-}
+    }
 
-// Namespace zm_orange_devgui/zm_orange_devgui
-// Params 0, eflags: 0x4
-// Checksum 0x591a5e3, Offset: 0x170
-// Size: 0x8a8
-function private devgui() {
-    /#
+    // Namespace zm_orange_devgui/zm_orange_devgui
+    // Params 0, eflags: 0x4
+    // Checksum 0x591a5e3, Offset: 0x170
+    // Size: 0x8a8
+    function private devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -162,6 +159,6 @@ function private devgui() {
             }
             setdvar(#"zm_orange_debug_cmd", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

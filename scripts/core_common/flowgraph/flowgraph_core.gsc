@@ -233,20 +233,22 @@ function private exec() {
     }
 }
 
-// Namespace flowgraph/flowgraph_core
-// Params 0, eflags: 0x4
-// Checksum 0x12e0f1a7, Offset: 0x1448
-// Size: 0xb4
-function private mychanges_watcher() {
-    /#
+/#
+
+    // Namespace flowgraph/flowgraph_core
+    // Params 0, eflags: 0x4
+    // Checksum 0x12e0f1a7, Offset: 0x1448
+    // Size: 0xb4
+    function private mychanges_watcher() {
         if (self.target != level) {
             self.target endon(#"death", #"delete");
         }
         level waittill(#"flowgraph_mychanges");
         get_graph_def(self.def.name, 1);
         self.target run({#flowgraph_asset:self.def.name});
-    #/
-}
+    }
+
+#/
 
 // Namespace flowgraph/flowgraph_core
 // Params 2, eflags: 0x0

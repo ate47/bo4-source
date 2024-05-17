@@ -409,12 +409,13 @@ function lc_play_arc_fx(target, params) {
     fxorg delete();
 }
 
-// Namespace lightning_chain/zm_lightning_chain
-// Params 2, eflags: 0x4
-// Checksum 0x4c9833ba, Offset: 0x19a0
-// Size: 0x6e
-function private lc_debug_arc(origin, distance) {
-    /#
+/#
+
+    // Namespace lightning_chain/zm_lightning_chain
+    // Params 2, eflags: 0x4
+    // Checksum 0x4c9833ba, Offset: 0x19a0
+    // Size: 0x6e
+    function private lc_debug_arc(origin, distance) {
         if (getdvarint(#"zombie_debug", 0) != 3) {
             return;
         }
@@ -422,6 +423,6 @@ function private lc_debug_arc(origin, distance) {
         while (gettime() < start + 3000) {
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

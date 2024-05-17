@@ -42,25 +42,24 @@ function __init__() {
     #/
 }
 
-// Namespace zm_characters/zm_characters
-// Params 1, eflags: 0x4
-// Checksum 0xc57993ac, Offset: 0xc50
-// Size: 0x94
-function private zombie_force_char(n_char) {
-    /#
+/#
+
+    // Namespace zm_characters/zm_characters
+    // Params 1, eflags: 0x4
+    // Checksum 0xc57993ac, Offset: 0xc50
+    // Size: 0x94
+    function private zombie_force_char(n_char) {
         assert(isdefined(self));
         assert(isplayer(self));
         assert(isalive(self));
         set_character(n_char);
-    #/
-}
+    }
 
-// Namespace zm_characters/zm_characters
-// Params 1, eflags: 0x4
-// Checksum 0x486abc27, Offset: 0xcf0
-// Size: 0x10c
-function private function_9436b105(cmd) {
-    /#
+    // Namespace zm_characters/zm_characters
+    // Params 1, eflags: 0x4
+    // Checksum 0x486abc27, Offset: 0xcf0
+    // Size: 0x10c
+    function private function_9436b105(cmd) {
         if (issubstr(cmd, "vox_plr_3_exert_pain_high_3")) {
             tokens = strtok(cmd, "support_shaw");
             player = int(getsubstr(tokens[0], "support_rich".size));
@@ -68,8 +67,9 @@ function private function_9436b105(cmd) {
             players = getplayers();
             players[player - 1] thread zombie_force_char(character);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_characters/zm_characters
 // Params 0, eflags: 0x1 linked

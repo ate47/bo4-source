@@ -103,45 +103,43 @@ function on_hero_ability_kill(ability, victimability) {
     }
 }
 
-// Namespace blackjack_challenges/blackjack_challenges
-// Params 0, eflags: 0x0
-// Checksum 0x6b4f4606, Offset: 0x5e0
-// Size: 0x4c
-function debug_print_already_earned() {
-    /#
+/#
+
+    // Namespace blackjack_challenges/blackjack_challenges
+    // Params 0, eflags: 0x0
+    // Checksum 0x6b4f4606, Offset: 0x5e0
+    // Size: 0x4c
+    function debug_print_already_earned() {
         if (getdvarint(#"scr_blackjack_sidebet_debug", 0) == 0) {
             return;
         }
         iprintln("<unknown string>");
-    #/
-}
+    }
 
-// Namespace blackjack_challenges/blackjack_challenges
-// Params 0, eflags: 0x0
-// Checksum 0x6ca99c99, Offset: 0x638
-// Size: 0xa4
-function debug_print_kill_info() {
-    /#
+    // Namespace blackjack_challenges/blackjack_challenges
+    // Params 0, eflags: 0x0
+    // Checksum 0x6ca99c99, Offset: 0x638
+    // Size: 0xa4
+    function debug_print_kill_info() {
         if (getdvarint(#"scr_blackjack_sidebet_debug", 0) == 0) {
             return;
         }
         player = self;
         iprintln("<unknown string>" + player.pers[#"blackjack_specialist_kills"] + "<unknown string>" + player.pers[#"blackjack_unique_specialist_kills"]);
-    #/
-}
+    }
 
-// Namespace blackjack_challenges/blackjack_challenges
-// Params 0, eflags: 0x0
-// Checksum 0x2f70069e, Offset: 0x6e8
-// Size: 0x4c
-function debug_print_earned() {
-    /#
+    // Namespace blackjack_challenges/blackjack_challenges
+    // Params 0, eflags: 0x0
+    // Checksum 0x2f70069e, Offset: 0x6e8
+    // Size: 0x4c
+    function debug_print_earned() {
         if (getdvarint(#"scr_blackjack_sidebet_debug", 0) == 0) {
             return;
         }
         iprintln("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace blackjack_challenges/blackjack_challenges
 // Params 0, eflags: 0x0

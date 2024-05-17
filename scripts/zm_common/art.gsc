@@ -35,18 +35,20 @@ function __init__() {
     }
 }
 
-// Namespace art/art
-// Params 2, eflags: 0x0
-// Checksum 0xbe4b04db, Offset: 0x230
-// Size: 0x44
-function artfxprintln(file, string) {
-    /#
+/#
+
+    // Namespace art/art
+    // Params 2, eflags: 0x0
+    // Checksum 0xbe4b04db, Offset: 0x230
+    // Size: 0x44
+    function artfxprintln(file, string) {
         if (file == -1) {
             return;
         }
         fprintln(file, string);
-    #/
-}
+    }
+
+#/
 
 // Namespace art/art
 // Params 2, eflags: 0x1 linked
@@ -92,12 +94,13 @@ function setfogsliders() {
     setdvar(#"scr_fog_color", red + " " + green + " " + blue);
 }
 
-// Namespace art/art
-// Params 0, eflags: 0x0
-// Checksum 0x86bd2281, Offset: 0x510
-// Size: 0xb00
-function tweakart() {
-    /#
+/#
+
+    // Namespace art/art
+    // Params 0, eflags: 0x0
+    // Checksum 0x86bd2281, Offset: 0x510
+    // Size: 0xb00
+    function tweakart() {
         if (!isdefined(level.tweakfile)) {
             level.tweakfile = 0;
         }
@@ -183,8 +186,9 @@ function tweakart() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace art/art
 // Params 0, eflags: 0x0
@@ -217,12 +221,13 @@ function fovslidercheck() {
     }
 }
 
-// Namespace art/art
-// Params 0, eflags: 0x0
-// Checksum 0x4fd116e5, Offset: 0x1448
-// Size: 0x40c
-function dumpsettings() {
-    /#
+/#
+
+    // Namespace art/art
+    // Params 0, eflags: 0x0
+    // Checksum 0x4fd116e5, Offset: 0x1448
+    // Size: 0x40c
+    function dumpsettings() {
         if (getdvar(#"scr_art_dump", 0)) {
             println("<unknown string>" + level.fognearplane + "<unknown string>");
             println("<unknown string>" + level.fogexphalfplane + "<unknown string>");
@@ -248,6 +253,6 @@ function dumpsettings() {
             println("<unknown string>");
             setdvar(#"scr_art_dump", 0);
         }
-    #/
-}
+    }
 
+#/

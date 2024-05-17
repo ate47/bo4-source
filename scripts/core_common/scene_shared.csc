@@ -1246,7 +1246,7 @@ class csceneobject : cscriptbundleobjectbase {
         [[ _o_scene ]]->function_7a1288f1(str_shot);
         _str_shot = str_shot;
         var_55b4f21e = function_730a4c60(_str_shot);
-        cscriptbundleobjectbase::error(!isdefined(var_55b4f21e), "Shot struct is not defined for this object. Check and make sure that "" + _str_shot + "" is a valid shot name for this scene bundle");
+        cscriptbundleobjectbase::error(!isdefined(var_55b4f21e), "Shot struct is not defined for this object. Check and make sure that \"" + _str_shot + "\" is a valid shot name for this scene bundle");
         if (isdefined(_n_clientnum)) {
             play_per_client(_n_clientnum, n_start_time, b_looping);
             return;
@@ -1401,7 +1401,7 @@ class csceneobject : cscriptbundleobjectbase {
         waittillframeend();
         _str_shot = scene::function_de6a7579(_o_scene._str_name, "init", _o_scene._e_root);
         var_55b4f21e = function_730a4c60(_str_shot);
-        cscriptbundleobjectbase::error(!isdefined(var_55b4f21e), "Shot struct is not defined for this object. Check and make sure that "" + _str_shot + "" is a valid shot name for this scene bundle");
+        cscriptbundleobjectbase::error(!isdefined(var_55b4f21e), "Shot struct is not defined for this object. Check and make sure that \"" + _str_shot + "\" is a valid shot name for this scene bundle");
         if (isdefined(_n_clientnum)) {
             _spawn(_n_clientnum, isdefined(_s.firstframe) && _s.firstframe || isdefined(_s.initanim) || isdefined(_s.initanimloop));
         } else {

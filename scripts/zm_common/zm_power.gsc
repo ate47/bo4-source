@@ -48,12 +48,13 @@ function __main__() {
     #/
 }
 
-// Namespace zm_power/zm_power
-// Params 0, eflags: 0x0
-// Checksum 0x585175d7, Offset: 0x2d8
-// Size: 0xea
-function debug_powered_items() {
-    /#
+/#
+
+    // Namespace zm_power/zm_power
+    // Params 0, eflags: 0x0
+    // Checksum 0x585175d7, Offset: 0x2d8
+    // Size: 0xea
+    function debug_powered_items() {
         while (true) {
             if (getdvarint(#"zombie_equipment_health", 0)) {
                 if (isdefined(level.local_power)) {
@@ -64,8 +65,9 @@ function debug_powered_items() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_power/zm_power
 // Params 0, eflags: 0x1 linked

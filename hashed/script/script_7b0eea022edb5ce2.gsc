@@ -58,14 +58,17 @@ function __main__() {
     level.riotshield_melee = &function_4b03aab;
 }
 
-// Namespace namespace_b13f32ef/namespace_b13f32ef
-// Params 2, eflags: 0x0
-// Checksum 0x13ff5cc9, Offset: 0x270
-// Size: 0x18
-function function_64ff58da(color, var_6ab2cf36) {
-    /#
-    #/
-}
+/#
+
+    // Namespace namespace_b13f32ef/namespace_b13f32ef
+    // Params 2, eflags: 0x0
+    // Checksum 0x13ff5cc9, Offset: 0x270
+    // Size: 0x18
+    function function_64ff58da(color, var_6ab2cf36) {
+        
+    }
+
+#/
 
 // Namespace namespace_b13f32ef/namespace_b13f32ef
 // Params 1, eflags: 0x1 linked

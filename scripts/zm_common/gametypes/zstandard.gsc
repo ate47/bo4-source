@@ -148,12 +148,13 @@ function private finalize_clientfields() {
     clientfield::register("worlduimodel", "ZMHudGlobal.trials.gameStartTime", 1, 31, "int");
 }
 
-// Namespace zstandard/zstandard
-// Params 0, eflags: 0x0
-// Checksum 0x54689b24, Offset: 0xf68
-// Size: 0x1e8
-function function_6c2b3729() {
-    /#
+/#
+
+    // Namespace zstandard/zstandard
+    // Params 0, eflags: 0x0
+    // Checksum 0x54689b24, Offset: 0xf68
+    // Size: 0x1e8
+    function function_6c2b3729() {
         zm_devgui::add_custom_devgui_callback(&function_2f63dc81);
         adddebugcommand("bonus_points_team");
         adddebugcommand("<unknown string>");
@@ -169,15 +170,13 @@ function function_6c2b3729() {
                 util::add_debug_command("<unknown string>" + str_name + "<unknown string>" + "<unknown string>" + str_name + "<unknown string>" + "<unknown string>");
             }
         }
-    #/
-}
+    }
 
-// Namespace zstandard/zstandard
-// Params 1, eflags: 0x0
-// Checksum 0xabeb3a90, Offset: 0x1158
-// Size: 0x412
-function function_2f63dc81(cmd) {
-    /#
+    // Namespace zstandard/zstandard
+    // Params 1, eflags: 0x0
+    // Checksum 0xabeb3a90, Offset: 0x1158
+    // Size: 0x412
+    function function_2f63dc81(cmd) {
         switch (cmd) {
         case #"hash_196a879b48e37805":
             if (zm_utility::function_880bd896()) {
@@ -225,8 +224,9 @@ function function_2f63dc81(cmd) {
             }
             break;
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zstandard/zstandard
 // Params 0, eflags: 0x0
@@ -1974,12 +1974,13 @@ function function_3928d86(params) {
     }
 }
 
-// Namespace zstandard/zstandard
-// Params 0, eflags: 0x0
-// Checksum 0x890cdec2, Offset: 0x7a50
-// Size: 0xbe
-function function_ec53cb2c() {
-    /#
+/#
+
+    // Namespace zstandard/zstandard
+    // Params 0, eflags: 0x0
+    // Checksum 0x890cdec2, Offset: 0x7a50
+    // Size: 0xbe
+    function function_ec53cb2c() {
         level notify(#"hash_4bbfbbe6ad7c9dab");
         level endon(#"end_game", #"hash_4bbfbbe6ad7c9dab");
         if (!getdvarint(#"hash_5ae4497e02612bde", 1)) {
@@ -1989,8 +1990,9 @@ function function_ec53cb2c() {
             debug2dtext((8, 250, 0), "<unknown string>" + level.round_number, undefined, undefined, undefined, 1);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zstandard/zstandard
 // Params 1, eflags: 0x0

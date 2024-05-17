@@ -1255,12 +1255,13 @@ function private summonwolves(entity) {
     self.health = int(min(self.health + var_c59b482e, self.maxhealth));
 }
 
-// Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 0, eflags: 0x4
-// Checksum 0xff6eb7e6, Offset: 0x5780
-// Size: 0x1b8
-function private function_39671958() {
-    /#
+/#
+
+    // Namespace zm_ai_werewolf/zm_ai_werewolf
+    // Params 0, eflags: 0x4
+    // Checksum 0xff6eb7e6, Offset: 0x5780
+    // Size: 0x1b8
+    function private function_39671958() {
         werewolves = getaiarchetypearray(#"werewolf");
         foreach (werewolf in werewolves) {
             nearest_nodes = getnodesinradiussorted(werewolf.origin, 1024, 0);
@@ -1272,28 +1273,24 @@ function private function_39671958() {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 0, eflags: 0x4
-// Checksum 0x260865c8, Offset: 0x5940
-// Size: 0xa2
-function private function_bb9fe466() {
-    /#
+    // Namespace zm_ai_werewolf/zm_ai_werewolf
+    // Params 0, eflags: 0x4
+    // Checksum 0x260865c8, Offset: 0x5940
+    // Size: 0xa2
+    function private function_bb9fe466() {
         werewolves = getaiarchetypearray(#"werewolf");
         foreach (werewolf in werewolves) {
             werewolf.summon_wolves = 1;
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 0, eflags: 0x4
-// Checksum 0x6a1d9c5b, Offset: 0x59f0
-// Size: 0x110
-function private function_91180121() {
-    /#
+    // Namespace zm_ai_werewolf/zm_ai_werewolf
+    // Params 0, eflags: 0x4
+    // Checksum 0x6a1d9c5b, Offset: 0x59f0
+    // Size: 0x110
+    function private function_91180121() {
         var_d480edb7 = getscriptbundle(#"c_t8_zmb_werewolf_weakpoint_def");
         foreach (var_dd54fdb1 in var_d480edb7.weakpoints) {
             hittag = isdefined(var_dd54fdb1.var_51e8b151) ? var_dd54fdb1.var_51e8b151 : var_dd54fdb1.var_910e2f9b;
@@ -1301,29 +1298,25 @@ function private function_91180121() {
                 adddebugcommand("<unknown string>" + hittag + "<unknown string>" + hittag + "<unknown string>");
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 1, eflags: 0x4
-// Checksum 0x105d5f8d, Offset: 0x5b08
-// Size: 0xf8
-function private function_5ffd8dd3(hittag) {
-    /#
+    // Namespace zm_ai_werewolf/zm_ai_werewolf
+    // Params 1, eflags: 0x4
+    // Checksum 0x105d5f8d, Offset: 0x5b08
+    // Size: 0xf8
+    function private function_5ffd8dd3(hittag) {
         werewolves = getaiarchetypearray(#"werewolf");
         foreach (werewolf in werewolves) {
             var_dd54fdb1 = namespace_81245006::function_37e3f011(werewolf, hittag);
             werewolf function_ebf85268(undefined, undefined, var_dd54fdb1.health, undefined, undefined, undefined, undefined, undefined, undefined, undefined, hittag);
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_werewolf/zm_ai_werewolf
-// Params 0, eflags: 0x4
-// Checksum 0x303e5aa9, Offset: 0x5c08
-// Size: 0x428
-function private function_e79ce40a() {
-    /#
+    // Namespace zm_ai_werewolf/zm_ai_werewolf
+    // Params 0, eflags: 0x4
+    // Checksum 0x303e5aa9, Offset: 0x5c08
+    // Size: 0x428
+    function private function_e79ce40a() {
         adddebugcommand("<unknown string>");
         spawners = getactorspawnerarray();
         if (isdefined(spawners)) {
@@ -1379,8 +1372,9 @@ function private function_e79ce40a() {
             }
             setdvar(#"hash_4fe745cc8a7d9b8c", "<unknown string>");
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
 // Params 1, eflags: 0x1 linked

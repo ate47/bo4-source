@@ -135,12 +135,13 @@ function private function_a7e644f6(eventstruct) {
     }
 }
 
-// Namespace player_free_fall/player_free_fall
-// Params 0, eflags: 0x4
-// Checksum 0x9c550484, Offset: 0x6f0
-// Size: 0x124
-function private function_1fc427dc() {
-    /#
+/#
+
+    // Namespace player_free_fall/player_free_fall
+    // Params 0, eflags: 0x4
+    // Checksum 0x9c550484, Offset: 0x6f0
+    // Size: 0x124
+    function private function_1fc427dc() {
         mapname = util::get_map_name();
         waitframe(1);
         waitframe(1);
@@ -152,6 +153,6 @@ function private function_1fc427dc() {
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         waitframe(1);
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

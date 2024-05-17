@@ -563,15 +563,17 @@ function spent_points_tracking() {
     }
 }
 
-// Namespace zm_challenges/zm_challenges
-// Params 0, eflags: 0x0
-// Checksum 0x3bf97691, Offset: 0x2d38
-// Size: 0x24
-function increment_magic_box() {
-    /#
+/#
+
+    // Namespace zm_challenges/zm_challenges
+    // Params 0, eflags: 0x0
+    // Checksum 0x3bf97691, Offset: 0x2d38
+    // Size: 0x24
+    function increment_magic_box() {
         self debug_print("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_challenges/zm_challenges
 // Params 0, eflags: 0x1 linked
@@ -642,17 +644,19 @@ function function_a9f6b8ef() {
     }
 }
 
-// Namespace zm_challenges/zm_challenges
-// Params 1, eflags: 0x0
-// Checksum 0x6dec8294, Offset: 0x3090
-// Size: 0x6c
-function debug_print(str_line) {
-    /#
+/#
+
+    // Namespace zm_challenges/zm_challenges
+    // Params 1, eflags: 0x0
+    // Checksum 0x6dec8294, Offset: 0x3090
+    // Size: 0x6c
+    function debug_print(str_line) {
         if (getdvarint(#"zombie_debug", 0) > 0) {
             println("<unknown string>" + self.entity_num + "<unknown string>" + str_line);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_challenges/zm_challenges
 // Params 1, eflags: 0x1 linked

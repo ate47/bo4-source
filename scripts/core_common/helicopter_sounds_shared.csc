@@ -91,12 +91,13 @@ function init_heli_sound_values(heli_type, part_type, max_speed_vol, min_vol, ma
     #/
 }
 
-// Namespace helicopter_sounds/helicopter_sounds_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe906f6ad, Offset: 0xb78
-// Size: 0x580
-function command_parser() {
-    /#
+/#
+
+    // Namespace helicopter_sounds/helicopter_sounds_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe906f6ad, Offset: 0xb78
+    // Size: 0x580
+    function command_parser() {
         while (true) {
             command = getdvarstring(#"helisounds");
             if (command != "<unknown string>") {
@@ -166,8 +167,9 @@ function command_parser() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace helicopter_sounds/helicopter_sounds_shared
 // Params 0, eflags: 0x0

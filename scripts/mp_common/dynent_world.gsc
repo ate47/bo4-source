@@ -416,12 +416,13 @@ function event_handler[event_cf200f34] function_209450ae(eventstruct) {
     }
 }
 
-// Namespace dynent_world/dynent_world
-// Params 0, eflags: 0x4
-// Checksum 0x7aecb662, Offset: 0x1d50
-// Size: 0x176
-function private devgui_loop() {
-    /#
+/#
+
+    // Namespace dynent_world/dynent_world
+    // Params 0, eflags: 0x4
+    // Checksum 0x7aecb662, Offset: 0x1d50
+    // Size: 0x176
+    function private devgui_loop() {
         level endon(#"game_ended");
         while (!canadddebugcommand()) {
             waitframe(1);
@@ -443,15 +444,13 @@ function private devgui_loop() {
                 break;
             }
         }
-    #/
-}
+    }
 
-// Namespace dynent_world/dynent_world
-// Params 0, eflags: 0x4
-// Checksum 0x4e860e39, Offset: 0x1ed0
-// Size: 0x290
-function private function_6b66543a() {
-    /#
+    // Namespace dynent_world/dynent_world
+    // Params 0, eflags: 0x4
+    // Checksum 0x4e860e39, Offset: 0x1ed0
+    // Size: 0x290
+    function private function_6b66543a() {
         self endon(#"disconnect");
         while (true) {
             waitframe(1);
@@ -479,6 +478,6 @@ function private function_6b66543a() {
                 circle(top, maxs[0], color, 0, 1);
             }
         }
-    #/
-}
+    }
 
+#/

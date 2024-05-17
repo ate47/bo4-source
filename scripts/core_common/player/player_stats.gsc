@@ -4,12 +4,13 @@
 
 #namespace stats;
 
-// Namespace stats/player_stats
-// Params 2, eflags: 0x0
-// Checksum 0x2860bb99, Offset: 0x88
-// Size: 0x124
-function function_d92cb558(result, vararg) {
-    /#
+/#
+
+    // Namespace stats/player_stats
+    // Params 2, eflags: 0x0
+    // Checksum 0x2860bb99, Offset: 0x88
+    // Size: 0x124
+    function function_d92cb558(result, vararg) {
         if (!isdefined(result)) {
             pathstr = ishash(vararg[0]) ? function_9e72a96(vararg[0]) : vararg[0];
             if (!isdefined(pathstr)) {
@@ -20,8 +21,9 @@ function function_d92cb558(result, vararg) {
             }
             println("<unknown string>" + pathstr);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace stats/player_stats
 // Params 0, eflags: 0x1 linked

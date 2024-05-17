@@ -8,36 +8,33 @@
 
 #namespace scene;
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x2
-// Checksum 0x5c7c18f4, Offset: 0x98
-// Size: 0x3c
-function autoexec __init__system__() {
-    /#
-        system::register(#"scene_debug", &function_c3c9d0e5, undefined, undefined);
-    #/
-}
+/#
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x93be10d2, Offset: 0xe0
-// Size: 0x9c
-function function_c3c9d0e5() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x2
+    // Checksum 0x5c7c18f4, Offset: 0x98
+    // Size: 0x3c
+    function autoexec __init__system__() {
+        system::register(#"scene_debug", &function_c3c9d0e5, undefined, undefined);
+    }
+
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x93be10d2, Offset: 0xe0
+    // Size: 0x9c
+    function function_c3c9d0e5() {
         if (getdvarstring(#"scene_menu_mode", "<unknown string>") == "<unknown string>") {
             setdvar(#"scene_menu_mode", "<unknown string>");
         }
         level thread run_scene_tests();
         level thread toggle_scene_menu();
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x29628726, Offset: 0x188
-// Size: 0x4fe
-function run_scene_tests() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x29628726, Offset: 0x188
+    // Size: 0x4fe
+    function run_scene_tests() {
         level endon(#"run_scene_tests");
         level.scene_test_struct = spawnstruct();
         level.scene_test_struct.origin = (0, 0, 0);
@@ -98,29 +95,25 @@ function run_scene_tests() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x4c18b26b, Offset: 0x690
-// Size: 0xb8
-function clear_old_ents(str_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x4c18b26b, Offset: 0x690
+    // Size: 0xb8
+    function clear_old_ents(str_scene) {
         foreach (ent in getentarray(0)) {
             if (ent.scene_spawned === str_scene && ent.finished_scene === str_scene) {
                 ent delete();
             }
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x6053d32, Offset: 0x750
-// Size: 0x1f4
-function toggle_scene_menu() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x6053d32, Offset: 0x750
+    // Size: 0x1f4
+    function toggle_scene_menu() {
         setdvar(#"client_scene_menu", 0);
         n_scene_menu_last = -1;
         while (true) {
@@ -149,30 +142,26 @@ function toggle_scene_menu() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x14a20196, Offset: 0x950
-// Size: 0xdc
-function function_8ee42bf(o_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x14a20196, Offset: 0x950
+    // Size: 0xdc
+    function function_8ee42bf(o_scene) {
         if (isdefined(o_scene) && isdefined(o_scene._s)) {
             str_type = isdefined(o_scene._s.scenetype) ? o_scene._s.scenetype : "<unknown string>";
             if (level flagsys::get(str_type + "<unknown string>") && level flagsys::get(#"hash_5bcd66a9c21f5b2d")) {
                 level thread display_scene_menu(o_scene._s.scenetype);
             }
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 2, eflags: 0x0
-// Checksum 0xeb655b9c, Offset: 0xa38
-// Size: 0xd26
-function display_scene_menu(str_type, str_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0xeb655b9c, Offset: 0xa38
+    // Size: 0xd26
+    function display_scene_menu(str_type, str_scene) {
         if (!isdefined(str_type)) {
             str_type = "<unknown string>";
         }
@@ -331,38 +320,32 @@ function display_scene_menu(str_type, str_scene) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x8499f58f, Offset: 0x1768
-// Size: 0x84
-function function_c0f30783(s_scenedef) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x8499f58f, Offset: 0x1768
+    // Size: 0x84
+    function function_c0f30783(s_scenedef) {
         if (!(isdefined(s_scenedef.var_241c5f3c) && s_scenedef.var_241c5f3c) || isdefined(s_scenedef.var_241c5f3c) && s_scenedef.var_241c5f3c && getdvarint(#"zm_debug_ee", 0)) {
             return 1;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 4, eflags: 0x0
-// Checksum 0x330c57d8, Offset: 0x17f8
-// Size: 0x4c
-function scene_list_settext(strings, n_selected, str_title, var_444abf97) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 4, eflags: 0x0
+    // Checksum 0x330c57d8, Offset: 0x17f8
+    // Size: 0x4c
+    function scene_list_settext(strings, n_selected, str_title, var_444abf97) {
         level thread _scene_list_settext(strings, n_selected, str_title, var_444abf97);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 4, eflags: 0x0
-// Checksum 0x6dc296d5, Offset: 0x1850
-// Size: 0x38e
-function _scene_list_settext(strings, n_selected, str_title, var_444abf97) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 4, eflags: 0x0
+    // Checksum 0x6dc296d5, Offset: 0x1850
+    // Size: 0x38e
+    function _scene_list_settext(strings, n_selected, str_title, var_444abf97) {
         if (!isdefined(var_444abf97)) {
             var_444abf97 = 1;
         }
@@ -404,55 +387,47 @@ function _scene_list_settext(strings, n_selected, str_title, var_444abf97) {
             }
             debug2dtext((136, 400 + i * 25, 0), text, str_color, 1, (0, 0, 0), 1, 1, var_444abf97);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x25efd135, Offset: 0x1be8
-// Size: 0x60
-function is_scene_playing(str_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x25efd135, Offset: 0x1be8
+    // Size: 0x60
+    function is_scene_playing(str_scene) {
         if (str_scene != "<unknown string>" && str_scene != "<unknown string>") {
             if (level flagsys::get(str_scene + "<unknown string>")) {
                 return 1;
             }
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x4ff50359, Offset: 0x1c50
-// Size: 0x60
-function is_scene_initialized(str_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x4ff50359, Offset: 0x1c50
+    // Size: 0x60
+    function is_scene_initialized(str_scene) {
         if (str_scene != "<unknown string>" && str_scene != "<unknown string>") {
             if (level flagsys::get(str_scene + "<unknown string>")) {
                 return 1;
             }
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x33e3312f, Offset: 0x1cb8
-// Size: 0x2c
-function test_init(arg1) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x33e3312f, Offset: 0x1cb8
+    // Size: 0x2c
+    function test_init(arg1) {
         init(arg1, undefined, undefined, 1);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x7466226a, Offset: 0x1cf0
-// Size: 0x1b2
-function function_3bafd088(var_a572f325) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x7466226a, Offset: 0x1cf0
+    // Size: 0x1b2
+    function function_3bafd088(var_a572f325) {
         /#
             if (getdvarint(#"dvr_enable", 0) > 0 && getdvarint(#"scr_scene_dvr", 0) > 0) {
                 if (!isdefined(var_a572f325)) {
@@ -469,15 +444,13 @@ function function_3bafd088(var_a572f325) {
                 wait(1);
             }
         #/
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x9aa5bcd6, Offset: 0x1eb0
-// Size: 0x17c
-function function_d2785094(var_a572f325) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x9aa5bcd6, Offset: 0x1eb0
+    // Size: 0x17c
+    function function_d2785094(var_a572f325) {
         /#
             if (getdvarint(#"dvr_enable", 0) > 0 && getdvarint(#"scr_scene_dvr", 0) > 0) {
                 drawbig = 0;
@@ -500,15 +473,13 @@ function function_d2785094(var_a572f325) {
                 adddebugcommand(0, "<unknown string>");
             }
         #/
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 3, eflags: 0x0
-// Checksum 0xa61876b9, Offset: 0x2038
-// Size: 0x114
-function test_play(arg1, arg2, str_mode) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xa61876b9, Offset: 0x2038
+    // Size: 0x114
+    function test_play(arg1, arg2, str_mode) {
         if (!isdefined(level.var_a572f325)) {
             level.var_a572f325 = spawnstruct();
         }
@@ -523,15 +494,13 @@ function test_play(arg1, arg2, str_mode) {
         function_3bafd088(var_a572f325);
         play(arg1, arg2, undefined, 1, str_mode);
         function_d2785094(var_a572f325);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x8970ecf, Offset: 0x2158
-// Size: 0x380
-function debug_display() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x8970ecf, Offset: 0x2158
+    // Size: 0x380
+    function debug_display() {
         self endon(#"death");
         if (!(isdefined(self.debug_display) && self.debug_display) && self != level) {
             self.debug_display = 1;
@@ -556,6 +525,6 @@ function debug_display() {
                 wait(debug_time);
             }
         }
-    #/
-}
+    }
 
+#/

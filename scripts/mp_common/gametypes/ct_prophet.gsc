@@ -166,7 +166,7 @@ function function_b89106ad(gamedifficulty) {
     if (gamedifficulty == 0) {
         ct_prophet_tutorial::function_9b9525e9();
     } else {
-        function_72e84e64();
+        j_fore_le_01();
     }
     level notify(#"combattraining_logic_finished", {#success:1});
 }
@@ -186,7 +186,7 @@ function function_cf3224fe(b_success) {
 // Params 0, eflags: 0x0
 // Checksum 0x897662ce, Offset: 0xce0
 // Size: 0x280
-function function_72e84e64() {
+function j_fore_le_01() {
     level endon(#"combattraining_logic_finished");
     level thread ct_utils::function_1db91571();
     level thread ct_utils::function_289b4b9f(#"hash_2ef12070900a4e87", 5, 15, "stop_seeker_nag", &function_b80b4832);

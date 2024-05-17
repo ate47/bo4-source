@@ -490,12 +490,13 @@ function function_bb1ac745(s_altar) {
     s_altar.b_in_use = 0;
 }
 
-// Namespace zm_vapor_random/zm_vapor_random
-// Params 0, eflags: 0x4
-// Checksum 0xc648264c, Offset: 0x1e48
-// Size: 0xe4
-function private function_5d55ce5f() {
-    /#
+/#
+
+    // Namespace zm_vapor_random/zm_vapor_random
+    // Params 0, eflags: 0x4
+    // Checksum 0xc648264c, Offset: 0x1e48
+    // Size: 0xe4
+    function private function_5d55ce5f() {
         level waittill(#"start_zombie_round_logic");
         adddebugcommand("<unknown string>");
         while (true) {
@@ -509,6 +510,6 @@ function private function_5d55ce5f() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

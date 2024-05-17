@@ -211,7 +211,7 @@ function function_b89106ad(gamedifficulty) {
     if (level.ctdifficulty == 0) {
         namespace_56b8c026::function_9b9525e9();
     } else {
-        function_72e84e64();
+        j_fore_le_01();
     }
     level notify(#"combattraining_logic_finished", {#success:1});
 }
@@ -231,7 +231,7 @@ function function_cf3224fe(b_success) {
 // Params 0, eflags: 0x0
 // Checksum 0xe3c01d93, Offset: 0xfa8
 // Size: 0x248
-function function_72e84e64() {
+function j_fore_le_01() {
     level endon(#"combattraining_logic_finished");
     level flag::set("gamemode_started");
     level.var_cbcb0078 = 1;
@@ -689,12 +689,13 @@ function function_8aa1c633() {
     e_player thread ct_utils::function_329f9ba6(#"hash_443101fa69c21abf", 5, "green");
 }
 
-// Namespace ct_seraph/ct_seraph
-// Params 0, eflags: 0x0
-// Checksum 0x17996f25, Offset: 0x28c0
-// Size: 0x1b8
-function function_849be68a() {
-    /#
+/#
+
+    // Namespace ct_seraph/ct_seraph
+    // Params 0, eflags: 0x0
+    // Checksum 0x17996f25, Offset: 0x28c0
+    // Size: 0x1b8
+    function function_849be68a() {
         sessionmode = currentsessionmode();
         setdvar(#"hash_527da51d610a31b1", "<unknown string>");
         level flag::init("<unknown string>");
@@ -718,6 +719,6 @@ function function_849be68a() {
             }
             setdvar(#"hash_527da51d610a31b1", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

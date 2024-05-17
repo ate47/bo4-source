@@ -428,12 +428,13 @@ function private set_ignore_health_regen_delay(b_value = 1) {
     self.ignore_health_regen_delay = 0;
 }
 
-// Namespace val/values_shared
-// Params 4, eflags: 0x24
-// Checksum 0xed43bebf, Offset: 0x1780
-// Size: 0xfe
-function private validate(str_name, call_on, func, ...) {
-    /#
+/#
+
+    // Namespace val/values_shared
+    // Params 4, eflags: 0x24
+    // Checksum 0xed43bebf, Offset: 0x1780
+    // Size: 0xfe
+    function private validate(str_name, call_on, func, ...) {
         a_registered = getarraykeys(level.values);
         if (!isinarray(a_registered, hash(str_name))) {
             assertmsg("<unknown string>" + str_name + "<unknown string>");
@@ -444,15 +445,13 @@ function private validate(str_name, call_on, func, ...) {
         s_value.func_validate = func;
         s_value.validate_call_on = call_on;
         s_value.validate_args = vararg;
-    #/
-}
+    }
 
-// Namespace val/values_shared
-// Params 3, eflags: 0x4
-// Checksum 0x5560ff6c, Offset: 0x1888
-// Size: 0x16a
-function private _validate_value(str_name, value, b_assert) {
-    /#
+    // Namespace val/values_shared
+    // Params 3, eflags: 0x4
+    // Checksum 0x5560ff6c, Offset: 0x1888
+    // Size: 0x16a
+    function private _validate_value(str_name, value, b_assert) {
         if (!isdefined(b_assert)) {
             b_assert = 0;
         }
@@ -468,15 +467,13 @@ function private _validate_value(str_name, value, b_assert) {
             assert(b_match, "<unknown string>" + function_9e72a96(str_name) + "<unknown string>" + current_value + "<unknown string>" + value + "<unknown string>");
         }
         return b_match;
-    #/
-}
+    }
 
-// Namespace val/values_shared
-// Params 0, eflags: 0x4
-// Checksum 0x490c882d, Offset: 0x1a00
-// Size: 0x484
-function private debug_values() {
-    /#
+    // Namespace val/values_shared
+    // Params 0, eflags: 0x4
+    // Checksum 0x490c882d, Offset: 0x1a00
+    // Size: 0x484
+    function private debug_values() {
         level flagsys::init_dvar("<unknown string>");
         level flagsys::wait_till("<unknown string>");
         while (true) {
@@ -524,15 +521,13 @@ function private debug_values() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace val/values_shared
-// Params 6, eflags: 0x0
-// Checksum 0x2c9da168, Offset: 0x1e90
-// Size: 0x224
-function display_value(index, str_name, str_id, value, b_valid, on_hud) {
-    /#
+    // Namespace val/values_shared
+    // Params 6, eflags: 0x0
+    // Checksum 0x2c9da168, Offset: 0x1e90
+    // Size: 0x224
+    function display_value(index, str_name, str_id, value, b_valid, on_hud) {
         if (!isdefined(on_hud)) {
             on_hud = 0;
         }
@@ -555,6 +550,6 @@ function display_value(index, str_name, str_id, value, b_valid, on_hud) {
             debug2dtext((200, 100 + index * 20, 0), str_value, color, 1, (0, 0, 0), 0.5, 0.8, 1);
         }
         print3d(self.origin - (0, 0, index * 8), str_value, color, 1, 0.3, 1);
-    #/
-}
+    }
 
+#/

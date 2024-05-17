@@ -174,18 +174,20 @@ function main() {
     }
 }
 
-// Namespace vehicle_death/vehicle_death_shared
-// Params 0, eflags: 0x0
-// Checksum 0xd551d906, Offset: 0xb50
-// Size: 0x56
-function function_52abcd2e() {
-    /#
+/#
+
+    // Namespace vehicle_death/vehicle_death_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xd551d906, Offset: 0xb50
+    // Size: 0x56
+    function function_52abcd2e() {
         while (isdefined(self)) {
             util::debug_sphere(self.origin, 5, (0.9, 0, 0), 0.9, 300);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace vehicle_death/vehicle_death_shared
 // Params 0, eflags: 0x1 linked

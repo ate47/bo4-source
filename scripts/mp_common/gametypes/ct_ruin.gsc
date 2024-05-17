@@ -206,7 +206,7 @@ function function_7d779cf7(gamedifficulty) {
         level.var_ebad4ea8 = gettime();
         ct_ruin_tutorial::function_9b9525e9();
     } else {
-        function_72e84e64();
+        j_fore_le_01();
     }
     level notify(#"combattraining_logic_finished", {#success:1});
 }
@@ -265,7 +265,7 @@ function function_ecd8cc50() {
 // Params 0, eflags: 0x0
 // Checksum 0xddcc765d, Offset: 0x1340
 // Size: 0x21c
-function function_72e84e64() {
+function j_fore_le_01() {
     level endon(#"hash_19a2268f375ca51f");
     self ct_utils::objcounter_init(undefined, 0, level.var_b5529824, 1);
     var_932b0566 = getentarray("destroysite", "targetname");

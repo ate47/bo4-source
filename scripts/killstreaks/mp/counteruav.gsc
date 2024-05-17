@@ -277,30 +277,30 @@ function maintaincouteruaventities() {
     }
 }
 
-// Namespace counteruav/counteruav
-// Params 0, eflags: 0x0
-// Checksum 0xa53e3f85, Offset: 0x1090
-// Size: 0x34
-function waitanddebugdrawoffsetlist() {
-    /#
+/#
+
+    // Namespace counteruav/counteruav
+    // Params 0, eflags: 0x0
+    // Checksum 0xa53e3f85, Offset: 0x1090
+    // Size: 0x34
+    function waitanddebugdrawoffsetlist() {
         level endon(#"game_ended");
         wait(10);
         debugdrawoffsetlist();
-    #/
-}
+    }
 
-// Namespace counteruav/counteruav
-// Params 0, eflags: 0x0
-// Checksum 0xe47ffc22, Offset: 0x10d0
-// Size: 0xd0
-function debugdrawoffsetlist() {
-    /#
+    // Namespace counteruav/counteruav
+    // Params 0, eflags: 0x0
+    // Checksum 0xe47ffc22, Offset: 0x10d0
+    // Size: 0xd0
+    function debugdrawoffsetlist() {
         baseposition = level.counter_uav_positions[0];
         foreach (offset in level.counter_uav_offsets) {
             util::debug_sphere(baseposition + offset, 24, (0.95, 0.05, 0.05), 0.75, 9999999);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace counteruav/counteruav
 // Params 4, eflags: 0x0

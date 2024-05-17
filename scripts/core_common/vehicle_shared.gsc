@@ -1170,12 +1170,13 @@ function set_speed(speed, rate, msg) {
     self setspeed(speed, rate);
 }
 
-// Namespace vehicle/vehicle_shared
-// Params 3, eflags: 0x0
-// Checksum 0xad44e0ac, Offset: 0x4f00
-// Size: 0xfc
-function debug_set_speed(speed, rate, msg) {
-    /#
+/#
+
+    // Namespace vehicle/vehicle_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xad44e0ac, Offset: 0x4f00
+    // Size: 0xfc
+    function debug_set_speed(speed, rate, msg) {
         self notify(#"new debug_vehiclesetspeed");
         self endon(#"new debug_vehiclesetspeed", #"resuming speed", #"death");
         while (true) {
@@ -1185,8 +1186,9 @@ function debug_set_speed(speed, rate, msg) {
             }
             wait(0.5);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace vehicle/vehicle_shared
 // Params 2, eflags: 0x1 linked
@@ -1220,12 +1222,13 @@ function script_resume_speed(msg, rate) {
     #/
 }
 
-// Namespace vehicle/vehicle_shared
-// Params 1, eflags: 0x0
-// Checksum 0x8db004b3, Offset: 0x5170
-// Size: 0x132
-function debug_resume(msg) {
-    /#
+/#
+
+    // Namespace vehicle/vehicle_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x8db004b3, Offset: 0x5170
+    // Size: 0x132
+    function debug_resume(msg) {
         if (getdvarstring(#"debug_vehicleresume") == "<unknown string>") {
             return;
         }
@@ -1241,8 +1244,9 @@ function debug_resume(msg) {
             }
         }
         self.resumemsgs = newarray;
-    #/
-}
+    }
+
+#/
 
 // Namespace vehicle/vehicle_shared
 // Params 1, eflags: 0x0
@@ -2416,12 +2420,13 @@ function get_nearest_target(valid_targets) {
     return nearest;
 }
 
-// Namespace vehicle/vehicle_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe72754b2, Offset: 0x8ac0
-// Size: 0xd6
-function debug_vehicle() {
-    /#
+/#
+
+    // Namespace vehicle/vehicle_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe72754b2, Offset: 0x8ac0
+    // Size: 0xd6
+    function debug_vehicle() {
         self endon(#"death");
         if (getdvarstring(#"debug_vehicle_health") == "<unknown string>") {
             setdvar(#"debug_vehicle_health", 0);
@@ -2432,15 +2437,13 @@ function debug_vehicle() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace vehicle/vehicle_shared
-// Params 0, eflags: 0x0
-// Checksum 0x2341b5c6, Offset: 0x8ba0
-// Size: 0x15a
-function debug_vehicle_paths() {
-    /#
+    // Namespace vehicle/vehicle_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x2341b5c6, Offset: 0x8ba0
+    // Size: 0x15a
+    function debug_vehicle_paths() {
         self endon(#"death", #"newpath", #"endpath", #"reached_dynamic_path_end");
         for (nextnode = self.currentnode; true; nextnode = self.nextnode) {
             if (getdvarint(#"debug_vehicle_paths", 0) > 0) {
@@ -2452,8 +2455,9 @@ function debug_vehicle_paths() {
             if (isdefined(self.nextnode) && self.nextnode != nextnode) {
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace vehicle/vehicle_shared
 // Params 0, eflags: 0x1 linked
@@ -3050,12 +3054,13 @@ function enable_laser(b_enable, n_index) {
     self notify(#"laser_death_thread_stop");
 }
 
-// Namespace vehicle/vehicle_shared
-// Params 0, eflags: 0x0
-// Checksum 0x378be86b, Offset: 0xaa78
-// Size: 0x436
-function vehicle_spawner_tool() {
-    /#
+/#
+
+    // Namespace vehicle/vehicle_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x378be86b, Offset: 0xaa78
+    // Size: 0x436
+    function vehicle_spawner_tool() {
         vehicleassets = function_951b4205();
         if (vehicleassets.size == 0) {
             return;
@@ -3112,15 +3117,13 @@ function vehicle_spawner_tool() {
             }
             wait(2);
         }
-    #/
-}
+    }
 
-// Namespace vehicle/vehicle_shared
-// Params 0, eflags: 0x0
-// Checksum 0x1a5d806b, Offset: 0xaeb8
-// Size: 0xa6
-function spline_debug() {
-    /#
+    // Namespace vehicle/vehicle_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x1a5d806b, Offset: 0xaeb8
+    // Size: 0xa6
+    function spline_debug() {
         level flag::init("<unknown string>");
         level thread _spline_debug();
         while (true) {
@@ -3129,15 +3132,13 @@ function spline_debug() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace vehicle/vehicle_shared
-// Params 0, eflags: 0x0
-// Checksum 0xc7fb1957, Offset: 0xaf68
-// Size: 0xb2
-function _spline_debug() {
-    /#
+    // Namespace vehicle/vehicle_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xc7fb1957, Offset: 0xaf68
+    // Size: 0xb2
+    function _spline_debug() {
         while (true) {
             level flag::wait_till("<unknown string>");
             foreach (nd in getallvehiclenodes()) {
@@ -3145,15 +3146,13 @@ function _spline_debug() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace vehicle/vehicle_shared
-// Params 0, eflags: 0x0
-// Checksum 0xdda9c700, Offset: 0xb028
-// Size: 0xbc
-function show_node_debug_info() {
-    /#
+    // Namespace vehicle/vehicle_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xdda9c700, Offset: 0xb028
+    // Size: 0xbc
+    function show_node_debug_info() {
         self.n_debug_display_count = 0;
         if (is_unload_node()) {
             print_debug_info("<unknown string>" + self.script_unload + "<unknown string>");
@@ -3164,19 +3163,18 @@ function show_node_debug_info() {
         if (isdefined(self.script_delete) && self.script_delete) {
             print_debug_info("<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace vehicle/vehicle_shared
-// Params 1, eflags: 0x0
-// Checksum 0x76365f44, Offset: 0xb0f0
-// Size: 0x5c
-function print_debug_info(str_info) {
-    /#
+    // Namespace vehicle/vehicle_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x76365f44, Offset: 0xb0f0
+    // Size: 0x5c
+    function print_debug_info(str_info) {
         self.n_debug_display_count++;
         print3d(self.origin - (0, 0, self.n_debug_display_count * 20), str_info, (0, 0, 1), 1, 1);
-    #/
-}
+    }
+
+#/
 
 // Namespace vehicle/vehicle_shared
 // Params 2, eflags: 0x0

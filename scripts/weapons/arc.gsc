@@ -26,18 +26,20 @@ function init_arc(weapon, var_26b2b1bb) {
     function_8d134256(var_26b2b1bb);
 }
 
-// Namespace arc/arc
-// Params 0, eflags: 0x0
-// Checksum 0xcfb4eda1, Offset: 0x140
-// Size: 0x4a
-function update_dvars() {
-    /#
+/#
+
+    // Namespace arc/arc
+    // Params 0, eflags: 0x0
+    // Checksum 0xcfb4eda1, Offset: 0x140
+    // Size: 0x4a
+    function update_dvars() {
         while (true) {
             wait(1);
             level.var_6d3af47 = getdvarint(#"hash_6e465f7410cc100f", 0);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace arc/arc
 // Params 2, eflags: 0x1 linked
@@ -97,26 +99,26 @@ function function_9b14bec4(eattacker, einflictor, weapon, meansofdeath, damage, 
     self find_arc_targets(var_26b2b1bb, eattacker, arc_source, arc_source_origin, 0);
 }
 
-// Namespace arc/arc
-// Params 2, eflags: 0x0
-// Checksum 0xa11234ae, Offset: 0x490
-// Size: 0x4c
-function function_bf7d5b02(arc_source_origin, max_range) {
-    /#
-        circle(arc_source_origin, max_range, (1, 0.5, 0), 0, 1, 2);
-    #/
-}
+/#
 
-// Namespace arc/arc
-// Params 4, eflags: 0x0
-// Checksum 0xeb651a1d, Offset: 0x4e8
-// Size: 0x7c
-function function_7a0599d(var_955a2e18, range, depth, var_94a1d56d) {
-    /#
+    // Namespace arc/arc
+    // Params 2, eflags: 0x0
+    // Checksum 0xa11234ae, Offset: 0x490
+    // Size: 0x4c
+    function function_bf7d5b02(arc_source_origin, max_range) {
+        circle(arc_source_origin, max_range, (1, 0.5, 0), 0, 1, 2);
+    }
+
+    // Namespace arc/arc
+    // Params 4, eflags: 0x0
+    // Checksum 0xeb651a1d, Offset: 0x4e8
+    // Size: 0x7c
+    function function_7a0599d(var_955a2e18, range, depth, var_94a1d56d) {
         var_227ac3be = depth / (var_94a1d56d - 1);
         circle(var_955a2e18, range, (0, 1 - var_227ac3be, var_227ac3be), 0, 1, 500);
-    #/
-}
+    }
+
+#/
 
 // Namespace arc/arc
 // Params 4, eflags: 0x1 linked

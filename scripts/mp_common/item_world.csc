@@ -142,12 +142,13 @@ function private function_952d97dc(localclientnum) {
     level.var_19cf0be9[localclientnum] = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.pickupHintImage");
 }
 
-// Namespace item_world/item_world
-// Params 0, eflags: 0x4
-// Checksum 0x7d39b985, Offset: 0x1618
-// Size: 0x174
-function private function_cdd9b388() {
-    /#
+/#
+
+    // Namespace item_world/item_world
+    // Params 0, eflags: 0x4
+    // Checksum 0x7d39b985, Offset: 0x1618
+    // Size: 0x174
+    function private function_cdd9b388() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         self endon(#"shutdown");
@@ -163,8 +164,9 @@ function private function_cdd9b388() {
                 }
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace item_world/item_world
 // Params 2, eflags: 0x4

@@ -167,12 +167,13 @@ function function_aafe4c74() {
     }
 }
 
-// Namespace clean/clean
-// Params 0, eflags: 0x0
-// Checksum 0x529c668e, Offset: 0x10b8
-// Size: 0xde
-function debug_print() {
-    /#
+/#
+
+    // Namespace clean/clean
+    // Params 0, eflags: 0x0
+    // Checksum 0x529c668e, Offset: 0x10b8
+    // Size: 0xde
+    function debug_print() {
         while (true) {
             iprintln("shamrock_enemy_collect" + level.activedrops);
             iprintln("<unknown string>" + level.var_8b5ef67d);
@@ -181,8 +182,9 @@ function debug_print() {
             iprintln("<unknown string>" + level.var_b8c2e6df);
             wait(5);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace clean/clean
 // Params 1, eflags: 0x0

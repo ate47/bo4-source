@@ -24,12 +24,13 @@ function __init__() {
     #/
 }
 
-// Namespace zm_hms_util/zm_hms_util
-// Params 0, eflags: 0x0
-// Checksum 0xd91216bd, Offset: 0x118
-// Size: 0xa6
-function function_774b42ac() {
-    /#
+/#
+
+    // Namespace zm_hms_util/zm_hms_util
+    // Params 0, eflags: 0x0
+    // Checksum 0xd91216bd, Offset: 0x118
+    // Size: 0xa6
+    function function_774b42ac() {
         localclientnum = self getlocalclientnumber();
         if (!isdefined(localclientnum)) {
             return;
@@ -39,6 +40,6 @@ function function_774b42ac() {
             debug2dtext((5, 1035, 0), "<unknown string>" + a_ents.size, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
             waitframe(30);
         }
-    #/
-}
+    }
 
+#/

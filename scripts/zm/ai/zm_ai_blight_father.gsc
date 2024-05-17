@@ -1659,12 +1659,13 @@ function private function_5e853c85(grappler) {
     self.var_f4e33249 = 0;
 }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x4
-// Checksum 0x935cfd72, Offset: 0x82d0
-// Size: 0xa8
-function private function_e989972e(grappler) {
-    /#
+/#
+
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 1, eflags: 0x4
+    // Checksum 0x935cfd72, Offset: 0x82d0
+    // Size: 0xa8
+    function private function_e989972e(grappler) {
         self endon(#"disconnect");
         grappler endon(#"death", #"hash_2fb2eddfa6a0ef3f");
         while (true) {
@@ -1674,8 +1675,9 @@ function private function_e989972e(grappler) {
             }
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
 // Params 1, eflags: 0x5 linked
@@ -2925,26 +2927,25 @@ function private on_host_migration_end(params) {
     level.var_fcb96175 = gettime() + int(30 * 1000);
 }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x4
-// Checksum 0xf7f8793a, Offset: 0xcb70
-// Size: 0x8a
-function private function_ebc88dbd(part_name) {
-    /#
+/#
+
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 1, eflags: 0x4
+    // Checksum 0xf7f8793a, Offset: 0xcb70
+    // Size: 0x8a
+    function private function_ebc88dbd(part_name) {
         foreach (weakpoint in self.var_d88561ed) {
             if (weakpoint.var_19e7c1c4 == part_name) {
                 return weakpoint;
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x4
-// Checksum 0x8c688f9b, Offset: 0xcc08
-// Size: 0x180
-function private function_cab68577(hittag) {
-    /#
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 1, eflags: 0x4
+    // Checksum 0x8c688f9b, Offset: 0xcc08
+    // Size: 0x180
+    function private function_cab68577(hittag) {
         enemies = getaiarchetypearray(#"blight_father");
         foreach (enemy in enemies) {
             if (isalive(enemy)) {
@@ -2957,15 +2958,13 @@ function private function_cab68577(hittag) {
                 enemy function_afce1cf(level.players[0], level.players[0], var_84ed9a13.maxhealth, undefined, undefined, level.players[0] getcurrentweapon(), level.players[0].origin, undefined, undefined, 0, hittag);
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 1, eflags: 0x4
-// Checksum 0x18353e3c, Offset: 0xcd90
-// Size: 0xde
-function private function_f8411b4d(blight_father) {
-    /#
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 1, eflags: 0x4
+    // Checksum 0x18353e3c, Offset: 0xcd90
+    // Size: 0xde
+    function private function_f8411b4d(blight_father) {
         if (isdefined(level.var_d4c91513)) {
             return;
         }
@@ -2973,15 +2972,13 @@ function private function_f8411b4d(blight_father) {
             adddebugcommand("<unknown string>" + var_84ed9a13.var_51e8b151 + "<unknown string>" + var_84ed9a13.var_51e8b151 + "<unknown string>");
         }
         level.var_d4c91513 = 1;
-    #/
-}
+    }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x4
-// Checksum 0x44934b35, Offset: 0xce78
-// Size: 0x430
-function private function_a2751530() {
-    /#
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 0, eflags: 0x4
+    // Checksum 0x44934b35, Offset: 0xce78
+    // Size: 0x430
+    function private function_a2751530() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -3029,30 +3026,26 @@ function private function_a2751530() {
             }
             setdvar(#"hash_1999cec56042c9de", "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x4
-// Checksum 0x64950095, Offset: 0xd2b0
-// Size: 0xae
-function private function_255c7194() {
-    /#
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 0, eflags: 0x4
+    // Checksum 0x64950095, Offset: 0xd2b0
+    // Size: 0xae
+    function private function_255c7194() {
         player = getplayers()[0];
         queryresult = positionquery_source_navigation(player.origin, 128, 256, 128, 20);
         if (isdefined(queryresult) && queryresult.data.size > 0) {
             return queryresult.data[0];
         }
         return {#origin:player.origin};
-    #/
-}
+    }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x4
-// Checksum 0x9d6d686b, Offset: 0xd368
-// Size: 0x12c
-function private function_4d72a4a6() {
-    /#
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 0, eflags: 0x4
+    // Checksum 0x9d6d686b, Offset: 0xd368
+    // Size: 0x12c
+    function private function_4d72a4a6() {
         blight_father_spawners = getspawnerarray("<unknown string>", "<unknown string>");
         spawn_point = function_255c7194();
         if (blight_father_spawners.size == 0) {
@@ -3071,21 +3064,19 @@ function private function_4d72a4a6() {
         }
         entity zm_transform::function_bbaec2fd();
         entity forceteleport(spawn_point.origin, angles);
-    #/
-}
+    }
 
-// Namespace zm_ai_blight_father/zm_ai_blight_father
-// Params 0, eflags: 0x4
-// Checksum 0xe1b9b31f, Offset: 0xd4a0
-// Size: 0xc0
-function private function_d420b133() {
-    /#
+    // Namespace zm_ai_blight_father/zm_ai_blight_father
+    // Params 0, eflags: 0x4
+    // Checksum 0xe1b9b31f, Offset: 0xd4a0
+    // Size: 0xc0
+    function private function_d420b133() {
         enemies = getaiarchetypearray(#"blight_father");
         foreach (enemy in enemies) {
             if (isalive(enemy)) {
                 enemy kill();
             }
         }
-    #/
-}
+    }
 
+#/

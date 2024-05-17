@@ -15,11 +15,11 @@
 function autoexec registerdefaultnotetrackhandlerfunctions() {
     registernotetrackhandlerfunction("fire", &notetrackfirebullet);
     registernotetrackhandlerfunction("gib_disable", &notetrackgibdisable);
-    registernotetrackhandlerfunction("gib = "head"", &gibserverutils::gibhead);
-    registernotetrackhandlerfunction("gib = "arm_left"", &gibserverutils::gibleftarm);
-    registernotetrackhandlerfunction("gib = "arm_right"", &gibserverutils::gibrightarm);
-    registernotetrackhandlerfunction("gib = "leg_left"", &gibserverutils::gibleftleg);
-    registernotetrackhandlerfunction("gib = "leg_right"", &gibserverutils::gibrightleg);
+    registernotetrackhandlerfunction("gib = \"head\"", &gibserverutils::gibhead);
+    registernotetrackhandlerfunction("gib = \"arm_left\"", &gibserverutils::gibleftarm);
+    registernotetrackhandlerfunction("gib = \"arm_right\"", &gibserverutils::gibrightarm);
+    registernotetrackhandlerfunction("gib = \"leg_left\"", &gibserverutils::gibleftleg);
+    registernotetrackhandlerfunction("gib = \"leg_right\"", &gibserverutils::gibrightleg);
     registernotetrackhandlerfunction("dropgun", &notetrackdropgun);
     registernotetrackhandlerfunction("gun drop", &notetrackdropgun);
     registernotetrackhandlerfunction("drop_shield", &notetrackdropshield);
@@ -35,11 +35,11 @@ function autoexec registerdefaultnotetrackhandlerfunctions() {
     registernotetrackhandlerfunction("unsync", &notetrackmeleeunsync);
     registernotetrackhandlerfunction("step1", &notetrackstaircasestep1);
     registernotetrackhandlerfunction("step2", &notetrackstaircasestep2);
-    registernotetrackhandlerfunction("anim_movement = "stop"", &notetrackanimmovementstop);
-    registerblackboardnotetrackhandler("anim_pose = \"stand\"", "_stance", "stand");
-    registerblackboardnotetrackhandler("anim_pose = \"crouch\"", "_stance", "crouch");
-    registerblackboardnotetrackhandler("anim_pose = \"prone_front\"", "_stance", "prone_front");
-    registerblackboardnotetrackhandler("anim_pose = \"prone_back\"", "_stance", "prone_back");
+    registernotetrackhandlerfunction("anim_movement = \"stop\"", &notetrackanimmovementstop);
+    registerblackboardnotetrackhandler("anim_pose = \\"stand\\"", "_stance", "stand");
+    registerblackboardnotetrackhandler("anim_pose = \\"crouch\\"", "_stance", "crouch");
+    registerblackboardnotetrackhandler("anim_pose = \\"prone_front\\"", "_stance", "prone_front");
+    registerblackboardnotetrackhandler("anim_pose = \\"prone_back\\"", "_stance", "prone_back");
     registerblackboardnotetrackhandler("anim_pose = stand", "_stance", "stand");
     registerblackboardnotetrackhandler("anim_pose = crouch", "_stance", "crouch");
     registerblackboardnotetrackhandler("anim_pose = prone_front", "_stance", "prone_front");

@@ -583,12 +583,13 @@ function function_b86d3b7d() {
     }
 }
 
-// Namespace ct_vo/ct_vo
-// Params 0, eflags: 0x0
-// Checksum 0xa436a12d, Offset: 0x1c40
-// Size: 0x138
-function function_dfd7add4() {
-    /#
+/#
+
+    // Namespace ct_vo/ct_vo
+    // Params 0, eflags: 0x0
+    // Checksum 0xa436a12d, Offset: 0x1c40
+    // Size: 0x138
+    function function_dfd7add4() {
         sessionmode = currentsessionmode();
         setdvar(#"hash_31b5762ac1fb40cf", "<unknown string>");
         if (sessionmode != 4) {
@@ -607,6 +608,6 @@ function function_dfd7add4() {
             }
             setdvar(#"hash_31b5762ac1fb40cf", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

@@ -1030,12 +1030,13 @@ function function_9a05389e() {
     self.var_c63e2811 = gettime() + 4000;
 }
 
-// Namespace zm_ai_gegenees/zm_ai_gegenees
-// Params 0, eflags: 0x4
-// Checksum 0x9651e635, Offset: 0x43d8
-// Size: 0x278
-function private function_c03e8d05() {
-    /#
+/#
+
+    // Namespace zm_ai_gegenees/zm_ai_gegenees
+    // Params 0, eflags: 0x4
+    // Checksum 0x9651e635, Offset: 0x43d8
+    // Size: 0x278
+    function private function_c03e8d05() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -1073,6 +1074,6 @@ function private function_c03e8d05() {
             }
             setdvar(#"hash_6e55ca7eb0bc5180", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

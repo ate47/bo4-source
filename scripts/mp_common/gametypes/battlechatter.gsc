@@ -3446,12 +3446,13 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
     self function_bd715920(weapon, attacker, eventorigin, eventobject, timedelay);
 }
 
-// Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x0
-// Checksum 0x289ab8ee, Offset: 0xd5a8
-// Size: 0x408
-function devgui_think() {
-    /#
+/#
+
+    // Namespace battlechatter/battlechatter
+    // Params 0, eflags: 0x0
+    // Checksum 0x289ab8ee, Offset: 0xd5a8
+    // Size: 0x408
+    function devgui_think() {
         setdvar(#"devgui_mpdialog", "thiefRevealDelay");
         setdvar(#"testalias_player", "rouletteRevealDelay");
         setdvar(#"testalias_taacom", "exertAxeThrow");
@@ -3505,15 +3506,13 @@ function devgui_think() {
             }
             setdvar(#"devgui_mpdialog", "thiefRevealDelay");
         }
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x0
-// Checksum 0x1660cc85, Offset: 0xd9b8
-// Size: 0xe2
-function test_other_dialog(delay) {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 1, eflags: 0x0
+    // Checksum 0x1660cc85, Offset: 0xd9b8
+    // Size: 0xe2
+    function test_other_dialog(delay) {
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
@@ -3521,68 +3520,58 @@ function test_other_dialog(delay) {
                 return;
             }
         }
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x0
-// Checksum 0xbea9fae9, Offset: 0xdaa8
-// Size: 0x64
-function test_player_dialog(delay) {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 1, eflags: 0x0
+    // Checksum 0xbea9fae9, Offset: 0xdaa8
+    // Size: 0x64
+    function test_player_dialog(delay) {
         if (!isdefined(delay)) {
             delay = 0;
         }
         wait(delay);
         self playsoundontag(getdvarstring(#"testalias_player", "thiefRevealDelay"), "<unknown string>");
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x0
-// Checksum 0x46c688ea, Offset: 0xdb18
-// Size: 0x5c
-function test_taacom_dialog(delay) {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 1, eflags: 0x0
+    // Checksum 0x46c688ea, Offset: 0xdb18
+    // Size: 0x5c
+    function test_taacom_dialog(delay) {
         if (!isdefined(delay)) {
             delay = 0;
         }
         wait(delay);
         self playlocalsound(getdvarstring(#"testalias_taacom", "thiefRevealDelay"));
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x0
-// Checksum 0x44526a02, Offset: 0xdb80
-// Size: 0x5c
-function test_commander_dialog(delay) {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 1, eflags: 0x0
+    // Checksum 0x44526a02, Offset: 0xdb80
+    // Size: 0x5c
+    function test_commander_dialog(delay) {
         if (!isdefined(delay)) {
             delay = 0;
         }
         wait(delay);
         self playlocalsound(getdvarstring(#"testalias_commander", "thiefRevealDelay"));
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x0
-// Checksum 0x30f41745, Offset: 0xdbe8
-// Size: 0x54
-function play_test_dialog(dialogkey) {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 1, eflags: 0x0
+    // Checksum 0x30f41745, Offset: 0xdbe8
+    // Size: 0x54
+    function play_test_dialog(dialogkey) {
         dialogalias = self get_player_dialog_alias(dialogkey, undefined);
         self playsoundontag(dialogalias, "<unknown string>");
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x0
-// Checksum 0xe6a1b674, Offset: 0xdc48
-// Size: 0x10c
-function response_key() {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 0, eflags: 0x0
+    // Checksum 0xe6a1b674, Offset: 0xdc48
+    // Size: 0x10c
+    function response_key() {
         switch (self getmpdialogname()) {
         case #"spectre":
             return "<unknown string>";
@@ -3604,15 +3593,13 @@ function response_key() {
             return "<unknown string>";
         }
         return "thiefRevealDelay";
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x0
-// Checksum 0xa48b39c9, Offset: 0xdd60
-// Size: 0x13c
-function play_conv_self_other() {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 0, eflags: 0x0
+    // Checksum 0xa48b39c9, Offset: 0xdd60
+    // Size: 0x13c
+    function play_conv_self_other() {
         num = randomintrange(0, 4);
         self play_test_dialog("<unknown string>" + num);
         wait(4);
@@ -3623,15 +3610,13 @@ function play_conv_self_other() {
                 break;
             }
         }
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x0
-// Checksum 0x2f7fc5ad, Offset: 0xdea8
-// Size: 0x13c
-function play_conv_other_self() {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 0, eflags: 0x0
+    // Checksum 0x2f7fc5ad, Offset: 0xdea8
+    // Size: 0x13c
+    function play_conv_other_self() {
         num = randomintrange(0, 4);
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
@@ -3642,15 +3627,13 @@ function play_conv_other_self() {
         }
         wait(4);
         self play_test_dialog("<unknown string>" + player response_key() + num);
-    #/
-}
+    }
 
-// Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x0
-// Checksum 0x8c1bbd84, Offset: 0xdff0
-// Size: 0x1dc
-function play_conv_other_other() {
-    /#
+    // Namespace battlechatter/battlechatter
+    // Params 0, eflags: 0x0
+    // Checksum 0x8c1bbd84, Offset: 0xdff0
+    // Size: 0x1dc
+    function play_conv_other_other() {
         num = randomintrange(0, 4);
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
@@ -3667,6 +3650,6 @@ function play_conv_other_other() {
                 break;
             }
         }
-    #/
-}
+    }
 
+#/

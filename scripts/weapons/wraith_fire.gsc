@@ -469,12 +469,13 @@ function function_4e5a1dd3(mdl_anchor) {
     }
 }
 
-// Namespace wraith_fire/wraith_fire
-// Params 5, eflags: 0x0
-// Checksum 0x5fa412, Offset: 0x26a8
-// Size: 0xb4
-function incendiary_debug_line(from, to, color, depthtest, time) {
-    /#
+/#
+
+    // Namespace wraith_fire/wraith_fire
+    // Params 5, eflags: 0x0
+    // Checksum 0x5fa412, Offset: 0x26a8
+    // Size: 0xb4
+    function incendiary_debug_line(from, to, color, depthtest, time) {
         debug_rcbomb = getdvarint(#"hash_75de04766593ca0c", 0);
         if (debug_rcbomb == 1) {
             if (!isdefined(time)) {
@@ -485,8 +486,9 @@ function incendiary_debug_line(from, to, color, depthtest, time) {
             }
             line(from, to, color, 1, depthtest, time);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace wraith_fire/wraith_fire
 // Params 11, eflags: 0x1 linked

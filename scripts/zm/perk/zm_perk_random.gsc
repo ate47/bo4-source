@@ -751,22 +751,21 @@ function is_power_on(n_power_index) {
     return n_power_on;
 }
 
-// Namespace zm_perk_random/zm_perk_random
-// Params 0, eflags: 0x0
-// Checksum 0x951e73e, Offset: 0x2e00
-// Size: 0x1e
-function setup_devgui() {
-    /#
-        level.perk_random_devgui_callback = &wunderfizz_devgui_callback;
-    #/
-}
+/#
 
-// Namespace zm_perk_random/zm_perk_random
-// Params 1, eflags: 0x0
-// Checksum 0x47916ae8, Offset: 0x2e28
-// Size: 0x20a
-function wunderfizz_devgui_callback(cmd) {
-    /#
+    // Namespace zm_perk_random/zm_perk_random
+    // Params 0, eflags: 0x0
+    // Checksum 0x951e73e, Offset: 0x2e00
+    // Size: 0x1e
+    function setup_devgui() {
+        level.perk_random_devgui_callback = &wunderfizz_devgui_callback;
+    }
+
+    // Namespace zm_perk_random/zm_perk_random
+    // Params 1, eflags: 0x0
+    // Checksum 0x47916ae8, Offset: 0x2e28
+    // Size: 0x20a
+    function wunderfizz_devgui_callback(cmd) {
         players = getplayers();
         a_e_wunderfizzes = getentarray("<unknown string>", "<unknown string>");
         e_wunderfizz = arraygetclosest(getplayers()[0].origin, a_e_wunderfizzes);
@@ -794,6 +793,6 @@ function wunderfizz_devgui_callback(cmd) {
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
             break;
         }
-    #/
-}
+    }
 
+#/

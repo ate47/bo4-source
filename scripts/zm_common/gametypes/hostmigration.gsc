@@ -14,12 +14,13 @@
 
 #namespace hostmigration;
 
-// Namespace hostmigration/hostmigration
-// Params 0, eflags: 0x0
-// Checksum 0x15e43ca5, Offset: 0x1d8
-// Size: 0x134
-function debug_script_structs() {
-    /#
+/#
+
+    // Namespace hostmigration/hostmigration
+    // Params 0, eflags: 0x0
+    // Checksum 0x15e43ca5, Offset: 0x1d8
+    // Size: 0x134
+    function debug_script_structs() {
         if (isdefined(level.struct)) {
             println("<unknown string>" + level.struct.size);
             println("<unknown string>");
@@ -34,8 +35,9 @@ function debug_script_structs() {
             return;
         }
         println("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace hostmigration/hostmigration
 // Params 0, eflags: 0x0

@@ -1621,12 +1621,13 @@ function tesla_powerup_active() {
     return false;
 }
 
-// Namespace zm_powerups/zm_powerups
-// Params 2, eflags: 0x0
-// Checksum 0x16504af3, Offset: 0x6330
-// Size: 0x194
-function print_powerup_drop(powerup, type) {
-    /#
+/#
+
+    // Namespace zm_powerups/zm_powerups
+    // Params 2, eflags: 0x0
+    // Checksum 0x16504af3, Offset: 0x6330
+    // Size: 0x194
+    function print_powerup_drop(powerup, type) {
         if (!isdefined(level.powerup_drop_time)) {
             level.powerup_drop_time = 0;
             level.powerup_random_count = 0;
@@ -1647,8 +1648,9 @@ function print_powerup_drop(powerup, type) {
         println("<unknown string>");
         println("<unknown string>" + level.var_27b063df);
         println("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_powerups/zm_powerups
 // Params 2, eflags: 0x0

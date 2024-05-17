@@ -297,12 +297,13 @@ function function_55f8e11e(e_box) {
     self.var_61c96978 = undefined;
 }
 
-// Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x4
-// Checksum 0x17bde6f5, Offset: 0x1268
-// Size: 0x1c8
-function private devgui() {
-    /#
+/#
+
+    // Namespace zm_holiday_event/zm_holiday_event
+    // Params 0, eflags: 0x4
+    // Checksum 0x17bde6f5, Offset: 0x1268
+    // Size: 0x1c8
+    function private devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -332,15 +333,13 @@ function private devgui() {
             }
             setdvar(#"hash_83ca4038b5f2453", "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x0
-// Checksum 0x30ba709a, Offset: 0x1438
-// Size: 0x148
-function function_705afbf2() {
-    /#
+    // Namespace zm_holiday_event/zm_holiday_event
+    // Params 0, eflags: 0x0
+    // Checksum 0x30ba709a, Offset: 0x1438
+    // Size: 0x148
+    function function_705afbf2() {
         a_ai_zombies = getaiteamarray(level.zombie_team);
         e_host = getplayers()[0];
         if (!isalive(e_host)) {
@@ -354,32 +353,28 @@ function function_705afbf2() {
                 return;
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x0
-// Checksum 0xcdac62bf, Offset: 0x1588
-// Size: 0x2c
-function function_cf9e485() {
-    /#
+    // Namespace zm_holiday_event/zm_holiday_event
+    // Params 0, eflags: 0x0
+    // Checksum 0xcdac62bf, Offset: 0x1588
+    // Size: 0x2c
+    function function_cf9e485() {
         if (!isdefined(level.var_17bf15ba)) {
             return;
         }
         function_23287dd();
-    #/
-}
+    }
 
-// Namespace zm_holiday_event/zm_holiday_event
-// Params 0, eflags: 0x0
-// Checksum 0x3aeb2849, Offset: 0x15c0
-// Size: 0x98
-function function_74441f15() {
-    /#
+    // Namespace zm_holiday_event/zm_holiday_event
+    // Params 0, eflags: 0x0
+    // Checksum 0x3aeb2849, Offset: 0x15c0
+    // Size: 0x98
+    function function_74441f15() {
         level thread function_4634a866();
         foreach (player in util::get_players()) {
             player thread function_efe5c28();
         }
-    #/
-}
+    }
 
+#/

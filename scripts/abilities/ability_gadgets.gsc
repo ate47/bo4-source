@@ -27,18 +27,20 @@ function __init__() {
     clientfield::register("clientuimodel", "hudItems.abilityHintIndex", 1, 3, "int");
 }
 
-// Namespace ability_gadgets/ability_gadgets
-// Params 1, eflags: 0x0
-// Checksum 0x3c97de0, Offset: 0x288
-// Size: 0x74
-function gadgets_print(str) {
-    /#
+/#
+
+    // Namespace ability_gadgets/ability_gadgets
+    // Params 1, eflags: 0x0
+    // Checksum 0x3c97de0, Offset: 0x288
+    // Size: 0x74
+    function gadgets_print(str) {
         if (getdvarint(#"scr_debug_gadgets", 0)) {
             toprint = str;
             println(self.playername + "<unknown string>" + "<unknown string>" + toprint);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace ability_gadgets/ability_gadgets
 // Params 0, eflags: 0x1 linked

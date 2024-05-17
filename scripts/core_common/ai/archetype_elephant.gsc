@@ -1889,12 +1889,13 @@ function private function_707d0196(player, mod, shitloc) {
     return true;
 }
 
-// Namespace archetypeelephant/archetype_elephant
-// Params 0, eflags: 0x0
-// Checksum 0x3f13a92e, Offset: 0x8e90
-// Size: 0x178
-function function_6c8289fe() {
-    /#
+/#
+
+    // Namespace archetypeelephant/archetype_elephant
+    // Params 0, eflags: 0x0
+    // Checksum 0x3f13a92e, Offset: 0x8e90
+    // Size: 0x178
+    function function_6c8289fe() {
         elephants = getaiarchetypearray(#"elephant");
         foreach (elephant in elephants) {
             if (isdefined(elephant.ai.riders)) {
@@ -1907,15 +1908,13 @@ function function_6c8289fe() {
             }
             level thread elephantstartdeath(elephant);
         }
-    #/
-}
+    }
 
-// Namespace archetypeelephant/archetype_elephant
-// Params 1, eflags: 0x0
-// Checksum 0xe9f61c53, Offset: 0x9010
-// Size: 0x1fc
-function spawn_elephant(phase) {
-    /#
+    // Namespace archetypeelephant/archetype_elephant
+    // Params 1, eflags: 0x0
+    // Checksum 0xe9f61c53, Offset: 0x9010
+    // Size: 0x1fc
+    function spawn_elephant(phase) {
         player = level.players[0];
         direction = player getplayerangles();
         direction_vec = anglestoforward(direction);
@@ -1935,15 +1934,13 @@ function spawn_elephant(phase) {
             wait(0.5);
             elephant forceteleport(trace[#"position"], player.angles + (0, 180, 0));
         }
-    #/
-}
+    }
 
-// Namespace archetypeelephant/archetype_elephant
-// Params 0, eflags: 0x0
-// Checksum 0x5860953b, Offset: 0x9218
-// Size: 0xdae
-function setup_devgui() {
-    /#
+    // Namespace archetypeelephant/archetype_elephant
+    // Params 0, eflags: 0x0
+    // Checksum 0x5860953b, Offset: 0x9218
+    // Size: 0xdae
+    function setup_devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -2090,6 +2087,6 @@ function setup_devgui() {
                 break;
             }
         }
-    #/
-}
+    }
 
+#/

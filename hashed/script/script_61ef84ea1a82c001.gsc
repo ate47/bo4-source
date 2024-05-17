@@ -398,26 +398,25 @@ function function_14a795c2(e_player) {
     return !e_player flag::get(#"hash_79ab766693ef2532") && level flag::get(#"hash_29dc018e9551ecf");
 }
 
-// Namespace namespace_273ad667/namespace_273ad667
-// Params 0, eflags: 0x0
-// Checksum 0xb1e5db77, Offset: 0x1b48
-// Size: 0x7c
-function function_d987ffa1() {
-    /#
+/#
+
+    // Namespace namespace_273ad667/namespace_273ad667
+    // Params 0, eflags: 0x0
+    // Checksum 0xb1e5db77, Offset: 0x1b48
+    // Size: 0x7c
+    function function_d987ffa1() {
         zm_devgui::add_custom_devgui_callback(&function_2ad53df2);
         if (getdvarint(#"zm_debug_ee", 0)) {
             adddebugcommand("<unknown string>");
             adddebugcommand("<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace namespace_273ad667/namespace_273ad667
-// Params 1, eflags: 0x0
-// Checksum 0x7fc64fa, Offset: 0x1bd0
-// Size: 0x8a
-function function_2ad53df2(cmd) {
-    /#
+    // Namespace namespace_273ad667/namespace_273ad667
+    // Params 1, eflags: 0x0
+    // Checksum 0x7fc64fa, Offset: 0x1bd0
+    // Size: 0x8a
+    function function_2ad53df2(cmd) {
         switch (cmd) {
         case #"hash_7ecd9429ad1bc7c7":
             level thread function_45d8a460();
@@ -426,15 +425,13 @@ function function_2ad53df2(cmd) {
             level thread function_3dfa5598();
             return 1;
         }
-    #/
-}
+    }
 
-// Namespace namespace_273ad667/namespace_273ad667
-// Params 0, eflags: 0x0
-// Checksum 0xdbbee279, Offset: 0x1c68
-// Size: 0x168
-function function_45d8a460() {
-    /#
+    // Namespace namespace_273ad667/namespace_273ad667
+    // Params 0, eflags: 0x0
+    // Checksum 0xdbbee279, Offset: 0x1c68
+    // Size: 0x168
+    function function_45d8a460() {
         foreach (player in level.players) {
             level flag::set(#"spoon_quest_completed");
             if (!player hasweapon(getweapon(#"spoon_alcatraz"))) {
@@ -447,15 +444,13 @@ function function_45d8a460() {
                 player switchtoweapon(w_current);
             }
         }
-    #/
-}
+    }
 
-// Namespace namespace_273ad667/namespace_273ad667
-// Params 0, eflags: 0x0
-// Checksum 0xe05bd3be, Offset: 0x1dd8
-// Size: 0x240
-function function_3dfa5598() {
-    /#
+    // Namespace namespace_273ad667/namespace_273ad667
+    // Params 0, eflags: 0x0
+    // Checksum 0xe05bd3be, Offset: 0x1dd8
+    // Size: 0x240
+    function function_3dfa5598() {
         foreach (player in level.players) {
             if (player hasweapon(getweapon(#"spoon_alcatraz"))) {
                 player takeweapon(getweapon(#"spoon_alcatraz"));
@@ -475,6 +470,6 @@ function function_3dfa5598() {
             }
             level function_f519d04e();
         }
-    #/
-}
+    }
 
+#/

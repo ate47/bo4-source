@@ -297,12 +297,13 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
     return isallowed;
 }
 
-// Namespace killstreakrules/killstreakrules_shared
-// Params 1, eflags: 0x0
-// Checksum 0x9a7f35f6, Offset: 0x1330
-// Size: 0xcc
-function killstreak_debug_text(text) {
-    /#
+/#
+
+    // Namespace killstreakrules/killstreakrules_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x9a7f35f6, Offset: 0x1330
+    // Size: 0xcc
+    function killstreak_debug_text(text) {
         level.killstreak_rule_debug = getdvarint(#"scr_killstreak_rule_debug", 0);
         if (isdefined(level.killstreak_rule_debug)) {
             if (level.killstreak_rule_debug == 1) {
@@ -313,6 +314,6 @@ function killstreak_debug_text(text) {
                 iprintlnbold("<unknown string>" + text);
             }
         }
-    #/
-}
+    }
 
+#/

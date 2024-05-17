@@ -257,25 +257,24 @@ function function_cdc822b() {
     return false;
 }
 
-// Namespace wz_ai_zombie/wz_ai_zombie
-// Params 4, eflags: 0x0
-// Checksum 0x39d509d8, Offset: 0x1938
-// Size: 0x74
-function debugline(frompoint, topoint, color, durationframes) {
-    /#
-        for (i = 0; i < durationframes * 20; i++) {
+/#
+
+    // Namespace wz_ai_zombie/wz_ai_zombie
+    // Params 4, eflags: 0x0
+    // Checksum 0x39d509d8, Offset: 0x1938
+    // Size: 0x74
+    function debugline(frompoint, topoint, color, durationframes) {
+                for (i = 0; i < durationframes * 20; i++) {
             line(frompoint, topoint, color);
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace wz_ai_zombie/wz_ai_zombie
-// Params 4, eflags: 0x0
-// Checksum 0xd19a5991, Offset: 0x19b8
-// Size: 0x18c
-function drawdebugcross(atpoint, radius, color, durationframes) {
-    /#
+    // Namespace wz_ai_zombie/wz_ai_zombie
+    // Params 4, eflags: 0x0
+    // Checksum 0xd19a5991, Offset: 0x19b8
+    // Size: 0x18c
+    function drawdebugcross(atpoint, radius, color, durationframes) {
         if (getdvarint(#"survival_prototype", 0) || !(isdefined(level.var_e066667d) && level.var_e066667d)) {
             return;
         }
@@ -288,8 +287,9 @@ function drawdebugcross(atpoint, radius, color, durationframes) {
         thread debugline(atpoint_high, atpoint_low, color, durationframes);
         thread debugline(atpoint_left, atpoint_right, color, durationframes);
         thread debugline(atpoint_forward, atpoint_back, color, durationframes);
-    #/
-}
+    }
+
+#/
 
 // Namespace wz_ai_zombie/wz_ai_zombie
 // Params 1, eflags: 0x0
@@ -1894,17 +1894,19 @@ function function_21b44b70(currentsurface) {
     return false;
 }
 
-// Namespace wz_ai_zombie/wz_ai_zombie
-// Params 0, eflags: 0x0
-// Checksum 0xcf4cbfab, Offset: 0x84a8
-// Size: 0x42
-function function_173e098f() {
-    /#
+/#
+
+    // Namespace wz_ai_zombie/wz_ai_zombie
+    // Params 0, eflags: 0x0
+    // Checksum 0xcf4cbfab, Offset: 0x84a8
+    // Size: 0x42
+    function function_173e098f() {
         if (isdefined(level.var_e649db79) && level.var_e649db79) {
             self.var_db912cfe = function_6397251f();
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace wz_ai_zombie/wz_ai_zombie
 // Params 0, eflags: 0x0
@@ -2459,12 +2461,13 @@ function function_939e4f03() {
     self.var_ef59b90 = 3;
 }
 
-// Namespace wz_ai_zombie/wz_ai_zombie
-// Params 0, eflags: 0x0
-// Checksum 0xb7f1e9d1, Offset: 0xa888
-// Size: 0x13c
-function turretdebug() {
-    /#
+/#
+
+    // Namespace wz_ai_zombie/wz_ai_zombie
+    // Params 0, eflags: 0x0
+    // Checksum 0xb7f1e9d1, Offset: 0xa888
+    // Size: 0x13c
+    function turretdebug() {
         if (isdefined(level.var_e066667d) && level.var_e066667d) {
             turret = self;
             angles = turret.angles_to_enemy;
@@ -2474,8 +2477,9 @@ function turretdebug() {
             dome_apex = cone_apex + vectorscale(forward, isdefined(level.var_f13b4c3b) ? level.var_f13b4c3b : 0);
             util::debug_spherical_cone(cone_apex, dome_apex, isdefined(level.var_d7209a5f) ? level.var_d7209a5f : 0, 16, (0.95, 0.1, 0.1), 0.3, 1, 3);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace wz_ai_zombie/wz_ai_zombie
 // Params 0, eflags: 0x0
@@ -3609,16 +3613,17 @@ function function_f41ded83(vehicle) {
     return false;
 }
 
-// Namespace wz_ai_zombie/wz_ai_zombie
-// Params 0, eflags: 0x4
-// Checksum 0x479f3ed5, Offset: 0xe3d0
-// Size: 0x74
-function private function_ef4bd1a6() {
-    /#
+/#
+
+    // Namespace wz_ai_zombie/wz_ai_zombie
+    // Params 0, eflags: 0x4
+    // Checksum 0x479f3ed5, Offset: 0xe3d0
+    // Size: 0x74
+    function private function_ef4bd1a6() {
         util::waittill_can_add_debug_command();
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

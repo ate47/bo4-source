@@ -99,12 +99,13 @@ function get_velocity() {
     return self.tracking.velocity;
 }
 
-// Namespace tracking/tracking
-// Params 0, eflags: 0x0
-// Checksum 0x578d03c3, Offset: 0x600
-// Size: 0x8e
-function debug_tracking() {
-    /#
+/#
+
+    // Namespace tracking/tracking
+    // Params 0, eflags: 0x0
+    // Checksum 0x578d03c3, Offset: 0x600
+    // Size: 0x8e
+    function debug_tracking() {
         self endon(#"disconnect");
         while (true) {
             if (function_605bb988()) {
@@ -113,6 +114,6 @@ function debug_tracking() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

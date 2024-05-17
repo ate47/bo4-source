@@ -119,12 +119,13 @@ function makegrenadedudanddestroy() {
     }
 }
 
-// Namespace wz_player/player
-// Params 3, eflags: 0x0
-// Checksum 0xb5186428, Offset: 0x628
-// Size: 0x84
-function debug_star(origin, seconds, color) {
-    /#
+/#
+
+    // Namespace wz_player/player
+    // Params 3, eflags: 0x0
+    // Checksum 0xb5186428, Offset: 0x628
+    // Size: 0x84
+    function debug_star(origin, seconds, color) {
         if (!isdefined(seconds)) {
             seconds = 1;
         }
@@ -133,6 +134,6 @@ function debug_star(origin, seconds, color) {
         }
         frames = int(20 * seconds);
         debugstar(origin, frames, color);
-    #/
-}
+    }
 
+#/

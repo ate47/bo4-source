@@ -848,80 +848,69 @@ function function_94a3be2() {
     return false;
 }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0x834d28f2, Offset: 0x27e0
-// Size: 0x44
-function check_art_mode() {
-    /#
+/#
+
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0x834d28f2, Offset: 0x27e0
+    // Size: 0x44
+    function check_art_mode() {
         if (getdvarint(#"art_mode", 0) > 0) {
             init_map_art_dev();
         }
-    #/
-}
+    }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0x7f90f6ca, Offset: 0x2830
-// Size: 0x1c
-function apply_dev_overrides() {
-    /#
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0x7f90f6ca, Offset: 0x2830
+    // Size: 0x1c
+    function apply_dev_overrides() {
         override_gts_timelimit();
-    #/
-}
+    }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0xd23b21f1, Offset: 0x2858
-// Size: 0x4c
-function init_map_art_dev() {
-    /#
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0xd23b21f1, Offset: 0x2858
+    // Size: 0x4c
+    function init_map_art_dev() {
         disable_gameplay_timers();
         disable_draft();
         disable_ui();
         enable_art_fps();
-    #/
-}
+    }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0x8a8333a0, Offset: 0x28b0
-// Size: 0x6c
-function disable_gameplay_timers() {
-    /#
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0x8a8333a0, Offset: 0x28b0
+    // Size: 0x6c
+    function disable_gameplay_timers() {
         setdvar(#"timelimitoverride", 0);
         setdvar(#"prematchperiodoverride", 0);
         setdvar(#"preroundperiodoverride", 0);
-    #/
-}
+    }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0x155c5809, Offset: 0x2928
-// Size: 0x54
-function disable_draft() {
-    /#
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0x155c5809, Offset: 0x2928
+    // Size: 0x54
+    function disable_draft() {
         setdvar(#"draftenabled", 0);
         setdvar(#"auto_select_character", 1);
-    #/
-}
+    }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0x12df9479, Offset: 0x2988
-// Size: 0x2c
-function disable_ui() {
-    /#
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0x12df9479, Offset: 0x2988
+    // Size: 0x2c
+    function disable_ui() {
         setdvar(#"ui_enabled", 0);
-    #/
-}
+    }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0xb17db74a, Offset: 0x29c0
-// Size: 0x7c
-function override_gts_timelimit() {
-    /#
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0xb17db74a, Offset: 0x29c0
+    // Size: 0x7c
+    function override_gts_timelimit() {
         timelimitoverride = getdvarint(#"timelimitoverride", -1);
         if (timelimitoverride >= 0) {
             if (level.timelimit != timelimitoverride) {
@@ -929,17 +918,15 @@ function override_gts_timelimit() {
                 setgametypesetting("<unknown string>", timelimitoverride);
             }
         }
-    #/
-}
+    }
 
-// Namespace util/util
-// Params 0, eflags: 0x0
-// Checksum 0x8d2a2d36, Offset: 0x2a48
-// Size: 0x54
-function enable_art_fps() {
-    /#
+    // Namespace util/util
+    // Params 0, eflags: 0x0
+    // Checksum 0x8d2a2d36, Offset: 0x2a48
+    // Size: 0x54
+    function enable_art_fps() {
         setdvar(#"cg_drawfps", 0);
         setdvar(#"cg_drawartfps", 1);
-    #/
-}
+    }
 
+#/

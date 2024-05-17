@@ -797,12 +797,13 @@ function _user_check(n_index) {
     return 1;
 }
 
-// Namespace turret/turret_shared
-// Params 1, eflags: 0x0
-// Checksum 0x42443a91, Offset: 0x29c0
-// Size: 0x31e
-function _debug_turret_think(n_index) {
-    /#
+/#
+
+    // Namespace turret/turret_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x42443a91, Offset: 0x29c0
+    // Size: 0x31e
+    function _debug_turret_think(n_index) {
         self endon(#"death", "<unknown string>" + _index(n_index), "<unknown string>" + _index(n_index));
         s_turret = _get_turret_data(n_index);
         v_color = (0, 0, 1);
@@ -842,8 +843,9 @@ function _debug_turret_think(n_index) {
             record3dtext(str_debug, self.origin, v_color, "<unknown string>", self);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace turret/turret_shared
 // Params 1, eflags: 0x1 linked

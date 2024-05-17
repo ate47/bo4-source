@@ -893,13 +893,17 @@ function retreatedstartmelee(var_a820f9, spawns) {
     player notify(#"beacon_added");
 }
 
-// Namespace spawn_beacon/spawnbeacon_shared
-// Params 2, eflags: 0x0
-// Checksum 0x1d136018, Offset: 0x3bb8
-// Size: 0x34
-function function_264da546(var_cd3712d2, jammer) {
-    println("<unknown string>");
-}
+/#
+
+    // Namespace spawn_beacon/spawnbeacon_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0x1d136018, Offset: 0x3bb8
+    // Size: 0x34
+    function function_264da546(var_cd3712d2, jammer) {
+        println("<unknown string>");
+    }
+
+#/
 
 // Namespace spawn_beacon/spawnbeacon_shared
 // Params 3, eflags: 0x1 linked

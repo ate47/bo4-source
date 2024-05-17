@@ -71,12 +71,13 @@ function __init__() {
     #/
 }
 
-// Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x4
-// Checksum 0x189c24ee, Offset: 0xcf0
-// Size: 0x8e
-function private function_eaba72c9() {
-    /#
+/#
+
+    // Namespace wz_vehicle/vehicle
+    // Params 0, eflags: 0x4
+    // Checksum 0x189c24ee, Offset: 0xcf0
+    // Size: 0x8e
+    function private function_eaba72c9() {
         self notify("script_model");
         self endon("script_model");
         while (true) {
@@ -86,33 +87,30 @@ function private function_eaba72c9() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x4
-// Checksum 0xb3ca057d, Offset: 0xd88
-// Size: 0x20
-function private function_40fc185b() {
-    /#
+    // Namespace wz_vehicle/vehicle
+    // Params 0, eflags: 0x4
+    // Checksum 0xb3ca057d, Offset: 0xd88
+    // Size: 0x20
+    function private function_40fc185b() {
         level notify(#"hash_724a3976e45a71e2");
-    #/
-}
+    }
 
-// Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x4
-// Checksum 0xf31bae50, Offset: 0xdb0
-// Size: 0x84
-function private _setup_devgui() {
-    /#
+    // Namespace wz_vehicle/vehicle
+    // Params 0, eflags: 0x4
+    // Checksum 0xf31bae50, Offset: 0xdb0
+    // Size: 0x84
+    function private _setup_devgui() {
         while (!canadddebugcommand()) {
             waitframe(1);
         }
         mapname = util::get_map_name();
         adddebugcommand("update_malfunction" + mapname + "emped_timer");
         level thread function_eaba72c9();
-    #/
-}
+    }
+
+#/
 
 // Namespace wz_vehicle/vehicle
 // Params 1, eflags: 0x4
@@ -3367,12 +3365,13 @@ function function_6a65d095() {
     }
 }
 
-// Namespace wz_vehicle/vehicle
-// Params 0, eflags: 0x0
-// Checksum 0xc7efdbc4, Offset: 0xce98
-// Size: 0x328
-function function_4ead318d() {
-    /#
+/#
+
+    // Namespace wz_vehicle/vehicle
+    // Params 0, eflags: 0x0
+    // Checksum 0xc7efdbc4, Offset: 0xce98
+    // Size: 0x328
+    function function_4ead318d() {
         self endon(#"death");
         height = self.height;
         assert(isdefined(self.radius));
@@ -3395,6 +3394,6 @@ function function_4ead318d() {
             line(rightmiddle + (0, 0, 25), rightmiddle - (0, 0, 75), (1, 1, 0), 1);
             line(rightfront + (0, 0, 25), rightfront - (0, 0, 75), (1, 1, 0), 1);
         }
-    #/
-}
+    }
 
+#/

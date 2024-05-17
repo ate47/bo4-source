@@ -3460,12 +3460,13 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
     return damage;
 }
 
-// Namespace zm_perks/zm_perks
-// Params 0, eflags: 0x0
-// Checksum 0xf4b61a6, Offset: 0xdc30
-// Size: 0xacc
-function function_756e6a6d() {
-    /#
+/#
+
+    // Namespace zm_perks/zm_perks
+    // Params 0, eflags: 0x0
+    // Checksum 0xf4b61a6, Offset: 0xdc30
+    // Size: 0xacc
+    function function_756e6a6d() {
         ip1 = self getentitynumber() + 1;
         adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
         adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
@@ -3501,15 +3502,13 @@ function function_756e6a6d() {
         adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
         adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
         adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace zm_perks/zm_perks
-// Params 0, eflags: 0x0
-// Checksum 0x9c49815a, Offset: 0xe708
-// Size: 0x1648
-function function_545a79c() {
-    /#
+    // Namespace zm_perks/zm_perks
+    // Params 0, eflags: 0x0
+    // Checksum 0x9c49815a, Offset: 0xe708
+    // Size: 0x1648
+    function function_545a79c() {
         level notify(#"zombie_vapor_devgui");
         level endon(#"zombie_vapor_devgui");
         for (;;) {
@@ -3824,15 +3823,13 @@ function function_545a79c() {
             setdvar(#"zombie_vapor_devgui", "<unknown string>");
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace zm_perks/zm_perks
-// Params 1, eflags: 0x0
-// Checksum 0xdfce2344, Offset: 0xfd58
-// Size: 0x150
-function function_36710277(var_16c042b8) {
-    /#
+    // Namespace zm_perks/zm_perks
+    // Params 1, eflags: 0x0
+    // Checksum 0xdfce2344, Offset: 0xfd58
+    // Size: 0x150
+    function function_36710277(var_16c042b8) {
         if (self.var_466b927f.size >= 4) {
             iprintlnbold("<unknown string>");
             return;
@@ -3852,15 +3849,13 @@ function function_36710277(var_16c042b8) {
                 return;
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_perks/zm_perks
-// Params 1, eflags: 0x0
-// Checksum 0x58b138c5, Offset: 0xfeb0
-// Size: 0x9c
-function function_869a50c0(n_slot) {
-    /#
+    // Namespace zm_perks/zm_perks
+    // Params 1, eflags: 0x0
+    // Checksum 0x58b138c5, Offset: 0xfeb0
+    // Size: 0x9c
+    function function_869a50c0(n_slot) {
         if (n_slot < 4) {
             var_16c042b8 = self.var_c27f1e90[n_slot];
             if (isinarray(self.var_466b927f, var_16c042b8)) {
@@ -3871,15 +3866,13 @@ function function_869a50c0(n_slot) {
             return;
         }
         self function_cc24f525();
-    #/
-}
+    }
 
-// Namespace zm_perks/zm_perks
-// Params 1, eflags: 0x0
-// Checksum 0xff1f5570, Offset: 0xff58
-// Size: 0x128
-function function_413a7dd7(n_slot) {
-    /#
+    // Namespace zm_perks/zm_perks
+    // Params 1, eflags: 0x0
+    // Checksum 0xff1f5570, Offset: 0xff58
+    // Size: 0x128
+    function function_413a7dd7(n_slot) {
         if (n_slot < 4) {
             var_16c042b8 = self.var_c27f1e90[n_slot];
             if (!isinarray(self.var_466b927f, var_16c042b8)) {
@@ -3894,15 +3887,13 @@ function function_413a7dd7(n_slot) {
                 self notify(var_16c042b8 + "<unknown string>", {#var_613b7621:1});
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_perks/zm_perks
-// Params 1, eflags: 0x0
-// Checksum 0x1d26e9f8, Offset: 0x10088
-// Size: 0x76
-function function_a18c6089(n_slot) {
-    /#
+    // Namespace zm_perks/zm_perks
+    // Params 1, eflags: 0x0
+    // Checksum 0x1d26e9f8, Offset: 0x10088
+    // Size: 0x76
+    function function_a18c6089(n_slot) {
         if (n_slot < 4) {
             self function_9b641809(n_slot);
             return;
@@ -3910,6 +3901,6 @@ function function_a18c6089(n_slot) {
         for (i = 0; i < 4; i++) {
             self function_9b641809(i);
         }
-    #/
-}
+    }
 
+#/

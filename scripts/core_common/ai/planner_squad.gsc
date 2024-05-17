@@ -20,12 +20,13 @@ function private function_bf7acc22(squad) {
     }
 }
 
-// Namespace plannersquad/planner_squad
-// Params 1, eflags: 0x4
-// Checksum 0x1283b2ec, Offset: 0x190
-// Size: 0xde8
-function private _debugsquad(squad) {
-    /#
+/#
+
+    // Namespace plannersquad/planner_squad
+    // Params 1, eflags: 0x4
+    // Checksum 0x1283b2ec, Offset: 0x190
+    // Size: 0xde8
+    function private _debugsquad(squad) {
         if (!isdefined(level.__plannersquaddebug)) {
             level.__plannersquaddebug = [];
         }
@@ -149,15 +150,13 @@ function private _debugsquad(squad) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace plannersquad/planner_squad
-// Params 7, eflags: 0x4
-// Checksum 0xda741a5a, Offset: 0xf80
-// Size: 0x15c
-function private function_101999aa(strategy, header, fieldlist, position, color, channel, textscale) {
-    /#
+    // Namespace plannersquad/planner_squad
+    // Params 7, eflags: 0x4
+    // Checksum 0xda741a5a, Offset: 0xf80
+    // Size: 0x15c
+    function private function_101999aa(strategy, header, fieldlist, position, color, channel, textscale) {
         xoffset = 0;
         yoffset = 0;
         recordtext(header, position, color, channel, textscale);
@@ -168,15 +167,13 @@ function private function_101999aa(strategy, header, fieldlist, position, color,
         }
         yoffset += 13;
         return yoffset;
-    #/
-}
+    }
 
-// Namespace plannersquad/planner_squad
-// Params 3, eflags: 0x4
-// Checksum 0x8e80008a, Offset: 0x10e8
-// Size: 0x1ac
-function private function_f301de44(trigger, color, channel) {
-    /#
+    // Namespace plannersquad/planner_squad
+    // Params 3, eflags: 0x4
+    // Checksum 0x8e80008a, Offset: 0x10e8
+    // Size: 0x1ac
+    function private function_f301de44(trigger, color, channel) {
         maxs = trigger getmaxs();
         mins = trigger getmins();
         if (issubstr(trigger.classname, "<unknown string>")) {
@@ -189,8 +186,9 @@ function private function_f301de44(trigger, color, channel) {
             return;
         }
         function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel);
-    #/
-}
+    }
+
+#/
 
 // Namespace plannersquad/planner_squad
 // Params 1, eflags: 0x5 linked

@@ -235,7 +235,7 @@ function function_b89106ad(gamedifficulty) {
     if (gamedifficulty == 0) {
         ct_firebreak_tutorial::function_9b9525e9();
     } else {
-        function_72e84e64();
+        j_fore_le_01();
     }
     if (level flag::get("mission_failed")) {
         level notify(#"combattraining_logic_finished", {#success:0});
@@ -268,7 +268,7 @@ function function_cf3224fe(b_success) {
 // Params 0, eflags: 0x0
 // Checksum 0x7d13d9af, Offset: 0x1178
 // Size: 0x2d4
-function function_72e84e64() {
+function j_fore_le_01() {
     level endon(#"combattraining_logic_finished");
     level thread registerslicendice_enemy_entrance();
     self thread ct_utils::objcounter_init(undefined, 0, level.a_s_beacons.size, 1);

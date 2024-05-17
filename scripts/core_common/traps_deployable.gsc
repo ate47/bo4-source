@@ -1218,28 +1218,29 @@ function function_f6ea9af9(flag) {
     clean_traps(0, undefined, flag);
 }
 
-// Namespace traps_deployable/traps_deployable
-// Params 1, eflags: 0x0
-// Checksum 0xf7ce4c7b, Offset: 0x4330
-// Size: 0x2c
-function printerror(message) {
-    println("<unknown string>", message);
-}
+/#
 
-// Namespace traps_deployable/traps_deployable
-// Params 1, eflags: 0x0
-// Checksum 0xc5b8e74d, Offset: 0x4368
-// Size: 0x2c
-function printinfo(message) {
-    println("<unknown string>", message);
-}
+    // Namespace traps_deployable/traps_deployable
+    // Params 1, eflags: 0x0
+    // Checksum 0xf7ce4c7b, Offset: 0x4330
+    // Size: 0x2c
+    function printerror(message) {
+        println("<unknown string>", message);
+    }
 
-// Namespace traps_deployable/traps_deployable
-// Params 0, eflags: 0x0
-// Checksum 0xa56de7c4, Offset: 0x43a0
-// Size: 0x136
-function function_ef942626() {
-    /#
+    // Namespace traps_deployable/traps_deployable
+    // Params 1, eflags: 0x0
+    // Checksum 0xc5b8e74d, Offset: 0x4368
+    // Size: 0x2c
+    function printinfo(message) {
+        println("<unknown string>", message);
+    }
+
+    // Namespace traps_deployable/traps_deployable
+    // Params 0, eflags: 0x0
+    // Checksum 0xa56de7c4, Offset: 0x43a0
+    // Size: 0x136
+    function function_ef942626() {
         if (isdefined(level.trapddebug) && level.trapddebug) {
             var_a8539bf6 = self;
             if (!isdefined(level.var_d56d2937)) {
@@ -1255,15 +1256,13 @@ function function_ef942626() {
             }
             level.var_d56d2937.var_59eaf9e1[level.var_d56d2937.var_59eaf9e1.size] = var_a8539bf6;
         }
-    #/
-}
+    }
 
-// Namespace traps_deployable/traps_deployable
-// Params 0, eflags: 0x0
-// Checksum 0x5e4e0062, Offset: 0x44e0
-// Size: 0xc8
-function function_3b7cb719() {
-    /#
+    // Namespace traps_deployable/traps_deployable
+    // Params 0, eflags: 0x0
+    // Checksum 0x5e4e0062, Offset: 0x44e0
+    // Size: 0xc8
+    function function_3b7cb719() {
         level.trapddebug = getdvarint(#"scr_trapd_debug", 0);
         while (true) {
             trapddebug = level.trapddebug;
@@ -1275,15 +1274,13 @@ function function_3b7cb719() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace traps_deployable/traps_deployable
-// Params 0, eflags: 0x0
-// Checksum 0x6b208f0c, Offset: 0x45b0
-// Size: 0x1bc
-function destroy_traps() {
-    /#
+    // Namespace traps_deployable/traps_deployable
+    // Params 0, eflags: 0x0
+    // Checksum 0x6b208f0c, Offset: 0x45b0
+    // Size: 0x1bc
+    function destroy_traps() {
         if (isdefined(level.var_d56d2937) && isdefined(level.var_d56d2937.var_59eaf9e1)) {
             var_59eaf9e1 = level.var_d56d2937.var_59eaf9e1;
             for (i = var_59eaf9e1.size - 1; i >= 0; i--) {
@@ -1306,15 +1303,13 @@ function destroy_traps() {
             }
         }
         clean_traps(1);
-    #/
-}
+    }
 
-// Namespace traps_deployable/traps_deployable
-// Params 0, eflags: 0x0
-// Checksum 0xcef4b7a6, Offset: 0x4778
-// Size: 0x10c
-function debug_init() {
-    /#
+    // Namespace traps_deployable/traps_deployable
+    // Params 0, eflags: 0x0
+    // Checksum 0xcef4b7a6, Offset: 0x4778
+    // Size: 0x10c
+    function debug_init() {
         thread function_3b7cb719();
         while (true) {
             debugint = getdvarint(#"scr_trapd_int", 0);
@@ -1333,6 +1328,6 @@ function debug_init() {
             wait(1);
         }
         thread debug_init();
-    #/
-}
+    }
 
+#/

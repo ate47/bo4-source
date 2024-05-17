@@ -452,12 +452,13 @@ function kill_equipment(rocket_kill_trig) {
     }
 }
 
-// Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
-// Params 2, eflags: 0x0
-// Checksum 0xc05583cf, Offset: 0x1fe8
-// Size: 0x122
-function function_56b1158f(locs, color) {
-    /#
+/#
+
+    // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
+    // Params 2, eflags: 0x0
+    // Checksum 0xc05583cf, Offset: 0x1fe8
+    // Size: 0x122
+    function function_56b1158f(locs, color) {
         if (!isdefined(color)) {
             color = (0, 1, 0);
         }
@@ -468,15 +469,13 @@ function function_56b1158f(locs, color) {
             }
             waitframe(30);
         }
-    #/
-}
+    }
 
-// Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
-// Params 3, eflags: 0x0
-// Checksum 0xfb090efe, Offset: 0x2118
-// Size: 0x94
-function function_cd7664d5(loc, alias, color) {
-    /#
+    // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
+    // Params 3, eflags: 0x0
+    // Checksum 0xfb090efe, Offset: 0x2118
+    // Size: 0x94
+    function function_cd7664d5(loc, alias, color) {
         if (!isdefined(color)) {
             color = (0, 1, 0);
         }
@@ -485,8 +484,9 @@ function function_cd7664d5(loc, alias, color) {
                 print3d(loc + (0, 0, 32), alias, color, 1, 1.2, 120);
             #/
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
 // Params 0, eflags: 0x0

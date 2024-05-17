@@ -100,24 +100,23 @@ function is_state(state) {
     return self.ai.state == state;
 }
 
-// Namespace ai_state/state
-// Params 0, eflags: 0x0
-// Checksum 0x2e0cb2f, Offset: 0x570
-// Size: 0x64
-function function_c1d2ede8() {
-    /#
+/#
+
+    // Namespace ai_state/state
+    // Params 0, eflags: 0x0
+    // Checksum 0x2e0cb2f, Offset: 0x570
+    // Size: 0x64
+    function function_c1d2ede8() {
         if (isdefined(level.extra_screen_electricity_.functions[self.ai.state].update_debug)) {
             self [[ level.extra_screen_electricity_.functions[self.ai.state].update_debug ]]();
         }
-    #/
-}
+    }
 
-// Namespace ai_state/state
-// Params 0, eflags: 0x0
-// Checksum 0x2ca2e3ba, Offset: 0x5e0
-// Size: 0x5e
-function function_3a57bb58() {
-    /#
+    // Namespace ai_state/state
+    // Params 0, eflags: 0x0
+    // Checksum 0x2ca2e3ba, Offset: 0x5e0
+    // Size: 0x5e
+    function function_3a57bb58() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         self endon(#"death");
@@ -125,6 +124,6 @@ function function_3a57bb58() {
             self function_c1d2ede8();
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

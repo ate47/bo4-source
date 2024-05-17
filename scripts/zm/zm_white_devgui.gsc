@@ -9,46 +9,41 @@
 
 #namespace zm_white_devgui;
 
-// Namespace zm_white_devgui/zm_white_devgui
-// Params 0, eflags: 0x0
-// Checksum 0x3be8b162, Offset: 0xa0
-// Size: 0x1c
-function init() {
-    /#
+/#
+
+    // Namespace zm_white_devgui/zm_white_devgui
+    // Params 0, eflags: 0x0
+    // Checksum 0x3be8b162, Offset: 0xa0
+    // Size: 0x1c
+    function init() {
         level thread devgui();
-    #/
-}
+    }
 
-// Namespace zm_white_devgui/zm_white_devgui
-// Params 0, eflags: 0x4
-// Checksum 0x4bf26068, Offset: 0xc8
-// Size: 0x1c
-function private function_3552f301() {
-    /#
+    // Namespace zm_white_devgui/zm_white_devgui
+    // Params 0, eflags: 0x4
+    // Checksum 0x4bf26068, Offset: 0xc8
+    // Size: 0x1c
+    function private function_3552f301() {
         zm_white_mee::function_6af32608();
-    #/
-}
+    }
 
-// Namespace zm_white_devgui/zm_white_devgui
-// Params 0, eflags: 0x4
-// Checksum 0xf8f7f3ef, Offset: 0xf0
-// Size: 0x6c
-function private function_2639784() {
-    /#
+    // Namespace zm_white_devgui/zm_white_devgui
+    // Params 0, eflags: 0x4
+    // Checksum 0xf8f7f3ef, Offset: 0xf0
+    // Size: 0x6c
+    function private function_2639784() {
         if (!level flag::get("<unknown string>")) {
             zm_devgui::zombie_devgui_open_sesame();
         }
         level.old_dog_spawn = &zombie_dog_util::function_62db7b1c;
         zm_white_special_rounds::function_6acd363d(1);
-    #/
-}
+    }
 
-// Namespace zm_white_devgui/zm_white_devgui
-// Params 0, eflags: 0x4
-// Checksum 0x96d0a16c, Offset: 0x168
-// Size: 0x108
-function private function_3db5079() {
-    /#
+    // Namespace zm_white_devgui/zm_white_devgui
+    // Params 0, eflags: 0x4
+    // Checksum 0x96d0a16c, Offset: 0x168
+    // Size: 0x108
+    function private function_3db5079() {
         if (!level flag::get(#"hash_40856b65dff0f6eb")) {
             function_2639784();
         }
@@ -57,15 +52,13 @@ function private function_3db5079() {
                 var_ab611263[#"gas_cloud"] zm_white_special_rounds::function_27a8604b(var_ab611263[#"group"]);
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_white_devgui/zm_white_devgui
-// Params 0, eflags: 0x4
-// Checksum 0x31b3069f, Offset: 0x278
-// Size: 0x470
-function private devgui() {
-    /#
+    // Namespace zm_white_devgui/zm_white_devgui
+    // Params 0, eflags: 0x4
+    // Checksum 0x31b3069f, Offset: 0x278
+    // Size: 0x470
+    function private devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -122,6 +115,6 @@ function private devgui() {
             }
             setdvar(#"zm_white_debug_cmd", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

@@ -627,12 +627,13 @@ function function_eeb98313(a_s_respawn_points) {
     return a_s_respawn_points;
 }
 
-// Namespace zm_office/zm_office
-// Params 0, eflags: 0x4
-// Checksum 0x4eb09ddd, Offset: 0x3508
-// Size: 0x1a0
-function private office_devgui() {
-    /#
+/#
+
+    // Namespace zm_office/zm_office
+    // Params 0, eflags: 0x4
+    // Checksum 0x4eb09ddd, Offset: 0x3508
+    // Size: 0x1a0
+    function private office_devgui() {
         adddebugcommand("vox_plr_6_exert_underwater_air_low");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -656,6 +657,6 @@ function private office_devgui() {
             }
             setdvar(#"zm_office_devgui_cmd", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

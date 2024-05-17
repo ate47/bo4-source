@@ -121,12 +121,13 @@ function trackvelocity() {
     }
 }
 
-// Namespace init/init
-// Params 1, eflags: 0x0
-// Checksum 0xfd6a6f6b, Offset: 0x6e8
-// Size: 0x400
-function checkapproachangles(transtypes) {
-    /#
+/#
+
+    // Namespace init/init
+    // Params 1, eflags: 0x0
+    // Checksum 0xfd6a6f6b, Offset: 0x6e8
+    // Size: 0x400
+    function checkapproachangles(transtypes) {
         idealtransangles[1] = 45;
         idealtransangles[2] = 0;
         idealtransangles[3] = -45;
@@ -172,8 +173,9 @@ function checkapproachangles(transtypes) {
                 }
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace init/init
 // Params 2, eflags: 0x0

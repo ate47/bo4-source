@@ -290,12 +290,13 @@ function function_cbdb5e70() {
     }
 }
 
-// Namespace zm_towers_achievements/zm_towers_achievements
-// Params 1, eflags: 0x4
-// Checksum 0xc5c61dd6, Offset: 0x10d8
-// Size: 0x74
-function private debug_notification(var_378e29b9) {
-    /#
+/#
+
+    // Namespace zm_towers_achievements/zm_towers_achievements
+    // Params 1, eflags: 0x4
+    // Checksum 0xc5c61dd6, Offset: 0x10d8
+    // Size: 0x74
+    function private debug_notification(var_378e29b9) {
         if (!isdefined(var_378e29b9)) {
             var_378e29b9 = "<unknown string>";
         }
@@ -305,6 +306,6 @@ function private debug_notification(var_378e29b9) {
             return;
         }
         iprintln(str_name + "<unknown string>" + var_378e29b9);
-    #/
-}
+    }
 
+#/

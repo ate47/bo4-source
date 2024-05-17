@@ -46,40 +46,37 @@ function __init__() {
     #/
 }
 
-// Namespace draft/draft
-// Params 0, eflags: 0x0
-// Checksum 0x6986cc86, Offset: 0x440
-// Size: 0x3e
-function function_6bea5139() {
-    /#
+/#
+
+    // Namespace draft/draft
+    // Params 0, eflags: 0x0
+    // Checksum 0x6986cc86, Offset: 0x440
+    // Size: 0x3e
+    function function_6bea5139() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         wait(5);
         level.var_5fa54158 = "<unknown string>";
-    #/
-}
+    }
 
-// Namespace draft/draft
-// Params 1, eflags: 0x0
-// Checksum 0x18fa0306, Offset: 0x488
-// Size: 0x64
-function function_95c03d66(message) {
-    /#
+    // Namespace draft/draft
+    // Params 1, eflags: 0x0
+    // Checksum 0x18fa0306, Offset: 0x488
+    // Size: 0x64
+    function function_95c03d66(message) {
         if (message == level.var_5fa54158) {
             return;
         }
         level.var_5fa54158 = message;
         println(message);
         level thread function_6bea5139();
-    #/
-}
+    }
 
-// Namespace draft/draft
-// Params 1, eflags: 0x0
-// Checksum 0x7f2dd54d, Offset: 0x4f8
-// Size: 0xf0
-function function_947fe5c4(character) {
-    /#
+    // Namespace draft/draft
+    // Params 1, eflags: 0x0
+    // Checksum 0x7f2dd54d, Offset: 0x4f8
+    // Size: 0xf0
+    function function_947fe5c4(character) {
         if (character != "<unknown string>") {
             var_44dd7e5d = hash(character);
             playerroletemplatecount = getplayerroletemplatecount(currentsessionmode());
@@ -91,15 +88,13 @@ function function_947fe5c4(character) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace draft/draft
-// Params 0, eflags: 0x0
-// Checksum 0x9accf0cd, Offset: 0x5f0
-// Size: 0x132
-function function_e8a5f9ba() {
-    /#
+    // Namespace draft/draft
+    // Params 0, eflags: 0x0
+    // Checksum 0x9accf0cd, Offset: 0x5f0
+    // Size: 0x132
+    function function_e8a5f9ba() {
         current = getdvarstring(#"character", "<unknown string>");
         if (current != "<unknown string>") {
             while (true) {
@@ -112,8 +107,9 @@ function function_e8a5f9ba() {
                 wait(1);
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace draft/draft
 // Params 0, eflags: 0x0

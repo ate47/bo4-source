@@ -347,12 +347,13 @@ function init_guard_points() {
     self._guard_points[self._guard_points.size] = (180, 0, 140);
 }
 
-// Namespace wasp/wasp
-// Params 0, eflags: 0x0
-// Checksum 0x5d00295e, Offset: 0x1b68
-// Size: 0x102
-function guard_points_debug() {
-    /#
+/#
+
+    // Namespace wasp/wasp
+    // Params 0, eflags: 0x0
+    // Checksum 0x5d00295e, Offset: 0x1b68
+    // Size: 0x102
+    function guard_points_debug() {
         self endon(#"death");
         if (self.isdebugdrawing === 1) {
             return;
@@ -368,8 +369,9 @@ function guard_points_debug() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace wasp/wasp
 // Params 1, eflags: 0x0

@@ -1009,12 +1009,13 @@ function function_5648f82(team) {
     }
 }
 
-// Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x0
-// Checksum 0x701ebc6a, Offset: 0x38a8
-// Size: 0xa24
-function devgui_setup() {
-    /#
+/#
+
+    // Namespace wz_contracts/wz_contracts
+    // Params 0, eflags: 0x0
+    // Checksum 0x701ebc6a, Offset: 0x38a8
+    // Size: 0xa24
+    function devgui_setup() {
         devgui_base = "<unknown string>";
         wait(3);
         contracts::function_e07e542b(devgui_base, undefined);
@@ -1084,6 +1085,6 @@ function devgui_setup() {
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-    #/
-}
+    }
 
+#/

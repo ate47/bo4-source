@@ -1322,12 +1322,13 @@ function anyobjectsinworld(weapon) {
     return objectsinworld;
 }
 
-// Namespace weaponobjects/weaponobjects
-// Params 5, eflags: 0x0
-// Checksum 0xab653a42, Offset: 0x47f8
-// Size: 0xb6
-function proximitysphere(origin, innerradius, incolor, outerradius, outcolor) {
-    /#
+/#
+
+    // Namespace weaponobjects/weaponobjects
+    // Params 5, eflags: 0x0
+    // Checksum 0xab653a42, Offset: 0x47f8
+    // Size: 0xb6
+    function proximitysphere(origin, innerradius, incolor, outerradius, outcolor) {
         self endon(#"death");
         while (true) {
             if (isdefined(innerradius)) {
@@ -1338,30 +1339,26 @@ function proximitysphere(origin, innerradius, incolor, outerradius, outcolor) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace weaponobjects/weaponobjects
-// Params 1, eflags: 0x0
-// Checksum 0xda4033e4, Offset: 0x48b8
-// Size: 0x94
-function proximityalarmweaponobjectdebug(watcher) {
-    /#
+    // Namespace weaponobjects/weaponobjects
+    // Params 1, eflags: 0x0
+    // Checksum 0xda4033e4, Offset: 0x48b8
+    // Size: 0x94
+    function proximityalarmweaponobjectdebug(watcher) {
         self endon(#"death");
         self util::waittillnotmoving();
         if (!isdefined(self)) {
             return;
         }
         self thread proximitysphere(self.origin, self.weapon.proximityalarminnerradius, (0, 0.75, 0), self.weapon.proximityalarmouterradius, (0, 0.75, 0));
-    #/
-}
+    }
 
-// Namespace weaponobjects/weaponobjects
-// Params 1, eflags: 0x0
-// Checksum 0xd32412aa, Offset: 0x4958
-// Size: 0x104
-function proximityweaponobjectdebug(watcher) {
-    /#
+    // Namespace weaponobjects/weaponobjects
+    // Params 1, eflags: 0x0
+    // Checksum 0xd32412aa, Offset: 0x4958
+    // Size: 0x104
+    function proximityweaponobjectdebug(watcher) {
         self endon(#"death");
         self util::waittillnotmoving();
         if (!isdefined(self)) {
@@ -1373,15 +1370,13 @@ function proximityweaponobjectdebug(watcher) {
         }
         self thread showcone(acos(watcher.detectiondot), watcher.detonateradius, (1, 0.85, 0));
         self thread showcone(60, 256, (1, 0, 0));
-    #/
-}
+    }
 
-// Namespace weaponobjects/weaponobjects
-// Params 3, eflags: 0x0
-// Checksum 0x10a6afae, Offset: 0x4a68
-// Size: 0x208
-function showcone(angle, range, color) {
-    /#
+    // Namespace weaponobjects/weaponobjects
+    // Params 3, eflags: 0x0
+    // Checksum 0x10a6afae, Offset: 0x4a68
+    // Size: 0x208
+    function showcone(angle, range, color) {
         self endon(#"death");
         start = self.origin;
         forward = anglestoforward(self.angles);
@@ -1402,8 +1397,9 @@ function showcone(angle, range, color) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace weaponobjects/weaponobjects
 // Params 1, eflags: 0x0
@@ -2105,18 +2101,20 @@ function function_ac7c2bf9(params = undefined) {
     }
 }
 
-// Namespace weaponobjects/weaponobjects
-// Params 2, eflags: 0x0
-// Checksum 0xc19fcdd1, Offset: 0x7160
-// Size: 0x64
-function saydamaged(orig, amount) {
-    /#
-        for (i = 0; i < 60; i++) {
+/#
+
+    // Namespace weaponobjects/weaponobjects
+    // Params 2, eflags: 0x0
+    // Checksum 0xc19fcdd1, Offset: 0x7160
+    // Size: 0x64
+    function saydamaged(orig, amount) {
+                for (i = 0; i < 60; i++) {
             print3d(orig, "<unknown string>" + amount);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace weaponobjects/weaponobjects
 // Params 2, eflags: 0x5 linked
@@ -2747,12 +2745,13 @@ function function_d9c08e94(var_2f190eaf, var_46f3f2d3) {
     }
 }
 
-// Namespace weaponobjects/weaponobjects
-// Params 3, eflags: 0x0
-// Checksum 0x1f7de4f7, Offset: 0x9140
-// Size: 0x1c0
-function switch_team(entity, watcher, owner) {
-    /#
+/#
+
+    // Namespace weaponobjects/weaponobjects
+    // Params 3, eflags: 0x0
+    // Checksum 0x1f7de4f7, Offset: 0x9140
+    // Size: 0x1c0
+    function switch_team(entity, watcher, owner) {
         self notify(#"stop_disarmthink");
         self endon(#"stop_disarmthink", #"death");
         setdvar(#"scr_switch_team", "<unknown string>");
@@ -2776,6 +2775,6 @@ function switch_team(entity, watcher, owner) {
                 setdvar(#"scr_switch_team", 0);
             }
         }
-    #/
-}
+    }
 
+#/

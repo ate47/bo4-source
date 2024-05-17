@@ -166,18 +166,20 @@ function nuked_population_sign_think(localclientnum) {
     }
 }
 
-// Namespace mp_nuketown_4/mp_nuketown_4
-// Params 2, eflags: 0x0
-// Checksum 0x406157a, Offset: 0xb78
-// Size: 0x4e
-function function_102a701c(tens, ones) {
-    /#
+/#
+
+    // Namespace mp_nuketown_4/mp_nuketown_4
+    // Params 2, eflags: 0x0
+    // Checksum 0x406157a, Offset: 0xb78
+    // Size: 0x4e
+    function function_102a701c(tens, ones) {
         while (!isdefined(tens) || !isdefined(ones)) {
             iprintlnbold("<unknown string>");
             wait(2);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mp_nuketown_4/mp_nuketown_4
 // Params 2, eflags: 0x1 linked

@@ -64,16 +64,17 @@ function function_2cdcf5c3() {
     exploder::exploder("fxexp_fires");
 }
 
-// Namespace mp_militia_scripted/mp_militia_scripted
-// Params 0, eflags: 0x0
-// Checksum 0x97ec261, Offset: 0x2e0
-// Size: 0x9c
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_militia_scripted/mp_militia_scripted
+    // Params 0, eflags: 0x0
+    // Checksum 0x97ec261, Offset: 0x2e0
+    // Size: 0x9c
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

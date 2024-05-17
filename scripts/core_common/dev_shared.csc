@@ -4,22 +4,21 @@
 
 #namespace dev_shared;
 
-// Namespace dev_shared/dev_shared
-// Params 0, eflags: 0x2
-// Checksum 0xd352ed75, Offset: 0x78
-// Size: 0x2c
-function autoexec init() {
-    /#
-        callback::on_localclient_connect(&function_b49b1b6b);
-    #/
-}
+/#
 
-// Namespace dev_shared/dev_shared
-// Params 1, eflags: 0x0
-// Checksum 0x6f2a50f8, Offset: 0xb0
-// Size: 0x274
-function function_b49b1b6b(localclientnum) {
-    /#
+    // Namespace dev_shared/dev_shared
+    // Params 0, eflags: 0x2
+    // Checksum 0xd352ed75, Offset: 0x78
+    // Size: 0x2c
+    function autoexec init() {
+        callback::on_localclient_connect(&function_b49b1b6b);
+    }
+
+    // Namespace dev_shared/dev_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x6f2a50f8, Offset: 0xb0
+    // Size: 0x274
+    function function_b49b1b6b(localclientnum) {
         var_39073e7a = undefined;
         var_b49b1b6b = undefined;
         a_effects = array("<unknown string>", "<unknown string>", "<unknown string>");
@@ -51,6 +50,6 @@ function function_b49b1b6b(localclientnum) {
             var_767a6d22 = var_114d05f;
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

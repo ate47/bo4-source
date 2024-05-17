@@ -188,7 +188,7 @@ function function_633915de(gamedifficulty) {
     if (gamedifficulty == 0) {
         ct_recon_tutorial::function_9b9525e9();
     } else {
-        function_72e84e64();
+        j_fore_le_01();
     }
     if (level flag::get("ct_player_success")) {
         b_success = 1;
@@ -215,7 +215,7 @@ function function_fb0c03bc(b_success) {
 // Params 0, eflags: 0x0
 // Checksum 0x33443fff, Offset: 0xd88
 // Size: 0x24c
-function function_72e84e64() {
+function j_fore_le_01() {
     level endon(#"combattraining_logic_finished");
     level thread ct_bots::activate_bots(11, #"axis");
     level thread function_98783e17();

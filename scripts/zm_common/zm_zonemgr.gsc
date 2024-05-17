@@ -979,12 +979,13 @@ function manage_zones(initial_zone) {
     }
 }
 
-// Namespace zm_zonemgr/zm_zonemgr
-// Params 0, eflags: 0x0
-// Checksum 0x65129962, Offset: 0x41c8
-// Size: 0x178
-function debug_show_spawn_locations() {
-    /#
+/#
+
+    // Namespace zm_zonemgr/zm_zonemgr
+    // Params 0, eflags: 0x0
+    // Checksum 0x65129962, Offset: 0x41c8
+    // Size: 0x178
+    function debug_show_spawn_locations() {
         if (isdefined(level.toggle_show_spawn_locations) && level.toggle_show_spawn_locations) {
             host_player = util::gethostplayer();
             foreach (location in level.zm_loc_types[#"zombie_location"]) {
@@ -996,8 +997,9 @@ function debug_show_spawn_locations() {
                 debugstar(location.origin, getdvarint(#"scr_spawner_location_time", 0), color);
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_zonemgr/zm_zonemgr
 // Params 1, eflags: 0x1 linked
@@ -1165,20 +1167,22 @@ function _debug_zones() {
     }
 }
 
-// Namespace zm_zonemgr/zm_zonemgr
-// Params 0, eflags: 0x4
-// Checksum 0x4006d53f, Offset: 0x4ea0
-// Size: 0x9c
-function private function_74a20786() {
-    /#
+/#
+
+    // Namespace zm_zonemgr/zm_zonemgr
+    // Params 0, eflags: 0x4
+    // Checksum 0x4006d53f, Offset: 0x4ea0
+    // Size: 0x9c
+    function private function_74a20786() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_zonemgr/zm_zonemgr
 // Params 0, eflags: 0x4

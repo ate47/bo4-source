@@ -154,20 +154,22 @@ function function_12e09509(localclientnum = 0) {
     }
 }
 
-// Namespace mute_smoke/mute_smoke
-// Params 2, eflags: 0x0
-// Checksum 0xea282118, Offset: 0xeb8
-// Size: 0xa4
-function function_e08f51f(origin, color) {
-    /#
+/#
+
+    // Namespace mute_smoke/mute_smoke
+    // Params 2, eflags: 0x0
+    // Checksum 0xea282118, Offset: 0xeb8
+    // Size: 0xa4
+    function function_e08f51f(origin, color) {
         if (getdvarint(#"hash_23f044f7a5117090", 0)) {
             if (!isdefined(color)) {
                 color = (0.5, 0, 0);
             }
             sphere(origin, 6, color, 0.5, 1, 20, int(62.5) * 15);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mute_smoke/mute_smoke
 // Params 7, eflags: 0x1 linked

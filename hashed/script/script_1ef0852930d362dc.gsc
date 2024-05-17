@@ -350,12 +350,13 @@ function function_656b149c(var_c74d5934, s_waitresult, var_41bf50f) {
     }
 }
 
-// Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 0, eflags: 0x0
-// Checksum 0xb9cb4931, Offset: 0x1df0
-// Size: 0x21a
-function function_58b7cdd7() {
-    /#
+/#
+
+    // Namespace namespace_82497b8a/namespace_a20a2d7a
+    // Params 0, eflags: 0x0
+    // Checksum 0xb9cb4931, Offset: 0x1df0
+    // Size: 0x21a
+    function function_58b7cdd7() {
         while (true) {
             foreach (n_index, var_e41be0c2 in level.var_2ec91d6e) {
                 n_y_pos = 480 + 18.7 * n_index;
@@ -383,8 +384,9 @@ function function_58b7cdd7() {
             }
             waitframe(2);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
 // Params 0, eflags: 0x1 linked
@@ -597,19 +599,21 @@ function function_a7c67ad6(ai_enemy, var_ea0a46dc, var_8c987230, ...) {
     ai_enemy thread [[ var_8c987230 ]](vararg);
 }
 
-// Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 3, eflags: 0x0
-// Checksum 0x6fed84c0, Offset: 0x2d28
-// Size: 0x68
-function function_45b0dfc6(v_origin, str_text, str_endon) {
-    /#
+/#
+
+    // Namespace namespace_82497b8a/namespace_a20a2d7a
+    // Params 3, eflags: 0x0
+    // Checksum 0x6fed84c0, Offset: 0x2d28
+    // Size: 0x68
+    function function_45b0dfc6(v_origin, str_text, str_endon) {
         self endon(str_endon);
         while (true) {
             print3d(v_origin, str_text, (0, 1, 0), 1, 0.7, 3);
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
 // Params 2, eflags: 0x1 linked

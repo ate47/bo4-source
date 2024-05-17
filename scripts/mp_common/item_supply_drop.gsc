@@ -37,12 +37,13 @@ function private __init__() {
     clientfield::register("scriptmover", "supply_drop_parachute_rob", 1, 1, "int");
 }
 
-// Namespace item_supply_drop/item_supply_drop
-// Params 0, eflags: 0x4
-// Checksum 0x1cf31862, Offset: 0x4f0
-// Size: 0x4e6
-function private function_eaba72c9() {
-    /#
+/#
+
+    // Namespace item_supply_drop/item_supply_drop
+    // Params 0, eflags: 0x4
+    // Checksum 0x1cf31862, Offset: 0x4f0
+    // Size: 0x4e6
+    function private function_eaba72c9() {
         while (true) {
             if (getdvarint(#"wz_supply_drop", 0) > 0) {
                 switch (getdvarint(#"wz_supply_drop", 0)) {
@@ -94,15 +95,13 @@ function private function_eaba72c9() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace item_supply_drop/item_supply_drop
-// Params 0, eflags: 0x4
-// Checksum 0xb7a59f54, Offset: 0x9e0
-// Size: 0x1c4
-function private _setup_devgui() {
-    /#
+    // Namespace item_supply_drop/item_supply_drop
+    // Params 0, eflags: 0x4
+    // Checksum 0xb7a59f54, Offset: 0x9e0
+    // Size: 0x1c4
+    function private _setup_devgui() {
         while (!canadddebugcommand()) {
             waitframe(1);
         }
@@ -117,15 +116,13 @@ function private _setup_devgui() {
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         level thread function_eaba72c9();
-    #/
-}
+    }
 
-// Namespace item_supply_drop/item_supply_drop
-// Params 0, eflags: 0x4
-// Checksum 0xfcafe48e, Offset: 0xbb0
-// Size: 0x4a4
-function private debug_supply_drop() {
-    /#
+    // Namespace item_supply_drop/item_supply_drop
+    // Params 0, eflags: 0x4
+    // Checksum 0xfcafe48e, Offset: 0xbb0
+    // Size: 0x4a4
+    function private debug_supply_drop() {
         if (isdefined(level.supplydropveh)) {
             deathcircleindex = isdefined(level.deathcircleindex) ? level.deathcircleindex : 0;
             deathcircle = level.deathcircles[deathcircleindex];
@@ -165,8 +162,9 @@ function private debug_supply_drop() {
                 sphere(var_99a8be82, radius, (1, 1, 1));
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace item_supply_drop/item_supply_drop
 // Params 2, eflags: 0x4

@@ -501,12 +501,13 @@ function function_23153807(s_telegraph, var_3d89d732 = undefined, var_d0b3106f =
     return var_d0b3106f;
 }
 
-// Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
-// Params 1, eflags: 0x4
-// Checksum 0x93f19605, Offset: 0x3570
-// Size: 0x2d4
-function private function_6361c85(str_script_noteworthy) {
-    /#
+/#
+
+    // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
+    // Params 1, eflags: 0x4
+    // Checksum 0x93f19605, Offset: 0x3570
+    // Size: 0x2d4
+    function private function_6361c85(str_script_noteworthy) {
         s_telegraph = struct::get(str_script_noteworthy, "<unknown string>");
         println("<unknown string>");
         println(s_telegraph.script_noteworthy);
@@ -536,8 +537,9 @@ function private function_6361c85(str_script_noteworthy) {
             }
         }
         println("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
 // Params 0, eflags: 0x1 linked
@@ -4228,12 +4230,13 @@ function function_53802e89(str_vox, v_loc, var_c30ae85a, var_3d981e0b) {
     level notify(#"hash_5286b6160d468570");
 }
 
-// Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
-// Params 2, eflags: 0x0
-// Checksum 0x8e0eb4b0, Offset: 0x14868
-// Size: 0x5ac
-function gear_up(b_packed, var_5b901c1) {
-    /#
+/#
+
+    // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
+    // Params 2, eflags: 0x0
+    // Checksum 0x8e0eb4b0, Offset: 0x14868
+    // Size: 0x5ac
+    function gear_up(b_packed, var_5b901c1) {
         if (!isdefined(b_packed)) {
             b_packed = 1;
         }
@@ -4279,20 +4282,18 @@ function gear_up(b_packed, var_5b901c1) {
         if (players.size) {
             array::pop(players, randomint(players.size)) giveweapon(getweapon(#"homunculus"));
         }
-    #/
-}
+    }
 
-// Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
-// Params 1, eflags: 0x0
-// Checksum 0x473871b9, Offset: 0x14e20
-// Size: 0x7c
-function function_1734a3af(s_spark) {
-    /#
+    // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
+    // Params 1, eflags: 0x0
+    // Checksum 0x473871b9, Offset: 0x14e20
+    // Size: 0x7c
+    function function_1734a3af(s_spark) {
         if (getdvarint(#"zm_debug_ee", 0)) {
             level waittill(#"all_players_spawned");
             level thread function_bcdb8fc4(s_spark);
             function_3965c201(s_spark);
         }
-    #/
-}
+    }
 
+#/

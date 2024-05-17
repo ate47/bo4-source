@@ -4,12 +4,13 @@
 
 #namespace ability_power;
 
-// Namespace ability_power/ability_power
-// Params 2, eflags: 0x0
-// Checksum 0xbddbc568, Offset: 0xd8
-// Size: 0x104
-function cpower_print(slot, str) {
-    /#
+/#
+
+    // Namespace ability_power/ability_power
+    // Params 2, eflags: 0x0
+    // Checksum 0xbddbc568, Offset: 0xd8
+    // Size: 0x104
+    function cpower_print(slot, str) {
         color = "<unknown string>";
         toprint = color + "<unknown string>" + str;
         weaponname = "<unknown string>";
@@ -21,8 +22,9 @@ function cpower_print(slot, str) {
             return;
         }
         println(self.playername + "<unknown string>" + weaponname + "<unknown string>" + toprint);
-    #/
-}
+    }
+
+#/
 
 // Namespace ability_power/ability_power
 // Params 1, eflags: 0x0

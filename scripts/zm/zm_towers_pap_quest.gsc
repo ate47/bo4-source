@@ -1066,12 +1066,13 @@ function function_d7c092b9() {
     level flag::set("zm_towers_pap_quest_sentinel_artifact_exploded");
 }
 
-// Namespace zm_towers_pap_quest/zm_towers_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0xf99d81df, Offset: 0x5518
-// Size: 0x31c
-function function_438a415(str_head) {
-    /#
+/#
+
+    // Namespace zm_towers_pap_quest/zm_towers_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0xf99d81df, Offset: 0x5518
+    // Size: 0x31c
+    function function_438a415(str_head) {
         switch (str_head) {
         case #"danu":
             var_31e5b512 = #"hash_18134dc5b9b39a96";
@@ -1113,15 +1114,13 @@ function function_438a415(str_head) {
         function_f18e2775();
         level.var_c22016cf++;
         level thread function_7590a833();
-    #/
-}
+    }
 
-// Namespace zm_towers_pap_quest/zm_towers_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0xddc3fbdf, Offset: 0x5840
-// Size: 0x1d2
-function function_883e88be(str_enemy) {
-    /#
+    // Namespace zm_towers_pap_quest/zm_towers_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0xddc3fbdf, Offset: 0x5840
+    // Size: 0x1d2
+    function function_883e88be(str_enemy) {
         level.var_4118581a = 1;
         switch (str_enemy) {
         case #"destroyers":
@@ -1146,6 +1145,6 @@ function function_883e88be(str_enemy) {
             iprintlnbold("<unknown string>");
             break;
         }
-    #/
-}
+    }
 
+#/

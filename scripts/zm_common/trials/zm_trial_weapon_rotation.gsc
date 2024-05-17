@@ -224,12 +224,13 @@ function private function_413cffae(n_interval, e_player) {
     }
 }
 
-// Namespace zm_trial_weapon_rotation/zm_trial_weapon_rotation
-// Params 1, eflags: 0x0
-// Checksum 0x45e69197, Offset: 0x1118
-// Size: 0xf2
-function function_579553d8(n_interval) {
-    /#
+/#
+
+    // Namespace zm_trial_weapon_rotation/zm_trial_weapon_rotation
+    // Params 1, eflags: 0x0
+    // Checksum 0x45e69197, Offset: 0x1118
+    // Size: 0xf2
+    function function_579553d8(n_interval) {
         self notify("<unknown string>");
         self endon("<unknown string>");
         level endon(#"hash_7646638df88a3656", #"end_game");
@@ -239,8 +240,9 @@ function function_579553d8(n_interval) {
             n_interval -= float(function_60d95f53()) / 1000;
             n_interval = math::clamp(n_interval, 0, 999);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_trial_weapon_rotation/zm_trial_weapon_rotation
 // Params 1, eflags: 0x0

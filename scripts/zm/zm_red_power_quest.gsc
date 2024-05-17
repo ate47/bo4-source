@@ -1708,12 +1708,13 @@ function function_350204ca(str_vo) {
     }
 }
 
-// Namespace zm_red_power_quest/zm_red_power_quest
-// Params 0, eflags: 0x0
-// Checksum 0x9d04c3dd, Offset: 0x8698
-// Size: 0x2c4
-function devgui_complete() {
-    /#
+/#
+
+    // Namespace zm_red_power_quest/zm_red_power_quest
+    // Params 0, eflags: 0x0
+    // Checksum 0x9d04c3dd, Offset: 0x8698
+    // Size: 0x2c4
+    function devgui_complete() {
         level flag::set(#"hash_dc34ebe02d09532");
         level flag::set(#"hash_3dba794053dea40e");
         level flag::set(#"perseus_exits");
@@ -1738,6 +1739,6 @@ function devgui_complete() {
         level flag::wait_till("<unknown string>");
         level flag::set(#"hash_420b070435236eab");
         function_e059d0e1();
-    #/
-}
+    }
 
+#/

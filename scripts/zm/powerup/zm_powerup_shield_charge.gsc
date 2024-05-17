@@ -90,12 +90,13 @@ function shield_on_hud(drop_item, player_team) {
     #/
 }
 
-// Namespace zm_powerup_shield_charge/zm_powerup_shield_charge
-// Params 1, eflags: 0x0
-// Checksum 0x72c09469, Offset: 0x438
-// Size: 0xd4
-function full_ammo_move_hud(player_team) {
-    /#
+/#
+
+    // Namespace zm_powerup_shield_charge/zm_powerup_shield_charge
+    // Params 1, eflags: 0x0
+    // Checksum 0x72c09469, Offset: 0x438
+    // Size: 0xd4
+    function full_ammo_move_hud(player_team) {
         players = getplayers(player_team);
         players[0] playsoundtoteam("<unknown string>", player_team);
         wait(0.5);
@@ -106,29 +107,25 @@ function full_ammo_move_hud(player_team) {
         self.alpha = 0;
         wait(move_fade_time);
         self destroy();
-    #/
-}
+    }
 
-// Namespace zm_powerup_shield_charge/zm_powerup_shield_charge
-// Params 0, eflags: 0x0
-// Checksum 0x889aec02, Offset: 0x518
-// Size: 0x7c
-function shield_devgui() {
-    /#
+    // Namespace zm_powerup_shield_charge/zm_powerup_shield_charge
+    // Params 0, eflags: 0x0
+    // Checksum 0x889aec02, Offset: 0x518
+    // Size: 0x7c
+    function shield_devgui() {
         level flagsys::wait_till("<unknown string>");
         wait(1);
         zm_devgui::add_custom_devgui_callback(&shield_devgui_callback);
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace zm_powerup_shield_charge/zm_powerup_shield_charge
-// Params 1, eflags: 0x0
-// Checksum 0x1fc5d4a3, Offset: 0x5a0
-// Size: 0xc8
-function shield_devgui_callback(cmd) {
-    /#
+    // Namespace zm_powerup_shield_charge/zm_powerup_shield_charge
+    // Params 1, eflags: 0x0
+    // Checksum 0x1fc5d4a3, Offset: 0x5a0
+    // Size: 0xc8
+    function shield_devgui_callback(cmd) {
         players = getplayers();
         retval = 0;
         switch (cmd) {
@@ -140,6 +137,6 @@ function shield_devgui_callback(cmd) {
             break;
         }
         return retval;
-    #/
-}
+    }
 
+#/

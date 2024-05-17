@@ -1389,12 +1389,13 @@ function game_end_vox(winner, tie) {
     }
 }
 
-// Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x0
-// Checksum 0xcd5c0132, Offset: 0x5c78
-// Size: 0x408
-function devgui_think() {
-    /#
+/#
+
+    // Namespace dialog_shared/dialog_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xcd5c0132, Offset: 0x5c78
+    // Size: 0x408
+    function devgui_think() {
         setdvar(#"devgui_mpdialog", "<unknown string>");
         setdvar(#"testalias_player", "<unknown string>");
         setdvar(#"testalias_taacom", "<unknown string>");
@@ -1448,15 +1449,13 @@ function devgui_think() {
             }
             setdvar(#"devgui_mpdialog", "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x0
-// Checksum 0xbfe138fd, Offset: 0x6088
-// Size: 0xe2
-function test_other_dialog(delay) {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xbfe138fd, Offset: 0x6088
+    // Size: 0xe2
+    function test_other_dialog(delay) {
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
@@ -1464,68 +1463,58 @@ function test_other_dialog(delay) {
                 return;
             }
         }
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x0
-// Checksum 0x2c3d11ed, Offset: 0x6178
-// Size: 0x64
-function test_player_dialog(delay) {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x2c3d11ed, Offset: 0x6178
+    // Size: 0x64
+    function test_player_dialog(delay) {
         if (!isdefined(delay)) {
             delay = 0;
         }
         wait(delay);
         self playsoundontag(getdvarstring(#"testalias_player", "<unknown string>"), "<unknown string>");
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x0
-// Checksum 0xc85b6ca9, Offset: 0x61e8
-// Size: 0x5c
-function test_taacom_dialog(delay) {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xc85b6ca9, Offset: 0x61e8
+    // Size: 0x5c
+    function test_taacom_dialog(delay) {
         if (!isdefined(delay)) {
             delay = 0;
         }
         wait(delay);
         self playlocalsound(getdvarstring(#"testalias_taacom", "<unknown string>"));
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x0
-// Checksum 0x28e0c1ce, Offset: 0x6250
-// Size: 0x5c
-function test_commander_dialog(delay) {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x28e0c1ce, Offset: 0x6250
+    // Size: 0x5c
+    function test_commander_dialog(delay) {
         if (!isdefined(delay)) {
             delay = 0;
         }
         wait(delay);
         self playlocalsound(getdvarstring(#"testalias_commander", "<unknown string>"));
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 1, eflags: 0x0
-// Checksum 0x58d55e0d, Offset: 0x62b8
-// Size: 0x4c
-function play_test_dialog(dialogkey) {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x58d55e0d, Offset: 0x62b8
+    // Size: 0x4c
+    function play_test_dialog(dialogkey) {
         dialogalias = self get_player_dialog_alias(dialogkey);
         self playsoundontag(dialogalias, "<unknown string>");
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x0
-// Checksum 0x217b3c1, Offset: 0x6310
-// Size: 0x10c
-function response_key() {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x217b3c1, Offset: 0x6310
+    // Size: 0x10c
+    function response_key() {
         switch (self getmpdialogname()) {
         case #"assassin":
             return "<unknown string>";
@@ -1547,15 +1536,13 @@ function response_key() {
             return "<unknown string>";
         }
         return "<unknown string>";
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x0
-// Checksum 0x2f8b39f5, Offset: 0x6428
-// Size: 0x13c
-function play_conv_self_other() {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x2f8b39f5, Offset: 0x6428
+    // Size: 0x13c
+    function play_conv_self_other() {
         num = randomintrange(0, 4);
         self play_test_dialog("<unknown string>" + num);
         wait(4);
@@ -1566,15 +1553,13 @@ function play_conv_self_other() {
                 break;
             }
         }
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x0
-// Checksum 0x8d053330, Offset: 0x6570
-// Size: 0x13c
-function play_conv_other_self() {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x8d053330, Offset: 0x6570
+    // Size: 0x13c
+    function play_conv_other_self() {
         num = randomintrange(0, 4);
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
@@ -1585,15 +1570,13 @@ function play_conv_other_self() {
         }
         wait(4);
         self play_test_dialog("<unknown string>" + player response_key() + num);
-    #/
-}
+    }
 
-// Namespace dialog_shared/dialog_shared
-// Params 0, eflags: 0x0
-// Checksum 0xf2a03c8, Offset: 0x66b8
-// Size: 0x1dc
-function play_conv_other_other() {
-    /#
+    // Namespace dialog_shared/dialog_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xf2a03c8, Offset: 0x66b8
+    // Size: 0x1dc
+    function play_conv_other_other() {
         num = randomintrange(0, 4);
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
@@ -1610,6 +1593,6 @@ function play_conv_other_other() {
                 break;
             }
         }
-    #/
-}
+    }
 
+#/

@@ -1197,12 +1197,13 @@ function function_a782529(e_player) {
     return var_8bfdbbee;
 }
 
-// Namespace spawning/spawning_shared
-// Params 0, eflags: 0x0
-// Checksum 0xdfe68043, Offset: 0x4678
-// Size: 0x4dc
-function spawnpoint_debug() {
-    /#
+/#
+
+    // Namespace spawning/spawning_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xdfe68043, Offset: 0x4678
+    // Size: 0x4dc
+    function spawnpoint_debug() {
         a_spawnlists = getspawnlists();
         index = 0;
         foreach (s_list in a_spawnlists) {
@@ -1251,15 +1252,13 @@ function spawnpoint_debug() {
             }
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace spawning/spawning_shared
-// Params 1, eflags: 0x0
-// Checksum 0x85345851, Offset: 0x4b60
-// Size: 0x288
-function render_spawnpoints_triggers(trig) {
-    /#
+    // Namespace spawning/spawning_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x85345851, Offset: 0x4b60
+    // Size: 0x288
+    function render_spawnpoints_triggers(trig) {
         box(trig.origin, trig getmins(), trig getmaxs(), 0, (0, 0, 1), 1, 0, 10);
         if (isdefined(trig.spawn_points_to_enable)) {
             foreach (spawn_point in trig.spawn_points_to_enable) {
@@ -1273,6 +1272,6 @@ function render_spawnpoints_triggers(trig) {
                 line(trig.origin, spawn_point.origin, (1, 0, 0), 1, 0, 10);
             }
         }
-    #/
-}
+    }
 
+#/

@@ -75,16 +75,17 @@ function function_33022f5b(a_ents) {
     }
 }
 
-// Namespace mp_slums2_scripted/mp_slums2_scripted
-// Params 0, eflags: 0x0
-// Checksum 0xd63c732f, Offset: 0x380
-// Size: 0x9c
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_slums2_scripted/mp_slums2_scripted
+    // Params 0, eflags: 0x0
+    // Checksum 0xd63c732f, Offset: 0x380
+    // Size: 0x9c
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

@@ -1584,12 +1584,13 @@ function setupprop() {
     self function_239d2233(int(self.health));
 }
 
-// Namespace prop/prop
-// Params 0, eflags: 0x0
-// Checksum 0xcd26161b, Offset: 0x6b50
-// Size: 0x816
-function function_63d4897() {
-    /#
+/#
+
+    // Namespace prop/prop
+    // Params 0, eflags: 0x0
+    // Checksum 0xcd26161b, Offset: 0x6b50
+    // Size: 0x816
+    function function_63d4897() {
         level endon(#"game_ended");
         self endon(#"disconnect");
         function_32041818();
@@ -1668,15 +1669,13 @@ function function_63d4897() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace prop/prop
-// Params 0, eflags: 0x0
-// Checksum 0x4e17988c, Offset: 0x7370
-// Size: 0x3bc
-function function_32041818() {
-    /#
+    // Namespace prop/prop
+    // Params 0, eflags: 0x0
+    // Checksum 0x4e17988c, Offset: 0x7370
+    // Size: 0x3bc
+    function function_32041818() {
         path = "prop_killed_all_props";
         adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
         adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
@@ -1696,8 +1695,9 @@ function function_32041818() {
         adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
         adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
         adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace prop/prop
 // Params 1, eflags: 0x0

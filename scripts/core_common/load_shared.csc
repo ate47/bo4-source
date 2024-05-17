@@ -33,17 +33,19 @@ function __init__() {
     apply_mature_filter();
 }
 
-// Namespace load/load_shared
-// Params 0, eflags: 0x0
-// Checksum 0x7e17003d, Offset: 0x1a8
-// Size: 0x26
-function first_frame() {
-    /#
+/#
+
+    // Namespace load/load_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x7e17003d, Offset: 0x1a8
+    // Size: 0x26
+    function first_frame() {
         level.first_frame = 1;
         waitframe(1);
         level.first_frame = undefined;
-    #/
-}
+    }
+
+#/
 
 // Namespace load/load_shared
 // Params 0, eflags: 0x1 linked

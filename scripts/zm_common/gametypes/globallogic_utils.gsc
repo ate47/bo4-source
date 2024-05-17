@@ -112,12 +112,13 @@ function getvalueinrange(value, minvalue, maxvalue) {
     return value;
 }
 
-// Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x0
-// Checksum 0x265ed4e2, Offset: 0x468
-// Size: 0x1c2
-function assertproperplacement() {
-    /#
+/#
+
+    // Namespace globallogic_utils/globallogic_utils
+    // Params 0, eflags: 0x0
+    // Checksum 0x265ed4e2, Offset: 0x468
+    // Size: 0x1c2
+    function assertproperplacement() {
         numplayers = level.placement[#"all"].size;
         for (i = 0; i < numplayers - 1; i++) {
             if (isdefined(level.placement[#"all"][i]) && isdefined(level.placement[#"all"][i + 1])) {
@@ -132,8 +133,9 @@ function assertproperplacement() {
                 }
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic_utils/globallogic_utils
 // Params 1, eflags: 0x1 linked
@@ -369,18 +371,20 @@ function gethitlocheight(shitloc) {
     return 48;
 }
 
-// Namespace globallogic_utils/globallogic_utils
-// Params 2, eflags: 0x0
-// Checksum 0xe7748731, Offset: 0xf08
-// Size: 0x5c
-function debugline(start, end) {
-    /#
-        for (i = 0; i < 50; i++) {
+/#
+
+    // Namespace globallogic_utils/globallogic_utils
+    // Params 2, eflags: 0x0
+    // Checksum 0xe7748731, Offset: 0xf08
+    // Size: 0x5c
+    function debugline(start, end) {
+                for (i = 0; i < 50; i++) {
             line(start, end);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic_utils/globallogic_utils
 // Params 2, eflags: 0x0
@@ -395,12 +399,13 @@ function isexcluded(entity, entitylist) {
     return false;
 }
 
-// Namespace globallogic_utils/globallogic_utils
-// Params 2, eflags: 0x1 linked
-// Checksum 0xf6ffc7d9, Offset: 0xfd0
-// Size: 0xfc
-function logteamwinstring(wintype, winner) {
-    /#
+/#
+
+    // Namespace globallogic_utils/globallogic_utils
+    // Params 2, eflags: 0x1 linked
+    // Checksum 0xf6ffc7d9, Offset: 0xfd0
+    // Size: 0xfc
+    function logteamwinstring(wintype, winner) {
         log_string = wintype;
         if (isdefined(winner)) {
             log_string = log_string + "<unknown string>" + winner;
@@ -409,6 +414,6 @@ function logteamwinstring(wintype, winner) {
             log_string = log_string + "<unknown string>" + str_team + "<unknown string>" + game.stat[#"teamscores"][team];
         }
         print(log_string);
-    #/
-}
+    }
 
+#/

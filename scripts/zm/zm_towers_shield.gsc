@@ -817,12 +817,13 @@ function function_3624f8c8(str_piece) {
     self clientfield::increment_to_player(var_3299d066);
 }
 
-// Namespace namespace_52d8d460/zm_towers_shield
-// Params 0, eflags: 0x4
-// Checksum 0xb19cb8f6, Offset: 0x36f8
-// Size: 0xf4
-function private function_8391ad40() {
-    /#
+/#
+
+    // Namespace namespace_52d8d460/zm_towers_shield
+    // Params 0, eflags: 0x4
+    // Checksum 0xb19cb8f6, Offset: 0x36f8
+    // Size: 0xf4
+    function private function_8391ad40() {
         level endon(#"end_game");
         self endon(#"disconnect");
         level flag::wait_till(#"hash_3551c4ab09311644");
@@ -831,6 +832,6 @@ function private function_8391ad40() {
         self flag::set(#"hash_392f20a71becaec7");
         level flag::wait_till(#"hash_17425b597c04b9c3");
         self flag::set(#"hash_17425b597c04b9c3");
-    #/
-}
+    }
 
+#/

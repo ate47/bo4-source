@@ -20,27 +20,26 @@ function __init__() {
     level.var_f9f04b00 = debug_center_screen::register("debug_center_screen_instance");
 }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0xd0578543, Offset: 0x110
-// Size: 0x4e
-function remove_mp_contracts_devgui(localclientnum) {
-    /#
+/#
+
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0xd0578543, Offset: 0x110
+    // Size: 0x4e
+    function remove_mp_contracts_devgui(localclientnum) {
         if (level.mp_contracts_devgui_added === 1) {
             /#
                 adddebugcommand(localclientnum, "<unknown string>");
             #/
             level.mp_contracts_devgui_added = undefined;
         }
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0x93f91176, Offset: 0x168
-// Size: 0x112
-function create_mp_contracts_devgui(localclientnum) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0x93f91176, Offset: 0x168
+    // Size: 0x112
+    function create_mp_contracts_devgui(localclientnum) {
         level notify(#"create_mp_contracts_devgui_singleton");
         level endon(#"create_mp_contracts_devgui_singleton");
         remove_mp_contracts_devgui(localclientnum);
@@ -59,15 +58,13 @@ function create_mp_contracts_devgui(localclientnum) {
         add_devgui_scheduler(localclientnum);
         level thread watch_devgui();
         level.mp_contracts_devgui_added = 1;
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0x453dd64b, Offset: 0x288
-// Size: 0x436
-function add_blackjack_contract(localclientnum) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0x453dd64b, Offset: 0x288
+    // Size: 0x436
+    function add_blackjack_contract(localclientnum) {
         root = "<unknown string>";
         next_cmd = "<unknown string>";
         add_blackjack_contract_set_count(localclientnum, root, 0);
@@ -112,27 +109,23 @@ function add_blackjack_contract(localclientnum) {
             cmds += stat_write_bjc_master + "<unknown string>" + (i == 6 ? 1 : 0);
             add_devgui_cmd(localclientnum, side_bet_root + "<unknown string>" + i, cmds);
         }
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 3, eflags: 0x0
-// Checksum 0x3b0735a7, Offset: 0x6c8
-// Size: 0xa4
-function add_blackjack_contract_set_count(localclientnum, root, contract_count) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 3, eflags: 0x0
+    // Checksum 0x3b0735a7, Offset: 0x6c8
+    // Size: 0xa4
+    function add_blackjack_contract_set_count(localclientnum, root, contract_count) {
         cmds = "<unknown string>" + contract_count;
         item_text = contract_count == 1 ? "<unknown string>" : "<unknown string>";
         add_devgui_cmd(localclientnum, root + "<unknown string>" + contract_count + item_text + "<unknown string>" + contract_count, cmds);
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 2, eflags: 0x0
-// Checksum 0xf815aff8, Offset: 0x778
-// Size: 0x5d4
-function add_contract_slot(localclientnum, slot) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 2, eflags: 0x0
+    // Checksum 0xf815aff8, Offset: 0x778
+    // Size: 0x5d4
+    function add_contract_slot(localclientnum, slot) {
         root = "<unknown string>" + slot;
         add_weekly = 1;
         add_daily = 1;
@@ -215,15 +208,13 @@ function add_contract_slot(localclientnum, slot) {
         cmds += next_cmd;
         cmds += stat_write + "<unknown string>";
         add_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0xb6b56ee, Offset: 0xd58
-// Size: 0x29c
-function add_devgui_scheduler(localclientnum) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0xb6b56ee, Offset: 0xd58
+    // Size: 0x29c
+    function add_devgui_scheduler(localclientnum) {
         root = "<unknown string>";
         root_daily = root + "<unknown string>";
         add_contract_scheduler_daily_duration(localclientnum, root_daily, "<unknown string>", 86400);
@@ -245,69 +236,59 @@ function add_devgui_scheduler(localclientnum) {
         add_watched_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
         cmds = "<unknown string>";
         add_watched_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 3, eflags: 0x0
-// Checksum 0x33b501e0, Offset: 0x1000
-// Size: 0x6c
-function add_watched_devgui_cmd(localclientnum, root, cmds) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 3, eflags: 0x0
+    // Checksum 0x33b501e0, Offset: 0x1000
+    // Size: 0x6c
+    function add_watched_devgui_cmd(localclientnum, root, cmds) {
         next_cmd = "<unknown string>";
         cmds += next_cmd;
         cmds += "<unknown string>";
         add_devgui_cmd(localclientnum, root, cmds);
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 4, eflags: 0x0
-// Checksum 0xf1b6cbc7, Offset: 0x1078
-// Size: 0xb4
-function add_contract_scheduler_daily_duration(localclientnum, root, label, daily_duration) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 4, eflags: 0x0
+    // Checksum 0xf1b6cbc7, Offset: 0x1078
+    // Size: 0xb4
+    function add_contract_scheduler_daily_duration(localclientnum, root, label, daily_duration) {
         next_cmd = "<unknown string>";
         cmds = "<unknown string>" + daily_duration;
         cmds += next_cmd;
         cmds += "<unknown string>";
         cmds = wrap_dvarconfig_cmds(cmds);
         add_devgui_cmd(localclientnum, root + label, cmds);
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0x6199e95c, Offset: 0x1138
-// Size: 0x58
-function wrap_dvarconfig_cmds(cmds) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0x6199e95c, Offset: 0x1138
+    // Size: 0x58
+    function wrap_dvarconfig_cmds(cmds) {
         next_cmd = "<unknown string>";
         newcmds = "<unknown string>";
         newcmds += next_cmd;
         newcmds += cmds;
         return newcmds;
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 3, eflags: 0x0
-// Checksum 0x9177e5f7, Offset: 0x1198
-// Size: 0x64
-function add_devgui_cmd(localclientnum, menu_path, cmds) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 3, eflags: 0x0
+    // Checksum 0x9177e5f7, Offset: 0x1198
+    // Size: 0x64
+    function add_devgui_cmd(localclientnum, menu_path, cmds) {
         /#
             adddebugcommand(localclientnum, "<unknown string>" + menu_path + "<unknown string>" + cmds + "<unknown string>");
         #/
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0x8d713fb7, Offset: 0x1208
-// Size: 0xe0
-function calculate_schedule_start_time(ref_time) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0x8d713fb7, Offset: 0x1208
+    // Size: 0xe0
+    function calculate_schedule_start_time(ref_time) {
         new_start_time = ref_time;
         daily_duration = getdvarint(#"contracts_daily_duration", 60);
         weekly_duration = daily_duration * 7;
@@ -316,15 +297,13 @@ function calculate_schedule_start_time(ref_time) {
         half_max_multiple = int(max_multiple / 2);
         new_start_time -= half_max_multiple * schedule_duration;
         return new_start_time;
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 0, eflags: 0x0
-// Checksum 0x3e131207, Offset: 0x12f0
-// Size: 0x2c0
-function watch_devgui() {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 0, eflags: 0x0
+    // Checksum 0x3e131207, Offset: 0x12f0
+    // Size: 0x2c0
+    function watch_devgui() {
         level notify(#"watch_devgui_client_mp_singleton");
         level endon(#"watch_devgui_client_mp_singleton");
         while (true) {
@@ -360,49 +339,41 @@ function watch_devgui() {
             }
             clear_dvar("<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0x6ae82046, Offset: 0x15b8
-// Size: 0xac
-function update_contract_start_time(delta_days) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0x6ae82046, Offset: 0x15b8
+    // Size: 0xac
+    function update_contract_start_time(delta_days) {
         setdvar(#"dvarconfigenabled", 0);
         start_time = get_schedule_start_time();
         daily_duration = getdvarint(#"contracts_daily_duration", 60);
         setdvar(#"contracts_start_time", start_time + daily_duration * delta_days);
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0x2e6edea0, Offset: 0x1670
-// Size: 0x30
-function dvar_has_value(dvar_name) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0x2e6edea0, Offset: 0x1670
+    // Size: 0x30
+    function dvar_has_value(dvar_name) {
         return getdvarint(dvar_name, 0) != 0;
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 1, eflags: 0x0
-// Checksum 0x6f9372be, Offset: 0x16a8
-// Size: 0x2c
-function clear_dvar(dvar_name) {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 1, eflags: 0x0
+    // Checksum 0x6f9372be, Offset: 0x16a8
+    // Size: 0x2c
+    function clear_dvar(dvar_name) {
         setdvar(dvar_name, 0);
-    #/
-}
+    }
 
-// Namespace mp_devgui/devgui
-// Params 0, eflags: 0x0
-// Checksum 0xdb6474dd, Offset: 0x16e0
-// Size: 0x34
-function get_schedule_start_time() {
-    /#
+    // Namespace mp_devgui/devgui
+    // Params 0, eflags: 0x0
+    // Checksum 0xdb6474dd, Offset: 0x16e0
+    // Size: 0x34
+    function get_schedule_start_time() {
         return getdvarint(#"contracts_start_time", 1463418000);
-    #/
-}
+    }
 
+#/

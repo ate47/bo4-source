@@ -261,18 +261,19 @@ function function_da3ef83b(s_info) {
     }
 }
 
-// Namespace mp_geothermal/mp_geothermal
-// Params 2, eflags: 0x0
-// Checksum 0x3c655944, Offset: 0x19f0
-// Size: 0xa6
-function function_a5242577(struct, color) {
-    /#
+/#
+
+    // Namespace mp_geothermal/mp_geothermal
+    // Params 2, eflags: 0x0
+    // Checksum 0x3c655944, Offset: 0x19f0
+    // Size: 0xa6
+    function function_a5242577(struct, color) {
         struct notify(#"start");
         struct endon(#"start");
         while (getdvarint(#"hash_372bf3b258a4653e", 0)) {
             sphere(struct.origin, 16, color, 1, 0, 8, 30);
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

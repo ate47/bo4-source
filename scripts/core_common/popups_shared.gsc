@@ -70,12 +70,13 @@ function on_player_connect() {
     }
 }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x3fe6c46d, Offset: 0x388
-// Size: 0x64
-function devgui_notif_getgunleveltablename() {
-    /#
+/#
+
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x3fe6c46d, Offset: 0x388
+    // Size: 0x64
+    function devgui_notif_getgunleveltablename() {
         if (sessionmodeiscampaigngame()) {
             return #"gamedata/weapons/cp/cp_gunlevels.csv";
         }
@@ -83,15 +84,13 @@ function devgui_notif_getgunleveltablename() {
             return #"gamedata/weapons/zm/zm_gunlevels.csv";
         }
         return #"gamedata/weapons/mp/mp_gunlevels.csv";
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x7822cfc1, Offset: 0x3f8
-// Size: 0x4e
-function devgui_notif_getchallengestablecount() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x7822cfc1, Offset: 0x3f8
+    // Size: 0x4e
+    function devgui_notif_getchallengestablecount() {
         if (sessionmodeiscampaigngame()) {
             return 4;
         }
@@ -99,15 +98,13 @@ function devgui_notif_getchallengestablecount() {
             return 4;
         }
         return 6;
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 1, eflags: 0x0
-// Checksum 0xde4bdd44, Offset: 0x450
-// Size: 0x9a
-function devgui_notif_getchallengestablename(tableid) {
-    /#
+    // Namespace popups/popups_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xde4bdd44, Offset: 0x450
+    // Size: 0x9a
+    function devgui_notif_getchallengestablename(tableid) {
         if (sessionmodeiscampaigngame()) {
             return (#"gamedata/stats/cp/statsmilestones" + tableid + "<unknown string>");
         }
@@ -115,15 +112,13 @@ function devgui_notif_getchallengestablename(tableid) {
             return (#"gamedata/stats/zm/statsmilestones" + tableid + "<unknown string>");
         }
         return #"gamedata/stats/mp/statsmilestones" + tableid + "<unknown string>";
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x6ec6bd75, Offset: 0x4f8
-// Size: 0x18a
-function devgui_create_weapon_levels_table() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x6ec6bd75, Offset: 0x4f8
+    // Size: 0x18a
+    function devgui_create_weapon_levels_table() {
         level.tbl_weaponids = [];
         for (i = 0; i < 1024; i++) {
             iteminfo = getunlockableiteminfofromindex(i, 0);
@@ -140,15 +135,13 @@ function devgui_create_weapon_levels_table() {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x661f9d, Offset: 0x690
-// Size: 0x124
-function devgui_notif_init() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x661f9d, Offset: 0x690
+    // Size: 0x124
+    function devgui_notif_init() {
         setdvar(#"scr_notif_devgui_rank", 0);
         setdvar(#"scr_notif_devgui_gun_lvl_xp", 0);
         setdvar(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
@@ -162,15 +155,13 @@ function devgui_notif_init() {
         }
         util::add_devgui("<unknown string>", "<unknown string>");
         level thread function_a65863ce();
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0xc1f3f5, Offset: 0x7c0
-// Size: 0x84
-function function_a65863ce() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xc1f3f5, Offset: 0x7c0
+    // Size: 0x84
+    function function_a65863ce() {
         level endon(#"game_ended");
         while (true) {
             if (getdvarint(#"hash_300689cb3bb5ab4d", 0) > 0) {
@@ -180,29 +171,25 @@ function function_a65863ce() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x8e75d4e, Offset: 0x850
-// Size: 0x5c
-function function_ac0bfb9c() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x8e75d4e, Offset: 0x850
+    // Size: 0x5c
+    function function_ac0bfb9c() {
         level thread notif_devgui_rank();
         level thread notif_devgui_gun_rank();
         if (!sessionmodeiscampaigngame()) {
             level thread notif_devgui_challenges();
         }
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x8c2c4e9d, Offset: 0x8b8
-// Size: 0x10c
-function notif_devgui_rank() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x8c2c4e9d, Offset: 0x8b8
+    // Size: 0x10c
+    function notif_devgui_rank() {
         if (!isdefined(level.ranktable)) {
             return;
         }
@@ -217,15 +204,13 @@ function notif_devgui_rank() {
         }
         waitframe(1);
         level thread notif_devgui_rank_up_think();
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0xac0884c2, Offset: 0x9d0
-// Size: 0xce
-function notif_devgui_rank_up_think() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xac0884c2, Offset: 0x9d0
+    // Size: 0xce
+    function notif_devgui_rank_up_think() {
         for (;;) {
             rank_number = getdvarint(#"scr_notif_devgui_rank", 0);
             if (rank_number == 0) {
@@ -236,15 +221,13 @@ function notif_devgui_rank_up_think() {
             setdvar(#"scr_notif_devgui_rank", 0);
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x2e2d0fae, Offset: 0xaa8
-// Size: 0x9a4
-function notif_devgui_gun_rank() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x2e2d0fae, Offset: 0xaa8
+    // Size: 0x9a4
+    function notif_devgui_gun_rank() {
         notif_gun_rank_devgui_base = "<unknown string>";
         gunlevel_rankid_col = 0;
         gunlevel_gunref_col = 2;
@@ -327,15 +310,13 @@ function notif_devgui_gun_rank() {
             waitframe(1);
         }
         level thread notif_devgui_gun_level_think();
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0x1f6cf9c9, Offset: 0x1458
-// Size: 0x1c6
-function notif_devgui_gun_level_think() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x1f6cf9c9, Offset: 0x1458
+    // Size: 0x1c6
+    function notif_devgui_gun_level_think() {
         for (;;) {
             weapon_item_index = getdvarint(#"scr_notif_devgui_gun_lvl_item_index", 0);
             if (weapon_item_index == 0) {
@@ -352,15 +333,13 @@ function notif_devgui_gun_level_think() {
             setdvar(#"scr_notif_devgui_gun_lvl_rank_id", 0);
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe11aa88c, Offset: 0x1628
-// Size: 0x324
-function notif_devgui_challenges() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe11aa88c, Offset: 0x1628
+    // Size: 0x324
+    function notif_devgui_challenges() {
         notif_challenges_devgui_base = "<unknown string>";
         for (i = 1; i <= devgui_notif_getchallengestablecount(); i++) {
             tablename = devgui_notif_getchallengestablename(i);
@@ -386,15 +365,13 @@ function notif_devgui_challenges() {
             }
         }
         level thread notif_devgui_challenges_think();
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0xd51f906a, Offset: 0x1958
-// Size: 0x42e
-function notif_devgui_challenges_think() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xd51f906a, Offset: 0x1958
+    // Size: 0x42e
+    function notif_devgui_challenges_think() {
         setdvar(#"scr_notif_devgui_challenge_row", 0);
         setdvar(#"scr_notif_devgui_challenge_table", 0);
         for (;;) {
@@ -443,15 +420,13 @@ function notif_devgui_challenges_think() {
             setdvar(#"scr_notif_devgui_challenge_table", 0);
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace popups/popups_shared
-// Params 0, eflags: 0x0
-// Checksum 0xc2dea989, Offset: 0x1d90
-// Size: 0x808
-function popupsfromconsole() {
-    /#
+    // Namespace popups/popups_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xc2dea989, Offset: 0x1d90
+    // Size: 0x808
+    function popupsfromconsole() {
         while (true) {
             timeout = getdvarfloat(#"scr_popuptime", 1);
             if (timeout == 0) {
@@ -535,8 +510,9 @@ function popupsfromconsole() {
                 }
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace popups/popups_shared
 // Params 2, eflags: 0x1 linked

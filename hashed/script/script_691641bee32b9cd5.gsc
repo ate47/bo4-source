@@ -110,12 +110,13 @@ function private __main__() {
     level function_ad40f5b3();
 }
 
-// Namespace wave_manager_sys/wave_manager
-// Params 0, eflags: 0x4
-// Checksum 0x156e9f5d, Offset: 0x548
-// Size: 0x1a4
-function private update_devgui() {
-    /#
+/#
+
+    // Namespace wave_manager_sys/wave_manager
+    // Params 0, eflags: 0x4
+    // Checksum 0x156e9f5d, Offset: 0x548
+    // Size: 0x1a4
+    function private update_devgui() {
         if (!isdefined(level.var_a44d1e7)) {
             level.var_a44d1e7 = 0;
         }
@@ -130,15 +131,13 @@ function private update_devgui() {
         }
         cmd = "<unknown string>" + str_map_name + "<unknown string>";
         adddebugcommand(cmd);
-    #/
-}
+    }
 
-// Namespace wave_manager_sys/wave_manager
-// Params 0, eflags: 0x4
-// Checksum 0xf00141fc, Offset: 0x6f8
-// Size: 0xe5a
-function private debug_think() {
-    /#
+    // Namespace wave_manager_sys/wave_manager
+    // Params 0, eflags: 0x4
+    // Checksum 0xf00141fc, Offset: 0x6f8
+    // Size: 0xe5a
+    function private debug_think() {
         while (true) {
             n_wave_manager_id = getdvarint(#"hash_1feb7de8a9fa6573", 0);
             if (n_wave_manager_id != -1) {
@@ -295,8 +294,9 @@ function private debug_think() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace wave_manager_sys/wave_manager
 // Params 0, eflags: 0x5 linked

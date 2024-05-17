@@ -251,23 +251,22 @@ function evaluate_connections(eval_func, params) {
     }
 }
 
-// Namespace statemachine/statemachine_shared
-// Params 0, eflags: 0x0
-// Checksum 0x9e3d5bc2, Offset: 0xe68
-// Size: 0x40
-function debugon() {
-    /#
+/#
+
+    // Namespace statemachine/statemachine_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x9e3d5bc2, Offset: 0xe68
+    // Size: 0x40
+    function debugon() {
         dvarval = getdvarint(#"statemachine_debug", 0);
         return dvarval > 0;
-    #/
-}
+    }
 
-// Namespace statemachine/statemachine_shared
-// Params 0, eflags: 0x0
-// Checksum 0x41ade5a, Offset: 0xeb0
-// Size: 0x270
-function function_acc83382() {
-    /#
+    // Namespace statemachine/statemachine_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x41ade5a, Offset: 0xeb0
+    // Size: 0x270
+    function function_acc83382() {
         owner = self;
         if (!isdefined(owner)) {
             return;
@@ -298,6 +297,6 @@ function function_acc83382() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

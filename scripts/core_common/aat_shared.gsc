@@ -75,12 +75,13 @@ function private function_33f0ddd3(s_event) {
     }
 }
 
-// Namespace aat/aat_shared
-// Params 0, eflags: 0x4
-// Checksum 0x25be2dda, Offset: 0x500
-// Size: 0x174
-function private setup_devgui() {
-    /#
+/#
+
+    // Namespace aat/aat_shared
+    // Params 0, eflags: 0x4
+    // Checksum 0x25be2dda, Offset: 0x500
+    // Size: 0x174
+    function private setup_devgui() {
         waittillframeend();
         setdvar(#"aat_acquire_devgui", "<unknown string>");
         aat_devgui_base = "<unknown string>";
@@ -92,15 +93,13 @@ function private setup_devgui() {
         }
         adddebugcommand(aat_devgui_base + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
         level thread aat_devgui_think();
-    #/
-}
+    }
 
-// Namespace aat/aat_shared
-// Params 0, eflags: 0x4
-// Checksum 0xe4af2b33, Offset: 0x680
-// Size: 0x170
-function private aat_devgui_think() {
-    /#
+    // Namespace aat/aat_shared
+    // Params 0, eflags: 0x4
+    // Checksum 0xe4af2b33, Offset: 0x680
+    // Size: 0x170
+    function private aat_devgui_think() {
         for (;;) {
             aat_name = getdvarstring(#"aat_acquire_devgui");
             if (aat_name != "<unknown string>") {
@@ -116,15 +115,13 @@ function private aat_devgui_think() {
             setdvar(#"aat_acquire_devgui", "<unknown string>");
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace aat/aat_shared
-// Params 4, eflags: 0x4
-// Checksum 0x5a9826ca, Offset: 0x7f8
-// Size: 0x202
-function private aat_set_debug_text(name, success, success_reroll, fail) {
-    /#
+    // Namespace aat/aat_shared
+    // Params 4, eflags: 0x4
+    // Checksum 0x5a9826ca, Offset: 0x7f8
+    // Size: 0x202
+    function private aat_set_debug_text(name, success, success_reroll, fail) {
         self notify(#"aat_set_debug_text_thread");
         self endon(#"aat_set_debug_text_thread", #"disconnect");
         if (!isdefined(self.aat_debug_text)) {
@@ -152,8 +149,9 @@ function private aat_set_debug_text(name, success, success_reroll, fail) {
         if ("<unknown string>" == name) {
             self.aat_debug_text.alpha = 0;
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace aat/aat_shared
 // Params 0, eflags: 0x4

@@ -1534,15 +1534,17 @@ function event_handler[event_d6f9e6ad] function_8877d89(eventstruct) {
     self callback(#"hash_42aa89b2a0951308", eventstruct);
 }
 
-// Namespace callback/debug_movement
-// Params 1, eflags: 0x40
-// Checksum 0x1ced91b2, Offset: 0x4378
-// Size: 0x34
-function event_handler[debug_movement] function_930ce3c3(eventstruct) {
-    /#
+/#
+
+    // Namespace callback/debug_movement
+    // Params 1, eflags: 0x40
+    // Checksum 0x1ced91b2, Offset: 0x4378
+    // Size: 0x34
+    function event_handler[debug_movement] function_930ce3c3(eventstruct) {
         self callback(#"debug_movement", eventstruct);
-    #/
-}
+    }
+
+#/
 
 // Namespace callback/event_31e1c5e9
 // Params 1, eflags: 0x40

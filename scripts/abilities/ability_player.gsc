@@ -1024,37 +1024,34 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     self forceoffhandend();
 }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0xaafaf4c4, Offset: 0x3ec8
-// Size: 0x6c
-function function_374c4352(str) {
-    /#
+/#
+
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0xaafaf4c4, Offset: 0x3ec8
+    // Size: 0x6c
+    function function_374c4352(str) {
         if (ishash(str)) {
             str = function_9e72a96(str);
         }
         toprint = "<unknown string>" + str;
         println(toprint);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0x5900fbcb, Offset: 0x3f40
-// Size: 0x3c
-function abilities_print(str) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0x5900fbcb, Offset: 0x3f40
+    // Size: 0x3c
+    function abilities_print(str) {
         toprint = "<unknown string>" + str;
         println(toprint);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 0, eflags: 0x0
-// Checksum 0x9ca97cdf, Offset: 0x3f88
-// Size: 0xec
-function abilities_devgui_init() {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 0, eflags: 0x0
+    // Checksum 0x9ca97cdf, Offset: 0x3f88
+    // Size: 0xec
+    function abilities_devgui_init() {
         setdvar(#"scr_abilities_devgui_cmd", "<unknown string>");
         setdvar(#"scr_abilities_devgui_arg", "<unknown string>");
         setdvar(#"scr_abilities_devgui_player", 0);
@@ -1065,15 +1062,13 @@ function abilities_devgui_init() {
         level.abilities_devgui_player_connect = &abilities_devgui_player_connect;
         level.abilities_devgui_player_disconnect = &abilities_devgui_player_disconnect;
         level thread abilities_devgui_think();
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 0, eflags: 0x0
-// Checksum 0x88da8b34, Offset: 0x4080
-// Size: 0xb0
-function abilities_devgui_player_connect() {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 0, eflags: 0x0
+    // Checksum 0x88da8b34, Offset: 0x4080
+    // Size: 0xb0
+    function abilities_devgui_player_connect() {
         if (!isdefined(level.abilities_devgui_base)) {
             return;
         }
@@ -1086,15 +1081,13 @@ function abilities_devgui_player_connect() {
             thread abilities_devgui_add_player_commands(level.abilities_devgui_base, players[i].playername, i + 1);
             return;
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 3, eflags: 0x0
-// Checksum 0xfd79c642, Offset: 0x4138
-// Size: 0x14e
-function abilities_devgui_add_player_commands(root, pname, index) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 3, eflags: 0x0
+    // Checksum 0xfd79c642, Offset: 0x4138
+    // Size: 0x14e
+    function abilities_devgui_add_player_commands(root, pname, index) {
         add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
         pid = "<unknown string>" + index;
         menu_index = 1;
@@ -1108,15 +1101,13 @@ function abilities_devgui_add_player_commands(root, pname, index) {
         menu_index = abilities_devgui_add_power(add_cmd_with_root, pid, menu_index);
         util::waittill_can_add_debug_command();
         menu_index = function_2e0162e9(add_cmd_with_root, pid, menu_index);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 6, eflags: 0x0
-// Checksum 0x4a0089ef, Offset: 0x4290
-// Size: 0x104
-function abilities_devgui_add_player_command(root, pid, cmdname, menu_index, cmddvar, argdvar) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 6, eflags: 0x0
+    // Checksum 0x4a0089ef, Offset: 0x4290
+    // Size: 0x104
+    function abilities_devgui_add_player_command(root, pid, cmdname, menu_index, cmddvar, argdvar) {
         if (!isdefined(argdvar)) {
             argdvar = "<unknown string>";
         }
@@ -1124,15 +1115,13 @@ function abilities_devgui_add_player_command(root, pid, cmdname, menu_index, cmd
         var_9b1fa683 = "<unknown string>" + "<unknown string>" + "<unknown string>" + cmddvar;
         var_dc0fa12c = "<unknown string>" + "<unknown string>" + "<unknown string>" + argdvar + "<unknown string>";
         util::add_queued_debug_command(root + cmdname + var_eece3d04 + var_9b1fa683 + var_dc0fa12c);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 3, eflags: 0x0
-// Checksum 0x2805f421, Offset: 0x43a0
-// Size: 0x17c
-function abilities_devgui_add_power(add_cmd_with_root, pid, menu_index) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 3, eflags: 0x0
+    // Checksum 0x2805f421, Offset: 0x43a0
+    // Size: 0x17c
+    function abilities_devgui_add_power(add_cmd_with_root, pid, menu_index) {
         root = add_cmd_with_root + "<unknown string>" + menu_index + "<unknown string>";
         abilities_devgui_add_player_command(root, pid, "<unknown string>", 1, "<unknown string>", "<unknown string>");
         abilities_devgui_add_player_command(root, pid, "<unknown string>", 2, "<unknown string>", "<unknown string>");
@@ -1142,15 +1131,13 @@ function abilities_devgui_add_power(add_cmd_with_root, pid, menu_index) {
         }
         menu_index++;
         return menu_index;
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 3, eflags: 0x0
-// Checksum 0x693f841f, Offset: 0x4528
-// Size: 0x282
-function function_2e0162e9(add_cmd_with_root, pid, menu_index) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 3, eflags: 0x0
+    // Checksum 0x693f841f, Offset: 0x4528
+    // Size: 0x282
+    function function_2e0162e9(add_cmd_with_root, pid, menu_index) {
         if (sessionmodeiszombiesgame() || sessionmodeiswarzonegame()) {
             return;
         }
@@ -1177,15 +1164,13 @@ function function_2e0162e9(add_cmd_with_root, pid, menu_index) {
         }
         menu_index++;
         return menu_index;
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 3, eflags: 0x0
-// Checksum 0x9bba2972, Offset: 0x47b8
-// Size: 0xec
-function function_2ced294(&a_weapons, &a_array, weaponname) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 3, eflags: 0x0
+    // Checksum 0x9bba2972, Offset: 0x47b8
+    // Size: 0xec
+    function function_2ced294(&a_weapons, &a_array, weaponname) {
         weapon = getweapon(weaponname);
         if (!isdefined(weapon)) {
             return;
@@ -1202,15 +1187,13 @@ function function_2ced294(&a_weapons, &a_array, weaponname) {
             a_array[a_array.size] = weapon;
         }
         arrayremovevalue(a_weapons, weapon);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 4, eflags: 0x0
-// Checksum 0x44a899d5, Offset: 0x48b0
-// Size: 0x166
-function function_60b82b68(&a_weapons, &a_equipment, &var_c5b1a23e, &a_ultimates) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 4, eflags: 0x0
+    // Checksum 0x44a899d5, Offset: 0x48b0
+    // Size: 0x166
+    function function_60b82b68(&a_weapons, &a_equipment, &var_c5b1a23e, &a_ultimates) {
         if (sessionmodeiszombiesgame()) {
             return;
         }
@@ -1231,16 +1214,14 @@ function function_60b82b68(&a_weapons, &a_equipment, &var_c5b1a23e, &a_ultimates
                 function_2ced294(a_weapons, a_ultimates, fields.ultimateweapon);
             }
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 2, eflags: 0x0
-// Checksum 0x5ea19e9b, Offset: 0x4a20
-// Size: 0xc6
-function function_1c3e8791(&a_weapons, &var_dd06e779) {
-    /#
-        for (i = 0; i < 1024; i++) {
+    // Namespace ability_player/ability_player
+    // Params 2, eflags: 0x0
+    // Checksum 0x5ea19e9b, Offset: 0x4a20
+    // Size: 0xc6
+    function function_1c3e8791(&a_weapons, &var_dd06e779) {
+                for (i = 0; i < 1024; i++) {
             iteminfo = getunlockableiteminfofromindex(i, 0);
             if (isdefined(iteminfo)) {
                 reference_s = iteminfo.namehash;
@@ -1250,15 +1231,13 @@ function function_1c3e8791(&a_weapons, &var_dd06e779) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 3, eflags: 0x0
-// Checksum 0x8f93a2d2, Offset: 0x4af0
-// Size: 0x5f8
-function abilities_devgui_add_gadgets(add_cmd_with_root, pid, menu_index) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 3, eflags: 0x0
+    // Checksum 0x8f93a2d2, Offset: 0x4af0
+    // Size: 0x5f8
+    function abilities_devgui_add_gadgets(add_cmd_with_root, pid, menu_index) {
         a_weapons = enumerateweapons("<unknown string>");
         a_gadgetweapons = [];
         for (i = 0; i < a_weapons.size; i++) {
@@ -1351,104 +1330,88 @@ function abilities_devgui_add_gadgets(add_cmd_with_root, pid, menu_index) {
         function_a40d04ca(add_cmd_with_root, pid, var_ef060ee3, "<unknown string>", menu_index);
         menu_index++;
         return menu_index;
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 5, eflags: 0x0
-// Checksum 0xcb8a6de1, Offset: 0x50f0
-// Size: 0xbe
-function function_174037fe(root, pid, a_weapons, weapon_type, menu_index) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 5, eflags: 0x0
+    // Checksum 0xcb8a6de1, Offset: 0x50f0
+    // Size: 0xbe
+    function function_174037fe(root, pid, a_weapons, weapon_type, menu_index) {
         if (isdefined(a_weapons)) {
             player_devgui_root = root + weapon_type + "<unknown string>";
             for (i = 0; i < a_weapons.size; i++) {
                 function_b04fbf27(player_devgui_root, pid, getweaponname(a_weapons[i]), i + 1);
             }
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 5, eflags: 0x0
-// Checksum 0xf8d18c25, Offset: 0x51b8
-// Size: 0xbe
-function function_76032a31(root, pid, a_weapons, weapon_type, menu_index) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 5, eflags: 0x0
+    // Checksum 0xf8d18c25, Offset: 0x51b8
+    // Size: 0xbe
+    function function_76032a31(root, pid, a_weapons, weapon_type, menu_index) {
         if (isdefined(a_weapons)) {
             player_devgui_root = root + weapon_type + "<unknown string>";
             for (i = 0; i < a_weapons.size; i++) {
                 function_50543efb(player_devgui_root, pid, getweaponname(a_weapons[i]), i + 1);
             }
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 5, eflags: 0x0
-// Checksum 0xbce880a7, Offset: 0x5280
-// Size: 0xbe
-function function_a40d04ca(root, pid, a_weapons, weapon_type, menu_index) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 5, eflags: 0x0
+    // Checksum 0xbce880a7, Offset: 0x5280
+    // Size: 0xbe
+    function function_a40d04ca(root, pid, a_weapons, weapon_type, menu_index) {
         if (isdefined(a_weapons)) {
             player_devgui_root = root + weapon_type + "<unknown string>";
             for (i = 0; i < a_weapons.size; i++) {
                 function_90502d72(player_devgui_root, pid, getweaponname(a_weapons[i]), i + 1);
             }
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 4, eflags: 0x0
-// Checksum 0xdfc7e4b7, Offset: 0x5348
-// Size: 0xac
-function function_b04fbf27(root, pid, weap_name, cmdindex) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 4, eflags: 0x0
+    // Checksum 0xdfc7e4b7, Offset: 0x5348
+    // Size: 0xac
+    function function_b04fbf27(root, pid, weap_name, cmdindex) {
         util::add_queued_debug_command(root + weap_name + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + weap_name + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 4, eflags: 0x0
-// Checksum 0x4e3032be, Offset: 0x5400
-// Size: 0xac
-function function_50543efb(root, pid, weap_name, cmdindex) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 4, eflags: 0x0
+    // Checksum 0x4e3032be, Offset: 0x5400
+    // Size: 0xac
+    function function_50543efb(root, pid, weap_name, cmdindex) {
         util::add_queued_debug_command(root + weap_name + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + weap_name + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 4, eflags: 0x0
-// Checksum 0x7bc91ee0, Offset: 0x54b8
-// Size: 0xac
-function function_90502d72(root, pid, weap_name, cmdindex) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 4, eflags: 0x0
+    // Checksum 0x7bc91ee0, Offset: 0x54b8
+    // Size: 0xac
+    function function_90502d72(root, pid, weap_name, cmdindex) {
         util::add_queued_debug_command(root + weap_name + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + weap_name + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 0, eflags: 0x0
-// Checksum 0xd37ba103, Offset: 0x5570
-// Size: 0x5c
-function abilities_devgui_player_disconnect() {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 0, eflags: 0x0
+    // Checksum 0xd37ba103, Offset: 0x5570
+    // Size: 0x5c
+    function abilities_devgui_player_disconnect() {
         if (!isdefined(level.abilities_devgui_base)) {
             return;
         }
         remove_cmd_with_root = "<unknown string>" + level.abilities_devgui_base + self.playername + "<unknown string>";
         util::add_queued_debug_command(remove_cmd_with_root);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 0, eflags: 0x0
-// Checksum 0x5833d8b3, Offset: 0x55d8
-// Size: 0x368
-function abilities_devgui_think() {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 0, eflags: 0x0
+    // Checksum 0x5833d8b3, Offset: 0x55d8
+    // Size: 0x368
+    function abilities_devgui_think() {
         setdvar(#"hash_67d528f29bfc7c97", "<unknown string>");
         for (;;) {
             cmd = "<unknown string>";
@@ -1496,15 +1459,13 @@ function abilities_devgui_think() {
             setdvar(#"scr_abilities_devgui_player", "<unknown string>");
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0x9fe7e0a, Offset: 0x5948
-// Size: 0x114
-function function_c94ba490(weapon) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0x9fe7e0a, Offset: 0x5948
+    // Size: 0x114
+    function function_c94ba490(weapon) {
         self notify(#"gadget_devgui_give");
         self giveweapon(weapon);
         waitframe(1);
@@ -1516,15 +1477,13 @@ function function_c94ba490(weapon) {
             self bot_action::function_ee2eaccc(slot);
         }
         self iprintlnbold(getweaponname(weapon));
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 3, eflags: 0x0
-// Checksum 0xf0e6dd05, Offset: 0x5a68
-// Size: 0xe6
-function abilities_devgui_give(weapon_name, slot, var_1d6918cf) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 3, eflags: 0x0
+    // Checksum 0xf0e6dd05, Offset: 0x5a68
+    // Size: 0xe6
+    function abilities_devgui_give(weapon_name, slot, var_1d6918cf) {
         level.devgui_giving_abilities = 1;
         if (isdefined(self._gadgets_player[slot]) && self hasweapon(self._gadgets_player[slot])) {
             self gadgetpowerreset(slot, 1);
@@ -1533,15 +1492,13 @@ function abilities_devgui_give(weapon_name, slot, var_1d6918cf) {
         weapon = getweapon(weapon_name);
         self thread function_c94ba490(weapon);
         level.devgui_giving_abilities = undefined;
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0x630dc8b0, Offset: 0x5b58
-// Size: 0xc4
-function function_4f50aea3(weapon_name) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0x630dc8b0, Offset: 0x5b58
+    // Size: 0xc4
+    function function_4f50aea3(weapon_name) {
         if (isdefined(level.var_124446e) && isarray(level.var_124446e) && isdefined(level.var_124446e[weapon_name])) {
             self [[ level.var_124446e[weapon_name] ]](self, 2);
             return;
@@ -1551,43 +1508,37 @@ function function_4f50aea3(weapon_name) {
             return;
         }
         self abilities_devgui_give(weapon_name, 2);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0xb0256fe1, Offset: 0x5c28
-// Size: 0x74
-function function_ce4e80a7(weapon_name) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0xb0256fe1, Offset: 0x5c28
+    // Size: 0x74
+    function function_ce4e80a7(weapon_name) {
         if (isdefined(level.var_c49b362f) && isdefined(level.var_c49b362f[weapon_name])) {
             self [[ level.var_c49b362f[weapon_name] ]](self, 1);
             return;
         }
         self abilities_devgui_give(weapon_name, 1);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0x74fa9703, Offset: 0x5ca8
-// Size: 0x74
-function function_9a0f80b1(weapon_name) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0x74fa9703, Offset: 0x5ca8
+    // Size: 0x74
+    function function_9a0f80b1(weapon_name) {
         if (isdefined(level.var_fdfc376e) && isdefined(level.var_fdfc376e[weapon_name])) {
             self [[ level.var_fdfc376e[weapon_name] ]](self, 0);
             return;
         }
         self abilities_devgui_give(weapon_name, 0);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 2, eflags: 0x0
-// Checksum 0x8570c495, Offset: 0x5d28
-// Size: 0x134
-function function_f3fa2789(offhandslot, ability_list) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 2, eflags: 0x0
+    // Checksum 0x8570c495, Offset: 0x5d28
+    // Size: 0x134
+    function function_f3fa2789(offhandslot, ability_list) {
         if (!isdefined(ability_list)) {
             ability_list = level.var_29d4fb5b;
         }
@@ -1614,15 +1565,13 @@ function function_f3fa2789(offhandslot, ability_list) {
         if (2 == offhandslot) {
             self function_4f50aea3(weapon_name);
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 3, eflags: 0x0
-// Checksum 0xc3708a52, Offset: 0x5e68
-// Size: 0xe4
-function abilities_devgui_handle_player_command(cmd, playercallback, pcb_param) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 3, eflags: 0x0
+    // Checksum 0xc3708a52, Offset: 0x5e68
+    // Size: 0xe4
+    function abilities_devgui_handle_player_command(cmd, playercallback, pcb_param) {
         pid = getdvarint(#"scr_abilities_devgui_player", 0);
         if (pid > 0) {
             player = getplayers()[pid - 1];
@@ -1636,15 +1585,13 @@ function abilities_devgui_handle_player_command(cmd, playercallback, pcb_param) 
             return;
         }
         array::thread_all(getplayers(), playercallback, pcb_param);
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 0, eflags: 0x0
-// Checksum 0x608e1b25, Offset: 0x5f58
-// Size: 0xae
-function abilities_devgui_power_fill() {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 0, eflags: 0x0
+    // Checksum 0x608e1b25, Offset: 0x5f58
+    // Size: 0xae
+    function abilities_devgui_power_fill() {
         if (!isdefined(self) || !isdefined(self._gadgets_player)) {
             return;
         }
@@ -1653,59 +1600,51 @@ function abilities_devgui_power_fill() {
                 self gadgetpowerset(i, self._gadgets_player[i].gadget_powermax);
             }
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0x593fd4bb, Offset: 0x6010
-// Size: 0x9c
-function function_626f2cd1(var_44b235) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0x593fd4bb, Offset: 0x6010
+    // Size: 0x9c
+    function function_626f2cd1(var_44b235) {
         if (!isdefined(self) || !isdefined(self._gadgets_player)) {
             return;
         }
         if (isdefined(self._gadgets_player[0]) && self hasweapon(self._gadgets_player[0])) {
             self gadgetpowerset(0, self._gadgets_player[0].gadget_powermax * float(var_44b235));
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0x6cdbcb0a, Offset: 0x60b8
-// Size: 0xac
-function function_3db3dc4f(var_44b235) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0x6cdbcb0a, Offset: 0x60b8
+    // Size: 0xac
+    function function_3db3dc4f(var_44b235) {
         if (!isdefined(self) || !isdefined(self._gadgets_player)) {
             return;
         }
         if (isdefined(self._gadgets_player[2]) && self hasweapon(self._gadgets_player[2])) {
             self gadgetpowerset(2, self._gadgets_player[2].gadget_powermax * float(var_44b235));
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 0, eflags: 0x0
-// Checksum 0xb9b96759, Offset: 0x6170
-// Size: 0x5c
-function abilities_devgui_power_toggle_auto_fill() {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 0, eflags: 0x0
+    // Checksum 0xb9b96759, Offset: 0x6170
+    // Size: 0x5c
+    function abilities_devgui_power_toggle_auto_fill() {
         if (!isdefined(self) || !isdefined(self._gadgets_player)) {
             return;
         }
         self.abilities_devgui_power_toggle_auto_fill = !(isdefined(self.abilities_devgui_power_toggle_auto_fill) && self.abilities_devgui_power_toggle_auto_fill);
         self thread abilities_devgui_power_toggle_auto_fill_think();
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 0, eflags: 0x0
-// Checksum 0xac18b77a, Offset: 0x61d8
-// Size: 0x178
-function abilities_devgui_power_toggle_auto_fill_think() {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 0, eflags: 0x0
+    // Checksum 0xac18b77a, Offset: 0x61d8
+    // Size: 0x178
+    function abilities_devgui_power_toggle_auto_fill_think() {
         self endon(#"disconnect");
         self notify(#"auto_fill_think");
         self endon(#"auto_fill_think");
@@ -1726,15 +1665,13 @@ function abilities_devgui_power_toggle_auto_fill_think() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace ability_player/ability_player
-// Params 1, eflags: 0x0
-// Checksum 0xb7e57a02, Offset: 0x6358
-// Size: 0x378
-function function_b4f43681(var_a5c8eb94) {
-    /#
+    // Namespace ability_player/ability_player
+    // Params 1, eflags: 0x0
+    // Checksum 0xb7e57a02, Offset: 0x6358
+    // Size: 0x378
+    function function_b4f43681(var_a5c8eb94) {
         if (sessionmodeiszombiesgame()) {
             return;
         }
@@ -1795,6 +1732,6 @@ function function_b4f43681(var_a5c8eb94) {
                 self thread [[ level.var_86734d48 ]](self.team, self.curclass);
             }
         }
-    #/
-}
+    }
 
+#/

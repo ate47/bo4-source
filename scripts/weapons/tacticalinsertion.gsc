@@ -325,12 +325,13 @@ function cancel_button_press() {
     self notify(#"tactical_insertion_canceled");
 }
 
-// Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x0
-// Checksum 0xf08075cf, Offset: 0x14d8
-// Size: 0x160
-function cancel_text_create() {
-    /#
+/#
+
+    // Namespace tacticalinsertion/tacticalinsertion
+    // Params 0, eflags: 0x0
+    // Checksum 0xf08075cf, Offset: 0x14d8
+    // Size: 0x160
+    function cancel_text_create() {
         text = newdebughudelem(self);
         text.archived = 0;
         text.y = -100;
@@ -351,8 +352,9 @@ function cancel_text_create() {
         text settext(#"hash_e0dad145a9829f1");
         text.alpha = 1;
         return text;
-    #/
-}
+    }
+
+#/
 
 // Namespace tacticalinsertion/tacticalinsertion
 // Params 0, eflags: 0x0

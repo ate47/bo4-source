@@ -16,13 +16,17 @@ function autoexec init() {
     spawner::add_archetype_spawn_function(#"nova_crawler", &function_ea4610a7);
 }
 
-// Namespace archetypenovacrawler/archetype_nova_crawler
-// Params 0, eflags: 0x4
-// Checksum 0x7317d21a, Offset: 0xe8
-// Size: 0x24
-function private function_32107b12() {
-    assert(isdefined(self.ai));
-}
+/#
+
+    // Namespace archetypenovacrawler/archetype_nova_crawler
+    // Params 0, eflags: 0x4
+    // Checksum 0x7317d21a, Offset: 0xe8
+    // Size: 0x24
+    function private function_32107b12() {
+        assert(isdefined(self.ai));
+    }
+
+#/
 
 // Namespace archetypenovacrawler/archetype_nova_crawler
 // Params 0, eflags: 0x5 linked
@@ -60,15 +64,16 @@ function private registerbehaviorscriptfunctions() {
     
 }
 
-// Namespace archetypenovacrawler/archetype_nova_crawler
-// Params 1, eflags: 0x4
-// Checksum 0x37d5ba90, Offset: 0x1e8
-// Size: 0x54
-function private function_3d50e4d0(message) {
-    /#
+/#
+
+    // Namespace archetypenovacrawler/archetype_nova_crawler
+    // Params 1, eflags: 0x4
+    // Checksum 0x37d5ba90, Offset: 0x1e8
+    // Size: 0x54
+    function private function_3d50e4d0(message) {
         if (getdvarint(#"hash_35bebcc5f50d2641", 0)) {
             println("<unknown string>" + message);
         }
-    #/
-}
+    }
 
+#/

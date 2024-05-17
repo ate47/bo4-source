@@ -69,17 +69,18 @@ function function_2cdcf5c3() {
     }
 }
 
-// Namespace mp_mountain2_scripted/mp_mountain2_scripted
-// Params 0, eflags: 0x0
-// Checksum 0x39010d96, Offset: 0x300
-// Size: 0xc4
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_mountain2_scripted/mp_mountain2_scripted
+    // Params 0, eflags: 0x0
+    // Checksum 0x39010d96, Offset: 0x300
+    // Size: 0xc4
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

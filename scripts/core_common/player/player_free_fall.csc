@@ -169,12 +169,13 @@ function function_cc5ed6ff(pitch, min_pitch, max_pitch, var_2ff50798, var_9988e8
     return (var_9988e8ec - var_2ff50798) / (max_pitch - min_pitch) * pitch + var_2ff50798;
 }
 
-// Namespace player_free_fall/player_free_fall
-// Params 1, eflags: 0x0
-// Checksum 0x24059925, Offset: 0xb68
-// Size: 0xbe
-function printspeed(viewpitch) {
-    /#
+/#
+
+    // Namespace player_free_fall/player_free_fall
+    // Params 1, eflags: 0x0
+    // Checksum 0x24059925, Offset: 0xb68
+    // Size: 0xbe
+    function printspeed(viewpitch) {
         self endon(#"death", #"disconnect", #"freefallend");
         while (true) {
             vel = self getvelocity();
@@ -182,8 +183,9 @@ function printspeed(viewpitch) {
             iprintlnbold("<unknown string>" + speed + "<unknown string>" + viewpitch);
             wait(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace player_free_fall/player_free_fall
 // Params 2, eflags: 0x0

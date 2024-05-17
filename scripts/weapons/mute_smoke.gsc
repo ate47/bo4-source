@@ -100,16 +100,18 @@ function function_15263a60(radius) {
     }
 }
 
-// Namespace mute_smoke/mute_smoke
-// Params 1, eflags: 0x0
-// Checksum 0xf0854da3, Offset: 0x698
-// Size: 0x2c
-function function_9cf45892(stop_notify) {
-    /#
+/#
+
+    // Namespace mute_smoke/mute_smoke
+    // Params 1, eflags: 0x0
+    // Checksum 0xf0854da3, Offset: 0x698
+    // Size: 0x2c
+    function function_9cf45892(stop_notify) {
         self waittill(#"death");
         level notify(stop_notify);
-    #/
-}
+    }
+
+#/
 
 // Namespace mute_smoke/mute_smoke
 // Params 2, eflags: 0x1 linked
@@ -322,20 +324,22 @@ function function_a4998ccd(grenade_origin, player_origin, weapon) {
     self magicgrenadeplayer(weapon, grenade_origin, var_c0cb8891);
 }
 
-// Namespace mute_smoke/mute_smoke
-// Params 2, eflags: 0x0
-// Checksum 0xfae424cb, Offset: 0x1488
-// Size: 0xbc
-function function_9dddd194(position, color) {
-    /#
+/#
+
+    // Namespace mute_smoke/mute_smoke
+    // Params 2, eflags: 0x0
+    // Checksum 0xfae424cb, Offset: 0x1488
+    // Size: 0xbc
+    function function_9dddd194(position, color) {
         if (getdvarint(#"hash_23f044f7a5117090", 0)) {
             if (!isdefined(color)) {
                 color = (1, 0, 0);
             }
             util::debug_sphere(position, 6, color, 0.5, int(1 / float(function_60d95f53()) / 1000) * 15);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mute_smoke/mute_smoke
 // Params 5, eflags: 0x1 linked

@@ -50,12 +50,13 @@ function register() {
     clientfield::register("scriptmover", "bouncingbetty_state", 1, 2, "int");
 }
 
-// Namespace bouncingbetty/bouncingbetty
-// Params 0, eflags: 0x0
-// Checksum 0xd1d7279c, Offset: 0x540
-// Size: 0x2a0
-function bouncingbettydvarupdate() {
-    /#
+/#
+
+    // Namespace bouncingbetty/bouncingbetty
+    // Params 0, eflags: 0x0
+    // Checksum 0xd1d7279c, Offset: 0x540
+    // Size: 0x2a0
+    function bouncingbettydvarupdate() {
         for (;;) {
             level.bettyradius = getdvarint(#"betty_detect_radius", level.bettyradius);
             level.bettyactivationdelay = getdvarfloat(#"betty_activation_delay", level.bettyactivationdelay);
@@ -71,8 +72,9 @@ function bouncingbettydvarupdate() {
             level.bettyjumptime = getdvarfloat(#"betty_jump_time", level.bettyjumptime);
             wait(3);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace bouncingbetty/bouncingbetty
 // Params 1, eflags: 0x1 linked

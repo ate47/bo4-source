@@ -184,12 +184,13 @@ function default_rules() {
     return true;
 }
 
-// Namespace gameadvertisement/gameadvertisement
-// Params 2, eflags: 0x0
-// Checksum 0x109cb562, Offset: 0x958
-// Size: 0x152
-function sessionadvertismentcreatedebughud(linenum, alignx) {
-    /#
+/#
+
+    // Namespace gameadvertisement/gameadvertisement
+    // Params 2, eflags: 0x0
+    // Checksum 0x109cb562, Offset: 0x958
+    // Size: 0x152
+    function sessionadvertismentcreatedebughud(linenum, alignx) {
         debug_hud = dev::new_hud("<unknown string>", "<unknown string>", 0, 0, 1);
         debug_hud.hidewheninmenu = 1;
         debug_hud.horzalign = "<unknown string>";
@@ -205,15 +206,13 @@ function sessionadvertismentcreatedebughud(linenum, alignx) {
         debug_hud.alpha = 1;
         debug_hud settext("<unknown string>");
         return debug_hud;
-    #/
-}
+    }
 
-// Namespace gameadvertisement/gameadvertisement
-// Params 3, eflags: 0x0
-// Checksum 0x2340c86d, Offset: 0xab8
-// Size: 0x10e
-function updatedebughud(hudindex, text, value) {
-    /#
+    // Namespace gameadvertisement/gameadvertisement
+    // Params 3, eflags: 0x0
+    // Checksum 0x2340c86d, Offset: 0xab8
+    // Size: 0x10e
+    function updatedebughud(hudindex, text, value) {
         switch (hudindex) {
         case 1:
             level.sessionadverthud_1a_text = text;
@@ -233,15 +232,13 @@ function updatedebughud(hudindex, text, value) {
             break;
         }
         return hudindex + 1;
-    #/
-}
+    }
 
-// Namespace gameadvertisement/gameadvertisement
-// Params 0, eflags: 0x0
-// Checksum 0xdf131fdc, Offset: 0xbd0
-// Size: 0x660
-function sessionadvertismentupdatedebughud() {
-    /#
+    // Namespace gameadvertisement/gameadvertisement
+    // Params 0, eflags: 0x0
+    // Checksum 0xdf131fdc, Offset: 0xbd0
+    // Size: 0x660
+    function sessionadvertismentupdatedebughud() {
         level endon(#"game_end");
         sessionadverthud_0 = undefined;
         sessionadverthud_1a = undefined;
@@ -333,6 +330,6 @@ function sessionadvertismentupdatedebughud() {
                 }
             }
         }
-    #/
-}
+    }
 
+#/

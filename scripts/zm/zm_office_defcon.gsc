@@ -428,12 +428,13 @@ function function_cacd3270() {
     return self istouching(level.pack_room_trigger);
 }
 
-// Namespace zm_office_defcon/zm_office_defcon
-// Params 0, eflags: 0x0
-// Checksum 0x7a32274b, Offset: 0x21e8
-// Size: 0x3c6
-function function_d2f6cecb() {
-    /#
+/#
+
+    // Namespace zm_office_defcon/zm_office_defcon
+    // Params 0, eflags: 0x0
+    // Checksum 0x7a32274b, Offset: 0x21e8
+    // Size: 0x3c6
+    function function_d2f6cecb() {
         if (!level flag::get("<unknown string>")) {
             level flag::set("<unknown string>");
             wait(1);
@@ -467,6 +468,6 @@ function function_d2f6cecb() {
                 }
             }
         }
-    #/
-}
+    }
 
+#/

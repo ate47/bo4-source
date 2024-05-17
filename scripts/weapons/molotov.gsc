@@ -462,12 +462,13 @@ function function_42b9fdbe(weapon, loc, normal, duration, team) {
     spawntimedfx(weapon, loc, fxnormal, duration, team);
 }
 
-// Namespace molotov/molotov
-// Params 5, eflags: 0x0
-// Checksum 0x72d5c657, Offset: 0x2510
-// Size: 0xb4
-function incendiary_debug_line(from, to, color, depthtest, time) {
-    /#
+/#
+
+    // Namespace molotov/molotov
+    // Params 5, eflags: 0x0
+    // Checksum 0x72d5c657, Offset: 0x2510
+    // Size: 0xb4
+    function incendiary_debug_line(from, to, color, depthtest, time) {
         debug_rcbomb = getdvarint(#"scr_molotov_debug", 0);
         if (debug_rcbomb == 1) {
             if (!isdefined(time)) {
@@ -478,8 +479,9 @@ function incendiary_debug_line(from, to, color, depthtest, time) {
             }
             line(from, to, color, 1, depthtest, time);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace molotov/molotov
 // Params 11, eflags: 0x1 linked

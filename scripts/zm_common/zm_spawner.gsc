@@ -69,12 +69,13 @@ function init() {
     #/
 }
 
-// Namespace zm_spawner/zm_spawner
-// Params 0, eflags: 0x0
-// Checksum 0x77214cc4, Offset: 0x950
-// Size: 0x3fa
-function debug_show_exterior_goals() {
-    /#
+/#
+
+    // Namespace zm_spawner/zm_spawner
+    // Params 0, eflags: 0x0
+    // Checksum 0x77214cc4, Offset: 0x950
+    // Size: 0x3fa
+    function debug_show_exterior_goals() {
         while (true) {
             if (isdefined(level.toggle_show_exterior_goals) && level.toggle_show_exterior_goals) {
                 color = (1, 1, 1);
@@ -110,8 +111,9 @@ function debug_show_exterior_goals() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_spawner/zm_spawner
 // Params 1, eflags: 0x1 linked
@@ -1126,13 +1128,17 @@ function player_using_hi_score_weapon(player) {
     return false;
 }
 
-// Namespace zm_spawner/zm_spawner
-// Params 1, eflags: 0x0
-// Checksum 0x4ce79a8a, Offset: 0x4bb8
-// Size: 0x2c
-function register_zombie_damage_callback(func) {
-    assertmsg("<unknown string>");
-}
+/#
+
+    // Namespace zm_spawner/zm_spawner
+    // Params 1, eflags: 0x0
+    // Checksum 0x4ce79a8a, Offset: 0x4bb8
+    // Size: 0x2c
+    function register_zombie_damage_callback(func) {
+        assertmsg("<unknown string>");
+    }
+
+#/
 
 // Namespace zm_spawner/zm_spawner
 // Params 3, eflags: 0x1 linked
@@ -1383,18 +1389,20 @@ function attractors_generated_listener() {
     self.zombie_path_timer = 0;
 }
 
-// Namespace zm_spawner/zm_spawner
-// Params 1, eflags: 0x0
-// Checksum 0x884c5df2, Offset: 0x5ec8
-// Size: 0x5a
-function zombie_history(msg) {
-    /#
+/#
+
+    // Namespace zm_spawner/zm_spawner
+    // Params 1, eflags: 0x0
+    // Checksum 0x884c5df2, Offset: 0x5ec8
+    // Size: 0x5a
+    function zombie_history(msg) {
         if (!isdefined(self.zombie_history) || 32 <= self.zombie_history.size) {
             self.zombie_history = [];
         }
         self.zombie_history[self.zombie_history.size] = msg;
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_spawner/zm_spawner
 // Params 3, eflags: 0x0
@@ -1657,19 +1665,21 @@ function function_65439499(spawn_points, var_12af83a0 = 5000) {
     return undefined;
 }
 
-// Namespace zm_spawner/zm_spawner
-// Params 0, eflags: 0x0
-// Checksum 0x3adae01a, Offset: 0x7430
-// Size: 0x5e
-function draw_zone_spawned_from() {
-    /#
+/#
+
+    // Namespace zm_spawner/zm_spawner
+    // Params 0, eflags: 0x0
+    // Checksum 0x3adae01a, Offset: 0x7430
+    // Size: 0x5e
+    function draw_zone_spawned_from() {
         self endon(#"death");
         while (true) {
             print3d(self.origin + (0, 0, 64), self.zone_spawned_from, (1, 1, 1));
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_spawner/zm_spawner
 // Params 1, eflags: 0x1 linked

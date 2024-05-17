@@ -3424,12 +3424,13 @@ function private function_9b1d9d6a() {
     }
 }
 
-// Namespace namespace_a9aa9d72/namespace_a9aa9d72
-// Params 0, eflags: 0x0
-// Checksum 0x7cb541f6, Offset: 0x10bf8
-// Size: 0x1bc
-function function_96ac2d88() {
-    /#
+/#
+
+    // Namespace namespace_a9aa9d72/namespace_a9aa9d72
+    // Params 0, eflags: 0x0
+    // Checksum 0x7cb541f6, Offset: 0x10bf8
+    // Size: 0x1bc
+    function function_96ac2d88() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
@@ -3449,15 +3450,13 @@ function function_96ac2d88() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace namespace_a9aa9d72/namespace_a9aa9d72
-// Params 1, eflags: 0x0
-// Checksum 0x4056601e, Offset: 0x10dc0
-// Size: 0x2ea
-function function_2d0990d7(cmd) {
-    /#
+    // Namespace namespace_a9aa9d72/namespace_a9aa9d72
+    // Params 1, eflags: 0x0
+    // Checksum 0x4056601e, Offset: 0x10dc0
+    // Size: 0x2ea
+    function function_2d0990d7(cmd) {
         switch (cmd) {
         case #"hash_77f372679d07a739":
             level.var_daaf0e5d = "<unknown string>";
@@ -3510,15 +3509,13 @@ function function_2d0990d7(cmd) {
             level.var_6ab72806 = 3;
             break;
         }
-    #/
-}
+    }
 
-// Namespace namespace_a9aa9d72/namespace_a9aa9d72
-// Params 0, eflags: 0x4
-// Checksum 0x799904c, Offset: 0x110b8
-// Size: 0xbe
-function private function_283daa98() {
-    /#
+    // Namespace namespace_a9aa9d72/namespace_a9aa9d72
+    // Params 0, eflags: 0x4
+    // Checksum 0x799904c, Offset: 0x110b8
+    // Size: 0xbe
+    function private function_283daa98() {
         self endon(#"death", #"hash_300e9fed7925cd69");
         s_result = level waittill(#"hash_1a286cacd101f4eb");
         if (isdefined(s_result.b_success) && s_result.b_success) {
@@ -3526,6 +3523,6 @@ function private function_283daa98() {
             return;
         }
         self notify(#"hash_300e9fed7925cd69", {#b_success:0});
-    #/
-}
+    }
 
+#/

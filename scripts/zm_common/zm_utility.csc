@@ -255,12 +255,13 @@ function zm_ui_infotext(localclientnum, oldval, newval, bnewent, binitialsnap, f
     setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "zmInventory.infoText"), "");
 }
 
-// Namespace zm_utility/zm_utility
-// Params 4, eflags: 0x0
-// Checksum 0xcc815170, Offset: 0xb58
-// Size: 0x296
-function drawcylinder(pos, rad, height, color) {
-    /#
+/#
+
+    // Namespace zm_utility/zm_utility
+    // Params 4, eflags: 0x0
+    // Checksum 0xcc815170, Offset: 0xb58
+    // Size: 0x296
+    function drawcylinder(pos, rad, height, color) {
         currad = rad;
         curheight = height;
         debugstar(pos, 1, color);
@@ -271,8 +272,9 @@ function drawcylinder(pos, rad, height, color) {
             line(pos + (cos(theta) * currad, sin(theta) * currad, curheight), pos + (cos(theta2) * currad, sin(theta2) * currad, curheight), color, 1, 1, 100);
             line(pos + (cos(theta) * currad, sin(theta) * currad, 0), pos + (cos(theta) * currad, sin(theta) * currad, curheight), color, 1, 1, 100);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_utility/zm_utility
 // Params 1, eflags: 0x1 linked

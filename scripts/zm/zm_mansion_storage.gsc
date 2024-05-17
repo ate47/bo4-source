@@ -698,12 +698,13 @@ function function_35ab22f4() {
     }
 }
 
-// Namespace mansion_storage/zm_mansion_storage
-// Params 0, eflags: 0x0
-// Checksum 0x30eca3a2, Offset: 0x33a8
-// Size: 0x90
-function function_e061d576() {
-    /#
+/#
+
+    // Namespace mansion_storage/zm_mansion_storage
+    // Params 0, eflags: 0x0
+    // Checksum 0x30eca3a2, Offset: 0x33a8
+    // Size: 0x90
+    function function_e061d576() {
         level endon(#"hash_4207012c64662b4d");
         while (true) {
             if (getdvarint(#"hash_3dcf262f16faced0", 0)) {
@@ -711,8 +712,9 @@ function function_e061d576() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mansion_storage/zm_mansion_storage
 // Params 1, eflags: 0x1 linked

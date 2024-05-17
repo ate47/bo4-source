@@ -401,13 +401,14 @@ function getbestweightedspawnpoint(spawnpoints) {
     }
 }
 
-// Namespace spawnlogic/spawnlogic
-// Params 1, eflags: 0x0
-// Checksum 0xa1c2b69b, Offset: 0x13c8
-// Size: 0x156
-function checkbad(spawnpoint) {
-    /#
-        for (i = 0; i < level.players.size; i++) {
+/#
+
+    // Namespace spawnlogic/spawnlogic
+    // Params 1, eflags: 0x0
+    // Checksum 0xa1c2b69b, Offset: 0x13c8
+    // Size: 0x156
+    function checkbad(spawnpoint) {
+                for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
             if (!isalive(player) || player.sessionstate != "<unknown string>") {
                 continue;
@@ -420,15 +421,13 @@ function checkbad(spawnpoint) {
                 thread badspawnline(spawnpoint.sighttracepoint, player.origin + (0, 0, 50), self.name, player.name);
             }
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 4, eflags: 0x0
-// Checksum 0xcbf8d9aa, Offset: 0x1528
-// Size: 0xdc
-function badspawnline(start, end, name1, name2) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 4, eflags: 0x0
+    // Checksum 0xcbf8d9aa, Offset: 0x1528
+    // Size: 0xdc
+    function badspawnline(start, end, name1, name2) {
         dist = distance(start, end);
         for (i = 0; i < 200; i++) {
             line(start, end, (1, 0, 0));
@@ -436,15 +435,13 @@ function badspawnline(start, end, name1, name2) {
             print3d(end, name2);
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 3, eflags: 0x0
-// Checksum 0x7c24ffbd, Offset: 0x1610
-// Size: 0x82a
-function storespawndata(spawnpoints, useweights, bestspawnpoint) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 3, eflags: 0x0
+    // Checksum 0x7c24ffbd, Offset: 0x1610
+    // Size: 0x82a
+    function storespawndata(spawnpoints, useweights, bestspawnpoint) {
         if (!isdefined(level.storespawndata) || !level.storespawndata) {
             return;
         }
@@ -538,15 +535,13 @@ function storespawndata(spawnpoints, useweights, bestspawnpoint) {
         if (isdefined(self.thisspawnid)) {
         }
         self.thisspawnid = thisspawnid;
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 2, eflags: 0x0
-// Checksum 0xfc86d278, Offset: 0x1e48
-// Size: 0xa64
-function readspawndata(desiredid, relativepos) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 2, eflags: 0x0
+    // Checksum 0xfc86d278, Offset: 0x1e48
+    // Size: 0xa64
+    function readspawndata(desiredid, relativepos) {
         file = openfile("<unknown string>", "<unknown string>");
         if (file < 0) {
             return;
@@ -693,15 +688,13 @@ function readspawndata(desiredid, relativepos) {
             }
         }
         closefile(file);
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0x6309902e, Offset: 0x28b8
-// Size: 0x468
-function drawspawndata() {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0x6309902e, Offset: 0x28b8
+    // Size: 0x468
+    function drawspawndata() {
         level notify(#"drawing_spawn_data");
         level endon(#"drawing_spawn_data");
         textoffset = (0, 0, -12);
@@ -740,32 +733,29 @@ function drawspawndata() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 1, eflags: 0x0
-// Checksum 0xe541fcc9, Offset: 0x2d28
-// Size: 0x7e
-function vectostr(vec) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 1, eflags: 0x0
+    // Checksum 0xe541fcc9, Offset: 0x2d28
+    // Size: 0x7e
+    function vectostr(vec) {
         return int(vec[0]) + "<unknown string>" + int(vec[1]) + "<unknown string>" + int(vec[2]);
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 1, eflags: 0x0
-// Checksum 0xfc534211, Offset: 0x2db0
-// Size: 0x9e
-function strtovec(str) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 1, eflags: 0x0
+    // Checksum 0xfc534211, Offset: 0x2db0
+    // Size: 0x9e
+    function strtovec(str) {
         parts = strtok(str, "<unknown string>");
         if (parts.size != 3) {
             return (0, 0, 0);
         }
         return (int(parts[0]), int(parts[1]), int(parts[2]));
-    #/
-}
+    }
+
+#/
 
 // Namespace spawnlogic/spawnlogic
 // Params 1, eflags: 0x1 linked
@@ -1074,12 +1064,13 @@ function spawnlogic_begin() {
     #/
 }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0xacaca64c, Offset: 0x3fc8
-// Size: 0xbc
-function watchspawnprofile() {
-    /#
+/#
+
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0xacaca64c, Offset: 0x3fc8
+    // Size: 0xbc
+    function watchspawnprofile() {
         while (true) {
             while (true) {
                 if (getdvarint(#"scr_spawnprofile", 0) > 0) {
@@ -1096,15 +1087,13 @@ function watchspawnprofile() {
             }
             level notify(#"stop_spawn_profile");
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0xe471b5d1, Offset: 0x4090
-// Size: 0x11e
-function spawnprofile() {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0xe471b5d1, Offset: 0x4090
+    // Size: 0x11e
+    function spawnprofile() {
         level endon(#"stop_spawn_profile");
         while (true) {
             if (level.players.size > 0 && level.spawnpoints.size > 0) {
@@ -1120,15 +1109,13 @@ function spawnprofile() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0xbe079341, Offset: 0x41b8
-// Size: 0x5a
-function spawngraphcheck() {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0xbe079341, Offset: 0x41b8
+    // Size: 0x5a
+    function spawngraphcheck() {
         while (true) {
             if (getdvarint(#"scr_spawngraph", 0) < 1) {
                 wait(3);
@@ -1137,15 +1124,13 @@ function spawngraphcheck() {
             thread spawngraph();
             return;
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0x58fbba8, Offset: 0x4220
-// Size: 0x5ee
-function spawngraph() {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0x58fbba8, Offset: 0x4220
+    // Size: 0x5ee
+    function spawngraph() {
         w = 20;
         h = 20;
         weightscale = 0.1;
@@ -1213,15 +1198,13 @@ function spawngraph() {
             level.players[0] drawspawngraph(fakespawnpoints, w, h, weightscale);
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 4, eflags: 0x0
-// Checksum 0xe8ee3d63, Offset: 0x4818
-// Size: 0x12e
-function drawspawngraph(fakespawnpoints, w, h, weightscale) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 4, eflags: 0x0
+    // Checksum 0xe8ee3d63, Offset: 0x4818
+    // Size: 0x12e
+    function drawspawngraph(fakespawnpoints, w, h, weightscale) {
         i = 0;
         for (y = 0; y < h; y++) {
             yamnt = y / (h - 1);
@@ -1236,43 +1219,37 @@ function drawspawngraph(fakespawnpoints, w, h, weightscale) {
                 i++;
             }
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 2, eflags: 0x0
-// Checksum 0x6c42cd2d, Offset: 0x4950
-// Size: 0x4e
-function setupspawngraphpoint(s1, weightscale) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 2, eflags: 0x0
+    // Checksum 0x6c42cd2d, Offset: 0x4950
+    // Size: 0x4e
+    function setupspawngraphpoint(s1, weightscale) {
         s1.visible = 1;
         if (s1.weight < -1000 / weightscale) {
             s1.visible = 0;
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 3, eflags: 0x0
-// Checksum 0xbad6927b, Offset: 0x49a8
-// Size: 0xd4
-function spawngraphline(s1, s2, weightscale) {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 3, eflags: 0x0
+    // Checksum 0xbad6927b, Offset: 0x49a8
+    // Size: 0xd4
+    function spawngraphline(s1, s2, weightscale) {
         if (!s1.visible || !s2.visible) {
             return;
         }
         p1 = s1.origin + (0, 0, s1.weight * weightscale + 100);
         p2 = s2.origin + (0, 0, s2.weight * weightscale + 100);
         line(p1, p2, (1, 1, 1));
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0x60b86675, Offset: 0x4a88
-// Size: 0x37a
-function loopbotspawns() {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0x60b86675, Offset: 0x4a88
+    // Size: 0x37a
+    function loopbotspawns() {
         while (true) {
             if (getdvarint(#"scr_killbots", 0) < 1) {
                 wait(3);
@@ -1314,15 +1291,13 @@ function loopbotspawns() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0xc9b1ee6b, Offset: 0x4e10
-// Size: 0x1f8
-function allowspawndatareading() {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0xc9b1ee6b, Offset: 0x4e10
+    // Size: 0x1f8
+    function allowspawndatareading() {
         setdvar(#"scr_showspawnid", "<unknown string>");
         prevval = getdvarstring(#"scr_showspawnid");
         prevrelval = getdvarstring(#"scr_spawnidcycle");
@@ -1349,15 +1324,13 @@ function allowspawndatareading() {
             }
             thread drawspawndata();
         }
-    #/
-}
+    }
 
-// Namespace spawnlogic/spawnlogic
-// Params 0, eflags: 0x0
-// Checksum 0xd866f77b, Offset: 0x5010
-// Size: 0x472
-function showdeathsdebug() {
-    /#
+    // Namespace spawnlogic/spawnlogic
+    // Params 0, eflags: 0x0
+    // Checksum 0xd866f77b, Offset: 0x5010
+    // Size: 0x472
+    function showdeathsdebug() {
         while (true) {
             if (!getdvarint(#"scr_spawnpointdebug", 0)) {
                 wait(3);
@@ -1402,8 +1375,9 @@ function showdeathsdebug() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace spawnlogic/spawnlogic
 // Params 0, eflags: 0x0
@@ -1486,12 +1460,13 @@ function profiledebug() {
     }
 }
 
-// Namespace spawnlogic/spawnlogic
-// Params 2, eflags: 0x0
-// Checksum 0xa5cdbdfe, Offset: 0x58d0
-// Size: 0xd2
-function debugnearbyplayers(players, origin) {
-    /#
+/#
+
+    // Namespace spawnlogic/spawnlogic
+    // Params 2, eflags: 0x0
+    // Checksum 0xa5cdbdfe, Offset: 0x58d0
+    // Size: 0xd2
+    function debugnearbyplayers(players, origin) {
         if (!getdvarint(#"scr_spawnpointdebug", 0)) {
             return;
         }
@@ -1505,8 +1480,9 @@ function debugnearbyplayers(players, origin) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace spawnlogic/spawnlogic
 // Params 2, eflags: 0x0

@@ -4,12 +4,13 @@
 
 #namespace animation;
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x2
-// Checksum 0x5183a476, Offset: 0x78
-// Size: 0x2c6
-function autoexec function_c3c9d0e5() {
-    /#
+/#
+
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x2
+    // Checksum 0x5183a476, Offset: 0x78
+    // Size: 0x2c6
+    function autoexec function_c3c9d0e5() {
         setdvar(#"anim_debug", 0);
         setdvar(#"anim_debug_pause", 0);
         while (true) {
@@ -30,15 +31,13 @@ function autoexec function_c3c9d0e5() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 3, eflags: 0x0
-// Checksum 0xbc31e13, Offset: 0x348
-// Size: 0x526
-function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag) {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xbc31e13, Offset: 0x348
+    // Size: 0x526
+    function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag) {
         self notify(#"_anim_info_render_thread_");
         self endon(#"_anim_info_render_thread_", #"death", #"scriptedanim");
         level endon(#"kill_anim_debug");
@@ -85,44 +84,37 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag) {
             _reset_frame();
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x9a87f946, Offset: 0x878
-// Size: 0x72
-function get_ent_type() {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x9a87f946, Offset: 0x878
+    // Size: 0x72
+    function get_ent_type() {
         return "<unknown string>" + (isdefined(isdefined(self.classname) ? self.classname : self.type) ? "<unknown string>" + (isdefined(self.classname) ? self.classname : self.type) : "<unknown string>") + "<unknown string>";
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x8d2c6ac7, Offset: 0x8f8
-// Size: 0x8
-function _init_frame() {
-    /#
-    #/
-}
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x8d2c6ac7, Offset: 0x8f8
+    // Size: 0x8
+    function _init_frame() {
+        
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x261ca61d, Offset: 0x908
-// Size: 0x12
-function _reset_frame() {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x261ca61d, Offset: 0x908
+    // Size: 0x12
+    function _reset_frame() {
         self.v_centroid = undefined;
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 2, eflags: 0x0
-// Checksum 0x89257fa2, Offset: 0x928
-// Size: 0xcc
-function render_tag(str_tag, str_label) {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0x89257fa2, Offset: 0x928
+    // Size: 0xcc
+    function render_tag(str_tag, str_label) {
         if (!isdefined(str_label)) {
             str_label = str_tag;
         }
@@ -134,15 +126,13 @@ function render_tag(str_tag, str_label) {
                 line(self.v_centroid, v_tag_org, (0.3, 0.3, 0.3), 0.5, 1);
             }
         }
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 4, eflags: 0x0
-// Checksum 0x77d3e336, Offset: 0xa00
-// Size: 0x174
-function anim_origin_render(org, angles, line_length, str_label) {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 4, eflags: 0x0
+    // Checksum 0x77d3e336, Offset: 0xa00
+    // Size: 0x174
+    function anim_origin_render(org, angles, line_length, str_label) {
         if (!isdefined(line_length)) {
             line_length = 6;
         }
@@ -157,6 +147,6 @@ function anim_origin_render(org, angles, line_length, str_label) {
                 print3d(org, str_label, (1, 0.752941, 0.796078), 1, 0.05);
             }
         }
-    #/
-}
+    }
 
+#/

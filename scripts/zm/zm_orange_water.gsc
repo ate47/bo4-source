@@ -781,12 +781,13 @@ function function_e2d41c8d(s_start) {
     return 0.5 * var_7ddd94c0;
 }
 
-// Namespace zm_orange_water/zm_orange_water
-// Params 1, eflags: 0x0
-// Checksum 0x2cf50a01, Offset: 0x2be0
-// Size: 0xc8
-function water_debug_hud_elem_thread(player) {
-    /#
+/#
+
+    // Namespace zm_orange_water/zm_orange_water
+    // Params 1, eflags: 0x0
+    // Checksum 0x2cf50a01, Offset: 0x2be0
+    // Size: 0xc8
+    function water_debug_hud_elem_thread(player) {
         player endon(#"death");
         self thread update_hud_elem(player);
         while (true) {
@@ -796,20 +797,18 @@ function water_debug_hud_elem_thread(player) {
             }
             player waittill(#"update_frost_state");
         }
-    #/
-}
+    }
 
-// Namespace zm_orange_water/zm_orange_water
-// Params 1, eflags: 0x0
-// Checksum 0xe59ce9c8, Offset: 0x2cb0
-// Size: 0x4c
-function update_hud_elem(player) {
-    /#
+    // Namespace zm_orange_water/zm_orange_water
+    // Params 1, eflags: 0x0
+    // Checksum 0xe59ce9c8, Offset: 0x2cb0
+    // Size: 0x4c
+    function update_hud_elem(player) {
         player endon(#"death");
         while (true) {
             wait(0.1);
             player notify(#"update_frost_state");
         }
-    #/
-}
+    }
 
+#/

@@ -68,13 +68,17 @@ function function_209fda28(weapon) {
     }
 }
 
-// Namespace deployable/deployable
-// Params 1, eflags: 0x1 linked
-// Checksum 0x5fb94fd2, Offset: 0x480
-// Size: 0x2c
-function function_84fa8d39(weapon) {
-    println("<unknown string>");
-}
+/#
+
+    // Namespace deployable/deployable
+    // Params 1, eflags: 0x1 linked
+    // Checksum 0x5fb94fd2, Offset: 0x480
+    // Size: 0x2c
+    function function_84fa8d39(weapon) {
+        println("<unknown string>");
+    }
+
+#/
 
 // Namespace deployable/deployable
 // Params 1, eflags: 0x1 linked

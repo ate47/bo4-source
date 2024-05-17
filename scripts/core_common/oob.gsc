@@ -64,16 +64,18 @@ function __init__() {
     clientfield::register("toplayer", "nonplayer_oob_usage", 1, 1, "int");
 }
 
-// Namespace oob/oob
-// Params 0, eflags: 0x0
-// Checksum 0x9d79f78, Offset: 0x778
-// Size: 0x3c
-function function_e1076862() {
-    /#
+/#
+
+    // Namespace oob/oob
+    // Params 0, eflags: 0x0
+    // Checksum 0x9d79f78, Offset: 0x778
+    // Size: 0x3c
+    function function_e1076862() {
         level flagsys::wait_till("<unknown string>");
         iprintlnbold("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace oob/oob
 // Params 0, eflags: 0x1 linked

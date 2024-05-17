@@ -706,12 +706,13 @@ function function_dc0859e(var_b5434dd5 = 1) {
     }
 }
 
-// Namespace zm_trial_util/zm_trial_util
-// Params 0, eflags: 0x0
-// Checksum 0xd3039c58, Offset: 0x3498
-// Size: 0x1ce
-function open_all_doors() {
-    /#
+/#
+
+    // Namespace zm_trial_util/zm_trial_util
+    // Params 0, eflags: 0x0
+    // Checksum 0xd3039c58, Offset: 0x3498
+    // Size: 0x1ce
+    function open_all_doors() {
         a_zombie_doors = getentarray("<unknown string>", "<unknown string>");
         for (i = 0; i < a_zombie_doors.size; i++) {
             if (!(isdefined(a_zombie_doors[i].has_been_opened) && a_zombie_doors[i].has_been_opened)) {
@@ -731,15 +732,13 @@ function open_all_doors() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace zm_trial_util/zm_trial_util
-// Params 0, eflags: 0x0
-// Checksum 0x434b419, Offset: 0x3670
-// Size: 0x16a
-function function_9c71b46f() {
-    /#
+    // Namespace zm_trial_util/zm_trial_util
+    // Params 0, eflags: 0x0
+    // Checksum 0x434b419, Offset: 0x3670
+    // Size: 0x16a
+    function function_9c71b46f() {
         foreach (player in getplayers()) {
             for (i = 0; i < player.var_c27f1e90.size; i++) {
                 perk = player.var_c27f1e90[i];
@@ -752,21 +751,19 @@ function function_9c71b46f() {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_trial_util/zm_trial_util
-// Params 0, eflags: 0x0
-// Checksum 0xb1c43315, Offset: 0x37e8
-// Size: 0x94
-function function_9c1092f6() {
-    /#
+    // Namespace zm_trial_util/zm_trial_util
+    // Params 0, eflags: 0x0
+    // Checksum 0xb1c43315, Offset: 0x37e8
+    // Size: 0x94
+    function function_9c1092f6() {
         iprintlnbold("<unknown string>");
         if (getgametypesetting(#"zmshowtimer", 0) == 1) {
             setgametypesetting(#"zmshowtimer", 0);
             return;
         }
         setgametypesetting(#"zmshowtimer", 1);
-    #/
-}
+    }
 
+#/

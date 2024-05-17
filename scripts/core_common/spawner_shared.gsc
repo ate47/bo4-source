@@ -708,12 +708,13 @@ function get_goal(str_goal, str_key = "targetname") {
     return array::random(a_goals);
 }
 
-// Namespace spawner/spawner_shared
-// Params 0, eflags: 0x0
-// Checksum 0xfcc056fa, Offset: 0x2568
-// Size: 0x982
-function aigroup_debug() {
-    /#
+/#
+
+    // Namespace spawner/spawner_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xfcc056fa, Offset: 0x2568
+    // Size: 0x982
+    function aigroup_debug() {
         a_aigroups = [];
         a_spawners = getspawnerarray();
         foreach (spawner in a_spawners) {
@@ -780,8 +781,9 @@ function aigroup_debug() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace spawner/spawner_shared
 // Params 2, eflags: 0x1 linked

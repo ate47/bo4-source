@@ -1391,27 +1391,26 @@ function round_spawn() {
     return false;
 }
 
-// Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 0, eflags: 0x4
-// Checksum 0xb4470225, Offset: 0x5950
-// Size: 0xae
-function private function_255c7194() {
-    /#
+/#
+
+    // Namespace zm_ai_catalyst/zm_ai_catalyst
+    // Params 0, eflags: 0x4
+    // Checksum 0xb4470225, Offset: 0x5950
+    // Size: 0xae
+    function private function_255c7194() {
         player = getplayers()[0];
         queryresult = positionquery_source_navigation(player.origin, 256, 512, 128, 20);
         if (isdefined(queryresult) && queryresult.data.size > 0) {
             return queryresult.data[0];
         }
         return {#origin:player.origin};
-    #/
-}
+    }
 
-// Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 1, eflags: 0x4
-// Checksum 0xe5f5c79e, Offset: 0x5a08
-// Size: 0x36c
-function private function_fa69f8d2(type) {
-    /#
+    // Namespace zm_ai_catalyst/zm_ai_catalyst
+    // Params 1, eflags: 0x4
+    // Checksum 0xe5f5c79e, Offset: 0x5a08
+    // Size: 0x36c
+    function private function_fa69f8d2(type) {
         var_7a56405a = [];
         var_7a56405a[1] = #"catalyst_corrosive";
         var_7a56405a[3] = #"catalyst_electric";
@@ -1453,15 +1452,13 @@ function private function_fa69f8d2(type) {
                 level thread function_4329a51b(catalyst_zombie);
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params 0, eflags: 0x4
-// Checksum 0x8c8138b8, Offset: 0x5d80
-// Size: 0x178
-function private function_1a0ae193() {
-    /#
+    // Namespace zm_ai_catalyst/zm_ai_catalyst
+    // Params 0, eflags: 0x4
+    // Checksum 0x8c8138b8, Offset: 0x5d80
+    // Size: 0x178
+    function private function_1a0ae193() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + 1 + "<unknown string>");
         adddebugcommand("<unknown string>" + 3 + "<unknown string>");
@@ -1474,6 +1471,6 @@ function private function_1a0ae193() {
                 setdvar(#"hash_403368b958977fcb", "<unknown string>");
             }
         }
-    #/
-}
+    }
 
+#/

@@ -7,34 +7,33 @@
 
 #namespace damagefeedback;
 
-// Namespace damagefeedback/damagefeedback_shared
-// Params 0, eflags: 0x2
-// Checksum 0xfa37ef50, Offset: 0x188
-// Size: 0x3c
-function autoexec __init__system__() {
-    /#
+/#
+
+    // Namespace damagefeedback/damagefeedback_shared
+    // Params 0, eflags: 0x2
+    // Checksum 0xfa37ef50, Offset: 0x188
+    // Size: 0x3c
+    function autoexec __init__system__() {
         system::register(#"damagefeedback", &__init__, undefined, undefined);
-    #/
-}
+    }
 
-// Namespace damagefeedback/damagefeedback_shared
-// Params 0, eflags: 0x0
-// Checksum 0xca8c7376, Offset: 0x1d0
-// Size: 0x2c
-function __init__() {
-    /#
+    // Namespace damagefeedback/damagefeedback_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xca8c7376, Offset: 0x1d0
+    // Size: 0x2c
+    function __init__() {
         callback::on_connect(&on_player_connect);
-    #/
-}
+    }
 
-// Namespace damagefeedback/damagefeedback_shared
-// Params 0, eflags: 0x0
-// Checksum 0x6056184b, Offset: 0x208
-// Size: 0x8
-function on_player_connect() {
-    /#
-    #/
-}
+    // Namespace damagefeedback/damagefeedback_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x6056184b, Offset: 0x208
+    // Size: 0x8
+    function on_player_connect() {
+        
+    }
+
+#/
 
 // Namespace damagefeedback/damagefeedback_shared
 // Params 1, eflags: 0x1 linked
@@ -400,12 +399,13 @@ function damage_feedback_get_dead(victim, mod, weapon, stage) {
     return stage == 5 && (mod == "MOD_BULLET" || mod == "MOD_RIFLE_BULLET" || mod == "MOD_PISTOL_BULLET" || mod == "MOD_HEAD_SHOT" || mod == "MOD_BURNED" || mod == "MOD_DOT" || mod == "MOD_MELEE_WEAPON_BUTT") && !weapon.isheavyweapon && !killstreaks::is_killstreak_weapon(weapon);
 }
 
-// Namespace damagefeedback/damagefeedback_shared
-// Params 3, eflags: 0x0
-// Checksum 0xeedf0ae8, Offset: 0x1a00
-// Size: 0x1c6
-function damage_feedback_growth(victim, mod, weapon) {
-    /#
+/#
+
+    // Namespace damagefeedback/damagefeedback_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xeedf0ae8, Offset: 0x1a00
+    // Size: 0x1c6
+    function damage_feedback_growth(victim, mod, weapon) {
         if (isdefined(self.hud_damagefeedback)) {
             stage = damage_feedback_get_stage(victim);
             self.hud_damagefeedback.x = -11 + -1 * stage;
@@ -423,15 +423,13 @@ function damage_feedback_growth(victim, mod, weapon) {
             self.hud_damagefeedback fadeovertime(1);
             self.hud_damagefeedback.alpha = 0;
         }
-    #/
-}
+    }
 
-// Namespace damagefeedback/damagefeedback_shared
-// Params 0, eflags: 0x0
-// Checksum 0xa322e795, Offset: 0x1bd0
-// Size: 0x96
-function kill_hitmarker_fade() {
-    /#
+    // Namespace damagefeedback/damagefeedback_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xa322e795, Offset: 0x1bd0
+    // Size: 0x96
+    function kill_hitmarker_fade() {
         if (!isdefined(self.hud_damagefeedback)) {
             return;
         }
@@ -441,8 +439,9 @@ function kill_hitmarker_fade() {
         wait(0.25);
         self.hud_damagefeedback fadeovertime(0.3);
         self.hud_damagefeedback.alpha = 0;
-    #/
-}
+    }
+
+#/
 
 // Namespace damagefeedback/damagefeedback_shared
 // Params 3, eflags: 0x0

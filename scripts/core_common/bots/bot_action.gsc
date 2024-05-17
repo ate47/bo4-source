@@ -245,17 +245,19 @@ function register_weapon(weaponname, rankfunc) {
     weapon.var_ede647ad = rankfunc;
 }
 
-// Namespace bot_action/bot_action
-// Params 1, eflags: 0x0
-// Checksum 0x102103e5, Offset: 0x1648
-// Size: 0x5c
-function function_36052a7f(weaponname) {
-    /#
+/#
+
+    // Namespace bot_action/bot_action
+    // Params 1, eflags: 0x0
+    // Checksum 0x102103e5, Offset: 0x1648
+    // Size: 0x5c
+    function function_36052a7f(weaponname) {
         if (!isdefined(level.botweapons[weaponname])) {
             assertmsg("<unknown string>" + function_9e72a96(weaponname) + "<unknown string>");
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace bot_action/bot_action
 // Params 1, eflags: 0x1 linked
@@ -1011,12 +1013,13 @@ function factor_rocketlauncher_overkill(weapon, var_c300ee65) {
     self modify_weapon_rank(weapon, -1, "Enemy Max Health " + var_c300ee65.maxhealth + " < " + 400);
 }
 
-// Namespace bot_action/bot_action
-// Params 2, eflags: 0x0
-// Checksum 0xb866686c, Offset: 0x3db8
-// Size: 0x12c
-function utility_color(utility, targetutility) {
-    /#
+/#
+
+    // Namespace bot_action/bot_action
+    // Params 2, eflags: 0x0
+    // Checksum 0xb866686c, Offset: 0x3db8
+    // Size: 0x12c
+    function utility_color(utility, targetutility) {
         colorscale = array((1, 0, 0), (1, 0.5, 0), (1, 1, 0), (0, 1, 0));
         if (utility >= targetutility) {
             return colorscale[colorscale.size - 1];
@@ -1029,8 +1032,9 @@ function utility_color(utility, targetutility) {
         colorfrac = utilityindex - colorindex;
         utilitycolor = vectorlerp(colorscale[colorindex], colorscale[colorindex + 1], colorfrac);
         return utilitycolor;
-    #/
-}
+    }
+
+#/
 
 // Namespace bot_action/bot_action
 // Params 1, eflags: 0x1 linked

@@ -1896,12 +1896,13 @@ function function_4de3ca98() {
     util::wait_network_frame(1);
 }
 
-// Namespace item_world/item_world
-// Params 0, eflags: 0x0
-// Checksum 0x10fa85b5, Offset: 0x88c0
-// Size: 0x1a8
-function function_76eb9bd7() {
-    /#
+/#
+
+    // Namespace item_world/item_world
+    // Params 0, eflags: 0x0
+    // Checksum 0x10fa85b5, Offset: 0x88c0
+    // Size: 0x1a8
+    function function_76eb9bd7() {
         function_1b11e73c();
         if (!isdefined(self) || !isplayer(self) || !isalive(self)) {
             return;
@@ -1921,6 +1922,6 @@ function function_76eb9bd7() {
                 self function_de2018e3(item, self, var_fa3df96);
             }
         }
-    #/
-}
+    }
 
+#/

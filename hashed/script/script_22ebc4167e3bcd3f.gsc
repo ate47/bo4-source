@@ -572,12 +572,13 @@ function function_be995f48(mdl_tomahawk, var_9c0bf2db) {
     zm_powerups::specific_powerup_drop(str_powerup, self.origin);
 }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
-// Params 0, eflags: 0x0
-// Checksum 0x9a367df0, Offset: 0x2998
-// Size: 0xfc
-function function_a860e46e() {
-    /#
+/#
+
+    // Namespace namespace_9d58c1cd/namespace_9d58c1cd
+    // Params 0, eflags: 0x0
+    // Checksum 0x9a367df0, Offset: 0x2998
+    // Size: 0xfc
+    function function_a860e46e() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
@@ -589,15 +590,13 @@ function function_a860e46e() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
-// Params 1, eflags: 0x0
-// Checksum 0x1f1c3425, Offset: 0x2aa0
-// Size: 0x252
-function function_97be15e3(cmd) {
-    /#
+    // Namespace namespace_9d58c1cd/namespace_9d58c1cd
+    // Params 1, eflags: 0x0
+    // Checksum 0x1f1c3425, Offset: 0x2aa0
+    // Size: 0x252
+    function function_97be15e3(cmd) {
         switch (cmd) {
         case #"hash_42dce9e99181c0bc":
             function_7101d54f();
@@ -631,20 +630,18 @@ function function_97be15e3(cmd) {
             level.var_64f95ac4 = 1;
             break;
         }
-    #/
-}
+    }
 
-// Namespace namespace_9d58c1cd/namespace_9d58c1cd
-// Params 0, eflags: 0x0
-// Checksum 0xe87f8261, Offset: 0x2d00
-// Size: 0xd4
-function function_7101d54f() {
-    /#
+    // Namespace namespace_9d58c1cd/namespace_9d58c1cd
+    // Params 0, eflags: 0x0
+    // Checksum 0xe87f8261, Offset: 0x2d00
+    // Size: 0xd4
+    function function_7101d54f() {
         w_component = zm_crafting::get_component(#"hash_1e5657f6a6f09389");
         foreach (e_player in level.activeplayers) {
             e_player zm_crafting::function_3e29352d(w_component);
         }
         level flag::set(#"hash_7039457b1cc827de");
-    #/
-}
+    }
 
+#/

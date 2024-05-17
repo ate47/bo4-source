@@ -1647,20 +1647,22 @@ function callback_startgametype() {
     #/
 }
 
-// Namespace globallogic/globallogic
-// Params 0, eflags: 0x0
-// Checksum 0x2004a5ba, Offset: 0x67a8
-// Size: 0x50
-function forcedebughostmigration() {
-    /#
+/#
+
+    // Namespace globallogic/globallogic
+    // Params 0, eflags: 0x0
+    // Checksum 0x2004a5ba, Offset: 0x67a8
+    // Size: 0x50
+    function forcedebughostmigration() {
         while (true) {
             hostmigration::waittillhostmigrationdone();
             wait(60);
             starthostmigration();
             hostmigration::waittillhostmigrationdone();
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic/globallogic
 // Params 4, eflags: 0x1 linked

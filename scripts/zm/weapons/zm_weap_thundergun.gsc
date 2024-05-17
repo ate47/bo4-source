@@ -55,12 +55,13 @@ function __main__() {
     callback::on_connect(&thundergun_on_player_connect);
 }
 
-// Namespace zm_weap_thundergun/zm_weap_thundergun
-// Params 0, eflags: 0x0
-// Checksum 0x7932e017, Offset: 0x5b0
-// Size: 0x368
-function thundergun_devgui_dvar_think() {
-    /#
+/#
+
+    // Namespace zm_weap_thundergun/zm_weap_thundergun
+    // Params 0, eflags: 0x0
+    // Checksum 0x7932e017, Offset: 0x5b0
+    // Size: 0x368
+    function thundergun_devgui_dvar_think() {
         if (!zm_weapons::is_weapon_included(level.w_thundergun)) {
             return;
         }
@@ -79,8 +80,9 @@ function thundergun_devgui_dvar_think() {
             zombie_utility::set_zombie_var(#"thundergun_knockdown_damage", getdvarint(#"scr_thundergun_knockdown_damage", 0));
             wait(0.5);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
 // Params 0, eflags: 0x1 linked

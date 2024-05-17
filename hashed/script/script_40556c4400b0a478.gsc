@@ -36,24 +36,23 @@ function private function_e67297f2() {
     self attach("c_t8_zmb_mob_brutus_boss_baton", "tag_weapon_right");
 }
 
-// Namespace namespace_9d28c60/namespace_9d28c60
-// Params 0, eflags: 0x4
-// Checksum 0xa1fe1b08, Offset: 0x1b0
-// Size: 0x5c
-function private function_f2cc1ec() {
-    /#
+/#
+
+    // Namespace namespace_9d28c60/namespace_9d28c60
+    // Params 0, eflags: 0x4
+    // Checksum 0xa1fe1b08, Offset: 0x1b0
+    // Size: 0x5c
+    function private function_f2cc1ec() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         zm_devgui::add_custom_devgui_callback(&function_5162a3de);
-    #/
-}
+    }
 
-// Namespace namespace_9d28c60/namespace_9d28c60
-// Params 1, eflags: 0x4
-// Checksum 0xa077627e, Offset: 0x218
-// Size: 0x1fa
-function private function_5162a3de(cmd) {
-    /#
+    // Namespace namespace_9d28c60/namespace_9d28c60
+    // Params 1, eflags: 0x4
+    // Checksum 0xa077627e, Offset: 0x218
+    // Size: 0x1fa
+    function private function_5162a3de(cmd) {
         switch (cmd) {
         case #"hash_3b5a33d5b7ae4e80":
             spawners = getspawnerarray();
@@ -75,6 +74,6 @@ function private function_5162a3de(cmd) {
         default:
             break;
         }
-    #/
-}
+    }
 
+#/

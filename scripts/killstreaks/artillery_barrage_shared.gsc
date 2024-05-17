@@ -350,12 +350,13 @@ function function_a9ef6d5d(plane, var_675219e7, var_aff95821, var_d1769adf) {
     }
 }
 
-// Namespace artillery_barrage/artillery_barrage_shared
-// Params 1, eflags: 0x0
-// Checksum 0xec09ca62, Offset: 0x1a28
-// Size: 0x148
-function function_8c164ce0(path) {
-    /#
+/#
+
+    // Namespace artillery_barrage/artillery_barrage_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xec09ca62, Offset: 0x1a28
+    // Size: 0x148
+    function function_8c164ce0(path) {
         draw_path = getdvarint(#"hash_619e2bb393e45754", 0);
         if (draw_path == 0) {
             return;
@@ -372,8 +373,9 @@ function function_8c164ce0(path) {
             }
             util::debug_sphere(point, radius, (0, 0, 1), alpha, var_342eb58c);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace artillery_barrage/artillery_barrage_shared
 // Params 6, eflags: 0x0

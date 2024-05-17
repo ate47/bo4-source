@@ -33,14 +33,17 @@ function __init__() {
     #/
 }
 
-// Namespace namespace_77b8863/namespace_77b8863
-// Params 0, eflags: 0x0
-// Checksum 0x109db60b, Offset: 0x260
-// Size: 0x8
-function update_dvars() {
-    /#
-    #/
-}
+/#
+
+    // Namespace namespace_77b8863/namespace_77b8863
+    // Params 0, eflags: 0x0
+    // Checksum 0x109db60b, Offset: 0x260
+    // Size: 0x8
+    function update_dvars() {
+        
+    }
+
+#/
 
 // Namespace namespace_77b8863/namespace_77b8863
 // Params 0, eflags: 0x1 linked

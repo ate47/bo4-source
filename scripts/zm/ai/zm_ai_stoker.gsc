@@ -1165,39 +1165,36 @@ function private function_f5f699aa() {
     return isdefined(var_16049422);
 }
 
-// Namespace zm_ai_stoker/zm_ai_stoker
-// Params 0, eflags: 0x4
-// Checksum 0xc29791b7, Offset: 0x49f0
-// Size: 0x74
-function private function_a92dac75() {
-    /#
+/#
+
+    // Namespace zm_ai_stoker/zm_ai_stoker
+    // Params 0, eflags: 0x4
+    // Checksum 0xc29791b7, Offset: 0x49f0
+    // Size: 0x74
+    function private function_a92dac75() {
         level flagsys::wait_till("<unknown string>");
         zm_devgui::add_custom_devgui_callback(&function_963e8ce);
         spawner::add_archetype_spawn_function(#"stoker", &function_16c9b795);
-    #/
-}
+    }
 
-// Namespace zm_ai_stoker/zm_ai_stoker
-// Params 0, eflags: 0x4
-// Checksum 0xee9f3a5a, Offset: 0x4a70
-// Size: 0xb2
-function private function_16c9b795() {
-    /#
+    // Namespace zm_ai_stoker/zm_ai_stoker
+    // Params 0, eflags: 0x4
+    // Checksum 0xee9f3a5a, Offset: 0x4a70
+    // Size: 0xb2
+    function private function_16c9b795() {
         if (isdefined(level.var_910d20f6) && level.var_910d20f6) {
             return;
         }
         adddebugcommand("<unknown string>" + getdvarint(#"hash_3dfb66f92268c90f", self ai::function_9139c839().var_d33d95d0) + "<unknown string>");
         adddebugcommand("<unknown string>");
         level.var_910d20f6 = 1;
-    #/
-}
+    }
 
-// Namespace zm_ai_stoker/zm_ai_stoker
-// Params 1, eflags: 0x4
-// Checksum 0x33910449, Offset: 0x4b30
-// Size: 0x278
-function private function_963e8ce(cmd) {
-    /#
+    // Namespace zm_ai_stoker/zm_ai_stoker
+    // Params 1, eflags: 0x4
+    // Checksum 0x33910449, Offset: 0x4b30
+    // Size: 0x278
+    function private function_963e8ce(cmd) {
         if (cmd == "<unknown string>") {
             player = level.players[0];
             v_direction = player getplayerangles();
@@ -1221,31 +1218,27 @@ function private function_963e8ce(cmd) {
                 stoker kill();
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_stoker/zm_ai_stoker
-// Params 0, eflags: 0x0
-// Checksum 0x421e1175, Offset: 0x4db0
-// Size: 0x48
-function update_dvars() {
-    /#
+    // Namespace zm_ai_stoker/zm_ai_stoker
+    // Params 0, eflags: 0x0
+    // Checksum 0x421e1175, Offset: 0x4db0
+    // Size: 0x48
+    function update_dvars() {
         while (true) {
             level.stokerdebug = getdvarint(#"scr_stokerdebug", 0);
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_stoker/zm_ai_stoker
-// Params 1, eflags: 0x0
-// Checksum 0xbc25f847, Offset: 0x4e00
-// Size: 0x44
-function function_752a64b8(message) {
-    /#
+    // Namespace zm_ai_stoker/zm_ai_stoker
+    // Params 1, eflags: 0x0
+    // Checksum 0xbc25f847, Offset: 0x4e00
+    // Size: 0x44
+    function function_752a64b8(message) {
         if (isdefined(level.stokerdebug)) {
             println("<unknown string>" + message);
         }
-    #/
-}
+    }
 
+#/

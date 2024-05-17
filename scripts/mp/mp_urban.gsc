@@ -197,16 +197,17 @@ function function_c7fff230() {
     }
 }
 
-// Namespace mp_urban/mp_urban
-// Params 0, eflags: 0x0
-// Checksum 0x5fbf3ae4, Offset: 0xc30
-// Size: 0x9c
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_urban/mp_urban
+    // Params 0, eflags: 0x0
+    // Checksum 0x5fbf3ae4, Offset: 0xc30
+    // Size: 0x9c
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

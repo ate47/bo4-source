@@ -235,19 +235,21 @@ function function_f4a39bc4() {
     }
 }
 
-// Namespace zm_white_util/zm_white_util
-// Params 0, eflags: 0x0
-// Checksum 0x3a5251d4, Offset: 0x1458
-// Size: 0x3e
-function function_e95d25() {
-    /#
+/#
+
+    // Namespace zm_white_util/zm_white_util
+    // Params 0, eflags: 0x0
+    // Checksum 0x3a5251d4, Offset: 0x1458
+    // Size: 0x3e
+    function function_e95d25() {
         while (true) {
             level waittill(#"open_sesame");
             function_f4a39bc4();
             wait(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_white_util/zm_white_util
 // Params 1, eflags: 0x1 linked

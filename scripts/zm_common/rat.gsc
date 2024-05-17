@@ -13,22 +13,21 @@
 
 #namespace rat;
 
-// Namespace rat/rat
-// Params 0, eflags: 0x2
-// Checksum 0x91fe9a1b, Offset: 0xc0
-// Size: 0x3c
-function autoexec __init__system__() {
-    /#
-        system::register(#"rat", &__init__, undefined, undefined);
-    #/
-}
+/#
 
-// Namespace rat/rat
-// Params 0, eflags: 0x0
-// Checksum 0x5d5d97c0, Offset: 0x108
-// Size: 0x51c
-function __init__() {
-    /#
+    // Namespace rat/rat
+    // Params 0, eflags: 0x2
+    // Checksum 0x91fe9a1b, Offset: 0xc0
+    // Size: 0x3c
+    function autoexec __init__system__() {
+        system::register(#"rat", &__init__, undefined, undefined);
+    }
+
+    // Namespace rat/rat
+    // Params 0, eflags: 0x0
+    // Checksum 0x5d5d97c0, Offset: 0x108
+    // Size: 0x51c
+    function __init__() {
         init();
         level.rat.common.gethostplayer = &util::gethostplayer;
         addratscriptcmd("<unknown string>", &derriesezombiespawnnavmeshtest);
@@ -62,25 +61,21 @@ function __init__() {
         addratscriptcmd("<unknown string>", &function_a6f7ea4a);
         addratscriptcmd("<unknown string>", &function_303319e9);
         addratscriptcmd("<unknown string>", &function_e1bdc812);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x341141de, Offset: 0x630
-// Size: 0x24
-function function_e1bdc812(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x341141de, Offset: 0x630
+    // Size: 0x24
+    function function_e1bdc812(params) {
         return zm_trial::function_ba9853db();
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x329da4b, Offset: 0x660
-// Size: 0x1a8
-function function_303319e9(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x329da4b, Offset: 0x660
+    // Size: 0x1a8
+    function function_303319e9(params) {
         zombies = getaiarchetypearray("<unknown string>", level.zombie_team);
         player = getplayer(params);
         forward = anglestoforward(player.angles);
@@ -95,25 +90,21 @@ function function_303319e9(params) {
                 zombie pathmode("<unknown string>");
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x50f23a56, Offset: 0x810
-// Size: 0x3c
-function function_a6f7ea4a(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x50f23a56, Offset: 0x810
+    // Size: 0x3c
+    function function_a6f7ea4a(params) {
         zombie_utility::set_zombie_var(#"rebuild_barrier_cap_per_round", 2147483647);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x4fbc4639, Offset: 0x858
-// Size: 0xf8
-function function_94ac25d9(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x4fbc4639, Offset: 0x858
+    // Size: 0xf8
+    function function_94ac25d9(params) {
         windows = level.exterior_goals;
         if (isdefined(windows)) {
             foreach (window in windows) {
@@ -123,15 +114,13 @@ function function_94ac25d9(params) {
                 function_55e20e75(params._id, angles);
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x221b219b, Offset: 0x958
-// Size: 0x13c
-function function_8f340c78(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x221b219b, Offset: 0x958
+    // Size: 0x13c
+    function function_8f340c78(params) {
         chests = level.chests;
         if (isdefined(chests)) {
             foreach (chest in chests) {
@@ -144,16 +133,14 @@ function function_8f340c78(params) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x5ed51890, Offset: 0xaa0
-// Size: 0x166
-function function_d52c7fc3(params) {
-    /#
-        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x5ed51890, Offset: 0xaa0
+    // Size: 0x166
+    function function_d52c7fc3(params) {
+                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.script_noteworthy)) {
                 if (triggerstub.script_noteworthy == "<unknown string>" || triggerstub.script_noteworthy == "<unknown string>") {
@@ -164,26 +151,22 @@ function function_d52c7fc3(params) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x152e412d, Offset: 0xc10
-// Size: 0x3e
-function function_d87f9fe1(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x152e412d, Offset: 0xc10
+    // Size: 0x3e
+    function function_d87f9fe1(params) {
         host = util::gethostplayer();
         return isdefined(host.var_4e90ce0c);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x90d2d614, Offset: 0xc58
-// Size: 0x1d4
-function function_6ea9a113(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x90d2d614, Offset: 0xc58
+    // Size: 0x1d4
+    function function_6ea9a113(params) {
         foreach (items in level.item_spawns) {
             foreach (item in items) {
                 if (isdefined(item)) {
@@ -196,16 +179,14 @@ function function_6ea9a113(params) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x6653fab8, Offset: 0xe38
-// Size: 0x14e
-function function_ff8f5737(params) {
-    /#
-        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x6653fab8, Offset: 0xe38
+    // Size: 0x14e
+    function function_ff8f5737(params) {
+                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.target)) {
                 if (triggerstub.target == "<unknown string>") {
@@ -216,16 +197,14 @@ function function_ff8f5737(params) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x5d0ab328, Offset: 0xf90
-// Size: 0x14e
-function function_5b9ddfdb(params) {
-    /#
-        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x5d0ab328, Offset: 0xf90
+    // Size: 0x14e
+    function function_5b9ddfdb(params) {
+                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.target)) {
                 if (triggerstub.target == "<unknown string>") {
@@ -236,28 +215,24 @@ function function_5b9ddfdb(params) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xf2304c00, Offset: 0x10e8
-// Size: 0x32
-function function_e2143adf(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xf2304c00, Offset: 0x10e8
+    // Size: 0x32
+    function function_e2143adf(params) {
         if (isdefined(level.item_inventory)) {
             return level.item_inventory.size;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xfebd5af5, Offset: 0x1128
-// Size: 0x160
-function function_1bd3da0f(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xfebd5af5, Offset: 0x1128
+    // Size: 0x160
+    function function_1bd3da0f(params) {
         chunks = level.s_pap_quest.a_s_locations;
         if (isdefined(chunks)) {
             foreach (chunk in chunks) {
@@ -267,25 +242,21 @@ function function_1bd3da0f(params) {
                 function_55e20e75(params._id, angles);
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x9e1db85, Offset: 0x1290
-// Size: 0x24
-function function_d49caa1a(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x9e1db85, Offset: 0x1290
+    // Size: 0x24
+    function function_d49caa1a(params) {
         return level.s_pap_quest.var_be6e6f65;
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x7baef338, Offset: 0x12c0
-// Size: 0x11a
-function function_ea4b3f00(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x7baef338, Offset: 0x12c0
+    // Size: 0x11a
+    function function_ea4b3f00(params) {
         host = util::gethostplayer();
         skip = 0;
         if (isdefined(params.var_f870f386)) {
@@ -303,28 +274,24 @@ function function_ea4b3f00(params) {
             }
             skip = 0;
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xbd85421f, Offset: 0x13e8
-// Size: 0x74
-function function_c79c0501(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xbd85421f, Offset: 0x13e8
+    // Size: 0x74
+    function function_c79c0501(params) {
         if (isdefined(params.round)) {
             setdvar(#"scr_zombie_round", int(params.round));
             adddebugcommand("<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xea457136, Offset: 0x1468
-// Size: 0x7c
-function function_3bbff2c5(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xea457136, Offset: 0x1468
+    // Size: 0x7c
+    function function_3bbff2c5(params) {
         num = 3;
         if (isdefined(params.num)) {
             num = int(params.num);
@@ -332,24 +299,21 @@ function function_3bbff2c5(params) {
         if (num > 0) {
             adddebugcommand("<unknown string>" + num);
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x245a3537, Offset: 0x14f0
-// Size: 0x10
-function function_123195b9(params) {
-    /#
-    #/
-}
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x245a3537, Offset: 0x14f0
+    // Size: 0x10
+    function function_123195b9(params) {
+        
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x23f8f310, Offset: 0x1508
-// Size: 0x1f0
-function function_684f2efb(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x23f8f310, Offset: 0x1508
+    // Size: 0x1f0
+    function function_684f2efb(params) {
         trigs = getentarray("<unknown string>", "<unknown string>");
         foreach (ent in trigs) {
             ent_parts = getentarray(ent.target, "<unknown string>");
@@ -363,30 +327,26 @@ function function_684f2efb(params) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x478ee154, Offset: 0x1700
-// Size: 0x54
-function function_c3aa7d01(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x478ee154, Offset: 0x1700
+    // Size: 0x54
+    function function_c3aa7d01(params) {
         player = util::gethostplayer();
         if (isdefined(player)) {
             if (isdefined(player.perk_purchased)) {
                 return player.perk_purchased;
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xaf52306c, Offset: 0x1760
-// Size: 0x9e
-function function_125e2d8d(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xaf52306c, Offset: 0x1760
+    // Size: 0x9e
+    function function_125e2d8d(params) {
         zombie_doors = getentarray("<unknown string>", "<unknown string>");
         count = 0;
         if (isdefined(zombie_doors)) {
@@ -397,15 +357,13 @@ function function_125e2d8d(params) {
             }
         }
         return count;
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x2580ff09, Offset: 0x1808
-// Size: 0x146
-function function_e7dffcf9(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x2580ff09, Offset: 0x1808
+    // Size: 0x146
+    function function_e7dffcf9(params) {
         zombie_doors = getentarray("<unknown string>", "<unknown string>");
         if (isdefined(zombie_doors)) {
             for (i = 0; i < zombie_doors.size; i++) {
@@ -419,16 +377,14 @@ function function_e7dffcf9(params) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xb836a67, Offset: 0x1958
-// Size: 0x146
-function function_7a11ca68(params) {
-    /#
-        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xb836a67, Offset: 0x1958
+    // Size: 0x146
+    function function_7a11ca68(params) {
+                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (triggerstub.cursor_hint == "<unknown string>") {
                 origin = triggerstub zm_unitrigger::unitrigger_origin();
@@ -439,16 +395,14 @@ function function_7a11ca68(params) {
                 function_55e20e75(params._id, angles);
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x82f9d470, Offset: 0x1aa8
-// Size: 0x12e
-function function_782c6850(params) {
-    /#
-        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x82f9d470, Offset: 0x1aa8
+    // Size: 0x12e
+    function function_782c6850(params) {
+                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.hint_string) && triggerstub.hint_string == "<unknown string>") {
                 origin = triggerstub zm_unitrigger::unitrigger_origin();
@@ -458,15 +412,13 @@ function function_782c6850(params) {
                 function_55e20e75(params._id, angles);
             }
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xa5951d66, Offset: 0x1be0
-// Size: 0xe0
-function function_3d37c034(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xa5951d66, Offset: 0x1be0
+    // Size: 0xe0
+    function function_3d37c034(params) {
         a_e_players = getplayers();
         foreach (e_player in a_e_players) {
             if (isdefined(e_player.intermission) || e_player.sessionstate == "<unknown string>" || e_player.sessionstate == "<unknown string>") {
@@ -475,35 +427,29 @@ function function_3d37c034(params) {
             return 1;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xf1152a0b, Offset: 0x1cc8
-// Size: 0x34
-function function_38d6a592(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xf1152a0b, Offset: 0x1cc8
+    // Size: 0x34
+    function function_38d6a592(params) {
         setdvar(#"zombie_cheat", 2);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xd54c5d9d, Offset: 0x1d08
-// Size: 0x34
-function function_26a15f4d(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xd54c5d9d, Offset: 0x1d08
+    // Size: 0x34
+    function function_26a15f4d(params) {
         setdvar(#"zombie_cheat", 0);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xa29b836a, Offset: 0x1d48
-// Size: 0xfc
-function function_1428d95e(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xa29b836a, Offset: 0x1d48
+    // Size: 0xfc
+    function function_1428d95e(params) {
         player = util::gethostplayer();
         forward = anglestoforward(player.angles);
         spawn = player.origin + forward * 10;
@@ -512,49 +458,41 @@ function function_1428d95e(params) {
             zombie forceteleport(spawn, player.angles + (0, 180, 0));
             zombie pathmode("<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xe86ca00a, Offset: 0x1e50
-// Size: 0x24
-function function_63a39134(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xe86ca00a, Offset: 0x1e50
+    // Size: 0x24
+    function function_63a39134(params) {
         return zombie_utility::get_current_zombie_count();
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xe3ab0d7d, Offset: 0x1e80
-// Size: 0x3c
-function function_b8181e0d(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xe3ab0d7d, Offset: 0x1e80
+    // Size: 0x3c
+    function function_b8181e0d(params) {
         player = util::gethostplayer();
         return player.score;
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xf82b7ebf, Offset: 0x1ec8
-// Size: 0x2e
-function function_ff8061ca(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xf82b7ebf, Offset: 0x1ec8
+    // Size: 0x2e
+    function function_ff8061ca(params) {
         if (isdefined(level.power_local_doors_globally)) {
             return 1;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 2, eflags: 0x0
-// Checksum 0x1ccc8328, Offset: 0x1f00
-// Size: 0x4bc
-function derriesezombiespawnnavmeshtest(params, inrat) {
-    /#
+    // Namespace rat/rat
+    // Params 2, eflags: 0x0
+    // Checksum 0x1ccc8328, Offset: 0x1f00
+    // Size: 0x4bc
+    function derriesezombiespawnnavmeshtest(params, inrat) {
         if (!isdefined(inrat)) {
             inrat = 1;
         }
@@ -615,6 +553,6 @@ function derriesezombiespawnnavmeshtest(params, inrat) {
             }
             ratreportcommandresult(params._id, 1);
         }
-    #/
-}
+    }
 
+#/

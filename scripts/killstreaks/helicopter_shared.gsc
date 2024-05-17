@@ -2750,12 +2750,13 @@ function attack_primary(hardpointtype) {
     }
 }
 
-// Namespace helicopter/helicopter_shared
-// Params 0, eflags: 0x0
-// Checksum 0x38914d90, Offset: 0xb170
-// Size: 0x25c
-function debug_print_target() {
-    /#
+/#
+
+    // Namespace helicopter/helicopter_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x38914d90, Offset: 0xb170
+    // Size: 0x25c
+    function debug_print_target() {
         if (isdefined(level.heli_debug) && level.heli_debug == 1) {
             if (isdefined(self.primarytarget) && isdefined(self.primarytarget.threatlevel)) {
                 if (isdefined(self.primarytarget.type) && self.primarytarget.type == "<unknown string>") {
@@ -2781,8 +2782,9 @@ function debug_print_target() {
             thread airsupport::draw_text(primary_msg, (1, 0.6, 0.6), self, (0, 0, 40), frames);
             thread airsupport::draw_text(secondary_msg, (1, 0.6, 0.6), self, (0, 0, 0), frames);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace helicopter/helicopter_shared
 // Params 0, eflags: 0x0

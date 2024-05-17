@@ -898,23 +898,22 @@ function private function_9398e511() {
     return undefined;
 }
 
-// Namespace zombie_brutus_util/ai_brutus_util
-// Params 0, eflags: 0x0
-// Checksum 0xbd2ed08d, Offset: 0x3548
-// Size: 0x44
-function function_60f8374c() {
-    /#
+/#
+
+    // Namespace zombie_brutus_util/ai_brutus_util
+    // Params 0, eflags: 0x0
+    // Checksum 0xbd2ed08d, Offset: 0x3548
+    // Size: 0x44
+    function function_60f8374c() {
         zm_devgui::add_custom_devgui_callback(&function_2e0d129b);
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace zombie_brutus_util/ai_brutus_util
-// Params 1, eflags: 0x0
-// Checksum 0x1d49b56b, Offset: 0x3598
-// Size: 0x72
-function function_2e0d129b(cmd) {
-    /#
+    // Namespace zombie_brutus_util/ai_brutus_util
+    // Params 1, eflags: 0x0
+    // Checksum 0x1d49b56b, Offset: 0x3598
+    // Size: 0x72
+    function function_2e0d129b(cmd) {
         switch (cmd) {
         case #"hash_4d20b9f9a8da7a33":
             level.var_cab8d080 = 1;
@@ -923,6 +922,6 @@ function function_2e0d129b(cmd) {
             }
             break;
         }
-    #/
-}
+    }
 
+#/

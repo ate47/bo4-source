@@ -381,12 +381,13 @@ function function_d5db8d2e(attacker, weapon) {
     self function_2907ce7a();
 }
 
-// Namespace laststand_warzone/laststand_warzone
-// Params 0, eflags: 0x0
-// Checksum 0xfc05ead5, Offset: 0x1ba0
-// Size: 0xbc
-function function_463b3f65() {
-    /#
+/#
+
+    // Namespace laststand_warzone/laststand_warzone
+    // Params 0, eflags: 0x0
+    // Checksum 0xfc05ead5, Offset: 0x1ba0
+    // Size: 0xbc
+    function function_463b3f65() {
         self endon(#"player_revived", #"death");
         while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
@@ -397,15 +398,13 @@ function function_463b3f65() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
 
-// Namespace laststand_warzone/laststand_warzone
-// Params 0, eflags: 0x0
-// Checksum 0x9b6905d1, Offset: 0x1c68
-// Size: 0x1b8
-function function_ce726eb4() {
-    /#
+    // Namespace laststand_warzone/laststand_warzone
+    // Params 0, eflags: 0x0
+    // Checksum 0x9b6905d1, Offset: 0x1c68
+    // Size: 0x1b8
+    function function_ce726eb4() {
         level endon(#"game_ended");
         while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
@@ -424,8 +423,9 @@ function function_ce726eb4() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace laststand_warzone/laststand_warzone
 // Params 1, eflags: 0x0
@@ -1451,17 +1451,19 @@ function function_1c8cab15(var_b4bb7319) {
     return false;
 }
 
-// Namespace laststand_warzone/laststand_warzone
-// Params 0, eflags: 0x0
-// Checksum 0x38631d06, Offset: 0x6120
-// Size: 0x7c
-function auto_revive_on_notify() {
-    /#
+/#
+
+    // Namespace laststand_warzone/laststand_warzone
+    // Params 0, eflags: 0x0
+    // Checksum 0x38631d06, Offset: 0x6120
+    // Size: 0x7c
+    function auto_revive_on_notify() {
         self endon(#"death", #"disconnect", #"player_revived");
         waitresult = self waittill(#"auto_revive");
         self thread revive_success(waitresult.reviver);
-    #/
-}
+    }
+
+#/
 
 // Namespace laststand_warzone/laststand_warzone
 // Params 0, eflags: 0x0

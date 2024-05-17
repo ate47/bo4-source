@@ -1,13 +1,17 @@
 // Atian COD Tools GSC decompiler test
 #namespace blackboard;
 
-// Namespace blackboard/blackboard_vehicle
-// Params 0, eflags: 0x1 linked
-// Checksum 0xe3c30a9d, Offset: 0x68
-// Size: 0x34
-function registervehicleblackboardattributes() {
-    assert(isvehicle(self), "<unknown string>");
-}
+/#
+
+    // Namespace blackboard/blackboard_vehicle
+    // Params 0, eflags: 0x1 linked
+    // Checksum 0xe3c30a9d, Offset: 0x68
+    // Size: 0x34
+    function registervehicleblackboardattributes() {
+        assert(isvehicle(self), "<unknown string>");
+    }
+
+#/
 
 // Namespace blackboard/blackboard_vehicle
 // Params 0, eflags: 0x1 linked

@@ -48,12 +48,13 @@ function function_c51132ba(localclientnum, oldval, newval, bnewent, binitialsnap
     self playrenderoverridebundle(#"hash_429426f01ad84c8b");
 }
 
-// Namespace mansion_jordans/zm_mansion_jordans
-// Params 7, eflags: 0x0
-// Checksum 0xf8c9de44, Offset: 0x3f8
-// Size: 0xba
-function function_bb6fcc6a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    /#
+/#
+
+    // Namespace mansion_jordans/zm_mansion_jordans
+    // Params 7, eflags: 0x0
+    // Checksum 0xf8c9de44, Offset: 0x3f8
+    // Size: 0xba
+    function function_bb6fcc6a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
         if (isdefined(self.var_a0a8631e)) {
             stopfx(localclientnum, self.var_a0a8631e);
             self.var_a0a8631e = undefined;
@@ -61,20 +62,18 @@ function function_bb6fcc6a(localclientnum, oldval, newval, bnewent, binitialsnap
         if (newval) {
             self.var_a0a8631e = util::playfxontag(localclientnum, level._effect[#"pap_projectile"], self, "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace mansion_jordans/zm_mansion_jordans
-// Params 7, eflags: 0x0
-// Checksum 0x89acb245, Offset: 0x4c0
-// Size: 0x98
-function function_230ff6dc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    /#
+    // Namespace mansion_jordans/zm_mansion_jordans
+    // Params 7, eflags: 0x0
+    // Checksum 0x89acb245, Offset: 0x4c0
+    // Size: 0x98
+    function function_230ff6dc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
         self endon(#"death");
         while (true) {
             print3d(self.origin, newval, (1, 1, 0), 1, 0.4, 15);
             wait(0.2);
         }
-    #/
-}
+    }
 
+#/

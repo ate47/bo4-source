@@ -1960,26 +1960,25 @@ function function_175057ad() {
     self stoploopsound();
 }
 
-// Namespace pebble/zm_escape_pebble
-// Params 0, eflags: 0x0
-// Checksum 0xe62db4f1, Offset: 0x9cb8
-// Size: 0x6c
-function function_5bae5249() {
-    /#
+/#
+
+    // Namespace pebble/zm_escape_pebble
+    // Params 0, eflags: 0x0
+    // Checksum 0xe62db4f1, Offset: 0x9cb8
+    // Size: 0x6c
+    function function_5bae5249() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_d71846cd);
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace pebble/zm_escape_pebble
-// Params 1, eflags: 0x0
-// Checksum 0xcd6c4009, Offset: 0x9d30
-// Size: 0xea
-function function_d71846cd(cmd) {
-    /#
+    // Namespace pebble/zm_escape_pebble
+    // Params 1, eflags: 0x0
+    // Checksum 0xcd6c4009, Offset: 0x9d30
+    // Size: 0xea
+    function function_d71846cd(cmd) {
         switch (cmd) {
         case #"hash_8a61bbec91098c":
             var_64de1b5a = struct::get_array("<unknown string>");
@@ -1988,29 +1987,25 @@ function function_d71846cd(cmd) {
             }
             break;
         }
-    #/
-}
+    }
 
-// Namespace pebble/zm_escape_pebble
-// Params 0, eflags: 0x0
-// Checksum 0xb69b9c7d, Offset: 0x9e28
-// Size: 0x6c
-function function_6d6b192() {
-    /#
+    // Namespace pebble/zm_escape_pebble
+    // Params 0, eflags: 0x0
+    // Checksum 0xb69b9c7d, Offset: 0x9e28
+    // Size: 0x6c
+    function function_6d6b192() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_1bab20ac);
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace pebble/zm_escape_pebble
-// Params 1, eflags: 0x0
-// Checksum 0x12ede818, Offset: 0x9ea0
-// Size: 0x6a
-function function_1bab20ac(cmd) {
-    /#
+    // Namespace pebble/zm_escape_pebble
+    // Params 1, eflags: 0x0
+    // Checksum 0x12ede818, Offset: 0x9ea0
+    // Size: 0x6a
+    function function_1bab20ac(cmd) {
         switch (cmd) {
         case #"hash_3a594b9ac3dcfcb3":
             if (!isdefined(level.var_a0ddc1d0)) {
@@ -2020,6 +2015,6 @@ function function_1bab20ac(cmd) {
             }
             break;
         }
-    #/
-}
+    }
 
+#/

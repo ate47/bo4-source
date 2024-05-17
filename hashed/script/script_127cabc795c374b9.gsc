@@ -161,27 +161,26 @@ function function_1deb2b38(var_b721e8a9) {
     }
 }
 
-// Namespace namespace_87f097c4/namespace_9d765bae
-// Params 0, eflags: 0x0
-// Checksum 0x8628f450, Offset: 0xad8
-// Size: 0x84
-function function_4ed420e3() {
-    /#
+/#
+
+    // Namespace namespace_87f097c4/namespace_9d765bae
+    // Params 0, eflags: 0x0
+    // Checksum 0x8628f450, Offset: 0xad8
+    // Size: 0x84
+    function function_4ed420e3() {
         while (!canadddebugcommand()) {
             waitframe(1);
         }
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         level thread function_7eabf705();
-    #/
-}
+    }
 
-// Namespace namespace_87f097c4/namespace_9d765bae
-// Params 0, eflags: 0x0
-// Checksum 0x4304960a, Offset: 0xb68
-// Size: 0x10e
-function function_7eabf705() {
-    /#
+    // Namespace namespace_87f097c4/namespace_9d765bae
+    // Params 0, eflags: 0x0
+    // Checksum 0x4304960a, Offset: 0xb68
+    // Size: 0x10e
+    function function_7eabf705() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         level endon(#"game_ended");
@@ -196,6 +195,6 @@ function function_7eabf705() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

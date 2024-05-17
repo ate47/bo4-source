@@ -942,12 +942,13 @@ function private function_8030d0d2(planner, params) {
     return 3;
 }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 0, eflags: 0x0
-// Checksum 0xda054daa, Offset: 0x4888
-// Size: 0x11e
-function debug_setup() {
-    /#
+/#
+
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 0, eflags: 0x0
+    // Checksum 0xda054daa, Offset: 0x4888
+    // Size: 0x11e
+    function debug_setup() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -963,41 +964,35 @@ function debug_setup() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 0, eflags: 0x0
-// Checksum 0x6611f0f4, Offset: 0x49b0
-// Size: 0x54
-function function_8f74831a() {
-    /#
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 0, eflags: 0x0
+    // Checksum 0x6611f0f4, Offset: 0x49b0
+    // Size: 0x54
+    function function_8f74831a() {
         if (!isdefined(level.var_257aa6d4)) {
             level.var_257aa6d4 = function_9259be56();
         }
         function_fafff2f(level.var_257aa6d4);
-    #/
-}
+    }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 0, eflags: 0x0
-// Checksum 0x9ebcc75c, Offset: 0x4a10
-// Size: 0x54
-function function_bd34d468() {
-    /#
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 0, eflags: 0x0
+    // Checksum 0x9ebcc75c, Offset: 0x4a10
+    // Size: 0x54
+    function function_bd34d468() {
         if (!isdefined(level.var_b1090a59)) {
             level.var_b1090a59 = function_6e494c0e();
         }
         function_fafff2f(level.var_b1090a59);
-    #/
-}
+    }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 0, eflags: 0x0
-// Checksum 0x12c2454b, Offset: 0x4a70
-// Size: 0x18e
-function function_9259be56() {
-    /#
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 0, eflags: 0x0
+    // Checksum 0x12c2454b, Offset: 0x4a70
+    // Size: 0x18e
+    function function_9259be56() {
         obbs = [];
         var_521da80d = array("<unknown string>", "<unknown string>", "<unknown string>");
         foreach (var_b849a5e7 in var_521da80d) {
@@ -1009,15 +1004,13 @@ function function_9259be56() {
             }
         }
         return obbs;
-    #/
-}
+    }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 0, eflags: 0x0
-// Checksum 0x4aa48d7f, Offset: 0x4c08
-// Size: 0x132
-function function_6e494c0e() {
-    /#
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 0, eflags: 0x0
+    // Checksum 0x4aa48d7f, Offset: 0x4c08
+    // Size: 0x132
+    function function_6e494c0e() {
         obbs = [];
         foreach (wallbuy in level._spawned_wallbuys) {
             obb = function_3ad5b4e7(wallbuy.trigger_stub);
@@ -1029,38 +1022,32 @@ function function_6e494c0e() {
             obbs[obbs.size] = obb;
         }
         return obbs;
-    #/
-}
+    }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 1, eflags: 0x0
-// Checksum 0xde52a0e5, Offset: 0x4d48
-// Size: 0xa4
-function function_fc9f37f4(trigger) {
-    /#
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 1, eflags: 0x0
+    // Checksum 0xde52a0e5, Offset: 0x4d48
+    // Size: 0xa4
+    function function_fc9f37f4(trigger) {
         heightoffset = (0, 0, 72 * -1 / 2);
         var_e790dc87 = (15.1875, 15.1875, 72 / 2);
         return ai::function_470c0597(trigger.origin + heightoffset, trigger.maxs + var_e790dc87, trigger.angles);
-    #/
-}
+    }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 1, eflags: 0x0
-// Checksum 0x392eaa59, Offset: 0x4df8
-// Size: 0x7c
-function function_3ad5b4e7(triggerstub) {
-    /#
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 1, eflags: 0x0
+    // Checksum 0x392eaa59, Offset: 0x4df8
+    // Size: 0x7c
+    function function_3ad5b4e7(triggerstub) {
         maxs = (triggerstub.script_width / 2, triggerstub.script_length / 2, triggerstub.script_height / 2);
         return ai::function_470c0597(triggerstub.origin, maxs, triggerstub.angles);
-    #/
-}
+    }
 
-// Namespace namespace_ed876ec/namespace_5bb8bcd5
-// Params 1, eflags: 0x0
-// Checksum 0xca2dec0a, Offset: 0x4e80
-// Size: 0x180
-function function_fafff2f(obbs) {
-    /#
+    // Namespace namespace_ed876ec/namespace_5bb8bcd5
+    // Params 1, eflags: 0x0
+    // Checksum 0xca2dec0a, Offset: 0x4e80
+    // Size: 0x180
+    function function_fafff2f(obbs) {
         foreach (obb in obbs) {
             box(obb.center, obb.halfsize * -1, obb.halfsize, obb.angles[1], (0, 1, 0));
             if (obb.points.size > 0) {
@@ -1071,6 +1058,6 @@ function function_fafff2f(obbs) {
             }
             sphere(obb.center, 20, (1, 0, 0));
         }
-    #/
-}
+    }
 
+#/

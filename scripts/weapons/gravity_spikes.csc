@@ -27,18 +27,20 @@ function __init__() {
     #/
 }
 
-// Namespace gravity_spikes/gravity_spikes
-// Params 0, eflags: 0x0
-// Checksum 0xe0cbf024, Offset: 0x1c0
-// Size: 0x54
-function updatedvars() {
-    /#
+/#
+
+    // Namespace gravity_spikes/gravity_spikes
+    // Params 0, eflags: 0x0
+    // Checksum 0xe0cbf024, Offset: 0x1c0
+    // Size: 0x54
+    function updatedvars() {
         while (true) {
             level.dirt_enable_gravity_spikes = getdvarint(#"scr_dirt_enable_gravity_spikes", level.dirt_enable_gravity_spikes);
             wait(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace gravity_spikes/gravity_spikes
 // Params 0, eflags: 0x0

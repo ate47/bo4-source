@@ -532,7 +532,7 @@ function private _handlegibannihilate(localclientnum) {
 function private _handlegibhead(localclientnum) {
     entity = self;
     entity endon(#"death");
-    entity waittillmatch({#notetrack:"gib = "head""}, #"_anim_notify_");
+    entity waittillmatch({#notetrack:"gib = \"head\""}, #"_anim_notify_");
     cliententgibhead(localclientnum, entity);
 }
 
@@ -543,7 +543,7 @@ function private _handlegibhead(localclientnum) {
 function private _handlegibrightarm(localclientnum) {
     entity = self;
     entity endon(#"death");
-    entity waittillmatch({#notetrack:"gib = "arm_right""}, #"_anim_notify_");
+    entity waittillmatch({#notetrack:"gib = \"arm_right\""}, #"_anim_notify_");
     cliententgibrightarm(localclientnum, entity);
 }
 
@@ -554,7 +554,7 @@ function private _handlegibrightarm(localclientnum) {
 function private _handlegibleftarm(localclientnum) {
     entity = self;
     entity endon(#"death");
-    entity waittillmatch({#notetrack:"gib = "arm_left""}, #"_anim_notify_");
+    entity waittillmatch({#notetrack:"gib = \"arm_left\""}, #"_anim_notify_");
     cliententgibleftarm(localclientnum, entity);
 }
 
@@ -565,7 +565,7 @@ function private _handlegibleftarm(localclientnum) {
 function private _handlegibrightleg(localclientnum) {
     entity = self;
     entity endon(#"death");
-    entity waittillmatch({#notetrack:"gib = "leg_right""}, #"_anim_notify_");
+    entity waittillmatch({#notetrack:"gib = \"leg_right\""}, #"_anim_notify_");
     cliententgibrightleg(localclientnum, entity);
 }
 
@@ -576,7 +576,7 @@ function private _handlegibrightleg(localclientnum) {
 function private _handlegibleftleg(localclientnum) {
     entity = self;
     entity endon(#"death");
-    entity waittillmatch({#notetrack:"gib = "leg_left""}, #"_anim_notify_");
+    entity waittillmatch({#notetrack:"gib = \"leg_left\""}, #"_anim_notify_");
     cliententgibleftleg(localclientnum, entity);
 }
 

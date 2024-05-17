@@ -108,12 +108,13 @@ function event_handler[missile_fire] function_a3d258b6(eventstruct) {
     }
 }
 
-// Namespace heatseekingmissile/heatseekingmissile
-// Params 1, eflags: 0x0
-// Checksum 0x22e540b7, Offset: 0x6c8
-// Size: 0x252
-function debug_missile(missile) {
-    /#
+/#
+
+    // Namespace heatseekingmissile/heatseekingmissile
+    // Params 1, eflags: 0x0
+    // Checksum 0x22e540b7, Offset: 0x6c8
+    // Size: 0x252
+    function debug_missile(missile) {
         level notify(#"debug_missile");
         level endon(#"debug_missile");
         level.debug_missile_dots = [];
@@ -140,8 +141,9 @@ function debug_missile(missile) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace heatseekingmissile/heatseekingmissile
 // Params 1, eflags: 0x1 linked
@@ -379,24 +381,23 @@ function targetwithinrangeofplayspace(target) {
     return true;
 }
 
-// Namespace heatseekingmissile/heatseekingmissile
-// Params 0, eflags: 0x0
-// Checksum 0xb3d3f071, Offset: 0x15f8
-// Size: 0x2c
-function destroylockoncanceledmessage() {
-    /#
+/#
+
+    // Namespace heatseekingmissile/heatseekingmissile
+    // Params 0, eflags: 0x0
+    // Checksum 0xb3d3f071, Offset: 0x15f8
+    // Size: 0x2c
+    function destroylockoncanceledmessage() {
         if (isdefined(self.lockoncanceledmessage)) {
             self.lockoncanceledmessage destroy();
         }
-    #/
-}
+    }
 
-// Namespace heatseekingmissile/heatseekingmissile
-// Params 0, eflags: 0x0
-// Checksum 0xe5279e87, Offset: 0x1630
-// Size: 0x144
-function displaylockoncanceledmessage() {
-    /#
+    // Namespace heatseekingmissile/heatseekingmissile
+    // Params 0, eflags: 0x0
+    // Checksum 0xe5279e87, Offset: 0x1630
+    // Size: 0x144
+    function displaylockoncanceledmessage() {
         if (isdefined(self.lockoncanceledmessage)) {
             return;
         }
@@ -413,8 +414,9 @@ function displaylockoncanceledmessage() {
         self.lockoncanceledmessage.archived = 0;
         self.lockoncanceledmessage.alpha = 1;
         self.lockoncanceledmessage settext(#"hash_31537402e7b1c369");
-    #/
-}
+    }
+
+#/
 
 // Namespace heatseekingmissile/heatseekingmissile
 // Params 1, eflags: 0x5 linked
@@ -1288,17 +1290,18 @@ function missiletarget_deployflares(origin, angles) {
     return flareobject;
 }
 
-// Namespace heatseekingmissile/heatseekingmissile
-// Params 1, eflags: 0x0
-// Checksum 0x225e89b5, Offset: 0x46e0
-// Size: 0x5e
-function debug_tracker(target) {
-    /#
+/#
+
+    // Namespace heatseekingmissile/heatseekingmissile
+    // Params 1, eflags: 0x0
+    // Checksum 0x225e89b5, Offset: 0x46e0
+    // Size: 0x5e
+    function debug_tracker(target) {
         target endon(#"death");
         while (true) {
             dev::debug_sphere(target.origin, 10, (1, 0, 0), 1, 1);
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

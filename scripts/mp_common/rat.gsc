@@ -9,37 +9,34 @@
 
 #namespace rat;
 
-// Namespace rat/rat
-// Params 0, eflags: 0x2
-// Checksum 0x4631c421, Offset: 0xa0
-// Size: 0x3c
-function autoexec __init__system__() {
-    /#
-        system::register(#"rat", &__init__, undefined, undefined);
-    #/
-}
+/#
 
-// Namespace rat/rat
-// Params 0, eflags: 0x0
-// Checksum 0xeacff6be, Offset: 0xe8
-// Size: 0xc4
-function __init__() {
-    /#
+    // Namespace rat/rat
+    // Params 0, eflags: 0x2
+    // Checksum 0x4631c421, Offset: 0xa0
+    // Size: 0x3c
+    function autoexec __init__system__() {
+        system::register(#"rat", &__init__, undefined, undefined);
+    }
+
+    // Namespace rat/rat
+    // Params 0, eflags: 0x0
+    // Checksum 0xeacff6be, Offset: 0xe8
+    // Size: 0xc4
+    function __init__() {
         init();
         level.rat.common.gethostplayer = &util::gethostplayer;
         level.rat.deathcount = 0;
         addratscriptcmd("<unknown string>", &rscaddenemy);
         addratscriptcmd("<unknown string>", &function_50634409);
         setdvar(#"rat_death_count", 0);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xa1a21985, Offset: 0x1b8
-// Size: 0x11e
-function function_50634409(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xa1a21985, Offset: 0x1b8
+    // Size: 0x11e
+    function function_50634409(params) {
         player = util::gethostplayerforbots();
         setdvar(#"bot_allowmovement", 0);
         setdvar(#"bot_pressattackbtn", 0);
@@ -48,15 +45,13 @@ function function_50634409(params) {
         setdvar(#"bot_allowgrenades", 0);
         team = bot::devgui_relative_team(player, "<unknown string>");
         bot = level bot::add_bot(team);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0xcae1a9f7, Offset: 0x2e0
-// Size: 0x254
-function rscaddenemy(params) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0xcae1a9f7, Offset: 0x2e0
+    // Size: 0x254
+    function rscaddenemy(params) {
         player = [[ level.rat.common.gethostplayer ]]();
         team = #"axis";
         if (isdefined(player.pers[#"team"])) {
@@ -78,15 +73,13 @@ function rscaddenemy(params) {
             bot setplayerangles(angles);
         }
         ratreportcommandresult(params._id, 1);
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 1, eflags: 0x0
-// Checksum 0x436ab6ba, Offset: 0x540
-// Size: 0xf4
-function testenemy(team) {
-    /#
+    // Namespace rat/rat
+    // Params 1, eflags: 0x0
+    // Checksum 0x436ab6ba, Offset: 0x540
+    // Size: 0xf4
+    function testenemy(team) {
         self endon(#"disconnect");
         while (!isdefined(self.pers[#"team"])) {
             waitframe(1);
@@ -96,18 +89,16 @@ function testenemy(team) {
             self notify(#"menuresponse", params);
             self callback::callback(#"menu_response", params);
         }
-    #/
-}
+    }
 
-// Namespace rat/rat
-// Params 0, eflags: 0x0
-// Checksum 0xf387974b, Offset: 0x640
-// Size: 0x5c
-function deathcounter() {
-    /#
+    // Namespace rat/rat
+    // Params 0, eflags: 0x0
+    // Checksum 0xf387974b, Offset: 0x640
+    // Size: 0x5c
+    function deathcounter() {
         self waittill(#"death");
         level.rat.deathcount++;
         setdvar(#"rat_death_count", level.rat.deathcount);
-    #/
-}
+    }
 
+#/

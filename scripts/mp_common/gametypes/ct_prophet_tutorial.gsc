@@ -1986,12 +1986,13 @@ function function_222141a5(var_58d9f1c6 = 1) {
     self ct_bots::function_fd2d220e();
 }
 
-// Namespace ct_prophet_tutorial/ct_prophet_tutorial
-// Params 0, eflags: 0x0
-// Checksum 0xfa3ee61a, Offset: 0x9ab0
-// Size: 0x370
-function function_324c6d8c() {
-    /#
+/#
+
+    // Namespace ct_prophet_tutorial/ct_prophet_tutorial
+    // Params 0, eflags: 0x0
+    // Checksum 0xfa3ee61a, Offset: 0x9ab0
+    // Size: 0x370
+    function function_324c6d8c() {
         level endon(#"combattraining_logic_finished");
         sessionmode = currentsessionmode();
         setdvar(#"hash_42113ca5668d7812", "vox_tvoi_tutor_prop_seeker_enemy_dead_0");
@@ -2042,6 +2043,6 @@ function function_324c6d8c() {
             }
             setdvar(#"hash_42113ca5668d7812", "vox_tvoi_tutor_prop_seeker_enemy_dead_0");
         }
-    #/
-}
+    }
 
+#/

@@ -394,12 +394,13 @@ function function_924f922d(localclientnum, oldval, newval, bnewent, binitialsnap
     }
 }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 2, eflags: 0x0
-// Checksum 0x1d90d741, Offset: 0x2768
-// Size: 0x1d6
-function function_3e31854(e_player, v_color) {
-    /#
+/#
+
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 2, eflags: 0x0
+    // Checksum 0x1d90d741, Offset: 0x2768
+    // Size: 0x1d6
+    function function_3e31854(e_player, v_color) {
         if (!isdefined(v_color)) {
             v_color = (0, 1, 0);
         }
@@ -419,8 +420,9 @@ function function_3e31854(e_player, v_color) {
             line(v_lower, v_lower + v_edge, v_color);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mansion_pap/zm_mansion_pap_quest
 // Params 7, eflags: 0x1 linked
@@ -551,26 +553,25 @@ function function_6812bd74(localclientnum, oldval, newval, bnewent, binitialsnap
     }
 }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 2, eflags: 0x0
-// Checksum 0xf9182a33, Offset: 0x3178
-// Size: 0xd6
-function function_466c2fa3(str_fx, newval) {
-    /#
+/#
+
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 2, eflags: 0x0
+    // Checksum 0xf9182a33, Offset: 0x3178
+    // Size: 0xd6
+    function function_466c2fa3(str_fx, newval) {
         str_hint = function_f415205b(newval);
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0) && isdefined(self)) {
             debug2dtext((100, 800, 0), "<unknown string>" + newval + "<unknown string>" + str_hint + "<unknown string>" + function_9e72a96(str_fx), (1, 1, 1));
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0x5b0bd20a, Offset: 0x3258
-// Size: 0x1ea
-function function_5545acc1(newval) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0x5b0bd20a, Offset: 0x3258
+    // Size: 0x1ea
+    function function_5545acc1(newval) {
         if (!getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             return;
         }
@@ -592,15 +593,13 @@ function function_5545acc1(newval) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0x5cf48fc, Offset: 0x3450
-// Size: 0x270
-function function_f415205b(newval) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0x5cf48fc, Offset: 0x3450
+    // Size: 0x270
+    function function_f415205b(newval) {
         switch (newval) {
         case 1:
             str_hint = "<unknown string>";
@@ -658,30 +657,26 @@ function function_f415205b(newval) {
             break;
         }
         return str_hint;
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 2, eflags: 0x0
-// Checksum 0xa7a63a6d, Offset: 0x36c8
-// Size: 0x86
-function function_e0caca4e(org, ang) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 2, eflags: 0x0
+    // Checksum 0xa7a63a6d, Offset: 0x36c8
+    // Size: 0x86
+    function function_e0caca4e(org, ang) {
         self notify("<unknown string>");
         self endon("<unknown string>");
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0) && isdefined(self)) {
             debug_arrow(org, ang, (0, 1, 0));
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 3, eflags: 0x0
-// Checksum 0xc35c5a97, Offset: 0x3758
-// Size: 0x29c
-function debug_arrow(org, ang, opcolor) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 3, eflags: 0x0
+    // Checksum 0xc35c5a97, Offset: 0x3758
+    // Size: 0x29c
+    function debug_arrow(org, ang, opcolor) {
         forward = anglestoforward(ang);
         forwardfar = vectorscale(forward, 25);
         forwardclose = vectorscale(forward, 25 * 0.8);
@@ -704,6 +699,6 @@ function debug_arrow(org, ang, opcolor) {
         line(org + forwardfar, org + forwardclose + leftdraw, red, 0.9);
         line(org, org + right, blue, 0.9);
         line(org, org + up, green, 0.9);
-    #/
-}
+    }
 
+#/

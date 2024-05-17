@@ -104,12 +104,13 @@ function stop(n_blend = 0.2) {
     }
 }
 
-// Namespace animation/animation_shared
-// Params 2, eflags: 0x0
-// Checksum 0x5cc2b19e, Offset: 0x870
-// Size: 0x204
-function debug_print(str_animation, str_msg) {
-    /#
+/#
+
+    // Namespace animation/animation_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0x5cc2b19e, Offset: 0x870
+    // Size: 0x204
+    function debug_print(str_animation, str_msg) {
         str_dvar = getdvarstring(#"debug_anim_shared", "<unknown string>");
         if (str_dvar != "<unknown string>") {
             if (!isstring(str_animation)) {
@@ -127,8 +128,9 @@ function debug_print(str_animation, str_msg) {
                 printtoprightln(str_animation + "<unknown string>" + string::rjust(str_msg, 10) + "<unknown string>" + string::rjust("<unknown string>" + self getentitynumber(), 4) + "<unknown string>" + string::rjust("<unknown string>" + gettime(), 6) + "<unknown string>", (1, 1, 0), -1);
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace animation/animation_shared
 // Params 12, eflags: 0x1 linked
@@ -385,20 +387,22 @@ function _reach(s_tracker, animation, v_origin_or_ent, v_angles_or_tag, b_disabl
     self notify(#"reach_done");
 }
 
-// Namespace animation/animation_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe2280cf2, Offset: 0x1c20
-// Size: 0xb6
-function debug_anim_reach() {
-    /#
+/#
+
+    // Namespace animation/animation_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe2280cf2, Offset: 0x1c20
+    // Size: 0xb6
+    function debug_anim_reach() {
         self endon(#"death", #"goal", #"new_anim_reach", #"new_scripted_anim", #"stop_scripted_anim");
         while (true) {
             level flagsys::wait_till("<unknown string>");
             print3d(self.origin, "<unknown string>", (1, 0, 0), 1, 1, 1);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace animation/animation_shared
 // Params 7, eflags: 0x1 linked

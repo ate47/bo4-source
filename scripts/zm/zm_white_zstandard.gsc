@@ -474,12 +474,13 @@ function function_466fb0ff(str_last_defend) {
     }
 }
 
-// Namespace zm_white_zstandard/zm_white_zstandard
-// Params 0, eflags: 0x0
-// Checksum 0xd08ba7a7, Offset: 0x30a0
-// Size: 0x112
-function function_1dcc39ae() {
-    /#
+/#
+
+    // Namespace zm_white_zstandard/zm_white_zstandard
+    // Params 0, eflags: 0x0
+    // Checksum 0xd08ba7a7, Offset: 0x30a0
+    // Size: 0x112
+    function function_1dcc39ae() {
         wait(5);
         str_next_defend = zm_utility::function_40ef77ab("zblueprint_zhield_white");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
@@ -492,8 +493,9 @@ function function_1dcc39ae() {
             str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
             var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_white_zstandard/zm_white_zstandard
 // Params 0, eflags: 0x1 linked

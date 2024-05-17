@@ -842,12 +842,13 @@ function function_fcbb2307() {
     level notify(#"hash_9a7b18e2622af5d");
 }
 
-// Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 0, eflags: 0x4
-// Checksum 0x480a6619, Offset: 0x3120
-// Size: 0x182
-function private function_f5a342bc() {
-    /#
+/#
+
+    // Namespace zm_orange_lighthouse/zm_orange_lighthouse
+    // Params 0, eflags: 0x4
+    // Checksum 0x480a6619, Offset: 0x3120
+    // Size: 0x182
+    function private function_f5a342bc() {
         if (!isdefined(level.var_4b3d7dc1)) {
             level.var_4b3d7dc1 = [];
         } else if (!isarray(level.var_4b3d7dc1)) {
@@ -863,15 +864,13 @@ function private function_f5a342bc() {
         level.var_4b3d7dc1[7] = "<unknown string>";
         level.var_4b3d7dc1[8] = "<unknown string>";
         level.var_4b3d7dc1[9] = "<unknown string>";
-    #/
-}
+    }
 
-// Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 0, eflags: 0x4
-// Checksum 0xf72be9b2, Offset: 0x32b0
-// Size: 0x1e0
-function private devgui() {
-    /#
+    // Namespace zm_orange_lighthouse/zm_orange_lighthouse
+    // Params 0, eflags: 0x4
+    // Checksum 0xf72be9b2, Offset: 0x32b0
+    // Size: 0x1e0
+    function private devgui() {
         level.var_10f86d56 = zm_hms_util::function_2719d4c0("<unknown string>", "<unknown string>", "<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -892,20 +891,18 @@ function private devgui() {
             }
             setdvar(#"zm_orange_lighthouse_cmd", "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace zm_orange_lighthouse/zm_orange_lighthouse
-// Params 0, eflags: 0x0
-// Checksum 0x85ef2b21, Offset: 0x3498
-// Size: 0x5e
-function function_f6d23861() {
-    /#
+    // Namespace zm_orange_lighthouse/zm_orange_lighthouse
+    // Params 0, eflags: 0x0
+    // Checksum 0x85ef2b21, Offset: 0x3498
+    // Size: 0x5e
+    function function_f6d23861() {
         self endon(#"death");
         while (true) {
             sphere(self.origin, 100, (1, 0, 0), 0.6, 0, 8, 1);
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

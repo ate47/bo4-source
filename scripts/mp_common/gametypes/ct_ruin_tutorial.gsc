@@ -322,7 +322,7 @@ function function_bc194310() {
     waitframe(1);
     s_loc = struct::get("s_grapple_hook_dist_fail", "targetname");
     level thread ct_utils::function_c444a920(s_loc, 35);
-    level.var_464c2ccd = 1;
+    level.tag_strap_br_07 = 1;
     level thread function_cc2f8b4();
     level thread ct_vo::function_14b08e49(array(#"vox_tvoi_tutor_ruin_slide_3_nag"), "grapple_fail_complete");
     level thread ct_utils::function_821edb7e("grapple_fail_complete");
@@ -377,7 +377,7 @@ function function_bc194310() {
     ct_utils::function_c2a10fc();
     level notify(#"grapple_fail_complete");
     wait(0.4);
-    level.var_464c2ccd = 0;
+    level.tag_strap_br_07 = 0;
     wait(0.1);
 }
 
@@ -1690,7 +1690,7 @@ function function_cd74cce0(params) {
 // Checksum 0xde373f6, Offset: 0x8ce0
 // Size: 0x7e
 function function_228e8cd6(weapon) {
-    if (isdefined(level.var_464c2ccd) && level.var_464c2ccd) {
+    if (isdefined(level.tag_strap_br_07) && level.tag_strap_br_07) {
         self function_63aa235();
     }
     if (isdefined(level.var_9863df4b)) {
@@ -1728,12 +1728,13 @@ function function_17ab2327() {
     self show();
 }
 
-// Namespace ct_ruin_tutorial/ct_ruin_tutorial
-// Params 0, eflags: 0x0
-// Checksum 0x9d120f4e, Offset: 0x8ef0
-// Size: 0x228
-function function_421135df() {
-    /#
+/#
+
+    // Namespace ct_ruin_tutorial/ct_ruin_tutorial
+    // Params 0, eflags: 0x0
+    // Checksum 0x9d120f4e, Offset: 0x8ef0
+    // Size: 0x228
+    function function_421135df() {
         level endon(#"combattraining_logic_finished");
         sessionmode = currentsessionmode();
         setdvar(#"hash_6f59f2ade883b8e2", "stop_killstreak_collision");
@@ -1763,6 +1764,6 @@ function function_421135df() {
             }
             setdvar(#"hash_6f59f2ade883b8e2", "stop_killstreak_collision");
         }
-    #/
-}
+    }
 
+#/

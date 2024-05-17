@@ -83,13 +83,17 @@ function private __init__() {
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_706fe37c04dae8e1", &function_6318bedf);
 }
 
-// Namespace zm_ai_skeleton/zm_ai_skeleton
-// Params 1, eflags: 0x0
-// Checksum 0xefadb906, Offset: 0x6d0
-// Size: 0x34
-function function_64ab9843(params) {
-    assert(0, "<unknown string>");
-}
+/#
+
+    // Namespace zm_ai_skeleton/zm_ai_skeleton
+    // Params 1, eflags: 0x0
+    // Checksum 0xefadb906, Offset: 0x6d0
+    // Size: 0x34
+    function function_64ab9843(params) {
+        assert(0, "<unknown string>");
+    }
+
+#/
 
 // Namespace zm_ai_skeleton/zm_ai_skeleton
 // Params 0, eflags: 0x5 linked
@@ -525,28 +529,27 @@ function function_946c1972(eventstruct) {
     }
 }
 
-// Namespace zm_ai_skeleton/zm_ai_skeleton
-// Params 0, eflags: 0x4
-// Checksum 0x57e95e01, Offset: 0x22c8
-// Size: 0xb4
-function private function_6d3ecc88() {
-    /#
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-    #/
-}
+/#
 
-// Namespace zm_ai_skeleton/zm_ai_skeleton
-// Params 1, eflags: 0x4
-// Checksum 0x7c3b401, Offset: 0x2388
-// Size: 0x18a
-function private function_6ae10cf1(cmd) {
-    /#
+    // Namespace zm_ai_skeleton/zm_ai_skeleton
+    // Params 0, eflags: 0x4
+    // Checksum 0x57e95e01, Offset: 0x22c8
+    // Size: 0xb4
+    function private function_6d3ecc88() {
+        adddebugcommand("<unknown string>");
+        adddebugcommand("<unknown string>");
+        adddebugcommand("<unknown string>");
+        adddebugcommand("<unknown string>");
+        adddebugcommand("<unknown string>");
+        adddebugcommand("<unknown string>");
+        adddebugcommand("<unknown string>");
+    }
+
+    // Namespace zm_ai_skeleton/zm_ai_skeleton
+    // Params 1, eflags: 0x4
+    // Checksum 0x7c3b401, Offset: 0x2388
+    // Size: 0x18a
+    function private function_6ae10cf1(cmd) {
         switch (cmd) {
         case #"skeleton_spawn":
             zm_devgui::spawn_archetype("<unknown string>");
@@ -572,19 +575,17 @@ function private function_6ae10cf1(cmd) {
         default:
             return 0;
         }
-    #/
-}
+    }
 
-// Namespace zm_ai_skeleton/zm_ai_skeleton
-// Params 1, eflags: 0x4
-// Checksum 0x3068cf65, Offset: 0x2520
-// Size: 0xb8
-function private function_2d69eef6(speed) {
-    /#
+    // Namespace zm_ai_skeleton/zm_ai_skeleton
+    // Params 1, eflags: 0x4
+    // Checksum 0x3068cf65, Offset: 0x2520
+    // Size: 0xb8
+    function private function_2d69eef6(speed) {
         skeletons = getaiarchetypearray(#"skeleton");
         foreach (skeleton in skeletons) {
             skeleton zombie_utility::set_zombie_run_cycle(speed);
         }
-    #/
-}
+    }
 
+#/

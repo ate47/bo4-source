@@ -256,17 +256,19 @@ function function_1b0af429() {
     self botclassadditem(0, var_1bb1502d[#"scorestreak3"]);
 }
 
-// Namespace bot/mp_bot
-// Params 2, eflags: 0x0
-// Checksum 0xdbc7049e, Offset: 0x19e8
-// Size: 0x4c
-function function_165d8cc2(var_2faf31e0, loadoutitem) {
-    /#
+/#
+
+    // Namespace bot/mp_bot
+    // Params 2, eflags: 0x0
+    // Checksum 0xdbc7049e, Offset: 0x19e8
+    // Size: 0x4c
+    function function_165d8cc2(var_2faf31e0, loadoutitem) {
         if (var_2faf31e0 == "planemortar" || var_2faf31e0 == "secondaryAttachment") {
             bot_action::function_36052a7f(loadoutitem);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace bot/mp_bot
 // Params 0, eflags: 0x0

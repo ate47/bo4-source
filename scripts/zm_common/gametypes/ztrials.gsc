@@ -198,12 +198,13 @@ function private function_b8839207(e_door, n_cost) {
     }
 }
 
-// Namespace ztrials/ztrials
-// Params 0, eflags: 0x4
-// Checksum 0x15fb6caf, Offset: 0xc00
-// Size: 0x106
-function private complete_current_round() {
-    /#
+/#
+
+    // Namespace ztrials/ztrials
+    // Params 0, eflags: 0x4
+    // Checksum 0x15fb6caf, Offset: 0xc00
+    // Size: 0x106
+    function private complete_current_round() {
         level.devcheater = 1;
         level.zombie_total = 0;
         level notify(#"kill_round");
@@ -217,15 +218,13 @@ function private complete_current_round() {
                 zombies[i] dodamage(zombies[i].health + 666, zombies[i].origin);
             }
         }
-    #/
-}
+    }
 
-// Namespace ztrials/ztrials
-// Params 1, eflags: 0x4
-// Checksum 0xdf5fd088, Offset: 0xd10
-// Size: 0x198
-function private function_1201b5da(medal) {
-    /#
+    // Namespace ztrials/ztrials
+    // Params 1, eflags: 0x4
+    // Checksum 0xdf5fd088, Offset: 0xd10
+    // Size: 0x198
+    function private function_1201b5da(medal) {
         round = undefined;
         switch (medal) {
         case #"gold":
@@ -252,15 +251,13 @@ function private function_1201b5da(medal) {
         }
         assert(0);
         return undefined;
-    #/
-}
+    }
 
-// Namespace ztrials/ztrials
-// Params 0, eflags: 0x4
-// Checksum 0x339880fe, Offset: 0xeb0
-// Size: 0x85e
-function private function_9a6b2309() {
-    /#
+    // Namespace ztrials/ztrials
+    // Params 0, eflags: 0x4
+    // Checksum 0x339880fe, Offset: 0xeb0
+    // Size: 0x85e
+    function private function_9a6b2309() {
         assert(isdefined(level.var_6d87ac05));
         foreach (round_info in level.var_6d87ac05.rounds) {
             adddebugcommand("<unknown string>" + round_info.round + "<unknown string>" + function_9e72a96(round_info.name) + "<unknown string>" + round_info.round + "<unknown string>" + round_info.round + "<unknown string>");
@@ -339,6 +336,6 @@ function private function_9a6b2309() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

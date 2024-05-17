@@ -401,12 +401,13 @@ function getunownedflagneareststart(team, excludeflag) {
     return best;
 }
 
-// Namespace dom/dom
-// Params 0, eflags: 0x0
-// Checksum 0x51bd0fec, Offset: 0x2628
-// Size: 0x274
-function domdebug() {
-    /#
+/#
+
+    // Namespace dom/dom
+    // Params 0, eflags: 0x0
+    // Checksum 0x51bd0fec, Offset: 0x2628
+    // Size: 0x274
+    function domdebug() {
         while (true) {
             if (getdvarint(#"scr_domdebug", 0) != 1) {
                 wait(2);
@@ -433,8 +434,9 @@ function domdebug() {
                 waitframe(1);
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace dom/dom
 // Params 1, eflags: 0x0
@@ -1522,7 +1524,7 @@ function flagsetup() {
             break;
         }
         if (isdefined(closestdesc.flag)) {
-            globallogic_utils::add_map_error("flag_descriptor with script_linkname "" + closestdesc.script_linkname + "" is nearby more than one flag; is there a unique descriptor near each flag?");
+            globallogic_utils::add_map_error("flag_descriptor with script_linkname \"" + closestdesc.script_linkname + "\" is nearby more than one flag; is there a unique descriptor near each flag?");
             continue;
         }
         flags[i].descriptor = closestdesc;
@@ -1539,12 +1541,12 @@ function flagsetup() {
             for (j = 0; j < adjdescs.size; j++) {
                 otherdesc = descriptorsbylinkname[adjdescs[j]];
                 if (!isdefined(otherdesc) || otherdesc.targetname != "flag_descriptor") {
-                    globallogic_utils::add_map_error("flag_descriptor with script_linkname "" + flags[i].descriptor.script_linkname + "" linked to "" + adjdescs[j] + "" which does not exist as a script_linkname of any other entity with a targetname of flag_descriptor (or, if it does, that flag_descriptor has not been assigned to a flag)");
+                    globallogic_utils::add_map_error("flag_descriptor with script_linkname \"" + flags[i].descriptor.script_linkname + "\" linked to \"" + adjdescs[j] + "\" which does not exist as a script_linkname of any other entity with a targetname of flag_descriptor (or, if it does, that flag_descriptor has not been assigned to a flag)");
                     continue;
                 }
                 adjflag = otherdesc.flag;
                 if (adjflag == flags[i]) {
-                    globallogic_utils::add_map_error("flag_descriptor with script_linkname "" + flags[i].descriptor.script_linkname + "" linked to itself");
+                    globallogic_utils::add_map_error("flag_descriptor with script_linkname \"" + flags[i].descriptor.script_linkname + "\" linked to itself");
                     continue;
                 }
                 flags[i].adjflags[flags[i].adjflags.size] = adjflag;
@@ -1556,7 +1558,7 @@ function flagsetup() {
         if (isdefined(spawnpoints[i].script_linkto)) {
             desc = descriptorsbylinkname[spawnpoints[i].script_linkto];
             if (!isdefined(desc) || desc.targetname != "flag_descriptor") {
-                globallogic_utils::add_map_error("Spawnpoint at " + spawnpoints[i].origin + "" linked to "" + spawnpoints[i].script_linkto + "" which does not exist as a script_linkname of any entity with a targetname of flag_descriptor (or, if it does, that flag_descriptor has not been assigned to a flag)");
+                globallogic_utils::add_map_error("Spawnpoint at " + spawnpoints[i].origin + "\" linked to \"" + spawnpoints[i].script_linkto + "\" which does not exist as a script_linkname of any entity with a targetname of flag_descriptor (or, if it does, that flag_descriptor has not been assigned to a flag)");
                 continue;
             }
             nearestflag = desc.flag;

@@ -137,12 +137,13 @@ function getvalueinrange(value, minvalue, maxvalue) {
     return value;
 }
 
-// Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x0
-// Checksum 0x9eb0d381, Offset: 0x5f8
-// Size: 0x2ca
-function assertproperplacement() {
-    /#
+/#
+
+    // Namespace globallogic_utils/globallogic_utils
+    // Params 0, eflags: 0x0
+    // Checksum 0x9eb0d381, Offset: 0x5f8
+    // Size: 0x2ca
+    function assertproperplacement() {
         numplayers = level.placement[#"all"].size;
         if (level.teambased) {
             for (i = 0; i < numplayers - 1; i++) {
@@ -169,8 +170,9 @@ function assertproperplacement() {
                 break;
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic_utils/globallogic_utils
 // Params 1, eflags: 0x0
@@ -481,18 +483,20 @@ function gethitlocheight(shitloc) {
     return 48;
 }
 
-// Namespace globallogic_utils/globallogic_utils
-// Params 2, eflags: 0x0
-// Checksum 0xeeaaa164, Offset: 0x14b0
-// Size: 0x5c
-function debugline(start, end) {
-    /#
-        for (i = 0; i < 50; i++) {
+/#
+
+    // Namespace globallogic_utils/globallogic_utils
+    // Params 2, eflags: 0x0
+    // Checksum 0xeeaaa164, Offset: 0x14b0
+    // Size: 0x5c
+    function debugline(start, end) {
+                for (i = 0; i < 50; i++) {
             line(start, end);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic_utils/globallogic_utils
 // Params 2, eflags: 0x0
@@ -518,12 +522,13 @@ function function_4aa8d809(index, string) {
     level.var_336c35f1[index] = string;
 }
 
-// Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x0
-// Checksum 0x822637ca, Offset: 0x15d8
-// Size: 0x22c
-function function_8d61a6c2(var_c1e98979) {
-    /#
+/#
+
+    // Namespace globallogic_utils/globallogic_utils
+    // Params 1, eflags: 0x0
+    // Checksum 0x822637ca, Offset: 0x15d8
+    // Size: 0x22c
+    function function_8d61a6c2(var_c1e98979) {
         assert(isdefined(var_c1e98979));
         assert(isdefined(level.var_336c35f1[var_c1e98979]));
         log_string = level.var_336c35f1[var_c1e98979];
@@ -542,8 +547,9 @@ function function_8d61a6c2(var_c1e98979) {
             log_string = log_string + "<unknown string>" + str_team + "<unknown string>" + game.stat[#"teamscores"][team];
         }
         print(log_string);
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic_utils/globallogic_utils
 // Params 1, eflags: 0x0

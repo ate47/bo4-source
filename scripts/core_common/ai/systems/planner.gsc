@@ -539,27 +539,26 @@ function plan(planner, blackboardvalues, maxframetime = 3, starttime = undefined
     return planner.plan;
 }
 
-// Namespace planner/planner
-// Params 2, eflags: 0x0
-// Checksum 0xba353c39, Offset: 0x21c0
-// Size: 0xdc
-function printplanner(planner, filename) {
-    /#
+/#
+
+    // Namespace planner/planner
+    // Params 2, eflags: 0x0
+    // Checksum 0xba353c39, Offset: 0x21c0
+    // Size: 0xdc
+    function printplanner(planner, filename) {
         assert(isstruct(planner));
         file = openfile(filename, "<unknown string>");
         printid = randomint(2147483647);
         _printplannernode(file, planner, 0, printid);
         _printclearprintid(planner);
         closefile(file);
-    #/
-}
+    }
 
-// Namespace planner/planner
-// Params 1, eflags: 0x4
-// Checksum 0x4786a905, Offset: 0x22a8
-// Size: 0x96
-function private _printclearprintid(plannernode) {
-    /#
+    // Namespace planner/planner
+    // Params 1, eflags: 0x4
+    // Checksum 0x4786a905, Offset: 0x22a8
+    // Size: 0x96
+    function private _printclearprintid(plannernode) {
         plannernode.printid = undefined;
         if (isdefined(plannernode.children)) {
             for (index = 0; index < plannernode.children.size; index++) {
@@ -568,15 +567,13 @@ function private _printclearprintid(plannernode) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace planner/planner
-// Params 1, eflags: 0x4
-// Checksum 0x863af71d, Offset: 0x2348
-// Size: 0x256
-function private function_3af5bab0(node) {
-    /#
+    // Namespace planner/planner
+    // Params 1, eflags: 0x4
+    // Checksum 0x863af71d, Offset: 0x2348
+    // Size: 0x256
+    function private function_3af5bab0(node) {
         text = node.type;
         if (isdefined(node.name)) {
             text += "<unknown string>" + node.name;
@@ -607,15 +604,13 @@ function private function_3af5bab0(node) {
             text += "<unknown string>";
         }
         return text;
-    #/
-}
+    }
 
-// Namespace planner/planner
-// Params 4, eflags: 0x4
-// Checksum 0x392185ff, Offset: 0x25a8
-// Size: 0x1be
-function private _printplannernode(file, plannernode, indent, printid) {
-    /#
+    // Namespace planner/planner
+    // Params 4, eflags: 0x4
+    // Checksum 0x392185ff, Offset: 0x25a8
+    // Size: 0x1be
+    function private _printplannernode(file, plannernode, indent, printid) {
         assert(isstruct(plannernode));
         indentspace = "<unknown string>";
         for (index = 0; index < indent; index++) {
@@ -636,8 +631,9 @@ function private _printplannernode(file, plannernode, indent, printid) {
                 _printplannernode(file, plannernode.children[index], indent + 1, printid);
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace planner/planner
 // Params 5, eflags: 0x1 linked

@@ -298,15 +298,16 @@ function function_9940fbb9(a_models, var_2a7cd391 = "use") {
     }
 }
 
-// Namespace mp_hacienda_alt/mp_hacienda_alt
-// Params 0, eflags: 0x0
-// Checksum 0xea355c63, Offset: 0x1a30
-// Size: 0x74
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_hacienda_alt/mp_hacienda_alt
+    // Params 0, eflags: 0x0
+    // Checksum 0xea355c63, Offset: 0x1a30
+    // Size: 0x74
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

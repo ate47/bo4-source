@@ -181,18 +181,19 @@ function private function_c816ea5b() {
     }
 }
 
-// Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 2, eflags: 0x0
-// Checksum 0x4f396fc2, Offset: 0xa70
-// Size: 0x7e
-function function_3fbc7157(origin, radius) {
-    /#
+/#
+
+    // Namespace character_unlock_nikolai/character_unlock_nikolai
+    // Params 2, eflags: 0x0
+    // Checksum 0x4f396fc2, Offset: 0xa70
+    // Size: 0x7e
+    function function_3fbc7157(origin, radius) {
         self notify("<unknown string>");
         self endon("<unknown string>");
         while (true) {
             circle(origin + (0, 0, 10), radius, (1, 0, 0), 0, 1, 1);
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

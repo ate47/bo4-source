@@ -1803,15 +1803,17 @@ function function_342e0887(a_ents, mdl_key, mdl_crystal) {
     self function_ff4485b6(a_ents, mdl_key, mdl_crystal);
 }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0x2a174301, Offset: 0x9128
-// Size: 0x24
-function function_11886796(a_ents) {
-    /#
+/#
+
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0x2a174301, Offset: 0x9128
+    // Size: 0x24
+    function function_11886796(a_ents) {
         self function_ff4485b6(a_ents);
-    #/
-}
+    }
+
+#/
 
 // Namespace mansion_pap/zm_mansion_pap_quest
 // Params 0, eflags: 0x4
@@ -3153,12 +3155,13 @@ function function_eecfbd25() {
     }
 }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 0, eflags: 0x0
-// Checksum 0x920d727d, Offset: 0xe470
-// Size: 0x1ee
-function function_f728c266() {
-    /#
+/#
+
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 0, eflags: 0x0
+    // Checksum 0x920d727d, Offset: 0xe470
+    // Size: 0x1ee
+    function function_f728c266() {
         switch (function_9e72a96(self.id)) {
         case #"sc_mh1":
             break;
@@ -3193,15 +3196,13 @@ function function_f728c266() {
             sphere(self.origin, n_radius, v_color);
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0x33e89362, Offset: 0xe668
-// Size: 0x176
-function function_debf98ad(v_color) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0x33e89362, Offset: 0xe668
+    // Size: 0x176
+    function function_debf98ad(v_color) {
         if (!isdefined(v_color)) {
             v_color = (0, 1, 0);
         }
@@ -3220,15 +3221,13 @@ function function_debf98ad(v_color) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0xf8533ad, Offset: 0xe7e8
-// Size: 0x186
-function debug_draw_star(v_color) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0xf8533ad, Offset: 0xe7e8
+    // Size: 0x186
+    function debug_draw_star(v_color) {
         if (!isdefined(v_color)) {
             v_color = (0, 1, 0);
         }
@@ -3247,25 +3246,21 @@ function debug_draw_star(v_color) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 0, eflags: 0x0
-// Checksum 0x7fbf8984, Offset: 0xe978
-// Size: 0x1e
-function debug_draw_stop() {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 0, eflags: 0x0
+    // Checksum 0x7fbf8984, Offset: 0xe978
+    // Size: 0x1e
+    function debug_draw_stop() {
         self notify(#"stop_debug_draw");
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 4, eflags: 0x0
-// Checksum 0x5df82501, Offset: 0xe9a0
-// Size: 0xd6
-function function_5e48b125(thing, var_f068172b, str_ender, v_color) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 4, eflags: 0x0
+    // Checksum 0x5df82501, Offset: 0xe9a0
+    // Size: 0xd6
+    function function_5e48b125(thing, var_f068172b, str_ender, v_color) {
         if (!isdefined(str_ender)) {
             str_ender = "cemetery_pap_key";
         }
@@ -3279,15 +3274,13 @@ function function_5e48b125(thing, var_f068172b, str_ender, v_color) {
             line(thing.origin, var_f068172b.origin, v_color);
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_pap/zm_mansion_pap_quest
-// Params 2, eflags: 0x0
-// Checksum 0x1c54b704, Offset: 0xea80
-// Size: 0xf8
-function function_75e87a52(nd_start, v_color) {
-    /#
+    // Namespace mansion_pap/zm_mansion_pap_quest
+    // Params 2, eflags: 0x0
+    // Checksum 0x1c54b704, Offset: 0xea80
+    // Size: 0xf8
+    function function_75e87a52(nd_start, v_color) {
         self notify("tag_statue_tuning_fork_jnt");
         self endon("tag_statue_tuning_fork_jnt");
         var_ce8cd8 = nd_start;
@@ -3301,6 +3294,6 @@ function function_75e87a52(nd_start, v_color) {
             }
             break;
         }
-    #/
-}
+    }
 
+#/

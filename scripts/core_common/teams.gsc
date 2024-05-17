@@ -83,12 +83,13 @@ function function_959bac94() {
     return #"spectator";
 }
 
-// Namespace teams/teams
-// Params 1, eflags: 0x4
-// Checksum 0x788ca9a1, Offset: 0x430
-// Size: 0x134
-function private function_ba459d03(team) {
-    /#
+/#
+
+    // Namespace teams/teams
+    // Params 1, eflags: 0x4
+    // Checksum 0x788ca9a1, Offset: 0x430
+    // Size: 0x134
+    function private function_ba459d03(team) {
         if (isdefined(level.var_ba13fb7a) && level.var_ba13fb7a) {
             team_str = string(team);
             if (isdefined(level.teams[team])) {
@@ -102,34 +103,30 @@ function private function_ba459d03(team) {
             }
             println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team_str + "<unknown string>" + voip);
         }
-    #/
-}
+    }
 
-// Namespace teams/teams
-// Params 1, eflags: 0x0
-// Checksum 0x9c7cdf23, Offset: 0x570
-// Size: 0xd0
-function function_a9d594a0(party) {
-    /#
+    // Namespace teams/teams
+    // Params 1, eflags: 0x0
+    // Checksum 0x9c7cdf23, Offset: 0x570
+    // Size: 0xd0
+    function function_a9d594a0(party) {
         foreach (party_member in party.party_members) {
             var_2798314b = party_member getparty();
             if (var_2798314b.var_a15e4438 != party.var_a15e4438) {
                 assertmsg("<unknown string>");
             }
         }
-    #/
-}
+    }
 
-// Namespace teams/teams
-// Params 1, eflags: 0x0
-// Checksum 0x53c776fa, Offset: 0x648
-// Size: 0xb0
-function function_d28f6fa0(team) {
-    /#
+    // Namespace teams/teams
+    // Params 1, eflags: 0x0
+    // Checksum 0x53c776fa, Offset: 0x648
+    // Size: 0xb0
+    function function_d28f6fa0(team) {
         players = getplayers(team);
         foreach (player in players) {
             function_a9d594a0(player getparty());
         }
-    #/
-}
+    }
 
+#/

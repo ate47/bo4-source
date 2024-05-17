@@ -221,7 +221,7 @@ function function_b89106ad(gamedifficulty) {
     if (level.ctdifficulty == 0) {
         ct_torque_tutorial::function_9b9525e9();
     } else {
-        function_72e84e64();
+        j_fore_le_01();
     }
     level notify(#"combattraining_logic_finished", {#success:1});
 }
@@ -441,7 +441,7 @@ function function_27bf93d(var_93b6a23b = 2000, var_844ac87e = 1) {
 // Params 0, eflags: 0x0
 // Checksum 0x5a37d727, Offset: 0x2018
 // Size: 0x298
-function function_72e84e64() {
+function j_fore_le_01() {
     level endoncallback(&function_76a85acc, #"combattraining_logic_finished");
     level notify(#"hash_b368182103cc73");
     ct_utils::function_6d7f4ec6(45);
@@ -1254,12 +1254,13 @@ function function_dd64960c(a_ents) {
     }
 }
 
-// Namespace ct_torque/ct_torque
-// Params 0, eflags: 0x0
-// Checksum 0x33fdf0eb, Offset: 0x5aa0
-// Size: 0x988
-function function_d69c54a8() {
-    /#
+/#
+
+    // Namespace ct_torque/ct_torque
+    // Params 0, eflags: 0x0
+    // Checksum 0x33fdf0eb, Offset: 0x5aa0
+    // Size: 0x988
+    function function_d69c54a8() {
         sessionmode = currentsessionmode();
         setdvar(#"hash_2bdefa89fdfb0546", "<unknown string>");
         level flag::init("<unknown string>");
@@ -1391,6 +1392,6 @@ function function_d69c54a8() {
             }
             setdvar(#"hash_2bdefa89fdfb0546", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

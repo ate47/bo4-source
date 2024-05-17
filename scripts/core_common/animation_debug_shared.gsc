@@ -5,12 +5,13 @@
 
 #namespace animation;
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x2
-// Checksum 0x617e7723, Offset: 0x80
-// Size: 0x24e
-function autoexec function_c3c9d0e5() {
-    /#
+/#
+
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x2
+    // Checksum 0x617e7723, Offset: 0x80
+    // Size: 0x24e
+    function autoexec function_c3c9d0e5() {
         setdvar(#"anim_debug", 0);
         setdvar(#"anim_debug_pause", 0);
         while (true) {
@@ -27,25 +28,21 @@ function autoexec function_c3c9d0e5() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x6228d1b, Offset: 0x2d8
-// Size: 0x3e
-function is_anim_debugging(ent) {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x6228d1b, Offset: 0x2d8
+    // Size: 0x3e
+    function is_anim_debugging(ent) {
         return isdefined(ent) && ent flagsys::get(#"scriptedanim");
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 4, eflags: 0x0
-// Checksum 0x9250e442, Offset: 0x320
-// Size: 0xaae
-function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag, var_f4b34dc1) {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 4, eflags: 0x0
+    // Checksum 0x9250e442, Offset: 0x320
+    // Size: 0xaae
+    function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag, var_f4b34dc1) {
         self notify(#"_anim_info_render_thread_");
         self endon(#"_anim_info_render_thread_", #"death", #"scriptedanim");
         level endon(#"kill_anim_debug");
@@ -134,15 +131,13 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag, va
             _reset_frame();
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x3559bf7d, Offset: 0xdd8
-// Size: 0x6e
-function get_ent_type() {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x3559bf7d, Offset: 0xdd8
+    // Size: 0x6e
+    function get_ent_type() {
         if (isactor(self)) {
             return "<unknown string>";
         }
@@ -150,35 +145,29 @@ function get_ent_type() {
             return "<unknown string>";
         }
         return "<unknown string>" + self.classname + "<unknown string>";
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x334431b5, Offset: 0xe50
-// Size: 0x22
-function _init_frame() {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x334431b5, Offset: 0xe50
+    // Size: 0x22
+    function _init_frame() {
         self.v_centroid = self getcentroid();
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x11688a71, Offset: 0xe80
-// Size: 0x12
-function _reset_frame() {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x11688a71, Offset: 0xe80
+    // Size: 0x12
+    function _reset_frame() {
         self.v_centroid = undefined;
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 3, eflags: 0x0
-// Checksum 0x29d07873, Offset: 0xea0
-// Size: 0x13c
-function render_tag(str_tag, str_label, b_recorder_only) {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0x29d07873, Offset: 0xea0
+    // Size: 0x13c
+    function render_tag(str_tag, str_label, b_recorder_only) {
         if (!isdefined(str_label)) {
             str_label = str_tag;
         }
@@ -194,15 +183,13 @@ function render_tag(str_tag, str_label, b_recorder_only) {
             }
             recordline(self.v_centroid, v_tag_org, (0.3, 0.3, 0.3), "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace animation/animation_debug_shared
-// Params 5, eflags: 0x0
-// Checksum 0x5e60fd08, Offset: 0xfe8
-// Size: 0x244
-function anim_origin_render(org, angles, line_length, str_label, b_recorder_only) {
-    /#
+    // Namespace animation/animation_debug_shared
+    // Params 5, eflags: 0x0
+    // Checksum 0x5e60fd08, Offset: 0xfe8
+    // Size: 0x244
+    function anim_origin_render(org, angles, line_length, str_label, b_recorder_only) {
         if (!isdefined(line_length)) {
             line_length = 6;
         }
@@ -225,6 +212,6 @@ function anim_origin_render(org, angles, line_length, str_label, b_recorder_only
                 record3dtext(str_label, org, (1, 0.752941, 0.796078), "<unknown string>");
             }
         }
-    #/
-}
+    }
 
+#/

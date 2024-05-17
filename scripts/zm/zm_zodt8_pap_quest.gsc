@@ -592,27 +592,26 @@ function pap_machine_rune_on() {
     self clientfield::set("pap_machine_rune", var_81731c8e);
 }
 
-// Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 0, eflags: 0x0
-// Checksum 0x4b92e2bf, Offset: 0x2880
-// Size: 0x74
-function function_765118cf() {
-    /#
+/#
+
+    // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
+    // Params 0, eflags: 0x0
+    // Checksum 0x4b92e2bf, Offset: 0x2880
+    // Size: 0x74
+    function function_765118cf() {
         level.s_pap_quest.var_4ee2e2ab = 0;
         if (!level flag::get("<unknown string>")) {
             level waittill(#"stairs_pap_location");
         }
         wait(0.1);
         level flag::set("<unknown string>");
-    #/
-}
+    }
 
-// Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 0, eflags: 0x0
-// Checksum 0x68b8a1cb, Offset: 0x2900
-// Size: 0xba
-function function_83d342c7() {
-    /#
+    // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
+    // Params 0, eflags: 0x0
+    // Checksum 0x68b8a1cb, Offset: 0x2900
+    // Size: 0xba
+    function function_83d342c7() {
         level flag::wait_till("<unknown string>");
         var_4c043770 = getent("<unknown string>", "<unknown string>");
         if (!isdefined(var_4c043770)) {
@@ -624,43 +623,37 @@ function function_83d342c7() {
                 var_4c043770 function_a2a8d76e(i);
             }
         }
-    #/
-}
+    }
 
-// Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0x784b4224, Offset: 0x29c8
-// Size: 0x82
-function function_d7dc7c3e(var_c8407ea2) {
-    /#
+    // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0x784b4224, Offset: 0x29c8
+    // Size: 0x82
+    function function_d7dc7c3e(var_c8407ea2) {
         self clientfield::set("<unknown string>", var_c8407ea2);
         wait(3);
         self clientfield::set("<unknown string>", var_c8407ea2);
         wait(3);
         self clientfield::set("<unknown string>", 0);
         wait(2);
-    #/
-}
+    }
 
-// Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 1, eflags: 0x0
-// Checksum 0x7fd07be8, Offset: 0x2a58
-// Size: 0x5a
-function function_a2a8d76e(var_c8407ea2) {
-    /#
+    // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0x7fd07be8, Offset: 0x2a58
+    // Size: 0x5a
+    function function_a2a8d76e(var_c8407ea2) {
         self clientfield::set("<unknown string>", var_c8407ea2);
         wait(3);
         self clientfield::set("<unknown string>", 1);
         wait(2);
-    #/
-}
+    }
 
-// Namespace zodt8_pap_quest/zm_zodt8_pap_quest
-// Params 0, eflags: 0x0
-// Checksum 0x9ca3dace, Offset: 0x2ac0
-// Size: 0x37e
-function function_4944c76f() {
-    /#
+    // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
+    // Params 0, eflags: 0x0
+    // Checksum 0x9ca3dace, Offset: 0x2ac0
+    // Size: 0x37e
+    function function_4944c76f() {
         level endon(#"pap_moved");
         var_710f09a8 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 100);
         var_737189c4 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 80);
@@ -677,6 +670,6 @@ function function_4944c76f() {
             print3d(var_1e3527a8, "<unknown string>" + self getzbarrierpiecestate(5));
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

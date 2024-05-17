@@ -1371,17 +1371,18 @@ function deleteent(attacker, emp, target) {
     }
 }
 
-// Namespace mansion_impaler/zm_mansion_impaler
-// Params 1, eflags: 0x0
-// Checksum 0x318de6dd, Offset: 0x5e60
-// Size: 0x68
-function function_1e640843(n_drop) {
-    /#
+/#
+
+    // Namespace mansion_impaler/zm_mansion_impaler
+    // Params 1, eflags: 0x0
+    // Checksum 0x318de6dd, Offset: 0x5e60
+    // Size: 0x68
+    function function_1e640843(n_drop) {
         level endon(#"hash_aa10db1b6143db9");
         while (isdefined(self)) {
             print3d(self.origin, n_drop, (0, 1, 0), 1, 0.4, 10);
             wait(0.2);
         }
-    #/
-}
+    }
 
+#/

@@ -1185,12 +1185,13 @@ function function_903ea2a5() {
     return self.firetype == "Burst";
 }
 
-// Namespace bot/bot
-// Params 0, eflags: 0x0
-// Checksum 0x11ad72b5, Offset: 0x3d18
-// Size: 0x828
-function devgui_bot_loop() {
-    /#
+/#
+
+    // Namespace bot/bot
+    // Params 0, eflags: 0x0
+    // Checksum 0x11ad72b5, Offset: 0x3d18
+    // Size: 0x828
+    function devgui_bot_loop() {
         sessionmode = currentsessionmode();
         if (sessionmode != 4) {
             var_48c9cde3 = getallcharacterbodies(sessionmode);
@@ -1278,15 +1279,13 @@ function devgui_bot_loop() {
             level notify(#"devgui_bot", {#host:host, #args:args});
             setdvar(#"devgui_bot", "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace bot/bot
-// Params 0, eflags: 0x0
-// Checksum 0x56e27836, Offset: 0x4548
-// Size: 0x492
-function add_bot_devgui_menu() {
-    /#
+    // Namespace bot/bot
+    // Params 0, eflags: 0x0
+    // Checksum 0x56e27836, Offset: 0x4548
+    // Size: 0x492
+    function add_bot_devgui_menu() {
         entnum = self getentitynumber();
         if (level.var_fa5cacde && entnum > 12) {
             return;
@@ -1320,37 +1319,34 @@ function add_bot_devgui_menu() {
         i++;
         self add_bot_devgui_cmd(entnum, "<unknown string>", i, "<unknown string>");
         i++;
-    #/
-}
+    }
 
-// Namespace bot/bot
-// Params 5, eflags: 0x0
-// Checksum 0xf444d8dd, Offset: 0x49e8
-// Size: 0xec
-function add_bot_devgui_cmd(entnum, path, sortkey, devguiarg, cmdargs) {
-    /#
+    // Namespace bot/bot
+    // Params 5, eflags: 0x0
+    // Checksum 0xf444d8dd, Offset: 0x49e8
+    // Size: 0xec
+    function add_bot_devgui_cmd(entnum, path, sortkey, devguiarg, cmdargs) {
         if (!isdefined(cmdargs)) {
             cmdargs = "<unknown string>";
         }
         cmd = "<unknown string>" + entnum + "<unknown string>" + self.name + "<unknown string>" + entnum + "<unknown string>" + path + "<unknown string>" + sortkey + "<unknown string>" + devguiarg + "<unknown string>" + entnum + "<unknown string>" + cmdargs + "<unknown string>";
         util::add_debug_command(cmd);
-    #/
-}
+    }
 
-// Namespace bot/bot
-// Params 0, eflags: 0x0
-// Checksum 0xa08f7a33, Offset: 0x4ae0
-// Size: 0x8c
-function clear_bot_devgui_menu() {
-    /#
+    // Namespace bot/bot
+    // Params 0, eflags: 0x0
+    // Checksum 0xa08f7a33, Offset: 0x4ae0
+    // Size: 0x8c
+    function clear_bot_devgui_menu() {
         entnum = self getentitynumber();
         if (level.var_fa5cacde && entnum > 12) {
             return;
         }
         cmd = "<unknown string>" + entnum + "<unknown string>" + self.name + "<unknown string>";
         util::add_debug_command(cmd);
-    #/
-}
+    }
+
+#/
 
 // Namespace bot/bot
 // Params 3, eflags: 0x0
@@ -1723,12 +1719,13 @@ function function_5524bfd5(companionname) {
     setdvar(#"companion", companionname);
 }
 
-// Namespace bot/bot
-// Params 0, eflags: 0x0
-// Checksum 0xf210f6eb, Offset: 0x6440
-// Size: 0x130
-function function_263ca697() {
-    /#
+/#
+
+    // Namespace bot/bot
+    // Params 0, eflags: 0x0
+    // Checksum 0xf210f6eb, Offset: 0x6440
+    // Size: 0x130
+    function function_263ca697() {
         weapon = self getcurrentweapon();
         setdvar(#"bot_spawn_weapon", getweaponname(weapon.rootweapon));
         setdvar(#"hash_c6e51858c88a5ee", util::function_2146bd83(weapon));
@@ -1736,8 +1733,9 @@ function function_263ca697() {
         foreach (bot in bots) {
             bot function_35e77034(weapon);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace bot/bot
 // Params 1, eflags: 0x0
@@ -1765,12 +1763,13 @@ function function_85e7342b() {
     }
 }
 
-// Namespace bot/bot
-// Params 1, eflags: 0x0
-// Checksum 0xe6358bef, Offset: 0x66c8
-// Size: 0xba
-function should_record(dvarstr) {
-    /#
+/#
+
+    // Namespace bot/bot
+    // Params 1, eflags: 0x0
+    // Checksum 0xe6358bef, Offset: 0x66c8
+    // Size: 0xba
+    function should_record(dvarstr) {
         if (getdvarint(dvarstr, 0) <= 0) {
             return 0;
         }
@@ -1783,27 +1782,23 @@ function should_record(dvarstr) {
         }
         ent = getentbynum(botnum);
         return isdefined(ent) && ent == self;
-    #/
-}
+    }
 
-// Namespace bot/bot
-// Params 3, eflags: 0x0
-// Checksum 0xe568615, Offset: 0x6790
-// Size: 0x64
-function record_text(text, textcolor, dvarstr) {
-    /#
+    // Namespace bot/bot
+    // Params 3, eflags: 0x0
+    // Checksum 0xe568615, Offset: 0x6790
+    // Size: 0x64
+    function record_text(text, textcolor, dvarstr) {
         if (self should_record(dvarstr)) {
             record3dtext(text, self.origin, textcolor, "<unknown string>", self, 0.5);
         }
-    #/
-}
+    }
 
-// Namespace bot/bot
-// Params 0, eflags: 0x0
-// Checksum 0xb774f98f, Offset: 0x6800
-// Size: 0x214
-function function_d45e8714() {
-    /#
+    // Namespace bot/bot
+    // Params 0, eflags: 0x0
+    // Checksum 0xb774f98f, Offset: 0x6800
+    // Size: 0x214
+    function function_d45e8714() {
         if (!self has_interact()) {
             return;
         }
@@ -1833,15 +1828,13 @@ function function_d45e8714() {
         recordline(self.origin, origin, (0, 1, 0), "<unknown string>", self);
         recordsphere(origin, 8, (0, 1, 0), "<unknown string>", self);
         record3dtext(desc, origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
-    #/
-}
+    }
 
-// Namespace bot/bot
-// Params 3, eflags: 0x0
-// Checksum 0x44fe3581, Offset: 0x6a20
-// Size: 0x1bc
-function function_1744d303(trigger, color, channel) {
-    /#
+    // Namespace bot/bot
+    // Params 3, eflags: 0x0
+    // Checksum 0x44fe3581, Offset: 0x6a20
+    // Size: 0x1bc
+    function function_1744d303(trigger, color, channel) {
         maxs = trigger getmaxs();
         mins = trigger getmins();
         if (issubstr(trigger.classname, "<unknown string>")) {
@@ -1854,15 +1847,13 @@ function function_1744d303(trigger, color, channel) {
             return;
         }
         function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel, self);
-    #/
-}
+    }
 
-// Namespace bot/bot
-// Params 0, eflags: 0x0
-// Checksum 0xd404e147, Offset: 0x6be8
-// Size: 0x150
-function bot_joinleave_loop() {
-    /#
+    // Namespace bot/bot
+    // Params 0, eflags: 0x0
+    // Checksum 0xd404e147, Offset: 0x6be8
+    // Size: 0x150
+    function bot_joinleave_loop() {
         active = 0;
         while (true) {
             wait(1);
@@ -1888,8 +1879,9 @@ function bot_joinleave_loop() {
             }
             wait(randomintrange(1, 3));
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace bot/bot
 // Params 1, eflags: 0x0

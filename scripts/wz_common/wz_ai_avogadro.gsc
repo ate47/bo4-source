@@ -269,12 +269,13 @@ function function_7d5cf0e4(entity) {
     return isdefined(entity.current_state) && entity.current_state.name == #"chase";
 }
 
-// Namespace wz_ai_avogadro/wz_ai_avogadro
-// Params 0, eflags: 0x0
-// Checksum 0xe3c235e7, Offset: 0x1028
-// Size: 0xac
-function function_c698f66b() {
-    /#
+/#
+
+    // Namespace wz_ai_avogadro/wz_ai_avogadro
+    // Params 0, eflags: 0x0
+    // Checksum 0xe3c235e7, Offset: 0x1028
+    // Size: 0xac
+    function function_c698f66b() {
         if (self.var_15aa1ae0 === 0) {
             if (getdvarint(#"recorder_enablerec", 0)) {
                 record3dtext("<unknown string>", self.origin, (1, 0.5, 0), "<unknown string>", self);
@@ -282,6 +283,6 @@ function function_c698f66b() {
             }
             print3d(self.origin, "<unknown string>", (1, 0.5, 0), 1, 1);
         }
-    #/
-}
+    }
 
+#/

@@ -2066,12 +2066,13 @@ function private function_876f93aa() {
     return self.var_6432be9b;
 }
 
-// Namespace zm_towers_challenges/zm_towers_challenges
-// Params 0, eflags: 0x0
-// Checksum 0x56f24f1, Offset: 0x8e98
-// Size: 0x160
-function function_a83b406a() {
-    /#
+/#
+
+    // Namespace zm_towers_challenges/zm_towers_challenges
+    // Params 0, eflags: 0x0
+    // Checksum 0x56f24f1, Offset: 0x8e98
+    // Size: 0x160
+    function function_a83b406a() {
         if (isdefined(self.var_9276b18a) && self.var_9276b18a) {
             foreach (e_player in getplayers()) {
                 if (isdefined(e_player.challenge_struct)) {
@@ -2083,18 +2084,16 @@ function function_a83b406a() {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_towers_challenges/zm_towers_challenges
-// Params 4, eflags: 0x0
-// Checksum 0xa390355, Offset: 0x9000
-// Size: 0x6c
-function function_e4b04738(var_5630d868, e_player, str_hint_text, var_2597a9f0) {
-    /#
+    // Namespace zm_towers_challenges/zm_towers_challenges
+    // Params 4, eflags: 0x0
+    // Checksum 0xa390355, Offset: 0x9000
+    // Size: 0x6c
+    function function_e4b04738(var_5630d868, e_player, str_hint_text, var_2597a9f0) {
         level zm_ui_inventory::function_7df6bb60(#"zm_towers_challenges_progress", var_5630d868, e_player);
         self function_2ae8eabe(var_5630d868, var_5630d868);
         self notify(var_2597a9f0);
-    #/
-}
+    }
 
+#/

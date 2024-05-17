@@ -1265,17 +1265,19 @@ function private give_ultimate(slot, previous_weapon) {
     pixendevent();
 }
 
-// Namespace loadout/player_loadout
-// Params 2, eflags: 0x0
-// Checksum 0x8a700a4d, Offset: 0x5568
-// Size: 0x4e
-function function_3d16577a(team, weaponclass) {
-    /#
+/#
+
+    // Namespace loadout/player_loadout
+    // Params 2, eflags: 0x0
+    // Checksum 0x8a700a4d, Offset: 0x5568
+    // Size: 0x4e
+    function function_3d16577a(team, weaponclass) {
         level.var_8314ef9f = 1;
         self give_loadout(team, weaponclass);
         level.var_8314ef9f = undefined;
-    #/
-}
+    }
+
+#/
 
 // Namespace loadout/player_loadout
 // Params 2, eflags: 0x0

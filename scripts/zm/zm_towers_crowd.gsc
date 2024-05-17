@@ -826,12 +826,13 @@ function function_b8dfa139(str_event) {
     self thread function_9da7999d(var_9c93ba8f, var_ac39950d, str_event);
 }
 
-// Namespace zm_towers_crowd/zm_towers_crowd
-// Params 1, eflags: 0x0
-// Checksum 0xf55423f9, Offset: 0x3af8
-// Size: 0xd4
-function function_f3e454c1(str_text) {
-    /#
+/#
+
+    // Namespace zm_towers_crowd/zm_towers_crowd
+    // Params 1, eflags: 0x0
+    // Checksum 0xf55423f9, Offset: 0x3af8
+    // Size: 0xd4
+    function function_f3e454c1(str_text) {
         if (ishash(str_text)) {
             if (isplayer(self)) {
                 self iprintlnbold(function_9e72a96(str_text));
@@ -845,8 +846,9 @@ function function_f3e454c1(str_text) {
             return;
         }
         iprintlnbold(str_text);
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_towers_crowd/zm_towers_crowd
 // Params 3, eflags: 0x1 linked
@@ -1280,12 +1282,13 @@ function function_308a32f0(e_player) {
     }
 }
 
-// Namespace zm_towers_crowd/zm_towers_crowd
-// Params 0, eflags: 0x0
-// Checksum 0xeb78b753, Offset: 0x5600
-// Size: 0x40c
-function function_fbf74c49() {
-    /#
+/#
+
+    // Namespace zm_towers_crowd/zm_towers_crowd
+    // Params 0, eflags: 0x0
+    // Checksum 0xeb78b753, Offset: 0x5600
+    // Size: 0x40c
+    function function_fbf74c49() {
         level flag::init("<unknown string>");
         level flag::init("<unknown string>");
         zm_devgui::add_custom_devgui_callback(&function_e0bb973);
@@ -1328,15 +1331,13 @@ function function_fbf74c49() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         level thread function_eb6ff6a5();
-    #/
-}
+    }
 
-// Namespace zm_towers_crowd/zm_towers_crowd
-// Params 0, eflags: 0x0
-// Checksum 0x37316710, Offset: 0x5a18
-// Size: 0x102
-function function_eb6ff6a5() {
-    /#
+    // Namespace zm_towers_crowd/zm_towers_crowd
+    // Params 0, eflags: 0x0
+    // Checksum 0x37316710, Offset: 0x5a18
+    // Size: 0x102
+    function function_eb6ff6a5() {
         while (true) {
             if (level flag::get("<unknown string>")) {
                 foreach (i, player in level.players) {
@@ -1345,15 +1346,13 @@ function function_eb6ff6a5() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace zm_towers_crowd/zm_towers_crowd
-// Params 1, eflags: 0x0
-// Checksum 0x4cf072c0, Offset: 0x5b28
-// Size: 0x8a2
-function function_e0bb973(cmd) {
-    /#
+    // Namespace zm_towers_crowd/zm_towers_crowd
+    // Params 1, eflags: 0x0
+    // Checksum 0x4cf072c0, Offset: 0x5b28
+    // Size: 0x8a2
+    function function_e0bb973(cmd) {
         switch (cmd) {
         case #"hash_b988aa7a2727ae5":
             level flag::set(#"crowd_throw_item_immediate");
@@ -1469,6 +1468,6 @@ function function_e0bb973(cmd) {
             }
             break;
         }
-    #/
-}
+    }
 
+#/

@@ -1771,12 +1771,13 @@ function init_flare(v_origin, v_angles, str_color) {
     return mdl_flare;
 }
 
-// Namespace namespace_b45e3f05/namespace_2d696d7c
-// Params 1, eflags: 0x0
-// Checksum 0xbbe3d727, Offset: 0x89a8
-// Size: 0x114
-function give_flare(str_color) {
-    /#
+/#
+
+    // Namespace namespace_b45e3f05/namespace_2d696d7c
+    // Params 1, eflags: 0x0
+    // Checksum 0xbbe3d727, Offset: 0x89a8
+    // Size: 0x114
+    function give_flare(str_color) {
         foreach (player in util::get_active_players()) {
             mdl_flare = init_flare((0, 0, 0), (0, 0, 0), str_color);
             player.mdl_flare = mdl_flare;
@@ -1785,8 +1786,9 @@ function give_flare(str_color) {
             iprintlnbold(str_color + "<unknown string>");
             println(str_color + "<unknown string>");
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace namespace_b45e3f05/namespace_2d696d7c
 // Params 2, eflags: 0x1 linked
@@ -2371,12 +2373,13 @@ function function_1f7f2030(var_2c2d042a) {
     }
 }
 
-// Namespace namespace_b45e3f05/namespace_2d696d7c
-// Params 2, eflags: 0x0
-// Checksum 0x13fbe670, Offset: 0xb3b8
-// Size: 0xa0
-function function_6d5cf6b2(str_text, str_endon) {
-    /#
+/#
+
+    // Namespace namespace_b45e3f05/namespace_2d696d7c
+    // Params 2, eflags: 0x0
+    // Checksum 0x13fbe670, Offset: 0xb3b8
+    // Size: 0xa0
+    function function_6d5cf6b2(str_text, str_endon) {
         level endon(#"end_of_round", #"start_of_round");
         if (isdefined(str_endon)) {
             self endon(str_endon);
@@ -2385,8 +2388,9 @@ function function_6d5cf6b2(str_text, str_endon) {
             print3d(self.origin, function_9e72a96(str_text), (1, 1, 0), 1, 1, 30);
             wait(0.5);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace namespace_b45e3f05/namespace_2d696d7c
 // Params 2, eflags: 0x1 linked

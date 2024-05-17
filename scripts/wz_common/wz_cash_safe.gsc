@@ -265,12 +265,13 @@ function private clear_prompts(activator) {
     activator clientfield::set_player_uimodel("hudItems.depositing", 0);
 }
 
-// Namespace wz_cash_safe/wz_cash_safe
-// Params 0, eflags: 0x4
-// Checksum 0xb4efdf0b, Offset: 0xf70
-// Size: 0x168
-function private function_a6eac3b7() {
-    /#
+/#
+
+    // Namespace wz_cash_safe/wz_cash_safe
+    // Params 0, eflags: 0x4
+    // Checksum 0xb4efdf0b, Offset: 0xf70
+    // Size: 0x168
+    function private function_a6eac3b7() {
         while (true) {
             wait(0.25);
             dvarstr = getdvarstring(#"scr_give_player_score", "<unknown string>");
@@ -286,6 +287,6 @@ function private function_a6eac3b7() {
                 }
             }
         }
-    #/
-}
+    }
 
+#/

@@ -115,12 +115,13 @@ function microwave_close_anim(localclientnum, oldval, newval, bnewent, binitials
     }
 }
 
-// Namespace microwave_turret/microwave_turret_shared
-// Params 2, eflags: 0x0
-// Checksum 0x355463b0, Offset: 0x8c0
-// Size: 0xec
-function debug_trace(origin, trace) {
-    /#
+/#
+
+    // Namespace microwave_turret/microwave_turret_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0x355463b0, Offset: 0x8c0
+    // Size: 0xec
+    function debug_trace(origin, trace) {
         if (trace[#"fraction"] < 1) {
             color = (0.95, 0.05, 0.05);
         } else {
@@ -128,8 +129,9 @@ function debug_trace(origin, trace) {
         }
         sphere(trace[#"position"], 5, color, 0.75, 1, 10, 100);
         util::debug_line(origin, trace[#"position"], color, 100);
-    #/
-}
+    }
+
+#/
 
 // Namespace microwave_turret/microwave_turret_shared
 // Params 1, eflags: 0x0
@@ -284,18 +286,20 @@ function stop_fx_on_tag(localclientnum, fxname, tag) {
     }
 }
 
-// Namespace microwave_turret/microwave_turret_shared
-// Params 3, eflags: 0x0
-// Checksum 0xea415c35, Offset: 0x1358
-// Size: 0x94
-function render_debug_sphere(tag, color, fxname) {
-    /#
+/#
+
+    // Namespace microwave_turret/microwave_turret_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xea415c35, Offset: 0x1358
+    // Size: 0x94
+    function render_debug_sphere(tag, color, fxname) {
         if (getdvarint(#"scr_microwave_turret_fx_debug", 0)) {
             origin = self gettagorigin(tag);
             sphere(origin, 2, color, 0.75, 1, 10, 100);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace microwave_turret/microwave_turret_shared
 // Params 4, eflags: 0x0

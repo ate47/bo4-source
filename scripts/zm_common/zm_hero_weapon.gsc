@@ -66,23 +66,22 @@ function __init__() {
     zm_armor::register(#"hero_weapon_armor", 0);
 }
 
-// Namespace zm_hero_weapon/zm_hero_weapon
-// Params 0, eflags: 0x0
-// Checksum 0xa16a7cdb, Offset: 0x560
-// Size: 0x3c
-function function_281b4073() {
-    /#
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-    #/
-}
+/#
 
-// Namespace zm_hero_weapon/zm_hero_weapon
-// Params 1, eflags: 0x0
-// Checksum 0x6679c6d2, Offset: 0x5a8
-// Size: 0x20a
-function function_124446e(weapon_name) {
-    /#
+    // Namespace zm_hero_weapon/zm_hero_weapon
+    // Params 0, eflags: 0x0
+    // Checksum 0xa16a7cdb, Offset: 0x560
+    // Size: 0x3c
+    function function_281b4073() {
+        adddebugcommand("<unknown string>");
+        adddebugcommand("<unknown string>");
+    }
+
+    // Namespace zm_hero_weapon/zm_hero_weapon
+    // Params 1, eflags: 0x0
+    // Checksum 0x6679c6d2, Offset: 0x5a8
+    // Size: 0x20a
+    function function_124446e(weapon_name) {
         self.var_fd05e363 = getweapon(weapon_name);
         var_b4b7833b = getsubstr(weapon_name, weapon_name.size - 1, weapon_name.size);
         weapon_level = int(var_b4b7833b) - 1;
@@ -112,8 +111,9 @@ function function_124446e(weapon_name) {
             self.var_ec334996 = function_c49bf808(8000);
             break;
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_hero_weapon/zm_hero_weapon
 // Params 2, eflags: 0x1 linked

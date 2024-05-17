@@ -409,12 +409,13 @@ function function_c3ad6d4a(b_wait_for_player = 0) {
     level notify(#"hash_6c660debf41d6362");
 }
 
-// Namespace zm_escape_zstandard/zm_escape_zstandard
-// Params 0, eflags: 0x0
-// Checksum 0x1e1398b8, Offset: 0x2ba8
-// Size: 0x1e2
-function function_b9cacd48() {
-    /#
+/#
+
+    // Namespace zm_escape_zstandard/zm_escape_zstandard
+    // Params 0, eflags: 0x0
+    // Checksum 0x1e1398b8, Offset: 0x2ba8
+    // Size: 0x1e2
+    function function_b9cacd48() {
         while (true) {
             zm_utility::function_11101458("<unknown string>");
             wait(10);
@@ -432,8 +433,9 @@ function function_b9cacd48() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_escape_zstandard/zm_escape_zstandard
 // Params 0, eflags: 0x1 linked

@@ -581,27 +581,26 @@ function function_b3b2516a() {
     return var_4cea0b02;
 }
 
-// Namespace paschal/zm_escape_paschal
-// Params 0, eflags: 0x0
-// Checksum 0xc5687387, Offset: 0x4268
-// Size: 0x84
-function function_db632f7() {
-    /#
+/#
+
+    // Namespace paschal/zm_escape_paschal
+    // Params 0, eflags: 0x0
+    // Checksum 0xc5687387, Offset: 0x4268
+    // Size: 0x84
+    function function_db632f7() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_69864bdb);
         adddebugcommand("zone_sally_port");
         adddebugcommand("s_player_w_g_3");
-    #/
-}
+    }
 
-// Namespace paschal/zm_escape_paschal
-// Params 1, eflags: 0x0
-// Checksum 0x174b18a0, Offset: 0x42f8
-// Size: 0x72
-function function_69864bdb(cmd) {
-    /#
+    // Namespace paschal/zm_escape_paschal
+    // Params 1, eflags: 0x0
+    // Checksum 0x174b18a0, Offset: 0x42f8
+    // Size: 0x72
+    function function_69864bdb(cmd) {
         switch (cmd) {
         case #"hash_17435d3d0cb6939a":
             level notify(#"hash_4aedd2f50e5e307");
@@ -610,8 +609,9 @@ function function_69864bdb(cmd) {
             level notify(#"hash_703a48e58dfd43d6");
             break;
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace paschal/zm_escape_paschal
 // Params 1, eflags: 0x1 linked
@@ -1516,12 +1516,13 @@ function function_9465204c(e_activator) {
     }
 }
 
-// Namespace paschal/zm_escape_paschal
-// Params 0, eflags: 0x0
-// Checksum 0x6b96cf8e, Offset: 0x8bc0
-// Size: 0x174
-function function_676ccd91() {
-    /#
+/#
+
+    // Namespace paschal/zm_escape_paschal
+    // Params 0, eflags: 0x0
+    // Checksum 0x6b96cf8e, Offset: 0x8bc0
+    // Size: 0x174
+    function function_676ccd91() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
@@ -1538,15 +1539,13 @@ function function_676ccd91() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace paschal/zm_escape_paschal
-// Params 1, eflags: 0x0
-// Checksum 0xc1634f74, Offset: 0x8d40
-// Size: 0x66a
-function function_52e31e1a(cmd) {
-    /#
+    // Namespace paschal/zm_escape_paschal
+    // Params 1, eflags: 0x0
+    // Checksum 0xc1634f74, Offset: 0x8d40
+    // Size: 0x66a
+    function function_52e31e1a(cmd) {
         switch (cmd) {
         case #"hash_c8e283d06114e8b":
             var_c699e2b5 = struct::get("<unknown string>");
@@ -1616,15 +1615,13 @@ function function_52e31e1a(cmd) {
             level thread function_249c62e7();
             break;
         }
-    #/
-}
+    }
 
-// Namespace paschal/zm_escape_paschal
-// Params 0, eflags: 0x0
-// Checksum 0x43b08c03, Offset: 0x93b8
-// Size: 0x1d8
-function function_d053b82c() {
-    /#
+    // Namespace paschal/zm_escape_paschal
+    // Params 0, eflags: 0x0
+    // Checksum 0x43b08c03, Offset: 0x93b8
+    // Size: 0x1d8
+    function function_d053b82c() {
         self endon(#"death", #"disconnect");
         while (true) {
             s_result = self waittill(#"throwing_tomahawk");
@@ -1642,15 +1639,13 @@ function function_d053b82c() {
                 wait(0.1);
             }
         }
-    #/
-}
+    }
 
-// Namespace paschal/zm_escape_paschal
-// Params 0, eflags: 0x0
-// Checksum 0x17966b4d, Offset: 0x9598
-// Size: 0x72
-function function_1802df85() {
-    /#
+    // Namespace paschal/zm_escape_paschal
+    // Params 0, eflags: 0x0
+    // Checksum 0x17966b4d, Offset: 0x9598
+    // Size: 0x72
+    function function_1802df85() {
         level notify(#"hash_600fbb2538368696");
         level endon(#"hash_600fbb2538368696");
         if (isdefined(level.var_bc410725) && level.var_bc410725) {
@@ -1658,15 +1653,13 @@ function function_1802df85() {
             return;
         }
         level.var_bc410725 = 1;
-    #/
-}
+    }
 
-// Namespace paschal/zm_escape_paschal
-// Params 0, eflags: 0x0
-// Checksum 0x6e6675d, Offset: 0x9618
-// Size: 0xf0
-function function_249c62e7() {
-    /#
+    // Namespace paschal/zm_escape_paschal
+    // Params 0, eflags: 0x0
+    // Checksum 0x6e6675d, Offset: 0x9618
+    // Size: 0xf0
+    function function_249c62e7() {
         level notify(#"hash_1971ee3d4c0a3ede");
         level endon(#"hash_1971ee3d4c0a3ede");
         if (isdefined(level.var_af7ee21c) && level.var_af7ee21c) {
@@ -1682,23 +1675,22 @@ function function_249c62e7() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace paschal/zm_escape_paschal
-// Params 0, eflags: 0x0
-// Checksum 0x2deff4d8, Offset: 0x9710
-// Size: 0x78
-function function_6af89001() {
-    /#
+    // Namespace paschal/zm_escape_paschal
+    // Params 0, eflags: 0x0
+    // Checksum 0x2deff4d8, Offset: 0x9710
+    // Size: 0x78
+    function function_6af89001() {
         self setcandamage(1);
         self.health = 100000000;
         while (true) {
             s_result = self waittill(#"blast_attack");
             iprintln("<unknown string>");
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace paschal/zm_escape_paschal
 // Params 1, eflags: 0x1 linked
@@ -3342,34 +3334,34 @@ function private function_914f17b9() {
     e_player zm_vo::function_a2bd5a0c(#"hash_2853b0b1b9bd2301", 0, 1, 9999);
 }
 
-// Namespace paschal/zm_escape_paschal
-// Params 0, eflags: 0x0
-// Checksum 0x20a56b24, Offset: 0x112c0
-// Size: 0x6c
-function function_e15cfd01() {
-    /#
+/#
+
+    // Namespace paschal/zm_escape_paschal
+    // Params 0, eflags: 0x0
+    // Checksum 0x20a56b24, Offset: 0x112c0
+    // Size: 0x6c
+    function function_e15cfd01() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_1b504133);
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace paschal/zm_escape_paschal
-// Params 1, eflags: 0x0
-// Checksum 0x831abadb, Offset: 0x11338
-// Size: 0x5a
-function function_1b504133(cmd) {
-    /#
+    // Namespace paschal/zm_escape_paschal
+    // Params 1, eflags: 0x0
+    // Checksum 0x831abadb, Offset: 0x11338
+    // Size: 0x5a
+    function function_1b504133(cmd) {
         switch (cmd) {
         case #"hash_7d175a3cfdd62ec1":
             level notify(#"hash_4ff99434ccb06268");
             level.var_3e89bfdf = 1;
             break;
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace paschal/zm_escape_paschal
 // Params 1, eflags: 0x1 linked

@@ -631,31 +631,29 @@ function function_5535522e() {
     }
 }
 
-// Namespace zm_orange_pap/zm_orange_pap
-// Params 0, eflags: 0x0
-// Checksum 0x8d2c6ac7, Offset: 0x2818
-// Size: 0x8
-function function_80a08789() {
-    /#
-    #/
-}
+/#
 
-// Namespace zm_orange_pap/zm_orange_pap
-// Params 0, eflags: 0x0
-// Checksum 0xd724ee3b, Offset: 0x2828
-// Size: 0x16
-function function_79946aff() {
-    /#
+    // Namespace zm_orange_pap/zm_orange_pap
+    // Params 0, eflags: 0x0
+    // Checksum 0x8d2c6ac7, Offset: 0x2818
+    // Size: 0x8
+    function function_80a08789() {
+        
+    }
+
+    // Namespace zm_orange_pap/zm_orange_pap
+    // Params 0, eflags: 0x0
+    // Checksum 0xd724ee3b, Offset: 0x2828
+    // Size: 0x16
+    function function_79946aff() {
         level.var_f6f7a368 = 3;
-    #/
-}
+    }
 
-// Namespace zm_orange_pap/zm_orange_pap
-// Params 1, eflags: 0x0
-// Checksum 0x191adbd4, Offset: 0x2848
-// Size: 0xb8
-function function_ccc079bc(var_b876e1f5) {
-    /#
+    // Namespace zm_orange_pap/zm_orange_pap
+    // Params 1, eflags: 0x0
+    // Checksum 0x191adbd4, Offset: 0x2848
+    // Size: 0xb8
+    function function_ccc079bc(var_b876e1f5) {
         n_index = 0;
         for (i = 0; i < level.var_4d8e32c8.size; i++) {
             if (level.var_4d8e32c8[i].script_noteworthy == var_b876e1f5) {
@@ -668,30 +666,26 @@ function function_ccc079bc(var_b876e1f5) {
         }
         level.var_f6f7a368 = n_index;
         level notify(#"hash_39b6629ce957cce9");
-    #/
-}
+    }
 
-// Namespace zm_orange_pap/zm_orange_pap
-// Params 0, eflags: 0x0
-// Checksum 0x7e3fc40b, Offset: 0x2908
-// Size: 0x88
-function function_eaaea036() {
-    /#
+    // Namespace zm_orange_pap/zm_orange_pap
+    // Params 0, eflags: 0x0
+    // Checksum 0x7e3fc40b, Offset: 0x2908
+    // Size: 0x88
+    function function_eaaea036() {
         foreach (var_143bf55a in level.var_9f657597) {
             var_143bf55a scene::play("<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace zm_orange_pap/zm_orange_pap
-// Params 0, eflags: 0x0
-// Checksum 0x5eeeadfc, Offset: 0x2998
-// Size: 0x88
-function function_96ef31b7() {
-    /#
+    // Namespace zm_orange_pap/zm_orange_pap
+    // Params 0, eflags: 0x0
+    // Checksum 0x5eeeadfc, Offset: 0x2998
+    // Size: 0x88
+    function function_96ef31b7() {
         foreach (var_143bf55a in level.var_9f657597) {
             var_143bf55a scene::play("<unknown string>");
         }
-    #/
-}
+    }
 
+#/

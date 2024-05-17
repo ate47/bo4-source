@@ -649,26 +649,25 @@ function function_a9822793() {
     #/
 }
 
-// Namespace teams/team_assignment
-// Params 0, eflags: 0x4
-// Checksum 0x298f5252, Offset: 0x2318
-// Size: 0x90
-function private function_a9bfa6d6() {
-    /#
+/#
+
+    // Namespace teams/team_assignment
+    // Params 0, eflags: 0x4
+    // Checksum 0x298f5252, Offset: 0x2318
+    // Size: 0x90
+    function private function_a9bfa6d6() {
         if (level.var_ba13fb7a) {
             foreach (team in level.teams) {
                 self thread function_6c66cc64(team);
             }
         }
-    #/
-}
+    }
 
-// Namespace teams/team_assignment
-// Params 1, eflags: 0x4
-// Checksum 0x65884ca4, Offset: 0x23b0
-// Size: 0x2f0
-function private function_6c66cc64(team) {
-    /#
+    // Namespace teams/team_assignment
+    // Params 1, eflags: 0x4
+    // Checksum 0x65884ca4, Offset: 0x23b0
+    // Size: 0x2f0
+    function private function_6c66cc64(team) {
         players = getplayers(team);
         if (players.size == 0) {
             return;
@@ -697,15 +696,13 @@ function private function_6c66cc64(team) {
             party = player getparty();
             println("<unknown string>" + "<unknown string>" + player.name + "<unknown string>" + (party.fill ? "<unknown string>" : "<unknown string>") + "<unknown string>" + party.var_a15e4438);
         }
-    #/
-}
+    }
 
-// Namespace teams/team_assignment
-// Params 0, eflags: 0x0
-// Checksum 0xb7abb5f, Offset: 0x26a8
-// Size: 0x40c
-function function_58b6d2c9() {
-    /#
+    // Namespace teams/team_assignment
+    // Params 0, eflags: 0x0
+    // Checksum 0xb7abb5f, Offset: 0x26a8
+    // Size: 0x40c
+    function function_58b6d2c9() {
         if (level.multiteam && level.maxteamplayers > 0) {
             players = getplayers();
             foreach (team in level.teams) {
@@ -736,15 +733,13 @@ function function_58b6d2c9() {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace teams/team_assignment
-// Params 0, eflags: 0x0
-// Checksum 0x2474ff81, Offset: 0x2ac0
-// Size: 0x144
-function function_1aa0418f() {
-    /#
+    // Namespace teams/team_assignment
+    // Params 0, eflags: 0x0
+    // Checksum 0x2474ff81, Offset: 0x2ac0
+    // Size: 0x144
+    function function_1aa0418f() {
         while (true) {
             wait(3);
             players = getplayers();
@@ -759,6 +754,6 @@ function function_1aa0418f() {
                 }
             }
         }
-    #/
-}
+    }
 
+#/

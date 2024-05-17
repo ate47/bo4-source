@@ -172,14 +172,15 @@ function function_ab7f70b9(e_player) {
     return str_display;
 }
 
-// Namespace zm_office_zones/zm_office_zones
-// Params 0, eflags: 0x0
-// Checksum 0x80085022, Offset: 0xd40
-// Size: 0x3c
-function function_2fb4c999() {
-    /#
+/#
+
+    // Namespace zm_office_zones/zm_office_zones
+    // Params 0, eflags: 0x0
+    // Checksum 0x80085022, Offset: 0xd40
+    // Size: 0x3c
+    function function_2fb4c999() {
         level waittill(#"open_sesame");
         level flag::set("<unknown string>");
-    #/
-}
+    }
 
+#/

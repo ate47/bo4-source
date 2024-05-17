@@ -812,18 +812,19 @@ function getlockontime(target, weapon) {
     return locklengthms / lockonspeed;
 }
 
-// Namespace hacker_tool/hacker_tool
-// Params 0, eflags: 0x0
-// Checksum 0x516edd69, Offset: 0x2e50
-// Size: 0xac
-function tunables() {
-    /#
+/#
+
+    // Namespace hacker_tool/hacker_tool
+    // Params 0, eflags: 0x0
+    // Checksum 0x516edd69, Offset: 0x2e50
+    // Size: 0xac
+    function tunables() {
         while (true) {
             level.hackertoollostsightlimitms = getdvarint(#"scr_hackertoollostsightlimitms", 1000);
             level.hackertoollockonradius = getdvarfloat(#"scr_hackertoollockonradius", 20);
             level.hackertoollockonfov = getdvarint(#"scr_hackertoollockonfov", 65);
             wait(1);
         }
-    #/
-}
+    }
 
+#/

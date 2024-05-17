@@ -1207,17 +1207,18 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     attacker stats::function_d40764f3(#"longest_firing_range_bullseye", 1);
 }
 
-// Namespace wz_progression/wz_progression
-// Params 0, eflags: 0x0
-// Checksum 0xebc4ac4b, Offset: 0x60a8
-// Size: 0x5e
-function function_f6dc1aa9() {
-    /#
+/#
+
+    // Namespace wz_progression/wz_progression
+    // Params 0, eflags: 0x0
+    // Checksum 0xebc4ac4b, Offset: 0x60a8
+    // Size: 0x5e
+    function function_f6dc1aa9() {
         while (true) {
             var_f748425e = self.origin + (0, 0, 45);
             sphere(var_f748425e, 5, (1, 1, 0));
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

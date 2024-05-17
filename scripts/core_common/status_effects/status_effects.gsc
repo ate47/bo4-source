@@ -60,12 +60,13 @@ function on_end_game() {
     }
 }
 
-// Namespace status_effect/status_effects
-// Params 0, eflags: 0x0
-// Checksum 0xca7499a4, Offset: 0x248
-// Size: 0xe4
-function status_effects_init() {
-    /#
+/#
+
+    // Namespace status_effect/status_effects
+    // Params 0, eflags: 0x0
+    // Checksum 0xca7499a4, Offset: 0x248
+    // Size: 0xe4
+    function status_effects_init() {
         setdvar(#"scr_status_effects_devgui_cmd", "<unknown string>");
         setdvar(#"scr_status_effects_devgui_arg", 0);
         setdvar(#"scr_status_effects_devgui_player", 0);
@@ -76,29 +77,25 @@ function status_effects_init() {
         level.status_effects_devgui_player_connect = &status_effects_devgui_player_connect;
         level.status_effects_devgui_player_disconnect = &status_effects_devgui_player_disconnect;
         level thread status_effects_devgui_think();
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 0, eflags: 0x0
-// Checksum 0x9edf9d13, Offset: 0x338
-// Size: 0x5c
-function status_effects_devgui_player_disconnect() {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 0, eflags: 0x0
+    // Checksum 0x9edf9d13, Offset: 0x338
+    // Size: 0x5c
+    function status_effects_devgui_player_disconnect() {
         if (!isdefined(level.status_effects_devgui_base)) {
             return;
         }
         remove_cmd_with_root = "<unknown string>" + level.status_effects_devgui_base + self.playername + "<unknown string>";
         util::add_queued_debug_command(remove_cmd_with_root);
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 0, eflags: 0x0
-// Checksum 0xfe4ec3f8, Offset: 0x3a0
-// Size: 0x108
-function status_effects_devgui_player_connect() {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 0, eflags: 0x0
+    // Checksum 0xfe4ec3f8, Offset: 0x3a0
+    // Size: 0x108
+    function status_effects_devgui_player_connect() {
         if (!isdefined(level.status_effects_devgui_base)) {
             return;
         }
@@ -112,27 +109,23 @@ function status_effects_devgui_player_connect() {
             function_2a302935(level.status_effects_devgui_base, players[i].playername, i + 1);
             return;
         }
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 3, eflags: 0x0
-// Checksum 0x6c7c695, Offset: 0x4b0
-// Size: 0x8c
-function function_2a302935(root, pname, index) {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 3, eflags: 0x0
+    // Checksum 0x6c7c695, Offset: 0x4b0
+    // Size: 0x8c
+    function function_2a302935(root, pname, index) {
         add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
         pid = "<unknown string>" + index;
         status_effects_devgui_add_player_command(add_cmd_with_root, pid, "<unknown string>", "<unknown string>", undefined);
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 3, eflags: 0x0
-// Checksum 0xef073c36, Offset: 0x548
-// Size: 0x11e
-function status_effects_devgui_add_player_status_effects(root, pname, index) {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 3, eflags: 0x0
+    // Checksum 0xef073c36, Offset: 0x548
+    // Size: 0x11e
+    function status_effects_devgui_add_player_status_effects(root, pname, index) {
         add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
         pid = "<unknown string>" + index;
         if (isdefined(level.var_233471d2)) {
@@ -145,15 +138,13 @@ function status_effects_devgui_add_player_status_effects(root, pname, index) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 3, eflags: 0x0
-// Checksum 0xe255fb99, Offset: 0x670
-// Size: 0x136
-function status_effects_devgui_add_player_grenades(root, pname, index) {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 3, eflags: 0x0
+    // Checksum 0xe255fb99, Offset: 0x670
+    // Size: 0x136
+    function status_effects_devgui_add_player_grenades(root, pname, index) {
         add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
         pid = "<unknown string>" + index;
         if (isdefined(level.var_233471d2)) {
@@ -167,28 +158,24 @@ function status_effects_devgui_add_player_grenades(root, pname, index) {
                 }
             }
         }
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 5, eflags: 0x0
-// Checksum 0xa064652d, Offset: 0x7b0
-// Size: 0xc4
-function status_effects_devgui_add_player_command(root, pid, cmdname, cmddvar, argdvar) {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 5, eflags: 0x0
+    // Checksum 0xa064652d, Offset: 0x7b0
+    // Size: 0xc4
+    function status_effects_devgui_add_player_command(root, pid, cmdname, cmddvar, argdvar) {
         if (!isdefined(argdvar)) {
             argdvar = "<unknown string>";
         }
         adddebugcommand(root + cmdname + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + cmddvar + "<unknown string>" + "<unknown string>" + "<unknown string>" + argdvar + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 0, eflags: 0x0
-// Checksum 0x4b1c36db, Offset: 0x880
-// Size: 0x178
-function status_effects_devgui_think() {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 0, eflags: 0x0
+    // Checksum 0x4b1c36db, Offset: 0x880
+    // Size: 0x178
+    function status_effects_devgui_think() {
         for (;;) {
             cmd = getdvarstring(#"scr_status_effects_devgui_cmd");
             if (cmd == "<unknown string>") {
@@ -212,42 +199,36 @@ function status_effects_devgui_think() {
             setdvar(#"scr_status_effects_devgui_arg", "<unknown string>");
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 1, eflags: 0x0
-// Checksum 0x1c14dd52, Offset: 0xa00
-// Size: 0x54
-function function_64ba1c7e(pid) {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 1, eflags: 0x0
+    // Checksum 0x1c14dd52, Offset: 0xa00
+    // Size: 0x54
+    function function_64ba1c7e(pid) {
         player = getplayers()[pid - 1];
         if (isdefined(player)) {
             player function_6519f95f();
         }
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 1, eflags: 0x0
-// Checksum 0x27c011e4, Offset: 0xa60
-// Size: 0x8c
-function status_effects_set_active_effect(pid) {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 1, eflags: 0x0
+    // Checksum 0x27c011e4, Offset: 0xa60
+    // Size: 0x8c
+    function status_effects_set_active_effect(pid) {
         arg = getdvarint(#"scr_status_effects_devgui_arg", 0);
         player = getplayers()[pid - 1];
         if (isdefined(player)) {
             player function_e2bff3ce(arg, undefined, player);
         }
-    #/
-}
+    }
 
-// Namespace status_effect/status_effects
-// Params 1, eflags: 0x0
-// Checksum 0x5b1b38f4, Offset: 0xaf8
-// Size: 0x20c
-function status_effects_give_grenade(pid) {
-    /#
+    // Namespace status_effect/status_effects
+    // Params 1, eflags: 0x0
+    // Checksum 0x5b1b38f4, Offset: 0xaf8
+    // Size: 0x20c
+    function status_effects_give_grenade(pid) {
         arg = getdvarstring(#"scr_status_effects_devgui_arg");
         player = getplayers()[pid - 1];
         if (isdefined(player)) {
@@ -272,6 +253,6 @@ function status_effects_give_grenade(pid) {
             }
             player giveweapon(weapon);
         }
-    #/
-}
+    }
 
+#/

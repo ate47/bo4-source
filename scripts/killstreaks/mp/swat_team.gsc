@@ -1546,12 +1546,13 @@ function function_d15dd929(origin) {
     return true;
 }
 
-// Namespace swat_team/swat_team
-// Params 1, eflags: 0x0
-// Checksum 0xbb2d6b3c, Offset: 0x69e8
-// Size: 0xbc
-function debug_water(tpoint) {
-    /#
+/#
+
+    // Namespace swat_team/swat_team
+    // Params 1, eflags: 0x0
+    // Checksum 0xbb2d6b3c, Offset: 0x69e8
+    // Size: 0xbc
+    function debug_water(tpoint) {
         if (!function_d15dd929(tpoint.origin)) {
             /#
                 record3dtext("<unknown string>", tpoint.origin + (0, 0, 40), (1, 1, 1), "generic");
@@ -1560,8 +1561,9 @@ function debug_water(tpoint) {
                 recordline(tpoint.origin + (0, 0, 40), tpoint.origin, (1, 1, 1), "generic");
             #/
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace swat_team/swat_team
 // Params 3, eflags: 0x1 linked

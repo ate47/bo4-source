@@ -117,27 +117,26 @@ function function_9dc0fa01() {
     }
 }
 
-// Namespace namespace_795feefe/namespace_795feefe
-// Params 0, eflags: 0x0
-// Checksum 0xb8378902, Offset: 0x8e0
-// Size: 0x84
-function function_fc45523f() {
-    /#
+/#
+
+    // Namespace namespace_795feefe/namespace_795feefe
+    // Params 0, eflags: 0x0
+    // Checksum 0xb8378902, Offset: 0x8e0
+    // Size: 0x84
+    function function_fc45523f() {
         while (!canadddebugcommand()) {
             waitframe(1);
         }
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         level thread function_37401a52();
-    #/
-}
+    }
 
-// Namespace namespace_795feefe/namespace_795feefe
-// Params 0, eflags: 0x0
-// Checksum 0x8a5db91b, Offset: 0x970
-// Size: 0x116
-function function_37401a52() {
-    /#
+    // Namespace namespace_795feefe/namespace_795feefe
+    // Params 0, eflags: 0x0
+    // Checksum 0x8a5db91b, Offset: 0x970
+    // Size: 0x116
+    function function_37401a52() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         level endon(#"game_ended");
@@ -155,15 +154,13 @@ function function_37401a52() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace namespace_795feefe/namespace_795feefe
-// Params 0, eflags: 0x0
-// Checksum 0xb636d881, Offset: 0xa90
-// Size: 0x304
-function function_de4b0705() {
-    /#
+    // Namespace namespace_795feefe/namespace_795feefe
+    // Params 0, eflags: 0x0
+    // Checksum 0xb636d881, Offset: 0xa90
+    // Size: 0x304
+    function function_de4b0705() {
         var_7206c0ef = getent("<unknown string>", "<unknown string>");
         zombie_plane_flight_goal = struct::get("<unknown string>", "<unknown string>");
         if (!isdefined(level.deathcircle) && isdefined(var_7206c0ef) && isdefined(zombie_plane_flight_goal)) {
@@ -192,6 +189,6 @@ function function_de4b0705() {
             return;
         }
         function_9dc0fa01();
-    #/
-}
+    }
 
+#/

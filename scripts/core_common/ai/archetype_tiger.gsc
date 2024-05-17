@@ -1046,42 +1046,39 @@ function function_b708cfe7() {
     return undefined;
 }
 
-// Namespace tigerbehavior/archetype_tiger
-// Params 0, eflags: 0x4
-// Checksum 0x997a7b12, Offset: 0x48b8
-// Size: 0xc0
-function private function_21c73eb5() {
-    /#
+/#
+
+    // Namespace tigerbehavior/archetype_tiger
+    // Params 0, eflags: 0x4
+    // Checksum 0x997a7b12, Offset: 0x48b8
+    // Size: 0xc0
+    function private function_21c73eb5() {
         enemies = getaiarchetypearray(#"tiger");
         foreach (enemy in enemies) {
             if (isalive(enemy)) {
                 enemy kill();
             }
         }
-    #/
-}
+    }
 
-// Namespace tigerbehavior/archetype_tiger
-// Params 0, eflags: 0x4
-// Checksum 0xc19fd21c, Offset: 0x4980
-// Size: 0xb6
-function private function_88b22921() {
-    /#
+    // Namespace tigerbehavior/archetype_tiger
+    // Params 0, eflags: 0x4
+    // Checksum 0xc19fd21c, Offset: 0x4980
+    // Size: 0xb6
+    function private function_88b22921() {
         enemies = getaiarchetypearray(#"tiger");
         foreach (enemy in enemies) {
             if (isalive(enemy)) {
                 enemy.var_86152978 = gettime();
             }
         }
-    #/
-}
+    }
 
-// Namespace tigerbehavior/archetype_tiger
-// Params 0, eflags: 0x4
-// Checksum 0xd0e54d7b, Offset: 0x4a40
-// Size: 0x1c8
-function private function_1e4eb5f0() {
-    /#
+    // Namespace tigerbehavior/archetype_tiger
+    // Params 0, eflags: 0x4
+    // Checksum 0xd0e54d7b, Offset: 0x4a40
+    // Size: 0x1c8
+    function private function_1e4eb5f0() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -1109,6 +1106,6 @@ function private function_1e4eb5f0() {
             }
             setdvar(#"hash_3b467d1615c469f8", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

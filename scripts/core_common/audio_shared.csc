@@ -806,17 +806,19 @@ function snd_play_auto_fx(fxid, alias, offsetx, offsety, offsetz, onground, area
     soundplayautofx(fxid, alias, offsetx, offsety, offsetz, onground, area, threshold, alias_override);
 }
 
-// Namespace audio/audio_shared
-// Params 3, eflags: 0x0
-// Checksum 0xce3ad03c, Offset: 0x2f90
-// Size: 0x74
-function snd_print_fx_id(fxid, type, ent) {
-    /#
+/#
+
+    // Namespace audio/audio_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xce3ad03c, Offset: 0x2f90
+    // Size: 0x74
+    function snd_print_fx_id(fxid, type, ent) {
         if (getdvarint(#"debug_audio", 0) > 0) {
             println("<unknown string>" + fxid + "<unknown string>" + type);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace audio/audio_shared
 // Params 0, eflags: 0x0

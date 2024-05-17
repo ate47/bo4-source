@@ -712,12 +712,13 @@ function function_a393b77f() {
     self.var_7b2ac934 = 0;
 }
 
-// Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
-// Params 0, eflags: 0x0
-// Checksum 0x5b66bca0, Offset: 0x3000
-// Size: 0x2cc
-function function_80a9077f() {
-    /#
+/#
+
+    // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
+    // Params 0, eflags: 0x0
+    // Checksum 0x5b66bca0, Offset: 0x3000
+    // Size: 0x2cc
+    function function_80a9077f() {
         foreach (s_zipline_crank in level.a_s_zipline_cranks) {
             if (!isdefined(s_zipline_crank.var_2e77da49 || !s_zipline_crank.var_2e77da49)) {
                 s_zipline_crank.e_crank show();
@@ -747,6 +748,6 @@ function function_80a9077f() {
             level flag::set(#"hash_7d9f8ec3cb9af87e");
             level flag::set(#"facility_available");
         }
-    #/
-}
+    }
 
+#/

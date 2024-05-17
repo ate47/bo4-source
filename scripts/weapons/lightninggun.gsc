@@ -32,20 +32,22 @@ function init_shared() {
     #/
 }
 
-// Namespace lightninggun/lightninggun
-// Params 0, eflags: 0x0
-// Checksum 0x3aab873f, Offset: 0x330
-// Size: 0xaa
-function update_dvars() {
-    /#
+/#
+
+    // Namespace lightninggun/lightninggun
+    // Params 0, eflags: 0x0
+    // Checksum 0x3aab873f, Offset: 0x330
+    // Size: 0xaa
+    function update_dvars() {
         while (true) {
             wait(1);
             level.weaponlightninggunkillcamtime = getdvarfloat(#"scr_lightninggunkillcamtime", 0.35);
             level.weaponlightninggunkillcamdecelpercent = getdvarfloat(#"scr_lightninggunkillcamdecelpercent", 0.25);
             level.weaponlightninggunkillcamoffset = getdvarfloat(#"scr_lightninggunkillcamoffset", 150);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace lightninggun/lightninggun
 // Params 1, eflags: 0x0

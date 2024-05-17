@@ -867,12 +867,13 @@ function _giveplayerkillstreakinternal(player, momentum, oldmomentum, killstreak
     }
 }
 
-// Namespace globallogic_score/globallogic_score
-// Params 0, eflags: 0x0
-// Checksum 0x2b7d6d8c, Offset: 0x3980
-// Size: 0xf8
-function setplayermomentumdebug() {
-    /#
+/#
+
+    // Namespace globallogic_score/globallogic_score
+    // Params 0, eflags: 0x0
+    // Checksum 0x2b7d6d8c, Offset: 0x3980
+    // Size: 0xf8
+    function setplayermomentumdebug() {
         setdvar(#"sv_momentumpercent", 0);
         while (true) {
             wait(1);
@@ -887,8 +888,9 @@ function setplayermomentumdebug() {
                 }
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic_score/globallogic_score
 // Params 4, eflags: 0x0

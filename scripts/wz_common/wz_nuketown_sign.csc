@@ -109,16 +109,17 @@ function set_dvar_float_if_unset(dvar, value) {
     return getdvarfloat(dvar, 0);
 }
 
-// Namespace wz_nuketown_sign/wz_nuketown_sign
-// Params 2, eflags: 0x0
-// Checksum 0xa1361610, Offset: 0x6b8
-// Size: 0x4e
-function function_102a701c(tens, ones) {
-    /#
+/#
+
+    // Namespace wz_nuketown_sign/wz_nuketown_sign
+    // Params 2, eflags: 0x0
+    // Checksum 0xa1361610, Offset: 0x6b8
+    // Size: 0x4e
+    function function_102a701c(tens, ones) {
         while (!isdefined(tens) || !isdefined(ones)) {
             iprintlnbold("<unknown string>");
             wait(2);
         }
-    #/
-}
+    }
 
+#/

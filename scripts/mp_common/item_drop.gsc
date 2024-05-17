@@ -54,23 +54,22 @@ function __init__() {
     #/
 }
 
-// Namespace item_drop/item_drop
-// Params 0, eflags: 0x4
-// Checksum 0xf28da510, Offset: 0x550
-// Size: 0x54
-function private function_344f8c02() {
-    /#
+/#
+
+    // Namespace item_drop/item_drop
+    // Params 0, eflags: 0x4
+    // Checksum 0xf28da510, Offset: 0x550
+    // Size: 0x54
+    function private function_344f8c02() {
         adddebugcommand("<unknown string>" + util::get_map_name() + "<unknown string>");
         level thread function_60c9a9e1();
-    #/
-}
+    }
 
-// Namespace item_drop/item_drop
-// Params 0, eflags: 0x4
-// Checksum 0x83cc1389, Offset: 0x5b0
-// Size: 0x76
-function private function_60c9a9e1() {
-    /#
+    // Namespace item_drop/item_drop
+    // Params 0, eflags: 0x4
+    // Checksum 0x83cc1389, Offset: 0x5b0
+    // Size: 0x76
+    function private function_60c9a9e1() {
         while (true) {
             if (getdvarint(#"hash_9fd3c7ff85dca2c", 0)) {
                 setdvar(#"hash_9fd3c7ff85dca2c", 0);
@@ -78,8 +77,9 @@ function private function_60c9a9e1() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace item_drop/item_drop
 // Params 5, eflags: 0x4
@@ -1034,12 +1034,13 @@ function function_ba4c90d9(item) {
     }
 }
 
-// Namespace item_drop/item_drop
-// Params 3, eflags: 0x0
-// Checksum 0xcff309a5, Offset: 0x4de0
-// Size: 0x11c
-function debug_sphere(origin, radius, color) {
-    /#
+/#
+
+    // Namespace item_drop/item_drop
+    // Params 3, eflags: 0x0
+    // Checksum 0xcff309a5, Offset: 0x4de0
+    // Size: 0x11c
+    function debug_sphere(origin, radius, color) {
         if (!getdvarint(#"hash_2844354393b7be9e", 0)) {
             return;
         }
@@ -1047,15 +1048,13 @@ function debug_sphere(origin, radius, color) {
         framespersec = int(1 / float(function_60d95f53()) / 1000);
         sphere(origin, radius, color, 1, 0, 10, framespersec * sec);
         recordsphere(origin, radius, color, "<unknown string>");
-    #/
-}
+    }
 
-// Namespace item_drop/item_drop
-// Params 3, eflags: 0x0
-// Checksum 0xd8ba3985, Offset: 0x4f08
-// Size: 0x11c
-function debug_line(start, end, color) {
-    /#
+    // Namespace item_drop/item_drop
+    // Params 3, eflags: 0x0
+    // Checksum 0xd8ba3985, Offset: 0x4f08
+    // Size: 0x11c
+    function debug_line(start, end, color) {
         if (!getdvarint(#"hash_2844354393b7be9e", 0)) {
             return;
         }
@@ -1063,6 +1062,6 @@ function debug_line(start, end, color) {
         framespersec = int(1 / float(function_60d95f53()) / 1000);
         line(start, end, color, 1, 0, framespersec * sec);
         recordline(start, end, color, "<unknown string>");
-    #/
-}
+    }
 
+#/

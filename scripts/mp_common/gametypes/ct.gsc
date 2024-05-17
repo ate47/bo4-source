@@ -102,7 +102,7 @@ function function_b89106ad(gamedifficulty) {
     level.usingscorestreaks = 0;
     level.disablescoreevents = 1;
     level.disablemomentum = 1;
-    function_72e84e64();
+    j_fore_le_01();
     level notify(#"combattraining_logic_finished", {#success:1});
 }
 
@@ -159,7 +159,7 @@ function function_78aff698() {
 // Params 0, eflags: 0x0
 // Checksum 0xa85372a8, Offset: 0x790
 // Size: 0x18e
-function function_72e84e64() {
+function j_fore_le_01() {
     level endon(#"combattraining_logic_finished");
     level.var_105dad71 = 1;
     level.var_200077ef = 0;

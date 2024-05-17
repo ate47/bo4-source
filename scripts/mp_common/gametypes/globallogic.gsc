@@ -268,18 +268,20 @@ function init() {
     thread hud_message::init();
 }
 
-// Namespace globallogic/globallogic
-// Params 0, eflags: 0x0
-// Checksum 0x76d3ff9a, Offset: 0x2058
-// Size: 0x52
-function function_340107d4() {
-    /#
+/#
+
+    // Namespace globallogic/globallogic
+    // Params 0, eflags: 0x0
+    // Checksum 0x76d3ff9a, Offset: 0x2058
+    // Size: 0x52
+    function function_340107d4() {
         while (true) {
             wait(2);
             level.var_724cf71 = getdvarint(#"scr_ekia", level.var_724cf71);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic/globallogic
 // Params 0, eflags: 0x4
@@ -3806,20 +3808,22 @@ function function_54b079aa() {
     level clientfield::set_world_uimodel("hudItems.specialistSwitchIsLethal", specialistswitchislethal);
 }
 
-// Namespace globallogic/globallogic
-// Params 0, eflags: 0x0
-// Checksum 0xdd318084, Offset: 0xfb38
-// Size: 0x50
-function forcedebughostmigration() {
-    /#
+/#
+
+    // Namespace globallogic/globallogic
+    // Params 0, eflags: 0x0
+    // Checksum 0xdd318084, Offset: 0xfb38
+    // Size: 0x50
+    function forcedebughostmigration() {
         while (true) {
             hostmigration::waittillhostmigrationdone();
             wait(60);
             starthostmigration();
             hostmigration::waittillhostmigrationdone();
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic/globallogic
 // Params 4, eflags: 0x0

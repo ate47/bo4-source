@@ -4588,12 +4588,13 @@ function function_8d47bf8(e_player) {
     }
 }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x0
-// Checksum 0xcbb4f772, Offset: 0x16780
-// Size: 0xec
-function function_51a8e408(str_hand) {
-    /#
+/#
+
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 1, eflags: 0x0
+    // Checksum 0xcbb4f772, Offset: 0x16780
+    // Size: 0xec
+    function function_51a8e408(str_hand) {
         level function_e3a8b066(str_hand);
         waitframe(1);
         thread zm_devgui::zombie_devgui_goto_round(10);
@@ -4603,15 +4604,13 @@ function function_51a8e408(str_hand) {
         var_a1327d58 notify(#"trigger_activated", {#e_who:a_players[0]});
         wait(1);
         level thread function_9dc3d269();
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 1, eflags: 0x0
-// Checksum 0xca1151e8, Offset: 0x16878
-// Size: 0x20c
-function function_e3a8b066(str_hand) {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 1, eflags: 0x0
+    // Checksum 0xca1151e8, Offset: 0x16878
+    // Size: 0x20c
+    function function_e3a8b066(str_hand) {
         s_quest = level.var_d225ea18[str_hand];
         var_a1327d58 = s_quest.var_a1327d58;
         a_players = util::get_active_players();
@@ -4632,37 +4631,31 @@ function function_e3a8b066(str_hand) {
             a_players[0] setorigin(s_teleport.origin);
             a_players[0] setplayerangles(s_teleport.angles);
         }
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xe430b0cb, Offset: 0x16a90
-// Size: 0x64
-function function_9dc3d269() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xe430b0cb, Offset: 0x16a90
+    // Size: 0x64
+    function function_9dc3d269() {
         a_players = util::get_active_players();
         a_players[0] notify(#"hash_7fe6ca08732b8a1d", {#b_success:1, #b_skipped:1});
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x72075415, Offset: 0x16b00
-// Size: 0x54
-function function_34c06bf9() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x72075415, Offset: 0x16b00
+    // Size: 0x54
+    function function_34c06bf9() {
         a_players = util::get_active_players();
         a_players[0] notify(#"hash_4d89e2bb8e3d1eb3", {#b_success:1});
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xd312d486, Offset: 0x16b60
-// Size: 0x14c
-function function_f241b684() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xd312d486, Offset: 0x16b60
+    // Size: 0x14c
+    function function_f241b684() {
         a_players = util::get_active_players();
         s_quest = level.var_d225ea18[#"death"];
         level function_51a8e408(#"death");
@@ -4674,15 +4667,13 @@ function function_f241b684() {
         a_players[0] setplayerangles(s_teleport.angles);
         wait(1);
         s_quest flag::set("s_light_shrine_brazier3");
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xdb00b4ec, Offset: 0x16cb8
-// Size: 0x17c
-function function_6bf10cf9() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xdb00b4ec, Offset: 0x16cb8
+    // Size: 0x17c
+    function function_6bf10cf9() {
         a_players = util::get_active_players();
         level function_f241b684();
         wait(1);
@@ -4698,15 +4689,13 @@ function function_6bf10cf9() {
             a_players[0] setorigin(s_teleport.origin);
             a_players[0] setplayerangles(s_teleport.angles);
         }
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xff4d5392, Offset: 0x16e40
-// Size: 0xe6
-function function_11a0f6f8() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xff4d5392, Offset: 0x16e40
+    // Size: 0xe6
+    function function_11a0f6f8() {
         level function_6bf10cf9();
         a_players = util::get_active_players();
         s_quest = level.var_d225ea18[#"death"];
@@ -4714,15 +4703,13 @@ function function_11a0f6f8() {
             s_quest.var_18fd25ab[1] notify(#"trigger_activated", {#e_who:a_players[0]});
             s_quest.var_18fd25ab[2] notify(#"trigger_activated", {#e_who:a_players[0]});
         }
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xad1460b4, Offset: 0x16f30
-// Size: 0x11c
-function function_c5d7d69b() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xad1460b4, Offset: 0x16f30
+    // Size: 0x11c
+    function function_c5d7d69b() {
         level function_51a8e408(#"earth");
         wait(1);
         a_players = util::get_active_players();
@@ -4731,15 +4718,13 @@ function function_c5d7d69b() {
         s_tree = struct::get("p8_fxanim_zm_red_gaia_portal_bundle", "zmb_earth_seed_take");
         a_players[0] setorigin(s_tree.origin);
         a_players[0] setplayerangles(s_tree.angles);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x72bdce4a, Offset: 0x17058
-// Size: 0x40c
-function function_681ce100() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x72bdce4a, Offset: 0x17058
+    // Size: 0x40c
+    function function_681ce100() {
         level function_51a8e408(#"earth");
         wait(1);
         a_players = util::get_active_players();
@@ -4776,29 +4761,25 @@ function function_681ce100() {
             a_players[0] setorigin(s_teleport.origin);
             a_players[0] setplayerangles(s_teleport.angles);
         }
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x3e1901c2, Offset: 0x17470
-// Size: 0x9c
-function function_9fe8bfeb() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x3e1901c2, Offset: 0x17470
+    // Size: 0x9c
+    function function_9fe8bfeb() {
         level function_681ce100();
         a_players = util::get_active_players();
         s_quest = level.var_d225ea18[#"earth"];
         s_quest.var_8baa00ae = 2;
         a_players[0] notify(#"seedling_dropped", {#str_result:"<unknown string>"});
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x50960619, Offset: 0x17518
-// Size: 0x114
-function function_dcfed198() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x50960619, Offset: 0x17518
+    // Size: 0x114
+    function function_dcfed198() {
         s_quest = level.var_d225ea18[#"light"];
         a_players = util::get_active_players();
         s_destination = struct::get("<unknown string>", "break");
@@ -4808,15 +4789,13 @@ function function_dcfed198() {
         wait(1);
         a_players[0] setorigin(s_destination.origin);
         a_players[0] setplayerangles(s_destination.angles);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x8e8e82b3, Offset: 0x17638
-// Size: 0x174
-function function_d6e30032() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x8e8e82b3, Offset: 0x17638
+    // Size: 0x174
+    function function_d6e30032() {
         a_players = util::get_active_players();
         a_mdl_mirrors = [];
         var_d445485f = struct::get_array("<unknown string>", "break");
@@ -4831,15 +4810,13 @@ function function_d6e30032() {
         }
         mdl_mirror = arraygetclosest(a_players[0].origin, a_mdl_mirrors);
         mdl_mirror thread function_dbe1d7b8();
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x57f99dce, Offset: 0x177b8
-// Size: 0x110
-function function_ec9bf2a() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x57f99dce, Offset: 0x177b8
+    // Size: 0x110
+    function function_ec9bf2a() {
         level function_dcfed198();
         var_d445485f = struct::get_array("<unknown string>", "break");
         foreach (var_542837e6 in var_d445485f) {
@@ -4847,15 +4824,13 @@ function function_ec9bf2a() {
             mdl_mirror.n_index = 0;
             mdl_mirror function_2a290bb7(var_542837e6, mdl_mirror.origin, level.players[0]);
         }
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x185758a5, Offset: 0x178d0
-// Size: 0x20c
-function function_30ecec0c() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x185758a5, Offset: 0x178d0
+    // Size: 0x20c
+    function function_30ecec0c() {
         level function_ec9bf2a();
         a_players = util::get_active_players();
         s_quest = level.var_d225ea18[#"light"];
@@ -4872,15 +4847,13 @@ function function_30ecec0c() {
         a_players[0] clientfield::set("<unknown string>" + #"hash_e683dccc6a8e152", 1);
         s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<unknown string>" + #"hash_e683dccc6a8e152");
         s_quest thread light_energy_carry(a_players[0]);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x5d4cff73, Offset: 0x17ae8
-// Size: 0x284
-function function_a5efeb8d() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x5d4cff73, Offset: 0x17ae8
+    // Size: 0x284
+    function function_a5efeb8d() {
         level function_ec9bf2a();
         a_players = util::get_active_players();
         s_quest = level.var_d225ea18[#"light"];
@@ -4902,15 +4875,13 @@ function function_a5efeb8d() {
         a_players[0] clientfield::set("<unknown string>" + #"hash_e683dccc6a8e152", 1);
         s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<unknown string>" + #"hash_e683dccc6a8e152");
         s_quest thread light_energy_carry(a_players[0]);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xea3b3de7, Offset: 0x17d78
-// Size: 0x1a4
-function function_4594e669() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xea3b3de7, Offset: 0x17d78
+    // Size: 0x1a4
+    function function_4594e669() {
         level function_51a8e408(#"air");
         wait(1);
         a_players = util::get_active_players();
@@ -4925,27 +4896,23 @@ function function_4594e669() {
         s_spawn = struct::get("<unknown string>");
         ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_spawn);
         ai_zombie val::set(#"ww_quests_ignoreall", "<unknown string>", 1);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x8cc2d6d, Offset: 0x17f28
-// Size: 0x4c
-function function_b8b8845() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x8cc2d6d, Offset: 0x17f28
+    // Size: 0x4c
+    function function_b8b8845() {
         s_quest = level.var_d225ea18[#"air"];
         s_quest.var_267d1e6 = 3;
         level thread function_4594e669();
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xe85bafcc, Offset: 0x17f80
-// Size: 0xb4
-function function_318c3039() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xe85bafcc, Offset: 0x17f80
+    // Size: 0xb4
+    function function_318c3039() {
         s_quest = level.var_d225ea18[#"air"];
         level function_51a8e408(#"air");
         wait(0.5);
@@ -4955,15 +4922,13 @@ function function_318c3039() {
         wait(3);
         exploder::exploder_stop("<unknown string>");
         s_quest thread function_4e2445e0();
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x70a73722, Offset: 0x18040
-// Size: 0x15c
-function function_37deb555() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x70a73722, Offset: 0x18040
+    // Size: 0x15c
+    function function_37deb555() {
         a_mdl_arrows = array(getent("<unknown string>", "break"), getent("<unknown string>", "break"), getent("<unknown string>", "break"));
         mdl_arrow = arraygetclosest(level.players[0].origin, a_mdl_arrows);
         switch (mdl_arrow.targetname) {
@@ -4978,30 +4943,26 @@ function function_37deb555() {
             break;
         }
         mdl_arrow thread scene::play(var_511277e5, "<unknown string>", mdl_arrow);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xa34448d7, Offset: 0x181a8
-// Size: 0x7a
-function function_d8765f3d() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xa34448d7, Offset: 0x181a8
+    // Size: 0x7a
+    function function_d8765f3d() {
         level zm_red::function_71a6c3ea();
         level notify(level.var_d225ea18[#"earth"].var_c2f7f323);
         waitframe(1);
         level.var_29e62693 = 1;
         waitframe(1);
         level.players[0] notify(#"weapon_fired");
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x1a57dc7e, Offset: 0x18230
-// Size: 0x1b4
-function function_233156e3() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x1a57dc7e, Offset: 0x18230
+    // Size: 0x1b4
+    function function_233156e3() {
         level function_d8765f3d();
         wait(1);
         level.var_50a078bd = 11;
@@ -5014,15 +4975,13 @@ function function_233156e3() {
         ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_capture_point);
         wait(0.25);
         ai_zombie dodamage(10000, ai_zombie.origin, level.players[0]);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xd8f871ed, Offset: 0x183f0
-// Size: 0x384
-function function_c4614158() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xd8f871ed, Offset: 0x183f0
+    // Size: 0x384
+    function function_c4614158() {
         level function_d8765f3d();
         wait(1);
         level.var_50a078bd = 11;
@@ -5057,25 +5016,21 @@ function function_c4614158() {
         s_pap_interact = struct::get("<unknown string>", "break");
         level.players[0] setorigin(s_pap_interact.s_teleport.origin);
         level.players[0] setplayerangles(s_pap_interact.s_teleport.angles);
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0x6e285b0a, Offset: 0x18780
-// Size: 0x3a
-function function_d963daa9() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0x6e285b0a, Offset: 0x18780
+    // Size: 0x3a
+    function function_d963daa9() {
         level.players[0] notify(#"hash_2026d806e71dfad5", {#b_success:1});
-    #/
-}
+    }
 
-// Namespace zm_red_ww_quests/zm_red_ww_quests
-// Params 0, eflags: 0x0
-// Checksum 0xa07fda79, Offset: 0x187c8
-// Size: 0x144
-function function_405e6a83() {
-    /#
+    // Namespace zm_red_ww_quests/zm_red_ww_quests
+    // Params 0, eflags: 0x0
+    // Checksum 0xa07fda79, Offset: 0x187c8
+    // Size: 0x144
+    function function_405e6a83() {
         s_pap_interact = struct::get("<unknown string>", "break");
         level function_c4614158();
         level.var_dd4b2858 = 4;
@@ -5085,6 +5040,6 @@ function function_405e6a83() {
         level.players[0] notify(#"hash_2026d806e71dfad5", {#b_success:1});
         level.players[0] setorigin(s_pap_interact.s_teleport.origin);
         level.players[0] setplayerangles(s_pap_interact.s_teleport.angles);
-    #/
-}
+    }
 
+#/

@@ -241,17 +241,18 @@ function private function_c816ea5b() {
     }
 }
 
-// Namespace character_unlock_seraph/character_unlock_seraph
-// Params 0, eflags: 0x0
-// Checksum 0xf9efa1ba, Offset: 0xd78
-// Size: 0x5e
-function function_f6dc1aa9() {
-    /#
+/#
+
+    // Namespace character_unlock_seraph/character_unlock_seraph
+    // Params 0, eflags: 0x0
+    // Checksum 0xf9efa1ba, Offset: 0xd78
+    // Size: 0x5e
+    function function_f6dc1aa9() {
         while (true) {
             var_f748425e = self.origin + (0, 0, 60);
             sphere(var_f748425e, 5, (1, 1, 0));
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

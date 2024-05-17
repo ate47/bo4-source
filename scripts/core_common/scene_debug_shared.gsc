@@ -10,22 +10,21 @@
 
 #namespace scene;
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x2
-// Checksum 0xcaa30233, Offset: 0xa8
-// Size: 0x3c
-function autoexec __init__system__() {
-    /#
-        system::register(#"scene_debug", &function_c3c9d0e5, undefined, undefined);
-    #/
-}
+/#
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0xed50bbad, Offset: 0xf0
-// Size: 0x19c
-function function_c3c9d0e5() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x2
+    // Checksum 0xcaa30233, Offset: 0xa8
+    // Size: 0x3c
+    function autoexec __init__system__() {
+        system::register(#"scene_debug", &function_c3c9d0e5, undefined, undefined);
+    }
+
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xed50bbad, Offset: 0xf0
+    // Size: 0x19c
+    function function_c3c9d0e5() {
         if (getdvarstring(#"scene_menu_mode", "<unknown string>") == "<unknown string>") {
             setdvar(#"scene_menu_mode", "<unknown string>");
         }
@@ -41,15 +40,13 @@ function function_c3c9d0e5() {
         level thread toggle_postfx_igc_loop();
         level thread debug_display_all();
         level thread function_42edf155();
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x728f3675, Offset: 0x298
-// Size: 0x6d6
-function run_scene_tests() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x728f3675, Offset: 0x298
+    // Size: 0x6d6
+    function run_scene_tests() {
         level endon(#"run_scene_tests");
         var_cdb63291 = 0;
         while (true) {
@@ -129,26 +126,22 @@ function run_scene_tests() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 2, eflags: 0x0
-// Checksum 0xac45baa2, Offset: 0x978
-// Size: 0x64
-function capture_scene(str_scene, str_mode) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0xac45baa2, Offset: 0x978
+    // Size: 0x64
+    function capture_scene(str_scene, str_mode) {
         setdvar(#"scene_menu", 0);
         level play(str_scene, undefined, undefined, 1, str_mode);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x56f687a4, Offset: 0x9e8
-// Size: 0x24c
-function toggle_scene_menu() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x56f687a4, Offset: 0x9e8
+    // Size: 0x24c
+    function toggle_scene_menu() {
         setdvar(#"scene_menu", 0);
         n_scene_menu_last = -1;
         while (true) {
@@ -180,58 +173,50 @@ function toggle_scene_menu() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x79ad9439, Offset: 0xc40
-// Size: 0xdc
-function function_8ee42bf(o_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x79ad9439, Offset: 0xc40
+    // Size: 0xdc
+    function function_8ee42bf(o_scene) {
         if (isdefined(o_scene) && isdefined(o_scene._s)) {
             str_type = isdefined(o_scene._s.scenetype) ? o_scene._s.scenetype : "<unknown string>";
             if (level flagsys::get(str_type + "<unknown string>") && level flagsys::get(#"hash_5bcd66a9c21f5b2d")) {
                 level thread display_scene_menu(o_scene._s.scenetype);
             }
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x9f014702, Offset: 0xd28
-// Size: 0x6c
-function function_70042fe2(str_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x9f014702, Offset: 0xd28
+    // Size: 0x6c
+    function function_70042fe2(str_scene) {
         if (!level flagsys::get("<unknown string>")) {
             level flagsys::set("<unknown string>");
             level.var_a97df3b7 = str_scene;
             function_27f5972e(str_scene);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x676dab2e, Offset: 0xda0
-// Size: 0x76
-function function_1f93be7b() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x676dab2e, Offset: 0xda0
+    // Size: 0x76
+    function function_1f93be7b() {
         if (level flagsys::get("<unknown string>") && isdefined(level.var_a97df3b7)) {
             level flagsys::clear("<unknown string>");
             function_f81475ae(level.var_a97df3b7);
             level.var_a97df3b7 = undefined;
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 2, eflags: 0x0
-// Checksum 0x8067f2b5, Offset: 0xe20
-// Size: 0x103e
-function display_scene_menu(str_type, str_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0x8067f2b5, Offset: 0xe20
+    // Size: 0x103e
+    function display_scene_menu(str_type, str_scene) {
         if (!isdefined(str_type)) {
             str_type = "<unknown string>";
         }
@@ -435,66 +420,56 @@ function display_scene_menu(str_type, str_scene) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x1b828701, Offset: 0x1e68
-// Size: 0x84
-function function_c0f30783(s_scenedef) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x1b828701, Offset: 0x1e68
+    // Size: 0x84
+    function function_c0f30783(s_scenedef) {
         if (!(isdefined(s_scenedef.var_241c5f3c) && s_scenedef.var_241c5f3c) || isdefined(s_scenedef.var_241c5f3c) && s_scenedef.var_241c5f3c && getdvarint(#"zm_debug_ee", 0)) {
             return 1;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x80933e4f, Offset: 0x1ef8
-// Size: 0x82
-function function_606f1f21() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x80933e4f, Offset: 0x1ef8
+    // Size: 0x82
+    function function_606f1f21() {
         if (level.host buttonpressed("<unknown string>") || level.host buttonpressed("<unknown string>") || level.host buttonpressed("<unknown string>")) {
             return 1;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0xb2df31fe, Offset: 0x1f88
-// Size: 0x38
-function function_940c526f() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xb2df31fe, Offset: 0x1f88
+    // Size: 0x38
+    function function_940c526f() {
         if (level.host buttonpressed("<unknown string>")) {
             return 1;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 5, eflags: 0x0
-// Checksum 0xd19edc7e, Offset: 0x1fc8
-// Size: 0x7c
-function scene_list_settext(strings, n_selected, str_title, b_shot_menu, var_444abf97) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 5, eflags: 0x0
+    // Checksum 0xd19edc7e, Offset: 0x1fc8
+    // Size: 0x7c
+    function scene_list_settext(strings, n_selected, str_title, b_shot_menu, var_444abf97) {
         if (!level flagsys::get(#"scene_menu_disable")) {
             thread _scene_list_settext(strings, n_selected, str_title, b_shot_menu, var_444abf97);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 5, eflags: 0x4
-// Checksum 0xa9684af9, Offset: 0x2050
-// Size: 0x444
-function private _scene_list_settext(strings, n_selected, str_title, b_shot_menu, var_444abf97) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 5, eflags: 0x4
+    // Checksum 0xa9684af9, Offset: 0x2050
+    // Size: 0x444
+    function private _scene_list_settext(strings, n_selected, str_title, b_shot_menu, var_444abf97) {
         if (!isdefined(b_shot_menu)) {
             b_shot_menu = 0;
         }
@@ -543,30 +518,26 @@ function private _scene_list_settext(strings, n_selected, str_title, b_shot_menu
             return;
         }
         debug2dtext((150, 410 + 400, 0), "<unknown string>", (1, 1, 1), 1, (0, 0, 0), 1, 1, var_444abf97);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0xce4da140, Offset: 0x24a0
-// Size: 0x58
-function is_scene_active(str_scene) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xce4da140, Offset: 0x24a0
+    // Size: 0x58
+    function is_scene_active(str_scene) {
         if (str_scene != "<unknown string>" && str_scene != "<unknown string>") {
             if (level is_active(str_scene)) {
                 return 1;
             }
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x80832eea, Offset: 0x2500
-// Size: 0x1aa
-function function_3bafd088(var_a572f325) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x80832eea, Offset: 0x2500
+    // Size: 0x1aa
+    function function_3bafd088(var_a572f325) {
         /#
             if (getdvarint(#"dvr_enable", 0) > 0 && getdvarint(#"scr_scene_dvr", 0) > 0) {
                 if (!isdefined(var_a572f325)) {
@@ -583,15 +554,13 @@ function function_3bafd088(var_a572f325) {
                 wait(1);
             }
         #/
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0xd9d11126, Offset: 0x26b8
-// Size: 0x174
-function function_d2785094(var_a572f325) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xd9d11126, Offset: 0x26b8
+    // Size: 0x174
+    function function_d2785094(var_a572f325) {
         /#
             if (getdvarint(#"dvr_enable", 0) > 0 && getdvarint(#"scr_scene_dvr", 0) > 0) {
                 drawbig = 0;
@@ -614,15 +583,13 @@ function function_d2785094(var_a572f325) {
                 adddebugcommand("<unknown string>");
             }
         #/
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 3, eflags: 0x0
-// Checksum 0xc584e523, Offset: 0x2838
-// Size: 0x134
-function test_play(arg1, arg2, str_mode) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xc584e523, Offset: 0x2838
+    // Size: 0x134
+    function test_play(arg1, arg2, str_mode) {
         n_skipto = getdvarfloat(#"scr_scene_skipto_time", 0);
         if (n_skipto > 0) {
             str_mode += "<unknown string>" + n_skipto;
@@ -638,15 +605,13 @@ function test_play(arg1, arg2, str_mode) {
         function_3bafd088(var_a572f325);
         play(arg1, arg2, undefined, 1, str_mode);
         function_d2785094(var_a572f325);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x2f61cc79, Offset: 0x2978
-// Size: 0x11a
-function debug_display_all() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x2f61cc79, Offset: 0x2978
+    // Size: 0x11a
+    function debug_display_all() {
         while (true) {
             level flagsys::wait_till("<unknown string>");
             debug_frames = randomintrange(5, 10);
@@ -659,15 +624,13 @@ function debug_display_all() {
             }
             wait(debug_time);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0xa4c6738a, Offset: 0x2aa0
-// Size: 0x2fc
-function debug_display(debug_frames) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xa4c6738a, Offset: 0x2aa0
+    // Size: 0x2fc
+    function debug_display(debug_frames) {
         sphere(debug_display_origin(), 1, (1, 1, 0), 1, 1, 8, debug_frames);
         i = 0;
         if (self == level) {
@@ -707,42 +670,36 @@ function debug_display(debug_frames) {
             n_offset = 15;
             print3d(debug_display_origin() - (0, 0, n_offset), str_scene, (0.8, 0.2, 0.8), 1, 0.3, debug_frames);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 4, eflags: 0x0
-// Checksum 0x33a43271, Offset: 0x2da8
-// Size: 0x124
-function print_scene_debug(debug_frames, i, str_scene, str_state) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 4, eflags: 0x0
+    // Checksum 0x33a43271, Offset: 0x2da8
+    // Size: 0x124
+    function print_scene_debug(debug_frames, i, str_scene, str_state) {
         v_origin = debug_display_origin();
         n_offset = 15 * (i + 1);
         str_scene = function_9e72a96(str_scene);
         print3d(v_origin - (0, 0, n_offset), str_scene, (0.8, 0.2, 0.8), 1, 0.3, debug_frames);
         print3d(v_origin - (0, 0, n_offset + 5), "<unknown string>" + str_state + "<unknown string>", (0.8, 0.2, 0.8), 1, 0.15, debug_frames);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0xfcb86cd1, Offset: 0x2ed8
-// Size: 0x28
-function debug_display_origin() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xfcb86cd1, Offset: 0x2ed8
+    // Size: 0x28
+    function debug_display_origin() {
         if (self == level) {
             return (0, 0, 0);
         }
         return self.origin;
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 2, eflags: 0x0
-// Checksum 0x51065c67, Offset: 0x2f08
-// Size: 0x254
-function move_to_scene(str_scene, b_reverse_dir) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0x51065c67, Offset: 0x2f08
+    // Size: 0x254
+    function move_to_scene(str_scene, b_reverse_dir) {
         if (!isdefined(b_reverse_dir)) {
             b_reverse_dir = 0;
         }
@@ -779,28 +736,24 @@ function move_to_scene(str_scene, b_reverse_dir) {
         }
         s_scene = level.debug_current_scene_instances[level.debug_current_scene_index];
         level.host set_origin(s_scene.origin);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 1, eflags: 0x0
-// Checksum 0x65f06ee4, Offset: 0x3168
-// Size: 0x64
-function set_origin(v_origin) {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x65f06ee4, Offset: 0x3168
+    // Size: 0x64
+    function set_origin(v_origin) {
         if (!self isinmovemode("<unknown string>", "<unknown string>")) {
             adddebugcommand("<unknown string>");
         }
         self setorigin(v_origin);
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x511d30d2, Offset: 0x31d8
-// Size: 0x7c
-function toggle_postfx_igc_loop() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x511d30d2, Offset: 0x31d8
+    // Size: 0x7c
+    function toggle_postfx_igc_loop() {
         while (true) {
             if (getdvarint(#"scr_postfx_igc_loop", 0)) {
                 array::run_all(level.activeplayers, &clientfield::increment_to_player, "<unknown string>", 1);
@@ -808,15 +761,13 @@ function toggle_postfx_igc_loop() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_debug_shared
-// Params 0, eflags: 0x0
-// Checksum 0x3b950f02, Offset: 0x3260
-// Size: 0x2d6
-function function_42edf155() {
-    /#
+    // Namespace scene/scene_debug_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x3b950f02, Offset: 0x3260
+    // Size: 0x2d6
+    function function_42edf155() {
         while (true) {
             requestflag = getdvarint(#"hash_1c68b689a2dac0fa", 0);
             if (requestflag != 0) {
@@ -850,6 +801,6 @@ function function_42edf155() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

@@ -97,21 +97,23 @@ function private function_b6824ff0(entity, player, duration, color) {
     #/
 }
 
-// Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
-// Params 4, eflags: 0x4
-// Checksum 0xfd169610, Offset: 0x5c0
-// Size: 0x116
-function private function_e5ffb77c(start, end, duration, color) {
-    /#
-        for (current_time = duration * 20; current_time > 0; current_time -= 1) {
+/#
+
+    // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
+    // Params 4, eflags: 0x4
+    // Checksum 0xfd169610, Offset: 0x5c0
+    // Size: 0x116
+    function private function_e5ffb77c(start, end, duration, color) {
+                for (current_time = duration * 20; current_time > 0; current_time -= 1) {
             waitframe(1);
             line(start, end, color, 1, 1);
             sphere(end, 10, color, 1, 0, 8, 1);
             distance = distance(start, end);
             print3d(end + (0, 0, 10), "<unknown string>" + distance, color, 1, 1, 1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel
 // Params 1, eflags: 0x4

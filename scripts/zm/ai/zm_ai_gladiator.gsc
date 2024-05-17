@@ -1680,12 +1680,13 @@ function function_831dd6bd() {
     return false;
 }
 
-// Namespace zm_ai_gladiator/zm_ai_gladiator
-// Params 0, eflags: 0x4
-// Checksum 0x80fc7019, Offset: 0x7490
-// Size: 0x358
-function private function_24a38427() {
-    /#
+/#
+
+    // Namespace zm_ai_gladiator/zm_ai_gladiator
+    // Params 0, eflags: 0x4
+    // Checksum 0x80fc7019, Offset: 0x7490
+    // Size: 0x358
+    function private function_24a38427() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -1730,6 +1731,6 @@ function private function_24a38427() {
             }
             setdvar(#"hash_1a45d40a78c47d72", "j_clavicle_ri");
         }
-    #/
-}
+    }
 
+#/

@@ -571,19 +571,21 @@ function function_965e1613() {
     level thread function_9774bbc6();
 }
 
-// Namespace zm_towers_main_quest/zm_towers_main_quest
-// Params 1, eflags: 0x0
-// Checksum 0xce138aa1, Offset: 0x4130
-// Size: 0x86
-function function_8bcc049f(s_skull) {
-    /#
+/#
+
+    // Namespace zm_towers_main_quest/zm_towers_main_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0xce138aa1, Offset: 0x4130
+    // Size: 0x86
+    function function_8bcc049f(s_skull) {
         level endon(#"end_game", #"hash_3da6bb0f657559c0", #"collect_ingredients_completed");
         while (true) {
             circle(s_skull.origin, 64, (0, 1, 0), 0, 1, 1);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
 // Params 0, eflags: 0x1 linked
@@ -643,20 +645,22 @@ function function_9774bbc6() {
     level flag::set(#"hash_4c6ced4815715faf");
 }
 
-// Namespace zm_towers_main_quest/zm_towers_main_quest
-// Params 1, eflags: 0x0
-// Checksum 0xbc5b2b7b, Offset: 0x4688
-// Size: 0x9e
-function function_2fe17822(mdl_grinder) {
-    /#
+/#
+
+    // Namespace zm_towers_main_quest/zm_towers_main_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0xbc5b2b7b, Offset: 0x4688
+    // Size: 0x9e
+    function function_2fe17822(mdl_grinder) {
         mdl_grinder endon(#"death");
         level endon(#"end_game", #"hash_4c6ced4815715faf", #"collect_ingredients_completed");
         while (true) {
             circle(mdl_grinder.origin, 32, (0, 1, 0), 0, 1, 1);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
 // Params 0, eflags: 0x1 linked
@@ -756,20 +760,22 @@ function place_fertilizer_setup(b_skipped) {
     level flag::set(#"place_fertilizer_completed");
 }
 
-// Namespace zm_towers_main_quest/zm_towers_main_quest
-// Params 1, eflags: 0x0
-// Checksum 0xffd562a4, Offset: 0x4e18
-// Size: 0x8e
-function function_1bd4c509(mdl_fertilizer) {
-    /#
+/#
+
+    // Namespace zm_towers_main_quest/zm_towers_main_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0xffd562a4, Offset: 0x4e18
+    // Size: 0x8e
+    function function_1bd4c509(mdl_fertilizer) {
         mdl_fertilizer endon(#"death");
         level endon(#"end_game", #"place_fertilizer_completed");
         while (true) {
             circle(mdl_fertilizer.origin, 120, (1, 0, 0), 0, 1, 1);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
 // Params 0, eflags: 0x1 linked
@@ -1584,12 +1590,13 @@ function function_d1007b59() {
     }
 }
 
-// Namespace zm_towers_main_quest/zm_towers_main_quest
-// Params 1, eflags: 0x4
-// Checksum 0x3958e432, Offset: 0x9108
-// Size: 0x164
-function private function_df18663(str_key) {
-    /#
+/#
+
+    // Namespace zm_towers_main_quest/zm_towers_main_quest
+    // Params 1, eflags: 0x4
+    // Checksum 0x3958e432, Offset: 0x9108
+    // Size: 0x164
+    function private function_df18663(str_key) {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
@@ -1620,8 +1627,9 @@ function private function_df18663(str_key) {
             break;
         }
         iprintlnbold(str_ai);
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
 // Params 0, eflags: 0x1 linked
@@ -3635,12 +3643,13 @@ function private function_54922a21() {
     }
 }
 
-// Namespace zm_towers_main_quest/zm_towers_main_quest
-// Params 0, eflags: 0x4
-// Checksum 0x74c0915c, Offset: 0x11b38
-// Size: 0x15a
-function private function_f4bc8162() {
-    /#
+/#
+
+    // Namespace zm_towers_main_quest/zm_towers_main_quest
+    // Params 0, eflags: 0x4
+    // Checksum 0x74c0915c, Offset: 0x11b38
+    // Size: 0x15a
+    function private function_f4bc8162() {
         self waittill(#"start_draw");
         while (!level flag::get(#"hash_20c92720a4602dc7")) {
             foreach (s_line in self.var_8f40324e) {
@@ -3651,8 +3660,9 @@ function private function_f4bc8162() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
 // Params 1, eflags: 0x1 linked
@@ -3726,12 +3736,13 @@ function function_2eb4a526() {
     }
 }
 
-// Namespace zm_towers_main_quest/zm_towers_main_quest
-// Params 0, eflags: 0x4
-// Checksum 0x101f4906, Offset: 0x120c8
-// Size: 0x210
-function private debug_spawns() {
-    /#
+/#
+
+    // Namespace zm_towers_main_quest/zm_towers_main_quest
+    // Params 0, eflags: 0x4
+    // Checksum 0x101f4906, Offset: 0x120c8
+    // Size: 0x210
+    function private debug_spawns() {
         level endon(#"stop_debug_spawn");
         level flag::wait_till(#"hash_2bf040db75b1dac7");
         v_test = getent("defend_key_model", "boss_battle_tempo");
@@ -3752,15 +3763,13 @@ function private debug_spawns() {
                 iprintlnbold("crowd_react_boss" + s_result.spawn.origin);
             }
         }
-    #/
-}
+    }
 
-// Namespace zm_towers_main_quest/weapon_fired
-// Params 1, eflags: 0x40
-// Checksum 0x1b7ea65a, Offset: 0x122e0
-// Size: 0x1b4
-function event_handler[weapon_fired] debug_trilane(event_struct) {
-    /#
+    // Namespace zm_towers_main_quest/weapon_fired
+    // Params 1, eflags: 0x40
+    // Checksum 0x1b7ea65a, Offset: 0x122e0
+    // Size: 0x1b4
+    function event_handler[weapon_fired] debug_trilane(event_struct) {
         if (!getdvarint(#"zm_debug_ee", 0) || !getdvarint(#"zm_debug_trilane", 0) >= 1 || !self zm_zonemgr::entity_in_zone("mdl_turn_back", 0)) {
             return;
         }
@@ -3774,8 +3783,9 @@ function event_handler[weapon_fired] debug_trilane(event_struct) {
         level flag::clear(#"hash_277d03629ade12e8");
         level notify(#"stop_debug_spawn");
         setdvar(#"zm_debug_trilane", 1);
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
 // Params 1, eflags: 0x1 linked

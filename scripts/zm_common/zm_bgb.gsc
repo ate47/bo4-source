@@ -235,12 +235,13 @@ function private bgb_player_monitor() {
     }
 }
 
-// Namespace bgb/zm_bgb
-// Params 0, eflags: 0x4
-// Checksum 0x40344e5e, Offset: 0x1180
-// Size: 0x244
-function private setup_devgui() {
-    /#
+/#
+
+    // Namespace bgb/zm_bgb
+    // Params 0, eflags: 0x4
+    // Checksum 0x40344e5e, Offset: 0x1180
+    // Size: 0x244
+    function private setup_devgui() {
         waittillframeend();
         setdvar(#"bgb_acquire_devgui", "<unknown string>");
         setdvar(#"hash_7877ee182ba11433", -1);
@@ -256,15 +257,13 @@ function private setup_devgui() {
             adddebugcommand(bgb_devgui_base + "<unknown string>" + playernum + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>");
         }
         level thread bgb_devgui_think();
-    #/
-}
+    }
 
-// Namespace bgb/zm_bgb
-// Params 0, eflags: 0x4
-// Checksum 0x7b72272e, Offset: 0x13d0
-// Size: 0x90
-function private bgb_devgui_think() {
-    /#
+    // Namespace bgb/zm_bgb
+    // Params 0, eflags: 0x4
+    // Checksum 0x7b72272e, Offset: 0x13d0
+    // Size: 0x90
+    function private bgb_devgui_think() {
         for (;;) {
             var_522737d6 = getdvarstring(#"bgb_acquire_devgui");
             if (var_522737d6 != "<unknown string>") {
@@ -273,15 +272,13 @@ function private bgb_devgui_think() {
             setdvar(#"bgb_acquire_devgui", "<unknown string>");
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace bgb/zm_bgb
-// Params 1, eflags: 0x4
-// Checksum 0x6a748773, Offset: 0x1468
-// Size: 0x146
-function private bgb_devgui_acquire(bgb_name) {
-    /#
+    // Namespace bgb/zm_bgb
+    // Params 1, eflags: 0x4
+    // Checksum 0x6a748773, Offset: 0x1468
+    // Size: 0x146
+    function private bgb_devgui_acquire(bgb_name) {
         bgb_name = hash(bgb_name);
         playerid = getdvarint(#"hash_7877ee182ba11433", 0);
         players = getplayers();
@@ -298,15 +295,13 @@ function private bgb_devgui_acquire(bgb_name) {
                 players[i] thread run_activation_func(bgb_name);
             }
         }
-    #/
-}
+    }
 
-// Namespace bgb/zm_bgb
-// Params 0, eflags: 0x4
-// Checksum 0x28158acb, Offset: 0x15b8
-// Size: 0x142
-function private bgb_debug_text_display_init() {
-    /#
+    // Namespace bgb/zm_bgb
+    // Params 0, eflags: 0x4
+    // Checksum 0x28158acb, Offset: 0x15b8
+    // Size: 0x142
+    function private bgb_debug_text_display_init() {
         self.bgb_debug_text = newdebughudelem(self);
         self.bgb_debug_text.elemtype = "<unknown string>";
         self.bgb_debug_text.font = "<unknown string>";
@@ -321,15 +316,13 @@ function private bgb_debug_text_display_init() {
         self.bgb_debug_text.color = (1, 1, 1);
         self.bgb_debug_text.alpha = 1;
         self.bgb_debug_text.hidewheninmenu = 1;
-    #/
-}
+    }
 
-// Namespace bgb/zm_bgb
-// Params 2, eflags: 0x4
-// Checksum 0x5f1b83c0, Offset: 0x1708
-// Size: 0x1be
-function private bgb_set_debug_text(name, activations_remaining) {
-    /#
+    // Namespace bgb/zm_bgb
+    // Params 2, eflags: 0x4
+    // Checksum 0x5f1b83c0, Offset: 0x1708
+    // Size: 0x1be
+    function private bgb_set_debug_text(name, activations_remaining) {
         if (!isdefined(self.bgb_debug_text)) {
             return;
         }
@@ -354,21 +347,20 @@ function private bgb_set_debug_text(name, activations_remaining) {
             self.bgb_debug_text fadeovertime(1);
             self.bgb_debug_text.alpha = 0;
         }
-    #/
-}
+    }
 
-// Namespace bgb/zm_bgb
-// Params 1, eflags: 0x0
-// Checksum 0x9a6bd15, Offset: 0x18d0
-// Size: 0x114
-function bgb_print_stats(bgb) {
-    /#
+    // Namespace bgb/zm_bgb
+    // Params 1, eflags: 0x0
+    // Checksum 0x9a6bd15, Offset: 0x18d0
+    // Size: 0x114
+    function bgb_print_stats(bgb) {
         printtoprightln(function_9e72a96(bgb) + "<unknown string>" + self.bgb_stats[bgb].var_c2a984f0, (1, 1, 1));
         printtoprightln(function_9e72a96(bgb) + "<unknown string>" + self.bgb_stats[bgb].bgb_used_this_game, (1, 1, 1));
         n_available = self.bgb_stats[bgb].var_c2a984f0 - self.bgb_stats[bgb].bgb_used_this_game;
         printtoprightln(function_9e72a96(bgb) + "<unknown string>" + n_available, (1, 1, 1));
-    #/
-}
+    }
+
+#/
 
 // Namespace bgb/zm_bgb
 // Params 1, eflags: 0x5 linked

@@ -41,17 +41,19 @@ function init() {
     callback::on_disconnect(&on_disconnect);
 }
 
-// Namespace namespace_ca03bbb4/namespace_ca03bbb4
-// Params 0, eflags: 0x0
-// Checksum 0x2f0cf2f6, Offset: 0x548
-// Size: 0x4c
-function function_1c530e2d() {
-    /#
+/#
+
+    // Namespace namespace_ca03bbb4/namespace_ca03bbb4
+    // Params 0, eflags: 0x0
+    // Checksum 0x2f0cf2f6, Offset: 0x548
+    // Size: 0x4c
+    function function_1c530e2d() {
         level endon(#"game_ended");
         level waittill(#"open_sesame");
         zm_white_special_rounds::function_6acd363d(1);
-    #/
-}
+    }
+
+#/
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
 // Params 1, eflags: 0x5 linked

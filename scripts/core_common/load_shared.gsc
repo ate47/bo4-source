@@ -114,12 +114,13 @@ function keep_time() {
     }
 }
 
-// Namespace load/load_shared
-// Params 0, eflags: 0x0
-// Checksum 0xbd04486f, Offset: 0x778
-// Size: 0x150
-function level_notify_listener() {
-    /#
+/#
+
+    // Namespace load/load_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xbd04486f, Offset: 0x778
+    // Size: 0x150
+    function level_notify_listener() {
         while (true) {
             val = getdvarstring(#"level_notify");
             if (val != "<unknown string>") {
@@ -135,15 +136,13 @@ function level_notify_listener() {
             }
             wait(0.2);
         }
-    #/
-}
+    }
 
-// Namespace load/load_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe443d2bb, Offset: 0x8d0
-// Size: 0x98
-function client_notify_listener() {
-    /#
+    // Namespace load/load_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe443d2bb, Offset: 0x8d0
+    // Size: 0x98
+    function client_notify_listener() {
         while (true) {
             val = getdvarstring(#"client_notify");
             if (val != "<unknown string>") {
@@ -152,35 +151,32 @@ function client_notify_listener() {
             }
             wait(0.2);
         }
-    #/
-}
+    }
 
-// Namespace load/load_shared
-// Params 0, eflags: 0x0
-// Checksum 0x4405c5c1, Offset: 0x970
-// Size: 0x48
-function load_checkpoint_on_notify() {
-    /#
+    // Namespace load/load_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x4405c5c1, Offset: 0x970
+    // Size: 0x48
+    function load_checkpoint_on_notify() {
         while (true) {
             level waittill(#"save");
             checkpointcreate();
             checkpointcommit();
         }
-    #/
-}
+    }
 
-// Namespace load/load_shared
-// Params 0, eflags: 0x0
-// Checksum 0xdf641dfe, Offset: 0x9c0
-// Size: 0x38
-function save_checkpoint_on_notify() {
-    /#
+    // Namespace load/load_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xdf641dfe, Offset: 0x9c0
+    // Size: 0x38
+    function save_checkpoint_on_notify() {
         while (true) {
             level waittill(#"load");
             checkpointrestore();
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace load/load_shared
 // Params 0, eflags: 0x1 linked
@@ -424,13 +420,17 @@ function set_fog_progress(progress) {
     setvolfog(startdist, halfwaydist, self.script_halfway_height, self.script_base_height, color[0], color[1], color[2], 0.4);
 }
 
-// Namespace load/load_shared
-// Params 0, eflags: 0x0
-// Checksum 0xd8f7849b, Offset: 0x1728
-// Size: 0x24
-function ascii_logo() {
-    println("<unknown string>");
-}
+/#
+
+    // Namespace load/load_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xd8f7849b, Offset: 0x1728
+    // Size: 0x24
+    function ascii_logo() {
+        println("<unknown string>");
+    }
+
+#/
 
 // Namespace load/load_shared
 // Params 0, eflags: 0x1 linked

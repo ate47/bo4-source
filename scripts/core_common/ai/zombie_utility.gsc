@@ -582,26 +582,25 @@ function notifyaftertime(notifystring, killmestring, time) {
     self notify(notifystring);
 }
 
-// Namespace zombie_utility/zombie_utility
-// Params 4, eflags: 0x0
-// Checksum 0xc488c013, Offset: 0x1db0
-// Size: 0x8c
-function drawstringtime(msg, org, color, timer) {
-    /#
+/#
+
+    // Namespace zombie_utility/zombie_utility
+    // Params 4, eflags: 0x0
+    // Checksum 0xc488c013, Offset: 0x1db0
+    // Size: 0x8c
+    function drawstringtime(msg, org, color, timer) {
         maxtime = timer * 20;
         for (i = 0; i < maxtime; i++) {
             print3d(org, msg, color, 1, 1);
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace zombie_utility/zombie_utility
-// Params 1, eflags: 0x0
-// Checksum 0x8b11c985, Offset: 0x1e48
-// Size: 0x118
-function showlastenemysightpos(string) {
-    /#
+    // Namespace zombie_utility/zombie_utility
+    // Params 1, eflags: 0x0
+    // Checksum 0x8b11c985, Offset: 0x1e48
+    // Size: 0x118
+    function showlastenemysightpos(string) {
         self notify(#"got known enemy2");
         self endon(#"got known enemy2", #"death");
         if (!isvalidenemy(self.enemy)) {
@@ -619,8 +618,9 @@ function showlastenemysightpos(string) {
             }
             print3d(self.lastenemysightpos, string, color, 1, 2.15);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zombie_utility/zombie_utility
 // Params 0, eflags: 0x0
@@ -769,20 +769,22 @@ function checkpitchvisibility(frompoint, topoint, atnode) {
     return true;
 }
 
-// Namespace zombie_utility/zombie_utility
-// Params 3, eflags: 0x0
-// Checksum 0x8424205, Offset: 0x26f0
-// Size: 0x76
-function showlines(start, end, end2) {
-    /#
+/#
+
+    // Namespace zombie_utility/zombie_utility
+    // Params 3, eflags: 0x0
+    // Checksum 0x8424205, Offset: 0x26f0
+    // Size: 0x76
+    function showlines(start, end, end2) {
         for (;;) {
             line(start, end, (1, 0, 0), 1);
             waitframe(1);
             line(start, end2, (0, 0, 1), 1);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zombie_utility/zombie_utility
 // Params 2, eflags: 0x0
@@ -830,26 +832,25 @@ function forcedcover(msg) {
     return isdefined(self.a.forced_cover) && self.a.forced_cover == msg;
 }
 
-// Namespace zombie_utility/zombie_utility
-// Params 6, eflags: 0x0
-// Checksum 0xc0309ec4, Offset: 0x2970
-// Size: 0x9c
-function print3dtime(timer, org, msg, color, alpha, scale) {
-    /#
+/#
+
+    // Namespace zombie_utility/zombie_utility
+    // Params 6, eflags: 0x0
+    // Checksum 0xc0309ec4, Offset: 0x2970
+    // Size: 0x9c
+    function print3dtime(timer, org, msg, color, alpha, scale) {
         newtime = timer / 0.05;
         for (i = 0; i < newtime; i++) {
             print3d(org, msg, color, alpha, scale);
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace zombie_utility/zombie_utility
-// Params 5, eflags: 0x0
-// Checksum 0xfc930e2, Offset: 0x2a18
-// Size: 0xc4
-function print3drise(org, msg, color, alpha, scale) {
-    /#
+    // Namespace zombie_utility/zombie_utility
+    // Params 5, eflags: 0x0
+    // Checksum 0xfc930e2, Offset: 0x2a18
+    // Size: 0xc4
+    function print3drise(org, msg, color, alpha, scale) {
         newtime = 100;
         up = 0;
         org = org;
@@ -858,8 +859,9 @@ function print3drise(org, msg, color, alpha, scale) {
             print3d(org + (0, 0, up), msg, color, alpha, scale);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zombie_utility/zombie_utility
 // Params 2, eflags: 0x0
@@ -948,12 +950,13 @@ function setfootstepeffect(name, fx) {
     anim.optionalstepeffectfunction = &zombie_shared::playfootstepeffect;
 }
 
-// Namespace zombie_utility/zombie_utility
-// Params 2, eflags: 0x0
-// Checksum 0xc28342fe, Offset: 0x2df0
-// Size: 0x8e
-function persistentdebugline(start, end) {
-    /#
+/#
+
+    // Namespace zombie_utility/zombie_utility
+    // Params 2, eflags: 0x0
+    // Checksum 0xc28342fe, Offset: 0x2df0
+    // Size: 0x8e
+    function persistentdebugline(start, end) {
         self endon(#"death");
         level notify(#"newdebugline");
         level endon(#"newdebugline");
@@ -961,8 +964,9 @@ function persistentdebugline(start, end) {
             line(start, end, (0.3, 1, 0), 1);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zombie_utility/zombie_utility
 // Params 0, eflags: 0x1 linked
@@ -1043,12 +1047,13 @@ function animarraypickrandom(animname) {
     return self.a.array[animname][index];
 }
 
-// Namespace zombie_utility/zombie_utility
-// Params 0, eflags: 0x0
-// Checksum 0x858e37a9, Offset: 0x3228
-// Size: 0x108
-function dumpanimarray() {
-    /#
+/#
+
+    // Namespace zombie_utility/zombie_utility
+    // Params 0, eflags: 0x0
+    // Checksum 0x858e37a9, Offset: 0x3228
+    // Size: 0x108
+    function dumpanimarray() {
         println("<unknown string>");
         foreach (k, v in self.a.array) {
             if (isarray(v)) {
@@ -1057,8 +1062,9 @@ function dumpanimarray() {
             }
             println("<unknown string>" + k + "<unknown string>", v);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zombie_utility/zombie_utility
 // Params 1, eflags: 0x0
@@ -1266,27 +1272,26 @@ function set_orient_mode(mode, val1) {
     self orientmode(mode);
 }
 
-// Namespace zombie_utility/zombie_utility
-// Params 1, eflags: 0x0
-// Checksum 0x3468c1df, Offset: 0x3940
-// Size: 0xac
-function debug_anim_print(text) {
-    /#
+/#
+
+    // Namespace zombie_utility/zombie_utility
+    // Params 1, eflags: 0x0
+    // Checksum 0x3468c1df, Offset: 0x3940
+    // Size: 0xac
+    function debug_anim_print(text) {
         if (isdefined(level.dog_debug_anims) && level.dog_debug_anims) {
             println(text + "<unknown string>" + gettime());
         }
         if (isdefined(level.dog_debug_anims_ent) && level.dog_debug_anims_ent == self getentnum()) {
             println(text + "<unknown string>" + gettime());
         }
-    #/
-}
+    }
 
-// Namespace zombie_utility/zombie_utility
-// Params 2, eflags: 0x0
-// Checksum 0x884d5077, Offset: 0x39f8
-// Size: 0x17c
-function debug_turn_print(text, line) {
-    /#
+    // Namespace zombie_utility/zombie_utility
+    // Params 2, eflags: 0x0
+    // Checksum 0x884d5077, Offset: 0x39f8
+    // Size: 0x17c
+    function debug_turn_print(text, line) {
         if (isdefined(level.dog_debug_turns) && level.dog_debug_turns == self getentnum()) {
             duration = 200;
             currentyawcolor = (1, 1, 1);
@@ -1299,8 +1304,9 @@ function debug_turn_print(text, line) {
             lookaheadyaw = angleclamp180(lookaheadangles[1]);
             println(text + "<unknown string>" + gettime() + "<unknown string>" + currentyaw + "<unknown string>" + lookaheadyaw + "<unknown string>" + desiredyaw);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zombie_utility/zombie_utility
 // Params 5, eflags: 0x0
@@ -2739,12 +2745,13 @@ function run_ignore_player_handler() {
     }
 }
 
-// Namespace zombie_utility/zombie_utility
-// Params 0, eflags: 0x0
-// Checksum 0xf2fe0e80, Offset: 0x7ff0
-// Size: 0x120
-function updateanimationrate() {
-    /#
+/#
+
+    // Namespace zombie_utility/zombie_utility
+    // Params 0, eflags: 0x0
+    // Checksum 0xf2fe0e80, Offset: 0x7ff0
+    // Size: 0x120
+    function updateanimationrate() {
         self notify(#"updateanimationrate");
         self endon(#"death", #"updateanimationrate");
         settings_bundle = self ai::function_9139c839();
@@ -2767,6 +2774,6 @@ function updateanimationrate() {
             self asmsetanimationrate(animation_rate);
             var_fd8e23d9 = animation_rate;
         }
-    #/
-}
+    }
 
+#/

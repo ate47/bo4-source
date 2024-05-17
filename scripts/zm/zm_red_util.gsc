@@ -322,12 +322,13 @@ function private function_ee58ddd4(is_scroll = 0) {
     }
 }
 
-// Namespace zm_red_util/zm_red_util
-// Params 0, eflags: 0x0
-// Checksum 0x1a0f73ea, Offset: 0x10b8
-// Size: 0x1b8
-function function_a94baf7b() {
-    /#
+/#
+
+    // Namespace zm_red_util/zm_red_util
+    // Params 0, eflags: 0x0
+    // Checksum 0x1a0f73ea, Offset: 0x10b8
+    // Size: 0x1b8
+    function function_a94baf7b() {
         a_s_collectibles = struct::get_array("<unknown string>", "<unknown string>");
         foreach (s_collectibles in a_s_collectibles) {
             sphere(s_collectibles.origin + (0, 0, 60), 12, (0, 1, 1), 0.7, 0, 16, 10000);
@@ -336,8 +337,9 @@ function function_a94baf7b() {
         foreach (s_scrolls in a_s_scrolls) {
             sphere(s_scrolls.origin + (0, 0, 60), 12, (1, 0.5, 0), 0.7, 0, 16, 10000);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_red_util/zm_red_util
 // Params 1, eflags: 0x1 linked

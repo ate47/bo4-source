@@ -49,15 +49,16 @@ function function_2cdcf5c3() {
     }
 }
 
-// Namespace mp_gridlock/mp_gridlock
-// Params 0, eflags: 0x0
-// Checksum 0xb889379, Offset: 0x360
-// Size: 0x74
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_gridlock/mp_gridlock
+    // Params 0, eflags: 0x0
+    // Checksum 0xb889379, Offset: 0x360
+    // Size: 0x74
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

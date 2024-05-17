@@ -944,12 +944,13 @@ function function_e01a747e(val, arg) {
     return !(isdefined(val.classname) && issubstr(val.classname, arg));
 }
 
-// Namespace array/array_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe7f59342, Offset: 0x2ed8
-// Size: 0xc6
-function function_f2d037b1() {
-    /#
+/#
+
+    // Namespace array/array_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe7f59342, Offset: 0x2ed8
+    // Size: 0xc6
+    function function_f2d037b1() {
         wait(5);
         for (maxval = 0; maxval < 100; maxval++) {
             for (i = 0; i < 100; i++) {
@@ -959,15 +960,13 @@ function function_f2d037b1() {
                 waitframe(1);
             }
         }
-    #/
-}
+    }
 
-// Namespace array/array_shared
-// Params 5, eflags: 0x0
-// Checksum 0xde16c409, Offset: 0x2fa8
-// Size: 0x28c
-function function_d1f43a84(max_entries, minval, maxval, compare_func, var_c8e96eee) {
-    /#
+    // Namespace array/array_shared
+    // Params 5, eflags: 0x0
+    // Checksum 0xde16c409, Offset: 0x2fa8
+    // Size: 0x28c
+    function function_d1f43a84(max_entries, minval, maxval, compare_func, var_c8e96eee) {
         if (!isdefined(max_entries)) {
             max_entries = 20;
         }
@@ -1006,15 +1005,13 @@ function function_d1f43a84(max_entries, minval, maxval, compare_func, var_c8e96e
             }
         }
         println("<unknown string>");
-    #/
-}
+    }
 
-// Namespace array/array_shared
-// Params 0, eflags: 0x0
-// Checksum 0xfd655ecf, Offset: 0x3240
-// Size: 0xce
-function function_81d0d595() {
-    /#
+    // Namespace array/array_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xfd655ecf, Offset: 0x3240
+    // Size: 0xce
+    function function_81d0d595() {
         wait(5);
         for (maxval = 0; maxval < 100; maxval++) {
             for (i = 0; i < 100; i++) {
@@ -1024,15 +1021,13 @@ function function_81d0d595() {
                 waitframe(1);
             }
         }
-    #/
-}
+    }
 
-// Namespace array/array_shared
-// Params 5, eflags: 0x0
-// Checksum 0x11323d9e, Offset: 0x3318
-// Size: 0x284
-function function_70daaa9d(max_entries, minval, maxval, compare_func, var_c8e96eee) {
-    /#
+    // Namespace array/array_shared
+    // Params 5, eflags: 0x0
+    // Checksum 0x11323d9e, Offset: 0x3318
+    // Size: 0x284
+    function function_70daaa9d(max_entries, minval, maxval, compare_func, var_c8e96eee) {
         if (!isdefined(max_entries)) {
             max_entries = 50;
         }
@@ -1071,6 +1066,6 @@ function function_70daaa9d(max_entries, minval, maxval, compare_func, var_c8e96e
             }
         }
         println("<unknown string>");
-    #/
-}
+    }
 
+#/

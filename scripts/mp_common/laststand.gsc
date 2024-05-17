@@ -322,12 +322,13 @@ function function_d5db8d2e(attacker, weapon) {
     self function_2907ce7a();
 }
 
-// Namespace laststand_mp/laststand
-// Params 0, eflags: 0x0
-// Checksum 0xa1aa61c4, Offset: 0x1748
-// Size: 0xbc
-function function_463b3f65() {
-    /#
+/#
+
+    // Namespace laststand_mp/laststand
+    // Params 0, eflags: 0x0
+    // Checksum 0xa1aa61c4, Offset: 0x1748
+    // Size: 0xbc
+    function function_463b3f65() {
         self endon(#"player_revived", #"death");
         while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
@@ -338,15 +339,13 @@ function function_463b3f65() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
 
-// Namespace laststand_mp/laststand
-// Params 0, eflags: 0x0
-// Checksum 0x829d07e4, Offset: 0x1810
-// Size: 0x1c0
-function function_ce726eb4() {
-    /#
+    // Namespace laststand_mp/laststand
+    // Params 0, eflags: 0x0
+    // Checksum 0x829d07e4, Offset: 0x1810
+    // Size: 0x1c0
+    function function_ce726eb4() {
         level endon(#"game_ended");
         while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
@@ -365,8 +364,9 @@ function function_ce726eb4() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace laststand_mp/laststand
 // Params 9, eflags: 0x0

@@ -455,25 +455,24 @@ function register_dev_dvars(killstreaktype) {
     #/
 }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 1, eflags: 0x0
-// Checksum 0xfaa7106f, Offset: 0x23c8
-// Size: 0xbc
-function register_dev_debug_dvar(killstreaktype) {
-    /#
+/#
+
+    // Namespace killstreaks/killstreaks_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xfaa7106f, Offset: 0x23c8
+    // Size: 0xbc
+    function register_dev_debug_dvar(killstreaktype) {
         assert(isdefined(killstreaktype), "<unknown string>");
         assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
         level.killstreaks[killstreaktype].devdebugdvar = "<unknown string>" + killstreaktype + "<unknown string>";
         devgui_scorestreak_command_debugdvar(killstreaktype, level.killstreaks[killstreaktype].devdebugdvar);
-    #/
-}
+    }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 1, eflags: 0x0
-// Checksum 0xcd94a804, Offset: 0x2490
-// Size: 0x138
-function register_devgui(killstreaktype) {
-    /#
+    // Namespace killstreaks/killstreaks_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0xcd94a804, Offset: 0x2490
+    // Size: 0x138
+    function register_devgui(killstreaktype) {
         level endon(#"game_ended");
         wait(randomintrange(2, 20) * float(function_60d95f53()) / 1000);
         give_type_all = "<unknown string>";
@@ -486,38 +485,33 @@ function register_devgui(killstreaktype) {
         }
         if (isdefined(level.killstreaks[killstreaktype].devtimeoutdvar)) {
         }
-    #/
-}
+    }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 3, eflags: 0x0
-// Checksum 0xd0873308, Offset: 0x25d0
-// Size: 0x54
-function devgui_scorestreak_command_givedvar(killstreaktype, give_type, dvar) {
-    /#
+    // Namespace killstreaks/killstreaks_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xd0873308, Offset: 0x25d0
+    // Size: 0x54
+    function devgui_scorestreak_command_givedvar(killstreaktype, give_type, dvar) {
         devgui_scorestreak_command(killstreaktype, give_type, "<unknown string>" + dvar + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 2, eflags: 0x0
-// Checksum 0x3b975041, Offset: 0x2630
-// Size: 0x34
-function devgui_scorestreak_command_timeoutdvar(killstreaktype, dvar) {
-    /#
+    // Namespace killstreaks/killstreaks_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0x3b975041, Offset: 0x2630
+    // Size: 0x34
+    function devgui_scorestreak_command_timeoutdvar(killstreaktype, dvar) {
         devgui_scorestreak_dvar_toggle(killstreaktype, "<unknown string>", dvar);
-    #/
-}
+    }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 2, eflags: 0x0
-// Checksum 0xd5b5a8e8, Offset: 0x2670
-// Size: 0x34
-function devgui_scorestreak_command_debugdvar(killstreaktype, dvar) {
-    /#
+    // Namespace killstreaks/killstreaks_shared
+    // Params 2, eflags: 0x0
+    // Checksum 0xd5b5a8e8, Offset: 0x2670
+    // Size: 0x34
+    function devgui_scorestreak_command_debugdvar(killstreaktype, dvar) {
         devgui_scorestreak_dvar_toggle(killstreaktype, "<unknown string>", dvar);
-    #/
-}
+    }
+
+#/
 
 // Namespace killstreaks/killstreaks_shared
 // Params 3, eflags: 0x0
@@ -557,13 +551,17 @@ function should_draw_debug(killstreak) {
     return 0;
 }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 0, eflags: 0x0
-// Checksum 0x89aba113, Offset: 0x28d8
-// Size: 0x34
-function function_2459bd2f() {
-    assert(isdefined(level.killstreaks), "<unknown string>");
-}
+/#
+
+    // Namespace killstreaks/killstreaks_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x89aba113, Offset: 0x28d8
+    // Size: 0x34
+    function function_2459bd2f() {
+        assert(isdefined(level.killstreaks), "<unknown string>");
+    }
+
+#/
 
 // Namespace killstreaks/killstreaks_shared
 // Params 1, eflags: 0x1 linked
@@ -2076,12 +2074,13 @@ function private initialspawnprotection() {
     self val::reset(#"killstreak_spawn_protection", "ignoreme");
 }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 0, eflags: 0x0
-// Checksum 0x31c27ad8, Offset: 0x80d0
-// Size: 0xe0
-function killstreak_debug_think() {
-    /#
+/#
+
+    // Namespace killstreaks/killstreaks_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x31c27ad8, Offset: 0x80d0
+    // Size: 0xe0
+    function killstreak_debug_think() {
         setdvar(#"debug_killstreak", "<unknown string>");
         for (;;) {
             cmd = getdvarstring(#"debug_killstreak");
@@ -2095,15 +2094,13 @@ function killstreak_debug_think() {
             }
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 0, eflags: 0x0
-// Checksum 0x57af23ce, Offset: 0x81b8
-// Size: 0x33c
-function killstreak_data_dump() {
-    /#
+    // Namespace killstreaks/killstreaks_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x57af23ce, Offset: 0x81b8
+    // Size: 0x33c
+    function killstreak_data_dump() {
         iprintln("<unknown string>");
         println("<unknown string>");
         println("<unknown string>");
@@ -2143,8 +2140,9 @@ function killstreak_data_dump() {
             println("<unknown string>");
         }
         println("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace killstreaks/killstreaks_shared
 // Params 4, eflags: 0x1 linked
@@ -3683,12 +3681,13 @@ function is_ricochet_protected(player) {
     return false;
 }
 
-// Namespace killstreaks/killstreaks_shared
-// Params 0, eflags: 0x0
-// Checksum 0x2dff2cdd, Offset: 0xd880
-// Size: 0x2a8
-function debug_ricochet_protection() {
-    /#
+/#
+
+    // Namespace killstreaks/killstreaks_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x2dff2cdd, Offset: 0xd880
+    // Size: 0x2a8
+    function debug_ricochet_protection() {
         debug_wait = 0.5;
         debug_frames = int(debug_wait / float(function_60d95f53()) / 1000) + 1;
         while (true) {
@@ -3718,6 +3717,6 @@ function debug_ricochet_protection() {
                 }
             }
         }
-    #/
-}
+    }
 
+#/

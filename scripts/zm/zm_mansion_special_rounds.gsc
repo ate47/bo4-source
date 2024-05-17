@@ -68,17 +68,19 @@ function init() {
     #/
 }
 
-// Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
-// Params 0, eflags: 0x0
-// Checksum 0xb09a457b, Offset: 0x598
-// Size: 0x34
-function function_cfcf2d32() {
-    /#
+/#
+
+    // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
+    // Params 0, eflags: 0x0
+    // Checksum 0xb09a457b, Offset: 0x598
+    // Size: 0x34
+    function function_cfcf2d32() {
         if (self.archetype === #"bat") {
             self thread function_2438d55e();
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
 // Params 1, eflags: 0x1 linked

@@ -1,22 +1,21 @@
 // Atian COD Tools GSC decompiler test
 #namespace ai_interface;
 
-// Namespace ai_interface/ai_interface
-// Params 0, eflags: 0x2
-// Checksum 0x38936ac0, Offset: 0xb8
-// Size: 0x36
-function autoexec main() {
-    /#
-        level.__ai_debuginterface = getdvarint(#"ai_debuginterface", 0);
-    #/
-}
+/#
 
-// Namespace ai_interface/ai_interface
-// Params 3, eflags: 0x4
-// Checksum 0x57640758, Offset: 0xf8
-// Size: 0x32a
-function private _checkvalue(archetype, attributename, value) {
-    /#
+    // Namespace ai_interface/ai_interface
+    // Params 0, eflags: 0x2
+    // Checksum 0x38936ac0, Offset: 0xb8
+    // Size: 0x36
+    function autoexec main() {
+        level.__ai_debuginterface = getdvarint(#"ai_debuginterface", 0);
+    }
+
+    // Namespace ai_interface/ai_interface
+    // Params 3, eflags: 0x4
+    // Checksum 0x57640758, Offset: 0xf8
+    // Size: 0x32a
+    function private _checkvalue(archetype, attributename, value) {
         attribute = level.__ai_interface[archetype][attributename];
         switch (attribute[#"type"]) {
         case #"_interface_entity":
@@ -40,15 +39,13 @@ function private _checkvalue(archetype, attributename, value) {
             assert("<unknown string>" + attribute[#"type"] + "<unknown string>" + attributename + "<unknown string>");
             break;
         }
-    #/
-}
+    }
 
-// Namespace ai_interface/ai_interface
-// Params 2, eflags: 0x4
-// Checksum 0xcc1f9c29, Offset: 0x430
-// Size: 0x314
-function private _checkprerequisites(entity, attribute) {
-    /#
+    // Namespace ai_interface/ai_interface
+    // Params 2, eflags: 0x4
+    // Checksum 0xcc1f9c29, Offset: 0x430
+    // Size: 0x314
+    function private _checkprerequisites(entity, attribute) {
         if (isdefined(level.__ai_debuginterface) && level.__ai_debuginterface > 0) {
             assert(isentity(entity) || isstruct(entity), "<unknown string>");
             assert(isactor(entity) || isvehicle(entity) || isstruct(entity) || isbot(entity), "<unknown string>");
@@ -59,20 +56,19 @@ function private _checkprerequisites(entity, attribute) {
             assert(isarray(level.__ai_interface[entity.archetype][attribute]), "<unknown string>" + attribute + "<unknown string>" + function_9e72a96(entity.archetype) + "<unknown string>");
             assert(isstring(level.__ai_interface[entity.archetype][attribute][#"type"]), "<unknown string>" + attribute + "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace ai_interface/ai_interface
-// Params 3, eflags: 0x4
-// Checksum 0x568ed2a5, Offset: 0x750
-// Size: 0xc4
-function private _checkregistrationprerequisites(archetype, attribute, callbackfunction) {
-    /#
+    // Namespace ai_interface/ai_interface
+    // Params 3, eflags: 0x4
+    // Checksum 0x568ed2a5, Offset: 0x750
+    // Size: 0xc4
+    function private _checkregistrationprerequisites(archetype, attribute, callbackfunction) {
         assert(ishash(archetype), "<unknown string>");
         assert(ishash(attribute), "<unknown string>");
         assert(!isdefined(callbackfunction) || isfunctionptr(callbackfunction), "<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace ai_interface/ai_interface
 // Params 1, eflags: 0x5 linked

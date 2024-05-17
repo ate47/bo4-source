@@ -2216,12 +2216,13 @@ function function_fd8a137e(n_time = 0) {
     }
 }
 
-// Namespace zm_orange_challenges/zm_orange_challenges
-// Params 0, eflags: 0x0
-// Checksum 0xa1df1dbb, Offset: 0x88c8
-// Size: 0xa4
-function function_e4b04738() {
-    /#
+/#
+
+    // Namespace zm_orange_challenges/zm_orange_challenges
+    // Params 0, eflags: 0x0
+    // Checksum 0xa1df1dbb, Offset: 0x88c8
+    // Size: 0xa4
+    function function_e4b04738() {
         if (level flag::get(#"challenge_active")) {
             if (isdefined(level.var_97a44fdd)) {
                 var_d6578e1f = level.var_97a44fdd.var_d6578e1f;
@@ -2230,6 +2231,6 @@ function function_e4b04738() {
                 var_d6578e1f notify(var_d6578e1f.str_notify);
             }
         }
-    #/
-}
+    }
 
+#/

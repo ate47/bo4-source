@@ -62,12 +62,13 @@ function updatesitrepscan() {
     }
 }
 
-// Namespace perks/perks
-// Params 0, eflags: 0x0
-// Checksum 0x4b6c2a71, Offset: 0x790
-// Size: 0x364
-function updatedvars() {
-    /#
+/#
+
+    // Namespace perks/perks
+    // Params 0, eflags: 0x0
+    // Checksum 0x4b6c2a71, Offset: 0x790
+    // Size: 0x364
+    function updatedvars() {
         while (true) {
             level.sitrepscan1_enable = getdvarint(#"scr_sitrepscan1_enable", level.sitrepscan1_enable);
             level.sitrepscan1_setoutline = getdvarint(#"scr_sitrepscan1_setoutline", level.sitrepscan1_setoutline);
@@ -86,8 +87,9 @@ function updatedvars() {
             level.friendlycontentoutlines = getdvarint(#"friendlycontentoutlines", level.friendlycontentoutlines);
             wait(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace perks/perks
 // Params 7, eflags: 0x1 linked
@@ -168,12 +170,13 @@ function on_player_spawned(local_client_num) {
     }
 }
 
-// Namespace perks/perks
-// Params 2, eflags: 0x0
-// Checksum 0xd704aba7, Offset: 0xe48
-// Size: 0xba
-function array_equal(&a, &b) {
-    /#
+/#
+
+    // Namespace perks/perks
+    // Params 2, eflags: 0x0
+    // Checksum 0xd704aba7, Offset: 0xe48
+    // Size: 0xba
+    function array_equal(&a, &b) {
         if (isdefined(a) && isdefined(b) && isarray(a) && isarray(b) && a.size == b.size) {
             for (i = 0; i < a.size; i++) {
                 if (!(a[i] === b[i])) {
@@ -183,15 +186,13 @@ function array_equal(&a, &b) {
             return 1;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace perks/perks
-// Params 1, eflags: 0x0
-// Checksum 0x3991c125, Offset: 0xf10
-// Size: 0xe8
-function watch_perks_change(local_client_num) {
-    /#
+    // Namespace perks/perks
+    // Params 1, eflags: 0x0
+    // Checksum 0x3991c125, Offset: 0xf10
+    // Size: 0xe8
+    function watch_perks_change(local_client_num) {
         self notify(#"watch_perks_change");
         self endon(#"watch_perks_change");
         self endon(#"death");
@@ -205,8 +206,9 @@ function watch_perks_change(local_client_num) {
             }
             wait(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace perks/perks
 // Params 1, eflags: 0x0

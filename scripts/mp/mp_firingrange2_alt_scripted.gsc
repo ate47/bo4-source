@@ -65,16 +65,17 @@ function function_2cdcf5c3() {
     level scene::skipto_end(#"p8_fxanim_mp_fir_flyover_bundle");
 }
 
-// Namespace mp_firingrange2_alt_scripted/mp_firingrange2_alt_scripted
-// Params 0, eflags: 0x0
-// Checksum 0x6a46a7ae, Offset: 0x2e0
-// Size: 0x9c
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_firingrange2_alt_scripted/mp_firingrange2_alt_scripted
+    // Params 0, eflags: 0x0
+    // Checksum 0x6a46a7ae, Offset: 0x2e0
+    // Size: 0x9c
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

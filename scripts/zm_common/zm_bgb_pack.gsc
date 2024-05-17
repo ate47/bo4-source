@@ -892,26 +892,25 @@ function function_59004002(str_bgb, b_disable = 1) {
     }
 }
 
-// Namespace bgb_pack/zm_bgb_pack
-// Params 0, eflags: 0x0
-// Checksum 0xb64b9503, Offset: 0x2df8
-// Size: 0x136
-function function_72ffe91() {
-    /#
+/#
+
+    // Namespace bgb_pack/zm_bgb_pack
+    // Params 0, eflags: 0x0
+    // Checksum 0xb64b9503, Offset: 0x2df8
+    // Size: 0x136
+    function function_72ffe91() {
         level.var_d03d9cf3 = [];
         level.var_d03d9cf3[0] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
         level.var_d03d9cf3[1] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
         level.var_d03d9cf3[2] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
         level.var_d03d9cf3[3] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
-    #/
-}
+    }
 
-// Namespace bgb_pack/zm_bgb_pack
-// Params 0, eflags: 0x4
-// Checksum 0xcc1b6adb, Offset: 0x2f38
-// Size: 0x268
-function private setup_devgui() {
-    /#
+    // Namespace bgb_pack/zm_bgb_pack
+    // Params 0, eflags: 0x4
+    // Checksum 0xcc1b6adb, Offset: 0x2f38
+    // Size: 0x268
+    function private setup_devgui() {
         level flagsys::wait_till("<unknown string>");
         wait(1);
         bgb_devgui_base = "<unknown string>";
@@ -929,15 +928,13 @@ function private setup_devgui() {
             name = function_9e72a96(level.bgb[key].name);
             adddebugcommand(bgb_devgui_base + name + "<unknown string>" + name + "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace bgb_pack/zm_bgb_pack
-// Params 2, eflags: 0x4
-// Checksum 0x9c822cfa, Offset: 0x31a8
-// Size: 0x34c
-function private function_c1091a8f(str_cmd, key) {
-    /#
+    // Namespace bgb_pack/zm_bgb_pack
+    // Params 2, eflags: 0x4
+    // Checksum 0x9c822cfa, Offset: 0x31a8
+    // Size: 0x34c
+    function private function_c1091a8f(str_cmd, key) {
         var_8327ff7c = getdvarint(#"hash_7877ee182ba11433", 0);
         a_players = getplayers();
         keys = getarraykeys(level.bgb);
@@ -989,6 +986,6 @@ function private function_c1091a8f(str_cmd, key) {
             var_6c522f60 = 1;
         }
         return var_6c522f60;
-    #/
-}
+    }
 
+#/

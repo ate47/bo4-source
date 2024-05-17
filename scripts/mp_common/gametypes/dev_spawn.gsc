@@ -8,34 +8,31 @@
 
 #namespace dev_spawn;
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x330ae9f4, Offset: 0x98
-// Size: 0x7c
-function function_d8049496() {
-    /#
+/#
+
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x330ae9f4, Offset: 0x98
+    // Size: 0x7c
+    function function_d8049496() {
         callback::on_start_gametype(&on_start_gametype);
         setdvar(#"hash_4c1fd51cfe763a2", "<unknown string>");
         setdvar(#"hash_6d53bd520b4f7853", "<unknown string>");
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0xf0a84542, Offset: 0x120
-// Size: 0x1c
-function on_start_gametype() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0xf0a84542, Offset: 0x120
+    // Size: 0x1c
+    function on_start_gametype() {
         thread function_3326cf8d();
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x1793e890, Offset: 0x148
-// Size: 0x224
-function function_c28b3d26() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x1793e890, Offset: 0x148
+    // Size: 0x224
+    function function_c28b3d26() {
         show_spawns = getdvarint(#"scr_showspawns", 0);
         show_start_spawns = getdvarint(#"scr_showstartspawns", 0);
         var_8f7b54b5 = getdvarint(#"hash_42bc2c660a3d2ecd", 0);
@@ -72,15 +69,13 @@ function function_c28b3d26() {
             }
             function_107f44c0();
         }
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0xfeed8e7f, Offset: 0x378
-// Size: 0x4d2
-function function_f084faed() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0xfeed8e7f, Offset: 0x378
+    // Size: 0x4d2
+    function function_f084faed() {
         if (!isdefined(level.var_2f11d3e5)) {
             level.var_2f11d3e5 = [];
             level.var_2f11d3e5[#"dm"] = "<unknown string>";
@@ -114,15 +109,13 @@ function function_f084faed() {
             level.var_2f11d3e5[#"escort"] = "<unknown string>";
             level.var_2f11d3e5[#"bounty"] = "<unknown string>";
         }
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x9830140a, Offset: 0x858
-// Size: 0xce
-function function_3326cf8d() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x9830140a, Offset: 0x858
+    // Size: 0xce
+    function function_3326cf8d() {
         while (true) {
             var_14d21c2b = getdvarstring(#"scr_set_spawns");
             if (var_14d21c2b != "<unknown string>") {
@@ -133,15 +126,13 @@ function function_3326cf8d() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 1, eflags: 0x0
-// Checksum 0xd0b9d636, Offset: 0x930
-// Size: 0xec
-function function_bf14041f(var_9e1b22d) {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 1, eflags: 0x0
+    // Checksum 0xd0b9d636, Offset: 0x930
+    // Size: 0xec
+    function function_bf14041f(var_9e1b22d) {
         hidespawnpoints();
         spawning::clear_spawn_points();
         globallogic_spawn::function_c40af6fa();
@@ -151,15 +142,13 @@ function function_bf14041f(var_9e1b22d) {
         spawning::updateallspawnpoints();
         globallogic_spawn::addspawns();
         showspawnpoints();
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 1, eflags: 0x0
-// Checksum 0xae56c6db, Offset: 0xa28
-// Size: 0x1ba
-function function_f0b81b80(var_14d21c2b) {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 1, eflags: 0x0
+    // Checksum 0xae56c6db, Offset: 0xa28
+    // Size: 0x1ba
+    function function_f0b81b80(var_14d21c2b) {
         flagset = [];
         tokens = strtok(tolower(var_14d21c2b), "<unknown string>");
         foreach (token in tokens) {
@@ -180,25 +169,21 @@ function function_f0b81b80(var_14d21c2b) {
             }
         }
         return flags;
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 1, eflags: 0x0
-// Checksum 0x8ba2aaa9, Offset: 0xbf0
-// Size: 0x22
-function function_423a05a4(gametypestr) {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 1, eflags: 0x0
+    // Checksum 0x8ba2aaa9, Offset: 0xbf0
+    // Size: 0x22
+    function function_423a05a4(gametypestr) {
         return level.var_2f11d3e5[gametypestr];
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 4, eflags: 0x0
-// Checksum 0x326104e7, Offset: 0xc20
-// Size: 0xf8
-function function_5650f4ee(var_7a594c78, var_55a94d2c, actualteam, isstartspawn) {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 4, eflags: 0x0
+    // Checksum 0x326104e7, Offset: 0xc20
+    // Size: 0xf8
+    function function_5650f4ee(var_7a594c78, var_55a94d2c, actualteam, isstartspawn) {
         if (var_55a94d2c == "<unknown string>") {
             return 1;
         } else if (var_55a94d2c == "<unknown string>" && !isstartspawn) {
@@ -214,15 +199,13 @@ function function_5650f4ee(var_7a594c78, var_55a94d2c, actualteam, isstartspawn)
             }
         }
         return 1;
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 1, eflags: 0x0
-// Checksum 0xce14350b, Offset: 0xd20
-// Size: 0x258
-function function_88770699(spawnlist) {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 1, eflags: 0x0
+    // Checksum 0xce14350b, Offset: 0xd20
+    // Size: 0x258
+    function function_88770699(spawnlist) {
         level endon(#"hide_spawnpoints", #"hash_12bbc39c8f50f769");
         maxdistancesq = 1000000;
         hostplayer = util::gethostplayer();
@@ -251,15 +234,13 @@ function function_88770699(spawnlist) {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x304d6cd0, Offset: 0xf80
-// Size: 0xec
-function showspawnpoints() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x304d6cd0, Offset: 0xf80
+    // Size: 0xec
+    function showspawnpoints() {
         spawns = [];
         spawnpoints = arraycombine(level.spawnpoints, spawns, 0, 0);
         if (isdefined(level.spawn_start)) {
@@ -268,15 +249,13 @@ function showspawnpoints() {
             }
         }
         thread function_88770699(spawnpoints);
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0xb0e5f92d, Offset: 0x1078
-// Size: 0x10c
-function function_1b0780eb() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0xb0e5f92d, Offset: 0x1078
+    // Size: 0x10c
+    function function_1b0780eb() {
         if (!isdefined(level.spawnpoints)) {
             return;
         }
@@ -289,36 +268,30 @@ function function_1b0780eb() {
             }
         }
         thread function_88770699(spawnpoints);
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x5510e93b, Offset: 0x1190
-// Size: 0x20
-function function_107f44c0() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x5510e93b, Offset: 0x1190
+    // Size: 0x20
+    function function_107f44c0() {
         level notify(#"hash_12bbc39c8f50f769");
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x4a2263b0, Offset: 0x11b8
-// Size: 0x22
-function hidespawnpoints() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x4a2263b0, Offset: 0x11b8
+    // Size: 0x22
+    function hidespawnpoints() {
         level notify(#"hide_spawnpoints");
         return;
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x1c31def4, Offset: 0x11e8
-// Size: 0x2c2
-function showstartspawnpoints() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x1c31def4, Offset: 0x11e8
+    // Size: 0x2c2
+    function showstartspawnpoints() {
         if (!isdefined(level.spawn_start)) {
             return;
         }
@@ -347,26 +320,22 @@ function showstartspawnpoints() {
             showonespawnpoint(spawnpoint, color, "<unknown string>");
         }
         return;
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 0, eflags: 0x0
-// Checksum 0x6b33db41, Offset: 0x14b8
-// Size: 0x22
-function hidestartspawnpoints() {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 0, eflags: 0x0
+    // Checksum 0x6b33db41, Offset: 0x14b8
+    // Size: 0x22
+    function hidestartspawnpoints() {
         level notify(#"hide_startspawnpoints");
         return;
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 4, eflags: 0x0
-// Checksum 0x65759567, Offset: 0x14e8
-// Size: 0x544
-function drawspawnpoint(spawn_point, color, height, var_379ac7cc) {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 4, eflags: 0x0
+    // Checksum 0x65759567, Offset: 0x14e8
+    // Size: 0x544
+    function drawspawnpoint(spawn_point, color, height, var_379ac7cc) {
         if (!isdefined(height) || height <= 0) {
             height = util::get_player_height();
         }
@@ -419,15 +388,13 @@ function drawspawnpoint(spawn_point, color, height, var_379ac7cc) {
         if (isdefined(var_379ac7cc) && var_379ac7cc != "<unknown string>") {
             print3d(spawn_point.origin + (0, 0, height), var_379ac7cc, color, 1, 1);
         }
-    #/
-}
+    }
 
-// Namespace dev_spawn/dev_spawn
-// Params 5, eflags: 0x0
-// Checksum 0xac253bd1, Offset: 0x1a38
-// Size: 0x54e
-function showonespawnpoint(spawn_point, color, notification, height, print) {
-    /#
+    // Namespace dev_spawn/dev_spawn
+    // Params 5, eflags: 0x0
+    // Checksum 0xac253bd1, Offset: 0x1a38
+    // Size: 0x54e
+    function showonespawnpoint(spawn_point, color, notification, height, print) {
         if (!isdefined(height) || height <= 0) {
             height = util::get_player_height();
         }
@@ -480,6 +447,6 @@ function showonespawnpoint(spawn_point, color, notification, height, print) {
             thread dev::print3duntilnotified(spawn_point.origin + (0, 0, height), print, color, 1, 1, notification);
         }
         return;
-    #/
-}
+    }
 
+#/

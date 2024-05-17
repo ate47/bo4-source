@@ -1945,12 +1945,13 @@ function function_2969ccb4(var_43d50d89 = 1, var_463b195d = 1) {
     }
 }
 
-// Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
-// Params 0, eflags: 0x0
-// Checksum 0xe9d7ce0b, Offset: 0x92a0
-// Size: 0x510
-function function_41dcd216() {
-    /#
+/#
+
+    // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
+    // Params 0, eflags: 0x0
+    // Checksum 0xe9d7ce0b, Offset: 0x92a0
+    // Size: 0x510
+    function function_41dcd216() {
         sessionmode = currentsessionmode();
         setdvar(#"hash_5b3b4d1a60845a9b", "<unknown string>");
         level flag::init("colbounds_tut_fin1_fight5_start_off");
@@ -2015,28 +2016,24 @@ function function_41dcd216() {
             }
             setdvar(#"hash_5b3b4d1a60845a9b", "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
-// Params 2, eflags: 0x0
-// Checksum 0xd47dcee9, Offset: 0x97b8
-// Size: 0x7c
-function function_7d10f455(a_str_vo, var_c782ff9c) {
-    /#
+    // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
+    // Params 2, eflags: 0x0
+    // Checksum 0xd47dcee9, Offset: 0x97b8
+    // Size: 0x7c
+    function function_7d10f455(a_str_vo, var_c782ff9c) {
         e_player = ct_utils::get_player();
         e_player thread ct_vo::function_831e0584(a_str_vo);
         e_player ct_vo::function_3ca1b77d(var_c782ff9c);
         iprintlnbold("<unknown string>");
-    #/
-}
+    }
 
-// Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
-// Params 0, eflags: 0x0
-// Checksum 0x7a153b13, Offset: 0x9840
-// Size: 0x1b0
-function function_53e140e6() {
-    /#
+    // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
+    // Params 0, eflags: 0x0
+    // Checksum 0x7a153b13, Offset: 0x9840
+    // Size: 0x1b0
+    function function_53e140e6() {
         level endon(#"combattraining_logic_finished");
         level.var_e72728b8 = [];
         level notify(#"hash_60e26e14a51c5211");
@@ -2057,30 +2054,26 @@ function function_53e140e6() {
         self thread ct_utils::function_61c3d59c(#"hash_a6ed66603c69f47");
         self waittill(#"hash_4aaf6d6479e7cf20");
         wait(10);
-    #/
-}
+    }
 
-// Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
-// Params 2, eflags: 0x0
-// Checksum 0xac944644, Offset: 0x99f8
-// Size: 0x84
-function function_5a0f5bcb(str_tut, var_6bf7e923) {
-    /#
+    // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
+    // Params 2, eflags: 0x0
+    // Checksum 0xac944644, Offset: 0x99f8
+    // Size: 0x84
+    function function_5a0f5bcb(str_tut, var_6bf7e923) {
         level flag::set("colbounds_tut_fin1_fight5_start_off");
         level.var_e3146bce = str_tut;
         self function_d74a7e31();
         waitframe(1);
         self [[ var_6bf7e923 ]]();
         level flag::clear("colbounds_tut_fin1_fight5_start_off");
-    #/
-}
+    }
 
-// Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
-// Params 0, eflags: 0x0
-// Checksum 0x467ff675, Offset: 0x9a88
-// Size: 0xb4
-function function_d74a7e31() {
-    /#
+    // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
+    // Params 0, eflags: 0x0
+    // Checksum 0x467ff675, Offset: 0x9a88
+    // Size: 0xb4
+    function function_d74a7e31() {
         level.var_8ca3c62 = 0;
         self ct_utils::function_8b7a2fdd();
         self ct_utils::function_a7d0e0f3();
@@ -2089,6 +2082,6 @@ function function_d74a7e31() {
         level notify(#"tutorial_goto_end");
         level notify(#"tut_stop");
         ct_bots::deactivate_bots();
-    #/
-}
+    }
 
+#/

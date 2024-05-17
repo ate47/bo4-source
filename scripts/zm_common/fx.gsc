@@ -7,12 +7,13 @@
 
 #namespace fx;
 
-// Namespace fx/fx
-// Params 4, eflags: 0x0
-// Checksum 0x68f5ac02, Offset: 0x90
-// Size: 0x17c
-function print_org(fxcommand, fxid, fxpos, waittime) {
-    /#
+/#
+
+    // Namespace fx/fx
+    // Params 4, eflags: 0x0
+    // Checksum 0x68f5ac02, Offset: 0x90
+    // Size: 0x17c
+    function print_org(fxcommand, fxid, fxpos, waittime) {
         if (getdvarint(#"debug", 0)) {
             println("<unknown string>");
             println("<unknown string>" + fxpos[0] + "<unknown string>" + fxpos[1] + "<unknown string>" + fxpos[2] + "<unknown string>");
@@ -23,8 +24,9 @@ function print_org(fxcommand, fxid, fxpos, waittime) {
             println("<unknown string>" + waittime + "<unknown string>");
             println("<unknown string>");
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace fx/fx
 // Params 8, eflags: 0x0

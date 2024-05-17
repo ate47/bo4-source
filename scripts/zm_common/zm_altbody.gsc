@@ -96,15 +96,17 @@ function function_6991025d() {
     }
 }
 
-// Namespace zm_altbody/zm_altbody
-// Params 1, eflags: 0x0
-// Checksum 0xbee5f2e, Offset: 0x628
-// Size: 0x24
-function devgui_start_altbody(name) {
-    /#
+/#
+
+    // Namespace zm_altbody/zm_altbody
+    // Params 1, eflags: 0x0
+    // Checksum 0xbee5f2e, Offset: 0x628
+    // Size: 0x24
+    function devgui_start_altbody(name) {
         self player_altbody(name);
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_altbody/zm_altbody
 // Params 2, eflags: 0x4

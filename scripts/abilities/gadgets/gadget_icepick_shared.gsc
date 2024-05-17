@@ -906,20 +906,22 @@ function private gadget_icepick_on(slot, weapon) {
     thread function_6b9d6894(self);
 }
 
-// Namespace icepick/gadget_icepick_shared
-// Params 0, eflags: 0x4
-// Checksum 0x9f0e2fe5, Offset: 0x3b48
-// Size: 0x4e
-function private function_30fe16c7() {
-    /#
+/#
+
+    // Namespace icepick/gadget_icepick_shared
+    // Params 0, eflags: 0x4
+    // Checksum 0x9f0e2fe5, Offset: 0x3b48
+    // Size: 0x4e
+    function private function_30fe16c7() {
         self notify("hacked_sensor_dart");
         self endon("hacked_sensor_dart");
         while (isdefined(self)) {
             function_73d5db3b(self);
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace icepick/gadget_icepick_shared
 // Params 2, eflags: 0x5 linked

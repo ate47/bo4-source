@@ -267,12 +267,13 @@ function spawn_item(w_item, v_origin, v_angles, var_f93e465d = 1) {
     return new_item;
 }
 
-// Namespace zm_items/zm_items
-// Params 0, eflags: 0x0
-// Checksum 0xd4eafea7, Offset: 0xf28
-// Size: 0x102
-function debug_items() {
-    /#
+/#
+
+    // Namespace zm_items/zm_items
+    // Params 0, eflags: 0x0
+    // Checksum 0xd4eafea7, Offset: 0xf28
+    // Size: 0x102
+    function debug_items() {
         for (;;) {
             a_items = getitemarray();
             foreach (item in a_items) {
@@ -283,6 +284,6 @@ function debug_items() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
+#/

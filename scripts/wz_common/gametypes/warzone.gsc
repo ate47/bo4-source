@@ -198,12 +198,13 @@ function on_spawn_player() {
     }
 }
 
-// Namespace warzone/warzone
-// Params 0, eflags: 0x0
-// Checksum 0x2b286512, Offset: 0x17a8
-// Size: 0x134
-function function_5d7553c9() {
-    /#
+/#
+
+    // Namespace warzone/warzone
+    // Params 0, eflags: 0x0
+    // Checksum 0x2b286512, Offset: 0x17a8
+    // Size: 0x134
+    function function_5d7553c9() {
         if (game.state == "MOD_HEAD_SHOT") {
             return;
         }
@@ -229,15 +230,13 @@ function function_5d7553c9() {
         if (getdvarint(#"hash_10daadecda56ef52", 1) && level.spawned_vehicles > 80) {
             assert(level.spawned_vehicles <= 80, "map_corner");
         }
-    #/
-}
+    }
 
-// Namespace warzone/warzone
-// Params 0, eflags: 0x4
-// Checksum 0x318abc98, Offset: 0x18e8
-// Size: 0x130
-function private function_c2a75696() {
-    /#
+    // Namespace warzone/warzone
+    // Params 0, eflags: 0x4
+    // Checksum 0x318abc98, Offset: 0x18e8
+    // Size: 0x130
+    function private function_c2a75696() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
@@ -253,8 +252,9 @@ function private function_c2a75696() {
             }
             setdvar(#"warzone_devgui_cmd", "trigger_hurt_new");
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace warzone/warzone
 // Params 3, eflags: 0x4
@@ -1994,16 +1994,18 @@ function function_77319881() {
     }
 }
 
-// Namespace warzone/warzone
-// Params 1, eflags: 0x0
-// Checksum 0xffb89ea0, Offset: 0x8da8
-// Size: 0x3c
-function function_cc5d43a1(msg) {
-    /#
+/#
+
+    // Namespace warzone/warzone
+    // Params 1, eflags: 0x0
+    // Checksum 0xffb89ea0, Offset: 0x8da8
+    // Size: 0x3c
+    function function_cc5d43a1(msg) {
         println(msg);
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace warzone/warzone
 // Params 1, eflags: 0x0

@@ -1012,17 +1012,19 @@ function function_d1cb3471() {
     }
 }
 
-// Namespace potm/potm_shared
-// Params 0, eflags: 0x4
-// Checksum 0x719de50d, Offset: 0x4200
-// Size: 0x64
-function private waitthennotifyplaypotm() {
-    /#
+/#
+
+    // Namespace potm/potm_shared
+    // Params 0, eflags: 0x4
+    // Checksum 0x719de50d, Offset: 0x4200
+    // Size: 0x64
+    function private waitthennotifyplaypotm() {
         setdvar(#"scr_force_potm", 0);
         setdvar(#"hash_2428eb9c3d05eee0", 0);
         level function_b6a5e7fa(1);
-    #/
-}
+    }
+
+#/
 
 // Namespace potm/potm_shared
 // Params 0, eflags: 0x5 linked
@@ -1289,12 +1291,13 @@ function function_34576c1(var_900768bc, var_81538b15) {
     return function_d46f78f8(var_900768bc);
 }
 
-// Namespace potm/potm_shared
-// Params 1, eflags: 0x4
-// Checksum 0x85a218b8, Offset: 0x5080
-// Size: 0x354
-function private function_e81fe19d(bookmark) {
-    /#
+/#
+
+    // Namespace potm/potm_shared
+    // Params 1, eflags: 0x4
+    // Checksum 0x85a218b8, Offset: 0x5080
+    // Size: 0x354
+    function private function_e81fe19d(bookmark) {
         var_567b8be5 = "<unknown string>" + bookmark.bookmarkname + "<unknown string>" + bookmark.time;
         if (isdefined(bookmark.var_900768bc)) {
             var_567b8be5 += "<unknown string>" + bookmark.var_900768bc.index + "<unknown string>" + bookmark.var_900768bc.id;
@@ -1333,8 +1336,9 @@ function private function_e81fe19d(bookmark) {
             var_567b8be5 += "<unknown string>" + bookmark.eventdata.event_info;
         }
         println(var_567b8be5 + "<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace potm/potm_shared
 // Params 10, eflags: 0x1 linked
@@ -2116,27 +2120,26 @@ function function_c65274ed() {
     return false;
 }
 
-// Namespace potm/potm_shared
-// Params 0, eflags: 0x4
-// Checksum 0xa29de893, Offset: 0x8498
-// Size: 0x8c
-function private debuginit() {
-    /#
+/#
+
+    // Namespace potm/potm_shared
+    // Params 0, eflags: 0x4
+    // Checksum 0xa29de893, Offset: 0x8498
+    // Size: 0x8c
+    function private debuginit() {
         if (!isenabled()) {
             return;
         }
         setdvar(#"scr_potm_debug", 0);
         setdvar(#"scr_potm_debug_print", 0);
         setdvar(#"scr_potm_debug_event_num", 1);
-    #/
-}
+    }
 
-// Namespace potm/potm_shared
-// Params 1, eflags: 0x4
-// Checksum 0x8a09fe77, Offset: 0x8530
-// Size: 0x4b4
-function private updatedebugmenudata(forceupdate) {
-    /#
+    // Namespace potm/potm_shared
+    // Params 1, eflags: 0x4
+    // Checksum 0x8a09fe77, Offset: 0x8530
+    // Size: 0x4b4
+    function private updatedebugmenudata(forceupdate) {
         self endon(#"disconnect");
         level endon(#"game_ended");
         if (!isdefined(level.potmdebugmenu)) {
@@ -2179,15 +2182,13 @@ function private updatedebugmenudata(forceupdate) {
         hostplayer setluimenudata(menu, #"hash_752b983964003a68", int(var_e567d17));
         hostplayer setluimenudata(menu, #"hash_5935b658727b020c", var_1be0f2c3);
         hostplayer setluimenudata(menu, #"hash_33d80b75d9c6d88d", var_4775155a);
-    #/
-}
+    }
 
-// Namespace potm/potm_shared
-// Params 0, eflags: 0x4
-// Checksum 0x886e9e91, Offset: 0x89f0
-// Size: 0xda
-function private updatedebugmenustate() {
-    /#
+    // Namespace potm/potm_shared
+    // Params 0, eflags: 0x4
+    // Checksum 0x886e9e91, Offset: 0x89f0
+    // Size: 0xda
+    function private updatedebugmenustate() {
         player = util::gethostplayer();
         if (getdvarint(#"scr_potm_debug", 0) == 1) {
             if (!isdefined(level.potmdebugmenu) && isdefined(player)) {
@@ -2199,15 +2200,13 @@ function private updatedebugmenustate() {
             level.potmdebugmenu = undefined;
         }
         return 0;
-    #/
-}
+    }
 
-// Namespace potm/potm_shared
-// Params 0, eflags: 0x0
-// Checksum 0x9530c38c, Offset: 0x8ad8
-// Size: 0x224
-function debugupdate() {
-    /#
+    // Namespace potm/potm_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x9530c38c, Offset: 0x8ad8
+    // Size: 0x224
+    function debugupdate() {
         if (!isenabled()) {
             return;
         }
@@ -2233,6 +2232,6 @@ function debugupdate() {
             }
             setdvar(#"hash_198be770b0735f93", 0);
         }
-    #/
-}
+    }
 
+#/

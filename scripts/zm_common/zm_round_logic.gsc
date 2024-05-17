@@ -958,12 +958,13 @@ function get_zombie_spawn_delay(n_round) {
     return n_delay;
 }
 
-// Namespace zm_round_logic/zm_round_logic
-// Params 0, eflags: 0x0
-// Checksum 0xb25fc88e, Offset: 0x3ed0
-// Size: 0xa8
-function round_spawn_failsafe_debug() {
-    /#
+/#
+
+    // Namespace zm_round_logic/zm_round_logic
+    // Params 0, eflags: 0x0
+    // Checksum 0xb25fc88e, Offset: 0x3ed0
+    // Size: 0xa8
+    function round_spawn_failsafe_debug() {
         level notify(#"failsafe_debug_stop");
         level endon(#"failsafe_debug_stop");
         start = gettime();
@@ -975,15 +976,13 @@ function round_spawn_failsafe_debug() {
             }
             util::wait_network_frame();
         }
-    #/
-}
+    }
 
-// Namespace zm_round_logic/zm_round_logic
-// Params 0, eflags: 0x0
-// Checksum 0x1e3ffa3b, Offset: 0x3f80
-// Size: 0x164
-function print_zombie_counts() {
-    /#
+    // Namespace zm_round_logic/zm_round_logic
+    // Params 0, eflags: 0x0
+    // Checksum 0x1e3ffa3b, Offset: 0x3f80
+    // Size: 0x164
+    function print_zombie_counts() {
         while (true) {
             if (getdvarint(#"zombiemode_debug_zombie_count", 0)) {
                 if (!isdefined(level.debug_zombie_count_hud)) {
@@ -1002,8 +1001,9 @@ function print_zombie_counts() {
             }
             wait(0.1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_round_logic/zm_round_logic
 // Params 0, eflags: 0x1 linked

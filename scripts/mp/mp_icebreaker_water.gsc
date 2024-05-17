@@ -160,26 +160,25 @@ function function_553ca6ce(e_player) {
     #/
 }
 
-// Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 0, eflags: 0x0
-// Checksum 0x852401e5, Offset: 0x958
-// Size: 0xc4
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_icebreaker_water/mp_icebreaker_water
+    // Params 0, eflags: 0x0
+    // Checksum 0x852401e5, Offset: 0x958
+    // Size: 0xc4
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace mp_icebreaker_water/mp_icebreaker_water
-// Params 1, eflags: 0x0
-// Checksum 0x71dc8596, Offset: 0xa28
-// Size: 0xd4
-function function_2d706436(e_player) {
-    /#
+    // Namespace mp_icebreaker_water/mp_icebreaker_water
+    // Params 1, eflags: 0x0
+    // Checksum 0x71dc8596, Offset: 0xa28
+    // Size: 0xd4
+    function function_2d706436(e_player) {
         if (!getdvarint(#"hash_a23c3aad7eb7dd", 0)) {
             return;
         }
@@ -187,6 +186,6 @@ function function_2d706436(e_player) {
         if (n_height > 0) {
             debug2dtext((800, 768, 0), "<unknown string>" + n_height, (1, 1, 1), 1, (0, 0, 0), 1, 1.2);
         }
-    #/
-}
+    }
 
+#/

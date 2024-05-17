@@ -152,26 +152,25 @@ function make_zombie_blood_entity() {
     }
 }
 
-// Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 0, eflags: 0x0
-// Checksum 0x68c26836, Offset: 0xbc8
-// Size: 0x7c
-function function_98b48c31() {
-    /#
+/#
+
+    // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
+    // Params 0, eflags: 0x0
+    // Checksum 0x68c26836, Offset: 0xbc8
+    // Size: 0x7c
+    function function_98b48c31() {
         level flagsys::wait_till("<unknown string>");
         wait(1);
         zm_devgui::add_custom_devgui_callback(&function_9170df8e);
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
-// Params 1, eflags: 0x0
-// Checksum 0x80a48102, Offset: 0xc50
-// Size: 0xa8
-function function_9170df8e(cmd) {
-    /#
+    // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
+    // Params 1, eflags: 0x0
+    // Checksum 0x80a48102, Offset: 0xc50
+    // Size: 0xa8
+    function function_9170df8e(cmd) {
         b_return = 0;
         switch (cmd) {
         case #"zombie_blood":
@@ -182,6 +181,6 @@ function function_9170df8e(cmd) {
             break;
         }
         return b_return;
-    #/
-}
+    }
 
+#/

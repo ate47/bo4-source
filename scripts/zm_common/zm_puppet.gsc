@@ -4,12 +4,13 @@
 
 #namespace zm_puppet;
 
-// Namespace zm_puppet/zm_puppet
-// Params 0, eflags: 0x0
-// Checksum 0x3b054693, Offset: 0x78
-// Size: 0x210
-function wait_for_puppet_pickup() {
-    /#
+/#
+
+    // Namespace zm_puppet/zm_puppet
+    // Params 0, eflags: 0x0
+    // Checksum 0x3b054693, Offset: 0x78
+    // Size: 0x210
+    function wait_for_puppet_pickup() {
         self endon(#"death");
         self.iscurrentlypuppet = 0;
         while (true) {
@@ -37,6 +38,6 @@ function wait_for_puppet_pickup() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
 
+#/

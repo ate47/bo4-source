@@ -368,27 +368,26 @@ function private function_cabd9ff3(eventstruct) {
     }
 }
 
-// Namespace infection/infection
-// Params 0, eflags: 0x4
-// Checksum 0xf274b9c1, Offset: 0x1898
-// Size: 0x84
-function private _setup_devgui() {
-    /#
+/#
+
+    // Namespace infection/infection
+    // Params 0, eflags: 0x4
+    // Checksum 0xf274b9c1, Offset: 0x1898
+    // Size: 0x84
+    function private _setup_devgui() {
         while (!canadddebugcommand()) {
             waitframe(1);
         }
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace infection/infection
-// Params 0, eflags: 0x4
-// Checksum 0x73fc4480, Offset: 0x1928
-// Size: 0x2f4
-function private function_cdd9b388() {
-    /#
+    // Namespace infection/infection
+    // Params 0, eflags: 0x4
+    // Checksum 0x73fc4480, Offset: 0x1928
+    // Size: 0x2f4
+    function private function_cdd9b388() {
         while (true) {
             if (getdvarint(#"wz_respawn_points", 0)) {
                 wait(1);
@@ -427,6 +426,6 @@ function private function_cdd9b388() {
                 }
             }
         }
-    #/
-}
+    }
 
+#/

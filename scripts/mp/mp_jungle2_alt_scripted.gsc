@@ -94,16 +94,17 @@ function function_69a9563e(a_ents) {
     }
 }
 
-// Namespace mp_jungle2_alt_scripted/mp_jungle2_alt_scripted
-// Params 0, eflags: 0x0
-// Checksum 0x12e8ed39, Offset: 0x640
-// Size: 0x9c
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_jungle2_alt_scripted/mp_jungle2_alt_scripted
+    // Params 0, eflags: 0x0
+    // Checksum 0x12e8ed39, Offset: 0x640
+    // Size: 0x9c
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

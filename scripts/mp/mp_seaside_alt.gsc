@@ -68,15 +68,16 @@ function function_2cdcf5c3() {
     }
 }
 
-// Namespace mp_seaside_alt/mp_seaside_alt
-// Params 0, eflags: 0x0
-// Checksum 0x128cf976, Offset: 0x368
-// Size: 0x74
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_seaside_alt/mp_seaside_alt
+    // Params 0, eflags: 0x0
+    // Checksum 0x128cf976, Offset: 0x368
+    // Size: 0x74
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

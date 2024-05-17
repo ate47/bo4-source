@@ -1911,16 +1911,18 @@ function zombie_game_over_death() {
     }
 }
 
-// Namespace zm/zm
-// Params 1, eflags: 0x0
-// Checksum 0x7147f6cb, Offset: 0x96a0
-// Size: 0x32
-function fade_up_over_time(t) {
-    /#
+/#
+
+    // Namespace zm/zm
+    // Params 1, eflags: 0x0
+    // Checksum 0x7147f6cb, Offset: 0x96a0
+    // Size: 0x32
+    function fade_up_over_time(t) {
         self fadeovertime(t);
         self.alpha = 1;
-    #/
-}
+    }
+
+#/
 
 // Namespace zm/zm
 // Params 0, eflags: 0x0
@@ -2162,12 +2164,13 @@ function function_a2b54d42() {
     return n_multiplier;
 }
 
-// Namespace zm/zm
-// Params 0, eflags: 0x0
-// Checksum 0x6ec0bac5, Offset: 0xa2d8
-// Size: 0x2cc
-function printhashids() {
-    /#
+/#
+
+    // Namespace zm/zm
+    // Params 0, eflags: 0x0
+    // Checksum 0x6ec0bac5, Offset: 0xa2d8
+    // Size: 0x2cc
+    function printhashids() {
         outputstring = "<unknown string>";
         outputstring += "<unknown string>";
         foreach (powerup in level.zombie_powerups) {
@@ -2191,6 +2194,6 @@ function printhashids() {
         }
         outputstring += "<unknown string>";
         println(outputstring);
-    #/
-}
+    }
 
+#/

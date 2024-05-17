@@ -468,12 +468,13 @@ function getcenter(locations) {
     return center;
 }
 
-// Namespace tabun/tabun
-// Params 5, eflags: 0x0
-// Checksum 0x16dbcd80, Offset: 0x26a0
-// Size: 0xb4
-function tabun_debug_line(from, to, color, depthtest, time) {
-    /#
+/#
+
+    // Namespace tabun/tabun
+    // Params 5, eflags: 0x0
+    // Checksum 0x16dbcd80, Offset: 0x26a0
+    // Size: 0xb4
+    function tabun_debug_line(from, to, color, depthtest, time) {
         debug_rcbomb = getdvarint(#"scr_tabun_debug", 0);
         if (debug_rcbomb == 1) {
             if (!isdefined(time)) {
@@ -484,6 +485,6 @@ function tabun_debug_line(from, to, color, depthtest, time) {
             }
             line(from, to, color, 1, depthtest, time);
         }
-    #/
-}
+    }
 
+#/

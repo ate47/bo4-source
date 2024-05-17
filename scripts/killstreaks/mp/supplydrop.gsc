@@ -2950,18 +2950,19 @@ function refcountdecchopper(team, killstreak_id) {
     self notify(#"cleanup_marker");
 }
 
-// Namespace supplydrop/supplydrop
-// Params 0, eflags: 0x0
-// Checksum 0xe40ac231, Offset: 0xc920
-// Size: 0x82
-function supply_drop_dev_gui() {
-    /#
+/#
+
+    // Namespace supplydrop/supplydrop
+    // Params 0, eflags: 0x0
+    // Checksum 0xe40ac231, Offset: 0xc920
+    // Size: 0x82
+    function supply_drop_dev_gui() {
         setdvar(#"scr_supply_drop_gui", "<unknown string>");
         while (true) {
             wait(0.5);
             devgui_string = getdvarstring(#"scr_supply_drop_gui");
             level.dev_gui_supply_drop = devgui_string;
         }
-    #/
-}
+    }
 
+#/

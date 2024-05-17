@@ -2677,12 +2677,14 @@ function function_24e6adf3(e_inflictor, e_attacker, n_damage, n_dflags, str_mean
     return int(n_damage / 10);
 }
 
-// Namespace ct_torque_tutorial/ct_torque_tutorial
-// Params 0, eflags: 0x0
-// Checksum 0x82c3facc, Offset: 0xd5b8
-// Size: 0x8
-function function_16eca645() {
-    /#
-    #/
-}
+/#
 
+    // Namespace ct_torque_tutorial/ct_torque_tutorial
+    // Params 0, eflags: 0x0
+    // Checksum 0x82c3facc, Offset: 0xd5b8
+    // Size: 0x8
+    function function_16eca645() {
+        
+    }
+
+#/

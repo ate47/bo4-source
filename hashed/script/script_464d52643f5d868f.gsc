@@ -605,8 +605,8 @@ function private function_5404a36b() {
 // Checksum 0xa872ac19, Offset: 0x2fb8
 // Size: 0x4c
 function function_21ccdb36() {
-    var_d20d9da4 = struct::get("p8_fxanim_zm_esc_catwalk_pole_electrical_bundle", "scriptbundlename");
-    var_d20d9da4 thread scene::play("Shot 2");
+    first_floor_lookup_handler = struct::get("p8_fxanim_zm_esc_catwalk_pole_electrical_bundle", "scriptbundlename");
+    first_floor_lookup_handler thread scene::play("Shot 2");
 }
 
 // Namespace namespace_f2502da8/namespace_f2502da8

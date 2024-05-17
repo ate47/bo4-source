@@ -160,12 +160,13 @@ function set_locked_magicbox_state(state) {
     }
 }
 
-// Namespace zm_escape_magicbox/zm_escape_magicbox
-// Params 0, eflags: 0x0
-// Checksum 0xe30474b4, Offset: 0x8c8
-// Size: 0x13c
-function function_be66db38() {
-    /#
+/#
+
+    // Namespace zm_escape_magicbox/zm_escape_magicbox
+    // Params 0, eflags: 0x0
+    // Checksum 0xe30474b4, Offset: 0x8c8
+    // Size: 0x13c
+    function function_be66db38() {
         level flagsys::wait_till("<unknown string>");
         e_box = undefined;
         for (i = 0; i < level.chests.size; i++) {
@@ -180,6 +181,6 @@ function function_be66db38() {
             }
             e_box.zbarrier zm_magicbox::set_magic_box_zbarrier_state("<unknown string>");
         }
-    #/
-}
+    }
 
+#/

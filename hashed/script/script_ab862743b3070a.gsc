@@ -349,20 +349,22 @@ function function_246a0760() {
     #/
 }
 
-// Namespace zombie_dog_util/ai_dog_util
-// Params 0, eflags: 0x0
-// Checksum 0x9d399b3a, Offset: 0x1658
-// Size: 0x62
-function function_de0a6ae4() {
-    /#
+/#
+
+    // Namespace zombie_dog_util/ai_dog_util
+    // Params 0, eflags: 0x0
+    // Checksum 0x9d399b3a, Offset: 0x1658
+    // Size: 0x62
+    function function_de0a6ae4() {
         while (true) {
             level waittill(#"between_round_over");
             if (getdvarint(#"force_dogs", 0) > 0) {
                 level.next_dog_round = level.round_number;
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zombie_dog_util/ai_dog_util
 // Params 0, eflags: 0x1 linked

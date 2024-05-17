@@ -39,12 +39,13 @@ function localplayer_postfx_bundle_init(localclientnum) {
     #/
 }
 
-// Namespace postfx/postfx_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe6e58548, Offset: 0x198
-// Size: 0x210
-function postfxbundledebuglisten() {
-    /#
+/#
+
+    // Namespace postfx/postfx_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe6e58548, Offset: 0x198
+    // Size: 0x210
+    function postfxbundledebuglisten() {
         self endon(#"death");
         setdvar(#"scr_play_postfx_bundle", "<unknown string>");
         setdvar(#"scr_stop_postfx_bundle", "<unknown string>");
@@ -67,15 +68,13 @@ function postfxbundledebuglisten() {
             }
             wait(0.5);
         }
-    #/
-}
+    }
 
-// Namespace postfx/postfx_shared
-// Params 0, eflags: 0x0
-// Checksum 0xe217f00a, Offset: 0x3b0
-// Size: 0x2b6
-function function_764eb053() {
-    /#
+    // Namespace postfx/postfx_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xe217f00a, Offset: 0x3b0
+    // Size: 0x2b6
+    function function_764eb053() {
         self endon(#"death");
         var_986c8888 = 0;
         var_4828f60f = 0;
@@ -119,8 +118,9 @@ function function_764eb053() {
             var_4828f60f = showviewmodel;
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace postfx/postfx_shared
 // Params 1, eflags: 0x1 linked

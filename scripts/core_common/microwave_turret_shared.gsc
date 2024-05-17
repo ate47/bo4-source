@@ -78,12 +78,13 @@ function stopmicrowave() {
     }
 }
 
-// Namespace microwave_turret/microwave_turret_shared
-// Params 0, eflags: 0x0
-// Checksum 0xcf2b4f41, Offset: 0x3e8
-// Size: 0x7c
-function turretdebugwatch() {
-    /#
+/#
+
+    // Namespace microwave_turret/microwave_turret_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xcf2b4f41, Offset: 0x3e8
+    // Size: 0x7c
+    function turretdebugwatch() {
         turret = self;
         turret endon(#"stop_turret_debug");
         for (;;) {
@@ -94,15 +95,13 @@ function turretdebugwatch() {
             }
             wait(1);
         }
-    #/
-}
+    }
 
-// Namespace microwave_turret/microwave_turret_shared
-// Params 0, eflags: 0x0
-// Checksum 0x38b64f77, Offset: 0x470
-// Size: 0x10c
-function turretdebug() {
-    /#
+    // Namespace microwave_turret/microwave_turret_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x38b64f77, Offset: 0x470
+    // Size: 0x10c
+    function turretdebug() {
         turret = self;
         angles = turret gettagangles("<unknown string>");
         origin = turret gettagorigin("<unknown string>");
@@ -112,8 +111,9 @@ function turretdebug() {
         /#
             util::debug_spherical_cone(cone_apex, dome_apex, 15, 16, (0.95, 0.1, 0.1), 0.3, 1, 3);
         #/
-    #/
-}
+    }
+
+#/
 
 // Namespace microwave_turret/microwave_turret_shared
 // Params 0, eflags: 0x0

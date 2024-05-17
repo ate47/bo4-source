@@ -2378,12 +2378,13 @@ function cleanup_zombie() {
     self delete();
 }
 
-// Namespace red_boss_battle/zm_red_boss_battle
-// Params 1, eflags: 0x0
-// Checksum 0xdd3c16be, Offset: 0xa8a0
-// Size: 0x15a
-function function_27486895(cmd) {
-    /#
+/#
+
+    // Namespace red_boss_battle/zm_red_boss_battle
+    // Params 1, eflags: 0x0
+    // Checksum 0xdd3c16be, Offset: 0xa8a0
+    // Size: 0x15a
+    function function_27486895(cmd) {
         switch (cmd) {
         case #"hash_478165f86a3bc512":
             level thread zm_red::function_71a6c3ea();
@@ -2404,15 +2405,13 @@ function function_27486895(cmd) {
             level notify(#"hash_72be9b4e52b943b");
             break;
         }
-    #/
-}
+    }
 
-// Namespace red_boss_battle/zm_red_boss_battle
-// Params 0, eflags: 0x0
-// Checksum 0x6b819220, Offset: 0xaa08
-// Size: 0xd8
-function function_d5a70078() {
-    /#
+    // Namespace red_boss_battle/zm_red_boss_battle
+    // Params 0, eflags: 0x0
+    // Checksum 0x6b819220, Offset: 0xaa08
+    // Size: 0xd8
+    function function_d5a70078() {
         var_cab6e065 = 0;
         var_9df8166f = 0;
         while (true) {
@@ -2426,15 +2425,13 @@ function function_d5a70078() {
             }
             wait(0.4);
         }
-    #/
-}
+    }
 
-// Namespace red_boss_battle/zm_red_boss_battle
-// Params 0, eflags: 0x0
-// Checksum 0x129f9b54, Offset: 0xaae8
-// Size: 0x88
-function function_213d02bd() {
-    /#
+    // Namespace red_boss_battle/zm_red_boss_battle
+    // Params 0, eflags: 0x0
+    // Checksum 0x129f9b54, Offset: 0xaae8
+    // Size: 0x88
+    function function_213d02bd() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         self endon(#"death");
@@ -2442,15 +2439,13 @@ function function_213d02bd() {
             print3d(self.origin, "<unknown string>" + self.health, (1, 1, 0), 1, 2, 3);
             wait(0.1);
         }
-    #/
-}
+    }
 
-// Namespace red_boss_battle/zm_red_boss_battle
-// Params 0, eflags: 0x0
-// Checksum 0x644160b6, Offset: 0xab78
-// Size: 0x28a
-function function_99f0123d() {
-    /#
+    // Namespace red_boss_battle/zm_red_boss_battle
+    // Params 0, eflags: 0x0
+    // Checksum 0x644160b6, Offset: 0xab78
+    // Size: 0x28a
+    function function_99f0123d() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         level endon(#"hash_72be9b4e52b943b");
@@ -2475,6 +2470,6 @@ function function_99f0123d() {
             }
             waitframe(2);
         }
-    #/
-}
+    }
 
+#/

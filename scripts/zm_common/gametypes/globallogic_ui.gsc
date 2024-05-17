@@ -41,12 +41,13 @@ function setupcallbacks() {
     level.autocontrolplayer = &menuautocontrolplayer;
 }
 
-// Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x0
-// Checksum 0xb7d2efce, Offset: 0x1f8
-// Size: 0x27c
-function freegameplayhudelems() {
-    /#
+/#
+
+    // Namespace globallogic_ui/globallogic_ui
+    // Params 0, eflags: 0x0
+    // Checksum 0xb7d2efce, Offset: 0x1f8
+    // Size: 0x27c
+    function freegameplayhudelems() {
         if (isdefined(self.perkicon)) {
             for (numspecialties = 0; numspecialties < level.maxspecialties; numspecialties++) {
                 if (isdefined(self.perkicon[numspecialties])) {
@@ -90,8 +91,9 @@ function freegameplayhudelems() {
         if (isdefined(self.carryicon)) {
             self.carryicon hud::destroyelem();
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace globallogic_ui/globallogic_ui
 // Params 1, eflags: 0x0

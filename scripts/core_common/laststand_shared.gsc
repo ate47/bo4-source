@@ -93,12 +93,13 @@ function revive_hud_show_n_fade(text, time, player = undefined) {
     }
 }
 
-// Namespace laststand/laststand_shared
-// Params 3, eflags: 0x0
-// Checksum 0xc54311b4, Offset: 0x490
-// Size: 0x23e
-function drawcylinder(pos, rad, height) {
-    /#
+/#
+
+    // Namespace laststand/laststand_shared
+    // Params 3, eflags: 0x0
+    // Checksum 0xc54311b4, Offset: 0x490
+    // Size: 0x23e
+    function drawcylinder(pos, rad, height) {
         currad = rad;
         curheight = height;
         for (r = 0; r < 20; r++) {
@@ -108,8 +109,9 @@ function drawcylinder(pos, rad, height) {
             line(pos + (cos(theta) * currad, sin(theta) * currad, curheight), pos + (cos(theta2) * currad, sin(theta2) * currad, curheight));
             line(pos + (cos(theta) * currad, sin(theta) * currad, 0), pos + (cos(theta) * currad, sin(theta) * currad, curheight));
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace laststand/laststand_shared
 // Params 0, eflags: 0x0

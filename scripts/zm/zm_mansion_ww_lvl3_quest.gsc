@@ -431,25 +431,24 @@ function function_4999f099(var_9427f9e7) {
     }
 }
 
-// Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 0, eflags: 0x0
-// Checksum 0x9de53cb9, Offset: 0x2288
-// Size: 0x94
-function function_fd7c6bd1() {
-    /#
+/#
+
+    // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
+    // Params 0, eflags: 0x0
+    // Checksum 0x9de53cb9, Offset: 0x2288
+    // Size: 0x94
+    function function_fd7c6bd1() {
         self endon(#"death");
         level waittill(#"hash_348748d248801d6b");
         e_player = getplayers()[0];
         self dodamage(self.health, e_player.origin, e_player, e_player, undefined, "<unknown string>", 0, level.var_6fe89212);
-    #/
-}
+    }
 
-// Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 2, eflags: 0x0
-// Checksum 0x395d17fd, Offset: 0x2328
-// Size: 0x210
-function wander_reporter(var_9427f9e7, var_2bab3af1) {
-    /#
+    // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
+    // Params 2, eflags: 0x0
+    // Checksum 0x395d17fd, Offset: 0x2328
+    // Size: 0x210
+    function wander_reporter(var_9427f9e7, var_2bab3af1) {
         self endon(#"death", #"near_goal");
         while (true) {
             var_b2bd87c7 = groundtrace(var_9427f9e7.origin + (0, 0, 8), var_9427f9e7.origin + (0, 0, -100000), 0, undefined)[#"position"];
@@ -460,8 +459,9 @@ function wander_reporter(var_9427f9e7, var_2bab3af1) {
             line(var_b2bd87c7, var_e9683beb, (1, 1, 1), 1, 1, 12);
             wait(0.2);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
 // Params 0, eflags: 0x1 linked
@@ -1163,20 +1163,22 @@ function function_4eca0031() {
     }
 }
 
-// Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params 1, eflags: 0x0
-// Checksum 0xeeb110a6, Offset: 0x4f40
-// Size: 0x98
-function function_75636add(var_f1935ec8) {
-    /#
+/#
+
+    // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
+    // Params 1, eflags: 0x0
+    // Checksum 0xeeb110a6, Offset: 0x4f40
+    // Size: 0x98
+    function function_75636add(var_f1935ec8) {
         self endon(#"death", #"goal");
         while (true) {
             sphere(var_f1935ec8, 8, (1, 0, 0), 1, 0, 4, 10);
             line(self.origin, var_f1935ec8, (1, 1, 1), 1, 0, 10);
             wait(0.2);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
 // Params 2, eflags: 0x1 linked

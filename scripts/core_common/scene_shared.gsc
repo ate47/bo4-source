@@ -2716,12 +2716,13 @@ function synced_delete(str_scene) {
     self delete();
 }
 
-// Namespace scene/scene_shared
-// Params 1, eflags: 0x0
-// Checksum 0x94a1ce47, Offset: 0xad10
-// Size: 0x11c
-function error_on_screen(str_msg) {
-    /#
+/#
+
+    // Namespace scene/scene_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x94a1ce47, Offset: 0xad10
+    // Size: 0x11c
+    function error_on_screen(str_msg) {
         str_msg = function_9e72a96(str_msg);
         if (str_msg != "<unknown string>") {
             if (!isdefined(level.scene_error_hud)) {
@@ -2736,29 +2737,25 @@ function error_on_screen(str_msg) {
             level.scene_error_hud settext(str_msg);
             self thread _destroy_error_on_screen();
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_shared
-// Params 0, eflags: 0x0
-// Checksum 0x7e29908b, Offset: 0xae38
-// Size: 0x86
-function _destroy_error_on_screen() {
-    /#
+    // Namespace scene/scene_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x7e29908b, Offset: 0xae38
+    // Size: 0x86
+    function _destroy_error_on_screen() {
         level notify(#"_destroy_error_on_screen");
         level endon(#"_destroy_error_on_screen");
         self waittilltimeout(5, #"scene_stop", #"scene_done");
         level.scene_error_hud destroy();
         level.scene_error_hud = undefined;
-    #/
-}
+    }
 
-// Namespace scene/scene_shared
-// Params 1, eflags: 0x0
-// Checksum 0x6aaa4d6b, Offset: 0xaec8
-// Size: 0x11c
-function warning_on_screen(str_msg) {
-    /#
+    // Namespace scene/scene_shared
+    // Params 1, eflags: 0x0
+    // Checksum 0x6aaa4d6b, Offset: 0xaec8
+    // Size: 0x11c
+    function warning_on_screen(str_msg) {
         str_msg = function_9e72a96(str_msg);
         if (str_msg != "<unknown string>") {
             if (!isdefined(level.scene_warning_hud)) {
@@ -2773,22 +2770,21 @@ function warning_on_screen(str_msg) {
             level.scene_warning_hud settext(str_msg);
             self thread _destroy_warning_on_screen();
         }
-    #/
-}
+    }
 
-// Namespace scene/scene_shared
-// Params 0, eflags: 0x0
-// Checksum 0x8911b043, Offset: 0xaff0
-// Size: 0x86
-function _destroy_warning_on_screen() {
-    /#
+    // Namespace scene/scene_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0x8911b043, Offset: 0xaff0
+    // Size: 0x86
+    function _destroy_warning_on_screen() {
         level notify(#"_destroy_warning_on_screen");
         level endon(#"_destroy_warning_on_screen");
         self waittilltimeout(5, #"scene_stop", #"scene_done");
         level.scene_warning_hud destroy();
         level.scene_warning_hud = undefined;
-    #/
-}
+    }
+
+#/
 
 // Namespace scene/scene_shared
 // Params 2, eflags: 0x1 linked

@@ -2104,12 +2104,13 @@ function function_8f28b521() {
     self.var_ebae258d = 0;
 }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0xbcbc355a, Offset: 0x9298
-// Size: 0x1d4
-function function_5d346946() {
-    /#
+/#
+
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0xbcbc355a, Offset: 0x9298
+    // Size: 0x1d4
+    function function_5d346946() {
         if (!getdvarint(#"zm_debug_ee", 0)) {
             return;
         }
@@ -2131,15 +2132,13 @@ function function_5d346946() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 1, eflags: 0x0
-// Checksum 0x4d8174bd, Offset: 0x9478
-// Size: 0x2ea
-function function_51d480c9(cmd) {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 1, eflags: 0x0
+    // Checksum 0x4d8174bd, Offset: 0x9478
+    // Size: 0x2ea
+    function function_51d480c9(cmd) {
         switch (cmd) {
         case #"gear_up":
             level thread gear_up();
@@ -2187,26 +2186,22 @@ function function_51d480c9(cmd) {
             level thread function_abdd578e();
             return 1;
         }
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0x7131abf2, Offset: 0x9770
-// Size: 0x3c
-function function_e7520565() {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0x7131abf2, Offset: 0x9770
+    // Size: 0x3c
+    function function_e7520565() {
         level.var_80d31f80 = 1;
         zm_sq::start(#"zm_mansion_ww", 1);
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0x151868f9, Offset: 0x97b8
-// Size: 0x328
-function function_1ac7cc62() {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0x151868f9, Offset: 0x97b8
+    // Size: 0x328
+    function function_1ac7cc62() {
         clientfield::set("<unknown string>" + #"hash_2709d50a7b0a2b01", 1);
         /#
             iprintlnbold("<unknown string>");
@@ -2242,45 +2237,39 @@ function function_1ac7cc62() {
         foreach (player in a_players) {
             player thread function_92a12286();
         }
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 1, eflags: 0x0
-// Checksum 0x9b53ca24, Offset: 0x9ae8
-// Size: 0x64
-function function_f3f10a38(n_stage) {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 1, eflags: 0x0
+    // Checksum 0x9b53ca24, Offset: 0x9ae8
+    // Size: 0x64
+    function function_f3f10a38(n_stage) {
         function_46d7a37();
         level function_f433c7f5(n_stage);
         level.var_80d31f80 = 0;
         /#
             iprintlnbold("<unknown string>");
         #/
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 1, eflags: 0x0
-// Checksum 0x70e1967c, Offset: 0x9b58
-// Size: 0x94
-function function_1ca1a249(n_stage) {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 1, eflags: 0x0
+    // Checksum 0x70e1967c, Offset: 0x9b58
+    // Size: 0x94
+    function function_1ca1a249(n_stage) {
         level endon(#"hash_38f29f9cb03586ea");
         function_46d7a37();
         level flag::set(#"hash_eed1544f10c5bb3");
         level.s_boss.var_57badb98 = 0;
         level.s_boss.var_c962047c = 99999;
         level function_738f7574(n_stage);
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0xa170a58a, Offset: 0x9bf8
-// Size: 0x8c
-function function_b7ed6bce() {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0xa170a58a, Offset: 0x9bf8
+    // Size: 0x8c
+    function function_b7ed6bce() {
         if (!(isdefined(level.var_eae946a3) && level.var_eae946a3)) {
             /#
                 iprintlnbold("<unknown string>");
@@ -2293,30 +2282,26 @@ function function_b7ed6bce() {
         /#
             iprintlnbold("<unknown string>");
         #/
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0x79d6620, Offset: 0x9c90
-// Size: 0x5c
-function function_aa31f6af() {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0x79d6620, Offset: 0x9c90
+    // Size: 0x5c
+    function function_aa31f6af() {
         function_46d7a37();
         level function_fdd04f47(0);
         level.var_80d31f80 = 0;
         /#
             iprintlnbold("<unknown string>");
         #/
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0x40a4edc8, Offset: 0x9cf8
-// Size: 0x1ec
-function function_b9ca419b() {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0x40a4edc8, Offset: 0x9cf8
+    // Size: 0x1ec
+    function function_b9ca419b() {
         if (level.var_80d31f80) {
             /#
                 iprintlnbold("<unknown string>");
@@ -2342,15 +2327,13 @@ function function_b9ca419b() {
         /#
             iprintlnbold("<unknown string>");
         #/
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 1, eflags: 0x0
-// Checksum 0x12bcceaa, Offset: 0x9ef0
-// Size: 0x594
-function function_84f320f1(n_stage) {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 1, eflags: 0x0
+    // Checksum 0x12bcceaa, Offset: 0x9ef0
+    // Size: 0x594
+    function function_84f320f1(n_stage) {
         function_46d7a37();
         if (n_stage == 2) {
             var_45e1b44b = level.s_boss.var_dcaafc8e[3];
@@ -2404,15 +2387,13 @@ function function_84f320f1(n_stage) {
         /#
             iprintlnbold("<unknown string>");
         #/
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 2, eflags: 0x0
-// Checksum 0xca1008ed, Offset: 0xa490
-// Size: 0x564
-function gear_up(b_packed, var_5b901c1) {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 2, eflags: 0x0
+    // Checksum 0xca1008ed, Offset: 0xa490
+    // Size: 0x564
+    function gear_up(b_packed, var_5b901c1) {
         if (!isdefined(b_packed)) {
             b_packed = 1;
         }
@@ -2457,27 +2438,23 @@ function gear_up(b_packed, var_5b901c1) {
         if (players.size) {
             array::pop(players, randomint(players.size)) giveweapon(getweapon(#"homunculus"));
         }
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0x24826594, Offset: 0xaa00
-// Size: 0x4c
-function function_abdd578e() {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0x24826594, Offset: 0xaa00
+    // Size: 0x4c
+    function function_abdd578e() {
         function_46d7a37();
         level thread function_c11a9d59();
         level function_50aa79cf();
-    #/
-}
+    }
 
-// Namespace mansion_boss_ww/zm_mansion_boss_ww
-// Params 0, eflags: 0x0
-// Checksum 0xc8aa50cf, Offset: 0xaa58
-// Size: 0x62
-function function_46d7a37() {
-    /#
+    // Namespace mansion_boss_ww/zm_mansion_boss_ww
+    // Params 0, eflags: 0x0
+    // Checksum 0xc8aa50cf, Offset: 0xaa58
+    // Size: 0x62
+    function function_46d7a37() {
         if (level.var_80d31f80) {
             /#
                 iprintlnbold("<unknown string>");
@@ -2488,6 +2465,6 @@ function function_46d7a37() {
             iprintlnbold("<unknown string>");
         #/
         level.var_80d31f80 = 1;
-    #/
-}
+    }
 
+#/

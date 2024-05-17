@@ -1741,12 +1741,13 @@ function resume_time() {
     }
 }
 
-// Namespace bounty/bounty
-// Params 0, eflags: 0x0
-// Checksum 0x5ef1cbb9, Offset: 0x7880
-// Size: 0xfc
-function function_b1dcb019() {
-    /#
+/#
+
+    // Namespace bounty/bounty
+    // Params 0, eflags: 0x0
+    // Checksum 0x5ef1cbb9, Offset: 0x7880
+    // Size: 0xfc
+    function function_b1dcb019() {
         path = "bounty_drop";
         cmd = "<unknown string>";
         util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
@@ -1754,15 +1755,13 @@ function function_b1dcb019() {
         util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
         util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
         util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace bounty/bounty
-// Params 0, eflags: 0x0
-// Checksum 0xb9e10376, Offset: 0x7988
-// Size: 0x168
-function function_b968a61c() {
-    /#
+    // Namespace bounty/bounty
+    // Params 0, eflags: 0x0
+    // Checksum 0xb9e10376, Offset: 0x7988
+    // Size: 0x168
+    function function_b968a61c() {
         level notify(#"hash_7069fa0a73642e1f");
         level endon(#"hash_7069fa0a73642e1f");
         wait(1);
@@ -1781,6 +1780,6 @@ function function_b968a61c() {
             }
             setdvar(#"hash_312d65fd43c7008c", 0);
         }
-    #/
-}
+    }
 
+#/

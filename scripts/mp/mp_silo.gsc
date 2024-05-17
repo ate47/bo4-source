@@ -267,15 +267,16 @@ function function_fffbeb7f() {
     level.var_491d6ac5 hide();
 }
 
-// Namespace mp_silo/mp_silo
-// Params 0, eflags: 0x0
-// Checksum 0x7fd92b76, Offset: 0x16c8
-// Size: 0x74
-function init_devgui() {
-    /#
+/#
+
+    // Namespace mp_silo/mp_silo
+    // Params 0, eflags: 0x0
+    // Checksum 0x7fd92b76, Offset: 0x16c8
+    // Size: 0x74
+    function init_devgui() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-    #/
-}
+    }
 
+#/

@@ -397,12 +397,13 @@ function drop_heli_leave() {
     chopper delete();
 }
 
-// Namespace escort/escort
-// Params 0, eflags: 0x0
-// Checksum 0x185f233a, Offset: 0x2268
-// Size: 0x1b8
-function debug_draw_robot_path() {
-    /#
+/#
+
+    // Namespace escort/escort
+    // Params 0, eflags: 0x0
+    // Checksum 0x185f233a, Offset: 0x2268
+    // Size: 0x1b8
+    function debug_draw_robot_path() {
         if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
@@ -416,15 +417,13 @@ function debug_draw_robot_path() {
         foreach (path in pathnodes) {
             util::debug_sphere(path, 6, (0, 0, 0.9), 0.9, debug_duration);
         }
-    #/
-}
+    }
 
-// Namespace escort/escort
-// Params 1, eflags: 0x0
-// Checksum 0x1c54fb4b, Offset: 0x2428
-// Size: 0x1b0
-function debug_draw_approximate_robot_path_to_goal(&goalpatharray) {
-    /#
+    // Namespace escort/escort
+    // Params 1, eflags: 0x0
+    // Checksum 0x1c54fb4b, Offset: 0x2428
+    // Size: 0x1b0
+    function debug_draw_approximate_robot_path_to_goal(&goalpatharray) {
         if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
@@ -438,15 +437,13 @@ function debug_draw_approximate_robot_path_to_goal(&goalpatharray) {
         foreach (path in pathnodes) {
             util::debug_sphere(path, 3, (0, 0.5, 0.5), 0.9, debug_duration);
         }
-    #/
-}
+    }
 
-// Namespace escort/escort
-// Params 1, eflags: 0x0
-// Checksum 0x18e28ed7, Offset: 0x25e0
-// Size: 0xb4
-function debug_draw_current_robot_goal(goal) {
-    /#
+    // Namespace escort/escort
+    // Params 1, eflags: 0x0
+    // Checksum 0x18e28ed7, Offset: 0x25e0
+    // Size: 0xb4
+    function debug_draw_current_robot_goal(goal) {
         if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
@@ -454,15 +451,13 @@ function debug_draw_current_robot_goal(goal) {
             debug_duration = 60;
             util::debug_sphere(goal, 8, (0, 0.9, 0), 0.9, debug_duration);
         }
-    #/
-}
+    }
 
-// Namespace escort/escort
-// Params 1, eflags: 0x0
-// Checksum 0x5f68f3d, Offset: 0x26a0
-// Size: 0xc4
-function debug_draw_find_immediate_goal(pathgoal) {
-    /#
+    // Namespace escort/escort
+    // Params 1, eflags: 0x0
+    // Checksum 0x5f68f3d, Offset: 0x26a0
+    // Size: 0xc4
+    function debug_draw_find_immediate_goal(pathgoal) {
         if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
@@ -470,15 +465,13 @@ function debug_draw_find_immediate_goal(pathgoal) {
             debug_duration = 60;
             util::debug_sphere(pathgoal + (0, 0, 18), 6, (0.9, 0, 0), 0.9, debug_duration);
         }
-    #/
-}
+    }
 
-// Namespace escort/escort
-// Params 1, eflags: 0x0
-// Checksum 0xdffad5ff, Offset: 0x2770
-// Size: 0xc4
-function debug_draw_find_immediate_goal_override(immediategoal) {
-    /#
+    // Namespace escort/escort
+    // Params 1, eflags: 0x0
+    // Checksum 0xdffad5ff, Offset: 0x2770
+    // Size: 0xc4
+    function debug_draw_find_immediate_goal_override(immediategoal) {
         if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
@@ -486,15 +479,13 @@ function debug_draw_find_immediate_goal_override(immediategoal) {
             debug_duration = 60;
             util::debug_sphere(immediategoal + (0, 0, 18), 6, (0.9, 0, 0.9), 0.9, debug_duration);
         }
-    #/
-}
+    }
 
-// Namespace escort/escort
-// Params 2, eflags: 0x0
-// Checksum 0xa7750708, Offset: 0x2840
-// Size: 0x10c
-function debug_draw_blocked_path_kill_radius(center, radius) {
-    /#
+    // Namespace escort/escort
+    // Params 2, eflags: 0x0
+    // Checksum 0xa7750708, Offset: 0x2840
+    // Size: 0x10c
+    function debug_draw_blocked_path_kill_radius(center, radius) {
         if ((isdefined(getdvarint(#"scr_escort_debug_robot_path", 0)) ? getdvarint(#"scr_escort_debug_robot_path", 0) : 0) == 0) {
             return;
         }
@@ -503,8 +494,9 @@ function debug_draw_blocked_path_kill_radius(center, radius) {
             circle(center + (0, 0, 2), radius, (0.9, 0, 0), 1, 1, debug_duration);
             circle(center + (0, 0, 4), radius, (0.9, 0, 0), 1, 1, debug_duration);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace escort/escort
 // Params 0, eflags: 0x0
@@ -1285,12 +1277,13 @@ function is_path_distance_to_goal_too_long(&patharray, toolongthreshold) {
     return false;
 }
 
-// Namespace escort/escort
-// Params 0, eflags: 0x0
-// Checksum 0x8754ea49, Offset: 0x5818
-// Size: 0x250
-function debug_reset_robot_to_start() {
-    /#
+/#
+
+    // Namespace escort/escort
+    // Params 0, eflags: 0x0
+    // Checksum 0x8754ea49, Offset: 0x5818
+    // Size: 0x250
+    function debug_reset_robot_to_start() {
         level endon(#"game_ended");
         while (true) {
             if ((isdefined(getdvarint(#"scr_escort_robot_reset_path", 0)) ? getdvarint(#"scr_escort_robot_reset_path", 0) : 0) > 0) {
@@ -1315,8 +1308,9 @@ function debug_reset_robot_to_start() {
             }
             wait(0.5);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace escort/escort
 // Params 0, eflags: 0x0

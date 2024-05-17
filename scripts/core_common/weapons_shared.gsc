@@ -47,12 +47,13 @@ function on_player_spawned() {
     }
 }
 
-// Namespace weapons/weapons_shared
-// Params 0, eflags: 0x0
-// Checksum 0xb14ef0d6, Offset: 0x2c8
-// Size: 0x1c8
-function function_867af0b() {
-    /#
+/#
+
+    // Namespace weapons/weapons_shared
+    // Params 0, eflags: 0x0
+    // Checksum 0xb14ef0d6, Offset: 0x2c8
+    // Size: 0x1c8
+    function function_867af0b() {
         self endon(#"death");
         player = self;
         gameobject_link = undefined;
@@ -78,8 +79,9 @@ function function_867af0b() {
             }
             setdvar(#"test_mount", 0);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace weapons/weapons_shared
 // Params 1, eflags: 0x1 linked

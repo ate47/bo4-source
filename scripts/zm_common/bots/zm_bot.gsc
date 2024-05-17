@@ -154,12 +154,13 @@ function on_player_revived(params) {
     level bot::function_301f229d(self.team);
 }
 
-// Namespace zm_bot/button_bit_actionslot_2_pressed
-// Params 0, eflags: 0x40
-// Checksum 0xa2d404a, Offset: 0x738
-// Size: 0x104
-function event_handler[button_bit_actionslot_2_pressed] function_9b83de0f() {
-    /#
+/#
+
+    // Namespace zm_bot/button_bit_actionslot_2_pressed
+    // Params 0, eflags: 0x40
+    // Checksum 0xa2d404a, Offset: 0x738
+    // Size: 0x104
+    function event_handler[button_bit_actionslot_2_pressed] function_9b83de0f() {
         if (getdvarint(#"zm_bot_orders", 0) == 0) {
             return;
         }
@@ -172,8 +173,9 @@ function event_handler[button_bit_actionslot_2_pressed] function_9b83de0f() {
             self order_bot(player);
             break;
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_bot/zm_bot
 // Params 1, eflags: 0x0

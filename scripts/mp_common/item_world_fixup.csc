@@ -82,29 +82,29 @@ function private function_bbc0b67f(prematch = 0) {
     return true;
 }
 
-// Namespace item_world_fixup/item_world_fixup
-// Params 1, eflags: 0x4
-// Checksum 0xbed0c73, Offset: 0x390
-// Size: 0x22
-function private function_cd5f2152(itemname) {
-    /#
+/#
+
+    // Namespace item_world_fixup/item_world_fixup
+    // Params 1, eflags: 0x4
+    // Checksum 0xbed0c73, Offset: 0x390
+    // Size: 0x22
+    function private function_cd5f2152(itemname) {
         if (itemname == "<unknown string>") {
             return;
         }
-    #/
-}
+    }
 
-// Namespace item_world_fixup/item_world_fixup
-// Params 1, eflags: 0x4
-// Checksum 0x86c480c4, Offset: 0x3c0
-// Size: 0x22
-function private function_d50342ad(var_d1c21f6f) {
-    /#
+    // Namespace item_world_fixup/item_world_fixup
+    // Params 1, eflags: 0x4
+    // Checksum 0x86c480c4, Offset: 0x3c0
+    // Size: 0x22
+    function private function_d50342ad(var_d1c21f6f) {
         if (var_d1c21f6f == "<unknown string>") {
             return;
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace item_world_fixup/item_world_fixup
 // Params 2, eflags: 0x0

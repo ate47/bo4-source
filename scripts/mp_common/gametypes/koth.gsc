@@ -849,7 +849,7 @@ function setupzones() {
         for (j = 0; j < trigs.size; j++) {
             if (zone istouching(trigs[j])) {
                 if (isdefined(zone.trig)) {
-                    globallogic_utils::add_map_error("Zone at " + zone.origin + " is touching more than one "zonetrigger" trigger");
+                    globallogic_utils::add_map_error("Zone at " + zone.origin + " is touching more than one \"zonetrigger\" trigger");
                     errored = 1;
                     break;
                 }
@@ -860,7 +860,7 @@ function setupzones() {
         }
         if (!isdefined(zone.trig)) {
             if (!errored) {
-                globallogic_utils::add_map_error("Zone at " + zone.origin + " is not inside any "zonetrigger" trigger");
+                globallogic_utils::add_map_error("Zone at " + zone.origin + " is not inside any \"zonetrigger\" trigger");
                 continue;
             }
         }

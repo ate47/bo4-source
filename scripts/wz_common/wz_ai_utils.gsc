@@ -68,12 +68,13 @@ function private __init__() {
     clientfield::register("actor", "zombie_died", 17000, 1, "int");
 }
 
-// Namespace wz_ai_utils/wz_ai_utils
-// Params 0, eflags: 0x0
-// Checksum 0x8b2c7d5, Offset: 0x668
-// Size: 0x430
-function function_b4f41a02() {
-    /#
+/#
+
+    // Namespace wz_ai_utils/wz_ai_utils
+    // Params 0, eflags: 0x0
+    // Checksum 0x8b2c7d5, Offset: 0x668
+    // Size: 0x430
+    function function_b4f41a02() {
         level endon(#"game_ended");
         aitypes = array(#"spawner_boct_zombie_wz", #"hash_618248fca82d83a6", #"spawner_wz_blight_father", #"spawner_boct_zombie_dog_wz", #"spawner_boct_brutus_special_wz", #"spawner_boct_brutus_wz", #"spawner_boct_avogadro");
         setdvar(#"hash_209287456d55fca1", "<unknown string>");
@@ -106,15 +107,13 @@ function function_b4f41a02() {
             }
             setdvar(#"hash_209287456d55fca1", "<unknown string>");
         }
-    #/
-}
+    }
 
-// Namespace wz_ai_utils/wz_ai_utils
-// Params 0, eflags: 0x0
-// Checksum 0x363b38ac, Offset: 0xaa0
-// Size: 0xeae
-function debug_ai() {
-    /#
+    // Namespace wz_ai_utils/wz_ai_utils
+    // Params 0, eflags: 0x0
+    // Checksum 0x363b38ac, Offset: 0xaa0
+    // Size: 0xeae
+    function debug_ai() {
         level endon(#"game_ended");
         level.var_b4702614 = [];
         level.var_b4702614[0] = "<unknown string>";
@@ -236,8 +235,9 @@ function debug_ai() {
             }
             waitframe(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace wz_ai_utils/wz_ai_utils
 // Params 1, eflags: 0x0

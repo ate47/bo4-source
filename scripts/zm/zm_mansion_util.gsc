@@ -762,12 +762,13 @@ function get_closest_valid_player(n_range_sq = 9000000) {
     return undefined;
 }
 
-// Namespace mansion_util/zm_mansion_util
-// Params 2, eflags: 0x0
-// Checksum 0xbececc6, Offset: 0x2cc8
-// Size: 0xc0
-function create_hudelem(x, y) {
-    /#
+/#
+
+    // Namespace mansion_util/zm_mansion_util
+    // Params 2, eflags: 0x0
+    // Checksum 0xbececc6, Offset: 0x2cc8
+    // Size: 0xc0
+    function create_hudelem(x, y) {
         var_aa917a22 = newdebughudelem();
         var_aa917a22.alignx = "<unknown string>";
         var_aa917a22.horzalign = "<unknown string>";
@@ -777,8 +778,9 @@ function create_hudelem(x, y) {
         var_aa917a22.x = x;
         var_aa917a22.fontscale = 1.25;
         return var_aa917a22;
-    #/
-}
+    }
+
+#/
 
 // Namespace mansion_util/zm_mansion_util
 // Params 4, eflags: 0x1 linked
@@ -845,25 +847,24 @@ function function_268efa09(b_active = 0) {
     self clientfield::set_player_uimodel("zmhud.ammoModifierActive", b_active);
 }
 
-// Namespace mansion_util/zm_mansion_util
-// Params 0, eflags: 0x0
-// Checksum 0xd734ad4c, Offset: 0x3198
-// Size: 0x8e
-function function_dce687ca() {
-    /#
+/#
+
+    // Namespace mansion_util/zm_mansion_util
+    // Params 0, eflags: 0x0
+    // Checksum 0xd734ad4c, Offset: 0x3198
+    // Size: 0x8e
+    function function_dce687ca() {
         while (isdefined(self) && getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             draw_arrow(self.origin, anglestoforward(self.angles), (0, 1, 0), function_9e72a96(self.model));
             waitframe(1);
         }
-    #/
-}
+    }
 
-// Namespace mansion_util/zm_mansion_util
-// Params 4, eflags: 0x0
-// Checksum 0xb94ea890, Offset: 0x3230
-// Size: 0x33c
-function draw_arrow(org, ang, opcolor, str) {
-    /#
+    // Namespace mansion_util/zm_mansion_util
+    // Params 4, eflags: 0x0
+    // Checksum 0xb94ea890, Offset: 0x3230
+    // Size: 0x33c
+    function draw_arrow(org, ang, opcolor, str) {
         forward = anglestoforward(ang);
         forwardfar = vectorscale(forward, 50);
         forwardclose = vectorscale(forward, 50 * 0.8);
@@ -892,8 +893,9 @@ function draw_arrow(org, ang, opcolor, str) {
         if (isdefined(str)) {
             print3d(self.origin, str, (0, 1, 0), 1, 0.5);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mansion_util/zm_mansion_util
 // Params 9, eflags: 0x1 linked

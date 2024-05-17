@@ -188,19 +188,21 @@ function private function_c41e67c() {
     self thread function_44ac30aa();
 }
 
-// Namespace zm_ai_avogadro/zm_ai_avogadro
-// Params 1, eflags: 0x4
-// Checksum 0xac4da66c, Offset: 0x1940
-// Size: 0x8c
-function private function_22006009(cmd) {
-    /#
+/#
+
+    // Namespace zm_ai_avogadro/zm_ai_avogadro
+    // Params 1, eflags: 0x4
+    // Checksum 0xac4da66c, Offset: 0x1940
+    // Size: 0x8c
+    function private function_22006009(cmd) {
         zm_devgui::function_c7dd7a17("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    #/
-}
+    }
+
+#/
 
 // Namespace zm_ai_avogadro/zm_ai_avogadro
 // Params 4, eflags: 0x4

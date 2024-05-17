@@ -44,12 +44,13 @@ function init_shared() {
     #/
 }
 
-// Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
-// Checksum 0xe95affc6, Offset: 0x5c8
-// Size: 0x2b4
-function updatedvars() {
-    /#
+/#
+
+    // Namespace proximity_grenade/proximity_grenade
+    // Params 0, eflags: 0x0
+    // Checksum 0xe95affc6, Offset: 0x5c8
+    // Size: 0x2b4
+    function updatedvars() {
         while (true) {
             level.proximitygrenadedetectionradius = getdvarint(#"scr_proximitygrenadedetectionradius", level.proximitygrenadedetectionradius);
             level.proximitygrenadeduration = getdvarfloat(#"scr_proximitygrenadeduration", 1.5);
@@ -65,8 +66,9 @@ function updatedvars() {
             level.proximitygrenadeprotectedtime = getdvarfloat(#"scr_proximitygrenadeprotectedtime", level.proximitygrenadeprotectedtime);
             wait(1);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace proximity_grenade/proximity_grenade
 // Params 0, eflags: 0x1 linked
@@ -398,15 +400,17 @@ function tesla_play_arc_fx(target, waittime) {
     fxorg delete();
 }
 
-// Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
-// Checksum 0xc3cb96d0, Offset: 0x1ac0
-// Size: 0x3c
-function debugchainsphere() {
-    /#
+/#
+
+    // Namespace proximity_grenade/proximity_grenade
+    // Params 0, eflags: 0x0
+    // Checksum 0xc3cb96d0, Offset: 0x1ac0
+    // Size: 0x3c
+    function debugchainsphere() {
         util::debug_sphere(self.origin + (0, 0, 50), 20, (1, 1, 1), 1, 0);
-    #/
-}
+    }
+
+#/
 
 // Namespace proximity_grenade/proximity_grenade
 // Params 1, eflags: 0x1 linked

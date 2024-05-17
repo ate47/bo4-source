@@ -314,12 +314,13 @@ function function_5a8becdc(localclientnum, player, buildinfo, var_4b1c8937) {
     }
 }
 
-// Namespace smart_cover/gadget_smart_cover
-// Params 2, eflags: 0x0
-// Checksum 0x30fc85c7, Offset: 0x1918
-// Size: 0xec
-function debug_trace(origin, trace) {
-    /#
+/#
+
+    // Namespace smart_cover/gadget_smart_cover
+    // Params 2, eflags: 0x0
+    // Checksum 0x30fc85c7, Offset: 0x1918
+    // Size: 0xec
+    function debug_trace(origin, trace) {
         if (trace[#"fraction"] < 1) {
             color = (0.95, 0.05, 0.05);
         } else {
@@ -327,8 +328,9 @@ function debug_trace(origin, trace) {
         }
         sphere(trace[#"position"], 5, color, 0.75, 1, 10, 100);
         util::debug_line(origin, trace[#"position"], color, 100);
-    #/
-}
+    }
+
+#/
 
 // Namespace smart_cover/gadget_smart_cover
 // Params 1, eflags: 0x0
@@ -462,18 +464,20 @@ function stop_fx_on_tag(localclientnum, fxname, tag) {
     }
 }
 
-// Namespace smart_cover/gadget_smart_cover
-// Params 3, eflags: 0x0
-// Checksum 0x3353f5b5, Offset: 0x2318
-// Size: 0x94
-function render_debug_sphere(tag, color, fxname) {
-    /#
+/#
+
+    // Namespace smart_cover/gadget_smart_cover
+    // Params 3, eflags: 0x0
+    // Checksum 0x3353f5b5, Offset: 0x2318
+    // Size: 0x94
+    function render_debug_sphere(tag, color, fxname) {
         if (getdvarint(#"scr_microwave_turret_fx_debug", 0)) {
             origin = self gettagorigin(tag);
             sphere(origin, 2, color, 0.75, 1, 10, 100);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace smart_cover/gadget_smart_cover
 // Params 5, eflags: 0x0

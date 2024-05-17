@@ -68,12 +68,13 @@ function private function_b1487cfa(var_72284260) {
     return false;
 }
 
-// Namespace bot_chain/bot_chain
-// Params 3, eflags: 0x4
-// Checksum 0x9a55d14c, Offset: 0x390
-// Size: 0xff6
-function private function_8ded619(var_72284260, targetstructs = undefined, duration = 1) {
-    /#
+/#
+
+    // Namespace bot_chain/bot_chain
+    // Params 3, eflags: 0x4
+    // Checksum 0x9a55d14c, Offset: 0x390
+    // Size: 0xff6
+    function private function_8ded619(var_72284260, targetstructs = undefined, duration = 1) {
         drawheight = 8;
         active = function_b1487cfa(var_72284260);
         if (active) {
@@ -236,8 +237,9 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             }
         }
         return targetstructs;
-    #/
-}
+    }
+
+#/
 
 // Namespace bot_chain/bot_chain
 // Params 0, eflags: 0x5 linked

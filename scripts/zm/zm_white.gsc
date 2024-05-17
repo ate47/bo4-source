@@ -1029,12 +1029,13 @@ function function_cc45705b(a_s_respawn_points) {
     return var_dbc11ffc;
 }
 
-// Namespace zm_white/zm_white
-// Params 0, eflags: 0x4
-// Checksum 0x37a4ed06, Offset: 0x4f60
-// Size: 0x450
-function private white_devgui() {
-    /#
+/#
+
+    // Namespace zm_white/zm_white
+    // Params 0, eflags: 0x4
+    // Checksum 0x37a4ed06, Offset: 0x4f60
+    // Size: 0x450
+    function private white_devgui() {
         adddebugcommand("portal_map_");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -1094,6 +1095,6 @@ function private white_devgui() {
             }
             setdvar(#"zm_white_devgui_cmd", "<unknown string>");
         }
-    #/
-}
+    }
 
+#/

@@ -45,18 +45,20 @@ function __init__() {
     #/
 }
 
-// Namespace seeker_mine/seeker_mine
-// Params 0, eflags: 0x0
-// Checksum 0x4ea9fbd3, Offset: 0x370
-// Size: 0x4a
-function update_dvars() {
-    /#
+/#
+
+    // Namespace seeker_mine/seeker_mine
+    // Params 0, eflags: 0x0
+    // Checksum 0x4ea9fbd3, Offset: 0x370
+    // Size: 0x4a
+    function update_dvars() {
         while (true) {
             wait(1);
             level.var_d3c21969 = getdvarint(#"hash_6b0c29fe436582f0", 0);
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace seeker_mine/seeker_mine
 // Params 1, eflags: 0x1 linked

@@ -451,12 +451,13 @@ function function_8af6a5a() {
     self function_fd9fb79b(#"hash_31951837e7c9b9ef");
 }
 
-// Namespace contracts/contracts
-// Params 0, eflags: 0x0
-// Checksum 0xdc71994c, Offset: 0x1888
-// Size: 0xe4
-function devgui_setup() {
-    /#
+/#
+
+    // Namespace contracts/contracts
+    // Params 0, eflags: 0x0
+    // Checksum 0xdc71994c, Offset: 0x1888
+    // Size: 0xe4
+    function devgui_setup() {
         devgui_base = "<unknown string>";
         wait(3);
         function_e07e542b(devgui_base, undefined);
@@ -467,15 +468,13 @@ function devgui_setup() {
         function_50a60581(devgui_base);
         function_ef925b75(devgui_base);
         function_d1de9a1b(devgui_base);
-    #/
-}
+    }
 
-// Namespace contracts/contracts
-// Params 1, eflags: 0x0
-// Checksum 0x6db755de, Offset: 0x1978
-// Size: 0x35c
-function function_17a92a99(var_1d89ece6) {
-    /#
+    // Namespace contracts/contracts
+    // Params 1, eflags: 0x0
+    // Checksum 0x6db755de, Offset: 0x1978
+    // Size: 0x35c
+    function function_17a92a99(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
@@ -498,15 +497,13 @@ function function_17a92a99(var_1d89ece6) {
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace contracts/contracts
-// Params 1, eflags: 0x0
-// Checksum 0xc76743cb, Offset: 0x1ce0
-// Size: 0x12c
-function function_b308be00(var_1d89ece6) {
-    /#
+    // Namespace contracts/contracts
+    // Params 1, eflags: 0x0
+    // Checksum 0xc76743cb, Offset: 0x1ce0
+    // Size: 0x12c
+    function function_b308be00(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
@@ -515,15 +512,13 @@ function function_b308be00(var_1d89ece6) {
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace contracts/contracts
-// Params 1, eflags: 0x0
-// Checksum 0xb5e10a6d, Offset: 0x1e18
-// Size: 0x154
-function function_b8984e1a(var_1d89ece6) {
-    /#
+    // Namespace contracts/contracts
+    // Params 1, eflags: 0x0
+    // Checksum 0xb5e10a6d, Offset: 0x1e18
+    // Size: 0x154
+    function function_b8984e1a(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
@@ -533,15 +528,13 @@ function function_b8984e1a(var_1d89ece6) {
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace contracts/contracts
-// Params 1, eflags: 0x0
-// Checksum 0xb4f93d42, Offset: 0x1f78
-// Size: 0x104
-function function_1379e87e(var_1d89ece6) {
-    /#
+    // Namespace contracts/contracts
+    // Params 1, eflags: 0x0
+    // Checksum 0xb4f93d42, Offset: 0x1f78
+    // Size: 0x104
+    function function_1379e87e(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
@@ -549,15 +542,13 @@ function function_1379e87e(var_1d89ece6) {
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace contracts/contracts
-// Params 1, eflags: 0x0
-// Checksum 0x451a070d, Offset: 0x2088
-// Size: 0x36c
-function function_50a60581(var_1d89ece6) {
-    /#
+    // Namespace contracts/contracts
+    // Params 1, eflags: 0x0
+    // Checksum 0x451a070d, Offset: 0x2088
+    // Size: 0x36c
+    function function_50a60581(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_match_wins");
@@ -577,35 +568,31 @@ function function_50a60581(var_1d89ece6) {
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_search");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_team_deathmatch");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + #"contract_mp_play_hardcore_team_deathmatch");
-    #/
-}
+    }
 
-// Namespace contracts/contracts
-// Params 1, eflags: 0x0
-// Checksum 0x6834be4f, Offset: 0x2400
-// Size: 0xb4
-function function_ef925b75(var_1d89ece6) {
-    /#
+    // Namespace contracts/contracts
+    // Params 1, eflags: 0x0
+    // Checksum 0x6834be4f, Offset: 0x2400
+    // Size: 0xb4
+    function function_ef925b75(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-    #/
-}
+    }
 
-// Namespace contracts/contracts
-// Params 1, eflags: 0x0
-// Checksum 0x43a8425f, Offset: 0x24c0
-// Size: 0xdc
-function function_d1de9a1b(var_1d89ece6) {
-    /#
+    // Namespace contracts/contracts
+    // Params 1, eflags: 0x0
+    // Checksum 0x43a8425f, Offset: 0x24c0
+    // Size: 0xdc
+    function function_d1de9a1b(var_1d89ece6) {
         var_78a6fb52 = var_1d89ece6 + "<unknown string>";
         var_c8d599b5 = "<unknown string>";
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
         util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-    #/
-}
+    }
 
+#/

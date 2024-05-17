@@ -957,12 +957,13 @@ function function_97f02d5c() {
     return trace;
 }
 
-// Namespace prop_controls/_prop_controls
-// Params 9, eflags: 0x0
-// Checksum 0x4edd1b26, Offset: 0x33e0
-// Size: 0x19a
-function function_6de7bc19(success, type, player, origin1, text1, origin2, text2, origin3, text3) {
-    /#
+/#
+
+    // Namespace prop_controls/_prop_controls
+    // Params 9, eflags: 0x0
+    // Checksum 0x4edd1b26, Offset: 0x33e0
+    // Size: 0x19a
+    function function_6de7bc19(success, type, player, origin1, text1, origin2, text2, origin3, text3) {
         if (!isdefined(level.var_f8f7808e)) {
             level.var_f8f7808e = spawnstruct();
         }
@@ -978,8 +979,9 @@ function function_6de7bc19(success, type, player, origin1, text1, origin2, text2
         level.var_f8f7808e.text2 = text2;
         level.var_f8f7808e.origin3 = origin3;
         level.var_f8f7808e.text3 = text3;
-    #/
-}
+    }
+
+#/
 
 // Namespace prop_controls/_prop_controls
 // Params 0, eflags: 0x0

@@ -105,12 +105,13 @@ function function_9b8bc25c(a_ents) {
     }
 }
 
-// Namespace mp_zombie_museum_scripted/mp_zombie_museum_scripted
-// Params 1, eflags: 0x0
-// Checksum 0x604de0f2, Offset: 0xc30
-// Size: 0x134
-function function_4ee0d67(a_ents) {
-    /#
+/#
+
+    // Namespace mp_zombie_museum_scripted/mp_zombie_museum_scripted
+    // Params 1, eflags: 0x0
+    // Checksum 0x604de0f2, Offset: 0xc30
+    // Size: 0x134
+    function function_4ee0d67(a_ents) {
         self notify("<unknown string>");
         self endon("<unknown string>");
         while (getdvarint(#"hash_51e8e64c588c30af", 0)) {
@@ -120,8 +121,9 @@ function function_4ee0d67(a_ents) {
                 line(self.origin, ent.origin, (0, 1, 0), 1, 0, 20);
             }
         }
-    #/
-}
+    }
+
+#/
 
 // Namespace mp_zombie_museum_scripted/mp_zombie_museum_scripted
 // Params 0, eflags: 0x1 linked

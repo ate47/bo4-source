@@ -944,32 +944,31 @@ function function_275db54d() {
     callback::remove_on_player_damage(&function_f7544800);
 }
 
-// Namespace namespace_a5657ff1/namespace_a5657ff1
-// Params 0, eflags: 0x0
-// Checksum 0xb12c928f, Offset: 0x3810
-// Size: 0x5c
-function function_5642f347() {
-    /#
+/#
+
+    // Namespace namespace_a5657ff1/namespace_a5657ff1
+    // Params 0, eflags: 0x0
+    // Checksum 0xb12c928f, Offset: 0x3810
+    // Size: 0x5c
+    function function_5642f347() {
         if (!level flag::get("<unknown string>")) {
             level flag::set("<unknown string>");
             wait(1);
         }
         place_modifier();
-    #/
-}
+    }
 
-// Namespace namespace_a5657ff1/namespace_a5657ff1
-// Params 0, eflags: 0x0
-// Checksum 0x14e9a2ac, Offset: 0x3878
-// Size: 0x64
-function function_f33d3ab5() {
-    /#
+    // Namespace namespace_a5657ff1/namespace_a5657ff1
+    // Params 0, eflags: 0x0
+    // Checksum 0x14e9a2ac, Offset: 0x3878
+    // Size: 0x64
+    function function_f33d3ab5() {
         if (!isdefined(level.var_dc235a55) || level.var_dc235a55.size < 1) {
             return;
         }
         level.var_9aa7f03e = 1;
         function_17e0771a();
         function_22537270();
-    #/
-}
+    }
 
+#/

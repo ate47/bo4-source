@@ -37,12 +37,13 @@ function gadget_other_is_flickering(slot) {
     return self gadgetflickering(slot);
 }
 
-// Namespace gadget_other/gadget_other
-// Params 3, eflags: 0x0
-// Checksum 0x905e104e, Offset: 0x170
-// Size: 0xbc
-function set_gadget_other_status(weapon, status, time) {
-    /#
+/#
+
+    // Namespace gadget_other/gadget_other
+    // Params 3, eflags: 0x0
+    // Checksum 0x905e104e, Offset: 0x170
+    // Size: 0xbc
+    function set_gadget_other_status(weapon, status, time) {
         timestr = "<unknown string>";
         if (isdefined(time)) {
             timestr = "<unknown string>" + "<unknown string>" + time;
@@ -50,6 +51,6 @@ function set_gadget_other_status(weapon, status, time) {
         if (getdvarint(#"scr_cpower_debug_prints", 0) > 0) {
             self iprintlnbold("<unknown string>" + weapon.name + "<unknown string>" + status + timestr);
         }
-    #/
-}
+    }
 
+#/
