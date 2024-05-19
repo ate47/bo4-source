@@ -1,0 +1,351 @@
+{
+    "name": "mp_control_commander.ai_htn",
+    "nodes": [
+        {
+            "id": 0,
+            "name": "#hash_f85b9fca96d72f",
+            "index": 0,
+            "type": "selector",
+            "childindexes": [1, 36],
+            "constants": {}
+        },
+        {
+            "id": 1,
+            "name": "#sequence",
+            "index": 1,
+            "type": "sequence",
+            "childindexes": [2],
+            "constants": {}
+        },
+        {
+            "id": 2,
+            "name": "#selector",
+            "index": 2,
+            "type": "selector",
+            "childindexes": [3, 14, 31],
+            "constants": {}
+        },
+        {
+            "id": 3,
+            "name": "#hash_24e6dbe327ff6ebd",
+            "index": 3,
+            "type": "sequence",
+            "childindexes": [4, 5, 6, 7, 10, 11, 12, 13],
+            "constants": {}
+        },
+        {
+            "id": 4,
+            "name": "#hash_3df2466d38b695da",
+            "index": 4,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 5,
+            "name": "#commanderhasatleastxunassignedbots",
+            "index": 5,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": "#commandersquadcreateofsizex",
+            "index": 6,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 7,
+            "name": "#hash_98029b4ea81ea43",
+            "index": 7,
+            "type": "sequence",
+            "childindexes": [8, 9],
+            "constants": {}
+        },
+        {
+            "id": 8,
+            "name": "#hash_72014ae7e091d06f",
+            "index": 8,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 9,
+            "name": "#hash_60a8773a51426c27",
+            "index": 9,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 10,
+            "name": "#hash_5c39c15c20a4b033",
+            "index": 10,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 11,
+            "name": "#hash_23ede7441ff7e15f",
+            "index": 11,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 12,
+            "name": "#hash_6a957e932b7f93aa",
+            "index": 12,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 13,
+            "name": "#commandersquadorder",
+            "index": 13,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 14,
+            "name": "#hash_1319c59149516bd1",
+            "index": 14,
+            "type": "sequence",
+            "childindexes": [15, 16, 17, 18, 19],
+            "constants": {}
+        },
+        {
+            "id": 15,
+            "name": "#hash_2d8246b9d8badd2e",
+            "index": 15,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 16,
+            "name": "#commanderhasatleastxunassignedbots",
+            "index": 16,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 17,
+            "name": "#commandersquadcreateofsizex",
+            "index": 17,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 18,
+            "name": "#hash_5c39c15c20a4b033",
+            "index": 18,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 19,
+            "name": "#selector",
+            "index": 19,
+            "type": "selector",
+            "childindexes": [20, 24],
+            "constants": {}
+        },
+        {
+            "id": 20,
+            "name": "#sequence",
+            "index": 20,
+            "type": "sequence",
+            "childindexes": [21, 22, 23],
+            "constants": {}
+        },
+        {
+            "id": 21,
+            "name": "#hash_6130077bb861d4fa",
+            "index": 21,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 22,
+            "name": "#hash_5ad6d3a6bb956fb1",
+            "index": 22,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 23,
+            "name": "#commandersquadorder",
+            "index": 23,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 24,
+            "name": "#sequence",
+            "index": 24,
+            "type": "sequence",
+            "childindexes": [25, 26, 29, 30],
+            "constants": {}
+        },
+        {
+            "id": 25,
+            "name": "#hash_23ede7441ff7e15f",
+            "index": 25,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 26,
+            "name": "#hash_98029b4ea81ea43",
+            "index": 26,
+            "type": "sequence",
+            "childindexes": [27, 28],
+            "constants": {}
+        },
+        {
+            "id": 27,
+            "name": "#hash_72014ae7e091d06f",
+            "index": 27,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 28,
+            "name": "#hash_60a8773a51426c27",
+            "index": 28,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 29,
+            "name": "#hash_6a957e932b7f93aa",
+            "index": 29,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 30,
+            "name": "#commandersquadorder",
+            "index": 30,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 31,
+            "name": "#hash_4d120085895fd617",
+            "index": 31,
+            "type": "sequence",
+            "childindexes": [32, 33, 34, 35],
+            "constants": {}
+        },
+        {
+            "id": 32,
+            "name": "#commanderhasatleastxunassignedbots",
+            "index": 32,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 33,
+            "name": "#commandersquadcreateofsizex",
+            "index": 33,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 34,
+            "name": "#commandersquadassignwander",
+            "index": 34,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 35,
+            "name": "#commandersquadorder",
+            "index": 35,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 36,
+            "name": "#commanderendplan",
+            "index": 36,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        }
+    ]
+}

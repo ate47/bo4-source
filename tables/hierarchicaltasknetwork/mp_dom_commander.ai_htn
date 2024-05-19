@@ -1,0 +1,174 @@
+{
+    "name": "mp_dom_commander.ai_htn",
+    "nodes": [
+        {
+            "id": 0,
+            "name": "#hash_75f519d4a3af0a66",
+            "index": 0,
+            "type": "selector",
+            "childindexes": [1, 17],
+            "constants": {}
+        },
+        {
+            "id": 1,
+            "name": "#sequence",
+            "index": 1,
+            "type": "sequence",
+            "childindexes": [2],
+            "constants": {}
+        },
+        {
+            "id": 2,
+            "name": "#selector",
+            "index": 2,
+            "type": "selector",
+            "childindexes": [3, 12],
+            "constants": {}
+        },
+        {
+            "id": 3,
+            "name": "#hash_664304ae782c8962",
+            "index": 3,
+            "type": "sequence",
+            "childindexes": [4, 5, 6, 9, 10, 11],
+            "constants": {}
+        },
+        {
+            "id": 4,
+            "name": "#commanderhasatleastxunassignedbots",
+            "index": 4,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 5,
+            "name": "#commandersquadcreateofsizex",
+            "index": 5,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": "#hash_98029b4ea81ea43",
+            "index": 6,
+            "type": "sequence",
+            "childindexes": [7, 8],
+            "constants": {}
+        },
+        {
+            "id": 7,
+            "name": "#hash_72014ae7e091d06f",
+            "index": 7,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 8,
+            "name": "#hash_60a8773a51426c27",
+            "index": 8,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 9,
+            "name": "#hash_746e217e5d63efc2",
+            "index": 9,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 10,
+            "name": "#hash_9d5448e604895e",
+            "index": 10,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 11,
+            "name": "#hash_303c3d6d6bfcc25b",
+            "index": 11,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 12,
+            "name": "#hash_4d120085895fd617",
+            "index": 12,
+            "type": "sequence",
+            "childindexes": [13, 14, 15, 16],
+            "constants": {}
+        },
+        {
+            "id": 13,
+            "name": "#commanderhasatleastxunassignedbots",
+            "index": 13,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 14,
+            "name": "#commandersquadcreateofsizex",
+            "index": 14,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 15,
+            "name": "#commandersquadassignwander",
+            "index": 15,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 16,
+            "name": "#commandersquadorder",
+            "index": 16,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 17,
+            "name": "#commanderendplan",
+            "index": 17,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "name": "mp_control_squad.ai_htn",
+    "nodes": [
+        {
+            "id": 0,
+            "name": "#hash_69541dced7e0bbdf",
+            "index": 0,
+            "type": "selector",
+            "childindexes": [1, 5, 9],
+            "constants": {}
+        },
+        {
+            "id": 1,
+            "name": "#hash_7fe554253f6e3e46",
+            "index": 1,
+            "type": "sequence",
+            "childindexes": [2, 3, 4],
+            "constants": {}
+        },
+        {
+            "id": 2,
+            "name": "#hash_3e9c87665dfef699",
+            "index": 2,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 3,
+            "name": "#hash_7cb07a568d6f4cdf",
+            "index": 3,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 4,
+            "name": "#hash_238cb2b85abe80de",
+            "index": 4,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 5,
+            "name": "#hash_32a3298083201b82",
+            "index": 5,
+            "type": "sequence",
+            "childindexes": [6, 7, 8],
+            "constants": {}
+        },
+        {
+            "id": 6,
+            "name": "#hash_3e9c87665dfef699",
+            "index": 6,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 7,
+            "name": "#hash_7cb07a568d6f4cdf",
+            "index": 7,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 8,
+            "name": "#hash_238cb2b85abe80de",
+            "index": 8,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 9,
+            "name": "#squadwander",
+            "index": 9,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        }
+    ]
+}

@@ -1,0 +1,376 @@
+{
+    "name": "strategic_squad.ai_htn",
+    "nodes": [
+        {
+            "id": 0,
+            "name": "#hash_199672da02f67dc1",
+            "index": 0,
+            "type": "selector",
+            "childindexes": [1, 4, 30, 33, 36],
+            "constants": {}
+        },
+        {
+            "id": 1,
+            "name": "#hash_f7c14698a16d1c6",
+            "index": 1,
+            "type": "sequence",
+            "childindexes": [2, 3],
+            "constants": {}
+        },
+        {
+            "id": 2,
+            "name": "#squadhasforcegoal",
+            "index": 2,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 3,
+            "name": "#squadrushforcegoal",
+            "index": 3,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 4,
+            "name": "#hash_467f24c6181185b9",
+            "index": 4,
+            "type": "sequence",
+            "childindexes": [5, 6],
+            "constants": {}
+        },
+        {
+            "id": 5,
+            "name": "#hash_5dfbc649e2cdd6aa",
+            "index": 5,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 6,
+            "name": "#hash_5f948e4859d8b43e",
+            "index": 6,
+            "type": "sequence",
+            "childindexes": [7, 8],
+            "constants": {}
+        },
+        {
+            "id": 7,
+            "name": "#hash_5678bc75fd7c0675",
+            "index": 7,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#tactics": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 8,
+            "name": "#selector",
+            "index": 8,
+            "type": "selector",
+            "childindexes": [9, 12, 16, 20, 24, 28],
+            "constants": {}
+        },
+        {
+            "id": 9,
+            "name": "#hash_3ed95ad61c091a06",
+            "index": 9,
+            "type": "sequence",
+            "childindexes": [10, 11],
+            "constants": {}
+        },
+        {
+            "id": 10,
+            "name": "#hash_3e9c87665dfef699",
+            "index": 10,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 11,
+            "name": "#hash_12d15145a12cf7ed",
+            "index": 11,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 12,
+            "name": "#hash_fe9141101667387",
+            "index": 12,
+            "type": "sequence",
+            "childindexes": [13, 14, 15],
+            "constants": {}
+        },
+        {
+            "id": 13,
+            "name": "#hash_3ed9287b5cc1ec2c",
+            "index": 13,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#focus": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 14,
+            "name": "#squadhasescort",
+            "index": 14,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 15,
+            "name": "#squadclearareatogoldenpath",
+            "index": 15,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#escortkey": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 16,
+            "name": "#hash_7223e847e2997f5a",
+            "index": 16,
+            "type": "sequence",
+            "childindexes": [17, 18, 19],
+            "constants": {}
+        },
+        {
+            "id": 17,
+            "name": "#hash_3ed9287b5cc1ec2c",
+            "index": 17,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#focus": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 18,
+            "name": "#squadhasescort",
+            "index": 18,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 19,
+            "name": "#hash_553b7b133c2aee64",
+            "index": 19,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#escortkey": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 20,
+            "name": "#hash_287d56099e0114f1",
+            "index": 20,
+            "type": "sequence",
+            "childindexes": [21, 22, 23],
+            "constants": {}
+        },
+        {
+            "id": 21,
+            "name": "#hash_3ed9287b5cc1ec2c",
+            "index": 21,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#focus": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 22,
+            "name": "#squadhasescort",
+            "index": 22,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 23,
+            "name": "#squadclearareatogoldenpath",
+            "index": 23,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#escortkey": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 24,
+            "name": "#hash_23c56fd295471610",
+            "index": 24,
+            "type": "sequence",
+            "childindexes": [25, 26, 27],
+            "constants": {}
+        },
+        {
+            "id": 25,
+            "name": "#hash_3ed9287b5cc1ec2c",
+            "index": 25,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#focus": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 26,
+            "name": "#squadhasescort",
+            "index": 26,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 27,
+            "name": "#hash_553b7b133c2aee64",
+            "index": 27,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#escortkey": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 28,
+            "name": "#hash_5d5daba87d3fe0d5",
+            "index": 28,
+            "type": "sequence",
+            "childindexes": [29],
+            "constants": {}
+        },
+        {
+            "id": 29,
+            "name": "#hash_186a23f9ca83351f",
+            "index": 29,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 30,
+            "name": "#hash_7bdee000a4bed9b1",
+            "index": 30,
+            "type": "sequence",
+            "childindexes": [31, 32],
+            "constants": {}
+        },
+        {
+            "id": 31,
+            "name": "#squadhasobjective",
+            "index": 31,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 32,
+            "name": "#squadclearareatoobjective",
+            "index": 32,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 33,
+            "name": "#hash_45008952e310ee2a",
+            "index": 33,
+            "type": "sequence",
+            "childindexes": [34, 35],
+            "constants": {}
+        },
+        {
+            "id": 34,
+            "name": "#squadhasescort",
+            "index": 34,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 35,
+            "name": "#squadclearareatoescort",
+            "index": 35,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 36,
+            "name": "#hash_23810516f86c60f",
+            "index": 36,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        }
+    ]
+}

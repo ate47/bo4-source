@@ -1,0 +1,759 @@
+{
+    "name": "zm_squad.ai_htn",
+    "nodes": [
+        {
+            "id": 0,
+            "name": "#hash_6c6407a74f8431f2",
+            "index": 0,
+            "type": "selector",
+            "childindexes": [1, 4, 34],
+            "constants": {}
+        },
+        {
+            "id": 1,
+            "name": "#hash_55853d5419602877",
+            "index": 1,
+            "type": "sequence",
+            "childindexes": [2, 3],
+            "constants": {}
+        },
+        {
+            "id": 2,
+            "name": "#hash_7590574799136eaf",
+            "index": 2,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 3,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 3,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 4,
+            "name": "#sequence",
+            "index": 4,
+            "type": "sequence",
+            "childindexes": [5, 6],
+            "constants": {}
+        },
+        {
+            "id": 5,
+            "name": "#squadhasescort",
+            "index": 5,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": "#selector",
+            "index": 6,
+            "type": "selector",
+            "childindexes": [7, 10, 13, 16, 20, 23, 26, 30, 33],
+            "constants": {}
+        },
+        {
+            "id": 7,
+            "name": "#hash_d3af04658bdc610",
+            "index": 7,
+            "type": "sequence",
+            "childindexes": [8, 9],
+            "constants": {}
+        },
+        {
+            "id": 8,
+            "name": "#hash_711b9eb06d45dbbb",
+            "index": 8,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 9,
+            "name": "#hash_7c1f27a774d46b97",
+            "index": 9,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 10,
+            "name": "#hash_66a4a27e8d3316de",
+            "index": 10,
+            "type": "sequence",
+            "childindexes": [11, 12],
+            "constants": {}
+        },
+        {
+            "id": 11,
+            "name": "#hash_13ea5298a7e5b3ef",
+            "index": 11,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.8
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 800
+                }, 
+                "#highcost": {
+                    "type": "bool",
+                    "value": false
+                }, 
+                "#highrank": {
+                    "type": "bool",
+                    "value": true
+                }, 
+                "#hash_357612272d0dca05": {
+                    "type": "float",
+                    "value": 1000
+                }
+            }
+        },
+        {
+            "id": 12,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 12,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 13,
+            "name": "#hash_53f65126b61fdacc",
+            "index": 13,
+            "type": "sequence",
+            "childindexes": [14, 15],
+            "constants": {}
+        },
+        {
+            "id": 14,
+            "name": "#hash_552be54f85ea9d71",
+            "index": 14,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.6
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 800
+                }
+            }
+        },
+        {
+            "id": 15,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 15,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 16,
+            "name": "#hash_41ab4fdec5b5a66",
+            "index": 16,
+            "type": "sequence",
+            "childindexes": [17, 18, 19],
+            "constants": {}
+        },
+        {
+            "id": 17,
+            "name": "#hash_4a94655debb4ee2f",
+            "index": 17,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#percent": {
+                    "type": "float",
+                    "value": 0.2
+                }
+            }
+        },
+        {
+            "id": 18,
+            "name": "#hash_13ea5298a7e5b3ef",
+            "index": 18,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 1
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }, 
+                "#highcost": {
+                    "type": "bool",
+                    "value": false
+                }, 
+                "#highrank": {
+                    "type": "bool",
+                    "value": true
+                }, 
+                "#hash_357612272d0dca05": {
+                    "type": "float",
+                    "value": 0
+                }
+            }
+        },
+        {
+            "id": 19,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 19,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 20,
+            "name": "#hash_620971d46a227df7",
+            "index": 20,
+            "type": "sequence",
+            "childindexes": [21, 22],
+            "constants": {}
+        },
+        {
+            "id": 21,
+            "name": "#hash_6bda9193cf3ed07d",
+            "index": 21,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 22,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 22,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 23,
+            "name": "#hash_147017e30f0957a",
+            "index": 23,
+            "type": "sequence",
+            "childindexes": [24, 25],
+            "constants": {}
+        },
+        {
+            "id": 24,
+            "name": "#hash_31b1a32cd1190293",
+            "index": 24,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.8
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 25,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 25,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 26,
+            "name": "#hash_7d75314f84d37a07",
+            "index": 26,
+            "type": "sequence",
+            "childindexes": [27, 28, 29],
+            "constants": {}
+        },
+        {
+            "id": 27,
+            "name": "#hash_4a94655debb4ee2f",
+            "index": 27,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#percent": {
+                    "type": "float",
+                    "value": 0.6
+                }
+            }
+        },
+        {
+            "id": 28,
+            "name": "#hash_74c3e478ecfaaeca",
+            "index": 28,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.3
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 29,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 29,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 30,
+            "name": "#hash_53632dcf8bc6dca6",
+            "index": 30,
+            "type": "sequence",
+            "childindexes": [31, 32],
+            "constants": {}
+        },
+        {
+            "id": 31,
+            "name": "#hash_4a3f65a68af4f8af",
+            "index": 31,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 32,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 32,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 33,
+            "name": "#hash_7c1f27a774d46b97",
+            "index": 33,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 34,
+            "name": "#selector",
+            "index": 34,
+            "type": "selector",
+            "childindexes": [35, 38, 41, 44, 48, 51, 54, 58, 61],
+            "constants": {}
+        },
+        {
+            "id": 35,
+            "name": "#hash_d3af04658bdc610",
+            "index": 35,
+            "type": "sequence",
+            "childindexes": [36, 37],
+            "constants": {}
+        },
+        {
+            "id": 36,
+            "name": "#hash_711b9eb06d45dbbb",
+            "index": 36,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 37,
+            "name": "#hash_7e8d0cffd4b5daf5",
+            "index": 37,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 38,
+            "name": "#hash_66a4a27e8d3316de",
+            "index": 38,
+            "type": "sequence",
+            "childindexes": [39, 40],
+            "constants": {}
+        },
+        {
+            "id": 39,
+            "name": "#hash_13ea5298a7e5b3ef",
+            "index": 39,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.8
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }, 
+                "#highcost": {
+                    "type": "bool",
+                    "value": false
+                }, 
+                "#highrank": {
+                    "type": "bool",
+                    "value": true
+                }, 
+                "#hash_357612272d0dca05": {
+                    "type": "float",
+                    "value": 1000
+                }
+            }
+        },
+        {
+            "id": 40,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 40,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 41,
+            "name": "#hash_53f65126b61fdacc",
+            "index": 41,
+            "type": "sequence",
+            "childindexes": [42, 43],
+            "constants": {}
+        },
+        {
+            "id": 42,
+            "name": "#hash_552be54f85ea9d71",
+            "index": 42,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.6
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 43,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 43,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 44,
+            "name": "#hash_41ab4fdec5b5a66",
+            "index": 44,
+            "type": "sequence",
+            "childindexes": [45, 46, 47],
+            "constants": {}
+        },
+        {
+            "id": 45,
+            "name": "#hash_4a94655debb4ee2f",
+            "index": 45,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#percent": {
+                    "type": "float",
+                    "value": 0.2
+                }
+            }
+        },
+        {
+            "id": 46,
+            "name": "#hash_13ea5298a7e5b3ef",
+            "index": 46,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 1
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }, 
+                "#highcost": {
+                    "type": "bool",
+                    "value": false
+                }, 
+                "#highrank": {
+                    "type": "bool",
+                    "value": true
+                }, 
+                "#hash_357612272d0dca05": {
+                    "type": "float",
+                    "value": 0
+                }
+            }
+        },
+        {
+            "id": 47,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 47,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 48,
+            "name": "#hash_620971d46a227df7",
+            "index": 48,
+            "type": "sequence",
+            "childindexes": [49, 50],
+            "constants": {}
+        },
+        {
+            "id": 49,
+            "name": "#hash_6bda9193cf3ed07d",
+            "index": 49,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 50,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 50,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 51,
+            "name": "#hash_147017e30f0957a",
+            "index": 51,
+            "type": "sequence",
+            "childindexes": [52, 53],
+            "constants": {}
+        },
+        {
+            "id": 52,
+            "name": "#hash_31b1a32cd1190293",
+            "index": 52,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.8
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 53,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 53,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 54,
+            "name": "#hash_7d75314f84d37a07",
+            "index": 54,
+            "type": "sequence",
+            "childindexes": [55, 56, 57],
+            "constants": {}
+        },
+        {
+            "id": 55,
+            "name": "#hash_4a94655debb4ee2f",
+            "index": 55,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#percent": {
+                    "type": "float",
+                    "value": 0.6
+                }
+            }
+        },
+        {
+            "id": 56,
+            "name": "#hash_74c3e478ecfaaeca",
+            "index": 56,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#affordability": {
+                    "type": "float",
+                    "value": 0.3
+                }, 
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 57,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 57,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 58,
+            "name": "#hash_53632dcf8bc6dca6",
+            "index": 58,
+            "type": "sequence",
+            "childindexes": [59, 60],
+            "constants": {}
+        },
+        {
+            "id": 59,
+            "name": "#hash_4a3f65a68af4f8af",
+            "index": 59,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#distance": {
+                    "type": "float",
+                    "value": 1024
+                }
+            }
+        },
+        {
+            "id": 60,
+            "name": "#hash_5414bc90f9b0a9a4",
+            "index": 60,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 61,
+            "name": "#hash_7e8d0cffd4b5daf5",
+            "index": 61,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        }
+    ]
+}

@@ -51,6 +51,7 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | unlockableitem          | 116 | `/tables/unlockableitem/`           |
 | unlockableitemtable     | 117 | `/tables/unlockableitem/table/`     |
 | playlists               | 119 | `/tables/playlists/`                |
+| hierarchicaltasknetwork | 126 | `/tables/hierarchicaltasknetwork/`  |
 | storagefile             | 128 | `/tables/storagefile/`              |
 | storagefilelist         | 129 | `/tables/storagefile/list/`         |
 | charmixer               | 130 | EMPTY                               |

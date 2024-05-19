@@ -1,0 +1,286 @@
+{
+    "name": "zm_commander.ai_htn",
+    "nodes": [
+        {
+            "id": 0,
+            "name": "#hash_3aac7b4343d3a372",
+            "index": 0,
+            "type": "selector",
+            "childindexes": [1, 23],
+            "constants": {}
+        },
+        {
+            "id": 1,
+            "name": "#sequence",
+            "index": 1,
+            "type": "sequence",
+            "childindexes": [2, 17, 18, 19, 20, 21, 22],
+            "constants": {}
+        },
+        {
+            "id": 2,
+            "name": "#selector",
+            "index": 2,
+            "type": "selector",
+            "childindexes": [3, 12],
+            "constants": {}
+        },
+        {
+            "id": 3,
+            "name": "#hash_41370cfabe260366",
+            "index": 3,
+            "type": "sequence",
+            "childindexes": [4, 5, 6, 7, 8, 9, 10, 11],
+            "constants": {}
+        },
+        {
+            "id": 4,
+            "name": "#commanderblackboardvalueistrue",
+            "index": 4,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#key": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 5,
+            "name": "#commanderhasatleastxunassignedbots",
+            "index": 5,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": "#commanderhasatleastxplayers",
+            "index": 6,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 7,
+            "name": "#commandersquadcreateofsizex",
+            "index": 7,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 8,
+            "name": "#commandersquadcalculatepathableplayers",
+            "index": 8,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 9,
+            "name": "#commandersquadhaspathableescort",
+            "index": 9,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 10,
+            "name": "#commandersquadassignpathableescort",
+            "index": 10,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 11,
+            "name": "#commandersquadassignmainguard",
+            "index": 11,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 12,
+            "name": "#hash_4d120085895fd617",
+            "index": 12,
+            "type": "sequence",
+            "childindexes": [13, 14, 15, 16],
+            "constants": {}
+        },
+        {
+            "id": 13,
+            "name": "#commanderhasatleastxunassignedbots",
+            "index": 13,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 14,
+            "name": "#commandersquadcreateofsizex",
+            "index": 14,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#amount": {
+                    "type": "int",
+                    "value": 1
+                }
+            }
+        },
+        {
+            "id": 15,
+            "name": "#commandersquadassignwander",
+            "index": 15,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 16,
+            "name": "#commandersquadorder",
+            "index": 16,
+            "type": "action",
+            "childindexes": [],
+            "constants": {
+                "#order": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 17,
+            "name": "#hash_405fef7ef4724a61",
+            "index": 17,
+            "type": "postcondition",
+            "childindexes": [],
+            "constants": {
+                "#from": {
+                    "type": "undefined",
+                    "value": null
+                }, 
+                "#to": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 18,
+            "name": "#hash_405fef7ef4724a61",
+            "index": 18,
+            "type": "postcondition",
+            "childindexes": [],
+            "constants": {
+                "#from": {
+                    "type": "undefined",
+                    "value": null
+                }, 
+                "#to": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 19,
+            "name": "#hash_405fef7ef4724a61",
+            "index": 19,
+            "type": "postcondition",
+            "childindexes": [],
+            "constants": {
+                "#from": {
+                    "type": "undefined",
+                    "value": null
+                }, 
+                "#to": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 20,
+            "name": "#hash_405fef7ef4724a61",
+            "index": 20,
+            "type": "postcondition",
+            "childindexes": [],
+            "constants": {
+                "#from": {
+                    "type": "undefined",
+                    "value": null
+                }, 
+                "#to": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 21,
+            "name": "#hash_405fef7ef4724a61",
+            "index": 21,
+            "type": "postcondition",
+            "childindexes": [],
+            "constants": {
+                "#from": {
+                    "type": "undefined",
+                    "value": null
+                }, 
+                "#to": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 22,
+            "name": "#hash_405fef7ef4724a61",
+            "index": 22,
+            "type": "postcondition",
+            "childindexes": [],
+            "constants": {
+                "#from": {
+                    "type": "undefined",
+                    "value": null
+                }, 
+                "#to": {
+                    "type": "undefined",
+                    "value": null
+                }
+            }
+        },
+        {
+            "id": 23,
+            "name": "#commanderendplan",
+            "index": 23,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        }
+    ]
+}

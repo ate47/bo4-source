@@ -1,0 +1,45 @@
+{
+    "name": "mp_koth_squad.ai_htn",
+    "nodes": [
+        {
+            "id": 0,
+            "name": "#hash_4bb124a89a27bed8",
+            "index": 0,
+            "type": "selector",
+            "childindexes": [1, 4],
+            "constants": {}
+        },
+        {
+            "id": 1,
+            "name": "#hash_6b8af1ad54fcba08",
+            "index": 1,
+            "type": "sequence",
+            "childindexes": [2, 3],
+            "constants": {}
+        },
+        {
+            "id": 2,
+            "name": "#hash_6d04a8beefdd8300",
+            "index": 2,
+            "type": "precondition",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 3,
+            "name": "#hash_1d498d2dc9db37d7",
+            "index": 3,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        },
+        {
+            "id": 4,
+            "name": "#squadwander",
+            "index": 4,
+            "type": "action",
+            "childindexes": [],
+            "constants": {}
+        }
+    ]
+}
