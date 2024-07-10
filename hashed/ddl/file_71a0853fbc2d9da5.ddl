@@ -14,7 +14,7 @@ struct root {
     hash event_info;
     int32 infoindex;
     int32 inflictorenttype;
-    int32 hash_4c1f1e20d78f3db3;
+    int32 info_id;
     float scoremultiplier;
     int32 tableindex;
     float scoreaddition;

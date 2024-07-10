@@ -668,7 +668,7 @@ class cdoor {
         self endon(#"hash_50b9293fc24e2756");
         m_e_door endon(#"death");
         if (b_enable) {
-            self notify(#"hash_3becf718b3c58ac9");
+            self notify(#"end_door_update");
         }
         n_delay_min = isdefined(m_s_bundle.var_b7a623f5) ? m_s_bundle.var_b7a623f5 : 0.1;
         n_delay_max = isdefined(m_s_bundle.var_5cac6503) ? m_s_bundle.var_5cac6503 : 1;
@@ -1351,8 +1351,8 @@ function door_open_update(c_door) {
 // Checksum 0x78b97f9d, Offset: 0x61d8
 // Size: 0x2f6
 function door_update(c_door) {
-    c_door notify(#"hash_3becf718b3c58ac9");
-    c_door endon(#"hash_3becf718b3c58ac9");
+    c_door notify(#"end_door_update");
+    c_door endon(#"end_door_update");
     str_unlock_method = "default";
     if (isdefined(c_door.m_s_bundle.door_unlock_method)) {
         str_unlock_method = c_door.m_s_bundle.door_unlock_method;

@@ -60,7 +60,7 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_b8701e49 = 100000;
     level.fx_warlord_igc_ = 0.45;
     if (level.ctdifficulty == 0) {
-        level namespace_56b8c026::init();
+        level ct_seraph_tutorial::init();
     }
 }
 
@@ -72,7 +72,7 @@ function function_7c4ef26b(predictedspawn) {
     self thread ct_core::function_d2845186();
     spawning::onspawnplayer(predictedspawn);
     if (level.ctdifficulty == 0) {
-        self namespace_56b8c026::function_c9ff0dce();
+        self ct_seraph_tutorial::function_c9ff0dce();
         return;
     }
     if (self.team == #"allies") {
@@ -127,7 +127,7 @@ function function_ec9415a4() {
 // Size: 0xdc
 function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
     if (level.ctdifficulty == 0) {
-        self namespace_56b8c026::function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration);
+        self ct_seraph_tutorial::function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration);
         return;
     }
     if (self.team == #"allies") {
@@ -166,7 +166,7 @@ function function_ba542258(mode) {
     self function_9270ab93(0, var_61ca8276);
     self loadout::function_cdb86a18();
     if (level.ctdifficulty == 0) {
-        namespace_56b8c026::setup();
+        ct_seraph_tutorial::setup();
         return;
     }
     ct_bots::function_a64b7003(1, 5);
@@ -209,7 +209,7 @@ function function_b89106ad(gamedifficulty) {
     level.disablescoreevents = 1;
     level.disablemomentum = 1;
     if (level.ctdifficulty == 0) {
-        namespace_56b8c026::function_9b9525e9();
+        ct_seraph_tutorial::function_9b9525e9();
     } else {
         j_fore_le_01();
     }

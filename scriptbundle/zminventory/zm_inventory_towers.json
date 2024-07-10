@@ -91,81 +91,81 @@
     "challenges": [
         {
             "numneeded": 6,
-            "var_3e63e7e4": "#hash_3edd4a623fc74bce",
+            "challengedesc": "#hash_3edd4a623fc74bce",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 10,
-            "var_3e63e7e4": "#hash_6ae8481555edd32",
+            "challengedesc": "#hash_6ae8481555edd32",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 13,
-            "var_3e63e7e4": "#hash_1e2dbe377100a39f",
+            "challengedesc": "#hash_1e2dbe377100a39f",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 5,
-            "var_3e63e7e4": "#hash_3b7574758a2049ce",
+            "challengedesc": "#hash_3b7574758a2049ce",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "var_3e63e7e4": "#hash_d63a7885e762aa5",
+            "challengedesc": "#hash_d63a7885e762aa5",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 9,
-            "var_3e63e7e4": "#hash_6e8e6d2639901410",
+            "challengedesc": "#hash_6e8e6d2639901410",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 5,
-            "var_3e63e7e4": "#hash_633d7079a7b20701",
+            "challengedesc": "#hash_633d7079a7b20701",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 3,
-            "var_3e63e7e4": "#hash_4758a78b4732480d",
+            "challengedesc": "#hash_4758a78b4732480d",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "var_3e63e7e4": "#hash_40d3b427f5fcc414",
+            "challengedesc": "#hash_40d3b427f5fcc414",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
-            "var_3e63e7e4": "#hash_246e66cb1b63cbdf",
-            "challengeimage": "#t7_icons_challenges_mp_darkops"
-        },
-        {
-            "numneeded": 9,
-            "var_3e63e7e4": "#hash_7d4bd5aa38a4f41b",
+            "challengedesc": "#hash_246e66cb1b63cbdf",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 9,
-            "var_3e63e7e4": "#hash_1e6964fc2922d01a",
+            "challengedesc": "#hash_7d4bd5aa38a4f41b",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 9,
-            "var_3e63e7e4": "#hash_6cace1c666f1a9b1",
+            "challengedesc": "#hash_1e6964fc2922d01a",
+            "challengeimage": "#t7_icons_challenges_mp_darkops"
+        },
+        {
+            "numneeded": 9,
+            "challengedesc": "#hash_6cace1c666f1a9b1",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "var_3e63e7e4": "#hash_74af66549232171",
+            "challengedesc": "#hash_74af66549232171",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 1,
-            "var_3e63e7e4": "#hash_4741e74c4ca6f8ce",
+            "challengedesc": "#hash_4741e74c4ca6f8ce",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         },
         {
             "numneeded": 20,
-            "var_3e63e7e4": "#hash_7bbf2a5487ffe0c",
+            "challengedesc": "#hash_7bbf2a5487ffe0c",
             "challengeimage": "#t7_icons_challenges_mp_darkops"
         }
     ],

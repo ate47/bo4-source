@@ -33,7 +33,7 @@ function __init__() {
 function function_8622e664(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         setdvar(#"phys_gravity_dir", (0, 0, -1));
-        self notify(#"hash_747b48d62f4fbad1");
+        self notify(#"end_dynent_touching");
         return;
     }
     setdvar(#"phys_gravity_dir", (0, 0, 1));
@@ -45,7 +45,7 @@ function function_8622e664(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x518281d8, Offset: 0x270
 // Size: 0x190
 function function_e752a980(localclientnum) {
-    self endon(#"hash_747b48d62f4fbad1", #"disconnect");
+    self endon(#"end_dynent_touching", #"disconnect");
     var_f42481ac = 0;
     a_dynents = getdynentarray();
     a_corpses = getentarraybytype(localclientnum, 17);

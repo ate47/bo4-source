@@ -29,7 +29,7 @@ enum hash_54196e9e9860f0be {
 
 struct hash_718ac4f1b61972b0 {
     uint64 hash_433bf14ac8ee287;
-    uint64 hash_17d1c53302160e90;
+    uint64 cohort_id;
     uint64 test_id;
 };
 

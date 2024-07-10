@@ -25,7 +25,7 @@ struct root {
     hash game_type;
     byte hash_481ee9109f272237;
     char hash_4270d43d00e554ea[32];
-    uint64 hash_7baa6dadf52e04cd;
+    uint64 host_id;
     uint32 hash_7baa59adf52de2d1;
     int32 compass_map_upper_left[3];
     hash_c464eb471b1c18a challengescompleted[100];
@@ -52,7 +52,7 @@ struct root {
     uint10 life_count;
     byte hash_3ef2181996ff32c4;
     int32 compass_map_lower_right[3];
-    short hash_2b3baab47172d58e;
+    short victor;
     uint16 numchallengescompleted;
     byte heatmapdatagenerated;
     player players[127];
@@ -63,7 +63,7 @@ struct root {
     int32 hash_5288d149bac65a79;
     bit hash_706dd6b881aa67f4;
     bit hash_74d0769494af24a9;
-    bit hash_51f54a99130c26e8;
+    bit is_draw;
     bit hash_671d5b300061b30f;
     bit is_dedicated;
     bit hash_9bb341c4fe5412b;
@@ -312,7 +312,7 @@ struct player {
     float numspeedswhenmovingentries;
     int32 code_client_num;
     int32 end_hits;
-    byte hash_6f155c5c7cca606d;
+    byte end_rank;
     int32 end_wins;
     short hash_68e4530b257fb42f[3];
     int32 end_games_played;

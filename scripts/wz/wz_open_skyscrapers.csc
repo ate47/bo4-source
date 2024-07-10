@@ -26,7 +26,7 @@ function event_handler[level_init] main(eventstruct) {
     callback::on_localplayer_spawned(&on_localplayer_spawned);
     callback::on_finalize_initialization(&on_finalize_initialization);
     wz_open_skyscrapers_fx::main();
-    namespace_3e7014ef::main();
+    wz_open_skyscrapers_sound::main();
     load::main();
     setdvar(#"cg_aggressivecullradius", 100);
     setdvar(#"hash_53f625ed150e7700", 12000);

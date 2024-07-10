@@ -12,8 +12,8 @@ struct root {
     bit hash_27f986f9f86c15ef;
     bit hash_6e58cdc751af2093;
     bit hash_6abdb11dfb3344ac;
-    bit hash_152289c01f3d96c0;
-    bit hash_2040bac0263bbe0c;
+    bit is_hdr;
+    bit is_igr;
     bit hash_a5ceb4ab2cb3bba;
     bit hash_6f05745100a036a1;
     bit hash_7060c9664d2c5213;

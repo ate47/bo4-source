@@ -7,7 +7,7 @@ struct root {
     telemetry_header telemetry;
     int32 playlist_id;
     client_header client;
-    uint64 hash_3fc45002885726b9;
+    uint64 file_id;
 };
 
 struct telemetry_header {

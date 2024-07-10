@@ -40,7 +40,7 @@ function init() {
     level.var_4c350e72 = 0;
     level.var_ce53172d = 30;
     level.dog_spawn_func = &function_e1c262fb;
-    level.var_6189feaf = &function_c79d744e;
+    level.dog_on_spawned = &function_c79d744e;
     level.var_29a8e07 = &function_d075d6e9;
     level.var_d9334d8b = &function_2438d55e;
     level.var_ae4acb3f = &function_18f5f327;

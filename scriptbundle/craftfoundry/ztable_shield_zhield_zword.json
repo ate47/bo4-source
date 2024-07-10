@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 1,
-    "var_110b7b70": "zblueprint_shield_zhield_zword",
+    "blueprint01": "zblueprint_shield_zhield_zword",
     "name": "ztable_shield_zhield_zword",
     "displayname": "Sword and Shield"
 }

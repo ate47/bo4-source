@@ -267,21 +267,21 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
                     e_player function_2a94cd59();
                 }
                 break;
-            case #"hash_b8b434df6ef34b9":
+            case #"player_4_tn1":
             case #"hash_114b0d4db1699d85":
             case #"hash_138c6bb93906947e":
             case #"hash_15ba4b3713a7633c":
             case #"hash_34fa2d4dc5eb050f":
             case #"hash_361dd9611538c0df":
-            case #"hash_3e6a2360d1dd886b":
+            case #"player_2_tn1":
             case #"hash_410061a21976fb0d":
             case #"hash_41af396a9a424584":
             case #"hash_41e44f4b44ea8a50":
             case #"hash_42e797318220640c":
-            case #"hash_474ce76a549f9856":
+            case #"player_1_tn1":
             case #"hash_478329f218767aab":
             case #"hash_481abb611f991c37":
-            case #"hash_4b9369313f16a734":
+            case #"player_3_tn1":
             case #"hash_4ebf4bdbdeca4671":
             case #"hash_53c07f6aa4b3f3d2":
             case #"hash_544ef1318c01b458":

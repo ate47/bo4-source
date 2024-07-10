@@ -840,16 +840,16 @@ function function_c9b2e87f(...) {
 // Checksum 0x73065cf7, Offset: 0x39f0
 // Size: 0x2d4
 function function_936c6968(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
-    e_attacker.var_8cf2f35b = spawn("script_model", v_origin);
-    var_8cf2f35b = e_attacker.var_8cf2f35b;
-    if (!isdefined(var_8cf2f35b) || !isdefined(e_attacker)) {
+    e_attacker.e_vortex = spawn("script_model", v_origin);
+    e_vortex = e_attacker.e_vortex;
+    if (!isdefined(e_vortex) || !isdefined(e_attacker)) {
         level.var_2ec91d6e[var_a257f75d] = -1;
         return;
     }
-    var_8cf2f35b clientfield::set("" + #"hash_32156a79f13e8c37", 1);
+    e_vortex clientfield::set("" + #"hash_32156a79f13e8c37", 1);
     e_attacker.e_trigger = spawn("trigger_radius", v_origin, 512 | 1, 160, 160);
     e_trigger = e_attacker.e_trigger;
-    e_trigger thread function_e46e9108(var_8cf2f35b, v_origin, e_attacker);
+    e_trigger thread function_e46e9108(e_vortex, v_origin, e_attacker);
     /#
         if (getdvarint(#"hash_e2e03328b366e75", 0)) {
             e_trigger thread function_45b0dfc6(v_origin, "<unknown string>", "<unknown string>");
@@ -863,8 +863,8 @@ function function_936c6968(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     }
     e_trigger notify(#"hash_51bbb146cbe1a24d");
     e_trigger delete();
-    var_8cf2f35b clientfield::set("" + #"hash_32156a79f13e8c37", 0);
-    var_8cf2f35b notify(#"hash_51bbb146cbe1a24d");
+    e_vortex clientfield::set("" + #"hash_32156a79f13e8c37", 0);
+    e_vortex notify(#"hash_51bbb146cbe1a24d");
     if (level.var_2ec91d6e[var_a257f75d] == 0) {
         if (isdefined(e_attacker)) {
             if (!e_attacker flag::get("flag_player_clear_charged_shot")) {
@@ -875,15 +875,15 @@ function function_936c6968(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
         }
     }
     wait(2);
-    var_8cf2f35b delete();
+    e_vortex delete();
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
 // Params 3, eflags: 0x1 linked
 // Checksum 0x46c28f02, Offset: 0x3cd0
 // Size: 0xb0
-function function_e46e9108(var_8cf2f35b, v_origin, e_attacker) {
-    var_8cf2f35b endon(#"hash_51bbb146cbe1a24d");
+function function_e46e9108(e_vortex, v_origin, e_attacker) {
+    e_vortex endon(#"hash_51bbb146cbe1a24d");
     self thread function_f8679f8d(0, &function_bbbbc4d0, v_origin, e_attacker);
     while (true) {
         self waittill(#"touch");

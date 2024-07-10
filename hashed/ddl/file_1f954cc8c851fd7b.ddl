@@ -10,7 +10,7 @@ struct root {
     short hash_4a365bb0b8c5d249;
     short files_used;
     client_header client;
-    uint64 hash_3fc45002885726b9;
+    uint64 file_id;
 };
 
 struct telemetry_header {

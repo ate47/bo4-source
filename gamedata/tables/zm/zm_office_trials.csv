@@ -31,7 +31,7 @@
 25,#conference_call,#hash_23b9480b9485aff6,#hash_fcacde729e8f906,#,#defend_area,#s_destination_conference_room,#hash_40460fc034480e42,#hash_6ec3bd3ccccffd81,#conference_level1,#hallway_level1,#,#,#
 26,#hash_44b1177e76b4a4e1,#hash_23b9470b9485ae43,#hash_402b2fd4a880c8d5,#,#timeout,#hash_6e1d873c28de9fc2,#hash_644ab7ffec4f69b0,#15,#120,#240,#240,#240,#
 27,#hash_10bf891caf30e842,#hash_23b9460b9485ac90,#hash_a64dc7b49e4e8b8,#,#restrict_loadout,#burst_pistol,#,#,#,#,#,#,#
-28,#hash_2e83ac1414f40572,#hash_23b9550b9485c60d,#hash_3b86b85e0bb6f737,#,#disable_teleporters_elevators,#,#,#,#,#,#,#,#
+28,#out_of_order,#hash_23b9550b9485c60d,#hash_3b86b85e0bb6f737,#,#disable_teleporters_elevators,#,#,#,#,#,#,#,#
 29,#hash_5982925beeb7b2fe,#hash_23b9540b9485c45a,#hash_73105a864c05ceea,#,#hash_c2ef6223096d3ca,#,#,#,#,#,#,#,#
 30,#hash_c1f5cbe9648e8f5,#hash_23b5c70b94829eec,#hash_56df244e4d364594,#,#defend_area,#s_destination_groom_lake,#hash_e74ddeb9095e2d0,#hash_70ca1fa46afdf8f3,#cage,#cage_upper,#,#,#
 30,#,#,#,#,#give_reward,#fastest_time_to_complete_round_30,#hash_f60cd1936dfe2ae,#uie_trial_medal_gold,#hash_f0062be10452ec0,#hash_200feebda8bd7fdc,#1,#,#

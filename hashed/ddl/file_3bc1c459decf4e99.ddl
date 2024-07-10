@@ -43,7 +43,7 @@ struct root {
     uint32 hash_7573068d7b84d80a;
     uint32 hash_39f8059a58f3215;
     uint16 hash_434b7866cb18cbb6;
-    uint32 hash_18573ac79710b5f3;
+    uint32 sysmem;
     char winver[128];
     char hash_381564915200bec1[128];
     uint32 hash_677e1a171188e031;
@@ -67,7 +67,7 @@ struct hash_6f622749aa2bbcbe {
     uint32 vram;
     uint32 device_id;
     char description[128];
-    uint32 hash_5e7e1e051052d469;
+    uint32 vendor_id;
 };
 
 struct telemetry_header {

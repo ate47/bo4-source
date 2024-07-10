@@ -193,13 +193,13 @@ function updatecustomgamewinner(outcome) {
     if (!level.mpcustommatch) {
         return;
     }
-    var_6f86cba9 = outcome::get_winning_team(outcome);
+    winner_team = outcome::get_winning_team(outcome);
     tie = outcome::get_flag(outcome, "tie");
     foreach (player in level.players) {
-        if (!isdefined(var_6f86cba9)) {
+        if (!isdefined(winner_team)) {
             player.pers[#"victory"] = 0;
         } else if (level.teambased) {
-            if (player.team == var_6f86cba9) {
+            if (player.team == winner_team) {
                 player.pers[#"victory"] = 2;
             } else if (tie) {
                 player.pers[#"victory"] = 1;

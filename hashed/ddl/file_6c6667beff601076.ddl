@@ -8,7 +8,7 @@ struct root {
     match_header match;
     int32 score;
     telemetry_header telemetry;
-    int32 hash_6f155c5c7cca606d;
+    int32 end_rank;
     int32 hash_42b20df98ca70b5d;
     char gamertag[24];
     hash gametype;

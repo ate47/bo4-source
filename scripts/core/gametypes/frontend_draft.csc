@@ -118,23 +118,23 @@ function function_8be87802(localclientnum, character) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xc53bd58b, Offset: 0x768
 // Size: 0x254
-function function_e1f85a64(var_87c045d1, index, var_3f0e790b) {
+function function_e1f85a64(ccobject, index, var_3f0e790b) {
     var_6b71abc1 = getuimodel(getglobaluimodel(), "LobbyClients");
     var_c4caf9dd = getuimodel(var_6b71abc1, index + 1);
     if (!isdefined(var_c4caf9dd)) {
         return;
     }
-    [[ var_87c045d1 ]]->function_82e05d64().entnummodel = createuimodel(var_c4caf9dd, "entNum");
-    [[ var_87c045d1 ]]->function_82e05d64().var_3f0e790b = var_3f0e790b;
-    [[ var_87c045d1 ]]->function_184a4d2e(&function_8be87802);
-    entnum = getuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().entnummodel);
+    [[ ccobject ]]->function_82e05d64().entnummodel = createuimodel(var_c4caf9dd, "entNum");
+    [[ ccobject ]]->function_82e05d64().var_3f0e790b = var_3f0e790b;
+    [[ ccobject ]]->function_184a4d2e(&function_8be87802);
+    entnum = getuimodelvalue([[ ccobject ]]->function_82e05d64().entnummodel);
     if (!isdefined(entnum)) {
-        setuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().entnummodel, [[ var_87c045d1 ]]->function_47cb6b19());
+        setuimodelvalue([[ ccobject ]]->function_82e05d64().entnummodel, [[ ccobject ]]->function_47cb6b19());
     }
-    [[ var_87c045d1 ]]->function_82e05d64().visible_model = getuimodel(var_c4caf9dd, "visible");
-    setuimodelvalue([[ var_87c045d1 ]]->function_82e05d64().visible_model, [[ var_87c045d1 ]]->function_ea4ac9f8() && [[ var_87c045d1 ]]->is_visible());
+    [[ ccobject ]]->function_82e05d64().visible_model = getuimodel(var_c4caf9dd, "visible");
+    setuimodelvalue([[ ccobject ]]->function_82e05d64().visible_model, [[ ccobject ]]->function_ea4ac9f8() && [[ ccobject ]]->is_visible());
     var_2097336a = createuimodel(var_c4caf9dd, "sprayGestureIndex");
-    [[ var_87c045d1 ]]->function_82e05d64().var_5da50127 = var_2097336a;
+    [[ ccobject ]]->function_82e05d64().var_5da50127 = var_2097336a;
     setuimodelvalue(var_2097336a, isdefined(getuimodelvalue(var_2097336a)) ? getuimodelvalue(var_2097336a) : -1);
 }
 

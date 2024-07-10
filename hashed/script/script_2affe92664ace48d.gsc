@@ -87,8 +87,8 @@ function spawn_single(b_force_spawn = 0, var_eb3a8721) {
         ai.check_point_in_enabled_zone = &zm_utility::check_point_in_playable_area;
         ai thread zombie_utility::round_spawn_failsafe();
         ai forceteleport(s_spawn_loc.origin, s_spawn_loc.angles);
-        if (isdefined(level.var_262798e2)) {
-            ai thread [[ level.var_262798e2 ]](s_spawn_loc);
+        if (isdefined(level.tiger_on_spawned)) {
+            ai thread [[ level.tiger_on_spawned ]](s_spawn_loc);
         }
     }
     return ai;

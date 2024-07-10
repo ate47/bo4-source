@@ -49,7 +49,7 @@ function event_handler[level_init] main(eventstruct) {
     setmapcenter(level.mapcenter);
     level.var_7fd6bd44 = 9000;
     wz_open_skyscrapers_fx::main();
-    namespace_3e7014ef::main();
+    wz_open_skyscrapers_sound::main();
     load::main();
     level.var_405a6738 = 35000;
     level.var_8a390df2 = 35000;

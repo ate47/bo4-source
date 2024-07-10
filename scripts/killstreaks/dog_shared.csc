@@ -12,8 +12,8 @@
 // Checksum 0x86530503, Offset: 0x128
 // Size: 0x15c
 function init_shared() {
-    if (!isdefined(level.var_f90de4ee)) {
-        level.var_f90de4ee = {};
+    if (!isdefined(level.system_dog)) {
+        level.system_dog = {};
         clientfield::register("clientuimodel", "hudItems.dogState", 1, 2, "int", undefined, 0, 0);
         clientfield::register("actor", "dogState", 1, 1, "int", &function_654bd68b, 0, 0);
         clientfield::register("actor", "ks_dog_bark", 1, 1, "int", &function_14740469, 0, 0);

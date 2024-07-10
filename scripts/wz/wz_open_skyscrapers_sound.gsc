@@ -1,7 +1,7 @@
 // Atian COD Tools GSC decompiler test
-#namespace namespace_3e7014ef;
+#namespace wz_open_skyscrapers_sound;
 
-// Namespace namespace_3e7014ef/namespace_3e7014ef
+// Namespace wz_open_skyscrapers_sound/wz_open_skyscrapers_sound
 // Params 0, eflags: 0x1 linked
 // Checksum 0x80f724d1, Offset: 0x68
 // Size: 0x4

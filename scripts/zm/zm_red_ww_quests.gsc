@@ -4275,8 +4275,8 @@ function function_eeed4f2f(s_spawn_loc) {
         }
         ai zm_transform::function_bbaec2fd();
         ai forceteleport(s_spawn_loc.origin, s_spawn_loc.angles);
-        if (isdefined(level.var_f81aba98)) {
-            ai thread [[ level.var_f81aba98 ]](s_spawn_loc);
+        if (isdefined(level.catalyst_on_spawned)) {
+            ai thread [[ level.catalyst_on_spawned ]](s_spawn_loc);
         }
     }
     return ai;

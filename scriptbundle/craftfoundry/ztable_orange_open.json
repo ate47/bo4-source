@@ -2,8 +2,8 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 2,
-    "var_110b7b70": "zblueprint_shield_zhield_riot",
-    "var_339dfcd": "zblueprint_orange_heat_pack",
+    "blueprint01": "zblueprint_shield_zhield_riot",
+    "blueprint02": "zblueprint_orange_heat_pack",
     "name": "ztable_orange_open",
     "displayname": "Open Table"
 }

@@ -2,7 +2,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "craftfoundry",
     "var_2a2adea3": 1,
-    "var_110b7b70": "zblueprint_orange_dynamite_bomb",
+    "blueprint01": "zblueprint_orange_dynamite_bomb",
     "name": "ztable_orange_dynamite_bomb",
     "displayname": "Dynamite Bomb"
 }

@@ -182,7 +182,7 @@ function event_handler[level_init] main(eventstruct) {
     if (!zm_utility::is_standard()) {
         level.round_wait_func = &function_ebe4d15c;
     }
-    level.var_262798e2 = &function_f1e7bc35;
+    level.tiger_on_spawned = &function_f1e7bc35;
     level.var_290ac2c3 = &function_f1e7bc35;
     level.var_ea32773 = &function_8e4eff2b;
     level thread zm_towers_special_rounds::init();

@@ -8,7 +8,7 @@ struct root {
     telemetry_header telemetry;
     int32 infoindex;
     uint16 occurrencecount;
-    int32 hash_4c1f1e20d78f3db3;
+    int32 info_id;
     int32 starttime;
     int32 duration;
     short clientnum;

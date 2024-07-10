@@ -22,7 +22,7 @@ struct root {
     byte hash_115ec7b8fbf85bae;
     hash game_type;
     char hash_4270d43d00e554ea[32];
-    uint64 hash_7baa6dadf52e04cd;
+    uint64 host_id;
     uint32 hash_7baa59adf52de2d1;
     int32 compass_map_upper_left[3];
     byte hash_53437329fef70258;
@@ -720,7 +720,7 @@ struct player {
     uint32 boas_killed_by_nosferatu;
     uint32 boas_distancesprinted;
     uint32 boas_windowsboarded;
-    byte hash_6f155c5c7cca606d;
+    byte end_rank;
     char boas_gametype[15];
     uint32 boas_ammo_purchased;
     uint32 boas_killed_by_zdog;
@@ -968,7 +968,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -1407,7 +1407,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_2b6b162a9af31225 hash_69968eeceaa2059a;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;

@@ -21,7 +21,7 @@ struct root {
     uint32 ai_corpsecount;
     uint32 r_fullscreen;
     char r_mode[16];
-    uint32 hash_2970eab08fd91538;
+    uint32 r_txaa;
     uint32 r_monitor;
     uint32 hash_52285dfeeddba347;
     bit cl_voice;
@@ -32,8 +32,8 @@ struct root {
     bit snd_losocclusion;
     bit hash_2a1815eca78edf5b;
     bit hash_2b452098aeb797eb;
-    bit hash_298df3271e81af86;
-    bit hash_321997cd578fb368;
+    bit r_fxaa;
+    bit r_ssao;
     bit ragdoll_enable;
     bit gpad_enabled;
     padbit __pad[4];

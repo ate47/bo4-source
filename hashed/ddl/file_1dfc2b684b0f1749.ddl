@@ -17,11 +17,11 @@ struct root {
     uint64 uno_id;
     hash_61d8fb71b3cca1df session_mode;
     bit hash_27f986f9f86c15ef;
-    bit hash_7212de4bfb6f8ba;
+    bit is_guest;
     bit is_splitscreen;
     bit new_user;
     bit hash_6e58cdc751af2093;
-    bit hash_2040bac0263bbe0c;
+    bit is_igr;
     bit hash_a5ceb4ab2cb3bba;
     padbit __pad[1];
 };

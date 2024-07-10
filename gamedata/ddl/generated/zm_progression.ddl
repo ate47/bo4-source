@@ -9,7 +9,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -216,7 +216,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -655,7 +655,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_2b6b162a9af31225 hash_69968eeceaa2059a;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
@@ -883,7 +883,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -1090,7 +1090,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -1529,7 +1529,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_2b6b162a9af31225 hash_69968eeceaa2059a;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
@@ -1757,7 +1757,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -1964,7 +1964,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -2403,7 +2403,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_2b6b162a9af31225 hash_69968eeceaa2059a;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
@@ -2630,7 +2630,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -2837,7 +2837,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -3275,7 +3275,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_2b6b162a9af31225 hash_69968eeceaa2059a;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
@@ -3501,7 +3501,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -3708,7 +3708,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -4142,7 +4142,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_2b6b162a9af31225 hash_69968eeceaa2059a;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
@@ -4368,7 +4368,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -4575,7 +4575,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -5004,7 +5004,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -5229,7 +5229,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[114];
     uint8 hash_1c539a1b16b48b16;
@@ -5436,7 +5436,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -5865,7 +5865,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -6090,7 +6090,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -6297,7 +6297,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -6724,7 +6724,7 @@ struct globalstats {
     hash_25508de9fa29a5d5 hash_4582cf1eda8b8959;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -6949,7 +6949,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -7156,7 +7156,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -7577,7 +7577,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -7802,7 +7802,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -8009,7 +8009,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -8429,7 +8429,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -8654,7 +8654,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -8861,7 +8861,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -9281,7 +9281,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -9506,7 +9506,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -9713,7 +9713,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -10133,7 +10133,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -10358,7 +10358,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -10565,7 +10565,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -10985,7 +10985,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -11210,7 +11210,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[106];
     uint8 hash_1c539a1b16b48b16;
@@ -11417,7 +11417,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -11836,7 +11836,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -12061,7 +12061,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -12268,7 +12268,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -12683,7 +12683,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -12908,7 +12908,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -13115,7 +13115,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -13526,7 +13526,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -13751,7 +13751,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -13958,7 +13958,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -14369,7 +14369,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -14594,7 +14594,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[102];
     uint8 hash_1c539a1b16b48b16;
@@ -14801,7 +14801,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -15209,7 +15209,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -15434,7 +15434,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[100];
     uint8 hash_1c539a1b16b48b16;
@@ -15641,7 +15641,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -16049,7 +16049,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -16274,7 +16274,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -16481,7 +16481,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -16887,7 +16887,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -17112,7 +17112,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -17319,7 +17319,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -17723,7 +17723,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -17948,7 +17948,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -18155,7 +18155,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -18559,7 +18559,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -18784,7 +18784,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -18991,7 +18991,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -19395,7 +19395,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -19620,7 +19620,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -19827,7 +19827,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -20231,7 +20231,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -20456,7 +20456,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -20663,7 +20663,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -21067,7 +21067,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -21292,7 +21292,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -21499,7 +21499,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -21903,7 +21903,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -22128,7 +22128,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -22335,7 +22335,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -22739,7 +22739,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -22964,7 +22964,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[105];
     uint8 hash_1c539a1b16b48b16;
@@ -23171,7 +23171,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -23575,7 +23575,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -23800,7 +23800,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[115];
     uint8 hash_1c539a1b16b48b16;
@@ -24007,7 +24007,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -24411,7 +24411,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -24636,7 +24636,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[115];
     uint8 hash_1c539a1b16b48b16;
@@ -24843,7 +24843,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -25245,7 +25245,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -25470,7 +25470,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -25677,7 +25677,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -26079,7 +26079,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -26304,7 +26304,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -26511,7 +26511,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -26913,7 +26913,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -27138,7 +27138,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -27345,7 +27345,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -27747,7 +27747,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -27972,7 +27972,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -28179,7 +28179,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -28581,7 +28581,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -28806,7 +28806,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -29013,7 +29013,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -29411,7 +29411,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -29636,7 +29636,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -29843,7 +29843,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -30241,7 +30241,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -30466,7 +30466,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[165];
     uint8 hash_1c539a1b16b48b16;
@@ -30673,7 +30673,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -31071,7 +31071,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -31296,7 +31296,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -31503,7 +31503,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -31901,7 +31901,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -32126,7 +32126,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -32333,7 +32333,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -32731,7 +32731,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -32955,7 +32955,7 @@ struct root {
     itemstats attachment_stats[46];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -33162,7 +33162,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -33560,7 +33560,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -33784,7 +33784,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -33991,7 +33991,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -34389,7 +34389,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -34613,7 +34613,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -34820,7 +34820,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -35215,7 +35215,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -35439,7 +35439,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -35641,7 +35641,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -36036,7 +36036,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -36260,7 +36260,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[167];
     uint8 hash_1c539a1b16b48b16;
@@ -36462,7 +36462,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -36849,7 +36849,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -37073,7 +37073,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[138];
     uint8 hash_1c539a1b16b48b16;
@@ -37275,7 +37275,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -37662,7 +37662,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -37886,7 +37886,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -38088,7 +38088,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -38475,7 +38475,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -38699,7 +38699,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -38901,7 +38901,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -39284,7 +39284,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -39508,7 +39508,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -39710,7 +39710,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -40093,7 +40093,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -40317,7 +40317,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -40519,7 +40519,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -40906,7 +40906,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -41130,7 +41130,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -41332,7 +41332,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -41719,7 +41719,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -41943,7 +41943,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -42145,7 +42145,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -42532,7 +42532,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -42756,7 +42756,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -42958,7 +42958,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -43345,7 +43345,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -43569,7 +43569,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -43771,7 +43771,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -44158,7 +44158,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -44382,7 +44382,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -44584,7 +44584,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -44971,7 +44971,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -45195,7 +45195,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -45397,7 +45397,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -45784,7 +45784,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -46008,7 +46008,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -46210,7 +46210,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -46597,7 +46597,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -46821,7 +46821,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -47023,7 +47023,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -47410,7 +47410,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -47634,7 +47634,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -47836,7 +47836,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -48223,7 +48223,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -48447,7 +48447,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[132];
     uint8 hash_1c539a1b16b48b16;
@@ -48647,7 +48647,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -49034,7 +49034,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -49258,7 +49258,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -49458,7 +49458,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -49845,7 +49845,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -50069,7 +50069,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -50269,7 +50269,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -50656,7 +50656,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -50880,7 +50880,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -51080,7 +51080,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -51467,7 +51467,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -51691,7 +51691,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[135];
     uint8 hash_1c539a1b16b48b16;
@@ -51891,7 +51891,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -52274,7 +52274,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -52498,7 +52498,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[129];
     uint8 hash_1c539a1b16b48b16;
@@ -52698,7 +52698,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -53075,7 +53075,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -53299,7 +53299,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[129];
     uint8 hash_1c539a1b16b48b16;
@@ -53499,7 +53499,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -53876,7 +53876,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -54100,7 +54100,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[125];
     uint8 hash_1c539a1b16b48b16;
@@ -54300,7 +54300,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -54677,7 +54677,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -54901,7 +54901,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[125];
     uint8 hash_1c539a1b16b48b16;
@@ -55101,7 +55101,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -55478,7 +55478,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -55703,7 +55703,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[125];
     uint8 hash_1c539a1b16b48b16;
@@ -55916,7 +55916,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -56293,7 +56293,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -56507,7 +56507,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[122];
     uint8 hash_1c539a1b16b48b16;
@@ -56720,7 +56720,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -57097,7 +57097,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -57311,7 +57311,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[122];
     uint8 hash_1c539a1b16b48b16;
@@ -57523,7 +57523,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -57883,7 +57883,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -58096,7 +58096,7 @@ struct root {
     itemstats attachment_stats[44];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[122];
     uint8 hash_1c539a1b16b48b16;
@@ -58308,7 +58308,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -58668,7 +58668,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -58881,7 +58881,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -59093,7 +59093,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -59453,7 +59453,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -59666,7 +59666,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -59878,7 +59878,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -60238,7 +60238,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -60451,7 +60451,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -60663,7 +60663,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -61013,7 +61013,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -61218,7 +61218,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -61430,7 +61430,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -61773,7 +61773,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -61978,7 +61978,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[112];
     uint8 hash_1c539a1b16b48b16;
@@ -62190,7 +62190,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -62533,7 +62533,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -62738,7 +62738,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[111];
     uint8 hash_1c539a1b16b48b16;
@@ -62950,7 +62950,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -63293,7 +63293,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -63498,7 +63498,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -63710,7 +63710,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -64053,7 +64053,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -64258,7 +64258,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -64470,7 +64470,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -64813,7 +64813,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -65018,7 +65018,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -65230,7 +65230,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -65573,7 +65573,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -65778,7 +65778,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -65990,7 +65990,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -66333,7 +66333,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -66538,7 +66538,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -66750,7 +66750,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -67093,7 +67093,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -67298,7 +67298,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -67510,7 +67510,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -67853,7 +67853,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -68051,7 +68051,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[110];
     uint8 hash_1c539a1b16b48b16;
@@ -68263,7 +68263,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -68606,7 +68606,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -68804,7 +68804,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[98];
     uint8 hash_1c539a1b16b48b16;
@@ -69016,7 +69016,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -69359,7 +69359,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -69557,7 +69557,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -69769,7 +69769,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -70112,7 +70112,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -70310,7 +70310,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -70521,7 +70521,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -70864,7 +70864,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -71062,7 +71062,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -71266,7 +71266,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -71609,7 +71609,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -71807,7 +71807,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -72011,7 +72011,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -72353,7 +72353,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -72549,7 +72549,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint8 hash_1c539a1b16b48b16;
@@ -72753,7 +72753,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -73095,7 +73095,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -73290,7 +73290,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint32 hash_658c026fb3d608db[20];
@@ -73493,7 +73493,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -73835,7 +73835,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -74030,7 +74030,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint32 hash_658c026fb3d608db[20];
@@ -74222,7 +74222,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -74564,7 +74564,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -74759,7 +74759,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[97];
     uint32 hash_658c026fb3d608db[20];
@@ -74951,7 +74951,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -75293,7 +75293,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -75488,7 +75488,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -75680,7 +75680,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -76022,7 +76022,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -76217,7 +76217,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -76409,7 +76409,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -76749,7 +76749,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -76937,7 +76937,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -77129,7 +77129,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -77469,7 +77469,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -77657,7 +77657,7 @@ struct root {
     itemstats attachment_stats[43];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -77845,7 +77845,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -78185,7 +78185,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -78373,7 +78373,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -78561,7 +78561,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -78901,7 +78901,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -79089,7 +79089,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     uint32 hash_658c026fb3d608db[20];
@@ -79272,7 +79272,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -79612,7 +79612,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -79800,7 +79800,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -79982,7 +79982,7 @@ struct globalstats {
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_57a704e24a1baad4;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -80322,7 +80322,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -80510,7 +80510,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -80691,7 +80691,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -81013,7 +81013,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -81200,7 +81200,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -81381,7 +81381,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -81702,7 +81702,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -81889,7 +81889,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -82068,7 +82068,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -82389,7 +82389,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -82576,7 +82576,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -82748,7 +82748,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -83069,7 +83069,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -83256,7 +83256,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -83428,7 +83428,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -83749,7 +83749,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -83936,7 +83936,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -84107,7 +84107,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -84428,7 +84428,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -84615,7 +84615,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -84784,7 +84784,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -85105,7 +85105,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -85292,7 +85292,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -85460,7 +85460,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -85781,7 +85781,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -85968,7 +85968,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -86136,7 +86136,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -86457,7 +86457,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -86638,7 +86638,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -86806,7 +86806,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -87127,7 +87127,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -87307,7 +87307,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -87475,7 +87475,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -87777,7 +87777,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -87955,7 +87955,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -88123,7 +88123,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -88425,7 +88425,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -88603,7 +88603,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -88771,7 +88771,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -89072,7 +89072,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -89250,7 +89250,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -89418,7 +89418,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -89719,7 +89719,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -89897,7 +89897,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -90065,7 +90065,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -90366,7 +90366,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -90542,7 +90542,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -90710,7 +90710,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -91011,7 +91011,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -91187,7 +91187,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -91355,7 +91355,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -91656,7 +91656,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -91832,7 +91832,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -92000,7 +92000,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -92300,7 +92300,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -92476,7 +92476,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -92644,7 +92644,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -92943,7 +92943,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -93119,7 +93119,7 @@ struct root {
     itemstats attachment_stats[45];
     uint32 hashlen;
     gamehistorystats gamehistory[2];
-    hash hash_3da32e638bd332a5[8];
+    hash heroweaponsmaxed[8];
     uint32 higheststats[8];
     hash_2c6dc17714af562c ranked_item_stats[93];
     perkstats perk_stats[46];
@@ -93287,7 +93287,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -93585,7 +93585,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -93922,7 +93922,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -94220,7 +94220,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -94556,7 +94556,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -94854,7 +94854,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -95190,7 +95190,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec wraith_fire_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
@@ -95488,7 +95488,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -95824,7 +95824,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
     hash_6c116eea1f7184ec bgbs_chewed;
@@ -96099,7 +96099,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -96432,7 +96432,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
     hash_6c116eea1f7184ec bgbs_chewed;
@@ -96707,7 +96707,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -97040,7 +97040,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
     hash_6c116eea1f7184ec bgbs_chewed;
@@ -97315,7 +97315,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -97647,7 +97647,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
     hash_6c116eea1f7184ec bgbs_chewed;
@@ -97922,7 +97922,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -98244,7 +98244,7 @@ struct globalstats {
     hash_6c116eea1f7184ec rank;
     hash_6c116eea1f7184ec ties;
     hash_6c116eea1f7184ec hash_ad3a508a80a0e6e;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
     hash_6c116eea1f7184ec bgbs_chewed;
@@ -98519,7 +98519,7 @@ struct globalstats {
     hash_6c116eea1f7184ec bouncingbetty_planted;
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -98841,7 +98841,7 @@ struct globalstats {
     hash_6c116eea1f7184ec hash_49cc8e6486122824;
     hash_6c116eea1f7184ec specialty_staminup_drank;
     hash_6c116eea1f7184ec hash_4419d00a9f04f866;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
     hash_6c116eea1f7184ec bgbs_chewed;
@@ -99143,7 +99143,7 @@ struct globalstats {
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec hash_48288866afddc0d4;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;
@@ -99467,7 +99467,7 @@ struct globalstats {
     hash_6c116eea1f7184ec hash_49cc8e6486122824;
     hash_6c116eea1f7184ec specialty_staminup_drank;
     hash_6c116eea1f7184ec hash_4419d00a9f04f866;
-    hash_6c116eea1f7184ec hash_71a075c389f788b6;
+    hash_6c116eea1f7184ec player_kills;
     hash_6c116eea1f7184ec downs;
     hash_6c116eea1f7184ec drops;
     hash_6c116eea1f7184ec bgbs_chewed;
@@ -99769,7 +99769,7 @@ struct globalstats {
     hash_6c116eea1f7184ec special_weapon_levels;
     hash_6c116eea1f7184ec hash_48288866afddc0d4;
     hash_6c116eea1f7184ec killed_by_catalyst_electric;
-    hash_6c116eea1f7184ec hash_3016657cd93ca28c;
+    hash_6c116eea1f7184ec player_returns;
     hash_6c116eea1f7184ec hash_44077c71bca8da4c;
     hash_6c116eea1f7184ec leaderboardfailures;
     hash_6c116eea1f7184ec killed_by_catalyst;

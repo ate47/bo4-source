@@ -64,7 +64,7 @@ function is_active() {
 // Size: 0x248
 function function_ed4d5d4(var_38282db8) {
     self endon(#"disconnect");
-    level endon(#"hash_7646638df88a3656", #"end_game", #"hash_43a461e5c99d52a0");
+    level endon(#"hash_7646638df88a3656", #"end_game", #"end_distance_traveled");
     n_distance_traveled = 0;
     self zm_trial_util::function_2190356a(int(n_distance_traveled), 1);
     self zm_trial_util::function_c2cd0cba(var_38282db8);
@@ -89,7 +89,7 @@ function function_ed4d5d4(var_38282db8) {
             self zm_trial_util::function_2190356a(var_38282db8);
             self zm_trial_util::function_c2cd0cba(var_38282db8);
             zm_trial::fail(#"hash_1ab078fa9460e7c9", array(self));
-            level notify(#"hash_43a461e5c99d52a0");
+            level notify(#"end_distance_traveled");
             return;
         }
         var_31409e15 = self.origin;

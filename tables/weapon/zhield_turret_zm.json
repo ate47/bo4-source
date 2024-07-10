@@ -1,6 +1,6 @@
 {
     "name": "#zhield_turret_zm",
-    "baseWeapon": "#hash_2c84060669f507c0",
+    "baseWeapon": "#zhield_turret",
     "displayname": "#weapon/sig_buckler_dw",
     "sessionMode": "zombies",
     "itemIndex": 0,

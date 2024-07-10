@@ -276,7 +276,7 @@ function init_step_4(var_a276c861) {
 // Checksum 0x492f67f9, Offset: 0x1a30
 // Size: 0x4c
 function cleanup_step_4(var_5ea5c94d, ended_early) {
-    level notify(#"hash_1c676c7286de913a");
+    level notify(#"end_crypt_unlock");
     callback::remove_on_ai_killed(&on_nosferatu_killed);
 }
 
@@ -946,7 +946,7 @@ function function_9f0de8b3() {
 // Checksum 0xe8314f10, Offset: 0x4548
 // Size: 0x168
 function function_9768c04b() {
-    level endon(#"hash_1c676c7286de913a");
+    level endon(#"end_crypt_unlock");
     var_7853cc7c = getent("imp_symbol_base", "targetname");
     level.var_6a17ff24 = 0;
     callback::on_ai_killed(&on_nosferatu_killed);
@@ -964,7 +964,7 @@ function function_9768c04b() {
 // Checksum 0x863d710d, Offset: 0x46b8
 // Size: 0x4c
 function function_cc11b6fd() {
-    level endon(#"hash_1c676c7286de913a");
+    level endon(#"end_crypt_unlock");
     wait(30);
     level.var_6a17ff24 = 0;
     level flag::clear(#"hash_2e0f59cef233a264");

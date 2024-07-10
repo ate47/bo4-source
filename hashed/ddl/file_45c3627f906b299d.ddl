@@ -4,7 +4,7 @@ metatable "hash_a234babe5aa2f686";
 
 struct root {
     match_header match;
-    int32 hash_615bd5fc3b89f61d;
+    int32 life_id;
     telemetry_header telemetry;
     int32 hash_38677b67d4221a8;
     int32 hash_73b532ab11525ffe;

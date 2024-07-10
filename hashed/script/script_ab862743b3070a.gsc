@@ -853,8 +853,8 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
         ai.check_point_in_enabled_zone = &zm_utility::check_point_in_playable_area;
         ai thread zombie_utility::round_spawn_failsafe();
         ai forceteleport(s_spawn_loc.origin, s_spawn_loc.angles);
-        if (isdefined(level.var_6189feaf)) {
-            ai thread [[ level.var_6189feaf ]](s_spawn_loc);
+        if (isdefined(level.dog_on_spawned)) {
+            ai thread [[ level.dog_on_spawned ]](s_spawn_loc);
         } else {
             s_spawn_loc thread dog_spawn_fx(ai, s_spawn_loc);
         }

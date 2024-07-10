@@ -6,7 +6,7 @@ struct root {
     telemetry_header telemetry;
     client_header client;
     char reason[48];
-    uint64 hash_3fc45002885726b9;
+    uint64 file_id;
 };
 
 struct telemetry_header {

@@ -8,7 +8,7 @@ struct root {
     short blocks_used;
     client_header client;
     int32 file_size;
-    uint64 hash_3fc45002885726b9;
+    uint64 file_id;
     int32 total_space;
     int32 space_unused;
 };

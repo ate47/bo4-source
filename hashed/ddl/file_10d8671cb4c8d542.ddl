@@ -36,7 +36,7 @@ struct root {
     bit isranked;
     bit isserver;
     bit isguest;
-    bit hash_152289c01f3d96c0;
+    bit is_hdr;
     bit hash_326518fcfc54ec7c;
 };
 

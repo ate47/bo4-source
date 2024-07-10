@@ -92,7 +92,7 @@ struct root {
     int32 hash_53ce5582cb1ef0d9;
     int32 hash_128197788f1faf30;
     int32 sss_blur_us;
-    int32 hash_58213d392b486455;
+    int32 r_dpvs;
     int32 spot_tris;
     int32 hash_633a5d0864db2db;
     int32 sun_us;

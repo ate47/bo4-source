@@ -9,7 +9,7 @@ struct root {
     short clientnum;
     int32 servertime;
     client_header client;
-    int32 hash_2a2a98f527b88a06;
+    int32 ntp_ms;
 };
 
 struct match_header {

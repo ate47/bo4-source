@@ -8,7 +8,7 @@ struct root {
     char stack[48];
     telemetry_header telemetry;
     client_header client;
-    uint64 hash_a5776361938ddf5;
+    uint64 sizekb;
 };
 
 struct match_header {

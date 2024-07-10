@@ -11,7 +11,7 @@ struct root {
     int32 hash_1946e5ecc3720231;
     int32 hash_22adbf5291b6f3ff;
     int32 hash_2b96b7ac2b44ab0c;
-    int32 hash_f4959b13031538b;
+    int32 dataavg;
     int32 hash_321b73ec8694423f;
     hash arrayname;
     client_header client;

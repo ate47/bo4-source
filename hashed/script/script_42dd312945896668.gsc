@@ -34,7 +34,7 @@ function __init__() {
     clientfield::register("actor", "" + #"hash_1dd40649a6474f30", 1, 1, "int", &function_1af615a9, 0, 0);
     clientfield::register("vehicle", "" + #"hash_1dd40649a6474f30", 1, 1, "int", &function_1af615a9, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_12b19992ccb300e7", 1, 1, "int", &function_ac54fdec, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_54fdcf7f8eb5449e", 1, 1, "int", &function_176a239f, 0, 0);
+    clientfield::register("scriptmover", "" + #"hash_54fdcf7f8eb5449e", 1, 1, "int", &drag_portal, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_69b312bcaae6308b", 1, 1, "int", &function_68a87cde, 0, 0);
     clientfield::register("actor", "" + #"hash_2ff818c8cb4c17ba", 1, 1, "int", &function_332e7c58, 0, 0);
     clientfield::register("vehicle", "" + #"hash_2ff818c8cb4c17ba", 1, 1, "int", &function_3b7e3b9, 0, 0);
@@ -223,9 +223,9 @@ function function_ac54fdec(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xfab3a711, Offset: 0x1600
 // Size: 0x1e4
-function function_176a239f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function drag_portal(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
-        self.var_b875cdb1 = util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_portal", self, "tag_origin");
+        self.fx_portal = util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_portal", self, "tag_origin");
         if (!isdefined(self.sound_origin)) {
             self.sound_origin = self.origin + (0, 0, 50);
             playsound(localclientnum, #"hash_457eb103eafefe25", self.sound_origin);
@@ -239,9 +239,9 @@ function function_176a239f(localclientnum, oldval, newval, bnewent, binitialsnap
         playsound(localclientnum, #"hash_3ab7968f3d5362bc", self.sound_origin);
         audio::stoploopat(#"hash_31a9e607641ce8eb", self.sound_origin);
     }
-    if (isdefined(self.var_b875cdb1)) {
-        killfx(localclientnum, self.var_b875cdb1);
-        self.var_b875cdb1 = undefined;
+    if (isdefined(self.fx_portal)) {
+        killfx(localclientnum, self.fx_portal);
+        self.fx_portal = undefined;
     }
     util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_portal_end", self, "tag_origin");
 }

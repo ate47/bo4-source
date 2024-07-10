@@ -16,8 +16,8 @@ struct root {
     int32 grenadesused;
     int32 bestkillstreak;
     char collectibles[64];
-    float hash_5d9b05c61b08296c;
-    int32 hash_31fc0b4df25cc50d;
+    float dj_dist;
+    int32 dj_time;
     int32 hash_5563ef374a80dc1d;
     hash primaryloadoutweapon;
     int32 playertime;

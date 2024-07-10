@@ -12,7 +12,7 @@ struct root {
     int32 hash_2cc900b0bc4d19a2;
     char hash_546cb9d1bff52769[32];
     int32 hash_35111fd969edd4ce;
-    int32 hash_6851555810dc97df;
+    int32 beacon_id;
     int32 gametime;
     client_header client;
     bit hash_61f0f358f0c8f424;

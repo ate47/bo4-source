@@ -189,11 +189,11 @@ function function_59ace802(localclientnum) {
 // Checksum 0xbe28a423, Offset: 0x1188
 // Size: 0xe6
 function function_3827fca4(localclientnum) {
-    var_8813211c = getlocalplayers()[0];
+    player0 = getlocalplayers()[0];
     time = 0;
     while (true) {
         time += 0.0166667;
-        val = distance(var_8813211c.origin, self.origin);
+        val = distance(player0.origin, self.origin);
         val /= 500;
         if (val > 1) {
             val = 1;
