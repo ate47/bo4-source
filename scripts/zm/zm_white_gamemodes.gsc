@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_zstandard.gsc;
 #using scripts\core_common\util_shared.gsc;
 

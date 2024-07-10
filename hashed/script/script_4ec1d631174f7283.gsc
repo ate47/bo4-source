@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_devgui.gsc;
 #using scripts\zm_common\zm_behavior.gsc;
 #using scripts\core_common\status_effects\status_effect_util.gsc;
@@ -29,9 +28,9 @@ function __init__() {
     assert(isscriptfunctionptr(&function_b4b7cd20));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"ispablo", &function_b4b7cd20);
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
+        adddebugcommand("<dev string:x43>");
+        adddebugcommand("<dev string:x73>");
     #/
     level thread function_2165e851();
 }
@@ -150,7 +149,7 @@ function function_303ab700() {
             if (isdefined(player)) {
                 var_16a2c824 = player function_dca53f1f(player_index);
                 samantha = level.var_8a8728c6[0];
-                println("<unknown string>");
+                println("<dev string:xc0>");
                 player.var_fa2d1151 = spawn("script_model", var_16a2c824);
                 player.var_fa2d1151.angles = samantha.angles;
                 wait(1);
@@ -159,7 +158,7 @@ function function_303ab700() {
                     player setorigin(var_16a2c824);
                     player setplayerangles(samantha.angles);
                     waitframe(1);
-                    println("<unknown string>" + player.name + "<unknown string>");
+                    println("<dev string:xe6>" + player.name + "<dev string:x106>");
                     function_8e56bb21(player, player.var_fa2d1151, var_16a2c824, samantha.angles);
                     wait(1);
                 }

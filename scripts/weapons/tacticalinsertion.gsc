@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
@@ -335,12 +334,12 @@ function cancel_button_press() {
         text = newdebughudelem(self);
         text.archived = 0;
         text.y = -100;
-        text.alignx = "<unknown string>";
-        text.aligny = "<unknown string>";
-        text.horzalign = "<unknown string>";
-        text.vertalign = "<unknown string>";
+        text.alignx = "<dev string:x38>";
+        text.aligny = "<dev string:x41>";
+        text.horzalign = "<dev string:x38>";
+        text.vertalign = "<dev string:x4a>";
         text.sort = 10;
-        text.font = "<unknown string>";
+        text.font = "<dev string:x53>";
         text.foreground = 1;
         text.hidewheninmenu = 1;
         if (self issplitscreen()) {

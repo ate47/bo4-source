@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_ab862743b3070a;
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
 #using scripts\zm_common\zm_score.gsc;
@@ -29,7 +28,7 @@ function autoexec __init__system__() {
 function __init__() {
     level.a_sp_werewolf = getentarray("zombie_werewolf_spawner", "script_noteworthy");
     if (level.a_sp_werewolf.size == 0) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         return;
     }
     foreach (sp_werewolf in level.a_sp_werewolf) {

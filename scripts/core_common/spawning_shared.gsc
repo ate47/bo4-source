@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\flag_shared.gsc;
 #using scripts\core_common\flagsys_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -369,7 +368,7 @@ function onspawnplayer(predictedspawn = 0) {
         }
     }
     if (!isdefined(spawn_origin)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         callback::abort_level();
     }
     if (predictedspawn) {
@@ -449,10 +448,10 @@ function get_best_spawnpoint(point_team, influencer_team, player, predictedspawn
         }
     }
     spawn_point = getbestspawnpoint(point_team, influencer_team, vis_team_mask, player, predictedspawn, lists);
-    assert(isdefined(spawn_point), "<unknown string>");
+    assert(isdefined(spawn_point), "<dev string:x72>");
     if (!isdefined(spawn_point)) {
         spawn_point = getbestspawnpoint(point_team, influencer_team, vis_team_mask, player, predictedspawn, level.default_spawn_lists);
-        assert(isdefined(spawn_point), "<unknown string>");
+        assert(isdefined(spawn_point), "<dev string:xd9>");
         if (!isdefined(spawn_point)) {
             spawn_point = [];
             spawn_point[#"origin"] = (0, 0, 0);
@@ -537,7 +536,7 @@ function private add_spawn_points_internal(team, spawnpoints, list = 0) {
 // Size: 0x238
 function clear_and_add_spawn_points(str_team, classnames, ...) {
     str_team = util::get_team_mapping(str_team);
-    assert(vararg.size % 2 == 0, "<unknown string>");
+    assert(vararg.size % 2 == 0, "<dev string:x144>");
     clear_spawn_points();
     team_array = array(str_team);
     classnames_array = array(classnames);
@@ -938,8 +937,8 @@ function place_spawn_points(spawnpointname) {
     add_spawn_point_classname(spawnpointname);
     spawnpoints = get_spawnpoint_array(spawnpointname);
     if (!spawnpoints.size && level.requirespawnpointstoexistinlevel) {
-        println("<unknown string>" + spawnpointname + "<unknown string>");
-        assert(spawnpoints.size, "<unknown string>" + spawnpointname + "<unknown string>");
+        println("<dev string:x18e>" + spawnpointname + "<dev string:x196>");
+        assert(spawnpoints.size, "<dev string:x18e>" + spawnpointname + "<dev string:x196>");
         callback::abort_level();
         wait(1);
         return;
@@ -956,7 +955,7 @@ function place_spawn_points(spawnpointname) {
 function drop_spawn_points(spawnpointname) {
     spawnpoints = get_spawnpoint_array(spawnpointname);
     if (!spawnpoints.size) {
-        println("<unknown string>" + spawnpointname + "<unknown string>");
+        println("<dev string:x18e>" + spawnpointname + "<dev string:x196>");
         return;
     }
     for (index = 0; index < spawnpoints.size; index++) {
@@ -1173,7 +1172,7 @@ function function_754c78a6(func_callback) {
 // Checksum 0x95994444, Offset: 0x44c8
 // Size: 0xda
 function function_4c00b132(func_callback) {
-    assert(isdefined(level.var_811300ad) && level.var_811300ad.size, "<unknown string>");
+    assert(isdefined(level.var_811300ad) && level.var_811300ad.size, "<dev string:x1b5>");
     foreach (index, func in level.var_811300ad) {
         if (func == func_callback) {
             arrayremoveindex(level.var_811300ad, index, 0);
@@ -1207,12 +1206,12 @@ function function_a782529(e_player) {
         a_spawnlists = getspawnlists();
         index = 0;
         foreach (s_list in a_spawnlists) {
-            adddebugcommand("<unknown string>" + s_list + "<unknown string>" + index + "<unknown string>");
+            adddebugcommand("<dev string:x1e8>" + s_list + "<dev string:x216>" + index + "<dev string:x237>");
             index++;
         }
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x1e8>" + "<dev string:x23b>" + "<dev string:x241>");
+        adddebugcommand("<dev string:x266>");
+        adddebugcommand("<dev string:x2c7>");
         while (true) {
             spawnsystem_debug_command = getdvarstring(#"spawnsystem_debug_command");
             switch (spawnsystem_debug_command) {
@@ -1232,8 +1231,8 @@ function function_a782529(e_player) {
                     influencer_team = selectedplayer.pers[#"team"];
                     vis_team_mask = util::getotherteamsmask(selectedplayer.pers[#"team"]);
                 } else {
-                    point_team = "<unknown string>";
-                    influencer_team = "<unknown string>";
+                    point_team = "<dev string:x31f>";
+                    influencer_team = "<dev string:x31f>";
                     vis_team_mask = level.spawnsystem.ispawn_teammask[#"all"];
                 }
                 nextbestspawnpoint = getbestspawnpoint(point_team, influencer_team, vis_team_mask, selectedplayer, 0);
@@ -1244,7 +1243,7 @@ function function_a782529(e_player) {
                 level flagsys::set(#"spawnpoints_dirty");
                 break;
             }
-            setdvar(#"spawnsystem_debug_command", "<unknown string>");
+            setdvar(#"spawnsystem_debug_command", "<dev string:x326>");
             if (isdefined(getdvarint(#"spawnsystem_debug_triggers", 0)) && getdvarint(#"spawnsystem_debug_triggers", 0)) {
                 foreach (trig in level.spawnpoint_triggers) {
                     render_spawnpoints_triggers(trig);

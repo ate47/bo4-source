@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm.gsc;
 #using script_698dd790cdc4965f;
 #using scripts\zm_common\zm_loadout.gsc;
@@ -86,7 +85,7 @@ function is_active() {
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
-// Params c, eflags: 0x5 linked
+// Params 12, eflags: 0x5 linked
 // Checksum 0xc80e936d, Offset: 0x728
 // Size: 0xbc
 function private height_check(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

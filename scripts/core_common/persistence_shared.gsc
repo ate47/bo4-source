@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\rank_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -299,8 +298,8 @@ function challenge_complete(eventstruct) {
         return;
     }
     /#
-        var_54b50d64 = getdvarstring(#"hash_5f6f875e3935912a", "<unknown string>");
-        if (var_54b50d64 != "<unknown string>") {
+        var_54b50d64 = getdvarstring(#"hash_5f6f875e3935912a", "<dev string:x38>");
+        if (var_54b50d64 != "<dev string:x38>") {
             challengecategory = tablelookupcolumnforrow(tablename, row, 16);
             if (isdefined(challengecategory) && challengecategory != var_54b50d64) {
                 return;
@@ -314,24 +313,24 @@ function challenge_complete(eventstruct) {
     /#
         if (getdvarint(#"scr_debugchallenges", 0) != 0) {
             challengestring = function_9e72a96(var_eb67c133);
-            challengedescstring = challengestring + "<unknown string>";
+            challengedescstring = challengestring + "<dev string:x3b>";
             challengetiernext = int(tablelookupcolumnforrow(tablename, row + 1, 1));
-            tiertext = "<unknown string>" + challengetier;
-            herostring = "<unknown string>";
+            tiertext = "<dev string:x43>" + challengetier;
+            herostring = "<dev string:x38>";
             heroinfo = getunlockableiteminfofromindex(itemindex, 1);
             if (isdefined(heroinfo)) {
                 herostring = heroinfo.displayname;
             }
             if (getdvarint(#"scr_debugchallenges", 0) == 1) {
-                iprintlnbold(challengestring + "<unknown string>" + maxval + "<unknown string>" + herostring);
+                iprintlnbold(challengestring + "<dev string:x55>" + maxval + "<dev string:x5b>" + herostring);
                 return;
             }
             if (getdvarint(#"scr_debugchallenges", 0) == 2) {
-                self iprintlnbold(challengestring + "<unknown string>" + maxval + "<unknown string>" + herostring);
+                self iprintlnbold(challengestring + "<dev string:x55>" + maxval + "<dev string:x5b>" + herostring);
                 return;
             }
             if (getdvarint(#"scr_debugchallenges", 0) == 3) {
-                iprintln(challengestring + "<unknown string>" + maxval + "<unknown string>" + herostring);
+                iprintln(challengestring + "<dev string:x55>" + maxval + "<dev string:x5b>" + herostring);
             }
         }
     #/

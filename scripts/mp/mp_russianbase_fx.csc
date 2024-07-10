@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_russianbase_fx;
 
 // Namespace mp_russianbase_fx/mp_russianbase_fx

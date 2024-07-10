@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\zm_common\zm_laststand.gsc;
@@ -251,7 +250,7 @@ function function_4b36d499(b_available, var_e7a18e05) {
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
-// Params a, eflags: 0x1 linked
+// Params 10, eflags: 0x1 linked
 // Checksum 0x8b7ba083, Offset: 0x1488
 // Size: 0x154
 function function_b4b16823(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -514,8 +513,8 @@ function private function_de053460(pap_machine) {
     var_2ff5c7ee = pap_machine.unitrigger_stub;
     var_b64e889a = pap_machine.var_b64e889a;
     b_weapon_supports_aat = pap_machine.b_weapon_supports_aat;
-    assert(isdefined(var_2ff5c7ee.current_weapon), "<unknown string>");
-    assert(isdefined(var_2ff5c7ee.upgrade_weapon), "<unknown string>");
+    assert(isdefined(var_2ff5c7ee.current_weapon), "<dev string:x38>");
+    assert(isdefined(var_2ff5c7ee.upgrade_weapon), "<dev string:x69>");
     w_current = var_2ff5c7ee.current_weapon;
     self waittill(#"player_revived");
     wait(1);
@@ -549,13 +548,13 @@ function private function_de053460(pap_machine) {
             self switchtoweapon(w_upgrade);
             if (isdefined(self.var_655c0753) && self.var_655c0753 && !(isdefined(var_b64e889a) && var_b64e889a)) {
                 new_clip = self.restore_clip + w_upgrade.clipsize - self.restore_clip_size;
-                new_stock = self.restore_stock + w_upgrade.maxammo - self.restore_max;
+                new_stock = self.healing_aura_revive_zm + w_upgrade.maxammo - self.restore_max;
                 self setweaponammostock(w_upgrade, new_stock);
                 self setweaponammoclip(w_upgrade, new_clip);
             }
             self.var_655c0753 = undefined;
             self.restore_clip = undefined;
-            self.restore_stock = undefined;
+            self.healing_aura_revive_zm = undefined;
             self.restore_max = undefined;
             self.restore_clip_size = undefined;
         }

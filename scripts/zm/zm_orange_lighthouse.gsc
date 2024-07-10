@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_orange_pap.gsc;
 #using scripts\zm\zm_trap_electric.gsc;
@@ -319,7 +318,7 @@ function function_ad646ef8(n_state) {
         e_lighthouse notify(#"hash_1aa56851d9d4ec0d");
         e_lighthouse.var_58df9892 = n_state;
         /#
-            iprintln("<unknown string>" + level.var_4b3d7dc1[e_lighthouse.var_58df9892]);
+            iprintln("<dev string:x38>" + level.var_4b3d7dc1[e_lighthouse.var_58df9892]);
         #/
         switch (e_lighthouse.var_58df9892) {
         case 0:
@@ -854,16 +853,16 @@ function function_fcbb2307() {
         } else if (!isarray(level.var_4b3d7dc1)) {
             level.var_4b3d7dc1 = array(level.var_4b3d7dc1);
         }
-        level.var_4b3d7dc1[0] = "<unknown string>";
-        level.var_4b3d7dc1[1] = "<unknown string>";
-        level.var_4b3d7dc1[2] = "<unknown string>";
-        level.var_4b3d7dc1[3] = "<unknown string>";
-        level.var_4b3d7dc1[4] = "<unknown string>";
-        level.var_4b3d7dc1[5] = "<unknown string>";
-        level.var_4b3d7dc1[6] = "<unknown string>";
-        level.var_4b3d7dc1[7] = "<unknown string>";
-        level.var_4b3d7dc1[8] = "<unknown string>";
-        level.var_4b3d7dc1[9] = "<unknown string>";
+        level.var_4b3d7dc1[0] = "<dev string:x52>";
+        level.var_4b3d7dc1[1] = "<dev string:x5b>";
+        level.var_4b3d7dc1[2] = "<dev string:x65>";
+        level.var_4b3d7dc1[3] = "<dev string:x6d>";
+        level.var_4b3d7dc1[4] = "<dev string:x75>";
+        level.var_4b3d7dc1[5] = "<dev string:x81>";
+        level.var_4b3d7dc1[6] = "<dev string:x8a>";
+        level.var_4b3d7dc1[7] = "<dev string:x93>";
+        level.var_4b3d7dc1[8] = "<dev string:x9e>";
+        level.var_4b3d7dc1[9] = "<dev string:xa7>";
     }
 
     // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -871,13 +870,13 @@ function function_fcbb2307() {
     // Checksum 0xf72be9b2, Offset: 0x32b0
     // Size: 0x1e0
     function private devgui() {
-        level.var_10f86d56 = zm_hms_util::function_2719d4c0("<unknown string>", "<unknown string>", "<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        level.var_10f86d56 = zm_hms_util::function_2719d4c0("<dev string:xaf>", "<dev string:xc5>", "<dev string:xd9>");
+        adddebugcommand("<dev string:xe6>");
+        adddebugcommand("<dev string:x167>");
+        adddebugcommand("<dev string:x1e3>");
         while (true) {
             waitframe(1);
-            str_command = getdvarstring(#"zm_orange_lighthouse_cmd", "<unknown string>");
+            str_command = getdvarstring(#"zm_orange_lighthouse_cmd", "<dev string:x260>");
             switch (str_command) {
             case #"hash_2e5bdb11c6bc0cd":
                 getplayers()[0] function_2ad3b642(level.var_10f86d56[0]);
@@ -889,7 +888,7 @@ function function_fcbb2307() {
                 getplayers()[0] function_2ad3b642(level.var_10f86d56[2]);
                 break;
             }
-            setdvar(#"zm_orange_lighthouse_cmd", "<unknown string>");
+            setdvar(#"zm_orange_lighthouse_cmd", "<dev string:x260>");
         }
     }
 

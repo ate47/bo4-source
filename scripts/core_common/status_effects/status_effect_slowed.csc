@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace status_effect_slowed;
 
 // Namespace status_effect_slowed/status_effect_slowed

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2cc4bd7902c3f711;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
 #using scripts\mp_common\gametypes\ct_vo.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -197,9 +196,9 @@ function door_classify(parent_trig) {
         }
         switch (self.script_string) {
         case #"anim":
-            assert(isdefined(self.script_animname), "skip_disconnectpaths" + self.targetname);
-            assert(isdefined(level.scr_anim[self.script_animname]), "tearin_board_vertical_fx" + self.script_animname);
-            assert(isdefined(level.var_6ecb5c15), "<unknown string>");
+            assert(isdefined(self.script_animname), "<dev string:x38>" + self.targetname);
+            assert(isdefined(level.scr_anim[self.script_animname]), "<dev string:x70>" + self.script_animname);
+            assert(isdefined(level.var_6ecb5c15), "<dev string:xb5>");
             break;
         }
     }
@@ -555,7 +554,7 @@ function wait_trigger_clear(trigger, more_triggers, end_on) {
     while (any_player_touching_any(trigger, more_triggers) || any_zombie_touching_any(trigger, more_triggers)) {
         wait(1);
     }
-    println("<unknown string>");
+    println("<dev string:xef>");
     self notify(#"trigger_clear");
 }
 
@@ -569,7 +568,7 @@ function waittill_door_trigger_clear_local_power_off(trigger, a_trigs) {
         if (isdefined(self.local_power_on) && self.local_power_on) {
             self waittill(#"local_power_off");
         }
-        println("<unknown string>");
+        println("<dev string:x116>");
         self wait_trigger_clear(trigger, a_trigs, "local_power_on");
     }
 }
@@ -584,7 +583,7 @@ function waittill_door_trigger_clear_global_power_off(trigger, a_trigs) {
         if (isdefined(self.power_on) && self.power_on) {
             self waittill(#"power_off");
         }
-        println("<unknown string>");
+        println("<dev string:x139>");
         self wait_trigger_clear(trigger, a_trigs, "power_on");
     }
 }
@@ -643,7 +642,7 @@ function door_think() {
                 self waittill(#"local_power_on");
             }
             if (!(isdefined(self._door_open) && self._door_open)) {
-                println("<unknown string>");
+                println("<dev string:x15d>");
                 self door_opened(n_cost, 1);
                 if (!isdefined(self.power_cost)) {
                     self.power_cost = 0;
@@ -658,7 +657,7 @@ function door_think() {
             self waittill_door_can_close();
             self door_block();
             if (isdefined(self._door_open) && self._door_open) {
-                println("<unknown string>");
+                println("<dev string:x17d>");
                 self door_opened(n_cost, 1);
             }
             self sethintstring(#"hash_671e980430950a22");
@@ -675,7 +674,7 @@ function door_think() {
                 level flag::wait_till(self.script_flag_wait);
             }
             if (!(isdefined(self._door_open) && self._door_open)) {
-                println("<unknown string>");
+                println("<dev string:x19d>");
                 self door_opened(n_cost, 1);
                 if (!isdefined(self.power_cost)) {
                     self.power_cost = 0;
@@ -690,7 +689,7 @@ function door_think() {
             self waittill_door_can_close();
             self door_block();
             if (isdefined(self._door_open) && self._door_open) {
-                println("<unknown string>");
+                println("<dev string:x1be>");
                 self door_opened(n_cost, 1);
             }
             self thread function_dafd2e5a();
@@ -1291,8 +1290,8 @@ function function_23cbcd8() {
         return;
     }
     self.var_b4d014cf = 1;
-    assert(isdefined(self.model) || isdefined(self.objectid), "<unknown string>" + self.origin);
-    assert(isdefined(self.script_vector), "<unknown string>");
+    assert(isdefined(self.model) || isdefined(self.objectid), "<dev string:x1df>" + self.origin);
+    assert(isdefined(self.script_vector), "<dev string:x20a>");
     if (isdefined(self.script_noteworthy)) {
         a_str_tokens = strtok2(self.script_noteworthy, "_");
         if (isinarray(a_str_tokens, "symbol") && (isinarray(a_str_tokens, "front") || isinarray(a_str_tokens, "back"))) {
@@ -1307,7 +1306,7 @@ function function_23cbcd8() {
         } else if (self.model == "p8_zm_power_door_symbol_01") {
             self.objectid = "symbol_front_power";
         } else {
-            assert(0, "<unknown string>" + self.origin);
+            assert(0, "<dev string:x235>" + self.origin);
         }
     }
     mdl_symbol = util::spawn_model("tag_origin", self.origin, self.angles, 0, 1);
@@ -1470,7 +1469,7 @@ function blocker_init() {
                     if (targets[j].script_noteworthy == "2" || targets[j].script_noteworthy == "3" || targets[j].script_noteworthy == "4" || targets[j].script_noteworthy == "5" || targets[j].script_noteworthy == "6") {
                         targets[j] hide();
                         /#
-                            iprintlnbold("<unknown string>");
+                            iprintlnbold("<dev string:x259>");
                         #/
                     }
                 }
@@ -1784,7 +1783,7 @@ function blocker_trigger_think() {
     if (isdefined(level.no_board_repair) && level.no_board_repair) {
         return;
     }
-    println("<unknown string>");
+    println("<dev string:x262>");
     level endon(#"stop_blocker_think");
     cost = 10;
     if (isdefined(self.zombie_cost)) {
@@ -2566,7 +2565,7 @@ function zombie_bartear_audio_plus_fx_offset_repair_verticle(chunk) {
 // Size: 0x19c
 function flag_blocker() {
     if (!isdefined(self.script_flag_wait)) {
-        assertmsg("<unknown string>" + self.origin + "<unknown string>");
+        assertmsg("<dev string:x289>" + self.origin + "<dev string:x29c>");
         return;
     }
     if (!isdefined(level.flag[self.script_flag_wait])) {
@@ -2588,7 +2587,7 @@ function flag_blocker() {
         self triggerenable(0);
         return;
     }
-    assertmsg("<unknown string>" + self.origin + "<unknown string>" + type + "<unknown string>");
+    assertmsg("<dev string:x2cf>" + self.origin + "<dev string:x2e2>" + type + "<dev string:x2f1>");
 }
 
 // Namespace zm_blockers/zm_blockers

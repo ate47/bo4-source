@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_4333a03353e1e13a;
 #using scripts\zm\zm_orange_pablo.gsc;
 #using scripts\zm\zm_orange_util.gsc;
@@ -179,8 +178,8 @@ function trinket_quest_cleanup(var_a276c861, var_19e802fa) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x38>");
+                println("<dev string:x38>");
             }
         }
     #/
@@ -411,8 +410,8 @@ function function_bfb15d08() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x4f>");
+                println("<dev string:x4f>");
             }
         }
     #/
@@ -532,8 +531,8 @@ function function_b37bdeb4() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x64>");
+                println("<dev string:x64>");
             }
         }
     #/
@@ -615,8 +614,8 @@ function function_6ad0e23f() {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>");
-                    println("<unknown string>");
+                    iprintlnbold("<dev string:x7d>");
+                    println("<dev string:x7d>");
                 }
             }
         #/
@@ -624,8 +623,8 @@ function function_6ad0e23f() {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>" + level.meteor_counter + "<unknown string>");
-                    println("<unknown string>" + level.meteor_counter + "<unknown string>");
+                    iprintlnbold("<dev string:xb2>" + level.meteor_counter + "<dev string:xbc>");
+                    println("<dev string:xb2>" + level.meteor_counter + "<dev string:xbc>");
                 }
             }
         #/

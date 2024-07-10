@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_loadout.gsc;
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -32,10 +31,10 @@ function __init__() {
 // Size: 0x1e8
 function private on_begin(var_e84d35d1, var_16e6b8ea) {
     var_e9433d0 = struct::get_array(var_e84d35d1);
-    assert(var_e9433d0.size, "<unknown string>");
+    assert(var_e9433d0.size, "<dev string:x38>");
     var_64e17761 = [];
     foreach (var_93154b10 in var_e9433d0) {
-        assert(isdefined(var_93154b10.target), "<unknown string>");
+        assert(isdefined(var_93154b10.target), "<dev string:x67>");
         var_94d5ccbc = getentarray(var_93154b10.target, "targetname");
         var_64e17761 = arraycombine(var_64e17761, var_94d5ccbc, 0, 0);
     }

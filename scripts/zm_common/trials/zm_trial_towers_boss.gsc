@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2595527427ea71eb;
 #using scripts\zm\zm_towers_main_quest.gsc;
 #using scripts\zm\zm_towers_crowd.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 
 #namespace sound;
@@ -88,7 +87,7 @@ function play_on_tag(alias, tag, ends_on_death) {
     }
     org playsoundwithnotify(alias, "sounddone");
     if (isdefined(ends_on_death)) {
-        assert(ends_on_death, "<unknown string>");
+        assert(ends_on_death, "<dev string:x38>");
         wait_for_sounddone_or_death(org);
         waitframe(1);
     } else {

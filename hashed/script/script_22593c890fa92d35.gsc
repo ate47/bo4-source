@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\mp_common\item_supply_drop.gsc;
 #using scripts\core_common\player_insertion.gsc;
@@ -128,7 +127,7 @@ function function_9dc0fa01() {
             waitframe(1);
         }
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>");
         level thread function_37401a52();
     }
 
@@ -137,15 +136,15 @@ function function_9dc0fa01() {
     // Checksum 0x8a5db91b, Offset: 0x970
     // Size: 0x116
     function function_37401a52() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x8c>");
+        self endon("<dev string:x8c>");
         level endon(#"game_ended");
         while (true) {
             if (getdvarint(#"hash_533e1b9932a65628", 0)) {
                 zombie_plane = function_de4b0705();
                 if (isdefined(zombie_plane)) {
                     zombie_plane player_insertion::function_723d686d();
-                    zombie_plane_flight_goal = struct::get("<unknown string>", "<unknown string>");
+                    zombie_plane_flight_goal = struct::get("<dev string:x9e>", "<dev string:xb9>");
                     if (isdefined(zombie_plane_flight_goal)) {
                         zombie_plane thread function_3e59cbbb(zombie_plane_flight_goal);
                     }
@@ -161,10 +160,10 @@ function function_9dc0fa01() {
     // Checksum 0xb636d881, Offset: 0xa90
     // Size: 0x304
     function function_de4b0705() {
-        var_7206c0ef = getent("<unknown string>", "<unknown string>");
-        zombie_plane_flight_goal = struct::get("<unknown string>", "<unknown string>");
+        var_7206c0ef = getent("<dev string:xc6>", "<dev string:xb9>");
+        zombie_plane_flight_goal = struct::get("<dev string:x9e>", "<dev string:xb9>");
         if (!isdefined(level.deathcircle) && isdefined(var_7206c0ef) && isdefined(zombie_plane_flight_goal)) {
-            var_8a2c40d0 = struct::get("<unknown string>", "<unknown string>");
+            var_8a2c40d0 = struct::get("<dev string:xd6>", "<dev string:xb9>");
             if (isdefined(var_8a2c40d0)) {
                 center = var_8a2c40d0.origin;
                 radius = 9000;
@@ -175,7 +174,7 @@ function function_9dc0fa01() {
                 var_e3b87be8 = center[0] + radius * cos(angle + 180);
                 var_8e6c495b = center[1] + radius * sin(angle + 180);
                 zombie_plane_flight_goal.origin = (var_e3b87be8, var_8e6c495b, 10000);
-                zombie_plane = spawnvehicle("<unknown string>", var_7206c0ef.origin, vectortoangles(vectornormalize(zombie_plane_flight_goal.origin - var_7206c0ef.origin)));
+                zombie_plane = spawnvehicle("<dev string:xea>", var_7206c0ef.origin, vectortoangles(vectornormalize(zombie_plane_flight_goal.origin - var_7206c0ef.origin)));
                 if (!isdefined(zombie_plane)) {
                     return;
                 }

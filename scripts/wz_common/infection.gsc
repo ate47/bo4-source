@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_loadouts.gsc;
 #using scripts\wz_common\wz_ai_zonemgr.gsc;
 #using scripts\wz_common\wz_ai_utils.gsc;
@@ -379,8 +378,8 @@ function private function_cabd9ff3(eventstruct) {
             waitframe(1);
         }
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x6b>" + mapname + "<dev string:x7c>");
     }
 
     // Namespace infection/infection

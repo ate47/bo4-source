@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\player\player_stats.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -637,7 +636,7 @@ function private function_2b2ed159(entity, attackingplayer) {
     attackingplayer.var_e989badb = undefined;
     var_46df240b = hackendtime - var_9b4cc45c;
     if (isdefined(targetname) && isdefined(playernum)) {
-        var_6c52b424 = {#var_5f512560:attackingplayer getmatchrecordlifeindex(), #var_a9451146:attackingplayer.var_c48b30ab, #content_targeted:targetname, #var_e7f6239c:playernum, #duration:var_46df240b, #hack_success:1};
+        var_6c52b424 = {#life_id:attackingplayer getmatchrecordlifeindex(), #var_a9451146:attackingplayer.var_c48b30ab, #content_targeted:targetname, #var_e7f6239c:playernum, #duration:var_46df240b, #hack_success:1};
         function_92d1707f(#"hash_3c946cbb149411ad", var_6c52b424);
     }
 }
@@ -913,8 +912,8 @@ function private gadget_icepick_on(slot, weapon) {
     // Checksum 0x9f0e2fe5, Offset: 0x3b48
     // Size: 0x4e
     function private function_30fe16c7() {
-        self notify("hacked_sensor_dart");
-        self endon("hacked_sensor_dart");
+        self notify("<dev string:x38>");
+        self endon("<dev string:x38>");
         while (isdefined(self)) {
             function_73d5db3b(self);
             waitframe(1);

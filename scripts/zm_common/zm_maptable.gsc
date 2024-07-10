@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 
 #namespace zm_maptable;
@@ -28,7 +27,7 @@ function function_10672567() {
         }
         /#
             if (!isdefined(fields)) {
-                fields = getmapfields(mapname, "<unknown string>");
+                fields = getmapfields(mapname, "<dev string:x38>");
             }
         #/
         level.maptableentry = fields;

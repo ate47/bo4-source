@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\mp\gadgets\gadget_smart_cover.gsc;
 #using scripts\abilities\mp\gadgets\gadget_concertina_wire.gsc;
 #using scripts\mp_common\util.gsc;
@@ -175,11 +174,11 @@ function function_aafe4c74() {
     // Size: 0xde
     function debug_print() {
         while (true) {
-            iprintln("shamrock_enemy_collect" + level.activedrops);
-            iprintln("<unknown string>" + level.var_8b5ef67d);
-            iprintln("<unknown string>" + level.var_bb42ed2);
-            iprintln("<unknown string>" + level.var_9d4a9561);
-            iprintln("<unknown string>" + level.var_b8c2e6df);
+            iprintln("<dev string:x38>" + level.activedrops);
+            iprintln("<dev string:x43>" + level.var_8b5ef67d);
+            iprintln("<dev string:x53>" + level.var_bb42ed2);
+            iprintln("<dev string:x61>" + level.var_9d4a9561);
+            iprintln("<dev string:x6f>" + level.var_b8c2e6df);
             wait(5);
         }
     }
@@ -430,7 +429,7 @@ function function_c1780fc7() {
     function_998dec78();
     if (!isdefined(level.cleandepositpoints)) {
         /#
-            util::error("<unknown string>");
+            util::error("<dev string:x7a>");
         #/
         return;
     }

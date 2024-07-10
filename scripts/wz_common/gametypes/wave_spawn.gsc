@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\spawn.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;

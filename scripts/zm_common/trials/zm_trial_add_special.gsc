@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_round_spawning.gsc;
 #using scripts\core_common\system_shared.gsc;

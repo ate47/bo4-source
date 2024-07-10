@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\scene_shared.gsc;
@@ -257,7 +256,7 @@ function water_vox() {
     level endon(#"game_ended");
     interval = mpdialog_value("underwaterInterval", float(function_60d95f53()) / 1000);
     if (interval <= 0) {
-        assert(interval > 0, "enemyContactInterval");
+        assert(interval > 0, "<dev string:x38>");
         return;
     }
     while (true) {
@@ -556,7 +555,7 @@ function event_handler[grenade_fire] function_54ca82b9(eventstruct) {
 function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
     level endon(#"game_ended");
     if (waittime <= 0) {
-        assert(waittime > 0, "warmachineWeaponUse");
+        assert(waittime > 0, "<dev string:x80>");
         return;
     }
     while (true) {
@@ -1396,10 +1395,10 @@ function game_end_vox(winner, tie) {
     // Checksum 0xcd5c0132, Offset: 0x5c78
     // Size: 0x408
     function devgui_think() {
-        setdvar(#"devgui_mpdialog", "<unknown string>");
-        setdvar(#"testalias_player", "<unknown string>");
-        setdvar(#"testalias_taacom", "<unknown string>");
-        setdvar(#"testalias_commander", "<unknown string>");
+        setdvar(#"devgui_mpdialog", "<dev string:xbc>");
+        setdvar(#"testalias_player", "<dev string:xbf>");
+        setdvar(#"testalias_taacom", "<dev string:xdc>");
+        setdvar(#"testalias_commander", "<dev string:xf8>");
         while (true) {
             wait(1);
             player = util::gethostplayer();
@@ -1407,7 +1406,7 @@ function game_end_vox(winner, tie) {
                 continue;
             }
             spacing = getdvarfloat(#"testdialog_spacing", 0.25);
-            switch (getdvarstring(#"devgui_mpdialog", "<unknown string>")) {
+            switch (getdvarstring(#"devgui_mpdialog", "<dev string:xbc>")) {
             case #"hash_7912e80189f9c6":
                 player thread test_player_dialog(0);
                 player thread test_taacom_dialog(spacing);
@@ -1447,7 +1446,7 @@ function game_end_vox(winner, tie) {
                 player thread play_conv_other_other();
                 break;
             }
-            setdvar(#"devgui_mpdialog", "<unknown string>");
+            setdvar(#"devgui_mpdialog", "<dev string:xbc>");
         }
     }
 
@@ -1474,7 +1473,7 @@ function game_end_vox(winner, tie) {
             delay = 0;
         }
         wait(delay);
-        self playsoundontag(getdvarstring(#"testalias_player", "<unknown string>"), "<unknown string>");
+        self playsoundontag(getdvarstring(#"testalias_player", "<dev string:xbc>"), "<dev string:x11b>");
     }
 
     // Namespace dialog_shared/dialog_shared
@@ -1486,7 +1485,7 @@ function game_end_vox(winner, tie) {
             delay = 0;
         }
         wait(delay);
-        self playlocalsound(getdvarstring(#"testalias_taacom", "<unknown string>"));
+        self playlocalsound(getdvarstring(#"testalias_taacom", "<dev string:xbc>"));
     }
 
     // Namespace dialog_shared/dialog_shared
@@ -1498,7 +1497,7 @@ function game_end_vox(winner, tie) {
             delay = 0;
         }
         wait(delay);
-        self playlocalsound(getdvarstring(#"testalias_commander", "<unknown string>"));
+        self playlocalsound(getdvarstring(#"testalias_commander", "<dev string:xbc>"));
     }
 
     // Namespace dialog_shared/dialog_shared
@@ -1507,7 +1506,7 @@ function game_end_vox(winner, tie) {
     // Size: 0x4c
     function play_test_dialog(dialogkey) {
         dialogalias = self get_player_dialog_alias(dialogkey);
-        self playsoundontag(dialogalias, "<unknown string>");
+        self playsoundontag(dialogalias, "<dev string:x11b>");
     }
 
     // Namespace dialog_shared/dialog_shared
@@ -1517,25 +1516,25 @@ function game_end_vox(winner, tie) {
     function response_key() {
         switch (self getmpdialogname()) {
         case #"assassin":
-            return "<unknown string>";
+            return "<dev string:x124>";
         case #"grenadier":
-            return "<unknown string>";
+            return "<dev string:x12e>";
         case #"outrider":
-            return "<unknown string>";
+            return "<dev string:x13a>";
         case #"prophet":
-            return "<unknown string>";
+            return "<dev string:x145>";
         case #"pyro":
-            return "<unknown string>";
+            return "<dev string:x154>";
         case #"reaper":
-            return "<unknown string>";
+            return "<dev string:x160>";
         case #"ruin":
-            return "<unknown string>";
+            return "<dev string:x169>";
         case #"seraph":
-            return "<unknown string>";
+            return "<dev string:x175>";
         case #"trapper":
-            return "<unknown string>";
+            return "<dev string:x180>";
         }
-        return "<unknown string>";
+        return "<dev string:xbc>";
     }
 
     // Namespace dialog_shared/dialog_shared
@@ -1544,12 +1543,12 @@ function game_end_vox(winner, tie) {
     // Size: 0x13c
     function play_conv_self_other() {
         num = randomintrange(0, 4);
-        self play_test_dialog("<unknown string>" + num);
+        self play_test_dialog("<dev string:x18a>" + num);
         wait(4);
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
-                player play_test_dialog("<unknown string>" + self response_key() + num);
+                player play_test_dialog("<dev string:x197>" + self response_key() + num);
                 break;
             }
         }
@@ -1564,12 +1563,12 @@ function game_end_vox(winner, tie) {
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
-                player play_test_dialog("<unknown string>" + num);
+                player play_test_dialog("<dev string:x18a>" + num);
                 break;
             }
         }
         wait(4);
-        self play_test_dialog("<unknown string>" + player response_key() + num);
+        self play_test_dialog("<dev string:x197>" + player response_key() + num);
     }
 
     // Namespace dialog_shared/dialog_shared
@@ -1581,7 +1580,7 @@ function game_end_vox(winner, tie) {
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
-                player play_test_dialog("<unknown string>" + num);
+                player play_test_dialog("<dev string:x18a>" + num);
                 firstplayer = player;
                 break;
             }
@@ -1589,7 +1588,7 @@ function game_end_vox(winner, tie) {
         wait(4);
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
-                player play_test_dialog("<unknown string>" + firstplayer response_key() + num);
+                player play_test_dialog("<dev string:x197>" + firstplayer response_key() + num);
                 break;
             }
         }

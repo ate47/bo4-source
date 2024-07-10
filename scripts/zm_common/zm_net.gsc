@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\struct.gsc;
 
@@ -43,7 +42,7 @@ function network_choke_safe(id) {
 // Checksum 0xb02a7436, Offset: 0x198
 // Size: 0xf8
 function network_choke_action(id, choke_action, arg1, arg2, arg3) {
-    assert(isdefined(level.zombie_network_choke_ids_max[id]), "<unknown string>" + id + "<unknown string>");
+    assert(isdefined(level.zombie_network_choke_ids_max[id]), "<dev string:x38>" + id + "<dev string:x4a>");
     while (!network_choke_safe(id)) {
         waitframe(1);
     }

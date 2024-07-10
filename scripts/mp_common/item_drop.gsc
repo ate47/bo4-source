@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_world_util.gsc;
 #using scripts\mp_common\item_world.gsc;
 #using script_6b993fdc7adc35ec;
@@ -61,7 +60,7 @@ function __init__() {
     // Checksum 0xf28da510, Offset: 0x550
     // Size: 0x54
     function private function_344f8c02() {
-        adddebugcommand("<unknown string>" + util::get_map_name() + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + util::get_map_name() + "<dev string:x48>");
         level thread function_60c9a9e1();
     }
 
@@ -899,7 +898,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
             if (isdefined(item.itementry.baseweapon)) {
                 item = function_4ba8fde(item.itementry.baseweapon);
             } else {
-                assert(0, "<unknown string>");
+                assert(0, "<dev string:x7c>");
             }
         }
         item.attachments = originalattachments;
@@ -1047,7 +1046,7 @@ function function_ba4c90d9(item) {
         sec = getdvarint(#"hash_6c3e4a7cf7546b8f", 10);
         framespersec = int(1 / float(function_60d95f53()) / 1000);
         sphere(origin, radius, color, 1, 0, 10, framespersec * sec);
-        recordsphere(origin, radius, color, "<unknown string>");
+        recordsphere(origin, radius, color, "<dev string:xa3>");
     }
 
     // Namespace item_drop/item_drop
@@ -1061,7 +1060,7 @@ function function_ba4c90d9(item) {
         sec = getdvarint(#"hash_6c3e4a7cf7546b8f", 10);
         framespersec = int(1 / float(function_60d95f53()) / 1000);
         line(start, end, color, 1, 0, framespersec * sec);
-        recordline(start, end, color, "<unknown string>");
+        recordline(start, end, color, "<dev string:xa3>");
     }
 
 #/

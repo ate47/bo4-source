@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_1d29de500c266470;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -145,14 +144,14 @@ function private function_a7e644f6(eventstruct) {
         mapname = util::get_map_name();
         waitframe(1);
         waitframe(1);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x64>");
+        adddebugcommand("<dev string:x89>");
+        adddebugcommand("<dev string:xad>" + mapname + "<dev string:xbb>");
+        adddebugcommand("<dev string:xf2>" + mapname + "<dev string:x103>");
+        adddebugcommand("<dev string:xf2>" + mapname + "<dev string:x139>");
         waitframe(1);
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x17a>" + mapname + "<dev string:x18a>");
     }
 
 #/

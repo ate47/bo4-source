@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_util.gsc;
 #using scripts\mp\mp_geothermal_sound.gsc;
 #using scripts\mp\mp_geothermal_fx.gsc;

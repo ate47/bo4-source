@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace trigger;
 
 // Namespace trigger/trigger_shared

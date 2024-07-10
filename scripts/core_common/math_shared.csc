@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace math;
 
 // Namespace math/math_shared

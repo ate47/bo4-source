@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_silo_sound;
 
 // Namespace mp_silo_sound/mp_silo_sound

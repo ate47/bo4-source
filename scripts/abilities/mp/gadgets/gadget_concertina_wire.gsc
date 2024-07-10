@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\abilities\gadgets\gadget_concertina_wire.gsc;

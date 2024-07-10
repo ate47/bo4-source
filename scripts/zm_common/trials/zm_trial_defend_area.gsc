@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2595527427ea71eb;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;
@@ -224,7 +223,7 @@ function private damage_watcher(var_a4a28ac7) {
     }
     while (true) {
         /#
-            if (isgodmode(self) || self isinmovemode("<unknown string>", "<unknown string>")) {
+            if (isgodmode(self) || self isinmovemode("<dev string:x38>", "<dev string:x41>")) {
                 waitframe(1);
                 continue;
             }

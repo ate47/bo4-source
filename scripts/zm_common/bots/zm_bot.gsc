@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\bots\zm_bot_position.gsc;
 #using scripts\zm_common\bots\zm_bot_action.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -202,7 +201,7 @@ function order_bot(bot) {
     }
     if (isdefined(target)) {
         /#
-            iprintlnbold(bot.name + "<unknown string>" + target.zombie_weapon_upgrade);
+            iprintlnbold(bot.name + "<dev string:x38>" + target.zombie_weapon_upgrade);
         #/
         bot bot::set_interact(target);
         return;
@@ -230,7 +229,7 @@ function order_bot(bot) {
     }
     if (isdefined(target)) {
         /#
-            iprintlnbold(bot.name + "<unknown string>");
+            iprintlnbold(bot.name + "<dev string:x47>");
         #/
         bot bot::set_interact(target);
         return;

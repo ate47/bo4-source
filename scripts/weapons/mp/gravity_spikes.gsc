@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\weapons\gravity_spikes.gsc;
 #using scripts\core_common\system_shared.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_770e34dfe9b07f3c;
 #using script_1496ada77dc2f2e2;
 #using scripts\zm_common\trials\zm_trial_restrict_controls.gsc;
@@ -77,9 +76,9 @@ function event_handler[level_init] levelinit(eventstruct) {
     } else if (var_189d26ca == "") {
         var_189d26ca = util::get_map_name() + "_default";
     }
-    assert(var_189d26ca != "<unknown string>", "<unknown string>");
+    assert(var_189d26ca != "<dev string:x38>", "<dev string:x3b>");
     level.var_6d87ac05 = zm_trial::function_d02ffd(var_189d26ca);
-    assert(isdefined(level.var_6d87ac05), "<unknown string>");
+    assert(isdefined(level.var_6d87ac05), "<dev string:x53>");
     /#
         function_9a6b2309();
     #/
@@ -260,31 +259,31 @@ function private function_b8839207(e_door, n_cost) {
     function private function_9a6b2309() {
         assert(isdefined(level.var_6d87ac05));
         foreach (round_info in level.var_6d87ac05.rounds) {
-            adddebugcommand("<unknown string>" + round_info.round + "<unknown string>" + function_9e72a96(round_info.name) + "<unknown string>" + round_info.round + "<unknown string>" + round_info.round + "<unknown string>");
+            adddebugcommand("<dev string:xeb>" + round_info.round + "<dev string:x10e>" + function_9e72a96(round_info.name) + "<dev string:x112>" + round_info.round + "<dev string:x116>" + round_info.round + "<dev string:x138>");
         }
         for (i = 0; i <= 3; i++) {
-            adddebugcommand("<unknown string>" + i + "<unknown string>" + i + "<unknown string>");
+            adddebugcommand("<dev string:x13d>" + i + "<dev string:x162>" + i + "<dev string:x138>");
         }
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x186>");
+        adddebugcommand("<dev string:x1d4>");
+        adddebugcommand("<dev string:x21a>");
+        adddebugcommand("<dev string:x275>");
+        adddebugcommand("<dev string:x2ca>");
+        adddebugcommand("<dev string:x323>");
+        adddebugcommand("<dev string:x37c>");
         while (true) {
-            string = getdvarstring(#"hash_57e97658cd1d89e2", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_57e97658cd1d89e2", "<dev string:x38>");
+            cmd = strtok(string, "<dev string:x3c9>");
             if (cmd.size > 0) {
                 round_number = int(cmd[0]);
                 if (isdefined(level.var_b9714a5d)) {
                     [[ level.var_b9714a5d ]](round_number);
                 }
                 level thread zm_game_module::zombie_goto_round(round_number);
-                setdvar(#"hash_57e97658cd1d89e2", "<unknown string>");
+                setdvar(#"hash_57e97658cd1d89e2", "<dev string:x38>");
             }
-            string = getdvarstring(#"hash_25a4cfc19b09ae41", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_25a4cfc19b09ae41", "<dev string:x38>");
+            cmd = strtok(string, "<dev string:x3c9>");
             if (cmd.size > 0) {
                 strikes = int(cmd[0]);
                 if (strikes == 3) {
@@ -293,33 +292,33 @@ function private function_b8839207(e_door, n_cost) {
                 } else {
                     zm_trial::function_fe2ecb6(strikes);
                 }
-                setdvar(#"hash_25a4cfc19b09ae41", "<unknown string>");
+                setdvar(#"hash_25a4cfc19b09ae41", "<dev string:x38>");
             }
-            string = getdvarstring(#"hash_2446ebd1d15f0dab", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_2446ebd1d15f0dab", "<dev string:x38>");
+            cmd = strtok(string, "<dev string:x3c9>");
             if (cmd.size > 0) {
                 complete_current_round();
-                setdvar(#"hash_2446ebd1d15f0dab", "<unknown string>");
+                setdvar(#"hash_2446ebd1d15f0dab", "<dev string:x38>");
             }
-            string = getdvarstring(#"hash_5a32209acb1f54a0", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_5a32209acb1f54a0", "<dev string:x38>");
+            cmd = strtok(string, "<dev string:x3c9>");
             if (cmd.size > 0) {
                 zm_trial::fail(undefined, getplayers());
-                setdvar(#"hash_5a32209acb1f54a0", "<unknown string>");
+                setdvar(#"hash_5a32209acb1f54a0", "<dev string:x38>");
             }
-            string = getdvarstring(#"hash_1576c65ebdf43de0", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_1576c65ebdf43de0", "<dev string:x38>");
+            cmd = strtok(string, "<dev string:x3c9>");
             if (cmd.size > 0) {
                 foreach (player in getplayers()) {
-                    player zm_stats::function_49469f35("<unknown string>", 0);
-                    player zm_stats::function_49469f35("<unknown string>", 0);
-                    player zm_stats::function_49469f35("<unknown string>", 0);
+                    player zm_stats::function_49469f35("<dev string:x3cd>", 0);
+                    player zm_stats::function_49469f35("<dev string:x3e8>", 0);
+                    player zm_stats::function_49469f35("<dev string:x403>", 0);
                 }
                 level.var_ee7ca64 = [];
-                setdvar(#"hash_1576c65ebdf43de0", "<unknown string>");
+                setdvar(#"hash_1576c65ebdf43de0", "<dev string:x38>");
             }
-            string = getdvarstring(#"hash_2f6ef50454652bf2", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_2f6ef50454652bf2", "<dev string:x38>");
+            cmd = strtok(string, "<dev string:x3c9>");
             if (cmd.size > 0) {
                 challenge = function_1201b5da(cmd[0]);
                 foreach (player in getplayers()) {
@@ -328,7 +327,7 @@ function private function_b8839207(e_door, n_cost) {
                     curr_time = gettime();
                     player zm_stats::function_49469f35(stat_name, curr_time);
                 }
-                setdvar(#"hash_2f6ef50454652bf2", "<unknown string>");
+                setdvar(#"hash_2f6ef50454652bf2", "<dev string:x38>");
             }
             if (getdvarint(#"hash_145033f5271f2651", 0) == 1) {
                 zm_trial_util::function_9c1092f6();

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\weapons\hacker_tool.gsc;
 #using scripts\mp_common\util.gsc;
@@ -619,7 +618,7 @@ function function_64b435c4(ai) {
                 continue;
             }
             type = isdefined(ai.classname) ? "" + ai.classname : "";
-            println("<unknown string>" + type + "<unknown string>");
+            println("<dev string:x38>" + type + "<dev string:x3e>");
             playfxontag(sniper_glint, ai, "tag_eye");
         }
     }

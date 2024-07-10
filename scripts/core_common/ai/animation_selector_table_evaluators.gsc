@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\animation_selector_table.gsc;
 
 #namespace animation_selector_table_evaluators;
@@ -39,8 +38,8 @@ function private function_aa7530df(entity, animation) {
     endpoint = entity localtoworldcoords(localdeltavector);
     forwardpoint = endpoint + vectorscale(forwarddir, 100);
     /#
-        recordline(entity.origin, endpoint, (0, 0, 1), "<unknown string>", entity);
-        recordline(endpoint, forwardpoint, (1, 0.5, 0), "<unknown string>", entity);
+        recordline(entity.origin, endpoint, (0, 0, 1), "<dev string:x38>", entity);
+        recordline(endpoint, forwardpoint, (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     if (entity maymovefrompointtopoint(endpoint, forwardpoint, 1, 1)) {
         pixendevent();
@@ -71,14 +70,14 @@ function private evaluator_checkanimationagainstgeo(entity, animation) {
     midpoint = entity localtoworldcoords(localdeltahalfvector);
     midpoint = (midpoint[0], midpoint[1], entity.origin[2]);
     /#
-        recordline(entity.origin, midpoint, (1, 0.5, 0), "<unknown string>", entity);
+        recordline(entity.origin, midpoint, (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     if (entity maymovetopoint(midpoint, 1, 1)) {
         localdeltavector = getmovedelta(animation, 0, 1, entity);
         endpoint = entity localtoworldcoords(localdeltavector);
         endpoint = (endpoint[0], endpoint[1], entity.origin[2]);
         /#
-            recordline(midpoint, endpoint, (1, 0.5, 0), "<unknown string>", entity);
+            recordline(midpoint, endpoint, (1, 0.5, 0), "<dev string:x38>", entity);
         #/
         if (entity maymovefrompointtopoint(midpoint, endpoint, 1, 1)) {
             pixendevent();
@@ -128,7 +127,7 @@ function private evaluator_checkanimationforovershootinggoal(entity, animation) 
         }
     }
     /#
-        record3dtext("<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+        record3dtext("<dev string:x45>", entity.origin, (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     pixendevent();
     return false;
@@ -146,7 +145,7 @@ function private evaluator_checkanimationagainstnavmesh(entity, animation) {
         return true;
     }
     /#
-        record3dtext("<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+        record3dtext("<dev string:x5e>", entity.origin, (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     return false;
 }
@@ -178,8 +177,8 @@ function private evaluator_checkanimationarrivalposition(entity, animation) {
 // Checksum 0xeae94b3d, Offset: 0xc60
 // Size: 0x194
 function private evaluator_findfirstvalidanimation(entity, animations, tests) {
-    assert(isarray(animations), "<unknown string>");
-    assert(isarray(tests), "<unknown string>");
+    assert(isarray(animations), "<dev string:x75>");
+    assert(isarray(tests), "<dev string:xb5>");
     foreach (aliasanimations in animations) {
         if (aliasanimations.size > 0) {
             valid = 1;
@@ -241,7 +240,7 @@ function private evaluatehumanturnanimations(entity, animations) {
         }
     #/
     /#
-        record3dtext("<unknown string>" + gettime() + "<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+        record3dtext("<dev string:xfe>" + gettime() + "<dev string:x101>", entity.origin, (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     if (animations.size > 0) {
         return evaluator_findfirstvalidanimation(entity, animations, array(&evaluator_checkanimationforovershootinggoal, &evaluator_checkanimationagainstgeo, &evaluator_checkanimationagainstnavmesh));

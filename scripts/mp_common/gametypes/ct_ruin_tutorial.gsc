@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
 #using scripts\mp_common\gametypes\ct_vo.gsc;
@@ -1737,16 +1736,16 @@ function function_17ab2327() {
     function function_421135df() {
         level endon(#"combattraining_logic_finished");
         sessionmode = currentsessionmode();
-        setdvar(#"hash_6f59f2ade883b8e2", "stop_killstreak_collision");
+        setdvar(#"hash_6f59f2ade883b8e2", "<dev string:x38>");
         if (sessionmode != 4) {
-            adddebugcommand("stop_permanent_collision");
-            adddebugcommand("s_beacon_1_path");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x3b>");
+            adddebugcommand("<dev string:x98>");
+            adddebugcommand("<dev string:xff>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_6f59f2ade883b8e2", "stop_killstreak_collision");
-            if (cmd == "stop_killstreak_collision") {
+            cmd = getdvarstring(#"hash_6f59f2ade883b8e2", "<dev string:x38>");
+            if (cmd == "<dev string:x38>") {
                 continue;
             }
             e_player = level.players[0];
@@ -1762,7 +1761,7 @@ function function_17ab2327() {
                 e_player dodamage(1000, e_player.origin);
                 break;
             }
-            setdvar(#"hash_6f59f2ade883b8e2", "stop_killstreak_collision");
+            setdvar(#"hash_6f59f2ade883b8e2", "<dev string:x38>");
         }
     }
 

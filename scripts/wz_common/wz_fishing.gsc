@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\laststand_warzone.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
 #using scripts\core_common\flagsys_shared.gsc;
@@ -250,7 +249,7 @@ function function_4cfd3896(activator, laststate, state) {
     if (isdefined(self.buoy)) {
         self.buoy show();
     } else {
-        assert(isdefined(self.buoy), "<unknown string>");
+        assert(isdefined(self.buoy), "<dev string:x38>");
     }
     self.fisherman = activator;
     self.dropping_item = 0;

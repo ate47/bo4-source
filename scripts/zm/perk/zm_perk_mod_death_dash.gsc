@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\zm\perk\zm_perk_death_dash.gsc;
 #using scripts\zm_common\zm_perks.gsc;

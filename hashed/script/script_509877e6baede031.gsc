@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_sq.gsc;
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\core_common\scene_shared.gsc;
@@ -151,7 +150,7 @@ function function_a546fd97() {
         add_outtime = s_notify.attacker aat::getaatonweapon(s_notify.weapon);
         if (isdefined(add_outtime) && add_outtime.name === "zm_aat_kill_o_watt") {
             /#
-                getplayers()[0] iprintln("<unknown string>");
+                getplayers()[0] iprintln("<dev string:x38>");
             #/
             level.var_2363fbdb += 1;
             self.e_phone scene::play("ring");

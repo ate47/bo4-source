@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_firing_range.gsc;
 #using scripts\wz_common\character_unlock_seraph_fixup.gsc;
 #using scripts\wz_common\character_unlock_fixup.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_stats.gsc;
 #using scripts\zm_common\zm_bgb.gsc;
 #using scripts\zm_common\zm.gsc;
@@ -45,7 +44,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_head_scan/zm_bgb_head_scan
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0xe06e9db0, Offset: 0x1c0
 // Size: 0x18e
 function function_ce76fa9f(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace ct_shared_aar_medals;
@@ -56,7 +55,7 @@ class cct_shared_aar_medals : cluielem {
             set_data(localclientnum, "_state", 4);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals

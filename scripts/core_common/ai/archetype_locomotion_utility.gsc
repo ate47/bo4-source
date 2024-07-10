@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\math_shared.gsc;
 #using scripts\core_common\ai\archetype_utility.gsc;
 #using scripts\core_common\ai\archetype_cover_utility.gsc;
@@ -322,7 +321,7 @@ function private locomotionshouldtraverse(behaviortreeentity) {
     startnode = behaviortreeentity.traversestartnode;
     if (isdefined(startnode) && behaviortreeentity shouldstarttraversal()) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
+            record3dtext("<dev string:x38>", self.origin, (1, 0, 0), "<dev string:x4d>");
         #/
         return true;
     }
@@ -338,7 +337,7 @@ function private locomotionshouldparametrictraverse(entity) {
     if (isdefined(startnode) && entity shouldstarttraversal()) {
         traversaltype = entity getblackboardattribute("_parametric_traversal_type");
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
+            record3dtext("<dev string:x38>", self.origin, (1, 0, 0), "<dev string:x4d>");
         #/
         return (traversaltype != "unknown_traversal");
     }
@@ -353,7 +352,7 @@ function private function_5ef5b35a(behaviortreeentity) {
     startnode = behaviortreeentity.traversestartnode;
     if (isdefined(startnode) && behaviortreeentity function_420d1e6b()) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
+            record3dtext("<dev string:x56>", self.origin, (1, 0, 0), "<dev string:x4d>");
         #/
         return true;
     }
@@ -369,7 +368,7 @@ function private function_8a8c5d44(entity) {
     if (isdefined(startnode) && entity function_420d1e6b()) {
         traversaltype = entity getblackboardattribute("_parametric_traversal_type");
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
+            record3dtext("<dev string:x56>", self.origin, (1, 0, 0), "<dev string:x4d>");
         #/
         return (traversaltype != "unknown_traversal");
     }
@@ -402,9 +401,9 @@ function traverseactionstart(behaviortreeentity, asmstatename) {
     /#
         result = behaviortreeentity astsearch(asmstatename);
         if (!isdefined(result[#"animation"])) {
-            record3dtext("<unknown string>", self.origin + (0, 0, 16), (1, 0, 0), "<unknown string>");
+            record3dtext("<dev string:x6e>", self.origin + (0, 0, 16), (1, 0, 0), "<dev string:x4d>");
         } else {
-            record3dtext("<unknown string>" + (ishash(result[#"animation"]) ? function_9e72a96(result[#"animation"]) : result[#"animation"]), self.origin + (0, 0, 16), (1, 0, 0), "<unknown string>");
+            record3dtext("<dev string:xa6>" + (ishash(result[#"animation"]) ? function_9e72a96(result[#"animation"]) : result[#"animation"]), self.origin + (0, 0, 16), (1, 0, 0), "<dev string:x4d>");
         }
     #/
     animationstatenetworkutility::requeststate(behaviortreeentity, asmstatename);

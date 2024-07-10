@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -472,10 +471,10 @@ function private function_dad4891b(player_in) {
             x = 0;
         }
         var_aa917a22 = newdebughudelem();
-        var_aa917a22.alignx = "<unknown string>";
-        var_aa917a22.horzalign = "<unknown string>";
-        var_aa917a22.aligny = "<unknown string>";
-        var_aa917a22.vertalign = "<unknown string>";
+        var_aa917a22.alignx = "<dev string:x38>";
+        var_aa917a22.horzalign = "<dev string:x38>";
+        var_aa917a22.aligny = "<dev string:x3f>";
+        var_aa917a22.vertalign = "<dev string:x48>";
         var_aa917a22.y = y;
         var_aa917a22.x = x;
         return var_aa917a22;
@@ -486,7 +485,7 @@ function private function_dad4891b(player_in) {
     // Checksum 0x4ee0d9fd, Offset: 0x1948
     // Size: 0x6a
     function function_af42554f(debug_info) {
-        return debug_info.name + "<unknown string>" + (isdefined(self [[ debug_info.condition ]]()) && self [[ debug_info.condition ]]() ? "<unknown string>" : "<unknown string>");
+        return debug_info.name + "<dev string:x4e>" + (isdefined(self [[ debug_info.condition ]]()) && self [[ debug_info.condition ]]() ? "<dev string:x54>" : "<dev string:x5f>");
     }
 
     // Namespace zm_quick_spawning/zm_quick_spawning
@@ -494,7 +493,7 @@ function private function_dad4891b(player_in) {
     // Checksum 0xd68a6b0c, Offset: 0x19c0
     // Size: 0x32
     function function_bc774350(debug_info) {
-        return debug_info.name + "<unknown string>" + level.var_d4a79133;
+        return debug_info.name + "<dev string:x4e>" + level.var_d4a79133;
     }
 
     // Namespace zm_quick_spawning/zm_quick_spawning
@@ -503,10 +502,10 @@ function private function_dad4891b(player_in) {
     // Size: 0xb4
     function function_766c006e(debug_info) {
         if (!isdefined(self.var_d18573c9)) {
-            return (debug_info.name + "<unknown string>");
+            return (debug_info.name + "<dev string:x6a>");
         }
         time_left = max(self.var_d18573c9 - gettime(), 0);
-        returnstring = debug_info.name + "<unknown string>" + (time_left < 0 ? "<unknown string>" : "<unknown string>");
+        returnstring = debug_info.name + "<dev string:x4e>" + (time_left < 0 ? "<dev string:x82>" : "<dev string:x7d>");
         returnstring += time_left;
         return returnstring;
     }
@@ -516,12 +515,12 @@ function private function_dad4891b(player_in) {
     // Checksum 0x90906d57, Offset: 0x1ac0
     // Size: 0x87c
     function function_af31614c() {
-        function_1dbfb733("<unknown string>", "<unknown string>", &function_12d4cf28, &function_af42554f);
-        function_1dbfb733("<unknown string>", "<unknown string>", &function_15e9bcbb, &function_af42554f);
-        function_1dbfb733("<unknown string>", "<unknown string>", undefined, &function_bc774350);
-        function_1dbfb733("<unknown string>", "<unknown string>", &function_1dfb06de, &function_af42554f);
-        function_1dbfb733("<unknown string>", "<unknown string>", &function_f34e4a6b, &function_af42554f);
-        function_1dbfb733("<unknown string>", "<unknown string>", undefined, &function_766c006e);
+        function_1dbfb733("<dev string:x87>", "<dev string:x90>", &function_12d4cf28, &function_af42554f);
+        function_1dbfb733("<dev string:x87>", "<dev string:xa2>", &function_15e9bcbb, &function_af42554f);
+        function_1dbfb733("<dev string:x87>", "<dev string:xaa>", undefined, &function_bc774350);
+        function_1dbfb733("<dev string:xc2>", "<dev string:xcb>", &function_1dfb06de, &function_af42554f);
+        function_1dbfb733("<dev string:xc2>", "<dev string:xd3>", &function_f34e4a6b, &function_af42554f);
+        function_1dbfb733("<dev string:xc2>", "<dev string:xed>", undefined, &function_766c006e);
         while (true) {
             var_f6c7efda = getplayers().size;
             waitframe(1);
@@ -539,7 +538,7 @@ function private function_dad4891b(player_in) {
                 foreach (var_42e5f033 in level.var_fb3f2839) {
                     type = var_42e5f033[0].type;
                     var_aa917a22 = create_hudelem(current_y);
-                    var_aa917a22 settext("<unknown string>" + type + "<unknown string>");
+                    var_aa917a22 settext("<dev string:x101>" + type + "<dev string:x109>");
                     if (!isdefined(level.var_3d62686d)) {
                         level.var_3d62686d = [];
                     } else if (!isarray(level.var_3d62686d)) {
@@ -547,7 +546,7 @@ function private function_dad4891b(player_in) {
                     }
                     level.var_3d62686d[level.var_3d62686d.size] = var_aa917a22;
                     current_y += 10;
-                    if (type == "<unknown string>") {
+                    if (type == "<dev string:xc2>") {
                         current_x = 0;
                         foreach (player in level.players) {
                             var_aa917a22 = create_hudelem(current_y, current_x);
@@ -564,7 +563,7 @@ function private function_dad4891b(player_in) {
                     }
                     foreach (var_dc66eccb in var_42e5f033) {
                         current_x = 0;
-                        if (var_dc66eccb.type == "<unknown string>") {
+                        if (var_dc66eccb.type == "<dev string:xc2>") {
                             foreach (player in level.players) {
                                 var_aa917a22 = create_hudelem(current_y, current_x);
                                 var_aa917a22.debug_info = var_dc66eccb;

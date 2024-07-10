@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_35d3717bf2cbee8f;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -73,8 +72,8 @@ function __init__() {
     // Checksum 0xa16a7cdb, Offset: 0x560
     // Size: 0x3c
     function function_281b4073() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x90>");
     }
 
     // Namespace zm_hero_weapon/zm_hero_weapon
@@ -87,7 +86,7 @@ function __init__() {
         weapon_level = int(var_b4b7833b) - 1;
         self.var_72d6f15d = weapon_level;
         self function_23978edd();
-        self clientfield::set_player_uimodel("<unknown string>", self.var_72d6f15d);
+        self clientfield::set_player_uimodel("<dev string:xea>", self.var_72d6f15d);
         self hero_give_weapon(self.var_fd05e363, 1);
         self.var_c9279111 = 0;
         self.var_821c9bf3 = 0;
@@ -512,7 +511,7 @@ function function_9a100883(weapon_level, enabled) {
     self hero_give_weapon(level.hero_weapon[self.var_b708af7b][weapon_level], enabled, 1);
     self.var_da2f5f0b = 0;
     /#
-        self zm_challenges::debug_print("<unknown string>");
+        self zm_challenges::debug_print("<dev string:xfe>");
     #/
     self zm_stats::increment_challenge_stat(#"special_weapon_levels");
     self.var_39b77a76 = undefined;
@@ -524,8 +523,8 @@ function function_9a100883(weapon_level, enabled) {
 // Size: 0x4a4
 function function_6bba3829(e_player, ai_enemy) {
     /#
-        var_ea65bd9c = getdvarstring(#"hash_16e05c0b86ebb83d", "<unknown string>");
-        if (var_ea65bd9c == "<unknown string>") {
+        var_ea65bd9c = getdvarstring(#"hash_16e05c0b86ebb83d", "<dev string:x12e>");
+        if (var_ea65bd9c == "<dev string:x138>") {
             return;
         }
     #/
@@ -588,8 +587,8 @@ function function_6bba3829(e_player, ai_enemy) {
 // Size: 0x644
 function function_3fe4a02e(e_player, n_points, str_event) {
     /#
-        var_ea65bd9c = getdvarstring(#"hash_16e05c0b86ebb83d", "<unknown string>");
-        if (var_ea65bd9c == "<unknown string>") {
+        var_ea65bd9c = getdvarstring(#"hash_16e05c0b86ebb83d", "<dev string:x12e>");
+        if (var_ea65bd9c == "<dev string:x138>") {
             return;
         }
     #/
@@ -877,7 +876,7 @@ function show_hint(w_hero, str_hint, var_bdc24d5f = 0) {
     if (!(isdefined(self.var_2a2832c6[w_hero.name]) && self.var_2a2832c6[w_hero.name])) {
         /#
             if (isdefined(self.hintelem)) {
-                self.hintelem settext("<unknown string>");
+                self.hintelem settext("<dev string:x143>");
                 self.hintelem destroy();
             }
         #/

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\zm\zm_white_portals.gsc;
 #using scripts\zm\zm_white_main_quest.gsc;
@@ -172,7 +171,7 @@ function insanity_mode_step1_setup(var_5ea5c94d) {
                 level waittill(#"start_of_round");
                 level flag::clear(#"hash_13cf89176254a394");
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x38>");
                 #/
             }
         }
@@ -202,7 +201,7 @@ function function_d7fe6be2() {
         foreach (e_player in a_e_players) {
             if (e_player istouching(var_9d62fe6f)) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x66>");
                 #/
                 level flag::clear(#"shed_waiting");
             }
@@ -239,7 +238,7 @@ function function_461006d1() {
     vh_wisp thread function_dba32984();
     vh_wisp setspeed(6);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x76>");
     #/
 }
 
@@ -263,7 +262,7 @@ function function_dba32984() {
         }
         self playsound(#"hash_4f86aa0523c734ed");
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x8c>");
         #/
         self vehicle::pause_path();
         level flag::set(#"hash_13cf89176254a394");
@@ -337,13 +336,13 @@ function insanity_mode_step3_setup(var_5ea5c94d) {
         str_hint = zm_utility::function_d6046228(#"hash_209b7a0a83ce0276", #"hash_683c616025752252");
         while (!flag::get(#"hash_7cd09ec15b9808a9")) {
             /#
-                iprintlnbold("<unknown string>" + level.var_f13364b4.var_3c358113);
+                iprintlnbold("<dev string:xc4>" + level.var_f13364b4.var_3c358113);
             #/
             level flag::clear(#"hash_eb582974245f076");
             level.var_f13364b4.a_n_codes[level.var_f13364b4.var_3c358113].var_544c05c6 = 1;
             level flag::wait_till(#"hash_eb582974245f076");
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xdb>");
             #/
             wait(0.5);
             level.var_c2511d7b = getplayers();
@@ -384,7 +383,7 @@ function timer_countdown() {
     level.countdown_clock namespace_7d8e6ec3::clock_countdown();
     level flag::set(#"hash_12b747be855cc622");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x12c>");
     #/
 }
 
@@ -397,7 +396,7 @@ function function_3d4b148b() {
         s_waitresult = self waittill(#"trigger_activated");
         arrayremovevalue(level.var_c2511d7b, s_waitresult.e_who);
         /#
-            iprintlnbold("<unknown string>" + level.var_c2511d7b.size);
+            iprintlnbold("<dev string:x145>" + level.var_c2511d7b.size);
         #/
     }
     level flag::set(#"hash_7cd09ec15b9808a9");

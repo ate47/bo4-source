@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\zm_common\callbacks.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
@@ -188,8 +187,8 @@ function dog_spawn_fx(ai, ent) {
     }
     ai dontinterpolate();
     ai forceteleport(ent.origin, angles);
-    assert(isdefined(ai), "<unknown string>");
-    assert(isalive(ai), "<unknown string>");
+    assert(isdefined(ai), "<dev string:x38>");
+    assert(isalive(ai), "<dev string:x4d>");
     ai zombie_setup_attack_properties_dog();
     ai val::reset(#"dog_spawn", "allowdeath");
     wait(0.1);
@@ -408,7 +407,7 @@ function dog_round_stop(var_d25bbdd5) {
     }
     zm_round_spawning::function_b4a8f95a(#"zombie_dog", level.next_dog_round, &dog_round_start, &dog_round_stop, &function_dd162858, &waiting_for_next_dog_spawn, level.var_dc50acfa);
     /#
-        getplayers()[0] iprintln("<unknown string>" + level.next_dog_round);
+        getplayers()[0] iprintln("<dev string:x5c>" + level.next_dog_round);
     #/
     level thread clientfield::set("dog_round_fog_bank", 0);
 }
@@ -494,7 +493,7 @@ function dog_init() {
     self.flame_damage_time = 0;
     self.thundergun_knockdown_func = &dog_thundergun_knockdown;
     /#
-        self zm_spawner::zombie_history("<unknown string>" + self.origin);
+        self zm_spawner::zombie_history("<dev string:x6f>" + self.origin);
     #/
     if (isdefined(level.var_9c55db3)) {
         self [[ level.var_9c55db3 ]]();
@@ -575,7 +574,7 @@ function dog_explode_fx(dog, origin) {
 // Size: 0xd4
 function zombie_setup_attack_properties_dog() {
     /#
-        self zm_spawner::zombie_history("<unknown string>");
+        self zm_spawner::zombie_history("<dev string:x95>");
     #/
     self thread dog_behind_audio();
     self val::reset(#"dog_spawn", "ignoreall");

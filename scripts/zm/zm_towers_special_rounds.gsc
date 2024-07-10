@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_towers_util.gsc;
 #using script_1781ac145d783f87;
 #using scripts\zm\zm_towers.gsc;
@@ -199,7 +198,7 @@ function function_9a74f284(var_d25bbdd5) {
         level.var_3f8640e8++;
         for (var_f40360e8 = math::clamp(level.round_number + randomintrange(3, 5), 9, 255); isinarray(level.var_865ea9f, var_f40360e8); var_f40360e8++) {
         }
-        println("<unknown string>" + var_f40360e8);
+        println("<dev string:x38>" + var_f40360e8);
         if (zm_utility::is_standard()) {
             zm_round_spawning::function_b4a8f95a(#"tiger", var_f40360e8, &function_f63225b8, &function_9a74f284, &function_a5dc8595, &zombie_tiger_util::function_ffa01525);
         } else {
@@ -243,7 +242,7 @@ function function_93b3cc13(var_d25bbdd5) {
         level.var_f8ae1232++;
         for (var_f40360e8 = level.round_number + randomintrange(3, 5); isinarray(level.var_865ea9f, var_f40360e8); var_f40360e8++) {
         }
-        println("<unknown string>" + var_f40360e8);
+        println("<dev string:x38>" + var_f40360e8);
         if (level.var_f8ae1232 > 1) {
             zm_round_spawning::function_b4a8f95a(array(#"gladiator_marauder", #"gladiator_destroyer", #"tiger"), var_f40360e8, &function_66d172e9, &function_93b3cc13, &function_f8ae1232, &zombie_gladiator_util::function_5d0001ad);
         } else {

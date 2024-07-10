@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace ai_interface;
 
 /#
@@ -22,21 +21,21 @@
             break;
         case #"_interface_match":
             possiblevalues = attribute[#"values"];
-            assert(!isarray(possiblevalues) || isinarray(possiblevalues, value), "<unknown string>" + value + "<unknown string>" + attributename + "<unknown string>");
+            assert(!isarray(possiblevalues) || isinarray(possiblevalues, value), "<dev string:x38>" + value + "<dev string:x40>" + attributename + "<dev string:x75>");
             break;
         case #"_interface_numeric":
             maxvalue = attribute[#"max_value"];
             minvalue = attribute[#"min_value"];
-            assert(isint(value) || isfloat(value), "<unknown string>" + attributename + "<unknown string>" + value + "<unknown string>");
-            assert(!isdefined(maxvalue) && !isdefined(minvalue) || value <= maxvalue && value >= minvalue, "<unknown string>" + value + "<unknown string>" + minvalue + "<unknown string>" + maxvalue + "<unknown string>");
+            assert(isint(value) || isfloat(value), "<dev string:x7a>" + attributename + "<dev string:x8c>" + value + "<dev string:xaf>");
+            assert(!isdefined(maxvalue) && !isdefined(minvalue) || value <= maxvalue && value >= minvalue, "<dev string:x38>" + value + "<dev string:xc5>" + minvalue + "<dev string:xeb>" + maxvalue + "<dev string:xef>");
             break;
         case #"_interface_vector":
             if (isdefined(value)) {
-                assert(isvec(value), "<unknown string>" + attributename + "<unknown string>" + value + "<unknown string>");
+                assert(isvec(value), "<dev string:x7a>" + attributename + "<dev string:xf4>" + value + "<dev string:xaf>");
             }
             break;
         default:
-            assert("<unknown string>" + attribute[#"type"] + "<unknown string>" + attributename + "<unknown string>");
+            assert("<dev string:x116>" + attribute[#"type"] + "<dev string:x138>" + attributename + "<dev string:x75>");
             break;
         }
     }
@@ -47,14 +46,14 @@
     // Size: 0x314
     function private _checkprerequisites(entity, attribute) {
         if (isdefined(level.__ai_debuginterface) && level.__ai_debuginterface > 0) {
-            assert(isentity(entity) || isstruct(entity), "<unknown string>");
-            assert(isactor(entity) || isvehicle(entity) || isstruct(entity) || isbot(entity), "<unknown string>");
-            assert(isstring(attribute), "<unknown string>");
-            assert(isarray(entity.__interface), "<unknown string>" + function_9e72a96(entity.archetype) + "<unknown string>" + "<unknown string>");
-            assert(isarray(level.__ai_interface), "<unknown string>");
-            assert(isarray(level.__ai_interface[entity.archetype]), "<unknown string>" + function_9e72a96(entity.archetype) + "<unknown string>");
-            assert(isarray(level.__ai_interface[entity.archetype][attribute]), "<unknown string>" + attribute + "<unknown string>" + function_9e72a96(entity.archetype) + "<unknown string>");
-            assert(isstring(level.__ai_interface[entity.archetype][attribute][#"type"]), "<unknown string>" + attribute + "<unknown string>");
+            assert(isentity(entity) || isstruct(entity), "<dev string:x14c>");
+            assert(isactor(entity) || isvehicle(entity) || isstruct(entity) || isbot(entity), "<dev string:x17e>");
+            assert(isstring(attribute), "<dev string:x1ba>");
+            assert(isarray(entity.__interface), "<dev string:x1e5>" + function_9e72a96(entity.archetype) + "<dev string:x1f3>" + "<dev string:x226>");
+            assert(isarray(level.__ai_interface), "<dev string:x257>");
+            assert(isarray(level.__ai_interface[entity.archetype]), "<dev string:x2a2>" + function_9e72a96(entity.archetype) + "<dev string:x2c6>");
+            assert(isarray(level.__ai_interface[entity.archetype][attribute]), "<dev string:x7a>" + attribute + "<dev string:x2e0>" + function_9e72a96(entity.archetype) + "<dev string:x30c>");
+            assert(isstring(level.__ai_interface[entity.archetype][attribute][#"type"]), "<dev string:x315>" + attribute + "<dev string:x75>");
         }
     }
 
@@ -63,9 +62,9 @@
     // Checksum 0x568ed2a5, Offset: 0x750
     // Size: 0xc4
     function private _checkregistrationprerequisites(archetype, attribute, callbackfunction) {
-        assert(ishash(archetype), "<unknown string>");
-        assert(ishash(attribute), "<unknown string>");
-        assert(!isdefined(callbackfunction) || isfunctionptr(callbackfunction), "<unknown string>");
+        assert(ishash(archetype), "<dev string:x33d>");
+        assert(ishash(attribute), "<dev string:x382>");
+        assert(!isdefined(callbackfunction) || isfunctionptr(callbackfunction), "<dev string:x3c7>");
     }
 
 #/
@@ -126,7 +125,7 @@ function registerentityinterface(archetype, attribute, defaultvalue, callbackfun
         ai_interface::_checkregistrationprerequisites(archetype, attribute, callbackfunction);
     #/
     ai_interface::_initializelevelinterface(archetype);
-    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<unknown string>" + attribute + "<unknown string>" + archetype + "<unknown string>");
+    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<dev string:x38>" + attribute + "<dev string:x419>" + archetype + "<dev string:x443>");
     level.__ai_interface[archetype][attribute] = [];
     level.__ai_interface[archetype][attribute][#"callback"] = callbackfunction;
     level.__ai_interface[archetype][attribute][#"default_value"] = defaultvalue;
@@ -143,10 +142,10 @@ function registerentityinterface(archetype, attribute, defaultvalue, callbackfun
 function registermatchedinterface(archetype, attribute, defaultvalue, possiblevalues, callbackfunction) {
     /#
         ai_interface::_checkregistrationprerequisites(archetype, attribute, callbackfunction);
-        assert(!isdefined(possiblevalues) || isarray(possiblevalues), "<unknown string>");
+        assert(!isdefined(possiblevalues) || isarray(possiblevalues), "<dev string:x447>");
     #/
     ai_interface::_initializelevelinterface(archetype);
-    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<unknown string>" + attribute + "<unknown string>" + archetype + "<unknown string>");
+    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<dev string:x38>" + attribute + "<dev string:x419>" + archetype + "<dev string:x443>");
     level.__ai_interface[archetype][attribute] = [];
     level.__ai_interface[archetype][attribute][#"callback"] = callbackfunction;
     level.__ai_interface[archetype][attribute][#"default_value"] = defaultvalue;
@@ -164,13 +163,13 @@ function registermatchedinterface(archetype, attribute, defaultvalue, possibleva
 function registernumericinterface(archetype, attribute, defaultvalue, minimum, maximum, callbackfunction) {
     /#
         ai_interface::_checkregistrationprerequisites(archetype, attribute, callbackfunction);
-        assert(!isdefined(minimum) || isint(minimum) || isfloat(minimum), "<unknown string>");
-        assert(!isdefined(maximum) || isint(maximum) || isfloat(maximum), "<unknown string>");
-        assert(!isdefined(minimum) && !isdefined(maximum) || isdefined(minimum) && isdefined(maximum), "<unknown string>");
-        assert(!isdefined(minimum) && !isdefined(maximum) || minimum <= maximum, "<unknown string>" + attribute + "<unknown string>" + "<unknown string>");
+        assert(!isdefined(minimum) || isint(minimum) || isfloat(minimum), "<dev string:x48d>");
+        assert(!isdefined(maximum) || isint(maximum) || isfloat(maximum), "<dev string:x4cd>");
+        assert(!isdefined(minimum) && !isdefined(maximum) || isdefined(minimum) && isdefined(maximum), "<dev string:x50d>");
+        assert(!isdefined(minimum) && !isdefined(maximum) || minimum <= maximum, "<dev string:x7a>" + attribute + "<dev string:x563>" + "<dev string:x58e>");
     #/
     ai_interface::_initializelevelinterface(archetype);
-    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<unknown string>" + attribute + "<unknown string>" + archetype + "<unknown string>");
+    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<dev string:x38>" + attribute + "<dev string:x419>" + archetype + "<dev string:x443>");
     level.__ai_interface[archetype][attribute] = [];
     level.__ai_interface[archetype][attribute][#"callback"] = callbackfunction;
     level.__ai_interface[archetype][attribute][#"default_value"] = defaultvalue;
@@ -191,7 +190,7 @@ function registervectorinterface(archetype, attribute, defaultvalue, callbackfun
         ai_interface::_checkregistrationprerequisites(archetype, attribute, callbackfunction);
     #/
     ai_interface::_initializelevelinterface(archetype);
-    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<unknown string>" + attribute + "<unknown string>" + archetype + "<unknown string>");
+    assert(!isdefined(level.__ai_interface[archetype][attribute]), "<dev string:x38>" + attribute + "<dev string:x419>" + archetype + "<dev string:x443>");
     level.__ai_interface[archetype][attribute] = [];
     level.__ai_interface[archetype][attribute][#"callback"] = callbackfunction;
     level.__ai_interface[archetype][attribute][#"default_value"] = defaultvalue;

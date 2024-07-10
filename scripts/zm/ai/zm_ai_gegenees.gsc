@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\ai\zm_ai_gegenees_interface.gsc;
 #using scripts\zm_common\trials\zm_trial_force_archetypes.gsc;
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
@@ -799,7 +798,7 @@ function function_64c4573(entity, mocompanim, mocompanimblendouttime, mocompanim
 function private function_c3c86ec1(entity) {
     hitent = entity melee();
     /#
-        record3dtext("zombie_drop_powerups", self.origin, (1, 0, 0), "<unknown string>", entity);
+        record3dtext("<dev string:x38>", self.origin, (1, 0, 0), "<dev string:x40>", entity);
     #/
     if (isdefined(hitent) && isplayer(hitent)) {
         entity function_376a5549(hitent);
@@ -929,13 +928,13 @@ function private function_ca5688e3(inflictor, attacker, damage, idflags, meansof
             namespace_81245006::function_ef87b7e8(var_dd54fdb1, adjusted_damage);
             /#
                 if (getdvarint(#"scr_weakpoint_debug", 0) > 0) {
-                    iprintlnbold("<unknown string>" + var_dd54fdb1.health);
+                    iprintlnbold("<dev string:x49>" + var_dd54fdb1.health);
                 }
             #/
             if (namespace_81245006::function_f29756fe(var_dd54fdb1) === 3) {
                 /#
                     if (getdvarint(#"scr_weakpoint_debug", 0) > 0) {
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x5e>");
                     }
                 #/
                 self destructserverutils::handledamage(inflictor, attacker, damage, idflags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex);
@@ -1037,19 +1036,19 @@ function function_9a05389e() {
     // Checksum 0x9651e635, Offset: 0x43d8
     // Size: 0x278
     function private function_c03e8d05() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x74>");
+        adddebugcommand("<dev string:xbb>");
+        adddebugcommand("<dev string:x104>");
+        adddebugcommand("<dev string:x15b>");
         while (true) {
             waitframe(1);
-            string = getdvarstring(#"hash_6e55ca7eb0bc5180", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_6e55ca7eb0bc5180", "<dev string:x1aa>");
+            cmd = strtok(string, "<dev string:x1ad>");
             gegenees = getaiarchetypearray(#"gegenees");
             if (cmd.size > 0) {
                 switch (cmd[0]) {
                 case #"spawn":
-                    zm_devgui::spawn_archetype("<unknown string>");
+                    zm_devgui::spawn_archetype("<dev string:x1b1>");
                     break;
                 case #"kill":
                     zm_devgui::kill_archetype(#"gegenees");
@@ -1072,7 +1071,7 @@ function function_9a05389e() {
                     break;
                 }
             }
-            setdvar(#"hash_6e55ca7eb0bc5180", "<unknown string>");
+            setdvar(#"hash_6e55ca7eb0bc5180", "<dev string:x1aa>");
         }
     }
 

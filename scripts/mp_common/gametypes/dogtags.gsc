@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\spectating.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ignore_systems.csc;
 #using scripts\wz_common\wz_ai.csc;
 #using scripts\wz_common\vehicle.csc;
@@ -174,10 +173,10 @@ function function_41f9de03() {
     /#
         foreach (destname in var_4e59607a) {
             level.var_909020d0 = (isdefined(level.var_909020d0) ? level.var_909020d0 : 0) + 1;
-            level.var_a1222bd2 = (isdefined(level.var_a1222bd2) ? level.var_a1222bd2 : "<unknown string>") + destinationlabel.targetname + "<unknown string>";
+            level.var_a1222bd2 = (isdefined(level.var_a1222bd2) ? level.var_a1222bd2 : "<dev string:x38>") + destinationlabel.targetname + "<dev string:x3b>";
         }
         if (isdefined(level.var_909020d0)) {
-            println(level.var_909020d0 + "<unknown string>" + level.var_a1222bd2);
+            println(level.var_909020d0 + "<dev string:x40>" + level.var_a1222bd2);
         }
     #/
 }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_devgui.gsc;
 #using scripts\zm_common\zm_behavior.gsc;
 #using scripts\core_common\status_effects\status_effect_util.gsc;
@@ -34,7 +33,7 @@ function __init__() {
     callback::on_player_damage(&function_4639701a);
     level.var_f8eb6737 = getstatuseffect(#"hash_3a1f530cdb5f75f4");
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>", "<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>", "<dev string:x41>");
     #/
 }
 

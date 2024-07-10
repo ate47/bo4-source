@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\sensor_dart.gsc;
 #using scripts\weapons\deployable.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
@@ -2057,7 +2056,7 @@ function _enemy_setup(var_1640cf17, b_ignoreall = 1, var_bab91f2 = 32, var_cde63
             break;
         }
     }
-    assert(isdefined(s_loc), "colbounds_tut_windows_block");
+    assert(isdefined(s_loc), "<dev string:x38>");
     self ct_utils::function_61d750d4(s_loc.origin, s_loc.angles);
     a_str_wpn = array(#"smg_standard_t8", #"ar_accurate_t8");
     self ct_bots::function_35e77034(getweapon(array::random(a_str_wpn)));

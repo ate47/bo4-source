@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_fasttravel.csc;
 #using scripts\core_common\postfx_shared.csc;
 #using scripts\core_common\flag_shared.csc;
@@ -104,7 +103,7 @@ function init_fx() {
 // Checksum 0xef1bde51, Offset: 0xd00
 // Size: 0x7c
 function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    println("<unknown string>", localclientnum);
+    println("<dev string:x38>", localclientnum);
     self thread postfx::playpostfxbundle("pstfx_zm_office_teleporter");
 }
 

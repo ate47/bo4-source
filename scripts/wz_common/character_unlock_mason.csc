@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\callbacks_shared.csc;
 #using scripts\wz_common\character_unlock_fixup.csc;
 #using scripts\mp_common\item_world_fixup.csc;

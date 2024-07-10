@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\gametypes\warzone.gsc;
 #using scripts\wz_common\wz_contracts.gsc;
 #using scripts\mp_common\item_world_util.gsc;
@@ -209,7 +208,7 @@ function function_2c8aac6() {
         return;
     }
     if (isdefined(player.pers[#"hash_39220b202c67c56b"]) && player.pers[#"hash_39220b202c67c56b"]) {
-        println("<unknown string>" + (isdefined(player.name) ? player.name : "<unknown string>") + "<unknown string>");
+        println("<dev string:x38>" + (isdefined(player.name) ? player.name : "<dev string:x46>") + "<dev string:x57>");
         return;
     }
     var_87ecbce6 = getdvarfloat(#"hash_138e4c481ef6cfb1", 0);
@@ -222,7 +221,7 @@ function function_2c8aac6() {
     player contracts::function_78083139();
     player challenges::function_659f7dc(var_1ef5a3ba, var_87ecbce6, var_7f6396f0);
     player function_4835d26a();
-    println("<unknown string>" + (isdefined(player.name) ? player.name : "<unknown string>") + "<unknown string>" + player.pers[#"placement_player"] + "<unknown string>" + "<unknown string>" + player.pers[#"placement_team"] + "<unknown string>" + "<unknown string>" + player.pers[#"kills"] + "<unknown string>" + "<unknown string>" + player.pers[#"meritprogression"] + "<unknown string>");
+    println("<dev string:x77>" + (isdefined(player.name) ? player.name : "<dev string:x46>") + "<dev string:x9d>" + player.pers[#"placement_player"] + "<dev string:xb4>" + "<dev string:xb8>" + player.pers[#"placement_team"] + "<dev string:xb4>" + "<dev string:xcd>" + player.pers[#"kills"] + "<dev string:xb4>" + "<dev string:xd9>" + player.pers[#"meritprogression"] + "<dev string:xb4>");
     player.pers[#"hash_39220b202c67c56b"] = 1;
 }
 
@@ -373,14 +372,14 @@ function private function_6a7970fe() {
 // Size: 0x2b0
 function team_eliminated(team, team_placement) {
     if (!isdefined(team)) {
-        println("<unknown string>");
+        println("<dev string:xeb>");
         return;
     }
     a_players = getplayers(team);
     if (isdefined(level.var_29ab88df)) {
         level [[ level.var_29ab88df ]](a_players, team_placement);
     }
-    println("<unknown string>" + (isdefined(team) ? team : "<unknown string>") + "<unknown string>" + team_placement + "<unknown string>");
+    println("<dev string:x123>" + (isdefined(team) ? team : "<dev string:x145>") + "<dev string:x154>" + team_placement + "<dev string:x168>");
     foreach (player in a_players) {
         if (!isdefined(player.pers) || isdefined(player.pers[#"hash_2283e9384383a6e9"]) && player.pers[#"hash_2283e9384383a6e9"]) {
             continue;
@@ -408,7 +407,7 @@ function team_eliminated(team, team_placement) {
 // Checksum 0x29961453, Offset: 0x2288
 // Size: 0x5e0
 function function_5648f82(team) {
-    println("<unknown string>" + (isdefined(team) ? team : "<unknown string>"));
+    println("<dev string:x16c>" + (isdefined(team) ? team : "<dev string:x145>"));
     if (isdefined(team)) {
         foreach (player in getplayers(team)) {
             if (!player stats::function_f94325d3()) {

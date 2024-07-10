@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_offshore_alt_player_rain.gsc;
 #using scripts\mp_common\gametypes\globallogic_spawn.gsc;
 #using scripts\mp\mp_offshore_alt_sound.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_pablo.gsc;
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_hms_util.gsc;

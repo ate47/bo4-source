@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace region_utility;
 
 // Namespace region_utility/region_utility

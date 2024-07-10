@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicles\seeker_mine.csc;
 #using script_36556543de898549;
 #using scripts\core_common\util_shared.csc;

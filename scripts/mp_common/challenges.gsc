@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\mp\uav.gsc;
 #using scripts\killstreaks\mp\counteruav.gsc;
 #using scripts\mp_common\player\player_utils.gsc;

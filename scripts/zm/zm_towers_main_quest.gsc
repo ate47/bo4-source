@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_crossbow.gsc;
 #using scripts\zm\zm_towers_util.gsc;
 #using scripts\zm\zm_towers_special_rounds.gsc;
@@ -994,8 +993,8 @@ function function_3a5c3a3c() {
         /#
             if (var_b683ba09 > 0) {
                 if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                    iprintlnbold("damage03" + var_b683ba09);
-                    println("damage03" + var_b683ba09);
+                    iprintlnbold("<dev string:x38>" + var_b683ba09);
+                    println("<dev string:x38>" + var_b683ba09);
                 }
             }
         #/
@@ -1093,8 +1092,8 @@ function function_d1499d43(var_4d6e64ec = 0) {
     self thread scene::play(#"p8_fxanim_zm_towers_chaos_pustule_bundle", "damage03", self);
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("odin_top");
-            println("odin_top");
+            iprintlnbold("<dev string:x4e>");
+            println("<dev string:x4e>");
         }
     #/
     if (var_4d6e64ec) {
@@ -1602,28 +1601,28 @@ function function_d1007b59() {
         }
         switch (str_key) {
         case #"spawner_zm_gladiator_marauder":
-            str_ai = "tag_d_glow";
+            str_ai = "<dev string:x69>";
             break;
         case #"spawner_zm_gladiator_destroyer":
-            str_ai = "tag_t_glyph";
+            str_ai = "<dev string:x74>";
             break;
         case #"spawner_zm_blight_father":
-            str_ai = "zone_cursed_room";
+            str_ai = "<dev string:x80>";
             break;
         case #"spawner_zm_catalyst_plasma":
-            str_ai = "shot 2";
+            str_ai = "<dev string:x90>";
             break;
         case #"spawner_zm_catalyst_corrosive":
-            str_ai = "zone_starting_area_danu";
+            str_ai = "<dev string:x99>";
             break;
         case #"spawner_zm_catalyst_water":
-            str_ai = "connect_starting_area_to_odin_hallway";
+            str_ai = "<dev string:xa5>";
             break;
         case #"spawner_zm_catalyst_electric":
-            str_ai = "tiger_location";
+            str_ai = "<dev string:xae>";
             break;
         case #"spawner_zm_tiger":
-            str_ai = "exp_aqueduct_3";
+            str_ai = "<dev string:xb9>";
             break;
         }
         iprintlnbold(str_ai);
@@ -3745,7 +3744,7 @@ function function_2eb4a526() {
     function private debug_spawns() {
         level endon(#"stop_debug_spawn");
         level flag::wait_till(#"hash_2bf040db75b1dac7");
-        v_test = getent("defend_key_model", "boss_battle_tempo");
+        v_test = getent("<dev string:xc1>", "<dev string:xd0>");
         while (true) {
             s_result = level waittill(#"trilane_debug");
             if (isdefined(s_result.ai) && isdefined(s_result.spawn.origin) && s_result.ai istouching(v_test)) {
@@ -3760,7 +3759,7 @@ function function_2eb4a526() {
                 if (!isinarray(level.var_426849d0, s_result.spawn.origin)) {
                     level.var_426849d0[level.var_426849d0.size] = s_result.spawn.origin;
                 }
-                iprintlnbold("crowd_react_boss" + s_result.spawn.origin);
+                iprintlnbold("<dev string:xdd>" + s_result.spawn.origin);
             }
         }
     }
@@ -3770,7 +3769,7 @@ function function_2eb4a526() {
     // Checksum 0x1b7ea65a, Offset: 0x122e0
     // Size: 0x1b4
     function event_handler[weapon_fired] debug_trilane(event_struct) {
-        if (!getdvarint(#"zm_debug_ee", 0) || !getdvarint(#"zm_debug_trilane", 0) >= 1 || !self zm_zonemgr::entity_in_zone("mdl_turn_back", 0)) {
+        if (!getdvarint(#"zm_debug_ee", 0) || !getdvarint(#"zm_debug_trilane", 0) >= 1 || !self zm_zonemgr::entity_in_zone("<dev string:xfc>", 0)) {
             return;
         }
         setdvar(#"zm_debug_trilane", 0);
@@ -4184,7 +4183,7 @@ function function_bd321d77(b_skipped) {
     level zm_ui_inventory::function_7df6bb60(#"zm_towers_objective_progress", 5);
     level waittill(#"boss_battle_done");
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x10c>");
     #/
 }
 

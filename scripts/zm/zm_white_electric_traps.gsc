@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_trap_electric.gsc;
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\zm\zm_hms_util.gsc;

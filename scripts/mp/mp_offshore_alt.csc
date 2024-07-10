@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_offshore_alt_player_rain.csc;
 #using scripts\mp\mp_offshore_alt_sound.csc;
 #using scripts\mp\mp_offshore_alt_fx.csc;

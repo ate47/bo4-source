@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_cleanup_mgr.gsc;
 #using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
 #using scripts\core_common\ai\systems\animation_state_machine_utility.gsc;
@@ -36,8 +35,8 @@ function __init__() {
     assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"ziplinerelease", &function_a2185434, &function_48ef356e, undefined);
     /#
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x66>");
     #/
     zm_cleanup::function_cdf5a512(#"zombie", &function_16f40942);
     level.var_e5a996e8 = &function_e5a996e8;
@@ -111,7 +110,7 @@ function function_dc61ccae(vnd_start, var_6f06d19d, var_ca144d1e) {
                     height_difference = var_b43bc141[2] - self.var_b20b0960.origin[2];
                     /#
                         line(self.var_b20b0960.origin, var_b43bc141, (1, 0, 1));
-                        record3dtext("<unknown string>" + height_difference, self.var_b20b0960.origin, (1, 1, 1), "<unknown string>");
+                        record3dtext("<dev string:xae>" + height_difference, self.var_b20b0960.origin, (1, 1, 1), "<dev string:xb1>");
                     #/
                 }
                 var_3a080e11 = function_61418721(var_8e89eaf2, var_6f06d19d, var_ca144d1e);
@@ -128,7 +127,7 @@ function function_dc61ccae(vnd_start, var_6f06d19d, var_ca144d1e) {
                     line(var_8e89eaf2, var_3a080e11, (1, 1, 0));
                     sphere(var_6f06d19d, 8, (1, 0.5, 0), 0.3, 0, 8, 1);
                     sphere(var_ca144d1e, 8, (1, 0.5, 0), 0.3, 0, 8, 1);
-                    record3dtext("<unknown string>" + var_c246e8d5, var_8e89eaf2 + var_c246e8d5, (1, 1, 1), "<unknown string>");
+                    record3dtext("<dev string:xae>" + var_c246e8d5, var_8e89eaf2 + var_c246e8d5, (1, 1, 1), "<dev string:xb1>");
                 #/
             }
             for (var_31120f24 = vnd_start; isdefined(var_31120f24.target); var_31120f24 = var_bb4eaebf) {
@@ -163,7 +162,7 @@ function function_aeb6539c(origin, angles) {
 function private function_dedfe444(entity) {
     if (isdefined(entity.traversestartnode) && isdefined(entity.traversestartnode.script_noteworthy) && entity.traversestartnode.script_noteworthy == "zipline_traversal" && isdefined(entity.traversestartnode.var_e45a0969) && entity shouldstarttraversal()) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
+            record3dtext("<dev string:xba>", self.origin, (1, 0, 0), "<dev string:xb1>");
         #/
         return true;
     }
@@ -213,8 +212,8 @@ function private function_d31cb502(entity, asmstatename) {
             entity function_aeb6539c(entity.vnd_start.origin, entity.vnd_start.angles);
             entity.var_b20b0960 thread vehicle::get_on_and_go_path(entity.vnd_start);
             /#
-                line_start = struct::get(entity.vnd_start.target + "<unknown string>", "<unknown string>");
-                line_end = struct::get(entity.vnd_start.target + "<unknown string>", "<unknown string>");
+                line_start = struct::get(entity.vnd_start.target + "<dev string:xd7>", "<dev string:xe0>");
+                line_end = struct::get(entity.vnd_start.target + "<dev string:xf4>", "<dev string:xe0>");
                 if (isdefined(line_start) && isdefined(line_end)) {
                     self thread function_dc61ccae(entity.vnd_start, line_start.origin, line_end.origin);
                 } else {

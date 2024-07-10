@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\tweakables_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
@@ -998,14 +997,14 @@ function canlock() {
     foreach (trigger in triggers) {
         if (trigger istouchingvolume(self.origin, self getmins(), self getmaxs())) {
             /#
-                function_6de7bc19(0, "<unknown string>", self, trigger.origin, trigger.classname);
+                function_6de7bc19(0, "<dev string:x38>", self, trigger.origin, trigger.classname);
             #/
             return 0;
         }
     }
     if (self isplayerswimming()) {
         /#
-            function_6de7bc19(1, "<unknown string>", self);
+            function_6de7bc19(1, "<dev string:x40>", self);
         #/
         return 1;
     }
@@ -1015,14 +1014,14 @@ function canlock() {
         org1 = trace1[#"position"];
         if (frac == 1) {
             /#
-                function_6de7bc19(0, "<unknown string>", self, org1, "<unknown string>");
+                function_6de7bc19(0, "<dev string:x47>", self, org1, "<dev string:x50>");
             #/
             return 0;
         }
         foreach (trigger in triggers) {
             if (trigger istouchingvolume(org1, self getmins(), self getmaxs())) {
                 /#
-                    function_6de7bc19(0, "<unknown string>", self, trigger.origin, trigger.classname);
+                    function_6de7bc19(0, "<dev string:x53>", self, trigger.origin, trigger.classname);
                 #/
                 return 0;
             }
@@ -1030,7 +1029,7 @@ function canlock() {
         point = getnearestpathpoint(org1, 256);
         if (!isdefined(point)) {
             /#
-                function_6de7bc19(0, "<unknown string>", self, org1);
+                function_6de7bc19(0, "<dev string:x5c>", self, org1);
             #/
             return 0;
         }
@@ -1039,7 +1038,7 @@ function canlock() {
             point2 = getnearestpathpoint(org1, 50);
             if (!isdefined(point2)) {
                 /#
-                    function_6de7bc19(0, "<unknown string>", self, org1, "<unknown string>", point, "<unknown string>");
+                    function_6de7bc19(0, "<dev string:x63>", self, org1, "<dev string:x6f>", point, "<dev string:x5c>");
                 #/
                 return 0;
             }
@@ -1047,7 +1046,7 @@ function canlock() {
         dist2d = distance2d(point, org1);
         if (dist2d > 100) {
             /#
-                function_6de7bc19(0, "<unknown string>", self, org1, "<unknown string>", point, "<unknown string>");
+                function_6de7bc19(0, "<dev string:x77>", self, org1, "<dev string:x6f>", point, "<dev string:x5c>");
             #/
             return 0;
         }
@@ -1055,18 +1054,18 @@ function canlock() {
         foreach (trigger in triggers) {
             if (trigger istouchingvolume(org2, self getmins(), self getmaxs())) {
                 /#
-                    function_6de7bc19(0, "<unknown string>", self, trigger.origin, trigger.classname);
+                    function_6de7bc19(0, "<dev string:x80>", self, trigger.origin, trigger.classname);
                 #/
                 return 0;
             }
         }
         /#
-            function_6de7bc19(1, "<unknown string>", self, org1, "<unknown string>", org2, "<unknown string>", point, "<unknown string>" + distance(org1, point));
+            function_6de7bc19(1, "<dev string:x86>", self, org1, "<dev string:x53>", org2, "<dev string:x80>", point, "<dev string:x8c>" + distance(org1, point));
         #/
         return 1;
     }
     /#
-        function_6de7bc19(1, "<unknown string>", self);
+        function_6de7bc19(1, "<dev string:x94>", self);
     #/
     return 1;
 }
@@ -1115,7 +1114,7 @@ function setnewabilityhud() {
         self.abilitykey.label = #"mp_ph_flash";
         break;
     default:
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x9d>");
         break;
     }
 }
@@ -1139,7 +1138,7 @@ function setnewabilitycount(var_8c8fd413, count) {
         propsetclonesleft(count);
         break;
     default:
-        assertmsg("<unknown string>" + var_8c8fd413);
+        assertmsg("<dev string:xb7>" + var_8c8fd413);
         break;
     }
 }

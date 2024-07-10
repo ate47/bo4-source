@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\doors_shared.gsc;
 #using scripts\mp\mp_urban_sound.gsc;
 #using scripts\mp\mp_urban_fx.gsc;
@@ -205,9 +204,9 @@ function function_c7fff230() {
     // Size: 0x9c
     function init_devgui() {
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x83>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:xc4>");
     }
 
 #/

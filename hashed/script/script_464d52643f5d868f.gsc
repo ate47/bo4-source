@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_escape_vo_hooks.gsc;
 #using scripts\zm\zm_escape_util.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
@@ -454,9 +453,9 @@ function function_7ab912f2(s_loc) {
     earthquake(0.5, 0.75, s_loc.origin, 1000);
     playsoundatposition(#"hash_42894a8e6bfacf66", (5085, 10424, 1102));
     playsoundatposition(#"zmb_hellhound_spawn", s_loc.origin);
-    assert(isdefined(self), "surrounded");
-    assert(isalive(self), "<unknown string>");
-    assert(zm_utility::is_magic_bullet_shield_enabled(self), "<unknown string>");
+    assert(isdefined(self), "<dev string:x38>");
+    assert(isalive(self), "<dev string:x53>");
+    assert(zm_utility::is_magic_bullet_shield_enabled(self), "<dev string:x68>");
     self zombie_dog_util::zombie_setup_attack_properties_dog();
     self util::stop_magic_bullet_shield();
     wait(0.1);

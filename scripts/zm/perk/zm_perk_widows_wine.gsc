@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_24c32478acf44108;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -347,7 +346,7 @@ function widows_wine_vehicle_behavior(attacker, weapon) {
 function widows_wine_perk_lost(b_pause, str_perk, str_result, n_slot) {
     self notify(#"stop_widows_wine");
     self endon(#"death");
-    assert(isdefined(self.var_828492e6), "<unknown string>");
+    assert(isdefined(self.var_828492e6), "<dev string:x38>");
     if (isdefined(self.var_828492e6)) {
         self zm_perks::function_13880aa5(self.var_828492e6, 0, #"perk_widows_wine");
         self zm_perks::function_f2ff97a6(self.var_828492e6, 0, #"perk_widows_wine");

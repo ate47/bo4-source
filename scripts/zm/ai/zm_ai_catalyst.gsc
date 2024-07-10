@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
 #using script_444bc5b4fa0fe14f;
 #using scripts\zm_common\zm_utility.gsc;
@@ -1424,13 +1423,13 @@ function round_spawn() {
         direction_vec = (direction_vec[0] * scale, direction_vec[1] * scale, direction_vec[2] * scale);
         trace = bullettrace(eye, eye + direction_vec, 0, undefined);
         catalyst_zombie = undefined;
-        var_16805a00 = getspawnerarray("<unknown string>", "<unknown string>");
+        var_16805a00 = getspawnerarray("<dev string:x38>", "<dev string:x52>");
         if (var_16805a00.size == 0) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:x66>");
             return;
         }
         if (!isdefined(var_7a56405a[type])) {
-            iprintln("<unknown string>" + type);
+            iprintln("<dev string:x83>" + type);
             return;
         }
         foreach (spawner in var_16805a00) {
@@ -1440,7 +1439,7 @@ function round_spawn() {
             }
         }
         if (!isdefined(catalyst_spawner)) {
-            iprintln("<unknown string>" + var_7a56405a[type]);
+            iprintln("<dev string:xaf>" + var_7a56405a[type]);
             return;
         }
         catalyst_zombie = zombie_utility::spawn_zombie(catalyst_spawner, undefined, catalyst_spawner);
@@ -1460,15 +1459,15 @@ function round_spawn() {
     // Size: 0x178
     function private function_1a0ae193() {
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + 1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + 3 + "<unknown string>");
-        adddebugcommand("<unknown string>" + 2 + "<unknown string>");
-        adddebugcommand("<unknown string>" + 4 + "<unknown string>");
+        adddebugcommand("<dev string:xde>" + 1 + "<dev string:x126>");
+        adddebugcommand("<dev string:x12b>" + 3 + "<dev string:x126>");
+        adddebugcommand("<dev string:x175>" + 2 + "<dev string:x126>");
+        adddebugcommand("<dev string:x1ba>" + 4 + "<dev string:x126>");
         while (true) {
             waitframe(1);
-            if (getdvarstring(#"hash_403368b958977fcb", "<unknown string>") != "<unknown string>") {
+            if (getdvarstring(#"hash_403368b958977fcb", "<dev string:x1fe>") != "<dev string:x1fe>") {
                 function_fa69f8d2(int(getdvarstring(#"hash_403368b958977fcb")));
-                setdvar(#"hash_403368b958977fcb", "<unknown string>");
+                setdvar(#"hash_403368b958977fcb", "<dev string:x1fe>");
             }
         }
     }

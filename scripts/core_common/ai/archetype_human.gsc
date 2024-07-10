@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_3819e7a1427df6d2;
 #using scripts\core_common\ai\archetype_utility.gsc;
 #using scripts\core_common\ai\archetype_human_interface.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\spawner_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\array_shared.gsc;
@@ -98,7 +97,7 @@ class squad {
         assert(squadleader == ai);
         if (distance2dsquared(squadbreadcrumb, ai.origin) >= 9216) {
             /#
-                recordcircle(ai.origin, 4, (0, 0, 1), "<unknown string>", ai);
+                recordcircle(ai.origin, 4, (0, 0, 1), "<dev string:x38>", ai);
             #/
             squadbreadcrumb = ai.origin;
         }
@@ -205,13 +204,13 @@ function private squadmemberthink() {
             if (isdefined(squadleader) && !(isint(squadleader) && squadleader == 0)) {
                 if (squadleader == self) {
                     /#
-                        recordenttext(self.squadname + "<unknown string>", self, (0, 1, 0), "<unknown string>");
+                        recordenttext(self.squadname + "<dev string:x45>", self, (0, 1, 0), "<dev string:x38>");
                     #/
                     /#
-                        recordenttext(self.squadname + "<unknown string>", self, (0, 1, 0), "<unknown string>");
+                        recordenttext(self.squadname + "<dev string:x45>", self, (0, 1, 0), "<dev string:x38>");
                     #/
                     /#
-                        recordcircle(self.origin, 300, (1, 0.5, 0), "<unknown string>", self);
+                        recordcircle(self.origin, 300, (1, 0.5, 0), "<dev string:x38>", self);
                     #/
                     if (isdefined(self.enemy)) {
                         self setgoal(self.enemy);
@@ -219,10 +218,10 @@ function private squadmemberthink() {
                     [[ squad ]]->addsquadbreadcrumbs(self);
                 } else {
                     /#
-                        recordline(self.origin, squadleader.origin, (0, 1, 0), "<unknown string>", self);
+                        recordline(self.origin, squadleader.origin, (0, 1, 0), "<dev string:x38>", self);
                     #/
                     /#
-                        recordenttext(self.squadname + "<unknown string>", self, (0, 1, 0), "<unknown string>");
+                        recordenttext(self.squadname + "<dev string:x50>", self, (0, 1, 0), "<dev string:x38>");
                     #/
                     followposition = [[ squad ]]->getsquadbreadcrumb();
                     followdistsq = distance2dsquared(self.goalpos, followposition);

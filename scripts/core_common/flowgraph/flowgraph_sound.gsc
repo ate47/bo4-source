@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace flowgraph_sound;
 
 // Namespace flowgraph_sound/flowgraph_sound

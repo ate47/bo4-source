@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_round_logic.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm.gsc;
@@ -27,7 +26,7 @@ function register_game_module(index, module_name, pre_init_func, post_init_func,
             continue;
         }
         if (isdefined(level._game_modules[i].index) && level._game_modules[i].index == index) {
-            assert(level._game_modules[i].index != index, "<unknown string>" + index + "<unknown string>");
+            assert(level._game_modules[i].index != index, "<dev string:x38>" + index + "<dev string:x6a>");
         }
     }
     level._game_modules[level._num_registered_game_modules] = spawnstruct();
@@ -53,7 +52,7 @@ function set_current_game_module(game_module_index) {
     }
     game_module = get_game_module(game_module_index);
     if (!isdefined(game_module)) {
-        assert(isdefined(game_module), "<unknown string>" + game_module_index + "<unknown string>");
+        assert(isdefined(game_module), "<dev string:x6e>" + game_module_index + "<dev string:x6a>");
         return;
     }
     level.current_game_module = game_module_index;
@@ -121,7 +120,7 @@ function respawn_spectators_and_freeze_players() {
 }
 
 // Namespace zm_game_module/zm_game_module
-// Params a, eflags: 0x0
+// Params 10, eflags: 0x0
 // Checksum 0x5f101f8f, Offset: 0x658
 // Size: 0xc8
 function damage_callback_no_pvp_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, eapon, vpoint, vdir, shitloc, psoffsettime) {

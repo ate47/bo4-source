@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_zones.gsc;
 #using scripts\zm\zm_red_util.gsc;
 #using script_14af1fd264ffe8cc;

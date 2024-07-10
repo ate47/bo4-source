@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicleriders_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -393,7 +392,7 @@ function set_min_target_distance_squared(n_distance_squared, n_index) {
 // Size: 0x15a
 function fire(n_index) {
     s_turret = _get_turret_data(n_index);
-    assert(isdefined(n_index) && n_index >= 0, "<unknown string>");
+    assert(isdefined(n_index) && n_index >= 0, "<dev string:x38>");
     if (n_index == 0) {
         self fireweapon(0, s_turret.e_target);
     } else {
@@ -429,7 +428,7 @@ function stop(n_index, b_clear_target = 0) {
 // Checksum 0x23aaf71c, Offset: 0x1568
 // Size: 0x1b8
 function fire_for_time(n_time, n_index = 0) {
-    assert(isdefined(n_time), "<unknown string>");
+    assert(isdefined(n_time), "<dev string:x6a>");
     self endon(#"death", #"drone_death", "_stop_turret" + _index(n_index), "turret_disabled" + _index(n_index));
     self notify("_fire_turret_for_time" + _index(n_index));
     self endon("_fire_turret_for_time" + _index(n_index));
@@ -439,7 +438,7 @@ function fire_for_time(n_time, n_index = 0) {
     } else {
         /#
             w_weapon = get_weapon(n_index);
-            assert(n_time >= w_weapon.firetime, "<unknown string>" + n_time + "<unknown string>" + w_weapon.firetime);
+            assert(n_time >= w_weapon.firetime, "<dev string:xa6>" + n_time + "<dev string:xb4>" + w_weapon.firetime);
         #/
     }
     while (n_time > 0 || b_fire_forever) {
@@ -455,7 +454,7 @@ function fire_for_time(n_time, n_index = 0) {
 // Checksum 0x66ec6ab3, Offset: 0x1728
 // Size: 0xf4
 function shoot_at_target(e_target, n_time, v_offset, n_index, b_just_once) {
-    assert(isdefined(e_target), "<unknown string>");
+    assert(isdefined(e_target), "<dev string:xf9>");
     self endon(#"drone_death", #"death");
     s_turret = _get_turret_data(n_index);
     s_turret flag::set("turret manual");
@@ -804,7 +803,7 @@ function _user_check(n_index) {
     // Checksum 0x42443a91, Offset: 0x29c0
     // Size: 0x31e
     function _debug_turret_think(n_index) {
-        self endon(#"death", "<unknown string>" + _index(n_index), "<unknown string>" + _index(n_index));
+        self endon(#"death", "<dev string:x129>" + _index(n_index), "<dev string:x139>" + _index(n_index));
         s_turret = _get_turret_data(n_index);
         v_color = (0, 0, 1);
         while (true) {
@@ -820,27 +819,27 @@ function _user_check(n_index) {
             }
             str_team = get_team(n_index);
             if (!isdefined(str_team)) {
-                str_team = "<unknown string>";
+                str_team = "<dev string:x14b>";
             }
-            str_target = "<unknown string>";
+            str_target = "<dev string:x155>";
             e_target = s_turret.e_next_target;
             if (isdefined(e_target)) {
                 if (isactor(e_target)) {
-                    str_target += "<unknown string>";
+                    str_target += "<dev string:x161>";
                 } else if (isplayer(e_target)) {
-                    str_target += "<unknown string>";
+                    str_target += "<dev string:x166>";
                 } else if (isvehicle(e_target)) {
-                    str_target += "<unknown string>";
-                } else if (isdefined(e_target.targetname) && e_target.targetname == "<unknown string>") {
-                    str_target += "<unknown string>";
+                    str_target += "<dev string:x16f>";
+                } else if (isdefined(e_target.targetname) && e_target.targetname == "<dev string:x179>") {
+                    str_target += "<dev string:x179>";
                 } else if (isdefined(e_target.classname)) {
                     str_target += e_target.classname;
                 }
             } else {
-                str_target += "<unknown string>";
+                str_target += "<dev string:x181>";
             }
-            str_debug = self getentnum() + "<unknown string>" + str_team + "<unknown string>" + str_target;
-            record3dtext(str_debug, self.origin, v_color, "<unknown string>", self);
+            str_debug = self getentnum() + "<dev string:x188>" + str_team + "<dev string:x188>" + str_target;
+            record3dtext(str_debug, self.origin, v_color, "<dev string:x18c>", self);
             waitframe(1);
         }
     }
@@ -897,7 +896,7 @@ function _init_turret(n_index = 0) {
     self endon(#"death");
     w_weapon = get_weapon(n_index);
     if (w_weapon.name == #"none") {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x195>");
         return;
     }
     util::waittill_asset_loaded("xmodel", self.model);
@@ -922,7 +921,7 @@ function _init_turret(n_index = 0) {
 // Checksum 0x6889c107, Offset: 0x3038
 // Size: 0x250
 function _init_vehicle_turret(n_index) {
-    assert(isdefined(n_index) && n_index >= 0, "<unknown string>");
+    assert(isdefined(n_index) && n_index >= 0, "<dev string:x1c1>");
     s_turret = spawnstruct();
     switch (n_index) {
     case 0:
@@ -1196,7 +1195,7 @@ function _get_gunner_tag_for_turret_index(n_index) {
     case 4:
         return "tag_gunner4";
     default:
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x1f9>");
         break;
     }
 }

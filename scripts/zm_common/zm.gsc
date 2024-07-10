@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_48f7c4ab73137f8;
 #using script_4194df57536e11ed;
 #using scripts\core_common\ai\zombie_utility.gsc;
@@ -389,7 +388,7 @@ function onallplayersready() {
     while (!getnumexpectedplayers(1)) {
         waitframe(1);
     }
-    println("zombie_head_gib" + getnumexpectedplayers(1));
+    println("<dev string:x38>" + getnumexpectedplayers(1));
     player_count_actual = 0;
     while (player_count_actual < getnumexpectedplayers(1)) {
         players = getplayers();
@@ -399,11 +398,11 @@ function onallplayersready() {
                 player_count_actual++;
             }
         }
-        println("debris_move" + getnumconnectedplayers() + "zomCatalystStartSolo" + getnumexpectedplayers(1));
+        println("<dev string:x57>" + getnumconnectedplayers() + "<dev string:x6f>" + getnumexpectedplayers(1));
         waitframe(1);
     }
     setinitialplayersconnected();
-    println("zomMaxCount");
+    println("<dev string:x7e>");
     a_e_players = getplayers();
     if (a_e_players.size == 1) {
         level flag::set("solo_game");
@@ -555,7 +554,7 @@ function post_all_players_connected() {
     level flag::wait_till("start_zombie_round_logic");
     level.var_aaf21bbb = level.players.size;
     level.var_5caadd40 = util::get_human_players(#"allies").size;
-    println("MOD_GRENADE_SPLASH", level.script, "ztrials", getplayers().size);
+    println("<dev string:xaf>", level.script, "<dev string:xc4>", getplayers().size);
     level thread round_end_monitor();
     if (!level.zombie_anim_intro) {
         if (isdefined(level._round_start_func)) {
@@ -1052,7 +1051,7 @@ function register_vehicle_damage_callback(func) {
 }
 
 // Namespace zm/zm
-// Params f, eflags: 0x1 linked
+// Params 15, eflags: 0x1 linked
 // Checksum 0x55cbf8e, Offset: 0x5b40
 // Size: 0x214
 function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -1173,7 +1172,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
     }
     /#
         if (getdvarint(#"scr_perkdebug", 0)) {
-            println("<unknown string>" + final_damage / old_damage + "<unknown string>" + old_damage + "<unknown string>" + final_damage);
+            println("<dev string:xed>" + final_damage / old_damage + "<dev string:x106>" + old_damage + "<dev string:x118>" + final_damage);
         }
     #/
     if (isdefined(self.in_water) && self.in_water) {
@@ -1561,7 +1560,7 @@ function end_game() {
     level waittill(#"end_game");
     changeadvertisedstatus(0);
     check_end_game_intermission_delay();
-    println("<unknown string>");
+    println("<dev string:x12b>");
     setmatchflag("game_ended", 1);
     game.state = "postgame";
     if (!isdefined(level.var_21e22beb)) {
@@ -2171,28 +2170,28 @@ function function_a2b54d42() {
     // Checksum 0x6ec0bac5, Offset: 0xa2d8
     // Size: 0x2cc
     function printhashids() {
-        outputstring = "<unknown string>";
-        outputstring += "<unknown string>";
+        outputstring = "<dev string:x141>";
+        outputstring += "<dev string:x18a>";
         foreach (powerup in level.zombie_powerups) {
-            outputstring += powerup.powerup_name + "<unknown string>" + powerup.hash_id + "<unknown string>";
+            outputstring += powerup.powerup_name + "<dev string:x19c>" + powerup.hash_id + "<dev string:x1a0>";
         }
-        outputstring += "<unknown string>";
+        outputstring += "<dev string:x1a4>";
         if (isdefined(level.aat_in_use) && level.aat_in_use) {
             foreach (aat in level.aat) {
-                if (!isdefined(aat) || !isdefined(aat.name) || aat.name == "<unknown string>") {
+                if (!isdefined(aat) || !isdefined(aat.name) || aat.name == "<dev string:x1b1>") {
                     continue;
                 }
-                outputstring += aat.name + "<unknown string>" + aat.hash_id + "<unknown string>";
+                outputstring += aat.name + "<dev string:x19c>" + aat.hash_id + "<dev string:x1a0>";
             }
         }
-        outputstring += "<unknown string>";
+        outputstring += "<dev string:x1b8>";
         foreach (perk in level._custom_perks) {
             if (!isdefined(perk) || !isdefined(perk.alias)) {
                 continue;
             }
-            outputstring += function_9e72a96(perk.alias) + "<unknown string>" + perk.alias + "<unknown string>";
+            outputstring += function_9e72a96(perk.alias) + "<dev string:x19c>" + perk.alias + "<dev string:x1a0>";
         }
-        outputstring += "<unknown string>";
+        outputstring += "<dev string:x1c7>";
         println(outputstring);
     }
 

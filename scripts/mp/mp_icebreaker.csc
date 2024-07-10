@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_icebreaker_scripted.csc;
 #using scripts\mp\mp_icebreaker_water.csc;
 #using scripts\mp\mp_icebreaker_sound.csc;

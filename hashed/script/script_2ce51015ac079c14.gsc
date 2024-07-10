@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace player_insertion_choice;
@@ -28,7 +27,7 @@ class cplayer_insertion_choice : cluielem {
             set_data(localclientnum, "_state", 3);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cplayer_insertion_choice/player_insertion_choice

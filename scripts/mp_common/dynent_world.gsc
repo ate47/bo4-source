@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\gestures.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -149,7 +148,7 @@ function private function_2f394f36() {
         if (isdefined(dynent.var_a548ec11) && gettime() <= dynent.var_a548ec11) {
             /#
                 if (debug) {
-                    print3d(dynent.origin, "<unknown string>", (1, 1, 1), 1, 0.5, 5);
+                    print3d(dynent.origin, "<dev string:x38>", (1, 1, 1), 1, 0.5, 5);
                 }
             #/
             continue;
@@ -159,7 +158,7 @@ function private function_2f394f36() {
         if (isdefined(bundle) && isdefined(bundle.dynentstates) && isdefined(bundle.dynentstates[stateindex]) && (isdefined(bundle.dynentstates[stateindex].var_efabe801) && bundle.dynentstates[stateindex].var_efabe801 || level.inprematchperiod && !(isdefined(bundle.dynentstates[stateindex].var_4a78f198) && bundle.dynentstates[stateindex].var_4a78f198))) {
             /#
                 if (debug) {
-                    print3d(dynent.origin, "<unknown string>", (1, 1, 1), 1, 0.5, 5);
+                    print3d(dynent.origin, "<dev string:x43>", (1, 1, 1), 1, 0.5, 5);
                 }
             #/
             continue;
@@ -427,17 +426,17 @@ function event_handler[event_cf200f34] function_209450ae(eventstruct) {
         while (!canadddebugcommand()) {
             waitframe(1);
         }
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x59>");
+        adddebugcommand("<dev string:x80>");
+        adddebugcommand("<dev string:xd3>");
         while (true) {
             wait(0.25);
-            dvarstr = getdvarstring(#"hash_40f9f26f308dd924", "<unknown string>");
-            if (dvarstr == "<unknown string>") {
+            dvarstr = getdvarstring(#"hash_40f9f26f308dd924", "<dev string:x11b>");
+            if (dvarstr == "<dev string:x11b>") {
                 continue;
             }
-            setdvar(#"hash_40f9f26f308dd924", "<unknown string>");
-            args = strtok(dvarstr, "<unknown string>");
+            setdvar(#"hash_40f9f26f308dd924", "<dev string:x11b>");
+            args = strtok(dvarstr, "<dev string:x11e>");
             switch (args[0]) {
             case #"reset":
                 function_3ca3c6e4();

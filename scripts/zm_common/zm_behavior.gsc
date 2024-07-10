@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -631,7 +630,7 @@ function zombieupdategoal() {
                     /#
                         if (getdvarint(#"ai_debugzigzag", 0)) {
                             for (index = 1; index < path.size; index++) {
-                                recordline(path[index - 1], path[index], (1, 0.5, 0), "<unknown string>", self);
+                                recordline(path[index - 1], path[index], (1, 0.5, 0), "<dev string:x38>", self);
                                 record3dtext(abs(path[index - 1][2] - path[index][2]), path[index - 1], (1, 0, 0));
                             }
                         }
@@ -655,7 +654,7 @@ function zombieupdategoal() {
                             remaininglength = deviationdistance - segmentlength;
                             seedposition = path[index - 1] + vectornormalize(path[index] - path[index - 1]) * remaininglength;
                             /#
-                                recordcircle(seedposition, 2, (1, 0.5, 0), "<unknown string>", self);
+                                recordcircle(seedposition, 2, (1, 0.5, 0), "<dev string:x38>", self);
                             #/
                             innerzigzagradius = level.inner_zigzag_radius;
                             if (var_eb1c6f1c) {
@@ -732,7 +731,7 @@ function zombieupdategoalcode() {
                 /#
                     if (getdvarint(#"ai_debugzigzag", 0)) {
                         for (index = 1; index < path.size; index++) {
-                            recordline(path[index - 1], path[index], (1, 0.5, 0), "<unknown string>", self);
+                            recordline(path[index - 1], path[index], (1, 0.5, 0), "<dev string:x38>", self);
                         }
                     }
                 #/
@@ -744,7 +743,7 @@ function zombieupdategoalcode() {
                         remaininglength = deviationdistance - segmentlength;
                         seedposition = path[index - 1] + vectornormalize(path[index] - path[index - 1]) * remaininglength;
                         /#
-                            recordcircle(seedposition, 2, (1, 0.5, 0), "<unknown string>", self);
+                            recordcircle(seedposition, 2, (1, 0.5, 0), "<dev string:x38>", self);
                         #/
                         innerzigzagradius = level.inner_zigzag_radius;
                         outerzigzagradius = level.outer_zigzag_radius;
@@ -1360,7 +1359,7 @@ function findnodesservice(behaviortreeentity) {
             }
         }
         behaviortreeentity.entrance_nodes[behaviortreeentity.entrance_nodes.size] = node;
-        assert(isdefined(node), "<unknown string>" + behaviortreeentity.find_flesh_struct_string + "<unknown string>");
+        assert(isdefined(node), "<dev string:x45>" + behaviortreeentity.find_flesh_struct_string + "<dev string:x7a>");
         behaviortreeentity.first_node = node;
         goal_pos = getclosestpointonnavmesh(node.origin, 128, self getpathfindingradius());
         behaviortreeentity function_a57c34b7(goal_pos);
@@ -1721,7 +1720,7 @@ function notetrackboardtear(animationentity) {
 // Checksum 0x449f85b9, Offset: 0x7970
 // Size: 0x304
 function notetrackboardmelee(animationentity) {
-    assert(animationentity.meleeweapon != level.weaponnone, "<unknown string>");
+    assert(animationentity.meleeweapon != level.weaponnone, "<dev string:x8c>");
     if (isdefined(animationentity.first_node)) {
         meleedistsq = 8100;
         if (isdefined(level.attack_player_thru_boards_range)) {
@@ -1989,7 +1988,7 @@ function function_36b3cb7d(entity) {
 }
 
 // Namespace zm_behavior/zm_behavior
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0x743f78b8, Offset: 0x8740
 // Size: 0x100
 function function_7994fd99(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

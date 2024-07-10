@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace scriptbundle;
 
 // Namespace scriptbundle
@@ -27,7 +26,7 @@ class cscriptbundleobjectbase {
             if ([[ _o_scene ]]->is_testing()) {
                 scriptbundle::error_on_screen(str_msg);
             } else {
-                assertmsg([[ _o_scene ]]->get_type() + "<unknown string>" + function_9e72a96(_o_scene._str_name) + "<unknown string>" + (isdefined("<unknown string>") ? "<unknown string>" + "<unknown string>" : isdefined(_s.name) ? "<unknown string>" + _s.name : "<unknown string>") + "<unknown string>" + str_msg);
+                assertmsg([[ _o_scene ]]->get_type() + "<dev string:x58>" + function_9e72a96(_o_scene._str_name) + "<dev string:x5c>" + (isdefined("<dev string:x65>") ? "<dev string:x62>" + "<dev string:x65>" : isdefined(_s.name) ? "<dev string:x62>" + _s.name : "<dev string:x62>") + "<dev string:x6f>" + str_msg);
             }
             thread [[ _o_scene ]]->on_error();
             return true;
@@ -40,7 +39,7 @@ class cscriptbundleobjectbase {
     // Checksum 0x39078910, Offset: 0x178
     // Size: 0xcc
     function log(str_msg) {
-        println([[ _o_scene ]]->get_type() + "<unknown string>" + function_9e72a96(_o_scene._str_name) + "<unknown string>" + (isdefined("<unknown string>") ? "<unknown string>" + "<unknown string>" : isdefined(_s.name) ? "<unknown string>" + _s.name : "<unknown string>") + "<unknown string>" + str_msg);
+        println([[ _o_scene ]]->get_type() + "<dev string:x58>" + function_9e72a96(_o_scene._str_name) + "<dev string:x5c>" + (isdefined("<dev string:x65>") ? "<dev string:x62>" + "<dev string:x65>" : isdefined(_s.name) ? "<dev string:x62>" + _s.name : "<dev string:x62>") + "<dev string:x6f>" + str_msg);
     }
 
     // Namespace cscriptbundleobjectbase/scriptbundle_shared
@@ -51,7 +50,7 @@ class cscriptbundleobjectbase {
         _s = s_objdef;
         _o_scene = o_bundle;
         if (isdefined(e_ent)) {
-            assert(!isdefined(localclientnum) || e_ent.localclientnum == localclientnum, "<unknown string>");
+            assert(!isdefined(localclientnum) || e_ent.localclientnum == localclientnum, "<dev string:x38>");
             _n_clientnum = e_ent.localclientnum;
             _e_array[_n_clientnum] = e_ent;
             return;
@@ -90,7 +89,7 @@ class cscriptbundlebase {
         if (condition) {
             if (_testing) {
             } else {
-                assertmsg(_s.type + "<unknown string>" + function_9e72a96(_str_name) + "<unknown string>" + str_msg);
+                assertmsg(_s.type + "<dev string:x58>" + function_9e72a96(_str_name) + "<dev string:x74>" + str_msg);
             }
             thread on_error();
             return true;
@@ -103,7 +102,7 @@ class cscriptbundlebase {
     // Checksum 0x2574f772, Offset: 0x6b8
     // Size: 0x54
     function log(str_msg) {
-        println(_s.type + "<unknown string>" + _str_name + "<unknown string>" + str_msg);
+        println(_s.type + "<dev string:x58>" + _str_name + "<dev string:x74>" + str_msg);
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared

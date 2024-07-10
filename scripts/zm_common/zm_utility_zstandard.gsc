@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2595527427ea71eb;
 #using script_742a29771db74d6f;
 #using scripts\zm_common\util.gsc;
@@ -286,10 +285,10 @@ function function_9ac7ed7d(var_d147b93a, var_5cd8902e, var_70516a9d) {
     zm_powerups::add_zombie_powerup("zmarcade_key", var_d147b93a, #"hash_776da083d1ecf583", &zm_powerups::func_should_never_drop, 0, 0, 0);
     zm_powerups::powerup_set_statless_powerup("zmarcade_key");
     /#
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
     #/
     /#
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x8b>");
     #/
     wait(0.5);
     function_511ee23e(0);
@@ -438,7 +437,7 @@ function function_279ca150() {
 function drop_key(v_start_pos, var_b545186e = 0) {
     if (!function_880bd896()) {
         /#
-            iprintlnbold("<unknown string>" + level.var_92b13539 + "<unknown string>");
+            iprintlnbold("<dev string:xe1>" + level.var_92b13539 + "<dev string:xfd>");
         #/
         return;
     }
@@ -501,7 +500,7 @@ function function_34bcd465() {
     if (isplayer(e_player)) {
         /#
             if (n_timer > 0) {
-                iprintlnbold("<unknown string>" + e_player.name + "<unknown string>" + n_timer + "<unknown string>");
+                iprintlnbold("<dev string:x115>" + e_player.name + "<dev string:x12a>" + n_timer + "<dev string:x134>");
             }
         #/
         self dontinterpolate();
@@ -567,7 +566,7 @@ function function_c492c4d6(str_index, var_ed1db1a7, a_str_zones, a_str_next_defe
     } else if (!isarray(a_str_next_defend)) {
         a_str_next_defend = array(a_str_next_defend);
     }
-    assert(isdefined(struct::get(var_ed1db1a7)), "<unknown string>" + var_ed1db1a7 + "<unknown string>");
+    assert(isdefined(struct::get(var_ed1db1a7)), "<dev string:x13f>" + var_ed1db1a7 + "<dev string:x15b>");
     level.a_s_defend_areas[str_index] = {#var_ed1db1a7:var_ed1db1a7, #a_str_zones:a_str_zones, #a_str_next_defend:a_str_next_defend, #var_16a34df0:var_16a34df0, #var_39c44288:var_39c44288, #var_c13f5c4b:var_c13f5c4b, #var_9fc5eea1:var_9fc5eea1};
 }
 
@@ -580,9 +579,9 @@ function function_c492c4d6(str_index, var_ed1db1a7, a_str_zones, a_str_next_defe
     function function_1e856719() {
         a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
         foreach (str_index, s_defend_area in level.a_s_defend_areas) {
-            assert(isarray(s_defend_area.a_str_next_defend), "<unknown string>" + function_9e72a96(str_index) + "<unknown string>");
+            assert(isarray(s_defend_area.a_str_next_defend), "<dev string:x16d>" + function_9e72a96(str_index) + "<dev string:x17c>");
             foreach (str_next_defend in s_defend_area.a_str_next_defend) {
-                assert(isinarray(a_str_defend_areas, str_next_defend), "<unknown string>" + function_9e72a96(str_next_defend) + "<unknown string>");
+                assert(isinarray(a_str_defend_areas, str_next_defend), "<dev string:x16d>" + function_9e72a96(str_next_defend) + "<dev string:x1c1>");
             }
         }
     }
@@ -653,7 +652,7 @@ function function_defc6586(var_3d15828d, b_random = 1) {
 // Checksum 0xed4a8c6, Offset: 0x28f8
 // Size: 0x6c
 function function_a877cd10(str_index) {
-    assert(isdefined(level.a_s_defend_areas[str_index]), "<unknown string>" + function_9e72a96(str_index) + "<unknown string>");
+    assert(isdefined(level.a_s_defend_areas[str_index]), "<dev string:x1e0>" + function_9e72a96(str_index) + "<dev string:x1f0>");
     return level.a_s_defend_areas[str_index];
 }
 

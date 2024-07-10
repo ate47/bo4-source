@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
 #using scripts\core_common\gamestate.gsc;
@@ -172,7 +171,7 @@ function function_1deb2b38(var_b721e8a9) {
             waitframe(1);
         }
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>");
         level thread function_7eabf705();
     }
 
@@ -181,14 +180,14 @@ function function_1deb2b38(var_b721e8a9) {
     // Checksum 0x4304960a, Offset: 0xb68
     // Size: 0x10e
     function function_7eabf705() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x89>");
+        self endon("<dev string:x89>");
         level endon(#"game_ended");
         level endon(#"hash_671b150516dd9870");
         while (true) {
             if (getdvarint(#"hash_7e7b9e2edcf6d1ee", 0)) {
                 players = getplayers();
-                bathtub = struct::get(#"zombie_bathub", "<unknown string>");
+                bathtub = struct::get(#"zombie_bathub", "<dev string:x9c>");
                 function_613448ed(players[0], bathtub);
                 level notify(#"hash_671b150516dd9870");
                 break;

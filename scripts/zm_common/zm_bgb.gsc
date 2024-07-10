@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_powerups.gsc;
 #using scripts\zm_common\zm_perks.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -198,7 +197,7 @@ function private bgb_finalize() {
         v.stat_index = isdefined(var_ddcb67f4) && isdefined(var_ddcb67f4.var_2f8e25b8) ? var_ddcb67f4.var_2f8e25b8 : 0;
         var_5415dfb9 = function_b143666d(v.item_index, 2);
         if (!isdefined(var_ddcb67f4) || !isdefined(var_5415dfb9)) {
-            println("<unknown string>" + v.name + "<unknown string>");
+            println("<dev string:x38>" + v.name + "<dev string:x49>");
             continue;
         }
         if (!isdefined(var_5415dfb9.bgbrarity)) {
@@ -243,18 +242,18 @@ function private bgb_player_monitor() {
     // Size: 0x244
     function private setup_devgui() {
         waittillframeend();
-        setdvar(#"bgb_acquire_devgui", "<unknown string>");
+        setdvar(#"bgb_acquire_devgui", "<dev string:x79>");
         setdvar(#"hash_7877ee182ba11433", -1);
-        bgb_devgui_base = "<unknown string>";
+        bgb_devgui_base = "<dev string:x7c>";
         keys = getarraykeys(level.bgb);
         foreach (key in keys) {
             name = function_9e72a96(level.bgb[key].name);
-            adddebugcommand(bgb_devgui_base + name + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "<unknown string>");
+            adddebugcommand(bgb_devgui_base + name + "<dev string:x92>" + "<dev string:xa2>" + "<dev string:xb7>" + name + "<dev string:xbb>");
         }
-        adddebugcommand(bgb_devgui_base + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
+        adddebugcommand(bgb_devgui_base + "<dev string:xc1>" + "<dev string:xd6>" + "<dev string:xb7>" + "<dev string:xea>" + "<dev string:xbb>");
         for (i = 0; i < 4; i++) {
             playernum = i + 1;
-            adddebugcommand(bgb_devgui_base + "<unknown string>" + playernum + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>");
+            adddebugcommand(bgb_devgui_base + "<dev string:xef>" + playernum + "<dev string:x100>" + "<dev string:xd6>" + "<dev string:xb7>" + i + "<dev string:xbb>");
         }
         level thread bgb_devgui_think();
     }
@@ -266,10 +265,10 @@ function private bgb_player_monitor() {
     function private bgb_devgui_think() {
         for (;;) {
             var_522737d6 = getdvarstring(#"bgb_acquire_devgui");
-            if (var_522737d6 != "<unknown string>") {
+            if (var_522737d6 != "<dev string:x79>") {
                 bgb_devgui_acquire(var_522737d6);
             }
-            setdvar(#"bgb_acquire_devgui", "<unknown string>");
+            setdvar(#"bgb_acquire_devgui", "<dev string:x79>");
             wait(0.5);
         }
     }
@@ -303,13 +302,13 @@ function private bgb_player_monitor() {
     // Size: 0x142
     function private bgb_debug_text_display_init() {
         self.bgb_debug_text = newdebughudelem(self);
-        self.bgb_debug_text.elemtype = "<unknown string>";
-        self.bgb_debug_text.font = "<unknown string>";
+        self.bgb_debug_text.elemtype = "<dev string:x10a>";
+        self.bgb_debug_text.font = "<dev string:x111>";
         self.bgb_debug_text.fontscale = 1.8;
-        self.bgb_debug_text.horzalign = "<unknown string>";
-        self.bgb_debug_text.vertalign = "<unknown string>";
-        self.bgb_debug_text.alignx = "<unknown string>";
-        self.bgb_debug_text.aligny = "<unknown string>";
+        self.bgb_debug_text.horzalign = "<dev string:x11d>";
+        self.bgb_debug_text.vertalign = "<dev string:x124>";
+        self.bgb_debug_text.alignx = "<dev string:x11d>";
+        self.bgb_debug_text.aligny = "<dev string:x124>";
         self.bgb_debug_text.x = 15;
         self.bgb_debug_text.y = 35;
         self.bgb_debug_text.sort = 2;
@@ -332,15 +331,15 @@ function private bgb_player_monitor() {
         self endon(#"bgb_set_debug_text_thread", #"disconnect");
         self.bgb_debug_text fadeovertime(0.05);
         self.bgb_debug_text.alpha = 1;
-        prefix = "<unknown string>";
+        prefix = "<dev string:x12a>";
         short_name = name;
         if (issubstr(name, prefix)) {
             short_name = getsubstr(name, prefix.size);
         }
         if (isdefined(activations_remaining)) {
-            self.bgb_debug_text settext("<unknown string>" + short_name + "<unknown string>" + activations_remaining + "<unknown string>");
+            self.bgb_debug_text settext("<dev string:x134>" + short_name + "<dev string:x13c>" + activations_remaining + "<dev string:x160>");
         } else {
-            self.bgb_debug_text settext("<unknown string>" + short_name);
+            self.bgb_debug_text settext("<dev string:x134>" + short_name);
         }
         wait(1);
         if (#"none" == name) {
@@ -354,10 +353,10 @@ function private bgb_player_monitor() {
     // Checksum 0x9a6bd15, Offset: 0x18d0
     // Size: 0x114
     function bgb_print_stats(bgb) {
-        printtoprightln(function_9e72a96(bgb) + "<unknown string>" + self.bgb_stats[bgb].var_c2a984f0, (1, 1, 1));
-        printtoprightln(function_9e72a96(bgb) + "<unknown string>" + self.bgb_stats[bgb].bgb_used_this_game, (1, 1, 1));
+        printtoprightln(function_9e72a96(bgb) + "<dev string:x169>" + self.bgb_stats[bgb].var_c2a984f0, (1, 1, 1));
+        printtoprightln(function_9e72a96(bgb) + "<dev string:x185>" + self.bgb_stats[bgb].bgb_used_this_game, (1, 1, 1));
         n_available = self.bgb_stats[bgb].var_c2a984f0 - self.bgb_stats[bgb].bgb_used_this_game;
-        printtoprightln(function_9e72a96(bgb) + "<unknown string>" + n_available, (1, 1, 1));
+        printtoprightln(function_9e72a96(bgb) + "<dev string:x19c>" + n_available, (1, 1, 1));
     }
 
 #/
@@ -676,7 +675,7 @@ function private bgb_limit_monitor() {
         self playsoundtoplayer(#"hash_b8e60131176554b", self);
         break;
     default:
-        assert(0, "<unknown string>" + self.bgb + "<unknown string>" + level.bgb[self.bgb].limit_type + "<unknown string>");
+        assert(0, "<dev string:x1ab>" + self.bgb + "<dev string:x1cd>" + level.bgb[self.bgb].limit_type + "<dev string:x1df>");
         break;
     }
     self thread take();
@@ -976,27 +975,27 @@ function clear_timer() {
 // Checksum 0x9a63e2f5, Offset: 0x3958
 // Size: 0x54e
 function register(name, limit_type, limit, enable_func, disable_func, validation_func, activation_func) {
-    assert(isdefined(name), "<unknown string>");
-    assert(#"none" != name, "<unknown string>" + #"none" + "<unknown string>");
-    assert(!isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(limit_type), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(limit), "<unknown string>" + name + "<unknown string>");
-    assert(!isdefined(enable_func) || isfunctionptr(enable_func), "<unknown string>" + name + "<unknown string>");
-    assert(!isdefined(disable_func) || isfunctionptr(disable_func), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(name), "<dev string:x1f4>");
+    assert(#"none" != name, "<dev string:x21c>" + #"none" + "<dev string:x240>");
+    assert(!isdefined(level.bgb[name]), "<dev string:x279>" + name + "<dev string:x292>");
+    assert(isdefined(limit_type), "<dev string:x279>" + name + "<dev string:x2b2>");
+    assert(isdefined(limit), "<dev string:x279>" + name + "<dev string:x2d2>");
+    assert(!isdefined(enable_func) || isfunctionptr(enable_func), "<dev string:x279>" + name + "<dev string:x2ed>");
+    assert(!isdefined(disable_func) || isfunctionptr(disable_func), "<dev string:x279>" + name + "<dev string:x326>");
     switch (limit_type) {
     case #"activated":
-        assert(!isdefined(validation_func) || isfunctionptr(validation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
-        assert(isdefined(activation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
-        assert(isfunctionptr(activation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
+        assert(!isdefined(validation_func) || isfunctionptr(validation_func), "<dev string:x279>" + name + "<dev string:x360>" + limit_type + "<dev string:x3ae>");
+        assert(isdefined(activation_func), "<dev string:x279>" + name + "<dev string:x3b2>" + limit_type + "<dev string:x3ae>");
+        assert(isfunctionptr(activation_func), "<dev string:x279>" + name + "<dev string:x3e8>" + limit_type + "<dev string:x3ae>");
     case #"time":
     case #"rounds":
-        assert(isint(limit), "<unknown string>" + name + "<unknown string>" + limit + "<unknown string>" + limit_type + "<unknown string>");
+        assert(isint(limit), "<dev string:x279>" + name + "<dev string:x429>" + limit + "<dev string:x436>" + limit_type + "<dev string:x3ae>");
         break;
     case #"event":
-        assert(isfunctionptr(limit), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
+        assert(isfunctionptr(limit), "<dev string:x279>" + name + "<dev string:x45a>" + limit_type + "<dev string:x3ae>");
         break;
     default:
-        assert(0, "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
+        assert(0, "<dev string:x279>" + name + "<dev string:x1cd>" + limit_type + "<dev string:x1df>");
         break;
     }
     level.bgb[name] = spawnstruct();
@@ -1018,7 +1017,7 @@ function register(name, limit_type, limit, enable_func, disable_func, validation
 // Checksum 0x34b09894, Offset: 0x3eb0
 // Size: 0x72
 function register_actor_damage_override(name, actor_damage_override_func) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x491>" + name + "<dev string:x4c0>");
     level.bgb[name].actor_damage_override_func = actor_damage_override_func;
 }
 
@@ -1027,7 +1026,7 @@ function register_actor_damage_override(name, actor_damage_override_func) {
 // Checksum 0xc00e77fc, Offset: 0x3f30
 // Size: 0x72
 function register_vehicle_damage_override(name, vehicle_damage_override_func) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x4d9>" + name + "<dev string:x4c0>");
     level.bgb[name].vehicle_damage_override_func = vehicle_damage_override_func;
 }
 
@@ -1036,7 +1035,7 @@ function register_vehicle_damage_override(name, vehicle_damage_override_func) {
 // Checksum 0x49aacfd, Offset: 0x3fb0
 // Size: 0x72
 function register_actor_death_override(name, actor_death_override_func) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x50a>" + name + "<dev string:x4c0>");
     level.bgb[name].actor_death_override_func = actor_death_override_func;
 }
 
@@ -1045,7 +1044,7 @@ function register_actor_death_override(name, actor_death_override_func) {
 // Checksum 0xc912ab30, Offset: 0x4030
 // Size: 0x96
 function register_lost_perk_override(name, lost_perk_override_func, lost_perk_override_func_always_run) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x538>" + name + "<dev string:x4c0>");
     level.bgb[name].lost_perk_override_func = lost_perk_override_func;
     level.bgb[name].lost_perk_override_func_always_run = lost_perk_override_func_always_run;
 }
@@ -1055,7 +1054,7 @@ function register_lost_perk_override(name, lost_perk_override_func, lost_perk_ov
 // Checksum 0x20357908, Offset: 0x40d0
 // Size: 0x96
 function function_c2721e81(name, add_to_player_score_override_func, add_to_player_score_override_func_always_run) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x564>" + name + "<dev string:x4c0>");
     level.bgb[name].add_to_player_score_override_func = add_to_player_score_override_func;
     level.bgb[name].add_to_player_score_override_func_always_run = add_to_player_score_override_func_always_run;
 }
@@ -1065,7 +1064,7 @@ function function_c2721e81(name, add_to_player_score_override_func, add_to_playe
 // Checksum 0xe908a2f1, Offset: 0x4170
 // Size: 0x72
 function function_72469efe(name, var_50206ca3) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x59a>" + name + "<dev string:x4c0>");
     level.bgb[name].var_50206ca3 = var_50206ca3;
 }
 
@@ -1074,7 +1073,7 @@ function function_72469efe(name, var_50206ca3) {
 // Checksum 0x120462c4, Offset: 0x41f0
 // Size: 0x72
 function function_8a5d8cfb(name, var_f1f46d6b) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x5d2>" + name + "<dev string:x4c0>");
     level.bgb[name].var_f1f46d6b = var_f1f46d6b;
 }
 
@@ -1083,7 +1082,7 @@ function function_8a5d8cfb(name, var_f1f46d6b) {
 // Checksum 0x9ffe911c, Offset: 0x4270
 // Size: 0x72
 function function_be42abb0(name, var_f8d9ac8c) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x604>" + name + "<dev string:x4c0>");
     level.bgb[name].var_f8d9ac8c = var_f8d9ac8c;
 }
 
@@ -1092,7 +1091,7 @@ function function_be42abb0(name, var_f8d9ac8c) {
 // Checksum 0xc33da3ba, Offset: 0x42f0
 // Size: 0x6a
 function function_afe7b8e7(name) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x632>" + name + "<dev string:x4c0>");
     level.bgb[name].var_5a047886 = 1;
 }
 
@@ -1101,7 +1100,7 @@ function function_afe7b8e7(name) {
 // Checksum 0x6a2eeee8, Offset: 0x4368
 // Size: 0x6a
 function function_e1f37ce7(name) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x657>" + name + "<dev string:x4c0>");
     level.bgb[name].var_4a9b0cdc = 1;
 }
 
@@ -1110,8 +1109,8 @@ function function_e1f37ce7(name) {
 // Checksum 0x1cc868df, Offset: 0x43e0
 // Size: 0xa2
 function function_1fee6b3(name, n_rank) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(n_rank), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x657>" + name + "<dev string:x4c0>");
+    assert(isdefined(n_rank), "<dev string:x689>" + name + "<dev string:x6ae>");
     level.bgb[name].var_a1750d43 = n_rank;
 }
 
@@ -1124,7 +1123,7 @@ function give(name) {
     if (#"none" == name) {
         return;
     }
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x6d0>" + name + "<dev string:x4c0>");
     self notify(#"bgb_update", {#var_3aee8e4:name, #var_826ddd38:self.bgb});
     self notify("bgb_update_give_" + name);
     self.bgb = name;
@@ -1278,7 +1277,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
 }
 
 // Namespace bgb/zm_bgb
-// Params f, eflags: 0x1 linked
+// Params 15, eflags: 0x1 linked
 // Checksum 0xa05e1c2d, Offset: 0x4ec8
 // Size: 0x182
 function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {

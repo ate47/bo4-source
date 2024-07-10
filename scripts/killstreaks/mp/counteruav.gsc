@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\mp_common\teams\teams.gsc;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
@@ -260,7 +259,7 @@ function getfirstavailableoffsetindex() {
         }
     }
     /#
-        util::warning("<unknown string>");
+        util::warning("<dev string:x38>");
     #/
     return 0;
 }

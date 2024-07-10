@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\teams\teams.gsc;
 #using scripts\mp_common\gametypes\globallogic_utils.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
@@ -291,7 +290,7 @@ function private weapon_class_register(weaponname, weapon_type) {
         level.inventory_array[getweapon(weaponname)] = 1;
         return;
     }
-    assert(0, "head" + weapon_type + "<unknown string>" + weaponname);
+    assert(0, "<dev string:x38>" + weapon_type + "<dev string:x7b>" + weaponname);
 }
 
 // Namespace loadout/player_loadout
@@ -355,21 +354,21 @@ function private function_8624b793() {
                 continue;
             }
             reference_s = iteminfo.name;
-            if (reference_s == "<unknown string>") {
+            if (reference_s == "<dev string:x8b>") {
                 continue;
             }
             group_s = iteminfo.itemgroupname;
             display_name_s = iteminfo.displayname;
-            if (group_s == "<unknown string>") {
+            if (group_s == "<dev string:x8e>") {
                 dev::add_perk_devgui(display_name_s, reference_s);
                 continue;
             }
-            if (group_s == "<unknown string>") {
-                if (strstartswith(iteminfo.name, "<unknown string>")) {
-                    dev::function_8263c0d5(reference_s, "<unknown string>");
+            if (group_s == "<dev string:x9a>") {
+                if (strstartswith(iteminfo.name, "<dev string:xa3>")) {
+                    dev::function_8263c0d5(reference_s, "<dev string:xad>");
                     continue;
                 }
-                postfix = "<unknown string>" + sessionmodeabbreviation();
+                postfix = "<dev string:xb3>" + sessionmodeabbreviation();
                 dev::function_373068ca(reference_s, postfix);
             }
         }
@@ -437,7 +436,7 @@ function give_killstreaks() {
     for (killstreaknum = 0; killstreaknum < level.maxkillstreaks; killstreaknum++) {
         killstreakindex = get_killstreak_index(classnum, killstreaknum);
         if (isdefined(killstreakindex) && killstreakindex > 0) {
-            assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
+            assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<dev string:xb7>" + killstreakindex + "<dev string:xc7>");
             if (isdefined(level.tbl_killstreakdata[killstreakindex])) {
                 self.killstreak[currentkillstreak] = level.tbl_killstreakdata[killstreakindex];
                 if (isdefined(level.usingmomentum) && level.usingmomentum) {
@@ -633,7 +632,7 @@ function function_f436358b(weaponclass) {
         pixendevent();
     } else {
         pixbeginevent(#"default class");
-        assert(isdefined(self.pers[#"class"]), "<unknown string>");
+        assert(isdefined(self.pers[#"class"]), "<dev string:xde>");
         self.class_num_for_global_weapons = 0;
         self setplayerrenderoptions(0);
         pixendevent();
@@ -1179,16 +1178,16 @@ function private give_special_offhand(slot, previous_weapon) {
         specialoffhandcount = specialoffhand.startammo;
     }
     /#
-        if (getdvarstring(#"scr_herogadgetname_debug") != "<unknown string>") {
+        if (getdvarstring(#"scr_herogadgetname_debug") != "<dev string:x8b>") {
             herogadgetname = getdvarstring(#"scr_herogadgetname_debug");
             specialoffhand = level.weaponnone;
-            if (herogadgetname != "<unknown string>") {
+            if (herogadgetname != "<dev string:x10e>") {
                 specialoffhand = getweapon(herogadgetname);
             }
         }
     #/
     if (isdefined(self.pers[#"rouletteweapon"])) {
-        assert(specialoffhand.name == "<unknown string>");
+        assert(specialoffhand.name == "<dev string:x11c>");
         specialoffhand = self.pers[#"rouletteweapon"];
     }
     if (isitemrestricted(specialoffhand.name) || !function_50797a7f(specialoffhand.name)) {
@@ -1237,10 +1236,10 @@ function private give_ultimate(slot, previous_weapon) {
         var_36aac800 = ultimate.startammo;
     }
     /#
-        if (getdvarstring(#"hash_488ee9aa10c06400") != "<unknown string>") {
+        if (getdvarstring(#"hash_488ee9aa10c06400") != "<dev string:x8b>") {
             var_92d4ff6c = getdvarstring(#"hash_488ee9aa10c06400");
             ultimate = level.weaponnone;
-            if (var_92d4ff6c != "<unknown string>") {
+            if (var_92d4ff6c != "<dev string:x10e>") {
                 ultimate = getweapon(var_92d4ff6c);
             }
         }
@@ -1535,7 +1534,7 @@ function cac_modified_damage(victim, attacker, damage, mod, weapon, inflictor, h
         if (getdvarint(#"scr_perkdebug", 0)) {
             debug = 1;
             if (!isdefined(attacker.name)) {
-                attacker.name = "<unknown string>";
+                attacker.name = "<dev string:x12e>";
             }
         }
     #/
@@ -1546,14 +1545,14 @@ function cac_modified_damage(victim, attacker, damage, mod, weapon, inflictor, h
             if (victim hasperk(#"specialty_armorvest") && !function_4c80bca1(hitloc)) {
                 /#
                     if (debug) {
-                        println("<unknown string>" + victim.name + "<unknown string>" + attacker.name + "<unknown string>");
+                        println("<dev string:x138>" + victim.name + "<dev string:x142>" + attacker.name + "<dev string:x158>");
                     }
                 #/
             } else {
                 final_damage = damage * (100 + level.cac_bulletdamage_data) / 100;
                 /#
                     if (debug) {
-                        println("<unknown string>" + attacker.name + "<unknown string>" + victim.name);
+                        println("<dev string:x138>" + attacker.name + "<dev string:x175>" + victim.name);
                     }
                 #/
             }
@@ -1561,14 +1560,14 @@ function cac_modified_damage(victim, attacker, damage, mod, weapon, inflictor, h
             final_damage = damage * level.cac_armorvest_data * 0.01;
             /#
                 if (debug) {
-                    println("<unknown string>" + attacker.name + "<unknown string>" + victim.name);
+                    println("<dev string:x138>" + attacker.name + "<dev string:x19d>" + victim.name);
                 }
             #/
         } else if (victim hasperk(#"specialty_fireproof") && weapon_utils::isfiredamage(weapon, mod)) {
             final_damage = damage * level.cac_fireproof_data * 0.01;
             /#
                 if (debug) {
-                    println("<unknown string>" + attacker.name + "<unknown string>" + victim.name);
+                    println("<dev string:x138>" + attacker.name + "<dev string:x1c4>" + victim.name);
                 }
             #/
         } else if (!var_81ca51d && victim hasperk(#"specialty_flakjacket") && weapon_utils::isexplosivedamage(mod) && !weapon.ignoresflakjacket && !victim grenade_stuck(inflictor)) {
@@ -1576,7 +1575,7 @@ function cac_modified_damage(victim, attacker, damage, mod, weapon, inflictor, h
             final_damage = int(damage * cac_data / 100);
             /#
                 if (debug) {
-                    println("<unknown string>" + victim.name + "<unknown string>" + attacker.name + "<unknown string>");
+                    println("<dev string:x138>" + victim.name + "<dev string:x1e4>" + attacker.name + "<dev string:x200>");
                 }
             #/
         }
@@ -1589,7 +1588,7 @@ function cac_modified_damage(victim, attacker, damage, mod, weapon, inflictor, h
         victim.cac_debug_weapon = weapon.displayname;
         victim.cac_debug_range = int(distance(attacker.origin, victim.origin));
         if (debug) {
-            println("<unknown string>" + final_damage / damage + "<unknown string>" + damage + "<unknown string>" + final_damage);
+            println("<dev string:x214>" + final_damage / damage + "<dev string:x22d>" + damage + "<dev string:x23f>" + final_damage);
         }
     #/
     final_damage = int(final_damage);

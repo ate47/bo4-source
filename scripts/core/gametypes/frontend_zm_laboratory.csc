@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core\gametypes\frontend.csc;
 #using scripts\core_common\struct.csc;
 #using scripts\core_common\system_shared.csc;
@@ -133,25 +132,25 @@ function function_250232f4(localclientnum) {
     // Size: 0x410
     function private function_1a17b820(localclientnum) {
         var_596aaddb = 1;
-        var_89f688b8 = "mixer_03_bath_fluid_fx_jnt";
+        var_89f688b8 = "<dev string:x38>";
         foreach (var_5a5b2186 in level.var_49f26c00.var_9eec6f29) {
-            adddebugcommand(localclientnum, "state3" + var_5a5b2186 + "<unknown string>" + var_5a5b2186 + "<unknown string>");
+            adddebugcommand(localclientnum, "<dev string:x40>" + var_5a5b2186 + "<dev string:x71>" + var_5a5b2186 + "<dev string:x97>");
         }
         foreach (var_80090cfc in level.var_49f26c00.var_ece3d654) {
-            adddebugcommand(localclientnum, "<unknown string>" + var_80090cfc + "<unknown string>" + var_80090cfc + "<unknown string>");
+            adddebugcommand(localclientnum, "<dev string:x9c>" + var_80090cfc + "<dev string:xd8>" + var_80090cfc + "<dev string:x97>");
         }
-        adddebugcommand(localclientnum, "<unknown string>" + 1 + "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
-        adddebugcommand(localclientnum, "<unknown string>");
+        adddebugcommand(localclientnum, "<dev string:x104>" + 1 + "<dev string:x97>");
+        adddebugcommand(localclientnum, "<dev string:x161>");
+        adddebugcommand(localclientnum, "<dev string:x196>");
+        adddebugcommand(localclientnum, "<dev string:x1f2>");
+        adddebugcommand(localclientnum, "<dev string:x233>");
+        adddebugcommand(localclientnum, "<dev string:x274>");
+        adddebugcommand(localclientnum, "<dev string:x2b5>");
+        adddebugcommand(localclientnum, "<dev string:x32b>");
+        adddebugcommand(localclientnum, "<dev string:x3a1>");
         while (true) {
             var_509eb1e5 = getdvarint(#"hash_5001173ab674d344", 1);
-            var_74d08f2b = getdvarstring(#"hash_5de1ac7448993686", "mixer_03_bath_fluid_fx_jnt");
+            var_74d08f2b = getdvarstring(#"hash_5de1ac7448993686", "<dev string:x38>");
             var_8de02736 = getdvarint(#"hash_56728884d2904809", 0);
             waitframe(1);
             if (var_509eb1e5 != var_596aaddb || var_74d08f2b != var_89f688b8) {
@@ -176,9 +175,9 @@ function function_250232f4(localclientnum) {
         level endoncallback(&function_d160164e, #"end_controller_pulse", #"hash_79bbc4f96a28b094");
         level scene::init(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
         level scene::init(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle");
-        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "<unknown string>");
-        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "<unknown string>");
-        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "<unknown string>");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "<dev string:x417>");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "<dev string:x417>");
+        level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "<dev string:x417>");
         level.var_32f68719 = 1;
         wait(3);
         while (true) {
@@ -196,50 +195,50 @@ function function_250232f4(localclientnum) {
     // Checksum 0x486d5c42, Offset: 0x2388
     // Size: 0x6f6
     function function_66051772() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x424>");
+        self endon("<dev string:x424>");
         level endon(#"hash_79bbc4f96a28b094", #"laboratory_closed");
         if (getdvarint(#"hash_510a173ea851eab1", 0)) {
             return;
         }
         while (true) {
             if (level flag::get(#"laboratory_activated")) {
-                debug2dtext((35, 60, 0), "<unknown string>", (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 60, 0), "<dev string:x437>", (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             } else {
-                debug2dtext((35, 60, 0), "<unknown string>", (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 60, 0), "<dev string:x442>", (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             }
-            debug2dtext((35, 80, 0), "<unknown string>" + level.var_49f26c00.var_3e14626f, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+            debug2dtext((35, 80, 0), "<dev string:x455>" + level.var_49f26c00.var_3e14626f, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             switch (level.var_49f26c00.var_8a28a9a) {
             case #"blue":
-                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (0, 0, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 110, 0), "<dev string:x469>" + level.var_49f26c00.var_8a28a9a, (0, 0, 1), 1, (0, 0, 0), 1, 1, 1);
                 break;
             case #"gold":
-                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (1, 1, 0), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 110, 0), "<dev string:x469>" + level.var_49f26c00.var_8a28a9a, (1, 1, 0), 1, (0, 0, 0), 1, 1, 1);
                 break;
             case #"grey":
-                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (0.75, 0.75, 0.75), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 110, 0), "<dev string:x469>" + level.var_49f26c00.var_8a28a9a, (0.75, 0.75, 0.75), 1, (0, 0, 0), 1, 1, 1);
                 break;
             case #"orange":
-                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (1, 0.5, 0), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 110, 0), "<dev string:x469>" + level.var_49f26c00.var_8a28a9a, (1, 0.5, 0), 1, (0, 0, 0), 1, 1, 1);
                 break;
             case #"purple":
-                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (1, 0, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 110, 0), "<dev string:x469>" + level.var_49f26c00.var_8a28a9a, (1, 0, 1), 1, (0, 0, 0), 1, 1, 1);
                 break;
             case #"green":
             case #"white":
-                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 110, 0), "<dev string:x469>" + level.var_49f26c00.var_8a28a9a, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
                 break;
             }
-            debug2dtext((35, 130, 0), "<unknown string>" + level.var_49f26c00.var_9af0d684, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+            debug2dtext((35, 130, 0), "<dev string:x473>" + level.var_49f26c00.var_9af0d684, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             if (level flag::get(#"laboratory_activated")) {
-                var_28da8e7b = isdefined(level.var_49f26c00.var_6138b381) ? level.var_49f26c00.var_6138b381 : "<unknown string>";
-                var_37982bf6 = isdefined(level.var_49f26c00.var_887781fe) ? level.var_49f26c00.var_887781fe : "<unknown string>";
-                var_544c750 = isdefined(level.var_49f26c00.var_84c77a9e) ? level.var_49f26c00.var_84c77a9e : "<unknown string>";
-                str_talisman = isdefined(level.var_49f26c00.var_f6e518bb) ? level.var_49f26c00.var_f6e518bb : "<unknown string>";
-                debug2dtext((35, 150, 0), "<unknown string>" + function_9e72a96(var_28da8e7b), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
-                debug2dtext((35, 170, 0), "<unknown string>" + function_9e72a96(var_37982bf6), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
-                debug2dtext((35, 190, 0), "<unknown string>" + function_9e72a96(var_544c750), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
-                debug2dtext((35, 210, 0), "<unknown string>" + function_9e72a96(str_talisman), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                var_28da8e7b = isdefined(level.var_49f26c00.var_6138b381) ? level.var_49f26c00.var_6138b381 : "<dev string:x482>";
+                var_37982bf6 = isdefined(level.var_49f26c00.var_887781fe) ? level.var_49f26c00.var_887781fe : "<dev string:x482>";
+                var_544c750 = isdefined(level.var_49f26c00.var_84c77a9e) ? level.var_49f26c00.var_84c77a9e : "<dev string:x482>";
+                str_talisman = isdefined(level.var_49f26c00.var_f6e518bb) ? level.var_49f26c00.var_f6e518bb : "<dev string:x482>";
+                debug2dtext((35, 150, 0), "<dev string:x485>" + function_9e72a96(var_28da8e7b), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 170, 0), "<dev string:x491>" + function_9e72a96(var_37982bf6), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 190, 0), "<dev string:x49d>" + function_9e72a96(var_544c750), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 210, 0), "<dev string:x4a9>" + function_9e72a96(str_talisman), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             }
             waitframe(1);
         }
@@ -1648,15 +1647,15 @@ function function_d4f9b895(localclientnum, a_ents) {
     // Checksum 0x416caec4, Offset: 0x99c0
     // Size: 0x1ee
     function function_feeedd3d(var_7194cc97) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x4b6>");
+        self endon("<dev string:x4b6>");
         var_7194cc97 endon(#"death");
         var_7194cc97.var_a27a4e60 endon(#"death");
         while (true) {
-            debug2dtext((1300, 80, 0), "<unknown string>" + var_7194cc97 gettagangles("<unknown string>"), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
-            debug2dtext((1300, 80 + 20, 0), "<unknown string>" + var_7194cc97.var_a27a4e60.angles, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
-            debug2dtext((1300, 80 + 40, 0), "<unknown string>" + var_7194cc97 gettagangles("<unknown string>"), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
-            debug2dtext((1300, 80 + 60, 0), "<unknown string>" + var_7194cc97.var_850f1956.angles, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+            debug2dtext((1300, 80, 0), "<dev string:x4c9>" + var_7194cc97 gettagangles("<dev string:x4ef>"), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+            debug2dtext((1300, 80 + 20, 0), "<dev string:x50c>" + var_7194cc97.var_a27a4e60.angles, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+            debug2dtext((1300, 80 + 40, 0), "<dev string:x526>" + var_7194cc97 gettagangles("<dev string:x4ef>"), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
+            debug2dtext((1300, 80 + 60, 0), "<dev string:x53b>" + var_7194cc97.var_850f1956.angles, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             waitframe(1);
         }
     }
@@ -1857,7 +1856,7 @@ function function_8cd01001(localclientnum, var_77a22652, var_bd6d31e7, var_db346
     var_7953f5b8 = function_18d7cd9b(localclientnum, 2);
     var_6b14d93a = function_18d7cd9b(localclientnum, 3);
     if (!isdefined(var_469e104d) || !isdefined(var_7953f5b8) || !isdefined(var_6b14d93a)) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x54e>");
         return;
     }
     var_7ebd7c4f = level.var_49f26c00.var_f538d7d4[var_469e104d];

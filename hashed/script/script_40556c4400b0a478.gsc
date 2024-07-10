@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_devgui.gsc;
 #using scripts\zm\ai\zm_ai_brutus.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -43,8 +42,8 @@ function private function_e67297f2() {
     // Checksum 0xa1fe1b08, Offset: 0x1b0
     // Size: 0x5c
     function private function_f2cc1ec() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x89>");
         zm_devgui::add_custom_devgui_callback(&function_5162a3de);
     }
 

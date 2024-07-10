@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_ui_inventory.gsc;
 #using scripts\zm_common\zm_pack_a_punch_util.gsc;
@@ -324,7 +323,7 @@ function function_61748fa3() {
     function_306b4f35(1);
     level.var_25e38adf++;
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     while (true) {
         level waittill(#"end_of_round");
@@ -600,11 +599,11 @@ function pap_machine_rune_on() {
     // Size: 0x74
     function function_765118cf() {
         level.s_pap_quest.var_4ee2e2ab = 0;
-        if (!level flag::get("<unknown string>")) {
+        if (!level flag::get("<dev string:x50>")) {
             level waittill(#"stairs_pap_location");
         }
         wait(0.1);
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x7e>");
     }
 
     // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
@@ -612,8 +611,8 @@ function pap_machine_rune_on() {
     // Checksum 0x68b8a1cb, Offset: 0x2900
     // Size: 0xba
     function function_83d342c7() {
-        level flag::wait_till("<unknown string>");
-        var_4c043770 = getent("<unknown string>", "<unknown string>");
+        level flag::wait_till("<dev string:x93>");
+        var_4c043770 = getent("<dev string:xa9>", "<dev string:xc1>");
         if (!isdefined(var_4c043770)) {
             return;
         }
@@ -630,11 +629,11 @@ function pap_machine_rune_on() {
     // Checksum 0x784b4224, Offset: 0x29c8
     // Size: 0x82
     function function_d7dc7c3e(var_c8407ea2) {
-        self clientfield::set("<unknown string>", var_c8407ea2);
+        self clientfield::set("<dev string:xce>", var_c8407ea2);
         wait(3);
-        self clientfield::set("<unknown string>", var_c8407ea2);
+        self clientfield::set("<dev string:xe3>", var_c8407ea2);
         wait(3);
-        self clientfield::set("<unknown string>", 0);
+        self clientfield::set("<dev string:xe3>", 0);
         wait(2);
     }
 
@@ -643,9 +642,9 @@ function pap_machine_rune_on() {
     // Checksum 0x7fd07be8, Offset: 0x2a58
     // Size: 0x5a
     function function_a2a8d76e(var_c8407ea2) {
-        self clientfield::set("<unknown string>", var_c8407ea2);
+        self clientfield::set("<dev string:xfa>", var_c8407ea2);
         wait(3);
-        self clientfield::set("<unknown string>", 1);
+        self clientfield::set("<dev string:xfa>", 1);
         wait(2);
     }
 
@@ -662,12 +661,12 @@ function pap_machine_rune_on() {
         var_56692417 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 20);
         var_1e3527a8 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 0);
         while (true) {
-            print3d(var_710f09a8, "<unknown string>" + self getzbarrierpiecestate(0));
-            print3d(var_737189c4, "<unknown string>" + self getzbarrierpiecestate(1));
-            print3d(var_c1f4ccaf, "<unknown string>" + self getzbarrierpiecestate(2));
-            print3d(var_743fd60c, "<unknown string>" + self getzbarrierpiecestate(3));
-            print3d(var_56692417, "<unknown string>" + self getzbarrierpiecestate(4));
-            print3d(var_1e3527a8, "<unknown string>" + self getzbarrierpiecestate(5));
+            print3d(var_710f09a8, "<dev string:x10d>" + self getzbarrierpiecestate(0));
+            print3d(var_737189c4, "<dev string:x116>" + self getzbarrierpiecestate(1));
+            print3d(var_c1f4ccaf, "<dev string:x11f>" + self getzbarrierpiecestate(2));
+            print3d(var_743fd60c, "<dev string:x128>" + self getzbarrierpiecestate(3));
+            print3d(var_56692417, "<dev string:x131>" + self getzbarrierpiecestate(4));
+            print3d(var_1e3527a8, "<dev string:x13a>" + self getzbarrierpiecestate(5));
             waitframe(1);
         }
     }

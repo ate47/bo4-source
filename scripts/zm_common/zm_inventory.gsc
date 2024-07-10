@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_maptable.gsc;
 #using scripts\core_common\util_shared.gsc;
 

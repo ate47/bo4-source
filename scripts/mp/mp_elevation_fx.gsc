@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_elevation_fx;
 
 // Namespace mp_elevation_fx/mp_elevation_fx

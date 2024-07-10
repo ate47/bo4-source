@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_tutorial_skirmish.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\struct.csc;
@@ -224,11 +223,11 @@ function compare_zone_indicies(zone_a, zone_b) {
         return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
-        println("<unknown string>" + zone_a.origin);
+        println("<dev string:x38>" + zone_a.origin);
         return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
-        println("<unknown string>" + zone_b.origin);
+        println("<dev string:x38>" + zone_b.origin);
         return false;
     }
     if (script_index_a > script_index_b) {

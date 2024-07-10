@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 
 #namespace as_debug;
@@ -168,7 +167,7 @@
         state.statevalid = 1;
         self.debuginfo.statelevel++;
         if (isdefined(extrainfo)) {
-            state.extrainfo = extrainfo + "<unknown string>";
+            state.extrainfo = extrainfo + "<dev string:x38>";
         }
         self.debuginfo.states[self.debuginfo.states.size] = state;
     }
@@ -191,9 +190,9 @@
                 assert(isdefined(self.debuginfo.states[i]));
                 if (self.debuginfo.states[i].statename == statename) {
                     if (!isdefined(self.debuginfo.states[i].extrainfo)) {
-                        self.debuginfo.states[i].extrainfo = "<unknown string>";
+                        self.debuginfo.states[i].extrainfo = "<dev string:x3c>";
                     }
-                    self.debuginfo.states[i].extrainfo = self.debuginfo.states[i].extrainfo + extrainfo + "<unknown string>";
+                    self.debuginfo.states[i].extrainfo = self.debuginfo.states[i].extrainfo + extrainfo + "<dev string:x38>";
                     break;
                 }
             }
@@ -203,9 +202,9 @@
             lastindex = self.debuginfo.states.size - 1;
             assert(isdefined(self.debuginfo.states[lastindex]));
             if (!isdefined(self.debuginfo.states[lastindex].extrainfo)) {
-                self.debuginfo.states[lastindex].extrainfo = "<unknown string>";
+                self.debuginfo.states[lastindex].extrainfo = "<dev string:x3c>";
             }
-            self.debuginfo.states[lastindex].extrainfo = self.debuginfo.states[lastindex].extrainfo + extrainfo + "<unknown string>";
+            self.debuginfo.states[lastindex].extrainfo = self.debuginfo.states[lastindex].extrainfo + extrainfo + "<dev string:x38>";
         }
     }
 
@@ -289,9 +288,9 @@
     // Checksum 0x14a25a30, Offset: 0x1088
     // Size: 0x5c
     function indent(depth) {
-        indent = "<unknown string>";
+        indent = "<dev string:x3c>";
         for (i = 0; i < depth; i++) {
-            indent += "<unknown string>";
+            indent += "<dev string:x38>";
         }
         return indent;
     }
@@ -329,11 +328,11 @@
         }
         if (weight <= midvalue) {
             redcolor = 1 - abs((weight - lowestvalue) / halfdeltavalue);
-            recordcircle(point, 2, (redcolor, 0, 0), "<unknown string>", entity);
+            recordcircle(point, 2, (redcolor, 0, 0), "<dev string:x3f>", entity);
             return;
         }
         greencolor = 1 - abs((highestvalue - weight) / halfdeltavalue);
-        recordcircle(point, 2, (0, greencolor, 0), "<unknown string>", entity);
+        recordcircle(point, 2, (0, greencolor, 0), "<dev string:x3f>", entity);
     }
 
     // Namespace as_debug/debug

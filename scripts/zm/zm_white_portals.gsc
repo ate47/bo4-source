@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\zm_crafting.gsc;
 #using scripts\zm_common\zm_item_pickup.gsc;
@@ -877,7 +876,7 @@ function function_a09d62f1() {
             break;
         default:
             /#
-                iprintlnbold("model");
+                iprintlnbold("<dev string:x38>");
             #/
             break;
         }
@@ -1147,7 +1146,7 @@ function function_35babccd(ent) {
         }
         index = (index + 1) % floor_count;
     }
-    println("<unknown string>");
+    println("<dev string:x61>");
     return ent.floor_num;
 }
 

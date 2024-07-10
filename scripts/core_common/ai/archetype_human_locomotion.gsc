@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai_shared.gsc;
 #using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
 #using scripts\core_common\ai\systems\behavior_state_machine.gsc;
@@ -593,8 +592,8 @@ function private planhumanarrivalatcover(behaviortreeentity, arrivalanim) {
                 right = vectorscale(rightdir, premovedelta[1]);
                 coverenterpos = coverenterpos - forward + right;
                 /#
-                    recordline(postenterpos, nodeoffsetposition, (1, 0.5, 0), "<unknown string>", behaviortreeentity);
-                    recordline(coverenterpos, postenterpos, (1, 0.5, 0), "<unknown string>", behaviortreeentity);
+                    recordline(postenterpos, nodeoffsetposition, (1, 0.5, 0), "<dev string:x38>", behaviortreeentity);
+                    recordline(coverenterpos, postenterpos, (1, 0.5, 0), "<dev string:x38>", behaviortreeentity);
                 #/
                 if (!behaviortreeentity maymovefrompointtopoint(postenterpos, nodeoffsetposition, 1, 0)) {
                     return false;
@@ -618,7 +617,7 @@ function private planhumanarrivalatcover(behaviortreeentity, arrivalanim) {
             }
             if (ispointonnavmesh(coverenterpos, behaviortreeentity)) {
                 /#
-                    recordcircle(coverenterpos, 2, (1, 0, 0), "<unknown string>", behaviortreeentity);
+                    recordcircle(coverenterpos, 2, (1, 0, 0), "<dev string:x45>", behaviortreeentity);
                 #/
                 behaviortreeentity function_a57c34b7(coverenterpos, behaviortreeentity.pathgoalpos);
                 return true;
@@ -643,12 +642,12 @@ function private checkcoverarrivalconditions(coverenterpos, coverpos) {
     if (isdefined(trace[#"position"]) && abs(trace[#"position"][2] - coverpos[2]) > 30) {
         /#
             if (getdvarint(#"ai_debugarrivals", 0)) {
-                recordcircle(coverenterpos, 1, (1, 0, 0), "<unknown string>");
-                record3dtext("<unknown string>", coverenterpos, (1, 0, 0), "<unknown string>", undefined, 0.4);
-                recordcircle(trace[#"position"], 1, (1, 0, 0), "<unknown string>");
-                record3dtext("<unknown string>" + int(abs(trace[#"position"][2] - coverpos[2])), trace[#"position"] + (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
-                record3dtext("<unknown string>" + 30, trace[#"position"], (1, 0, 0), "<unknown string>", undefined, 0.4);
-                recordline(coverenterpos, trace[#"position"], (1, 0, 0), "<unknown string>");
+                recordcircle(coverenterpos, 1, (1, 0, 0), "<dev string:x38>");
+                record3dtext("<dev string:x4e>", coverenterpos, (1, 0, 0), "<dev string:x38>", undefined, 0.4);
+                recordcircle(trace[#"position"], 1, (1, 0, 0), "<dev string:x38>");
+                record3dtext("<dev string:x67>" + int(abs(trace[#"position"][2] - coverpos[2])), trace[#"position"] + (0, 0, 5), (1, 0, 0), "<dev string:x38>", undefined, 0.4);
+                record3dtext("<dev string:x7e>" + 30, trace[#"position"], (1, 0, 0), "<dev string:x38>", undefined, 0.4);
+                recordline(coverenterpos, trace[#"position"], (1, 0, 0), "<dev string:x38>");
             }
         #/
         return false;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace perks;
 
 // Namespace perks/perks
@@ -12,8 +11,8 @@ function perk_setperk(str_perk) {
     if (!isdefined(self.var_fb3c9d6a[str_perk])) {
         self.var_fb3c9d6a[str_perk] = 0;
     }
-    assert(self.var_fb3c9d6a[str_perk] >= 0, "<unknown string>");
-    assert(self.var_fb3c9d6a[str_perk] < 23, "<unknown string>");
+    assert(self.var_fb3c9d6a[str_perk] >= 0, "<dev string:x38>");
+    assert(self.var_fb3c9d6a[str_perk] < 23, "<dev string:x52>");
     self.var_fb3c9d6a[str_perk]++;
     self setperk(str_perk);
 }
@@ -30,7 +29,7 @@ function perk_unsetperk(str_perk) {
         self.var_fb3c9d6a[str_perk] = 0;
     }
     self.var_fb3c9d6a[str_perk]--;
-    assert(self.var_fb3c9d6a[str_perk] >= 0, "<unknown string>");
+    assert(self.var_fb3c9d6a[str_perk] >= 0, "<dev string:x38>");
     if (self.var_fb3c9d6a[str_perk] <= 0) {
         self unsetperk(str_perk);
     }

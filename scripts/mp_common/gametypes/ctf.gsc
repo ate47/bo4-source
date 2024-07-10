@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\mp\gadgets\gadget_smart_cover.gsc;
 #using scripts\abilities\mp\gadgets\gadget_concertina_wire.gsc;
 #using scripts\mp_common\util.gsc;
@@ -476,7 +475,7 @@ function ctf() {
     flag_triggers = getentarray("ctf_flag_pickup_trig", "targetname");
     if (!isdefined(flag_triggers) || flag_triggers.size != 2) {
         /#
-            util::error("mpl_flagdrop_sting_friend");
+            util::error("<dev string:x38>");
         #/
         return;
     }
@@ -491,7 +490,7 @@ function ctf() {
     flag_zones = getentarray("ctf_flag_zone_trig", "targetname");
     if (!isdefined(flag_zones) || flag_zones.size != 2) {
         /#
-            util::error("<unknown string>");
+            util::error("<dev string:x7c>");
         #/
         return;
     }
@@ -622,9 +621,9 @@ function ondrop(player) {
     globallogic_audio::leader_dialog("ctfEnemyFlagDropped", otherteam, undefined, "ctf_flag_enemy");
     /#
         if (isdefined(player)) {
-            print(team + "<unknown string>");
+            print(team + "<dev string:xbe>");
         } else {
-            print(team + "<unknown string>");
+            print(team + "<dev string:xbe>");
         }
     #/
     if (isdefined(player)) {
@@ -698,9 +697,9 @@ function onpickup(player) {
         self returnflag();
         /#
             if (isdefined(player)) {
-                print(team + "<unknown string>");
+                print(team + "<dev string:xce>");
             } else {
-                print(team + "<unknown string>");
+                print(team + "<dev string:xce>");
             }
         #/
         util::function_5a68c330(12, player.team, player getentitynumber());
@@ -758,7 +757,7 @@ function onpickup(player) {
     player thread claim_trigger(level.flaghints[otherteam]);
     update_hints();
     /#
-        print(team + "<unknown string>");
+        print(team + "<dev string:xdf>");
     #/
     ss = level.spawnsystem;
     player_team_mask = util::getteammask(otherteam);
@@ -868,7 +867,7 @@ function oncapture(player) {
     globallogic_audio::play_2d_on_team("mpl_flagcapture_sting_friend", team);
     player giveflagcapturexp(player);
     /#
-        print(enemyteam + "<unknown string>");
+        print(enemyteam + "<dev string:xed>");
     #/
     flag = player.carryobject;
     player challenges::capturedobjective(time, flag.trigger);

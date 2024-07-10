@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\scoreevents.gsc;
 #using scripts\mp_common\callbacks.gsc;
@@ -1639,7 +1638,7 @@ function givekillstats(smeansofdeath, weapon, evictim, var_e7a369ea) {
     waittillframeend();
     if (level.rankedmatch && self [[ level.iskillboosting ]]()) {
         /#
-            self iprintlnbold("<unknown string>");
+            self iprintlnbold("<dev string:x38>");
         #/
         return;
     }
@@ -1870,8 +1869,8 @@ function function_e7b4c25c(nemesis_name, value, nemesis_rank, var_15574043, neme
     self.pers[#"nemesis_tracking"][nemesis_name].value = self.pers[#"nemesis_tracking"][nemesis_name].value + value;
     var_b5c193c6 = self.pers[#"nemesis_tracking"][self.pers[#"nemesis_name"]];
     if (self.pers[#"nemesis_name"] == "" || !isdefined(var_b5c193c6) || self.pers[#"nemesis_tracking"][nemesis_name].value > var_b5c193c6.value) {
-        assert(isdefined(nemesis_name), "<unknown string>" + self.name);
-        assert(isstring(nemesis_name), "<unknown string>" + nemesis_name + "<unknown string>" + self.name);
+        assert(isdefined(nemesis_name), "<dev string:x81>" + self.name);
+        assert(isstring(nemesis_name), "<dev string:xa4>" + nemesis_name + "<dev string:xaf>" + self.name);
         self.pers[#"nemesis_name"] = nemesis_name;
         self.pers[#"nemesis_rank"] = nemesis_rank;
         self.pers[#"nemesis_rankicon"] = var_15574043;

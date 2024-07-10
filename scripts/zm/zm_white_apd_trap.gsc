@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_trap_electric.gsc;
 #using scripts\zm\zm_lightning_chain.gsc;
 #using scripts\zm\zm_white_util.gsc;

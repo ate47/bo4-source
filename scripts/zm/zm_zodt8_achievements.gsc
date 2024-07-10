@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -69,7 +68,7 @@ function function_55aa3c20() {
     level endon(#"end_game");
     level flagsys::wait_till(#"hash_25d8c88ff3f91ee5");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     zm_utility::giveachievement_wrapper("ZM_ZODT8_ARTIFACT", 1);
 }
@@ -89,7 +88,7 @@ function function_25c39229() {
         b_success = self function_6e60e5b8();
         if (isdefined(b_success) && b_success) {
             /#
-                iprintlnbold("<unknown string>" + self getentnum());
+                iprintlnbold("<dev string:x6b>" + self getentnum());
             #/
             self zm_utility::giveachievement_wrapper("ZM_ZODT8_STOWAWAY", 0);
             self notify(#"hash_10404a179a65cd64");
@@ -150,7 +149,7 @@ function function_6b34cb92() {
         if (level.round_number >= 20) {
             wait(2);
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x8e>");
             #/
             zm_utility::giveachievement_wrapper("ZM_ZODT8_DEEP_END", 1);
             return;
@@ -184,7 +183,7 @@ function function_d814403c() {
                     wait(1);
                     if (isdefined(self)) {
                         /#
-                            iprintlnbold("<unknown string>" + self getentnum());
+                            iprintlnbold("<dev string:xbd>" + self getentnum());
                         #/
                         self zm_utility::giveachievement_wrapper("ZM_ZODT8_LITTLE_PACK", 0);
                         self.var_6ba87fa = undefined;
@@ -223,7 +222,7 @@ function function_1b454689() {
                     wait(1);
                     if (isdefined(self)) {
                         /#
-                            iprintlnbold("<unknown string>" + self getentnum());
+                            iprintlnbold("<dev string:xed>" + self getentnum());
                         #/
                         self zm_utility::giveachievement_wrapper("ZM_ZODT8_SHORTCUT", 0);
                         self.var_b5982a89 = undefined;
@@ -246,7 +245,7 @@ function function_46c56964() {
     while (true) {
         /#
             if (self.var_574b5261) {
-                iprintln("<unknown string>" + self.var_574b5261);
+                iprintln("<dev string:x119>" + self.var_574b5261);
             }
         #/
         waitresult = self waittill(#"weapon_fired", #"weapon_switch_started", #"offhand_fire", #"grenade_pullback");
@@ -278,7 +277,7 @@ function function_e7750e06(params) {
         }
         if (self.var_574b5261 >= 9) {
             /#
-                iprintlnbold("<unknown string>" + self getentnum());
+                iprintlnbold("<dev string:x130>" + self getentnum());
             #/
             self zm_utility::giveachievement_wrapper("ZM_ZODT8_TENTACLE", 0);
             self notify(#"hash_7ef6edd06b06d480");
@@ -300,7 +299,7 @@ function function_ec3040dd() {
     while (true) {
         if (self.var_7f491224 >= 3) {
             /#
-                iprintlnbold("<unknown string>" + self getentnum());
+                iprintlnbold("<dev string:x15d>" + self getentnum());
             #/
             self zm_utility::giveachievement_wrapper("ZM_ZODT8_STOKING", 0);
             self.var_8c5df11c = 1;
@@ -327,7 +326,7 @@ function function_79182658() {
     }
     self.var_7f491224++;
     /#
-        iprintln("<unknown string>" + self.var_7f491224);
+        iprintln("<dev string:x18a>" + self.var_7f491224);
     #/
 }
 
@@ -345,13 +344,13 @@ function function_52f9045f() {
     while (true) {
         /#
             if (self.var_2b642048 != var_1c5c067e) {
-                iprintln("<unknown string>" + self.var_2b642048);
+                iprintln("<dev string:x1a2>" + self.var_2b642048);
                 var_1c5c067e = self.var_2b642048;
             }
         #/
         if (self.var_2b642048 >= 9) {
             /#
-                iprintlnbold("<unknown string>" + self getentnum());
+                iprintlnbold("<dev string:x1b9>" + self getentnum());
             #/
             self zm_utility::giveachievement_wrapper("ZM_ZODT8_ROCK_PAPER", 0);
             return;
@@ -382,13 +381,13 @@ function function_b97662b6() {
     while (true) {
         /#
             if (self.var_9e1be4c6 != var_1c5c067e) {
-                iprintln("<unknown string>" + self.var_9e1be4c6);
+                iprintln("<dev string:x1e5>" + self.var_9e1be4c6);
                 var_1c5c067e = self.var_9e1be4c6;
             }
         #/
         if (self.var_9e1be4c6 >= 50) {
             /#
-                iprintlnbold("<unknown string>" + self getentnum());
+                iprintlnbold("<dev string:x1fa>" + self getentnum());
             #/
             self zm_utility::giveachievement_wrapper("ZM_ZODT8_SWIMMING", 0);
             return;

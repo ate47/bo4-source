@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.csc;
 #using scripts\core_common\callbacks_shared.csc;
 #using scripts\core_common\vehicleriders_shared.csc;
@@ -314,7 +313,7 @@ function play_exhaust(localclientnum) {
     }
     if (isdefined(self.exhaust_fx) && isdefined(self.exhaustfxtag1)) {
         if (isalive(self)) {
-            assert(isdefined(self.exhaustfxtag1), self.vehicletype + "toplayer");
+            assert(isdefined(self.exhaustfxtag1), self.vehicletype + "<dev string:x38>");
             self endon(#"death");
             self util::waittill_dobj(localclientnum);
             self.exhaust_id_left = util::playfxontag(localclientnum, self.exhaust_fx, self, self.exhaustfxtag1);
@@ -376,7 +375,7 @@ function play_boost(localclientnum, var_a7ba3864) {
     }
     if (isdefined(var_121afd6f)) {
         if (isalive(self)) {
-            assert(isdefined(var_c1da0b13), self.vehicletype + "<unknown string>");
+            assert(isdefined(var_c1da0b13), self.vehicletype + "<dev string:x96>");
             self endon(#"death");
             self util::waittill_dobj(localclientnum);
             var_1ca9b241 = util::playfxontag(localclientnum, var_121afd6f, self, var_c1da0b13);
@@ -1247,7 +1246,7 @@ function update_ui_fullscreen_filter_model(localclientnum, vision_set_value) {
 // Size: 0x20c
 function field_toggle_treadfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self.vehicleclass === "helicopter" || self.vehicleclass === "plane") {
-        println("<unknown string>");
+        println("<dev string:xf0>");
         if (newval) {
             if (isdefined(self.csf_no_tread)) {
                 self.csf_no_tread = 0;
@@ -1262,17 +1261,17 @@ function field_toggle_treadfx(localclientnum, oldval, newval, bnewent, binitials
         return;
     }
     if (newval) {
-        println("<unknown string>");
+        println("<dev string:x112>");
         if (isdefined(bnewent) && bnewent) {
-            println("<unknown string>" + self getentitynumber());
+            println("<dev string:x13b>" + self getentitynumber());
             self.csf_no_tread = 1;
         } else {
-            println("<unknown string>" + self getentitynumber());
+            println("<dev string:x15b>" + self getentitynumber());
             self kill_treads_forever();
         }
         return;
     }
-    println("<unknown string>");
+    println("<dev string:x179>");
     if (isdefined(self.csf_no_tread)) {
         self.csf_no_tread = 0;
     }

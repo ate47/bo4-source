@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_nosferatu.csc;
 #using scripts\zm_common\zm_customgame.csc;
 #using scripts\zm_common\zm_utility.csc;

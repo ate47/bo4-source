@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_escape_paschal.gsc;
 #using scripts\zm\zm_escape_travel.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;

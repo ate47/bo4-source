@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\lui_shared.csc;
 #using scripts\core_common\struct.csc;
@@ -393,28 +392,28 @@ function get_show_paintshop(localclientnum) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x505b0754, Offset: 0x1740
 // Size: 0x72
-function function_162e1121(localclientnum, charm_index) {
-    if (!isdefined(level.charm_index)) {
-        level.charm_index = [];
+function function_162e1121(localclientnum, var_571f2574) {
+    if (!isdefined(level.var_571f2574)) {
+        level.var_571f2574 = [];
     }
-    if (!isdefined(level.charm_index[localclientnum])) {
-        level.charm_index[localclientnum] = 0;
+    if (!isdefined(level.var_571f2574[localclientnum])) {
+        level.var_571f2574[localclientnum] = 0;
     }
-    level.charm_index[localclientnum] = charm_index;
+    level.var_571f2574[localclientnum] = var_571f2574;
 }
 
 // Namespace customclass/custom_class
 // Params 1, eflags: 0x1 linked
 // Checksum 0x7795a50d, Offset: 0x17c0
 // Size: 0x60
-function get_charm_index(localclientnum) {
-    if (!isdefined(level.charm_index)) {
-        level.charm_index = [];
+function function_52145a0d(localclientnum) {
+    if (!isdefined(level.var_571f2574)) {
+        level.var_571f2574 = [];
     }
-    if (!isdefined(level.charm_index[localclientnum])) {
-        level.charm_index[localclientnum] = 0;
+    if (!isdefined(level.var_571f2574[localclientnum])) {
+        level.var_571f2574[localclientnum] = 0;
     }
-    return level.charm_index[localclientnum];
+    return level.var_571f2574[localclientnum];
 }
 
 // Namespace customclass/custom_class
@@ -600,13 +599,13 @@ function private function_3e2b5b60(localclientnum, weaponmodel) {
 // Size: 0x61c
 function update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1, is_item_unlocked = 1, xmodel_scale = 1, xmodel_name = #"") {
     /#
-        assert(isdefined(newweaponstring), "<unknown string>");
-        assert(isdefined(var_f020955), "<unknown string>");
+        assert(isdefined(newweaponstring), "<dev string:x38>");
+        assert(isdefined(var_f020955), "<dev string:x84>");
     #/
     level.last_weapon_name[localclientnum] = isdefined(newweaponstring) ? newweaponstring : #"ar_accurate_t8";
     level.var_8ad413c[localclientnum] = isdefined(var_f020955) ? var_f020955 : "";
-    charm_index = get_charm_index(localclientnum);
-    if (charm_index > 0) {
+    var_571f2574 = function_52145a0d(localclientnum);
+    if (var_571f2574 > 0) {
         if (!issubstr(level.var_8ad413c[localclientnum], "custom2")) {
             attachments = strtok(level.var_8ad413c[localclientnum], "+");
             if (attachments.size < 7) {
@@ -645,7 +644,7 @@ function update_weapon_script_model(localclientnum, newweaponstring, var_f020955
         }
         return;
     }
-    function_975f521b(charm_index);
+    function_975f521b(var_571f2574);
     level.weapon_script_model[localclientnum] useweaponmodel(level.current_weapon[localclientnum], undefined, get_weapon_options(localclientnum));
     weaponmodel = level.weapon_script_model[localclientnum];
     if (!function_3e2b5b60(localclientnum, weaponmodel)) {

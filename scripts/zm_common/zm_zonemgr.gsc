@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_customgame.gsc;
 #using scripts\zm_common\zm_audio.gsc;
@@ -28,7 +27,7 @@ function autoexec __init__system__() {
 // Checksum 0xb90db1fa, Offset: 0x318
 // Size: 0xec
 function __init__() {
-    println("<unknown string>");
+    println("<dev string:x38>");
     level flag::init("zones_initialized");
     level.zones = [];
     level.zone_flags = [];
@@ -387,7 +386,7 @@ function zone_init(zone_name, zone_tag) {
     if (isdefined(level.zones[zone_name])) {
         return;
     }
-    println("<unknown string>" + zone_name);
+    println("<dev string:x71>" + zone_name);
     level.zones[zone_name] = spawnstruct();
     zone = level.zones[zone_name];
     zone.name = zone_name;
@@ -405,12 +404,12 @@ function zone_init(zone_name, zone_tag) {
     /#
         var_a44786e4 = 0;
         foreach (node in zone.nodes) {
-            if (node.type == "<unknown string>" || !isdefined(getnoderegion(node))) {
+            if (node.type == "<dev string:x8a>" || !isdefined(getnoderegion(node))) {
                 if (!var_a44786e4) {
-                    println("<unknown string>");
+                    println("<dev string:x95>");
                 }
                 var_a44786e4 = 1;
-                println("<unknown string>" + zone_name + "<unknown string>" + node.origin[0] + "<unknown string>" + node.origin[1] + "<unknown string>" + node.origin[2] + "<unknown string>");
+                println("<dev string:xc8>" + zone_name + "<dev string:xe5>" + node.origin[0] + "<dev string:xed>" + node.origin[1] + "<dev string:xed>" + node.origin[2] + "<dev string:xf1>");
             }
         }
         assert(!var_a44786e4);
@@ -420,20 +419,20 @@ function zone_init(zone_name, zone_tag) {
     foreach (node in zone.nodes) {
         foreach (override_name in var_34065104) {
             if (isdefined(node.(override_name))) {
-                assert(!isdefined(zone.(override_name)), "<unknown string>" + override_name + "<unknown string>" + zone_name);
+                assert(!isdefined(zone.(override_name)), "<dev string:xf5>" + override_name + "<dev string:x109>" + zone_name);
                 zone.(override_name) = node.(override_name);
             }
         }
     }
     zone.volumes = [];
     volumes = getentarray(zone_name, "targetname");
-    println("<unknown string>" + volumes.size + "<unknown string>" + zone.nodes.size);
+    println("<dev string:x128>" + volumes.size + "<dev string:x14f>" + zone.nodes.size);
     for (i = 0; i < volumes.size; i++) {
         if (volumes[i].classname == "info_volume") {
             zone.volumes[zone.volumes.size] = volumes[i];
         }
     }
-    assert(isdefined(zone.volumes[0]) || isdefined(zone.nodes[0]), "<unknown string>" + zone_name);
+    assert(isdefined(zone.volumes[0]) || isdefined(zone.nodes[0]), "<dev string:x162>" + zone_name);
     /#
         zone.total_spawn_count = 0;
         zone.round_spawn_count = 0;
@@ -591,7 +590,7 @@ function reinit_zone_spawners() {
 // Checksum 0xb47743d, Offset: 0x2808
 // Size: 0x324
 function enable_zone(zone_name) {
-    assert(isdefined(level.zones) && isdefined(level.zones[zone_name]), "<unknown string>");
+    assert(isdefined(level.zones) && isdefined(level.zones[zone_name]), "<dev string:x196>");
     if (level.zones[zone_name].is_enabled) {
         return;
     }
@@ -641,7 +640,7 @@ function make_zone_adjacent(main_zone_name, adj_zone_name, flag_name) {
         }
         return;
     }
-    assert(!isarray(flag_name), "<unknown string>");
+    assert(!isarray(flag_name), "<dev string:x1c3>");
     adj_zone = main_zone.adjacent_zones[adj_zone_name];
     size = adj_zone.flags.size;
     adj_zone.flags_do_or_check = 1;
@@ -840,27 +839,27 @@ function door_close_disconnect(flag_name) {
 // Checksum 0x7308f1de, Offset: 0x3768
 // Size: 0xa58
 function manage_zones(initial_zone) {
-    assert(isdefined(initial_zone), "<unknown string>");
+    assert(isdefined(initial_zone), "<dev string:x1fe>");
     deactivate_initial_barrier_goals();
     level.player_zone_found = 1;
     zone_choke = 0;
     spawn_points = zm_gametype::get_player_spawns_for_gametype();
     for (i = 0; i < spawn_points.size; i++) {
-        assert(isdefined(spawn_points[i].script_noteworthy), "<unknown string>");
+        assert(isdefined(spawn_points[i].script_noteworthy), "<dev string:x22b>");
         spawn_points[i].locked = 1;
     }
     if (isdefined(level.zone_manager_init_func)) {
         [[ level.zone_manager_init_func ]]();
     }
-    println("<unknown string>" + initial_zone.size);
+    println("<dev string:x27b>" + initial_zone.size);
     if (isarray(initial_zone)) {
-        println("<unknown string>" + initial_zone[0]);
+        println("<dev string:x2a8>" + initial_zone[0]);
         for (i = 0; i < initial_zone.size; i++) {
             zone_init(initial_zone[i]);
             enable_zone(initial_zone[i]);
         }
     } else {
-        println("<unknown string>" + initial_zone);
+        println("<dev string:x2d5>" + initial_zone);
         zone_init(initial_zone);
         enable_zone(initial_zone);
     }
@@ -1156,7 +1155,7 @@ function _debug_zones() {
                     var_28686bb1 += "        | ";
                 }
                 /#
-                    var_28686bb1 += zone.a_loc_types[#"zombie_location"].size + "<unknown string>" + zone.total_spawn_count + "<unknown string>" + zone.round_spawn_count;
+                    var_28686bb1 += zone.a_loc_types[#"zombie_location"].size + "<dev string:x2fc>" + zone.total_spawn_count + "<dev string:x2fc>" + zone.round_spawn_count;
                     v_pos = 100 + 18 * n;
                     debug2dtext((400, v_pos, 0), var_28686bb1, (1, 1, 0), undefined, (0, 0, 0), 0.75, 0.85, 2);
                 #/
@@ -1174,12 +1173,12 @@ function _debug_zones() {
     // Checksum 0x4006d53f, Offset: 0x4ea0
     // Size: 0x9c
     function private function_74a20786() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x302>");
+        adddebugcommand("<dev string:x336>");
+        adddebugcommand("<dev string:x367>");
+        adddebugcommand("<dev string:x3a4>");
+        adddebugcommand("<dev string:x3fc>");
+        adddebugcommand("<dev string:x451>");
     }
 
 #/

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\userspawnselection.gsc;
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\challenges.gsc;
@@ -396,7 +395,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         }
         self.deathcount++;
     }
-    println("controlLowLivesEnemy" + self.clientid + "teamkillerplaylistbanpenalty" + self.deathcount);
+    println("<dev string:x38>" + self.clientid + "<dev string:x43>" + self.deathcount);
     if (bledout == 0) {
         self update_killstreaks(attacker, weapon);
     }
@@ -631,7 +630,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         attackerstring = attacker getxuid() + "(" + lpattackname + ")";
     }
     /#
-        print("<unknown string>" + smeansofdeath + "<unknown string>" + weapon.name + "<unknown string>" + attackerstring + "<unknown string>" + idamage + "<unknown string>" + shitloc + "<unknown string>" + int(self.origin[0]) + "<unknown string>" + int(self.origin[1]) + "<unknown string>" + int(self.origin[2]));
+        print("<dev string:x58>" + smeansofdeath + "<dev string:x5d>" + weapon.name + "<dev string:x61>" + attackerstring + "<dev string:x68>" + idamage + "<dev string:x6e>" + shitloc + "<dev string:x74>" + int(self.origin[0]) + "<dev string:x7a>" + int(self.origin[1]) + "<dev string:x7a>" + int(self.origin[2]));
     #/
     level thread globallogic::updateteamstatus();
     level thread globallogic::updatealivetimes(self.team);

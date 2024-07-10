@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_customgame.gsc;
@@ -43,7 +42,7 @@ function private function_ec51ce01() {
     level waittill(#"hash_71d7e6a55a1ca9e");
     if (zm_utility::is_classic()) {
         /#
-            self iprintlnbold("<unknown string>");
+            self iprintlnbold("<dev string:x38>");
         #/
         self zm_utility::giveachievement_wrapper("zm_red_tragedy");
     }
@@ -72,7 +71,7 @@ function private function_653f23be() {
         wait(1);
     }
     /#
-        self iprintlnbold("<unknown string>");
+        self iprintlnbold("<dev string:x55>");
     #/
     self zm_utility::giveachievement_wrapper("zm_red_follower");
 }
@@ -96,7 +95,7 @@ function private function_50e46434() {
         }
         if (level.var_705db276 >= 5) {
             /#
-                self iprintlnbold("<unknown string>");
+                self iprintlnbold("<dev string:x75>");
             #/
             self zm_utility::giveachievement_wrapper("zm_red_tribute");
             return;
@@ -120,7 +119,7 @@ function private function_863d6212() {
         }
         if (s_result.var_e0ae28d >= 4) {
             /#
-                self iprintlnbold("<unknown string>");
+                self iprintlnbold("<dev string:x95>");
             #/
             self zm_utility::giveachievement_wrapper("zm_red_mountains");
             return;
@@ -144,7 +143,7 @@ function private function_103e6827() {
         }
         if (isdefined(s_result.var_b1224954) && s_result.var_b1224954.n_dragged >= 15) {
             /#
-                self iprintlnbold("<unknown string>");
+                self iprintlnbold("<dev string:xb3>");
             #/
             self zm_utility::giveachievement_wrapper("zm_red_no_obol");
             return;
@@ -172,7 +171,7 @@ function private function_3c39c720() {
         level callback::remove_on_ai_killed(&function_8a595f5);
         if (self.var_ec3e3f82 >= 20) {
             /#
-                self iprintlnbold("<unknown string>");
+                self iprintlnbold("<dev string:xca>");
             #/
             self zm_utility::giveachievement_wrapper("zm_red_sun");
             return;
@@ -221,7 +220,7 @@ function private function_74846734() {
         level callback::remove_on_ai_killed(&function_c6125761);
         if (self.n_flung >= 20) {
             /#
-                self iprintlnbold("<unknown string>");
+                self iprintlnbold("<dev string:xee>");
             #/
             self zm_utility::giveachievement_wrapper("zm_red_wind");
             return;
@@ -265,7 +264,7 @@ function private function_84d102f2() {
             waitframe(1);
             if (level flag::get(#"hash_67695ee69c57c0b2") && level flag::get(#"hash_61de3b8fe6f6a35")) {
                 /#
-                    self iprintlnbold("<unknown string>");
+                    self iprintlnbold("<dev string:x10b>");
                 #/
                 self zm_utility::giveachievement_wrapper("zm_red_eagle");
                 self notify(#"hash_5766f147327163d1");
@@ -318,7 +317,7 @@ function private function_f31369ae() {
     if (isdefined(e_player)) {
         e_player.var_298cc14d = 1;
         /#
-            e_player iprintlnbold("<unknown string>");
+            e_player iprintlnbold("<dev string:x12c>");
         #/
         e_player zm_utility::giveachievement_wrapper("zm_red_defense");
     }
@@ -333,7 +332,7 @@ function private function_e502ed82() {
     a_flags = array(#"hash_5827ff8b059b77f3", #"hash_786c9a9f60b254f5", #"hash_3b7c39d9b76689fb", #"hash_29ac8ec32d2a389b", #"hash_39100dea955077f2");
     level flagsys::wait_till_all(a_flags);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x15e>");
     #/
     zm_utility::giveachievement_wrapper("zm_red_gods", 1);
 }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\load.gsc;
 #using scripts\mp_common\draft.gsc;
 #using scripts\core_common\util_shared.gsc;

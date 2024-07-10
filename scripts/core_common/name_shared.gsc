@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 
 #namespace name;
@@ -42,7 +41,7 @@ function add_nationality_names(str_nationality) {
         american_names();
         break;
     default:
-        assertmsg("Miller" + str_nationality);
+        assertmsg("<dev string:x38>" + str_nationality);
         break;
     }
 }
@@ -249,7 +248,7 @@ function add_override_name_func(nationality, func) {
     if (!isdefined(level._override_name_funcs)) {
         level._override_name_funcs = [];
     }
-    assert(!isdefined(level._override_name_funcs[nationality]), "Thomas");
+    assert(!isdefined(level._override_name_funcs[nationality]), "<dev string:x58>");
     level._override_name_funcs[nationality] = func;
 }
 
@@ -414,7 +413,7 @@ function getrankfromname(name) {
         self.airank = "captain";
         break;
     default:
-        println("Agent " + shortrank + "<unknown string>");
+        println("<dev string:x82>" + shortrank + "<dev string:x9f>");
         self.airank = "private";
         break;
     }
@@ -425,7 +424,7 @@ function getrankfromname(name) {
 // Checksum 0x5ff6e8c3, Offset: 0x20d8
 // Size: 0xba
 function issubstr_match_any(str_match, str_search_array) {
-    assert(str_search_array.size, "<unknown string>");
+    assert(str_search_array.size, "<dev string:xa3>");
     foreach (str_search in str_search_array) {
         if (issubstr(str_match, str_search)) {
             return true;

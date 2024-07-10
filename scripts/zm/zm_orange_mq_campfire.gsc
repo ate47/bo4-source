@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_unitrigger.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_sq.gsc;
@@ -114,8 +113,8 @@ function function_1ad84248() {
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>" + function_9e72a96(story));
-                        println("<unknown string>" + function_9e72a96(story));
+                        iprintlnbold("<dev string:x38>" + function_9e72a96(story));
+                        println("<dev string:x38>" + function_9e72a96(story));
                     }
                 }
             #/
@@ -152,8 +151,8 @@ function function_561d9cff() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x50>");
+                println("<dev string:x50>");
             }
         }
     #/
@@ -189,8 +188,8 @@ function function_561d9cff() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>" + function_9e72a96(story));
-                println("<unknown string>" + function_9e72a96(story));
+                iprintlnbold("<dev string:x38>" + function_9e72a96(story));
+                println("<dev string:x38>" + function_9e72a96(story));
             }
         }
     #/

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\scene_shared.csc;
 #using script_64914218f744517b;
 #using scripts\core_common\callbacks_shared.csc;
@@ -205,7 +204,7 @@ class cscene : cscriptbundlebase {
                         _e_root thread [[ func ]](clientnum, a_ents);
                         break;
                     default:
-                        assertmsg("<unknown string>");
+                        assertmsg("<dev string:xee>");
                         break;
                     }
                 }
@@ -658,7 +657,7 @@ class csceneplayer : cscriptbundleobjectbase, csceneobject {
             v_pos = (0, 0, 0);
             v_ang = (0, 0, 0);
         } else if (isstring(tag)) {
-            assert(isdefined(align.model), "<unknown string>" + animation + "<unknown string>" + tag + "<unknown string>");
+            assert(isdefined(align.model), "<dev string:x5e>" + animation + "<dev string:x79>" + tag + "<dev string:x86>");
             v_pos = align gettagorigin(tag);
             v_ang = align gettagangles(tag);
         } else {
@@ -871,7 +870,7 @@ class csceneobject : cscriptbundleobjectbase {
             }
         } else {
             /#
-                cscriptbundleobjectbase::log("<unknown string>" + animation + "<unknown string>");
+                cscriptbundleobjectbase::log("<dev string:xbb>" + animation + "<dev string:xd7>");
             #/
         }
         _is_valid = is_alive(clientnum);
@@ -1459,7 +1458,7 @@ function player_scene_animation_skip(localclientnum, oldval, newval, bnewent, bi
         if (!isanimlooping(localclientnum, anim_name)) {
             /#
                 if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                    printtoprightln("player_scene_skip_completed" + anim_name + "<unknown string>" + gettime(), (0.6, 0.6, 0.6));
+                    printtoprightln("<dev string:x38>" + anim_name + "<dev string:x58>" + gettime(), (0.6, 0.6, 0.6));
                 }
             #/
             self setanimtimebyname(anim_name, 1, 1);
@@ -2009,7 +2008,7 @@ function __main__() {
     }
     foreach (s_instance in a_instances) {
         s_scenedef = get_scenedef(s_instance.scriptbundlename);
-        assert(isdefined(s_scenedef), "<unknown string>" + s_instance.origin + "<unknown string>" + s_instance.scriptbundlename + "<unknown string>");
+        assert(isdefined(s_scenedef), "<dev string:x114>" + s_instance.origin + "<dev string:x126>" + s_instance.scriptbundlename + "<dev string:x13d>");
         if (s_scenedef.vmtype === "client") {
             if (isdefined(s_instance.spawnflags) && (s_instance.spawnflags & 2) == 2) {
                 s_instance thread play();
@@ -2071,7 +2070,7 @@ function _trigger_stop(trig) {
 // Checksum 0xe27ce2d4, Offset: 0xadc0
 // Size: 0x184
 function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
-    assert(isdefined(getscriptbundle(str_scenedef)), "<unknown string>" + function_9e72a96(str_scenedef) + "<unknown string>");
+    assert(isdefined(getscriptbundle(str_scenedef)), "<dev string:x155>" + function_9e72a96(str_scenedef) + "<dev string:x13d>");
     var_e21c4c4c = tolower(var_e21c4c4c);
     if (!isdefined(level.scene_funcs)) {
         level.scene_funcs = [];
@@ -2091,7 +2090,7 @@ function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
 // Checksum 0xfa1e6887, Offset: 0xaf50
 // Size: 0x18e
 function remove_scene_func(str_scenedef, func, var_e21c4c4c = "play") {
-    assert(isdefined(getscriptbundle(str_scenedef)), "<unknown string>" + str_scenedef + "<unknown string>");
+    assert(isdefined(getscriptbundle(str_scenedef)), "<dev string:x182>" + str_scenedef + "<dev string:x13d>");
     var_e21c4c4c = tolower(var_e21c4c4c);
     if (!isdefined(level.scene_funcs)) {
         level.scene_funcs = [];
@@ -2126,7 +2125,7 @@ function private function_c776e5bd(str_scenedef, str_state) {
 // Size: 0x178
 function spawn(arg1, arg2, arg3, arg4, b_test_run) {
     str_scenedef = arg1;
-    assert(isdefined(str_scenedef), "<unknown string>");
+    assert(isdefined(str_scenedef), "<dev string:x1b2>");
     if (isvec(arg2)) {
         v_origin = arg2;
         v_angles = arg3;
@@ -2160,7 +2159,7 @@ function init(arg1, arg2, arg3, b_test_run) {
 // Size: 0xa2
 function get_scenedef(str_scenedef) {
     s_scriptbundle = getscriptbundle(str_scenedef);
-    assert(isdefined(s_scriptbundle) && isdefined(s_scriptbundle.objects), "<unknown string>" + function_9e72a96(str_scenedef) + "<unknown string>");
+    assert(isdefined(s_scriptbundle) && isdefined(s_scriptbundle.objects), "<dev string:x1df>" + function_9e72a96(str_scenedef) + "<dev string:x1ef>");
     s_scriptbundle = fixup_scenedef(s_scriptbundle);
     return s_scriptbundle;
 }
@@ -2191,7 +2190,7 @@ function get_scenedefs(str_type = "scene") {
 // Checksum 0x4b16e107, Offset: 0xb570
 // Size: 0x860
 function fixup_scenedef(s_scenedef) {
-    assert(isdefined(s_scenedef.objects), "<unknown string>");
+    assert(isdefined(s_scenedef.objects), "<dev string:x25d>");
     if (isdefined(s_scenedef.objects[0]) && isdefined(s_scenedef.objects[0].shots)) {
         return s_scenedef;
     }
@@ -2604,8 +2603,8 @@ function _init_instance(str_scenedef = self.scriptbundlename, a_ents, b_test_run
         return;
     }
     /#
-        assert(isdefined(str_scenedef), "<unknown string>" + (isdefined(self.origin) ? self.origin : "<unknown string>") + "<unknown string>");
-        assert(isdefined(s_bundle), "<unknown string>" + (isdefined(self.origin) ? self.origin : "<unknown string>") + "<unknown string>" + str_scenedef + "<unknown string>");
+        assert(isdefined(str_scenedef), "<dev string:x2d7>" + (isdefined(self.origin) ? self.origin : "<dev string:x2e4>") + "<dev string:x2ec>");
+        assert(isdefined(s_bundle), "<dev string:x2d7>" + (isdefined(self.origin) ? self.origin : "<dev string:x2e4>") + "<dev string:x30a>" + str_scenedef + "<dev string:x13d>");
     #/
     o_scene = get_active_scene(str_scenedef);
     if (isdefined(o_scene)) {
@@ -2630,10 +2629,10 @@ function function_6f382548(struct, str_scene_name) {
     }
     if (struct.disableinsplitscreen == 2 && getdvarint(#"splitscreen_playercount", 1) > 1 || struct.disableinsplitscreen == 3 && getdvarint(#"splitscreen_playercount", 1) > 2 || struct.disableinsplitscreen == 4 && getdvarint(#"splitscreen_playercount", 1) > 3) {
         /#
-            if (struct.type === "<unknown string>") {
-                str_debug = "<unknown string>" + function_9e72a96(str_scene_name) + "<unknown string>";
+            if (struct.type === "<dev string:x326>") {
+                str_debug = "<dev string:x32e>" + function_9e72a96(str_scene_name) + "<dev string:x337>";
             } else {
-                str_debug = "<unknown string>" + function_9e72a96(struct.name) + "<unknown string>" + str_scene_name + "<unknown string>";
+                str_debug = "<dev string:x370>" + function_9e72a96(struct.name) + "<dev string:x380>" + str_scene_name + "<dev string:x38d>";
             }
             println(str_debug);
         #/
@@ -2886,7 +2885,7 @@ function function_46546b5c(s_tracker, str_scenedef) {
         var_41c1a1b7 = getscriptbundle(str_scenedef);
         if (isdefined(var_41c1a1b7.var_2af733c9) && var_41c1a1b7.var_2af733c9) {
             /#
-                iprintlnbold("<unknown string>" + str_scenedef);
+                iprintlnbold("<dev string:x3b5>" + str_scenedef);
             #/
             s_tracker.var_93ec5dde = 1;
             return true;
@@ -2962,7 +2961,7 @@ function _play_instance(s_tracker, str_scenedef = self.scriptbundlename, a_ents,
                 while (is_playing(str_scenedef)) {
                     waitframe(1);
                 }
-                println("<unknown string>" + str_scenedef + "<unknown string>");
+                println("<dev string:x3d3>" + str_scenedef + "<dev string:x3dd>");
                 s_tracker notify(#"scene_done");
                 return;
             }
@@ -3026,7 +3025,7 @@ function stop(arg1, arg2, arg3, b_cancel, b_no_assert = 0) {
             }
             if (isdefined(str_key)) {
                 a_instances = struct::get_array(str_value, str_key);
-                assert(b_no_assert || a_instances.size, "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>");
+                assert(b_no_assert || a_instances.size, "<dev string:x44f>" + str_key + "<dev string:x46f>" + str_value + "<dev string:x475>");
                 str_value = undefined;
             } else {
                 a_instances = struct::get_array(str_value, "targetname");
@@ -3282,7 +3281,7 @@ function _get_scene_instances(str_value, str_key = "targetname", str_scenedef, b
     a_instances = [];
     if (isdefined(str_value)) {
         a_instances = struct::get_array(str_value, str_key);
-        assert(a_instances.size, "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>");
+        assert(a_instances.size, "<dev string:x44f>" + str_key + "<dev string:x46f>" + str_value + "<dev string:x475>");
     }
     if (isdefined(str_scenedef)) {
         a_instances_by_scenedef = struct::get_array(str_scenedef, "scriptbundlename");

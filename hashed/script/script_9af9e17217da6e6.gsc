@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm\zm_mansion_special_rounds.gsc;
 #using scripts\zm\zm_mansion_pap_quest.gsc;
@@ -244,8 +243,8 @@ function cleanup_step_3(var_5ea5c94d, ended_early) {
         if (!level flag::get(#"wheel_locked")) {
             mdl_wheel = function_b1b02a54();
             mdl_wheel thread scene::play(#"p8_fxanim_zm_man_dome_crank_wheel_bundle", mdl_wheel);
-            mdl_door_right = getent("link_ring3_jnt", "p8_zm_man_zodiac_sign_taurus");
-            mdl_door_left = getent("p8_zm_man_greenhouse_ext_dome_01_link_jnt", "p8_zm_man_zodiac_sign_taurus");
+            mdl_door_right = getent("<dev string:x38>", "<dev string:x5f>");
+            mdl_door_left = getent("<dev string:x6c>", "<dev string:x5f>");
             var_5a2e8e4f = anglestoright(mdl_door_right.angles);
             var_58aebac7 = anglestoright(mdl_door_left.angles);
             var_a40d6e4f = mdl_door_right.origin + var_5a2e8e4f * 64;
@@ -431,9 +430,9 @@ function function_d3128b5f() {
         var_95807f2d[var_95807f2d.size] = trigger;
     }
     /#
-        var_310c1492 = struct::get("<unknown string>");
-        var_556dff4b = spawn("<unknown string>", var_310c1492.origin, 0, 64, 128);
-        var_556dff4b setcursorhint("<unknown string>");
+        var_310c1492 = struct::get("<dev string:x92>");
+        var_556dff4b = spawn("<dev string:xa7>", var_310c1492.origin, 0, 64, 128);
+        var_556dff4b setcursorhint("<dev string:xbc>");
         var_556dff4b triggerignoreteam();
         var_556dff4b.str_pos = var_310c1492.script_noteworthy;
         var_556dff4b thread function_57692917();

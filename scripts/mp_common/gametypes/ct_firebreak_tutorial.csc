@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\burnplayer.csc;
 #using script_38dc72b5220a1a67;
 

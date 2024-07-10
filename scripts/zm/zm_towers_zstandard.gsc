@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2affe92664ace48d;
 #using script_684097158a90b5c3;
 #using scripts\zm\zm_towers_pap_quest.gsc;
@@ -70,19 +69,19 @@ function function_74872db6() {
     // Checksum 0xb6190624, Offset: 0x508
     // Size: 0x144
     function function_931e4ab1() {
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
-        zm_zonemgr::enable_zone("<unknown string>");
+        zm_zonemgr::enable_zone("<dev string:x38>");
+        zm_zonemgr::enable_zone("<dev string:x4d>");
+        zm_zonemgr::enable_zone("<dev string:x66>");
+        zm_zonemgr::enable_zone("<dev string:x7c>");
+        zm_zonemgr::enable_zone("<dev string:x91>");
+        zm_zonemgr::enable_zone("<dev string:xaa>");
+        zm_zonemgr::enable_zone("<dev string:xc0>");
+        zm_zonemgr::enable_zone("<dev string:xd5>");
+        zm_zonemgr::enable_zone("<dev string:xee>");
+        zm_zonemgr::enable_zone("<dev string:x104>");
+        zm_zonemgr::enable_zone("<dev string:x117>");
+        zm_zonemgr::enable_zone("<dev string:x12e>");
+        zm_zonemgr::enable_zone("<dev string:x142>");
     }
 
 #/

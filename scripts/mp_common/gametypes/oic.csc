@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace oic;
 
 // Namespace oic/gametype_init

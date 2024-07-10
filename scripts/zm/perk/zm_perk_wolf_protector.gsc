@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_perks.gsc;
@@ -113,7 +112,7 @@ function give_perk() {
 // Size: 0xc6
 function take_perk(b_pause, str_perk, str_result, n_slot) {
     self notify(#"specialty_wolf_protector" + "_take");
-    assert(isdefined(self.var_7d46fb46), "<unknown string>");
+    assert(isdefined(self.var_7d46fb46), "<dev string:x38>");
     self function_6d80c359();
     if (isdefined(self.var_7d46fb46)) {
         self zm_perks::function_13880aa5(self.var_7d46fb46, 0, #"perk_wolf_protector");
@@ -202,7 +201,7 @@ function function_f3cd6eac() {
         waitframe(1);
         if ((self.var_2dc0d63c >= level.zombie_health * 6 || self.var_841cdb3 >= 6) && !isdefined(self.var_5e8ff98e) && !self scene::is_igc_active()) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x58>");
             #/
             self playsound(#"hash_7c5128882f070d07");
             self notify(#"wolf_protector_spawn");
@@ -237,7 +236,7 @@ function function_d0c6285a() {
     spawn_pos = function_562ade9e();
     if (!isdefined(spawn_pos)) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x67>");
         #/
         return;
     }
@@ -417,7 +416,7 @@ function reset_cooldown() {
     self notify(#"hash_7c5d9af32e10c147");
     self.var_6577c75d = 0;
     if (self hasperk(#"specialty_wolf_protector")) {
-        assert(isdefined(self.var_7d46fb46), "<unknown string>");
+        assert(isdefined(self.var_7d46fb46), "<dev string:x38>");
         if (isdefined(self.var_7d46fb46)) {
             self zm_perks::function_2ac7579(self.var_7d46fb46, 1, #"perk_wolf_protector");
             self zm_perks::function_13880aa5(self.var_7d46fb46, 1, #"perk_wolf_protector");

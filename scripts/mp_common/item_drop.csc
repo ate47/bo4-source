@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_world_util.csc;
 #using scripts\mp_common\item_world.csc;
 #using script_c1eebdc8cad5d78;

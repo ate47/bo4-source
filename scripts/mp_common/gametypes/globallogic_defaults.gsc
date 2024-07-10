@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\teams\platoons.gsc;
 #using scripts\mp_common\gametypes\round.gsc;
@@ -188,7 +187,7 @@ function default_onspawnspectator(origin, angles) {
         return;
     }
     spawnpoints = spawning::get_spawnpoint_array("mp_global_intermission");
-    assert(spawnpoints.size, "<unknown string>");
+    assert(spawnpoints.size, "<dev string:x38>");
     spawnpoint = spawning::get_spawnpoint_random(spawnpoints);
     self spawn(spawnpoint.origin, spawnpoint.angles);
 }
@@ -207,7 +206,7 @@ function default_onspawnintermission(endgame) {
         return;
     }
     /#
-        util::error("<unknown string>");
+        util::error("<dev string:x94>");
     #/
 }
 

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace status_effect_wound;
 
 // Namespace status_effect_wound/status_effect_wound

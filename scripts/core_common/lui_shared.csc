@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_1da833573eb80e61;
 #using script_2feaeed9ab01d6f7;
 #using scripts\core_common\multi_extracam.csc;
@@ -24,7 +23,7 @@ class cluielem {
     // Checksum 0xbbfcd106, Offset: 0x29c0
     // Size: 0x5a
     function get_data(localclientnum, field) {
-        assert(var_47d8642e, "<unknown string>");
+        assert(var_47d8642e, "<dev string:x162>");
         return function_88759655(localclientnum, var_47e79fc, field);
     }
 
@@ -33,7 +32,7 @@ class cluielem {
     // Checksum 0xdfd2cdb7, Offset: 0x2950
     // Size: 0x64
     function set_data(localclientnum, field, value) {
-        assert(var_47d8642e, "<unknown string>");
+        assert(var_47d8642e, "<dev string:x162>");
         function_bcc2134a(localclientnum, var_47e79fc, field, value);
     }
 
@@ -42,7 +41,7 @@ class cluielem {
     // Checksum 0x34de8d6, Offset: 0x28f0
     // Size: 0x54
     function close(localclientnum) {
-        assert(var_47d8642e, "<unknown string>");
+        assert(var_47d8642e, "<dev string:x121>");
         closeluielem(localclientnum, var_47e79fc);
     }
 
@@ -51,7 +50,7 @@ class cluielem {
     // Checksum 0x885ea434, Offset: 0x2890
     // Size: 0x52
     function is_open(localclientnum) {
-        assert(var_47d8642e, "<unknown string>");
+        assert(var_47d8642e, "<dev string:xe0>");
         return isluielemopen(localclientnum, var_47e79fc);
     }
 
@@ -60,7 +59,7 @@ class cluielem {
     // Checksum 0x237b563f, Offset: 0x2818
     // Size: 0x6c
     function open(localclientnum, menu_name) {
-        assert(var_47d8642e, "<unknown string>");
+        assert(var_47d8642e, "<dev string:xe0>");
         openluielem(localclientnum, menu_name, var_47e79fc);
         function_fa582112(localclientnum);
     }
@@ -70,7 +69,7 @@ class cluielem {
     // Checksum 0xbecc2060, Offset: 0x27d8
     // Size: 0x34
     function function_fa582112(localclientnum) {
-        assert(var_47d8642e, "<unknown string>");
+        assert(var_47d8642e, "<dev string:x9c>");
     }
 
     // Namespace cluielem/lui_shared
@@ -87,7 +86,7 @@ class cluielem {
     // Checksum 0xcdf44b94, Offset: 0x2710
     // Size: 0x8c
     function function_dcb34c80(var_2a0de052, field_name, version) {
-        assert(!var_47d8642e, "<unknown string>");
+        assert(!var_47d8642e, "<dev string:x5d>");
         clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + var_47e79fc + "." + field_name, version, undefined, 0, 0);
     }
 
@@ -96,7 +95,7 @@ class cluielem {
     // Checksum 0x6df9dd22, Offset: 0x2680
     // Size: 0x84
     function add_clientfield(field_name, version, bits, type, callback) {
-        assert(!var_47d8642e, "<unknown string>");
+        assert(!var_47d8642e, "<dev string:x5d>");
         clientfield::register_luielem(var_47e79fc, field_name, version, bits, type, callback, 0, 0);
     }
 
@@ -250,7 +249,7 @@ function function_e41243c1(var_e953aca6) {
 }
 
 // Namespace lui/lui_shared
-// Params a, eflags: 0x1 linked
+// Params 10, eflags: 0x1 linked
 // Checksum 0xef99f1a0, Offset: 0xa48
 // Size: 0x1c2
 function createcameramenu(menu_name, localclientnum, target_name, xcam, sub_xcam, xcam_frame = undefined, var_1f199068 = undefined, var_2c679be0 = undefined, lerp_time = 0, lut_index = 0) {
@@ -562,7 +561,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
             v_color = (1, 1, 1);
             break;
         default:
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x38>");
             break;
         }
     }

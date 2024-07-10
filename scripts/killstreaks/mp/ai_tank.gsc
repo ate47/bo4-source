@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\mp\supplydrop.gsc;
 #using scripts\killstreaks\mp\killstreak_vehicle.gsc;
 #using scripts\core_common\system_shared.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_powerups.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -80,7 +79,7 @@ function private function_a19d7104(settingsbundle) {
     }
     foreach (var_e8d7c6d7 in settingsbundle.weapondamagescaleoverrides) {
         if (!isdefined(var_e8d7c6d7.weaponid) || !isdefined(var_e8d7c6d7.damagescale)) {
-            println("<unknown string>" + settingsbundle.name);
+            println("<dev string:x38>" + settingsbundle.name);
             continue;
         }
         level.var_532264f5[settingsbundle.name][var_e8d7c6d7.weaponid] = {#var_c6cc6205:var_e8d7c6d7.damagescale, #var_fff93f95:var_e8d7c6d7.var_628192b0, #var_8e22aa87:var_e8d7c6d7.var_fc420d71, #var_fac896db:var_e8d7c6d7.var_97b22faa};
@@ -369,7 +368,7 @@ function function_de3dda83(var_5457dc44, hitloc, point, var_ebcb86d6) {
 // Checksum 0xb1d766db, Offset: 0x15d8
 // Size: 0x1aa
 function function_a2e8fd7b(entity, player, var_3f120c4d = 4) {
-    assert(isplayer(player), "<unknown string>");
+    assert(isplayer(player), "<dev string:x67>");
     if (getdvarint(#"zm_zone_pathing", 1)) {
         zone_path = zm_zonemgr::function_54fc7938(player, entity);
         if (isdefined(zone_path) && zone_path.cost >= var_3f120c4d) {
@@ -396,7 +395,7 @@ function function_a2e8fd7b(entity, player, var_3f120c4d = 4) {
 function make_zombie_target(entity) {
     if (isinarray(level.zombie_targets, entity)) {
         /#
-            iprintlnbold("<unknown string>" + entity getentitynumber() + "<unknown string>");
+            iprintlnbold("<dev string:x9d>" + entity getentitynumber() + "<dev string:xa7>");
         #/
         return false;
     }
@@ -404,7 +403,7 @@ function make_zombie_target(entity) {
     arrayremovevalue(level.zombie_targets, undefined);
     if (level.zombie_targets.size + 4 >= 16) {
         /#
-            iprintlnbold("<unknown string>" + entity getentitynumber() + "<unknown string>");
+            iprintlnbold("<dev string:xc5>" + entity getentitynumber() + "<dev string:xde>");
         #/
         return false;
     }
@@ -435,7 +434,7 @@ function is_zombie_target(entity) {
 function remove_zombie_target(entity) {
     if (!isinarray(level.zombie_targets, entity)) {
         /#
-            iprintlnbold("<unknown string>" + entity getentitynumber() + "<unknown string>");
+            iprintlnbold("<dev string:x9d>" + entity getentitynumber() + "<dev string:x10a>");
         #/
         return false;
     }

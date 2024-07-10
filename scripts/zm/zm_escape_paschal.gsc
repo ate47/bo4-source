@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_190d6b82bcca0908;
 #using scripts\abilities\ability_player.gsc;
 #using scripts\zm\weapons\zm_weap_tomahawk.gsc;
@@ -592,8 +591,8 @@ function function_b3b2516a() {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_69864bdb);
-        adddebugcommand("zone_sally_port");
-        adddebugcommand("s_player_w_g_3");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x85>");
     }
 
     // Namespace paschal/zm_escape_paschal
@@ -806,7 +805,7 @@ function private function_d8d3d62() {
     callback::on_connect(&function_a039c992);
     callback::on_connect(&function_441abdeb);
     /#
-        iprintln("energy_location_right" + var_dcc985c4.script_string);
+        iprintln("<dev string:xd2>" + var_dcc985c4.script_string);
     #/
     level waittill(#"seagull_blasted");
     level.var_487c1bca++;
@@ -847,7 +846,7 @@ function private function_26e380c2() {
     callback::on_connect(&function_a039c992);
     callback::on_connect(&function_1875f44f);
     /#
-        iprintln("energy_location_right" + var_dcc985c4.script_string);
+        iprintln("<dev string:xd2>" + var_dcc985c4.script_string);
     #/
 }
 
@@ -957,7 +956,7 @@ function function_1875f44f() {
                         }
                         if (!(isdefined(level.var_dcc985c4.mdl_bird.speedmid) && level.var_dcc985c4.mdl_bird.speedmid)) {
                             /#
-                                iprintln("tag_glow_e");
+                                iprintln("<dev string:xe5>");
                             #/
                             level.var_dcc985c4.mdl_bird.speedmid = 1;
                             level thread function_b6abb124();
@@ -1000,7 +999,7 @@ function function_b6abb124() {
     }
     level thread function_f1d0739();
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x102>");
     #/
 }
 
@@ -1038,7 +1037,7 @@ function private function_f1d0739() {
                 a_e_players[i] thread function_baf69ec9();
                 level thread function_787bed75();
                 /#
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x117>");
                 #/
             }
         }
@@ -1053,7 +1052,7 @@ function private function_f1d0739() {
 function private function_c4a07f79() {
     function_94cbd473();
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x12c>");
     #/
     level thread function_4efc779e();
     foreach (e_player in util::get_active_players()) {
@@ -1201,7 +1200,7 @@ function function_d8c3721f(mdl_tomahawk, var_21841d64) {
 function private function_750df71a() {
     var_a812a69b = self.origin + anglestoforward(self getplayerangles()) * 16;
     v_pos = getclosestpointonnavmesh(var_a812a69b, 128, 16);
-    assert(isdefined(v_pos), "<unknown string>" + var_a812a69b);
+    assert(isdefined(v_pos), "<dev string:x159>" + var_a812a69b);
     var_21841d64 = util::spawn_model(#"p7_zm_ctl_book_zombie", v_pos + (0, 0, 24));
     var_21841d64 clientfield::set("" + #"hash_6e2f9a57d1bc4b6a", 1);
     var_21841d64 thread function_e645ca47();
@@ -1527,18 +1526,18 @@ function function_9465204c(e_activator) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_52e31e1a);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x184>");
+        adddebugcommand("<dev string:x1d1>");
+        adddebugcommand("<dev string:x21e>");
+        adddebugcommand("<dev string:x26b>");
+        adddebugcommand("<dev string:x2b8>");
+        adddebugcommand("<dev string:x305>");
+        adddebugcommand("<dev string:x352>");
+        adddebugcommand("<dev string:x39f>");
+        adddebugcommand("<dev string:x412>");
+        adddebugcommand("<dev string:x47f>");
+        adddebugcommand("<dev string:x4ed>");
+        adddebugcommand("<dev string:x570>");
     }
 
     // Namespace paschal/zm_escape_paschal
@@ -1548,12 +1547,12 @@ function function_9465204c(e_activator) {
     function function_52e31e1a(cmd) {
         switch (cmd) {
         case #"hash_c8e283d06114e8b":
-            var_c699e2b5 = struct::get("<unknown string>");
+            var_c699e2b5 = struct::get("<dev string:x5f3>");
             var_c699e2b5.s_unitrigger_stub notify(#"hash_4c6ab2a4a99f9539");
-            level thread function_e998f810("<unknown string>");
+            level thread function_e998f810("<dev string:x600>");
             break;
         case #"hash_c8e293d0611503e":
-            var_a5bc0a8b = struct::get("<unknown string>");
+            var_a5bc0a8b = struct::get("<dev string:x60f>");
             var_a5bc0a8b notify(#"trigger_activated");
             break;
         case #"hash_c8e2a3d061151f1":
@@ -1572,7 +1571,7 @@ function function_9465204c(e_activator) {
             level notify(#"hash_1b94645b5f964ebe");
             break;
         case #"hash_c8e2e3d061158bd":
-            var_a5bc0a8b = struct::get("<unknown string>");
+            var_a5bc0a8b = struct::get("<dev string:x620>");
             var_a5bc0a8b notify(#"trigger_activated");
             break;
         case #"hash_7f65be6afe5b6656":
@@ -1582,20 +1581,20 @@ function function_9465204c(e_activator) {
             level.var_cbf67424 = 1;
             break;
         case #"hash_39361a1fa06167ab":
-            var_20279738 = struct::get_array("<unknown string>");
+            var_20279738 = struct::get_array("<dev string:x62b>");
             level.a_s_birds = [];
             foreach (s_loc in var_20279738) {
                 a_s_birds = struct::get_array(s_loc.target);
                 s_loc.var_231e3f97 = util::spawn_model(#"hash_91c31763b1101e6", a_s_birds[0].origin, a_s_birds[0].angles);
-                s_loc.var_231e3f97 clientfield::set("<unknown string>" + #"hash_504d26c38b96651c", 1);
-                s_loc.var_231e3f97.script_noteworthy = "<unknown string>";
+                s_loc.var_231e3f97 clientfield::set("<dev string:x63a>" + #"hash_504d26c38b96651c", 1);
+                s_loc.var_231e3f97.script_noteworthy = "<dev string:x63d>";
                 s_loc.var_231e3f97 thread function_6af89001();
-                s_loc.var_231e3f97 clientfield::set("<unknown string>" + #"hash_670a34b297f8faca", 1);
-                a_s_birds[0] thread scene::play(#"p8_fxanim_aml_seagull_body1_ghost_bundle", "<unknown string>", s_loc.var_231e3f97);
+                s_loc.var_231e3f97 clientfield::set("<dev string:x63a>" + #"hash_670a34b297f8faca", 1);
+                a_s_birds[0] thread scene::play(#"p8_fxanim_aml_seagull_body1_ghost_bundle", "<dev string:x65a>", s_loc.var_231e3f97);
                 s_book = struct::get(a_s_birds[0].target);
                 if (isdefined(s_book)) {
                     s_loc.var_39fa0e01 = util::spawn_model(#"p7_zm_ctl_book_zombie", s_book.origin, s_book.angles);
-                    s_loc.var_39fa0e01 clientfield::set("<unknown string>" + #"hash_6e2f9a57d1bc4b6a", 1);
+                    s_loc.var_39fa0e01 clientfield::set("<dev string:x63a>" + #"hash_6e2f9a57d1bc4b6a", 1);
                 }
                 if (!isdefined(level.a_s_birds)) {
                     level.a_s_birds = [];
@@ -1630,9 +1629,9 @@ function function_9465204c(e_activator) {
             while (isdefined(e_tomahawk)) {
                 foreach (s_seagull in level.a_s_birds) {
                     if (isdefined(str_zone) && str_zone == s_seagull.script_string) {
-                        iprintln("<unknown string>" + distance(e_tomahawk.origin, s_seagull.var_231e3f97 gettagorigin("<unknown string>")));
-                        if (distancesquared(e_tomahawk.origin, s_seagull.var_231e3f97 gettagorigin("<unknown string>")) < 40000) {
-                            iprintln("<unknown string>");
+                        iprintln("<dev string:x66f>" + distance(e_tomahawk.origin, s_seagull.var_231e3f97 gettagorigin("<dev string:x67c>")));
+                        if (distancesquared(e_tomahawk.origin, s_seagull.var_231e3f97 gettagorigin("<dev string:x67c>")) < 40000) {
+                            iprintln("<dev string:x684>");
                         }
                     }
                 }
@@ -1686,7 +1685,7 @@ function function_9465204c(e_activator) {
         self.health = 100000000;
         while (true) {
             s_result = self waittill(#"blast_attack");
-            iprintln("<unknown string>");
+            iprintln("<dev string:x6a0>");
         }
     }
 
@@ -3345,7 +3344,7 @@ function private function_914f17b9() {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_1b504133);
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x6b2>");
     }
 
     // Namespace paschal/zm_escape_paschal

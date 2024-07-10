@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player.csc;
 #using scripts\core_common\flag_shared.csc;
 #using scripts\core_common\renderoverridebundle.csc;

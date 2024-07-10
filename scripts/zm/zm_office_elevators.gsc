@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm\zm_office_cleanup.gsc;
 #using scripts\zm\zm_office_teleporters.gsc;

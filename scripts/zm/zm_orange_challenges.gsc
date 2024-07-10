@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_pablo.gsc;
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_orange_snowball_piles.gsc;
@@ -1765,7 +1764,7 @@ function function_b0d64cce(v_pos, v_angles) {
         v_drop = zm_hms_util::function_6d41bab8(v_pos, 360);
         if (!isdefined(v_drop)) {
             /#
-                iprintlnbold("p8_zm_ora_ice_picker_power_up");
+                iprintlnbold("<dev string:x38>");
             #/
             v_drop = v_pos;
         }

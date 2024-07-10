@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_death_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -67,10 +66,10 @@ function player_is_driver() {
 // Size: 0x8c
 function initvehiclemap() {
     /#
-        root = "<unknown string>";
-        adddebugcommand(root + "<unknown string>");
-        adddebugcommand(root + "<unknown string>");
-        adddebugcommand(root + "<unknown string>");
+        root = "<dev string:x38>";
+        adddebugcommand(root + "<dev string:x53>");
+        adddebugcommand(root + "<dev string:x7f>");
+        adddebugcommand(root + "<dev string:xb0>");
     #/
     thread vehiclemainthread();
 }

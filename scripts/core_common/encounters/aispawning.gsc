@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.gsc;
 
 #namespace aispawningutility;
@@ -30,8 +29,8 @@ function function_e312ad4d(str_team, var_f8de2ad5, var_82706add) {
         }
         if (!var_9e81c42.size) {
             /#
-                println("<unknown string>" + var_82706add + "<unknown string>");
-                iprintln("<unknown string>" + var_82706add + "<unknown string>");
+                println("<dev string:x38>" + var_82706add + "<dev string:x5c>");
+                iprintln("<dev string:x38>" + var_82706add + "<dev string:x5c>");
             #/
             return undefined;
         }
@@ -73,8 +72,8 @@ function function_e312ad4d(str_team, var_f8de2ad5, var_82706add) {
             return spawn_point;
         }
         /#
-            println("<unknown string>" + var_82706add + "<unknown string>" + str_team + "<unknown string>");
-            iprintln("<unknown string>" + var_82706add + "<unknown string>" + str_team + "<unknown string>");
+            println("<dev string:x60>" + var_82706add + "<dev string:x8b>" + str_team + "<dev string:x93>");
+            iprintln("<dev string:x60>" + var_82706add + "<dev string:x8b>" + str_team + "<dev string:x93>");
         #/
         return undefined;
     }

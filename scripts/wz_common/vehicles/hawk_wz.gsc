@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_inventory.gsc;
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\vehicle_shared.gsc;

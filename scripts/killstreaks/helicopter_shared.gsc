@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\core_common\turret_shared.gsc;
 #using scripts\core_common\targetting_delay.gsc;
@@ -146,7 +145,7 @@ function usekillstreakhelicopter(hardpointtype) {
     }
     if (!isdefined(level.heli_paths) || !level.heli_paths.size) {
         /#
-            iprintlnbold("care_package_shutdown");
+            iprintlnbold("<dev string:x38>");
         #/
         return false;
     }
@@ -158,7 +157,7 @@ function usekillstreakhelicopter(hardpointtype) {
     if (hardpointtype == "helicopter_x2") {
         missilesenabled = 1;
     }
-    assert(level.heli_paths.size > 0, "<unknown string>");
+    assert(level.heli_paths.size > 0, "<dev string:x64>");
     random_path = randomint(level.heli_paths[destination].size);
     startnode = level.heli_paths[destination][random_path];
     protectlocation = undefined;
@@ -201,7 +200,7 @@ function heli_path_graph() {
     gunner_loop_start = getentarray("heli_gunner_loop_start", "targetname");
     leave_nodes = getentarray("heli_leave", "targetname");
     crash_start = getentarray("heli_crash_start", "targetname");
-    assert(isdefined(path_start) && isdefined(path_dest), "<unknown string>");
+    assert(isdefined(path_start) && isdefined(path_dest), "<dev string:x93>");
     for (i = 0; i < path_dest.size; i++) {
         startnode_array = [];
         isprimarydest = 0;
@@ -216,12 +215,12 @@ function heli_path_graph() {
                     break;
                 }
                 /#
-                    airsupport::debug_print3d_simple("<unknown string>", currentnode, (0, 0, -10));
+                    airsupport::debug_print3d_simple("<dev string:xb5>", currentnode, (0, 0, -10));
                     if (isdefined(nextnode.target)) {
-                        airsupport::debug_line(nextnode.origin, getent(nextnode.target, "<unknown string>").origin, (0.25, 0.5, 0.25), 5);
+                        airsupport::debug_line(nextnode.origin, getent(nextnode.target, "<dev string:xb9>").origin, (0.25, 0.5, 0.25), 5);
                     }
                     if (isdefined(currentnode.script_delay)) {
-                        airsupport::debug_print3d_simple("<unknown string>" + currentnode.script_delay, currentnode, (0, 0, 10));
+                        airsupport::debug_print3d_simple("<dev string:xc6>" + currentnode.script_delay, currentnode, (0, 0, 10));
                     }
                 #/
             }
@@ -232,7 +231,7 @@ function heli_path_graph() {
                 }
             }
         }
-        assert(isdefined(startnode_array) && startnode_array.size > 0, "<unknown string>");
+        assert(isdefined(startnode_array) && startnode_array.size > 0, "<dev string:xcf>");
         if (isprimarydest) {
             level.heli_primary_path = startnode_array;
             continue;
@@ -243,7 +242,7 @@ function heli_path_graph() {
         startnode = getent(loop_start[i].target, "targetname");
         level.heli_loop_paths[level.heli_loop_paths.size] = startnode;
     }
-    assert(isdefined(level.heli_loop_paths[0]), "<unknown string>");
+    assert(isdefined(level.heli_loop_paths[0]), "<dev string:xeb>");
     for (i = 0; i < gunner_loop_start.size; i++) {
         startnode = getent(gunner_loop_start[i].target, "targetname");
         startnode.isgunnerpath = 1;
@@ -255,16 +254,16 @@ function heli_path_graph() {
         }
         level.heli_startnodes[level.heli_startnodes.size] = path_start[i];
     }
-    assert(isdefined(level.heli_startnodes[0]), "<unknown string>");
+    assert(isdefined(level.heli_startnodes[0]), "<dev string:x113>");
     for (i = 0; i < leave_nodes.size; i++) {
         level.heli_leavenodes[level.heli_leavenodes.size] = leave_nodes[i];
     }
-    assert(isdefined(level.heli_leavenodes[0]), "<unknown string>");
+    assert(isdefined(level.heli_leavenodes[0]), "<dev string:x13c>");
     for (i = 0; i < crash_start.size; i++) {
         crash_start_node = getent(crash_start[i].target, "targetname");
         level.heli_crash_paths[level.heli_crash_paths.size] = crash_start_node;
     }
-    assert(isdefined(level.heli_crash_paths[0]), "<unknown string>");
+    assert(isdefined(level.heli_crash_paths[0]), "<dev string:x165>");
 }
 
 // Namespace helicopter/helicopter_shared
@@ -659,7 +658,7 @@ function heli_missile_regen() {
     self endon(#"death", #"crashing", #"leaving");
     for (;;) {
         /#
-            airsupport::debug_print3d("<unknown string>" + self.missile_ammo, (0.5, 0.5, 1), self, (0, 0, -100), 0);
+            airsupport::debug_print3d("<dev string:x18e>" + self.missile_ammo, (0.5, 0.5, 1), self, (0, 0, -100), 0);
         #/
         if (self.missile_ammo >= level.heli_missile_max) {
             self waittill(#"missile fired");
@@ -1024,18 +1023,18 @@ function assignprimarytargets(targets) {
         }
         killstreaks::update_non_player_threat(targets[idx]);
     }
-    assert(targets.size >= 2, "<unknown string>");
+    assert(targets.size >= 2, "<dev string:x19f>");
     highest = 0;
     second_highest = 0;
     primarytarget = undefined;
     for (idx = 0; idx < targets.size; idx++) {
-        assert(isdefined(targets[idx].threatlevel), "<unknown string>");
+        assert(isdefined(targets[idx].threatlevel), "<dev string:x1d4>");
         if (targets[idx].threatlevel >= highest) {
             highest = targets[idx].threatlevel;
             primarytarget = targets[idx];
         }
     }
-    assert(isdefined(primarytarget), "<unknown string>");
+    assert(isdefined(primarytarget), "<dev string:x1ff>");
     self.primarytarget = primarytarget;
     self notify(#"primary acquired");
 }
@@ -1054,19 +1053,19 @@ function assignsecondarytargets(targets) {
             killstreaks::update_missile_dog_threat(targets[idx]);
         }
     }
-    assert(targets.size >= 2, "<unknown string>");
+    assert(targets.size >= 2, "<dev string:x19f>");
     highest = 0;
     second_highest = 0;
     primarytarget = undefined;
     secondarytarget = undefined;
     for (idx = 0; idx < targets.size; idx++) {
-        assert(isdefined(targets[idx].missilethreatlevel), "<unknown string>");
+        assert(isdefined(targets[idx].missilethreatlevel), "<dev string:x1d4>");
         if (targets[idx].missilethreatlevel >= highest) {
             highest = targets[idx].missilethreatlevel;
             secondarytarget = targets[idx];
         }
     }
-    assert(isdefined(secondarytarget), "<unknown string>");
+    assert(isdefined(secondarytarget), "<dev string:x231>");
     self.secondarytarget = secondarytarget;
     self notify(#"secondary acquired");
 }
@@ -1549,13 +1548,13 @@ function heli_crash(hardpointtype, player, playernotify) {
         if (level.heli_debug_crash) {
             switch (level.heli_debug_crash) {
             case 1:
-                crashtype = "<unknown string>";
+                crashtype = "<dev string:x268>";
                 break;
             case 2:
-                crashtype = "<unknown string>";
+                crashtype = "<dev string:x272>";
                 break;
             case 3:
-                crashtype = "<unknown string>";
+                crashtype = "<dev string:x280>";
                 break;
             default:
                 break;
@@ -1842,7 +1841,7 @@ function private function_8de67419(var_b4c35bb7) {
         self function_86012f82(var_a9a839e2, 0);
         while (true) {
             /#
-                recordsphere(var_a9a839e2, 8, (0, 0, 1), "<unknown string>");
+                recordsphere(var_a9a839e2, 8, (0, 0, 1), "<dev string:x28a>");
             #/
             var_baa92af9 = ispointinnavvolume(self.origin, "navvolume_big");
             if (!var_baa92af9) {
@@ -2010,7 +2009,7 @@ function heli_fly(currentnode, startwait, hardpointtype) {
     wait(startwait);
     while (isdefined(currentnode.target)) {
         var_6cfa3712 = getentarray(currentnode.target, "targetname");
-        assert(isdefined(var_6cfa3712), "<unknown string>");
+        assert(isdefined(var_6cfa3712), "<dev string:x293>");
         nextnode = var_6cfa3712[0];
         pos = nextnode.origin + (0, 0, 30);
         if (isdefined(currentnode.script_airspeed) && isdefined(currentnode.script_accel)) {
@@ -2134,7 +2133,7 @@ function heli_mobilespawn(protectdest) {
     self notify(#"flying");
     self endon(#"flying", #"abandoned");
     /#
-        iprintlnbold("<unknown string>" + protectdest[0] + "<unknown string>" + protectdest[1] + "<unknown string>" + protectdest[2] + "<unknown string>");
+        iprintlnbold("<dev string:x2bf>" + protectdest[0] + "<dev string:x2d3>" + protectdest[1] + "<dev string:x2d3>" + protectdest[2] + "<dev string:x2d7>");
     #/
     heli_reset();
     self sethoverparams(50, 100, 50);
@@ -2179,26 +2178,26 @@ function function_81cba63() {
     while (true) {
         if (isdefined(self.protectdest)) {
             /#
-                recordsphere(self.protectdest, 8, (0, 0, 1), "<unknown string>");
+                recordsphere(self.protectdest, 8, (0, 0, 1), "<dev string:x28a>");
             #/
         }
         if (isdefined(self.var_6c63b409)) {
             /#
-                recordline(self.protectdest, self.var_6c63b409, (0, 1, 0), "<unknown string>");
-                recordsphere(self.var_6c63b409, 8, (0, 1, 0), "<unknown string>");
+                recordline(self.protectdest, self.var_6c63b409, (0, 1, 0), "<dev string:x28a>");
+                recordsphere(self.var_6c63b409, 8, (0, 1, 0), "<dev string:x28a>");
             #/
         }
         if (isdefined(self.goalpos)) {
             /#
-                recordsphere(self.goalpos, 8, (0, 1, 1), "<unknown string>");
-                recordline(self.origin, self.goalpos, (0, 1, 1), "<unknown string>");
+                recordsphere(self.goalpos, 8, (0, 1, 1), "<dev string:x28a>");
+                recordline(self.origin, self.goalpos, (0, 1, 1), "<dev string:x28a>");
             #/
         }
         if (isdefined(self.var_2c1a38eb) && isdefined(self.var_f9d38924)) {
             /#
-                recordsphere(self.var_f9d38924, 8, (0, 1, 0), "<unknown string>");
-                recordline(self.var_2c1a38eb, self.var_f9d38924, (0, 1, 0), "<unknown string>");
-                record3dtext("<unknown string>" + distance(self.var_2c1a38eb, self.var_f9d38924), self.var_f9d38924 + (0, 0, 20), (0, 1, 0), "<unknown string>");
+                recordsphere(self.var_f9d38924, 8, (0, 1, 0), "<dev string:x28a>");
+                recordline(self.var_2c1a38eb, self.var_f9d38924, (0, 1, 0), "<dev string:x28a>");
+                record3dtext("<dev string:x2dc>" + distance(self.var_2c1a38eb, self.var_f9d38924), self.var_f9d38924 + (0, 0, 20), (0, 1, 0), "<dev string:x28a>");
             #/
         }
         waitframe(1);
@@ -2509,7 +2508,7 @@ function fire_missile(smissiletype, ishots = 1, etarget) {
         tags[0] = "tag_store_r_2";
         break;
     default:
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x2e4>");
         break;
     }
     assert(isdefined(weapon));
@@ -2621,7 +2620,7 @@ function target_cone_check(target, conecosine) {
     heli_dot_target = vectordot(heli2target_normal, heli2forward_normal);
     if (heli_dot_target >= conecosine) {
         /#
-            airsupport::debug_print3d_simple("<unknown string>" + heli_dot_target, self, (0, 0, -40), 40);
+            airsupport::debug_print3d_simple("<dev string:x313>" + heli_dot_target, self, (0, 0, -40), 40);
         #/
         return true;
     }
@@ -2649,7 +2648,7 @@ function missile_support(target_player, rof, instantfire, endon_notify) {
                 player = level.players[i];
                 if (isdefined(player.team) && !util::function_fbce7263(player.team, self.team) && distance(player.origin, target_player.origin) <= level.heli_missile_friendlycare) {
                     /#
-                        airsupport::debug_print3d_simple("<unknown string>", self, (0, 0, -80), 40);
+                        airsupport::debug_print3d_simple("<dev string:x322>", self, (0, 0, -80), 40);
                     #/
                     self notify(#"missile ready");
                     return;
@@ -2659,7 +2658,7 @@ function missile_support(target_player, rof, instantfire, endon_notify) {
             player = self.owner;
             if (isdefined(player) && isdefined(player.team) && !util::function_fbce7263(player.team, self.team) && distance(player.origin, target_player.origin) <= level.heli_missile_friendlycare) {
                 /#
-                    airsupport::debug_print3d_simple("<unknown string>", self, (0, 0, -80), 40);
+                    airsupport::debug_print3d_simple("<dev string:x322>", self, (0, 0, -80), 40);
                 #/
                 self notify(#"missile ready");
                 return;
@@ -2759,24 +2758,24 @@ function attack_primary(hardpointtype) {
     function debug_print_target() {
         if (isdefined(level.heli_debug) && level.heli_debug == 1) {
             if (isdefined(self.primarytarget) && isdefined(self.primarytarget.threatlevel)) {
-                if (isdefined(self.primarytarget.type) && self.primarytarget.type == "<unknown string>") {
-                    name = "<unknown string>";
+                if (isdefined(self.primarytarget.type) && self.primarytarget.type == "<dev string:x34b>") {
+                    name = "<dev string:x34b>";
                 } else {
                     name = self.primarytarget.name;
                 }
-                primary_msg = "<unknown string>" + name + "<unknown string>" + self.primarytarget.threatlevel;
+                primary_msg = "<dev string:x351>" + name + "<dev string:x35d>" + self.primarytarget.threatlevel;
             } else {
-                primary_msg = "<unknown string>";
+                primary_msg = "<dev string:x351>";
             }
             if (isdefined(self.secondarytarget) && isdefined(self.secondarytarget.threatlevel)) {
-                if (isdefined(self.secondarytarget.type) && self.secondarytarget.type == "<unknown string>") {
-                    name = "<unknown string>";
+                if (isdefined(self.secondarytarget.type) && self.secondarytarget.type == "<dev string:x34b>") {
+                    name = "<dev string:x34b>";
                 } else {
                     name = self.secondarytarget.name;
                 }
-                secondary_msg = "<unknown string>" + name + "<unknown string>" + self.secondarytarget.threatlevel;
+                secondary_msg = "<dev string:x363>" + name + "<dev string:x35d>" + self.secondarytarget.threatlevel;
             } else {
-                secondary_msg = "<unknown string>";
+                secondary_msg = "<dev string:x363>";
             }
             frames = int(self.targeting_delay * 20) + 1;
             thread airsupport::draw_text(primary_msg, (1, 0.6, 0.6), self, (0, 0, 40), frames);

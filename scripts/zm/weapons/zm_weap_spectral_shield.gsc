@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_riotshield.gsc;
 #using script_6951ea86fdae9ae0;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
@@ -335,8 +334,8 @@ function private function_7eae6d92(var_88f24b00) {
     // Size: 0x6e
     function private function_1e981d89(n_pos) {
         self endon(#"death");
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x38>");
+        self endon("<dev string:x38>");
         while (true) {
             debugstar(n_pos, 5, (0, 1, 0));
             waitframe(5);
@@ -1364,8 +1363,8 @@ function function_7067b673(origin1, origin2, color) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_6da92963);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x4b>");
+        adddebugcommand("<dev string:xbe>");
     }
 
     // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield

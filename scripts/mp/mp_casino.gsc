@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_casino_scripted.gsc;
 #using scripts\core_common\struct.gsc;
 #using scripts\mp_common\load.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_firingrange2_alt_scripted.csc;
 #using scripts\mp\mp_firingrange2_alt_sound.csc;
 #using scripts\mp\mp_firingrange2_alt_fx.csc;

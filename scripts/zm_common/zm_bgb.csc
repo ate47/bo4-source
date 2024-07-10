@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_bgb_pack.csc;
 #using scripts\zm_common\load.csc;
 #using scripts\core_common\util_shared.csc;
@@ -104,7 +103,7 @@ function private bgb_finalize() {
         var_ddcb67f4 = getunlockableiteminfofromindex(v.item_index, 2);
         var_5415dfb9 = function_b143666d(v.item_index, 2);
         if (!isdefined(var_ddcb67f4) || !isdefined(var_5415dfb9)) {
-            println("<unknown string>" + v.name + "<unknown string>");
+            println("<dev string:x38>" + v.name + "<dev string:x49>");
             continue;
         }
         if (!isdefined(var_5415dfb9.bgbrarity)) {
@@ -128,10 +127,10 @@ function private bgb_finalize() {
 // Checksum 0x93d9e479, Offset: 0xa50
 // Size: 0x14e
 function register(name, limit_type) {
-    assert(isdefined(name), "<unknown string>");
-    assert(#"none" != name, "<unknown string>" + #"none" + "<unknown string>");
-    assert(!isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(limit_type), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(name), "<dev string:x79>");
+    assert(#"none" != name, "<dev string:xa1>" + #"none" + "<dev string:xc5>");
+    assert(!isdefined(level.bgb[name]), "<dev string:xfe>" + name + "<dev string:x117>");
+    assert(isdefined(limit_type), "<dev string:xfe>" + name + "<dev string:x137>");
     level.bgb[name] = spawnstruct();
     level.bgb[name].name = name;
     level.bgb[name].limit_type = limit_type;

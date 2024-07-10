@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\struct.gsc;
 
 #namespace mp_militia_sound;

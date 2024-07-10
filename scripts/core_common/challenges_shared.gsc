@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\callbacks_shared.gsc;
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\abilities\ability_util.gsc;
@@ -667,11 +666,11 @@ function function_90185171(totaltimeplayed, credits, casexp) {
         }
         player function_cce105c8(#"hash_499fb9199cdc0a5e", 1, int(var_bf107145), 2, int(timeoffset));
     }
-    println("<unknown string>" + player.name);
-    println("<unknown string>" + (isdefined(credits) ? credits : "<unknown string>"));
-    println("<unknown string>" + (isdefined(casexp) ? casexp : "<unknown string>"));
-    println("<unknown string>" + (isdefined(totaltimeplayed) ? totaltimeplayed : "<unknown string>"));
-    println("<unknown string>" + (isdefined(player.pers[#"participation"]) ? player.pers[#"participation"] : "<unknown string>"));
+    println("<dev string:x38>" + player.name);
+    println("<dev string:x50>" + (isdefined(credits) ? credits : "<dev string:x65>"));
+    println("<dev string:x69>" + (isdefined(casexp) ? casexp : "<dev string:x65>"));
+    println("<dev string:x7e>" + (isdefined(totaltimeplayed) ? totaltimeplayed : "<dev string:x65>"));
+    println("<dev string:x9b>" + (isdefined(player.pers[#"participation"]) ? player.pers[#"participation"] : "<dev string:x65>"));
     if (credits <= 0 && casexp <= 0) {
         return;
     }
@@ -695,7 +694,7 @@ function function_90185171(totaltimeplayed, credits, casexp) {
         #/
         if (!isdefined(player.pers[#"participation"]) || player.pers[#"participation"] < 1) {
             if (!sessionmodeiswarzonegame()) {
-                println(player.name + "<unknown string>");
+                println(player.name + "<dev string:xb2>");
                 return;
             }
         }
@@ -705,7 +704,7 @@ function function_90185171(totaltimeplayed, credits, casexp) {
                     var_7be1e671 = player.pers[#"controllerparticipation"] / player.pers[#"controllerparticipationchecks"];
                     if (var_7be1e671 < level.var_8e1c2aa1) {
                         self.pers[#"controllerparticipationendgameresult"] = 0;
-                        println(player.name + "<unknown string>" + var_7be1e671 + "<unknown string>" + level.var_8e1c2aa1 + "<unknown string>");
+                        println(player.name + "<dev string:xdf>" + var_7be1e671 + "<dev string:x11a>" + level.var_8e1c2aa1 + "<dev string:x121>");
                         return;
                     } else {
                         self.pers[#"controllerparticipationendgameresult"] = 1;
@@ -720,19 +719,19 @@ function function_90185171(totaltimeplayed, credits, casexp) {
             if (isdefined(tier_boost) && tier_boost > 0) {
                 tier_boost = min(tier_boost, getdvarint(#"hash_20997c814ed4b7ed", 25));
                 credits += credits * tier_boost / 100;
-                println("<unknown string>" + player.name + "<unknown string>" + tier_boost);
+                println("<dev string:x125>" + player.name + "<dev string:x13c>" + tier_boost);
             }
             bo_pass_tier_boost = player stats::function_ff8f4f17(#"bo_pass_tier_boost");
             if (isdefined(bo_pass_tier_boost) && bo_pass_tier_boost > 0) {
                 credits += credits * bo_pass_tier_boost / 100;
-                println("<unknown string>" + player.name + "<unknown string>" + bo_pass_tier_boost);
+                println("<dev string:x142>" + player.name + "<dev string:x13c>" + bo_pass_tier_boost);
             }
             bo_pass_party_tier_boost = player stats::function_ff8f4f17(#"bo_pass_party_tier_boost");
             if (isdefined(bo_pass_party_tier_boost) && bo_pass_party_tier_boost > 0) {
                 credits += credits * bo_pass_party_tier_boost / 100;
-                println("<unknown string>" + player.name + "<unknown string>" + bo_pass_party_tier_boost);
+                println("<dev string:x161>" + player.name + "<dev string:x13c>" + bo_pass_party_tier_boost);
             }
-            println("<unknown string>" + player.name + "<unknown string>" + totaltimeplayed + "<unknown string>" + credits + "<unknown string>" + casexp);
+            println("<dev string:x186>" + player.name + "<dev string:x192>" + totaltimeplayed + "<dev string:x19e>" + credits + "<dev string:x1ac>" + casexp);
             if (player function_875e4dbc()) {
                 var_91503b6f = getdvarfloat(#"hash_4da039b4bc312fc1", 1.1);
                 credits *= var_91503b6f;
@@ -762,14 +761,14 @@ function function_90185171(totaltimeplayed, credits, casexp) {
                     }
                 }
                 if (sessionmodeismultiplayergame() && getdvarint(#"hash_ed47eb88ebf25b2", 1) || sessionmodeiswarzonegame() && getdvarint(#"hash_eb27cb88ea23be6", 1)) {
-                    println("<unknown string>" + credits);
+                    println("<dev string:x1b9>" + credits);
                     player function_cce105c8(#"hash_680a99fa024dd073", 1, int(credits), 2, modeindex, 3, int(totaltimeplayed));
                 }
             }
             if (casexp > 0) {
                 if (sessionmodeismultiplayergame() && getdvarint(#"hash_107f9b52b0455b54", 1) || sessionmodeiswarzonegame() && getdvarint(#"hash_10d78d52b08fb960", 1)) {
                     var_ae857992 = getdvarint(#"hash_60d812bef0f782fb", 2);
-                    println("<unknown string>" + casexp);
+                    println("<dev string:x1ce>" + casexp);
                     player function_cce105c8(#"hash_7c81ccc32581870e", 1, int(casexp), 2, modeindex, 3, int(totaltimeplayed), 4, int(var_ae857992));
                 }
             }

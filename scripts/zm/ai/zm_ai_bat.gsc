@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_spawner.gsc;
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -74,7 +73,7 @@ function __init__() {
     clientfield::register("vehicle", "bat_transform_fx", 8000, 1, "int");
     level.bat_spawners = getentarray("zombie_bat_spawner", "script_noteworthy");
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
     #/
 }
 
@@ -329,16 +328,16 @@ function function_1fff2d() {
     if (isdefined(pos) && isdefined(pos[#"position"]) && !isdefined(pos[#"entity"])) {
         pos = pos[#"position"];
         /#
-            recordline(self.origin, pos, (0, 1, 1), "<unknown string>");
-            recordsphere(pos, 8, (0, 1, 1), "<unknown string>");
+            recordline(self.origin, pos, (0, 1, 1), "<dev string:x3e>");
+            recordsphere(pos, 8, (0, 1, 1), "<dev string:x3e>");
         #/
         posonnavmesh = getclosestpointonnavmesh(pos, 256, 30);
         if (isdefined(posonnavmesh)) {
             pos = physicstrace(posonnavmesh + (0, 0, 70), posonnavmesh + (0, 0, -70), (-2, -2, -2), (2, 2, 2), self, 1);
             pos = pos[#"position"];
             /#
-                recordline(pos, posonnavmesh, (0, 0, 1), "<unknown string>");
-                recordsphere(posonnavmesh, 8, (0, 0, 1), "<unknown string>");
+                recordline(pos, posonnavmesh, (0, 0, 1), "<dev string:x3e>");
+                recordsphere(posonnavmesh, 8, (0, 0, 1), "<dev string:x3e>");
             #/
             if (isdefined(pos)) {
                 scriptmodel = util::spawn_model("tag_origin", self.origin, self.angles);
@@ -522,7 +521,7 @@ function function_1c4cd527(origin, owner, innerradius, outerradius, halfheight, 
                     point._scoredebug[#"no visibility"] = spawnstruct();
                 }
                 point._scoredebug[#"no visibility"].score = -5000;
-                point._scoredebug[#"no visibility"].scorename = "<unknown string>";
+                point._scoredebug[#"no visibility"].scorename = "<dev string:x47>";
             #/
             point.score += -5000;
         }
@@ -575,12 +574,12 @@ function function_66d3e7c2() {
     while (true) {
         if (isdefined(self.var_c8c5a7d3)) {
             /#
-                recordsphere(self.var_c8c5a7d3, 8, (0, 0, 1), "<unknown string>");
+                recordsphere(self.var_c8c5a7d3, 8, (0, 0, 1), "<dev string:x3e>");
             #/
             if (isdefined(self.var_d6acaac4)) {
                 /#
-                    recordsphere(self.var_c8c5a7d3, 8, (0, 1, 0), "<unknown string>");
-                    recordline(self.var_c8c5a7d3, self.var_d6acaac4, (0, 1, 0), "<unknown string>");
+                    recordsphere(self.var_c8c5a7d3, 8, (0, 1, 0), "<dev string:x3e>");
+                    recordline(self.var_c8c5a7d3, self.var_d6acaac4, (0, 1, 0), "<dev string:x3e>");
                 #/
             }
         }

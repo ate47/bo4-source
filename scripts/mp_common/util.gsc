@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\math_shared.gsc;
 #using scripts\core_common\lui_shared.gsc;
@@ -220,7 +219,7 @@ function getotherteam(team) {
     } else {
         return #"allies";
     }
-    assertmsg("<unknown string>" + team);
+    assertmsg("<dev string:x38>" + team);
 }
 
 // Namespace util/util
@@ -233,7 +232,7 @@ function getteamenum(team) {
     } else if (team == #"axis") {
         return 2;
     }
-    assertmsg("<unknown string>" + team);
+    assertmsg("<dev string:x56>" + team);
 }
 
 // Namespace util/util
@@ -286,7 +285,7 @@ function wait_endon(waittime, endonstring, endonstring2, endonstring3, endonstri
 // Checksum 0x74761c02, Offset: 0xec8
 // Size: 0x5c
 function getfx(fx) {
-    assert(isdefined(level._effect[fx]), "<unknown string>" + fx + "<unknown string>");
+    assert(isdefined(level._effect[fx]), "<dev string:x73>" + fx + "<dev string:x79>");
     return level._effect[fx];
 }
 
@@ -644,7 +643,7 @@ function self_delete() {
 // Checksum 0x4bd7875d, Offset: 0x1e48
 // Size: 0x4a
 function use_button_pressed() {
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x9d>");
     return self usebuttonpressed();
 }
 
@@ -915,7 +914,7 @@ function function_94a3be2() {
         if (timelimitoverride >= 0) {
             if (level.timelimit != timelimitoverride) {
                 level.timelimit = timelimitoverride;
-                setgametypesetting("<unknown string>", timelimitoverride);
+                setgametypesetting("<dev string:xcb>", timelimitoverride);
             }
         }
     }

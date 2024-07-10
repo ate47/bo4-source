@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_force_archetypes.gsc;
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
@@ -504,7 +503,7 @@ function function_753b4884() {
         if (isdefined(var_4afb24b6)) {
             turnyaw = absangleclamp360(self.angles[1] - vectortoangles(var_4afb24b6.origin - self.origin)[1]);
         } else {
-            println("mocomp_purchase_lockdown_vomit@blight_father" + self getentitynumber() + "tag_tongue" + self.origin[0] + "face angle" + self.origin[1] + "face angle" + self.origin[2] + "j_head");
+            println("<dev string:x38>" + self getentitynumber() + "<dev string:x4b>" + self.origin[0] + "<dev string:x53>" + self.origin[1] + "<dev string:x53>" + self.origin[2] + "<dev string:x57>");
             turnyaw = absangleclamp360(self.angles[1] - vectortoangles(stub.origin - self.origin)[1]);
         }
         return turnyaw;
@@ -788,7 +787,7 @@ function private function_911c3934(entity) {
                     v_goal = getclosestpointonnavmesh(poi.origin, 24, entity getpathfindingradius());
                     if (isdefined(v_goal)) {
                         /#
-                            iprintlnbold("<unknown string>" + entity getentitynumber() + "<unknown string>" + poi getentitynumber());
+                            iprintlnbold("<dev string:x9e>" + entity getentitynumber() + "<dev string:xb5>" + poi getentitynumber());
                         #/
                         entity.var_81ce9fcd = poi;
                         entity.var_c52d968a = v_goal;
@@ -1036,7 +1035,7 @@ function private function_afce1cf(inflictor, attacker, damage, flags, meansofdam
     }
     /#
         if (isdefined(level.var_482766d7) && level.var_482766d7) {
-            iprintlnbold("<unknown string>" + damage_scale + "<unknown string>" + final_damage + "<unknown string>" + entity.health - final_damage + "<unknown string>" + entity.var_2703428f);
+            iprintlnbold("<dev string:xd2>" + damage_scale + "<dev string:xe0>" + final_damage + "<dev string:xea>" + entity.health - final_damage + "<dev string:xf7>" + entity.var_2703428f);
         }
     #/
     if (entity.var_2703428f <= 0) {
@@ -1165,7 +1164,7 @@ function private function_2784f3ff(entity) {
     }
     foreach (player in level.players) {
         /#
-            if (player isinmovemode("<unknown string>", "<unknown string>")) {
+            if (player isinmovemode("<dev string:x10a>", "<dev string:x110>")) {
                 continue;
             }
         #/
@@ -1586,14 +1585,14 @@ function private function_299dd40e(entity, mocompanim, mocompanimblendouttime, m
 function private function_689831cf(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     if (function_ef973b70(entity) === 0 && zm_utility::is_player_valid(entity.var_bef7624d) && !isdefined(entity.e_grapplee)) {
         /#
-            record3dtext("<unknown string>", entity.origin + (0, 0, 16), (0, 0, 1));
+            record3dtext("<dev string:x119>", entity.origin + (0, 0, 16), (0, 0, 1));
         #/
         to_player = entity.var_bef7624d.origin - entity.origin;
         var_47d9e0ed = vectortoangles(to_player);
         entity orientmode("face angle", var_47d9e0ed[1]);
     } else {
         /#
-            record3dtext("<unknown string>", entity.origin + (0, 0, 16), (0, 1, 0));
+            record3dtext("<dev string:x129>", entity.origin + (0, 0, 16), (0, 1, 0));
         #/
         entity orientmode("face current");
     }
@@ -1669,7 +1668,7 @@ function private function_5e853c85(grappler) {
         self endon(#"disconnect");
         grappler endon(#"death", #"hash_2fb2eddfa6a0ef3f");
         while (true) {
-            if (self isinmovemode("<unknown string>", "<unknown string>")) {
+            if (self isinmovemode("<dev string:x110>", "<dev string:x10a>")) {
                 grappler function_76c1f56f();
                 function_c526065b(grappler);
             }
@@ -1696,7 +1695,7 @@ function private function_62b3b7a3(entity) {
         } else {
             function_c526065b(entity);
         }
-        println("<unknown string>" + distance(function_f9d9f198(entity), grapplee.origin + (0, 0, 35)));
+        println("<dev string:x13a>" + distance(function_f9d9f198(entity), grapplee.origin + (0, 0, 35)));
     }
     return true;
 }
@@ -2019,7 +2018,7 @@ function private function_7055b26(entity) {
     }
     var_4afb24b6 = zm_lockdown_util::function_dab6d796(entity, stub);
     if (!isdefined(var_4afb24b6)) {
-        println("mocomp_purchase_lockdown_vomit@blight_father" + entity getentitynumber() + "<unknown string>" + stub.origin + "<unknown string>");
+        println("<dev string:x38>" + entity getentitynumber() + "<dev string:x164>" + stub.origin + "<dev string:x19b>");
         var_7162cf15 = zm_utility::function_b0eeaada(stub.origin);
         halfheight = 32;
         if (!isdefined(var_7162cf15)) {
@@ -2194,7 +2193,7 @@ function private function_6ab8460f(entity, mocompanim, mocompanimblendouttime, m
         start_origin = getstartorigin(var_4afb24b6.origin, var_4afb24b6.angles, mocompanim);
         start_angles = getstartangles(var_4afb24b6.origin, var_4afb24b6.angles, mocompanim);
     } else {
-        println("mocomp_purchase_lockdown_vomit@blight_father" + entity getentitynumber() + "tag_tongue" + entity.origin[0] + "face angle" + entity.origin[1] + "face angle" + entity.origin[2] + "j_head");
+        println("<dev string:x38>" + entity getentitynumber() + "<dev string:x4b>" + entity.origin[0] + "<dev string:x53>" + entity.origin[1] + "<dev string:x53>" + entity.origin[2] + "<dev string:x57>");
         start_origin = entity.origin;
         start_angles = entity.angles;
     }
@@ -2363,7 +2362,7 @@ function private function_e0d8f770(entity) {
 // Size: 0x94
 function private function_d2b91209(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        println("<unknown string>");
+        println("<dev string:x1be>");
         return;
     }
     entity clientfield::increment("blight_father_spawn_maggot_fx_left");
@@ -2376,7 +2375,7 @@ function private function_d2b91209(entity) {
 // Size: 0x94
 function private function_78f5c48e(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        println("<unknown string>");
+        println("<dev string:x1be>");
         return;
     }
     entity clientfield::increment("blight_father_spawn_maggot_fx_right");
@@ -2886,9 +2885,9 @@ function function_2f701be7() {
 // Size: 0x96
 function round_spawn() {
     /#
-        blight_father_spawners = getspawnerarray("<unknown string>", "<unknown string>");
+        blight_father_spawners = getspawnerarray("<dev string:x1ff>", "<dev string:x21e>");
         if (blight_father_spawners.size == 0) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:x232>");
             return;
         }
     #/
@@ -2969,7 +2968,7 @@ function private on_host_migration_end(params) {
             return;
         }
         foreach (var_84ed9a13 in namespace_81245006::function_fab3ee3e(blight_father)) {
-            adddebugcommand("<unknown string>" + var_84ed9a13.var_51e8b151 + "<unknown string>" + var_84ed9a13.var_51e8b151 + "<unknown string>");
+            adddebugcommand("<dev string:x254>" + var_84ed9a13.var_51e8b151 + "<dev string:x28c>" + var_84ed9a13.var_51e8b151 + "<dev string:x2c1>");
         }
         level.var_d4c91513 = 1;
     }
@@ -2980,16 +2979,16 @@ function private on_host_migration_end(params) {
     // Size: 0x430
     function private function_a2751530() {
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x2c6>");
+        adddebugcommand("<dev string:x317>");
+        adddebugcommand("<dev string:x36a>");
+        adddebugcommand("<dev string:x3c2>");
+        adddebugcommand("<dev string:x441>");
+        adddebugcommand("<dev string:x4ad>");
         while (true) {
             waitframe(1);
-            string = getdvarstring(#"hash_1999cec56042c9de", "<unknown string>");
-            cmd = strtok(string, "face angle");
+            string = getdvarstring(#"hash_1999cec56042c9de", "<dev string:x51c>");
+            cmd = strtok(string, "<dev string:x53>");
             if (cmd.size > 0) {
                 switch (cmd[0]) {
                 case #"spawn":
@@ -3009,12 +3008,12 @@ function private on_host_migration_end(params) {
                     break;
                 case #"hash_3170107749934609":
                     foreach (blight_father in getaiarchetypearray(#"blight_father")) {
-                        blight_father ai::set_behavior_attribute("<unknown string>", !blight_father ai::get_behavior_attribute("<unknown string>"));
+                        blight_father ai::set_behavior_attribute("<dev string:x51f>", !blight_father ai::get_behavior_attribute("<dev string:x51f>"));
                     }
                     break;
                 case #"toggle_lockdown":
                     foreach (blight_father in getaiarchetypearray(#"blight_father")) {
-                        blight_father ai::set_behavior_attribute("<unknown string>", !blight_father ai::get_behavior_attribute("<unknown string>"));
+                        blight_father ai::set_behavior_attribute("<dev string:x535>", !blight_father ai::get_behavior_attribute("<dev string:x535>"));
                     }
                     break;
                 default:
@@ -3024,7 +3023,7 @@ function private on_host_migration_end(params) {
                     break;
                 }
             }
-            setdvar(#"hash_1999cec56042c9de", "<unknown string>");
+            setdvar(#"hash_1999cec56042c9de", "<dev string:x51c>");
         }
     }
 
@@ -3046,10 +3045,10 @@ function private on_host_migration_end(params) {
     // Checksum 0x9d6d686b, Offset: 0xd368
     // Size: 0x12c
     function private function_4d72a4a6() {
-        blight_father_spawners = getspawnerarray("<unknown string>", "<unknown string>");
+        blight_father_spawners = getspawnerarray("<dev string:x1ff>", "<dev string:x21e>");
         spawn_point = function_255c7194();
         if (blight_father_spawners.size == 0) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:x232>");
             return;
         }
         blight_father_spawners[0].script_forcespawn = 1;

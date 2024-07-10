@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\mp_common\gametypes\ct_tutorial_skirmish.csc;
 #using scripts\mp_common\gametypes\globallogic_score.csc;

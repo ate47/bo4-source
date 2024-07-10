@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_frenetic_fx;
 
 // Namespace mp_frenetic_fx/mp_frenetic_fx

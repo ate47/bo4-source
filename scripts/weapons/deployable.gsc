@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\oob.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -45,7 +44,7 @@ function register_deployable(weapon, var_c0064c29, var_94b4fa08 = undefined, pla
     if (weapon.name == "#none") {
         return;
     }
-    assert(weapon.name != "<unknown string>");
+    assert(weapon.name != "<dev string:x38>");
     level._deployable_weapons[weapon.statindex] = spawnstruct();
     level._deployable_weapons[weapon.statindex].var_159652c0 = &function_6654310c;
     level._deployable_weapons[weapon.statindex].var_9f2c21ea = var_c0064c29;
@@ -75,7 +74,7 @@ function function_209fda28(weapon) {
     // Checksum 0x5fb94fd2, Offset: 0x480
     // Size: 0x2c
     function function_84fa8d39(weapon) {
-        println("<unknown string>");
+        println("<dev string:x40>");
     }
 
 #/
@@ -85,7 +84,7 @@ function function_209fda28(weapon) {
 // Checksum 0x7c4ba5b4, Offset: 0x4b8
 // Size: 0x4c
 function function_cf538621(weapon) {
-    println("<unknown string>");
+    println("<dev string:x4f>");
     self clientfield::set_to_player("gameplay_allows_deploy", 1);
 }
 

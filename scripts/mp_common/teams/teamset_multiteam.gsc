@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\teams\teamset.gsc;
 
 #namespace teamset_multiteam;

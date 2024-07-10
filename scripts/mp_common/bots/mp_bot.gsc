@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\bots\mp_bot_position.gsc;
 #using script_2be661251429fd1a;
 #using scripts\mp_common\ai\planner_mp_tdm_squad.gsc;
@@ -183,7 +182,7 @@ function function_1b0af429() {
     var_1bb1502d = [];
     var_1bb1502d[#"primaryweapon"] = array::random(level.var_73ec5517[#"primaryweapon"]);
     /#
-        function_165d8cc2("planemortar", var_1bb1502d[#"primaryweapon"]);
+        function_165d8cc2("<dev string:x38>", var_1bb1502d[#"primaryweapon"]);
     #/
     self botclassadditem(0, var_1bb1502d[#"primaryweapon"]);
     var_dc111f5++;
@@ -233,7 +232,7 @@ function function_1b0af429() {
     }
     var_1bb1502d[#"secondaryweapon"] = array::random(level.var_73ec5517[#"secondaryweapon"]);
     /#
-        function_165d8cc2("secondaryAttachment", var_1bb1502d[#"secondaryweapon"]);
+        function_165d8cc2("<dev string:x48>", var_1bb1502d[#"secondaryweapon"]);
     #/
     self botclassadditem(0, var_1bb1502d[#"secondaryweapon"]);
     var_dc111f5++;
@@ -263,7 +262,7 @@ function function_1b0af429() {
     // Checksum 0xdbc7049e, Offset: 0x19e8
     // Size: 0x4c
     function function_165d8cc2(var_2faf31e0, loadoutitem) {
-        if (var_2faf31e0 == "planemortar" || var_2faf31e0 == "secondaryAttachment") {
+        if (var_2faf31e0 == "<dev string:x38>" || var_2faf31e0 == "<dev string:x48>") {
             bot_action::function_36052a7f(loadoutitem);
         }
     }

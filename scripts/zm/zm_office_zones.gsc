@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_hud.gsc;
@@ -180,7 +179,7 @@ function function_ab7f70b9(e_player) {
     // Size: 0x3c
     function function_2fb4c999() {
         level waittill(#"open_sesame");
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x38>");
     }
 
 #/

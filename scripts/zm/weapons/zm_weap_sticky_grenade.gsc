@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_equipment.gsc;
 #using scripts\zm_common\zm.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -24,7 +23,7 @@ function __init__() {
 }
 
 // Namespace sticky_grenade/zm_weap_sticky_grenade
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0xa3c0004b, Offset: 0x150
 // Size: 0xea
 function function_140f2522(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

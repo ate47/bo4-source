@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\globallogic_utils.gsc;
 #using scripts\mp_common\gametypes\dev.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -53,7 +52,7 @@ function sessionadvertisementcheck() {
         wait(sessionadvertcheckwait);
         advertise = [[ level.var_a962eeb6 ]]();
         if (!isdefined(currentadvertisedstatus) || isdefined(advertise) && currentadvertisedstatus != advertise) {
-            println("<unknown string>" + (advertise ? "<unknown string>" : "<unknown string>"));
+            println("<dev string:x38>" + (advertise ? "<dev string:x4d>" : "<dev string:x54>"));
             setadvertisedstatus(advertise);
         }
     }
@@ -79,13 +78,13 @@ function teamscorelimitcheck(rulescorepercent, debug_count) {
             }
             if (rulescorepercent >= scorepercentageleft) {
                 /#
-                    debug_count = updatedebughud(debug_count, "<unknown string>", int(scorepercentageleft));
+                    debug_count = updatedebughud(debug_count, "<dev string:x5c>", int(scorepercentageleft));
                 #/
                 return false;
             }
         }
         /#
-            debug_count = updatedebughud(debug_count, "<unknown string>", int(minscorepercentageleft));
+            debug_count = updatedebughud(debug_count, "<dev string:x5c>", int(minscorepercentageleft));
         #/
     }
     return true;
@@ -115,7 +114,7 @@ function default_rules() {
     debug_count = 1;
     if (level.gameadvertisementrulescorepercent) {
         /#
-            debug_count = updatedebughud(debug_count, "<unknown string>", level.gameadvertisementrulescorepercent);
+            debug_count = updatedebughud(debug_count, "<dev string:x76>", level.gameadvertisementrulescorepercent);
         #/
         if (level.teambased) {
             if (currentround >= level.gameadvertisementruleround - 1) {
@@ -136,7 +135,7 @@ function default_rules() {
             }
             scorepercentageleft = 100 - highestscore / level.scorelimit * 100;
             /#
-                debug_count = updatedebughud(debug_count, "<unknown string>", int(scorepercentageleft));
+                debug_count = updatedebughud(debug_count, "<dev string:x5c>", int(scorepercentageleft));
             #/
             if (level.gameadvertisementrulescorepercent >= scorepercentageleft) {
                 return false;
@@ -145,7 +144,7 @@ function default_rules() {
     }
     if (level.gameadvertisementruletimeleft && currentround >= level.gameadvertisementruleround - 1) {
         /#
-            debug_count = updatedebughud(debug_count, "<unknown string>", level.gameadvertisementruletimeleft / 60000);
+            debug_count = updatedebughud(debug_count, "<dev string:xa9>", level.gameadvertisementruletimeleft / 60000);
         #/
         if (timelimitcheck(level.gameadvertisementruletimeleft) == 0) {
             return false;
@@ -153,8 +152,8 @@ function default_rules() {
     }
     if (level.gameadvertisementruleround) {
         /#
-            debug_count = updatedebughud(debug_count, "<unknown string>", level.gameadvertisementruleround);
-            debug_count = updatedebughud(debug_count, "<unknown string>", currentround);
+            debug_count = updatedebughud(debug_count, "<dev string:xd8>", level.gameadvertisementruleround);
+            debug_count = updatedebughud(debug_count, "<dev string:xe5>", currentround);
         #/
         if (level.gameadvertisementruleround <= currentround) {
             return false;
@@ -162,7 +161,7 @@ function default_rules() {
     }
     if (level.gameadvertisementruleroundswon) {
         /#
-            debug_count = updatedebughud(debug_count, "<unknown string>", level.gameadvertisementruleroundswon);
+            debug_count = updatedebughud(debug_count, "<dev string:xf7>", level.gameadvertisementruleroundswon);
         #/
         maxroundswon = 0;
         foreach (team, _ in level.teams) {
@@ -172,13 +171,13 @@ function default_rules() {
             }
             if (level.gameadvertisementruleroundswon <= roundswon) {
                 /#
-                    debug_count = updatedebughud(debug_count, "<unknown string>", maxroundswon);
+                    debug_count = updatedebughud(debug_count, "<dev string:x113>", maxroundswon);
                 #/
                 return false;
             }
         }
         /#
-            debug_count = updatedebughud(debug_count, "<unknown string>", maxroundswon);
+            debug_count = updatedebughud(debug_count, "<dev string:x113>", maxroundswon);
         #/
     }
     return true;
@@ -191,20 +190,20 @@ function default_rules() {
     // Checksum 0x109cb562, Offset: 0x958
     // Size: 0x152
     function sessionadvertismentcreatedebughud(linenum, alignx) {
-        debug_hud = dev::new_hud("<unknown string>", "<unknown string>", 0, 0, 1);
+        debug_hud = dev::new_hud("<dev string:x126>", "<dev string:x137>", 0, 0, 1);
         debug_hud.hidewheninmenu = 1;
-        debug_hud.horzalign = "<unknown string>";
-        debug_hud.vertalign = "<unknown string>";
-        debug_hud.alignx = "<unknown string>";
-        debug_hud.aligny = "<unknown string>";
+        debug_hud.horzalign = "<dev string:x143>";
+        debug_hud.vertalign = "<dev string:x14b>";
+        debug_hud.alignx = "<dev string:x143>";
+        debug_hud.aligny = "<dev string:x14b>";
         debug_hud.x = alignx;
         debug_hud.y = -50 + linenum * 15;
         debug_hud.foreground = 1;
-        debug_hud.font = "<unknown string>";
+        debug_hud.font = "<dev string:x154>";
         debug_hud.fontscale = 1.5;
         debug_hud.color = (1, 1, 1);
         debug_hud.alpha = 1;
-        debug_hud settext("<unknown string>");
+        debug_hud settext("<dev string:x15e>");
         return debug_hud;
     }
 
@@ -249,21 +248,21 @@ function default_rules() {
         sessionadverthud_3b = undefined;
         sessionadverthud_4a = undefined;
         sessionadverthud_4b = undefined;
-        level.sessionadverthud_0_text = "<unknown string>";
-        level.sessionadverthud_1a_text = "<unknown string>";
-        level.sessionadverthud_1b_text = "<unknown string>";
-        level.sessionadverthud_2a_text = "<unknown string>";
-        level.sessionadverthud_2b_text = "<unknown string>";
-        level.sessionadverthud_3a_text = "<unknown string>";
-        level.sessionadverthud_3b_text = "<unknown string>";
-        level.sessionadverthud_4a_text = "<unknown string>";
-        level.sessionadverthud_4b_text = "<unknown string>";
+        level.sessionadverthud_0_text = "<dev string:x15e>";
+        level.sessionadverthud_1a_text = "<dev string:x15e>";
+        level.sessionadverthud_1b_text = "<dev string:x15e>";
+        level.sessionadverthud_2a_text = "<dev string:x15e>";
+        level.sessionadverthud_2b_text = "<dev string:x15e>";
+        level.sessionadverthud_3a_text = "<dev string:x15e>";
+        level.sessionadverthud_3b_text = "<dev string:x15e>";
+        level.sessionadverthud_4a_text = "<dev string:x15e>";
+        level.sessionadverthud_4b_text = "<dev string:x15e>";
         while (true) {
             wait(1);
             showdebughud = getdvarint(#"sessionadvertshowdebughud", 0);
-            level.sessionadverthud_0_text = "<unknown string>";
+            level.sessionadverthud_0_text = "<dev string:x161>";
             if (level.sessionadvertstatus == 0) {
-                level.sessionadverthud_0_text = "<unknown string>";
+                level.sessionadverthud_0_text = "<dev string:x179>";
             }
             if (!isdefined(sessionadverthud_0) && showdebughud != 0) {
                 host = util::gethostplayer();
@@ -312,19 +311,19 @@ function default_rules() {
                     sessionadverthud_0.color = (0.9, 0, 0);
                 }
                 sessionadverthud_0 settext(level.sessionadverthud_0_text);
-                if (level.sessionadverthud_1a_text != "<unknown string>") {
+                if (level.sessionadverthud_1a_text != "<dev string:x15e>") {
                     sessionadverthud_1a settext(level.sessionadverthud_1a_text);
                     sessionadverthud_1b setvalue(level.sessionadverthud_1b_text);
                 }
-                if (level.sessionadverthud_2a_text != "<unknown string>") {
+                if (level.sessionadverthud_2a_text != "<dev string:x15e>") {
                     sessionadverthud_2a settext(level.sessionadverthud_2a_text);
                     sessionadverthud_2b setvalue(level.sessionadverthud_2b_text);
                 }
-                if (level.sessionadverthud_3a_text != "<unknown string>") {
+                if (level.sessionadverthud_3a_text != "<dev string:x15e>") {
                     sessionadverthud_3a settext(level.sessionadverthud_3a_text);
                     sessionadverthud_3b setvalue(level.sessionadverthud_3b_text);
                 }
-                if (level.sessionadverthud_4a_text != "<unknown string>") {
+                if (level.sessionadverthud_4a_text != "<dev string:x15e>") {
                     sessionadverthud_4a settext(level.sessionadverthud_4a_text);
                     sessionadverthud_4b setvalue(level.sessionadverthud_4b_text);
                 }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\gadgets\gadget_homunculus.gsc;
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\sensor_dart.gsc;
@@ -173,7 +172,7 @@ function private function_b516210b(var_889058cc, origin, activator) {
 // Size: 0x132
 function private function_d045e83b(item, player, networkid, itemid, itemcount, var_aec6fa7f, slot) {
     if (item.itementry.itemtype !== #"ammo") {
-        assertmsg("<unknown string>" + item.name + "<unknown string>");
+        assertmsg("<dev string:x38>" + item.name + "<dev string:x41>");
         return 0;
     }
     if (!self item_inventory::can_pickup_ammo(item)) {
@@ -1013,8 +1012,8 @@ function private function_d87c50ae(stash) {
 // Checksum 0x4021b23a, Offset: 0x4680
 // Size: 0x8a
 function private function_937ea9e(identifier, handler) {
-    assert(isdefined(level.var_66383953), "<unknown string>");
-    assert(!isdefined(level.var_66383953[identifier]), "<unknown string>" + identifier);
+    assert(isdefined(level.var_66383953), "<dev string:x77>");
+    assert(!isdefined(level.var_66383953[identifier]), "<dev string:xcd>" + identifier);
     level.var_66383953[identifier] = handler;
 }
 
@@ -1502,7 +1501,7 @@ function function_528ca826(networkid) {
             }
             return;
         }
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x108>");
     }
 }
 
@@ -1586,7 +1585,7 @@ function function_de2018e3(item, player, slotid = undefined) {
             return var_c5781c22;
         }
     }
-    assertmsg("<unknown string>" + itementry.name + "<unknown string>");
+    assertmsg("<dev string:x139>" + itementry.name + "<dev string:x166>");
 }
 
 // Namespace item_world/item_world
@@ -1682,10 +1681,10 @@ function function_1a46c8ae(player, var_a1ca235e, var_3d1f9df4, var_7089b458, var
     data = {#game_time:function_f8d53445(), #player_xuid:isdefined(player) ? int(player getxuid(1)) : 0, #dropped_item:isdefined(var_a1ca235e) ? hash(var_a1ca235e.name) : 0, #var_5b8ff5e9:isdefined(var_3d1f9df4) ? var_3d1f9df4 : 0, #var_6789038:isdefined(var_7089b458) ? hash(var_7089b458.name) : 0, #var_d1f97c0f:isdefined(var_381f3b39) ? var_381f3b39 : 0};
     /#
         if (isdefined(var_a1ca235e)) {
-            println("<unknown string>" + var_a1ca235e.name + "<unknown string>" + (isdefined(var_3d1f9df4) ? var_3d1f9df4 : 0));
+            println("<dev string:x16a>" + var_a1ca235e.name + "<dev string:x176>" + (isdefined(var_3d1f9df4) ? var_3d1f9df4 : 0));
         }
         if (isdefined(var_7089b458)) {
-            println("<unknown string>" + var_7089b458.name + "<unknown string>" + (isdefined(var_381f3b39) ? var_381f3b39 : 0));
+            println("<dev string:x17a>" + var_7089b458.name + "<dev string:x176>" + (isdefined(var_381f3b39) ? var_381f3b39 : 0));
         }
     #/
     function_92d1707f(#"hash_1ed3b4af49015043", data);
@@ -1913,8 +1912,8 @@ function function_4de3ca98() {
         if (!isdefined(self)) {
             return;
         }
-        inventorystr = getdvarstring(#"hash_7b2be9e03d9785f3", "<unknown string>");
-        tokens = strtok(inventorystr, "<unknown string>");
+        inventorystr = getdvarstring(#"hash_7b2be9e03d9785f3", "<dev string:x184>");
+        tokens = strtok(inventorystr, "<dev string:x187>");
         foreach (token in tokens) {
             item = function_4ba8fde(token);
             if (isdefined(item)) {

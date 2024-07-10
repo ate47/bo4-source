@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_madagascar_sound;
 
 // Namespace mp_madagascar_sound/mp_madagascar_sound

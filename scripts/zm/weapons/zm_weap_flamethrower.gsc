@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_equipment.gsc;
 #using scripts\zm_common\zm_armor.gsc;
 #using script_24c32478acf44108;
@@ -344,7 +343,7 @@ function function_99207e4d(w_flamethrower) {
         if (!isdefined(ai_zombie.var_6f84b820)) {
             /#
                 if (isdefined(ai_zombie.targetname)) {
-                    iprintlnbold("<unknown string>" + ai_zombie.targetname);
+                    iprintlnbold("<dev string:x38>" + ai_zombie.targetname);
                 }
             #/
             continue;
@@ -393,7 +392,7 @@ function function_99207e4d(w_flamethrower) {
 // Size: 0x5bc
 function function_ea906434(e_player, w_flamethrower) {
     self endon(#"death");
-    assert(isdefined(self.var_6f84b820), "<unknown string>");
+    assert(isdefined(self.var_6f84b820), "<dev string:x76>");
     if (!isdefined(self.var_6f84b820)) {
         return;
     }

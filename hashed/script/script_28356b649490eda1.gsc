@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace vehicleturretoverheat;
@@ -28,7 +27,7 @@ class cvehicleturretoverheat : cluielem {
             set_data(localclientnum, "_state", 1);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat

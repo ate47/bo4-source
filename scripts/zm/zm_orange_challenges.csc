@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\clientfield_shared.csc;
 
 #namespace zm_orange_challenges;

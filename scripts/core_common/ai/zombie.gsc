@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_zombie_interface.gsc;
 #using scripts\core_common\ai\systems\ai_interface.gsc;
 #using scripts\core_common\ai\zombie_utility.gsc;
@@ -363,7 +362,7 @@ function zombienotetrackmeleefire(entity) {
     }
     if (isdefined(entity.ai.var_80045105)) {
         /#
-            record3dtext("_low_gravity" + gettime() - entity.ai.var_80045105, self.origin, (1, 0, 0), "<unknown string>", entity);
+            record3dtext("<dev string:x38>" + gettime() - entity.ai.var_80045105, self.origin, (1, 0, 0), "<dev string:x45>", entity);
         #/
     }
     if (isdefined(level.custom_melee_fire)) {
@@ -372,10 +371,10 @@ function zombienotetrackmeleefire(entity) {
         entity melee();
     }
     /#
-        record3dtext("<unknown string>", entity.origin, (1, 0, 0), "<unknown string>", entity);
+        record3dtext("<dev string:x4e>", entity.origin, (1, 0, 0), "<dev string:x45>", entity);
         if (isdefined(entity.enemy)) {
             eyepos = entity geteye();
-            record3dtext("<unknown string>" + distance2d(eyepos, entity.enemy.origin), entity.origin, (1, 0, 0), "<unknown string>", entity);
+            record3dtext("<dev string:x56>" + distance2d(eyepos, entity.enemy.origin), entity.origin, (1, 0, 0), "<dev string:x45>", entity);
         }
     #/
     if (zombieshouldattackobject(entity)) {
@@ -481,7 +480,7 @@ function zombieupdatezigzaggoal() {
             /#
                 if (getdvarint(#"ai_debugzigzag", 0)) {
                     for (index = 1; index < path.size; index++) {
-                        recordline(path[index - 1], path[index], (1, 0.5, 0), "<unknown string>", self);
+                        recordline(path[index - 1], path[index], (1, 0.5, 0), "<dev string:x64>", self);
                     }
                 }
             #/
@@ -500,7 +499,7 @@ function zombieupdatezigzaggoal() {
                     remaininglength = deviationdistance - segmentlength;
                     seedposition = path[index - 1] + vectornormalize(path[index] - path[index - 1]) * remaininglength;
                     /#
-                        recordcircle(seedposition, 2, (1, 0.5, 0), "<unknown string>", self);
+                        recordcircle(seedposition, 2, (1, 0.5, 0), "<dev string:x64>", self);
                     #/
                     innerzigzagradius = 0;
                     outerzigzagradius = 96;
@@ -1325,7 +1324,7 @@ function function_26f9b8b1(entity) {
             entity setavoidancemask("avoid all");
             entity.cant_move = 1;
             /#
-                record3dtext("<unknown string>", entity.origin, (0, 0, 1), "<unknown string>", entity);
+                record3dtext("<dev string:x71>", entity.origin, (0, 0, 1), "<dev string:x45>", entity);
             #/
             if (isdefined(entity.cant_move_cb)) {
                 entity thread [[ entity.cant_move_cb ]]();
@@ -1517,9 +1516,9 @@ function private function_54d75299(entity, mocompanim, mocompanimblendouttime, m
     localdeltahalfvector = getmovedelta(mocompanim, 0, 0.9, entity);
     endpoint = entity localtoworldcoords(localdeltahalfvector);
     /#
-        recordcircle(endpoint, 3, (1, 0, 0), "<unknown string>");
-        recordline(entity.origin, endpoint, (1, 0, 0), "<unknown string>");
-        record3dtext("<unknown string>" + distance(entity.origin, endpoint) + "<unknown string>" + function_9e72a96(mocompanim), endpoint, (1, 0, 0), "<unknown string>");
+        recordcircle(endpoint, 3, (1, 0, 0), "<dev string:x98>");
+        recordline(entity.origin, endpoint, (1, 0, 0), "<dev string:x98>");
+        record3dtext("<dev string:xa1>" + distance(entity.origin, endpoint) + "<dev string:xa9>" + function_9e72a96(mocompanim), endpoint, (1, 0, 0), "<dev string:x45>");
     #/
 }
 
@@ -1548,8 +1547,8 @@ function private function_cbbae5cb(entity, mocompanim, mocompanimblendouttime, m
     entity animmode("normal");
     if (isdefined(entity.traverseendnode)) {
         /#
-            print3d(entity.traversestartnode.origin, "<unknown string>", (1, 0, 0), 1, 1, 60);
-            print3d(entity.traverseendnode.origin, "<unknown string>", (0, 1, 0), 1, 1, 60);
+            print3d(entity.traversestartnode.origin, "<dev string:xb2>", (1, 0, 0), 1, 1, 60);
+            print3d(entity.traverseendnode.origin, "<dev string:xb2>", (0, 1, 0), 1, 1, 60);
             line(entity.traversestartnode.origin, entity.traverseendnode.origin, (0, 1, 0), 1, 0, 60);
         #/
         entity forceteleport(entity.traverseendnode.origin, entity.traverseendnode.angles, 0);

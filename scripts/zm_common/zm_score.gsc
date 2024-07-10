@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_damage_drains_points.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_stats.gsc;
@@ -240,7 +239,7 @@ function player_add_points(event, mod, hit_location, e_target, zombie_team, dama
             player_points = zombie_utility::get_zombie_var(#"hash_68aa9b4c8de33261");
             break;
         default:
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:x38>");
             break;
         }
     }
@@ -399,7 +398,7 @@ function player_reduce_points(event, n_amount) {
         points = n_amount;
         break;
     default:
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x38>");
         break;
     }
     points = self.score - zm_utility::round_up_to_ten(int(points));
@@ -421,7 +420,7 @@ function add_to_player_score(points, b_add_to_total = 1, str_awarded_by = "", va
     if (!isdefined(points) || level.intermission) {
         return;
     }
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x4e>");
     points = zm_utility::round_up_score(points, 10);
     if (isdefined(level.var_894a83d8) && level.var_894a83d8 || var_e6e61503 || function_e31cf9d5(str_awarded_by)) {
         level thread zm_hero_weapon::function_3fe4a02e(self, points, str_awarded_by);
@@ -518,7 +517,7 @@ function player_died_penalty() {
 // Checksum 0xee1e0c60, Offset: 0x1f70
 // Size: 0x44
 function player_downed_penalty() {
-    println("<unknown string>");
+    println("<dev string:xa6>");
     self player_reduce_points("downed");
 }
 
@@ -548,7 +547,7 @@ function function_82732ced() {
         var_7afe66bc = self.var_17a22c08;
     } else {
         var_7afe66bc = function_e5ca5733(self.archetype);
-        assert(var_7afe66bc, "<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>");
+        assert(var_7afe66bc, "<dev string:xd2>" + function_9e72a96(self.archetype) + "<dev string:xee>");
     }
     self.var_f256a4d9 = var_7afe66bc;
     self.var_d8caf335 = max(1, int(self.maxhealth / var_7afe66bc * 0.1));

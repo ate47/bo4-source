@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_audio.gsc;
 #using scripts\zm_common\util.gsc;
@@ -168,10 +167,10 @@ function jump_pad_start(ent_player, endon_condition) {
             forward_scaling = 1.1;
             /#
                 if (getdvarint(#"jump_pad_tweaks", 0)) {
-                    if (getdvarstring(#"jump_pad_z_dist") != "<unknown string>") {
+                    if (getdvarstring(#"jump_pad_z_dist") != "<dev string:x38>") {
                         z_dist *= getdvarfloat(#"jump_pad_z_dist", 0);
                     }
-                    if (getdvarstring(#"jump_pad_forward") != "<unknown string>") {
+                    if (getdvarstring(#"jump_pad_forward") != "<dev string:x38>") {
                         forward_scaling = getdvarfloat(#"jump_pad_forward", 0);
                     }
                 }
@@ -181,10 +180,10 @@ function jump_pad_start(ent_player, endon_condition) {
             forward_scaling = 1.3;
             /#
                 if (getdvarint(#"jump_pad_tweaks", 0)) {
-                    if (getdvarstring(#"jump_pad_z_dist") != "<unknown string>") {
+                    if (getdvarstring(#"jump_pad_z_dist") != "<dev string:x38>") {
                         z_dist *= getdvarfloat(#"jump_pad_z_dist", 0);
                     }
-                    if (getdvarstring(#"jump_pad_forward") != "<unknown string>") {
+                    if (getdvarstring(#"jump_pad_forward") != "<dev string:x38>") {
                         forward_scaling = getdvarfloat(#"jump_pad_forward", 0);
                     }
                 }
@@ -194,10 +193,10 @@ function jump_pad_start(ent_player, endon_condition) {
             forward_scaling = 1;
             /#
                 if (getdvarint(#"jump_pad_tweaks", 0)) {
-                    if (getdvarstring(#"jump_pad_z_dist") != "<unknown string>") {
+                    if (getdvarstring(#"jump_pad_z_dist") != "<dev string:x38>") {
                         z_dist *= getdvarfloat(#"jump_pad_z_dist", 0);
                     }
-                    if (getdvarstring(#"jump_pad_forward") != "<unknown string>") {
+                    if (getdvarstring(#"jump_pad_forward") != "<dev string:x38>") {
                         forward_scaling = getdvarfloat(#"jump_pad_forward", 0);
                     }
                 }

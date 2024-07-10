@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_24c32478acf44108;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -191,7 +190,7 @@ function function_1ec5c573(weapon, n_damage, meansofdeath) {
         var_aebb78d5 = int(var_d6f1df38 * 3);
         var_aebb78d5 = zm_utility::round_up_to_ten(var_aebb78d5);
         /#
-            iprintln("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + self getentnum() + "<unknown string>" + var_aebb78d5 + "<unknown string>" + function_9e72a96(meansofdeath));
+            iprintln("<dev string:x38>" + function_9e72a96(self.archetype) + "<dev string:x42>" + self getentnum() + "<dev string:x46>" + var_aebb78d5 + "<dev string:x4b>" + function_9e72a96(meansofdeath));
         #/
     }
     return var_aebb78d5;
@@ -285,16 +284,16 @@ function function_656b149c(var_c74d5934, s_waitresult, var_41bf50f) {
                 if (var_b0d6e367.size == 1) {
                     switch (var_ea0a46dc) {
                     case 0:
-                        iprintln("<unknown string>");
+                        iprintln("<dev string:x6d>");
                         break;
                     case 1:
-                        iprintln("<unknown string>");
+                        iprintln("<dev string:x94>");
                         break;
                     case 2:
-                        iprintln("<unknown string>");
+                        iprintln("<dev string:xb5>");
                         break;
                     case 3:
-                        iprintln("<unknown string>");
+                        iprintln("<dev string:xdb>");
                         break;
                     }
                 }
@@ -304,16 +303,16 @@ function function_656b149c(var_c74d5934, s_waitresult, var_41bf50f) {
             /#
                 switch (var_ea0a46dc) {
                 case 0:
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x104>");
                     break;
                 case 1:
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x12b>");
                     break;
                 case 2:
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x14c>");
                     break;
                 case 3:
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x172>");
                     break;
                 }
             #/
@@ -362,23 +361,23 @@ function function_656b149c(var_c74d5934, s_waitresult, var_41bf50f) {
                 n_y_pos = 480 + 18.7 * n_index;
                 switch (var_e41be0c2) {
                 case 0:
-                    str_text = "<unknown string>";
+                    str_text = "<dev string:x19b>";
                     break;
                 case 1:
-                    str_text = "<unknown string>";
+                    str_text = "<dev string:x1ae>";
                     break;
                 case 2:
-                    str_text = "<unknown string>";
+                    str_text = "<dev string:x1bb>";
                     break;
                 case 3:
-                    str_text = "<unknown string>";
+                    str_text = "<dev string:x1cd>";
                     break;
                 default:
                     str_text = undefined;
                     break;
                 }
                 if (isdefined(str_text)) {
-                    debug2dtext((120, n_y_pos, 0), "<unknown string>" + n_index + "<unknown string>", (1, 1, 0), 1, (0, 0, 0), 0.4, 1, 2);
+                    debug2dtext((120, n_y_pos, 0), "<dev string:x1ea>" + n_index + "<dev string:x1f3>", (1, 1, 0), 1, (0, 0, 0), 0.4, 1, 2);
                     debug2dtext((120 + 100, n_y_pos, 0), str_text, (1, 1, 1), 1, (0, 0, 0), 0.4, 1, 2);
                 }
             }
@@ -567,7 +566,7 @@ function function_6cd38e99(var_f5716a6, var_18e8905a) {
                 }
                 /#
                     if (getdvarint(#"hash_e2e03328b366e75", 0)) {
-                        iprintlnbold("<unknown string>" + e_zombie getentnum() + "<unknown string>");
+                        iprintlnbold("<dev string:x1f7>" + e_zombie getentnum() + "<dev string:x200>");
                     }
                 #/
             }
@@ -629,31 +628,31 @@ function function_2d3beb68(var_ea0a46dc, e_attacker) {
     case 0:
         var_d31c4f26 = level.var_74cf08b1;
         /#
-            var_1deac56b = "<unknown string>";
+            var_1deac56b = "<dev string:x221>";
         #/
         break;
     case 1:
         var_d31c4f26 = level.var_74cf08b1;
         /#
-            var_1deac56b = "<unknown string>";
+            var_1deac56b = "<dev string:x1ae>";
         #/
         break;
     case 2:
         var_d31c4f26 = level.var_4b14202f;
         /#
-            var_1deac56b = "<unknown string>";
+            var_1deac56b = "<dev string:x1bb>";
         #/
         break;
     case 3:
         var_d31c4f26 = level.var_4b14202f;
         /#
-            var_1deac56b = "<unknown string>";
+            var_1deac56b = "<dev string:x236>";
         #/
         break;
     }
     self dodamage(var_d31c4f26.damagevalues[0], self.origin, e_attacker, e_attacker, undefined, "MOD_UNKNOWN", 0, var_d31c4f26);
     /#
-        iprintlnbold("<unknown string>" + var_1deac56b + "<unknown string>" + level.var_74cf08b1.damagevalues[0] + "<unknown string>" + function_9e72a96(self.archetype));
+        iprintlnbold("<dev string:x24b>" + var_1deac56b + "<dev string:x251>" + level.var_74cf08b1.damagevalues[0] + "<dev string:x265>" + function_9e72a96(self.archetype));
     #/
     wait(0.6);
 }
@@ -676,7 +675,7 @@ function function_a851c777(var_ea0a46dc, e_attacker) {
     }
     self dodamage(n_damage, self.origin, e_attacker, e_attacker, undefined, "MOD_UNKNOWN", 0, level.var_4b14202f);
     /#
-        iprintln("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + self getentnum() + "<unknown string>" + n_damage);
+        iprintln("<dev string:x38>" + function_9e72a96(self.archetype) + "<dev string:x42>" + self getentnum() + "<dev string:x46>" + n_damage);
     #/
     wait(0.6);
     switch (var_ea0a46dc) {
@@ -727,7 +726,7 @@ function function_ca108f41(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     e_attacker thread function_9b512839(e_trigger);
     /#
         if (getdvarint(#"hash_e2e03328b366e75", 0)) {
-            e_trigger thread function_45b0dfc6(v_origin, "<unknown string>", "<unknown string>");
+            e_trigger thread function_45b0dfc6(v_origin, "<dev string:x277>", "<dev string:x28c>");
         }
     #/
     e_attacker flag::wait_till_clear_timeout(10, "flag_player_clear_charged_shot");
@@ -852,7 +851,7 @@ function function_936c6968(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     e_trigger thread function_e46e9108(e_vortex, v_origin, e_attacker);
     /#
         if (getdvarint(#"hash_e2e03328b366e75", 0)) {
-            e_trigger thread function_45b0dfc6(v_origin, "<unknown string>", "<unknown string>");
+            e_trigger thread function_45b0dfc6(v_origin, "<dev string:x29f>", "<dev string:x2b4>");
         }
     #/
     e_attacker flag::wait_till_clear_timeout(12, "flag_player_clear_charged_shot");
@@ -1034,7 +1033,7 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     e_trigger thread function_b3d8a8c4(v_origin, e_attacker, e_tornado);
     /#
         if (getdvarint(#"hash_e2e03328b366e75", 0)) {
-            e_trigger thread function_45b0dfc6(v_origin, "<unknown string>", "<unknown string>");
+            e_trigger thread function_45b0dfc6(v_origin, "<dev string:x2cd>", "<dev string:x2da>");
         }
     #/
     e_attacker flag::wait_till_clear_timeout(12, "flag_player_clear_charged_shot");
@@ -1261,7 +1260,7 @@ function function_b9078d40(v_origin, e_attacker, var_a257f75d) {
     e_trigger thread function_1beb7376(e_attacker);
     /#
         if (getdvarint(#"hash_e2e03328b366e75", 0)) {
-            e_trigger thread function_45b0dfc6(v_origin, "<unknown string>", "<unknown string>");
+            e_trigger thread function_45b0dfc6(v_origin, "<dev string:x2eb>", "<dev string:x2fa>");
         }
     #/
     if (isdefined(e_attacker)) {

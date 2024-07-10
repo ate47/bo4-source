@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_59a783d756554a80;
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\zm_item_pickup.gsc;
@@ -98,7 +97,7 @@ function init_quest() {
         var_453ce50f zm_item_pickup::item_pickup_init(&function_e8d6a81b, 1);
     }
     var_453ce50f = getent("punch_card_anim", "targetname");
-    assert(isdefined(var_453ce50f), "<unknown string>");
+    assert(isdefined(var_453ce50f), "<dev string:x38>");
     var_453ce50f hide();
     zm_sq::register(#"pernell_archive", #"step_1", #"pernell_archive_step1", &pernell_archive_step1_setup, &pernell_archive_step1_cleanup);
     zm_sq::register(#"pernell_archive", #"step_2", #"pernell_archive_step2", &pernell_archive_step2_setup, &pernell_archive_step2_cleanup);
@@ -168,7 +167,7 @@ function function_8703c1fe() {
     level.var_2cbf5e38 = 1;
     level flag::set(#"hash_4c30d0428f1d4060");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x65>");
     #/
 }
 
@@ -208,7 +207,7 @@ function function_a546fd97() {
                 level flag::set(#"server_fixed");
                 level clientfield::set("" + #"hash_28f972533bb468fd", 1);
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x7d>");
                 #/
                 self playsound(#"hash_4f1f1f9762add0a3");
                 s_notify.attacker thread zm_audio::create_and_play_dialog(#"generic", #"response_positive");
@@ -344,7 +343,7 @@ function function_24510350() {
 // Size: 0x1ac
 function function_9f206255() {
     var_453ce50f = getent("punch_card_anim", "targetname");
-    assert(isdefined(var_453ce50f), "<unknown string>");
+    assert(isdefined(var_453ce50f), "<dev string:x38>");
     var_453ce50f show();
     v_starting_origin = var_453ce50f.origin;
     var_5287d229 = var_453ce50f.angles;

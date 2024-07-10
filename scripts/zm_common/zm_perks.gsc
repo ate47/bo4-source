@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_randomize_perks.gsc;
 #using scripts\zm_common\trials\zm_trial_disable_perks.gsc;
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
@@ -155,7 +154,7 @@ function on_player_connect() {
             }
         } else {
             /#
-                iprintlnbold("hudItems.extraPerkVapor." + self.name + "<unknown string>");
+                iprintlnbold("<dev string:x38>" + self.name + "<dev string:x59>");
             #/
         }
         if (!zm_custom::function_d9f0defb(str_perk)) {
@@ -254,7 +253,7 @@ function default_vending_precaching() {
 // Size: 0x94
 function do_initial_power_off_callback(machine_array, perkname) {
     if (!isdefined(level.machine_assets[perkname])) {
-        println("<unknown string>");
+        println("<dev string:x80>");
         return;
     }
     if (!isdefined(level.machine_assets[perkname].power_off_callback)) {
@@ -378,7 +377,7 @@ function electric_perks_dialog() {
                 wait(3);
                 self notify(#"warning_dialog");
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xe1>");
                 #/
             }
         }
@@ -761,7 +760,7 @@ function perk_give_bottle_begin(str_perk) {
 // Size: 0x10a
 function get_perk_weapon(str_perk) {
     weapon = "";
-    assert(isdefined(str_perk), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:xf1>");
     if (!isdefined(str_perk)) {
         return weapon;
     }
@@ -784,8 +783,8 @@ function get_perk_weapon(str_perk) {
 // Size: 0x9e
 function get_perk_weapon_model(str_perk) {
     weapon = get_perk_weapon(str_perk);
-    assert(isdefined(weapon), "<unknown string>" + str_perk);
-    assert(isdefined(weapon.worldmodel), "<unknown string>" + str_perk);
+    assert(isdefined(weapon), "<dev string:x116>" + str_perk);
+    assert(isdefined(weapon.worldmodel), "<dev string:x132>" + str_perk);
     if (isdefined(weapon)) {
         return weapon.worldmodel;
     }
@@ -922,7 +921,7 @@ function perk_pause(perk) {
             if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].player_thread_take)) {
                 player thread [[ level._custom_perks[perk].player_thread_take ]](1, undefined, undefined, -1);
             }
-            println("<unknown string>" + player.name + "<unknown string>" + perk + "<unknown string>");
+            println("<dev string:x15a>" + player.name + "<dev string:x167>" + perk + "<dev string:x177>");
         }
     }
 }
@@ -955,7 +954,7 @@ function perk_unpause(perk) {
                     perks::perk_setperk(level._custom_perks[perk].var_658e2856);
                 }
             }
-            println("<unknown string>" + player.name + "<unknown string>" + perk + "<unknown string>");
+            println("<dev string:x15a>" + player.name + "<dev string:x17b>" + perk + "<dev string:x177>");
             player zm_utility::set_max_health();
             if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].player_thread_give)) {
                 player thread [[ level._custom_perks[perk].player_thread_give ]]();
@@ -1379,7 +1378,7 @@ function function_ad1814a1(n_index, var_b0ab4cec) {
     if (isdefined(n_index) && n_index >= 0 && n_index < 6) {
         return true;
     }
-    println("<unknown string>" + function_9e72a96(var_b0ab4cec) + "<unknown string>");
+    println("<dev string:x18d>" + function_9e72a96(var_b0ab4cec) + "<dev string:x19b>");
     return false;
 }
 
@@ -1404,7 +1403,7 @@ function function_81bc6765(var_481d50cb, var_b0ab4cec) {
 // Checksum 0x2001a14b, Offset: 0x5e88
 // Size: 0x104
 function function_2ac7579(var_481d50cb, var_dc149467 = 0, var_b0ab4cec) {
-    assert(isdefined(var_481d50cb), "<unknown string>");
+    assert(isdefined(var_481d50cb), "<dev string:x1d4>");
     if (!isdefined(var_481d50cb)) {
         return;
     }
@@ -1424,7 +1423,7 @@ function function_2ac7579(var_481d50cb, var_dc149467 = 0, var_b0ab4cec) {
 // Checksum 0x1df2c744, Offset: 0x5f98
 // Size: 0x1ac
 function function_13880aa5(var_481d50cb, var_87eb3522 = 0, var_b0ab4cec) {
-    assert(isdefined(var_481d50cb), "<unknown string>");
+    assert(isdefined(var_481d50cb), "<dev string:x1d4>");
     if (!isdefined(var_481d50cb)) {
         return;
     }
@@ -1453,7 +1452,7 @@ function function_13880aa5(var_481d50cb, var_87eb3522 = 0, var_b0ab4cec) {
 // Checksum 0x5e58b6a5, Offset: 0x6150
 // Size: 0xfc
 function function_f2ff97a6(var_481d50cb, var_c3d1c893 = 0, var_b0ab4cec) {
-    assert(isdefined(var_481d50cb), "<unknown string>");
+    assert(isdefined(var_481d50cb), "<dev string:x1d4>");
     if (!isdefined(var_481d50cb)) {
         return;
     }
@@ -1471,7 +1470,7 @@ function function_f2ff97a6(var_481d50cb, var_c3d1c893 = 0, var_b0ab4cec) {
 // Checksum 0xf4c01eba, Offset: 0x6258
 // Size: 0xfc
 function function_f0ac059f(var_481d50cb, b_active = 0, var_b0ab4cec) {
-    assert(isdefined(var_481d50cb), "<unknown string>");
+    assert(isdefined(var_481d50cb), "<dev string:x1d4>");
     if (!isdefined(var_481d50cb)) {
         return;
     }
@@ -1489,7 +1488,7 @@ function function_f0ac059f(var_481d50cb, b_active = 0, var_b0ab4cec) {
 // Checksum 0x58a5af83, Offset: 0x6360
 // Size: 0xfc
 function function_c8c7bc5(var_481d50cb, b_active = 0, var_b0ab4cec) {
-    assert(isdefined(var_481d50cb), "<unknown string>");
+    assert(isdefined(var_481d50cb), "<dev string:x1d4>");
     if (!isdefined(var_481d50cb)) {
         return;
     }
@@ -1665,12 +1664,12 @@ function register_revive_success_perk_func(revive_func) {
 // Checksum 0x12b1c6e2, Offset: 0x6ca0
 // Size: 0x39a
 function register_perk_basic_info(str_perk, str_alias, n_perk_cost, str_hint_string, w_perk_bottle_weapon, var_1408cd4c, var_6334ae50) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(str_alias), "<unknown string>");
-    assert(isdefined(n_perk_cost), "<unknown string>");
-    assert(isdefined(str_hint_string), "<unknown string>");
-    assert(isdefined(w_perk_bottle_weapon), "<unknown string>");
-    assert(isdefined(var_1408cd4c), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x1f8>");
+    assert(isdefined(str_alias), "<dev string:x238>");
+    assert(isdefined(n_perk_cost), "<dev string:x279>");
+    assert(isdefined(str_hint_string), "<dev string:x2bc>");
+    assert(isdefined(w_perk_bottle_weapon), "<dev string:x303>");
+    assert(isdefined(var_1408cd4c), "<dev string:x34f>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].alias = str_alias;
     level._custom_perks[str_perk].cost = n_perk_cost;
@@ -1713,10 +1712,10 @@ function register_perk_basic_info(str_perk, str_alias, n_perk_cost, str_hint_str
 // Checksum 0x8f0c53f1, Offset: 0x7048
 // Size: 0x196
 function register_perk_mod_basic_info(str_perk, str_alias, var_771fabd4, var_5a736864, n_cost) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(str_alias), "<unknown string>");
-    assert(isdefined(var_5a736864), "<unknown string>");
-    assert(isdefined(n_cost), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x394>");
+    assert(isdefined(str_alias), "<dev string:x3d8>");
+    assert(isdefined(var_5a736864), "<dev string:x41d>");
+    assert(isdefined(n_cost), "<dev string:x468>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].alias = str_alias;
     level._custom_perks[str_perk].var_60e3692f = var_771fabd4;
@@ -1734,8 +1733,8 @@ function register_perk_mod_basic_info(str_perk, str_alias, var_771fabd4, var_5a7
 // Checksum 0x17595610, Offset: 0x71e8
 // Size: 0xb6
 function register_perk_machine(str_perk, func_perk_machine_setup, func_perk_machine_thread) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(func_perk_machine_setup), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x4aa>");
+    assert(isdefined(func_perk_machine_setup), "<dev string:x4e7>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].perk_machine_set_kvps = func_perk_machine_setup;
     if (isdefined(func_perk_machine_thread)) {
@@ -1748,8 +1747,8 @@ function register_perk_machine(str_perk, func_perk_machine_setup, func_perk_mach
 // Checksum 0x6b77a170, Offset: 0x72a8
 // Size: 0x92
 function register_perk_machine_power_override(str_perk, func_perk_machine_power_override) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(func_perk_machine_power_override), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x533>");
+    assert(isdefined(func_perk_machine_power_override), "<dev string:x57f>");
     _register_undefined_perk(str_perk);
     if (isdefined(func_perk_machine_power_override)) {
         level._custom_perks[str_perk].perk_machine_power_override_thread = func_perk_machine_power_override;
@@ -1761,8 +1760,8 @@ function register_perk_machine_power_override(str_perk, func_perk_machine_power_
 // Checksum 0xf91afcdb, Offset: 0x7348
 // Size: 0x8a
 function register_perk_precache_func(str_perk, func_precache) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(func_precache), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x5e3>");
+    assert(isdefined(func_precache), "<dev string:x626>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].precache_func = func_precache;
 }
@@ -1772,8 +1771,8 @@ function register_perk_precache_func(str_perk, func_precache) {
 // Checksum 0x8225e133, Offset: 0x73e0
 // Size: 0xda
 function register_perk_threads(str_perk, func_give_player_perk, func_take_player_perk, var_9a0b6a21) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(func_give_player_perk), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x66e>");
+    assert(isdefined(func_give_player_perk), "<dev string:x6ab>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].player_thread_give = func_give_player_perk;
     level._custom_perks[str_perk].player_thread_take = func_take_player_perk;
@@ -1787,9 +1786,9 @@ function register_perk_threads(str_perk, func_give_player_perk, func_take_player
 // Checksum 0x14e0bf59, Offset: 0x74c8
 // Size: 0xce
 function register_perk_clientfields(str_perk, func_clientfield_register, func_clientfield_set) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(func_clientfield_register), "<unknown string>");
-    assert(isdefined(func_clientfield_set), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x6f5>");
+    assert(isdefined(func_clientfield_register), "<dev string:x737>");
+    assert(isdefined(func_clientfield_set), "<dev string:x78a>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].clientfield_register = func_clientfield_register;
     level._custom_perks[str_perk].clientfield_set = func_clientfield_set;
@@ -1800,9 +1799,9 @@ function register_perk_clientfields(str_perk, func_clientfield_register, func_cl
 // Checksum 0x5d17595d, Offset: 0x75a0
 // Size: 0xce
 function register_perk_host_migration_params(str_perk, str_radiant_name, str_effect_name) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(str_radiant_name), "<unknown string>");
-    assert(isdefined(str_effect_name), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x7d8>");
+    assert(isdefined(str_radiant_name), "<dev string:x823>");
+    assert(isdefined(str_effect_name), "<dev string:x876>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].radiant_machine_name = str_radiant_name;
     level._custom_perks[str_perk].machine_light_effect = str_effect_name;
@@ -1826,7 +1825,7 @@ function _register_undefined_perk(str_perk) {
 // Checksum 0xc06f418, Offset: 0x76e8
 // Size: 0x6c
 function register_perk_damage_override_func(func_damage_override) {
-    assert(isdefined(func_damage_override), "<unknown string>");
+    assert(isdefined(func_damage_override), "<dev string:x8c8>");
     if (!isdefined(level.perk_damage_override)) {
         level.perk_damage_override = [];
     }
@@ -1838,8 +1837,8 @@ function register_perk_damage_override_func(func_damage_override) {
 // Checksum 0xfc7b1945, Offset: 0x7760
 // Size: 0x8a
 function function_2ae97a14(str_perk, var_feae8586) {
-    assert(isdefined(str_perk), "<unknown string>");
-    assert(isdefined(var_feae8586), "<unknown string>");
+    assert(isdefined(str_perk), "<dev string:x91e>");
+    assert(isdefined(var_feae8586), "<dev string:x95c>");
     _register_undefined_perk(str_perk);
     level._custom_perks[str_perk].var_658e2856 = var_feae8586;
 }
@@ -2191,12 +2190,12 @@ function function_f5da744e() {
             perkhash = level._custom_perks[perk].alias;
         }
         if (!ishash(perkhash)) {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x9a0>");
             perkhash = -1;
         }
         n_round_number = level.round_number;
         if (!isint(n_round_number)) {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x9d7>");
             n_round_number = 0;
         }
         player recordmapevent(29, gettime(), self.origin, n_round_number, perkhash);
@@ -2319,7 +2318,7 @@ function function_d11d4952() {
                 wait(3);
                 self notify(#"warning_dialog");
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xe1>");
                 #/
             }
         }
@@ -2453,7 +2452,7 @@ function function_9bdf581f(perk, n_slot, b_bought = 0) {
             if (isstring(var_7bc3cbfd)) {
                 var_7bc3cbfd = hash(var_7bc3cbfd);
             }
-            assert(isdefined(var_f53f24dd), "<unknown string>" + function_9e72a96(var_7bc3cbfd));
+            assert(isdefined(var_f53f24dd), "<dev string:xa13>" + function_9e72a96(var_7bc3cbfd));
         #/
         if (isdefined(var_f53f24dd) && !isinarray(self.var_466b927f, var_f53f24dd)) {
             self notify(#"hash_13948ef3726b968f", {#var_f53f24dd:var_f53f24dd});
@@ -2593,7 +2592,7 @@ function function_9829d4a9(n_slot) {
 // Size: 0x23c
 function function_59fb56ff(b_show) {
     if (isdefined(b_show) && b_show) {
-        assert(isdefined(self.var_3468124), "<unknown string>");
+        assert(isdefined(self.var_3468124), "<dev string:xa3b>");
         self.var_e80aca0a = 0;
         if (isdefined(self.var_3468124.mdl_altar)) {
             self.var_3468124.mdl_altar show();
@@ -2609,7 +2608,7 @@ function function_59fb56ff(b_show) {
         }
         return;
     }
-    assert(isdefined(self.var_3468124), "<unknown string>");
+    assert(isdefined(self.var_3468124), "<dev string:xa3b>");
     self.var_e80aca0a = 1;
     if (isdefined(self.var_3468124.mdl_altar)) {
         self.var_3468124.mdl_altar ghost();
@@ -2851,7 +2850,7 @@ function function_a30c73b9(str_state) {
                 }
             }
         }
-        assert(isdefined(var_1d373a09), "<unknown string>");
+        assert(isdefined(var_1d373a09), "<dev string:xa6e>");
         self.mdl_altar = util::spawn_model(var_1d373a09, s_statue.origin, s_statue.angles);
         if (isdefined(var_30a7cd8c) && var_30a7cd8c) {
             waitframe(1);
@@ -2955,7 +2954,7 @@ function function_adc671f5(n_slot) {
             return 0;
         }
     }
-    assertmsg("<unknown string>" + n_slot);
+    assertmsg("<dev string:xa9b>" + n_slot);
 }
 
 // Namespace zm_perks/zm_perks
@@ -3437,7 +3436,7 @@ function register_actor_damage_override(str_perk, actor_damage_override_func) {
 }
 
 // Namespace zm_perks/zm_perks
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0xa391f46d, Offset: 0xd9c8
 // Size: 0x25c
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -3468,40 +3467,40 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
     // Size: 0xacc
     function function_756e6a6d() {
         ip1 = self getentitynumber() + 1;
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xada>" + ip1 + "<dev string:xb1b>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xb35>" + ip1 + "<dev string:xb76>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xb8f>" + ip1 + "<dev string:xbd7>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xbf8>" + ip1 + "<dev string:xc3a>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xc55>" + ip1 + "<dev string:xc9c>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xcbb>" + ip1 + "<dev string:xd01>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xd20>" + ip1 + "<dev string:xd62>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xd7d>" + ip1 + "<dev string:xdbe>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xdd7>" + ip1 + "<dev string:xe1b>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xe37>" + ip1 + "<dev string:xe7b>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xe98>" + ip1 + "<dev string:xed6>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xeed>" + ip1 + "<dev string:xf2d>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xf46>" + ip1 + "<dev string:xf88>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xfa3>" + ip1 + "<dev string:xfe3>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:xffc>" + ip1 + "<dev string:x1047>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1060>" + ip1 + "<dev string:x10a3>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x10be>" + ip1 + "<dev string:x1104>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1123>" + ip1 + "<dev string:x1164>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x117e>" + ip1 + "<dev string:x11b3>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x11ca>" + ip1 + "<dev string:x11ff>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1216>" + ip1 + "<dev string:x124b>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1262>" + ip1 + "<dev string:x1297>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x12ae>" + ip1 + "<dev string:x12e5>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x12fa>" + ip1 + "<dev string:x132f>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1346>" + ip1 + "<dev string:x137b>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1392>" + ip1 + "<dev string:x13c7>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x13de>" + ip1 + "<dev string:x1413>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x142a>" + ip1 + "<dev string:x1461>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1476>" + ip1 + "<dev string:x14b5>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x14d6>" + ip1 + "<dev string:x1515>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1536>" + ip1 + "<dev string:x1575>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1596>" + ip1 + "<dev string:x15d5>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x15f6>" + ip1 + "<dev string:x1637>");
+        adddebugcommand("<dev string:xabb>" + self.name + "<dev string:xad4>" + ip1 + "<dev string:x1656>" + ip1 + "<dev string:x168d>");
     }
 
     // Namespace zm_perks/zm_perks
@@ -3527,7 +3526,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_714bd7d5b19367cb":
             case #"hash_47e87df26f2bb654":
                 str_perk = #"specialty_shield";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_22db822f8cebba1f":
@@ -3535,7 +3534,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_2c6e9bd17e4c70e5":
             case #"hash_1fc0acc0b9c31200":
                 str_perk = #"specialty_berserker";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_59dfac7d036a7f11":
@@ -3543,7 +3542,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_72cd05a9f7096d18":
             case #"hash_696b25a08319319f":
                 str_perk = #"specialty_awareness";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_20e1f2a12f575ad":
@@ -3551,7 +3550,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_60a8ca620122ce03":
             case #"hash_37f041c2ceccaa32":
                 str_perk = #"specialty_camper";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_4d8a429ced485336":
@@ -3559,7 +3558,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_4e334d102e76aa39":
             case #"hash_3797acd439d9338b":
                 str_perk = #"specialty_mystery";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_582c07780b2a70d7":
@@ -3567,7 +3566,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_7a8b3d3703b1d56e":
             case #"hash_460157accd31661c":
                 str_perk = #"specialty_phdflopper";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_7237eda7099e624d":
@@ -3575,7 +3574,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_7b790d5f36b4c12":
             case #"hash_3fe4509a2ac36a60":
                 str_perk = #"specialty_cooldown";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_17377d35be324020":
@@ -3583,7 +3582,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_1e0b58a0910c3247":
             case #"hash_52f021b5af5b6f01":
                 str_perk = #"specialty_additionalprimaryweapon";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_215605bc01af2e0":
@@ -3591,7 +3590,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_3c2392a146da0ca1":
             case #"hash_272741eeae13ac9a":
                 str_perk = #"specialty_deadshot";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_6650c5a8596d4707":
@@ -3599,7 +3598,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_12b3c2d6eb971006":
             case #"hash_2ad8c584d069c098":
                 str_perk = #"specialty_staminup";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_1f2e309303a233e8":
@@ -3607,7 +3606,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_591f1871abf8a417":
             case #"hash_30bfdad9100956cd":
                 str_perk = #"specialty_quickrevive";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_3985b954c5d57fd7":
@@ -3615,7 +3614,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_2b9b74bc8b7a95b9":
             case #"hash_338cf8868ad12888":
                 str_perk = #"specialty_electriccherry";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_73cbb686dc065831":
@@ -3623,7 +3622,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_6bc1e0d615f04132":
             case #"hash_400b86629283f29f":
                 str_perk = #"specialty_widowswine";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_3419add8481e7fa1":
@@ -3631,7 +3630,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_5cebc01e01fc9e18":
             case #"hash_74a3737c1fa820fa":
                 str_perk = #"specialty_extraammo";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_572d09f7e8a7b929":
@@ -3639,7 +3638,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_31f8545325031336":
             case #"hash_4c6b49a740457f87":
                 str_perk = #"specialty_etherealrazor";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_5ffd9216593e9fb":
@@ -3647,7 +3646,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_6e7de8150825b688":
             case #"hash_6e080192e412f0e6":
                 str_perk = #"specialty_zombshell";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_2bc2dabec1637ab7":
@@ -3655,7 +3654,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_42ed16109e9963d6":
             case #"hash_3eb60ad87ca70645":
                 str_perk = #"specialty_wolf_protector";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_bdedb98e101b1af":
@@ -3663,7 +3662,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_2ea5f415373bd890":
             case #"hash_6c0c3fd6f9785c85":
                 str_perk = #"specialty_death_dash";
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_36d28b98c683b0ed":
@@ -3671,7 +3670,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_796b16a6e51d3223":
             case #"hash_2621dbc67d96d6b6":
                 var_f79903dc = 0;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_122b76a9059c75d5":
@@ -3679,7 +3678,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_796b17a6e51d33d6":
             case #"hash_2621dac67d96d503":
                 var_f79903dc = 1;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_796b18a6e51d3589":
@@ -3687,7 +3686,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_122b75a9059c7422":
             case #"hash_2621d9c67d96d350":
                 var_f79903dc = 2;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_122b70a9059c6ba3":
@@ -3695,7 +3694,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_2621e0c67d96df35":
             case #"hash_796b19a6e51d373c":
                 var_f79903dc = 3;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_63368be670c1631":
@@ -3703,7 +3702,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_2227c4347bf7aff7":
             case #"hash_56baf79467fa8098":
                 var_f79903dc = 4;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_5c050766529e83a8":
@@ -3711,7 +3710,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_4205942f3e57758a":
             case #"hash_75d5e1ee4bb9b063":
                 var_4ee327af = 0;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_2a94a382beedaa1c":
@@ -3719,7 +3718,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_5c050a66529e88c1":
             case #"hash_75d5e2ee4bb9b216":
                 var_4ee327af = 1;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_2a94a482beedabcf":
@@ -3727,7 +3726,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_4205922f3e577224":
             case #"hash_75d5e3ee4bb9b3c9":
                 var_4ee327af = 2;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_4205912f3e577071":
@@ -3735,7 +3734,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_5c050c66529e8c27":
             case #"hash_75d5e4ee4bb9b57c":
                 var_4ee327af = 3;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_e3aea524ee28666":
@@ -3743,7 +3742,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_5a852048c409f6b7":
             case #"hash_20102f0482e5bdb9":
                 var_4ee327af = 4;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_37e9f4522a62290f":
@@ -3751,7 +3750,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_21a07f54e2de98fe":
             case #"hash_57ed1fb7940f33b5":
                 var_dfa7102 = 0;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_57ed1cb7940f2e9c":
@@ -3759,7 +3758,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_37e9f5522a622ac2":
             case #"hash_21a07e54e2de974b":
                 var_dfa7102 = 1;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_57ed1db7940f304f":
@@ -3767,7 +3766,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_21a07d54e2de9598":
             case #"hash_6fa3e57013c04ce6":
                 var_dfa7102 = 2;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_57ed1ab7940f2b36":
@@ -3775,7 +3774,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_21a08454e2dea17d":
             case #"hash_6fa3e87013c051ff":
                 var_dfa7102 = 3;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_11bcb93b01611b04":
@@ -3783,7 +3782,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_78960bd8157b64e2":
             case #"hash_79a3bb05585eb7fb":
                 var_dfa7102 = 4;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case #"hash_560a015fd8fc8f56":
@@ -3791,7 +3790,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
             case #"hash_1f66bfabd16987cb":
             case #"hash_5eee967ea5d92169":
                 var_c4819a86 = 1;
-                var_8d1a1acc = strtok(cmd, "<unknown string>");
+                var_8d1a1acc = strtok(cmd, "<dev string:x16a3>");
                 var_eb4c64e8 = int(var_8d1a1acc[1]) - 1;
                 break;
             case 0:
@@ -3820,7 +3819,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
                     var_b1cb5669 function_b2cba45a();
                 }
             }
-            setdvar(#"zombie_vapor_devgui", "<unknown string>");
+            setdvar(#"zombie_vapor_devgui", "<dev string:x16a7>");
             wait(0.5);
         }
     }
@@ -3831,11 +3830,11 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
     // Size: 0x150
     function function_36710277(var_16c042b8) {
         if (self.var_466b927f.size >= 4) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x16aa>");
             return;
         }
         if (isinarray(self.var_c27f1e90, var_16c042b8)) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x16c2>");
             return;
         }
         for (i = 0; i < 4; i++) {
@@ -3859,7 +3858,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
         if (n_slot < 4) {
             var_16c042b8 = self.var_c27f1e90[n_slot];
             if (isinarray(self.var_466b927f, var_16c042b8)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x16e4>");
                 return;
             }
             self function_29387491(var_16c042b8, n_slot);
@@ -3876,15 +3875,15 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
         if (n_slot < 4) {
             var_16c042b8 = self.var_c27f1e90[n_slot];
             if (!isinarray(self.var_466b927f, var_16c042b8)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x1702>");
                 return;
             }
-            self notify(var_16c042b8 + "<unknown string>", {#var_613b7621:1});
+            self notify(var_16c042b8 + "<dev string:x1719>", {#var_613b7621:1});
             return;
         }
         foreach (var_16c042b8 in self.var_c27f1e90) {
             if (isinarray(self.var_466b927f, var_16c042b8)) {
-                self notify(var_16c042b8 + "<unknown string>", {#var_613b7621:1});
+                self notify(var_16c042b8 + "<dev string:x1719>", {#var_613b7621:1});
             }
         }
     }

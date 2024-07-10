@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\userspawnselection.gsc;
 #using scripts\mp_common\callbacks.gsc;
@@ -164,7 +163,7 @@ function function_82ca1565(spawnpoint, gametype) {
     case #"bounty":
         return (isdefined(spawnpoint.bounty) && spawnpoint.bounty);
     default:
-        assertmsg("<unknown string>" + gametype + "<unknown string>" + spawnpoint.origin[0] + "<unknown string>" + spawnpoint.origin[1] + "<unknown string>" + spawnpoint.origin[2]);
+        assertmsg("<dev string:x38>" + gametype + "<dev string:x46>" + spawnpoint.origin[0] + "<dev string:x71>" + spawnpoint.origin[1] + "<dev string:x78>" + spawnpoint.origin[2]);
         break;
     }
     return false;
@@ -374,7 +373,7 @@ function addspawns() {
     clearspawnpoints("fallback");
     if (level.teambased) {
         if (!isdefined(level.supportedspawntypes)) {
-            println("<unknown string>");
+            println("<dev string:x7f>");
             addsupportedspawnpointtype("tdm");
         }
         function_68312709();
@@ -779,7 +778,7 @@ function spawnplayer() {
     callback::callback(#"on_player_spawned");
     self thread player_monitor::monitor();
     /#
-        print("<unknown string>" + self.origin[0] + "<unknown string>" + self.origin[1] + "<unknown string>" + self.origin[2] + "<unknown string>");
+        print("<dev string:xdb>" + self.origin[0] + "<dev string:xe0>" + self.origin[1] + "<dev string:xe0>" + self.origin[2] + "<dev string:xe4>");
     #/
     setdvar(#"scr_selecting_location", "");
     if (gamestate::is_game_over()) {
@@ -825,19 +824,19 @@ function function_3ee5119e() {
         foreach (player in team_players) {
             if (player != self && isalive(player)) {
                 self.spectatorteam = player.team;
-                println("<unknown string>" + player.team + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>" + player.name + "<unknown string>");
+                println("<dev string:xe8>" + player.team + "<dev string:x105>" + self.name + "<dev string:x10d>" + self.team + "<dev string:x11f>" + player.name + "<dev string:x12b>");
                 return;
             }
         }
         foreach (player in team_players) {
             if (player != self && player.spectatorteam != #"invalid") {
                 self.spectatorteam = player.spectatorteam;
-                println("<unknown string>" + player.spectatorteam + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>" + player.name + "<unknown string>");
+                println("<dev string:xe8>" + player.spectatorteam + "<dev string:x105>" + self.name + "<dev string:x10d>" + self.team + "<dev string:x11f>" + player.name + "<dev string:x137>");
                 return;
             }
         }
         self.spectatorteam = self.team;
-        println("<unknown string>" + self.spectatorteam + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>");
+        println("<dev string:xe8>" + self.spectatorteam + "<dev string:x105>" + self.name + "<dev string:x10d>" + self.team + "<dev string:x152>");
     }
 }
 

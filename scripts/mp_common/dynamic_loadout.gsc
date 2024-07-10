@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_702b73ee97d18efe;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;

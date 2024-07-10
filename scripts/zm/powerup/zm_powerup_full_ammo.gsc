@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\perk\zm_perk_widows_wine.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;

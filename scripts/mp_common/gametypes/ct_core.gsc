@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
@@ -365,10 +364,10 @@ function function_a217c7b4(b_success) {
         wait(2);
         e_player = getplayers(#"allies")[0];
         e_player val::set(#"potm", "freezecontrols", 1);
-        println("<unknown string>");
-        println("<unknown string>");
+        println("<dev string:x38>");
+        println("<dev string:x57>");
         level potm::function_b6a5e7fa();
-        println("<unknown string>");
+        println("<dev string:x83>");
         e_player = getplayers(#"allies")[0];
         e_player val::reset(#"potm", "freezecontrols");
         wait(0.3);
@@ -432,7 +431,7 @@ function private function_95e72b33(moviefile) {
 // Checksum 0xa20938c4, Offset: 0x1e78
 // Size: 0x114
 function function_e9b83be8() {
-    assert(isdefined(level.select_character), "<unknown string>");
+    assert(isdefined(level.select_character), "<dev string:xa7>");
     fields = getcharacterfields(level.select_character, currentsessionmode());
     if (isdefined(fields) && isdefined(fields.intromovie) && function_a1fb023a(fields.var_5331abe0)) {
         e_player = getplayers(#"allies")[0];
@@ -447,7 +446,7 @@ function function_e9b83be8() {
 // Checksum 0xea7e6158, Offset: 0x1f98
 // Size: 0x114
 function function_588a84ce() {
-    assert(isdefined(level.select_character), "<unknown string>");
+    assert(isdefined(level.select_character), "<dev string:xa7>");
     fields = getcharacterfields(level.select_character, currentsessionmode());
     if (isdefined(fields) && isdefined(fields.var_55f31ab6) && function_a1fb023a(fields.var_148d6d91)) {
         e_player = getplayers(#"allies")[0];

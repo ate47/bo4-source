@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\ai_tank_shared.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\sound_shared.csc;
 #using scripts\core_common\fx_shared.csc;
@@ -288,7 +287,7 @@ function kill_exploder(exploder_id) {
         }
         return;
     }
-    assertmsg("<unknown string>" + exploder_id);
+    assertmsg("<dev string:x38>" + exploder_id);
 }
 
 // Namespace exploder/exploder_shared
@@ -439,7 +438,7 @@ function cannon_effect() {
         self.loopfx = [];
     }
     if (!isdefined(level._effect[self.v[#"fxid"]])) {
-        assertmsg("<unknown string>" + self.v[#"fxid"] + "<unknown string>");
+        assertmsg("<dev string:x78>" + self.v[#"fxid"] + "<dev string:x8f>");
         return;
     }
     for (i = 0; i < players.size; i++) {

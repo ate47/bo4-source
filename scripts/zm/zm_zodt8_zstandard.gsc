@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\ai\zm_ai_stoker.gsc;
 #using scripts\zm\zm_zodt8.gsc;
 #using scripts\zm_common\zm_characters.gsc;
@@ -107,7 +106,7 @@ function function_30cd3df(n_max) {
 // Checksum 0x540c6ac5, Offset: 0x6f8
 // Size: 0x34
 function function_c3b9a076(n_max) {
-    if (!(isdefined(level.var_531d5f99) && level.var_531d5f99)) {
+    if (!(isdefined(level.stopshellshock) && level.stopshellshock)) {
         return 0;
     }
     return 3;
@@ -229,7 +228,7 @@ function defend_areas() {
     level flag::wait_till("started_defend_area");
     level util::delay(4, "end_game", &zm_round_spawning::function_376e51ef, #"blight_father");
     level waittill(#"hash_7a04a7fb98fa4e4d");
-    level.var_531d5f99 = 1;
+    level.stopshellshock = 1;
     zm_utility::enable_power_switch(1, 1);
     if (str_first_defend == #"dining_hall") {
         var_420e4589 = array("suites_promenade_door", "library_boat_deck_door", "state_rooms_bridge_door", "bridge_to_upper_stairs_door", "grand_stairs_suites_door");
@@ -257,7 +256,7 @@ function function_84139b27() {
     foreach (s_defend_area in level.a_s_defend_areas) {
         foreach (str_index in s_defend_area.a_str_next_defend) {
             str_index = hash(str_index);
-            assert(isinarray(a_str_keys, str_index), str_index + "<unknown string>");
+            assert(isinarray(a_str_keys, str_index), str_index + "<dev string:x38>");
         }
     }
 }
@@ -295,19 +294,19 @@ function function_466fb0ff() {
     // Checksum 0x64b29b4, Offset: 0x19f0
     // Size: 0x114
     function function_aba6e63f() {
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x5f>");
         player = util::gethostplayer();
         player util::waittill_stance_button_pressed();
-        zm_utility::function_92162963("<unknown string>");
+        zm_utility::function_92162963("<dev string:x7a>");
         wait(0.5);
         player util::waittill_stance_button_pressed();
-        zm_utility::function_92162963("<unknown string>");
+        zm_utility::function_92162963("<dev string:xa9>");
         wait(0.5);
         player util::waittill_stance_button_pressed();
-        zm_utility::function_92162963("<unknown string>");
+        zm_utility::function_92162963("<dev string:xd4>");
         wait(0.5);
         player util::waittill_stance_button_pressed();
-        zm_utility::function_92162963("<unknown string>");
+        zm_utility::function_92162963("<dev string:xf7>");
     }
 
     // Namespace zm_zodt8_zstandard/zm_zodt8_zstandard
@@ -316,7 +315,7 @@ function function_466fb0ff() {
     // Size: 0x112
     function function_1dcc39ae() {
         wait(5);
-        str_next_defend = zm_utility::function_40ef77ab("<unknown string>");
+        str_next_defend = zm_utility::function_40ef77ab("<dev string:x123>");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
         while (true) {

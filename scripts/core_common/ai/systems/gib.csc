@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\clientfield_shared.csc;
 #using scripts\core_common\struct.csc;
@@ -30,7 +29,7 @@ function private function_3aa023f1(name) {
     }
     definition = struct::get_script_bundle("gibcharacterdef", name);
     if (!isdefined(definition)) {
-        assertmsg("<unknown string>" + name);
+        assertmsg("<dev string:x38>" + name);
         return undefined;
     }
     gibpiecelookup = [];
@@ -43,7 +42,7 @@ function private function_3aa023f1(name) {
     gibpieces = [];
     foreach (gibflag, gibpiece in gibpiecelookup) {
         if (!isdefined(gibpiece)) {
-            assertmsg("<unknown string>" + gibflag);
+            assertmsg("<dev string:x58>" + gibflag);
             continue;
         }
         gibstruct = spawnstruct();
@@ -78,7 +77,7 @@ function private function_9fe14ca3(entity, gibflag) {
     }
     name = entity getplayergibdef(part);
     if (!isdefined(name)) {
-        assertmsg("<unknown string>" + gibflag);
+        assertmsg("<dev string:x8a>" + gibflag);
         return undefined;
     }
     gibdef = level.var_ad0f5efa[name];
@@ -87,7 +86,7 @@ function private function_9fe14ca3(entity, gibflag) {
     }
     definition = struct::get_script_bundle("playeroutfitgibdef", name);
     if (!isdefined(definition)) {
-        assertmsg("<unknown string>" + name);
+        assertmsg("<dev string:x38>" + name);
         return undefined;
     }
     gibpiecelookup = [];
@@ -243,7 +242,7 @@ function private _getgibextramodel(localclientnumm, entity, gibflag) {
     if (gibflag == 8) {
         return (isdefined(entity.gib_data) ? entity.gib_data.head : entity.head);
     }
-    assertmsg("<unknown string>");
+    assertmsg("<dev string:xb0>");
 }
 
 // Namespace gibclientutils/gib

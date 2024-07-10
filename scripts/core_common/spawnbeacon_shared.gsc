@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\globallogic\globallogic_score.gsc;
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\deployable.gsc;
@@ -900,7 +899,7 @@ function retreatedstartmelee(var_a820f9, spawns) {
     // Checksum 0x1d136018, Offset: 0x3bb8
     // Size: 0x34
     function function_264da546(var_cd3712d2, jammer) {
-        println("<unknown string>");
+        println("<dev string:x38>");
     }
 
 #/

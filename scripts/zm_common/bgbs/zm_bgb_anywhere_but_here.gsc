@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -61,7 +60,7 @@ function activation(var_fad9ed02 = 1) {
         var_16d4797c = getclosestpointonnavmesh(self.origin, 128, 24);
         s_respawn_point.origin = isdefined(var_16d4797c) ? var_16d4797c : s_respawn_point.origin;
     }
-    assert(isdefined(s_respawn_point), "<unknown string>" + self.origin);
+    assert(isdefined(s_respawn_point), "<dev string:x38>" + self.origin);
     if (!isdefined(s_respawn_point)) {
         self val::reset(#"hash_7d2b25df35ca5b3", "ignoreme");
         self.var_ffe2c4d7 = undefined;

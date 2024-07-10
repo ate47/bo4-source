@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_utils.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\globallogic_spawn.gsc;
@@ -519,7 +518,7 @@ function function_560c5174(currentnode, startwait, hardpointtype) {
         } else {
             nextnode = a_nextnode[0];
         }
-        assert(isdefined(nextnode), "<unknown string>");
+        assert(isdefined(nextnode), "<dev string:x38>");
         pos = nextnode.origin + (0, 0, 30);
         if (isdefined(currentnode.script_airspeed) && currentnode.script_airspeed > 0) {
             heli_speed = currentnode.script_airspeed;
@@ -552,7 +551,7 @@ function function_560c5174(currentnode, startwait, hardpointtype) {
             self setgoalyaw(nextnode.angles[1]);
             self waittill(#"goal");
             /#
-                while (level flag::get("<unknown string>")) {
+                while (level flag::get("<dev string:x6d>")) {
                     helicopter::heli_wait(1);
                 }
             #/
@@ -1069,20 +1068,20 @@ function function_f75c4ec2(v_target) {
     // Size: 0x6f8
     function function_868cd9ac() {
         sessionmode = currentsessionmode();
-        setdvar(#"hash_16e650a0fe963515", "<unknown string>");
-        level flag::init("<unknown string>");
+        setdvar(#"hash_16e650a0fe963515", "<dev string:x84>");
+        level flag::init("<dev string:x6d>");
         if (sessionmode != 4) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x87>");
+            adddebugcommand("<dev string:xed>");
+            adddebugcommand("<dev string:x161>");
+            adddebugcommand("<dev string:x1d0>");
+            adddebugcommand("<dev string:x245>");
+            adddebugcommand("<dev string:x2a6>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_16e650a0fe963515", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_16e650a0fe963515", "<dev string:x84>");
+            if (cmd == "<dev string:x84>") {
                 continue;
             }
             e_player = level.players[0];
@@ -1100,20 +1099,20 @@ function function_f75c4ec2(v_target) {
                 }
                 break;
             case #"spawn_chopper":
-                a_s_chopper = struct::get_array("<unknown string>", "<unknown string>");
+                a_s_chopper = struct::get_array("<dev string:x309>", "<dev string:x320>");
                 registerstart_killstreak_collision_rounds(a_s_chopper[0]);
                 break;
             case #"hash_3336321eb0a42dd":
-                var_e62f2b3d = struct::get_array("<unknown string>", "<unknown string>");
+                var_e62f2b3d = struct::get_array("<dev string:x334>", "<dev string:x320>");
                 e_player spawn_attack_wave(var_e62f2b3d.size, 1);
                 break;
             case #"hash_20f84a451b85817":
-                if (level flag::get("<unknown string>")) {
-                    iprintlnbold("<unknown string>");
-                    level flag::clear("<unknown string>");
+                if (level flag::get("<dev string:x6d>")) {
+                    iprintlnbold("<dev string:x347>");
+                    level flag::clear("<dev string:x6d>");
                 } else {
-                    iprintlnbold("<unknown string>");
-                    level flag::set("<unknown string>");
+                    iprintlnbold("<dev string:x364>");
+                    level flag::set("<dev string:x6d>");
                 }
                 break;
             case #"hash_47e019566f91d4d1":
@@ -1127,7 +1126,7 @@ function function_f75c4ec2(v_target) {
                     if (isdefined(level.var_ae0bbaac) && level.var_ae0bbaac.size > 0) {
                         foreach (var_c22808fd in level.var_ae0bbaac) {
                             if (isalive(var_c22808fd)) {
-                                var_c22808fd clientfield::set("<unknown string>", 1);
+                                var_c22808fd clientfield::set("<dev string:x380>", 1);
                             }
                         }
                     }
@@ -1144,14 +1143,14 @@ function function_f75c4ec2(v_target) {
                     if (isdefined(level.var_ae0bbaac) && level.var_ae0bbaac.size > 0) {
                         foreach (var_c22808fd in level.var_ae0bbaac) {
                             if (isalive(var_c22808fd)) {
-                                var_c22808fd clientfield::set("<unknown string>", 0);
+                                var_c22808fd clientfield::set("<dev string:x380>", 0);
                             }
                         }
                     }
                 }
                 break;
             }
-            setdvar(#"hash_16e650a0fe963515", "<unknown string>");
+            setdvar(#"hash_16e650a0fe963515", "<dev string:x84>");
         }
     }
 

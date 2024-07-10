@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\globallogic_utils.gsc;
 #using scripts\mp_common\draft.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -390,7 +389,7 @@ function function_6c6d4350() {
     foreach (loc in locs) {
         playsoundatposition("evt_gantry_alarm", loc);
         /#
-            level thread function_cd7664d5(loc, "<unknown string>", (1, 1, 0));
+            level thread function_cd7664d5(loc, "<dev string:x38>", (1, 1, 0));
         #/
     }
 }

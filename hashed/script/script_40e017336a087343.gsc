@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace luielemtext;
@@ -122,7 +121,7 @@ class cluielemtext : cluielem {
     }
 
     // Namespace cluielemtext/luielemtext
-    // Params b, eflags: 0x1 linked
+    // Params 11, eflags: 0x1 linked
     // Checksum 0x9b9cd1e0, Offset: 0x490
     // Size: 0x204
     function setup_clientfields(uid, xcallback, ycallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, textcallback, horizontal_alignmentcallback) {

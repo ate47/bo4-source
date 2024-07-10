@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_724752ab26bff81b;
 #using script_174ce72cc0f850;
 #using scripts\zm\zm_white_main_quest.gsc;
@@ -175,8 +174,8 @@ function private function_d41d20b1() {
 function private function_9d66ea6f(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:x38>");
+            println(e_player.name + "<dev string:x38>");
         }
     #/
     level.var_9eccff99.e_player = e_player;
@@ -210,7 +209,7 @@ function function_130ea633() {
 function private start_step_2() {
     if (zm_white_main_quest::function_6cebbce1()) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x65>");
         #/
     }
     while (zm_white_main_quest::function_6cebbce1()) {
@@ -269,8 +268,8 @@ function private function_6d765bb3() {
     if (level.var_9eccff99.var_f8f50111 == level.var_9eccff99.var_685c8f1e.size) {
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold(level.var_9eccff99.e_player.name + "<unknown string>");
-                println(level.var_9eccff99.e_player.name + "<unknown string>");
+                iprintlnbold(level.var_9eccff99.e_player.name + "<dev string:xb9>");
+                println(level.var_9eccff99.e_player.name + "<dev string:xb9>");
             }
         #/
         start_step_3();
@@ -348,8 +347,8 @@ function private function_a66f0de2() {
 function private function_e90f6026(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:xd6>");
+            println(e_player.name + "<dev string:xd6>");
         }
     #/
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mk2v_ammo", 2, e_player);
@@ -486,8 +485,8 @@ function function_62ac32b9() {
 function private complete_quest() {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(level.var_9eccff99.e_player.name + "<unknown string>");
-            println(level.var_9eccff99.e_player.name + "<unknown string>");
+            iprintlnbold(level.var_9eccff99.e_player.name + "<dev string:xf3>");
+            println(level.var_9eccff99.e_player.name + "<dev string:xf3>");
         }
     #/
     level.var_9eccff99.e_player = undefined;

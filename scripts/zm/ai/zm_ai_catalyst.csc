@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_transformation.csc;
 #using scripts\core_common\ai\systems\fx_character.csc;
 #using scripts\core_common\util_shared.csc;

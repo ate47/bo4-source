@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\voice\voice.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -111,10 +110,10 @@ function stop(n_blend = 0.2) {
     // Checksum 0x5cc2b19e, Offset: 0x870
     // Size: 0x204
     function debug_print(str_animation, str_msg) {
-        str_dvar = getdvarstring(#"debug_anim_shared", "<unknown string>");
-        if (str_dvar != "<unknown string>") {
+        str_dvar = getdvarstring(#"debug_anim_shared", "<dev string:x38>");
+        if (str_dvar != "<dev string:x38>") {
             if (!isstring(str_animation)) {
-                str_animation = isdefined(function_9e72a96(str_animation)) ? "<unknown string>" + function_9e72a96(str_animation) : "<unknown string>";
+                str_animation = isdefined(function_9e72a96(str_animation)) ? "<dev string:x38>" + function_9e72a96(str_animation) : "<dev string:x38>";
             }
             b_print = 0;
             if (strisnumber(str_dvar)) {
@@ -125,7 +124,7 @@ function stop(n_blend = 0.2) {
                 b_print = 1;
             }
             if (b_print) {
-                printtoprightln(str_animation + "<unknown string>" + string::rjust(str_msg, 10) + "<unknown string>" + string::rjust("<unknown string>" + self getentitynumber(), 4) + "<unknown string>" + string::rjust("<unknown string>" + gettime(), 6) + "<unknown string>", (1, 1, 0), -1);
+                printtoprightln(str_animation + "<dev string:x3b>" + string::rjust(str_msg, 10) + "<dev string:x3b>" + string::rjust("<dev string:x38>" + self getentitynumber(), 4) + "<dev string:x41>" + string::rjust("<dev string:x38>" + gettime(), 6) + "<dev string:x46>", (1, 1, 0), -1);
             }
         }
     }
@@ -140,7 +139,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, 
     self notify(#"new_scripted_anim");
     self endoncallback(&function_2adc2518, #"death", #"entering_last_stand", #"new_scripted_anim");
     /#
-        debug_print(animation, "<unknown string>");
+        debug_print(animation, "<dev string:x4a>");
     #/
     flagsys::set_val("firstframe", n_rate == 0 && !(isdefined(paused) && paused));
     flagsys::set(#"scripted_anim_this_frame");
@@ -159,7 +158,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, 
         str_tag = v_angles_or_tag;
         v_origin = v_origin_or_ent gettagorigin(str_tag);
         v_angles = v_origin_or_ent gettagangles(str_tag);
-        assert(isdefined(v_origin) && isdefined(v_angles), "<unknown string>" + function_9e72a96(animation) + "<unknown string>" + v_origin_or_ent getentitynumber() + "<unknown string>" + v_angles_or_tag + "<unknown string>");
+        assert(isdefined(v_origin) && isdefined(v_angles), "<dev string:x54>" + function_9e72a96(animation) + "<dev string:x87>" + v_origin_or_ent getentitynumber() + "<dev string:x96>" + v_angles_or_tag + "<dev string:xa3>");
     } else {
         v_angles = isdefined(v_origin_or_ent.angles) ? v_origin_or_ent.angles : (0, 0, 0);
     }
@@ -206,9 +205,9 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, 
         set_player_clamps();
     }
     /#
-        self.var_80c69db6 = "<unknown string>";
+        self.var_80c69db6 = "<dev string:xa7>";
         self.var_6c4bb19 = {#animation:animation, #v_origin_or_ent:v_origin_or_ent, #v_angles_or_tag:v_angles_or_tag, #var_f4b34dc1:var_f4b34dc1};
-        level flagsys::clear("<unknown string>");
+        level flagsys::clear("<dev string:xb0>");
     #/
     if (!isanimlooping(animation) && n_blend_out > 0 && n_rate > 0 && n_start_time < 1) {
         if (!animhasnotetrack(animation, "start_ragdoll")) {
@@ -231,7 +230,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, 
         flagsys::clear(#"scriptedanim");
         flagsys::clear(#"firstframe");
         /#
-            debug_print(animation, "<unknown string>");
+            debug_print(animation, "<dev string:xbd>");
         #/
         waittillframeend();
         flagsys::clear(#"scripted_anim_this_frame");
@@ -290,7 +289,7 @@ function _get_align_ent(e_align) {
 function _get_align_pos(v_origin_or_ent = self.origin, v_angles_or_tag = isdefined(self.angles) ? self.angles : (0, 0, 0)) {
     s = spawnstruct();
     if (isvec(v_origin_or_ent)) {
-        assert(isvec(v_angles_or_tag), "<unknown string>");
+        assert(isvec(v_angles_or_tag), "<dev string:xc5>");
         s.origin = v_origin_or_ent;
         s.angles = v_angles_or_tag;
     } else {
@@ -396,8 +395,8 @@ function _reach(s_tracker, animation, v_origin_or_ent, v_angles_or_tag, b_disabl
     function debug_anim_reach() {
         self endon(#"death", #"goal", #"new_anim_reach", #"new_scripted_anim", #"stop_scripted_anim");
         while (true) {
-            level flagsys::wait_till("<unknown string>");
-            print3d(self.origin, "<unknown string>", (1, 0, 0), 1, 1, 1);
+            level flagsys::wait_till("<dev string:xb0>");
+            print3d(self.origin, "<dev string:xed>", (1, 0, 0), 1, 1, 1);
             waitframe(1);
         }
     }
@@ -448,7 +447,7 @@ function add_notetrack_func(funcname, func) {
     if (!isdefined(level._animnotifyfuncs)) {
         level._animnotifyfuncs = [];
     }
-    assert(!isdefined(level._animnotifyfuncs[funcname]), "<unknown string>");
+    assert(!isdefined(level._animnotifyfuncs[funcname]), "<dev string:xfa>");
     level._animnotifyfuncs[funcname] = func;
 }
 
@@ -682,7 +681,7 @@ function fire_weapon() {
 // Checksum 0x6c0a644a, Offset: 0x2d30
 // Size: 0x26c
 function function_eb0aa7cf(n_pulse = 100, bone) {
-    assert(!issentient(self), "<unknown string>");
+    assert(!issentient(self), "<dev string:x11f>");
     if (!isdefined(bone)) {
         bone = "tag_physics_pulse";
     }

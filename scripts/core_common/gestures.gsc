@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 
 #namespace gestures;
@@ -43,8 +42,8 @@ function main() {
 // Checksum 0x8134e42c, Offset: 0x418
 // Size: 0xc2
 function give_gesture(gestureweapon) {
-    assert(gestureweapon != level.weaponnone, "<unknown string>");
-    assert(!isdefined(self.gestureweapon) || self.gestureweapon == level.weaponnone, "<unknown string>");
+    assert(gestureweapon != level.weaponnone, "<dev string:x38>");
+    assert(!isdefined(self.gestureweapon) || self.gestureweapon == level.weaponnone, "<dev string:x67>");
     self setactionslot(3, "taunt");
     self giveweapon(gestureweapon);
     self.gestureweapon = gestureweapon;

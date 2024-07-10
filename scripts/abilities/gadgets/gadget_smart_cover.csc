@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\deployable.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\clientfield_shared.csc;
@@ -487,7 +486,7 @@ function stop_or_start_fx(localclientnum, fxname, tag, start, team) {
     if (start) {
         self play_fx_on_tag(localclientnum, fxname, tag, team);
         /#
-            if (fxname == "<unknown string>") {
+            if (fxname == "<dev string:x38>") {
                 render_debug_sphere(tag, (0.5, 0.5, 0), fxname);
             } else {
                 render_debug_sphere(tag, (0, 1, 0), fxname);

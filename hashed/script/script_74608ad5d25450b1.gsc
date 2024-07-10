@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_724752ab26bff81b;
 #using script_174ce72cc0f850;
 #using scripts\zm\zm_white_zones.gsc;
@@ -173,8 +172,8 @@ function private function_c0fc92d2() {
 function private function_9d66ea6f(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:x38>");
+            println(e_player.name + "<dev string:x38>");
         }
     #/
     level.var_ae5fb719.e_player = e_player;
@@ -352,8 +351,8 @@ function private function_cf69599(e_item, e_player) {
     if (level.var_ae5fb719.var_128cd2c8 < 1) {
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold(e_player.name + "<unknown string>");
-                println(e_player.name + "<unknown string>");
+                iprintlnbold(e_player.name + "<dev string:x65>");
+                println(e_player.name + "<dev string:x65>");
             }
         #/
         if (!zm_white_main_quest::function_6cebbce1() && !(isdefined(level.var_5dd0d3ff.isspeaking) && level.var_5dd0d3ff.isspeaking)) {
@@ -436,8 +435,8 @@ function private function_a66f0de2() {
 function private function_b9a31cb(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:x82>");
+            println(e_player.name + "<dev string:x82>");
         }
     #/
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mk2x_ammo", 2, e_player);
@@ -548,8 +547,8 @@ function function_c6fc34a() {
 function private complete_quest() {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(level.var_ae5fb719.e_player.name + "<unknown string>");
-            println(level.var_ae5fb719.e_player.name + "<unknown string>");
+            iprintlnbold(level.var_ae5fb719.e_player.name + "<dev string:x9f>");
+            println(level.var_ae5fb719.e_player.name + "<dev string:x9f>");
         }
     #/
     level.var_ae5fb719.e_player = undefined;

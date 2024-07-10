@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\gametypes\battlechatter.gsc;

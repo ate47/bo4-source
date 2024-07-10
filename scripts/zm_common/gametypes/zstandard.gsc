@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_537b0d808c4cac25;
 #using script_2595527427ea71eb;
 #using script_742a29771db74d6f;
@@ -156,18 +155,18 @@ function private finalize_clientfields() {
     // Size: 0x1e8
     function function_6c2b3729() {
         zm_devgui::add_custom_devgui_callback(&function_2f63dc81);
-        adddebugcommand("bonus_points_team");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x8a>");
+        adddebugcommand("<dev string:xdf>");
+        adddebugcommand("<dev string:x126>");
         waittillframeend();
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x184>");
         if (isdefined(level.a_s_defend_areas)) {
             a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
             foreach (str_defend_area in a_str_defend_areas) {
                 str_name = function_9e72a96(str_defend_area);
-                util::add_debug_command("<unknown string>" + str_name + "<unknown string>" + "<unknown string>" + str_name + "<unknown string>" + "<unknown string>");
-                util::add_debug_command("<unknown string>" + str_name + "<unknown string>" + "<unknown string>" + str_name + "<unknown string>" + "<unknown string>");
+                util::add_debug_command("<dev string:x19f>" + str_name + "<dev string:x1c4>" + "<dev string:x1d2>" + str_name + "<dev string:x1e6>" + "<dev string:x1f4>");
+                util::add_debug_command("<dev string:x19f>" + str_name + "<dev string:x1f9>" + "<dev string:x1d2>" + str_name + "<dev string:x205>" + "<dev string:x1f4>");
             }
         }
     }
@@ -184,28 +183,28 @@ function private finalize_clientfields() {
             }
             break;
         case #"hash_2dd0872d741b071e":
-            zm_devgui::zombie_devgui_give_powerup("<unknown string>", undefined, level.players[0].origin);
+            zm_devgui::zombie_devgui_give_powerup("<dev string:x211>", undefined, level.players[0].origin);
             break;
         case #"hash_745ce03c49ed332a":
             for (i = 0; i < 10; i++) {
-                zm_devgui::zombie_devgui_give_powerup("<unknown string>", undefined, level.players[0].origin);
+                zm_devgui::zombie_devgui_give_powerup("<dev string:x211>", undefined, level.players[0].origin);
             }
             break;
         case #"hash_2a785bbd314ac393":
             if (isarray(level.var_eaaa1d75) && level.var_eaaa1d75.size) {
-                iprintlnbold("<unknown string>" + level.var_eaaa1d75[0].origin);
+                iprintlnbold("<dev string:x227>" + level.var_eaaa1d75[0].origin);
                 level.players[0] setorigin(level.var_eaaa1d75[0].origin);
             }
             break;
         default:
             if (isdefined(level.a_s_defend_areas)) {
                 a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
-                a_str_name = strtok(cmd, "<unknown string>");
+                a_str_name = strtok(cmd, "<dev string:x23c>");
                 str_name = a_str_name[0];
                 var_19d45c79 = a_str_name[1];
                 if (isinarray(a_str_defend_areas, hash(str_name))) {
-                    if (var_19d45c79 === "<unknown string>") {
-                        iprintlnbold("<unknown string>" + str_name + "<unknown string>");
+                    if (var_19d45c79 === "<dev string:x240>") {
+                        iprintlnbold("<dev string:x24d>" + str_name + "<dev string:x25b>");
                         if (isdefined(level.var_35da2d77) && isdefined(level.var_9149f3ac)) {
                             zm_utility::function_b1f3be5c(level.var_35da2d77, level.var_9149f3ac);
                             level.var_35da2d77 = undefined;
@@ -216,7 +215,7 @@ function private finalize_clientfields() {
                         level.var_9149f3ac = s_defend_area.var_ed1db1a7;
                         level.var_35da2d77 = zm_utility::function_d7db256e(level.var_9149f3ac, #"hash_683cf7d37afcc3ae");
                     } else {
-                        iprintlnbold("<unknown string>" + str_name + "<unknown string>");
+                        iprintlnbold("<dev string:x266>" + str_name + "<dev string:x272>");
                         s_defend_area = zm_utility::function_a877cd10(str_name);
                         zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 30);
                     }
@@ -519,7 +518,7 @@ function bonus_points_powerup_override(player) {
 function function_e0c53cf(params) {
     if (!isdefined(self.maxhealth)) {
         /#
-            iprintlnbold(function_9e72a96(self.archetype) + "<unknown string>");
+            iprintlnbold(function_9e72a96(self.archetype) + "<dev string:x283>");
         #/
         self.maxhealth = self.health;
         return;
@@ -891,7 +890,7 @@ function function_cd6476e(var_16ef1c43) {
     self zm_challenges::function_979f4cc0(#"hash_47685630580f6b5f", var_16ef1c43);
     /#
         if (self zm_stats::get_client_stat(#"hash_47685630580f6b5f") >= 100000000) {
-            self iprintlnbold("<unknown string>");
+            self iprintlnbold("<dev string:x2af>");
         }
     #/
     if (!(isdefined(self.var_121888ab) && self.var_121888ab) && self.score >= 250000) {
@@ -1987,7 +1986,7 @@ function function_3928d86(params) {
             return;
         }
         while (true) {
-            debug2dtext((8, 250, 0), "<unknown string>" + level.round_number, undefined, undefined, undefined, 1);
+            debug2dtext((8, 250, 0), "<dev string:x2d7>" + level.round_number, undefined, undefined, undefined, 1);
             waitframe(1);
         }
     }
@@ -1999,7 +1998,7 @@ function function_3928d86(params) {
 // Checksum 0xabe9b4ed, Offset: 0x7b18
 // Size: 0xa72
 function function_21669ebc(restart = 0) {
-    println("<unknown string>");
+    println("<dev string:x2f1>");
     level endon(#"end_round_think");
     if (!(isdefined(restart) && restart)) {
         if (isdefined(level.var_12e11406)) {
@@ -2035,7 +2034,7 @@ function function_21669ebc(restart = 0) {
         if (!(isdefined(level.headshots_only) && level.headshots_only) && !restart) {
             level thread zm_round_logic::award_grenades_for_survivors();
         }
-        println("<unknown string>" + level.round_number + "<unknown string>" + players.size);
+        println("<dev string:x30b>" + level.round_number + "<dev string:x327>" + players.size);
         level.round_start_time = gettime();
         while (level.zm_loc_types[#"zombie_location"].size <= 0) {
             wait(0.1);

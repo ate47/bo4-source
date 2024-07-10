@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\trigger_shared.gsc;
 
@@ -17,7 +16,7 @@ function init(str_flag, b_val = 0) {
     }
     /#
         if (!isdefined(level.first_frame)) {
-            assert(!isdefined(self.flag[str_flag]), "<unknown string>" + str_flag + "<unknown string>");
+            assert(!isdefined(self.flag[str_flag]), "<dev string:x38>" + str_flag + "<dev string:x62>");
         }
     #/
     self.flag[str_flag] = b_val;
@@ -37,7 +36,7 @@ function exists(str_flag) {
 // Checksum 0x1aa586a6, Offset: 0x1a8
 // Size: 0x94
 function set(str_flag) {
-    assert(exists(str_flag), "<unknown string>" + function_9e72a96(str_flag) + "<unknown string>");
+    assert(exists(str_flag), "<dev string:x71>" + function_9e72a96(str_flag) + "<dev string:x8e>");
     self.flag[str_flag] = 1;
     self notify(str_flag);
     trigger::set_flag_permissions(str_flag);
@@ -48,7 +47,7 @@ function set(str_flag) {
 // Checksum 0x302929bd, Offset: 0x248
 // Size: 0x8c
 function increment(str_flag) {
-    assert(exists(str_flag), "<unknown string>" + function_9e72a96(str_flag) + "<unknown string>");
+    assert(exists(str_flag), "<dev string:xaa>" + function_9e72a96(str_flag) + "<dev string:x8e>");
     self.flag_count[str_flag]++;
     set(str_flag);
 }
@@ -58,8 +57,8 @@ function increment(str_flag) {
 // Checksum 0x8549ba34, Offset: 0x2e0
 // Size: 0xd4
 function decrement(str_flag) {
-    assert(exists(str_flag), "<unknown string>" + function_9e72a96(str_flag) + "<unknown string>");
-    assert(self.flag_count[str_flag] > 0, "<unknown string>");
+    assert(exists(str_flag), "<dev string:xcd>" + function_9e72a96(str_flag) + "<dev string:x8e>");
+    assert(self.flag_count[str_flag] > 0, "<dev string:xf0>");
     self.flag_count[str_flag]--;
     if (self.flag_count[str_flag] == 0) {
         clear(str_flag);
@@ -92,7 +91,7 @@ function _delay_set(n_delay, str_flag, str_cancel) {
 // Checksum 0x544e2e12, Offset: 0x470
 // Size: 0x6c
 function set_val(str_flag, b_val) {
-    assert(isdefined(b_val), "<unknown string>");
+    assert(isdefined(b_val), "<dev string:x12f>");
     if (b_val) {
         set(str_flag);
         return;
@@ -117,7 +116,7 @@ function set_for_time(n_time, str_flag) {
 // Checksum 0x654b3639, Offset: 0x558
 // Size: 0x8c
 function clear(str_flag) {
-    assert(exists(str_flag), "<unknown string>" + str_flag + "<unknown string>");
+    assert(exists(str_flag), "<dev string:x15d>" + str_flag + "<dev string:x8e>");
     if (self.flag[str_flag]) {
         self.flag[str_flag] = 0;
         self notify(str_flag);
@@ -142,7 +141,7 @@ function toggle(str_flag) {
 // Checksum 0xa18869c3, Offset: 0x650
 // Size: 0x58
 function get(str_flag) {
-    assert(exists(str_flag), "<unknown string>" + str_flag + "<unknown string>");
+    assert(exists(str_flag), "<dev string:x17c>" + str_flag + "<dev string:x8e>");
     return self.flag[str_flag];
 }
 
@@ -364,7 +363,7 @@ function delete(str_flag) {
         self.flag[str_flag] = undefined;
         return;
     }
-    println("<unknown string>" + str_flag);
+    println("<dev string:x192>" + str_flag);
 }
 
 // Namespace flag/flag_shared

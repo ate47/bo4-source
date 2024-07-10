@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_nova_crawler_interface.gsc;
 #using scripts\core_common\ai\systems\blackboard.gsc;
 #using scripts\core_common\ai\systems\ai_interface.gsc;
@@ -72,7 +71,7 @@ function private registerbehaviorscriptfunctions() {
     // Size: 0x54
     function private function_3d50e4d0(message) {
         if (getdvarint(#"hash_35bebcc5f50d2641", 0)) {
-            println("<unknown string>" + message);
+            println("<dev string:x38>" + message);
         }
     }
 

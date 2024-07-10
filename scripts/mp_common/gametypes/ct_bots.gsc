@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_utils.gsc;
 #using scripts\mp_common\gametypes\ct_utils.gsc;
 #using scripts\mp_common\gametypes\ct_core.gsc;
@@ -381,14 +380,14 @@ function function_7d86a450() {
         level.red = (1, 0, 0);
         ypos = level.debug_ypos;
         level.var_20ec3e3a = newdebughudelem();
-        level.var_20ec3e3a.alignx = "<unknown string>";
+        level.var_20ec3e3a.alignx = "<dev string:x38>";
         level.var_20ec3e3a.fontscale = level.debug_fontscale;
         level.var_20ec3e3a.x = level.debug_xpos;
         level.var_20ec3e3a.y = ypos;
         level.var_20ec3e3a.color = level.white;
-        level.var_20ec3e3a settext("<unknown string>");
+        level.var_20ec3e3a settext("<dev string:x40>");
         level.var_6414a791 = newdebughudelem();
-        level.var_6414a791.alignx = "<unknown string>";
+        level.var_6414a791.alignx = "<dev string:x4e>";
         level.var_6414a791.fontscale = level.debug_fontscale;
         level.var_6414a791.x = level.debug_xpos;
         level.var_6414a791.y = ypos;
@@ -396,14 +395,14 @@ function function_7d86a450() {
         level.var_6414a791 setvalue(var_841324bd);
         ypos += level.debug_yinc;
         level.var_ef165a8f = newdebughudelem();
-        level.var_ef165a8f.alignx = "<unknown string>";
+        level.var_ef165a8f.alignx = "<dev string:x38>";
         level.var_ef165a8f.fontscale = level.debug_fontscale;
         level.var_ef165a8f.x = level.debug_xpos;
         level.var_ef165a8f.y = ypos;
         level.var_ef165a8f.color = level.white;
-        level.var_ef165a8f settext("<unknown string>");
+        level.var_ef165a8f settext("<dev string:x55>");
         level.var_82bc4b98 = newdebughudelem();
-        level.var_82bc4b98.alignx = "<unknown string>";
+        level.var_82bc4b98.alignx = "<dev string:x4e>";
         level.var_82bc4b98.fontscale = level.debug_fontscale;
         level.var_82bc4b98.x = level.debug_xpos;
         level.var_82bc4b98.y = ypos;
@@ -411,14 +410,14 @@ function function_7d86a450() {
         level.var_82bc4b98 setvalue(0);
         ypos += level.debug_yinc;
         level.var_c55c071b = newdebughudelem();
-        level.var_c55c071b.alignx = "<unknown string>";
+        level.var_c55c071b.alignx = "<dev string:x38>";
         level.var_c55c071b.fontscale = level.debug_fontscale;
         level.var_c55c071b.x = level.debug_xpos;
         level.var_c55c071b.y = ypos;
         level.var_c55c071b.color = level.white;
-        level.var_c55c071b settext("<unknown string>");
+        level.var_c55c071b settext("<dev string:x61>");
         level.var_1eafa2a3 = newdebughudelem();
-        level.var_1eafa2a3.alignx = "<unknown string>";
+        level.var_1eafa2a3.alignx = "<dev string:x4e>";
         level.var_1eafa2a3.fontscale = level.debug_fontscale;
         level.var_1eafa2a3.x = level.debug_xpos;
         level.var_1eafa2a3.y = ypos;
@@ -426,18 +425,18 @@ function function_7d86a450() {
         level.var_1eafa2a3 setvalue(0);
         level.var_105dad71 = 0;
         level.var_486b7db0 = [];
-        level.var_486b7db0[0] = "<unknown string>";
-        level.var_486b7db0[1] = "<unknown string>";
-        level.var_486b7db0[2] = "<unknown string>";
-        level.var_486b7db0[3] = "<unknown string>";
-        level.var_486b7db0[4] = "<unknown string>";
-        level.var_486b7db0[5] = "<unknown string>";
-        level.var_486b7db0[6] = "<unknown string>";
+        level.var_486b7db0[0] = "<dev string:x6c>";
+        level.var_486b7db0[1] = "<dev string:x78>";
+        level.var_486b7db0[2] = "<dev string:x81>";
+        level.var_486b7db0[3] = "<dev string:x8e>";
+        level.var_486b7db0[4] = "<dev string:x96>";
+        level.var_486b7db0[5] = "<dev string:x9e>";
+        level.var_486b7db0[6] = "<dev string:xa8>";
         level.var_f4f73ef7 = [];
-        level.var_f4f73ef7[0] = "<unknown string>";
-        level.var_f4f73ef7[1] = "<unknown string>";
-        level.var_f4f73ef7[2] = "<unknown string>";
-        level.var_f4f73ef7[3] = "<unknown string>";
+        level.var_f4f73ef7[0] = "<dev string:x6c>";
+        level.var_f4f73ef7[1] = "<dev string:xb3>";
+        level.var_f4f73ef7[2] = "<dev string:xbc>";
+        level.var_f4f73ef7[3] = "<dev string:xc5>";
         while (!level.gameended) {
             level.var_82bc4b98 setvalue(level.var_105dad71);
             level.var_1eafa2a3 setvalue(function_2a8fc6b2());
@@ -447,7 +446,7 @@ function function_7d86a450() {
                     continue;
                 }
                 org = entity.origin + (0, 0, 100);
-                print3d(org, "<unknown string>", (1, 0.5, 0), 1, 1);
+                print3d(org, "<dev string:xce>", (1, 0.5, 0), 1, 1);
                 if (isdefined(entity.var_10a6d7df)) {
                     org = entity.origin + (0, 0, 85);
                     print3d(org, level.var_486b7db0[entity.var_10a6d7df], (1, 0.5, 0), 1, 1);
@@ -462,7 +461,7 @@ function function_7d86a450() {
                 }
                 if (isdefined(entity.canseeplayer)) {
                     org = entity.origin + (0, 0, 60);
-                    print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 0.75);
+                    print3d(org, "<dev string:xd4>" + entity.canseeplayer + "<dev string:xde>" + ai_cansee + "<dev string:xe2>", (1, 0.5, 0), 1, 0.75);
                 }
             }
             axis = getaiteamarray(#"axis");
@@ -471,7 +470,7 @@ function function_7d86a450() {
                     continue;
                 }
                 org = entity.origin + (0, 0, 100);
-                print3d(org, "<unknown string>", (1, 0.5, 0), 1, 1);
+                print3d(org, "<dev string:xe6>", (1, 0.5, 0), 1, 1);
                 if (isdefined(entity.var_10a6d7df)) {
                     org = entity.origin + (0, 0, 85);
                     print3d(org, level.var_486b7db0[entity.var_10a6d7df], (1, 0.5, 0), 1, 1);
@@ -482,19 +481,19 @@ function function_7d86a450() {
                 }
                 if (isdefined(entity.canseeplayer)) {
                     org = entity.origin + (0, 0, 70);
-                    print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 1);
+                    print3d(org, "<dev string:xd4>" + entity.canseeplayer + "<dev string:xde>" + ai_cansee + "<dev string:xe2>", (1, 0.5, 0), 1, 1);
                 }
                 if (isdefined(entity.var_9a79d89d)) {
-                    print3d(entity.var_9a79d89d + (0, 0, 10), "<unknown string>", (0, 0, 1), 1, 1);
+                    print3d(entity.var_9a79d89d + (0, 0, 10), "<dev string:xeb>", (0, 0, 1), 1, 1);
                 }
             }
             if (isdefined(level.var_5ec2d86e)) {
                 foreach (nd in level.var_5ec2d86e) {
                     if (!isdefined(nd.e_occupant)) {
-                        print3d(nd.origin + (0, 0, 10), "<unknown string>", (1, 0, 0), 1, 1);
+                        print3d(nd.origin + (0, 0, 10), "<dev string:xf9>", (1, 0, 0), 1, 1);
                         continue;
                     }
-                    print3d(nd.origin + (0, 0, 10), "<unknown string>", (0, 0, 1), 1, 1);
+                    print3d(nd.origin + (0, 0, 10), "<dev string:xf9>", (0, 0, 1), 1, 1);
                 }
             }
             waitframe(1);
@@ -1317,7 +1316,7 @@ function function_c2cfffdd(nd_guard, var_2fd67dea = 0, var_1d1ab17 = 0) {
         if (!isdefined(nd_guard)) {
             nd_guard = function_c9c5ed36();
         }
-        assert(isdefined(nd_guard), "<unknown string>");
+        assert(isdefined(nd_guard), "<dev string:x106>");
         nd_guard.e_occupant = self;
         self.nd_guard = nd_guard;
         self.var_9a79d89d = nd_guard.origin;

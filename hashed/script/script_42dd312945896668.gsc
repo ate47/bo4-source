@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
@@ -355,12 +354,12 @@ function function_84884488(localclientnum) {
 function function_30c6d85() {
     level.var_4fea6622++;
     /#
-        iprintlnbold("<unknown string>" + level.var_4fea6622);
+        iprintlnbold("<dev string:x38>" + level.var_4fea6622);
     #/
     self waittilltimeout(1.2, #"death");
     level.var_4fea6622--;
     /#
-        iprintlnbold("<unknown string>" + level.var_4fea6622);
+        iprintlnbold("<dev string:x4f>" + level.var_4fea6622);
     #/
 }
 

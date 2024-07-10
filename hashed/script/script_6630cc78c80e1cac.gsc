@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\struct.gsc;
 #using scripts\core_common\flag_shared.gsc;
@@ -57,7 +56,7 @@ function function_4ac6cf37(var_5ea5c94d) {
         }
         playsoundatposition(#"hash_4ff9e8e25196f463", (0, 0, 0));
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
         #/
     }
 }
@@ -157,7 +156,7 @@ function function_715c9476() {
     level.var_db90b274--;
     self playsound(#"hash_5104efdd2ef71e39");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x62>");
     #/
     level thread function_bd81f4e2(waitresult.activator);
 }
@@ -173,7 +172,7 @@ function function_63f29ee9() {
     level.var_db90b274--;
     self playsound(#"hash_5104efdd2ef71e39");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x80>");
     #/
     level thread function_bd81f4e2(waitresult.activator);
 }
@@ -191,7 +190,7 @@ function function_bd81f4e2(user) {
         level.var_3830a0d3 hide();
         playsoundatposition(#"hash_4b169927b4789180", (0, 0, 0));
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x9f>");
         #/
         if (user zm_characters::is_character(array(#"hash_1aa57ef704f24fa5", #"hash_36bc80636f0fdac4"))) {
             user thread zm_vo::vo_say("vox_mcnamara_log_repair_plr_6_0");

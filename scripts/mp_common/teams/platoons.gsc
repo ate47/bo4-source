@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\teams\teams.gsc;
 #using scripts\mp_common\gametypes\round.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
@@ -160,8 +159,8 @@ function private function_ef7959f0() {
 function function_77ad4730() {
     assignment = function_ef7959f0();
     /#
-        var_655b66e0 = getdvarstring(#"scr_playerplatoons", "<unknown string>");
-        playerplatoons = strtok(var_655b66e0, "<unknown string>");
+        var_655b66e0 = getdvarstring(#"scr_playerplatoons", "<dev string:x38>");
+        playerplatoons = strtok(var_655b66e0, "<dev string:x3b>");
         if (playerplatoons.size > 0) {
             playerplatoon = playerplatoons[self getentitynumber()];
             if (isdefined(playerplatoon) && isdefined(level.platoons[playerplatoon])) {

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2f9a68261f6a17be;
 #using script_6951ea86fdae9ae0;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
@@ -239,7 +238,7 @@ function slide_explosion(n_slot) {
                         }
                     }
                     /#
-                        self zm_challenges::debug_print("<unknown string>");
+                        self zm_challenges::debug_print("<dev string:x38>");
                     #/
                     self zm_stats::increment_challenge_stat(#"perk_slider_kills");
                 }

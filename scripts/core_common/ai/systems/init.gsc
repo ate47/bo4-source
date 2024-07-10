@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_utility.gsc;
 #using scripts\core_common\ai\systems\shared.gsc;
 #using scripts\core_common\name_shared.gsc;
@@ -141,16 +140,16 @@ function trackvelocity() {
             for (j = 0; j < transtypes.size; j++) {
                 trans = transtypes[j];
                 idealadd = 0;
-                if (trans == "<unknown string>" || trans == "<unknown string>") {
+                if (trans == "<dev string:x38>" || trans == "<dev string:x3f>") {
                     idealadd = 90;
-                } else if (trans == "<unknown string>" || trans == "<unknown string>") {
+                } else if (trans == "<dev string:x4d>" || trans == "<dev string:x55>") {
                     idealadd = -90;
                 }
                 if (isdefined(anim.covertransangles[trans][i])) {
                     correctangle = angleclamp180(idealtransangles[i] + idealadd);
                     actualangle = angleclamp180(anim.covertransangles[trans][i]);
                     if (absangleclamp180(actualangle - correctangle) > 7) {
-                        println("<unknown string>" + trans + "<unknown string>" + i + "<unknown string>" + actualangle + "<unknown string>" + correctangle + "<unknown string>");
+                        println("<dev string:x64>" + trans + "<dev string:xa6>" + i + "<dev string:xac>" + actualangle + "<dev string:xb7>" + correctangle + "<dev string:xd4>");
                     }
                 }
             }
@@ -159,16 +158,16 @@ function trackvelocity() {
             for (j = 0; j < transtypes.size; j++) {
                 trans = transtypes[j];
                 idealadd = 0;
-                if (trans == "<unknown string>" || trans == "<unknown string>") {
+                if (trans == "<dev string:x38>" || trans == "<dev string:x3f>") {
                     idealadd = 90;
-                } else if (trans == "<unknown string>" || trans == "<unknown string>") {
+                } else if (trans == "<dev string:x4d>" || trans == "<dev string:x55>") {
                     idealadd = -90;
                 }
                 if (isdefined(anim.coverexitangles[trans][i])) {
                     correctangle = angleclamp180(-1 * (idealtransangles[i] + idealadd + 180));
                     actualangle = angleclamp180(anim.coverexitangles[trans][i]);
                     if (absangleclamp180(actualangle - correctangle) > 7) {
-                        println("<unknown string>" + trans + "<unknown string>" + i + "<unknown string>" + actualangle + "<unknown string>" + correctangle + "<unknown string>");
+                        println("<dev string:xda>" + trans + "<dev string:xa6>" + i + "<dev string:xac>" + actualangle + "<dev string:xb7>" + correctangle + "<dev string:xd4>");
                     }
                 }
             }

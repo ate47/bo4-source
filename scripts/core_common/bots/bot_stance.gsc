@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\core_common\ai_shared.gsc;
@@ -73,7 +72,7 @@ function update(tacbundle) {
         return;
     }
     /#
-        self bot::record_text("<unknown string>", (1, 1, 0), "<unknown string>");
+        self bot::record_text("<dev string:x38>", (1, 1, 0), "<dev string:x4c>");
     #/
     self function_7beea81f(tacbundle);
     self.bot.var_857c5ea8 = bot::function_7aeb27f1(0.4, 1);
@@ -138,7 +137,7 @@ function function_7beea81f(tacbundle) {
     }
     if (!isdefined(var_f307a84d)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x5f>", (1, 0, 0), "<dev string:x4c>");
         #/
         return;
     }
@@ -168,12 +167,12 @@ function function_ab5be907(tacbundle, params, node) {
     func = level.var_17a3a139[params.name];
     if (!isdefined(func)) {
         /#
-            self botprinterror("<unknown string>" + function_9e72a96(params.name));
+            self botprinterror("<dev string:x76>" + function_9e72a96(params.name));
         #/
         return 0;
     }
     /#
-        self bot::record_text(function_9e72a96(params.name), (1, 1, 1), "<unknown string>");
+        self bot::record_text(function_9e72a96(params.name), (1, 1, 1), "<dev string:x4c>");
     #/
     pixbeginevent("bot_stance_handler: " + params.name);
     aiprofile_beginentry("bot_stance_handler: " + params.name);
@@ -194,12 +193,12 @@ function g_stop_player_too_many_weapons_monitor(name) {
     func = level.botstances[name];
     if (!isdefined(func)) {
         /#
-            self botprinterror("<unknown string>" + function_9e72a96(name));
+            self botprinterror("<dev string:x98>" + function_9e72a96(name));
         #/
         return false;
     }
     /#
-        self bot::record_text("<unknown string>" + function_9e72a96(name), (1, 1, 0), "<unknown string>");
+        self bot::record_text("<dev string:xb2>" + function_9e72a96(name), (1, 1, 0), "<dev string:x4c>");
     #/
     self [[ func ]]();
     return true;
@@ -220,19 +219,19 @@ function handle_default(tacbundle, params, node) {
 function function_7857357b(tacbundle, params, node) {
     if (!isdefined(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xb7>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!iscrouchcovernode(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xc7>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (self bot::in_combat() && !self iscovervalid(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xdf>", (1, 0, 0), "<dev string:x4c>");
         #/
     }
     return self g_stop_player_too_many_weapons_monitor(params.stance);
@@ -245,19 +244,19 @@ function function_7857357b(tacbundle, params, node) {
 function function_f1b497ec(tacbundle, params, node) {
     if (!isdefined(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xb7>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!isstandcovernode(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xf2>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (self bot::in_combat() && !self iscovervalid(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xdf>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -271,19 +270,19 @@ function function_f1b497ec(tacbundle, params, node) {
 function function_41d967fe(tacbundle, params, node) {
     if (!isdefined(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xb7>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!isfullcovernode(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x109>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (self bot::in_combat() && !self iscovervalid(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xdf>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -297,25 +296,25 @@ function function_41d967fe(tacbundle, params, node) {
 function function_f71302f4(tacbundle, params, node) {
     if (!isdefined(self.enemy)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x11f>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!isdefined(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xb7>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!isstandcovernode(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xf2>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (self bot::in_combat() && !self iscovervalid(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xdf>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -332,25 +331,25 @@ function function_f71302f4(tacbundle, params, node) {
 function function_821cce69(tacbundle, params, node) {
     if (!isdefined(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xb7>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!(node.spawnflags & 8)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x12c>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (node.spawnflags & 4) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x147>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (self bot::in_combat() && !self iscovervalid(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xdf>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -364,13 +363,13 @@ function function_821cce69(tacbundle, params, node) {
 function function_5485fc7b(tacbundle, params, node) {
     if (!self ai::has_behavior_attribute("sprint")) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x15d>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!self ai::get_behavior_attribute("sprint")) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x175>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -384,7 +383,7 @@ function function_5485fc7b(tacbundle, params, node) {
 function function_e4f752b9(tacbundle, params, node) {
     if (self issprinting()) {
         /#
-            self bot::record_text("<unknown string>", (1, 1, 0), "<unknown string>");
+            self bot::record_text("<dev string:x192>", (1, 1, 0), "<dev string:x4c>");
         #/
         return 1;
     }
@@ -400,7 +399,7 @@ function function_e4f752b9(tacbundle, params, node) {
         var_ce946146 = tacbundle.sprintdist * tacbundle.sprintdist;
         if (distsq < var_ce946146) {
             /#
-                self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+                self bot::record_text("<dev string:x1a5>", (1, 0, 0), "<dev string:x4c>");
             #/
             return 0;
         }
@@ -408,7 +407,7 @@ function function_e4f752b9(tacbundle, params, node) {
     dir = self getnormalizedmovement();
     if (vectordot(dir, (1, 0, 0)) < 0.82) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x1c2>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -422,19 +421,19 @@ function function_e4f752b9(tacbundle, params, node) {
 function function_d22ff818(tacbundle, params, node) {
     if (!self ai::get_behavior_attribute("slide")) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x1d9>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (self issliding()) {
         /#
-            self bot::record_text("<unknown string>", (1, 1, 0), "<unknown string>");
+            self bot::record_text("<dev string:x1f5>", (1, 1, 0), "<dev string:x4c>");
         #/
         return 1;
     }
     if (!self issprinting()) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x206>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -451,13 +450,13 @@ function function_d22ff818(tacbundle, params, node) {
         var_e70d67bc = tacbundle.var_48aa05a1 * tacbundle.var_48aa05a1;
         if (distsq < var_d6ff7b1b) {
             /#
-                self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+                self bot::record_text("<dev string:x1a5>", (1, 0, 0), "<dev string:x4c>");
             #/
             return 0;
         }
         if (distsq > var_e70d67bc) {
             /#
-                self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+                self bot::record_text("<dev string:x218>", (1, 0, 0), "<dev string:x4c>");
             #/
             return 0;
         }
@@ -465,7 +464,7 @@ function function_d22ff818(tacbundle, params, node) {
     dir = self getnormalizedmovement();
     if (vectordot(dir, (1, 0, 0)) < 0.82) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x1c2>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -479,31 +478,31 @@ function function_d22ff818(tacbundle, params, node) {
 function function_1989cfaf(tacbundle, params, node) {
     if (!self ai::get_behavior_attribute("slide")) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x1d9>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (self issliding()) {
         /#
-            self bot::record_text("<unknown string>", (1, 1, 0), "<unknown string>");
+            self bot::record_text("<dev string:x1f5>", (1, 1, 0), "<dev string:x4c>");
         #/
         return 1;
     }
     if (!self issprinting()) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x206>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (!isdefined(node) || !iscovernode(node)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x235>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
     if (isdefined(self function_f04bd922())) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x251>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -512,7 +511,7 @@ function function_1989cfaf(tacbundle, params, node) {
     mindistsq *= mindistsq;
     if (distsq < mindistsq) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x272>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -520,7 +519,7 @@ function function_1989cfaf(tacbundle, params, node) {
     maxdistsq *= maxdistsq;
     if (distsq > maxdistsq) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x288>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }
@@ -528,7 +527,7 @@ function function_1989cfaf(tacbundle, params, node) {
     dir = vectornormalize(node.origin - self.origin);
     if (vectordot(dir, anglestoforward(node.angles)) <= mindot) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x29e>", (1, 0, 0), "<dev string:x4c>");
         #/
         return 0;
     }

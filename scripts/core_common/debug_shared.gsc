@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\flag_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -29,18 +28,18 @@
     // Checksum 0xc5f29cb2, Offset: 0x108
     // Size: 0x3d8
     function devgui_debug_key_value() {
-        a_keys = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
+        a_keys = array("<dev string:x38>", "<dev string:x41>", "<dev string:x4c>", "<dev string:x58>", "<dev string:x6c>", "<dev string:x79>", "<dev string:x89>", "<dev string:x96>", "<dev string:x9f>");
         setdvar(#"debug_key_value", 0);
         setdvar(#"debug_key_value_dist", 2000);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xa6>");
+        adddebugcommand("<dev string:xf8>");
         foreach (str_key in a_keys) {
-            adddebugcommand("<unknown string>" + str_key + "<unknown string>" + str_key + "<unknown string>");
+            adddebugcommand("<dev string:x144>" + str_key + "<dev string:x176>" + str_key + "<dev string:x190>");
         }
-        while (!flag::exists("<unknown string>")) {
+        while (!flag::exists("<dev string:x195>")) {
             util::wait_network_frame();
         }
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x195>");
         while (true) {
             debug_key_value = getdvar(#"debug_key_value", 0);
             if (debug_key_value != 0) {
@@ -106,12 +105,12 @@
             if (isdefined(n_time)) {
                 __s = spawnstruct();
                 __s endon(#"timeout");
-                __s util::delay_notify(n_time, "<unknown string>");
+                __s util::delay_notify(n_time, "<dev string:x1ac>");
             }
             while (true) {
                 value = self.(str_key);
                 if (isdefined(value)) {
-                    print3d(self.origin, isdefined(value) ? "<unknown string>" + value : "<unknown string>", (0, 0, 1), 1, n_scale, 1);
+                    print3d(self.origin, isdefined(value) ? "<dev string:x1b6>" + value : "<dev string:x1b6>", (0, 0, 1), 1, n_scale, 1);
                 }
                 waitframe(1);
             }

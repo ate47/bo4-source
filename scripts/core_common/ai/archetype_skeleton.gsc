@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\destructible_character.gsc;
 #using script_2c5daa95f8fec03c;
 #using scripts\core_common\ai\systems\blackboard.gsc;

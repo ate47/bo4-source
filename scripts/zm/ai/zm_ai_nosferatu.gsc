@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_1f0e83e43bf9c3b9;
 #using scripts\core_common\ai\archetype_nosferatu.gsc;
 #using scripts\zm_common\zm_customgame.gsc;
@@ -86,7 +85,7 @@ function __init__() {
     level.var_243137e = getentarray("zombie_nosferatu_spawner", "script_noteworthy");
     level.var_13bc407f = getentarray("zombie_crimson_nosferatu_spawner", "script_noteworthy");
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
     #/
 }
 
@@ -706,7 +705,7 @@ function private function_76d6482e(entity) {
     queryresult = positionquery_source_navigation(entity.origin, var_4a07738f, 300, 64, 25, entity);
     if (queryresult.data.size == 0) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x44>");
         #/
         return;
     }
@@ -718,7 +717,7 @@ function private function_76d6482e(entity) {
         }
         var_c9528359 = int(max(0, min(3, a_ai_zombies.size)));
         /#
-            iprintln("<unknown string>" + var_c9528359 + "<unknown string>");
+            iprintln("<dev string:x9e>" + var_c9528359 + "<dev string:xad>");
         #/
         for (i = 0; i < var_c9528359; i++) {
             a_ai_zombies[i] thread zm_cleanup::cleanup_zombie();
@@ -726,14 +725,14 @@ function private function_76d6482e(entity) {
     }
     if (var_c9528359) {
         /#
-            iprintln("<unknown string>" + var_c9528359 + "<unknown string>");
+            iprintln("<dev string:xd0>" + var_c9528359 + "<dev string:xe5>");
         #/
         entity thread function_13b48cdd(var_c9528359, queryresult);
         return;
     }
     /#
         if (var_c9528359 == 0) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xf3>");
         }
     #/
 }
@@ -758,7 +757,7 @@ function function_13b48cdd(var_c9528359, queryresult) {
         }
         /#
             if (!var_18f8f237 && !isdefined(ai)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x13d>");
             }
         #/
         if (isdefined(ai) && isdefined(point)) {
@@ -805,8 +804,8 @@ function nosferatu_spawn_fx(ai, ent) {
     ai dontinterpolate();
     ai forceteleport(ent.origin, angles);
     ai clientfield::increment("nosferatu_spawn_fx");
-    assert(isdefined(ai), "<unknown string>");
-    assert(isalive(ai), "<unknown string>");
+    assert(isdefined(ai), "<dev string:x159>");
+    assert(isalive(ai), "<dev string:x16e>");
     ai val::reset(#"nosferatu_spawn", "allowdeath");
     wait(0.1);
     ai show();

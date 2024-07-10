@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial_util.gsc;
 #using script_2595527427ea71eb;
 #using scripts\zm\zm_escape_pap_quest.gsc;
@@ -417,13 +416,13 @@ function function_c3ad6d4a(b_wait_for_player = 0) {
     // Size: 0x1e2
     function function_b9cacd48() {
         while (true) {
-            zm_utility::function_11101458("<unknown string>");
+            zm_utility::function_11101458("<dev string:x38>");
             wait(10);
-            s_defend_area = zm_utility::function_a877cd10("<unknown string>");
+            s_defend_area = zm_utility::function_a877cd10("<dev string:x38>");
             zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 10, 2);
-            zm_utility::function_11101458("<unknown string>");
+            zm_utility::function_11101458("<dev string:x42>");
             wait(10);
-            s_defend_area = zm_utility::function_a877cd10("<unknown string>");
+            s_defend_area = zm_utility::function_a877cd10("<dev string:x42>");
             zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 10, 2);
             foreach (str_index, s_defend_area in level.a_s_defend_areas) {
                 s_defend_area = zm_utility::function_a877cd10(str_index);

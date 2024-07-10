@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2595527427ea71eb;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_loadout.gsc;
@@ -53,7 +52,7 @@ function private on_begin(timer_label, var_1215371f, grace_period, var_29cadcde,
         timer_value = zm_trial::function_5769f26a(var_6b594c52);
         break;
     default:
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x38>");
         break;
     }
     if (var_afb6cb74 === #"melee_only") {

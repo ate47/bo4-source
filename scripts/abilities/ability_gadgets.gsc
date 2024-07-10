@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_player.gsc;
 #using scripts\core_common\flag_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -36,7 +35,7 @@ function __init__() {
     function gadgets_print(str) {
         if (getdvarint(#"scr_debug_gadgets", 0)) {
             toprint = str;
-            println(self.playername + "<unknown string>" + "<unknown string>" + toprint);
+            println(self.playername + "<dev string:x38>" + "<dev string:x3d>" + toprint);
         }
     }
 
@@ -72,7 +71,7 @@ function on_player_spawned() {
 // Size: 0x7c
 function event_handler[gadget_give] gadget_give_callback(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:x4b>");
     #/
     eventstruct.entity ability_player::give_gadget(eventstruct.slot, eventstruct.weapon);
 }
@@ -83,7 +82,7 @@ function event_handler[gadget_give] gadget_give_callback(eventstruct) {
 // Size: 0x7c
 function event_handler[gadget_take] gadget_take_callback(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:x57>");
     #/
     eventstruct.entity ability_player::take_gadget(eventstruct.slot, eventstruct.weapon);
 }
@@ -94,7 +93,7 @@ function event_handler[gadget_take] gadget_take_callback(eventstruct) {
 // Size: 0x7c
 function event_handler[gadget_primed] gadget_primed_callback(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:x63>");
     #/
     eventstruct.entity ability_player::gadget_primed(eventstruct.slot, eventstruct.weapon);
 }
@@ -105,7 +104,7 @@ function event_handler[gadget_primed] gadget_primed_callback(eventstruct) {
 // Size: 0xec
 function event_handler[gadget_ready] gadget_ready_callback(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:x71>");
     #/
     if (level flag::get("all_players_spawned")) {
         params = {#slot:eventstruct.slot};
@@ -120,7 +119,7 @@ function event_handler[gadget_ready] gadget_ready_callback(eventstruct) {
 // Size: 0xec
 function event_handler[gadget_on] gadget_on_callback(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:x7e>");
     #/
     if (level flag::get("all_players_spawned")) {
         params = {#slot:eventstruct.slot};
@@ -135,7 +134,7 @@ function event_handler[gadget_on] gadget_on_callback(eventstruct) {
 // Size: 0x7c
 function event_handler[gadget_off] gadget_off_callback(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:x88>");
     #/
     eventstruct.entity ability_player::turn_gadget_off(eventstruct.slot, eventstruct.weapon);
 }
@@ -146,7 +145,7 @@ function event_handler[gadget_off] gadget_off_callback(eventstruct) {
 // Size: 0x7c
 function event_handler[event_dfabd488] function_40d8d1ec(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:x93>");
     #/
     eventstruct.entity ability_player::function_50557027(eventstruct.slot, eventstruct.weapon);
 }
@@ -157,7 +156,7 @@ function event_handler[event_dfabd488] function_40d8d1ec(eventstruct) {
 // Size: 0x7c
 function event_handler[event_e46d75fa] function_15061ae6(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:xa6>");
     #/
     eventstruct.entity ability_player::function_d5260ebe(eventstruct.slot, eventstruct.weapon);
 }
@@ -168,7 +167,7 @@ function event_handler[event_e46d75fa] function_15061ae6(eventstruct) {
 // Size: 0x7c
 function event_handler[gadget_flicker] gadget_flicker_callback(eventstruct) {
     /#
-        eventstruct.entity gadgets_print("<unknown string>" + eventstruct.slot + "<unknown string>");
+        eventstruct.entity gadgets_print("<dev string:x48>" + eventstruct.slot + "<dev string:xba>");
     #/
     eventstruct.entity ability_player::gadget_flicker(eventstruct.slot, eventstruct.weapon);
 }

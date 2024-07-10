@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_lightning_chain.gsc;
 #using scripts\abilities\ability_player.gsc;
 #using scripts\core_common\ai\zombie_vortex.gsc;
@@ -315,7 +314,7 @@ function private gravityspikes_stuck_above_zombie_watcher() {
             /#
                 if (getdvarint(#"hash_5e15d0f6012693c5", 0) > 0) {
                     line(start_point, var_a024434f[i], (1, 1, 1), 1, 0, 60);
-                    recordline(start_point, var_a024434f[i], (1, 1, 1), "<unknown string>", self);
+                    recordline(start_point, var_a024434f[i], (1, 1, 1), "<dev string:x38>", self);
                 }
             #/
             if (trace[#"fraction"] < 1) {

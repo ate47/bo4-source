@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_zombie_museum_fx;
 
 // Namespace mp_zombie_museum_fx/mp_zombie_museum_fx

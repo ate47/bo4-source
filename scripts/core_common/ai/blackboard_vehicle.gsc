@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace blackboard;
 
 /#
@@ -8,7 +7,7 @@
     // Checksum 0xe3c30a9d, Offset: 0x68
     // Size: 0x34
     function registervehicleblackboardattributes() {
-        assert(isvehicle(self), "<unknown string>");
+        assert(isvehicle(self), "<dev string:x38>");
     }
 
 #/

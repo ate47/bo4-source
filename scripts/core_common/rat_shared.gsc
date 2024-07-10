@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\scene_shared.gsc;
 #using scripts\core_common\flagsys_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -20,41 +19,41 @@
             level.rat.playerskilled = 0;
             level.rat.var_cd4fd549 = 0;
             callback::on_player_killed(&function_cecf7c3d);
-            addratscriptcmd("<unknown string>", &function_5fd1a95b);
-            addratscriptcmd("<unknown string>", &rscteleport);
-            addratscriptcmd("<unknown string>", &function_51706559);
-            addratscriptcmd("<unknown string>", &function_b2fe8b5a);
-            addratscriptcmd("<unknown string>", &function_bff535fb);
-            addratscriptcmd("<unknown string>", &function_220d66d8);
-            addratscriptcmd("<unknown string>", &function_be6e2f9f);
-            addratscriptcmd("<unknown string>", &function_ff0fa082);
-            addratscriptcmd("<unknown string>", &function_aecb1023);
-            addratscriptcmd("<unknown string>", &function_90282828);
-            addratscriptcmd("<unknown string>", &function_3b51dc31);
-            addratscriptcmd("<unknown string>", &function_a6d4d86b);
-            addratscriptcmd("<unknown string>", &function_54b7f226);
-            addratscriptcmd("<unknown string>", &function_1b77bedd);
-            addratscriptcmd("<unknown string>", &rscsimulatescripterror);
-            addratscriptcmd("<unknown string>", &function_1f00a502);
-            addratscriptcmd("<unknown string>", &function_696e6dd3);
-            addratscriptcmd("<unknown string>", &function_dec22d87);
-            addratscriptcmd("<unknown string>", &function_e3ab4393);
-            addratscriptcmd("<unknown string>", &function_cb62ece6);
-            addratscriptcmd("<unknown string>", &function_d197a150);
-            addratscriptcmd("<unknown string>", &function_c4336b49);
-            addratscriptcmd("<unknown string>", &function_ccc178f3);
-            addratscriptcmd("<unknown string>", &function_2fa64525);
-            addratscriptcmd("<unknown string>", &function_6fb461e2);
-            addratscriptcmd("<unknown string>", &function_f52fc58b);
-            addratscriptcmd("<unknown string>", &function_dbc9b57c);
-            addratscriptcmd("<unknown string>", &function_4f3a7675);
-            addratscriptcmd("<unknown string>", &function_458913b0);
-            addratscriptcmd("<unknown string>", &function_191d6974);
-            addratscriptcmd("<unknown string>", &function_d1b632ff);
-            addratscriptcmd("<unknown string>", &function_7d9a084b);
-            addratscriptcmd("<unknown string>", &function_1ac5a32b);
-            addratscriptcmd("<unknown string>", &function_7992a479);
-            addratscriptcmd("<unknown string>", &function_9efe300c);
+            addratscriptcmd("<dev string:x38>", &function_5fd1a95b);
+            addratscriptcmd("<dev string:x4d>", &rscteleport);
+            addratscriptcmd("<dev string:x58>", &function_51706559);
+            addratscriptcmd("<dev string:x67>", &function_b2fe8b5a);
+            addratscriptcmd("<dev string:x73>", &function_bff535fb);
+            addratscriptcmd("<dev string:x82>", &function_220d66d8);
+            addratscriptcmd("<dev string:x8e>", &function_be6e2f9f);
+            addratscriptcmd("<dev string:x99>", &function_ff0fa082);
+            addratscriptcmd("<dev string:xa9>", &function_aecb1023);
+            addratscriptcmd("<dev string:xbd>", &function_90282828);
+            addratscriptcmd("<dev string:xd0>", &function_3b51dc31);
+            addratscriptcmd("<dev string:xde>", &function_a6d4d86b);
+            addratscriptcmd("<dev string:xef>", &function_54b7f226);
+            addratscriptcmd("<dev string:x103>", &function_1b77bedd);
+            addratscriptcmd("<dev string:x116>", &rscsimulatescripterror);
+            addratscriptcmd("<dev string:x12c>", &function_1f00a502);
+            addratscriptcmd("<dev string:x140>", &function_696e6dd3);
+            addratscriptcmd("<dev string:x14c>", &function_dec22d87);
+            addratscriptcmd("<dev string:x162>", &function_e3ab4393);
+            addratscriptcmd("<dev string:x17a>", &function_cb62ece6);
+            addratscriptcmd("<dev string:x187>", &function_d197a150);
+            addratscriptcmd("<dev string:x199>", &function_c4336b49);
+            addratscriptcmd("<dev string:x1a8>", &function_ccc178f3);
+            addratscriptcmd("<dev string:x1bf>", &function_2fa64525);
+            addratscriptcmd("<dev string:x1ce>", &function_6fb461e2);
+            addratscriptcmd("<dev string:x1e1>", &function_f52fc58b);
+            addratscriptcmd("<dev string:x1f5>", &function_dbc9b57c);
+            addratscriptcmd("<dev string:x206>", &function_4f3a7675);
+            addratscriptcmd("<dev string:x215>", &function_458913b0);
+            addratscriptcmd("<dev string:x22b>", &function_191d6974);
+            addratscriptcmd("<dev string:x237>", &function_d1b632ff);
+            addratscriptcmd("<dev string:x248>", &function_7d9a084b);
+            addratscriptcmd("<dev string:x25e>", &function_1ac5a32b);
+            addratscriptcmd("<dev string:x276>", &function_7992a479);
+            addratscriptcmd("<dev string:x283>", &function_9efe300c);
         }
     }
 
@@ -63,7 +62,7 @@
     // Checksum 0x4d221221, Offset: 0x6c0
     // Size: 0x24
     function function_7d22c1c9() {
-        level flagsys::set("<unknown string>");
+        level flagsys::set("<dev string:x295>");
     }
 
     // Namespace rat/rat_shared
@@ -71,7 +70,7 @@
     // Checksum 0x16b4d8cf, Offset: 0x6f0
     // Size: 0x24
     function function_65e13d0f() {
-        level flagsys::clear("<unknown string>");
+        level flagsys::clear("<dev string:x295>");
     }
 
     // Namespace rat/rat_shared
@@ -79,7 +78,7 @@
     // Checksum 0x784ae5e5, Offset: 0x720
     // Size: 0x24
     function function_b4f2a076() {
-        level flagsys::set("<unknown string>");
+        level flagsys::set("<dev string:x2b2>");
     }
 
     // Namespace rat/rat_shared
@@ -87,7 +86,7 @@
     // Checksum 0x6f3c8f57, Offset: 0x750
     // Size: 0x24
     function function_6aa20375() {
-        level flagsys::clear("<unknown string>");
+        level flagsys::clear("<dev string:x2b2>");
     }
 
     // Namespace rat/rat_shared
@@ -107,7 +106,7 @@
         init();
         assert(isdefined(params._cmd));
         assert(isdefined(params._id));
-        assert(isdefined(level.rat.script_command_list[params._cmd]), "<unknown string>" + params._cmd);
+        assert(isdefined(level.rat.script_command_list[params._cmd]), "<dev string:x2cd>" + params._cmd);
         callback = level.rat.script_command_list[params._cmd];
         ret = level [[ callback ]](params);
         ratreportcommandresult(params._id, 1, ret);
@@ -128,7 +127,7 @@
                     }
                 }
             }
-            ratreportcommandresult(params._id, 0, "<unknown string>");
+            ratreportcommandresult(params._id, 0, "<dev string:x2eb>");
             wait(1);
             return;
         }
@@ -408,7 +407,7 @@
                 return;
             }
         }
-        ratreportcommandresult(params._id, 0, "<unknown string>");
+        ratreportcommandresult(params._id, 0, "<dev string:x312>");
     }
 
     // Namespace rat/rat_shared
@@ -484,9 +483,9 @@
     // Checksum 0xdcd38f4, Offset: 0x1b38
     // Size: 0x64
     function function_d04e8397(name) {
-        level flagsys::set("<unknown string>");
+        level flagsys::set("<dev string:x342>");
         level scene::play(name);
-        level flagsys::clear("<unknown string>");
+        level flagsys::clear("<dev string:x342>");
     }
 
     // Namespace rat/rat_shared
@@ -498,7 +497,7 @@
             level thread function_d04e8397(params.name);
             return;
         }
-        ratreportcommandresult(params._id, 0, "<unknown string>");
+        ratreportcommandresult(params._id, 0, "<dev string:x34e>");
     }
 
     // Namespace rat/rat_shared
@@ -506,7 +505,7 @@
     // Checksum 0x152fdc19, Offset: 0x1c18
     // Size: 0x2c
     function function_d1b632ff(params) {
-        return flagsys::get("<unknown string>");
+        return flagsys::get("<dev string:x342>");
     }
 
     // Namespace rat/rat_shared
@@ -514,8 +513,8 @@
     // Checksum 0xffb1395d, Offset: 0x1c50
     // Size: 0x5e
     function rscsimulatescripterror(params) {
-        if (params.errorlevel == "<unknown string>") {
-            assertmsg("<unknown string>");
+        if (params.errorlevel == "<dev string:x367>") {
+            assertmsg("<dev string:x36f>");
             return;
         }
         thisdoesntexist.orthis = 0;
@@ -526,12 +525,12 @@
     // Checksum 0x55ce7749, Offset: 0x1cb8
     // Size: 0x154
     function rscrecteleport(params) {
-        println("<unknown string>");
+        println("<dev string:x38a>");
         player = [[ level.rat.common.gethostplayer ]]();
         pos = player getorigin();
         angles = player getplayerangles();
-        cmd = "<unknown string>" + pos[0] + "<unknown string>" + pos[1] + "<unknown string>" + pos[2] + "<unknown string>" + angles[0] + "<unknown string>" + angles[1] + "<unknown string>" + angles[2];
-        ratrecordmessage(0, "<unknown string>", cmd);
+        cmd = "<dev string:x3ae>" + pos[0] + "<dev string:x3c1>" + pos[1] + "<dev string:x3c7>" + pos[2] + "<dev string:x3cd>" + angles[0] + "<dev string:x3d4>" + angles[1] + "<dev string:x3db>" + angles[2];
+        ratrecordmessage(0, "<dev string:x3e2>", cmd);
         setdvar(#"rat_record_teleport_request", 0);
     }
 
@@ -547,7 +546,7 @@
             }
         }
         if (num > 0) {
-            adddebugcommand("<unknown string>" + num);
+            adddebugcommand("<dev string:x3f1>" + num);
         }
     }
 
@@ -563,7 +562,7 @@
             }
         }
         if (num > 0) {
-            adddebugcommand("<unknown string>" + num);
+            adddebugcommand("<dev string:x410>" + num);
         }
     }
 
@@ -583,7 +582,7 @@
     function function_9efe300c(params) {
         player = getplayer(params);
         spawn = 0;
-        team = "<unknown string>";
+        team = "<dev string:x42c>";
         if (isdefined(params) && isdefined(params.spawn)) {
             if (isdefined(params.spawn)) {
                 spawn = int(params.spawn);

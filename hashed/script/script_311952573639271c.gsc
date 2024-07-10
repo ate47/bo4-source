@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_zodt8_pap_quest.gsc;
 #using scripts\zm\zm_zodt8.gsc;
 #using scripts\zm\powerup\zm_powerup_fire_sale.gsc;
@@ -170,8 +169,8 @@ function function_b156b71() {
     level thread function_9e34f29();
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("zone_forecastle_upper");
-            println("zone_forecastle_upper");
+            iprintlnbold("<dev string:x38>");
+            println("<dev string:x38>");
         }
     #/
 }
@@ -546,8 +545,8 @@ function function_7071d9b0() {
     trigger delete();
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("<unknown string>");
-            println("<unknown string>");
+            iprintlnbold("<dev string:x4b>");
+            println("<dev string:x4b>");
         }
     #/
     level thread function_9be06570();
@@ -644,8 +643,8 @@ function function_9f2f0210(var_a3b04877) {
     level.var_33918b88 = undefined;
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("<unknown string>");
-            println("<unknown string>");
+            iprintlnbold("<dev string:x64>");
+            println("<dev string:x64>");
         }
     #/
     level waittill(#"end_of_round", #"start_of_round");
@@ -674,8 +673,8 @@ function function_cbee939b(var_a9e11cb7) {
     callback::on_connect(&function_76351c42);
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("<unknown string>");
-            println("<unknown string>");
+            iprintlnbold("<dev string:x85>");
+            println("<dev string:x85>");
         }
     #/
     wait(5);
@@ -770,8 +769,8 @@ function fishy_offering_step_2_setup(var_5ea5c94d) {
     playsoundatposition(#"hash_42f8105535463377", s_trigger.origin);
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("<unknown string>");
-            println("<unknown string>");
+            iprintlnbold("<dev string:x9d>");
+            println("<dev string:x9d>");
         }
     #/
     showmiscmodels("dead_offering");
@@ -1399,8 +1398,8 @@ function function_75bdcb53(mdl_car) {
     while (n_start_round + 3 > level.round_number && !level flag::get(#"hash_3799c8bb28e2f2f")) {
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xb1>");
+                println("<dev string:xb1>");
             }
         #/
         mdl_car playsound(#"hash_785ac4e15d8585c4");
@@ -1420,8 +1419,8 @@ function function_75bdcb53(mdl_car) {
     veh_car delete();
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("<unknown string>");
-            println("<unknown string>");
+            iprintlnbold("<dev string:xc9>");
+            println("<dev string:xc9>");
         }
     #/
 }
@@ -1783,8 +1782,8 @@ function init_flare(v_origin, v_angles, str_color) {
             player.mdl_flare = mdl_flare;
         }
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(str_color + "<unknown string>");
-            println(str_color + "<unknown string>");
+            iprintlnbold(str_color + "<dev string:xd5>");
+            println(str_color + "<dev string:xd5>");
         }
     }
 
@@ -1825,20 +1824,20 @@ function function_e01b477f(var_2cb1cbce, var_46a3f206) {
         switch (self.str_color) {
         case #"red":
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xf3>");
+                println("<dev string:xf3>");
             }
             break;
         case #"green":
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x109>");
+                println("<dev string:x109>");
             }
             break;
         case #"blue":
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x121>");
+                println("<dev string:x121>");
             }
             break;
         }
@@ -2119,7 +2118,7 @@ function vomit_blade_cleanup(var_a276c861, var_19e802fa) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             level flag::set(#"hash_525ff2b2a2f7d97a");
-            level flag::wait_till("<unknown string>");
+            level flag::wait_till("<dev string:x138>");
             foreach (player in util::get_active_players()) {
                 player thread function_2c343fd8();
             }
@@ -2198,8 +2197,8 @@ function function_cc7214a9(params) {
                     if (player.var_f8b767c9 >= 9 && !player hasweapon(getweapon(#"hash_6a9069969e6fa287"))) {
                         /#
                             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                                iprintlnbold("<unknown string>");
-                                println("<unknown string>");
+                                iprintlnbold("<dev string:x14e>");
+                                println("<dev string:x14e>");
                             }
                         #/
                         player.var_f8b767c9 = undefined;
@@ -2466,7 +2465,7 @@ function function_ff05eb5() {
             playsoundatposition(#"hash_4b939760d149465a", self.origin);
             if (isdefined(self.var_fd9d797f) && self.var_fd9d797f) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x166>");
                 #/
                 playsoundatposition(#"hash_5ef8e030b84ace08", self.origin);
                 level thread scene::play(str_bundle, "sample");
@@ -2481,7 +2480,7 @@ function function_ff05eb5() {
                 continue;
             }
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x178>");
             #/
             playsoundatposition(#"hash_165a8e8934d64af5", self.origin);
             level thread scene::play(str_bundle, "fail");

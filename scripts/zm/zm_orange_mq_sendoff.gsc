@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange.gsc;
 #using scripts\zm\zm_orange_mq_hell.gsc;
 #using scripts\zm\zm_orange_util.gsc;
@@ -76,7 +75,7 @@ function function_ae270d9e(var_5ea5c94d, ended_early) {
 // Size: 0x4c
 function function_b5f900c3() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     level notify(#"sendoff_started");
     level thread sun_deck_watcher();
@@ -227,7 +226,7 @@ function pickup_device(e_item, e_player) {
     e_player playrumbleonentity("zm_mansion_atlas_interact_rumble");
     level flag::set(#"hash_2c3411c8b8b421d8");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x6b>");
     #/
 }
 

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\util.gsc;
 #using scripts\zm_common\gametypes\spawnlogic.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -22,7 +21,7 @@ function __init__() {
     level.spawnprotectiontime = getgametypesetting(#"spawnprotectiontime");
     level.spawnprotectiontimems = int((isdefined(level.spawnprotectiontime) ? level.spawnprotectiontime : 0) * 1000);
     /#
-        setdvar(#"scr_debug_spawn_player", "<unknown string>");
+        setdvar(#"scr_debug_spawn_player", "<dev string:x38>");
         setdvar(#"scr_debug_render_spawn_data", 1);
         setdvar(#"scr_debug_render_snapshotmode", 0);
         setdvar(#"scr_spawn_point_test_mode", 0);
@@ -376,7 +375,7 @@ function create_map_placed_influencer(influencer_entity) {
         team_mask = util::getteammask(influencer_entity.script_team);
         level create_enemy_influencer(influencer_entity.script_noteworty, influencer_entity.origin, team_mask);
     } else {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x3b>");
     }
     return influencer_id;
 }

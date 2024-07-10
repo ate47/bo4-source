@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_damage.gsc;
 #using scripts\mp_common\armor.gsc;
 #using scripts\abilities\gadgets\gadget_concertina_wire.gsc;
@@ -1390,7 +1389,7 @@ function private register_state(name, enter, update, exit, target_update, debug_
 // Checksum 0x36b33c07, Offset: 0x6790
 // Size: 0x16c
 function private set_state(entity, state_name) {
-    assert(isdefined(level.zombie_states[state_name]), "_knockdown_type" + (ishash(state_name) ? function_9e72a96(state_name) : state_name));
+    assert(isdefined(level.zombie_states[state_name]), "<dev string:x38>" + (ishash(state_name) ? function_9e72a96(state_name) : state_name));
     state = level.zombie_states[state_name];
     if (isdefined(entity.current_state)) {
         if (isdefined(entity.current_state.exit_func)) {
@@ -1767,7 +1766,7 @@ function function_54fc0f3e() {
         /#
             if (isdefined(self.current_state) && getdvarint(#"hash_7c11c6eba2f88f9f", 0)) {
                 if (getdvarint(#"recorder_enablerec", 0)) {
-                    record3dtext(function_9e72a96(self.current_state.name), self.origin, (0, 1, 1), "<unknown string>", self);
+                    record3dtext(function_9e72a96(self.current_state.name), self.origin, (0, 1, 1), "<dev string:x71>", self);
                 } else {
                     print3d(self.origin, function_9e72a96(self.current_state.name), (0, 1, 1), 1, 1);
                 }
@@ -3622,8 +3621,8 @@ function function_f41ded83(vehicle) {
     function private function_ef4bd1a6() {
         util::waittill_can_add_debug_command();
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x7a>");
+        adddebugcommand("<dev string:x97>" + mapname + "<dev string:xa7>");
     }
 
 #/

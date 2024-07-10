@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\core_common\influencers_shared.gsc;
 #using scripts\weapons\weapons.gsc;
@@ -71,7 +70,7 @@ function function_bba54dca() {
 // Size: 0x274
 function function_1cdbb1e5(owner, weapon) {
     self endon(#"hacked", #"molotov_deleted");
-    assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
+    assert(isdefined(weapon.customsettings), "<dev string:x38>" + weapon.name);
     self thread function_bba54dca();
     team = self.team;
     var_3e7a440 = getscriptbundle(weapon.customsettings);
@@ -498,7 +497,7 @@ function damageeffectarea(owner, position, killcament, normal, weapon, customset
         var_289a74bc = spawn("trigger_radius", var_21f4217c, 0, 12, var_cbaaea69);
         /#
             if (getdvarint(#"scr_draw_triggers", 0)) {
-                level thread util::drawcylinder(var_21f4217c, 12, var_cbaaea69, undefined, "<unknown string>", (1, 0, 0), 0.9);
+                level thread util::drawcylinder(var_21f4217c, 12, var_cbaaea69, undefined, "<dev string:x74>", (1, 0, 0), 0.9);
             }
         #/
     }
@@ -512,7 +511,7 @@ function damageeffectarea(owner, position, killcament, normal, weapon, customset
     }
     /#
         if (getdvarint(#"scr_draw_triggers", 0)) {
-            level thread util::drawcylinder(trigger_radius_position, radius, trigger_radius_height, undefined, "<unknown string>");
+            level thread util::drawcylinder(trigger_radius_position, radius, trigger_radius_height, undefined, "<dev string:x74>");
         }
     #/
     self.var_ebf0b1c9 = [];

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
 #using scripts\core_common\popups_shared.gsc;
@@ -112,7 +111,7 @@ function get_hacked_timeout_duration_ms() {
     killstreak = self;
     timeout = killstreak killstreak_bundles::get_hack_timeout();
     if (!isdefined(timeout) || timeout <= 0) {
-        assertmsg("<unknown string>" + killstreak.killstreaktype + "<unknown string>");
+        assertmsg("<dev string:x38>" + killstreak.killstreaktype + "<dev string:x62>");
         return;
     }
     return int(timeout * 1000);
@@ -148,7 +147,7 @@ function _update_health(hacker) {
         return;
     }
     /#
-        hacker iprintlnbold("<unknown string>");
+        hacker iprintlnbold("<dev string:x9b>");
     #/
 }
 
@@ -171,12 +170,12 @@ function _update_health(hacker) {
         killstreakentity = self;
         killstreakentity notify(#"killstreak_switch_team_singleton");
         killstreakentity endon(#"killstreak_switch_team_singleton", #"death");
-        setdvar(#"scr_killstreak_switch_team", "<unknown string>");
+        setdvar(#"scr_killstreak_switch_team", "<dev string:xc4>");
         while (true) {
             wait(0.5);
             devgui_int = getdvarint(#"scr_killstreak_switch_team", 0);
             if (devgui_int != 0) {
-                team = "<unknown string>";
+                team = "<dev string:xc7>";
                 if (isdefined(level.getenemyteam) && isdefined(owner) && isdefined(owner.team)) {
                     team = [[ level.getenemyteam ]](owner.team);
                 }
@@ -184,13 +183,13 @@ function _update_health(hacker) {
                     player = [[ level.devongetormakebot ]](team);
                 }
                 if (!isdefined(player)) {
-                    println("<unknown string>");
+                    println("<dev string:xd4>");
                     wait(1);
                     continue;
                 }
                 if (!isdefined(killstreakentity.killstreak_hackedcallback)) {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:xf0>");
                     #/
                     return;
                 }

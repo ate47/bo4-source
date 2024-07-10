@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weapons.gsc;
 #using scripts\core_common\util_shared.gsc;
 
@@ -17,9 +16,9 @@
                 return;
             }
             for (i = 1; i < vararg.size; i++) {
-                pathstr = pathstr + "<unknown string>" + (ishash(vararg[i]) ? function_9e72a96(vararg[i]) : vararg[i]);
+                pathstr = pathstr + "<dev string:x38>" + (ishash(vararg[i]) ? function_9e72a96(vararg[i]) : vararg[i]);
             }
-            println("<unknown string>" + pathstr);
+            println("<dev string:x3c>" + pathstr);
         }
     }
 
@@ -31,7 +30,7 @@
 // Size: 0x144
 function function_f94325d3() {
     player = self;
-    assert(isplayer(player), "<unknown string>");
+    assert(isplayer(player), "<dev string:x59>");
     if (isbot(player) || isdefined(level.disablestattracking) && level.disablestattracking) {
         return false;
     }
@@ -68,7 +67,7 @@ function get_stat(...) {
     }
     result = 0;
     if (isdefined(self)) {
-        assert(isplayer(self), "<unknown string>");
+        assert(isplayer(self), "<dev string:x59>");
         result = self readstat(vararg);
         /#
             function_d92cb558(result, vararg);
@@ -88,7 +87,7 @@ function function_6d50f14b(...) {
     }
     result = 0;
     if (isdefined(self)) {
-        assert(isplayer(self), "<unknown string>");
+        assert(isplayer(self), "<dev string:x84>");
         result = self function_c3462d90(vararg);
         /#
             function_d92cb558(result, vararg);
@@ -108,7 +107,7 @@ function function_ff8f4f17(...) {
     }
     result = 0;
     if (isdefined(self)) {
-        assert(isplayer(self), "<unknown string>");
+        assert(isplayer(self), "<dev string:xb7>");
         result = self function_24c32cb1(vararg);
         /#
             function_d92cb558(result, vararg);
@@ -131,7 +130,7 @@ function set_stat(...) {
     }
     result = 0;
     if (isdefined(self)) {
-        assert(isplayer(self), "<unknown string>");
+        assert(isplayer(self), "<dev string:xec>");
         value = vararg[vararg.size - 1];
         arrayremoveindex(vararg, vararg.size - 1);
         result = self writestat(vararg, value);
@@ -155,7 +154,7 @@ function inc_stat(...) {
         return;
     }
     player = self;
-    assert(isplayer(player), "<unknown string>");
+    assert(isplayer(player), "<dev string:xec>");
     if (!isdefined(player) || !isplayer(player)) {
         return;
     }

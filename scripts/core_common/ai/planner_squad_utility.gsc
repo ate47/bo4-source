@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\struct.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
@@ -215,15 +214,15 @@ function private _debugadjustedpath(params) {
             end = params.adjustedpath[index];
             center = start + (end - start) * 0.5;
             /#
-                recordline(start, end, (1, 0.5, 0), "<unknown string>");
-                recordcircle(center, function_48bd5e74(params.bots), (1, 0, 0), "<unknown string>");
+                recordline(start, end, (1, 0.5, 0), "<dev string:x38>");
+                recordcircle(center, function_48bd5e74(params.bots), (1, 0, 0), "<dev string:x38>");
             #/
             if (isdefined(bot)) {
                 offset = 10;
                 pointdanger = _evaluatepointdanger(bot, center, innerradius, outerradius);
                 /#
-                    record3dtext("<unknown string>" + pointdanger.inner, center, (1, 0, 0), "<unknown string>");
-                    record3dtext("<unknown string>" + pointdanger.outer, center + (0, 0, offset), (1, 0.5, 0), "<unknown string>");
+                    record3dtext("<dev string:x45>" + pointdanger.inner, center, (1, 0, 0), "<dev string:x38>");
+                    record3dtext("<dev string:x4e>" + pointdanger.outer, center + (0, 0, offset), (1, 0.5, 0), "<dev string:x38>");
                 #/
             }
         }
@@ -951,7 +950,7 @@ function private strategyhasforcegoal(planner, constants) {
 // Checksum 0x1f504f09, Offset: 0x4710
 // Size: 0xf6
 function private function_790fb743(planner, constants) {
-    assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<dev string:x57>" + "<dev string:x65>" + "<dev string:xa1>");
     attribute = planner::getblackboardattribute(planner, constants[#"key"]);
     if (isdefined(attribute) && isarray(attribute)) {
         return (attribute.size > 0);
@@ -964,7 +963,7 @@ function private function_790fb743(planner, constants) {
 // Checksum 0x38de5e8b, Offset: 0x4810
 // Size: 0x25a
 function private function_f6ec02a4(planner, constants) {
-    assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isfloat(constants[#"percent"]), "<dev string:x57>" + "<dev string:xc7>" + "<dev string:xfd>");
     foreach (botinfo in planner::getblackboardattribute(planner, "doppelbots")) {
         bot = botinfo[#"__unsafe__"][#"bot"];
         if (!strategiccommandutility::isvalidbot(bot)) {
@@ -993,7 +992,7 @@ function private function_f6ec02a4(planner, constants) {
 // Checksum 0xca039b73, Offset: 0x4a78
 // Size: 0x254
 function private strategyhasbelowxammounsafe(planner, constants) {
-    assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isfloat(constants[#"percent"]), "<dev string:x57>" + "<dev string:x127>" + "<dev string:xfd>");
     foreach (botinfo in planner::getblackboardattribute(planner, "doppelbots")) {
         bot = botinfo[#"__unsafe__"][#"bot"];
         if (!strategiccommandutility::isvalidbot(bot)) {
@@ -1128,7 +1127,7 @@ function private strategyrushammocacheinit(planner, params) {
 // Checksum 0xe412cea3, Offset: 0x5348
 // Size: 0x1f8
 function private function_a0f209b7(planner, constants) {
-    assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isfloat(constants[#"percent"]), "<dev string:x57>" + "<dev string:x15a>" + "<dev string:xfd>");
     foreach (botinfo in planner::getblackboardattribute(planner, "doppelbots")) {
         bot = botinfo[#"__unsafe__"][#"bot"];
         if (!strategiccommandutility::isvalidbot(bot)) {
@@ -1254,7 +1253,7 @@ function private function_4c91e90d(planner, params) {
 // Checksum 0x14adcebd, Offset: 0x5b88
 // Size: 0x51e
 function private strategyrushammocacheparam(planner, constants) {
-    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<dev string:x57>" + "<dev string:x194>" + "<dev string:x1c6>");
     params = spawnstruct();
     params.bots = [];
     botpositions = [];

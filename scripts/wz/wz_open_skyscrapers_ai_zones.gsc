@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ai_zonemgr.gsc;
 
 #namespace wz_open_skyscrapers_ai_zones;

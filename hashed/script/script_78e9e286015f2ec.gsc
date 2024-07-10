@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_util.gsc;
 #using script_2f877a0752174fc1;
 #using script_2da1a66a13e2bbe1;
@@ -189,7 +188,7 @@ function function_f359c8a0(s_key, e_player) {
     case #"number":
         if (level.var_f13364b4.var_b1e1ac14 >= 4) {
             /#
-                iprintlnbold("mesh_code_display_06");
+                iprintlnbold("<dev string:x38>");
             #/
             playsoundatposition("zmb_comp_keypad_action_full", self.origin);
             break;
@@ -198,7 +197,7 @@ function function_f359c8a0(s_key, e_player) {
         level function_edbb34e5(level.var_f13364b4.var_b1e1ac14, s_key.script_int);
         level.var_f13364b4.var_b1e1ac14++;
         /#
-            iprintlnbold("<unknown string>" + s_key.script_string + "<unknown string>" + s_key.script_int);
+            iprintlnbold("<dev string:x66>" + s_key.script_string + "<dev string:x71>" + s_key.script_int);
         #/
         playsoundatposition("zmb_comp_keypad_press_" + s_key.script_int, self.origin);
         function_52838f02("both", 1);
@@ -210,13 +209,13 @@ function function_f359c8a0(s_key, e_player) {
     case #"enter":
         if (level.var_f13364b4.var_b1e1ac14 < 4) {
             /#
-                iprintlnbold("<unknown string>" + level.var_f13364b4.var_d7813dfd[0] + level.var_f13364b4.var_d7813dfd[1] + level.var_f13364b4.var_d7813dfd[2] + level.var_f13364b4.var_d7813dfd[3]);
+                iprintlnbold("<dev string:x75>" + level.var_f13364b4.var_d7813dfd[0] + level.var_f13364b4.var_d7813dfd[1] + level.var_f13364b4.var_d7813dfd[2] + level.var_f13364b4.var_d7813dfd[3]);
             #/
             playsoundatposition("zmb_comp_keypad_action_full", self.origin);
             break;
         }
         /#
-            iprintlnbold("<unknown string>" + level.var_f13364b4.var_d7813dfd[0] + level.var_f13364b4.var_d7813dfd[1] + level.var_f13364b4.var_d7813dfd[2] + level.var_f13364b4.var_d7813dfd[3]);
+            iprintlnbold("<dev string:x9d>" + level.var_f13364b4.var_d7813dfd[0] + level.var_f13364b4.var_d7813dfd[1] + level.var_f13364b4.var_d7813dfd[2] + level.var_f13364b4.var_d7813dfd[3]);
         #/
         n_code = function_352f47ae(level.var_f13364b4.var_d7813dfd);
         function_cd7e0989(n_code);
@@ -225,13 +224,13 @@ function function_f359c8a0(s_key, e_player) {
     case #"clear":
         level thread reset_computer();
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xad>");
         #/
         playsoundatposition("zmb_comp_keypad_action_clear", self.origin);
         break;
     default:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xbc>");
         #/
         break;
     }
@@ -269,7 +268,7 @@ function function_4696e086(var_5c0c59ca = undefined, var_64d0790a = undefined) {
     while (isdefined(level.var_f13364b4.a_n_codes[n_random_int])) {
         n_random_int = randomintrange(0, 10000);
         /#
-            iprintlnbold("<unknown string>" + n_random_int + "<unknown string>");
+            iprintlnbold("<dev string:xee>" + n_random_int + "<dev string:x109>");
         #/
     }
     if (isdefined(var_5c0c59ca) && isdefined(var_64d0790a)) {
@@ -283,7 +282,7 @@ function function_4696e086(var_5c0c59ca = undefined, var_64d0790a = undefined) {
 // Checksum 0x8fcabe83, Offset: 0x26d0
 // Size: 0x72
 function function_352f47ae(var_2ac83b81) {
-    assert(isdefined(var_2ac83b81[3]), "<unknown string>");
+    assert(isdefined(var_2ac83b81[3]), "<dev string:x146>");
     return var_2ac83b81[0] * 1000 + var_2ac83b81[1] * 100 + var_2ac83b81[2] * 10 + var_2ac83b81[3];
 }
 
@@ -294,7 +293,7 @@ function function_352f47ae(var_2ac83b81) {
 function function_cd7e0989(n_code) {
     if (!isdefined(level.var_f13364b4.a_n_codes[n_code])) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x19e>");
         #/
         playsoundatposition("zmb_comp_keypad_action_fail", self.origin);
         level thread zm_white_util::function_ec34b5ee(#"hash_74933b1a2d246442");
@@ -302,7 +301,7 @@ function function_cd7e0989(n_code) {
     }
     if (level.var_f13364b4.var_cf1f0c9 && !array::contains(level.var_d7e5aaac, n_code)) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x1b2>");
         #/
         playsoundatposition("zmb_comp_keypad_action_fail", self.origin);
         level thread zm_white_util::function_ec34b5ee(#"hash_74933b1a2d246442");
@@ -310,7 +309,7 @@ function function_cd7e0989(n_code) {
     }
     if (level.var_f13364b4.a_n_codes[n_code].var_544c05c6 <= 0) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x1de>");
         #/
         playsoundatposition("zmb_comp_keypad_action_fail", self.origin);
         level thread zm_white_util::function_ec34b5ee(#"hash_74933b1a2d246442");
@@ -318,7 +317,7 @@ function function_cd7e0989(n_code) {
     }
     if (isdefined(level.var_f13364b4.a_n_codes[n_code].var_d9d9d617)) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x1ff>");
         #/
         level thread [[ level.var_f13364b4.a_n_codes[n_code].var_d9d9d617 ]]();
         level.var_f13364b4.a_n_codes[n_code].var_544c05c6--;
@@ -604,7 +603,7 @@ function function_c36b1f94() {
 // Size: 0x24
 function function_27d39a4f() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x20d>");
     #/
 }
 
@@ -655,7 +654,7 @@ function function_6b002f3c() {
 function function_c9dcb3aa() {
     level flag::set(#"hash_3ee874ebee843004");
     /#
-        iprintlnbold("<unknown string>" + level.var_f13364b4.var_a7450be4);
+        iprintlnbold("<dev string:x21b>" + level.var_f13364b4.var_a7450be4);
     #/
 }
 
@@ -667,7 +666,7 @@ function function_69dd6c5b() {
     if (level flag::get(#"hash_3ee874ebee843004")) {
         level flag::set(#"hash_315d0bf1d50724f0");
         /#
-            iprintlnbold("<unknown string>" + level.var_f13364b4.var_72c3e48c);
+            iprintlnbold("<dev string:x242>" + level.var_f13364b4.var_72c3e48c);
         #/
         return;
     }
@@ -683,7 +682,7 @@ function function_97ab5da4() {
     if (level flag::get_all(a_flags)) {
         level flag::set(#"hash_359cbec050523f4");
         /#
-            iprintlnbold("<unknown string>" + level.var_f13364b4.var_98e79e76);
+            iprintlnbold("<dev string:x269>" + level.var_f13364b4.var_98e79e76);
         #/
         return;
     }
@@ -825,7 +824,7 @@ function function_52838f02(str_display = "both", b_show = 1) {
         break;
     default:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x291>");
         #/
         break;
     }

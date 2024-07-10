@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -195,11 +194,11 @@ function private function_c41e67c() {
     // Checksum 0xac4da66c, Offset: 0x1940
     // Size: 0x8c
     function private function_22006009(cmd) {
-        zm_devgui::function_c7dd7a17("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
+        adddebugcommand("<dev string:x43>");
+        adddebugcommand("<dev string:x6e>");
+        adddebugcommand("<dev string:xa0>");
+        adddebugcommand("<dev string:xe6>");
     }
 
 #/
@@ -237,7 +236,7 @@ function private function_d60f39c2(entity, player, duration, color) {
                     line(start, end, color);
                     sphere(end, 2, color, 1, 0, 4, 1);
                     distance = distance(start, end);
-                    print3d(end + (0, 0, 30), "<unknown string>" + distance + retreat + var_1fee3f71, color, 1, 1, 1);
+                    print3d(end + (0, 0, 30), "<dev string:x135>" + distance + retreat + var_1fee3f71, color, 1, 1, 1);
                 #/
             }
             if (var_b90a4dc9 == 4 && isdefined(level.avogadro_outro_location)) {

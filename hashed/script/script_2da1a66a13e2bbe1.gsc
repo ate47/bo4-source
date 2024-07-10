@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_util.gsc;
 #using scripts\zm\zm_white_portals.gsc;
 #using scripts\zm\zm_white_insanity_mode.gsc;
@@ -56,7 +55,7 @@ function init_clientfields() {
 // Size: 0x174
 function fall() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     n_end_time = gettime() + 300000;
@@ -70,7 +69,7 @@ function fall() {
         }
     }
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x5c>");
     #/
 }
 
@@ -80,14 +79,14 @@ function fall() {
 // Size: 0x94
 function grav() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x74>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     zm_bgb_newtonian_negation::function_8622e664(1);
     wait(60);
     zm_bgb_newtonian_negation::function_8622e664(0);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x9e>");
     #/
 }
 
@@ -100,14 +99,14 @@ function guns() {
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     if (isdefined(level.pack_a_punch) && level flag::get("pap_power_ready")) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xba>");
         #/
         level.pack_a_punch.trigger_stubs[0].pap_machine flag::wait_till("pap_waiting_for_user");
     }
     level flag::clear("pap_power_ready");
     level exploder::stop_exploder("fxexp_script_pap_lgt");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xea>");
     #/
     level.var_7629d4e2 = 1;
     a_e_players = getplayers();
@@ -126,7 +125,7 @@ function guns() {
         a_e_players = getplayers();
         foreach (e_player in a_e_players) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x116>");
             #/
             if (isdefined(e_player.var_3be6d813) && e_player.var_3be6d813 || e_player laststand::player_is_in_laststand() || e_player.sessionstate == "spectator" || e_player.var_479965f7 === 1 || e_player.var_d6229296 === 1 || e_player zm_laststand::is_reviving_any() || self.reviving_a_player === 1) {
                 continue;
@@ -170,7 +169,7 @@ function guns() {
         level exploder::exploder("fxexp_script_pap_lgt");
     }
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x124>");
     #/
 }
 
@@ -240,7 +239,7 @@ function function_a9e83aa6() {
 // Size: 0x218
 function time() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x15f>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     a_e_players = getplayers();
@@ -252,7 +251,7 @@ function time() {
     }
     wait(30);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x182>");
     #/
     foreach (e_zombie in a_e_zombies) {
         if (!isdefined(e_zombie) || !isalive(e_zombie)) {
@@ -270,7 +269,7 @@ function time() {
 // Size: 0x9a
 function brew() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x198>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     level.var_1f3f3e7b = &function_28e2ddd5;
@@ -286,7 +285,7 @@ function brew() {
 // Size: 0x9a
 function cola() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x1be>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     level.var_1f3f3e7b = &function_28e2ddd5;
@@ -302,7 +301,7 @@ function cola() {
 // Size: 0x9a
 function soda() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x1e4>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     level.var_1f3f3e7b = &function_28e2ddd5;
@@ -317,7 +316,7 @@ function soda() {
 // Checksum 0xccbd3fba, Offset: 0x1408
 // Size: 0x92
 function function_28e2ddd5(n_perk_cost, var_c6ce6ade) {
-    assert(isdefined(level.var_1b64d570), "<unknown string>");
+    assert(isdefined(level.var_1b64d570), "<dev string:x20a>");
     if (var_c6ce6ade == level.var_1b64d570) {
         n_perk_cost *= 0.5;
     }
@@ -330,7 +329,7 @@ function function_28e2ddd5(n_perk_cost, var_c6ce6ade) {
 // Size: 0x1c8
 function noob() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x269>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     level thread function_a3bdad03();
@@ -344,7 +343,7 @@ function noob() {
         wait(1);
     }
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x281>");
     #/
     a_e_zombies = getaiarray();
     foreach (e_zombie in a_e_zombies) {
@@ -368,7 +367,7 @@ function function_a3bdad03() {
 // Size: 0xe0
 function bank() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x295>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     wait(2);
@@ -384,7 +383,7 @@ function bank() {
 // Size: 0x460
 function door() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x2b9>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     a_e_zombie_doors = getentarray("zombie_door", "targetname");
@@ -442,7 +441,7 @@ function door() {
 // Size: 0x128
 function warp() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x2df>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     wait(1);
@@ -490,7 +489,7 @@ function shed() {
             level thread zm_white_insanity_mode::function_4bcfb4d9();
         }
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x30f>");
         #/
         return;
     }
@@ -501,12 +500,12 @@ function shed() {
                 a_e_players = getplayers();
                 var_6620353d notify(#"trigger", {#activator:a_e_players[0], #is_forced:1});
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x32c>");
                 #/
                 break;
             }
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x347>");
             #/
         }
     }
@@ -518,7 +517,7 @@ function shed() {
 // Size: 0x94
 function nuke() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x391>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     var_68b709a = struct::get("computer_system_powerup_drop");
@@ -533,7 +532,7 @@ function nuke() {
 // Size: 0xb8
 function hero() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x3ac>");
     #/
     a_e_players = getplayers();
     foreach (e_player in a_e_players) {
@@ -547,14 +546,14 @@ function hero() {
 // Size: 0xac
 function puke() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x3d8>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     callback::on_ai_damage(&function_80d5023d);
     wait(300);
     callback::remove_on_ai_damage(&function_80d5023d);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x419>");
     #/
 }
 
@@ -594,7 +593,7 @@ function function_82457e35(params) {
 // Size: 0xcc
 function club() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x432>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     exploder::exploder("fxexp_disco_lgt");
@@ -602,7 +601,7 @@ function club() {
     wait(253);
     exploder::stop_exploder("fxexp_disco_lgt");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x464>");
     #/
 }
 
@@ -612,14 +611,14 @@ function club() {
 // Size: 0xbc
 function duck() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x4b0>");
     #/
     level thread zm_white_util::function_ec34b5ee(#"hash_2c4fa652fb89d231");
     callback::on_ai_damage(&function_369efa3e);
     wait(300);
     callback::remove_callback(#"on_ai_damage", &function_369efa3e);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x4f6>");
     #/
 }
 

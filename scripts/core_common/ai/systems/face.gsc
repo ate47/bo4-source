@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\math_shared.gsc;
 
 #namespace face;
@@ -30,7 +29,7 @@ function saygenericdialogue(typestring) {
         importance = 0.4;
         break;
     default:
-        println("<unknown string>" + typestring);
+        println("<dev string:x38>" + typestring);
         importance = 0.3;
         break;
     }
@@ -46,7 +45,7 @@ function saygenericdialoguewithimportance(typestring, importance) {
     if (isdefined(self.dds_characterid)) {
         soundalias += self.dds_characterid;
     } else {
-        println("<unknown string>");
+        println("<dev string:x5d>");
         return;
     }
     soundalias += "_" + typestring;
@@ -131,13 +130,13 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
                 if (self.a.facialsoundalias == str_script_alias) {
                     return;
                 }
-                println("<unknown string>" + self.a.facialsoundalias + "<unknown string>" + str_script_alias);
+                println("<dev string:x87>" + self.a.facialsoundalias + "<dev string:xa2>" + str_script_alias);
                 while (self.istalking) {
                     self waittill(#"done speaking");
                 }
             }
         } else {
-            println("<unknown string>" + self.a.facialsoundalias + "<unknown string>" + str_script_alias);
+            println("<dev string:xae>" + self.a.facialsoundalias + "<dev string:xa2>" + str_script_alias);
             self stopsound(self.a.facialsoundalias);
             self notify(#"cancel speaking");
             while (self.istalking) {
@@ -161,7 +160,7 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
     }
     /#
         if (level.numberofimportantpeopletalking > 1) {
-            println("<unknown string>" + str_script_alias);
+            println("<dev string:xcd>" + str_script_alias);
         }
     #/
     uniquenotify = notifystring + " " + level.talknotifyseed;
@@ -183,7 +182,7 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
             }
         } else {
             /#
-                println("<unknown string>" + str_script_alias + "<unknown string>");
+                println("<dev string:x10e>" + str_script_alias + "<dev string:x12c>");
                 self thread _missing_dialog(str_script_alias, str_vox_file, uniquenotify);
             #/
         }

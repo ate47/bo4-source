@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -130,36 +129,36 @@ function private _calculatepathtopoints(entity, points) {
         if (isdefined(vehicle)) {
             occupant = vehicle getseatoccupant(0);
             if (isplayer(occupant) && !isbot(occupant)) {
-                return "<unknown string>";
+                return "<dev string:x38>";
             }
             if (isdefined(vehicle.attachedpath)) {
-                return "<unknown string>";
+                return "<dev string:x41>";
             }
             if (member bot_chain::function_58b429fb()) {
-                return "<unknown string>";
+                return "<dev string:x4a>";
             }
             if (isdefined(commander) && !commander.pause && function_4732f860(member)) {
-                return "<unknown string>";
+                return "<dev string:x56>";
             }
             if (vehicle.goalforced) {
-                return "<unknown string>";
+                return "<dev string:x62>";
             }
         } else {
-            autonomous = ai::getaiattribute(member, "<unknown string>") == "<unknown string>";
+            autonomous = ai::getaiattribute(member, "<dev string:x6d>") == "<dev string:x77>";
             if (function_778568e2(member) || function_e1b87d35(member)) {
-                return "<unknown string>";
+                return "<dev string:x84>";
             }
             if (autonomous) {
                 if (member bot_chain::function_58b429fb()) {
-                    return "<unknown string>";
+                    return "<dev string:x4a>";
                 }
-                return "<unknown string>";
+                return "<dev string:x62>";
             }
             if (isdefined(commander) && !commander.pause && isvalidbot(member)) {
-                return "<unknown string>";
+                return "<dev string:x56>";
             }
         }
-        return "<unknown string>";
+        return "<dev string:x8e>";
     }
 
     // Namespace strategiccommandutility/strategic_command
@@ -189,13 +188,13 @@ function private _calculatepathtopoints(entity, points) {
         switch (var_78caba27) {
         case #"bot chain":
             if (isdefined(member.bot.var_53ffa4c4.startstruct)) {
-                return ("<unknown string>" + member.bot.var_53ffa4c4.startstruct.targetname + "<unknown string>");
+                return ("<dev string:x98>" + member.bot.var_53ffa4c4.startstruct.targetname + "<dev string:xa2>");
             }
         case #"commander":
             foreach (squad in commander.squads) {
-                bots = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
+                bots = plannersquadutility::getblackboardattribute(squad, "<dev string:xa6>");
                 if (bots.size > 0 && bots[0][#"entnum"] == member getentitynumber()) {
-                    target = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
+                    target = plannersquadutility::getblackboardattribute(squad, "<dev string:xb3>");
                     if (isdefined(target)) {
                         bundle = target[#"__unsafe__"][#"bundle"];
                         missioncomponent = target[#"__unsafe__"][#"mission_component"];
@@ -207,7 +206,7 @@ function private _calculatepathtopoints(entity, points) {
                             return object.e_object.scriptbundlename;
                         }
                     }
-                    order = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
+                    order = plannersquadutility::getblackboardattribute(squad, "<dev string:xbc>");
                     return order;
                 }
             }
@@ -251,14 +250,14 @@ function private function_7c3d768e(var_1b2a0645, var_d695a79f, commander) {
         team = blackboard::getstructblackboardattribute(commander, #"team");
         paused = isdefined(commander.pause) && commander.pause;
         squadcount = commander.squads.size;
-        debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + function_9e72a96(team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
+        debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:xc4>" + function_9e72a96(team) + "<dev string:xa2>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
         var_1b2a0645 += var_6e868cb7;
         var_d695a79f += yspacing;
         var_1b2a0645 += 25;
-        debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + squadcount, !paused && squadcount > 0 || paused && squadcount == 0 ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+        debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:xd2>" + squadcount, !paused && squadcount > 0 || paused && squadcount == 0 ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
         var_1b2a0645 += var_6e868cb7;
         var_d695a79f += yspacing;
-        debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (paused ? "<unknown string>" : "<unknown string>"), paused ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+        debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:xdd>" + (paused ? "<dev string:xe8>" : "<dev string:xf1>"), paused ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
         var_1b2a0645 += var_6e868cb7;
         var_d695a79f += yspacing;
     #/
@@ -282,15 +281,15 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
         var_96e1d277 = 25;
         foreach (member in members) {
             yoffset = var_d695a79f;
-            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + member getentitynumber() + "<unknown string>" + member.name + "<unknown string>" + function_9e72a96(member.team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
+            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:xfb>" + member getentitynumber() + "<dev string:x100>" + member.name + "<dev string:x104>" + function_9e72a96(member.team) + "<dev string:xa2>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 += var_6e868cb7;
             var_d695a79f += yspacing;
             var_1b2a0645 += var_96e1d277;
             var_78caba27 = function_65b80a10(commander, member);
-            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member isplayinganimscripted() ? "<unknown string>" : "<unknown string>"), member isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x109>" + (member isplayinganimscripted() ? "<dev string:x11a>" : "<dev string:x11f>"), member isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 += var_6e868cb7;
             var_d695a79f += yspacing;
-            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
+            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x125>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 += var_6e868cb7;
             var_d695a79f += yspacing;
             var_52cace54 = function_741d9796(member, undefined, commander, var_78caba27);
@@ -301,13 +300,13 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
                 var_d695a79f += yspacing;
                 var_1b2a0645 -= var_96e1d277;
             }
-            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.ignoreme ? "<unknown string>" : "<unknown string>"), member.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x136>" + (member.ignoreme ? "<dev string:x11a>" : "<dev string:x11f>"), member.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 += var_6e868cb7;
             var_d695a79f += yspacing;
-            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.ignoreall ? "<unknown string>" : "<unknown string>"), member.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x143>" + (member.ignoreall ? "<dev string:x11a>" : "<dev string:x11f>"), member.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 += var_6e868cb7;
             var_d695a79f += yspacing;
-            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.takedamage ? "<unknown string>" : "<unknown string>"), member.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+            debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x151>" + (member.takedamage ? "<dev string:x11a>" : "<dev string:x11f>"), member.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 += var_6e868cb7;
             var_d695a79f += yspacing;
             newyoffset = var_d695a79f;
@@ -316,15 +315,15 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
                 seatnum = vehicle getoccupantseat(member);
                 var_d695a79f = yoffset;
                 var_1b2a0645 += var_4fe31551;
-                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + vehicle getentitynumber() + "<unknown string>" + vehicle.scriptvehicletype + "<unknown string>" + function_9e72a96(vehicle.team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
+                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:xfb>" + vehicle getentitynumber() + "<dev string:x100>" + vehicle.scriptvehicletype + "<dev string:x104>" + function_9e72a96(vehicle.team) + "<dev string:xa2>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 += var_6e868cb7;
                 var_d695a79f += yspacing;
                 var_1b2a0645 += var_96e1d277;
                 var_78caba27 = function_65b80a10(commander, member, vehicle);
-                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle isplayinganimscripted() ? "<unknown string>" : "<unknown string>"), vehicle isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x109>" + (vehicle isplayinganimscripted() ? "<dev string:x11a>" : "<dev string:x11f>"), vehicle isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 += var_6e868cb7;
                 var_d695a79f += yspacing;
-                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
+                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x125>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 += var_6e868cb7;
                 var_d695a79f += yspacing;
                 var_52cace54 = function_741d9796(member, vehicle, commander, var_78caba27);
@@ -335,13 +334,13 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
                     var_d695a79f += yspacing;
                     var_1b2a0645 -= var_96e1d277;
                 }
-                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.ignoreme ? "<unknown string>" : "<unknown string>"), vehicle.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x136>" + (vehicle.ignoreme ? "<dev string:x11a>" : "<dev string:x11f>"), vehicle.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 += var_6e868cb7;
                 var_d695a79f += yspacing;
-                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.ignoreall ? "<unknown string>" : "<unknown string>"), vehicle.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x143>" + (vehicle.ignoreall ? "<dev string:x11a>" : "<dev string:x11f>"), vehicle.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 += var_6e868cb7;
                 var_d695a79f += yspacing;
-                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.takedamage ? "<unknown string>" : "<unknown string>"), vehicle.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
+                debug2dtext((var_1b2a0645, var_d695a79f, 0), "<dev string:x151>" + (vehicle.takedamage ? "<dev string:x11a>" : "<dev string:x11f>"), vehicle.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 += var_6e868cb7;
                 var_d695a79f += yspacing;
                 var_d695a79f = newyoffset;
@@ -372,7 +371,7 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
             if (var_f3ac248f != 0) {
                 if (!debugmode) {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x160>");
                     #/
                 }
                 var_1b2a0645 = xoffset;
@@ -401,7 +400,7 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
             }
             if (debugmode) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x178>");
                 #/
             }
         }
@@ -467,58 +466,58 @@ function private _debuggameobjects() {
     // Size: 0x5dc
     function private function_31badd5d(missioncomponent, index) {
         if (!isdefined(index)) {
-            index = "<unknown string>";
+            index = "<dev string:x191>";
         }
         /#
             origin = missioncomponent.origin;
-            identifiertext = missioncomponent.scriptbundlename + "<unknown string>" + index + "<unknown string>";
-            origintext = "<unknown string>" + int(origin[0]) + "<unknown string>" + int(origin[1]) + "<unknown string>" + int(origin[2]) + "<unknown string>";
-            var_4fea471b = "<unknown string>" + missioncomponent.script_team + "<unknown string>";
-            var_fabc86d6 = "<unknown string>" + (isdefined(missioncomponent.var_3093fd62) ? "<unknown string>" : "<unknown string>");
-            var_f3fe7e2c = "<unknown string>" + (isdefined(missioncomponent.var_4702e184) ? missioncomponent.var_4702e184 : "<unknown string>") + "<unknown string>";
-            var_2aac6b87 = "<unknown string>" + (isdefined(missioncomponent.var_eba32ac6) ? missioncomponent.var_eba32ac6 : "<unknown string>") + "<unknown string>";
-            statustext = "<unknown string>";
+            identifiertext = missioncomponent.scriptbundlename + "<dev string:x104>" + index + "<dev string:xa2>";
+            origintext = "<dev string:x195>" + int(origin[0]) + "<dev string:x19f>" + int(origin[1]) + "<dev string:x19f>" + int(origin[2]) + "<dev string:x1a4>";
+            var_4fea471b = "<dev string:x1a9>" + missioncomponent.script_team + "<dev string:xa2>";
+            var_fabc86d6 = "<dev string:x1b1>" + (isdefined(missioncomponent.var_3093fd62) ? "<dev string:x1c4>" : "<dev string:x1cc>");
+            var_f3fe7e2c = "<dev string:x1d5>" + (isdefined(missioncomponent.var_4702e184) ? missioncomponent.var_4702e184 : "<dev string:x1df>") + "<dev string:xa2>";
+            var_2aac6b87 = "<dev string:x1e2>" + (isdefined(missioncomponent.var_eba32ac6) ? missioncomponent.var_eba32ac6 : "<dev string:x1df>") + "<dev string:xa2>";
+            statustext = "<dev string:x1ec>";
             statuscolor = (1, 1, 1);
-            tacpointtext = "<unknown string>";
+            tacpointtext = "<dev string:x1fa>";
             errortext = undefined;
             component = missioncomponent.var_36f0c06d;
-            if (isdefined(component) && missioncomponent flag::get("<unknown string>")) {
-                statustext = "<unknown string>";
+            if (isdefined(component) && missioncomponent flag::get("<dev string:x20a>")) {
+                statustext = "<dev string:x214>";
                 statuscolor = (0, 1, 0);
                 gameobject = component.e_objective;
                 var_41dd65b0 = undefined;
                 if (isdefined(gameobject)) {
                     var_41dd65b0 = gameobject.mdl_gameobject.trigger;
                     function_3ed19fa3(gameobject.mdl_gameobject);
-                    recordline(origin, gameobject.mdl_gameobject.origin, statuscolor, "<unknown string>");
+                    recordline(origin, gameobject.mdl_gameobject.origin, statuscolor, "<dev string:x21e>");
                 } else {
                     if (isdefined(component.var_2956bff4)) {
                         var_41dd65b0 = component.var_2956bff4;
-                        function_20610c3(component.var_2956bff4, statuscolor, "<unknown string>");
-                        recordline(origin, component.var_2956bff4.origin, statuscolor, "<unknown string>");
-                        record3dtext("<unknown string>", component.var_2956bff4.origin + (0, 0, -5), statuscolor, "<unknown string>");
+                        function_20610c3(component.var_2956bff4, statuscolor, "<dev string:x21e>");
+                        recordline(origin, component.var_2956bff4.origin, statuscolor, "<dev string:x21e>");
+                        record3dtext("<dev string:x22b>", component.var_2956bff4.origin + (0, 0, -5), statuscolor, "<dev string:x21e>");
                     }
                     if (isdefined(component.var_6bc907c4)) {
-                        function_20610c3(component.var_6bc907c4, statuscolor, "<unknown string>");
-                        recordline(origin, component.var_6bc907c4.origin, statuscolor, "<unknown string>");
-                        record3dtext("<unknown string>", component.var_6bc907c4.origin + (0, 0, 5), statuscolor, "<unknown string>");
+                        function_20610c3(component.var_6bc907c4, statuscolor, "<dev string:x21e>");
+                        recordline(origin, component.var_6bc907c4.origin, statuscolor, "<dev string:x21e>");
+                        record3dtext("<dev string:x23d>", component.var_6bc907c4.origin + (0, 0, 5), statuscolor, "<dev string:x21e>");
                     }
                 }
                 if (isdefined(var_41dd65b0)) {
                     points = tacticalquery(#"stratcom_tacquery_trigger", var_41dd65b0);
-                    tacpointtext = "<unknown string>" + points.size + "<unknown string>";
+                    tacpointtext = "<dev string:x253>" + points.size + "<dev string:xa2>";
                     if (points.size == 0) {
-                        errortext = "<unknown string>";
+                        errortext = "<dev string:x261>";
                     }
                 } else if (!isdefined(component.var_6bc907c4)) {
-                    errortext = "<unknown string>";
+                    errortext = "<dev string:x27b>";
                 }
-            } else if (missioncomponent flag::get("<unknown string>")) {
-                statustext = "<unknown string>";
+            } else if (missioncomponent flag::get("<dev string:x28d>")) {
+                statustext = "<dev string:x28d>";
                 statuscolor = (0.1, 0.1, 0.1);
             }
             textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
-            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, statustext, origintext, var_4fea471b, var_fabc86d6, var_f3fe7e2c, var_2aac6b87, tacpointtext, errortext);
+            function_15462dcd(origin, textcolor, "<dev string:x21e>", identifiertext, statustext, origintext, var_4fea471b, var_fabc86d6, var_f3fe7e2c, var_2aac6b87, tacpointtext, errortext);
             recordsphere(origin, 20, statuscolor);
         #/
     }
@@ -531,28 +530,28 @@ function private _debuggameobjects() {
         /#
             entnum = gameobject getentitynumber();
             origin = gameobject.origin;
-            identifiertext = (isdefined(gameobject gameobjects::get_identifier()) ? gameobject gameobjects::get_identifier() : "<unknown string>") + "<unknown string>" + entnum + "<unknown string>";
-            var_5f5e2bd5 = "<unknown string>" + gameobject.type + "<unknown string>";
-            origintext = "<unknown string>" + int(origin[0]) + "<unknown string>" + int(origin[1]) + "<unknown string>" + int(origin[2]) + "<unknown string>";
-            var_7358fe8e = "<unknown string>";
-            var_8de0589e = "<unknown string>";
-            var_4fea471b = "<unknown string>" + function_9e72a96(gameobject.team) + "<unknown string>";
-            var_8dbcaed7 = "<unknown string>" + (isdefined(gameobject.absolute_visible_and_interact_team) ? function_9e72a96(gameobject.absolute_visible_and_interact_team) : "<unknown string>") + "<unknown string>";
-            tacpointtext = "<unknown string>";
+            identifiertext = (isdefined(gameobject gameobjects::get_identifier()) ? gameobject gameobjects::get_identifier() : "<dev string:x298>") + "<dev string:x2a5>" + entnum + "<dev string:xa2>";
+            var_5f5e2bd5 = "<dev string:x2ab>" + gameobject.type + "<dev string:xa2>";
+            origintext = "<dev string:x195>" + int(origin[0]) + "<dev string:x19f>" + int(origin[1]) + "<dev string:x19f>" + int(origin[2]) + "<dev string:x1a4>";
+            var_7358fe8e = "<dev string:x2b3>";
+            var_8de0589e = "<dev string:x2c2>";
+            var_4fea471b = "<dev string:x1a9>" + function_9e72a96(gameobject.team) + "<dev string:xa2>";
+            var_8dbcaed7 = "<dev string:x2d3>" + (isdefined(gameobject.absolute_visible_and_interact_team) ? function_9e72a96(gameobject.absolute_visible_and_interact_team) : "<dev string:x1df>") + "<dev string:xa2>";
+            tacpointtext = "<dev string:x1fa>";
             errortext = undefined;
-            var_7ddeb599 = "<unknown string>";
-            var_bd3388e8 = "<unknown string>";
-            var_d8e00365 = "<unknown string>";
+            var_7ddeb599 = "<dev string:x1df>";
+            var_bd3388e8 = "<dev string:x1df>";
+            var_d8e00365 = "<dev string:x2e4>";
             if (isdefined(gameobject.identifier)) {
                 var_d8e00365 += gameobject.identifier;
             }
-            var_d8e00365 += "<unknown string>";
+            var_d8e00365 += "<dev string:xa2>";
             var_ea15be8 = undefined;
             var_da71cc36 = undefined;
             if (isdefined(gameobject.e_object)) {
-                var_7358fe8e = "<unknown string>" + (isdefined(gameobject.e_object.targetname) ? gameobject.e_object.targetname : "<unknown string>") + "<unknown string>";
+                var_7358fe8e = "<dev string:x2f1>" + (isdefined(gameobject.e_object.targetname) ? gameobject.e_object.targetname : "<dev string:x1df>") + "<dev string:xa2>";
                 if (isdefined(gameobject.e_object.scriptbundlename)) {
-                    var_8de0589e = "<unknown string>" + gameobject.e_object.scriptbundlename + "<unknown string>";
+                    var_8de0589e = "<dev string:x2ff>" + gameobject.e_object.scriptbundlename + "<dev string:xa2>";
                     gameobjectbundle = getscriptbundle(gameobject.e_object.scriptbundlename);
                     if (isdefined(gameobjectbundle)) {
                         var_ea15be8 = gameobjectbundle.var_4702e184;
@@ -565,33 +564,33 @@ function private _debuggameobjects() {
                     if (location.mdl_gameobject === gameobject) {
                         if (isdefined(gameobject.s_minigame.var_4702e184)) {
                             var_ea15be8 = gameobject.s_minigame.var_4702e184;
-                            var_7ddeb599 = "<unknown string>";
+                            var_7ddeb599 = "<dev string:x30f>";
                         }
                         if (isdefined(gameobject.s_minigame.var_eba32ac6)) {
                             var_da71cc36 = gameobject.s_minigame.var_eba32ac6;
-                            var_bd3388e8 = "<unknown string>";
+                            var_bd3388e8 = "<dev string:x30f>";
                         }
                         break;
                     }
                 }
             }
-            var_f3fe7e2c = "<unknown string>" + (isdefined(var_ea15be8) ? var_ea15be8 : "<unknown string>") + "<unknown string>" + var_7ddeb599;
-            var_2aac6b87 = "<unknown string>" + (isdefined(var_da71cc36) ? var_da71cc36 : "<unknown string>") + "<unknown string>" + var_bd3388e8;
-            statuscolor = gameobject.type !== "<unknown string>" ? (1, 1, 1) : (0.1, 0.1, 0.1);
+            var_f3fe7e2c = "<dev string:x1d5>" + (isdefined(var_ea15be8) ? var_ea15be8 : "<dev string:x1df>") + "<dev string:xa2>" + var_7ddeb599;
+            var_2aac6b87 = "<dev string:x1e2>" + (isdefined(var_da71cc36) ? var_da71cc36 : "<dev string:x1df>") + "<dev string:xa2>" + var_bd3388e8;
+            statuscolor = gameobject.type !== "<dev string:x31d>" ? (1, 1, 1) : (0.1, 0.1, 0.1);
             if (isdefined(gameobject.trigger) && gameobject.trigger istriggerenabled()) {
                 points = tacticalquery(#"stratcom_tacquery_trigger", gameobject.trigger);
-                tacpointtext = "<unknown string>" + points.size + "<unknown string>";
+                tacpointtext = "<dev string:x253>" + points.size + "<dev string:xa2>";
                 if (points.size == 0) {
-                    errortext = "<unknown string>";
+                    errortext = "<dev string:x261>";
                 }
                 statuscolor = (0, 1, 1);
-                function_20610c3(gameobject.trigger, statuscolor, "<unknown string>");
-                recordline(origin, gameobject.trigger.origin, statuscolor, "<unknown string>");
-                record3dtext("<unknown string>", gameobject.trigger.origin + (0, 0, 5), statuscolor, "<unknown string>");
+                function_20610c3(gameobject.trigger, statuscolor, "<dev string:x21e>");
+                recordline(origin, gameobject.trigger.origin, statuscolor, "<dev string:x21e>");
+                record3dtext("<dev string:x32d>", gameobject.trigger.origin + (0, 0, 5), statuscolor, "<dev string:x21e>");
             }
             textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
-            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, var_4fea471b, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext);
-            recordsphere(origin, 17, statuscolor, "<unknown string>");
+            function_15462dcd(origin, textcolor, "<dev string:x21e>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, var_4fea471b, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext);
+            recordsphere(origin, 17, statuscolor, "<dev string:x21e>");
         #/
     }
 
@@ -601,30 +600,30 @@ function private _debuggameobjects() {
     // Size: 0x2d4
     function private function_adb62fbb(breadcrumb, index) {
         if (!isdefined(index)) {
-            index = "<unknown string>";
+            index = "<dev string:x191>";
         }
         /#
             origin = breadcrumb.origin;
-            identifiertext = "<unknown string>" + index + "<unknown string>";
-            origintext = "<unknown string>" + int(origin[0]) + "<unknown string>" + int(origin[1]) + "<unknown string>" + int(origin[2]) + "<unknown string>";
-            var_4fea471b = "<unknown string>" + breadcrumb.script_team + "<unknown string>";
+            identifiertext = "<dev string:x342>" + index + "<dev string:xa2>";
+            origintext = "<dev string:x195>" + int(origin[0]) + "<dev string:x19f>" + int(origin[1]) + "<dev string:x19f>" + int(origin[2]) + "<dev string:x1a4>";
+            var_4fea471b = "<dev string:x1a9>" + breadcrumb.script_team + "<dev string:xa2>";
             statuscolor = (1, 1, 1);
-            tacpointtext = "<unknown string>";
+            tacpointtext = "<dev string:x1fa>";
             errortext = undefined;
             if (isdefined(breadcrumb.trigger)) {
                 statuscolor = (1, 1, 0);
-                function_20610c3(breadcrumb.trigger, (1, 1, 0), "<unknown string>");
-                recordline(origin, breadcrumb.trigger.origin, (1, 1, 0), "<unknown string>");
-                record3dtext("<unknown string>", breadcrumb.trigger.origin, (1, 1, 0), "<unknown string>");
+                function_20610c3(breadcrumb.trigger, (1, 1, 0), "<dev string:x21e>");
+                recordline(origin, breadcrumb.trigger.origin, (1, 1, 0), "<dev string:x21e>");
+                record3dtext("<dev string:x350>", breadcrumb.trigger.origin, (1, 1, 0), "<dev string:x21e>");
                 points = tacticalquery(#"stratcom_tacquery_trigger", breadcrumb.trigger);
-                tacpointtext = "<unknown string>" + points.size + "<unknown string>";
+                tacpointtext = "<dev string:x253>" + points.size + "<dev string:xa2>";
                 if (points.size == 0) {
-                    errortext = "<unknown string>";
+                    errortext = "<dev string:x261>";
                 }
             }
             recordsphere(origin, 14, statuscolor);
             textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
-            function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, origintext, var_4fea471b, tacpointtext, errortext);
+            function_15462dcd(origin, textcolor, "<dev string:x21e>", identifiertext, origintext, var_4fea471b, tacpointtext, errortext);
         #/
     }
 
@@ -634,12 +633,12 @@ function private _debuggameobjects() {
     // Size: 0xdc
     function private function_15462dcd(pos, color, channel, ...) {
         /#
-            recordstr = "<unknown string>";
+            recordstr = "<dev string:x1df>";
             foreach (str in vararg) {
                 if (!isdefined(str)) {
                     continue;
                 }
-                recordstr += str + "<unknown string>";
+                recordstr += str + "<dev string:x364>";
             }
             record3dtext(recordstr, pos, color, channel);
         #/
@@ -653,7 +652,7 @@ function private _debuggameobjects() {
         /#
             maxs = volume getmaxs();
             mins = volume getmins();
-            if (issubstr(volume.classname, "<unknown string>")) {
+            if (issubstr(volume.classname, "<dev string:x36a>")) {
                 radius = max(maxs[0], maxs[1]);
                 top = volume.origin + (0, 0, maxs[2]);
                 bottom = volume.origin + (0, 0, mins[2]);
@@ -682,7 +681,7 @@ function private _debuggameobjects() {
                 if (isdefined(level.var_b3d6ba87)) {
                     var_69548289 = level.var_b3d6ba87.size;
                 }
-                recordtext("<unknown string>" + var_69548289, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x373>" + var_69548289, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x21e>", textscale);
                 yoffset += 13;
                 assaultobjects = 0;
                 defendobjects = 0;
@@ -698,15 +697,15 @@ function private _debuggameobjects() {
                     targetcount += commander.var_6365d720;
                 }
                 xoffset += 15;
-                recordtext("<unknown string>" + botcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x387>" + botcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x21e>", textscale);
                 yoffset += 13;
-                recordtext("<unknown string>" + objectivecount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x3a5>" + objectivecount, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x21e>", textscale);
                 yoffset += 13;
-                recordtext("<unknown string>" + assaultobjects, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x3b9>" + assaultobjects, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x21e>", textscale);
                 yoffset += 13;
-                recordtext("<unknown string>" + defendobjects, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x3d6>" + defendobjects, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x21e>", textscale);
                 yoffset += 13;
-                recordtext("<unknown string>" + targetcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x3f2>" + targetcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x21e>", textscale);
                 yoffset += 13;
                 yoffset += 13;
                 xoffset -= 15;
@@ -715,7 +714,7 @@ function private _debuggameobjects() {
                     commander = level.var_b3d6ba87[index];
                     squadcount += commander.squads.size;
                 }
-                recordtext("<unknown string>" + squadcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x404>" + squadcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x21e>", textscale);
             }
             waitframe(1);
         }
@@ -1101,7 +1100,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
         strategy = function_d077c2b6(side);
     }
     /#
-        sdebug = ["<unknown string>" + strategy.name];
+        sdebug = ["<dev string:x414>" + strategy.name];
     #/
     strategy = function_1e3c1b91(strategy, strategy);
     if (isdefined(var_ebfc3fac)) {
@@ -1110,7 +1109,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
             strategy = function_1e3c1b91(strategy, getscriptbundle(var_f57f0f3f));
         }
         /#
-            sdebug[sdebug.size] = var_ebfc3fac.type + "<unknown string>" + var_ebfc3fac.name + "<unknown string>" + (isdefined(var_f57f0f3f) ? var_f57f0f3f : "<unknown string>");
+            sdebug[sdebug.size] = var_ebfc3fac.type + "<dev string:x104>" + var_ebfc3fac.name + "<dev string:x420>" + (isdefined(var_f57f0f3f) ? var_f57f0f3f : "<dev string:x1df>");
         #/
     }
     if (isdefined(missioncomponent)) {
@@ -1119,7 +1118,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
             strategy = function_1e3c1b91(strategy, getscriptbundle(var_e763ef0b));
         }
         /#
-            sdebug[sdebug.size] = missioncomponent.scriptbundlename + "<unknown string>" + (isdefined(var_e763ef0b) ? var_e763ef0b : "<unknown string>");
+            sdebug[sdebug.size] = missioncomponent.scriptbundlename + "<dev string:x426>" + (isdefined(var_e763ef0b) ? var_e763ef0b : "<dev string:x1df>");
         #/
     }
     if (isdefined(gameobject)) {
@@ -1134,7 +1133,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
                     }
                 }
                 /#
-                    sdebug[sdebug.size] = "<unknown string>" + gameobject getentitynumber() + "<unknown string>" + (isdefined(var_1c9cd543) ? var_1c9cd543 : "<unknown string>") + "<unknown string>";
+                    sdebug[sdebug.size] = "<dev string:x42b>" + gameobject getentitynumber() + "<dev string:x420>" + (isdefined(var_1c9cd543) ? var_1c9cd543 : "<dev string:x1df>") + "<dev string:x30f>";
                 #/
                 break;
             }
@@ -1148,7 +1147,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
                 }
             }
             /#
-                sdebug[sdebug.size] = "<unknown string>" + gameobject getentitynumber() + "<unknown string>" + (isdefined(var_1c9cd543) ? var_1c9cd543 : "<unknown string>");
+                sdebug[sdebug.size] = "<dev string:x42b>" + gameobject getentitynumber() + "<dev string:x420>" + (isdefined(var_1c9cd543) ? var_1c9cd543 : "<dev string:x1df>");
             #/
         }
     }
@@ -1367,7 +1366,7 @@ function isvalidplayer(client) {
 // Size: 0x1c6
 function function_f867cce0(missioncomponent, commanderteam) {
     component = missioncomponent.var_36f0c06d;
-    assert(commanderteam == #"any" || commanderteam == #"allies" || commanderteam == #"axis", "<unknown string>" + commanderteam + "<unknown string>");
+    assert(commanderteam == #"any" || commanderteam == #"allies" || commanderteam == #"axis", "<dev string:x43c>" + commanderteam + "<dev string:x44f>");
     if (!isdefined(component)) {
         return false;
     }
@@ -1412,7 +1411,7 @@ function querypointsaroundgameobject(bot, gameobject) {
     /#
         if (getdvarint(#"ai_debugsquadpointquery", 0)) {
             foreach (point in points) {
-                recordstar(point.origin, (1, 0.5, 0), "<unknown string>");
+                recordstar(point.origin, (1, 0.5, 0), "<dev string:x21e>");
             }
         }
     #/
@@ -1442,7 +1441,7 @@ function querypointsinsideobjective(bot, trigger) {
         /#
             if (getdvarint(#"ai_debugsquadpointquery", 0)) {
                 foreach (point in points) {
-                    recordstar(point.origin, (1, 0.5, 0), "<unknown string>");
+                    recordstar(point.origin, (1, 0.5, 0), "<dev string:x21e>");
                 }
             }
         #/
@@ -1464,7 +1463,7 @@ function querypointsinsideposition(bot, position, radius, halfheight) {
     /#
         if (getdvarint(#"ai_debugsquadpointquery", 0)) {
             foreach (point in points) {
-                recordstar(point.origin, (1, 0.5, 0), "<unknown string>");
+                recordstar(point.origin, (1, 0.5, 0), "<dev string:x21e>");
             }
         }
     #/
@@ -1482,9 +1481,9 @@ function querypointsinsideposition(bot, position, radius, halfheight) {
         var_c2a08848 = 0;
         while (var_c2a08848 < var_2586092e) {
             if (getdvarint(#"ai_debugsquadpointquery", 0)) {
-                function_af72dbc5(obb.center, obb.halfsize * -1, obb.halfsize, obb.angles[1], (0, 1, 0), "<unknown string>");
+                function_af72dbc5(obb.center, obb.halfsize * -1, obb.halfsize, obb.angles[1], (0, 1, 0), "<dev string:x21e>");
                 foreach (point in points) {
-                    recordstar(point.origin, (1, 0.5, 0), "<unknown string>");
+                    recordstar(point.origin, (1, 0.5, 0), "<dev string:x21e>");
                 }
             }
             var_c2a08848++;
@@ -1533,7 +1532,7 @@ function function_210f00bf(bot, trigger) {
     }
     points = [];
     if (function_778568e2(bot)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x46d>");
     } else {
         obb = bot bot::function_52947b70(trigger);
         points = tacticalquery(#"stratcom_tacquery_trigger", obb);

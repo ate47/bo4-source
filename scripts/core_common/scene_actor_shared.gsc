@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\scene_actor_shared.gsc;
 #using scripts\core_common\spawner_shared.gsc;
 #using scripts\core_common\util_shared.gsc;

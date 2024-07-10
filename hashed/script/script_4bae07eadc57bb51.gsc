@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm\zm_office_zones.gsc;
 #using script_59a783d756554a80;
@@ -595,7 +594,7 @@ function enable_groom_lake() {
     level thread function_8213feb8();
     function_5e893125();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
 }
 
@@ -951,8 +950,8 @@ function function_275db54d() {
     // Checksum 0xb12c928f, Offset: 0x3810
     // Size: 0x5c
     function function_5642f347() {
-        if (!level flag::get("<unknown string>")) {
-            level flag::set("<unknown string>");
+        if (!level flag::get("<dev string:x54>")) {
+            level flag::set("<dev string:x54>");
             wait(1);
         }
         place_modifier();

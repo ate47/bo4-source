@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\voice\voice_events.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\trigger_shared.gsc;
@@ -56,7 +55,7 @@ function private mpl_heatwave_fx(ent, event, params) {
                 continue;
             }
             callback = ent._callbacks[event][i][0];
-            assert(isfunctionptr(callback), "<unknown string>" + "<unknown string>");
+            assert(isfunctionptr(callback), "<dev string:x38>" + "<dev string:x52>");
             if (!isfunctionptr(callback)) {
                 return;
             }
@@ -104,11 +103,11 @@ function private function_2b653c00(ent, event, func, obj, a_params) {
     if (!isdefined(ent)) {
         return;
     }
-    assert(isfunctionptr(func), "<unknown string>" + "<unknown string>");
+    assert(isfunctionptr(func), "<dev string:x6e>" + "<dev string:x52>");
     if (!isfunctionptr(func)) {
         return;
     }
-    assert(isdefined(event), "<unknown string>");
+    assert(isdefined(event), "<dev string:x91>");
     if (!isdefined(ent._callbacks) || !isdefined(ent._callbacks[event])) {
         ent._callbacks[event] = [];
     }
@@ -168,12 +167,12 @@ function private function_3f5f097e(ent, event, func, obj, instant) {
     if (!isdefined(ent._callbacks)) {
         return;
     }
-    assert(isdefined(event), "<unknown string>");
+    assert(isdefined(event), "<dev string:xc3>");
     if (func === "all") {
         ent._callbacks[event] = [];
         return;
     }
-    assert(isdefined(ent._callbacks[event]), "<unknown string>");
+    assert(isdefined(ent._callbacks[event]), "<dev string:xf8>");
     if (!isdefined(ent._callbacks[event])) {
         return;
     }
@@ -1034,7 +1033,7 @@ function event_handler[player_disconnect] codecallback_playerdisconnect(eventstr
 // Checksum 0xd1fa637f, Offset: 0x29a0
 // Size: 0x34
 function event_handler[hostmigration_setupgametype] codecallback_migration_setupgametype() {
-    println("<unknown string>");
+    println("<dev string:x127>");
     simple_hostmigration::migration_setupgametype();
 }
 
@@ -1043,7 +1042,7 @@ function event_handler[hostmigration_setupgametype] codecallback_migration_setup
 // Checksum 0x79f45823, Offset: 0x29e0
 // Size: 0x3c
 function event_handler[hostmigration] codecallback_hostmigration(eventstruct) {
-    println("<unknown string>");
+    println("<dev string:x156>");
     [[ level.callbackhostmigration ]]();
 }
 
@@ -1052,7 +1051,7 @@ function event_handler[hostmigration] codecallback_hostmigration(eventstruct) {
 // Checksum 0xe574ed37, Offset: 0x2a28
 // Size: 0x3c
 function event_handler[hostmigration_save] codecallback_hostmigrationsave(eventstruct) {
-    println("<unknown string>");
+    println("<dev string:x17b>");
     [[ level.callbackhostmigrationsave ]]();
 }
 
@@ -1061,7 +1060,7 @@ function event_handler[hostmigration_save] codecallback_hostmigrationsave(events
 // Checksum 0x96b466d8, Offset: 0x2a70
 // Size: 0x3c
 function event_handler[hostmigration_premigrationsave] codecallback_prehostmigrationsave(eventstruct) {
-    println("<unknown string>");
+    println("<dev string:x1a4>");
     [[ level.callbackprehostmigrationsave ]]();
 }
 
@@ -1070,7 +1069,7 @@ function event_handler[hostmigration_premigrationsave] codecallback_prehostmigra
 // Checksum 0xa089ccb2, Offset: 0x2ab8
 // Size: 0x3c
 function event_handler[hostmigration_playermigrated] codecallback_playermigrated(eventstruct) {
-    println("<unknown string>");
+    println("<dev string:x1d0>");
     [[ level.callbackplayermigrated ]]();
 }
 
@@ -1460,7 +1459,7 @@ function event_handler[event_40f83b44] function_4b5ab05f(eventstruct) {
 // Checksum 0xe3bec634, Offset: 0x3fb8
 // Size: 0x23c
 function abort_level() {
-    println("<unknown string>");
+    println("<dev string:x1f6>");
     level.callbackstartgametype = &callback_void;
     level.callbackplayerconnect = &callback_void;
     level.callbackplayerdisconnect = &callback_void;

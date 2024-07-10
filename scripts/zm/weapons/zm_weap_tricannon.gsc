@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using script_24c32478acf44108;
 #using scripts\zm_common\zm_utility.gsc;

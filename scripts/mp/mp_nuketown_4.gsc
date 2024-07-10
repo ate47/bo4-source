@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai_shared.gsc;
 #using script_67c9a990c0db216c;
 #using scripts\core_common\lui_shared.gsc;
@@ -43,7 +42,7 @@ function event_handler[level_init] main(eventstruct) {
     level thread function_5089875d();
     level thread function_d83f6c8c();
     /#
-        adddebugcommand("sprint" + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + "<dev string:x51>");
     #/
     level thread function_b3e0f5e0();
     var_2bf87e44 = getentarray("ee_kill", "targetname");

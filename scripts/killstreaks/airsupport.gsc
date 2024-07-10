@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\clientfield_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
 #using scripts\weapons\weapons.gsc;
@@ -26,19 +25,19 @@ function init_shared() {
         airsupport_heights = struct::get_array("air_support_height", "targetname");
         /#
             if (airsupport_heights.size > 1) {
-                util::error("<unknown string>");
+                util::error("<dev string:x38>");
             }
         #/
         airsupport_heights = getentarray("air_support_height", "targetname");
         /#
             if (airsupport_heights.size > 0) {
-                util::error("<unknown string>");
+                util::error("<dev string:x76>");
             }
         #/
         heli_height_meshes = getentarray("heli_height_lock", "classname");
         /#
             if (heli_height_meshes.size > 1) {
-                util::error("<unknown string>");
+                util::error("<dev string:xdb>");
             }
         #/
         callback::on_spawned(&clearmonitoredspeed);
@@ -174,7 +173,7 @@ function getminimumflyheight() {
     if (isdefined(airsupport_height)) {
         planeflyheight = airsupport_height.origin[2];
     } else {
-        println("<unknown string>");
+        println("<dev string:x119>");
         planeflyheight = 850;
         if (isdefined(level.airsupportheightscale)) {
             level.airsupportheightscale = getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);
@@ -195,7 +194,7 @@ function callstrike(flightplan) {
     level.bomberdamagedents = [];
     level.bomberdamagedentscount = 0;
     level.bomberdamagedentsindex = 0;
-    assert(flightplan.distance != 0, "<unknown string>");
+    assert(flightplan.distance != 0, "<dev string:x16a>");
     planehalfdistance = flightplan.distance / 2;
     path = getstrikepath(flightplan.target, flightplan.height, planehalfdistance);
     startpoint = path[#"start"];

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_cairo_sound;
 
 // Namespace mp_cairo_sound/mp_cairo_sound

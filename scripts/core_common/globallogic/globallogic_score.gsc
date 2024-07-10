@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\player\player_loadout.gsc;
 #using scripts\core_common\player\player_stats.gsc;
 #using scripts\core_common\weapons_shared.gsc;
@@ -184,7 +183,7 @@ function function_969ea48d(var_ba01256c, weapon) {
 // Size: 0xee
 function function_52ca9649(event) {
     if (!isdefined(level.scoreinfo[event])) {
-        println("<unknown string>" + event);
+        println("<dev string:x38>" + event);
         return 0;
     }
     if (!isdefined(self.var_19f577f)) {
@@ -923,12 +922,12 @@ function allow_old_indexs(var_8d498080) {
                     }
                     var_594354f3[scoreevent]++;
                 }
-                println("<unknown string>");
+                println("<dev string:x74>");
                 foreach (var_d975dd49 in getarraykeys(var_594354f3)) {
                     count = var_594354f3[var_d975dd49];
-                    println(var_d975dd49 + "<unknown string>" + (isdefined(count) ? "<unknown string>" + count : "<unknown string>"));
+                    println(var_d975dd49 + "<dev string:xc9>" + (isdefined(count) ? "<dev string:xce>" + count : "<dev string:xce>"));
                 }
-                println("<unknown string>");
+                println("<dev string:xd1>");
                 setdvar(#"dumpscoreevents", 0);
             }
             waitframe(1);

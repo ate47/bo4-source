@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\ai\planner_mp_tdm_squad.gsc;
 #using script_60f1433e7c9a921c;
 #using scripts\core_common\ai\planner_squad_utility.gsc;

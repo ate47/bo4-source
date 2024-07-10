@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\mp\killstreakrules.gsc;
 #using scripts\killstreaks\mp\killstreak_vehicle.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
@@ -59,7 +58,7 @@ function init() {
     /#
         level.killstreak_init_end_time = getmillisecondsraw();
         elapsed_time = level.killstreak_init_end_time - level.killstreak_init_start_time;
-        println("<unknown string>" + elapsed_time + "<unknown string>");
+        println("<dev string:x38>" + elapsed_time + "<dev string:x58>");
         level thread killstreak_debug_think();
     #/
 }

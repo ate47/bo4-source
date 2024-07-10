@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_devgui.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -482,7 +481,7 @@ function get_weighted_random_perk(player) {
     }
     /#
         forced_perk = getdvarstring(#"scr_force_perk");
-        if (forced_perk != "<unknown string>" && isdefined(level._random_perk_machine_perk_list[forced_perk])) {
+        if (forced_perk != "<dev string:x38>" && isdefined(level._random_perk_machine_perk_list[forced_perk])) {
             arrayinsert(keys, forced_perk, 0);
         }
     #/
@@ -767,30 +766,30 @@ function is_power_on(n_power_index) {
     // Size: 0x20a
     function wunderfizz_devgui_callback(cmd) {
         players = getplayers();
-        a_e_wunderfizzes = getentarray("<unknown string>", "<unknown string>");
+        a_e_wunderfizzes = getentarray("<dev string:x3b>", "<dev string:x51>");
         e_wunderfizz = arraygetclosest(getplayers()[0].origin, a_e_wunderfizzes);
         switch (cmd) {
         case #"wunderfizz_leaving":
-            e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
+            e_wunderfizz thread set_perk_random_machine_state("<dev string:x5e>");
             break;
         case #"wunderfizz_arriving":
-            e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
+            e_wunderfizz thread set_perk_random_machine_state("<dev string:x68>");
             break;
         case #"wunderfizz_vending":
-            e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
+            e_wunderfizz thread set_perk_random_machine_state("<dev string:x71>");
             e_wunderfizz notify(#"bottle_spawned");
             break;
         case #"wunderfizz_idle":
-            e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
+            e_wunderfizz thread set_perk_random_machine_state("<dev string:x7b>");
             break;
         case #"hash_67d324a91b1fd821":
-            e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
+            e_wunderfizz thread set_perk_random_machine_state("<dev string:x82>");
             break;
         case #"wunderfizz_initial":
-            e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
+            e_wunderfizz thread set_perk_random_machine_state("<dev string:x8e>");
             break;
         case #"wunderfizz_away":
-            e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
+            e_wunderfizz thread set_perk_random_machine_state("<dev string:x98>");
             break;
         }
     }

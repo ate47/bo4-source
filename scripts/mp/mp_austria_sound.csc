@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_austria_sound;
 
 // Namespace mp_austria_sound/mp_austria_sound

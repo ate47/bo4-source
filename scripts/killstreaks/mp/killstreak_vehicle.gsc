@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\weapons\deployable.gsc;
 #using scripts\core_common\visionset_mgr_shared.gsc;

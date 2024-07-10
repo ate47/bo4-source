@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\ai_interface.gsc;
 #using scripts\core_common\ai\systems\shared.gsc;
 #using scripts\core_common\values_shared.gsc;
@@ -17,7 +16,7 @@
 // Checksum 0x4332bd5e, Offset: 0x2f8
 // Size: 0x4a
 function set_pacifist(val) {
-    assert(issentient(self), "<unknown string>");
+    assert(issentient(self), "<dev string:x38>");
     self.pacifist = val;
 }
 
@@ -26,7 +25,7 @@ function set_pacifist(val) {
 // Checksum 0x3db0a3eb, Offset: 0x350
 // Size: 0x3e
 function disable_pain() {
-    assert(isalive(self), "<unknown string>");
+    assert(isalive(self), "<dev string:x57>");
     self.allowpain = 0;
 }
 
@@ -35,7 +34,7 @@ function disable_pain() {
 // Checksum 0x167e16cb, Offset: 0x398
 // Size: 0x42
 function enable_pain() {
-    assert(isalive(self), "<unknown string>");
+    assert(isalive(self), "<dev string:x7b>");
     self.allowpain = 1;
 }
 
@@ -119,7 +118,7 @@ function waittill_dead(guys, num, timeoutlength) {
         allalive = 0;
         break;
     }
-    assert(allalive, "<unknown string>");
+    assert(allalive, "<dev string:x9e>");
     if (!allalive) {
         newarray = [];
         for (i = 0; i < guys.size; i++) {
@@ -220,12 +219,12 @@ function private wait_for_shoot() {
 // Size: 0x3e4
 function shoot_at_target(mode, target, tag, duration, sethealth, ignorefirstshotwait) {
     self endon(#"death", #"stop_shoot_at_target");
-    assert(isdefined(target), "<unknown string>");
-    assert(isdefined(mode), "<unknown string>");
+    assert(isdefined(target), "<dev string:xfb>");
+    assert(isdefined(mode), "<dev string:x12c>");
     mode_flag = mode === "normal" || mode === "shoot_until_target_dead" || mode === "kill_within_time";
-    assert(mode_flag, "<unknown string>");
+    assert(mode_flag, "<dev string:x167>");
     if (isdefined(duration)) {
-        assert(duration >= 0, "<unknown string>");
+        assert(duration >= 0, "<dev string:x1c2>");
     } else {
         duration = 0;
     }
@@ -445,15 +444,15 @@ function painwaitinterval(msec) {
 // Size: 0x598
 function patrol(start_path_node) {
     self endon(#"death", #"stop_patrolling");
-    assert(isdefined(start_path_node), self.targetname + "<unknown string>");
+    assert(isdefined(start_path_node), self.targetname + "<dev string:x1f3>");
     if (start_path_node.type === #"bad node") {
         /#
-            errormsg = "<unknown string>" + start_path_node.targetname + "<unknown string>" + int(start_path_node.origin[0]) + "<unknown string>" + int(start_path_node.origin[1]) + "<unknown string>" + int(start_path_node.origin[2]) + "<unknown string>";
+            errormsg = "<dev string:x24f>" + start_path_node.targetname + "<dev string:x266>" + int(start_path_node.origin[0]) + "<dev string:x26c>" + int(start_path_node.origin[1]) + "<dev string:x26c>" + int(start_path_node.origin[2]) + "<dev string:x270>";
             iprintln(errormsg);
         #/
         return;
     }
-    assert(start_path_node.type === #"path" || isdefined(start_path_node.scriptbundlename), "<unknown string>" + start_path_node.targetname + "<unknown string>");
+    assert(start_path_node.type === #"path" || isdefined(start_path_node.scriptbundlename), "<dev string:x282>" + start_path_node.targetname + "<dev string:x299>");
     self notify(#"go_to_spawner_target");
     self.target = undefined;
     self.old_goal_radius = self.goalradius;
@@ -481,7 +480,7 @@ function patrol(start_path_node) {
             }
             if (isdefined(self.currentgoal.script_flag_wait)) {
                 flag = self.currentgoal.script_flag_wait;
-                assert(isdefined(level.flag[flag]), "<unknown string>" + flag);
+                assert(isdefined(level.flag[flag]), "<dev string:x2d9>" + flag);
                 level flag::wait_till(flag);
             }
             if (!isdefined(self.currentgoal.script_wait_min)) {
@@ -490,7 +489,7 @@ function patrol(start_path_node) {
             if (!isdefined(self.currentgoal.script_wait_max)) {
                 self.currentgoal.script_wait_max = 0;
             }
-            assert(self.currentgoal.script_wait_min <= self.currentgoal.script_wait_max, "<unknown string>" + self.currentgoal.targetname);
+            assert(self.currentgoal.script_wait_min <= self.currentgoal.script_wait_max, "<dev string:x310>" + self.currentgoal.targetname);
             if (!isdefined(self.currentgoal.scriptbundlename)) {
                 wait_variability = self.currentgoal.script_wait_max - self.currentgoal.script_wait_min;
                 wait_time = self.currentgoal.script_wait_min + randomfloat(wait_variability);
@@ -584,7 +583,7 @@ function bloody_death(n_delay, hit_loc) {
         return;
     }
     if (isdefined(hit_loc)) {
-        assert(isinarray(array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>"), hit_loc), "<unknown string>");
+        assert(isinarray(array("<dev string:x340>", "<dev string:x349>", "<dev string:x350>", "<dev string:x357>", "<dev string:x365>", "<dev string:x371>", "<dev string:x37f>", "<dev string:x391>", "<dev string:x3a2>", "<dev string:x3b4>", "<dev string:x3c5>", "<dev string:x3d2>", "<dev string:x3de>", "<dev string:x3f0>", "<dev string:x401>", "<dev string:x413>", "<dev string:x424>", "<dev string:x431>", "<dev string:x43d>", "<dev string:x443>"), hit_loc), "<dev string:x450>");
     } else {
         hit_loc = array::random(array("helmet", "head", "neck", "torso_upper", "torso_mid", "torso_lower", "right_arm_upper", "left_arm_upper", "right_arm_lower", "left_arm_lower", "right_hand", "left_hand", "right_leg_upper", "left_leg_upper", "right_leg_lower", "left_leg_lower", "right_foot", "left_foot", "gun", "riotshield"));
     }

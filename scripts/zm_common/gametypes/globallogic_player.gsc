@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_characters.gsc;
 #using scripts\zm_common\zm_stats.gsc;
 #using scripts\zm_common\zm.gsc;
@@ -268,7 +267,7 @@ function spectate_player_watcher() {
             break;
         }
         /#
-            if (!level.splitscreen && !level.hardcoremode && getdvarint(#"scr_showperksonspawn", 0) == 1 && game.state != "<unknown string>" && !isdefined(self.perkhudelem)) {
+            if (!level.splitscreen && !level.hardcoremode && getdvarint(#"scr_showperksonspawn", 0) == 1 && game.state != "<dev string:x38>" && !isdefined(self.perkhudelem)) {
                 if (level.perksenabled == 1) {
                     self hud::showperks();
                 }
@@ -284,7 +283,7 @@ function spectate_player_watcher() {
         if (count > 0) {
             if (!self.watchingactiveclient) {
                 self val::reset(#"spectate", "freezecontrols");
-                println("<unknown string>");
+                println("<dev string:x43>");
             }
             self.watchingactiveclient = 1;
         } else {
@@ -303,13 +302,13 @@ function spectate_player_watcher() {
 // Checksum 0x21cbbbd, Offset: 0x16d8
 // Size: 0xd0
 function callback_playermigrated() {
-    println("<unknown string>" + self.name + "<unknown string>" + gettime());
+    println("<dev string:x5a>" + self.name + "<dev string:x64>" + gettime());
     if (isdefined(self.connected) && self.connected) {
     }
     self thread inform_clientvm_of_migration();
     level.hostmigrationreturnedplayercount++;
     if (level.hostmigrationreturnedplayercount >= level.players.size * 2 / 3) {
-        println("<unknown string>");
+        println("<dev string:x83>");
         level notify(#"hostmigration_enoughplayers");
     }
 }
@@ -424,7 +423,7 @@ function callback_playerdisconnect() {
     }
     if (isdefined(self.score) && isdefined(self.pers) && isdefined(self.pers[#"team"])) {
         /#
-            print("<unknown string>" + self.pers[#"team"] + "<unknown string>" + self.score);
+            print("<dev string:xac>" + self.pers[#"team"] + "<dev string:xbb>" + self.score);
         #/
         level.dropteam += 1;
     }

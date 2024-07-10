@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\audio_shared.csc;
@@ -40,8 +39,8 @@ function __init__() {
     init_heli_sound_values("heli_guard", "turbine", 10, 0.9, 1, 30, 0.9, 1.05);
     init_heli_sound_values("heli_guard", "rotor", 10, 0.9, 1, 30, 0.9, 1.1);
     /#
-        if (getdvarstring(#"helisounds") == "<unknown string>") {
-            setdvar(#"helisounds", "<unknown string>");
+        if (getdvarstring(#"helisounds") == "<dev string:x38>") {
+            setdvar(#"helisounds", "<dev string:x38>");
         }
         level thread command_parser();
     #/
@@ -52,7 +51,7 @@ function __init__() {
 // Checksum 0x7ce10087, Offset: 0x830
 // Size: 0x8a
 function vehicle_is_firing_function(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    println("<unknown string>" + newval);
+    println("<dev string:x3b>" + newval);
     if (newval == 0) {
         self.isfiring = 0;
         return;
@@ -79,14 +78,14 @@ function init_heli_sound_values(heli_type, part_type, max_speed_vol, min_vol, ma
     level.helisoundvalues[heli_type][part_type].pitchmax = max_pitch;
     /#
         if (getdvarint(#"debug_heli", 0) > 0) {
-            println("<unknown string>" + heli_type);
-            println("<unknown string>" + part_type);
-            println("<unknown string>" + max_speed_vol);
-            println("<unknown string>" + min_vol);
-            println("<unknown string>" + max_vol);
-            println("<unknown string>" + max_speed_pitch);
-            println("<unknown string>" + min_pitch);
-            println("<unknown string>" + max_pitch);
+            println("<dev string:x52>" + heli_type);
+            println("<dev string:x71>" + part_type);
+            println("<dev string:x90>" + max_speed_vol);
+            println("<dev string:xb3>" + min_vol);
+            println("<dev string:xd0>" + max_vol);
+            println("<dev string:xed>" + max_speed_pitch);
+            println("<dev string:x112>" + min_pitch);
+            println("<dev string:x131>" + max_pitch);
         }
     #/
 }
@@ -100,32 +99,32 @@ function init_heli_sound_values(heli_type, part_type, max_speed_vol, min_vol, ma
     function command_parser() {
         while (true) {
             command = getdvarstring(#"helisounds");
-            if (command != "<unknown string>") {
+            if (command != "<dev string:x38>") {
                 success = 1;
-                tokens = strtok(command, "<unknown string>");
+                tokens = strtok(command, "<dev string:x150>");
                 if (!isdefined(tokens[0]) || !isdefined(level.helisoundvalues[tokens[0]])) {
                     if (isdefined(tokens[0])) {
-                        println("<unknown string>" + tokens[0]);
+                        println("<dev string:x154>" + tokens[0]);
                     } else {
-                        println("<unknown string>");
+                        println("<dev string:x186>");
                     }
-                    println("<unknown string>");
+                    println("<dev string:x1b5>");
                     success = 0;
                 } else if (!isdefined(tokens[1])) {
                     if (isdefined(tokens[1])) {
-                        println("<unknown string>" + tokens[0] + "<unknown string>" + tokens[1]);
+                        println("<dev string:x201>" + tokens[0] + "<dev string:x233>" + tokens[1]);
                     } else {
-                        println("<unknown string>" + tokens[0]);
+                        println("<dev string:x241>" + tokens[0]);
                     }
-                    println("<unknown string>");
+                    println("<dev string:x1b5>");
                     success = 0;
                 } else if (!isdefined(tokens[2])) {
-                    println("<unknown string>" + tokens[0] + "<unknown string>" + tokens[1]);
-                    println("<unknown string>");
+                    println("<dev string:x27b>" + tokens[0] + "<dev string:x2ba>" + tokens[1]);
+                    println("<dev string:x1b5>");
                     success = 0;
                 } else if (!isdefined(tokens[3])) {
-                    println("<unknown string>" + tokens[0] + "<unknown string>" + tokens[1]);
-                    println("<unknown string>");
+                    println("<dev string:x2c4>" + tokens[0] + "<dev string:x2ba>" + tokens[1]);
+                    println("<dev string:x1b5>");
                     success = 0;
                 }
                 if (success) {
@@ -136,34 +135,34 @@ function init_heli_sound_values(heli_type, part_type, max_speed_vol, min_vol, ma
                     switch (value_name) {
                     case #"volumemin":
                         level.helisoundvalues[heli_type][heli_part].volumemin = value;
-                        println("<unknown string>" + value);
+                        println("<dev string:x2fe>" + value);
                         break;
                     case #"volumemax":
                         level.helisoundvalues[heli_type][heli_part].volumemax = value;
-                        println("<unknown string>" + value);
+                        println("<dev string:x316>" + value);
                         break;
                     case #"pitchmin":
                         level.helisoundvalues[heli_type][heli_part].pitchmin = value;
-                        println("<unknown string>" + value);
+                        println("<dev string:x32e>" + value);
                         break;
                     case #"pitchmax":
                         level.helisoundvalues[heli_type][heli_part].pitchmax = value;
-                        println("<unknown string>" + value);
+                        println("<dev string:x345>" + value);
                         break;
                     case #"speedvolumemax":
                         level.helisoundvalues[heli_type][heli_part].speedvolumemax = value;
-                        println("<unknown string>" + value);
+                        println("<dev string:x35c>" + value);
                         break;
                     case #"speedpitchmax":
                         level.helisoundvalues[heli_type][heli_part].speedpitchmax = value;
-                        println("<unknown string>" + value);
+                        println("<dev string:x379>" + value);
                         break;
                     default:
-                        println("<unknown string>");
+                        println("<dev string:x395>");
                         break;
                     }
                 }
-                setdvar(#"helisounds", "<unknown string>");
+                setdvar(#"helisounds", "<dev string:x38>");
             }
             wait(0.1);
         }
@@ -359,19 +358,19 @@ function start_helicopter_sounds(localclientnum) {
         case #"veh_drn_qrdrone_mp":
             break;
         default:
-            println("<unknown string>" + self.vehicletype + "<unknown string>");
+            println("<dev string:x3f1>" + self.vehicletype + "<dev string:x407>");
             break;
         }
         self init_terrain_sounds();
         self thread terrain_trace();
         /#
             if (getdvarint(#"debug_heli", 0) > 0) {
-                iprintlnbold("<unknown string>" + self.vehicletype + "<unknown string>");
+                iprintlnbold("<dev string:x434>" + self.vehicletype + "<dev string:x448>");
             }
         #/
         return;
     }
-    println("<unknown string>");
+    println("<dev string:x457>");
 }
 
 // Namespace helicopter_sounds/helicopter_sounds_shared
@@ -405,7 +404,7 @@ function heli_sound_play(heli_bone) {
     case #"wind":
         break;
     default:
-        println("<unknown string>" + heli_bone.type + "<unknown string>");
+        println("<dev string:x492>" + heli_bone.type + "<dev string:x4b1>");
         break;
     }
 }
@@ -487,7 +486,7 @@ function heli_idle_run_transition(heli_type, heli_part, wait_time, updown) {
     }
     while (isdefined(self)) {
         if (!isdefined(level.helisoundvalues[heli_type]) || !isdefined(level.helisoundvalues[heli_type][heli_part])) {
-            println("<unknown string>");
+            println("<dev string:x4d1>");
             return;
         }
         max_speed_vol = level.helisoundvalues[heli_type][heli_part].speedvolumemax;
@@ -511,10 +510,10 @@ function heli_idle_run_transition(heli_type, heli_part, wait_time, updown) {
             heli_bone.run setloopstate(heli_bone.run.alias, run_volume, run_pitch, 1, 0.15);
             /#
                 if (getdvarint(#"debug_heli", 0) > 0) {
-                    println("<unknown string>" + self.cur_speed);
-                    println("<unknown string>" + run_pitch);
-                    println("<unknown string>" + self.cur_speed);
-                    println("<unknown string>" + run_volume);
+                    println("<dev string:x502>" + self.cur_speed);
+                    println("<dev string:x51a>" + run_pitch);
+                    println("<dev string:x502>" + self.cur_speed);
+                    println("<dev string:x52d>" + run_volume);
                 }
             #/
         }
@@ -645,7 +644,7 @@ function terrain_trace() {
 // Checksum 0x370076cc, Offset: 0x2fc8
 // Size: 0x418
 function aircraft_dustkick(localclientnum) {
-    println("<unknown string>");
+    println("<dev string:x540>");
     self endon(#"death");
     maxheight = 1200;
     minheight = 350;
@@ -701,10 +700,10 @@ function aircraft_dustkick(localclientnum) {
         if (!isdefined(self.treadfxnamearray) || !isdefined(self.treadfxnamearray[trace[#"surfacetype"]])) {
             /#
                 if (isdefined(self.vehicletype)) {
-                    println("<unknown string>" + trace[#"surfacetype"] + "<unknown string>" + self.vehicletype);
+                    println("<dev string:x55c>" + trace[#"surfacetype"] + "<dev string:x582>" + self.vehicletype);
                     return;
                 }
-                println("<unknown string>" + trace[#"surfacetype"] + "<unknown string>");
+                println("<dev string:x55c>" + trace[#"surfacetype"] + "<dev string:x597>");
             #/
             return;
         }

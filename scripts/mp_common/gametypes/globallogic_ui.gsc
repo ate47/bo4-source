@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_player.gsc;
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\userspawnselection.gsc;
@@ -135,7 +134,7 @@ function menuautoassign(comingfrommenu, var_4c542e39) {
     }
     /#
         assignmentoverride = getdvarstring(#"autoassignteam");
-        if (assignmentoverride != "<unknown string>" && (assignmentoverride != #"spectator" || !isbot(self))) {
+        if (assignmentoverride != "<dev string:x38>" && (assignmentoverride != #"spectator" || !isbot(self))) {
             assignment = assignmentoverride;
         }
     #/
@@ -408,7 +407,7 @@ function menuclass(response, forcedclass, updatecharacterindex, closemenus) {
 function function_9ed118fe(characterindex) {
     self endon(#"disconnect");
     if (!isdefined(characterindex)) {
-        println("<unknown string>");
+        println("<dev string:x3b>");
         return;
     }
     if (!draft::can_select_character(characterindex)) {

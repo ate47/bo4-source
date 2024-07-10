@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace blackboard;
 
 // Namespace blackboard/blackboard
@@ -6,8 +5,8 @@
 // Checksum 0xc5c6c510, Offset: 0x68
 // Size: 0x134
 function registerblackboardattribute(entity, attributename, defaultattributevalue, getterfunction) {
-    assert(isdefined(entity.__blackboard), "<unknown string>");
-    assert(!isdefined(entity.__blackboard[attributename]), "<unknown string>" + attributename + "<unknown string>");
+    assert(isdefined(entity.__blackboard), "<dev string:x38>");
+    assert(!isdefined(entity.__blackboard[attributename]), "<dev string:x77>" + attributename + "<dev string:x91>");
     if (isdefined(getterfunction)) {
         assert(isfunctionptr(getterfunction));
         entity.__blackboard[attributename] = getterfunction;
@@ -48,7 +47,7 @@ function setstructblackboardattribute(struct, attributename, attributevalue) {
         if (!isdefined(attributevalue) && isfunctionptr(struct.__blackboard[attributename])) {
             return;
         }
-        assert(!isfunctionptr(struct.__blackboard[attributename]), "<unknown string>");
+        assert(!isfunctionptr(struct.__blackboard[attributename]), "<dev string:xa8>");
     }
     struct.__blackboard[attributename] = attributevalue;
 }

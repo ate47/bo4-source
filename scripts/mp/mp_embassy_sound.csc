@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_embassy_sound;
 
 // Namespace mp_embassy_sound/mp_embassy_sound

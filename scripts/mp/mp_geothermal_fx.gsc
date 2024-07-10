@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_geothermal_fx;
 
 // Namespace mp_geothermal_fx/mp_geothermal_fx

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_oracle_boons.csc;
 #using scripts\zm\zm_red_main_quest.csc;
 #using scripts\zm\zm_red_ww_quests.csc;

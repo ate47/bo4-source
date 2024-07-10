@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ai_zombie.gsc;
 #using scripts\wz_common\wz_ai_utils.gsc;
 #using scripts\mp_common\item_world.gsc;
@@ -195,7 +194,7 @@ function private on_player_killed(params) {
     function spawn_a_zombie() {
         players = getplayers();
         spawn_position = players[0].origin + vectorscale(anglestoforward(level.players[0].angles), 100);
-        spawned = spawnactor(#"spawner_boct_zombie_wz", spawn_position, (0, 0, 0), "<unknown string>");
+        spawned = spawnactor(#"spawner_boct_zombie_wz", spawn_position, (0, 0, 0), "<dev string:x38>");
         if (isdefined(spawned)) {
             spawned thread wz_ai_utils::function_7adc1e46(undefined, 0);
             spawned.var_ef59b90 = 3;
@@ -212,36 +211,36 @@ function private on_player_killed(params) {
     // Size: 0x930
     function function_d0055419() {
         sessionmode = currentsessionmode();
-        setdvar(#"hash_70cb00491d863294", "<unknown string>");
+        setdvar(#"hash_70cb00491d863294", "<dev string:x44>");
         if (sessionmode != 4) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x47>");
+            adddebugcommand("<dev string:x8c>");
+            adddebugcommand("<dev string:xcb>");
+            adddebugcommand("<dev string:x10c>");
+            adddebugcommand("<dev string:x156>");
+            adddebugcommand("<dev string:x1a2>");
+            adddebugcommand("<dev string:x1eb>");
+            adddebugcommand("<dev string:x236>");
+            adddebugcommand("<dev string:x286>");
+            adddebugcommand("<dev string:x2d8>");
+            adddebugcommand("<dev string:x322>");
+            adddebugcommand("<dev string:x36e>");
+            adddebugcommand("<dev string:x3b2>");
+            adddebugcommand("<dev string:x3f8>");
+            adddebugcommand("<dev string:x43c>");
+            adddebugcommand("<dev string:x482>");
+            adddebugcommand("<dev string:x4d8>");
+            adddebugcommand("<dev string:x530>");
+            adddebugcommand("<dev string:x586>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_70cb00491d863294", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_70cb00491d863294", "<dev string:x44>");
+            if (cmd == "<dev string:x44>") {
                 continue;
             }
-            if (strstartswith(cmd, "<unknown string>")) {
-                arr = strtok(cmd, "<unknown string>");
+            if (strstartswith(cmd, "<dev string:x5de>")) {
+                arr = strtok(cmd, "<dev string:x5ef>");
                 zone_name = arr[1];
                 ai_type = hash(arr[2]);
                 zone_ins = function_aacb2027(zone_name, ai_type);
@@ -252,21 +251,21 @@ function private on_player_killed(params) {
                     level thread function_41101f23(zone_ins, 1);
                     level notify(#"hash_4168bee802274065");
                 }
-            } else if (strstartswith(cmd, "<unknown string>")) {
-                arr = strtok(cmd, "<unknown string>");
+            } else if (strstartswith(cmd, "<dev string:x5f3>")) {
+                arr = strtok(cmd, "<dev string:x5ef>");
                 zone_name = arr[1];
                 ai_type = hash(arr[2]);
                 zone_ins = function_aacb2027(zone_name, ai_type);
                 zone_ins.is_active = 0;
                 zone_ins.lock_zone = 0;
                 zone_ins.is_disabled = 1;
-                zone_ins.minimap clientfield::set("<unknown string>", 0);
+                zone_ins.minimap clientfield::set("<dev string:x606>", 0);
                 zone_ins thread function_a82cad64(zone_ins);
                 zone_ins.var_8f95a80f = gettime() + level.var_5f531c0f;
                 zone_ins function_4fa5953();
                 level notify(#"hash_4168bee802274065");
-            } else if (strstartswith(cmd, "<unknown string>")) {
-                weapon_name = strreplace(cmd, "<unknown string>", "<unknown string>");
+            } else if (strstartswith(cmd, "<dev string:x618>")) {
+                weapon_name = strreplace(cmd, "<dev string:x618>", "<dev string:x44>");
                 weapon = getweapon(weapon_name);
                 players = getplayers();
                 players[0] giveweapon(weapon);
@@ -341,7 +340,7 @@ function private on_player_killed(params) {
                     break;
                 }
             }
-            setdvar(#"hash_70cb00491d863294", "<unknown string>");
+            setdvar(#"hash_70cb00491d863294", "<dev string:x44>");
         }
     }
 
@@ -354,7 +353,7 @@ function private on_player_killed(params) {
 function function_dc16557c() {
     if (isdefined(level.var_dc16557c) && level.var_dc16557c) {
         for (i = 0; i < level.var_5b357434.size; i++) {
-            assert(i < 10, "<unknown string>");
+            assert(i < 10, "<dev string:x627>");
             ai_zone = level.var_5b357434[i];
             if (ai_zone.zone_activated == 0) {
                 continue;
@@ -383,7 +382,7 @@ function function_dc16557c() {
                         }
                         index = 0;
                         foreach (key, item in ai_zone.item_drops[archetype]) {
-                            assert(index < 20, "<unknown string>");
+                            assert(index < 20, "<dev string:x656>");
                             match_record::set_stat(var_7a69806, index, #"item_name", key);
                             match_record::set_stat(var_7a69806, index, #"item_count", item.count);
                             match_record::set_stat(var_7a69806, index, #"zone_name", var_c2b80e0c);
@@ -918,17 +917,17 @@ function function_48b0976c() {
                             }
                         }
                         if (ai_zone.is_active) {
-                            print3d(drawpos + (0, 0, 25), "<unknown string>" + ai_zone.var_7aa3cde7 + "<unknown string>" + ai_zone.var_aeae9f59, zonecolor);
-                            print3d(drawpos + (0, 0, 10), "<unknown string>" + ai_zone.var_84b8298c + "<unknown string>" + ai_zone.var_10f73408, zonecolor);
+                            print3d(drawpos + (0, 0, 25), "<dev string:x68a>" + ai_zone.var_7aa3cde7 + "<dev string:x693>" + ai_zone.var_aeae9f59, zonecolor);
+                            print3d(drawpos + (0, 0, 10), "<dev string:x697>" + ai_zone.var_84b8298c + "<dev string:x693>" + ai_zone.var_10f73408, zonecolor);
                         }
                     }
-                    print3d(drawpos + (0, 0, 40), "<unknown string>" + ai_zone.zone_name, zonecolor);
+                    print3d(drawpos + (0, 0, 40), "<dev string:x6a0>" + ai_zone.zone_name, zonecolor);
                     for (i = 0; i < ai_zone.zone_category.size; i++) {
-                        print3d(drawpos + (0, 0, 55 + 15 * i), "<unknown string>" + ai_zone.zone_category[i], zonecolor);
+                        print3d(drawpos + (0, 0, 55 + 15 * i), "<dev string:x6a6>" + ai_zone.zone_category[i], zonecolor);
                     }
                     circle(drawpos, 40, zonecolor, 0, 1);
                 }
-                var_f71adb48 = struct::get_array("<unknown string>", "<unknown string>");
+                var_f71adb48 = struct::get_array("<dev string:x6b2>", "<dev string:x6bf>");
                 for (i = 0; i < var_f71adb48.size; i++) {
                     circle(var_f71adb48[i].origin + (0, 0, 1), 5, (1, 0.5, 0), 0, 1);
                 }
@@ -1178,12 +1177,12 @@ function function_5f0d105a(zone_category, zone_name, spawner_type, var_aeae9f59,
     }
     level.var_5b357434[level.var_5b357434.size] = var_a59ba023;
     /#
-        path = "<unknown string>" + var_a59ba023.zone_name + "<unknown string>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<unknown string>" + "<unknown string>";
-        command = "<unknown string>" + var_a59ba023.zone_name + "<unknown string>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<unknown string>";
-        adddebugcommand(path + "<unknown string>" + command + "<unknown string>");
-        path = "<unknown string>" + var_a59ba023.zone_name + "<unknown string>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<unknown string>" + "<unknown string>";
-        command = "<unknown string>" + var_a59ba023.zone_name + "<unknown string>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<unknown string>";
-        adddebugcommand(path + "<unknown string>" + command + "<unknown string>");
+        path = "<dev string:x6d3>" + var_a59ba023.zone_name + "<dev string:x6f3>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<dev string:x6f7>" + "<dev string:x703>";
+        command = "<dev string:x707>" + var_a59ba023.zone_name + "<dev string:x5ef>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<dev string:x703>";
+        adddebugcommand(path + "<dev string:x72a>" + command + "<dev string:x72e>");
+        path = "<dev string:x6d3>" + var_a59ba023.zone_name + "<dev string:x6f3>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<dev string:x733>" + "<dev string:x703>";
+        command = "<dev string:x741>" + var_a59ba023.zone_name + "<dev string:x5ef>" + function_9e72a96(var_a59ba023.var_cafac64a) + "<dev string:x703>";
+        adddebugcommand(path + "<dev string:x72a>" + command + "<dev string:x72e>");
     #/
     return var_a59ba023;
 }
@@ -1841,14 +1840,14 @@ function function_f3e8cf82() {
                     var_ffabb450 = 0;
                     foreach (ai_zone in level.var_5b357434) {
                         if (!ai_zone.is_disabled && isdefined(ai_zone.is_active) && ai_zone.is_active) {
-                            iprintlnbold(ai_zone.zone_name + "<unknown string>" + ai_zone.var_84b8298c + "<unknown string>");
+                            iprintlnbold(ai_zone.zone_name + "<dev string:x766>" + ai_zone.var_84b8298c + "<dev string:x76b>");
                             var_ffabb450 = 1;
                         }
                     }
                     if (var_ffabb450) {
                     }
                 } else {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x775>");
                 }
             }
             wait(1);

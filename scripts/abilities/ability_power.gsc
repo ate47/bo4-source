@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_util.gsc;
 #using scripts\abilities\ability_gadgets.gsc;
 
@@ -11,9 +10,9 @@
     // Checksum 0xbddbc568, Offset: 0xd8
     // Size: 0x104
     function cpower_print(slot, str) {
-        color = "<unknown string>";
-        toprint = color + "<unknown string>" + str;
-        weaponname = "<unknown string>";
+        color = "<dev string:x38>";
+        toprint = color + "<dev string:x3d>" + str;
+        weaponname = "<dev string:x50>";
         if (isdefined(self._gadgets_player[slot])) {
             weaponname = self._gadgets_player[slot].name;
         }
@@ -21,7 +20,7 @@
             self iprintlnbold(toprint);
             return;
         }
-        println(self.playername + "<unknown string>" + weaponname + "<unknown string>" + toprint);
+        println(self.playername + "<dev string:x57>" + weaponname + "<dev string:x57>" + toprint);
     }
 
 #/
@@ -177,7 +176,7 @@ function power_gain_event(slot, eattacker, val, source) {
             self.var_aec4af05[slot] = self.var_aec4af05[slot] + powertoadd;
         }
         /#
-            self cpower_print(slot, "<unknown string>" + powertoadd + "<unknown string>" + source + "<unknown string>" + powerleft);
+            self cpower_print(slot, "<dev string:x5c>" + powertoadd + "<dev string:x68>" + source + "<dev string:x75>" + powerleft);
         #/
     }
 }
@@ -220,7 +219,7 @@ function power_loss_event(slot, eattacker, val, source) {
     if (powertoremove > 0.1 || powertoremove < -0.1) {
         powerleft = self gadgetpowerchange(slot, powertoremove);
         /#
-            self cpower_print(slot, "<unknown string>" + powertoremove + "<unknown string>" + source + "<unknown string>" + powerleft);
+            self cpower_print(slot, "<dev string:x86>" + powertoremove + "<dev string:x68>" + source + "<dev string:x75>" + powerleft);
         #/
     }
 }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_1c28a77967267c7a;
 #using scripts\zm\zm_orange_zones.gsc;
 #using scripts\zm\zm_orange_util.gsc;
@@ -512,8 +511,8 @@ function function_5dbd6a40(s_zipline_use) {
     self playrumblelooponentity(#"buzz_high");
     /#
         m_player_fake.var_b20b0960 = self.var_b20b0960;
-        line_start = struct::get(vnd_start.target + "<unknown string>", "<unknown string>");
-        line_end = struct::get(vnd_start.target + "<unknown string>", "<unknown string>");
+        line_start = struct::get(vnd_start.target + "<dev string:x38>", "<dev string:x41>");
+        line_end = struct::get(vnd_start.target + "<dev string:x55>", "<dev string:x41>");
         if (isdefined(line_start) && isdefined(line_end)) {
             m_player_fake thread zm_ai_zipline::function_dc61ccae(vnd_start, line_start.origin, line_end.origin);
         } else {
@@ -639,8 +638,8 @@ function private function_85a2c43b() {
         speed = length(velocity);
         speed *= 0.0568182;
         /#
-            print3d(self.origin + player_forward * 100 + (0, 0, 60), "<unknown string>" + speed, (1, 0, 0), 1, 1, 1);
-            record3dtext("<unknown string>" + speed, self.origin, (1, 0, 0), "<unknown string>");
+            print3d(self.origin + player_forward * 100 + (0, 0, 60), "<dev string:x5c>" + speed, (1, 0, 0), 1, 1, 1);
+            record3dtext("<dev string:x5c>" + speed, self.origin, (1, 0, 0), "<dev string:x5f>");
         #/
     }
 }
@@ -728,17 +727,17 @@ function function_a393b77f() {
                 s_zipline_crank zm_unitrigger::unregister_unitrigger(s_zipline_crank.s_unitrigger);
             }
             if (!isdefined(s_zipline_crank.var_68a09be4) || !s_zipline_crank.var_68a09be4) {
-                if (s_zipline_crank.str_location === "<unknown string>") {
+                if (s_zipline_crank.str_location === "<dev string:x68>") {
                     level flag::set(#"hash_7def3e555eba842c");
                 } else {
                     level flag::set(#"hash_e29d662bb90e4bc");
                 }
-                if (s_zipline_crank.var_68ae361b == "<unknown string>") {
-                    s_zipline_crank.var_3bc09679 = struct::get("<unknown string>", "<unknown string>");
-                } else if (s_zipline_crank.var_68ae361b == "<unknown string>") {
-                    s_zipline_crank.var_3bc09679 = struct::get("<unknown string>", "<unknown string>");
+                if (s_zipline_crank.var_68ae361b == "<dev string:x77>") {
+                    s_zipline_crank.var_3bc09679 = struct::get("<dev string:x94>", "<dev string:xa8>");
+                } else if (s_zipline_crank.var_68ae361b == "<dev string:xb5>") {
+                    s_zipline_crank.var_3bc09679 = struct::get("<dev string:xd8>", "<dev string:xa8>");
                 }
-                s_zipline_crank.var_3bc09679 scene::play("<unknown string>");
+                s_zipline_crank.var_3bc09679 scene::play("<dev string:xed>");
                 linktraversal(s_zipline_crank.var_f316eff6);
                 s_zipline_crank.var_68a09be4 = 1;
                 s_zipline_crank notify(#"hash_6c3e5c135959d4ec");

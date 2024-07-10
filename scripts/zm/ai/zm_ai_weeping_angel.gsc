@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_audio.gsc;
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using script_24c32478acf44108;
@@ -44,9 +43,9 @@ function __init__() {
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_64a769b6a696ad3e", &function_ad034041, 1);
     spawner::add_archetype_spawn_function(#"weeping_angel", &function_d8a99ae2);
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
+        adddebugcommand("<dev string:x48>");
+        adddebugcommand("<dev string:x78>");
     #/
     level thread aat::register_immunity("zm_aat_brain_decay", #"weeping_angel", 1, 1, 1);
     level thread aat::register_immunity("zm_aat_frostbite", #"weeping_angel", 1, 1, 1);
@@ -109,7 +108,7 @@ function private function_b6824ff0(entity, player, duration, color) {
             line(start, end, color, 1, 1);
             sphere(end, 10, color, 1, 0, 8, 1);
             distance = distance(start, end);
-            print3d(end + (0, 0, 10), "<unknown string>" + distance, color, 1, 1, 1);
+            print3d(end + (0, 0, 10), "<dev string:xc8>" + distance, color, 1, 1, 1);
         }
     }
 

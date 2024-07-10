@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\deployable.gsc;
 #using scripts\killstreaks\ultimate_turret_shared.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
@@ -165,7 +164,7 @@ function function_1c601b99() {
 }
 
 // Namespace ultimate_turret/ultimate_turret
-// Params f, eflags: 0x1 linked
+// Params 15, eflags: 0x1 linked
 // Checksum 0x42833144, Offset: 0xc98
 // Size: 0x300
 function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {

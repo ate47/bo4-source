@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_jungle2_scripted.csc;
 #using scripts\mp\mp_jungle2_sound.csc;
 #using scripts\mp\mp_jungle2_fx.csc;

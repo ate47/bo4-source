@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\ai\target.gsc;
 #using scripts\killstreaks\ai\escort.gsc;
 #using scripts\killstreaks\ai\state.gsc;
@@ -298,8 +297,8 @@ function update_patrol() {
         }
     }
     /#
-        recordcircle(self.ai.patrol.var_9033671b, self.ai.patrol.patrol_radius, (0, 0, 1), "<unknown string>");
-        recordcircle(self.ai.patrol.var_9033671b, self.ai.patrol.var_edc20efd, (1, 0, 0), "<unknown string>");
+        recordcircle(self.ai.patrol.var_9033671b, self.ai.patrol.patrol_radius, (0, 0, 1), "<dev string:x38>");
+        recordcircle(self.ai.patrol.var_9033671b, self.ai.patrol.var_edc20efd, (1, 0, 0), "<dev string:x38>");
     #/
 }
 

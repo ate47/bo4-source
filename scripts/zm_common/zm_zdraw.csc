@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\zm_common\zm.csc;
 #using scripts\zm_common\util.csc;
@@ -27,7 +26,7 @@
     // Checksum 0x8010f6f8, Offset: 0x110
     // Size: 0x9c
     function __init__() {
-        setdvar(#"zdraw", "<unknown string>");
+        setdvar(#"zdraw", "<dev string:x38>");
         level.zdraw = spawnstruct();
         function_c9f70832();
         function_99bd35ec();
@@ -107,7 +106,7 @@
         level.zdraw.sides = 10;
         level.zdraw.var_eeef5e89 = (0, 0, 0);
         level.zdraw.var_f78505a1 = 0;
-        level.zdraw.var_d15c03f8 = "<unknown string>";
+        level.zdraw.var_d15c03f8 = "<dev string:x38>";
     }
 
     // Namespace zm_zdraw/zm_zdraw
@@ -121,9 +120,9 @@
             cmd = getdvarstring(#"zdraw");
             if (cmd.size) {
                 function_b36498d3();
-                params = strtok(cmd, "<unknown string>");
+                params = strtok(cmd, "<dev string:x3b>");
                 function_cd7ed6c5(params, 0, 1);
-                setdvar(#"zdraw", "<unknown string>");
+                setdvar(#"zdraw", "<dev string:x38>");
             }
             wait(0.5);
         }
@@ -143,7 +142,7 @@
                 continue;
             }
             if (isdefined(toplevel) && toplevel) {
-                function_96c207f("<unknown string>" + var_a99ac828[startat]);
+                function_96c207f("<dev string:x41>" + var_a99ac828[startat]);
             }
             return startat;
         }
@@ -237,13 +236,13 @@
     // Checksum 0x52b1da06, Offset: 0xf88
     // Size: 0x1de
     function function_b5cdeec6(var_a99ac828, startat) {
-        level.zdraw.text = "<unknown string>";
+        level.zdraw.text = "<dev string:x38>";
         if (isdefined(var_a99ac828[startat])) {
             var_769ff4d7 = function_7bf700e4(var_a99ac828, startat);
             if (var_769ff4d7 > startat) {
                 startat = var_769ff4d7;
                 level.zdraw.text = level.zdraw.var_d15c03f8;
-                level.zdraw.var_d15c03f8 = "<unknown string>";
+                level.zdraw.var_d15c03f8 = "<dev string:x38>";
             }
         }
         while (isdefined(var_a99ac828[startat])) {
@@ -287,7 +286,7 @@
                     level.zdraw.color = level.zdraw.colors[var_a99ac828[startat]];
                 } else {
                     level.zdraw.color = (1, 1, 1);
-                    function_96c207f("<unknown string>" + var_a99ac828[startat]);
+                    function_96c207f("<dev string:x59>" + var_a99ac828[startat]);
                 }
                 startat += 1;
             }
@@ -426,7 +425,7 @@
                 level.zdraw.var_eeef5e89 = (level.zdraw.var_f78505a1, level.zdraw.var_eeef5e89[1], level.zdraw.var_eeef5e89[2]);
                 level.zdraw.var_f78505a1 = 0;
             } else {
-                function_96c207f("<unknown string>");
+                function_96c207f("<dev string:x6f>");
                 return startat;
             }
             var_769ff4d7 = revive_getdvar(var_a99ac828, startat);
@@ -435,7 +434,7 @@
                 level.zdraw.var_eeef5e89 = (level.zdraw.var_eeef5e89[0], level.zdraw.var_f78505a1, level.zdraw.var_eeef5e89[2]);
                 level.zdraw.var_f78505a1 = 0;
             } else {
-                function_96c207f("<unknown string>");
+                function_96c207f("<dev string:x6f>");
                 return startat;
             }
             var_769ff4d7 = revive_getdvar(var_a99ac828, startat);
@@ -444,7 +443,7 @@
                 level.zdraw.var_eeef5e89 = (level.zdraw.var_eeef5e89[0], level.zdraw.var_eeef5e89[1], level.zdraw.var_f78505a1);
                 level.zdraw.var_f78505a1 = 0;
             } else {
-                function_96c207f("<unknown string>");
+                function_96c207f("<dev string:x6f>");
                 return startat;
             }
         }
@@ -482,7 +481,7 @@
     // Checksum 0x19f93c1, Offset: 0x1bb0
     // Size: 0x34
     function function_96c207f(msg) {
-        println("<unknown string>" + msg);
+        println("<dev string:x94>" + msg);
     }
 
 #/

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_audio.gsc;
@@ -85,11 +84,11 @@ function function_445e3d3d() {
             wait(3);
             level.var_b53764f7 += 1;
             /#
-                iprintlnbold("<unknown string>" + level.var_b53764f7);
+                iprintlnbold("<dev string:x38>" + level.var_b53764f7);
             #/
             zm_hms_util::function_e308175e(#"hash_6b6fadebd260d209" + level.var_b53764f7 + "_sfx", self.origin);
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x4e>");
             #/
         }
     }
@@ -168,7 +167,7 @@ function function_a7f8aee6() {
             wait(1);
         }
         /#
-            iprintlnbold("<unknown string>" + i);
+            iprintlnbold("<dev string:x6e>" + i);
         #/
     }
 }
@@ -322,7 +321,7 @@ function function_8c80503() {
     wait(2);
     zm_hms_util::function_e308175e(#"hash_2d0c86fd62ab3853" + self.var_614bfc5c + 1 + "_sfx", self.origin);
     /#
-        iprintlnbold("<unknown string>" + self.var_614bfc5c);
+        iprintlnbold("<dev string:x87>" + self.var_614bfc5c);
     #/
     self.var_b21e0263 = 0;
 }
@@ -353,7 +352,7 @@ function function_d4c6dc0d() {
 function uin_kls_counteruavdefeated() {
     zm_hms_util::function_e308175e(#"hash_d065c4529d709fe" + self.var_614bfc5c + 1 + "_sfx", self.origin);
     /#
-        iprintlnbold("<unknown string>" + self.var_614bfc5c);
+        iprintlnbold("<dev string:xa1>" + self.var_614bfc5c);
     #/
 }
 
@@ -460,7 +459,7 @@ function function_8352562a() {
             wait(2);
             zm_hms_util::function_52c3fe8d(s_reel.vo_line, level.var_94b00cff.origin);
             /#
-                iprintlnbold("<unknown string>" + s_reel.var_8a821e1e + "<unknown string>");
+                iprintlnbold("<dev string:xbc>" + s_reel.var_8a821e1e + "<dev string:xda>");
             #/
             var_e578920c++;
             level.var_94b00cff stoploopsound();

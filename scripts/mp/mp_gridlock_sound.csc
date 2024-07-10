@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_gridlock_sound;
 
 // Namespace mp_gridlock_sound/mp_gridlock_sound

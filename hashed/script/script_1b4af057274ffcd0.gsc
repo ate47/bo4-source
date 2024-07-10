@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\ai\strategic_command.gsc;
@@ -220,7 +219,7 @@ function private function_873b1369(commander) {
 // Checksum 0xb1098e6c, Offset: 0x1038
 // Size: 0x9a
 function private function_cb29a211(commander, squad, constants) {
-    assert(isdefined(constants[#"maxage"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isdefined(constants[#"maxage"]), "<dev string:x38>" + "<dev string:x46>" + "<dev string:x73>");
     if (gettime() > squad.createtime + constants[#"maxage"]) {
         return false;
     }

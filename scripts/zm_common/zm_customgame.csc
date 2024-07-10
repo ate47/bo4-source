@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\clientfield_shared.csc;
 #using scripts\core_common\callbacks_shared.csc;
@@ -112,7 +111,7 @@ function function_901b751c(var_c9db62d5) {
         return undefined;
     }
     setting = getgametypesetting(var_c9db62d5);
-    assert(isdefined(setting), "<unknown string>" + var_c9db62d5 + "<unknown string>");
+    assert(isdefined(setting), "<dev string:x38>" + var_c9db62d5 + "<dev string:x50>");
     return setting;
 }
 

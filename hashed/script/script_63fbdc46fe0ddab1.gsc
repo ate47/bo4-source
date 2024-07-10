@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace zm_red_challenges_hud;
@@ -86,7 +85,7 @@ class czm_red_challenges_hud : cluielem {
             set_data(localclientnum, "_state", 3);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud

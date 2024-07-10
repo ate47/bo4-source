@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here.gsc;
@@ -604,7 +603,7 @@ function private function_89c75856() {
 function private on_disconnect() {
     if (self hasweapon(level.var_79260935.w_music_box)) {
         /#
-            iprintln("<unknown string>");
+            iprintln("<dev string:x38>");
         #/
         level.var_79260935.s_vault_reward function_89c75856();
     }
@@ -617,7 +616,7 @@ function private on_disconnect() {
 function private function_33f0ddd3(s_event) {
     if (s_event.event === "take_weapon" && s_event.weapon === level.var_79260935.w_music_box && self.var_3b55baa1 !== level.var_79260935.w_music_box) {
         /#
-            iprintln("<unknown string>");
+            iprintln("<dev string:x38>");
         #/
         level.var_79260935.s_vault_reward function_89c75856();
     }

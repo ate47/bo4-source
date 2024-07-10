@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\ai\archetype_utility.gsc;
@@ -121,81 +120,81 @@ function private hasaivsaienemy(behaviortreeentity) {
     enemy = behaviortreeentity.enemy;
     if (getdvarint(#"disable_aivsai_melee", 0)) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x38>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (!isdefined(enemy)) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x70>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (!(isalive(behaviortreeentity) && isalive(enemy))) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x93>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (!isai(enemy) || !isactor(enemy)) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:xcc>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (isdefined(enemy.archetype)) {
         if (enemy.archetype != #"human" && enemy.archetype != #"human_riotshield" && enemy.archetype != #"robot") {
             /#
-                record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+                record3dtext("<dev string:xfa>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
             #/
             return false;
         }
     }
     if (enemy.team == behaviortreeentity.team) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x135>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (enemy isragdoll()) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x165>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (isdefined(enemy.ignoreme) && enemy.ignoreme) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x193>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (isdefined(enemy._ai_melee_markeddead) && enemy._ai_melee_markeddead) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x1c5>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (behaviortreeentity ai::has_behavior_attribute("can_initiateaivsaimelee") && !behaviortreeentity ai::get_behavior_attribute("can_initiateaivsaimelee")) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x207>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (behaviortreeentity ai::has_behavior_attribute("can_melee") && !behaviortreeentity ai::get_behavior_attribute("can_melee")) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x24f>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (enemy ai::has_behavior_attribute("can_be_meleed") && !enemy ai::get_behavior_attribute("can_be_meleed")) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x289>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (distance2dsquared(behaviortreeentity.origin, enemy.origin) > 22500) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x2c0>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         behaviortreeentity._ai_melee_initiator = undefined;
         return false;
@@ -206,13 +205,13 @@ function private hasaivsaienemy(behaviortreeentity) {
     fdot = vectordot(toenemyvec, forwardvec);
     if (fdot < 0) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x2e8>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (enemy isinscriptedstate()) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x312>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
@@ -220,33 +219,33 @@ function private hasaivsaienemy(behaviortreeentity) {
     enemystance = enemy getblackboardattribute("_stance");
     if (currentstance != "stand" || enemystance != "stand") {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x344>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (!shouldaquiremutexonenemyforaivsaimelee(behaviortreeentity)) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x37d>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (abs(behaviortreeentity.origin[2] - behaviortreeentity.enemy.origin[2]) > 16) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x3b6>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     raisedenemyentorigin = (behaviortreeentity.enemy.origin[0], behaviortreeentity.enemy.origin[1], behaviortreeentity.enemy.origin[2] + 8);
     if (!behaviortreeentity maymovetopoint(raisedenemyentorigin, 0, 1, behaviortreeentity.enemy)) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x3e2>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     if (isdefined(enemy.allowdeath) && !enemy.allowdeath) {
         if (isdefined(behaviortreeentity.allowdeath) && !behaviortreeentity.allowdeath) {
             /#
-                record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+                record3dtext("<dev string:x409>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
             #/
             self notify(#"failed_melee_mbs", {#entity:enemy});
             return false;
@@ -289,17 +288,17 @@ function private isinitiator(behaviortreeentity) {
 function private hascloseaivsaienemy(behaviortreeentity) {
     if (!(isdefined(behaviortreeentity._ai_melee_animname) && isdefined(behaviortreeentity.enemy._ai_melee_animname))) {
         /#
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x441>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     animationstartorigin = getstartorigin(behaviortreeentity.enemy gettagorigin("tag_sync"), behaviortreeentity.enemy gettagangles("tag_sync"), behaviortreeentity._ai_melee_animname);
     /#
-        record3dtext("<unknown string>" + sqrt(900), behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
-        record3dtext("<unknown string>" + distance(animationstartorigin, behaviortreeentity.origin), behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
-        recordcircle(behaviortreeentity.enemy gettagorigin("<unknown string>"), 8, (1, 0, 0), "<unknown string>", behaviortreeentity);
-        recordcircle(animationstartorigin, 8, (1, 0.5, 0), "<unknown string>", behaviortreeentity);
-        recordline(animationstartorigin, behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity);
+        record3dtext("<dev string:x46f>" + sqrt(900), behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
+        record3dtext("<dev string:x4a0>" + distance(animationstartorigin, behaviortreeentity.origin), behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
+        recordcircle(behaviortreeentity.enemy gettagorigin("<dev string:x4c8>"), 8, (1, 0, 0), "<dev string:x63>", behaviortreeentity);
+        recordcircle(animationstartorigin, 8, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity);
+        recordline(animationstartorigin, behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity);
     #/
     if (distance2dsquared(behaviortreeentity.origin, animationstartorigin) <= 900) {
         return true;
@@ -309,7 +308,7 @@ function private hascloseaivsaienemy(behaviortreeentity) {
         moveangle = behaviortreeentity.angles[1] + behaviortreeentity getmotionangle();
         selfpredictedpos += (cos(moveangle), sin(moveangle), 0) * 200 * 0.2;
         /#
-            record3dtext("<unknown string>" + distance(selfpredictedpos, animationstartorigin), behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x4d3>" + distance(selfpredictedpos, animationstartorigin), behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         if (distance2dsquared(selfpredictedpos, animationstartorigin) <= 900) {
             return true;
@@ -326,7 +325,7 @@ function private chooseaivsaimeleeanimations(behaviortreeentity) {
     anglestoenemy = vectortoangles(behaviortreeentity.enemy.origin - behaviortreeentity.origin);
     yawtoenemy = angleclamp180(behaviortreeentity.enemy.angles[1] - anglestoenemy[1]);
     /#
-        record3dtext("<unknown string>" + abs(yawtoenemy), behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+        record3dtext("<dev string:x503>" + abs(yawtoenemy), behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
     #/
     behaviortreeentity._ai_melee_animname = undefined;
     behaviortreeentity.enemy._ai_melee_animname = undefined;
@@ -334,14 +333,14 @@ function private chooseaivsaimeleeanimations(behaviortreeentity) {
     defender_variant = choosearchetypevariant(behaviortreeentity.enemy);
     if (!aivsaimeleebundleexists(behaviortreeentity, attacker_variant, defender_variant)) {
         /#
-            record3dtext("<unknown string>" + function_9e72a96(behaviortreeentity.archetype) + "<unknown string>" + behaviortreeentity.enemy.archetype + "<unknown string>" + attacker_variant + "<unknown string>" + defender_variant, behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x515>" + function_9e72a96(behaviortreeentity.archetype) + "<dev string:x54a>" + behaviortreeentity.enemy.archetype + "<dev string:x54a>" + attacker_variant + "<dev string:x54a>" + defender_variant, behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         #/
         return false;
     }
     animbundle = level._aivsai_meleebundles[behaviortreeentity.archetype][behaviortreeentity.enemy.archetype][attacker_variant][defender_variant];
     /#
         if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
-            record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x54e>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         }
     #/
     foundanims = 0;
@@ -441,13 +440,13 @@ function playscriptedmeleeanimations() {
     opponent = self._ai_melee_opponent;
     if (!(isalive(self) && isalive(opponent))) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0.5, 0), "<unknown string>", self, 0.4);
+            record3dtext("<dev string:x57b>", self.origin, (1, 0.5, 0), "<dev string:x63>", self, 0.4);
         #/
         return 0;
     }
     if (self isragdoll() || opponent isragdoll()) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0.5, 0), "<unknown string>", self, 0.4);
+            record3dtext("<dev string:x5bd>", self.origin, (1, 0.5, 0), "<dev string:x63>", self, 0.4);
         #/
         return 0;
     }
@@ -455,15 +454,15 @@ function playscriptedmeleeanimations() {
         opponent animscripted("aivsaimeleeloser", self gettagorigin("tag_sync"), self gettagangles("tag_sync"), opponent._ai_melee_animname, "normal", undefined, 1, 0.2, 0.3);
         self animscripted("aivsaimeleewinner", self gettagorigin("tag_sync"), self gettagangles("tag_sync"), self._ai_melee_animname, "normal", undefined, 1, 0.2, 0.3);
         /#
-            recordcircle(self gettagorigin("<unknown string>"), 2, (1, 0.5, 0), "<unknown string>");
-            recordline(self gettagorigin("<unknown string>"), opponent.origin, (1, 0.5, 0), "<unknown string>");
+            recordcircle(self gettagorigin("<dev string:x4c8>"), 2, (1, 0.5, 0), "<dev string:x63>");
+            recordline(self gettagorigin("<dev string:x4c8>"), opponent.origin, (1, 0.5, 0), "<dev string:x63>");
         #/
     } else {
         self animscripted("aivsaimeleewinner", opponent gettagorigin("tag_sync"), opponent gettagangles("tag_sync"), self._ai_melee_animname, "normal", undefined, 1, 0.2, 0.3);
         opponent animscripted("aivsaimeleeloser", opponent gettagorigin("tag_sync"), opponent gettagangles("tag_sync"), opponent._ai_melee_animname, "normal", undefined, 1, 0.2, 0.3);
         /#
-            recordcircle(opponent gettagorigin("<unknown string>"), 2, (1, 0.5, 0), "<unknown string>");
-            recordline(opponent gettagorigin("<unknown string>"), self.origin, (1, 0.5, 0), "<unknown string>");
+            recordcircle(opponent gettagorigin("<dev string:x4c8>"), 2, (1, 0.5, 0), "<dev string:x63>");
+            recordline(opponent gettagorigin("<dev string:x4c8>"), self.origin, (1, 0.5, 0), "<dev string:x63>");
         #/
     }
     opponent thread handledeath(opponent._ai_melee_animname, self);
@@ -493,7 +492,7 @@ function playscriptedmeleeanimations() {
 // Size: 0x12e
 function private chooseaivsaimeleefrontflipanimations(behaviortreeentity, animbundle) {
     /#
-        record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+        record3dtext("<dev string:x5fb>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
     #/
     assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
@@ -513,7 +512,7 @@ function private chooseaivsaimeleefrontflipanimations(behaviortreeentity, animbu
 // Size: 0x126
 function private chooseaivsaimeleefrontwrestleanimations(behaviortreeentity, animbundle) {
     /#
-        record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+        record3dtext("<dev string:x5fb>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
     #/
     assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
@@ -533,7 +532,7 @@ function private chooseaivsaimeleefrontwrestleanimations(behaviortreeentity, ani
 // Size: 0x12e
 function private chooseaivsaimeleebackanimations(behaviortreeentity, animbundle) {
     /#
-        record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+        record3dtext("<dev string:x620>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
     #/
     assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
@@ -553,7 +552,7 @@ function private chooseaivsaimeleebackanimations(behaviortreeentity, animbundle)
 // Size: 0x12e
 function private chooseaivsaimeleerightanimations(behaviortreeentity, animbundle) {
     /#
-        record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+        record3dtext("<dev string:x644>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
     #/
     assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
@@ -573,7 +572,7 @@ function private chooseaivsaimeleerightanimations(behaviortreeentity, animbundle
 // Size: 0x12e
 function private chooseaivsaimeleeleftanimations(behaviortreeentity, animbundle) {
     /#
-        record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+        record3dtext("<dev string:x669>", behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
     #/
     assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
@@ -594,8 +593,8 @@ function private chooseaivsaimeleeleftanimations(behaviortreeentity, animbundle)
 function private debug_chosenmeleeanimations(behaviortreeentity) {
     /#
         if (isdefined(behaviortreeentity._ai_melee_animname) && isdefined(behaviortreeentity.enemy._ai_melee_animname)) {
-            record3dtext("<unknown string>" + behaviortreeentity._ai_melee_animname, behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
-            record3dtext("<unknown string>" + behaviortreeentity.enemy._ai_melee_animname, behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x68d>" + behaviortreeentity._ai_melee_animname, behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
+            record3dtext("<dev string:x6a7>" + behaviortreeentity.enemy._ai_melee_animname, behaviortreeentity.origin, (1, 0.5, 0), "<dev string:x63>", behaviortreeentity, 0.4);
         }
     #/
 }

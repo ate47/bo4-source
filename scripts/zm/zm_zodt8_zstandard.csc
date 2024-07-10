@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace zm_zodt8_zstandard;
 
 // Namespace zm_zodt8_zstandard/zm_zodt8_zstandard

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_vo.gsc;
@@ -280,7 +279,7 @@ function function_32b5113(ai_zombie) {
     if (!isdefined(ai_zombie.var_6f84b820)) {
         /#
             if (isdefined(ai_zombie.archetype)) {
-                println("<unknown string>" + ai_zombie.archetype + "<unknown string>");
+                println("<dev string:x38>" + ai_zombie.archetype + "<dev string:x5d>");
             }
         #/
         return false;

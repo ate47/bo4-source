@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreak_detect.csc;
 #using scripts\mp_common\player\player.csc;
 #using scripts\mp_common\gametypes\display_transition.csc;

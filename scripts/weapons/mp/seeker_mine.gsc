@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\damagefeedback_shared.gsc;
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\core_common\gestures.gsc;
@@ -787,7 +786,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
     switch (self.var_dda9b735.state) {
     case 4:
         waitduration = level.var_9d47488.tunables.var_9abfd5cf;
-        println("<unknown string>");
+        println("<dev string:x38>");
         self playsoundtoplayer(#"hash_951679e7e599a15", self);
         if (isdefined(level.var_9d47488.tunables.var_a60d049b)) {
             self playrumbleonentity(level.var_9d47488.tunables.var_a60d049b);
@@ -803,21 +802,21 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         self battlechatter::function_72b65730();
         function_1750438e(level.var_9d47488.tunables.var_df3ed3fd, seekermine.arcweapon, seekermine.owner);
         animdelay = level.var_9d47488.tunables.var_a06eff0b;
-        println("<unknown string>");
+        println("<dev string:x59>");
         break;
     case 2:
         waitduration = level.var_9d47488.tunables.var_c0c99398;
         self playsoundtoplayer(#"hash_951679e7e599a15", self);
         self battlechatter::pain_vox("MOD_ELECTROCUTED", self.arcweapon);
         function_1750438e(level.var_9d47488.tunables.var_292fba11, seekermine.arcweapon, seekermine.owner);
-        println("<unknown string>");
+        println("<dev string:x76>");
         break;
     case 3:
         gesturetable = "gestable_shocked_success";
         var_84a7f98e = getweapon(#"hash_597ead6ff2ce9284");
         islooping = 0;
         self playsoundtoplayer(#"hash_74864310c6a986a8", self);
-        println("<unknown string>");
+        println("<dev string:x92>");
         break;
     default:
         assert(0);

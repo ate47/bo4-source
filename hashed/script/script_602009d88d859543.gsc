@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_escape_weap_quest.gsc;
 #using scripts\zm\zm_escape_vo_hooks.gsc;
 #using scripts\zm\weapons\zm_weap_spectral_shield.gsc;

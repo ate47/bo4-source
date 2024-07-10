@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\core_common\flag_shared.gsc;
 #using scripts\core_common\laststand_shared.gsc;
@@ -26,7 +25,7 @@ function init() {
 // Size: 0x246
 function function_35babccd(ent) {
     if (!isdefined(ent)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return 1;
     }
     if (isdefined(ent.var_f4bf0819)) {
@@ -52,7 +51,7 @@ function function_35babccd(ent) {
         }
         index = (index + 1) % floor_count;
     }
-    println("<unknown string>");
+    println("<dev string:x38>");
     return ent.floor_num;
 }
 
@@ -113,7 +112,7 @@ function function_cd2f24b2(zone_name) {
     case #"cage":
         return 4;
     default:
-        assertmsg("<unknown string>" + zone_name);
+        assertmsg("<dev string:x8e>" + zone_name);
     }
 }
 

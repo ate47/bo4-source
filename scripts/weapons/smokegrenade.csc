@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\renderoverridebundle.csc;
 #using scripts\core_common\duplicaterender_mgr.csc;
 #using scripts\core_common\callbacks_shared.csc;

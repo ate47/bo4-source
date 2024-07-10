@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
@@ -1060,7 +1059,7 @@ function private function_8c1624c4(planner, constants) {
     params.var_f76f8cf6 = planner::getblackboardattribute(planner, "mp_laneNum");
     /#
         if (bots.size > 1) {
-            print("<unknown string>");
+            print("<dev string:x38>");
         }
     #/
     var_79a83b2e = undefined;

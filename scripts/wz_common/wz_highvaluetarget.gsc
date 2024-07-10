@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_673e73d0695d82b8;
 #using scripts\mp_common\item_supply_drop.gsc;
 #using script_6b993fdc7adc35ec;

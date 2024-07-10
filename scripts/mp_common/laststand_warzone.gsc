@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\scoreevents.gsc;
 #using scripts\mp_common\teams\platoons.gsc;
 #using scripts\mp_common\player\player_killed.gsc;
@@ -390,10 +389,10 @@ function function_d5db8d2e(attacker, weapon) {
     function function_463b3f65() {
         self endon(#"player_revived", #"death");
         while (true) {
-            if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
+            if (getdvarstring(#"scr_last_stand", "<dev string:x38>") == "<dev string:x3b>") {
                 self notify(#"auto_revive");
                 waittillframeend();
-                setdvar(#"scr_last_stand", "<unknown string>");
+                setdvar(#"scr_last_stand", "<dev string:x38>");
                 return;
             }
             wait(0.1);
@@ -407,7 +406,7 @@ function function_d5db8d2e(attacker, weapon) {
     function force_last_stand() {
         level endon(#"game_ended");
         while (true) {
-            if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
+            if (getdvarstring(#"scr_last_stand", "<dev string:x38>") == "<dev string:x47>") {
                 host = util::gethostplayer();
                 angles = host getplayerangles();
                 dir = anglestoforward(angles);
@@ -419,7 +418,7 @@ function function_d5db8d2e(attacker, weapon) {
                     target = host;
                 }
                 target dodamage(1000, target.origin);
-                setdvar(#"scr_last_stand", "<unknown string>");
+                setdvar(#"scr_last_stand", "<dev string:x38>");
             }
             wait(0.1);
         }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_firingrange2_fx;
 
 // Namespace mp_firingrange2_fx/mp_firingrange2_fx

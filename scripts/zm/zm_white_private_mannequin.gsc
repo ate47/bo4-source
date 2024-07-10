@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -148,7 +147,7 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
         while (!flag::get(#"hash_130656ec8ad5480d")) {
             level flag::wait_till(#"hash_3ee874ebee843004");
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x38>");
             #/
             level play_start_vo();
             level thread timer_countdown();
@@ -157,7 +156,7 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
             level flag::wait_till_any(a_flags);
             if (flag::get(#"hash_315d0bf1d50724f0")) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x83>");
                 #/
                 level flag::set(#"hash_7524c96c167377ef");
                 level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
@@ -171,7 +170,7 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
             level flag::wait_till_any(a_flags);
             if (flag::get(#"hash_359cbec050523f4")) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xa8>");
                 #/
                 level flag::set(#"hash_7524c96c167377ef");
                 level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
@@ -185,7 +184,7 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
             level flag::wait_till_any(a_flags);
             if (flag::get(#"hash_130656ec8ad5480d")) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xce>");
                 #/
                 level flag::set(#"hash_7524c96c167377ef");
                 level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
@@ -220,7 +219,7 @@ function timer_countdown() {
     self endon(#"hash_7524c96c167377ef");
     level.countdown_clock namespace_7d8e6ec3::clock_countdown();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xf6>");
     #/
     level flag::set(#"hash_7524c96c167377ef");
 }
@@ -231,7 +230,7 @@ function timer_countdown() {
 // Size: 0x166
 function reset_codes() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x11b>");
     #/
     level flag::clear(#"hash_3ee874ebee843004");
     level flag::clear(#"hash_315d0bf1d50724f0");
@@ -415,7 +414,7 @@ function function_1e88595a() {
 // Size: 0x174
 function function_eaa63f5b(n_minutes = 1) {
     /#
-        iprintlnbold("<unknown string>" + n_minutes + "<unknown string>");
+        iprintlnbold("<dev string:x156>" + n_minutes + "<dev string:x178>");
     #/
     n_time_end = gettime() + n_minutes * 60 * 1000;
     level flag::set(#"hash_1b68ccd211cab219");
@@ -428,7 +427,7 @@ function function_eaa63f5b(n_minutes = 1) {
             }
             level flag::clear(#"hash_1b68ccd211cab219");
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x187>");
             #/
             break;
         }
@@ -445,7 +444,7 @@ function function_88265619() {
     level.var_f5746584 = 0;
     var_e3d10631 = getentarray("private_mannequin_parts", "targetname");
     var_a2c75164 = getent("mannequin_ally_door", "targetname");
-    assert(isdefined(var_a2c75164), "<unknown string>");
+    assert(isdefined(var_a2c75164), "<dev string:x1a4>");
     while (true) {
         level flag::wait_till_clear(#"hash_1b68ccd211cab219");
         if (level.var_f5746584 > 0) {

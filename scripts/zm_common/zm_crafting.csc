@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\zm_common\zm_progress.csc;
 #using scripts\zm_common\zm_items.csc;
@@ -114,7 +113,7 @@ function function_b18074d0(name) {
             }
         }
     } else {
-        assertmsg("<unknown string>" + name);
+        assertmsg("<dev string:x38>" + name);
     }
     return blueprint;
 }

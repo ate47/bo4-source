@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\dialog_shared.csc;
 #using scripts\core_common\player\player_role.csc;
 #using scripts\core_common\character_customization.csc;

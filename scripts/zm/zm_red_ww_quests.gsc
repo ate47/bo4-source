@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\ai\zm_ai_catalyst.gsc;
 #using scripts\zm\zm_red.gsc;
 #using scripts\zm\zm_red_util.gsc;
@@ -4619,7 +4618,7 @@ function function_8d47bf8(e_player) {
         }
         thread zm_devgui::zombie_devgui_goto_round(5);
         if (isdefined(level.var_f9a57be7[level.var_65569374].t_damage)) {
-            level.var_f9a57be7[level.var_65569374].t_damage notify(#"damage", {#attacker:a_players[0], #mod:"zone_ww_quest_air"});
+            level.var_f9a57be7[level.var_65569374].t_damage notify(#"damage", {#attacker:a_players[0], #mod:"<dev string:x38>"});
         } else {
             level.var_f9a57be7[level.var_65569374] dodamage(10000, level.var_f9a57be7[level.var_65569374].origin, a_players[0]);
         }
@@ -4660,13 +4659,13 @@ function function_8d47bf8(e_player) {
         s_quest = level.var_d225ea18[#"death"];
         level function_51a8e408(#"death");
         wait(1);
-        exploder::exploder("earth_initiation_blocker_visual");
+        exploder::exploder("<dev string:x44>");
         s_quest.var_a1327d58 notify(#"trigger_activated", {#e_who:a_players[0]});
-        s_teleport = struct::get("ww_combat_active");
+        s_teleport = struct::get("<dev string:x58>");
         a_players[0] setorigin(s_teleport.origin);
         a_players[0] setplayerangles(s_teleport.angles);
         wait(1);
-        s_quest flag::set("s_light_shrine_brazier3");
+        s_quest flag::set("<dev string:x74>");
     }
 
     // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -4677,7 +4676,7 @@ function function_8d47bf8(e_player) {
         a_players = util::get_active_players();
         level function_f241b684();
         wait(1);
-        var_83f3addf = struct::get("mdl_ww_ouranos_arrow_serpent", "break");
+        var_83f3addf = struct::get("<dev string:x88>", "<dev string:x9b>");
         var_83f3addf notify(#"trigger_activated", {#e_who:a_players[0]});
         wait(1);
         s_quest = level.var_d225ea18[#"death"];
@@ -4715,7 +4714,7 @@ function function_8d47bf8(e_player) {
         a_players = util::get_active_players();
         s_quest = level.var_d225ea18[#"earth"];
         s_quest.var_a1327d58 notify(#"trigger_activated", {#e_who:a_players[0]});
-        s_tree = struct::get("p8_fxanim_zm_red_gaia_portal_bundle", "zmb_earth_seed_take");
+        s_tree = struct::get("<dev string:xa8>", "<dev string:xb9>");
         a_players[0] setorigin(s_tree.origin);
         a_players[0] setplayerangles(s_tree.angles);
     }
@@ -4731,22 +4730,22 @@ function function_8d47bf8(e_player) {
         s_quest = level.var_d225ea18[#"earth"];
         s_quest.var_a1327d58 notify(#"trigger_activated", {#e_who:a_players[0]});
         wait(1);
-        var_1d89b97b = struct::get_array("pap_waiting_for_user", "break");
+        var_1d89b97b = struct::get_array("<dev string:xcd>", "<dev string:x9b>");
         foreach (var_52666e80 in var_1d89b97b) {
-            mdl_tree = getent(var_52666e80.script_noteworthy, "break");
-            a_mdl_chaos = getentarray(mdl_tree.target, "break");
+            mdl_tree = getent(var_52666e80.script_noteworthy, "<dev string:x9b>");
+            a_mdl_chaos = getentarray(mdl_tree.target, "<dev string:x9b>");
             a_players[0] setorigin(var_52666e80.origin);
             a_players[0] setplayerangles(var_52666e80.angles);
             foreach (mdl_chaos in a_mdl_chaos) {
                 switch (mdl_chaos.model) {
                 case #"hash_17ff8b184015c0d0":
-                    v_tag_pos = mdl_chaos gettagorigin("<unknown string>");
+                    v_tag_pos = mdl_chaos gettagorigin("<dev string:xdf>");
                     break;
                 case #"hash_17ff8e184015c5e9":
-                    v_tag_pos = mdl_chaos gettagorigin("<unknown string>");
+                    v_tag_pos = mdl_chaos gettagorigin("<dev string:xef>");
                     break;
                 case #"hash_17ff8d184015c436":
-                    v_tag_pos = mdl_chaos gettagorigin("<unknown string>");
+                    v_tag_pos = mdl_chaos gettagorigin("<dev string:xff>");
                     break;
                 }
                 level notify(#"ww_gaia_hit", {#player:a_players[0], #e_entity:mdl_chaos, #v_position:v_tag_pos});
@@ -4754,7 +4753,7 @@ function function_8d47bf8(e_player) {
             }
         }
         wait(4.5);
-        var_1d89b97b = struct::get_array("pap_waiting_for_user", "break");
+        var_1d89b97b = struct::get_array("<dev string:xcd>", "<dev string:x9b>");
         var_1d89b97b[0] notify(#"trigger_activated", {#e_who:a_players[0]});
         s_teleport = s_quest.var_ed424981;
         if (isdefined(s_teleport)) {
@@ -4772,7 +4771,7 @@ function function_8d47bf8(e_player) {
         a_players = util::get_active_players();
         s_quest = level.var_d225ea18[#"earth"];
         s_quest.var_8baa00ae = 2;
-        a_players[0] notify(#"seedling_dropped", {#str_result:"<unknown string>"});
+        a_players[0] notify(#"seedling_dropped", {#str_result:"<dev string:x10f>"});
     }
 
     // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -4782,7 +4781,7 @@ function function_8d47bf8(e_player) {
     function function_dcfed198() {
         s_quest = level.var_d225ea18[#"light"];
         a_players = util::get_active_players();
-        s_destination = struct::get("<unknown string>", "break");
+        s_destination = struct::get("<dev string:x119>", "<dev string:x9b>");
         level function_51a8e408(#"light");
         wait(1);
         s_quest.var_a1327d58 notify(#"trigger_activated", {#e_who:a_players[0]});
@@ -4798,9 +4797,9 @@ function function_8d47bf8(e_player) {
     function function_d6e30032() {
         a_players = util::get_active_players();
         a_mdl_mirrors = [];
-        var_d445485f = struct::get_array("<unknown string>", "break");
+        var_d445485f = struct::get_array("<dev string:x13a>", "<dev string:x9b>");
         foreach (var_542837e6 in var_d445485f) {
-            mdl_mirror = getent(var_542837e6.target, "break");
+            mdl_mirror = getent(var_542837e6.target, "<dev string:x9b>");
             if (!isdefined(a_mdl_mirrors)) {
                 a_mdl_mirrors = [];
             } else if (!isarray(a_mdl_mirrors)) {
@@ -4818,9 +4817,9 @@ function function_8d47bf8(e_player) {
     // Size: 0x110
     function function_ec9bf2a() {
         level function_dcfed198();
-        var_d445485f = struct::get_array("<unknown string>", "break");
+        var_d445485f = struct::get_array("<dev string:x13a>", "<dev string:x9b>");
         foreach (var_542837e6 in var_d445485f) {
-            mdl_mirror = getent(var_542837e6.target, "break");
+            mdl_mirror = getent(var_542837e6.target, "<dev string:x9b>");
             mdl_mirror.n_index = 0;
             mdl_mirror function_2a290bb7(var_542837e6, mdl_mirror.origin, level.players[0]);
         }
@@ -4839,13 +4838,13 @@ function function_8d47bf8(e_player) {
             a_players[0] setorigin(s_teleport.origin);
             a_players[0] setplayerangles(s_teleport.angles);
         }
-        a_players[0] flag::set("<unknown string>");
-        var_6041471b = struct::get_array("<unknown string>", "break");
-        var_6041471b[0] flag::clear("<unknown string>");
-        var_6041471b[0].var_e5c25ff9 clientfield::set("<unknown string>" + #"hash_5faf31a2c4d4f4c6", 0);
+        a_players[0] flag::set("<dev string:x156>");
+        var_6041471b = struct::get_array("<dev string:x13a>", "<dev string:x9b>");
+        var_6041471b[0] flag::clear("<dev string:x16e>");
+        var_6041471b[0].var_e5c25ff9 clientfield::set("<dev string:x189>" + #"hash_5faf31a2c4d4f4c6", 0);
         var_6041471b[0] notify(#"hash_3a05c7c89bb72260");
-        a_players[0] clientfield::set("<unknown string>" + #"hash_e683dccc6a8e152", 1);
-        s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<unknown string>" + #"hash_e683dccc6a8e152");
+        a_players[0] clientfield::set("<dev string:x189>" + #"hash_e683dccc6a8e152", 1);
+        s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<dev string:x189>" + #"hash_e683dccc6a8e152");
         s_quest thread light_energy_carry(a_players[0]);
     }
 
@@ -4864,16 +4863,16 @@ function function_8d47bf8(e_player) {
         }
         s_quest function_9c79eeed(a_players[0]);
         s_quest function_9c79eeed(a_players[0]);
-        a_players[0] flag::set("<unknown string>");
-        var_6041471b = struct::get_array("<unknown string>", "break");
-        var_6041471b[0] flag::clear("<unknown string>");
+        a_players[0] flag::set("<dev string:x156>");
+        var_6041471b = struct::get_array("<dev string:x13a>", "<dev string:x9b>");
+        var_6041471b[0] flag::clear("<dev string:x16e>");
         if (isdefined(var_6041471b[0].var_e5c25ff9)) {
-            var_6041471b[0].var_e5c25ff9 clientfield::set("<unknown string>" + #"hash_5faf31a2c4d4f4c6", 0);
+            var_6041471b[0].var_e5c25ff9 clientfield::set("<dev string:x189>" + #"hash_5faf31a2c4d4f4c6", 0);
         }
         var_6041471b[0] notify(#"hash_3a05c7c89bb72260");
         a_players[0] thread light_countdown(23);
-        a_players[0] clientfield::set("<unknown string>" + #"hash_e683dccc6a8e152", 1);
-        s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<unknown string>" + #"hash_e683dccc6a8e152");
+        a_players[0] clientfield::set("<dev string:x189>" + #"hash_e683dccc6a8e152", 1);
+        s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<dev string:x189>" + #"hash_e683dccc6a8e152");
         s_quest thread light_energy_carry(a_players[0]);
     }
 
@@ -4888,14 +4887,14 @@ function function_8d47bf8(e_player) {
         s_quest = level.var_d225ea18[#"air"];
         s_quest.var_a1327d58 notify(#"trigger_activated", {#e_who:a_players[0]});
         wait(1);
-        s_teleport = struct::get("<unknown string>");
+        s_teleport = struct::get("<dev string:x18c>");
         if (isdefined(s_teleport)) {
             a_players[0] setorigin(s_teleport.origin);
             a_players[0] setplayerangles(s_teleport.angles);
         }
-        s_spawn = struct::get("<unknown string>");
+        s_spawn = struct::get("<dev string:x1ab>");
         ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_spawn);
-        ai_zombie val::set(#"ww_quests_ignoreall", "<unknown string>", 1);
+        ai_zombie val::set(#"ww_quests_ignoreall", "<dev string:x1ca>", 1);
     }
 
     // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -4920,7 +4919,7 @@ function function_8d47bf8(e_player) {
             waitframe(1);
         }
         wait(3);
-        exploder::exploder_stop("<unknown string>");
+        exploder::exploder_stop("<dev string:x1d6>");
         s_quest thread function_4e2445e0();
     }
 
@@ -4929,20 +4928,20 @@ function function_8d47bf8(e_player) {
     // Checksum 0x70a73722, Offset: 0x18040
     // Size: 0x15c
     function function_37deb555() {
-        a_mdl_arrows = array(getent("<unknown string>", "break"), getent("<unknown string>", "break"), getent("<unknown string>", "break"));
+        a_mdl_arrows = array(getent("<dev string:x1ea>", "<dev string:x9b>"), getent("<dev string:x209>", "<dev string:x9b>"), getent("<dev string:x226>", "<dev string:x9b>"));
         mdl_arrow = arraygetclosest(level.players[0].origin, a_mdl_arrows);
         switch (mdl_arrow.targetname) {
         case #"mdl_ww_ouranos_arrow_serpent":
-            var_511277e5 = "<unknown string>";
+            var_511277e5 = "<dev string:x244>";
             break;
         case #"mdl_ww_ouranos_arrow_center":
-            var_511277e5 = "<unknown string>";
+            var_511277e5 = "<dev string:x272>";
             break;
         case #"mdl_ww_ouranos_arrow_cliff":
-            var_511277e5 = "<unknown string>";
+            var_511277e5 = "<dev string:x2a0>";
             break;
         }
-        mdl_arrow thread scene::play(var_511277e5, "<unknown string>", mdl_arrow);
+        mdl_arrow thread scene::play(var_511277e5, "<dev string:x2ce>", mdl_arrow);
     }
 
     // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -4969,7 +4968,7 @@ function function_8d47bf8(e_player) {
         level.var_2eadf8bc = 11;
         level.var_626adbe3 = 11;
         level.var_a08be993 = 11;
-        var_ee56c5b = array(struct::get("<unknown string>", "zmb_earth_seed_take"), struct::get("<unknown string>", "zmb_earth_seed_take"), struct::get("<unknown string>", "zmb_earth_seed_take"), struct::get("<unknown string>", "zmb_earth_seed_take"));
+        var_ee56c5b = array(struct::get("<dev string:x2d6>", "<dev string:xb9>"), struct::get("<dev string:x2e0>", "<dev string:xb9>"), struct::get("<dev string:x2ea>", "<dev string:xb9>"), struct::get("<dev string:x2f4>", "<dev string:xb9>"));
         s_capture_point = arraygetclosest(level.players[0].origin, var_ee56c5b);
         s_capture_point.var_96f1a1e1 = 1;
         ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_capture_point);
@@ -4988,21 +4987,21 @@ function function_8d47bf8(e_player) {
         level.var_2eadf8bc = 11;
         level.var_626adbe3 = 11;
         level.var_a08be993 = 11;
-        var_8e174718 = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
+        var_8e174718 = array("<dev string:x2d6>", "<dev string:x2e0>", "<dev string:x2ea>", "<dev string:x2f4>");
         foreach (var_6adc8de1 in var_8e174718) {
-            if (var_6adc8de1 == "<unknown string>") {
+            if (var_6adc8de1 == "<dev string:x2d6>") {
                 s_quest = level.var_d225ea18[#"earth"];
             }
-            if (var_6adc8de1 == "<unknown string>") {
+            if (var_6adc8de1 == "<dev string:x2e0>") {
                 s_quest = level.var_d225ea18[#"death"];
             }
-            if (var_6adc8de1 == "<unknown string>") {
+            if (var_6adc8de1 == "<dev string:x2ea>") {
                 s_quest = level.var_d225ea18[#"light"];
             }
-            if (var_6adc8de1 == "<unknown string>") {
+            if (var_6adc8de1 == "<dev string:x2f4>") {
                 s_quest = level.var_d225ea18[#"air"];
             }
-            s_capture_point = struct::get(var_6adc8de1, "zmb_earth_seed_take");
+            s_capture_point = struct::get(var_6adc8de1, "<dev string:xb9>");
             s_capture_point.var_96f1a1e1 = 1;
             ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_capture_point);
             wait(0.25);
@@ -5013,7 +5012,7 @@ function function_8d47bf8(e_player) {
         foreach (s_quest in level.var_d225ea18) {
             zm_zonemgr::enable_zone(s_quest.var_e6a4592d);
         }
-        s_pap_interact = struct::get("<unknown string>", "break");
+        s_pap_interact = struct::get("<dev string:x2fe>", "<dev string:x9b>");
         level.players[0] setorigin(s_pap_interact.s_teleport.origin);
         level.players[0] setplayerangles(s_pap_interact.s_teleport.angles);
     }
@@ -5031,7 +5030,7 @@ function function_8d47bf8(e_player) {
     // Checksum 0xa07fda79, Offset: 0x187c8
     // Size: 0x144
     function function_405e6a83() {
-        s_pap_interact = struct::get("<unknown string>", "break");
+        s_pap_interact = struct::get("<dev string:x2fe>", "<dev string:x9b>");
         level function_c4614158();
         level.var_dd4b2858 = 4;
         s_quest = level.var_d225ea18[#"earth"];

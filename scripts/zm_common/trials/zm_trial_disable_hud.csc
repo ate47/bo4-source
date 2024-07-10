@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\perk\zm_perk_death_perception.csc;
 #using scripts\zm_common\zm.csc;
 #using scripts\zm_common\zm_trial.csc;

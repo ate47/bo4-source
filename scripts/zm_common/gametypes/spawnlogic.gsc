@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -28,14 +27,14 @@ function __init__() {
 // Size: 0x2e4
 function main() {
     /#
-        if (getdvarstring(#"scr_recordspawndata") == "<unknown string>") {
+        if (getdvarstring(#"scr_recordspawndata") == "<dev string:x38>") {
             setdvar(#"scr_recordspawndata", 0);
         }
         level.storespawndata = getdvarint(#"scr_recordspawndata", 0);
-        if (getdvarstring(#"scr_killbots") == "<unknown string>") {
+        if (getdvarstring(#"scr_killbots") == "<dev string:x38>") {
             setdvar(#"scr_killbots", 0);
         }
-        if (getdvarstring(#"scr_killbottimer") == "<unknown string>") {
+        if (getdvarstring(#"scr_killbottimer") == "<dev string:x38>") {
             setdvar(#"scr_killbottimer", 0.25);
         }
         thread loopbotspawns();
@@ -142,7 +141,7 @@ function addspawnpointsinternal(team, spawnpointname) {
         level.teamspawnpoints[team][level.teamspawnpoints[team].size] = oldspawnpoints[index];
     }
     if (!level.teamspawnpoints[team].size) {
-        println("<unknown string>" + spawnpointname + "<unknown string>");
+        println("<dev string:x3b>" + spawnpointname + "<dev string:x4a>");
         callback::abort_level();
         wait(1);
         return;
@@ -195,7 +194,7 @@ function placespawnpoints(spawnpointname) {
         }
     #/
     if (!spawnpoints.size) {
-        println("<unknown string>" + spawnpointname + "<unknown string>");
+        println("<dev string:x69>" + spawnpointname + "<dev string:x4a>");
         callback::abort_level();
         wait(1);
         return;
@@ -216,7 +215,7 @@ function placespawnpoints(spawnpointname) {
 function dropspawnpoints(spawnpointname) {
     spawnpoints = getspawnpointarray(spawnpointname);
     if (!spawnpoints.size) {
-        println("<unknown string>" + spawnpointname + "<unknown string>");
+        println("<dev string:x69>" + spawnpointname + "<dev string:x4a>");
         return;
     }
     for (index = 0; index < spawnpoints.size; index++) {
@@ -393,7 +392,7 @@ function getbestweightedspawnpoint(spawnpoints) {
         penalty = getlospenalty();
         /#
             if (level.storespawndata || level.debugspawning) {
-                bestspawnpoint.spawndata[bestspawnpoint.spawndata.size] = "<unknown string>" + penalty;
+                bestspawnpoint.spawndata[bestspawnpoint.spawndata.size] = "<dev string:x71>" + penalty;
             }
         #/
         bestspawnpoint.weight -= penalty;
@@ -410,7 +409,7 @@ function getbestweightedspawnpoint(spawnpoints) {
     function checkbad(spawnpoint) {
                 for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
-            if (!isalive(player) || player.sessionstate != "<unknown string>") {
+            if (!isalive(player) || player.sessionstate != "<dev string:x8e>") {
                 continue;
             }
             if (level.teambased && player.team == self.team) {
@@ -431,7 +430,7 @@ function getbestweightedspawnpoint(spawnpoints) {
         dist = distance(start, end);
         for (i = 0; i < 200; i++) {
             line(start, end, (1, 0, 0));
-            print3d(start, "<unknown string>" + name1 + "<unknown string>" + dist);
+            print3d(start, "<dev string:x98>" + name1 + "<dev string:xa6>" + dist);
             print3d(end, name2);
             waitframe(1);
         }
@@ -453,23 +452,23 @@ function getbestweightedspawnpoint(spawnpoints) {
             level.spawngameid = randomint(100);
             level.spawnid = 0;
         }
-        if (bestspawnpoint.classname == "<unknown string>") {
+        if (bestspawnpoint.classname == "<dev string:xb2>") {
             return;
         }
         level.spawnid++;
-        file = openfile("<unknown string>", "<unknown string>");
-        fprintfields(file, level.spawngameid + "<unknown string>" + level.spawnid + "<unknown string>" + spawnpoints.size + "<unknown string>" + self.name);
+        file = openfile("<dev string:xcb>", "<dev string:xdb>");
+        fprintfields(file, level.spawngameid + "<dev string:xe4>" + level.spawnid + "<dev string:xe8>" + spawnpoints.size + "<dev string:xe8>" + self.name);
         for (i = 0; i < spawnpoints.size; i++) {
-            str = vectostr(spawnpoints[i].origin) + "<unknown string>";
+            str = vectostr(spawnpoints[i].origin) + "<dev string:xe8>";
             if (spawnpoints[i] == bestspawnpoint) {
-                str += "<unknown string>";
+                str += "<dev string:xec>";
             } else {
-                str += "<unknown string>";
+                str += "<dev string:xf1>";
             }
             if (!useweights) {
-                str += "<unknown string>";
+                str += "<dev string:xf1>";
             } else {
-                str += spawnpoints[i].weight + "<unknown string>";
+                str += spawnpoints[i].weight + "<dev string:xe8>";
             }
             if (!isdefined(spawnpoints[i].spawndata)) {
                 spawnpoints[i].spawndata = [];
@@ -477,13 +476,13 @@ function getbestweightedspawnpoint(spawnpoints) {
             if (!isdefined(spawnpoints[i].sightchecks)) {
                 spawnpoints[i].sightchecks = [];
             }
-            str += spawnpoints[i].spawndata.size + "<unknown string>";
+            str += spawnpoints[i].spawndata.size + "<dev string:xe8>";
             for (j = 0; j < spawnpoints[i].spawndata.size; j++) {
-                str += spawnpoints[i].spawndata[j] + "<unknown string>";
+                str += spawnpoints[i].spawndata[j] + "<dev string:xe8>";
             }
-            str += spawnpoints[i].sightchecks.size + "<unknown string>";
+            str += spawnpoints[i].sightchecks.size + "<dev string:xe8>";
             for (j = 0; j < spawnpoints[i].sightchecks.size; j++) {
-                str += spawnpoints[i].sightchecks[j].penalty + "<unknown string>" + vectostr(spawnpoints[i].origin) + "<unknown string>";
+                str += spawnpoints[i].sightchecks[j].penalty + "<dev string:xe8>" + vectostr(spawnpoints[i].origin) + "<dev string:xe8>";
             }
             fprintfields(file, str);
         }
@@ -491,47 +490,47 @@ function getbestweightedspawnpoint(spawnpoints) {
         getallalliedandenemyplayers(obj);
         numallies = 0;
         numenemies = 0;
-        str = "<unknown string>";
+        str = "<dev string:x38>";
         for (i = 0; i < obj.allies.size; i++) {
             if (obj.allies[i] == self) {
                 continue;
             }
             numallies++;
-            str += vectostr(obj.allies[i].origin) + "<unknown string>";
+            str += vectostr(obj.allies[i].origin) + "<dev string:xe8>";
         }
         for (i = 0; i < obj.enemies.size; i++) {
             numenemies++;
-            str += vectostr(obj.enemies[i].origin) + "<unknown string>";
+            str += vectostr(obj.enemies[i].origin) + "<dev string:xe8>";
         }
-        str = numallies + "<unknown string>" + numenemies + "<unknown string>" + str;
+        str = numallies + "<dev string:xe8>" + numenemies + "<dev string:xe8>" + str;
         fprintfields(file, str);
         otherdata = [];
         if (isdefined(level.bombguy)) {
             index = otherdata.size;
             otherdata[index] = spawnstruct();
             otherdata[index].origin = level.bombguy.origin + (0, 0, 20);
-            otherdata[index].text = "<unknown string>";
+            otherdata[index].text = "<dev string:xf6>";
         } else if (isdefined(level.bombpos)) {
             index = otherdata.size;
             otherdata[index] = spawnstruct();
             otherdata[index].origin = level.bombpos;
-            otherdata[index].text = "<unknown string>";
+            otherdata[index].text = "<dev string:x104>";
         }
         if (isdefined(level.flags)) {
             for (i = 0; i < level.flags.size; i++) {
                 index = otherdata.size;
                 otherdata[index] = spawnstruct();
                 otherdata[index].origin = level.flags[i].origin;
-                otherdata[index].text = level.flags[i].useobj gameobjects::get_owner_team() + "<unknown string>";
+                otherdata[index].text = level.flags[i].useobj gameobjects::get_owner_team() + "<dev string:x10b>";
             }
         }
-        str = otherdata.size + "<unknown string>";
+        str = otherdata.size + "<dev string:xe8>";
         for (i = 0; i < otherdata.size; i++) {
-            str += vectostr(otherdata[i].origin) + "<unknown string>" + otherdata[i].text + "<unknown string>";
+            str += vectostr(otherdata[i].origin) + "<dev string:xe8>" + otherdata[i].text + "<dev string:xe8>";
         }
         fprintfields(file, str);
         closefile(file);
-        thisspawnid = level.spawngameid + "<unknown string>" + level.spawnid;
+        thisspawnid = level.spawngameid + "<dev string:xe4>" + level.spawnid;
         if (isdefined(self.thisspawnid)) {
         }
         self.thisspawnid = thisspawnid;
@@ -542,7 +541,7 @@ function getbestweightedspawnpoint(spawnpoints) {
     // Checksum 0xfc86d278, Offset: 0x1e48
     // Size: 0xa64
     function readspawndata(desiredid, relativepos) {
-        file = openfile("<unknown string>", "<unknown string>");
+        file = openfile("<dev string:xcb>", "<dev string:x113>");
         if (file < 0) {
             return;
         }
@@ -653,24 +652,24 @@ function getbestweightedspawnpoint(spawnpoints) {
                 data.otherdata[data.otherdata.size] = otherdata;
             }
             if (isdefined(relativepos)) {
-                if (relativepos == "<unknown string>") {
+                if (relativepos == "<dev string:x11a>") {
                     if (data.id == oldspawndata.id) {
                         level.curspawndata = prevthisplayer;
                         break;
                     }
-                } else if (relativepos == "<unknown string>") {
+                } else if (relativepos == "<dev string:x12b>") {
                     if (data.id == oldspawndata.id) {
                         level.curspawndata = prev;
                         break;
                     }
-                } else if (relativepos == "<unknown string>") {
+                } else if (relativepos == "<dev string:x132>") {
                     if (lookingfornextthisplayer) {
                         level.curspawndata = data;
                         break;
                     } else if (data.id == oldspawndata.id) {
                         lookingfornextthisplayer = 1;
                     }
-                } else if (relativepos == "<unknown string>") {
+                } else if (relativepos == "<dev string:x143>") {
                     if (lookingfornext) {
                         level.curspawndata = data;
                         break;
@@ -704,10 +703,10 @@ function getbestweightedspawnpoint(spawnpoints) {
                 continue;
             }
             for (i = 0; i < level.curspawndata.friends.size; i++) {
-                print3d(level.curspawndata.friends[i], "<unknown string>", (0.5, 1, 0.5), 1, 5);
+                print3d(level.curspawndata.friends[i], "<dev string:x14a>", (0.5, 1, 0.5), 1, 5);
             }
             for (i = 0; i < level.curspawndata.enemies.size; i++) {
-                print3d(level.curspawndata.enemies[i], "<unknown string>", (1, 0.5, 0.5), 1, 5);
+                print3d(level.curspawndata.enemies[i], "<dev string:x14f>", (1, 0.5, 0.5), 1, 5);
             }
             for (i = 0; i < level.curspawndata.otherdata.size; i++) {
                 print3d(level.curspawndata.otherdata[i].origin, level.curspawndata.otherdata[i].text, (0.5, 0.75, 1), 1, 2);
@@ -716,18 +715,18 @@ function getbestweightedspawnpoint(spawnpoints) {
                 sp = level.curspawndata.spawnpoints[i];
                 orig = sp.sighttracepoint;
                 if (sp.winner) {
-                    print3d(orig, level.curspawndata.playername + "<unknown string>", (0.5, 0.5, 1), 1, 2);
+                    print3d(orig, level.curspawndata.playername + "<dev string:x154>", (0.5, 0.5, 1), 1, 2);
                     orig += textoffset;
                 }
                 amnt = (sp.weight - level.curspawndata.minweight) / (level.curspawndata.maxweight - level.curspawndata.minweight);
-                print3d(orig, "<unknown string>" + sp.weight, (1 - amnt, amnt, 0.5));
+                print3d(orig, "<dev string:x164>" + sp.weight, (1 - amnt, amnt, 0.5));
                 orig += textoffset;
                 for (j = 0; j < sp.data.size; j++) {
                     print3d(orig, sp.data[j], (1, 1, 1));
                     orig += textoffset;
                 }
                 for (j = 0; j < sp.sightchecks.size; j++) {
-                    print3d(orig, "<unknown string>" + sp.sightchecks[j].penalty, (1, 0.5, 0.5));
+                    print3d(orig, "<dev string:x16f>" + sp.sightchecks[j].penalty, (1, 0.5, 0.5));
                     orig += textoffset;
                 }
             }
@@ -740,7 +739,7 @@ function getbestweightedspawnpoint(spawnpoints) {
     // Checksum 0xe541fcc9, Offset: 0x2d28
     // Size: 0x7e
     function vectostr(vec) {
-        return int(vec[0]) + "<unknown string>" + int(vec[1]) + "<unknown string>" + int(vec[2]);
+        return int(vec[0]) + "<dev string:x180>" + int(vec[1]) + "<dev string:x180>" + int(vec[2]);
     }
 
     // Namespace spawnlogic/spawnlogic
@@ -748,7 +747,7 @@ function getbestweightedspawnpoint(spawnpoints) {
     // Checksum 0xfc534211, Offset: 0x2db0
     // Size: 0x9e
     function strtovec(str) {
-        parts = strtok(str, "<unknown string>");
+        parts = strtok(str, "<dev string:x180>");
         if (parts.size != 3) {
             return (0, 0, 0);
         }
@@ -926,7 +925,7 @@ function getspawnpoint_nearteam(spawnpoints, favoredspawnpoints, forceallydistan
             spawnpoint.weight = (enemydistanceweight * enemydistsum - allieddistanceweight * allydistsum) / spawnpoint.numplayersatlastupdate;
             /#
                 if (level.storespawndata || level.debugspawning) {
-                    spawnpoint.spawndata[spawnpoint.spawndata.size] = "<unknown string>" + int(spawnpoint.weight) + "<unknown string>" + enemydistanceweight + "<unknown string>" + int(enemydistsum) + "<unknown string>" + allieddistanceweight + "<unknown string>" + int(allydistsum) + "<unknown string>" + spawnpoint.numplayersatlastupdate;
+                    spawnpoint.spawndata[spawnpoint.spawndata.size] = "<dev string:x184>" + int(spawnpoint.weight) + "<dev string:x194>" + enemydistanceweight + "<dev string:x19b>" + int(enemydistsum) + "<dev string:x19f>" + allieddistanceweight + "<dev string:x19b>" + int(allydistsum) + "<dev string:x1a5>" + spawnpoint.numplayersatlastupdate;
                 }
             #/
             continue;
@@ -934,7 +933,7 @@ function getspawnpoint_nearteam(spawnpoints, favoredspawnpoints, forceallydistan
         spawnpoint.weight = 0;
         /#
             if (level.storespawndata || level.debugspawning) {
-                spawnpoint.spawndata[spawnpoint.spawndata.size] = "<unknown string>";
+                spawnpoint.spawndata[spawnpoint.spawndata.size] = "<dev string:x1ac>";
             }
         #/
     }
@@ -1135,9 +1134,9 @@ function spawnlogic_begin() {
         h = 20;
         weightscale = 0.1;
         fakespawnpoints = [];
-        corners = getentarray("<unknown string>", "<unknown string>");
+        corners = getentarray("<dev string:x1bd>", "<dev string:x1ce>");
         if (corners.size != 2) {
-            println("<unknown string>");
+            println("<dev string:x1db>");
             return;
         }
         min = corners[0].origin;
@@ -1170,7 +1169,7 @@ function spawnlogic_begin() {
             spawni = 0;
             numiters = 5;
             for (i = 0; i < numiters; i++) {
-                if (!level.players.size || !isdefined(level.players[0].team) || level.players[0].team == "<unknown string>" || !isdefined(level.players[0].curclass)) {
+                if (!level.players.size || !isdefined(level.players[0].team) || level.players[0].team == "<dev string:x206>" || !isdefined(level.players[0].curclass)) {
                     break;
                 }
                 endspawni = spawni + fakespawnpoints.size / numiters;
@@ -1186,7 +1185,7 @@ function spawnlogic_begin() {
                 }
                 waitframe(1);
             }
-            if (!level.players.size || !isdefined(level.players[0].team) || level.players[0].team == "<unknown string>" || !isdefined(level.players[0].curclass)) {
+            if (!level.players.size || !isdefined(level.players[0].team) || level.players[0].team == "<dev string:x206>" || !isdefined(level.players[0].curclass)) {
                 wait(1);
                 continue;
             }
@@ -1264,7 +1263,7 @@ function spawnlogic_begin() {
                 if (!isdefined(level.players[i])) {
                     continue;
                 }
-                if (level.players[i].sessionstate == "<unknown string>" && issubstr(level.players[i].name, "<unknown string>")) {
+                if (level.players[i].sessionstate == "<dev string:x8e>" && issubstr(level.players[i].name, "<dev string:x212>")) {
                     bots[bots.size] = level.players[i];
                 }
             }
@@ -1272,7 +1271,7 @@ function spawnlogic_begin() {
                 if (getdvarint(#"scr_killbots", 0) == 1) {
                     killer = bots[randomint(bots.size)];
                     victim = bots[randomint(bots.size)];
-                    victim thread [[ level.callbackplayerdamage ]](killer, killer, 1000, 0, "<unknown string>", level.weaponnone, (0, 0, 0), (0, 0, 0), "<unknown string>", 0, 0);
+                    victim thread [[ level.callbackplayerdamage ]](killer, killer, 1000, 0, "<dev string:x218>", level.weaponnone, (0, 0, 0), (0, 0, 0), "<dev string:x22b>", 0, 0);
                 } else {
                     numkills = getdvarint(#"scr_killbots", 0);
                     lastvictim = undefined;
@@ -1280,12 +1279,12 @@ function spawnlogic_begin() {
                         killer = bots[randomint(bots.size)];
                         for (victim = bots[randomint(bots.size)]; isdefined(lastvictim) && victim == lastvictim; victim = bots[randomint(bots.size)]) {
                         }
-                        victim thread [[ level.callbackplayerdamage ]](killer, killer, 1000, 0, "<unknown string>", level.weaponnone, (0, 0, 0), (0, 0, 0), "<unknown string>", 0, 0);
+                        victim thread [[ level.callbackplayerdamage ]](killer, killer, 1000, 0, "<dev string:x218>", level.weaponnone, (0, 0, 0), (0, 0, 0), "<dev string:x22b>", 0, 0);
                         lastvictim = victim;
                     }
                 }
             }
-            if (getdvarstring(#"scr_killbottimer") != "<unknown string>") {
+            if (getdvarstring(#"scr_killbottimer") != "<dev string:x38>") {
                 wait(getdvarfloat(#"scr_killbottimer", 0));
                 continue;
             }
@@ -1298,7 +1297,7 @@ function spawnlogic_begin() {
     // Checksum 0xc9b1ee6b, Offset: 0x4e10
     // Size: 0x1f8
     function allowspawndatareading() {
-        setdvar(#"scr_showspawnid", "<unknown string>");
+        setdvar(#"scr_showspawnid", "<dev string:x38>");
         prevval = getdvarstring(#"scr_showspawnid");
         prevrelval = getdvarstring(#"scr_spawnidcycle");
         readthistime = 0;
@@ -1307,8 +1306,8 @@ function spawnlogic_begin() {
             relval = undefined;
             if (!isdefined(val) || val == prevval) {
                 relval = getdvarstring(#"scr_spawnidcycle");
-                if (isdefined(relval) && relval != "<unknown string>") {
-                    setdvar(#"scr_spawnidcycle", "<unknown string>");
+                if (isdefined(relval) && relval != "<dev string:x38>") {
+                    setdvar(#"scr_spawnidcycle", "<dev string:x38>");
                 } else {
                     wait(0.5);
                     continue;
@@ -1318,9 +1317,9 @@ function spawnlogic_begin() {
             readthistime = 0;
             readspawndata(val, relval);
             if (!isdefined(level.curspawndata)) {
-                println("<unknown string>");
+                println("<dev string:x232>");
             } else {
-                println("<unknown string>" + level.curspawndata.id);
+                println("<dev string:x24b>" + level.curspawndata.id);
             }
             thread drawspawndata();
         }
@@ -1363,11 +1362,11 @@ function spawnlogic_begin() {
                 if (spawnkill.var_47d2dfb) {
                     line(spawnkill.spawnpointorigin, spawnkill.dierorigin, (0.4, 0.5, 0.4));
                     line(spawnkill.dierorigin, spawnkill.killerorigin, (0, 1, 1));
-                    print3d(spawnkill.dierorigin + (0, 0, 32), "<unknown string>", (0, 1, 1));
+                    print3d(spawnkill.dierorigin + (0, 0, 32), "<dev string:x25f>", (0, 1, 1));
                 } else {
                     line(spawnkill.spawnpointorigin, spawnkill.killerorigin, (0.4, 0.5, 0.4));
                     line(spawnkill.killerorigin, spawnkill.dierorigin, (0, 1, 1));
-                    print3d(spawnkill.dierorigin + (0, 0, 32), "<unknown string>", (0, 1, 1));
+                    print3d(spawnkill.dierorigin + (0, 0, 32), "<dev string:x26e>", (0, 1, 1));
                 }
                 if (time - spawnkill.time < 60000) {
                     level.spawnlogic_spawnkills[level.spawnlogic_spawnkills.size] = oldspawnkills[i];
@@ -1430,7 +1429,7 @@ function spawnweightdebug(spawnpoints) {
                         if (spawnpoints[i].sightchecks[j].penalty == 0) {
                             continue;
                         }
-                        print3d(orig, "<unknown string>" + spawnpoints[i].sightchecks[j].penalty, (0.5, 0.5, 0.5));
+                        print3d(orig, "<dev string:x27b>" + spawnpoints[i].sightchecks[j].penalty, (0.5, 0.5, 0.5));
                         orig += textoffset;
                     }
                 }
@@ -1559,7 +1558,7 @@ function avoidweapondamage(spawnpoints) {
                 spawnpoints[i].weight = spawnpoints[i].weight - weapondamagepenalty;
                 /#
                     if (level.storespawndata || level.debugspawning) {
-                        spawnpoints[i].spawndata[spawnpoints[i].spawndata.size] = "<unknown string>" + int(weapondamagepenalty);
+                        spawnpoints[i].spawndata[spawnpoints[i].spawndata.size] = "<dev string:x28f>" + int(weapondamagepenalty);
                     }
                 #/
             }
@@ -1834,7 +1833,7 @@ function avoidvisibleenemies(spawnpoints, teambased) {
                     spawnpoints[i].weight = spawnpoints[i].weight - penalty;
                     /#
                         if (level.storespawndata || level.debugspawning) {
-                            spawnpoints[i].spawndata[spawnpoints[i].spawndata.size] = "<unknown string>" + int(spawnpoints[i].minenemydist[mindistteam]) + "<unknown string>" + int(penalty);
+                            spawnpoints[i].spawndata[spawnpoints[i].spawndata.size] = "<dev string:x2a5>" + int(spawnpoints[i].minenemydist[mindistteam]) + "<dev string:x2b9>" + int(penalty);
                         }
                     #/
                 }
@@ -1873,7 +1872,7 @@ function avoidspawnreuse(spawnpoints, teambased) {
                 spawnpoint.weight -= worsen;
                 /#
                     if (level.storespawndata || level.debugspawning) {
-                        spawnpoint.spawndata[spawnpoint.spawndata.size] = "<unknown string>" + worsen;
+                        spawnpoint.spawndata[spawnpoint.spawndata.size] = "<dev string:x2c5>" + worsen;
                     }
                 #/
             } else {
@@ -1901,7 +1900,7 @@ function avoidsamespawn(spawnpoints) {
             spawnpoints[i].weight = spawnpoints[i].weight - 50000;
             /#
                 if (level.storespawndata || level.debugspawning) {
-                    spawnpoints[i].spawndata[spawnpoints[i].spawndata.size] = "<unknown string>";
+                    spawnpoints[i].spawndata[spawnpoints[i].spawndata.size] = "<dev string:x2dc>";
                 }
             #/
             break;

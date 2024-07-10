@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_gridlock_fx;
 
 // Namespace mp_gridlock_fx/mp_gridlock_fx

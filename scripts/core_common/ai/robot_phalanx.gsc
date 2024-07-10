@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using script_3819e7a1427df6d2;
 #using scripts\core_common\spawner_shared.gsc;
@@ -240,10 +239,10 @@ class robotphalanx {
     function private _movephalanxtier(robots, phalanxtype, tier, destination, forward) {
         positions = _getphalanxpositions(phalanxtype, tier);
         angles = vectortoangles(forward);
-        assert(robots.size <= positions.size, "<unknown string>");
+        assert(robots.size <= positions.size, "<dev string:x1da>");
         foreach (index, robot in robots) {
             if (isdefined(robot) && isalive(robot)) {
-                assert(isvec(positions[index]), "<unknown string>" + index + "<unknown string>" + tier + "<unknown string>" + phalanxtype);
+                assert(isvec(positions[index]), "<dev string:x21c>" + index + "<dev string:x24b>" + tier + "<dev string:x258>" + phalanxtype);
                 orientedpos = _rotatevec(positions[index], angles[1] - 90);
                 navmeshposition = getclosestpointonnavmesh(destination + orientedpos, 200);
                 robot function_a57c34b7(navmeshposition);
@@ -298,8 +297,8 @@ class robotphalanx {
     // Size: 0xb4
     function private _getphalanxspawner(tier) {
         spawner = getspawnerarray(tier, "targetname");
-        assert(spawner.size >= 0, "<unknown string>" + "<unknown string>" + "<unknown string>");
-        assert(spawner.size == 1, "<unknown string>" + "<unknown string>" + "<unknown string>");
+        assert(spawner.size >= 0, "<dev string:x6f>" + "<dev string:xbd>" + "<dev string:x107>");
+        assert(spawner.size == 1, "<dev string:x120>" + "<dev string:x16c>" + "<dev string:x194>");
         return spawner[0];
     }
 
@@ -370,10 +369,10 @@ class robotphalanx {
             }
             break;
         default:
-            assert("<unknown string>" + phalanxtype + "<unknown string>");
+            assert("<dev string:x38>" + phalanxtype + "<dev string:x51>");
             break;
         }
-        assert("<unknown string>" + tier + "<unknown string>");
+        assert("<dev string:x56>" + tier + "<dev string:x51>");
     }
 
     // Namespace robotphalanx/robot_phalanx

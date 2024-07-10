@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.csc;
 
 #namespace wz_escape_ffotd_alt;

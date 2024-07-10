@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\visionset_mgr_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -239,7 +238,7 @@ function function_c48cb1fc() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe94cfbd0, Offset: 0xaf8
 // Size: 0x44
-function function_df115fb1() {
+function j_sticks_front1_end_le1() {
     self thread function_306c4d60();
     self.var_61e6c24d = 0;
     self clientfield::set_to_player("sndCriticalHealth", 0);
@@ -251,7 +250,7 @@ function function_df115fb1() {
 // Size: 0x24
 function private function_2eee85c1() {
     if (self.var_61e6c24d) {
-        self function_df115fb1();
+        self j_sticks_front1_end_le1();
     }
 }
 
@@ -389,7 +388,7 @@ function private heal(var_dc77251f) {
         return;
     }
     if (player.var_61e6c24d && var_dc77251f.var_ec8863bf > var_dc77251f.var_dae4d7ea) {
-        player function_df115fb1();
+        player j_sticks_front1_end_le1();
     }
     new_health = var_dc77251f.var_ec8863bf * var_bc840360 + var_dc77251f.var_e65dca8d;
     player.health = int(math::clamp(floor(new_health), 0, max(self.maxhealth, self.var_66cb03ad)));
@@ -456,7 +455,7 @@ function player_health_regen() {
     player.var_4d9b2bc3 = 1;
     player.breathingstoptime = -10000;
     player.var_dc77251f = {#var_ba47a7a3:0, #time_now:0, #time_elapsed:0, #ratio:0, #var_ec8863bf:0, #var_e65dca8d:0, #var_215539de:0, #var_dae4d7ea:0, #old_health:player.health, #var_7cb44c56:0, #var_d1e06a5f:gettime()};
-    player function_df115fb1();
+    player j_sticks_front1_end_le1();
 }
 
 // Namespace healthoverlay/healthoverlay
@@ -512,7 +511,7 @@ function private function_8f2722f6() {
     if (!player.var_61e6c24d && var_dc77251f.var_ec8863bf <= var_dc77251f.var_a83bd8fd) {
         player function_c48cb1fc();
     } else if (player.var_61e6c24d && var_dc77251f.var_ec8863bf > var_dc77251f.var_dae4d7ea) {
-        player function_df115fb1();
+        player j_sticks_front1_end_le1();
     }
     var_dc77251f.old_health = player.health;
 }

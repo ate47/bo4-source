@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_orange_open_all_doors.gsc;
 #using scripts\zm\zm_orange_trial_lighthouse_beam.gsc;
 #using script_3d07a022f5c96f45;

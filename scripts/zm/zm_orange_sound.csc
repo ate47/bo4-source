@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\callbacks_shared.csc;
 #using scripts\core_common\audio_shared.csc;
 #using scripts\core_common\struct.csc;
@@ -23,7 +22,7 @@ function startzmbspawnersoundloops() {
         delay = 0;
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
-                println("<unknown string>" + loopers.size + "<unknown string>");
+                println("<dev string:x38>" + loopers.size + "<dev string:x72>");
             }
         #/
         for (i = 0; i < loopers.size; i++) {
@@ -40,7 +39,7 @@ function startzmbspawnersoundloops() {
     }
     /#
         if (getdvarint(#"debug_audio", 0) > 0) {
-            println("<unknown string>");
+            println("<dev string:x7f>");
         }
     #/
 }

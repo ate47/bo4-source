@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\mp\seeker_mine.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
@@ -1995,21 +1994,21 @@ function function_222141a5(var_58d9f1c6 = 1) {
     function function_324c6d8c() {
         level endon(#"combattraining_logic_finished");
         sessionmode = currentsessionmode();
-        setdvar(#"hash_42113ca5668d7812", "vox_tvoi_tutor_prop_seeker_enemy_dead_0");
+        setdvar(#"hash_42113ca5668d7812", "<dev string:x38>");
         if (sessionmode != 4) {
-            adddebugcommand("ignoreme");
-            adddebugcommand("nag_give_player_one_seeker_end");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x3b>");
+            adddebugcommand("<dev string:x9e>");
+            adddebugcommand("<dev string:x101>");
+            adddebugcommand("<dev string:x16e>");
+            adddebugcommand("<dev string:x1db>");
+            adddebugcommand("<dev string:x248>");
+            adddebugcommand("<dev string:x2b7>");
+            adddebugcommand("<dev string:x31c>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_42113ca5668d7812", "vox_tvoi_tutor_prop_seeker_enemy_dead_0");
-            if (cmd == "vox_tvoi_tutor_prop_seeker_enemy_dead_0") {
+            cmd = getdvarstring(#"hash_42113ca5668d7812", "<dev string:x38>");
+            if (cmd == "<dev string:x38>") {
                 continue;
             }
             e_player = level.players[0];
@@ -2041,7 +2040,7 @@ function function_222141a5(var_58d9f1c6 = 1) {
                 e_player function_7536db69();
                 break;
             }
-            setdvar(#"hash_42113ca5668d7812", "vox_tvoi_tutor_prop_seeker_enemy_dead_0");
+            setdvar(#"hash_42113ca5668d7812", "<dev string:x38>");
         }
     }
 

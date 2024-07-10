@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -152,7 +151,7 @@ function spawn_think(spawner) {
         return;
     }
     self.spawn_think_thread_active = 1;
-    assert(isactor(self) || isvehicle(self), "<unknown string>" + "<unknown string>");
+    assert(isactor(self) || isvehicle(self), "<dev string:x38>" + "<dev string:x4f>");
     if (!isvehicle(self)) {
         if (!isalive(self)) {
             return;
@@ -284,11 +283,11 @@ function spawn_think_action(spawner) {
         colors::set_force_color(self.script_forcecolor);
     }
     if (isdefined(self.script_ignoreme)) {
-        assert(self.script_ignoreme == 1, "<unknown string>");
+        assert(self.script_ignoreme == 1, "<dev string:x75>");
         self val::set(#"spawn_think", "ignoreme", 1);
     }
     if (isdefined(self.script_ignoreall)) {
-        assert(self.script_ignoreall == 1, "<unknown string>");
+        assert(self.script_ignoreall == 1, "<dev string:x75>");
         self val::set(#"spawn_think", "ignoreall", 1);
     }
     if (isdefined(self.script_grenades)) {
@@ -415,7 +414,7 @@ function go_to_node(node, goal_type, optional_arrived_at_node_func) {
 // Checksum 0xa93b5458, Offset: 0x15d0
 // Size: 0x14a
 function get_least_used_from_array(array) {
-    assert(array.size > 0, "<unknown string>");
+    assert(array.size > 0, "<dev string:xca>");
     if (array.size == 1) {
         return array[0];
     }
@@ -472,13 +471,13 @@ function go_to_node_using_funcs(node, get_target_func, set_goal_func_quits, opti
         }
         if (isdefined(node.script_ent_flag_set)) {
             if (!self flag::exists(node.script_ent_flag_set)) {
-                assertmsg("<unknown string>" + node.script_ent_flag_set + "<unknown string>");
+                assertmsg("<dev string:xeb>" + node.script_ent_flag_set + "<dev string:x107>");
             }
             self flag::set(node.script_ent_flag_set);
         }
         if (isdefined(node.script_ent_flag_clear)) {
             if (!self flag::exists(node.script_ent_flag_clear)) {
-                assertmsg("<unknown string>" + node.script_ent_flag_clear + "<unknown string>");
+                assertmsg("<dev string:x12b>" + node.script_ent_flag_clear + "<dev string:x107>");
             }
             self flag::clear(node.script_ent_flag_clear);
         }
@@ -723,47 +722,47 @@ function get_goal(str_goal, str_key = "targetname") {
             }
         }
         foreach (aigroup in a_aigroups) {
-            cmd = "<unknown string>" + aigroup + "<unknown string>" + aigroup + "<unknown string>";
+            cmd = "<dev string:x149>" + aigroup + "<dev string:x165>" + aigroup + "<dev string:x17d>";
             adddebugcommand(cmd);
         }
-        cmd = "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>";
+        cmd = "<dev string:x149>" + "<dev string:x180>" + "<dev string:x165>" + "<dev string:x180>" + "<dev string:x17d>";
         adddebugcommand(cmd);
         while (true) {
-            var_d4f26db9 = getdvarstring(#"debug_aigroup", "<unknown string>");
+            var_d4f26db9 = getdvarstring(#"debug_aigroup", "<dev string:x180>");
             var_c708e6e1 = 120;
-            if (var_d4f26db9 != "<unknown string>") {
-                debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+            if (var_d4f26db9 != "<dev string:x180>") {
+                debug2dtext((150, var_c708e6e1, 0), "<dev string:x187>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                 var_c708e6e1 += 22;
                 if (isdefined(level._ai_group) && isdefined(level._ai_group[var_d4f26db9]) && isdefined(level._ai_group[var_d4f26db9].ai)) {
                     ais = get_ai_group_ai(var_d4f26db9);
                     spawners = get_ai_group_spawner_count(var_d4f26db9);
-                    debug2dtext((150, var_c708e6e1, 0), "<unknown string>" + var_d4f26db9, (1, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+                    debug2dtext((150, var_c708e6e1, 0), "<dev string:x1b1>" + var_d4f26db9, (1, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     var_c708e6e1 += 22;
-                    debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+                    debug2dtext((150, var_c708e6e1, 0), "<dev string:x187>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     var_c708e6e1 += 22;
-                    debug2dtext((150, var_c708e6e1, 0), "<unknown string>" + ais.size, (1, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
+                    debug2dtext((150, var_c708e6e1, 0), "<dev string:x1be>" + ais.size, (1, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                     var_c708e6e1 += 22;
-                    debug2dtext((150, var_c708e6e1, 0), "<unknown string>" + spawners, (1, 0, 0), 1, (0, 0, 0), 0.9, 1, 1);
+                    debug2dtext((150, var_c708e6e1, 0), "<dev string:x1cb>" + spawners, (1, 0, 0), 1, (0, 0, 0), 0.9, 1, 1);
                     var_c708e6e1 += 22;
-                    if (isdefined(level.flag[var_d4f26db9 + "<unknown string>"])) {
-                        flag = level flag::get(var_d4f26db9 + "<unknown string>");
+                    if (isdefined(level.flag[var_d4f26db9 + "<dev string:x1d8>"])) {
+                        flag = level flag::get(var_d4f26db9 + "<dev string:x1d8>");
                         if (flag) {
-                            debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (1, 0.5, 0), 1, (0, 0, 0), 0.9, 1, 1);
+                            debug2dtext((150, var_c708e6e1, 0), "<dev string:x1e3>", (1, 0.5, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         } else {
-                            debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
+                            debug2dtext((150, var_c708e6e1, 0), "<dev string:x1f3>", (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         }
                         var_c708e6e1 += 22;
                     }
-                    if (isdefined(level.flag[var_d4f26db9 + "<unknown string>"])) {
-                        flag = level flag::get(var_d4f26db9 + "<unknown string>");
+                    if (isdefined(level.flag[var_d4f26db9 + "<dev string:x204>"])) {
+                        flag = level flag::get(var_d4f26db9 + "<dev string:x204>");
                         if (flag) {
-                            debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (1, 0.5, 0), 1, (0, 0, 0), 0.9, 1, 1);
+                            debug2dtext((150, var_c708e6e1, 0), "<dev string:x210>", (1, 0.5, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         } else {
-                            debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
+                            debug2dtext((150, var_c708e6e1, 0), "<dev string:x221>", (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         }
                         var_c708e6e1 += 22;
                     }
-                    debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+                    debug2dtext((150, var_c708e6e1, 0), "<dev string:x187>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     var_c708e6e1 += 22;
                     foreach (ai in ais) {
                         sphere(ai.origin + (0, 0, 72), 4, (1, 1, 0), 1, 0, 8, 1);
@@ -774,7 +773,7 @@ function get_goal(str_goal, str_key = "targetname") {
                             sphere(spawner.origin + (0, 0, 10), 4, (1, 0, 0), 1, 0, 8, 1);
                             line(spawner.origin + (0, 0, 10), spawner.origin + (0, 0, 50), (1, 0, 0), 1, 1);
                             print3d(spawner.origin + (0, 0, 20), function_9e72a96(spawner.archetype), (1, 0, 0), 1, 0.4, 1);
-                            print3d(spawner.origin + (0, 0, 30), "<unknown string>" + spawner.count, (1, 0, 0), 1, 0.4, 1);
+                            print3d(spawner.origin + (0, 0, 30), "<dev string:x233>" + spawner.count, (1, 0, 0), 1, 0.4, 1);
                         }
                     }
                 }
@@ -908,7 +907,7 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
         infinitespawn = 1;
     }
     /#
-        vehiclespawner = self.classname == "<unknown string>";
+        vehiclespawner = self.classname == "<dev string:x23c>";
         overridevehicle = !vehiclespawner || !(isdefined(level.var_3313aeb2) && level.var_3313aeb2);
         if (isdefined(level.archetype_spawners) && isarray(level.archetype_spawners) && overridevehicle) {
             archetype = undefined;
@@ -921,14 +920,14 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
                 archetype_spawner = level.archetype_spawners[archetype];
             } else if (self.team == #"allies") {
                 archetype = getdvarstring(#"feature_ai_ally_archetype");
-                if (getdvarstring(#"feature_ai_archetype_override") == "<unknown string>") {
+                if (getdvarstring(#"feature_ai_archetype_override") == "<dev string:x24d>") {
                     archetype = getdvarstring(#"feature_ai_ally_archetype");
                 }
                 archetype_spawner = level.archetype_spawners[archetype];
             } else if (self.team == #"team3") {
                 if (getdvarstring(#"feature_ai_archetype_override") == #"enemy") {
                     archetype = getdvarstring(#"feature_ai_enemy_archetype");
-                } else if (getdvarstring(#"feature_ai_archetype_override") == "<unknown string>") {
+                } else if (getdvarstring(#"feature_ai_archetype_override") == "<dev string:x24d>") {
                     archetype = getdvarstring(#"feature_ai_ally_archetype");
                 } else {
                     archetype = getdvarstring(#"feature_ai_enemy_archetype");
@@ -965,7 +964,7 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
                     archetype_spawner.count++;
                 }
                 archetype_spawner.lastspawntime = gettime();
-            } else if (archetype === "<unknown string>") {
+            } else if (archetype === "<dev string:x254>") {
                 bot = bot::add_bot(self.team);
                 if (isdefined(bot)) {
                     bot.botremoveondeath = 1;
@@ -977,7 +976,7 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
                         bot.pers[#"team"] = self.team;
                     }
                     bot.target = self.target;
-                    bot.targetname = self.targetname + "<unknown string>";
+                    bot.targetname = self.targetname + "<dev string:x25a>";
                     bot.script_noteworthy = self.script_noteworthy;
                     bot.script_string = self.script_string;
                     return bot;
@@ -1134,7 +1133,7 @@ function set_ai_group_cleared_count(aigroup, count) {
 // Checksum 0xb72fcdcc, Offset: 0x42d0
 // Size: 0x6c
 function waittill_ai_group_cleared(aigroup) {
-    assert(isdefined(level._ai_group[aigroup]), "<unknown string>" + aigroup + "<unknown string>");
+    assert(isdefined(level._ai_group[aigroup]), "<dev string:x260>" + aigroup + "<dev string:x26f>");
     level flag::wait_till(aigroup + "_cleared");
 }
 
@@ -1332,7 +1331,7 @@ function remove_global_spawn_function(team, func) {
 // Checksum 0x26f9c0d, Offset: 0x4dd0
 // Size: 0xc6
 function add_spawn_function(spawn_func, ...) {
-    assert(!isdefined(level._loadstarted) || !isalive(self), "<unknown string>");
+    assert(!isdefined(level._loadstarted) || !isalive(self), "<dev string:x281>");
     func = [];
     func[#"function"] = spawn_func;
     func[#"params"] = vararg;
@@ -1347,7 +1346,7 @@ function add_spawn_function(spawn_func, ...) {
 // Checksum 0xfba74d5c, Offset: 0x4ea0
 // Size: 0x112
 function remove_spawn_function(func) {
-    assert(!isdefined(level._loadstarted) || !isalive(self), "<unknown string>");
+    assert(!isdefined(level._loadstarted) || !isalive(self), "<dev string:x2b0>");
     if (isdefined(self.spawn_funcs)) {
         array = [];
         for (i = 0; i < self.spawn_funcs.size; i++) {
@@ -1355,7 +1354,7 @@ function remove_spawn_function(func) {
                 array[array.size] = self.spawn_funcs[i];
             }
         }
-        assert(self.spawn_funcs.size != array.size, "<unknown string>");
+        assert(self.spawn_funcs.size != array.size, "<dev string:x2e2>");
         self.spawn_funcs = array;
     }
 }
@@ -1365,8 +1364,8 @@ function remove_spawn_function(func) {
 // Checksum 0xf61701db, Offset: 0x4fc0
 // Size: 0xec
 function add_spawn_function_group(str_value, str_key = "targetname", func_spawn, param_1, param_2, param_3, param_4, param_5) {
-    assert(isdefined(str_value), "<unknown string>");
-    assert(isdefined(func_spawn), "<unknown string>");
+    assert(isdefined(str_value), "<dev string:x337>");
+    assert(isdefined(func_spawn), "<dev string:x378>");
     a_spawners = getspawnerarray(str_value, str_key);
     array::run_all(a_spawners, &add_spawn_function, func_spawn, param_1, param_2, param_3, param_4, param_5);
 }
@@ -1376,8 +1375,8 @@ function add_spawn_function_group(str_value, str_key = "targetname", func_spawn,
 // Checksum 0xaa3c2ba4, Offset: 0x50b8
 // Size: 0xdc
 function add_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_2, param_3, param_4, param_5) {
-    assert(isdefined(str_aigroup), "<unknown string>");
-    assert(isdefined(func_spawn), "<unknown string>");
+    assert(isdefined(str_aigroup), "<dev string:x3ba>");
+    assert(isdefined(func_spawn), "<dev string:x400>");
     a_spawners = getspawnerarray(str_aigroup, "script_aigroup");
     array::run_all(a_spawners, &add_spawn_function, func_spawn, param_1, param_2, param_3, param_4, param_5);
 }
@@ -1387,8 +1386,8 @@ function add_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_2, 
 // Checksum 0x958fc180, Offset: 0x51a0
 // Size: 0xcc
 function remove_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_2, param_3, param_4, param_5) {
-    assert(isdefined(str_aigroup), "<unknown string>");
-    assert(isdefined(func_spawn), "<unknown string>");
+    assert(isdefined(str_aigroup), "<dev string:x445>");
+    assert(isdefined(func_spawn), "<dev string:x48e>");
     a_spawners = getspawnerarray(str_aigroup, "script_aigroup");
     array::run_all(a_spawners, &remove_spawn_function, func_spawn);
 }
@@ -1401,7 +1400,7 @@ function simple_spawn(name_or_spawners, spawn_func, ...) {
     spawners = [];
     if (isstring(name_or_spawners)) {
         spawners = getentarray(name_or_spawners, "targetname");
-        assert(spawners.size, "<unknown string>" + name_or_spawners + "<unknown string>");
+        assert(spawners.size, "<dev string:x4d6>" + name_or_spawners + "<dev string:x4f5>");
     } else {
         if (!isdefined(name_or_spawners)) {
             name_or_spawners = [];
@@ -1435,7 +1434,7 @@ function simple_spawn(name_or_spawners, spawn_func, ...) {
 function simple_spawn_single(name_or_spawner, spawn_func, ...) {
     a_args = arraycombine(array(name_or_spawner, spawn_func), vararg, 1, 0);
     ai = util::single_func_argarray(undefined, &simple_spawn, a_args);
-    assert(ai.size <= 1, "<unknown string>");
+    assert(ai.size <= 1, "<dev string:x4ff>");
     if (ai.size) {
         return ai[0];
     }

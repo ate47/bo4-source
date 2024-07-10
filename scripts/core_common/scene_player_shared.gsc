@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\scene_player_shared.gsc;
 #using script_24c15fbbb838c794;
 #using scripts\core_common\weapons_shared.gsc;
@@ -83,34 +82,34 @@ class csceneplayer : csceneobject {
                 if (!isdefined(level.hud_scene_dev_info1)) {
                     level.hud_scene_dev_info1 = newdebughudelem();
                 }
-                level.hud_scene_dev_info1.alignx = "<unknown string>";
-                level.hud_scene_dev_info1.aligny = "<unknown string>";
-                level.hud_scene_dev_info1.horzalign = "<unknown string>";
+                level.hud_scene_dev_info1.alignx = "<dev string:x118>";
+                level.hud_scene_dev_info1.aligny = "<dev string:x120>";
+                level.hud_scene_dev_info1.horzalign = "<dev string:x129>";
                 level.hud_scene_dev_info1.y = 400;
                 level.hud_scene_dev_info1.fontscale = 1.3;
                 level.hud_scene_dev_info1.color = (0.439216, 0.501961, 0.564706);
-                level.hud_scene_dev_info1 settext("<unknown string>" + toupper(function_9e72a96(_o_scene._str_name)));
+                level.hud_scene_dev_info1 settext("<dev string:x136>" + toupper(function_9e72a96(_o_scene._str_name)));
                 if (!isdefined(level.hud_scene_dev_info2)) {
                     level.hud_scene_dev_info2 = newdebughudelem();
                 }
-                level.hud_scene_dev_info2.alignx = "<unknown string>";
-                level.hud_scene_dev_info2.aligny = "<unknown string>";
-                level.hud_scene_dev_info2.horzalign = "<unknown string>";
+                level.hud_scene_dev_info2.alignx = "<dev string:x118>";
+                level.hud_scene_dev_info2.aligny = "<dev string:x120>";
+                level.hud_scene_dev_info2.horzalign = "<dev string:x129>";
                 level.hud_scene_dev_info2.y = 420;
                 level.hud_scene_dev_info2.fontscale = 1.3;
                 level.hud_scene_dev_info2.color = (0.439216, 0.501961, 0.564706);
-                level.hud_scene_dev_info2 settext("<unknown string>" + function_9e72a96(_str_shot));
+                level.hud_scene_dev_info2 settext("<dev string:x140>" + function_9e72a96(_str_shot));
                 if (!isdefined(level.hud_scene_dev_info3)) {
                     level.hud_scene_dev_info3 = newdebughudelem();
                 }
-                level.hud_scene_dev_info3.alignx = "<unknown string>";
-                level.hud_scene_dev_info3.aligny = "<unknown string>";
-                level.hud_scene_dev_info3.horzalign = "<unknown string>";
+                level.hud_scene_dev_info3.alignx = "<dev string:x118>";
+                level.hud_scene_dev_info3.aligny = "<dev string:x120>";
+                level.hud_scene_dev_info3.horzalign = "<dev string:x129>";
                 level.hud_scene_dev_info3.y = 440;
                 level.hud_scene_dev_info3.fontscale = 1.3;
                 level.hud_scene_dev_info3.color = (0.439216, 0.501961, 0.564706);
                 var_208dd9f0 = isdefined(var_55b4f21e.devstate) ? var_55b4f21e.devstate : _o_scene._s.devstate;
-                level.hud_scene_dev_info3 settext("<unknown string>" + function_9e72a96(var_208dd9f0));
+                level.hud_scene_dev_info3 settext("<dev string:x149>" + function_9e72a96(var_208dd9f0));
                 return;
             }
             destroy_dev_info();
@@ -240,7 +239,7 @@ class csceneplayer : csceneobject {
         }
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                csceneobject::log(toupper(_s.type) + "<unknown string>" + _str_camera + "<unknown string>");
+                csceneobject::log(toupper(_s.type) + "<dev string:x100>" + _str_camera + "<dev string:x10c>");
             }
         #/
         flagsys::clear(#"camera_playing");
@@ -333,7 +332,7 @@ class csceneplayer : csceneobject {
         }
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>");
+                printtoprightln("<dev string:xd5>");
             }
         #/
         player notify(#"hash_7ba9e3058f933eb");
@@ -374,7 +373,7 @@ class csceneplayer : csceneobject {
         function_894716e2(player);
         /#
             if (player === level.host) {
-                player util::delay(0.5, "<unknown string>", &destroy_dev_info);
+                player util::delay(0.5, "<dev string:xf5>", &destroy_dev_info);
             }
         #/
     }
@@ -799,7 +798,7 @@ class csceneplayer : csceneobject {
                     }
                 }
             }
-            assert(isdefined(var_efc540b6), "<unknown string>");
+            assert(isdefined(var_efc540b6), "<dev string:x5c>");
             if (isdefined(var_ec50a0d3.var_769fadce) && var_ec50a0d3.var_769fadce) {
                 var_4a92a676 = getanimlength(_str_current_anim);
                 var_7a496fd5 = isdefined(var_ec50a0d3.var_3ee70278) ? var_ec50a0d3.var_3ee70278 : var_4a92a676 / 2;
@@ -865,7 +864,7 @@ class csceneplayer : csceneobject {
                 util::wait_network_frame();
                 var_208325df = 0;
                 if (isdefined(var_55b4f21e.var_f251a00e)) {
-                    assert(isassetloaded("<unknown string>", var_55b4f21e.var_f251a00e), "<unknown string>" + var_55b4f21e.var_f251a00e + "<unknown string>");
+                    assert(isassetloaded("<dev string:x90>", var_55b4f21e.var_f251a00e), "<dev string:x9a>" + var_55b4f21e.var_f251a00e + "<dev string:xab>");
                     var_208325df = player gestures::play_gesture(var_55b4f21e.var_f251a00e, undefined, 0, 0);
                 }
                 e_player_link = util::spawn_model("tag_origin", var_1cd52bd9, var_59c304d1);
@@ -1115,7 +1114,7 @@ class csceneplayer : csceneobject {
     function _prepare_player(player) {
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>");
+                printtoprightln("<dev string:x38>");
             }
         #/
         player endon(#"death");
@@ -1191,7 +1190,7 @@ class csceneplayer : csceneobject {
                                 player setcharacterbodytype(var_2074c3ff);
                                 player setcharacteroutfit(var_6e0e2531);
                                 if (isdefined(_s.var_a5617859) && isarray(var_322595c6.presets)) {
-                                    var_a919ac81 = strtok(_s.var_a5617859, "<unknown string>");
+                                    var_a919ac81 = strtok(_s.var_a5617859, "<dev string:x58>");
                                     foreach (var_a343b02b, s_preset in var_322595c6.presets) {
                                         if (!(isdefined(s_preset.isvalid) && s_preset.isvalid)) {
                                             continue;
@@ -1435,7 +1434,7 @@ class cscenesharedplayer : csceneplayer, csceneobject {
         #/
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + player_animation);
+                printtoprightln("<dev string:x18d>" + player_animation);
             }
         #/
         player flagsys::set(#"shared_igc");
@@ -1480,10 +1479,10 @@ class cscenesharedplayer : csceneplayer, csceneobject {
         if (n_time_frac < 1) {
             /#
                 if (getdvarint(#"scene_hide_player", 0) > 0) {
-                    player val::set(#"scene", "<unknown string>");
+                    player val::set(#"scene", "<dev string:x1c3>");
                 }
                 if (getdvarint(#"debug_scene", 0) > 0) {
-                    printtoprightln("<unknown string>" + _s.name + "<unknown string>" + player_animation);
+                    printtoprightln("<dev string:x1ca>" + _s.name + "<dev string:x211>" + player_animation);
                 }
             #/
             player_num = player getentitynumber();
@@ -1511,7 +1510,7 @@ class cscenesharedplayer : csceneplayer, csceneobject {
             }
             /#
                 if (getdvarint(#"debug_scene", 0) > 0) {
-                    printtoprightln("<unknown string>" + _s.name + "<unknown string>" + player_animation);
+                    printtoprightln("<dev string:x217>" + _s.name + "<dev string:x261>" + player_animation);
                 }
             #/
         }
@@ -1524,7 +1523,7 @@ class cscenesharedplayer : csceneplayer, csceneobject {
     function _play_anim(animation, n_rate, n_blend, n_time) {
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + animation);
+                printtoprightln("<dev string:x153>" + animation);
             }
         #/
         _str_current_anim = animation;
@@ -1565,7 +1564,7 @@ class cscenesharedplayer : csceneplayer, csceneobject {
         } while (b_playing);
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                csceneobject::log(toupper(_s.type) + "<unknown string>" + _str_current_anim + "<unknown string>");
+                csceneobject::log(toupper(_s.type) + "<dev string:x17e>" + _str_current_anim + "<dev string:x10c>");
             }
         #/
         thread [[ _o_scene ]]->_call_shot_funcs("players_done");

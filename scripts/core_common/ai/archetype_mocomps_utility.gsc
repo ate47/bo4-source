@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_utility.gsc;
 #using scripts\core_common\ai\systems\animation_state_machine_mocomp.gsc;
 #using scripts\core_common\math_shared.gsc;
@@ -32,8 +31,8 @@ function private drawtraversal(traversal, entity, animation, mocompanimblendoutt
         return;
     }
     /#
-        recordsphere(traversal.startposition, 2, (1, 0.5, 0), "<unknown string>", entity);
-        recordsphere(traversal.endposition, 2, (1, 0.5, 0), "<unknown string>", entity);
+        recordsphere(traversal.startposition, 2, (1, 0.5, 0), "<dev string:x38>", entity);
+        recordsphere(traversal.endposition, 2, (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     animlength = getanimlength(animation);
     currentposition = traversal.startposition;
@@ -47,31 +46,31 @@ function private drawtraversal(traversal, entity, animation, mocompanimblendoutt
         movedelta = getmovedelta(animation, segmenttime / animlength, nexttime / animlength);
         nextposition = currentposition + rotatepoint(movedelta, traversal.startangles);
         /#
-            recordline(currentposition, nextposition, (1, 0.5, 0), "<unknown string>", entity);
+            recordline(currentposition, nextposition, (1, 0.5, 0), "<dev string:x38>", entity);
         #/
         currentposition = nextposition;
     }
     /#
-        recordsphere(nextposition, 2, (1, 0, 0), "<unknown string>", entity);
+        recordsphere(nextposition, 2, (1, 0, 0), "<dev string:x38>", entity);
     #/
     if (isdefined(traversal.mantlenode)) {
         edgepoints = getnodeedge(traversal.mantlenode);
         for (index = 1; index < edgepoints.size; index++) {
             /#
-                recordline(edgepoints[index - 1], edgepoints[index], (1, 0, 0), "<unknown string>", entity);
+                recordline(edgepoints[index - 1], edgepoints[index], (1, 0, 0), "<dev string:x38>", entity);
             #/
         }
     }
     edgepoints = getnodeedge(traversal.startnode);
     for (index = 1; index < edgepoints.size; index++) {
         /#
-            recordline(edgepoints[index - 1], edgepoints[index], (1, 0, 0), "<unknown string>", entity);
+            recordline(edgepoints[index - 1], edgepoints[index], (1, 0, 0), "<dev string:x38>", entity);
         #/
     }
     edgepoints = getnodeedge(traversal.endnode);
     for (index = 1; index < edgepoints.size; index++) {
         /#
-            recordline(edgepoints[index - 1], edgepoints[index], (1, 0, 0), "<unknown string>", entity);
+            recordline(edgepoints[index - 1], edgepoints[index], (1, 0, 0), "<dev string:x38>", entity);
         #/
     }
 }
@@ -85,10 +84,10 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
         return;
     }
     /#
-        recordsphere(section.startposition, 2, (1, 0.5, 0), "<unknown string>", entity);
-        recordsphere(section.endposition, 2, (1, 0.5, 0), "<unknown string>", entity);
-        recordsphere(section.mocompstartposition, 2, (0, 1, 0), "<unknown string>", entity);
-        recordsphere(section.adjustedmocompendposition, 2, (0, 1, 0), "<unknown string>", entity);
+        recordsphere(section.startposition, 2, (1, 0.5, 0), "<dev string:x38>", entity);
+        recordsphere(section.endposition, 2, (1, 0.5, 0), "<dev string:x38>", entity);
+        recordsphere(section.mocompstartposition, 2, (0, 1, 0), "<dev string:x38>", entity);
+        recordsphere(section.adjustedmocompendposition, 2, (0, 1, 0), "<dev string:x38>", entity);
     #/
     animlength = getanimlength(animation);
     currentposition = section.startposition;
@@ -110,11 +109,11 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
             }
             nextposition += adjusteddeltaperframe;
             /#
-                recordline(currentposition, nextposition, (0, 1, 0), "<unknown string>", entity);
+                recordline(currentposition, nextposition, (0, 1, 0), "<dev string:x38>", entity);
             #/
         } else {
             /#
-                recordline(currentposition, nextposition, (1, 0.5, 0), "<unknown string>", entity);
+                recordline(currentposition, nextposition, (1, 0.5, 0), "<dev string:x38>", entity);
             #/
         }
         currentposition = nextposition;
@@ -261,12 +260,12 @@ function calculatepivotoriginfromedge(entity, mantlenode, traversalstart) {
         mantleorigin = physicstraceex(mantleoriginproj + (0, 0, mantlenode.aabb_extents[2]), mantleoriginproj - (0, 0, mantlenode.aabb_extents[2]), (0, 0, 0), (0, 0, 0), entity)[#"position"];
     }
     /#
-        recordline(mantleoriginproj, mantleendproj, (0, 0, 1), "<unknown string>", entity);
-        recordline(mantlestartproj, traversalstartproj, (0, 0, 1), "<unknown string>", entity);
-        recordline(traversalstartproj, mantleoriginproj, (0, 0, 1), "<unknown string>", entity);
-        recordline(mantlestart, mantleend, (1, 0, 0), "<unknown string>", entity);
-        recordline(mantlestart, mantleoriginproj, (1, 0, 0), "<unknown string>", entity);
-        recordline(mantleoriginproj, mantleorigin, (1, 0, 0), "<unknown string>", entity);
+        recordline(mantleoriginproj, mantleendproj, (0, 0, 1), "<dev string:x38>", entity);
+        recordline(mantlestartproj, traversalstartproj, (0, 0, 1), "<dev string:x38>", entity);
+        recordline(traversalstartproj, mantleoriginproj, (0, 0, 1), "<dev string:x38>", entity);
+        recordline(mantlestart, mantleend, (1, 0, 0), "<dev string:x38>", entity);
+        recordline(mantlestart, mantleoriginproj, (1, 0, 0), "<dev string:x38>", entity);
+        recordline(mantleoriginproj, mantleorigin, (1, 0, 0), "<dev string:x38>", entity);
     #/
     return mantleorigin;
 }
@@ -381,9 +380,9 @@ function mocomptraversalproceduralpivotinit(entity, mocompanim, mocompanimblendo
     pivotorigin = traversal.startposition + rotatepoint(getmovedelta(mocompanim, 0, animlen), traversal.startangles) + pivotoffset;
     /#
         if (getdvarint(#"ai_debugvolumetool", 0) > 1) {
-            recordsphere(animpivotorigin, 2, (0, 0, 1), "<unknown string>", entity);
-            recordline(traversal.pivotorigin, animpivotorigin, (1, 0, 0), "<unknown string>", entity);
-            recordsphere(traversal.pivotorigin, 2, (1, 0, 0), "<unknown string>", entity);
+            recordsphere(animpivotorigin, 2, (0, 0, 1), "<dev string:x38>", entity);
+            recordline(traversal.pivotorigin, animpivotorigin, (1, 0, 0), "<dev string:x38>", entity);
+            recordsphere(traversal.pivotorigin, 2, (1, 0, 0), "<dev string:x38>", entity);
         }
     #/
     traversal.sections = [];
@@ -615,9 +614,9 @@ function private debuglocoexplosion(entity) {
         damageyawforward = anglestoforward((0, entity.damageyaw - entity.angles[1], 0));
         starttime = gettime();
         while (gettime() - starttime < 10000) {
-            recordsphere(startorigin, 5, (1, 0, 0), "<unknown string>", entity);
-            recordline(startorigin, startorigin + startyawforward * 100, (0, 0, 1), "<unknown string>", entity);
-            recordline(startorigin, startorigin + damageyawforward * 100, (1, 0, 0), "<unknown string>", entity);
+            recordsphere(startorigin, 5, (1, 0, 0), "<dev string:x38>", entity);
+            recordline(startorigin, startorigin + startyawforward * 100, (0, 0, 1), "<dev string:x38>", entity);
+            recordline(startorigin, startorigin + damageyawforward * 100, (1, 0, 0), "<dev string:x38>", entity);
             waitframe(1);
         }
     #/
@@ -695,12 +694,12 @@ function private mocompadjusttocoverupdate(entity, mocompanim, mocompanimblendou
     }
     /#
         if (getdvarint(#"ai_debugadjustmocomp", 0)) {
-            record3dtext(entity.mocompanglestarttime, entity.origin + (0, 0, 5), (0, 1, 0), "<unknown string>");
-            hiptagorigin = entity gettagorigin("<unknown string>");
-            recordline(entity.nodeoffsetorigin, entity.nodeoffsetorigin + entity.nodeoffsetforward * 30, (1, 0.5, 0), "<unknown string>", entity);
-            recordline(entity.adjustnode.origin, entity.adjustnode.origin + entity.nodeforward * 20, (0, 1, 0), "<unknown string>", entity);
-            recordline(entity.origin, entity.origin + anglestoforward(entity.angles) * 10, (1, 0, 0), "<unknown string>", entity);
-            recordline(hiptagorigin, (hiptagorigin[0], hiptagorigin[1], entity.origin[2]), (0, 0, 1), "<unknown string>", entity);
+            record3dtext(entity.mocompanglestarttime, entity.origin + (0, 0, 5), (0, 1, 0), "<dev string:x38>");
+            hiptagorigin = entity gettagorigin("<dev string:x45>");
+            recordline(entity.nodeoffsetorigin, entity.nodeoffsetorigin + entity.nodeoffsetforward * 30, (1, 0.5, 0), "<dev string:x38>", entity);
+            recordline(entity.adjustnode.origin, entity.adjustnode.origin + entity.nodeforward * 20, (0, 1, 0), "<dev string:x38>", entity);
+            recordline(entity.origin, entity.origin + anglestoforward(entity.angles) * 10, (1, 0, 0), "<dev string:x38>", entity);
+            recordline(hiptagorigin, (hiptagorigin[0], hiptagorigin[1], entity.origin[2]), (0, 0, 1), "<dev string:x38>", entity);
         }
     #/
 }
@@ -737,8 +736,8 @@ function private function_82b9d7b7(entity, mocompanim, mocompanimblendouttime, m
     entity animmode("normal");
     if (isdefined(entity.traverseendnode)) {
         /#
-            print3d(entity.traversestartnode.origin, "<unknown string>", (1, 0, 0), 1, 1, 60);
-            print3d(entity.traverseendnode.origin, "<unknown string>", (0, 1, 0), 1, 1, 60);
+            print3d(entity.traversestartnode.origin, "<dev string:x52>", (1, 0, 0), 1, 1, 60);
+            print3d(entity.traverseendnode.origin, "<dev string:x52>", (0, 1, 0), 1, 1, 60);
             line(entity.traversestartnode.origin, entity.traverseendnode.origin, (0, 1, 0), 1, 0, 60);
         #/
         entity forceteleport(entity.traverseendnode.origin, entity.traverseendnode.angles, 0);

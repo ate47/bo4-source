@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace namespace_6a81d072;
 
 // Namespace namespace_6a81d072/namespace_6a81d072

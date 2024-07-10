@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace novacrawlerinterface;
 
 // Namespace novacrawlerinterface/archetype_nova_crawler_interface

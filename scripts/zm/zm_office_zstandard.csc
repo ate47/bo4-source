@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace zm_office_zstandard;
 
 // Namespace zm_office_zstandard/zm_office_zstandard

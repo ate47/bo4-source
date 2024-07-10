@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_powerups.gsc;
 #using script_24c32478acf44108;
 #using scripts\zm_common\zm_equipment.gsc;
@@ -567,7 +566,7 @@ function function_e1c4ab06(params) {
                 }
                 /#
                     if (isalive(ai) && !isdefined(ai.maxhealth) && isdefined(ai.archetype)) {
-                        iprintlnbold("<unknown string>" + function_9e72a96(ai.archetype) + "<unknown string>");
+                        iprintlnbold("<dev string:x38>" + function_9e72a96(ai.archetype) + "<dev string:x62>");
                     }
                 #/
                 if (isalive(ai) && isdefined(ai.maxhealth)) {
@@ -767,7 +766,7 @@ function function_b3ac0cab(params) {
     }
     /#
         if (!isdefined(self.maxhealth) && isdefined(self.archetype)) {
-            iprintlnbold("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>");
+            iprintlnbold("<dev string:x38>" + function_9e72a96(self.archetype) + "<dev string:x62>");
         }
     #/
     n_damage = 0;

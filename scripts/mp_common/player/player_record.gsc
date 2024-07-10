@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
@@ -250,12 +249,12 @@ function function_96d38b95(result) {
 // Size: 0x204
 function record_special_move_data_for_life(killer) {
     if (!isdefined(self.lastswimmingstarttime) || !isdefined(self.lastwallrunstarttime) || !isdefined(self.lastslidestarttime) || !isdefined(self.lastdoublejumpstarttime) || !isdefined(self.timespentswimminginlife) || !isdefined(self.timespentwallrunninginlife) || !isdefined(self.numberofdoublejumpsinlife) || !isdefined(self.numberofslidesinlife)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     if (isdefined(killer)) {
         if (!isdefined(killer.lastswimmingstarttime) || !isdefined(killer.lastwallrunstarttime) || !isdefined(killer.lastslidestarttime) || !isdefined(killer.lastdoublejumpstarttime)) {
-            println("<unknown string>");
+            println("<dev string:x7a>");
             return;
         }
         matchrecordlogspecialmovedataforlife(self, self.lastswimmingstarttime, self.lastwallrunstarttime, self.lastslidestarttime, self.lastdoublejumpstarttime, self.timespentswimminginlife, self.timespentwallrunninginlife, self.numberofdoublejumpsinlife, self.numberofslidesinlife, killer, killer.lastswimmingstarttime, killer.lastwallrunstarttime, killer.lastslidestarttime, killer.lastdoublejumpstarttime);

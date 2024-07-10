@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_utils.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\globallogic_spawn.gsc;
@@ -319,7 +318,7 @@ function spawn_zombies(e_target, n_count, var_6448415b = 0, a_spawns, var_d0e995
             zombie = spawnactor("spawner_boct_zombie_mp", nd_spawn.origin, nd_spawn.angles, "zombie", 0, var_68863e93);
             /#
                 if (!(isdefined(var_68863e93) && var_68863e93)) {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x38>");
                 }
             #/
         }
@@ -468,7 +467,7 @@ function j_fore_le_01() {
 // Size: 0x2c
 function function_76a85acc(_hash) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x4f>");
     #/
 }
 
@@ -491,7 +490,7 @@ function function_5a57b177(var_f1de62b9) {
             wait(1);
         } while (!(isdefined(var_5d199101) && var_5d199101));
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x69>");
         #/
     }
 }
@@ -951,7 +950,7 @@ function function_91c380a() {
 // Size: 0x2c
 function function_b47c8ec8(_hash) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x8b>");
     #/
 }
 
@@ -1262,57 +1261,57 @@ function function_dd64960c(a_ents) {
     // Size: 0x988
     function function_d69c54a8() {
         sessionmode = currentsessionmode();
-        setdvar(#"hash_2bdefa89fdfb0546", "<unknown string>");
-        level flag::init("<unknown string>");
+        setdvar(#"hash_2bdefa89fdfb0546", "<dev string:x97>");
+        level flag::init("<dev string:x9a>");
         if (sessionmode != 4) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:xb1>");
+            adddebugcommand("<dev string:x115>");
+            adddebugcommand("<dev string:x17b>");
+            adddebugcommand("<dev string:x1dd>");
+            adddebugcommand("<dev string:x241>");
+            adddebugcommand("<dev string:x2a7>");
+            adddebugcommand("<dev string:x30f>");
+            adddebugcommand("<dev string:x36b>");
+            adddebugcommand("<dev string:x3cb>");
+            adddebugcommand("<dev string:x42d>");
+            adddebugcommand("<dev string:x4ab>");
+            adddebugcommand("<dev string:x527>");
+            adddebugcommand("<dev string:x5a5>");
+            adddebugcommand("<dev string:x621>");
+            adddebugcommand("<dev string:x6a9>");
+            adddebugcommand("<dev string:x731>");
+            adddebugcommand("<dev string:x7aa>");
+            adddebugcommand("<dev string:x823>");
+            adddebugcommand("<dev string:x8a0>");
+            adddebugcommand("<dev string:x913>");
+            adddebugcommand("<dev string:x986>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_2bdefa89fdfb0546", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_2bdefa89fdfb0546", "<dev string:x97>");
+            if (cmd == "<dev string:x97>") {
                 continue;
             }
             e_player = ct_utils::get_player();
             switch (cmd) {
             case #"hash_1ce8d5f5a390a03e":
                 if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::set("<unknown string>", "<unknown string>", 1);
+                    level.ai_vip.magic_bullet_shield val::set("<dev string:x9fd>", "<dev string:xa0f>", 1);
                 }
                 break;
             case #"hash_3028b864eea95c40":
                 if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::reset("<unknown string>", "<unknown string>");
+                    level.ai_vip.magic_bullet_shield val::reset("<dev string:x9fd>", "<dev string:xa0f>");
                 }
                 break;
             case #"hash_2a604c8957a7a557":
                 if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::set("<unknown string>", "<unknown string>", 1);
+                    level.ai_vip.magic_bullet_shield val::set("<dev string:xa1b>", "<dev string:xa2c>", 1);
                 }
                 break;
             case #"hash_292c4e5ff1c705bb":
                 if (isalive(level.ai_vip)) {
-                    level.ai_vip.magic_bullet_shield val::reset("<unknown string>", "<unknown string>");
+                    level.ai_vip.magic_bullet_shield val::reset("<dev string:xa1b>", "<dev string:xa2c>");
                 }
                 break;
             case #"hash_12348115d7e7bfac":
@@ -1390,7 +1389,7 @@ function function_dd64960c(a_ents) {
                 level thread spawn_zombies(ct_utils::get_player(), 20, 1);
                 break;
             }
-            setdvar(#"hash_2bdefa89fdfb0546", "<unknown string>");
+            setdvar(#"hash_2bdefa89fdfb0546", "<dev string:x97>");
         }
     }
 

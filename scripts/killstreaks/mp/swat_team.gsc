@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_human_interface.gsc;
 #using scripts\core_common\ai\archetype_human.gsc;
 #using scripts\core_common\spawner_shared.gsc;
@@ -524,9 +523,9 @@ function private function_fb9f1f3b(entity) {
             entity function_a57c34b7(newspot);
             function_615dc1b2(entity);
             /#
-                record3dtext("heli" + direction, newspot + (0, 0, 10), (0, 0, 1), "generic");
-                recordline(entity.origin, newspot, (0, 0, 1), "generic");
-                recordcircle(newspot, 8, (0, 0, 1), "generic");
+                record3dtext("<dev string:x38>" + direction, newspot + (0, 0, 10), (0, 0, 1), "<dev string:x3b>");
+                recordline(entity.origin, newspot, (0, 0, 1), "<dev string:x3b>");
+                recordcircle(newspot, 8, (0, 0, 1), "<dev string:x3b>");
             #/
         } else {
             cylinder = ai::t_cylinder(entity.ai.var_5cb410bc.centerpos, entity.goalradius, 40);
@@ -538,9 +537,9 @@ function private function_fb9f1f3b(entity) {
                 entity function_a57c34b7(tacpoint.origin);
                 function_615dc1b2(entity);
                 /#
-                    record3dtext("uber", tacpoint.origin + (0, 0, 10), (0, 0, 1), "generic");
-                    recordline(entity.origin, tacpoint.origin, (0, 0, 1), "generic");
-                    recordcircle(tacpoint.origin, 8, (0, 0, 1), "generic");
+                    record3dtext("<dev string:x44>", tacpoint.origin + (0, 0, 10), (0, 0, 1), "<dev string:x3b>");
+                    recordline(entity.origin, tacpoint.origin, (0, 0, 1), "<dev string:x3b>");
+                    recordcircle(tacpoint.origin, 8, (0, 0, 1), "<dev string:x3b>");
                 #/
             }
         }
@@ -777,14 +776,14 @@ function private function_ace0a9bc() {
         if (getdvarint(#"hash_6f66ef2c6ab70226", 0)) {
             if (isdefined(self.likelyenemyposition)) {
                 /#
-                    recordline(self.origin, self.likelyenemyposition, (0, 0, 1), "generic");
-                    recordcircle(self.likelyenemyposition, 8, (0, 0, 1), "generic");
+                    recordline(self.origin, self.likelyenemyposition, (0, 0, 1), "<dev string:x3b>");
+                    recordcircle(self.likelyenemyposition, 8, (0, 0, 1), "<dev string:x3b>");
                 #/
             }
             if (isdefined(self.enemy)) {
                 /#
-                    recordline(self.origin + (0, 0, 70), self.enemy.origin + (0, 0, 70), (1, 0, 0), "generic");
-                    recordcircle(self.enemy.origin + (0, 0, 70), 8, (1, 0, 0), "generic");
+                    recordline(self.origin + (0, 0, 70), self.enemy.origin + (0, 0, 70), (1, 0, 0), "<dev string:x3b>");
+                    recordcircle(self.enemy.origin + (0, 0, 70), 8, (1, 0, 0), "<dev string:x3b>");
                     if (isplayer(self.enemy)) {
                         pathdata = generatenavmeshpath(self.origin, self.enemy.origin, self);
                         pathdistance = pathdata.pathdistance;
@@ -818,7 +817,7 @@ function private function_8fa2faa5(swat, helicopter, position) {
         ride_anim = "ai_swat_rifle_ent_litlbird_rappel_stn_base_03_idle";
         break;
     default:
-        assertmsg("MOD_MELEE");
+        assertmsg("<dev string:x4d>");
         break;
     }
     assert(isdefined(ride_anim));
@@ -890,7 +889,7 @@ function swat_deploy(swat, helicopter, position, var_a298d55b, var_eead001f) {
         deploy_anim = "ai_swat_rifle_ent_litlbird_rappel_stn_base_03";
         break;
     default:
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x85>");
         break;
     }
     assert(isdefined(deploy_anim));
@@ -937,7 +936,7 @@ function private function_8de67419(leavenode) {
         self function_9ffc1856(var_a9a839e2, 0);
         while (true) {
             /#
-                recordsphere(var_a9a839e2, 8, (0, 0, 1), "generic");
+                recordsphere(var_a9a839e2, 8, (0, 0, 1), "<dev string:x3b>");
             #/
             var_baa92af9 = ispointinnavvolume(self.origin, "navvolume_big");
             if (!var_baa92af9) {
@@ -982,7 +981,7 @@ function function_9fe56d0b(helicopter) {
                 helicopter function_9ffc1856(var_a9a839e2, 0);
                 while (true) {
                     /#
-                        recordsphere(var_a9a839e2, 8, (0, 0, 1), "generic");
+                        recordsphere(var_a9a839e2, 8, (0, 0, 1), "<dev string:x3b>");
                     #/
                     var_baa92af9 = ispointinnavvolume(helicopter.origin, "navvolume_big");
                     if (var_baa92af9) {
@@ -1128,7 +1127,7 @@ function private function_67c394f2(helicopter, destination) {
         if (continue_waiting) {
             /#
                 if (getdvarint(#"swat_debug", 0)) {
-                    iprintln("<unknown string>" + distance2d(helicopter.origin, destination));
+                    iprintln("<dev string:xbe>" + distance2d(helicopter.origin, destination));
                 }
             #/
             waitframe(1);
@@ -1136,7 +1135,7 @@ function private function_67c394f2(helicopter, destination) {
     }
     /#
         if (getdvarint(#"swat_debug", 0)) {
-            iprintln("<unknown string>" + distance2d(helicopter.origin, destination));
+            iprintln("<dev string:xd8>" + distance2d(helicopter.origin, destination));
         }
     #/
     helicopter notify(#"reached_destination");
@@ -1284,7 +1283,7 @@ function private function_d4331865(rope) {
 }
 
 // Namespace swat_team/swat_team
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0xea980cf2, Offset: 0x5b00
 // Size: 0x120
 function function_47cf421e(inflictor, attacker, damage, idflags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
@@ -1459,12 +1458,12 @@ function function_18a9058c() {
 function private function_75277c27(tacpoint, context) {
     if (tacpoint.ceilingheight >= 4000) {
         /#
-            recordsphere(tacpoint.origin, 2, (0, 1, 0), "generic");
+            recordsphere(tacpoint.origin, 2, (0, 1, 0), "<dev string:x3b>");
         #/
         return true;
     }
     /#
-        recordsphere(tacpoint.origin, 2, (1, 0, 0), "generic");
+        recordsphere(tacpoint.origin, 2, (1, 0, 0), "<dev string:x3b>");
     #/
     return false;
 }
@@ -1476,12 +1475,12 @@ function private function_75277c27(tacpoint, context) {
 function private function_7d90f954(origin, context) {
     if (ispointonnavmesh(origin, 45)) {
         /#
-            recordsphere(origin + (0, 0, 10), 2, (0, 1, 0), "generic");
+            recordsphere(origin + (0, 0, 10), 2, (0, 1, 0), "<dev string:x3b>");
         #/
         return true;
     }
     /#
-        recordsphere(origin + (0, 0, 10), 2, (1, 0, 0), "generic");
+        recordsphere(origin + (0, 0, 10), 2, (1, 0, 0), "<dev string:x3b>");
     #/
     return false;
 }
@@ -1496,12 +1495,12 @@ function private function_9153c267(origin, context, verticaloffset) {
         var_baa92af9 = ispointinnavvolume(destination, "navvolume_big");
         if (var_baa92af9) {
             /#
-                recordsphere(origin + (0, 0, 20), 2, (0, 1, 0), "generic");
+                recordsphere(origin + (0, 0, 20), 2, (0, 1, 0), "<dev string:x3b>");
             #/
             return true;
         }
         /#
-            recordsphere(origin + (0, 0, 20), 2, (1, 0, 0), "generic");
+            recordsphere(origin + (0, 0, 20), 2, (1, 0, 0), "<dev string:x3b>");
         #/
         return false;
     }
@@ -1521,12 +1520,12 @@ function private function_accec5c5(origin, context, verticaloffset) {
     trace = physicstrace(origin + (0, 0, verticaloffset), origin + (0, 0, 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), mask);
     if (trace[#"fraction"] < 1) {
         /#
-            recordsphere(origin + (0, 0, 20), 2, (1, 0, 0), "generic");
+            recordsphere(origin + (0, 0, 20), 2, (1, 0, 0), "<dev string:x3b>");
         #/
         return false;
     }
     /#
-        recordsphere(origin + (0, 0, 20), 2, (0, 1, 0), "generic");
+        recordsphere(origin + (0, 0, 20), 2, (0, 1, 0), "<dev string:x3b>");
     #/
     return true;
 }
@@ -1555,10 +1554,10 @@ function function_d15dd929(origin) {
     function debug_water(tpoint) {
         if (!function_d15dd929(tpoint.origin)) {
             /#
-                record3dtext("<unknown string>", tpoint.origin + (0, 0, 40), (1, 1, 1), "generic");
+                record3dtext("<dev string:xf5>", tpoint.origin + (0, 0, 40), (1, 1, 1), "<dev string:x3b>");
             #/
             /#
-                recordline(tpoint.origin + (0, 0, 40), tpoint.origin, (1, 1, 1), "generic");
+                recordline(tpoint.origin + (0, 0, 40), tpoint.origin, (1, 1, 1), "<dev string:x3b>");
             #/
         }
     }
@@ -1656,13 +1655,13 @@ function function_263d3e9e(var_1c996690, context, owner, secondattempt = 0) {
                 filteredpoints = function_6dc6bc6b(tacpoints, context, verticaloffset);
                 if (isdefined(filteredpoints[0])) {
                     /#
-                        recordsphere(filteredpoints[0] + (0, 0, 70), 4, (1, 0.5, 0), "generic");
+                        recordsphere(filteredpoints[0] + (0, 0, 70), 4, (1, 0.5, 0), "<dev string:x3b>");
                     #/
                     return filteredpoints[0];
                 } else {
                     var_c71b63fa = arraygetclosest(var_1c996690, tacpoints);
                     /#
-                        recordsphere(var_c71b63fa + (0, 0, 70), 4, (0, 1, 1), "generic");
+                        recordsphere(var_c71b63fa + (0, 0, 70), 4, (0, 1, 1), "<dev string:x3b>");
                     #/
                     return var_c71b63fa;
                 }
@@ -1674,7 +1673,7 @@ function function_263d3e9e(var_1c996690, context, owner, secondattempt = 0) {
                 var_54746e33 = arraygetfarthest(var_1c996690, points);
                 if (isdefined(var_54746e33)) {
                     /#
-                        recordsphere(var_54746e33, 4, (0, 1, 1), "generic");
+                        recordsphere(var_54746e33, 4, (0, 1, 1), "<dev string:x3b>");
                     #/
                     return function_263d3e9e(var_54746e33, context, owner, 1);
                 }
@@ -1692,9 +1691,9 @@ function function_fe13a227(helicopter, var_1c996690, destination) {
     helicopter endon(#"death", #"payload_delivered", #"hash_216c905d79c8bbea");
     while (true) {
         /#
-            recordsphere(var_1c996690, 4, (1, 0.5, 0), "generic");
-            recordsphere(destination, 4, (1, 0.5, 0), "generic");
-            recordline(var_1c996690, destination, (1, 0.5, 0), "generic");
+            recordsphere(var_1c996690, 4, (1, 0.5, 0), "<dev string:x3b>");
+            recordsphere(destination, 4, (1, 0.5, 0), "<dev string:x3b>");
+            recordline(var_1c996690, destination, (1, 0.5, 0), "<dev string:x3b>");
         #/
         waitframe(1);
     }
@@ -2199,7 +2198,7 @@ function private function_2d44c54f(var_eca4744a, var_56bd1bef, nodes) {
 // Size: 0x2f6
 function function_a4ab9672(swat, owner, var_eca4744a, var_56bd1bef, forced = 0) {
     /#
-        recordsphere(var_56bd1bef, 8, (0, 1, 1), "generic");
+        recordsphere(var_56bd1bef, 8, (0, 1, 1), "<dev string:x3b>");
     #/
     nodes = getnodesinradiussorted(var_56bd1bef, 600, 64, 300, "Path");
     if (nodes.size) {
@@ -2211,8 +2210,8 @@ function function_a4ab9672(swat, owner, var_eca4744a, var_56bd1bef, forced = 0) 
         foreach (node in nodes_sorted) {
             if (canclaimnode(node, owner.team) && !isdefined(node.owner)) {
                 /#
-                    recordsphere(node.origin, 4, (1, 0.5, 0), "generic");
-                    recordline(owner.origin, node.origin, (1, 0.5, 0), "generic");
+                    recordsphere(node.origin, 4, (1, 0.5, 0), "<dev string:x3b>");
+                    recordline(owner.origin, node.origin, (1, 0.5, 0), "<dev string:x3b>");
                 #/
                 if (!swat.keepclaimednode) {
                     swat setgoal(node);

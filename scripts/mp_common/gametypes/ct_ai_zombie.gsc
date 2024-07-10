@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\armor.gsc;
 #using scripts\core_common\math_shared.gsc;
 #using scripts\core_common\ai\systems\gib.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\zm_characters.gsc;
@@ -334,7 +333,7 @@ function private function_39614d4b() {
     s_info = level.pablo_npc.var_cb3ed98f[level.pablo_npc.var_df3d62aa];
     level.var_f45a0bfd.is_moving = 1;
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     if (!s_info.var_f6856302) {
         function_d9161909(s_info.n_obj);
@@ -349,7 +348,7 @@ function private function_39614d4b() {
     self thread function_9f77ef2(s_info);
     function_6c49e9aa();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x55>");
     #/
     if (s_info.var_f6856302) {
         function_d9161909(s_info.n_obj);
@@ -417,7 +416,7 @@ function private function_1dc9b29a() {
             }
             level.var_f45a0bfd.is_moving = 1;
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x68>");
             #/
             if (!s_info.var_f6856302) {
                 function_5ff0d681(s_info.n_obj);
@@ -425,7 +424,7 @@ function private function_1dc9b29a() {
             wait(1);
             function_a61b8406();
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x86>");
             #/
             level.var_f45a0bfd.is_moving = 0;
             if (isdefined(s_info.b_all_players) && s_info.b_all_players) {
@@ -474,11 +473,11 @@ function function_e435077() {
     level.pablo_npc notify(#"hash_ed7147b69728896");
     level.var_f45a0bfd.is_moving = 1;
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     function_6c49e9aa();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x55>");
     #/
     wait(1);
     if (!s_info.var_f6856302) {

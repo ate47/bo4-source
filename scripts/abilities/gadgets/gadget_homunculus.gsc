@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\gib.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -213,7 +212,7 @@ function private function_bb17ec5a() {
     self.mover scene::stop();
     self.dancing = undefined;
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     start_attack = 1;
     while (true) {

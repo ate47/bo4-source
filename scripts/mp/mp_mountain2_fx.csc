@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_mountain2_fx;
 
 // Namespace mp_mountain2_fx/mp_mountain2_fx

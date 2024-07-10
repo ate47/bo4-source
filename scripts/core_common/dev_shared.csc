@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\callbacks_shared.csc;
 
@@ -21,7 +20,7 @@
     function function_b49b1b6b(localclientnum) {
         var_39073e7a = undefined;
         var_b49b1b6b = undefined;
-        a_effects = array("<unknown string>", "<unknown string>", "<unknown string>");
+        a_effects = array("<dev string:x38>", "<dev string:x5f>", "<dev string:x8c>");
         var_767a6d22 = 0;
         while (true) {
             n_dist = getdvarint(#"hash_4348ec71a8b13ef1", 0);
@@ -32,10 +31,10 @@
                     var_b49b1b6b = undefined;
                 }
                 if (!isdefined(var_39073e7a)) {
-                    var_39073e7a = util::spawn_model(localclientnum, "<unknown string>");
+                    var_39073e7a = util::spawn_model(localclientnum, "<dev string:xbc>");
                 }
                 if (!isdefined(var_b49b1b6b)) {
-                    var_b49b1b6b = util::playfxontag(localclientnum, a_effects[var_114d05f], var_39073e7a, "<unknown string>");
+                    var_b49b1b6b = util::playfxontag(localclientnum, a_effects[var_114d05f], var_39073e7a, "<dev string:xbc>");
                 }
                 v_pos = getcamposbylocalclientnum(localclientnum);
                 v_ang = getcamanglesbylocalclientnum(localclientnum);

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_icebreaker_sound;
 
 // Namespace mp_icebreaker_sound/mp_icebreaker_sound

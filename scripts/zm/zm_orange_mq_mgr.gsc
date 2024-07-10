@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_lights.gsc;
 #using script_4ec1d631174f7283;
 #using scripts\zm\zm_orange_trophies.gsc;
@@ -153,15 +152,15 @@ function function_d4147875(var_5ea5c94d) {
     level flag::set(#"hold_round_end");
     level thread play_outro();
     wait(320);
-    println("<unknown string>");
+    println("<dev string:x38>");
     level thread lui::screen_flash(0.2, 7, 7, 1, "black");
     wait(0.3);
     level.var_583a0efc = getstatuseffect(#"zm_orange_outro");
-    println("<unknown string>");
+    println("<dev string:x5c>");
     hud_disable();
     veh_start = getvehiclenode("mq_gehen_01", "targetname");
     veh_end = getvehiclenode("mq_gehen_02", "targetname");
-    println("<unknown string>");
+    println("<dev string:x71>");
     sam_spawner = getent("mq_gehen_s", "targetname");
     level.sam = sam_spawner spawnfromspawner("sam", 1);
     level.sam.team = #"allies";
@@ -171,13 +170,13 @@ function function_d4147875(var_5ea5c94d) {
     eddie.team = #"allies";
     util::magic_bullet_shield(eddie);
     waitframe(1);
-    println("<unknown string>");
+    println("<dev string:x93>");
     namespace_3b9dec72::function_1c989dc4();
-    println("<unknown string>");
+    println("<dev string:xb4>");
     zm_orange_lights::function_e9f6e0f7();
-    println("<unknown string>");
+    println("<dev string:xd1>");
     array::thread_all(level.var_d1cf60c8, &function_74963add);
-    println("<unknown string>");
+    println("<dev string:x109>");
     a_e_players = getplayers();
     n_player = 1;
     foreach (player in a_e_players) {
@@ -186,18 +185,18 @@ function function_d4147875(var_5ea5c94d) {
         n_player++;
     }
     wait(1);
-    println("<unknown string>");
+    println("<dev string:x136>");
     namespace_3b9dec72::function_303ab700();
-    println("<unknown string>");
+    println("<dev string:x157>");
     level.var_9441bf02 = spawn("script_origin", (0, 0, 0));
     level.var_9441bf02 playloopsound(#"hash_503b99b370ac70b9");
-    println("<unknown string>");
+    println("<dev string:x172>");
     wait(5);
-    println("<unknown string>");
+    println("<dev string:x1a3>");
     level.musicsystemoverride = 1;
     music::setmusicstate("sam_eddie_walk");
     thread music_watcher();
-    println("<unknown string>");
+    println("<dev string:x1ba>");
     while (true) {
         waitframe(1);
         _attack_barrier_sprint = vectornormalize(veh_end.origin - level.sam.origin);
@@ -300,7 +299,7 @@ function function_b20c4898() {
 function function_c40f70df(var_21c1ba1) {
     level endon(#"end_game");
     self endon(#"death");
-    println("<unknown string>" + var_21c1ba1 + "<unknown string>");
+    println("<dev string:x20d>" + var_21c1ba1 + "<dev string:x217>");
     self bgb::suspend_weapon_cycling();
     self bgb_pack::function_ac9cb612(1);
     self util::magic_bullet_shield();
@@ -315,24 +314,24 @@ function function_c40f70df(var_21c1ba1) {
         self zm_weapons::weapon_give(level.weaponzmfists, 1);
     }
     waitframe(1);
-    println("<unknown string>" + var_21c1ba1 + "<unknown string>");
+    println("<dev string:x20d>" + var_21c1ba1 + "<dev string:x233>");
     self zm_trial_util::function_3f8a4145(0);
     if (!self laststand::player_is_in_laststand()) {
         str_stance = self getstance();
         switch (str_stance) {
         case #"crouch":
             self setstance("stand");
-            println("<unknown string>" + var_21c1ba1 + "<unknown string>");
+            println("<dev string:x20d>" + var_21c1ba1 + "<dev string:x248>");
             wait(0.2);
             break;
         case #"prone":
             self setstance("stand");
-            println("<unknown string>" + var_21c1ba1 + "<unknown string>");
+            println("<dev string:x20d>" + var_21c1ba1 + "<dev string:x273>");
             wait(1);
             break;
         }
     }
-    println("<unknown string>" + var_21c1ba1 + "<unknown string>");
+    println("<dev string:x20d>" + var_21c1ba1 + "<dev string:x29b>");
 }
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr

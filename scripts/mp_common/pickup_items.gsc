@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weapons.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -163,7 +162,7 @@ function get_item_from_string_perk(perks_string) {
     item_struct = spawnstruct();
     if (!isdefined(level.perkspecialties[perks_string])) {
         /#
-            util::error("<unknown string>" + perks_string + "<unknown string>" + self.origin);
+            util::error("<dev string:x38>" + perks_string + "<dev string:x4d>" + self.origin);
         #/
         return;
     }

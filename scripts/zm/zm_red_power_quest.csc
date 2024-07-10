@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\perk\zm_perk_electric_cherry.csc;
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\core_common\util_shared.csc;

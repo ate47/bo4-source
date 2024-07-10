@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_6951ea86fdae9ae0;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -220,7 +219,7 @@ function electric_cherry_stun() {
     self endon(#"death", #"stun_zombie");
     if (self.health <= 0) {
         /#
-            iprintln("<unknown string>");
+            iprintln("<dev string:x38>");
         #/
         return;
     }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_24c32478acf44108;
 #using scripts\zm_common\trials\zm_trial_headshots_only.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -104,7 +103,7 @@ function function_7328ce94(b_pause, str_perk, str_result, n_slot) {
     if (isdefined(self.e_zombshell)) {
         self.e_zombshell delete();
     }
-    assert(isdefined(self.var_849c3bcf), "<unknown string>");
+    assert(isdefined(self.var_849c3bcf), "<dev string:x38>");
     if (isdefined(self.var_849c3bcf)) {
         self zm_perks::function_13880aa5(self.var_849c3bcf, 0, #"perk_zombshell");
         self.var_849c3bcf = undefined;
@@ -373,7 +372,7 @@ function reset_cooldown() {
     self notify(#"hash_4aaf55c36b37725e");
     self.var_69604b18 = 0;
     if (self hasperk(#"specialty_zombshell")) {
-        assert(isdefined(self.var_849c3bcf), "<unknown string>");
+        assert(isdefined(self.var_849c3bcf), "<dev string:x38>");
         if (isdefined(self.var_849c3bcf)) {
             self zm_perks::function_2ac7579(self.var_849c3bcf, 1, #"perk_zombshell");
             self zm_perks::function_13880aa5(self.var_849c3bcf, 1, #"perk_zombshell");

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\struct.csc;
 
 #namespace zclassic;
@@ -10,7 +9,7 @@
 function event_handler[gametype_init] main(eventstruct) {
     level._zombie_gamemodeprecache = &onprecachegametype;
     level._zombie_gamemodemain = &onstartgametype;
-    println("<unknown string>");
+    println("<dev string:x38>");
 }
 
 // Namespace zclassic/zclassic
@@ -18,7 +17,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0xba7e0427, Offset: 0xd8
 // Size: 0x24
 function onprecachegametype() {
-    println("<unknown string>");
+    println("<dev string:x56>");
 }
 
 // Namespace zclassic/zclassic
@@ -26,6 +25,6 @@ function onprecachegametype() {
 // Checksum 0x8a8910eb, Offset: 0x108
 // Size: 0x24
 function onstartgametype() {
-    println("<unknown string>");
+    println("<dev string:x78>");
 }
 

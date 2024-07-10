@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_342e0d1a78771d3f;
 #using script_5afbda9de6000ad9;
 #using scripts\core_common\gestures.gsc;

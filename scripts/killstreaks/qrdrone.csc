@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_shared.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\fx_shared.csc;
@@ -54,7 +53,7 @@ function statechange(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 // Size: 0x14c
 function restartfx(localclientnum, blinkstage) {
     self notify(#"restart_fx");
-    println("<unknown string>" + blinkstage);
+    println("<dev string:x38>" + blinkstage);
     switch (blinkstage) {
     case 0:
         self spawn_solid_fx(localclientnum);
@@ -291,7 +290,7 @@ function getminimumflyheight() {
     if (isdefined(airsupport_height)) {
         planeflyheight = airsupport_height.origin[2];
     } else {
-        println("<unknown string>");
+        println("<dev string:x55>");
         planeflyheight = 850;
         if (isdefined(level.airsupportheightscale)) {
             level.airsupportheightscale = getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);

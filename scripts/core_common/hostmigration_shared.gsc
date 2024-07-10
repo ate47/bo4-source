@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\potm_shared.gsc;
@@ -13,19 +12,19 @@
     // Size: 0x134
     function debug_script_structs() {
         if (isdefined(level.struct)) {
-            println("<unknown string>" + level.struct.size);
-            println("<unknown string>");
+            println("<dev string:x38>" + level.struct.size);
+            println("<dev string:x4b>");
             for (i = 0; i < level.struct.size; i++) {
                 struct = level.struct[i];
                 if (isdefined(struct.targetname)) {
-                    println("<unknown string>" + i + "<unknown string>" + struct.targetname);
+                    println("<dev string:x4e>" + i + "<dev string:x54>" + struct.targetname);
                     continue;
                 }
-                println("<unknown string>" + i + "<unknown string>" + "<unknown string>");
+                println("<dev string:x4e>" + i + "<dev string:x54>" + "<dev string:x5a>");
             }
             return;
         }
-        println("<unknown string>");
+        println("<dev string:x61>");
     }
 
 #/
@@ -222,7 +221,7 @@ function waitlongdurationwithhostmigrationpause(duration) {
     }
     /#
         if (gettime() != endtime) {
-            println("<unknown string>" + gettime() + "<unknown string>" + endtime);
+            println("<dev string:x7b>" + gettime() + "<dev string:x9a>" + endtime);
         }
     #/
     waittillhostmigrationdone();
@@ -252,7 +251,7 @@ function waitlongdurationwithhostmigrationpauseemp(duration) {
     }
     /#
         if (gettime() != empendtime) {
-            println("<unknown string>" + gettime() + "<unknown string>" + empendtime);
+            println("<dev string:x7b>" + gettime() + "<dev string:xb5>" + empendtime);
         }
     #/
     waittillhostmigrationdone();
@@ -281,7 +280,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
     }
     /#
         if (gettime() != endtime) {
-            println("<unknown string>" + gettime() + "<unknown string>" + endtime);
+            println("<dev string:x7b>" + gettime() + "<dev string:x9a>" + endtime);
         }
     #/
     while (isdefined(level.hostmigrationtimer)) {

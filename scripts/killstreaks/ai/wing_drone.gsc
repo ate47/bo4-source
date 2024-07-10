@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\remote_weapons.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\killstreaks\ai\lead_drone.gsc;
@@ -233,7 +232,7 @@ function function_789652f2(origin, owner, innerradius, outerradius, halfheight, 
                     point._scoredebug[#"no visibility"] = spawnstruct();
                 }
                 point._scoredebug[#"no visibility"].score = -5000;
-                point._scoredebug[#"no visibility"].scorename = "<unknown string>";
+                point._scoredebug[#"no visibility"].scorename = "<dev string:x38>";
             #/
             point.score += -5000;
         }
@@ -319,7 +318,7 @@ function function_b0c75ada(leader) {
                         point._scoredebug[#"no visibility"] = spawnstruct();
                     }
                     point._scoredebug[#"no visibility"].score = -5000;
-                    point._scoredebug[#"no visibility"].scorename = "<unknown string>";
+                    point._scoredebug[#"no visibility"].scorename = "<dev string:x38>";
                 #/
                 point.score += -5000;
             }
@@ -348,12 +347,12 @@ function function_5ebe7443() {
     while (true) {
         if (isdefined(self.protectdest)) {
             /#
-                recordsphere(self.protectdest, 8, (0, 1, 1), "<unknown string>");
+                recordsphere(self.protectdest, 8, (0, 1, 1), "<dev string:x48>");
             #/
             if (isdefined(self.var_d6acaac4)) {
                 /#
-                    recordsphere(self.protectdest, 8, (1, 1, 0), "<unknown string>");
-                    recordline(self.protectdest, self.var_d6acaac4, (0, 1, 0), "<unknown string>");
+                    recordsphere(self.protectdest, 8, (1, 1, 0), "<dev string:x48>");
+                    recordline(self.protectdest, self.var_d6acaac4, (0, 1, 0), "<dev string:x48>");
                 #/
             }
         }

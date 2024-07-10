@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\zm_common\callbacks.gsc;
 #using scripts\zm\zm_lightning_chain.gsc;

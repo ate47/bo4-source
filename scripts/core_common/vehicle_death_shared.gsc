@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\scene_shared.gsc;
 #using scripts\core_common\vehicle_ai_shared.gsc;
 #using scripts\core_common\vehicle_shared.gsc;
@@ -1152,7 +1151,7 @@ function watch_for_crash_detour_scene(nd_crash_path) {
     str_result = self util::waittill_either("reached_end_node", "stopped_while_crashing");
     if (str_result === "stopped_while_crashing" && isdefined(nd_crash)) {
         /#
-            iprintln("<unknown string>" + nd_crash.origin + "<unknown string>");
+            iprintln("<dev string:x38>" + nd_crash.origin + "<dev string:x74>");
         #/
     }
     if (isdefined(s_crash_scene) && isdefined(s_crash_scene.scriptbundlename)) {

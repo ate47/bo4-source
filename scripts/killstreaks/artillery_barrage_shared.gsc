@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\planemortar_shared.gsc;
 #using scripts\killstreaks\killstreakrules_shared.gsc;
 #using scripts\killstreaks\killstreak_hacking.gsc;

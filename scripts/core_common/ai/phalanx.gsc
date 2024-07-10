@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using script_3819e7a1427df6d2;
 #using scripts\core_common\spawner_shared.gsc;
@@ -244,10 +243,10 @@ class phalanx {
     function private _movephalanxtier(sentients, phalanxtype, tier, destination, forward) {
         positions = _getphalanxpositions(phalanxtype, tier);
         angles = vectortoangles(forward);
-        assert(sentients.size <= positions.size, "<unknown string>");
+        assert(sentients.size <= positions.size, "<dev string:x1ce>");
         foreach (index, sentient in sentients) {
             if (isdefined(sentient) && isalive(sentient)) {
-                assert(isvec(positions[index]), "<unknown string>" + index + "<unknown string>" + tier + "<unknown string>" + phalanxtype);
+                assert(isvec(positions[index]), "<dev string:x210>" + index + "<dev string:x23f>" + tier + "<dev string:x24c>" + phalanxtype);
                 orientedpos = _rotatevec(positions[index], angles[1] - 90);
                 navmeshposition = getclosestpointonnavmesh(destination + orientedpos, 200);
                 sentient function_a57c34b7(navmeshposition);
@@ -307,8 +306,8 @@ class phalanx {
     // Size: 0xb4
     function private _getphalanxspawner(tier) {
         spawner = getspawnerarray(tier, "targetname");
-        assert(spawner.size >= 0, "<unknown string>" + "<unknown string>" + "<unknown string>");
-        assert(spawner.size == 1, "<unknown string>" + "<unknown string>" + "<unknown string>");
+        assert(spawner.size >= 0, "<dev string:x6f>" + "<dev string:xb7>" + "<dev string:x101>");
+        assert(spawner.size == 1, "<dev string:x11a>" + "<dev string:x160>" + "<dev string:x188>");
         return spawner[0];
     }
 
@@ -389,10 +388,10 @@ class phalanx {
             }
             break;
         default:
-            assert("<unknown string>" + phalanxtype + "<unknown string>");
+            assert("<dev string:x38>" + phalanxtype + "<dev string:x51>");
             break;
         }
-        assert("<unknown string>" + tier + "<unknown string>");
+        assert("<dev string:x56>" + tier + "<dev string:x51>");
     }
 
     // Namespace phalanx/phalanx

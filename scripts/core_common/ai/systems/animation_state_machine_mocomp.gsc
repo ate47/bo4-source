@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace animationstatenetwork;
 
 // Namespace animationstatenetwork/animation_state_machine_mocomp
@@ -14,8 +13,8 @@ function autoexec initanimationmocomps() {
 // Checksum 0x6d517fe6, Offset: 0xd0
 // Size: 0x192
 function event_handler[runanimationmocomp] runanimationmocomp(eventstruct) {
-    assert(eventstruct.status >= 0 && eventstruct.status <= 2, "<unknown string>" + eventstruct.status + "<unknown string>");
-    assert(isdefined(level._animationmocomps[eventstruct.name]), "<unknown string>" + eventstruct.name + "<unknown string>");
+    assert(eventstruct.status >= 0 && eventstruct.status <= 2, "<dev string:x38>" + eventstruct.status + "<dev string:x5a>");
+    assert(isdefined(level._animationmocomps[eventstruct.name]), "<dev string:x75>" + eventstruct.name + "<dev string:x9b>");
     if (eventstruct.status == 0) {
         eventstruct.status = "asm_mocomp_start";
     } else if (eventstruct.status == 1) {
@@ -33,19 +32,19 @@ function event_handler[runanimationmocomp] runanimationmocomp(eventstruct) {
 // Size: 0x258
 function registeranimationmocomp(mocompname, startfuncptr, updatefuncptr, terminatefuncptr) {
     mocompname = tolower(mocompname);
-    assert(isstring(mocompname), "<unknown string>");
-    assert(!isdefined(level._animationmocomps[mocompname]), "<unknown string>" + mocompname + "<unknown string>");
+    assert(isstring(mocompname), "<dev string:xaf>");
+    assert(!isdefined(level._animationmocomps[mocompname]), "<dev string:xf0>" + mocompname + "<dev string:x104>");
     level._animationmocomps[mocompname] = array();
-    assert(isdefined(startfuncptr) && isfunctionptr(startfuncptr), "<unknown string>");
+    assert(isdefined(startfuncptr) && isfunctionptr(startfuncptr), "<dev string:x11e>");
     level._animationmocomps[mocompname][#"asm_mocomp_start"] = startfuncptr;
     if (isdefined(updatefuncptr)) {
-        assert(isfunctionptr(updatefuncptr), "<unknown string>");
+        assert(isfunctionptr(updatefuncptr), "<dev string:x17d>");
         level._animationmocomps[mocompname][#"asm_mocomp_update"] = updatefuncptr;
     } else {
         level._animationmocomps[mocompname][#"asm_mocomp_update"] = &animationmocompemptyfunc;
     }
     if (isdefined(terminatefuncptr)) {
-        assert(isfunctionptr(terminatefuncptr), "<unknown string>");
+        assert(isfunctionptr(terminatefuncptr), "<dev string:x1d9>");
         level._animationmocomps[mocompname][#"asm_mocomp_terminate"] = terminatefuncptr;
         return;
     }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\util.gsc;
 #using scripts\zm_common\bb.gsc;
 #using scripts\zm_common\gametypes\globallogic_utils.gsc;
@@ -450,7 +449,7 @@ function getpersstat(dataname) {
 // Size: 0xf4
 function incpersstat(dataname, increment, record_stats, includegametype) {
     pixbeginevent(#"incpersstat");
-    assert(isdefined(self.pers[dataname]), dataname + "<unknown string>");
+    assert(isdefined(self.pers[dataname]), dataname + "<dev string:x38>");
     self.pers[dataname] = self.pers[dataname] + increment;
     self stats::function_dad108fa(dataname, increment);
     if (!isdefined(record_stats) || record_stats == 1) {
@@ -572,7 +571,7 @@ function givekillstats(smeansofdeath, weapon, evictim) {
     waittillframeend();
     if (level.rankedmatch && self [[ level.iskillboosting ]]()) {
         /#
-            self iprintlnbold("<unknown string>");
+            self iprintlnbold("<dev string:x84>");
         #/
         return;
     }

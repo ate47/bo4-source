@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\flag_shared.gsc;
@@ -21,9 +20,9 @@ function autoexec __init__system__() {
 function __init__() {
     setdvar(#"hash_6d3c5317001d4fc6", 0);
     /#
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x7d>");
+        adddebugcommand("<dev string:xd0>");
     #/
     var_852d7a5c = isprofilebuild();
     /#
@@ -94,7 +93,7 @@ function function_97346595() {
         if (new_value != var_2e0b8925) {
             /#
                 if (!(var_2e0b8925 && new_value)) {
-                    adddebugcommand("<unknown string>");
+                    adddebugcommand("<dev string:x116>");
                 }
             #/
             if (new_value != 0) {
@@ -103,15 +102,15 @@ function function_97346595() {
                 }
                 remainingplayers = 4 - players.size;
                 /#
-                    adddebugcommand("<unknown string>" + remainingplayers);
+                    adddebugcommand("<dev string:x11c>" + remainingplayers);
                 #/
                 waitframe(1);
                 /#
-                    adddebugcommand("<unknown string>");
+                    adddebugcommand("<dev string:x13b>");
                 #/
             } else {
                 /#
-                    adddebugcommand("<unknown string>");
+                    adddebugcommand("<dev string:x156>");
                 #/
                 players = getplayers();
                 foreach (player in players) {

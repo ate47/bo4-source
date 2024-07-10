@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\tacticalinsertion.gsc;
 #using scripts\core_common\weapons_shared.gsc;

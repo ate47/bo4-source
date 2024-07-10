@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_maptable.gsc;
 #using scripts\zm_common\zm_devgui.gsc;
@@ -60,9 +59,9 @@ function __init__() {
     // Checksum 0x486abc27, Offset: 0xcf0
     // Size: 0x10c
     function private function_9436b105(cmd) {
-        if (issubstr(cmd, "vox_plr_3_exert_pain_high_3")) {
-            tokens = strtok(cmd, "support_shaw");
-            player = int(getsubstr(tokens[0], "support_rich".size));
+        if (issubstr(cmd, "<dev string:x38>")) {
+            tokens = strtok(cmd, "<dev string:x47>");
+            player = int(getsubstr(tokens[0], "<dev string:x4b>".size));
             character = int(tokens[tokens.size - 1]);
             players = getplayers();
             players[player - 1] thread zombie_force_char(character);
@@ -141,7 +140,7 @@ function set_character(character) {
     if (!isdefined(self.characterindex) || !player_role::is_valid(self.characterindex)) {
         self.characterindex = self function_b3a116a1();
         /#
-            if (self ishost() && getdvarstring(#"force_char") != "surrounded_niko") {
+            if (self ishost() && getdvarstring(#"force_char") != "<dev string:x54>") {
                 self.characterindex = getdvarint(#"force_char", 0);
             }
         #/
@@ -300,7 +299,7 @@ function get_character_index(character) {
             return var_c81b1496.characterindex;
         }
     }
-    assertmsg("support_take");
+    assertmsg("<dev string:x57>");
     return 0;
 }
 
@@ -335,7 +334,7 @@ function function_dc232a80(character) {
             fields = getplayerrolefields(player_role::get(), currentsessionmode());
             return fields.var_3e570307;
         }
-        assertmsg("russ" + characterindex);
+        assertmsg("<dev string:x7a>" + characterindex);
     } else if (isarray(character)) {
         fields = zm_maptable::function_10672567();
         foreach (var_c81b1496 in fields.zmcharacters) {
@@ -344,7 +343,7 @@ function function_dc232a80(character) {
                 return rolefields.var_3e570307;
             }
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:xb0>");
     }
     return 0;
 }

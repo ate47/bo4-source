@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_world_util.csc;
 #using scripts\mp_common\item_drop.csc;
 #using scripts\core_common\flagsys_shared.csc;
@@ -39,8 +38,8 @@ function private function_2c4d3d40() {
 // Checksum 0xae2d5339, Offset: 0x298
 // Size: 0x326
 function private function_440f0490(itemlistbundle) {
-    assert(isdefined(itemlistbundle) && itemlistbundle.type === "<unknown string>");
-    assert(itemlistbundle.itemlist.size > 0, "<unknown string>" + itemlistbundle.name + "<unknown string>");
+    assert(isdefined(itemlistbundle) && itemlistbundle.type === "<dev string:x38>");
+    assert(itemlistbundle.itemlist.size > 0, "<dev string:x4d>" + itemlistbundle.name + "<dev string:x63>");
     if (itemlistbundle.itemlist.size <= 0) {
         return;
     }
@@ -63,7 +62,7 @@ function private function_440f0490(itemlistbundle) {
         currentweight += weights[weightindex];
         if (var_d54615ef <= currentweight) {
             itemlistbundle = getscriptbundle(itemlistbundle.itemlist[weightindex].itementry);
-            assert(itemlistbundle.type === "<unknown string>");
+            assert(itemlistbundle.type === "<dev string:x6f>");
             break;
         }
     }
@@ -346,7 +345,7 @@ function private function_ea39d1fa(stash) {
             }
             var_1dd9b7f1 = getscriptbundle(var_ee110db8.replacement);
             if (var_1dd9b7f1.type !== #"itemspawnlist") {
-                assert(0, "<unknown string>" + var_ee110db8);
+                assert(0, "<dev string:x7f>" + var_ee110db8);
                 continue;
             }
             var_eff83f3 = var_1dd9b7f1;
@@ -537,8 +536,8 @@ function private _setup() {
     if (isdefined(self.itemlistbundle) && isdefined(level.var_fb9a8536[self.itemlistbundle.name])) {
         self.itemlistbundle = getscriptbundle(level.var_fb9a8536[self.itemlistbundle.name]);
     }
-    assert(isdefined(self.itemlistbundle), "<unknown string>" + self.scriptbundlename + "<unknown string>");
-    assert(isdefined(self.itemlistbundle.itemlist), "<unknown string>" + self.scriptbundlename + "<unknown string>");
+    assert(isdefined(self.itemlistbundle), "<dev string:xc6>" + self.scriptbundlename + "<dev string:xd7>");
+    assert(isdefined(self.itemlistbundle.itemlist), "<dev string:xc6>" + self.scriptbundlename + "<dev string:x63>");
     self.remaining = isdefined(self.count) ? self.count : 0;
     self.points = function_d0dc448b(self.target);
     self.var_8107154f = [];
@@ -546,7 +545,7 @@ function private _setup() {
         self.var_8107154f[pointid] = pointid;
     }
     if (!isdefined(level.var_28cd0b1f[self.target])) {
-        assert(isdefined(self.points) && self.points.size > 0, "<unknown string>" + self.itemlistbundle.name + "<unknown string>" + self.target);
+        assert(isdefined(self.points) && self.points.size > 0, "<dev string:xe4>" + self.itemlistbundle.name + "<dev string:xf5>" + self.target);
     }
     if (!isdefined(self.points)) {
         self.points = [];
@@ -591,8 +590,8 @@ function function_3095d12a() {
 // Checksum 0x2d915cda, Offset: 0x2ac0
 // Size: 0xa4
 function private function_9db93def() {
-    assert(isdefined(self.target) && self.target != "<unknown string>", "<unknown string>" + self.origin + "<unknown string>");
-    assert(self.target !== self.targetname, "<unknown string>" + self.origin + "<unknown string>" + self.target + "<unknown string>");
+    assert(isdefined(self.target) && self.target != "<dev string:x130>", "<dev string:x133>" + self.origin + "<dev string:x150>");
+    assert(self.target !== self.targetname, "<dev string:x133>" + self.origin + "<dev string:x172>" + self.target + "<dev string:x1ae>");
 }
 
 // Namespace namespace_65181344/namespace_65181344
@@ -1026,8 +1025,8 @@ function setup_groups(reset = 1) {
     /#
         if (!isdefined(level.var_55f723bd)) {
             level.var_3683df16 = 0;
-            level.var_3062619 = "<unknown string>";
-            level.var_55f723bd = openfile("<unknown string>", "<unknown string>");
+            level.var_3062619 = "<dev string:x130>";
+            level.var_55f723bd = openfile("<dev string:x1b3>", "<dev string:x1d1>");
         }
     #/
     /#

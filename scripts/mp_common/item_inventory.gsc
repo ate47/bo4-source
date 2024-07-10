@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\sensor_dart.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\item_world_util.gsc;
@@ -1623,7 +1622,7 @@ function equip_ammo(item, var_aec6fa7f) {
         }
         return 0;
     }
-    assertmsg("<unknown string>" + itementry.name + "<unknown string>");
+    assertmsg("<dev string:x38>" + itementry.name + "<dev string:x55>");
     return var_1326fcc7 - addammo;
 }
 
@@ -1769,12 +1768,12 @@ function equip_backpack(item) {
 function debug_print(message, weapon) {
     /#
         if (getdvarint(#"inventory_debug", 0) > 0) {
-            weaponname = "<unknown string>";
+            weaponname = "<dev string:x59>";
             if (isdefined(weapon)) {
-                weaponname = "<unknown string>" + function_9e72a96(weapon.name);
+                weaponname = "<dev string:x5c>" + function_9e72a96(weapon.name);
             }
-            self iprintlnbold("<unknown string>" + message + weaponname);
-            println("<unknown string>" + self.playername + "<unknown string>" + message + weaponname);
+            self iprintlnbold("<dev string:x69>" + message + weaponname);
+            println("<dev string:x69>" + self.playername + "<dev string:x7d>" + message + weaponname);
         }
     #/
 }
@@ -1848,7 +1847,7 @@ function equip_equipment(item) {
         self clientfield::set_player_uimodel("hudItems.equipmentStackCount", function_bba770de(self.inventory.items[12].itementry));
         return;
     }
-    assertmsg("<unknown string>" + itementry.name + "<unknown string>");
+    assertmsg("<dev string:x82>" + itementry.name + "<dev string:x55>");
 }
 
 // Namespace item_inventory/item_inventory
@@ -1925,7 +1924,7 @@ function equip_health(item) {
         debug_print("equip_health: success", weapon);
         return;
     }
-    assertmsg("<unknown string>" + itementry.name + "<unknown string>");
+    assertmsg("<dev string:xab>" + itementry.name + "<dev string:x55>");
 }
 
 // Namespace item_inventory/item_inventory
@@ -1973,7 +1972,7 @@ function equip_item(networkid, quickequip = 0, weaponid = 0) {
             self equip_weapon(item);
             break;
         default:
-            assertmsg("<unknown string>" + (isdefined(item.itementry.itemtype) ? item.itementry.itemtype : "<unknown string>") + "<unknown string>");
+            assertmsg("<dev string:xd1>" + (isdefined(item.itementry.itemtype) ? item.itementry.itemtype : "<dev string:xeb>") + "<dev string:xf7>");
             return 0;
         }
         return 1;
@@ -2126,7 +2125,7 @@ function equip_weapon(item, switchweapon = 1, var_9fa01da8 = 0, var_a3a17c55 = 0
         self function_db2abc4(item);
         return;
     }
-    assertmsg("<unknown string>" + itementry.name + "<unknown string>");
+    assertmsg("<dev string:x11f>" + itementry.name + "<dev string:x55>");
 }
 
 // Namespace item_inventory/item_inventory
@@ -2439,11 +2438,11 @@ function function_3f7ef88() {
 // Size: 0xe80
 function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = undefined) {
     if (!isplayer(self) || !isdefined(self.inventory)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x13f>");
         return 0;
     }
     if (!isdefined(item)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x178>");
         return 0;
     }
     if (isdefined(item.itementry) && isdefined(item.var_887db92c)) {
@@ -2966,7 +2965,7 @@ function function_85287396(enabled) {
 // Size: 0x2da
 function function_fba4a353(item) {
     if (!isplayer(self) || !isdefined(self.inventory)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x13f>");
         return false;
     }
     assert(isdefined(item));
@@ -3074,7 +3073,7 @@ function function_c4468806(player, item) {
         return;
     }
     data = {#game_time:function_f8d53445(), #player_xuid:int(player getxuid(1)), #item:hash(item.itementry.name)};
-    println("<unknown string>" + item.itementry.name);
+    println("<dev string:x1ac>" + item.itementry.name);
     function_92d1707f(#"hash_50be59ef12074ce", data);
 }
 

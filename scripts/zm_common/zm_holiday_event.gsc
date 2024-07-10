@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_homunculus.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -139,7 +138,7 @@ function function_a33a15c() {
     level.var_d64e4374++;
     /#
         if (isdefined(level.var_fa38e985) && level.var_fa38e985) {
-            iprintlnbold("<unknown string>" + level.var_d64e4374 + "<unknown string>" + 7);
+            iprintlnbold("<dev string:x38>" + level.var_d64e4374 + "<dev string:x51>" + 7);
         }
     #/
     if (level.var_d64e4374 >= 7) {
@@ -215,7 +214,7 @@ function function_1443aaa(b_success = 0) {
             if (!isdefined(level.var_d64e4374)) {
                 level.var_d64e4374 = 0;
             }
-            iprintlnbold("<unknown string>" + level.var_d64e4374 + "<unknown string>" + 7 + "<unknown string>");
+            iprintlnbold("<dev string:x55>" + level.var_d64e4374 + "<dev string:x51>" + 7 + "<dev string:x74>");
         }
     #/
     level.var_17bf15ba = undefined;
@@ -304,13 +303,13 @@ function function_55f8e11e(e_box) {
     // Checksum 0x17bde6f5, Offset: 0x1268
     // Size: 0x1c8
     function private devgui() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x7d>");
+        adddebugcommand("<dev string:xf2>");
+        adddebugcommand("<dev string:x161>");
+        adddebugcommand("<dev string:x1e0>");
         while (true) {
             waitframe(1);
-            str_command = getdvarstring(#"hash_83ca4038b5f2453", "<unknown string>");
+            str_command = getdvarstring(#"hash_83ca4038b5f2453", "<dev string:x24d>");
             switch (str_command) {
             case #"green_eyes":
                 level thread function_705afbf2();
@@ -331,7 +330,7 @@ function function_55f8e11e(e_box) {
             default:
                 break;
             }
-            setdvar(#"hash_83ca4038b5f2453", "<unknown string>");
+            setdvar(#"hash_83ca4038b5f2453", "<dev string:x24d>");
         }
     }
 
@@ -348,7 +347,7 @@ function function_55f8e11e(e_box) {
         a_ai_zombies = arraysortclosest(a_ai_zombies, e_host.origin);
         foreach (ai_zombie in a_ai_zombies) {
             if (ai_zombie.archetype === #"zombie") {
-                ai_zombie clientfield::set("<unknown string>" + #"hash_59e8c30d5e28dad3", 1);
+                ai_zombie clientfield::set("<dev string:x24d>" + #"hash_59e8c30d5e28dad3", 1);
                 level.var_17bf15ba = ai_zombie;
                 return;
             }

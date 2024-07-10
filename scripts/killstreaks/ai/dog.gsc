@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\killstreaks\killstreak_bundles.gsc;
 #using scripts\killstreaks\ai\tracking.gsc;
@@ -315,8 +314,8 @@ function function_1eda333b() {
         goalpos = self.pathgoalpos;
         if (isdefined(self.ai.var_bd3490ad) && self.ai.var_bd3490ad.goalpos === goalpos) {
             /#
-                recordsphere(self.ai.var_bd3490ad.facepoint, 4, (1, 0.5, 0), "<unknown string>");
-                recordline(self.ai.var_bd3490ad.facepoint, goalpos, (1, 0.5, 0), "<unknown string>");
+                recordsphere(self.ai.var_bd3490ad.facepoint, 4, (1, 0.5, 0), "<dev string:x38>");
+                recordline(self.ai.var_bd3490ad.facepoint, goalpos, (1, 0.5, 0), "<dev string:x38>");
             #/
             return self.ai.var_bd3490ad.arrivalyaw;
         }
@@ -400,7 +399,7 @@ function function_cebd576f(entity) {
     entity melee();
     entity playsound(#"aml_dog_attack_jump");
     /#
-        record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>", entity);
+        record3dtext("<dev string:x41>", self.origin, (1, 0, 0), "<dev string:x38>", entity);
     #/
 }
 
@@ -761,7 +760,7 @@ function function_6c2426d3(entity) {
                 forward = anglestoforward(enemyangles);
                 dotproduct = abs(vectordot(vectornormalize(toenemy), forward));
                 /#
-                    record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "<unknown string>");
+                    record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "<dev string:x49>");
                 #/
                 if (dotproduct > 0.766) {
                     return true;
@@ -833,7 +832,7 @@ function function_3089bb44(entity) {
                 var_7a61ad67 = vectornormalize(entity getvelocity());
                 if (vectordot(var_7a61ad67, enemyvelocity) > cos(20)) {
                     /#
-                        record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                        record3dtext("<dev string:x56>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x71>");
                     #/
                     return false;
                 }
@@ -896,8 +895,8 @@ function function_b1eb29d8(entity, mocompanim, mocompanimblendouttime, mocompani
             movedelta = getmovedelta(mocompanim, 0, 1, entity);
             animendpos = entity localtoworldcoords(movedelta);
             distance = distance(entity.origin, animendpos);
-            recordcircle(animendpos, 3, (0, 1, 0), "<unknown string>");
-            record3dtext("<unknown string>" + distance, animendpos, (0, 1, 0), "<unknown string>");
+            recordcircle(animendpos, 3, (0, 1, 0), "<dev string:x71>");
+            record3dtext("<dev string:x7a>" + distance, animendpos, (0, 1, 0), "<dev string:x71>");
         #/
     }
 }
@@ -932,23 +931,23 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (!var_201660e6) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x7d>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x71>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_cf699df5 > var_65cbfb52 && var_776ddabf >= 90 * 90) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x8e>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x71>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 300 * 300) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x9c>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x71>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         }
         if (var_535d098c) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:xaa>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x71>");
             #/
             entity.meleeinfo.var_425c4c8b = 1;
         }
@@ -963,11 +962,11 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
             var_7948b2f3 = withinzrange && withinfov;
             var_425c4c8b = (isvisible || var_535d098c) && var_7948b2f3;
             /#
-                reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
+                reasons = "<dev string:xbd>" + isvisible + "<dev string:xc4>" + withinzrange + "<dev string:xca>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<dev string:x71>");
                 } else {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x71>");
                 }
             #/
             if (var_425c4c8b) {
@@ -991,8 +990,8 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
     if (entity.meleeinfo.adjustmentstarted && currentanimtime <= entity.meleeinfo.var_6392c3a2) {
         assert(isdefined(entity.meleeinfo.var_10b8b6d1) && isdefined(entity.meleeinfo.var_8b9a15a6));
         /#
-            recordsphere(entity.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
-            recordsphere(entity.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<unknown string>");
+            recordsphere(entity.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<dev string:x71>");
+            recordsphere(entity.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<dev string:x71>");
         #/
         adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * entity.meleeinfo.var_8b9a15a6;
         entity forceteleport(adjustedorigin);

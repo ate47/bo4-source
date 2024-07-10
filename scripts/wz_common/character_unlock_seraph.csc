@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_firing_range.csc;
 #using scripts\wz_common\character_unlock_fixup.csc;
 #using scripts\mp_common\item_world.csc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_ai_shared.gsc;
 #using scripts\core_common\statemachine_shared.gsc;
 #using scripts\core_common\math_shared.gsc;
@@ -279,19 +278,19 @@ function function_8d7ad318(launchpos, trajectory, targetpos) {
     self endon(#"hash_79e095919e415a70", #"death");
     /#
         assert(trajectory.size);
-        recordsphere(targetpos, 3, (0, 1, 1), "tag_char_align_d");
-        recordline(launchpos, trajectory[0], (0, 1, 1), "tag_head_ws");
+        recordsphere(targetpos, 3, (0, 1, 1), "<dev string:x38>");
+        recordline(launchpos, trajectory[0], (0, 1, 1), "<dev string:x41>");
         while (true) {
             i = 0;
             foreach (point in trajectory) {
-                recordsphere(point, 3, (0, 1, 1), "tag_char_align_d");
+                recordsphere(point, 3, (0, 1, 1), "<dev string:x38>");
                 if (isdefined(trajectory[i + 1])) {
-                    recordline(point, trajectory[i + 1], (0, 1, 1), "tag_head_ws");
+                    recordline(point, trajectory[i + 1], (0, 1, 1), "<dev string:x41>");
                 }
                 i++;
             }
-            recordsphere(targetpos, 3, (0, 1, 1), "tag_char_align_d");
-            recordline(point, targetpos, (0, 1, 1), "tag_head_ws");
+            recordsphere(targetpos, 3, (0, 1, 1), "<dev string:x38>");
+            recordline(point, targetpos, (0, 1, 1), "<dev string:x41>");
             waitframe(1);
         }
     #/
@@ -306,7 +305,7 @@ function function_4b28fc8c(entity) {
     launchpos = entity gettagorigin("j_head");
     var_d82e1fd1 = entity gettagangles("j_head");
     /#
-        recordsphere(launchpos, 3, (0, 0, 1), "tag_head_ws");
+        recordsphere(launchpos, 3, (0, 0, 1), "<dev string:x41>");
     #/
     landpos = entity.var_f6ea2286;
     if (!isdefined(landpos)) {
@@ -839,8 +838,8 @@ function private function_670bff63() {
         if (isdefined(self.favoriteenemy)) {
             dist = distance(self.origin, self.favoriteenemy.origin);
             /#
-                record3dtext("towersboss_head_proj" + dist, self.origin, (0, 1, 0), "tag_char_align_d");
-                recordcircle(self.favoriteenemy.origin, 4, (0, 1, 1), "tag_head_ws");
+                record3dtext("<dev string:x4a>" + dist, self.origin, (0, 1, 0), "<dev string:x38>");
+                recordcircle(self.favoriteenemy.origin, 4, (0, 1, 1), "<dev string:x41>");
             #/
         }
         waitframe(1);
@@ -1074,24 +1073,24 @@ function function_c153d922(elephant, point, bonename) {
     weakpointpos = elephant gettagorigin(bonename);
     if (distancesquared(weakpointpos, point) <= 40 * 40) {
         /#
-            recordsphere(point, 4, (0, 1, 0), "tag_head_ws");
+            recordsphere(point, 4, (0, 1, 0), "<dev string:x41>");
         #/
         /#
-            recordsphere(weakpointpos, 4, (0, 0, 1), "tag_head_ws");
+            recordsphere(weakpointpos, 4, (0, 0, 1), "<dev string:x41>");
         #/
         /#
-            recordline(weakpointpos, point, (0, 0, 1), "tag_head_ws");
+            recordline(weakpointpos, point, (0, 0, 1), "<dev string:x41>");
         #/
         return true;
     }
     /#
-        recordsphere(point, 4, (1, 0, 0), "tag_head_ws");
+        recordsphere(point, 4, (1, 0, 0), "<dev string:x41>");
     #/
     /#
-        recordsphere(weakpointpos, 4, (0, 0, 1), "tag_head_ws");
+        recordsphere(weakpointpos, 4, (0, 0, 1), "<dev string:x41>");
     #/
     /#
-        recordline(weakpointpos, point, (0, 0, 1), "tag_head_ws");
+        recordline(weakpointpos, point, (0, 0, 1), "<dev string:x41>");
     #/
     return false;
 }
@@ -1144,11 +1143,11 @@ function function_e864f0da(elephant, damage, attacker, point, dir, var_88cb1bf9)
         level notify(#"hash_3aa3137f1bf70773");
         namespace_81245006::function_ef87b7e8(var_dd54fdb1, damage);
         /#
-            iprintlnbold("intermission" + var_dd54fdb1.health);
+            iprintlnbold("<dev string:x4d>" + var_dd54fdb1.health);
         #/
         if (namespace_81245006::function_f29756fe(var_dd54fdb1) === 3) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x63>");
             #/
         }
         function_74fba881(elephant);
@@ -1460,7 +1459,7 @@ function function_ce8fe2b0(entity, splitorigin) {
             newpos = trace[#"position"];
         }
         /#
-            recordsphere(newpos, 15, (1, 0.5, 0), "tag_head_ws");
+            recordsphere(newpos, 15, (1, 0.5, 0), "<dev string:x41>");
         #/
         dustball = spawnvehicle(#"hash_6be593a62b8b87a5", newpos, entity.angles, "dynamic_spawn_ai");
         if (isdefined(dustball)) {
@@ -1472,7 +1471,7 @@ function function_ce8fe2b0(entity, splitorigin) {
         }
     } else {
         /#
-            recordsphere(launchpoint, 15, (0, 0, 0), "tag_head_ws");
+            recordsphere(launchpoint, 15, (0, 0, 0), "<dev string:x41>");
         #/
     }
     wait(0.5);
@@ -1679,7 +1678,7 @@ function private function_f8145b00(entity) {
         assert(isdefined(entity.ai.var_a504b9a3.var_86d0fc5));
         assert(isdefined(entity.ai.var_a504b9a3.var_6392c3a2));
         /#
-            recordsphere(entity.ai.var_a504b9a3.var_86d0fc5, 8, (1, 0, 0), "tag_head_ws");
+            recordsphere(entity.ai.var_a504b9a3.var_86d0fc5, 8, (1, 0, 0), "<dev string:x41>");
         #/
         if (entity asmistransitionrunning() || entity asmistransdecrunning()) {
             return true;
@@ -1696,12 +1695,12 @@ function private function_f8145b00(entity) {
             }
             if (var_ba63d54d <= threshold && sighttracepassed(entity.origin + (0, 0, 200), entity.favoriteenemy.origin + (0, 0, 100), 0, entity, entity.favoriteenemy)) {
                 /#
-                    recordline(entity.origin + (0, 0, 200), entity.favoriteenemy.origin + (0, 0, 200), (0, 1, 0), "tag_char_align_d");
+                    recordline(entity.origin + (0, 0, 200), entity.favoriteenemy.origin + (0, 0, 200), (0, 1, 0), "<dev string:x38>");
                 #/
                 targetpos = getclosestpointonnavmesh(entity.favoriteenemy.origin, 400, entity getpathfindingradius() * 1.2);
                 if (isdefined(targetpos)) {
                     /#
-                        recordsphere(targetpos, 8, (0, 1, 1), "tag_head_ws");
+                        recordsphere(targetpos, 8, (0, 1, 1), "<dev string:x41>");
                     #/
                     dirtoenemy = vectornormalize(targetpos - self.origin);
                     targetpos += vectorscale(dirtoenemy * -1, 170);
@@ -1710,20 +1709,20 @@ function private function_f8145b00(entity) {
                         path = generatenavmeshpath(self.origin, targetpos, self);
                         if (!isdefined(path) || !isdefined(path.pathpoints) || path.pathpoints.size == 0) {
                             /#
-                                recordsphere(targetpos, 8, (0.1, 0.1, 0.1), "tag_head_ws");
+                                recordsphere(targetpos, 8, (0.1, 0.1, 0.1), "<dev string:x41>");
                             #/
                         } else {
                             entity setgoal(targetpos);
                             /#
-                                recordsphere(targetpos, 8, (0, 0, 1), "tag_head_ws");
+                                recordsphere(targetpos, 8, (0, 0, 1), "<dev string:x41>");
                             #/
                             /#
-                                recordline(entity.ai.var_a504b9a3.var_86d0fc5, targetpos, (1, 0, 0), "tag_head_ws");
+                                recordline(entity.ai.var_a504b9a3.var_86d0fc5, targetpos, (1, 0, 0), "<dev string:x41>");
                             #/
                         }
                     } else {
                         /#
-                            recordsphere(targetpos, 8, (0.1, 0.1, 0.1), "tag_head_ws");
+                            recordsphere(targetpos, 8, (0.1, 0.1, 0.1), "<dev string:x41>");
                         #/
                     }
                 }
@@ -1922,9 +1921,9 @@ function private function_707d0196(player, mod, shitloc) {
         direction_vec = (direction_vec[0] * 8000, direction_vec[1] * 8000, direction_vec[2] * 8000);
         trace = bullettrace(eye, eye + direction_vec, 0, undefined);
         elephant = undefined;
-        var_947e61ac = getspawnerarray("<unknown string>", "<unknown string>");
+        var_947e61ac = getspawnerarray("<dev string:x79>", "<dev string:x96>");
         if (var_947e61ac.size == 0) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:xaa>");
             return;
         }
         elephant_spawner = array::random(var_947e61ac);
@@ -1941,30 +1940,30 @@ function private function_707d0196(player, mod, shitloc) {
     // Checksum 0x5860953b, Offset: 0x9218
     // Size: 0xdae
     function setup_devgui() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xc7>");
+        adddebugcommand("<dev string:x135>");
+        adddebugcommand("<dev string:x1a2>");
+        adddebugcommand("<dev string:x1f8>");
+        adddebugcommand("<dev string:x24e>");
+        adddebugcommand("<dev string:x2a5>");
+        adddebugcommand("<dev string:x2fe>");
+        adddebugcommand("<dev string:x347>");
+        adddebugcommand("<dev string:x3a0>");
+        adddebugcommand("<dev string:x403>");
+        adddebugcommand("<dev string:x466>");
+        adddebugcommand("<dev string:x4c7>");
+        adddebugcommand("<dev string:x528>");
+        adddebugcommand("<dev string:x589>");
+        adddebugcommand("<dev string:x5ee>");
+        adddebugcommand("<dev string:x64b>");
+        adddebugcommand("<dev string:x6b0>");
+        adddebugcommand("<dev string:x719>");
+        adddebugcommand("<dev string:x78b>");
         while (true) {
-            setdvar(#"hash_7a7fc216709f1aa4", "towersboss_head_proj");
+            setdvar(#"hash_7a7fc216709f1aa4", "<dev string:x4a>");
             wait(0.2);
-            cmd = getdvarstring(#"hash_7a7fc216709f1aa4", "towersboss_head_proj");
-            if (cmd == "towersboss_head_proj") {
+            cmd = getdvarstring(#"hash_7a7fc216709f1aa4", "<dev string:x4a>");
+            if (cmd == "<dev string:x4a>") {
                 continue;
             }
             switch (cmd) {
@@ -2002,25 +2001,25 @@ function private function_707d0196(player, mod, shitloc) {
             case #"hide_heart":
                 elephants = getaiarchetypearray(#"elephant");
                 foreach (elephant in elephants) {
-                    elephant hidepart("<unknown string>");
+                    elephant hidepart("<dev string:x801>");
                 }
                 break;
             case #"show_heart":
                 elephants = getaiarchetypearray(#"elephant");
                 foreach (elephant in elephants) {
-                    elephant showpart("<unknown string>");
+                    elephant showpart("<dev string:x801>");
                 }
                 break;
             case #"hide_head":
                 elephants = getaiarchetypearray(#"elephant");
                 foreach (elephant in elephants) {
-                    elephant hidepart("<unknown string>");
+                    elephant hidepart("<dev string:x80f>");
                 }
                 break;
             case #"show_head":
                 elephants = getaiarchetypearray(#"elephant");
                 foreach (elephant in elephants) {
-                    elephant showpart("<unknown string>");
+                    elephant showpart("<dev string:x80f>");
                 }
                 break;
             case #"hash_6f54f417f7b5ac51":

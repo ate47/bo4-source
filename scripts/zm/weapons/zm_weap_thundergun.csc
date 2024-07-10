@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\clientfield_shared.csc;
@@ -41,7 +40,7 @@ function on_weapon_change(s_params) {
     w_old_weapon = s_params.last_weapon;
     if (w_new_weapon == level.w_thundergun || w_new_weapon == level.w_thundergun_upgraded) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
         #/
     }
 }

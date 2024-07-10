@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_ui_inventory.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -122,7 +121,7 @@ function setup_tables() {
         if (isdefined(var_6886faaa)) {
             trigger.craftfoundry = function_c1552513(var_6886faaa);
         } else {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x38>");
         }
         unitrigger = function_f665fde0(trigger);
         if (!isdefined(level.var_4fe2f84d[var_6886faaa])) {
@@ -148,7 +147,7 @@ function setup_tables() {
 // Checksum 0x8a225b6a, Offset: 0x940
 // Size: 0x96
 function reset_table() {
-    assert(!(isdefined(self.registered) && self.registered), "<unknown string>");
+    assert(!(isdefined(self.registered) && self.registered), "<dev string:x5d>");
     zm_unitrigger::register_static_unitrigger(self, &crafting_think);
     self function_35f5c90b(#"craft");
     self.crafted = 0;
@@ -165,7 +164,7 @@ function function_c1552513(name) {
         craftfoundry.name = name;
         setup_craftfoundry(craftfoundry);
     } else {
-        assertmsg("<unknown string>" + name);
+        assertmsg("<dev string:x90>" + name);
     }
     return craftfoundry;
 }
@@ -218,7 +217,7 @@ function function_b18074d0(name) {
             #/
         }
     } else {
-        assertmsg("<unknown string>" + name);
+        assertmsg("<dev string:xaa>" + name);
     }
     return blueprint;
 }
@@ -233,7 +232,7 @@ function get_component(component, blueprint) {
     }
     if (!isdefined(level.crafting_components[component.name])) {
         if (component == level.weaponnone) {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:xbf>");
         }
         /#
             function_4765f5b3(component);
@@ -482,14 +481,14 @@ function function_48ce9379(weapon) {
 function function_126fc77c(player) {
     if (!isdefined(self.stub)) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xdd>");
         #/
         return 0;
     }
     can_use = self.stub function_18f2be60(player);
     if (!isdefined(self.stub.hint_string)) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x118>");
         #/
         return can_use;
     }
@@ -650,7 +649,7 @@ function function_987a472(modelname, blueprint) {
             s_crafting.model notsolid();
             s_crafting.model show();
         } else {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x143>");
         }
         return;
     }
@@ -811,9 +810,9 @@ function private function_35f5c90b(state) {
     if (!isdefined(level.var_b87dee47[self.var_90dfb0bf])) {
         /#
             if (ishash(state)) {
-                state = "<unknown string>" + function_9e72a96(state);
+                state = "<dev string:x17a>" + function_9e72a96(state);
             }
-            assertmsg("<unknown string>" + state);
+            assertmsg("<dev string:x17e>" + state);
         #/
         return;
     }
@@ -1031,7 +1030,7 @@ function private function_f37c4bb5(player) {
         if (isdefined(self.stub.blueprint.var_54a97edd) && isdefined(self.stub.blueprint.var_54a97edd.isriotshield) && self.stub.blueprint.var_54a97edd.isriotshield) {
             foreach (e_player in getplayers()) {
                 /#
-                    e_player zm_challenges::debug_print("<unknown string>");
+                    e_player zm_challenges::debug_print("<dev string:x198>");
                 #/
                 e_player zm_stats::increment_challenge_stat(#"shields_built", undefined, 1);
             }
@@ -1498,11 +1497,11 @@ function private function_42673a26(player) {
         level.var_a9839862++;
         level.var_644b04e2[table_id] = unitrigger;
         name = unitrigger.craftfoundry.name;
-        if (unitrigger.craftfoundry.displayname != "<unknown string>") {
+        if (unitrigger.craftfoundry.displayname != "<dev string:x1be>") {
             name = unitrigger.craftfoundry.displayname;
         }
         util::waittill_can_add_debug_command();
-        str_cmd = "<unknown string>" + table_id + "<unknown string>" + name + "<unknown string>" + table_id + "<unknown string>";
+        str_cmd = "<dev string:x1c1>" + table_id + "<dev string:x1f3>" + name + "<dev string:x1f8>" + table_id + "<dev string:x221>";
         adddebugcommand(str_cmd);
     }
 
@@ -1520,7 +1519,7 @@ function private function_42673a26(player) {
     // Size: 0xd0
     function function_e5af6b6e(blueprint) {
         name = blueprint.name;
-        if (blueprint.displayname != "<unknown string>") {
+        if (blueprint.displayname != "<dev string:x1be>") {
             name = blueprint.displayname;
         }
         foreach (component in blueprint.components) {
@@ -1535,7 +1534,7 @@ function private function_42673a26(player) {
     function function_e9e4a1d0(var_a13e8cac, component) {
         util::waittill_can_add_debug_command();
         name = getweaponname(component);
-        str_cmd = "<unknown string>" + var_a13e8cac + "<unknown string>" + name + "<unknown string>" + name + "<unknown string>";
+        str_cmd = "<dev string:x226>" + var_a13e8cac + "<dev string:x24e>" + name + "<dev string:x257>" + name + "<dev string:x221>";
         adddebugcommand(str_cmd);
     }
 
@@ -1553,7 +1552,7 @@ function private function_42673a26(player) {
     // Size: 0xf4
     function devgui_get_players() {
         var_4ab6b47 = getdvarstring(#"hash_7c8c0c3f35357a53");
-        if (var_4ab6b47 != "<unknown string>") {
+        if (var_4ab6b47 != "<dev string:x1be>") {
             player_id = int(var_4ab6b47);
             if (player_id > 0 && player_id <= 4 && isdefined(getplayers()[player_id - 1])) {
                 result = [];
@@ -1569,27 +1568,27 @@ function private function_42673a26(player) {
     // Checksum 0xbae89ca5, Offset: 0x5d90
     // Size: 0x276
     function devgui_think() {
-        setdvar(#"hash_7c8c0c3f35357a53", "<unknown string>");
+        setdvar(#"hash_7c8c0c3f35357a53", "<dev string:x1be>");
         util::waittill_can_add_debug_command();
-        str_cmd = "<unknown string>";
+        str_cmd = "<dev string:x27b>";
         adddebugcommand(str_cmd);
         for (i = 1; i <= 4; i++) {
             util::waittill_can_add_debug_command();
-            str_cmd = "<unknown string>" + i + "<unknown string>" + i + "<unknown string>" + i + "<unknown string>";
+            str_cmd = "<dev string:x2c8>" + i + "<dev string:x2f5>" + i + "<dev string:x2f9>" + i + "<dev string:x221>";
             adddebugcommand(str_cmd);
         }
         while (true) {
             var_cf5ebef8 = getdvarstring(#"hash_43086839e587cc6c");
-            if (var_cf5ebef8 != "<unknown string>") {
+            if (var_cf5ebef8 != "<dev string:x1be>") {
                 table_id = int(var_cf5ebef8);
                 array::thread_all(devgui_get_players(), &function_fe738a08, table_id);
-                setdvar(#"hash_43086839e587cc6c", "<unknown string>");
+                setdvar(#"hash_43086839e587cc6c", "<dev string:x1be>");
             }
             component = getdvarstring(#"hash_3a357be22156749e");
-            if (component != "<unknown string>") {
+            if (component != "<dev string:x1be>") {
                 w_comp = get_component(component);
                 array::thread_all(devgui_get_players(), &function_3e29352d, w_comp);
-                setdvar(#"hash_3a357be22156749e", "<unknown string>");
+                setdvar(#"hash_3a357be22156749e", "<dev string:x1be>");
             }
             wait(1);
         }

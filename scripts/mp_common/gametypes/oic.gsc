@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\weapons\weapon_utils.gsc;
 #using scripts\mp_common\player\player_utils.gsc;

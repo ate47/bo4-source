@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_headshots_only.gsc;
 #using scripts\zm_common\trials\zm_trial_no_powerups.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
@@ -481,7 +480,7 @@ function function_cc33adc8() {
 }
 
 // Namespace zm_powerups/zm_powerups
-// Params d, eflags: 0x1 linked
+// Params 13, eflags: 0x1 linked
 // Checksum 0xdd1a819f, Offset: 0x2258
 // Size: 0x4ae
 function add_zombie_powerup(powerup_name, model_name, hint, func_should_drop_with_regular_powerups, only_affects_grabber, any_team, zombie_grabbable, fx, client_field_name, time_name, on_name, clientfield_version = 1, player_specific = 0) {
@@ -685,7 +684,7 @@ function powerup_drop(drop_point, powerup, var_4e31704a = 1) {
         }
     }
     if (level.powerup_drop_count >= zombie_utility::get_zombie_var(#"zombie_powerup_drop_max_per_round")) {
-        println("p8_zm_powerup_free_perk_02");
+        println("<dev string:x38>");
         function_5326bd06(powerup);
         return;
     }
@@ -717,9 +716,9 @@ function powerup_drop(drop_point, powerup, var_4e31704a = 1) {
     powerup powerup_setup(undefined, undefined, drop_point);
     /#
         if (var_4e31704a) {
-            str_debug = "<unknown string>";
+            str_debug = "<dev string:x65>";
         } else {
-            str_debug = "<unknown string>";
+            str_debug = "<dev string:x73>";
         }
         print_powerup_drop(powerup.powerup_name, str_debug);
     #/
@@ -936,7 +935,7 @@ function powerup_setup(powerup_override, powerup_team, powerup_location, powerup
     if (isdefined(powerup_player)) {
         self.powerup_player = powerup_player;
     } else {
-        assert(!(isdefined(struct.player_specific) && struct.player_specific), "<unknown string>");
+        assert(!(isdefined(struct.player_specific) && struct.player_specific), "<dev string:x8d>");
     }
     self.powerup_name = struct.powerup_name;
     self.hint = struct.hint;
@@ -1033,7 +1032,7 @@ function powerup_zombie_grab(powerup_team) {
             if (isdefined(level._game_mode_powerup_zombie_grab)) {
                 level thread [[ level._game_mode_powerup_zombie_grab ]](self, who);
             } else {
-                println("<unknown string>");
+                println("<dev string:xc8>");
             }
         }
         level thread zm_audio::sndannouncerplayvox(self.powerup_name);
@@ -1118,7 +1117,7 @@ function powerup_grab(powerup_team) {
                         if (isdefined(level._zombiemode_powerup_grab)) {
                             level thread [[ level._zombiemode_powerup_grab ]](self, player);
                         } else {
-                            println("<unknown string>");
+                            println("<dev string:xc8>");
                         }
                         break;
                     }
@@ -1635,19 +1634,19 @@ function tesla_powerup_active() {
         }
         time = (gettime() - level.powerup_drop_time) * 0.001;
         level.powerup_drop_time = gettime();
-        if (type == "<unknown string>") {
+        if (type == "<dev string:xdf>") {
             level.powerup_random_count++;
         } else {
             level.var_27b063df++;
         }
-        println("<unknown string>");
-        println("<unknown string>" + powerup);
-        println("<unknown string>" + type);
-        println("<unknown string>");
-        println("<unknown string>" + time);
-        println("<unknown string>");
-        println("<unknown string>" + level.var_27b063df);
-        println("<unknown string>");
+        println("<dev string:xe8>");
+        println("<dev string:x111>" + powerup);
+        println("<dev string:x11d>" + type);
+        println("<dev string:x130>");
+        println("<dev string:x147>" + time);
+        println("<dev string:x155>");
+        println("<dev string:x176>" + level.var_27b063df);
+        println("<dev string:x18d>");
     }
 
 #/
@@ -1957,7 +1956,7 @@ function weapon_watch_gunner_downed(str_weapon) {
 // Checksum 0x56aea89b, Offset: 0x76e8
 // Size: 0xd6
 function register_powerup(str_powerup, func_grab_powerup, func_setup) {
-    assert(isdefined(str_powerup), "<unknown string>");
+    assert(isdefined(str_powerup), "<dev string:x1b6>");
     _register_undefined_powerup(str_powerup);
     if (isdefined(func_grab_powerup)) {
         if (!isdefined(level._custom_powerups[str_powerup].grab_powerup)) {
@@ -1990,7 +1989,7 @@ function _register_undefined_powerup(str_powerup) {
 // Checksum 0x2439698d, Offset: 0x7850
 // Size: 0x8e
 function register_powerup_weapon(str_powerup, func_countdown) {
-    assert(isdefined(str_powerup), "<unknown string>");
+    assert(isdefined(str_powerup), "<dev string:x1b6>");
     _register_undefined_powerup(str_powerup);
     if (isdefined(func_countdown)) {
         if (!isdefined(level._custom_powerups[str_powerup].weapon_countdown)) {

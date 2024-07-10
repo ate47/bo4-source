@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\throttle_shared.gsc;
@@ -111,18 +110,18 @@ function update(tacbundle) {
         return;
     }
     /#
-        self bot::record_text("<unknown string>", (0, 1, 1), "<unknown string>");
+        self bot::record_text("<dev string:x38>", (0, 1, 1), "<dev string:x4e>");
     #/
     self.attackeraccuracy = 1;
     if (self.goalforced) {
         /#
-            self bot::record_text("<unknown string>", (1, 1, 1), "<unknown string>");
+            self bot::record_text("<dev string:x63>", (1, 1, 1), "<dev string:x4e>");
         #/
         if (isdefined(self.node)) {
             offsetposition = self function_f29e63ea(self.node);
             if (isdefined(offsetposition)) {
                 /#
-                    self bot::record_text("<unknown string>", (0, 1, 1), "<unknown string>");
+                    self bot::record_text("<dev string:x71>", (0, 1, 1), "<dev string:x4e>");
                 #/
                 self function_a57c34b7(offsetposition);
             }
@@ -162,7 +161,7 @@ function handle_goal() {
     while (isdefined(self.bot)) {
         self waittill(#"goal");
         /#
-            self bot::record_text("<unknown string>", (0, 1, 1), "<unknown string>");
+            self bot::record_text("<dev string:x81>", (0, 1, 1), "<dev string:x4e>");
         #/
         waitframe(1);
     }
@@ -241,12 +240,12 @@ function function_6ee03a5f(failurecount) {
     startpos = self.origin;
     if (self function_96f55844()) {
         /#
-            self botprintwarning("<unknown string>" + startpos + "<unknown string>" + self.origin);
+            self botprintwarning("<dev string:x88>" + startpos + "<dev string:xb0>" + self.origin);
         #/
         return;
     }
     /#
-        self botprinterror("<unknown string>" + startpos);
+        self botprinterror("<dev string:xc3>" + startpos);
     #/
 }
 
@@ -398,7 +397,7 @@ function function_7beea81f(tacbundle) {
     self endoncallback(&function_7f65a721, #"death", #"hash_2747b8ce1136a8ae");
     if (!isdefined(tacbundle.positionhandlerlist)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:xfb>", (1, 0, 0), "<dev string:x4e>");
         #/
         return;
     }
@@ -423,12 +422,12 @@ function function_22d4d2d(params, tacbundle) {
     func = level.var_a4527012[params.name];
     if (!isdefined(func)) {
         /#
-            self botprinterror("<unknown string>" + params.name);
+            self botprinterror("<dev string:x114>" + params.name);
         #/
         return 0;
     }
     /#
-        self bot::record_text(function_9e72a96(params.name), (1, 1, 1), "<unknown string>");
+        self bot::record_text(function_9e72a96(params.name), (1, 1, 1), "<dev string:x4e>");
     #/
     handled = self [[ func ]](params, tacbundle);
     return handled;
@@ -442,7 +441,7 @@ function function_795a469(name) {
     func = level.var_ce8d80ba[name];
     if (!isdefined(func)) {
         /#
-            self botprinterror("<unknown string>" + function_9e72a96(name));
+            self botprinterror("<dev string:x138>" + function_9e72a96(name));
         #/
         return undefined;
     }
@@ -465,13 +464,13 @@ function handle_default(params, tacbundle) {
     center = self function_795a469(params.center);
     if (!isdefined(center)) {
         /#
-            self bot::record_text("<unknown string>" + function_9e72a96(params.center), (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x15b>" + function_9e72a96(params.center), (1, 0, 0), "<dev string:x4e>");
         #/
         return 0;
     }
     if (isint(center)) {
         /#
-            self bot::record_text("<unknown string>" + center, (0, 1, 1), "<unknown string>");
+            self bot::record_text("<dev string:x170>" + center, (0, 1, 1), "<dev string:x4e>");
         #/
         if (self function_ad687b7f(center)) {
             return 1;
@@ -488,8 +487,8 @@ function handle_default(params, tacbundle) {
             position = center.origin;
         } else {
             /#
-                self bot::record_text("<unknown string>" + function_9e72a96(params.center), (1, 0, 0), "<unknown string>");
-                self botprinterror(function_9e72a96(params.name) + "<unknown string>" + params.center);
+                self bot::record_text("<dev string:x17b>" + function_9e72a96(params.center), (1, 0, 0), "<dev string:x4e>");
+                self botprinterror(function_9e72a96(params.name) + "<dev string:x195>" + params.center);
             #/
             return 0;
         }
@@ -507,7 +506,7 @@ function handle_default(params, tacbundle) {
 function function_8adaa75f(params, tacbundle) {
     if (!self ai::get_behavior_attribute("revive")) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x1af>", (1, 0, 0), "<dev string:x4e>");
         #/
         return 0;
     }
@@ -613,10 +612,10 @@ function function_7ed3ada6(params, tacbundle) {
     facingpos = isdefined(self.enemy) ? self.enemy.origin : self.likelyenemyposition;
     nodes = findbestcovernodesatlocation(self.goalpos, self.goalradius, self.goalheight, self.team, facingpos);
     /#
-        if (self bot::should_record("<unknown string>")) {
-            recordsphere(facingpos, 8, (0, 1, 1), "<unknown string>", self);
+        if (self bot::should_record("<dev string:x4e>")) {
+            recordsphere(facingpos, 8, (0, 1, 1), "<dev string:x1cf>", self);
             foreach (node in nodes) {
-                function_af72dbc5(node.origin, (-16, -16, 0), (16, 16, 16), node.angles[0], (0, 1, 1), "<unknown string>", self);
+                function_af72dbc5(node.origin, (-16, -16, 0), (16, 16, 16), node.angles[0], (0, 1, 1), "<dev string:x1cf>", self);
             }
         }
     #/
@@ -791,9 +790,9 @@ function function_b2dbe6b0(trigger, minradius = 0) {
     results = positionquery_source_navigation(trigger.origin, minradius, triggerradius, trigger.maxs[2], 12, self);
     if (isdefined(results) && results.data.size > 0) {
         /#
-            if (self bot::should_record("<unknown string>")) {
+            if (self bot::should_record("<dev string:x4e>")) {
                 foreach (pos in results.data) {
-                    recordstar(pos.origin, (0, 1, 1), "<unknown string>", self);
+                    recordstar(pos.origin, (0, 1, 1), "<dev string:x1cf>", self);
                 }
             }
         #/
@@ -811,13 +810,13 @@ function function_d0cf287b(params, tacbundle) {
     center = self function_795a469(params.center);
     if (!isdefined(center)) {
         /#
-            self bot::record_text("<unknown string>" + function_9e72a96(params.center), (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x15b>" + function_9e72a96(params.center), (1, 0, 0), "<dev string:x4e>");
         #/
         return false;
     }
     if (isint(center)) {
         /#
-            self bot::record_text("<unknown string>" + center, (0, 1, 1), "<unknown string>");
+            self bot::record_text("<dev string:x170>" + center, (0, 1, 1), "<dev string:x4e>");
         #/
     }
     enemy = self.likelyenemyposition;
@@ -827,8 +826,8 @@ function function_d0cf287b(params, tacbundle) {
     position = function_b33e4e67(center, self.origin, enemy, params.querylist);
     if (!isdefined(position)) {
         /#
-            self bot::record_text("<unknown string>" + function_9e72a96(params.center), (1, 0, 0), "<unknown string>");
-            self botprinterror(function_9e72a96(params.name) + "<unknown string>" + params.center);
+            self bot::record_text("<dev string:x17b>" + function_9e72a96(params.center), (1, 0, 0), "<dev string:x4e>");
+            self botprinterror(function_9e72a96(params.name) + "<dev string:x195>" + params.center);
         #/
         return false;
     }
@@ -852,31 +851,31 @@ function function_b33e4e67(center, fillpos, enemy, querylist) {
     centerpos = self function_de626503(center);
     var_65c3e15e = undefined;
     /#
-        if (self bot::should_record("<unknown string>")) {
+        if (self bot::should_record("<dev string:x4e>")) {
             if (isstruct(center) && isdefined(center.origin) && isdefined(center.radius) && isdefined(center.halfheight)) {
-                recordcircle(center.origin - (0, 0, center.halfheight), center.radius, (0, 1, 1), "<unknown string>", self);
-                recordcircle(center.origin + (0, 0, center.halfheight), center.radius, (0, 1, 1), "<unknown string>", self);
-                recordline(center.origin - (0, 0, center.halfheight), center.origin + (0, 0, center.halfheight), (0, 1, 1), "<unknown string>", self);
+                recordcircle(center.origin - (0, 0, center.halfheight), center.radius, (0, 1, 1), "<dev string:x1cf>", self);
+                recordcircle(center.origin + (0, 0, center.halfheight), center.radius, (0, 1, 1), "<dev string:x1cf>", self);
+                recordline(center.origin - (0, 0, center.halfheight), center.origin + (0, 0, center.halfheight), (0, 1, 1), "<dev string:x1cf>", self);
             } else if (isstruct(center) && center.type == 2) {
-                function_af72dbc5(center.center, center.halfsize * -1, center.halfsize, center.angles[0], (0, 1, 1), "<unknown string>", self);
+                function_af72dbc5(center.center, center.halfsize * -1, center.halfsize, center.angles[0], (0, 1, 1), "<dev string:x1cf>", self);
             } else if (isentity(center)) {
                 maxs = center getmaxs();
                 mins = center getmins();
-                if (issubstr(center.classname, "<unknown string>")) {
+                if (issubstr(center.classname, "<dev string:x1da>")) {
                     radius = max(maxs[0], maxs[1]);
                     top = center.origin + (0, 0, maxs[2]);
                     bottom = center.origin + (0, 0, mins[2]);
-                    recordcircle(bottom, radius, (0, 1, 1), "<unknown string>", self);
-                    recordcircle(top, radius, (0, 1, 1), "<unknown string>", self);
-                    recordline(bottom, top, (0, 1, 1), "<unknown string>", self);
+                    recordcircle(bottom, radius, (0, 1, 1), "<dev string:x1cf>", self);
+                    recordcircle(top, radius, (0, 1, 1), "<dev string:x1cf>", self);
+                    recordline(bottom, top, (0, 1, 1), "<dev string:x1cf>", self);
                 } else {
-                    function_af72dbc5(center.origin, mins, maxs, center.angles[0], (0, 1, 1), "<unknown string>", self);
+                    function_af72dbc5(center.origin, mins, maxs, center.angles[0], (0, 1, 1), "<dev string:x1cf>", self);
                 }
             }
             if (isdefined(enemy)) {
                 enemypos = isentity(enemy) ? enemy.origin : enemy;
-                recordline(centerpos, enemypos, (1, 0, 0), "<unknown string>", self);
-                recordstar(enemypos, (1, 0, 0), "<unknown string>", self);
+                recordline(centerpos, enemypos, (1, 0, 0), "<dev string:x1cf>", self);
+                recordstar(enemypos, (1, 0, 0), "<dev string:x1cf>", self);
             }
         }
     #/
@@ -886,7 +885,7 @@ function function_b33e4e67(center, fillpos, enemy, querylist) {
     foreach (query in querylist) {
         [[ level.var_d1a4558d ]]->waitinqueue(self);
         /#
-            self bot::record_text("<unknown string>" + function_9e72a96(query.name), (1, 1, 1), "<unknown string>");
+            self bot::record_text("<dev string:x1e3>" + function_9e72a96(query.name), (1, 1, 1), "<dev string:x4e>");
         #/
         if (!isdefined(enemy) || function_3132f113(enemy)) {
             enemy = lastenemypos;
@@ -900,15 +899,15 @@ function function_b33e4e67(center, fillpos, enemy, querylist) {
         aiprofile_endentry();
         if (tacpoints.size <= 0) {
             /#
-                self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+                self bot::record_text("<dev string:x1e8>", (1, 0, 0), "<dev string:x4e>");
             #/
             continue;
         }
         /#
-            self bot::record_text("<unknown string>" + tacpoints.size + "<unknown string>", (0, 1, 1), "<unknown string>");
-            if (self bot::should_record("<unknown string>")) {
+            self bot::record_text("<dev string:x1fe>" + tacpoints.size + "<dev string:x205>", (0, 1, 1), "<dev string:x4e>");
+            if (self bot::should_record("<dev string:x4e>")) {
                 foreach (point in tacpoints) {
-                    recordcircle(point.origin, 15, (0, 1, 1), "<unknown string>", self);
+                    recordcircle(point.origin, 15, (0, 1, 1), "<dev string:x1cf>", self);
                 }
             }
         #/
@@ -922,7 +921,7 @@ function function_b33e4e67(center, fillpos, enemy, querylist) {
         distsq = distance2dsquared(var_65c3e15e.origin, var_65c3e15e.node.origin);
         if (distsq > 900) {
             /#
-                self botprinterror("<unknown string>" + sqrt(distsq) + "<unknown string>");
+                self botprinterror("<dev string:x215>" + sqrt(distsq) + "<dev string:x235>");
             #/
             return var_65c3e15e.origin;
         }
@@ -966,41 +965,41 @@ function function_f29e63ea(node) {
 // Size: 0x238
 function function_2ea7762a(tacbundle) {
     /#
-        self bot::record_text("<unknown string>", (0, 1, 1), "<unknown string>");
+        self bot::record_text("<dev string:x254>", (0, 1, 1), "<dev string:x4e>");
     #/
     if (!isdefined(tacbundle.pathenemyfightdist) || tacbundle.pathenemyfightdist <= 0) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x278>", (1, 0, 0), "<dev string:x4e>");
         #/
         return false;
     }
     if (self ai::get_behavior_attribute("ignorepathenemyfightdist")) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x299>", (1, 0, 0), "<dev string:x4e>");
         #/
         return false;
     }
     if (!isdefined(self.enemy)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x2ca>", (1, 0, 0), "<dev string:x4e>");
         #/
         return false;
     }
     if (!self cansee(self.enemy)) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x2d7>", (1, 0, 0), "<dev string:x4e>");
         #/
         return false;
     }
     distsq = tacbundle.pathenemyfightdist * tacbundle.pathenemyfightdist;
     if (distance2dsquared(self.origin, self.enemy.origin) > distsq) {
         /#
-            self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
+            self bot::record_text("<dev string:x2ed>", (1, 0, 0), "<dev string:x4e>");
         #/
         return false;
     }
     /#
-        self bot::record_text("<unknown string>", (0, 1, 1), "<unknown string>");
+        self bot::record_text("<dev string:x2ff>", (0, 1, 1), "<dev string:x4e>");
     #/
     return true;
 }
@@ -1024,7 +1023,7 @@ function set_position(position, claimnode = undefined) {
             return;
         } else {
             /#
-                self botprinterror("<unknown string>" + position);
+                self botprinterror("<dev string:x311>" + position);
             #/
         }
     }
@@ -1085,7 +1084,7 @@ function get_pathable_point(points) {
     navmeshpoint = getclosestpointonnavmesh(self.origin, 64, radius);
     if (!isdefined(navmeshpoint)) {
         /#
-            self botprinterror("<unknown string>" + self.origin);
+            self botprinterror("<dev string:x33f>" + self.origin);
         #/
         return undefined;
     }

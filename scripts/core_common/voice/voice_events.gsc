@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 
 #namespace voice_events;
@@ -26,8 +25,8 @@ function __init__() {
 // Checksum 0x86a24483, Offset: 0xf0
 // Size: 0xb8
 function register_handler(event, handlerfunc) {
-    assert(isdefined(event), "<unknown string>");
-    assert(isfunctionptr(handlerfunc), "<unknown string>");
+    assert(isdefined(event), "<dev string:x38>");
+    assert(isfunctionptr(handlerfunc), "<dev string:x5c>");
     funcs = level.var_d5d1ddd5[event];
     if (!isdefined(funcs)) {
         funcs = [];
@@ -41,11 +40,11 @@ function register_handler(event, handlerfunc) {
 // Checksum 0xda0726d8, Offset: 0x1b0
 // Size: 0x1ae
 function function_840acc1c(event, handlerfunc, priority = 0, var_c10e92a2 = undefined) {
-    assert(isdefined(event), "<unknown string>");
-    assert(isfunctionptr(handlerfunc), "<unknown string>");
-    assert(isint(priority) || isfloat(priority), "<unknown string>");
-    assert(!isdefined(var_c10e92a2) || isfunctionptr(var_c10e92a2), "<unknown string>");
-    assert(!isdefined(level.var_a95b39fd[event]), "<unknown string>" + event);
+    assert(isdefined(event), "<dev string:x38>");
+    assert(isfunctionptr(handlerfunc), "<dev string:x5c>");
+    assert(isint(priority) || isfloat(priority), "<dev string:x8f>");
+    assert(!isdefined(var_c10e92a2) || isfunctionptr(var_c10e92a2), "<dev string:xab>");
+    assert(!isdefined(level.var_a95b39fd[event]), "<dev string:xdf>" + event);
     handler = {#handlerfunc:handlerfunc, #priority:priority, #var_c10e92a2:var_c10e92a2};
     level.var_a95b39fd[event] = handler;
 }
@@ -55,8 +54,8 @@ function function_840acc1c(event, handlerfunc, priority = 0, var_c10e92a2 = unde
 // Checksum 0x63f2fe38, Offset: 0x368
 // Size: 0xc4
 function create_queue(queuename) {
-    assert(isdefined(queuename), "<unknown string>");
-    assert(!isdefined(level.var_fde3243f[queuename]), "<unknown string>" + queuename);
+    assert(isdefined(queuename), "<dev string:x10b>");
+    assert(!isdefined(level.var_fde3243f[queuename]), "<dev string:x150>" + queuename);
     if (!isdefined(queuename) || isdefined(level.var_fde3243f[queuename])) {
         return;
     }
@@ -70,12 +69,12 @@ function create_queue(queuename) {
 // Checksum 0xfce1de89, Offset: 0x438
 // Size: 0x28c
 function queue_event(queuename, event, handlerfunc, priority = 0, params = undefined) {
-    assert(isdefined(queuename), "<unknown string>");
-    assert(isdefined(level.var_fde3243f[queuename]), "<unknown string>" + queuename);
-    assert(isdefined(event), "<unknown string>");
-    assert(isfunctionptr(handlerfunc), "<unknown string>");
-    assert(isint(priority) || isfloat(priority), "<unknown string>");
-    assert(!isdefined(params) || isstruct(params), "<unknown string>");
+    assert(isdefined(queuename), "<dev string:x186>");
+    assert(isdefined(level.var_fde3243f[queuename]), "<dev string:x1ca>" + queuename);
+    assert(isdefined(event), "<dev string:x1fc>");
+    assert(isfunctionptr(handlerfunc), "<dev string:x23c>");
+    assert(isint(priority) || isfloat(priority), "<dev string:x28b>");
+    assert(!isdefined(params) || isstruct(params), "<dev string:x2c3>");
     queue = level.var_fde3243f[queuename];
     if (!isdefined(queue) || !isdefined(event) || !isfunctionptr(handlerfunc)) {
         return;

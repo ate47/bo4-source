@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\core_common\flagsys_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -86,7 +85,7 @@ function function_51e43f4f() {
     level endon(#"end_game");
     level flagsys::wait_till(#"hash_25d8c88ff3f91ee5");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     zm_utility::giveachievement_wrapper("ZM_MANSION_ARTIFACT", 1);
 }
@@ -100,7 +99,7 @@ function function_783dcd31() {
     self endon(#"disconnect");
     self waittill(#"hash_4505abb76e48700a");
     /#
-        iprintlnbold("<unknown string>" + self getentnum());
+        iprintlnbold("<dev string:x57>" + self getentnum());
     #/
     self zm_utility::giveachievement_wrapper("ZM_MANSION_STAKE", 0);
 }
@@ -114,7 +113,7 @@ function function_87a4fba4() {
     self endon(#"disconnect");
     self waittill(#"hash_1ac06d8c0149a66c");
     /#
-        iprintlnbold("<unknown string>" + self getentnum());
+        iprintlnbold("<dev string:x7b>" + self getentnum());
     #/
     self zm_utility::giveachievement_wrapper("ZM_MANSION_BOARD", 0);
 }
@@ -128,7 +127,7 @@ function function_51328dc2() {
     self endon(#"disconnect");
     self waittill(#"hash_6938bc311a1a893e");
     /#
-        iprintlnbold("<unknown string>" + self getentnum());
+        iprintlnbold("<dev string:xa1>" + self getentnum());
     #/
     self zm_utility::giveachievement_wrapper("ZM_MANSION_BITE", 0);
 }
@@ -141,7 +140,7 @@ function function_f4b6212() {
     level endon(#"end_game", #"hash_691d769f8aa3dcbd");
     level waittill(#"hash_3464fd1132f34721");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xc5>");
     #/
     zm_utility::giveachievement_wrapper("ZM_MANSION_QUICK", 1);
 }
@@ -156,7 +155,7 @@ function function_c91cfd5a() {
         level waittill(#"hash_144b3192f03325f3");
     }
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xe3>");
     #/
     zm_utility::giveachievement_wrapper("ZM_MANSION_ALCHEMICAL", 1);
 }
@@ -178,7 +177,7 @@ function function_a46f4413() {
         level waittill(#"crafting_table_completed");
         if (level.var_f5ad5bac >= 6) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x102>");
             #/
             zm_utility::giveachievement_wrapper("ZM_MANSION_CRAFTING", 1);
             break;
@@ -210,7 +209,7 @@ function function_e1ae38eb() {
     self endon(#"disconnect");
     self waittill(#"hash_510f9114e7a6300c");
     /#
-        iprintlnbold("<unknown string>" + self getentnum());
+        iprintlnbold("<dev string:x123>" + self getentnum());
     #/
     self zm_utility::giveachievement_wrapper("ZM_MANSION_SHOCKING", 0);
 }
@@ -224,7 +223,7 @@ function function_dd592c16() {
     self endon(#"disconnect");
     self waittill(#"hash_305ca852d958a7e1");
     /#
-        iprintlnbold("<unknown string>" + self getentnum());
+        iprintlnbold("<dev string:x152>" + self getentnum());
     #/
     self zm_utility::giveachievement_wrapper("ZM_MANSION_CLOCK", 0);
 }
@@ -238,7 +237,7 @@ function function_18c92a4f() {
     self endon(#"disconnect");
     self waittill(#"hash_148a0d55a59ee6a3");
     /#
-        iprintlnbold("<unknown string>" + self getentnum());
+        iprintlnbold("<dev string:x16f>" + self getentnum());
     #/
     self zm_utility::giveachievement_wrapper("ZM_MANSION_SHRINKING", 0);
 }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 
 #namespace zombie_death;
@@ -55,7 +54,7 @@ function flame_death_fx(localclientnum) {
             util::playfxontag(localclientnum, level._effect[#"character_fire_death_torso"], self, fire_tag);
         }
     } else {
-        println("<unknown string>");
+        println("<dev string:x38>");
     }
     if (isdefined(level._effect) && isdefined(level._effect[#"character_fire_death_sm"])) {
         if (self.archetype !== "parasite" && self.archetype !== "raps") {
@@ -80,7 +79,7 @@ function flame_death_fx(localclientnum) {
         }
         return;
     }
-    println("<unknown string>");
+    println("<dev string:xd9>");
 }
 
 // Namespace zombie_death/zombie_death

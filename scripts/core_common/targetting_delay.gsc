@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace targetting_delay;
 
 // Namespace targetting_delay/targetting_delay

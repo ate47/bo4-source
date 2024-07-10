@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_world_util.gsc;
 #using script_cb32d07c95e5628;
 #using scripts\mp_common\item_drop.gsc;
@@ -106,15 +105,15 @@ function private __init__() {
             waitframe(1);
         }
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x8e>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:xcc>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x11e>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x15e>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x19f>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x1ef>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x245>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x29c>");
         level thread function_eaba72c9();
     }
 

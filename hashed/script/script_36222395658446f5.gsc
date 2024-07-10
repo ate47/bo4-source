@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_tomahawk.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -216,7 +215,7 @@ function function_7d6c1805(e_player) {
     if (self.damageweapon == var_69e7f149) {
         e_player.var_b3076a2d++;
         /#
-            iprintln("<unknown string>" + e_player.var_b3076a2d);
+            iprintln("<dev string:x38>" + e_player.var_b3076a2d);
         #/
         if (e_player.var_b3076a2d >= 100) {
             level.var_3e7cd669 setvisibletoplayer(e_player);
@@ -732,7 +731,7 @@ function function_d291665f() {
             if (isdefined(self.var_8d32f494)) {
                 self.var_8d32f494++;
                 /#
-                    self function_d89318a3(self.var_8d32f494, "<unknown string>");
+                    self function_d89318a3(self.var_8d32f494, "<dev string:x59>");
                 #/
                 if (self.var_8d32f494 >= 100) {
                     self.var_8d32f494 = undefined;
@@ -744,7 +743,7 @@ function function_d291665f() {
             if (isdefined(self.var_78b705d8)) {
                 self.var_78b705d8++;
                 /#
-                    self function_d89318a3(self.var_78b705d8, "<unknown string>");
+                    self function_d89318a3(self.var_78b705d8, "<dev string:x65>");
                 #/
                 if (self.var_78b705d8 >= 100) {
                     self.var_78b705d8 = undefined;
@@ -756,7 +755,7 @@ function function_d291665f() {
             if (isdefined(self.var_27738b05)) {
                 self.var_27738b05++;
                 /#
-                    self function_d89318a3(self.var_27738b05, "<unknown string>");
+                    self function_d89318a3(self.var_27738b05, "<dev string:x71>");
                 #/
                 if (self.var_27738b05 >= 100) {
                     self.var_27738b05 = undefined;
@@ -1044,7 +1043,7 @@ function function_666a9223() {
             case 80:
             case 90:
             case 100:
-                iprintln("<unknown string>" + var_e818669b);
+                iprintln("<dev string:x7c>" + var_e818669b);
                 break;
             }
             break;
@@ -1060,7 +1059,7 @@ function function_666a9223() {
             case 80:
             case 90:
             case 100:
-                iprintln("<unknown string>" + var_e818669b);
+                iprintln("<dev string:x9a>" + var_e818669b);
                 break;
             }
             break;
@@ -1076,7 +1075,7 @@ function function_666a9223() {
             case 80:
             case 90:
             case 100:
-                iprintln("<unknown string>" + var_e818669b);
+                iprintln("<dev string:xb8>" + var_e818669b);
                 break;
             }
             break;
@@ -1089,12 +1088,12 @@ function function_666a9223() {
     // Size: 0xbc
     function function_9562e9c1() {
         zm_devgui::add_custom_devgui_callback(&function_cd9397ea);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xd5>");
+        adddebugcommand("<dev string:x118>");
+        adddebugcommand("<dev string:x16d>");
+        adddebugcommand("<dev string:x1c4>");
+        adddebugcommand("<dev string:x21f>");
+        adddebugcommand("<dev string:x26c>");
     }
 
     // Namespace namespace_7c0074b5/namespace_42cc2819
@@ -1133,7 +1132,7 @@ function function_666a9223() {
         level flag::set(#"hash_66f358c0066d77d8");
         level flag::set(#"spoon_quest_completed");
         level flag::set(#"hash_29dc018e9551ecf");
-        var_217fca51 = struct::get("<unknown string>");
+        var_217fca51 = struct::get("<dev string:x2b6>");
         mdl_spoon = var_217fca51.scene_ents[#"skeleton_arm"];
         mdl_spoon hide();
         foreach (player in level.players) {
@@ -1158,7 +1157,7 @@ function function_666a9223() {
                 player giveweapon(getweapon(#"zhield_spectral_dw"));
                 player switchtoweapon(w_current);
             }
-            player clientfield::set_to_player("<unknown string>", 0);
+            player clientfield::set_to_player("<dev string:x2c4>", 0);
         }
     }
 
@@ -1202,8 +1201,8 @@ function function_666a9223() {
             player flag::set(#"hash_465b23ced2029d95");
             player flag::set(#"hash_3aa12cac41d4ba98");
             player flag::set(#"hash_7317dfbae4fa0df5");
-            player clientfield::set_to_player("<unknown string>" + #"hash_11ff39a3100ac894", 0);
-            player clientfield::set_to_player("<unknown string>" + #"hash_37c33178198d54e4", 0);
+            player clientfield::set_to_player("<dev string:x2cf>" + #"hash_11ff39a3100ac894", 0);
+            player clientfield::set_to_player("<dev string:x2cf>" + #"hash_37c33178198d54e4", 0);
         }
     }
 
@@ -1221,13 +1220,13 @@ function function_666a9223() {
             player flag::set(#"hash_465b23ced2029d95");
             player flag::set(#"hash_3aa12cac41d4ba98");
             player flag::set(#"hash_7317dfbae4fa0df5");
-            player clientfield::set_to_player("<unknown string>" + #"hash_11ff39a3100ac894", 0);
-            player clientfield::set_to_player("<unknown string>" + #"hash_37c33178198d54e4", 0);
-            level.var_c52768f4 = getent("<unknown string>", "<unknown string>");
+            player clientfield::set_to_player("<dev string:x2cf>" + #"hash_11ff39a3100ac894", 0);
+            player clientfield::set_to_player("<dev string:x2cf>" + #"hash_37c33178198d54e4", 0);
+            level.var_c52768f4 = getent("<dev string:x2d2>", "<dev string:x2ed>");
             level.var_c52768f4 setinvisibletoall();
-            level.var_520d999a = getent("<unknown string>", "<unknown string>");
+            level.var_520d999a = getent("<dev string:x2fa>", "<dev string:x2ed>");
             level.var_520d999a setinvisibletoall();
-            level.var_78977eb8 = getent("<unknown string>", "<unknown string>");
+            level.var_78977eb8 = getent("<dev string:x315>", "<dev string:x2ed>");
             level.var_78977eb8 setinvisibletoall();
             player flag::set(#"hash_2218e030b30c77e2");
             player flag::set(#"hash_12000c871284e0b5");

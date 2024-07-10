@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_174ce72cc0f850;
 #using scripts\zm_common\zm_item_pickup.gsc;
 #using script_724752ab26bff81b;
@@ -190,8 +189,8 @@ function function_62970384() {
 function private function_9d66ea6f(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:x38>");
+            println(e_player.name + "<dev string:x38>");
         }
     #/
     level.var_23674b8f.e_player = e_player;
@@ -237,7 +236,7 @@ function private start_step_2() {
         level.var_23674b8f.var_80284ca5[level.var_23674b8f.var_80284ca5.size] = array::pop_front(var_95d7a612);
     }
     /#
-        iprintlnbold("<unknown string>" + level.var_23674b8f.var_80284ca5[0].script_noteworthy + "<unknown string>" + level.var_23674b8f.var_80284ca5[1].script_noteworthy);
+        iprintlnbold("<dev string:x65>" + level.var_23674b8f.var_80284ca5[0].script_noteworthy + "<dev string:x81>" + level.var_23674b8f.var_80284ca5[1].script_noteworthy);
     #/
     s_canister = level.var_23674b8f.var_5dca8c75;
     level.var_23674b8f.e_wisp = util::spawn_model(#"tag_origin", s_canister.origin - (0, 0, 64), s_canister.angles);
@@ -307,7 +306,7 @@ function private function_fe82c566() {
         playsoundatposition(#"evt_teleporter_go", var_838db546);
         self waittill(#"movedone");
         /#
-            iprintlnbold("<unknown string>" + level.var_23674b8f.var_80284ca5[level.var_23674b8f.var_c8a6d360].script_noteworthy);
+            iprintlnbold("<dev string:x89>" + level.var_23674b8f.var_80284ca5[level.var_23674b8f.var_c8a6d360].script_noteworthy);
         #/
     }
 }
@@ -346,7 +345,7 @@ function private function_92344a03() {
             e_wisp clientfield::set("" + #"hash_1e4555a911a24ab7", 0);
             var_135425aa = 1;
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xa4>");
             #/
         }
         self waittill(#"teleporting_done");
@@ -449,8 +448,8 @@ function private function_a66f0de2() {
 function private function_b9a31cb(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:xc1>");
+            println(e_player.name + "<dev string:xc1>");
         }
     #/
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mk2y_ammo", 2, e_player);
@@ -556,8 +555,8 @@ function private function_cba90c3c() {
 function private complete_quest() {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(level.var_23674b8f.e_player.name + "<unknown string>");
-            println(level.var_23674b8f.e_player.name + "<unknown string>");
+            iprintlnbold(level.var_23674b8f.e_player.name + "<dev string:xde>");
+            println(level.var_23674b8f.e_player.name + "<dev string:xde>");
         }
     #/
     level.var_23674b8f.e_player = undefined;

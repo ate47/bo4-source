@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_a0dec417269b39e;
 #using script_7893277eec698972;
 #using scripts\zm\zm_zodt8_tutorial.gsc;
@@ -1339,7 +1338,7 @@ function function_d2ba8baa() {
                 if (s_loc.zone_name === str_player_zone) {
                     /#
                         if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                            iprintlnbold("zone_promenade_deck" + s_loc.zone_name + "Shot 2");
+                            iprintlnbold("<dev string:x38>" + s_loc.zone_name + "<dev string:x55>");
                         }
                     #/
                     if (!isdefined(a_s_spawn_locs)) {
@@ -1360,7 +1359,7 @@ function function_d2ba8baa() {
                     if (var_504a6ed6.script_noteworthy === "stoker_location") {
                         /#
                             if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                                iprintlnbold("water_pump_aft");
+                                iprintlnbold("<dev string:x6d>");
                             }
                         #/
                         if (!isdefined(a_s_spawn_locs)) {
@@ -1385,7 +1384,7 @@ function function_d2ba8baa() {
                         if (var_504a6ed6.script_noteworthy === "stoker_location") {
                             /#
                                 if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                                    iprintlnbold("zone_promenade_deck" + s_loc.zone_name + "connect_cargo_to_mail_room");
+                                    iprintlnbold("<dev string:x38>" + s_loc.zone_name + "<dev string:xb5>");
                                 }
                             #/
                             if (!isdefined(a_s_spawn_locs)) {
@@ -1402,7 +1401,7 @@ function function_d2ba8baa() {
     } else {
         /#
             if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                iprintlnbold("vox_plr_3_exert_pain");
+                iprintlnbold("<dev string:xd6>");
             }
         #/
     }
@@ -1411,7 +1410,7 @@ function function_d2ba8baa() {
     }
     /#
         if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x102>");
         }
     #/
     return undefined;
@@ -1427,7 +1426,7 @@ function function_807f41e9() {
     if (!isinarray(var_aab9fdf2, var_a1d863b2)) {
         /#
             if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                iprintlnbold("<unknown string>" + (isdefined(var_a1d863b2) ? var_a1d863b2 : "<unknown string>"));
+                iprintlnbold("<dev string:x129>" + (isdefined(var_a1d863b2) ? var_a1d863b2 : "<dev string:x153>"));
             }
         #/
         return true;
@@ -1439,7 +1438,7 @@ function function_807f41e9() {
     if (gettime() - self.var_3410b290 <= 200) {
         /#
             if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                iprintlnbold("<unknown string>" + (ishash(var_a1d863b2) ? function_9e72a96(var_a1d863b2) : var_a1d863b2));
+                iprintlnbold("<dev string:x164>" + (ishash(var_a1d863b2) ? function_9e72a96(var_a1d863b2) : var_a1d863b2));
             }
         #/
         return true;
@@ -1570,7 +1569,7 @@ function function_994c6ce1() {
     } else {
         /#
             if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x196>");
             }
         #/
     }

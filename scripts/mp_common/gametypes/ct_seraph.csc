@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_core.csc;
 #using scripts\core_common\struct.csc;
 #using scripts\core_common\clientfield_shared.csc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_death.gsc;
 #using scripts\zm_common\zm_traps.gsc;
 #using scripts\zm_common\zm_stats.gsc;

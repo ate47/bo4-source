@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_utils.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\trigger_shared.gsc;
@@ -177,7 +176,7 @@ function function_56ed19d9() {
         wait(self.var_27405e0f);
     } else {
         /#
-            iprintlnbold("<unknown string>" + self.var_8701e993);
+            iprintlnbold("<dev string:x38>" + self.var_8701e993);
         #/
     }
     self notify(self.var_b9d55f30);
@@ -591,14 +590,14 @@ function function_b86d3b7d() {
     // Size: 0x138
     function function_dfd7add4() {
         sessionmode = currentsessionmode();
-        setdvar(#"hash_31b5762ac1fb40cf", "<unknown string>");
+        setdvar(#"hash_31b5762ac1fb40cf", "<dev string:x77>");
         if (sessionmode != 4) {
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x7a>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_31b5762ac1fb40cf", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_31b5762ac1fb40cf", "<dev string:x77>");
+            if (cmd == "<dev string:x77>") {
                 continue;
             }
             e_player = level.players[0];
@@ -606,7 +605,7 @@ function function_b86d3b7d() {
             case #"stub":
                 break;
             }
-            setdvar(#"hash_31b5762ac1fb40cf", "<unknown string>");
+            setdvar(#"hash_31b5762ac1fb40cf", "<dev string:x77>");
         }
     }
 

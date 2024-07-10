@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\character_unlock_nikolai_fixup.gsc;
 #using scripts\wz_common\character_unlock_fixup.gsc;
 #using scripts\wz_common\character_unlock.gsc;
@@ -188,8 +187,8 @@ function private function_c816ea5b() {
     // Checksum 0x4f396fc2, Offset: 0xa70
     // Size: 0x7e
     function function_3fbc7157(origin, radius) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x38>");
+        self endon("<dev string:x38>");
         while (true) {
             circle(origin + (0, 0, 10), radius, (1, 0, 0), 0, 1, 1);
             waitframe(1);

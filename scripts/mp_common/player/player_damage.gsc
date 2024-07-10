@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\vehicle.gsc;
 #using scripts\mp_common\bb.gsc;
 #using scripts\mp_common\challenges.gsc;
@@ -285,7 +284,7 @@ function private function_a31ab50c(var_7c61c7a1) {
 function private function_961fe569(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, boneindex, vsurfacenormal) {
     pixbeginevent(#"hash_161ca565ac88c256");
     if (!level.console && idflags & 8 && isplayer(eattacker)) {
-        println("<unknown string>" + self getentitynumber() + "<unknown string>" + self.health + "<unknown string>" + eattacker.clientid + "<unknown string>" + isplayer(einflictor) + "<unknown string>" + idamage + "<unknown string>" + shitloc);
+        println("<dev string:x38>" + self getentitynumber() + "<dev string:x46>" + self.health + "<dev string:x51>" + eattacker.clientid + "<dev string:x5e>" + isplayer(einflictor) + "<dev string:x76>" + idamage + "<dev string:x81>" + shitloc);
         eattacker stats::function_dad108fa(#"penetration_shots", 1);
     }
     if (getdvarstring(#"scr_csmode") != "") {
@@ -450,7 +449,7 @@ function private player_damage_log(einflictor, eattacker, idamage, idflags, smea
     pixbeginevent(#"playerdamage log");
     /#
         if (getdvarint(#"g_debugdamage", 0)) {
-            println("<unknown string>" + self getentitynumber() + "<unknown string>" + self.health + "<unknown string>" + eattacker.clientid + "<unknown string>" + isplayer(einflictor) + "<unknown string>" + idamage + "<unknown string>" + shitloc);
+            println("<dev string:x8c>" + self getentitynumber() + "<dev string:x46>" + self.health + "<dev string:x51>" + eattacker.clientid + "<dev string:x5e>" + isplayer(einflictor) + "<dev string:x76>" + idamage + "<dev string:x81>" + shitloc);
         }
     #/
     if (self.sessionstate != "dead") {
@@ -858,7 +857,7 @@ function private modify_player_damage(einflictor, eattacker, idamage, idflags, s
     if (isdefined(overrideplayerdamage)) {
         idamage = self [[ overrideplayerdamage ]](einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex);
     }
-    assert(isdefined(idamage), "<unknown string>");
+    assert(isdefined(idamage), "<dev string:x96>");
     if (isdefined(eattacker)) {
         idamage = loadout::cac_modified_damage(self, eattacker, idamage, smeansofdeath, weapon, einflictor, shitloc);
         if (isdefined(eattacker.pickup_damage_scale) && eattacker.pickup_damage_scale_time > gettime()) {

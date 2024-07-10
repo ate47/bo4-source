@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_customgame.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_powerups.gsc;
@@ -118,7 +117,7 @@ function function_94cd396e(powerup_override, powerup_team, powerup_location, pow
     if (isdefined(powerup_player)) {
         self.powerup_player = powerup_player;
     } else {
-        assert(!(isdefined(struct.player_specific) && struct.player_specific), "<unknown string>");
+        assert(!(isdefined(struct.player_specific) && struct.player_specific), "<dev string:x38>");
     }
     self.powerup_name = struct.powerup_name;
     self.hint = struct.hint;

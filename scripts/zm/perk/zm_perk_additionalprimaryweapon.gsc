@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\perk\zm_perk_mod_additionalprimaryweapon.gsc;
 #using scripts\zm_common\trials\zm_trial_disable_perks.gsc;
 #using scripts\zm_common\zm_trial.gsc;

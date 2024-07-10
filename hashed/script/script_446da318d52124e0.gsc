@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
 
@@ -51,7 +50,7 @@ class cct_timer_mod_ticks : cluielem {
             player clientfield::function_9bf78ef8(var_47e79fc, "_state", 6);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks

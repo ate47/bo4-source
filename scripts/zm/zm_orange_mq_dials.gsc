@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_pablo.gsc;
 #using scripts\zm_common\zm_ui_inventory.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -56,14 +55,14 @@ function function_77ed3bab(var_5ea5c94d) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>");
-                    println("<unknown string>");
+                    iprintlnbold("<dev string:x38>");
+                    println("<dev string:x38>");
                 }
             }
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>");
-                    println("<unknown string>");
+                    iprintlnbold("<dev string:x4c>");
+                    println("<dev string:x4c>");
                 }
             }
         #/
@@ -159,8 +158,8 @@ function private function_1e5c0d3b() {
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>" + self.script_noteworthy + "<unknown string>");
-                        println("<unknown string>" + self.script_noteworthy + "<unknown string>");
+                        iprintlnbold("<dev string:x69>" + self.script_noteworthy + "<dev string:x71>");
+                        println("<dev string:x69>" + self.script_noteworthy + "<dev string:x71>");
                     }
                 }
             #/

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace wz_loot_homunculus;
 
 // Namespace wz_loot_homunculus/event_9673dc9a

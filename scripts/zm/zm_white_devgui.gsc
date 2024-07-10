@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_mee.gsc;
 #using script_724752ab26bff81b;
 #using scripts\zm\zm_white_special_rounds.gsc;
@@ -32,7 +31,7 @@
     // Checksum 0xf8f7f3ef, Offset: 0xf0
     // Size: 0x6c
     function private function_2639784() {
-        if (!level flag::get("<unknown string>")) {
+        if (!level flag::get("<dev string:x38>")) {
             zm_devgui::zombie_devgui_open_sesame();
         }
         level.old_dog_spawn = &zombie_dog_util::function_62db7b1c;
@@ -59,18 +58,18 @@
     // Checksum 0x31b3069f, Offset: 0x278
     // Size: 0x470
     function private devgui() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x43>");
+        adddebugcommand("<dev string:x97>");
+        adddebugcommand("<dev string:xea>");
+        adddebugcommand("<dev string:x141>");
+        adddebugcommand("<dev string:x191>");
+        adddebugcommand("<dev string:x1e5>");
+        adddebugcommand("<dev string:x245>");
+        adddebugcommand("<dev string:x2a5>");
+        adddebugcommand("<dev string:x305>");
         while (true) {
             waitframe(1);
-            str_command = getdvarstring(#"zm_white_debug_cmd", "<unknown string>");
+            str_command = getdvarstring(#"zm_white_debug_cmd", "<dev string:x365>");
             switch (str_command) {
             case #"perk1":
                 function_3552f301();
@@ -86,34 +85,34 @@
                 namespace_a01a2431::function_256cc56e();
                 break;
             case #"cheat1":
-                iprintlnbold("<unknown string>" + level.var_276bd207[0] + level.var_276bd207[1] + level.var_276bd207[2] + level.var_276bd207[3]);
+                iprintlnbold("<dev string:x368>" + level.var_276bd207[0] + level.var_276bd207[1] + level.var_276bd207[2] + level.var_276bd207[3]);
                 break;
             case #"hash_67d502f654392103":
                 e_player = getplayers()[0];
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 0, e_player);
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 2, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x376>", 0, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x38e>", 2, e_player);
                 e_player.var_f7694097 = 0;
                 break;
             case #"hash_67d510f6543938cd":
                 e_player = getplayers()[0];
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 1, e_player);
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 2, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x376>", 1, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x3a6>", 2, e_player);
                 e_player.var_f7694097 = 1;
                 break;
             case #"hash_67d50ff65439371a":
                 e_player = getplayers()[0];
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 2, e_player);
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 2, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x376>", 2, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x3be>", 2, e_player);
                 e_player.var_f7694097 = 2;
                 break;
             case #"hash_67d50ef654393567":
                 e_player = getplayers()[0];
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 3, e_player);
-                zm_ui_inventory::function_7df6bb60("<unknown string>", 2, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x376>", 3, e_player);
+                zm_ui_inventory::function_7df6bb60("<dev string:x3d6>", 2, e_player);
                 e_player.var_f7694097 = 3;
                 break;
             }
-            setdvar(#"zm_white_debug_cmd", "<unknown string>");
+            setdvar(#"zm_white_debug_cmd", "<dev string:x365>");
         }
     }
 

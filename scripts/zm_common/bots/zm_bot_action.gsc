@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\ai_shared.gsc;
 #using scripts\core_common\bots\bot_action.gsc;
@@ -125,7 +124,7 @@ function function_5f02aeee(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x38>";
         #/
         return undefined;
     }
@@ -136,7 +135,7 @@ function function_5f02aeee(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x5c>";
         #/
         return undefined;
     }
@@ -147,7 +146,7 @@ function function_5f02aeee(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x6f>";
         #/
         return undefined;
     }
@@ -158,7 +157,7 @@ function function_5f02aeee(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x7f>";
         #/
         return undefined;
     }
@@ -169,7 +168,7 @@ function function_5f02aeee(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x8a>";
         #/
         return undefined;
     }
@@ -205,7 +204,7 @@ function function_aa4daa54(actionparams) {
                     } else if (!isarray(actionparams.debug)) {
                         actionparams.debug = array(actionparams.debug);
                     }
-                    actionparams.debug[actionparams.debug.size] = "<unknown string>";
+                    actionparams.debug[actionparams.debug.size] = "<dev string:xa6>";
                 #/
                 return undefined;
             }
@@ -218,7 +217,7 @@ function function_aa4daa54(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xc0>";
         #/
         return undefined;
     }
@@ -231,7 +230,7 @@ function function_aa4daa54(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xd3>";
         #/
         return undefined;
     }
@@ -261,7 +260,7 @@ function function_f4707540(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xee>";
         #/
         return undefined;
     }
@@ -280,7 +279,7 @@ function function_ae19f70f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x107>";
         #/
         return undefined;
     }
@@ -291,7 +290,7 @@ function function_ae19f70f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x116>";
         #/
         return undefined;
     }
@@ -302,7 +301,7 @@ function function_ae19f70f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x133>";
         #/
         return undefined;
     }
@@ -316,7 +315,7 @@ function function_ae19f70f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x145>";
         #/
         return undefined;
     }
@@ -327,7 +326,7 @@ function function_ae19f70f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x152>";
         #/
         return undefined;
     }
@@ -404,7 +403,7 @@ function function_b4d8b7d6(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x107>";
         #/
         return undefined;
     }
@@ -415,7 +414,7 @@ function function_b4d8b7d6(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x169>";
         #/
         return undefined;
     }
@@ -426,7 +425,7 @@ function function_b4d8b7d6(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x133>";
         #/
         return undefined;
     }
@@ -440,7 +439,7 @@ function function_b4d8b7d6(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x145>";
         #/
         return undefined;
     }
@@ -451,7 +450,7 @@ function function_b4d8b7d6(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x152>";
         #/
         return undefined;
     }
@@ -552,7 +551,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x107>";
         #/
         return undefined;
     }
@@ -563,7 +562,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x17e>";
         #/
         return undefined;
     }
@@ -575,7 +574,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x19c>";
         #/
         return undefined;
     }
@@ -586,7 +585,7 @@ function function_296516b4(actionparams) {
         } else if (!isarray(actionparams.debug)) {
             actionparams.debug = array(actionparams.debug);
         }
-        actionparams.debug[actionparams.debug.size] = "<unknown string>" + revivetarget.name;
+        actionparams.debug[actionparams.debug.size] = "<dev string:x1af>" + revivetarget.name;
     #/
     if (!isdefined(revivetarget.revivetrigger)) {
         /#
@@ -595,7 +594,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1ba>";
         #/
         return undefined;
     }
@@ -606,7 +605,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1ce>";
         #/
         return undefined;
     }
@@ -617,7 +616,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1e5>";
         #/
         return;
     }
@@ -629,7 +628,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1f5>";
         #/
         return undefined;
     }
@@ -641,7 +640,7 @@ function function_296516b4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x203>";
         #/
         return undefined;
     }

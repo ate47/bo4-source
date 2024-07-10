@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\userspawnselection.gsc;
 #using scripts\mp_common\spawnbeacon.gsc;
@@ -553,11 +552,11 @@ function compare_zone_indicies(zone_a, zone_b) {
         return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
-        println("kothActiveDialogBuffer" + zone_a.origin);
+        println("<dev string:x38>" + zone_a.origin);
         return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
-        println("kothActiveDialogBuffer" + zone_b.origin);
+        println("<dev string:x38>" + zone_b.origin);
         return false;
     }
     if (script_index_a > script_index_b) {
@@ -1267,7 +1266,7 @@ function private credit_player(player, string, capturetime, capture_team, lastca
         return;
     }
     /#
-        player iprintlnbold("NA");
+        player iprintlnbold("<dev string:x60>");
     #/
 }
 

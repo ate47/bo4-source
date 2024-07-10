@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_maldives_sound;
 
 // Namespace mp_maldives_sound/mp_maldives_sound

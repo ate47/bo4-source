@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\core_common\ai\strategic_command.gsc;
 #using scripts\core_common\ai\systems\planner_blackboard.gsc;
@@ -54,38 +53,38 @@ function private function_bf7acc22(squad) {
                 xoffset = 200;
                 yoffset = 10;
                 textscale = 0.7;
-                bots = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
-                bottext = "<unknown string>";
+                bots = plannersquadutility::getblackboardattribute(squad, "<dev string:x38>");
+                bottext = "<dev string:x45>";
                 foreach (botentry in bots) {
                     bot = botentry[#"__unsafe__"][#"bot"];
                     if (strategiccommandutility::isvalidbot(bot)) {
-                        bottext += "<unknown string>" + bot getentitynumber() + "<unknown string>" + bot.name;
+                        bottext += "<dev string:x48>" + bot getentitynumber() + "<dev string:x48>" + bot.name;
                     }
                 }
-                team = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
+                team = plannersquadutility::getblackboardattribute(squad, "<dev string:x4c>");
                 side = strategiccommandutility::function_a1edb007(team);
-                recordtext(side + bottext, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext(side + bottext, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x53>", textscale);
                 xoffset += 15;
                 yoffset += 13;
-                timing = "<unknown string>" + squad.planstarttime + "<unknown string>" + squad.planfinishtime + "<unknown string>" + int((squad.planfinishtime - squad.planstarttime) / float(function_60d95f53()) / 1000 * 1000 + 1) + "<unknown string>";
-                recordtext(timing, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                timing = "<dev string:x60>" + squad.planstarttime + "<dev string:x69>" + squad.planfinishtime + "<dev string:x75>" + int((squad.planfinishtime - squad.planstarttime) / float(function_60d95f53()) / 1000 * 1000 + 1) + "<dev string:x81>";
+                recordtext(timing, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x53>", textscale);
                 xoffset += 15;
-                target = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
+                target = plannersquadutility::getblackboardattribute(squad, "<dev string:x85>");
                 if (isdefined(target)) {
                     var_3d879b56 = target[#"strategy"];
                     if (isdefined(var_3d879b56)) {
                         if (isdefined(var_3d879b56.sdebug)) {
                             foreach (str in var_3d879b56.sdebug) {
                                 yoffset += 13;
-                                recordtext(str, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                                recordtext(str, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x53>", textscale);
                             }
                             xoffset += 15;
                         }
-                        var_45c7238e = function_101999aa(var_3d879b56, "<unknown string>", array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>"), position + (500, 10, 0), (1, 1, 1), "<unknown string>", textscale);
-                        function_101999aa(var_3d879b56, "<unknown string>", array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>"), position + (500, 10 + var_45c7238e, 0), (1, 1, 1), "<unknown string>", textscale);
+                        var_45c7238e = function_101999aa(var_3d879b56, "<dev string:x8e>", array("<dev string:x9c>", "<dev string:xaf>", "<dev string:xc4>", "<dev string:xdc>", "<dev string:xf1>", "<dev string:x105>", "<dev string:x117>", "<dev string:x130>"), position + (500, 10, 0), (1, 1, 1), "<dev string:x53>", textscale);
+                        function_101999aa(var_3d879b56, "<dev string:x149>", array("<dev string:x157>", "<dev string:x16a>", "<dev string:x17f>", "<dev string:x197>", "<dev string:x1ac>", "<dev string:x1c0>", "<dev string:x1d2>", "<dev string:x1eb>"), position + (500, 10 + var_45c7238e, 0), (1, 1, 1), "<dev string:x53>", textscale);
                         targetpos = undefined;
                         targettrigger = undefined;
-                        if (target[#"type"] == "<unknown string>") {
+                        if (target[#"type"] == "<dev string:x204>") {
                             entity = target[#"__unsafe__"][#"entity"];
                             if (isdefined(entity)) {
                                 targetpos = entity.origin;
@@ -96,57 +95,57 @@ function private function_bf7acc22(squad) {
                                     }
                                 }
                             }
-                        } else if (target[#"type"] == "<unknown string>" || target[#"type"] == "<unknown string>") {
+                        } else if (target[#"type"] == "<dev string:x211>" || target[#"type"] == "<dev string:x21b>") {
                             missioncomponent = target[#"__unsafe__"][#"mission_component"];
                             targetpos = missioncomponent.origin;
                             component = target[#"__unsafe__"][#"component"];
                             targettrigger = component.var_2956bff4;
                             if (isdefined(component.var_6bc907c4)) {
-                                function_f301de44(component.var_6bc907c4, (1, 0, 1), "<unknown string>");
-                                recordline(targetpos, component.var_6bc907c4.origin, (1, 0, 1), "<unknown string>");
-                                record3dtext("<unknown string>", component.var_6bc907c4.origin, (1, 0, 1), "<unknown string>", textscale);
+                                function_f301de44(component.var_6bc907c4, (1, 0, 1), "<dev string:x53>");
+                                recordline(targetpos, component.var_6bc907c4.origin, (1, 0, 1), "<dev string:x53>");
+                                record3dtext("<dev string:x224>", component.var_6bc907c4.origin, (1, 0, 1), "<dev string:x53>", textscale);
                             }
-                        } else if (target[#"type"] == "<unknown string>") {
+                        } else if (target[#"type"] == "<dev string:x231>") {
                             missioncomponent = target[#"__unsafe__"][#"mission_component"];
                             targetpos = missioncomponent.origin;
                             component = target[#"__unsafe__"][#"component"];
                             targettrigger = component.var_cc67d976;
-                        } else if (target[#"type"] == "<unknown string>") {
+                        } else if (target[#"type"] == "<dev string:x23f>") {
                             missioncomponent = target[#"__unsafe__"][#"mission_component"];
                             targetpos = missioncomponent.origin;
                             component = target[#"__unsafe__"][#"component"];
                             targettrigger = component.var_c68dc48c;
-                        } else if (target[#"type"] == "<unknown string>") {
+                        } else if (target[#"type"] == "<dev string:x246>") {
                             bundle = target[#"__unsafe__"][#"bundle"];
                             targetpos = bundle.var_27726d51.origin;
                         } else {
                             yoffset += 13;
-                            recordtext("<unknown string>" + target[#"type"], position + (xoffset, yoffset, 0), (1, 0, 0), "<unknown string>", textscale);
+                            recordtext("<dev string:x254>" + target[#"type"], position + (xoffset, yoffset, 0), (1, 0, 0), "<dev string:x53>", textscale);
                         }
                         if (isdefined(targetpos)) {
                             recordsphere(targetpos, 20, (1, 0, 1));
-                            record3dtext("<unknown string>" + target[#"type"], targetpos + (0, 0, 21), (1, 0, 1), "<unknown string>", textscale);
+                            record3dtext("<dev string:x280>" + target[#"type"], targetpos + (0, 0, 21), (1, 0, 1), "<dev string:x53>", textscale);
                             if (isdefined(targettrigger)) {
-                                function_f301de44(targettrigger, (1, 0, 1), "<unknown string>");
-                                recordline(targetpos, targettrigger.origin, (1, 0, 1), "<unknown string>");
-                                record3dtext("<unknown string>", targettrigger.origin, (1, 0, 1), "<unknown string>", textscale);
+                                function_f301de44(targettrigger, (1, 0, 1), "<dev string:x53>");
+                                recordline(targetpos, targettrigger.origin, (1, 0, 1), "<dev string:x53>");
+                                record3dtext("<dev string:x28a>", targettrigger.origin, (1, 0, 1), "<dev string:x53>", textscale);
                             }
                         } else {
                             yoffset += 13;
-                            recordtext("<unknown string>", position + (xoffset, yoffset, 0), (1, 0, 0), "<unknown string>", textscale);
+                            recordtext("<dev string:x29a>", position + (xoffset, yoffset, 0), (1, 0, 0), "<dev string:x53>", textscale);
                         }
                     }
                 } else {
                     yoffset += 13;
-                    recordtext("<unknown string>", position + (xoffset, yoffset, 0), (1, 0, 0), "<unknown string>", textscale);
+                    recordtext("<dev string:x2af>", position + (xoffset, yoffset, 0), (1, 0, 0), "<dev string:x53>", textscale);
                 }
                 for (index = 0; index < squad.plan.size; index++) {
                     yoffset += 13;
-                    recordtext(function_9e72a96(squad.plan[index].name), position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                    recordtext(function_9e72a96(squad.plan[index].name), position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x53>", textscale);
                 }
             }
             if (getdvarint(#"ai_debuggoldenpath", 0) == squadid) {
-                escortpoi = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
+                escortpoi = plannersquadutility::getblackboardattribute(squad, "<dev string:x2bb>");
             }
             waitframe(1);
         }
@@ -163,7 +162,7 @@ function private function_bf7acc22(squad) {
         xoffset += 15;
         foreach (field in fieldlist) {
             yoffset += 13;
-            recordtext(field + "<unknown string>" + strategy.(field), position + (xoffset, yoffset, 0), color, channel, textscale);
+            recordtext(field + "<dev string:x2c8>" + strategy.(field), position + (xoffset, yoffset, 0), color, channel, textscale);
         }
         yoffset += 13;
         return yoffset;
@@ -176,7 +175,7 @@ function private function_bf7acc22(squad) {
     function private function_f301de44(trigger, color, channel) {
         maxs = trigger getmaxs();
         mins = trigger getmins();
-        if (issubstr(trigger.classname, "<unknown string>")) {
+        if (issubstr(trigger.classname, "<dev string:x2cd>")) {
             radius = max(maxs[0], maxs[1]);
             top = trigger.origin + (0, 0, maxs[2]);
             bottom = trigger.origin + (0, 0, mins[2]);
@@ -196,8 +195,8 @@ function private function_bf7acc22(squad) {
 // Size: 0x2ce
 function private _executeplan(squad) {
     assert(isdefined(squad));
-    assert(isdefined(squad.plan), "<unknown string>");
-    assert(isdefined(squad.plan.size), "<unknown string>");
+    assert(isdefined(squad.plan), "<dev string:x2d6>");
+    assert(isdefined(squad.plan.size), "<dev string:x307>");
     if (!isdefined(squad.currentplanindex)) {
         squad.currentplanindex = 0;
     }

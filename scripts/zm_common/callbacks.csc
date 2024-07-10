@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_sticky_grenade.csc;
 #using scripts\weapons\acid_bomb.csc;
 #using scripts\core_common\vehicle_shared.csc;
@@ -49,7 +48,7 @@ function set_default_callbacks() {
 // Checksum 0x2679ffaf, Offset: 0x248
 // Size: 0x78
 function localclientconnect(localclientnum) {
-    println("<unknown string>" + localclientnum);
+    println("<dev string:x38>" + localclientnum);
     callback(#"on_localclient_connect", localclientnum);
     if (isdefined(level.charactercustomizationsetup)) {
         [[ level.charactercustomizationsetup ]](localclientnum);
@@ -76,7 +75,7 @@ function playerspawned(localclientnum) {
         self thread [[ level._playerspawned_override ]](localclientnum);
         return;
     }
-    println("<unknown string>");
+    println("<dev string:x67>");
     if (self function_21c0fa55()) {
         callback(#"on_localplayer_spawned", localclientnum);
     }
@@ -101,7 +100,7 @@ function entityspawned(localclientnum) {
         return;
     }
     if (!isdefined(self.type)) {
-        println("<unknown string>");
+        println("<dev string:x78>");
         return;
     }
     if (self.type == "missile") {

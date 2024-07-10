@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.gsc;
 #using scripts\mp_common\player\player_utils.gsc;
 #using scripts\mp_common\gametypes\battlechatter.gsc;
@@ -957,7 +956,7 @@ function function_cd679760(startnode, destnodes) {
     self endon(#"flying", #"crashing", #"leaving", #"death");
     bundle = getscriptbundle("killstreak_ac130");
     nextnode = getent(startnode.target, "targetname");
-    assert(isdefined(nextnode), "<unknown string>");
+    assert(isdefined(nextnode), "<dev string:x38>");
     self setspeed(150, 80);
     self setneargoalnotifydist(100);
     self setgoal(nextnode.origin + (0, 0, 0), 1);
@@ -1163,7 +1162,7 @@ function getoriginoffsets(goalnode) {
     maxtraces = 40;
     traceoffset = (0, 0, -196);
     for (traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self); distancesquared(traceorigin[#"position"], endorigin + traceoffset) > 10 && numtraces < maxtraces; traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self)) {
-        println("<unknown string>" + distancesquared(traceorigin[#"position"], endorigin + traceoffset));
+        println("<dev string:x6d>" + distancesquared(traceorigin[#"position"], endorigin + traceoffset));
         if (startorigin[2] < endorigin[2]) {
             startorigin += (0, 0, 128);
         } else if (startorigin[2] > endorigin[2]) {

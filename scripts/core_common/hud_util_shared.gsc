@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace hud;
 
 /#
@@ -20,7 +19,7 @@
             self setpoint(self.point, self.relativepoint, self.xoffset, self.yoffset);
             return;
         }
-        self setpoint("<unknown string>");
+        self setpoint("<dev string:x38>");
     }
 
     // Namespace hud/hud_util_shared
@@ -75,98 +74,98 @@
         }
         self.yoffset = yoffset;
         self.point = point;
-        self.alignx = "<unknown string>";
-        self.aligny = "<unknown string>";
+        self.alignx = "<dev string:x3e>";
+        self.aligny = "<dev string:x47>";
         switch (point) {
         case #"center":
             break;
         case #"top":
-            self.aligny = "<unknown string>";
+            self.aligny = "<dev string:x50>";
             break;
         case #"bottom":
-            self.aligny = "<unknown string>";
+            self.aligny = "<dev string:x56>";
             break;
         case #"left":
-            self.alignx = "<unknown string>";
+            self.alignx = "<dev string:x5f>";
             break;
         case #"right":
-            self.alignx = "<unknown string>";
+            self.alignx = "<dev string:x66>";
             break;
         case #"topright":
         case #"top_right":
-            self.aligny = "<unknown string>";
-            self.alignx = "<unknown string>";
+            self.aligny = "<dev string:x50>";
+            self.alignx = "<dev string:x66>";
             break;
         case #"topleft":
         case #"top_left":
-            self.aligny = "<unknown string>";
-            self.alignx = "<unknown string>";
+            self.aligny = "<dev string:x50>";
+            self.alignx = "<dev string:x5f>";
             break;
         case #"topcenter":
-            self.aligny = "<unknown string>";
-            self.alignx = "<unknown string>";
+            self.aligny = "<dev string:x50>";
+            self.alignx = "<dev string:x3e>";
             break;
         case #"bottom_right":
         case #"bottom right":
-            self.aligny = "<unknown string>";
-            self.alignx = "<unknown string>";
+            self.aligny = "<dev string:x56>";
+            self.alignx = "<dev string:x66>";
             break;
         case #"bottom left":
         case #"bottom_left":
-            self.aligny = "<unknown string>";
-            self.alignx = "<unknown string>";
+            self.aligny = "<dev string:x56>";
+            self.alignx = "<dev string:x5f>";
             break;
         default:
-            println("<unknown string>" + point);
+            println("<dev string:x6e>" + point);
             break;
         }
         if (!isdefined(relativepoint)) {
             relativepoint = point;
         }
         self.relativepoint = relativepoint;
-        relativex = "<unknown string>";
-        relativey = "<unknown string>";
+        relativex = "<dev string:x3e>";
+        relativey = "<dev string:x47>";
         switch (relativepoint) {
         case #"center":
             break;
         case #"top":
-            relativey = "<unknown string>";
+            relativey = "<dev string:x50>";
             break;
         case #"bottom":
-            relativey = "<unknown string>";
+            relativey = "<dev string:x56>";
             break;
         case #"left":
-            relativex = "<unknown string>";
+            relativex = "<dev string:x5f>";
             break;
         case #"right":
-            relativex = "<unknown string>";
+            relativex = "<dev string:x66>";
             break;
         case #"topright":
         case #"top_right":
-            relativey = "<unknown string>";
-            relativex = "<unknown string>";
+            relativey = "<dev string:x50>";
+            relativex = "<dev string:x66>";
             break;
         case #"topleft":
         case #"top_left":
-            relativey = "<unknown string>";
-            relativex = "<unknown string>";
+            relativey = "<dev string:x50>";
+            relativex = "<dev string:x5f>";
             break;
         case #"topcenter":
-            relativey = "<unknown string>";
-            relativex = "<unknown string>";
+            relativey = "<dev string:x50>";
+            relativex = "<dev string:x3e>";
             break;
         case #"bottom_right":
         case #"bottom right":
-            relativey = "<unknown string>";
-            relativex = "<unknown string>";
+            relativey = "<dev string:x56>";
+            relativex = "<dev string:x66>";
             break;
         case #"bottom left":
         case #"bottom_left":
-            relativey = "<unknown string>";
-            relativex = "<unknown string>";
+            relativey = "<dev string:x56>";
+            relativex = "<dev string:x5f>";
             break;
         default:
-            println("<unknown string>" + relativepoint);
+            println("<dev string:xa0>" + relativepoint);
             break;
         }
         if (element == level.uiparent) {
@@ -179,16 +178,16 @@
         if (relativex == element.alignx) {
             offsetx = 0;
             xfactor = 0;
-        } else if (relativex == "<unknown string>" || element.alignx == "<unknown string>") {
+        } else if (relativex == "<dev string:x3e>" || element.alignx == "<dev string:x3e>") {
             offsetx = int(element.width / 2);
-            if (relativex == "<unknown string>" || element.alignx == "<unknown string>") {
+            if (relativex == "<dev string:x5f>" || element.alignx == "<dev string:x66>") {
                 xfactor = -1;
             } else {
                 xfactor = 1;
             }
         } else {
             offsetx = element.width;
-            if (relativex == "<unknown string>") {
+            if (relativex == "<dev string:x5f>") {
                 xfactor = -1;
             } else {
                 xfactor = 1;
@@ -198,16 +197,16 @@
         if (relativey == element.aligny) {
             offsety = 0;
             yfactor = 0;
-        } else if (relativey == "<unknown string>" || element.aligny == "<unknown string>") {
+        } else if (relativey == "<dev string:x47>" || element.aligny == "<dev string:x47>") {
             offsety = int(element.height / 2);
-            if (relativey == "<unknown string>" || element.aligny == "<unknown string>") {
+            if (relativey == "<dev string:x50>" || element.aligny == "<dev string:x56>") {
                 yfactor = -1;
             } else {
                 yfactor = 1;
             }
         } else {
             offsety = element.height;
-            if (relativey == "<unknown string>") {
+            if (relativey == "<dev string:x50>") {
                 yfactor = -1;
             } else {
                 yfactor = 1;
@@ -233,19 +232,19 @@
     function setpointbar(point, relativepoint, xoffset, yoffset) {
         self.bar.horzalign = self.horzalign;
         self.bar.vertalign = self.vertalign;
-        self.bar.alignx = "<unknown string>";
+        self.bar.alignx = "<dev string:x5f>";
         self.bar.aligny = self.aligny;
         self.bar.y = self.y;
-        if (self.alignx == "<unknown string>") {
+        if (self.alignx == "<dev string:x5f>") {
             self.bar.x = self.x;
-        } else if (self.alignx == "<unknown string>") {
+        } else if (self.alignx == "<dev string:x66>") {
             self.bar.x = self.x - self.width;
         } else {
             self.bar.x = self.x - int(self.width / 2);
         }
-        if (self.aligny == "<unknown string>") {
+        if (self.aligny == "<dev string:x50>") {
             self.bar.y = self.y;
-        } else if (self.aligny == "<unknown string>") {
+        } else if (self.aligny == "<dev string:x56>") {
             self.bar.y = self.y;
         }
         self updatebar(self.bar.frac);
@@ -256,7 +255,7 @@
     // Checksum 0x60f7409d, Offset: 0xd20
     // Size: 0x44
     function updatebar(barfrac, rateofchange) {
-        if (self.elemtype == "<unknown string>") {
+        if (self.elemtype == "<dev string:xda>") {
             updatebarscale(barfrac, rateofchange);
         }
     }
@@ -272,13 +271,13 @@
         }
         self.bar.frac = barfrac;
         self.bar setshader(self.bar.shader, barwidth, self.height);
-        assert(barwidth <= self.width, "<unknown string>" + barwidth + "<unknown string>" + self.width + "<unknown string>" + barfrac);
+        assert(barwidth <= self.width, "<dev string:xe0>" + barwidth + "<dev string:xfb>" + self.width + "<dev string:x102>" + barfrac);
         if (isdefined(rateofchange) && barwidth < self.width) {
             if (rateofchange > 0) {
-                assert((1 - barfrac) / rateofchange > 0, "<unknown string>" + barfrac + "<unknown string>" + rateofchange);
+                assert((1 - barfrac) / rateofchange > 0, "<dev string:x114>" + barfrac + "<dev string:x120>" + rateofchange);
                 self.bar scaleovertime((1 - barfrac) / rateofchange, self.width, self.height);
             } else if (rateofchange < 0) {
-                assert(barfrac / -1 * rateofchange > 0, "<unknown string>" + barfrac + "<unknown string>" + rateofchange);
+                assert(barfrac / -1 * rateofchange > 0, "<dev string:x114>" + barfrac + "<dev string:x120>" + rateofchange);
                 self.bar scaleovertime(barfrac / -1 * rateofchange, 1, self.height);
             }
         }
@@ -292,7 +291,7 @@
     // Size: 0x118
     function function_665f547d(font, fontscale) {
         fontelem = newdebughudelem(self);
-        fontelem.elemtype = "<unknown string>";
+        fontelem.elemtype = "<dev string:x131>";
         fontelem.font = font;
         fontelem.fontscale = fontscale;
         fontelem.x = 0;
@@ -313,7 +312,7 @@
     // Size: 0x118
     function function_f5a689d(font, fontscale) {
         fontelem = newdebughudelem();
-        fontelem.elemtype = "<unknown string>";
+        fontelem.elemtype = "<dev string:x131>";
         fontelem.font = font;
         fontelem.fontscale = fontscale;
         fontelem.x = 0;
@@ -339,11 +338,11 @@
         barelem.frac = 0;
         barelem.color = color;
         barelem.sort = -2;
-        barelem.shader = "<unknown string>";
+        barelem.shader = "<dev string:x138>";
         barelem setshader(#"progress_bar_fill", width, height);
         barelem.hidden = 0;
         barelemframe = newdebughudelem(self);
-        barelemframe.elemtype = "<unknown string>";
+        barelemframe.elemtype = "<dev string:x14c>";
         barelemframe.x = 0;
         barelemframe.y = 0;
         barelemframe.width = width;
@@ -358,7 +357,7 @@
         barelemframe setparent(level.uiparent);
         barelemframe.hidden = 0;
         barelembg = newdebughudelem(self);
-        barelembg.elemtype = "<unknown string>";
+        barelembg.elemtype = "<dev string:xda>";
         if (!level.splitscreen) {
             barelembg.x = -2;
             barelembg.y = -2;
@@ -390,9 +389,9 @@
     function function_5037fb7f() {
         bar = function_7a0dd8a9((1, 1, 1), level.primaryprogressbarwidth, level.primaryprogressbarheight);
         if (level.splitscreen) {
-            bar setpoint("<unknown string>", undefined, level.primaryprogressbarx, level.primaryprogressbary);
+            bar setpoint("<dev string:x38>", undefined, level.primaryprogressbarx, level.primaryprogressbary);
         } else {
-            bar setpoint("<unknown string>", undefined, level.primaryprogressbarx, level.primaryprogressbary);
+            bar setpoint("<dev string:x153>", undefined, level.primaryprogressbarx, level.primaryprogressbary);
         }
         return bar;
     }
@@ -402,11 +401,11 @@
     // Checksum 0x5cf4caeb, Offset: 0x1610
     // Size: 0xb8
     function function_48badcf4() {
-        text = function_665f547d("<unknown string>", level.primaryprogressbarfontsize);
+        text = function_665f547d("<dev string:x15c>", level.primaryprogressbarfontsize);
         if (level.splitscreen) {
-            text setpoint("<unknown string>", undefined, level.primaryprogressbartextx, level.primaryprogressbartexty);
+            text setpoint("<dev string:x38>", undefined, level.primaryprogressbartextx, level.primaryprogressbartexty);
         } else {
-            text setpoint("<unknown string>", undefined, level.primaryprogressbartextx, level.primaryprogressbartexty);
+            text setpoint("<dev string:x153>", undefined, level.primaryprogressbartextx, level.primaryprogressbartexty);
         }
         text.sort = -1;
         return text;
@@ -424,7 +423,7 @@
         if (self.alpha != 0) {
             self.alpha = 0;
         }
-        if (self.elemtype == "<unknown string>" || self.elemtype == "<unknown string>") {
+        if (self.elemtype == "<dev string:xda>" || self.elemtype == "<dev string:x168>") {
             self.bar.hidden = 1;
             if (self.bar.alpha != 0) {
                 self.bar.alpha = 0;
@@ -445,7 +444,7 @@
             return;
         }
         self.hidden = 0;
-        if (self.elemtype == "<unknown string>" || self.elemtype == "<unknown string>") {
+        if (self.elemtype == "<dev string:xda>" || self.elemtype == "<dev string:x168>") {
             if (self.alpha != 0.5) {
                 self.alpha = 0.5;
             }
@@ -478,7 +477,7 @@
         for (index = 0; index < tempchildren.size; index++) {
             tempchildren[index] setparent(self getparent());
         }
-        if (self.elemtype == "<unknown string>" || self.elemtype == "<unknown string>") {
+        if (self.elemtype == "<dev string:xda>" || self.elemtype == "<dev string:x168>") {
             self.bar destroy();
             self.barframe destroy();
         }

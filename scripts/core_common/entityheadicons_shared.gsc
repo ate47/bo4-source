@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -50,7 +49,7 @@ function setentityheadicon(team, owner, objective) {
     if (isdefined(objective)) {
         if (isdefined(owner) && !level.teambased) {
             if (!isplayer(owner)) {
-                assert(isdefined(owner.owner), "<unknown string>");
+                assert(isdefined(owner.owner), "<dev string:x38>");
                 owner = owner.owner;
             }
             if (isdefined(objective)) {

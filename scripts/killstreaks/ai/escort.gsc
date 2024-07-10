@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\ai\tracking.gsc;
 #using scripts\killstreaks\ai\target.gsc;
 #using scripts\killstreaks\ai\state.gsc;
@@ -201,10 +200,10 @@ function function_cb4925e3(tacpoints) {
             continue;
         }
         /#
-            record3dtext("<unknown string>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "<unknown string>");
+            record3dtext("<dev string:x38>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "<dev string:x40>");
         #/
         /#
-            recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
+            recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "<dev string:x40>");
         #/
     }
     return validpoints;
@@ -242,7 +241,7 @@ function function_b6f15bda() {
             var_84e7232 = checknavmeshdirection(var_56bd1bef, var_84e7232 - var_56bd1bef, 100, 0);
             if (isdefined(var_84e7232)) {
                 /#
-                    recordsphere(var_84e7232, 8, (0, 1, 1), "<unknown string>");
+                    recordsphere(var_84e7232, 8, (0, 1, 1), "<dev string:x40>");
                 #/
                 var_b6a10143 = ai::t_cylinder(var_56bd1bef, 80, 30);
                 assert(isdefined(var_b6a10143.origin));
@@ -256,7 +255,7 @@ function function_b6f15bda() {
             var_84e7232 = checknavmeshdirection(var_56bd1bef, var_84e7232 - var_56bd1bef, 300, 0);
             if (isdefined(var_84e7232)) {
                 /#
-                    recordsphere(var_84e7232, 8, (1, 0.5, 0), "<unknown string>");
+                    recordsphere(var_84e7232, 8, (1, 0.5, 0), "<dev string:x40>");
                 #/
                 cylinder = ai::t_cylinder(var_84e7232, self.ai.escort.var_5a529222, 30);
                 var_8f3583cf = ai::t_cylinder(self.origin, 200, 30);
@@ -264,7 +263,7 @@ function function_b6f15bda() {
                 tacpoints = tacticalquery(self.ai.escort.var_db083d2c, cylinder, self, var_8f3583cf, var_84e7232, var_56bd1bef);
             } else {
                 /#
-                    recordsphere(var_84e7232, 8, (1, 0, 0), "<unknown string>");
+                    recordsphere(var_84e7232, 8, (1, 0, 0), "<dev string:x40>");
                 #/
             }
         }

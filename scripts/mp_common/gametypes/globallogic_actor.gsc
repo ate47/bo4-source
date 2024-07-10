@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weapons.gsc;
 #using scripts\weapons\weapon_utils.gsc;
 #using scripts\mp_common\player\player_utils.gsc;
@@ -193,7 +192,7 @@ function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofd
     self thread weapons::on_damage(eattacker, einflictor, weapon, smeansofdeath, idamage);
     /#
         if (getdvarint(#"g_debugdamage", 0)) {
-            println("<unknown string>" + self getentitynumber() + "<unknown string>" + self.health + "<unknown string>" + eattacker.clientid + "<unknown string>" + isplayer(einflictor) + "<unknown string>" + idamage + "<unknown string>" + shitloc);
+            println("<dev string:x38>" + self getentitynumber() + "<dev string:x41>" + self.health + "<dev string:x4c>" + eattacker.clientid + "<dev string:x59>" + isplayer(einflictor) + "<dev string:x71>" + idamage + "<dev string:x7c>" + shitloc);
         }
     #/
     if (true) {

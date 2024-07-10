@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_698dd790cdc4965f;
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -340,7 +339,7 @@ function private turn_on(origin, radius) {
         pap_machine = self;
     }
     if (!isdefined(pap_machine)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x38>");
         return;
     }
     if (isdefined(level.pack_a_punch.custom_power_think)) {
@@ -351,11 +350,11 @@ function private turn_on(origin, radius) {
     if (zm_utility::get_story() != 1) {
         self clientfield::set("pap_idle_fx", 1);
     }
-    println("<unknown string>");
+    println("<dev string:x7f>");
     var_45fd85a3 = vectornormalize(anglestoright(pap_machine.angles)) * level.pack_a_punch.var_11fdb083;
     level.pack_a_punch.var_fcdf795b = var_45fd85a3 + (0, 0, level.pack_a_punch.interaction_height);
     if (!isdefined(pap_machine.unitrigger_stub)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x8b>");
         return;
     }
     pap_machine.unitrigger_stub.origin = pap_machine.origin + level.pack_a_punch.var_fcdf795b;
@@ -381,7 +380,7 @@ function private turn_off(origin, radius) {
         pap_machine = self.target;
     }
     if (!isdefined(pap_machine)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:xb6>");
     }
     if (isdefined(level.pack_a_punch.custom_power_think)) {
         if (!pap_machine is_on()) {
@@ -392,7 +391,7 @@ function private turn_off(origin, radius) {
     if (zm_utility::get_story() != 1) {
         self clientfield::set("pap_idle_fx", 0);
     }
-    println("<unknown string>");
+    println("<dev string:xfe>");
     zm_unitrigger::unregister_unitrigger(pap_machine.unitrigger_stub);
     pap_machine flag::set("Pack_A_Punch_off");
     pap_machine flag::clear("Pack_A_Punch_on");
@@ -514,7 +513,7 @@ function private function_72cf5db2() {
                 waitresult = self waittill(#"trigger");
                 player = waitresult.activator;
                 /#
-                    iprintlnbold("<unknown string>" + player getentnum());
+                    iprintlnbold("<dev string:x10b>" + player getentnum());
                 #/
                 if (!pap_machine flag::get("pap_waiting_for_user") || isdefined(player.var_486c9d59) && player.var_486c9d59) {
                     continue;
@@ -609,7 +608,7 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
     self.var_9b0383f5 = 1;
     self.var_655c0753 = undefined;
     self.restore_clip = undefined;
-    self.restore_stock = undefined;
+    self.healing_aura_revive_zm = undefined;
     self.restore_clip_size = undefined;
     self.restore_max = undefined;
     currentaathashid = -1;
@@ -621,13 +620,13 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
         self.var_655c0753 = 1;
         self.restore_clip = self getweaponammoclip(current_weapon);
         self.restore_clip_size = current_weapon.clipsize;
-        self.restore_stock = self getweaponammostock(current_weapon);
+        self.healing_aura_revive_zm = self getweaponammostock(current_weapon);
         self.restore_max = current_weapon.maxammo;
     }
     pap_machine thread wait_for_disconnect(self);
     pap_machine thread destroy_weapon_in_blackout();
     /#
-        iprintlnbold("<unknown string>" + self getentnum());
+        iprintlnbold("<dev string:x126>" + self getentnum());
     #/
     demo::bookmark(#"zm_player_use_packapunch", gettime(), self);
     potm::bookmark(#"zm_player_use_packapunch", gettime(), self);
@@ -665,7 +664,7 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
                 self recordmapevent(19, gettime(), self.origin, level.round_number, weaponidx, var_376755db);
             }
             /#
-                self zm_challenges::debug_print("<unknown string>");
+                self zm_challenges::debug_print("<dev string:x142>");
             #/
             self zm_stats::increment_challenge_stat(#"pap_weapon_packed");
             self zm_stats::increment_challenge_stat(#"hash_2126e77556d8e66b");
@@ -678,7 +677,7 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
             if (isdefined(pap_machine.unitrigger_stub.var_59f1d079) && pap_machine.unitrigger_stub.var_59f1d079) {
                 pap_machine.unitrigger_stub.var_59f1d079 = undefined;
                 /#
-                    self zm_challenges::debug_print("<unknown string>");
+                    self zm_challenges::debug_print("<dev string:x169>");
                 #/
                 self zm_stats::increment_challenge_stat(#"pap_weapon_double_packed", undefined, 1);
                 self stats::inc_stat(#"item_stats", current_weapon.name, #"doublepacked", #"statvalue", 1);
@@ -775,8 +774,8 @@ function private wait_for_player_to_take(player, weapon, packa_timer, var_a86430
     pap_machine = self.stub.zbarrier;
     current_weapon = pap_machine.unitrigger_stub.current_weapon;
     upgrade_weapon = pap_machine.unitrigger_stub.upgrade_weapon;
-    assert(isdefined(current_weapon), "<unknown string>");
-    assert(isdefined(upgrade_weapon), "<unknown string>");
+    assert(isdefined(current_weapon), "<dev string:x197>");
+    assert(isdefined(upgrade_weapon), "<dev string:x1c8>");
     pap_machine endon(#"pap_timeout", #"hash_672bc8ddbec0fa33");
     while (isdefined(player)) {
         packa_timer playloopsound(#"zmb_perks_packa_ticktock");
@@ -792,7 +791,7 @@ function private wait_for_player_to_take(player, weapon, packa_timer, var_a86430
             current_weapon = player getcurrentweapon();
             /#
                 if (level.weaponnone == current_weapon) {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x201>");
                 }
             #/
             if (zm_utility::is_player_valid(player) && !player zm_utility::is_drinking() && !zm_loadout::is_placeable_mine(current_weapon) && !zm_equipment::is_equipment(current_weapon) && !player zm_utility::is_player_revive_tool(current_weapon) && level.weaponnone != current_weapon && !player zm_equipment::hacker_active()) {
@@ -866,13 +865,13 @@ function private wait_for_player_to_take(player, weapon, packa_timer, var_a86430
                 }
                 if (isdefined(player.var_655c0753) && player.var_655c0753 && !(isdefined(pap_machine.var_b64e889a) && pap_machine.var_b64e889a)) {
                     new_clip = player.restore_clip + upgrade_weapon.clipsize - player.restore_clip_size;
-                    new_stock = player.restore_stock + upgrade_weapon.maxammo - player.restore_max;
+                    new_stock = player.healing_aura_revive_zm + upgrade_weapon.maxammo - player.restore_max;
                     player setweaponammostock(upgrade_weapon, new_stock);
                     player setweaponammoclip(upgrade_weapon, new_clip);
                 }
                 player.var_655c0753 = undefined;
                 player.restore_clip = undefined;
-                player.restore_stock = undefined;
+                player.healing_aura_revive_zm = undefined;
                 player.restore_max = undefined;
                 player.restore_clip_size = undefined;
                 player callback::callback(#"hash_790b67aca1bf8fc0", upgrade_weapon);
@@ -939,7 +938,7 @@ function private wait_for_disconnect(player) {
     while (isdefined(player)) {
         wait(0.1);
     }
-    println("<unknown string>");
+    println("<dev string:x22f>");
     self notify(#"pap_player_disconnected");
 }
 

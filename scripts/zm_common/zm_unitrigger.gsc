@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_lockdown_util.gsc;
@@ -158,7 +157,7 @@ function function_28304f6a() {
 // Size: 0x442
 function private register_unitrigger_internal(unitrigger_stub, trigger_func) {
     if (!isdefined(unitrigger_stub.script_unitrigger_type)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     if (isdefined(trigger_func)) {
@@ -199,7 +198,7 @@ function private register_unitrigger_internal(unitrigger_stub, trigger_func) {
         unitrigger_stub.test_radius_sq = (box_radius + 15) * (box_radius + 15);
         break;
     default:
-        println("<unknown string>" + unitrigger_stub.targetname + "<unknown string>");
+        println("<dev string:x82>" + unitrigger_stub.targetname + "<dev string:xaa>");
         return;
     }
     if (unitrigger_stub.radius > level._unitriggers.largest_radius) {
@@ -680,7 +679,7 @@ function private function_933f3bf3(s_stub, trigger, player) {
     if (isdefined(s_stub.prompt_and_visibility_func)) {
         usable = trigger [[ s_stub.prompt_and_visibility_func ]](player);
         if (!isdefined(usable)) {
-            assertmsg("<unknown string>" + (isdefined(s_stub.targetname) ? s_stub.targetname : "<unknown string>") + "<unknown string>" + (isdefined(s_stub.origin) ? s_stub.origin : (0, 0, 0)) + "<unknown string>");
+            assertmsg("<dev string:xb9>" + (isdefined(s_stub.targetname) ? s_stub.targetname : "<dev string:xc7>") + "<dev string:xd9>" + (isdefined(s_stub.origin) ? s_stub.origin : (0, 0, 0)) + "<dev string:xe0>");
             usable = 0;
         }
         trigger triggerenable(usable);

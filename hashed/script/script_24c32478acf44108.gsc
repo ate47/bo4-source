@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -49,7 +48,7 @@ function burn(str_type, e_attacker, weapon, var_477abb8f) {
         return;
     }
     if (!isdefined(level.var_981dd9cf) || !isdefined(level.var_981dd9cf[#"burn"]) || !isdefined(level.var_981dd9cf[#"burn"][str_type])) {
-        assertmsg("<unknown string>" + str_type + "<unknown string>");
+        assertmsg("<dev string:x38>" + str_type + "<dev string:x41>");
         return;
     }
     if (!isdefined(self.var_88421cc2)) {
@@ -300,7 +299,7 @@ function slowdown(str_type, var_a47cf2b2) {
     level endon(#"end_game");
     self endoncallback(&function_fe7a7d5b, #"starting_slowdown_ai", #"death");
     if (!isdefined(level.var_981dd9cf) || !isdefined(level.var_981dd9cf[#"slow"]) || !isdefined(level.var_981dd9cf[#"slow"][str_type])) {
-        assertmsg("<unknown string>" + str_type + "<unknown string>");
+        assertmsg("<dev string:x74>" + str_type + "<dev string:x81>");
         return;
     }
     if (!isdefined(self.a_n_slowdown_timeouts)) {

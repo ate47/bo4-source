@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_grind_sound;
 
 // Namespace mp_grind_sound/mp_grind_sound

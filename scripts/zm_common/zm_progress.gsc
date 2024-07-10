@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_5ab658148b984423;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -171,7 +170,7 @@ function function_48098d30(player, params) {
 function private function_f8b39299(player, params, var_c060d2c8) {
     b_waited = 0;
     if (!isdefined(self)) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         if (!(isdefined(b_waited) && b_waited)) {
             b_waited = 1;
             waitframe(1);
@@ -201,7 +200,7 @@ function private function_f8b39299(player, params, var_c060d2c8) {
             b_waited = 1;
             waitframe(1);
             if (!isdefined(self)) {
-                assertmsg("<unknown string>");
+                assertmsg("<dev string:x38>");
                 if (!(isdefined(b_waited) && b_waited)) {
                     b_waited = 1;
                     waitframe(1);
@@ -242,7 +241,7 @@ function private function_f8b39299(player, params, var_c060d2c8) {
         waitframe(1);
     }
     if (!isdefined(self)) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         if (!(isdefined(b_waited) && b_waited)) {
             b_waited = 1;
             waitframe(1);

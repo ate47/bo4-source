@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\round.gsc;
 #using scripts\mp_common\gametypes\outcome.gsc;
 #using scripts\mp_common\gametypes\match.gsc;

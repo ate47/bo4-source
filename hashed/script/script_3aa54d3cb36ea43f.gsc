@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
 #using scripts\zm_common\zm_score.gsc;
@@ -77,7 +76,7 @@ function private function_b656013e() {
 function function_ea46ca6f() {
     level.var_b3d6ef3b = getentarray("zombie_gegenees_spawner", "script_noteworthy");
     if (level.var_b3d6ef3b.size == 0) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         return;
     }
     spawner::add_archetype_spawn_function(#"gegenees", &gegenees_init);
@@ -264,7 +263,7 @@ function spawn_single(b_force_spawn = 0, var_eb3a8721, var_bc66d64b) {
     if (!isdefined(s_spawn_loc)) {
         /#
             if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x86>");
             }
         #/
         return undefined;

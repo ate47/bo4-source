@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\exploder_shared.gsc;
 #using scripts\zm\zm_office_ww_quest.gsc;
 #using scripts\zm\zm_office_teleporters.gsc;
@@ -435,36 +434,36 @@ function function_cacd3270() {
     // Checksum 0x7a32274b, Offset: 0x21e8
     // Size: 0x3c6
     function function_d2f6cecb() {
-        if (!level flag::get("<unknown string>")) {
-            level flag::set("<unknown string>");
+        if (!level flag::get("<dev string:x38>")) {
+            level flag::set("<dev string:x38>");
             wait(1);
         }
         level.defcon_level = 5;
-        if (level.zombie_vars[#"zombie_powerup_bonfire_sale_on"] == 0 || !level flag::get("<unknown string>")) {
+        if (level.zombie_vars[#"zombie_powerup_bonfire_sale_on"] == 0 || !level flag::get("<dev string:x43>")) {
             level thread namespace_8f53e87b::play_pentagon_announcer_vox(#"hash_450f3dd9fe21becd", level.defcon_level);
         }
         level thread defcon_sign_lights();
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x53>");
         zm_office_teleporters::function_c71dfad1(1);
-        if (level.zombie_vars[#"zombie_powerup_bonfire_sale_on"] == 0 || !level flag::get("<unknown string>")) {
+        if (level.zombie_vars[#"zombie_powerup_bonfire_sale_on"] == 0 || !level flag::get("<dev string:x43>")) {
             level thread play_defcon5_alarms();
         }
         level waittill(#"pack_room_reset");
-        if (!level flag::get("<unknown string>")) {
+        if (!level flag::get("<dev string:x43>")) {
             level thread namespace_8f53e87b::play_pentagon_announcer_vox(#"hash_55967e6191de36d2");
         }
         if (isdefined(self.lights)) {
             for (j = 0; j < self.lights.size; j++) {
-                if (isdefined(self.lights[j].script_noteworthy) && self.lights[j].script_noteworthy == "<unknown string>") {
-                    self.lights[j] setmodel("<unknown string>");
+                if (isdefined(self.lights[j].script_noteworthy) && self.lights[j].script_noteworthy == "<dev string:x63>") {
+                    self.lights[j] setmodel("<dev string:x71>");
                     self.var_dd7da790[j] delete();
-                    self.var_dd7da790[j] = util::spawn_model("<unknown string>", self.lights[j].origin);
+                    self.var_dd7da790[j] = util::spawn_model("<dev string:x98>", self.lights[j].origin);
                     self.var_dd7da790[j].angles = self.lights[j].angles;
-                    self.var_dd7da790[j].var_fe0165db = playfxontag(level.var_5531a118, self.var_dd7da790[j], "<unknown string>");
+                    self.var_dd7da790[j].var_fe0165db = playfxontag(level.var_5531a118, self.var_dd7da790[j], "<dev string:x98>");
                 }
-                if (isdefined(self.lights[j].script_noteworthy) && self.lights[j].script_noteworthy == "<unknown string>") {
+                if (isdefined(self.lights[j].script_noteworthy) && self.lights[j].script_noteworthy == "<dev string:xa5>") {
                     self.lights[j] rotatepitch(180, 0.5);
-                    self.lights[j] playsound("<unknown string>");
+                    self.lights[j] playsound("<dev string:xb5>");
                 }
             }
         }

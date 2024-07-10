@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_zombie_museum_sound;
 
 // Namespace mp_zombie_museum_sound/mp_zombie_museum_sound

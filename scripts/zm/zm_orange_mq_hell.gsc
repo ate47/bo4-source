@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_orange_pap.gsc;
 #using scripts\zm\zm_orange_zones.gsc;
@@ -320,7 +319,7 @@ function function_a340f5a2() {
     level.var_5d5b7e8e.var_a41818b5 clientfield::set("" + #"lantern_fx", 3);
     wait(5);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     level.var_5d5b7e8e.var_a41818b5 clientfield::increment("" + #"lantern_explode_fx", 1);
     level thread lui::screen_flash(0.2, 0.5, 1, 0.8, "white");
@@ -548,7 +547,7 @@ function function_5e3a92e() {
     level.var_5d5b7e8e.var_a41818b5 clientfield::set("" + #"lantern_fx", 1);
     level.var_5d5b7e8e.var_a41818b5 thread function_fd5d0f2d(3);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x65>");
     #/
 }
 
@@ -597,7 +596,7 @@ function function_9be0a8a6(str_id) {
     s_sc.var_5f9f040 = hash(str_id);
     namespace_617a54f4::function_3f808d3d(s_sc.var_5f9f040);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x7b>");
     #/
 }
 
@@ -609,7 +608,7 @@ function function_e2b8d7bb() {
     self endon(#"death");
     self setspeedimmediate(0);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x93>");
     #/
     level waittilltimeout(10, #"zipline_used");
     self setspeed(25);
@@ -625,7 +624,7 @@ function function_3c3bee91() {
     namespace_617a54f4::function_3f808d3d(#"sc_lantern_end");
     level thread zm_orange_util::function_fd24e47f(#"hash_6f4de6a856d64c98");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xad>");
     #/
     thread function_27c3d40f();
     wait(20);
@@ -694,7 +693,7 @@ function function_2855a4fc(e_item, e_player) {
     e_player playrumbleonentity("zm_mansion_atlas_interact_rumble");
     e_item.mdl_lantern delete();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xc0>");
     #/
 }
 
@@ -799,7 +798,7 @@ function function_737be926() {
         if (!level flag::get(#"hash_6f7fd3d4d070db87")) {
             level.var_a385f14 notify(#"force_extinguisher");
         }
-        a_s_start_pos = struct::get_array("<unknown string>");
+        a_s_start_pos = struct::get_array("<dev string:xf0>");
         a_e_players = getplayers();
         n_index = 0;
         foreach (e_player in a_e_players) {
@@ -816,7 +815,7 @@ function function_737be926() {
     // Checksum 0x95c0e3a1, Offset: 0x37c8
     // Size: 0x1a4
     function function_405f867d() {
-        a_s_start_pos = struct::get_array("<unknown string>");
+        a_s_start_pos = struct::get_array("<dev string:x103>");
         a_e_players = getplayers();
         n_index = 0;
         foreach (e_player in a_e_players) {
@@ -826,7 +825,7 @@ function function_737be926() {
             n_index++;
         }
         level.var_5d5b7e8e.var_a41818b5 vehicle::get_off_path();
-        var_1452c94f = getvehiclenode("<unknown string>", "<unknown string>");
+        var_1452c94f = getvehiclenode("<dev string:x116>", "<dev string:x12a>");
         level.var_5d5b7e8e.var_a41818b5.origin = var_1452c94f.origin;
         level thread function_3c3bee91();
     }
@@ -855,13 +854,13 @@ function function_737be926() {
         array::thread_all(level.var_35e33dbe, &function_a8fd16d0);
         level flag::set(#"hell_on_earth");
         level.musicsystemoverride = 1;
-        music::setmusicstate("<unknown string>");
-        level clientfield::set("<unknown string>" + #"hash_5e69ee96304ec40b", 1);
+        music::setmusicstate("<dev string:x137>");
+        level clientfield::set("<dev string:x149>" + #"hash_5e69ee96304ec40b", 1);
         foreach (s_altar in level.var_76a7ad28) {
             s_altar.var_3468124 zm_perks::function_efd2c9e6();
         }
         foreach (e_pap in level.var_4d8e32c8) {
-            e_pap flag::set("<unknown string>");
+            e_pap flag::set("<dev string:x14c>");
             e_pap zm_orange_pap::function_e3921120(0);
         }
     }

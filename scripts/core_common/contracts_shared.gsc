@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\player\player_stats.gsc;
@@ -237,10 +236,10 @@ function increment_contract(var_38280f2f, delta = 1) {
     function function_e07e542b(var_1d89ece6, var_300afbc8) {
         level thread watch_contract_debug(var_300afbc8);
         function_a781ee84(var_1d89ece6);
-        util::function_3f749abc(var_1d89ece6 + "<unknown string>", "<unknown string>");
-        util::function_3f749abc(var_1d89ece6 + "<unknown string>", "<unknown string>");
-        util::function_3f749abc(var_1d89ece6 + "<unknown string>", "<unknown string>");
-        util::function_3f749abc(var_1d89ece6 + "<unknown string>", "<unknown string>");
+        util::function_3f749abc(var_1d89ece6 + "<dev string:x38>", "<dev string:x56>");
+        util::function_3f749abc(var_1d89ece6 + "<dev string:x76>", "<dev string:x98>");
+        util::function_3f749abc(var_1d89ece6 + "<dev string:xbc>", "<dev string:xc7>");
+        util::function_3f749abc(var_1d89ece6 + "<dev string:xe2>", "<dev string:xee>");
     }
 
     // Namespace contracts/contracts_shared
@@ -248,14 +247,14 @@ function increment_contract(var_38280f2f, delta = 1) {
     // Checksum 0x1498e015, Offset: 0xe48
     // Size: 0x12c
     function function_a781ee84(var_1d89ece6) {
-        var_78a6fb52 = var_1d89ece6 + "<unknown string>";
-        var_c8d599b5 = "<unknown string>";
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + 2);
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + 5);
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + 10);
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + 100);
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + 1000);
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + 0);
+        var_78a6fb52 = var_1d89ece6 + "<dev string:x109>";
+        var_c8d599b5 = "<dev string:x132>";
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x157>", var_c8d599b5 + 2);
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x15d>", var_c8d599b5 + 5);
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x163>", var_c8d599b5 + 10);
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x16a>", var_c8d599b5 + 100);
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x172>", var_c8d599b5 + 1000);
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x17b>", var_c8d599b5 + 0);
     }
 
     // Namespace contracts/contracts_shared
@@ -293,7 +292,7 @@ function increment_contract(var_38280f2f, delta = 1) {
                     if (isdefined(player.pers) && isdefined(player.pers[#"contracts"])) {
                         player.pers[#"contracts"] = undefined;
                     }
-                    iprintln("<unknown string>" + player.name);
+                    iprintln("<dev string:x184>" + player.name);
                 }
             }
             setdvar(#"hash_7c0db43f4c0bff69", 0);
@@ -310,14 +309,14 @@ function increment_contract(var_38280f2f, delta = 1) {
                     if (isdefined(player.pers) && isdefined(player.pers[#"contracts"])) {
                         player function_78083139();
                     }
-                    iprintln("<unknown string>" + player.name);
+                    iprintln("<dev string:x1ac>" + player.name);
                 }
             }
             setdvar(#"hash_23bd356dbd92a9e2", 0);
         }
-        if (getdvarstring(#"hash_4e7103a8bd2b97f6", "<unknown string>") != "<unknown string>") {
+        if (getdvarstring(#"hash_4e7103a8bd2b97f6", "<dev string:x1d2>") != "<dev string:x1d2>") {
             if (isdefined(level.players)) {
-                var_f029d0d7 = getdvarstring(#"hash_4e7103a8bd2b97f6", "<unknown string>");
+                var_f029d0d7 = getdvarstring(#"hash_4e7103a8bd2b97f6", "<dev string:x1d2>");
                 foreach (player in level.players) {
                     if (!isdefined(player)) {
                         continue;
@@ -330,17 +329,17 @@ function increment_contract(var_38280f2f, delta = 1) {
                     var_61525c00.target_value = 8;
                     var_61525c00.var_59cb904f = 0;
                     player function_5e1c4d33(var_61525c00);
-                    iprintln("<unknown string>" + var_f029d0d7 + "<unknown string>" + player.name + "<unknown string>");
+                    iprintln("<dev string:x1d5>" + var_f029d0d7 + "<dev string:x1ec>" + player.name + "<dev string:x1f4>");
                 }
             }
-            setdvar(#"hash_4e7103a8bd2b97f6", "<unknown string>");
+            setdvar(#"hash_4e7103a8bd2b97f6", "<dev string:x1d2>");
         }
         if (getdvarint(#"scr_contract_msg_front_end_only", 0) > 0) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:x208>");
             setdvar(#"scr_contract_msg_front_end_only", 0);
         }
         if (getdvarint(#"scr_contract_msg_debug_on", 0) > 0) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:x23a>");
             setdvar(#"scr_contract_msg_debug_on", 0);
         }
     }
@@ -510,8 +509,8 @@ function function_78083139() {
         }
         /#
             if (getdvarint(#"scr_contract_debug", 0) > 0) {
-                var_7b6acdb1 = var_9224acc ? "<unknown string>" : "<unknown string>";
-                iprintln("<unknown string>" + function_9e72a96(var_38280f2f) + "<unknown string>" + delta + "<unknown string>" + var_4b67585c + "<unknown string>" + var_2de8a050 + var_7b6acdb1);
+                var_7b6acdb1 = var_9224acc ? "<dev string:x262>" : "<dev string:x1d2>";
+                iprintln("<dev string:x272>" + function_9e72a96(var_38280f2f) + "<dev string:x280>" + delta + "<dev string:x28e>" + var_4b67585c + "<dev string:x2ae>" + var_2de8a050 + var_7b6acdb1);
             }
         #/
         flags = player function_507247e8(var_9224acc);

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_escape_pebble.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
 #using scripts\zm_common\zm_magicbox.gsc;
@@ -167,10 +166,10 @@ function set_locked_magicbox_state(state) {
     // Checksum 0xe30474b4, Offset: 0x8c8
     // Size: 0x13c
     function function_be66db38() {
-        level flagsys::wait_till("<unknown string>");
+        level flagsys::wait_till("<dev string:x38>");
         e_box = undefined;
         for (i = 0; i < level.chests.size; i++) {
-            if (isdefined(level.chests[i].zbarrier.state === "<unknown string>") && level.chests[i].zbarrier.state === "<unknown string>") {
+            if (isdefined(level.chests[i].zbarrier.state === "<dev string:x53>") && level.chests[i].zbarrier.state === "<dev string:x53>") {
                 e_box = level.chests[i];
                 break;
             }
@@ -179,7 +178,7 @@ function set_locked_magicbox_state(state) {
             while (distance(level.players[0].origin, e_box.origin) > 128) {
                 wait(1);
             }
-            e_box.zbarrier zm_magicbox::set_magic_box_zbarrier_state("<unknown string>");
+            e_box.zbarrier zm_magicbox::set_magic_box_zbarrier_state("<dev string:x5d>");
         }
     }
 

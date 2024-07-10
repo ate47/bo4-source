@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_office_floors.gsc;
 #using scripts\zm_common\zm_ui_inventory.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -43,7 +42,7 @@ function function_1525b94c() {
 // Size: 0x64
 function challenge_completed() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     wait(3);
     if (level.var_a7b0c29c.size == 0) {
@@ -101,7 +100,7 @@ function function_f76df1da() {
 // Size: 0x4c
 function function_8bddfcc3() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x5d>");
     #/
     level notify(#"hash_4d3a2c46c22b012e");
     function_bc0ec5b3(0);

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_austria_fx;
 
 // Namespace mp_austria_fx/mp_austria_fx

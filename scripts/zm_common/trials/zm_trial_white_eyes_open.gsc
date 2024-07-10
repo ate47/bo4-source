@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_mee.gsc;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here.gsc;
 #using scripts\zm_common\zm_utility.gsc;

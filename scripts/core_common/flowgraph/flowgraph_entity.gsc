@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\flowgraph\flowgraph_core.gsc;
 
 #namespace flowgraph_entity;

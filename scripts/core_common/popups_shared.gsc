@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\rank_shared.gsc;
@@ -106,12 +105,12 @@ function on_player_connect() {
     // Size: 0x9a
     function devgui_notif_getchallengestablename(tableid) {
         if (sessionmodeiscampaigngame()) {
-            return (#"gamedata/stats/cp/statsmilestones" + tableid + "<unknown string>");
+            return (#"gamedata/stats/cp/statsmilestones" + tableid + "<dev string:x38>");
         }
         if (sessionmodeiszombiesgame()) {
-            return (#"gamedata/stats/zm/statsmilestones" + tableid + "<unknown string>");
+            return (#"gamedata/stats/zm/statsmilestones" + tableid + "<dev string:x38>");
         }
-        return #"gamedata/stats/mp/statsmilestones" + tableid + "<unknown string>";
+        return #"gamedata/stats/mp/statsmilestones" + tableid + "<dev string:x38>";
     }
 
     // Namespace popups/popups_shared
@@ -124,9 +123,9 @@ function on_player_connect() {
             iteminfo = getunlockableiteminfofromindex(i, 0);
             if (isdefined(iteminfo)) {
                 group_s = iteminfo.itemgroupname;
-                if (issubstr(group_s, "<unknown string>") || group_s == "<unknown string>") {
+                if (issubstr(group_s, "<dev string:x3f>") || group_s == "<dev string:x49>") {
                     reference_s = iteminfo.namehash;
-                    if (reference_s != "<unknown string>") {
+                    if (reference_s != "<dev string:x50>") {
                         level.tbl_weaponids[i][#"reference"] = reference_s;
                         level.tbl_weaponids[i][#"group"] = group_s;
                         level.tbl_weaponids[i][#"count"] = iteminfo.count;
@@ -153,7 +152,7 @@ function on_player_connect() {
         if (getdvarint(#"hash_300689cb3bb5ab4d", 0) > 0) {
             return;
         }
-        util::add_devgui("<unknown string>", "<unknown string>");
+        util::add_devgui("<dev string:x53>", "<dev string:x76>");
         level thread function_a65863ce();
     }
 
@@ -165,7 +164,7 @@ function on_player_connect() {
         level endon(#"game_ended");
         while (true) {
             if (getdvarint(#"hash_300689cb3bb5ab4d", 0) > 0) {
-                util::remove_devgui("<unknown string>");
+                util::remove_devgui("<dev string:x53>");
                 function_ac0bfb9c();
                 return;
             }
@@ -193,14 +192,14 @@ function on_player_connect() {
         if (!isdefined(level.ranktable)) {
             return;
         }
-        notif_rank_devgui_base = "<unknown string>";
+        notif_rank_devgui_base = "<dev string:x9a>";
         for (i = 1; i < level.ranktable.size; i++) {
             display_level = i + 1;
             if (display_level < 10) {
-                display_level = "<unknown string>" + display_level;
+                display_level = "<dev string:xc5>" + display_level;
             }
             util::waittill_can_add_debug_command();
-            adddebugcommand(notif_rank_devgui_base + display_level + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>");
+            adddebugcommand(notif_rank_devgui_base + display_level + "<dev string:xc9>" + "<dev string:xce>" + "<dev string:xd2>" + "<dev string:xea>" + i + "<dev string:xee>");
         }
         waitframe(1);
         level thread notif_devgui_rank_up_think();
@@ -228,12 +227,12 @@ function on_player_connect() {
     // Checksum 0x2e2d0fae, Offset: 0xaa8
     // Size: 0x9a4
     function notif_devgui_gun_rank() {
-        notif_gun_rank_devgui_base = "<unknown string>";
+        notif_gun_rank_devgui_base = "<dev string:xf4>";
         gunlevel_rankid_col = 0;
         gunlevel_gunref_col = 2;
         gunlevel_attachment_unlock_col = 3;
         gunlevel_xpgained_col = 4;
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x11e>");
         if (!isdefined(level.tbl_weaponids)) {
             devgui_create_weapon_levels_table();
         }
@@ -267,7 +266,7 @@ function on_player_connect() {
             }
             switch (weapon[#"group"]) {
             case #"weapon_pistol":
-                if (weapon[#"reference"] != "<unknown string>") {
+                if (weapon[#"reference"] != "<dev string:x134>") {
                     arrayinsert(a_weapons[#"pistol"], gun, 0);
                 }
                 break;
@@ -302,9 +301,9 @@ function on_player_connect() {
         foreach (group_name, gun_group in a_weapons) {
             foreach (gun, attachment_group in gun_group) {
                 foreach (attachment, attachment_data in attachment_group[#"attachments"]) {
-                    devgui_cmd_gun_path = notif_gun_rank_devgui_base + function_9e72a96(group_name) + "<unknown string>" + function_9e72a96(gun_group[gun][#"ref"]) + "<unknown string>" + function_9e72a96(attachment);
+                    devgui_cmd_gun_path = notif_gun_rank_devgui_base + function_9e72a96(group_name) + "<dev string:x142>" + function_9e72a96(gun_group[gun][#"ref"]) + "<dev string:x142>" + function_9e72a96(attachment);
                     util::waittill_can_add_debug_command();
-                    adddebugcommand(devgui_cmd_gun_path + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + attachment_data[#"xp"] + "<unknown string>" + "<unknown string>" + "<unknown string>" + attachment_data[#"itemindex"] + "<unknown string>" + "<unknown string>" + "<unknown string>" + gun_group[gun][#"itemindex"] + "<unknown string>" + "<unknown string>" + "<unknown string>" + attachment_data[#"rankid"] + "<unknown string>");
+                    adddebugcommand(devgui_cmd_gun_path + "<dev string:xc9>" + "<dev string:xce>" + "<dev string:x146>" + "<dev string:x14e>" + "<dev string:xea>" + attachment_data[#"xp"] + "<dev string:x146>" + "<dev string:x16c>" + "<dev string:xea>" + attachment_data[#"itemindex"] + "<dev string:x146>" + "<dev string:x198>" + "<dev string:xea>" + gun_group[gun][#"itemindex"] + "<dev string:x146>" + "<dev string:x1be>" + "<dev string:xea>" + attachment_data[#"rankid"] + "<dev string:xee>");
                 }
             }
             waitframe(1);
@@ -340,24 +339,24 @@ function on_player_connect() {
     // Checksum 0xe11aa88c, Offset: 0x1628
     // Size: 0x324
     function notif_devgui_challenges() {
-        notif_challenges_devgui_base = "<unknown string>";
+        notif_challenges_devgui_base = "<dev string:x1e1>";
         for (i = 1; i <= devgui_notif_getchallengestablecount(); i++) {
             tablename = devgui_notif_getchallengestablename(i);
             rows = tablelookuprowcount(tablename);
             for (j = 1; j < rows; j++) {
                 challengeid = tablelookupcolumnforrow(tablename, j, 0);
-                if (challengeid != "<unknown string>" && strisint(tablelookupcolumnforrow(tablename, j, 0))) {
+                if (challengeid != "<dev string:x50>" && strisint(tablelookupcolumnforrow(tablename, j, 0))) {
                     challengestring = tablelookupcolumnforrow(tablename, j, 5);
                     type = tablelookupcolumnforrow(tablename, j, 3);
                     challengetier = int(tablelookupcolumnforrow(tablename, j, 1));
-                    challengetierstring = "<unknown string>" + challengetier;
+                    challengetierstring = "<dev string:x50>" + challengetier;
                     if (challengetier < 10) {
-                        challengetierstring = "<unknown string>" + challengetier;
+                        challengetierstring = "<dev string:xc5>" + challengetier;
                     }
                     name = tablelookupcolumnforrow(tablename, j, 5);
-                    devgui_cmd_challenge_path = notif_challenges_devgui_base + function_9e72a96(type) + "<unknown string>" + function_9e72a96(name) + "<unknown string>" + challengetierstring + "<unknown string>" + challengeid;
+                    devgui_cmd_challenge_path = notif_challenges_devgui_base + function_9e72a96(type) + "<dev string:x142>" + function_9e72a96(name) + "<dev string:x142>" + challengetierstring + "<dev string:x20c>" + challengeid;
                     util::waittill_can_add_debug_command();
-                    adddebugcommand(devgui_cmd_challenge_path + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + j + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>");
+                    adddebugcommand(devgui_cmd_challenge_path + "<dev string:xc9>" + "<dev string:xce>" + "<dev string:x146>" + "<dev string:x214>" + "<dev string:xea>" + j + "<dev string:x146>" + "<dev string:x235>" + "<dev string:xea>" + i + "<dev string:xee>");
                     if (int(challengeid) % 10) {
                         waitframe(1);
                     }
@@ -389,17 +388,17 @@ function on_player_connect() {
             }
             type = tablelookupcolumnforrow(tablename, row, 3);
             itemindex = 0;
-            if (type == "<unknown string>") {
+            if (type == "<dev string:x258>") {
                 type = 0;
-            } else if (type == "<unknown string>") {
+            } else if (type == "<dev string:x261>") {
                 itemindex = 4;
                 type = 3;
-            } else if (type == "<unknown string>") {
+            } else if (type == "<dev string:x269>") {
                 itemindex = 1;
                 type = 4;
-            } else if (type == "<unknown string>") {
+            } else if (type == "<dev string:x276>") {
                 type = 2;
-            } else if (type == "<unknown string>") {
+            } else if (type == "<dev string:x281>") {
                 type = 5;
             } else {
                 itemindex = getdvarint(#"scr_challenge_itemindex", 0);

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\flag_shared.csc;
 #using scripts\core_common\struct.csc;
 
@@ -14,7 +13,7 @@ function event_handler[gametype_init] main(eventstruct) {
     if (!level flag::exists(#"ztcm")) {
         level flag::init(#"ztcm", 1);
     }
-    println("<unknown string>");
+    println("<dev string:x38>");
 }
 
 // Namespace ztcm/ztcm
@@ -22,7 +21,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0xd8aadcda, Offset: 0x128
 // Size: 0x24
 function onprecachegametype() {
-    println("<unknown string>");
+    println("<dev string:x52>");
 }
 
 // Namespace ztcm/ztcm
@@ -30,6 +29,6 @@ function onprecachegametype() {
 // Checksum 0xf1f56cd5, Offset: 0x158
 // Size: 0x24
 function onstartgametype() {
-    println("<unknown string>");
+    println("<dev string:x70>");
 }
 

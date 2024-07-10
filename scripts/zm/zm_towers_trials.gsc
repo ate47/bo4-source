@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_towers_boss.gsc;
 #using script_1714a05732f8e2c;
 #using script_69e3966400876ea0;

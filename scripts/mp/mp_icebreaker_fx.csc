@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_icebreaker_fx;
 
 // Namespace mp_icebreaker_fx/mp_icebreaker_fx

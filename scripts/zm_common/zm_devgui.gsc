@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\blackboard.gsc;
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\core_common\ai\zombie_shared.gsc;
@@ -60,11 +59,11 @@
     // Checksum 0x2d484b07, Offset: 0x218
     // Size: 0x25c
     function __init__() {
-        setdvar(#"zombie_devgui", "<unknown string>");
-        setdvar(#"scr_force_weapon", "<unknown string>");
+        setdvar(#"zombie_devgui", "<dev string:x38>");
+        setdvar(#"scr_force_weapon", "<dev string:x38>");
         setdvar(#"scr_zombie_round", 1);
         setdvar(#"scr_zombie_dogs", 1);
-        setdvar(#"scr_spawn_tesla", "<unknown string>");
+        setdvar(#"scr_spawn_tesla", "<dev string:x38>");
         setdvar(#"scr_zombie_variant_type", -1);
         level.devgui_add_weapon = &devgui_add_weapon;
         level.devgui_add_ability = &devgui_add_ability;
@@ -75,7 +74,7 @@
         thread devgui_zombie_healthbar();
         thread dev::devgui_test_chart_think();
         if (!isdefined(getdvar(#"scr_testscriptruntimeerror"))) {
-            setdvar(#"scr_testscriptruntimeerror", "<unknown string>");
+            setdvar(#"scr_testscriptruntimeerror", "<dev string:x3b>");
         }
         level thread dev::body_customization_devgui(0);
         thread testscriptruntimeerror();
@@ -116,7 +115,7 @@
         test_scores = array(1, 10, 50, 100, 3500, 9999);
         i = 0;
         foreach (score in test_scores) {
-            adddebugcommand("<unknown string>" + score + "<unknown string>" + i + "<unknown string>" + score + "<unknown string>");
+            adddebugcommand("<dev string:x42>" + score + "<dev string:x65>" + i + "<dev string:x69>" + score + "<dev string:x8f>");
             i++;
         }
     }
@@ -126,15 +125,15 @@
     // Checksum 0xc6876dbf, Offset: 0x678
     // Size: 0x1f8
     function function_5ac8947e() {
-        setdvar(#"zombie_devgui_hud", "<unknown string>");
+        setdvar(#"zombie_devgui_hud", "<dev string:x38>");
         while (true) {
-            cmd = getdvar(#"zombie_devgui_hud", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvar(#"zombie_devgui_hud", "<dev string:x38>");
+            if (cmd == "<dev string:x38>") {
                 wait(0.1);
                 continue;
             }
-            if (strstartswith(cmd, "<unknown string>")) {
-                str = strreplace(cmd, "<unknown string>", "<unknown string>");
+            if (strstartswith(cmd, "<dev string:x95>")) {
+                str = strreplace(cmd, "<dev string:x95>", "<dev string:x38>");
                 score = int(str);
                 players = getplayers();
                 foreach (player in players) {
@@ -144,7 +143,7 @@
                     }
                 }
             }
-            setdvar(#"zombie_devgui_hud", "<unknown string>");
+            setdvar(#"zombie_devgui_hud", "<dev string:x38>");
         }
     }
 
@@ -153,7 +152,7 @@
     // Checksum 0x65edaa59, Offset: 0x878
     // Size: 0x44
     function player_on_connect() {
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:xa6>");
         wait(1);
         if (isdefined(self)) {
             zombie_devgui_player_menu(self);
@@ -165,7 +164,7 @@
     // Checksum 0x718ad292, Offset: 0x8c8
     // Size: 0x44
     function zombie_devgui_player_menu_clear(playername) {
-        rootclear = "<unknown string>" + playername + "<unknown string>";
+        rootclear = "<dev string:xc1>" + playername + "<dev string:xe0>";
         adddebugcommand(rootclear);
     }
 
@@ -175,13 +174,13 @@
     // Size: 0xb4
     function function_c7dd7a17(archetype, var_9fde8624) {
         if (!isdefined(var_9fde8624)) {
-            var_9fde8624 = "<unknown string>";
+            var_9fde8624 = "<dev string:x38>";
         }
         displayname = archetype;
-        if (isdefined(var_9fde8624) && var_9fde8624 != "<unknown string>") {
-            displayname = displayname + "<unknown string>" + var_9fde8624;
+        if (isdefined(var_9fde8624) && var_9fde8624 != "<dev string:x38>") {
+            displayname = displayname + "<dev string:xe6>" + var_9fde8624;
         }
-        adddebugcommand("<unknown string>" + displayname + "<unknown string>" + archetype + "<unknown string>" + var_9fde8624 + "<unknown string>");
+        adddebugcommand("<dev string:xea>" + displayname + "<dev string:x112>" + archetype + "<dev string:xe6>" + var_9fde8624 + "<dev string:x13c>");
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -189,7 +188,7 @@
     // Checksum 0x6aab7568, Offset: 0x9d8
     // Size: 0x3dc
     function private function_2f5772bf(cmd) {
-        if (strstartswith(cmd, "<unknown string>")) {
+        if (strstartswith(cmd, "<dev string:x141>")) {
             player = level.players[0];
             direction = player getplayerangles();
             direction_vec = anglestoforward(direction);
@@ -197,8 +196,8 @@
             direction_vec = (direction_vec[0] * 8000, direction_vec[1] * 8000, direction_vec[2] * 8000);
             trace = bullettrace(eye, eye + direction_vec, 0, undefined);
             ai = undefined;
-            ai_info = strreplace(cmd, "<unknown string>", "<unknown string>");
-            ai_info = strtok(ai_info, "<unknown string>");
+            ai_info = strreplace(cmd, "<dev string:x157>", "<dev string:x38>");
+            ai_info = strtok(ai_info, "<dev string:xe6>");
             aitype = ai_info[0];
             if (ai_info.size > 1) {
                 var_9fde8624 = ai_info[1];
@@ -211,7 +210,7 @@
                 }
             }
             if (!isdefined(ai_spawner)) {
-                iprintln("<unknown string>" + aitype);
+                iprintln("<dev string:x16e>" + aitype);
                 return;
             }
             ai_spawner.script_forcespawn = 1;
@@ -238,26 +237,26 @@
     function zombie_devgui_player_menu(player) {
         zombie_devgui_player_menu_clear(player.name);
         ip1 = player getentitynumber() + 1;
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ip1 + "<unknown string>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x1ae>" + ip1 + "<dev string:x1d9>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x1e5>" + ip1 + "<dev string:x212>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x221>" + ip1 + "<dev string:x24c>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x25c>" + ip1 + "<dev string:x28b>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x298>" + ip1 + "<dev string:x2c4>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x2d1>" + ip1 + "<dev string:x2fd>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x30d>" + ip1 + "<dev string:x332>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x33d>" + ip1 + "<dev string:x364>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x371>" + ip1 + "<dev string:x39c>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x3ad>" + ip1 + "<dev string:x3dc>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x3f0>" + ip1 + "<dev string:x422>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x439>" + ip1 + "<dev string:x464>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x473>" + ip1 + "<dev string:x4a0>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x4b0>" + ip1 + "<dev string:x4de>");
+        adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x4ec>" + ip1 + "<dev string:x51b>");
         if (isdefined(level.validcharacters)) {
             for (i = 0; i < level.validcharacters.size; i++) {
                 ci = level.validcharacters[i];
                 var_b82273f = getcharacterfields(ci, currentsessionmode());
-                adddebugcommand("<unknown string>" + player.name + "<unknown string>" + ip1 + "<unknown string>" + ci + "<unknown string>" + var_b82273f.chrname + "<unknown string>" + ci + 1 + "<unknown string>" + ip1 + "<unknown string>" + ci + "<unknown string>");
+                adddebugcommand("<dev string:x18c>" + player.name + "<dev string:x1a8>" + ip1 + "<dev string:x52a>" + ci + "<dev string:x547>" + var_b82273f.chrname + "<dev string:x65>" + ci + 1 + "<dev string:x54b>" + ip1 + "<dev string:x569>" + ci + "<dev string:xe0>");
             }
         }
         if (isdefined(level.var_e2c54606)) {
@@ -302,7 +301,7 @@
                     }
                     circle(print_origin, 30, color);
                     print3d(print_origin, function_9e72a96(var_375627f0), color, 1, 0.5);
-                    print3d(print_origin + (0, 0, -10), "<unknown string>" + zone_path.cost, color, 1, 0.5);
+                    print3d(print_origin + (0, 0, -10), "<dev string:x578>" + zone_path.cost, color, 1, 0.5);
                     if (isdefined(zone_path.to_zone)) {
                         to_zone = level.zones[zone_path.to_zone];
                         if (isdefined(to_zone.nodes[0])) {
@@ -339,14 +338,14 @@
     // Checksum 0x5be74d84, Offset: 0x18d8
     // Size: 0x220
     function zombie_devgui_validation_commands() {
-        setdvar(#"validation_devgui_command", "<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        setdvar(#"validation_devgui_command", "<dev string:x38>");
+        adddebugcommand("<dev string:x580>");
+        adddebugcommand("<dev string:x5ca>");
+        adddebugcommand("<dev string:x619>");
+        adddebugcommand("<dev string:x66a>");
         while (true) {
             cmd = getdvarstring(#"validation_devgui_command");
-            if (cmd != "<unknown string>") {
+            if (cmd != "<dev string:x38>") {
                 switch (cmd) {
                 case #"structs":
                     thread bunker_entrance_zoned();
@@ -369,7 +368,7 @@
                 default:
                     break;
                 }
-                setdvar(#"validation_devgui_command", "<unknown string>");
+                setdvar(#"validation_devgui_command", "<dev string:x38>");
             }
             util::wait_network_frame();
         }
@@ -434,8 +433,8 @@
                     origin = zone.volumes[0].origin;
                 }
                 thread drawvalidation(origin, zone.name);
-                println("<unknown string>" + zone.name);
-                iprintlnbold("<unknown string>" + zone.name);
+                println("<dev string:x6c1>" + zone.name);
+                iprintlnbold("<dev string:x6c1>" + zone.name);
             }
             return 0;
         }
@@ -455,7 +454,7 @@
                 enemy = zombie_utility::spawn_zombie(spawner, spawner.targetname, spawn_point);
             }
             spawn_point_origin = spawn_point.origin;
-            if (isdefined(spawn_point.script_string) && spawn_point.script_string != "<unknown string>") {
+            if (isdefined(spawn_point.script_string) && spawn_point.script_string != "<dev string:x6e8>") {
                 spawn_point_origin = enemy validate_to_board(spawn_point, spawn_point_origin);
             }
             if (!ispointonnavmesh(spawn_point_origin, enemy getpathfindingradius() + 1)) {
@@ -463,12 +462,12 @@
             } else {
                 new_spawn_point_origin = spawn_point_origin;
             }
-            var_d37fcf94 = isdefined(spawn_point.script_noteworthy) && !issubstr(spawn_point.script_noteworthy, "<unknown string>");
+            var_d37fcf94 = isdefined(spawn_point.script_noteworthy) && !issubstr(spawn_point.script_noteworthy, "<dev string:x6f5>");
             if (isdefined(var_d37fcf94) && var_d37fcf94 && !isdefined(new_spawn_point_origin) && !(isdefined(spawn_point.var_f0596bbb) && spawn_point.var_f0596bbb)) {
                 level.validation_errors_count++;
                 thread drawvalidation(spawn_point_origin);
-                println("<unknown string>" + spawn_point_origin);
-                iprintlnbold("<unknown string>" + spawn_point_origin);
+                println("<dev string:x70c>" + spawn_point_origin);
+                iprintlnbold("<dev string:x747>" + spawn_point_origin);
                 spawn_point.var_f0596bbb = 1;
             }
             if (!isdefined(new_spawn_point_origin)) {
@@ -519,11 +518,11 @@
                     }
                 }
                 if (!var_4d7c27e3) {
-                    iprintlnbold("<unknown string>" + spawner.aitype);
+                    iprintlnbold("<dev string:x783>" + spawner.aitype);
                 }
             }
-            println("<unknown string>" + level.validation_errors_count);
-            iprintlnbold("<unknown string>" + level.validation_errors_count);
+            println("<dev string:x7b0>" + level.validation_errors_count);
+            iprintlnbold("<dev string:x7b0>" + level.validation_errors_count);
             level.validation_errors_count = undefined;
             return;
         }
@@ -547,11 +546,11 @@
                 level.validation_errors_count++;
                 thread drawvalidation(spawn_point_origin_backup, undefined, undefined, node.origin, undefined, self.archetype);
                 if (isdefined(self.archetype)) {
-                    println("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + spawn_point_origin_backup + "<unknown string>" + spawn_point.targetname);
-                    iprintlnbold("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + spawn_point_origin_backup + "<unknown string>" + spawn_point.targetname);
+                    println("<dev string:x7db>" + function_9e72a96(self.archetype) + "<dev string:x7eb>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname);
+                    iprintlnbold("<dev string:x7db>" + function_9e72a96(self.archetype) + "<dev string:x7eb>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname);
                 } else {
-                    println("<unknown string>" + spawn_point_origin_backup + "<unknown string>" + spawn_point.targetname);
-                    iprintlnbold("<unknown string>" + spawn_point_origin_backup + "<unknown string>" + spawn_point.targetname);
+                    println("<dev string:x827>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname);
+                    iprintlnbold("<dev string:x827>" + spawn_point_origin_backup + "<dev string:x80c>" + spawn_point.targetname);
                 }
             }
             nodeforward = anglestoforward(node.angles);
@@ -580,11 +579,11 @@
                         level.validation_errors_count++;
                         thread drawvalidation(new_spawn_point_origin, undefined, new_wait_point, undefined, undefined, self.archetype);
                         if (isdefined(self.archetype)) {
-                            println("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
-                            iprintlnbold("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
+                            println("<dev string:x85b>" + function_9e72a96(self.archetype) + "<dev string:x7eb>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname);
+                            iprintlnbold("<dev string:x7db>" + function_9e72a96(self.archetype) + "<dev string:x7eb>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname);
                         } else {
-                            println("<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
-                            iprintlnbold("<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
+                            println("<dev string:x827>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname);
+                            iprintlnbold("<dev string:x827>" + new_spawn_point_origin + "<dev string:x86a>" + spawn_point.targetname);
                         }
                         return 0;
                     }
@@ -624,33 +623,33 @@
                 }
                 if (isdefined(zone_name)) {
                     circle(origin, 32, (1, 0, 0));
-                    print3d(origin, "<unknown string>" + zone_name, (1, 1, 1), 1, 0.5);
+                    print3d(origin, "<dev string:x88c>" + zone_name, (1, 1, 1), 1, 0.5);
                 } else if (isdefined(nav_mesh_wait_point)) {
                     circle(origin, 32, (0, 0, 1));
                     if (isdefined(archetype)) {
-                        print3d(origin, archetype + "<unknown string>" + origin, (1, 1, 1), 1, 0.5);
+                        print3d(origin, archetype + "<dev string:x8a9>" + origin, (1, 1, 1), 1, 0.5);
                     } else {
-                        print3d(origin, "<unknown string>" + origin, (1, 1, 1), 1, 0.5);
+                        print3d(origin, "<dev string:x8cc>" + origin, (1, 1, 1), 1, 0.5);
                     }
                     line(origin, nav_mesh_wait_point, (1, 0, 0));
                     circle(nav_mesh_wait_point, 32, (1, 0, 0));
-                    print3d(nav_mesh_wait_point, "<unknown string>" + nav_mesh_wait_point, (1, 1, 1), 1, 0.5);
+                    print3d(nav_mesh_wait_point, "<dev string:x8f5>" + nav_mesh_wait_point, (1, 1, 1), 1, 0.5);
                 } else if (isdefined(boards_point)) {
                     circle(origin, 32, (0, 0, 1));
                     if (isdefined(archetype)) {
-                        print3d(origin, archetype + "<unknown string>" + origin, (1, 1, 1), 1, 0.5);
+                        print3d(origin, archetype + "<dev string:x8a9>" + origin, (1, 1, 1), 1, 0.5);
                     } else {
-                        print3d(origin, "<unknown string>" + origin, (1, 1, 1), 1, 0.5);
+                        print3d(origin, "<dev string:x8cc>" + origin, (1, 1, 1), 1, 0.5);
                     }
                     line(origin, boards_point, (1, 0, 0));
                     circle(boards_point, 32, (1, 0, 0));
-                    print3d(boards_point, "<unknown string>" + boards_point, (1, 1, 1), 1, 0.5);
+                    print3d(boards_point, "<dev string:x907>" + boards_point, (1, 1, 1), 1, 0.5);
                 } else if (isdefined(zone_node)) {
                     circle(origin, 32, (1, 0, 0));
-                    print3d(origin, "<unknown string>" + (isdefined(zone_node.targetname) ? zone_node.targetname : "<unknown string>") + "<unknown string>" + origin + "<unknown string>", (1, 1, 1), 1, 0.5);
+                    print3d(origin, "<dev string:x918>" + (isdefined(zone_node.targetname) ? zone_node.targetname : "<dev string:x38>") + "<dev string:x925>" + origin + "<dev string:x92c>", (1, 1, 1), 1, 0.5);
                 } else {
                     circle(origin, 32, (0, 0, 1));
-                    print3d(origin, "<unknown string>" + origin, (1, 1, 1), 1, 0.5);
+                    print3d(origin, "<dev string:x946>" + origin, (1, 1, 1), 1, 0.5);
                 }
             }
             waitframe(1);
@@ -801,15 +800,15 @@
     // Size: 0xf4
     function function_bcc8843e(weapon_name, up, root) {
         util::waittill_can_add_debug_command();
-        rootslash = "<unknown string>";
+        rootslash = "<dev string:x38>";
         if (isdefined(root) && root.size) {
-            rootslash = root + "<unknown string>";
+            rootslash = root + "<dev string:x95f>";
         }
-        uppath = "<unknown string>" + up;
+        uppath = "<dev string:x95f>" + up;
         if (up.size < 1) {
-            uppath = "<unknown string>";
+            uppath = "<dev string:x38>";
         }
-        cmd = "<unknown string>" + rootslash + weapon_name + uppath + "<unknown string>" + weapon_name + "<unknown string>";
+        cmd = "<dev string:x963>" + rootslash + weapon_name + uppath + "<dev string:x987>" + weapon_name + "<dev string:xe0>";
         adddebugcommand(cmd);
     }
 
@@ -820,23 +819,23 @@
     function devgui_add_weapon_entry(weapon, root, n_order) {
         weapon_name = getweaponname(weapon);
         if (isdefined(root) && root.size) {
-            adddebugcommand("<unknown string>" + root + "<unknown string>" + n_order + "<unknown string>" + weapon_name + "<unknown string>" + weapon_name + "<unknown string>");
+            adddebugcommand("<dev string:x9b3>" + root + "<dev string:x65>" + n_order + "<dev string:x95f>" + weapon_name + "<dev string:x9cd>" + weapon_name + "<dev string:xe0>");
             return;
         }
         if (getdvarint(#"zm_debug_attachments", 0)) {
             var_876795bf = weapon.supportedattachments;
-            weapon_root = "<unknown string>" + weapon_name + "<unknown string>";
-            adddebugcommand(weapon_root + weapon_name + "<unknown string>" + weapon_name + "<unknown string>");
+            weapon_root = "<dev string:x9b3>" + weapon_name + "<dev string:x95f>";
+            adddebugcommand(weapon_root + weapon_name + "<dev string:x9cd>" + weapon_name + "<dev string:xe0>");
             foreach (var_96bc131f in var_876795bf) {
-                if (var_96bc131f != "<unknown string>" && var_96bc131f != "<unknown string>") {
+                if (var_96bc131f != "<dev string:x3b>" && var_96bc131f != "<dev string:x9e9>") {
                     util::waittill_can_add_debug_command();
-                    var_29c3a74d = weapon_name + "<unknown string>" + var_96bc131f;
-                    adddebugcommand(weapon_root + var_29c3a74d + "<unknown string>" + var_29c3a74d + "<unknown string>");
+                    var_29c3a74d = weapon_name + "<dev string:x9f0>" + var_96bc131f;
+                    adddebugcommand(weapon_root + var_29c3a74d + "<dev string:x9cd>" + var_29c3a74d + "<dev string:xe0>");
                 }
             }
             return;
         }
-        adddebugcommand("<unknown string>" + weapon_name + "<unknown string>" + weapon_name + "<unknown string>");
+        adddebugcommand("<dev string:x9b3>" + weapon_name + "<dev string:x9cd>" + weapon_name + "<dev string:xe0>");
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -846,19 +845,19 @@
     function devgui_add_weapon(weapon, upgrade, in_box, cost, weaponvo, weaponvoresp, ammo_cost) {
         level endon(#"game_ended");
         if (in_box) {
-            level thread function_bcc8843e(getweaponname(weapon), "<unknown string>", "<unknown string>");
+            level thread function_bcc8843e(getweaponname(weapon), "<dev string:x38>", "<dev string:x38>");
         }
         util::waittill_can_add_debug_command();
         if (zm_loadout::is_offhand_weapon(weapon) && !zm_loadout::is_melee_weapon(weapon)) {
-            devgui_add_weapon_entry(weapon, "<unknown string>", 2);
+            devgui_add_weapon_entry(weapon, "<dev string:x9f6>", 2);
             return;
         }
         if (zm_loadout::is_melee_weapon(weapon)) {
-            devgui_add_weapon_entry(weapon, "<unknown string>", 3);
+            devgui_add_weapon_entry(weapon, "<dev string:xa00>", 3);
             return;
         }
         if (zm_weapons::is_wonder_weapon(weapon)) {
-            devgui_add_weapon_entry(weapon, "<unknown string>", 5);
+            devgui_add_weapon_entry(weapon, "<dev string:xa08>", 5);
             return;
         }
         devgui_add_weapon_entry(weapon);
@@ -879,7 +878,7 @@
                 if (players.size >= 1) {
                     players[0] thread zombie_devgui_weapon_give(level.zombie_devgui_gun);
                 }
-                setdvar(#"hash_1c9225f4f6e82068", "<unknown string>");
+                setdvar(#"hash_1c9225f4f6e82068", "<dev string:x38>");
             }
             wait(0.1);
             cmd = getdvarstring(#"hash_1c9228f4f6e82581");
@@ -889,7 +888,7 @@
                 if (players.size >= 2) {
                     players[1] thread zombie_devgui_weapon_give(level.zombie_devgui_gun);
                 }
-                setdvar(#"hash_1c9228f4f6e82581", "<unknown string>");
+                setdvar(#"hash_1c9228f4f6e82581", "<dev string:x38>");
             }
             wait(0.1);
             cmd = getdvarstring(#"hash_1c9227f4f6e823ce");
@@ -899,7 +898,7 @@
                 if (players.size >= 3) {
                     players[2] thread zombie_devgui_weapon_give(level.zombie_devgui_gun);
                 }
-                setdvar(#"hash_1c9227f4f6e823ce", "<unknown string>");
+                setdvar(#"hash_1c9227f4f6e823ce", "<dev string:x38>");
             }
             wait(0.1);
             cmd = getdvarstring(#"hash_1c922af4f6e828e7");
@@ -909,7 +908,7 @@
                 if (players.size >= 4) {
                     players[3] thread zombie_devgui_weapon_give(level.zombie_devgui_gun);
                 }
-                setdvar(#"hash_1c922af4f6e828e7", "<unknown string>");
+                setdvar(#"hash_1c922af4f6e828e7", "<dev string:x38>");
             }
         }
     }
@@ -926,7 +925,7 @@
             if (isdefined(cmd) && cmd.size > 0) {
                 level.zombie_devgui_gun = cmd;
                 array::thread_all(getplayers(), &zombie_devgui_weapon_give, level.zombie_devgui_gun);
-                setdvar(#"zombie_devgui_gun", "<unknown string>");
+                setdvar(#"zombie_devgui_gun", "<dev string:x38>");
             }
         }
     }
@@ -936,7 +935,7 @@
     // Checksum 0x4ef46c56, Offset: 0x41a0
     // Size: 0x22c
     function zombie_devgui_weapon_give(weapon_name) {
-        split = strtok(function_9e72a96(weapon_name), "<unknown string>");
+        split = strtok(function_9e72a96(weapon_name), "<dev string:x9f0>");
         switch (split.size) {
         case 1:
         default:
@@ -1007,16 +1006,16 @@
             return;
         }
         if (!(isdefined(level.devgui_watch_abilities) && level.devgui_watch_abilities)) {
-            cmd = "<unknown string>";
+            cmd = "<dev string:xa18>";
             adddebugcommand(cmd);
-            cmd = "<unknown string>";
+            cmd = "<dev string:xa74>";
             adddebugcommand(cmd);
             level thread zombie_ability_devgui_think();
             level.devgui_watch_abilities = 1;
         }
-        cmd = "<unknown string>" + name + "<unknown string>" + name + "<unknown string>";
+        cmd = "<dev string:xace>" + name + "<dev string:xaf2>" + name + "<dev string:xe0>";
         adddebugcommand(cmd);
-        cmd = "<unknown string>" + name + "<unknown string>" + name + "<unknown string>";
+        cmd = "<dev string:xb17>" + name + "<dev string:xb40>" + name + "<dev string:xe0>";
         adddebugcommand(cmd);
     }
 
@@ -1047,10 +1046,10 @@
             wait(0.25);
             cmd = getdvarstring(#"zombie_devgui_give_ability");
             if (!isdefined(level.zombie_devgui_give_ability) || level.zombie_devgui_give_ability != cmd) {
-                if (cmd == "<unknown string>") {
-                    level flag::set("<unknown string>");
-                } else if (cmd == "<unknown string>") {
-                    level flag::clear("<unknown string>");
+                if (cmd == "<dev string:xb65>") {
+                    level flag::set("<dev string:xb70>");
+                } else if (cmd == "<dev string:xb85>") {
+                    level flag::clear("<dev string:xb70>");
                 } else {
                     level.zombie_devgui_give_ability = cmd;
                     array::thread_all(getplayers(), &zombie_devgui_ability_give, level.zombie_devgui_give_ability);
@@ -1078,7 +1077,7 @@
             rate = self.health / self.maxhealth;
         }
         color = (1 - rate, rate, 0);
-        text = "<unknown string>" + int(self.health);
+        text = "<dev string:x38>" + int(self.health);
         print3d(self.origin + (0, 0, 0), text, color, 1, 0.5, 1);
     }
 
@@ -1091,7 +1090,7 @@
             if (getdvarint(#"scr_zombie_healthbars", 0) == 1) {
                 e_player = getplayers()[0];
                 if (isalive(e_player)) {
-                    a_ai_zombies = getaispeciesarray("<unknown string>", "<unknown string>");
+                    a_ai_zombies = getaispeciesarray("<dev string:xb8f>", "<dev string:xb8f>");
                     foreach (ai_zombie in a_ai_zombies) {
                         ai_zombie zombie_healthbar(e_player.origin, 360000);
                     }
@@ -1106,7 +1105,7 @@
     // Checksum 0xca5f9b83, Offset: 0x4bd0
     // Size: 0x86
     function zombie_devgui_watch_input() {
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:xa6>");
         wait(1);
         players = getplayers();
         for (i = 0; i < players.size; i++) {
@@ -1119,7 +1118,7 @@
     // Checksum 0x8afe681c, Offset: 0x4c60
     // Size: 0x5c
     function damage_player() {
-        self val::set(#"damage_player", "<unknown string>", 1);
+        self val::set(#"damage_player", "<dev string:xb95>", 1);
         self dodamage(self.health / 2, self.origin);
     }
 
@@ -1128,7 +1127,7 @@
     // Checksum 0xdc1d6321, Offset: 0x4cc8
     // Size: 0xb4
     function kill_player() {
-        self val::set(#"kill_player", "<unknown string>", 1);
+        self val::set(#"kill_player", "<dev string:xb95>", 1);
         death_from = (randomfloatrange(-20, 20), randomfloatrange(-20, 20), randomfloatrange(-20, 20));
         self dodamage(self.health + 666, self.origin + death_from);
     }
@@ -1744,24 +1743,24 @@
                 zombie_devgui_take_weapon();
                 break;
             case #"power_on":
-                level flag::set("<unknown string>");
-                level clientfield::set("<unknown string>", 1);
-                power_trigs = getentarray("<unknown string>", "<unknown string>");
+                level flag::set("<dev string:xba2>");
+                level clientfield::set("<dev string:xbad>", 1);
+                power_trigs = getentarray("<dev string:xbbf>", "<dev string:xbd1>");
                 foreach (trig in power_trigs) {
                     if (isdefined(trig.script_int)) {
-                        level flag::set("<unknown string>" + trig.script_int);
-                        level clientfield::set("<unknown string>", trig.script_int + 1);
+                        level flag::set("<dev string:xba2>" + trig.script_int);
+                        level clientfield::set("<dev string:xbad>", trig.script_int + 1);
                     }
                 }
                 break;
             case #"power_off":
-                level flag::clear("<unknown string>");
-                level clientfield::set("<unknown string>", 0);
-                power_trigs = getentarray("<unknown string>", "<unknown string>");
+                level flag::clear("<dev string:xba2>");
+                level clientfield::set("<dev string:xbde>", 0);
+                power_trigs = getentarray("<dev string:xbbf>", "<dev string:xbd1>");
                 foreach (trig in power_trigs) {
                     if (isdefined(trig.script_int)) {
-                        level flag::clear("<unknown string>" + trig.script_int);
-                        level clientfield::set("<unknown string>", trig.script_int);
+                        level flag::clear("<dev string:xba2>" + trig.script_int);
+                        level clientfield::set("<dev string:xbde>", trig.script_int);
                     }
                 }
                 break;
@@ -1902,7 +1901,7 @@
                 }
                 break;
             }
-            setdvar(#"zombie_devgui", "<unknown string>");
+            setdvar(#"zombie_devgui", "<dev string:x38>");
             wait(0.5);
         }
     }
@@ -1999,7 +1998,7 @@
     function devgui_zombie_spawn() {
         player = getplayers()[0];
         spawnername = undefined;
-        spawnername = "<unknown string>";
+        spawnername = "<dev string:xbf1>";
         direction = player getplayerangles();
         direction_vec = anglestoforward(direction);
         eye = player geteye();
@@ -2007,11 +2006,11 @@
         direction_vec = (direction_vec[0] * scale, direction_vec[1] * scale, direction_vec[2] * scale);
         trace = bullettrace(eye, eye + direction_vec, 0, undefined);
         guy = undefined;
-        spawners = getentarray(spawnername, "<unknown string>");
+        spawners = getentarray(spawnername, "<dev string:xc02>");
         spawner = array::random(spawners);
         guy = zombie_utility::spawn_zombie(spawner);
         if (isdefined(guy)) {
-            guy.script_string = "<unknown string>";
+            guy.script_string = "<dev string:x6e8>";
             wait(0.5);
             guy forceteleport(trace[#"position"], player.angles + (0, 180, 0));
         }
@@ -2028,7 +2027,7 @@
         spawn = player.origin + forward * 25;
         guy = devgui_zombie_spawn();
         if (isdefined(guy)) {
-            guy pathmode("<unknown string>");
+            guy pathmode("<dev string:xc16>");
             guy forceteleport(spawn, player.angles);
         }
     }
@@ -2055,13 +2054,13 @@
         zombies = zombie_utility::get_round_enemy_array();
         foreach (zombie in zombies) {
             gib_style = [];
-            gib_style[gib_style.size] = "<unknown string>";
-            gib_style[gib_style.size] = "<unknown string>";
-            gib_style[gib_style.size] = "<unknown string>";
+            gib_style[gib_style.size] = "<dev string:xc22>";
+            gib_style[gib_style.size] = "<dev string:xc2c>";
+            gib_style[gib_style.size] = "<dev string:xc38>";
             gib_style = zombie_death::randomize_array(gib_style);
             zombie.a.gib_ref = gib_style[0];
             zombie zombie_utility::function_df5afb5e(1);
-            zombie allowedstances("<unknown string>");
+            zombie allowedstances("<dev string:xc43>");
             zombie setphysparams(15, 0, 24);
             zombie allowpitchangle(1);
             zombie setpitchorient();
@@ -2077,18 +2076,18 @@
     // Size: 0x3e4
     function zombie_devgui_open_sesame() {
         setdvar(#"zombie_unlock_all", 1);
-        level flag::set("<unknown string>");
-        level clientfield::set("<unknown string>", 1);
-        power_trigs = getentarray("<unknown string>", "<unknown string>");
+        level flag::set("<dev string:xba2>");
+        level clientfield::set("<dev string:xbad>", 1);
+        power_trigs = getentarray("<dev string:xbbf>", "<dev string:xbd1>");
         foreach (trig in power_trigs) {
             if (isdefined(trig.script_int)) {
-                level flag::set("<unknown string>" + trig.script_int);
-                level clientfield::set("<unknown string>", trig.script_int + 1);
+                level flag::set("<dev string:xba2>" + trig.script_int);
+                level clientfield::set("<dev string:xbad>", trig.script_int + 1);
             }
         }
         players = getplayers();
         array::thread_all(players, &zombie_devgui_give_money);
-        zombie_doors = getentarray("<unknown string>", "<unknown string>");
+        zombie_doors = getentarray("<dev string:xc4c>", "<dev string:xbd1>");
         for (i = 0; i < zombie_doors.size; i++) {
             if (!(isdefined(zombie_doors[i].has_been_opened) && zombie_doors[i].has_been_opened)) {
                 zombie_doors[i] notify(#"trigger", {#activator:players[0]});
@@ -2098,12 +2097,12 @@
             }
             waitframe(1);
         }
-        zombie_airlock_doors = getentarray("<unknown string>", "<unknown string>");
+        zombie_airlock_doors = getentarray("<dev string:xc5a>", "<dev string:xbd1>");
         for (i = 0; i < zombie_airlock_doors.size; i++) {
             zombie_airlock_doors[i] notify(#"trigger", {#activator:players[0]});
             waitframe(1);
         }
-        zombie_debris = getentarray("<unknown string>", "<unknown string>");
+        zombie_debris = getentarray("<dev string:xc6f>", "<dev string:xbd1>");
         for (i = 0; i < zombie_debris.size; i++) {
             if (isdefined(zombie_debris[i])) {
                 zombie_debris[i] notify(#"trigger", {#activator:players[0]});
@@ -2121,7 +2120,7 @@
     // Size: 0xa4
     function any_player_in_noclip() {
         foreach (player in getplayers()) {
-            if (player isinmovemode("<unknown string>", "<unknown string>")) {
+            if (player isinmovemode("<dev string:xc7f>", "<dev string:xc85>")) {
                 return 1;
             }
         }
@@ -2135,7 +2134,7 @@
     function diable_fog_in_noclip() {
         level.fog_disabled_in_noclip = 1;
         level endon(#"allowfoginnoclip");
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:xa6>");
         while (true) {
             while (!any_player_in_noclip()) {
                 wait(1);
@@ -2189,10 +2188,10 @@
         assert(isplayer(self));
         assert(isalive(self));
         if (self.score > 100) {
-            self zm_score::player_reduce_points("<unknown string>");
+            self zm_score::player_reduce_points("<dev string:xc8e>");
             return;
         }
-        self zm_score::player_reduce_points("<unknown string>");
+        self zm_score::player_reduce_points("<dev string:xc9a>");
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -2227,7 +2226,7 @@
         assert(isdefined(self));
         assert(isplayer(self));
         assert(isalive(self));
-        self addrankxp("<unknown string>", self.currentweapon, undefined, undefined, 1, amount / 50);
+        self addrankxp("<dev string:xca5>", self.currentweapon, undefined, undefined, 1, amount / 50);
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -2246,11 +2245,11 @@
         assert(isalive(player));
         level.devcheater = 1;
         if (player hasperk(#"specialty_playeriszombie")) {
-            println("<unknown string>");
+            println("<dev string:xcac>");
             player zm_turned::turn_to_human();
             return;
         }
-        println("<unknown string>");
+        println("<dev string:xcc2>");
         player zm_turned::turn_to_zombie();
     }
 
@@ -2290,7 +2289,7 @@
     // Size: 0x1fc
     function function_84f0a909() {
         entnum = self getentitynumber();
-        paps = getentarray("<unknown string>", "<unknown string>");
+        paps = getentarray("<dev string:xcd9>", "<dev string:xbd1>");
         pap = paps[0];
         if (!isdefined(pap)) {
             return;
@@ -2621,10 +2620,10 @@
         }
         if (players.size > playerindex) {
             if (onoff) {
-                players[playerindex] val::set(#"zombie_devgui", "<unknown string>", 0);
+                players[playerindex] val::set(#"zombie_devgui", "<dev string:xb95>", 0);
                 return;
             }
-            players[playerindex] val::reset(#"zombie_devgui", "<unknown string>");
+            players[playerindex] val::reset(#"zombie_devgui", "<dev string:xb95>");
         }
     }
 
@@ -2636,7 +2635,7 @@
         assert(isdefined(self));
         assert(isplayer(self));
         assert(isalive(self));
-        self val::set(#"devgui_kill", "<unknown string>", 1);
+        self val::set(#"devgui_kill", "<dev string:xb95>", 1);
         death_from = (randomfloatrange(-20, 20), randomfloatrange(-20, 20), randomfloatrange(-20, 20));
         self dodamage(self.health + 666, self.origin + death_from);
     }
@@ -2693,9 +2692,9 @@
         }
         self.devgui_ignoreme = !self.devgui_ignoreme;
         if (self.devgui_ignoreme) {
-            self val::set(#"devgui", "<unknown string>");
+            self val::set(#"devgui", "<dev string:xceb>");
         } else {
-            self val::reset(#"devgui", "<unknown string>");
+            self val::reset(#"devgui", "<dev string:xceb>");
         }
         if (self.ignoreme) {
             setdvar(#"ai_showfailedpaths", 0);
@@ -2789,7 +2788,7 @@
         }
         foreach (player in getplayers()) {
             foreach (perk in perks) {
-                perk_str = perk + "<unknown string>";
+                perk_str = perk + "<dev string:xcf6>";
                 player notify(perk_str);
             }
         }
@@ -2998,7 +2997,7 @@
         if (!isdefined(level.enemy_dog_spawns) || level.enemy_dog_spawns.size < 1) {
             return;
         }
-        if (!level flag::get("<unknown string>")) {
+        if (!level flag::get("<dev string:xcfe>")) {
             setdvar(#"force_dogs", num_dogs);
         }
         zombie_devgui_goto_round(level.round_number + 1);
@@ -3023,16 +3022,16 @@
             return;
         }
         if (level.zombie_vars.size > 0) {
-            println("<unknown string>");
+            println("<dev string:xd0a>");
         } else {
             return;
         }
         var_names = getarraykeys(level.zombie_vars);
         for (i = 0; i < level.zombie_vars.size; i++) {
             key = var_names[i];
-            println(key + "<unknown string>" + zombie_utility::get_zombie_var(key));
+            println(key + "<dev string:xd27>" + zombie_utility::get_zombie_var(key));
         }
-        println("<unknown string>");
+        println("<dev string:xd30>");
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -3044,7 +3043,7 @@
         reviver = players[0];
         level.devcheater = 1;
         for (i = 0; i < players.size; i++) {
-            if (!players[i] laststand::player_is_in_laststand() && players[i].sessionstate !== "<unknown string>") {
+            if (!players[i] laststand::player_is_in_laststand() && players[i].sessionstate !== "<dev string:xd53>") {
                 weap = players[i] getcurrentweapon();
                 weapon = players[i] get_upgrade(weap);
                 if (isdefined(weapon)) {
@@ -3067,7 +3066,7 @@
         reviver = players[0];
         level.devcheater = 1;
         for (i = 0; i < players.size; i++) {
-            if (!players[i] laststand::player_is_in_laststand() && players[i].sessionstate !== "<unknown string>") {
+            if (!players[i] laststand::player_is_in_laststand() && players[i].sessionstate !== "<dev string:xd53>") {
                 weap = players[i] getcurrentweapon();
                 if (isdefined(level.aat_in_use) && level.aat_in_use && zm_weapons::weapon_supports_aat(weap)) {
                     players[i] thread aat::acquire(weap);
@@ -3086,7 +3085,7 @@
         reviver = players[0];
         level.devcheater = 1;
         for (i = 0; i < players.size; i++) {
-            if (!players[i] laststand::player_is_in_laststand() && players[i].sessionstate !== "<unknown string>") {
+            if (!players[i] laststand::player_is_in_laststand() && players[i].sessionstate !== "<dev string:xd53>") {
                 weap = players[i] getcurrentweapon();
                 weapon = zm_weapons::get_base_weapon(weap);
                 players[i] takeweapon(weap);
@@ -3121,7 +3120,7 @@
         weapon_name = weapon.rootweapon.name;
         for (i = 0; i < 15; i++) {
             var_4a3def14 = tablelookup(table, 2, weapon_name, 0, i, 1);
-            if ("<unknown string>" == var_4a3def14) {
+            if ("<dev string:x38>" == var_4a3def14) {
                 break;
             }
             gunlevels[i] = int(var_4a3def14);
@@ -3238,7 +3237,7 @@
     function function_c8ee84ba() {
         players = getplayers();
         level.devcheater = 1;
-        a_weapons = enumerateweapons("<unknown string>");
+        a_weapons = enumerateweapons("<dev string:xd5f>");
         for (weapon_index = 0; weapon_index < a_weapons.size; weapon_index++) {
             weapon = a_weapons[weapon_index];
             itemindex = getbaseweaponitemindex(weapon);
@@ -3262,7 +3261,7 @@
     function function_c83c6fa() {
         players = getplayers();
         level.devcheater = 1;
-        a_weapons = enumerateweapons("<unknown string>");
+        a_weapons = enumerateweapons("<dev string:xd5f>");
         for (weapon_index = 0; weapon_index < a_weapons.size; weapon_index++) {
             weapon = a_weapons[weapon_index];
             itemindex = getbaseweaponitemindex(weapon);
@@ -3606,18 +3605,18 @@
             }
         }
         for (i = 0; i < 10; i++) {
-            zombie_devgui_give_powerup("<unknown string>", 1, self.origin);
+            zombie_devgui_give_powerup("<dev string:xd68>", 1, self.origin);
             wait(0.25);
         }
-        zombie_devgui_give_powerup("<unknown string>", 1, self.origin);
+        zombie_devgui_give_powerup("<dev string:xd74>", 1, self.origin);
         wait(0.25);
-        zombie_devgui_give_powerup("<unknown string>", 1, self.origin);
+        zombie_devgui_give_powerup("<dev string:xd81>", 1, self.origin);
         wait(0.25);
-        zombie_devgui_give_powerup("<unknown string>", 1, self.origin);
+        zombie_devgui_give_powerup("<dev string:xd91>", 1, self.origin);
         wait(0.25);
-        zombie_devgui_give_powerup("<unknown string>", 1, self.origin);
+        zombie_devgui_give_powerup("<dev string:xd9d>", 1, self.origin);
         wait(0.25);
-        zombie_devgui_give_powerup("<unknown string>", 1, self.origin);
+        zombie_devgui_give_powerup("<dev string:xda7>", 1, self.origin);
         wait(0.25);
     }
 
@@ -3650,13 +3649,13 @@
     // Checksum 0xa8dd2e12, Offset: 0xde30
     // Size: 0x94
     function robotsupportsovercover_manager_() {
-        if (level flag::get("<unknown string>")) {
-            level flag::clear("<unknown string>");
-            iprintln("<unknown string>");
+        if (level flag::get("<dev string:xdb6>")) {
+            level flag::clear("<dev string:xdb6>");
+            iprintln("<dev string:xdcc>");
             return;
         }
-        level flag::set("<unknown string>");
-        iprintln("<unknown string>");
+        level flag::set("<dev string:xdb6>");
+        iprintln("<dev string:xde5>");
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -3684,11 +3683,11 @@
                 foreach (node in nodes) {
                     if (node.type == #"begin" || node.type == #"end" || node.type == #"bad node") {
                         if (isdefined(node.animscript)) {
-                            zombie setblackboardattribute("<unknown string>", "<unknown string>");
-                            zombie setblackboardattribute("<unknown string>", node.animscript);
-                            table = "<unknown string>";
+                            zombie setblackboardattribute("<dev string:xdfc>", "<dev string:xe06>");
+                            zombie setblackboardattribute("<dev string:xe0e>", node.animscript);
+                            table = "<dev string:xe20>";
                             if (isdefined(crawler) && crawler) {
-                                table = "<unknown string>";
+                                table = "<dev string:xe32>";
                             }
                             if (isdefined(zombie.debug_traversal_ast)) {
                                 table = zombie.debug_traversal_ast;
@@ -3702,7 +3701,7 @@
                                 }
                                 continue;
                             }
-                            if (anim_results[#"animation"] == "<unknown string>") {
+                            if (anim_results[#"animation"] == "<dev string:xe4c>") {
                                 teleport = 1;
                             }
                         }
@@ -3735,7 +3734,7 @@
                         circle(node.origin, 16, circle_color);
                         print3d(node.origin, node.animscript, txt_color, 1, 0.5);
                         if (isdefined(node.bad_crawler_traverse) && node.bad_crawler_traverse) {
-                            print3d(node.origin + (0, 0, -12), "<unknown string>", (1, 0, 0), 1, 0.5);
+                            print3d(node.origin + (0, 0, -12), "<dev string:xe67>", (1, 0, 0), 1, 0.5);
                         }
                     }
                 }
@@ -3752,17 +3751,17 @@
         nodes = getallnodes();
         var_43e9aabd = [];
         foreach (node in nodes) {
-            if (isdefined(node.animscript) && node.animscript != "<unknown string>") {
+            if (isdefined(node.animscript) && node.animscript != "<dev string:x38>") {
                 var_43e9aabd[node.animscript] = 1;
             }
         }
         var_cb16f0db = getarraykeys(var_43e9aabd);
         sortednames = array::sort_by_value(var_cb16f0db, 1);
-        println("<unknown string>");
+        println("<dev string:xe81>");
         foreach (name in sortednames) {
-            println("<unknown string>" + name);
+            println("<dev string:xe9e>" + name);
         }
-        println("<unknown string>");
+        println("<dev string:xead>");
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -3777,7 +3776,7 @@
                         node_region = getnoderegion(node);
                         var_747013f8 = node.targetname;
                         if (isdefined(node_region)) {
-                            var_747013f8 = node_region + "<unknown string>" + node.targetname;
+                            var_747013f8 = node_region + "<dev string:x65>" + node.targetname;
                         }
                         print3d(node.origin + (0, 0, 12), var_747013f8, (0, 1, 0), 1, 1);
                     }
@@ -3826,18 +3825,18 @@
         while (true) {
             if (!isdefined(self.var_d35d1d3d)) {
                 self.var_d35d1d3d = newdebughudelem(self);
-                self.var_d35d1d3d.alignx = "<unknown string>";
-                self.var_d35d1d3d.horzalign = "<unknown string>";
-                self.var_d35d1d3d.aligny = "<unknown string>";
-                self.var_d35d1d3d.vertalign = "<unknown string>";
+                self.var_d35d1d3d.alignx = "<dev string:xec8>";
+                self.var_d35d1d3d.horzalign = "<dev string:xec8>";
+                self.var_d35d1d3d.aligny = "<dev string:xecf>";
+                self.var_d35d1d3d.vertalign = "<dev string:xed8>";
                 self.var_d35d1d3d.color = (1, 1, 1);
                 self.var_d35d1d3d.alpha = 1;
             }
-            debug_text = "<unknown string>";
+            debug_text = "<dev string:x38>";
             if (isdefined(self.cached_zone_volume)) {
-                debug_text = "<unknown string>";
+                debug_text = "<dev string:xede>";
             } else if (isdefined(self.var_3b65cdd7)) {
-                debug_text = "<unknown string>";
+                debug_text = "<dev string:xf0e>";
             }
             self.var_d35d1d3d settext(debug_text);
             self waittill(#"zone_change");
@@ -3853,7 +3852,7 @@
             if (isdefined(level.var_5171ee4a) && level.var_5171ee4a) {
                 if (!isdefined(level.var_fcfab54a)) {
                     level.var_fcfab54a = newdebughudelem();
-                    level.var_fcfab54a.alignx = "<unknown string>";
+                    level.var_fcfab54a.alignx = "<dev string:xec8>";
                     level.var_fcfab54a.x = 2;
                     level.var_fcfab54a.y = 160;
                     level.var_fcfab54a.fontscale = 1.5;
@@ -3864,11 +3863,11 @@
                 zombie_runners = 0;
                 var_536fd32b = zombie_utility::get_zombie_array();
                 foreach (ai_zombie in var_536fd32b) {
-                    if (ai_zombie.zombie_move_speed == "<unknown string>") {
+                    if (ai_zombie.zombie_move_speed == "<dev string:xf3a>") {
                         zombie_runners++;
                     }
                 }
-                level.var_fcfab54a settext("<unknown string>" + zombie_count + "<unknown string>" + zombie_left + "<unknown string>" + zombie_runners);
+                level.var_fcfab54a settext("<dev string:xf40>" + zombie_count + "<dev string:xf4a>" + zombie_left + "<dev string:xf58>" + zombie_runners);
             } else if (isdefined(level.var_fcfab54a)) {
                 level.var_fcfab54a destroy();
             }
@@ -3890,9 +3889,9 @@
     // Checksum 0xf08ecf0e, Offset: 0xeca8
     // Size: 0x44
     function testscriptruntimeerror2() {
-        myundefined = "<unknown string>";
+        myundefined = "<dev string:xf66>";
         if (myundefined == 1) {
-            println("<unknown string>");
+            println("<dev string:xf6d>");
         }
     }
 
@@ -3911,14 +3910,14 @@
     function testscriptruntimeerror() {
         wait(5);
         for (;;) {
-            if (getdvarstring(#"scr_testscriptruntimeerror") != "<unknown string>") {
+            if (getdvarstring(#"scr_testscriptruntimeerror") != "<dev string:x3b>") {
                 break;
             }
             wait(1);
         }
         myerror = getdvarstring(#"scr_testscriptruntimeerror");
-        setdvar(#"scr_testscriptruntimeerror", "<unknown string>");
-        if (myerror == "<unknown string>") {
+        setdvar(#"scr_testscriptruntimeerror", "<dev string:x3b>");
+        if (myerror == "<dev string:xf95>") {
             testscriptruntimeerrorassert();
         } else {
             testscriptruntimeerror1();
@@ -3931,13 +3930,13 @@
     // Checksum 0x9e7ff92c, Offset: 0xee08
     // Size: 0x27e
     function function_f12b8a34() {
-        barriers = struct::get_array("<unknown string>", "<unknown string>");
+        barriers = struct::get_array("<dev string:xf9e>", "<dev string:xbd1>");
         if (isdefined(level._additional_carpenter_nodes)) {
             barriers = arraycombine(barriers, level._additional_carpenter_nodes, 0, 0);
         }
         foreach (barrier in barriers) {
             if (isdefined(barrier.zbarrier)) {
-                a_pieces = barrier.zbarrier getzbarrierpieceindicesinstate("<unknown string>");
+                a_pieces = barrier.zbarrier getzbarrierpieceindicesinstate("<dev string:xfae>");
                 if (isdefined(a_pieces)) {
                     for (xx = 0; xx < a_pieces.size; xx++) {
                         chunk = a_pieces[xx];
@@ -3946,7 +3945,7 @@
                     }
                 }
                 for (x = 0; x < barrier.zbarrier getnumzbarrierpieces(); x++) {
-                    barrier.zbarrier setzbarrierpiecestate(x, "<unknown string>");
+                    barrier.zbarrier setzbarrierpiecestate(x, "<dev string:xfae>");
                     barrier.zbarrier showzbarrierpiece(x);
                 }
             }
@@ -3991,7 +3990,7 @@
             foreach (ai in ai_enemies) {
                 ai kill();
             }
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:xfb5>");
             wait(0.2);
         }
         setdvar(#"runtime_time_scale", 1);
@@ -4035,10 +4034,10 @@
             }
             foreach (zombie in zombies) {
                 if (isdefined(zombie.need_closest_player) && zombie.need_closest_player) {
-                    record3dtext("<unknown string>", zombie.origin + (0, 0, 72), (1, 0, 0));
+                    record3dtext("<dev string:xfd0>", zombie.origin + (0, 0, 72), (1, 0, 0));
                     continue;
                 }
-                record3dtext("<unknown string>", zombie.origin + (0, 0, 72), (0, 1, 0));
+                record3dtext("<dev string:xfe6>", zombie.origin + (0, 0, 72), (0, 1, 0));
                 if (isdefined(zombie.var_26f25576)) {
                     record3dtext(gettime() - zombie.var_26f25576, zombie.origin + (0, 0, 54), (1, 1, 1));
                 }
@@ -4052,10 +4051,10 @@
     // Checksum 0x49e3507b, Offset: 0xf6a8
     // Size: 0x84
     function function_1e285ac2() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xffc>");
+        adddebugcommand("<dev string:x104d>");
+        adddebugcommand("<dev string:x1095>");
+        adddebugcommand("<dev string:x10e1>");
         level thread function_c774d870();
     }
 
@@ -4068,27 +4067,27 @@
             wait(0.25);
             cmd = getdvarint(#"hash_5b8785c3d6383b3a", 0);
             if (isdefined(cmd) && cmd == 1) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x1129>");
                 zm::function_1442d44f();
                 setdvar(#"hash_5b8785c3d6383b3a", 0);
             }
             cmd = getdvarstring(#"hash_2d9d21912cbffb75");
             if (isdefined(cmd) && cmd == 1) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x1143>");
                 level.gamedifficulty = 0;
                 setdvar(#"hash_2d9d21912cbffb75", 0);
                 setdvar(#"hash_5b8785c3d6383b3a", 1);
             }
             cmd = getdvarstring(#"hash_2b205a3ab882058c");
             if (isdefined(cmd) && cmd == 1) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x114a>");
                 level.gamedifficulty = 1;
                 setdvar(#"hash_2b205a3ab882058c", 0);
                 setdvar(#"hash_5b8785c3d6383b3a", 1);
             }
             cmd = getdvarstring(#"hash_393960bacf784966");
             if (isdefined(cmd) && cmd == 1) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x1153>");
                 level.gamedifficulty = 2;
                 setdvar(#"hash_393960bacf784966", 0);
                 setdvar(#"hash_5b8785c3d6383b3a", 1);
@@ -4129,10 +4128,10 @@
     // Checksum 0xf74f75f0, Offset: 0xfbb0
     // Size: 0xdc
     function spawn_archetype(spawner_name) {
-        spawners = getspawnerarray(spawner_name, "<unknown string>");
+        spawners = getspawnerarray(spawner_name, "<dev string:xc02>");
         spawn_point = function_b4dcb9ce();
         if (spawners.size == 0) {
-            iprintln("<unknown string>" + spawner_name + "<unknown string>");
+            iprintln("<dev string:x115a>" + spawner_name + "<dev string:x1160>");
             return;
         }
         entity = spawners[0] spawnfromspawner(0, 1);
@@ -4214,38 +4213,38 @@
     // Checksum 0xfe71b5e6, Offset: 0x100d8
     // Size: 0x27e
     function function_15ee6847() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x1169>");
+        self endon("<dev string:x1169>");
         level endon(#"hash_147174071dbfe31e");
         while (true) {
-            teststring = "<unknown string>";
+            teststring = "<dev string:x38>";
             foreach (player in level.players) {
-                teststring += "<unknown string>" + player getentitynumber() + "<unknown string>";
-                if (player.sessionstate == "<unknown string>") {
-                    teststring += "<unknown string>";
+                teststring += "<dev string:x117b>" + player getentitynumber() + "<dev string:x1187>";
+                if (player.sessionstate == "<dev string:xd53>") {
+                    teststring += "<dev string:x118c>";
                     continue;
                 }
                 if (isdefined(self.hostmigrationcontrolsfrozen) && self.hostmigrationcontrolsfrozen) {
-                    teststring += "<unknown string>";
+                    teststring += "<dev string:x11a1>";
                     continue;
                 }
                 if (player zm_player::in_life_brush()) {
-                    teststring += "<unknown string>";
+                    teststring += "<dev string:x11bf>";
                     continue;
                 }
                 if (player zm_player::in_kill_brush()) {
-                    teststring += "<unknown string>";
+                    teststring += "<dev string:x11d3>";
                     continue;
                 }
                 if (!player zm_player::in_enabled_playable_area()) {
-                    teststring += "<unknown string>";
+                    teststring += "<dev string:x11e7>";
                     continue;
                 }
                 if (isdefined(level.player_out_of_playable_area_override) && !(isdefined(player [[ level.player_out_of_playable_area_override ]]()) && player [[ level.player_out_of_playable_area_override ]]())) {
-                    teststring += "<unknown string>";
+                    teststring += "<dev string:x121a>";
                     continue;
                 }
-                teststring += "<unknown string>";
+                teststring += "<dev string:x1252>";
             }
             debug2dtext((400, 100, 0), teststring, (1, 1, 0), undefined, (0, 0, 0), 0.75, 1, 1);
             waitframe(1);
@@ -4278,10 +4277,10 @@
     function init_debug_center_screen() {
         waitframe(1);
         setdvar(#"debug_center_screen", 0);
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:xa6>");
         zero_idle_movement = 0;
-        devgui_base = "<unknown string>";
-        adddebugcommand(devgui_base + "<unknown string>" + "<unknown string>" + "<unknown string>");
+        devgui_base = "<dev string:x126f>";
+        adddebugcommand(devgui_base + "<dev string:x1285>" + "<dev string:x12b4>" + "<dev string:x12ca>");
         for (;;) {
             if (getdvarint(#"debug_center_screen", 0)) {
                 if (!isdefined(level.center_screen_debug_hudelem_active) || level.center_screen_debug_hudelem_active == 0) {
@@ -4311,21 +4310,21 @@
         level.center_screen_debug_hudelem_active = 1;
         wait(0.1);
         level.center_screen_debug_hudelem1 = newdebughudelem(level.players[0]);
-        level.center_screen_debug_hudelem1.alignx = "<unknown string>";
-        level.center_screen_debug_hudelem1.aligny = "<unknown string>";
+        level.center_screen_debug_hudelem1.alignx = "<dev string:x12d4>";
+        level.center_screen_debug_hudelem1.aligny = "<dev string:xecf>";
         level.center_screen_debug_hudelem1.fontscale = 1;
         level.center_screen_debug_hudelem1.alpha = 0.5;
         level.center_screen_debug_hudelem1.x = 320 - 1;
         level.center_screen_debug_hudelem1.y = 240;
-        level.center_screen_debug_hudelem1 setshader("<unknown string>", 1000, 1);
+        level.center_screen_debug_hudelem1 setshader("<dev string:x12dd>", 1000, 1);
         level.center_screen_debug_hudelem2 = newdebughudelem(level.players[0]);
-        level.center_screen_debug_hudelem2.alignx = "<unknown string>";
-        level.center_screen_debug_hudelem2.aligny = "<unknown string>";
+        level.center_screen_debug_hudelem2.alignx = "<dev string:x12d4>";
+        level.center_screen_debug_hudelem2.aligny = "<dev string:xecf>";
         level.center_screen_debug_hudelem2.fontscale = 1;
         level.center_screen_debug_hudelem2.alpha = 0.5;
         level.center_screen_debug_hudelem2.x = 320 - 1;
         level.center_screen_debug_hudelem2.y = 240;
-        level.center_screen_debug_hudelem2 setshader("<unknown string>", 1, 480);
+        level.center_screen_debug_hudelem2 setshader("<dev string:x12dd>", 1, 480);
         level waittill(#"stop center screen debug");
         level.center_screen_debug_hudelem1 destroy();
         level.center_screen_debug_hudelem2 destroy();
@@ -4337,22 +4336,22 @@
     // Checksum 0x7c9404a9, Offset: 0x10868
     // Size: 0x270
     function function_b5d522f8() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x12e5>");
+        self endon("<dev string:x12e5>");
         function_7c9dd642();
-        setdvar(#"hash_46eec505e691414c", "<unknown string>");
+        setdvar(#"hash_46eec505e691414c", "<dev string:x38>");
         setdvar(#"hash_74f1952a0f93d08e", -1);
         while (true) {
             wait(0.1);
-            var_9261da43 = getdvar(#"hash_46eec505e691414c", "<unknown string>");
+            var_9261da43 = getdvar(#"hash_46eec505e691414c", "<dev string:x38>");
             var_10acd4fa = getdvar(#"hash_74f1952a0f93d08e", -1);
-            if (var_9261da43 == "<unknown string>" && var_10acd4fa == -1) {
+            if (var_9261da43 == "<dev string:x38>" && var_10acd4fa == -1) {
                 continue;
             }
             player = level.players[0];
             if (isplayer(player)) {
-                if (var_9261da43 != "<unknown string>") {
-                    args = strtok(var_9261da43, "<unknown string>");
+                if (var_9261da43 != "<dev string:x38>") {
+                    args = strtok(var_9261da43, "<dev string:x547>");
                     level zm_ui_inventory::function_7df6bb60(args[0], int(args[1]), player);
                 }
                 if (var_10acd4fa != -1) {
@@ -4363,7 +4362,7 @@
                     }
                 }
             }
-            setdvar(#"hash_46eec505e691414c", "<unknown string>");
+            setdvar(#"hash_46eec505e691414c", "<dev string:x38>");
             setdvar(#"hash_74f1952a0f93d08e", -1);
         }
     }
@@ -4376,21 +4375,21 @@
         while (!isdefined(level.var_a16c38d9)) {
             wait(0.1);
         }
-        path = "<unknown string>";
-        cmd = "<unknown string>";
+        path = "<dev string:x12f8>";
+        cmd = "<dev string:x1308>";
         keys = getarraykeys(level.var_a16c38d9);
         foreach (key in keys) {
             mapping = level.var_a16c38d9[key];
             num = pow(2, mapping.numbits);
             for (i = 0; i < num; i++) {
-                cmdarg = function_9e72a96(key) + "<unknown string>" + i;
-                util::add_devgui(path + function_9e72a96(key) + "<unknown string>" + i, cmd + cmdarg);
+                cmdarg = function_9e72a96(key) + "<dev string:x547>" + i;
+                util::add_devgui(path + function_9e72a96(key) + "<dev string:x132c>" + i, cmd + cmdarg);
             }
         }
-        var_30a96cf9 = "<unknown string>";
-        cmd = "<unknown string>";
-        util::add_devgui(var_30a96cf9 + "<unknown string>", cmd + 1);
-        util::add_devgui(var_30a96cf9 + "<unknown string>", cmd + 0);
+        var_30a96cf9 = "<dev string:x1337>";
+        cmd = "<dev string:x135b>";
+        util::add_devgui(var_30a96cf9 + "<dev string:x137f>", cmd + 1);
+        util::add_devgui(var_30a96cf9 + "<dev string:x1395>", cmd + 0);
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -4398,15 +4397,15 @@
     // Checksum 0x417ec1e8, Offset: 0x10d08
     // Size: 0x3d2
     function bunker_entrance_zoned() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x13ac>");
+        self endon("<dev string:x13ac>");
         if (getdvarint(#"hash_4cebb1d3b0ee545a", 0) == 0) {
             setdvar(#"hash_4cebb1d3b0ee545a", 1);
         } else {
             setdvar(#"hash_4cebb1d3b0ee545a", 0);
             return;
         }
-        a_s_key = struct::get_array(1, "<unknown string>");
+        a_s_key = struct::get_array(1, "<dev string:x13bf>");
         a_e_all = getentitiesinradius((0, 0, 0), 640000);
         a_e_key = [];
         foreach (ent in a_e_all) {
@@ -4464,11 +4463,11 @@
         location = params.vpoint;
         target = self;
         smeansofdeath = params.smeansofdeath;
-        if (smeansofdeath == "<unknown string>" || smeansofdeath == "<unknown string>") {
+        if (smeansofdeath == "<dev string:x13cc>" || smeansofdeath == "<dev string:x13da>") {
             location = self.origin + (0, 0, 60);
         }
         if (damage) {
-            thread function_2cde0af9("<unknown string>" + damage, (1, 1, 1), location, (randomfloatrange(-1, 1), randomfloatrange(-1, 1), 2), 30);
+            thread function_2cde0af9("<dev string:x547>" + damage, (1, 1, 1), location, (randomfloatrange(-1, 1), randomfloatrange(-1, 1), 2), 30);
         }
     }
 
@@ -4493,12 +4492,12 @@
     // Size: 0x168
     function function_61a7bb28() {
         foreach (e_player in getplayers()) {
-            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<unknown string>") {
+            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<dev string:xd53>") {
                 weapon = e_player getcurrentweapon();
-                if (weaponhasattachment(weapon, "<unknown string>")) {
+                if (weaponhasattachment(weapon, "<dev string:x13ef>")) {
                     continue;
                 }
-                weapon = getweapon(weapon.name, arraycombine(weapon.attachments, array("<unknown string>"), 0, 0));
+                weapon = getweapon(weapon.name, arraycombine(weapon.attachments, array("<dev string:x13ef>"), 0, 0));
                 e_player function_2d4d7fd9(weapon);
                 e_player function_f45a88df(weapon);
             }
@@ -4511,9 +4510,9 @@
     // Size: 0x108
     function function_986a2585() {
         foreach (e_player in getplayers()) {
-            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<unknown string>") {
+            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<dev string:xd53>") {
                 weapon = e_player getcurrentweapon();
-                if (!weaponhasattachment(weapon, "<unknown string>")) {
+                if (!weaponhasattachment(weapon, "<dev string:x13ef>")) {
                     continue;
                 }
                 e_player function_3fb8b14(weapon, 1);
@@ -4527,9 +4526,9 @@
     // Size: 0x100
     function function_184b9c6a() {
         foreach (e_player in getplayers()) {
-            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<unknown string>") {
+            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<dev string:xd53>") {
                 weapon = e_player getcurrentweapon();
-                if (!weaponhasattachment(weapon, "<unknown string>")) {
+                if (!weaponhasattachment(weapon, "<dev string:x13ef>")) {
                     continue;
                 }
                 e_player function_f45a88df(weapon);
@@ -4557,7 +4556,7 @@
     // Size: 0x128
     function function_faf7abce() {
         foreach (e_player in getplayers()) {
-            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<unknown string>") {
+            if (!e_player laststand::player_is_in_laststand() && e_player.sessionstate !== "<dev string:xd53>") {
                 weapon = e_player getcurrentweapon();
                 var_1c3b8b11 = e_player function_b1298bfb(weapon);
                 if (!isdefined(var_1c3b8b11) || var_1c3b8b11 == 0) {

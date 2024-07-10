@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\struct.gsc;
@@ -46,7 +45,7 @@ function function_5d6ee8e9(var_5ea5c94d) {
                     var_2c116c59 = gettime();
                     if (var_ca7809eb <= 0) {
                         /#
-                            iprintlnbold("<unknown string>");
+                            iprintlnbold("<dev string:x38>");
                         #/
                         var_87706f3b = 1;
                         level thread function_e0254b72();

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\ai\zm_ai_stoker.gsc;
 #using scripts\zm\zm_zodt8_eye.gsc;
 #using scripts\zm\zm_zodt8.gsc;
@@ -376,7 +375,7 @@ function function_bdf27083(str_script_noteworthy) {
             }
             continue;
         }
-        assertmsg("loc4");
+        assertmsg("<dev string:x38>");
     }
     foreach (var_52330a61 in var_b64616b0) {
         if (isdefined(var_52330a61.script_zone)) {
@@ -385,7 +384,7 @@ function function_bdf27083(str_script_noteworthy) {
             }
             continue;
         }
-        assertmsg("millionaire_suite_zone");
+        assertmsg("<dev string:x5f>");
     }
     var_c9a92ed0 = struct::get_array(var_c0028c4a.var_f8c16831, "script_noteworthy");
     foreach (var_e575d09e in var_c9a92ed0) {
@@ -424,20 +423,20 @@ function function_f4e792d3(var_d0b3106f, var_b267963b, var_a761a549) {
     if (var_a3ea9bcc > n_angle + 10 || var_a3ea9bcc < n_angle - 10) {
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("tilt" + self.script_zone + "<unknown string>" + self.targetname);
-                println("tilt" + self.script_zone + "<unknown string>" + self.targetname);
+                iprintlnbold("<dev string:x88>" + self.script_zone + "<dev string:xa7>" + self.targetname);
+                println("<dev string:x88>" + self.script_zone + "<dev string:xa7>" + self.targetname);
             }
         #/
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>" + var_d0b3106f + "<unknown string>");
-                println("<unknown string>" + var_d0b3106f + "<unknown string>");
+                iprintlnbold("<dev string:xac>" + var_d0b3106f + "<dev string:xc3>");
+                println("<dev string:xac>" + var_d0b3106f + "<dev string:xc3>");
             }
         #/
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>" + var_a3ea9bcc / -30 + "<unknown string>");
-                println("<unknown string>" + var_a3ea9bcc / -30 + "<unknown string>");
+                iprintlnbold("<dev string:xce>" + var_a3ea9bcc / -30 + "<dev string:xc3>");
+                println("<dev string:xce>" + var_a3ea9bcc / -30 + "<dev string:xc3>");
             }
         #/
         self.angles = self.original_angles;
@@ -508,35 +507,35 @@ function function_23153807(s_telegraph, var_3d89d732 = undefined, var_d0b3106f =
     // Checksum 0x93f19605, Offset: 0x3570
     // Size: 0x2d4
     function private function_6361c85(str_script_noteworthy) {
-        s_telegraph = struct::get(str_script_noteworthy, "<unknown string>");
-        println("<unknown string>");
+        s_telegraph = struct::get(str_script_noteworthy, "<dev string:xde>");
+        println("<dev string:xf2>");
         println(s_telegraph.script_noteworthy);
         for (i = 1; i <= 12; i++) {
             if (s_telegraph.var_e9af6526 == 11 && (i < 6 || i > 6)) {
                 for (j = 1; j <= 10; j++) {
                     s_telegraph.var_d0b3106f = function_23153807(s_telegraph, i, j);
-                    print(s_telegraph.var_d0b3106f + "<unknown string>");
+                    print(s_telegraph.var_d0b3106f + "<dev string:xf2>");
                 }
-                println("<unknown string>");
+                println("<dev string:xf2>");
                 continue;
             }
             if (s_telegraph.var_e9af6526 == 7 && (i < 4 || i > 8)) {
                 for (j = 1; j <= 6; j++) {
                     s_telegraph.var_d0b3106f = function_23153807(s_telegraph, i, j);
-                    print(s_telegraph.var_d0b3106f + "<unknown string>");
+                    print(s_telegraph.var_d0b3106f + "<dev string:xf2>");
                 }
-                println("<unknown string>");
+                println("<dev string:xf2>");
                 continue;
             }
             if (s_telegraph.var_e9af6526 == 5 && (i < 3 || i > 9)) {
                 for (j = 1; j <= 4; j++) {
                     s_telegraph.var_d0b3106f = function_23153807(s_telegraph, i, j);
-                    print(s_telegraph.var_d0b3106f + "<unknown string>");
+                    print(s_telegraph.var_d0b3106f + "<dev string:xf2>");
                 }
-                println("<unknown string>");
+                println("<dev string:xf2>");
             }
         }
-        println("<unknown string>");
+        println("<dev string:xf2>");
     }
 
 #/
@@ -562,7 +561,7 @@ function function_c76f5e7f() {
     if (isdefined(self.var_603d2311)) {
         self.var_397be8a2 = getent(self.var_603d2311, "script_noteworthy");
     } else {
-        assertmsg("<unknown string>" + self.script_noteworthy);
+        assertmsg("<dev string:xf6>" + self.script_noteworthy);
     }
     if (isdefined(self.var_319221a5)) {
         self.var_b43ef4f9 = getent(self.var_319221a5, "script_noteworthy");
@@ -570,7 +569,7 @@ function function_c76f5e7f() {
     if (isdefined(self.var_f92ad94a)) {
         self.var_3501cf51 = getent(self.var_f92ad94a, "script_noteworthy");
     } else {
-        assertmsg("<unknown string>" + self.script_noteworthy);
+        assertmsg("<dev string:x12a>" + self.script_noteworthy);
     }
     if (isdefined(self.var_9913bb72)) {
         self.var_9fb69ce = getent(self.var_9913bb72, "script_noteworthy");
@@ -610,7 +609,7 @@ function function_c76f5e7f() {
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     if (isdefined(self.var_d0b3106f)) {
-                        print3d(self.origin + anglestoright(self.angles) * 24, "<unknown string>" + self.var_d0b3106f, (1, 1, 0), 1, 0.25, 100);
+                        print3d(self.origin + anglestoright(self.angles) * 24, "<dev string:x160>" + self.var_d0b3106f, (1, 1, 0), 1, 0.25, 100);
                     }
                 }
             #/
@@ -634,8 +633,8 @@ function function_c76f5e7f() {
                     } else {
                         /#
                             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                                iprintlnbold("<unknown string>" + self.script_noteworthy);
-                                println("<unknown string>" + self.script_noteworthy);
+                                iprintlnbold("<dev string:x16f>" + self.script_noteworthy);
+                                println("<dev string:x16f>" + self.script_noteworthy);
                             }
                         #/
                     }
@@ -762,7 +761,7 @@ function function_3b0b73d9(b_clockwise) {
                 var_f583afd3 = 0;
                 break;
             default:
-                assertmsg("<unknown string>" + self.var_3d89d732);
+                assertmsg("<dev string:x18b>" + self.var_3d89d732);
                 break;
             }
         } else if (self.var_e9af6526 == 7) {
@@ -783,7 +782,7 @@ function function_3b0b73d9(b_clockwise) {
                 var_f583afd3 = 0;
                 break;
             default:
-                assertmsg("<unknown string>" + self.var_3d89d732);
+                assertmsg("<dev string:x18b>" + self.var_3d89d732);
                 break;
             }
         } else if (self.var_e9af6526 == 5) {
@@ -802,7 +801,7 @@ function function_3b0b73d9(b_clockwise) {
                 var_f583afd3 = 0;
                 break;
             default:
-                assertmsg("<unknown string>" + self.var_3d89d732);
+                assertmsg("<dev string:x18b>" + self.var_3d89d732);
                 break;
             }
         }
@@ -828,7 +827,7 @@ function function_3b0b73d9(b_clockwise) {
             var_f583afd3 = 0;
             break;
         default:
-            assertmsg("<unknown string>" + self.var_3d89d732);
+            assertmsg("<dev string:x18b>" + self.var_3d89d732);
             break;
         }
     } else if (self.var_e9af6526 == 7) {
@@ -849,7 +848,7 @@ function function_3b0b73d9(b_clockwise) {
             var_f583afd3 = 0;
             break;
         default:
-            assertmsg("<unknown string>" + self.var_3d89d732);
+            assertmsg("<dev string:x18b>" + self.var_3d89d732);
             break;
         }
     } else if (self.var_e9af6526 == 5) {
@@ -868,7 +867,7 @@ function function_3b0b73d9(b_clockwise) {
             var_f583afd3 = 0;
             break;
         default:
-            assertmsg("<unknown string>" + self.var_3d89d732);
+            assertmsg("<dev string:x18b>" + self.var_3d89d732);
             break;
         }
     }
@@ -911,8 +910,8 @@ function function_ba182aaa(var_5ea5c94d, ended_early) {
                 player thread function_8b8eabba();
             }
             callback::on_spawned(&function_8b8eabba);
-            hidemiscmodels("<unknown string>");
-            showmiscmodels("<unknown string>");
+            hidemiscmodels("<dev string:x1a8>");
+            showmiscmodels("<dev string:x1b4>");
         }
         if (ended_early) {
             namespace_617a54f4::function_2a94055d(#"hash_41a5c5168ffb2a97");
@@ -2068,7 +2067,7 @@ function function_443b1ad2(var_5ea5c94d) {
         function_9d73036a();
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                a_glyphs = struct::get_array(#"planet_glyph", "<unknown string>");
+                a_glyphs = struct::get_array(#"planet_glyph", "<dev string:xde>");
                 foreach (s_glyph in a_glyphs) {
                     waitframe(1);
                     if (isdefined(s_glyph.s_unitrigger.trigger)) {
@@ -2159,8 +2158,8 @@ function function_4f658ef7() {
         }
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold(s_glyph.targetname + "<unknown string>");
-                println(s_glyph.targetname + "<unknown string>");
+                iprintlnbold(s_glyph.targetname + "<dev string:x1bf>");
+                println(s_glyph.targetname + "<dev string:x1bf>");
             }
         #/
         level thread planet_behavior(mdl_planet);
@@ -2238,8 +2237,8 @@ function function_63ce4441() {
         }
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x1d2>");
+                println("<dev string:x1d2>");
             }
         #/
         foreach (str_flag in a_str_flags) {
@@ -2342,8 +2341,8 @@ function function_50b3a576(str_planet_name, n_number) {
     }
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("<unknown string>" + str_zone);
-            println("<unknown string>" + str_zone);
+            iprintlnbold("<dev string:x1f4>" + str_zone);
+            println("<dev string:x1f4>" + str_zone);
         }
     #/
 }
@@ -2575,8 +2574,8 @@ function function_51054f59() {
     level flag::wait_till(#"hash_63a102a7ae564e99");
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold("<unknown string>");
-            println("<unknown string>");
+            iprintlnbold("<dev string:x21b>");
+            println("<dev string:x21b>");
         }
     #/
     a_glyphs = struct::get_array(#"planet_glyph", "script_noteworthy");
@@ -2881,7 +2880,7 @@ function function_acc65da4(mdl_planet) {
         mdl_planet clientfield::set("" + #"land_fx", 0);
         level flag::set(#"hash_77f76266b597a1f7");
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x230>");
         #/
     }
     if (!level flag::get(#"hash_63a102a7ae564e99")) {
@@ -2927,8 +2926,8 @@ function function_647da52c(str_planet_name) {
             playsoundatposition(#"hash_1e42da88156af69f", (0, 0, 0));
             /#
                 if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                    iprintlnbold("<unknown string>");
-                    println("<unknown string>");
+                    iprintlnbold("<dev string:x237>");
+                    println("<dev string:x237>");
                 }
             #/
         }
@@ -3064,7 +3063,7 @@ function function_cfd304b3() {
         var_398f5909 -= n_increment;
         /#
             if (var_398f5909 > 0) {
-                iprintlnbold(int(var_398f5909) + "<unknown string>");
+                iprintlnbold(int(var_398f5909) + "<dev string:x243>");
             }
         #/
     }
@@ -3877,7 +3876,7 @@ function function_594ebc75(var_5ea5c94d) {
     level flag::set(#"pause_round_timeout");
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            level clientfield::set("<unknown string>" + #"hash_7f2f74f05d1f1b75", 3);
+            level clientfield::set("<dev string:x253>" + #"hash_7f2f74f05d1f1b75", 3);
             zm_devgui::zombie_devgui_open_sesame();
             wait(10);
         }

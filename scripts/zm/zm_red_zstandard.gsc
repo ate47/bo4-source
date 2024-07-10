@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_util.gsc;
 #using scripts\zm\ai\zm_ai_catalyst.gsc;
 #using script_4d00889cf8c807d5;
@@ -293,7 +292,7 @@ function defend_areas() {
 // Size: 0xda
 function function_bdb9652f() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     switch (getplayers().size) {
     case 1:
@@ -316,7 +315,7 @@ function function_bdb9652f() {
 // Size: 0xd2
 function function_cf680b18() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x5f>");
     #/
     switch (getplayers().size) {
     case 1:

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace blackboard;
 
 // Namespace blackboard/ai_blackboard
@@ -46,9 +45,9 @@ function private _updateevents() {
 // Size: 0x1b8
 function addblackboardevent(eventname, data, timetoliveinmillis) {
     /#
-        assert(isstring(eventname) || ishash(eventname), "<unknown string>");
-        assert(isdefined(data), "<unknown string>");
-        assert(isint(timetoliveinmillis) && timetoliveinmillis > 0, "<unknown string>");
+        assert(isstring(eventname) || ishash(eventname), "<dev string:x38>");
+        assert(isdefined(data), "<dev string:x7d>");
+        assert(isint(timetoliveinmillis) && timetoliveinmillis > 0, "<dev string:xb4>");
     #/
     event = spawnstruct();
     event.data = data;

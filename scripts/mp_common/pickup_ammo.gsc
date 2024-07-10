@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\dynamic_loadout.gsc;
 #using scripts\core_common\struct.gsc;
 #using scripts\core_common\gestures.gsc;

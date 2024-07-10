@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_unitrigger.gsc;
 #using scripts\zm_common\zm_score.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -765,7 +764,7 @@ function function_df67a12d(category, subcategory) {
     function function_774b42ac() {
         while (true) {
             a_ents = getentarray();
-            debug2dtext((5, 1055, 0), "<unknown string>" + a_ents.size, (0, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
+            debug2dtext((5, 1055, 0), "<dev string:x38>" + a_ents.size, (0, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
             waitframe(30);
         }
     }
@@ -775,10 +774,10 @@ function function_df67a12d(category, subcategory) {
     // Checksum 0x634ca7c6, Offset: 0x2988
     // Size: 0x118
     function private devgui() {
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x4c>");
         while (true) {
             waitframe(1);
-            str_command = getdvarstring(#"hash_6c7113bf98c41367", "<unknown string>");
+            str_command = getdvarstring(#"hash_6c7113bf98c41367", "<dev string:x9d>");
             switch (str_command) {
             case #"give_targets":
                 zm_devgui::zombie_devgui_goto_round(10);
@@ -786,7 +785,7 @@ function function_df67a12d(category, subcategory) {
                 level flag::set(#"infinite_round_spawning");
                 break;
             }
-            setdvar(#"hash_6c7113bf98c41367", "<unknown string>");
+            setdvar(#"hash_6c7113bf98c41367", "<dev string:x9d>");
         }
     }
 
@@ -796,13 +795,13 @@ function function_df67a12d(category, subcategory) {
     // Size: 0x162
     function function_af49a1e9(str_event, data1, data2, data3) {
         if (!isdefined(data1)) {
-            data1 = "<unknown string>";
+            data1 = "<dev string:x9d>";
         }
         if (!isdefined(data2)) {
-            data2 = "<unknown string>";
+            data2 = "<dev string:x9d>";
         }
         if (!isdefined(data3)) {
-            data3 = "<unknown string>";
+            data3 = "<dev string:x9d>";
         }
         s_event = {#str_event:str_event, #n_time:float(gettime()) / 1000, #data1:data1, #data2:data2, #data3:data3};
         if (!isdefined(level.var_df9f1a00)) {
@@ -819,7 +818,7 @@ function function_df67a12d(category, subcategory) {
     // Size: 0x74
     function function_df54cbcd() {
         if (!isvehicle(self)) {
-            function_af49a1e9("<unknown string>", self.actor_id, function_9e72a96(self.archetype));
+            function_af49a1e9("<dev string:xa0>", self.actor_id, function_9e72a96(self.archetype));
             self thread function_fc28e798();
         }
     }
@@ -829,9 +828,9 @@ function function_df67a12d(category, subcategory) {
     // Checksum 0xb9a58a5, Offset: 0x2c98
     // Size: 0x74
     function function_86b062a6(s_params) {
-        str_event = "<unknown string>";
+        str_event = "<dev string:xad>";
         if (self.var_c39323b5 === 1) {
-            str_event = "<unknown string>";
+            str_event = "<dev string:xb9>";
         }
         function_af49a1e9(str_event, self.actor_id, function_9e72a96(self.archetype));
     }
@@ -841,7 +840,7 @@ function function_df67a12d(category, subcategory) {
     // Checksum 0x42e011e, Offset: 0x2d18
     // Size: 0x2c
     function function_acd2ba83() {
-        function_af49a1e9("<unknown string>", level.round_number);
+        function_af49a1e9("<dev string:xc9>", level.round_number);
     }
 
     // Namespace zm_hms_util/zm_hms_util
@@ -860,7 +859,7 @@ function function_df67a12d(category, subcategory) {
     function function_fc28e798() {
         self endon(#"death");
         self waittill(#"completed_emerging_into_playable_area");
-        function_af49a1e9("<unknown string>", self.actor_id, function_9e72a96(self.archetype));
+        function_af49a1e9("<dev string:xd7>", self.actor_id, function_9e72a96(self.archetype));
     }
 
     // Namespace zm_hms_util/zm_hms_util
@@ -868,16 +867,16 @@ function function_df67a12d(category, subcategory) {
     // Checksum 0xf41cb744, Offset: 0x2df8
     // Size: 0x1bc
     function function_4eb5a6ad() {
-        dir = "<unknown string>";
-        filename = level.script + "<unknown string>" + getutc() + "<unknown string>";
-        path = dir + "<unknown string>" + filename;
-        file = openfile(path, "<unknown string>");
-        fprintln(file, "<unknown string>");
+        dir = "<dev string:xed>";
+        filename = level.script + "<dev string:x100>" + getutc() + "<dev string:x114>";
+        path = dir + "<dev string:x11b>" + filename;
+        file = openfile(path, "<dev string:x11f>");
+        fprintln(file, "<dev string:x127>");
         foreach (s_event in level.var_df9f1a00) {
-            fprintln(file, s_event.n_time + "<unknown string>" + s_event.str_event + "<unknown string>" + s_event.data1 + "<unknown string>" + s_event.data2 + "<unknown string>" + s_event.data3);
+            fprintln(file, s_event.n_time + "<dev string:x146>" + s_event.str_event + "<dev string:x146>" + s_event.data1 + "<dev string:x146>" + s_event.data2 + "<dev string:x146>" + s_event.data3);
         }
         closefile(file);
-        println("<unknown string>" + path);
+        println("<dev string:x14a>" + path);
     }
 
 #/

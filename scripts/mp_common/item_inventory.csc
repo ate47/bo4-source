@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_world_util.csc;
 #using scripts\mp_common\item_world.csc;
 #using script_c1eebdc8cad5d78;
@@ -923,7 +922,7 @@ function private function_fe189514(itementry) {
 }
 
 // Namespace item_inventory/item_inventory
-// Params a, eflags: 0x4
+// Params 10, eflags: 0x4
 // Checksum 0xc9b9fa8f, Offset: 0x4e60
 // Size: 0x1fcc
 function private function_1a99656a(localclientnum, inventoryitem, networkid, itemid, count, totalcount, availableaction, var_e35261f6 = 1, var_189fcf49 = 0, var_1204dfe9 = 1) {
@@ -1765,7 +1764,7 @@ function function_9c4460e0(localclientnum, itemid, count = 1, slotid = undefined
     if (!isdefined(selectedindex)) {
         selectedindex = item_world::function_73436347(data.inventory.items, 32767);
         if (!isdefined(selectedindex)) {
-            println("castTime" + itemid + "none");
+            println("<dev string:x38>" + itemid + "<dev string:x79>");
             return;
         }
     }
@@ -2531,7 +2530,7 @@ function function_c6ff0aa2(localclientnum, networkid) {
     data = item_world::function_a7e98a1a(localclientnum);
     index = item_world::function_73436347(data.inventory.items, networkid);
     if (!isdefined(index)) {
-        println("<unknown string>" + networkid + "<unknown string>");
+        println("<dev string:xa3>" + networkid + "<dev string:xbc>");
         return;
     }
     item = data.inventory.items[index];

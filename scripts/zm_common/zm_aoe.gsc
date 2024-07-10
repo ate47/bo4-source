@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -102,7 +101,7 @@ function function_15dea507(aoeid, type, var_3a11a165, lifetime, var_f2cd3aad, da
     assert(!isinarray(arraykeys, hash(type)));
     var_508aaded = new class_698343df();
     level.var_400ae143[type] = var_508aaded;
-    assert(damagemin <= damagemax, "<unknown string>");
+    assert(damagemin <= damagemax, "<dev string:x38>");
     var_508aaded.type = type;
     var_508aaded.var_3a11a165 = var_3a11a165;
     var_508aaded.lifetime = lifetime;
@@ -124,7 +123,7 @@ function function_15dea507(aoeid, type, var_3a11a165, lifetime, var_f2cd3aad, da
 // Size: 0x192
 function function_371b4147(aoeid, type, position, userdata) {
     var_46f1b5eb = function_e969e75(type);
-    assert(isdefined(var_46f1b5eb), "<unknown string>");
+    assert(isdefined(var_46f1b5eb), "<dev string:x74>");
     if (var_46f1b5eb.var_9a08bb02.size >= var_46f1b5eb.var_3a11a165) {
         function_2c33d107(type);
     }
@@ -147,7 +146,7 @@ function function_371b4147(aoeid, type, position, userdata) {
 // Size: 0xa4
 function private function_668a9b2d(aoe, type) {
     var_46f1b5eb = function_e969e75(type);
-    assert(isdefined(var_46f1b5eb), "<unknown string>");
+    assert(isdefined(var_46f1b5eb), "<dev string:x74>");
     array::add(var_46f1b5eb.var_9a08bb02, aoe);
     assert(var_46f1b5eb.var_9a08bb02.size <= var_46f1b5eb.var_3a11a165);
 }
@@ -158,7 +157,7 @@ function private function_668a9b2d(aoe, type) {
 // Size: 0x104
 function private function_87bbe4fc(type) {
     var_46f1b5eb = function_e969e75(type);
-    assert(isdefined(var_46f1b5eb), "<unknown string>");
+    assert(isdefined(var_46f1b5eb), "<dev string:x74>");
     if (var_46f1b5eb.var_9a08bb02.size) {
         oldest = var_46f1b5eb.var_9a08bb02[0];
         foreach (aoe in var_46f1b5eb.var_9a08bb02) {
@@ -345,9 +344,9 @@ function private function_60bb02f3(type) {
                         circle(aoe.position + (0, 0, var_46f1b5eb.height), var_46f1b5eb.radius, (1, 0.5, 0), 1, 1);
                         line(aoe.position, aoe.position + (0, 0, var_46f1b5eb.height), (1, 0.5, 0));
                         if (aoe == var_87bbe4fc) {
-                            print3d(aoe.position + (0, 0, var_46f1b5eb.height + 5), "<unknown string>" + var_46f1b5eb.type + "<unknown string>" + i + "<unknown string>", (1, 0, 0));
+                            print3d(aoe.position + (0, 0, var_46f1b5eb.height + 5), "<dev string:xa8>" + var_46f1b5eb.type + "<dev string:xb1>" + i + "<dev string:xb5>", (1, 0, 0));
                         } else {
-                            print3d(aoe.position + (0, 0, var_46f1b5eb.height + 5), "<unknown string>" + var_46f1b5eb.type + "<unknown string>" + i + "<unknown string>", (1, 0.5, 0));
+                            print3d(aoe.position + (0, 0, var_46f1b5eb.height + 5), "<dev string:xa8>" + var_46f1b5eb.type + "<dev string:xb1>" + i + "<dev string:xb5>", (1, 0.5, 0));
                         }
                         i++;
                     }

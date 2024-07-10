@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\perk\zm_perk_stronghold.gsc;
 #using scripts\zm_common\zm_perks.gsc;
 #using scripts\core_common\system_shared.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace core_frontend_sound;
 
 // Namespace core_frontend_sound/core_frontend_sound

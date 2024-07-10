@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace ai_state;
 
 // Namespace ai_state/state
@@ -117,8 +116,8 @@ function is_state(state) {
     // Checksum 0x2ca2e3ba, Offset: 0x5e0
     // Size: 0x5e
     function function_3a57bb58() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x38>");
+        self endon("<dev string:x38>");
         self endon(#"death");
         while (true) {
             self function_c1d2ede8();

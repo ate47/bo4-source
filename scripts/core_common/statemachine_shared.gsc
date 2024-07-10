@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace statemachine;
 
 // Namespace statemachine/statemachine_shared
@@ -141,7 +140,7 @@ function set_state(name, state_params) {
         return false;
     }
     if (!isdefined(state)) {
-        assertmsg("<unknown string>" + name + "<unknown string>" + self.name);
+        assertmsg("<dev string:x38>" + name + "<dev string:x56>" + self.name);
         return false;
     }
     reenter = self.current_state === state;
@@ -283,15 +282,15 @@ function evaluate_connections(eval_func, params) {
         while (true) {
             i = 1;
             foreach (state_machine in owner.state_machines) {
-                statename = "<unknown string>";
+                statename = "<dev string:x6b>";
                 if (isdefined(state_machine.current_state) && isdefined(state_machine.current_state.name)) {
                     statename = state_machine.current_state.name;
                 }
                 if (!getdvarint(#"recorder_enablerec", 0)) {
                     heightoffset = heightstart * i;
-                    print3d(owner.origin + (0, 0, heightoffset), "<unknown string>" + state_machine.name + "<unknown string>" + statename, (1, 1, 0));
+                    print3d(owner.origin + (0, 0, heightoffset), "<dev string:x76>" + state_machine.name + "<dev string:x7d>" + statename, (1, 1, 0));
                 } else {
-                    record3dtext("<unknown string>" + state_machine.name + "<unknown string>" + statename, owner.origin, (1, 1, 0), "<unknown string>", owner, 1);
+                    record3dtext("<dev string:x76>" + state_machine.name + "<dev string:x7d>" + statename, owner.origin, (1, 1, 0), "<dev string:x82>", owner, 1);
                 }
                 i++;
             }

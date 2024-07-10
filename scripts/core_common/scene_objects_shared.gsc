@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\scene_vehicle_shared.gsc;
 #using scripts\core_common\scene_model_shared.gsc;
 #using scripts\core_common\scene_actor_shared.gsc;
@@ -63,7 +62,7 @@ class csceneobject {
     // Size: 0x24
     destructor() {
         /#
-            log("sharedplayer");
+            log("<dev string:x38>");
         #/
     }
 
@@ -107,7 +106,7 @@ class csceneobject {
     // Checksum 0x56fe1cb3, Offset: 0x8e38
     // Size: 0xd4
     function log(str_msg) {
-        println(_o_scene._s.type + "<unknown string>" + function_9e72a96(_o_scene._str_name) + "<unknown string>" + (isdefined("<unknown string>") ? "<unknown string>" + "<unknown string>" : isdefined(_s.name) ? "<unknown string>" + _s.name : "<unknown string>") + "<unknown string>" + str_msg);
+        println(_o_scene._s.type + "<dev string:x2a0>" + function_9e72a96(_o_scene._str_name) + "<dev string:x2a4>" + (isdefined("<dev string:x2ad>") ? "<dev string:x2aa>" + "<dev string:x2ad>" : isdefined(_s.name) ? "<dev string:x2aa>" + _s.name : "<dev string:x2aa>") + "<dev string:x2b7>" + str_msg);
     }
 
     // Namespace csceneobject/scene_objects_shared
@@ -153,7 +152,7 @@ class csceneobject {
                 foreach (player in [[ _func_get ]](_str_team)) {
                     /#
                         if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                            printtoprightln("<unknown string>" + current_playing_anim[player getentitynumber()] + "<unknown string>" + gettime(), (0.8, 0.8, 0.8));
+                            printtoprightln("<dev string:x27a>" + current_playing_anim[player getentitynumber()] + "<dev string:x202>" + gettime(), (0.8, 0.8, 0.8));
                         }
                     #/
                     skip_anim_on_server(player, current_playing_anim[player getentitynumber()]);
@@ -162,7 +161,7 @@ class csceneobject {
             }
             /#
                 if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                    printtoprightln("<unknown string>" + current_playing_anim[_n_ent_num] + "<unknown string>" + gettime(), (0.8, 0.8, 0.8));
+                    printtoprightln("<dev string:x27a>" + current_playing_anim[_n_ent_num] + "<dev string:x202>" + gettime(), (0.8, 0.8, 0.8));
                 }
             #/
             skip_anim_on_server(_e, current_playing_anim[_n_ent_num]);
@@ -179,7 +178,7 @@ class csceneobject {
                 foreach (player in [[ _func_get ]](_str_team)) {
                     /#
                         if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                            printtoprightln("<unknown string>" + current_playing_anim[player getentitynumber()] + "<unknown string>" + gettime(), (0.8, 0.8, 0.8));
+                            printtoprightln("<dev string:x254>" + current_playing_anim[player getentitynumber()] + "<dev string:x202>" + gettime(), (0.8, 0.8, 0.8));
                         }
                     #/
                     skip_anim_on_client(player, current_playing_anim[player getentitynumber()]);
@@ -187,7 +186,7 @@ class csceneobject {
             } else {
                 /#
                     if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                        printtoprightln("<unknown string>" + current_playing_anim[_n_ent_num] + "<unknown string>" + gettime(), (0.8, 0.8, 0.8));
+                        printtoprightln("<dev string:x254>" + current_playing_anim[_n_ent_num] + "<dev string:x202>" + gettime(), (0.8, 0.8, 0.8));
                     }
                 #/
                 skip_anim_on_client(_e, current_playing_anim[_n_ent_num]);
@@ -645,14 +644,14 @@ class csceneobject {
         }
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + (isdefined(_s.name) ? _s.name : _s.model) + "<unknown string>" + animation);
+                printtoprightln("<dev string:x1d1>" + (isdefined(_s.name) ? _s.name : _s.model) + "<dev string:x202>" + animation);
             }
         #/
         /#
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
                 if (!isdefined(level.animation_played)) {
                     level.animation_played = [];
-                    animation_played_name = (isdefined(_s.name) ? _s.name : _s.model) + "<unknown string>" + animation;
+                    animation_played_name = (isdefined(_s.name) ? _s.name : _s.model) + "<dev string:x202>" + animation;
                     if (!isdefined(level.animation_played)) {
                         level.animation_played = [];
                     } else if (!isarray(level.animation_played)) {
@@ -685,7 +684,7 @@ class csceneobject {
         }
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                log(toupper(_s.type) + "<unknown string>" + function_9e72a96(animation) + "<unknown string>");
+                log(toupper(_s.type) + "<dev string:x208>" + function_9e72a96(animation) + "<dev string:x217>");
             }
         #/
         if (!isdefined(_e) || !_e isplayinganimscripted()) {
@@ -695,7 +694,7 @@ class csceneobject {
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
                 if (isdefined(level.animation_played)) {
                     for (i = 0; i < level.animation_played.size; i++) {
-                        animation_played_name = (isdefined(_s.name) ? _s.name : _s.model) + "<unknown string>" + animation;
+                        animation_played_name = (isdefined(_s.name) ? _s.name : _s.model) + "<dev string:x202>" + animation;
                         if (level.animation_played[i] == animation_played_name) {
                             arrayremovevalue(level.animation_played, animation_played_name);
                             i--;
@@ -704,7 +703,7 @@ class csceneobject {
                 }
             }
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + (isdefined(_s.name) ? _s.name : _s.model) + "<unknown string>" + animation);
+                printtoprightln("<dev string:x223>" + (isdefined(_s.name) ? _s.name : _s.model) + "<dev string:x202>" + animation);
             }
         #/
     }
@@ -790,9 +789,9 @@ class csceneobject {
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
                 if (isdefined(_s.name)) {
-                    printtoprightln("<unknown string>" + _s.name);
+                    printtoprightln("<dev string:x1b3>" + _s.name);
                 } else {
-                    printtoprightln("<unknown string>" + _s.model);
+                    printtoprightln("<dev string:x1b3>" + _s.model);
                 }
             }
         #/
@@ -1366,7 +1365,7 @@ class csceneobject {
     function cleanup() {
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + (isdefined(_s.name) ? _s.name : _s.model));
+                printtoprightln("<dev string:x199>" + (isdefined(_s.name) ? _s.name : _s.model));
             }
         #/
         function_fda037ff();
@@ -1622,9 +1621,9 @@ class csceneobject {
                         case #"cameraswitcher":
                             /#
                                 if (ishash(entry)) {
-                                    error(!isassetloaded("'.", entry), "cScene::play : " + function_9e72a96(entry) + "_ready");
+                                    error(!isassetloaded("<dev string:x4b>", entry), "<dev string:x52>" + function_9e72a96(entry) + "<dev string:x5a>");
                                 } else {
-                                    error(!isassetloaded("'.", entry), "cScene::play : " + entry + "_ready");
+                                    error(!isassetloaded("<dev string:x4b>", entry), "<dev string:x52>" + entry + "<dev string:x5a>");
                                 }
                             #/
                             var_aa49b05f = 1;
@@ -1634,14 +1633,14 @@ class csceneobject {
                             /#
                                 if (isdefined(_s.issiege) && _s.issiege) {
                                     if (ishash(entry)) {
-                                        error(!isassetloaded("<unknown string>", entry), "<unknown string>" + function_9e72a96(entry) + "<unknown string>");
+                                        error(!isassetloaded("<dev string:xa7>", entry), "<dev string:xaf>" + function_9e72a96(entry) + "<dev string:xb8>");
                                     } else {
-                                        error(!isassetloaded("<unknown string>", entry), "<unknown string>" + entry + "<unknown string>");
+                                        error(!isassetloaded("<dev string:xa7>", entry), "<dev string:xaf>" + entry + "<dev string:x110>");
                                     }
                                 } else if (ishash(entry)) {
-                                    error(!isassetloaded("<unknown string>", entry), "<unknown string>" + function_9e72a96(entry) + "_ready");
+                                    error(!isassetloaded("<dev string:x167>", entry), "<dev string:x16f>" + function_9e72a96(entry) + "<dev string:x5a>");
                                 } else {
-                                    error(!isassetloaded("<unknown string>", entry), "<unknown string>" + entry + "_ready");
+                                    error(!isassetloaded("<dev string:x167>", entry), "<dev string:x16f>" + entry + "<dev string:x5a>");
                                 }
                             #/
                             var_aa49b05f = 1;
@@ -1649,7 +1648,7 @@ class csceneobject {
                             break;
                         default:
                             /#
-                                error(1, "<unknown string>" + str_entry_type + "<unknown string>");
+                                error(1, "<dev string:x178>" + str_entry_type + "<dev string:x194>");
                             #/
                             break;
                         }
@@ -2188,7 +2187,7 @@ class cscene {
     // Size: 0x24
     destructor() {
         /#
-            log("<unknown string>");
+            log("<dev string:x2bc>");
         #/
     }
 
@@ -2200,7 +2199,7 @@ class cscene {
         if (condition) {
             if (_b_testing) {
                 /#
-                    scene::warning_on_screen("<unknown string>" + _str_name + "<unknown string>" + str_msg);
+                    scene::warning_on_screen("<dev string:x570>" + _str_name + "<dev string:x575>" + str_msg);
                 #/
             }
             return true;
@@ -2219,7 +2218,7 @@ class cscene {
                     scene::error_on_screen(str_msg);
                 #/
             } else {
-                assertmsg(_s.type + "<unknown string>" + function_9e72a96(_str_name) + "<unknown string>" + str_msg);
+                assertmsg(_s.type + "<dev string:x2a0>" + function_9e72a96(_str_name) + "<dev string:x56b>" + str_msg);
             }
             thread on_error();
             return true;
@@ -2232,7 +2231,7 @@ class cscene {
     // Checksum 0x2a4a642a, Offset: 0x11850
     // Size: 0x64
     function log(str_msg) {
-        println(_s.type + "<unknown string>" + function_9e72a96(_str_name) + "<unknown string>" + str_msg);
+        println(_s.type + "<dev string:x2a0>" + function_9e72a96(_str_name) + "<dev string:x56b>" + str_msg);
     }
 
     // Namespace cscene/scene_objects_shared
@@ -2293,13 +2292,13 @@ class cscene {
     function finish_scene_skipping() {
         /#
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                printtoprightln("<unknown string>" + gettime(), (1, 0, 0));
+                printtoprightln("<dev string:x549>" + gettime(), (1, 0, 0));
             }
         #/
         if (is_skipping_scene()) {
             /#
                 if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                    printtoprightln("<unknown string>" + gettime());
+                    printtoprightln("<dev string:x499>" + gettime());
                 }
             #/
             if (getdvarint(#"scene_skip_no_fade", 0) == 0) {
@@ -2338,7 +2337,7 @@ class cscene {
         if (!(isdefined(var_11843b70) && var_11843b70) && isdefined(_s.disablesceneskipping) && _s.disablesceneskipping) {
             /#
                 if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                    printtoprightln("<unknown string>" + _s.name + "<unknown string>" + gettime(), (1, 0, 0));
+                    printtoprightln("<dev string:x44e>" + _s.name + "<dev string:x202>" + gettime(), (1, 0, 0));
                 }
             #/
             finish_scene_skipping();
@@ -2350,14 +2349,14 @@ class cscene {
         }
         /#
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                printtoprightln("<unknown string>" + _s.name + "<unknown string>" + gettime(), (0, 1, 0));
+                printtoprightln("<dev string:x482>" + _s.name + "<dev string:x202>" + gettime(), (0, 1, 0));
             }
         #/
         if (!(isdefined(var_11843b70) && var_11843b70)) {
             if (is_skipping_player_scene()) {
                 /#
                     if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                        printtoprightln("<unknown string>" + gettime());
+                        printtoprightln("<dev string:x499>" + gettime());
                     }
                 #/
                 if (getdvarint(#"scene_skip_no_fade", 0) == 0) {
@@ -2385,20 +2384,20 @@ class cscene {
         flagsys::wait_till(str_shot + "go");
         /#
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                printtoprightln("<unknown string>" + _s.name + "<unknown string>" + gettime(), (0, 0, 1));
+                printtoprightln("<dev string:x4bd>" + _s.name + "<dev string:x202>" + gettime(), (0, 0, 1));
             }
         #/
         thread _skip_scene();
         /#
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                printtoprightln("<unknown string>" + gettime(), (0, 1, 0));
+                printtoprightln("<dev string:x4dc>" + gettime(), (0, 1, 0));
             }
         #/
         /#
             if (getdvarint(#"debug_scene_skip", 0) > 0) {
                 if (isdefined(level.animation_played)) {
                     for (i = 0; i < level.animation_played.size; i++) {
-                        printtoprightln("<unknown string>" + level.animation_played[i], (1, 0, 0), -1);
+                        printtoprightln("<dev string:x510>" + level.animation_played[i], (1, 0, 0), -1);
                     }
                 }
             }
@@ -2413,7 +2412,7 @@ class cscene {
             }
             /#
                 if (getdvarint(#"debug_scene_skip", 0) > 0) {
-                    printtoprightln("<unknown string>" + _s.name + "<unknown string>" + gettime(), (1, 0.5, 0));
+                    printtoprightln("<dev string:x52c>" + _s.name + "<dev string:x202>" + gettime(), (1, 0.5, 0));
                 }
             #/
             _call_shot_funcs("skip_completed");
@@ -2707,12 +2706,12 @@ class cscene {
         self thread _stop_camera_anims();
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + _s.name);
+                printtoprightln("<dev string:x422>" + _s.name);
             }
             if (isdefined(_e_root) && isdefined(_e_root.last_scene_state_instance)) {
                 if (!b_finished) {
-                    level.last_scene_state[_str_name] = level.last_scene_state[_str_name] + "<unknown string>";
-                    _e_root.last_scene_state_instance[_str_name] = _e_root.last_scene_state_instance[_str_name] + "<unknown string>";
+                    level.last_scene_state[_str_name] = level.last_scene_state[_str_name] + "<dev string:x443>";
+                    _e_root.last_scene_state_instance[_str_name] = _e_root.last_scene_state_instance[_str_name] + "<dev string:x443>";
                 }
                 if (!isdefined(_e_root.scriptbundlename)) {
                     _e_root notify(#"stop_debug_display");
@@ -2737,7 +2736,7 @@ class cscene {
     function run_next(str_current_shot) {
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + gettime());
+                printtoprightln("<dev string:x3e7>" + gettime());
             }
         #/
         b_run_next_scene = 0;
@@ -2773,7 +2772,7 @@ class cscene {
                             var_1a15e649 = get_next_shot(str_current_shot);
                             /#
                                 if (getdvarint(#"debug_scene_skip", 0) > 0 && is_skipping_scene()) {
-                                    printtoprightln("<unknown string>" + str_current_shot + "<unknown string>" + gettime(), (1, 1, 0));
+                                    printtoprightln("<dev string:x3fd>" + str_current_shot + "<dev string:x202>" + gettime(), (1, 1, 0));
                                 }
                             #/
                             switch (_s.scenetype) {
@@ -2988,7 +2987,7 @@ class cscene {
         function_2ddeb362("cScene::play : " + _s.name);
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + _s.name);
+                printtoprightln("<dev string:x35d>" + _s.name);
             }
         #/
         if (str_mode == "single_loop") {
@@ -3094,18 +3093,18 @@ class cscene {
         }
         if (strstartswith(_str_mode, "capture") || _s scene::is_igc() && scene::function_a4dedc63(1)) {
             /#
-                depth = getdvarstring(#"hash_3018c0b9207d1c", "<unknown string>");
-                fps = getdvarstring(#"hash_51617678bebb961a", "<unknown string>");
-                fmt = getdvarstring(#"hash_4bf15ae7a6fbf73c", "<unknown string>");
-                if (issubstr(_str_mode, "<unknown string>") || getdvarint(#"hash_6a54249f0cc48945", 0) == 2 || scene::function_24f8cfb5(_str_name, str_shot)) {
-                    if (issubstr(_str_mode, "<unknown string>") || getdvarint(#"hash_6a54249f0cc48945", 0) == 2) {
-                        var_3a6bcf6e = _str_name + "<unknown string>" + str_shot;
+                depth = getdvarstring(#"hash_3018c0b9207d1c", "<dev string:x36f>");
+                fps = getdvarstring(#"hash_51617678bebb961a", "<dev string:x373>");
+                fmt = getdvarstring(#"hash_4bf15ae7a6fbf73c", "<dev string:x378>");
+                if (issubstr(_str_mode, "<dev string:x37e>") || getdvarint(#"hash_6a54249f0cc48945", 0) == 2 || scene::function_24f8cfb5(_str_name, str_shot)) {
+                    if (issubstr(_str_mode, "<dev string:x37e>") || getdvarint(#"hash_6a54249f0cc48945", 0) == 2) {
+                        var_3a6bcf6e = _str_name + "<dev string:x387>" + str_shot;
                     } else {
                         var_3a6bcf6e = _str_name;
                     }
                     level flagsys::set(#"scene_menu_disable");
-                    str_command = "<unknown string>" + depth + "<unknown string>" + fps + "<unknown string>" + fmt + "<unknown string>" + _str_name + "<unknown string>" + var_3a6bcf6e;
-                    adddebugcommand("<unknown string>");
+                    str_command = "<dev string:x390>" + depth + "<dev string:x2a0>" + fps + "<dev string:x2a0>" + fmt + "<dev string:x3a9>" + _str_name + "<dev string:x2a0>" + var_3a6bcf6e;
+                    adddebugcommand("<dev string:x3b6>");
                     adddebugcommand(str_command);
                 }
             #/
@@ -3218,11 +3217,11 @@ class cscene {
             }
         }
         /#
-            if (strstartswith(_str_mode, "<unknown string>") || _s scene::is_igc() && scene::function_a4dedc63(1)) {
-                conv = getdvarstring(#"hash_7b946c8966b56a8e", "<unknown string>");
-                if (issubstr(_str_mode, "<unknown string>") || function_b260bdcc(str_shot) || getdvarint(#"hash_6a54249f0cc48945", 0) == 2) {
+            if (strstartswith(_str_mode, "<dev string:x3cb>") || _s scene::is_igc() && scene::function_a4dedc63(1)) {
+                conv = getdvarstring(#"hash_7b946c8966b56a8e", "<dev string:x36f>");
+                if (issubstr(_str_mode, "<dev string:x37e>") || function_b260bdcc(str_shot) || getdvarint(#"hash_6a54249f0cc48945", 0) == 2) {
                     level flagsys::clear(#"scene_menu_disable");
-                    adddebugcommand("<unknown string>" + conv);
+                    adddebugcommand("<dev string:x3d5>" + conv);
                 }
             }
         #/
@@ -3369,7 +3368,7 @@ class cscene {
             }
             /#
                 foreach (i, ent in a_ents) {
-                    error(isstring(i) || ishash(i), "<unknown string>" + i + "<unknown string>");
+                    error(isstring(i) || ishash(i), "<dev string:x33f>" + i + "<dev string:x194>");
                 }
             #/
         }
@@ -3798,7 +3797,7 @@ class cscene {
     function init(str_scenedef, s_scenedef, e_align, a_ents, b_test_run) {
         /#
             if (getdvarint(#"debug_scene", 0) > 0) {
-                printtoprightln("<unknown string>" + str_scenedef);
+                printtoprightln("<dev string:x32d>" + str_scenedef);
             }
         #/
         s_scenedef scene::function_585fb738();
@@ -3842,10 +3841,10 @@ class cscene {
                     _e_root.last_scene_state_instance = [];
                 }
                 if (!isdefined(level.last_scene_state[_str_name])) {
-                    level.last_scene_state[_str_name] = "<unknown string>";
+                    level.last_scene_state[_str_name] = "<dev string:x2aa>";
                 }
                 if (!isdefined(_e_root.last_scene_state_instance[_str_name])) {
-                    _e_root.last_scene_state_instance[_str_name] = "<unknown string>";
+                    _e_root.last_scene_state_instance[_str_name] = "<dev string:x2aa>";
                 }
             #/
         }
@@ -3878,7 +3877,7 @@ class cscene {
                     }
                     v_pos = (1350, 195, 0);
                     var_204b44d3 = var_9d90ef8b * n_frame_counter / ceil(var_9d90ef8b * 30);
-                    var_962ef8af = "<unknown string>" + n_frame_counter + "<unknown string>" + ceil(var_9d90ef8b * 30) + "<unknown string>" + var_204b44d3 + "<unknown string>" + var_9d90ef8b + "<unknown string>";
+                    var_962ef8af = "<dev string:x2ce>" + n_frame_counter + "<dev string:x2e7>" + ceil(var_9d90ef8b * 30) + "<dev string:x2eb>" + var_204b44d3 + "<dev string:x2e7>" + var_9d90ef8b + "<dev string:x2fd>";
                     debug2dtext(v_pos, var_962ef8af, undefined, undefined, undefined, 1, 0.8);
                     v_pos += (0, 20, 0) * 2;
                     foreach (obj in _a_objects) {
@@ -3889,15 +3888,15 @@ class cscene {
                             continue;
                         }
                         animation = obj._str_current_anim;
-                        if (!isdefined(animation) || !isassetloaded("<unknown string>", animation)) {
+                        if (!isdefined(animation) || !isassetloaded("<dev string:x167>", animation)) {
                             continue;
                         }
                         var_13edeb1f = getanimframecount(animation);
                         var_7b160393 = ceil(obj._e getanimtime(animation) * var_13edeb1f);
                         var_958054e5 = getanimlength(animation);
                         var_f667af2f = obj._e getanimtime(animation) * var_958054e5;
-                        var_2e63fccd = obj._str_name + "<unknown string>" + function_9e72a96(animation);
-                        var_1cae5962 = "<unknown string>" + str_shot + "<unknown string>" + var_7b160393 + "<unknown string>" + var_13edeb1f + "<unknown string>" + var_f667af2f + "<unknown string>" + var_958054e5 + "<unknown string>";
+                        var_2e63fccd = obj._str_name + "<dev string:x303>" + function_9e72a96(animation);
+                        var_1cae5962 = "<dev string:x30d>" + str_shot + "<dev string:x316>" + var_7b160393 + "<dev string:x2e7>" + var_13edeb1f + "<dev string:x321>" + var_f667af2f + "<dev string:x2e7>" + var_958054e5 + "<dev string:x2fd>";
                         debug2dtext(v_pos, var_2e63fccd, undefined, undefined, undefined, 1, 0.8);
                         v_pos += (0, 20, 0);
                         debug2dtext(v_pos, var_1cae5962, undefined, undefined, undefined, 1, 0.8);

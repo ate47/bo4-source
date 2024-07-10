@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\renderoverridebundle.csc;
 #using scripts\zm\zm_office_teleporters.csc;
 #using scripts\zm\zm_office_ww_quest.csc;

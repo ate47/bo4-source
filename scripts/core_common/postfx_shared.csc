@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\callbacks_shared.csc;
@@ -47,24 +46,24 @@ function localplayer_postfx_bundle_init(localclientnum) {
     // Size: 0x210
     function postfxbundledebuglisten() {
         self endon(#"death");
-        setdvar(#"scr_play_postfx_bundle", "<unknown string>");
-        setdvar(#"scr_stop_postfx_bundle", "<unknown string>");
-        setdvar(#"scr_exit_postfx_bundle", "<unknown string>");
+        setdvar(#"scr_play_postfx_bundle", "<dev string:x38>");
+        setdvar(#"scr_stop_postfx_bundle", "<dev string:x38>");
+        setdvar(#"scr_exit_postfx_bundle", "<dev string:x38>");
         while (true) {
             playbundlename = getdvarstring(#"scr_play_postfx_bundle");
-            if (playbundlename != "<unknown string>") {
+            if (playbundlename != "<dev string:x38>") {
                 self thread playpostfxbundle(playbundlename);
-                setdvar(#"scr_play_postfx_bundle", "<unknown string>");
+                setdvar(#"scr_play_postfx_bundle", "<dev string:x38>");
             }
             stopbundlename = getdvarstring(#"scr_stop_postfx_bundle");
-            if (stopbundlename != "<unknown string>") {
+            if (stopbundlename != "<dev string:x38>") {
                 self thread stoppostfxbundle(stopbundlename);
-                setdvar(#"scr_stop_postfx_bundle", "<unknown string>");
+                setdvar(#"scr_stop_postfx_bundle", "<dev string:x38>");
             }
             var_38ce085 = getdvarstring(#"scr_exit_postfx_bundle");
-            if (var_38ce085 != "<unknown string>") {
+            if (var_38ce085 != "<dev string:x38>") {
                 self thread exitpostfxbundle(var_38ce085);
-                setdvar(#"scr_exit_postfx_bundle", "<unknown string>");
+                setdvar(#"scr_exit_postfx_bundle", "<dev string:x38>");
             }
             wait(0.5);
         }
@@ -78,7 +77,7 @@ function localplayer_postfx_bundle_init(localclientnum) {
         self endon(#"death");
         var_986c8888 = 0;
         var_4828f60f = 0;
-        var_e0f0fb1d = "<unknown string>";
+        var_e0f0fb1d = "<dev string:x38>";
         ent = undefined;
         while (true) {
             showmodel = getdvarint(#"hash_56d8c90edb7a97b6", 0);
@@ -88,7 +87,7 @@ function localplayer_postfx_bundle_init(localclientnum) {
                 if (showmodel > 0) {
                     if (!isdefined(ent)) {
                         newspawn = 1;
-                        ent = util::spawn_model(self.localclientnum, "<unknown string>");
+                        ent = util::spawn_model(self.localclientnum, "<dev string:x3b>");
                     }
                 } else if (var_986c8888 > 0) {
                     if (isdefined(ent)) {
@@ -101,16 +100,16 @@ function localplayer_postfx_bundle_init(localclientnum) {
             if ((newspawn || showmodel == 1) && isdefined(ent)) {
                 ent.origin = self.origin + (0, 0, 70) + anglestoforward(self.angles) * 250;
             }
-            bundlename = getdvarstring(#"cg_playrenderoverridebundle", "<unknown string>");
+            bundlename = getdvarstring(#"cg_playrenderoverridebundle", "<dev string:x38>");
             if (bundlename != var_e0f0fb1d && isdefined(ent)) {
                 ent stoprenderoverridebundle(var_e0f0fb1d);
-                if (bundlename != "<unknown string>") {
+                if (bundlename != "<dev string:x38>") {
                     ent playrenderoverridebundle(bundlename);
                 }
             }
             if (showviewmodel && (showviewmodel != var_4828f60f || bundlename != var_e0f0fb1d)) {
                 self stoprenderoverridebundle(var_e0f0fb1d);
-                if (bundlename != "<unknown string>") {
+                if (bundlename != "<dev string:x38>") {
                     self playrenderoverridebundle(bundlename);
                 }
             }

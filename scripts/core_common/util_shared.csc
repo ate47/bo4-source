@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_72d4466ce2e2cc7b;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\util_shared.csc;
@@ -278,7 +277,7 @@ function waittill_any_ents(ent1, string1, ent2, string2, ent3, string3, ent4, st
 }
 
 // Namespace util/util_shared
-// Params b, eflags: 0x0
+// Params 11, eflags: 0x0
 // Checksum 0xd0f2b581, Offset: 0xd40
 // Size: 0x12e
 function function_e532f5da(n_timeout, ent1, string1, ent2, string2, ent3, string3, ent4, string4, ent5, string5) {
@@ -400,7 +399,7 @@ function _single_func(entity, func, a_vars) {
         }
         break;
     default:
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         break;
     }
 }
@@ -448,8 +447,8 @@ function call_func(s_func) {
 // Checksum 0xd95e78b9, Offset: 0x16a8
 // Size: 0x164
 function array_ent_thread(entities, func, arg1, arg2, arg3, arg4, arg5) {
-    assert(isdefined(entities), "<unknown string>");
-    assert(isdefined(func), "<unknown string>");
+    assert(isdefined(entities), "<dev string:x49>");
+    assert(isdefined(func), "<dev string:x83>");
     if (isarray(entities)) {
         if (entities.size) {
             foreach (entity in entities) {
@@ -466,7 +465,7 @@ function array_ent_thread(entities, func, arg1, arg2, arg3, arg4, arg5) {
 // Checksum 0x616b1008, Offset: 0x1818
 // Size: 0x162
 function single_thread(entity, func, arg1, arg2, arg3, arg4, arg5, arg6) {
-    assert(isdefined(entity), "<unknown string>");
+    assert(isdefined(entity), "<dev string:xb9>");
     if (isdefined(arg6)) {
         entity thread [[ func ]](arg1, arg2, arg3, arg4, arg5, arg6);
         return;
@@ -747,8 +746,8 @@ function is_valid_type_for_callback(type) {
 // Checksum 0x26fd6eb2, Offset: 0x2480
 // Size: 0xa8
 function wait_till_not_touching(e_to_check, e_to_touch) {
-    assert(isdefined(e_to_check), "<unknown string>");
-    assert(isdefined(e_to_touch), "<unknown string>");
+    assert(isdefined(e_to_check), "<dev string:xec>");
+    assert(isdefined(e_to_touch), "<dev string:x12c>");
     e_to_check endon(#"death");
     e_to_touch endon(#"death");
     while (e_to_check istouching(e_to_touch)) {
@@ -763,7 +762,7 @@ function wait_till_not_touching(e_to_check, e_to_touch) {
     // Checksum 0xa6e4ec1d, Offset: 0x2530
     // Size: 0x32
     function error(message) {
-        println("<unknown string>", message);
+        println("<dev string:x16c>", message);
         waitframe(1);
     }
 
@@ -779,13 +778,13 @@ function register_system(ssysname, cbfunc) {
     }
     if (level._systemstates.size >= 32) {
         /#
-            error("<unknown string>");
+            error("<dev string:x17c>");
         #/
         return;
     }
     if (isdefined(level._systemstates[ssysname])) {
         /#
-            error("<unknown string>" + ssysname);
+            error("<dev string:x19f>" + ssysname);
         #/
         return;
     }
@@ -882,7 +881,7 @@ function get_other_team(str_team) {
     } else {
         return #"allies";
     }
-    assertmsg("<unknown string>" + str_team);
+    assertmsg("<dev string:x1c9>" + str_team);
 }
 
 // Namespace util/util_shared
@@ -991,12 +990,12 @@ function get_start_time() {
         }
         elapsed_time *= 0.001;
         if (!isdefined(level.orbis)) {
-            level.orbis = getdvarstring(#"orbisgame") == "<unknown string>";
+            level.orbis = getdvarstring(#"orbisgame") == "<dev string:x1e7>";
         }
         if (!level.orbis) {
             elapsed_time = int(elapsed_time);
         }
-        msg = label + "<unknown string>" + elapsed_time + "<unknown string>";
+        msg = label + "<dev string:x1ee>" + elapsed_time + "<dev string:x200>";
         profileprintln(msg);
         iprintlnbold(msg);
     }
@@ -1027,13 +1026,13 @@ function record_elapsed_time(start_time, &elapsed_time_array) {
         if (!isarray(elapsed_time_array)) {
             return;
         }
-        msg = label + "<unknown string>" + elapsed_time_array.size;
+        msg = label + "<dev string:x206>" + elapsed_time_array.size;
         profileprintln(msg);
         if (elapsed_time_array.size == 0) {
             return;
         }
         if (!isdefined(level.orbis)) {
-            level.orbis = getdvarstring(#"orbisgame") == "<unknown string>";
+            level.orbis = getdvarstring(#"orbisgame") == "<dev string:x1e7>";
         }
         total_elapsed_time = 0;
         smallest_elapsed_time = 2147483647;
@@ -1050,16 +1049,16 @@ function record_elapsed_time(start_time, &elapsed_time_array) {
             if (!level.orbis) {
                 elapsed_time = int(elapsed_time);
             }
-            msg = label + "<unknown string>" + elapsed_time + "<unknown string>";
+            msg = label + "<dev string:x1ee>" + elapsed_time + "<dev string:x200>";
             profileprintln(msg);
         }
         average_elapsed_time = total_elapsed_time / elapsed_time_array.size;
-        msg = label + "<unknown string>" + average_elapsed_time + "<unknown string>";
+        msg = label + "<dev string:x213>" + average_elapsed_time + "<dev string:x200>";
         profileprintln(msg);
         iprintlnbold(msg);
-        msg = label + "<unknown string>" + largest_elapsed_time + "<unknown string>";
+        msg = label + "<dev string:x22d>" + largest_elapsed_time + "<dev string:x200>";
         profileprintln(msg);
-        msg = label + "<unknown string>" + smallest_elapsed_time + "<unknown string>";
+        msg = label + "<dev string:x247>" + smallest_elapsed_time + "<dev string:x200>";
         profileprintln(msg);
     }
 
@@ -1170,13 +1169,13 @@ function registersystem(ssysname, cbfunc) {
     }
     if (level._systemstates.size >= 32) {
         /#
-            error("<unknown string>");
+            error("<dev string:x17c>");
         #/
         return;
     }
     if (isdefined(level._systemstates[ssysname])) {
         /#
-            error("<unknown string>" + ssysname);
+            error("<dev string:x19f>" + ssysname);
         #/
         return;
     }
@@ -1344,7 +1343,7 @@ function getnextobjid(localclientnum) {
     }
     /#
         if (nextid > 31) {
-            println("<unknown string>");
+            println("<dev string:x262>");
         }
         assert(nextid < 32);
     #/
@@ -1450,7 +1449,7 @@ function is_safehouse(str_next_map = get_map_name()) {
     // Checksum 0x5c8e3b58, Offset: 0x4010
     // Size: 0x46
     function up_button_pressed() {
-        return self buttonpressed("<unknown string>") || self buttonpressed("<unknown string>");
+        return self buttonpressed("<dev string:x28f>") || self buttonpressed("<dev string:x299>");
     }
 
     // Namespace util/util_shared
@@ -1468,7 +1467,7 @@ function is_safehouse(str_next_map = get_map_name()) {
     // Checksum 0xe7fc8d90, Offset: 0x4090
     // Size: 0x46
     function down_button_pressed() {
-        return self buttonpressed("<unknown string>") || self buttonpressed("<unknown string>");
+        return self buttonpressed("<dev string:x2a3>") || self buttonpressed("<dev string:x2af>");
     }
 
     // Namespace util/util_shared
@@ -1548,7 +1547,7 @@ function lerp_generic(localclientnum, duration, callback, ...) {
 // Checksum 0x6d6e50b6, Offset: 0x4440
 // Size: 0x6a
 function function_c16f65a3(enemy_a, enemy_b) {
-    assert(enemy_a != enemy_b, "<unknown string>");
+    assert(enemy_a != enemy_b, "<dev string:x2bb>");
     level.team_enemy_mapping[enemy_a] = enemy_b;
     level.team_enemy_mapping[enemy_b] = enemy_a;
 }
@@ -1610,7 +1609,7 @@ function set_team_mapping(str_team_for_sidea, str_team_for_sideb) {
     } else if (str_team_for_sideb == #"allies") {
         str_team_for_sideb = #"allies";
     }
-    assert(str_team_for_sidea != str_team_for_sideb, "<unknown string>");
+    assert(str_team_for_sidea != str_team_for_sideb, "<dev string:x302>");
     level.team_mapping[#"sidea"] = str_team_for_sidea;
     level.team_mapping[#"sideb"] = str_team_for_sideb;
     level.team_mapping[#"attacker"] = str_team_for_sidea;
@@ -1874,7 +1873,7 @@ function function_48e57e36(var_1f1d12d8) {
     // Checksum 0xf9d0bd1c, Offset: 0x52e0
     // Size: 0x5c
     function add_devgui(localclientnum, menu_path, commands) {
-        adddebugcommand(localclientnum, "<unknown string>" + menu_path + "<unknown string>" + commands + "<unknown string>");
+        adddebugcommand(localclientnum, "<dev string:x34f>" + menu_path + "<dev string:x35e>" + commands + "<dev string:x364>");
     }
 
     // Namespace util/util_shared
@@ -1882,7 +1881,7 @@ function function_48e57e36(var_1f1d12d8) {
     // Checksum 0xa50d1339, Offset: 0x5348
     // Size: 0x44
     function remove_devgui(localclientnum, menu_path) {
-        adddebugcommand(localclientnum, "<unknown string>" + menu_path + "<unknown string>");
+        adddebugcommand(localclientnum, "<dev string:x369>" + menu_path + "<dev string:x364>");
     }
 
 #/

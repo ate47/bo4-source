@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gamerep.gsc;
 #using scripts\mp_common\draft.gsc;
 #using scripts\mp_common\player\player_monitor.gsc;
@@ -182,8 +181,8 @@ function callback_playerconnect() {
     if (!isdefined(self.pers[#"team"]) || isdefined(self.pers[#"needteam"])) {
         var_4c542e39 = getassignedteamname(self);
         /#
-            var_b417b3ee = getdvarstring(#"scr_playerteams", "<unknown string>");
-            playerteams = strtok(var_b417b3ee, "<unknown string>");
+            var_b417b3ee = getdvarstring(#"scr_playerteams", "<dev string:x38>");
+            playerteams = strtok(var_b417b3ee, "<dev string:x3b>");
             if (playerteams.size > 0) {
                 playerteam = playerteams[self getentitynumber()];
                 if (isdefined(playerteam) && isdefined(level.teams[playerteam])) {
@@ -265,7 +264,7 @@ function callback_playerconnect() {
     self hvo::function_2ce5cb7e();
     num_con = getnumconnectedplayers();
     num_exp = getnumexpectedplayers();
-    println("<unknown string>", num_con, "<unknown string>", num_exp);
+    println("<dev string:x3f>", num_con, "<dev string:x72>", num_exp);
     if (num_con == num_exp && num_exp != 0) {
         level flag::set("all_players_connected");
     }
@@ -372,7 +371,7 @@ function private init_character_index() {
             return;
         }
         autoselection = getdvarstring(#"character");
-        if (autoselection != "<unknown string>") {
+        if (autoselection != "<dev string:x38>") {
             var_6a3f295d = hash(autoselection);
             playerroletemplatecount = getplayerroletemplatecount(currentsessionmode());
             for (i = 0; i < playerroletemplatecount; i++) {

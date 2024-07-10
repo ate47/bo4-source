@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\remote_weapons.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\core_common\weapons_shared.gsc;
@@ -171,7 +170,7 @@ function function_b2cc6703(targets) {
     var_8ec7f501 = undefined;
     highest = -1;
     for (idx = 0; idx < targets.size; idx++) {
-        assert(isdefined(targets[idx].var_629a6b13[entnum]), "<unknown string>");
+        assert(isdefined(targets[idx].var_629a6b13[entnum]), "<dev string:x38>");
         if (targets[idx].var_629a6b13[entnum] >= highest) {
             highest = targets[idx].var_629a6b13[entnum];
             var_8ec7f501 = targets[idx];
@@ -431,7 +430,7 @@ function function_1c4cd527(origin, owner, innerradius, outerradius, halfheight, 
                     point._scoredebug[#"no visibility"] = spawnstruct();
                 }
                 point._scoredebug[#"no visibility"].score = -5000;
-                point._scoredebug[#"no visibility"].scorename = "<unknown string>";
+                point._scoredebug[#"no visibility"].scorename = "<dev string:x63>";
             #/
             point.score += -5000;
         }
@@ -485,12 +484,12 @@ function function_5ebe7443() {
     while (true) {
         if (isdefined(self.protectdest)) {
             /#
-                recordsphere(self.protectdest, 8, (0, 0, 1), "<unknown string>");
+                recordsphere(self.protectdest, 8, (0, 0, 1), "<dev string:x73>");
             #/
             if (isdefined(self.var_d6acaac4)) {
                 /#
-                    recordsphere(self.protectdest, 8, (0, 1, 0), "<unknown string>");
-                    recordline(self.protectdest, self.var_d6acaac4, (0, 1, 0), "<unknown string>");
+                    recordsphere(self.protectdest, 8, (0, 1, 0), "<dev string:x73>");
+                    recordline(self.protectdest, self.var_d6acaac4, (0, 1, 0), "<dev string:x73>");
                 #/
             }
         }

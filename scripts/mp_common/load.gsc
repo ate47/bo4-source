@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\load.gsc;
@@ -14,7 +13,7 @@
 // Checksum 0xcc9d1527, Offset: 0x208
 // Size: 0x144
 function main() {
-    assert(isdefined(level.first_frame), "<unknown string>");
+    assert(isdefined(level.first_frame), "<dev string:x38>");
     level._loadstarted = 1;
     /#
         util::check_art_mode();
@@ -38,8 +37,8 @@ function main() {
 // Checksum 0x493558b8, Offset: 0x358
 // Size: 0xae
 function setfootstepeffect(name, fx) {
-    assert(isdefined(name), "<unknown string>");
-    assert(isdefined(fx), "<unknown string>");
+    assert(isdefined(name), "<dev string:x66>");
+    assert(isdefined(fx), "<dev string:x92>");
     if (!isdefined(anim.optionalstepeffects)) {
         anim.optionalstepeffects = [];
     }

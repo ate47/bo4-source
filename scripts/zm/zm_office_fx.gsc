@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace zm_office_fx;
 
 // Namespace zm_office_fx/zm_office_fx

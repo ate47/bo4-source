@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_customgame.gsc;
 #using scripts\core_common\flag_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -29,7 +28,7 @@ function get_location_from_chest_index(chest_index) {
             }
         }
     }
-    assertmsg("<unknown string>" + chest_index);
+    assertmsg("<dev string:x38>" + chest_index);
 }
 
 // Namespace namespace_6a81d072/namespace_6a81d072

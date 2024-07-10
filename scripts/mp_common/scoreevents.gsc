@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\challenges.gsc;
 #using scripts\mp_common\gametypes\match.gsc;
@@ -740,7 +739,7 @@ function scoreeventplayerkill(data, time) {
             processscoreevent(#"kill_enemy_with_armor", attacker, victim, weapon);
         }
         assert(isdefined(attacker));
-        assert(isdefined(attacker.tookweaponfrom), "MOD_IMPACT" + attacker getentnum() + "weapon_cqb");
+        assert(isdefined(attacker.tookweaponfrom), "<dev string:x38>" + attacker getentnum() + "<dev string:x42>");
         if (isdefined(attacker) && isdefined(attacker.tookweaponfrom) && isdefined(attacker.tookweaponfrom[weapon]) && isdefined(attacker.tookweaponfrom[weapon].previousowner)) {
             pickedupweapon = attacker.tookweaponfrom[weapon];
             if (pickedupweapon.previousowner == victim) {

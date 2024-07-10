@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_brutus.csc;
 #using scripts\zm\ai\zm_ai_brutus.csc;
 #using scripts\core_common\clientfield_shared.csc;
@@ -34,10 +33,10 @@ function function_6f198c81(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     if (bnewent) {
-        println("<unknown string>");
+        println("<dev string:x38>");
     }
     if (binitialsnap) {
-        println("<unknown string>");
+        println("<dev string:x47>");
     }
     playrumbleonposition(localclientnum, "explosion_generic", self.origin);
 }

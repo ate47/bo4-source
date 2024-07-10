@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_util.gsc;
 #using scripts\zm\zm_red.gsc;
 #using scripts\zm\perk\zm_perk_electric_cherry.gsc;
@@ -1722,7 +1721,7 @@ function function_350204ca(str_vo) {
         level flag::set(#"pegasus_rescue");
         level flag::set(#"hash_4d8091aa6a26d815");
         level flag::set(#"flag_skeleton_set_intro");
-        var_71da3f5a = getentarray("aib_vign_cust_zm_red_amp_zmb_brk_out_10", "electrocute");
+        var_71da3f5a = getentarray("<dev string:x38>", "<dev string:x4d>");
         foreach (var_3e9d57b3 in var_71da3f5a) {
             if (isdefined(var_3e9d57b3)) {
                 var_3e9d57b3 delete();
@@ -1735,8 +1734,8 @@ function function_350204ca(str_vo) {
         }
         level flag::set(#"perseus_exits");
         level flag::set(#"spartoi_dead");
-        level flag::wait_till("<unknown string>");
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x5a>");
+        level flag::wait_till("<dev string:x70>");
         level flag::set(#"hash_420b070435236eab");
         function_e059d0e1();
     }

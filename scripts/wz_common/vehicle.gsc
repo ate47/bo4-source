@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\gadgets\gadget_jammer_shared.gsc;
 #using script_578e247c429144f6;
 #using script_48bb1764a662152d;
@@ -78,8 +77,8 @@ function __init__() {
     // Checksum 0x189c24ee, Offset: 0xcf0
     // Size: 0x8e
     function private function_eaba72c9() {
-        self notify("script_model");
-        self endon("script_model");
+        self notify("<dev string:x38>");
+        self endon("<dev string:x38>");
         while (true) {
             if (getdvarint(#"wz_delete_vehicles", 0) > 0) {
                 function_40fc185b();
@@ -106,7 +105,7 @@ function __init__() {
             waitframe(1);
         }
         mapname = util::get_map_name();
-        adddebugcommand("update_malfunction" + mapname + "emped_timer");
+        adddebugcommand("<dev string:x4b>" + mapname + "<dev string:x5b>");
         level thread function_eaba72c9();
     }
 
@@ -147,7 +146,7 @@ function private vehicle_spawned() {
     self.emped = 0;
     self.vehkilloccupantsondeath = 1;
     /#
-        self thread deletemeonnotify(level, "<unknown string>");
+        self thread deletemeonnotify(level, "<dev string:x9a>");
     #/
 }
 
@@ -3378,12 +3377,12 @@ function function_6a65d095() {
         assert(isdefined(self.height));
         while (true) {
             waitframe(1);
-            leftrear = self gettagorigin("<unknown string>");
-            leftmiddle = self gettagorigin("<unknown string>");
-            leftfront = self gettagorigin("<unknown string>");
-            rightrear = self gettagorigin("<unknown string>");
-            rightmiddle = self gettagorigin("<unknown string>");
-            rightfront = self gettagorigin("<unknown string>");
+            leftrear = self gettagorigin("<dev string:xb0>");
+            leftmiddle = self gettagorigin("<dev string:xcf>");
+            leftfront = self gettagorigin("<dev string:xf0>");
+            rightrear = self gettagorigin("<dev string:x110>");
+            rightmiddle = self gettagorigin("<dev string:x130>");
+            rightfront = self gettagorigin("<dev string:x152>");
             if (!isdefined(leftrear)) {
                 break;
             }

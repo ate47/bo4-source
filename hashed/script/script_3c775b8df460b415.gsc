@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_defend_area.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;

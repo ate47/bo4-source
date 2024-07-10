@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\fx_shared.gsc;
 #using scripts\core_common\ai\systems\gib.gsc;
 
@@ -49,7 +48,7 @@ function flame_death_fx() {
         }
         self.weapon_specific_fire_death_torso_fx = undefined;
     } else {
-        println("<unknown string>");
+        println("<dev string:x38>");
     }
     if (isdefined(level._effect) && isdefined(level._effect[#"character_fire_death_sm"])) {
         if (!isvehicle(self) && self.archetype !== "raps" && self.archetype !== "spider") {
@@ -82,7 +81,7 @@ function flame_death_fx() {
         }
         return;
     }
-    println("<unknown string>");
+    println("<dev string:xd9>");
 }
 
 // Namespace zombie_death/zombie_death
@@ -211,7 +210,7 @@ function do_gib() {
     case #"guts":
         break;
     default:
-        assertmsg("<unknown string>" + self.a.gib_ref + "<unknown string>");
+        assertmsg("<dev string:x174>" + self.a.gib_ref + "<dev string:x188>");
         break;
     }
 }

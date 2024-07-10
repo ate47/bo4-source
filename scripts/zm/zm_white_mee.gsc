@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_25b8e6a85a7f8635;
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\zm_player.gsc;
@@ -112,8 +111,8 @@ function mee_projectile_step1_cleanup(var_5ea5c94d, ended_early) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("takedamage");
-                println("takedamage");
+                iprintlnbold("<dev string:x38>");
+                println("<dev string:x38>");
             }
         }
     #/
@@ -145,8 +144,8 @@ function mee_melee_step1_cleanup(var_5ea5c94d, ended_early) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x5e>");
+                println("<dev string:x5e>");
             }
         }
     #/
@@ -179,8 +178,8 @@ function mee_galvaknuckle_step1_cleanup(var_5ea5c94d, ended_early) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x7f>");
+                println("<dev string:x7f>");
             }
         }
     #/
@@ -225,8 +224,8 @@ function mee_mixed_step1_cleanup(var_5ea5c94d, ended_early) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xa7>");
+                println("<dev string:xa7>");
             }
         }
     #/
@@ -308,8 +307,8 @@ function function_8d3f2364(waitresult) {
                 /#
                     if (getdvarint(#"zm_debug_ee", 0)) {
                         if (getdvarint(#"zm_debug_ee", 0)) {
-                            iprintlnbold("<unknown string>");
-                            println("<unknown string>");
+                            iprintlnbold("<dev string:xc8>");
+                            println("<dev string:xc8>");
                         }
                     }
                 #/
@@ -319,8 +318,8 @@ function function_8d3f2364(waitresult) {
                 /#
                     if (getdvarint(#"zm_debug_ee", 0)) {
                         if (getdvarint(#"zm_debug_ee", 0)) {
-                            iprintlnbold("<unknown string>");
-                            println("<unknown string>");
+                            iprintlnbold("<dev string:xef>");
+                            println("<dev string:xef>");
                         }
                     }
                 #/
@@ -331,8 +330,8 @@ function function_8d3f2364(waitresult) {
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>");
-                        println("<unknown string>");
+                        iprintlnbold("<dev string:x10f>");
+                        println("<dev string:x10f>");
                     }
                 }
             #/
@@ -342,16 +341,16 @@ function function_8d3f2364(waitresult) {
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>");
-                        println("<unknown string>");
+                        iprintlnbold("<dev string:x134>");
+                        println("<dev string:x134>");
                     }
                 }
             #/
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>");
-                        println("<unknown string>");
+                        iprintlnbold("<dev string:x14d>");
+                        println("<dev string:x14d>");
                     }
                 }
             #/
@@ -365,8 +364,8 @@ function function_8d3f2364(waitresult) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>" + level.var_561ae1f8);
-                println("<unknown string>" + level.var_561ae1f8);
+                iprintlnbold("<dev string:x16d>" + level.var_561ae1f8);
+                println("<dev string:x16d>" + level.var_561ae1f8);
             }
         }
     #/
@@ -1066,8 +1065,8 @@ function function_4b660ce0() {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>");
-                    println("<unknown string>");
+                    iprintlnbold("<dev string:x181>");
+                    println("<dev string:x181>");
                 }
             }
         #/
@@ -1123,8 +1122,8 @@ function function_15534b78() {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>");
-                    println("<unknown string>");
+                    iprintlnbold("<dev string:x1b6>");
+                    println("<dev string:x1b6>");
                 }
             }
         #/
@@ -1132,8 +1131,8 @@ function function_15534b78() {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>" + level.meteor_counter + "<unknown string>");
-                    println("<unknown string>" + level.meteor_counter + "<unknown string>");
+                    iprintlnbold("<dev string:x1ef>" + level.meteor_counter + "<dev string:x1fd>");
+                    println("<dev string:x1ef>" + level.meteor_counter + "<dev string:x1fd>");
                 }
             }
         #/

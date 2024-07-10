@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_madagascar_sound.gsc;
 #using scripts\mp\mp_madagascar_fx.gsc;
 #using scripts\mp_common\util.gsc;

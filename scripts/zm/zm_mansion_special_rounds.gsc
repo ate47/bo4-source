@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\zm_common\zm_round_spawning.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
@@ -229,8 +228,8 @@ function function_c79d744e(s_spawn_loc) {
     if (isdefined(s_spawn_loc.scriptbundlename)) {
         self zm_spawner::function_45bb11e4(s_spawn_loc);
     }
-    assert(isdefined(self), "<unknown string>");
-    assert(isalive(self), "<unknown string>");
+    assert(isdefined(self), "<dev string:x38>");
+    assert(isalive(self), "<dev string:x4d>");
     self zombie_dog_util::zombie_setup_attack_properties_dog();
     wait(0.1);
     self show();
@@ -504,7 +503,7 @@ function function_84c5200d(entity) {
     entity endon(#"death");
     if (!isdefined(level.dog_spawners) || level.dog_spawners.size == 0) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x5c>");
         #/
         return;
     }
@@ -517,7 +516,7 @@ function function_84c5200d(entity) {
         }
         var_a9e4d1ee = int(max(0, min(5, a_ai_zombies.size)));
         /#
-            iprintln("<unknown string>" + var_a9e4d1ee + "<unknown string>");
+            iprintln("<dev string:xa1>" + var_a9e4d1ee + "<dev string:xb0>");
         #/
         for (i = 0; i < var_a9e4d1ee; i++) {
             a_ai_zombies[i] thread zm_cleanup::cleanup_zombie();
@@ -525,14 +524,14 @@ function function_84c5200d(entity) {
     }
     if (var_a9e4d1ee) {
         /#
-            iprintln("<unknown string>" + var_a9e4d1ee + "<unknown string>");
+            iprintln("<dev string:xce>" + var_a9e4d1ee + "<dev string:xe4>");
         #/
         entity thread function_d1371239(var_a9e4d1ee);
         return;
     }
     /#
         if (var_a9e4d1ee == 0) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xef>");
         }
     #/
 }
@@ -552,7 +551,7 @@ function function_d1371239(var_a9e4d1ee) {
         } while (!isdefined(ai) && var_18f8f237);
         /#
             if (!var_18f8f237 && !isdefined(ai)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x138>");
             }
         #/
         if (isdefined(ai)) {

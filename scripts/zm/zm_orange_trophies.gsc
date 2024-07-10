@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\callbacks.gsc;
@@ -67,7 +66,7 @@ function on_player_connect() {
 function function_ea67bd7c() {
     level endon(#"game_ended");
     /#
-        iprintlnbold("<unknown string>" + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + "<dev string:x4b>");
     #/
     self zm_utility::giveachievement_wrapper("zm_orange_ascend", 1);
 }
@@ -113,7 +112,7 @@ function function_790e5d6() {
         if (self.var_c4baf001 >= 4) {
             self notify(#"bells_complete");
             /#
-                iprintlnbold("<unknown string>" + "<unknown string>");
+                iprintlnbold("<dev string:x38>" + "<dev string:x5e>");
             #/
             self zm_utility::giveachievement_wrapper("zm_orange_bells", 0);
             var_a3404ecb = 1;
@@ -160,7 +159,7 @@ function function_b9f47977(e_zombie) {
     self.var_79447139 += 1;
     if (self.var_79447139 >= 10) {
         /#
-            iprintlnbold("<unknown string>" + "<unknown string>");
+            iprintlnbold("<dev string:x38>" + "<dev string:x70>");
         #/
         self zm_utility::giveachievement_wrapper("zm_orange_freeze", 1);
         level flag::set(#"hash_e1ce5432989899");
@@ -191,7 +190,7 @@ function function_4ff2cfd9(s_result) {
         s_result.eattacker.var_59c409c3 += 1;
         if (s_result.eattacker.var_59c409c3 >= 5) {
             /#
-                iprintlnbold("<unknown string>" + "<unknown string>");
+                iprintlnbold("<dev string:x38>" + "<dev string:x83>");
             #/
             s_result.eattacker zm_utility::giveachievement_wrapper("zm_orange_hounds", 0);
             level flag::set(#"hash_6046825f3ec27c48");
@@ -209,7 +208,7 @@ function function_6c88da5b() {
         wait(1);
     }
     /#
-        iprintlnbold("<unknown string>" + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + "<dev string:x96>");
     #/
     level zm_utility::giveachievement_wrapper("zm_orange_totems", 1);
 }
@@ -235,7 +234,7 @@ function function_3202188() {
         }
     }
     /#
-        iprintlnbold("<unknown string>" + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + "<dev string:xa9>");
     #/
     self zm_utility::giveachievement_wrapper("zm_orange_pack", 0);
 }
@@ -248,7 +247,7 @@ function function_b0e59abe() {
     level flag::wait_till(#"edge_of_the_world_complete");
     if (isdefined(level.edge_player)) {
         /#
-            iprintlnbold("<unknown string>" + "<unknown string>");
+            iprintlnbold("<dev string:x38>" + "<dev string:xba>");
         #/
         level.edge_player zm_utility::giveachievement_wrapper("zm_orange_secret", 0);
     }
@@ -488,7 +487,7 @@ function function_63522769() {
     level flag::set(#"hash_113f70c573aed94d");
     if (!level flag::get(#"power_on") && !level flag::get(#"power_on1") && !level flag::get(#"power_on2") && !level flag::get(#"power_on3")) {
         /#
-            iprintlnbold("<unknown string>" + "<unknown string>");
+            iprintlnbold("<dev string:x38>" + "<dev string:xcd>");
         #/
         level zm_utility::giveachievement_wrapper("zm_orange_power", 1);
     }
@@ -513,7 +512,7 @@ function function_c7b3bfea() {
         }
         if (self.var_5fe30ecb.size >= 9) {
             /#
-                iprintlnbold("<unknown string>" + "<unknown string>");
+                iprintlnbold("<dev string:x38>" + "<dev string:xdf>");
             #/
             self zm_utility::giveachievement_wrapper("zm_orange_ziplines", 0);
         }
@@ -565,7 +564,7 @@ function function_82947e72() {
             self hide();
             self setcandamage(0);
             /#
-                iprintlnbold("<unknown string>" + "<unknown string>");
+                iprintlnbold("<dev string:x38>" + "<dev string:xf4>");
             #/
             s_result.attacker zm_utility::giveachievement_wrapper("zm_orange_jar", 0);
             wait(3);

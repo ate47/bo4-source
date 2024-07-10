@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\ai\tracking.gsc;
 #using scripts\killstreaks\ai\state.gsc;
 #using scripts\killstreaks\ai\patrol.gsc;

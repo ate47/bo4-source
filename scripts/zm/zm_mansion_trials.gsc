@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_30ba61ad5559c51d;
 #using scripts\zm_common\trials\zm_trial_mansion_ghost.gsc;
 #using script_717fd517896b8f30;

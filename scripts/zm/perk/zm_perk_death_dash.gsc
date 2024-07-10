@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_score.gsc;
 #using scripts\zm_common\zm_perks.gsc;
@@ -404,7 +403,7 @@ function reset_cooldown() {
         self.var_d675d730.var_d566ea4 = 0;
     }
     if (self hasperk(#"specialty_death_dash")) {
-        assert(isdefined(self.var_d675d730.var_775a4a2a), "<unknown string>");
+        assert(isdefined(self.var_d675d730.var_775a4a2a), "<dev string:x38>");
         if (isdefined(self.var_d675d730.var_775a4a2a)) {
             self zm_perks::function_2ac7579(self.var_d675d730.var_775a4a2a, 1, #"perk_death_dash");
             self zm_perks::function_13880aa5(self.var_d675d730.var_775a4a2a, 1, #"perk_death_dash");

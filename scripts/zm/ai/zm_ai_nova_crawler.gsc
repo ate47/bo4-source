@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_score.gsc;
 #using scripts\zm_common\zm_audio.gsc;
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
@@ -50,7 +49,7 @@ function __init__() {
     spawner::add_archetype_spawn_function(#"nova_crawler", &function_1d34f2b6);
     spawner::function_89a2cd87(#"nova_crawler", &function_1dc9be26);
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
     #/
     clientfield::register("actor", "nova_crawler_burst_clientfield", 1, 1, "int");
     clientfield::register("toplayer", "nova_crawler_burst_postfx_clientfield", 1, 1, "int");

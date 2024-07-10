@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_round_logic.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -79,7 +78,7 @@ function private function_e997bb0b(var_73d6ae36) {
     while (true) {
         foreach (player in getplayers()) {
             /#
-                if (isgodmode(player) || player isinmovemode("<unknown string>", "<unknown string>")) {
+                if (isgodmode(player) || player isinmovemode("<dev string:x38>", "<dev string:x41>")) {
                     continue;
                 }
             #/

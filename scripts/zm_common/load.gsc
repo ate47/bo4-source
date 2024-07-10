@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_aoe.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -48,7 +47,7 @@
 // Checksum 0x9e36e891, Offset: 0x300
 // Size: 0x114
 function main() {
-    assert(isdefined(level.first_frame), "<unknown string>");
+    assert(isdefined(level.first_frame), "<dev string:x38>");
     zm::init();
     level._loadstarted = 1;
     register_clientfields();

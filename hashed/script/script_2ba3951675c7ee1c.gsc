@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_blundergat.gsc;
 #using scripts\zm\zm_escape_util.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -693,7 +692,7 @@ function function_7f19d274() {
     while (true) {
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == getweapon(#"ww_blundergat_fire_t8_unfinished")) {
-            assert(isdefined(self.n_cooldown_time), "<unknown string>");
+            assert(isdefined(self.n_cooldown_time), "<dev string:x38>");
             self.n_cooldown_time -= 6;
             self clientfield::increment_to_player("" + #"hash_39d19b76b846a27f");
             self givemaxammo(getweapon(#"ww_blundergat_fire_t8_unfinished"));
@@ -1058,8 +1057,8 @@ function function_ecc34f71(e_player) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_6f4823a9);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x87>");
+        adddebugcommand("<dev string:xf8>");
     }
 
     // Namespace namespace_fc5c8455/namespace_8d08012b
@@ -1070,8 +1069,8 @@ function function_ecc34f71(e_player) {
         switch (cmd) {
         case #"hash_2406dff55d52785a":
             foreach (mdl_skull in level.var_8e6fc65e) {
-                mdl_skull setmodel("<unknown string>");
-                mdl_skull clientfield::set("<unknown string>" + #"hash_5f7eb9d1316d02a7", 1);
+                mdl_skull setmodel("<dev string:x169>");
+                mdl_skull clientfield::set("<dev string:x185>" + #"hash_5f7eb9d1316d02a7", 1);
             }
             level flag::set(#"hash_3fb7d58b07b04333");
             break;

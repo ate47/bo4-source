@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\util.gsc;
 #using scripts\zm_common\rat.gsc;
@@ -139,7 +138,7 @@ function init() {
     level.oldschool = getdvarint(#"scr_oldschool", 0);
     if (level.oldschool) {
         /#
-            print("<unknown string>");
+            print("<dev string:x38>");
         #/
         setdvar(#"jump_height", 64);
         setdvar(#"jump_slowdownenable", 0);
@@ -334,9 +333,9 @@ function forceend(hostsucks = 0) {
         winner = globallogic_score::gethighestscoringplayer();
         /#
             if (isdefined(winner)) {
-                print("<unknown string>" + winner.name);
+                print("<dev string:x4f>" + winner.name);
             } else {
-                print("<unknown string>");
+                print("<dev string:x68>");
             }
         #/
     }
@@ -370,9 +369,9 @@ function killserverpc() {
         winner = globallogic_score::gethighestscoringplayer();
         /#
             if (isdefined(winner)) {
-                print("<unknown string>" + winner.name);
+                print("<dev string:x4f>" + winner.name);
             } else {
-                print("<unknown string>");
+                print("<dev string:x68>");
             }
         #/
     }
@@ -380,7 +379,7 @@ function killserverpc() {
     level.hostforcedend = 1;
     level.killserver = 1;
     endstring = #"hash_cd63faed592da03";
-    println("<unknown string>");
+    println("<dev string:x7f>");
     thread endgame(winner, endstring);
 }
 
@@ -858,7 +857,7 @@ function endgame(winner, endreasontext) {
     }
     level notify(#"sfade");
     /#
-        print("<unknown string>");
+        print("<dev string:x9b>");
     #/
     if (!isdefined(level.skipgameend) || !level.skipgameend) {
         wait(5);
@@ -1524,7 +1523,7 @@ function callback_startgametype() {
     level.hardcoremode = getgametypesetting(#"hardcoremode");
     if (level.hardcoremode) {
         /#
-            print("<unknown string>");
+            print("<dev string:xa8>");
         #/
         if (!isdefined(level.friendlyfiredelaytime)) {
             level.friendlyfiredelaytime = 0;
@@ -1742,7 +1741,7 @@ function updaterankedmatch(winner) {
         if (hostidledout()) {
             level.hostforcedend = 1;
             /#
-                print("<unknown string>");
+                print("<dev string:xbe>");
             #/
         }
     }

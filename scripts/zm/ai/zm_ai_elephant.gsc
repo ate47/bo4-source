@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_aoe.gsc;
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -238,7 +237,7 @@ function private function_d13a21cb(entity, projectile) {
     enemyorigin = landpos;
     physicsexplosionsphere(projectile.origin, 1000, 300, 400);
     /#
-        recordsphere(enemyorigin, 15, (0, 0, 0), "<unknown string>");
+        recordsphere(enemyorigin, 15, (0, 0, 0), "<dev string:x38>");
     #/
     for (i = 0; i < 5; i++) {
         randomdistance = randomintrange(120, 360);
@@ -248,7 +247,7 @@ function private function_d13a21cb(entity, projectile) {
         dir = anglestoforward(angles) * randomdistance;
         var_c6b637a5 = landpos + dir;
         /#
-            recordsphere(var_c6b637a5, 15, (1, 0.5, 0), "<unknown string>");
+            recordsphere(var_c6b637a5, 15, (1, 0.5, 0), "<dev string:x38>");
         #/
         launchvelocity = vectornormalize(var_c6b637a5 - projectile.origin) * 1400;
         grenade = entity magicmissile(entity.ai.var_a05929e4, projectile.origin, launchvelocity);
@@ -383,11 +382,11 @@ function function_6b086058(inflictor, attacker, damage, idflags, meansofdeath, w
             namespace_81245006::function_ef87b7e8(var_dd54fdb1, damage);
             playfx("maps/zm_towers/fx8_boss_dmg_weakspot_organ", point, dir * -1);
             /#
-                iprintlnbold("<unknown string>" + var_dd54fdb1.health);
+                iprintlnbold("<dev string:x41>" + var_dd54fdb1.health);
             #/
             if (namespace_81245006::function_f29756fe(var_dd54fdb1) === 3) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x57>");
                 #/
             }
             return 0;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_towers_util.gsc;
 #using scripts\zm\zm_towers_crowd.gsc;
 #using scripts\zm_common\zm_vo.gsc;
@@ -278,7 +277,7 @@ function function_c4e5bf05(b_skipped, var_19e802fa) {
         }
         zm_crafting::function_ca244624(#"zblueprint_trap_hellpools");
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
         #/
     }
     s_unitrigger = struct::get(level.var_708e0925, "script_ww_quest_acid_trap_unitrigger");
@@ -613,7 +612,7 @@ function function_a616131a(b_skipped) {
     var_8fa68ef = struct::get(var_1a472b57.target);
     mdl_jar = util::spawn_model(#"p8_zm_gla_jar_gold_01", var_1a472b57.origin, var_1a472b57.angles);
     if (!isdefined(mdl_jar)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x5b>");
         return;
     }
     mdl_jar notsolid();
@@ -847,7 +846,7 @@ function function_79875787(b_skipped, var_19e802fa) {
     level zm_ui_inventory::function_7df6bb60(#"hash_d3e328bb2670edf", 0);
     /#
         if (b_skipped) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x87>");
         }
     #/
 }

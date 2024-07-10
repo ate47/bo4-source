@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace ct_shared_ingame_objective;
@@ -188,7 +187,7 @@ class cct_shared_ingame_objective : cluielem {
             set_data(localclientnum, "_state", 39);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective

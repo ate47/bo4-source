@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_perks.csc;
 #using scripts\core_common\system_shared.csc;
 

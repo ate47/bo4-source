@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_hacienda_alt_sound;
 
 // Namespace mp_hacienda_alt_sound/mp_hacienda_alt_sound

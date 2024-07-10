@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace delete;
 
 // Namespace delete/delete
@@ -11,10 +10,10 @@ function event_handler[delete] main(eventstruct) {
     if (isdefined(self)) {
         /#
             if (isdefined(self.classname)) {
-                if (self.classname == "<unknown string>" || self.classname == "<unknown string>" || self.classname == "<unknown string>") {
-                    println("<unknown string>");
-                    println("<unknown string>" + self getentitynumber() + "<unknown string>" + self.origin);
-                    println("<unknown string>");
+                if (self.classname == "<dev string:x38>" || self.classname == "<dev string:x47>" || self.classname == "<dev string:x58>") {
+                    println("<dev string:x6b>");
+                    println("<dev string:x6e>" + self getentitynumber() + "<dev string:xae>" + self.origin);
+                    println("<dev string:x6b>");
                 }
             }
         #/

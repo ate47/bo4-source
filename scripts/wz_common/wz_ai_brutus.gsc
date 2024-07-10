@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ai_utils.gsc;
 #using scripts\wz_common\wz_ai_zombie.gsc;
 #using scripts\mp_common\player\player_damage.gsc;

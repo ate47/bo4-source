@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\bgbs\zm_bgb_newtonian_negation.gsc;
 #using scripts\zm_common\zm_bgb_pack.gsc;
 #using scripts\zm_common\zm_bgb.gsc;

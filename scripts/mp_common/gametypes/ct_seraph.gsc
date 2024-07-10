@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_ai.gsc;
 #using scripts\mp_common\player\player_utils.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
@@ -697,27 +696,27 @@ function function_8aa1c633() {
     // Size: 0x1b8
     function function_849be68a() {
         sessionmode = currentsessionmode();
-        setdvar(#"hash_527da51d610a31b1", "<unknown string>");
-        level flag::init("<unknown string>");
+        setdvar(#"hash_527da51d610a31b1", "<dev string:x38>");
+        level flag::init("<dev string:x3b>");
         if (sessionmode != 4) {
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x52>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_527da51d610a31b1", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_527da51d610a31b1", "<dev string:x38>");
+            if (cmd == "<dev string:x38>") {
                 continue;
             }
             e_player = level.players[0];
             switch (cmd) {
             case #"spawn_chopper":
-                a_s_chopper = struct::get_array("<unknown string>", "<unknown string>");
+                a_s_chopper = struct::get_array("<dev string:xaa>", "<dev string:xc1>");
                 break;
             case #"kill_player":
                 e_player dodamage(1000, e_player.origin);
                 break;
             }
-            setdvar(#"hash_527da51d610a31b1", "<unknown string>");
+            setdvar(#"hash_527da51d610a31b1", "<dev string:x38>");
         }
     }
 

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core\core_frontend_sound.csc;
 #using scripts\core\core_frontend_fx.csc;
 #using scripts\core_common\util_shared.csc;

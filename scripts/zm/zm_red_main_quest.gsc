@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_boss_battle.gsc;
 #using scripts\zm\zm_red_ww_quests.gsc;
 #using scripts\zm\zm_red_challenges.gsc;
@@ -3701,9 +3700,9 @@ function play_cleanup(b_skipped, var_19e802fa) {
                     ai_zombie kill();
                 }
             }
-            level flag::set("alchemical_symbol_");
-            level flag::clear("ankh_jnt");
-            level flag::clear("fxexp_mq_mirror_light_waterfall");
+            level flag::set("<dev string:x38>");
+            level flag::clear("<dev string:x48>");
+            level flag::clear("<dev string:x5e>");
             callback::remove_on_ai_killed(&function_93e711a6);
             callback::remove_on_spawned(&function_b0457d15);
             var_a3db07f9 = s_play.var_a3db07f9;
@@ -3841,7 +3840,7 @@ function play_think() {
         level clientfield::set("" + #"hash_d80665c22fafd1e", 0);
         if (s_waitresult._notify == #"hash_666e960831b9abc4") {
             /#
-                iprintlnbold("ignoreme");
+                iprintlnbold("<dev string:x6f>");
             #/
             level thread function_4d79231e();
             music::setmusicstate("none");
@@ -3854,39 +3853,39 @@ function play_think() {
             e_player thread function_2efcf3bf();
         }
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x87>");
             str_reason = s_waitresult.str_reason;
             if (isdefined(str_reason)) {
                 switch (str_reason) {
                 case #"late_mark":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x9d>");
                     break;
                 case #"late_backstage":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xb6>");
                     break;
                 case #"late_kills":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xcb>");
                     break;
                 case #"left_stage":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xe9>");
                     break;
                 case #"left_backstage":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xf6>");
                     break;
                 case #"no_ww":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x107>");
                     break;
                 case #"downed":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x122>");
                     break;
                 case #"rezzed":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x132>");
                     break;
                 case #"dropped_ww":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x147>");
                     break;
                 case #"hash_a3d841d32682b30":
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x154>");
                     break;
                 }
             }
@@ -3900,7 +3899,7 @@ function play_think() {
         var_4ebe6ac0++;
         if (var_4ebe6ac0 >= 5 && !zm_utility::is_trials()) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x16c>");
             #/
             var_4ebe6ac0 = 0;
             level waittill(#"between_round_over");
@@ -4387,7 +4386,7 @@ function function_14727b8f() {
     var_55b0fa0c = [];
     for (n_act = 1; n_act <= 3; n_act++) {
         /#
-            iprintlnbold("<unknown string>" + n_act + "<unknown string>");
+            iprintlnbold("<dev string:x180>" + n_act + "<dev string:x187>");
         #/
         switch (n_act) {
         case 1:
@@ -4481,7 +4480,7 @@ function function_14727b8f() {
             level thread function_b927f16();
         }
         /#
-            iprintlnbold("<unknown string>" + n_act + "<unknown string>");
+            iprintlnbold("<dev string:x180>" + n_act + "<dev string:x190>");
         #/
         level notify(#"play_act_completed");
         if (n_act < 3) {
@@ -6841,31 +6840,31 @@ function narrative_room_cleanup(var_a276c861, var_19e802fa) {
     // Checksum 0xca5d2bbd, Offset: 0x1ed78
     // Size: 0x3b4
     function function_69e1a1fc() {
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x19c>");
         if (!isdefined(level.var_9d581f96)) {
             level.var_9d581f96 = 0;
         }
         if (!level.var_9d581f96) {
             level.var_9d581f96 = 1;
-            level clientfield::set("<unknown string>" + #"hash_51858e923e750c33", 2);
-            level clientfield::set("<unknown string>" + #"hash_2b05d4c6217bac22", 2);
-            level clientfield::set("<unknown string>" + #"hash_3836d3a94cf05642", 2);
-            level clientfield::set("<unknown string>" + #"hash_53e684a319647b40", 2);
-            level clientfield::set("<unknown string>" + #"hash_70e157c389c1c02f", 1);
-            level clientfield::set("<unknown string>" + #"hash_4f59799617fef9c7", 1);
-            level clientfield::set("<unknown string>" + #"hash_31a10d565ae05ddb", 2);
-            level clientfield::set("<unknown string>" + #"hash_1c97c11fb59eb4bf", 1);
+            level clientfield::set("<dev string:x1b2>" + #"hash_51858e923e750c33", 2);
+            level clientfield::set("<dev string:x1b2>" + #"hash_2b05d4c6217bac22", 2);
+            level clientfield::set("<dev string:x1b2>" + #"hash_3836d3a94cf05642", 2);
+            level clientfield::set("<dev string:x1b2>" + #"hash_53e684a319647b40", 2);
+            level clientfield::set("<dev string:x1b2>" + #"hash_70e157c389c1c02f", 1);
+            level clientfield::set("<dev string:x1b2>" + #"hash_4f59799617fef9c7", 1);
+            level clientfield::set("<dev string:x1b2>" + #"hash_31a10d565ae05ddb", 2);
+            level clientfield::set("<dev string:x1b2>" + #"hash_1c97c11fb59eb4bf", 1);
             return;
         }
         level.var_9d581f96 = 0;
-        level clientfield::set("<unknown string>" + #"hash_51858e923e750c33", 0);
-        level clientfield::set("<unknown string>" + #"hash_2b05d4c6217bac22", 0);
-        level clientfield::set("<unknown string>" + #"hash_3836d3a94cf05642", 0);
-        level clientfield::set("<unknown string>" + #"hash_53e684a319647b40", 0);
-        level clientfield::set("<unknown string>" + #"hash_70e157c389c1c02f", 0);
-        level clientfield::set("<unknown string>" + #"hash_4f59799617fef9c7", 0);
-        level clientfield::set("<unknown string>" + #"hash_31a10d565ae05ddb", 0);
-        level clientfield::set("<unknown string>" + #"hash_1c97c11fb59eb4bf", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_51858e923e750c33", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_2b05d4c6217bac22", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_3836d3a94cf05642", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_53e684a319647b40", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_70e157c389c1c02f", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_4f59799617fef9c7", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_31a10d565ae05ddb", 0);
+        level clientfield::set("<dev string:x1b2>" + #"hash_1c97c11fb59eb4bf", 0);
     }
 
     // Namespace zm_red_main_quest/zm_red_main_quest

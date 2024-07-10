@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_spectral_shield.csc;
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\core_common\exploder_shared.csc;

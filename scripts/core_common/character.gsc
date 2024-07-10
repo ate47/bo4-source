@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.gsc;
 
 #namespace character;
@@ -53,9 +52,9 @@ function save() {
     info[#"gearmodel"] = self.gearmodel;
     if (isdefined(self.name)) {
         info[#"name"] = self.name;
-        println("<unknown string>", self.name);
+        println("<dev string:x38>", self.name);
     } else {
-        println("<unknown string>");
+        println("<dev string:x4e>");
     }
     attachsize = self getattachsize();
     for (i = 0; i < attachsize; i++) {
@@ -78,9 +77,9 @@ function load(info) {
     self.gearmodel = info[#"gearmodel"];
     if (isdefined(info[#"name"])) {
         self.name = info[#"name"];
-        println("<unknown string>", self.name);
+        println("<dev string:x67>", self.name);
     } else {
-        println("<unknown string>");
+        println("<dev string:x7d>");
     }
     attachinfo = info[#"attach"];
     attachsize = attachinfo.size;
@@ -146,7 +145,7 @@ function get_least_used_index(prefix, group) {
         }
         lowest_indices[lowest_indices.size] = i;
     }
-    assert(lowest_indices.size, "<unknown string>");
+    assert(lowest_indices.size, "<dev string:x96>");
     return array::random(lowest_indices);
 }
 

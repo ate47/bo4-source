@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial.csc;
 #using script_45657e86e8f90414;
 #using script_1793e0dffb81a6c8;
@@ -20,7 +19,7 @@ function event_handler[gametype_init] main(eventstruct) {
     level._zombie_gamemodeprecache = &onprecachegametype;
     level._zombie_gamemodemain = &onstartgametype;
     level flag::init(#"ztrial", 1);
-    println("<unknown string>");
+    println("<dev string:x38>");
 }
 
 // Namespace ztrials/ztrials
@@ -28,7 +27,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0xb63cf0fb, Offset: 0x148
 // Size: 0x24
 function onprecachegametype() {
-    println("<unknown string>");
+    println("<dev string:x55>");
 }
 
 // Namespace ztrials/ztrials
@@ -36,7 +35,7 @@ function onprecachegametype() {
 // Checksum 0xd31b716e, Offset: 0x178
 // Size: 0x24
 function onstartgametype() {
-    println("<unknown string>");
+    println("<dev string:x76>");
 }
 
 // Namespace ztrials/event_b72c1844

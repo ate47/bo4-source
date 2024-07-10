@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_util.csc;
 #using scripts\abilities\ability_power.csc;
 #using scripts\abilities\ability_player.csc;

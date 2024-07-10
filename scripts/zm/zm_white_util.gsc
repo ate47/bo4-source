@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\perk\zm_perk_mod_additionalprimaryweapon.gsc;
 #using scripts\zm\zm_hms_util.gsc;
 #using script_5f9141e04e4e94a2;
@@ -256,7 +255,7 @@ function function_f4a39bc4() {
 // Checksum 0x9e6af25b, Offset: 0x14a0
 // Size: 0xc8
 function function_6f635c39(str) {
-    assert(isdefined(str), "<unknown string>");
+    assert(isdefined(str), "<dev string:x38>");
     a_doors = getentarray(str, "script_string");
     foreach (door in a_doors) {
         door function_20681be5();
@@ -289,7 +288,7 @@ function private function_20681be5() {
 // Checksum 0x7e148be5, Offset: 0x1710
 // Size: 0xc8
 function function_364cd8c0(str) {
-    assert(isdefined(str), "<unknown string>");
+    assert(isdefined(str), "<dev string:x38>");
     a_doors = getentarray(str, "script_string");
     foreach (door in a_doors) {
         door function_46ed91c6();
@@ -322,7 +321,7 @@ function private function_46ed91c6() {
 // Checksum 0xa880a0a1, Offset: 0x1980
 // Size: 0xe8
 function function_612918d9(str) {
-    assert(isdefined(str), "<unknown string>");
+    assert(isdefined(str), "<dev string:x60>");
     a_e_blockers = getentarray(str, "targetname");
     foreach (e_blocker in a_e_blockers) {
         e_blocker notsolid();
@@ -335,10 +334,10 @@ function function_612918d9(str) {
 // Checksum 0x7830f2c0, Offset: 0x1a70
 // Size: 0x110
 function function_ca4ee4d1(str) {
-    assert(isdefined(str), "<unknown string>");
+    assert(isdefined(str), "<dev string:x89>");
     a_s_bunker_doors = struct::get_array(str, "targetname");
     foreach (s_bunker_door in a_s_bunker_doors) {
-        assert(isdefined(s_bunker_door.init_anim), "<unknown string>");
+        assert(isdefined(s_bunker_door.init_anim), "<dev string:xbb>");
         s_bunker_door thread scene::play(s_bunker_door.init_anim);
     }
 }
@@ -348,10 +347,10 @@ function function_ca4ee4d1(str) {
 // Checksum 0x2c94b672, Offset: 0x1b88
 // Size: 0x110
 function function_bf25aeb1(str) {
-    assert(isdefined(str), "<unknown string>");
+    assert(isdefined(str), "<dev string:xea>");
     a_s_bunker_doors = struct::get_array(str, "script_noteworthy");
     foreach (s_bunker_door in a_s_bunker_doors) {
-        assert(isdefined(s_bunker_door.open_anim), "<unknown string>");
+        assert(isdefined(s_bunker_door.open_anim), "<dev string:x11d>");
         s_bunker_door thread scene::play(s_bunker_door.open_anim);
     }
 }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\mp_common\gametypes\dev.gsc;
 #using scripts\mp_common\util.gsc;
@@ -27,8 +26,8 @@
         init();
         level.rat.common.gethostplayer = &util::gethostplayer;
         level.rat.deathcount = 0;
-        addratscriptcmd("<unknown string>", &rscaddenemy);
-        addratscriptcmd("<unknown string>", &function_50634409);
+        addratscriptcmd("<dev string:x38>", &rscaddenemy);
+        addratscriptcmd("<dev string:x43>", &function_50634409);
         setdvar(#"rat_death_count", 0);
     }
 
@@ -43,7 +42,7 @@
         setdvar(#"bot_pressmeleebtn", 0);
         setdvar(#"scr_botsallowkillstreaks", 0);
         setdvar(#"bot_allowgrenades", 0);
-        team = bot::devgui_relative_team(player, "<unknown string>");
+        team = bot::devgui_relative_team(player, "<dev string:x53>");
         bot = level bot::add_bot(team);
     }
 
@@ -59,8 +58,8 @@
         }
         bot = dev::getormakebot(team);
         if (!isdefined(bot)) {
-            println("<unknown string>");
-            ratreportcommandresult(params._id, 0, "<unknown string>");
+            println("<dev string:x5b>");
+            ratreportcommandresult(params._id, 0, "<dev string:x5b>");
             return;
         }
         bot thread testenemy(team);

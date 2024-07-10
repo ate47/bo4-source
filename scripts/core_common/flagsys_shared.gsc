@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 
@@ -82,7 +81,7 @@ function increment(str_flag) {
 // Checksum 0x3a1d7796, Offset: 0x368
 // Size: 0x9c
 function decrement(str_flag) {
-    assert(isdefined(self.flag_count) && isdefined(self.flag_count[str_flag]) && self.flag_count[str_flag] > 0, "<unknown string>");
+    assert(isdefined(self.flag_count) && isdefined(self.flag_count[str_flag]) && self.flag_count[str_flag] > 0, "<dev string:x38>");
     self.flag_count[str_flag]--;
     if (self.flag_count[str_flag] == 0) {
         clear(str_flag);
@@ -117,7 +116,7 @@ function clear(str_flag) {
 // Checksum 0x332772c8, Offset: 0x4f0
 // Size: 0x6c
 function set_val(str_flag, b_val) {
-    assert(isdefined(b_val), "<unknown string>");
+    assert(isdefined(b_val), "<dev string:x77>");
     if (b_val) {
         set(str_flag);
         return;

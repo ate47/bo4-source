@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_elevation_sound.csc;
 #using scripts\mp\mp_elevation_fx.csc;
 #using scripts\core_common\callbacks_shared.csc;

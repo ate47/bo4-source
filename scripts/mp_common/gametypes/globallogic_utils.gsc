@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\round.gsc;
 #using scripts\mp_common\gametypes\hud_message.gsc;
 #using scripts\mp_common\gametypes\hostmigration.gsc;
@@ -148,12 +147,12 @@ function getvalueinrange(value, minvalue, maxvalue) {
         if (level.teambased) {
             for (i = 0; i < numplayers - 1; i++) {
                 if (level.placement[#"all"][i].score < level.placement[#"all"][i + 1].score) {
-                    println("<unknown string>");
+                    println("<dev string:x38>");
                     for (j = 0; j < numplayers; j++) {
                         player = level.placement[#"all"][j];
-                        println("<unknown string>" + j + "<unknown string>" + player.name + "<unknown string>" + player.score);
+                        println("<dev string:x4d>" + j + "<dev string:x52>" + player.name + "<dev string:x57>" + player.score);
                     }
-                    assertmsg("<unknown string>");
+                    assertmsg("<dev string:x5c>");
                     break;
                 }
             }
@@ -161,12 +160,12 @@ function getvalueinrange(value, minvalue, maxvalue) {
         }
         for (i = 0; i < numplayers - 1; i++) {
             if (level.placement[#"all"][i].pointstowin < level.placement[#"all"][i + 1].pointstowin) {
-                println("<unknown string>");
+                println("<dev string:x38>");
                 for (j = 0; j < numplayers; j++) {
                     player = level.placement[#"all"][j];
-                    println("<unknown string>" + j + "<unknown string>" + player.name + "<unknown string>" + player.pointstowin);
+                    println("<dev string:x4d>" + j + "<dev string:x52>" + player.name + "<dev string:x57>" + player.pointstowin);
                 }
-                assertmsg("<unknown string>");
+                assertmsg("<dev string:x5c>");
                 break;
             }
         }
@@ -534,17 +533,17 @@ function function_4aa8d809(index, string) {
         log_string = level.var_336c35f1[var_c1e98979];
         winner = round::get_winner();
         if (isplayer(winner)) {
-            print("<unknown string>" + winner getxuid() + "<unknown string>" + winner.name + "<unknown string>");
+            print("<dev string:x86>" + winner getxuid() + "<dev string:x97>" + winner.name + "<dev string:x9b>");
         }
         if (isdefined(winner)) {
             if (isplayer(winner)) {
-                log_string = log_string + "<unknown string>" + winner getxuid() + "<unknown string>" + winner.name + "<unknown string>";
+                log_string = log_string + "<dev string:x9f>" + winner getxuid() + "<dev string:x97>" + winner.name + "<dev string:x9b>";
             } else {
-                log_string = log_string + "<unknown string>" + winner;
+                log_string = log_string + "<dev string:x9f>" + winner;
             }
         }
         foreach (team, str_team in level.teams) {
-            log_string = log_string + "<unknown string>" + str_team + "<unknown string>" + game.stat[#"teamscores"][team];
+            log_string = log_string + "<dev string:xa9>" + str_team + "<dev string:x57>" + game.stat[#"teamscores"][team];
         }
         print(log_string);
     }
@@ -569,12 +568,12 @@ function add_map_error(msg) {
 function print_map_errors() {
     if (isdefined(level.maperrors) && level.maperrors.size > 0) {
         /#
-            println("<unknown string>");
+            println("<dev string:xae>");
             for (i = 0; i < level.maperrors.size; i++) {
-                println("<unknown string>" + level.maperrors[i]);
+                println("<dev string:xd7>" + level.maperrors[i]);
             }
-            println("<unknown string>");
-            util::error("<unknown string>");
+            println("<dev string:xe1>");
+            util::error("<dev string:x10a>");
         #/
         callback::abort_level();
         return true;

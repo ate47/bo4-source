@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_1f0e83e43bf9c3b9;
 #using scripts\core_common\struct.gsc;
 #using scripts\core_common\animation_shared.gsc;
@@ -442,7 +441,7 @@ function private function_e9819a23(entity) {
                 var_7a61ad67 = vectornormalize(entity getvelocity());
                 if (vectordot(var_7a61ad67, enemyvelocity) > cos(20)) {
                     /#
-                        record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                        record3dtext("<dev string:x38>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
                     #/
                     return false;
                 }
@@ -499,7 +498,7 @@ function private function_85d8b15d(entity) {
                 var_7a61ad67 = vectornormalize(entity getvelocity());
                 if (vectordot(var_7a61ad67, enemyvelocity) > cos(20)) {
                     /#
-                        record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                        record3dtext("<dev string:x38>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
                     #/
                     return false;
                 }
@@ -716,8 +715,8 @@ function function_1ad502a0(entity, mocompanim, mocompanimblendouttime, mocompani
             movedelta = getmovedelta(mocompanim, 0, 1, entity);
             animendpos = entity localtoworldcoords(movedelta);
             distance = distance(entity.origin, animendpos);
-            recordcircle(animendpos, 3, (0, 1, 0), "<unknown string>");
-            record3dtext("<unknown string>" + distance, animendpos, (0, 1, 0), "<unknown string>");
+            recordcircle(animendpos, 3, (0, 1, 0), "<dev string:x53>");
+            record3dtext("<dev string:x5c>" + distance, animendpos, (0, 1, 0), "<dev string:x53>");
         #/
     }
 }
@@ -750,28 +749,28 @@ function function_3511ecd1(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (traceresult[#"fraction"] < 0.9) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x5f>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (!var_201660e6) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x6f>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_cf699df5 > var_65cbfb52 && var_776ddabf >= 130 * 130) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x80>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 450 * 450) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x8e>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         }
         if (var_535d098c) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x9c>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
             #/
             entity.meleeinfo.var_425c4c8b = 1;
         }
@@ -786,11 +785,11 @@ function function_3511ecd1(entity, mocompanim, mocompanimblendouttime, mocompani
             var_7948b2f3 = withinzrange && withinfov;
             var_425c4c8b = (isvisible || var_535d098c) && var_7948b2f3;
             /#
-                reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
+                reasons = "<dev string:xaf>" + isvisible + "<dev string:xb6>" + withinzrange + "<dev string:xbc>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<dev string:x53>");
                 } else {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x53>");
                 }
             #/
             if (var_425c4c8b) {
@@ -815,8 +814,8 @@ function function_3511ecd1(entity, mocompanim, mocompanimblendouttime, mocompani
         if (currentanimtime <= entity.meleeinfo.var_6392c3a2) {
             assert(isdefined(entity.meleeinfo.var_10b8b6d1) && isdefined(entity.meleeinfo.var_8b9a15a6));
             /#
-                recordsphere(entity.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
-                recordsphere(entity.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<unknown string>");
+                recordsphere(entity.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<dev string:x53>");
+                recordsphere(entity.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<dev string:x53>");
             #/
             adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * entity.meleeinfo.var_8b9a15a6;
             entity forceteleport(adjustedorigin);

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_1de6f3c239229d19;
 #using script_2595527427ea71eb;
 #using scripts\zm_common\trials\zm_trial_disable_perks.gsc;
@@ -282,7 +281,7 @@ function function_c2cd0cba(var_71fbbf01) {
 // Checksum 0x4a1f984b, Offset: 0x16f0
 // Size: 0x134
 function function_2190356a(var_96936cca, b_mute = 0) {
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x38>");
     assert(var_96936cca >= 0 && var_96936cca <= 1000);
     if (var_96936cca >= 1 && !b_mute) {
         self playsoundtoplayer(#"hash_1377aa36d8ba27e1", self);
@@ -331,7 +330,7 @@ function set_game_state(game_state) {
 // Checksum 0xbcf51595, Offset: 0x1a40
 // Size: 0xbc
 function function_58292c4a(reason, var_eeb30248 = undefined) {
-    assert(clientfield::get_world_uimodel("<unknown string>") == 1);
+    assert(clientfield::get_world_uimodel("<dev string:x86>") == 1);
     var_ccabdce8 = 0;
     if (isdefined(var_eeb30248)) {
         var_ccabdce8 = function_1e223bce(var_eeb30248);
@@ -713,19 +712,19 @@ function function_dc0859e(var_b5434dd5 = 1) {
     // Checksum 0xd3039c58, Offset: 0x3498
     // Size: 0x1ce
     function open_all_doors() {
-        a_zombie_doors = getentarray("<unknown string>", "<unknown string>");
+        a_zombie_doors = getentarray("<dev string:xa5>", "<dev string:xb3>");
         for (i = 0; i < a_zombie_doors.size; i++) {
             if (!(isdefined(a_zombie_doors[i].has_been_opened) && a_zombie_doors[i].has_been_opened)) {
                 a_zombie_doors[i] notify(#"trigger", {#is_forced:1});
             }
             waitframe(1);
         }
-        var_38a6b7d0 = getentarray("<unknown string>", "<unknown string>");
+        var_38a6b7d0 = getentarray("<dev string:xc0>", "<dev string:xb3>");
         for (i = 0; i < var_38a6b7d0.size; i++) {
             var_38a6b7d0[i] notify(#"trigger", {#is_forced:1});
             waitframe(1);
         }
-        a_zombie_debris = getentarray("<unknown string>", "<unknown string>");
+        a_zombie_debris = getentarray("<dev string:xd5>", "<dev string:xb3>");
         for (i = 0; i < a_zombie_debris.size; i++) {
             if (isdefined(a_zombie_debris[i])) {
                 a_zombie_debris[i] notify(#"trigger", {#is_forced:1});
@@ -758,7 +757,7 @@ function function_dc0859e(var_b5434dd5 = 1) {
     // Checksum 0xb1c43315, Offset: 0x37e8
     // Size: 0x94
     function function_9c1092f6() {
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xe5>");
         if (getgametypesetting(#"zmshowtimer", 0) == 1) {
             setgametypesetting(#"zmshowtimer", 0);
             return;

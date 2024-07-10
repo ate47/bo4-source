@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\dog_shared.gsc;
 #using scripts\killstreaks\ai\state.gsc;
 #using scripts\abilities\ability_player.gsc;

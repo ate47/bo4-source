@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
 #using scripts\zm_common\ai\zm_ai_utility.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\exploder_shared.csc;
 #using scripts\core_common\lui_shared.csc;
 #using script_84f5590d2ac48f8;
@@ -174,7 +173,7 @@ function nuked_population_sign_think(localclientnum) {
     // Size: 0x4e
     function function_102a701c(tens, ones) {
         while (!isdefined(tens) || !isdefined(ones)) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
             wait(2);
         }
     }

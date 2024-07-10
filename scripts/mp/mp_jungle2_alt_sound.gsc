@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_jungle2_alt_sound;
 
 // Namespace mp_jungle2_alt_sound/mp_jungle2_alt_sound

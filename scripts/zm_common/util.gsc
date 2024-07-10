@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\trigger_shared.gsc;
 #using scripts\core_common\sound_shared.gsc;
@@ -306,7 +305,7 @@ function getotherteam(team) {
     } else {
         return #"allies";
     }
-    assertmsg("<unknown string>" + team);
+    assertmsg("<dev string:x38>" + team);
 }
 
 // Namespace util/util
@@ -340,7 +339,7 @@ function getotherteamsmask(skip_team) {
 // Checksum 0x312832a5, Offset: 0x1238
 // Size: 0x5c
 function getfx(fx) {
-    assert(isdefined(level._effect[fx]), "<unknown string>" + fx + "<unknown string>");
+    assert(isdefined(level._effect[fx]), "<dev string:x56>" + fx + "<dev string:x5c>");
     return level._effect[fx];
 }
 

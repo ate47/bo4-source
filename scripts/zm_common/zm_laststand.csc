@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_cb847e6c2204e74;
 #using script_6409d04aa560106c;
 #using script_3b8f43c68572f06;

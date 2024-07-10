@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\mp_common\item_inventory.gsc;
 #using scripts\core_common\hud_shared.gsc;

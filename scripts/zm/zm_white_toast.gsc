@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\ai\zm_ai_avogadro.gsc;
 #using scripts\zm\zm_white_portals.gsc;
 #using scripts\zm\zm_white_util.gsc;
@@ -146,8 +145,8 @@ function function_94c0714() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("cp_toast_apd_lounge");
-                println("cp_toast_apd_lounge");
+                iprintlnbold("<dev string:x38>");
+                println("<dev string:x38>");
             }
         }
     #/
@@ -161,8 +160,8 @@ function function_94c0714() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("mannequin_ally_door");
-                println("mannequin_ally_door");
+                iprintlnbold("<dev string:x64>");
+                println("<dev string:x64>");
             }
         }
     #/
@@ -195,8 +194,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("tag_end");
-                println("tag_end");
+                iprintlnbold("<dev string:x7d>");
+                println("<dev string:x7d>");
             }
         }
     #/
@@ -211,8 +210,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x8b>");
+                println("<dev string:x8b>");
             }
         }
     #/
@@ -223,8 +222,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x99>");
+                println("<dev string:x99>");
             }
         }
     #/
@@ -241,8 +240,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xb0>");
+                println("<dev string:xb0>");
             }
         }
     #/
@@ -253,8 +252,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xd0>");
+                println("<dev string:xd0>");
             }
         }
     #/
@@ -286,8 +285,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xe2>");
+                println("<dev string:xe2>");
             }
         }
     #/
@@ -331,16 +330,16 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x119>");
+                println("<dev string:x119>");
             }
         }
     #/
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x144>");
+                println("<dev string:x144>");
             }
         }
     #/
@@ -369,8 +368,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("cp_toast_apd_lounge");
-                println("cp_toast_apd_lounge");
+                iprintlnbold("<dev string:x38>");
+                println("<dev string:x38>");
             }
         }
     #/
@@ -396,8 +395,8 @@ function function_ca3759b1() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x161>");
+                println("<dev string:x161>");
             }
         }
     #/
@@ -1306,8 +1305,8 @@ function function_dbbdda4c(e_player) {
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>");
-                        println("<unknown string>");
+                        iprintlnbold("<dev string:x186>");
+                        println("<dev string:x186>");
                     }
                 }
             #/
@@ -1316,8 +1315,8 @@ function function_dbbdda4c(e_player) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>");
-                    println("<unknown string>");
+                    iprintlnbold("<dev string:x19e>");
+                    println("<dev string:x19e>");
                 }
             }
         #/

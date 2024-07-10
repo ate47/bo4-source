@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2f9a68261f6a17be;
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_audio.gsc;
@@ -1016,9 +1015,9 @@ function is_trap_registered(a_registered_traps) {
 // Checksum 0xf3a4c88e, Offset: 0x3d90
 // Size: 0xce
 function register_trap_basic_info(str_trap, func_activate, func_audio) {
-    assert(isdefined(str_trap), "<unknown string>");
-    assert(isdefined(func_activate), "<unknown string>");
-    assert(isdefined(func_audio), "<unknown string>");
+    assert(isdefined(str_trap), "<dev string:x38>");
+    assert(isdefined(func_activate), "<dev string:x78>");
+    assert(isdefined(func_audio), "<dev string:xb9>");
     _register_undefined_trap(str_trap);
     level._custom_traps[str_trap].activate = func_activate;
     level._custom_traps[str_trap].audio = func_audio;
@@ -1042,7 +1041,7 @@ function _register_undefined_trap(str_trap) {
 // Checksum 0x624e856e, Offset: 0x3ed8
 // Size: 0x8e
 function register_trap_damage(str_trap, func_player_damage, func_damage) {
-    assert(isdefined(str_trap), "<unknown string>");
+    assert(isdefined(str_trap), "<dev string:x38>");
     _register_undefined_trap(str_trap);
     level._custom_traps[str_trap].player_damage = func_player_damage;
     level._custom_traps[str_trap].damage = func_damage;
@@ -1053,7 +1052,7 @@ function register_trap_damage(str_trap, func_player_damage, func_damage) {
 // Checksum 0xf26f7d7a, Offset: 0x3f70
 // Size: 0x8e
 function function_60d9e800(str_trap, var_75734507, var_53d35f37) {
-    assert(isdefined(str_trap), "<unknown string>");
+    assert(isdefined(str_trap), "<dev string:x38>");
     _register_undefined_trap(str_trap);
     level._custom_traps[str_trap].var_75734507 = var_75734507;
     level._custom_traps[str_trap].var_53d35f37 = var_53d35f37;

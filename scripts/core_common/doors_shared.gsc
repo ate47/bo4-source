@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\animation_shared.gsc;
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -106,7 +105,7 @@ class cdoor {
             } else if (var_ad9c43d9 > var_bf73cb70) {
                 var_3880cb10 = randomfloatrange(var_bf73cb70, var_ad9c43d9);
             } else {
-                assertmsg("<unknown string>");
+                assertmsg("<dev string:x91>");
             }
             if (b_open_door) {
                 if (isdefined(var_7d28591d) && var_7d28591d) {
@@ -630,7 +629,7 @@ class cdoor {
             } else if (var_ef3feac9 > var_27c5527f) {
                 var_42cf6fbd = randomfloatrange(var_27c5527f, var_ef3feac9);
             } else {
-                assertmsg("<unknown string>");
+                assertmsg("<dev string:x38>");
             }
             switch (var_3c6838bc) {
             case #"x":
@@ -1412,7 +1411,7 @@ function door_update_lock_scripted(c_door) {
 function function_dc98f943(c_door) {
     e_door = c_door.m_e_door;
     e_door endon(#"door_cleared", #"delete");
-    assert(isdefined(e_door), "<unknown string>");
+    assert(isdefined(e_door), "<dev string:xeb>");
     e_door setcandamage(0);
     waitresult = c_door waittill(#"set_destructible");
     e_door waittill(#"door_closed");

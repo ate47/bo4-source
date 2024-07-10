@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\math_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -125,7 +124,7 @@ function getrankxpcapped(inrankxp) {
 }
 
 // Namespace rank/rank_shared
-// Params 14, eflags: 0x1 linked
+// Params 20, eflags: 0x1 linked
 // Checksum 0x78cc2557, Offset: 0xba0
 // Size: 0x748
 function registerscoreinfo(type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_obj, label, medalname, job_type, var_b6593614, var_1a39d14, var_bdbfb0e, var_a434fd2d, is_deprecated, bounty_reward, var_65181181) {
@@ -482,7 +481,7 @@ function on_player_connect() {
     }
     self.rankupdatetotal = 0;
     self.cur_ranknum = rankid;
-    assert(isdefined(self.cur_ranknum), "<unknown string>" + rankid + "<unknown string>");
+    assert(isdefined(self.cur_ranknum), "<dev string:x38>" + rankid + "<dev string:x41>");
     prestige = self stats::get_stat_global(#"plevel", 1);
     if (!isdefined(prestige)) {
         prestige = 0;
@@ -576,7 +575,7 @@ function updaterank() {
         rankid++;
     }
     /#
-        print("<unknown string>" + oldrank + "<unknown string>" + newrankid + "<unknown string>" + self stats::get_stat_global(#"time_played_total"));
+        print("<dev string:x5b>" + oldrank + "<dev string:x6c>" + newrankid + "<dev string:x73>" + self stats::get_stat_global(#"time_played_total"));
     #/
     self setrank(newrankid);
     return true;
@@ -614,7 +613,7 @@ function event_handler[player_rankup] codecallback_rankup(eventstruct) {
 // Size: 0x68
 function getitemindex(refstring) {
     itemindex = getitemindexfromref(refstring);
-    assert(itemindex > 0, "<unknown string>" + refstring + "<unknown string>" + itemindex);
+    assert(itemindex > 0, "<dev string:x83>" + refstring + "<dev string:xa0>" + itemindex);
     return itemindex;
 }
 

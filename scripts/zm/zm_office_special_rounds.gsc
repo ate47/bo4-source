@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_59a783d756554a80;
 #using scripts\zm\zm_office_floors.gsc;
 #using scripts\zm_common\callbacks.gsc;
@@ -184,8 +183,8 @@ function function_13f107c4(ai, ent) {
     }
     ai dontinterpolate();
     ai forceteleport(ent.origin, angles);
-    assert(isdefined(ai), "<unknown string>");
-    assert(isalive(ai), "<unknown string>");
+    assert(isdefined(ai), "<dev string:x38>");
+    assert(isalive(ai), "<dev string:x4d>");
     ai val::reset(#"crawler_spawn", "allowdeath");
     wait(0.1);
     ai show();

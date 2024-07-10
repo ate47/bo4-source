@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
@@ -59,7 +58,7 @@ function on_player_spawned() {
         gameobject_link = undefined;
         while (true) {
             wait(float(function_60d95f53()) / 1000);
-            if (self.sessionstate != "<unknown string>") {
+            if (self.sessionstate != "<dev string:x38>") {
                 continue;
             }
             test_mount = getdvarint(#"test_mount", 0);
@@ -71,8 +70,8 @@ function on_player_spawned() {
                     gameobject_link delete();
                     gameobject_link = undefined;
                 }
-                gameobject_link = util::spawn_model("<unknown string>", player.origin, player.angles);
-                player playerlinkto(gameobject_link, "<unknown string>", 0, 60, 60, 30, 10, 0);
+                gameobject_link = util::spawn_model("<dev string:x42>", player.origin, player.angles);
+                player playerlinkto(gameobject_link, "<dev string:x42>", 0, 60, 60, 30, 10, 0);
                 player function_66f3a713();
             } else if (test_mount == 2) {
                 player unlink();
@@ -358,7 +357,7 @@ function function_18a9a4e4(settings) {
 // Checksum 0x82854205, Offset: 0x1598
 // Size: 0xd4
 function function_7a677105(weapon) {
-    assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
+    assert(isdefined(weapon.customsettings), "<dev string:x4f>" + weapon.name);
     if (!isdefined(level.var_825acea)) {
         level.var_825acea = [];
     }
@@ -497,7 +496,7 @@ function stow_on_back(current) {
     } else if (currentweapon != level.weaponnone) {
         for (idx = 0; idx < self.weapon_array_primary.size; idx++) {
             temp_index_weapon = self.weapon_array_primary[idx];
-            assert(isdefined(temp_index_weapon), "<unknown string>");
+            assert(isdefined(temp_index_weapon), "<dev string:x83>");
             if (temp_index_weapon == currentweapon) {
                 continue;
             }
@@ -515,7 +514,7 @@ function stow_on_back(current) {
         if (index_weapon == level.weaponnone) {
             for (idx = 0; idx < self.weapon_array_sidearm.size; idx++) {
                 temp_index_weapon = self.weapon_array_sidearm[idx];
-                assert(isdefined(temp_index_weapon), "<unknown string>");
+                assert(isdefined(temp_index_weapon), "<dev string:xa4>");
                 if (temp_index_weapon == currentweapon) {
                     continue;
                 }

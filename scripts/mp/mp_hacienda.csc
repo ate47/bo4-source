@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_hacienda_sound.csc;
 #using scripts\mp\mp_hacienda_fx.csc;
 #using scripts\mp_common\load.csc;

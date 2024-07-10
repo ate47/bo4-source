@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_traps.gsc;
 #using scripts\zm_common\zm_pack_a_punch.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;

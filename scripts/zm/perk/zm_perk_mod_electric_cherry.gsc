@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_stats.gsc;
 #using scripts\zm_common\zm_perks.gsc;
 #using scripts\zm_common\zm_challenges.gsc;
@@ -87,7 +86,7 @@ function electric_cherry_stun() {
     self endon(#"stun_zombie");
     if (self.health <= 0) {
         /#
-            iprintln("<unknown string>");
+            iprintln("<dev string:x38>");
         #/
         return;
     }
@@ -154,14 +153,14 @@ function function_f6515ba2(inflictor, attacker, damage, flags, meansofdeath, wea
         if (self.archetype === #"zombie" || self.archetype === #"catalyst") {
             self thread electric_cherry_death_fx();
             /#
-                attacker zm_challenges::debug_print("<unknown string>");
+                attacker zm_challenges::debug_print("<dev string:x57>");
             #/
             attacker zm_stats::increment_challenge_stat(#"perk_electric_cherry_kills");
             return self.health;
         } else if (self.health <= var_5a8c565a) {
             self thread electric_cherry_death_fx();
             /#
-                attacker zm_challenges::debug_print("<unknown string>");
+                attacker zm_challenges::debug_print("<dev string:x57>");
             #/
             attacker zm_stats::increment_challenge_stat(#"perk_electric_cherry_kills");
             return var_5a8c565a;

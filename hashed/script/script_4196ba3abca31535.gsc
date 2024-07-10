@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace luielembar_ct;
@@ -122,7 +121,7 @@ class cluielembar_ct : cluielem {
     }
 
     // Namespace cluielembar_ct/luielembar_ct
-    // Params b, eflags: 0x0
+    // Params 11, eflags: 0x0
     // Checksum 0x6b11f23, Offset: 0x480
     // Size: 0x204
     function setup_clientfields(uid, xcallback, ycallback, widthcallback, heightcallback, fadeovertimecallback, alphacallback, redcallback, greencallback, bluecallback, var_661989d5) {

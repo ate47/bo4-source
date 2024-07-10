@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_casino_sound;
 
 // Namespace mp_casino_sound/mp_casino_sound

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\infection.gsc;
 #using scripts\mp_common\gametypes\spawning.gsc;
 #using scripts\core_common\values_shared.gsc;
@@ -57,7 +56,7 @@ function function_e93291ff() {
         if (getdvarint(#"hash_270a21a654a1a79f", 0)) {
             level.totalspawnpoints = [];
             foreach (destination in destinations) {
-                level.totalspawnpoints = arraycombine(level.totalspawnpoints, struct::get_array(destination.target, "<unknown string>"), 0, 0);
+                level.totalspawnpoints = arraycombine(level.totalspawnpoints, struct::get_array(destination.target, "<dev string:x38>"), 0, 0);
             }
         }
     #/
@@ -270,13 +269,13 @@ function private function_c263fd97() {
     starttime = gettime();
     var_ffa47239 = getdvarint(#"hash_24ce936622303dc1", 4000);
     var_2ee361bf = getdvarint(#"hash_6e24885f4fa8a2a2", 10000);
-    println("<unknown string>");
+    println("<dev string:x45>");
     while (gettime() < starttime + var_ffa47239) {
         wait(0.5);
         now = gettime();
         self clientfield::set_player_uimodel("hudItems.streamerLoadFraction", (now - starttime) / (var_ffa47239 + var_2ee361bf));
     }
-    println("<unknown string>");
+    println("<dev string:x67>");
     var_4fcc3493 = starttime + var_ffa47239 + var_2ee361bf;
     var_8cd82180 = getdvarint(#"hash_723f28907e9e4cd0", 3);
     var_45d7d746 = 0;
@@ -287,7 +286,7 @@ function private function_c263fd97() {
         now = gettime();
         self clientfield::set_player_uimodel("hudItems.streamerLoadFraction", (now - starttime) / (var_ffa47239 + var_2ee361bf));
         if (now > var_4fcc3493) {
-            println("<unknown string>");
+            println("<dev string:x81>");
             break;
         }
         stability = 1;
@@ -299,9 +298,9 @@ function private function_c263fd97() {
         } else {
             var_45d7d746 = 0;
         }
-        println("<unknown string>" + var_45d7d746);
+        println("<dev string:x92>" + var_45d7d746);
         if (var_45d7d746 >= var_8cd82180) {
-            println("<unknown string>");
+            println("<dev string:xa9>");
             break;
         }
     }

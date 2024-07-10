@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\zm_common\zm_loadout.csc;
 #using scripts\zm_common\zm_customgame.csc;
@@ -339,8 +338,8 @@ function function_bb184fed(localclientnum, oldval, newval, bnewent, binitialsnap
             var_c1cbeea5 = #"tag_origin";
             var_fe0b737a = level._effect[#"hash_416ffb4657814dcd"];
         }
-        assert(isdefined(var_c1cbeea5), "<unknown string>");
-        assert(isdefined(var_fe0b737a), "<unknown string>");
+        assert(isdefined(var_c1cbeea5), "<dev string:x38>");
+        assert(isdefined(var_fe0b737a), "<dev string:x50>");
         forcestreamxmodel(self.model, 1, 1);
         forcestreamxmodel(var_c1cbeea5, 1, -1);
         mdl_icon = util::spawn_model(localclientnum, var_c1cbeea5, self gettagorigin("tag_icon_link"), self.angles);
@@ -376,7 +375,7 @@ function function_35ba0b0e(localclientnum, n_slot) {
     var_3e311473 = self zm_loadout::get_loadout_item(localclientnum, "specialty" + n_perk);
     /#
         if (!isdemoplaying() && !(isdefined(level.b_game_ended) && level.b_game_ended)) {
-            assert(isdefined(var_3e311473), "<unknown string>");
+            assert(isdefined(var_3e311473), "<dev string:x79>");
         }
     #/
     if (!isdefined(var_3e311473)) {

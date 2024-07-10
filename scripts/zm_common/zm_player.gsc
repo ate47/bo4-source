@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_4194df57536e11ed;
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
@@ -114,7 +113,7 @@ function updateplayernum(player) {
 function getfreespawnpoint(spawnpoints, player) {
     if (!isdefined(spawnpoints)) {
         /#
-            iprintlnbold("lost");
+            iprintlnbold("<dev string:x38>");
         #/
         return undefined;
     }
@@ -328,14 +327,14 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     if (isplayer(self)) {
         startedinlaststand = self laststand::player_is_in_laststand();
     }
-    println("<unknown string>" + idamage + "<unknown string>");
+    println("<dev string:x5c>" + idamage + "<dev string:x79>");
     if (isdefined(eattacker) && isplayer(eattacker) && eattacker.sessionteam == self.sessionteam && !eattacker hasperk(#"specialty_playeriszombie") && !(isdefined(self.is_zombie) && self.is_zombie)) {
         idamage = self process_friendly_fire_callbacks(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex);
         if (self != eattacker && !level.friendlyfire) {
-            println("<unknown string>");
+            println("<dev string:x7d>");
             return;
         } else if (self == eattacker && smeansofdeath != "MOD_GRENADE_SPLASH" && smeansofdeath != "MOD_GRENADE" && smeansofdeath != "MOD_EXPLOSIVE" && smeansofdeath != "MOD_PROJECTILE" && smeansofdeath != "MOD_PROJECTILE_SPLASH" && smeansofdeath != "MOD_BURNED" && smeansofdeath != "MOD_SUICIDE" && smeansofdeath != "MOD_DOT") {
-            println("<unknown string>");
+            println("<dev string:xa8>");
             return;
         }
     }
@@ -343,7 +342,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     if (isdefined(overrideplayerdamage)) {
         idamage = self [[ overrideplayerdamage ]](einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime);
     }
-    assert(isdefined(idamage), "<unknown string>");
+    assert(isdefined(idamage), "<dev string:xcb>");
     if (isdefined(level.zm_bots_scale) && level.zm_bots_scale && isbot(self) && isdefined(einflictor) && isactor(einflictor)) {
         idamage = int(idamage / zm_bot::function_e16b5033(einflictor));
     }
@@ -376,9 +375,9 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     }
     /#
         if (isdefined(eattacker)) {
-            record3dtext("<unknown string>" + idamage + "<unknown string>" + self.health + "<unknown string>" + eattacker getentitynumber(), self.origin, (1, 0, 0), "<unknown string>", self);
+            record3dtext("<dev string:x106>" + idamage + "<dev string:x10b>" + self.health + "<dev string:x112>" + eattacker getentitynumber(), self.origin, (1, 0, 0), "<dev string:x119>", self);
         } else {
-            record3dtext("<unknown string>" + idamage + "<unknown string>" + self.health + "<unknown string>", self.origin, (1, 0, 0), "<unknown string>", self);
+            record3dtext("<dev string:x106>" + idamage + "<dev string:x10b>" + self.health + "<dev string:x122>", self.origin, (1, 0, 0), "<dev string:x119>", self);
         }
     #/
     if (idamage > 0) {
@@ -399,7 +398,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     }
     idamage = int(idamage);
     self finishplayerdamagewrapper(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, boneindex, vsurfacenormal);
-    println("<unknown string>");
+    println("<dev string:x132>");
     var_ca70d16a = 0;
     if (isplayer(self)) {
         var_ca70d16a = !startedinlaststand && self laststand::player_is_in_laststand();
@@ -472,7 +471,7 @@ function register_player_friendly_fire_callback(callback) {
 }
 
 // Namespace zm_player/zm_player
-// Params b, eflags: 0x1 linked
+// Params 11, eflags: 0x1 linked
 // Checksum 0x326c6e41, Offset: 0x21b8
 // Size: 0x10e
 function process_friendly_fire_callbacks(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex) {
@@ -578,7 +577,7 @@ function onplayerspawned() {
         self recordplayerrevivezombies(self);
         /#
             if (getdvarint(#"zombie_cheat", 0) >= 1 && getdvarint(#"zombie_cheat", 0) <= 3) {
-                self val::set(#"zombie_devgui", "<unknown string>", 0);
+                self val::set(#"zombie_devgui", "<dev string:x150>", 0);
             }
         #/
         self setactionslot(3, "altMode");
@@ -762,14 +761,14 @@ function player_out_of_playable_area_monitor() {
         if (!self in_life_brush() && (self in_kill_brush() || !self in_enabled_playable_area() || isdefined(level.player_out_of_playable_area_override) && isdefined(self [[ level.player_out_of_playable_area_override ]]()) && self [[ level.player_out_of_playable_area_override ]]())) {
             if (!isdefined(level.player_out_of_playable_area_monitor_callback) || self [[ level.player_out_of_playable_area_monitor_callback ]]()) {
                 /#
-                    iprintlnbold("<unknown string>" + self.origin);
+                    iprintlnbold("<dev string:x15d>" + self.origin);
                 #/
                 /#
                     if (isdefined(level.kill_thread_test_mode) && level.kill_thread_test_mode) {
                         wait(get_player_out_of_playable_area_monitor_wait_time());
                         continue;
                     }
-                    if (self isinmovemode("<unknown string>", "<unknown string>") || isdefined(level.disable_kill_thread) && level.disable_kill_thread || getdvarint(#"zombie_cheat", 0) > 0) {
+                    if (self isinmovemode("<dev string:x176>", "<dev string:x17c>") || isdefined(level.disable_kill_thread) && level.disable_kill_thread || getdvarint(#"zombie_cheat", 0) > 0) {
                         wait(get_player_out_of_playable_area_monitor_wait_time());
                         continue;
                     }
@@ -971,21 +970,21 @@ function player_prevent_damage(einflictor, eattacker, idamage, idflags, smeansof
     }
     /#
         if (isai(eattacker) && self.ignoreme) {
-            println("<unknown string>" + function_9e72a96(eattacker.archetype) + "<unknown string>" + smeansofdeath);
+            println("<dev string:x185>" + function_9e72a96(eattacker.archetype) + "<dev string:x1be>" + smeansofdeath);
         }
         if (isdefined(self.bgb_in_plain_sight_active) && self.bgb_in_plain_sight_active) {
-            str = "<unknown string>";
+            str = "<dev string:x1c7>";
             if (isai(eattacker)) {
                 str += function_9e72a96(eattacker.archetype);
             } else if (isdefined(eattacker)) {
-                str = str + "<unknown string>" + eattacker getentitynumber();
+                str = str + "<dev string:x1f6>" + eattacker getentitynumber();
             } else {
-                str += "<unknown string>";
+                str += "<dev string:x200>";
             }
             println(str);
-            println("<unknown string>" + (isdefined(self.ignoreme) && self.ignoreme ? "<unknown string>" : "<unknown string>"));
-            println("<unknown string>" + smeansofdeath);
-            println("<unknown string>" + idamage + "<unknown string>");
+            println("<dev string:x218>" + (isdefined(self.ignoreme) && self.ignoreme ? "<dev string:x22f>" : "<dev string:x236>"));
+            println("<dev string:x23e>" + smeansofdeath);
+            println("<dev string:x252>" + idamage + "<dev string:x259>");
         }
     #/
     if (!isdefined(einflictor) || !isdefined(eattacker)) {
@@ -1034,7 +1033,7 @@ function player_revive_monitor() {
             } else if (points > 2500) {
                 points = 2500 + (points - 2500) * 0.5;
             }
-            println("<unknown string>" + points);
+            println("<dev string:x263>" + points);
             reviver zm_score::player_add_points("reviver", points);
             self.score_lost_when_downed = 0;
             if (isplayer(reviver) && reviver != self) {
@@ -1080,7 +1079,7 @@ function spawnspectator() {
     self.hasspawned = 1;
     self.spawntime = gettime();
     self.afk = 0;
-    println("<unknown string>");
+    println("<dev string:x282>");
     self detachall();
     if (isdefined(level.var_7abfc4ea)) {
         self [[ level.var_7abfc4ea ]]();
@@ -1195,7 +1194,7 @@ function spectator_respawn_player() {
 // Checksum 0x79fb4ea9, Offset: 0x4bc0
 // Size: 0x2e8
 function spectator_respawn() {
-    println("<unknown string>");
+    println("<dev string:x2b1>");
     assert(isdefined(self.spectator_respawn));
     if (!isdefined(self) || !isdefined(self.spectator_respawn)) {
         return;
@@ -1855,7 +1854,7 @@ function player_intermission() {
     if (!isdefined(points) || points.size == 0) {
         points = getentarray("info_intermission", "classname");
         if (points.size < 1) {
-            println("<unknown string>");
+            println("<dev string:x2e1>");
             return;
         }
     }
@@ -1963,7 +1962,7 @@ function slowdown(str_type, var_a47cf2b2) {
     }
     self notify(#"hash_31eac0065ba118f5");
     self endoncallback(&function_fe7a7d5b, #"hash_31eac0065ba118f5", #"death", #"hash_28af7943f07d93e2");
-    assert(isdefined(level.var_f27112f9[str_type]), "<unknown string>" + str_type + "<unknown string>");
+    assert(isdefined(level.var_f27112f9[str_type]), "<dev string:x306>" + str_type + "<dev string:x313>");
     if (!isdefined(self.a_n_slowdown_timeouts)) {
         self.a_n_slowdown_timeouts = [];
     }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_4194df57536e11ed;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_stats.gsc;
@@ -235,7 +234,7 @@ function onspawnintermission() {
     spawnpointname = "info_intermission";
     spawnpoints = getentarray(spawnpointname, "classname");
     if (spawnpoints.size < 1) {
-        println("fake_spawned_player" + spawnpointname + "ignoreme");
+        println("<dev string:x38>" + spawnpointname + "<dev string:x3e>");
         return;
     }
     spawnpoint = spawnpoints[randomint(spawnpoints.size)];
@@ -299,12 +298,12 @@ function onspawnplayerunified() {
 // Checksum 0x6f2ade15, Offset: 0x1568
 // Size: 0x2ea
 function onfindvalidspawnpoint() {
-    println("<unknown string>");
+    println("<dev string:x54>");
     if (level flag::get("begin_spawning")) {
         spawnpoint = zm_player::check_for_valid_spawn_near_team(self, 1);
         /#
             if (!isdefined(spawnpoint)) {
-                println("<unknown string>");
+                println("<dev string:x72>");
             }
         #/
     }
@@ -332,7 +331,7 @@ function onfindvalidspawnpoint() {
         if (!isdefined(spawnpoints) || spawnpoints.size == 0) {
             spawnpoints = struct::get_array("initial_spawn_points", "targetname");
         }
-        assert(isdefined(spawnpoints), "<unknown string>");
+        assert(isdefined(spawnpoints), "<dev string:xc6>");
         spawnpoint = zm_player::getfreespawnpoint(spawnpoints, self);
     }
     return spawnpoint;
@@ -352,13 +351,13 @@ function onspawnplayer(predictedspawn = 0) {
         return;
     }
     if (isdefined(level.customspawnlogic)) {
-        println("<unknown string>");
+        println("<dev string:xed>");
         spawnpoint = self [[ level.customspawnlogic ]](predictedspawn);
         if (predictedspawn) {
             return;
         }
     } else {
-        println("<unknown string>");
+        println("<dev string:x54>");
         spawnpoint = self onfindvalidspawnpoint();
         if (predictedspawn) {
             self predictspawnpoint(spawnpoint.origin, spawnpoint.angles);

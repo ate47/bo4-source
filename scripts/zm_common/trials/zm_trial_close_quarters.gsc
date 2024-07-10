@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;
@@ -55,7 +54,7 @@ function is_active() {
 }
 
 // Namespace zm_trial_close_quarters/zm_trial_close_quarters
-// Params c, eflags: 0x5 linked
+// Params 12, eflags: 0x5 linked
 // Checksum 0xc61b8f08, Offset: 0x228
 // Size: 0x11a
 function private range_check(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_6b221588ece2c4aa;
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\zm\zm_mansion_special_rounds.gsc;
@@ -516,7 +515,7 @@ function function_4802a272() {
         break;
     default:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
         #/
         break;
     }
@@ -546,7 +545,7 @@ function function_4802a272() {
         break;
     default:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
         #/
         break;
     }
@@ -575,7 +574,7 @@ function function_4802a272() {
         break;
     default:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
         #/
         break;
     }

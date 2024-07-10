@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\player\player_shared.gsc;
 #using scripts\core_common\killcam_shared.gsc;

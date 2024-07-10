@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_stats.gsc;
 #using scripts\zm_common\zm_loadout.gsc;
 #using scripts\zm_common\zm_customgame.gsc;
@@ -87,8 +86,8 @@ function on_player_disconnect() {
 // Checksum 0x203e3ee, Offset: 0x598
 // Size: 0xf2
 function register_talisman(str_talisman, activate_talisman) {
-    assert(isdefined(str_talisman), "<unknown string>");
-    assert(isdefined(activate_talisman), "<unknown string>");
+    assert(isdefined(str_talisman), "<dev string:x38>");
+    assert(isdefined(activate_talisman), "<dev string:x75>");
     if (!isdefined(level.var_e1074d3e)) {
         level.var_e1074d3e = [];
     }

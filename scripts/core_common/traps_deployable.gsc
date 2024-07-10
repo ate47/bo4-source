@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\trapd.gsc;
 #using scripts\core_common\vehicle_shared.gsc;
@@ -47,7 +46,7 @@ class class_7b5e0861 {
     destructor() {
         /#
             if (isdefined(level.trapddebug) && level.trapddebug) {
-                iprintlnbold("<unknown string>" + m_name);
+                iprintlnbold("<dev string:x350>" + m_name);
             }
         #/
     }
@@ -188,13 +187,13 @@ function function_5726a711() {
                 }
             } else {
                 /#
-                    printerror("<unknown string>" + var_5e63b00d.scriptbundlename);
+                    printerror("<dev string:x38>" + var_5e63b00d.scriptbundlename);
                 #/
             }
             continue;
         }
         /#
-            printerror("<unknown string>");
+            printerror("<dev string:x71>");
         #/
     }
 }
@@ -224,9 +223,9 @@ function register_trap(var_2d727ba0) {
             function_2ce21754(var_2d727ba0.trap_type, &function_deb3cb22, &function_6ce6a400, &function_51d36222, &function_c66a11d0, &function_5c1d01, &function_6ef47474, &function_b501ff0b);
             break;
         default:
-            assertmsg("<unknown string>" + var_2d727ba0.trap_type);
+            assertmsg("<dev string:xa6>" + var_2d727ba0.trap_type);
             /#
-                printerror("<unknown string>");
+                printerror("<dev string:xcb>");
             #/
             return;
         }
@@ -235,7 +234,7 @@ function register_trap(var_2d727ba0) {
         }
     }
     /#
-        printerror("<unknown string>");
+        printerror("<dev string:xf6>");
     #/
     return 0;
 }
@@ -251,12 +250,12 @@ function function_cf4b6e75(var_2d727ba0) {
         [[ var_3af54106 ]]->function_8df621c(var_2d727ba0, var_a8539bf6);
         var_a8539bf6 function_19e12558(var_3af54106, var_a8539bf6.origin, var_a8539bf6.angles);
         /#
-            printinfo("<unknown string>" + var_2d727ba0.name);
+            printinfo("<dev string:x12c>" + var_2d727ba0.name);
         #/
         return true;
     }
     /#
-        printerror("<unknown string>");
+        printerror("<dev string:x151>");
     #/
     return false;
 }
@@ -308,7 +307,7 @@ function function_2ce21754(type, onplacecallback, oncancelcallback, onmovecallba
     function_51a2f229(type, var_f4ff98c9);
     function_f885ebd3(type, damagewrapper);
     /#
-        printinfo("<unknown string>" + type);
+        printinfo("<dev string:x17a>" + type);
     #/
 }
 
@@ -508,7 +507,7 @@ function function_186e3cc4(var_3af54106, owner, team) {
                 waitframe(1);
                 if (!isdefined(owner)) {
                     /#
-                        printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
+                        printerror("<dev string:x191>" + var_3af54106.m_name + "<dev string:x1a7>");
                     #/
                     return;
                 }
@@ -526,7 +525,7 @@ function function_186e3cc4(var_3af54106, owner, team) {
         return;
     }
     /#
-        printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
+        printerror("<dev string:x191>" + var_3af54106.m_name + "<dev string:x1d3>");
     #/
 }
 
@@ -544,7 +543,7 @@ function activate_trap(var_3af54106, origin, angles) {
         return;
     }
     /#
-        printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
+        printerror("<dev string:x1f9>" + var_3af54106.m_name + "<dev string:x20a>");
     #/
 }
 
@@ -691,7 +690,7 @@ function function_2b8baf6d(placeable) {
 function function_efe68db2(var_3af54106, owner, team) {
     var_a8539bf6 = self;
     /#
-        printerror("<unknown string>" + var_a8539bf6.scriptbundlename);
+        printerror("<dev string:x23a>" + var_a8539bf6.scriptbundlename);
     #/
     return var_3af54106;
 }
@@ -732,7 +731,7 @@ function function_b501ff0b(damagecallback, destroyedcallback, var_1891d3cd, var_
 // Size: 0x46e
 function function_59a79a68(var_3af54106, damage_callback, destroyed_callback, emp_damage, emp_callback) {
     self endon(#"death", #"delete");
-    assert(!isvehicle(self) || !issentient(self), "<unknown string>");
+    assert(!isvehicle(self) || !issentient(self), "<dev string:x282>");
     while (true) {
         weapon_damage = undefined;
         waitresult = self waittill(#"damage");
@@ -909,7 +908,7 @@ function function_4a401677(var_3af54106, owner, team) {
         }
     } else {
         /#
-            printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
+            printerror("<dev string:x2f8>" + var_3af54106.m_name + "<dev string:x1d3>");
         #/
     }
     return var_3af54106;
@@ -1225,7 +1224,7 @@ function function_f6ea9af9(flag) {
     // Checksum 0xf7ce4c7b, Offset: 0x4330
     // Size: 0x2c
     function printerror(message) {
-        println("<unknown string>", message);
+        println("<dev string:x317>", message);
     }
 
     // Namespace traps_deployable/traps_deployable
@@ -1233,7 +1232,7 @@ function function_f6ea9af9(flag) {
     // Checksum 0xc5b8e74d, Offset: 0x4368
     // Size: 0x2c
     function printinfo(message) {
-        println("<unknown string>", message);
+        println("<dev string:x335>", message);
     }
 
     // Namespace traps_deployable/traps_deployable

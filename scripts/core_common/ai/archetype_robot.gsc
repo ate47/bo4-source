@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicles\raps.gsc;
 #using scripts\core_common\ai\systems\shared.gsc;
 #using scripts\core_common\ai\systems\gib.gsc;
@@ -453,11 +452,11 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
         traversal.speedoncurve *= 1.2;
     }
     /#
-        recordline(traversal.startpoint1, traversal.startpoint2, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
-        recordline(traversal.startpoint1, traversal.endpoint1, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
-        recordline(traversal.endpoint1, traversal.endpoint2, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
-        recordline(traversal.startpoint2, traversal.endpoint2, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
-        record3dtext(traversal.abslengthtoend, traversal.endpoint1 + (0, 0, 12), (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
+        recordline(traversal.startpoint1, traversal.startpoint2, (1, 0.5, 0), "<dev string:x38>", entity);
+        recordline(traversal.startpoint1, traversal.endpoint1, (1, 0.5, 0), "<dev string:x38>", entity);
+        recordline(traversal.endpoint1, traversal.endpoint2, (1, 0.5, 0), "<dev string:x38>", entity);
+        recordline(traversal.startpoint2, traversal.endpoint2, (1, 0.5, 0), "<dev string:x38>", entity);
+        record3dtext(traversal.abslengthtoend, traversal.endpoint1 + (0, 0, 12), (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     segments = 10;
     previouspoint = traversal.startpoint1;
@@ -466,7 +465,7 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
         t = index / segments;
         nextpoint = calculatecubicbezier(t, traversal.startpoint1, traversal.startpoint2, traversal.endpoint2, traversal.endpoint1);
         /#
-            recordline(previouspoint, nextpoint, (0, 1, 0), "robotScriptRequiresToSprint", entity);
+            recordline(previouspoint, nextpoint, (0, 1, 0), "<dev string:x38>", entity);
         #/
         traversal.curvelength += distance(previouspoint, nextpoint);
         previouspoint = nextpoint;
@@ -581,7 +580,7 @@ function private mocomprobotstartwallrunupdate(entity, mocompanim, mocompanimble
         forwardpositiononwall = getclosestpointonnavmesh(positiononwall + movedirection * 12, 30, 0);
         anglestoend = vectortoangles(forwardpositiononwall - positiononwall);
         /#
-            recordline(positiononwall, forwardpositiononwall, (1, 0, 0), "robotScriptRequiresToSprint", entity);
+            recordline(positiononwall, forwardpositiononwall, (1, 0, 0), "<dev string:x38>", entity);
         #/
         entity orientmode("face angle", anglestoend[1]);
     }
@@ -631,10 +630,10 @@ function private mocomprobotstarttraversalinit(entity, mocompanim, mocompanimble
             movedirection *= -1;
         }
         /#
-            recordline(endnode.origin, endnode.origin + facenormal * 20, (1, 0, 0), "robotScriptRequiresToSprint", entity);
+            recordline(endnode.origin, endnode.origin + facenormal * 20, (1, 0, 0), "<dev string:x38>", entity);
         #/
         /#
-            recordline(endnode.origin, endnode.origin + movedirection * 20, (1, 0, 0), "robotScriptRequiresToSprint", entity);
+            recordline(endnode.origin, endnode.origin + movedirection * 20, (1, 0, 0), "<dev string:x38>", entity);
         #/
         angles = vectortoangles(movedirection);
         entity orientmode("face angle", angles[1]);
@@ -728,11 +727,11 @@ function private _calculatewallrundirection(startposition, endposition) {
     entity = self;
     facenormal = getnavmeshfacenormal(endposition, 30);
     /#
-        recordline(startposition, endposition, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
+        recordline(startposition, endposition, (1, 0.5, 0), "<dev string:x38>", entity);
     #/
     if (isdefined(facenormal)) {
         /#
-            recordline(endposition, endposition + facenormal * 12, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
+            recordline(endposition, endposition + facenormal * 12, (1, 0.5, 0), "<dev string:x38>", entity);
         #/
         angles = vectortoangles(facenormal);
         right = anglestoright(angles);
@@ -1032,7 +1031,7 @@ function robotcanpreemptivejuke(entity) {
     if (distancesquared(entity.origin, entity.enemy.origin) < jukemaxdistance * jukemaxdistance) {
         angledifference = absangleclamp180(entity.angles[1] - entity.enemy.angles[1]);
         /#
-            record3dtext(angledifference, entity.origin + (0, 0, 5), (0, 1, 0), "robotScriptRequiresToSprint");
+            record3dtext(angledifference, entity.origin + (0, 0, 5), (0, 1, 0), "<dev string:x38>");
         #/
         if (angledifference > 135) {
             enemyangles = entity.enemy getgunangles();
@@ -1040,7 +1039,7 @@ function robotcanpreemptivejuke(entity) {
             forward = anglestoforward(enemyangles);
             dotproduct = abs(vectordot(vectornormalize(toenemy), forward));
             /#
-                record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "robotScriptRequiresToSprint");
+                record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "<dev string:x38>");
             #/
             if (dotproduct > 0.9848) {
                 return robotcanjuke(entity);
@@ -1496,8 +1495,8 @@ function private canmovetoenemycondition(entity) {
     findpathresult = entity findpath(positiononnavmesh, enemypositiononnavmesh, 1, 0);
     /#
         if (!findpathresult) {
-            record3dtext("robotProceduralTraversal", enemypositiononnavmesh + (0, 0, 5), (1, 0.5, 0), "robotScriptRequiresToSprint");
-            recordline(positiononnavmesh, enemypositiononnavmesh, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
+            record3dtext("<dev string:x45>", enemypositiononnavmesh + (0, 0, 5), (1, 0.5, 0), "<dev string:x38>");
+            recordline(positiononnavmesh, enemypositiononnavmesh, (1, 0.5, 0), "<dev string:x38>", entity);
         }
     #/
     return findpathresult;
@@ -1616,7 +1615,7 @@ function private movetoplayerupdate(entity, asmstatename) {
                 /#
                     if (getdvarint(#"ai_debugzigzag", 0)) {
                         for (index = 1; index < path.size; index++) {
-                            recordline(path[index - 1], path[index], (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
+                            recordline(path[index - 1], path[index], (1, 0.5, 0), "<dev string:x38>", entity);
                         }
                     }
                 #/
@@ -1628,7 +1627,7 @@ function private movetoplayerupdate(entity, asmstatename) {
                         remaininglength = deviationdistance - segmentlength;
                         seedposition = path[index - 1] + vectornormalize(path[index] - path[index - 1]) * remaininglength;
                         /#
-                            recordcircle(seedposition, 2, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
+                            recordcircle(seedposition, 2, (1, 0.5, 0), "<dev string:x38>", entity);
                         #/
                         innerzigzagradius = 0;
                         outerzigzagradius = 64;
@@ -1925,7 +1924,7 @@ function private _robotcoverposition(entity) {
     }
     shouldlookforbettercover = !shouldusecovernode || itsbeenawhile || !isatscriptgoal;
     /#
-        recordenttext("robotWallrunStart" + shouldusecovernode + "locomotion_speed_sprint" + itsbeenawhile + "_move_mode" + isatscriptgoal, entity, shouldlookforbettercover ? (0, 1, 0) : (1, 0, 0), "robotScriptRequiresToSprint");
+        recordenttext("<dev string:x4f>" + shouldusecovernode + "<dev string:x7e>" + itsbeenawhile + "<dev string:x90>" + isatscriptgoal, entity, shouldlookforbettercover ? (0, 1, 0) : (1, 0, 0), "<dev string:x38>");
     #/
     if (shouldlookforbettercover && !entity.keepclaimednode) {
         transitionrunning = entity asmistransitionrunning();
@@ -2125,8 +2124,8 @@ function private robotpositionservice(entity) {
     /#
         if (getdvarint(#"ai_debuglastknown", 0) && isdefined(entity.enemy)) {
             lastknownpos = entity lastknownpos(entity.enemy);
-            recordline(entity.origin, lastknownpos, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
-            record3dtext("_gib_location", lastknownpos + (0, 0, 5), (1, 0.5, 0), "robotScriptRequiresToSprint");
+            recordline(entity.origin, lastknownpos, (1, 0.5, 0), "<dev string:x38>", entity);
+            record3dtext("<dev string:xa3>", lastknownpos + (0, 0, 5), (1, 0.5, 0), "<dev string:x38>");
         }
     #/
     if (!isalive(entity)) {
@@ -2753,7 +2752,7 @@ function private robotsoldierspawnsetup() {
     clientfield::set("robot_mind_control", 0);
     /#
         if (getdvarint(#"ai_robotforceprocedural", 0)) {
-            entity ai::set_behavior_attribute("rbJuke", "left_leg_upper");
+            entity ai::set_behavior_attribute("<dev string:xb2>", "<dev string:xbf>");
         }
     #/
     entity thread cleanupequipment(entity);
@@ -2766,18 +2765,18 @@ function private robotsoldierspawnsetup() {
     aiutility::addaioverridekilledcallback(entity, &robotdestructdeathoverride);
     /#
         if (getdvarint(#"ai_robotforcecontrol", 0) == 1) {
-            entity ai::set_behavior_attribute("torso_upper", "_robot_locomotion_type");
+            entity ai::set_behavior_attribute("<dev string:xcc>", "<dev string:xdc>");
         } else if (getdvarint(#"ai_robotforcecontrol", 0) == 2) {
-            entity ai::set_behavior_attribute("torso_upper", "<unknown string>");
+            entity ai::set_behavior_attribute("<dev string:xcc>", "<dev string:xe6>");
         } else if (getdvarint(#"ai_robotforcecontrol", 0) == 3) {
-            entity ai::set_behavior_attribute("torso_upper", "<unknown string>");
+            entity ai::set_behavior_attribute("<dev string:xcc>", "<dev string:xf0>");
         }
         if (getdvarint(#"ai_robotspawnforcecontrol", 0) == 1) {
-            entity ai::set_behavior_attribute("torso_upper", "<unknown string>");
+            entity ai::set_behavior_attribute("<dev string:xcc>", "<dev string:xfa>");
         } else if (getdvarint(#"ai_robotspawnforcecontrol", 0) == 2) {
-            entity ai::set_behavior_attribute("torso_upper", "<unknown string>");
+            entity ai::set_behavior_attribute("<dev string:xcc>", "<dev string:x10b>");
         } else if (getdvarint(#"ai_robotspawnforcecontrol", 0) == 3) {
-            entity ai::set_behavior_attribute("torso_upper", "<unknown string>");
+            entity ai::set_behavior_attribute("<dev string:xcc>", "<dev string:x11c>");
         }
     #/
     if (getdvarint(#"ai_robotforcecrawler", 0) == 1) {

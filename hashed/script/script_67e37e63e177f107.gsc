@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\core_common\globallogic\globallogic_score.gsc;
 #using scripts\core_common\util_shared.gsc;

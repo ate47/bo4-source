@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\callbacks_shared.csc;
 #using scripts\core_common\system_shared.csc;
 
@@ -37,7 +36,7 @@ function __init__() {
         }
         while (true) {
             a_ents = getentarray(localclientnum);
-            debug2dtext((5, 1035, 0), "<unknown string>" + a_ents.size, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
+            debug2dtext((5, 1035, 0), "<dev string:x38>" + a_ents.size, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
             waitframe(30);
         }
     }

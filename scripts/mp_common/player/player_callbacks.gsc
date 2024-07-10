@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_damage.gsc;
 #using scripts\mp_common\gametypes\globallogic_ui.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -61,13 +60,13 @@ function callback_playershielddamageblocked(damage) {
 // Checksum 0x9ef73803, Offset: 0x380
 // Size: 0xd0
 function callback_playermigrated() {
-    println("<unknown string>" + self.name + "<unknown string>" + gettime());
+    println("<dev string:x38>" + self.name + "<dev string:x42>" + gettime());
     if (isdefined(self.connected) && self.connected) {
         self globallogic_ui::updateobjectivetext();
     }
     level.hostmigrationreturnedplayercount++;
     if (level.hostmigrationreturnedplayercount >= level.players.size * 2 / 3) {
-        println("<unknown string>");
+        println("<dev string:x61>");
         level notify(#"hostmigration_enoughplayers");
     }
 }

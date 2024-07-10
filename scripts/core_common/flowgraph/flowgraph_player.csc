@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace flowgraph_player;
 
 // Namespace flowgraph_player/flowgraph_player

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_towers_trials.gsc;
 #using script_6334bf874cddcc13;
 #using scripts\zm\zm_towers_zones.gsc;
@@ -960,12 +959,12 @@ function setup_end_igc(var_24486b2e = 1) {
     function function_643aeb5b() {
         level endon(#"end_game", #"hash_70406f82f80feda9");
         zm_devgui::zombie_devgui_open_sesame();
-        level flag::clear("exp_lgt_smg_accurate_t8");
+        level flag::clear("<dev string:x38>");
         level flag::set(#"pause_round_timeout");
         level zm_utility::function_9ad5aeb1(1);
         array::thread_all(level.players, &zm_towers_crowd::function_51ea46f3, 0, 1);
         while (level.var_a9ae3ceb) {
-            level scene::play("exp_lgt_magic_box_zeus2");
+            level scene::play("<dev string:x48>");
             waitframe(1);
         }
     }
@@ -976,14 +975,14 @@ function setup_end_igc(var_24486b2e = 1) {
     // Size: 0x12e
     function function_1ccb7366() {
         level endon(#"end_game", #"hash_71cb0d80cda209f1");
-        level flag::clear("exp_lgt_smg_accurate_t8");
+        level flag::clear("<dev string:x38>");
         level flag::set(#"pause_round_timeout");
         level zm_utility::function_9ad5aeb1(0, 0, 1);
-        level thread scene::play("towers_roundend_1", "vox_plr_2_exert_underwater_emerge_breath");
+        level thread scene::play("<dev string:x60>", "<dev string:x79>");
         array::thread_all(level.players, &zm_towers_crowd::function_51ea46f3, 0, 1);
         while (level.var_68d47b4e) {
             level thread function_72e2cc56();
-            level scene::play("zm_towers_start_boards_open_hidden");
+            level scene::play("<dev string:x86>");
             waitframe(1);
         }
     }
@@ -994,13 +993,13 @@ function setup_end_igc(var_24486b2e = 1) {
     // Size: 0x168
     function function_72e2cc56() {
         level endon(#"end_game");
-        s_glyphs = struct::get("<unknown string>");
-        s_flames = struct::get("<unknown string>");
+        s_glyphs = struct::get("<dev string:x9b>");
+        s_flames = struct::get("<dev string:xae>");
         while (level.var_68d47b4e) {
             level waittill(#"hash_1ea7a5302de9c85e");
-            fx_glyphs = fx::play("<unknown string>", s_glyphs.origin, s_glyphs.angles, "<unknown string>");
+            fx_glyphs = fx::play("<dev string:xc6>", s_glyphs.origin, s_glyphs.angles, "<dev string:xec>");
             waitframe(1);
-            fx_fire = fx::play("<unknown string>", s_flames.origin, s_flames.angles, "<unknown string>");
+            fx_fire = fx::play("<dev string:x106>", s_flames.origin, s_flames.angles, "<dev string:xec>");
             level waittill(#"hash_18462f29f613ebbf", #"hash_71cb0d80cda209f1");
             fx_fire delete();
             fx_glyphs delete();
@@ -1013,13 +1012,13 @@ function setup_end_igc(var_24486b2e = 1) {
     // Size: 0x116
     function function_ef3f5ee5() {
         level endon(#"end_game", #"hash_2231f086364099b7");
-        level flag::clear("exp_lgt_smg_accurate_t8");
+        level flag::clear("<dev string:x38>");
         level flag::set(#"pause_round_timeout");
         array::thread_all(level.players, &zm_towers_crowd::function_51ea46f3, 0, 1);
         scene::init_streamer(#"cin_zm_mvid_pack_a_punch_react", #"allies");
         while (level.var_7292cf15) {
             level thread function_79aa236();
-            level scene::play("<unknown string>");
+            level scene::play("<dev string:x12c>");
             waitframe(1);
         }
     }
@@ -1030,28 +1029,28 @@ function setup_end_igc(var_24486b2e = 1) {
     // Size: 0x314
     function function_79aa236() {
         level waittill(#"hash_550aae2e06c238ce");
-        a_mdl_heads = getentarray("<unknown string>", "vox_plr_2_exert_underwater_emerge_breath");
+        a_mdl_heads = getentarray("<dev string:x14d>", "<dev string:x79>");
         foreach (mdl_head in a_mdl_heads) {
             mdl_head show();
         }
-        a_mdl_heads = getentarray("<unknown string>", "vox_plr_2_exert_underwater_emerge_breath");
+        a_mdl_heads = getentarray("<dev string:x14d>", "<dev string:x79>");
         array::thread_all(a_mdl_heads, &zm_towers_pap_quest::function_9b320791);
-        level thread scene::play("<unknown string>");
-        level thread scene::play("<unknown string>", "<unknown string>");
-        level thread scene::play("<unknown string>", "<unknown string>");
-        level thread scene::play("<unknown string>", "<unknown string>");
-        level thread scene::play("<unknown string>", "<unknown string>");
+        level thread scene::play("<dev string:x162>");
+        level thread scene::play("<dev string:x196>", "<dev string:x1cc>");
+        level thread scene::play("<dev string:x1d5>", "<dev string:x1cc>");
+        level thread scene::play("<dev string:x20b>", "<dev string:x1cc>");
+        level thread scene::play("<dev string:x241>", "<dev string:x1cc>");
         level waittill(#"hash_6899d3d9802556ad");
-        level thread scene::play("<unknown string>");
-        level thread scene::play("<unknown string>");
+        level thread scene::play("<dev string:x277>");
+        level thread scene::play("<dev string:x2a4>");
         level waittill(#"hash_61ed5ad857c2709c");
         foreach (mdl_head in a_mdl_heads) {
             mdl_head hide();
         }
-        level thread scene::init("<unknown string>");
-        level thread scene::init("<unknown string>");
-        level thread scene::init("<unknown string>");
-        level thread scene::init("<unknown string>");
+        level thread scene::init("<dev string:x277>");
+        level thread scene::init("<dev string:x2ce>");
+        level thread scene::init("<dev string:x2a4>");
+        level thread scene::init("<dev string:x162>");
     }
 
     // Namespace zm_towers/zm_towers
@@ -1060,39 +1059,39 @@ function setup_end_igc(var_24486b2e = 1) {
     // Size: 0x366
     function function_2bb502f5() {
         zm_devgui::add_custom_devgui_callback(&function_8d6c5e6e);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x2f9>");
+        adddebugcommand("<dev string:x34a>");
+        adddebugcommand("<dev string:x3b6>");
+        adddebugcommand("<dev string:x3fc>");
+        adddebugcommand("<dev string:x44e>");
+        adddebugcommand("<dev string:x4ae>");
+        adddebugcommand("<dev string:x50f>");
+        adddebugcommand("<dev string:x56e>");
+        adddebugcommand("<dev string:x5c6>");
+        adddebugcommand("<dev string:x621>");
+        adddebugcommand("<dev string:x67c>");
+        adddebugcommand("<dev string:x6d3>");
+        adddebugcommand("<dev string:x72e>");
+        adddebugcommand("<dev string:x789>");
+        adddebugcommand("<dev string:x7ed>");
+        adddebugcommand("<dev string:x84f>");
+        adddebugcommand("<dev string:x8ab>");
+        adddebugcommand("<dev string:x907>");
+        adddebugcommand("<dev string:x96d>");
+        adddebugcommand("<dev string:x9df>");
+        adddebugcommand("<dev string:xa51>");
         if (getdvarint(#"zm_debug_ee", 0)) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:xac5>");
+            adddebugcommand("<dev string:xb0c>");
+            adddebugcommand("<dev string:xb5e>");
+            adddebugcommand("<dev string:xbb0>");
+            adddebugcommand("<dev string:xc02>");
+            adddebugcommand("<dev string:xc54>");
+            adddebugcommand("<dev string:xca4>");
+            adddebugcommand("<dev string:xcf4>");
+            adddebugcommand("<dev string:xd44>");
+            adddebugcommand("<dev string:xd94>");
+            adddebugcommand("<dev string:xdd7>");
         }
         level.var_b9714a5d = &function_51855e65;
     }
@@ -1148,7 +1147,7 @@ function setup_end_igc(var_24486b2e = 1) {
             break;
         case #"hash_36c98a2b5fcf250c":
             level flag::set(#"hash_6205682540170b8");
-            level clientfield::set("<unknown string>" + #"hash_39e6b14b9e5b0f3d", 1);
+            level clientfield::set("<dev string:xe1d>" + #"hash_39e6b14b9e5b0f3d", 1);
             break;
         case #"hash_5f00c356627b87c":
             if (isdefined(level.var_68d47b4e) && level.var_68d47b4e) {
@@ -1209,13 +1208,13 @@ function setup_end_igc(var_24486b2e = 1) {
             level thread zm_towers_pap_quest::function_438a415(#"all");
             return 1;
         case #"hash_2d60025acca3891":
-            level thread zm_towers_pap_quest::function_883e88be("<unknown string>");
+            level thread zm_towers_pap_quest::function_883e88be("<dev string:xe20>");
             return 1;
         case #"force_marauders":
-            level thread zm_towers_pap_quest::function_883e88be("<unknown string>");
+            level thread zm_towers_pap_quest::function_883e88be("<dev string:xe2d>");
             return 1;
         case #"force_tigers":
-            level thread zm_towers_pap_quest::function_883e88be("<unknown string>");
+            level thread zm_towers_pap_quest::function_883e88be("<dev string:xe39>");
             return 1;
         case #"hash_6aecfc20f8d3ae0d":
             level flag::set(#"hash_3551c4ab09311644");
@@ -1260,7 +1259,7 @@ function setup_end_igc(var_24486b2e = 1) {
         foreach (e_player in level.activeplayers) {
             if (namespace_52d8d460::is_shield_weapon(e_player getcurrentweapon())) {
                 e_player.var_c9d375dc.n_charge_level++;
-                e_player clientfield::set("<unknown string>" + #"charge_gem", e_player.var_c9d375dc.n_charge_level);
+                e_player clientfield::set("<dev string:xe1d>" + #"charge_gem", e_player.var_c9d375dc.n_charge_level);
                 if (e_player.var_c9d375dc.n_charge_level >= 3) {
                     e_player thread namespace_52d8d460::player_flame_on();
                 }

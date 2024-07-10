@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_russianbase_sound;
 
 // Namespace mp_russianbase_sound/mp_russianbase_sound

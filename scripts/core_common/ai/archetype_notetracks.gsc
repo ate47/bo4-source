@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai_shared.gsc;
 #using scripts\core_common\ai\systems\shared.gsc;
 #using scripts\core_common\ai\systems\gib.gsc;

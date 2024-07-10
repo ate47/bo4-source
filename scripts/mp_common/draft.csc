@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreak_detect.csc;
 #using scripts\core_common\array_shared.csc;
 #using scripts\core_common\shoutcaster.csc;

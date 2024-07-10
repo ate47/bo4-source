@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\sound_shared.csc;
@@ -70,7 +69,7 @@ function player_init(clientnum) {
 function validate(fxid, origin) {
     /#
         if (!isdefined(level._effect[fxid])) {
-            assertmsg("<unknown string>" + fxid + "<unknown string>" + origin);
+            assertmsg("<dev string:x38>" + fxid + "<dev string:x4e>" + origin);
         }
     #/
 }
@@ -270,7 +269,7 @@ function create_trigger(clientnum) {
     validate(self.v[#"fxid"], self.v[#"origin"]);
     /#
         if (getdvarint(#"debug_fx", 0) > 0) {
-            println("<unknown string>" + self.v[#"fxid"]);
+            println("<dev string:x57>" + self.v[#"fxid"]);
         }
     #/
     self.looperfx = playfx(clientnum, level._effect[self.v[#"fxid"]], self.v[#"origin"], self.v[#"forward"], self.v[#"up"], self.v[#"delay"], self.v[#"primlightfrac"], self.v[#"lightoriginoffs"]);

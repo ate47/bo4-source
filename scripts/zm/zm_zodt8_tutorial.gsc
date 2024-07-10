@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_25ddb1c7bb44652e;
 #using scripts\core_common\struct.gsc;
 #using scripts\zm\zm_zodt8_pap_quest.gsc;
@@ -687,7 +686,7 @@ function function_513e90cf() {
     self function_2b4bf122(2500);
     self freeze_player_controls();
     self thread function_5bc503b1();
-    self shoot_zombie();
+    self function_2517cb55();
     self function_c3b8207f();
     self wallbuy();
     self points();
@@ -750,7 +749,7 @@ function function_16c8867e(e_player) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5143c558, Offset: 0x43c8
 // Size: 0x384
-function shoot_zombie() {
+function function_2517cb55() {
     function_269d9f82("blocker_shoot_zombie");
     self.reset_score = self.score;
     function_b12c3aec();
@@ -1058,7 +1057,7 @@ function function_bfd3a7b1() {
     self perks();
     self equipment();
     self bot();
-    self revive_bot();
+    self function_2d18e4c9();
     self catalyst();
     self cooperative();
     self crafting();
@@ -1307,7 +1306,7 @@ function function_c0a37283() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe0cfd266, Offset: 0x7118
 // Size: 0xfc
-function revive_bot() {
+function function_2d18e4c9() {
     level thread function_68da8e33(#"hash_21c376fa208dc2c", 4);
     level.tutorialbot waittill(#"stop_revive_trigger");
     level thread function_68da8e33(#"hash_409bd11382c2e617");
@@ -1365,13 +1364,13 @@ function crafting() {
     if (isdefined(var_171df470)) {
         var_171df470 clientfield::set("tutorial_keyline_fx", 1);
     } else {
-        assert(0, "p8_fxanim_zm_zod_smokestack_02_bundle");
+        assert(0, "<dev string:x38>");
     }
     s_objective = struct::get("objective_pos_shield", "targetname");
     if (isdefined(s_objective)) {
         s_objective function_384bed55();
     } else {
-        assert(0, "wallbuy_completed");
+        assert(0, "<dev string:x52>");
     }
     wait(1);
     function_68da8e33(#"hash_5caf3fd084d30b3e");
@@ -1393,26 +1392,26 @@ function crafting() {
     if (isdefined(var_6b69f12a)) {
         var_6b69f12a clientfield::set("tutorial_keyline_fx", 1);
     } else {
-        assert(0, "blocker_post_repair");
+        assert(0, "<dev string:x6a>");
     }
     s_objective = struct::get("objective_pos_table", "targetname");
     if (isdefined(s_objective)) {
         s_objective function_384bed55();
     } else {
-        assert(0, "wallbuy_completed");
+        assert(0, "<dev string:x52>");
     }
     level thread function_68da8e33(#"hash_12dc4615e217edd7", 1);
     self waittill(#"crafting_success");
     if (isdefined(var_6b69f12a)) {
         var_6b69f12a delete();
     } else {
-        assert(0, "blocker_post_repair");
+        assert(0, "<dev string:x6a>");
     }
     var_1464a7b = getent("shield_model", "targetname");
     if (isdefined(var_1464a7b)) {
         var_1464a7b clientfield::set("tutorial_keyline_fx", 1);
     } else {
-        assert(0, "p8_fxanim_zm_vapor_altar_zeus_mod");
+        assert(0, "<dev string:x84>");
     }
     level thread function_68da8e33(#"hash_6643caefeffff6f1");
     shield = getweapon("zhield_dw");
@@ -1422,12 +1421,12 @@ function crafting() {
     if (isdefined(var_1464a7b)) {
         var_1464a7b clientfield::set("tutorial_keyline_fx", 2);
     } else {
-        assert(0, "p8_fxanim_zm_vapor_altar_zeus_mod");
+        assert(0, "<dev string:x84>");
     }
     if (isdefined(s_objective)) {
         s_objective function_384bed55(0);
     } else {
-        assert(0, "wallbuy_completed");
+        assert(0, "<dev string:x52>");
     }
     function_f1376337(3);
     level flag::wait_till_clear("tutorial_vo_playing");
@@ -1683,7 +1682,7 @@ function fast_travel() {
     s_objective function_384bed55(0);
     level.zm_disable_recording_stats = 0;
     /#
-        iprintlnbold("tutorial_bot_ramp" + self getentnum());
+        iprintlnbold("<dev string:x9f>" + self getentnum());
     #/
     self zm_utility::giveachievement_wrapper("ZM_TUTORIAL_COMPLETION", 0);
     level.zm_disable_recording_stats = 1;

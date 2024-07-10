@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_casino_fx;
 
 // Namespace mp_casino_fx/mp_casino_fx

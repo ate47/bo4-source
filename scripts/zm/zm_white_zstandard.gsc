@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial_util.gsc;
 #using script_2595527427ea71eb;
 #using scripts\zm\zm_white_util.gsc;
@@ -453,7 +452,7 @@ function function_84139b27() {
     foreach (s_defend_area in level.a_s_defend_areas) {
         foreach (str_index in s_defend_area.a_str_next_defend) {
             str_index = hash(str_index);
-            assert(isinarray(a_str_keys, str_index), str_index + "s_destination_site_entrance");
+            assert(isinarray(a_str_keys, str_index), str_index + "<dev string:x38>");
         }
     }
 }
@@ -482,7 +481,7 @@ function function_466fb0ff(str_last_defend) {
     // Size: 0x112
     function function_1dcc39ae() {
         wait(5);
-        str_next_defend = zm_utility::function_40ef77ab("zblueprint_zhield_white");
+        str_next_defend = zm_utility::function_40ef77ab("<dev string:x5f>");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
         while (true) {

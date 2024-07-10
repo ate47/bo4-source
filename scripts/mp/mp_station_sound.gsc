@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_station_sound;
 
 // Namespace mp_station_sound/mp_station_sound

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\struct.gsc;
@@ -89,13 +88,13 @@ function private function_b1487cfa(var_72284260) {
             if (isdefined(var_72284260.target)) {
                 structs = struct::get_array(var_72284260.target);
                 foreach (struct in structs) {
-                    if (struct.variantname === "<unknown string>") {
+                    if (struct.variantname === "<dev string:x38>") {
                         array::add(targetstructs, struct);
                     }
                 }
             }
             if (isdefined(var_72284260.script_bot_chain_src)) {
-                var_354db6a0 = var_72284260 namespace_2e6206f9::get_target_structs("<unknown string>");
+                var_354db6a0 = var_72284260 namespace_2e6206f9::get_target_structs("<dev string:x44>");
                 if (var_354db6a0.size > 0) {
                     targetstructs = arraycombine(targetstructs, var_354db6a0, 0, 0);
                 }
@@ -110,66 +109,66 @@ function private function_b1487cfa(var_72284260) {
         }
         if (isdefined(var_72284260.targetname)) {
             if (active) {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.targetname, (0, 1, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x57>" + var_72284260.targetname, (0, 1, 0), 1, 0.2, duration);
             } else {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.targetname, (1, 0.5, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x57>" + var_72284260.targetname, (1, 0.5, 0), 1, 0.2, duration);
             }
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_set)) {
             if (level flag::get(var_72284260.script_flag_set)) {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_set, (0, 1, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x60>" + var_72284260.script_flag_set, (0, 1, 0), 1, 0.2, duration);
             } else {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_set, (1, 0.5, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x60>" + var_72284260.script_flag_set, (1, 0.5, 0), 1, 0.2, duration);
             }
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_set)) {
             if (level flag::get(var_72284260.script_flag_set)) {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_set, (0, 1, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x69>" + var_72284260.script_flag_set, (0, 1, 0), 1, 0.2, duration);
             } else {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_set, (1, 0.5, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x69>" + var_72284260.script_flag_set, (1, 0.5, 0), 1, 0.2, duration);
             }
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_wait)) {
             if (level flag::get(var_72284260.script_flag_wait)) {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_wait, (0, 1, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x76>" + var_72284260.script_flag_wait, (0, 1, 0), 1, 0.2, duration);
             } else {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_wait, (1, 0.5, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x76>" + var_72284260.script_flag_wait, (1, 0.5, 0), 1, 0.2, duration);
             }
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_clear)) {
             if (level flag::get(var_72284260.script_flag_wait)) {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_clear, (0, 1, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x84>" + var_72284260.script_flag_clear, (0, 1, 0), 1, 0.2, duration);
             } else {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_clear, (1, 0.5, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x84>" + var_72284260.script_flag_clear, (1, 0.5, 0), 1, 0.2, duration);
             }
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_activate)) {
             if (level flag::get(var_72284260.script_flag_activate)) {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_activate, (0, 1, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x93>" + var_72284260.script_flag_activate, (0, 1, 0), 1, 0.2, duration);
             } else {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_activate, (1, 0.5, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x93>" + var_72284260.script_flag_activate, (1, 0.5, 0), 1, 0.2, duration);
             }
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_aigroup)) {
             if (level flag::exists(var_72284260.script_aigroup) && level flag::get(var_72284260.script_aigroup)) {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_aigroup, (0, 1, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:xa5>" + var_72284260.script_aigroup, (0, 1, 0), 1, 0.2, duration);
             } else {
-                print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_aigroup, (1, 0.5, 0), 1, 0.2, duration);
+                print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:xa5>" + var_72284260.script_aigroup, (1, 0.5, 0), 1, 0.2, duration);
             }
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_ent_flag_set)) {
-            print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_ent_flag_set, (1, 1, 1), 1, 0.2, duration);
+            print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:xb2>" + var_72284260.script_ent_flag_set, (1, 1, 1), 1, 0.2, duration);
             drawheight += 4;
         }
         if (isdefined(var_72284260.script_ent_flag_clear)) {
-            print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_ent_flag_clear, (1, 1, 1), 1, 0.2, duration);
+            print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:xc3>" + var_72284260.script_ent_flag_clear, (1, 1, 1), 1, 0.2, duration);
             drawheight += 4;
         }
         if (!active) {
@@ -180,25 +179,25 @@ function private function_b1487cfa(var_72284260) {
         }
         goals = [];
         if (isdefined(var_72284260.target)) {
-            nodes = getnodearray(var_72284260.target, "<unknown string>");
+            nodes = getnodearray(var_72284260.target, "<dev string:xd6>");
             if (isdefined(nodes) && nodes.size > 0) {
                 goals = arraycombine(goals, nodes, 0, 0);
             }
         }
         if (isdefined(var_72284260.script_botchain_goal)) {
-            nodes = getnodearray(var_72284260.script_botchain_goal, "<unknown string>");
+            nodes = getnodearray(var_72284260.script_botchain_goal, "<dev string:xe3>");
             if (isdefined(nodes) && nodes.size > 0) {
                 goals = arraycombine(goals, nodes, 0, 0);
             }
         }
         if (isdefined(var_72284260.target)) {
-            volumes = getentarray(var_72284260.target, "<unknown string>");
+            volumes = getentarray(var_72284260.target, "<dev string:xd6>");
             if (isdefined(volumes) && volumes.size > 0) {
                 goals = arraycombine(goals, volumes, 0, 0);
             }
         }
         if (isdefined(var_72284260.script_botchain_goal)) {
-            volumes = getentarray(var_72284260.script_botchain_goal, "<unknown string>");
+            volumes = getentarray(var_72284260.script_botchain_goal, "<dev string:xe3>");
             if (isdefined(volumes) && volumes.size > 0) {
                 goals = arraycombine(goals, volumes, 0, 0);
             }
@@ -218,18 +217,18 @@ function private function_b1487cfa(var_72284260) {
                 box(goal.origin, (-16, -16, 0), (16, 16, 0), 0, nodecolor, 1, 1, duration);
                 continue;
             }
-            if (goal.classname === "<unknown string>") {
+            if (goal.classname === "<dev string:xfa>") {
                 maxs = goal getmaxs();
                 mins = goal getmins();
                 box(goal.origin, mins, maxs, 0, (0, 1, 0), 1, 1, duration);
                 line(var_72284260.origin, goal.origin, (0, 1, 0), 1, 0, duration);
                 continue;
             }
-            if (goal.variantname === "<unknown string>") {
+            if (goal.variantname === "<dev string:x38>") {
                 if (isdefined(goal.radius)) {
                     searchradius = goal.radius;
                 } else {
-                    print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>", (1, 0, 0), 1, 0.2);
+                    print3d(var_72284260.origin + (0, 0, drawheight), "<dev string:x108>", (1, 0, 0), 1, 0.2);
                     drawheight += 4;
                 }
                 circle(goal.origin, searchradius, (0, 1, 0), 0, 1, duration);
@@ -248,7 +247,7 @@ function private function_b1487cfa(var_72284260) {
 function private function_ea764100() {
     /#
         level.var_40ed3318 = [];
-        structs = struct::get_array("<unknown string>", "<unknown string>");
+        structs = struct::get_array("<dev string:x38>", "<dev string:x118>");
         targetstructs = [];
         duration = 10;
         viewdistancesq = 3000 * 3000;
@@ -574,7 +573,7 @@ function function_cf70f2fe(startstruct, resuming = 0) {
     } else {
         assert(isdefined(startstruct) && isstruct(startstruct));
     }
-    assert(startstruct.variantname == "<unknown string>");
+    assert(startstruct.variantname == "<dev string:x38>");
     goalent = self isinvehicle() ? self getvehicleoccupied() : self;
     goalent endon(#"death");
     self endon(#"death");
@@ -624,13 +623,13 @@ function function_cf70f2fe(startstruct, resuming = 0) {
         }
         if (isdefined(var_4de004b7.script_ent_flag_set)) {
             if (!self flag::exists(var_4de004b7.script_ent_flag_set)) {
-                assertmsg("<unknown string>" + var_4de004b7.script_ent_flag_set + "<unknown string>");
+                assertmsg("<dev string:x126>" + var_4de004b7.script_ent_flag_set + "<dev string:x142>");
             }
             self flag::set(var_4de004b7.script_ent_flag_set);
         }
         if (isdefined(var_4de004b7.script_ent_flag_clear)) {
             if (!self flag::exists(var_4de004b7.script_ent_flag_clear)) {
-                assertmsg("<unknown string>" + var_4de004b7.script_ent_flag_clear + "<unknown string>");
+                assertmsg("<dev string:x15a>" + var_4de004b7.script_ent_flag_clear + "<dev string:x142>");
             }
             self flag::clear(var_4de004b7.script_ent_flag_clear);
         }

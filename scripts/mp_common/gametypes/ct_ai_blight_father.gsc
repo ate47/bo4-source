@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_ai_zombie.gsc;
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\core_common\ai\zombie.gsc;
@@ -608,7 +607,7 @@ function private function_3df61a1a(entity, inflictor, attacker, damage, flags, m
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
-// Params d, eflags: 0x4
+// Params 13, eflags: 0x4
 // Checksum 0x84a64143, Offset: 0x2c78
 // Size: 0xd6
 function private function_fa7c080(entity, inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
@@ -697,7 +696,7 @@ function function_6f109d76(ai) {
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
-// Params b, eflags: 0x0
+// Params 11, eflags: 0x0
 // Checksum 0x7c9c37f8, Offset: 0x3310
 // Size: 0x26c
 function function_422fdfd4(entity, attacker, weapon, var_5457dc44, hitloc, point, var_ebcb86d6, var_b85996d4, var_159ce525, var_ddd319d6, var_d2314927) {
@@ -951,7 +950,7 @@ function private function_e0d8f770(entity) {
 // Size: 0x94
 function private function_d2b91209(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     entity clientfield::increment("blight_father_spawn_maggot_fx_left");
@@ -964,7 +963,7 @@ function private function_d2b91209(entity) {
 // Size: 0x94
 function private function_78f5c48e(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     entity clientfield::increment("blight_father_spawn_maggot_fx_right");

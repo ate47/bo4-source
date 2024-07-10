@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_audio.gsc;
 #using scripts\zm_common\zm_score.gsc;
 #using scripts\zm_common\zm_powerups.gsc;

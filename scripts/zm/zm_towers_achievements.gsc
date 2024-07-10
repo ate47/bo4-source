@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_crossbow.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -41,7 +40,7 @@ function function_45057dc4() {
     self waittill(#"challenges_complete");
     self zm_utility::giveachievement_wrapper("zm_towers_challenges");
     /#
-        self debug_notification("<unknown string>");
+        self debug_notification("<dev string:x38>");
     #/
 }
 
@@ -63,7 +62,7 @@ function function_131495a5() {
     }
     self zm_utility::giveachievement_wrapper("zm_towers_get_ww");
     /#
-        self debug_notification("<unknown string>");
+        self debug_notification("<dev string:x42>");
     #/
 }
 
@@ -142,7 +141,7 @@ function function_3cbde7f5(s_params) {
         e_player flag::set(#"hash_599401a7cc5b8a84");
         e_player zm_utility::giveachievement_wrapper("zm_towers_ww_kills");
         /#
-            e_player debug_notification("<unknown string>");
+            e_player debug_notification("<dev string:x56>");
         #/
     }
 }
@@ -186,7 +185,7 @@ function function_b43c1bad(s_params) {
         e_player flag::set(#"hash_4969e1eae9bf556f");
         e_player zm_utility::giveachievement_wrapper("zm_towers_kitty_kitty");
         /#
-            e_player debug_notification("<unknown string>");
+            e_player debug_notification("<dev string:x6c>");
         #/
     }
 }
@@ -208,7 +207,7 @@ function function_cda4b8ba(e_attacker) {
         e_attacker flag::set(#"hash_2086e93d2f58efce");
         e_attacker zm_utility::giveachievement_wrapper("zm_towers_dismember");
         /#
-            e_attacker debug_notification("<unknown string>");
+            e_attacker debug_notification("<dev string:x80>");
         #/
     }
 }
@@ -220,7 +219,7 @@ function function_cda4b8ba(e_attacker) {
 function function_a24ba4fc() {
     zm_utility::giveachievement_wrapper("zm_towers_boss_kill", 1);
     /#
-        self debug_notification("<unknown string>");
+        self debug_notification("<dev string:x95>");
     #/
     self zm_challenges::function_9a9ab6f6(#"hash_6d5340d9e43ed73d");
     if (isdefined(level.var_2d744147) && level.var_2d744147 <= 5940000) {
@@ -259,7 +258,7 @@ function function_6fdb733f() {
     }
     self zm_utility::giveachievement_wrapper("zm_towers_arena_survive");
     /#
-        self debug_notification("<unknown string>");
+        self debug_notification("<dev string:xa9>");
     #/
 }
 
@@ -283,7 +282,7 @@ function function_cbdb5e70() {
             if (isdefined(e_player)) {
                 e_player zm_utility::giveachievement_wrapper("zm_towers_fast_pap");
                 /#
-                    e_player debug_notification("<unknown string>");
+                    e_player debug_notification("<dev string:xc0>");
                 #/
             }
         }
@@ -298,14 +297,14 @@ function function_cbdb5e70() {
     // Size: 0x74
     function private debug_notification(var_378e29b9) {
         if (!isdefined(var_378e29b9)) {
-            var_378e29b9 = "<unknown string>";
+            var_378e29b9 = "<dev string:xd5>";
         }
         self endon(#"death");
         str_name = self.name;
         if (!isdefined(str_name)) {
             return;
         }
-        iprintln(str_name + "<unknown string>" + var_378e29b9);
+        iprintln(str_name + "<dev string:xd8>" + var_378e29b9);
     }
 
 #/

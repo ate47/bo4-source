@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\trigger_shared.gsc;
@@ -123,8 +122,8 @@ function keep_time() {
     function level_notify_listener() {
         while (true) {
             val = getdvarstring(#"level_notify");
-            if (val != "<unknown string>") {
-                toks = strtok(val, "<unknown string>");
+            if (val != "<dev string:x38>") {
+                toks = strtok(val, "<dev string:x3b>");
                 if (toks.size == 3) {
                     level notify(toks[0], {#param1:toks[1], #param2:toks[2]});
                 } else if (toks.size == 2) {
@@ -132,7 +131,7 @@ function keep_time() {
                 } else {
                     level notify(toks[0]);
                 }
-                setdvar(#"level_notify", "<unknown string>");
+                setdvar(#"level_notify", "<dev string:x38>");
             }
             wait(0.2);
         }
@@ -145,9 +144,9 @@ function keep_time() {
     function client_notify_listener() {
         while (true) {
             val = getdvarstring(#"client_notify");
-            if (val != "<unknown string>") {
+            if (val != "<dev string:x38>") {
                 util::clientnotify(val);
-                setdvar(#"client_notify", "<unknown string>");
+                setdvar(#"client_notify", "<dev string:x38>");
             }
             wait(0.2);
         }
@@ -200,10 +199,10 @@ function weapon_ammo() {
             }
             if (change_ammo) {
                 if (!isdefined(clip)) {
-                    assertmsg("<unknown string>" + weap.classname + "<unknown string>" + weap.origin + "<unknown string>");
+                    assertmsg("<dev string:x3f>" + weap.classname + "<dev string:x4a>" + weap.origin + "<dev string:x4e>");
                 }
                 if (!isdefined(extra)) {
-                    assertmsg("<unknown string>" + weap.classname + "<unknown string>" + weap.origin + "<unknown string>");
+                    assertmsg("<dev string:x3f>" + weap.classname + "<dev string:x4a>" + weap.origin + "<dev string:x81>");
                 }
                 weap itemweaponsetammo(clip, extra);
                 weap itemweaponsetammo(clip, extra, 1);
@@ -360,7 +359,7 @@ function calculate_map_center() {
         }
         for (index = 0; index < nodes.size; index++) {
             if (nodes[index].type == #"bad node") {
-                println("<unknown string>", nodes[index].origin);
+                println("<dev string:xb4>", nodes[index].origin);
                 continue;
             }
             origin = nodes[index].origin;
@@ -368,7 +367,7 @@ function calculate_map_center() {
             level.nodesmaxs = math::expand_maxs(level.nodesmaxs, origin);
         }
         level.mapcenter = math::find_box_center(level.nodesmins, level.nodesmaxs);
-        println("<unknown string>", level.mapcenter);
+        println("<dev string:xf8>", level.mapcenter);
         setmapcenter(level.mapcenter);
     }
 }
@@ -427,7 +426,7 @@ function set_fog_progress(progress) {
     // Checksum 0xd8f7849b, Offset: 0x1728
     // Size: 0x24
     function ascii_logo() {
-        println("<unknown string>");
+        println("<dev string:x107>");
     }
 
 #/
@@ -596,11 +595,11 @@ function art_review() {
     case 1:
     case 2:
         /#
-            hud = hud::function_f5a689d("<unknown string>", 1.2);
-            hud hud::setpoint("<unknown string>", "<unknown string>", 0, -200);
+            hud = hud::function_f5a689d("<dev string:x118>", 1.2);
+            hud hud::setpoint("<dev string:x124>", "<dev string:x124>", 0, -200);
             hud.sort = 1001;
             hud.color = (1, 0, 0);
-            hud settext("<unknown string>");
+            hud settext("<dev string:x12d>");
             hud.foreground = 0;
             hud.hidewheninmenu = 0;
         #/
@@ -608,7 +607,7 @@ function art_review() {
             /#
                 setdvar(#"zombie_cheat", 2);
                 if (dvarvalue == 1) {
-                    setdvar(#"zombie_devgui", "<unknown string>");
+                    setdvar(#"zombie_devgui", "<dev string:x13a>");
                 }
             #/
         } else {

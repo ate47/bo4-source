@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.csc;
 #using scripts\core_common\renderoverridebundle.csc;
 #using scripts\core_common\struct.csc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_towers_util.gsc;
 #using scripts\zm_common\zm_audio.gsc;
 #using scripts\zm_common\zm_ui_inventory.gsc;
@@ -785,7 +784,7 @@ function function_499b080d(str_tower, str_encounter) {
         if (level flag::get(#"hash_45b6b1ee5d5038b4")) {
             var_cd6e44b6++;
         }
-        str_message = var_cd6e44b6 + "sprint";
+        str_message = var_cd6e44b6 + "<dev string:x38>";
         iprintlnbold(str_message);
     #/
     level notify(#"collected_head");
@@ -823,7 +822,7 @@ function function_156669dd(var_5ea5c94d, ended_early) {
         return;
     }
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x5b>");
     #/
     if (zm_utility::is_standard()) {
         level waittill(#"hash_7ca261f468171655");
@@ -1128,21 +1127,21 @@ function function_d7c092b9() {
             level.var_b941799e = #"destroyer";
             level.var_34bb868f = #"destroyer";
             level.var_c90f6df9 = #"destroyer";
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x73>");
             break;
         case #"marauders":
             level.var_58e06b5b = #"marauder";
             level.var_b941799e = #"marauder";
             level.var_34bb868f = #"marauder";
             level.var_c90f6df9 = #"marauder";
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x99>");
             break;
         case #"tigers":
             level.var_58e06b5b = #"tigers";
             level.var_b941799e = #"tigers";
             level.var_34bb868f = #"tigers";
             level.var_c90f6df9 = #"tigers";
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xbe>");
             break;
         }
     }

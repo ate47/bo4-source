@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_46fade957db10c16;
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\core_common\weapons_shared.gsc;
@@ -482,7 +481,7 @@ function function_e00df756(team, killstreak_id) {
 function function_b2acf3f2(location, context) {
     if (!ispointonnavmesh(location)) {
         /#
-            recordsphere(location + (0, 0, 10), 2, (1, 0, 0), "tag_turret");
+            recordsphere(location + (0, 0, 10), 2, (1, 0, 0), "<dev string:x38>");
         #/
         return false;
     }
@@ -649,7 +648,7 @@ function drone_callback_damage(einflictor, eattacker, idamage, idflags, smeansof
 // Size: 0x88
 function function_75c8a0dc(entity, jammer) {
     /#
-        print("tank_robot_tacquery_wander");
+        print("<dev string:x41>");
     #/
     if (!(isdefined(entity.isstunned) && entity.isstunned)) {
         entity function_903fdcc2();
@@ -664,7 +663,7 @@ function function_75c8a0dc(entity, jammer) {
 // Size: 0x64
 function function_3dc3ca04(entity, jammer) {
     /#
-        print("rocket");
+        print("<dev string:x5b>");
     #/
     entity function_37b0973();
     entity function_fd91abfb();
@@ -1078,7 +1077,7 @@ function function_b2cc6703(targets) {
     var_8ec7f501 = undefined;
     highest = -1;
     for (idx = 0; idx < targets.size; idx++) {
-        assert(isdefined(targets[idx].var_629a6b13[entnum]), "<unknown string>");
+        assert(isdefined(targets[idx].var_629a6b13[entnum]), "<dev string:x73>");
         if (targets[idx].var_629a6b13[entnum] >= highest) {
             highest = targets[idx].var_629a6b13[entnum];
             var_8ec7f501 = targets[idx];
@@ -1429,10 +1428,10 @@ function damage_armor_activati_(entity, tacpoints) {
                 continue;
             }
             /#
-                record3dtext("<unknown string>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "tag_turret");
+                record3dtext("<dev string:x9e>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "<dev string:x38>");
             #/
             /#
-                recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "tag_turret");
+                recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "<dev string:x38>");
             #/
         }
     }
@@ -1546,7 +1545,7 @@ function state_combat_update(params) {
             }
             if (foundpath) {
                 /#
-                    recordsphere(newpos, 3, (0, 1, 0), "tag_turret");
+                    recordsphere(newpos, 3, (0, 1, 0), "<dev string:x38>");
                 #/
                 self function_a57c34b7(newpos, 0, 1);
                 self setbrake(0);
@@ -1554,7 +1553,7 @@ function state_combat_update(params) {
                 result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
             } else {
                 /#
-                    recordsphere(newpos, 3, (1, 0, 0), "tag_turret");
+                    recordsphere(newpos, 3, (1, 0, 0), "<dev string:x38>");
                 #/
             }
         }
@@ -1570,7 +1569,7 @@ function state_combat_update(params) {
                 }
                 if (foundpath) {
                     /#
-                        recordsphere(newpos, 3, (0, 1, 0), "tag_turret");
+                        recordsphere(newpos, 3, (0, 1, 0), "<dev string:x38>");
                     #/
                     self function_a57c34b7(newpos, 0, 1);
                     self setbrake(0);
@@ -1787,7 +1786,7 @@ function tank_damage_think() {
         self.maxhealth = 999999;
         self.health = self.maxhealth;
         /#
-            self.damage_debug = damage + "<unknown string>" + weapon.name + "<unknown string>";
+            self.damage_debug = damage + "<dev string:xa6>" + weapon.name + "<dev string:xab>";
         #/
         if (weapon.isemp && mod == "MOD_GRENADE_SPLASH") {
             emp_damage_to_apply = killstreak_bundles::get_emp_grenade_damage("tank_robot", maxhealth);

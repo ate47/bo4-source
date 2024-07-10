@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\draft.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -269,7 +268,7 @@ function function_304304b4() {
         scenes = struct::get_array(var_649b3d1e, "scriptbundlename");
         if (scenes.size == 0) {
             /#
-                print("vox_plr_7_skit4_2" + function_9e72a96(var_649b3d1e) + "<unknown string>" + "<unknown string>");
+                print("<dev string:x38>" + function_9e72a96(var_649b3d1e) + "<dev string:x59>" + "<dev string:x63>");
             #/
             continue;
         }
@@ -288,8 +287,8 @@ function function_9b8bc25c(a_ents) {
         ent clientfield::set("zombie_has_eyes", 1);
     }
     /#
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x67>");
+        self endon("<dev string:x67>");
         while (getdvarint(#"hash_51e8e64c588c30af", 0)) {
             waitframe(20);
             print3d(self.origin, function_9e72a96(self.scriptbundlename), (0, 1, 0), 1, 0.3, 20);

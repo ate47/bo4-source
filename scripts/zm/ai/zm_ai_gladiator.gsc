@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\ai\zm_ai_catalyst.gsc;
 #using scripts\zm\ai\zm_ai_gladiator_interface.gsc;
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
@@ -234,7 +233,7 @@ function registerbehaviorscriptfunctions() {
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
-// Params a, eflags: 0x5 linked
+// Params 10, eflags: 0x5 linked
 // Checksum 0x65227606, Offset: 0x1aa8
 // Size: 0x130
 function private function_83ac16b5(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -830,8 +829,8 @@ function registerhud_message_electricity_(entity, mocompanim, mocompanimblendout
             movedelta = getmovedelta(mocompanim, 0, 1, entity);
             animendpos = entity localtoworldcoords(movedelta);
             distance = distance(entity.origin, animendpos);
-            recordcircle(animendpos, 3, (0, 1, 0), "right_arm_upper");
-            record3dtext("j_clavicle_ri" + distance, animendpos, (0, 1, 0), "right_arm_upper");
+            recordcircle(animendpos, 3, (0, 1, 0), "<dev string:x38>");
+            record3dtext("<dev string:x41>" + distance, animendpos, (0, 1, 0), "<dev string:x38>");
         #/
     }
 }
@@ -858,17 +857,17 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
         var_65cbfb52 = distancesquared(self.meleeinfo.var_9bfa8497, self.meleeinfo.adjustedendpos);
         if (var_776ddabf <= 20 * 20) {
             /#
-                record3dtext("tag_pauldron_le", entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
+                record3dtext("<dev string:x44>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 <= 90 * 90) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
+                record3dtext("<dev string:x51>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 400 * 400) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
+                record3dtext("<dev string:x5f>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         }
@@ -884,11 +883,11 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
             isvisible = bullettracepassed(entity.origin, entity.favoriteenemy.origin, 0, self);
             var_425c4c8b = isvisible && var_7948b2f3;
             /#
-                reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
+                reasons = "<dev string:x6d>" + isvisible + "<dev string:x74>" + withinzrange + "<dev string:x7a>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "right_arm_upper");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<dev string:x38>");
                 } else {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
                 }
             #/
             if (var_425c4c8b) {
@@ -912,8 +911,8 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
     if (self.meleeinfo.adjustmentstarted && currentanimtime <= self.meleeinfo.var_6392c3a2) {
         assert(isdefined(self.meleeinfo.var_10b8b6d1) && isdefined(self.meleeinfo.var_8b9a15a6));
         /#
-            recordsphere(self.meleeinfo.var_cb28f380, 3, (0, 1, 0), "right_arm_upper");
-            recordsphere(self.meleeinfo.adjustedendpos, 3, (0, 0, 1), "right_arm_upper");
+            recordsphere(self.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<dev string:x38>");
+            recordsphere(self.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<dev string:x38>");
         #/
         adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * self.meleeinfo.var_8b9a15a6;
         entity forceteleport(adjustedorigin);
@@ -1007,7 +1006,7 @@ function function_2bc1ffb8(entity, mocompanim, mocompanimblendouttime, mocompani
 function private function_cdef55f0(entity) {
     hitent = entity melee();
     /#
-        record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>", entity);
+        record3dtext("<dev string:x82>", self.origin, (1, 0, 0), "<dev string:x8a>", entity);
     #/
     entity.var_4f1b8d2b = 0;
     if (isplayer(hitent)) {
@@ -1148,13 +1147,13 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
             namespace_81245006::function_ef87b7e8(var_dd54fdb1, adjusted_damage);
             /#
                 if (getdvarint(#"scr_weakpoint_debug", 0) > 0) {
-                    iprintlnbold("<unknown string>" + var_dd54fdb1.health);
+                    iprintlnbold("<dev string:x93>" + var_dd54fdb1.health);
                 }
             #/
             if (namespace_81245006::function_f29756fe(var_dd54fdb1) === 3 || var_ae30c5b0 && self.var_5dc26e42 >= 1000) {
                 /#
                     if (getdvarint(#"scr_weakpoint_debug", 0) > 0) {
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:xa8>");
                     }
                 #/
                 var_a7d0fdac = 0;
@@ -1287,9 +1286,9 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
         if (isdefined(enemy) && isplayer(enemy) && enemy issliding() && !(isdefined(var_6b72740e) && var_6b72740e)) {
             if (distance2dsquared(enemy.origin, axe.origin) <= 45 * 45) {
                 /#
-                    recordsphere(enemy.origin, 3, (0, 0, 1), "right_arm_upper");
+                    recordsphere(enemy.origin, 3, (0, 0, 1), "<dev string:x38>");
                     var_b013c31 = distance2d(enemy.origin, axe.origin);
-                    record3dtext("j_clavicle_ri" + var_b013c31, enemy.origin + (0, 0, 60), (0, 0, 1), "right_arm_upper");
+                    record3dtext("<dev string:x41>" + var_b013c31, enemy.origin + (0, 0, 60), (0, 0, 1), "<dev string:x38>");
                 #/
                 var_6b72740e = 1;
             }
@@ -1299,15 +1298,15 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
             if (isdefined(enemy)) {
                 if (distance2dsquared(enemy.origin, move_pos) > 45 * 45) {
                     /#
-                        recordsphere(enemy.origin, 3, (0, 1, 0), "right_arm_upper");
+                        recordsphere(enemy.origin, 3, (0, 1, 0), "<dev string:x38>");
                         var_b013c31 = distance2d(enemy.origin, move_pos);
-                        record3dtext("j_clavicle_ri" + var_b013c31, enemy.origin + (0, 0, 60), (0, 1, 0), "right_arm_upper");
+                        record3dtext("<dev string:x41>" + var_b013c31, enemy.origin + (0, 0, 60), (0, 1, 0), "<dev string:x38>");
                     #/
                     var_1fed6c4e = 1;
                 } else if (!enemy issliding()) {
                     /#
-                        recordsphere(enemy.origin, 3, (1, 0, 0), "right_arm_upper");
-                        record3dtext("<unknown string>", enemy.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
+                        recordsphere(enemy.origin, 3, (1, 0, 0), "<dev string:x38>");
+                        record3dtext("<dev string:xbe>", enemy.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
                     #/
                     var_1fed6c4e = 0;
                 }
@@ -1617,7 +1616,7 @@ function function_831dd6bd() {
                 /#
                     if (getdvarint(#"ai_debugzigzag", 0)) {
                         for (index = 1; index < path.size; index++) {
-                            recordline(path[index - 1], path[index], (1, 0.5, 0), "<unknown string>", self);
+                            recordline(path[index - 1], path[index], (1, 0.5, 0), "<dev string:xc7>", self);
                             record3dtext(abs(path[index - 1][2] - path[index][2]), path[index - 1], (1, 0, 0));
                         }
                     }
@@ -1641,7 +1640,7 @@ function function_831dd6bd() {
                         remaininglength = deviationdistance - segmentlength;
                         seedposition = path[index - 1] + vectornormalize(path[index] - path[index - 1]) * remaininglength;
                         /#
-                            recordcircle(seedposition, 2, (1, 0.5, 0), "<unknown string>", self);
+                            recordcircle(seedposition, 2, (1, 0.5, 0), "<dev string:xc7>", self);
                         #/
                         innerzigzagradius = level.inner_zigzag_radius;
                         if (var_eb1c6f1c) {
@@ -1687,22 +1686,22 @@ function function_831dd6bd() {
     // Checksum 0x80fc7019, Offset: 0x7490
     // Size: 0x358
     function private function_24a38427() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xd4>");
+        adddebugcommand("<dev string:x12f>");
+        adddebugcommand("<dev string:x18c>");
+        adddebugcommand("<dev string:x1d7>");
         while (true) {
             waitframe(1);
-            string = getdvarstring(#"hash_1a45d40a78c47d72", "j_clavicle_ri");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_1a45d40a78c47d72", "<dev string:x41>");
+            cmd = strtok(string, "<dev string:x228>");
             gladiators = getaiarchetypearray(#"gladiator");
             if (cmd.size > 0) {
                 switch (cmd[0]) {
                 case #"spawn_marauder":
-                    zm_devgui::spawn_archetype("<unknown string>");
+                    zm_devgui::spawn_archetype("<dev string:x22c>");
                     break;
                 case #"spawn_destroyer":
-                    zm_devgui::spawn_archetype("<unknown string>");
+                    zm_devgui::spawn_archetype("<dev string:x250>");
                     break;
                 case #"kill":
                     zm_devgui::kill_archetype(#"gladiator");
@@ -1717,19 +1716,19 @@ function function_831dd6bd() {
                 case #"attach_left":
                     break;
                 case #"detach_left":
-                    gladiators[0] hidepart("<unknown string>", "<unknown string>", 1);
+                    gladiators[0] hidepart("<dev string:x275>", "<dev string:x287>", 1);
                     name = getpartname(gladiators[0], 83);
                     break;
                 case #"attach_right":
                     break;
                 case #"detach_right":
-                    gladiators[0] hidepart("<unknown string>", "<unknown string>", 1);
+                    gladiators[0] hidepart("<dev string:x2ae>", "<dev string:x287>", 1);
                     break;
                 default:
                     break;
                 }
             }
-            setdvar(#"hash_1a45d40a78c47d72", "j_clavicle_ri");
+            setdvar(#"hash_1a45d40a78c47d72", "<dev string:x41>");
         }
     }
 

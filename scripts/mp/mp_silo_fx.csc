@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_silo_fx;
 
 // Namespace mp_silo_fx/mp_silo_fx

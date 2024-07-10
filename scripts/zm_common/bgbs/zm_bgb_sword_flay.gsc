@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_stats.gsc;
 #using scripts\zm_common\zm_bgb.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -43,7 +42,7 @@ function disable() {
 }
 
 // Namespace zm_bgb_sword_flay/zm_bgb_sword_flay
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0x48a60f12, Offset: 0x1e8
 // Size: 0x12e
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

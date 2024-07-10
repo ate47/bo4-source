@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\callbacks.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -51,7 +50,7 @@ function shard_watcher() {
     level endon(#"game_ended");
     self waittill(#"hash_5aa1c9627e8626e0");
     /#
-        iprintlnbold("<unknown string>" + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + "<dev string:x4b>");
     #/
     self zm_utility::giveachievement_wrapper("zm_white_shard", 1);
 }
@@ -70,7 +69,7 @@ function function_e0aaa050() {
         }
     }
     /#
-        iprintlnbold("<unknown string>" + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + "<dev string:x5c>");
     #/
     self zm_utility::giveachievement_wrapper("zm_white_starting", 0);
 }
@@ -86,7 +85,7 @@ function function_f37ba127() {
         waitresult = self waittill(#"hash_13f3f231b45420ef");
         if (waitresult.e_player === self) {
             /#
-                iprintlnbold("<unknown string>" + "<unknown string>");
+                iprintlnbold("<dev string:x38>" + "<dev string:x70>");
             #/
             self zm_utility::giveachievement_wrapper("zm_white_unlock", 0);
             return;
@@ -105,7 +104,7 @@ function function_9785ebce() {
         level waittill(#"hash_13f3f231b45420ef");
     }
     /#
-        iprintlnbold("<unknown string>" + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + "<dev string:x82>");
     #/
     self zm_utility::giveachievement_wrapper("zm_white_mod", 1);
 }
@@ -124,7 +123,7 @@ function function_2c104547(s_params) {
         if (level.n_electric_trap_kills < 12) {
             level.n_electric_trap_kills++;
             /#
-                iprintln("<unknown string>" + level.n_electric_trap_kills);
+                iprintln("<dev string:x91>" + level.n_electric_trap_kills);
             #/
         }
         break;
@@ -132,7 +131,7 @@ function function_2c104547(s_params) {
         if (level.var_36067f1f < 12) {
             level.var_36067f1f++;
             /#
-                iprintln("<unknown string>" + level.var_36067f1f);
+                iprintln("<dev string:xa9>" + level.var_36067f1f);
             #/
         }
         break;
@@ -140,7 +139,7 @@ function function_2c104547(s_params) {
         if (level.var_8265e44f < 12) {
             level.var_8265e44f++;
             /#
-                iprintln("<unknown string>" + level.var_8265e44f);
+                iprintln("<dev string:xbc>" + level.var_8265e44f);
             #/
         }
         break;
@@ -148,7 +147,7 @@ function function_2c104547(s_params) {
         if (level.var_4b81bb64 < 12) {
             level.var_4b81bb64++;
             /#
-                iprintln("<unknown string>" + level.var_4b81bb64);
+                iprintln("<dev string:xd2>" + level.var_4b81bb64);
             #/
         }
         break;
@@ -156,14 +155,14 @@ function function_2c104547(s_params) {
         if (level.var_9e22ff45 < 12) {
             level.var_9e22ff45++;
             /#
-                iprintln("<unknown string>" + level.var_9e22ff45);
+                iprintln("<dev string:xe6>" + level.var_9e22ff45);
             #/
         }
         break;
     }
     if (level.n_electric_trap_kills > 11 && level.var_36067f1f > 11 && level.var_8265e44f > 11 && level.var_4b81bb64 > 11 && level.var_9e22ff45 > 11) {
         /#
-            iprintlnbold("<unknown string>" + "<unknown string>");
+            iprintlnbold("<dev string:x38>" + "<dev string:xf9>");
         #/
         self zm_utility::giveachievement_wrapper("zm_white_trap", 1);
         callback::remove_on_ai_killed(&function_2c104547);
@@ -179,7 +178,7 @@ function pap_watcher() {
     level waittill(#"pap_power_ready");
     if (level.round_number <= 5) {
         /#
-            iprintlnbold("<unknown string>" + "<unknown string>");
+            iprintlnbold("<dev string:x38>" + "<dev string:x109>");
         #/
         zm_utility::giveachievement_wrapper("zm_white_pap", 1);
     }
@@ -199,11 +198,11 @@ function function_48f916b(params) {
     }
     e_attacker.var_f50a2a9b++;
     /#
-        iprintln("<unknown string>" + e_attacker.var_f50a2a9b);
+        iprintln("<dev string:x118>" + e_attacker.var_f50a2a9b);
     #/
     if (e_attacker.var_f50a2a9b >= 115) {
         /#
-            iprintlnbold("<unknown string>" + "<unknown string>");
+            iprintlnbold("<dev string:x38>" + "<dev string:x12f>");
         #/
         e_attacker zm_utility::giveachievement_wrapper("zm_white_knuckles", 0);
         e_attacker.var_f50a2a9b = undefined;
@@ -226,10 +225,10 @@ function function_5e1138a2() {
                 wait(1);
                 if (self function_91cfddc4()) {
                     /#
-                        iprintlnbold("<unknown string>" + i + 1);
+                        iprintlnbold("<dev string:x143>" + i + 1);
                     #/
                     /#
-                        iprintlnbold("<unknown string>" + "<unknown string>");
+                        iprintlnbold("<dev string:x38>" + "<dev string:x154>");
                     #/
                     self zm_utility::giveachievement_wrapper("zm_white_perk", 0);
                     self notify(#"hash_1305a28597a2e439");
@@ -287,11 +286,11 @@ function function_df71a9b9() {
                 }
             }
             /#
-                iprintln("<unknown string>" + e_attacker.var_5e47a087);
+                iprintln("<dev string:x164>" + e_attacker.var_5e47a087);
             #/
             if (e_attacker.var_5e47a087 >= 10) {
                 /#
-                    iprintlnbold("<unknown string>" + "<unknown string>");
+                    iprintlnbold("<dev string:x38>" + "<dev string:x17e>");
                 #/
                 e_attacker zm_utility::giveachievement_wrapper("zm_white_stun", 0);
                 e_attacker.var_5e47a087 = undefined;
@@ -315,11 +314,11 @@ function function_bde94bdf(params) {
     if (params.smeansofdeath === "MOD_GRENADE_SPLASH" || params.smeansofdeath === "MOD_GRENADE") {
         e_attacker.var_31ce05fd++;
         /#
-            iprintln("<unknown string>" + e_attacker.var_31ce05fd);
+            iprintln("<dev string:x18e>" + e_attacker.var_31ce05fd);
         #/
         if (e_attacker.var_31ce05fd >= 15) {
             /#
-                iprintlnbold("<unknown string>" + "<unknown string>");
+                iprintlnbold("<dev string:x38>" + "<dev string:x1ad>");
             #/
             e_attacker zm_utility::giveachievement_wrapper("zm_white_roof", 0);
             e_attacker.var_31ce05fd = undefined;

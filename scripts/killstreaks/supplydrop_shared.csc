@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_324d329b31b9b4ec;
 #using scripts\core_common\callbacks_shared.csc;
 #using scripts\core_common\util_shared.csc;

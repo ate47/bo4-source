@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace ct_shared_aar;
@@ -92,7 +91,7 @@ class cct_shared_aar : cluielem {
             set_data(localclientnum, "_state", 11);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cct_shared_aar/ct_shared_aar

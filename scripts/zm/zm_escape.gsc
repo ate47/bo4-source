@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_36222395658446f5;
 #using script_61ef84ea1a82c001;
 #using scripts\zm\zm_escape_vo_hooks.gsc;
@@ -1052,15 +1051,15 @@ function function_172ac1b5() {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_91d91b76);
-        adddebugcommand("zone_cellblock_west_warden");
-        adddebugcommand("players_lose");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x89>");
+        adddebugcommand("<dev string:xf2>");
+        adddebugcommand("<dev string:x151>");
+        adddebugcommand("<dev string:x1b6>");
+        adddebugcommand("<dev string:x21b>");
+        adddebugcommand("<dev string:x27c>");
+        adddebugcommand("<dev string:x2e1>");
+        adddebugcommand("<dev string:x341>");
         level thread open_sesame_watcher();
     }
 
@@ -1077,10 +1076,10 @@ function function_172ac1b5() {
             level thread function_2b57b5d6();
             return 1;
         case #"hash_be933dada1170a":
-            level thread function_4a3c0c1c("<unknown string>");
+            level thread function_4a3c0c1c("<dev string:x39d>");
             return 1;
         case #"hash_52c70e592a1e4183":
-            level thread function_4a3c0c1c("<unknown string>");
+            level thread function_4a3c0c1c("<dev string:x3ac>");
             return 1;
         case #"hash_55a34e1b7b9aae2c":
             level thread function_4b511c76();
@@ -1108,7 +1107,7 @@ function function_172ac1b5() {
         zm_devgui::zombie_devgui_open_sesame();
         level thread namespace_f2502da8::function_e11ac4f5();
         namespace_9d58c1cd::function_7101d54f();
-        var_ccc575d7 = getent("<unknown string>", "<unknown string>");
+        var_ccc575d7 = getent("<dev string:x3be>", "<dev string:x3ce>");
         var_ccc575d7 notify(#"blast_attack");
         level.var_af325495 = 1;
     }
@@ -1118,7 +1117,7 @@ function function_172ac1b5() {
     // Checksum 0xd292ca13, Offset: 0x6650
     // Size: 0x1e2
     function function_2b57b5d6() {
-        a_s_respawn_points = struct::get_array("<unknown string>");
+        a_s_respawn_points = struct::get_array("<dev string:x3de>");
         foreach (s_respawn_point in a_s_respawn_points) {
             a_s_points = struct::get_array(s_respawn_point.target);
             for (i = 1; i <= 4; i++) {
@@ -1127,9 +1126,9 @@ function function_172ac1b5() {
                     if (s_point.script_int == i) {
                         var_5aa20049 = 1;
                     }
-                    assert(ispointonnavmesh(s_point.origin), "<unknown string>" + s_point.origin);
+                    assert(ispointonnavmesh(s_point.origin), "<dev string:x3f5>" + s_point.origin);
                 }
-                assert(var_5aa20049, "<unknown string>" + i + "<unknown string>" + s_respawn_point.script_noteworthy);
+                assert(var_5aa20049, "<dev string:x41a>" + i + "<dev string:x440>" + s_respawn_point.script_noteworthy);
             }
         }
     }
@@ -1140,15 +1139,15 @@ function function_172ac1b5() {
     // Size: 0x13c
     function function_4a3c0c1c(var_3a1b23c2) {
         var_ff9196cc = 1;
-        var_6c995818 = struct::get_array(var_3a1b23c2, "<unknown string>");
+        var_6c995818 = struct::get_array(var_3a1b23c2, "<dev string:x459>");
         foreach (s_point in var_6c995818) {
             if (!ispointonnavmesh(s_point.origin)) {
                 var_ff9196cc = 0;
-                assert(0, "<unknown string>" + var_3a1b23c2 + "<unknown string>" + s_point.origin + "<unknown string>");
+                assert(0, "<dev string:x46d>" + var_3a1b23c2 + "<dev string:x470>" + s_point.origin + "<dev string:x47d>");
             }
         }
         if (var_ff9196cc) {
-            iprintlnbold("<unknown string>" + var_3a1b23c2 + "<unknown string>");
+            iprintlnbold("<dev string:x493>" + var_3a1b23c2 + "<dev string:x49a>");
         }
     }
 
@@ -1160,7 +1159,7 @@ function function_172ac1b5() {
         foreach (var_46bf10d9 in level.var_4952e1) {
             var_46bf10d9 notify(#"hash_13c5316203561c4f");
             var_46bf10d9 notify(#"fully_charged");
-            var_46bf10d9.var_740e1e0e setmodel("<unknown string>");
+            var_46bf10d9.var_740e1e0e setmodel("<dev string:x4ba>");
         }
         level.n_soul_catchers_charged = level.var_4952e1.size;
         level thread zm_escape_weap_quest::function_5fd2c72e();

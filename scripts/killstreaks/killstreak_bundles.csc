@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreak_detect.csc;
 #using scripts\core_common\renderoverridebundle.csc;
 #using script_4daa124bc391e7ed;

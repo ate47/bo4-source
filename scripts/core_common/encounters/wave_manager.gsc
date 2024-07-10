@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\encounters\aispawning.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\trigger_shared.gsc;
@@ -126,10 +125,10 @@ function private __main__() {
             var_29b80910 = var_dcd6c23.var_cf3bea8a;
             str_team = var_dcd6c23.m_str_team;
             str_name = var_dcd6c23.var_556afb3d;
-            cmd = "<unknown string>" + str_map_name + "<unknown string>" + str_team + "<unknown string>" + "<unknown string>" + var_29b80910 + "<unknown string>" + str_name + "<unknown string>" + var_29b80910 + "<unknown string>";
+            cmd = "<dev string:x38>" + str_map_name + "<dev string:x48>" + str_team + "<dev string:x60>" + "<dev string:x64>" + var_29b80910 + "<dev string:x68>" + str_name + "<dev string:x6c>" + var_29b80910 + "<dev string:x8f>";
             adddebugcommand(cmd);
         }
-        cmd = "<unknown string>" + str_map_name + "<unknown string>";
+        cmd = "<dev string:x38>" + str_map_name + "<dev string:x95>";
         adddebugcommand(cmd);
     }
 
@@ -148,13 +147,13 @@ function private __main__() {
                     var_dcd6c23 = level.var_ca74a4bc[n_wave_manager_id];
                     var_29b80910 = var_dcd6c23.var_cf3bea8a;
                     str_name = var_dcd6c23.var_556afb3d;
-                    if (var_dcd6c23 flag::get("<unknown string>")) {
+                    if (var_dcd6c23 flag::get("<dev string:xde>")) {
                         /#
                             var_c708e6e1 += n_y_offset;
-                            str_text = str_name + "<unknown string>";
+                            str_text = str_name + "<dev string:xe8>";
                             debug2dtext((800, var_c708e6e1, 0), str_text, (1, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                             var_c708e6e1 += n_y_offset;
-                            debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+                            debug2dtext((800, var_c708e6e1, 0), "<dev string:xf4>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                         #/
                         waitframe(1);
                         continue;
@@ -166,31 +165,31 @@ function private __main__() {
                     str_team = var_dcd6c23.m_str_team;
                     /#
                         var_c708e6e1 += n_y_offset;
-                        debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+                        debug2dtext((800, var_c708e6e1, 0), "<dev string:xf4>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
                     if (isdefined(var_dcd6c23.var_f68bc980) && var_dcd6c23.var_f68bc980) {
-                        str_status = "<unknown string>";
+                        str_status = "<dev string:x11e>";
                     } else if (function_e43e16d2(var_dcd6c23)) {
-                        str_status = "<unknown string>";
+                        str_status = "<dev string:x128>";
                     } else {
-                        str_status = "<unknown string>";
+                        str_status = "<dev string:x133>";
                     }
                     /#
                         var_c708e6e1 += n_y_offset;
-                        str_text = str_name + "<unknown string>" + str_status + "<unknown string>";
+                        str_text = str_name + "<dev string:x13d>" + str_status + "<dev string:x141>";
                         debug2dtext((800, var_c708e6e1, 0), str_text, (1, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         var_c708e6e1 += n_y_offset;
-                        debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+                        debug2dtext((800, var_c708e6e1, 0), "<dev string:xf4>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
                     if (function_a2115dc4(var_dcd6c23, var_dcd6c23.var_4417045b)) {
-                        str_status = "<unknown string>";
+                        str_status = "<dev string:x145>";
                     } else if (function_e43e16d2(var_dcd6c23, var_dcd6c23.var_4417045b)) {
-                        str_status = "<unknown string>";
+                        str_status = "<dev string:x128>";
                     } else {
-                        str_status = "<unknown string>";
+                        str_status = "<dev string:x133>";
                     }
                     /#
-                        str_text = "<unknown string>" + var_dcd6c23.var_4417045b + "<unknown string>" + var_dcd6c23.var_592f8f7f + "<unknown string>" + str_status + "<unknown string>";
+                        str_text = "<dev string:x14f>" + var_dcd6c23.var_4417045b + "<dev string:x161>" + var_dcd6c23.var_592f8f7f + "<dev string:x13d>" + str_status + "<dev string:x16b>";
                         var_c708e6e1 += n_y_offset;
                         debug2dtext((800, var_c708e6e1, 0), str_text, (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
@@ -201,25 +200,25 @@ function private __main__() {
                         var_a549e716 += var_c21b798e.var_a4202481;
                     }
                     /#
-                        str_text = "<unknown string>" + n_total_count + "<unknown string>" + var_a549e716 + "<unknown string>";
+                        str_text = "<dev string:x175>" + n_total_count + "<dev string:x189>" + var_a549e716 + "<dev string:x68>";
                         var_c708e6e1 += n_y_offset;
                         debug2dtext((800, var_c708e6e1, 0), str_text, (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         var_c708e6e1 += n_y_offset;
-                        debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
+                        debug2dtext((800, var_c708e6e1, 0), "<dev string:xf4>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
                     if (isdefined(var_dcd6c23.var_376c2c29)) {
                         var_c708e6e1 += n_y_offset;
                         var_1d3b29d6 = 1;
                         foreach (var_c21b798e in var_dcd6c23.var_376c2c29) {
                             if (function_f77ad8a3(var_c21b798e)) {
-                                str_status = "<unknown string>";
+                                str_status = "<dev string:x145>";
                             } else if (function_9e2b33f4(var_c21b798e)) {
-                                str_status = "<unknown string>";
+                                str_status = "<dev string:x19a>";
                             } else {
-                                str_status = "<unknown string>";
+                                str_status = "<dev string:x133>";
                             }
                             /#
-                                str_text = "<unknown string>" + var_1d3b29d6 + "<unknown string>" + var_c21b798e.var_bcd4e683 + "<unknown string>" + var_c21b798e.var_23791f08 + "<unknown string>" + str_status + "<unknown string>";
+                                str_text = "<dev string:x1ab>" + var_1d3b29d6 + "<dev string:x1b8>" + var_c21b798e.var_bcd4e683 + "<dev string:x1c5>" + var_c21b798e.var_23791f08 + "<dev string:x13d>" + str_status + "<dev string:x1cf>";
                                 debug2dtext((800, var_c708e6e1, 0), str_text, (1, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                                 var_c708e6e1 += var_90fbd845;
                             #/
@@ -233,7 +232,7 @@ function private __main__() {
                                 if (isdefined(ai)) {
                                     /#
                                         sphere(ai.origin, 4, (0, 0, 1), 1, 0, 8, 1);
-                                        print3d(ai.origin + (0, 0, 10), "<unknown string>" + var_dcd6c23.var_4417045b + "<unknown string>" + var_1d3b29d6, (0, 0, 1), 1, 0.5, 1);
+                                        print3d(ai.origin + (0, 0, 10), "<dev string:x1d4>" + var_dcd6c23.var_4417045b + "<dev string:x1dc>" + var_1d3b29d6, (0, 0, 1), 1, 0.5, 1);
                                     #/
                                     if (isdefined(var_dcd6c23.var_3844e966)) {
                                         /#
@@ -258,7 +257,7 @@ function private __main__() {
                                 if (isdefined(ai)) {
                                     /#
                                         sphere(ai.origin, 4, (1, 0, 0), 1, 0, 8, 1);
-                                        print3d(ai.origin + (0, 0, 10), "<unknown string>" + var_c082553f, (1, 0, 0), 1, 0.5, 1);
+                                        print3d(ai.origin + (0, 0, 10), "<dev string:x1d4>" + var_c082553f, (1, 0, 0), 1, 0.5, 1);
                                     #/
                                     if (isdefined(var_dcd6c23.var_3844e966)) {
                                         /#
@@ -640,8 +639,8 @@ function private think(var_dcd6c23) {
                 continue;
             }
             /#
-                println("<unknown string>" + var_f5d6a44e + 1 + "<unknown string>");
-                iprintln("<unknown string>" + var_f5d6a44e + 1 + "<unknown string>");
+                println("<dev string:x1ec>" + var_f5d6a44e + 1 + "<dev string:x211>");
+                iprintln("<dev string:x1ec>" + var_f5d6a44e + 1 + "<dev string:x211>");
             #/
         }
         while (true) {
@@ -706,8 +705,8 @@ function private think(var_dcd6c23) {
 // Checksum 0x81f29aec, Offset: 0x2f30
 // Size: 0x100
 function private function_ff49692b(var_dcd6c23, ai) {
-    assert(isdefined(var_dcd6c23), "<unknown string>");
-    assert(isdefined(ai), "<unknown string>");
+    assert(isdefined(var_dcd6c23), "<dev string:x23e>");
+    assert(isdefined(ai), "<dev string:x280>");
     if (isdefined(var_dcd6c23.var_23802722)) {
         foreach (var_e8332bc1 in var_dcd6c23.var_23802722) {
             if (isdefined(var_e8332bc1.var_964c77e1)) {
@@ -848,7 +847,7 @@ function private function_7909260f(var_dcd6c23, n_wave, var_bced2a83) {
 // Checksum 0x9a55866c, Offset: 0x3938
 // Size: 0x9c
 function private function_60fa5e02(var_c21b798e) {
-    assert(isdefined(var_c21b798e), "<unknown string>");
+    assert(isdefined(var_c21b798e), "<dev string:x2b7>");
     var_c21b798e flag::init("spawn_set_" + var_c21b798e.var_ef327d57 + "_complete");
     var_c21b798e flag::init("spawn_set_" + var_c21b798e.var_ef327d57 + "_cleared");
 }
@@ -984,7 +983,7 @@ function private function_8f5ed189(var_dcd6c23, var_c21b798e) {
             continue;
         }
         var_6a60a2e6 = 0;
-        assert(isdefined(var_a5f569fc), "<unknown string>");
+        assert(isdefined(var_a5f569fc), "<dev string:x2ed>");
         var_13027679 = undefined;
         var_26413beb = undefined;
         var_549391b8 = undefined;
@@ -1002,16 +1001,16 @@ function private function_8f5ed189(var_dcd6c23, var_c21b798e) {
             var_db4208eb = function_d8cca6d5(var_c165240a);
             if (!var_db4208eb.size) {
                 /#
-                    println("<unknown string>" + var_dcd6c23.var_556afb3d + "<unknown string>" + var_c21b798e.var_ef327d57 + 1 + "<unknown string>");
-                    iprintln("<unknown string>" + var_dcd6c23.var_556afb3d + "<unknown string>" + var_c21b798e.var_ef327d57 + 1 + "<unknown string>");
+                    println("<dev string:x32b>" + var_dcd6c23.var_556afb3d + "<dev string:x36b>" + var_c21b798e.var_ef327d57 + 1 + "<dev string:x384>");
+                    iprintln("<dev string:x32b>" + var_dcd6c23.var_556afb3d + "<dev string:x36b>" + var_c21b798e.var_ef327d57 + 1 + "<dev string:x384>");
                 #/
                 break;
             }
             if (!(isdefined(var_393f60f2) && var_393f60f2) && isdefined(var_13027679)) {
                 if (!isinarray(var_db4208eb, var_26413beb)) {
                     /#
-                        println("<unknown string>" + var_26413beb + "<unknown string>" + var_dcd6c23.var_556afb3d + "<unknown string>" + var_c21b798e.var_ef327d57 + 1 + "<unknown string>");
-                        iprintln("<unknown string>" + var_26413beb + "<unknown string>" + var_dcd6c23.var_556afb3d + "<unknown string>" + var_c21b798e.var_ef327d57 + 1 + "<unknown string>");
+                        println("<dev string:x39a>" + var_26413beb + "<dev string:x3ba>" + var_dcd6c23.var_556afb3d + "<dev string:x36b>" + var_c21b798e.var_ef327d57 + 1 + "<dev string:x3d7>");
+                        iprintln("<dev string:x39a>" + var_26413beb + "<dev string:x3ba>" + var_dcd6c23.var_556afb3d + "<dev string:x36b>" + var_c21b798e.var_ef327d57 + 1 + "<dev string:x3d7>");
                     #/
                     break;
                 }
@@ -1025,8 +1024,8 @@ function private function_8f5ed189(var_dcd6c23, var_c21b798e) {
                 s_spawn_point = aispawningutility::function_e312ad4d(var_dcd6c23.m_str_team, var_dcd6c23.var_27eacb34, var_82706add);
                 if (!isdefined(s_spawn_point)) {
                     /#
-                        println("<unknown string>" + var_82706add + "<unknown string>" + var_dcd6c23.var_556afb3d + "<unknown string>");
-                        iprintln("<unknown string>" + var_82706add + "<unknown string>" + var_dcd6c23.var_556afb3d + "<unknown string>");
+                        println("<dev string:x3f9>" + var_82706add + "<dev string:x423>" + var_dcd6c23.var_556afb3d + "<dev string:x437>");
+                        iprintln("<dev string:x3f9>" + var_82706add + "<dev string:x423>" + var_dcd6c23.var_556afb3d + "<dev string:x437>");
                     #/
                     arrayremoveindex(var_c165240a, var_82706add, 1);
                     if (var_c165240a.size > 0 && isdefined(var_393f60f2) && var_393f60f2) {
@@ -1200,7 +1199,7 @@ function private function_32b947df(kvp) {
                 }
             }
         }
-        assert(a_s_wave_managers.size, "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>");
+        assert(a_s_wave_managers.size, "<dev string:x468>" + str_key + "<dev string:x48c>" + str_value + "<dev string:x492>");
     } else {
         var_666d249b = self;
         if (!isdefined(var_666d249b)) {
@@ -1248,7 +1247,7 @@ function private function_63e08195(kvp, b_assert = 1) {
     }
     a_s_wave_managers = array::filter(a_s_wave_managers, 0, &function_5b3b889f);
     if (b_assert) {
-        assert(a_s_wave_managers.size, isdefined(kvp) ? "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>" : "<unknown string>");
+        assert(a_s_wave_managers.size, isdefined(kvp) ? "<dev string:x468>" + str_key + "<dev string:x48c>" + str_value + "<dev string:x492>" : "<dev string:x496>");
     }
     return a_s_wave_managers;
 }
@@ -1267,7 +1266,7 @@ function private function_fa056daa() {
     } else if (self function_e0bfee59()) {
         return self;
     }
-    assertmsg("<unknown string>");
+    assertmsg("<dev string:x4b3>");
     return undefined;
 }
 
@@ -1443,7 +1442,7 @@ function function_1c556906(kvp, var_b3a058ca) {
                 }
             }
         }
-        assert(var_91504a05, "<unknown string>" + var_b3a058ca);
+        assert(var_91504a05, "<dev string:x4fa>" + var_b3a058ca);
         var_dcd6c23.var_27eacb34 = var_b3a058ca;
     }
 }

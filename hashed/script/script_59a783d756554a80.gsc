@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_office_floors.gsc;
 #using scripts\zm_common\zm_characters.gsc;
 #using scripts\zm_common\callbacks.gsc;

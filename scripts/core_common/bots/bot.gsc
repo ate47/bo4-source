@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -354,7 +353,7 @@ function on_player_spawned() {
     }
     /#
         weapon = undefined;
-        if (getdvarstring(#"bot_spawn_weapon", "<unknown string>") != "<unknown string>") {
+        if (getdvarstring(#"bot_spawn_weapon", "<dev string:x38>") != "<dev string:x38>") {
             weapon = util::get_weapon_by_name(getdvarstring(#"bot_spawn_weapon"), getdvarstring(#"hash_c6e51858c88a5ee"));
             if (isdefined(weapon)) {
                 self function_35e77034(weapon);
@@ -489,15 +488,15 @@ function update_loop() {
         tacbundle = self function_d473f7de();
         /#
             if (!isdefined(tacbundle)) {
-                record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>", self, 0.5);
+                record3dtext("<dev string:x3b>", self.origin, (1, 0, 0), "<dev string:x46>", self, 0.5);
                 waitframe(1);
                 continue;
             }
-            record3dtext("<unknown string>" + tacbundle.name + "<unknown string>", self.origin, (1, 1, 1), "<unknown string>", self, 0.5);
+            record3dtext("<dev string:x4f>" + tacbundle.name + "<dev string:x54>", self.origin, (1, 1, 1), "<dev string:x46>", self, 0.5);
             if (isdefined(self get_revive_target())) {
                 target = self get_revive_target().origin;
-                recordline(self.origin, target, (0, 1, 1), "<unknown string>", self);
-                recordcircle(target, 32, (0, 1, 1), "<unknown string>", self);
+                recordline(self.origin, target, (0, 1, 1), "<dev string:x46>", self);
+                recordcircle(target, 32, (0, 1, 1), "<dev string:x46>", self);
             }
             if (self should_record(#"hash_16eb77415dcf6054")) {
                 self function_d45e8714();
@@ -548,7 +547,7 @@ function function_23c46f6e() {
     }
     if (self has_interact()) {
         /#
-            self botprinterror("<unknown string>");
+            self botprinterror("<dev string:x59>");
         #/
         self clear_interact();
     }
@@ -702,7 +701,7 @@ function function_678e7c0(bundlename) {
     tacbundle = getscriptbundle(bundlename);
     if (!isdefined(tacbundle)) {
         /#
-            self botprinterror("<unknown string>" + bundlename);
+            self botprinterror("<dev string:x7a>" + bundlename);
         #/
         return;
     }
@@ -1070,20 +1069,20 @@ function function_e0aceb0c(tacbundle, dvarstr) {
     healthratio = self.health / self.maxhealth;
     if (healthratio <= tacbundle.var_ac1c818f) {
         /#
-            self record_text("<unknown string>", (1, 0, 0), dvarstr);
+            self record_text("<dev string:xbd>", (1, 0, 0), dvarstr);
         #/
         return false;
     }
     if (self isreloading()) {
         /#
-            self record_text("<unknown string>", (1, 0, 0), dvarstr);
+            self record_text("<dev string:xcc>", (1, 0, 0), dvarstr);
         #/
         return false;
     }
     weapon = self getcurrentweapon();
     if (weapon != level.weaponnone && self getweaponammoclip(weapon) <= 0) {
         /#
-            self record_text("<unknown string>", (1, 0, 0), dvarstr);
+            self record_text("<dev string:xda>", (1, 0, 0), dvarstr);
         #/
         return false;
     }
@@ -1201,20 +1200,20 @@ function function_903ea2a5() {
                 }
                 displayname = makelocalizedstring(getcharacterdisplayname(index, sessionmode));
                 assetname = function_9e72a96(getcharacterassetname(index, sessionmode));
-                name = displayname + "<unknown string>" + assetname + "<unknown string>";
-                cmd = "<unknown string>" + name + "<unknown string>" + index + "<unknown string>" + index + "<unknown string>";
+                name = displayname + "<dev string:xe9>" + assetname + "<dev string:xee>";
+                cmd = "<dev string:xf2>" + name + "<dev string:x126>" + index + "<dev string:x12a>" + index + "<dev string:x158>";
                 adddebugcommand(cmd);
-                cmd = "<unknown string>" + name + "<unknown string>" + index + "<unknown string>" + index + "<unknown string>";
+                cmd = "<dev string:x15c>" + name + "<dev string:x126>" + index + "<dev string:x18d>" + index + "<dev string:x158>";
                 adddebugcommand(cmd);
             }
         }
         while (true) {
             wait(0.25);
-            dvarstr = getdvarstring(#"devgui_bot", "<unknown string>");
-            if (dvarstr == "<unknown string>") {
+            dvarstr = getdvarstring(#"devgui_bot", "<dev string:x38>");
+            if (dvarstr == "<dev string:x38>") {
                 continue;
             }
-            args = strtok(dvarstr, "<unknown string>");
+            args = strtok(dvarstr, "<dev string:x1b8>");
             host = util::gethostplayerforbots();
             switch (args[0]) {
             case #"add":
@@ -1236,16 +1235,16 @@ function function_903ea2a5() {
                 level devgui_ignoreall(host, args[1], int(args[2]));
                 break;
             case #"primaryoffhand":
-                level devgui_attribute(host, "<unknown string>", args[1], int(args[2]));
+                level devgui_attribute(host, "<dev string:x1bc>", args[1], int(args[2]));
                 break;
             case #"secondaryoffhand":
-                level devgui_attribute(host, "<unknown string>", args[1], int(args[2]));
+                level devgui_attribute(host, "<dev string:x1d2>", args[1], int(args[2]));
                 break;
             case #"specialoffhand":
-                level devgui_attribute(host, "<unknown string>", args[1], int(args[2]));
+                level devgui_attribute(host, "<dev string:x1ea>", args[1], int(args[2]));
                 break;
             case #"scorestreak":
-                level devgui_attribute(host, "<unknown string>", args[1], int(args[2]));
+                level devgui_attribute(host, "<dev string:x200>", args[1], int(args[2]));
                 break;
             case #"usegadget":
                 level devgui_use_gadget(host, args[1], int(args[2]));
@@ -1277,7 +1276,7 @@ function function_903ea2a5() {
                 }
             }
             level notify(#"devgui_bot", {#host:host, #args:args});
-            setdvar(#"devgui_bot", "<unknown string>");
+            setdvar(#"devgui_bot", "<dev string:x38>");
         }
     }
 
@@ -1291,33 +1290,33 @@ function function_903ea2a5() {
             return;
         }
         i = 0;
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 0, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 1, "<unknown string>", "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x213>" + i + "<dev string:x21c>", 0, "<dev string:x223>", "<dev string:x22f>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x213>" + i + "<dev string:x233>", 1, "<dev string:x223>", "<dev string:x23b>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 0, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 1, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 2, "<unknown string>", "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x23f>" + i + "<dev string:x24d>", 0, "<dev string:x25f>", "<dev string:x26c>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x23f>" + i + "<dev string:x278>", 1, "<dev string:x25f>", "<dev string:x285>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x23f>" + i + "<dev string:x28a>", 2, "<dev string:x25f>", "<dev string:x293>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 0, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 1, "<unknown string>", "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x29b>" + i + "<dev string:x24d>", 0, "<dev string:x2a7>", "<dev string:x2ae>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x29b>" + i + "<dev string:x2b4>", 1, "<dev string:x2a7>", "<dev string:x285>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 0, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 1, "<unknown string>", "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x2c1>" + i + "<dev string:x24d>", 0, "<dev string:x2a7>", "<dev string:x2d4>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x2c1>" + i + "<dev string:x28a>", 1, "<dev string:x2a7>", "<dev string:x293>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 0, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 1, "<unknown string>", "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x2dc>" + i + "<dev string:x2ec>", 0, "<dev string:x2f2>", "<dev string:x301>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x2dc>" + i + "<dev string:x306>", 1, "<dev string:x2f2>", "<dev string:x30d>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 0, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 1, "<unknown string>", "<unknown string>");
-        self add_bot_devgui_cmd(entnum, "<unknown string>" + i + "<unknown string>", 2, "<unknown string>", "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x313>" + i + "<dev string:x321>", 0, "<dev string:x32c>", "<dev string:x22f>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x313>" + i + "<dev string:x338>", 1, "<dev string:x32c>", "<dev string:x23b>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x313>" + i + "<dev string:x345>", 2, "<dev string:x32c>", "<dev string:x350>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>", i, "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x354>", i, "<dev string:x365>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>", i, "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x375>", i, "<dev string:x37e>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>", i, "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x386>", i, "<dev string:x38d>");
         i++;
-        self add_bot_devgui_cmd(entnum, "<unknown string>", i, "<unknown string>");
+        self add_bot_devgui_cmd(entnum, "<dev string:x394>", i, "<dev string:x39d>");
         i++;
     }
 
@@ -1327,9 +1326,9 @@ function function_903ea2a5() {
     // Size: 0xec
     function add_bot_devgui_cmd(entnum, path, sortkey, devguiarg, cmdargs) {
         if (!isdefined(cmdargs)) {
-            cmdargs = "<unknown string>";
+            cmdargs = "<dev string:x38>";
         }
-        cmd = "<unknown string>" + entnum + "<unknown string>" + self.name + "<unknown string>" + entnum + "<unknown string>" + path + "<unknown string>" + sortkey + "<unknown string>" + devguiarg + "<unknown string>" + entnum + "<unknown string>" + cmdargs + "<unknown string>";
+        cmd = "<dev string:x3a6>" + entnum + "<dev string:x1b8>" + self.name + "<dev string:x126>" + entnum + "<dev string:x3ba>" + path + "<dev string:x126>" + sortkey + "<dev string:x3be>" + devguiarg + "<dev string:x1b8>" + entnum + "<dev string:x1b8>" + cmdargs + "<dev string:x158>";
         util::add_debug_command(cmd);
     }
 
@@ -1342,7 +1341,7 @@ function function_903ea2a5() {
         if (level.var_fa5cacde && entnum > 12) {
             return;
         }
-        cmd = "<unknown string>" + entnum + "<unknown string>" + self.name + "<unknown string>";
+        cmd = "<dev string:x3d3>" + entnum + "<dev string:x1b8>" + self.name + "<dev string:x158>";
         util::add_debug_command(cmd);
     }
 
@@ -1790,7 +1789,7 @@ function function_85e7342b() {
     // Size: 0x64
     function record_text(text, textcolor, dvarstr) {
         if (self should_record(dvarstr)) {
-            record3dtext(text, self.origin, textcolor, "<unknown string>", self, 0.5);
+            record3dtext(text, self.origin, textcolor, "<dev string:x46>", self, 0.5);
         }
     }
 
@@ -1805,18 +1804,18 @@ function function_85e7342b() {
         interact = self get_interact();
         var_dda174e9 = self function_bba89736();
         origin = interact.origin;
-        desc = "<unknown string>";
+        desc = "<dev string:x3ea>";
         if (self function_dd750ead()) {
-            desc = "<unknown string>";
+            desc = "<dev string:x3fd>";
         } else if (self function_914feddd()) {
-            desc = "<unknown string>";
+            desc = "<dev string:x40a>";
         } else if (self function_e8a17817()) {
-            desc = "<unknown string>";
+            desc = "<dev string:x423>";
         } else if (self function_ca9fb875()) {
-            desc = "<unknown string>";
+            desc = "<dev string:x435>";
         }
         if (isdefined(var_dda174e9)) {
-            self function_1744d303(var_dda174e9, (0, 1, 0), "<unknown string>");
+            self function_1744d303(var_dda174e9, (0, 1, 0), "<dev string:x46>");
         }
         if (!isvec(origin)) {
             if (isdefined(var_dda174e9)) {
@@ -1825,9 +1824,9 @@ function function_85e7342b() {
                 origin = self.origin;
             }
         }
-        recordline(self.origin, origin, (0, 1, 0), "<unknown string>", self);
-        recordsphere(origin, 8, (0, 1, 0), "<unknown string>", self);
-        record3dtext(desc, origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
+        recordline(self.origin, origin, (0, 1, 0), "<dev string:x46>", self);
+        recordsphere(origin, 8, (0, 1, 0), "<dev string:x46>", self);
+        record3dtext(desc, origin, (1, 1, 1), "<dev string:x46>", undefined, 0.5);
     }
 
     // Namespace bot/bot
@@ -1837,7 +1836,7 @@ function function_85e7342b() {
     function function_1744d303(trigger, color, channel) {
         maxs = trigger getmaxs();
         mins = trigger getmins();
-        if (issubstr(trigger.classname, "<unknown string>")) {
+        if (issubstr(trigger.classname, "<dev string:x44a>")) {
             radius = max(maxs[0], maxs[1]);
             top = trigger.origin + (0, 0, maxs[2]);
             bottom = trigger.origin + (0, 0, mins[2]);
@@ -1866,7 +1865,7 @@ function function_85e7342b() {
                 continue;
             }
             if (!active) {
-                adddebugcommand("<unknown string>");
+                adddebugcommand("<dev string:x453>");
                 active = 1;
             }
             botcount = bot_count();

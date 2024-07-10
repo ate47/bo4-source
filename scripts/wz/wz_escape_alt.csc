@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_nixie_tubes.csc;
 #using scripts\wz\wz_escape_alt_ffotd.csc;
 #using scripts\core_common\exploder_shared.csc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace zm_game_over;
@@ -28,7 +27,7 @@ class czm_game_over : cluielem {
             set_data(localclientnum, "_state", 1);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace czm_game_over/zm_game_over

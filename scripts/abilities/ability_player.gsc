@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_util.gsc;
 #using scripts\abilities\ability_power.gsc;
 #using scripts\core_common\match_record.gsc;
@@ -1034,7 +1033,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
         if (ishash(str)) {
             str = function_9e72a96(str);
         }
-        toprint = "<unknown string>" + str;
+        toprint = "<dev string:x38>" + str;
         println(toprint);
     }
 
@@ -1043,7 +1042,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x5900fbcb, Offset: 0x3f40
     // Size: 0x3c
     function abilities_print(str) {
-        toprint = "<unknown string>" + str;
+        toprint = "<dev string:x4f>" + str;
         println(toprint);
     }
 
@@ -1052,13 +1051,13 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x9ca97cdf, Offset: 0x3f88
     // Size: 0xec
     function abilities_devgui_init() {
-        setdvar(#"scr_abilities_devgui_cmd", "<unknown string>");
-        setdvar(#"scr_abilities_devgui_arg", "<unknown string>");
+        setdvar(#"scr_abilities_devgui_cmd", "<dev string:x64>");
+        setdvar(#"scr_abilities_devgui_arg", "<dev string:x64>");
         setdvar(#"scr_abilities_devgui_player", 0);
         if (isdedicated()) {
             return;
         }
-        level.abilities_devgui_base = "<unknown string>";
+        level.abilities_devgui_base = "<dev string:x67>";
         level.abilities_devgui_player_connect = &abilities_devgui_player_connect;
         level.abilities_devgui_player_disconnect = &abilities_devgui_player_disconnect;
         level thread abilities_devgui_think();
@@ -1088,8 +1087,8 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0xfd79c642, Offset: 0x4138
     // Size: 0x14e
     function abilities_devgui_add_player_commands(root, pname, index) {
-        add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
-        pid = "<unknown string>" + index;
+        add_cmd_with_root = "<dev string:x7a>" + root + pname + "<dev string:x88>";
+        pid = "<dev string:x64>" + index;
         menu_index = 1;
         if (isdefined(level.abilities_devgui_add_gadgets_custom)) {
             menu_index = self thread [[ level.abilities_devgui_add_gadgets_custom ]](root, pname, pid, menu_index);
@@ -1109,11 +1108,11 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Size: 0x104
     function abilities_devgui_add_player_command(root, pid, cmdname, menu_index, cmddvar, argdvar) {
         if (!isdefined(argdvar)) {
-            argdvar = "<unknown string>";
+            argdvar = "<dev string:x8c>";
         }
-        var_eece3d04 = "<unknown string>" + "<unknown string>" + "<unknown string>" + pid;
-        var_9b1fa683 = "<unknown string>" + "<unknown string>" + "<unknown string>" + cmddvar;
-        var_dc0fa12c = "<unknown string>" + "<unknown string>" + "<unknown string>" + argdvar + "<unknown string>";
+        var_eece3d04 = "<dev string:x96>" + "<dev string:xa0>" + "<dev string:xbe>" + pid;
+        var_9b1fa683 = "<dev string:xc2>" + "<dev string:xca>" + "<dev string:xbe>" + cmddvar;
+        var_dc0fa12c = "<dev string:xc2>" + "<dev string:xe5>" + "<dev string:xbe>" + argdvar + "<dev string:x100>";
         util::add_queued_debug_command(root + cmdname + var_eece3d04 + var_9b1fa683 + var_dc0fa12c);
     }
 
@@ -1122,12 +1121,12 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x2805f421, Offset: 0x43a0
     // Size: 0x17c
     function abilities_devgui_add_power(add_cmd_with_root, pid, menu_index) {
-        root = add_cmd_with_root + "<unknown string>" + menu_index + "<unknown string>";
-        abilities_devgui_add_player_command(root, pid, "<unknown string>", 1, "<unknown string>", "<unknown string>");
-        abilities_devgui_add_player_command(root, pid, "<unknown string>", 2, "<unknown string>", "<unknown string>");
+        root = add_cmd_with_root + "<dev string:x106>" + menu_index + "<dev string:x88>";
+        abilities_devgui_add_player_command(root, pid, "<dev string:x10f>", 1, "<dev string:x11c>", "<dev string:x64>");
+        abilities_devgui_add_player_command(root, pid, "<dev string:x126>", 2, "<dev string:x139>", "<dev string:x64>");
         for (power = 0; power <= 1; power += 0.25) {
-            abilities_devgui_add_player_command(root, pid, "<unknown string>" + power, 2, "<unknown string>", "<unknown string>" + power);
-            abilities_devgui_add_player_command(root, pid, "<unknown string>" + power, 2, "<unknown string>", "<unknown string>" + power);
+            abilities_devgui_add_player_command(root, pid, "<dev string:x146>" + power, 2, "<dev string:x15d>", "<dev string:x64>" + power);
+            abilities_devgui_add_player_command(root, pid, "<dev string:x171>" + power, 2, "<dev string:x186>", "<dev string:x64>" + power);
         }
         menu_index++;
         return menu_index;
@@ -1141,7 +1140,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
         if (sessionmodeiszombiesgame() || sessionmodeiswarzonegame()) {
             return;
         }
-        root = add_cmd_with_root + "<unknown string>" + menu_index + "<unknown string>";
+        root = add_cmd_with_root + "<dev string:x198>" + menu_index + "<dev string:x88>";
         session_mode = currentsessionmode();
         var_a2865de6 = getplayerroletemplatecount(session_mode);
         for (i = 1; i < var_a2865de6; i++) {
@@ -1151,16 +1150,16 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
             }
             var_d59b8ebf = getplayerrolecategoryinfo(var_854a6ba2);
             var_1a27a47a = makelocalizedstring(getcharacterdisplayname(i, session_mode));
-            var_1a27a47a = strreplace(var_1a27a47a, "<unknown string>", "<unknown string>");
-            if (var_1a27a47a == "<unknown string>") {
-                var_1a27a47a = "<unknown string>";
+            var_1a27a47a = strreplace(var_1a27a47a, "<dev string:x1a0>", "<dev string:x64>");
+            if (var_1a27a47a == "<dev string:x1a4>") {
+                var_1a27a47a = "<dev string:x1b3>";
             }
             var_eb49090f = function_9e72a96(function_b14806c6(i, session_mode));
-            var_4f6b7b98 = var_1a27a47a + "<unknown string>" + (isdefined(var_eb49090f) ? var_eb49090f : "<unknown string>") + "<unknown string>";
+            var_4f6b7b98 = var_1a27a47a + "<dev string:x1c2>" + (isdefined(var_eb49090f) ? var_eb49090f : "<dev string:x1c8>") + "<dev string:x1cf>";
             if (!isdefined(var_d59b8ebf.enabled) || var_d59b8ebf.enabled == 0) {
-                var_4f6b7b98 += "<unknown string>";
+                var_4f6b7b98 += "<dev string:x1d3>";
             }
-            abilities_devgui_add_player_command(root, pid, var_4f6b7b98, i, "<unknown string>", i);
+            abilities_devgui_add_player_command(root, pid, var_4f6b7b98, i, "<dev string:x1e1>", i);
         }
         menu_index++;
         return menu_index;
@@ -1226,7 +1225,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
             if (isdefined(iteminfo)) {
                 reference_s = iteminfo.namehash;
                 loadoutslotname = iteminfo.loadoutslotname;
-                if (loadoutslotname == "<unknown string>") {
+                if (loadoutslotname == "<dev string:x1f2>") {
                     function_2ced294(a_weapons, var_dd06e779, reference_s);
                 }
             }
@@ -1238,7 +1237,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x8f93a2d2, Offset: 0x4af0
     // Size: 0x5f8
     function abilities_devgui_add_gadgets(add_cmd_with_root, pid, menu_index) {
-        a_weapons = enumerateweapons("<unknown string>");
+        a_weapons = enumerateweapons("<dev string:x203>");
         a_gadgetweapons = [];
         for (i = 0; i < a_weapons.size; i++) {
             if (isdefined(a_weapons[i]) && a_weapons[i].isgadget) {
@@ -1317,17 +1316,17 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
                 var_4557f227[var_4557f227.size] = a_gadgetweapons[i];
             }
         }
-        function_174037fe(add_cmd_with_root, pid, a_equipment, "<unknown string>", menu_index);
+        function_174037fe(add_cmd_with_root, pid, a_equipment, "<dev string:x20c>", menu_index);
         menu_index++;
-        function_76032a31(add_cmd_with_root, pid, a_heal, "<unknown string>", menu_index);
+        function_76032a31(add_cmd_with_root, pid, a_heal, "<dev string:x21d>", menu_index);
         menu_index++;
-        function_a40d04ca(add_cmd_with_root, pid, var_c5b1a23e, "<unknown string>", menu_index);
+        function_a40d04ca(add_cmd_with_root, pid, var_c5b1a23e, "<dev string:x236>", menu_index);
         menu_index++;
-        function_174037fe(add_cmd_with_root, pid, var_dd06e779, "<unknown string>", menu_index);
+        function_174037fe(add_cmd_with_root, pid, var_dd06e779, "<dev string:x247>", menu_index);
         menu_index++;
-        function_174037fe(add_cmd_with_root, pid, var_4557f227, "<unknown string>", menu_index);
+        function_174037fe(add_cmd_with_root, pid, var_4557f227, "<dev string:x25b>", menu_index);
         menu_index++;
-        function_a40d04ca(add_cmd_with_root, pid, var_ef060ee3, "<unknown string>", menu_index);
+        function_a40d04ca(add_cmd_with_root, pid, var_ef060ee3, "<dev string:x275>", menu_index);
         menu_index++;
         return menu_index;
     }
@@ -1338,7 +1337,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Size: 0xbe
     function function_174037fe(root, pid, a_weapons, weapon_type, menu_index) {
         if (isdefined(a_weapons)) {
-            player_devgui_root = root + weapon_type + "<unknown string>";
+            player_devgui_root = root + weapon_type + "<dev string:x88>";
             for (i = 0; i < a_weapons.size; i++) {
                 function_b04fbf27(player_devgui_root, pid, getweaponname(a_weapons[i]), i + 1);
             }
@@ -1351,7 +1350,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Size: 0xbe
     function function_76032a31(root, pid, a_weapons, weapon_type, menu_index) {
         if (isdefined(a_weapons)) {
-            player_devgui_root = root + weapon_type + "<unknown string>";
+            player_devgui_root = root + weapon_type + "<dev string:x88>";
             for (i = 0; i < a_weapons.size; i++) {
                 function_50543efb(player_devgui_root, pid, getweaponname(a_weapons[i]), i + 1);
             }
@@ -1364,7 +1363,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Size: 0xbe
     function function_a40d04ca(root, pid, a_weapons, weapon_type, menu_index) {
         if (isdefined(a_weapons)) {
-            player_devgui_root = root + weapon_type + "<unknown string>";
+            player_devgui_root = root + weapon_type + "<dev string:x88>";
             for (i = 0; i < a_weapons.size; i++) {
                 function_90502d72(player_devgui_root, pid, getweaponname(a_weapons[i]), i + 1);
             }
@@ -1376,7 +1375,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0xdfc7e4b7, Offset: 0x5348
     // Size: 0xac
     function function_b04fbf27(root, pid, weap_name, cmdindex) {
-        util::add_queued_debug_command(root + weap_name + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + weap_name + "<unknown string>");
+        util::add_queued_debug_command(root + weap_name + "<dev string:x96>" + "<dev string:xa0>" + "<dev string:xbe>" + pid + "<dev string:xc2>" + "<dev string:xca>" + "<dev string:xbe>" + "<dev string:x28f>" + "<dev string:xc2>" + "<dev string:xe5>" + "<dev string:xbe>" + weap_name + "<dev string:x100>");
     }
 
     // Namespace ability_player/ability_player
@@ -1384,7 +1383,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x4e3032be, Offset: 0x5400
     // Size: 0xac
     function function_50543efb(root, pid, weap_name, cmdindex) {
-        util::add_queued_debug_command(root + weap_name + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + weap_name + "<unknown string>");
+        util::add_queued_debug_command(root + weap_name + "<dev string:x96>" + "<dev string:xa0>" + "<dev string:xbe>" + pid + "<dev string:xc2>" + "<dev string:xca>" + "<dev string:xbe>" + "<dev string:x2ab>" + "<dev string:xc2>" + "<dev string:xe5>" + "<dev string:xbe>" + weap_name + "<dev string:x100>");
     }
 
     // Namespace ability_player/ability_player
@@ -1392,7 +1391,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x7bc91ee0, Offset: 0x54b8
     // Size: 0xac
     function function_90502d72(root, pid, weap_name, cmdindex) {
-        util::add_queued_debug_command(root + weap_name + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + weap_name + "<unknown string>");
+        util::add_queued_debug_command(root + weap_name + "<dev string:x96>" + "<dev string:xa0>" + "<dev string:xbe>" + pid + "<dev string:xc2>" + "<dev string:xca>" + "<dev string:xbe>" + "<dev string:x2c9>" + "<dev string:xc2>" + "<dev string:xe5>" + "<dev string:xbe>" + weap_name + "<dev string:x100>");
     }
 
     // Namespace ability_player/ability_player
@@ -1403,7 +1402,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
         if (!isdefined(level.abilities_devgui_base)) {
             return;
         }
-        remove_cmd_with_root = "<unknown string>" + level.abilities_devgui_base + self.playername + "<unknown string>";
+        remove_cmd_with_root = "<dev string:x2e5>" + level.abilities_devgui_base + self.playername + "<dev string:x100>";
         util::add_queued_debug_command(remove_cmd_with_root);
     }
 
@@ -1412,15 +1411,15 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x5833d8b3, Offset: 0x55d8
     // Size: 0x368
     function abilities_devgui_think() {
-        setdvar(#"hash_67d528f29bfc7c97", "<unknown string>");
+        setdvar(#"hash_67d528f29bfc7c97", "<dev string:x64>");
         for (;;) {
-            cmd = "<unknown string>";
-            arg = getdvarstring(#"hash_67d528f29bfc7c97", "<unknown string>");
-            if (arg == "<unknown string>") {
+            cmd = "<dev string:x1e1>";
+            arg = getdvarstring(#"hash_67d528f29bfc7c97", "<dev string:x64>");
+            if (arg == "<dev string:x64>") {
                 cmd = getdvarstring(#"scr_abilities_devgui_cmd");
                 arg = getdvarstring(#"scr_abilities_devgui_arg");
             }
-            if (cmd == "<unknown string>") {
+            if (cmd == "<dev string:x64>") {
                 waitframe(1);
                 continue;
             }
@@ -1454,9 +1453,9 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
             default:
                 break;
             }
-            setdvar(#"hash_67d528f29bfc7c97", "<unknown string>");
-            setdvar(#"scr_abilities_devgui_cmd", "<unknown string>");
-            setdvar(#"scr_abilities_devgui_player", "<unknown string>");
+            setdvar(#"hash_67d528f29bfc7c97", "<dev string:x64>");
+            setdvar(#"scr_abilities_devgui_cmd", "<dev string:x64>");
+            setdvar(#"scr_abilities_devgui_player", "<dev string:x2f6>");
             wait(0.5);
         }
     }
@@ -1675,15 +1674,15 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
         if (sessionmodeiszombiesgame()) {
             return;
         }
-        if (self isinmovemode("<unknown string>")) {
-            adddebugcommand("<unknown string>");
+        if (self isinmovemode("<dev string:x2fb>")) {
+            adddebugcommand("<dev string:x2fb>");
             wait(0.5);
         }
-        if (self isinmovemode("<unknown string>")) {
-            adddebugcommand("<unknown string>");
+        if (self isinmovemode("<dev string:x301>")) {
+            adddebugcommand("<dev string:x301>");
             wait(0.5);
         }
-        if (var_a5c8eb94 == "<unknown string>") {
+        if (var_a5c8eb94 == "<dev string:x30a>") {
             startindex = self player_role::get();
             index = startindex;
             do {
@@ -1695,7 +1694,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
                     index = 0;
                 }
             } while (!self player_role::is_valid(index));
-        } else if (var_a5c8eb94 == "<unknown string>") {
+        } else if (var_a5c8eb94 == "<dev string:x30e>") {
             startindex = self player_role::get();
             index = startindex;
             do {
@@ -1719,7 +1718,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
             if (level.numlives) {
                 self.pers[#"lives"]++;
             }
-            self suicide("<unknown string>");
+            self suicide("<dev string:x312>");
             waitframe(1);
             if (isdefined(self)) {
                 self luinotifyevent(#"hash_2dddf8559f5b304d", 1, 1);

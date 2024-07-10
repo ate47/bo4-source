@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_elevation_sound;
 
 // Namespace mp_elevation_sound/mp_elevation_sound

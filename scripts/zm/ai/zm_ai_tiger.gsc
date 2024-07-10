@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -179,7 +178,7 @@ function private function_4703be8a() {
             self.var_826049b6 = var_b4a11ac2;
             self.var_cc94acec = 1;
             /#
-                recordsphere(self.var_826049b6, 3, (0, 1, 0), "<unknown string>");
+                recordsphere(self.var_826049b6, 3, (0, 1, 0), "<dev string:x38>");
             #/
             return true;
         }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 
 #namespace clientfield;
@@ -41,7 +40,7 @@ function register_bgcache(poolname, var_b693fec6, uniqueid, version, var_59f6987
 // Size: 0x84
 function set(str_field_name, n_value) {
     if (!isdefined(str_field_name)) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         return;
     }
     if (self == level) {
@@ -64,7 +63,7 @@ function can_set(str_field_name, n_value) {
 // Checksum 0x8324b1e, Offset: 0x2f8
 // Size: 0x84
 function set_to_player(str_field_name, n_value) {
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x77>");
     if (isplayer(self)) {
         codesetplayerstateclientfield(self, str_field_name, n_value);
     }

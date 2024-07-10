@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -58,7 +57,7 @@ function init_records() {
 // Size: 0x88
 function pickup_record(e_item, e_player) {
     /#
-        iprintln("<unknown string>" + level.s_audiologs.s_records.n_collected);
+        iprintln("<dev string:x38>" + level.s_audiologs.s_records.n_collected);
     #/
     e_item playsound(#"hash_760800881cd94dd1");
     level.s_audiologs.s_records.n_collected++;
@@ -73,7 +72,7 @@ function function_6ad87fb1() {
     n_id = level.s_audiologs.s_records.n_played;
     level.s_audiologs.s_records.n_played++;
     /#
-        iprintln("<unknown string>" + n_id);
+        iprintln("<dev string:x53>" + n_id);
     #/
     level.s_audiologs.s_records.var_d9a8e3e4 show();
     wait(1);
@@ -126,7 +125,7 @@ function function_d6fec498() {
 // Size: 0x88
 function pickup_reel(e_item, e_player) {
     /#
-        iprintln("<unknown string>" + level.s_audiologs.s_reels.n_collected);
+        iprintln("<dev string:x6c>" + level.s_audiologs.s_reels.n_collected);
     #/
     e_item playsound(#"hash_760800881cd94dd1");
     level.s_audiologs.s_reels.n_collected++;
@@ -141,7 +140,7 @@ function doa_streak_udem() {
     n_id = level.s_audiologs.s_reels.n_played;
     level.s_audiologs.s_reels.n_played++;
     /#
-        iprintln("<unknown string>" + n_id);
+        iprintln("<dev string:x85>" + n_id);
     #/
     exploder::exploder("fxexp_script_projector_off");
     exploder::exploder("fxexp_script_projector_on");
@@ -190,7 +189,7 @@ function function_4a547e41() {
     self hidepart("tag_light");
     self waittill(#"trigger_activated");
     /#
-        iprintln("<unknown string>" + self.script_int);
+        iprintln("<dev string:x9c>" + self.script_int);
     #/
     self showpart("tag_light");
     self zm_hms_util::function_e308175e(level.s_audiologs.var_29f70993[self.script_int], self.origin);
@@ -216,7 +215,7 @@ function function_a8be9b98() {
     self endon(#"death");
     self waittill(#"trigger_activated");
     /#
-        iprintln("<unknown string>" + self.script_int);
+        iprintln("<dev string:xb9>" + self.script_int);
     #/
     s_scene = struct::get(self.target);
     s_scene thread scene::play();
@@ -255,7 +254,7 @@ function function_530a6195() {
     self setcandamage(0);
     self.allowdeath = 1;
     /#
-        iprintln("<unknown string>" + self.script_int);
+        iprintln("<dev string:xd4>" + self.script_int);
     #/
     self zm_hms_util::function_e308175e(level.s_audiologs.var_7ab3422d[self.script_int], self.origin);
     self delete();

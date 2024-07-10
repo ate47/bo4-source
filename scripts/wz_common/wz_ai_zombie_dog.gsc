@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ai_utils.gsc;
 #using scripts\wz_common\wz_ai_zombie.gsc;
 #using scripts\mp_common\player\player_damage.gsc;
@@ -246,7 +245,7 @@ function private function_30a35f51() {
 function bb_getshouldrunstatus() {
     /#
         if (isdefined(self.ispuppet) && self.ispuppet) {
-            return "<unknown string>";
+            return "<dev string:x38>";
         }
     #/
     if (isdefined(self.hasseenfavoriteenemy) && self.hasseenfavoriteenemy || ai::hasaiattribute(self, "sprint") && ai::getaiattribute(self, "sprint") || getdvarint(#"survival_prototype", 0) && isdefined(self.current_state) && self.current_state.name === #"chase") {

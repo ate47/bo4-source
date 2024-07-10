@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_zones.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -329,11 +328,11 @@ function private function_ee58ddd4(is_scroll = 0) {
     // Checksum 0x1a0f73ea, Offset: 0x10b8
     // Size: 0x1b8
     function function_a94baf7b() {
-        a_s_collectibles = struct::get_array("<unknown string>", "<unknown string>");
+        a_s_collectibles = struct::get_array("<dev string:x38>", "<dev string:x4b>");
         foreach (s_collectibles in a_s_collectibles) {
             sphere(s_collectibles.origin + (0, 0, 60), 12, (0, 1, 1), 0.7, 0, 16, 10000);
         }
-        a_s_scrolls = struct::get_array("<unknown string>", "<unknown string>");
+        a_s_scrolls = struct::get_array("<dev string:x58>", "<dev string:x4b>");
         foreach (s_scrolls in a_s_scrolls) {
             sphere(s_scrolls.origin + (0, 0, 60), 12, (1, 0.5, 0), 0.7, 0, 16, 10000);
         }

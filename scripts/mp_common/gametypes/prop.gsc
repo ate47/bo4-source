@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_7fb8e6e31dd139d;
 #using script_8abbc35fe12516a;
 #using scripts\weapons\weapons.gsc;
@@ -1047,7 +1046,7 @@ function getthirdpersonrangeforsize(propsize) {
     case 350:
         return 320;
     default:
-        assertmsg("destruct/fx8_dest_prop_lg" + propsize);
+        assertmsg("<dev string:x38>" + propsize);
         break;
     }
     return 120;
@@ -1070,7 +1069,7 @@ function getthirdpersonheightoffsetforsize(propsize) {
     case 350:
         return 40;
     default:
-        assertmsg("destruct/fx8_dest_prop_lg" + propsize);
+        assertmsg("<dev string:x38>" + propsize);
         break;
     }
     return 0;
@@ -1298,7 +1297,7 @@ function function_d43d7033(propsize) {
         case 350:
             return "propDeathFX_l";
         default:
-            assertmsg("destruct/fx8_dest_prop_lg" + propsize);
+            assertmsg("<dev string:x38>" + propsize);
             break;
         }
     }
@@ -1652,14 +1651,14 @@ function setupprop() {
                 var_309e583f.propheight = height;
                 self.prop.info.propheight = height;
                 self.thirdpersonheightoffset = height;
-                clientfield::set_to_player("propDeathFX_s", int(self.thirdpersonheightoffset / 10));
+                clientfield::set_to_player("<dev string:x49>", int(self.thirdpersonheightoffset / 10));
             }
             range = getdvarint(#"prop_range", -1);
             if (range != -1 && range != var_309e583f.proprange) {
                 var_309e583f.proprange = range;
                 self.prop.info.proprange = range;
                 self.thirdpersonrange = range;
-                clientfield::set_to_player("still_alive_medium_bonus", int(self.thirdpersonrange / 10));
+                clientfield::set_to_player("<dev string:x5d>", int(self.thirdpersonrange / 10));
             }
             scale = getdvarfloat(#"prop_scale", -0.0123);
             if (scale != -0.0123 && scale != var_309e583f.propscale) {
@@ -1676,25 +1675,25 @@ function setupprop() {
     // Checksum 0x4e17988c, Offset: 0x7370
     // Size: 0x3bc
     function function_32041818() {
-        path = "prop_killed_all_props";
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + path + "<unknown string>" + "<unknown string>" + "<unknown string>");
+        path = "<dev string:x70>";
+        adddebugcommand("<dev string:x89>" + "<dev string:x97>" + "<dev string:xa6>");
+        adddebugcommand("<dev string:x89>" + "<dev string:xb4>" + "<dev string:xa6>");
+        adddebugcommand("<dev string:x89>" + "<dev string:xc3>" + "<dev string:xa6>");
+        adddebugcommand("<dev string:x89>" + "<dev string:xd2>" + "<dev string:xe1>");
+        adddebugcommand("<dev string:x89>" + "<dev string:xef>" + "<dev string:xe1>");
+        adddebugcommand("<dev string:x89>" + "<dev string:xfe>" + "<dev string:xe1>");
+        adddebugcommand("<dev string:x10d>" + "<dev string:x119>" + "<dev string:x127>");
+        adddebugcommand("<dev string:x10d>" + "<dev string:x133>" + "<dev string:x140>");
+        adddebugcommand("<dev string:x89>" + "<dev string:x14e>" + "<dev string:x15b>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:x97>" + "<dev string:x174>" + "<dev string:x97>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:xb4>" + "<dev string:x17b>" + "<dev string:xb4>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:xc3>" + "<dev string:x182>" + "<dev string:xc3>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:xd2>" + "<dev string:x189>" + "<dev string:xd2>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:xef>" + "<dev string:x190>" + "<dev string:xef>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:xfe>" + "<dev string:x197>" + "<dev string:xfe>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:x119>" + "<dev string:x19e>" + "<dev string:x119>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:x133>" + "<dev string:x1a5>" + "<dev string:x133>");
+        adddebugcommand("<dev string:x165>" + path + "<dev string:x14e>" + "<dev string:x1ac>" + "<dev string:x14e>");
     }
 
 #/
@@ -1723,7 +1722,7 @@ function function_239d2233(health) {
 // Size: 0x16e
 function getpropsize(propsizetext) {
     /#
-        if (propsizetext == "<unknown string>") {
+        if (propsizetext == "<dev string:x1b3>") {
             return 0;
         }
     #/
@@ -1747,7 +1746,7 @@ function getpropsize(propsizetext) {
     default:
         mapname = getmapname();
         var_a01224f2 = "gamedata/tables/mp/" + mapname + "_ph.csv";
-        assertmsg("<unknown string>" + propsizetext + "<unknown string>" + var_a01224f2 + "<unknown string>");
+        assertmsg("<dev string:x1bc>" + propsizetext + "<dev string:x1d2>" + var_a01224f2 + "<dev string:x1e6>");
         propsize = 75;
         break;
     }
@@ -2128,7 +2127,7 @@ function stillalivexp() {
     while (true) {
         hostmigration::waitlongdurationwithhostmigrationpause(10);
         /#
-            if (getgametypesetting("<unknown string>") == 0) {
+            if (getgametypesetting("<dev string:x1eb>") == 0) {
                 continue;
             }
         #/
@@ -2883,7 +2882,7 @@ function function_675bd286() {
 }
 
 // Namespace prop/prop
-// Params a, eflags: 0x0
+// Params 10, eflags: 0x0
 // Checksum 0x313cd6b, Offset: 0xb590
 // Size: 0xb8
 function onplayerdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {

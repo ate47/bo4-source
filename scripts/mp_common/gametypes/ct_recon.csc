@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_ai_blight_father.csc;
 #using scripts\mp_common\gametypes\ct_ai_zombie.csc;
 #using script_4293197b43dc9fef;

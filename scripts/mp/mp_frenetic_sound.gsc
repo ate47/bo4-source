@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_frenetic_sound;
 
 // Namespace mp_frenetic_sound/mp_frenetic_sound

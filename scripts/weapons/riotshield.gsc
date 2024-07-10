@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weapons.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
@@ -62,9 +61,9 @@ function watchriotshieldpickup() {
     self endon(#"watch_riotshield_pickup");
     self waittill(#"pickup_riotshield");
     self endon(#"weapon_change");
-    println("<unknown string>");
+    println("<dev string:x38>");
     wait(0.5);
-    println("<unknown string>");
+    println("<dev string:x72>");
     currentweapon = self getcurrentweapon();
     self.hasriotshield = self hasriotshield();
     self.hasriotshieldequipped = currentweapon.isriotshield;
@@ -246,7 +245,7 @@ function watchriotshielddeploy() {
                 assert(isdefined(item_ent));
                 assert(!isdefined(self.riotshieldretrievetrigger));
                 assert(!isdefined(self.riotshieldentity));
-                if (level.gametype != "<unknown string>") {
+                if (level.gametype != "<dev string:xab>") {
                     assert(primaries.size > 0);
                 }
             #/
@@ -291,7 +290,7 @@ function riotshielddistancetest(origin) {
         if (isdefined(level.players[i].riotshieldentity)) {
             dist_squared = distancesquared(level.players[i].riotshieldentity.origin, origin);
             if (min_dist_squared > dist_squared) {
-                println("<unknown string>");
+                println("<dev string:xb2>");
                 return false;
             }
         }

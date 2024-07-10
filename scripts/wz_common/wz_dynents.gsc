@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\trophy_system.gsc;
 #using scripts\weapons\sensor_dart.gsc;
 #using scripts\abilities\gadgets\gadget_homunculus.gsc;

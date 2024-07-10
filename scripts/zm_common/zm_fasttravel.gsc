@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -44,9 +43,9 @@ function __init__() {
     level flag::init(#"disable_fast_travel");
     /#
         zm_devgui::add_custom_devgui_callback(&function_dd6276f3);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x8b>");
+        adddebugcommand("<dev string:xdc>");
     #/
 }
 
@@ -307,7 +306,7 @@ function function_6cde5436() {
         }
         if (!player zm_score::can_player_purchase(n_cost)) {
             /#
-                player iprintln("<unknown string>");
+                player iprintln("<dev string:x127>");
             #/
             player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
             continue;
@@ -440,7 +439,7 @@ function function_f86439bc() {
             n_distance_squared = distance2dsquared(e_player.origin, self.origin);
             if (self != e_player && !(isdefined(e_player.var_16735873) && e_player.var_16735873) && n_distance_squared <= 4096) {
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x13b>");
                 #/
                 var_e9a9a32a = 1;
                 break;
@@ -487,7 +486,7 @@ function function_7a74dbfd(str_targetname) {
     var_6a4c362c = [];
     for (i = 0; i < 4; i++) {
         var_f0bbde5 = struct::get(str_targetname + i);
-        assert(isdefined(var_f0bbde5), "<unknown string>" + str_targetname + i);
+        assert(isdefined(var_f0bbde5), "<dev string:x162>" + str_targetname + i);
         if (!isdefined(var_6a4c362c)) {
             var_6a4c362c = [];
         } else if (!isarray(var_6a4c362c)) {
@@ -545,7 +544,7 @@ function function_66d020b0(var_5314bd63, nd_path_start, var_384528, str_notify, 
     }
     self notify(#"hash_1c35eb15aa210d6", {#var_9fa6220c:var_12230d08});
     /#
-        self zm_challenges::debug_print("<unknown string>");
+        self zm_challenges::debug_print("<dev string:x185>");
     #/
     self zm_stats::increment_challenge_stat(#"fast_travels");
     self contracts::increment_zm_contract(#"contract_zm_fast_travel");
@@ -810,16 +809,16 @@ function function_5165d69() {
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!isdefined(player)) {
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:x1af>");
             continue;
         }
         var_616025ba = getvehiclenode("fasttravel_dropdown_" + player.var_388ee880 + "_start", "targetname");
         if (!isdefined(var_616025ba)) {
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:x1f1>");
             continue;
         }
         if (!isdefined(player.var_2790fd8b)) {
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:x215>");
             continue;
         }
         player endon(#"death");
@@ -914,7 +913,7 @@ function function_a78584c0(var_6c365dbf) {
     self setplayerangles(s_teleport_room.angles);
     self clientfield::set_to_player("fasttravel_teleport_sfx", 1);
     playsoundatposition(#"hash_3388d9809bf60b12", var_a16f5b07);
-    println("<unknown string>" + self getplayercamerapos());
+    println("<dev string:x25f>" + self getplayercamerapos());
     self.var_805b8325 = spawn("script_origin", self.origin);
     self.var_805b8325.angles = self.angles;
     self linkto(self.var_805b8325);

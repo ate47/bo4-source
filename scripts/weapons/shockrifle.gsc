@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\gadgets\gadget_radiation_field.gsc;
 #using scripts\core_common\globallogic\globallogic_score.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;

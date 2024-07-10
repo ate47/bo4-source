@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\powerup\zm_powerup_nuke.gsc;
 #using scripts\zm_common\trials\zm_trial_close_quarters.gsc;
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
@@ -97,7 +96,7 @@ function __init__() {
     registerbehaviorscriptfunctions();
     init();
     /#
-        execdevgui("<unknown string>");
+        execdevgui("<dev string:x38>");
         level thread function_a92dac75();
     #/
     spawner::add_archetype_spawn_function(#"stoker", &function_580b77a2);
@@ -338,7 +337,7 @@ function private function_e4ef4e27(entity, attribute, oldvalue, value) {
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0x98489deb, Offset: 0x1f70
 // Size: 0x6e0
 function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeath, sweapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
@@ -434,7 +433,7 @@ function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeat
         damagedone = 1;
     }
     /#
-        function_752a64b8("<unknown string>" + damagedone + "<unknown string>" + self.health);
+        function_752a64b8("<dev string:x58>" + damagedone + "<dev string:x67>" + self.health);
     #/
     return damagedone;
 }
@@ -462,7 +461,7 @@ function private function_1bf5272c(hitloc, point, location, var_934afb38, tag) {
 // Size: 0x86
 function private function_c9116e0f(armorinfo, damage) {
     /#
-        function_752a64b8("<unknown string>" + damage + "<unknown string>" + armorinfo.position);
+        function_752a64b8("<dev string:x58>" + damage + "<dev string:x89>" + armorinfo.position);
     #/
     armorinfo.health -= damage;
     if (armorinfo.health <= 0) {
@@ -556,7 +555,7 @@ function private function_d47e273b(entity) {
 function private function_65d23c4f(entity) {
     /#
         if (entity.var_907e6060) {
-            function_752a64b8("<unknown string>");
+            function_752a64b8("<dev string:x9c>");
         }
     #/
     return entity.var_907e6060;
@@ -592,7 +591,7 @@ function private function_765f06f9(entity) {
 // Size: 0x2c
 function private function_7cd52d88(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:xc3>");
     #/
 }
 
@@ -602,7 +601,7 @@ function private function_7cd52d88(entity) {
 // Size: 0x4c
 function private function_b7fe306e(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:xe6>");
     #/
     entity.var_86f9cdcd = 0;
     stokerchargeattack(entity);
@@ -614,7 +613,7 @@ function private function_b7fe306e(entity) {
 // Size: 0x2c
 function private function_f01e64d6(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:x124>");
     #/
 }
 
@@ -624,7 +623,7 @@ function private function_f01e64d6(entity) {
 // Size: 0x4c
 function private function_36903815(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:x13f>");
     #/
     entity clientfield::set("stoker_fx_start_clientfield", 7);
 }
@@ -649,7 +648,7 @@ function private function_aae7916a(entity) {
 // Size: 0x2c
 function private function_dee90338(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:x160>");
     #/
 }
 
@@ -659,7 +658,7 @@ function private function_dee90338(entity) {
 // Size: 0x6c
 function private function_b6e7676d(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:x181>");
     #/
     entity.var_aca87abc = 0;
     if (function_aae7916a(entity)) {
@@ -673,7 +672,7 @@ function private function_b6e7676d(entity) {
 // Size: 0x6c
 function private function_20a3d8f6(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:x19b>");
     #/
     entity.var_907e6060 = 0;
     if (function_aae7916a(entity)) {
@@ -704,7 +703,7 @@ function private function_399815b2(entity) {
 function private function_60951874(entity) {
     if (self.var_dc32e381 >= entity ai::function_9139c839().var_20dea374) {
         /#
-            function_752a64b8("<unknown string>");
+            function_752a64b8("<dev string:x1bb>");
         #/
         return true;
     }
@@ -728,7 +727,7 @@ function private function_b4ecc051(entity, asmstatename) {
 // Size: 0x44
 function private function_a2d1d120(entity) {
     /#
-        function_752a64b8("<unknown string>");
+        function_752a64b8("<dev string:x1f1>");
     #/
     function_394c6870(entity);
 }
@@ -814,13 +813,13 @@ function private function_253c9e38(entity) {
     timeelapsed = gettime() - entity.lastattacktime;
     if (entity.var_5274eb5f && timeelapsed > entity ai::function_9139c839().var_287805eb) {
         /#
-            function_752a64b8("<unknown string>");
+            function_752a64b8("<dev string:x209>");
         #/
         function_394c6870(entity);
     }
     if (entity.var_d691409c) {
         /#
-            function_752a64b8("<unknown string>");
+            function_752a64b8("<dev string:x23d>");
         #/
         entity.var_86f9cdcd = 1;
         return;
@@ -832,7 +831,7 @@ function private function_253c9e38(entity) {
         }
         if (!entity.var_aca87abc && !entity.var_86f9cdcd && isdefined(entity getblackboardattribute("_locomotion_speed")) && entity getblackboardattribute("_locomotion_speed") != "locomotion_speed_sprint" && function_ac53cb4e(entity) && !entity.var_81d3587d && function_5878b360(entity)) {
             /#
-                function_752a64b8("<unknown string>");
+                function_752a64b8("<dev string:x28f>");
             #/
             stokerrangedattack(entity);
         }
@@ -956,7 +955,7 @@ function function_4c2cb763(s_spot) {
 function function_2170ee7a() {
     level.a_sp_stoker = getentarray("zombie_stoker_spawner", "script_noteworthy");
     if (level.a_sp_stoker.size == 0) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x2aa>");
         return;
     }
     foreach (sp_stoker in level.a_sp_stoker) {
@@ -1021,7 +1020,7 @@ function spawn_single(b_force_spawn = 0, var_eb3a8721, var_bc66d64b) {
     if (!isdefined(s_spawn_loc)) {
         /#
             if (getdvarint(#"hash_1f8efa579fee787c", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x2f4>");
             }
         #/
         return undefined;
@@ -1172,7 +1171,7 @@ function private function_f5f699aa() {
     // Checksum 0xc29791b7, Offset: 0x49f0
     // Size: 0x74
     function private function_a92dac75() {
-        level flagsys::wait_till("<unknown string>");
+        level flagsys::wait_till("<dev string:x325>");
         zm_devgui::add_custom_devgui_callback(&function_963e8ce);
         spawner::add_archetype_spawn_function(#"stoker", &function_16c9b795);
     }
@@ -1185,8 +1184,8 @@ function private function_f5f699aa() {
         if (isdefined(level.var_910d20f6) && level.var_910d20f6) {
             return;
         }
-        adddebugcommand("<unknown string>" + getdvarint(#"hash_3dfb66f92268c90f", self ai::function_9139c839().var_d33d95d0) + "<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x340>" + getdvarint(#"hash_3dfb66f92268c90f", self ai::function_9139c839().var_d33d95d0) + "<dev string:x365>");
+        adddebugcommand("<dev string:x371>");
         level.var_910d20f6 = 1;
     }
 
@@ -1195,7 +1194,7 @@ function private function_f5f699aa() {
     // Checksum 0x33910449, Offset: 0x4b30
     // Size: 0x278
     function private function_963e8ce(cmd) {
-        if (cmd == "<unknown string>") {
+        if (cmd == "<dev string:x3b8>") {
             player = level.players[0];
             v_direction = player getplayerangles();
             v_direction = anglestoforward(v_direction) * 8000;
@@ -1212,7 +1211,7 @@ function private function_f5f699aa() {
             spawn_single(1, s_spot);
             return 1;
         }
-        if (cmd == "<unknown string>") {
+        if (cmd == "<dev string:x3c7>") {
             stokers = getaiarchetypearray(#"stoker");
             foreach (stoker in stokers) {
                 stoker kill();
@@ -1237,7 +1236,7 @@ function private function_f5f699aa() {
     // Size: 0x44
     function function_752a64b8(message) {
         if (isdefined(level.stokerdebug)) {
-            println("<unknown string>" + message);
+            println("<dev string:x3d9>" + message);
         }
     }
 

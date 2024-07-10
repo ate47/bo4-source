@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm\zm_mansion_pap_quest.gsc;
 #using script_387eab232fe22983;

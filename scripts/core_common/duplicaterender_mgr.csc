@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\shoutcaster.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\util_shared.csc;
@@ -123,7 +122,7 @@ function set_dr_filter_framebuffer(name, priority, require_flags, refuse_flags, 
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params d, eflags: 0x1 linked
+// Params 13, eflags: 0x1 linked
 // Checksum 0xd38985fd, Offset: 0xbd8
 // Size: 0xb4
 function set_dr_filter_framebuffer_duplicate(name, priority, require_flags, refuse_flags, drtype1, drval1, drcull1, drtype2, drval2, drcull2, drtype3, drval3, drcull3) {
@@ -131,7 +130,7 @@ function set_dr_filter_framebuffer_duplicate(name, priority, require_flags, refu
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params d, eflags: 0x1 linked
+// Params 13, eflags: 0x1 linked
 // Checksum 0x5f9aabbc, Offset: 0xc98
 // Size: 0xb4
 function set_dr_filter_offscreen(name, priority, require_flags, refuse_flags, drtype1, drval1, drcull1, drtype2, drval2, drcull2, drtype3, drval3, drcull3) {
@@ -326,15 +325,15 @@ function apply_filter(localclientnum, filter, filterset = "framebuffer") {
     }
     /#
         if (getdvarint(#"scr_debug_duplicaterender", 0)) {
-            name = "<unknown string>";
+            name = "<dev string:x38>";
             if (isplayer(self)) {
                 if (isdefined(self.name)) {
-                    name = "<unknown string>" + self.name;
+                    name = "<dev string:x43>" + self.name;
                 }
             } else if (isdefined(self.model)) {
-                name += "<unknown string>" + self.model;
+                name += "<dev string:x4d>" + self.model;
             }
-            msg = "<unknown string>" + filter.name + "<unknown string>" + name + "<unknown string>" + filterset;
+            msg = "<dev string:x51>" + filter.name + "<dev string:x75>" + name + "<dev string:x7c>" + filterset;
             println(msg);
         }
     #/

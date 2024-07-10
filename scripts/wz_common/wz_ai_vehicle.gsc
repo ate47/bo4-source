@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\ai_tank_shared.gsc;
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\core_common\ai\blackboard_vehicle.gsc;
@@ -43,7 +42,7 @@ function path_update_interrupt_by_attacker() {
             self.debug_ai_move_to_points_considered = [];
         #/
         /#
-            self.debug_ai_movement_type = "<unknown string>";
+            self.debug_ai_movement_type = "<dev string:x38>";
         #/
         /#
             self.debug_ai_move_to_point = undefined;

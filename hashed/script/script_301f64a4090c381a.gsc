@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_score.gsc;
@@ -234,13 +233,13 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
     // Checksum 0x20fcdfd8, Offset: 0x990
     // Size: 0x650
     function devgui() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x9d>");
+        adddebugcommand("<dev string:x101>");
+        adddebugcommand("<dev string:x162>");
+        adddebugcommand("<dev string:x1c5>");
+        adddebugcommand("<dev string:x22a>");
+        adddebugcommand("<dev string:x28d>");
         level.var_8e9d88b6 = [];
         level.var_8e9d88b6[#"fl1"] = 1;
         level.var_8e9d88b6[#"tn1"] = 2;
@@ -250,7 +249,7 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
         level.var_8e9d88b6[#"season1"] = 6;
         while (true) {
             waitframe(1);
-            str_command = getdvarstring(#"hash_443a451d4b2f9de2", "<unknown string>");
+            str_command = getdvarstring(#"hash_443a451d4b2f9de2", "<dev string:x2e0>");
             switch (str_command) {
             case #"bf1":
             case #"fl1":
@@ -291,21 +290,21 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
             case #"hash_6601596aaf4e0e5e":
             case #"hash_66603731967362a6":
             case #"hash_7f4e4b4da709788d":
-                n_player = int(strtok(str_command, "<unknown string>")[1]);
-                var_afaaaae2 = strtok(str_command, "<unknown string>")[2];
+                n_player = int(strtok(str_command, "<dev string:x2e3>")[1]);
+                var_afaaaae2 = strtok(str_command, "<dev string:x2e3>")[2];
                 function_c1ccd7f3(&function_9af806be, n_player, level.var_8e9d88b6[var_afaaaae2]);
                 break;
             case #"hash_39098b3e5f02ee30":
             case #"hash_3b6473dd2b0c56c7":
             case #"hash_10e7f44f002ed3c6":
             case #"hash_33d0946a156bc141":
-                n_player = int(strtok(str_command, "<unknown string>")[1]);
+                n_player = int(strtok(str_command, "<dev string:x2e3>")[1]);
                 function_c1ccd7f3(&function_2a94cd59, n_player);
                 break;
             default:
                 break;
             }
-            setdvar(#"hash_443a451d4b2f9de2", "<unknown string>");
+            setdvar(#"hash_443a451d4b2f9de2", "<dev string:x2e0>");
         }
     }
 
@@ -315,7 +314,7 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
     // Size: 0x4c
     function on_player_connect() {
         self endon(#"disconnect");
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x2e7>");
         self devgui_player_menu();
     }
 
@@ -337,13 +336,13 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
     function devgui_player_menu() {
         self function_1c3ffffd();
         var_21c1ba1 = self getentitynumber() + 1;
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + var_21c1ba1 + "<unknown string>" + var_21c1ba1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + var_21c1ba1 + "<unknown string>" + var_21c1ba1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + var_21c1ba1 + "<unknown string>" + var_21c1ba1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + var_21c1ba1 + "<unknown string>" + var_21c1ba1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + var_21c1ba1 + "<unknown string>" + var_21c1ba1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + var_21c1ba1 + "<unknown string>" + var_21c1ba1 + "<unknown string>");
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>" + var_21c1ba1 + "<unknown string>" + var_21c1ba1 + "<unknown string>");
+        adddebugcommand("<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x328>" + var_21c1ba1 + "<dev string:x372>");
+        adddebugcommand("<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x37c>" + var_21c1ba1 + "<dev string:x3c5>");
+        adddebugcommand("<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x3cf>" + var_21c1ba1 + "<dev string:x415>");
+        adddebugcommand("<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x41f>" + var_21c1ba1 + "<dev string:x468>");
+        adddebugcommand("<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x472>" + var_21c1ba1 + "<dev string:x4b7>");
+        adddebugcommand("<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x4c6>" + var_21c1ba1 + "<dev string:x50a>");
+        adddebugcommand("<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x518>" + var_21c1ba1 + "<dev string:x54a>");
     }
 
     // Namespace namespace_e38c57c1/namespace_e38c57c1
@@ -351,7 +350,7 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
     // Checksum 0x3ff5e3f9, Offset: 0x1340
     // Size: 0x34
     function function_1c3ffffd() {
-        adddebugcommand("<unknown string>" + self.name + "<unknown string>");
+        adddebugcommand("<dev string:x556>" + self.name + "<dev string:x579>");
     }
 
 #/

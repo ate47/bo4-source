@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_hacienda_sound.gsc;
 #using scripts\mp\mp_hacienda_fx.gsc;
 #using scripts\mp_common\load.gsc;
@@ -306,8 +305,8 @@ function function_9940fbb9(a_models, var_2a7cd391 = "use") {
     // Size: 0x74
     function init_devgui() {
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x89>");
     }
 
 #/

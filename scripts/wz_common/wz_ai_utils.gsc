@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ai_zonemgr.gsc;
 #using scripts\wz_common\wz_ai_zombie.gsc;
 #using scripts\wz_common\wz_ai_vehicle.gsc;
@@ -77,21 +76,21 @@ function private __init__() {
     function function_b4f41a02() {
         level endon(#"game_ended");
         aitypes = array(#"spawner_boct_zombie_wz", #"hash_618248fca82d83a6", #"spawner_wz_blight_father", #"spawner_boct_zombie_dog_wz", #"spawner_boct_brutus_special_wz", #"spawner_boct_brutus_wz", #"spawner_boct_avogadro");
-        setdvar(#"hash_209287456d55fca1", "<unknown string>");
+        setdvar(#"hash_209287456d55fca1", "<dev string:x38>");
         foreach (type in aitypes) {
             if (function_e949cfd7(type)) {
-                util::add_debug_command("<unknown string>" + function_9e72a96(type) + "<unknown string>" + function_9e72a96(type) + "<unknown string>");
+                util::add_debug_command("<dev string:x3b>" + function_9e72a96(type) + "<dev string:x5b>" + function_9e72a96(type) + "<dev string:x81>");
             }
         }
-        util::add_debug_command("<unknown string>");
-        util::add_debug_command("<unknown string>");
+        util::add_debug_command("<dev string:x86>");
+        util::add_debug_command("<dev string:xa9>");
         while (true) {
             wait(0.1);
-            cmd = getdvarstring(#"hash_209287456d55fca1", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_209287456d55fca1", "<dev string:x38>");
+            if (cmd == "<dev string:x38>") {
                 continue;
             }
-            cmd_tokens = strtok(cmd, "<unknown string>");
+            cmd_tokens = strtok(cmd, "<dev string:xea>");
             switch (cmd_tokens[0]) {
             case #"hash_c0b89e8d4a71cff":
                 player = level.players[0];
@@ -105,7 +104,7 @@ function private __init__() {
                 ai thread function_7adc1e46(closest_zone, 0);
                 break;
             }
-            setdvar(#"hash_209287456d55fca1", "<unknown string>");
+            setdvar(#"hash_209287456d55fca1", "<dev string:x38>");
         }
     }
 
@@ -116,13 +115,13 @@ function private __init__() {
     function debug_ai() {
         level endon(#"game_ended");
         level.var_b4702614 = [];
-        level.var_b4702614[0] = "<unknown string>";
-        level.var_b4702614[1] = "<unknown string>";
-        level.var_b4702614[2] = "<unknown string>";
-        level.var_b4702614[3] = "<unknown string>";
-        level.var_b4702614[4] = "<unknown string>";
-        level.var_b4702614[5] = "<unknown string>";
-        level.var_b4702614[6] = "<unknown string>";
+        level.var_b4702614[0] = "<dev string:xee>";
+        level.var_b4702614[1] = "<dev string:xfa>";
+        level.var_b4702614[2] = "<dev string:x103>";
+        level.var_b4702614[3] = "<dev string:x110>";
+        level.var_b4702614[4] = "<dev string:x118>";
+        level.var_b4702614[5] = "<dev string:x120>";
+        level.var_b4702614[6] = "<dev string:x12a>";
         while (true) {
             if (isdefined(level.var_e066667d) && level.var_e066667d && isdefined(level.var_91a15ec0)) {
                 axis = getaiteamarray(level.var_91a15ec0);
@@ -134,9 +133,9 @@ function private __init__() {
                     if (isdefined(entity.aistate)) {
                         org = entity.origin + (0, 0, 90);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext((isdefined(level.var_b4702614[entity.aistate]) ? level.var_b4702614[entity.aistate] : "<unknown string>") + "<unknown string>" + entity.health, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext((isdefined(level.var_b4702614[entity.aistate]) ? level.var_b4702614[entity.aistate] : "<dev string:x138>") + "<dev string:x142>" + entity.health, entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, (isdefined(level.var_b4702614[entity.aistate]) ? level.var_b4702614[entity.aistate] : "<unknown string>") + "<unknown string>" + entity.health, (1, 0.5, 0), 1, 0.2);
+                            print3d(org, (isdefined(level.var_b4702614[entity.aistate]) ? level.var_b4702614[entity.aistate] : "<dev string:x138>") + "<dev string:x142>" + entity.health, (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     ai_cansee = 0;
@@ -146,33 +145,33 @@ function private __init__() {
                     if (isdefined(entity.canseeplayer)) {
                         org = entity.origin + (0, 0, 85);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x14f>" + entity.canseeplayer + "<dev string:x159>" + ai_cansee + "<dev string:x15d>", entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x14f>" + entity.canseeplayer + "<dev string:x159>" + ai_cansee + "<dev string:x15d>", (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.allowoffnavmesh)) {
                         org = entity.origin + (0, 0, 80);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + entity.allowoffnavmesh, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x161>" + entity.allowoffnavmesh, entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + entity.allowoffnavmesh, (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x161>" + entity.allowoffnavmesh, (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.var_6e3313ab)) {
                         org = entity.origin + (0, 0, 75);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + entity.var_6e3313ab, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x16b>" + entity.var_6e3313ab, entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + entity.var_6e3313ab, (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x16b>" + entity.var_6e3313ab, (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.var_ad26639d)) {
                         org = entity.origin + (0, 0, 70);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + entity.var_ad26639d, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x175>" + entity.var_ad26639d, entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + entity.var_ad26639d, (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x175>" + entity.var_ad26639d, (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.var_9a79d89d)) {
@@ -181,41 +180,41 @@ function private __init__() {
                             origin = entity.var_9a79d89d.origin;
                         }
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>", entity.origin, (0, 0, 1), "<unknown string>", entity);
+                            record3dtext("<dev string:x180>", entity.origin, (0, 0, 1), "<dev string:x146>", entity);
                         } else {
-                            print3d(entity.var_9a79d89d + (0, 0, 10), "<unknown string>", (0, 0, 1), 1, 1);
+                            print3d(entity.var_9a79d89d + (0, 0, 10), "<dev string:x180>", (0, 0, 1), 1, 1);
                         }
                     }
                     if (isdefined(entity.var_db912cfe) && isdefined(entity.surfacetype)) {
                         org = entity.origin + (0, 0, 70);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + entity.surfacetype + "<unknown string>" + entity.var_db912cfe, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x18e>" + entity.surfacetype + "<dev string:x199>" + entity.var_db912cfe, entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + entity.surfacetype + "<unknown string>" + entity.var_db912cfe, (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x18e>" + entity.surfacetype + "<dev string:x199>" + entity.var_db912cfe, (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.is_special)) {
                         org = entity.origin + (0, 0, 200);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + entity.is_special + "<unknown string>" + entity.is_special + "<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x1a1>" + entity.is_special + "<dev string:x159>" + entity.is_special + "<dev string:x15d>", entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + entity.is_special + "<unknown string>" + entity.is_special + "<unknown string>", (1, 0.5, 0), 1, 2);
+                            print3d(org, "<dev string:x1a1>" + entity.is_special + "<dev string:x159>" + entity.is_special + "<dev string:x15d>", (1, 0.5, 0), 1, 2);
                         }
                     }
                     if (isdefined(entity.movetime) && getdvarint(#"hash_1aebd3ffed21a22a", 0)) {
                         org = entity.origin + (0, 0, 90);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + gettime() - entity.movetime, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x1ac>" + gettime() - entity.movetime, entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + gettime() - entity.movetime, (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x1ac>" + gettime() - entity.movetime, (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.idletime) && getdvarint(#"hash_1aebd3ffed21a22a", 0)) {
                         org = entity.origin + (0, 0, 95);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + gettime() - entity.idletime, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x1b8>" + gettime() - entity.idletime, entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + gettime() - entity.idletime, (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x1b8>" + gettime() - entity.idletime, (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.attackable) && getdvarint(#"hash_6e5b3c35cb223a9d", 0)) {
@@ -223,9 +222,9 @@ function private __init__() {
                         recordstar(entity.attackable_slot.origin, (0, 0, 1));
                         org = entity.origin + (0, 0, 100);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + distance2dsquared(entity.origin, entity.attackable_slot.origin), entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<dev string:x1c4>" + distance2dsquared(entity.origin, entity.attackable_slot.origin), entity.origin, (1, 0.5, 0), "<dev string:x146>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + distance2dsquared(entity.origin, entity.attackable_slot.origin), (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<dev string:x1c4>" + distance2dsquared(entity.origin, entity.attackable_slot.origin), (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.var_6c408220)) {
@@ -1052,7 +1051,7 @@ function function_bdb2b85b(entity, origin, angles, radius, num_spots, var_7a2632
     mins = (-10, -10, 0);
     maxs = (10, 10, 48);
     /#
-        record3dtext("<unknown string>", origin, (0, 0, 1));
+        record3dtext("<dev string:x1d4>", origin, (0, 0, 1));
     #/
     for (i = 0; i < num_spots; i++) {
         t = mapfloat(0, num_spots, 0, 360, i);

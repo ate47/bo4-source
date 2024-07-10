@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_devgui.gsc;
 #using scripts\zm_common\zm_bgb.gsc;
 #using scripts\zm_common\zm_powerups.gsc;
@@ -131,7 +130,7 @@ function watch_zombie_blood_early_exit() {
 // Checksum 0xa8410284, Offset: 0xa30
 // Size: 0x190
 function make_zombie_blood_entity() {
-    assert(isdefined(level.a_zombie_blood_entities), "<unknown string>");
+    assert(isdefined(level.a_zombie_blood_entities), "<dev string:x38>");
     if (!isdefined(level.a_zombie_blood_entities)) {
         level.a_zombie_blood_entities = [];
     } else if (!isarray(level.a_zombie_blood_entities)) {
@@ -159,11 +158,11 @@ function make_zombie_blood_entity() {
     // Checksum 0x68c26836, Offset: 0xbc8
     // Size: 0x7c
     function function_98b48c31() {
-        level flagsys::wait_till("<unknown string>");
+        level flagsys::wait_till("<dev string:x68>");
         wait(1);
         zm_devgui::add_custom_devgui_callback(&function_9170df8e);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x83>");
+        adddebugcommand("<dev string:xd4>");
     }
 
     // Namespace zm_powerup_zombie_blood/zm_powerup_zombie_blood
@@ -174,7 +173,7 @@ function make_zombie_blood_entity() {
         b_return = 0;
         switch (cmd) {
         case #"zombie_blood":
-            zm_devgui::zombie_devgui_give_powerup("<unknown string>", 1);
+            zm_devgui::zombie_devgui_give_powerup("<dev string:x12d>", 1);
             break;
         case #"next_zombie_blood":
             zm_devgui::zombie_devgui_give_powerup(getsubstr(cmd, 5), 0);

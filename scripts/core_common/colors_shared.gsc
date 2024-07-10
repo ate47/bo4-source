@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\spawner_shared.gsc;
 #using scripts\core_common\trigger_shared.gsc;
@@ -200,7 +199,7 @@ function __main__() {
         if (!issubstr(substr, self.script_forcecolor)) {
             return;
         }
-        recordline(self.origin + (0, 0, 25), self.node.origin, _get_debug_color(self.script_forcecolor), "<unknown string>", self);
+        recordline(self.origin + (0, 0, 25), self.node.origin, _get_debug_color(self.script_forcecolor), "<dev string:x38>", self);
         line(self.origin + (0, 0, 25), self.node.origin, _get_debug_color(self.script_forcecolor));
     }
 
@@ -232,7 +231,7 @@ function __main__() {
         case #"p":
             return (1, 0, 1);
         default:
-            println("<unknown string>" + str_color + "<unknown string>");
+            println("<dev string:x41>" + str_color + "<dev string:x50>");
             return (0, 0, 0);
         }
     }
@@ -256,7 +255,7 @@ function __main__() {
             if (isdefined(ai.script_forcecolor)) {
                 color = _get_debug_color(ai.script_forcecolor);
             }
-            recordenttext(ai.currentcolorcode, ai, color, "<unknown string>");
+            recordenttext(ai.currentcolorcode, ai, color, "<dev string:x38>");
             print3d(ai.origin + (0, 0, 25), ai.currentcolorcode, color, 1, 0.7);
             ai try_to_draw_line_to_node();
         }
@@ -275,13 +274,13 @@ function __main__() {
             if (isdefined(level.colornodes_debug_array[team][k])) {
                 a_team_nodes = level.colornodes_debug_array[team][k];
                 for (p = 0; p < a_team_nodes.size; p++) {
-                    print3d(a_team_nodes[p].origin, "<unknown string>" + function_9e72a96(k), color, 1, 0.7);
+                    print3d(a_team_nodes[p].origin, "<dev string:x90>" + function_9e72a96(k), color, 1, 0.7);
                     if (getdvar(#"debug_colornodes", 0) == 2 && isdefined(a_team_nodes[p].script_color_allies_old)) {
                         if (isdefined(a_team_nodes[p].color_user) && isalive(a_team_nodes[p].color_user) && isdefined(a_team_nodes[p].color_user.script_forcecolor)) {
-                            print3d(a_team_nodes[p].origin + (0, 0, -5), "<unknown string>" + a_team_nodes[p].script_color_allies_old, _get_debug_color(a_team_nodes[p].color_user.script_forcecolor), 0.5, 0.4);
+                            print3d(a_team_nodes[p].origin + (0, 0, -5), "<dev string:x90>" + a_team_nodes[p].script_color_allies_old, _get_debug_color(a_team_nodes[p].color_user.script_forcecolor), 0.5, 0.4);
                             continue;
                         }
-                        print3d(a_team_nodes[p].origin + (0, 0, -5), "<unknown string>" + a_team_nodes[p].script_color_allies_old, color, 0.5, 0.4);
+                        print3d(a_team_nodes[p].origin + (0, 0, -5), "<dev string:x90>" + a_team_nodes[p].script_color_allies_old, color, 0.5, 0.4);
                     }
                 }
             }
@@ -348,13 +347,13 @@ function __main__() {
         level endon(#"updated_color_friendlies");
         colored_friendlies = [];
         colors = [];
-        colors[colors.size] = "<unknown string>";
-        colors[colors.size] = "<unknown string>";
-        colors[colors.size] = "<unknown string>";
-        colors[colors.size] = "<unknown string>";
-        colors[colors.size] = "<unknown string>";
-        colors[colors.size] = "<unknown string>";
-        colors[colors.size] = "<unknown string>";
+        colors[colors.size] = "<dev string:x95>";
+        colors[colors.size] = "<dev string:x99>";
+        colors[colors.size] = "<dev string:x9d>";
+        colors[colors.size] = "<dev string:xa1>";
+        colors[colors.size] = "<dev string:xa5>";
+        colors[colors.size] = "<dev string:xa9>";
+        colors[colors.size] = "<dev string:xad>";
         rgb = get_script_palette();
         for (i = 0; i < colors.size; i++) {
             colored_friendlies[colors[i]] = 0;
@@ -379,8 +378,8 @@ function __main__() {
                 overlay.x = 15 + 25 * p;
                 overlay.y = y;
                 overlay setshader(#"white", 16, 16);
-                overlay.alignx = "<unknown string>";
-                overlay.aligny = "<unknown string>";
+                overlay.alignx = "<dev string:xb1>";
+                overlay.aligny = "<dev string:xb8>";
                 overlay.alpha = 1;
                 overlay.color = rgb[colors[i]];
                 level.debug_color_huds[level.debug_color_huds.size] = overlay;
@@ -440,10 +439,10 @@ function goto_current_colorindex() {
     }
     /#
         if (isbot(self)) {
-            println("<unknown string>" + self.name + "<unknown string>");
+            println("<dev string:xc1>" + self.name + "<dev string:xd2>");
             return;
         }
-        println("<unknown string>" + self.export + "<unknown string>");
+        println("<dev string:x10c>" + self.export + "<dev string:xd2>");
     #/
 }
 
@@ -484,7 +483,7 @@ function get_colorcodes_from_trigger(color_team, team) {
         if (!isdefined(level.arrays_of_colorcoded_nodes[team][colorcodes[i]]) && !isdefined(level.colorcoded_volumes[team][colorcodes[i]])) {
             continue;
         }
-        assert(isdefined(color), "<unknown string>" + self getorigin() + "<unknown string>" + colorcodes[i]);
+        assert(isdefined(color), "<dev string:x11e>" + self getorigin() + "<dev string:x133>" + colorcodes[i]);
         colorcodesbycolorindex[color] = colorcodes[i];
         colors[colors.size] = color;
         usable_colorcodes[usable_colorcodes.size] = colorcodes[i];
@@ -588,7 +587,7 @@ function activate_color_trigger_internal(colorcodes, colors, team, colorcodesbyc
         level.arrays_of_colorforced_ai[team][colors[i]] = array::remove_dead(level.arrays_of_colorforced_ai[team][colors[i]]);
         level.lastcolorforced[team][colors[i]] = level.currentcolorforced[team][colors[i]];
         level.currentcolorforced[team][colors[i]] = colorcodesbycolorindex[colors[i]];
-        assert(isdefined(level.arrays_of_colorcoded_nodes[team][level.currentcolorforced[team][colors[i]]]) || isdefined(level.colorcoded_volumes[team][level.currentcolorforced[team][colors[i]]]), "<unknown string>" + colors[i] + "<unknown string>" + team + "<unknown string>");
+        assert(isdefined(level.arrays_of_colorcoded_nodes[team][level.currentcolorforced[team][colors[i]]]) || isdefined(level.colorcoded_volumes[team][level.currentcolorforced[team][colors[i]]]), "<dev string:x14f>" + colors[i] + "<dev string:x171>" + team + "<dev string:x190>");
     }
     ai_array = [];
     for (i = 0; i < colorcodes.size; i++) {
@@ -743,7 +742,7 @@ function issue_color_order_to_ai(colorcode, color, team, ai) {
     /#
         level.colornodes_debug_array[team][colorcode] = nodes;
         if (nodes.size < ai.size) {
-            println("<unknown string>" + ai.size + "<unknown string>" + nodes.size + "<unknown string>");
+            println("<dev string:x1ae>" + ai.size + "<dev string:x1dd>" + nodes.size + "<dev string:x1ea>");
         }
     #/
     counter = 0;
@@ -836,7 +835,7 @@ function color_node_finds_user_from_colorcodes(colorcodestring, team) {
 // Size: 0x150
 function color_node_finds_user_for_colorcode(colorcode, team) {
     color = colorcode[0];
-    assert(colorislegit(color), "<unknown string>" + color + "<unknown string>");
+    assert(colorislegit(color), "<dev string:x1f4>" + color + "<dev string:x1fd>");
     if (!isdefined(level.currentcolorforced[team][color])) {
         return;
     }
@@ -964,7 +963,7 @@ function process_color_order_to_ai(node, trigger, counter) {
         }
         node = get_best_available_new_colored_node();
         if (isdefined(node)) {
-            assert(!isalive(node.color_user), "<unknown string>");
+            assert(!isalive(node.color_user), "<dev string:x20d>");
             if (isalive(self.color_node.color_user) && self.color_node.color_user == self) {
                 self.color_node.color_user = undefined;
             }
@@ -981,10 +980,10 @@ function process_color_order_to_ai(node, trigger, counter) {
 // Size: 0x15c
 function get_best_available_colored_node() {
     assert(self.team != #"neutral");
-    assert(isdefined(self.script_forcecolor), "<unknown string>" + self.export + "<unknown string>");
+    assert(isdefined(self.script_forcecolor), "<dev string:x10c>" + self.export + "<dev string:x22c>");
     colorcode = level.currentcolorforced[self.team][self.script_forcecolor];
     nodes = get_prioritized_colorcoded_nodes(self.team, colorcode, self.script_forcecolor);
-    assert(nodes.size > 0, "<unknown string>" + self.export + "<unknown string>" + self.script_forcecolor + "<unknown string>");
+    assert(nodes.size > 0, "<dev string:x255>" + self.export + "<dev string:x276>" + self.script_forcecolor + "<dev string:x28b>");
     for (i = 0; i < nodes.size; i++) {
         if (!isalive(nodes[i].color_user)) {
             return nodes[i];
@@ -998,10 +997,10 @@ function get_best_available_colored_node() {
 // Size: 0x17c
 function get_best_available_new_colored_node() {
     assert(self.team != #"neutral");
-    assert(isdefined(self.script_forcecolor), "<unknown string>" + self.export + "<unknown string>");
+    assert(isdefined(self.script_forcecolor), "<dev string:x10c>" + self.export + "<dev string:x22c>");
     colorcode = level.currentcolorforced[self.team][self.script_forcecolor];
     nodes = get_prioritized_colorcoded_nodes(self.team, colorcode, self.script_forcecolor);
-    assert(nodes.size > 0, "<unknown string>" + self.export + "<unknown string>" + self.script_forcecolor + "<unknown string>");
+    assert(nodes.size > 0, "<dev string:x255>" + self.export + "<dev string:x276>" + self.script_forcecolor + "<dev string:x28b>");
     nodes = arraysort(nodes, self.origin);
     for (i = 0; i < nodes.size; i++) {
         if (!isalive(nodes[i].color_user)) {
@@ -1096,7 +1095,7 @@ function colorislegit(color) {
 function add_volume_to_global_arrays(colorcode, team) {
     colors = strtok(colorcode, " ");
     for (p = 0; p < colors.size; p++) {
-        assert(!isdefined(level.colorcoded_volumes[team][colors[p]]), "<unknown string>" + colors[p]);
+        assert(!isdefined(level.colorcoded_volumes[team][colors[p]]), "<dev string:x2bb>" + colors[p]);
         level.colorcoded_volumes[team][colors[p]] = self;
     }
 }
@@ -1249,7 +1248,7 @@ function colornode_spawn_reinforcement(classname, fromcolor) {
 // Size: 0x3f6
 function colornode_replace_on_death() {
     level endon(#"kill_color_replacements");
-    assert(isalive(self), "<unknown string>");
+    assert(isalive(self), "<dev string:x2ea>");
     self endon(#"_disable_reinforcement");
     if (self.team == #"axis") {
         return;
@@ -1258,7 +1257,7 @@ function colornode_replace_on_death() {
         return;
     }
     self.replace_on_death = 1;
-    assert(!isdefined(self.respawn_on_death), "<unknown string>" + self.export + "<unknown string>");
+    assert(!isdefined(self.respawn_on_death), "<dev string:x329>" + self.export + "<dev string:x33c>");
     classname = self.classname;
     color = self.script_forcecolor;
     waittillframeend();
@@ -1294,7 +1293,7 @@ function colornode_replace_on_death() {
         }
         players = getplayers();
         correct_colored_guy = arraysort(correct_colored_friendlies, players[0].origin, 1)[0];
-        assert(correct_colored_guy.script_forcecolor != color, "<unknown string>" + color + "<unknown string>");
+        assert(correct_colored_guy.script_forcecolor != color, "<dev string:x364>" + color + "<dev string:x37a>");
         waittillframeend();
         if (!isalive(correct_colored_guy)) {
             continue;
@@ -1377,7 +1376,7 @@ function get_color_spawner(classname, fromcolor) {
     }
     if (!isdefined(level.respawn_spawner)) {
         if (!isdefined(fromcolor) || !specificfromcolor) {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x39f>");
         }
     }
     if (!isdefined(classname)) {
@@ -1472,12 +1471,12 @@ function remove_replace_on_death() {
 // Size: 0x27c
 function set_force_color(_color) {
     color = shortencolor(_color);
-    assert(colorislegit(color), "<unknown string>" + color);
+    assert(colorislegit(color), "<dev string:x4e1>" + color);
     if (!isactor(self) && !isbot(self)) {
         set_force_color_spawner(color);
         return;
     }
-    assert(isalive(self), "<unknown string>");
+    assert(isalive(self), "<dev string:x514>");
     self.script_color_axis = undefined;
     self.script_color_allies = undefined;
     self.old_forcecolor = undefined;
@@ -1511,7 +1510,7 @@ function remove_colorforced_ai_when_dead(ai) {
 // Checksum 0xeb849bc6, Offset: 0x5790
 // Size: 0x6c
 function shortencolor(color) {
-    assert(isdefined(level.colorchecklist[tolower(color)]), "<unknown string>" + color);
+    assert(isdefined(level.colorchecklist[tolower(color)]), "<dev string:x4e1>" + color);
     return level.colorchecklist[tolower(color)];
 }
 
@@ -1652,7 +1651,7 @@ function disable() {
     if (!isdefined(self.script_forcecolor)) {
         return;
     }
-    assert(!isdefined(self.old_forcecolor), "<unknown string>");
+    assert(!isdefined(self.old_forcecolor), "<dev string:x54d>");
     self.old_forcecolor = self.script_forcecolor;
     arrayremovevalue(level.arrays_of_colorforced_ai[self.team][self.script_forcecolor], self);
     left_color_node();
@@ -1693,7 +1692,7 @@ function is_color_ai() {
     // Checksum 0x97d8d3ed, Offset: 0x5e98
     // Size: 0x6a
     function insure_player_does_not_set_forcecolor_twice_in_one_frame() {
-        assert(!isdefined(self.setforcecolor), "<unknown string>");
+        assert(!isdefined(self.setforcecolor), "<dev string:x5ae>");
         self.setforcecolor = 1;
         waittillframeend();
         if (!isalive(self)) {

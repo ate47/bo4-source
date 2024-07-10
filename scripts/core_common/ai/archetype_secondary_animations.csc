@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\callbacks_shared.csc;
 #using scripts\core_common\clientfield_shared.csc;
@@ -91,7 +90,7 @@ function buildandvalidatefacialanimationlist(localclientnum) {
         array::add(deathanims, animation);
     }
     foreach (deathanim in deathanims) {
-        assert(!isanimlooping(localclientnum, deathanim), "<unknown string>" + deathanim + "<unknown string>");
+        assert(!isanimlooping(localclientnum, deathanim), "<dev string:x38>" + deathanim + "<dev string:x60>");
     }
 }
 
@@ -149,7 +148,7 @@ function private function_f5dde44(substate) {
 // Size: 0x5b8
 function private secondaryfacialanimationthink(localclientnum) {
     if (!(isdefined(self.archetype) && (self.archetype == #"human" || self.archetype == #"zombie"))) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x9d>");
         return;
     }
     self endon(#"death");
@@ -222,7 +221,7 @@ function private secondaryfacialanimationthink(localclientnum) {
             animtoplay = array::random(level.__facialanimationslist[self.archetype][nextfacestate]);
             if (isdefined(animoverride)) {
                 animtoplay = animoverride;
-                assert(nextfacestate != "<unknown string>" || !isanimlooping(localclientnum, animtoplay), "<unknown string>" + animtoplay + "<unknown string>");
+                assert(nextfacestate != "<dev string:x10a>" || !isanimlooping(localclientnum, animtoplay), "<dev string:x38>" + animtoplay + "<dev string:x60>");
             }
             applynewfaceanim(localclientnum, animtoplay, clearoncompletion);
             self._currentfacestate = nextfacestate;

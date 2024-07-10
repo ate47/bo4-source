@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;
@@ -39,7 +38,7 @@ function __init__() {
     level.var_5be52892 = 0;
     level.draftstage = 0;
     /#
-        level.var_5fa54158 = "<unknown string>";
+        level.var_5fa54158 = "<dev string:x38>";
     #/
     /#
         level thread function_e8a5f9ba();
@@ -53,10 +52,10 @@ function __init__() {
     // Checksum 0x6986cc86, Offset: 0x440
     // Size: 0x3e
     function function_6bea5139() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x3b>");
+        self endon("<dev string:x3b>");
         wait(5);
-        level.var_5fa54158 = "<unknown string>";
+        level.var_5fa54158 = "<dev string:x38>";
     }
 
     // Namespace draft/draft
@@ -77,7 +76,7 @@ function __init__() {
     // Checksum 0x7f2dd54d, Offset: 0x4f8
     // Size: 0xf0
     function function_947fe5c4(character) {
-        if (character != "<unknown string>") {
+        if (character != "<dev string:x38>") {
             var_44dd7e5d = hash(character);
             playerroletemplatecount = getplayerroletemplatecount(currentsessionmode());
             for (i = 0; i < playerroletemplatecount; i++) {
@@ -95,11 +94,11 @@ function __init__() {
     // Checksum 0x9accf0cd, Offset: 0x5f0
     // Size: 0x132
     function function_e8a5f9ba() {
-        current = getdvarstring(#"character", "<unknown string>");
-        if (current != "<unknown string>") {
+        current = getdvarstring(#"character", "<dev string:x38>");
+        if (current != "<dev string:x38>") {
             while (true) {
                 autoselection = getdvarstring(#"character");
-                if (autoselection != "<unknown string>" && autoselection != current) {
+                if (autoselection != "<dev string:x38>" && autoselection != current) {
                     foreach (player in level.players) {
                         player function_947fe5c4(autoselection);
                     }
@@ -286,7 +285,7 @@ function function_ca33311e() {
 function function_9f408cf7(oldval, newval) {
     player = self;
     /#
-        function_95c03d66("<unknown string>" + player.name + "<unknown string>");
+        function_95c03d66("<dev string:x4e>" + player.name + "<dev string:x58>");
     #/
     player function_4b8d2217(newval);
 }
@@ -319,7 +318,7 @@ function draft_initialize() {
 // Size: 0x64
 function function_c5394b83(starttime, seconds) {
     if (gettime() - starttime > int(seconds * 1000)) {
-        println("<unknown string>");
+        println("<dev string:x66>");
         return true;
     }
     return false;
@@ -333,14 +332,14 @@ function all_players_connected() {
     var_5c6783e9 = getnumexpectedplayers(0);
     if (level.players.size < var_5c6783e9) {
         /#
-            function_95c03d66("<unknown string>" + var_5c6783e9 + "<unknown string>" + level.players.size);
+            function_95c03d66("<dev string:x9d>" + var_5c6783e9 + "<dev string:xc6>" + level.players.size);
         #/
         return false;
     }
     foreach (player in level.players) {
         if (!player function_9b95ed9f() && !isbot(player)) {
             /#
-                function_95c03d66("<unknown string>" + player.name + "<unknown string>");
+                function_95c03d66("<dev string:xde>" + player.name + "<dev string:xfd>");
             #/
             return false;
         }
@@ -381,7 +380,7 @@ function function_21f5a2c1() {
     foreach (team, _ in level.teams) {
         if (teamcount[team] < var_e8cb777) {
             /#
-                function_95c03d66("<unknown string>" + var_e8cb777 + "<unknown string>" + team + "<unknown string>" + teamcount[team]);
+                function_95c03d66("<dev string:x113>" + var_e8cb777 + "<dev string:x14d>" + team + "<dev string:x152>" + teamcount[team]);
             #/
             return false;
         }
@@ -593,7 +592,7 @@ function assign_remaining_players(only_assign_player) {
         teams[player.team][teams[player.team].size] = player;
     }
     foreach (team in teams) {
-        println("<unknown string>" + team[0].team);
+        println("<dev string:x15d>" + team[0].team);
         playersneedingassignment = [];
         foreach (character in validcharacters) {
             character.available = 0;
@@ -602,10 +601,10 @@ function assign_remaining_players(only_assign_player) {
             }
         }
         /#
-            println("<unknown string>");
+            println("<dev string:x18d>");
             foreach (player in team) {
                 characterindex = player player_role::get();
-                println("<unknown string>" + player.name + "<unknown string>" + characterindex);
+                println("<dev string:x1aa>" + player.name + "<dev string:x1bc>" + characterindex);
             }
         #/
         foreach (player in team) {
@@ -635,7 +634,7 @@ function assign_remaining_players(only_assign_player) {
                 playersneedingassignment[playersneedingassignment.size] = player;
             }
         }
-        println("<unknown string>");
+        println("<dev string:x1d1>");
         foreach (player in playersneedingassignment) {
             categories = [];
             categorynames = getarraykeys(categorymap);
@@ -664,7 +663,7 @@ function assign_remaining_players(only_assign_player) {
                 selectedcharacter = array::random(selectedcategory);
             }
             if (validcharacters.size == 0) {
-                println("<unknown string>");
+                println("<dev string:x1f4>");
                 globallogic::exit_level();
                 while (true) {
                     wait(10);
@@ -678,7 +677,7 @@ function assign_remaining_players(only_assign_player) {
             if (isdefined(oldspecialistindex) && oldspecialistindex != selectedcharacter) {
                 player.pers[#"class"] = undefined;
             }
-            println("<unknown string>" + player.name + "<unknown string>" + selectedcharacter);
+            println("<dev string:x227>" + player.name + "<dev string:x243>" + selectedcharacter);
             if (player select_character(selectedcharacter, 1, 1)) {
                 characters[selectedcharacter].available = 0;
             }
@@ -733,7 +732,7 @@ function draft_finalize() {
             assign_remaining_players(player);
         }
         if (player.sessionstate == "playing") {
-            println("<unknown string>" + player.name + "<unknown string>" + player.curclass + "<unknown string>" + player getspecialistindex());
+            println("<dev string:x24b>" + player.name + "<dev string:x266>" + player.curclass + "<dev string:x271>" + player getspecialistindex());
             player loadout::give_loadout(player.team, player.curclass);
             player.pers[#"lastcurclass"] = player.curclass;
             player.pers[#"lastspecialistindex"] = player.curclass;
@@ -766,19 +765,19 @@ function set_draft_stage(draftstage) {
     waitframe(1);
     /#
         if (draftstage == 0) {
-            println("<unknown string>");
+            println("<dev string:x285>");
         } else if (draftstage == 1) {
-            println("<unknown string>");
+            println("<dev string:x29a>");
         } else if (draftstage == 2) {
-            println("<unknown string>");
+            println("<dev string:x2b5>");
         } else if (draftstage == 3) {
-            println("<unknown string>");
+            println("<dev string:x2d9>");
         } else if (draftstage == 5) {
-            println("<unknown string>");
+            println("<dev string:x2ef>");
         } else if (draftstage == 6) {
-            println("<unknown string>");
+            println("<dev string:x30a>");
         } else if (draftstage == 7) {
-            println("<unknown string>");
+            println("<dev string:x325>");
         }
     #/
     if (draftstage == 1) {
@@ -828,7 +827,7 @@ function start() {
     level thread watch_game_ended();
     level thread function_ca33311e();
     waitframe(1);
-    println("<unknown string>");
+    println("<dev string:x33e>");
     set_draft_stage(1);
     set_draft_stage(3);
     if (level.var_5be52892 == 1) {

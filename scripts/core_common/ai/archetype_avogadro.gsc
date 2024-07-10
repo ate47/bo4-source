@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\core_common\ai\systems\blackboard.gsc;
 #using scripts\core_common\ai\systems\behavior_tree_utility.gsc;

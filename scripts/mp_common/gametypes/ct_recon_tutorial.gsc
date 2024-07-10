@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\sensor_dart.gsc;
 #using scripts\mp_common\gametypes\ct_vo.gsc;
 #using scripts\mp_common\gametypes\ct_utils.gsc;

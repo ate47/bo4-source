@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
 #using scripts\core_common\player\player_stats.gsc;
@@ -113,7 +112,7 @@ function on_hero_ability_kill(ability, victimability) {
         if (getdvarint(#"scr_blackjack_sidebet_debug", 0) == 0) {
             return;
         }
-        iprintln("<unknown string>");
+        iprintln("<dev string:x38>");
     }
 
     // Namespace blackjack_challenges/blackjack_challenges
@@ -125,7 +124,7 @@ function on_hero_ability_kill(ability, victimability) {
             return;
         }
         player = self;
-        iprintln("<unknown string>" + player.pers[#"blackjack_specialist_kills"] + "<unknown string>" + player.pers[#"blackjack_unique_specialist_kills"]);
+        iprintln("<dev string:x67>" + player.pers[#"blackjack_specialist_kills"] + "<dev string:x84>" + player.pers[#"blackjack_unique_specialist_kills"]);
     }
 
     // Namespace blackjack_challenges/blackjack_challenges
@@ -136,7 +135,7 @@ function on_hero_ability_kill(ability, victimability) {
         if (getdvarint(#"scr_blackjack_sidebet_debug", 0) == 0) {
             return;
         }
-        iprintln("<unknown string>");
+        iprintln("<dev string:x92>");
     }
 
 #/

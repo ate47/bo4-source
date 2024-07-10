@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\sound_shared.gsc;
 
 #namespace zombie_shared;
@@ -17,9 +16,9 @@ function deleteatlimit() {
 // Checksum 0xd7e94a10, Offset: 0x240
 // Size: 0x1be
 function lookatposition(looktargetpos, lookduration, lookspeed, eyesonly, interruptothers) {
-    assert(isai(self), "<unknown string>");
-    assert(self.a.targetlookinitilized == 1, "<unknown string>");
-    assert(lookspeed == "<unknown string>" || lookspeed == "<unknown string>", "<unknown string>");
+    assert(isai(self), "<dev string:x38>");
+    assert(self.a.targetlookinitilized == 1, "<dev string:x69>");
+    assert(lookspeed == "<dev string:xa9>" || lookspeed == "<dev string:xb2>", "<dev string:xba>");
     if (!isdefined(interruptothers) || interruptothers == "interrupt others" || gettime() > self.a.lookendtime) {
         self.a.looktargetpos = looktargetpos;
         self.a.lookendtime = gettime() + lookduration * 1000;
@@ -372,7 +371,7 @@ function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfun
             returnednote = [[ notetracksfunc ]](flagname, customfunction, var1);
             timetaken = gettime() - time;
             if (timetaken < 0.05) {
-                println(gettime() + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
+                println(gettime() + "<dev string:xde>" + flagname + "<dev string:x12d>" + returnednote + "<dev string:x13b>");
                 wait(0.05 - timetaken);
             }
         }
@@ -473,7 +472,7 @@ function playfootstepeffect(foot, groundtype) {
 function movetooriginovertime(origin, time) {
     self endon(#"killanimscript");
     if (distancesquared(self.origin, origin) > 256 && !self maymovetopoint(origin)) {
-        println("<unknown string>" + origin + "<unknown string>");
+        println("<dev string:x13f>" + origin + "<dev string:x16e>");
         return;
     }
     self.keepclaimednodeingoal = 1;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\gamerep.gsc;
 #using scripts\mp_common\player\player_record.gsc;
@@ -45,7 +44,7 @@ function callback_playerdisconnect() {
     }
     if (isdefined(self.score) && isdefined(self.pers) && isdefined(self.pers[#"team"])) {
         /#
-            print("<unknown string>" + self.pers[#"team"] + "<unknown string>" + self.score);
+            print("<dev string:x38>" + self.pers[#"team"] + "<dev string:x47>" + self.score);
         #/
         level.dropteam += 1;
     }
@@ -107,8 +106,8 @@ function private function_79915d44() {
             nemesisamount = nemesis.value;
         }
     }
-    assert(isdefined(nemesisname), "<unknown string>" + self.name);
-    assert(isstring(nemesisname), "<unknown string>" + nemesisname + "<unknown string>" + self.name);
+    assert(isdefined(nemesisname), "<dev string:x4b>" + self.name);
+    assert(isstring(nemesisname), "<dev string:x6e>" + nemesisname + "<dev string:x79>" + self.name);
     self.pers[#"nemesis_name"] = nemesisname;
     if (nemesisname != "") {
         for (playerindex = 0; playerindex < level.players.size; playerindex++) {

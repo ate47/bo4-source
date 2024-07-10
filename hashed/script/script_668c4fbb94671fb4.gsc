@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_escape_paschal.gsc;
 #using scripts\zm\weapons\zm_weap_spectral_shield.gsc;
 #using scripts\zm\zm_escape_util.gsc;
@@ -1682,13 +1681,13 @@ function private function_3f90c49f() {
                     break;
                 } else {
                     /#
-                        iprintln("cellblock_start_door" + var_24f2b6cf.origin);
+                        iprintln("<dev string:x38>" + var_24f2b6cf.origin);
                     #/
                 }
                 continue;
             }
             /#
-                iprintln("gh_vi_pos" + var_24f2b6cf.origin);
+                iprintln("<dev string:x5f>" + var_24f2b6cf.origin);
             #/
         }
     }
@@ -1779,7 +1778,7 @@ function private function_685fffc4() {
         /#
             if (var_36f8baa8 == 0.25 || var_36f8baa8 == 0.5 || var_36f8baa8 == 0.75 && var_e5b1f8d7 !== var_36f8baa8) {
                 var_e5b1f8d7 = var_36f8baa8;
-                iprintlnbold("ph_gh_pi" + var_36f8baa8);
+                iprintlnbold("<dev string:x80>" + var_36f8baa8);
             }
         #/
         wait(1);
@@ -1791,7 +1790,7 @@ function private function_685fffc4() {
         level.var_acc853e7 clientfield::set("" + #"hash_65da20412fcaf97e", 0);
     }
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x9d>");
     #/
     level.var_acc853e7.var_c95261d = undefined;
     level.var_68fa1bc = undefined;
@@ -1920,7 +1919,7 @@ function private function_b80b6749() {
     level.var_9d950ce5.t_interact setinvisibletoall();
     level.var_4dad7caf clientfield::set("" + #"hash_504d26c38b96651c", 9);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:xc1>");
     #/
     exploder::exploder("fxexp_shower_ambient_ground_fog");
     a_s_firewalls = struct::get_array("sh_ba_fx", "targetname");
@@ -1946,7 +1945,7 @@ function private function_b80b6749() {
         wait(var_c74251a4);
     } else {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xe1>");
         #/
         foreach (e_player in util::get_active_players()) {
             e_player clientfield::increment_to_player("" + #"hash_55539d0cf92a8855");
@@ -3155,7 +3154,7 @@ function private function_1db8a8b2(var_b51b4b08) {
     s_next_pos = struct::get(var_25d70459.target, "targetname");
     self.goalradius = 64;
     v_pos = getclosestpointonnavmesh(var_25d70459.origin, 128, 16);
-    assert(isdefined(v_pos), "<unknown string>" + var_25d70459.origin);
+    assert(isdefined(v_pos), "<dev string:xfa>" + var_25d70459.origin);
     wait(2.9);
     self setgoal(v_pos);
     self waittilltimeout(20, #"goal");
@@ -3435,21 +3434,21 @@ function private function_9b1d9d6a() {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_2d0990d7);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x125>");
+        adddebugcommand("<dev string:x196>");
+        adddebugcommand("<dev string:x219>");
+        adddebugcommand("<dev string:x292>");
+        adddebugcommand("<dev string:x307>");
+        adddebugcommand("<dev string:x384>");
+        adddebugcommand("<dev string:x3f1>");
+        adddebugcommand("<dev string:x470>");
+        adddebugcommand("<dev string:x4e5>");
+        adddebugcommand("<dev string:x556>");
+        adddebugcommand("<dev string:x5cf>");
+        adddebugcommand("<dev string:x645>");
+        adddebugcommand("<dev string:x6c1>");
+        adddebugcommand("<dev string:x733>");
+        adddebugcommand("<dev string:x79f>");
     }
 
     // Namespace namespace_a9aa9d72/namespace_a9aa9d72
@@ -3459,39 +3458,39 @@ function private function_9b1d9d6a() {
     function function_2d0990d7(cmd) {
         switch (cmd) {
         case #"hash_77f372679d07a739":
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x80b>";
             break;
         case #"hash_439f7c3b2be3e69e":
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x813>";
             break;
         case #"hash_4c0666160f60f30c":
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x824>";
             break;
         case #"hash_18772c2e191751b2":
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x830>";
             break;
         case #"hash_476f76510ea19e0a":
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x83a>";
             break;
         case #"hash_7993d72e5b3831ee":
             level.var_d486e9c4 = 1;
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x80b>";
             break;
         case #"hash_619ec063638bb2df":
             level.var_d486e9c4 = 1;
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x813>";
             break;
         case #"hash_63836a8684b4a3db":
             level.var_d486e9c4 = 1;
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x824>";
             break;
         case #"hash_6efe06e0e34fcda1":
             level.var_d486e9c4 = 1;
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x830>";
             break;
         case #"hash_55764ba6b85e2f4d":
             level.var_d486e9c4 = 1;
-            level.var_daaf0e5d = "<unknown string>";
+            level.var_daaf0e5d = "<dev string:x83a>";
             break;
         case #"hash_18be8ae474605ed0":
             level notify(#"hash_1a286cacd101f4eb", {#b_success:0});

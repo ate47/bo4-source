@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
 #using scripts\core_common\player\player_role.gsc;
@@ -28,7 +27,7 @@ function private register_status_effect(status_effect_type) {
 // Size: 0x92
 function function_6f4eaf88(var_756fda07) {
     if (!isdefined(var_756fda07)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     if (!isdefined(var_756fda07.setype)) {
@@ -269,7 +268,7 @@ function private function_47cad1aa(var_756fda07, isadditive) {
     if (isdefined(self.var_121392a1[var_18d16a6b]) && isdefined(self.var_121392a1[var_18d16a6b].duration)) {
         if (setype != 4) {
             if (isplayer(self)) {
-                assert(!isfloat(self.var_121392a1[var_18d16a6b].duration), "<unknown string>");
+                assert(!isfloat(self.var_121392a1[var_18d16a6b].duration), "<dev string:x94>");
                 self applystatuseffect(var_756fda07.namehash, self.var_121392a1[var_18d16a6b].duration, isadditive);
             }
         }

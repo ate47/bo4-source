@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_fasttravel.gsc;
 #using scripts\zm\zm_red_boss_battle.gsc;
 #using scripts\zm_common\zm_trial.gsc;
@@ -66,7 +65,7 @@ function private on_end(round_reset) {
 function private start_boss_fight() {
     level endon(#"end_game", #"hash_7646638df88a3656");
     /#
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x38>");
         level flag::set(#"pap_quest_completed");
         level flag::set(#"zm_red_fasttravel_open");
     #/

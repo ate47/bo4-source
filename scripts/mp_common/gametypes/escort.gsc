@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\mp_common\util.gsc;
@@ -229,7 +228,7 @@ function onendround(var_c1e98979) {
     winningteam = round::get_winning_team();
     /#
         if (isdefined(level.robot.distancetraveled)) {
-            iprintln("escort_robot_path_start" + level.robot.distancetraveled);
+            iprintln("<dev string:x38>" + level.robot.distancetraveled);
         }
     #/
     if (isdefined(level.robot)) {
@@ -244,7 +243,7 @@ function onendround(var_c1e98979) {
 function function_c8a1552d(var_c1e98979) {
     /#
         if (isdefined(level.robot.distancetraveled)) {
-            iprintln("escort_robot_path_start" + level.robot.distancetraveled);
+            iprintln("<dev string:x38>" + level.robot.distancetraveled);
         }
     #/
     switch (var_c1e98979) {
@@ -675,10 +674,10 @@ function delete_on_endgame_sequence() {
 // Size: 0x12c
 function get_robot_path_array() {
     if (isdefined(level.escortrobotpath)) {
-        println("return");
+        println("<dev string:x4f>");
         return level.escortrobotpath;
     }
-    println("<unknown string>");
+    println("<dev string:x74>");
     patharray = [];
     currnode = getnode("escort_robot_path_start", "targetname");
     patharray[patharray.size] = currnode.origin;
@@ -703,7 +702,7 @@ function calc_robot_path_length(robotorigin, patharray) {
         distance += distance(lastpoint, patharray[i]);
         lastpoint = patharray[i];
     }
-    println("<unknown string>" + distance);
+    println("<dev string:x8a>" + distance);
     return distance;
 }
 

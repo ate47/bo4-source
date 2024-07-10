@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_firingrange2_sound;
 
 // Namespace mp_firingrange2_sound/mp_firingrange2_sound

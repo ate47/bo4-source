@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_loadout.gsc;
 #using scripts\zm_common\zm_melee_weapon.gsc;
 #using scripts\core_common\callbacks_shared.gsc;

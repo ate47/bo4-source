@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_sq.gsc;
 #using scripts\zm\zm_orange_util.gsc;
@@ -67,7 +66,7 @@ function main() {
 // Size: 0x1bc
 function ee_tundragun_step1_setup(var_5ea5c94d) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     level.var_97da986d.a_s_targets = struct::get_array("ee_tundragun_target");
     foreach (s_target in level.var_97da986d.a_s_targets) {
@@ -90,7 +89,7 @@ function ee_tundragun_step1_setup(var_5ea5c94d) {
 // Size: 0x64
 function ee_tundragun_step1_cleanup(var_5ea5c94d, ended_early) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x55>");
     #/
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_478e70a97b556206");
@@ -119,12 +118,12 @@ function private function_f16c0259() {
                 }
                 n_time_remaining = (level.var_97da986d.var_7d4c9076 - gettime() - level.var_97da986d.n_start_time) / 1000 / 60;
                 /#
-                    iprintlnbold("<unknown string>" + self.script_int + 1 + "<unknown string>" + n_time_remaining + "<unknown string>");
+                    iprintlnbold("<dev string:x74>" + self.script_int + 1 + "<dev string:x8c>" + n_time_remaining + "<dev string:xaf>");
                 #/
                 level.var_97da986d.var_6f9b20c6++;
                 if (level.var_97da986d.var_6f9b20c6 === level.var_97da986d.a_s_targets.size) {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:xbb>");
                     #/
                     level notify(#"hash_3dcff814c31d2298");
                     level flag::set(#"hash_478e70a97b556206");
@@ -132,7 +131,7 @@ function private function_f16c0259() {
                 continue;
             }
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xed>");
             #/
             function_c19f52ea();
         }
@@ -146,7 +145,7 @@ function private function_f16c0259() {
 function private function_213f1c48() {
     level endon(#"end_game", #"hash_3dcff814c31d2298");
     /#
-        iprintlnbold("<unknown string>" + 1.75 + "<unknown string>");
+        iprintlnbold("<dev string:x12c>" + 1.75 + "<dev string:xaf>");
     #/
     level flag::clear(#"hash_6a417acc02a28c9d");
     level.var_97da986d.n_start_time = gettime();
@@ -154,7 +153,7 @@ function private function_213f1c48() {
         wait(0.5);
     }
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x156>");
     #/
     level flag::set(#"hash_6a417acc02a28c9d");
     function_c19f52ea();
@@ -178,10 +177,10 @@ function private function_c19f52ea() {
 // Size: 0x28c
 function ee_tundragun_step2_setup(var_5ea5c94d) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x195>");
     #/
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x1b3>");
     #/
     s_weapon_pickup = struct::get("ee_tundragun_weapon");
     level.var_97da986d.s_weapon_pickup = s_weapon_pickup;
@@ -210,7 +209,7 @@ function ee_tundragun_step2_setup(var_5ea5c94d) {
 // Size: 0x64
 function ee_tundragun_step2_cleanup(var_5ea5c94d, ended_early) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x1de>");
     #/
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_6b5e9a7b23ad25a5");

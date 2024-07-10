@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\sound_shared.gsc;
 #using scripts\core_common\values_shared.gsc;
@@ -92,7 +91,7 @@ function damageeffectarea(owner, position, radius, height, killcament) {
     gaseffectarea = spawn("trigger_radius", position, 0, radius, height);
     /#
         if (getdvarint(#"scr_draw_triggers", 0)) {
-            level thread util::drawcylinder(position, radius, height, undefined, "<unknown string>");
+            level thread util::drawcylinder(position, radius, height, undefined, "<dev string:x38>");
         }
     #/
     if (isdefined(level.dogsonflashdogs)) {

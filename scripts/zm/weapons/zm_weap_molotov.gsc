@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_equipment.gsc;
 #using scripts\zm_common\zm.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -32,7 +31,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_molotov/zm_weap_molotov
-// Params c, eflags: 0x0
+// Params 12, eflags: 0x0
 // Checksum 0x29edc8a3, Offset: 0x188
 // Size: 0x1ee
 function function_32766bb7(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

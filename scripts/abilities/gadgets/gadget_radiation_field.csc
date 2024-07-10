@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\postfx_shared.csc;
 #using scripts\core_common\fx_shared.csc;
@@ -58,7 +57,7 @@ function self_destruct_start(localclientnum, oldval, newval, bnewent, binitialsn
         self.owner util::waittill_dobj(localclientnum);
         self function_a225797d(localclientnum, var_7e4d34a7, 1);
         /#
-            function_1a7aaaa8(localclientnum, "<unknown string>" + self getentitynumber());
+            function_1a7aaaa8(localclientnum, "<dev string:x38>" + self getentitynumber());
         #/
         if (isdefined(localplayer)) {
             if (isdefined(localplayer.var_a5afc54b)) {
@@ -91,7 +90,7 @@ function self_destruct_start(localclientnum, oldval, newval, bnewent, binitialsn
     function function_1a7aaaa8(localclientnum, text) {
         if (getdvarint(#"hash_4e684995fef4afd7", 0) != 0) {
             inkillcam = function_1cbf351b(localclientnum);
-            println("<unknown string>" + text + (inkillcam ? "<unknown string>" : "<unknown string>"));
+            println("<dev string:x6a>" + text + (inkillcam ? "<dev string:x9d>" : "<dev string:xad>"));
         }
     }
 
@@ -357,7 +356,7 @@ function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap
     var_3880aff8 = self getentitynumber();
     function_6a1db576(localclientnum, var_7e4d34a7, var_3880aff8);
     /#
-        function_1a7aaaa8(localclientnum, "<unknown string>" + self getentitynumber());
+        function_1a7aaaa8(localclientnum, "<dev string:xb0>" + self getentitynumber());
     #/
     if (newval) {
         wait(0.2);
@@ -370,7 +369,7 @@ function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap
                 }
                 self function_a225797d(localclientnum, var_7e4d34a7, 0);
                 /#
-                    function_1a7aaaa8(localclientnum, "<unknown string>" + self getentitynumber());
+                    function_1a7aaaa8(localclientnum, "<dev string:xd5>" + self getentitynumber());
                 #/
                 player = function_5c10bd79(localclientnum);
                 if (isdefined(player.var_a5afc54b)) {
@@ -401,7 +400,7 @@ function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap
         }
     }
     /#
-        function_1a7aaaa8(localclientnum, "<unknown string>" + self getentitynumber());
+        function_1a7aaaa8(localclientnum, "<dev string:x104>" + self getentitynumber());
     #/
 }
 
@@ -412,24 +411,24 @@ function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_6a1db576(localclientnum, var_7e4d34a7, var_3880aff8) {
     inkillcam = function_1cbf351b(localclientnum);
     /#
-        function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);
+        function_1a7aaaa8(localclientnum, "<dev string:x13c>" + var_3880aff8);
     #/
     if (isdefined(level.var_17dcd732[localclientnum][var_7e4d34a7])) {
         /#
-            function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);
+            function_1a7aaaa8(localclientnum, "<dev string:x163>" + var_3880aff8);
         #/
         level.var_17dcd732[localclientnum][var_7e4d34a7] delete();
     }
     if (isdefined(level.var_d0df06e9[localclientnum][var_7e4d34a7])) {
         /#
-            function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);
+            function_1a7aaaa8(localclientnum, "<dev string:x1a0>" + var_3880aff8);
         #/
         stopfx(localclientnum, level.var_d0df06e9[localclientnum][var_7e4d34a7]);
         level.var_d0df06e9[localclientnum][var_7e4d34a7] = undefined;
         return;
     }
     /#
-        function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);
+        function_1a7aaaa8(localclientnum, "<dev string:x1d5>" + var_3880aff8);
     #/
 }
 
@@ -453,7 +452,7 @@ function function_3caac9e(localclientnum) {
 function function_95252d1f(localclientnum, var_7e4d34a7, script_mover) {
     event = #"hash_5eb05b2054c53425" + var_7e4d34a7;
     /#
-        function_1a7aaaa8(localclientnum, "<unknown string>" + script_mover getentitynumber());
+        function_1a7aaaa8(localclientnum, "<dev string:x20f>" + script_mover getentitynumber());
     #/
     level notify(event);
     level endon(event);

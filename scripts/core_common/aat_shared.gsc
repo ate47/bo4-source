@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\spawner_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -83,15 +82,15 @@ function private function_33f0ddd3(s_event) {
     // Size: 0x174
     function private setup_devgui() {
         waittillframeend();
-        setdvar(#"aat_acquire_devgui", "<unknown string>");
-        aat_devgui_base = "<unknown string>";
+        setdvar(#"aat_acquire_devgui", "<dev string:x38>");
+        aat_devgui_base = "<dev string:x3b>";
         foreach (key, v in level.aat) {
-            if (key != "<unknown string>") {
+            if (key != "<dev string:x55>") {
                 name = function_9e72a96(key);
-                adddebugcommand(aat_devgui_base + name + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "<unknown string>");
+                adddebugcommand(aat_devgui_base + name + "<dev string:x5c>" + "<dev string:x66>" + "<dev string:x7b>" + name + "<dev string:x7f>");
             }
         }
-        adddebugcommand(aat_devgui_base + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
+        adddebugcommand(aat_devgui_base + "<dev string:x85>" + "<dev string:x66>" + "<dev string:x7b>" + "<dev string:x55>" + "<dev string:x7f>");
         level thread aat_devgui_think();
     }
 
@@ -102,9 +101,9 @@ function private function_33f0ddd3(s_event) {
     function private aat_devgui_think() {
         for (;;) {
             aat_name = getdvarstring(#"aat_acquire_devgui");
-            if (aat_name != "<unknown string>") {
+            if (aat_name != "<dev string:x38>") {
                 for (i = 0; i < level.players.size; i++) {
-                    if (aat_name == "<unknown string>") {
+                    if (aat_name == "<dev string:x55>") {
                         level.players[i] thread remove(level.players[i] getcurrentweapon());
                     } else {
                         level.players[i] thread acquire(level.players[i] getcurrentweapon(), aat_name);
@@ -112,7 +111,7 @@ function private function_33f0ddd3(s_event) {
                     level.players[i] thread aat_set_debug_text(aat_name, 0, 0, 0);
                 }
             }
-            setdvar(#"aat_acquire_devgui", "<unknown string>");
+            setdvar(#"aat_acquire_devgui", "<dev string:x38>");
             wait(0.5);
         }
     }
@@ -127,13 +126,13 @@ function private function_33f0ddd3(s_event) {
         if (!isdefined(self.aat_debug_text)) {
             return;
         }
-        percentage = "<unknown string>";
-        if (isdefined(level.aat[name]) && name != "<unknown string>") {
+        percentage = "<dev string:x9c>";
+        if (isdefined(level.aat[name]) && name != "<dev string:x55>") {
             percentage = level.aat[name].percentage;
         }
         self.aat_debug_text fadeovertime(0.05);
         self.aat_debug_text.alpha = 1;
-        self.aat_debug_text settext("<unknown string>" + name + "<unknown string>" + percentage);
+        self.aat_debug_text settext("<dev string:xa2>" + name + "<dev string:xaa>" + percentage);
         if (success) {
             self.aat_debug_text.color = (0, 1, 0);
         } else if (success_reroll) {
@@ -146,7 +145,7 @@ function private function_33f0ddd3(s_event) {
         wait(1);
         self.aat_debug_text fadeovertime(1);
         self.aat_debug_text.color = (1, 1, 1);
-        if ("<unknown string>" == name) {
+        if ("<dev string:x55>" == name) {
             self.aat_debug_text.alpha = 0;
         }
     }
@@ -194,7 +193,7 @@ function function_3895d220(weapon) {
 }
 
 // Namespace aat/aat_shared
-// Params d, eflags: 0x0
+// Params 13, eflags: 0x0
 // Checksum 0x762ed1e9, Offset: 0xc18
 // Size: 0x6dc
 function aat_response(death, inflictor, attacker, damage, flags, mod, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -301,24 +300,24 @@ function aat_response(death, inflictor, attacker, damage, flags, mod, weapon, vp
 // Checksum 0xc6b5d86d, Offset: 0x1300
 // Size: 0x61a
 function register(name, percentage, cooldown_time_entity, cooldown_time_attacker, cooldown_time_global, occurs_on_death, result_func, damage_feedback_icon, damage_feedback_sound, validation_func, catalyst) {
-    assert(isdefined(level.aat_initializing) && level.aat_initializing, "<unknown string>");
-    assert(isdefined(name), "<unknown string>");
-    assert("<unknown string>" != name, "<unknown string>" + "<unknown string>" + "<unknown string>");
-    assert(!isdefined(level.aat[name]), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(percentage), "<unknown string>" + name + "<unknown string>");
-    assert(0 <= percentage && 1 > percentage, "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(cooldown_time_entity), "<unknown string>" + name + "<unknown string>");
-    assert(0 <= cooldown_time_entity, "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(cooldown_time_entity), "<unknown string>" + name + "<unknown string>");
-    assert(0 <= cooldown_time_entity, "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(cooldown_time_global), "<unknown string>" + name + "<unknown string>");
-    assert(0 <= cooldown_time_global, "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(occurs_on_death), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(result_func), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(damage_feedback_icon), "<unknown string>" + name + "<unknown string>");
-    assert(isstring(damage_feedback_icon), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(damage_feedback_sound), "<unknown string>" + name + "<unknown string>");
-    assert(isstring(damage_feedback_sound), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.aat_initializing) && level.aat_initializing, "<dev string:xb3>");
+    assert(isdefined(name), "<dev string:x120>");
+    assert("<dev string:x55>" != name, "<dev string:x148>" + "<dev string:x55>" + "<dev string:x16c>");
+    assert(!isdefined(level.aat[name]), "<dev string:x1a5>" + name + "<dev string:x1be>");
+    assert(isdefined(percentage), "<dev string:x1a5>" + name + "<dev string:x1de>");
+    assert(0 <= percentage && 1 > percentage, "<dev string:x1a5>" + name + "<dev string:x1fe>");
+    assert(isdefined(cooldown_time_entity), "<dev string:x1a5>" + name + "<dev string:x249>");
+    assert(0 <= cooldown_time_entity, "<dev string:x1a5>" + name + "<dev string:x273>");
+    assert(isdefined(cooldown_time_entity), "<dev string:x1a5>" + name + "<dev string:x2b8>");
+    assert(0 <= cooldown_time_entity, "<dev string:x1a5>" + name + "<dev string:x2e4>");
+    assert(isdefined(cooldown_time_global), "<dev string:x1a5>" + name + "<dev string:x32b>");
+    assert(0 <= cooldown_time_global, "<dev string:x1a5>" + name + "<dev string:x355>");
+    assert(isdefined(occurs_on_death), "<dev string:x1a5>" + name + "<dev string:x39a>");
+    assert(isdefined(result_func), "<dev string:x1a5>" + name + "<dev string:x3bf>");
+    assert(isdefined(damage_feedback_icon), "<dev string:x1a5>" + name + "<dev string:x3e0>");
+    assert(isstring(damage_feedback_icon), "<dev string:x1a5>" + name + "<dev string:x40a>");
+    assert(isdefined(damage_feedback_sound), "<dev string:x1a5>" + name + "<dev string:x435>");
+    assert(isstring(damage_feedback_sound), "<dev string:x1a5>" + name + "<dev string:x460>");
     level.aat[name] = spawnstruct();
     level.aat[name].name = name;
     level.aat[name].hash_id = stathash(name);
@@ -348,11 +347,11 @@ function register_immunity(name, archetype, immune_trigger, immune_result_direct
     while (level.aat_initializing !== 0) {
         waitframe(1);
     }
-    assert(isdefined(name), "<unknown string>");
-    assert(isdefined(archetype), "<unknown string>");
-    assert(isdefined(immune_trigger), "<unknown string>");
-    assert(isdefined(immune_result_direct), "<unknown string>");
-    assert(isdefined(immune_result_indirect), "<unknown string>");
+    assert(isdefined(name), "<dev string:x120>");
+    assert(isdefined(archetype), "<dev string:x48c>");
+    assert(isdefined(immune_trigger), "<dev string:x4b9>");
+    assert(isdefined(immune_result_direct), "<dev string:x4eb>");
+    assert(isdefined(immune_result_indirect), "<dev string:x523>");
     if (!isdefined(level.aat[name].immune_trigger)) {
         level.aat[name].immune_trigger = [];
     }
@@ -372,14 +371,14 @@ function register_immunity(name, archetype, immune_trigger, immune_result_direct
 // Checksum 0x70bdb19, Offset: 0x1b28
 // Size: 0x172
 function finalize_clientfields() {
-    println("<unknown string>");
+    println("<dev string:x55d>");
     if (level.aat.size > 1) {
         array::alphabetize(level.aat);
         i = 0;
         foreach (aat in level.aat) {
             aat.clientfield_index = i;
             i++;
-            println("<unknown string>" + aat.name);
+            println("<dev string:x579>" + aat.name);
         }
         n_bits = getminbitcountfornum(level.aat.size - 1);
         clientfield::register("toplayer", "aat_current", 1, n_bits, "int");
@@ -410,14 +409,14 @@ function is_exempt_weapon(weapon) {
 // Checksum 0xca71f9f9, Offset: 0x1d30
 // Size: 0x25e
 function register_reroll(name, count, active_func, damage_feedback_icon) {
-    assert(isdefined(name), "<unknown string>");
-    assert("<unknown string>" != name, "<unknown string>" + "<unknown string>" + "<unknown string>");
-    assert(!isdefined(level.aat[name]), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(count), "<unknown string>" + name + "<unknown string>");
-    assert(0 < count, "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(active_func), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(damage_feedback_icon), "<unknown string>" + name + "<unknown string>");
-    assert(isstring(damage_feedback_icon), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(name), "<dev string:x580>");
+    assert("<dev string:x55>" != name, "<dev string:x5b0>" + "<dev string:x55>" + "<dev string:x16c>");
+    assert(!isdefined(level.aat[name]), "<dev string:x5db>" + name + "<dev string:x1be>");
+    assert(isdefined(count), "<dev string:x601>" + name + "<dev string:x628>");
+    assert(0 < count, "<dev string:x601>" + name + "<dev string:x643>");
+    assert(isdefined(active_func), "<dev string:x601>" + name + "<dev string:x665>");
+    assert(isdefined(damage_feedback_icon), "<dev string:x601>" + name + "<dev string:x3e0>");
+    assert(isstring(damage_feedback_icon), "<dev string:x601>" + name + "<dev string:x40a>");
     level.aat_reroll[name] = spawnstruct();
     level.aat_reroll[name].name = name;
     level.aat_reroll[name].count = count;
@@ -461,15 +460,15 @@ function acquire(weapon, name, var_77cf85b7) {
     if (!(isdefined(level.aat_in_use) && level.aat_in_use)) {
         return;
     }
-    assert(isdefined(weapon), "<unknown string>");
-    assert(weapon != level.weaponnone, "<unknown string>");
+    assert(isdefined(weapon), "<dev string:x686>");
+    assert(weapon != level.weaponnone, "<dev string:x6af>");
     weapon = function_702fb333(weapon);
     if (is_exempt_weapon(weapon)) {
         return;
     }
     if (isdefined(name)) {
-        assert("<unknown string>" != name, "<unknown string>" + "<unknown string>" + "<unknown string>");
-        assert(isdefined(level.aat[name]), "<unknown string>" + name + "<unknown string>");
+        assert("<dev string:x55>" != name, "<dev string:x6e5>" + "<dev string:x55>" + "<dev string:x16c>");
+        assert(isdefined(level.aat[name]), "<dev string:x708>" + name + "<dev string:x720>");
         self.aat[weapon] = name;
     } else {
         keys = getarraykeys(level.aat);
@@ -513,8 +512,8 @@ function remove(weapon) {
     if (!(isdefined(level.aat_in_use) && level.aat_in_use)) {
         return;
     }
-    assert(isdefined(weapon), "<unknown string>");
-    assert(weapon != level.weaponnone, "<unknown string>");
+    assert(isdefined(weapon), "<dev string:x739>");
+    assert(weapon != level.weaponnone, "<dev string:x761>");
     weapon = function_702fb333(weapon);
     self.aat[weapon] = undefined;
     self.var_b01de37[weapon] = undefined;

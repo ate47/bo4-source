@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_342e0d1a78771d3f;
 #using script_5afbda9de6000ad9;
 #using scripts\core_common\lui_shared.gsc;
@@ -1032,7 +1031,7 @@ function targeting_hud_think(rocket) {
                     level.remote_missile_targets remote_missile_targets::set_extra_target_2(self, target getentitynumber());
                     continue;
                 }
-                assertmsg("<unknown string>");
+                assertmsg("<dev string:x38>");
             }
         }
         enemies = getplayers();

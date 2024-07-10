@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\killcam_shared.gsc;
 #using scripts\core_common\globallogic\globallogic_score.gsc;
 #using scripts\core_common\damagefeedback_shared.gsc;

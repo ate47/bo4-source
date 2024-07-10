@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\trophy_system.gsc;
 #using scripts\weapons\tabun.gsc;
@@ -399,7 +398,7 @@ function drop_for_death(attacker, sweapon, smeansofdeath, var_1940b58e = 1) {
     if (!isdefined(weapon)) {
         /#
             if (getdvarint(#"scr_dropdebug", 0) == 1) {
-                println("<unknown string>");
+                println("<dev string:x38>");
             }
         #/
         return;
@@ -407,7 +406,7 @@ function drop_for_death(attacker, sweapon, smeansofdeath, var_1940b58e = 1) {
     if (weapon == level.weaponnone) {
         /#
             if (getdvarint(#"scr_dropdebug", 0) == 1) {
-                println("<unknown string>");
+                println("<dev string:x5a>");
             }
         #/
         return;
@@ -415,7 +414,7 @@ function drop_for_death(attacker, sweapon, smeansofdeath, var_1940b58e = 1) {
     if (!self hasweapon(weapon)) {
         /#
             if (getdvarint(#"scr_dropdebug", 0) == 1) {
-                println("<unknown string>" + weapon.name + "<unknown string>");
+                println("<dev string:x7f>" + weapon.name + "<dev string:xad>");
             }
         #/
         return;
@@ -423,7 +422,7 @@ function drop_for_death(attacker, sweapon, smeansofdeath, var_1940b58e = 1) {
     if (!self anyammoforweaponmodes(weapon)) {
         /#
             if (getdvarint(#"scr_dropdebug", 0) == 1) {
-                println("<unknown string>");
+                println("<dev string:xb1>");
             }
         #/
         return;
@@ -440,7 +439,7 @@ function drop_for_death(attacker, sweapon, smeansofdeath, var_1940b58e = 1) {
     if (!clip_and_stock_ammo && !(isdefined(weapon.unlimitedammo) && weapon.unlimitedammo)) {
         /#
             if (getdvarint(#"scr_dropdebug", 0) == 1) {
-                println("<unknown string>");
+                println("<dev string:xe0>");
             }
         #/
         return;
@@ -455,13 +454,13 @@ function drop_for_death(attacker, sweapon, smeansofdeath, var_1940b58e = 1) {
     item = self dropitem(weapon);
     if (!isdefined(item)) {
         /#
-            iprintlnbold("<unknown string>" + weapon.name);
+            iprintlnbold("<dev string:xfe>" + weapon.name);
         #/
         return;
     }
     /#
         if (getdvarint(#"scr_dropdebug", 0) == 1) {
-            println("<unknown string>" + weapon.name);
+            println("<dev string:x127>" + weapon.name);
         }
     #/
     drop_limited_weapon(weapon, self, item);
@@ -586,7 +585,7 @@ function watch_pickup() {
     }
     /#
         if (getdvarint(#"scr_dropdebug", 0) == 1) {
-            println("<unknown string>" + weapon.name + "<unknown string>" + isdefined(self.ownersattacker));
+            println("<dev string:x13a>" + weapon.name + "<dev string:x14f>" + isdefined(self.ownersattacker));
         }
     #/
     assert(isdefined(player.tookweaponfrom));

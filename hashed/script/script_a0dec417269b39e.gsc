@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\zm_common\trials\zm_trial_crawlers_only.gsc;
@@ -82,7 +81,7 @@ function private function_6bf7d04f(var_c766fbe6) {
         var_c766fbe6[#"stoker"] = int(ceil(var_c766fbe6[#"stoker"] * 1.3));
         var_c766fbe6[#"catalyst"] = int(ceil(var_c766fbe6[#"catalyst"] * 1.3));
     } else if (level.round_number == 30) {
-        assert(level.var_d77a6967.name == #"hash_37f11d9a44a08099", "<unknown string>");
+        assert(level.var_d77a6967.name == #"hash_37f11d9a44a08099", "<dev string:x38>");
         if (getgametypesetting("zmTrialsVariant")) {
             level.var_43fb4347 = "walk";
             level.var_102b1301 = "run";

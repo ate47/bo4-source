@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\util.gsc;
 #using scripts\zm_common\gametypes\spawnlogic.gsc;
 #using scripts\zm_common\gametypes\globallogic_utils.gsc;
@@ -47,16 +46,16 @@ function default_onforfeit(team) {
         setdvar(#"ui_text_endreason", endreason);
         winner = getwinningteamfromloser(team);
     } else {
-        assert(isdefined(team), "<unknown string>");
-        assert(0, "<unknown string>" + team + "<unknown string>");
+        assert(isdefined(team), "<dev string:x38>");
+        assert(0, "<dev string:x58>" + team + "<dev string:x6a>");
         winner = "tie";
     }
     level.forcedend = 1;
     /#
         if (isplayer(winner)) {
-            print("<unknown string>" + winner getxuid() + "<unknown string>" + winner.name + "<unknown string>");
+            print("<dev string:x83>" + winner getxuid() + "<dev string:x94>" + winner.name + "<dev string:x98>");
         } else {
-            globallogic_utils::logteamwinstring("<unknown string>", winner);
+            globallogic_utils::logteamwinstring("<dev string:x9c>", winner);
         }
     #/
     thread globallogic::endgame(winner, endreason);
@@ -111,9 +110,9 @@ function default_ononeleftevent(team) {
         winner = globallogic_score::gethighestscoringplayer();
         /#
             if (isdefined(winner)) {
-                print("<unknown string>" + winner.name);
+                print("<dev string:xa6>" + winner.name);
             } else {
-                print("<unknown string>");
+                print("<dev string:xbe>");
             }
         #/
         thread globallogic::endgame(winner, #"mp_enemies_eliminated");
@@ -142,9 +141,9 @@ function default_ontimelimit() {
         winner = globallogic_score::gethighestscoringplayer();
         /#
             if (isdefined(winner)) {
-                print("<unknown string>" + winner.name);
+                print("<dev string:xdd>" + winner.name);
             } else {
-                print("<unknown string>");
+                print("<dev string:xf1>");
             }
         #/
     }
@@ -168,9 +167,9 @@ function default_onscorelimit() {
         winner = globallogic_score::gethighestscoringplayer();
         /#
             if (isdefined(winner)) {
-                print("<unknown string>" + winner.name);
+                print("<dev string:x103>" + winner.name);
             } else {
-                print("<unknown string>");
+                print("<dev string:x117>");
             }
         #/
     }
@@ -190,7 +189,7 @@ function default_onspawnspectator(origin, angles) {
     }
     spawnpointname = "mp_global_intermission";
     spawnpoints = getentarray(spawnpointname, "classname");
-    assert(spawnpoints.size, "<unknown string>");
+    assert(spawnpoints.size, "<dev string:x129>");
     spawnpoint = spawnlogic::getspawnpoint_random(spawnpoints);
     self spawn(spawnpoint.origin, spawnpoint.angles);
 }
@@ -208,7 +207,7 @@ function default_onspawnintermission() {
         return;
     }
     /#
-        util::error("<unknown string>" + spawnpointname + "<unknown string>");
+        util::error("<dev string:x185>" + spawnpointname + "<dev string:x18b>");
     #/
 }
 

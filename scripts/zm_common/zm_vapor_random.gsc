@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_perks.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -368,7 +367,7 @@ function function_20fe0559() {
 // Size: 0x184
 function function_44481969() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     array::thread_all(level.var_93995710, &function_8dd97732);
     var_8dd5d69f = array::exclude(level.var_93995710, level.var_8feb4083);
@@ -498,10 +497,10 @@ function function_bb1ac745(s_altar) {
     // Size: 0xe4
     function private function_5d55ce5f() {
         level waittill(#"start_zombie_round_logic");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x53>");
         while (true) {
-            cmd = getdvarstring(#"hash_655adfd9dc05d377", "<unknown string>");
-            setdvar(#"hash_655adfd9dc05d377", "<unknown string>");
+            cmd = getdvarstring(#"hash_655adfd9dc05d377", "<dev string:xb8>");
+            setdvar(#"hash_655adfd9dc05d377", "<dev string:xb8>");
             switch (cmd) {
             case #"cycle_altar":
                 function_44481969();

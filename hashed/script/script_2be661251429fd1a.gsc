@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\localheal.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\killstreaks\killstreakrules_shared.gsc;
@@ -300,7 +299,7 @@ function function_c98fad6b(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x38>";
         #/
         return undefined;
     }
@@ -311,7 +310,7 @@ function function_c98fad6b(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x48>";
         #/
         return undefined;
     }
@@ -322,7 +321,7 @@ function function_c98fad6b(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x58>";
         #/
         return undefined;
     }
@@ -356,7 +355,7 @@ function function_bcb5ef11(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x6e>";
         #/
         return undefined;
     }
@@ -368,7 +367,7 @@ function function_bcb5ef11(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x78>";
         #/
         return undefined;
     }
@@ -378,7 +377,7 @@ function function_bcb5ef11(actionparams) {
         } else if (!isarray(actionparams.debug)) {
             actionparams.debug = array(actionparams.debug);
         }
-        actionparams.debug[actionparams.debug.size] = "<unknown string>" + self.health + "<unknown string>" + self.maxhealth;
+        actionparams.debug[actionparams.debug.size] = "<dev string:x86>" + self.health + "<dev string:x91>" + self.maxhealth;
     #/
     healthratio = self.health / self.maxhealth;
     if (healthratio > self.bot.tacbundle.var_ac1c818f) {
@@ -393,7 +392,7 @@ function function_bcb5ef11(actionparams) {
         } else if (!isarray(actionparams.debug)) {
             actionparams.debug = array(actionparams.debug);
         }
-        actionparams.debug[actionparams.debug.size] = "<unknown string>" + power;
+        actionparams.debug[actionparams.debug.size] = "<dev string:x95>" + power;
     #/
     return 100;
 }
@@ -417,7 +416,7 @@ function function_daa183ff(actionparams, var_2a213a99, var_b5aae32c) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x58>";
         #/
         return undefined;
     }
@@ -432,7 +431,7 @@ function function_daa183ff(actionparams, var_2a213a99, var_b5aae32c) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x9f>";
         #/
         return undefined;
     }
@@ -444,7 +443,7 @@ function function_daa183ff(actionparams, var_2a213a99, var_b5aae32c) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xab>";
         #/
         return undefined;
     }
@@ -456,7 +455,7 @@ function function_daa183ff(actionparams, var_2a213a99, var_b5aae32c) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xcf>";
         #/
         return undefined;
     }
@@ -494,7 +493,7 @@ function function_369cb1a5(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -506,7 +505,7 @@ function function_369cb1a5(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xf9>";
         #/
         return undefined;
     }
@@ -518,7 +517,7 @@ function function_369cb1a5(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x105>";
         #/
         return undefined;
     }
@@ -545,7 +544,7 @@ function function_65b9c7c2(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x58>";
         #/
         return undefined;
     }
@@ -556,7 +555,7 @@ function function_65b9c7c2(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x118>";
         #/
         return undefined;
     }
@@ -567,7 +566,7 @@ function function_65b9c7c2(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x6e>";
         #/
         return undefined;
     }
@@ -579,7 +578,7 @@ function function_65b9c7c2(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x130>";
         #/
         return undefined;
     }
@@ -627,7 +626,7 @@ function function_97e7772c(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x58>";
         #/
         return undefined;
     }
@@ -638,7 +637,7 @@ function function_97e7772c(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x118>";
         #/
         return undefined;
     }
@@ -660,7 +659,7 @@ function function_554a6177(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -672,7 +671,7 @@ function function_554a6177(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xf9>";
         #/
         return undefined;
     }
@@ -684,7 +683,7 @@ function function_554a6177(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x105>";
         #/
         return undefined;
     }
@@ -699,7 +698,7 @@ function function_554a6177(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x13d>";
         #/
         return undefined;
     }
@@ -716,7 +715,7 @@ function use_grapple(actionparams) {
     weapon = actionparams.weapon;
     if (!isdefined(weapon)) {
         /#
-            self botprinterror("<unknown string>" + "<unknown string>");
+            self botprinterror("<dev string:x14c>" + "<dev string:x169>");
         #/
         self waittill(#"hash_347a612b61067eb3");
         return;
@@ -758,7 +757,7 @@ function function_9a0eb4f0(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -770,7 +769,7 @@ function function_9a0eb4f0(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x17e>";
         #/
         return undefined;
     }
@@ -783,7 +782,7 @@ function function_9a0eb4f0(actionparams) {
                 } else if (!isarray(actionparams.debug)) {
                     actionparams.debug = array(actionparams.debug);
                 }
-                actionparams.debug[actionparams.debug.size] = "<unknown string>";
+                actionparams.debug[actionparams.debug.size] = "<dev string:x195>";
             #/
             return undefined;
         }
@@ -806,7 +805,7 @@ function function_4a95cdaf(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -818,7 +817,7 @@ function function_4a95cdaf(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xf9>";
         #/
         return undefined;
     }
@@ -830,7 +829,7 @@ function function_4a95cdaf(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1b4>";
         #/
         return undefined;
     }
@@ -841,7 +840,7 @@ function function_4a95cdaf(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1c5>";
         #/
         return undefined;
     }
@@ -863,7 +862,7 @@ function function_e43892c4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -875,7 +874,7 @@ function function_e43892c4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xf9>";
         #/
         return undefined;
     }
@@ -887,7 +886,7 @@ function function_e43892c4(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x105>";
         #/
         return undefined;
     }
@@ -903,7 +902,7 @@ function function_79988b4b(actionparams) {
     weapon = actionparams.weapon;
     if (!isdefined(weapon)) {
         /#
-            self botprinterror("<unknown string>" + "<unknown string>");
+            self botprinterror("<dev string:x1d3>" + "<dev string:x169>");
         #/
         self waittill(#"hash_347a612b61067eb3");
         return;
@@ -939,7 +938,7 @@ function function_17a8721f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -951,7 +950,7 @@ function function_17a8721f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x17e>";
         #/
         return undefined;
     }
@@ -966,7 +965,7 @@ function function_17a8721f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x13d>";
         #/
         return undefined;
     }
@@ -979,7 +978,7 @@ function function_17a8721f(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1f7>";
         #/
         return undefined;
     }
@@ -995,7 +994,7 @@ function function_76c8b8e8(actionparams) {
     weapon = actionparams.weapon;
     if (!isdefined(weapon)) {
         /#
-            self botprinterror("<unknown string>" + "<unknown string>");
+            self botprinterror("<dev string:x215>" + "<dev string:x169>");
         #/
         self waittill(#"hash_347a612b61067eb3");
         return;
@@ -1029,7 +1028,7 @@ function function_7fa22be8(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -1059,7 +1058,7 @@ function function_7fa22be8(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x236>";
         #/
         return undefined;
     }
@@ -1081,7 +1080,7 @@ function function_1c7ea685(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -1103,7 +1102,7 @@ function function_1c7ea685(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x259>";
         #/
         return undefined;
     }
@@ -1121,7 +1120,7 @@ function function_1c7ea685(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x26d>";
         #/
         return undefined;
     }
@@ -1143,7 +1142,7 @@ function function_d18123f8(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xe9>";
         #/
         return undefined;
     }
@@ -1155,7 +1154,7 @@ function function_d18123f8(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xf9>";
         #/
         return undefined;
     }
@@ -1170,7 +1169,7 @@ function function_d18123f8(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x1b4>";
         #/
         return undefined;
     }
@@ -1196,7 +1195,7 @@ function use_tripwire(actionparams) {
     button = self function_c6e02c38(weapon);
     if (!isdefined(weapon)) {
         /#
-            self botprinterror("<unknown string>" + "<unknown string>");
+            self botprinterror("<dev string:x280>" + "<dev string:x169>");
         #/
         self waittill(#"hash_347a612b61067eb3");
         return;
@@ -1263,7 +1262,7 @@ function function_9c943ad6(actionparams, var_af50df89) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x29e>";
         #/
         return false;
     }
@@ -1279,7 +1278,7 @@ function function_9c943ad6(actionparams, var_af50df89) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x2c2>";
         #/
         return false;
     }
@@ -1290,7 +1289,7 @@ function function_9c943ad6(actionparams, var_af50df89) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x2dd>";
         #/
         return false;
     }
@@ -1301,7 +1300,7 @@ function function_9c943ad6(actionparams, var_af50df89) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x2f7>";
         #/
         return false;
     }
@@ -1352,7 +1351,7 @@ function function_6f232284(actionparams) {
                 } else if (!isarray(actionparams.debug)) {
                     actionparams.debug = array(actionparams.debug);
                 }
-                actionparams.debug[actionparams.debug.size] = "<unknown string>";
+                actionparams.debug[actionparams.debug.size] = "<dev string:x30c>";
             #/
             return undefined;
         }
@@ -1370,7 +1369,7 @@ function function_6f232284(actionparams) {
                 } else if (!isarray(actionparams.debug)) {
                     actionparams.debug = array(actionparams.debug);
                 }
-                actionparams.debug[actionparams.debug.size] = "<unknown string>";
+                actionparams.debug[actionparams.debug.size] = "<dev string:x30c>";
             #/
             return undefined;
         }
@@ -1393,7 +1392,7 @@ function function_d2107b(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x324>";
         #/
         return undefined;
     }
@@ -1405,7 +1404,7 @@ function function_d2107b(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x33f>";
         #/
         return undefined;
     }
@@ -1432,7 +1431,7 @@ function function_d2107b(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x367>";
         #/
         return undefined;
     }
@@ -1447,7 +1446,7 @@ function function_d2107b(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x397>";
         #/
         return undefined;
     }
@@ -1471,7 +1470,7 @@ function function_f90909b9(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:xf9>";
         #/
         return undefined;
     }
@@ -1483,7 +1482,7 @@ function function_f90909b9(actionparams) {
             } else if (!isarray(actionparams.debug)) {
                 actionparams.debug = array(actionparams.debug);
             }
-            actionparams.debug[actionparams.debug.size] = "<unknown string>";
+            actionparams.debug[actionparams.debug.size] = "<dev string:x105>";
         #/
         return undefined;
     }

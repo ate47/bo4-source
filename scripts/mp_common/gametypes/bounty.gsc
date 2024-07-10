@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\player\player_callbacks.gsc;
 #using scripts\mp_common\player\player_utils.gsc;
@@ -1207,7 +1206,7 @@ function function_36f403(helicopter) {
                 helicopter function_9ffc1856(var_a9a839e2, 0);
                 while (true) {
                     /#
-                        recordsphere(var_a9a839e2, 8, (0, 0, 1), "bounty_deposit_site_helicopter");
+                        recordsphere(var_a9a839e2, 8, (0, 0, 1), "<dev string:x38>");
                     #/
                     var_baa92af9 = ispointinnavvolume(helicopter.origin, "navvolume_big");
                     if (var_baa92af9 && !issentient(helicopter)) {
@@ -1408,7 +1407,7 @@ function private function_8de67419(leavenode) {
         self function_9ffc1856(var_a9a839e2, 0);
         while (true) {
             /#
-                recordsphere(var_a9a839e2, 8, (0, 0, 1), "bounty_deposit_site_helicopter");
+                recordsphere(var_a9a839e2, 8, (0, 0, 1), "<dev string:x38>");
             #/
             var_baa92af9 = ispointinnavvolume(self.origin, "navvolume_big");
             if (!var_baa92af9) {
@@ -1748,13 +1747,13 @@ function resume_time() {
     // Checksum 0x5ef1cbb9, Offset: 0x7880
     // Size: 0xfc
     function function_b1dcb019() {
-        path = "bounty_drop";
-        cmd = "<unknown string>";
-        util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
-        util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
-        util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
-        util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
-        util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
+        path = "<dev string:x41>";
+        cmd = "<dev string:x56>";
+        util::add_devgui(path + "<dev string:x6e>", cmd + "<dev string:x7b>");
+        util::add_devgui(path + "<dev string:x80>", cmd + "<dev string:x8e>");
+        util::add_devgui(path + "<dev string:x94>", cmd + "<dev string:xa2>");
+        util::add_devgui(path + "<dev string:xa8>", cmd + "<dev string:xb6>");
+        util::add_devgui(path + "<dev string:xbc>", cmd + "<dev string:xcb>");
     }
 
     // Namespace bounty/bounty
@@ -1776,7 +1775,7 @@ function resume_time() {
             player = level.players[0];
             if (isplayer(player)) {
                 player.pers[#"money"] = player.pers[#"money"] + var_9b37b387;
-                player clientfield::set_to_player("<unknown string>", player.pers[#"money"]);
+                player clientfield::set_to_player("<dev string:xd2>", player.pers[#"money"]);
             }
             setdvar(#"hash_312d65fd43c7008c", 0);
         }

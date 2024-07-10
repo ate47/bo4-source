@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\sound_shared.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\callbacks_shared.csc;
@@ -246,7 +245,7 @@ function ambient_fakefire_think(point) {
         weaptype = "turret";
         break;
     default:
-        assertmsg("<unknown string>" + point.weaponinfo + "<unknown string>");
+        assertmsg("<dev string:x38>" + point.weaponinfo + "<dev string:x5a>");
         break;
     }
     while (true) {

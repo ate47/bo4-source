@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\core_common\flag_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -28,9 +27,9 @@
     // Checksum 0x35850b2, Offset: 0x100
     // Size: 0x94
     function adddevguicommand(path, var_c669188) {
-        pathstr = "<unknown string>" + path + "<unknown string>";
-        cmdstr = "<unknown string>" + var_c669188 + "<unknown string>";
-        debugcommand = "<unknown string>" + pathstr + "<unknown string>" + cmdstr;
+        pathstr = "<dev string:x38>" + path + "<dev string:x38>";
+        cmdstr = "<dev string:x38>" + var_c669188 + "<dev string:x3c>";
+        debugcommand = "<dev string:x41>" + pathstr + "<dev string:x4f>" + cmdstr;
         adddebugcommand(debugcommand);
     }
 
@@ -50,27 +49,27 @@
         minigame_on = getdvarint(#"scr_prop_minigame", 1);
         server_hud = getdvarint(#"scr_ph_useprophudserver", 1);
         var_f6fe53f9 = getdvarfloat(#"player_swimdamage", 10);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 1);
-        util::set_dvar_int_if_unset("<unknown string>", 1);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
-        util::set_dvar_int_if_unset("<unknown string>", 0);
+        util::set_dvar_int_if_unset("<dev string:x53>", 0);
+        util::set_dvar_int_if_unset("<dev string:x68>", 0);
+        util::set_dvar_int_if_unset("<dev string:x7c>", 0);
+        util::set_dvar_int_if_unset("<dev string:x91>", 0);
+        util::set_dvar_int_if_unset("<dev string:xa4>", 0);
+        util::set_dvar_int_if_unset("<dev string:xb7>", 0);
+        util::set_dvar_int_if_unset("<dev string:xce>", 0);
+        util::set_dvar_int_if_unset("<dev string:xe9>", 0);
+        util::set_dvar_int_if_unset("<dev string:x102>", 0);
+        util::set_dvar_int_if_unset("<dev string:x117>", 0);
+        util::set_dvar_int_if_unset("<dev string:x12b>", 0);
+        util::set_dvar_int_if_unset("<dev string:x145>", 1);
+        util::set_dvar_int_if_unset("<dev string:x167>", 1);
+        util::set_dvar_int_if_unset("<dev string:x181>", 0);
+        util::set_dvar_int_if_unset("<dev string:x198>", 0);
+        util::set_dvar_int_if_unset("<dev string:x1ae>", 0);
+        util::set_dvar_int_if_unset("<dev string:x1c7>", 0);
+        util::set_dvar_int_if_unset("<dev string:x1df>", 0);
+        util::set_dvar_int_if_unset("<dev string:x1f3>", 0);
+        util::set_dvar_int_if_unset("<dev string:x20d>", 0);
+        util::set_dvar_int_if_unset("<dev string:x227>", 0);
         setdvar(#"hash_4424a07b5272599a", 0);
         setdvar(#"hash_34a3e2c00f7cd27f", 0);
         setdvar(#"hash_3fd977c7de8de72b", 0);
@@ -80,41 +79,41 @@
         setdvar(#"hash_740b6f4a4aa58f21", 0);
         setdvar(#"hash_7115842bdfa67a2b", 0);
         if (getdvarint(#"hash_70c6c4a3e9254926", 0) != 0) {
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x244>");
         }
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>" + 4 + "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>" + 0.25 + "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
-        adddevguicommand("<unknown string>", "<unknown string>");
+        adddevguicommand("<dev string:x263>", "<dev string:x285>");
+        adddevguicommand("<dev string:x2a7>", "<dev string:x2c2>");
+        adddevguicommand("<dev string:x301>", "<dev string:x31c>" + 4 + "<dev string:x33a>");
+        adddevguicommand("<dev string:x35d>", "<dev string:x31c>" + 0.25 + "<dev string:x33a>");
+        adddevguicommand("<dev string:x379>", "<dev string:x39f>");
+        adddevguicommand("<dev string:x3be>", "<dev string:x3e3>");
+        adddevguicommand("<dev string:x406>", "<dev string:x429>");
+        adddevguicommand("<dev string:x448>", "<dev string:x46c>");
+        adddevguicommand("<dev string:x48c>", "<dev string:x4b0>");
+        adddevguicommand("<dev string:x4d0>", "<dev string:x4f2>");
+        adddevguicommand("<dev string:x510>", "<dev string:x532>");
+        adddevguicommand("<dev string:x550>", "<dev string:x56b>");
+        adddevguicommand("<dev string:x58a>", "<dev string:x5a5>");
+        adddevguicommand("<dev string:x5c4>", "<dev string:x5dc>");
+        adddevguicommand("<dev string:x5f7>", "<dev string:x60f>");
+        adddevguicommand("<dev string:x62a>", "<dev string:x63f>");
+        adddevguicommand("<dev string:x68e>", "<dev string:x6a6>");
+        adddevguicommand("<dev string:x6c5>", "<dev string:x6dc>");
+        adddevguicommand("<dev string:x6fb>", "<dev string:x713>");
+        adddevguicommand("<dev string:x72d>", "<dev string:x74e>");
+        adddevguicommand("<dev string:x768>", "<dev string:x788>");
+        adddevguicommand("<dev string:x7a1>", "<dev string:x7bc>");
+        adddevguicommand("<dev string:x7de>", "<dev string:x7f8>");
+        adddevguicommand("<dev string:x819>", "<dev string:x837>");
+        adddevguicommand("<dev string:x85c>", "<dev string:x875>");
+        adddevguicommand("<dev string:x89a>", "<dev string:x8b7>");
+        adddevguicommand("<dev string:x8d6>", "<dev string:x902>");
+        adddevguicommand("<dev string:x924>", "<dev string:x953>");
+        adddevguicommand("<dev string:x971>", "<dev string:x9a3>");
+        adddevguicommand("<dev string:x9c4>", "<dev string:x9f1>");
+        adddevguicommand("<dev string:xa14>", "<dev string:xa30>");
+        adddevguicommand("<dev string:xa55>", "<dev string:xa70>");
+        adddevguicommand("<dev string:xa8f>", "<dev string:xab5>");
         while (true) {
             if (isdefined(level.prematch_over) && level.prematch_over) {
                 level.allow_teamchange = getdvarint(#"hash_7f436a7b31a003f3", 0);
@@ -123,7 +122,7 @@
             if (getdvarint(#"scr_ph_useprophudserver", 0) != server_hud && isdefined(level.players)) {
                 server_hud = getdvarint(#"scr_ph_useprophudserver", 0);
                 if (!isdefined(level.players[0].changepropkey)) {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xadf>");
                 } else {
                     foreach (player in level.players) {
                         if (isdefined(player.team) && player util::isprop()) {
@@ -138,7 +137,7 @@
                     if (player util::isprop()) {
                         var_28c934a0 = getdvarint(#"hash_2c678eea20875ddd", 0);
                         player.var_f18a4260 = !(isdefined(player.var_f18a4260) && player.var_f18a4260);
-                        player iprintlnbold(player.var_f18a4260 ? "<unknown string>" : "<unknown string>");
+                        player iprintlnbold(player.var_f18a4260 ? "<dev string:xaf9>" : "<dev string:xb0d>");
                     }
                 }
             }
@@ -147,7 +146,7 @@
                     if (player util::isprop()) {
                         var_27e85424 = getdvarint(#"hash_4aab269ba89e7cb6", 0);
                         player.var_7ddbf78d = !(isdefined(player.var_7ddbf78d) && player.var_7ddbf78d);
-                        player iprintlnbold(player.var_7ddbf78d ? "<unknown string>" : "<unknown string>");
+                        player iprintlnbold(player.var_7ddbf78d ? "<dev string:xb1e>" : "<dev string:xb31>");
                     }
                 }
             }
@@ -156,7 +155,7 @@
                     if (player util::isprop()) {
                         var_e535ed97 = getdvarint(#"hash_53ee83feb4db4606", 0);
                         player.var_d0e95c44 = !(isdefined(player.var_d0e95c44) && player.var_d0e95c44);
-                        player iprintlnbold(player.var_d0e95c44 ? "<unknown string>" : "<unknown string>");
+                        player iprintlnbold(player.var_d0e95c44 ? "<dev string:xb41>" : "<dev string:xb55>");
                     }
                 }
             }
@@ -170,7 +169,7 @@
                     setdvar(#"doublejump_time_before_recharge", 1600);
                     setdvar(#"doublejump_time_before_recharge_fast", 1000);
                     setdvar(#"playerenergy_restrate", 400);
-                    iprintlnbold(var_f4098dd1 ? "<unknown string>" : "<unknown string>");
+                    iprintlnbold(var_f4098dd1 ? "<dev string:xb66>" : "<dev string:xb78>");
                 }
             }
             if (getdvarint(#"hash_618be616410fad95", 0) != var_94dbbfd9 && isdefined(level.players)) {
@@ -178,7 +177,7 @@
                     if (player prop::function_84793f03()) {
                         var_94dbbfd9 = getdvarint(#"hash_618be616410fad95", 0);
                         player.var_8df5658d = !(isdefined(player.var_8df5658d) && player.var_8df5658d);
-                        player iprintlnbold(player.var_8df5658d ? "<unknown string>" : "<unknown string>");
+                        player iprintlnbold(player.var_8df5658d ? "<dev string:xb87>" : "<dev string:xb99>");
                     }
                 }
             }
@@ -259,16 +258,16 @@
             }
             if (getdvarint(#"scr_prop_minigame", 1) != minigame_on && isdefined(level.players) && level.players.size > 0) {
                 minigame_on = getdvarint(#"scr_prop_minigame", 1);
-                iprintlnbold(minigame_on ? "<unknown string>" : "<unknown string>");
+                iprintlnbold(minigame_on ? "<dev string:xba8>" : "<dev string:xbb6>");
             }
             if (getdvarint(#"hash_6132db0becb8f98", 0) != var_b948ae6c && isdefined(level.players) && level.players.size > 0) {
                 var_b948ae6c = getdvarint(#"hash_6132db0becb8f98", 0);
                 if (var_b948ae6c == 2) {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xbc5>");
                 } else if (var_b948ae6c == 1) {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xbda>");
                 } else {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:xbf0>");
                 }
             }
             waitframe(1);
@@ -417,23 +416,23 @@
             if (!isdefined(msg)) {
                 continue;
             }
-            if (msg == "<unknown string>") {
+            if (msg == "<dev string:xc07>") {
                 self function_92f23bcd(-1);
                 continue;
             }
-            if (msg == "<unknown string>") {
+            if (msg == "<dev string:xc0c>") {
                 self function_92f23bcd(1);
                 continue;
             }
-            if (msg == "<unknown string>") {
+            if (msg == "<dev string:xc13>") {
                 self function_cdf89a29(1);
                 continue;
             }
-            if (msg == "<unknown string>") {
+            if (msg == "<dev string:xc1b>") {
                 self function_cdf89a29(-1);
                 continue;
             }
-            if (msg == "<unknown string>") {
+            if (msg == "<dev string:xc22>") {
                 function_77511c75();
             }
         }
@@ -522,8 +521,8 @@
             function_5ee4d3a8(val);
             self.prop.info = level.proplist[level.propindex[self.var_5f51d2ee][0]][level.propindex[self.var_5f51d2ee][1]];
             prop_controls::propchangeto(self.prop.info);
-            self.placementmodel settext("<unknown string>" + self.var_5f51d2ee + "<unknown string>" + self.prop.info.modelname);
-            self.var_3634d14e settext("<unknown string>" + self.prop.info.propsizetext);
+            self.placementmodel settext("<dev string:xc29>" + self.var_5f51d2ee + "<dev string:xc33>" + self.prop.info.modelname);
+            self.var_3634d14e settext("<dev string:xc39>" + self.prop.info.propsizetext);
             self.var_a2614669 setvalue(self.prop.info.propsize);
             self.var_5ee5df03 setvalue(self.prop.info.propscale);
             self.var_66df6677 setvalue(self.prop.info.xyzoffset[0]);
@@ -537,7 +536,7 @@
             return;
         }
         if (hudelem == self.var_3634d14e || hudelem == self.var_a2614669) {
-            sizes = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
+            sizes = array("<dev string:xc42>", "<dev string:xc4b>", "<dev string:xc53>", "<dev string:xc5c>", "<dev string:xc64>", "<dev string:xc6d>");
             index = 0;
             for (i = 0; i < sizes.size; i++) {
                 if (sizes[i] == self.prop.info.propsizetext) {
@@ -553,7 +552,7 @@
             }
             self.prop.info.propsizetext = sizes[index];
             self.prop.info.propsize = prop::getpropsize(self.prop.info.propsizetext);
-            self.var_3634d14e settext("<unknown string>" + self.prop.info.propsizetext);
+            self.var_3634d14e settext("<dev string:xc39>" + self.prop.info.propsizetext);
             self.var_a2614669 setvalue(self.prop.info.propsize);
             self.health = self.prop.info.propsize;
             self.maxhealth = self.health;
@@ -652,18 +651,18 @@
     // Checksum 0xd615cbf1, Offset: 0x3688
     // Size: 0x1e4
     function function_8d3ffd86() {
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommand("<unknown string>", "<unknown string>");
+        self prop_controls::notifyonplayercommand("<dev string:xc07>", "<dev string:xc76>");
+        self prop_controls::notifyonplayercommand("<dev string:xc0c>", "<dev string:xc86>");
+        self prop_controls::notifyonplayercommand("<dev string:xc1b>", "<dev string:xc96>");
+        self prop_controls::notifyonplayercommand("<dev string:xc13>", "<dev string:xca6>");
+        self prop_controls::notifyonplayercommand("<dev string:xcb6>", "<dev string:xcbe>");
+        self prop_controls::notifyonplayercommand("<dev string:xcb6>", "<dev string:xcce>");
+        self prop_controls::notifyonplayercommand("<dev string:xcb6>", "<dev string:xcde>");
+        self prop_controls::notifyonplayercommand("<dev string:xcb6>", "<dev string:xcee>");
+        self prop_controls::notifyonplayercommand("<dev string:xc22>", "<dev string:xcfe>");
+        self prop_controls::notifyonplayercommand("<dev string:xd08>", "<dev string:xd12>");
+        self prop_controls::notifyonplayercommand("<dev string:xd1d>", "<dev string:xd26>");
+        self prop_controls::notifyonplayercommand("<dev string:xd1d>", "<dev string:xd33>");
     }
 
     // Namespace prop_dev/_prop_dev
@@ -671,18 +670,18 @@
     // Checksum 0x7c5f4a60, Offset: 0x3878
     // Size: 0x1e4
     function function_cc5afb75() {
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
-        self prop_controls::notifyonplayercommandremove("<unknown string>", "<unknown string>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xc07>", "<dev string:xc76>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xc0c>", "<dev string:xc86>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xc1b>", "<dev string:xc96>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xc13>", "<dev string:xca6>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xcb6>", "<dev string:xcbe>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xcb6>", "<dev string:xcce>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xcb6>", "<dev string:xcde>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xcb6>", "<dev string:xcee>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xc22>", "<dev string:xcfe>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xd08>", "<dev string:xd12>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xd1d>", "<dev string:xd26>");
+        self prop_controls::notifyonplayercommandremove("<dev string:xd1d>", "<dev string:xd33>");
     }
 
     // Namespace prop_dev/_prop_dev
@@ -714,26 +713,26 @@
     // Checksum 0xfffdd2a, Offset: 0x3b60
     // Size: 0x264
     function function_2dc5c497(file, propinfo) {
-        propstr = "<unknown string>" + propinfo.modelname + "<unknown string>" + propinfo.propsizetext + "<unknown string>" + propinfo.propscale;
+        propstr = "<dev string:xd3f>" + propinfo.modelname + "<dev string:xd42>" + propinfo.propsizetext + "<dev string:xd42>" + propinfo.propscale;
         if (function_cbef3d63(propinfo.xyzoffset)) {
-            propstr += "<unknown string>" + propinfo.xyzoffset[0] + "<unknown string>" + propinfo.xyzoffset[1] + "<unknown string>" + propinfo.xyzoffset[2];
+            propstr += "<dev string:xd42>" + propinfo.xyzoffset[0] + "<dev string:xd42>" + propinfo.xyzoffset[1] + "<dev string:xd42>" + propinfo.xyzoffset[2];
         } else {
-            propstr += "<unknown string>";
+            propstr += "<dev string:xd46>";
         }
         if (function_cbef3d63(propinfo.anglesoffset)) {
-            propstr += "<unknown string>" + propinfo.anglesoffset[0] + "<unknown string>" + propinfo.anglesoffset[1] + "<unknown string>" + propinfo.anglesoffset[2];
+            propstr += "<dev string:xd42>" + propinfo.anglesoffset[0] + "<dev string:xd42>" + propinfo.anglesoffset[1] + "<dev string:xd42>" + propinfo.anglesoffset[2];
         } else {
-            propstr += "<unknown string>";
+            propstr += "<dev string:xd46>";
         }
         if (function_a840713e(propinfo)) {
-            propstr += "<unknown string>" + propinfo.propheight;
+            propstr += "<dev string:xd42>" + propinfo.propheight;
         } else {
-            propstr += "<unknown string>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
+            propstr += "<dev string:xd42>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
         }
         if (function_7a3672a6(propinfo)) {
-            propstr += "<unknown string>" + propinfo.proprange;
+            propstr += "<dev string:xd42>" + propinfo.proprange;
         } else {
-            propstr += "<unknown string>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
+            propstr += "<dev string:xd42>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
         }
         fprintln(file, propstr);
     }
@@ -743,7 +742,7 @@
     // Checksum 0x16714008, Offset: 0x3dd0
     // Size: 0x5c
     function function_8639a7b0(file, propinfo) {
-        propstr = "<unknown string>" + propinfo.modelname + "<unknown string>";
+        propstr = "<dev string:xd4f>" + propinfo.modelname + "<dev string:xd67>";
         fprintln(file, propstr);
     }
 
@@ -780,28 +779,28 @@
     // Checksum 0xf31e84ec, Offset: 0x4068
     // Size: 0x314
     function function_79d57521(file, var_7723a9cd) {
-        var_7e52c89c = var_7723a9cd + "<unknown string>";
-        var_44c49e4e = var_7723a9cd + "<unknown string>";
-        var_473e8b8d = var_7723a9cd + "<unknown string>";
-        var_ca180226 = level.script + "<unknown string>";
-        var_19494914 = level.script + "<unknown string>";
-        var_155d523d = "<unknown string>";
-        var_7770e500 = "<unknown string>";
-        var_d6ade535 = "<unknown string>";
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>" + var_7e52c89c + "<unknown string>");
-        fprintln(file, "<unknown string>" + var_44c49e4e + "<unknown string>");
-        fprintln(file, "<unknown string>" + var_473e8b8d + "<unknown string>" + var_155d523d);
-        fprintln(file, "<unknown string>" + var_7e52c89c + "<unknown string>" + var_d6ade535);
-        fprintln(file, "<unknown string>" + var_44c49e4e + "<unknown string>" + var_7770e500);
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>" + var_ca180226 + "<unknown string>" + var_7723a9cd);
-        fprintln(file, "<unknown string>" + var_19494914 + "<unknown string>" + var_44c49e4e + "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
+        var_7e52c89c = var_7723a9cd + "<dev string:xd6e>";
+        var_44c49e4e = var_7723a9cd + "<dev string:xd75>";
+        var_473e8b8d = var_7723a9cd + "<dev string:xd7c>";
+        var_ca180226 = level.script + "<dev string:xd84>";
+        var_19494914 = level.script + "<dev string:xd8c>";
+        var_155d523d = "<dev string:xd93>";
+        var_7770e500 = "<dev string:xdae>";
+        var_d6ade535 = "<dev string:xdcc>";
+        fprintln(file, "<dev string:xdf2>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:xe9a>");
+        fprintln(file, "<dev string:xea4>" + var_7e52c89c + "<dev string:xebd>");
+        fprintln(file, "<dev string:xed1>" + var_44c49e4e + "<dev string:xebd>");
+        fprintln(file, "<dev string:xeea>" + var_473e8b8d + "<dev string:xeff>" + var_155d523d);
+        fprintln(file, "<dev string:xf06>" + var_7e52c89c + "<dev string:xeff>" + var_d6ade535);
+        fprintln(file, "<dev string:xf1b>" + var_44c49e4e + "<dev string:xeff>" + var_7770e500);
+        fprintln(file, "<dev string:xf30>");
+        fprintln(file, "<dev string:xf53>" + var_ca180226 + "<dev string:xf70>" + var_7723a9cd);
+        fprintln(file, "<dev string:xf7d>" + var_19494914 + "<dev string:xf9a>" + var_44c49e4e + "<dev string:xfb2>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:xfb6>");
+        fprintln(file, "<dev string:xd3f>");
     }
 
     // Namespace prop_dev/_prop_dev
@@ -809,39 +808,39 @@
     // Checksum 0x2549cffe, Offset: 0x4388
     // Size: 0x3ac
     function function_cb8ecc99() {
-        platform = "<unknown string>";
+        platform = "<dev string:xfe8>";
         if (level.orbis) {
-            platform = "<unknown string>";
+            platform = "<dev string:xfed>";
         } else if (level.durango) {
-            platform = "<unknown string>";
+            platform = "<dev string:xff5>";
         }
-        var_7723a9cd = level.script + "<unknown string>";
-        var_7e52c89c = var_7723a9cd + "<unknown string>";
-        var_b522696f = "<unknown string>" + platform + "<unknown string>";
-        var_d6ade535 = "<unknown string>";
-        file = openfile(var_7e52c89c, "<unknown string>");
+        var_7723a9cd = level.script + "<dev string:xfff>";
+        var_7e52c89c = var_7723a9cd + "<dev string:xd6e>";
+        var_b522696f = "<dev string:x1005>" + platform + "<dev string:x100d>";
+        var_d6ade535 = "<dev string:xdcc>";
+        file = openfile(var_7e52c89c, "<dev string:x101c>");
         if (file == -1) {
-            iprintlnbold("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>");
-            println("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>");
+            iprintlnbold("<dev string:x1024>" + var_b522696f + var_7e52c89c + "<dev string:x1039>");
+            println("<dev string:x1024>" + var_b522696f + var_7e52c89c + "<dev string:x1039>");
             return;
         }
         function_79d57521(file, var_7723a9cd);
-        fprintln(file, "<unknown string>");
-        function_62b9b9ac(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        function_62b9b9ac(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        function_62b9b9ac(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        function_62b9b9ac(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        function_62b9b9ac(file, "<unknown string>");
-        iprintlnbold("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>" + var_d6ade535);
-        println("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>" + var_d6ade535);
+        fprintln(file, "<dev string:x1048>");
+        function_62b9b9ac(file, "<dev string:xc42>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x105d>");
+        function_62b9b9ac(file, "<dev string:xc4b>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x106c>");
+        function_62b9b9ac(file, "<dev string:xc53>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x107c>");
+        function_62b9b9ac(file, "<dev string:xc5c>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x108b>");
+        function_62b9b9ac(file, "<dev string:xc64>");
+        iprintlnbold("<dev string:x10a0>" + var_b522696f + var_7e52c89c + "<dev string:x10a9>" + var_d6ade535);
+        println("<dev string:x10a0>" + var_b522696f + var_7e52c89c + "<dev string:x10a9>" + var_d6ade535);
         closefile(file);
     }
 
@@ -850,38 +849,38 @@
     // Checksum 0xb31015ca, Offset: 0x4740
     // Size: 0x394
     function function_2b23b2b6() {
-        platform = "<unknown string>";
+        platform = "<dev string:xfe8>";
         if (level.orbis) {
-            platform = "<unknown string>";
+            platform = "<dev string:xfed>";
         } else if (level.durango) {
-            platform = "<unknown string>";
+            platform = "<dev string:xff5>";
         }
-        var_7723a9cd = level.script + "<unknown string>";
-        var_7e52c89c = var_7723a9cd + "<unknown string>";
-        var_b522696f = "<unknown string>" + platform + "<unknown string>";
-        var_d6ade535 = "<unknown string>";
-        file = openfile(var_7e52c89c, "<unknown string>");
+        var_7723a9cd = level.script + "<dev string:xfff>";
+        var_7e52c89c = var_7723a9cd + "<dev string:xd75>";
+        var_b522696f = "<dev string:x1005>" + platform + "<dev string:x100d>";
+        var_d6ade535 = "<dev string:xdae>";
+        file = openfile(var_7e52c89c, "<dev string:x101c>");
         if (file == -1) {
-            iprintlnbold("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>");
-            println("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>");
+            iprintlnbold("<dev string:x1024>" + var_b522696f + var_7e52c89c + "<dev string:x1039>");
+            println("<dev string:x1024>" + var_b522696f + var_7e52c89c + "<dev string:x1039>");
             return;
         }
-        fprintln(file, "<unknown string>");
-        plaza_dom_point_neutral_b_secured(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        plaza_dom_point_neutral_b_secured(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        plaza_dom_point_neutral_b_secured(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        plaza_dom_point_neutral_b_secured(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        plaza_dom_point_neutral_b_secured(file, "<unknown string>");
-        iprintlnbold("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>" + var_d6ade535);
-        println("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>" + var_d6ade535);
+        fprintln(file, "<dev string:x10b6>");
+        plaza_dom_point_neutral_b_secured(file, "<dev string:xc42>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x10cd>");
+        plaza_dom_point_neutral_b_secured(file, "<dev string:xc4b>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x10de>");
+        plaza_dom_point_neutral_b_secured(file, "<dev string:xc53>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x10f0>");
+        plaza_dom_point_neutral_b_secured(file, "<dev string:xc5c>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x1101>");
+        plaza_dom_point_neutral_b_secured(file, "<dev string:xc64>");
+        iprintlnbold("<dev string:x10a0>" + var_b522696f + var_7e52c89c + "<dev string:x10a9>" + var_d6ade535);
+        println("<dev string:x10a0>" + var_b522696f + var_7e52c89c + "<dev string:x10a9>" + var_d6ade535);
         closefile(file);
     }
 
@@ -890,114 +889,114 @@
     // Checksum 0x56f6cd86, Offset: 0x4ae0
     // Size: 0xc34
     function function_f2e19297() {
-        platform = "<unknown string>";
+        platform = "<dev string:xfe8>";
         if (level.orbis) {
-            platform = "<unknown string>";
+            platform = "<dev string:xfed>";
         } else if (level.durango) {
-            platform = "<unknown string>";
+            platform = "<dev string:xff5>";
         }
-        var_7723a9cd = level.script + "<unknown string>";
-        var_7e52c89c = var_7723a9cd + "<unknown string>";
-        var_44c49e4e = var_7723a9cd + "<unknown string>";
-        var_473e8b8d = var_7723a9cd + "<unknown string>";
-        var_ca180226 = level.script + "<unknown string>";
-        var_19494914 = level.script + "<unknown string>";
-        var_b522696f = "<unknown string>" + platform + "<unknown string>";
-        var_155d523d = "<unknown string>";
-        var_7770e500 = "<unknown string>";
-        var_d6ade535 = "<unknown string>";
-        file = openfile(var_7e52c89c, "<unknown string>");
+        var_7723a9cd = level.script + "<dev string:xfff>";
+        var_7e52c89c = var_7723a9cd + "<dev string:xd6e>";
+        var_44c49e4e = var_7723a9cd + "<dev string:xd75>";
+        var_473e8b8d = var_7723a9cd + "<dev string:xd7c>";
+        var_ca180226 = level.script + "<dev string:xd84>";
+        var_19494914 = level.script + "<dev string:xd8c>";
+        var_b522696f = "<dev string:x1005>" + platform + "<dev string:x100d>";
+        var_155d523d = "<dev string:xd93>";
+        var_7770e500 = "<dev string:xdae>";
+        var_d6ade535 = "<dev string:xdcc>";
+        file = openfile(var_7e52c89c, "<dev string:x101c>");
         if (file == -1) {
-            iprintlnbold("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>");
-            println("<unknown string>" + var_b522696f + var_7e52c89c + "<unknown string>");
+            iprintlnbold("<dev string:x1024>" + var_b522696f + var_7e52c89c + "<dev string:x1039>");
+            println("<dev string:x1024>" + var_b522696f + var_7e52c89c + "<dev string:x1039>");
             return;
         }
         function_79d57521(file, var_7723a9cd);
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
+        fprintln(file, "<dev string:x1048>");
+        fprintln(file, "<dev string:x1118>");
+        fprintln(file, "<dev string:x1118>");
+        fprintln(file, "<dev string:x1118>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x105d>");
+        fprintln(file, "<dev string:x1133>");
+        fprintln(file, "<dev string:x1133>");
+        fprintln(file, "<dev string:x1133>");
+        fprintln(file, "<dev string:x1133>");
+        fprintln(file, "<dev string:x1133>");
+        fprintln(file, "<dev string:x1133>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x106c>");
+        fprintln(file, "<dev string:x114c>");
+        fprintln(file, "<dev string:x114c>");
+        fprintln(file, "<dev string:x114c>");
+        fprintln(file, "<dev string:x114c>");
+        fprintln(file, "<dev string:x114c>");
+        fprintln(file, "<dev string:x114c>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x107c>");
+        fprintln(file, "<dev string:x1167>");
+        fprintln(file, "<dev string:x1167>");
+        fprintln(file, "<dev string:x1167>");
+        fprintln(file, "<dev string:x1167>");
+        fprintln(file, "<dev string:x1167>");
+        fprintln(file, "<dev string:x1167>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x108b>");
+        fprintln(file, "<dev string:x1180>");
+        fprintln(file, "<dev string:x1180>");
+        fprintln(file, "<dev string:x1180>");
         closefile(file);
-        file = openfile(var_44c49e4e, "<unknown string>");
+        file = openfile(var_44c49e4e, "<dev string:x101c>");
         if (file == -1) {
-            iprintlnbold("<unknown string>" + var_b522696f + var_44c49e4e + "<unknown string>");
-            println("<unknown string>" + var_b522696f + var_44c49e4e + "<unknown string>");
+            iprintlnbold("<dev string:x1024>" + var_b522696f + var_44c49e4e + "<dev string:x1039>");
+            println("<dev string:x1024>" + var_b522696f + var_44c49e4e + "<dev string:x1039>");
             return;
         }
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
-        fprintln(file, "<unknown string>");
+        fprintln(file, "<dev string:x10b6>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x10cd>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x10de>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x10f0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:xd3f>");
+        fprintln(file, "<dev string:x1101>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
+        fprintln(file, "<dev string:x11a0>");
         closefile(file);
-        file = openfile(var_473e8b8d, "<unknown string>");
+        file = openfile(var_473e8b8d, "<dev string:x101c>");
         if (file == -1) {
-            iprintlnbold("<unknown string>" + var_b522696f + var_473e8b8d + "<unknown string>");
-            println("<unknown string>" + var_b522696f + var_473e8b8d + "<unknown string>");
+            iprintlnbold("<dev string:x1024>" + var_b522696f + var_473e8b8d + "<dev string:x1039>");
+            println("<dev string:x1024>" + var_b522696f + var_473e8b8d + "<dev string:x1039>");
             return;
         }
-        fprintln(file, "<unknown string>" + var_7e52c89c);
-        fprintln(file, "<unknown string>" + var_44c49e4e);
+        fprintln(file, "<dev string:x11bc>" + var_7e52c89c);
+        fprintln(file, "<dev string:x11de>" + var_44c49e4e);
         closefile(file);
-        iprintlnbold("<unknown string>" + var_b522696f);
-        println("<unknown string>" + var_b522696f);
+        iprintlnbold("<dev string:x11f4>" + var_b522696f);
+        println("<dev string:x11f4>" + var_b522696f);
     }
 
     // Namespace prop_dev/_prop_dev
@@ -1023,7 +1022,7 @@
         setdvar(#"bot_allowattack", 0);
         setdvar(#"bot_allowmovement", 0);
         player.health = player.maxhealth;
-        weapon = getweapon("<unknown string>");
+        weapon = getweapon("<dev string:x120d>");
         end = player.origin;
         dir = anglestoforward(player.angles);
         start = end + dir * 100 + (0, 0, 30);
@@ -1054,7 +1053,7 @@
         }
         foreach (player in level.players) {
             if (isdefined(player) && isdefined(player.team) && player.team == game.defenders) {
-                print3d(player.origin + (0, 0, 50), "<unknown string>" + player.health);
+                print3d(player.origin + (0, 0, 50), "<dev string:xd3f>" + player.health);
             }
         }
     }
@@ -1071,7 +1070,7 @@
             velocity = player getvelocity();
             var_a79358cf = (velocity[0], velocity[1], 0);
             speed = length(var_a79358cf);
-            print3d(player.origin + (0, 0, 50), "<unknown string>" + speed);
+            print3d(player.origin + (0, 0, 50), "<dev string:xd3f>" + speed);
         }
     }
 
@@ -1095,11 +1094,11 @@
     // Checksum 0xe1923699, Offset: 0x5dc0
     // Size: 0x2c0
     function function_ed0598d(propinfo, origin, angles) {
-        propent = spawn("<unknown string>", origin);
+        propent = spawn("<dev string:x121c>", origin);
         propent setcontents(0);
         propent notsolid();
         propent setplayercollision(0);
-        prop = spawn("<unknown string>", propent.origin);
+        prop = spawn("<dev string:x121c>", propent.origin);
         prop.angles = angles;
         prop setmodel(propinfo.modelname);
         prop setscale(propinfo.propscale);
@@ -1188,8 +1187,8 @@
     // Checksum 0x87946ba2, Offset: 0x6608
     // Size: 0x16c
     function function_cded003e(propinfo, origin, angles, team) {
-        var_6e55957c = spawn("<unknown string>", origin);
-        var_6e55957c.targetname = "<unknown string>";
+        var_6e55957c = spawn("<dev string:x121c>", origin);
+        var_6e55957c.targetname = "<dev string:x122b>";
         var_6e55957c setmodel(propinfo.modelname);
         var_6e55957c setscale(propinfo.propscale);
         var_6e55957c.angles = angles;
@@ -1266,7 +1265,7 @@
         for (i = 0; i < level.var_1103f74e.targets.size; i++) {
             target = level.var_1103f74e.targets[i];
             if (isdefined(target)) {
-                print3d(target.origin + (0, 0, 30), "<unknown string>" + target.fakehealth);
+                print3d(target.origin + (0, 0, 30), "<dev string:xd3f>" + target.fakehealth);
             }
         }
     }

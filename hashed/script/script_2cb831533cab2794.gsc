@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
 
@@ -31,7 +30,7 @@ class czm_hint_text : cluielem {
             player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace czm_hint_text/zm_hint_text

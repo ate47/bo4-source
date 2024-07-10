@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\doors_shared.gsc;
 #using scripts\mp_common\load.gsc;
 #using scripts\core_common\compass.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\ai\zm_ai_utility.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -90,7 +89,7 @@ function private __init__() {
     // Checksum 0xefadb906, Offset: 0x6d0
     // Size: 0x34
     function function_64ab9843(params) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x38>");
     }
 
 #/
@@ -217,7 +216,7 @@ function private function_c9f197d2(var_4c3c217a = 1) {
     self endon(#"death");
     /#
         if (isdefined(self.isdying) && self.isdying) {
-            iprintlnbold("<unknown string>" + self getentitynumber() + "<unknown string>" + function_9e72a96(isdefined(self.var_a6ddd958) ? self.var_a6ddd958 : "<unknown string>"));
+            iprintlnbold("<dev string:x56>" + self getentitynumber() + "<dev string:x61>" + function_9e72a96(isdefined(self.var_a6ddd958) ? self.var_a6ddd958 : "<dev string:x88>"));
         }
     #/
     if (var_4c3c217a) {
@@ -536,13 +535,13 @@ function function_946c1972(eventstruct) {
     // Checksum 0x57e95e01, Offset: 0x22c8
     // Size: 0xb4
     function private function_6d3ecc88() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x98>");
+        adddebugcommand("<dev string:xe4>");
+        adddebugcommand("<dev string:x13c>");
+        adddebugcommand("<dev string:x196>");
+        adddebugcommand("<dev string:x200>");
+        adddebugcommand("<dev string:x24d>");
+        adddebugcommand("<dev string:x298>");
     }
 
     // Namespace zm_ai_skeleton/zm_ai_skeleton
@@ -552,25 +551,25 @@ function function_946c1972(eventstruct) {
     function private function_6ae10cf1(cmd) {
         switch (cmd) {
         case #"skeleton_spawn":
-            zm_devgui::spawn_archetype("<unknown string>");
+            zm_devgui::spawn_archetype("<dev string:x2e9>");
             break;
         case #"hash_12e2063dc669bbe0":
-            zm_devgui::spawn_archetype("<unknown string>");
+            zm_devgui::spawn_archetype("<dev string:x303>");
             break;
         case #"hash_65bce5ef69a7ff3e":
-            zm_devgui::spawn_archetype("<unknown string>");
+            zm_devgui::spawn_archetype("<dev string:x323>");
             break;
         case #"hash_57892c7b7a106128":
-            zm_devgui::spawn_archetype("<unknown string>");
+            zm_devgui::spawn_archetype("<dev string:x344>");
             break;
         case #"hash_3889ece40febdc1e":
-            function_2d69eef6("<unknown string>");
+            function_2d69eef6("<dev string:x36b>");
             break;
         case #"hash_1d61c627e61ca434":
-            function_2d69eef6("<unknown string>");
+            function_2d69eef6("<dev string:x372>");
             break;
         case #"hash_2a2ceb9249805ca7":
-            function_2d69eef6("<unknown string>");
+            function_2d69eef6("<dev string:x378>");
             break;
         default:
             return 0;

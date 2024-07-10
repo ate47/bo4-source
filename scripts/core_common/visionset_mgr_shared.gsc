@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\math_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -35,7 +34,7 @@ function __init__() {
 // Checksum 0xdc3fa, Offset: 0x210
 // Size: 0x196
 function register_info(type, name, version, priority, lerp_step_count, should_activate_per_player, lerp_thread, ref_count_lerp_thread) {
-    assert(level.vsmgr_initializing, "<unknown string>");
+    assert(level.vsmgr_initializing, "<dev string:x38>");
     lower_name = tolower(name);
     validate_info(type, lower_name, priority);
     add_sorted_name_key(type, lower_name);
@@ -368,7 +367,7 @@ function finalize_clientfields() {
 // Checksum 0x6081ab67, Offset: 0x1458
 // Size: 0x23c
 function finalize_type_clientfields() {
-    println("<unknown string>" + self.type + "<unknown string>");
+    println("<dev string:xaf>" + self.type + "<dev string:xc1>");
     if (1 >= self.info.size) {
         return;
     }
@@ -380,7 +379,7 @@ function finalize_type_clientfields() {
         if (self.info[self.sorted_name_keys[i]].lerp_bit_count > self.cf_lerp_bit_count) {
             self.cf_lerp_bit_count = self.info[self.sorted_name_keys[i]].lerp_bit_count;
         }
-        println("<unknown string>" + self.info[self.sorted_name_keys[i]].name + "<unknown string>" + self.info[self.sorted_name_keys[i]].version + "<unknown string>" + self.info[self.sorted_name_keys[i]].lerp_step_count + "<unknown string>");
+        println("<dev string:xdb>" + self.info[self.sorted_name_keys[i]].name + "<dev string:xe8>" + self.info[self.sorted_name_keys[i]].version + "<dev string:xf6>" + self.info[self.sorted_name_keys[i]].lerp_step_count + "<dev string:x10c>");
     }
     clientfield::register("toplayer", self.cf_slot_name, self.highest_version, self.cf_slot_bit_count, "int");
     if (1 < self.cf_lerp_bit_count) {
@@ -399,10 +398,10 @@ function validate_info(type, name, priority) {
             break;
         }
     }
-    assert(i < keys.size, "<unknown string>" + type + "<unknown string>");
+    assert(i < keys.size, "<dev string:x10f>" + type + "<dev string:x12a>");
     foreach (v in level.vsmgr[type].info) {
-        assert(v.name != name, "<unknown string>" + type + "<unknown string>" + name + "<unknown string>");
-        assert(v.priority != priority, "<unknown string>" + type + "<unknown string>" + priority + "<unknown string>" + name + "<unknown string>" + v.name + "<unknown string>");
+        assert(v.name != name, "<dev string:x138>" + type + "<dev string:x155>" + name + "<dev string:x161>");
+        assert(v.priority != priority, "<dev string:x138>" + type + "<dev string:x184>" + priority + "<dev string:x194>" + name + "<dev string:x1ad>" + v.name + "<dev string:x1dd>");
     }
 }
 

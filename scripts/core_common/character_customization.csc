@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\scene_shared.csc;
@@ -1259,7 +1258,7 @@ class class_7da27482 {
     // Checksum 0x79a44652, Offset: 0xa40
     // Size: 0xd4
     function function_7ed995de(local_client_num, character_model, alt_render_mode = 1) {
-        assert(!isdefined(var_228f64da), "<unknown string>");
+        assert(!isdefined(var_228f64da), "<dev string:x38>");
         var_f141235b = local_client_num;
         var_81bd1932 = local_client_num;
         var_bf4feef5 = alt_render_mode;

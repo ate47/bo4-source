@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_holiday.csc;
 #using scripts\wz_common\wz_jukebox.csc;
 #using scripts\wz_common\wz_asylum.csc;

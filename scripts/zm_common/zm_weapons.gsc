@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\gametypes\globallogic_utils.gsc;
 #using scripts\zm\weapons\zm_weap_sword_pistol.gsc;
 #using scripts\zm\weapons\zm_weap_scepter.gsc;
@@ -504,7 +503,7 @@ function add_zombie_weapon(weapon_name, upgrade_name, is_ee, cost, weaponvo, wea
     struct.vox_response = weaponvoresp;
     struct.is_wonder_weapon = is_wonder_weapon;
     struct.tier = tier;
-    println("<unknown string>" + function_9e72a96(weapon_name));
+    println("<dev string:x38>" + function_9e72a96(weapon_name));
     struct.is_in_box = level.zombie_include_weapons[weapon];
     if (!isdefined(ammo_cost) || ammo_cost == 0) {
         ammo_cost = zm_utility::round_up_to_ten(int(cost * 0.5));
@@ -555,7 +554,7 @@ function include_zombie_weapon(weapon_name, in_box) {
     if (!isdefined(in_box)) {
         in_box = 1;
     }
-    println("<unknown string>" + function_9e72a96(weapon_name));
+    println("<dev string:x56>" + function_9e72a96(weapon_name));
     level.zombie_include_weapons[getweapon(weapon_name)] = in_box;
 }
 
@@ -717,7 +716,7 @@ function player_can_use_content(weapon) {
 // Checksum 0xbc708a55, Offset: 0x2298
 // Size: 0x72
 function get_weapon_hint(weapon) {
-    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<unknown string>");
+    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<dev string:x72>");
     return level.zombie_weapons[weapon].hint;
 }
 
@@ -726,7 +725,7 @@ function get_weapon_hint(weapon) {
 // Checksum 0xe0242ace, Offset: 0x2318
 // Size: 0x72
 function get_weapon_cost(weapon) {
-    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<unknown string>");
+    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<dev string:x72>");
     return level.zombie_weapons[weapon].cost;
 }
 
@@ -735,7 +734,7 @@ function get_weapon_cost(weapon) {
 // Checksum 0x4d62bd05, Offset: 0x2398
 // Size: 0x72
 function get_ammo_cost(weapon) {
-    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<unknown string>");
+    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<dev string:x72>");
     return level.zombie_weapons[weapon].ammo_cost;
 }
 
@@ -744,7 +743,7 @@ function get_ammo_cost(weapon) {
 // Checksum 0x9ed22387, Offset: 0x2418
 // Size: 0x94
 function get_upgraded_ammo_cost(weapon) {
-    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<unknown string>");
+    assert(isdefined(level.zombie_weapons[weapon]), function_9e72a96(weapon.name) + "<dev string:x72>");
     if (isdefined(level.zombie_weapons[weapon].upgraded_ammo_cost)) {
         return level.zombie_weapons[weapon].upgraded_ammo_cost;
     }
@@ -785,7 +784,7 @@ function get_ammo_cost_for_weapon(w_current, n_base_non_wallbuy_cost = 750, n_up
 // Checksum 0x3269ab61, Offset: 0x2658
 // Size: 0x5a
 function get_is_in_box(weapon) {
-    assert(isdefined(level.zombie_weapons[weapon]), weapon.name + "<unknown string>");
+    assert(isdefined(level.zombie_weapons[weapon]), weapon.name + "<dev string:x72>");
     return level.zombie_weapons[weapon].is_in_box;
 }
 
@@ -798,7 +797,7 @@ function function_603af7a8(weapon) {
         level.zombie_weapons[weapon].is_in_box = 1;
     }
     /#
-        level thread zm_devgui::function_bcc8843e(getweaponname(weapon), "<unknown string>", "<unknown string>");
+        level thread zm_devgui::function_bcc8843e(getweaponname(weapon), "<dev string:xb0>", "<dev string:xb0>");
     #/
 }
 
@@ -893,7 +892,7 @@ function get_attachment_index(weapon) {
             }
         }
     }
-    println("<unknown string>" + weapon.name);
+    println("<dev string:xb3>" + weapon.name);
     return -1;
 }
 
@@ -1657,7 +1656,7 @@ function weapondata_take(weapondata) {
         }
         alt_weapon = alt_weapon.altweapon;
         if (isinarray(a_alt_weapons, alt_weapon)) {
-            println("<unknown string>" + function_9e72a96(alt_weapon.name) + "<unknown string>");
+            println("<dev string:xe9>" + function_9e72a96(alt_weapon.name) + "<dev string:x108>");
             break;
         }
     }
@@ -1679,7 +1678,7 @@ function create_loadout(weapons) {
             weapon = getweapon(weapon);
         }
         if (weapon == weaponnone) {
-            println("<unknown string>" + weapon.name);
+            println("<dev string:x1a0>" + weapon.name);
         }
         loadout.weapons[weapon.name] = get_default_weapondata(weapon);
         if (!isdefined(loadout.current)) {

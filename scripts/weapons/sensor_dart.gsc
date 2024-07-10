@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\globallogic\globallogic_score.gsc;
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;

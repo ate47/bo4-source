@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\player\player_stats.gsc;
 #using scripts\wz_common\character_unlock_fixup.gsc;
 #using scripts\wz_common\character_unlock.gsc;

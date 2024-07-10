@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_1e43d05a138e08b9;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
@@ -25,7 +24,7 @@ function __init__() {
     spawnpoints = struct::get_array("infil_spawn", "targetname");
     /#
         if (spawnpoints.size == 0) {
-            spawnpoints = struct::get_array("<unknown string>", "<unknown string>");
+            spawnpoints = struct::get_array("<dev string:x38>", "<dev string:x49>");
         }
     #/
     if (spawnpoints.size != 0) {
@@ -299,7 +298,7 @@ function function_cbe63de1(localclientnum, delta_t) {
     }
     focuspos = level.var_88a92c26.origin;
     focusangles = level.var_88a92c26.angles;
-    assert(isdefined(focusangles), "<unknown string>");
+    assert(isdefined(focusangles), "<dev string:x56>");
     if (!isdefined(focusangles)) {
         focusangles = player getcamangles();
         if (!isdefined(focusangles)) {

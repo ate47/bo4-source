@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_wallbuy.gsc;
@@ -210,7 +209,7 @@ function function_eb7664aa(inflictor, attacker, damage, flags, meansofdeath, wea
             n_damage = int(damage * n_multi);
             if (n_damage > damage) {
                 /#
-                    iprintln("<unknown string>" + n_damage - damage);
+                    iprintln("<dev string:x38>" + n_damage - damage);
                 #/
                 return n_damage;
             }
@@ -264,7 +263,7 @@ function function_252cf612(player) {
                 self sethintstring(#"hash_9c2f7742abf6acb", n_cost);
             } else {
                 /#
-                    iprintln("<unknown string>" + function_9e72a96(var_12680c28.name) + "<unknown string>");
+                    iprintln("<dev string:x4f>" + function_9e72a96(var_12680c28.name) + "<dev string:x59>");
                 #/
                 return 0;
             }
@@ -287,13 +286,13 @@ function function_dad1960c() {
         if (!isdefined(n_cost)) {
             w_weapon = player getcurrentweapon();
             /#
-                iprintln("<unknown string>" + function_9e72a96(w_weapon.name) + "<unknown string>");
+                iprintln("<dev string:x4f>" + function_9e72a96(w_weapon.name) + "<dev string:x59>");
             #/
             continue;
         }
         if (!player zm_score::can_player_purchase(n_cost) && player flag::get(#"hash_56504ef435e17076")) {
             /#
-                player iprintln("<unknown string>");
+                player iprintln("<dev string:x72>");
             #/
             player thread zm_audio::create_and_play_dialog(#"general", #"outofmoney");
             continue;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_724752ab26bff81b;
 #using scripts\zm\zm_white_util.gsc;
 #using scripts\zm\zm_white_main_quest.gsc;
@@ -116,10 +115,10 @@ function start_quest() {
 function private start_step_1() {
     level thread function_cbeb9a33();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     /#
-        iprintlnbold("<unknown string>" + level.var_74170866.s_cabinet.script_string + "<unknown string>");
+        iprintlnbold("<dev string:x50>" + level.var_74170866.s_cabinet.script_string + "<dev string:x5a>");
     #/
     level.var_74170866.n_step = 1;
     s_cabinet = level.var_74170866.s_cabinet;
@@ -193,8 +192,8 @@ function function_e08b0124(e_player) {
 function private function_9d66ea6f(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:x65>");
+            println(e_player.name + "<dev string:x65>");
         }
     #/
     level.var_74170866.e_player = e_player;
@@ -218,11 +217,11 @@ function private function_9d66ea6f(e_item, e_player) {
 // Size: 0xe4
 function private start_step_2() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x92>");
     #/
     if (zm_white_main_quest::function_6cebbce1()) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xaa>");
         #/
     }
     while (zm_white_main_quest::function_6cebbce1()) {
@@ -241,7 +240,7 @@ function private run_step_2() {
     level endon(#"end_game", #"hash_7456b125dbebe41c");
     pixbeginevent(#"hash_2573979b6db7cb52");
     /#
-        iprintlnbold("<unknown string>" + level.var_74170866.s_fireplace.script_string);
+        iprintlnbold("<dev string:xfe>" + level.var_74170866.s_fireplace.script_string);
     #/
     level.var_74170866.s_fireplace.var_7126b6eb triggerenable(1);
     level thread function_7130498();
@@ -276,7 +275,7 @@ function function_7130498() {
         waitresult = level.var_74170866.s_fireplace.var_7126b6eb waittill(#"damage");
         if (istouching(waitresult.position, level.var_74170866.s_fireplace.var_7126b6eb)) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x10f>");
             #/
             level flag::set(#"chimney_grenaded");
         }
@@ -294,7 +293,7 @@ function function_20b366ef() {
         v_origin = s_waitresult.var_814c9389;
         if (istouching(v_origin, level.var_74170866.s_fireplace.var_7126b6eb)) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x13c>");
             #/
             level flag::set(#"chimney_grenaded");
         }
@@ -350,8 +349,8 @@ function private function_a66f0de2() {
 function private function_b9a31cb(e_item, e_player) {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(e_player.name + "<unknown string>");
-            println(e_player.name + "<unknown string>");
+            iprintlnbold(e_player.name + "<dev string:x16d>");
+            println(e_player.name + "<dev string:x16d>");
         }
     #/
     exploder::stop_exploder("fxexp_mk2_Z_fire_chimney_" + level.var_74170866.s_fireplace.script_string + "_house");
@@ -455,8 +454,8 @@ function private function_cba90c3c() {
 function private complete_quest() {
     /#
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-            iprintlnbold(level.var_74170866.e_player.name + "<unknown string>");
-            println(level.var_74170866.e_player.name + "<unknown string>");
+            iprintlnbold(level.var_74170866.e_player.name + "<dev string:x18a>");
+            println(level.var_74170866.e_player.name + "<dev string:x18a>");
         }
     #/
     level.var_74170866.e_player = undefined;

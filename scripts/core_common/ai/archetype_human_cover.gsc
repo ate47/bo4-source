@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\laststand_shared.gsc;
 #using scripts\core_common\ai\archetype_cover_utility.gsc;
 #using scripts\core_common\ai\archetype_utility.gsc;

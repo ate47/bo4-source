@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -77,8 +76,8 @@ function shield_charge_powerup(item, player) {
 function shield_on_hud(drop_item, player_team) {
     /#
         self endon(#"disconnect");
-        hudelem = hud::function_f5a689d("<unknown string>", 2);
-        hudelem hud::setpoint("<unknown string>", undefined, 0, zombie_utility::get_zombie_var(#"zombie_timer_offset") - zombie_utility::get_zombie_var(#"zombie_timer_offset_interval") * 2);
+        hudelem = hud::function_f5a689d("<dev string:x38>", 2);
+        hudelem hud::setpoint("<dev string:x44>", undefined, 0, zombie_utility::get_zombie_var(#"zombie_timer_offset") - zombie_utility::get_zombie_var(#"zombie_timer_offset_interval") * 2);
         hudelem.sort = 0.5;
         hudelem.alpha = 0;
         hudelem fadeovertime(0.5);
@@ -98,7 +97,7 @@ function shield_on_hud(drop_item, player_team) {
     // Size: 0xd4
     function full_ammo_move_hud(player_team) {
         players = getplayers(player_team);
-        players[0] playsoundtoteam("<unknown string>", player_team);
+        players[0] playsoundtoteam("<dev string:x4a>", player_team);
         wait(0.5);
         move_fade_time = 1.5;
         self fadeovertime(move_fade_time);
@@ -114,11 +113,11 @@ function shield_on_hud(drop_item, player_team) {
     // Checksum 0x889aec02, Offset: 0x518
     // Size: 0x7c
     function shield_devgui() {
-        level flagsys::wait_till("<unknown string>");
+        level flagsys::wait_till("<dev string:x5a>");
         wait(1);
         zm_devgui::add_custom_devgui_callback(&shield_devgui_callback);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x75>");
+        adddebugcommand("<dev string:xc8>");
     }
 
     // Namespace zm_powerup_shield_charge/zm_powerup_shield_charge

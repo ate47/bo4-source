@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\exploder_shared.csc;
 #using scripts\core_common\flagsys_shared.csc;
 #using scripts\core_common\struct.csc;
@@ -36,7 +35,7 @@ function __init__() {
 function function_fb0bd6b9(localclientnum) {
     nixie_tube_cage = getdynent("nixie_tube_cage");
     if (!isdefined(nixie_tube_cage)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     nixie_tube_cage.canuse = 0;

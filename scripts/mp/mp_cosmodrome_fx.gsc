@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_cosmodrome_fx;
 
 // Namespace mp_cosmodrome_fx/mp_cosmodrome_fx

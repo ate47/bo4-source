@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\core_common\vehicles\smart_bomb.gsc;
 #using scripts\core_common\player\player_shared.gsc;
@@ -104,11 +103,11 @@ function function_b23e4b45() {
     ispointonnavmesh = ispointonnavmesh(self.origin, self getpathfindingradius());
     if (!ispointonnavmesh) {
         /#
-            recordsphere(self.origin, 3, (1, 0, 0), "<unknown string>");
+            recordsphere(self.origin, 3, (1, 0, 0), "<dev string:x38>");
         #/
     } else {
         /#
-            recordsphere(self.origin, 3, (0, 1, 0), "<unknown string>");
+            recordsphere(self.origin, 3, (0, 1, 0), "<dev string:x38>");
         #/
     }
     if (!ispointonnavmesh) {
@@ -120,24 +119,24 @@ function function_b23e4b45() {
                 var_921106a1 = results[#"position"];
                 if (bullettracepassed(self.origin + (0, 0, 10), var_921106a1, 0, self, self, 0, 0)) {
                     /#
-                        recordline(self.origin + (0, 0, 10), var_921106a1, (0, 0, 1), "<unknown string>");
+                        recordline(self.origin + (0, 0, 10), var_921106a1, (0, 0, 1), "<dev string:x38>");
                     #/
                     /#
-                        recordsphere(self.origin + (0, 0, 10), 3, (0, 0, 1), "<unknown string>");
+                        recordsphere(self.origin + (0, 0, 10), 3, (0, 0, 1), "<dev string:x38>");
                     #/
                     /#
-                        recordsphere(var_921106a1, 3, (0, 0, 1), "<unknown string>");
+                        recordsphere(var_921106a1, 3, (0, 0, 1), "<dev string:x38>");
                     #/
                     newpos = var_921106a1;
                 } else {
                     /#
-                        recordline(self.origin + (0, 0, 10), var_921106a1, (1, 0.5, 0), "<unknown string>");
+                        recordline(self.origin + (0, 0, 10), var_921106a1, (1, 0.5, 0), "<dev string:x38>");
                     #/
                     /#
-                        recordsphere(self.origin + (0, 0, 10), 3, (1, 0.5, 0), "<unknown string>");
+                        recordsphere(self.origin + (0, 0, 10), 3, (1, 0.5, 0), "<dev string:x38>");
                     #/
                     /#
-                        recordsphere(var_921106a1, 3, (1, 0.5, 0), "<unknown string>");
+                        recordsphere(var_921106a1, 3, (1, 0.5, 0), "<dev string:x38>");
                     #/
                 }
             }
@@ -596,10 +595,10 @@ function damage_armor_activati_(entity, tacpoints) {
                 continue;
             }
             /#
-                record3dtext("<unknown string>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "<unknown string>");
+                record3dtext("<dev string:x41>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "<dev string:x38>");
             #/
             /#
-                recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
+                recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "<dev string:x38>");
             #/
         }
     }
@@ -644,7 +643,7 @@ function function_3e16dec3(params) {
             tacpoints = damage_armor_activati_(self, tacpoints);
             if (isdefined(tacpoints) && tacpoints.size != 0) {
                 /#
-                    record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0));
+                    record3dtext("<dev string:x49>", self.origin - (0, 0, 20), (1, 0, 0));
                 #/
                 newpos = tacpoints[0].origin;
                 newpos = getclosestpointonnavmesh(newpos, 500, self getpathfindingradius() * 1.2, self.var_6e9e073d);
@@ -668,7 +667,7 @@ function function_3e16dec3(params) {
                     tacpoints = damage_armor_activati_(self, tacpoints);
                     if (isdefined(tacpoints) && tacpoints.size != 0) {
                         /#
-                            record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0));
+                            record3dtext("<dev string:x49>", self.origin - (0, 0, 20), (1, 0, 0));
                         #/
                         newpos = tacpoints[0].origin;
                         newpos = getclosestpointonnavmesh(newpos, 500, self getpathfindingradius() * 1.2);
@@ -893,7 +892,7 @@ function function_d55a99f2(var_4700521d = 500, var_53050fec = 1, var_30336a7c = 
         return true;
     }
     /#
-        record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0));
+        record3dtext("<dev string:x58>", self.origin - (0, 0, 20), (1, 0, 0));
     #/
     newpos = getclosestpointonnavmesh(self.origin, var_4700521d, self getpathfindingradius() * 1.2);
     if (isdefined(newpos)) {
@@ -904,10 +903,10 @@ function function_d55a99f2(var_4700521d = 500, var_53050fec = 1, var_30336a7c = 
                 return false;
             }
             /#
-                record3dtext("<unknown string>", self.origin - (0, 0, 20), (0, 0, 1));
+                record3dtext("<dev string:x6b>", self.origin - (0, 0, 20), (0, 0, 1));
             #/
             /#
-                recordline(newpos, self.origin, (0, 0, 1), "<unknown string>");
+                recordline(newpos, self.origin, (0, 0, 1), "<dev string:x38>");
             #/
         }
         self.origin = newpos;

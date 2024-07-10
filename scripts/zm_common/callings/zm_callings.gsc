@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -204,7 +203,7 @@ function private function_104c5d35() {
             self luinotifyevent(#"zombie_callings_notification", 4, 3, function_7b01d125(self.var_e06cb519, self.var_d0b65bbe) + 1, self.var_e06cb519 + 1, self getentitynumber());
             self stats::inc_stat(#"playercalling", #"seasons", self.var_e06cb519, #"factions", self.var_d0b65bbe, #"hash_7a54171ce10db54f", 1);
             /#
-                iprintln("<unknown string>" + function_9e72a96(var_acbd7392) + "<unknown string>" + function_9e72a96(self.var_d0b65bbe));
+                iprintln("<dev string:x38>" + function_9e72a96(var_acbd7392) + "<dev string:x53>" + function_9e72a96(self.var_d0b65bbe));
             #/
         }
     }
@@ -224,7 +223,7 @@ function function_4368582a(var_d1017f27, n_value = 1) {
             self addrankxpvalue("faction_calling_task", var_d1017f27.n_xp);
             self luinotifyevent(#"zombie_callings_notification", 3, 2, var_d1017f27.var_de86e878, self getentitynumber());
             /#
-                iprintln(self.name + "<unknown string>" + function_9e72a96(var_d1017f27.var_ad971622) + "<unknown string>" + var_d1017f27.n_xp + "<unknown string>");
+                iprintln(self.name + "<dev string:x7c>" + function_9e72a96(var_d1017f27.var_ad971622) + "<dev string:x8f>" + var_d1017f27.n_xp + "<dev string:xa7>");
             #/
             self function_104c5d35();
             uploadstats(self);
@@ -233,7 +232,7 @@ function function_4368582a(var_d1017f27, n_value = 1) {
             /#
                 progress = var_e4edaaf0 + n_value;
                 target = n_target;
-                iprintln(self.name + "<unknown string>" + function_9e72a96(var_d1017f27.var_ad971622) + "<unknown string>" + progress + "<unknown string>" + target);
+                iprintln(self.name + "<dev string:x7c>" + function_9e72a96(var_d1017f27.var_ad971622) + "<dev string:xad>" + progress + "<dev string:xbf>" + target);
             #/
             self function_66714869(var_d1017f27, self.var_e06cb519, self.var_bf6f8ec3, n_value);
         }

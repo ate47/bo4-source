@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\gestures.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\popups_shared.gsc;
@@ -174,7 +173,7 @@ function on_menu_response(params) {
     }
     if (menu == "sprays_and_gestures") {
         /#
-            iprintlnbold("<unknown string>" + intpayload);
+            iprintlnbold("<dev string:x38>" + intpayload);
         #/
         return;
     }

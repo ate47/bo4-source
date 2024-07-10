@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\zm\zm_lightning_chain.gsc;
 #using scripts\zm_common\zm_weapons.gsc;

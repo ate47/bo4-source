@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\draft.gsc;
 #using scripts\abilities\ability_util.gsc;
 #using scripts\weapons\weapon_utils.gsc;

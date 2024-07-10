@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_mountain2_sound;
 
 // Namespace mp_mountain2_sound/mp_mountain2_sound

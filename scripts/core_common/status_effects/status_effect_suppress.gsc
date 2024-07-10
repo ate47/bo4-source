@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\core_common\serverfield_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;

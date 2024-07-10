@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\struct.csc;
 
 #namespace multi_extracam;

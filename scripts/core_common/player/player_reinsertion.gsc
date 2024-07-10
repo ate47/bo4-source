@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\math_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\player_insertion.gsc;
@@ -641,7 +640,7 @@ function function_5425f45d() {
         while (true) {
             if (getdvar(#"hash_3fb4a63926f3fa15", 0) > 0) {
                 function_9536aa3d();
-                setdvar(#"hash_3fb4a63926f3fa15", "<unknown string>");
+                setdvar(#"hash_3fb4a63926f3fa15", "<dev string:x38>");
             }
             waitframe(1);
         }

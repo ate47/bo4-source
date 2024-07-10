@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace stats;
 
 /#
@@ -14,9 +13,9 @@
                 return;
             }
             for (i = 1; i < vararg.size; i++) {
-                pathstr = pathstr + "<unknown string>" + (ishash(vararg[i]) ? function_9e72a96(vararg[i]) : vararg[i]);
+                pathstr = pathstr + "<dev string:x38>" + (ishash(vararg[i]) ? function_9e72a96(vararg[i]) : vararg[i]);
             }
-            println("<unknown string>" + pathstr);
+            println("<dev string:x3c>" + pathstr);
         }
     }
 

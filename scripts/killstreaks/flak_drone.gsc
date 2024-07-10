@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\core_common\vehicle_shared.gsc;
 #using scripts\core_common\vehicle_death_shared.gsc;
@@ -93,7 +92,7 @@ function state_off_update(params) {
                         point._scoredebug[#"disttoorigin"] = spawnstruct();
                     }
                     point._scoredebug[#"disttoorigin"].score = disttooriginscore;
-                    point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
+                    point._scoredebug[#"disttoorigin"].scorename = "<dev string:x38>";
                 #/
                 point.score += disttooriginscore;
                 if (point.score > best_score) {
@@ -343,7 +342,7 @@ function flakdronedamageoverride(einflictor, eattacker, idamage, idflags, smeans
 function spawn(parent, ondeathcallback) {
     if (!isnavvolumeloaded()) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x47>");
         #/
         return undefined;
     }

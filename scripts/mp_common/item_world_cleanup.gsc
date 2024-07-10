@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\mp_common\item_world.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -263,7 +262,7 @@ function private function_ada16428(deathcircle, var_898879a6) {
             if (safedelete) {
                 /#
                     if (getdvarint(#"hash_55e8ad2b1d030870", 0)) {
-                        iprintlnbold("<unknown string>" + vehicle.scriptvehicletype + "<unknown string>" + vehicle.origin);
+                        iprintlnbold("<dev string:x38>" + vehicle.scriptvehicletype + "<dev string:x45>" + vehicle.origin);
                     }
                     deleted++;
                 #/
@@ -278,7 +277,7 @@ function private function_ada16428(deathcircle, var_898879a6) {
     arrayremovevalue(level.var_cd8f416a, undefined, 0);
     /#
         if (getdvarint(#"hash_55e8ad2b1d030870", 0) && deleted > 0) {
-            iprintlnbold("<unknown string>" + level.var_cd8f416a.size + "<unknown string>" + deleted);
+            iprintlnbold("<dev string:x4d>" + level.var_cd8f416a.size + "<dev string:x5f>" + deleted);
         }
     #/
 }

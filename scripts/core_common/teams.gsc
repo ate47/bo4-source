@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace teams;
 
 // Namespace teams/teams
@@ -73,7 +72,7 @@ function is_team_empty(team) {
 function function_959bac94() {
     foreach (team in level.teams) {
         if (self is_team_empty(team)) {
-            println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team);
+            println("<dev string:x38>" + "<dev string:x4c>" + self.name + "<dev string:x61>" + team);
             /#
                 function_d28f6fa0(team);
             #/
@@ -95,13 +94,13 @@ function function_959bac94() {
             if (isdefined(level.teams[team])) {
                 team_str = level.teams[team];
             }
-            voip = "<unknown string>";
+            voip = "<dev string:x73>";
             if (isdefined(level.var_75dffa9f[team])) {
-                voip += level.var_75dffa9f[team] == #"game" ? "<unknown string>" : "<unknown string>";
+                voip += level.var_75dffa9f[team] == #"game" ? "<dev string:x7b>" : "<dev string:x82>";
             } else {
-                voip += "<unknown string>";
+                voip += "<dev string:x8b>";
             }
-            println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team_str + "<unknown string>" + voip);
+            println("<dev string:x38>" + "<dev string:x97>" + self.name + "<dev string:x9c>" + team_str + "<dev string:xa1>" + voip);
         }
     }
 
@@ -113,7 +112,7 @@ function function_959bac94() {
         foreach (party_member in party.party_members) {
             var_2798314b = party_member getparty();
             if (var_2798314b.var_a15e4438 != party.var_a15e4438) {
-                assertmsg("<unknown string>");
+                assertmsg("<dev string:xa5>");
             }
         }
     }

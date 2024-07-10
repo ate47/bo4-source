@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm\ai\zm_ai_nosferatu.gsc;
 #using scripts\zm\zm_mansion_special_rounds.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_4194df57536e11ed;
 #using script_50719ad9bcd4b183;
 #using scripts\core_common\flagsys_shared.gsc;
@@ -343,7 +342,7 @@ function private _play_movie_for_player(str_movie, str_type, show_black_screen, 
         str_menu = "full_screen_movie";
         break;
     default:
-        assertmsg("<unknown string>" + str_type + "<unknown string>");
+        assertmsg("<dev string:x38>" + str_type + "<dev string:x4f>");
         break;
     }
     if (str_type == "pip") {
@@ -622,7 +621,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
         }
         n_debug_time = gettime();
         if (n_debug_time - level.n_fade_debug_time > 5000) {
-            printtoprightln("<unknown string>");
+            printtoprightln("<dev string:x54>");
         }
         level.n_fade_debug_time = n_debug_time;
     #/

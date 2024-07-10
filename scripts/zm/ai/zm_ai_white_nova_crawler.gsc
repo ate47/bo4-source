@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -88,11 +87,11 @@ function __init__() {
     animationstatenetwork::registernotetrackhandlerfunction("phase_start", &function_3bd2bba5);
     spawner::add_archetype_spawn_function(#"nova_crawler", &function_582a3075);
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>", "<unknown string>");
-        zm_devgui::function_c7dd7a17("<unknown string>", "<unknown string>");
-        zm_devgui::function_c7dd7a17("<unknown string>", "<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>", "<dev string:x47>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>", "<dev string:x5c>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>", "<dev string:x70>");
+        adddebugcommand("<dev string:x86>");
+        adddebugcommand("<dev string:xbb>");
     #/
     clientfield::register("actor", "nova_buff_aura_clientfield", 8000, 1, "int");
     clientfield::register("actor", "white_nova_crawler_phase_end_clientfield", 8000, 1, "counter");
@@ -268,7 +267,7 @@ function private function_e5ffb77c(start, end, duration) {
             line(start, end, (1, 0, 0), 1, 1);
             sphere(end, 2, (1, 0, 0), 1, 0, 4, 1);
             distance = distance(start, end);
-            print3d(end + (0, 0, 30), "<unknown string>" + distance, (1, 0, 0), 1, 1, 1);
+            print3d(end + (0, 0, 30), "<dev string:x115>" + distance, (1, 0, 0), 1, 1, 1);
             current_time -= 1;
         }
     #/

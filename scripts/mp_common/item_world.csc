@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_shared.csc;
 #using scripts\mp_common\item_world_util.csc;
 #using script_68c78107b4aa059c;
@@ -149,8 +148,8 @@ function private function_952d97dc(localclientnum) {
     // Checksum 0x7d39b985, Offset: 0x1618
     // Size: 0x174
     function private function_cdd9b388() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x38>");
+        self endon("<dev string:x38>");
         self endon(#"shutdown");
         while (true) {
             waitframe(1);
@@ -159,7 +158,7 @@ function private function_952d97dc(localclientnum) {
                     origin = self.origin;
                     var_f4b807cb = function_2e3efdda(origin, undefined, 128, 2000);
                     foreach (item in var_f4b807cb) {
-                        print3d(item.origin, "<unknown string>" + item.networkid + "<unknown string>" + item.itementry.name, (0, 0, 1), 1, 0.4);
+                        print3d(item.origin, "<dev string:x4b>" + item.networkid + "<dev string:x50>" + item.itementry.name, (0, 0, 1), 1, 0.4);
                     }
                 }
             }
@@ -800,7 +799,7 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         function_d2f95c1a(localclientnum, vehicleentnum, var_2ccf7a1c);
         break;
     default:
-        assertmsg("<unknown string>" + eventtype);
+        assertmsg("<dev string:x54>" + eventtype);
         break;
     }
 }

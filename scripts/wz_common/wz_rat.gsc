@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\laststand_warzone.gsc;
 #using scripts\mp_common\item_world.gsc;
 #using scripts\core_common\bots\bot.gsc;
@@ -28,13 +27,13 @@
         init();
         level.rat.common.gethostplayer = &util::gethostplayer;
         level.rat.deathcount = 0;
-        addratscriptcmd("<unknown string>", &function_70f41194);
-        addratscriptcmd("<unknown string>", &function_31980089);
-        addratscriptcmd("<unknown string>", &function_1251949b);
-        addratscriptcmd("<unknown string>", &function_684893c8);
-        addratscriptcmd("<unknown string>", &function_7eabbc02);
-        addratscriptcmd("<unknown string>", &function_d50abf44);
-        addratscriptcmd("<unknown string>", &function_89684f6a);
+        addratscriptcmd("<dev string:x38>", &function_70f41194);
+        addratscriptcmd("<dev string:x54>", &function_31980089);
+        addratscriptcmd("<dev string:x65>", &function_1251949b);
+        addratscriptcmd("<dev string:x79>", &function_684893c8);
+        addratscriptcmd("<dev string:x8b>", &function_7eabbc02);
+        addratscriptcmd("<dev string:x98>", &function_d50abf44);
+        addratscriptcmd("<dev string:xaa>", &function_89684f6a);
         setdvar(#"rat_death_count", 0);
     }
 
@@ -62,7 +61,7 @@
                 if (level.players.size <= remaining) {
                     break;
                 }
-                if (!isdefined(level.players[i].bot) || level.players[i].team == hostteam || level.players[i].team == "<unknown string>") {
+                if (!isdefined(level.players[i].bot) || level.players[i].team == hostteam || level.players[i].team == "<dev string:xc0>") {
                     continue;
                 }
                 bot::remove_bot(level.players[i]);
@@ -112,7 +111,7 @@
         player = [[ level.rat.common.gethostplayer ]]();
         numitems = 1000;
         distance = 1000;
-        name = "<unknown string>";
+        name = "<dev string:xc7>";
         if (isdefined(params.var_1d978d3)) {
             numitems = int(params.var_1d978d3);
         }
@@ -124,15 +123,15 @@
         }
         items = item_world::function_2e3efdda(player.origin, undefined, numitems, distance);
         foreach (item in items) {
-            if (item.itementry.name == "<unknown string>") {
+            if (item.itementry.name == "<dev string:xca>") {
                 continue;
             }
             if (isdefined(params.handler)) {
-                if (params.handler != item.itementry.handler && params.handler != "<unknown string>") {
+                if (params.handler != item.itementry.handler && params.handler != "<dev string:xe1>") {
                     continue;
                 }
             }
-            if (name == "<unknown string>" || item.itementry.name == name) {
+            if (name == "<dev string:xc7>" || item.itementry.name == name) {
                 function_55e20e75(params._id, item.origin);
             }
         }

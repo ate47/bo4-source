@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\duplicaterender_mgr.csc;
 #using scripts\core_common\clientfield_shared.csc;
 #using scripts\core_common\audio_shared.csc;
@@ -42,7 +41,7 @@ function function_3e8d9b27(previs_weapon) {
 // Checksum 0xfa28b887, Offset: 0x380
 // Size: 0x66
 function function_783a1c07(weapon) {
-    assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
+    assert(isdefined(weapon.customsettings), "<dev string:x38>" + weapon.name);
     level.mute_smoke_custom_settings = getscriptbundle(weapon.customsettings);
 }
 

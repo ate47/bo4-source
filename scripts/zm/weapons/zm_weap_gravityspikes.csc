@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_vortex.csc;
 #using script_70ab01a7690ea256;
 #using scripts\zm_common\zm_utility.csc;

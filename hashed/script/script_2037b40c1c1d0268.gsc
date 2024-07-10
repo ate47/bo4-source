@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace ct_progressbar_status;
@@ -56,7 +55,7 @@ class cct_progressbar_status : cluielem {
             set_data(localclientnum, "_state", 10);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cct_progressbar_status/ct_progressbar_status

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace plannerblackboard;
 
 /#
@@ -69,13 +68,13 @@ function setattribute(blackboard, attribute, value, readonly = 0) {
     assert(isstring(attribute) || ishash(attribute));
     assert(isarray(blackboard.values));
     assert(isarray(blackboard.undostack));
-    assert(blackboard.mode === "<unknown string>");
+    assert(blackboard.mode === "<dev string:x38>");
     /#
         if (isdefined(level.__ai_debugplannerblackboard) && level.__ai_debugplannerblackboard > 0 && !readonly) {
-            assert(!isstruct(value), "<unknown string>");
+            assert(!isstruct(value), "<dev string:x3d>");
             if (isarray(value)) {
                 foreach (entryvalue in value) {
-                    assert(!isstruct(entryvalue), "<unknown string>");
+                    assert(!isstruct(entryvalue), "<dev string:x87>");
                 }
             }
         }

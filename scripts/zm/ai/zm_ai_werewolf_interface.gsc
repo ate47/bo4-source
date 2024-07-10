@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\ai_interface.gsc;
 #using scripts\zm\ai\zm_ai_werewolf.gsc;
 

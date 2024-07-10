@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -421,7 +420,7 @@ function all_chunks_destroyed(barrier, barrier_chunks) {
             return false;
         }
     } else if (isdefined(barrier_chunks)) {
-        assert(isdefined(barrier_chunks), "sound_done");
+        assert(isdefined(barrier_chunks), "<dev string:x38>");
         for (i = 0; i < barrier_chunks.size; i++) {
             if (barrier_chunks[i] get_chunk_state() != "destroyed") {
                 return false;
@@ -670,7 +669,7 @@ function create_zombie_point_of_interest_attractor_positions(var_b09c2334 = 15, 
             /#
                 if (isdefined(level.var_565d6ce0) && level.var_565d6ce0) {
                     recordstar(queryresult.data[i].origin, (1, 0, 0));
-                    record3dtext("<unknown string>", queryresult.data[i].origin + (0, 0, 8), (1, 0, 0));
+                    record3dtext("<dev string:x7a>", queryresult.data[i].origin + (0, 0, 8), (1, 0, 0));
                 }
             #/
             continue;
@@ -684,7 +683,7 @@ function create_zombie_point_of_interest_attractor_positions(var_b09c2334 = 15, 
                 /#
                     if (isdefined(level.var_565d6ce0) && level.var_565d6ce0) {
                         recordstar(queryresult.data[i].origin, (1, 0, 0));
-                        record3dtext("<unknown string>", queryresult.data[i].origin + (0, 0, 8), (1, 0, 0));
+                        record3dtext("<dev string:x91>", queryresult.data[i].origin + (0, 0, 8), (1, 0, 0));
                     }
                 #/
             }
@@ -1636,7 +1635,7 @@ function non_destroyed_bar_board_order(origin, chunks) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x7fed0252, Offset: 0x5a70
 // Size: 0x532
-function non_destroyed_grate_order(origin, chunks_grate) {
+function vehicle_outline_watcher(origin, chunks_grate) {
     grate_order = [];
     grate_order1 = [];
     grate_order2 = [];
@@ -1676,28 +1675,28 @@ function non_destroyed_grate_order(origin, chunks_grate) {
                     }
                     if (grate_order2[i].state == "repaired") {
                         /#
-                            iprintlnbold("<unknown string>");
+                            iprintlnbold("<dev string:xa7>");
                         #/
                         grate_order3[i] thread show_grate_pull();
                         return grate_order2[i];
                     }
                     if (grate_order3[i].state == "repaired") {
                         /#
-                            iprintlnbold("<unknown string>");
+                            iprintlnbold("<dev string:xb5>");
                         #/
                         grate_order4[i] thread show_grate_pull();
                         return grate_order3[i];
                     }
                     if (grate_order4[i].state == "repaired") {
                         /#
-                            iprintlnbold("<unknown string>");
+                            iprintlnbold("<dev string:xc3>");
                         #/
                         grate_order5[i] thread show_grate_pull();
                         return grate_order4[i];
                     }
                     if (grate_order5[i].state == "repaired") {
                         /#
-                            iprintlnbold("<unknown string>");
+                            iprintlnbold("<dev string:xd1>");
                         #/
                         grate_order6[i] thread show_grate_pull();
                         return grate_order5[i];
@@ -1769,7 +1768,7 @@ function in_playable_area() {
         level.playable_area = getentarray("player_volume", "script_noteworthy");
     }
     if (!isdefined(level.playable_area) && !isdefined(level.var_a2a9b2de)) {
-        println("<unknown string>");
+        println("<dev string:xdf>");
         return true;
     }
     if (isdefined(level.var_a2a9b2de)) {
@@ -1807,7 +1806,7 @@ function get_closest_non_destroyed_chunk(origin, barrier, barrier_chunks) {
     } else if (isdefined(chunks)) {
         return non_destroyed_bar_board_order(origin, chunks);
     } else if (isdefined(chunks_grate)) {
-        return non_destroyed_grate_order(origin, chunks_grate);
+        return vehicle_outline_watcher(origin, chunks_grate);
     }
     return undefined;
 }
@@ -2002,41 +2001,41 @@ function grate_order_destroyed(chunks_repair_grate) {
             if (isdefined(grate_repair_order1[i])) {
                 if (grate_repair_order6[i].state == "destroyed") {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x125>");
                     #/
                     return grate_repair_order6[i];
                 }
                 if (grate_repair_order5[i].state == "destroyed") {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x134>");
                     #/
                     grate_repair_order6[i] thread show_grate_repair();
                     return grate_repair_order5[i];
                 }
                 if (grate_repair_order4[i].state == "destroyed") {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x143>");
                     #/
                     grate_repair_order5[i] thread show_grate_repair();
                     return grate_repair_order4[i];
                 }
                 if (grate_repair_order3[i].state == "destroyed") {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x152>");
                     #/
                     grate_repair_order4[i] thread show_grate_repair();
                     return grate_repair_order3[i];
                 }
                 if (grate_repair_order2[i].state == "destroyed") {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x161>");
                     #/
                     grate_repair_order3[i] thread show_grate_repair();
                     return grate_repair_order2[i];
                 }
                 if (grate_repair_order1[i].state == "destroyed") {
                     /#
-                        iprintlnbold("<unknown string>");
+                        iprintlnbold("<dev string:x170>");
                     #/
                     grate_repair_order2[i] thread show_grate_repair();
                     return grate_repair_order1[i];
@@ -2102,7 +2101,7 @@ function get_zombie_hint(ref) {
     if (isdefined(level.zombie_hints[ref])) {
         return level.zombie_hints[ref];
     }
-    println("<unknown string>" + ref);
+    println("<dev string:x17f>" + ref);
     return level.zombie_hints[#"undefined"];
 }
 
@@ -2164,7 +2163,7 @@ function play_sound_at_pos(ref, pos, ent) {
         return;
     }
     if (!isdefined(level.zombie_sounds[ref])) {
-        assertmsg("<unknown string>" + ref + "<unknown string>");
+        assertmsg("<dev string:x19d>" + ref + "<dev string:x1a7>");
         return;
     }
     playsoundatposition(level.zombie_sounds[ref], pos);
@@ -2186,7 +2185,7 @@ function play_sound_on_ent(ref) {
         return;
     }
     if (!isdefined(level.zombie_sounds[ref])) {
-        assertmsg("<unknown string>" + ref + "<unknown string>");
+        assertmsg("<dev string:x19d>" + ref + "<dev string:x1a7>");
         return;
     }
     self playsound(level.zombie_sounds[ref]);
@@ -2204,7 +2203,7 @@ function play_loopsound_on_ent(ref) {
         return;
     }
     if (!isdefined(level.zombie_sounds[ref])) {
-        assertmsg("<unknown string>" + ref + "<unknown string>");
+        assertmsg("<dev string:x19d>" + ref + "<dev string:x1a7>");
         return;
     }
     self playsound(level.zombie_sounds[ref]);
@@ -2253,7 +2252,7 @@ function play_loopsound_on_ent(ref) {
     // Size: 0x5c
     function debug_print(msg) {
         if (getdvarint(#"zombie_debug", 0) > 0) {
-            println("<unknown string>" + msg);
+            println("<dev string:x211>" + msg);
         }
     }
 
@@ -2311,7 +2310,7 @@ function play_loopsound_on_ent(ref) {
                 }
                 circle(self.attack_spots[i], 12, (0, 1, 0), 0, 1, 1);
             }
-            msg = "<unknown string>" + count + "<unknown string>" + self.attack_spots_taken.size;
+            msg = "<dev string:x226>" + count + "<dev string:x229>" + self.attack_spots_taken.size;
             print3d(self.origin, msg);
         }
     }
@@ -2383,7 +2382,7 @@ function play_sound_2d(sound) {
 // Checksum 0x200bd6f8, Offset: 0x82b0
 // Size: 0x6c
 function include_weapon(weapon_name, in_box) {
-    println("<unknown string>" + function_9e72a96(weapon_name));
+    println("<dev string:x22f>" + function_9e72a96(weapon_name));
     if (!isdefined(in_box)) {
         in_box = 1;
     }
@@ -2659,7 +2658,7 @@ function decrement_is_drinking() {
     if (self.is_drinking > 0) {
         self.is_drinking--;
     } else {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x249>");
     }
     if (self.is_drinking == 0) {
         self enableoffhandweapons();
@@ -2710,7 +2709,7 @@ function function_b7e5029f() {
     if (level.var_1d72fbba > 0) {
         level.var_1d72fbba--;
     } else {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x26a>");
     }
     level zm_player::function_8ef51109();
 }
@@ -2903,7 +2902,7 @@ function giveachievement_wrapper(achievement, all_players) {
         return;
     }
     if (!isplayer(self)) {
-        println("<unknown string>");
+        println("<dev string:x29b>");
         return;
     }
     self giveachievement(achievement);
@@ -2941,7 +2940,7 @@ function getyawtospot(spot) {
 // Checksum 0xb872a98b, Offset: 0x9ac0
 // Size: 0x3e
 function disable_react() {
-    assert(isalive(self), "<unknown string>");
+    assert(isalive(self), "<dev string:x2dd>");
     self.allowreact = 0;
 }
 
@@ -2950,7 +2949,7 @@ function disable_react() {
 // Checksum 0x9c33689, Offset: 0x9b08
 // Size: 0x42
 function enable_react() {
-    assert(isalive(self), "<unknown string>");
+    assert(isalive(self), "<dev string:x302>");
     self.allowreact = 1;
 }
 
@@ -3208,7 +3207,7 @@ function track_players_intersection_tracker() {
         foreach (var_e42ab7b4 in var_93bba48c) {
             /#
                 if (!level.var_9db63456) {
-                    iprintlnbold("<unknown string>" + var_e42ab7b4.var_d28c72e5);
+                    iprintlnbold("<dev string:x326>" + var_e42ab7b4.var_d28c72e5);
                     continue;
                 }
             #/
@@ -3229,7 +3228,7 @@ function track_players_intersection_tracker() {
             }
             if (!var_1a1f860b) {
                 /#
-                    iprintlnbold("<unknown string>" + var_e42ab7b4.var_d28c72e5);
+                    iprintlnbold("<dev string:x351>" + var_e42ab7b4.var_d28c72e5);
                 #/
                 foreach (e_player in level.players) {
                     e_player playlocalsound(level.zmb_laugh_alias);
@@ -3247,7 +3246,7 @@ function track_players_intersection_tracker() {
 // Checksum 0xa623e8a8, Offset: 0xaa80
 // Size: 0x160
 function is_player_looking_at(origin, dot, do_trace, ignore_ent) {
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x371>");
     if (!isdefined(dot)) {
         dot = 0.7;
     }
@@ -3538,13 +3537,13 @@ function do_player_general_vox(category, type, timer, chance) {
 // Size: 0xd4
 function general_vox_timer(timer, type) {
     level endon(#"end_game");
-    println("<unknown string>" + type + "<unknown string>" + timer + "<unknown string>");
+    println("<dev string:x3a1>" + type + "<dev string:x3c1>" + timer + "<dev string:x3c7>");
     while (timer > 0) {
         wait(1);
         timer--;
     }
     level.votimer[type] = timer;
-    println("<unknown string>" + type + "<unknown string>" + timer + "<unknown string>");
+    println("<dev string:x3cb>" + type + "<dev string:x3c1>" + timer + "<dev string:x3c7>");
 }
 
 // Namespace zm_utility/zm_utility
@@ -3725,7 +3724,7 @@ function respawn_path_nodes() {
     }
     for (i = 0; i < level._spawned_path_nodes.size; i++) {
         node_struct = level._spawned_path_nodes[i];
-        println("<unknown string>" + node_struct.origin);
+        println("<dev string:x3e9>" + node_struct.origin);
         node_struct.node = spawn_path_node_internal(node_struct.origin, node_struct.angles, node_struct.k1, node_struct.v1, node_struct.k2, node_struct.v2);
     }
 }
@@ -3736,9 +3735,9 @@ function respawn_path_nodes() {
 // Size: 0x64
 function undo_link_changes() {
     /#
-        println("<unknown string>");
-        println("<unknown string>");
-        println("<unknown string>");
+        println("<dev string:x40c>");
+        println("<dev string:x40c>");
+        println("<dev string:x412>");
     #/
     delete_spawned_path_nodes();
 }
@@ -3749,9 +3748,9 @@ function undo_link_changes() {
 // Size: 0x64
 function redo_link_changes() {
     /#
-        println("<unknown string>");
-        println("<unknown string>");
-        println("<unknown string>");
+        println("<dev string:x40c>");
+        println("<dev string:x40c>");
+        println("<dev string:x42d>");
     #/
     respawn_path_nodes();
 }
@@ -3857,7 +3856,7 @@ function get_player_index(player) {
     assert(isplayer(player));
     assert(isdefined(player.characterindex));
     /#
-        if (player.entity_num == 0 && getdvarstring(#"zombie_player_vo_overwrite") != "<unknown string>") {
+        if (player.entity_num == 0 && getdvarstring(#"zombie_player_vo_overwrite") != "<dev string:x226>") {
             new_vo_index = getdvarint(#"zombie_player_vo_overwrite", 0);
             return new_vo_index;
         }

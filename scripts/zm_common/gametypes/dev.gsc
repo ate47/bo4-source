@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\util.gsc;
 #using scripts\zm_common\gametypes\globallogic_utils.gsc;
 #using scripts\zm_common\gametypes\globallogic_score.gsc;
@@ -39,11 +38,11 @@
     // Checksum 0x732fb5f3, Offset: 0x168
     // Size: 0x320
     function init() {
-        if (getdvarstring(#"scr_show_hq_spawns") == "<unknown string>") {
-            setdvar(#"scr_show_hq_spawns", "<unknown string>");
+        if (getdvarstring(#"scr_show_hq_spawns") == "<dev string:x38>") {
+            setdvar(#"scr_show_hq_spawns", "<dev string:x38>");
         }
         if (!isdefined(getdvar(#"scr_testscriptruntimeerror"))) {
-            setdvar(#"scr_testscriptruntimeerror", "<unknown string>");
+            setdvar(#"scr_testscriptruntimeerror", "<dev string:x3b>");
         }
         thread testscriptruntimeerror();
         thread testdvars();
@@ -51,21 +50,21 @@
         thread devstraferunpathdebugdraw();
         thread globallogic_score::setplayermomentumdebug();
         thread dev_class::dev_cac_init();
-        setdvar(#"scr_giveperk", "<unknown string>");
-        setdvar(#"scr_forceevent", "<unknown string>");
+        setdvar(#"scr_giveperk", "<dev string:x38>");
+        setdvar(#"scr_forceevent", "<dev string:x38>");
         setdvar(#"scr_draw_triggers", 0);
         thread equipment_dev_gui();
         thread grenade_dev_gui();
         setdvar(#"debug_dynamic_ai_spawning", 0);
         level.dem_spawns = [];
-        if (level.gametype == "<unknown string>") {
+        if (level.gametype == "<dev string:x42>") {
             extra_spawns = [];
-            extra_spawns[0] = "<unknown string>";
-            extra_spawns[1] = "<unknown string>";
-            extra_spawns[2] = "<unknown string>";
-            extra_spawns[3] = "<unknown string>";
+            extra_spawns[0] = "<dev string:x48>";
+            extra_spawns[1] = "<dev string:x62>";
+            extra_spawns[2] = "<dev string:x7c>";
+            extra_spawns[3] = "<dev string:x96>";
             for (i = 0; i < extra_spawns.size; i++) {
-                points = getentarray(extra_spawns[i], "<unknown string>");
+                points = getentarray(extra_spawns[i], "<dev string:xb0>");
                 if (isdefined(points) && points.size > 0) {
                     level.dem_spawns = arraycombine(level.dem_spawns, points, 1, 0);
                 }
@@ -123,10 +122,10 @@
                     continue;
                 }
                 if (isdefined(team)) {
-                    if (strstartswith(team, "<unknown string>") && target.team == players[i].team) {
+                    if (strstartswith(team, "<dev string:xbc>") && target.team == players[i].team) {
                         continue;
                     }
-                    if (strstartswith(team, "<unknown string>") && target.team != players[i].team) {
+                    if (strstartswith(team, "<dev string:xc7>") && target.team != players[i].team) {
                         continue;
                     }
                 }
@@ -142,7 +141,7 @@
                 players[i] setorigin(origin);
             }
         }
-        setdvar(#"scr_playerwarp", "<unknown string>");
+        setdvar(#"scr_playerwarp", "<dev string:x38>");
     }
 
     // Namespace dev/dev
@@ -160,16 +159,16 @@
                 numpoints = 0;
                 spawnpoints = [];
                 location = level.scr_zm_map_start_location;
-                if ((location == "<unknown string>" || location == "<unknown string>") && isdefined(level.default_start_location)) {
+                if ((location == "<dev string:xd5>" || location == "<dev string:x38>") && isdefined(level.default_start_location)) {
                     location = level.default_start_location;
                 }
-                match_string = level.scr_zm_ui_gametype + "<unknown string>" + location;
+                match_string = level.scr_zm_ui_gametype + "<dev string:xdf>" + location;
                 if (level.streamdumpteamindex < level.teams.size) {
-                    structs = struct::get_array("<unknown string>", "<unknown string>");
+                    structs = struct::get_array("<dev string:xe3>", "<dev string:xf3>");
                     if (isdefined(structs)) {
                         foreach (struct in structs) {
                             if (isdefined(struct.script_string)) {
-                                tokens = strtok(struct.script_string, "<unknown string>");
+                                tokens = strtok(struct.script_string, "<dev string:x107>");
                                 foreach (token in tokens) {
                                     if (token == match_string) {
                                         spawnpoints[spawnpoints.size] = struct;
@@ -179,7 +178,7 @@
                         }
                     }
                     if (!isdefined(spawnpoints) || spawnpoints.size == 0) {
-                        spawnpoints = struct::get_array("<unknown string>", "<unknown string>");
+                        spawnpoints = struct::get_array("<dev string:x10b>", "<dev string:x122>");
                     }
                     if (isdefined(spawnpoints)) {
                         numpoints = spawnpoints.size;
@@ -242,7 +241,7 @@
         }
         updateminimapsetting();
         if (level.players.size > 0) {
-            if (getdvarstring(#"scr_player_ammo") != "<unknown string>") {
+            if (getdvarstring(#"scr_player_ammo") != "<dev string:x38>") {
                 players = getplayers();
                 if (!isdefined(level.devgui_unlimited_ammo)) {
                     level.devgui_unlimited_ammo = 1;
@@ -250,9 +249,9 @@
                     level.devgui_unlimited_ammo = !level.devgui_unlimited_ammo;
                 }
                 if (level.devgui_unlimited_ammo) {
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x12f>");
                 } else {
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x156>");
                 }
                 for (i = 0; i < players.size; i++) {
                     if (level.devgui_unlimited_ammo) {
@@ -261,25 +260,25 @@
                     }
                     players[i] notify(#"devgui_unlimited_ammo");
                 }
-                setdvar(#"scr_player_ammo", "<unknown string>");
-            } else if (getdvarstring(#"scr_player_momentum") != "<unknown string>") {
+                setdvar(#"scr_player_ammo", "<dev string:x38>");
+            } else if (getdvarstring(#"scr_player_momentum") != "<dev string:x38>") {
                 if (!isdefined(level.devgui_unlimited_momentum)) {
                     level.devgui_unlimited_momentum = 1;
                 } else {
                     level.devgui_unlimited_momentum = !level.devgui_unlimited_momentum;
                 }
                 if (level.devgui_unlimited_momentum) {
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x180>");
                     level thread devgui_unlimited_momentum();
                 } else {
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x1ab>");
                     level notify(#"devgui_unlimited_momentum");
                 }
-                setdvar(#"scr_player_momentum", "<unknown string>");
-            } else if (getdvarstring(#"scr_give_player_score") != "<unknown string>") {
+                setdvar(#"scr_player_momentum", "<dev string:x38>");
+            } else if (getdvarstring(#"scr_give_player_score") != "<dev string:x38>") {
                 level thread devgui_increase_momentum(getdvarint(#"scr_give_player_score", 0));
-                setdvar(#"scr_give_player_score", "<unknown string>");
-            } else if (getdvarstring(#"scr_player_zero_ammo") != "<unknown string>") {
+                setdvar(#"scr_give_player_score", "<dev string:x38>");
+            } else if (getdvarstring(#"scr_player_zero_ammo") != "<dev string:x38>") {
                 players = getplayers();
                 for (i = 0; i < players.size; i++) {
                     player = players[i];
@@ -293,42 +292,42 @@
                         player setweaponammoclip(weapons[j], 0);
                     }
                 }
-                setdvar(#"scr_player_zero_ammo", "<unknown string>");
-            } else if (getdvarstring(#"scr_emp_jammed") != "<unknown string>") {
+                setdvar(#"scr_player_zero_ammo", "<dev string:x38>");
+            } else if (getdvarstring(#"scr_emp_jammed") != "<dev string:x38>") {
                 players = getplayers();
                 for (i = 0; i < players.size; i++) {
                     player = players[i];
                     player setempjammed(getdvarint(#"scr_emp_jammed", 0));
                 }
-                setdvar(#"scr_emp_jammed", "<unknown string>");
-            } else if (getdvarstring(#"scr_round_pause") != "<unknown string>") {
+                setdvar(#"scr_emp_jammed", "<dev string:x38>");
+            } else if (getdvarstring(#"scr_round_pause") != "<dev string:x38>") {
                 if (!level.timerstopped) {
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x1d9>");
                     globallogic_utils::pausetimer();
                 } else {
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x1ef>");
                     globallogic_utils::resumetimer();
                 }
-                setdvar(#"scr_round_pause", "<unknown string>");
-            } else if (getdvarstring(#"scr_round_end") != "<unknown string>") {
+                setdvar(#"scr_round_pause", "<dev string:x38>");
+            } else if (getdvarstring(#"scr_round_end") != "<dev string:x38>") {
                 level globallogic::forceend();
-                setdvar(#"scr_round_end", "<unknown string>");
-            } else if (getdvarstring(#"scr_show_hq_spawns") != "<unknown string>") {
+                setdvar(#"scr_round_end", "<dev string:x38>");
+            } else if (getdvarstring(#"scr_show_hq_spawns") != "<dev string:x38>") {
                 if (!isdefined(level.devgui_show_hq)) {
                     level.devgui_show_hq = 0;
                 }
-                if (level.gametype == "<unknown string>" && isdefined(level.radios)) {
+                if (level.gametype == "<dev string:x206>" && isdefined(level.radios)) {
                     if (!level.devgui_show_hq) {
                         for (i = 0; i < level.radios.size; i++) {
                             color = (1, 0, 0);
-                            level showonespawnpoint(level.radios[i], color, "<unknown string>", 32, "<unknown string>");
+                            level showonespawnpoint(level.radios[i], color, "<dev string:x20d>", 32, "<dev string:x21e>");
                         }
                     } else {
                         level notify(#"hide_hq_points");
                     }
                     level.devgui_show_hq = !level.devgui_show_hq;
                 }
-                setdvar(#"scr_show_hq_spawns", "<unknown string>");
+                setdvar(#"scr_show_hq_spawns", "<dev string:x38>");
             }
             if (getdvarint(#"r_streamdumpdistance", 0) == 3) {
                 if (!isdefined(level.streamdumpteamindex)) {
@@ -360,19 +359,19 @@
                 }
             }
         }
-        if (getdvarstring(#"scr_giveperk") == "<unknown string>") {
+        if (getdvarstring(#"scr_giveperk") == "<dev string:x229>") {
             players = getplayers();
-            iprintln("<unknown string>");
+            iprintln("<dev string:x22d>");
             for (i = 0; i < players.size; i++) {
                 players[i] clearperks();
             }
-            setdvar(#"scr_giveperk", "<unknown string>");
+            setdvar(#"scr_giveperk", "<dev string:x38>");
         }
-        if (getdvarstring(#"scr_giveperk") != "<unknown string>") {
+        if (getdvarstring(#"scr_giveperk") != "<dev string:x38>") {
             perk = getdvarstring(#"scr_giveperk");
-            specialties = strtok(perk, "<unknown string>");
+            specialties = strtok(perk, "<dev string:x251>");
             players = getplayers();
-            iprintln("<unknown string>" + perk + "<unknown string>");
+            iprintln("<dev string:x255>" + perk + "<dev string:x272>");
             foreach (player in players) {
                 foreach (specialty in specialties) {
                     player setperk(specialty);
@@ -382,13 +381,13 @@
                     player.extraperks[specialty] = 1;
                 }
             }
-            setdvar(#"scr_giveperk", "<unknown string>");
+            setdvar(#"scr_giveperk", "<dev string:x38>");
         }
-        if (getdvarstring(#"scr_toggleperk") != "<unknown string>") {
+        if (getdvarstring(#"scr_toggleperk") != "<dev string:x38>") {
             perk = getdvarstring(#"scr_toggleperk");
-            specialties = strtok(perk, "<unknown string>");
+            specialties = strtok(perk, "<dev string:x251>");
             players = getplayers();
-            iprintln("<unknown string>" + perk + "<unknown string>");
+            iprintln("<dev string:x276>" + perk + "<dev string:x272>");
             foreach (player in players) {
                 foreach (specialty in specialties) {
                     if (!isdefined(player.extraperks)) {
@@ -403,47 +402,47 @@
                     player.extraperks[specialty] = 1;
                 }
             }
-            setdvar(#"scr_toggleperk", "<unknown string>");
+            setdvar(#"scr_toggleperk", "<dev string:x38>");
         }
-        if (getdvarstring(#"scr_forceevent") != "<unknown string>") {
+        if (getdvarstring(#"scr_forceevent") != "<dev string:x38>") {
             event = getdvarstring(#"scr_forceevent");
             player = util::gethostplayer();
             forward = anglestoforward(player.angles);
             right = anglestoright(player.angles);
-            if (event == "<unknown string>") {
+            if (event == "<dev string:x295>") {
                 player dodamage(1, player.origin + forward);
-            } else if (event == "<unknown string>") {
+            } else if (event == "<dev string:x2a1>") {
                 player dodamage(1, player.origin - forward);
-            } else if (event == "<unknown string>") {
+            } else if (event == "<dev string:x2ac>") {
                 player dodamage(1, player.origin - right);
-            } else if (event == "<unknown string>") {
+            } else if (event == "<dev string:x2b7>") {
                 player dodamage(1, player.origin + right);
             }
-            setdvar(#"scr_forceevent", "<unknown string>");
+            setdvar(#"scr_forceevent", "<dev string:x38>");
         }
-        if (getdvarstring(#"scr_takeperk") != "<unknown string>") {
+        if (getdvarstring(#"scr_takeperk") != "<dev string:x38>") {
             perk = getdvarstring(#"scr_takeperk");
             for (i = 0; i < level.players.size; i++) {
                 level.players[i] unsetperk(perk);
                 level.players[i].extraperks[perk] = undefined;
             }
-            setdvar(#"scr_takeperk", "<unknown string>");
+            setdvar(#"scr_takeperk", "<dev string:x38>");
         }
-        if (getdvarstring(#"scr_x_kills_y") != "<unknown string>") {
-            nametokens = strtok(getdvarstring(#"scr_x_kills_y"), "<unknown string>");
+        if (getdvarstring(#"scr_x_kills_y") != "<dev string:x38>") {
+            nametokens = strtok(getdvarstring(#"scr_x_kills_y"), "<dev string:x107>");
             if (nametokens.size > 1) {
                 thread xkillsy(nametokens[0], nametokens[1]);
             }
-            setdvar(#"scr_x_kills_y", "<unknown string>");
+            setdvar(#"scr_x_kills_y", "<dev string:x38>");
         }
-        if (getdvarstring(#"scr_entdebug") != "<unknown string>") {
+        if (getdvarstring(#"scr_entdebug") != "<dev string:x38>") {
             ents = getentarray();
             level.entarray = [];
             level.entcounts = [];
             level.entgroups = [];
             for (index = 0; index < ents.size; index++) {
                 classname = ents[index].classname;
-                if (!issubstr(classname, "<unknown string>")) {
+                if (!issubstr(classname, "<dev string:x2c3>")) {
                     curent = ents[index];
                     level.entarray[level.entarray.size] = curent;
                     if (!isdefined(level.entcounts[classname])) {
@@ -470,18 +469,18 @@
         dpad_left = 0;
         dpad_right = 0;
         for (;;) {
-            self setactionslot(3, "<unknown string>");
-            self setactionslot(4, "<unknown string>");
-            if (!dpad_left && self buttonpressed("<unknown string>")) {
-                setdvar(#"scr_playerwarp", "<unknown string>");
+            self setactionslot(3, "<dev string:x38>");
+            self setactionslot(4, "<dev string:x38>");
+            if (!dpad_left && self buttonpressed("<dev string:x2cc>")) {
+                setdvar(#"scr_playerwarp", "<dev string:x2d8>");
                 dpad_left = 1;
-            } else if (!self buttonpressed("<unknown string>")) {
+            } else if (!self buttonpressed("<dev string:x2cc>")) {
                 dpad_left = 0;
             }
-            if (!dpad_right && self buttonpressed("<unknown string>")) {
-                setdvar(#"scr_playerwarp", "<unknown string>");
+            if (!dpad_right && self buttonpressed("<dev string:x2e5>")) {
+                setdvar(#"scr_playerwarp", "<dev string:x2f2>");
                 dpad_right = 1;
-            } else if (!self buttonpressed("<unknown string>")) {
+            } else if (!self buttonpressed("<dev string:x2e5>")) {
                 dpad_right = 0;
             }
             waitframe(1);
@@ -528,7 +527,7 @@
                 if (!isalive(player)) {
                     continue;
                 }
-                if (player.sessionstate != "<unknown string>") {
+                if (player.sessionstate != "<dev string:x2ff>") {
                     continue;
                 }
                 globallogic_score::_setplayermomentum(player, 5000);
@@ -549,10 +548,10 @@
             if (!isalive(player)) {
                 continue;
             }
-            if (player.sessionstate != "<unknown string>") {
+            if (player.sessionstate != "<dev string:x2ff>") {
                 continue;
             }
-            player globallogic_score::giveplayermomentumnotification(score, #"testplayerscorefortan", "<unknown string>", 0);
+            player globallogic_score::giveplayermomentumnotification(score, #"testplayerscorefortan", "<dev string:x309>", 0);
         }
     }
 
@@ -568,20 +567,20 @@
         self.debug_health_bar = newdebughudelem(self);
         self.debug_health_bar.x = x + 80;
         self.debug_health_bar.y = y + 2;
-        self.debug_health_bar.alignx = "<unknown string>";
-        self.debug_health_bar.aligny = "<unknown string>";
-        self.debug_health_bar.horzalign = "<unknown string>";
-        self.debug_health_bar.vertalign = "<unknown string>";
+        self.debug_health_bar.alignx = "<dev string:x318>";
+        self.debug_health_bar.aligny = "<dev string:x31f>";
+        self.debug_health_bar.horzalign = "<dev string:x325>";
+        self.debug_health_bar.vertalign = "<dev string:x325>";
         self.debug_health_bar.alpha = 1;
         self.debug_health_bar.foreground = 1;
         self.debug_health_bar setshader(#"black", 1, 8);
         self.debug_health_text = newdebughudelem(self);
         self.debug_health_text.x = x + 80;
         self.debug_health_text.y = y;
-        self.debug_health_text.alignx = "<unknown string>";
-        self.debug_health_text.aligny = "<unknown string>";
-        self.debug_health_text.horzalign = "<unknown string>";
-        self.debug_health_text.vertalign = "<unknown string>";
+        self.debug_health_text.alignx = "<dev string:x318>";
+        self.debug_health_text.aligny = "<dev string:x31f>";
+        self.debug_health_text.horzalign = "<dev string:x325>";
+        self.debug_health_text.vertalign = "<dev string:x325>";
         self.debug_health_text.alpha = 1;
         self.debug_health_text.fontscale = 1;
         self.debug_health_text.foreground = 1;
@@ -607,7 +606,7 @@
         }
         perks = getarraykeys(self.extraperks);
         for (i = 0; i < perks.size; i++) {
-            println("<unknown string>" + self.name + "<unknown string>" + perks[i] + "<unknown string>");
+            println("<dev string:x332>" + self.name + "<dev string:x33f>" + perks[i] + "<dev string:x34c>");
             self setperk(perks[i]);
         }
     }
@@ -631,7 +630,7 @@
         if (!isalive(attacker) || !isalive(victim)) {
             return;
         }
-        victim thread [[ level.callbackplayerdamage ]](attacker, attacker, 1000, 0, "<unknown string>", level.weaponnone, (0, 0, 0), (0, 0, 0), "<unknown string>", 0, 0);
+        victim thread [[ level.callbackplayerdamage ]](attacker, attacker, 1000, 0, "<dev string:x35c>", level.weaponnone, (0, 0, 0), (0, 0, 0), "<dev string:x3b>", 0, 0);
     }
 
     // Namespace dev/dev
@@ -648,9 +647,9 @@
     // Checksum 0x8bd2ab50, Offset: 0x2d48
     // Size: 0x44
     function testscriptruntimeerror2() {
-        myundefined = "<unknown string>";
+        myundefined = "<dev string:x36f>";
         if (myundefined == 1) {
-            println("<unknown string>");
+            println("<dev string:x376>");
         }
     }
 
@@ -669,14 +668,14 @@
     function testscriptruntimeerror() {
         wait(5);
         for (;;) {
-            if (getdvarstring(#"scr_testscriptruntimeerror") != "<unknown string>") {
+            if (getdvarstring(#"scr_testscriptruntimeerror") != "<dev string:x3b>") {
                 break;
             }
             wait(1);
         }
         myerror = getdvarstring(#"scr_testscriptruntimeerror");
-        setdvar(#"scr_testscriptruntimeerror", "<unknown string>");
-        if (myerror == "<unknown string>") {
+        setdvar(#"scr_testscriptruntimeerror", "<dev string:x3b>");
+        if (myerror == "<dev string:x39e>") {
             testscriptruntimeerrorassert();
         } else {
             testscriptruntimeerror1();
@@ -691,16 +690,16 @@
     function testdvars() {
         wait(5);
         for (;;) {
-            if (getdvarstring(#"scr_testdvar") != "<unknown string>") {
+            if (getdvarstring(#"scr_testdvar") != "<dev string:x38>") {
                 break;
             }
             wait(1);
         }
-        tokens = strtok(getdvarstring(#"scr_testdvar"), "<unknown string>");
+        tokens = strtok(getdvarstring(#"scr_testdvar"), "<dev string:x107>");
         dvarname = tokens[0];
         dvarvalue = tokens[1];
         setdvar(dvarname, dvarvalue);
-        setdvar(#"scr_testdvar", "<unknown string>");
+        setdvar(#"scr_testdvar", "<dev string:x38>");
         thread testdvars();
     }
 
@@ -765,12 +764,12 @@
         if (isdefined(level.spawnpoints)) {
             color = (1, 1, 1);
             for (spawn_point_index = 0; spawn_point_index < level.spawnpoints.size; spawn_point_index++) {
-                showonespawnpoint(level.spawnpoints[spawn_point_index], color, "<unknown string>");
+                showonespawnpoint(level.spawnpoints[spawn_point_index], color, "<dev string:x3a7>");
             }
         }
         for (i = 0; i < level.dem_spawns.size; i++) {
             color = (0, 1, 0);
-            showonespawnpoint(level.dem_spawns[i], color, "<unknown string>");
+            showonespawnpoint(level.dem_spawns[i], color, "<dev string:x3a7>");
         }
         return;
     }
@@ -807,7 +806,7 @@
         foreach (team, _ in level.teams) {
             color = team_colors[team];
             foreach (spawnpoint in level.spawn_start[team]) {
-                showonespawnpoint(spawnpoint, color, "<unknown string>");
+                showonespawnpoint(spawnpoint, color, "<dev string:x3ba>");
             }
         }
         return;
@@ -891,8 +890,8 @@
             hud = newdebughudelem();
             hud.debug_hudelem = 1;
             hud.location = 0;
-            hud.alignx = "<unknown string>";
-            hud.aligny = "<unknown string>";
+            hud.alignx = "<dev string:x318>";
+            hud.aligny = "<dev string:x3d2>";
             hud.foreground = 1;
             hud.fontscale = scale;
             hud.sort = sort;
@@ -996,7 +995,7 @@
     function equipment_dev_gui() {
         set_equipment_list();
         set_grenade_list();
-        setdvar(#"scr_give_equipment", "<unknown string>");
+        setdvar(#"scr_give_equipment", "<dev string:x38>");
         while (true) {
             wait(0.5);
             devgui_int = getdvarint(#"scr_give_equipment", 0);
@@ -1017,7 +1016,7 @@
     function grenade_dev_gui() {
         set_equipment_list();
         set_grenade_list();
-        setdvar(#"scr_give_grenade", "<unknown string>");
+        setdvar(#"scr_give_grenade", "<dev string:x38>");
         while (true) {
             wait(0.5);
             devgui_int = getdvarint(#"scr_give_grenade", 0);
@@ -1044,19 +1043,19 @@
         maxdrawtime = 10;
         drawtime = maxdrawtime;
         origintextoffset = (0, 0, -50);
-        endonmsg = "<unknown string>";
+        endonmsg = "<dev string:x3db>";
         while (true) {
             if (getdvarint(#"scr_devstraferunpathdebugdraw", 0) > 0) {
                 nodes = [];
                 end = 0;
-                node = getvehiclenode("<unknown string>", "<unknown string>");
+                node = getvehiclenode("<dev string:x3fb>", "<dev string:x122>");
                 if (!isdefined(node)) {
-                    println("<unknown string>");
+                    println("<dev string:x40b>");
                     setdvar(#"scr_devstraferunpathdebugdraw", 0);
                     continue;
                 }
                 while (isdefined(node.target)) {
-                    new_node = getvehiclenode(node.target, "<unknown string>");
+                    new_node = getvehiclenode(node.target, "<dev string:x122>");
                     foreach (n in nodes) {
                         if (n == new_node) {
                             end = 1;
@@ -1128,10 +1127,10 @@
         maxdrawtime = 10;
         drawtime = maxdrawtime;
         origintextoffset = (0, 0, -50);
-        endonmsg = "<unknown string>";
+        endonmsg = "<dev string:x426>";
         while (true) {
             if (getdvarint(#"scr_devhelipathsdebugdraw", 0) > 0) {
-                script_origins = getentarray("<unknown string>", "<unknown string>");
+                script_origins = getentarray("<dev string:x442>", "<dev string:xb0>");
                 foreach (ent in script_origins) {
                     if (isdefined(ent.targetname)) {
                         switch (ent.targetname) {
@@ -1228,7 +1227,7 @@
         if (!isdefined(textoffset)) {
             textoffset = (0, 0, 0);
         }
-        originstring = "<unknown string>" + self.origin[0] + "<unknown string>" + self.origin[1] + "<unknown string>" + self.origin[2] + "<unknown string>";
+        originstring = "<dev string:x452>" + self.origin[0] + "<dev string:x456>" + self.origin[1] + "<dev string:x456>" + self.origin[2] + "<dev string:x45b>";
         print3d(self.origin + textoffset, originstring, textcolor, textalpha, textscale);
     }
 
@@ -1238,10 +1237,10 @@
     // Size: 0xd4
     function drawspeedacceltext(textcolor, textalpha, textscale, textoffset) {
         if (isdefined(self.script_airspeed)) {
-            print3d(self.origin + (0, 0, textoffset[2] * 2), "<unknown string>" + self.script_airspeed, textcolor, textalpha, textscale);
+            print3d(self.origin + (0, 0, textoffset[2] * 2), "<dev string:x45f>" + self.script_airspeed, textcolor, textalpha, textscale);
         }
         if (isdefined(self.script_accel)) {
-            print3d(self.origin + (0, 0, textoffset[2] * 3), "<unknown string>" + self.script_accel, textcolor, textalpha, textscale);
+            print3d(self.origin + (0, 0, textoffset[2] * 3), "<dev string:x472>" + self.script_accel, textcolor, textalpha, textscale);
         }
     }
 
@@ -1254,9 +1253,9 @@
         ent = self;
         entfirsttarget = ent.targetname;
         while (isdefined(ent.target)) {
-            enttarget = getent(ent.target, "<unknown string>");
+            enttarget = getent(ent.target, "<dev string:x122>");
             ent thread drawpathsegment(enttarget, linecolor, textcolor, textalpha, textscale, textoffset, drawtime, endonmsg);
-            if (ent.targetname == "<unknown string>") {
+            if (ent.targetname == "<dev string:x482>") {
                 entfirsttarget = ent.target;
             } else if (ent.target == entfirsttarget) {
                 break;
@@ -1273,7 +1272,7 @@
     function drawpathsegment(enttarget, linecolor, textcolor, textalpha, textscale, textoffset, drawtime, endonmsg) {
         level endon(endonmsg);
         while (drawtime > 0) {
-            if (isdefined(self.targetname) && self.targetname == "<unknown string>") {
+            if (isdefined(self.targetname) && self.targetname == "<dev string:x3fb>") {
                 print3d(self.origin + textoffset, self.targetname, textcolor, textalpha, textscale);
             }
             line(self.origin, enttarget.origin, linecolor);

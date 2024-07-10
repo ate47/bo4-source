@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_3aa54d3cb36ea43f;
 #using script_4d00889cf8c807d5;
 #using scripts\core_common\ai\zombie_utility.gsc;

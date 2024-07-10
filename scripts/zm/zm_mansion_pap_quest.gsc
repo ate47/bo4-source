@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm\ai\zm_ai_bat.gsc;
 #using scripts\zm\ai\zm_ai_nosferatu.gsc;
@@ -727,7 +726,7 @@ function function_2605cb3d() {
     /#
         var_e9c37042 = array(#"p8_fxanim_zm_man_pap_drawers_bundle", #"p8_fxanim_zm_man_pap_graveyard_bundle", #"p8_fxanim_zm_man_pap_lantern_bundle", #"p8_fxanim_zm_man_pap_platter_bundle", #"p8_fxanim_zm_man_pap_quest_entrance_room_bundle", #"p8_fxanim_zm_man_pap_quest_statue_fountain_bundle", #"p8_fxanim_zm_man_pap_quest_statue_garden_bundle", #"p8_fxanim_zm_man_pap_safe_bundle", #"p8_fxanim_zm_man_pap_sarcophagus_bundle", #"p8_fxanim_zm_man_pap_terrace_bundle", #"p8_fxanim_zm_man_pap_wall_bundle", #"p8_fxanim_zm_man_clock_01_bundle", #"p8_fxanim_zm_man_clock_02_bundle", #"p8_fxanim_zm_man_clock_03_bundle");
         foreach (str_scene in var_e9c37042) {
-            scene::add_scene_func(str_scene, &function_11886796, "cl_cpt2");
+            scene::add_scene_func(str_scene, &function_11886796, "<dev string:x38>");
         }
     #/
     scene::add_scene_func(#"p8_fxanim_zm_man_pap_lantern_bundle", &function_62561ed8, "done");
@@ -735,7 +734,7 @@ function function_2605cb3d() {
     level flag::wait_till_any(array(#"power_on1", #"hash_2daf5bdda85cc660"));
     /#
         foreach (str_scene in var_e9c37042) {
-            scene::remove_scene_func(str_scene, &function_11886796, "cl_cpt2");
+            scene::remove_scene_func(str_scene, &function_11886796, "<dev string:x38>");
         }
     #/
     util::delay(5, "end_game", &scene::init, #"p8_fxanim_zm_man_pap_drawers_bundle");
@@ -2444,7 +2443,7 @@ function function_f0b97bc7() {
             break;
         default:
             /#
-                iprintlnbold("nos");
+                iprintlnbold("<dev string:x3f>");
             #/
             break;
         }
@@ -3182,7 +3181,7 @@ function function_eecfbd25() {
         default:
             return;
         }
-        level flag::wait_till("painting_4");
+        level flag::wait_till("<dev string:x65>");
         while (getdvarint(#"hash_612c719b4ad48d57", 0)) {
             var_91d1913b = distance2d(level.players[0].origin, self.origin);
             n_radius = 0.015 * var_91d1913b;
@@ -3208,7 +3207,7 @@ function function_eecfbd25() {
         }
         self notify(#"stop_debug_draw");
         self endon(#"death", #"stop_debug_draw");
-        level flag::wait_till("painting_4");
+        level flag::wait_till("<dev string:x65>");
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             var_91d1913b = distance2d(level.players[0].origin, self.origin);
             n_radius = 0.015 * var_91d1913b;
@@ -3233,7 +3232,7 @@ function function_eecfbd25() {
         }
         self notify(#"stop_debug_draw");
         self endon(#"death", #"stop_debug_draw");
-        level flag::wait_till("painting_4");
+        level flag::wait_till("<dev string:x65>");
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             var_91d1913b = distance2d(level.players[0].origin, self.origin);
             n_radius = 0.015 * var_91d1913b;
@@ -3262,7 +3261,7 @@ function function_eecfbd25() {
     // Size: 0xd6
     function function_5e48b125(thing, var_f068172b, str_ender, v_color) {
         if (!isdefined(str_ender)) {
-            str_ender = "cemetery_pap_key";
+            str_ender = "<dev string:x7b>";
         }
         if (!isdefined(v_color)) {
             v_color = (0, 1, 0);
@@ -3281,14 +3280,14 @@ function function_eecfbd25() {
     // Checksum 0x1c54b704, Offset: 0xea80
     // Size: 0xf8
     function function_75e87a52(nd_start, v_color) {
-        self notify("tag_statue_tuning_fork_jnt");
-        self endon("tag_statue_tuning_fork_jnt");
+        self notify("<dev string:x95>");
+        self endon("<dev string:x95>");
         var_ce8cd8 = nd_start;
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0) && isdefined(self)) {
             waitframe(1);
             if (isdefined(var_ce8cd8) && isdefined(var_ce8cd8.target)) {
-                nd_next = getvehiclenode(var_ce8cd8.target, "vox_ghost_react_first_plr_9_0");
-                self thread function_5e48b125(var_ce8cd8, nd_next, "<unknown string>", v_color);
+                nd_next = getvehiclenode(var_ce8cd8.target, "<dev string:xa8>");
+                self thread function_5e48b125(var_ce8cd8, nd_next, "<dev string:xb5>", v_color);
                 var_ce8cd8 = nd_next;
                 continue;
             }

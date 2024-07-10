@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_devgui.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -131,7 +130,7 @@ function private function_e235da7d(entity) {
 function bb_getshouldrunstatus() {
     /#
         if (isdefined(self.ispuppet) && self.ispuppet) {
-            return "<unknown string>";
+            return "<dev string:x38>";
         }
     #/
     if (isdefined(self.hasseenfavoriteenemy) && self.hasseenfavoriteenemy || ai::hasaiattribute(self, "sprint") && ai::getaiattribute(self, "sprint")) {
@@ -595,7 +594,7 @@ function private p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67
     }
     if (function_ef12c1d9(entity)) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>", entity);
+            record3dtext("<dev string:x3e>", self.origin, (1, 0, 0), "<dev string:x4e>", entity);
         #/
         entity.hit_ent = 1;
         return 5;
@@ -721,8 +720,8 @@ function function_a4f5b046(entity, mocompanim, mocompanimblendouttime, mocompani
             movedelta = getmovedelta(mocompanim, 0, 1, entity);
             animendpos = entity localtoworldcoords(movedelta);
             distance = distance(entity.origin, animendpos);
-            recordcircle(animendpos, 3, (0, 1, 0), "<unknown string>");
-            record3dtext("<unknown string>" + distance, animendpos, (0, 1, 0), "<unknown string>");
+            recordcircle(animendpos, 3, (0, 1, 0), "<dev string:x57>");
+            record3dtext("<dev string:x60>" + distance, animendpos, (0, 1, 0), "<dev string:x57>");
         #/
     }
 }
@@ -754,17 +753,17 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
         var_65cbfb52 = distancesquared(self.meleeinfo.var_9bfa8497, self.meleeinfo.adjustedendpos);
         if (var_776ddabf <= 35 * 35) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x63>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x57>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 <= 200 * 200) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x70>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x57>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 400 * 400) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x7e>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x57>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         }
@@ -780,11 +779,11 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
             isvisible = bullettracepassed(entity.origin, entity.enemy.origin, 0, self);
             var_425c4c8b = isvisible && var_7948b2f3;
             /#
-                reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
+                reasons = "<dev string:x8c>" + isvisible + "<dev string:x93>" + withinzrange + "<dev string:x99>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<dev string:x57>");
                 } else {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x57>");
                 }
             #/
             if (var_425c4c8b) {
@@ -810,8 +809,8 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
     if (self.meleeinfo.adjustmentstarted && currentanimtime <= self.meleeinfo.var_6392c3a2) {
         assert(isdefined(self.meleeinfo.var_10b8b6d1) && isdefined(self.meleeinfo.var_8b9a15a6));
         /#
-            recordsphere(self.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
-            recordsphere(self.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<unknown string>");
+            recordsphere(self.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<dev string:x57>");
+            recordsphere(self.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<dev string:x57>");
         #/
         adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * self.meleeinfo.var_8b9a15a6;
     }
@@ -976,13 +975,13 @@ function function_33958f06(entity) {
 function function_16bc9556(entity) {
     if (function_ef12c1d9(entity)) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>", entity);
+            record3dtext("<dev string:xa1>", self.origin, (1, 0, 0), "<dev string:x4e>", entity);
         #/
     } else {
         hitent = entity melee();
         entity.melee_notetrack = 1;
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>", entity);
+            record3dtext("<dev string:xb0>", self.origin, (1, 0, 0), "<dev string:x4e>", entity);
         #/
         if (isdefined(entity.meleetype) && entity.meleetype == "normal") {
             if (!isdefined(hitent)) {
@@ -1000,7 +999,7 @@ function function_16bc9556(entity) {
 function function_5ee65256(entity) {
     if (function_ef12c1d9(entity)) {
         /#
-            record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>", entity);
+            record3dtext("<dev string:x3e>", self.origin, (1, 0, 0), "<dev string:x4e>", entity);
         #/
         return;
     }
@@ -1079,17 +1078,17 @@ function function_b708cfe7() {
     // Checksum 0xd0e54d7b, Offset: 0x4a40
     // Size: 0x1c8
     function private function_1e4eb5f0() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xb8>");
+        adddebugcommand("<dev string:xf9>");
+        adddebugcommand("<dev string:x13c>");
         while (true) {
             waitframe(1);
-            string = getdvarstring(#"hash_3b467d1615c469f8", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_3b467d1615c469f8", "<dev string:x60>");
+            cmd = strtok(string, "<dev string:x185>");
             if (cmd.size > 0) {
                 switch (cmd[0]) {
                 case #"spawn":
-                    zm_devgui::spawn_archetype("<unknown string>");
+                    zm_devgui::spawn_archetype("<dev string:x189>");
                     break;
                 case #"kill":
                     function_21c73eb5();
@@ -1104,7 +1103,7 @@ function function_b708cfe7() {
                     break;
                 }
             }
-            setdvar(#"hash_3b467d1615c469f8", "<unknown string>");
+            setdvar(#"hash_3b467d1615c469f8", "<dev string:x60>");
         }
     }
 

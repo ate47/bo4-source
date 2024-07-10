@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_morocco_sound;
 
 // Namespace mp_morocco_sound/mp_morocco_sound

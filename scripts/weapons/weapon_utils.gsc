@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace weapon_utils;
 
 // Namespace weapon_utils/weapon_utils

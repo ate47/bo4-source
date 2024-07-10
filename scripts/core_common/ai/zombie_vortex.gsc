@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_ai_shared.gsc;
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\visionset_mgr_shared.gsc;

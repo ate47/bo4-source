@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_geothermal_sound;
 
 // Namespace mp_geothermal_sound/mp_geothermal_sound

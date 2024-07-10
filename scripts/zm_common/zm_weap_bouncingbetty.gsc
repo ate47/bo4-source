@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_placeable_mine.gsc;
 #using scripts\zm_common\util.gsc;
 #using scripts\weapons\weaponobjects.gsc;

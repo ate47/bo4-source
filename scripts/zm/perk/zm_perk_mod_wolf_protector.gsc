@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\powerup\zm_powerup_hero_weapon_power.gsc;
 #using scripts\zm\powerup\zm_powerup_small_ammo.gsc;
 #using scripts\zm\powerup\zm_powerup_bonus_points_player.gsc;

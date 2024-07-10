@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_maldives_fx;
 
 // Namespace mp_maldives_fx/mp_maldives_fx

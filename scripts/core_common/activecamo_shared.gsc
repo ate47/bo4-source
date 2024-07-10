@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\player\player_stats.gsc;
 #using scripts\core_common\weapons_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -195,7 +194,7 @@ function function_3aa81e0e(activecamoinfo) {
                 }
                 /#
                     if (!isdefined(stage.var_19b6044e)) {
-                        self debug_error("<unknown string>" + info.name + "<unknown string>" + function_9e72a96(isdefined(var_3594168e.camooption) ? var_3594168e.camooption : "<unknown string>") + "<unknown string>" + key);
+                        self debug_error("<dev string:x38>" + info.name + "<dev string:x3d>" + function_9e72a96(isdefined(var_3594168e.camooption) ? var_3594168e.camooption : "<dev string:x59>") + "<dev string:x63>" + key);
                     } else {
                         activecamoname = getactivecamo(stage.var_19b6044e);
                         var_31567a86 = undefined;
@@ -203,9 +202,9 @@ function function_3aa81e0e(activecamoinfo) {
                             var_31567a86 = getscriptbundle(activecamoname);
                         }
                         if (!isdefined(var_31567a86)) {
-                            self debug_error("<unknown string>" + info.name + "<unknown string>" + stage.var_19b6044e + "<unknown string>" + key);
+                            self debug_error("<dev string:x38>" + info.name + "<dev string:x74>" + stage.var_19b6044e + "<dev string:x63>" + key);
                         } else if (!isdefined(var_31567a86.name) || var_31567a86.name != info.name) {
-                            self debug_error("<unknown string>" + info.name + "<unknown string>" + stage.var_19b6044e + "<unknown string>" + (isdefined(var_31567a86.name) ? var_31567a86.name : "<unknown string>") + "<unknown string>" + key);
+                            self debug_error("<dev string:x38>" + info.name + "<dev string:x9e>" + stage.var_19b6044e + "<dev string:xb1>" + (isdefined(var_31567a86.name) ? var_31567a86.name : "<dev string:x59>") + "<dev string:x63>" + key);
                         }
                     }
                 #/
@@ -550,12 +549,12 @@ function function_896ac347(oweapon, statname, value) {
         return;
     }
     if (!isdefined(oweapon)) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:xcb>");
         return;
     }
     weapon = function_94c2605(oweapon);
     if (!isdefined(weapon)) {
-        assertmsg("<unknown string>" + function_9e72a96(oweapon.name));
+        assertmsg("<dev string:xff>" + function_9e72a96(oweapon.name));
         return;
     }
     activecamoinfo = weapon_get_activecamo(weapon);
@@ -565,11 +564,11 @@ function function_896ac347(oweapon, statname, value) {
             activecamo.weapon = weapon;
             activecamo.baseweapon = function_c14cb514(activecamo.weapon);
             if (!isdefined(activecamo.baseweapon)) {
-                assertmsg("<unknown string>" + function_9e72a96(activecamo.weapon.name));
+                assertmsg("<dev string:x144>" + function_9e72a96(activecamo.weapon.name));
                 return;
             }
             if (!isdefined(activecamo.var_dd54a13b[activecamo.baseweapon])) {
-                assertmsg("<unknown string>" + function_9e72a96(activecamo.baseweapon.name) + "<unknown string>");
+                assertmsg("<dev string:x192>" + function_9e72a96(activecamo.baseweapon.name) + "<dev string:x1c2>");
                 return;
             }
             var_7a414d4a = 0;
@@ -839,7 +838,7 @@ function set_stage_activecamo(activecamo, stagenum) {
         self setcamo(activecamo.weapon, setstage.info.var_19b6044e);
     }
     /#
-        self debug_print("<unknown string>" + activecamo.info.name + "<unknown string>" + stagenum + "<unknown string>" + (isdefined(setstage.info.var_19b6044e) ? setstage.info.var_19b6044e : "<unknown string>"));
+        self debug_print("<dev string:x38>" + activecamo.info.name + "<dev string:x1eb>" + stagenum + "<dev string:x1fa>" + (isdefined(setstage.info.var_19b6044e) ? setstage.info.var_19b6044e : "<dev string:x20b>"));
     #/
     self thread function_a80cb651(activecamo, stagenum);
     return true;
@@ -892,12 +891,12 @@ function function_a80cb651(activecamo, stagenum) {
     // Size: 0xe4
     function debug_error(message, weapon) {
         if (getdvarint(#"activecamo_debug", 0) > 0) {
-            weaponname = "<unknown string>";
+            weaponname = "<dev string:x217>";
             if (isdefined(weapon)) {
-                weaponname = "<unknown string>" + function_9e72a96(weapon.name);
+                weaponname = "<dev string:x21a>" + function_9e72a96(weapon.name);
             }
-            self iprintlnbold("<unknown string>" + message + weaponname);
-            println("<unknown string>" + self.playername + "<unknown string>" + message + weaponname);
+            self iprintlnbold("<dev string:x227>" + message + weaponname);
+            println("<dev string:x247>" + self.playername + "<dev string:x25c>" + message + weaponname);
         }
     }
 
@@ -907,12 +906,12 @@ function function_a80cb651(activecamo, stagenum) {
     // Size: 0xe4
     function debug_print(message, weapon) {
         if (getdvarint(#"activecamo_debug", 0) > 0) {
-            weaponname = "<unknown string>";
+            weaponname = "<dev string:x217>";
             if (isdefined(weapon)) {
-                weaponname = "<unknown string>" + function_9e72a96(weapon.name);
+                weaponname = "<dev string:x21a>" + function_9e72a96(weapon.name);
             }
-            self iprintlnbold("<unknown string>" + message + weaponname);
-            println("<unknown string>" + self.playername + "<unknown string>" + message + weaponname);
+            self iprintlnbold("<dev string:x247>" + message + weaponname);
+            println("<dev string:x247>" + self.playername + "<dev string:x25c>" + message + weaponname);
         }
     }
 
@@ -923,8 +922,8 @@ function function_a80cb651(activecamo, stagenum) {
     function function_265047c1() {
         callback::on_connect(&on_player_connect);
         callback::on_disconnect(&on_player_disconnect);
-        level.var_630fbd77 = "<unknown string>";
-        root = "<unknown string>" + level.var_630fbd77;
+        level.var_630fbd77 = "<dev string:x261>";
+        root = "<dev string:x27f>" + level.var_630fbd77;
         function_1039ce5c(root);
         thread devgui_think();
     }
@@ -958,7 +957,7 @@ function function_a80cb651(activecamo, stagenum) {
             return;
         }
         wait(2);
-        root = level.var_630fbd77 + "<unknown string>";
+        root = level.var_630fbd77 + "<dev string:x28d>";
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (players[i] != self) {
@@ -977,8 +976,8 @@ function function_a80cb651(activecamo, stagenum) {
         if (!isdefined(level.var_630fbd77)) {
             return;
         }
-        root = level.var_630fbd77 + "<unknown string>";
-        cmd = "<unknown string>" + root + self.playername + "<unknown string>";
+        root = level.var_630fbd77 + "<dev string:x28d>";
+        cmd = "<dev string:x298>" + root + self.playername + "<dev string:x2a9>";
         thread util::add_debug_command(cmd);
     }
 
@@ -987,8 +986,8 @@ function function_a80cb651(activecamo, stagenum) {
     // Checksum 0xda4ed4c2, Offset: 0x4350
     // Size: 0xc4
     function devgui_add_player_commands(root, pname, index) {
-        add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
-        pid = "<unknown string>" + index;
+        add_cmd_with_root = "<dev string:x27f>" + root + pname + "<dev string:x2ae>";
+        pid = "<dev string:x217>" + index;
         function_f1d01720(add_cmd_with_root, index);
         function_85cb822d(add_cmd_with_root, index);
         function_de358bfd(add_cmd_with_root, index);
@@ -1000,7 +999,7 @@ function function_a80cb651(activecamo, stagenum) {
     // Checksum 0x8d0e48, Offset: 0x4420
     // Size: 0x44
     function function_1039ce5c(root) {
-        cmd = root + "<unknown string>" + "<unknown string>";
+        cmd = root + "<dev string:x2b2>" + "<dev string:x2c1>";
         thread util::add_debug_command(cmd);
     }
 
@@ -1013,11 +1012,11 @@ function function_a80cb651(activecamo, stagenum) {
         if (!isdefined(index)) {
             index = 0;
         }
-        cmd = root + "<unknown string>" + "<unknown string>" + index + "<unknown string>";
+        cmd = root + "<dev string:x2e3>" + "<dev string:x2ed>" + index + "<dev string:x322>";
         thread util::add_debug_command(cmd);
-        cmd = root + "<unknown string>" + "<unknown string>" + index + "<unknown string>";
+        cmd = root + "<dev string:x328>" + "<dev string:x334>" + index + "<dev string:x322>";
         thread util::add_debug_command(cmd);
-        cmd = root + "<unknown string>" + "<unknown string>" + index + "<unknown string>";
+        cmd = root + "<dev string:x366>" + "<dev string:x370>" + index + "<dev string:x322>";
         thread util::add_debug_command(cmd);
     }
 
@@ -1026,14 +1025,14 @@ function function_a80cb651(activecamo, stagenum) {
     // Checksum 0x7ce7e682, Offset: 0x4578
     // Size: 0x130
     function function_85cb822d(root, index) {
-        var_37949de1 = root + "<unknown string>";
+        var_37949de1 = root + "<dev string:x3a0>";
         if (!isdefined(index)) {
             index = 0;
         }
         activecamos = function_2c48197b();
         foreach (activecamo in activecamos) {
             activecamoname = function_9e72a96(activecamo);
-            cmd = var_37949de1 + activecamoname + "<unknown string>" + activecamoname + "<unknown string>" + index + "<unknown string>";
+            cmd = var_37949de1 + activecamoname + "<dev string:x3a9>" + activecamoname + "<dev string:x3d9>" + index + "<dev string:x322>";
             thread util::add_debug_command(cmd);
         }
     }
@@ -1043,17 +1042,17 @@ function function_a80cb651(activecamo, stagenum) {
     // Checksum 0xcee6755d, Offset: 0x46b0
     // Size: 0x148
     function function_de358bfd(root, index) {
-        var_1520a1da = root + "<unknown string>";
+        var_1520a1da = root + "<dev string:x3f3>";
         if (!isdefined(index)) {
             index = 0;
         }
         weapons = [];
-        weapons[0] = "<unknown string>";
-        weapons[1] = "<unknown string>";
-        weapons[2] = "<unknown string>";
-        weapons[3] = "<unknown string>";
+        weapons[0] = "<dev string:x3fe>";
+        weapons[1] = "<dev string:x40f>";
+        weapons[2] = "<dev string:x425>";
+        weapons[3] = "<dev string:x434>";
         foreach (weapon in weapons) {
-            cmd = var_1520a1da + weapon + "<unknown string>" + weapon + "<unknown string>" + index + "<unknown string>";
+            cmd = var_1520a1da + weapon + "<dev string:x443>" + weapon + "<dev string:x3d9>" + index + "<dev string:x322>";
             thread util::add_debug_command(cmd);
         }
     }
@@ -1063,13 +1062,13 @@ function function_a80cb651(activecamo, stagenum) {
     // Checksum 0x385a42d, Offset: 0x4800
     // Size: 0x160
     function function_50d79d31(root, index) {
-        var_82c49718 = root + "<unknown string>";
+        var_82c49718 = root + "<dev string:x476>";
         if (!isdefined(index)) {
             index = 0;
         }
         stages = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
         foreach (stage in stages) {
-            cmd = var_82c49718 + stage + "<unknown string>" + stage + "<unknown string>" + index + "<unknown string>";
+            cmd = var_82c49718 + stage + "<dev string:x483>" + stage + "<dev string:x3d9>" + index + "<dev string:x322>";
             thread util::add_debug_command(cmd);
         }
     }
@@ -1113,9 +1112,9 @@ function function_a80cb651(activecamo, stagenum) {
                 break;
             }
             if (reset) {
-                setdvar(#"hash_3e1bb44a57b02ed8", "<unknown string>");
-                setdvar(#"hash_3fe8dd280c325e8", "<unknown string>");
-                setdvar(#"hash_324a391b56cb100", "<unknown string>");
+                setdvar(#"hash_3e1bb44a57b02ed8", "<dev string:x217>");
+                setdvar(#"hash_3fe8dd280c325e8", "<dev string:x217>");
+                setdvar(#"hash_324a391b56cb100", "<dev string:x217>");
             }
         }
     }

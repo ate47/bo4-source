@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_urban_fx;
 
 // Namespace mp_urban_fx/mp_urban_fx

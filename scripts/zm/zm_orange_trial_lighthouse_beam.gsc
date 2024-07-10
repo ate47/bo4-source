@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_pap.gsc;
 #using scripts\zm\zm_orange_lighthouse.gsc;
 #using scripts\zm_common\zm_pack_a_punch.gsc;

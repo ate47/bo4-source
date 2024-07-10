@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\util.gsc;
 #using scripts\zm_common\gametypes\spectating.gsc;
@@ -237,7 +236,7 @@ function spawnplayer() {
         pixendevent();
     }
     /#
-        if (!level.splitscreen && getdvarint(#"scr_showperksonspawn", 0) == 1 && game.state != "<unknown string>") {
+        if (!level.splitscreen && getdvarint(#"scr_showperksonspawn", 0) == 1 && game.state != "<dev string:x38>") {
             pixbeginevent(#"showperksonspawn");
             if (level.perksenabled == 1) {
                 self hud::showperks();
@@ -262,7 +261,7 @@ function _spawnplayer() {
     self notify(#"spawned_player");
     self callback::callback(#"on_player_spawned");
     /#
-        print("<unknown string>" + self.origin[0] + "<unknown string>" + self.origin[1] + "<unknown string>" + self.origin[2] + "<unknown string>");
+        print("<dev string:x43>" + self.origin[0] + "<dev string:x48>" + self.origin[1] + "<dev string:x48>" + self.origin[2] + "<dev string:x4c>");
     #/
     setdvar(#"scr_selecting_location", "");
     self zm_utility::set_max_health();

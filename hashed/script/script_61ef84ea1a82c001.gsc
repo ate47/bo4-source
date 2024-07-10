@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_tomahawk.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_vo.gsc;
@@ -182,7 +181,7 @@ function function_85cfc2a3(e_player) {
         if (e_player.var_3909389c) {
             e_player.var_8c79ac3f++;
             /#
-                iprintln("<unknown string>" + e_player.var_8c79ac3f);
+                iprintln("<dev string:x38>" + e_player.var_8c79ac3f);
             #/
             e_player function_7127bd6c(e_player.var_8c79ac3f);
         }
@@ -407,8 +406,8 @@ function function_14a795c2(e_player) {
     function function_d987ffa1() {
         zm_devgui::add_custom_devgui_callback(&function_2ad53df2);
         if (getdvarint(#"zm_debug_ee", 0)) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x5d>");
+            adddebugcommand("<dev string:xa6>");
         }
     }
 
@@ -463,8 +462,8 @@ function function_14a795c2(e_player) {
             if (isdefined(player.var_8c79ac3f)) {
                 player.var_8c79ac3f = undefined;
             }
-            player clientfield::set_to_player("<unknown string>" + #"place_spoon", 1);
-            player clientfield::set_to_player("<unknown string>" + #"fill_blood", 7);
+            player clientfield::set_to_player("<dev string:xfc>" + #"place_spoon", 1);
+            player clientfield::set_to_player("<dev string:xfc>" + #"fill_blood", 7);
             if (!isdefined(level.var_92a01e03.var_da0824c7)) {
                 level.var_92a01e03.var_da0824c7 = level.var_92a01e03 zm_unitrigger::create(&function_c5c760a1, 64, &function_cd53088e);
             }

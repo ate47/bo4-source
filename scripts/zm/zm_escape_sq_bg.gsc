@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_spectral_shield.gsc;
 #using scripts\zm\weapons\zm_weap_tomahawk.gsc;
 #using scripts\zm\weapons\zm_weap_blundergat.gsc;

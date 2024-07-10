@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\ai\archetype_human_cover.gsc;
@@ -66,10 +65,10 @@ function registerbehaviorscriptfunctions() {
     behaviortreenetworkutility::registerbehaviortreescriptapi("rioterReaquireService", &rioterreaquireservice);
     /#
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>" + "<dev string:x5f>" + "<dev string:x66>" + "<dev string:x5f>" + "<dev string:x83>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>" + "<dev string:x88>" + "<dev string:x90>" + "<dev string:x88>" + "<dev string:x83>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>" + "<dev string:xad>" + "<dev string:xb4>" + "<dev string:xad>" + "<dev string:x83>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>" + "<dev string:xd1>" + "<dev string:xd7>" + "<dev string:xd1>" + "<dev string:x83>");
         level thread function_686ab596();
     #/
 }

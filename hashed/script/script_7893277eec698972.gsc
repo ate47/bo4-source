@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_681abc4248c2bc7d;
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -260,7 +259,7 @@ function private step_3_setup(var_a276c861) {
                 level.var_f9f50915.mdl_chest playsound(#"hash_6fa6fc673cdcf645");
                 level.var_f9f50915.mdl_chest playloopsound(#"hash_326fef81e2be51bb", 2);
                 /#
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x38>");
                 #/
             }
             level.var_e2ce1fe1++;
@@ -280,7 +279,7 @@ function private step_3_cleanup(var_a276c861, var_19e802fa) {
     level.var_f3abf34a = struct::get(level.var_b26f906a[level.var_2e2dab8d]);
     level.var_f9f50915 thread function_a8fff4b0();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x58>");
     #/
     var_31998302 = getentarray("kraken_cleanup", "script_noteworthy");
     var_24402eb8 = getent(level.var_f3abf34a.target, "targetname");
@@ -730,7 +729,7 @@ function private function_e00eae6(e_player) {
             var_73d97896 = 4;
             break;
         default:
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:x78>");
             var_be9badbc = #"ww_tricannon_t8";
             break;
         }

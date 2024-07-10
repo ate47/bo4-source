@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_player.gsc;
 #using scripts\zm_common\zm.gsc;
@@ -22,19 +21,19 @@
     // Size: 0x134
     function debug_script_structs() {
         if (isdefined(level.struct)) {
-            println("<unknown string>" + level.struct.size);
-            println("<unknown string>");
+            println("<dev string:x38>" + level.struct.size);
+            println("<dev string:x4b>");
             for (i = 0; i < level.struct.size; i++) {
                 struct = level.struct[i];
                 if (isdefined(struct.targetname)) {
-                    println("<unknown string>" + i + "<unknown string>" + struct.targetname);
+                    println("<dev string:x4e>" + i + "<dev string:x54>" + struct.targetname);
                     continue;
                 }
-                println("<unknown string>" + i + "<unknown string>" + "<unknown string>");
+                println("<dev string:x4e>" + i + "<dev string:x54>" + "<dev string:x5a>");
             }
             return;
         }
-        println("<unknown string>");
+        println("<dev string:x61>");
     }
 
 #/
@@ -121,7 +120,7 @@ function callback_hostmigration() {
     setslowmotion(1, 1, 0);
     level.hostmigrationreturnedplayercount = 0;
     if (level.gameended) {
-        println("<unknown string>" + gettime() + "<unknown string>");
+        println("<dev string:x7b>" + gettime() + "<dev string:x99>");
         return;
     }
     sethostmigrationstatus(1);
@@ -158,7 +157,7 @@ function callback_hostmigration() {
     if (level.inprematchperiod) {
         level waittill(#"prematch_over");
     }
-    println("<unknown string>" + gettime());
+    println("<dev string:x7b>" + gettime());
     level.hostmigrationtimer = 1;
     thread locktimer();
     if (isdefined(level.b_host_migration_force_player_respawn) && level.b_host_migration_force_player_respawn) {
@@ -208,7 +207,7 @@ function callback_hostmigration() {
     level.hostmigrationtimer = undefined;
     level._hm_should_pause_spawning = undefined;
     sethostmigrationstatus(0);
-    println("<unknown string>" + gettime());
+    println("<dev string:xc2>" + gettime());
     level.host = util::gethostplayer();
     for (i = 0; i < level.players.size; i++) {
         clientnum = level.players[i] getentitynumber();
@@ -239,7 +238,7 @@ function post_migration_invulnerability() {
 // Checksum 0xb2bbe292, Offset: 0xfa0
 // Size: 0x100
 function host_migration_respawn() {
-    println("<unknown string>");
+    println("<dev string:xe0>");
     new_origin = undefined;
     if (isdefined(level.var_5816975b)) {
         new_origin = [[ level.var_5816975b ]](self);
@@ -325,7 +324,7 @@ function hostmigrationtimerthink_internal() {
         self linkto(ent);
         ent linkto(self._host_migration_link_entity, "tag_origin", self._host_migration_link_entity worldtolocalcoords(ent.origin), ent.angles + self._host_migration_link_entity.angles);
         self._host_migration_link_helper = ent;
-        println("<unknown string>" + self._host_migration_link_entity.targetname);
+        println("<dev string:x114>" + self._host_migration_link_entity.targetname);
     }
     self.hostmigrationcontrolsfrozen = 1;
     self val::set(#"host_migration", "freezecontrols");
@@ -345,7 +344,7 @@ function hostmigrationtimerthink() {
         self val::reset(#"host_migration", "freezecontrols");
         self val::reset(#"host_migration", "disablegadgets");
         self.hostmigrationcontrolsfrozen = 0;
-        println("<unknown string>");
+        println("<dev string:x12d>");
     }
     if (isdefined(self._host_migration_link_entity)) {
         self unlink();
@@ -400,7 +399,7 @@ function waitlongdurationwithhostmigrationpause(duration) {
         }
     }
     if (gettime() != endtime) {
-        println("<unknown string>" + gettime() + "<unknown string>" + endtime);
+        println("<dev string:x151>" + gettime() + "<dev string:x170>" + endtime);
     }
     waittillhostmigrationdone();
     return gettime() - starttime;
@@ -427,7 +426,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
     }
     /#
         if (gettime() != endtime) {
-            println("<unknown string>" + gettime() + "<unknown string>" + endtime);
+            println("<dev string:x151>" + gettime() + "<dev string:x170>" + endtime);
         }
     #/
     while (isdefined(level.hostmigrationtimer)) {
@@ -517,7 +516,7 @@ function hostmigration_put_player_in_better_place() {
         if (!isdefined(spawnpoints) || spawnpoints.size == 0) {
             spawnpoints = struct::get_array("initial_spawn_points", "targetname");
         }
-        assert(isdefined(spawnpoints), "<unknown string>");
+        assert(isdefined(spawnpoints), "<dev string:x18b>");
         spawnpoint = zm_player::getfreespawnpoint(spawnpoints, self);
     }
     if (isdefined(spawnpoint)) {

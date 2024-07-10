@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_52d2de9b438adc78;
 #using scripts\killstreaks\mp\killstreak_weapons.gsc;
 #using scripts\mp_common\gametypes\battlechatter.gsc;
@@ -167,7 +166,7 @@ function setcategorytypeweight(category, type, weight) {
             }
             if (isdefined(finalindex) && finalindex + 1 != cratename) {
                 /#
-                    util::error("headicon_dead");
+                    util::error("<dev string:x38>");
                 #/
                 callback::abort_level();
                 return;
@@ -270,7 +269,7 @@ function getrandomcratetype(category, gambler_crate_name) {
         break;
     }
     /#
-        if (isdefined(level.dev_gui_supply_drop) && level.dev_gui_supply_drop != "<unknown string>" && level.dev_gui_supply_drop != "<unknown string>") {
+        if (isdefined(level.dev_gui_supply_drop) && level.dev_gui_supply_drop != "<dev string:x64>" && level.dev_gui_supply_drop != "<dev string:x6d>") {
             typekey = level.dev_gui_supply_drop;
         }
     #/
@@ -285,7 +284,7 @@ function givecrateitem(crate) {
     if (!isalive(self) || !isdefined(crate.cratetype)) {
         return;
     }
-    assert(isdefined(crate.cratetype.givefunction), "<unknown string>" + crate.cratetype.name);
+    assert(isdefined(crate.cratetype.givefunction), "<dev string:x70>" + crate.cratetype.name);
     return [[ crate.cratetype.givefunction ]]("inventory_" + crate.cratetype.name);
 }
 
@@ -1399,7 +1398,7 @@ function dropcrate(origin, angle, killstreak, owner, team, killcament, killstrea
     v_target_location = trace[#"position"];
     /#
         if (getdvarint(#"scr_supply_drop_valid_location_debug", 0)) {
-            util::drawcylinder(v_target_location, context.radius, 8000, 99999999, "<unknown string>", (0, 0, 0.9), 0.8);
+            util::drawcylinder(v_target_location, context.radius, 8000, 99999999, "<dev string:x90>", (0, 0, 0.9), 0.8);
         }
     #/
     if (isdefined(context.vehicle)) {
@@ -2395,12 +2394,12 @@ function getchopperdroppoint(context) {
 function private function_7d90f954(drop_origin, context) {
     if (ispointonnavmesh(drop_origin, context.dist_from_boundary)) {
         /#
-            recordsphere(drop_origin + (0, 0, 10), 2, (0, 1, 0), "<unknown string>");
+            recordsphere(drop_origin + (0, 0, 10), 2, (0, 1, 0), "<dev string:xc1>");
         #/
         return true;
     }
     /#
-        recordsphere(drop_origin + (0, 0, 10), 2, (1, 0, 0), "<unknown string>");
+        recordsphere(drop_origin + (0, 0, 10), 2, (1, 0, 0), "<dev string:xc1>");
     #/
     return false;
 }
@@ -2412,12 +2411,12 @@ function private function_7d90f954(drop_origin, context) {
 function private function_75277c27(tacpoint, context) {
     if (isdefined(tacpoint.ceilingheight) && tacpoint.ceilingheight >= 4000) {
         /#
-            recordsphere(tacpoint.origin, 2, (0, 1, 0), "<unknown string>");
+            recordsphere(tacpoint.origin, 2, (0, 1, 0), "<dev string:xc1>");
         #/
         return true;
     }
     /#
-        recordsphere(tacpoint.origin, 2, (1, 0, 0), "<unknown string>");
+        recordsphere(tacpoint.origin, 2, (1, 0, 0), "<dev string:xc1>");
     #/
     return false;
 }
@@ -2432,12 +2431,12 @@ function private function_9153c267(drop_origin, context, drop_height) {
         var_baa92af9 = ispointinnavvolume(heli_drop_goal, "navvolume_big");
         if (var_baa92af9) {
             /#
-                recordsphere(drop_origin + (0, 0, 20), 2, (0, 1, 0), "<unknown string>");
+                recordsphere(drop_origin + (0, 0, 20), 2, (0, 1, 0), "<dev string:xc1>");
             #/
             return true;
         }
         /#
-            recordsphere(drop_origin + (0, 0, 20), 2, (1, 0, 0), "<unknown string>");
+            recordsphere(drop_origin + (0, 0, 20), 2, (1, 0, 0), "<dev string:xc1>");
         #/
         return false;
     }
@@ -2455,12 +2454,12 @@ function private function_accec5c5(drop_origin, context, drop_height) {
     trace = physicstrace(heli_drop_goal, drop_origin + (0, 0, 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
     if (trace[#"fraction"] < 1) {
         /#
-            recordsphere(drop_origin + (0, 0, 20), 2, (1, 0, 0), "<unknown string>");
+            recordsphere(drop_origin + (0, 0, 20), 2, (1, 0, 0), "<dev string:xc1>");
         #/
         return false;
     }
     /#
-        recordsphere(drop_origin + (0, 0, 20), 2, (0, 1, 0), "<unknown string>");
+        recordsphere(drop_origin + (0, 0, 20), 2, (0, 1, 0), "<dev string:xc1>");
     #/
     return true;
 }
@@ -2524,13 +2523,13 @@ function function_263d3e9e(drop_origin, drop_height, context) {
                 filteredpoints = function_6dc6bc6b(tacpoints, context, drop_height);
                 if (isdefined(filteredpoints[0])) {
                     /#
-                        recordsphere(filteredpoints[0] + (0, 0, 70), 4, (1, 0.5, 0), "<unknown string>");
+                        recordsphere(filteredpoints[0] + (0, 0, 70), 4, (1, 0.5, 0), "<dev string:xc1>");
                     #/
                     return filteredpoints[0];
                 } else {
                     var_c71b63fa = arraygetclosest(drop_origin, tacpoints);
                     /#
-                        recordsphere(var_c71b63fa + (0, 0, 70), 4, (0, 1, 1), "<unknown string>");
+                        recordsphere(var_c71b63fa + (0, 0, 70), 4, (0, 1, 1), "<dev string:xc1>");
                     #/
                     return var_c71b63fa;
                 }
@@ -2550,10 +2549,10 @@ function function_fe13a227(chopper, heli_drop_goal, drop_height, original_drop_o
         drop_origin = (heli_drop_goal[0], heli_drop_goal[1], heli_drop_goal[2] - drop_height);
         while (true) {
             /#
-                recordsphere(original_drop_origin, 4, (1, 0, 0), "<unknown string>");
-                recordsphere(drop_origin, 4, (1, 0.5, 0), "<unknown string>");
-                recordsphere(heli_drop_goal, 4, (0, 0, 1), "<unknown string>");
-                recordline(drop_origin, heli_drop_goal, (0, 0, 1), "<unknown string>");
+                recordsphere(original_drop_origin, 4, (1, 0, 0), "<dev string:xc1>");
+                recordsphere(drop_origin, 4, (1, 0.5, 0), "<dev string:xc1>");
+                recordsphere(heli_drop_goal, 4, (0, 0, 1), "<dev string:xc1>");
+                recordline(drop_origin, heli_drop_goal, (0, 0, 1), "<dev string:xc1>");
             #/
             waitframe(1);
         }
@@ -2575,7 +2574,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
             level notify(#"stop_heli_drop_valid_location_marked_cylinder");
             level notify(#"stop_heli_drop_valid_location_arrived_at_goal_cylinder");
             level notify(#"stop_heli_drop_valid_location_dropped_cylinder");
-            util::drawcylinder(origin, context.radius, 8000, 99999999, "<unknown string>", (0.4, 0, 0.4), 0.8);
+            util::drawcylinder(origin, context.radius, 8000, 99999999, "<dev string:xca>", (0.4, 0, 0.4), 0.8);
         }
     #/
     origin = self.markerposition;
@@ -2728,7 +2727,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
         chopper [[ context.epilog ]](context);
     }
     /#
-        println("<unknown string>" + gettime() - chopper.spawntime);
+        println("<dev string:xfa>" + gettime() - chopper.spawntime);
         if (getdvarint(#"scr_supply_drop_valid_location_debug", 0)) {
             if (isdefined(context.dropoffset)) {
                 chopper_drop_point = chopper.origin - rotatepoint(context.dropoffset, chopper.angles);
@@ -2737,8 +2736,8 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
             }
             trace = groundtrace(chopper_drop_point + (0, 0, -100), chopper_drop_point + (0, 0, -10000), 0, undefined, 0);
             debug_drop_location = trace[#"position"];
-            util::drawcylinder(debug_drop_location, context.radius, 8000, 99999999, "<unknown string>", (1, 0.6, 0), 0.9);
-            iprintln("<unknown string>" + distance2d(chopper_drop_point, heli_drop_goal));
+            util::drawcylinder(debug_drop_location, context.radius, 8000, 99999999, "<dev string:x114>", (1, 0.6, 0), 0.9);
+            iprintln("<dev string:x14d>" + distance2d(chopper_drop_point, heli_drop_goal));
         }
     #/
     on_target = 0;
@@ -2761,7 +2760,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
         if (continue_waiting) {
             /#
                 if (getdvarint(#"scr_supply_drop_valid_location_debug", 0)) {
-                    iprintln("<unknown string>" + distance2d(chopper_drop_point, heli_drop_goal));
+                    iprintln("<dev string:x16e>" + distance2d(chopper_drop_point, heli_drop_goal));
                 }
             #/
             waitframe(1);
@@ -2769,7 +2768,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
     }
     /#
         if (getdvarint(#"scr_supply_drop_valid_location_debug", 0)) {
-            iprintln("<unknown string>" + distance2d(chopper_drop_point, heli_drop_goal));
+            iprintln("<dev string:x182>" + distance2d(chopper_drop_point, heli_drop_goal));
         }
     #/
     chopper notify(#"drop_crate", {#position:chopper.origin, #direction:chopper.angles, #owner:chopper.owner});
@@ -2795,7 +2794,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
         goalpath = supplydropheliendpath_v2(chopper.origin, 1);
         chopper airsupport::followpath(goalpath.path, undefined, 0);
     }
-    println("<unknown string>" + gettime() - chopper.droptime);
+    println("<dev string:x1a3>" + gettime() - chopper.droptime);
     chopper notify(#"leaving");
     chopper delete();
 }
@@ -2957,7 +2956,7 @@ function refcountdecchopper(team, killstreak_id) {
     // Checksum 0xe40ac231, Offset: 0xc920
     // Size: 0x82
     function supply_drop_dev_gui() {
-        setdvar(#"scr_supply_drop_gui", "<unknown string>");
+        setdvar(#"scr_supply_drop_gui", "<dev string:x6d>");
         while (true) {
             wait(0.5);
             devgui_string = getdvarstring(#"scr_supply_drop_gui");

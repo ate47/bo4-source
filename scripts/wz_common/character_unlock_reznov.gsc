@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\teams\teams.gsc;
 #using scripts\mp_common\item_world.gsc;
 #using scripts\wz_common\character_unlock_reznov_fixup.gsc;

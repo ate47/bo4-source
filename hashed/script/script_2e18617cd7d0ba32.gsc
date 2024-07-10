@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace ct_shared_objcounter;
@@ -64,7 +63,7 @@ class cct_shared_objcounter : cluielem {
             set_data(localclientnum, "_state", 6);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter

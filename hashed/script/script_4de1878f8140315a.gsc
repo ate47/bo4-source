@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace ct_shared_ingame_hint;
@@ -60,7 +59,7 @@ class cct_shared_ingame_hint : cluielem {
             set_data(localclientnum, "_state", 9);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint

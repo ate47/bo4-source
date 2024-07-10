@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\struct.gsc;
 #using scripts\core_common\ai\systems\gib.gsc;
 #using scripts\core_common\ai\zombie_shared.gsc;
@@ -148,7 +147,7 @@ function initanimtree(animscript) {
     if (animscript != "pain" && animscript != "death") {
         self.a.special = "none";
     }
-    assert(isdefined(animscript), "J_Spine4");
+    assert(isdefined(animscript), "<dev string:x38>");
     self.a.script = animscript;
 }
 
@@ -157,7 +156,7 @@ function initanimtree(animscript) {
 // Checksum 0xea297ae4, Offset: 0xa58
 // Size: 0xae
 function updateanimpose() {
-    assert(self.a.movement == "<unknown string>" || self.a.movement == "<unknown string>" || self.a.movement == "<unknown string>", "<unknown string>" + self.a.pose + "<unknown string>" + self.a.movement);
+    assert(self.a.movement == "<dev string:x63>" || self.a.movement == "<dev string:x6a>" || self.a.movement == "<dev string:x71>", "<dev string:x77>" + self.a.pose + "<dev string:x89>" + self.a.movement);
     self.desired_anim_pose = undefined;
 }
 
@@ -638,8 +637,8 @@ function debugtimeout() {
 function debugposinternal(org, string, size) {
     /#
         self endon(#"death");
-        self notify("<unknown string>" + org);
-        self endon("<unknown string>" + org);
+        self notify("<dev string:x8d>" + org);
+        self endon("<dev string:x8d>" + org);
         ent = spawnstruct();
         ent thread debugtimeout();
         ent endon(#"timeout");
@@ -940,8 +939,8 @@ function random_weight(array) {
 // Checksum 0xb31cc30b, Offset: 0x2d20
 // Size: 0xc6
 function setfootstepeffect(name, fx) {
-    assert(isdefined(name), "<unknown string>");
-    assert(isdefined(fx), "<unknown string>");
+    assert(isdefined(name), "<dev string:x9b>");
+    assert(isdefined(fx), "<dev string:xc7>");
     if (!isdefined(anim.optionalstepeffects)) {
         anim.optionalstepeffects = [];
     }
@@ -992,7 +991,7 @@ function doesnodeallowstance(stance) {
     if (stance == "stand") {
         return !self isnodedontstand();
     }
-    assert(stance == "<unknown string>");
+    assert(stance == "<dev string:xf1>");
     return !self isnodedontcrouch();
 }
 
@@ -1005,7 +1004,7 @@ function animarray(animname) {
     /#
         if (!isdefined(self.a.array[animname])) {
             dumpanimarray();
-            assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
+            assert(isdefined(self.a.array[animname]), "<dev string:xfa>" + animname + "<dev string:x10c>");
         }
     #/
     return self.a.array[animname];
@@ -1020,7 +1019,7 @@ function animarrayanyexist(animname) {
     /#
         if (!isdefined(self.a.array[animname])) {
             dumpanimarray();
-            assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
+            assert(isdefined(self.a.array[animname]), "<dev string:xfa>" + animname + "<dev string:x10c>");
         }
     #/
     return self.a.array[animname].size > 0;
@@ -1035,7 +1034,7 @@ function animarraypickrandom(animname) {
     /#
         if (!isdefined(self.a.array[animname])) {
             dumpanimarray();
-            assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
+            assert(isdefined(self.a.array[animname]), "<dev string:xfa>" + animname + "<dev string:x10c>");
         }
     #/
     assert(self.a.array[animname].size > 0);
@@ -1054,13 +1053,13 @@ function animarraypickrandom(animname) {
     // Checksum 0x858e37a9, Offset: 0x3228
     // Size: 0x108
     function dumpanimarray() {
-        println("<unknown string>");
+        println("<dev string:x11f>");
         foreach (k, v in self.a.array) {
             if (isarray(v)) {
-                println("<unknown string>" + k + "<unknown string>" + v.size + "<unknown string>");
+                println("<dev string:x12f>" + k + "<dev string:x13b>" + v.size + "<dev string:x153>");
                 continue;
             }
-            println("<unknown string>" + k + "<unknown string>", v);
+            println("<dev string:x12f>" + k + "<dev string:x157>", v);
         }
     }
 
@@ -1259,9 +1258,9 @@ function set_orient_mode(mode, val1) {
     /#
         if (level.dog_debug_orient == self getentnum()) {
             if (isdefined(val1)) {
-                println("<unknown string>" + mode + "<unknown string>" + val1 + "<unknown string>" + gettime());
+                println("<dev string:x160>" + mode + "<dev string:x89>" + val1 + "<dev string:x89>" + gettime());
             } else {
-                println("<unknown string>" + mode + "<unknown string>" + gettime());
+                println("<dev string:x160>" + mode + "<dev string:x89>" + gettime());
             }
         }
     #/
@@ -1280,10 +1279,10 @@ function set_orient_mode(mode, val1) {
     // Size: 0xac
     function debug_anim_print(text) {
         if (isdefined(level.dog_debug_anims) && level.dog_debug_anims) {
-            println(text + "<unknown string>" + gettime());
+            println(text + "<dev string:x89>" + gettime());
         }
         if (isdefined(level.dog_debug_anims_ent) && level.dog_debug_anims_ent == self getentnum()) {
-            println(text + "<unknown string>" + gettime());
+            println(text + "<dev string:x89>" + gettime());
         }
     }
 
@@ -1302,7 +1301,7 @@ function set_orient_mode(mode, val1) {
             lookaheaddir = self.lookaheaddir;
             lookaheadangles = vectortoangles(lookaheaddir);
             lookaheadyaw = angleclamp180(lookaheadangles[1]);
-            println(text + "<unknown string>" + gettime() + "<unknown string>" + currentyaw + "<unknown string>" + lookaheadyaw + "<unknown string>" + desiredyaw);
+            println(text + "<dev string:x89>" + gettime() + "<dev string:x17e>" + currentyaw + "<dev string:x187>" + lookaheadyaw + "<dev string:x191>" + desiredyaw);
         }
     }
 
@@ -1370,7 +1369,7 @@ function get_zombie_var_team(zvar, team) {
 // Checksum 0x8aa26706, Offset: 0x3de8
 // Size: 0x6e
 function set_zombie_var_player(zvar, value) {
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x19e>");
     if (!isdefined(self.zombie_vars)) {
         self.zombie_vars = [];
     }
@@ -1382,7 +1381,7 @@ function set_zombie_var_player(zvar, value) {
 // Checksum 0x8a777c3e, Offset: 0x3e60
 // Size: 0x60
 function get_zombie_var_player(zvar) {
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x1d2>");
     if (!isdefined(self.zombie_vars)) {
         self.zombie_vars = [];
     }
@@ -1395,7 +1394,7 @@ function get_zombie_var_player(zvar) {
 // Size: 0x302
 function spawn_zombie(spawner, target_name, spawn_point, round_number) {
     if (!isdefined(spawner)) {
-        println("<unknown string>");
+        println("<dev string:x206>");
         return undefined;
     }
     while (getfreeactorcount() < 1) {
@@ -1441,11 +1440,11 @@ function spawn_zombie(spawner, target_name, spawn_point, round_number) {
             #/
             return guy;
         } else {
-            println("<unknown string>", spawner.origin);
+            println("<dev string:x230>", spawner.origin);
             return undefined;
         }
     } else {
-        println("<unknown string>", spawner.origin);
+        println("<dev string:x271>", spawner.origin);
         return undefined;
     }
     return undefined;
@@ -1477,7 +1476,7 @@ function get_desired_origin() {
         if (!isdefined(ent)) {
             ent = getnode(self.target, "targetname");
         }
-        assert(isdefined(ent), "<unknown string>" + self.target + "<unknown string>" + self.origin);
+        assert(isdefined(ent), "<dev string:x2ae>" + self.target + "<dev string:x2dc>" + self.origin);
         return ent.origin;
     }
     return undefined;
@@ -1558,11 +1557,11 @@ function get_rise_death_anim() {
 // Checksum 0xc4854895, Offset: 0x4598
 // Size: 0x62
 function reset_attack_spot() {
-    if (isdefined(self.attacking_node)) {
-        node = self.attacking_node;
+    if (isdefined(self.601)) {
+        node = self.601;
         index = self.attacking_spot_index;
         node.attack_spots_taken[index] = 0;
-        self.attacking_node = undefined;
+        self.601 = undefined;
         self.attacking_spot_index = undefined;
         self.attacking_spot = undefined;
     }
@@ -2730,8 +2729,8 @@ function autoexec init_ignore_player_handler() {
 // Checksum 0xaf6ae71c, Offset: 0x7f18
 // Size: 0x8a
 function register_ignore_player_handler(archetype, ignore_player_func) {
-    assert(isdefined(archetype), "<unknown string>");
-    assert(!isdefined(level._ignore_player_handler[archetype]), "<unknown string>" + archetype + "<unknown string>");
+    assert(isdefined(archetype), "<dev string:x2e4>");
+    assert(!isdefined(level._ignore_player_handler[archetype]), "<dev string:x30f>" + archetype + "<dev string:x32a>");
     level._ignore_player_handler[archetype] = ignore_player_func;
 }
 

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\map.gsc;
 #using script_71e26f08f03b7a7a;
@@ -161,7 +160,7 @@ function function_c213f1b5(var_31c68e48) {
     rand = randomintrange(0, var_2f43eb3d);
     var_e4204b3 = var_31c68e48[rand];
     if (!isdefined(var_e4204b3)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     switch (var_e4204b3) {
@@ -189,7 +188,7 @@ function function_c213f1b5(var_31c68e48) {
         function_69e60a10(var_e4204b3);
         break;
     default:
-        println("<unknown string>" + var_e4204b3 + "<unknown string>");
+        println("<dev string:x69>" + var_e4204b3 + "<dev string:x88>");
         break;
     }
 }
@@ -535,7 +534,7 @@ function function_4d20b749() {
 // Size: 0x27c
 function function_320393b9() {
     if (!isdefined(level.var_590e0497) || level.var_590e0497.size <= 0) {
-        println("<unknown string>");
+        println("<dev string:xb2>");
         return;
     }
     var_f4a0340a = array::randomize(level.var_590e0497);
@@ -557,7 +556,7 @@ function function_320393b9() {
     }
     /#
         if (var_68daafed == 0) {
-            println("<unknown string>");
+            println("<dev string:xd3>");
         }
     #/
 }

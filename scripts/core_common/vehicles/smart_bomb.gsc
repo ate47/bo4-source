@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_ai_shared.gsc;
 #using scripts\core_common\vehicle_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -131,7 +130,7 @@ function state_combat_update(params) {
                         point._scoredebug[#"disttoorigin"] = spawnstruct();
                     }
                     point._scoredebug[#"disttoorigin"].score = mapfloat(0, 200, 0, 100, point.disttoorigin2d);
-                    point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
+                    point._scoredebug[#"disttoorigin"].scorename = "<dev string:x38>";
                 #/
                 point.score += mapfloat(0, 200, 0, 100, point.disttoorigin2d);
                 if (point.inclaimedlocation) {
@@ -143,7 +142,7 @@ function state_combat_update(params) {
                             point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                         }
                         point._scoredebug[#"inclaimedlocation"].score = -500;
-                        point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                        point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:x47>";
                     #/
                     point.score += -500;
                 }
@@ -155,7 +154,7 @@ function state_combat_update(params) {
                         point._scoredebug[#"random"] = spawnstruct();
                     }
                     point._scoredebug[#"random"].score = randomfloatrange(0, 50);
-                    point._scoredebug[#"random"].scorename = "<unknown string>";
+                    point._scoredebug[#"random"].scorename = "<dev string:x5b>";
                 #/
                 point.score += randomfloatrange(0, 50);
                 if (isdefined(self.prevmovedir)) {
@@ -169,7 +168,7 @@ function state_combat_update(params) {
                                 point._scoredebug[#"currentmovedir"] = spawnstruct();
                             }
                             point._scoredebug[#"currentmovedir"].score = randomfloatrange(50, 150);
-                            point._scoredebug[#"currentmovedir"].scorename = "<unknown string>";
+                            point._scoredebug[#"currentmovedir"].scorename = "<dev string:x64>";
                         #/
                         point.score += randomfloatrange(50, 150);
                     }
@@ -256,7 +255,7 @@ function hunt_enemy() {
                         point._scoredebug[#"disttoorigin"] = spawnstruct();
                     }
                     point._scoredebug[#"disttoorigin"].score = mapfloat(0, 200, 0, -200, distance(point.origin, queryresult.origin));
-                    point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
+                    point._scoredebug[#"disttoorigin"].scorename = "<dev string:x38>";
                 #/
                 point.score += mapfloat(0, 200, 0, -200, distance(point.origin, queryresult.origin));
                 /#
@@ -267,7 +266,7 @@ function hunt_enemy() {
                         point._scoredebug[#"heighttoorigin"] = spawnstruct();
                     }
                     point._scoredebug[#"heighttoorigin"].score = mapfloat(50, 200, 0, -200, abs(point.origin[2] - queryresult.origin[2]));
-                    point._scoredebug[#"heighttoorigin"].scorename = "<unknown string>";
+                    point._scoredebug[#"heighttoorigin"].scorename = "<dev string:x75>";
                 #/
                 point.score += mapfloat(50, 200, 0, -200, abs(point.origin[2] - queryresult.origin[2]));
                 if (point.inclaimedlocation === 1) {
@@ -279,7 +278,7 @@ function hunt_enemy() {
                             point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                         }
                         point._scoredebug[#"inclaimedlocation"].score = -500;
-                        point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                        point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:x47>";
                     #/
                     point.score += -500;
                 }

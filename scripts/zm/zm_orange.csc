@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_trials.csc;
 #using scripts\zm\zm_orange_audiologs.csc;
 #using scripts\zm\zm_orange_ww_quest.csc;

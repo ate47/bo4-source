@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\gib.csc;
 #using scripts\core_common\ai\systems\destructible_character.csc;
 #using scripts\core_common\struct.csc;

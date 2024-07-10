@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_loadout.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
 

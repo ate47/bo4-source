@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\weapons\weapon_utils.gsc;
 #using scripts\mp_common\player\player_utils.gsc;
@@ -71,7 +70,7 @@ function event_handler[gametype_init] main(eventstruct) {
         level.setbackweapon = level.weapon_sas_secondary_weapon;
         break;
     default:
-        assert(1, "<unknown string>");
+        assert(1, "<dev string:x38>");
         break;
     }
     gameobjects::register_allowed_gameobject(level.gametype);

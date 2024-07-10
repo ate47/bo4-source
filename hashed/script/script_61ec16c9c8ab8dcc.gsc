@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace lower_message;
@@ -40,7 +39,7 @@ class clower_message : cluielem {
             set_data(localclientnum, "_state", 2);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace clower_message/lower_message

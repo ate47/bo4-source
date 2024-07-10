@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\vehicle_death_shared.gsc;
 #using scripts\core_common\vehicle_shared.gsc;
@@ -103,7 +102,7 @@ function fire_for_time(totalfiretime, turretidx, target, intervalscale = 1) {
     self endon("fire_stop" + turretidx);
     weapon = self seatgetweapon(turretidx);
     if (!isdefined(weapon) || weapon.name == #"none" || weapon.firetime <= 0) {
-        println("<unknown string>" + turretidx + "<unknown string>" + self getentnum() + "<unknown string>" + self.model);
+        println("<dev string:x38>" + turretidx + "<dev string:x5f>" + self getentnum() + "<dev string:x6e>" + self.model);
         return;
     }
     firetime = weapon.firetime * intervalscale;
@@ -122,7 +121,7 @@ function fire_for_rounds(firecount, turretidx, target) {
     }
     weapon = self seatgetweapon(turretidx);
     if (!isdefined(weapon) || weapon.name == #"none" || weapon.firetime <= 0) {
-        println("<unknown string>" + turretidx + "<unknown string>" + self getentnum() + "<unknown string>" + self.model);
+        println("<dev string:x38>" + turretidx + "<dev string:x5f>" + self getentnum() + "<dev string:x6e>" + self.model);
         return;
     }
     __fire_for_rounds_internal(firecount, weapon.firetime, turretidx, target);
@@ -870,7 +869,7 @@ function set_role(rolename) {
 // Checksum 0xd962efbc, Offset: 0x31a0
 // Size: 0x84
 function has_state(name) {
-    assert(isdefined(self), "<unknown string>");
+    assert(isdefined(self), "<dev string:x7d>");
     return isdefined(self.state_machines) && isdefined(self.current_role) && isdefined(self.state_machines[self.current_role]) && self.state_machines[self.current_role] statemachine::has_state(name);
 }
 
@@ -1634,13 +1633,13 @@ function debugscore(entity, num, sorted) {
         }
         recordstar(self.origin, color);
         if (isdefined(sorted) && sorted) {
-            record3dtext("<unknown string>" + num + "<unknown string>" + self.score + "<unknown string>", self.origin - (0, 0, 10 * count), color);
+            record3dtext("<dev string:xa8>" + num + "<dev string:xab>" + self.score + "<dev string:xb0>", self.origin - (0, 0, 10 * count), color);
         } else {
-            record3dtext("<unknown string>" + self.score + "<unknown string>", self.origin - (0, 0, 10 * count), color);
+            record3dtext("<dev string:xa8>" + self.score + "<dev string:xb0>", self.origin - (0, 0, 10 * count), color);
         }
         foreach (score in self._scoredebug) {
             count++;
-            record3dtext(score.scorename + "<unknown string>" + score.score, self.origin - (0, 0, 10 * count), color);
+            record3dtext(score.scorename + "<dev string:xb4>" + score.score, self.origin - (0, 0, 10 * count), color);
         }
     #/
 }
@@ -1692,7 +1691,7 @@ function positionquery_filter_random(queryresult, min, max) {
                 point._scoredebug[#"random"] = spawnstruct();
             }
             point._scoredebug[#"random"].score = score;
-            point._scoredebug[#"random"].scorename = "<unknown string>";
+            point._scoredebug[#"random"].scorename = "<dev string:xb8>";
         #/
         point.score += score;
     }
@@ -1724,7 +1723,7 @@ function positionquery_filter_outofgoalanchor(queryresult, tolerance = 1) {
                     point._scoredebug[#"outofgoalanchor"] = spawnstruct();
                 }
                 point._scoredebug[#"outofgoalanchor"].score = score;
-                point._scoredebug[#"outofgoalanchor"].scorename = "<unknown string>";
+                point._scoredebug[#"outofgoalanchor"].scorename = "<dev string:xc1>";
             #/
             point.score += score;
         }
@@ -1803,7 +1802,7 @@ function positionquery_filter_distawayfromtarget(queryresult, targetarray, dista
                     point._scoredebug[#"tooclosetoothers"] = spawnstruct();
                 }
                 point._scoredebug[#"tooclosetoothers"].score = tooclosepenalty;
-                point._scoredebug[#"tooclosetoothers"].scorename = "<unknown string>";
+                point._scoredebug[#"tooclosetoothers"].scorename = "<dev string:xd3>";
             #/
             point.score += tooclosepenalty;
         }
@@ -1934,7 +1933,7 @@ function private function_e057db25(var_2d1cbdd9, goalpos, vararg) {
     case 0:
         return tacticalquery(var_2d1cbdd9, goalpos);
     default:
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:xe6>");
         break;
     }
     return undefined;
@@ -1969,7 +1968,7 @@ function function_1d436633(...) {
         if (forcedgoal) {
             newpos = getclosestpointonnavmesh(goalinfo.goalpos, self.radius * 2, self.radius);
         } else {
-            assert(isdefined(self.settings.tacbundle) && self.settings.tacbundle != "<unknown string>", "<unknown string>");
+            assert(isdefined(self.settings.tacbundle) && self.settings.tacbundle != "<dev string:xa8>", "<dev string:x109>");
             goalarray = function_e057db25(self.settings.tacbundle, goalinfo.goalpos, vararg);
             var_817e8fd0 = [];
             if (isdefined(goalarray) && goalarray.size) {
@@ -2023,7 +2022,7 @@ function private function_4ab1a63a(goal) {
                     point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                 }
                 point._scoredebug[#"inclaimedlocation"].score = -5000;
-                point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:x13e>";
             #/
             point.score += -5000;
         }
@@ -2036,7 +2035,7 @@ function private function_4ab1a63a(goal) {
                 point._scoredebug[#"random"] = spawnstruct();
             }
             point._scoredebug[#"random"].score = score;
-            point._scoredebug[#"random"].scorename = "<unknown string>";
+            point._scoredebug[#"random"].scorename = "<dev string:xb8>";
         #/
         point.score += score;
     }
@@ -2095,7 +2094,7 @@ function function_1e0d693b(goal, enemy) {
                     point._scoredebug[#"outofgoalanchor"] = spawnstruct();
                 }
                 point._scoredebug[#"outofgoalanchor"].score = score;
-                point._scoredebug[#"outofgoalanchor"].scorename = "<unknown string>";
+                point._scoredebug[#"outofgoalanchor"].scorename = "<dev string:xc1>";
             #/
             point.score += score;
         }
@@ -2108,7 +2107,7 @@ function function_1e0d693b(goal, enemy) {
                     point._scoredebug[#"no visibility"] = spawnstruct();
                 }
                 point._scoredebug[#"no visibility"].score = -5000;
-                point._scoredebug[#"no visibility"].scorename = "<unknown string>";
+                point._scoredebug[#"no visibility"].scorename = "<dev string:x152>";
             #/
             point.score += -5000;
         }
@@ -2120,7 +2119,7 @@ function function_1e0d693b(goal, enemy) {
                 point._scoredebug[#"engagementdist"] = spawnstruct();
             }
             point._scoredebug[#"engagementdist"].score = point.distawayfromengagementarea * -1;
-            point._scoredebug[#"engagementdist"].scorename = "<unknown string>";
+            point._scoredebug[#"engagementdist"].scorename = "<dev string:x162>";
         #/
         point.score += point.distawayfromengagementarea * -1;
         /#
@@ -2131,7 +2130,7 @@ function function_1e0d693b(goal, enemy) {
                 point._scoredebug[#"hash_6c444b535ec20313"] = spawnstruct();
             }
             point._scoredebug[#"hash_6c444b535ec20313"].score = mapfloat(0, prefereddistawayfromorigin, -5000, 0, point.disttoorigin2d);
-            point._scoredebug[#"hash_6c444b535ec20313"].scorename = "<unknown string>";
+            point._scoredebug[#"hash_6c444b535ec20313"].scorename = "<dev string:x173>";
         #/
         point.score += mapfloat(0, prefereddistawayfromorigin, -5000, 0, point.disttoorigin2d);
         if (point.inclaimedlocation) {
@@ -2143,7 +2142,7 @@ function function_1e0d693b(goal, enemy) {
                     point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                 }
                 point._scoredebug[#"inclaimedlocation"].score = -5000;
-                point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:x13e>";
             #/
             point.score += -5000;
         }
@@ -2158,7 +2157,7 @@ function function_1e0d693b(goal, enemy) {
                     point._scoredebug[#"height"] = spawnstruct();
                 }
                 point._scoredebug[#"height"].score = heightscore;
-                point._scoredebug[#"height"].scorename = "<unknown string>";
+                point._scoredebug[#"height"].scorename = "<dev string:x184>";
             #/
             point.score += heightscore;
         }
@@ -2171,7 +2170,7 @@ function function_1e0d693b(goal, enemy) {
                 point._scoredebug[#"random"] = spawnstruct();
             }
             point._scoredebug[#"random"].score = score;
-            point._scoredebug[#"random"].scorename = "<unknown string>";
+            point._scoredebug[#"random"].scorename = "<dev string:xb8>";
         #/
         point.score += score;
     }
@@ -2208,7 +2207,7 @@ function private function_4646fb11(goal) {
                     point._scoredebug[#"outofgoalanchor"] = spawnstruct();
                 }
                 point._scoredebug[#"outofgoalanchor"].score = score;
-                point._scoredebug[#"outofgoalanchor"].scorename = "<unknown string>";
+                point._scoredebug[#"outofgoalanchor"].scorename = "<dev string:xc1>";
             #/
             point.score += score;
         }
@@ -2221,7 +2220,7 @@ function private function_4646fb11(goal) {
                     point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                 }
                 point._scoredebug[#"inclaimedlocation"].score = -5000;
-                point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:x13e>";
             #/
             point.score += -5000;
         }
@@ -2234,7 +2233,7 @@ function private function_4646fb11(goal) {
                 point._scoredebug[#"random"] = spawnstruct();
             }
             point._scoredebug[#"random"].score = score;
-            point._scoredebug[#"random"].scorename = "<unknown string>";
+            point._scoredebug[#"random"].scorename = "<dev string:xb8>";
         #/
         point.score += score;
     }
@@ -2303,13 +2302,13 @@ function function_b1bd875a() {
             }
             if (!isdefined(newpos)) {
                 /#
-                    record3dtext("<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + (0, 0, 8), (1, 0, 0));
+                    record3dtext("<dev string:x18d>" + goalinfo.goalpos + "<dev string:x1b1>" + goalinfo.goalradius + "<dev string:x1c2>" + goalinfo.goalheight, self.origin + (0, 0, 8), (1, 0, 0));
                     recordline(self.origin, goalinfo.goalpos, (1, 0, 0));
                 #/
                 newpos = goalinfo.goalpos;
             } else if (!self isingoal(newpos)) {
                 /#
-                    record3dtext("<unknown string>" + newpos + "<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + (0, 0, 8), (1, 0, 0));
+                    record3dtext("<dev string:x1d7>" + newpos + "<dev string:x1e8>" + goalinfo.goalpos + "<dev string:x1b1>" + goalinfo.goalradius + "<dev string:x1c2>" + goalinfo.goalheight, self.origin + (0, 0, 8), (1, 0, 0));
                     recordline(self.origin, newpos, (1, 0, 0));
                 #/
                 newpos = goalinfo.goalpos;

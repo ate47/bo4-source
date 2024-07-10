@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core\gametypes\frontend_draft.csc;
 #using scripts\core\gametypes\frontend_blackmarket.csc;
 #using script_7ca3324ffa5389e4;
@@ -517,26 +516,26 @@ function entityspawned(localclientnum) {
     // Checksum 0x7859d00b, Offset: 0x3a38
     // Size: 0x324
     function function_c9f8c5e9(localclientnum) {
-        var_663588d = "Store";
+        var_663588d = "<dev string:x38>";
         var_408e7d77 = -1;
         foreach (i, scene in level.var_e362b5d9) {
-            var_2b58d8c0 = "WZPersonalizeCharacterInspect";
+            var_2b58d8c0 = "<dev string:x4b>";
             switch (scene.mode) {
             case 2:
-                var_2b58d8c0 = "WZJumpKitSelector";
+                var_2b58d8c0 = "<dev string:x4e>";
                 break;
             case 1:
-                var_2b58d8c0 = "scene_frontend_arena_team";
+                var_2b58d8c0 = "<dev string:x54>";
                 break;
             case 3:
-                var_2b58d8c0 = "+";
+                var_2b58d8c0 = "<dev string:x5a>";
                 break;
             case 0:
-                var_2b58d8c0 = "cycle_frozen_moment_char_current";
+                var_2b58d8c0 = "<dev string:x60>";
                 break;
             }
             var_34415027 = var_663588d + var_2b58d8c0 + scene.prt;
-            adddebugcommand(localclientnum, "frontend" + var_34415027 + "cam_eyes" + i + "1e968675840551ec");
+            adddebugcommand(localclientnum, "<dev string:x66>" + var_34415027 + "<dev string:x75>" + i + "<dev string:x9a>");
         }
         while (true) {
             wait(0.1);
@@ -563,8 +562,8 @@ function entityspawned(localclientnum) {
     // Checksum 0xd6f9a020, Offset: 0x3d68
     // Size: 0x182
     function function_da10fc8f(localclientnum, var_da239274) {
-        var_38b900c2 = getent(localclientnum, "j_neck", "<unknown string>");
-        var_51a0f339 = getent(localclientnum, "<unknown string>", "<unknown string>");
+        var_38b900c2 = getent(localclientnum, "<dev string:x9f>", "<dev string:xb6>");
+        var_51a0f339 = getent(localclientnum, "<dev string:xc3>", "<dev string:xb6>");
         var_38b900c2 show();
         var_51a0f339 hide();
         function_45180840(localclientnum);
@@ -623,25 +622,25 @@ function entityspawned(localclientnum) {
         case 1:
             return;
         case 2:
-            shot_name = "<unknown string>";
+            shot_name = "<dev string:xda>";
             break;
         case 3:
-            shot_name = "<unknown string>";
+            shot_name = "<dev string:xe1>";
             break;
         case 7:
-            shot_name = "<unknown string>";
+            shot_name = "<dev string:xec>";
             break;
         case 6:
-            shot_name = "<unknown string>";
+            shot_name = "<dev string:xf7>";
             break;
         case 0:
-            shot_name = "<unknown string>";
+            shot_name = "<dev string:xff>";
             break;
         case 4:
-            shot_name = "<unknown string>";
+            shot_name = "<dev string:x106>";
             break;
         default:
-            shot_name = "<unknown string>";
+            shot_name = "<dev string:x10d>";
             break;
         }
         scene_name = #"scene_frontend_character_male_render";
@@ -654,9 +653,9 @@ function entityspawned(localclientnum) {
         } while (![[ var_d0b01271 ]]->function_ea4ac9f8());
         var_f75a02ea = function_9e72a96(function_b14806c6(character_index, mode));
         if (var_b34f01f0) {
-            shot_name = "<unknown string>" + var_f75a02ea + "<unknown string>" + function_9e72a96(item_data.lootid) + "<unknown string>";
+            shot_name = "<dev string:x118>" + var_f75a02ea + "<dev string:x12a>" + function_9e72a96(item_data.lootid) + "<dev string:x12e>";
         } else {
-            shot_name = "<unknown string>" + var_f75a02ea + "<unknown string>" + function_9e72a96(item_data.lootid) + "<unknown string>";
+            shot_name = "<dev string:x118>" + var_f75a02ea + "<dev string:x12a>" + function_9e72a96(item_data.lootid) + "<dev string:x148>";
         }
         function_da10fc8f(localclientnum, shot_name);
     }
@@ -685,14 +684,14 @@ function entityspawned(localclientnum) {
     // Checksum 0x19d9877f, Offset: 0x4538
     // Size: 0x8ac
     function function_4920c25a(localclientnum, menu_name, state) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x154>");
+        self endon("<dev string:x154>");
         function_25485718();
-        var_38b900c2 = getent(localclientnum, "j_neck", "<unknown string>");
-        var_51a0f339 = getent(localclientnum, "<unknown string>", "<unknown string>");
+        var_38b900c2 = getent(localclientnum, "<dev string:x9f>", "<dev string:xb6>");
+        var_51a0f339 = getent(localclientnum, "<dev string:xc3>", "<dev string:xb6>");
         var_38b900c2 show();
         var_51a0f339 hide();
-        args = strtok(state, "<unknown string>");
+        args = strtok(state, "<dev string:x167>");
         mode = int(args[0]);
         character_index = int(args[1]);
         outfit_index = int(args[2]);
@@ -760,8 +759,8 @@ function entityspawned(localclientnum) {
             }
         }
         [[ var_d0b01271 ]]->function_39a68bf2();
-        level notify("<unknown string>" + localclientnum, {#menu:"<unknown string>", #status:"<unknown string>"});
-        setdvar(#"char_render", "WZPersonalizeCharacterInspect");
+        level notify("<dev string:x16b>" + localclientnum, {#menu:"<dev string:x179>", #status:"<dev string:x18e>"});
+        setdvar(#"char_render", "<dev string:x4b>");
         function_59013397();
     }
 
@@ -774,7 +773,7 @@ function entityspawned(localclientnum) {
             level thread function_fb399a61(localclientnum);
             return;
         }
-        util::add_devgui(localclientnum, "<unknown string>" + "<unknown string>", "<unknown string>");
+        util::add_devgui(localclientnum, "<dev string:x197>" + "<dev string:x1ae>", "<dev string:x1c0>");
         level thread function_622b5dc0(localclientnum);
     }
 
@@ -786,7 +785,7 @@ function entityspawned(localclientnum) {
         level endon(#"game_ended");
         while (true) {
             if (getdvarint(#"hash_af3e02adb15e8ec", 0) > 0) {
-                util::remove_devgui(localclientnum, "<unknown string>" + "<unknown string>");
+                util::remove_devgui(localclientnum, "<dev string:x197>" + "<dev string:x1ae>");
                 level thread function_fb399a61(localclientnum);
                 return;
             }
@@ -799,31 +798,31 @@ function entityspawned(localclientnum) {
     // Checksum 0x15c594c8, Offset: 0x4f48
     // Size: 0x6f2
     function function_fb399a61(localclientnum) {
-        lui::createcustomcameramenu("<unknown string>", localclientnum, &function_4920c25a, 1, undefined, undefined, 0);
-        lui::linktocustomcharacter("<unknown string>", localclientnum, "<unknown string>");
+        lui::createcustomcameramenu("<dev string:x179>", localclientnum, &function_4920c25a, 1, undefined, undefined, 0);
+        lui::linktocustomcharacter("<dev string:x179>", localclientnum, "<dev string:x1e9>");
         target = struct::get(#"character_staging_extracam1");
         assert(isdefined(target));
-        var_663588d = "<unknown string>";
-        var_f4b452be = [1:"<unknown string>", 3:"<unknown string>", 0:"<unknown string>"];
-        var_8d6e963c = ["<unknown string>", 2:"<unknown string>", 3:"<unknown string>", 4:"<unknown string>", 5:"<unknown string>", 6:"<unknown string>", 7:"<unknown string>"];
+        var_663588d = "<dev string:x197>";
+        var_f4b452be = [1:"<dev string:x20b>", 3:"<dev string:x210>", 0:"<dev string:x215>"];
+        var_8d6e963c = ["<dev string:xff>", 2:"<dev string:x21a>", 3:"<dev string:x222>", 4:"<dev string:x106>", 5:"<dev string:x22f>", 6:"<dev string:x23a>", 7:"<dev string:x243>"];
         foreach (mode, display_name in var_f4b452be) {
-            var_82414930 = var_663588d + display_name + "<unknown string>";
+            var_82414930 = var_663588d + display_name + "<dev string:x12a>";
             for (index = 0; index < getplayerroletemplatecount(mode); index++) {
                 var_f75a02ea = function_9e72a96(function_b14806c6(index, mode));
-                var_11f96a92 = var_82414930 + var_f75a02ea + "<unknown string>";
-                adddebugcommand(localclientnum, "frontend" + var_11f96a92 + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + mode + "<unknown string>" + index + "<unknown string>" + -1 + "<unknown string>" + -1 + "<unknown string>" + "<unknown string>");
+                var_11f96a92 = var_82414930 + var_f75a02ea + "<dev string:x12a>";
+                adddebugcommand(localclientnum, "<dev string:x66>" + var_11f96a92 + "<dev string:x250>" + "<dev string:x256>" + "<dev string:x25b>" + "<dev string:x263>" + "<dev string:x167>" + mode + "<dev string:x167>" + index + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x271>" + "<dev string:x275>");
                 var_13240050 = function_d299ef16(index, mode);
                 for (outfitindex = 0; outfitindex < var_13240050; outfitindex++) {
                     var_9cf37283 = function_d7c3cf6c(index, outfitindex, mode);
                     if (var_9cf37283.valid) {
-                        var_b614b3ba = var_11f96a92 + function_9e72a96(var_9cf37283.namehash) + "<unknown string>";
-                        adddebugcommand(localclientnum, "frontend" + var_b614b3ba + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + mode + "<unknown string>" + index + "<unknown string>" + outfitindex + "<unknown string>" + -1 + "<unknown string>" + "<unknown string>");
+                        var_b614b3ba = var_11f96a92 + function_9e72a96(var_9cf37283.namehash) + "<dev string:x12a>";
+                        adddebugcommand(localclientnum, "<dev string:x66>" + var_b614b3ba + "<dev string:x250>" + "<dev string:x256>" + "<dev string:x25b>" + "<dev string:x263>" + "<dev string:x167>" + mode + "<dev string:x167>" + index + "<dev string:x167>" + outfitindex + "<dev string:x167>" + -1 + "<dev string:x271>" + "<dev string:x275>");
                         if (mode == 1) {
-                            adddebugcommand(localclientnum, "frontend" + var_b614b3ba + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + mode + "<unknown string>" + index + "<unknown string>" + outfitindex + "<unknown string>" + 8 + "<unknown string>" + "<unknown string>");
+                            adddebugcommand(localclientnum, "<dev string:x66>" + var_b614b3ba + "<dev string:x279>" + "<dev string:x256>" + "<dev string:x25b>" + "<dev string:x263>" + "<dev string:x167>" + mode + "<dev string:x167>" + index + "<dev string:x167>" + outfitindex + "<dev string:x167>" + 8 + "<dev string:x271>" + "<dev string:x275>");
                         }
                         foreach (type, name in var_8d6e963c) {
                             if (function_2351cba1(type, mode)) {
-                                adddebugcommand(localclientnum, "frontend" + var_b614b3ba + name + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + mode + "<unknown string>" + index + "<unknown string>" + outfitindex + "<unknown string>" + type + "<unknown string>" + "<unknown string>");
+                                adddebugcommand(localclientnum, "<dev string:x66>" + var_b614b3ba + name + "<dev string:x256>" + "<dev string:x25b>" + "<dev string:x263>" + "<dev string:x167>" + mode + "<dev string:x167>" + index + "<dev string:x167>" + outfitindex + "<dev string:x167>" + type + "<dev string:x271>" + "<dev string:x275>");
                             }
                         }
                         waitframe(1);
@@ -831,14 +830,14 @@ function entityspawned(localclientnum) {
                 }
             }
         }
-        setdvar(#"char_render", "WZPersonalizeCharacterInspect");
-        var_f7a528f2 = "WZPersonalizeCharacterInspect";
+        setdvar(#"char_render", "<dev string:x4b>");
+        var_f7a528f2 = "<dev string:x4b>";
         while (true) {
             wait(0.1);
             if (getdvarstring(#"char_render", var_f7a528f2) != var_f7a528f2) {
                 var_f7a528f2 = getdvarstring(#"char_render");
-                if (var_f7a528f2 != "WZPersonalizeCharacterInspect") {
-                    level notify("<unknown string>" + localclientnum, {#menu:"<unknown string>", #status:"<unknown string>", #state:var_f7a528f2});
+                if (var_f7a528f2 != "<dev string:x4b>") {
+                    level notify("<dev string:x16b>" + localclientnum, {#menu:"<dev string:x179>", #status:"<dev string:x283>", #state:var_f7a528f2});
                 }
             }
         }
@@ -880,7 +879,7 @@ function entityspawned(localclientnum) {
                 iteration++;
             } while (!weapon_model isstreamed(8, 4) && iteration < 1);
             wait(2);
-            function_da10fc8f(localclientnum, "<unknown string>" + weapon_name + "<unknown string>" + weapon_name + "<unknown string>" + var_9ce34e01 + "<unknown string>");
+            function_da10fc8f(localclientnum, "<dev string:x28c>" + weapon_name + "<dev string:x12a>" + weapon_name + "<dev string:x29e>" + var_9ce34e01 + "<dev string:x148>");
         }
     }
 
@@ -889,29 +888,29 @@ function entityspawned(localclientnum) {
     // Checksum 0x6ce8037f, Offset: 0x5938
     // Size: 0x574
     function function_f2c538de(localclientnum, menu_name, state) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
-        args = strtok(state, "<unknown string>");
+        self notify("<dev string:x2a2>");
+        self endon("<dev string:x2a2>");
+        args = strtok(state, "<dev string:x167>");
         weapon_name = args[0];
         camo = int(args[1]);
         var_c58c03de = int(args[2]);
         filter = args[3];
         function_25485718();
-        var_38b900c2 = getent(localclientnum, "j_neck", "<unknown string>");
-        var_51a0f339 = getent(localclientnum, "<unknown string>", "<unknown string>");
+        var_38b900c2 = getent(localclientnum, "<dev string:x9f>", "<dev string:xb6>");
+        var_51a0f339 = getent(localclientnum, "<dev string:xc3>", "<dev string:xb6>");
         var_38b900c2 show();
         var_51a0f339 hide();
         weapon = getweapon(weapon_name);
         target = struct::get(#"weapon_icon_staging");
-        weapon_model = spawn(localclientnum, target.origin, "<unknown string>");
-        weapon_model.targetname = "<unknown string>";
+        weapon_model = spawn(localclientnum, target.origin, "<dev string:x2b4>");
+        weapon_model.targetname = "<dev string:x2c3>";
         weapon_model.angles = target.angles;
         weapon_model sethighdetail();
         weapon_model useweaponmodel(weapon);
         weapon_model setscale(function_8d32e28(weapon));
         level thread scene::play(#"scene_frontend_weapon_camo_render");
         if (camo != -2) {
-            options = function_ea647602("<unknown string>");
+            options = function_ea647602("<dev string:x2d9>");
             if (camo == -1) {
                 start_index = 0;
                 end_index = options.size - 1;
@@ -921,10 +920,10 @@ function entityspawned(localclientnum) {
             }
             for (i = start_index; i <= end_index; i++) {
                 var_2d8a24a3 = options[i];
-                if (filter != "<unknown string>") {
+                if (filter != "<dev string:x2e0>") {
                     category = function_57411076(var_2d8a24a3.name);
-                    if (filter == "<unknown string>") {
-                        if (category != "<unknown string>" && category != "<unknown string>" && category != "<unknown string>") {
+                    if (filter == "<dev string:x2e7>") {
+                        if (category != "<dev string:x2f5>" && category != "<dev string:x2fc>" && category != "<dev string:x303>") {
                             continue;
                         }
                     } else if (category != filter) {
@@ -943,13 +942,13 @@ function entityspawned(localclientnum) {
                 end_index = var_c58c03de;
             }
             for (i = start_index; i <= end_index; i++) {
-                function_5d6480a0(localclientnum, weapon, weapon_model, weapon_name, {#item_index:0, #name:"<unknown string>" + i}, i);
+                function_5d6480a0(localclientnum, weapon, weapon_model, weapon_name, {#item_index:0, #name:"<dev string:x30a>" + i}, i);
             }
         }
         level thread scene::stop(#"scene_frontend_weapon_camo_render");
-        level notify("<unknown string>" + localclientnum, {#menu:"<unknown string>", #status:"<unknown string>"});
+        level notify("<dev string:x16b>" + localclientnum, {#menu:"<dev string:x317>", #status:"<dev string:x18e>"});
         weapon_model delete();
-        setdvar(#"weap_render", "WZPersonalizeCharacterInspect");
+        setdvar(#"weap_render", "<dev string:x4b>");
         function_59013397();
     }
 
@@ -958,7 +957,7 @@ function entityspawned(localclientnum) {
     // Checksum 0xd9b4f30d, Offset: 0x5eb8
     // Size: 0x26
     function function_d583ca36(weapon) {
-        return weapon.inventorytype == "<unknown string>";
+        return weapon.inventorytype == "<dev string:x329>";
     }
 
     // Namespace frontend/frontend
@@ -966,57 +965,57 @@ function entityspawned(localclientnum) {
     // Checksum 0x36c98d97, Offset: 0x5ee8
     // Size: 0x7b2
     function function_db3c4c69(localclientnum) {
-        lui::createcustomcameramenu("<unknown string>", localclientnum, &function_f2c538de, 1, undefined, undefined, 0);
+        lui::createcustomcameramenu("<dev string:x317>", localclientnum, &function_f2c538de, 1, undefined, undefined, 0);
         target = struct::get(#"weapon_icon_staging");
         assert(isdefined(target));
         level.var_43aac701 = [];
-        var_663588d = "<unknown string>";
-        root_weapon = var_663588d + "<unknown string>";
-        a_weapons = enumerateweapons("<unknown string>");
+        var_663588d = "<dev string:x333>";
+        root_weapon = var_663588d + "<dev string:x34d>";
+        a_weapons = enumerateweapons("<dev string:x360>");
         if (!isdefined(a_weapons)) {
             a_weapons = [];
         }
         a_weapons = array::filter(a_weapons, 1, &function_d583ca36);
         foreach (weapon in a_weapons) {
             name = getweaponname(weapon);
-            var_ee63b362 = root_weapon + "<unknown string>" + name;
-            adddebugcommand(localclientnum, "frontend" + var_ee63b362 + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "1e968675840551ec");
+            var_ee63b362 = root_weapon + "<dev string:x12a>" + name;
+            adddebugcommand(localclientnum, "<dev string:x66>" + var_ee63b362 + "<dev string:x369>" + "<dev string:x373>" + "<dev string:x167>" + name + "<dev string:x9a>");
         }
-        setdvar(#"hash_1311d7636a782655", "WZPersonalizeCharacterInspect");
-        setdvar(#"weap_render", "WZPersonalizeCharacterInspect");
-        var_c11ba901 = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
-        weapon_name = "WZPersonalizeCharacterInspect";
-        var_f7a528f2 = "WZPersonalizeCharacterInspect";
+        setdvar(#"hash_1311d7636a782655", "<dev string:x4b>");
+        setdvar(#"weap_render", "<dev string:x4b>");
+        var_c11ba901 = array("<dev string:x2e7>", "<dev string:x2f5>", "<dev string:x2fc>", "<dev string:x303>", "<dev string:x386>", "<dev string:x38f>", "<dev string:x39a>");
+        weapon_name = "<dev string:x4b>";
+        var_f7a528f2 = "<dev string:x4b>";
         while (true) {
             wait(0.1);
             if (getdvarstring(#"hash_1311d7636a782655", weapon_name) != weapon_name) {
                 weapon_name = getdvarstring(#"hash_1311d7636a782655");
-                if (weapon_name != "WZPersonalizeCharacterInspect") {
+                if (weapon_name != "<dev string:x4b>") {
                     foreach (weapon in a_weapons) {
                         name = getweaponname(weapon);
                         if (name != weapon_name) {
                             continue;
                         }
-                        var_c001baa1 = var_663588d + "<unknown string>" + name;
-                        adddebugcommand(localclientnum, "frontend" + var_c001baa1 + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "<unknown string>" + -1 + "<unknown string>" + -1 + "<unknown string>" + "<unknown string>" + "1e968675840551ec");
+                        var_c001baa1 = var_663588d + "<dev string:x12a>" + name;
+                        adddebugcommand(localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x3a2>" + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>");
                         for (i = 0; i < var_c11ba901.size; i++) {
                             type = var_c11ba901[i];
-                            adddebugcommand(localclientnum, "frontend" + var_c001baa1 + "<unknown string>" + type + "<unknown string>" + 2 + i + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "<unknown string>" + -1 + "<unknown string>" + -1 + "<unknown string>" + type + "1e968675840551ec");
+                            adddebugcommand(localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x12a>" + type + "<dev string:x3b9>" + 2 + i + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x167>" + type + "<dev string:x9a>");
                         }
-                        options = function_ea647602("<unknown string>");
+                        options = function_ea647602("<dev string:x2d9>");
                         foreach (i, option in options) {
-                            adddebugcommand(localclientnum, "frontend" + var_c001baa1 + "<unknown string>" + option.name + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "<unknown string>" + i + "<unknown string>" + 0 + "<unknown string>" + "<unknown string>" + "1e968675840551ec");
+                            adddebugcommand(localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x12a>" + option.name + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + i + "<dev string:x167>" + 0 + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>");
                         }
                         for (i = 1; i < weapon.var_5b73038c; i++) {
-                            adddebugcommand(localclientnum, "frontend" + var_c001baa1 + "<unknown string>" + i + "<unknown string>" + "<unknown string>" + "<unknown string>" + name + "<unknown string>" + -2 + "<unknown string>" + i + "<unknown string>" + "<unknown string>" + "1e968675840551ec");
+                            adddebugcommand(localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x3bd>" + i + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -2 + "<dev string:x167>" + i + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>");
                         }
                     }
                 }
             }
             if (getdvarstring(#"weap_render", var_f7a528f2) != var_f7a528f2) {
                 var_f7a528f2 = getdvarstring(#"weap_render");
-                if (var_f7a528f2 != "WZPersonalizeCharacterInspect") {
-                    level notify("<unknown string>" + localclientnum, {#menu:"<unknown string>", #status:"<unknown string>", #state:var_f7a528f2});
+                if (var_f7a528f2 != "<dev string:x4b>") {
+                    level notify("<dev string:x16b>" + localclientnum, {#menu:"<dev string:x317>", #status:"<dev string:x283>", #state:var_f7a528f2});
                 }
             }
         }
@@ -1027,11 +1026,11 @@ function entityspawned(localclientnum) {
     // Checksum 0xb3f155fb, Offset: 0x66a8
     // Size: 0xbc
     function function_3d29f330(localclientnum) {
-        util::add_devgui(localclientnum, "<unknown string>" + "<unknown string>", "<unknown string>");
+        util::add_devgui(localclientnum, "<dev string:x3cb>" + "<dev string:x1ae>", "<dev string:x3df>");
         while (getdvarint(#"hash_2a806885aa30e65b", 0) == 0) {
             wait(1);
         }
-        util::remove_devgui(localclientnum, "<unknown string>" + "<unknown string>");
+        util::remove_devgui(localclientnum, "<dev string:x3cb>" + "<dev string:x1ae>");
         function_ea9a5e69(localclientnum);
     }
 
@@ -1040,7 +1039,7 @@ function entityspawned(localclientnum) {
     // Checksum 0x983e102e, Offset: 0x6770
     // Size: 0x1a
     function function_671eb8fa() {
-        return [1:"<unknown string>"];
+        return [1:"<dev string:x406>"];
     }
 
     // Namespace frontend/frontend
@@ -1048,33 +1047,33 @@ function entityspawned(localclientnum) {
     // Checksum 0x212a261e, Offset: 0x6798
     // Size: 0x4fa
     function function_ea9a5e69(localclientnum) {
-        lui::createcustomcameramenu("<unknown string>", localclientnum, &function_4cd43ca2, 1, undefined, undefined, 0);
+        lui::createcustomcameramenu("<dev string:x40e>", localclientnum, &function_4cd43ca2, 1, undefined, undefined, 0);
         var_2067e07 = function_671eb8fa();
-        adddebugcommand(localclientnum, "frontend" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + -1 + "<unknown string>" + -1 + "1e968675840551ec");
+        adddebugcommand(localclientnum, "<dev string:x66>" + "<dev string:x3cb>" + "<dev string:x421>" + "<dev string:x42e>" + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x9a>");
         foreach (type, name in var_2067e07) {
-            adddebugcommand(localclientnum, "frontend" + "<unknown string>" + name + "<unknown string>" + "<unknown string>" + "<unknown string>" + -1 + "<unknown string>" + type + "1e968675840551ec");
+            adddebugcommand(localclientnum, "<dev string:x66>" + "<dev string:x3cb>" + name + "<dev string:x369>" + "<dev string:x42e>" + "<dev string:x167>" + -1 + "<dev string:x167>" + type + "<dev string:x9a>");
         }
-        assert(isdefined(getent(localclientnum, "<unknown string>", "<unknown string>")));
+        assert(isdefined(getent(localclientnum, "<dev string:x43f>", "<dev string:xb6>")));
         assert(isdefined(struct::get(#"fx_trail_start")));
         assert(isdefined(struct::get(#"fx_trail_end")));
         jumpkits = namespace_eb06e24d::get_jumpkits();
         foreach (i, jumpkit in jumpkits) {
             name = function_9e72a96(jumpkit);
-            var_c23e6a40 = "<unknown string>" + name + "<unknown string>";
-            adddebugcommand(localclientnum, "frontend" + var_c23e6a40 + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>" + -1 + "1e968675840551ec");
+            var_c23e6a40 = "<dev string:x3cb>" + name + "<dev string:x12a>";
+            adddebugcommand(localclientnum, "<dev string:x66>" + var_c23e6a40 + "<dev string:x250>" + "<dev string:x369>" + "<dev string:x42e>" + "<dev string:x167>" + i + "<dev string:x167>" + -1 + "<dev string:x9a>");
             foreach (type, name in var_2067e07) {
-                adddebugcommand(localclientnum, "frontend" + var_c23e6a40 + name + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>" + type + "1e968675840551ec");
+                adddebugcommand(localclientnum, "<dev string:x66>" + var_c23e6a40 + name + "<dev string:x369>" + "<dev string:x42e>" + "<dev string:x167>" + i + "<dev string:x167>" + type + "<dev string:x9a>");
             }
             waitframe(1);
         }
-        setdvar(#"hash_4243dd01393aa940", "WZPersonalizeCharacterInspect");
-        var_f7a528f2 = "WZPersonalizeCharacterInspect";
+        setdvar(#"hash_4243dd01393aa940", "<dev string:x4b>");
+        var_f7a528f2 = "<dev string:x4b>";
         while (true) {
             wait(0.1);
             if (getdvarstring(#"hash_4243dd01393aa940", var_f7a528f2) != var_f7a528f2) {
                 var_f7a528f2 = getdvarstring(#"hash_4243dd01393aa940");
-                if (var_f7a528f2 != "WZPersonalizeCharacterInspect") {
-                    level notify("<unknown string>" + localclientnum, {#menu:"<unknown string>", #status:"<unknown string>", #state:var_f7a528f2});
+                if (var_f7a528f2 != "<dev string:x4b>") {
+                    level notify("<dev string:x16b>" + localclientnum, {#menu:"<dev string:x40e>", #status:"<dev string:x283>", #state:var_f7a528f2});
                 }
             }
         }
@@ -1085,14 +1084,14 @@ function entityspawned(localclientnum) {
     // Checksum 0xb7c6a6a0, Offset: 0x6ca0
     // Size: 0x664
     function function_4cd43ca2(localclientnum, menu_name, state) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
-        args = strtok(state, "<unknown string>");
+        self notify("<dev string:x44f>");
+        self endon("<dev string:x44f>");
+        args = strtok(state, "<dev string:x167>");
         jumpkit = int(args[0]);
         type = int(args[1]);
         function_25485718();
-        var_38b900c2 = getent(localclientnum, "j_neck", "<unknown string>");
-        var_51a0f339 = getent(localclientnum, "<unknown string>", "<unknown string>");
+        var_38b900c2 = getent(localclientnum, "<dev string:x9f>", "<dev string:xb6>");
+        var_51a0f339 = getent(localclientnum, "<dev string:xc3>", "<dev string:xb6>");
         var_38b900c2 show();
         var_51a0f339 hide();
         if (jumpkit == -1) {
@@ -1108,7 +1107,7 @@ function entityspawned(localclientnum) {
             types = [];
             types[type] = type_data;
         }
-        var_351da865 = getent(localclientnum, "<unknown string>", "<unknown string>");
+        var_351da865 = getent(localclientnum, "<dev string:x43f>", "<dev string:xb6>");
         fx_start = struct::get(#"fx_trail_start");
         fx_end = struct::get(#"fx_trail_end");
         foreach (type, type_name in types) {
@@ -1128,7 +1127,7 @@ function entityspawned(localclientnum) {
                         continue;
                     }
                     var_351da865.origin = fx_start.origin;
-                    handle = util::playfxontag(localclientnum, trail.body_trail, var_351da865, "<unknown string>");
+                    handle = util::playfxontag(localclientnum, trail.body_trail, var_351da865, "<dev string:x462>");
                     if (!isdefined(handle)) {
                         continue;
                     }
@@ -1138,7 +1137,7 @@ function entityspawned(localclientnum) {
                         waitframe(1);
                         var_351da865.origin += step_size;
                     }
-                    function_da10fc8f(localclientnum, "<unknown string>" + function_9e72a96(var_4132246d) + "<unknown string>" + function_9e72a96(trail.name) + "<unknown string>");
+                    function_da10fc8f(localclientnum, "<dev string:x46f>" + function_9e72a96(var_4132246d) + "<dev string:x12a>" + function_9e72a96(trail.name) + "<dev string:x482>");
                     killfx(localclientnum, handle);
                     break;
                 default:
@@ -1153,8 +1152,8 @@ function entityspawned(localclientnum) {
                 break;
             }
         }
-        level notify("<unknown string>" + localclientnum, {#menu:"<unknown string>", #status:"<unknown string>"});
-        setdvar(#"hash_4243dd01393aa940", "WZPersonalizeCharacterInspect");
+        level notify("<dev string:x16b>" + localclientnum, {#menu:"<dev string:x40e>", #status:"<dev string:x18e>"});
+        setdvar(#"hash_4243dd01393aa940", "<dev string:x4b>");
         function_59013397();
     }
 
@@ -1242,7 +1241,7 @@ function function_deed1dbf(localclientnum) {
     } while (var_ca56648b == 0 && attempts < limit);
     selectable = array::filter(level.var_e362b5d9, 0, &function_70e963be, localclientnum);
     if (selectable.size == 0) {
-        println("<unknown string>");
+        println("<dev string:x489>");
         selectable = level.var_e362b5d9;
     }
     if (var_ca56648b == 1) {
@@ -1308,7 +1307,7 @@ function function_a588eb2e(localclientnum) {
 // Checksum 0x57b67596, Offset: 0x7cc0
 // Size: 0x35c
 function localclientconnect(localclientnum) {
-    println("<unknown string>" + localclientnum);
+    println("<dev string:x4df>" + localclientnum);
     var_acd4d941 = util::spawn_model(localclientnum, "tag_origin", (0, 0, 0), (0, 0, 0));
     var_acd4d941.targetname = "__masked_char";
     var_22f20461 = character_customization::function_dd295310(var_acd4d941, localclientnum, 0);
@@ -2287,7 +2286,7 @@ function function_58994f4a(localclientnum, menu_data) {
     // Checksum 0xceb74f92, Offset: 0xc2c0
     // Size: 0x74
     function update_mp_lobby_room_devgui(localclientnum, state) {
-        if (state == "<unknown string>" || state == "<unknown string>") {
+        if (state == "<dev string:x50e>" || state == "<dev string:x51a>") {
             level thread mp_devgui::create_mp_contracts_devgui(localclientnum);
             return;
         }

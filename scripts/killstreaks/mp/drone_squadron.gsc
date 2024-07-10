@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
 #using scripts\weapons\heatseekingmissile.gsc;
@@ -73,7 +72,7 @@ function calcspawnorigin(origin, angles) {
     }
     heightoffset = killstreaks::function_975d45c3();
     startnode = undefined;
-    assert(level.heli_startnodes.size > 0, "<unknown string>");
+    assert(level.heli_startnodes.size > 0, "<dev string:x38>");
     var_581dc057 = [];
     foreach (node in level.heli_startnodes) {
         facingdir = anglestoforward(angles);
@@ -144,12 +143,12 @@ function calcspawnorigin(origin, angles) {
         spawnloc = getclosestpointonnavvolume(pos, "navvolume_small", 2000);
         if (isdefined(spawnloc)) {
             /#
-                recordline(startnode.origin, origin, (0, 1, 1), "<unknown string>");
-                recordline(startnode.origin, spawnloc, (0, 0, 1), "<unknown string>");
-                recordline(origin, spawnloc, (0, 0, 1), "<unknown string>");
-                recordsphere(origin, 5, (1, 0, 0), "<unknown string>");
-                recordsphere(startnode.origin, 100, (0, 1, 1), "<unknown string>");
-                recordsphere(spawnloc, 5, (0, 0, 1), "<unknown string>");
+                recordline(startnode.origin, origin, (0, 1, 1), "<dev string:x67>");
+                recordline(startnode.origin, spawnloc, (0, 0, 1), "<dev string:x67>");
+                recordline(origin, spawnloc, (0, 0, 1), "<dev string:x67>");
+                recordsphere(origin, 5, (1, 0, 0), "<dev string:x70>");
+                recordsphere(startnode.origin, 100, (0, 1, 1), "<dev string:x70>");
+                recordsphere(spawnloc, 5, (0, 0, 1), "<dev string:x70>");
             #/
             return {#origin:spawnloc, #angles:vectortoangles(dir * -1)};
         }
@@ -166,7 +165,7 @@ function function_d52c51c6(killstreaktype) {
     player = self;
     if (!isnavvolumeloaded()) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x79>");
         #/
         self iprintlnbold(#"hash_62ced7a8acdaa034");
         return false;
@@ -559,7 +558,7 @@ function function_89609eb8(origin, angles) {
         return {#origin:var_109e505c[0].origin, #angles:angles};
     }
     leavenode = undefined;
-    assert(level.heli_startnodes.size > 0, "<unknown string>");
+    assert(level.heli_startnodes.size > 0, "<dev string:x38>");
     var_581dc057 = [];
     foreach (node in level.heli_startnodes) {
         facingdir = anglestoforward(angles);
@@ -574,12 +573,12 @@ function function_89609eb8(origin, angles) {
         spawnloc = getclosestpointonnavvolume(leavenode.origin, "navvolume_small", 2000);
         if (isdefined(spawnloc)) {
             /#
-                recordline(leavenode.origin, origin, (0, 1, 1), "<unknown string>");
-                recordline(leavenode.origin, spawnloc, (0, 0, 1), "<unknown string>");
-                recordline(origin, spawnloc, (0, 0, 1), "<unknown string>");
-                recordsphere(origin, 5, (1, 0, 0), "<unknown string>");
-                recordsphere(leavenode.origin, 100, (0, 1, 1), "<unknown string>");
-                recordsphere(spawnloc, 5, (0, 0, 1), "<unknown string>");
+                recordline(leavenode.origin, origin, (0, 1, 1), "<dev string:x67>");
+                recordline(leavenode.origin, spawnloc, (0, 0, 1), "<dev string:x67>");
+                recordline(origin, spawnloc, (0, 0, 1), "<dev string:x67>");
+                recordsphere(origin, 5, (1, 0, 0), "<dev string:x70>");
+                recordsphere(leavenode.origin, 100, (0, 1, 1), "<dev string:x70>");
+                recordsphere(spawnloc, 5, (0, 0, 1), "<dev string:x70>");
             #/
             return {#origin:spawnloc, #angles:(0, 0, 0)};
         }

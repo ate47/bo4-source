@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\core_common\clientfield_shared.csc;
 #using scripts\core_common\system_shared.csc;
@@ -51,10 +50,10 @@ function __init__() {
 function tomahawk_in_use(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     /#
         if (newval == 1) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
             return;
         }
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x4c>");
     #/
 }
 

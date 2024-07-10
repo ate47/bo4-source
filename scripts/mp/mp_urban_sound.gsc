@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_urban_sound;
 
 // Namespace mp_urban_sound/mp_urban_sound

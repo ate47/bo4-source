@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_hacienda_alt_fx;
 
 // Namespace mp_hacienda_alt_fx/mp_hacienda_alt_fx

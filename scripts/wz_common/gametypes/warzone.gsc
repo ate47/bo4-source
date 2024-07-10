@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ignore_systems.gsc;
 #using scripts\wz_common\wz_rat.gsc;
 #using scripts\wz_common\wz_ai.gsc;
@@ -174,8 +173,8 @@ function event_handler[gametype_init] main(eventstruct) {
     /#
         callback::on_vehicle_spawned(&function_5d7553c9);
         level.var_5efad16e = &function_73b0f715;
-        forcedplayerteam = getdvarstring(#"forcedplayerteam", "trigger_hurt_new");
-        if (forcedplayerteam != "trigger_hurt_new") {
+        forcedplayerteam = getdvarstring(#"forcedplayerteam", "<dev string:x38>");
+        if (forcedplayerteam != "<dev string:x38>") {
             level.forcedplayerteam = forcedplayerteam;
         }
         level thread function_c2a75696();
@@ -205,7 +204,7 @@ function on_spawn_player() {
     // Checksum 0x2b286512, Offset: 0x17a8
     // Size: 0x134
     function function_5d7553c9() {
-        if (game.state == "MOD_HEAD_SHOT") {
+        if (game.state == "<dev string:x3b>") {
             return;
         }
         if (level flagsys::get(#"item_world_reset")) {
@@ -228,7 +227,7 @@ function on_spawn_player() {
         }
         level.spawned_vehicles++;
         if (getdvarint(#"hash_10daadecda56ef52", 1) && level.spawned_vehicles > 80) {
-            assert(level.spawned_vehicles <= 80, "map_corner");
+            assert(level.spawned_vehicles <= 80, "<dev string:x45>");
         }
     }
 
@@ -238,11 +237,11 @@ function on_spawn_player() {
     // Size: 0x130
     function private function_c2a75696() {
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x67>" + mapname + "<dev string:x77>");
+        adddebugcommand("<dev string:x67>" + mapname + "<dev string:xab>");
         while (true) {
             waitframe(1);
-            string = getdvarstring(#"warzone_devgui_cmd", "trigger_hurt_new");
+            string = getdvarstring(#"warzone_devgui_cmd", "<dev string:x38>");
             switch (string) {
             case #"start":
                 function_73b0f715();
@@ -250,7 +249,7 @@ function on_spawn_player() {
             default:
                 break;
             }
-            setdvar(#"warzone_devgui_cmd", "trigger_hurt_new");
+            setdvar(#"warzone_devgui_cmd", "<dev string:x38>");
         }
     }
 
@@ -275,11 +274,11 @@ function private function_23600e7d() {
         var_26ef8eea = 0;
     #/
     if (var_26ef8eea && !isdedicated()) {
-        println("<unknown string>");
+        println("<dev string:xec>");
         return;
     }
     if (getdvarint(#"hash_2cc9b0ef1896d89a", 1) != 0) {
-        println("<unknown string>");
+        println("<dev string:x123>");
         return;
     }
     while (!isdefined(game.state) || game.state != "pregame") {
@@ -292,7 +291,7 @@ function private function_23600e7d() {
         waitframe(1);
     }
     if (getdvarint(#"wz_test_mode", 0) != 0) {
-        println("<unknown string>");
+        println("<dev string:x14e>");
         level function_73b0f715();
         return;
     }
@@ -316,22 +315,22 @@ function private function_23600e7d() {
     level.var_7dc1df3a.var_e2382b29 = level.var_8fcd8a61;
     var_e09e5160 = level.activeplayers.size;
     evolution = 0;
-    println("<unknown string>" + starttime);
-    println("<unknown string>" + level.var_8fcd8a61);
-    println("<unknown string>" + level.var_e9d6c52f);
-    println("<unknown string>" + level.player_reduction);
-    println("<unknown string>" + level.evolution_interval);
-    println("<unknown string>" + level.var_8ca0499);
-    println("<unknown string>" + level.var_493d04d3);
-    println("<unknown string>" + level.max_wait_time);
-    println("<unknown string>" + level.var_3f631d69);
-    println("<unknown string>" + level.var_25fc8e84);
-    println("<unknown string>" + level.var_a132ca2b);
+    println("<dev string:x183>" + starttime);
+    println("<dev string:x19c>" + level.var_8fcd8a61);
+    println("<dev string:x1b5>" + level.var_e9d6c52f);
+    println("<dev string:x1ce>" + level.player_reduction);
+    println("<dev string:x1e7>" + level.evolution_interval);
+    println("<dev string:x202>" + level.var_8ca0499);
+    println("<dev string:x222>" + level.var_493d04d3);
+    println("<dev string:x248>" + level.max_wait_time);
+    println("<dev string:x25e>" + level.var_3f631d69);
+    println("<dev string:x287>" + level.var_25fc8e84);
+    println("<dev string:x2a3>" + level.var_a132ca2b);
     while (true) {
-        println("<unknown string>");
-        println("<unknown string>" + evolution);
+        println("<dev string:x2c0>");
+        println("<dev string:x2f4>" + evolution);
         if (getdvarint(#"hash_2cc9b0ef1896d89a", 1) != 0) {
-            println("<unknown string>");
+            println("<dev string:x123>");
             level.var_7dc1df3a = undefined;
             return;
         }
@@ -339,17 +338,17 @@ function private function_23600e7d() {
             level.var_a132ca2b = level.var_e9d6c52f;
             level.var_8ca0499 = level.var_3f631d69;
             level.var_493d04d3 = 0;
-            println("<unknown string>" + level.max_wait_time + "<unknown string>");
-            println("<unknown string>" + level.var_a132ca2b + "<unknown string>" + level.var_8ca0499);
+            println("<dev string:x318>" + level.max_wait_time + "<dev string:x347>");
+            println("<dev string:x353>" + level.var_a132ca2b + "<dev string:x374>" + level.var_8ca0499);
         }
         if (level.activeplayers.size >= level.var_a132ca2b) {
             level.var_7dc1df3a.var_7be962bb = level.activeplayers.size;
             level.var_7dc1df3a.var_7d960258 = level.var_a132ca2b;
             if (level.activeplayers.size < level.var_8fcd8a61) {
-                println("<unknown string>" + level.var_8fcd8a61 + "<unknown string>" + level.activeplayers.size);
+                println("<dev string:x38f>" + level.var_8fcd8a61 + "<dev string:x3cd>" + level.activeplayers.size);
                 if (level.var_8ca0499 > 0) {
                     timeleft = level.var_8ca0499;
-                    println("<unknown string>" + level.var_8ca0499);
+                    println("<dev string:x3dd>" + level.var_8ca0499);
                     while (timeleft > 0) {
                         timeleft -= 1;
                         wait(1);
@@ -365,50 +364,50 @@ function private function_23600e7d() {
                 var_fb9555e1 = 3;
                 continue;
             }
-            println("<unknown string>");
+            println("<dev string:x41d>");
             gameadvertisement::setadvertisedstatus(0);
             level.var_7dc1df3a.duration = gettime() - starttime;
-            println("<unknown string>" + gettime());
+            println("<dev string:x43d>" + gettime());
             level function_73b0f715();
             return;
         }
         if (level.var_493d04d3 <= 0 && level.activeplayers.size < level.var_e9d6c52f) {
             if (var_fb9555e1 > 0) {
-                println("<unknown string>" + level.activeplayers.size);
+                println("<dev string:x456>" + level.activeplayers.size);
                 wait(5);
                 var_fb9555e1--;
-                println("<unknown string>" + var_fb9555e1);
+                println("<dev string:x49b>" + var_fb9555e1);
                 continue;
             }
             function_75189494(gettime() - starttime, level.activeplayers.size, level.var_e9d6c52f);
-            println("<unknown string>" + gettime());
+            println("<dev string:x4b6>" + gettime());
             level.var_7dc1df3a = undefined;
             exitlevel(0, #"hash_35b5848d9f1b58e0");
             return;
         }
-        println("<unknown string>");
-        println("<unknown string>" + level.activeplayers.size);
-        println("<unknown string>" + level.var_a132ca2b);
+        println("<dev string:x4d2>");
+        println("<dev string:x504>" + level.activeplayers.size);
+        println("<dev string:x51b>" + level.var_a132ca2b);
         if (level.activeplayers.size < level.var_a132ca2b) {
             var_7bce82a7 = level.activeplayers.size - var_e09e5160;
             if (var_7bce82a7 >= 3) {
-                println("<unknown string>" + var_7bce82a7);
+                println("<dev string:x532>" + var_7bce82a7);
                 if (level.var_a132ca2b < level.var_8fcd8a61 - level.maxteamplayers) {
                     var_b0c8b797 = level.var_a132ca2b - level.activeplayers.size;
                     if (var_b0c8b797 < 4 * level.maxteamplayers) {
                         level.var_a132ca2b += level.maxteamplayers;
-                        println("<unknown string>" + level.var_a132ca2b);
+                        println("<dev string:x556>" + level.var_a132ca2b);
                     }
                 }
                 var_e09e5160 = level.activeplayers.size;
                 wait(2);
-                println("<unknown string>" + evolution);
+                println("<dev string:x580>" + evolution);
                 continue;
             }
         }
         evolution++;
         var_e09e5160 = level.activeplayers.size;
-        println("<unknown string>" + level.evolution_interval);
+        println("<dev string:x5ab>" + level.evolution_interval);
         timeleft = level.evolution_interval;
         while (timeleft > 0) {
             timeleft -= 1;
@@ -429,9 +428,9 @@ function private function_23600e7d() {
         if (level.var_493d04d3 > 0) {
             level.var_493d04d3--;
         }
-        println("<unknown string>" + level.var_a132ca2b);
-        println("<unknown string>" + level.var_493d04d3);
-        println("<unknown string>");
+        println("<dev string:x5d4>" + level.var_a132ca2b);
+        println("<dev string:x5f8>" + level.var_493d04d3);
+        println("<dev string:x629>");
     }
 }
 
@@ -487,7 +486,7 @@ function function_3b0db3c2() {
     level thread character_banter::start();
     level waittill(#"hash_78e53817cafb5265");
     level thread character_banter::stop();
-    println("<unknown string>");
+    println("<dev string:x64c>");
     gameadvertisement::setadvertisedstatus(0);
 }
 
@@ -546,7 +545,7 @@ function start_warzone() {
         infection::function_fb163563(#"platoon_1");
         infection::function_153000d0(#"hash_26cbd829e32a90c5", #"hash_197817ab19e99648");
     }
-    println("<unknown string>");
+    println("<dev string:x64c>");
     gameadvertisement::setadvertisedstatus(0);
     function_a9822793();
     if (isdefined(level.deathcirclerespawn) && level.deathcirclerespawn) {
@@ -707,7 +706,7 @@ function on_player_spawned() {
     }
     /#
         if (getdvarint(#"scr_disable_infiltration", 0)) {
-            self menus::register_menu_response_callback("<unknown string>", &function_ec2c9808);
+            self menus::register_menu_response_callback("<dev string:x666>", &function_ec2c9808);
             return;
         }
     #/
@@ -1804,7 +1803,7 @@ function private function_3c8be2d2(trigger_struct) {
     activator = trigger_struct.activator;
     if (isplayer(activator)) {
         /#
-            iprintlnbold("<unknown string>" + activator.origin[0] + "<unknown string>" + activator.origin[1] + "<unknown string>" + activator.origin[2] + "<unknown string>");
+            iprintlnbold("<dev string:x677>" + activator.origin[0] + "<dev string:x69e>" + activator.origin[1] + "<dev string:x69e>" + activator.origin[2] + "<dev string:x6a3>");
         #/
         function_293cd859(activator);
         if (activator isinvehicle()) {
@@ -1824,7 +1823,7 @@ function private function_3c8be2d2(trigger_struct) {
     }
     if (isentity(activator)) {
         /#
-            iprintlnbold("<unknown string>" + activator.origin[0] + "<unknown string>" + activator.origin[1] + "<unknown string>" + activator.origin[2] + "<unknown string>");
+            iprintlnbold("<dev string:x6a7>" + activator.origin[0] + "<dev string:x69e>" + activator.origin[1] + "<dev string:x69e>" + activator.origin[2] + "<dev string:x6a3>");
         #/
         function_293cd859(activator);
         activator delete();
@@ -1902,7 +1901,7 @@ function private _teleport_player(origin, angles, var_9914886a = 0) {
 // Size: 0x2be
 function private function_b777ff94(entity) {
     /#
-        iprintlnbold("<unknown string>" + entity.origin[0] + "<unknown string>" + entity.origin[1] + "<unknown string>" + entity.origin[2] + "<unknown string>");
+        iprintlnbold("<dev string:x6ce>" + entity.origin[0] + "<dev string:x69e>" + entity.origin[1] + "<dev string:x69e>" + entity.origin[2] + "<dev string:x6a3>");
     #/
     if (!isdefined(entity)) {
         return;
@@ -1980,11 +1979,11 @@ function function_77319881() {
     }
     level flagsys::set(#"spawning_allowed");
     /#
-        function_cc5d43a1("<unknown string>");
+        function_cc5d43a1("<dev string:x6ef>");
     #/
     level player_reinsertion::function_fec68e5c();
     /#
-        function_cc5d43a1("<unknown string>");
+        function_cc5d43a1("<dev string:x702>");
     #/
     level flagsys::clear(#"spawning_allowed");
     waitframe(1);
@@ -2002,7 +2001,7 @@ function function_77319881() {
     // Size: 0x3c
     function function_cc5d43a1(msg) {
         println(msg);
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x716>");
     }
 
 #/

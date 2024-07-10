@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_6b221588ece2c4aa;
 #using scripts\weapons\trophy_system.gsc;
 #using scripts\core_common\weapons_shared.gsc;
@@ -506,7 +505,7 @@ function detonateweaponobjectarray(forcedetonation, weapon) {
 // Size: 0x7c
 function addweaponobjecttowatcher(watchername, weapon_instance) {
     watcher = getweaponobjectwatcher(watchername);
-    assert(isdefined(watcher), "<unknown string>" + watchername + "<unknown string>");
+    assert(isdefined(watcher), "<dev string:x38>" + watchername + "<dev string:x51>");
     self addweaponobject(watcher, weapon_instance);
 }
 
@@ -2109,7 +2108,7 @@ function function_ac7c2bf9(params = undefined) {
     // Size: 0x64
     function saydamaged(orig, amount) {
                 for (i = 0; i < 60; i++) {
-            print3d(orig, "<unknown string>" + amount);
+            print3d(orig, "<dev string:x63>" + amount);
             waitframe(1);
         }
     }
@@ -2754,12 +2753,12 @@ function function_d9c08e94(var_2f190eaf, var_46f3f2d3) {
     function switch_team(entity, watcher, owner) {
         self notify(#"stop_disarmthink");
         self endon(#"stop_disarmthink", #"death");
-        setdvar(#"scr_switch_team", "<unknown string>");
+        setdvar(#"scr_switch_team", "<dev string:x6f>");
         while (true) {
             wait(0.5);
             devgui_int = getdvarint(#"scr_switch_team", 0);
             if (devgui_int != 0) {
-                team = "<unknown string>";
+                team = "<dev string:x72>";
                 if (isdefined(level.getenemyteam) && isdefined(owner) && isdefined(owner.team)) {
                     team = [[ level.getenemyteam ]](owner.team);
                 }
@@ -2767,7 +2766,7 @@ function function_d9c08e94(var_2f190eaf, var_46f3f2d3) {
                     player = [[ level.devongetormakebot ]](team);
                 }
                 if (!isdefined(player)) {
-                    println("<unknown string>");
+                    println("<dev string:x7f>");
                     wait(1);
                     continue;
                 }

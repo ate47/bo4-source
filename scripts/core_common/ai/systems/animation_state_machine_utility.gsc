@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace animationstatenetworkutility;
 
 // Namespace animationstatenetworkutility/animation_state_machine_utility

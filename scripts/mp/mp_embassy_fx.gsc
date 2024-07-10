@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_embassy_fx;
 
 // Namespace mp_embassy_fx/mp_embassy_fx

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\lightninggun.csc;
 #using scripts\core_common\system_shared.csc;
 

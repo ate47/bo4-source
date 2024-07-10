@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_player.gsc;
 #using script_24c32478acf44108;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\core_common\ai\zombie_death.gsc;
 #using scripts\core_common\ai_shared.gsc;
@@ -157,12 +156,12 @@ function playerzombie_downed_hud() {
     /#
         self endon(#"death", #"disconnect");
         text = newdebughudelem(self);
-        text.alignx = "<unknown string>";
-        text.aligny = "<unknown string>";
-        text.horzalign = "<unknown string>";
-        text.vertalign = "<unknown string>";
+        text.alignx = "<dev string:x38>";
+        text.aligny = "<dev string:x41>";
+        text.horzalign = "<dev string:x4a>";
+        text.vertalign = "<dev string:x58>";
         text.foreground = 1;
-        text.font = "<unknown string>";
+        text.font = "<dev string:x66>";
         text.fontscale = 1.8;
         text.alpha = 0;
         text.color = (1, 1, 1);
@@ -268,7 +267,7 @@ function can_do_input(inputtype) {
         }
         break;
     default:
-        assertmsg("<unknown string>" + inputtype);
+        assertmsg("<dev string:x70>" + inputtype);
         break;
     }
     return cando;
@@ -288,7 +287,7 @@ function playerzombie_play_sound(alias) {
 // Size: 0x182
 function playerzombie_waitfor_buttonrelease(inputtype) {
     if (inputtype != "use" && inputtype != "attack" && inputtype != "ads") {
-        assertmsg("<unknown string>" + inputtype + "<unknown string>");
+        assertmsg("<dev string:xa1>" + inputtype + "<dev string:xd7>");
         return;
     }
     notifystring = "waitfor_buttonrelease_" + inputtype;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_office_teleporters.gsc;
 #using scripts\zm\zm_office_special_rounds.gsc;
 #using script_174ebb9642933bf7;
@@ -65,7 +64,7 @@ function function_4074a9e2() {
     zm_powerups::function_41cedb05("bonus_points_team");
     zm_powerups::function_41cedb05("double_points");
     /#
-        iprintlnbold("<unknown string>" + level.var_baf33f0e + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + level.var_baf33f0e + "<dev string:x4e>");
     #/
     level thread function_88b87834();
 }
@@ -186,7 +185,7 @@ function spawn_archetype(str_archetype) {
         ai = namespace_df88241c::spawn_nova_crawler();
         break;
     default:
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x60>");
         break;
     }
     return ai;

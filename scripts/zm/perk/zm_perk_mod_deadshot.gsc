@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_stats.gsc;
@@ -98,7 +97,7 @@ function function_36228265(inflictor, attacker, damage, flags, meansofdeath, wea
         var_e99e314 = int(damage * 1.25);
         if (var_e99e314 >= self.health) {
             /#
-                attacker zm_challenges::debug_print("<unknown string>");
+                attacker zm_challenges::debug_print("<dev string:x38>");
             #/
             attacker zm_stats::increment_challenge_stat(#"perk_deadshot_kills");
         }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 
 #namespace flowgraph_entity;
@@ -28,7 +27,7 @@ function getentityangles(e_entity) {
 }
 
 // Namespace flowgraph_entity/flowgraph_entity
-// Params c, eflags: 0x0
+// Params 12, eflags: 0x0
 // Checksum 0xe069fdc8, Offset: 0xd8
 // Size: 0x2c2
 function lerpshaderconstantovertime(x, e_entity, i_script_vector, f_start_x, f_start_y, f_start_z, f_start_w, f_end_x, f_end_y, f_end_z, f_end_w, f_time) {

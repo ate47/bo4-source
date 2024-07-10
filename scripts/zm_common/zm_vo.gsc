@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_round_spawning.gsc;
@@ -157,8 +156,8 @@ function private _play_banter(var_3e24b5d5, var_a33019a0, a_players, b_force = 0
                     if (var_a2be76a3.var_dbeb023e.size) {
                         /#
                             if (getdvarint(#"zm_debug_vo", 0)) {
-                                iprintlnbold(var_3e24b5d5 + "<unknown string>" + function_9e72a96(var_ac829b0) + "<unknown string>" + n_index);
-                                println(var_3e24b5d5 + "<unknown string>" + function_9e72a96(var_ac829b0) + "<unknown string>" + n_index);
+                                iprintlnbold(var_3e24b5d5 + "<dev string:x38>" + function_9e72a96(var_ac829b0) + "<dev string:x38>" + n_index);
+                                println(var_3e24b5d5 + "<dev string:x38>" + function_9e72a96(var_ac829b0) + "<dev string:x38>" + n_index);
                             }
                         #/
                         if (function_7e4562d7(var_a2be76a3.var_dbeb023e, var_a2be76a3.var_1dc0a881, 1)) {
@@ -183,8 +182,8 @@ function private _play_banter(var_3e24b5d5, var_a33019a0, a_players, b_force = 0
                 } else {
                     /#
                         if (getdvarint(#"zm_debug_vo", 0)) {
-                            iprintlnbold(var_3e24b5d5 + "<unknown string>" + function_9e72a96(var_ac829b0) + "<unknown string>" + n_index + "<unknown string>");
-                            println(var_3e24b5d5 + "<unknown string>" + function_9e72a96(var_ac829b0) + "<unknown string>" + n_index + "<unknown string>");
+                            iprintlnbold(var_3e24b5d5 + "<dev string:x38>" + function_9e72a96(var_ac829b0) + "<dev string:x38>" + n_index + "<dev string:x3e>");
+                            println(var_3e24b5d5 + "<dev string:x38>" + function_9e72a96(var_ac829b0) + "<dev string:x38>" + n_index + "<dev string:x3e>");
                         }
                     #/
                     break;
@@ -540,8 +539,8 @@ function _vo_clear(str_endon) {
     if (isdefined(str_endon) && isdefined(self.str_vo_being_spoken)) {
         /#
             if (getdvarint(#"zm_debug_vo", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x4f>");
+                println("<dev string:x4f>");
             }
         #/
         self stopsound(self.str_vo_being_spoken);
@@ -567,7 +566,7 @@ function _vo_clear(str_endon) {
 // Checksum 0xd620785a, Offset: 0x2238
 // Size: 0x80
 function private function_95b99c5b(n_max, var_50bb7db7) {
-    assert(!isdefined(var_50bb7db7) || var_50bb7db7 < n_max, "<unknown string>");
+    assert(!isdefined(var_50bb7db7) || var_50bb7db7 < n_max, "<dev string:x5a>");
     do {
         n_new_value = randomint(n_max);
     } while (n_new_value === var_50bb7db7);
@@ -660,7 +659,7 @@ function is_player_speaking(e_player) {
 // Checksum 0x4a810016, Offset: 0x25c8
 // Size: 0x1b4
 function function_a2bd5a0c(var_cadd3b0c, n_delay = 0, b_wait_if_busy = 0, n_priority = 0, var_34e7887 = 0, var_d7714e4e = 0, var_67fee570 = 0) {
-    assert(isplayer(self), "<unknown string>" + "<unknown string>");
+    assert(isplayer(self), "<dev string:x94>" + "<dev string:xb2>");
     if (!isdefined(self) || !isplayer(self)) {
         return;
     }
@@ -707,8 +706,8 @@ function vo_say(str_vo_alias, n_delay = 0, b_wait_if_busy = 0, n_priority = 0, v
         }
         /#
             if (getdvarint(#"zm_debug_vo", 0)) {
-                iprintlnbold("<unknown string>" + function_9e72a96(str_vo_alias));
-                println("<unknown string>" + function_9e72a96(str_vo_alias));
+                iprintlnbold("<dev string:xd1>" + function_9e72a96(str_vo_alias));
+                println("<dev string:xd1>" + function_9e72a96(str_vo_alias));
             }
         #/
         self thread function_597484c3(__timeout__ - float(gettime() - var_a51f2d59) / 1000, var_56f97c91, var_d7714e4e);
@@ -856,7 +855,7 @@ function function_82f9bc9f() {
     if (isdefined(fields) && isdefined(fields.chrname) && fields.chrname != "") {
         return fields.chrname;
     }
-    assert("<unknown string>");
+    assert("<dev string:xdc>");
     return "NONE";
 }
 

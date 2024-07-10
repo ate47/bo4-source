@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\popups_shared.gsc;
 #using scripts\killstreaks\emp_shared.gsc;
@@ -68,7 +67,7 @@ function addkillstreaktorule(killstreak, rule, counttowards, checkagainst, inven
 // Checksum 0x2d87a369, Offset: 0x3c0
 // Size: 0x3b8
 function killstreakstart(hardpointtype, team, hacked, displayteammessage) {
-    assert(isdefined(team), "<unknown string>");
+    assert(isdefined(team), "<dev string:x38>");
     if (self iskillstreakallowed(hardpointtype, team) == 0) {
         return -1;
     }
@@ -110,7 +109,7 @@ function killstreakstart(hardpointtype, team, hacked, displayteammessage) {
     level.matchrecorderkillstreakkills[killstreak_id] = 0;
     level.killstreaks_triggered[killstreak_id] = killstreak_data;
     /#
-        killstreak_debug_text("<unknown string>" + hardpointtype + "<unknown string>" + team + "<unknown string>" + killstreak_id);
+        killstreak_debug_text("<dev string:x53>" + hardpointtype + "<dev string:x6a>" + team + "<dev string:x78>" + killstreak_id);
     #/
     return killstreak_id;
 }
@@ -163,14 +162,14 @@ function recordkillstreakend(recordstreakindex, totalkills) {
 // Checksum 0x38cce0fa, Offset: 0x930
 // Size: 0x5a4
 function killstreakstop(hardpointtype, team, id) {
-    assert(isdefined(team), "<unknown string>");
+    assert(isdefined(team), "<dev string:x38>");
     assert(isdefined(hardpointtype));
     /#
-        idstr = "<unknown string>";
+        idstr = "<dev string:x80>";
         if (isdefined(id)) {
             idstr = id;
         }
-        killstreak_debug_text("<unknown string>" + hardpointtype + "<unknown string>" + team + "<unknown string>" + idstr);
+        killstreak_debug_text("<dev string:x8c>" + hardpointtype + "<dev string:x6a>" + team + "<dev string:x78>" + idstr);
     #/
     keys = getarraykeys(level.killstreaktype[hardpointtype]);
     foreach (key in keys) {
@@ -193,7 +192,7 @@ function killstreakstop(hardpointtype, team, id) {
     }
     if (!isdefined(id) || id == -1) {
         /#
-            killstreak_debug_text("<unknown string>" + hardpointtype);
+            killstreak_debug_text("<dev string:xa3>" + hardpointtype);
         #/
         if (sessionmodeismultiplayergame()) {
             function_92d1707f(#"hash_710b205b26e46446", {#starttime:0, #endtime:gettime(), #name:hardpointtype, #team:team});
@@ -228,7 +227,7 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
     if (level.var_7aa0d894 === 1) {
         return 0;
     }
-    assert(isdefined(team), "<unknown string>");
+    assert(isdefined(team), "<dev string:x38>");
     assert(isdefined(hardpointtype));
     isallowed = 1;
     keys = getarraykeys(level.killstreaktype[hardpointtype]);
@@ -239,7 +238,7 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
         if (level.killstreakrules[key].max != 0) {
             if (level.killstreakrules[key].cur >= level.killstreakrules[key].max) {
                 /#
-                    killstreak_debug_text("<unknown string>" + key + "<unknown string>");
+                    killstreak_debug_text("<dev string:xd2>" + key + "<dev string:xde>");
                 #/
                 isallowed = 0;
                 break;
@@ -252,7 +251,7 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
             if (level.killstreakrules[key].curteam[team] >= level.killstreakrules[key].maxperteam) {
                 isallowed = 0;
                 /#
-                    killstreak_debug_text("<unknown string>" + key + "<unknown string>");
+                    killstreak_debug_text("<dev string:xd2>" + key + "<dev string:xe9>");
                 #/
                 break;
             }
@@ -260,14 +259,14 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
     }
     if (isdefined(self.laststand) && self.laststand) {
         /#
-            killstreak_debug_text("<unknown string>");
+            killstreak_debug_text("<dev string:xf1>");
         #/
         isallowed = 0;
     }
     isemped = 0;
     if (self isempjammed()) {
         /#
-            killstreak_debug_text("<unknown string>");
+            killstreak_debug_text("<dev string:x100>");
         #/
         isallowed = 0;
         isemped = 1;
@@ -283,7 +282,7 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
     }
     if (isdefined(level.var_7b151daa) && [[ level.var_7b151daa ]](self)) {
         /#
-            killstreak_debug_text("<unknown string>");
+            killstreak_debug_text("<dev string:x10d>");
         #/
         isallowed = 0;
     }
@@ -307,11 +306,11 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
         level.killstreak_rule_debug = getdvarint(#"scr_killstreak_rule_debug", 0);
         if (isdefined(level.killstreak_rule_debug)) {
             if (level.killstreak_rule_debug == 1) {
-                iprintln("<unknown string>" + text + "<unknown string>");
+                iprintln("<dev string:x11c>" + text + "<dev string:x124>");
                 return;
             }
             if (level.killstreak_rule_debug == 2) {
-                iprintlnbold("<unknown string>" + text);
+                iprintlnbold("<dev string:x11c>" + text);
             }
         }
     }

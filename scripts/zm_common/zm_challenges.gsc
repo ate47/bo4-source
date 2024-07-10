@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_stats.gsc;
@@ -113,12 +112,12 @@ function round_tracking() {
             continue;
         }
         /#
-            self debug_print("<unknown string>");
+            self debug_print("<dev string:x38>");
         #/
         self zm_stats::function_c0c6ab19(#"survive_rounds", 1, 1);
         if (level.round_number == 20 && zm_utility::is_classic() && !self.var_152810ff[4]) {
             /#
-                self debug_print("<unknown string>");
+                self debug_print("<dev string:x61>");
             #/
             self function_979f4cc0(#"hash_758b3285de8999f", undefined, 1);
         }
@@ -129,13 +128,13 @@ function round_tracking() {
         }
         if (!self.var_152810ff[1]) {
             /#
-                self debug_print("<unknown string>");
+                self debug_print("<dev string:x9c>");
             #/
             self zm_stats::increment_challenge_stat(#"rounds_no_damage", undefined, 1);
         }
         if (!self.var_152810ff[2]) {
             /#
-                self debug_print("<unknown string>");
+                self debug_print("<dev string:xd4>");
             #/
             self zm_stats::increment_challenge_stat(#"rounds_no_downs", undefined, 1);
         }
@@ -156,7 +155,7 @@ function death_check_for_challenge_updates(e_attacker) {
         return;
     }
     /#
-        e_attacker debug_print("<unknown string>");
+        e_attacker debug_print("<dev string:x10f>");
     #/
     e_attacker function_979f4cc0(#"darkops_kills", undefined, 1);
     e_attacker zm_stats::function_c0c6ab19(#"kills");
@@ -185,7 +184,7 @@ function death_check_for_challenge_updates(e_attacker) {
         switch (self.var_6f84b820) {
         case #"heavy":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x134>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"heavy_kills");
             e_attacker stats::function_e24eec31(w_damage, #"heavykills", 1);
@@ -196,7 +195,7 @@ function death_check_for_challenge_updates(e_attacker) {
             break;
         case #"miniboss":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x158>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"mini_boss_kills");
             e_attacker stats::function_e24eec31(w_damage, #"minibosskills", 1);
@@ -207,7 +206,7 @@ function death_check_for_challenge_updates(e_attacker) {
             break;
         case #"popcorn":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x17f>");
             #/
             e_attacker stats::function_e24eec31(w_damage, #"verminkills", 1);
             e_attacker stats::inc_stat(#"item_stats", w_damage.name, #"verminkills", #"statvalue", 1);
@@ -224,14 +223,14 @@ function death_check_for_challenge_updates(e_attacker) {
     switch (self.archetype) {
     case #"catalyst":
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x1a4>");
         #/
         e_attacker thread activecamo::function_896ac347(w_damage, #"enhanced_kills", 1);
         e_attacker thread activecamo::function_896ac347(w_damage, #"hash_39ab7cda18fd5c74", 1);
         e_attacker contracts::increment_zm_contract(#"contract_zm_catalyst_kills");
         if (isdefined(self.var_69a981e6) && self.var_69a981e6) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x1cb>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"catalyst_transformation_denials");
         }
@@ -246,26 +245,26 @@ function death_check_for_challenge_updates(e_attacker) {
     }
     if (self zm_utility::is_headshot(w_damage, self.damagelocation, str_damagemod)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x1fd>");
         #/
         e_attacker zm_stats::function_c0c6ab19(#"headshots");
         e_attacker contracts::increment_zm_contract(#"contract_zm_headshots");
         if (w_damage === e_attacker.var_2a62e678) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x224>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"perk_mule_kick_kills");
         }
         if (isdefined(e_attacker.var_807f94d7) && e_attacker.var_807f94d7 > 0) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x261>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"perk_stronghold_headshots");
         }
     }
     if (str_damagemod == "MOD_MELEE" && !zm_loadout::is_hero_weapon(w_damage)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x293>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_kill_melee");
         e_attacker zm_stats::increment_challenge_stat(#"zm_daily_kills_melee");
@@ -274,7 +273,7 @@ function death_check_for_challenge_updates(e_attacker) {
     }
     if (str_damagemod === "MOD_GRENADE" || str_damagemod === "MOD_GRENADE_SPLASH" || str_damagemod === "MOD_EXPLOSIVE" || zm_weapons::is_explosive_weapon(w_damage)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x2b7>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_kill_explosives");
         e_attacker zm_stats::function_c0c6ab19(#"explosions");
@@ -285,7 +284,7 @@ function death_check_for_challenge_updates(e_attacker) {
     }
     if (isdefined(self.missinglegs) && self.missinglegs) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x2df>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_kill_crawler");
         e_attacker stats::function_e24eec31(w_damage, #"crawlerkills", 1);
@@ -293,7 +292,7 @@ function death_check_for_challenge_updates(e_attacker) {
     }
     if (e_attacker zm_pap_util::function_b81da3fd(w_damage)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x305>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"double_pap_kills", undefined, 1);
         e_attacker zm_stats::function_c0c6ab19(#"hash_5d3dce1c38a95835");
@@ -304,7 +303,7 @@ function death_check_for_challenge_updates(e_attacker) {
         e_attacker stats::inc_stat(#"item_stats", w_damage.name, #"packedkills", #"statvalue", 1);
     } else if (zm_weapons::is_weapon_upgraded(w_damage)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x338>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_kill_packapunch");
         e_attacker zm_stats::function_c0c6ab19(#"hash_5d3dce1c38a95835");
@@ -322,7 +321,7 @@ function death_check_for_challenge_updates(e_attacker) {
         switch (level.zombie_weapons[w_stat].weapon_classname) {
         case #"ar":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x364>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"ar_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_ar");
@@ -330,7 +329,7 @@ function death_check_for_challenge_updates(e_attacker) {
             break;
         case #"lmg":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x385>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"lmg_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_lmg");
@@ -338,7 +337,7 @@ function death_check_for_challenge_updates(e_attacker) {
             break;
         case #"pistol":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x3a7>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"pistol_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_pistol");
@@ -349,7 +348,7 @@ function death_check_for_challenge_updates(e_attacker) {
             break;
         case #"smg":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x3cc>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"smg_kills");
             e_attacker zm_stats::function_c0c6ab19(#"kills_smg");
@@ -357,7 +356,7 @@ function death_check_for_challenge_updates(e_attacker) {
             break;
         case #"sniper":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x3ee>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"sniper_kills");
             e_attacker zm_stats::function_c0c6ab19(#"hash_2333d2f2b7271a56");
@@ -365,7 +364,7 @@ function death_check_for_challenge_updates(e_attacker) {
             break;
         case #"tr":
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x413>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"tr_kills");
             e_attacker zm_stats::function_c0c6ab19(#"hash_26d8f2fa0846a614");
@@ -379,7 +378,7 @@ function death_check_for_challenge_updates(e_attacker) {
     }
     if (w_damage.rootweapon.name == #"smg_handling_t8_dw" || w_damage.rootweapon.name == #"hash_1aea58adc540688c" || w_damage.rootweapon.name == #"smg_handling_t8_upgraded_dw" || w_damage.rootweapon.name == #"hash_3b19c698ebc05141") {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x434>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"hash_2a72be53205a8db3");
         return;
@@ -388,42 +387,42 @@ function death_check_for_challenge_updates(e_attacker) {
         var_4709221d = w_damage.statname;
         if (str_damagemod == "MOD_MELEE" && (var_4709221d == #"ar_stealth_t8" || var_4709221d == #"pistol_standard_t8")) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x48b>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_3a43a56f5f2aeacc");
             return;
         }
         if (var_4709221d == #"sniper_quickscope_t8" || var_4709221d == #"smg_capacity_t8" || var_4709221d == #"lmg_spray_t8") {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x4c6>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_63e3f06d30760b7e");
             return;
         }
         if (var_4709221d == #"lmg_heavy_t8" || var_4709221d == #"shotgun_pump_t8" || var_4709221d == #"pistol_revolver_t8") {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x434>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_2a72be53205a8db3");
             return;
         }
         if (var_4709221d == #"tr_midburst_t8" || var_4709221d == #"smg_fastfire_t8" || var_4709221d == #"ar_fastfire_t8") {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x50b>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_733f619bc1c13bdd");
             return;
         }
         if (var_4709221d == #"tr_powersemi_t8" || var_4709221d == #"tr_longburst_t8" || var_4709221d == #"sniper_fastrechamber_t8" || var_4709221d == #"smg_accurate_t8") {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x556>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_7ac3980eb0c9f12d");
             return;
         }
         if (var_4709221d == #"lmg_standard_t8" || var_4709221d == #"shotgun_semiauto_t8") {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x5ac>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_d0eb45f997dadf0");
             return;
@@ -431,56 +430,56 @@ function death_check_for_challenge_updates(e_attacker) {
     }
     if (w_damage.statname === #"bowie_knife") {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x5ee>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"bowie_kills");
         return;
     }
     if (isdefined(w_damage.var_ff0b00ba) && w_damage.var_ff0b00ba) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x618>");
         #/
         e_attacker zm_stats::function_c0c6ab19(#"kills_equipment");
         e_attacker contracts::increment_zm_contract(#"contract_zm_equip_kills");
     }
     if (zm_utility::is_frag_grenade(w_damage)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x640>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"frag_kills");
         return;
     }
     if (zm_utility::is_claymore(w_damage)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x663>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"claymore_kills");
         return;
     }
     if (zm_utility::is_mini_turret(w_damage, 1)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x68a>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"sentry_kills");
         return;
     }
     if (zm_utility::function_b797694c(w_damage)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x6b4>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"acid_bomb_kills");
         return;
     }
     if (zm_utility::function_850e7499(w_damage, 1)) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x6dc>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"wraith_fire_kills");
         return;
     }
     if (isdefined(w_damage.isriotshield) && w_damage.isriotshield) {
         /#
-            e_attacker debug_print("<unknown string>");
+            e_attacker debug_print("<dev string:x706>");
         #/
         e_attacker zm_stats::increment_challenge_stat(#"shield_kills");
         e_attacker contracts::increment_zm_contract(#"contract_zm_shield_kills");
@@ -492,12 +491,12 @@ function death_check_for_challenge_updates(e_attacker) {
         e_attacker contracts::function_ac03f21e();
         if (w_damage == getweapon(#"hero_chakram_lv1") || w_damage == getweapon(#"hero_chakram_lv2") || w_damage == getweapon(#"hero_chakram_lv3") || w_damage == getweapon(#"hero_flamethrower_t8_lv1") || w_damage == getweapon(#"hero_flamethrower_t8_lv2") || w_damage == getweapon(#"hero_flamethrower_t8_lv3")) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x72b>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_4aa750e907d2acba");
             if (w_damage == getweapon(#"hero_chakram_lv3") || w_damage == getweapon(#"hero_flamethrower_t8_lv3")) {
                 /#
-                    e_attacker debug_print("<unknown string>");
+                    e_attacker debug_print("<dev string:x75e>");
                 #/
                 e_attacker zm_stats::increment_challenge_stat(#"maxed_special_weapon_kills");
             }
@@ -505,12 +504,12 @@ function death_check_for_challenge_updates(e_attacker) {
         }
         if (w_damage == getweapon(#"hero_hammer_lv1") || w_damage == getweapon(#"hero_hammer_lv2") || w_damage == getweapon(#"hero_hammer_lv3") || w_damage == getweapon(#"hero_minigun_t8_lv1") || w_damage == getweapon(#"hero_minigun_t8_lv2") || w_damage == getweapon(#"hero_minigun_t8_lv3") || w_damage == getweapon(#"hash_492e530f9862f6cc") || w_damage == getweapon(#"hash_628d99860c78650f")) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x799>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_3e5b9b81d573d194");
             if (w_damage == getweapon(#"hero_hammer_lv3") || w_damage == getweapon(#"hero_minigun_t8_lv3") || w_damage == getweapon(#"hash_628d99860c78650f") || w_damage == getweapon(#"hash_492e530f9862f6cc") && e_attacker hasweapon(getweapon(#"hero_minigun_t8_lv3"))) {
                 /#
-                    e_attacker debug_print("<unknown string>");
+                    e_attacker debug_print("<dev string:x75e>");
                 #/
                 e_attacker zm_stats::increment_challenge_stat(#"maxed_special_weapon_kills");
             }
@@ -518,12 +517,12 @@ function death_check_for_challenge_updates(e_attacker) {
         }
         if (w_damage == getweapon(#"hero_sword_pistol_lv1") || w_damage == getweapon(#"hero_sword_pistol_lv2") || w_damage == getweapon(#"hero_sword_pistol_lv3") || w_damage == getweapon(#"hero_katana_t8_lv1") || w_damage == getweapon(#"hero_katana_t8_lv2") || w_damage == getweapon(#"hero_katana_t8_lv3")) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x7c6>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_43bd32b7705f38fd");
             if (w_damage == getweapon(#"hero_sword_pistol_lv3") || w_damage == getweapon(#"hero_katana_t8_lv3")) {
                 /#
-                    e_attacker debug_print("<unknown string>");
+                    e_attacker debug_print("<dev string:x75e>");
                 #/
                 e_attacker zm_stats::increment_challenge_stat(#"maxed_special_weapon_kills");
             }
@@ -531,12 +530,12 @@ function death_check_for_challenge_updates(e_attacker) {
         }
         if (w_damage == getweapon(#"hero_scepter_lv1") || w_damage == getweapon(#"hero_scepter_lv2") || w_damage == getweapon(#"hero_scepter_lv3") || w_damage == getweapon(#"hero_gravityspikes_t8_lv1") || w_damage == getweapon(#"hero_gravityspikes_t8_lv2") || w_damage == getweapon(#"hero_gravityspikes_t8_lv3")) {
             /#
-                e_attacker debug_print("<unknown string>");
+                e_attacker debug_print("<dev string:x7f1>");
             #/
             e_attacker zm_stats::increment_challenge_stat(#"hash_35c05a1d6c5fb3e1");
             if (w_damage == getweapon(#"hero_scepter_lv3") || w_damage == getweapon(#"hero_gravityspikes_t8_lv3")) {
                 /#
-                    e_attacker debug_print("<unknown string>");
+                    e_attacker debug_print("<dev string:x75e>");
                 #/
                 e_attacker zm_stats::increment_challenge_stat(#"maxed_special_weapon_kills");
             }
@@ -557,7 +556,7 @@ function spent_points_tracking() {
         n_points = result.points;
         player.var_152810ff[0] = player.var_152810ff[0] + n_points;
         /#
-            player debug_print("<unknown string>");
+            player debug_print("<dev string:x826>");
         #/
         player zm_stats::increment_challenge_stat(#"points_spent", n_points, 1);
     }
@@ -570,7 +569,7 @@ function spent_points_tracking() {
     // Checksum 0x3bf97691, Offset: 0x2d38
     // Size: 0x24
     function increment_magic_box() {
-        self debug_print("<unknown string>");
+        self debug_print("<dev string:x84b>");
     }
 
 #/
@@ -584,7 +583,7 @@ function perk_drink_tracking() {
     while (true) {
         self waittill(#"perk_bought");
         /#
-            self debug_print("<unknown string>");
+            self debug_print("<dev string:x873>");
         #/
     }
 }
@@ -600,7 +599,7 @@ function function_73696786() {
         s_result = self waittill(#"hash_13948ef3726b968f");
         if (isdefined(var_c0e0819a) && var_c0e0819a) {
             /#
-                self debug_print("<unknown string>");
+                self debug_print("<dev string:x897>");
             #/
             self zm_stats::increment_challenge_stat(#"perks_full");
             var_c0e0819a = undefined;
@@ -619,7 +618,7 @@ function function_12a35616() {
         waitresult = level waittill(#"blueprint_completed");
         if (isdefined(waitresult.produced) && isdefined(waitresult.produced.isriotshield) && waitresult.produced.isriotshield) {
             /#
-                self debug_print("<unknown string>");
+                self debug_print("<dev string:x8c5>");
             #/
             return;
         }
@@ -638,7 +637,7 @@ function function_a9f6b8ef() {
     level flag::wait_till("pap_machine_active");
     foreach (player in level.players) {
         /#
-            player debug_print("<unknown string>");
+            player debug_print("<dev string:x8ed>");
         #/
         player zm_stats::increment_challenge_stat(#"pap_activation", undefined, 1);
     }
@@ -652,7 +651,7 @@ function function_a9f6b8ef() {
     // Size: 0x6c
     function debug_print(str_line) {
         if (getdvarint(#"zombie_debug", 0) > 0) {
-            println("<unknown string>" + self.entity_num + "<unknown string>" + str_line);
+            println("<dev string:x914>" + self.entity_num + "<dev string:x91e>" + str_line);
         }
     }
 
@@ -688,7 +687,7 @@ function function_9a9ab6f6(var_1c48b665) {
         }
     }
     /#
-        self debug_print("<unknown string>");
+        self debug_print("<dev string:x923>");
     #/
     self function_979f4cc0(#"hash_405387fd6efe78b3");
 }
@@ -705,7 +704,7 @@ function private function_b892d1da() {
         }
     }
     /#
-        self debug_print("<unknown string>");
+        self debug_print("<dev string:x952>");
     #/
     self function_979f4cc0(#"hash_34f185c936027147", undefined, 1);
 }
@@ -721,7 +720,7 @@ function function_bf0be8f1() {
         }
     }
     /#
-        self debug_print("<unknown string>");
+        self debug_print("<dev string:x987>");
     #/
     self function_979f4cc0(#"hash_c59a95e3be43538");
 }
@@ -738,7 +737,7 @@ function function_e40c9d13() {
         }
     }
     /#
-        self debug_print("<unknown string>");
+        self debug_print("<dev string:x9b9>");
     #/
     self function_979f4cc0(#"hash_40d2ff74fd37a2ab", undefined, 1);
 }
@@ -1053,7 +1052,7 @@ function function_a3cd4521() {
 // Size: 0x84
 function shotgun_kill() {
     /#
-        self debug_print("<unknown string>");
+        self debug_print("<dev string:x9fa>");
     #/
     self zm_stats::increment_challenge_stat(#"shotgun_kills");
     self zm_stats::function_c0c6ab19(#"kills_shotguns");

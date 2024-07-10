@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\zm\zm_lightning_chain.csc;
 #using scripts\core_common\serverfield_shared.csc;

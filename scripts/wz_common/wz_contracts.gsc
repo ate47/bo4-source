@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\teams\teams.gsc;
 #using scripts\mp_common\player\player_killed.gsc;
 #using scripts\mp_common\laststand_warzone.gsc;
@@ -472,9 +471,9 @@ function private function_902ef0de(var_38280f2f, delta) {
     }
     /#
         if (getdvarint(#"scr_contract_debug", 0) > 0) {
-            iprintln(function_9e72a96(var_38280f2f) + "<unknown string>" + new_progress + "<unknown string>" + target_value);
+            iprintln(function_9e72a96(var_38280f2f) + "<dev string:x38>" + new_progress + "<dev string:x46>" + target_value);
             if (old_progress < target_value && target_value <= new_progress) {
-                iprintln(function_9e72a96(var_38280f2f) + "<unknown string>");
+                iprintln(function_9e72a96(var_38280f2f) + "<dev string:x4a>");
             }
         }
     #/
@@ -1016,75 +1015,75 @@ function function_5648f82(team) {
     // Checksum 0x701ebc6a, Offset: 0x38a8
     // Size: 0xa24
     function devgui_setup() {
-        devgui_base = "<unknown string>";
+        devgui_base = "<dev string:x6b>";
         wait(3);
         contracts::function_e07e542b(devgui_base, undefined);
-        var_c8d599b5 = "<unknown string>";
-        var_78a6fb52 = devgui_base + "<unknown string>";
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        var_78a6fb52 = devgui_base + "<unknown string>";
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        var_78a6fb52 = devgui_base + "<unknown string>";
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        var_78a6fb52 = devgui_base + "<unknown string>";
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
-        util::function_3f749abc(var_78a6fb52 + "<unknown string>", var_c8d599b5 + "<unknown string>");
+        var_c8d599b5 = "<dev string:x7b>";
+        var_78a6fb52 = devgui_base + "<dev string:xb7>";
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xce>", var_c8d599b5 + "<dev string:xd3>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xe9>", var_c8d599b5 + "<dev string:xef>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x106>", var_c8d599b5 + "<dev string:x10f>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x129>", var_c8d599b5 + "<dev string:x133>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x14e>", var_c8d599b5 + "<dev string:x154>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x16b>", var_c8d599b5 + "<dev string:x174>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x18e>", var_c8d599b5 + "<dev string:x19a>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x1b7>", var_c8d599b5 + "<dev string:x1c2>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x1de>", var_c8d599b5 + "<dev string:x1e4>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x200>", var_c8d599b5 + "<dev string:x220>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x244>", var_c8d599b5 + "<dev string:x25f>");
+        var_78a6fb52 = devgui_base + "<dev string:x286>";
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x296>", var_c8d599b5 + "<dev string:x2b5>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x2e0>", var_c8d599b5 + "<dev string:x2f4>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x319>", var_c8d599b5 + "<dev string:x330>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x35a>", var_c8d599b5 + "<dev string:x369>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x384>", var_c8d599b5 + "<dev string:x39c>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x3c0>", var_c8d599b5 + "<dev string:x3d6>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x3f8>", var_c8d599b5 + "<dev string:x40b>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x42a>", var_c8d599b5 + "<dev string:x440>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x462>", var_c8d599b5 + "<dev string:x47a>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x49e>", var_c8d599b5 + "<dev string:x4bc>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x4e6>", var_c8d599b5 + "<dev string:x504>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x4e6>", var_c8d599b5 + "<dev string:x52e>");
+        var_78a6fb52 = devgui_base + "<dev string:x562>";
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x573>", var_c8d599b5 + "<dev string:x583>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x59f>", var_c8d599b5 + "<dev string:x5b6>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x5d9>", var_c8d599b5 + "<dev string:x5f9>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x625>", var_c8d599b5 + "<dev string:x637>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x655>", var_c8d599b5 + "<dev string:x673>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x69a>", var_c8d599b5 + "<dev string:x6b8>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x6df>", var_c8d599b5 + "<dev string:x6fd>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x724>", var_c8d599b5 + "<dev string:x73f>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x765>", var_c8d599b5 + "<dev string:x788>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x7bb>", var_c8d599b5 + "<dev string:x7d1>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x7f3>", var_c8d599b5 + "<dev string:x805>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x823>", var_c8d599b5 + "<dev string:x834>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x851>", var_c8d599b5 + "<dev string:x862>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x87f>", var_c8d599b5 + "<dev string:x891>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x8af>", var_c8d599b5 + "<dev string:x8c8>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x8ed>", var_c8d599b5 + "<dev string:x90e>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x938>", var_c8d599b5 + "<dev string:x94d>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x96e>", var_c8d599b5 + "<dev string:x97f>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x99c>", var_c8d599b5 + "<dev string:x9b2>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:x9d3>", var_c8d599b5 + "<dev string:x9e6>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xa05>", var_c8d599b5 + "<dev string:xa1b>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xa42>", var_c8d599b5 + "<dev string:xa62>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xa8e>", var_c8d599b5 + "<dev string:xaa5>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xac7>", var_c8d599b5 + "<dev string:xadd>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xb00>", var_c8d599b5 + "<dev string:xb0f>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xb2a>", var_c8d599b5 + "<dev string:xb40>");
+        var_78a6fb52 = devgui_base + "<dev string:xb68>";
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xb77>", var_c8d599b5 + "<dev string:xb8d>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xba7>", var_c8d599b5 + "<dev string:xbba>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xbd9>", var_c8d599b5 + "<dev string:xbec>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xc0a>", var_c8d599b5 + "<dev string:xc1e>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xc3d>", var_c8d599b5 + "<dev string:xc59>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xc81>", var_c8d599b5 + "<dev string:xc9b>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xcc1>", var_c8d599b5 + "<dev string:xcd8>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xcfb>", var_c8d599b5 + "<dev string:xd10>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xd31>", var_c8d599b5 + "<dev string:xd44>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xd63>", var_c8d599b5 + "<dev string:xd7c>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xda1>", var_c8d599b5 + "<dev string:xdbd>");
+        util::function_3f749abc(var_78a6fb52 + "<dev string:xde5>", var_c8d599b5 + "<dev string:xe03>");
     }
 
 #/

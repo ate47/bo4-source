@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_main_quest.gsc;
 #using scripts\zm_common\zm_ui_inventory.gsc;
 #using scripts\zm_common\zm_trial.gsc;

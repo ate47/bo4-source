@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\core_common\flag_shared.csc;
 #using scripts\core_common\audio_shared.csc;
@@ -166,7 +165,7 @@ function function_1a2f062a(localclientnum) {
         self postfx::function_c8b5f318("pstfx_frost_loop_fullscreen_zmo", #"reveal threshold", self.var_f809ca21);
         /#
             var_a193c879 = self.var_f809ca21 * 100;
-            debug2dtext((5, 540, 0), "<unknown string>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
+            debug2dtext((5, 540, 0), "<dev string:x38>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
         #/
         wait(0.2);
     }
@@ -193,7 +192,7 @@ function function_7c64a377(localclientnum) {
         self postfx::function_c8b5f318("pstfx_frost_loop_fullscreen_zmo", #"reveal threshold", self.var_f809ca21);
         /#
             var_a193c879 = self.var_f809ca21 * 100;
-            debug2dtext((5, 540, 0), "<unknown string>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
+            debug2dtext((5, 540, 0), "<dev string:x38>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
         #/
         wait(0.2);
     }
@@ -217,7 +216,7 @@ function function_17e6f9f3(localclientnum) {
         self postfx::function_c8b5f318("pstfx_frost_loop_fullscreen_zmo", #"reveal threshold", self.var_f809ca21);
         /#
             var_a193c879 = self.var_f809ca21 * 100;
-            debug2dtext((5, 540, 0), "<unknown string>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
+            debug2dtext((5, 540, 0), "<dev string:x38>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
         #/
         wait(0.2);
     }

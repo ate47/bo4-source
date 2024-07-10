@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_private_mannequin.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;
 #using scripts\zm_common\zm_trial.gsc;

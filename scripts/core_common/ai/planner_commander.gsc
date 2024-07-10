@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
@@ -214,11 +213,11 @@ function private _debugcommander(commander) {
             team = blackboard::getstructblackboardattribute(commander, #"team");
             /#
                 if (commander.pause) {
-                    recordtext(function_9e72a96(commander.planner.name) + "<unknown string>" + function_9e72a96(team) + "<unknown string>", position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                    recordtext(function_9e72a96(commander.planner.name) + "<dev string:x38>" + function_9e72a96(team) + "<dev string:x41>", position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x4c>", textscale);
                     waitframe(1);
                     continue;
                 }
-                recordtext(function_9e72a96(commander.planner.name) + "<unknown string>" + function_9e72a96(team) + "<unknown string>" + commander.planstarttime + "<unknown string>" + commander.planfinishtime + "<unknown string>" + int((commander.planfinishtime - commander.planstarttime) / int(float(function_60d95f53()) / 1000 * 1000) + 1) + "<unknown string>", position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext(function_9e72a96(commander.planner.name) + "<dev string:x38>" + function_9e72a96(team) + "<dev string:x59>" + commander.planstarttime + "<dev string:x64>" + commander.planfinishtime + "<dev string:x70>" + int((commander.planfinishtime - commander.planstarttime) / int(float(function_60d95f53()) / 1000 * 1000) + 1) + "<dev string:x7c>", position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x4c>", textscale);
             #/
             xoffset += 15;
             /#
@@ -228,19 +227,19 @@ function private _debugcommander(commander) {
                     var_b5dfd8a6 = #"default_strategicbundle";
                 }
                 yoffset += 13;
-                recordtext("<unknown string>" + var_b5dfd8a6, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                recordtext("<dev string:x80>" + var_b5dfd8a6, position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x4c>", textscale);
             #/
             for (index = 0; index < commander.plan.size; index++) {
                 yoffset += 13;
                 /#
-                    recordtext(function_9e72a96(commander.plan[index].name), position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
+                    recordtext(function_9e72a96(commander.plan[index].name), position + (xoffset, yoffset, 0), (1, 1, 1), "<dev string:x4c>", textscale);
                 #/
             }
             attackgameobjects = blackboard::getstructblackboardattribute(commander, #"gameobjects_assault");
             for (index = 0; index < attackgameobjects.size; index++) {
                 /#
                     if (isdefined(attackgameobjects[index][#"identifier"])) {
-                        record3dtext(attackgameobjects[index][#"identifier"], attackgameobjects[index][#"origin"] + (0, 0, offset), (1, 0, 0), "<unknown string>");
+                        record3dtext(attackgameobjects[index][#"identifier"], attackgameobjects[index][#"origin"] + (0, 0, offset), (1, 0, 0), "<dev string:x4c>");
                     }
                     recordsphere(attackgameobjects[index][#"origin"], 20, (1, 0, 0));
                 #/
@@ -249,7 +248,7 @@ function private _debugcommander(commander) {
             for (index = 0; index < defendgameobjects.size; index++) {
                 /#
                     if (isdefined(defendgameobjects[index][#"identifier"])) {
-                        record3dtext(defendgameobjects[index][#"identifier"], defendgameobjects[index][#"origin"] + (0, 0, offset), (1, 0.5, 0), "<unknown string>");
+                        record3dtext(defendgameobjects[index][#"identifier"], defendgameobjects[index][#"origin"] + (0, 0, offset), (1, 0.5, 0), "<dev string:x4c>");
                     }
                     recordsphere(defendgameobjects[index][#"origin"], 20, (1, 0.5, 0));
                 #/
@@ -272,7 +271,7 @@ function private _debugcommander(commander) {
                         identifier = gameobject gameobjects::get_identifier();
                         if (isdefined(identifier) && isdefined(excludedmap[identifier])) {
                             /#
-                                record3dtext(identifier, gameobject.origin + (0, 0, offset), (1, 1, 0), "<unknown string>");
+                                record3dtext(identifier, gameobject.origin + (0, 0, offset), (1, 1, 0), "<dev string:x4c>");
                                 recordsphere(gameobject.origin, 20, (1, 1, 0));
                             #/
                         }
@@ -363,7 +362,7 @@ function private _evaluatefitness(commander, squad) {
         aiprofile_beginentry(evaluatorentry[0]);
         evaluatorfunc = plannercommanderutility::getutilityapifunction(evaluatorentry[0]);
         score = [[ evaluatorfunc ]](commander, squad, evaluatorentry[1]);
-        assert(score >= 0 && score <= 1, "<unknown string>" + evaluatorentry[0] + "<unknown string>" + 0 + "<unknown string>" + 1 + "<unknown string>");
+        assert(score >= 0 && score <= 1, "<dev string:x95>" + evaluatorentry[0] + "<dev string:xb4>" + 0 + "<dev string:xe3>" + 1 + "<dev string:xe8>");
         scores[evaluatorentry[0]] = score;
         aiprofile_endentry();
         pixendevent();
@@ -473,7 +472,7 @@ function private _initializedaemonfunctions(functype) {
 // Checksum 0x7ceb3667, Offset: 0x27b0
 // Size: 0x64
 function private _initializedaemons(commander) {
-    assert(!isdefined(commander.daemons), "<unknown string>");
+    assert(!isdefined(commander.daemons), "<dev string:xed>");
     commander.daemons = [];
     commander thread _updateblackboarddaemons(commander);
 }
@@ -925,7 +924,7 @@ function private _updateplanner(commander) {
 // Size: 0x14e
 function adddaemon(commander, daemonname, updaterate = float(function_60d95f53()) / 1000 * 10) {
     assert(isstruct(commander));
-    assert(!isdefined(commander.daemons[daemonname]), "<unknown string>" + daemonname + "<unknown string>");
+    assert(!isdefined(commander.daemons[daemonname]), "<dev string:x127>" + daemonname + "<dev string:x13c>");
     daemonjob = spawnstruct();
     daemonjob.func = getdaemonapifunction(daemonname);
     daemonjob.daemonname = daemonname;
@@ -1018,8 +1017,8 @@ function initializeenemythrottle(commander, enemycommander, upperbound, lowerbou
 // Checksum 0xa5b50f0b, Offset: 0x51a8
 // Size: 0xce
 function getdaemonapifunction(functionname) {
-    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    assert(isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<dev string:x165>", "<dev string:x168>");
+    assert(isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<dev string:x1a5>" + functionname + "<dev string:x1cc>");
     return level._daemonscriptfunctions[#"api"][functionname];
 }
 
@@ -1028,8 +1027,8 @@ function getdaemonapifunction(functionname) {
 // Checksum 0xcfe75193, Offset: 0x5280
 // Size: 0xce
 function getutilityapifunction(functionname) {
-    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    assert(isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<dev string:x165>", "<dev string:x1e4>");
+    assert(isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<dev string:x21f>" + functionname + "<dev string:x1cc>");
     return level._squadutilityscriptfunctions[#"api"][functionname];
 }
 
@@ -1042,7 +1041,7 @@ function pausecommander(commander) {
     if (!commander.pause) {
         /#
             team = blackboard::getstructblackboardattribute(commander, #"team");
-            iprintlnbold("<unknown string>" + team + "<unknown string>");
+            iprintlnbold("<dev string:x244>" + team + "<dev string:x7c>");
         #/
         commander.pause = 1;
     }
@@ -1053,10 +1052,10 @@ function pausecommander(commander) {
 // Checksum 0x5cd67b39, Offset: 0x5408
 // Size: 0x134
 function registerdaemonapi(functionname, functionptr) {
-    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    assert(isfunctionptr(functionptr), "<unknown string>");
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<dev string:x165>", "<dev string:x25d>");
+    assert(isfunctionptr(functionptr), "<dev string:x29f>");
     plannercommander::_initializedaemonfunctions(#"api");
-    assert(!isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
+    assert(!isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<dev string:x1a5>" + functionname + "<dev string:x2e1>");
     level._daemonscriptfunctions[#"api"][functionname] = functionptr;
 }
 
@@ -1065,10 +1064,10 @@ function registerdaemonapi(functionname, functionptr) {
 // Checksum 0x69400c5d, Offset: 0x5548
 // Size: 0x134
 function registerutilityapi(functionname, functionptr) {
-    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    assert(isfunctionptr(functionptr), "<unknown string>");
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<dev string:x165>", "<dev string:x2f7>");
+    assert(isfunctionptr(functionptr), "<dev string:x337>");
     plannercommander::_initializeutilityfunctions(#"api");
-    assert(!isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
+    assert(!isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<dev string:x21f>" + functionname + "<dev string:x2e1>");
     level._squadutilityscriptfunctions[#"api"][functionname] = functionptr;
 }
 
@@ -1081,7 +1080,7 @@ function function_2974807c(commander) {
     if (commander.pause) {
         /#
             team = blackboard::getstructblackboardattribute(commander, #"team");
-            iprintlnbold("<unknown string>" + function_9e72a96(team) + "<unknown string>");
+            iprintlnbold("<dev string:x377>" + function_9e72a96(team) + "<dev string:x7c>");
         #/
         commander.pause = 0;
     }

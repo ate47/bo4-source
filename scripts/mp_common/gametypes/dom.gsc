@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\spawnbeacon.gsc;
 #using scripts\mp_common\userspawnselection.gsc;
@@ -273,7 +272,7 @@ function domflags() {
     level.flagmodel[#"neutral"] = "tag_origin";
     primaryflags = getentarray("flag_primary", "targetname");
     if (primaryflags.size < 2) {
-        println("");
+        println("<dev string:x38>");
         callback::abort_level();
         return;
     }
@@ -288,12 +287,12 @@ function domflags() {
                 spawn_beacon::function_18f38647(trigger);
             } else {
                 /#
-                    util::error("<unknown string>" + dom_flag.script_label + "<unknown string>" + dom_flag.target);
+                    util::error("<dev string:x68>" + dom_flag.script_label + "<dev string:x8a>" + dom_flag.target);
                 #/
             }
         } else {
             /#
-                util::error("<unknown string>" + dom_flag.script_label);
+                util::error("<dev string:x68>" + dom_flag.script_label);
             #/
         }
         if (trigger.script_label == "_a") {
@@ -309,7 +308,7 @@ function domflags() {
             continue;
         }
         /#
-            util::error("<unknown string>" + trigger.script_label);
+            util::error("<dev string:x9e>" + trigger.script_label);
         #/
     }
     level.domflags = [];
@@ -425,10 +424,10 @@ function getunownedflagneareststart(team, excludeflag) {
                         line(level.flags[i].origin, level.flags[i].nearbyspawns[j].origin, (0.2, 0.2, 0.6));
                     }
                     if (level.flags[i] == level.bestspawnflag[#"allies"]) {
-                        print3d(level.flags[i].origin, "<unknown string>");
+                        print3d(level.flags[i].origin, "<dev string:xb4>");
                     }
                     if (level.flags[i] == level.bestspawnflag[#"axis"]) {
-                        print3d(level.flags[i].origin, "<unknown string>");
+                        print3d(level.flags[i].origin, "<dev string:xcd>");
                     }
                 }
                 waitframe(1);
@@ -679,7 +678,7 @@ function onusewithneutralizingflag(sentient) {
     oldteam = self gameobjects::get_owner_team();
     label = self gameobjects::get_label();
     /#
-        print("<unknown string>" + self.label);
+        print("<dev string:xe4>" + self.label);
     #/
     level.usestartspawns = 0;
     assert(team != #"neutral");
@@ -732,7 +731,7 @@ function onusewithoutneutralizingflag(sentient) {
     oldteam = self gameobjects::get_owner_team();
     label = self gameobjects::get_label();
     /#
-        print("<unknown string>" + self.label);
+        print("<dev string:xe4>" + self.label);
     #/
     self gameobjects::set_owner_team(team);
     self.visuals[0] setmodel(level.flagmodel[team]);
@@ -936,7 +935,7 @@ function credit_player(player, string, lastownerteam, isbflag, neutralizing, tim
         }
     } else {
         /#
-            player iprintlnbold("<unknown string>");
+            player iprintlnbold("<dev string:xf6>");
         #/
     }
     if (var_a84f97bf) {
@@ -969,7 +968,7 @@ function give_neutralized_credit(touchlist, string, lastownerteam, isbflag) {
             potm::bookmark(#"event", gettime(), player_from_touchlist);
         } else {
             /#
-                player_from_touchlist iprintlnbold("<unknown string>");
+                player_from_touchlist iprintlnbold("<dev string:xf6>");
             #/
         }
         level thread popups::displayteammessagetoall(string, player_from_touchlist);
@@ -1088,14 +1087,14 @@ function onscoreclosemusic() {
     }
     /#
         if (getdvarint(#"debug_music", 0) > 0) {
-            println("<unknown string>" + scoredif);
-            println("<unknown string>" + axisscore);
-            println("<unknown string>" + alliedscore);
-            println("<unknown string>" + scorelimit);
-            println("<unknown string>" + currentscore);
-            println("<unknown string>" + scorethreshold);
-            println("<unknown string>" + scoredif);
-            println("<unknown string>" + scorethresholdstart);
+            println("<dev string:x13d>" + scoredif);
+            println("<dev string:x163>" + axisscore);
+            println("<dev string:x18a>" + alliedscore);
+            println("<dev string:x1b3>" + scorelimit);
+            println("<dev string:x1db>" + currentscore);
+            println("<dev string:x205>" + scorethreshold);
+            println("<dev string:x13d>" + scoredif);
+            println("<dev string:x231>" + scorethresholdstart);
         }
     #/
     if (scoredif <= scorethreshold && scorethresholdstart <= currentscore && level.playingactionmusic != 1) {
@@ -1220,7 +1219,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
                         break;
                     } else {
                         /#
-                            attacker iprintlnbold("<unknown string>");
+                            attacker iprintlnbold("<dev string:x262>");
                         #/
                     }
                 }
@@ -1251,7 +1250,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
                         break;
                     }
                     /#
-                        attacker iprintlnbold("<unknown string>");
+                        attacker iprintlnbold("<dev string:x2ab>");
                     #/
                 }
             }

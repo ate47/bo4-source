@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_pablo.gsc;
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm\zm_orange_zones.gsc;
@@ -488,7 +487,7 @@ function function_2401694f() {
 // Size: 0xbc
 function pap_rock_step1_setup(var_5ea5c94d) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     if (!var_5ea5c94d) {
         level flag::init(#"hash_3310bb35ce396e49");
@@ -504,7 +503,7 @@ function pap_rock_step1_setup(var_5ea5c94d) {
 // Size: 0xe4
 function pap_rock_step1_cleanup(var_5ea5c94d, ended_early) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x50>");
     #/
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_3310bb35ce396e49");
@@ -522,7 +521,7 @@ function pap_rock_step1_cleanup(var_5ea5c94d, ended_early) {
 // Size: 0x6c
 function pap_rock_step2_setup(var_5ea5c94d) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x6b>");
     #/
     if (!var_5ea5c94d) {
         zm_orange_pablo::function_d83490c5(11);
@@ -536,7 +535,7 @@ function pap_rock_step2_setup(var_5ea5c94d) {
 // Size: 0x25c
 function pap_rock_step2_cleanup(var_5ea5c94d, ended_early) {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x83>");
     #/
     if (ended_early) {
         zm_orange_pablo::function_6aaeff92(11);
@@ -674,7 +673,7 @@ function function_5535522e() {
     // Size: 0x88
     function function_eaaea036() {
         foreach (var_143bf55a in level.var_9f657597) {
-            var_143bf55a scene::play("<unknown string>");
+            var_143bf55a scene::play("<dev string:x9e>");
         }
     }
 
@@ -684,7 +683,7 @@ function function_5535522e() {
     // Size: 0x88
     function function_96ef31b7() {
         foreach (var_143bf55a in level.var_9f657597) {
-            var_143bf55a scene::play("<unknown string>");
+            var_143bf55a scene::play("<dev string:xa5>");
         }
     }
 

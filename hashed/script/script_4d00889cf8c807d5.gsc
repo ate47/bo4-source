@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
 #using scripts\zm_common\zm_cleanup_mgr.gsc;
 #using scripts\zm_common\zm_round_spawning.gsc;
@@ -313,7 +312,7 @@ function private function_3ce1516d(a_s_spawn_locs) {
 // Checksum 0x699a8326, Offset: 0x12d8
 // Size: 0x7a
 function alloc_dynamic_buffer(origin, radius, half_height) {
-    assert(self.archetype === #"skeleton", "<unknown string>");
+    assert(self.archetype === #"skeleton", "<dev string:x38>");
     self.var_dbbbae12 = ai::t_cylinder(origin, radius, half_height);
 }
 
@@ -322,7 +321,7 @@ function alloc_dynamic_buffer(origin, radius, half_height) {
 // Checksum 0xc51fa8c1, Offset: 0x1360
 // Size: 0x46
 function function_9ac81c11() {
-    assert(self.archetype === #"skeleton", "<unknown string>");
+    assert(self.archetype === #"skeleton", "<dev string:x77>");
     self.var_dbbbae12 = undefined;
 }
 

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_387eab232fe22983;
 #using scripts\zm\ai\zm_ai_nosferatu.gsc;
 #using scripts\zm\ai\zm_ai_catalyst.gsc;
@@ -421,7 +420,7 @@ function boss_intro(n_stage) {
     level.s_boss thread function_1e93034e();
     level function_732f7da0();
     /#
-        iprintlnbold("pounce" + n_stage + "rocketlauncher");
+        iprintlnbold("<dev string:x38>" + n_stage + "<dev string:x41>");
     #/
     wait(2);
 }
@@ -432,7 +431,7 @@ function boss_intro(n_stage) {
 // Size: 0x224
 function boss_outro(n_stage) {
     /#
-        iprintlnbold("pounce" + n_stage + "<unknown string>");
+        iprintlnbold("<dev string:x38>" + n_stage + "<dev string:x52>");
     #/
     level thread function_e0b1cf29();
     switch (n_stage) {
@@ -1591,7 +1590,7 @@ function function_47e0a10b(n_stage) {
         var_c268c886 = getent("boss_sigil_" + level.s_boss.var_2d102ea7, "targetname");
         var_c268c886 thread function_ccd8387e(1);
     } else {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x63>");
     }
     for (n_statue = var_d103b26c; n_statue <= 3; n_statue++) {
         var_883035ad = array::random(var_9bcf74c3);
@@ -2117,21 +2116,21 @@ function function_8f28b521() {
         level.var_80d31f80 = 0;
         level.var_870646c4 = 0;
         zm_devgui::add_custom_devgui_callback(&function_51d480c9);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x7f>");
+        adddebugcommand("<dev string:xbd>");
+        adddebugcommand("<dev string:x108>");
+        adddebugcommand("<dev string:x15a>");
+        adddebugcommand("<dev string:x1b1>");
+        adddebugcommand("<dev string:x209>");
+        adddebugcommand("<dev string:x25f>");
+        adddebugcommand("<dev string:x2bd>");
+        adddebugcommand("<dev string:x309>");
+        adddebugcommand("<dev string:x364>");
+        adddebugcommand("<dev string:x3cb>");
+        adddebugcommand("<dev string:x432>");
+        adddebugcommand("<dev string:x499>");
+        adddebugcommand("<dev string:x4ea>");
+        adddebugcommand("<dev string:x549>");
     }
 
     // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -2202,15 +2201,15 @@ function function_8f28b521() {
     // Checksum 0x151868f9, Offset: 0x97b8
     // Size: 0x328
     function function_1ac7cc62() {
-        clientfield::set("<unknown string>" + #"hash_2709d50a7b0a2b01", 1);
+        clientfield::set("<dev string:x59f>" + #"hash_2709d50a7b0a2b01", 1);
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x5a2>");
         #/
-        level flag::clear("<unknown string>");
+        level flag::clear("<dev string:x5d6>");
         level flag::set(#"disable_fast_travel");
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x5e6>");
         level flag::set(#"boss_fight_started");
-        zm_zonemgr::enable_zone("<unknown string>");
+        zm_zonemgr::enable_zone("<dev string:x5fc>");
         if (!(isdefined(level.var_ef54ff59) && level.var_ef54ff59)) {
             level.var_ef54ff59 = 1;
             init_traps();
@@ -2248,7 +2247,7 @@ function function_8f28b521() {
         level function_f433c7f5(n_stage);
         level.var_80d31f80 = 0;
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x609>");
         #/
     }
 
@@ -2272,7 +2271,7 @@ function function_8f28b521() {
     function function_b7ed6bce() {
         if (!(isdefined(level.var_eae946a3) && level.var_eae946a3)) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x61b>");
             #/
             return;
         }
@@ -2280,7 +2279,7 @@ function function_8f28b521() {
         level.var_80d31f80 = 0;
         level.var_eae946a3 = 0;
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x609>");
         #/
     }
 
@@ -2293,7 +2292,7 @@ function function_8f28b521() {
         level function_fdd04f47(0);
         level.var_80d31f80 = 0;
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x609>");
         #/
     }
 
@@ -2304,12 +2303,12 @@ function function_8f28b521() {
     function function_b9ca419b() {
         if (level.var_80d31f80) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x633>");
             #/
             return;
         } else {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x648>");
             #/
             level.var_80d31f80 = 1;
         }
@@ -2325,7 +2324,7 @@ function function_8f28b521() {
         level.var_80d31f80 = 0;
         level zm_audio::sndvoxoverride(0);
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x659>");
         #/
     }
 
@@ -2343,13 +2342,13 @@ function function_8f28b521() {
             var_45e1b44b.scene_ents[#"fakeactor 1"] function_d84758c();
             level.var_80d31f80 = 0;
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x609>");
             #/
             return;
         }
         level.s_boss.var_4944ec8.origin = level.s_boss.var_dcaafc8e[1].origin;
         level.s_boss.var_4944ec8 animation::stop(0);
-        level.s_boss.var_4944ec8 thread scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<unknown string>");
+        level.s_boss.var_4944ec8 thread scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<dev string:x66a>");
         level.s_boss.var_4944ec8 thread function_8d29523e(#"boss_visible");
         level.s_boss.var_4944ec8 function_d84758c();
         switch (n_stage) {
@@ -2357,16 +2356,16 @@ function function_8f28b521() {
             level.s_boss.var_57badb98 = 0;
             level.s_boss.var_c962047c = 99999;
             level.s_boss thread function_bb528a4b(n_stage);
-            level.s_boss.var_4944ec8 clientfield::set("<unknown string>" + #"hash_1bf2c2f62ad1bf56", 1);
+            level.s_boss.var_4944ec8 clientfield::set("<dev string:x59f>" + #"hash_1bf2c2f62ad1bf56", 1);
             wait(12);
             level.s_boss.var_4944ec8 animation::stop(0);
-            level.s_boss.var_4944ec8 scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<unknown string>");
-            level.s_boss.var_4944ec8 clientfield::set("<unknown string>" + #"hash_1bf2c2f62ad1bf56", 0);
+            level.s_boss.var_4944ec8 scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<dev string:x671>");
+            level.s_boss.var_4944ec8 clientfield::set("<dev string:x59f>" + #"hash_1bf2c2f62ad1bf56", 0);
             break;
         case 1:
             wait(3);
             level.s_boss.var_4944ec8 animation::stop(0);
-            level.s_boss.var_4944ec8 scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<unknown string>");
+            level.s_boss.var_4944ec8 scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<dev string:x67b>");
             break;
         case 3:
             wait(3);
@@ -2379,13 +2378,13 @@ function function_8f28b521() {
         if (n_stage != 3) {
             level.s_boss.var_4944ec8 animation::stop(0);
             level.s_boss.var_4944ec8 thread function_8d29523e(#"boss_invisible");
-            level.s_boss.var_4944ec8 scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<unknown string>");
+            level.s_boss.var_4944ec8 scene::play(#"aib_t8_zm_mnsn_hallion_stun", "<dev string:x68a>");
             level.s_boss.var_4944ec8 animation::stop(0);
             level.s_boss.var_4944ec8.origin = (0, 0, 0);
         }
         level.var_80d31f80 = 0;
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x609>");
         #/
     }
 
@@ -2457,12 +2456,12 @@ function function_8f28b521() {
     function function_46d7a37() {
         if (level.var_80d31f80) {
             /#
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x633>");
             #/
             return;
         }
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x693>");
         #/
         level.var_80d31f80 = 1;
     }

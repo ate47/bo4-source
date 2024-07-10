@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2595527427ea71eb;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -269,7 +268,7 @@ function private damage_watcher() {
     level endon(#"hash_7646638df88a3656", #"hill_moving", #"host_migration_begin");
     while (true) {
         /#
-            if (isgodmode(self) || self isinmovemode("<unknown string>", "<unknown string>")) {
+            if (isgodmode(self) || self isinmovemode("<dev string:x38>", "<dev string:x41>")) {
                 waitframe(1);
                 continue;
             }

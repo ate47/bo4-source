@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_30a4b3e6d6d5e540;
 #using script_48f7c4ab73137f8;
 #using script_243ea03c7a285692;
@@ -492,7 +491,7 @@ function function_5ff83684() {
 // Checksum 0x1e67f601, Offset: 0x2240
 // Size: 0xb2
 function function_aac4b2c9(weapon) {
-    assert(weapon.weapclass === "<unknown string>" || weapon.weapclass === "<unknown string>" || weapon.weapclass === "<unknown string>", "<unknown string>");
+    assert(weapon.weapclass === "<dev string:x38>" || weapon.weapclass === "<dev string:x38>" || weapon.weapclass === "<dev string:x38>", "<dev string:x41>");
     level flagsys::wait_till(#"load_main_complete");
     level.pistol_values[level.pistol_values.size] = weapon;
 }

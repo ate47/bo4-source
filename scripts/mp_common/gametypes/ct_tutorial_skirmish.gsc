@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreaks_util.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\mp_common\player\player_loadout.gsc;
@@ -351,7 +350,7 @@ function give_killstreaks(a_str_killstreaks) {
     for (killstreaknum = 0; killstreaknum < 3; killstreaknum++) {
         killstreakindex = level.killstreakindices[a_str_killstreaks[killstreaknum]];
         if (isdefined(killstreakindex) && killstreakindex > 0) {
-            assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
+            assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<dev string:x38>" + killstreakindex + "<dev string:x48>");
             if (isdefined(level.tbl_killstreakdata[killstreakindex])) {
                 self.killstreak[currentkillstreak] = level.tbl_killstreakdata[killstreakindex];
                 if (isdefined(level.usingmomentum) && level.usingmomentum) {
@@ -677,9 +676,9 @@ function function_46f9c28e() {
 // Checksum 0x168f8166, Offset: 0x31a0
 // Size: 0x9c
 function function_9b717ff4() {
-    println("<unknown string>");
+    println("<dev string:x5f>");
     if (self function_dd91e3dd() >= 30) {
-        println("<unknown string>");
+        println("<dev string:x87>");
         self giveachievement("st_centennial");
         self function_ea859fe2();
     }

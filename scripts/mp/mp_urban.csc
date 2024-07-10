@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_urban_sound.csc;
 #using scripts\mp\mp_urban_fx.csc;
 #using scripts\mp_common\load.csc;

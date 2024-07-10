@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_flamethrower.gsc;
 #using scripts\zm\weapons\zm_weap_gravityspikes.gsc;
 #using scripts\zm\weapons\zm_weap_katana.gsc;
@@ -1036,43 +1035,43 @@ function function_cc45705b(a_s_respawn_points) {
     // Checksum 0x37a4ed06, Offset: 0x4f60
     // Size: 0x450
     function private white_devgui() {
-        adddebugcommand("portal_map_");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:xa4>");
+        adddebugcommand("<dev string:xfc>");
+        adddebugcommand("<dev string:x15c>");
+        adddebugcommand("<dev string:x1bb>");
+        adddebugcommand("<dev string:x218>");
+        adddebugcommand("<dev string:x281>");
+        adddebugcommand("<dev string:x2ec>");
+        adddebugcommand("<dev string:x34f>");
+        adddebugcommand("<dev string:x3b4>");
         level flag::init(#"soul_fill");
         level thread zm_white_util::function_e95d25();
         while (true) {
             waitframe(1);
-            str_command = getdvarstring(#"zm_white_devgui_cmd", "<unknown string>");
+            str_command = getdvarstring(#"zm_white_devgui_cmd", "<dev string:x413>");
             switch (str_command) {
             case #"hash_1535ec651f8ba226":
                 level.var_e8d9c0d1 = 1;
                 break;
             case #"start_lgt_exp":
-                level flag::set("<unknown string>");
+                level flag::set("<dev string:x416>");
                 break;
             case #"hash_121e505482adfe21":
-                level flag::set("<unknown string>");
+                level flag::set("<dev string:x427>");
                 break;
             case #"hash_51413ff43d5ac5eb":
-                level flag::set("<unknown string>");
+                level flag::set("<dev string:x437>");
                 break;
             case #"hash_3a77444633569cdc":
-                level flag::clear("<unknown string>");
+                level flag::clear("<dev string:x437>");
                 break;
             case #"hash_75c01ef1f8005214":
-                iprintln("<unknown string>");
+                iprintln("<dev string:x444>");
                 level flag::set(#"soul_fill");
                 break;
             case #"hash_7db70cb23b9d2739":
-                iprintln("<unknown string>");
+                iprintln("<dev string:x462>");
                 level flag::clear(#"soul_fill");
                 break;
             case #"hash_708994ac8f2d6d5":
@@ -1083,17 +1082,17 @@ function function_cc45705b(a_s_respawn_points) {
                 }
                 break;
             case #"hash_ab401b43ac65b13":
-                iprintln("<unknown string>");
+                iprintln("<dev string:x481>");
                 level flag::set(#"keypad_debug");
                 break;
             case #"hash_310aefbe028b9475":
-                iprintln("<unknown string>");
+                iprintln("<dev string:x49e>");
                 namespace_a71af4de::function_3134b684();
                 break;
             case 0:
                 break;
             }
-            setdvar(#"zm_white_devgui_cmd", "<unknown string>");
+            setdvar(#"zm_white_devgui_cmd", "<dev string:x413>");
         }
     }
 

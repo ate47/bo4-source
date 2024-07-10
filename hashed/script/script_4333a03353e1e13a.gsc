@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_ee_misc.gsc;
 #using scripts\zm\zm_orange_zones.gsc;
 #using scripts\zm\zm_orange_water.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\core_common\values_shared.gsc;
@@ -63,7 +62,7 @@ function init_shared() {
         level.qrdrone_nodeployzones = getentarray("no_vehicles", "targetname");
         level._effect[#"qrdrone_prop"] = #"hash_5af1c94d2e2bf9f";
         /#
-            util::set_dvar_if_unset("<unknown string>", 60);
+            util::set_dvar_if_unset("<dev string:x38>", 60);
         #/
         clientfield::register("vehicle", "qrdrone_state", 1, 3, "int");
         clientfield::register("vehicle", "qrdrone_timeout", 1, 1, "int");
@@ -665,7 +664,7 @@ function qrdrone_damagewatcher() {
         }
         self.owner playrumbleonentity("damage_heavy");
         /#
-            self.damage_debug = damage + "<unknown string>" + weapon.name + "<unknown string>";
+            self.damage_debug = damage + "<dev string:x4d>" + weapon.name + "<dev string:x52>";
         #/
         if (mod == "MOD_RIFLE_BULLET" || mod == "MOD_PISTOL_BULLET") {
             if (isplayer(attacker)) {
@@ -1022,13 +1021,13 @@ function qrdrone_leave_on_timeout(killstreakname) {
     qrdrone.flytime = 60;
     waittime = self.flytime - 10;
     /#
-        util::set_dvar_int_if_unset("<unknown string>", qrdrone.flytime);
+        util::set_dvar_int_if_unset("<dev string:x38>", qrdrone.flytime);
         qrdrone.flytime = getdvarint(#"scr_qrdroneflytime", 0);
         waittime = self.flytime - 10;
         if (waittime < 0) {
             wait(qrdrone.flytime);
-            self clientfield::set("<unknown string>", 3);
-            watcher = qrdrone.owner weaponobjects::getweaponobjectwatcher("<unknown string>");
+            self clientfield::set("<dev string:x56>", 3);
+            watcher = qrdrone.owner weaponobjects::getweaponobjectwatcher("<dev string:x66>");
             watcher thread weaponobjects::waitanddetonate(qrdrone, 0);
             return;
         }

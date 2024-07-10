@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_score.gsc;
 #using scripts\zm_common\zm_round_spawning.gsc;
@@ -32,7 +31,7 @@ function autoexec __init__system__() {
 function __init__() {
     level.var_4ead8122 = getentarray("zombie_tiger_spawner", "script_noteworthy");
     if (level.var_4ead8122.size == 0) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         return;
     }
     zm_round_spawning::register_archetype(#"tiger", &function_235d0eb6, &round_spawn, &spawn_single, 25);

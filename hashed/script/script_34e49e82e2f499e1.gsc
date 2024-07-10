@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\struct.gsc;
 #using script_cb32d07c95e5628;
 #using scripts\core_common\player\player_stats.gsc;

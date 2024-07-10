@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -266,11 +265,11 @@ function add_dynamic_wallbuy(weapon, wallbuy, pristine) {
         }
     }
     if (!isdefined(spawned_wallbuy)) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         return;
     }
     if (isdefined(spawned_wallbuy.trigger_stub)) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x56>");
         return;
     }
     target_struct = struct::get(wallbuy, "targetname");

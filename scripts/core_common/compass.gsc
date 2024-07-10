@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\match_record.gsc;
 
 #namespace compass;
@@ -11,7 +10,7 @@ function setupminimap(material = "", zone = 0) {
     requiredmapaspectratio = getdvarfloat(#"scr_requiredmapaspectratio", 0);
     corners = getentarray("minimap_corner", "targetname");
     if (corners.size != 2) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     corner0 = (corners[0].origin[0], corners[0].origin[1], 0);
@@ -49,7 +48,7 @@ function setupminimap(material = "", zone = 0) {
 function setupminimapzone(zone) {
     corners = getentarray("zone_0" + zone + "_corner", "targetname");
     if (corners.size != 2) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     corner0 = (corners[0].origin[0], corners[0].origin[1], 0);

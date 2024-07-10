@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -350,7 +349,7 @@ function create_map_placed_influencer(influencer_entity) {
         team_mask = util::getteammask(influencer_entity.script_team);
         level create_enemy_influencer(influencer_entity.script_noteworty, influencer_entity.origin, team_mask);
     } else {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
     return influencer_id;
 }

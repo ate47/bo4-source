@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -66,7 +65,7 @@ function on_trigger(s_info) {
     if (getdvarint(#"hash_517c09bbb9e82a90", 1) && isalive(e_player) && !(isdefined(e_player.var_6754f1c5) && e_player.var_6754f1c5) && getwaterheight(e_player.origin) - e_player.origin[2] >= getdvarint(#"hash_65893d2be0da2532", 30)) {
         /#
             if (getdvarint(#"hash_a23c3aad7eb7dd", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x38>");
             }
         #/
         e_player.var_6754f1c5 = 1;
@@ -78,7 +77,7 @@ function on_trigger(s_info) {
         if (isdefined(e_player)) {
             /#
                 if (getdvarint(#"hash_a23c3aad7eb7dd", 0)) {
-                    iprintlnbold("<unknown string>");
+                    iprintlnbold("<dev string:x46>");
                 }
             #/
             e_player.var_6754f1c5 = 0;
@@ -113,20 +112,20 @@ function function_394e1244(e_player) {
         }
         /#
             if (getdvarint(#"hash_a23c3aad7eb7dd", 0)) {
-                iprintln("<unknown string>" + e_player.var_653ea26);
+                iprintln("<dev string:x53>" + e_player.var_653ea26);
             }
         #/
         wait(10 * 0.1);
     }
     /#
         if (getdvarint(#"hash_a23c3aad7eb7dd", 0) && isalive(e_player) && e_player.var_6754f1c5) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x5e>");
         }
     #/
     while (0 && isalive(e_player) && e_player.var_6754f1c5) {
         /#
             if (getdvarint(#"hash_a23c3aad7eb7dd", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x69>");
             }
         #/
         e_player dodamage(2, e_player.origin);
@@ -148,14 +147,14 @@ function function_553ca6ce(e_player) {
         }
         /#
             if (getdvarint(#"hash_a23c3aad7eb7dd", 0)) {
-                iprintln("<unknown string>" + e_player.var_653ea26);
+                iprintln("<dev string:x7a>" + e_player.var_653ea26);
             }
         #/
         wait(5 * 0.2);
     }
     /#
         if (getdvarint(#"hash_a23c3aad7eb7dd", 0) && isalive(e_player) && !e_player.var_6754f1c5) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x83>");
         }
     #/
 }
@@ -168,10 +167,10 @@ function function_553ca6ce(e_player) {
     // Size: 0xc4
     function init_devgui() {
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x8c>" + mapname + "<dev string:x9c>");
+        adddebugcommand("<dev string:x8c>" + mapname + "<dev string:xdf>");
+        adddebugcommand("<dev string:x8c>" + mapname + "<dev string:x123>");
+        adddebugcommand("<dev string:x8c>" + mapname + "<dev string:x162>");
     }
 
     // Namespace mp_icebreaker_water/mp_icebreaker_water
@@ -184,7 +183,7 @@ function function_553ca6ce(e_player) {
         }
         n_height = getwaterheight(e_player.origin) - e_player.origin[2];
         if (n_height > 0) {
-            debug2dtext((800, 768, 0), "<unknown string>" + n_height, (1, 1, 1), 1, (0, 0, 0), 1, 1.2);
+            debug2dtext((800, 768, 0), "<dev string:x1a0>" + n_height, (1, 1, 1), 1, (0, 0, 0), 1, 1.2);
         }
     }
 

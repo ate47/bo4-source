@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\util.gsc;
 #using scripts\core_common\sound_shared.gsc;
 #using scripts\core_common\fx_shared.gsc;
@@ -15,14 +14,14 @@
     // Size: 0x17c
     function print_org(fxcommand, fxid, fxpos, waittime) {
         if (getdvarint(#"debug", 0)) {
-            println("<unknown string>");
-            println("<unknown string>" + fxpos[0] + "<unknown string>" + fxpos[1] + "<unknown string>" + fxpos[2] + "<unknown string>");
-            println("<unknown string>");
-            println("<unknown string>");
-            println("<unknown string>" + fxcommand + "<unknown string>");
-            println("<unknown string>" + fxid + "<unknown string>");
-            println("<unknown string>" + waittime + "<unknown string>");
-            println("<unknown string>");
+            println("<dev string:x38>");
+            println("<dev string:x3c>" + fxpos[0] + "<dev string:x49>" + fxpos[1] + "<dev string:x49>" + fxpos[2] + "<dev string:x4d>");
+            println("<dev string:x51>");
+            println("<dev string:x6e>");
+            println("<dev string:x7d>" + fxcommand + "<dev string:x4d>");
+            println("<dev string:x94>" + fxid + "<dev string:x4d>");
+            println("<dev string:xa6>" + waittime + "<dev string:x4d>");
+            println("<dev string:xb9>");
         }
     }
 

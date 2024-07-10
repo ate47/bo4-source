@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_offshore_fx;
 
 // Namespace mp_offshore_fx/mp_offshore_fx

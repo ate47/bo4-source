@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace zm_white_doomsday_clock;
 
 // Namespace zm_white_doomsday_clock/zm_white_doomsday_clock

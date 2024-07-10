@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\callbacks.csc;
 #using scripts\core_common\visionset_mgr_shared.csc;
 #using scripts\core_common\vehicles\driving_fx.csc;

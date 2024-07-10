@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_util.gsc;
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm\zm_white_main_quest.gsc;
@@ -65,7 +64,7 @@ function init() {
     zm_round_spawning::function_2876740e(#"nova_crawler", &function_f3f325cb);
     zm_cleanup::function_cdf5a512(#"nova_crawler", &function_b448360c);
     level.ranged_nova_crawler_spawner = getent("ranged_nova_crawler_spawner", "script_noteworthy");
-    assert(isdefined(level.ranged_nova_crawler_spawner), "vox_air_vent_repaired_react");
+    assert(isdefined(level.ranged_nova_crawler_spawner), "<dev string:x38>");
     if (zm_utility::is_classic()) {
         level thread function_2791c411();
         level thread function_5daa45ac();
@@ -449,27 +448,27 @@ function function_2fc11fb8() {
     switch (level.var_bcaf8591) {
     case 0:
         /#
-            iprintlnbold("ignoreme");
+            iprintlnbold("<dev string:x6f>");
         #/
         break;
     case 1:
         /#
-            iprintlnbold("tag_string_03");
+            iprintlnbold("<dev string:x89>");
         #/
         break;
     case 2:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xa0>");
         #/
         break;
     case 3:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xc3>");
         #/
         break;
     case 4:
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:xe1>");
         #/
         break;
     }
@@ -564,7 +563,7 @@ function function_778aec95() {
             /#
                 var_847964c = floor(self.var_a1edb69e / 10 * 100);
                 str_house = level function_b822e13(self.script_string);
-                iprintlnbold(str_house + "<unknown string>" + var_847964c + "<unknown string>");
+                iprintlnbold(str_house + "<dev string:xf6>" + var_847964c + "<dev string:x101>");
             #/
             wait(1);
             if (self.var_a1edb69e >= 10) {
@@ -573,7 +572,7 @@ function function_778aec95() {
                 }
                 self function_27a8604b(level.var_d4a0b9f4[var_f1c779a7][#"group"]);
                 /#
-                    iprintlnbold(str_house + "<unknown string>");
+                    iprintlnbold(str_house + "<dev string:x10e>");
                 #/
                 b_using = 0;
                 break;
@@ -780,7 +779,7 @@ function function_27a8604b(str_identifier) {
             level.var_154aee78 += 1;
         }
         /#
-            iprintln("<unknown string>" + level.var_154aee78);
+            iprintln("<dev string:x124>" + level.var_154aee78);
         #/
         level.var_7a86ba58 function_ccc74648("string_06");
     }
@@ -1028,7 +1027,7 @@ function function_751e9580() {
 // Size: 0x8c
 function function_85644731() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x13d>");
     #/
     if (isdefined(level.pack_a_punch)) {
         level.pack_a_punch.trigger_stubs[0].pap_machine flag::wait_till("pap_waiting_for_user");
@@ -1044,7 +1043,7 @@ function function_1fef0f43() {
     if (!level flag::get(#"hash_1478cafcd626c361") || level flag::get(#"circuit_step_complete")) {
         level thread zm_white_util::function_2389bb7a("zmb_goop_pap_unlocked");
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x16c>");
         #/
         level flag::set(#"pap_power_ready");
     }
@@ -1056,7 +1055,7 @@ function function_1fef0f43() {
 // Size: 0xa0
 function function_1605f69a() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x18b>");
     #/
     foreach (var_5baafbb2 in level.var_76a7ad28) {
         var_5baafbb2 function_d12682c5();
@@ -1070,7 +1069,7 @@ function function_1605f69a() {
 function function_94cdb242() {
     if (!level flag::get(#"hash_1478cafcd626c361") || level flag::get(#"circuit_step_complete")) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x1be>");
         #/
         foreach (var_5baafbb2 in level.var_76a7ad28) {
             var_5baafbb2 function_f6ac524d();
@@ -1084,8 +1083,8 @@ function function_94cdb242() {
 // Size: 0xf8
 function function_cd39be3() {
     /#
-        iprintlnbold("<unknown string>");
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x1e7>");
+        iprintlnbold("<dev string:x20e>");
     #/
     var_c718a93c = level zm_white_portals::function_688df525();
     foreach (s_portal in var_c718a93c) {
@@ -1103,7 +1102,7 @@ function function_cd39be3() {
 function function_ab8edf2c() {
     if (!level flag::get(#"hash_1478cafcd626c361") || level flag::get(#"circuit_step_complete")) {
         /#
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x231>");
         #/
         var_c718a93c = level zm_white_portals::function_688df525();
         foreach (s_portal in var_c718a93c) {
@@ -1120,7 +1119,7 @@ function function_ab8edf2c() {
 // Size: 0x64
 function function_8f9249e9() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x263>");
     #/
     level zm_white_util::function_6f635c39("bunker_power_event_storage");
     level zm_white_util::function_6f635c39("bunker_power_event_solitary");
@@ -1132,7 +1131,7 @@ function function_8f9249e9() {
 // Size: 0x64
 function function_19e428bc() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x298>");
     #/
     level zm_white_util::function_364cd8c0("bunker_power_event_storage");
     level zm_white_util::function_364cd8c0("bunker_power_event_solitary");
@@ -1367,7 +1366,7 @@ function function_2330b278() {
     level flag::set(#"pause_round_timeout");
     level.var_382a24b0 = 1;
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x2c9>");
     #/
     playsoundatposition(#"hash_22f33ce72be33eab", (0, -334, -337));
     wait(6);
@@ -1413,7 +1412,7 @@ function function_2330b278() {
     level.var_f9c3678e = 0;
     zombie_utility::set_zombie_var(#"hash_7d5a25e2463f7fc5", level.var_9808f4d * 0.75);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x2ea>");
     #/
     level thread function_4ea7c90a();
     var_4aad2831 = getentarray("power_room_gas", "targetname");
@@ -1422,14 +1421,14 @@ function function_2330b278() {
     level.var_9c82c58d = 0.5;
     wait(15);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x303>");
     #/
     level.var_8200dc81 thread zm_hms_util::function_6a0d675d(#"hash_56c42fa94656e07b", 0, 0);
     zombie_utility::set_zombie_var(#"hash_7d5a25e2463f7fc5", level.var_9808f4d * 0.5);
     level.var_9c82c58d = 0.8;
     wait(30);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x31a>");
     #/
     level function_6acd363d(1);
 }
@@ -1506,7 +1505,7 @@ function function_d4e24379(e_player) {
 function function_6acd363d(is_completed) {
     /#
         if (!is_completed) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x332>");
         }
     #/
     level.var_e120ae98 = undefined;
@@ -1661,7 +1660,7 @@ function function_696a0eca() {
             /#
                 if (var_e6da0a39 < 5) {
                     n_time_remaining = 5 - var_e6da0a39;
-                    iprintlnbold("<unknown string>" + n_time_remaining + "<unknown string>");
+                    iprintlnbold("<dev string:x350>" + n_time_remaining + "<dev string:x36f>");
                 }
             #/
         }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_aivsaimelee.gsc;
 #using scripts\core_common\array_shared.gsc;
 #using scripts\core_common\ai\archetype_mocomps_utility.gsc;
@@ -218,7 +217,7 @@ function private bb_gettraversalheight() {
     endposition = entity.traversalendpos;
     if (isdefined(entity.traveseheightoverride)) {
         /#
-            record3dtext("patrol_enabled" + entity.traveseheightoverride, self.origin + (0, 0, 32), (1, 0, 0), "_previous_cover_mode");
+            record3dtext("<dev string:x38>" + entity.traveseheightoverride, self.origin + (0, 0, 32), (1, 0, 0), "<dev string:x4c>");
         #/
         return entity.traveseheightoverride;
     }
@@ -226,7 +225,7 @@ function private bb_gettraversalheight() {
         pivotorigin = archetype_mocomps_utility::calculatepivotoriginfromedge(entity, entity.traversemantlenode, entity.origin);
         traversalheight = pivotorigin[2] - (isdefined(entity.var_fad2bca9) && entity.var_fad2bca9 && isdefined(entity.traversalstartpos) ? entity.traversalstartpos[2] : entity.origin[2]);
         /#
-            record3dtext("patrol_enabled" + traversalheight, self.origin + (0, 0, 32), (1, 0, 0), "_previous_cover_mode");
+            record3dtext("<dev string:x38>" + traversalheight, self.origin + (0, 0, 32), (1, 0, 0), "<dev string:x4c>");
         #/
         return traversalheight;
     } else if (isdefined(startposition) && isdefined(endposition)) {
@@ -235,7 +234,7 @@ function private bb_gettraversalheight() {
             traversalheight = abs(traversalheight);
         }
         /#
-            record3dtext("patrol_enabled" + traversalheight, self.origin + (0, 0, 32), (1, 0, 0), "_previous_cover_mode");
+            record3dtext("<dev string:x38>" + traversalheight, self.origin + (0, 0, 32), (1, 0, 0), "<dev string:x4c>");
         #/
         return traversalheight;
     }
@@ -252,14 +251,14 @@ function private bb_gettraversalwidth() {
     endposition = entity.traversalendpos;
     if (isdefined(entity.travesewidthoverride)) {
         /#
-            record3dtext("prone" + entity.travesewidthoverride, self.origin + (0, 0, 48), (1, 0, 0), "_previous_cover_mode");
+            record3dtext("<dev string:x55>" + entity.travesewidthoverride, self.origin + (0, 0, 48), (1, 0, 0), "<dev string:x4c>");
         #/
         return entity.travesewidthoverride;
     }
     if (isdefined(startposition) && isdefined(endposition)) {
         var_d4b651b8 = distance2d(startposition, endposition);
         /#
-            record3dtext("prone" + var_d4b651b8, self.origin + (0, 0, 48), (1, 0, 0), "_previous_cover_mode");
+            record3dtext("<dev string:x55>" + var_d4b651b8, self.origin + (0, 0, 48), (1, 0, 0), "<dev string:x4c>");
         #/
         return var_d4b651b8;
     }
@@ -656,7 +655,7 @@ function bb_actorgetperfectenemyyaw() {
     toenemyyaw = vectortoangles(enemy.origin - self.origin)[1] - self.angles[1];
     toenemyyaw = absangleclamp360(toenemyyaw);
     /#
-        recordenttext("tag_eye" + toenemyyaw, self, (1, 0, 0), "<unknown string>");
+        recordenttext("<dev string:x68>" + toenemyyaw, self, (1, 0, 0), "<dev string:x75>");
     #/
     return toenemyyaw;
 }
@@ -734,7 +733,7 @@ function bb_getlocomotionexityaw(blackboard, yaw) {
             angletoexit = vectortoangles(predictedlookaheadinfo[#"path_prediction_travel_vector"])[1];
             exityaw = absangleclamp360(angletoexit - self.prevnode.angles[1]);
             /#
-                record3dtext("<unknown string>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
+                record3dtext("<dev string:x82>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<dev string:x75>", undefined, 0.4);
             #/
             return exityaw;
         } else if (status == 4) {
@@ -743,7 +742,7 @@ function bb_getlocomotionexityaw(blackboard, yaw) {
             angletoexit = vectortoangles(predictedlookaheadinfo[#"path_prediction_travel_vector"])[1];
             exityaw = absangleclamp360(angletoexit - self.angles[1]);
             /#
-                record3dtext("<unknown string>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
+                record3dtext("<dev string:x82>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<dev string:x75>", undefined, 0.4);
             #/
             return exityaw;
         } else if (status == 0) {
@@ -752,7 +751,7 @@ function bb_getlocomotionexityaw(blackboard, yaw) {
                 angletodestination = vectortoangles(end - self.origin)[1];
                 exityaw = absangleclamp360(angletodestination - self.prevnode.angles[1]);
                 /#
-                    record3dtext("<unknown string>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
+                    record3dtext("<dev string:x82>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<dev string:x75>", undefined, 0.4);
                 #/
                 return exityaw;
             }
@@ -760,7 +759,7 @@ function bb_getlocomotionexityaw(blackboard, yaw) {
             end = start + predictedlookaheadinfo[#"path_prediction_travel_vector"];
             exityaw = getangleusingdirection(predictedlookaheadinfo[#"path_prediction_travel_vector"]);
             /#
-                record3dtext("<unknown string>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
+                record3dtext("<dev string:x82>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<dev string:x75>", undefined, 0.4);
             #/
             return exityaw;
         } else if (status == 2) {
@@ -769,13 +768,13 @@ function bb_getlocomotionexityaw(blackboard, yaw) {
                 angletodestination = vectortoangles(end - self.origin)[1];
                 exityaw = absangleclamp360(angletodestination - self.prevnode.angles[1]);
                 /#
-                    record3dtext("<unknown string>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
+                    record3dtext("<dev string:x82>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<dev string:x75>", undefined, 0.4);
                 #/
                 return exityaw;
             }
             exityaw = getangleusingdirection(vectornormalize(self.pathgoalpos - self.origin));
             /#
-                record3dtext("<unknown string>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
+                record3dtext("<dev string:x82>" + int(exityaw), self.origin - (0, 0, 5), (1, 0, 0), "<dev string:x75>", undefined, 0.4);
             #/
             return exityaw;
         }
@@ -792,11 +791,11 @@ function bb_getlocomotionfaceenemyquadrant() {
         walkstring = getdvarstring(#"tacticalwalkdirection");
         switch (walkstring) {
         case #"right":
-            return "<unknown string>";
+            return "<dev string:x8f>";
         case #"left":
-            return "<unknown string>";
+            return "<dev string:xad>";
         case #"back":
-            return "<unknown string>";
+            return "<dev string:xca>";
         }
     #/
     if (isdefined(self.relativedir)) {
@@ -1040,7 +1039,7 @@ function updatefrustrationlevel(entity) {
         return false;
     }
     /#
-        record3dtext("<unknown string>" + entity.ai.frustrationlevel, entity.origin, (1, 0.5, 0), "<unknown string>");
+        record3dtext("<dev string:xe7>" + entity.ai.frustrationlevel, entity.origin, (1, 0.5, 0), "<dev string:x75>");
     #/
     if (isactor(entity.enemy) || isplayer(entity.enemy)) {
         if (entity.ai.aggressivemode) {
@@ -1336,7 +1335,7 @@ function shouldchoosebettercover(behaviortreeentity) {
             } else {
                 color = (1, 0, 0);
             }
-            recordenttext("<unknown string>" + shouldusecovernoderesult + "<unknown string>" + islookingaroundforenemy + "<unknown string>" + abouttoarriveatcover + "<unknown string>" + iswithineffectiverangealready + "<unknown string>" + shouldbeboredatcurrentcover, behaviortreeentity, color, "<unknown string>");
+            recordenttext("<dev string:xfb>" + shouldusecovernoderesult + "<dev string:x11b>" + islookingaroundforenemy + "<dev string:x123>" + abouttoarriveatcover + "<dev string:x12b>" + iswithineffectiverangealready + "<dev string:x133>" + shouldbeboredatcurrentcover, behaviortreeentity, color, "<dev string:x75>");
         #/
     } else {
         return !(behaviortreeentity shouldusecovernode() && behaviortreeentity isapproachinggoal());
@@ -1567,7 +1566,7 @@ function gethighestnodestance(node) {
     if (isdefined(node.spawnflags) && (node.spawnflags & 16) == 16) {
         return "prone";
     }
-    errormsg(node.type + "<unknown string>" + node.origin + "<unknown string>");
+    errormsg(node.type + "<dev string:x13b>" + node.origin + "<dev string:x146>");
     if (node.type == #"cover crouch" || node.type == #"cover crouch window" || node.type == #"conceal crouch") {
         return "crouch";
     }
@@ -1626,7 +1625,7 @@ function setcurrentweapon(weapon) {
     self.weapon = weapon;
     self.weaponclass = weapon.weapclass;
     if (weapon != level.weaponnone) {
-        assert(isdefined(weapon.worldmodel), "<unknown string>" + weapon.name + "<unknown string>");
+        assert(isdefined(weapon.worldmodel), "<dev string:x15d>" + weapon.name + "<dev string:x168>");
     }
     self.weaponmodel = weapon.worldmodel;
 }
@@ -1639,7 +1638,7 @@ function setprimaryweapon(weapon) {
     self.primaryweapon = weapon;
     self.primaryweaponclass = weapon.weapclass;
     if (weapon != level.weaponnone) {
-        assert(isdefined(weapon.worldmodel), "<unknown string>" + weapon.name + "<unknown string>");
+        assert(isdefined(weapon.worldmodel), "<dev string:x15d>" + weapon.name + "<dev string:x168>");
     }
 }
 
@@ -1651,7 +1650,7 @@ function setsecondaryweapon(weapon) {
     self.secondaryweapon = weapon;
     self.secondaryweaponclass = weapon.weapclass;
     if (weapon != level.weaponnone) {
-        assert(isdefined(weapon.worldmodel), "<unknown string>" + weapon.name + "<unknown string>");
+        assert(isdefined(weapon.worldmodel), "<dev string:x15d>" + weapon.name + "<dev string:x168>");
     }
 }
 
@@ -2236,7 +2235,7 @@ function preshootlaserandglinton(ai) {
                 continue;
             }
             type = isdefined(ai.classname) ? "" + ai.classname : "";
-            println("<unknown string>" + type + "<unknown string>");
+            println("<dev string:x18a>" + type + "<dev string:x190>");
             playfxontag(sniper_glint, ai, "tag_eye");
         }
     }

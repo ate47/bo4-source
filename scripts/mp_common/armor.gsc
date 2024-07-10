@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weapon_utils.gsc;
 #using scripts\core_common\weapons_shared.gsc;
 #using scripts\core_common\perks.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_towers_shield.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -136,7 +135,7 @@ function function_fb74fc5f() {
         }
     }
     /#
-        printtoprightln("<unknown string>");
+        printtoprightln("<dev string:x38>");
     #/
     level flag::set(#"pyre_lit");
     exploder::exploder("exp_blue_fire");

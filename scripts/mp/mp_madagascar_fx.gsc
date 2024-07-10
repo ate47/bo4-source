@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_madagascar_fx;
 
 // Namespace mp_madagascar_fx/mp_madagascar_fx

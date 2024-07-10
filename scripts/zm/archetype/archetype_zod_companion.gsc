@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_30a4b3e6d6d5e540;
 #using script_48f7c4ab73137f8;
 #using scripts\zm_common\zm_powerups.gsc;
@@ -48,7 +47,7 @@ function autoexec main() {
     zodcompanioninterface::registerzodcompanioninterfaceattributes();
     zodcompanionbehavior::registerbehaviorscriptfunctions();
     /#
-        zm_devgui::function_c7dd7a17("MOD_PROJECTIVLE_SPLASH");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
     #/
 }
 
@@ -184,7 +183,7 @@ function zodcompanioncanpreemptivejuke(entity) {
     if (distancesquared(entity.origin, entity.enemy.origin) < 360000) {
         angledifference = absangleclamp180(entity.angles[1] - entity.enemy.angles[1]);
         /#
-            record3dtext(angledifference, entity.origin + (0, 0, 5), (0, 1, 0), "<unknown string>");
+            record3dtext(angledifference, entity.origin + (0, 0, 5), (0, 1, 0), "<dev string:x48>");
         #/
         if (angledifference > 135) {
             enemyangles = entity.enemy getgunangles();
@@ -192,7 +191,7 @@ function zodcompanioncanpreemptivejuke(entity) {
             forward = anglestoforward(enemyangles);
             dotproduct = abs(vectordot(vectornormalize(toenemy), forward));
             /#
-                record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "<unknown string>");
+                record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "<dev string:x48>");
             #/
             if (dotproduct > 0.9848) {
                 return zodcompanioncanjuke(entity);

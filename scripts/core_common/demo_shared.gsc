@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\potm_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -88,7 +87,7 @@ function bookmark(bookmarkname, time, var_81538b15, var_f28fb772, scoreeventprio
 function function_c6ae5fd6(bookmarkname, winningteamindex, losingteamindex) {
     bookmark = potm::function_5b1e9ed4(game.var_e9714926, bookmarkname, gettime(), undefined, undefined, 0);
     if (!isdefined(bookmark)) {
-        println("<unknown string>" + bookmarkname + "<unknown string>");
+        println("<dev string:x38>" + bookmarkname + "<dev string:x5a>");
         return;
     }
     if (isdefined(winningteamindex)) {

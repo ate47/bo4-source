@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\blackboard_vehicle.gsc;
 #using scripts\core_common\ai\systems\blackboard.gsc;
 #using scripts\core_common\vehicle_ai_shared.gsc;
@@ -625,7 +624,7 @@ function getnextmoveposition_wander() {
     #/
     if (!isdefined(best_point)) {
         /#
-            self.debug_ai_movement_type = "<unknown string>" + queryresult.data.size + "<unknown string>";
+            self.debug_ai_movement_type = "<dev string:x38>" + queryresult.data.size + "<dev string:x48>";
         #/
         /#
             self.debug_ai_move_to_point = undefined;
@@ -633,7 +632,7 @@ function getnextmoveposition_wander() {
         return undefined;
     }
     /#
-        self.debug_ai_movement_type = "<unknown string>" + queryresult.data.size;
+        self.debug_ai_movement_type = "<dev string:x4d>" + queryresult.data.size;
     #/
     /#
         self.debug_ai_move_to_point = best_point.origin;
@@ -661,7 +660,7 @@ function getnextmoveposition_evasive(client_flags) {
                     point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                 }
                 point._scoredebug[#"inclaimedlocation"].score = -500;
-                point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:x59>";
             #/
             point.score += -500;
         }
@@ -685,7 +684,7 @@ function getnextmoveposition_evasive(client_flags) {
                                 point._scoredebug[#"evading_directness"] = spawnstruct();
                             }
                             point._scoredebug[#"evading_directness"].score = 200;
-                            point._scoredebug[#"evading_directness"].scorename = "<unknown string>";
+                            point._scoredebug[#"evading_directness"].scorename = "<dev string:x6d>";
                         #/
                         point.score += 200;
                         continue;
@@ -699,7 +698,7 @@ function getnextmoveposition_evasive(client_flags) {
                                 point._scoredebug[#"evading_directness_line_of_sight"] = spawnstruct();
                             }
                             point._scoredebug[#"evading_directness_line_of_sight"].score = -101;
-                            point._scoredebug[#"evading_directness_line_of_sight"].scorename = "<unknown string>";
+                            point._scoredebug[#"evading_directness_line_of_sight"].scorename = "<dev string:x82>";
                         #/
                         point.score += -101;
                     }
@@ -720,7 +719,7 @@ function getnextmoveposition_evasive(client_flags) {
                     point._scoredebug[#"hash_3c71f4605004afec"] = spawnstruct();
                 }
                 point._scoredebug[#"hash_3c71f4605004afec"].score = 105;
-                point._scoredebug[#"hash_3c71f4605004afec"].scorename = "<unknown string>";
+                point._scoredebug[#"hash_3c71f4605004afec"].scorename = "<dev string:xa5>";
             #/
             point.score += 105;
         }
@@ -740,7 +739,7 @@ function getnextmoveposition_evasive(client_flags) {
     #/
     if (!isdefined(best_point)) {
         /#
-            self.debug_ai_movement_type = "<unknown string>" + queryresult.data.size + "<unknown string>";
+            self.debug_ai_movement_type = "<dev string:xbd>" + queryresult.data.size + "<dev string:x48>";
         #/
         /#
             self.debug_ai_move_to_point = undefined;
@@ -748,7 +747,7 @@ function getnextmoveposition_evasive(client_flags) {
         return undefined;
     }
     /#
-        self.debug_ai_movement_type = "<unknown string>" + queryresult.data.size;
+        self.debug_ai_movement_type = "<dev string:xce>" + queryresult.data.size;
     #/
     /#
         self.debug_ai_move_to_point = best_point.origin;
@@ -806,7 +805,7 @@ function getnextmoveposition_tactical(enemy) {
                 point._scoredebug[#"directnessraw"] = spawnstruct();
             }
             point._scoredebug[#"directnessraw"].score = point.directness;
-            point._scoredebug[#"directnessraw"].scorename = "<unknown string>";
+            point._scoredebug[#"directnessraw"].scorename = "<dev string:xdb>";
         #/
         point.score += point.directness;
         /#
@@ -817,7 +816,7 @@ function getnextmoveposition_tactical(enemy) {
                 point._scoredebug[#"directness"] = spawnstruct();
             }
             point._scoredebug[#"directness"].score = directnessscore;
-            point._scoredebug[#"directness"].scorename = "<unknown string>";
+            point._scoredebug[#"directness"].scorename = "<dev string:xeb>";
         #/
         point.score += directnessscore;
         /#
@@ -828,7 +827,7 @@ function getnextmoveposition_tactical(enemy) {
                 point._scoredebug[#"disttoorigin"] = spawnstruct();
             }
             point._scoredebug[#"disttoorigin"].score = mapfloat(0, prefereddistawayfromorigin, 0, 100, point.disttoorigin2d);
-            point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
+            point._scoredebug[#"disttoorigin"].scorename = "<dev string:xf8>";
         #/
         point.score += mapfloat(0, prefereddistawayfromorigin, 0, 100, point.disttoorigin2d);
         targetdistscore = 0;
@@ -844,7 +843,7 @@ function getnextmoveposition_tactical(enemy) {
                     point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                 }
                 point._scoredebug[#"inclaimedlocation"].score = -500;
-                point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:x59>";
             #/
             point.score += -500;
         }
@@ -856,7 +855,7 @@ function getnextmoveposition_tactical(enemy) {
                 point._scoredebug[#"disttotarget"] = spawnstruct();
             }
             point._scoredebug[#"disttotarget"].score = targetdistscore;
-            point._scoredebug[#"disttotarget"].scorename = "<unknown string>";
+            point._scoredebug[#"disttotarget"].scorename = "<dev string:x107>";
         #/
         point.score += targetdistscore;
         /#
@@ -867,7 +866,7 @@ function getnextmoveposition_tactical(enemy) {
                 point._scoredebug[#"random"] = spawnstruct();
             }
             point._scoredebug[#"random"].score = randomfloatrange(0, randomness);
-            point._scoredebug[#"random"].scorename = "<unknown string>";
+            point._scoredebug[#"random"].scorename = "<dev string:x116>";
         #/
         point.score += randomfloatrange(0, randomness);
         if (point.score > best_score) {
@@ -881,7 +880,7 @@ function getnextmoveposition_tactical(enemy) {
     #/
     if (!isdefined(best_point)) {
         /#
-            self.debug_ai_movement_type = "<unknown string>" + queryresult.data.size + "<unknown string>";
+            self.debug_ai_movement_type = "<dev string:x11f>" + queryresult.data.size + "<dev string:x48>";
         #/
         /#
             self.debug_ai_move_to_point = undefined;
@@ -895,7 +894,7 @@ function getnextmoveposition_tactical(enemy) {
         }
     #/
     /#
-        self.debug_ai_movement_type = "<unknown string>" + queryresult.data.size;
+        self.debug_ai_movement_type = "<dev string:x131>" + queryresult.data.size;
     #/
     /#
         self.debug_ai_move_to_point = best_point.origin;
@@ -916,7 +915,7 @@ function path_update_interrupt_by_attacker() {
             self.debug_ai_move_to_points_considered = [];
         #/
         /#
-            self.debug_ai_movement_type = "<unknown string>";
+            self.debug_ai_movement_type = "<dev string:x13f>";
         #/
         /#
             self.debug_ai_move_to_point = undefined;

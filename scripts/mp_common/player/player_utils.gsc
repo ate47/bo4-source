@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\killstreaks\mp\killstreaks.gsc;
 #using scripts\core_common\values_shared.gsc;

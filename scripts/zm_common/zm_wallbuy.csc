@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.csc;
 #using scripts\zm_common\zm_utility.csc;
 #using scripts\core_common\util_shared.csc;
@@ -142,7 +141,7 @@ function is_wallbuy(w_to_check) {
 // Size: 0x1b4
 function wallbuy_player_connect(localclientnum) {
     keys = getarraykeys(level._active_wallbuys);
-    println("<unknown string>" + localclientnum);
+    println("<dev string:x38>" + localclientnum);
     for (i = 0; i < keys.size; i++) {
         wallbuy = level._active_wallbuys[keys[i]];
         fx = level._effect[#"870mcs_zm_fx"];
@@ -168,9 +167,9 @@ function wallbuy_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
         }
     }
     struct = level._active_wallbuys[fieldname];
-    println("<unknown string>" + localclientnum);
+    println("<dev string:x50>" + localclientnum);
     if (!isdefined(struct) || !isdefined(struct.models[localclientnum]) || !isdefined(struct.models[localclientnum].parent_struct)) {
-        assertmsg("<unknown string>" + fieldname);
+        assertmsg("<dev string:x64>" + fieldname);
         return;
     }
     switch (newval) {

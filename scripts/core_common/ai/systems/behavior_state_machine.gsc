@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace behaviorstatemachine;
 
 // Namespace behaviorstatemachine/behavior_state_machine
@@ -9,8 +8,8 @@ function registerbsmscriptapiinternal(functionname, scriptfunction) {
     if (!isdefined(level._bsmscriptfunctions)) {
         level._bsmscriptfunctions = [];
     }
-    assert(isdefined(scriptfunction) && isdefined(scriptfunction), "<unknown string>");
-    assert(!isdefined(level._bsmscriptfunctions[functionname]), "<unknown string>");
+    assert(isdefined(scriptfunction) && isdefined(scriptfunction), "<dev string:x38>");
+    assert(!isdefined(level._bsmscriptfunctions[functionname]), "<dev string:x97>");
     level._bsmscriptfunctions[functionname] = scriptfunction;
 }
 

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace activecamo;
 
 // Namespace activecamo/namespace_bd884c6d

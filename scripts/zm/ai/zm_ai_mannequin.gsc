@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_devgui.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\spawner_shared.gsc;
@@ -20,7 +19,7 @@ function autoexec __init__system__() {
 function __init__() {
     spawner::add_archetype_spawn_function(#"zombie", &function_c381536b);
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>", "<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>", "<dev string:x41>");
     #/
 }
 

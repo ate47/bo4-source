@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot_action.gsc;
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\core_common\bots\bot_animation.gsc;
@@ -12,7 +11,7 @@
 function callback_botentereduseredge(startnode, endnode, mantlenode, startpos, endpos, mantlepos) {
     if (self isplayinganimscripted()) {
         /#
-            self botprinterror("<unknown string>");
+            self botprinterror("<dev string:x38>");
         #/
         waitframe(1);
         self botreleasemanualcontrol();
@@ -26,7 +25,7 @@ function callback_botentereduseredge(startnode, endnode, mantlenode, startpos, e
     }
     if (var_75e8e8e8) {
         /#
-            self botprinterror("<unknown string>");
+            self botprinterror("<dev string:x6a>");
         #/
         self thread fallback_traversal(endpos);
         return;
@@ -99,7 +98,7 @@ function volume_traversal(params) {
         self function_fc004e60(params);
     } else if (params.dist2d > 30 && params.var_5aacf42 >= 0) {
         /#
-            self botprinterror("<unknown string>");
+            self botprinterror("<dev string:x95>");
         #/
         self thread function_c3452ef9(params);
         return;
@@ -108,7 +107,7 @@ function volume_traversal(params) {
     } else if (params.targetheight > 0) {
         if (params.var_5aacf42 < 0) {
             /#
-                self botprinterror("<unknown string>");
+                self botprinterror("<dev string:xa7>");
             #/
             self thread function_c3452ef9(params);
             return;
@@ -117,7 +116,7 @@ function volume_traversal(params) {
         }
     } else if (params.targetheight < -72 && !(isdefined(params.var_bccf04e7) && params.var_bccf04e7)) {
         /#
-            self botprinterror("<unknown string>");
+            self botprinterror("<dev string:xbb>");
         #/
         self thread function_c3452ef9(params);
         return;
@@ -125,20 +124,20 @@ function volume_traversal(params) {
         self fall_traversal(params.endpos);
     } else {
         /#
-            self botprinterror("<unknown string>" + params.startnode.origin);
+            self botprinterror("<dev string:xce>" + params.startnode.origin);
         #/
         self thread function_c3452ef9(params);
         return;
     }
     if (!ispointonnavmesh(self.origin, self)) {
         /#
-            self botprinterror("<unknown string>" + params.startnode.origin);
+            self botprinterror("<dev string:xe9>" + params.startnode.origin);
         #/
         self thread function_c3452ef9(params);
         return;
     } else if (distancesquared(self.origin, params.endpos) > distancesquared(self.origin, params.startpos)) {
         /#
-            self botprinterror("<unknown string>");
+            self botprinterror("<dev string:x10c>");
         #/
         self thread function_c3452ef9(params);
         return;
@@ -168,7 +167,7 @@ function traversal_timeout(params) {
     level endon(#"game_ended");
     wait(3.5);
     /#
-        self botprinterror("<unknown string>" + params.startnode.origin);
+        self botprinterror("<dev string:x137>" + params.startnode.origin);
     #/
     self notify(#"hash_37fc5d1ffce4acaf");
     self thread function_c3452ef9(params);
@@ -195,13 +194,13 @@ function analyze(params) {
     params.dist2d = distance2d(params.starttrace, params.targetpos);
     params.var_b8915580 = function_51cbae24(params);
     /#
-        if (self should_record("<unknown string>")) {
+        if (self should_record("<dev string:x152>")) {
             var_47d2875c = (params.targetpos[0], params.targetpos[1], params.starttrace[2]);
             var_b03d274a = params.dist2d < 30 ? (0, 1, 0) : (1, 0, 0);
-            recordline(params.starttrace, var_47d2875c, var_b03d274a, "<unknown string>", self);
-            recordsphere(var_47d2875c, 3, var_b03d274a, "<unknown string>", self);
-            recordsphere(params.starttrace, 3, (0, 1, 0), "<unknown string>", self);
-            recordsphere(params.targetpos, 3, (1, 0, 1), "<unknown string>", self);
+            recordline(params.starttrace, var_47d2875c, var_b03d274a, "<dev string:x163>", self);
+            recordsphere(var_47d2875c, 3, var_b03d274a, "<dev string:x163>", self);
+            recordsphere(params.starttrace, 3, (0, 1, 0), "<dev string:x163>", self);
+            recordsphere(params.targetpos, 3, (1, 0, 1), "<dev string:x163>", self);
         }
     #/
 }
@@ -228,8 +227,8 @@ function function_51cbae24(params) {
 // Size: 0xc4
 function mantle_traversal(params) {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", self.origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x16e>", self.origin, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
         }
     #/
     edge_approach(params.starttrace, params.normal, 20);
@@ -243,8 +242,8 @@ function mantle_traversal(params) {
 // Size: 0x1ba
 function ledge_traversal(endpos, ledgetop, normal) {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", self.origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x181>", self.origin, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
         }
     #/
     trace = bullettrace(ledgetop, ledgetop - (0, 0, 1024), 0, self);
@@ -267,8 +266,8 @@ function ledge_traversal(endpos, ledgetop, normal) {
 // Size: 0xc4
 function jump_traversal(params) {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", self.origin, (1, 1, 0), "<unknown string>", undefined, 0.5);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x193>", self.origin, (1, 1, 0), "<dev string:x163>", undefined, 0.5);
         }
     #/
     self edge_approach(params.starttrace, params.normal);
@@ -282,8 +281,8 @@ function jump_traversal(params) {
 // Size: 0xb4
 function fall_traversal(endpos) {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", self.origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x1a4>", self.origin, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
         }
     #/
     self botsetmovemagnitude(1);
@@ -297,8 +296,8 @@ function fall_traversal(endpos) {
 // Size: 0x132
 function walk_traversal(params) {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", self.origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x1b5>", self.origin, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
         }
     #/
     self botsetmovemagnitude(1);
@@ -329,8 +328,8 @@ function function_fc004e60(params) {
 // Size: 0xaa
 function teleport(endpos, reason) {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>" + reason, self.origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x1c6>" + reason, self.origin, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
         }
     #/
     self setorigin(endpos);
@@ -345,9 +344,9 @@ function teleport(endpos, reason) {
 function mantle(mantlepos) {
     self botsetmovemagnitude(1);
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", mantlepos, (1, 1, 1), "<unknown string>", undefined, 0.5);
-            recordsphere(mantlepos, 3, (1, 1, 0), "<unknown string>", self);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x1d3>", mantlepos, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
+            recordsphere(mantlepos, 3, (1, 1, 0), "<dev string:x163>", self);
         }
     #/
     while (!self isonground() || self ismantling()) {
@@ -361,13 +360,13 @@ function mantle(mantlepos) {
 // Size: 0x172
 function edge_approach(edgepos, normal, dist = 0) {
     /#
-        if (self should_record("<unknown string>")) {
-            recordtext = "<unknown string>";
+        if (self should_record("<dev string:x152>")) {
+            recordtext = "<dev string:x1dc>";
             if (dist > 0) {
-                recordtext = recordtext + "<unknown string>" + dist;
+                recordtext = recordtext + "<dev string:x1ec>" + dist;
             }
-            record3dtext(recordtext, edgepos, (1, 1, 1), "<unknown string>", undefined, 0.5);
-            recordsphere(edgepos, 3, (0, 1, 0), "<unknown string>", self);
+            record3dtext(recordtext, edgepos, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
+            recordsphere(edgepos, 3, (0, 1, 0), "<dev string:x163>", self);
         }
     #/
     self botsetmovepoint(edgepos);
@@ -383,9 +382,9 @@ function edge_approach(edgepos, normal, dist = 0) {
 // Size: 0xa2
 function jump(var_75f5c2cb) {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", var_75f5c2cb, (1, 1, 1), "<unknown string>", undefined, 0.5);
-            recordsphere(var_75f5c2cb, 3, (1, 1, 1), "<unknown string>", self);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x1f0>", var_75f5c2cb, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
+            recordsphere(var_75f5c2cb, 3, (1, 1, 1), "<dev string:x163>", self);
         }
     #/
     self bottapbutton(10);
@@ -398,8 +397,8 @@ function jump(var_75f5c2cb) {
 // Size: 0xa0
 function fall() {
     /#
-        if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", self.origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
+        if (self should_record("<dev string:x152>")) {
+            record3dtext("<dev string:x1f7>", self.origin, (1, 1, 1), "<dev string:x163>", undefined, 0.5);
         }
     #/
     while (self isonground()) {

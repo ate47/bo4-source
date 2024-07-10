@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\gametypes\battlechatter.gsc;
 #using scripts\weapons\heatseekingmissile.gsc;
@@ -97,7 +96,7 @@ function function_bff5c062(var_c4b91241, attackingplayer) {
 function usekillstreakstraferun(hardpointtype) {
     startnode = getvehiclenode("warthog_start", "targetname");
     if (!isdefined(startnode)) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return false;
     }
     killstreak_id = self killstreakrules::killstreakstart("straferun", self.team, 0, 1);
@@ -284,7 +283,7 @@ function watchdamage() {
             continue;
         }
         /#
-            self.damage_debug = damage + "<unknown string>" + weapon.name + "<unknown string>";
+            self.damage_debug = damage + "<dev string:x66>" + weapon.name + "<dev string:x6b>";
         #/
         if (!isdefined(weapon) || weapons::getbaseweapon(weapon) != level.weaponflechette) {
             if (mod == "MOD_PROJECTILE" || mod == "MOD_PROJECTILE_SPLASH" || mod == "MOD_EXPLOSIVE") {

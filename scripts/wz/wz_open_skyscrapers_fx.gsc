@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace wz_open_skyscrapers_fx;
 
 // Namespace wz_open_skyscrapers_fx/wz_open_skyscrapers_fx

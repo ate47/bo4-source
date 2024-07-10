@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\clientfield_shared.gsc;
 #using scripts\core_common\vehicle_ai_shared.gsc;
 #using scripts\core_common\vehicle_death_shared.gsc;
@@ -362,7 +361,7 @@ function init_guard_points() {
         while (true) {
             foreach (point in self.debugpointsarray) {
                 color = (1, 0, 0);
-                if (ispointinnavvolume(point, "<unknown string>")) {
+                if (ispointinnavvolume(point, "<dev string:x38>")) {
                     color = (0, 1, 0);
                 }
                 debugstar(point, 5, color);
@@ -378,7 +377,7 @@ function init_guard_points() {
 // Checksum 0x93def103, Offset: 0x1c78
 // Size: 0x330
 function get_guard_points(owner) {
-    assert(self._guard_points.size > 0, "<unknown string>");
+    assert(self._guard_points.size > 0, "<dev string:x4a>");
     points_array = [];
     foreach (point in self._guard_points) {
         offset = rotatepoint(point, owner.angles);
@@ -545,7 +544,7 @@ function state_guard_update(params) {
                     stucklocation = self.origin;
                 } else if (stuckcount > 10) {
                     /#
-                        assert(0, "<unknown string>" + self.origin);
+                        assert(0, "<dev string:x65>" + self.origin);
                         v_box_min = (self.radius * -1, self.radius * -1, self.radius * -1);
                         v_box_max = (self.radius, self.radius, self.radius);
                         box(self.origin, v_box_min, v_box_max, self.angles[1], (1, 0, 0), 1, 0, 1000000);
@@ -1030,7 +1029,7 @@ function getnextmoveposition_wander() {
                 point._scoredebug[#"disttoorigin"] = spawnstruct();
             }
             point._scoredebug[#"disttoorigin"].score = disttooriginscore;
-            point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
+            point._scoredebug[#"disttoorigin"].scorename = "<dev string:x8a>";
         #/
         point.score += disttooriginscore;
         if (point.score > best_score) {
@@ -1082,7 +1081,7 @@ function getnextmoveposition_tactical() {
                                 point._scoredebug[#"visowner"] = spawnstruct();
                             }
                             point._scoredebug[#"visowner"].score = 300;
-                            point._scoredebug[#"visowner"].scorename = "<unknown string>";
+                            point._scoredebug[#"visowner"].scorename = "<dev string:x99>";
                         #/
                         point.score += 300;
                     }
@@ -1095,7 +1094,7 @@ function getnextmoveposition_tactical() {
                                 point._scoredebug[#"visenemy"] = spawnstruct();
                             }
                             point._scoredebug[#"visenemy"].score = 300;
-                            point._scoredebug[#"visenemy"].scorename = "<unknown string>";
+                            point._scoredebug[#"visenemy"].scorename = "<dev string:xa4>";
                         #/
                         point.score += 300;
                     }
@@ -1135,7 +1134,7 @@ function getnextmoveposition_tactical() {
                 point._scoredebug[#"random"] = spawnstruct();
             }
             point._scoredebug[#"random"].score = randomfloatrange(0, randomness);
-            point._scoredebug[#"random"].scorename = "<unknown string>";
+            point._scoredebug[#"random"].scorename = "<dev string:xaf>";
         #/
         point.score += randomfloatrange(0, randomness);
         /#
@@ -1146,7 +1145,7 @@ function getnextmoveposition_tactical() {
                 point._scoredebug[#"engagementdist"] = spawnstruct();
             }
             point._scoredebug[#"engagementdist"].score = point.distawayfromengagementarea * -1;
-            point._scoredebug[#"engagementdist"].scorename = "<unknown string>";
+            point._scoredebug[#"engagementdist"].scorename = "<dev string:xb8>";
         #/
         point.score += point.distawayfromengagementarea * -1;
         /#
@@ -1157,7 +1156,7 @@ function getnextmoveposition_tactical() {
                 point._scoredebug[#"height"] = spawnstruct();
             }
             point._scoredebug[#"height"].score = point.distengagementheight * -1 * 1.4;
-            point._scoredebug[#"height"].scorename = "<unknown string>";
+            point._scoredebug[#"height"].scorename = "<dev string:xc9>";
         #/
         point.score += point.distengagementheight * -1 * 1.4;
         if (point.disttoorigin2d < 120) {
@@ -1169,7 +1168,7 @@ function getnextmoveposition_tactical() {
                     point._scoredebug[#"tooclosetoself"] = spawnstruct();
                 }
                 point._scoredebug[#"tooclosetoself"].score = (120 - point.disttoorigin2d) * -1.5;
-                point._scoredebug[#"tooclosetoself"].scorename = "<unknown string>";
+                point._scoredebug[#"tooclosetoself"].scorename = "<dev string:xd2>";
             #/
             point.score += (120 - point.disttoorigin2d) * -1.5;
         }
@@ -1183,7 +1182,7 @@ function getnextmoveposition_tactical() {
                         point._scoredebug[#"tooclosetoothers"] = spawnstruct();
                     }
                     point._scoredebug[#"tooclosetoothers"].score = avoid_radius * -1;
-                    point._scoredebug[#"tooclosetoothers"].scorename = "<unknown string>";
+                    point._scoredebug[#"tooclosetoothers"].scorename = "<dev string:xe3>";
                 #/
                 point.score += avoid_radius * -1;
             }
@@ -1197,7 +1196,7 @@ function getnextmoveposition_tactical() {
                     point._scoredebug[#"inclaimedlocation"] = spawnstruct();
                 }
                 point._scoredebug[#"inclaimedlocation"].score = -500;
-                point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
+                point._scoredebug[#"inclaimedlocation"].scorename = "<dev string:xf6>";
             #/
             point.score += -500;
         }

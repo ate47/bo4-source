@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_24c32478acf44108;
 #using scripts\zm_common\zm_unitrigger.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -1084,7 +1083,7 @@ function function_e33adfe0(player) {
 // Size: 0x8a8
 function function_b1347a6() {
     var_13202c94 = getent(self.stub.related_parent.target, "targetname");
-    assert(isdefined(var_13202c94), "<unknown string>");
+    assert(isdefined(var_13202c94), "<dev string:x38>");
     if (!isdefined(var_13202c94)) {
         return;
     }

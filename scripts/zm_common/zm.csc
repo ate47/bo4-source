@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_proximity_grenade.csc;
 #using scripts\zm\weapons\zm_weap_mini_turret.csc;
 #using scripts\zm\weapons\zm_weap_homunculus.csc;
@@ -104,7 +103,7 @@ function __init__() {
 // Checksum 0xa63e2ec1, Offset: 0x990
 // Size: 0x474
 function init() {
-    println("<unknown string>");
+    println("<dev string:x38>");
     level thread zm_ffotd::main_start();
     level.onlinegame = sessionmodeisonlinegame();
     level.swimmingfeature = 0;
@@ -115,7 +114,7 @@ function init() {
     level.clientvoicesetup = &zm_audio::clientvoicesetup;
     level.playerfalldamagesound = &zm_audio::playerfalldamagesound;
     zm_game_over::register("game_over");
-    println("<unknown string>");
+    println("<dev string:x6a>");
     init_clientfields();
     zm_perks::init();
     zm_powerups::init();
@@ -265,7 +264,7 @@ function init_riser_fx() {
 // Checksum 0x91964cf3, Offset: 0x1278
 // Size: 0x59c
 function init_clientfields() {
-    println("<unknown string>");
+    println("<dev string:x8f>");
     clientfield::register("actor", "zombie_riser_fx", 1, 1, "int", &handle_zombie_risers, 1, 1);
     if (isdefined(level.use_water_risers) && level.use_water_risers) {
         clientfield::register("actor", "zombie_riser_fx_water", 1, 1, "int", &handle_zombie_risers_water, 1, 1);
@@ -1090,7 +1089,7 @@ function rise_dust_fx(clientnum, type, billow_fx, burst_fx) {
 // Checksum 0x97d00243, Offset: 0x4180
 // Size: 0x34
 function on_player_laststand(localclientnum) {
-    println("<unknown string>" + localclientnum);
+    println("<dev string:xba>" + localclientnum);
 }
 
 // Namespace zm/zm
@@ -1099,9 +1098,9 @@ function on_player_laststand(localclientnum) {
 // Size: 0x8c
 function end_last_stand(clientnum) {
     self waittill(#"laststandend");
-    println("<unknown string>" + clientnum);
+    println("<dev string:xe1>" + clientnum);
     wait(0.7);
-    println("<unknown string>");
+    println("<dev string:x101>");
     playsound(clientnum, #"revive_gasp");
 }
 
@@ -1112,7 +1111,7 @@ function end_last_stand(clientnum) {
 function last_stand_thread(clientnum) {
     self thread end_last_stand(clientnum);
     self endon(#"laststandend");
-    println("<unknown string>" + clientnum);
+    println("<dev string:x109>" + clientnum);
     pause = 0.5;
     for (vol = 0.5; true; vol = 1) {
         id = playsound(clientnum, #"chr_heart_beat");

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\rank_shared.gsc;
 #using scripts\abilities\ability_power.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -124,11 +123,11 @@ function shouldaddrankxp(player) {
     }
     if (isdefined(level.var_4f654f3a) && level.var_4f654f3a) {
         /#
-            playername = "<unknown string>";
+            playername = "<dev string:x38>";
             if (isdefined(player) && isdefined(player.name)) {
                 playername = player.name;
             }
-            println("<unknown string>" + playername);
+            println("<dev string:x42>" + playername);
         #/
         return false;
     }
@@ -260,7 +259,7 @@ function getscoreeventtableid(gametype) {
     if (isdefined(scoreinfotableid)) {
         scoreinfotableloaded = 1;
     }
-    assert(scoreinfotableloaded, "<unknown string>" + function_9e72a96(getscoreeventtablename()));
+    assert(scoreinfotableloaded, "<dev string:x70>" + function_9e72a96(getscoreeventtablename()));
     return scoreinfotableid;
 }
 

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace sound;
 
 // Namespace sound/sound_shared

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\weapons_shared.gsc;
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\core_common\vehicle_death_shared.gsc;
@@ -187,7 +186,7 @@ function trigger_process(trigger) {
         }
         if (isdefined(trigger.script_vehiclegroupdelete)) {
             if (!isdefined(level.vehicle_deletegroup[trigger.script_vehiclegroupdelete])) {
-                println("toggle_flir_postfx", trigger.script_vehiclegroupdelete);
+                println("<dev string:x38>", trigger.script_vehiclegroupdelete);
                 level.vehicle_deletegroup[trigger.script_vehiclegroupdelete] = [];
             }
             array::delete_all(level.vehicle_deletegroup[trigger.script_vehiclegroupdelete]);
@@ -201,7 +200,7 @@ function trigger_process(trigger) {
         }
         if (isdefined(trigger) && isdefined(trigger.script_vehiclestartmove)) {
             if (!isdefined(level.vehicle_startmovegroup[trigger.script_vehiclestartmove])) {
-                println("tag_stowed_back", trigger.script_vehiclestartmove);
+                println("<dev string:x8a>", trigger.script_vehiclestartmove);
                 return;
             }
             foreach (vehicle in arraycopy(level.vehicle_startmovegroup[trigger.script_vehiclestartmove])) {
@@ -458,7 +457,7 @@ function islastnode(node) {
 // Checksum 0x3974b1d7, Offset: 0x27f0
 // Size: 0xbf4
 function paths(node) {
-    assert(isdefined(node) || isdefined(self.attachedpath), "<unknown string>");
+    assert(isdefined(node) || isdefined(self.attachedpath), "<dev string:xa9>");
     self notify(#"endpath");
     self endon(#"endpath");
     self notify(#"newpath");
@@ -696,7 +695,7 @@ function resume_path() {
 // Size: 0x24c
 function get_on_path(path_start, str_key = "targetname", distance = 0) {
     if (!isdefined(self)) {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:xd0>");
         return;
     }
     if (isstring(path_start)) {
@@ -704,10 +703,10 @@ function get_on_path(path_start, str_key = "targetname", distance = 0) {
     }
     if (!isdefined(path_start)) {
         if (isdefined(self.targetname)) {
-            assertmsg("<unknown string>" + self.targetname);
+            assertmsg("<dev string:xfb>" + self.targetname);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x122>");
         return;
     }
     if (isdefined(self.hasstarted)) {
@@ -793,7 +792,7 @@ function go_path() {
         arrayremovevalue(level.vehicle_startmovegroup[self.script_vehiclestartmove], self);
     }
     if (isdefined(self.hasstarted)) {
-        println("<unknown string>");
+        println("<dev string:x147>");
         return;
     } else {
         self.hasstarted = 1;
@@ -1180,8 +1179,8 @@ function set_speed(speed, rate, msg) {
         self notify(#"new debug_vehiclesetspeed");
         self endon(#"new debug_vehiclesetspeed", #"resuming speed", #"death");
         while (true) {
-            while (getdvarstring(#"debug_vehiclesetspeed") != "<unknown string>") {
-                print3d(self.origin + (0, 0, 192), "<unknown string>" + msg, (1, 1, 1), 1, 3);
+            while (getdvarstring(#"debug_vehiclesetspeed") != "<dev string:x180>") {
+                print3d(self.origin + (0, 0, 192), "<dev string:x186>" + msg, (1, 1, 1), 1, 3);
                 waitframe(1);
             }
             wait(0.5);
@@ -1218,7 +1217,7 @@ function script_resume_speed(msg, rate) {
     }
     self notify(#"resuming speed");
     /#
-        self thread debug_resume(msg + "<unknown string>" + type);
+        self thread debug_resume(msg + "<dev string:x19b>" + type);
     #/
 }
 
@@ -1229,7 +1228,7 @@ function script_resume_speed(msg, rate) {
     // Checksum 0x8db004b3, Offset: 0x5170
     // Size: 0x132
     function debug_resume(msg) {
-        if (getdvarstring(#"debug_vehicleresume") == "<unknown string>") {
+        if (getdvarstring(#"debug_vehicleresume") == "<dev string:x180>") {
             return;
         }
         self endon(#"death");
@@ -1264,7 +1263,7 @@ function print_resume_speed(timer) {
         for (i = start; i < self.resumemsgs.size; i++) {
             position = i * 32;
             /#
-                print3d(self.origin + (0, 0, position), "<unknown string>" + self.resumemsgs[i], (0, 1, 0), 1, 3);
+                print3d(self.origin + (0, 0, position), "<dev string:x1a0>" + self.resumemsgs[i], (0, 1, 0), 1, 3);
             #/
         }
         waitframe(1);
@@ -1306,7 +1305,7 @@ function get_normal_anim_time(animation) {
 // Size: 0x62
 function setup_dynamic_detour(pathnode, get_func) {
     prevnode = [[ get_func ]](pathnode.targetname);
-    assert(isdefined(prevnode), "<unknown string>");
+    assert(isdefined(prevnode), "<dev string:x1b3>");
     prevnode.detoured = 0;
 }
 
@@ -1359,7 +1358,7 @@ function node_trigger_process() {
         level.vehicle_detourpaths = array_2d_add(level.vehicle_detourpaths, self.script_vehicledetour, self);
         /#
             if (level.vehicle_detourpaths[self.script_vehicledetour].size > 2) {
-                println("<unknown string>", self.script_vehicledetour);
+                println("<dev string:x1d3>", self.script_vehicledetour);
             }
         #/
     }
@@ -1550,11 +1549,11 @@ function _play_looped_fx_on_tag_origin_update(tag, effectorigin) {
 // Size: 0xbc
 function setup_dvars() {
     /#
-        if (getdvarstring(#"debug_vehicleresume") == "<unknown string>") {
-            setdvar(#"debug_vehicleresume", "<unknown string>");
+        if (getdvarstring(#"debug_vehicleresume") == "<dev string:x212>") {
+            setdvar(#"debug_vehicleresume", "<dev string:x180>");
         }
-        if (getdvarstring(#"debug_vehiclesetspeed") == "<unknown string>") {
-            setdvar(#"debug_vehiclesetspeed", "<unknown string>");
+        if (getdvarstring(#"debug_vehiclesetspeed") == "<dev string:x212>") {
+            setdvar(#"debug_vehiclesetspeed", "<dev string:x180>");
         }
     #/
 }
@@ -1724,10 +1723,10 @@ function get_vehiclenode_any_dynamic(target) {
         path_start = getent(target, "targetname");
     } else if (self.vehicleclass === "plane") {
         /#
-            println("<unknown string>" + path_start.targetname);
-            println("<unknown string>" + self.vehicletype);
+            println("<dev string:x215>" + path_start.targetname);
+            println("<dev string:x234>" + self.vehicletype);
         #/
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x244>");
     }
     if (!isdefined(path_start)) {
         path_start = struct::get(target, "targetname");
@@ -1889,7 +1888,7 @@ function simple_spawn(name_or_spawners, b_supress_assert = 0) {
     a_spawners = [];
     if (isstring(name_or_spawners)) {
         a_spawners = getvehiclespawnerarray(name_or_spawners, "targetname");
-        assert(a_spawners.size || b_supress_assert, "<unknown string>" + name_or_spawners + "<unknown string>");
+        assert(a_spawners.size || b_supress_assert, "<dev string:x279>" + name_or_spawners + "<dev string:x298>");
     } else {
         if (!isdefined(name_or_spawners)) {
             name_or_spawners = [];
@@ -1917,7 +1916,7 @@ function simple_spawn(name_or_spawners, b_supress_assert = 0) {
 // Size: 0xaa
 function simple_spawn_single(name, b_supress_assert = 0) {
     vehicle_array = simple_spawn(name, b_supress_assert);
-    assert(b_supress_assert || vehicle_array.size == 1, "<unknown string>" + name + "<unknown string>" + vehicle_array.size + "<unknown string>");
+    assert(b_supress_assert || vehicle_array.size == 1, "<dev string:x2a2>" + name + "<dev string:x2ce>" + vehicle_array.size + "<dev string:x2e2>");
     if (vehicle_array.size > 0) {
         return vehicle_array[0];
     }
@@ -1929,7 +1928,7 @@ function simple_spawn_single(name, b_supress_assert = 0) {
 // Size: 0x94
 function simple_spawn_single_and_drive(name) {
     vehiclearray = simple_spawn(name);
-    assert(vehiclearray.size == 1, "<unknown string>" + name + "<unknown string>" + vehiclearray.size + "<unknown string>");
+    assert(vehiclearray.size == 1, "<dev string:x2a2>" + name + "<dev string:x2ce>" + vehiclearray.size + "<dev string:x2e2>");
     vehiclearray[0] thread go_path();
     return vehiclearray[0];
 }
@@ -2428,12 +2427,12 @@ function get_nearest_target(valid_targets) {
     // Size: 0xd6
     function debug_vehicle() {
         self endon(#"death");
-        if (getdvarstring(#"debug_vehicle_health") == "<unknown string>") {
+        if (getdvarstring(#"debug_vehicle_health") == "<dev string:x212>") {
             setdvar(#"debug_vehicle_health", 0);
         }
         while (true) {
             if (getdvarint(#"debug_vehicle_health", 0) > 0) {
-                print3d(self.origin, "<unknown string>" + self.health, (1, 1, 1), 1, 3);
+                print3d(self.origin, "<dev string:x2fc>" + self.health, (1, 1, 1), 1, 3);
             }
             waitframe(1);
         }
@@ -2447,9 +2446,9 @@ function get_nearest_target(valid_targets) {
         self endon(#"death", #"newpath", #"endpath", #"reached_dynamic_path_end");
         for (nextnode = self.currentnode; true; nextnode = self.nextnode) {
             if (getdvarint(#"debug_vehicle_paths", 0) > 0) {
-                recordline(self.origin, self.currentnode.origin, (1, 0, 0), "<unknown string>", self);
-                recordline(self.origin, nextnode.origin, (0, 1, 0), "<unknown string>", self);
-                recordline(self.currentnode.origin, nextnode.origin, (1, 1, 1), "<unknown string>", self);
+                recordline(self.origin, self.currentnode.origin, (1, 0, 0), "<dev string:x307>", self);
+                recordline(self.origin, nextnode.origin, (0, 1, 0), "<dev string:x307>", self);
+                recordline(self.currentnode.origin, nextnode.origin, (1, 1, 1), "<dev string:x307>", self);
             }
             waitframe(1);
             if (isdefined(self.nextnode) && self.nextnode != nextnode) {
@@ -2482,7 +2481,7 @@ function add_main_callback(vehicletype, main) {
     }
     /#
         if (isdefined(level.vehicle_main_callback[vehicletype])) {
-            println("<unknown string>" + vehicletype + "<unknown string>");
+            println("<dev string:x310>" + vehicletype + "<dev string:x33f>");
         }
     #/
     level.vehicle_main_callback[vehicletype] = main;
@@ -2793,7 +2792,7 @@ function init_target_group() {
 // Checksum 0x27198b77, Offset: 0x9cd8
 // Size: 0x9e
 function add_to_target_group(target_ent) {
-    assert(isdefined(self.target_group), "<unknown string>");
+    assert(isdefined(self.target_group), "<dev string:x36b>");
     if (!isdefined(self.target_group)) {
         self.target_group = [];
     } else if (!isarray(self.target_group)) {
@@ -2807,7 +2806,7 @@ function add_to_target_group(target_ent) {
 // Checksum 0xe40dd3, Offset: 0x9d80
 // Size: 0x4c
 function remove_from_target_group(target_ent) {
-    assert(isdefined(self.target_group), "<unknown string>");
+    assert(isdefined(self.target_group), "<dev string:x36b>");
     arrayremovevalue(self.target_group, target_ent);
 }
 
@@ -2818,7 +2817,7 @@ function remove_from_target_group(target_ent) {
 function monitor_missiles_locked_on_to_me(player, wait_time = 0.1) {
     monitored_entity = self;
     monitored_entity endon(#"death");
-    assert(isdefined(monitored_entity.target_group), "<unknown string>");
+    assert(isdefined(monitored_entity.target_group), "<dev string:x36b>");
     player endon(#"stop_monitor_missile_locked_on_to_me", #"disconnect", #"joined_team");
     while (true) {
         closest_attacker = player get_closest_attacker_with_missile_locked_on_to_me(monitored_entity);
@@ -2906,7 +2905,7 @@ function stop_monitor_missiles_locked_on_to_me() {
 // Checksum 0x9872e9a7, Offset: 0xa398
 // Size: 0x268
 function get_closest_attacker_with_missile_locked_on_to_me(monitored_entity) {
-    assert(isdefined(monitored_entity.target_group), "<unknown string>");
+    assert(isdefined(monitored_entity.target_group), "<dev string:x36b>");
     player = self;
     closest_attacker = undefined;
     closest_attacker_dot = -999;
@@ -3070,17 +3069,17 @@ function enable_laser(b_enable, n_index) {
             if (getdvarint(#"debug_vehicle_spawn", 0) > 0) {
                 player = getplayers()[0];
                 dynamic_spawn_hud = newdebughudelem(player);
-                dynamic_spawn_hud.alignx = "<unknown string>";
+                dynamic_spawn_hud.alignx = "<dev string:x38d>";
                 dynamic_spawn_hud.x = 20;
                 dynamic_spawn_hud.y = 395;
                 dynamic_spawn_hud.fontscale = 1;
-                dynamic_spawn_dummy_model = spawn("<unknown string>", (0, 0, 0));
+                dynamic_spawn_dummy_model = spawn("<dev string:x394>", (0, 0, 0));
                 while (getdvarint(#"debug_vehicle_spawn", 0) > 0) {
                     origin = player.origin + anglestoforward(player getplayerangles()) * 270;
                     origin += (0, 0, 40);
                     if (player usebuttonpressed()) {
                         dynamic_spawn_dummy_model hide();
-                        vehicle = spawnvehicle(vehicleassets[type_index].name, origin, player.angles, "<unknown string>");
+                        vehicle = spawnvehicle(vehicleassets[type_index].name, origin, player.angles, "<dev string:x3a3>");
                         vehicle makevehicleusable();
                         if (getdvarint(#"debug_vehicle_spawn", 0) == 1) {
                             setdvar(#"debug_vehicle_spawn", 0);
@@ -3088,7 +3087,7 @@ function enable_laser(b_enable, n_index) {
                         }
                         wait(0.3);
                     }
-                    if (player buttonpressed("<unknown string>")) {
+                    if (player buttonpressed("<dev string:x3b9>")) {
                         dynamic_spawn_dummy_model hide();
                         type_index++;
                         if (type_index >= vehicleassets.size) {
@@ -3096,7 +3095,7 @@ function enable_laser(b_enable, n_index) {
                         }
                         wait(0.3);
                     }
-                    if (player buttonpressed("<unknown string>")) {
+                    if (player buttonpressed("<dev string:x3c6>")) {
                         dynamic_spawn_dummy_model hide();
                         type_index--;
                         if (type_index < 0) {
@@ -3104,7 +3103,7 @@ function enable_laser(b_enable, n_index) {
                         }
                         wait(0.3);
                     }
-                    dynamic_spawn_hud settext("<unknown string>" + function_9e72a96(vehicleassets[type_index].name));
+                    dynamic_spawn_hud settext("<dev string:x3d2>" + function_9e72a96(vehicleassets[type_index].name));
                     dynamic_spawn_dummy_model setmodel(vehicleassets[type_index].model);
                     dynamic_spawn_dummy_model show();
                     dynamic_spawn_dummy_model notsolid();
@@ -3124,11 +3123,11 @@ function enable_laser(b_enable, n_index) {
     // Checksum 0x1a5d806b, Offset: 0xaeb8
     // Size: 0xa6
     function spline_debug() {
-        level flag::init("<unknown string>");
+        level flag::init("<dev string:x3f3>");
         level thread _spline_debug();
         while (true) {
-            if (flag::exists("<unknown string>")) {
-                level flag::set_val("<unknown string>", getdvarint(#"g_vehicledrawsplines", 0));
+            if (flag::exists("<dev string:x3f3>")) {
+                level flag::set_val("<dev string:x3f3>", getdvarint(#"g_vehicledrawsplines", 0));
             }
             waitframe(1);
         }
@@ -3140,7 +3139,7 @@ function enable_laser(b_enable, n_index) {
     // Size: 0xb2
     function _spline_debug() {
         while (true) {
-            level flag::wait_till("<unknown string>");
+            level flag::wait_till("<dev string:x3f3>");
             foreach (nd in getallvehiclenodes()) {
                 nd show_node_debug_info();
             }
@@ -3155,13 +3154,13 @@ function enable_laser(b_enable, n_index) {
     function show_node_debug_info() {
         self.n_debug_display_count = 0;
         if (is_unload_node()) {
-            print_debug_info("<unknown string>" + self.script_unload + "<unknown string>");
+            print_debug_info("<dev string:x40b>" + self.script_unload + "<dev string:x417>");
         }
         if (isdefined(self.script_notify)) {
-            print_debug_info("<unknown string>" + self.script_notify + "<unknown string>");
+            print_debug_info("<dev string:x41b>" + self.script_notify + "<dev string:x417>");
         }
         if (isdefined(self.script_delete) && self.script_delete) {
-            print_debug_info("<unknown string>");
+            print_debug_info("<dev string:x427>");
         }
     }
 
@@ -3499,7 +3498,7 @@ function function_fa8ced6e(v_origin, v_angles, str_vehicle = undefined) {
     if (self isinvehicle()) {
         return self getvehicleoccupied();
     }
-    assert(isdefined(str_vehicle), "<unknown string>");
+    assert(isdefined(str_vehicle), "<dev string:x430>");
     var_80730518 = spawnvehicle(str_vehicle, v_origin, v_angles, "player_spawned_vehicle");
     var_80730518 usevehicle(self, 0);
     return var_80730518;

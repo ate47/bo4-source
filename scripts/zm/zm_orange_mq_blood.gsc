@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_ui_inventory.gsc;
 #using scripts\zm_common\zm_laststand.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -179,8 +178,8 @@ function function_ee4a200b() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x38>");
+                println("<dev string:x38>");
             }
         }
     #/
@@ -381,8 +380,8 @@ function function_a4fa2df0(n_index) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    iprintlnbold("<unknown string>" + zone);
-                    println("<unknown string>" + zone);
+                    iprintlnbold("<dev string:x4a>" + zone);
+                    println("<dev string:x4a>" + zone);
                 }
             }
         #/

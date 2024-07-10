@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\core_common\rank_shared.gsc;
 
@@ -257,7 +256,7 @@ function getparamvalueforplayer(playername, paramname) {
     if (isdefined(game.gamerep[#"players"][playername][paramname])) {
         return game.gamerep[#"players"][playername][paramname];
     }
-    assertmsg("<unknown string>" + paramname + "<unknown string>");
+    assertmsg("<dev string:x38>" + paramname + "<dev string:x4d>");
 }
 
 // Namespace gamerep/gamerep
@@ -309,7 +308,7 @@ function getgamerepparamlimit(paramname) {
     if (isdefined(game.gamerep[#"gamelimit"][#"default"][paramname])) {
         return game.gamerep[#"gamelimit"][#"default"][paramname];
     }
-    assertmsg("<unknown string>" + paramname + "<unknown string>");
+    assertmsg("<dev string:x65>" + paramname + "<dev string:x85>");
 }
 
 // Namespace gamerep/gamerep

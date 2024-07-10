@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\gametype.csc;
 #using scripts\mp_common\callbacks.csc;
 #using scripts\core_common\vehicles\driving_fx.csc;
@@ -25,7 +24,7 @@ function levelnotifyhandler(clientnum, state, oldstate) {
 // Checksum 0xf9811a36, Offset: 0x150
 // Size: 0x104
 function main() {
-    assert(isdefined(level.first_frame), "<unknown string>");
+    assert(isdefined(level.first_frame), "<dev string:x38>");
     level thread util::init_utility();
     util::registersystem("levelNotify", &levelnotifyhandler);
     register_clientfields();

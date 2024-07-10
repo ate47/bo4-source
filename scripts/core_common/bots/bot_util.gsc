@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\struct.gsc;
 #using scripts\core_common\bots\bot_chain.gsc;
 #using scripts\core_common\bots\bot_action.gsc;
@@ -12,8 +11,8 @@
 // Checksum 0x5c703f81, Offset: 0xb8
 // Size: 0x1b2
 function function_23cbc6c1(goal, b_force = 0, n_radius, n_height) {
-    assert(isbot(self), "<unknown string>" + "<unknown string>");
-    assert(isdefined(goal), "<unknown string>" + "<unknown string>");
+    assert(isbot(self), "<dev string:x38>" + "<dev string:x56>");
+    assert(isdefined(goal), "<dev string:x38>" + "<dev string:x77>");
     if (!isbot(self) || !isdefined(goal)) {
         return;
     }
@@ -39,7 +38,7 @@ function function_23cbc6c1(goal, b_force = 0, n_radius, n_height) {
 // Checksum 0x63106721, Offset: 0x278
 // Size: 0xd2
 function function_33834a13() {
-    assert(isbot(self), "<unknown string>" + "<unknown string>");
+    assert(isbot(self), "<dev string:x9b>" + "<dev string:x56>");
     if (!isbot(self) || !isdefined(self.bot.var_bd883a25)) {
         return;
     }
@@ -54,8 +53,8 @@ function function_33834a13() {
 // Checksum 0x3e140912, Offset: 0x358
 // Size: 0xbc
 function function_e449b57(gameobject) {
-    assert(isbot(self), "<unknown string>" + "<unknown string>");
-    assert(isdefined(gameobject), "<unknown string>" + "<unknown string>");
+    assert(isbot(self), "<dev string:xbb>" + "<dev string:x56>");
+    assert(isdefined(gameobject), "<dev string:xbb>" + "<dev string:xe0>");
     if (!isbot(self) || !isdefined(gameobject)) {
         return;
     }
@@ -71,10 +70,10 @@ function function_cf70f2fe(startstruct) {
     level endon(#"game_ended");
     self notify(#"hash_5efbaef0ca9e2136");
     self endon(#"hash_5efbaef0ca9e2136");
-    assert(isbot(self), "<unknown string>" + "<unknown string>");
-    assert(isstruct(startstruct) || isstring(startstruct), "<unknown string>" + "<unknown string>");
+    assert(isbot(self), "<dev string:x10a>" + "<dev string:x56>");
+    assert(isstruct(startstruct) || isstring(startstruct), "<dev string:x10a>" + "<dev string:x127>");
     if (isstring(startstruct)) {
-        assert(isdefined(struct::get(startstruct)), "<unknown string>" + "<unknown string>" + startstruct);
+        assert(isdefined(struct::get(startstruct)), "<dev string:x10a>" + "<dev string:x15d>" + startstruct);
     }
     if (!isbot(self)) {
         return;

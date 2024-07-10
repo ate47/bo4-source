@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\animation_shared.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
@@ -83,7 +82,7 @@ function buildandvalidatefacialanimationlist(localclientnum) {
         level.__clientfacialanimationslist[#"wallrunning"] = array(#"mp_t8_face_hero_wall_run_1");
         deathanims = level.__clientfacialanimationslist[#"death"];
         foreach (deathanim in deathanims) {
-            assert(!isanimlooping(localclientnum, deathanim), "<unknown string>" + deathanim + "<unknown string>");
+            assert(!isanimlooping(localclientnum, deathanim), "<dev string:x38>" + deathanim + "<dev string:x60>");
         }
     }
 }

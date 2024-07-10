@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\scene_shared.gsc;
@@ -42,7 +41,7 @@ function __init__() {
 // Checksum 0x79419667, Offset: 0x280
 // Size: 0x108
 function function_4da8230b(var_736940b3) {
-    assert(ishash(var_736940b3), "<unknown string>");
+    assert(ishash(var_736940b3), "<dev string:x38>");
     if (!isdefined(level.var_50f7dbd5)) {
         level.var_50f7dbd5 = [];
     } else if (!isarray(level.var_50f7dbd5)) {
@@ -60,7 +59,7 @@ function function_4da8230b(var_736940b3) {
 // Checksum 0xd86b88c2, Offset: 0x390
 // Size: 0x124
 function function_6b183c78(var_736940b3) {
-    assert(ishash(var_736940b3), "<unknown string>");
+    assert(ishash(var_736940b3), "<dev string:x72>");
     foreach (index, name_hash in level.var_50f7dbd5) {
         if (name_hash == var_736940b3) {
             var_689205d = index;
@@ -92,38 +91,38 @@ function function_cfca77a7(var_42de336c, id, condition_func, cooldown_time, intr
     assert(!isdefined(level.var_b175714d[id]));
     /#
         if (!isdefined(var_42de336c)) {
-            println("<unknown string>" + id + "<unknown string>");
+            println("<dev string:xad>" + id + "<dev string:xca>");
             return;
         }
         if (isdefined(var_99fca475) && isentity(var_42de336c)) {
             spawner = var_42de336c;
-            if (!isdefined(spawner.targetname) || spawner.targetname == "<unknown string>") {
-                println("<unknown string>" + id + "<unknown string>" + var_99fca475 + "<unknown string>");
+            if (!isdefined(spawner.targetname) || spawner.targetname == "<dev string:x103>") {
+                println("<dev string:xad>" + id + "<dev string:x106>" + var_99fca475 + "<dev string:x125>");
                 return;
             }
             var_de6be79a = 0;
             scenedef = scene::get_scenedef(var_99fca475);
             foreach (object in scenedef.objects) {
-                if (object.type === "<unknown string>" && object.name === spawner.targetname) {
+                if (object.type === "<dev string:x13a>" && object.name === spawner.targetname) {
                     var_de6be79a = 1;
                     break;
                 }
             }
             if (!var_de6be79a) {
-                println("<unknown string>" + id + "<unknown string>" + spawner.targetname);
+                println("<dev string:xad>" + id + "<dev string:x142>" + spawner.targetname);
                 return;
             }
         }
         if (isdefined(var_44c5827d) && !isdefined(var_99fca475)) {
-            println("<unknown string>" + id + "<unknown string>");
+            println("<dev string:xad>" + id + "<dev string:x187>");
             return;
         }
         if (!isdefined(var_44c5827d) && isdefined(var_99fca475)) {
-            println("<unknown string>" + id + "<unknown string>");
+            println("<dev string:xad>" + id + "<dev string:x1d4>");
             return;
         }
-        if (!isentity(var_42de336c) && !isassetloaded("<unknown string>", var_42de336c)) {
-            println("<unknown string>" + id + "<unknown string>" + (ishash(var_42de336c) ? function_9e72a96(var_42de336c) : var_42de336c) + "<unknown string>");
+        if (!isentity(var_42de336c) && !isassetloaded("<dev string:x221>", var_42de336c)) {
+            println("<dev string:xad>" + id + "<dev string:x22a>" + (ishash(var_42de336c) ? function_9e72a96(var_42de336c) : var_42de336c) + "<dev string:x245>");
             return;
         }
     #/
@@ -164,19 +163,19 @@ function function_abf1dcb4(id) {
 function function_9acf76e6(entity, id, var_c2a69066, var_2cf708f4 = 1) {
     if (!isdefined(level.var_b175714d[id])) {
         /#
-            iprintlnbold("<unknown string>" + id + "<unknown string>");
+            iprintlnbold("<dev string:x25c>" + id + "<dev string:x285>");
         #/
         return;
     }
     if (!isdefined(entity) || isdefined(entity.var_69a981e6) && entity.var_69a981e6) {
         /#
-            iprintlnbold("<unknown string>" + id + "<unknown string>");
+            iprintlnbold("<dev string:x29b>" + id + "<dev string:x2bc>");
         #/
         return;
     }
     if (function_abf1dcb4(id)) {
         /#
-            iprintlnbold("<unknown string>" + id + "<unknown string>");
+            iprintlnbold("<dev string:x29b>" + id + "<dev string:x2e3>");
         #/
         return;
     }
@@ -194,7 +193,7 @@ function function_9acf76e6(entity, id, var_c2a69066, var_2cf708f4 = 1) {
 function function_bdd8aba6(id) {
     if (!isdefined(level.var_b175714d[id])) {
         /#
-            iprintlnbold("<unknown string>" + id + "<unknown string>");
+            iprintlnbold("<dev string:x319>" + id + "<dev string:x285>");
         #/
         return;
     }
@@ -354,12 +353,12 @@ function private function_4e679db4(id, def) {
 // Size: 0xd4
 function private function_c81eb299(id, def) {
     if (isdefined(def.spawner)) {
-        assert(def.spawner.var_ab46c56 == id, "<unknown string>");
+        assert(def.spawner.var_ab46c56 == id, "<dev string:x342>");
         def.spawner.var_ab46c56 = undefined;
         return;
     }
     if (isdefined(def.aitype)) {
-        assert(level.var_170852dc[def.aitype] == id, "<unknown string>");
+        assert(level.var_170852dc[def.aitype] == id, "<dev string:x342>");
         level.var_170852dc[def.aitype] = undefined;
     }
 }
@@ -654,24 +653,24 @@ function function_bbaec2fd() {
     // Size: 0x4de
     function private devgui() {
         level waittill(#"start_zombie_round_logic");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x37d>");
+        adddebugcommand("<dev string:x3d9>");
+        adddebugcommand("<dev string:x427>");
+        adddebugcommand("<dev string:x477>");
         foreach (id, transformation in level.var_b175714d) {
-            adddebugcommand("<unknown string>" + function_9e72a96(id) + "<unknown string>" + function_9e72a96(id) + "<unknown string>");
-            adddebugcommand("<unknown string>" + function_9e72a96(id) + "<unknown string>" + function_9e72a96(id) + "<unknown string>");
-            adddebugcommand("<unknown string>" + function_9e72a96(id) + "<unknown string>" + function_9e72a96(id) + "<unknown string>");
+            adddebugcommand("<dev string:x4e3>" + function_9e72a96(id) + "<dev string:x50a>" + function_9e72a96(id) + "<dev string:x534>");
+            adddebugcommand("<dev string:x539>" + function_9e72a96(id) + "<dev string:x560>" + function_9e72a96(id) + "<dev string:x534>");
+            adddebugcommand("<dev string:x58a>" + function_9e72a96(id) + "<dev string:x5b1>" + function_9e72a96(id) + "<dev string:x534>");
         }
         registershack_walla = 0;
         while (true) {
             wait(0.2);
-            cmd = getdvarstring(#"hash_439ed91bbc9ac4c0", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_439ed91bbc9ac4c0", "<dev string:x103>");
+            if (cmd == "<dev string:x103>") {
                 continue;
             }
-            setdvar(#"hash_439ed91bbc9ac4c0", "<unknown string>");
-            cmd = strtok(cmd, "<unknown string>");
+            setdvar(#"hash_439ed91bbc9ac4c0", "<dev string:x103>");
+            cmd = strtok(cmd, "<dev string:x5db>");
             switch (cmd[0]) {
             case #"toggle_status":
                 registershack_walla = !registershack_walla;
@@ -810,10 +809,10 @@ function function_bbaec2fd() {
             x = 0;
         }
         var_aa917a22 = newdebughudelem();
-        var_aa917a22.alignx = "<unknown string>";
-        var_aa917a22.horzalign = "<unknown string>";
-        var_aa917a22.aligny = "<unknown string>";
-        var_aa917a22.vertalign = "<unknown string>";
+        var_aa917a22.alignx = "<dev string:x5df>";
+        var_aa917a22.horzalign = "<dev string:x5df>";
+        var_aa917a22.aligny = "<dev string:x5e6>";
+        var_aa917a22.vertalign = "<dev string:x5ef>";
         var_aa917a22.y = y;
         var_aa917a22.x = x;
         return var_aa917a22;
@@ -828,13 +827,13 @@ function function_bbaec2fd() {
         y = 10;
         colors = array((1, 1, 1));
         var_e859a426 = create_hudelem(y);
-        var_e859a426 settext("<unknown string>");
+        var_e859a426 settext("<dev string:x5f5>");
         y += 10;
         var_735311f0 = create_hudelem(y);
         var_af5fbf35 = create_hudelem(y, 160);
-        var_af5fbf35 settext("<unknown string>");
+        var_af5fbf35 settext("<dev string:x614>");
         var_f4676cb4 = create_hudelem(y, 220);
-        var_f4676cb4 settext("<unknown string>");
+        var_f4676cb4 settext("<dev string:x626>");
         if (!isdefined(level.var_deb567a8)) {
             level.var_deb567a8 = [];
         } else if (!isarray(level.var_deb567a8)) {
@@ -901,7 +900,7 @@ function function_bbaec2fd() {
             waitframe(1);
             foreach (var_deb567a8 in level.var_deb567a8) {
                 if (!isdefined(var_deb567a8.id)) {
-                    var_deb567a8.var_735311f0 settext(function_770908a2() ? "<unknown string>" : "<unknown string>");
+                    var_deb567a8.var_735311f0 settext(function_770908a2() ? "<dev string:x641>" : "<dev string:x103>");
                     continue;
                 }
                 var_deb567a8.var_d189697d settext(level.var_b175714d[var_deb567a8.id].var_33e393a7);
@@ -931,12 +930,12 @@ function function_bbaec2fd() {
     // Checksum 0xdb0883d5, Offset: 0x3c50
     // Size: 0x158
     function private function_dfd1a1c0() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x64a>");
+        self endon("<dev string:x64a>");
         while (level.var_dfd1a1c0) {
             var_c2624dfc = 200;
             var_b010a959 = 100;
-            debug2dtext((var_c2624dfc, var_b010a959, 0), "<unknown string>", (1, 1, 0), 1, (0, 0, 0), 0.8, 1);
+            debug2dtext((var_c2624dfc, var_b010a959, 0), "<dev string:x65d>", (1, 1, 0), 1, (0, 0, 0), 0.8, 1);
             var_b010a959 += 25;
             foreach (pauser in level.var_50f7dbd5) {
                 debug2dtext((var_c2624dfc, var_b010a959, 0), function_9e72a96(pauser), (1, 1, 1), 1, (0, 0, 0), 0.8, 1);

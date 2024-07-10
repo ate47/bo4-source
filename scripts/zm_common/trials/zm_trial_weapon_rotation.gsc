@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;
 #using scripts\zm_common\zm_trial.gsc;
@@ -231,11 +230,11 @@ function private function_413cffae(n_interval, e_player) {
     // Checksum 0x45e69197, Offset: 0x1118
     // Size: 0xf2
     function function_579553d8(n_interval) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x38>");
+        self endon("<dev string:x38>");
         level endon(#"hash_7646638df88a3656", #"end_game");
         while (true) {
-            debug2dtext((8, 400, 0), "<unknown string>" + n_interval, undefined, undefined, undefined, 1);
+            debug2dtext((8, 400, 0), "<dev string:x4b>" + n_interval, undefined, undefined, undefined, 1);
             waitframe(1);
             n_interval -= float(function_60d95f53()) / 1000;
             n_interval = math::clamp(n_interval, 0, 999);

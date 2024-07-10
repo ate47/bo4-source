@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\visionset_mgr_shared.gsc;
 #using scripts\weapons\tacticalinsertion.gsc;
@@ -166,7 +165,7 @@ function record_settings(spectatorclient, targetentityindex, killcam_entity_info
 }
 
 // Namespace killcam/killcam_shared
-// Params b, eflags: 0x1 linked
+// Params 11, eflags: 0x1 linked
 // Checksum 0x19bd8fa8, Offset: 0xa40
 // Size: 0x14e
 function function_eb3deeec(spectatorclient, targetentityindex, killcam_entity_info, weapon, meansofdeath, deathtime, deathtimeoffset, offsettime, perks, killstreaks, attacker) {
@@ -276,7 +275,7 @@ function post_round_final_killcam() {
 // Size: 0x4c
 function function_a26057ee() {
     if (potm::function_ec01de3()) {
-        println("<unknown string>");
+        println("<dev string:x38>");
         return;
     }
     post_round_final_killcam();
@@ -380,13 +379,13 @@ function killcam(attackernum, targetnum, killcam_entity_info, weapon, meansofdea
     self callback::function_d8abfc3d(#"on_end_game", &on_end_game);
     level.numplayerswaitingtoenterkillcam++;
     if (level.numplayerswaitingtoenterkillcam > 1) {
-        println("<unknown string>");
+        println("<dev string:x80>");
         waitframe(level.numplayerswaitingtoenterkillcam - 1);
     }
     waitframe(1);
     level.numplayerswaitingtoenterkillcam--;
     if (!function_7f088568()) {
-        println("<unknown string>");
+        println("<dev string:xbd>");
         while (!function_7f088568()) {
             waitframe(1);
         }
@@ -805,8 +804,8 @@ function final_killcam(winner) {
     }
     /#
         if (getdvarint(#"scr_force_finalkillcam", 0) == 1) {
-            setmatchflag("<unknown string>", 1);
-            setmatchflag("<unknown string>", 0);
+            setmatchflag("<dev string:xe4>", 1);
+            setmatchflag("<dev string:xf4>", 0);
         }
     #/
     /#

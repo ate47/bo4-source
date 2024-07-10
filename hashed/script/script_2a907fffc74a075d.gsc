@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_zodt8_sound.csc;
 #using scripts\zm\zm_zodt8_gamemodes.csc;
 #using scripts\zm_common\zm_characters.csc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.gsc;
 
 #namespace namespace_81245006;
@@ -129,7 +128,7 @@ function function_37e3f011(entity, bone, weakpointstate) {
         /#
             if (getdvarint(#"scr_weakpoint_debug", 0) > 0) {
                 if (!isstring(bone)) {
-                    iprintlnbold("<unknown string>" + bonename);
+                    iprintlnbold("<dev string:x38>" + bonename);
                 }
             }
         #/

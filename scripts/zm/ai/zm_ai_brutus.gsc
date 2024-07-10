@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_brutus_interface.gsc;
 #using scripts\core_common\ai\archetype_brutus.gsc;
 #using scripts\zm\powerup\zm_powerup_nuke.gsc;
@@ -85,7 +84,7 @@ function __init__() {
     callback::on_actor_killed(&on_brutus_killed);
     zm_cleanup::function_cdf5a512(#"brutus", &function_88efcb);
     /#
-        zm_devgui::function_c7dd7a17("<unknown string>");
+        zm_devgui::function_c7dd7a17("<dev string:x38>");
     #/
 }
 

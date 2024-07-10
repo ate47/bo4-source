@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_morocco_scripted.gsc;
 #using scripts\mp\mp_morocco_sound.gsc;
 #using scripts\mp\mp_morocco_fx.gsc;

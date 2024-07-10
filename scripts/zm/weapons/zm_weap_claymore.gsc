@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\proximity_grenade.gsc;
 #using scripts\zm_common\zm_weapons.gsc;

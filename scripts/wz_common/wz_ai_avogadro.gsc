@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ai_zombie.gsc;
 #using scripts\wz_common\wz_ai_utils.gsc;
 #using scripts\mp_common\player\player_damage.gsc;
@@ -278,10 +277,10 @@ function function_7d5cf0e4(entity) {
     function function_c698f66b() {
         if (self.var_15aa1ae0 === 0) {
             if (getdvarint(#"recorder_enablerec", 0)) {
-                record3dtext("<unknown string>", self.origin, (1, 0.5, 0), "<unknown string>", self);
+                record3dtext("<dev string:x38>", self.origin, (1, 0.5, 0), "<dev string:x4e>", self);
                 return;
             }
-            print3d(self.origin, "<unknown string>", (1, 0.5, 0), 1, 1);
+            print3d(self.origin, "<dev string:x38>", (1, 0.5, 0), 1, 1);
         }
     }
 

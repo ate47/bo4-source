@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\teams\teams.gsc;
 #using scripts\mp_common\teams\platoons.gsc;
 #using scripts\core_common\bots\bot.gsc;
@@ -142,7 +141,7 @@ function function_efe5a681(team) {
 function function_ccb3bc7a() {
     foreach (team in level.teams) {
         if (self function_efe5a681(team)) {
-            println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team + "<unknown string>" + getplayers(team).size);
+            println("<dev string:x38>" + "<dev string:x4c>" + self.name + "<dev string:x61>" + team + "<dev string:x71>" + getplayers(team).size);
             /#
                 function_d28f6fa0(team);
             #/
@@ -166,7 +165,7 @@ function function_b919f6aa(status) {
             continue;
         }
         if (self function_efe5a681(team)) {
-            println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team + "<unknown string>" + getplayers(team).size);
+            println("<dev string:x38>" + "<dev string:x4c>" + self.name + "<dev string:x7b>" + team + "<dev string:x71>" + getplayers(team).size);
             /#
                 function_d28f6fa0(team);
             #/
@@ -206,7 +205,7 @@ function function_5d02dd86(party) {
             if (team_players.size >= level.maxteamplayers) {
                 break;
             }
-            println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + member.team + "<unknown string>" + member.name);
+            println("<dev string:x38>" + "<dev string:x4c>" + self.name + "<dev string:x90>" + member.team + "<dev string:x9c>" + member.name);
             /#
                 function_d28f6fa0(member.team);
             #/
@@ -609,13 +608,13 @@ function function_a9822793() {
     var_ed0a1ecc = function_94478182(distribution);
     /#
         if (level.var_ba13fb7a) {
-            println("<unknown string>" + "<unknown string>");
+            println("<dev string:x38>" + "<dev string:xab>");
             function_a9bfa6d6();
-            println("<unknown string>" + "<unknown string>");
+            println("<dev string:x38>" + "<dev string:xbf>");
         }
     #/
     foreach (platoon, platoon_teams in var_ed0a1ecc) {
-        println("<unknown string>" + platoon);
+        println("<dev string:xdc>" + platoon);
         foreach (var_a787dfe7, var_75aa1f3c in platoon_teams) {
             foreach (index, team in var_75aa1f3c) {
                 if (team == #"none") {
@@ -627,9 +626,9 @@ function function_a9822793() {
                         break;
                     }
                     assert(getplayers(team).size + getplayers(var_6f782d8f).size <= level.maxteamplayers);
-                    println("<unknown string>" + var_ed0a1ecc[platoon].size);
+                    println("<dev string:xe7>" + var_ed0a1ecc[platoon].size);
                     foreach (var_aacd04cb in var_ed0a1ecc[platoon]) {
-                        println("<unknown string>" + var_aacd04cb.size);
+                        println("<dev string:xfa>" + var_aacd04cb.size);
                         foreach (remove_index, var_adeea4a7 in var_aacd04cb) {
                             if (var_adeea4a7 == var_6f782d8f) {
                                 var_aacd04cb[remove_index] = #"none";
@@ -643,7 +642,7 @@ function function_a9822793() {
     }
     /#
         if (level.var_ba13fb7a) {
-            println("<unknown string>" + "<unknown string>");
+            println("<dev string:x38>" + "<dev string:x111>");
             function_a9bfa6d6();
         }
     #/
@@ -676,25 +675,25 @@ function function_a9822793() {
         if (isdefined(level.teams[team])) {
             team_str = level.teams[team];
         }
-        voip = "<unknown string>";
+        voip = "<dev string:x12e>";
         if (isdefined(level.var_75dffa9f[team])) {
-            voip += level.var_75dffa9f[team] == #"game" ? "<unknown string>" : "<unknown string>";
+            voip += level.var_75dffa9f[team] == #"game" ? "<dev string:x136>" : "<dev string:x13d>";
         } else {
-            voip += "<unknown string>";
+            voip += "<dev string:x146>";
         }
         platoon = getteamplatoon(team);
-        platoon_name = "<unknown string>";
+        platoon_name = "<dev string:x152>";
         if (platoon == #"invalid") {
-            platoon_name += "<unknown string>";
+            platoon_name += "<dev string:x15d>";
         } else if (platoon == #"none") {
-            platoon_name += "<unknown string>";
+            platoon_name += "<dev string:x167>";
         } else if (isdefined(level.platoons[platoon])) {
             platoon_name += level.platoons[platoon].name;
         }
-        println("<unknown string>" + "<unknown string>" + platoon_name + "<unknown string>" + team_str + "<unknown string>" + voip);
+        println("<dev string:x38>" + "<dev string:x16e>" + platoon_name + "<dev string:x16e>" + team_str + "<dev string:x16e>" + voip);
         foreach (player in players) {
             party = player getparty();
-            println("<unknown string>" + "<unknown string>" + player.name + "<unknown string>" + (party.fill ? "<unknown string>" : "<unknown string>") + "<unknown string>" + party.var_a15e4438);
+            println("<dev string:x38>" + "<dev string:x172>" + player.name + "<dev string:x177>" + (party.fill ? "<dev string:x183>" : "<dev string:x189>") + "<dev string:x18e>" + party.var_a15e4438);
         }
     }
 
@@ -708,12 +707,12 @@ function function_a9822793() {
             foreach (team in level.teams) {
                 var_dcbb8617 = getplayers(team);
                 if (var_dcbb8617.size > level.maxteamplayers) {
-                    var_f554d31e = "<unknown string>";
+                    var_f554d31e = "<dev string:x197>";
                     foreach (player in var_dcbb8617) {
                         party = player getparty();
-                        var_f554d31e = var_f554d31e + player.name + "<unknown string>" + party.party_id + "<unknown string>";
+                        var_f554d31e = var_f554d31e + player.name + "<dev string:x19a>" + party.party_id + "<dev string:x1a7>";
                     }
-                    assertmsg("<unknown string>" + self.name + "<unknown string>" + (ishash(team) ? function_9e72a96(team) : team) + "<unknown string>" + var_dcbb8617.size + "<unknown string>" + level.maxteamplayers + "<unknown string>" + var_f554d31e);
+                    assertmsg("<dev string:x1ab>" + self.name + "<dev string:x1c0>" + (ishash(team) ? function_9e72a96(team) : team) + "<dev string:x1e5>" + var_dcbb8617.size + "<dev string:x1f9>" + level.maxteamplayers + "<dev string:x1a7>" + var_f554d31e);
                 }
             }
             if (!level.custommatch) {
@@ -727,7 +726,7 @@ function function_a9822793() {
                             continue;
                         }
                         if (party_member.team != player.team) {
-                            assertmsg("<unknown string>" + player.name + "<unknown string>" + function_9e72a96(player.team) + "<unknown string>" + party_member.name + "<unknown string>" + function_9e72a96(party_member.team) + "<unknown string>");
+                            assertmsg("<dev string:x209>" + player.name + "<dev string:x237>" + function_9e72a96(player.team) + "<dev string:x23c>" + party_member.name + "<dev string:x237>" + function_9e72a96(party_member.team) + "<dev string:x241>");
                         }
                     }
                 }
@@ -744,7 +743,7 @@ function function_a9822793() {
             wait(3);
             players = getplayers();
             if (players.size > 0 && players[0] isstreamerready()) {
-                setdvar(#"devgui_bot", "<unknown string>");
+                setdvar(#"devgui_bot", "<dev string:x247>");
                 wait(3);
                 function_a9822793();
                 wait(1);

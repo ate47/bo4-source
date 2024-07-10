@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\systems\planner_blackboard.gsc;
 
 #namespace planner;
@@ -88,7 +87,7 @@ function private _planexpandaction(planner, action) {
     aiprofile_beginentry(action.api);
     assert(isstruct(planner));
     assert(isstruct(action));
-    assert(action.type == "<unknown string>");
+    assert(action.type == "<dev string:x38>");
     assert(isarray(planner.plan));
     actionfuncs = plannerutility::getplanneractionfunctions(action.api);
     actioninfo = spawnstruct();
@@ -96,7 +95,7 @@ function private _planexpandaction(planner, action) {
     if (isdefined(actionfuncs[#"parameterize"])) {
         _blackboardsreadwritemode(planner);
         actioninfo.params = [[ actionfuncs[#"parameterize"] ]](planner, action.constants);
-        assert(isstruct(actioninfo.params), "<unknown string>" + action.api + "<unknown string>");
+        assert(isstruct(actioninfo.params), "<dev string:x41>" + action.api + "<dev string:x69>");
         _blackboardsreadmode(planner);
     } else {
         actioninfo.params = spawnstruct();
@@ -118,7 +117,7 @@ function private _planexpandpostcondition(planner, postcondition) {
     aiprofile_beginentry(postcondition.api);
     assert(isstruct(planner));
     assert(isstruct(postcondition));
-    assert(postcondition.type == "<unknown string>");
+    assert(postcondition.type == "<dev string:x83>");
     _blackboardsreadwritemode(planner);
     postconditionfunc = plannerutility::getplannerapifunction(postcondition.api);
     [[ postconditionfunc ]](planner, postcondition.constants);
@@ -139,7 +138,7 @@ function private _planexpandprecondition(planner, precondition) {
     aiprofile_beginentry(precondition.api);
     assert(isstruct(planner));
     assert(isstruct(precondition));
-    assert(precondition.type == "<unknown string>");
+    assert(precondition.type == "<dev string:x93>");
     _blackboardsreadmode(planner);
     preconditionfunc = plannerutility::getplannerapifunction(precondition.api);
     result = [[ preconditionfunc ]](planner, precondition.constants);
@@ -276,7 +275,7 @@ function private _planprocessstack(planner) {
             _planstackpushnode(planner, nodeentry.node.children[0], 0);
             continue;
         default:
-            assert(0, "<unknown string>" + nodeentry.node.type + "<unknown string>");
+            assert(0, "<dev string:xa2>" + nodeentry.node.type + "<dev string:xcc>");
             break;
         }
         result = _planpushvalidparent(planner, nodeentry, result);
@@ -412,7 +411,7 @@ function createplanner(name) {
 function createpostcondition(functionname, constants) {
     assert(ishash(functionname));
     assert(!isdefined(constants) || isarray(constants));
-    assert(isfunctionptr(plannerutility::getplannerapifunction(functionname)), "<unknown string>" + function_9e72a96(functionname) + "<unknown string>");
+    assert(isfunctionptr(plannerutility::getplannerapifunction(functionname)), "<dev string:xd0>" + function_9e72a96(functionname) + "<dev string:xde>");
     node = spawnstruct();
     node.type = "postcondition";
     node.api = functionname;
@@ -427,7 +426,7 @@ function createpostcondition(functionname, constants) {
 function createprecondition(functionname, constants) {
     assert(ishash(functionname));
     assert(!isdefined(constants) || isarray(constants));
-    assert(isfunctionptr(plannerutility::getplannerapifunction(functionname)), "<unknown string>" + function_9e72a96(functionname) + "<unknown string>");
+    assert(isfunctionptr(plannerutility::getplannerapifunction(functionname)), "<dev string:xd0>" + function_9e72a96(functionname) + "<dev string:xde>");
     node = spawnstruct();
     node.type = "precondition";
     node.api = functionname;
@@ -547,7 +546,7 @@ function plan(planner, blackboardvalues, maxframetime = 3, starttime = undefined
     // Size: 0xdc
     function printplanner(planner, filename) {
         assert(isstruct(planner));
-        file = openfile(filename, "<unknown string>");
+        file = openfile(filename, "<dev string:xfb>");
         printid = randomint(2147483647);
         _printplannernode(file, planner, 0, printid);
         _printclearprintid(planner);
@@ -576,32 +575,32 @@ function plan(planner, blackboardvalues, maxframetime = 3, starttime = undefined
     function private function_3af5bab0(node) {
         text = node.type;
         if (isdefined(node.name)) {
-            text += "<unknown string>" + node.name;
+            text += "<dev string:x103>" + node.name;
         }
         if (isdefined(node.api)) {
-            text += "<unknown string>" + node.api;
+            text += "<dev string:x103>" + node.api;
         }
         if (isdefined(node.constants)) {
-            text += "<unknown string>";
+            text += "<dev string:x103>";
             first = 1;
             foreach (key, value in node.constants) {
                 if (!first) {
-                    text += "<unknown string>";
+                    text += "<dev string:x107>";
                 }
                 if (isint(value) || isfloat(value)) {
-                    text += key + "<unknown string>" + value;
+                    text += key + "<dev string:x10c>" + value;
                 } else if (isstring(value)) {
-                    text += key + "<unknown string>" + value + "<unknown string>";
+                    text += key + "<dev string:x111>" + value + "<dev string:xcc>";
                 } else if (isarray(value)) {
-                    text += key + "<unknown string>";
+                    text += key + "<dev string:x117>";
                 } else if (!isdefined(value)) {
-                    text += key + "<unknown string>";
+                    text += key + "<dev string:x126>";
                 }
                 first = 0;
             }
         }
         if (isdefined(node.name) || isdefined(node.api)) {
-            text += "<unknown string>";
+            text += "<dev string:x134>";
         }
         return text;
     }
@@ -612,13 +611,13 @@ function plan(planner, blackboardvalues, maxframetime = 3, starttime = undefined
     // Size: 0x1be
     function private _printplannernode(file, plannernode, indent, printid) {
         assert(isstruct(plannernode));
-        indentspace = "<unknown string>";
+        indentspace = "<dev string:x138>";
         for (index = 0; index < indent; index++) {
-            indentspace += "<unknown string>";
+            indentspace += "<dev string:x13b>";
         }
-        text = "<unknown string>";
+        text = "<dev string:x138>";
         if (plannernode.printid === printid) {
-            text += "<unknown string>";
+            text += "<dev string:x142>";
             text += function_3af5bab0(plannernode);
             fprintln(file, indentspace + text);
             return;
@@ -725,8 +724,8 @@ function createplannerfromasset(assetname) {
 // Checksum 0xaea18e2e, Offset: 0x2e00
 // Size: 0xbe
 function getplannerapifunction(functionname) {
-    assert(ishash(functionname) && functionname != "<unknown string>", "<unknown string>");
-    assert(isdefined(level._plannerscriptfunctions[#"api"][functionname]), "<unknown string>" + function_9e72a96(functionname) + "<unknown string>");
+    assert(ishash(functionname) && functionname != "<dev string:x138>", "<dev string:x14c>");
+    assert(isdefined(level._plannerscriptfunctions[#"api"][functionname]), "<dev string:x186>" + function_9e72a96(functionname) + "<dev string:x1a5>");
     return level._plannerscriptfunctions[#"api"][functionname];
 }
 
@@ -735,8 +734,8 @@ function getplannerapifunction(functionname) {
 // Checksum 0x68becd93, Offset: 0x2ec8
 // Size: 0xbe
 function getplanneractionfunctions(actionname) {
-    assert(ishash(actionname) && actionname != "<unknown string>", "<unknown string>");
-    assert(isdefined(level._plannerscriptfunctions[#"action"][actionname]), "<unknown string>" + function_9e72a96(actionname) + "<unknown string>");
+    assert(ishash(actionname) && actionname != "<dev string:x138>", "<dev string:x1bd>");
+    assert(isdefined(level._plannerscriptfunctions[#"action"][actionname]), "<dev string:x1f5>" + function_9e72a96(actionname) + "<dev string:x1a5>");
     return level._plannerscriptfunctions[#"action"][actionname];
 }
 
@@ -745,10 +744,10 @@ function getplanneractionfunctions(actionname) {
 // Checksum 0x9aea3328, Offset: 0x2f90
 // Size: 0x13c
 function registerplannerapi(functionname, functionptr) {
-    assert(ishash(functionname) && functionname != "<unknown string>", "<unknown string>");
-    assert(isfunctionptr(functionptr), "<unknown string>" + function_9e72a96(functionname) + "<unknown string>");
+    assert(ishash(functionname) && functionname != "<dev string:x138>", "<dev string:x212>");
+    assert(isfunctionptr(functionptr), "<dev string:x251>" + function_9e72a96(functionname) + "<dev string:x280>");
     planner::_initializeplannerfunctions(#"api");
-    assert(!isdefined(level._plannerscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
+    assert(!isdefined(level._plannerscriptfunctions[#"api"][functionname]), "<dev string:x186>" + functionname + "<dev string:x2a1>");
     level._plannerscriptfunctions[#"api"][functionname] = functionptr;
 }
 
@@ -757,9 +756,9 @@ function registerplannerapi(functionname, functionptr) {
 // Checksum 0xc1ae2c31, Offset: 0x30d8
 // Size: 0x246
 function registerplanneraction(actionname, paramfuncptr, initializefuncptr, updatefuncptr, terminatefuncptr) {
-    assert(ishash(actionname) && actionname != "<unknown string>", "<unknown string>");
+    assert(ishash(actionname) && actionname != "<dev string:x138>", "<dev string:x2b7>");
     planner::_initializeplannerfunctions("Action");
-    assert(!isdefined(level._plannerscriptfunctions[#"action"][actionname]), "<unknown string>" + function_9e72a96(actionname) + "<unknown string>");
+    assert(!isdefined(level._plannerscriptfunctions[#"action"][actionname]), "<dev string:x1f5>" + function_9e72a96(actionname) + "<dev string:x2a1>");
     level._plannerscriptfunctions[#"action"][actionname] = [];
     if (isfunctionptr(paramfuncptr)) {
         level._plannerscriptfunctions[#"action"][actionname][#"parameterize"] = paramfuncptr;

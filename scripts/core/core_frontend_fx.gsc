@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace core_frontend_fx;
 
 // Namespace core_frontend_fx/core_frontend_fx

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 
 #namespace zm_towers_crowd_meter;
@@ -68,7 +67,7 @@ class czm_towers_crowd_meter : cluielem {
             set_data(localclientnum, "_state", 11);
             return;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
     }
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter

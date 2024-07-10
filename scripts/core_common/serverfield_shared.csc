@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace serverfield;
 
 // Namespace serverfield/serverfield_shared

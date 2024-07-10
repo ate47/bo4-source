@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_tomahawk.gsc;
 #using scripts\zm\weapons\zm_weap_flamethrower.gsc;
 #using scripts\zm\weapons\zm_weap_katana.gsc;
@@ -758,7 +757,7 @@ function function_1877cfe4(e_tomahawk) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (!isdefined(str_zone) || !array::contains(var_76f21e6b, str_zone)) {
             /#
-                iprintln("zombie_ghost_dog_spawner");
+                iprintln("<dev string:x38>");
             #/
             self.var_67ea42af = undefined;
             self notify(#"hash_67898531e66a70ff");
@@ -791,7 +790,7 @@ function function_cbc49ed2(s_params) {
         self.var_300aef34 = 1;
         s_params.eattacker.var_65f165e1++;
         /#
-            iprintln("<unknown string>" + s_params.eattacker.var_65f165e1);
+            iprintln("<dev string:x6b>" + s_params.eattacker.var_65f165e1);
         #/
         if (s_params.eattacker.var_65f165e1 >= 30) {
             s_params.eattacker flag::set(#"hash_18c7b52cebad7171");
@@ -799,7 +798,7 @@ function function_cbc49ed2(s_params) {
             s_params.eattacker thread function_dab3dcc3();
             s_params.eattacker.var_67ea42af = undefined;
             /#
-                iprintln("<unknown string>");
+                iprintln("<dev string:x88>");
             #/
         }
     }
@@ -1077,7 +1076,7 @@ function function_3c089853(e_player) {
     while (true) {
         current_zone = self zm_utility::get_current_zone(1);
         /#
-            iprintln("<unknown string>" + current_zone.name);
+            iprintln("<dev string:xa4>" + current_zone.name);
         #/
         str_next_location = function_bc827f0d(current_zone, self);
         foreach (var_d72f7274 in var_8ad4ec11) {
@@ -1971,7 +1970,7 @@ function function_175057ad() {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_d71846cd);
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xc7>");
     }
 
     // Namespace pebble/zm_escape_pebble
@@ -1981,7 +1980,7 @@ function function_175057ad() {
     function function_d71846cd(cmd) {
         switch (cmd) {
         case #"hash_8a61bbec91098c":
-            var_64de1b5a = struct::get_array("<unknown string>");
+            var_64de1b5a = struct::get_array("<dev string:x146>");
             foreach (s_glyph in var_64de1b5a) {
                 util::spawn_model(#"p8_zm_esc_dream_catcher_blue", s_glyph.origin, s_glyph.angles);
             }
@@ -1998,7 +1997,7 @@ function function_175057ad() {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_1bab20ac);
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x158>");
     }
 
     // Namespace pebble/zm_escape_pebble

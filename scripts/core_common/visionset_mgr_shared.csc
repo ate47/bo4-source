@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\postfx_shared.csc;
 #using scripts\core_common\filter_shared.csc;
@@ -236,7 +235,7 @@ function finalize_clientfields() {
 // Checksum 0x554895ad, Offset: 0x10b8
 // Size: 0x25c
 function finalize_type_clientfields() {
-    println("<unknown string>" + self.type + "<unknown string>");
+    println("<dev string:x38>" + self.type + "<dev string:x4a>");
     if (1 >= self.info.size) {
         return;
     }
@@ -248,7 +247,7 @@ function finalize_type_clientfields() {
         if (self.info[self.sorted_name_keys[i]].lerp_bit_count > self.cf_lerp_bit_count) {
             self.cf_lerp_bit_count = self.info[self.sorted_name_keys[i]].lerp_bit_count;
         }
-        println("<unknown string>" + self.info[self.sorted_name_keys[i]].name + "<unknown string>" + self.info[self.sorted_name_keys[i]].version + "<unknown string>" + self.info[self.sorted_name_keys[i]].lerp_step_count + "<unknown string>");
+        println("<dev string:x64>" + self.info[self.sorted_name_keys[i]].name + "<dev string:x71>" + self.info[self.sorted_name_keys[i]].version + "<dev string:x7f>" + self.info[self.sorted_name_keys[i]].lerp_step_count + "<dev string:x95>");
     }
     clientfield::register("toplayer", self.cf_slot_name, self.highest_version, self.cf_slot_bit_count, "int", self.cf_slot_cb, 0, 1);
     if (1 < self.cf_lerp_bit_count) {
@@ -267,7 +266,7 @@ function validate_info(type, name, version) {
             break;
         }
     }
-    assert(i < keys.size, "<unknown string>" + type + "<unknown string>");
+    assert(i < keys.size, "<dev string:x98>" + type + "<dev string:xb3>");
     if (version > level.vsmgr[type].server_version) {
         return false;
     }
@@ -310,7 +309,7 @@ function add_info(type, name, version, lerp_step_count) {
 // Checksum 0x42f4a9fa, Offset: 0x15c0
 // Size: 0x152
 function register_info(type, name, version, lerp_step_count) {
-    assert(level.vsmgr_initializing, "<unknown string>");
+    assert(level.vsmgr_initializing, "<dev string:xc1>");
     lower_name = tolower(name);
     if (!validate_info(type, lower_name, version)) {
         return false;

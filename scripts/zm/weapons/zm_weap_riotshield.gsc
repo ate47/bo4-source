@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -235,7 +234,7 @@ function should_shield_absorb_damage(einflictor, eattacker, idamage, idflags, sm
                     return zombie_utility::get_zombie_var(#"riotshield_stowed_block_fraction");
                 }
             } else {
-                assert(!isdefined(self.riotshieldentity), "<unknown string>");
+                assert(!isdefined(self.riotshieldentity), "<dev string:x38>");
             }
         }
     }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_34b02db2817b42f;
 #using script_5f9141e04e4e94a2;
 #using script_74608ad5d25450b1;
@@ -319,7 +318,7 @@ function function_6d5a79fe(var_5ea5c94d, ended_early) {
             }
         }
         /#
-            iprintlnbold("<unknown string>" + level.var_276bd207[0] + level.var_276bd207[1] + level.var_276bd207[2] + level.var_276bd207[3]);
+            iprintlnbold("<dev string:x38>" + level.var_276bd207[0] + level.var_276bd207[1] + level.var_276bd207[2] + level.var_276bd207[3]);
         #/
     }
 }
@@ -563,7 +562,7 @@ function function_47181de() {
     }
     /#
         if (!isdefined(n_slot)) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:x46>");
         }
     #/
 }
@@ -677,7 +676,7 @@ function function_cf5be182() {
     }
     /#
         if (!isdefined(n_slot)) {
-            iprintln("<unknown string>");
+            iprintln("<dev string:x84>");
         }
     #/
 }
@@ -785,7 +784,7 @@ function private on_disconnect() {
     if (self.var_382b64f2 === 1) {
         function_cf5be182();
         /#
-            iprintln("<unknown string>");
+            iprintln("<dev string:xc2>");
         #/
         return;
     }
@@ -845,7 +844,7 @@ function private function_33f0ddd3(s_event) {
 function private function_537cf9cc(w_ray_gun, n_ammo_clip, n_ammo_stock, var_f702cf26) {
     function_b308d26b(w_ray_gun, n_ammo_clip, n_ammo_stock, var_f702cf26);
     /#
-        iprintln(getweaponname(w_ray_gun) + "<unknown string>");
+        iprintln(getweaponname(w_ray_gun) + "<dev string:xd7>");
     #/
 }
 

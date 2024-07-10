@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace wz_holiday;
 
 // Namespace wz_holiday/wz_holiday

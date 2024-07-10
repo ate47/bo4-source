@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\teams.gsc;
 #using scripts\core_common\player\player_role.gsc;
 #using scripts\core_common\system_shared.gsc;

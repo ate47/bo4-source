@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace zm_white_fx;
 
 // Namespace zm_white_fx/zm_white_fx

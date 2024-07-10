@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;
 #using scripts\zm_common\zm_trial.gsc;
@@ -116,10 +115,10 @@ function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9,
         }
     }
     /#
-        assert(isdefined(level.var_ab9d0ec6), "<unknown string>");
+        assert(isdefined(level.var_ab9d0ec6), "<dev string:x38>");
         foreach (weapon in level.var_ab9d0ec6) {
-            assert(isdefined(weapon), "<unknown string>");
-            assert(weapon != level.weaponnone, "<unknown string>");
+            assert(isdefined(weapon), "<dev string:x66>");
+            assert(weapon != level.weaponnone, "<dev string:x9e>");
         }
     #/
     if (isdefined(self.var_eaa7f0ba) && self.var_eaa7f0ba) {

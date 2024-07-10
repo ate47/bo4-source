@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace flowgraph_spawn;
 
 // Namespace flowgraph_spawn/flowgraph_spawn

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\shoutcaster.csc;
 #using scripts\core_common\animation_shared.csc;
 #using scripts\core_common\postfx_shared.csc;

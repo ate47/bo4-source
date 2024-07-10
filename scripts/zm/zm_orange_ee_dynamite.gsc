@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_challenges.gsc;
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_hms_util.gsc;
@@ -231,7 +230,7 @@ function function_8427e524() {
     self playloopsound(#"hash_494dd6f60ab1e3a8");
     self thread function_e58f823f();
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x38>");
     #/
     self waittill(#"death");
     if (isdefined(self)) {
@@ -411,15 +410,15 @@ function function_2e1427a3() {
     playsoundatposition(#"hash_34d44148875755b0", e_bomb.origin);
     e_bomb playloopsound(#"hash_3e8cb0a639b5a355");
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x53>");
     #/
     wait(1);
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x53>");
     #/
     wait(1);
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x53>");
     #/
     wait(1);
     e_bomb clientfield::increment("" + #"dynamite_explosion_fx", 1);

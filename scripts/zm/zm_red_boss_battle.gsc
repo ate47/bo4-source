@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_hand_ouranos.gsc;
 #using scripts\zm\weapons\zm_weap_hand_hemera.gsc;
 #using scripts\zm\weapons\zm_weap_hand_gaia.gsc;
@@ -139,19 +138,19 @@ function init() {
             setdvar(#"hash_16d0c8f49c9e0090", 0);
             setdvar(#"hash_3031043ff4ac0395", 0);
             setdvar(#"hash_68b9a321eca18c32", 0);
-            adddebugcommand("script_string");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x38>");
+            adddebugcommand("<dev string:x9c>");
+            adddebugcommand("<dev string:x104>");
+            adddebugcommand("<dev string:x165>");
+            adddebugcommand("<dev string:x1c7>");
+            adddebugcommand("<dev string:x227>");
+            adddebugcommand("<dev string:x288>");
+            adddebugcommand("<dev string:x2f0>");
             level.s_boss_battle.var_5de58d03 = 0;
             zm_devgui::add_custom_devgui_callback(&function_27486895);
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x35a>");
+            adddebugcommand("<dev string:x3af>");
+            adddebugcommand("<dev string:x403>");
             level thread function_d5a70078();
         }
     #/
@@ -437,7 +436,7 @@ function function_756474bf() {
     level flag::set(#"hash_7be183aa6a4cbe7");
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x45c>");
         }
     #/
     level.s_boss_battle.mdl_perseus function_c7a3202c("zone_boss_plateau_2");
@@ -600,19 +599,19 @@ function private function_9e8c41f4(e_target) {
         self function_c7a3202c(str_target_zone);
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
-                var_701a257e = "<unknown string>";
+                var_701a257e = "<dev string:x48a>";
                 switch (str_target_zone) {
                 case #"zone_boss_plateau_1":
-                    var_701a257e = "<unknown string>";
+                    var_701a257e = "<dev string:x494>";
                     break;
                 case #"zone_boss_plateau_2":
-                    var_701a257e = "<unknown string>";
+                    var_701a257e = "<dev string:x49f>";
                     break;
                 case #"zone_boss_plateau_3":
-                    var_701a257e = "<unknown string>";
+                    var_701a257e = "<dev string:x4a8>";
                     break;
                 }
-                iprintlnbold("<unknown string>" + var_701a257e + "<unknown string>" + (isdefined(e_target) ? e_target.playernum : "<unknown string>"));
+                iprintlnbold("<dev string:x4af>" + var_701a257e + "<dev string:x4c2>" + (isdefined(e_target) ? e_target.playernum : "<dev string:x4d1>"));
             }
         #/
         var_59d19c72 = e_target function_732c74f7(3);
@@ -712,7 +711,7 @@ function function_2858e671(var_c34665fc, e_boss) {
                 var_391b5374 = level.s_boss_battle.var_407b6d64;
             }
             /#
-                iprintlnbold("<unknown string>" + level.s_boss_battle.var_5dc26e42 + "<unknown string>" + var_391b5374);
+                iprintlnbold("<dev string:x4d8>" + level.s_boss_battle.var_5dc26e42 + "<dev string:x4e9>" + var_391b5374);
             #/
             if (level.s_boss_battle.var_5dc26e42 >= var_391b5374) {
                 level flag::set(#"hash_6dab61ca45a8eaea");
@@ -781,18 +780,18 @@ function function_12f4c281(s_waitresult, w_weapon, e_boss) {
             if (isdefined(var_b162218f) && var_b162218f) {
                 n_base_damage = 100;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x4f0>";
                 #/
             } else if (isdefined(var_7bf2d9c0) && var_7bf2d9c0) {
                 n_base_damage = 25;
                 var_e635b6cb = 0;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x500>";
                 #/
             } else {
                 n_base_damage = 50;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x510>";
                 #/
             }
         }
@@ -803,7 +802,7 @@ function function_12f4c281(s_waitresult, w_weapon, e_boss) {
                 n_base_damage = 25;
                 var_e635b6cb = 0;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x520>";
                 #/
             }
         } else if (str_notify === "damage") {
@@ -811,12 +810,12 @@ function function_12f4c281(s_waitresult, w_weapon, e_boss) {
                 n_base_damage = 50;
                 var_e635b6cb = 0;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x52f>";
                 #/
             } else {
                 n_base_damage = 150;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x540>";
                 #/
             }
         }
@@ -827,18 +826,18 @@ function function_12f4c281(s_waitresult, w_weapon, e_boss) {
                 n_base_damage = 6;
                 var_e635b6cb = 0;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x550>";
                 #/
             } else if (isdefined(var_b7f8cbd8) && var_b7f8cbd8) {
                 n_base_damage = 80;
                 var_e635b6cb = 0;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x55f>";
                 #/
             } else {
                 n_base_damage = 100;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x572>";
                 #/
             }
         }
@@ -848,19 +847,19 @@ function function_12f4c281(s_waitresult, w_weapon, e_boss) {
             if (isdefined(var_99f536ed) && var_99f536ed) {
                 n_base_damage = 100;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x581>";
                 #/
             }
         } else if (str_notify === "damage") {
             if (isdefined(var_b46b719c) && var_b46b719c) {
                 n_base_damage = 900;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x58f>";
                 #/
             } else {
                 n_base_damage = 100;
                 /#
-                    str_damage_type = "<unknown string>";
+                    str_damage_type = "<dev string:x59c>";
                 #/
             }
         }
@@ -868,7 +867,7 @@ function function_12f4c281(s_waitresult, w_weapon, e_boss) {
     default:
         n_base_damage = 100;
         /#
-            str_damage_type = "<unknown string>";
+            str_damage_type = "<dev string:x5aa>";
         #/
         break;
     }
@@ -883,7 +882,7 @@ function function_12f4c281(s_waitresult, w_weapon, e_boss) {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (isdefined(str_damage_type)) {
-                iprintlnbold(str_damage_type + "<unknown string>" + n_base_damage + var_e635b6cb);
+                iprintlnbold(str_damage_type + "<dev string:x5b5>" + n_base_damage + var_e635b6cb);
             }
             if (!isdefined(level.s_boss_battle.var_5015427)) {
                 level.s_boss_battle.var_5015427 = [];
@@ -1136,7 +1135,7 @@ function function_1ce83bec() {
         level.s_boss_battle.var_36f0e240 = 0;
     } else {
         /#
-            iprintlnbold("<unknown string>" + level.s_boss_battle.var_36f0e240);
+            iprintlnbold("<dev string:x5c0>" + level.s_boss_battle.var_36f0e240);
         #/
         self scene::play(#"aib_vign_cust_zm_red_boss2_atk_01", "atk_end");
     }
@@ -1264,14 +1263,14 @@ function function_21ef9bb7(a_ents) {
             e_boss = self.scene_ents[#"pegasus"];
             var_653b9351 = 1;
             /#
-                str_boss = "<unknown string>";
+                str_boss = "<dev string:x5d4>";
             #/
             e_boss thread function_8e7ffff8();
         } else if (isinarray(a_keys, #"boss_1")) {
             e_boss = self.scene_ents[#"boss_1"];
             var_653b9351 = 0;
             /#
-                str_boss = "<unknown string>";
+                str_boss = "<dev string:x5de>";
             #/
         }
     }
@@ -1311,7 +1310,7 @@ function function_21ef9bb7(a_ents) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
                 if (var_653b9351 || !var_653b9351 && !(isdefined(e_boss.var_c3505998) && e_boss.var_c3505998)) {
-                    iprintlnbold(str_boss + "<unknown string>" + s_waitresult.amount + "<unknown string>");
+                    iprintlnbold(str_boss + "<dev string:x5e8>" + s_waitresult.amount + "<dev string:x5f2>");
                 }
             }
         #/
@@ -1365,7 +1364,7 @@ function function_d9802986() {
     } else {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>" + (isdefined(e_target) ? e_target.playernum : "<unknown string>") + "<unknown string>");
+                iprintlnbold("<dev string:x5fc>" + (isdefined(e_target) ? e_target.playernum : "<dev string:x4d1>") + "<dev string:x610>");
             }
         #/
     }
@@ -1386,7 +1385,7 @@ function private function_732c74f7(n_max_time) {
             if (n_time > n_max_time) {
                 /#
                     if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>" + n_max_time);
+                        iprintlnbold("<dev string:x632>" + n_max_time);
                     }
                 #/
                 return;
@@ -1525,7 +1524,7 @@ function function_290d42b8(b_skipped = 0) {
     level.s_boss_battle.mdl_perseus.var_c164e6c7 = 3;
     level.s_boss_battle.n_stage = 3;
     /#
-        iprintlnbold("<unknown string>" + level.s_boss_battle.n_stage + "<unknown string>");
+        iprintlnbold("<dev string:x664>" + level.s_boss_battle.n_stage + "<dev string:x66c>");
     #/
     level thread function_14833fc2();
     if (level.activeplayers.size == 4) {
@@ -1802,7 +1801,7 @@ function private function_54c795f6() {
     if (level flag::get(#"hash_59553ef93adcfe51")) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x677>");
             }
         #/
         level flag::wait_till_clear(#"hash_59553ef93adcfe51");
@@ -1845,7 +1844,7 @@ function function_79611ef0(n_island) {
     function_54c795f6();
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
-            iprintlnbold("<unknown string>" + (n_island == 1 ? "<unknown string>" : "<unknown string>") + "<unknown string>");
+            iprintlnbold("<dev string:x4af>" + (n_island == 1 ? "<dev string:x6ac>" : "<dev string:x494>") + "<dev string:x6b5>");
         }
     #/
     e_perseus function_c7a3202c(var_6a56e928);
@@ -2003,7 +2002,7 @@ function private function_c7a3202c(str_target_zone) {
     if (!var_d1ac344a) {
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x6cd>");
             }
         #/
         return false;
@@ -2432,11 +2431,11 @@ function cleanup_zombie() {
     // Checksum 0x129f9b54, Offset: 0xaae8
     // Size: 0x88
     function function_213d02bd() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x6e4>");
+        self endon("<dev string:x6e4>");
         self endon(#"death");
         while (true) {
-            print3d(self.origin, "<unknown string>" + self.health, (1, 1, 0), 1, 2, 3);
+            print3d(self.origin, "<dev string:x6f7>" + self.health, (1, 1, 0), 1, 2, 3);
             wait(0.1);
         }
     }
@@ -2446,8 +2445,8 @@ function cleanup_zombie() {
     // Checksum 0x644160b6, Offset: 0xab78
     // Size: 0x28a
     function function_99f0123d() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x6fe>");
+        self endon("<dev string:x6fe>");
         level endon(#"hash_72be9b4e52b943b");
         while (true) {
             foreach (n_index, e_player in util::get_active_players(#"allies")) {
@@ -2462,9 +2461,9 @@ function cleanup_zombie() {
                     n_total_damage = 0;
                 }
                 if (!isdefined(str_hero_weapon)) {
-                    str_hero_weapon = "<unknown string>";
+                    str_hero_weapon = "<dev string:x48a>";
                 }
-                debug2dtext((120, n_y_pos, 0), "<unknown string>" + n_index + "<unknown string>", (1, 1, 0), 1, (0, 0, 0), 0.4, 1, 2);
+                debug2dtext((120, n_y_pos, 0), "<dev string:x711>" + n_index + "<dev string:x71a>", (1, 1, 0), 1, (0, 0, 0), 0.4, 1, 2);
                 debug2dtext((120 + 100, n_y_pos, 0), str_hero_weapon, (1, 1, 1), 1, (0, 0, 0), 0.4, 1, 2);
                 debug2dtext((120 + 240, n_y_pos, 0), n_total_damage, (1, 0, 0), 1, (0, 0, 0), 0.4, 1, 2);
             }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_760b801e43fe3017;
 #using scripts\zm_common\trials\zm_trial_timed_round.gsc;
 #using scripts\zm_common\trials\zm_trial_shoot_from_location.gsc;

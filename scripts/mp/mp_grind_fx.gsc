@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_grind_fx;
 
 // Namespace mp_grind_fx/mp_grind_fx

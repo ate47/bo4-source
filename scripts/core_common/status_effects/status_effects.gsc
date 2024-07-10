@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -67,13 +66,13 @@ function on_end_game() {
     // Checksum 0xca7499a4, Offset: 0x248
     // Size: 0xe4
     function status_effects_init() {
-        setdvar(#"scr_status_effects_devgui_cmd", "<unknown string>");
+        setdvar(#"scr_status_effects_devgui_cmd", "<dev string:x38>");
         setdvar(#"scr_status_effects_devgui_arg", 0);
         setdvar(#"scr_status_effects_devgui_player", 0);
         if (isdedicated()) {
             return;
         }
-        level.status_effects_devgui_base = "<unknown string>";
+        level.status_effects_devgui_base = "<dev string:x3b>";
         level.status_effects_devgui_player_connect = &status_effects_devgui_player_connect;
         level.status_effects_devgui_player_disconnect = &status_effects_devgui_player_disconnect;
         level thread status_effects_devgui_think();
@@ -87,7 +86,7 @@ function on_end_game() {
         if (!isdefined(level.status_effects_devgui_base)) {
             return;
         }
-        remove_cmd_with_root = "<unknown string>" + level.status_effects_devgui_base + self.playername + "<unknown string>";
+        remove_cmd_with_root = "<dev string:x56>" + level.status_effects_devgui_base + self.playername + "<dev string:x67>";
         util::add_queued_debug_command(remove_cmd_with_root);
     }
 
@@ -116,9 +115,9 @@ function on_end_game() {
     // Checksum 0x6c7c695, Offset: 0x4b0
     // Size: 0x8c
     function function_2a302935(root, pname, index) {
-        add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
-        pid = "<unknown string>" + index;
-        status_effects_devgui_add_player_command(add_cmd_with_root, pid, "<unknown string>", "<unknown string>", undefined);
+        add_cmd_with_root = "<dev string:x6d>" + root + pname + "<dev string:x7b>";
+        pid = "<dev string:x38>" + index;
+        status_effects_devgui_add_player_command(add_cmd_with_root, pid, "<dev string:x7f>", "<dev string:x95>", undefined);
     }
 
     // Namespace status_effect/status_effects
@@ -126,15 +125,15 @@ function on_end_game() {
     // Checksum 0xef073c36, Offset: 0x548
     // Size: 0x11e
     function status_effects_devgui_add_player_status_effects(root, pname, index) {
-        add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
-        pid = "<unknown string>" + index;
+        add_cmd_with_root = "<dev string:x6d>" + root + pname + "<dev string:xa1>";
+        pid = "<dev string:x38>" + index;
         if (isdefined(level.var_233471d2)) {
             for (i = 0; i < level.var_233471d2.size; i++) {
                 if (!isdefined(level.var_233471d2[i])) {
-                    println("<unknown string>" + i);
+                    println("<dev string:xb4>" + i);
                 }
                 if (isdefined(level.var_233471d2[i].var_18d16a6b)) {
-                    status_effects_devgui_add_player_command(add_cmd_with_root, pid, level.var_233471d2[i].var_18d16a6b, "<unknown string>", i);
+                    status_effects_devgui_add_player_command(add_cmd_with_root, pid, level.var_233471d2[i].var_18d16a6b, "<dev string:x133>", i);
                 }
             }
         }
@@ -145,16 +144,16 @@ function on_end_game() {
     // Checksum 0xe255fb99, Offset: 0x670
     // Size: 0x136
     function status_effects_devgui_add_player_grenades(root, pname, index) {
-        add_cmd_with_root = "<unknown string>" + root + pname + "<unknown string>";
-        pid = "<unknown string>" + index;
+        add_cmd_with_root = "<dev string:x6d>" + root + pname + "<dev string:x140>";
+        pid = "<dev string:x38>" + index;
         if (isdefined(level.var_233471d2)) {
             for (i = 0; i < level.var_233471d2.size; i++) {
                 if (!isdefined(level.var_233471d2[i])) {
-                    println("<unknown string>" + i);
+                    println("<dev string:x153>" + i);
                 }
                 if (isdefined(level.var_233471d2[i].var_18d16a6b)) {
-                    grenade = "<unknown string>" + level.var_233471d2[i].var_18d16a6b;
-                    status_effects_devgui_add_player_command(add_cmd_with_root, pid, grenade, "<unknown string>", grenade);
+                    grenade = "<dev string:x1da>" + level.var_233471d2[i].var_18d16a6b;
+                    status_effects_devgui_add_player_command(add_cmd_with_root, pid, grenade, "<dev string:x1f3>", grenade);
                 }
             }
         }
@@ -166,9 +165,9 @@ function on_end_game() {
     // Size: 0xc4
     function status_effects_devgui_add_player_command(root, pid, cmdname, cmddvar, argdvar) {
         if (!isdefined(argdvar)) {
-            argdvar = "<unknown string>";
+            argdvar = "<dev string:x202>";
         }
-        adddebugcommand(root + cmdname + "<unknown string>" + "<unknown string>" + "<unknown string>" + pid + "<unknown string>" + "<unknown string>" + "<unknown string>" + cmddvar + "<unknown string>" + "<unknown string>" + "<unknown string>" + argdvar + "<unknown string>");
+        adddebugcommand(root + cmdname + "<dev string:x20c>" + "<dev string:x216>" + "<dev string:x239>" + pid + "<dev string:x23d>" + "<dev string:x245>" + "<dev string:x239>" + cmddvar + "<dev string:x23d>" + "<dev string:x265>" + "<dev string:x239>" + argdvar + "<dev string:x67>");
     }
 
     // Namespace status_effect/status_effects
@@ -178,7 +177,7 @@ function on_end_game() {
     function status_effects_devgui_think() {
         for (;;) {
             cmd = getdvarstring(#"scr_status_effects_devgui_cmd");
-            if (cmd == "<unknown string>") {
+            if (cmd == "<dev string:x38>") {
                 waitframe(1);
                 continue;
             }
@@ -195,8 +194,8 @@ function on_end_game() {
             default:
                 break;
             }
-            setdvar(#"scr_status_effects_devgui_cmd", "<unknown string>");
-            setdvar(#"scr_status_effects_devgui_arg", "<unknown string>");
+            setdvar(#"scr_status_effects_devgui_cmd", "<dev string:x38>");
+            setdvar(#"scr_status_effects_devgui_arg", "<dev string:x38>");
             wait(0.5);
         }
     }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_loadout.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -252,7 +251,7 @@ function hide_owner(owner) {
     }
     self thread show_owner_on_attack(owner);
     evt = self waittill(#"explode", #"death", #"grenade_dud");
-    println("<unknown string>" + evt._notify);
+    println("<dev string:x38>" + evt._notify);
     owner notify(#"show_owner");
     owner unsetperk("specialty_immunemms");
     if (isdefined(level._effect[#"human_disappears"])) {

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\acid_bomb.csc;
 #using scripts\mp_common\vehicle.csc;
 #using scripts\mp_common\callbacks.csc;
@@ -53,7 +52,7 @@ function set_default_callbacks() {
 // Checksum 0x20133d28, Offset: 0x2f8
 // Size: 0x7c
 function localclientconnect(localclientnum) {
-    println("<unknown string>" + localclientnum);
+    println("<dev string:x38>" + localclientnum);
     if (isdefined(level.charactercustomizationsetup)) {
         [[ level.charactercustomizationsetup ]](localclientnum);
     }
@@ -115,7 +114,7 @@ function entityspawned(localclientnum) {
         return;
     }
     if (!isdefined(self.type)) {
-        println("<unknown string>");
+        println("<dev string:x67>");
         return;
     }
     if (self.type == "missile") {
@@ -215,8 +214,8 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         teamfaction = #"russian";
         break;
     default:
-        println("<unknown string>");
-        println("<unknown string>" + teamfaction + "<unknown string>");
+        println("<dev string:x80>");
+        println("<dev string:xbc>" + teamfaction + "<dev string:xd5>");
         teamfaction = #"marines";
         break;
     }
@@ -231,7 +230,7 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         team = #"free";
         break;
     default:
-        println("<unknown string>" + team + "<unknown string>");
+        println("<dev string:xd9>" + team + "<dev string:xd5>");
         team = #"allies";
         break;
     }
@@ -274,10 +273,10 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         return;
     }
     /#
-        println("<unknown string>");
-        println("<unknown string>");
+        println("<dev string:x10e>");
+        println("<dev string:x111>");
         println(type);
-        println("<unknown string>");
+        println("<dev string:x10e>");
     #/
     return;
 }
@@ -301,7 +300,7 @@ function creating_corpse(localclientnum, player) {
 // Size: 0xbc
 function callback_stunned(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self.stunned = newval;
-    println("<unknown string>");
+    println("<dev string:x15a>");
     if (newval) {
         self notify(#"stunned");
     } else {
@@ -318,7 +317,7 @@ function callback_stunned(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Size: 0x96
 function callback_emp(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self.emp = newval;
-    println("<unknown string>");
+    println("<dev string:x16d>");
     if (newval) {
         self notify(#"emp");
         return;

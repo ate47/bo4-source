@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm\ai\zm_ai_nosferatu.gsc;
 #using scripts\zm\zm_mansion_special_rounds.gsc;
@@ -324,7 +323,7 @@ function function_941b297c(var_22c00989) {
     mdl_powerup = zm_powerups::specific_powerup_drop("bonus_points_player", self.var_872e2994.origin, undefined, undefined, undefined, 1);
     /#
         if (!isdefined(mdl_powerup)) {
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:x38>");
         }
     #/
 }
@@ -347,7 +346,7 @@ function function_94a403a4(var_1c855a0d) {
         var_47323b73.w_reward = getweapon(var_1c855a0d);
         return;
     }
-    assert(0, "<unknown string>");
+    assert(0, "<dev string:x6b>");
 }
 
 // Namespace mansion_storage/zm_mansion_storage
@@ -661,7 +660,7 @@ function function_cf048af(oldval, newval) {
             if (level.var_e967a159 == 8) {
                 level.var_f3047a76 = 1;
                 /#
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:xa6>");
                 #/
             }
         }
@@ -678,7 +677,7 @@ function function_cf048af(oldval, newval) {
         return;
     }
     /#
-        iprintln("<unknown string>" + var_52fa3cae + "<unknown string>");
+        iprintln("<dev string:xc2>" + var_52fa3cae + "<dev string:xca>");
     #/
 }
 
@@ -708,7 +707,7 @@ function function_35ab22f4() {
         level endon(#"hash_4207012c64662b4d");
         while (true) {
             if (getdvarint(#"hash_3dcf262f16faced0", 0)) {
-                print3d((-1440, -580, 120), "<unknown string>" + level.var_e967a159, (1, 1, 1), 1, 1, 6);
+                print3d((-1440, -580, 120), "<dev string:xe0>" + level.var_e967a159, (1, 1, 1), 1, 1, 6);
             }
             wait(0.1);
         }
@@ -995,7 +994,7 @@ function function_63c873d9(var_dc2ad9ce) {
 function function_840d0d56() {
     self endon(#"hash_239e896260dae2d8");
     var_e699d494 = zm_zonemgr::get_zone_from_position(self.origin, 1);
-    assert(isdefined(var_e699d494), "<unknown string>" + self.origin);
+    assert(isdefined(var_e699d494), "<dev string:xea>" + self.origin);
     var_8259b1e9 = zm_cleanup::get_adjacencies_to_zone(var_e699d494);
     while (true) {
         n_players_in_zone = 0;
@@ -1004,7 +1003,7 @@ function function_840d0d56() {
         }
         if (!n_players_in_zone) {
             /#
-                iprintln("<unknown string>" + var_e699d494);
+                iprintln("<dev string:x113>" + var_e699d494);
             #/
             self notify(#"hash_2dd745b383eb50c8");
             return;

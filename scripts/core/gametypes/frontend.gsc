@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\scene_shared.gsc;
 #using scripts\core_common\spawner_shared.gsc;
@@ -69,7 +68,7 @@ function callback_playerconnect() {
         for (row_num = 2; row_num < num_rows; row_num++) {
             challenge_name = tablelookupcolumnforrow(#"gamedata/stats/zm/statsmilestones4.csv", row_num, 5);
             display_row_num = row_num - 2;
-            devgui_string = "<unknown string>" + "<unknown string>" + (display_row_num > 10 ? display_row_num : "<unknown string>" + display_row_num) + "<unknown string>" + function_9e72a96(challenge_name) + "<unknown string>" + row_num + "<unknown string>";
+            devgui_string = "<dev string:x38>" + "<dev string:x47>" + (display_row_num > 10 ? display_row_num : "<dev string:x5e>" + display_row_num) + "<dev string:x62>" + function_9e72a96(challenge_name) + "<dev string:x66>" + row_num + "<dev string:x80>";
             adddebugcommand(devgui_string);
         }
     }
@@ -79,8 +78,8 @@ function callback_playerconnect() {
     // Checksum 0x71243cfb, Offset: 0x400
     // Size: 0x4c
     function function_83f052f2() {
-        setdvar(#"ct_cmd", "<unknown string>");
-        adddebugcommand("<unknown string>");
+        setdvar(#"ct_cmd", "<dev string:x86>");
+        adddebugcommand("<dev string:x89>");
     }
 
     // Namespace frontend/frontend
@@ -90,16 +89,16 @@ function callback_playerconnect() {
     function function_5f1dd5aa() {
         self endon(#"disconnect");
         while (true) {
-            ct_cmd = getdvarstring(#"ct_cmd", "<unknown string>");
-            if (ct_cmd == "<unknown string>") {
+            ct_cmd = getdvarstring(#"ct_cmd", "<dev string:x86>");
+            if (ct_cmd == "<dev string:x86>") {
                 wait(0.25);
                 continue;
             }
-            if (ct_cmd == "<unknown string>") {
+            if (ct_cmd == "<dev string:xe5>") {
                 unlocked = getdvar(#"ui_unlock_all_ct", 0);
                 setdvar(#"ui_unlock_all_ct", !unlocked);
             }
-            setdvar(#"ct_cmd", "<unknown string>");
+            setdvar(#"ct_cmd", "<dev string:x86>");
         }
     }
 
@@ -118,9 +117,9 @@ function callback_playerconnect() {
             daily_challenge_row = daily_challenge_cmd;
             daily_challenge_index = tablelookupcolumnforrow(#"gamedata/stats/zm/statsmilestones4.csv", daily_challenge_row, 0);
             daily_challenge_stat = tablelookupcolumnforrow(#"gamedata/stats/zm/statsmilestones4.csv", daily_challenge_row, 4);
-            adddebugcommand("<unknown string>" + daily_challenge_stat + "<unknown string>" + "<unknown string>");
-            adddebugcommand("<unknown string>" + daily_challenge_index + "<unknown string>");
-            adddebugcommand("<unknown string>" + "<unknown string>");
+            adddebugcommand("<dev string:xfc>" + daily_challenge_stat + "<dev string:x11c>" + "<dev string:x130>");
+            adddebugcommand("<dev string:x135>" + daily_challenge_index + "<dev string:x130>");
+            adddebugcommand("<dev string:x17a>" + "<dev string:x130>");
             setdvar(#"daily_challenge_cmd", 0);
         }
     }
@@ -130,12 +129,12 @@ function callback_playerconnect() {
     // Checksum 0x910a666d, Offset: 0x6f8
     // Size: 0x3dc
     function function_27d2e95a() {
-        level.var_314051a1 = getscriptbundle("<unknown string>");
+        level.var_314051a1 = getscriptbundle("<dev string:x1c2>");
         if (!isdefined(level.var_314051a1)) {
             return;
         }
-        setdvar(#"callings_cmd", "<unknown string>");
-        adddebugcommand("<unknown string>");
+        setdvar(#"callings_cmd", "<dev string:x86>");
+        adddebugcommand("<dev string:x1d9>");
         for (seasonid = 1; seasonid <= level.var_314051a1.size; seasonid++) {
             for (var_d49657fd = 0; var_d49657fd < 4; var_d49657fd++) {
                 faction = getscriptbundle(level.var_314051a1.factionlist[var_d49657fd].faction);
@@ -143,20 +142,20 @@ function callback_playerconnect() {
                 var_662e72f3 = array(0, 1, 3, 6, 12);
                 counter = 1;
                 foreach (tokens in var_662e72f3) {
-                    var_3430f147 = "<unknown string>" + seasonid + "<unknown string>" + var_d49657fd + "<unknown string>" + tokens;
-                    devgui_string = "<unknown string>" + seasonid + "<unknown string>" + factionname + "<unknown string>" + tokens + "<unknown string>" + (tokens != 1 ? "<unknown string>" : "<unknown string>") + "<unknown string>" + counter + "<unknown string>" + var_3430f147 + "<unknown string>";
+                    var_3430f147 = "<dev string:x22d>" + seasonid + "<dev string:x23c>" + var_d49657fd + "<dev string:x23c>" + tokens;
+                    devgui_string = "<dev string:x240>" + seasonid + "<dev string:x275>" + factionname + "<dev string:x27a>" + tokens + "<dev string:x27e>" + (tokens != 1 ? "<dev string:x287>" : "<dev string:x86>") + "<dev string:x28b>" + counter + "<dev string:x28f>" + var_3430f147 + "<dev string:x2a2>";
                     adddebugcommand(devgui_string);
                     counter++;
                 }
                 counter = 1;
                 for (var_cab404b1 = 0; var_cab404b1 <= 12; var_cab404b1++) {
-                    var_f6c57b = "<unknown string>" + seasonid + "<unknown string>" + var_d49657fd + "<unknown string>" + var_cab404b1;
-                    devgui_string = "<unknown string>" + seasonid + "<unknown string>" + factionname + "<unknown string>" + var_cab404b1 + "<unknown string>" + counter + "<unknown string>" + var_f6c57b + "<unknown string>";
+                    var_f6c57b = "<dev string:x2a7>" + seasonid + "<dev string:x23c>" + var_d49657fd + "<dev string:x23c>" + var_cab404b1;
+                    devgui_string = "<dev string:x2bd>" + seasonid + "<dev string:x275>" + factionname + "<dev string:x2fa>" + var_cab404b1 + "<dev string:x28b>" + counter + "<dev string:x28f>" + var_f6c57b + "<dev string:x2a2>";
                     adddebugcommand(devgui_string);
                     counter++;
                 }
             }
-            adddebugcommand("<unknown string>" + seasonid + "<unknown string>" + seasonid + "<unknown string>" + seasonid + "<unknown string>");
+            adddebugcommand("<dev string:x303>" + seasonid + "<dev string:x28b>" + seasonid + "<dev string:x33b>" + seasonid + "<dev string:x2a2>");
             seasonid++;
         }
     }
@@ -170,11 +169,11 @@ function callback_playerconnect() {
         if (vararg.size <= 1) {
             return;
         }
-        cmd = "<unknown string>";
+        cmd = "<dev string:x35c>";
         for (i = 0; i < vararg.size; i++) {
-            cmd += vararg[i] + "<unknown string>";
+            cmd += vararg[i] + "<dev string:x62>";
         }
-        cmd += "<unknown string>";
+        cmd += "<dev string:x36c>";
         adddebugcommand(cmd);
     }
 
@@ -183,17 +182,17 @@ function callback_playerconnect() {
     // Checksum 0x869f78f9, Offset: 0xbb0
     // Size: 0x212
     function function_c209f336(seasonid) {
-        function_1c289498("<unknown string>", seasonid - 1, "<unknown string>");
-        function_1c289498("<unknown string>", seasonid - 1, "<unknown string>");
-        function_1c289498("<unknown string>", seasonid - 1, "<unknown string>");
-        function_1c289498("<unknown string>", seasonid - 1, "<unknown string>");
+        function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x388>");
+        function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x39d>");
+        function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x3b2>");
+        function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x3c7>");
         for (var_d49657fd = 0; var_d49657fd < 4; var_d49657fd++) {
-            function_1c289498("<unknown string>", seasonid - 1, "<unknown string>", var_d49657fd, "<unknown string>");
-            function_1c289498("<unknown string>", seasonid - 1, "<unknown string>", var_d49657fd, "<unknown string>");
-            function_1c289498("<unknown string>", seasonid - 1, "<unknown string>", var_d49657fd, "<unknown string>");
+            function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x3d9>", var_d49657fd, "<dev string:x3e4>");
+            function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x3d9>", var_d49657fd, "<dev string:x3ed>");
+            function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x3d9>", var_d49657fd, "<dev string:x3fe>");
             for (groupid = 0; groupid < 3; groupid++) {
                 for (categoryid = 0; categoryid < 4; categoryid++) {
-                    function_1c289498("<unknown string>", seasonid - 1, "<unknown string>", var_d49657fd, "<unknown string>", groupid, "<unknown string>", categoryid, "<unknown string>");
+                    function_1c289498("<dev string:x371>", seasonid - 1, "<dev string:x3d9>", var_d49657fd, "<dev string:x40b>", groupid, "<dev string:x41d>", categoryid, "<dev string:x430>");
                 }
             }
         }
@@ -207,23 +206,23 @@ function callback_playerconnect() {
                 for (seasonid = 1; seasonid <= level.var_314051a1.size; seasonid++) {
             function_c209f336(seasonid);
         }
-        function_1c289498("<unknown string>", "<unknown string>");
-        function_1c289498("<unknown string>", "<unknown string>");
-        function_1c289498("<unknown string>", "<unknown string>");
-        function_1c289498("<unknown string>", "<unknown string>");
-        function_1c289498("<unknown string>", "<unknown string>");
-        function_1c289498("<unknown string>", "<unknown string>");
-        function_1c289498("<unknown string>", "<unknown string>");
-        function_1c289498("<unknown string>", "<unknown string>");
+        function_1c289498("<dev string:x43c>", "<dev string:x44c>");
+        function_1c289498("<dev string:x43c>", "<dev string:x45a>");
+        function_1c289498("<dev string:x43c>", "<dev string:x468>");
+        function_1c289498("<dev string:x43c>", "<dev string:x480>");
+        function_1c289498("<dev string:x43c>", "<dev string:x490>");
+        function_1c289498("<dev string:x43c>", "<dev string:x49f>");
+        function_1c289498("<dev string:x43c>", "<dev string:x4b4>");
+        function_1c289498("<dev string:x43c>", "<dev string:x4cf>");
         for (i = 0; i < 4; i++) {
-            function_1c289498("<unknown string>", "<unknown string>", i, "<unknown string>");
-            function_1c289498("<unknown string>", "<unknown string>", i, "<unknown string>");
-            function_1c289498("<unknown string>", "<unknown string>", i, "<unknown string>");
-            function_1c289498("<unknown string>", "<unknown string>", i, "<unknown string>");
-            function_1c289498("<unknown string>", "<unknown string>", i, "<unknown string>");
+            function_1c289498("<dev string:x43c>", "<dev string:x4e5>", i, "<dev string:x4f0>");
+            function_1c289498("<dev string:x43c>", "<dev string:x4e5>", i, "<dev string:x4f8>");
+            function_1c289498("<dev string:x43c>", "<dev string:x503>", i, "<dev string:x510>");
+            function_1c289498("<dev string:x43c>", "<dev string:x503>", i, "<dev string:x51a>");
+            function_1c289498("<dev string:x43c>", "<dev string:x503>", i, "<dev string:x4f0>");
         }
         for (var_d49657fd = 0; var_d49657fd < 4; var_d49657fd++) {
-            function_1c289498("<unknown string>", "<unknown string>", var_d49657fd);
+            function_1c289498("<dev string:x43c>", "<dev string:x529>", var_d49657fd);
         }
     }
 
@@ -237,43 +236,43 @@ function callback_playerconnect() {
         }
         level endon(#"game_ended");
         while (true) {
-            callings_cmd = getdvarstring(#"callings_cmd", "<unknown string>");
-            if (callings_cmd == "<unknown string>") {
+            callings_cmd = getdvarstring(#"callings_cmd", "<dev string:x86>");
+            if (callings_cmd == "<dev string:x86>") {
                 wait(0.25);
                 continue;
             }
-            if (callings_cmd == "<unknown string>") {
+            if (callings_cmd == "<dev string:x53c>") {
                 function_87e397ba();
-            } else if (strstartswith(callings_cmd, "<unknown string>")) {
-                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
-                arr = strtok(str, "<unknown string>");
+            } else if (strstartswith(callings_cmd, "<dev string:x22d>")) {
+                str = strreplace(callings_cmd, "<dev string:x22d>", "<dev string:x86>");
+                arr = strtok(str, "<dev string:x23c>");
                 seasonid = arr[0];
                 var_d49657fd = arr[1];
                 tokens = arr[2];
-                statpath = "<unknown string>" + int(seasonid) - 1 + "<unknown string>" + var_d49657fd + "<unknown string>" + tokens;
-                adddebugcommand("<unknown string>" + statpath + "<unknown string>");
-            } else if (strstartswith(callings_cmd, "<unknown string>")) {
-                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
+                statpath = "<dev string:x54e>" + int(seasonid) - 1 + "<dev string:x566>" + var_d49657fd + "<dev string:x573>" + tokens;
+                adddebugcommand("<dev string:x35c>" + statpath + "<dev string:x130>");
+            } else if (strstartswith(callings_cmd, "<dev string:x57e>")) {
+                str = strreplace(callings_cmd, "<dev string:x57e>", "<dev string:x86>");
                 seasonid = int(str);
                 function_c209f336(seasonid);
-            } else if (strstartswith(callings_cmd, "<unknown string>")) {
-                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
-                arr = strtok(str, "<unknown string>");
+            } else if (strstartswith(callings_cmd, "<dev string:x2a7>")) {
+                str = strreplace(callings_cmd, "<dev string:x2a7>", "<dev string:x86>");
+                arr = strtok(str, "<dev string:x23c>");
                 seasonid = arr[0];
                 var_d49657fd = arr[1];
                 tier = arr[2];
-                statpath = "<unknown string>" + int(seasonid) - 1 + "<unknown string>" + var_d49657fd + "<unknown string>" + tier;
-                adddebugcommand("<unknown string>" + statpath + "<unknown string>");
-            } else if (strstartswith(callings_cmd, "<unknown string>")) {
-                str = strreplace(callings_cmd, "<unknown string>", "<unknown string>");
-                arr = strtok(str, "<unknown string>");
+                statpath = "<dev string:x54e>" + int(seasonid) - 1 + "<dev string:x566>" + var_d49657fd + "<dev string:x58f>" + tier;
+                adddebugcommand("<dev string:x35c>" + statpath + "<dev string:x130>");
+            } else if (strstartswith(callings_cmd, "<dev string:x5a2>")) {
+                str = strreplace(callings_cmd, "<dev string:x5a2>", "<dev string:x86>");
+                arr = strtok(str, "<dev string:x23c>");
                 taskid = arr[0];
                 taskid = int(taskid);
                 setdvar(#"zm_active_daily_calling", taskid);
                 setdvar(#"zm_active_event_calling", 0);
                 setdvar(#"hash_acdd08b365cb62f", 1);
             }
-            setdvar(#"callings_cmd", "<unknown string>");
+            setdvar(#"callings_cmd", "<dev string:x86>");
         }
     }
 
@@ -282,8 +281,8 @@ function callback_playerconnect() {
     // Checksum 0xb2b71bbe, Offset: 0x1510
     // Size: 0x6c
     function function_1fcf4d0e(menu_path, commands) {
-        var_c62ccf1 = "<unknown string>";
-        adddebugcommand("<unknown string>" + var_c62ccf1 + menu_path + "<unknown string>" + commands + "<unknown string>");
+        var_c62ccf1 = "<dev string:x5bc>";
+        adddebugcommand("<dev string:x38>" + var_c62ccf1 + menu_path + "<dev string:x5c6>" + commands + "<dev string:x2a2>");
     }
 
     // Namespace frontend/frontend
@@ -291,8 +290,8 @@ function callback_playerconnect() {
     // Checksum 0x48b1748b, Offset: 0x1588
     // Size: 0x54
     function function_8aa5abd4(menu_path) {
-        var_c62ccf1 = "<unknown string>";
-        adddebugcommand("<unknown string>" + var_c62ccf1 + menu_path + "<unknown string>");
+        var_c62ccf1 = "<dev string:x5bc>";
+        adddebugcommand("<dev string:x5cc>" + var_c62ccf1 + menu_path + "<dev string:x2a2>");
     }
 
     // Namespace frontend/frontend
@@ -300,9 +299,9 @@ function callback_playerconnect() {
     // Checksum 0x9c378cfa, Offset: 0x15e8
     // Size: 0xa4
     function function_41cd078d() {
-        function_1fcf4d0e("<unknown string>", "<unknown string>");
-        function_1fcf4d0e("<unknown string>", "<unknown string>" + "<unknown string>" + "<unknown string>");
-        function_1fcf4d0e("<unknown string>", "<unknown string>" + "<unknown string>" + "<unknown string>");
+        function_1fcf4d0e("<dev string:x5de>", "<dev string:x5ea>");
+        function_1fcf4d0e("<dev string:x62e>", "<dev string:x63e>" + "<dev string:x645>" + "<dev string:x65a>");
+        function_1fcf4d0e("<dev string:x66f>", "<dev string:x63e>" + "<dev string:x645>" + "<dev string:x68c>");
         level thread function_e4ea0153();
     }
 
@@ -311,24 +310,24 @@ function callback_playerconnect() {
     // Checksum 0x7ec70624, Offset: 0x1698
     // Size: 0x160
     function function_e4ea0153() {
-        setdvar(#"hash_3319d0fd07c9ead8", "<unknown string>");
+        setdvar(#"hash_3319d0fd07c9ead8", "<dev string:x86>");
         while (true) {
-            var_8c931e31 = getdvarstring(#"hash_3319d0fd07c9ead8", "<unknown string>");
-            if (var_8c931e31 == "<unknown string>") {
+            var_8c931e31 = getdvarstring(#"hash_3319d0fd07c9ead8", "<dev string:x86>");
+            if (var_8c931e31 == "<dev string:x86>") {
                 waitframe(1);
                 continue;
             }
-            if (var_8c931e31 == "<unknown string>") {
+            if (var_8c931e31 == "<dev string:x6ae>") {
                 luinotifyevent(#"aar_clear_rewards");
-            } else if (var_8c931e31 == "<unknown string>") {
+            } else if (var_8c931e31 == "<dev string:x6c2>") {
                 if (!isdefined(level.var_9c7f7c5d)) {
                     level thread function_daf9ea48();
                     level.var_9c7f7c5d = 1;
                 }
-            } else if (var_8c931e31 == "<unknown string>") {
+            } else if (var_8c931e31 == "<dev string:x6e3>") {
                 function_9eac333e();
             }
-            setdvar(#"hash_3319d0fd07c9ead8", "<unknown string>");
+            setdvar(#"hash_3319d0fd07c9ead8", "<dev string:x86>");
             wait(0.25);
         }
     }
@@ -341,25 +340,25 @@ function callback_playerconnect() {
         if (isdefined(level.var_9c7f7c5d) && level.var_60e97f7b) {
             return;
         }
-        function_8aa5abd4("<unknown string>");
-        notif_challenges_devgui_base = "<unknown string>";
+        function_8aa5abd4("<dev string:x66f>");
+        notif_challenges_devgui_base = "<dev string:x6ff>";
         for (i = 1; i <= popups::devgui_notif_getchallengestablecount(); i++) {
             tablename = popups::devgui_notif_getchallengestablename(i);
             rows = tablelookuprowcount(tablename);
             for (j = 1; j < rows; j++) {
                 challengeid = tablelookupcolumnforrow(tablename, j, 0);
-                if (challengeid != "<unknown string>" && strisint(tablelookupcolumnforrow(tablename, j, 0))) {
+                if (challengeid != "<dev string:x86>" && strisint(tablelookupcolumnforrow(tablename, j, 0))) {
                     challengestring = tablelookupcolumnforrow(tablename, j, 5);
                     type = tablelookupcolumnforrow(tablename, j, 3);
                     challengetier = int(tablelookupcolumnforrow(tablename, j, 1));
-                    challengetierstring = "<unknown string>" + challengetier;
+                    challengetierstring = "<dev string:x86>" + challengetier;
                     if (challengetier < 10) {
-                        challengetierstring = "<unknown string>" + challengetier;
+                        challengetierstring = "<dev string:x5e>" + challengetier;
                     }
                     name = tablelookupcolumnforrow(tablename, j, 5);
-                    devgui_cmd_challenge_path = notif_challenges_devgui_base + function_9e72a96(type) + "<unknown string>" + function_9e72a96(name) + "<unknown string>" + challengetierstring + "<unknown string>" + challengeid;
+                    devgui_cmd_challenge_path = notif_challenges_devgui_base + function_9e72a96(type) + "<dev string:x27a>" + function_9e72a96(name) + "<dev string:x27a>" + challengetierstring + "<dev string:x720>" + challengeid;
                     util::waittill_can_add_debug_command();
-                    adddebugcommand(devgui_cmd_challenge_path + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + j + "<unknown string>" + "<unknown string>" + "<unknown string>" + i + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>");
+                    adddebugcommand(devgui_cmd_challenge_path + "<dev string:x728>" + "<dev string:x72d>" + "<dev string:x731>" + "<dev string:x739>" + "<dev string:x62>" + j + "<dev string:x731>" + "<dev string:x751>" + "<dev string:x62>" + i + "<dev string:x731>" + "<dev string:x645>" + "<dev string:x76b>" + "<dev string:x80>");
                     if (int(challengeid) % 10) {
                         waitframe(1);
                     }

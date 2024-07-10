@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreak_bundles.csc;
 #using scripts\killstreaks\flak_drone.csc;
 #using scripts\core_common\vehicle_shared.csc;
@@ -233,7 +232,7 @@ function startfx(localclientnum) {
             self.exhaustrightfxhandle = util::playfxontag(localclientnum, self.exhaustfx, self, "tag_engine_right");
         }
     } else {
-        println("<unknown string>");
+        println("<dev string:x38>");
     }
     if (isdefined(self.vehicletype)) {
         light_fx = undefined;

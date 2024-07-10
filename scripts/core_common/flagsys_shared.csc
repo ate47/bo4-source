@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 
 #namespace flagsys;
@@ -43,7 +42,7 @@ function clear(str_flag) {
 // Checksum 0xe45cb388, Offset: 0x1c0
 // Size: 0x6c
 function set_val(str_flag, b_val) {
-    assert(isdefined(b_val), "<unknown string>");
+    assert(isdefined(b_val), "<dev string:x38>");
     if (b_val) {
         set(str_flag);
         return;

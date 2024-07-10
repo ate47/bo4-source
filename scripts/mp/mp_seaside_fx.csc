@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_seaside_fx;
 
 // Namespace mp_seaside_fx/mp_seaside_fx

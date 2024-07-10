@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_challenges.gsc;
 #using scripts\zm\zm_orange_mq_hell.gsc;
 #using scripts\zm\zm_orange_lighthouse.gsc;
@@ -188,8 +187,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x38>");
+                println("<dev string:x38>");
             }
         }
     #/
@@ -214,8 +213,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x56>");
+                println("<dev string:x56>");
             }
         }
     #/
@@ -223,8 +222,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x67>");
+                println("<dev string:x67>");
             }
         }
     #/
@@ -232,8 +231,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x78>");
+                println("<dev string:x78>");
             }
         }
     #/
@@ -241,8 +240,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x89>");
+                println("<dev string:x89>");
             }
         }
     #/
@@ -250,8 +249,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:x9a>");
+                println("<dev string:x9a>");
             }
         }
     #/
@@ -269,8 +268,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xab>");
+                println("<dev string:xab>");
             }
         }
     #/
@@ -279,8 +278,8 @@ function private defend_event() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xc7>");
+                println("<dev string:xc7>");
             }
         }
     #/
@@ -376,8 +375,8 @@ function function_dc380897() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>");
-                println("<unknown string>");
+                iprintlnbold("<dev string:xdb>");
+                println("<dev string:xdb>");
             }
         }
     #/

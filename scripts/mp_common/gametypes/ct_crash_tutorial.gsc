@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\ability_player.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\killstreaks\ai_tank_shared.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\bots\bot.gsc;
 #using scripts\core_common\bots\bot_traversals.gsc;
 #using scripts\zm_common\gametypes\hostmigration.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_mountain2_scripted.gsc;
 #using scripts\core_common\exploder_shared.gsc;
 #using scripts\core_common\struct.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.csc;
 #using scripts\zm_common\zm_wallbuy.csc;
 #using scripts\zm_common\zm_utility.csc;
@@ -124,7 +123,7 @@ function function_eb218e8d() {
         while (true) {
             if (getdvarint(#"hash_3dcf262f16faced0", 0)) {
                 v_color = function_8a8a409b(self) ? (0, 1, 0) : (1, 0, 0);
-                print3d(self.origin + (0, 0, self.script_int), "<unknown string>" + self.script_int, v_color, undefined, 0.5);
+                print3d(self.origin + (0, 0, self.script_int), "<dev string:x38>" + self.script_int, v_color, undefined, 0.5);
                 line(self.origin, self.origin + anglestoforward(self.angles) * 15, (1, 0, 0));
                 line(self.origin, self.origin + anglestoright(self.angles) * 15, (0, 1, 0));
                 line(self.origin, self.origin + anglestoup(self.angles) * 15, (0, 0, 1));

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\userspawnselection.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
@@ -70,7 +69,7 @@ function private function_788fb510(value) {
 }
 
 // Namespace gametype/gametype
-// Params a, eflags: 0x0
+// Params 10, eflags: 0x0
 // Checksum 0x704f31f2, Offset: 0x378
 // Size: 0x1ec
 function setvisiblescoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, col8, col9, col10) {

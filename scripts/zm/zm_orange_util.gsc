@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_hms_util.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -436,10 +435,10 @@ function function_3d6809e9() {
 // Checksum 0x3e4efeaa, Offset: 0x1d58
 // Size: 0x110
 function function_8a7521db(str) {
-    assert(isdefined(str), "<unknown string>");
+    assert(isdefined(str), "<dev string:x38>");
     var_58c9b9cc = struct::get_array(str, "targetname");
     foreach (var_3bb6cef5 in var_58c9b9cc) {
-        assert(isdefined(var_3bb6cef5.open_anim), "<unknown string>");
+        assert(isdefined(var_3bb6cef5.open_anim), "<dev string:x63>");
         var_3bb6cef5 thread scene::play(var_3bb6cef5.open_anim);
     }
 }

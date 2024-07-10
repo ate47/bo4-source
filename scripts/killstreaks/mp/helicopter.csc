@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\struct.csc;
@@ -243,7 +242,7 @@ function startfx(localclientnum) {
             self.exhaustrightfxhandle = util::playfxontag(localclientnum, self.exhaustfx, self, "tag_engine_right");
         }
     } else {
-        println("<unknown string>");
+        println("<dev string:x38>");
     }
     if (isdefined(self.vehicletype)) {
         light_fx = undefined;

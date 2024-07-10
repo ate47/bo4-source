@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\player\player_loadout.gsc;
 #using scripts\core_common\flagsys_shared.gsc;
 #using scripts\core_common\callbacks_shared.gsc;
@@ -746,7 +745,7 @@ function figure_out_attacker(eattacker) {
 // Checksum 0xed3293a0, Offset: 0x2a80
 // Size: 0x5e
 function function_4ca4d8c6(string, value) {
-    assert(isdefined(string), "<unknown string>");
+    assert(isdefined(string), "<dev string:x38>");
     if (isdefined(self) && isdefined(self.pers)) {
         self.pers[string] = value;
     }
@@ -757,7 +756,7 @@ function function_4ca4d8c6(string, value) {
 // Checksum 0xf9ee4994, Offset: 0x2ae8
 // Size: 0x78
 function function_2abc116(string, defaultval) {
-    assert(isdefined(string), "<unknown string>");
+    assert(isdefined(string), "<dev string:x38>");
     if (isdefined(self) && isdefined(self.pers) && isdefined(self.pers[string])) {
         return self.pers[string];
     }

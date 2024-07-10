@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\core_common\ai\archetype_catalyst_interface.gsc;
 #using scripts\core_common\ai\systems\ai_interface.gsc;
@@ -152,8 +151,8 @@ function function_720a0584(entity, mocompanim, mocompanimblendouttime, mocompani
     entity animmode("normal");
     if (isdefined(entity.traverseendnode)) {
         /#
-            print3d(entity.traversestartnode.origin, "<unknown string>", (1, 0, 0), 1, 1, 60);
-            print3d(entity.traverseendnode.origin, "<unknown string>", (0, 1, 0), 1, 1, 60);
+            print3d(entity.traversestartnode.origin, "<dev string:x38>", (1, 0, 0), 1, 1, 60);
+            print3d(entity.traverseendnode.origin, "<dev string:x38>", (0, 1, 0), 1, 1, 60);
             line(entity.traversestartnode.origin, entity.traverseendnode.origin, (0, 1, 0), 1, 0, 60);
         #/
         entity forceteleport(entity.traverseendnode.origin, entity.traverseendnode.angles, 0);

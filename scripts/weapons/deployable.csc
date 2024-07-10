@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\clientfield_shared.csc;
 
@@ -35,7 +34,7 @@ function register_deployable(weapon, var_7ec218c6) {
     if (weapon.name == "#none") {
         return;
     }
-    assert(weapon.name != "<unknown string>");
+    assert(weapon.name != "<dev string:x38>");
     level._deployable_weapons[weapon.statindex] = spawnstruct();
     level._deployable_weapons[weapon.statindex].var_7ec218c6 = var_7ec218c6;
 }

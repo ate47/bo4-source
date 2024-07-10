@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_jungle2_fx;
 
 // Namespace mp_jungle2_fx/mp_jungle2_fx

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_3819e7a1427df6d2;
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\core_common\damage.gsc;
@@ -169,7 +168,7 @@ function function_33d5b9a6(var_26b2b1bb, eattacker, arc_source, arc_source_origi
     }
     if (var_4d3cc1a7 && !distancecheck(var_26b2b1bb, target, self.origin, arc_source_origin)) {
         /#
-            record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0), "<unknown string>", undefined, 0.4);
+            record3dtext("<dev string:x38>", self.origin - (0, 0, 20), (1, 0, 0), "<dev string:x47>", undefined, 0.4);
         #/
         return false;
     }

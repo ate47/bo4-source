@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_world_fixup.gsc;
 #using scripts\wz_common\wz_common_fixup.gsc;
 

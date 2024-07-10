@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\map.gsc;
@@ -77,7 +76,7 @@ function function_eb7eb3d4() {
         return false;
     }
     /#
-        if (self isinmovemode("<unknown string>", "<unknown string>")) {
+        if (self isinmovemode("<dev string:x38>", "<dev string:x3e>")) {
             return false;
         }
     #/

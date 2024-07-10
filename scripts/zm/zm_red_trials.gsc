@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_5ee794294780ac28;
 #using script_45993630a26b2d85;
 #using scripts\zm_common\trials\zm_trial_red_boss_fight.gsc;

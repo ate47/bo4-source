@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\weapons\heatseekingmissile.gsc;
 #using scripts\core_common\player\player_stats.gsc;
@@ -516,7 +515,7 @@ function hackingtimescale(target) {
         /#
             hackertooldebugtext = getdvarint(#"hackertooldebugtext", 0);
             if (hackertooldebugtext) {
-                print3d(target.origin, "<unknown string>" + scale + "<unknown string>" + radiusinner + "<unknown string>" + radiusouter, (0, 0, 0), 1, hackertooldebugtext, 2);
+                print3d(target.origin, "<dev string:x38>" + scale + "<dev string:x42>" + radiusinner + "<dev string:x4d>" + radiusouter, (0, 0, 0), 1, hackertooldebugtext, 2);
             }
             assert(hacktime > 0);
         #/

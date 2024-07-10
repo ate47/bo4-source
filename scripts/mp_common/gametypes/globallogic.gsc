@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\player\player_monitor.gsc;
 #using scripts\weapons\weapons.gsc;
 #using scripts\weapons\weapon_utils.gsc;
@@ -541,7 +540,7 @@ function precache_mp_leaderboards() {
 // Size: 0xb2
 function compareteambygamestat(gamestat, teama, teamb, previous_winner_score) {
     winner = undefined;
-    assert(teama !== "_ARENA");
+    assert(teama !== "<dev string:x38>");
     if (previous_winner_score == game.stat[gamestat][teamb]) {
         winner = undefined;
     } else if (game.stat[gamestat][teamb] > previous_winner_score) {
@@ -574,7 +573,7 @@ function determineteamwinnerbygamestat(gamestat) {
 // Checksum 0xfc8eb91c, Offset: 0x32e8
 // Size: 0x86
 function compareteambyteamscore(var_1ada49b5, teamb, var_2a5c5ccb) {
-    assert(var_1ada49b5 !== "_ARENA");
+    assert(var_1ada49b5 !== "<dev string:x38>");
     teambscore = [[ level._getteamscore ]](teamb);
     if (teambscore == var_2a5c5ccb) {
         return undefined;
@@ -2237,8 +2236,8 @@ function function_4636deca(player) {
     }
     player player_record::function_7569c0fb();
     nemesis = player.pers[#"nemesis_name"];
-    assert(isdefined(nemesis), " LB_MP_GM_FR_" + player.name);
-    assert(isstring(nemesis), "participation" + nemesis + "damage_dealt" + player.name);
+    assert(isdefined(nemesis), "<dev string:x3e>" + player.name);
+    assert(isstring(nemesis), "<dev string:x61>" + nemesis + "<dev string:x6c>" + player.name);
     if (!isdefined(player.pers[#"killed_players"][nemesis])) {
         player.pers[#"killed_players"][nemesis] = 0;
     }
@@ -3022,7 +3021,7 @@ function updatealivetimes(team) {
     level.alivetimesaverage[team] = average_player_spawn_time / total_player_count;
     /#
         if (getdvarint(#"hash_7d48f244ba0d0b2d", 0)) {
-            iprintln("fullscreen" + level.alivetimesaverage[#"allies"] + "MOD_MELEE" + level.alivetimesaverage[#"axis"]);
+            iprintln("<dev string:x8b>" + level.alivetimesaverage[#"allies"] + "<dev string:xa3>" + level.alivetimesaverage[#"axis"]);
         }
     #/
 }
@@ -3584,7 +3583,7 @@ function function_b9b7618() {
     level.hardcoremode = getgametypesetting(#"hardcoremode");
     if (level.hardcoremode) {
         /#
-            print("<unknown string>");
+            print("<dev string:xad>");
         #/
         if (!isdefined(level.friendlyfiredelaytime)) {
             level.friendlyfiredelaytime = 0;
@@ -3884,7 +3883,7 @@ function updaterankedmatch(outcome) {
         if (hostidledout()) {
             level.hostforcedend = 1;
             /#
-                print("<unknown string>");
+                print("<dev string:xc3>");
             #/
         }
     }

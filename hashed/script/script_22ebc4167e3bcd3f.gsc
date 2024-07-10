@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_tomahawk.gsc;
 #using script_36222395658446f5;
 #using scripts\zm\zm_escape_vo_hooks.gsc;
@@ -583,13 +582,13 @@ function function_be995f48(mdl_tomahawk, mdl_powerup) {
             return;
         }
         zm_devgui::add_custom_devgui_callback(&function_97be15e3);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x9c>");
+        adddebugcommand("<dev string:x103>");
+        adddebugcommand("<dev string:x170>");
+        adddebugcommand("<dev string:x1d4>");
+        adddebugcommand("<dev string:x23b>");
+        adddebugcommand("<dev string:x2a6>");
     }
 
     // Namespace namespace_9d58c1cd/namespace_9d58c1cd
@@ -611,13 +610,13 @@ function function_be995f48(mdl_tomahawk, mdl_powerup) {
             break;
         case #"hash_6959afd9d36f38b8":
             if (zm_utility::is_ee_enabled()) {
-                var_4f5b63ea = struct::get("<unknown string>");
-                var_83aecc80 = struct::get("<unknown string>");
-                var_31a8a875 = struct::get("<unknown string>");
+                var_4f5b63ea = struct::get("<dev string:x307>");
+                var_83aecc80 = struct::get("<dev string:x316>");
+                var_31a8a875 = struct::get("<dev string:x325>");
                 var_1390c563 = var_4f5b63ea.var_825e7054;
                 var_9393456a = var_83aecc80.var_825e7054;
                 var_bdd399ea = var_31a8a875.var_825e7054;
-                iprintln("<unknown string>" + var_1390c563 + var_9393456a + var_bdd399ea);
+                iprintln("<dev string:x334>" + var_1390c563 + var_9393456a + var_bdd399ea);
             }
             break;
         case #"hash_6f5ba9c8e47bde8b":

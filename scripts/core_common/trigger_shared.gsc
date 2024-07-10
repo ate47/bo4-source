@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicle_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\teleport_shared.gsc;
@@ -114,7 +113,7 @@ function get_trigger_look_target() {
         a_potential_target_structs = struct::get_array(self.target);
         a_targets = arraycombine(a_targets, a_potential_target_structs, 1, 0);
         if (a_targets.size > 0) {
-            assert(a_targets.size == 1, "<unknown string>" + self.origin + "<unknown string>");
+            assert(a_targets.size == 1, "<dev string:x38>" + self.origin + "<dev string:x4a>");
             e_target = a_targets[0];
         }
     }
@@ -151,7 +150,7 @@ function look_trigger(trigger) {
             }
             continue;
         }
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x6f>");
     }
 }
 
@@ -261,9 +260,9 @@ function add_tokens_to_trigger_flags(tokens) {
 function friendly_respawn_trigger(trigger) {
     trigger endon(#"death");
     spawners = getentarray(trigger.target, "targetname");
-    assert(spawners.size == 1, "<unknown string>" + trigger.target + "<unknown string>");
+    assert(spawners.size == 1, "<dev string:x95>" + trigger.target + "<dev string:xda>");
     spawner = spawners[0];
-    assert(!isdefined(spawner.script_forcecolor), "<unknown string>" + spawner.origin + "<unknown string>");
+    assert(!isdefined(spawner.script_forcecolor), "<dev string:xfc>" + spawner.origin + "<dev string:x113>");
     spawners = undefined;
     spawner endon(#"death");
     while (true) {
@@ -365,9 +364,9 @@ function trigger_once(s_info) {
     waittillframeend();
     if (isdefined(self)) {
         /#
-            println("<unknown string>");
-            println("<unknown string>" + self getentitynumber() + "<unknown string>" + self.origin);
-            println("<unknown string>");
+            println("<dev string:x13d>");
+            println("<dev string:x140>" + self getentitynumber() + "<dev string:x172>" + self.origin);
+            println("<dev string:x13d>");
         #/
         self delete();
     }
@@ -414,7 +413,7 @@ function is_trigger_of_type(...) {
 function wait_till(str_name, str_key = "targetname", e_entity, b_assert = 1) {
     if (isdefined(str_name)) {
         triggers = getentarray(str_name, str_key);
-        assert(!b_assert || triggers.size > 0, "<unknown string>" + str_name + "<unknown string>" + str_key);
+        assert(!b_assert || triggers.size > 0, "<dev string:x181>" + str_name + "<dev string:x197>" + str_key);
         if (triggers.size > 0) {
             if (triggers.size == 1) {
                 trigger_hit = triggers[0];
@@ -448,9 +447,9 @@ function _trigger_wait(e_entity) {
     }
     /#
         if (is_look_trigger()) {
-            assert(!isarray(e_entity), "<unknown string>");
-        } else if (self.classname === "<unknown string>") {
-            assert(!isarray(e_entity), "<unknown string>");
+            assert(!isarray(e_entity), "<dev string:x1a0>");
+        } else if (self.classname === "<dev string:x1cd>") {
+            assert(!isarray(e_entity), "<dev string:x1de>");
         }
     #/
     while (true) {
@@ -512,7 +511,7 @@ function use(str_name, str_key = "targetname", ent = getplayers()[0], b_assert =
         e_trig = getent(str_name, str_key);
         if (!isdefined(e_trig)) {
             if (b_assert) {
-                assertmsg("<unknown string>" + str_name + "<unknown string>" + str_key);
+                assertmsg("<dev string:x181>" + str_name + "<dev string:x197>" + str_key);
             }
             return;
         }
@@ -621,7 +620,7 @@ function wait_till_any(...) {
     } else {
         a_str_targetnames = vararg;
     }
-    assert(a_str_targetnames.size, "<unknown string>");
+    assert(a_str_targetnames.size, "<dev string:x20d>");
     a_triggers = [];
     a_triggers = arraycombine(a_triggers, getentarray(a_str_targetnames[0], "targetname"), 1, 0);
     for (i = 1; i < a_str_targetnames.size; i++) {

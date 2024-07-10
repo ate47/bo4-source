@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_seaside_alt_sound.gsc;
 #using scripts\mp\mp_seaside_alt_fx.gsc;
 #using scripts\mp_common\load.gsc;
@@ -76,8 +75,8 @@ function function_2cdcf5c3() {
     // Size: 0x74
     function init_devgui() {
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x48>");
+        adddebugcommand("<dev string:x38>" + mapname + "<dev string:x89>");
     }
 
 #/

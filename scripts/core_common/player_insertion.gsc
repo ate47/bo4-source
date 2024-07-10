@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_429c7c5a289f2b25;
 #using script_3bf78bb3042fc0e2;
 #using scripts\mp_common\gametypes\globallogic_audio.gsc;
@@ -41,7 +40,7 @@ function __init__() {
     var_1194a9a5 = struct::get_array("infil_spawn", "targetname");
     /#
         if (var_1194a9a5.size == 0) {
-            var_1194a9a5 = struct::get_array("insertion_force", "<unknown string>");
+            var_1194a9a5 = struct::get_array("<dev string:x38>", "<dev string:x49>");
         }
     #/
     level.insertions = [];
@@ -115,7 +114,7 @@ function private on_finalize_initialization() {
         if (getdvarint(#"scr_disable_infiltration", 0)) {
             return;
         }
-        var_6024133d = getentarray("<unknown string>", "<unknown string>");
+        var_6024133d = getentarray("<dev string:x56>", "<dev string:x49>");
         if (var_6024133d.size == 0) {
             return;
         }
@@ -712,7 +711,7 @@ function function_57d4a011(insertion) {
     if (isdefined(var_719e741e)) {
         numplayers = insertion.players.size;
         numteams = 1;
-        assert(numplayers > 0, "<unknown string>");
+        assert(numplayers > 0, "<dev string:x63>");
         foreach (team in level.teams) {
             if (isdefined(level.everexisted[team]) && level.everexisted[team]) {
                 numteams++;
@@ -831,7 +830,7 @@ function function_7bf9c38f(reinserting) {
             var_180a7b48 = getdvarint(#"hash_37b6eccbe31b5875", 1);
         }
     #/
-    assert(isdefined(var_180a7b48), "<unknown string>");
+    assert(isdefined(var_180a7b48), "<dev string:x87>");
     if (!isdefined(var_180a7b48)) {
         var_180a7b48 = 0;
     }
@@ -841,7 +840,7 @@ function function_7bf9c38f(reinserting) {
     if (level.warp_portal_vehicles.size) {
         portal = level.warp_portal_vehicles[var_180a7b48];
     }
-    assert(isdefined(portal), "<unknown string>");
+    assert(isdefined(portal), "<dev string:xa1>");
     if (isdefined(portal)) {
         self setorigin(portal.origin);
     } else {
@@ -1238,8 +1237,8 @@ function private function_e3f18577() {
     // Checksum 0xa99f6571, Offset: 0x62c0
     // Size: 0x30a
     function function_7d880672(original_origin, var_9f8395cb, refly) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:xb9>");
+        self endon("<dev string:xb9>");
         self endon(#"disconnect");
         origin = self.origin;
         origin = (original_origin[0], original_origin[1], function_e3f18577());
@@ -2404,18 +2403,18 @@ function function_8fc2a69e() {
     function private function_943c98fb(insertion) {
         assert(isstruct(insertion));
         mapname = util::get_map_name();
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:xcc>" + mapname + "<dev string:xdc>");
         waitframe(1);
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:xcc>" + mapname + "<dev string:x12e>");
         waitframe(1);
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:xcc>" + mapname + "<dev string:x17c>");
         waitframe(1);
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:xcc>" + mapname + "<dev string:x1d4>");
         waitframe(1);
-        adddebugcommand("<unknown string>" + mapname + "<unknown string>");
+        adddebugcommand("<dev string:xcc>" + mapname + "<dev string:x22b>");
         while (true) {
             waitframe(1);
-            string = getdvarstring(#"hash_683dafe2da41b42e", "<unknown string>");
+            string = getdvarstring(#"hash_683dafe2da41b42e", "<dev string:x282>");
             start_insertion = 0;
             switch (string) {
             case #"start_insertion":
@@ -2429,7 +2428,7 @@ function function_8fc2a69e() {
             if (start_insertion) {
                 level function_8dcd8623();
             }
-            setdvar(#"hash_683dafe2da41b42e", "<unknown string>");
+            setdvar(#"hash_683dafe2da41b42e", "<dev string:x282>");
             if (getdvarint(#"hash_5566ccc7de522a4a", 0)) {
                 setdvar(#"hash_5566ccc7de522a4a", 0);
                 level thread function_4910c182(insertion);
@@ -2450,7 +2449,7 @@ function function_8fc2a69e() {
         level function_948ac812(insertion);
         level thread function_c71552d0(insertion, 2, 2, 5, 1);
         wait(2 + 0.1);
-        level thread globallogic_audio::function_85818e24("<unknown string>");
+        level thread globallogic_audio::function_85818e24("<dev string:x285>");
         level thread function_a4deb676();
         insertion flagsys::set(#"hash_122f326d72f4c884");
         insertion flagsys::set(#"hash_60fcdd11812a0134");

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_escape_util.gsc;
 #using scripts\zm\zm_escape_vo_hooks.gsc;
 #using scripts\zm\zm_escape.gsc;

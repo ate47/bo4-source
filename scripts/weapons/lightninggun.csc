@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace lightninggun;
 
 // Namespace lightninggun/lightninggun

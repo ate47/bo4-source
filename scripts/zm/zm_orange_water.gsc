@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_trials.gsc;
 #using script_37752a01e45812b8;
 #using scripts\zm_common\zm_zonemgr.gsc;
@@ -793,7 +792,7 @@ function function_e2d41c8d(s_start) {
         while (true) {
             if (isdefined(player.b_in_water)) {
                 self setvalue(player.b_in_water);
-                println("<unknown string>" + player getentitynumber() + "<unknown string>");
+                println("<dev string:x38>" + player getentitynumber() + "<dev string:x42>");
             }
             player waittill(#"update_frost_state");
         }

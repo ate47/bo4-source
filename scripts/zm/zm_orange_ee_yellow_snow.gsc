@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_snowball_piles.gsc;
 #using scripts\zm\zm_orange_pablo.gsc;
 #using scripts\zm\zm_orange_util.gsc;
@@ -295,7 +294,7 @@ function function_6ad60943(var_a276c861, var_19e802fa) {
     }
     zm_utility::play_sound_2d("zmb_yellow_snowball_stinger");
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     level.var_292feb3b setmodel("p8_zm_ora_specimen_container_lrg_cracked");
     level thread function_cf298764();
@@ -480,7 +479,7 @@ function function_68789b17() {
     level.var_3af3c634 show();
     level.var_3af3c634 thread function_c0ee8171();
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x64>");
     #/
 }
 
@@ -506,13 +505,13 @@ function function_b4b483e7() {
     while (true) {
         /#
             if (level.var_74f3565a >= 22.5) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x93>");
             } else if (level.var_74f3565a >= 15) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xa5>");
             } else if (level.var_74f3565a >= 7.5) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xb7>");
             } else {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xc9>");
             }
         #/
         wait(2.5);

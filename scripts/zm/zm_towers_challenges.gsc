@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_towers_crowd.gsc;
 #using scripts\zm\weapons\zm_weap_crossbow.gsc;
 #using scripts\zm\ai\zm_ai_gladiator.gsc;
@@ -632,7 +631,7 @@ function function_15280d13(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 1, self.var_2d8a5fb9);
     /#
         self.var_5630d868 = 6;
-        self.initboss_balcony_south = "zone_pap_room";
+        self.initboss_balcony_south = "<dev string:x38>";
     #/
     self waittill(#"hash_7c2dd12641ed6bf5");
     self function_544b63c0(6);
@@ -696,7 +695,7 @@ function function_1abdfaa6(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 2, self.var_fa64a47b);
     /#
         self.var_5630d868 = 10;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x5e>";
     #/
     self waittill(#"hash_7731445a0fb80df");
     self function_544b63c0(10);
@@ -756,7 +755,7 @@ function function_75b0f76a(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 3, self.var_dd287f97);
     /#
         self.var_5630d868 = 13;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x85>";
     #/
     self waittill(#"hash_76251ea6bc659497");
     self function_544b63c0(13);
@@ -814,7 +813,7 @@ function function_2cf8fe6a(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 4, self.var_6c499d);
     /#
         self.var_5630d868 = 5;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:xa6>";
     #/
     self waittill(#"headshot_challenge_completed");
     self function_544b63c0(5);
@@ -875,7 +874,7 @@ function function_ce7b3715(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 5, self.var_b0508fbc);
     /#
         self.var_5630d868 = 1;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:xc5>";
     #/
     e_player thread function_1dd6c24f();
     self waittill(#"hash_1b7d29ca77ce35c");
@@ -931,7 +930,7 @@ function function_43020320(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 6, self.var_a86b6f54);
     /#
         self.var_5630d868 = 9;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:xe6>";
     #/
     self waittill(#"hash_6edbb9b7bfeb38a3");
     self function_544b63c0(9);
@@ -980,7 +979,7 @@ function function_d9ed4d25(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 7, self.var_8c74b626);
     /#
         self.var_5630d868 = 5;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x10a>";
     #/
     self waittill(#"hash_31d79470abcf1282");
     self function_544b63c0(5);
@@ -1034,7 +1033,7 @@ function function_89f10652(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 8, self.var_4423c8ba);
     /#
         self.var_5630d868 = 3;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x12c>";
     #/
     self waittill(#"hash_5b6a8d05204c98e1");
     self function_544b63c0(3);
@@ -1089,7 +1088,7 @@ function function_8b70fc31(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 9, self.var_edf07bbf);
     /#
         self.var_5630d868 = 1;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x152>";
     #/
     if (e_player === self.var_25276720) {
         self thread function_347214f4(e_player);
@@ -1172,7 +1171,7 @@ function function_b1a2d509(e_player, e_trig, var_5f06d3f8) {
     n_required = int(2);
     /#
         self.var_5630d868 = n_required;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x16f>";
     #/
     if (e_player === self.var_25276720) {
         self thread function_1fe5e1a3(e_player);
@@ -1234,7 +1233,7 @@ function function_45396550(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 11, self.var_d7571058);
     /#
         self.var_5630d868 = 9;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x18d>";
     #/
     self waittill(#"shield_challenge_completed");
     self function_544b63c0(9);
@@ -1305,7 +1304,7 @@ function function_99f8f485(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 12, self.var_b6cfe237);
     /#
         self.var_5630d868 = 9;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x1aa>";
     #/
     self waittill(#"hash_47170980360105a8");
     self function_544b63c0(9);
@@ -1359,7 +1358,7 @@ function function_e50d2a3d(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 13, self.var_b11d9e23);
     /#
         self.var_5630d868 = 9;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x1d0>";
     #/
     self waittill(#"hash_b7f3e44410f5062");
     self function_544b63c0(9);
@@ -1408,7 +1407,7 @@ function function_1e0efdcd(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 14, self.var_8bafcbf3);
     /#
         self.var_5630d868 = 1;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x1f9>";
     #/
     e_player thread function_295948b2();
     self waittill(#"hash_5d7c0e41aec8535e");
@@ -1473,7 +1472,7 @@ function function_cd3a4ff5(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 15, self.var_ea6db531);
     /#
         self.var_5630d868 = 1;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x229>";
     #/
     self waittill(#"hash_93d348ce67aaf63");
     self function_544b63c0(1);
@@ -1525,7 +1524,7 @@ function function_2bdfb862(e_player, e_trig, var_5f06d3f8) {
     self function_bce7e59b(e_player, 16, self.var_83798eab);
     /#
         self.var_5630d868 = 20;
-        self.initboss_balcony_south = "<unknown string>";
+        self.initboss_balcony_south = "<dev string:x252>";
         e_player.initboss_balcony_south = self.initboss_balcony_south;
     #/
     self thread function_fc8ff5f4(e_player);

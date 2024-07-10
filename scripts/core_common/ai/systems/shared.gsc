@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\core_common\ai\archetype_utility.gsc;
 #using scripts\core_common\ai\systems\init.gsc;
@@ -60,12 +59,12 @@ function placeweaponon(weapon, position) {
         self init::initweapon(weapon);
     }
     curposition = self.weaponinfo[weapon.name].position;
-    assert(curposition == "<unknown string>" || self.a.weaponpos[curposition] == weapon);
+    assert(curposition == "<dev string:x38>" || self.a.weaponpos[curposition] == weapon);
     if (!isarray(self.a.weaponpos)) {
         self.a.weaponpos = [];
     }
     assert(isarray(self.a.weaponpos));
-    assert(position == "<unknown string>" || isdefined(self.a.weaponpos[position]), "<unknown string>" + position + "<unknown string>");
+    assert(position == "<dev string:x38>" || isdefined(self.a.weaponpos[position]), "<dev string:x3f>" + position + "<dev string:x53>");
     assert(isweapon(weapon));
     if (position != "none" && self.a.weaponpos[position] == weapon) {
         return;
@@ -165,7 +164,7 @@ function gettagforpos(position) {
     case #"hand":
         return "tag_inhand";
     default:
-        assertmsg("<unknown string>" + position);
+        assertmsg("<dev string:x57>" + position);
         break;
     }
 }
@@ -211,10 +210,10 @@ function dropaiweapon() {
         return;
     }
     if (isdefined(self.script_nodropsecondaryweapon) && self.script_nodropsecondaryweapon && self.weapon == self.initial_secondaryweapon) {
-        println("<unknown string>" + self.weapon.name + "<unknown string>");
+        println("<dev string:x7d>" + self.weapon.name + "<dev string:x9f>");
         return;
     } else if (isdefined(self.script_nodropsidearm) && self.script_nodropsidearm && self.weapon == self.sidearm) {
-        println("<unknown string>" + self.weapon.name + "<unknown string>");
+        println("<dev string:xa3>" + self.weapon.name + "<dev string:x9f>");
         return;
     }
     [[ level.ai_weapon_throttle ]]->waitinqueue(self);
@@ -267,11 +266,11 @@ function dropallaiweapons() {
                 self.weaponinfo[weapon.name].position = "none";
                 self.a.weaponpos[self.weapon_positions[index]] = level.weaponnone;
                 if (isdefined(self.script_nodropsecondaryweapon) && self.script_nodropsecondaryweapon && weapon == self.initial_secondaryweapon) {
-                    println("<unknown string>" + weapon.name + "<unknown string>");
+                    println("<dev string:x7d>" + weapon.name + "<dev string:x9f>");
                     continue;
                 }
                 if (isdefined(self.script_nodropsidearm) && self.script_nodropsidearm && weapon == self.sidearm) {
-                    println("<unknown string>" + weapon.name + "<unknown string>");
+                    println("<dev string:xa3>" + weapon.name + "<dev string:x9f>");
                     continue;
                 }
                 velocity = self getvelocity();
@@ -411,7 +410,7 @@ function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfun
             returnednote = [[ notetracksfunc ]](flagname, customfunction, debugidentifier);
             timetaken = gettime() - time;
             if (timetaken < 0.05) {
-                println(gettime() + "<unknown string>" + debugidentifier + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
+                println(gettime() + "<dev string:xbc>" + debugidentifier + "<dev string:xc0>" + flagname + "<dev string:x10c>" + returnednote + "<dev string:x11a>");
                 wait(0.05 - timetaken);
             }
         }

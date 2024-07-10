@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_escape_util.gsc;
 #using scripts\zm_common\trials\zm_trial_door_lockdown.gsc;
 #using scripts\zm_common\util.gsc;

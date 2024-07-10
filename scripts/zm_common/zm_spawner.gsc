@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_stats.gsc;
@@ -102,7 +101,7 @@ function init() {
                         recordcircle(goal.origin, 16, color);
                         continue;
                     }
-                    if (isdefined(goal.script_string) && goal.script_string == "MOD_BURNED") {
+                    if (isdefined(goal.script_string) && goal.script_string == "<dev string:x38>") {
                         recordcircle(goal.origin, 16, color_blue);
                         continue;
                     }
@@ -217,7 +216,7 @@ function zombie_spawn_init() {
     self.meleedamage = 60;
     self.no_powerups = 1;
     /#
-        self zombie_history("J_SpineLower" + self.origin);
+        self zombie_history("<dev string:x45>" + self.origin);
     #/
     self.thundergun_knockdown_func = level.basic_zombie_thundergun_knockdown;
     self.tesla_head_gib_func = &zombie_tesla_head_gib;
@@ -415,9 +414,9 @@ function zombie_assure_node() {
         for (i = 0; i < self.entrance_nodes.size; i++) {
             if (self zombie_bad_path()) {
                 /#
-                    self zombie_history("<unknown string>" + self.entrance_nodes[i].origin);
-                    println("<unknown string>" + self.origin + "<unknown string>" + self.entrance_nodes[i].origin);
-                    level thread zm_utility::draw_line_ent_to_pos(self, self.entrance_nodes[i].origin, "<unknown string>");
+                    self zombie_history("<dev string:x67>" + self.entrance_nodes[i].origin);
+                    println("<dev string:x98>" + self.origin + "<dev string:xa6>" + self.entrance_nodes[i].origin);
+                    level thread zm_utility::draw_line_ent_to_pos(self, self.entrance_nodes[i].origin, "<dev string:xe2>");
                 #/
                 self.first_node = self.entrance_nodes[i];
                 self setgoal(self.entrance_nodes[i].origin);
@@ -433,9 +432,9 @@ function zombie_assure_node() {
         for (i = 0; i < self.entrance_nodes.size; i++) {
             if (self zombie_bad_path()) {
                 /#
-                    self zombie_history("<unknown string>" + self.entrance_nodes[i].origin);
-                    println("<unknown string>" + self.origin + "<unknown string>" + self.entrance_nodes[i].origin);
-                    level thread zm_utility::draw_line_ent_to_pos(self, self.entrance_nodes[i].origin, "<unknown string>");
+                    self zombie_history("<dev string:x67>" + self.entrance_nodes[i].origin);
+                    println("<dev string:x98>" + self.origin + "<dev string:xa6>" + self.entrance_nodes[i].origin);
+                    level thread zm_utility::draw_line_ent_to_pos(self, self.entrance_nodes[i].origin, "<dev string:xe2>");
                 #/
                 self.first_node = self.entrance_nodes[i];
                 self setgoal(self.entrance_nodes[i].origin);
@@ -445,7 +444,7 @@ function zombie_assure_node() {
         }
     }
     /#
-        self zombie_history("<unknown string>");
+        self zombie_history("<dev string:xe9>");
     #/
     wait(20);
     self dodamage(self.health + 10, self.origin);
@@ -608,7 +607,7 @@ function get_attack_spot(node) {
             index = val;
         }
     #/
-    self.attacking_node = node;
+    self.601 = node;
     self.attacking_spot_index = index;
     node.attack_spots_taken[index] = 1;
     self.attacking_spot = node.attack_spots[index];
@@ -1135,7 +1134,7 @@ function player_using_hi_score_weapon(player) {
     // Checksum 0x4ce79a8a, Offset: 0x4bb8
     // Size: 0x2c
     function register_zombie_damage_callback(func) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x126>");
     }
 
 #/
@@ -1249,7 +1248,7 @@ function zombie_death_event(zombie) {
             attacker zm_stats::increment_player_stat("melee_kills");
             attacker notify(#"melee_kill");
             attacker zm_stats::function_8f10788e("boas_melee_kills");
-            println("<unknown string>");
+            println("<dev string:x186>");
         }
         attacker demo::add_actor_bookmark_kill_time();
         attacker.kills++;
@@ -1596,7 +1595,7 @@ function do_zombie_spawn() {
     }
     if (spots.size == 0) {
         if (!level util::function_88c74107() && !level.gameended) {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x19c>");
         }
         spots = struct::get_array("spawn_location", "script_noteworthy");
     }
@@ -1616,7 +1615,7 @@ function do_zombie_spawn() {
             debugstar(spot.origin, getdvarint(#"scr_spawner_location_time", 0), (0, 1, 0));
             host_player = util::gethostplayer();
             distance = distance(spot.origin, host_player.origin);
-            iprintln("<unknown string>" + distance / 12 + "<unknown string>");
+            iprintln("<dev string:x229>" + distance / 12 + "<dev string:x240>");
         }
     #/
     if (isdefined(spot.var_c078a32) && getdvarint(#"hash_24e49958fe736182", 0) && (isdefined(self.var_a9b2d989) && self.var_a9b2d989 || isdefined(level.var_d4a79133) && level.var_d4a79133 > 0) && isdefined(level.var_322d0819)) {
@@ -1633,7 +1632,7 @@ function do_zombie_spawn() {
 // Checksum 0x8e27e25a, Offset: 0x7230
 // Size: 0x132
 function function_20e7d186(var_493c4730) {
-    assert(var_493c4730.size > 0, "<unknown string>");
+    assert(var_493c4730.size > 0, "<dev string:x247>");
     if (getdvarint(#"hash_32f24948d4a09f0e", 1)) {
         spawn_info = function_dce9f1a6(var_493c4730);
         var_cf6e6a44 = spawn_info.spot;

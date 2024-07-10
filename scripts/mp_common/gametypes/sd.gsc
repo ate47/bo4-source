@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\challenges.gsc;
 #using scripts\mp_common\bb.gsc;
@@ -482,14 +481,14 @@ function bombs() {
     trigger = getent("sd_bomb_pickup_trig", "targetname");
     if (!isdefined(trigger)) {
         /#
-            util::error("bombFriendlyDropped");
+            util::error("<dev string:x38>");
         #/
         return;
     }
     visuals[0] = getent("sd_bomb", "targetname");
     if (!isdefined(visuals[0])) {
         /#
-            util::error("<unknown string>");
+            util::error("<dev string:x67>");
         #/
         return;
     }
@@ -717,7 +716,7 @@ function onuseplantobject(player) {
     self.waypoint gameobjects::hide_waypoint();
     level thread bombplanted(self, player);
     /#
-        print("<unknown string>" + self.label);
+        print("<dev string:x8f>" + self.label);
     #/
     for (index = 0; index < level.bombzones.size; index++) {
         if (level.bombzones[index] == self) {
@@ -761,7 +760,7 @@ function onusedefuseobject(player) {
     self.waypoint gameobjects::set_flags(0);
     player notify(#"bomb_defused");
     /#
-        print("<unknown string>" + self.label);
+        print("<dev string:xa0>" + self.label);
     #/
     bb::function_95a5b5c2("sd_bombdefuse", self.label, player.pers[#"team"], player.origin);
     self gameobjects::set_owner_team(player.pers[#"team"]);
@@ -828,7 +827,7 @@ function onpickup(player) {
         otherteam = util::getotherteam(team);
         globallogic_audio::leader_dialog("bombFriendlyTaken", game.attackers);
         /#
-            print("<unknown string>");
+            print("<dev string:xb1>");
         #/
     }
     player playsound(#"fly_bomb_pickup_plr");
@@ -852,7 +851,7 @@ function bombplantedmusicdelay() {
     time = level.bombtimer - 30;
     /#
         if (getdvarint(#"debug_music", 0) > 0) {
-            println("<unknown string>" + time);
+            println("<dev string:xbe>" + time);
         }
     #/
     if (time > 1) {

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp\mp_militia_scripted.gsc;
 #using scripts\mp\mp_militia_sound.gsc;
 #using scripts\mp\mp_militia_fx.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace loadout;
 
 // Namespace loadout/loadout_shared
@@ -72,7 +71,7 @@ function cac_modified_vehicle_damage(victim, attacker, damage, meansofdeath, wea
         final_damage = damage * (100 + level.cac_bulletdamage_data) / 100;
         /#
             if (getdvarint(#"scr_perkdebug", 0)) {
-                println("<unknown string>" + attacker.name + "<unknown string>");
+                println("<dev string:x38>" + attacker.name + "<dev string:x42>");
             }
         #/
     } else {
@@ -80,7 +79,7 @@ function cac_modified_vehicle_damage(victim, attacker, damage, meansofdeath, wea
     }
     /#
         if (getdvarint(#"scr_perkdebug", 0)) {
-            println("<unknown string>" + final_damage / old_damage + "<unknown string>" + old_damage + "<unknown string>" + final_damage);
+            println("<dev string:x71>" + final_damage / old_damage + "<dev string:x8a>" + old_damage + "<dev string:x9c>" + final_damage);
         }
     #/
     return int(final_damage);

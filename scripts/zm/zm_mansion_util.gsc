@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_jordans.gsc;
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here.gsc;
@@ -770,10 +769,10 @@ function get_closest_valid_player(n_range_sq = 9000000) {
     // Size: 0xc0
     function create_hudelem(x, y) {
         var_aa917a22 = newdebughudelem();
-        var_aa917a22.alignx = "<unknown string>";
-        var_aa917a22.horzalign = "<unknown string>";
-        var_aa917a22.aligny = "<unknown string>";
-        var_aa917a22.vertalign = "<unknown string>";
+        var_aa917a22.alignx = "<dev string:x38>";
+        var_aa917a22.horzalign = "<dev string:x38>";
+        var_aa917a22.aligny = "<dev string:x3f>";
+        var_aa917a22.vertalign = "<dev string:x48>";
         var_aa917a22.y = y;
         var_aa917a22.x = x;
         var_aa917a22.fontscale = 1.25;

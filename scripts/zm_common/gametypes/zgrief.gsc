@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\util.gsc;
 #using scripts\zm_common\zm_stats.gsc;
 #using scripts\zm_common\zm_round_logic.gsc;
@@ -79,7 +78,7 @@ function onscorelimit() {
 }
 
 // Namespace zgrief/zgrief
-// Params a, eflags: 0x0
+// Params 10, eflags: 0x0
 // Checksum 0xb80bc2bf, Offset: 0x550
 // Size: 0x80
 function playerdamagecallback(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {

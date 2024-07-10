@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
@@ -410,7 +409,7 @@ function show_chest() {
     }
     self.zbarrier set_magic_box_zbarrier_state("arriving");
     self.zbarrier waittilltimeout(5, #"arrived");
-    assert(isdefined(level.pandora_show_func), "close_chest");
+    assert(isdefined(level.pandora_show_func), "<dev string:x38>");
     if (isdefined(level.pandora_show_func)) {
         self thread [[ level.pandora_show_func ]]();
     }
@@ -1058,7 +1057,7 @@ function check_for_desirable_chest_location() {
         }
     }
     /#
-        iprintln(level.desirable_chest_location + "<unknown string>");
+        iprintln(level.desirable_chest_location + "<dev string:x54>");
     #/
     level.desirable_chest_location = undefined;
     return level.chest_index;
@@ -1207,7 +1206,7 @@ function function_4aa1f177(player) {
     /#
         forced_weapon_name = getdvarstring(#"scr_force_weapon");
         forced_weapon = getweapon(forced_weapon_name);
-        if (forced_weapon_name != "<unknown string>" && isdefined(level.zombie_weapons[forced_weapon])) {
+        if (forced_weapon_name != "<dev string:x73>" && isdefined(level.zombie_weapons[forced_weapon])) {
             arrayinsert(a_weapons, forced_weapon, 0);
         }
     #/
@@ -1515,7 +1514,7 @@ function treasure_chest_weapon_spawn(chest, player, respin) {
     if (var_943077fe < 40) {
         var_f91a62a4 = var_943077fe / 40;
     }
-    assert(var_f91a62a4 >= 0.1 && var_f91a62a4 <= 2, "<unknown string>");
+    assert(var_f91a62a4 >= 0.1 && var_f91a62a4 <= 2, "<dev string:x76>");
     if (isdefined(chest.zbarrier)) {
         if (isdefined(level.custom_magic_box_do_weapon_rise)) {
             chest.zbarrier thread [[ level.custom_magic_box_do_weapon_rise ]]();
@@ -1962,7 +1961,7 @@ function function_4873c058() {
                     chest.zone_name = zm_zonemgr::get_zone_from_position(chest.zbarrier.origin + var_bbab3105 + (0, 0, n_z_offset), 1);
                 }
                 if (!isdefined(chest.zone_name)) {
-                    assert(0, "<unknown string>" + chest.zbarrier.origin + "<unknown string>");
+                    assert(0, "<dev string:xaf>" + chest.zbarrier.origin + "<dev string:xd9>");
                 }
             }
         }
@@ -2257,7 +2256,7 @@ function function_35c66b27(str_state) {
             a_str_tokens = strtok2(self.script_noteworthy, "zbarrier");
             var_72fa2dd1 = a_str_tokens[0] + "plinth";
             self.var_8cab0622 = struct::get(var_72fa2dd1, "targetname");
-            assert(isdefined(self.var_8cab0622), "<unknown string>" + var_72fa2dd1);
+            assert(isdefined(self.var_8cab0622), "<dev string:x101>" + var_72fa2dd1);
         }
         self.var_8cab0622 scene::play();
         break;
@@ -2266,7 +2265,7 @@ function function_35c66b27(str_state) {
             a_str_tokens = strtok2(self.script_noteworthy, "zbarrier");
             var_72fa2dd1 = a_str_tokens[0] + "plinth";
             self.var_8cab0622 = struct::get(var_72fa2dd1, "targetname");
-            assert(isdefined(self.var_8cab0622), "<unknown string>" + var_72fa2dd1);
+            assert(isdefined(self.var_8cab0622), "<dev string:x101>" + var_72fa2dd1);
         }
         self.var_8cab0622 scene::stop(1);
     default:

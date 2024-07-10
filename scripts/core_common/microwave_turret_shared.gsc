@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
@@ -103,8 +102,8 @@ function stopmicrowave() {
     // Size: 0x10c
     function turretdebug() {
         turret = self;
-        angles = turret gettagangles("<unknown string>");
-        origin = turret gettagorigin("<unknown string>");
+        angles = turret gettagangles("<dev string:x38>");
+        origin = turret gettagorigin("<dev string:x38>");
         cone_apex = origin;
         forward = anglestoforward(angles);
         dome_apex = cone_apex + vectorscale(forward, 750);

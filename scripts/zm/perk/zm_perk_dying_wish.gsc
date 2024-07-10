@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_player.gsc;
 #using scripts\zm_common\zm_perks.gsc;
 #using scripts\zm_common\zm.gsc;
@@ -147,7 +146,7 @@ function function_f3862b9b(b_pause, str_perk, str_result, n_slot) {
     if (isdefined(self.var_eb319d10) && self.var_eb319d10) {
         self function_2ca96414();
     }
-    assert(isdefined(self.var_95df0a1b), "<unknown string>");
+    assert(isdefined(self.var_95df0a1b), "<dev string:x38>");
     if (isdefined(self.var_95df0a1b)) {
         self zm_perks::function_13880aa5(self.var_95df0a1b, 0, #"perk_dying_wish");
         self.var_95df0a1b = undefined;
@@ -296,7 +295,7 @@ function reset_cooldown() {
     self notify(#"hash_ed7c0dc0ca165df");
     self.var_a4630f64 = 0;
     if (self hasperk(#"specialty_berserker")) {
-        assert(isdefined(self.var_95df0a1b), "<unknown string>");
+        assert(isdefined(self.var_95df0a1b), "<dev string:x38>");
         if (isdefined(self.var_95df0a1b)) {
             self zm_perks::function_2ac7579(self.var_95df0a1b, 1, #"perk_dying_wish");
             self zm_perks::function_13880aa5(self.var_95df0a1b, 1, #"perk_dying_wish");

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm\zm_mansion_special_rounds.gsc;
 #using scripts\zm\ai\zm_ai_nosferatu.gsc;
@@ -95,7 +94,7 @@ function __main__() {
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
-// Params f, eflags: 0x1 linked
+// Params 15, eflags: 0x1 linked
 // Checksum 0x9972d4ef, Offset: 0xa18
 // Size: 0x16c
 function function_e92f09d0(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -157,7 +156,7 @@ function function_e217ba73(v_pos, v_velocity) {
             }
             if (s_waitresult._notify == "grenade_bounce") {
                 /#
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x38>");
                 #/
                 var_1054c42f = function_68a875b(var_26420508.origin);
                 if (isdefined(var_1054c42f) && distancesquared(var_1054c42f, var_26420508.origin) < 1024) {
@@ -441,7 +440,7 @@ function function_4999f099(var_9427f9e7) {
         self endon(#"death");
         level waittill(#"hash_348748d248801d6b");
         e_player = getplayers()[0];
-        self dodamage(self.health, e_player.origin, e_player, e_player, undefined, "<unknown string>", 0, level.var_6fe89212);
+        self dodamage(self.health, e_player.origin, e_player, e_player, undefined, "<dev string:x49>", 0, level.var_6fe89212);
     }
 
     // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
@@ -509,7 +508,7 @@ function function_44a776ee() {
             zone = level.zones[keys[i]];
             node = function_52c1730(level.var_5f2726dc, zone.nodes, 500);
             if (isdefined(node)) {
-                iprintln("<unknown string>" + function_9e72a96(keys[i]));
+                iprintln("<dev string:x5a>" + function_9e72a96(keys[i]));
             }
         }
     #/
@@ -569,7 +568,7 @@ function function_68a875b(v_pos) {
     if (isdefined(v_drop_point)) {
         if (zm_zonemgr::function_66bf6a43(v_drop_point[#"point"])) {
             /#
-                iprintln("<unknown string>");
+                iprintln("<dev string:x73>");
             #/
             return v_drop_point[#"point"];
         }
@@ -577,7 +576,7 @@ function function_68a875b(v_pos) {
         if (isdefined(var_f6193a60)) {
             if (zm_zonemgr::function_66bf6a43(var_f6193a60)) {
                 /#
-                    iprintln("<unknown string>");
+                    iprintln("<dev string:x8e>");
                 #/
                 return var_f6193a60;
             }
@@ -588,7 +587,7 @@ function function_68a875b(v_pos) {
         if (isdefined(var_48dba99e)) {
             if (zm_zonemgr::function_66bf6a43(var_48dba99e[#"point"])) {
                 /#
-                    iprintln("<unknown string>" + 64 * i);
+                    iprintln("<dev string:xaa>" + 64 * i);
                 #/
                 return var_48dba99e[#"point"];
             }
@@ -597,7 +596,7 @@ function function_68a875b(v_pos) {
         if (isdefined(var_dc4239c1)) {
             if (zm_zonemgr::function_66bf6a43(var_dc4239c1[#"point"])) {
                 /#
-                    iprintln("<unknown string>" + 64 * i);
+                    iprintln("<dev string:xd3>" + 64 * i);
                 #/
                 return var_dc4239c1[#"point"];
             }
@@ -606,7 +605,7 @@ function function_68a875b(v_pos) {
         if (isdefined(var_f21e9d9b)) {
             if (zm_zonemgr::function_66bf6a43(var_f21e9d9b[#"point"])) {
                 /#
-                    iprintln("<unknown string>" + 64 * i);
+                    iprintln("<dev string:xfd>" + 64 * i);
                 #/
                 return var_f21e9d9b[#"point"];
             }
@@ -615,14 +614,14 @@ function function_68a875b(v_pos) {
         if (isdefined(var_23fdc586)) {
             if (zm_zonemgr::function_66bf6a43(var_23fdc586[#"point"])) {
                 /#
-                    iprintln("<unknown string>" + 64 * i);
+                    iprintln("<dev string:x124>" + 64 * i);
                 #/
                 return var_23fdc586[#"point"];
             }
         }
     }
     /#
-        iprintln("<unknown string>");
+        iprintln("<dev string:x14d>");
     #/
 }
 

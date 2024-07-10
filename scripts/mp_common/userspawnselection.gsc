@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\globallogic_spawn.gsc;
 #using scripts\core_common\gameobjects_shared.gsc;
 #using scripts\core_common\killcam_shared.gsc;
@@ -494,7 +493,7 @@ function filter_spawnpoints(spawnpoints) {
     }
     if (!isdefined(level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid])) {
         /#
-            print("<unknown string>");
+            print("<dev string:x38>");
         #/
         level.spawnselect.lastchosenplayerspawns[e_player.clientid] = -1;
         return undefined;
@@ -525,39 +524,39 @@ function private function_259770ba(e_player) {
     }
     if (!isdefined(level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid])) {
         /#
-            print("<unknown string>");
+            print("<dev string:x38>");
         #/
         level.spawnselect.lastchosenplayerspawns[e_player.clientid] = -1;
         return undefined;
     }
     if (e_player getteam() != level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].team) {
         /#
-            println("<unknown string>");
-            println("<unknown string>" + spawbeaconid + "<unknown string>");
-            println("<unknown string>" + e_player.team + "<unknown string>");
+            println("<dev string:x97>");
+            println("<dev string:xe0>" + spawbeaconid + "<dev string:xff>");
+            println("<dev string:x103>" + e_player.team + "<dev string:xff>");
             for (index = 0; index < level.spawnselect.vox_plr_1_revive_down_2.size; index++) {
                 if (!isdefined(level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid])) {
                     continue;
                 }
-                println("<unknown string>" + index + "<unknown string>");
-                println("<unknown string>" + level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].objectiveid + "<unknown string>");
-                println("<unknown string>" + level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].team + "<unknown string>");
+                println("<dev string:x116>" + index + "<dev string:xff>");
+                println("<dev string:x124>" + level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].objectiveid + "<dev string:xff>");
+                println("<dev string:x135>" + level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].team + "<dev string:xff>");
                 if (isdefined(level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].owner.playername)) {
-                    println("<unknown string>" + level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].owner.playername + "<unknown string>");
+                    println("<dev string:x13e>" + level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].owner.playername + "<dev string:xff>");
                 }
-                println("<unknown string>");
+                println("<dev string:x14f>");
             }
-            println("<unknown string>" + level.numgametypereservedobjectives + "<unknown string>");
-            println("<unknown string>" + level.releasedobjectives.size + "<unknown string>");
-            println("<unknown string>");
+            println("<dev string:x165>" + level.numgametypereservedobjectives + "<dev string:xff>");
+            println("<dev string:x17e>" + level.releasedobjectives.size + "<dev string:xff>");
+            println("<dev string:x19b>");
             foreach (objid in level.releasedobjectives) {
-                println(objid + "<unknown string>");
+                println(objid + "<dev string:xff>");
             }
-            println("<unknown string>");
+            println("<dev string:x1b7>");
             foreach (objid in level.spawnbeaconsettings.var_e7571ff1) {
-                println(objid + "<unknown string>");
+                println(objid + "<dev string:xff>");
             }
-            println("<unknown string>");
+            println("<dev string:x1d6>");
         #/
         assert(e_player.team == level.spawnselect.vox_plr_1_revive_down_2[spawbeaconid].team);
         return undefined;

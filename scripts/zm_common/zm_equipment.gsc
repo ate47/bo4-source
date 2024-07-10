@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_2cb831533cab2794;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -60,8 +59,8 @@ function __main__() {
     // Checksum 0x161867ab, Offset: 0x310
     // Size: 0xd62
     function abilities_devgui_add_gadgets_custom(root, pname, pid, menu_index) {
-        var_61b8f8fb = "<unknown string>";
-        add_cmd_with_root = "<unknown string>" + var_61b8f8fb + pname + "<unknown string>";
+        var_61b8f8fb = "<dev string:x38>";
+        add_cmd_with_root = "<dev string:x52>" + var_61b8f8fb + pname + "<dev string:x60>";
         a_abilities = [];
         arrayinsert(a_abilities, getweapon(#"eq_frag_grenade"), 0);
         arrayinsert(a_abilities, getweapon(#"incendiary_grenade"), 0);
@@ -74,7 +73,7 @@ function __main__() {
         arrayinsert(a_abilities, getweapon(#"cymbal_monkey"), 0);
         arrayinsert(a_abilities, getweapon(#"tesla_coil"), 0);
         arrayinsert(a_abilities, getweapon(#"tomahawk_t8"), 0);
-        ability_player::function_174037fe(add_cmd_with_root, pid, a_abilities, "<unknown string>", menu_index);
+        ability_player::function_174037fe(add_cmd_with_root, pid, a_abilities, "<dev string:x64>", menu_index);
         a_hero_weapons = [];
         arrayinsert(a_hero_weapons, getweapon(#"hero_gravityspikes"), 0);
         arrayinsert(a_hero_weapons, getweapon(#"hero_lightninggun"), 0);
@@ -121,11 +120,11 @@ function __main__() {
         arrayinsert(a_hero_weapons, getweapon(#"hero_minigun_t8_lv1"), 0);
         arrayinsert(a_hero_weapons, getweapon(#"hero_minigun_t8_lv2"), 0);
         arrayinsert(a_hero_weapons, getweapon(#"hero_minigun_t8_lv3"), 0);
-        ability_player::function_a40d04ca(add_cmd_with_root, pid, a_hero_weapons, "<unknown string>", menu_index);
+        ability_player::function_a40d04ca(add_cmd_with_root, pid, a_hero_weapons, "<dev string:x70>", menu_index);
         menu_index++;
         menu_index = ability_player::abilities_devgui_add_power(add_cmd_with_root, pid, menu_index);
         menu_index = ability_player::function_2e0162e9(add_cmd_with_root, pid, menu_index);
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x7f>");
         return menu_index;
     }
 
@@ -256,7 +255,7 @@ function init_upgrade() {
 // Checksum 0x3f2b4d36, Offset: 0x1700
 // Size: 0x5a
 function get_hint(equipment) {
-    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<dev string:xd5>");
     return level.zombie_equipment[equipment].hint;
 }
 
@@ -265,7 +264,7 @@ function get_hint(equipment) {
 // Checksum 0x45c40936, Offset: 0x1768
 // Size: 0x5a
 function get_howto_hint(equipment) {
-    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<dev string:xd5>");
     return level.zombie_equipment[equipment].howto_hint;
 }
 
@@ -274,7 +273,7 @@ function get_howto_hint(equipment) {
 // Checksum 0x6f7fb347, Offset: 0x17d0
 // Size: 0x5a
 function get_icon(equipment) {
-    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<dev string:xd5>");
     return level.zombie_equipment[equipment].hint_icon;
 }
 
@@ -283,7 +282,7 @@ function get_icon(equipment) {
 // Checksum 0x56329eba, Offset: 0x1838
 // Size: 0x5a
 function get_notify_strings(equipment) {
-    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<dev string:xd5>");
     return level.zombie_equipment[equipment].notify_strings;
 }
 
@@ -292,7 +291,7 @@ function get_notify_strings(equipment) {
 // Checksum 0x62127ed3, Offset: 0x18a0
 // Size: 0xce
 function add_to_trigger_list(equipment) {
-    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<dev string:xd5>");
     level.zombie_equipment[equipment].triggers[level.zombie_equipment[equipment].triggers.size] = self;
     level.zombie_equipment[equipment].models[level.zombie_equipment[equipment].models.size] = getent(self.target, "targetname");
 }
@@ -368,7 +367,7 @@ function take(equipment = self get_player_equipment()) {
     if (equipment == self getcurrentweapon()) {
         current_weapon = 1;
     }
-    println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
+    println("<dev string:x119>" + self.name + "<dev string:x12a>" + getweaponname(equipment) + "<dev string:x133>");
     notify_strings = get_notify_strings(equipment);
     if (isdefined(self.current_equipment_active[equipment]) && self.current_equipment_active[equipment]) {
         self.current_equipment_active[equipment] = 0;
@@ -406,7 +405,7 @@ function give(equipment) {
     if (self has_player_equipment(equipment)) {
         return;
     }
-    println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
+    println("<dev string:x119>" + self.name + "<dev string:x137>" + getweaponname(equipment) + "<dev string:x133>");
     curr_weapon = self getcurrentweapon();
     curr_weapon_was_curr_equipment = self is_player_equipment(curr_weapon);
     self take();
@@ -429,7 +428,7 @@ function buy(equipment) {
     if (isstring(equipment)) {
         equipment = getweapon(equipment);
     }
-    println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
+    println("<dev string:x119>" + self.name + "<dev string:x13f>" + getweaponname(equipment) + "<dev string:x133>");
     if (isdefined(self.current_equipment) && equipment != self.current_equipment && self.current_equipment != level.weaponnone) {
         self take(self.current_equipment);
     }
@@ -598,13 +597,13 @@ function init_hint_hudelem(x, y, alignx, aligny, fontscale, alpha) {
         }
         if (self issplitscreen()) {
             if (getdvarint(#"splitscreen_playercount", 0) >= 3) {
-                self.hintelem init_hint_hudelem(160, 90, "<unknown string>", "<unknown string>", font_scale * 0.8, 1);
+                self.hintelem init_hint_hudelem(160, 90, "<dev string:x14a>", "<dev string:x153>", font_scale * 0.8, 1);
             } else {
-                self.hintelem init_hint_hudelem(160, 90, "<unknown string>", "<unknown string>", font_scale, 1);
+                self.hintelem init_hint_hudelem(160, 90, "<dev string:x14a>", "<dev string:x153>", font_scale, 1);
             }
             return;
         }
-        self.hintelem init_hint_hudelem(320, ypos, "<unknown string>", "<unknown string>", font_scale, 1);
+        self.hintelem init_hint_hudelem(320, ypos, "<dev string:x14a>", "<dev string:x15c>", font_scale, 1);
     }
 
 #/
@@ -854,17 +853,17 @@ function function_379f6b5d(n_base_damage, var_177ec733 = 1, var_b68e56de = 1, va
     // Checksum 0x6f6385f6, Offset: 0x35e0
     // Size: 0x1ce
     function function_e418901e() {
-        setdvar(#"give_equipment", "<unknown string>");
+        setdvar(#"give_equipment", "<dev string:x165>");
         waitframe(1);
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x168>");
         waitframe(1);
-        str_cmd = "<unknown string>" + "<unknown string>" + "<unknown string>";
+        str_cmd = "<dev string:x183>" + "<dev string:x1bf>" + "<dev string:x1c6>";
         adddebugcommand(str_cmd);
         while (true) {
             equipment_id = getdvarstring(#"give_equipment");
-            if (equipment_id != "<unknown string>") {
+            if (equipment_id != "<dev string:x165>") {
                 foreach (player in getplayers()) {
-                    if (equipment_id == "<unknown string>") {
+                    if (equipment_id == "<dev string:x1bf>") {
                         player take();
                         continue;
                     }
@@ -872,7 +871,7 @@ function function_379f6b5d(n_base_damage, var_177ec733 = 1, var_b68e56de = 1, va
                         player buy(equipment_id);
                     }
                 }
-                setdvar(#"give_equipment", "<unknown string>");
+                setdvar(#"give_equipment", "<dev string:x165>");
             }
             waitframe(1);
         }
@@ -884,11 +883,11 @@ function function_379f6b5d(n_base_damage, var_177ec733 = 1, var_b68e56de = 1, va
     // Size: 0xa4
     function function_1d34b98d(equipment) {
         waitframe(1);
-        level flag::wait_till("<unknown string>");
+        level flag::wait_till("<dev string:x168>");
         waitframe(1);
         if (isdefined(equipment)) {
             equipment_id = getweaponname(equipment);
-            str_cmd = "<unknown string>" + equipment_id + "<unknown string>" + equipment_id + "<unknown string>";
+            str_cmd = "<dev string:x1cb>" + equipment_id + "<dev string:x1e7>" + equipment_id + "<dev string:x1c6>";
             adddebugcommand(str_cmd);
         }
     }

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\player\player_stats.gsc;
@@ -82,7 +81,7 @@ function function_5e412e4a(var_ae6c2bbe) {
 // Checksum 0x41c40c30, Offset: 0x980
 // Size: 0x5e
 function function_d81873aa(delaysec) {
-    assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
+    assert(delaysec >= 0, "<dev string:x38>" + "<dev string:x5a>");
     delaysec *= level.var_1f8ac687;
     level.var_a425ed89 = delaysec;
 }
@@ -92,7 +91,7 @@ function function_d81873aa(delaysec) {
 // Checksum 0x50a7bbce, Offset: 0x9e8
 // Size: 0x5e
 function function_114f128a(delaysec) {
-    assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
+    assert(delaysec >= 0, "<dev string:x7d>" + "<dev string:x5a>");
     delaysec *= level.var_1f8ac687;
     level.var_eb37cf2e = delaysec;
 }
@@ -102,7 +101,7 @@ function function_114f128a(delaysec) {
 // Checksum 0x33096311, Offset: 0xa50
 // Size: 0x330
 function add_circle(var_3b9f4abf, mapwidth = 0, mapheight = 0, radius = 0, damage = 0, damageinterval = 0, waitsec = 0, scalesec = 0, var_227b1773 = 0, var_42682706 = 0, var_83c673f5 = 0, var_55ad5e4 = 0, var_c3bf31b = 0, var_18fa918d = 0) {
-    assert(radius <= 150000, "<unknown string>" + "<unknown string>" + radius + "<unknown string>" + 150000);
+    assert(radius <= 150000, "<dev string:xa0>" + "<dev string:xbb>" + radius + "<dev string:xc7>" + 150000);
     var_55ad5e4 = int(var_55ad5e4 * 1000);
     var_c3bf31b = int(var_c3bf31b * 1000);
     waitsec *= level.var_326f5774;
@@ -139,7 +138,7 @@ function private shuffle_circles() {
             waitframe(1);
             if (function_a0004b40(var_b0b91d4, var_8e3c3c5b, finalindex, oobtriggers)) {
                 /#
-                    iprintlnbold("<unknown string>" + attempts);
+                    iprintlnbold("<dev string:xfb>" + attempts);
                 #/
                 level flagsys::set(#"hash_43bac6444a9b65f3");
                 return;
@@ -148,7 +147,7 @@ function private shuffle_circles() {
         }
     }
     /#
-        iprintlnbold("<unknown string>" + attempts);
+        iprintlnbold("<dev string:x110>" + attempts);
     #/
     foreach (circle in level.deathcircles) {
         circle.origin = circle.var_3b9f4abf;
@@ -820,7 +819,7 @@ function function_27d5d349() {
         return;
     }
     for (i = 0; i < level.deathcircles.size; i++) {
-        assert(i < 14, "<unknown string>");
+        assert(i < 14, "<dev string:x129>");
         circle = level.deathcircles[i];
         match_record::function_7a93acec(#"death_circle", i, #"origin", circle.origin);
         match_record::set_stat(#"death_circle", i, #"radius", int(circle.radius));
@@ -909,31 +908,31 @@ function function_4dc40125() {
         while (!canadddebugcommand()) {
             waitframe(1);
         }
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>" + 150000);
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x162>");
+        adddebugcommand("<dev string:x185>");
+        adddebugcommand("<dev string:x1b5>");
+        adddebugcommand("<dev string:x1e1>");
+        adddebugcommand("<dev string:x20f>" + 150000);
+        adddebugcommand("<dev string:x230>");
         if (getdvarint(#"testcircleradius", 0) > 0) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x255>");
+            adddebugcommand("<dev string:x2a0>");
         }
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x2f1>");
+        adddebugcommand("<dev string:x339>");
+        adddebugcommand("<dev string:x38b>");
+        adddebugcommand("<dev string:x3d1>");
+        adddebugcommand("<dev string:x42f>");
+        adddebugcommand("<dev string:x47b>");
+        adddebugcommand("<dev string:x4d1>");
         while (true) {
             wait(0.25);
-            dvarstr = getdvarstring(#"devgui_deathcircle", "<unknown string>");
-            if (dvarstr == "<unknown string>") {
+            dvarstr = getdvarstring(#"devgui_deathcircle", "<dev string:x519>");
+            if (dvarstr == "<dev string:x519>") {
                 continue;
             }
-            setdvar(#"devgui_deathcircle", "<unknown string>");
-            args = strtok(dvarstr, "<unknown string>");
+            setdvar(#"devgui_deathcircle", "<dev string:x519>");
+            args = strtok(dvarstr, "<dev string:x51c>");
             switch (args[0]) {
             case #"clear":
                 devgui_clear();
@@ -975,10 +974,10 @@ function function_4dc40125() {
                         draw_circle(circle, debugindex, var_36b41a8, color, var_a15ea324);
                     }
                 } else {
-                    minimaporigins = getentarray("<unknown string>", "<unknown string>");
+                    minimaporigins = getentarray("<dev string:x520>", "<dev string:x531>");
                     foreach (minimaporigin in minimaporigins) {
                         sphere(minimaporigin.origin, 50 * var_36b41a8, (0, 1, 1));
-                        print3d(minimaporigin.origin, "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+                        print3d(minimaporigin.origin, "<dev string:x53e>", (1, 1, 1), 1, var_36b41a8);
                     }
                     index = 0;
                     foreach (circle in level.deathcircles) {
@@ -1027,15 +1026,15 @@ function function_4dc40125() {
         if (testcircleradius > 0) {
             level.deathcircles = [];
             level.var_a425ed89 = 0;
-            centerstr = getdvarstring(#"hash_76b26d6e696b82e8", "<unknown string>");
+            centerstr = getdvarstring(#"hash_76b26d6e696b82e8", "<dev string:x519>");
             damage = getdvarint(#"testcircledamage", 0);
             damageinterval = getdvarint(#"hash_700ae39acbcd84e5", 60);
             waitsec = getdvarint(#"hash_5779bb38cf5f61a9", 36000);
             scalesec = getdvarint(#"hash_537f05a2ad3b9d7a", 60);
             intensity = getdvarint(#"hash_16271dbe4d00b41e", 1);
             center = (level.mapcenter[0], level.mapcenter[1], 0);
-            if (centerstr != "<unknown string>") {
-                var_ad7b95c0 = strtok(centerstr, "<unknown string>");
+            if (centerstr != "<dev string:x519>") {
+                var_ad7b95c0 = strtok(centerstr, "<dev string:x54f>");
                 center = (float(var_ad7b95c0[0]), float(var_ad7b95c0[1]), 0);
             }
             add_circle(center, 0, 0, testcircleradius, damage, damageinterval, waitsec, scalesec, intensity);
@@ -1138,19 +1137,19 @@ function function_4dc40125() {
         printorigin = origin;
         print3d(printorigin, index, (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
-        print3d(printorigin, "<unknown string>" + circle.radius, (1, 1, 1), 1, var_36b41a8);
+        print3d(printorigin, "<dev string:x553>" + circle.radius, (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
-        print3d(printorigin, "<unknown string>" + circle.damage, (1, 1, 1), 1, var_36b41a8);
+        print3d(printorigin, "<dev string:x55e>" + circle.damage, (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
-        print3d(printorigin, "<unknown string>" + circle.damageinterval, (1, 1, 1), 1, var_36b41a8);
+        print3d(printorigin, "<dev string:x569>" + circle.damageinterval, (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
-        print3d(printorigin, "<unknown string>" + (isdefined(circle.var_227b1773) ? circle.var_227b1773 : "<unknown string>"), (1, 1, 1), 1, var_36b41a8);
+        print3d(printorigin, "<dev string:x57d>" + (isdefined(circle.var_227b1773) ? circle.var_227b1773 : "<dev string:x593>"), (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
-        print3d(printorigin, "<unknown string>" + (isdefined(circle.waitsec) ? circle.waitsec : "<unknown string>") + "<unknown string>" + (isdefined(circle.var_42682706) ? circle.var_42682706 : "<unknown string>") + "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+        print3d(printorigin, "<dev string:x597>" + (isdefined(circle.waitsec) ? circle.waitsec : "<dev string:x593>") + "<dev string:x5a4>" + (isdefined(circle.var_42682706) ? circle.var_42682706 : "<dev string:x593>") + "<dev string:x5a9>", (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
-        print3d(printorigin, "<unknown string>" + (isdefined(circle.scalesec) ? circle.scalesec : "<unknown string>") + "<unknown string>" + (isdefined(circle.var_83c673f5) ? circle.var_83c673f5 : "<unknown string>") + "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+        print3d(printorigin, "<dev string:x5ad>" + (isdefined(circle.scalesec) ? circle.scalesec : "<dev string:x593>") + "<dev string:x5a4>" + (isdefined(circle.var_83c673f5) ? circle.var_83c673f5 : "<dev string:x593>") + "<dev string:x5a9>", (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
-        print3d(printorigin, "<unknown string>" + (isdefined(circle.attempts) ? circle.attempts : "<unknown string>"), (1, 1, 1), 1, var_36b41a8);
+        print3d(printorigin, "<dev string:x5bb>" + (isdefined(circle.attempts) ? circle.attempts : "<dev string:x593>"), (1, 1, 1), 1, var_36b41a8);
         printorigin += printoffset;
         sphere(origin, var_e96493f7, color);
         circle(origin, circle.radius, color, 0, 1);
@@ -1164,15 +1163,15 @@ function function_4dc40125() {
             var_3c4ec32 = var_3b9f4abf + (halfwidth * -1, halfheight * -1, 0);
             var_55e2210d = var_3b9f4abf + (halfwidth * -1, halfheight, 0);
             sphere(var_3b9f4abf, var_e96493f7, (1, 0, 1));
-            print3d(var_3b9f4abf, "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+            print3d(var_3b9f4abf, "<dev string:x5c8>", (1, 1, 1), 1, var_36b41a8);
             sphere(var_b99d691b, var_e96493f7, (1, 0, 1));
-            print3d(var_b99d691b, "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+            print3d(var_b99d691b, "<dev string:x5d7>", (1, 1, 1), 1, var_36b41a8);
             sphere(var_91d25b4a, var_e96493f7, (1, 0, 1));
-            print3d(var_91d25b4a, "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+            print3d(var_91d25b4a, "<dev string:x5dc>", (1, 1, 1), 1, var_36b41a8);
             sphere(var_3c4ec32, var_e96493f7, (1, 0, 1));
-            print3d(var_3c4ec32, "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+            print3d(var_3c4ec32, "<dev string:x5e1>", (1, 1, 1), 1, var_36b41a8);
             sphere(var_55e2210d, var_e96493f7, (1, 0, 1));
-            print3d(var_55e2210d, "<unknown string>", (1, 1, 1), 1, var_36b41a8);
+            print3d(var_55e2210d, "<dev string:x5e6>", (1, 1, 1), 1, var_36b41a8);
             line(var_b99d691b, var_91d25b4a, (1, 0, 1));
             line(var_91d25b4a, var_3c4ec32, (1, 0, 1));
             line(var_3c4ec32, var_55e2210d, (1, 0, 1));

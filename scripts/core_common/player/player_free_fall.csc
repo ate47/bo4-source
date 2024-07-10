@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_7ca3324ffa5389e4;
 #using scripts\core_common\math_shared.csc;
 #using scripts\core_common\util_shared.csc;
@@ -86,7 +85,7 @@ function private function_26d46af3(eventstruct) {
     if (!(isplayer(self) || self isplayercorpse())) {
         return;
     }
-    println(self.name + "<unknown string>" + eventstruct.parachute);
+    println(self.name + "<dev string:x38>" + eventstruct.parachute);
     parachute = self namespace_eb06e24d::get_parachute();
     var_dbb94a = parachute.("parachuteLit");
     if (eventstruct.parachute) {
@@ -111,12 +110,12 @@ function private function_26d46af3(eventstruct) {
         }
     }
     if (eventstruct.parachute) {
-        println(self.name + "<unknown string>");
+        println(self.name + "<dev string:x4f>");
         self callback::add_entity_callback(#"death", &cleanup_player);
         self function_fb8d00bf();
         return;
     }
-    println(self.name + "<unknown string>");
+    println(self.name + "<dev string:x72>");
     self callback::function_52ac9652(#"death", &cleanup_player);
 }
 
@@ -128,7 +127,7 @@ function private function_c9a18304(eventstruct) {
     if (!(isplayer(self) || self isplayercorpse())) {
         return;
     }
-    println(self.name + "<unknown string>" + eventstruct.freefall);
+    println(self.name + "<dev string:x98>" + eventstruct.freefall);
     if (eventstruct.freefall) {
         if (eventstruct.var_695a7111) {
             self function_a43054a8();
@@ -180,7 +179,7 @@ function function_cc5ed6ff(pitch, min_pitch, max_pitch, var_2ff50798, var_9988e8
         while (true) {
             vel = self getvelocity();
             speed = length(vel);
-            iprintlnbold("<unknown string>" + speed + "<unknown string>" + viewpitch);
+            iprintlnbold("<dev string:xaf>" + speed + "<dev string:xbc>" + viewpitch);
             wait(1);
         }
     }
@@ -198,7 +197,7 @@ function function_ec3388e3(localclientnum, var_695a7111) {
         self thread function_3a56fe1b(localclientnum);
         self thread function_2bdd64a4(localclientnum);
     }
-    println(self.name + "<unknown string>" + var_695a7111);
+    println(self.name + "<dev string:xca>" + var_695a7111);
     self callback::add_entity_callback(#"death", &cleanup_player);
     self thread function_e8a9e948(localclientnum, var_695a7111);
     self function_975ebf4d(localclientnum, var_695a7111);
@@ -319,7 +318,7 @@ function function_a993866(localclientnum, var_9a17b15c) {
         self endon(#"death", #"freefallend", #"disconnect");
         wait(var_9a17b15c);
     }
-    println(self.name + "<unknown string>" + var_9a17b15c);
+    println(self.name + "<dev string:xdf>" + var_9a17b15c);
     trail_fx = namespace_eb06e24d::get_trailfx();
     if (self function_21c0fa55()) {
         if (isdefined(trail_fx.("body_trail"))) {
@@ -454,7 +453,7 @@ function function_577c7bd0(localclientnum) {
 // Size: 0x19c
 function freefallend(localclientnum) {
     self notify(#"freefallend");
-    println(self.name + "<unknown string>");
+    println(self.name + "<dev string:xf8>");
     self callback::function_52ac9652(#"death", &cleanup_player);
     function_f404a4cc();
     if (self function_21c0fa55()) {
@@ -548,12 +547,12 @@ function parachute_detach() {
 // Size: 0xc6
 function function_f404a4cc() {
     if (isdefined(self.var_d7cbaf63)) {
-        println(self.name + "<unknown string>");
+        println(self.name + "<dev string:x109>");
         stopfx(self.localclientnum, self.var_d7cbaf63);
         self.var_d7cbaf63 = undefined;
     }
     if (isdefined(self.var_636d5543)) {
-        println(self.name + "<unknown string>");
+        println(self.name + "<dev string:x11f>");
         stopfx(self.localclientnum, self.var_636d5543);
         self.var_636d5543 = undefined;
     }

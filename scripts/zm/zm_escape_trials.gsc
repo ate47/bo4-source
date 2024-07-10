@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_71683688316a8eea;
 #using scripts\zm_common\trials\zm_trial_forced_reload.gsc;
 #using script_1d1e3c193b0a51d;

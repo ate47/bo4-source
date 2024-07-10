@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace animationselectortable;
 
 // Namespace animationselectortable/animation_selector_table

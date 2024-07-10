@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_offshore_alt_sound;
 
 // Namespace mp_offshore_alt_sound/mp_offshore_alt_sound

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\powerup\zm_powerup_nuke.gsc;
 #using scripts\zm\ai\zm_ai_werewolf_interface.gsc;
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
@@ -355,11 +354,11 @@ function private function_1aba0132() {
             var_a4d90ed8 = anglestoforward(eyeangles);
             /#
                 if (self cansee(self.enemy)) {
-                    recordline(eyeorigin, eyeorigin + var_a4d90ed8 * 100, (0, 1, 0), "<unknown string>");
+                    recordline(eyeorigin, eyeorigin + var_a4d90ed8 * 100, (0, 1, 0), "<dev string:x38>");
                 } else {
-                    recordline(eyeorigin, eyeorigin + var_a4d90ed8 * 100, (1, 0, 0), "<unknown string>");
+                    recordline(eyeorigin, eyeorigin + var_a4d90ed8 * 100, (1, 0, 0), "<dev string:x38>");
                 }
-                record3dtext("<unknown string>" + distance, self.origin, (0, 0, 1), "<unknown string>");
+                record3dtext("<dev string:x41>" + distance, self.origin, (0, 0, 1), "<dev string:x38>");
             #/
         }
         waitframe(1);
@@ -470,7 +469,7 @@ function private function_ebf85268(inflictor, attacker, damage, idflags, meansof
     }
     /#
         if (level.var_abe0b71d) {
-            iprintlnbold("<unknown string>" + var_786d7e06.damage_scale + "<unknown string>" + final_damage + "<unknown string>" + self.health - final_damage);
+            iprintlnbold("<dev string:x44>" + var_786d7e06.damage_scale + "<dev string:x52>" + final_damage + "<dev string:x5c>" + self.health - final_damage);
         }
     #/
     if (isdefined(self.var_c59e2dbf)) {
@@ -1051,8 +1050,8 @@ function private function_7ad7aa7d(entity, mocompanim, mocompanimblendouttime, m
             movedelta = getmovedelta(mocompanim, 0, 1, entity);
             animendpos = entity localtoworldcoords(movedelta);
             distance = distance(entity.origin, animendpos);
-            recordcircle(animendpos, 3, (0, 1, 0), "<unknown string>");
-            record3dtext("<unknown string>" + distance, animendpos, (0, 1, 0), "<unknown string>");
+            recordcircle(animendpos, 3, (0, 1, 0), "<dev string:x38>");
+            record3dtext("<dev string:x41>" + distance, animendpos, (0, 1, 0), "<dev string:x38>");
         #/
     }
 }
@@ -1095,23 +1094,23 @@ function function_8b63ee0e(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (!var_201660e6) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x69>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_cf699df5 > var_65cbfb52 && var_776ddabf >= entity ai::function_9139c839().var_d781a7cc * entity ai::function_9139c839().var_d781a7cc) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x7a>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_776ddabf >= entity ai::function_9139c839().var_e49498dc * entity ai::function_9139c839().var_e49498dc) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x88>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         }
         if (var_535d098c) {
             /#
-                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<dev string:x96>", entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
             #/
             entity.meleeinfo.var_425c4c8b = 1;
         }
@@ -1126,11 +1125,11 @@ function function_8b63ee0e(entity, mocompanim, mocompanimblendouttime, mocompani
             var_7948b2f3 = withinzrange && withinfov;
             var_425c4c8b = (isvisible || var_535d098c) && var_7948b2f3;
             /#
-                reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
+                reasons = "<dev string:xa9>" + isvisible + "<dev string:xb0>" + withinzrange + "<dev string:xb6>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<dev string:x38>");
                 } else {
-                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<dev string:x38>");
                 }
             #/
             if (var_425c4c8b) {
@@ -1155,8 +1154,8 @@ function function_8b63ee0e(entity, mocompanim, mocompanimblendouttime, mocompani
         if (currentanimtime <= entity.meleeinfo.var_6392c3a2) {
             assert(isdefined(entity.meleeinfo.var_10b8b6d1) && isdefined(entity.meleeinfo.var_8b9a15a6));
             /#
-                recordsphere(entity.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
-                recordsphere(entity.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<unknown string>");
+                recordsphere(entity.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<dev string:x38>");
+                recordsphere(entity.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<dev string:x38>");
             #/
             adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * entity.meleeinfo.var_8b9a15a6;
             entity forceteleport(adjustedorigin);
@@ -1266,7 +1265,7 @@ function private summonwolves(entity) {
         foreach (werewolf in werewolves) {
             nearest_nodes = getnodesinradiussorted(werewolf.origin, 1024, 0);
             foreach (node in nearest_nodes) {
-                if (node.script_noteworthy === "<unknown string>" && !iscovernode(node) && ispathnode(node)) {
+                if (node.script_noteworthy === "<dev string:xbe>" && !iscovernode(node) && ispathnode(node)) {
                     var_71c80ceb = zm_ai_utility::get_pathnode_path(node);
                     zm_ai_utility::start_patrol(werewolf, var_71c80ceb.path, var_71c80ceb.loops, undefined, undefined);
                     break;
@@ -1295,7 +1294,7 @@ function private summonwolves(entity) {
         foreach (var_dd54fdb1 in var_d480edb7.weakpoints) {
             hittag = isdefined(var_dd54fdb1.var_51e8b151) ? var_dd54fdb1.var_51e8b151 : var_dd54fdb1.var_910e2f9b;
             if (isdefined(hittag)) {
-                adddebugcommand("<unknown string>" + hittag + "<unknown string>" + hittag + "<unknown string>");
+                adddebugcommand("<dev string:xce>" + hittag + "<dev string:xf9>" + hittag + "<dev string:x129>");
             }
         }
     }
@@ -1317,30 +1316,30 @@ function private summonwolves(entity) {
     // Checksum 0x303e5aa9, Offset: 0x5c08
     // Size: 0x428
     function private function_e79ce40a() {
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x12e>");
         spawners = getactorspawnerarray();
         if (isdefined(spawners)) {
             foreach (spawner in spawners) {
                 if (spawner.var_9fde8624 === #"werewolf_hallion" && isdefined(spawner.script_noteworthy)) {
-                    adddebugcommand("<unknown string>");
+                    adddebugcommand("<dev string:x175>");
                     break;
                 }
             }
         }
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x1cc>");
+        adddebugcommand("<dev string:x215>");
+        adddebugcommand("<dev string:x264>");
+        adddebugcommand("<dev string:x2bb>");
         function_91180121();
         level.var_abe0b71d = 0;
         while (true) {
             waitframe(1);
-            string = getdvarstring(#"hash_4fe745cc8a7d9b8c", "<unknown string>");
-            cmd = strtok(string, "<unknown string>");
+            string = getdvarstring(#"hash_4fe745cc8a7d9b8c", "<dev string:x41>");
+            cmd = strtok(string, "<dev string:x30a>");
             if (cmd.size > 0) {
                 switch (cmd[0]) {
                 case #"spawn":
-                    zm_devgui::spawn_archetype("<unknown string>");
+                    zm_devgui::spawn_archetype("<dev string:x30e>");
                     break;
                 case #"spawn_hallion":
                     spawners = getspawnerarray();
@@ -1370,7 +1369,7 @@ function private summonwolves(entity) {
                     break;
                 }
             }
-            setdvar(#"hash_4fe745cc8a7d9b8c", "<unknown string>");
+            setdvar(#"hash_4fe745cc8a7d9b8c", "<dev string:x41>");
         }
     }
 

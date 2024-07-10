@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace zm_orange_fx;
 
 // Namespace zm_orange_fx/zm_orange_fx

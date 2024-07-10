@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\gametypes\warzone.gsc;
 #using scripts\mp_common\player\player_record.gsc;
 #using scripts\mp_common\gametypes\globallogic.gsc;

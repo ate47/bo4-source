@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_riotshield.csc;
 #using script_54a67b7ed7b385e6;
 #using scripts\zm\zm_zodt8_tutorial.csc;

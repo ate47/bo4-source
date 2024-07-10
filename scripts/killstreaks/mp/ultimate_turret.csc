@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.csc;
 #using scripts\killstreaks\ultimate_turret_shared.csc;
 #using scripts\killstreaks\mp\killstreak_vehicle.csc;

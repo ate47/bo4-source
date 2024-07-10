@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm\ai\zm_ai_dog_interface.gsc;
 #using scripts\core_common\system_shared.gsc;
@@ -95,7 +94,7 @@ function bb_getshouldrunstatus() {
     }
     /#
         if (isdefined(self.ispuppet) && self.ispuppet) {
-            return "<unknown string>";
+            return "<dev string:x38>";
         }
     #/
     if (isdefined(self.hasseenfavoriteenemy) && self.hasseenfavoriteenemy || ai::hasaiattribute(self, "sprint") && ai::getaiattribute(self, "sprint")) {

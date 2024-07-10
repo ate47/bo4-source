@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_white_util.csc;
 #using scripts\zm\weapons\zm_weap_flamethrower.csc;
 #using scripts\zm\weapons\zm_weap_gravityspikes.csc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_items.gsc;
 #using scripts\zm_common\zm_crafting.gsc;
 #using scripts\zm_common\zm_devgui.gsc;
@@ -46,7 +45,7 @@ function __init__() {
     clientfield::register("actor", "brutus_lock_down", 1, 1, "int");
     level.var_d668eae7 = getentarray("brutus_zombie_spawner", "script_noteworthy");
     if (level.var_d668eae7.size == 0) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         return;
     }
     /#
@@ -459,7 +458,7 @@ function brutus_round_spawn_failsafe_respawn() {
 function attempt_brutus_spawn(var_d8206b1d, str_zone_name, var_dde9ff11 = 0, var_68ffecfb = 0) {
     if (level.brutus_count + var_d8206b1d > level.brutus_max_count && !(isdefined(level.var_a2831281) && level.var_a2831281) || isdefined(level.var_153e9058) && level.var_153e9058) {
         /#
-            iprintln("<unknown string>");
+            iprintln("<dev string:x82>");
         #/
         level thread function_5e4d2f31();
         return false;
@@ -906,7 +905,7 @@ function private function_9398e511() {
     // Size: 0x44
     function function_60f8374c() {
         zm_devgui::add_custom_devgui_callback(&function_2e0d129b);
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:xc0>");
     }
 
     // Namespace zombie_brutus_util/ai_brutus_util

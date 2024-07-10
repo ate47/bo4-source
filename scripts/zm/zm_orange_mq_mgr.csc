@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_mq_sendoff.csc;
 #using script_6fdaa897ed596805;
 #using scripts\zm\zm_orange_mq_fuse.csc;

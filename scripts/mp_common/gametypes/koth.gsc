@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\util.gsc;
 #using scripts\mp_common\spawnbeacon.gsc;
 #using scripts\mp_common\player\player_utils.gsc;
@@ -209,7 +208,7 @@ function spawn_first_zone(delay) {
         return;
     }
     /#
-        print("<unknown string>" + level.zone.trigorigin[0] + "<unknown string>" + level.zone.trigorigin[1] + "<unknown string>" + level.zone.trigorigin[2] + "<unknown string>");
+        print("<dev string:x38>" + level.zone.trigorigin[0] + "<dev string:x4a>" + level.zone.trigorigin[1] + "<dev string:x4a>" + level.zone.trigorigin[2] + "<dev string:x4e>");
     #/
     level.zone enable_influencers(1);
     level.zone.gameobject.trigger allowtacticalinsertion(0);
@@ -231,7 +230,7 @@ function spawn_next_zone() {
     matchrecordroundend();
     if (isdefined(level.zone)) {
         /#
-            print("<unknown string>" + level.zone.trigorigin[0] + "<unknown string>" + level.zone.trigorigin[1] + "<unknown string>" + level.zone.trigorigin[2] + "<unknown string>");
+            print("<dev string:x38>" + level.zone.trigorigin[0] + "<dev string:x4a>" + level.zone.trigorigin[1] + "<dev string:x4a>" + level.zone.trigorigin[2] + "<dev string:x4e>");
         #/
         level.zone enable_influencers(1);
         spawn_beacon::function_18f38647(level.zone.trig);
@@ -536,7 +535,7 @@ function onzonecapture(sentient) {
     capture_team = player.team;
     capturetime = gettime();
     /#
-        print("<unknown string>");
+        print("<dev string:x52>");
     #/
     pause_time();
     string = #"hash_446b7b0b3e4df72e";
@@ -632,7 +631,7 @@ function give_capture_credit(touchlist, string, capturetime, capture_team, lastc
             continue;
         }
         /#
-            player iprintlnbold("<unknown string>");
+            player iprintlnbold("<dev string:x62>");
         #/
     }
 }
@@ -795,11 +794,11 @@ function comparezoneindexes(zone_a, zone_b) {
         return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
-        println("<unknown string>" + zone_a.origin);
+        println("<dev string:xa9>" + zone_a.origin);
         return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
-        println("<unknown string>" + zone_b.origin);
+        println("<dev string:xa9>" + zone_b.origin);
         return false;
     }
     if (script_index_a > script_index_b) {

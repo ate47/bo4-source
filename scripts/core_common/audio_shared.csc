@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\struct.csc;
 #using scripts\core_common\trigger_shared.csc;
@@ -216,7 +215,7 @@ function function_c9705ad4() {
 // Size: 0x58
 function snd_set_snapshot(state) {
     level._sndnextsnapshot = state;
-    println("underwater_end" + state + "<unknown string>");
+    println("<dev string:x38>" + state + "<dev string:x56>");
     level notify(#"new_bus");
 }
 
@@ -412,7 +411,7 @@ function startsoundloops() {
         delay = 0;
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
-                println("<unknown string>" + loopers.size + "<unknown string>");
+                println("<dev string:x5a>" + loopers.size + "<dev string:x87>");
             }
         #/
         for (i = 0; i < loopers.size; i++) {
@@ -428,7 +427,7 @@ function startsoundloops() {
     }
     /#
         if (getdvarint(#"debug_audio", 0) > 0) {
-            println("<unknown string>");
+            println("<dev string:x94>");
         }
     #/
 }
@@ -443,7 +442,7 @@ function startlineemitters() {
         delay = 0;
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
-                println("<unknown string>" + lineemitters.size + "<unknown string>");
+                println("<dev string:xb5>" + lineemitters.size + "<dev string:x87>");
             }
         #/
         for (i = 0; i < lineemitters.size; i++) {
@@ -459,7 +458,7 @@ function startlineemitters() {
     }
     /#
         if (getdvarint(#"debug_audio", 0) > 0) {
-            println("<unknown string>");
+            println("<dev string:xe8>");
         }
     #/
 }
@@ -471,7 +470,7 @@ function startlineemitters() {
 function startrattles() {
     rattles = struct::get_array("sound_rattle", "script_label");
     if (isdefined(rattles)) {
-        println("<unknown string>" + rattles.size + "<unknown string>");
+        println("<dev string:x10f>" + rattles.size + "<dev string:x118>");
         delay = 0;
         for (i = 0; i < rattles.size; i++) {
             soundrattlesetup(rattles[i].script_sound, rattles[i].origin);
@@ -497,8 +496,8 @@ function init_audio_triggers(localclientnum) {
     materialtrigs = getentarray(localclientnum, "audio_material_trigger", "targetname");
     /#
         if (getdvarint(#"debug_audio", 0) > 0) {
-            println("<unknown string>" + steptrigs.size + "<unknown string>");
-            println("<unknown string>" + materialtrigs.size + "<unknown string>");
+            println("<dev string:x123>" + steptrigs.size + "<dev string:x12f>");
+            println("<dev string:x123>" + materialtrigs.size + "<dev string:x147>");
         }
     #/
     array::thread_all(steptrigs, &audio_step_trigger, localclientnum);
@@ -633,7 +632,7 @@ function trig_leave_audio_step_trigger(trigplayer) {
         trigplayer.insteptrigger -= 1;
     }
     if (trigplayer.insteptrigger < 0) {
-        println("<unknown string>");
+        println("<dev string:x163>");
         trigplayer.insteptrigger = 0;
     }
     if (trigplayer.insteptrigger == 0) {
@@ -814,7 +813,7 @@ function snd_play_auto_fx(fxid, alias, offsetx, offsety, offsetz, onground, area
     // Size: 0x74
     function snd_print_fx_id(fxid, type, ent) {
         if (getdvarint(#"debug_audio", 0) > 0) {
-            println("<unknown string>" + fxid + "<unknown string>" + type);
+            println("<dev string:x1ac>" + fxid + "<dev string:x1c0>" + type);
         }
     }
 
@@ -829,8 +828,8 @@ function debug_line_emitter() {
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
                 line(self.start, self.end, (0, 1, 0));
-                print3d(self.start, "<unknown string>", (0, 0.8, 0), 1, 3, 1);
-                print3d(self.end, "<unknown string>", (0, 0.8, 0), 1, 3, 1);
+                print3d(self.start, "<dev string:x1cc>", (0, 0.8, 0), 1, 3, 1);
+                print3d(self.end, "<dev string:x1d4>", (0, 0.8, 0), 1, 3, 1);
                 print3d(self.origin, self.script_sound, (0, 0.8, 0), 1, 3, 1);
             }
             waitframe(1);

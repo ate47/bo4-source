@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_utils.gsc;
 #using scripts\mp_common\gametypes\ct_bots.gsc;
 #using scripts\core_common\vehicle_ai_shared.gsc;
@@ -196,7 +195,7 @@ function function_f02d23b2(var_f6a3e268) {
 }
 
 // Namespace ct_ai/ct_ai
-// Params c, eflags: 0x0
+// Params 12, eflags: 0x0
 // Checksum 0xf37e0c64, Offset: 0xc48
 // Size: 0xba
 function function_45a6adc0(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {

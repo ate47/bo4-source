@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\core_common\ai\zombie_utility.gsc;
@@ -337,8 +336,8 @@ function private get_wait_locations_in_zones(a_zones) {
         }
         /#
             str_zone = function_9e72a96(zone);
-            println("<unknown string>" + str_zone + "<unknown string>");
-            iprintln("<unknown string>" + str_zone + "<unknown string>");
+            println("<dev string:x38>" + str_zone + "<dev string:x4b>");
+            iprintln("<dev string:x38>" + str_zone + "<dev string:x4b>");
         #/
     }
     return a_wait_locations;

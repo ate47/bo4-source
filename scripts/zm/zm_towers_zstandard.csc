@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace zm_towers_zstandard;
 
 // Namespace zm_towers_zstandard/zm_towers_zstandard

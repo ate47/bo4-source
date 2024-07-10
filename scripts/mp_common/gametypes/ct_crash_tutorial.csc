@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\gametypes\ct_core.csc;
 
 #namespace ct_crash_tutorial;

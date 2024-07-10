@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
@@ -93,7 +92,7 @@ function monitorgpsjammer() {
             graceperiods = self function_ee4a9054(#"grace_periods");
             minspeed = self function_ee4a9054(#"min_speed");
             mindistance = self function_ee4a9054(#"min_distance");
-            timeperiod = self function_ee4a9054("<unknown string>");
+            timeperiod = self function_ee4a9054("<dev string:x38>");
             timeperiodsec = float(timeperiod) / 1000;
             minspeedsq = minspeed * minspeed;
             mindistancesq = mindistance * mindistance;

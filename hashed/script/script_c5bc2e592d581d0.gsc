@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\perks.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\bots\bot.gsc;
@@ -267,8 +266,8 @@ function private function_e0bf989(planner, params) {
 // Checksum 0x69a501f, Offset: 0x11a8
 // Size: 0x696
 function private function_14c67eb3(planner, constants) {
-    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<dev string:x38>" + "<dev string:x46>" + "<dev string:x76>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<dev string:x38>" + "<dev string:x46>" + "<dev string:xa0>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -363,8 +362,8 @@ function private function_e442b780(planner, params) {
 // Checksum 0xec0d5cab, Offset: 0x19e0
 // Size: 0x75e
 function private function_2af9b775(planner, constants) {
-    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<dev string:x38>" + "<dev string:xcf>" + "<dev string:x76>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<dev string:x38>" + "<dev string:xcf>" + "<dev string:xa0>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -378,8 +377,8 @@ function private function_2af9b775(planner, constants) {
     foreach (var_a1cd9f8e in blockers) {
         /#
             if (isdefined(var_a1cd9f8e) && getdvarint(#"hash_76cdb24d903cc201", 0)) {
-                recordline(getplayers()[0].origin, var_a1cd9f8e[#"origin"], (1, 0.5, 0), "<unknown string>");
-                recordsphere(var_a1cd9f8e[#"origin"], 4, (1, 0.5, 0), "<unknown string>");
+                recordline(getplayers()[0].origin, var_a1cd9f8e[#"origin"], (1, 0.5, 0), "<dev string:x101>");
+                recordsphere(var_a1cd9f8e[#"origin"], 4, (1, 0.5, 0), "<dev string:x10a>");
             }
         #/
         if (isdefined(var_a1cd9f8e) && var_a1cd9f8e[#"cost"] <= params.var_3ff64dd6 && var_a1cd9f8e[#"cost"] / params.var_3ff64dd6 <= constants[#"affordability"]) {
@@ -393,7 +392,7 @@ function private function_2af9b775(planner, constants) {
             if (closeenough) {
                 /#
                     if (isdefined(var_a1cd9f8e) && getdvarint(#"hash_76cdb24d903cc201", 0)) {
-                        recordsphere(var_a1cd9f8e[#"origin"] + (0, 0, 10), 4, (0, 1, 0), "<unknown string>");
+                        recordsphere(var_a1cd9f8e[#"origin"] + (0, 0, 10), 4, (0, 1, 0), "<dev string:x10a>");
                     }
                 #/
                 var_270c0711[var_270c0711.size] = var_a1cd9f8e;
@@ -426,7 +425,7 @@ function private function_2af9b775(planner, constants) {
         planner::setblackboardattribute(planner, #"zm_pathable_blockers", array(var_2fcdec8b));
         /#
             if (isdefined(var_2fcdec8b) && getdvarint(#"hash_76cdb24d903cc201", 0)) {
-                recordsphere(var_2fcdec8b[#"origin"] + (0, 0, 30), 8, (1, 0.752941, 0.796078), "<unknown string>");
+                recordsphere(var_2fcdec8b[#"origin"] + (0, 0, 30), 8, (1, 0.752941, 0.796078), "<dev string:x10a>");
             }
         #/
         params.blocker = var_2fcdec8b;
@@ -474,8 +473,8 @@ function private function_73f656f5(planner, params) {
 // Checksum 0x854070ef, Offset: 0x23a8
 // Size: 0x5ae
 function private function_e057582f(planner, constants) {
-    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<dev string:x38>" + "<dev string:x113>" + "<dev string:x76>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<dev string:x38>" + "<dev string:x113>" + "<dev string:xa0>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -597,7 +596,7 @@ function private function_29e16403(planner, params) {
 // Checksum 0xa6f1339e, Offset: 0x2de0
 // Size: 0x54e
 function private function_4f6a626d(planner, constants) {
-    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<dev string:x38>" + "<dev string:x143>" + "<dev string:x76>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -702,7 +701,7 @@ function private function_6e8fe489(planner, params) {
 // Checksum 0x715dfb9a, Offset: 0x35a8
 // Size: 0x35e
 function private function_557051df(planner, constants) {
-    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<dev string:x38>" + "<dev string:x175>" + "<dev string:x76>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -805,9 +804,9 @@ function private function_6fe73720(planner, params) {
 // Checksum 0x8800586, Offset: 0x3cd8
 // Size: 0x88e
 function private function_393b9c76(planner, constants) {
-    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    assert(isint(constants[#"hash_357612272d0dca05"]) || isfloat(constants[#"hash_357612272d0dca05"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<dev string:x38>" + "<dev string:x1a6>" + "<dev string:x76>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<dev string:x38>" + "<dev string:x1a6>" + "<dev string:xa0>");
+    assert(isint(constants[#"hash_357612272d0dca05"]) || isfloat(constants[#"hash_357612272d0dca05"]), "<dev string:x38>" + "<dev string:x1a6>" + "<dev string:x1d8>");
     var_66c1c955 = isdefined(constants[#"highcost"]) && constants[#"highcost"];
     var_45bdcccb = isdefined(constants[#"highrank"]) && constants[#"highrank"];
     if (var_45bdcccb) {
@@ -949,12 +948,12 @@ function private function_8030d0d2(planner, params) {
     // Checksum 0xda054daa, Offset: 0x4888
     // Size: 0x11e
     function debug_setup() {
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x209>");
+        adddebugcommand("<dev string:x22c>");
+        adddebugcommand("<dev string:x24f>");
+        adddebugcommand("<dev string:x278>");
+        adddebugcommand("<dev string:x2c0>");
+        adddebugcommand("<dev string:x308>");
         while (true) {
             if (getdvarint(#"hash_43057e52c6abc0a", 0)) {
                 function_8f74831a();
@@ -994,9 +993,9 @@ function private function_8030d0d2(planner, params) {
     // Size: 0x18e
     function function_9259be56() {
         obbs = [];
-        var_521da80d = array("<unknown string>", "<unknown string>", "<unknown string>");
+        var_521da80d = array("<dev string:x34a>", "<dev string:x358>", "<dev string:x36d>");
         foreach (var_b849a5e7 in var_521da80d) {
-            doorblockers = getentarray(var_b849a5e7, "<unknown string>");
+            doorblockers = getentarray(var_b849a5e7, "<dev string:x37d>");
             foreach (doorblocker in doorblockers) {
                 obb = function_fc9f37f4(doorblocker);
                 obb.points = tacticalquery(#"stratcom_tacquery_trigger", obb);

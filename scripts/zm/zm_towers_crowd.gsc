@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_6334bf874cddcc13;
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_audio.gsc;
@@ -55,7 +54,7 @@ function init() {
     array::thread_all(a_t_crowd_damage, &crowd_damage_trigger);
     level.var_857878e6 = &function_857878e6;
     /#
-        zm_net::network_choke_init("crowd_power_up_available_good_partial", 3);
+        zm_net::network_choke_init("<dev string:x38>", 3);
     #/
 }
 
@@ -615,7 +614,7 @@ function crowd_throw_item(var_2bd26cff) {
                 self shellshock(#"pain_zm", 3);
                 self playsound(#"hash_270c80055a8d296c");
                 /#
-                    self thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, self.name + "<unknown string>");
+                    self thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, self.name + "<dev string:x52>");
                 #/
             }
             wait(0.05);
@@ -662,7 +661,7 @@ function crowd_throw_item(var_2bd26cff) {
                 if (isplayer(var_264cf1f9) && isplayer(self)) {
                     if (var_264cf1f9 == self) {
                         /#
-                            self thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, var_264cf1f9.name + "<unknown string>" + str_powerup + "<unknown string>");
+                            self thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, var_264cf1f9.name + "<dev string:x84>" + str_powerup + "<dev string:x90>");
                         #/
                     } else {
                         if (str_powerup == "hero_weapon_power" || str_powerup == "bonus_points_player") {
@@ -674,7 +673,7 @@ function crowd_throw_item(var_2bd26cff) {
                             }
                         }
                         /#
-                            thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, var_264cf1f9.name + "<unknown string>" + self.name + "<unknown string>" + str_powerup);
+                            thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, var_264cf1f9.name + "<dev string:xa3>" + self.name + "<dev string:xad>" + str_powerup);
                         #/
                     }
                 }
@@ -816,7 +815,7 @@ function function_b8dfa139(str_event) {
         break;
     }
     /#
-        self thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, str_event);
+        self thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, str_event);
     #/
     if (self.var_7df228aa.var_def266a8 <= 0 && self.var_7df228aa.var_def266a8 + var_9c93ba8f >= 0 || self.var_7df228aa.var_def266a8 >= 0 && self.var_7df228aa.var_def266a8 + var_9c93ba8f <= 0) {
         var_ac39950d = 1;
@@ -887,7 +886,7 @@ function function_9da7999d(var_9c93ba8f = 0, var_ac39950d = 0, str_event) {
         return;
     }
     /#
-        self thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, "<unknown string>");
+        self thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, "<dev string:xb3>");
     #/
 }
 
@@ -945,7 +944,7 @@ function function_acab98ce(var_82c32aa7, var_9c93ba8f, var_ac39950d = 0, str_eve
         self notify(#"hash_722941ef1aaab69f", {#var_ac39950d:var_ac39950d, #str_event:str_event});
     }
     /#
-        self thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, function_9e72a96(var_82c32aa7) + self.name);
+        self thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, function_9e72a96(var_82c32aa7) + self.name);
     #/
     if (!var_ac39950d) {
         self thread function_692a63ae();
@@ -1170,7 +1169,7 @@ function private function_692a63ae() {
     self endon("5a2e6094bb4e37c6");
     self endon(#"disconnect");
     /#
-        if (level flag::get("<unknown string>")) {
+        if (level flag::get("<dev string:xf6>")) {
             return;
         }
     #/
@@ -1289,47 +1288,47 @@ function function_308a32f0(e_player) {
     // Checksum 0xeb78b753, Offset: 0x5600
     // Size: 0x40c
     function function_fbf74c49() {
-        level flag::init("<unknown string>");
-        level flag::init("<unknown string>");
+        level flag::init("<dev string:x116>");
+        level flag::init("<dev string:xf6>");
         zm_devgui::add_custom_devgui_callback(&function_e0bb973);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x136>");
+        adddebugcommand("<dev string:x195>");
+        adddebugcommand("<dev string:x1fd>");
+        adddebugcommand("<dev string:x26b>");
+        adddebugcommand("<dev string:x2d7>");
         if (getdvarint(#"zm_debug_ee", 0)) {
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x330>");
         }
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>" + 240 + "<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x385>");
+        adddebugcommand("<dev string:x3db>");
+        adddebugcommand("<dev string:x44d>");
+        adddebugcommand("<dev string:x49f>");
+        adddebugcommand("<dev string:x4f7>");
+        adddebugcommand("<dev string:x547>");
+        adddebugcommand("<dev string:x5a1>");
+        adddebugcommand("<dev string:x5fd>");
+        adddebugcommand("<dev string:x65b>");
+        adddebugcommand("<dev string:x6b9>");
+        adddebugcommand("<dev string:x725>");
+        adddebugcommand("<dev string:x7ac>");
+        adddebugcommand("<dev string:x804>");
+        adddebugcommand("<dev string:x868>");
+        adddebugcommand("<dev string:x8d2>");
+        adddebugcommand("<dev string:x93c>");
+        adddebugcommand("<dev string:x9a6>");
+        adddebugcommand("<dev string:xa0a>");
+        adddebugcommand("<dev string:xa8e>");
+        adddebugcommand("<dev string:xae2>");
+        adddebugcommand("<dev string:xb38>");
+        adddebugcommand("<dev string:xb93>");
+        adddebugcommand("<dev string:xbef>");
+        adddebugcommand("<dev string:xc4d>");
+        adddebugcommand("<dev string:xccd>" + 240 + "<dev string:xd10>");
+        adddebugcommand("<dev string:xd43>");
+        adddebugcommand("<dev string:xdaf>");
+        adddebugcommand("<dev string:xe2c>");
+        adddebugcommand("<dev string:xe8b>");
+        adddebugcommand("<dev string:xee7>");
         level thread function_eb6ff6a5();
     }
 
@@ -1339,9 +1338,9 @@ function function_308a32f0(e_player) {
     // Size: 0x102
     function function_eb6ff6a5() {
         while (true) {
-            if (level flag::get("<unknown string>")) {
+            if (level flag::get("<dev string:x116>")) {
                 foreach (i, player in level.players) {
-                    debug2dtext((1100, 300 + 20 * i, 0), player.name + "<unknown string>" + player.var_7df228aa.var_def266a8, undefined, undefined, undefined, 1);
+                    debug2dtext((1100, 300 + 20 * i, 0), player.name + "<dev string:xf51>" + player.var_7df228aa.var_def266a8, undefined, undefined, undefined, 1);
                 }
             }
             waitframe(1);
@@ -1365,18 +1364,18 @@ function function_308a32f0(e_player) {
             level flag::set(#"hash_80fa0541e21f744");
             break;
         case #"hash_4f715fd76b8686d":
-            level flag::toggle("<unknown string>");
-            if (level flag::get("<unknown string>")) {
-                thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, "<unknown string>");
+            level flag::toggle("<dev string:xf6>");
+            if (level flag::get("<dev string:xf6>")) {
+                thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, "<dev string:xf67>");
                 foreach (player in level.players) {
                     player.var_7df228aa.var_e6476b32 = 0;
                 }
             } else {
-                thread zm_net::network_choke_action("crowd_power_up_available_good_partial", &function_f3e454c1, "<unknown string>" + 10 + "<unknown string>");
+                thread zm_net::network_choke_action("<dev string:x38>", &function_f3e454c1, "<dev string:xf96>" + 10 + "<dev string:xfc9>");
             }
             break;
         case #"hash_f7e831658b8fb28":
-            level flag::toggle("<unknown string>");
+            level flag::toggle("<dev string:x116>");
             break;
         case #"hash_4b6ce84335cf00ad":
             if (!isdefined(level.var_55fdc354)) {
@@ -1384,28 +1383,28 @@ function function_308a32f0(e_player) {
             }
             switch (level.var_55fdc354) {
             case 0:
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xfdc>");
                 function_5c1184e(1);
                 function_aec5ec5a(0);
                 function_696a8df0(0);
                 function_8237489a(0);
                 break;
             case 1:
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:xff7>");
                 function_aec5ec5a(1);
                 function_5c1184e(0);
                 function_696a8df0(0);
                 function_8237489a(0);
                 break;
             case 2:
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x1015>");
                 function_696a8df0(1);
                 function_5c1184e(0);
                 function_aec5ec5a(0);
                 function_8237489a(0);
                 break;
             case 3:
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x102b>");
                 function_8237489a(1);
                 function_5c1184e(0);
                 function_aec5ec5a(0);
@@ -1423,7 +1422,7 @@ function function_308a32f0(e_player) {
             wait(0.5);
             break;
         case #"hash_1e51753996594cc3":
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x1042>");
             level.var_55fdc354 = 3;
             function_8237489a(1);
             function_5c1184e(0);

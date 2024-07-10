@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\player\player_stats.gsc;
 #using scripts\core_common\player\player_role.gsc;
@@ -171,8 +170,8 @@ function function_323c6715() {
             if (!isdefined(player) || isbot(player)) {
                 continue;
             }
-            assert(isdefined(player.pers), "<unknown string>");
-            assert(isdefined(player.pers[#"hvo"]), "<unknown string>");
+            assert(isdefined(player.pers), "<dev string:x38>");
+            assert(isdefined(player.pers[#"hvo"]), "<dev string:x4f>");
             var_9b4eeccc = function_b14806c6(player player_role::get(), currentsessionmode());
             if (!isdefined(var_9b4eeccc) || isdefined(hvo.var_447510ee) && hvo.var_447510ee != var_9b4eeccc || !isdefined(player.pers) || !isdefined(player.pers[#"hvo"])) {
                 continue;

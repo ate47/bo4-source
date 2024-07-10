@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\scene_shared.gsc;
 
 #namespace timecard_control;

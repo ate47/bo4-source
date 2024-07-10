@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\character_unlock_woods_fixup.gsc;
 #using scripts\wz_common\character_unlock_fixup.gsc;
 #using scripts\wz_common\character_unlock.gsc;

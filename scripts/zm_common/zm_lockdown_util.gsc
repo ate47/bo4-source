@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
 #using scripts\zm_common\zm_spawner.gsc;
@@ -1133,63 +1132,63 @@ function function_61a9bc58() {
             return;
         }
         foreach (var_ca00d79a in entity.var_d187874c) {
-            text = entity getentitynumber() + "<unknown string>";
+            text = entity getentitynumber() + "<dev string:x38>";
             color = (1, 0, 0);
             switch (var_ca00d79a.reason) {
             case 0:
-                text += "<unknown string>";
+                text += "<dev string:x3d>";
                 break;
             case 1:
-                text += "<unknown string>";
+                text += "<dev string:x53>";
                 break;
             case 2:
-                text += "<unknown string>";
+                text += "<dev string:x6c>";
                 break;
             case 3:
-                text += "<unknown string>";
+                text += "<dev string:x7a>";
                 break;
             case 4:
-                text += "<unknown string>";
+                text += "<dev string:x87>";
                 break;
             case 5:
-                text += "<unknown string>";
+                text += "<dev string:x94>";
                 break;
             case 6:
-                text += "<unknown string>";
+                text += "<dev string:xa6>";
                 break;
             case 8:
-                text += "<unknown string>" + var_ca00d79a.args[0];
+                text += "<dev string:xbb>" + var_ca00d79a.args[0];
                 break;
             case 9:
-                text += "<unknown string>";
+                text += "<dev string:xcd>";
                 break;
             case 7:
-                text += "<unknown string>";
+                text += "<dev string:xe0>";
                 break;
             case 11:
-                text += "<unknown string>" + var_ca00d79a.args[0];
+                text += "<dev string:xea>" + var_ca00d79a.args[0];
                 break;
             case 10:
-                text += "<unknown string>";
+                text += "<dev string:xf8>";
                 color = (0, 1, 0);
                 break;
             case 13:
-                text += "<unknown string>";
+                text += "<dev string:x102>";
                 break;
             case 14:
-                text += "<unknown string>";
+                text += "<dev string:x110>";
                 recordstar(var_ca00d79a.args[0], (0, 1, 1));
                 recordstar(var_ca00d79a.args[1].origin, (1, 0, 1));
                 recordline(var_ca00d79a.args[1].origin, var_ca00d79a.args[1].origin + anglestoforward(var_ca00d79a.args[1].angles) * 10, (1, 1, 0));
                 break;
             case 15:
-                text += "<unknown string>";
+                text += "<dev string:x135>";
                 break;
             case 16:
-                text += "<unknown string>";
+                text += "<dev string:x145>";
                 break;
             case 17:
-                text += "<unknown string>";
+                text += "<dev string:x157>";
                 break;
             }
             recordstar(var_ca00d79a.stub.origin, (1, 1, 0));
@@ -1216,11 +1215,11 @@ function function_61a9bc58() {
     // Size: 0xa4
     function private function_946bb116() {
         zm_devgui::add_custom_devgui_callback(&function_2765c63);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x16d>");
+        adddebugcommand("<dev string:x1a7>");
+        adddebugcommand("<dev string:x1cd>");
+        adddebugcommand("<dev string:x208>");
+        adddebugcommand("<dev string:x269>");
     }
 
     // Namespace zm_lockdown_util/zm_lockdown_util
@@ -1245,8 +1244,8 @@ function function_61a9bc58() {
     // Checksum 0x41d379c4, Offset: 0x4588
     // Size: 0x3b4
     function private function_6e1690d5() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x2ca>");
+        self endon("<dev string:x2ca>");
         level endon(#"hash_52b90374b27fcb8a");
         stubs = arraycombine(level.exterior_goals, level.var_16cfe3ef, 0, 0);
         stubs = arraycombine(stubs, level.pap_lockdown_stubs, 0, 0);

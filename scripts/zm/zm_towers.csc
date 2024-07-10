@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_3f48538738283547;
 #using scripts\zm\ai\zm_ai_elephant.csc;
 #using scripts\zm\weapons\zm_weap_riotshield.csc;
@@ -758,7 +757,7 @@ function crowd_react(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 // Checksum 0x1d345ccd, Offset: 0x5990
 // Size: 0xfec
 function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
-    assert(isdefined(var_eafa8a1a), "tag_eye");
+    assert(isdefined(var_eafa8a1a), "<dev string:x38>");
     var_55a37c48 = isdefined(var_55a37c48) ? var_55a37c48 : randomfloatrange(0.75, 1);
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
@@ -838,7 +837,7 @@ function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
 // Checksum 0x370f30, Offset: 0x6988
 // Size: 0xbca
 function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
-    assert(isdefined(var_eafa8a1a), "vox_plr_3_exert_punch_give");
+    assert(isdefined(var_eafa8a1a), "<dev string:x7c>");
     var_55a37c48 = isdefined(var_55a37c48) ? var_55a37c48 : randomfloatrange(0.75, 1);
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
@@ -2180,7 +2179,7 @@ function startzmbspawnersoundloops() {
         delay = 0;
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
-                println("<unknown string>" + loopers.size + "<unknown string>");
+                println("<dev string:xc5>" + loopers.size + "<dev string:xff>");
             }
         #/
         for (i = 0; i < loopers.size; i++) {
@@ -2194,7 +2193,7 @@ function startzmbspawnersoundloops() {
     }
     /#
         if (getdvarint(#"debug_audio", 0) > 0) {
-            println("<unknown string>");
+            println("<dev string:x10c>");
         }
     #/
 }

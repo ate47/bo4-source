@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\throttle_shared.gsc;
 #using scripts\weapons\weaponobjects.gsc;
 #using scripts\core_common\player\player_loadout.gsc;

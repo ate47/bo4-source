@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_water.gsc;
 #using scripts\zm_common\zm_powerups.gsc;
 #using scripts\zm_common\zm.gsc;
@@ -33,7 +32,7 @@ function __main__() {
 }
 
 // Namespace zm_weap_tundragun/zm_weap_tundragun
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0x54aaf5bd, Offset: 0x1a8
 // Size: 0xba
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

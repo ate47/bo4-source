@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\core_common\ai\zombie_death.gsc;
 #using scripts\zm_common\trials\zm_trial_special_enemy.gsc;
@@ -223,7 +222,7 @@ function private function_f5c01f5() {
 // Size: 0x630
 function round_spawning() {
     if (level.zm_loc_types[#"zombie_location"].size < 1) {
-        assertmsg("<unknown string>");
+        assertmsg("<dev string:x38>");
         return;
     }
     level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), level.round_number);
@@ -509,11 +508,11 @@ function round_spawning_test() {
 function round_start() {
     setdvar(#"hash_52a4767bd6da84f1", 0);
     if (!isdefined(level.zombie_spawners) || level.zombie_spawners.size == 0) {
-        println("<unknown string>");
+        println("<dev string:x9f>");
         level flag::set("begin_spawning");
         return;
     }
-    println("<unknown string>");
+    println("<dev string:xd2>");
     if (isdefined(level.var_b2f996e6)) {
         [[ level.var_b2f996e6 ]]();
     } else {
@@ -719,7 +718,7 @@ function private function_89888d49() {
 // Checksum 0x6bd4b601, Offset: 0x2b98
 // Size: 0xdb8
 function round_think(restart = 0) {
-    println("<unknown string>");
+    println("<dev string:xec>");
     level endon(#"end_round_think", #"end_game");
     if (!(isdefined(restart) && restart)) {
         if (isdefined(level.var_12e11406)) {
@@ -756,7 +755,7 @@ function round_think(restart = 0) {
         if (!(isdefined(level.headshots_only) && level.headshots_only) && !restart) {
             level thread award_grenades_for_survivors();
         }
-        println("<unknown string>" + level.round_number + "<unknown string>" + level.players.size);
+        println("<dev string:x106>" + level.round_number + "<dev string:x122>" + level.players.size);
         level.round_start_time = gettime();
         while (level.zm_loc_types[#"zombie_location"].size <= 0) {
             wait(0.1);
@@ -987,14 +986,14 @@ function get_zombie_spawn_delay(n_round) {
             if (getdvarint(#"zombiemode_debug_zombie_count", 0)) {
                 if (!isdefined(level.debug_zombie_count_hud)) {
                     level.debug_zombie_count_hud = newdebughudelem();
-                    level.debug_zombie_count_hud.alignx = "<unknown string>";
+                    level.debug_zombie_count_hud.alignx = "<dev string:x134>";
                     level.debug_zombie_count_hud.x = 100;
                     level.debug_zombie_count_hud.y = 10;
-                    level.debug_zombie_count_hud settext("<unknown string>");
+                    level.debug_zombie_count_hud settext("<dev string:x13c>");
                 }
                 currentcount = zombie_utility::get_current_zombie_count();
                 number_to_kill = level.zombie_total;
-                level.debug_zombie_count_hud settext("<unknown string>" + currentcount + "<unknown string>" + number_to_kill);
+                level.debug_zombie_count_hud settext("<dev string:x145>" + currentcount + "<dev string:x14e>" + number_to_kill);
             } else if (isdefined(level.debug_zombie_count_hud)) {
                 level.debug_zombie_count_hud destroy();
                 level.debug_zombie_count_hud = undefined;

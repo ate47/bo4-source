@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\array_shared.gsc;
 
 #namespace match_record;
@@ -10,7 +9,7 @@
     // Checksum 0x172dc815, Offset: 0x70
     // Size: 0x38
     function function_d92cb558(result, vararg) {
-        pathstr = "<unknown string>";
+        pathstr = "<dev string:x38>";
         if (isdefined(result)) {
         }
         return pathstr;

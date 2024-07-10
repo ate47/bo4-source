@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\status_effects\status_effect_util.gsc;
 #using scripts\abilities\ability_util.gsc;
 #using scripts\abilities\ability_player.gsc;

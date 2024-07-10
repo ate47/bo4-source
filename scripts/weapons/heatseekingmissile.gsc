@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\dev_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
@@ -405,10 +404,10 @@ function targetwithinrangeofplayspace(target) {
         self.lockoncanceledmessage.fontscale = 1.25;
         self.lockoncanceledmessage.x = 0;
         self.lockoncanceledmessage.y = 50;
-        self.lockoncanceledmessage.alignx = "<unknown string>";
-        self.lockoncanceledmessage.aligny = "<unknown string>";
-        self.lockoncanceledmessage.horzalign = "<unknown string>";
-        self.lockoncanceledmessage.vertalign = "<unknown string>";
+        self.lockoncanceledmessage.alignx = "<dev string:x38>";
+        self.lockoncanceledmessage.aligny = "<dev string:x41>";
+        self.lockoncanceledmessage.horzalign = "<dev string:x38>";
+        self.lockoncanceledmessage.vertalign = "<dev string:x41>";
         self.lockoncanceledmessage.foreground = 1;
         self.lockoncanceledmessage.hidewheninmenu = 1;
         self.lockoncanceledmessage.archived = 0;

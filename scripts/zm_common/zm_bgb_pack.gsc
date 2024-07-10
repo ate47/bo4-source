@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial_util.gsc;
 #using scripts\zm_common\trials\zm_trial_disable_bgbs.gsc;
 #using scripts\zm_common\zm_round_logic.gsc;
@@ -119,8 +118,8 @@ function private on_player_spawned() {
 // Checksum 0xdebe80e0, Offset: 0x660
 // Size: 0xb6
 function function_9d4db403(name, var_81f8ab0f, var_f1d1c3e6) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    assert(isdefined(var_81f8ab0f), "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x38>" + name + "<dev string:x63>");
+    assert(isdefined(var_81f8ab0f), "<dev string:x7c>");
     level.bgb[name].var_81f8ab0f = var_81f8ab0f;
     level.bgb[name].var_f1d1c3e6 = var_f1d1c3e6;
 }
@@ -130,7 +129,7 @@ function function_9d4db403(name, var_81f8ab0f, var_f1d1c3e6) {
 // Checksum 0xbbeb70a9, Offset: 0x720
 // Size: 0x6a
 function function_430d063b(name) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x38>" + name + "<dev string:x63>");
     level.bgb[name].var_58860b3 = 1;
 }
 
@@ -139,7 +138,7 @@ function function_430d063b(name) {
 // Checksum 0xf342a385, Offset: 0x798
 // Size: 0x6a
 function function_a1194b9a(name) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x38>" + name + "<dev string:x63>");
     level.bgb[name].var_8fd0fb47 = 1;
 }
 
@@ -148,7 +147,7 @@ function function_a1194b9a(name) {
 // Checksum 0x8df2f08d, Offset: 0x810
 // Size: 0x6a
 function function_4de6c08a(name) {
-    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(level.bgb[name]), "<dev string:x38>" + name + "<dev string:x63>");
     level.bgb[name].var_8b1ba43c = 1;
 }
 
@@ -496,7 +495,7 @@ function global_cooldown(n_index) {
     #/
     result = self waittilltimeout(n_cooldown, #"hash_738988561a113fac");
     /#
-        if (result._notify === "<unknown string>") {
+        if (result._notify === "<dev string:xc3>") {
             var_10b7b97a = 1;
         }
     #/
@@ -601,7 +600,7 @@ function slot_cooldown(n_index) {
     wait(0.05);
     result = self waittilltimeout(n_cooldown, #"hash_738988561a113fac");
     /#
-        if (result._notify === "<unknown string>") {
+        if (result._notify === "<dev string:xc3>") {
             var_10b7b97a = 1;
         }
     #/
@@ -900,10 +899,10 @@ function function_59004002(str_bgb, b_disable = 1) {
     // Size: 0x136
     function function_72ffe91() {
         level.var_d03d9cf3 = [];
-        level.var_d03d9cf3[0] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
-        level.var_d03d9cf3[1] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
-        level.var_d03d9cf3[2] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
-        level.var_d03d9cf3[3] = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
+        level.var_d03d9cf3[0] = array("<dev string:xd5>", "<dev string:xf1>", "<dev string:x109>", "<dev string:x11d>", "<dev string:x133>");
+        level.var_d03d9cf3[1] = array("<dev string:x147>", "<dev string:x15e>", "<dev string:x172>", "<dev string:x186>", "<dev string:x19b>");
+        level.var_d03d9cf3[2] = array("<dev string:x1b6>", "<dev string:x1ca>", "<dev string:x1ea>", "<dev string:x1ff>", "<dev string:x21a>");
+        level.var_d03d9cf3[3] = array("<dev string:x230>", "<dev string:x243>", "<dev string:x25b>", "<dev string:x26f>", "<dev string:x28b>");
     }
 
     // Namespace bgb_pack/zm_bgb_pack
@@ -911,22 +910,22 @@ function function_59004002(str_bgb, b_disable = 1) {
     // Checksum 0xcc1b6adb, Offset: 0x2f38
     // Size: 0x268
     function private setup_devgui() {
-        level flagsys::wait_till("<unknown string>");
+        level flagsys::wait_till("<dev string:x2a1>");
         wait(1);
-        bgb_devgui_base = "<unknown string>";
+        bgb_devgui_base = "<dev string:x2bc>";
         keys = getarraykeys(level.bgb);
         zm_devgui::add_custom_devgui_callback(&function_c1091a8f);
-        adddebugcommand(bgb_devgui_base + "<unknown string>");
-        adddebugcommand(bgb_devgui_base + "<unknown string>");
-        adddebugcommand(bgb_devgui_base + "<unknown string>");
-        adddebugcommand(bgb_devgui_base + "<unknown string>");
-        adddebugcommand(bgb_devgui_base + "<unknown string>" + "<unknown string>");
-        adddebugcommand(bgb_devgui_base + "<unknown string>" + "<unknown string>");
-        adddebugcommand(bgb_devgui_base + "<unknown string>" + "<unknown string>");
-        adddebugcommand(bgb_devgui_base + "<unknown string>" + "<unknown string>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x2d2>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x31a>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x364>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x3a4>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x3e6>" + "<dev string:x401>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x40c>" + "<dev string:x42a>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x435>" + "<dev string:x452>");
+        adddebugcommand(bgb_devgui_base + "<dev string:x45d>" + "<dev string:x47a>");
         foreach (key in keys) {
             name = function_9e72a96(level.bgb[key].name);
-            adddebugcommand(bgb_devgui_base + name + "<unknown string>" + name + "<unknown string>");
+            adddebugcommand(bgb_devgui_base + name + "<dev string:x485>" + name + "<dev string:x4a4>");
         }
     }
 

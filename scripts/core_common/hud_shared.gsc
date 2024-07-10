@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_6103fadfc4a82745;
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\util_shared.gsc;
@@ -1151,7 +1150,7 @@ function mission_result(str_winning_team, var_db3d629e = #"hash_6ef5bcff7fb1d1ab
         array::thread_all(a_players, &lui::screen_fade_out, 2, undefined, "mission_result", 1);
         wait(2.5);
         /#
-            iprintln("<unknown string>" + var_c8b60423 + "<unknown string>");
+            iprintln("<dev string:x38>" + var_c8b60423 + "<dev string:x63>");
         #/
         level util::streamer_wait(undefined, undefined, var_c8b60423);
         function_ba453727();

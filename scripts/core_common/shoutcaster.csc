@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\abilities\gadgets\gadget_vision_pulse.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\renderoverridebundle.csc;

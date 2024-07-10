@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.csc;
 #using scripts\zm_common\zm_wallbuy.csc;
 #using scripts\zm_common\zm_utility.csc;
@@ -507,7 +506,7 @@ function function_c0257c1d(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self.var_1e8f5c4b = util::playfxontag(localclientnum, level._effect["vision_stone_wormhole_" + newval], self, "tag_fx_wormhole");
         /#
-            self thread function_466c2fa3(level._effect["<unknown string>" + newval], newval);
+            self thread function_466c2fa3(level._effect["<dev string:x38>" + newval], newval);
         #/
         /#
             level thread function_5545acc1(newval);
@@ -562,7 +561,7 @@ function function_6812bd74(localclientnum, oldval, newval, bnewent, binitialsnap
     function function_466c2fa3(str_fx, newval) {
         str_hint = function_f415205b(newval);
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0) && isdefined(self)) {
-            debug2dtext((100, 800, 0), "<unknown string>" + newval + "<unknown string>" + str_hint + "<unknown string>" + function_9e72a96(str_fx), (1, 1, 1));
+            debug2dtext((100, 800, 0), "<dev string:x51>" + newval + "<dev string:x5b>" + str_hint + "<dev string:x60>" + function_9e72a96(str_fx), (1, 1, 1));
             waitframe(1);
         }
     }
@@ -575,8 +574,8 @@ function function_6812bd74(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             return;
         }
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x66>");
+        self endon("<dev string:x66>");
         str_hint = function_f415205b(newval);
         if (!isdefined(level.var_d23472c9)) {
             level.var_d23472c9 = [];
@@ -586,10 +585,10 @@ function function_6812bd74(localclientnum, oldval, newval, bnewent, binitialsnap
         n_offset = 24;
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             var_8b7c6b64 = 0;
-            debug2dtext(v_pos, "<unknown string>", (0, 1, 0));
+            debug2dtext(v_pos, "<dev string:x77>", (0, 1, 0));
             foreach (i, n_step in level.var_d23472c9) {
                 var_8b7c6b64 += n_offset;
-                debug2dtext(v_pos + (0, var_8b7c6b64, 0), function_9e72a96(i) + "<unknown string>" + n_step, (0, 1, 0));
+                debug2dtext(v_pos + (0, var_8b7c6b64, 0), function_9e72a96(i) + "<dev string:x5b>" + n_step, (0, 1, 0));
             }
             waitframe(1);
         }
@@ -602,58 +601,58 @@ function function_6812bd74(localclientnum, oldval, newval, bnewent, binitialsnap
     function function_f415205b(newval) {
         switch (newval) {
         case 1:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x89>";
             break;
         case 2:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x9d>";
             break;
         case 3:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:xb5>";
             break;
         case 4:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:xcd>";
             break;
         case 5:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:xe3>";
             break;
         case 6:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:xf5>";
             break;
         case 7:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x109>";
             break;
         case 8:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x11b>";
             break;
         case 9:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x12c>";
             break;
         case 10:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x13b>";
             break;
         case 11:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x14c>";
             break;
         case 12:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x15a>";
             break;
         case 13:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x169>";
             break;
         case 14:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x177>";
             break;
         case 15:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x182>";
             break;
         case 16:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x182>";
             break;
         case 17:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x18d>";
             break;
         default:
-            str_hint = "<unknown string>";
+            str_hint = "<dev string:x19a>";
             break;
         }
         return str_hint;
@@ -664,8 +663,8 @@ function function_6812bd74(localclientnum, oldval, newval, bnewent, binitialsnap
     // Checksum 0xa7a63a6d, Offset: 0x36c8
     // Size: 0x86
     function function_e0caca4e(org, ang) {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x19e>");
+        self endon("<dev string:x19e>");
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0) && isdefined(self)) {
             debug_arrow(org, ang, (0, 1, 0));
             waitframe(1);

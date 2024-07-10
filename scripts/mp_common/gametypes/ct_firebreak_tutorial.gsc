@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\mp_common\gametypes\globallogic_score.gsc;
 #using scripts\mp_common\gametypes\ct_vo.gsc;
@@ -375,7 +374,7 @@ function function_c84bc48(_hash) {
 function function_d0815f2e() {
     level endon(#"combattraining_logic_finished", #"tut_stop");
     /#
-        if (level flag::get("colbounds_tut_fin1_fight5_start_off") && level.var_e3146bce !== "stand") {
+        if (level flag::get("<dev string:x38>") && level.var_e3146bce !== "<dev string:x44>") {
             return;
         }
     #/
@@ -453,7 +452,7 @@ function function_29b75dd8() {
 function function_de43fab3() {
     level endon(#"combattraining_logic_finished", #"tut_stop");
     /#
-        if (level flag::get("colbounds_tut_fin1_fight5_start_off") && level.var_e3146bce !== "damage") {
+        if (level flag::get("<dev string:x38>") && level.var_e3146bce !== "<dev string:x55>") {
             return;
         }
     #/
@@ -602,7 +601,7 @@ function function_d50f326c() {
 function function_951ce866() {
     level endon(#"combattraining_logic_finished", #"tut_stop");
     /#
-        if (level flag::get("colbounds_tut_fin1_fight5_start_off") && level.var_e3146bce !== "vox_tvoi_tutor_fire_core_dmg") {
+        if (level flag::get("<dev string:x38>") && level.var_e3146bce !== "<dev string:x66>") {
             return;
         }
     #/
@@ -727,7 +726,7 @@ function function_6bc15e29() {
 // Size: 0x2c
 function function_5ba71388(_hash) {
     /#
-        iprintlnbold("s_tut_fin1_fight1_goto");
+        iprintlnbold("<dev string:x77>");
     #/
 }
 
@@ -1599,7 +1598,7 @@ function function_c513c2a2() {
     } while (!isdefined(level.var_10d6ef1e) || level.var_10d6ef1e.size == 0);
     level.var_e1a1f65c = level.var_10d6ef1e[0];
     /#
-        iprintlnbold("vox_tvoi_tutor_fire_score_earned_1");
+        iprintlnbold("<dev string:x97>");
     #/
     var_b82f5433 = array("vox_tvoi_tutor_fire_score_strafe_0", "vox_tvoi_tutor_fire_score_strafe_1");
     self thread ct_vo::function_625a37f9(var_b82f5433, "strafe_start", 1, 1, 1);
@@ -1953,22 +1952,22 @@ function function_2969ccb4(var_43d50d89 = 1, var_463b195d = 1) {
     // Size: 0x510
     function function_41dcd216() {
         sessionmode = currentsessionmode();
-        setdvar(#"hash_5b3b4d1a60845a9b", "<unknown string>");
-        level flag::init("colbounds_tut_fin1_fight5_start_off");
+        setdvar(#"hash_5b3b4d1a60845a9b", "<dev string:xaf>");
+        level flag::init("<dev string:x38>");
         if (sessionmode != 4) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:xb2>");
+            adddebugcommand("<dev string:x119>");
+            adddebugcommand("<dev string:x188>");
+            adddebugcommand("<dev string:x1f9>");
+            adddebugcommand("<dev string:x262>");
+            adddebugcommand("<dev string:x2cd>");
+            adddebugcommand("<dev string:x330>");
+            adddebugcommand("<dev string:x393>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"hash_5b3b4d1a60845a9b", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"hash_5b3b4d1a60845a9b", "<dev string:xaf>");
+            if (cmd == "<dev string:xaf>") {
                 continue;
             }
             e_player = level.players[0];
@@ -1986,35 +1985,35 @@ function function_2969ccb4(var_43d50d89 = 1, var_463b195d = 1) {
                 level notify(#"combattraining_logic_finished", {#success:1});
                 break;
             case #"hash_5db424be8b8d04a8":
-                e_player thread ct_utils::function_329f9ba6(#"hash_6d1f5359302a862c", 10, "<unknown string>", 2, 1);
+                e_player thread ct_utils::function_329f9ba6(#"hash_6d1f5359302a862c", 10, "<dev string:x3f6>", 2, 1);
                 break;
             case #"hash_3ca93ce413cad85a":
-                a_str_vo = array("<unknown string>", "<unknown string>");
+                a_str_vo = array("<dev string:x3fe>", "<dev string:x41e>");
                 e_player thread function_7d10f455(a_str_vo);
                 break;
             case #"hash_3cad24e413ce9869":
-                a_str_vo = array("<unknown string>", "<unknown string>");
+                a_str_vo = array("<dev string:x43e>", "<dev string:x462>");
                 e_player thread function_7d10f455(a_str_vo);
                 break;
             case #"hash_3ca93be413cad6a7":
-                a_str_vo = array("<unknown string>", "<unknown string>");
+                a_str_vo = array("<dev string:x3fe>", "<dev string:x41e>");
                 e_player thread function_7d10f455(a_str_vo);
                 break;
             case #"hash_3cad21e413ce9350":
-                a_str_vo = array("<unknown string>", "<unknown string>");
+                a_str_vo = array("<dev string:x43e>", "<dev string:x462>");
                 e_player thread function_7d10f455(a_str_vo);
                 break;
             case #"hash_60bb5681fede555f":
-                self ct_vo::function_831e0584(array("<unknown string>", "<unknown string>"));
+                self ct_vo::function_831e0584(array("<dev string:x43e>", "<dev string:x462>"));
                 break;
             case #"hash_60bb5781fede5712":
-                self thread ct_vo::function_831e0584(array("<unknown string>", "<unknown string>"));
+                self thread ct_vo::function_831e0584(array("<dev string:x43e>", "<dev string:x462>"));
                 break;
             case #"hash_60bb5881fede58c5":
                 e_player function_53e140e6();
                 break;
             }
-            setdvar(#"hash_5b3b4d1a60845a9b", "<unknown string>");
+            setdvar(#"hash_5b3b4d1a60845a9b", "<dev string:xaf>");
         }
     }
 
@@ -2026,7 +2025,7 @@ function function_2969ccb4(var_43d50d89 = 1, var_463b195d = 1) {
         e_player = ct_utils::get_player();
         e_player thread ct_vo::function_831e0584(a_str_vo);
         e_player ct_vo::function_3ca1b77d(var_c782ff9c);
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x481>");
     }
 
     // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
@@ -2037,20 +2036,20 @@ function function_2969ccb4(var_43d50d89 = 1, var_463b195d = 1) {
         level endon(#"combattraining_logic_finished");
         level.var_e72728b8 = [];
         level notify(#"hash_60e26e14a51c5211");
-        self thread ct_vo::function_831e0584(array("<unknown string>"));
+        self thread ct_vo::function_831e0584(array("<dev string:x490>"));
         self thread ct_utils::function_61c3d59c(#"hash_787416c9e1a64d15");
         var_af24b2c1 = 0;
         do {
             s_notify = self waittill(#"hash_251bbd6b8ba2fdfe", #"hash_4aaf6d6479e7cf20");
             if (s_notify._notify == #"hash_4aaf6d6479e7cf20") {
-                self ct_vo::function_831e0584(array("<unknown string>"));
+                self ct_vo::function_831e0584(array("<dev string:x4b7>"));
                 continue;
             }
             if (s_notify._notify == #"hash_251bbd6b8ba2fdfe") {
                 var_af24b2c1 = 1;
             }
         } while (!var_af24b2c1);
-        self thread ct_vo::function_831e0584(array("<unknown string>", "<unknown string>"));
+        self thread ct_vo::function_831e0584(array("<dev string:x43e>", "<dev string:x462>"));
         self thread ct_utils::function_61c3d59c(#"hash_a6ed66603c69f47");
         self waittill(#"hash_4aaf6d6479e7cf20");
         wait(10);
@@ -2061,12 +2060,12 @@ function function_2969ccb4(var_43d50d89 = 1, var_463b195d = 1) {
     // Checksum 0xac944644, Offset: 0x99f8
     // Size: 0x84
     function function_5a0f5bcb(str_tut, var_6bf7e923) {
-        level flag::set("colbounds_tut_fin1_fight5_start_off");
+        level flag::set("<dev string:x38>");
         level.var_e3146bce = str_tut;
         self function_d74a7e31();
         waitframe(1);
         self [[ var_6bf7e923 ]]();
-        level flag::clear("colbounds_tut_fin1_fight5_start_off");
+        level flag::clear("<dev string:x38>");
     }
 
     // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial

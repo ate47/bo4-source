@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_7893277eec698972;
 #using script_311952573639271c;
 #using scripts\zm\zm_zodt8_sentinel_trial.gsc;
@@ -21,22 +20,22 @@
     // Size: 0x1c6
     function function_5d346946() {
         zm_devgui::add_custom_devgui_callback(&function_78c32556);
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x85>");
+        adddebugcommand("<dev string:xc9>");
+        adddebugcommand("<dev string:x102>");
+        adddebugcommand("<dev string:x156>");
+        adddebugcommand("<dev string:x1ac>");
+        adddebugcommand("<dev string:x1f5>");
+        adddebugcommand("<dev string:x25a>");
+        adddebugcommand("<dev string:x2c1>");
+        adddebugcommand("<dev string:x328>");
+        adddebugcommand("<dev string:x393>");
+        adddebugcommand("<dev string:x3dc>");
+        adddebugcommand("<dev string:x429>");
+        adddebugcommand("<dev string:x474>");
+        adddebugcommand("<dev string:x4cb>");
+        adddebugcommand("<dev string:x519>");
         level.var_b9714a5d = &function_51855e65;
     }
 
@@ -62,28 +61,28 @@
             level thread function_10dafedb();
             return 1;
         case #"hash_74823c0e0a29545b":
-            give_flare("<unknown string>");
+            give_flare("<dev string:x567>");
             return 1;
         case #"hash_130280144168a5e7":
-            give_flare("<unknown string>");
+            give_flare("<dev string:x56d>");
             return 1;
         case #"hash_2972e55f40fe8050":
-            give_flare("<unknown string>");
+            give_flare("<dev string:x575>");
             return 1;
         case #"hash_59b568ce3fe548b6":
             level thread function_649d5f75();
             return 1;
         case #"hash_be17a68845640e4":
-            level thread function_a368f5ed("<unknown string>");
+            level thread function_a368f5ed("<dev string:x57c>");
             return 1;
         case #"hash_5c17aed53086a4e8":
-            level thread function_a368f5ed("<unknown string>");
+            level thread function_a368f5ed("<dev string:x584>");
             return 1;
         case #"hash_2474089e18afbc3":
-            level thread function_a368f5ed("<unknown string>");
+            level thread function_a368f5ed("<dev string:x58d>");
             return 1;
         case #"hash_515fa2d180024bd3":
-            level thread function_a368f5ed("<unknown string>");
+            level thread function_a368f5ed("<dev string:x596>");
             return 1;
         case #"hash_687e53bfcb79ec3b":
             if (isdefined(level.chests) && isdefined(level.chest_index) && isdefined(level.chests[level.chest_index].zbarrier)) {
@@ -112,7 +111,7 @@
     // Checksum 0xa3da8976, Offset: 0x690
     // Size: 0x30
     function function_7edbb38() {
-        while (level flag::get("<unknown string>")) {
+        while (level flag::get("<dev string:x5a1>")) {
             waitframe(1);
         }
     }
@@ -134,9 +133,9 @@
     // Checksum 0xeaaee5c5, Offset: 0x758
     // Size: 0x6c
     function function_10dafedb() {
-        if (!level flag::get("<unknown string>")) {
+        if (!level flag::get("<dev string:x5b4>")) {
             level.s_pap_quest.var_4ee2e2ab = 0;
-            level flag::set("<unknown string>");
+            level flag::set("<dev string:x5b4>");
             return;
         }
         level zodt8_pap_quest::function_306b4f35();
@@ -147,16 +146,16 @@
     // Checksum 0xe59167eb, Offset: 0x7d0
     // Size: 0xdc
     function function_1d9dddd0() {
-        if (level flag::get("<unknown string>")) {
-            if (level.e_clip_water_aft clientfield::get("<unknown string>") != 0) {
-                iprintlnbold("<unknown string>");
+        if (level flag::get("<dev string:x5c9>")) {
+            if (level.e_clip_water_aft clientfield::get("<dev string:x5dd>") != 0) {
+                iprintlnbold("<dev string:x5f8>");
             } else {
                 zm_zodt8::change_water_height_aft(0);
             }
             return;
         }
-        if (level.e_clip_water_aft clientfield::get("<unknown string>") != 0) {
-            iprintlnbold("<unknown string>");
+        if (level.e_clip_water_aft clientfield::get("<dev string:x5dd>") != 0) {
+            iprintlnbold("<dev string:x5f8>");
             return;
         }
         zm_zodt8::change_water_height_aft(1);
@@ -167,16 +166,16 @@
     // Checksum 0x267edda8, Offset: 0x8b8
     // Size: 0xdc
     function function_853d8116() {
-        if (level flag::get("<unknown string>")) {
-            if (level.e_clip_water_fore clientfield::get("<unknown string>") != 0) {
-                iprintlnbold("<unknown string>");
+        if (level flag::get("<dev string:x631>")) {
+            if (level.e_clip_water_fore clientfield::get("<dev string:x5dd>") != 0) {
+                iprintlnbold("<dev string:x646>");
             } else {
                 zm_zodt8::change_water_height_fore(0);
             }
             return;
         }
-        if (level.e_clip_water_fore clientfield::get("<unknown string>") != 0) {
-            iprintlnbold("<unknown string>");
+        if (level.e_clip_water_fore clientfield::get("<dev string:x5dd>") != 0) {
+            iprintlnbold("<dev string:x646>");
             return;
         }
         zm_zodt8::change_water_height_fore(1);
@@ -224,13 +223,13 @@
         foreach (e_player in a_e_players) {
             switch (str_color) {
             case #"red":
-                namespace_b45e3f05::give_flare("<unknown string>");
+                namespace_b45e3f05::give_flare("<dev string:x567>");
                 break;
             case #"green":
-                namespace_b45e3f05::give_flare("<unknown string>");
+                namespace_b45e3f05::give_flare("<dev string:x56d>");
                 break;
             case #"blue":
-                namespace_b45e3f05::give_flare("<unknown string>");
+                namespace_b45e3f05::give_flare("<dev string:x575>");
                 break;
             }
         }
@@ -248,7 +247,7 @@
             player zm_score::function_c1f146ff(var_efac84b3[round_index]);
         }
         if (round_number >= 7) {
-            level flag::set("<unknown string>");
+            level flag::set("<dev string:x67e>");
             level flag::set(#"hash_3e80d503318a5674");
         }
         if (round_number >= 8) {
@@ -262,7 +261,7 @@
                 }
             }
             foreach (player in getplayers()) {
-                player zm_devgui::zombie_devgui_weapon_give("<unknown string>");
+                player zm_devgui::zombie_devgui_weapon_give("<dev string:x689>");
             }
         }
         if (round_number >= 9) {
@@ -270,7 +269,7 @@
         }
         if (round_number >= 13) {
             level.s_pap_quest.var_4ee2e2ab = 0;
-            level flag::set("<unknown string>");
+            level flag::set("<dev string:x5b4>");
         }
         if (round_number >= 24) {
             zm_trial_util::function_9c71b46f();

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\wz_common\wz_ai_utils.gsc;
 #using scripts\core_common\math_shared.gsc;
 #using scripts\core_common\struct.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\exploder_shared.gsc;
 #using scripts\zm\zm_office_trials.gsc;
 #using scripts\zm\weapons\zm_weap_flamethrower.gsc;
@@ -634,13 +633,13 @@ function function_eeb98313(a_s_respawn_points) {
     // Checksum 0x4eb09ddd, Offset: 0x3508
     // Size: 0x1a0
     function private office_devgui() {
-        adddebugcommand("vox_plr_6_exert_underwater_air_low");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x38>");
+        adddebugcommand("<dev string:x8b>");
+        adddebugcommand("<dev string:xe5>");
+        adddebugcommand("<dev string:x14f>");
         while (true) {
             waitframe(1);
-            str_command = getdvarstring(#"zm_office_devgui_cmd", "<unknown string>");
+            str_command = getdvarstring(#"zm_office_devgui_cmd", "<dev string:x1a9>");
             switch (str_command) {
             case #"go_defcon5":
                 level thread zm_office_defcon::function_d2f6cecb();
@@ -655,7 +654,7 @@ function function_eeb98313(a_s_respawn_points) {
                 level.s_ww_quest_reward zm_office_ww_quest::function_68f68bb4();
                 break;
             }
-            setdvar(#"zm_office_devgui_cmd", "<unknown string>");
+            setdvar(#"zm_office_devgui_cmd", "<dev string:x1a9>");
         }
     }
 

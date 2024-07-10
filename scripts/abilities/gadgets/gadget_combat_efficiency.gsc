@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\scoreevents_shared.gsc;
 #using scripts\core_common\player\player_stats.gsc;
@@ -187,7 +186,7 @@ function set_gadget_combat_efficiency_status(weapon, status, time) {
     }
     /#
         if (getdvarint(#"scr_cpower_debug_prints", 0) > 0) {
-            self iprintlnbold("<unknown string>" + weapon.name + "<unknown string>" + status + timestr);
+            self iprintlnbold("<dev string:x38>" + weapon.name + "<dev string:x54>" + status + timestr);
         }
     #/
 }

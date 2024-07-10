@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_pack_a_punch_util.gsc;
 #using scripts\core_common\system_shared.gsc;

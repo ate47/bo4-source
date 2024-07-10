@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\oob.gsc;
 #using scripts\core_common\values_shared.gsc;
 #using scripts\core_common\array_shared.gsc;
@@ -74,7 +73,7 @@ class cinteractobj {
     destructor() {
         /#
             if (getdvarint(#"scr_debug_gameobjects", 0)) {
-                iprintlnbold("<unknown string>");
+                iprintlnbold("<dev string:x324>");
             }
         #/
     }
@@ -207,11 +206,11 @@ class cinteractobj {
         }
         switch (m_str_type) {
         case #"carry":
-            assert(isdefined(m_a_keyline_objects[0]), "<unknown string>");
+            assert(isdefined(m_a_keyline_objects[0]), "<dev string:x3e6>");
             mdl_gameobject = gameobjects::create_carry_object(m_str_team, m_t_interact, m_a_keyline_objects, (0, 0, 0), m_str_objective, var_26a01d70);
             break;
         case #"pack":
-            assert(isdefined(m_a_keyline_objects[0]), "<unknown string>");
+            assert(isdefined(m_a_keyline_objects[0]), "<dev string:x3e6>");
             mdl_gameobject = gameobjects::create_pack_object(m_str_team, m_t_interact, m_a_keyline_objects, (0, 0, 0), m_str_objective, var_26a01d70);
             break;
         case #"generic":
@@ -296,7 +295,7 @@ class cinteractobj {
     // Size: 0x6f4
     function init_game_object(str_bundle, str_team_override, str_tag_override, str_identifier_override, a_keyline_objects, t_override, b_allow_companion_command = 1, str_objective_override) {
         m_s_bundle = getscriptbundle(str_bundle);
-        assert(isdefined(m_s_bundle), "<unknown string>" + str_bundle + "<unknown string>");
+        assert(isdefined(m_s_bundle), "<dev string:x346>" + str_bundle + "<dev string:x35b>");
         if (isdefined(str_tag_override)) {
             m_str_tag = str_tag_override;
         } else {
@@ -310,7 +309,7 @@ class cinteractobj {
             m_v_tag_origin = e_object.origin;
             /#
                 if (isentity(e_object)) {
-                    println("<unknown string>" + m_s_bundle.str_tag + "<unknown string>" + e_object.model);
+                    println("<dev string:x37f>" + m_s_bundle.str_tag + "<dev string:x394>" + e_object.model);
                 }
             #/
         }
@@ -387,7 +386,7 @@ class cinteractobj {
             if (is_valid_gameobject_trigger(t_override)) {
                 m_t_interact = t_override;
             } else {
-                assert("<unknown string>");
+                assert("<dev string:x3ba>");
             }
         }
         var_a99c4d4c = [];
@@ -1057,7 +1056,7 @@ function create_carry_object(ownerteam, trigger, visuals, offset, objectivename,
     carryobject.objidpingfriendly = 0;
     carryobject.objidpingenemy = 0;
     if (carryobject function_4ea98a09()) {
-        assert(isdefined(objectivename), "pack");
+        assert(isdefined(objectivename), "<dev string:x38>");
         carryobject.objid = [];
         level.objidstart += 2;
         carryobject.objectiveid = get_next_obj_id();
@@ -1776,7 +1775,7 @@ function take_carry_weapon(weapon) {
 // Checksum 0x853e2808, Offset: 0x5688
 // Size: 0x6e
 function function_6e870d38(weapon) {
-    assert(isweapon(weapon), "<unknown string>");
+    assert(isweapon(weapon), "<dev string:x6a>");
     mdl_gameobject = self function_fd4a5f2f();
     mdl_gameobject.carryweapon = weapon;
 }
@@ -2110,7 +2109,7 @@ function create_use_object(ownerteam, trigger, visuals, offset, objectivename, a
     }
     useobject.compassicons = [];
     if (useobject function_4ea98a09()) {
-        assert(isdefined(objectivename), "<unknown string>");
+        assert(isdefined(objectivename), "<dev string:xa3>");
         useobject.objid = [];
         useobject.var_f23c87bd = objectivename;
         useobject.var_25010336 = &function_4d047b8d;
@@ -3523,7 +3522,7 @@ function hide_waypoint(e_player) {
     }
     if (isdefined(e_player)) {
         if (!isplayer(e_player)) {
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:xd3>");
             return;
         }
         objective_setinvisibletoplayer(mdl_gameobject.objectiveid, e_player);
@@ -3543,7 +3542,7 @@ function show_waypoint(e_player) {
     }
     if (isdefined(e_player)) {
         if (!isplayer(e_player)) {
-            assert(0, "<unknown string>");
+            assert(0, "<dev string:x112>");
             return;
         }
         objective_setvisibletoplayer(mdl_gameobject.objectiveid, e_player);
@@ -3905,7 +3904,7 @@ function get_objective_ids(team) {
 // Checksum 0xf12b3772, Offset: 0xced8
 // Size: 0x236
 function gameobject_is_player_looking_at(origin, dot, do_trace, ignore_ent, ignore_trace_distance) {
-    assert(isplayer(self), "<unknown string>");
+    assert(isplayer(self), "<dev string:x151>");
     if (!isdefined(dot)) {
         dot = 0.7;
     }
@@ -3999,7 +3998,7 @@ function set_3d_is_waypoint(relativeteam, waypoint) {
 // Checksum 0xc3fb8cef, Offset: 0xd3f0
 // Size: 0x4a
 function set_carry_icon(shader) {
-    assert(self.type == "<unknown string>", "<unknown string>");
+    assert(self.type == "<dev string:x181>", "<dev string:x18f>");
     self.carryicon = shader;
 }
 
@@ -4306,7 +4305,7 @@ function can_interact_with(sentient) {
             return false;
         }
     default:
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x1bf>");
         return false;
     }
 }
@@ -4367,7 +4366,7 @@ function get_enemy_team(team) {
 // Size: 0x7a
 function set_absolute_visible_and_interact_team(team) {
     team = util::get_team_mapping(team);
-    assert(team == #"allies" || team == #"axis", "<unknown string>");
+    assert(team == #"allies" || team == #"axis", "<dev string:x1d6>");
     self.absolute_visible_and_interact_team = team;
 }
 
@@ -4383,7 +4382,7 @@ function get_next_obj_id() {
         nextid = array::pop_front(level.releasedobjectives, 0);
     }
     if (!isdefined(nextid)) {
-        println("<unknown string>");
+        println("<dev string:x20a>");
         nextid = 63;
     }
     return nextid;
@@ -4497,7 +4496,7 @@ function create_pack_object(ownerteam, trigger, visuals, offset, objectivename, 
     if (!isdefined(level.max_packobjects)) {
         level.max_packobjects = 4;
     }
-    assert(level.max_packobjects < 5, "<unknown string>");
+    assert(level.max_packobjects < 5, "<dev string:x238>");
     packobject = spawn("script_model", trigger.origin);
     packobject.type = "packObject";
     packobject.curorigin = trigger.origin;
@@ -4517,7 +4516,7 @@ function create_pack_object(ownerteam, trigger, visuals, offset, objectivename, 
     }
     if (!isdefined(objectivename)) {
         /#
-            iprintln("<unknown string>");
+            iprintln("<dev string:x281>");
         #/
         return;
     }
@@ -4531,7 +4530,7 @@ function create_pack_object(ownerteam, trigger, visuals, offset, objectivename, 
     packobject.objidpingfriendly = 0;
     packobject.objidpingenemy = 0;
     if (packobject function_4ea98a09()) {
-        assert(isdefined(objectivename), "pack");
+        assert(isdefined(objectivename), "<dev string:x38>");
         packobject.objid = [];
         level.objidstart += 2;
         packobject.objectiveid = get_next_obj_id();
@@ -4626,7 +4625,7 @@ function adjust_remaining_packicons() {
 // Checksum 0x54e45b86, Offset: 0xf418
 // Size: 0x4a
 function set_pack_icon(shader) {
-    assert(self.type == "<unknown string>", "<unknown string>");
+    assert(self.type == "<dev string:x2b2>", "<dev string:x2bf>");
     self.packicon = shader;
 }
 
@@ -4644,7 +4643,7 @@ function init_game_objects(str_gameobject_bundle, str_team_override, b_allow_com
     } else if (self.classname === "scriptbundle_gameobject") {
         str_bundle = self.scriptbundlename;
     }
-    assert(isdefined(str_bundle), "<unknown string>" + self.origin);
+    assert(isdefined(str_bundle), "<dev string:x2f1>" + self.origin);
     [[ c_interact_obj ]]->init_game_object(str_bundle, str_team_override, str_tag_override, str_identifier_override, a_keyline_objects, t_override, b_allow_companion_command, str_objective_override);
     return c_interact_obj;
 }

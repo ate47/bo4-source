@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\archetype_human_rpg_interface.gsc;
 #using scripts\core_common\ai\systems\blackboard.gsc;
 #using scripts\core_common\ai\systems\ai_interface.gsc;

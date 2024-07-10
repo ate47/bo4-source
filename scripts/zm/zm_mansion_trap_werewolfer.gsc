@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_mansion_ww_lvl2_quest.gsc;
 #using scripts\zm\zm_mansion_util.gsc;
 #using scripts\zm\zm_trap_electric.gsc;

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\callbacks_shared.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\system_shared.csc;
@@ -117,7 +116,7 @@ function set_dvar_float_if_unset(dvar, value) {
     // Size: 0x4e
     function function_102a701c(tens, ones) {
         while (!isdefined(tens) || !isdefined(ones)) {
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x38>");
             wait(2);
         }
     }

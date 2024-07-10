@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weapon_utils.gsc;
 #using scripts\weapons\grapple.gsc;
 #using scripts\mp_common\gametypes\match.gsc;
@@ -1459,7 +1458,7 @@ function missile_tracking() {
 function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
     level endon(#"game_ended");
     if (waittime <= 0) {
-        assert(waittime > 0, "enemyContactAllyRadius");
+        assert(waittime > 0, "<dev string:x38>");
         return;
     }
     while (true) {
@@ -3453,10 +3452,10 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
     // Checksum 0x289ab8ee, Offset: 0xd5a8
     // Size: 0x408
     function devgui_think() {
-        setdvar(#"devgui_mpdialog", "thiefRevealDelay");
-        setdvar(#"testalias_player", "rouletteRevealDelay");
-        setdvar(#"testalias_taacom", "exertAxeThrow");
-        setdvar(#"testalias_commander", "<unknown string>");
+        setdvar(#"devgui_mpdialog", "<dev string:x74>");
+        setdvar(#"testalias_player", "<dev string:x77>");
+        setdvar(#"testalias_taacom", "<dev string:x94>");
+        setdvar(#"testalias_commander", "<dev string:xb0>");
         while (true) {
             wait(1);
             player = util::gethostplayer();
@@ -3464,7 +3463,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
                 continue;
             }
             spacing = getdvarfloat(#"testdialog_spacing", 0.25);
-            switch (getdvarstring(#"devgui_mpdialog", "thiefRevealDelay")) {
+            switch (getdvarstring(#"devgui_mpdialog", "<dev string:x74>")) {
             case #"hash_7912e80189f9c6":
                 player thread test_player_dialog(0);
                 player thread test_taacom_dialog(spacing);
@@ -3504,7 +3503,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
                 player thread play_conv_other_other();
                 break;
             }
-            setdvar(#"devgui_mpdialog", "thiefRevealDelay");
+            setdvar(#"devgui_mpdialog", "<dev string:x74>");
         }
     }
 
@@ -3531,7 +3530,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
             delay = 0;
         }
         wait(delay);
-        self playsoundontag(getdvarstring(#"testalias_player", "thiefRevealDelay"), "<unknown string>");
+        self playsoundontag(getdvarstring(#"testalias_player", "<dev string:x74>"), "<dev string:xd3>");
     }
 
     // Namespace battlechatter/battlechatter
@@ -3543,7 +3542,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
             delay = 0;
         }
         wait(delay);
-        self playlocalsound(getdvarstring(#"testalias_taacom", "thiefRevealDelay"));
+        self playlocalsound(getdvarstring(#"testalias_taacom", "<dev string:x74>"));
     }
 
     // Namespace battlechatter/battlechatter
@@ -3555,7 +3554,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
             delay = 0;
         }
         wait(delay);
-        self playlocalsound(getdvarstring(#"testalias_commander", "thiefRevealDelay"));
+        self playlocalsound(getdvarstring(#"testalias_commander", "<dev string:x74>"));
     }
 
     // Namespace battlechatter/battlechatter
@@ -3564,7 +3563,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
     // Size: 0x54
     function play_test_dialog(dialogkey) {
         dialogalias = self get_player_dialog_alias(dialogkey, undefined);
-        self playsoundontag(dialogalias, "<unknown string>");
+        self playsoundontag(dialogalias, "<dev string:xd3>");
     }
 
     // Namespace battlechatter/battlechatter
@@ -3574,25 +3573,25 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
     function response_key() {
         switch (self getmpdialogname()) {
         case #"spectre":
-            return "<unknown string>";
+            return "<dev string:xdc>";
         case #"battery":
-            return "<unknown string>";
+            return "<dev string:xe6>";
         case #"outrider":
-            return "<unknown string>";
+            return "<dev string:xf0>";
         case #"prophet":
-            return "<unknown string>";
+            return "<dev string:xfb>";
         case #"firebreak":
-            return "<unknown string>";
+            return "<dev string:x105>";
         case #"reaper":
-            return "<unknown string>";
+            return "<dev string:x111>";
         case #"ruin":
-            return "<unknown string>";
+            return "<dev string:x11a>";
         case #"seraph":
-            return "<unknown string>";
+            return "<dev string:x121>";
         case #"nomad":
-            return "<unknown string>";
+            return "<dev string:x12a>";
         }
-        return "thiefRevealDelay";
+        return "<dev string:x74>";
     }
 
     // Namespace battlechatter/battlechatter
@@ -3601,12 +3600,12 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
     // Size: 0x13c
     function play_conv_self_other() {
         num = randomintrange(0, 4);
-        self play_test_dialog("<unknown string>" + num);
+        self play_test_dialog("<dev string:x132>" + num);
         wait(4);
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
-                player play_test_dialog("<unknown string>" + self response_key() + num);
+                player play_test_dialog("<dev string:x13f>" + self response_key() + num);
                 break;
             }
         }
@@ -3621,12 +3620,12 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
-                player play_test_dialog("<unknown string>" + num);
+                player play_test_dialog("<dev string:x132>" + num);
                 break;
             }
         }
         wait(4);
-        self play_test_dialog("<unknown string>" + player response_key() + num);
+        self play_test_dialog("<dev string:x13f>" + player response_key() + num);
     }
 
     // Namespace battlechatter/battlechatter
@@ -3638,7 +3637,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
-                player play_test_dialog("<unknown string>" + num);
+                player play_test_dialog("<dev string:x132>" + num);
                 firstplayer = player;
                 break;
             }
@@ -3646,7 +3645,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
         wait(4);
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
-                player play_test_dialog("<unknown string>" + firstplayer response_key() + num);
+                player play_test_dialog("<dev string:x13f>" + firstplayer response_key() + num);
                 break;
             }
         }

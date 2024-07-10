@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\strategic_command.gsc;
 #using scripts\core_common\ai\planner_commander.gsc;
 #using scripts\core_common\ai\systems\planner.gsc;

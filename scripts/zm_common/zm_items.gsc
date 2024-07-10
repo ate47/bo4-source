@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_unitrigger.gsc;
@@ -153,7 +152,7 @@ function private function_b64c32cf(player) {
     foreach (item in level.item_list) {
         if (item.var_337fc1cf && isdefined(player.item_inventory[item]) && player.item_inventory[item]) {
             if (item.var_9fffdcee) {
-                assertmsg("<unknown string>" + item.name + "<unknown string>");
+                assertmsg("<dev string:x38>" + item.name + "<dev string:x46>");
                 continue;
             }
             function_ab3bb6bf(player, item);
@@ -168,7 +167,7 @@ function private function_b64c32cf(player) {
 function player_has(player, w_item) {
     if (!(isdefined(w_item.craftitem) && w_item.craftitem) && isdefined(player)) {
         if (w_item.var_9fffdcee) {
-            assertmsg("<unknown string>" + w_item.name + "<unknown string>");
+            assertmsg("<dev string:x9a>" + w_item.name + "<dev string:xa4>");
         } else {
             return player hasweapon(w_item);
         }
@@ -223,7 +222,7 @@ function player_pick_up(player, w_item) {
 function player_take(player, w_item) {
     if (!(isdefined(w_item.craftitem) && w_item.craftitem) && isdefined(player)) {
         if (w_item.var_9fffdcee) {
-            assertmsg("<unknown string>" + w_item.name + "<unknown string>");
+            assertmsg("<dev string:x9a>" + w_item.name + "<dev string:xa4>");
         } else {
             player zm_weapons::weapon_take(w_item);
         }

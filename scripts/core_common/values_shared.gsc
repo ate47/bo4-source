@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\util_shared.gsc;
 #using scripts\core_common\system_shared.gsc;
 #using scripts\core_common\string_shared.gsc;
@@ -58,11 +57,11 @@ function __init__() {
     default_value("disable_gestures", 0);
     /#
         level thread debug_values();
-        validate("<unknown string>", "<unknown string>", &validate_takedamage);
-        validate("<unknown string>", "<unknown string>", &arecontrolsfrozen);
-        validate("<unknown string>", "<unknown string>", &function_5972c3cf);
-        validate("<unknown string>", "<unknown string>", &gadgetsdisabled);
-        validate("<unknown string>", "<unknown string>", &ishidden);
+        validate("<dev string:x38>", "<dev string:x45>", &validate_takedamage);
+        validate("<dev string:x4d>", "<dev string:x45>", &arecontrolsfrozen);
+        validate("<dev string:x5e>", "<dev string:x45>", &function_5972c3cf);
+        validate("<dev string:x79>", "<dev string:x45>", &gadgetsdisabled);
+        validate("<dev string:x8a>", "<dev string:x45>", &ishidden);
     #/
 }
 
@@ -76,7 +75,7 @@ function register(str_name, var_3509ed3e, call_on = "$self", func, ...) {
     }
     a_registered = getarraykeys(level.values);
     if (isinarray(a_registered, hash(str_name))) {
-        assertmsg("<unknown string>" + str_name + "<unknown string>");
+        assertmsg("<dev string:x91>" + str_name + "<dev string:x9b>");
         return;
     }
     s_value = spawnstruct();
@@ -96,7 +95,7 @@ function private assert_registered(str_name) {
     /#
         a_registered = getarraykeys(level.values);
         if (!isinarray(a_registered, hash(str_name))) {
-            assertmsg("<unknown string>" + str_name + "<unknown string>");
+            assertmsg("<dev string:x91>" + str_name + "<dev string:xb3>");
             return false;
         }
     #/
@@ -437,7 +436,7 @@ function private set_ignore_health_regen_delay(b_value = 1) {
     function private validate(str_name, call_on, func, ...) {
         a_registered = getarraykeys(level.values);
         if (!isinarray(a_registered, hash(str_name))) {
-            assertmsg("<unknown string>" + str_name + "<unknown string>");
+            assertmsg("<dev string:x91>" + str_name + "<dev string:xb3>");
             return;
         }
         s_value = level.values[str_name];
@@ -457,14 +456,14 @@ function private set_ignore_health_regen_delay(b_value = 1) {
         }
         s_value = level.values[str_name];
         if (isdefined(s_value.func_validate)) {
-            call_on = s_value.validate_call_on === "<unknown string>" ? self : s_value.validate_call_on;
+            call_on = s_value.validate_call_on === "<dev string:x45>" ? self : s_value.validate_call_on;
             current_value = util::single_func_argarray(call_on, s_value.func_validate, _replace_values(s_value.validate_args));
         } else {
             current_value = self.(str_name);
         }
         b_match = current_value === value;
         if (b_assert) {
-            assert(b_match, "<unknown string>" + function_9e72a96(str_name) + "<unknown string>" + current_value + "<unknown string>" + value + "<unknown string>");
+            assert(b_match, "<dev string:xc7>" + function_9e72a96(str_name) + "<dev string:xdc>" + current_value + "<dev string:xe5>" + value + "<dev string:xf9>");
         }
         return b_match;
     }
@@ -474,27 +473,27 @@ function private set_ignore_health_regen_delay(b_value = 1) {
     // Checksum 0x490c882d, Offset: 0x1a00
     // Size: 0x484
     function private debug_values() {
-        level flagsys::init_dvar("<unknown string>");
-        level flagsys::wait_till("<unknown string>");
+        level flagsys::init_dvar("<dev string:xfe>");
+        level flagsys::wait_till("<dev string:x111>");
         while (true) {
-            level flagsys::wait_till("<unknown string>");
-            str_debug_values_entity = getdvarstring(#"scr_debug_values_entity", "<unknown string>");
-            if (str_debug_values_entity == "<unknown string>" || str_debug_values_entity == "<unknown string>" || str_debug_values_entity == "<unknown string>") {
+            level flagsys::wait_till("<dev string:xfe>");
+            str_debug_values_entity = getdvarstring(#"scr_debug_values_entity", "<dev string:x127>");
+            if (str_debug_values_entity == "<dev string:x127>" || str_debug_values_entity == "<dev string:x12a>" || str_debug_values_entity == "<dev string:x12f>") {
                 hud_ent = level.host;
-                str_label = "<unknown string>";
+                str_label = "<dev string:x136>";
             } else if (strisnumber(str_debug_values_entity)) {
                 hud_ent = getentbynum(int(str_debug_values_entity));
-                str_label = "<unknown string>" + str_debug_values_entity;
+                str_label = "<dev string:x144>" + str_debug_values_entity;
             } else {
                 str_value = str_debug_values_entity;
-                str_key = "<unknown string>";
-                if (issubstr(str_value, "<unknown string>")) {
-                    a_toks = strtok(str_value, "<unknown string>");
+                str_key = "<dev string:x14e>";
+                if (issubstr(str_value, "<dev string:x15b>")) {
+                    a_toks = strtok(str_value, "<dev string:x15b>");
                     str_value = a_toks[0];
                     str_key = a_toks[1];
                 }
                 hud_ent = getent(str_value, str_key, 1);
-                str_label = str_value + "<unknown string>" + str_key;
+                str_label = str_value + "<dev string:x15b>" + str_key;
             }
             debug2dtext((200, 100, 0), str_label, (1, 1, 1), 1, (0, 0, 0), 0.5, 0.8, 1);
             if (!isdefined(hud_ent) || !isdefined(hud_ent.values)) {
@@ -537,13 +536,13 @@ function private set_ignore_health_regen_delay(b_value = 1) {
         if (ishash(str_id)) {
             str_id = function_9e72a96(str_id);
         }
-        str_value = "<unknown string>";
-        if ((isdefined(str_name) ? "<unknown string>" + str_name : "<unknown string>") != "<unknown string>") {
+        str_value = "<dev string:x127>";
+        if ((isdefined(str_name) ? "<dev string:x127>" + str_name : "<dev string:x127>") != "<dev string:x127>") {
             str_value = string::rjust(str_name, 20);
             if (isdefined(value)) {
-                str_value += "<unknown string>" + value;
+                str_value += "<dev string:x15f>" + value;
             }
-            str_value += "<unknown string>" + string::ljust(isdefined(str_id) ? "<unknown string>" + str_id : "<unknown string>", 30);
+            str_value += "<dev string:x165>" + string::ljust(isdefined(str_id) ? "<dev string:x127>" + str_id : "<dev string:x127>", 30);
         }
         color = b_valid ? (1, 1, 1) : (1, 0, 0);
         if (on_hud) {

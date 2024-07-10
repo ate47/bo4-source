@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\ai\zombie_utility.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_trial_util.gsc;
@@ -45,7 +44,7 @@ function private on_begin(n_max_zombies, var_2ec39966, str_zone1, str_zone2, var
         self.var_2ec39966 = var_2ec39966;
         zm_utility::function_75fd65f9(self.var_2ec39966, 1);
     }
-    assert(a_str_zones.size, "<unknown string>");
+    assert(a_str_zones.size, "<dev string:x38>");
     level thread function_65e6d40c(a_str_zones, n_max_zombies);
 }
 

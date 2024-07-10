@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\lui_shared.csc;
 #using scripts\core_common\util_shared.csc;
 #using scripts\core_common\scene_shared.csc;
@@ -74,7 +73,7 @@ function entity_callback(event, localclientnum, params) {
 // Checksum 0x8514fce4, Offset: 0x3b0
 // Size: 0x17c
 function add_callback(event, func, obj) {
-    assert(isdefined(event), "<unknown string>");
+    assert(isdefined(event), "<dev string:x38>");
     if (!isdefined(level._callbacks) || !isdefined(level._callbacks[event])) {
         level._callbacks[event] = [];
     }
@@ -96,7 +95,7 @@ function add_callback(event, func, obj) {
 // Checksum 0x210fc7f1, Offset: 0x538
 // Size: 0x14c
 function add_entity_callback(event, func, obj) {
-    assert(isdefined(event), "<unknown string>");
+    assert(isdefined(event), "<dev string:x38>");
     if (!isdefined(self._callbacks) || !isdefined(self._callbacks[event])) {
         self._callbacks[event] = [];
     }
@@ -124,7 +123,7 @@ function remove_callback_on_death(event, func) {
 // Checksum 0xa61d0707, Offset: 0x6e0
 // Size: 0x11c
 function function_52ac9652(event, func, obj) {
-    assert(isdefined(event), "<unknown string>");
+    assert(isdefined(event), "<dev string:x6a>");
     if (!isdefined(self._callbacks) || !isdefined(self._callbacks[event])) {
         return;
     }
@@ -143,8 +142,8 @@ function function_52ac9652(event, func, obj) {
 // Checksum 0x57b534d9, Offset: 0x808
 // Size: 0x12c
 function remove_callback(event, func, obj) {
-    assert(isdefined(event), "<unknown string>");
-    assert(isdefined(level._callbacks[event]), "<unknown string>");
+    assert(isdefined(event), "<dev string:x6a>");
+    assert(isdefined(level._callbacks[event]), "<dev string:x9f>");
     foreach (index, func_group in level._callbacks[event]) {
         if (func_group[0] == func) {
             if (func_group[1] === obj) {
@@ -429,7 +428,7 @@ function event_handler[systemstatechange] codecallback_statechange(eventstruct) 
         [[ level._systemstates[eventstruct.system].callback ]](eventstruct.localclientnum, eventstruct.state);
         return;
     }
-    println("<unknown string>" + eventstruct.system + "<unknown string>");
+    println("<dev string:xce>" + eventstruct.system + "<dev string:xfc>");
 }
 
 // Namespace callback/maprestart
@@ -437,7 +436,7 @@ function event_handler[systemstatechange] codecallback_statechange(eventstruct) 
 // Checksum 0x22e0ece7, Offset: 0x1380
 // Size: 0x5c
 function event_handler[maprestart] codecallback_maprestart(eventstruct) {
-    println("<unknown string>");
+    println("<dev string:x126>");
     util::waitforclient(0);
     level thread util::init_utility();
 }
@@ -447,7 +446,7 @@ function event_handler[maprestart] codecallback_maprestart(eventstruct) {
 // Checksum 0x5d885679, Offset: 0x13e8
 // Size: 0x54
 function event_handler[localclient_connect] codecallback_localclientconnect(eventstruct) {
-    println("<unknown string>" + eventstruct.localclientnum);
+    println("<dev string:x14a>" + eventstruct.localclientnum);
     [[ level.callbacklocalclientconnect ]](eventstruct.localclientnum);
 }
 
@@ -458,7 +457,7 @@ function event_handler[localclient_connect] codecallback_localclientconnect(even
     // Checksum 0x570d0071, Offset: 0x1448
     // Size: 0x2c
     function event_handler[glass_smash] codecallback_glasssmash(eventstruct) {
-        println("<unknown string>");
+        println("<dev string:x179>");
     }
 
 #/
@@ -487,7 +486,7 @@ function event_handler[event_10eed35b] function_d3771684(eventstruct) {
     if (!isdefined(level.var_44e74ef4)) {
         return;
     }
-    println("<unknown string>");
+    println("<dev string:x1c3>");
     thread [[ level.var_44e74ef4 ]](eventstruct);
 }
 
@@ -523,7 +522,7 @@ function event_handler[event_d6f9e6ad] function_c1d1f779(eventstruct) {
     if (!isdefined(level.var_c3e66138)) {
         return;
     }
-    println("<unknown string>");
+    println("<dev string:x1f2>");
     thread [[ level.var_c3e66138 ]](eventstruct.var_428d0be2);
 }
 
@@ -788,7 +787,7 @@ function event_handler[sound_chargeshotweaponnotify] codecallback_chargeshotweap
 // Checksum 0x9d770ecf, Offset: 0x20a8
 // Size: 0x54
 function event_handler[hostmigration] codecallback_hostmigration(eventstruct) {
-    println("<unknown string>");
+    println("<dev string:x21b>");
     if (isdefined(level.callbackhostmigration)) {
         [[ level.callbackhostmigration ]](eventstruct.localclientnum);
     }

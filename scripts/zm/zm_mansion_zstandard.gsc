@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\ai\zm_ai_catalyst.gsc;
 #using scripts\zm\ai\zm_ai_nosferatu.gsc;
 #using script_387eab232fe22983;
@@ -286,7 +285,7 @@ function defend_areas() {
     level thread zm_round_spawning::function_376e51ef(#"crimson_nosferatu", level.round_number + 6);
     level thread util::delay(120, "end_game", &function_cf680b18);
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x38>");
     #/
     wait(7);
     level thread zm_utility::open_door(array("door_to_cellar", "door_to_dining_room_lower", "debris_to_dining_room_upper", "door_dining_room_to_greenhouse_entrance", "gate_greenhouse", "door_to_library_floor", "door_to_library", "debris_cemetery_entrance", "debris_cemetery"), undefined, undefined, 0);
@@ -300,7 +299,7 @@ function defend_areas() {
 // Size: 0xd2
 function registertrench_dogs_coop_round() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x69>");
     #/
     switch (level.players.size) {
     case 1:
@@ -323,7 +322,7 @@ function registertrench_dogs_coop_round() {
 // Size: 0xd2
 function function_cf680b18() {
     /#
-        iprintlnbold("<unknown string>");
+        iprintlnbold("<dev string:x90>");
     #/
     switch (level.players.size) {
     case 1:

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\weapons\zm_weap_sword_pistol.csc;
 #using scripts\zm\weapons\zm_weap_scepter.csc;
 #using scripts\zm\weapons\zm_weap_hammer.csc;
@@ -147,7 +146,7 @@ function include_weapon(weapon_name, display_in_box, cost, ammo_cost, upgraded =
     }
     if (!isdefined(weapon.worldmodel)) {
         /#
-            thread util::error("<unknown string>" + function_9e72a96(weapon_name) + "<unknown string>");
+            thread util::error("<dev string:x38>" + function_9e72a96(weapon_name) + "<dev string:x59>");
         #/
         return;
     }

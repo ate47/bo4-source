@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\player\player_stats.gsc;
 #using scripts\mp_common\item_world.gsc;
 #using scripts\mp_common\item_inventory.gsc;
@@ -274,12 +273,12 @@ function private clear_prompts(activator) {
     function private function_a6eac3b7() {
         while (true) {
             wait(0.25);
-            dvarstr = getdvarstring(#"scr_give_player_score", "<unknown string>");
-            if (dvarstr == "<unknown string>") {
+            dvarstr = getdvarstring(#"scr_give_player_score", "<dev string:x38>");
+            if (dvarstr == "<dev string:x38>") {
                 continue;
             }
-            setdvar(#"devgui_deathcircle", "<unknown string>");
-            args = strtok(dvarstr, "<unknown string>");
+            setdvar(#"devgui_deathcircle", "<dev string:x38>");
+            args = strtok(dvarstr, "<dev string:x3b>");
             if (args.size == 2) {
                 player = getentbynum(int(args[0]));
                 if (isplayer(player)) {

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using script_35d3717bf2cbee8f;
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_utility.gsc;
@@ -355,7 +354,7 @@ function private on_begin(var_e097dc07, var_f5300808) {
         level zm_trial::function_44200d07(1);
         break;
     default:
-        assert(0, "<unknown string>" + var_e097dc07);
+        assert(0, "<dev string:x38>" + var_e097dc07);
         break;
     }
     level.var_526d919 = [];
@@ -585,7 +584,7 @@ function private function_f3fdd8f7() {
 function private monitor_objective(challenge) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    assert(isarray(challenge.a_n_objective_ids), "<unknown string>");
+    assert(isarray(challenge.a_n_objective_ids), "<dev string:x56>");
     foreach (n_objective_id in challenge.a_n_objective_ids) {
         objective_setinvisibletoplayer(n_objective_id, self);
     }

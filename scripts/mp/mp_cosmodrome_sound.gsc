@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace mp_cosmodrome_sound;
 
 // Namespace mp_cosmodrome_sound/mp_cosmodrome_sound

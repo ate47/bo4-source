@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace simple_hostmigration;
 
 // Namespace simple_hostmigration/simple_hostmigration

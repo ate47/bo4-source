@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_util.gsc;
 #using scripts\zm\zm_red_power_quest.gsc;
 #using scripts\zm\zm_red_challenges.gsc;
@@ -2330,7 +2329,7 @@ function function_156669dd(var_5ea5c94d, ended_early) {
         return;
     }
     /#
-        iprintlnbold("black");
+        iprintlnbold("<dev string:x38>");
     #/
     if (zm_utility::is_standard()) {
         level waittill(#"hash_7ca261f468171655");

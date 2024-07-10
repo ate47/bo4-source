@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_red_gamemodes.gsc;
 #using scripts\zm\zm_red_trials.gsc;
 #using scripts\zm\zm_red_ffotd.gsc;
@@ -198,7 +197,7 @@ function event_handler[level_init] main(eventstruct) {
     level.chest_joker_model = "p8_fxanim_zm_zod_magic_box_skull_mod";
     level.chest_joker_custom_movement = &zm_magicbox::function_f5503c41;
     /#
-        t_kill_ai = getent("vol_hemera_combat", "red_death");
+        t_kill_ai = getent("<dev string:x38>", "<dev string:x44>");
         if (isdefined(t_kill_ai)) {
             t_kill_ai callback::on_trigger(&function_d4ff1dd6);
         }
@@ -1345,7 +1344,7 @@ function function_598a6222() {
     // Size: 0x5c
     function function_d4ff1dd6(waitresult) {
         if (waitresult.activator.health <= 0) {
-            iprintlnbold("vox_plr_3_exert_underwater_air_low" + waitresult.activator.origin);
+            iprintlnbold("<dev string:x51>" + waitresult.activator.origin);
         }
     }
 
@@ -1585,97 +1584,97 @@ function function_fbf0e632() {
     // Size: 0x8ac
     function function_acb5b0ec() {
         zm_devgui::add_custom_devgui_callback(&function_76dc48b8);
-        adddebugcommand("zm_red_temple_clutter_oracle_pile");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
-        adddebugcommand("<unknown string>");
+        adddebugcommand("<dev string:x67>");
+        adddebugcommand("<dev string:xb5>");
+        adddebugcommand("<dev string:x105>");
+        adddebugcommand("<dev string:x162>");
+        adddebugcommand("<dev string:x1bd>");
+        adddebugcommand("<dev string:x232>");
+        adddebugcommand("<dev string:x288>");
+        adddebugcommand("<dev string:x2e0>");
+        adddebugcommand("<dev string:x338>");
+        adddebugcommand("<dev string:x392>");
+        adddebugcommand("<dev string:x3ee>");
+        adddebugcommand("<dev string:x444>");
+        adddebugcommand("<dev string:x49c>");
+        adddebugcommand("<dev string:x4f4>");
+        adddebugcommand("<dev string:x554>");
+        adddebugcommand("<dev string:x5a4>");
+        adddebugcommand("<dev string:x5f2>");
+        adddebugcommand("<dev string:x63e>");
+        adddebugcommand("<dev string:x68c>");
+        adddebugcommand("<dev string:x6f0>");
+        adddebugcommand("<dev string:x754>");
+        adddebugcommand("<dev string:x7b8>");
+        adddebugcommand("<dev string:x818>");
+        adddebugcommand("<dev string:x87c>");
+        adddebugcommand("<dev string:x8e0>");
+        adddebugcommand("<dev string:x944>");
+        adddebugcommand("<dev string:x9a4>");
+        adddebugcommand("<dev string:xa0e>");
+        adddebugcommand("<dev string:xa81>");
+        adddebugcommand("<dev string:xaf4>");
+        adddebugcommand("<dev string:xb57>");
+        adddebugcommand("<dev string:xbbe>");
+        adddebugcommand("<dev string:xc29>");
+        adddebugcommand("<dev string:xc90>");
+        adddebugcommand("<dev string:xcff>");
+        adddebugcommand("<dev string:xd64>");
+        adddebugcommand("<dev string:xdd9>");
+        adddebugcommand("<dev string:xe4e>");
+        adddebugcommand("<dev string:xeba>");
+        adddebugcommand("<dev string:xf26>");
+        adddebugcommand("<dev string:xf8f>");
+        adddebugcommand("<dev string:xff2>");
+        adddebugcommand("<dev string:x105a>");
+        adddebugcommand("<dev string:x10ba>");
+        adddebugcommand("<dev string:x1120>");
+        adddebugcommand("<dev string:x1181>");
+        adddebugcommand("<dev string:x11d5>");
+        adddebugcommand("<dev string:x1255>");
+        adddebugcommand("<dev string:x12c5>");
+        adddebugcommand("<dev string:x1351>");
+        adddebugcommand("<dev string:x13d7>");
+        adddebugcommand("<dev string:x1455>");
+        adddebugcommand("<dev string:x14d8>");
+        adddebugcommand("<dev string:x1559>");
+        adddebugcommand("<dev string:x15e5>");
+        adddebugcommand("<dev string:x1665>");
+        adddebugcommand("<dev string:x16d9>");
+        adddebugcommand("<dev string:x1759>");
+        adddebugcommand("<dev string:x17d1>");
+        adddebugcommand("<dev string:x184d>");
+        adddebugcommand("<dev string:x18c3>");
+        adddebugcommand("<dev string:x1933>");
+        adddebugcommand("<dev string:x19a3>");
+        adddebugcommand("<dev string:x1a11>");
+        adddebugcommand("<dev string:x1a8f>");
+        adddebugcommand("<dev string:x1b07>");
+        adddebugcommand("<dev string:x1b7a>");
+        adddebugcommand("<dev string:x1bf0>");
+        adddebugcommand("<dev string:x1c5d>");
+        adddebugcommand("<dev string:x1cc4>");
+        adddebugcommand("<dev string:x1d2b>");
+        adddebugcommand("<dev string:x1d92>");
+        adddebugcommand("<dev string:x1df9>");
+        adddebugcommand("<dev string:x1e6a>");
+        adddebugcommand("<dev string:x1ecd>");
+        adddebugcommand("<dev string:x1f30>");
         if (zm_utility::is_ee_enabled()) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x1f93>");
+            adddebugcommand("<dev string:x1ff0>");
+            adddebugcommand("<dev string:x2040>");
+            adddebugcommand("<dev string:x208a>");
+            adddebugcommand("<dev string:x20d2>");
+            adddebugcommand("<dev string:x211a>");
+            adddebugcommand("<dev string:x2162>");
+            adddebugcommand("<dev string:x21aa>");
+            adddebugcommand("<dev string:x21ec>");
+            adddebugcommand("<dev string:x2261>");
+            adddebugcommand("<dev string:x22e9>");
+            adddebugcommand("<dev string:x236a>");
+            adddebugcommand("<dev string:x23e2>");
+            adddebugcommand("<dev string:x244a>");
         }
     }
 
@@ -1688,28 +1687,28 @@ function function_fbf0e632() {
         case #"hash_6eb30455e9df06a1":
             level thread function_71a6c3ea();
             function_eeb6a1e7();
-            scene::add_scene_func("<unknown string>", &function_5b984671, "<unknown string>");
-            scene::add_scene_func("<unknown string>", &function_ea8d45ef, "<unknown string>");
-            scene::play("<unknown string>");
+            scene::add_scene_func("<dev string:x24be>", &function_5b984671, "<dev string:x24d8>");
+            scene::add_scene_func("<dev string:x24be>", &function_ea8d45ef, "<dev string:x24df>");
+            scene::play("<dev string:x24be>");
             return 1;
         case #"hash_6eb30155e9df0188":
             level thread function_71a6c3ea();
             function_eeb6a1e7();
-            scene::add_scene_func("<unknown string>", &function_75ef7b1f, "<unknown string>");
-            scene::add_scene_func("<unknown string>", &function_ea8d45ef, "<unknown string>");
-            scene::play("<unknown string>");
+            scene::add_scene_func("<dev string:x24e6>", &function_75ef7b1f, "<dev string:x24d8>");
+            scene::add_scene_func("<dev string:x24e6>", &function_ea8d45ef, "<dev string:x24df>");
+            scene::play("<dev string:x24e6>");
             return 1;
         case #"hash_6eb30255e9df033b":
             level thread function_71a6c3ea();
             function_eeb6a1e7();
-            scene::add_scene_func("<unknown string>", &function_883a1fb8, "<unknown string>");
-            scene::add_scene_func("<unknown string>", &function_ea8d45ef, "<unknown string>");
-            scene::play("<unknown string>");
+            scene::add_scene_func("<dev string:x2506>", &function_883a1fb8, "<dev string:x24d8>");
+            scene::add_scene_func("<dev string:x2506>", &function_ea8d45ef, "<dev string:x24df>");
+            scene::play("<dev string:x2506>");
             return 1;
         case #"hash_6eb30755e9df0bba":
             level thread function_71a6c3ea();
             function_eeb6a1e7();
-            scene::play("<unknown string>");
+            scene::play("<dev string:x2526>");
             return 1;
         case #"play_all":
             level.var_7652563c = 1;
@@ -1959,18 +1958,18 @@ function function_fbf0e632() {
             break;
         case #"challenge_phase_1":
             level.var_6e5099bb = 1;
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x2546>");
             break;
         case #"challenge_phase_2":
             level.var_6e5099bb = 2;
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x2565>");
             break;
         case #"challenge_phase_3":
             level.var_6e5099bb = 3;
-            iprintlnbold("<unknown string>");
+            iprintlnbold("<dev string:x2584>");
             break;
         case #"hash_7a9bab3c50ff294d":
-            level flag::set("<unknown string>");
+            level flag::set("<dev string:x25a3>");
             break;
         case #"hash_e3eb39f2ce05aff":
             level thread zm_red_main_quest::function_69e1a1fc();
@@ -2052,7 +2051,7 @@ function function_fbf0e632() {
     // Checksum 0x4091e817, Offset: 0x9478
     // Size: 0x5c
     function function_7c8b5f27() {
-        if (level flag::get("<unknown string>")) {
+        if (level flag::get("<dev string:x25b8>")) {
             n_amount = level.var_8b7ab859 / 4;
             self namespace_f8f28e08::function_53a333a8(undefined, n_amount);
         }
@@ -2064,7 +2063,7 @@ function function_fbf0e632() {
     // Size: 0x4c
     function function_71a6c3ea() {
         zm_devgui::zombie_devgui_open_sesame();
-        scene::init("<unknown string>");
+        scene::init("<dev string:x25c3>");
         level complete_pap();
     }
 
@@ -2085,7 +2084,7 @@ function function_fbf0e632() {
     // Size: 0x4c
     function spawn_pegasus() {
         level flag::set(#"hash_3dba794053dea40e");
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x25b8>");
     }
 
     // Namespace zm_red/zm_red
@@ -2095,14 +2094,14 @@ function function_fbf0e632() {
     function ride_pegasus() {
         level flag::set(#"hash_3764b0cb106568ec");
         level flag::set(#"hash_3dba794053dea40e");
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x25b8>");
         level flag::set(#"hash_32ff7a456732ef09");
         level flag::set(#"hash_1b6616e730b1235b");
         level flag::set(#"pegasus_exited");
-        level scene::init("<unknown string>");
+        level scene::init("<dev string:x25c3>");
         zm_devgui::zombie_devgui_open_sesame();
         level zm_utility::function_9ad5aeb1(1);
-        s_ride = struct::get("<unknown string>");
+        s_ride = struct::get("<dev string:x25e6>");
         a_players = getplayers();
         foreach (player in a_players) {
             player setorigin(s_ride.origin + (randomintrange(-16, 16), randomintrange(-16, 16), 0));
@@ -2117,15 +2116,15 @@ function function_fbf0e632() {
     function free_eagles() {
         level flag::set(#"hash_3764b0cb106568ec");
         level flag::set(#"hash_3dba794053dea40e");
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x25b8>");
         level flag::set(#"hash_32ff7a456732ef09");
         level flag::set(#"hash_1b6616e730b1235b");
-        level scene::init("<unknown string>");
+        level scene::init("<dev string:x25c3>");
         zm_devgui::zombie_devgui_open_sesame();
         level zm_utility::function_9ad5aeb1(1);
         wait(1);
         level flag::set(#"hash_4083e9da0ba41dec");
-        var_ff91be3a = struct::get_array("<unknown string>", "red_death");
+        var_ff91be3a = struct::get_array("<dev string:x25fb>", "<dev string:x44>");
         var_a10268d3 = level.players;
         for (i = 0; i < var_a10268d3.size; i++) {
             var_a10268d3[i] setorigin(var_ff91be3a[i].origin);
@@ -2150,7 +2149,7 @@ function function_fbf0e632() {
         }
         level flag::set(#"hash_3764b0cb106568ec");
         level flag::set(#"hash_3dba794053dea40e");
-        level flag::set("<unknown string>");
+        level flag::set("<dev string:x25b8>");
         level flag::set(#"hash_32ff7a456732ef09");
         level flag::set(#"hash_4083e9da0ba41dec");
         level flag::set(#"pap_quest_completed");
@@ -2160,16 +2159,16 @@ function function_fbf0e632() {
         level flag::set(#"hash_61de3b8fe6f6a35");
         level flag::set(#"hash_7943879f3be8ccc6");
         level thread zm_red_power_quest::devgui_complete();
-        level thread scene::play(#"hash_6c19cacedbc244f", "<unknown string>");
-        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<unknown string>");
-        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<unknown string>");
-        level thread scene::play(#"hash_6c19cacedbc244f", "<unknown string>");
-        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<unknown string>");
-        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<unknown string>");
-        level thread scene::play(#"hash_6c19cacedbc244f", "<unknown string>");
-        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<unknown string>");
-        level scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<unknown string>");
-        var_6800d950 = getent("<unknown string>", "red_death");
+        level thread scene::play(#"hash_6c19cacedbc244f", "<dev string:x260e>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<dev string:x260e>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<dev string:x260e>");
+        level thread scene::play(#"hash_6c19cacedbc244f", "<dev string:x2618>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<dev string:x2618>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<dev string:x2618>");
+        level thread scene::play(#"hash_6c19cacedbc244f", "<dev string:x2622>");
+        level thread scene::play(#"p8_fxanim_zm_red_omphalos_crystal_front_bundle", "<dev string:x2622>");
+        level scene::play(#"p8_fxanim_zm_red_omphalos_crystal_right_bundle", "<dev string:x2622>");
+        var_6800d950 = getent("<dev string:x262c>", "<dev string:x44>");
         if (isdefined(var_6800d950)) {
             var_6800d950 delete();
         }
@@ -2206,8 +2205,8 @@ function function_fbf0e632() {
     // Checksum 0xfd11d133, Offset: 0x9ed8
     // Size: 0x13e
     function function_80b73b4() {
-        self notify("<unknown string>");
-        self endon("<unknown string>");
+        self notify("<dev string:x263d>");
+        self endon("<dev string:x263d>");
         if (getdvarint(#"hash_49d01fe7f6492094", 0) == 0) {
             setdvar(#"hash_49d01fe7f6492094", 1);
         } else {

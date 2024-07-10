@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_weapons.gsc;
 #using scripts\zm_common\zm_vo.gsc;
 #using scripts\zm_common\zm_items.gsc;
@@ -150,7 +149,7 @@ function function_292dd34f(b_right) {
 // Size: 0x9c
 function function_216d0545(s_notify) {
     /#
-        if (s_notify.mod === "<unknown string>" && isdefined(level.var_14a33fde) && level.var_14a33fde) {
+        if (s_notify.mod === "<dev string:x38>" && isdefined(level.var_14a33fde) && level.var_14a33fde) {
             return true;
         }
     #/

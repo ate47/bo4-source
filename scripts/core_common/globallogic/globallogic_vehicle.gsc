@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\weapons\weapon_utils.gsc;
 #using scripts\core_common\weapons_shared.gsc;
 #using scripts\core_common\vehicle_shared.gsc;
@@ -186,7 +185,7 @@ function callback_vehicledamage(einflictor, eattacker, idamage, idflags, smeanso
     if (self.idflags & 8192 && idamage < unmodified) {
         idamage = unmodified;
     }
-    assert(isdefined(idamage), "<unknown string>");
+    assert(isdefined(idamage), "<dev string:x38>");
     if (idamage == 0) {
         return;
     }
@@ -249,7 +248,7 @@ function callback_vehicledamage(einflictor, eattacker, idamage, idflags, smeanso
     }
     /#
         if (getdvarint(#"g_debugdamage", 0)) {
-            println("<unknown string>" + selfentnum + "<unknown string>" + self.health + "<unknown string>" + eattacker.clientid + "<unknown string>" + isplayer(einflictor) + "<unknown string>" + idamage + "<unknown string>" + shitloc);
+            println("<dev string:x73>" + selfentnum + "<dev string:x7e>" + self.health + "<dev string:x89>" + eattacker.clientid + "<dev string:x96>" + isplayer(einflictor) + "<dev string:xae>" + idamage + "<dev string:xb9>" + shitloc);
         }
     #/
 }

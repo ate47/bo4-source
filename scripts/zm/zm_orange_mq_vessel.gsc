@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_orange_ee_dynamite.gsc;
 #using scripts\zm_common\zm_ui_inventory.gsc;
@@ -151,8 +150,8 @@ function function_ede90521() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>" + self.script_string);
-                println("<unknown string>" + self.script_string);
+                iprintlnbold("<dev string:x38>" + self.script_string);
+                println("<dev string:x38>" + self.script_string);
             }
         }
     #/
@@ -165,8 +164,8 @@ function function_ede90521() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>" + self.targetname + "<unknown string>" + self.script_int);
-                println("<unknown string>" + self.targetname + "<unknown string>" + self.script_int);
+                iprintlnbold("<dev string:x41>" + self.targetname + "<dev string:x4e>" + self.script_int);
+                println("<dev string:x41>" + self.targetname + "<dev string:x4e>" + self.script_int);
             }
         }
     #/
@@ -188,8 +187,8 @@ function private function_a5fa6428() {
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
-                iprintlnbold("<unknown string>" + level.var_d6513b72.script_noteworthy);
-                println("<unknown string>" + level.var_d6513b72.script_noteworthy);
+                iprintlnbold("<dev string:x52>" + level.var_d6513b72.script_noteworthy);
+                println("<dev string:x52>" + level.var_d6513b72.script_noteworthy);
             }
         }
     #/

@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial_util.gsc;
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_stats.gsc;
@@ -369,7 +368,7 @@ function function_5769f26a(var_c00ecbf1) {
             return i;
         }
     }
-    assert(0, "<unknown string>" + var_c00ecbf1);
+    assert(0, "<dev string:x38>" + var_c00ecbf1);
     return 0;
 }
 
@@ -523,7 +522,7 @@ function private function_23baf070(loadout) {
 function private function_bcd35efc() {
     foreach (player in getplayers()) {
         if (!isdefined(player.var_42a4759e)) {
-            assertmsg("<unknown string>");
+            assertmsg("<dev string:x55>");
             continue;
         }
         player zm_trial_util::function_d37a769(player.var_42a4759e.var_8c5bddf5);

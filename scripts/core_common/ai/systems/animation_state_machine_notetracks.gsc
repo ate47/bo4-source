@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace animationstatenetwork;
 
 // Namespace animationstatenetwork/animation_state_machine_notetracks
@@ -41,9 +40,9 @@ function private handlenotetrack(entity, notetrack) {
 // Checksum 0x8abf809f, Offset: 0x1c0
 // Size: 0xca
 function registernotetrackhandlerfunction(notetrackname, notetrackfuncptr) {
-    assert(isstring(notetrackname), "<unknown string>");
-    assert(isfunctionptr(notetrackfuncptr), "<unknown string>");
-    assert(!isdefined(level._notetrack_handler[notetrackname]), "<unknown string>" + notetrackname + "<unknown string>");
+    assert(isstring(notetrackname), "<dev string:x38>");
+    assert(isfunctionptr(notetrackfuncptr), "<dev string:x73>");
+    assert(!isdefined(level._notetrack_handler[notetrackname]), "<dev string:xbd>" + notetrackname + "<dev string:xe2>");
     level._notetrack_handler[notetrackname] = notetrackfuncptr;
 }
 

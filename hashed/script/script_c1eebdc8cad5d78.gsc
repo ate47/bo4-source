@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\mp_common\item_world_util.csc;
 
 #namespace namespace_a0d533d1;
@@ -67,11 +66,11 @@ function function_2ced1d34(item, var_fe35755b, allowdupes = 0) {
         return;
     }
     if (item.itementry.itemtype != #"weapon") {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x38>");
         return;
     }
     if (var_fe35755b.itemtype != #"attachment") {
-        assert(0, "<unknown string>");
+        assert(0, "<dev string:x67>");
         return;
     }
     if (!isdefined(var_fe35755b.attachments) || var_fe35755b.attachments.size <= 0) {

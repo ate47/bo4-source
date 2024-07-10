@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_powerups.gsc;
 #using scripts\zm_common\zm_equipment.gsc;
 #using scripts\zm_common\zm.gsc;
@@ -27,7 +26,7 @@ function __init__() {
 }
 
 // Namespace frag_grenade/zm_weap_frag_grenade
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0xfc89659c, Offset: 0x168
 // Size: 0xea
 function function_719b774a(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

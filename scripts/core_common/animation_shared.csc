@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\system_shared.csc;
 #using scripts\core_common\shaderanim_shared.csc;
 #using scripts\core_common\postfx_shared.csc;
@@ -57,7 +56,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_
     self notify(#"new_scripted_anim");
     self endon(#"new_scripted_anim", #"death");
     if (!isdefined(self.model) || self.model == #"") {
-        assertmsg("<unknown string>" + self.origin);
+        assertmsg("<dev string:x38>" + self.origin);
         return;
     }
     flagsys::set_val("firstframe", n_rate == 0);
@@ -71,7 +70,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_
         self animscripted("_anim_notify_", v_origin_or_ent, v_angles_or_tag, animation, n_blend_in, n_rate, n_start_time);
     } else {
         if (isstring(v_angles_or_tag)) {
-            assert(isdefined(v_origin_or_ent.model), "<unknown string>" + animation + "<unknown string>" + v_angles_or_tag + "<unknown string>");
+            assert(isdefined(v_origin_or_ent.model), "<dev string:x75>" + animation + "<dev string:x90>" + v_angles_or_tag + "<dev string:x9d>");
             v_pos = v_origin_or_ent gettagorigin(v_angles_or_tag);
             v_ang = v_origin_or_ent gettagangles(v_angles_or_tag);
             self.origin = v_pos;
@@ -91,9 +90,9 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_
         self unlink();
     }
     /#
-        self.var_80c69db6 = "<unknown string>";
+        self.var_80c69db6 = "<dev string:xd2>";
         self.var_6c4bb19 = {#animation:animation, #v_origin_or_ent:v_origin_or_ent, #v_angles_or_tag:v_angles_or_tag};
-        level flagsys::clear("<unknown string>");
+        level flagsys::clear("<dev string:xdb>");
     #/
     self thread handle_notetracks();
     self waittill_end();
@@ -139,7 +138,7 @@ function _get_align_ent(e_align) {
 function _get_align_pos(v_origin_or_ent = self.origin, v_angles_or_tag = isdefined(self.angles) ? self.angles : (0, 0, 0)) {
     s = spawnstruct();
     if (isvec(v_origin_or_ent)) {
-        assert(isvec(v_angles_or_tag), "<unknown string>");
+        assert(isvec(v_angles_or_tag), "<dev string:xe8>");
         s.origin = v_origin_or_ent;
         s.angles = v_angles_or_tag;
     } else {
@@ -185,7 +184,7 @@ function add_notetrack_func(funcname, func) {
     if (!isdefined(level._animnotifyfuncs)) {
         level._animnotifyfuncs = [];
     }
-    assert(!isdefined(level._animnotifyfuncs[funcname]), "<unknown string>");
+    assert(!isdefined(level._animnotifyfuncs[funcname]), "<dev string:x110>");
     level._animnotifyfuncs[funcname] = func;
 }
 
@@ -240,7 +239,7 @@ function call_notetrack_handler(str_note) {
                 self [[ func ]]();
                 break;
             default:
-                assertmsg("<unknown string>");
+                assertmsg("<dev string:x135>");
                 break;
             }
         }

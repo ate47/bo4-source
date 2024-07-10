@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_utility.gsc;
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -477,7 +476,7 @@ function set_global_stat(stat_name, value) {
     self stats::set_stat(#"playerstatslist", stat_name, #"statvalue", value);
     /#
         var_ba1fb8c1 = self stats::get_stat(#"playerstatslist", stat_name, #"statvalue");
-        println("blightfathers_killed" + self.entity_num + "catalysts_killed" + stat_name + "catalyst_waters_killed" + var_ba1fb8c1);
+        println("<dev string:x38>" + self.entity_num + "<dev string:x42>" + stat_name + "<dev string:x46>" + var_ba1fb8c1);
     #/
 }
 
@@ -860,7 +859,7 @@ function function_a05b3b23(stat_name, value) {
     if (!level.onlinegame || isdefined(level.zm_disable_recording_stats) && level.zm_disable_recording_stats || !zm_utility::is_trials()) {
         return;
     }
-    assert(isdefined(level.var_6d87ac05) && isdefined(level.var_6d87ac05.name), "boas_bats_killed");
+    assert(isdefined(level.var_6d87ac05) && isdefined(level.var_6d87ac05.name), "<dev string:x57>");
     stats::set_stat(#"hash_5abf25946ab0ce9a", level.var_6d87ac05.name, stat_name, value);
 }
 
@@ -872,7 +871,7 @@ function registerchand_grow_(stat_name) {
     if (!level.onlinegame || isdefined(level.zm_disable_recording_stats) && level.zm_disable_recording_stats || !zm_utility::is_trials()) {
         return;
     }
-    assert(isdefined(level.var_6d87ac05) && isdefined(level.var_6d87ac05.name), "<unknown string>");
+    assert(isdefined(level.var_6d87ac05) && isdefined(level.var_6d87ac05.name), "<dev string:xa8>");
     stats::inc_stat(#"hash_5abf25946ab0ce9a", level.var_6d87ac05.name, stat_name, 1);
 }
 
@@ -902,7 +901,7 @@ function function_31931250(stat_name, n_value, var_48038375 = 0) {
 // Checksum 0x4542b224, Offset: 0x4b78
 // Size: 0x1ac
 function increment_challenge_stat(stat_name, amount = 1, var_b68b08b1 = 0) {
-    assert(ishash(stat_name), "<unknown string>");
+    assert(ishash(stat_name), "<dev string:xf2>");
     if (!level.onlinegame || isdefined(level.zm_disable_recording_stats) && level.zm_disable_recording_stats || var_b68b08b1 && zm_utility::is_standard()) {
         return;
     }
@@ -913,10 +912,10 @@ function increment_challenge_stat(stat_name, amount = 1, var_b68b08b1 = 0) {
     /#
         var_ba1fb8c1 = self stats::get_stat_global(stat_name);
         if (isdefined(self.entity_num)) {
-            println("blightfathers_killed" + self.entity_num + "catalysts_killed" + function_9e72a96(stat_name) + "catalyst_waters_killed" + var_ba1fb8c1);
+            println("<dev string:x38>" + self.entity_num + "<dev string:x42>" + function_9e72a96(stat_name) + "<dev string:x46>" + var_ba1fb8c1);
             return;
         }
-        println("blightfathers_killed" + function_9e72a96(stat_name) + "catalyst_waters_killed" + var_ba1fb8c1);
+        println("<dev string:x38>" + function_9e72a96(stat_name) + "<dev string:x46>" + var_ba1fb8c1);
     #/
 }
 
@@ -1697,7 +1696,7 @@ function function_ea5b4947(b_end_game = 0) {
         if (!isbot(player) && isdefined(player.var_78c18942) && player.var_78c18942 > 0) {
             var_83b23c0c = max(player function_c52bcf79(), float(getdvarint(#"hash_1624faaee3c04f09", 1)));
             var_78c18942 = player.var_78c18942 * var_83b23c0c;
-            println("<unknown string>" + player.name + "<unknown string>" + player.var_78c18942 + "<unknown string>" + var_78c18942);
+            println("<dev string:x10e>" + player.name + "<dev string:x120>" + player.var_78c18942 + "<dev string:x13b>" + var_78c18942);
             player function_e8f77739(#"zm_timeplayed", int(var_78c18942));
         }
         if (isdefined(player.bgb_pack) && isarray(player.bgb_pack)) {
@@ -1757,7 +1756,7 @@ function function_94335f4a(var_1aa5a6d6) {
 // Checksum 0xa59894a8, Offset: 0x8a00
 // Size: 0x460
 function function_c0c6ab19(var_ad971622, n_value = 1, var_b68b08b1 = 0) {
-    assert(ishash(var_ad971622), "<unknown string>");
+    assert(ishash(var_ad971622), "<dev string:x152>");
     if (!level.onlinegame || isdefined(level.zm_disable_recording_stats) && level.zm_disable_recording_stats || var_b68b08b1 && zm_utility::is_standard()) {
         return;
     }
@@ -1822,13 +1821,13 @@ function function_7f377150(s_event_calling_task, n_value = 1) {
             self addrankxpvalue("event_calling_task", s_event_calling_task.n_xp);
             self stats::set_stat(#"hash_3b52e51401f0229c", level.var_6ad5a223, s_event_calling_task.var_1f2bdb95, 1);
             uploadstats(self);
-            println(function_9e72a96(level.var_6ad5a223) + "<unknown string>" + self stats::get_stat(#"hash_3b52e51401f0229c", level.var_6ad5a223, "<unknown string>") + "<unknown string>" + function_9e72a96(s_event_calling_task.var_ad971622));
+            println(function_9e72a96(level.var_6ad5a223) + "<dev string:x177>" + self stats::get_stat(#"hash_3b52e51401f0229c", level.var_6ad5a223, "<dev string:x188>") + "<dev string:x198>" + function_9e72a96(s_event_calling_task.var_ad971622));
             return;
         }
         /#
             progress = var_e4edaaf0 + n_value;
             target = s_event_calling_task.var_e226ec4f;
-            iprintln(self.name + "<unknown string>" + function_9e72a96(s_event_calling_task.var_ad971622) + "<unknown string>" + progress + "<unknown string>" + target);
+            iprintln(self.name + "<dev string:x1a7>" + function_9e72a96(s_event_calling_task.var_ad971622) + "<dev string:x1c0>" + progress + "<dev string:x1d2>" + target);
         #/
         self stats::inc_stat(#"hash_3b52e51401f0229c", level.var_6ad5a223, #"progress", n_value);
     }
@@ -1874,16 +1873,16 @@ function function_55109709(s_daily_calling_task, n_value = 1) {
             self function_e8f77739(#"hash_74ccf1507183e99f", var_ae857992);
             uploadstats(self);
             self function_4835d26a();
-            println("<unknown string>" + function_9e72a96(s_daily_calling_task.var_ad971622));
+            println("<dev string:x1d6>" + function_9e72a96(s_daily_calling_task.var_ad971622));
             /#
-                iprintln(self.name + "<unknown string>" + function_9e72a96(s_daily_calling_task.var_ad971622) + "<unknown string>" + s_daily_calling_task.n_xp + "<unknown string>");
+                iprintln(self.name + "<dev string:x1f2>" + function_9e72a96(s_daily_calling_task.var_ad971622) + "<dev string:x203>" + s_daily_calling_task.n_xp + "<dev string:x21b>");
             #/
             return;
         }
         /#
             progress = var_e4edaaf0 + n_value;
             target = s_daily_calling_task.var_e226ec4f;
-            iprintln(self.name + "<unknown string>" + function_9e72a96(s_daily_calling_task.var_ad971622) + "<unknown string>" + progress + "<unknown string>" + target);
+            iprintln(self.name + "<dev string:x1f2>" + function_9e72a96(s_daily_calling_task.var_ad971622) + "<dev string:x1c0>" + progress + "<dev string:x1d2>" + target);
         #/
         self stats::inc_stat(#"hash_18e3320ccf4091e5", #"progress", n_value);
     }

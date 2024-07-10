@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #namespace footsteps;
 
 // Namespace footsteps/footsteps_shared
@@ -9,9 +8,9 @@ function missing_ai_footstep_callback() {
     /#
         type = self.archetype;
         if (!isdefined(type)) {
-            type = "<unknown string>";
+            type = "<dev string:x38>";
         }
-        println("<unknown string>" + type + "<unknown string>" + self._aitype + "<unknown string>");
+        println("<dev string:x42>" + type + "<dev string:x53>" + self._aitype + "<dev string:xd9>");
     #/
 }
 
@@ -23,7 +22,7 @@ function registeraitypefootstepcb(archetype, callback) {
     if (!isdefined(level._footstepcbfuncs)) {
         level._footstepcbfuncs = [];
     }
-    assert(!isdefined(level._footstepcbfuncs[archetype]), "<unknown string>" + archetype + "<unknown string>");
+    assert(!isdefined(level._footstepcbfuncs[archetype]), "<dev string:x109>" + archetype + "<dev string:x116>");
     level._footstepcbfuncs[archetype] = callback;
 }
 
@@ -33,7 +32,7 @@ function registeraitypefootstepcb(archetype, callback) {
 // Size: 0xe2
 function playaifootstep(client_num, pos, surface, notetrack, bone) {
     if (!isdefined(self.archetype)) {
-        println("<unknown string>");
+        println("<dev string:x145>");
         footstepdoeverything();
         return;
     }

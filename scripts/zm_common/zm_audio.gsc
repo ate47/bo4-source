@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\zm_common\zm_trial.gsc;
 #using scripts\zm_common\zm_zonemgr.gsc;
 #using scripts\zm_common\zm_weapons.gsc;
@@ -44,7 +43,7 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("allplayers", "charindex", 1, 4, "int");
     clientfield::register("toplayer", "isspeaking", 1, 1, "int");
-    println("underwater_emerge");
+    println("<dev string:x38>");
     level zmbvox();
     callback::on_connect(&init_audio_functions);
     callback::on_ai_spawned(&function_198818fe);
@@ -987,7 +986,7 @@ function create_and_play_dialog(category, subcategory, force_variant, b_wait_if_
         if (!function_63f85f39(s_overrides.str_category, s_overrides.var_39acfdda)) {
             /#
                 if (getdvarint(#"debug_audio", 0)) {
-                    println("<unknown string>" + category + "<unknown string>" + subcategory + "<unknown string>");
+                    println("<dev string:x6f>" + category + "<dev string:x8c>" + subcategory + "<dev string:x9f>");
                 }
             #/
         } else if (s_overrides.chance == 0 || s_overrides.chance > randomint(100)) {
@@ -1004,7 +1003,7 @@ function create_and_play_dialog(category, subcategory, force_variant, b_wait_if_
     if (!function_63f85f39(category, subcategory)) {
         /#
             if (getdvarint(#"debug_audio", 0)) {
-                println("<unknown string>" + category + "<unknown string>" + subcategory + "<unknown string>");
+                println("<dev string:x6f>" + category + "<dev string:x8c>" + subcategory + "<dev string:xcb>");
             }
         #/
         return false;
@@ -1046,7 +1045,7 @@ function create_and_play_dialog(category, subcategory, force_variant, b_wait_if_
     } else {
         /#
             if (getdvarint(#"debug_audio", 0)) {
-                iprintln("<unknown string>");
+                iprintln("<dev string:xe3>");
             }
         #/
         return false;
@@ -1091,7 +1090,7 @@ function display_override() {
         waitframe(1);
         /#
             if (getdvarint(#"debug_audio", 0)) {
-                debug2dtext((500, 20, 0), isdefined(level.sndvoxoverride) && level.sndvoxoverride ? "<unknown string>" : "<unknown string>", (1, 0, 0), 1, (0, 0, 0), 0, 0.8, 1);
+                debug2dtext((500, 20, 0), isdefined(level.sndvoxoverride) && level.sndvoxoverride ? "<dev string:x111>" : "<dev string:x120>", (1, 0, 0), 1, (0, 0, 0), 0, 0.8, 1);
             }
         #/
     }
@@ -1506,7 +1505,7 @@ function function_654ec86b() {
 // Size: 0x24a
 function function_e2bd90b5(category, subcategory, variant) {
     if (!isplayer(self)) {
-        assert(0, "<unknown string>" + "<unknown string>");
+        assert(0, "<dev string:x123>" + "<dev string:x143>");
         return 0;
     }
     if (function_31230d39(category, subcategory)) {
@@ -1546,7 +1545,7 @@ function zmbvoxgetlinevariant(prefix, suffix, var_651f2941, force_variant) {
     if (!self.sound_dialog[suffix].size) {
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
-                println("<unknown string>" + suffix + "<unknown string>" + prefix);
+                println("<dev string:x15c>" + suffix + "<dev string:x188>" + prefix);
             }
         #/
         return undefined;
@@ -1562,7 +1561,7 @@ function zmbvoxgetlinevariant(prefix, suffix, var_651f2941, force_variant) {
         if (!self.sound_dialog_available[suffix].size) {
             /#
                 if (getdvarint(#"debug_audio", 0) > 0) {
-                    println("<unknown string>" + suffix + "<unknown string>" + prefix);
+                    println("<dev string:x15c>" + suffix + "<dev string:x188>" + prefix);
                 }
             #/
             return undefined;
@@ -1969,7 +1968,7 @@ function secretuse(notify_string, color, qualifier_func, arg1, arg2) {
             return;
         }
         /#
-            print3d(self.origin, "<unknown string>", color, 1);
+            print3d(self.origin, "<dev string:x18c>", color, 1);
         #/
         players = level.players;
         foreach (player in players) {
@@ -2216,7 +2215,7 @@ function sndannouncerplayvox(type, player, str_sound, var_e08a84d6, b_wait_if_bu
             /#
                 if (getdvarint(#"debug_audio", 0)) {
                     if (!soundexists(str_sound)) {
-                        var_2dbe34fe = "<unknown string>" + "<unknown string>" + function_9e72a96(str_sound) + "<unknown string>";
+                        var_2dbe34fe = "<dev string:x190>" + "<dev string:x1a0>" + function_9e72a96(str_sound) + "<dev string:x1b0>";
                         iprintlnbold(var_2dbe34fe);
                         println(var_2dbe34fe);
                     }
@@ -2830,7 +2829,7 @@ function get_number_variants(aliasprefix) {
             return i;
         }
     }
-    assertmsg("<unknown string>");
+    assertmsg("<dev string:x1c3>");
 }
 
 // Namespace zm_audio/zm_audio

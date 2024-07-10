@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\core_common\vehicles\smart_bomb.gsc;
 #using scripts\core_common\vehicle_ai_shared.gsc;
 #using scripts\core_common\vehicle_shared.gsc;
@@ -23,8 +22,8 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("vehicle", "raps_side_deathfx", 1, 1, "int");
     vehicle::add_main_callback("raps", &raps_initialize);
-    slow_triggers = getentarray("raps_slow", "targetname");
-    array::thread_all(slow_triggers, &slow_raps_trigger);
+    5748 = getentarray("raps_slow", "targetname");
+    array::thread_all(5748, &slow_raps_trigger);
 }
 
 // Namespace raps/raps

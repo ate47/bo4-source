@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreak_hacking.gsc;
 #using scripts\core_common\clientfield_shared.gsc;
 

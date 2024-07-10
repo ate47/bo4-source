@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreak_bundles.gsc;
 #using scripts\killstreaks\killstreaks_shared.gsc;
 #using scripts\core_common\player\player_loadout.gsc;
@@ -429,8 +428,8 @@ function function_fc4df41e(watcher, owner) {
     }
     self thread function_d82c03d4(player);
     var_637dcf3d clientfield::set("concertinaWire_placed", 1);
-    assert(isdefined(level.var_87226c31), "<unknown string>");
-    assert(isdefined(level.var_87226c31.bundle), "<unknown string>");
+    assert(isdefined(level.var_87226c31), "<dev string:x38>");
+    assert(isdefined(level.var_87226c31.bundle), "<dev string:x66>");
     var_637dcf3d influencers::create_entity_enemy_influencer("grenade", owner.team);
     var_637dcf3d util::make_sentient();
     if (isdefined(level.var_87226c31.bundle.deployanim)) {
@@ -631,7 +630,7 @@ function function_dac69ad1(player, concertinawire) {
             return;
         }
         params = getstatuseffect(level.var_87226c31.bundle.var_1a6488fe);
-        assert(isdefined(params), "<unknown string>");
+        assert(isdefined(params), "<dev string:x9b>");
         duration = params.var_77449e9;
         player.var_fee1c0df = gettime() + duration;
         if (var_1c365dd) {
@@ -796,14 +795,14 @@ function private function_2dd4aa9d(player) {
     }
     if (!isdefined(player.var_673f6995) || player.var_673f6995 < gettime()) {
         params = getstatuseffect(level.var_87226c31.bundle.var_f6fdbda7);
-        assert(isdefined(params), "<unknown string>");
+        assert(isdefined(params), "<dev string:x9b>");
         duration = params.var_77449e9;
         player.var_673f6995 = gettime() + duration;
         player.var_fc55d553 = 0;
     }
     if (!isdefined(player.var_13d8a85d) || player.var_13d8a85d < gettime()) {
         params = getstatuseffect(level.var_87226c31.bundle.var_f6fdbda7);
-        assert(isdefined(params), "<unknown string>");
+        assert(isdefined(params), "<dev string:x9b>");
         player status_effect::status_effect_apply(params, level.var_87226c31.var_3e7344ee, concertinawire.owner, 1, undefined, undefined, player.origin);
         endtime = player status_effect::function_2ba2756c(params.var_18d16a6b);
         player.var_13d8a85d = endtime - 75;

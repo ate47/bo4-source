@@ -1,4 +1,3 @@
-// Atian COD Tools GSC decompiler test
 #using scripts\killstreaks\killstreaks_util.gsc;
 #using scripts\killstreaks\helicopter_shared.gsc;
 #using scripts\mp_common\gametypes\ct_bots.gsc;
@@ -1185,7 +1184,7 @@ function function_f9ed304d() {
     }
     if (!isdefined(self)) {
         /#
-            iprintlnbold("grou");
+            iprintlnbold("<dev string:x38>");
         #/
     }
 }
@@ -1872,7 +1871,7 @@ function objcounter_init(str_label, var_8f1f8855, n_total, n_mode = 0, var_455d8
 // Size: 0x16c
 function function_785eb2ca() {
     if (isplayer(self)) {
-        assert(isdefined(level.ct_shared_objcounter.n_count), "killstreak_ready_");
+        assert(isdefined(level.ct_shared_objcounter.n_count), "<dev string:x68>");
         switch (level.ct_shared_objcounter.n_mode) {
         case 0:
             level.ct_shared_objcounter.n_count--;
@@ -3600,7 +3599,7 @@ function function_9ab507a9(var_76b15be0, var_8e92afbd, var_da2d40e, var_e380ff6c
     }
     level.a_s_colbounds[var_76b15be0] = {#targetname:var_76b15be0, #a_effects:[], #var_5d90b13a:var_8e92afbd, #var_a90a2d1:var_da2d40e, #var_e380ff6c:var_e380ff6c, #var_40347291:var_40347291, #b_disconnectpaths:b_disconnectpaths};
     var_e62fe646 = getentarray(var_76b15be0, "targetname");
-    assert(var_e62fe646.size > 0, "<unknown string>");
+    assert(var_e62fe646.size > 0, "<dev string:x9e>");
     level.a_s_colbounds[var_76b15be0].var_e62fe646 = var_e62fe646;
     while (true) {
         level thread colbounds_off(var_76b15be0, 1);
@@ -3632,7 +3631,7 @@ function function_e46a6ea7(_hash) {
 // Checksum 0xdc0c094e, Offset: 0xce30
 // Size: 0x154
 function colbounds_on(str_id) {
-    assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
+    assert(isdefined(level.a_s_colbounds[str_id]), "<dev string:xf9>");
     level.a_s_colbounds[str_id].b_on = 1;
     var_e62fe646 = level.a_s_colbounds[str_id].var_e62fe646;
     foreach (e_coll in var_e62fe646) {
@@ -3649,7 +3648,7 @@ function colbounds_on(str_id) {
 // Checksum 0xee106377, Offset: 0xcf90
 // Size: 0x17e
 function colbounds_off(str_id, var_c57d5cfe = 0) {
-    assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
+    assert(isdefined(level.a_s_colbounds[str_id]), "<dev string:x12a>");
     var_e62fe646 = level.a_s_colbounds[str_id].var_e62fe646;
     foreach (e_coll in var_e62fe646) {
         e_coll notsolid();
@@ -3668,7 +3667,7 @@ function colbounds_off(str_id, var_c57d5cfe = 0) {
 // Checksum 0x76210b8, Offset: 0xd118
 // Size: 0x5b0
 function function_95f28639(str_id) {
-    assert(level.a_s_colbounds[str_id].b_on == 1, "<unknown string>");
+    assert(level.a_s_colbounds[str_id].b_on == 1, "<dev string:x15c>");
     if (level.a_s_colbounds[str_id].a_effects.size === 0) {
         level.a_s_colbounds[str_id].a_effects = [];
         foreach (e_coll in level.a_s_colbounds[str_id].var_e62fe646) {
@@ -3764,7 +3763,7 @@ function function_95f28639(str_id) {
 // Checksum 0x8f74aa8a, Offset: 0xd6d0
 // Size: 0x11a
 function function_a3f8ddfa(str_id) {
-    assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
+    assert(isdefined(level.a_s_colbounds[str_id]), "<dev string:x19a>");
     if (isdefined(level.a_s_colbounds[str_id].a_effects) && level.a_s_colbounds[str_id].a_effects.size > 0) {
         foreach (effect in level.a_s_colbounds[str_id].a_effects) {
             effect delete();
@@ -4449,22 +4448,22 @@ function function_a61ebb46(str_hint) {
     // Size: 0x420
     function function_dfd7add4() {
         sessionmode = currentsessionmode();
-        setdvar(#"devgui_ct", "<unknown string>");
+        setdvar(#"devgui_ct", "<dev string:x1c9>");
         if (sessionmode != 4) {
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
-            adddebugcommand("<unknown string>");
+            adddebugcommand("<dev string:x1cc>");
+            adddebugcommand("<dev string:x22d>");
+            adddebugcommand("<dev string:x28e>");
+            adddebugcommand("<dev string:x2ec>");
+            adddebugcommand("<dev string:x34c>");
+            adddebugcommand("<dev string:x3a8>");
+            adddebugcommand("<dev string:x406>");
+            adddebugcommand("<dev string:x456>");
+            adddebugcommand("<dev string:x4bc>");
         }
         while (true) {
             wait(0.25);
-            cmd = getdvarstring(#"devgui_ct", "<unknown string>");
-            if (cmd == "<unknown string>") {
+            cmd = getdvarstring(#"devgui_ct", "<dev string:x1c9>");
+            if (cmd == "<dev string:x1c9>") {
                 continue;
             }
             e_player = level.players[0];
@@ -4509,7 +4508,7 @@ function function_a61ebb46(str_hint) {
                 e_player notify(#"hash_665982d72456ad87");
                 break;
             }
-            setdvar(#"devgui_ct", "<unknown string>");
+            setdvar(#"devgui_ct", "<dev string:x1c9>");
         }
     }
 
