@@ -1,0 +1,6 @@
+NAME scripts\zm\zm_mansion_ww_lvl2_quest.gsc
+VERSION 0
+CHECKSUM 0xfd542c4c
+
+# ww_lvl2_quest::function_216d0545@1c
+STRING "<dev string:x38>" 0xc0c

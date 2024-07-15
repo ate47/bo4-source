@@ -1,0 +1,8 @@
+NAME script_73aaf54a7fda2755
+VERSION 0
+CHECKSUM 0x34d8f8f7
+
+# namespace_1d05befd::__init__@17c
+STRING "<dev string:x38>" 0x394
+# namespace_1d05befd::__init__@174
+STRING "<dev string:x41>" 0x38c

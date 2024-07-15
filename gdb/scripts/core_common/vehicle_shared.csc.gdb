@@ -1,0 +1,18 @@
+NAME scripts\core_common\vehicle_shared.csc
+VERSION 0
+CHECKSUM 0x846cc18c
+
+# vehicle::field_toggle_treadfx@118
+STRING "<dev string:x112>" 0x5738
+# vehicle::field_toggle_treadfx@144
+STRING "<dev string:x13b>" 0x5764
+# vehicle::field_toggle_treadfx@184
+STRING "<dev string:x15b>" 0x57a4
+# vehicle::field_toggle_treadfx@1d0
+STRING "<dev string:x179>" 0x57f0
+# vehicle::play_exhaust@104
+STRING "<dev string:x38>" 0x23f4
+# vehicle::play_boost@b4
+STRING "<dev string:x96>" 0x26ac
+# vehicle::field_toggle_treadfx@6c
+STRING "<dev string:xf0>" 0x568c

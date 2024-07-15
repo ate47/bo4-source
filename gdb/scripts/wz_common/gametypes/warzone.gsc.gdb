@@ -1,0 +1,112 @@
+NAME scripts\wz_common\gametypes\warzone.gsc
+VERSION 0
+CHECKSUM 0x7aa8270e
+
+# warzone::function_23600e7d@110 warzone::function_23600e7d@7d0
+STRING "<dev string:x123>" 0x1bc0 0x2280
+# warzone::function_23600e7d@1c0
+STRING "<dev string:x14e>" 0x1c70
+# warzone::function_23600e7d@5a0
+STRING "<dev string:x183>" 0x2050
+# warzone::function_23600e7d@5c4
+STRING "<dev string:x19c>" 0x2074
+# warzone::function_23600e7d@5ec
+STRING "<dev string:x1b5>" 0x209c
+# warzone::function_23600e7d@614
+STRING "<dev string:x1ce>" 0x20c4
+# warzone::function_23600e7d@63c
+STRING "<dev string:x1e7>" 0x20ec
+# warzone::function_23600e7d@664
+STRING "<dev string:x202>" 0x2114
+# warzone::function_23600e7d@68c
+STRING "<dev string:x222>" 0x213c
+# warzone::function_23600e7d@6b4
+STRING "<dev string:x248>" 0x2164
+# warzone::function_23600e7d@6dc
+STRING "<dev string:x25e>" 0x218c
+# warzone::function_23600e7d@704
+STRING "<dev string:x287>" 0x21b4
+# warzone::function_23600e7d@72c
+STRING "<dev string:x2a3>" 0x21dc
+# warzone::function_23600e7d@75c
+STRING "<dev string:x2c0>" 0x220c
+# warzone::function_23600e7d@77c
+STRING "<dev string:x2f4>" 0x222c
+# warzone::function_23600e7d@850
+STRING "<dev string:x318>" 0x2300
+# warzone::function_23600e7d@860
+STRING "<dev string:x347>" 0x2310
+# warzone::function_23600e7d@884
+STRING "<dev string:x353>" 0x2334
+# warzone::function_23600e7d@894
+STRING "<dev string:x374>" 0x2344
+# warzone::main@e70 warzone::main@e9c warzone::function_c2a75696@8c warzone::function_c2a75696@104
+STRING "<dev string:x38>" 0x1670 0x169c 0x1974 0x19ec
+# warzone::function_23600e7d@92c
+STRING "<dev string:x38f>" 0x23dc
+# warzone::function_5d7553c9@14
+STRING "<dev string:x3b>" 0x17bc
+# warzone::function_23600e7d@93c
+STRING "<dev string:x3cd>" 0x23ec
+# warzone::function_23600e7d@988
+STRING "<dev string:x3dd>" 0x2438
+# warzone::function_23600e7d@a50
+STRING "<dev string:x41d>" 0x2500
+# warzone::function_23600e7d@a9c
+STRING "<dev string:x43d>" 0x254c
+# warzone::function_23600e7d@b0c
+STRING "<dev string:x456>" 0x25bc
+# warzone::function_5d7553c9@110
+STRING "<dev string:x45>" 0x18b8
+# warzone::function_23600e7d@b40
+STRING "<dev string:x49b>" 0x25f0
+# warzone::function_23600e7d@b94
+STRING "<dev string:x4b6>" 0x2644
+# warzone::function_23600e7d@bdc
+STRING "<dev string:x4d2>" 0x268c
+# warzone::function_23600e7d@bfc
+STRING "<dev string:x504>" 0x26ac
+# warzone::function_23600e7d@c24
+STRING "<dev string:x51b>" 0x26d4
+# warzone::function_23600e7d@c88
+STRING "<dev string:x532>" 0x2738
+# warzone::function_23600e7d@d18
+STRING "<dev string:x556>" 0x27c8
+# warzone::function_23600e7d@d58
+STRING "<dev string:x580>" 0x2808
+# warzone::function_23600e7d@d94
+STRING "<dev string:x5ab>" 0x2844
+# warzone::function_23600e7d@ea0
+STRING "<dev string:x5d4>" 0x2950
+# warzone::function_23600e7d@ecc
+STRING "<dev string:x5f8>" 0x297c
+# warzone::function_23600e7d@ef4
+STRING "<dev string:x629>" 0x29a4
+# warzone::function_3b0db3c2@7c warzone::start_warzone@ac
+STRING "<dev string:x64c>" 0x2e54 0x311c
+# warzone::on_player_spawned@4fc
+STRING "<dev string:x666>" 0x3c2c
+# warzone::function_3c8be2d2@d4
+STRING "<dev string:x677>" 0x80d4
+# warzone::function_c2a75696@30 warzone::function_c2a75696@58
+STRING "<dev string:x67>" 0x1918 0x1940
+# warzone::function_3c8be2d2@ec warzone::function_3c8be2d2@108 warzone::function_3c8be2d2@2a4 warzone::function_3c8be2d2@2c0 warzone::function_b777ff94@7c warzone::function_b777ff94@98
+STRING "<dev string:x69e>" 0x80ec 0x8108 0x82a4 0x82c0 0x87a4 0x87c0
+# warzone::function_3c8be2d2@124 warzone::function_3c8be2d2@2dc warzone::function_b777ff94@b4
+STRING "<dev string:x6a3>" 0x8124 0x82dc 0x87dc
+# warzone::function_3c8be2d2@28c
+STRING "<dev string:x6a7>" 0x828c
+# warzone::function_b777ff94@64
+STRING "<dev string:x6ce>" 0x878c
+# warzone::function_77319881@4c
+STRING "<dev string:x6ef>" 0x8ccc
+# warzone::function_77319881@84
+STRING "<dev string:x702>" 0x8d04
+# warzone::function_cc5d43a1@28
+STRING "<dev string:x716>" 0x8dd0
+# warzone::function_c2a75696@3c
+STRING "<dev string:x77>" 0x1924
+# warzone::function_c2a75696@64
+STRING "<dev string:xab>" 0x194c
+# warzone::function_23600e7d@c8
+STRING "<dev string:xec>" 0x1b78
