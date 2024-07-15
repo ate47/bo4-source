@@ -489,7 +489,7 @@
     // Checksum 0xd5ea92e5, Offset: 0x1a10
     // Size: 0x8e
     function updatechildren() {
-                for (index = 0; index < self.children.size; index++) {
+        for (index = 0; index < self.children.size; index++) {
             child = self.children[index];
             child setpoint(child.point, child.relativepoint, child.xoffset, child.yoffset);
         }

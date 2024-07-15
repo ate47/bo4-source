@@ -504,7 +504,7 @@
     // Checksum 0xe1307dd4, Offset: 0x2670
     // Size: 0x88
     function function_1eca597a(var_8ba3b403) {
-                for (index = 0; index < level.propindex.size; index++) {
+        for (index = 0; index < level.propindex.size; index++) {
             if (level.proplist[level.propindex[index][0]][level.propindex[index][1]].modelname == var_8ba3b403) {
                 return index;
             }

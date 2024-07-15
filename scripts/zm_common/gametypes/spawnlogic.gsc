@@ -407,7 +407,7 @@ function getbestweightedspawnpoint(spawnpoints) {
     // Checksum 0xa1c2b69b, Offset: 0x13c8
     // Size: 0x156
     function checkbad(spawnpoint) {
-                for (i = 0; i < level.players.size; i++) {
+        for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
             if (!isalive(player) || player.sessionstate != "<dev string:x8e>") {
                 continue;

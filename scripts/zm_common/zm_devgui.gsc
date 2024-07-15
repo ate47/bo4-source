@@ -534,7 +534,7 @@
     // Checksum 0xf014a65d, Offset: 0x2588
     // Size: 0x2c6
     function validate_to_board(spawn_point, spawn_point_origin_backup) {
-                for (j = 0; j < level.exterior_goals.size; j++) {
+        for (j = 0; j < level.exterior_goals.size; j++) {
             if (isdefined(level.exterior_goals[j].script_string) && level.exterior_goals[j].script_string == spawn_point.script_string) {
                 node = level.exterior_goals[j];
                 break;

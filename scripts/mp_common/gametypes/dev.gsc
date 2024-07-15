@@ -1242,7 +1242,7 @@ function on_player_connected() {
     // Checksum 0xbddef818, Offset: 0x57a8
     // Size: 0xd8
     function getormakebot(team) {
-                for (i = 0; i < level.players.size; i++) {
+        for (i = 0; i < level.players.size; i++) {
             if (level.players[i].team == team) {
                 if (isbot(level.players[i])) {
                     return level.players[i];
@@ -1613,7 +1613,7 @@ function on_player_connected() {
     // Checksum 0xe498fc66, Offset: 0x6f70
     // Size: 0x88
     function hudobj_changecolor(hudobjarray, newcolor) {
-                for (i = 0; i < hudobjarray.size; i++) {
+        for (i = 0; i < hudobjarray.size; i++) {
             hudobj = hudobjarray[i];
             if (hudobj.color != newcolor) {
                 hudobj.color = newcolor;
@@ -2004,7 +2004,7 @@ function on_player_connected() {
     // Checksum 0xd6d71639, Offset: 0x8d38
     // Size: 0xb6
     function take_all_grenades_and_equipment(player) {
-                for (i = 0; i < level.dev_equipment.size; i++) {
+        for (i = 0; i < level.dev_equipment.size; i++) {
             player takeweapon(level.dev_equipment[i + 1]);
         }
         for (i = 0; i < level.dev_grenade.size; i++) {

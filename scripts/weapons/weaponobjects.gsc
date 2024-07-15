@@ -2107,7 +2107,7 @@ function function_ac7c2bf9(params = undefined) {
     // Checksum 0xc19fcdd1, Offset: 0x7160
     // Size: 0x64
     function saydamaged(orig, amount) {
-                for (i = 0; i < 60; i++) {
+        for (i = 0; i < 60; i++) {
             print3d(orig, "<dev string:x63>" + amount);
             waitframe(1);
         }

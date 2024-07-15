@@ -203,7 +203,7 @@ function callback_playerconnect() {
     // Checksum 0x82e97db5, Offset: 0xdd0
     // Size: 0x2a6
     function function_87e397ba() {
-                for (seasonid = 1; seasonid <= level.var_314051a1.size; seasonid++) {
+        for (seasonid = 1; seasonid <= level.var_314051a1.size; seasonid++) {
             function_c209f336(seasonid);
         }
         function_1c289498("<dev string:x43c>", "<dev string:x44c>");

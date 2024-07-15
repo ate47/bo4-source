@@ -122,7 +122,7 @@
     // Checksum 0x450483dc, Offset: 0x890
     // Size: 0x6c
     function drawdebuglineinternal(frompoint, topoint, color, durationframes) {
-                for (i = 0; i < durationframes; i++) {
+        for (i = 0; i < durationframes; i++) {
             line(frompoint, topoint, color);
             waitframe(1);
         }
@@ -133,7 +133,7 @@
     // Checksum 0x8e46c2b0, Offset: 0x908
     // Size: 0x94
     function drawdebugenttoentinternal(ent1, ent2, color, durationframes) {
-                for (i = 0; i < durationframes; i++) {
+        for (i = 0; i < durationframes; i++) {
             if (!isdefined(ent1) || !isdefined(ent2)) {
                 return;
             }

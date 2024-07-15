@@ -1220,7 +1220,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
     // Checksum 0x5ea19e9b, Offset: 0x4a20
     // Size: 0xc6
     function function_1c3e8791(&a_weapons, &var_dd06e779) {
-                for (i = 0; i < 1024; i++) {
+        for (i = 0; i < 1024; i++) {
             iteminfo = getunlockableiteminfofromindex(i, 0);
             if (isdefined(iteminfo)) {
                 reference_s = iteminfo.namehash;

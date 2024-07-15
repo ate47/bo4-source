@@ -230,7 +230,7 @@ function streamer_wait(n_stream_request_id, n_wait_frames = 0, n_timeout = 15, s
     // Checksum 0xa5b2541a, Offset: 0xdc8
     // Size: 0x7c
     function draw_debug_line(start, end, timer) {
-                for (i = 0; i < timer * 20; i++) {
+        for (i = 0; i < timer * 20; i++) {
             line(start, end, (1, 1, 0.5));
             waitframe(1);
         }

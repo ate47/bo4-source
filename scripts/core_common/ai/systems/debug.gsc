@@ -46,7 +46,7 @@
     // Checksum 0x8ccaadf8, Offset: 0x1a0
     // Size: 0x6c
     function drawdebuglineinternal(frompoint, topoint, color, durationframes) {
-                for (i = 0; i < durationframes; i++) {
+        for (i = 0; i < durationframes; i++) {
             line(frompoint, topoint, color);
             waitframe(1);
         }
@@ -67,7 +67,7 @@
     // Checksum 0xcbcd2414, Offset: 0x280
     // Size: 0x74
     function debugline(frompoint, topoint, color, durationframes) {
-                for (i = 0; i < durationframes * 20; i++) {
+        for (i = 0; i < durationframes * 20; i++) {
             line(frompoint, topoint, color);
             waitframe(1);
         }

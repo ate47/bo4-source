@@ -377,7 +377,7 @@ function gethitlocheight(shitloc) {
     // Checksum 0xe7748731, Offset: 0xf08
     // Size: 0x5c
     function debugline(start, end) {
-                for (i = 0; i < 50; i++) {
+        for (i = 0; i < 50; i++) {
             line(start, end);
             waitframe(1);
         }

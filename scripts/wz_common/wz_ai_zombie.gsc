@@ -263,7 +263,7 @@ function function_cdc822b() {
     // Checksum 0x39d509d8, Offset: 0x1938
     // Size: 0x74
     function debugline(frompoint, topoint, color, durationframes) {
-                for (i = 0; i < durationframes * 20; i++) {
+        for (i = 0; i < durationframes * 20; i++) {
             line(frompoint, topoint, color);
             waitframe(1);
         }

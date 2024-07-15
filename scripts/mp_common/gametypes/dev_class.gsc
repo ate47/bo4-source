@@ -348,7 +348,7 @@
     // Checksum 0x479ecd34, Offset: 0x1350
     // Size: 0x94
     function dev_cac_overlay_destroy(hud) {
-                for (i = 0; i < hud.menu.size; i++) {
+        for (i = 0; i < hud.menu.size; i++) {
             hud.menu[i] destroy();
         }
         hud destroy();

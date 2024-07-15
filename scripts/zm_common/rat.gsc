@@ -139,7 +139,7 @@
     // Checksum 0x5ed51890, Offset: 0xaa0
     // Size: 0x166
     function function_d52c7fc3(params) {
-                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.script_noteworthy)) {
                 if (triggerstub.script_noteworthy == "<dev string:x2d9>" || triggerstub.script_noteworthy == "<dev string:x2e4>") {
@@ -185,7 +185,7 @@
     // Checksum 0x6653fab8, Offset: 0xe38
     // Size: 0x14e
     function function_ff8f5737(params) {
-                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.target)) {
                 if (triggerstub.target == "<dev string:x2ef>") {
@@ -203,7 +203,7 @@
     // Checksum 0x5d0ab328, Offset: 0xf90
     // Size: 0x14e
     function function_5b9ddfdb(params) {
-                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.target)) {
                 if (triggerstub.target == "<dev string:x2fe>") {
@@ -383,7 +383,7 @@
     // Checksum 0xb836a67, Offset: 0x1958
     // Size: 0x146
     function function_7a11ca68(params) {
-                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (triggerstub.cursor_hint == "<dev string:x38d>") {
                 origin = triggerstub zm_unitrigger::unitrigger_origin();
@@ -401,7 +401,7 @@
     // Checksum 0x82f9d470, Offset: 0x1aa8
     // Size: 0x12e
     function function_782c6850(params) {
-                for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
+        for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
             triggerstub = level._unitriggers.trigger_stubs[i];
             if (isdefined(triggerstub.hint_string) && triggerstub.hint_string == "<dev string:x39b>") {
                 origin = triggerstub zm_unitrigger::unitrigger_origin();

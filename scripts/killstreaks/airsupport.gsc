@@ -1018,7 +1018,7 @@ function getrandomhelicopterstartorigin() {
     // Checksum 0xc2e71703, Offset: 0x3a48
     // Size: 0x8e
     function debug_no_fly_zones() {
-                for (i = 0; i < level.noflyzones.size; i++) {
+        for (i = 0; i < level.noflyzones.size; i++) {
             debug_airsupport_cylinder(level.noflyzones[i].origin, level.noflyzones[i].radius, level.noflyzones[i].height, (1, 1, 1), undefined, 5000);
         }
     }
