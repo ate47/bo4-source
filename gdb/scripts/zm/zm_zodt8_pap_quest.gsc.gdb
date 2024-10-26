@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_zodt8_pap_quest.gsc
 VERSION 0
 CHECKSUM 0xf1aaed65
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zodt8_pap_quest::function_4944c76f@228
 STRING "<dev string:x10d>" 0x2ce8
 # zodt8_pap_quest::function_4944c76f@260
@@ -32,3 +34,20 @@ STRING "<dev string:xce>" 0x29dc
 STRING "<dev string:xe3>" 0x2a00 0x2a28
 # zodt8_pap_quest::function_a2a8d76e@14 zodt8_pap_quest::function_a2a8d76e@38
 STRING "<dev string:xfa>" 0x2a6c 0x2a90
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zodt8_pap_quest::init@3e2
+DEVBLOCK 0x6d2
+# zodt8_pap_quest::function_61748fa3@6e
+DEVBLOCK 0x1886
+# zodt8_pap_quest::function_765118cf@2
+DEVBLOCK 0x2882
+# zodt8_pap_quest::function_83d342c7@12
+DEVBLOCK 0x2912
+# zodt8_pap_quest::function_d7dc7c3e@a
+DEVBLOCK 0x29d2
+# zodt8_pap_quest::function_a2a8d76e@a
+DEVBLOCK 0x2a62
+# zodt8_pap_quest::function_4944c76f@32
+DEVBLOCK 0x2af2

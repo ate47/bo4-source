@@ -1,7 +1,9 @@
 NAME scripts\core_common\visionset_mgr_shared.gsc
 VERSION 0
 CHECKSUM 0x3542bf7
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # visionset_mgr::finalize_type_clientfields@198
 STRING "<dev string:x10c>" 0x15f0
 # visionset_mgr::validate_info@a4
@@ -34,3 +36,18 @@ STRING "<dev string:xdb>" 0x1584
 STRING "<dev string:xe8>" 0x15a8
 # visionset_mgr::finalize_type_clientfields@174
 STRING "<dev string:xf6>" 0x15cc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# visionset_mgr::register_info@4a
+DEVBLOCK 0x25a
+# visionset_mgr::finalize_type_clientfields@a
+DEVBLOCK 0x1462
+# visionset_mgr::finalize_type_clientfields@124
+DEVBLOCK 0x157c
+# visionset_mgr::validate_info@9a
+DEVBLOCK 0x173a
+# visionset_mgr::validate_info@116
+DEVBLOCK 0x17b6
+# visionset_mgr::validate_info@162
+DEVBLOCK 0x1802

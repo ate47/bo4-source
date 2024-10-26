@@ -1,7 +1,9 @@
 NAME scripts\core_common\debug_shared.gsc
 VERSION 0
 CHECKSUM 0xa20e76f1
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # debug::devgui_debug_key_value@190
 STRING "<dev string:x144>" 0x298
 # debug::devgui_debug_key_value@19c
@@ -36,3 +38,24 @@ STRING "<dev string:x9f>" 0x18c
 STRING "<dev string:xa6>" 0x238
 # debug::devgui_debug_key_value@148
 STRING "<dev string:xf8>" 0x250
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# debug::__init__system__@2
+DEVBLOCK 0x82
+# debug::__init__@2
+DEVBLOCK 0xca
+# debug::devgui_debug_key_value@7a
+DEVBLOCK 0x182
+# debug::debug_draw_tuning_sphere@32
+DEVBLOCK 0x51a
+# debug::debug_key_value@2a
+DEVBLOCK 0x75a
+# debug::drawdebuglineinternal@2a
+DEVBLOCK 0x8ba
+# debug::drawdebugenttoentinternal@2a
+DEVBLOCK 0x932
+# debug::drawdebugline@22
+DEVBLOCK 0x9ca
+# debug::drawdebuglineenttoent@22
+DEVBLOCK 0xa22

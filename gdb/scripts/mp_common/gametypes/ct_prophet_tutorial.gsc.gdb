@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\ct_prophet_tutorial.gsc
 VERSION 0
 CHECKSUM 0x339c75a7
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ct_prophet_tutorial::function_324c6d8c@b0
 STRING "<dev string:x101>" 0x9b60
 # ct_prophet_tutorial::function_324c6d8c@c8
@@ -20,3 +22,12 @@ STRING "<dev string:x38>" 0x9af8 0x9c00 0x9c2c 0x9df4
 STRING "<dev string:x3b>" 0x9b2c
 # ct_prophet_tutorial::function_324c6d8c@98
 STRING "<dev string:x9e>" 0x9b48
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ct_prophet_tutorial::init@34
+DEVBLOCK 0x141c
+# ct_prophet_tutorial::function_9b9525e9@4ea
+DEVBLOCK 0x1f2a
+# ct_prophet_tutorial::function_324c6d8c@1a
+DEVBLOCK 0x9aca

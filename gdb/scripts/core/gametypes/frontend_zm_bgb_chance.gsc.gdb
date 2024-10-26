@@ -1,7 +1,9 @@
 NAME scripts\core\gametypes\frontend_zm_bgb_chance.gsc
 VERSION 0
 CHECKSUM 0x41930f54
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_frontend_zm_bgb_chance::zm_frontend_bgb_devgui@178
 STRING "<dev string:x106>" 0x210
 # zm_frontend_zm_bgb_chance::bgb_devgui_think@98
@@ -38,3 +40,12 @@ STRING "<dev string:xcd>" 0x1d0 0x218
 STRING "<dev string:xd1>" 0x1e0 0x228
 # zm_frontend_zm_bgb_chance::zm_frontend_bgb_devgui@168
 STRING "<dev string:xd6>" 0x200
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_frontend_zm_bgb_chance::zm_frontend_bgb_slots_logic@2
+DEVBLOCK 0x72
+# zm_frontend_zm_bgb_chance::zm_frontend_bgb_devgui@22
+DEVBLOCK 0xba
+# zm_frontend_zm_bgb_chance::bgb_devgui_think@22
+DEVBLOCK 0x28a

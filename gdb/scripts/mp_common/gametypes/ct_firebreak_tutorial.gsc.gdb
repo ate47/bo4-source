@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\ct_firebreak_tutorial.gsc
 VERSION 0
 CHECKSUM 0x3079162a
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ct_firebreak_tutorial::function_41dcd216@b0
 STRING "<dev string:x119>" 0x9350
 # ct_firebreak_tutorial::function_41dcd216@c8
@@ -48,3 +50,28 @@ STRING "<dev string:x97>" 0x7da0
 STRING "<dev string:xaf>" 0x92e0 0x9408 0x9434 0x9784
 # ct_firebreak_tutorial::function_41dcd216@94
 STRING "<dev string:xb2>" 0x9334
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ct_firebreak_tutorial::init@4c
+DEVBLOCK 0x1384
+# ct_firebreak_tutorial::function_d0815f2e@40
+DEVBLOCK 0x2950
+# ct_firebreak_tutorial::function_de43fab3@28
+DEVBLOCK 0x2f50
+# ct_firebreak_tutorial::function_951ce866@28
+DEVBLOCK 0x38b0
+# ct_firebreak_tutorial::function_5ba71388@a
+DEVBLOCK 0x4212
+# ct_firebreak_tutorial::function_c513c2a2@e0
+DEVBLOCK 0x7d98
+# ct_firebreak_tutorial::function_41dcd216@22
+DEVBLOCK 0x92c2
+# ct_firebreak_tutorial::function_7d10f455@1a
+DEVBLOCK 0x97d2
+# ct_firebreak_tutorial::function_53e140e6@12
+DEVBLOCK 0x9852
+# ct_firebreak_tutorial::function_5a0f5bcb@12
+DEVBLOCK 0x9a0a
+# ct_firebreak_tutorial::function_d74a7e31@2
+DEVBLOCK 0x9a8a

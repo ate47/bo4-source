@@ -1,7 +1,9 @@
 NAME scripts\core_common\player\player_free_fall.gsc
 VERSION 0
 CHECKSUM 0xb381439d
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # player_free_fall::function_1fc427dc@b4
 STRING "<dev string:x103>" 0x7a4
 # player_free_fall::function_1fc427dc@dc
@@ -22,3 +24,10 @@ STRING "<dev string:xad>" 0x770
 STRING "<dev string:xbb>" 0x77c
 # player_free_fall::function_1fc427dc@a8 player_free_fall::function_1fc427dc@d0
 STRING "<dev string:xf2>" 0x798 0x7c0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# player_free_fall::__init__@bc
+DEVBLOCK 0x1dc
+# player_free_fall::function_1fc427dc@a
+DEVBLOCK 0x6fa

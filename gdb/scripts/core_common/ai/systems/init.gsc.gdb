@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\systems\init.gsc
 VERSION 0
 CHECKSUM 0xc8cc647
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # init::checkapproachangles@110 init::checkapproachangles@2a4
 STRING "<dev string:x38>" 0x7f8 0x98c
 # init::checkapproachangles@120 init::checkapproachangles@2b4
@@ -22,3 +24,8 @@ STRING "<dev string:xb7>" 0x908 0xaa8
 STRING "<dev string:xd4>" 0x918 0xab8
 # init::checkapproachangles@394
 STRING "<dev string:xda>" 0xa7c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# init::checkapproachangles@42
+DEVBLOCK 0x72a

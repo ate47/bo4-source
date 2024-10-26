@@ -1,7 +1,9 @@
 NAME scripts\mp_common\item_supply_drop.gsc
 VERSION 0
 CHECKSUM 0xa5fef690
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # item_supply_drop::_setup_devgui@cc
 STRING "<dev string:x11e>" 0xaac
 # item_supply_drop::_setup_devgui@f4
@@ -22,3 +24,36 @@ STRING "<dev string:x48>" 0xa34
 STRING "<dev string:x8e>" 0xa5c
 # item_supply_drop::_setup_devgui@a4
 STRING "<dev string:xcc>" 0xa84
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# item_supply_drop::__init__@60
+DEVBLOCK 0x468
+# item_supply_drop::function_eaba72c9@12
+DEVBLOCK 0x502
+# item_supply_drop::_setup_devgui@a
+DEVBLOCK 0x9ea
+# item_supply_drop::debug_supply_drop@62
+DEVBLOCK 0xc12
+# item_supply_drop::function_c7bd0aa8@42
+DEVBLOCK 0x10a2
+# item_supply_drop::function_c7bd0aa8@6a
+DEVBLOCK 0x10ca
+# item_supply_drop::function_c7bd0aa8@b2
+DEVBLOCK 0x1112
+# item_supply_drop::function_c7bd0aa8@15c
+DEVBLOCK 0x11bc
+# item_supply_drop::function_c7bd0aa8@1ec
+DEVBLOCK 0x124c
+# item_supply_drop::function_c7bd0aa8@27c
+DEVBLOCK 0x12dc
+# item_supply_drop::function_c7bd0aa8@314
+DEVBLOCK 0x1374
+# item_supply_drop::function_8234217e@32
+DEVBLOCK 0x3132
+# item_supply_drop::function_924a11ff@22
+DEVBLOCK 0x335a
+# item_supply_drop::function_47ec98c4@d4
+DEVBLOCK 0x4c3c
+# item_supply_drop::drop_supply_drop@8c
+DEVBLOCK 0x4fe4

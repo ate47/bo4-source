@@ -1,7 +1,9 @@
 NAME scripts\core_common\contracts_shared.gsc
 VERSION 0
 CHECKSUM 0x6ec84649
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # contracts::function_a781ee84@24
 STRING "<dev string:x109>" 0xe6c
 # contracts::function_a781ee84@30
@@ -60,3 +62,20 @@ STRING "<dev string:xc7>" 0xdf0
 STRING "<dev string:xe2>" 0xe24
 # contracts::function_e07e542b@c8
 STRING "<dev string:xee>" 0xe18
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# contracts::register_player_contract_event@9c
+DEVBLOCK 0x1b4
+# contracts::function_5e1c4d33@1a
+DEVBLOCK 0xc52
+# contracts::function_e07e542b@12
+DEVBLOCK 0xd62
+# contracts::function_a781ee84@1a
+DEVBLOCK 0xe62
+# contracts::watch_contract_debug@a
+DEVBLOCK 0xf8a
+# contracts::function_33bab9aa@62
+DEVBLOCK 0x1072
+# contracts::function_78083139@48a
+DEVBLOCK 0x1dca

@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_mansion_boss_ww.gsc
 VERSION 0
 CHECKSUM 0x4bd782bf
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # mansion_boss_ww::function_5d346946@a0
 STRING "<dev string:x108>" 0x9338
 # mansion_boss_ww::function_5d346946@b8
@@ -70,3 +72,64 @@ STRING "<dev string:x693>" 0xaa98
 STRING "<dev string:x7f>" 0x9308
 # mansion_boss_ww::function_5d346946@88
 STRING "<dev string:xbd>" 0x9320
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# mansion_boss_ww::__init__@42
+DEVBLOCK 0x822
+# mansion_boss_ww::boss_intro@3a
+DEVBLOCK 0x238a
+# mansion_boss_ww::boss_outro@12
+DEVBLOCK 0x23e2
+# mansion_boss_ww::function_47e0a10b@356
+DEVBLOCK 0x7346
+# mansion_boss_ww::function_5d346946@2
+DEVBLOCK 0x929a
+# mansion_boss_ww::function_51d480c9@a
+DEVBLOCK 0x9482
+# mansion_boss_ww::function_e7520565@2
+DEVBLOCK 0x9772
+# mansion_boss_ww::function_1ac7cc62@2a
+DEVBLOCK 0x97e2
+# mansion_boss_ww::function_1ac7cc62@5a
+DEVBLOCK 0x9812
+# mansion_boss_ww::function_f3f10a38@a
+DEVBLOCK 0x9af2
+# mansion_boss_ww::function_f3f10a38@48
+DEVBLOCK 0x9b30
+# mansion_boss_ww::function_1ca1a249@a
+DEVBLOCK 0x9b62
+# mansion_boss_ww::function_b7ed6bce@2
+DEVBLOCK 0x9bfa
+# mansion_boss_ww::function_b7ed6bce@26
+DEVBLOCK 0x9c1e
+# mansion_boss_ww::function_b7ed6bce@70
+DEVBLOCK 0x9c68
+# mansion_boss_ww::function_aa31f6af@2
+DEVBLOCK 0x9c92
+# mansion_boss_ww::function_aa31f6af@40
+DEVBLOCK 0x9cd0
+# mansion_boss_ww::function_b9ca419b@a
+DEVBLOCK 0x9d02
+# mansion_boss_ww::function_b9ca419b@1c
+DEVBLOCK 0x9d14
+# mansion_boss_ww::function_b9ca419b@40
+DEVBLOCK 0x9d38
+# mansion_boss_ww::function_b9ca419b@1ca
+DEVBLOCK 0x9ec2
+# mansion_boss_ww::function_84f320f1@12
+DEVBLOCK 0x9f02
+# mansion_boss_ww::function_84f320f1@130
+DEVBLOCK 0xa020
+# mansion_boss_ww::function_84f320f1@574
+DEVBLOCK 0xa464
+# mansion_boss_ww::gear_up@7a
+DEVBLOCK 0xa50a
+# mansion_boss_ww::function_abdd578e@2
+DEVBLOCK 0xaa02
+# mansion_boss_ww::function_46d7a37@2
+DEVBLOCK 0xaa5a
+# mansion_boss_ww::function_46d7a37@14
+DEVBLOCK 0xaa6c
+# mansion_boss_ww::function_46d7a37@38
+DEVBLOCK 0xaa90

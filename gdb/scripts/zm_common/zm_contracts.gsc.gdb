@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_contracts.gsc
 VERSION 0
 CHECKSUM 0x2de769cc
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # contracts::function_295a8005@80
 STRING "<dev string:x104>" 0x1640
 # contracts::function_295a8005@b4
@@ -250,3 +252,18 @@ STRING "<dev string:xc8>" 0x1624
 STRING "<dev string:xd7>" 0x1618
 # contracts::function_295a8005@8c
 STRING "<dev string:xf2>" 0x164c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# contracts::finalize_init@bc
+DEVBLOCK 0x27c
+# contracts::can_process_contracts@5c
+DEVBLOCK 0x9c4
+# contracts::function_902ef0de@2a
+DEVBLOCK 0xbca
+# contracts::function_902ef0de@2a2
+DEVBLOCK 0xe42
+# contracts::devgui_setup@a
+DEVBLOCK 0x156a
+# contracts::function_295a8005@22
+DEVBLOCK 0x15e2

@@ -1,4 +1,0 @@
-NAME script_6d7d84509b62f422
-VERSION 0
-CHECKSUM 0xde1ee0b0
-

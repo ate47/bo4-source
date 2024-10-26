@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\globallogic_spawn.gsc
 VERSION 0
 CHECKSUM 0x220b6af5
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # globallogic_spawn::function_3ee5119e@144 globallogic_spawn::function_3ee5119e@230 globallogic_spawn::function_3ee5119e@2b0
 STRING "<dev string:x105>" 0x3b84 0x3c70 0x3cf0
 # globallogic_spawn::function_3ee5119e@154 globallogic_spawn::function_3ee5119e@240 globallogic_spawn::function_3ee5119e@2c0
@@ -32,3 +34,32 @@ STRING "<dev string:xe0>" 0x3860 0x3878
 STRING "<dev string:xe4>" 0x3890
 # globallogic_spawn::function_3ee5119e@130 globallogic_spawn::function_3ee5119e@21c globallogic_spawn::function_3ee5119e@2a0
 STRING "<dev string:xe8>" 0x3b70 0x3c5c 0x3ce0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# globallogic_spawn::function_82ca1565@508
+DEVBLOCK 0xb10
+# globallogic_spawn::addspawns@56
+DEVBLOCK 0x1dfe
+# globallogic_spawn::spawnplayer@334
+DEVBLOCK 0x301c
+# globallogic_spawn::spawnplayer@37a
+DEVBLOCK 0x3062
+# globallogic_spawn::spawnplayer@9da
+DEVBLOCK 0x36c2
+# globallogic_spawn::spawnplayer@b5a
+DEVBLOCK 0x3842
+# globallogic_spawn::spawnplayer@bfc
+DEVBLOCK 0x38e4
+# globallogic_spawn::function_3ee5119e@128
+DEVBLOCK 0x3b68
+# globallogic_spawn::function_3ee5119e@214
+DEVBLOCK 0x3c54
+# globallogic_spawn::function_3ee5119e@298
+DEVBLOCK 0x3cd8
+# globallogic_spawn::kickifdontspawn@2
+DEVBLOCK 0x40ca
+# globallogic_spawn::spawnclient@3a
+DEVBLOCK 0x4b42
+# globallogic_spawn::spawnclient@5a
+DEVBLOCK 0x4b62

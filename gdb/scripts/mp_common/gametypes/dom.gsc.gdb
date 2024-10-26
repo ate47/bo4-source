@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\dom.gsc
 VERSION 0
 CHECKSUM 0xc539f20
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # dom::onscoreclosemusic@17c dom::onscoreclosemusic@240
 STRING "<dev string:x13d>" 0x54cc 0x5590
 # dom::onscoreclosemusic@1a0
@@ -36,3 +38,48 @@ STRING "<dev string:xcd>" 0x285c
 STRING "<dev string:xe4>" 0x379c 0x3c1c
 # dom::credit_player@470 dom::give_neutralized_credit@200
 STRING "<dev string:xf6>" 0x4a98 0x4ce8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# dom::domflags@16a
+DEVBLOCK 0x1c72
+# dom::domflags@276
+DEVBLOCK 0x1d7e
+# dom::domflags@2be
+DEVBLOCK 0x1dc6
+# dom::domflags@384
+DEVBLOCK 0x1e8c
+# dom::domflags@9ca
+DEVBLOCK 0x24d2
+# dom::domdebug@12
+DEVBLOCK 0x263a
+# dom::onusewithneutralizingflag@7c
+DEVBLOCK 0x3794
+# dom::onusewithneutralizingflag@b0
+DEVBLOCK 0x37c8
+# dom::onusewithneutralizingflag@29a
+DEVBLOCK 0x39b2
+# dom::onusewithoutneutralizingflag@9c
+DEVBLOCK 0x3c14
+# dom::onusewithoutneutralizingflag@118
+DEVBLOCK 0x3c90
+# dom::onusewithoutneutralizingflag@17c
+DEVBLOCK 0x3cf4
+# dom::credit_player@466
+DEVBLOCK 0x4a8e
+# dom::give_neutralized_credit@1f6
+DEVBLOCK 0x4cde
+# dom::updatedomscores@4de
+DEVBLOCK 0x5216
+# dom::onscoreclosemusic@14c
+DEVBLOCK 0x549c
+# dom::function_610d3790@8ba
+DEVBLOCK 0x602a
+# dom::function_610d3790@b1a
+DEVBLOCK 0x628a
+# dom::update_spawn_influencers@a
+DEVBLOCK 0x7872
+# dom::update_spawn_influencers@2a
+DEVBLOCK 0x7892
+# dom::update_spawn_influencers@4a
+DEVBLOCK 0x78b2

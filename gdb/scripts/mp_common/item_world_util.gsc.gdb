@@ -1,4 +1,42 @@
 NAME scripts\mp_common\item_world_util.gsc
 VERSION 0
 CHECKSUM 0xb7677dbb
-
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# item_world_util::__init__@a8
+DEVBLOCK 0x118
+# item_world_util::__init__@130
+DEVBLOCK 0x1a0
+# item_world_util::function_808be9a3@22
+DEVBLOCK 0xcfa
+# item_world_util::function_808be9a3@4a
+DEVBLOCK 0xd22
+# item_world_util::function_808be9a3@9c
+DEVBLOCK 0xd74
+# item_world_util::function_808be9a3@f8
+DEVBLOCK 0xdd0
+# item_world_util::function_1f0def85@1a
+DEVBLOCK 0xe82
+# item_world_util::function_1f0def85@54
+DEVBLOCK 0xebc
+# item_world_util::function_1f0def85@7a
+DEVBLOCK 0xee2
+# item_world_util::function_1f0def85@ee
+DEVBLOCK 0xf56
+# item_world_util::function_970b8d86@40
+DEVBLOCK 0xfe0
+# item_world_util::function_970b8d86@72
+DEVBLOCK 0x1012
+# item_world_util::function_970b8d86@a0
+DEVBLOCK 0x1040
+# item_world_util::function_970b8d86@104
+DEVBLOCK 0x10a4
+# item_world_util::function_970b8d86@166
+DEVBLOCK 0x1106
+# item_world_util::function_4cbb6617@72
+DEVBLOCK 0x170a
+# item_world_util::function_4cbb6617@9a
+DEVBLOCK 0x1732
+# item_world_util::function_f4a8d375@1a
+DEVBLOCK 0x2002

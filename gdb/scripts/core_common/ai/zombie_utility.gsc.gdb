@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\zombie_utility.gsc
 VERSION 0
 CHECKSUM 0xe3800672
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zombie_utility::animarray@78 zombie_utility::animarrayanyexist@78 zombie_utility::animarraypickrandom@80
 STRING "<dev string:x10c>" 0x2fc0 0x3080 0x3150
 # zombie_utility::dumpanimarray@2c
@@ -64,3 +66,98 @@ STRING "<dev string:xc7>" 0x2d5c
 STRING "<dev string:xf1>" 0x2f0c
 # zombie_utility::animarray@6c zombie_utility::animarrayanyexist@6c zombie_utility::animarraypickrandom@74
 STRING "<dev string:xfa>" 0x2fb4 0x3074 0x3144
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zombie_utility::initanimtree@44
+DEVBLOCK 0xa1c
+# zombie_utility::updateanimpose@2
+DEVBLOCK 0xa5a
+# zombie_utility::absyawtoenemy@a
+DEVBLOCK 0x126a
+# zombie_utility::absyawtoenemy2d@a
+DEVBLOCK 0x131a
+# zombie_utility::quadrantanimweights@f6
+DEVBLOCK 0x1a96
+# zombie_utility::drawstringtime@32
+DEVBLOCK 0x1de2
+# zombie_utility::showlastenemysightpos@12
+DEVBLOCK 0x1e5a
+# zombie_utility::debugposinternal@2a
+DEVBLOCK 0x1fba
+# zombie_utility::showdebugproc@32
+DEVBLOCK 0x218a
+# zombie_utility::showlines@1a
+DEVBLOCK 0x270a
+# zombie_utility::anim_array@6c
+DEVBLOCK 0x27dc
+# zombie_utility::anim_array@82
+DEVBLOCK 0x27f2
+# zombie_utility::print3dtime@42
+DEVBLOCK 0x29b2
+# zombie_utility::print3drise@42
+DEVBLOCK 0x2a5a
+# zombie_utility::setfootstepeffect@12
+DEVBLOCK 0x2d32
+# zombie_utility::setfootstepeffect@32
+DEVBLOCK 0x2d52
+# zombie_utility::persistentdebugline@12
+DEVBLOCK 0x2e02
+# zombie_utility::doesnodeallowstance@38
+DEVBLOCK 0x2f00
+# zombie_utility::animarray@a
+DEVBLOCK 0x2f52
+# zombie_utility::animarray@32
+DEVBLOCK 0x2f7a
+# zombie_utility::animarray@62
+DEVBLOCK 0x2faa
+# zombie_utility::animarrayanyexist@a
+DEVBLOCK 0x3012
+# zombie_utility::animarrayanyexist@32
+DEVBLOCK 0x303a
+# zombie_utility::animarrayanyexist@62
+DEVBLOCK 0x306a
+# zombie_utility::animarraypickrandom@12
+DEVBLOCK 0x30e2
+# zombie_utility::animarraypickrandom@3a
+DEVBLOCK 0x310a
+# zombie_utility::animarraypickrandom@6a
+DEVBLOCK 0x313a
+# zombie_utility::animarraypickrandom@aa
+DEVBLOCK 0x317a
+# zombie_utility::dumpanimarray@22
+DEVBLOCK 0x324a
+# zombie_utility::damagelocationisany@1fc
+DEVBLOCK 0x35b4
+# zombie_utility::getrandomintfromseed@1a
+DEVBLOCK 0x377a
+# zombie_utility::set_orient_mode@12
+DEVBLOCK 0x3862
+# zombie_utility::debug_anim_print@a
+DEVBLOCK 0x394a
+# zombie_utility::debug_turn_print@5a
+DEVBLOCK 0x3a52
+# zombie_utility::set_zombie_var_player@12
+DEVBLOCK 0x3dfa
+# zombie_utility::get_zombie_var_player@a
+DEVBLOCK 0x3e6a
+# zombie_utility::spawn_zombie@32
+DEVBLOCK 0x3efa
+# zombie_utility::spawn_zombie@26e
+DEVBLOCK 0x4136
+# zombie_utility::spawn_zombie@2a2
+DEVBLOCK 0x416a
+# zombie_utility::spawn_zombie@2d2
+DEVBLOCK 0x419a
+# zombie_utility::get_desired_origin@8c
+DEVBLOCK 0x42bc
+# zombie_utility::default_max_zombie_func@22
+DEVBLOCK 0x4faa
+# zombie_utility::set_zombie_run_cycle@f6
+DEVBLOCK 0x567e
+# zombie_utility::register_ignore_player_handler@12
+DEVBLOCK 0x7f2a
+# zombie_utility::register_ignore_player_handler@32
+DEVBLOCK 0x7f4a
+# zombie_utility::updateanimationrate@1a
+DEVBLOCK 0x800a

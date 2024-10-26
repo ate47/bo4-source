@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\strategic_command.gsc
 VERSION 0
 CHECKSUM 0x2944ab8b
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # strategiccommandutility::function_df74a8f3@174 strategiccommandutility::function_df74a8f3@62c
 STRING "<dev string:x100>" 0x13c4 0x187c
 # strategiccommandutility::function_df74a8f3@188 strategiccommandutility::function_df74a8f3@640 strategiccommandutility::function_31badd5d@cc strategiccommandutility::function_423cfbc1@1d8
@@ -168,3 +170,136 @@ STRING "<dev string:xe8>" 0x11f0
 STRING "<dev string:xf1>" 0x11fc
 # strategiccommandutility::function_df74a8f3@15c strategiccommandutility::function_df74a8f3@610
 STRING "<dev string:xfb>" 0x13ac 0x1860
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# strategiccommandutility::__init__@2
+DEVBLOCK 0x342
+# strategiccommandutility::function_45857dbe@52
+DEVBLOCK 0x84a
+# strategiccommandutility::function_65b80a10@38
+DEVBLOCK 0x990
+# strategiccommandutility::function_41c81572@a
+DEVBLOCK 0xb6a
+# strategiccommandutility::function_741d9796@72
+DEVBLOCK 0xc82
+# strategiccommandutility::function_7c3d768e@6a
+DEVBLOCK 0xff2
+# strategiccommandutility::function_df74a8f3@ba
+DEVBLOCK 0x130a
+# strategiccommandutility::function_75df771f@5a
+DEVBLOCK 0x1d62
+# strategiccommandutility::function_75df771f@e8
+DEVBLOCK 0x1df0
+# strategiccommandutility::function_75df771f@29e
+DEVBLOCK 0x1fa6
+# strategiccommandutility::_debuggameobjects@30
+DEVBLOCK 0x2028
+# strategiccommandutility::function_f0be958@a
+DEVBLOCK 0x20e2
+# strategiccommandutility::function_1e535a11@a
+DEVBLOCK 0x219a
+# strategiccommandutility::function_31badd5d@92
+DEVBLOCK 0x22da
+# strategiccommandutility::function_31badd5d@a8
+DEVBLOCK 0x22f0
+# strategiccommandutility::function_3ed19fa3@e2
+DEVBLOCK 0x2912
+# strategiccommandutility::function_3ed19fa3@e6
+DEVBLOCK 0x2916
+# strategiccommandutility::function_adb62fbb@5a
+DEVBLOCK 0x3032
+# strategiccommandutility::function_adb62fbb@70
+DEVBLOCK 0x3048
+# strategiccommandutility::function_15462dcd@4a
+DEVBLOCK 0x3302
+# strategiccommandutility::function_15462dcd@4e
+DEVBLOCK 0x3306
+# strategiccommandutility::function_20610c3@42
+DEVBLOCK 0x33e2
+# strategiccommandutility::function_20610c3@46
+DEVBLOCK 0x33e6
+# strategiccommandutility::function_35fd8254@72
+DEVBLOCK 0x35d2
+# strategiccommandutility::function_7712a8e4@5a
+DEVBLOCK 0x3a52
+# strategiccommandutility::function_700c578d@4a
+DEVBLOCK 0x3b5a
+# strategiccommandutility::function_700c578d@74
+DEVBLOCK 0x3b84
+# strategiccommandutility::function_2cce6a82@12
+DEVBLOCK 0x3df2
+# strategiccommandutility::function_704d5fbd@12
+DEVBLOCK 0x3eca
+# strategiccommandutility::calculatepathtogameobject@2a
+DEVBLOCK 0x400a
+# strategiccommandutility::function_71866d71@22
+DEVBLOCK 0x4142
+# strategiccommandutility::calculatepathtoobjective@3a
+DEVBLOCK 0x4222
+# strategiccommandutility::calculatepathtopoints@22
+DEVBLOCK 0x43b2
+# strategiccommandutility::calculatepathtoposition@5a
+DEVBLOCK 0x44ca
+# strategiccommandutility::function_1e3c1b91@52
+DEVBLOCK 0x4bba
+# strategiccommandutility::function_1e3c1b91@6a
+DEVBLOCK 0x4bd2
+# strategiccommandutility::function_1e3c1b91@134
+DEVBLOCK 0x4c9c
+# strategiccommandutility::function_423cfbc1@a4
+DEVBLOCK 0x4f54
+# strategiccommandutility::function_423cfbc1@134
+DEVBLOCK 0x4fe4
+# strategiccommandutility::function_423cfbc1@1c4
+DEVBLOCK 0x5074
+# strategiccommandutility::function_423cfbc1@26c
+DEVBLOCK 0x511c
+# strategiccommandutility::function_423cfbc1@3bc
+DEVBLOCK 0x526c
+# strategiccommandutility::function_423cfbc1@4cc
+DEVBLOCK 0x537c
+# strategiccommandutility::function_423cfbc1@518
+DEVBLOCK 0x53c8
+# strategiccommandutility::function_4b0c469d@a
+DEVBLOCK 0x53fa
+# strategiccommandutility::function_5c2c9542@12
+DEVBLOCK 0x5622
+# strategiccommandutility::function_5c2c9542@2a
+DEVBLOCK 0x563a
+# strategiccommandutility::function_45c5edc6@a
+DEVBLOCK 0x56f2
+# strategiccommandutility::function_d077c2b6@a
+DEVBLOCK 0x579a
+# strategiccommandutility::function_f867cce0@30
+DEVBLOCK 0x5d78
+# strategiccommandutility::querypointsaroundgameobject@3a
+DEVBLOCK 0x5f52
+# strategiccommandutility::querypointsaroundgameobject@cc
+DEVBLOCK 0x5fe4
+# strategiccommandutility::querypointsinsideobjective@5a
+DEVBLOCK 0x60ea
+# strategiccommandutility::querypointsinsideobjective@1a4
+DEVBLOCK 0x6234
+# strategiccommandutility::querypointsinsideposition@52
+DEVBLOCK 0x6332
+# strategiccommandutility::querypointsinsideposition@cc
+DEVBLOCK 0x63ac
+# strategiccommandutility::function_1891d0d2@42
+DEVBLOCK 0x649a
+# strategiccommandutility::querypointsinsidetrigger@42
+DEVBLOCK 0x65fa
+# strategiccommandutility::querypointsinsidetrigger@1a4
+DEVBLOCK 0x675c
+# strategiccommandutility::function_210f00bf@22
+DEVBLOCK 0x67aa
+# strategiccommandutility::function_210f00bf@74
+DEVBLOCK 0x67fc
+# strategiccommandutility::function_210f00bf@dc
+DEVBLOCK 0x6864
+# strategiccommandutility::function_ba05bd2@1a
+DEVBLOCK 0x68aa
+# strategiccommandutility::function_3837a75d@a
+DEVBLOCK 0x699a
+# strategiccommandutility::function_1852d313@1a
+DEVBLOCK 0x6a2a

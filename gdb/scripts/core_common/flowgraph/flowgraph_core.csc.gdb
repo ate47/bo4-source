@@ -1,7 +1,9 @@
 NAME scripts\core_common\flowgraph\flowgraph_core.csc
 VERSION 0
 CHECKSUM 0x2f9ed5ca
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # flowgraph::kick@120
 STRING "<dev string:x133>" 0x1668
 # flowgraph::collect_inputs@1dc
@@ -32,3 +34,50 @@ STRING "<dev string:xd5>" 0x15e4 0x1634
 STRING "<dev string:xde>" 0x15fc
 # flowgraph::kick@104
 STRING "<dev string:xfe>" 0x164c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# flowgraph::call_func@686
+DEVBLOCK 0x6f6
+# flowgraph::evaluate_constant@12
+DEVBLOCK 0x862
+# flowgraph::evaluate_constant@5a
+DEVBLOCK 0x8aa
+# flowgraph::evaluate_constant@82
+DEVBLOCK 0x8d2
+# flowgraph::evaluate_constant@a2
+DEVBLOCK 0x8f2
+# flowgraph::evaluate_constant@fa
+DEVBLOCK 0x94a
+# flowgraph::evaluate_constant@154
+DEVBLOCK 0x9a4
+# flowgraph::evaluate_constant@17a
+DEVBLOCK 0x9ca
+# flowgraph::evaluate_constant@1d6
+DEVBLOCK 0xa26
+# flowgraph::evaluate_constant@236
+DEVBLOCK 0xa86
+# flowgraph::evaluate_constant@3d0
+DEVBLOCK 0xc20
+# flowgraph::get_node_output_param_index@66
+DEVBLOCK 0xcc6
+# flowgraph::get_node_input_param_index@66
+DEVBLOCK 0xd56
+# flowgraph::get_graph_def@1f2
+DEVBLOCK 0x1072
+# flowgraph::get_graph_def@23e
+DEVBLOCK 0x10be
+# flowgraph::exec@12
+DEVBLOCK 0x138a
+# flowgraph::mychanges_watcher@2
+DEVBLOCK 0x146a
+# flowgraph::kick@94
+DEVBLOCK 0x15dc
+# flowgraph::kick@e2
+DEVBLOCK 0x162a
+# flowgraph::collect_inputs@1d4
+DEVBLOCK 0x19c4
+# flowgraph::run@74
+DEVBLOCK 0x1b6c
+# flowgraph::run@25e
+DEVBLOCK 0x1d56

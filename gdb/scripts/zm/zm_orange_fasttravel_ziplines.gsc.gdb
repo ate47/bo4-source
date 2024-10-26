@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_orange_fasttravel_ziplines.gsc
 VERSION 0
 CHECKSUM 0x33b664b
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_orange_fasttravel_ziplines::function_5dbd6a40@648
 STRING "<dev string:x38>" 0x2238
 # zm_orange_fasttravel_ziplines::function_5dbd6a40@634 zm_orange_fasttravel_ziplines::function_5dbd6a40@668
@@ -26,3 +28,12 @@ STRING "<dev string:xb5>" 0x31c8
 STRING "<dev string:xd8>" 0x31e0
 # zm_orange_fasttravel_ziplines::function_80a9077f@200
 STRING "<dev string:xed>" 0x3200
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_orange_fasttravel_ziplines::function_5dbd6a40@61a
+DEVBLOCK 0x220a
+# zm_orange_fasttravel_ziplines::function_85a2c43b@c6
+DEVBLOCK 0x2bee
+# zm_orange_fasttravel_ziplines::function_80a9077f@22
+DEVBLOCK 0x3022

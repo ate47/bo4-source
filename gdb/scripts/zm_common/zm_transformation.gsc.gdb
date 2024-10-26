@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_transformation.gsc
 VERSION 0
 CHECKSUM 0x645055e3
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_transform::function_cfca77a7@130 zm_transform::devgui@21c zm_transform::devgui@24c zm_transform::devgui@260 zm_transform::show_status@10c
 STRING "<dev string:x103>" 0x620 0x2be4 0x2c14 0x2c28 0x3aac
 # zm_transform::function_cfca77a7@14c
@@ -86,3 +88,68 @@ STRING "<dev string:x72>" 0x3cc
 STRING "<dev string:xad>" 0x5ac 0x630 0x718 0x764 0x7a4 0x80c
 # zm_transform::function_cfca77a7@c8
 STRING "<dev string:xca>" 0x5b8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_transform::__init__@c4
+DEVBLOCK 0x254
+# zm_transform::function_4da8230b@a
+DEVBLOCK 0x28a
+# zm_transform::function_6b183c78@32
+DEVBLOCK 0x3c2
+# zm_transform::function_cfca77a7@82
+DEVBLOCK 0x572
+# zm_transform::function_cfca77a7@aa
+DEVBLOCK 0x59a
+# zm_transform::function_9acf76e6@50
+DEVBLOCK 0xb00
+# zm_transform::function_9acf76e6@a8
+DEVBLOCK 0xb58
+# zm_transform::function_9acf76e6@ec
+DEVBLOCK 0xb9c
+# zm_transform::function_bdd8aba6@20
+DEVBLOCK 0xc60
+# zm_transform::function_3f502557@a
+DEVBLOCK 0xcba
+# zm_transform::function_d2374144@12
+DEVBLOCK 0xd22
+# zm_transform::function_d2374144@42
+DEVBLOCK 0xd52
+# zm_transform::function_d2374144@82
+DEVBLOCK 0xd92
+# zm_transform::function_1afce5aa@a
+DEVBLOCK 0xed2
+# zm_transform::function_1afce5aa@2a
+DEVBLOCK 0xef2
+# zm_transform::function_525526be@9a
+DEVBLOCK 0x13ea
+# zm_transform::function_c81eb299@22
+DEVBLOCK 0x14aa
+# zm_transform::function_c81eb299@82
+DEVBLOCK 0x150a
+# zm_transform::devgui@3a
+DEVBLOCK 0x2a02
+# zm_transform::function_ece5c99c@2
+DEVBLOCK 0x2eb2
+# zm_transform::function_3f433f41@42
+DEVBLOCK 0x2f22
+# zm_transform::function_3d080ace@12
+DEVBLOCK 0x3102
+# zm_transform::function_2f40be20@12
+DEVBLOCK 0x31a2
+# zm_transform::function_4bad29d9@2a
+DEVBLOCK 0x323a
+# zm_transform::create_hudelem@1a
+DEVBLOCK 0x333a
+# zm_transform::setup_status@7a
+DEVBLOCK 0x3462
+# zm_transform::function_9aa982db@a
+DEVBLOCK 0x38aa
+# zm_transform::function_4a065e66@12
+DEVBLOCK 0x38da
+# zm_transform::show_status@42
+DEVBLOCK 0x39e2
+# zm_transform::function_6bcb49b5@2
+DEVBLOCK 0x3bf2
+# zm_transform::function_dfd1a1c0@32
+DEVBLOCK 0x3c82

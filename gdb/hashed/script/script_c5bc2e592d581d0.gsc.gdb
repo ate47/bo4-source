@@ -1,7 +1,9 @@
 NAME script_c5bc2e592d581d0
 VERSION 0
 CHECKSUM 0x8fa13f84
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_ed876ec::function_2af9b775@2b4
 STRING "<dev string:x101>" 0x1c94
 # namespace_ed876ec::function_2af9b775@308 namespace_ed876ec::function_2af9b775@474 namespace_ed876ec::function_2af9b775@6fc
@@ -46,3 +48,60 @@ STRING "<dev string:x76>" 0x1294 0x1ab4 0x247c 0x2ecc 0x363c 0x3e0c
 STRING "<dev string:xa0>" 0x1314 0x1b34 0x24fc 0x3e8c
 # namespace_ed876ec::function_2af9b775@cc namespace_ed876ec::function_2af9b775@14c
 STRING "<dev string:xcf>" 0x1aac 0x1b2c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_ed876ec::__init__@322
+DEVBLOCK 0x44a
+# namespace_ed876ec::function_8cfcffa3@38
+DEVBLOCK 0x9c0
+# namespace_ed876ec::function_8cfcffa3@62
+DEVBLOCK 0x9ea
+# namespace_ed876ec::function_d6d5e252@1a
+DEVBLOCK 0xdda
+# namespace_ed876ec::function_d6d5e252@42
+DEVBLOCK 0xe02
+# namespace_ed876ec::function_14c67eb3@d2
+DEVBLOCK 0x127a
+# namespace_ed876ec::function_14c67eb3@152
+DEVBLOCK 0x12fa
+# namespace_ed876ec::function_2af9b775@ba
+DEVBLOCK 0x1a9a
+# namespace_ed876ec::function_2af9b775@13a
+DEVBLOCK 0x1b1a
+# namespace_ed876ec::function_2af9b775@27c
+DEVBLOCK 0x1c5c
+# namespace_ed876ec::function_2af9b775@43e
+DEVBLOCK 0x1e1e
+# namespace_ed876ec::function_2af9b775@6c2
+DEVBLOCK 0x20a2
+# namespace_ed876ec::function_e057582f@ba
+DEVBLOCK 0x2462
+# namespace_ed876ec::function_e057582f@13a
+DEVBLOCK 0x24e2
+# namespace_ed876ec::function_4f6a626d@d2
+DEVBLOCK 0x2eb2
+# namespace_ed876ec::function_557051df@7a
+DEVBLOCK 0x3622
+# namespace_ed876ec::function_393b9c76@11a
+DEVBLOCK 0x3df2
+# namespace_ed876ec::function_393b9c76@19a
+DEVBLOCK 0x3e72
+# namespace_ed876ec::function_393b9c76@21a
+DEVBLOCK 0x3ef2
+# namespace_ed876ec::debug_setup@2
+DEVBLOCK 0x488a
+# namespace_ed876ec::function_8f74831a@2
+DEVBLOCK 0x49b2
+# namespace_ed876ec::function_bd34d468@2
+DEVBLOCK 0x4a12
+# namespace_ed876ec::function_9259be56@62
+DEVBLOCK 0x4ad2
+# namespace_ed876ec::function_6e494c0e@42
+DEVBLOCK 0x4c4a
+# namespace_ed876ec::function_fc9f37f4@2a
+DEVBLOCK 0x4d72
+# namespace_ed876ec::function_3ad5b4e7@12
+DEVBLOCK 0x4e0a
+# namespace_ed876ec::function_fafff2f@4a
+DEVBLOCK 0x4eca

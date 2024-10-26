@@ -1,7 +1,9 @@
 NAME script_34b02db2817b42f
 VERSION 0
 CHECKSUM 0xad3b3cac
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_90b0490e::function_7130498@bc
 STRING "<dev string:x10f>" 0x161c
 # namespace_90b0490e::function_20b366ef@b4
@@ -24,3 +26,26 @@ STRING "<dev string:x92>" 0x11e4
 STRING "<dev string:xaa>" 0x1214
 # namespace_90b0490e::run_step_2@54
 STRING "<dev string:xfe>" 0x131c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_90b0490e::start_step_1@2a
+DEVBLOCK 0xa12
+# namespace_90b0490e::start_step_1@4a
+DEVBLOCK 0xa32
+# namespace_90b0490e::function_9d66ea6f@12
+DEVBLOCK 0x1032
+# namespace_90b0490e::start_step_2@2
+DEVBLOCK 0x11da
+# namespace_90b0490e::start_step_2@34
+DEVBLOCK 0x120c
+# namespace_90b0490e::run_step_2@4a
+DEVBLOCK 0x1312
+# namespace_90b0490e::function_7130498@b4
+DEVBLOCK 0x1614
+# namespace_90b0490e::function_20b366ef@ac
+DEVBLOCK 0x170c
+# namespace_90b0490e::function_b9a31cb@12
+DEVBLOCK 0x1a6a
+# namespace_90b0490e::complete_quest@2
+DEVBLOCK 0x1fca

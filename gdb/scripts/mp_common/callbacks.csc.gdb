@@ -1,7 +1,9 @@
 NAME scripts\mp_common\callbacks.csc
 VERSION 0
 CHECKSUM 0x5bc4a472
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # callback::airsupport@5d4 callback::airsupport@620
 STRING "<dev string:x10e>" 0xe8c 0xed8
 # callback::airsupport@5f0
@@ -22,3 +24,22 @@ STRING "<dev string:xbc>" 0xa14
 STRING "<dev string:xd5>" 0xa20 0xb3c
 # callback::airsupport@278
 STRING "<dev string:xd9>" 0xb30
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# callback::localclientconnect@a
+DEVBLOCK 0x302
+# callback::entityspawned@8a
+DEVBLOCK 0x5a2
+# callback::airsupport@138
+DEVBLOCK 0x9f0
+# callback::airsupport@152
+DEVBLOCK 0xa0a
+# callback::airsupport@270
+DEVBLOCK 0xb28
+# callback::airsupport@5cc
+DEVBLOCK 0xe84
+# callback::callback_stunned@48
+DEVBLOCK 0xfd8
+# callback::callback_emp@48
+DEVBLOCK 0x10a0

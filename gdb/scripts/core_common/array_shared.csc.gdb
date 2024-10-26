@@ -1,7 +1,9 @@
 NAME scripts\core_common\array_shared.csc
 VERSION 0
 CHECKSUM 0xa27f0a9c
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # array::run_all@6c
 STRING "<dev string:x10e>" 0xa14
 # array::run_all@8c
@@ -38,3 +40,42 @@ STRING "<dev string:x6d>" 0x75c
 STRING "<dev string:x9e>" 0x8ac
 # array::thread_all_ents@84
 STRING "<dev string:xd8>" 0x8cc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# array::thread_all@62
+DEVBLOCK 0x732
+# array::thread_all@82
+DEVBLOCK 0x752
+# array::thread_all_ents@5a
+DEVBLOCK 0x8a2
+# array::thread_all_ents@7a
+DEVBLOCK 0x8c2
+# array::run_all@62
+DEVBLOCK 0xa0a
+# array::run_all@82
+DEVBLOCK 0xa2a
+# array::swap@22
+DEVBLOCK 0x1baa
+# array::swap@4a
+DEVBLOCK 0x1bd2
+# array::spread_all@5a
+DEVBLOCK 0x285a
+# array::spread_all@7a
+DEVBLOCK 0x287a
+# array::function_f2d037b1@1a
+DEVBLOCK 0x2efa
+# array::function_d1f43a84@52
+DEVBLOCK 0x3002
+# array::function_d1f43a84@1d4
+DEVBLOCK 0x3184
+# array::function_d1f43a84@230
+DEVBLOCK 0x31e0
+# array::function_81d0d595@1a
+DEVBLOCK 0x3262
+# array::function_70daaa9d@4a
+DEVBLOCK 0x336a
+# array::function_70daaa9d@1ca
+DEVBLOCK 0x34ea
+# array::function_70daaa9d@228
+DEVBLOCK 0x3548

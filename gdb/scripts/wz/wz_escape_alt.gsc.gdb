@@ -1,7 +1,9 @@
 NAME scripts\wz\wz_escape_alt.gsc
 VERSION 0
 CHECKSUM 0xaac20e1d
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wz_escape_alt::function_9cc59537@4f8 wz_escape_alt::function_9cc59537@c20
 STRING "<dev string:x102>" 0xb60 0x1288
 # wz_escape_alt::function_9cc59537@514 wz_escape_alt::function_9cc59537@c38
@@ -60,3 +62,52 @@ STRING "<dev string:xdc>" 0x9b8 0xa04
 STRING "<dev string:xe2>" 0xa6c 0x2b7c 0x32a0
 # wz_escape_alt::function_9cc59537@440
 STRING "<dev string:xf9>" 0xaa8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wz_escape_alt::main@62
+DEVBLOCK 0x18a
+# wz_escape_alt::main@17a
+DEVBLOCK 0x2a2
+# wz_escape_alt::on_player_spawned@2
+DEVBLOCK 0x4ba
+# wz_escape_alt::init_devgui@a
+DEVBLOCK 0x57a
+# wz_escape_alt::on_vehicle_spawned@2
+DEVBLOCK 0x642
+# wz_escape_alt::function_9cc59537@2aa
+DEVBLOCK 0x912
+# wz_escape_alt::function_d72aa67e@3a
+DEVBLOCK 0x1b4a
+# wz_escape_alt::function_47351fa3@82
+DEVBLOCK 0x1c52
+# wz_escape_alt::function_e8f0335f@e2
+DEVBLOCK 0x1fe2
+# wz_escape_alt::function_f9b68fd7@2a
+DEVBLOCK 0x25f2
+# wz_escape_alt::function_a476d876@7a
+DEVBLOCK 0x28fa
+# wz_escape_alt::function_13a77bfa@92
+DEVBLOCK 0x2b4a
+# wz_escape_alt::function_f42944c7@52
+DEVBLOCK 0x3082
+# wz_escape_alt::function_f567f0cd@6a
+DEVBLOCK 0x34da
+# wz_escape_alt::function_1221d304@2a
+DEVBLOCK 0x3702
+# wz_escape_alt::function_b2775b52@2
+DEVBLOCK 0x3ae2
+# wz_escape_alt::function_4b227faf@aa
+DEVBLOCK 0x3f7a
+# wz_escape_alt::function_df930125@a
+DEVBLOCK 0x4232
+# wz_escape_alt::devgui_weapon_think@a
+DEVBLOCK 0x429a
+# wz_escape_alt::devgui_handle_player_command@2a
+DEVBLOCK 0x4372
+# wz_escape_alt::function_1880c93d@12
+DEVBLOCK 0x449a
+# wz_escape_alt::function_1880c93d@16
+DEVBLOCK 0x449e
+# wz_escape_alt::function_1880c93d@32
+DEVBLOCK 0x44ba

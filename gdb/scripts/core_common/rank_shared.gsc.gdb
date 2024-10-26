@@ -1,7 +1,9 @@
 NAME scripts\core_common\rank_shared.gsc
 VERSION 0
 CHECKSUM 0xffb329dd
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # rank::on_player_connect@3f4
 STRING "<dev string:x38>" 0x2004
 # rank::on_player_connect@400
@@ -16,3 +18,14 @@ STRING "<dev string:x73>" 0x27e8
 STRING "<dev string:x83>" 0x2a5c
 # rank::getitemindex@40
 STRING "<dev string:xa0>" 0x2a68
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# rank::getscoreinfovalue@c4
+DEVBLOCK 0x1424
+# rank::on_player_connect@3ec
+DEVBLOCK 0x1ffc
+# rank::updaterank@18c
+DEVBLOCK 0x27c4
+# rank::getitemindex@2c
+DEVBLOCK 0x2a54

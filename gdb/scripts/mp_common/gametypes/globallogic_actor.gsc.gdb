@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\globallogic_actor.gsc
 VERSION 0
 CHECKSUM 0x5b723fef
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # globallogic_actor::callback_actordamage@dc0
 STRING "<dev string:x38>" 0xfa0
 # globallogic_actor::callback_actordamage@ddc
@@ -14,3 +16,8 @@ STRING "<dev string:x59>" 0xfe0
 STRING "<dev string:x71>" 0xffc
 # globallogic_actor::callback_actordamage@e2c
 STRING "<dev string:x7c>" 0x100c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# globallogic_actor::callback_actordamage@d92
+DEVBLOCK 0xf72

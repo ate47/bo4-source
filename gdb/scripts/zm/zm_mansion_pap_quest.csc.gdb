@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_mansion_pap_quest.csc
 VERSION 0
 CHECKSUM 0xa53440f6
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # mansion_pap::function_f415205b@84
 STRING "<dev string:x109>" 0x34d4
 # mansion_pap::function_f415205b@94
@@ -50,3 +52,32 @@ STRING "<dev string:xcd>" 0x34a4
 STRING "<dev string:xe3>" 0x34b4
 # mansion_pap::function_f415205b@74
 STRING "<dev string:xf5>" 0x34c4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# mansion_pap::function_924f922d@230
+DEVBLOCK 0x25e8
+# mansion_pap::function_924f922d@266
+DEVBLOCK 0x261e
+# mansion_pap::function_924f922d@2ba
+DEVBLOCK 0x2672
+# mansion_pap::function_3e31854@2a
+DEVBLOCK 0x2792
+# mansion_pap::ghost_impact_fx@164
+DEVBLOCK 0x2c74
+# mansion_pap::ghost_impact_fx@2c4
+DEVBLOCK 0x2dd4
+# mansion_pap::function_c0257c1d@b0
+DEVBLOCK 0x2f08
+# mansion_pap::function_c0257c1d@e2
+DEVBLOCK 0x2f3a
+# mansion_pap::function_466c2fa3@1a
+DEVBLOCK 0x3192
+# mansion_pap::function_5545acc1@4a
+DEVBLOCK 0x32a2
+# mansion_pap::function_f415205b@12
+DEVBLOCK 0x3462
+# mansion_pap::function_e0caca4e@12
+DEVBLOCK 0x36da
+# mansion_pap::debug_arrow@72
+DEVBLOCK 0x37ca

@@ -1,7 +1,9 @@
 NAME scripts\core_common\footsteps_shared.csc
 VERSION 0
 CHECKSUM 0xdb74388c
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # footsteps::registeraitypefootstepcb@38
 STRING "<dev string:x109>" 0x110
 # footsteps::registeraitypefootstepcb@44
@@ -16,3 +18,12 @@ STRING "<dev string:x42>" 0x98
 STRING "<dev string:x53>" 0xa4
 # footsteps::missing_ai_footstep_callback@4c
 STRING "<dev string:xd9>" 0xb4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# footsteps::missing_ai_footstep_callback@a
+DEVBLOCK 0x72
+# footsteps::registeraitypefootstepcb@30
+DEVBLOCK 0x108
+# footsteps::playaifootstep@36
+DEVBLOCK 0x1a6

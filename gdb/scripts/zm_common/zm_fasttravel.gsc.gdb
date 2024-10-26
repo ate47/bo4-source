@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_fasttravel.gsc
 VERSION 0
 CHECKSUM 0xbcef4a36
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_fasttravel::function_6cde5436@2cc
 STRING "<dev string:x127>" 0x1654
 # zm_fasttravel::function_f86439bc@158
@@ -24,3 +26,24 @@ STRING "<dev string:x38>" 0x510
 STRING "<dev string:x8b>" 0x528
 # zm_fasttravel::__init__@a8
 STRING "<dev string:xdc>" 0x540
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_fasttravel::__init__@4a
+DEVBLOCK 0x4e2
+# zm_fasttravel::function_6cde5436@2c4
+DEVBLOCK 0x164c
+# zm_fasttravel::function_f86439bc@14e
+DEVBLOCK 0x1ee6
+# zm_fasttravel::function_7a74dbfd@54
+DEVBLOCK 0x20ac
+# zm_fasttravel::function_66d020b0@3dc
+DEVBLOCK 0x2524
+# zm_fasttravel::function_5165d69@68
+DEVBLOCK 0x35e8
+# zm_fasttravel::function_5165d69@d4
+DEVBLOCK 0x3654
+# zm_fasttravel::function_5165d69@106
+DEVBLOCK 0x3686
+# zm_fasttravel::function_a78584c0@21a
+DEVBLOCK 0x3cc2

@@ -1,7 +1,9 @@
 NAME scripts\core_common\turret_shared.gsc
 VERSION 0
 CHECKSUM 0x40380a21
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # turret::_debug_turret_think@64
 STRING "<dev string:x129>" 0x2a24
 # turret::_debug_turret_think@48
@@ -40,3 +42,26 @@ STRING "<dev string:xa6>" 0x1694
 STRING "<dev string:xb4>" 0x16a0
 # turret::shoot_at_target@3c
 STRING "<dev string:xf9>" 0x1764
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# turret::fire@34
+DEVBLOCK 0x1374
+# turret::fire_for_time@38
+DEVBLOCK 0x15a0
+# turret::fire_for_time@10c
+DEVBLOCK 0x1674
+# turret::fire_for_time@124
+DEVBLOCK 0x168c
+# turret::shoot_at_target@32
+DEVBLOCK 0x175a
+# turret::_turret_think@100
+DEVBLOCK 0x1ee8
+# turret::_debug_turret_think@42
+DEVBLOCK 0x2a02
+# turret::_init_turret@76
+DEVBLOCK 0x2ef6
+# turret::_init_vehicle_turret@1a
+DEVBLOCK 0x3052
+# turret::_get_gunner_tag_for_turret_index@36
+DEVBLOCK 0x3e3e

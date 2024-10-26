@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai_puppeteer_shared.gsc
 VERSION 0
 CHECKSUM 0x4b2e4f50
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ai_puppeteer::ai_puppeteer_create_hud@370
 STRING "<dev string:x107>" 0x1d70
 # ai_puppeteer::ai_puppeteer_create_hud@390
@@ -38,3 +40,38 @@ STRING "<dev string:xc9>" 0x1a64 0x1a7c 0x1b04 0x1b1c 0x1ba4 0x1bbc 0x1c4c 0x1c6
 STRING "<dev string:xd0>" 0x1d30
 # ai_puppeteer::ai_puppeteer_create_hud@350
 STRING "<dev string:xfa>" 0x1d50
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ai_puppeteer::__init__system__@2
+DEVBLOCK 0x7a
+# ai_puppeteer::__init__@2
+DEVBLOCK 0xc2
+# ai_puppeteer::ai_puppeteer_think@2
+DEVBLOCK 0xea
+# ai_puppeteer::ai_puppeteer@a
+DEVBLOCK 0x232
+# ai_puppeteer::ai_puppet_manager@22
+DEVBLOCK 0x3b2
+# ai_puppeteer::ai_puppet_set@2
+DEVBLOCK 0x1482
+# ai_puppeteer::ai_puppet_release@a
+DEVBLOCK 0x15aa
+# ai_puppeteer::ai_puppet_cursor_tracker@3a
+DEVBLOCK 0x1682
+# ai_puppeteer::ai_puppeteer_create_hud@2
+DEVBLOCK 0x1a02
+# ai_puppeteer::ai_puppeteer_destroy_hud@2
+DEVBLOCK 0x1dda
+# ai_puppeteer::ai_puppeteer_render_point@2a
+DEVBLOCK 0x1eba
+# ai_puppeteer::ai_puppeteer_render_node@1a
+DEVBLOCK 0x201a
+# ai_puppeteer::ai_puppeteer_render_ai@12
+DEVBLOCK 0x212a
+# ai_puppeteer::ai_puppeteer_highlight_point@3a
+DEVBLOCK 0x22fa
+# ai_puppeteer::ai_puppeteer_highlight_node@22
+DEVBLOCK 0x23c2
+# ai_puppeteer::ai_puppeteer_highlight_ai@2a
+DEVBLOCK 0x248a

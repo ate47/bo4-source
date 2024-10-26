@@ -1,7 +1,9 @@
 NAME scripts\abilities\ability_player.gsc
 VERSION 0
 CHECKSUM 0x96b6d4f6
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ability_player::abilities_devgui_add_player_command@cc ability_player::function_b04fbf27@94 ability_player::function_50543efb@94 ability_player::function_90502d72@94 ability_player::abilities_devgui_player_disconnect@3c
 STRING "<dev string:x100>" 0x435c 0x53dc 0x5494 0x554c 0x55ac
 # ability_player::abilities_devgui_add_power@34
@@ -102,3 +104,84 @@ STRING "<dev string:xc2>" 0x4318 0x433c 0x539c 0x53bc 0x5454 0x5474 0x550c 0x552
 STRING "<dev string:xca>" 0x4320 0x53a4 0x545c 0x5514
 # ability_player::abilities_devgui_add_player_command@b4 ability_player::function_b04fbf27@7c ability_player::function_50543efb@7c ability_player::function_90502d72@7c
 STRING "<dev string:xe5>" 0x4344 0x53c4 0x547c 0x5534
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ability_player::__init__@b0
+DEVBLOCK 0x288
+# ability_player::on_player_connect@d2
+DEVBLOCK 0x382
+# ability_player::on_player_disconnect@2
+DEVBLOCK 0x69a
+# ability_player::tutorial_timer@1a
+DEVBLOCK 0x38d2
+# ability_player::tutorial_hints@2e2
+DEVBLOCK 0x3d42
+# ability_player::tutorial_hints@362
+DEVBLOCK 0x3dc2
+# ability_player::function_374c4352@12
+DEVBLOCK 0x3eda
+# ability_player::abilities_print@12
+DEVBLOCK 0x3f52
+# ability_player::abilities_devgui_init@2
+DEVBLOCK 0x3f8a
+# ability_player::abilities_devgui_player_connect@12
+DEVBLOCK 0x4092
+# ability_player::abilities_devgui_add_player_commands@32
+DEVBLOCK 0x416a
+# ability_player::abilities_devgui_add_player_command@4a
+DEVBLOCK 0x42da
+# ability_player::abilities_devgui_add_power@2a
+DEVBLOCK 0x43ca
+# ability_player::function_2e0162e9@62
+DEVBLOCK 0x458a
+# ability_player::function_2ced294@22
+DEVBLOCK 0x47da
+# ability_player::function_60b82b68@42
+DEVBLOCK 0x48f2
+# ability_player::function_1c3e8791@32
+DEVBLOCK 0x4a52
+# ability_player::abilities_devgui_add_gadgets@7a
+DEVBLOCK 0x4b6a
+# ability_player::function_174037fe@3a
+DEVBLOCK 0x512a
+# ability_player::function_76032a31@3a
+DEVBLOCK 0x51f2
+# ability_player::function_a40d04ca@3a
+DEVBLOCK 0x52ba
+# ability_player::function_b04fbf27@22
+DEVBLOCK 0x536a
+# ability_player::function_50543efb@22
+DEVBLOCK 0x5422
+# ability_player::function_90502d72@22
+DEVBLOCK 0x54da
+# ability_player::abilities_devgui_player_disconnect@a
+DEVBLOCK 0x557a
+# ability_player::abilities_devgui_think@12
+DEVBLOCK 0x55ea
+# ability_player::function_c94ba490@12
+DEVBLOCK 0x595a
+# ability_player::abilities_devgui_give@22
+DEVBLOCK 0x5a8a
+# ability_player::function_4f50aea3@a
+DEVBLOCK 0x5b62
+# ability_player::function_ce4e80a7@a
+DEVBLOCK 0x5c32
+# ability_player::function_9a0f80b1@a
+DEVBLOCK 0x5cb2
+# ability_player::function_f3fa2789@3a
+DEVBLOCK 0x5d62
+# ability_player::abilities_devgui_handle_player_command@2a
+DEVBLOCK 0x5e92
+# ability_player::abilities_devgui_power_fill@a
+DEVBLOCK 0x5f62
+# ability_player::function_626f2cd1@a
+DEVBLOCK 0x601a
+# ability_player::function_3db3dc4f@a
+DEVBLOCK 0x60c2
+# ability_player::abilities_devgui_power_toggle_auto_fill@2
+DEVBLOCK 0x6172
+# ability_player::abilities_devgui_power_toggle_auto_fill_think@12
+DEVBLOCK 0x61ea
+# ability_player::function_b4f43681@22
+DEVBLOCK 0x637a

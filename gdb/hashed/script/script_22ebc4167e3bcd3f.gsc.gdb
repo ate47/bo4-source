@@ -1,7 +1,9 @@
 NAME script_22ebc4167e3bcd3f
 VERSION 0
 CHECKSUM 0x639ca5ee
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_9d58c1cd::function_a860e46e@88
 STRING "<dev string:x103>" 0x2a20
 # namespace_9d58c1cd::function_a860e46e@a0
@@ -24,3 +26,14 @@ STRING "<dev string:x334>" 0x2c10
 STRING "<dev string:x38>" 0x29f0
 # namespace_9d58c1cd::function_a860e46e@70
 STRING "<dev string:x9c>" 0x2a08
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_9d58c1cd::main@152
+DEVBLOCK 0x632
+# namespace_9d58c1cd::function_a860e46e@2
+DEVBLOCK 0x299a
+# namespace_9d58c1cd::function_97be15e3@3a
+DEVBLOCK 0x2ada
+# namespace_9d58c1cd::function_7101d54f@2a
+DEVBLOCK 0x2d2a

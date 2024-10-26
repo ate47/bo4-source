@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_white_trophies.gsc
 VERSION 0
 CHECKSUM 0xcd076635
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_white_trophies::pap_watcher@68
 STRING "<dev string:x109>" 0x9e8
 # zm_white_trophies::function_48f916b@90
@@ -42,3 +44,44 @@ STRING "<dev string:xd2>" 0x7d8
 STRING "<dev string:xe6>" 0x828
 # zm_white_trophies::function_2c104547@2ac
 STRING "<dev string:xf9>" 0x91c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_white_trophies::shard_watcher@30
+DEVBLOCK 0x388
+# zm_white_trophies::function_e0aaa050@a2
+DEVBLOCK 0x482
+# zm_white_trophies::function_f37ba127@7c
+DEVBLOCK 0x554
+# zm_white_trophies::function_9785ebce@64
+DEVBLOCK 0x61c
+# zm_white_trophies::function_2c104547@72
+DEVBLOCK 0x6e2
+# zm_white_trophies::function_2c104547@be
+DEVBLOCK 0x72e
+# zm_white_trophies::function_2c104547@10e
+DEVBLOCK 0x77e
+# zm_white_trophies::function_2c104547@15e
+DEVBLOCK 0x7ce
+# zm_white_trophies::function_2c104547@1ae
+DEVBLOCK 0x81e
+# zm_white_trophies::function_2c104547@29c
+DEVBLOCK 0x90c
+# zm_white_trophies::pap_watcher@56
+DEVBLOCK 0x9d6
+# zm_white_trophies::function_48f916b@86
+DEVBLOCK 0xab6
+# zm_white_trophies::function_48f916b@c6
+DEVBLOCK 0xaf6
+# zm_white_trophies::function_5e1138a2@d4
+DEVBLOCK 0xc2c
+# zm_white_trophies::function_5e1138a2@fa
+DEVBLOCK 0xc52
+# zm_white_trophies::function_df71a9b9@146
+DEVBLOCK 0xf56
+# zm_white_trophies::function_df71a9b9@186
+DEVBLOCK 0xf96
+# zm_white_trophies::function_bde94bdf@ae
+DEVBLOCK 0x10ae
+# zm_white_trophies::function_bde94bdf@ee
+DEVBLOCK 0x10ee

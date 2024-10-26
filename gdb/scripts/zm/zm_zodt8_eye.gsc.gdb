@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_zodt8_eye.gsc
 VERSION 0
 CHECKSUM 0x175f5825
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zodt8_eye::function_1acc1d3@254
 STRING "<dev string:x109>" 0xb3ec
 # zodt8_eye::function_1acc1d3@29c
@@ -76,3 +78,84 @@ STRING "<dev string:xdb>" 0x89b8
 STRING "<dev string:xea>" 0x8e50
 # zodt8_eye::function_1acc1d3@ec
 STRING "<dev string:xf9>" 0xb284
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zodt8_eye::__init__@9a
+DEVBLOCK 0xeba
+# zodt8_eye::function_51e51897@3ce
+DEVBLOCK 0x317e
+# zodt8_eye::function_c6fc0a46@fa
+DEVBLOCK 0x3ab2
+# zodt8_eye::function_a55a0339@f8
+DEVBLOCK 0x4c40
+# zodt8_eye::function_8f3497ee@112
+DEVBLOCK 0x4eea
+# zodt8_eye::function_8f3497ee@c78
+DEVBLOCK 0x5a50
+# zodt8_eye::function_9bc73093@72
+DEVBLOCK 0x5f9a
+# zodt8_eye::function_9bc73093@6c2
+DEVBLOCK 0x65ea
+# zodt8_eye::function_bb528a4b@290
+DEVBLOCK 0x72c8
+# zodt8_eye::function_3d6eaad5@1da
+DEVBLOCK 0x7a0a
+# zodt8_eye::function_3d6eaad5@256
+DEVBLOCK 0x7a86
+# zodt8_eye::function_ae4a013d@17a
+DEVBLOCK 0x7d2a
+# zodt8_eye::function_bb28e41d@a2
+DEVBLOCK 0x8892
+# zodt8_eye::function_ff69c896@50
+DEVBLOCK 0x89b0
+# zodt8_eye::function_c7c928e9@70
+DEVBLOCK 0x8e48
+# zodt8_eye::function_5382ba1b@166
+DEVBLOCK 0x910e
+# zodt8_eye::function_d07ce2a9@70
+DEVBLOCK 0x9678
+# zodt8_eye::function_d07ce2a9@2c2
+DEVBLOCK 0x98ca
+# zodt8_eye::render_debug_sphere@12
+DEVBLOCK 0xb09a
+# zodt8_eye::persistentdebugline@12
+DEVBLOCK 0xb0f2
+# zodt8_eye::function_1acc1d3@e4
+DEVBLOCK 0xb27c
+# zodt8_eye::function_1acc1d3@24c
+DEVBLOCK 0xb3e4
+# zodt8_eye::function_1acc1d3@294
+DEVBLOCK 0xb42c
+# zodt8_eye::function_1acc1d3@2f4
+DEVBLOCK 0xb48c
+# zodt8_eye::function_1acc1d3@33c
+DEVBLOCK 0xb4d4
+# zodt8_eye::function_1acc1d3@384
+DEVBLOCK 0xb51c
+# zodt8_eye::function_1acc1d3@3cc
+DEVBLOCK 0xb564
+# zodt8_eye::function_5d346946@2
+DEVBLOCK 0xd502
+# zodt8_eye::function_d25f8fbc@a
+DEVBLOCK 0xd6ba
+# zodt8_eye::function_435a7941@a
+DEVBLOCK 0xd9ea
+# zodt8_eye::function_225a4561@1a
+DEVBLOCK 0xdafa
+# zodt8_eye::function_81b39fd3@2
+DEVBLOCK 0xdbca
+# zodt8_eye::function_6b5e9ead@2
+DEVBLOCK 0xdc42
+# zodt8_eye::function_da98e094@2
+DEVBLOCK 0xdcba
+# zodt8_eye::function_c31e58d9@2
+DEVBLOCK 0xdd32
+# zodt8_eye::function_5e792125@a
+DEVBLOCK 0xddba
+# zodt8_eye::function_5e792125@1c
+DEVBLOCK 0xddcc
+# zodt8_eye::function_ae28c1a7@2
+DEVBLOCK 0xdfc2
+# zodt8_eye::function_ae28c1a7@ba
+DEVBLOCK 0xe07a

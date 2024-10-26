@@ -1,7 +1,9 @@
 NAME scripts\core_common\dev_shared.gsc
 VERSION 0
 CHECKSUM 0xefa5f8bf
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # dev::body_customization_process_command@64
 STRING "<dev string:x10a>" 0x17fc
 # dev::body_customization_process_command@80 dev::function_3cec5609@c4 dev::function_3cec5609@dc dev::body_customization_populate@350 dev::body_customization_populate@63c dev::body_customization_populate@654 dev::body_customization_populate@758 dev::body_customization_populate@770
@@ -120,3 +122,72 @@ STRING "<dev string:xcf>" 0x169c 0x25b8
 STRING "<dev string:xd8>" 0x173c 0x21c8
 # dev::body_customization_process_command@58
 STRING "<dev string:xe3>" 0x17f0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# dev::debug_sphere@32
+DEVBLOCK 0xaa
+# dev::devgui_test_chart_think@32
+DEVBLOCK 0x172
+# dev::updateminimapsetting@aa
+DEVBLOCK 0x5da
+# dev::vecscale@12
+DEVBLOCK 0x1022
+# dev::drawminimapbounds@8a
+DEVBLOCK 0x10f2
+# dev::minimapwarn@a
+DEVBLOCK 0x1412
+# dev::function_e5746ec1@22
+DEVBLOCK 0x1442
+# dev::function_5639909a@3a
+DEVBLOCK 0x1582
+# dev::function_f413b4d5@62
+DEVBLOCK 0x167a
+# dev::body_customization_process_command@4a
+DEVBLOCK 0x17e2
+# dev::body_customization_process_command@4e
+DEVBLOCK 0x17e6
+# dev::body_customization_process_command@ec
+DEVBLOCK 0x1884
+# dev::body_customization_process_command@1c4
+DEVBLOCK 0x195c
+# dev::body_customization_process_command@2fc
+DEVBLOCK 0x1a94
+# dev::function_3cec5609@4a
+DEVBLOCK 0x1bba
+# dev::function_2c6232e5@12
+DEVBLOCK 0x1caa
+# dev::function_970d4891@3a
+DEVBLOCK 0x1d22
+# dev::body_customization_populate@d2
+DEVBLOCK 0x1f12
+# dev::body_customization_devgui@1a
+DEVBLOCK 0x2662
+# dev::add_perk_devgui@2a
+DEVBLOCK 0x27b2
+# dev::function_373068ca@22
+DEVBLOCK 0x2872
+# dev::function_8263c0d5@22
+DEVBLOCK 0x294a
+# dev::function_a432e633@2a
+DEVBLOCK 0x2a3a
+# dev::function_487bf571@a
+DEVBLOCK 0x2ba2
+# dev::get_lookat_origin@32
+DEVBLOCK 0x2c62
+# dev::draw_pathnode@12
+DEVBLOCK 0x2d1a
+# dev::draw_pathnode_think@12
+DEVBLOCK 0x2d92
+# dev::draw_pathnodes_stop@2
+DEVBLOCK 0x2dda
+# dev::node_get@1a
+DEVBLOCK 0x2e1a
+# dev::dev_get_node_pair@22
+DEVBLOCK 0x2f4a
+# dev::draw_point@12
+DEVBLOCK 0x30ea
+# dev::point_get@12
+DEVBLOCK 0x314a
+# dev::dev_get_point_pair@22
+DEVBLOCK 0x3202

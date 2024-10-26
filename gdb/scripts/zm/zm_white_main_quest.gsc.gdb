@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_white_main_quest.gsc
 VERSION 0
 CHECKSUM 0x1e9ef767
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_white_main_quest::function_777fb794@3b0
 STRING "<dev string:x10d>" 0xaea8
 # zm_white_main_quest::function_777fb794@454
@@ -60,3 +62,58 @@ STRING "<dev string:xac>" 0x8440
 STRING "<dev string:xbb>" 0xa1cc
 # zm_white_main_quest::function_777fb794@2c4
 STRING "<dev string:xe5>" 0xadbc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_white_main_quest::function_c3a3c077@a
+DEVBLOCK 0x324a
+# zm_white_main_quest::function_5391159f@5e4
+DEVBLOCK 0x4874
+# zm_white_main_quest::function_2193794@33e
+DEVBLOCK 0x4c7e
+# zm_white_main_quest::function_2193794@774
+DEVBLOCK 0x50b4
+# zm_white_main_quest::function_892b6616@28e
+DEVBLOCK 0x82f6
+# zm_white_main_quest::function_5a971787@2c
+DEVBLOCK 0x83cc
+# zm_white_main_quest::zm_white_main_quest_step9_setup@1b2
+DEVBLOCK 0xa1c2
+# zm_white_main_quest::function_777fb794@2ba
+DEVBLOCK 0xadb2
+# zm_white_main_quest::function_777fb794@3a8
+DEVBLOCK 0xaea0
+# zm_white_main_quest::function_777fb794@44a
+DEVBLOCK 0xaf42
+# zm_white_main_quest::function_c349b9ef@23c
+DEVBLOCK 0xbd1c
+# zm_white_main_quest::function_d29ece92@d0
+DEVBLOCK 0x11138
+# zm_white_main_quest::function_f4f033c2@1c4
+DEVBLOCK 0x115ac
+# zm_white_main_quest::function_795df0c2@1e0
+DEVBLOCK 0x11860
+# zm_white_main_quest::function_795df0c2@208
+DEVBLOCK 0x11888
+# zm_white_main_quest::server_carry_fail@122
+DEVBLOCK 0x119d2
+# zm_white_main_quest::function_f340b18e@16
+DEVBLOCK 0x11c06
+# zm_white_main_quest::function_f340b18e@9a
+DEVBLOCK 0x11c8a
+# zm_white_main_quest::function_f340b18e@fc
+DEVBLOCK 0x11cec
+# zm_white_main_quest::function_f340b18e@252
+DEVBLOCK 0x11e42
+# zm_white_main_quest::function_ca606729@12a
+DEVBLOCK 0x11f9a
+# zm_white_main_quest::mannequin_activate@132
+DEVBLOCK 0x139b2
+# zm_white_main_quest::mannequin_activate@33a
+DEVBLOCK 0x13bba
+# zm_white_main_quest::soul_captured@9a
+DEVBLOCK 0x14e62
+# zm_white_main_quest::soul_captured@21e
+DEVBLOCK 0x14fe6
+# zm_white_main_quest::function_b0b7e8a9@6f2
+DEVBLOCK 0x15cb2

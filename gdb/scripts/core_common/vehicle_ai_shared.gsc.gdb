@@ -1,7 +1,9 @@
 NAME scripts\core_common\vehicle_ai_shared.gsc
 VERSION 0
 CHECKSUM 0x44dd254d
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # vehicle_ai::function_1d436633@338
 STRING "<dev string:x109>" 0x7188
 # vehicle_ai::function_4ab1a63a@2dc vehicle_ai::function_1e0d693b@a04 vehicle_ai::function_4646fb11@34c
@@ -48,3 +50,74 @@ STRING "<dev string:xc1>" 0x600c 0x7e34 0x882c
 STRING "<dev string:xd3>" 0x65f4
 # vehicle_ai::function_e057db25@27c
 STRING "<dev string:xe6>" 0x6d84
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# vehicle_ai::fire_for_time@fe
+DEVBLOCK 0x6a6
+# vehicle_ai::fire_for_rounds@be
+DEVBLOCK 0x836
+# vehicle_ai::__fire_for_rounds_internal@5e
+DEVBLOCK 0x91e
+# vehicle_ai::airfollow@a
+DEVBLOCK 0xbd2
+# vehicle_ai::getairfollowindex@a
+DEVBLOCK 0xd02
+# vehicle_ai::getairfollowingposition@3a
+DEVBLOCK 0xdd2
+# vehicle_ai::getairfollowingorigin@a
+DEVBLOCK 0xf82
+# vehicle_ai::iff_override@f4
+DEVBLOCK 0x2464
+# vehicle_ai::has_state@a
+DEVBLOCK 0x31aa
+# vehicle_ai::defaultstate_emped_update@4c
+DEVBLOCK 0x4dac
+# vehicle_ai::defaultstate_driving_enter@64
+DEVBLOCK 0x5524
+# vehicle_ai::debugscore@4a
+DEVBLOCK 0x597a
+# vehicle_ai::positionquery_filter_random@94
+DEVBLOCK 0x5d2c
+# vehicle_ai::positionquery_filter_outofgoalanchor@b0
+DEVBLOCK 0x5f68
+# vehicle_ai::positionquery_filter_distawayfromtarget@1ea
+DEVBLOCK 0x6552
+# vehicle_ai::function_e057db25@272
+DEVBLOCK 0x6d7a
+# vehicle_ai::function_1d436633@7a
+DEVBLOCK 0x6eca
+# vehicle_ai::function_1d436633@330
+DEVBLOCK 0x7180
+# vehicle_ai::function_4ab1a63a@238
+DEVBLOCK 0x75b8
+# vehicle_ai::function_4ab1a63a@33c
+DEVBLOCK 0x76bc
+# vehicle_ai::function_1e0d693b@518
+DEVBLOCK 0x7d90
+# vehicle_ai::function_1e0d693b@614
+DEVBLOCK 0x7e8c
+# vehicle_ai::function_1e0d693b@704
+DEVBLOCK 0x7f7c
+# vehicle_ai::function_1e0d693b@814
+DEVBLOCK 0x808c
+# vehicle_ai::function_1e0d693b@95c
+DEVBLOCK 0x81d4
+# vehicle_ai::function_1e0d693b@aaa
+DEVBLOCK 0x8322
+# vehicle_ai::function_1e0d693b@bac
+DEVBLOCK 0x8424
+# vehicle_ai::function_4646fb11@1a4
+DEVBLOCK 0x8784
+# vehicle_ai::function_4646fb11@2a4
+DEVBLOCK 0x8884
+# vehicle_ai::function_4646fb11@3ac
+DEVBLOCK 0x898c
+# vehicle_ai::function_b1bd875a@82
+DEVBLOCK 0x8bca
+# vehicle_ai::function_b1bd875a@e4
+DEVBLOCK 0x8c2c
+# vehicle_ai::function_b1bd875a@44c
+DEVBLOCK 0x8f94
+# vehicle_ai::function_b1bd875a@50c
+DEVBLOCK 0x9054

@@ -1,7 +1,9 @@
 NAME scripts\core_common\scene_debug_shared.csc
 VERSION 0
 CHECKSUM 0x9e1cf16
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # scene::display_scene_menu@464
 STRING "<dev string:x10c>" 0xe9c
 # scene::display_scene_menu@474
@@ -92,3 +94,44 @@ STRING "<dev string:xde>" 0xd7c
 STRING "<dev string:xef>" 0xddc
 # scene::display_scene_menu@448
 STRING "<dev string:xf8>" 0xe80
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# scene::__init__system__@2
+DEVBLOCK 0x9a
+# scene::function_c3c9d0e5@2
+DEVBLOCK 0xe2
+# scene::run_scene_tests@82
+DEVBLOCK 0x20a
+# scene::clear_old_ents@2a
+DEVBLOCK 0x6ba
+# scene::toggle_scene_menu@12
+DEVBLOCK 0x762
+# scene::function_8ee42bf@12
+DEVBLOCK 0x962
+# scene::display_scene_menu@82
+DEVBLOCK 0xaba
+# scene::function_c0f30783@a
+DEVBLOCK 0x1772
+# scene::scene_list_settext@22
+DEVBLOCK 0x181a
+# scene::_scene_list_settext@4a
+DEVBLOCK 0x189a
+# scene::is_scene_playing@a
+DEVBLOCK 0x1bf2
+# scene::is_scene_initialized@a
+DEVBLOCK 0x1c5a
+# scene::test_init@a
+DEVBLOCK 0x1cc2
+# scene::function_3bafd088@a
+DEVBLOCK 0x1cfa
+# scene::function_3bafd088@e
+DEVBLOCK 0x1cfe
+# scene::function_d2785094@22
+DEVBLOCK 0x1ed2
+# scene::function_d2785094@26
+DEVBLOCK 0x1ed6
+# scene::test_play@22
+DEVBLOCK 0x205a
+# scene::debug_display@3a
+DEVBLOCK 0x2192

@@ -1,7 +1,9 @@
 NAME script_311952573639271c
 VERSION 0
 CHECKSUM 0x8563fd3a
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_b45e3f05::function_e01b477f@398 namespace_b45e3f05::function_e01b477f@3b0
 STRING "<dev string:x109>" 0x8e60 0x8e78
 # namespace_b45e3f05::function_e01b477f@3f0 namespace_b45e3f05::function_e01b477f@408
@@ -32,3 +34,42 @@ STRING "<dev string:xc9>" 0x6e48 0x6e60
 STRING "<dev string:xd5>" 0x8a84 0x8aa0
 # namespace_b45e3f05::function_e01b477f@340 namespace_b45e3f05::function_e01b477f@358
 STRING "<dev string:xf3>" 0x8e08 0x8e20
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_b45e3f05::function_b156b71@82
+DEVBLOCK 0x13ca
+# namespace_b45e3f05::function_977835f8@18a
+DEVBLOCK 0x17ca
+# namespace_b45e3f05::function_7071d9b0@5c
+DEVBLOCK 0x2b7c
+# namespace_b45e3f05::function_7071d9b0@152
+DEVBLOCK 0x2c72
+# namespace_b45e3f05::function_9f2f0210@2c
+DEVBLOCK 0x3324
+# namespace_b45e3f05::function_cbee939b@20a
+DEVBLOCK 0x35d2
+# namespace_b45e3f05::fishy_offering_step_2_setup@ca
+DEVBLOCK 0x3d2a
+# namespace_b45e3f05::function_50f4cc80@1c2
+DEVBLOCK 0x58c2
+# namespace_b45e3f05::function_e9104d6d@94
+DEVBLOCK 0x6484
+# namespace_b45e3f05::function_75bdcb53@150
+DEVBLOCK 0x6c50
+# namespace_b45e3f05::function_75bdcb53@31a
+DEVBLOCK 0x6e1a
+# namespace_b45e3f05::give_flare@32
+DEVBLOCK 0x89da
+# namespace_b45e3f05::function_e01b477f@304
+DEVBLOCK 0x8dcc
+# namespace_b45e3f05::vomit_blade_cleanup@32
+DEVBLOCK 0xa11a
+# namespace_b45e3f05::function_cc7214a9@2a0
+DEVBLOCK 0xa848
+# namespace_b45e3f05::function_6d5cf6b2@12
+DEVBLOCK 0xb3ca
+# namespace_b45e3f05::function_ff05eb5@25a
+DEVBLOCK 0xb982
+# namespace_b45e3f05::function_ff05eb5@3ae
+DEVBLOCK 0xbad6

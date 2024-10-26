@@ -1,7 +1,9 @@
 NAME scripts\mp_common\contracts.gsc
 VERSION 0
 CHECKSUM 0x6ea9919a
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # contracts::function_17a92a99@74
 STRING "<dev string:x10f>" 0x19ec
 # contracts::function_17a92a99@68
@@ -240,3 +242,30 @@ STRING "<dev string:xc08>" 0x2578
 STRING "<dev string:xcb>" 0x19c4
 # contracts::function_17a92a99@40
 STRING "<dev string:xe7>" 0x19b8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# contracts::finalize_init@1c4
+DEVBLOCK 0x36c
+# contracts::function_902ef0de@32
+DEVBLOCK 0xcda
+# contracts::function_902ef0de@302
+DEVBLOCK 0xfaa
+# contracts::function_90a854d2@12
+DEVBLOCK 0x108a
+# contracts::devgui_setup@a
+DEVBLOCK 0x1892
+# contracts::function_17a92a99@1a
+DEVBLOCK 0x1992
+# contracts::function_b308be00@1a
+DEVBLOCK 0x1cfa
+# contracts::function_b8984e1a@1a
+DEVBLOCK 0x1e32
+# contracts::function_1379e87e@1a
+DEVBLOCK 0x1f92
+# contracts::function_50a60581@1a
+DEVBLOCK 0x20a2
+# contracts::function_ef925b75@1a
+DEVBLOCK 0x241a
+# contracts::function_d1de9a1b@1a
+DEVBLOCK 0x24da

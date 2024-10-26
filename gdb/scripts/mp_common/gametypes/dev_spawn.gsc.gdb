@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\dev_spawn.gsc
 VERSION 0
 CHECKSUM 0xb2726cdd
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # dev_spawn::function_f084faed@2cc
 STRING "<dev string:x104>" 0x644
 # dev_spawn::function_f084faed@2f4
@@ -70,3 +72,42 @@ STRING "<dev string:xdd>" 0x5cc
 STRING "<dev string:xea>" 0x5f4
 # dev_spawn::function_f084faed@2a4
 STRING "<dev string:xf7>" 0x61c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# dev_spawn::function_d8049496@2
+DEVBLOCK 0x9a
+# dev_spawn::on_start_gametype@2
+DEVBLOCK 0x122
+# dev_spawn::function_c28b3d26@1a
+DEVBLOCK 0x162
+# dev_spawn::function_f084faed@2
+DEVBLOCK 0x37a
+# dev_spawn::function_3326cf8d@12
+DEVBLOCK 0x86a
+# dev_spawn::function_bf14041f@2a
+DEVBLOCK 0x95a
+# dev_spawn::function_f0b81b80@6a
+DEVBLOCK 0xa92
+# dev_spawn::function_423a05a4@a
+DEVBLOCK 0xbfa
+# dev_spawn::function_5650f4ee@22
+DEVBLOCK 0xc42
+# dev_spawn::function_88770699@3a
+DEVBLOCK 0xd5a
+# dev_spawn::showspawnpoints@32
+DEVBLOCK 0xfb2
+# dev_spawn::function_1b0780eb@3a
+DEVBLOCK 0x10b2
+# dev_spawn::function_107f44c0@2
+DEVBLOCK 0x1192
+# dev_spawn::hidespawnpoints@2
+DEVBLOCK 0x11ba
+# dev_spawn::showstartspawnpoints@62
+DEVBLOCK 0x124a
+# dev_spawn::hidestartspawnpoints@2
+DEVBLOCK 0x14ba
+# dev_spawn::drawspawnpoint@7a
+DEVBLOCK 0x1562
+# dev_spawn::showonespawnpoint@7a
+DEVBLOCK 0x1ab2

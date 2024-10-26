@@ -1,7 +1,9 @@
 NAME scripts\core_common\aat_shared.gsc
 VERSION 0
 CHECKSUM 0x8574617a
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # aat::register@9c aat::register_immunity@50
 STRING "<dev string:x120>" 0x139c 0x1978
 # aat::register@bc
@@ -104,3 +106,102 @@ STRING "<dev string:xa2>" 0x8f0
 STRING "<dev string:xaa>" 0x8fc
 # aat::register@64
 STRING "<dev string:xb3>" 0x1364
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# aat::__init__@1ba
+DEVBLOCK 0x342
+# aat::on_player_connect@f2
+DEVBLOCK 0x45a
+# aat::setup_devgui@32
+DEVBLOCK 0x532
+# aat::aat_devgui_think@12
+DEVBLOCK 0x692
+# aat::aat_set_debug_text@2a
+DEVBLOCK 0x822
+# aat::aat_response@432
+DEVBLOCK 0x104a
+# aat::aat_response@49e
+DEVBLOCK 0x10b6
+# aat::aat_response@5b8
+DEVBLOCK 0x11d0
+# aat::aat_response@610
+DEVBLOCK 0x1228
+# aat::register@5a
+DEVBLOCK 0x135a
+# aat::register@92
+DEVBLOCK 0x1392
+# aat::register@b2
+DEVBLOCK 0x13b2
+# aat::register@f2
+DEVBLOCK 0x13f2
+# aat::register@132
+DEVBLOCK 0x1432
+# aat::register@162
+DEVBLOCK 0x1462
+# aat::register@1aa
+DEVBLOCK 0x14aa
+# aat::register@1da
+DEVBLOCK 0x14da
+# aat::register@212
+DEVBLOCK 0x1512
+# aat::register@242
+DEVBLOCK 0x1542
+# aat::register@27a
+DEVBLOCK 0x157a
+# aat::register@2aa
+DEVBLOCK 0x15aa
+# aat::register@2e2
+DEVBLOCK 0x15e2
+# aat::register@312
+DEVBLOCK 0x1612
+# aat::register@342
+DEVBLOCK 0x1642
+# aat::register@372
+DEVBLOCK 0x1672
+# aat::register@3b2
+DEVBLOCK 0x16b2
+# aat::register@3e2
+DEVBLOCK 0x16e2
+# aat::register_immunity@46
+DEVBLOCK 0x196e
+# aat::register_immunity@6a
+DEVBLOCK 0x1992
+# aat::register_immunity@8a
+DEVBLOCK 0x19b2
+# aat::register_immunity@aa
+DEVBLOCK 0x19d2
+# aat::register_immunity@ca
+DEVBLOCK 0x19f2
+# aat::finalize_clientfields@32
+DEVBLOCK 0x1b5a
+# aat::finalize_clientfields@d2
+DEVBLOCK 0x1bfa
+# aat::register_reroll@22
+DEVBLOCK 0x1d52
+# aat::register_reroll@42
+DEVBLOCK 0x1d72
+# aat::register_reroll@82
+DEVBLOCK 0x1db2
+# aat::register_reroll@c2
+DEVBLOCK 0x1df2
+# aat::register_reroll@f2
+DEVBLOCK 0x1e22
+# aat::register_reroll@12a
+DEVBLOCK 0x1e5a
+# aat::register_reroll@15a
+DEVBLOCK 0x1e8a
+# aat::register_reroll@18a
+DEVBLOCK 0x1eba
+# aat::acquire@4c
+DEVBLOCK 0x2154
+# aat::acquire@6a
+DEVBLOCK 0x2172
+# aat::acquire@d6
+DEVBLOCK 0x21de
+# aat::acquire@112
+DEVBLOCK 0x221a
+# aat::remove@2c
+DEVBLOCK 0x24d4
+# aat::remove@4a
+DEVBLOCK 0x24f2

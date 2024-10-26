@@ -1,7 +1,9 @@
 NAME scripts\core_common\scene_objects_shared.gsc
 VERSION 0
 CHECKSUM 0xcc85865a
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # csceneobject::play@680
 STRING "<dev string:x110>" 0x2d50
 # csceneobject::play@6f8 csceneobject::play@73c cscene::function_4412dc65@3cc
@@ -128,3 +130,104 @@ STRING "<dev string:xa7>" 0x2d18 0x2d5c
 STRING "<dev string:xaf>" 0x2cf0 0x2d44
 # csceneobject::play@63c
 STRING "<dev string:xb8>" 0x2d0c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# csceneobject::__destructor@2
+DEVBLOCK 0x8aa
+# csceneobject::prepare@f4
+DEVBLOCK 0x1084
+# csceneobject::play@4f8
+DEVBLOCK 0x2bc8
+# csceneobject::play@5d6
+DEVBLOCK 0x2ca6
+# csceneobject::play@7ae
+DEVBLOCK 0x2e7e
+# csceneobject::cleanup@12
+DEVBLOCK 0x3aaa
+# csceneobject::play_anim@64
+DEVBLOCK 0x6084
+# csceneobject::_play_anim@28a
+DEVBLOCK 0x6f62
+# csceneobject::_play_anim@31a
+DEVBLOCK 0x6ff2
+# csceneobject::_play_anim@65a
+DEVBLOCK 0x7332
+# csceneobject::_play_anim@722
+DEVBLOCK 0x73fa
+# csceneobject::spawn_ent@c8
+DEVBLOCK 0x7a68
+# csceneobject::skip_animation_on_client@8e
+DEVBLOCK 0x89de
+# csceneobject::skip_animation_on_client@152
+DEVBLOCK 0x8aa2
+# csceneobject::skip_animation_on_server@8e
+DEVBLOCK 0x8be6
+# csceneobject::skip_animation_on_server@152
+DEVBLOCK 0x8caa
+# csceneobject::log@a
+DEVBLOCK 0x8e42
+# csceneobject::error@11e
+DEVBLOCK 0x9036
+# csceneobject::error@13e
+DEVBLOCK 0x9056
+# csceneobject::warning@a4
+DEVBLOCK 0x913c
+# cscene::__destructor@2
+DEVBLOCK 0xa58a
+# cscene::function_4412dc65@b2
+DEVBLOCK 0xa66a
+# cscene::init@5a
+DEVBLOCK 0xabd2
+# cscene::init@4ae
+DEVBLOCK 0xb026
+# cscene::_assign_ents_by_name@336
+DEVBLOCK 0xcdc6
+# cscene::play@10a
+DEVBLOCK 0xd58a
+# cscene::play@80a
+DEVBLOCK 0xdc8a
+# cscene::play@a20
+DEVBLOCK 0xdea0
+# cscene::play@1470
+DEVBLOCK 0xe8f0
+# cscene::play@154a
+DEVBLOCK 0xe9ca
+# cscene::play@1612
+DEVBLOCK 0xea92
+# cscene::run_next@32
+DEVBLOCK 0xf5b2
+# cscene::run_next@2dc
+DEVBLOCK 0xf85c
+# cscene::stop@70
+DEVBLOCK 0xfa18
+# cscene::stop@15a
+DEVBLOCK 0xfb02
+# cscene::skip_scene@b8
+DEVBLOCK 0x10ba8
+# cscene::skip_scene@172
+DEVBLOCK 0x10c62
+# cscene::skip_scene@204
+DEVBLOCK 0x10cf4
+# cscene::skip_scene@41a
+DEVBLOCK 0x10f0a
+# cscene::skip_scene@492
+DEVBLOCK 0x10f82
+# cscene::skip_scene@4e2
+DEVBLOCK 0x10fd2
+# cscene::skip_scene@600
+DEVBLOCK 0x110f0
+# cscene::finish_scene_skipping@42
+DEVBLOCK 0x11322
+# cscene::finish_scene_skipping@a4
+DEVBLOCK 0x11384
+# cscene::log@a
+DEVBLOCK 0x1185a
+# cscene::error@24
+DEVBLOCK 0x118e4
+# cscene::error@3e
+DEVBLOCK 0x118fe
+# cscene::error@42
+DEVBLOCK 0x11902
+# cscene::warning@24
+DEVBLOCK 0x119a4

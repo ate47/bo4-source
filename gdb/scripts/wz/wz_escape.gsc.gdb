@@ -1,7 +1,9 @@
 NAME scripts\wz\wz_escape.gsc
 VERSION 0
 CHECKSUM 0xb72abd72
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wz_escape::function_9cc59537@440
 STRING "<dev string:x101>" 0xee8
 # wz_escape::function_9cc59537@4f8 wz_escape::function_9cc59537@c20
@@ -62,3 +64,54 @@ STRING "<dev string:xd8>" 0xd94 0x43ec
 STRING "<dev string:xe4>" 0xdf8 0xe44
 # wz_escape::function_9cc59537@404 wz_escape::function_13a77bfa@c4 wz_escape::function_f42944c7@270
 STRING "<dev string:xea>" 0xeac 0x2fbc 0x36e0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wz_escape::main@62
+DEVBLOCK 0x1b2
+# wz_escape::main@1f2
+DEVBLOCK 0x342
+# wz_escape::on_player_spawned@2
+DEVBLOCK 0x55a
+# wz_escape::init_devgui@a
+DEVBLOCK 0x78a
+# wz_escape::on_vehicle_spawned@2
+DEVBLOCK 0x86a
+# wz_escape::function_10c650e6@62
+DEVBLOCK 0x8f2
+# wz_escape::function_9cc59537@2aa
+DEVBLOCK 0xd52
+# wz_escape::function_d72aa67e@3a
+DEVBLOCK 0x1f8a
+# wz_escape::function_47351fa3@82
+DEVBLOCK 0x2092
+# wz_escape::function_e8f0335f@e2
+DEVBLOCK 0x2422
+# wz_escape::function_f9b68fd7@2a
+DEVBLOCK 0x2a32
+# wz_escape::function_a476d876@7a
+DEVBLOCK 0x2d3a
+# wz_escape::function_13a77bfa@92
+DEVBLOCK 0x2f8a
+# wz_escape::function_f42944c7@52
+DEVBLOCK 0x34c2
+# wz_escape::function_f567f0cd@6a
+DEVBLOCK 0x391a
+# wz_escape::function_1221d304@2a
+DEVBLOCK 0x3b42
+# wz_escape::function_b2775b52@2
+DEVBLOCK 0x3f22
+# wz_escape::function_4b227faf@aa
+DEVBLOCK 0x43ba
+# wz_escape::function_df930125@a
+DEVBLOCK 0x4672
+# wz_escape::devgui_weapon_think@a
+DEVBLOCK 0x46da
+# wz_escape::devgui_handle_player_command@2a
+DEVBLOCK 0x47b2
+# wz_escape::function_1880c93d@12
+DEVBLOCK 0x48da
+# wz_escape::function_1880c93d@16
+DEVBLOCK 0x48de
+# wz_escape::function_1880c93d@32
+DEVBLOCK 0x48fa

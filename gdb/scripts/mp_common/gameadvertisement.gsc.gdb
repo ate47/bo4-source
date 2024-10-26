@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gameadvertisement.gsc
 VERSION 0
 CHECKSUM 0x17404208
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # gameadvertisement::default_rules@3a8 gameadvertisement::default_rules@3e0
 STRING "<dev string:x113>" 0x8f0 0x928
 # gameadvertisement::sessionadvertismentcreatedebughud@34
@@ -38,3 +40,38 @@ STRING "<dev string:xd8>" 0x7dc
 STRING "<dev string:xe5>" 0x7fc
 # gameadvertisement::default_rules@304
 STRING "<dev string:xf7>" 0x84c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# gameadvertisement::init@2
+DEVBLOCK 0x8a
+# gameadvertisement::setadvertisedstatus@a
+DEVBLOCK 0x1ba
+# gameadvertisement::sessionadvertisementcheck@c8
+DEVBLOCK 0x2b8
+# gameadvertisement::teamscorelimitcheck@128
+DEVBLOCK 0x448
+# gameadvertisement::teamscorelimitcheck@16c
+DEVBLOCK 0x48c
+# gameadvertisement::default_rules@8c
+DEVBLOCK 0x5d4
+# gameadvertisement::default_rules@104
+DEVBLOCK 0x64c
+# gameadvertisement::default_rules@1a6
+DEVBLOCK 0x6ee
+# gameadvertisement::default_rules@21a
+DEVBLOCK 0x762
+# gameadvertisement::default_rules@280
+DEVBLOCK 0x7c8
+# gameadvertisement::default_rules@2f0
+DEVBLOCK 0x838
+# gameadvertisement::default_rules@39e
+DEVBLOCK 0x8e6
+# gameadvertisement::default_rules@3d4
+DEVBLOCK 0x91c
+# gameadvertisement::sessionadvertismentcreatedebughud@1a
+DEVBLOCK 0x972
+# gameadvertisement::updatedebughud@1a
+DEVBLOCK 0xad2
+# gameadvertisement::sessionadvertismentupdatedebughud@5a
+DEVBLOCK 0xc2a

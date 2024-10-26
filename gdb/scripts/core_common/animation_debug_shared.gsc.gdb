@@ -1,7 +1,9 @@
 NAME scripts\core_common\animation_debug_shared.gsc
 VERSION 0
 CHECKSUM 0xa3920ea5
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # animation::anim_info_render_thread@950
 STRING "<dev string:x107>" 0xc70
 # animation::anim_info_render_thread@9b4
@@ -74,3 +76,22 @@ STRING "<dev string:xef>" 0xb20
 STRING "<dev string:xf9>" 0xb2c
 # animation::anim_info_render_thread@90c
 STRING "<dev string:xfe>" 0xc2c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# animation::function_c3c9d0e5@32
+DEVBLOCK 0xb2
+# animation::is_anim_debugging@a
+DEVBLOCK 0x2e2
+# animation::anim_info_render_thread@aa
+DEVBLOCK 0x3ca
+# animation::get_ent_type@2
+DEVBLOCK 0xdda
+# animation::_init_frame@2
+DEVBLOCK 0xe52
+# animation::_reset_frame@2
+DEVBLOCK 0xe82
+# animation::render_tag@2a
+DEVBLOCK 0xeca
+# animation::anim_origin_render@42
+DEVBLOCK 0x102a

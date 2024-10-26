@@ -1,7 +1,9 @@
 NAME scripts\mp_common\item_world_debug.gsc
 VERSION 0
 CHECKSUM 0x84c71903
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # item_world_debug::function_b6ea080@74 item_world_debug::function_b6ea080@80
 STRING "<dev string:x108>" 0x8ec 0x8f8
 # item_world_debug::function_b6ea080@98
@@ -310,3 +312,38 @@ STRING "<dev string:xeb1>" 0x550c
 STRING "<dev string:xeff>" 0x5534
 # item_world_debug::_setup_devgui@23c
 STRING "<dev string:xf53>" 0x555c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# item_world_debug::__init__@54
+DEVBLOCK 0x14c
+# item_world_debug::__init__@72
+DEVBLOCK 0x16a
+# item_world_debug::__init__@8a
+DEVBLOCK 0x182
+# item_world_debug::function_13d7bba@1a
+DEVBLOCK 0x1c2
+# item_world_debug::function_11421106@1a
+DEVBLOCK 0x28a
+# item_world_debug::function_bebe535@62
+DEVBLOCK 0x602
+# item_world_debug::function_2248268e@2a
+DEVBLOCK 0x7ea
+# item_world_debug::function_b6ea080@6a
+DEVBLOCK 0x8e2
+# item_world_debug::function_938d798a@9a
+DEVBLOCK 0x1042
+# item_world_debug::function_f9efe895@42
+DEVBLOCK 0x174a
+# item_world_debug::function_f0d72128@3a
+DEVBLOCK 0x1a02
+# item_world_debug::function_78931318@1a
+DEVBLOCK 0x1d1a
+# item_world_debug::function_cdd9b388@332
+DEVBLOCK 0x21a2
+# item_world_debug::_setup_devgui@a
+DEVBLOCK 0x532a
+# item_world_debug::function_91ef342@a
+DEVBLOCK 0x558a
+# item_world_debug::function_c07eae4e@5a
+DEVBLOCK 0x5672

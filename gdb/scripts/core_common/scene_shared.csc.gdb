@@ -1,7 +1,9 @@
 NAME scripts\core_common\scene_shared.csc
 VERSION 0
 CHECKSUM 0xb5586bb1
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # scene::__main__@3ec
 STRING "<dev string:x114>" 0xaa8c
 # scene::__main__@400
@@ -68,3 +70,62 @@ STRING "<dev string:xbb>" 0x4100
 STRING "<dev string:xd7>" 0x410c
 # cscene::_call_state_funcs@358
 STRING "<dev string:xee>" 0x73e8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# scene::player_scene_animation_skip@94
+DEVBLOCK 0x78c
+# csceneplayer::_play_camera_anim@104
+DEVBLOCK 0xb0c
+# csceneobject::_play_anim@26e
+DEVBLOCK 0x40f6
+# cscene::_call_state_funcs@34e
+DEVBLOCK 0x73de
+# scene::__init__@17c
+DEVBLOCK 0x8364
+# scene::in_igc@26c
+DEVBLOCK 0x8a24
+# scene::cf_server_sync@f0
+DEVBLOCK 0xa358
+# scene::__main__@3e4
+DEVBLOCK 0xaa84
+# scene::add_scene_func@3c
+DEVBLOCK 0xadfc
+# scene::add_scene_func@40
+DEVBLOCK 0xae00
+# scene::remove_scene_func@3c
+DEVBLOCK 0xaf8c
+# scene::remove_scene_func@40
+DEVBLOCK 0xaf90
+# scene::spawn@5a
+DEVBLOCK 0xb1e2
+# scene::get_scenedef@2c
+DEVBLOCK 0xb394
+# scene::get_scenedef@30
+DEVBLOCK 0xb398
+# scene::fixup_scenedef@6a
+DEVBLOCK 0xb5da
+# scene::_init_instance@92
+DEVBLOCK 0xcfc2
+# scene::_init_instance@96
+DEVBLOCK 0xcfc6
+# scene::_init_instance@e2
+DEVBLOCK 0xd012
+# scene::function_6f382548@13e
+DEVBLOCK 0xd24e
+# scene::function_46546b5c@7e
+DEVBLOCK 0xe26e
+# scene::_play_instance@1f6
+DEVBLOCK 0xe6e6
+# scene::_play_instance@294
+DEVBLOCK 0xe784
+# scene::_play_instance@3b4
+DEVBLOCK 0xe8a4
+# scene::stop@11c
+DEVBLOCK 0xea4c
+# scene::stop@120
+DEVBLOCK 0xea50
+# scene::_get_scene_instances@8c
+DEVBLOCK 0xf7a4
+# scene::_get_scene_instances@90
+DEVBLOCK 0xf7a8

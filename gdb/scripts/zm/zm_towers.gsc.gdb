@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_towers.gsc
 VERSION 0
 CHECKSUM 0x38ef11a4
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_towers::function_72e2cc56@f8
 STRING "<dev string:x106>" 0x5c98
 # zm_towers::function_ef3f5ee5@f0
@@ -116,3 +118,34 @@ STRING "<dev string:xe2d>" 0x6ba0
 STRING "<dev string:xe39>" 0x6bc8
 # zm_towers::function_72e2cc56@98 zm_towers::function_72e2cc56@d8
 STRING "<dev string:xec>" 0x5c38 0x5c78
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_towers::main@1a8a
+DEVBLOCK 0x2a42
+# zm_towers::function_ebe4d15c@30
+DEVBLOCK 0x33c0
+# zm_towers::function_643aeb5b@2
+DEVBLOCK 0x596a
+# zm_towers::function_1ccb7366@2
+DEVBLOCK 0x5a6a
+# zm_towers::function_72e2cc56@22
+DEVBLOCK 0x5bc2
+# zm_towers::function_ef3f5ee5@2
+DEVBLOCK 0x5d12
+# zm_towers::function_79aa236@42
+DEVBLOCK 0x5e72
+# zm_towers::function_2bb502f5@2
+DEVBLOCK 0x6152
+# zm_towers::function_8d6c5e6e@32
+DEVBLOCK 0x64f2
+# zm_towers::function_ddb8acde@2
+DEVBLOCK 0x6ec2
+# zm_towers::function_4110a06f@2
+DEVBLOCK 0x6f42
+# zm_towers::function_9dc8cf3@22
+DEVBLOCK 0x6fca
+# zm_towers::function_51855e65@3a
+DEVBLOCK 0x7102
+# zm_towers::function_51855e65@da
+DEVBLOCK 0x71a2

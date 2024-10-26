@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_hms_util.gsc
 VERSION 0
 CHECKSUM 0xccab29d2
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_hms_util::function_4eb5a6ad@5c
 STRING "<dev string:x100>" 0x2e54
 # zm_hms_util::function_4eb5a6ad@74
@@ -34,3 +36,26 @@ STRING "<dev string:xc9>" 0x2d2c
 STRING "<dev string:xd7>" 0x2dd4
 # zm_hms_util::function_4eb5a6ad@48
 STRING "<dev string:xed>" 0x2e40
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_hms_util::__init__@2
+DEVBLOCK 0x202
+# zm_hms_util::function_774b42ac@a
+DEVBLOCK 0x290a
+# zm_hms_util::devgui@a
+DEVBLOCK 0x2992
+# zm_hms_util::function_af49a1e9@2a
+DEVBLOCK 0x2ad2
+# zm_hms_util::function_df54cbcd@2
+DEVBLOCK 0x2c1a
+# zm_hms_util::function_86b062a6@12
+DEVBLOCK 0x2caa
+# zm_hms_util::function_acd2ba83@2
+DEVBLOCK 0x2d1a
+# zm_hms_util::function_84b292b4@2
+DEVBLOCK 0x2d52
+# zm_hms_util::function_fc28e798@2
+DEVBLOCK 0x2d8a
+# zm_hms_util::function_4eb5a6ad@42
+DEVBLOCK 0x2e3a

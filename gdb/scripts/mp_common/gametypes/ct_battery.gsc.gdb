@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\ct_battery.gsc
 VERSION 0
 CHECKSUM 0x2bcb4311
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ct_battery::function_868cd9ac@148
 STRING "<dev string:x161>" 0x4780
 # ct_battery::function_868cd9ac@160
@@ -32,3 +34,14 @@ STRING "<dev string:x84>" 0x46f8 0x47f0 0x481c 0x4d04
 STRING "<dev string:x87>" 0x474c
 # ct_battery::function_868cd9ac@130
 STRING "<dev string:xed>" 0x4768
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ct_battery::function_6db6572b@7a
+DEVBLOCK 0xa8a
+# ct_battery::function_560c5174@1dc
+DEVBLOCK 0x23bc
+# ct_battery::function_560c5174@3f0
+DEVBLOCK 0x25d0
+# ct_battery::function_868cd9ac@a2
+DEVBLOCK 0x46da

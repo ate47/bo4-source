@@ -1,7 +1,9 @@
 NAME scripts\core_common\scene_shared.gsc
 VERSION 0
 CHECKSUM 0x4f48420e
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # scene::function_d4c74ab3@168
 STRING "<dev string:x143>" 0x3248
 # scene::function_d4c74ab3@1a0
@@ -100,3 +102,98 @@ STRING "<dev string:xd0>" 0x31d4
 STRING "<dev string:xe9>" 0x31fc 0x3274 0x32ec
 # scene::function_d4c74ab3@128
 STRING "<dev string:xf4>" 0x3208
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# scene::__init__@1e4
+DEVBLOCK 0x7e4
+# scene::__main__@144
+DEVBLOCK 0x29dc
+# scene::__main__@148
+DEVBLOCK 0x29e0
+# scene::__main__@3b2
+DEVBLOCK 0x2c4a
+# scene::function_d4c74ab3@3a
+DEVBLOCK 0x311a
+# scene::function_d4c74ab3@114
+DEVBLOCK 0x31f4
+# scene::function_d4c74ab3@18c
+DEVBLOCK 0x326c
+# scene::function_d4c74ab3@204
+DEVBLOCK 0x32e4
+# scene::add_scene_func@3c
+DEVBLOCK 0x37ec
+# scene::add_scene_func@40
+DEVBLOCK 0x37f0
+# scene::function_d8a83a50@3c
+DEVBLOCK 0x39dc
+# scene::function_d8a83a50@40
+DEVBLOCK 0x39e0
+# scene::remove_scene_func@3c
+DEVBLOCK 0x3bcc
+# scene::remove_scene_func@40
+DEVBLOCK 0x3bd0
+# scene::get_scenedef@2c
+DEVBLOCK 0x3ec4
+# scene::get_scenedef@30
+DEVBLOCK 0x3ec8
+# scene::spawn@5a
+DEVBLOCK 0x40e2
+# scene::init_streamer@31a
+DEVBLOCK 0x47da
+# scene::_init_instance@64
+DEVBLOCK 0x4b64
+# scene::_init_instance@f6
+DEVBLOCK 0x4bf6
+# scene::_init_instance@fa
+DEVBLOCK 0x4bfa
+# scene::_init_instance@14a
+DEVBLOCK 0x4c4a
+# scene::function_6f382548@13e
+DEVBLOCK 0x4e66
+# scene::play@d4
+DEVBLOCK 0x5344
+# scene::play@4f0
+DEVBLOCK 0x5760
+# scene::_play_on_self@1e8
+DEVBLOCK 0x66e8
+# scene::_play_instance@164
+DEVBLOCK 0x692c
+# scene::_play_instance@34c
+DEVBLOCK 0x6b14
+# scene::_play_instance@404
+DEVBLOCK 0x6bcc
+# scene::_play_instance@722
+DEVBLOCK 0x6eea
+# scene::_delete_scene_spawned_ents@a6
+DEVBLOCK 0x722e
+# scene::_get_scene_instances@8c
+DEVBLOCK 0x7394
+# scene::_get_scene_instances@90
+DEVBLOCK 0x7398
+# scene::stop@fc
+DEVBLOCK 0x7edc
+# scene::stop@100
+DEVBLOCK 0x7ee0
+# scene::scene_disable_player_stuff@26
+DEVBLOCK 0x8a36
+# scene::scene_enable_player_stuff@1a
+DEVBLOCK 0x8c0a
+# scene::set_igc_active@11a
+DEVBLOCK 0x912a
+# scene::get_scene_shot@8a
+DEVBLOCK 0x924a
+# scene::get_existing_ent@cc
+DEVBLOCK 0xa83c
+# scene::_get_existing_ent@54
+DEVBLOCK 0xaa5c
+# scene::_get_existing_ent@6c
+DEVBLOCK 0xaa74
+# scene::error_on_screen@a
+DEVBLOCK 0xad1a
+# scene::_destroy_error_on_screen@2
+DEVBLOCK 0xae3a
+# scene::warning_on_screen@a
+DEVBLOCK 0xaed2
+# scene::_destroy_warning_on_screen@2
+DEVBLOCK 0xaff2

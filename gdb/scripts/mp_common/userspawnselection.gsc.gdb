@@ -1,7 +1,9 @@
 NAME scripts\mp_common\userspawnselection.gsc
 VERSION 0
 CHECKSUM 0xe8d8de88
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # userspawnselection::function_259770ba@1b0
 STRING "<dev string:x103>" 0x19a0
 # userspawnselection::function_259770ba@220
@@ -32,3 +34,26 @@ STRING "<dev string:x97>" 0x195c
 STRING "<dev string:xe0>" 0x1978
 # userspawnselection::function_259770ba@194 userspawnselection::function_259770ba@1c4 userspawnselection::function_259770ba@22c userspawnselection::function_259770ba@26c userspawnselection::function_259770ba@2ac userspawnselection::function_259770ba@320 userspawnselection::function_259770ba@370 userspawnselection::function_259770ba@3a4 userspawnselection::function_259770ba@410 userspawnselection::function_259770ba@498
 STRING "<dev string:xff>" 0x1984 0x19b4 0x1a1c 0x1a5c 0x1a9c 0x1b10 0x1b60 0x1b94 0x1c00 0x1c88
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# userspawnselection::registeravailablespawnbeacon@12
+DEVBLOCK 0x5e2
+# userspawnselection::filter_spawnpoints@ac
+DEVBLOCK 0x168c
+# userspawnselection::filter_spawnpoints@f0
+DEVBLOCK 0x16d0
+# userspawnselection::filter_spawnpoints@176
+DEVBLOCK 0x1756
+# userspawnselection::filter_spawnpoints@17a
+DEVBLOCK 0x175a
+# userspawnselection::function_259770ba@ec
+DEVBLOCK 0x18dc
+# userspawnselection::function_259770ba@162
+DEVBLOCK 0x1952
+# userspawnselection::function_259770ba@4da
+DEVBLOCK 0x1cca
+# userspawnselection::function_259770ba@51e
+DEVBLOCK 0x1d0e
+# userspawnselection::function_259770ba@522
+DEVBLOCK 0x1d12

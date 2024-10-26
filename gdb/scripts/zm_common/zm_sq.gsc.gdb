@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_sq.gsc
 VERSION 0
 CHECKSUM 0x60aef8eb
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_sq::register@178 zm_sq::register@190
 STRING "<dev string:x10d>" 0x2c0 0x2d8
 # zm_sq::register@1d8 zm_sq::register@1f0
@@ -92,3 +94,96 @@ STRING "<dev string:x90>" 0x1dc 0xb44 0x1a4c
 STRING "<dev string:xab>" 0x20c
 # zm_sq::register@118 zm_sq::register@130
 STRING "<dev string:xca>" 0x260 0x278
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_sq::init@2
+DEVBLOCK 0xfa
+# zm_sq::register@52
+DEVBLOCK 0x19a
+# zm_sq::register@56
+DEVBLOCK 0x19e
+# zm_sq::register@8a
+DEVBLOCK 0x1d2
+# zm_sq::register@ba
+DEVBLOCK 0x202
+# zm_sq::register@3ac
+DEVBLOCK 0x4f4
+# zm_sq::register@612
+DEVBLOCK 0x75a
+# zm_sq::start@5c
+DEVBLOCK 0x824
+# zm_sq::start@8a
+DEVBLOCK 0x852
+# zm_sq::start@8e
+DEVBLOCK 0x856
+# zm_sq::start@f4
+DEVBLOCK 0x8bc
+# zm_sq::start@1a4
+DEVBLOCK 0x96c
+# zm_sq::start@1bc
+DEVBLOCK 0x984
+# zm_sq::is_complete@a
+DEVBLOCK 0xa32
+# zm_sq::is_complete@3a
+DEVBLOCK 0xa62
+# zm_sq::is_complete@3e
+DEVBLOCK 0xa66
+# zm_sq::function_9212ff4d@32
+DEVBLOCK 0xb0a
+# zm_sq::function_9212ff4d@62
+DEVBLOCK 0xb3a
+# zm_sq::function_9212ff4d@92
+DEVBLOCK 0xb6a
+# zm_sq::run_step@90
+DEVBLOCK 0xcb8
+# zm_sq::run_step@1f2
+DEVBLOCK 0xe1a
+# zm_sq::run_step@32e
+DEVBLOCK 0xf56
+# zm_sq::run_step@500
+DEVBLOCK 0x1128
+# zm_sq::run_step@52e
+DEVBLOCK 0x1156
+# zm_sq::run_step@7ea
+DEVBLOCK 0x1412
+# zm_sq::function_df365859@a
+DEVBLOCK 0x1592
+# zm_sq::function_f09763fd@22
+DEVBLOCK 0x16e2
+# zm_sq::function_f09763fd@26
+DEVBLOCK 0x16e6
+# zm_sq::function_f09763fd@5a
+DEVBLOCK 0x171a
+# zm_sq::function_44e256d8@a
+DEVBLOCK 0x18b2
+# zm_sq::function_44e256d8@e
+DEVBLOCK 0x18b6
+# zm_sq::function_28aee167@12
+DEVBLOCK 0x192a
+# zm_sq::function_28aee167@16
+DEVBLOCK 0x192e
+# zm_sq::function_b3da1a16@22
+DEVBLOCK 0x1a0a
+# zm_sq::function_b3da1a16@26
+DEVBLOCK 0x1a0e
+# zm_sq::function_b3da1a16@5a
+DEVBLOCK 0x1a42
+# zm_sq::function_87306f8a@22
+DEVBLOCK 0x1b9a
+# zm_sq::function_614612f@12
+DEVBLOCK 0x1c72
+# zm_sq::function_f2dd8601@32
+DEVBLOCK 0x1e0a
+# zm_sq::devgui_think@22
+DEVBLOCK 0x212a
+# zm_sq::create_hudelem@1a
+DEVBLOCK 0x28e2
+# zm_sq::function_5df75220@5a
+DEVBLOCK 0x29ea
+# zm_sq::function_c1d3567c@42
+DEVBLOCK 0x2c2a
+# zm_sq::function_9bee49bf@42
+DEVBLOCK 0x2d9a
+# zm_sq::function_1091b2a0@12
+DEVBLOCK 0x2eba

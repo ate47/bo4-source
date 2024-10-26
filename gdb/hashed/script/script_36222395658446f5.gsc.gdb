@@ -1,7 +1,9 @@
 NAME script_36222395658446f5
 VERSION 0
 CHECKSUM 0x4d6f0bdf
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_7c0074b5::function_9562e9c1@48
 STRING "<dev string:x118>" 0x5200
 # namespace_7c0074b5::function_9562e9c1@60
@@ -42,3 +44,34 @@ STRING "<dev string:x9a>" 0x4fbc
 STRING "<dev string:xb8>" 0x509c
 # namespace_7c0074b5::function_9562e9c1@30
 STRING "<dev string:xd5>" 0x51e8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_7c0074b5::__main__@5c
+DEVBLOCK 0xbc4
+# namespace_7c0074b5::function_7d6c1805@82
+DEVBLOCK 0x150a
+# namespace_7c0074b5::function_d291665f@b2
+DEVBLOCK 0x3b2a
+# namespace_7c0074b5::function_d291665f@12e
+DEVBLOCK 0x3ba6
+# namespace_7c0074b5::function_d291665f@1ae
+DEVBLOCK 0x3c26
+# namespace_7c0074b5::function_d89318a3@12
+DEVBLOCK 0x4ec2
+# namespace_7c0074b5::function_9562e9c1@2
+DEVBLOCK 0x51ba
+# namespace_7c0074b5::function_cd9397ea@a
+DEVBLOCK 0x528a
+# namespace_7c0074b5::function_efd25c9@3a
+DEVBLOCK 0x540a
+# namespace_7c0074b5::function_c3861242@22
+DEVBLOCK 0x5782
+# namespace_7c0074b5::function_63a03d53@22
+DEVBLOCK 0x582a
+# namespace_7c0074b5::function_cb9f06fb@22
+DEVBLOCK 0x5932
+# namespace_7c0074b5::function_af78dff9@22
+DEVBLOCK 0x5b1a
+# namespace_7c0074b5::function_cac69c4c@22
+DEVBLOCK 0x5e9a

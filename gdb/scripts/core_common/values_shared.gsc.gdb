@@ -1,7 +1,9 @@
 NAME scripts\core_common\values_shared.gsc
 VERSION 0
 CHECKSUM 0xf580e3e6
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # val::debug_values@c0
 STRING "<dev string:x111>" 0x1ac0
 # val::debug_values@108 val::debug_values@134 val::display_value@b8 val::display_value@cc val::display_value@dc val::display_value@e4 val::display_value@148 val::display_value@158
@@ -50,3 +52,26 @@ STRING "<dev string:xe5>" 0x19bc
 STRING "<dev string:xf9>" 0x19cc
 # val::debug_values@a4 val::debug_values@e8
 STRING "<dev string:xfe>" 0x1aa4 0x1ae8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# val::__init__@57a
+DEVBLOCK 0x7c2
+# val::register@ac
+DEVBLOCK 0x984
+# val::assert_registered@12
+DEVBLOCK 0xa52
+# val::assert_registered@5c
+DEVBLOCK 0xa9c
+# val::validate@32
+DEVBLOCK 0x17b2
+# val::validate@7c
+DEVBLOCK 0x17fc
+# val::_validate_value@3a
+DEVBLOCK 0x18c2
+# val::_validate_value@104
+DEVBLOCK 0x198c
+# val::debug_values@9a
+DEVBLOCK 0x1a9a
+# val::display_value@42
+DEVBLOCK 0x1ed2

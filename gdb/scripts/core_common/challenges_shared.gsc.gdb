@@ -1,7 +1,9 @@
 NAME scripts\core_common\challenges_shared.gsc
 VERSION 0
 CHECKSUM 0x80e27ca8
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # challenges::function_90185171@688
 STRING "<dev string:x11a>" 0x2a20
 # challenges::function_90185171@69c
@@ -42,3 +44,46 @@ STRING "<dev string:x9b>" 0x26dc
 STRING "<dev string:xb2>" 0x28e0
 # challenges::function_90185171@678
 STRING "<dev string:xdf>" 0x2a10
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# challenges::canprocesschallenges@2
+DEVBLOCK 0x9ba
+# challenges::perkkills@34a
+DEVBLOCK 0x1202
+# challenges::perkkills@372
+DEVBLOCK 0x122a
+# challenges::perkkills@40c
+DEVBLOCK 0x12c4
+# challenges::perkkills@43a
+DEVBLOCK 0x12f2
+# challenges::function_90185171@262
+DEVBLOCK 0x25fa
+# challenges::function_90185171@292
+DEVBLOCK 0x262a
+# challenges::function_90185171@2ca
+DEVBLOCK 0x2662
+# challenges::function_90185171@302
+DEVBLOCK 0x269a
+# challenges::function_90185171@33a
+DEVBLOCK 0x26d2
+# challenges::function_90185171@3f2
+DEVBLOCK 0x278a
+# challenges::function_90185171@534
+DEVBLOCK 0x28cc
+# challenges::function_90185171@664
+DEVBLOCK 0x29fc
+# challenges::function_90185171@7e6
+DEVBLOCK 0x2b7e
+# challenges::function_90185171@874
+DEVBLOCK 0x2c0c
+# challenges::function_90185171@8fc
+DEVBLOCK 0x2c94
+# challenges::function_90185171@932
+DEVBLOCK 0x2cca
+# challenges::function_90185171@c78
+DEVBLOCK 0x3010
+# challenges::function_90185171@da4
+DEVBLOCK 0x313c
+# challenges::playerkilled@14a
+DEVBLOCK 0x68c2

@@ -1,7 +1,9 @@
 NAME scripts\core_common\activecamo_shared.gsc
 VERSION 0
 CHECKSUM 0xff29e979
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # activecamo::function_896ac347@204
 STRING "<dev string:x144>" 0x26dc
 # activecamo::function_896ac347@268
@@ -94,3 +96,88 @@ STRING "<dev string:xb1>" 0xdfc
 STRING "<dev string:xcb>" 0x25bc
 # activecamo::function_896ac347@128
 STRING "<dev string:xff>" 0x2600
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# activecamo::__init__@42
+DEVBLOCK 0x172
+# activecamo::init_activecamo@114
+DEVBLOCK 0x66c
+# activecamo::function_b008f9e9@32
+DEVBLOCK 0x87a
+# activecamo::function_3aa81e0e@2f4
+DEVBLOCK 0xc5c
+# activecamo::function_3aa81e0e@5f4
+DEVBLOCK 0xf5c
+# activecamo::init_stages@214
+DEVBLOCK 0x139c
+# activecamo::function_896ac347@d6
+DEVBLOCK 0x25ae
+# activecamo::function_896ac347@da
+DEVBLOCK 0x25b2
+# activecamo::function_896ac347@11c
+DEVBLOCK 0x25f4
+# activecamo::function_896ac347@120
+DEVBLOCK 0x25f8
+# activecamo::function_896ac347@1f6
+DEVBLOCK 0x26ce
+# activecamo::function_896ac347@1fa
+DEVBLOCK 0x26d2
+# activecamo::function_896ac347@25c
+DEVBLOCK 0x2734
+# activecamo::function_896ac347@260
+DEVBLOCK 0x2738
+# activecamo::set_stage_activecamo@ca
+DEVBLOCK 0x3aea
+# activecamo::debug_error@1a
+DEVBLOCK 0x3f0a
+# activecamo::debug_print@1a
+DEVBLOCK 0x3ffa
+# activecamo::function_265047c1@a
+DEVBLOCK 0x40da
+# activecamo::on_player_connect@2
+DEVBLOCK 0x4182
+# activecamo::on_player_disconnect@2
+DEVBLOCK 0x41c2
+# activecamo::devgui_player_connect@1a
+DEVBLOCK 0x421a
+# activecamo::devgui_player_disconnect@12
+DEVBLOCK 0x42e2
+# activecamo::devgui_add_player_commands@2a
+DEVBLOCK 0x437a
+# activecamo::function_1039ce5c@12
+DEVBLOCK 0x4432
+# activecamo::function_f1d01720@22
+DEVBLOCK 0x4492
+# activecamo::function_85cb822d@52
+DEVBLOCK 0x45ca
+# activecamo::function_de358bfd@4a
+DEVBLOCK 0x46fa
+# activecamo::function_50d79d31@4a
+DEVBLOCK 0x484a
+# activecamo::devgui_think@12
+DEVBLOCK 0x497a
+# activecamo::function_cc5baf7f@42
+DEVBLOCK 0x4d02
+# activecamo::function_cc486b05@12
+DEVBLOCK 0x4e2a
+# activecamo::function_779a9561@52
+DEVBLOCK 0x4ed2
+# activecamo::function_9c361e56@1a
+DEVBLOCK 0x539a
+# activecamo::function_3ac4d286@12
+DEVBLOCK 0x5412
+# activecamo::function_633fbf17@32
+DEVBLOCK 0x548a
+# activecamo::function_58719455@a
+DEVBLOCK 0x563a
+# activecamo::function_3d928fb4@1a
+DEVBLOCK 0x5692
+# activecamo::function_9fc8a57c@2a
+DEVBLOCK 0x57aa
+# activecamo::function_dc6014e8@1a
+DEVBLOCK 0x586a
+# activecamo::function_382462ff@a
+DEVBLOCK 0x5942
+# activecamo::function_14a9eb5b@1a
+DEVBLOCK 0x599a

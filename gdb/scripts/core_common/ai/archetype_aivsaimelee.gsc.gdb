@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\archetype_aivsaimelee.gsc
 VERSION 0
 CHECKSUM 0xda88a951
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # archetype_aivsaimelee::hasaivsaienemy@330
 STRING "<dev string:x135>" 0xca8
 # archetype_aivsaimelee::hasaivsaienemy@390
@@ -78,3 +80,112 @@ STRING "<dev string:x93>" 0xafc
 STRING "<dev string:xcc>" 0xb7c
 # archetype_aivsaimelee::hasaivsaienemy@2c4
 STRING "<dev string:xfa>" 0xc3c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@2
+DEVBLOCK 0x40a
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@6a
+DEVBLOCK 0x472
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@d2
+DEVBLOCK 0x4da
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@13a
+DEVBLOCK 0x542
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@1a2
+DEVBLOCK 0x5aa
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@20a
+DEVBLOCK 0x612
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@272
+DEVBLOCK 0x67a
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@2da
+DEVBLOCK 0x6e2
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@32a
+DEVBLOCK 0x732
+# archetype_aivsaimelee::registeraivsaimeleebehaviorfunctions@362
+DEVBLOCK 0x76a
+# archetype_aivsaimelee::hasaivsaienemy@7c
+DEVBLOCK 0x9f4
+# archetype_aivsaimelee::hasaivsaienemy@ce
+DEVBLOCK 0xa46
+# archetype_aivsaimelee::hasaivsaienemy@14e
+DEVBLOCK 0xac6
+# archetype_aivsaimelee::hasaivsaienemy@1d0
+DEVBLOCK 0xb48
+# archetype_aivsaimelee::hasaivsaienemy@290
+DEVBLOCK 0xc08
+# archetype_aivsaimelee::hasaivsaienemy@2fa
+DEVBLOCK 0xc72
+# archetype_aivsaimelee::hasaivsaienemy@35c
+DEVBLOCK 0xcd4
+# archetype_aivsaimelee::hasaivsaienemy@3c6
+DEVBLOCK 0xd3e
+# archetype_aivsaimelee::hasaivsaienemy@436
+DEVBLOCK 0xdae
+# archetype_aivsaimelee::hasaivsaienemy@4c8
+DEVBLOCK 0xe40
+# archetype_aivsaimelee::hasaivsaienemy@558
+DEVBLOCK 0xed0
+# archetype_aivsaimelee::hasaivsaienemy@5e8
+DEVBLOCK 0xf60
+# archetype_aivsaimelee::hasaivsaienemy@660
+DEVBLOCK 0xfd8
+# archetype_aivsaimelee::hasaivsaienemy@766
+DEVBLOCK 0x10de
+# archetype_aivsaimelee::hasaivsaienemy@7cc
+DEVBLOCK 0x1144
+# archetype_aivsaimelee::hasaivsaienemy@878
+DEVBLOCK 0x11f0
+# archetype_aivsaimelee::hasaivsaienemy@8dc
+DEVBLOCK 0x1254
+# archetype_aivsaimelee::hasaivsaienemy@96c
+DEVBLOCK 0x12e4
+# archetype_aivsaimelee::hasaivsaienemy@a3c
+DEVBLOCK 0x13b4
+# archetype_aivsaimelee::hasaivsaienemy@acc
+DEVBLOCK 0x1444
+# archetype_aivsaimelee::hascloseaivsaienemy@4c
+DEVBLOCK 0x15c4
+# archetype_aivsaimelee::hascloseaivsaienemy@f4
+DEVBLOCK 0x166c
+# archetype_aivsaimelee::hascloseaivsaienemy@328
+DEVBLOCK 0x18a0
+# archetype_aivsaimelee::chooseaivsaimeleeanimations@c4
+DEVBLOCK 0x19fc
+# archetype_aivsaimelee::chooseaivsaimeleeanimations@194
+DEVBLOCK 0x1acc
+# archetype_aivsaimelee::chooseaivsaimeleeanimations@270
+DEVBLOCK 0x1ba8
+# archetype_aivsaimelee::playscriptedmeleeanimations@1e
+DEVBLOCK 0x2166
+# archetype_aivsaimelee::playscriptedmeleeanimations@7e
+DEVBLOCK 0x21c6
+# archetype_aivsaimelee::playscriptedmeleeanimations@f6
+DEVBLOCK 0x223e
+# archetype_aivsaimelee::playscriptedmeleeanimations@252
+DEVBLOCK 0x239a
+# archetype_aivsaimelee::playscriptedmeleeanimations@3e2
+DEVBLOCK 0x252a
+# archetype_aivsaimelee::chooseaivsaimeleefrontflipanimations@12
+DEVBLOCK 0x2782
+# archetype_aivsaimelee::chooseaivsaimeleefrontflipanimations@5a
+DEVBLOCK 0x27ca
+# archetype_aivsaimelee::chooseaivsaimeleefrontwrestleanimations@12
+DEVBLOCK 0x28ba
+# archetype_aivsaimelee::chooseaivsaimeleefrontwrestleanimations@5a
+DEVBLOCK 0x2902
+# archetype_aivsaimelee::chooseaivsaimeleebackanimations@12
+DEVBLOCK 0x29ea
+# archetype_aivsaimelee::chooseaivsaimeleebackanimations@5a
+DEVBLOCK 0x2a32
+# archetype_aivsaimelee::chooseaivsaimeleerightanimations@12
+DEVBLOCK 0x2b22
+# archetype_aivsaimelee::chooseaivsaimeleerightanimations@5a
+DEVBLOCK 0x2b6a
+# archetype_aivsaimelee::chooseaivsaimeleeleftanimations@12
+DEVBLOCK 0x2c5a
+# archetype_aivsaimelee::chooseaivsaimeleeleftanimations@5a
+DEVBLOCK 0x2ca2
+# archetype_aivsaimelee::debug_chosenmeleeanimations@a
+DEVBLOCK 0x2d8a
+# archetype_aivsaimelee::processinterrupteddeath@1e
+DEVBLOCK 0x2f36

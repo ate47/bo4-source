@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\systems\ai_interface.gsc
 VERSION 0
 CHECKSUM 0xee200868
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ai_interface::_checkvalue@288
 STRING "<dev string:x116>" 0x380
 # ai_interface::_checkvalue@2a4
@@ -72,3 +74,92 @@ STRING "<dev string:xeb>" 0x2b8
 STRING "<dev string:xef>" 0x2c8
 # ai_interface::_checkvalue@23c
 STRING "<dev string:xf4>" 0x334
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ai_interface::main@2
+DEVBLOCK 0xba
+# ai_interface::_checkvalue@3a
+DEVBLOCK 0x132
+# ai_interface::_checkvalue@92
+DEVBLOCK 0x18a
+# ai_interface::_checkvalue@132
+DEVBLOCK 0x22a
+# ai_interface::_checkvalue@19a
+DEVBLOCK 0x292
+# ai_interface::_checkvalue@226
+DEVBLOCK 0x31e
+# ai_interface::_checkvalue@27e
+DEVBLOCK 0x376
+# ai_interface::_checkprerequisites@12
+DEVBLOCK 0x442
+# ai_interface::_checkprerequisites@3a
+DEVBLOCK 0x46a
+# ai_interface::_checkprerequisites@82
+DEVBLOCK 0x4b2
+# ai_interface::_checkprerequisites@fa
+DEVBLOCK 0x52a
+# ai_interface::_checkprerequisites@12a
+DEVBLOCK 0x55a
+# ai_interface::_checkprerequisites@18a
+DEVBLOCK 0x5ba
+# ai_interface::_checkprerequisites@1c2
+DEVBLOCK 0x5f2
+# ai_interface::_checkprerequisites@22a
+DEVBLOCK 0x65a
+# ai_interface::_checkprerequisites@2a2
+DEVBLOCK 0x6d2
+# ai_interface::_checkregistrationprerequisites@1a
+DEVBLOCK 0x76a
+# ai_interface::_checkregistrationprerequisites@1e
+DEVBLOCK 0x76e
+# ai_interface::_checkregistrationprerequisites@52
+DEVBLOCK 0x7a2
+# ai_interface::_checkregistrationprerequisites@82
+DEVBLOCK 0x7d2
+# ai::getaiattribute@12
+DEVBLOCK 0x8ca
+# ai::registerentityinterface@22
+DEVBLOCK 0xa02
+# ai::registerentityinterface@5a
+DEVBLOCK 0xa3a
+# ai::registerentityinterface@5e
+DEVBLOCK 0xa3e
+# ai::registerentityinterface@15c
+DEVBLOCK 0xb3c
+# ai::registermatchedinterface@2a
+DEVBLOCK 0xb92
+# ai::registermatchedinterface@4a
+DEVBLOCK 0xbb2
+# ai::registermatchedinterface@a2
+DEVBLOCK 0xc0a
+# ai::registermatchedinterface@a6
+DEVBLOCK 0xc0e
+# ai::registermatchedinterface@1d4
+DEVBLOCK 0xd3c
+# ai::registernumericinterface@32
+DEVBLOCK 0xd9a
+# ai::registernumericinterface@52
+DEVBLOCK 0xdba
+# ai::registernumericinterface@aa
+DEVBLOCK 0xe12
+# ai::registernumericinterface@102
+DEVBLOCK 0xe6a
+# ai::registernumericinterface@14a
+DEVBLOCK 0xeb2
+# ai::registernumericinterface@1ba
+DEVBLOCK 0xf22
+# ai::registernumericinterface@1be
+DEVBLOCK 0xf26
+# ai::registernumericinterface@31c
+DEVBLOCK 0x1084
+# ai::registervectorinterface@22
+DEVBLOCK 0x10d2
+# ai::registervectorinterface@5a
+DEVBLOCK 0x110a
+# ai::registervectorinterface@5e
+DEVBLOCK 0x110e
+# ai::registervectorinterface@15c
+DEVBLOCK 0x120c
+# ai::setaiattribute@2a
+DEVBLOCK 0x1262

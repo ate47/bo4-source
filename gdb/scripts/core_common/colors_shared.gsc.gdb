@@ -1,7 +1,9 @@
 NAME scripts\core_common\colors_shared.gsc
 VERSION 0
 CHECKSUM 0xee1a8035
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # colors::goto_current_colorindex@1f4 colors::get_best_available_colored_node@54 colors::get_best_available_new_colored_node@54
 STRING "<dev string:x10c>" 0x20ac 0x3c2c 0x3d94
 # colors::get_colorcodes_from_trigger@170
@@ -86,3 +88,90 @@ STRING "<dev string:xb8>" 0x1de8
 STRING "<dev string:xc1>" 0x2078
 # colors::goto_current_colorindex@1d0 colors::goto_current_colorindex@204
 STRING "<dev string:xd2>" 0x2088 0x20bc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# colors::__init__@3a4
+DEVBLOCK 0x564
+# colors::__init__@bfa
+DEVBLOCK 0xdba
+# colors::debugdvars@2
+DEVBLOCK 0xf2a
+# colors::get_team_substr@2
+DEVBLOCK 0xf8a
+# colors::try_to_draw_line_to_node@a
+DEVBLOCK 0x1022
+# colors::_get_debug_color@a
+DEVBLOCK 0x114a
+# colors::debug_colornodes@3a
+DEVBLOCK 0x132a
+# colors::draw_colornodes@4a
+DEVBLOCK 0x15fa
+# colors::debugcolorfriendlies@2
+DEVBLOCK 0x18aa
+# colors::debugcolorfriendliestogglewatch@12
+DEVBLOCK 0x192a
+# colors::get_script_palette@a
+DEVBLOCK 0x1a12
+# colors::draw_color_friendlies@6a
+DEVBLOCK 0x1b52
+# colors::goto_current_colorindex@19e
+DEVBLOCK 0x2056
+# colors::get_colorcodes_from_trigger@166
+DEVBLOCK 0x22f6
+# colors::activate_color_trigger_internal@1e6
+DEVBLOCK 0x2906
+# colors::activate_color_trigger_internal@1ea
+DEVBLOCK 0x290a
+# colors::issue_color_order_to_ai@a4
+DEVBLOCK 0x31d4
+# colors::issue_color_order_to_ai@196
+DEVBLOCK 0x32c6
+# colors::color_node_finds_user_for_colorcode@3e
+DEVBLOCK 0x35e6
+# colors::process_color_order_to_ai@164
+DEVBLOCK 0x3b1c
+# colors::get_best_available_colored_node@1a
+DEVBLOCK 0x3bf2
+# colors::get_best_available_colored_node@4a
+DEVBLOCK 0x3c22
+# colors::get_best_available_colored_node@c4
+DEVBLOCK 0x3c9c
+# colors::get_best_available_new_colored_node@1a
+DEVBLOCK 0x3d5a
+# colors::get_best_available_new_colored_node@4a
+DEVBLOCK 0x3d8a
+# colors::get_best_available_new_colored_node@c4
+DEVBLOCK 0x3e04
+# colors::decrementcolorusers@24
+DEVBLOCK 0x40cc
+# colors::add_volume_to_global_arrays@58
+DEVBLOCK 0x41d8
+# colors::left_color_node@2
+DEVBLOCK 0x4472
+# colors::colornode_replace_on_death@58
+DEVBLOCK 0x4a50
+# colors::colornode_replace_on_death@d4
+DEVBLOCK 0x4acc
+# colors::colornode_replace_on_death@346
+DEVBLOCK 0x4d3e
+# colors::get_color_spawner@9c
+DEVBLOCK 0x511c
+# colors::set_force_color@2c
+DEVBLOCK 0x5494
+# colors::set_force_color@ac
+DEVBLOCK 0x5514
+# colors::shortencolor@a
+DEVBLOCK 0x579a
+# colors::new_color_being_set@bc
+DEVBLOCK 0x58f4
+# colors::update_debug_friendlycolor_on_death@60
+DEVBLOCK 0x5978
+# colors::disable@40
+DEVBLOCK 0x5d70
+# colors::disable@cc
+DEVBLOCK 0x5dfc
+# colors::insure_player_does_not_set_forcecolor_twice_in_one_frame@2
+DEVBLOCK 0x5e9a
+# colors::insure_player_does_not_set_forcecolor_twice_in_one_frame@6
+DEVBLOCK 0x5e9e

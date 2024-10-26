@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_quick_spawning.gsc
 VERSION 0
 CHECKSUM 0xea4b2947
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_quick_spawning::function_af31614c@3a0
 STRING "<dev string:x101>" 0x1e60
 # zm_quick_spawning::function_af31614c@3ac
@@ -40,3 +42,36 @@ STRING "<dev string:xcb>" 0x1c74
 STRING "<dev string:xd3>" 0x1cb4
 # zm_quick_spawning::function_af31614c@224
 STRING "<dev string:xed>" 0x1ce4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_quick_spawning::__main__@3c
+DEVBLOCK 0x174
+# zm_quick_spawning::function_367e3573@fc
+DEVBLOCK 0x724
+# zm_quick_spawning::function_765cb1de@46a
+DEVBLOCK 0xee2
+# zm_quick_spawning::function_ba3ebac4@2
+DEVBLOCK 0x15b2
+# zm_quick_spawning::function_cd00ea8@a
+DEVBLOCK 0x1642
+# zm_quick_spawning::function_1dbfb733@2a
+DEVBLOCK 0x172a
+# zm_quick_spawning::create_hudelem@1a
+DEVBLOCK 0x189a
+# zm_quick_spawning::function_af42554f@a
+DEVBLOCK 0x1952
+# zm_quick_spawning::function_bc774350@a
+DEVBLOCK 0x19ca
+# zm_quick_spawning::function_766c006e@1a
+DEVBLOCK 0x1a1a
+# zm_quick_spawning::function_af31614c@da
+DEVBLOCK 0x1b9a
+# zm_quick_spawning::function_12d4cf28@2
+DEVBLOCK 0x234a
+# zm_quick_spawning::function_1dfb06de@a
+DEVBLOCK 0x2372
+# zm_quick_spawning::function_f34e4a6b@a
+DEVBLOCK 0x23aa
+# zm_quick_spawning::function_497aad8f@5a
+DEVBLOCK 0x2472

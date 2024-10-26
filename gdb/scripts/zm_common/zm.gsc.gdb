@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm.gsc
 VERSION 0
 CHECKSUM 0xd536b0e2
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm::actor_damage_override@75c
 STRING "<dev string:x106>" 0x6634
 # zm::actor_damage_override@76c
@@ -38,3 +40,32 @@ STRING "<dev string:xaf>" 0x2ed4
 STRING "<dev string:xc4>" 0x2ec4
 # zm::actor_damage_override@748
 STRING "<dev string:xed>" 0x6620
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm::init@91a
+DEVBLOCK 0x207a
+# zm::cheat_enabled@32
+DEVBLOCK 0x2142
+# zm::onallplayersready@ce
+DEVBLOCK 0x23ce
+# zm::onallplayersready@1a8
+DEVBLOCK 0x24a8
+# zm::onallplayersready@21a
+DEVBLOCK 0x251a
+# zm::onallplayersready@3ee
+DEVBLOCK 0x26ee
+# zm::post_all_players_connected@7c
+DEVBLOCK 0x2eac
+# zm::actor_damage_override@71c
+DEVBLOCK 0x65f4
+# zm::end_game@fa
+DEVBLOCK 0x7f4a
+# zm::end_game@c04
+DEVBLOCK 0x8a54
+# zm::end_game@eec
+DEVBLOCK 0x8d3c
+# zm::fade_up_over_time@a
+DEVBLOCK 0x96aa
+# zm::printhashids@6a
+DEVBLOCK 0xa342

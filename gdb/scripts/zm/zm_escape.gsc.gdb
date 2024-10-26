@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_escape.gsc
 VERSION 0
 CHECKSUM 0xfbe1936a
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_escape::function_acb5b0ec@a0
 STRING "<dev string:x151>" 0x6328
 # zm_escape::function_acb5b0ec@b8
@@ -50,3 +52,34 @@ STRING "<dev string:x4ba>" 0x6a1c
 STRING "<dev string:x89>" 0x62f8
 # zm_escape::function_acb5b0ec@88
 STRING "<dev string:xf2>" 0x6310
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_escape::main@c3a
+DEVBLOCK 0x21a2
+# zm_escape::function_246a0760@1c2
+DEVBLOCK 0x23fa
+# zm_escape::function_acb5b0ec@2
+DEVBLOCK 0x628a
+# zm_escape::function_91d91b76@a
+DEVBLOCK 0x63e2
+# zm_escape::function_71a6c3ea@a
+DEVBLOCK 0x65c2
+# zm_escape::function_2b57b5d6@62
+DEVBLOCK 0x66b2
+# zm_escape::function_2b57b5d6@13e
+DEVBLOCK 0x678e
+# zm_escape::function_2b57b5d6@18e
+DEVBLOCK 0x67de
+# zm_escape::function_4a3c0c1c@3a
+DEVBLOCK 0x687a
+# zm_escape::function_4a3c0c1c@ba
+DEVBLOCK 0x68fa
+# zm_escape::function_4b511c76@22
+DEVBLOCK 0x69aa
+# zm_escape::open_sesame_watcher@2
+DEVBLOCK 0x6a82
+# zm_escape::function_215297db@2
+DEVBLOCK 0x6ac2
+# zm_escape::function_6b733771@2
+DEVBLOCK 0x6b22

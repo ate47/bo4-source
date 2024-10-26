@@ -1,7 +1,9 @@
 NAME scripts\core_common\scene_debug_shared.gsc
 VERSION 0
 CHECKSUM 0xa4649ad7
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # scene::toggle_scene_menu@b0 scene::function_8ee42bf@64 scene::display_scene_menu@b8 scene::move_to_scene@12c
 STRING "<dev string:x119>" 0xa98 0xca4 0xed8 0x3034
 # scene::toggle_scene_menu@d4
@@ -144,3 +146,62 @@ STRING "<dev string:xba>" 0x78c
 STRING "<dev string:xc5>" 0x930
 # scene::run_scene_tests@6b4
 STRING "<dev string:xfa>" 0x94c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# scene::__init__system__@2
+DEVBLOCK 0xaa
+# scene::function_c3c9d0e5@2
+DEVBLOCK 0xf2
+# scene::run_scene_tests@4a
+DEVBLOCK 0x2e2
+# scene::capture_scene@12
+DEVBLOCK 0x98a
+# scene::toggle_scene_menu@12
+DEVBLOCK 0x9fa
+# scene::function_8ee42bf@12
+DEVBLOCK 0xc52
+# scene::function_70042fe2@a
+DEVBLOCK 0xd32
+# scene::function_1f93be7b@2
+DEVBLOCK 0xda2
+# scene::display_scene_menu@aa
+DEVBLOCK 0xeca
+# scene::function_c0f30783@a
+DEVBLOCK 0x1e72
+# scene::function_606f1f21@2
+DEVBLOCK 0x1efa
+# scene::function_940c526f@2
+DEVBLOCK 0x1f8a
+# scene::scene_list_settext@2a
+DEVBLOCK 0x1ff2
+# scene::_scene_list_settext@5a
+DEVBLOCK 0x20aa
+# scene::is_scene_active@a
+DEVBLOCK 0x24aa
+# scene::function_3bafd088@a
+DEVBLOCK 0x250a
+# scene::function_3bafd088@e
+DEVBLOCK 0x250e
+# scene::function_d2785094@22
+DEVBLOCK 0x26da
+# scene::function_d2785094@26
+DEVBLOCK 0x26de
+# scene::test_play@2a
+DEVBLOCK 0x2862
+# scene::debug_display_all@32
+DEVBLOCK 0x29aa
+# scene::debug_display@82
+DEVBLOCK 0x2b22
+# scene::print_scene_debug@32
+DEVBLOCK 0x2dda
+# scene::debug_display_origin@2
+DEVBLOCK 0x2eda
+# scene::move_to_scene@2a
+DEVBLOCK 0x2f32
+# scene::set_origin@a
+DEVBLOCK 0x3172
+# scene::toggle_postfx_igc_loop@2
+DEVBLOCK 0x31da
+# scene::function_42edf155@52
+DEVBLOCK 0x32b2

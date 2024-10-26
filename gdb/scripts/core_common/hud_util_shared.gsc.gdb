@@ -1,7 +1,9 @@
 NAME scripts\core_common\hud_util_shared.gsc
 VERSION 0
 CHECKSUM 0x4f93f28
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # hud::updatebarscale@c8
 STRING "<dev string:x102>" 0xe38
 # hud::updatebarscale@120 hud::updatebarscale@1a8
@@ -44,3 +46,48 @@ STRING "<dev string:xda>" 0xd40 0x13d8 0x1718 0x17e8 0x1998
 STRING "<dev string:xe0>" 0xe1c
 # hud::updatebarscale@b8
 STRING "<dev string:xfb>" 0xe28
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# hud::setparent@a
+DEVBLOCK 0x72
+# hud::getparent@2
+DEVBLOCK 0x152
+# hud::addchild@a
+DEVBLOCK 0x172
+# hud::removechild@a
+DEVBLOCK 0x1ba
+# hud::setpoint@62
+DEVBLOCK 0x2da
+# hud::setpointbar@22
+DEVBLOCK 0xb7a
+# hud::updatebar@12
+DEVBLOCK 0xd32
+# hud::updatebarscale@1a
+DEVBLOCK 0xd8a
+# hud::updatebarscale@a2
+DEVBLOCK 0xe12
+# hud::updatebarscale@116
+DEVBLOCK 0xe86
+# hud::updatebarscale@1a0
+DEVBLOCK 0xf10
+# hud::function_665f547d@1a
+DEVBLOCK 0xfd2
+# hud::function_f5a689d@1a
+DEVBLOCK 0x10f2
+# hud::function_7a0dd8a9@32
+DEVBLOCK 0x122a
+# hud::function_5037fb7f@a
+DEVBLOCK 0x1562
+# hud::function_48badcf4@a
+DEVBLOCK 0x161a
+# hud::hideelem@2
+DEVBLOCK 0x16d2
+# hud::showelem@2
+DEVBLOCK 0x17c2
+# hud::destroyelem@12
+DEVBLOCK 0x18ea
+# hud::updatechildren@12
+DEVBLOCK 0x1a22
+# hud::showperks@2
+DEVBLOCK 0x1aaa

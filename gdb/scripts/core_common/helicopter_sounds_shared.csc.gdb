@@ -1,7 +1,9 @@
 NAME scripts\core_common\helicopter_sounds_shared.csc
 VERSION 0
 CHECKSUM 0x3b1e2b91
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # helicopter_sounds::init_heli_sound_values@268
 STRING "<dev string:x112>" 0xb30
 # helicopter_sounds::init_heli_sound_values@288
@@ -86,3 +88,36 @@ STRING "<dev string:xb3>" 0xad0
 STRING "<dev string:xd0>" 0xaf0
 # helicopter_sounds::init_heli_sound_values@248
 STRING "<dev string:xed>" 0xb10
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# helicopter_sounds::__init__@552
+DEVBLOCK 0x7aa
+# helicopter_sounds::vehicle_is_firing_function@3a
+DEVBLOCK 0x86a
+# helicopter_sounds::init_heli_sound_values@174
+DEVBLOCK 0xa3c
+# helicopter_sounds::command_parser@3a
+DEVBLOCK 0xbb2
+# helicopter_sounds::start_helicopter_sounds@94
+DEVBLOCK 0x1e54
+# helicopter_sounds::start_helicopter_sounds@16a
+DEVBLOCK 0x1f2a
+# helicopter_sounds::start_helicopter_sounds@1c6
+DEVBLOCK 0x1f86
+# helicopter_sounds::heli_sound_play@5a
+DEVBLOCK 0x20aa
+# helicopter_sounds::heli_idle_run_transition@136
+DEVBLOCK 0x25fe
+# helicopter_sounds::heli_idle_run_transition@3a2
+DEVBLOCK 0x286a
+# helicopter_sounds::terrain_trace_brass@20c
+DEVBLOCK 0x2b44
+# helicopter_sounds::terrain_trace@1b4
+DEVBLOCK 0x2e7c
+# helicopter_sounds::aircraft_dustkick@62
+DEVBLOCK 0x302a
+# helicopter_sounds::aircraft_dustkick@22c
+DEVBLOCK 0x31f4
+# helicopter_sounds::aircraft_dustkick@320
+DEVBLOCK 0x32e8

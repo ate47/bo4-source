@@ -1,7 +1,9 @@
 NAME scripts\core_common\bots\bot.gsc
 VERSION 0
 CHECKSUM 0x5ee72f54
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # bot::devgui_bot_loop@17c bot::devgui_bot_loop@1c8 bot::add_bot_devgui_cmd@68 bot::add_bot_devgui_cmd@88
 STRING "<dev string:x126>" 0x3e94 0x3ee0 0x4a50 0x4a70
 # bot::devgui_bot_loop@18c
@@ -150,3 +152,60 @@ STRING "<dev string:xe9>" 0x3e6c
 STRING "<dev string:xee>" 0x3e7c
 # bot::devgui_bot_loop@170
 STRING "<dev string:xf2>" 0x3e88
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# bot::__init__@f2
+DEVBLOCK 0x39a
+# bot::on_player_connect@2e
+DEVBLOCK 0x119e
+# bot::on_player_spawned@26
+DEVBLOCK 0x1296
+# bot::on_player_disconnect@1e
+DEVBLOCK 0x1646
+# bot::function_c6e29bdf@2
+DEVBLOCK 0x1672
+# bot::function_3d575aa3@2
+DEVBLOCK 0x170a
+# bot::update_loop@1a
+DEVBLOCK 0x1762
+# bot::update_loop@1b4
+DEVBLOCK 0x18fc
+# bot::function_23c46f6e@13c
+DEVBLOCK 0x1de4
+# bot::function_678e7c0@3c
+DEVBLOCK 0x260c
+# bot::function_f0c35734@32
+DEVBLOCK 0x359a
+# bot::function_f0c35734@5a
+DEVBLOCK 0x35c2
+# bot::function_52947b70@3a
+DEVBLOCK 0x36ca
+# bot::function_52947b70@62
+DEVBLOCK 0x36f2
+# bot::function_e0aceb0c@4a
+DEVBLOCK 0x383a
+# bot::function_e0aceb0c@8c
+DEVBLOCK 0x387c
+# bot::function_e0aceb0c@fa
+DEVBLOCK 0x38ea
+# bot::devgui_bot_loop@6a
+DEVBLOCK 0x3d82
+# bot::add_bot_devgui_menu@12
+DEVBLOCK 0x455a
+# bot::add_bot_devgui_cmd@32
+DEVBLOCK 0x4a1a
+# bot::clear_bot_devgui_menu@12
+DEVBLOCK 0x4af2
+# bot::function_263ca697@32
+DEVBLOCK 0x6472
+# bot::should_record@1a
+DEVBLOCK 0x66e2
+# bot::record_text@1a
+DEVBLOCK 0x67aa
+# bot::function_d45e8714@22
+DEVBLOCK 0x6822
+# bot::function_1744d303@42
+DEVBLOCK 0x6a62
+# bot::bot_joinleave_loop@1a
+DEVBLOCK 0x6c02

@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_white_private_mannequin.gsc
 VERSION 0
 CHECKSUM 0x28eb7ae7
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_white_private_mannequin::reset_codes@c
 STRING "<dev string:x11b>" 0x12ec
 # zm_white_private_mannequin::function_eaa63f5b@2c
@@ -22,3 +24,24 @@ STRING "<dev string:xa8>" 0xfec
 STRING "<dev string:xce>" 0x10fc
 # zm_white_private_mannequin::timer_countdown@5c
 STRING "<dev string:xf6>" 0x129c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_white_private_mannequin::private_mannequin_step1_setup@5a
+DEVBLOCK 0xde2
+# zm_white_private_mannequin::private_mannequin_step1_setup@14c
+DEVBLOCK 0xed4
+# zm_white_private_mannequin::private_mannequin_step1_setup@25c
+DEVBLOCK 0xfe4
+# zm_white_private_mannequin::private_mannequin_step1_setup@36c
+DEVBLOCK 0x10f4
+# zm_white_private_mannequin::timer_countdown@52
+DEVBLOCK 0x1292
+# zm_white_private_mannequin::reset_codes@2
+DEVBLOCK 0x12e2
+# zm_white_private_mannequin::function_eaa63f5b@22
+DEVBLOCK 0x1d92
+# zm_white_private_mannequin::function_eaa63f5b@142
+DEVBLOCK 0x1eb2
+# zm_white_private_mannequin::function_88265619@c4
+DEVBLOCK 0x1fb4

@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_red_boss_battle.gsc
 VERSION 0
 CHECKSUM 0x7063dab5
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # red_boss_battle::init@cd0
 STRING "<dev string:x104>" 0x1578
 # red_boss_battle::init@ce8
@@ -110,3 +112,92 @@ STRING "<dev string:x711>" 0xad28
 STRING "<dev string:x71a>" 0xad34
 # red_boss_battle::init@cb8
 STRING "<dev string:x9c>" 0x1560
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# red_boss_battle::init@bd8
+DEVBLOCK 0x1480
+# red_boss_battle::function_3a2efd4e@24a
+DEVBLOCK 0x199a
+# red_boss_battle::function_756474bf@438
+DEVBLOCK 0x2b50
+# red_boss_battle::function_756474bf@6d2
+DEVBLOCK 0x2dea
+# red_boss_battle::function_b3df51ad@70
+DEVBLOCK 0x32f8
+# red_boss_battle::function_9e8c41f4@b2
+DEVBLOCK 0x3912
+# red_boss_battle::function_2858e671@23c
+DEVBLOCK 0x4004
+# red_boss_battle::function_12f4c281@3cc
+DEVBLOCK 0x449c
+# red_boss_battle::function_12f4c281@400
+DEVBLOCK 0x44d0
+# red_boss_battle::function_12f4c281@41c
+DEVBLOCK 0x44ec
+# red_boss_battle::function_12f4c281@462
+DEVBLOCK 0x4532
+# red_boss_battle::function_12f4c281@4a6
+DEVBLOCK 0x4576
+# red_boss_battle::function_12f4c281@4c0
+DEVBLOCK 0x4590
+# red_boss_battle::function_12f4c281@506
+DEVBLOCK 0x45d6
+# red_boss_battle::function_12f4c281@538
+DEVBLOCK 0x4608
+# red_boss_battle::function_12f4c281@554
+DEVBLOCK 0x4624
+# red_boss_battle::function_12f4c281@594
+DEVBLOCK 0x4664
+# red_boss_battle::function_12f4c281@5d4
+DEVBLOCK 0x46a4
+# red_boss_battle::function_12f4c281@5f0
+DEVBLOCK 0x46c0
+# red_boss_battle::function_12f4c281@60c
+DEVBLOCK 0x46dc
+# red_boss_battle::function_12f4c281@68c
+DEVBLOCK 0x475c
+# red_boss_battle::function_12f4c281@6b4
+DEVBLOCK 0x4784
+# red_boss_battle::function_26acf7ee@1e
+DEVBLOCK 0x4916
+# red_boss_battle::function_26acf7ee@144
+DEVBLOCK 0x4a3c
+# red_boss_battle::function_f6306dea@264
+DEVBLOCK 0x532c
+# red_boss_battle::function_1ce83bec@1a0
+DEVBLOCK 0x5858
+# red_boss_battle::function_21ef9bb7@de
+DEVBLOCK 0x607e
+# red_boss_battle::function_21ef9bb7@14c
+DEVBLOCK 0x60ec
+# red_boss_battle::function_21ef9bb7@34c
+DEVBLOCK 0x62ec
+# red_boss_battle::function_21ef9bb7@3b8
+DEVBLOCK 0x6358
+# red_boss_battle::function_d9802986@32e
+DEVBLOCK 0x672e
+# red_boss_battle::function_732c74f7@76
+DEVBLOCK 0x682e
+# red_boss_battle::function_290d42b8@80
+DEVBLOCK 0x7008
+# red_boss_battle::function_4a58a0@70
+DEVBLOCK 0x7230
+# red_boss_battle::function_4a58a0@372
+DEVBLOCK 0x7532
+# red_boss_battle::function_4a58a0@572
+DEVBLOCK 0x7732
+# red_boss_battle::function_54c795f6@3c
+DEVBLOCK 0x84a4
+# red_boss_battle::function_79611ef0@16a
+DEVBLOCK 0x86f2
+# red_boss_battle::function_c7a3202c@44
+DEVBLOCK 0x92d4
+# red_boss_battle::function_27486895@a
+DEVBLOCK 0xa8aa
+# red_boss_battle::function_d5a70078@12
+DEVBLOCK 0xaa1a
+# red_boss_battle::function_213d02bd@2
+DEVBLOCK 0xaaea
+# red_boss_battle::function_99f0123d@6a
+DEVBLOCK 0xabe2

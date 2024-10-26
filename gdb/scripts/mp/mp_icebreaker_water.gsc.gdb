@@ -1,7 +1,9 @@
 NAME scripts\mp\mp_icebreaker_water.gsc
 VERSION 0
 CHECKSUM 0xa7727ed1
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # mp_icebreaker_water::init_devgui@84
 STRING "<dev string:x123>" 0x9dc
 # mp_icebreaker_water::init_devgui@ac
@@ -28,3 +30,28 @@ STRING "<dev string:x8c>" 0x980 0x9a8 0x9d0 0x9f8
 STRING "<dev string:x9c>" 0x98c
 # mp_icebreaker_water::init_devgui@5c
 STRING "<dev string:xdf>" 0x9b4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# mp_icebreaker_water::__main__@2c
+DEVBLOCK 0x1cc
+# mp_icebreaker_water::on_trigger@20
+DEVBLOCK 0x2a8
+# mp_icebreaker_water::on_trigger@f8
+DEVBLOCK 0x380
+# mp_icebreaker_water::on_trigger@1a6
+DEVBLOCK 0x42e
+# mp_icebreaker_water::function_394e1244@90
+DEVBLOCK 0x668
+# mp_icebreaker_water::function_394e1244@f4
+DEVBLOCK 0x6cc
+# mp_icebreaker_water::function_394e1244@18e
+DEVBLOCK 0x766
+# mp_icebreaker_water::function_553ca6ce@8c
+DEVBLOCK 0x87c
+# mp_icebreaker_water::function_553ca6ce@ec
+DEVBLOCK 0x8dc
+# mp_icebreaker_water::init_devgui@a
+DEVBLOCK 0x962
+# mp_icebreaker_water::function_2d706436@22
+DEVBLOCK 0xa4a

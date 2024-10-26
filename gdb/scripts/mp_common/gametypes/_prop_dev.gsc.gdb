@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\_prop_dev.gsc
 VERSION 0
 CHECKSUM 0x1e6b1071
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # prop_dev::function_cb8ecc99@9c prop_dev::function_2b23b2b6@9c prop_dev::function_f2e19297@11c
 STRING "<dev string:x1005>" 0x4424 0x47dc 0x4bfc
 # prop_dev::function_cb8ecc99@a8 prop_dev::function_2b23b2b6@a8 prop_dev::function_f2e19297@128
@@ -400,3 +402,92 @@ STRING "<dev string:xfed>" 0x43d8 0x4790 0x4b60
 STRING "<dev string:xff5>" 0x43f4 0x47ac 0x4b7c
 # prop_dev::function_cb8ecc99@80 prop_dev::function_2b23b2b6@80 prop_dev::function_f2e19297@b0
 STRING "<dev string:xfff>" 0x4408 0x47c0 0x4b90
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# prop_dev::adddevguicommand@2a
+DEVBLOCK 0x12a
+# prop_dev::propdevgui@f2
+DEVBLOCK 0x292
+# prop_dev::function_ad983215@a
+DEVBLOCK 0x1a1a
+# prop_dev::function_fd3c3ed0@12
+DEVBLOCK 0x1b22
+# prop_dev::function_9cd2eb63@32
+DEVBLOCK 0x1c32
+# prop_dev::function_673195f3@22
+DEVBLOCK 0x1cb2
+# prop_dev::function_401f47cd@2
+DEVBLOCK 0x1e62
+# prop_dev::function_1e509052@2
+DEVBLOCK 0x1ff2
+# prop_dev::debugaxis@4a
+DEVBLOCK 0x20b2
+# prop_dev::function_c3c92269@2
+DEVBLOCK 0x21b2
+# prop_dev::function_4a5dac11@12
+DEVBLOCK 0x227a
+# prop_dev::function_92f23bcd@a
+DEVBLOCK 0x2422
+# prop_dev::function_ea8e45a8@12
+DEVBLOCK 0x249a
+# prop_dev::function_cdf89a29@a
+DEVBLOCK 0x258a
+# prop_dev::function_5ee4d3a8@12
+DEVBLOCK 0x2602
+# prop_dev::function_1eca597a@12
+DEVBLOCK 0x2682
+# prop_dev::function_75154360@4a
+DEVBLOCK 0x274a
+# prop_dev::function_c2ab2206@2
+DEVBLOCK 0x360a
+# prop_dev::function_8d3ffd86@2
+DEVBLOCK 0x368a
+# prop_dev::function_cc5afb75@2
+DEVBLOCK 0x387a
+# prop_dev::function_cbef3d63@a
+DEVBLOCK 0x3a72
+# prop_dev::function_a840713e@a
+DEVBLOCK 0x3aca
+# prop_dev::function_7a3672a6@a
+DEVBLOCK 0x3b1a
+# prop_dev::function_2dc5c497@1a
+DEVBLOCK 0x3b7a
+# prop_dev::function_8639a7b0@1a
+DEVBLOCK 0x3dea
+# prop_dev::function_62b9b9ac@52
+DEVBLOCK 0x3e8a
+# prop_dev::plaza_dom_point_neutral_b_secured@52
+DEVBLOCK 0x3fa2
+# prop_dev::function_79d57521@52
+DEVBLOCK 0x40ba
+# prop_dev::function_cb8ecc99@32
+DEVBLOCK 0x43ba
+# prop_dev::function_2b23b2b6@32
+DEVBLOCK 0x4772
+# prop_dev::function_f2e19297@62
+DEVBLOCK 0x4b42
+# prop_dev::function_77511c75@4a
+DEVBLOCK 0x576a
+# prop_dev::function_ad8cc361@22
+DEVBLOCK 0x5b12
+# prop_dev::function_34a7562e@3a
+DEVBLOCK 0x5c22
+# prop_dev::function_38964c72@22
+DEVBLOCK 0x5d22
+# prop_dev::function_ed0598d@42
+DEVBLOCK 0x5e02
+# prop_dev::function_89b4b4c@82
+DEVBLOCK 0x610a
+# prop_dev::function_1f3923fa@a
+DEVBLOCK 0x62c2
+# prop_dev::function_cded003e@2a
+DEVBLOCK 0x6632
+# prop_dev::function_5646cd5c@82
+DEVBLOCK 0x6802
+# prop_dev::function_5e0d41c4@2a
+DEVBLOCK 0x69ea
+# prop_dev::showplayers@22
+DEVBLOCK 0x6afa
+# prop_dev::showtargets@12
+DEVBLOCK 0x6bca

@@ -1,7 +1,9 @@
 NAME scripts\core_common\scriptbundle_shared.csc
 VERSION 0
 CHECKSUM 0x5cc6a06e
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # cscriptbundleobjectbase::init@4c
 STRING "<dev string:x38>" 0xec
 # cscriptbundleobjectbase::log@24 cscriptbundleobjectbase::error@64 cscriptbundlebase::log@24 cscriptbundlebase::error@44
@@ -16,3 +18,20 @@ STRING "<dev string:x65>" 0x1fc 0x210 0x314 0x328
 STRING "<dev string:x6f>" 0x224 0x33c
 # cscriptbundlebase::log@34 cscriptbundlebase::error@64
 STRING "<dev string:x74>" 0x6ec 0x77c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# cscriptbundleobjectbase::init@44
+DEVBLOCK 0xe4
+# cscriptbundleobjectbase::log@a
+DEVBLOCK 0x182
+# cscriptbundleobjectbase::error@46
+DEVBLOCK 0x296
+# cscriptbundleobjectbase::error@4a
+DEVBLOCK 0x29a
+# cscriptbundlebase::log@a
+DEVBLOCK 0x6c2
+# cscriptbundlebase::error@28
+DEVBLOCK 0x740
+# cscriptbundlebase::error@2c
+DEVBLOCK 0x744

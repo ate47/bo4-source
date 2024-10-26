@@ -1,7 +1,9 @@
 NAME scripts\killstreaks\killstreaks_shared.gsc
 VERSION 0
 CHECKSUM 0xb392ee52
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # killstreaks::register@b0 killstreaks::trigger_killstreak@24
 STRING "<dev string:x114>" 0xfd8 0x6ce4
 # killstreaks::function_7e46eaea@54
@@ -88,3 +90,128 @@ STRING "<dev string:xb2>" 0xc74
 STRING "<dev string:xc0>" 0xc80
 # killstreaks::register_weapon@8c killstreaks::register_vehicle@3c
 STRING "<dev string:xd6>" 0xe14 0xebc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# killstreaks::register_ui@2a
+DEVBLOCK 0xad2
+# killstreaks::register_ui@11c
+DEVBLOCK 0xbc4
+# killstreaks::killstreak_init@a
+DEVBLOCK 0xc4a
+# killstreaks::killstreak_init@2a
+DEVBLOCK 0xc6a
+# killstreaks::register_weapon@30
+DEVBLOCK 0xdb8
+# killstreaks::register_weapon@52
+DEVBLOCK 0xdda
+# killstreaks::register_weapon@82
+DEVBLOCK 0xe0a
+# killstreaks::register_vehicle@12
+DEVBLOCK 0xe92
+# killstreaks::register_vehicle@32
+DEVBLOCK 0xeb2
+# killstreaks::register@a6
+DEVBLOCK 0xfce
+# killstreaks::function_7e46eaea@4a
+DEVBLOCK 0x19da
+# killstreaks::function_7e46eaea@6a
+DEVBLOCK 0x19fa
+# killstreaks::function_1110a5de@aa
+DEVBLOCK 0x1bc2
+# killstreaks::function_1110a5de@ca
+DEVBLOCK 0x1be2
+# killstreaks::function_181f96a6@12
+DEVBLOCK 0x1e7a
+# killstreaks::function_181f96a6@32
+DEVBLOCK 0x1e9a
+# killstreaks::register_remote_override_weapon@22
+DEVBLOCK 0x20ba
+# killstreaks::register_remote_override_weapon@42
+DEVBLOCK 0x20da
+# killstreaks::register_dev_dvars@a
+DEVBLOCK 0x2292
+# killstreaks::register_dev_dvars@e
+DEVBLOCK 0x2296
+# killstreaks::register_dev_dvars@32
+DEVBLOCK 0x22ba
+# killstreaks::register_dev_debug_dvar@a
+DEVBLOCK 0x23d2
+# killstreaks::register_dev_debug_dvar@e
+DEVBLOCK 0x23d6
+# killstreaks::register_dev_debug_dvar@32
+DEVBLOCK 0x23fa
+# killstreaks::register_devgui@1a
+DEVBLOCK 0x24aa
+# killstreaks::devgui_scorestreak_command_givedvar@1a
+DEVBLOCK 0x25ea
+# killstreaks::devgui_scorestreak_command_timeoutdvar@12
+DEVBLOCK 0x2642
+# killstreaks::devgui_scorestreak_command_debugdvar@12
+DEVBLOCK 0x2682
+# killstreaks::devgui_scorestreak_command@2a
+DEVBLOCK 0x2752
+# killstreaks::devgui_scorestreak_command@2e
+DEVBLOCK 0x2756
+# killstreaks::devgui_scorestreak_command@52
+DEVBLOCK 0x277a
+# killstreaks::should_draw_debug@a
+DEVBLOCK 0x283a
+# killstreaks::should_draw_debug@e
+DEVBLOCK 0x283e
+# killstreaks::function_2459bd2f@2
+DEVBLOCK 0x28da
+# killstreaks::function_2459bd2f@6
+DEVBLOCK 0x28de
+# killstreaks::get_menu_name@a
+DEVBLOCK 0x2982
+# killstreaks::give_if_streak_count_matches@52
+DEVBLOCK 0x2b52
+# killstreaks::remove_when_done@b0
+DEVBLOCK 0x5278
+# killstreaks::get_killstreak_momentum_cost@6c
+DEVBLOCK 0x5fd4
+# killstreaks::function_4f415d8e@50
+DEVBLOCK 0x6238
+# killstreaks::trigger_killstreak@1a
+DEVBLOCK 0x6cda
+# killstreaks::get_first_valid_killstreak_alt_weapon@12
+DEVBLOCK 0x6f62
+# killstreaks::play_taacom_dialog_response@22
+DEVBLOCK 0x78b2
+# killstreaks::play_taacom_dialog_response@3a
+DEVBLOCK 0x78ca
+# killstreaks::player_killstreak_threat_tracking@62
+DEVBLOCK 0x7982
+# killstreaks::get_killstreak_usage_by_killstreak@a
+DEVBLOCK 0x7ca2
+# killstreaks::killstreak_debug_think@a
+DEVBLOCK 0x80da
+# killstreaks::killstreak_data_dump@3a
+DEVBLOCK 0x81f2
+# killstreaks::killstreak_data_dump@182
+DEVBLOCK 0x833a
+# killstreaks::killstreak_data_dump@242
+DEVBLOCK 0x83fa
+# killstreaks::defaulthackedhealthupdatecallback@20
+DEVBLOCK 0xb838
+# killstreaks::defaulthackedhealthupdatecallback@42
+DEVBLOCK 0xb85a
+# killstreaks::defaulthackedhealthupdatecallback@62
+DEVBLOCK 0xb87a
+# killstreaks::configure_team_internal@54
+DEVBLOCK 0xbc4c
+# killstreaks::configure_team_internal@5c
+DEVBLOCK 0xbc54
+# killstreaks::should_not_timeout@a
+DEVBLOCK 0xcd7a
+# killstreaks::should_not_timeout@e
+DEVBLOCK 0xcd7e
+# killstreaks::should_not_timeout@32
+DEVBLOCK 0xcda2
+# killstreaks::waitfortimeout@3a
+DEVBLOCK 0xce8a
+# killstreaks::add_ricochet_protection@30
+DEVBLOCK 0xd520
+# killstreaks::debug_ricochet_protection@5a
+DEVBLOCK 0xd8da

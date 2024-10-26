@@ -1,7 +1,9 @@
 NAME scripts\core_common\encounters\aispawning.gsc
 VERSION 0
 CHECKSUM 0xa5bebfdf
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # aispawningutility::function_e312ad4d@1ac aispawningutility::function_e312ad4d@1d8
 STRING "<dev string:x38>" 0x22c 0x258
 # aispawningutility::function_e312ad4d@1b8 aispawningutility::function_e312ad4d@1e4
@@ -12,3 +14,10 @@ STRING "<dev string:x60>" 0x528 0x560
 STRING "<dev string:x8b>" 0x534 0x56c
 # aispawningutility::function_e312ad4d@4c4 aispawningutility::function_e312ad4d@4fc
 STRING "<dev string:x93>" 0x544 0x57c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# aispawningutility::function_e312ad4d@1a4
+DEVBLOCK 0x224
+# aispawningutility::function_e312ad4d@49e
+DEVBLOCK 0x51e

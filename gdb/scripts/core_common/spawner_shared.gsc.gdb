@@ -1,7 +1,9 @@
 NAME scripts\core_common\spawner_shared.gsc
 VERSION 0
 CHECKSUM 0xc27e2dc4
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # spawner::go_to_node_using_funcs@280 spawner::go_to_node_using_funcs@308
 STRING "<dev string:x107>" 0x19a8 0x1a30
 # spawner::go_to_node_using_funcs@2f4
@@ -82,3 +84,58 @@ STRING "<dev string:x75>" 0x1078 0x10e0
 STRING "<dev string:xca>" 0x1604
 # spawner::go_to_node_using_funcs@26c
 STRING "<dev string:xeb>" 0x1994
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# spawner::__init__@14a
+DEVBLOCK 0x2fa
+# spawner::spawn_prethink@a
+DEVBLOCK 0x782
+# spawner::spawn_think@38
+DEVBLOCK 0x898
+# spawner::spawn_think@1c2
+DEVBLOCK 0xa22
+# spawner::spawn_think@1ea
+DEVBLOCK 0xa4a
+# spawner::run_spawn_functions@2c4
+DEVBLOCK 0xd74
+# spawner::run_spawn_functions@2dc
+DEVBLOCK 0xd8c
+# spawner::spawn_think_action@fe
+DEVBLOCK 0x106e
+# spawner::spawn_think_action@166
+DEVBLOCK 0x10d6
+# spawner::get_least_used_from_array@2a
+DEVBLOCK 0x15fa
+# spawner::go_to_node_using_funcs@264
+DEVBLOCK 0x198c
+# spawner::go_to_node_using_funcs@2ec
+DEVBLOCK 0x1a14
+# spawner::aigroup_debug@d2
+DEVBLOCK 0x263a
+# spawner::spawn@2b6
+DEVBLOCK 0x3636
+# spawner::waittill_ai_group_cleared@a
+DEVBLOCK 0x42da
+# spawner::add_spawn_function@1a
+DEVBLOCK 0x4dea
+# spawner::remove_spawn_function@1a
+DEVBLOCK 0x4eba
+# spawner::remove_spawn_function@ce
+DEVBLOCK 0x4f6e
+# spawner::add_spawn_function_group@5c
+DEVBLOCK 0x501c
+# spawner::add_spawn_function_group@7a
+DEVBLOCK 0x503a
+# spawner::add_spawn_function_ai_group@42
+DEVBLOCK 0x50fa
+# spawner::add_spawn_function_ai_group@62
+DEVBLOCK 0x511a
+# spawner::remove_spawn_function_ai_group@42
+DEVBLOCK 0x51e2
+# spawner::remove_spawn_function_ai_group@62
+DEVBLOCK 0x5202
+# spawner::simple_spawn@8c
+DEVBLOCK 0x5304
+# spawner::simple_spawn_single@8c
+DEVBLOCK 0x54f4

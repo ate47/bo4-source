@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\planner_squad.gsc
 VERSION 0
 CHECKSUM 0x765e726a
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # plannersquad::_debugsquad@684
 STRING "<dev string:x105>" 0x814
 # plannersquad::_debugsquad@67c
@@ -92,3 +94,30 @@ STRING "<dev string:xc4>" 0x82c
 STRING "<dev string:xdc>" 0x824
 # plannersquad::_debugsquad@68c
 STRING "<dev string:xf1>" 0x81c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# plannersquad::_debugsquad@132
+DEVBLOCK 0x2c2
+# plannersquad::function_101999aa@6a
+DEVBLOCK 0xfea
+# plannersquad::function_f301de44@42
+DEVBLOCK 0x112a
+# plannersquad::_executeplan@1a
+DEVBLOCK 0x12ba
+# plannersquad::_executeplan@32
+DEVBLOCK 0x12d2
+# plannersquad::_executeplan@62
+DEVBLOCK 0x1302
+# plannersquad::_strategize@a
+DEVBLOCK 0x16ea
+# plannersquad::_strategize@22
+DEVBLOCK 0x1702
+# plannersquad::_updateplanner@12
+DEVBLOCK 0x17da
+# plannersquadutility::createsquad@7c
+DEVBLOCK 0x1934
+# plannersquadutility::createsquad@aa
+DEVBLOCK 0x1962
+# plannersquadutility::createsquad@1b2
+DEVBLOCK 0x1a6a

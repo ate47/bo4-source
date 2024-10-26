@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\phalanx.gsc
 VERSION 0
 CHECKSUM 0xfbd8ea86
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # phalanx::_getphalanxspawner@4c
 STRING "<dev string:x101>" 0xd5c
 # phalanx::_getphalanxspawner@74
@@ -28,3 +30,36 @@ STRING "<dev string:x56>" 0xce0
 STRING "<dev string:x6f>" 0xd4c
 # phalanx::_getphalanxspawner@44
 STRING "<dev string:xb7>" 0xd54
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# phalanx::_assignphalanxstance@32
+DEVBLOCK 0x1fa
+# phalanx::_getphalanxpositions@5b4
+DEVBLOCK 0xc24
+# phalanx::_getphalanxpositions@668
+DEVBLOCK 0xcd8
+# phalanx::_getphalanxspawner@34
+DEVBLOCK 0xd44
+# phalanx::_getphalanxspawner@6a
+DEVBLOCK 0xd7a
+# phalanx::_haltadvance@32
+DEVBLOCK 0xe02
+# phalanx::_haltfire@2a
+DEVBLOCK 0xf2a
+# phalanx::_initializesentient@a
+DEVBLOCK 0xff2
+# phalanx::_movephalanxtier@9c
+DEVBLOCK 0x11bc
+# phalanx::_movephalanxtier@11e
+DEVBLOCK 0x123e
+# phalanx::_resumefiresentients@2a
+DEVBLOCK 0x16aa
+# phalanx::initialize@cc
+DEVBLOCK 0x1b4c
+# phalanx::initialize@fa
+DEVBLOCK 0x1b7a
+# phalanx::initialize@122
+DEVBLOCK 0x1ba2
+# phalanx::initialize@14a
+DEVBLOCK 0x1bca

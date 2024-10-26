@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_bgb_pack.gsc
 VERSION 0
 CHECKSUM 0x91f15ed3
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # bgb_pack::function_72ffe91@28
 STRING "<dev string:x109>" 0x2e20
 # bgb_pack::function_72ffe91@20
@@ -82,3 +84,40 @@ STRING "<dev string:xc3>" 0x1978 0x1f38
 STRING "<dev string:xd5>" 0x2e30
 # bgb_pack::function_72ffe91@30
 STRING "<dev string:xf1>" 0x2e28
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# bgb_pack::__init__@a
+DEVBLOCK 0x2ba
+# bgb_pack::__init__@1ec
+DEVBLOCK 0x49c
+# bgb_pack::__main__@24
+DEVBLOCK 0x4f4
+# bgb_pack::function_9d4db403@1a
+DEVBLOCK 0x67a
+# bgb_pack::function_9d4db403@5a
+DEVBLOCK 0x6ba
+# bgb_pack::function_430d063b@a
+DEVBLOCK 0x72a
+# bgb_pack::function_a1194b9a@a
+DEVBLOCK 0x7a2
+# bgb_pack::function_4de6c08a@a
+DEVBLOCK 0x81a
+# bgb_pack::global_cooldown@160
+DEVBLOCK 0x1910
+# bgb_pack::global_cooldown@1b6
+DEVBLOCK 0x1966
+# bgb_pack::slot_cooldown@3e4
+DEVBLOCK 0x1eb4
+# bgb_pack::slot_cooldown@456
+DEVBLOCK 0x1f26
+# bgb_pack::function_d84ec5ee@96
+DEVBLOCK 0x22be
+# bgb_pack::function_b18274fd@12
+DEVBLOCK 0x242a
+# bgb_pack::function_72ffe91@2
+DEVBLOCK 0x2dfa
+# bgb_pack::setup_devgui@3a
+DEVBLOCK 0x2f72
+# bgb_pack::function_c1091a8f@62
+DEVBLOCK 0x320a

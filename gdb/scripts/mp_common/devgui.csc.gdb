@@ -1,7 +1,9 @@
 NAME scripts\mp_common\devgui.csc
 VERSION 0
 CHECKSUM 0x20855bde
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # mp_devgui::add_blackjack_contract@1ac mp_devgui::add_blackjack_contract@28c
 STRING "<dev string:x105>" 0x434 0x514
 # mp_devgui::add_blackjack_contract@1d0
@@ -168,3 +170,42 @@ STRING "<dev string:xd1>" 0x3cc
 STRING "<dev string:xed>" 0x3dc 0x410
 # mp_devgui::add_blackjack_contract@168
 STRING "<dev string:xf8>" 0x3f0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# mp_devgui::remove_mp_contracts_devgui@a
+DEVBLOCK 0x11a
+# mp_devgui::remove_mp_contracts_devgui@22
+DEVBLOCK 0x132
+# mp_devgui::create_mp_contracts_devgui@1a
+DEVBLOCK 0x182
+# mp_devgui::add_blackjack_contract@52
+DEVBLOCK 0x2da
+# mp_devgui::add_blackjack_contract_set_count@2a
+DEVBLOCK 0x6f2
+# mp_devgui::add_contract_slot@d2
+DEVBLOCK 0x84a
+# mp_devgui::add_devgui_scheduler@22
+DEVBLOCK 0xd7a
+# mp_devgui::add_watched_devgui_cmd@22
+DEVBLOCK 0x1022
+# mp_devgui::add_contract_scheduler_daily_duration@32
+DEVBLOCK 0x10aa
+# mp_devgui::wrap_dvarconfig_cmds@1a
+DEVBLOCK 0x1152
+# mp_devgui::add_devgui_cmd@1a
+DEVBLOCK 0x11b2
+# mp_devgui::add_devgui_cmd@1e
+DEVBLOCK 0x11b6
+# mp_devgui::calculate_schedule_start_time@3a
+DEVBLOCK 0x1242
+# mp_devgui::watch_devgui@12
+DEVBLOCK 0x1302
+# mp_devgui::update_contract_start_time@1a
+DEVBLOCK 0x15d2
+# mp_devgui::dvar_has_value@a
+DEVBLOCK 0x167a
+# mp_devgui::clear_dvar@a
+DEVBLOCK 0x16b2
+# mp_devgui::get_schedule_start_time@2
+DEVBLOCK 0x16e2

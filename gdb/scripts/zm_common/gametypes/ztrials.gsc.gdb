@@ -1,7 +1,9 @@
 NAME scripts\zm_common\gametypes\ztrials.gsc
 VERSION 0
 CHECKSUM 0xb315f142
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ztrials::function_9a6b2309@11c
 STRING "<dev string:x10e>" 0xfcc
 # ztrials::function_9a6b2309@13c
@@ -44,3 +46,34 @@ STRING "<dev string:x403>" 0x1500
 STRING "<dev string:x53>" 0x50c
 # ztrials::function_9a6b2309@108
 STRING "<dev string:xeb>" 0xfb8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ztrials::levelinit@24
+DEVBLOCK 0x404
+# ztrials::levelinit@d6
+DEVBLOCK 0x4b6
+# ztrials::levelinit@124
+DEVBLOCK 0x504
+# ztrials::levelinit@14a
+DEVBLOCK 0x52a
+# ztrials::function_491101ba@272
+DEVBLOCK 0x9c2
+# ztrials::function_61fd0e87@2
+DEVBLOCK 0xa0a
+# ztrials::complete_current_round@12
+DEVBLOCK 0xc12
+# ztrials::function_1201b5da@2a
+DEVBLOCK 0xd3a
+# ztrials::function_1201b5da@64
+DEVBLOCK 0xd74
+# ztrials::function_1201b5da@c8
+DEVBLOCK 0xdd8
+# ztrials::function_1201b5da@102
+DEVBLOCK 0xe12
+# ztrials::function_1201b5da@176
+DEVBLOCK 0xe86
+# ztrials::function_9a6b2309@9a
+DEVBLOCK 0xf4a
+# ztrials::function_9a6b2309@9e
+DEVBLOCK 0xf4e

@@ -1,7 +1,9 @@
 NAME script_301f64a4090c381a
 VERSION 0
 CHECKSUM 0xf1c9952c
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_e38c57c1::devgui@90
 STRING "<dev string:x101>" 0xa20
 # namespace_e38c57c1::devgui@a8
@@ -58,3 +60,26 @@ STRING "<dev string:x556>" 0x134c
 STRING "<dev string:x579>" 0x135c
 # namespace_e38c57c1::devgui@78
 STRING "<dev string:x9d>" 0xa08
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_e38c57c1::__init__@2
+DEVBLOCK 0x14a
+# namespace_e38c57c1::__main__@2
+DEVBLOCK 0x1a2
+# namespace_e38c57c1::function_9af806be@a
+DEVBLOCK 0x1fa
+# namespace_e38c57c1::function_2a94cd59@a
+DEVBLOCK 0x422
+# namespace_e38c57c1::function_2a94cd59@20
+DEVBLOCK 0x438
+# namespace_e38c57c1::devgui@52
+DEVBLOCK 0x9e2
+# namespace_e38c57c1::on_player_connect@2
+DEVBLOCK 0xfea
+# namespace_e38c57c1::function_c1ccd7f3@22
+DEVBLOCK 0x1062
+# namespace_e38c57c1::devgui_player_menu@a
+DEVBLOCK 0x10ca
+# namespace_e38c57c1::function_1c3ffffd@2
+DEVBLOCK 0x1342

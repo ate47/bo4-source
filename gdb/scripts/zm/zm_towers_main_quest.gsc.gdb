@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_towers_main_quest.gsc
 VERSION 0
 CHECKSUM 0xbd07178f
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_towers_main_quest::function_bd321d77@54
 STRING "<dev string:x10c>" 0x16ab4
 # zm_towers_main_quest::function_3a5c3a3c@218 zm_towers_main_quest::function_3a5c3a3c@238
@@ -32,3 +34,46 @@ STRING "<dev string:xd0>" 0x12118
 STRING "<dev string:xdd>" 0x122a4
 # zm_towers_main_quest::debug_trilane@6c
 STRING "<dev string:xfc>" 0x1234c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_towers_main_quest::function_965e1613@112
+DEVBLOCK 0x3eb2
+# zm_towers_main_quest::function_8bcc049f@a
+DEVBLOCK 0x413a
+# zm_towers_main_quest::function_9774bbc6@14a
+DEVBLOCK 0x430a
+# zm_towers_main_quest::function_2fe17822@a
+DEVBLOCK 0x4692
+# zm_towers_main_quest::place_fertilizer_setup@21a
+DEVBLOCK 0x4d0a
+# zm_towers_main_quest::function_1bd4c509@a
+DEVBLOCK 0x4e22
+# zm_towers_main_quest::function_3a5c3a3c@c2
+DEVBLOCK 0x5f12
+# zm_towers_main_quest::function_3a5c3a3c@1e4
+DEVBLOCK 0x6034
+# zm_towers_main_quest::function_d1499d43@46a
+DEVBLOCK 0x676a
+# zm_towers_main_quest::function_f0fd4ea3@45e
+DEVBLOCK 0x85b6
+# zm_towers_main_quest::function_fac3622f@396
+DEVBLOCK 0x8ce6
+# zm_towers_main_quest::function_df18663@12
+DEVBLOCK 0x911a
+# zm_towers_main_quest::function_1b37b8c4@1ca
+DEVBLOCK 0x10eaa
+# zm_towers_main_quest::function_4c6f5906@a4
+DEVBLOCK 0x1133c
+# zm_towers_main_quest::function_f4bc8162@42
+DEVBLOCK 0x11b7a
+# zm_towers_main_quest::debug_spawns@12
+DEVBLOCK 0x120da
+# zm_towers_main_quest::debug_trilane@a
+DEVBLOCK 0x122ea
+# zm_towers_main_quest::defend_spawn@5b2
+DEVBLOCK 0x16602
+# zm_towers_main_quest::function_bd321d77@4a
+DEVBLOCK 0x16aaa
+# zm_towers_main_quest::function_6378f02b@502
+DEVBLOCK 0x173c2

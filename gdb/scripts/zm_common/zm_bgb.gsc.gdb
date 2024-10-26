@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_bgb.gsc
 VERSION 0
 CHECKSUM 0x84c4c686
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # bgb::setup_devgui@1e8
 STRING "<dev string:x100>" 0x1368
 # bgb::bgb_debug_text_display_init@24
@@ -116,3 +118,96 @@ STRING "<dev string:xd6>" 0x1304 0x1370
 STRING "<dev string:xea>" 0x1314
 # bgb::setup_devgui@1d8
 STRING "<dev string:xef>" 0x1358
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# bgb::__main__@3a
+DEVBLOCK 0x62a
+# bgb::bgb_player_init@280
+DEVBLOCK 0x960
+# bgb::bgb_finalize@11a
+DEVBLOCK 0xf9a
+# bgb::setup_devgui@4a
+DEVBLOCK 0x11ca
+# bgb::bgb_devgui_think@a
+DEVBLOCK 0x13da
+# bgb::bgb_devgui_acquire@22
+DEVBLOCK 0x148a
+# bgb::bgb_debug_text_display_init@2
+DEVBLOCK 0x15ba
+# bgb::bgb_set_debug_text@22
+DEVBLOCK 0x172a
+# bgb::bgb_print_stats@12
+DEVBLOCK 0x18e2
+# bgb::sub_consumable_bgb@ba
+DEVBLOCK 0x1b22
+# bgb::bgb_limit_monitor@1ca
+DEVBLOCK 0x28ea
+# bgb::bgb_limit_monitor@320
+DEVBLOCK 0x2a40
+# bgb::bgb_limit_monitor@3ae
+DEVBLOCK 0x2ace
+# bgb::bgb_limit_monitor@49e
+DEVBLOCK 0x2bbe
+# bgb::bgb_limit_monitor@51e
+DEVBLOCK 0x2c3e
+# bgb::register@3a
+DEVBLOCK 0x3992
+# bgb::register@5a
+DEVBLOCK 0x39b2
+# bgb::register@aa
+DEVBLOCK 0x3a02
+# bgb::register@ea
+DEVBLOCK 0x3a42
+# bgb::register@11a
+DEVBLOCK 0x3a72
+# bgb::register@14a
+DEVBLOCK 0x3aa2
+# bgb::register@192
+DEVBLOCK 0x3aea
+# bgb::register@1e4
+DEVBLOCK 0x3b3c
+# bgb::register@23a
+DEVBLOCK 0x3b92
+# bgb::register@27a
+DEVBLOCK 0x3bd2
+# bgb::register@2ca
+DEVBLOCK 0x3c22
+# bgb::register@32e
+DEVBLOCK 0x3c86
+# bgb::register@386
+DEVBLOCK 0x3cde
+# bgb::register_actor_damage_override@12
+DEVBLOCK 0x3ec2
+# bgb::register_vehicle_damage_override@12
+DEVBLOCK 0x3f42
+# bgb::register_actor_death_override@12
+DEVBLOCK 0x3fc2
+# bgb::register_lost_perk_override@1a
+DEVBLOCK 0x404a
+# bgb::function_c2721e81@1a
+DEVBLOCK 0x40ea
+# bgb::function_72469efe@12
+DEVBLOCK 0x4182
+# bgb::function_8a5d8cfb@12
+DEVBLOCK 0x4202
+# bgb::function_be42abb0@12
+DEVBLOCK 0x4282
+# bgb::function_afe7b8e7@a
+DEVBLOCK 0x42fa
+# bgb::function_e1f37ce7@a
+DEVBLOCK 0x4372
+# bgb::function_1fee6b3@12
+DEVBLOCK 0x43f2
+# bgb::function_1fee6b3@52
+DEVBLOCK 0x4432
+# bgb::give@3c
+DEVBLOCK 0x44cc
+# bgb::take@42
+DEVBLOCK 0x4702
+# bgb::is_enabled@a
+DEVBLOCK 0x4862
+# bgb::any_enabled@2
+DEVBLOCK 0x48ba
+# bgb::is_team_enabled@66
+DEVBLOCK 0x4966

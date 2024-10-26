@@ -1,7 +1,9 @@
 NAME scripts\core_common\bots\bot_stance.gsc
 VERSION 0
 CHECKSUM 0x2579af03
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # bot_stance::function_41d967fe@80
 STRING "<dev string:x109>" 0xe00
 # bot_stance::function_f71302f4@3c
@@ -58,3 +60,90 @@ STRING "<dev string:xc7>" 0xbb0
 STRING "<dev string:xdf>" 0xc14 0xd3c 0xe64 0xfc4 0x1164
 # bot_stance::function_f1b497ec@80 bot_stance::function_f71302f4@b8
 STRING "<dev string:xf2>" 0xcd8 0xf60
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# bot_stance::update@20
+DEVBLOCK 0x4f0
+# bot_stance::function_7beea81f@7c
+DEVBLOCK 0x77c
+# bot_stance::function_ab5be907@56
+DEVBLOCK 0x906
+# bot_stance::function_ab5be907@96
+DEVBLOCK 0x946
+# bot_stance::g_stop_player_too_many_weapons_monitor@3a
+DEVBLOCK 0xa5a
+# bot_stance::g_stop_player_too_many_weapons_monitor@6e
+DEVBLOCK 0xa8e
+# bot_stance::function_7857357b@22
+DEVBLOCK 0xb52
+# bot_stance::function_7857357b@6c
+DEVBLOCK 0xb9c
+# bot_stance::function_7857357b@d0
+DEVBLOCK 0xc00
+# bot_stance::function_f1b497ec@22
+DEVBLOCK 0xc7a
+# bot_stance::function_f1b497ec@6c
+DEVBLOCK 0xcc4
+# bot_stance::function_f1b497ec@d0
+DEVBLOCK 0xd28
+# bot_stance::function_41d967fe@22
+DEVBLOCK 0xda2
+# bot_stance::function_41d967fe@6c
+DEVBLOCK 0xdec
+# bot_stance::function_41d967fe@d0
+DEVBLOCK 0xe50
+# bot_stance::function_f71302f4@26
+DEVBLOCK 0xece
+# bot_stance::function_f71302f4@5e
+DEVBLOCK 0xf06
+# bot_stance::function_f71302f4@a4
+DEVBLOCK 0xf4c
+# bot_stance::function_f71302f4@108
+DEVBLOCK 0xfb0
+# bot_stance::function_821cce69@22
+DEVBLOCK 0x105a
+# bot_stance::function_821cce69@6a
+DEVBLOCK 0x10a2
+# bot_stance::function_821cce69@b2
+DEVBLOCK 0x10ea
+# bot_stance::function_821cce69@118
+DEVBLOCK 0x1150
+# bot_stance::function_5485fc7b@3c
+DEVBLOCK 0x11e4
+# bot_stance::function_5485fc7b@8c
+DEVBLOCK 0x1234
+# bot_stance::function_e4f752b9@5c
+DEVBLOCK 0x12ec
+# bot_stance::function_e4f752b9@156
+DEVBLOCK 0x13e6
+# bot_stance::function_e4f752b9@1c4
+DEVBLOCK 0x1454
+# bot_stance::function_d22ff818@6c
+DEVBLOCK 0x151c
+# bot_stance::function_d22ff818@b4
+DEVBLOCK 0x1564
+# bot_stance::function_d22ff818@fc
+DEVBLOCK 0x15ac
+# bot_stance::function_d22ff818@21a
+DEVBLOCK 0x16ca
+# bot_stance::function_d22ff818@25a
+DEVBLOCK 0x170a
+# bot_stance::function_d22ff818@2cc
+DEVBLOCK 0x177c
+# bot_stance::function_1989cfaf@64
+DEVBLOCK 0x183c
+# bot_stance::function_1989cfaf@ac
+DEVBLOCK 0x1884
+# bot_stance::function_1989cfaf@f4
+DEVBLOCK 0x18cc
+# bot_stance::function_1989cfaf@148
+DEVBLOCK 0x1920
+# bot_stance::function_1989cfaf@18e
+DEVBLOCK 0x1966
+# bot_stance::function_1989cfaf@224
+DEVBLOCK 0x19fc
+# bot_stance::function_1989cfaf@294
+DEVBLOCK 0x1a6c
+# bot_stance::function_1989cfaf@34a
+DEVBLOCK 0x1b22

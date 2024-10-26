@@ -1,7 +1,9 @@
 NAME scripts\wz\wz_open_skyscrapers.gsc
 VERSION 0
 CHECKSUM 0xad0a1da7
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wz_open_skyscrapers::init_devgui@ac
 STRING "<dev string:x15e>" 0x9d4
 # wz_open_skyscrapers::init_devgui@c8
@@ -110,3 +112,94 @@ STRING "<dev string:x5bb>" 0x7f90
 STRING "<dev string:x93>" 0x984
 # wz_open_skyscrapers::init_devgui@84
 STRING "<dev string:xf8>" 0x9ac
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wz_open_skyscrapers::main@24a
+DEVBLOCK 0x422
+# wz_open_skyscrapers::on_player_spawned@2
+DEVBLOCK 0x4c2
+# wz_open_skyscrapers::on_player_spawned@1a
+DEVBLOCK 0x4da
+# wz_open_skyscrapers::on_player_spawned@32
+DEVBLOCK 0x4f2
+# wz_open_skyscrapers::on_player_spawned@4a
+DEVBLOCK 0x50a
+# wz_open_skyscrapers::on_vehicle_spawned@2
+DEVBLOCK 0x532
+# wz_open_skyscrapers::on_vehicle_spawned@1a
+DEVBLOCK 0x54a
+# wz_open_skyscrapers::on_vehicle_spawned@32
+DEVBLOCK 0x562
+# wz_open_skyscrapers::init_devgui@a
+DEVBLOCK 0x932
+# wz_open_skyscrapers::function_4b227faf@18a
+DEVBLOCK 0xcea
+# wz_open_skyscrapers::function_c447999a@5a
+DEVBLOCK 0x16d2
+# wz_open_skyscrapers::function_eef7849@13a
+DEVBLOCK 0x19ba
+# wz_open_skyscrapers::function_df930125@a
+DEVBLOCK 0x2342
+# wz_open_skyscrapers::function_f42944c7@52
+DEVBLOCK 0x24b2
+# wz_open_skyscrapers::function_f567f0cd@6a
+DEVBLOCK 0x290a
+# wz_open_skyscrapers::function_1221d304@2a
+DEVBLOCK 0x2b32
+# wz_open_skyscrapers::function_b2775b52@2
+DEVBLOCK 0x3012
+# wz_open_skyscrapers::function_6a3e277@1a
+DEVBLOCK 0x341a
+# wz_open_skyscrapers::function_fe9593b2@1a
+DEVBLOCK 0x363a
+# wz_open_skyscrapers::function_2d706436@1a
+DEVBLOCK 0x37c2
+# wz_open_skyscrapers::function_f2c2f4f9@72
+DEVBLOCK 0x3922
+# wz_open_skyscrapers::function_e2fc5dd9@42
+DEVBLOCK 0x3c32
+# wz_open_skyscrapers::function_38146f54@42
+DEVBLOCK 0x3ed2
+# wz_open_skyscrapers::function_10c650e6@62
+DEVBLOCK 0x411a
+# wz_open_skyscrapers::function_9cc59537@27a
+DEVBLOCK 0x454a
+# wz_open_skyscrapers::function_d72aa67e@3a
+DEVBLOCK 0x562a
+# wz_open_skyscrapers::function_47351fa3@82
+DEVBLOCK 0x5732
+# wz_open_skyscrapers::function_5ef515a6@6a
+DEVBLOCK 0x5a4a
+# wz_open_skyscrapers::function_317da0a9@ea
+DEVBLOCK 0x5cca
+# wz_open_skyscrapers::function_e8f0335f@e2
+DEVBLOCK 0x62a2
+# wz_open_skyscrapers::function_f9b68fd7@2a
+DEVBLOCK 0x68b2
+# wz_open_skyscrapers::function_a476d876@7a
+DEVBLOCK 0x6bba
+# wz_open_skyscrapers::function_13a77bfa@92
+DEVBLOCK 0x6e0a
+# wz_open_skyscrapers::function_97714f49@4a
+DEVBLOCK 0x733a
+# wz_open_skyscrapers::function_2e72f24d@8a
+DEVBLOCK 0x76da
+# wz_open_skyscrapers::function_c21a7f52@3a
+DEVBLOCK 0x793a
+# wz_open_skyscrapers::function_61e22785@3a
+DEVBLOCK 0x7ac2
+# wz_open_skyscrapers::function_a2b6e273@2a
+DEVBLOCK 0x7e0a
+# wz_open_skyscrapers::function_a2b6e273@2e
+DEVBLOCK 0x7e0e
+# wz_open_skyscrapers::devgui_weapon_think@a
+DEVBLOCK 0x805a
+# wz_open_skyscrapers::devgui_handle_player_command@2a
+DEVBLOCK 0x8132
+# wz_open_skyscrapers::function_1880c93d@12
+DEVBLOCK 0x825a
+# wz_open_skyscrapers::function_1880c93d@16
+DEVBLOCK 0x825e
+# wz_open_skyscrapers::function_1880c93d@32
+DEVBLOCK 0x827a

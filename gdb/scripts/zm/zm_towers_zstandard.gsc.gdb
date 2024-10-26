@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_towers_zstandard.gsc
 VERSION 0
 CHECKSUM 0x671667e1
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_towers_zstandard::function_931e4ab1@e8
 STRING "<dev string:x104>" 0x5f0
 # zm_towers_zstandard::function_931e4ab1@100
@@ -28,3 +30,12 @@ STRING "<dev string:xc0>" 0x5a8
 STRING "<dev string:xd5>" 0x5c0
 # zm_towers_zstandard::function_931e4ab1@d0
 STRING "<dev string:xee>" 0x5d8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_towers_zstandard::function_931e4ab1@2
+DEVBLOCK 0x50a
+# zm_towers_zstandard::function_b9cacd48@22
+DEVBLOCK 0x1302
+# zm_towers_zstandard::defend_areas@aa
+DEVBLOCK 0x165a

@@ -1,4 +1,0 @@
-NAME script_5e5ac8c591dedeed
-VERSION 0
-CHECKSUM 0xfff48c04
-

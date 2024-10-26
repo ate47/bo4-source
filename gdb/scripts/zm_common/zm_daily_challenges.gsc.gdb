@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_daily_challenges.gsc
 VERSION 0
 CHECKSUM 0x57ecba5e
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_daily_challenges::death_check_for_challenge_updates@e4
 STRING "<dev string:x102>" 0x6c4
 # zm_daily_challenges::death_check_for_challenge_updates@1cc
@@ -88,3 +90,94 @@ STRING "<dev string:xaf>" 0x514
 STRING "<dev string:xce>" 0x55c
 # zm_daily_challenges::death_check_for_challenge_updates@84
 STRING "<dev string:xed>" 0x664
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_daily_challenges::round_tracking@6a
+DEVBLOCK 0x3da
+# zm_daily_challenges::round_tracking@c2
+DEVBLOCK 0x432
+# zm_daily_challenges::round_tracking@10a
+DEVBLOCK 0x47a
+# zm_daily_challenges::round_tracking@152
+DEVBLOCK 0x4c2
+# zm_daily_challenges::round_tracking@19a
+DEVBLOCK 0x50a
+# zm_daily_challenges::round_tracking@1e2
+DEVBLOCK 0x552
+# zm_daily_challenges::death_check_for_challenge_updates@7a
+DEVBLOCK 0x65a
+# zm_daily_challenges::death_check_for_challenge_updates@da
+DEVBLOCK 0x6ba
+# zm_daily_challenges::death_check_for_challenge_updates@1c2
+DEVBLOCK 0x7a2
+# zm_daily_challenges::death_check_for_challenge_updates@20a
+DEVBLOCK 0x7ea
+# zm_daily_challenges::death_check_for_challenge_updates@28a
+DEVBLOCK 0x86a
+# zm_daily_challenges::death_check_for_challenge_updates@2d2
+DEVBLOCK 0x8b2
+# zm_daily_challenges::death_check_for_challenge_updates@30a
+DEVBLOCK 0x8ea
+# zm_daily_challenges::death_check_for_challenge_updates@372
+DEVBLOCK 0x952
+# zm_daily_challenges::death_check_for_challenge_updates@3ba
+DEVBLOCK 0x99a
+# zm_daily_challenges::death_check_for_challenge_updates@402
+DEVBLOCK 0x9e2
+# zm_daily_challenges::death_check_for_challenge_updates@4ba
+DEVBLOCK 0xa9a
+# zm_daily_challenges::death_check_for_challenge_updates@51a
+DEVBLOCK 0xafa
+# zm_daily_challenges::death_check_for_challenge_updates@5ba
+DEVBLOCK 0xb9a
+# zm_daily_challenges::death_check_for_challenge_updates@642
+DEVBLOCK 0xc22
+# zm_daily_challenges::death_check_for_challenge_updates@69a
+DEVBLOCK 0xc7a
+# zm_daily_challenges::death_check_for_challenge_updates@6f2
+DEVBLOCK 0xcd2
+# zm_daily_challenges::death_check_for_challenge_updates@762
+DEVBLOCK 0xd42
+# zm_daily_challenges::death_check_for_challenge_updates@7ea
+DEVBLOCK 0xdca
+# zm_daily_challenges::death_check_for_challenge_updates@85a
+DEVBLOCK 0xe3a
+# zm_daily_challenges::death_check_for_challenge_updates@8a2
+DEVBLOCK 0xe82
+# zm_daily_challenges::death_check_for_challenge_updates@8ea
+DEVBLOCK 0xeca
+# zm_daily_challenges::death_check_for_challenge_updates@932
+DEVBLOCK 0xf12
+# zm_daily_challenges::death_check_for_challenge_updates@97a
+DEVBLOCK 0xf5a
+# zm_daily_challenges::death_check_for_challenge_updates@9c2
+DEVBLOCK 0xfa2
+# zm_daily_challenges::death_check_for_challenge_updates@a0a
+DEVBLOCK 0xfea
+# zm_daily_challenges::death_check_for_challenge_updates@ad2
+DEVBLOCK 0x10b2
+# zm_daily_challenges::death_check_for_challenge_updates@b92
+DEVBLOCK 0x1172
+# zm_daily_challenges::spent_points_tracking@e2
+DEVBLOCK 0x1282
+# zm_daily_challenges::earned_points_tracking@f2
+DEVBLOCK 0x13a2
+# zm_daily_challenges::earned_points_tracking@18a
+DEVBLOCK 0x143a
+# zm_daily_challenges::rebuild_timer@5a
+DEVBLOCK 0x164a
+# zm_daily_challenges::increment_magic_box@72
+DEVBLOCK 0x170a
+# zm_daily_challenges::increment_magic_box@e2
+DEVBLOCK 0x177a
+# zm_daily_challenges::increment_nuked_zombie@92
+DEVBLOCK 0x183a
+# zm_daily_challenges::perk_purchase_tracking@6a
+DEVBLOCK 0x18da
+# zm_daily_challenges::perk_drink_tracking@52
+DEVBLOCK 0x195a
+# zm_daily_challenges::debug_print@2e
+DEVBLOCK 0x19b6
+# zm_daily_challenges::on_challenge_complete@154
+DEVBLOCK 0x1b34

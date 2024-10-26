@@ -1,7 +1,9 @@
 NAME scripts\core_common\popups_shared.gsc
 VERSION 0
 CHECKSUM 0x2ef89290
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # popups::notif_devgui_gun_rank@114
 STRING "<dev string:x11e>" 0xbbc
 # popups::notif_devgui_gun_rank@4e0
@@ -64,3 +66,36 @@ STRING "<dev string:xea>" 0x970 0x1348 0x1374 0x13a4 0x13d8 0x18b0 0x18d0
 STRING "<dev string:xee>" 0x980 0x13f4 0x18e0
 # popups::notif_devgui_gun_rank@e8
 STRING "<dev string:xf4>" 0xb90
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# popups::init@168
+DEVBLOCK 0x288
+# popups::devgui_notif_getgunleveltablename@2
+DEVBLOCK 0x38a
+# popups::devgui_notif_getchallengestablecount@2
+DEVBLOCK 0x3fa
+# popups::devgui_notif_getchallengestablename@a
+DEVBLOCK 0x45a
+# popups::devgui_create_weapon_levels_table@22
+DEVBLOCK 0x51a
+# popups::devgui_notif_init@2
+DEVBLOCK 0x692
+# popups::function_a65863ce@2
+DEVBLOCK 0x7c2
+# popups::function_ac0bfb9c@2
+DEVBLOCK 0x852
+# popups::notif_devgui_rank@1a
+DEVBLOCK 0x8d2
+# popups::notif_devgui_rank_up_think@a
+DEVBLOCK 0x9da
+# popups::notif_devgui_gun_rank@e2
+DEVBLOCK 0xb8a
+# popups::notif_devgui_gun_level_think@22
+DEVBLOCK 0x147a
+# popups::notif_devgui_challenges@62
+DEVBLOCK 0x168a
+# popups::notif_devgui_challenges_think@52
+DEVBLOCK 0x19aa
+# popups::popupsfromconsole@9a
+DEVBLOCK 0x1e2a

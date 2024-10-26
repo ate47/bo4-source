@@ -1,7 +1,9 @@
 NAME scripts\core_common\trigger_shared.gsc
 VERSION 0
 CHECKSUM 0x5bb5fd10
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # trigger::friendly_respawn_trigger@bc
 STRING "<dev string:x113>" 0x113c
 # trigger::trigger_once@20 trigger::trigger_once@78
@@ -34,3 +36,30 @@ STRING "<dev string:x95>" 0x10dc
 STRING "<dev string:xda>" 0x10f0
 # trigger::friendly_respawn_trigger@a8
 STRING "<dev string:xfc>" 0x1128
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# trigger::get_trigger_look_target@168
+DEVBLOCK 0x888
+# trigger::look_trigger@204
+DEVBLOCK 0xaf4
+# trigger::trigger_spawner@be
+DEVBLOCK 0xbde
+# trigger::friendly_respawn_trigger@54
+DEVBLOCK 0x10d4
+# trigger::friendly_respawn_trigger@9e
+DEVBLOCK 0x111e
+# trigger::trigger_once@16
+DEVBLOCK 0x1526
+# trigger::wait_till@84
+DEVBLOCK 0x17c4
+# trigger::_trigger_wait@60
+DEVBLOCK 0x1960
+# trigger::_trigger_wait@7c
+DEVBLOCK 0x197c
+# trigger::_trigger_wait@c2
+DEVBLOCK 0x19c2
+# trigger::use@a4
+DEVBLOCK 0x1cc4
+# trigger::wait_till_any@7c
+DEVBLOCK 0x220c

@@ -1,7 +1,9 @@
 NAME scripts\zm_common\gametypes\globallogic_defaults.gsc
 VERSION 0
 CHECKSUM 0x7952689f
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # globallogic_defaults::default_onscorelimit@94
 STRING "<dev string:x103>" 0x9ac
 # globallogic_defaults::default_onscorelimit@c4
@@ -34,3 +36,22 @@ STRING "<dev string:xbe>" 0x6f4
 STRING "<dev string:xdd>" 0x85c
 # globallogic_defaults::default_ontimelimit@ac
 STRING "<dev string:xf1>" 0x88c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# globallogic_defaults::default_onforfeit@1e0
+DEVBLOCK 0x360
+# globallogic_defaults::default_onforfeit@202
+DEVBLOCK 0x382
+# globallogic_defaults::default_onforfeit@24c
+DEVBLOCK 0x3cc
+# globallogic_defaults::default_ononeleftevent@44
+DEVBLOCK 0x6b4
+# globallogic_defaults::default_ontimelimit@6c
+DEVBLOCK 0x84c
+# globallogic_defaults::default_onscorelimit@84
+DEVBLOCK 0x99c
+# globallogic_defaults::default_onspawnspectator@84
+DEVBLOCK 0xaec
+# globallogic_defaults::default_onspawnintermission@86
+DEVBLOCK 0xbee

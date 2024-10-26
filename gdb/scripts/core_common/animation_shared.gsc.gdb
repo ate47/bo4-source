@@ -1,7 +1,9 @@
 NAME scripts\core_common\animation_shared.gsc
 VERSION 0
 CHECKSUM 0x3f6f2dd9
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # animation::function_eb0aa7cf@64
 STRING "<dev string:x11f>" 0x2d94
 # animation::debug_print@2c animation::debug_print@5c animation::debug_print@98 animation::debug_print@b8 animation::debug_print@19c animation::debug_print@1d4
@@ -34,3 +36,32 @@ STRING "<dev string:xc5>" 0x1514
 STRING "<dev string:xed>" 0x1cb0
 # animation::add_notetrack_func@38
 STRING "<dev string:xfa>" 0x1ee8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# animation::debug_print@22
+DEVBLOCK 0x892
+# animation::_play@e6
+DEVBLOCK 0xb66
+# animation::_play@244
+DEVBLOCK 0xcc4
+# animation::_play@248
+DEVBLOCK 0xcc8
+# animation::_play@56a
+DEVBLOCK 0xfea
+# animation::_play@7a2
+DEVBLOCK 0x1222
+# animation::_get_align_pos@8c
+DEVBLOCK 0x150c
+# animation::_reach@26a
+DEVBLOCK 0x1aba
+# animation::debug_anim_reach@2
+DEVBLOCK 0x1c22
+# animation::add_notetrack_func@30
+DEVBLOCK 0x1ee0
+# animation::attach_weapon@f2
+DEVBLOCK 0x2a62
+# animation::function_eb0aa7cf@5a
+DEVBLOCK 0x2d8a
+# animation::function_eb0aa7cf@23a
+DEVBLOCK 0x2f6a

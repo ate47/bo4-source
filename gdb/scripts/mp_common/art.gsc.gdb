@@ -1,7 +1,9 @@
 NAME scripts\mp_common\art.gsc
 VERSION 0
 CHECKSUM 0xe08f8dc0
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # art::dumpsettings@210
 STRING "<dev string:x10c>" 0x1620
 # art::dumpsettings@240
@@ -52,3 +54,14 @@ STRING "<dev string:xdc>" 0x1590
 STRING "<dev string:xec>" 0x15c0
 # art::dumpsettings@1e0
 STRING "<dev string:xfc>" 0x15f0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# art::__init__@114
+DEVBLOCK 0x1d4
+# art::artfxprintln@12
+DEVBLOCK 0x20a
+# art::tweakart@3a
+DEVBLOCK 0x512
+# art::dumpsettings@2
+DEVBLOCK 0x1412

@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_red.gsc
 VERSION 0
 CHECKSUM 0x4282b3a8
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_red::function_acb5b0ec@60
 STRING "<dev string:x105>" 0x71b8
 # zm_red::function_acb5b0ec@420
@@ -226,3 +228,46 @@ STRING "<dev string:xf26>" 0x7530
 STRING "<dev string:xf8f>" 0x7548
 # zm_red::function_acb5b0ec@408
 STRING "<dev string:xff2>" 0x7560
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_red::main@ad8
+DEVBLOCK 0x1810
+# zm_red::main@b4c
+DEVBLOCK 0x1884
+# zm_red::function_c000f08b@1c4
+DEVBLOCK 0x2944
+# zm_red::play_outro@25a
+DEVBLOCK 0x5342
+# zm_red::function_d4ff1dd6@a
+DEVBLOCK 0x63aa
+# zm_red::function_acb5b0ec@2
+DEVBLOCK 0x715a
+# zm_red::function_76dc48b8@fa
+DEVBLOCK 0x7b0a
+# zm_red::function_7c8b5f27@a
+DEVBLOCK 0x9482
+# zm_red::function_71a6c3ea@2
+DEVBLOCK 0x94e2
+# zm_red::function_313ff13@2
+DEVBLOCK 0x953a
+# zm_red::spawn_pegasus@2
+DEVBLOCK 0x959a
+# zm_red::ride_pegasus@32
+DEVBLOCK 0x9622
+# zm_red::free_eagles@1a
+DEVBLOCK 0x9822
+# zm_red::complete_pap@a
+DEVBLOCK 0x9aaa
+# zm_red::function_f39d0796@2
+DEVBLOCK 0x9e52
+# zm_red::function_3594d78b@2
+DEVBLOCK 0x9e8a
+# zm_red::function_590ce3bd@2
+DEVBLOCK 0x9eb2
+# zm_red::function_80b73b4@2
+DEVBLOCK 0x9eda
+# zm_red::function_e8760afa@6a
+DEVBLOCK 0xa08a
+# zm_red::function_bb5a8b5e@4a
+DEVBLOCK 0xa212

@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_powerups.gsc
 VERSION 0
 CHECKSUM 0x235df8c1
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_powerups::print_powerup_drop@c8
 STRING "<dev string:x111>" 0x63f8
 # zm_powerups::print_powerup_drop@e8
@@ -32,3 +34,26 @@ STRING "<dev string:xc8>" 0x4404 0x4a3c
 STRING "<dev string:xdf>" 0x63b4
 # zm_powerups::print_powerup_drop@b0
 STRING "<dev string:xe8>" 0x63e0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_powerups::powerup_hud_monitor@35a
+DEVBLOCK 0x1072
+# zm_powerups::get_valid_powerup@12
+DEVBLOCK 0x15b2
+# zm_powerups::powerup_drop@d6
+DEVBLOCK 0x2bc6
+# zm_powerups::powerup_drop@30a
+DEVBLOCK 0x2dfa
+# zm_powerups::powerup_setup@10c
+DEVBLOCK 0x3c8c
+# zm_powerups::powerup_zombie_grab@332
+DEVBLOCK 0x43fa
+# zm_powerups::powerup_grab@59a
+DEVBLOCK 0x4a32
+# zm_powerups::print_powerup_drop@1a
+DEVBLOCK 0x634a
+# zm_powerups::register_powerup@1a
+DEVBLOCK 0x7702
+# zm_powerups::register_powerup_weapon@12
+DEVBLOCK 0x7862

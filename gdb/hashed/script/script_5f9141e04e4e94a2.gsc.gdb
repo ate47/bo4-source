@@ -1,7 +1,9 @@
 NAME script_5f9141e04e4e94a2
 VERSION 0
 CHECKSUM 0x15c69fc6
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_825eac6b::function_9d66ea6f@4c namespace_825eac6b::function_9d66ea6f@70
 STRING "<dev string:x38>" 0xc3c 0xc60
 # namespace_825eac6b::start_step_2@1cc
@@ -16,3 +18,18 @@ STRING "<dev string:xa4>" 0x1abc
 STRING "<dev string:xc1>" 0x223c 0x2260
 # namespace_825eac6b::complete_quest@4c namespace_825eac6b::complete_quest@80
 STRING "<dev string:xde>" 0x27bc 0x27f0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_825eac6b::function_9d66ea6f@12
+DEVBLOCK 0xc02
+# namespace_825eac6b::start_step_2@1c2
+DEVBLOCK 0xffa
+# namespace_825eac6b::function_fe82c566@370
+DEVBLOCK 0x1720
+# namespace_825eac6b::function_92344a03@33a
+DEVBLOCK 0x1ab2
+# namespace_825eac6b::function_b9a31cb@12
+DEVBLOCK 0x2202
+# namespace_825eac6b::complete_quest@2
+DEVBLOCK 0x2772

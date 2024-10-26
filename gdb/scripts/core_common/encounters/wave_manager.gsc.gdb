@@ -1,7 +1,9 @@
 NAME scripts\core_common\encounters\wave_manager.gsc
 VERSION 0
 CHECKSUM 0xc5f21468
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wave_manager_sys::debug_think@38c
 STRING "<dev string:x11e>" 0xa84
 # wave_manager_sys::debug_think@3b0 wave_manager_sys::debug_think@4e8
@@ -102,3 +104,76 @@ STRING "<dev string:xde>" 0x8d4
 STRING "<dev string:xe8>" 0x904
 # wave_manager_sys::debug_think@288 wave_manager_sys::debug_think@348 wave_manager_sys::debug_think@470 wave_manager_sys::debug_think@6b8
 STRING "<dev string:xf4>" 0x980 0xa40 0xb68 0xdb0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wave_manager_sys::__init__@1c
+DEVBLOCK 0x404
+# wave_manager_sys::update_devgui@4a
+DEVBLOCK 0x592
+# wave_manager_sys::debug_think@13a
+DEVBLOCK 0x832
+# wave_manager_sys::debug_think@1f4
+DEVBLOCK 0x8ec
+# wave_manager_sys::debug_think@30c
+DEVBLOCK 0xa04
+# wave_manager_sys::debug_think@3c8
+DEVBLOCK 0xac0
+# wave_manager_sys::debug_think@500
+DEVBLOCK 0xbf8
+# wave_manager_sys::debug_think@60a
+DEVBLOCK 0xd02
+# wave_manager_sys::debug_think@798
+DEVBLOCK 0xe90
+# wave_manager_sys::debug_think@8da
+DEVBLOCK 0xfd2
+# wave_manager_sys::debug_think@98a
+DEVBLOCK 0x1082
+# wave_manager_sys::debug_think@9f0
+DEVBLOCK 0x10e8
+# wave_manager_sys::debug_think@b1c
+DEVBLOCK 0x1214
+# wave_manager_sys::debug_think@bb2
+DEVBLOCK 0x12aa
+# wave_manager_sys::debug_think@c18
+DEVBLOCK 0x1310
+# wave_manager_sys::debug_think@cca
+DEVBLOCK 0x13c2
+# wave_manager_sys::debug_think@d6e
+DEVBLOCK 0x1466
+# wave_manager_sys::init_flags@12
+DEVBLOCK 0x1afa
+# wave_manager_sys::reset@12
+DEVBLOCK 0x1c52
+# wave_manager_sys::start_internal@40a
+DEVBLOCK 0x2872
+# wave_manager_sys::think@346
+DEVBLOCK 0x2c06
+# wave_manager_sys::function_ff49692b@32
+DEVBLOCK 0x2f62
+# wave_manager_sys::function_ff49692b@52
+DEVBLOCK 0x2f82
+# wave_manager_sys::function_60fa5e02@a
+DEVBLOCK 0x3942
+# wave_manager_sys::function_8f5ed189@6d0
+DEVBLOCK 0x41f0
+# wave_manager_sys::function_8f5ed189@796
+DEVBLOCK 0x42b6
+# wave_manager_sys::function_8f5ed189@874
+DEVBLOCK 0x4394
+# wave_manager_sys::function_8f5ed189@a44
+DEVBLOCK 0x4564
+# wave_manager_sys::function_32b947df@1da
+DEVBLOCK 0x508a
+# wave_manager_sys::function_63e08195@11c
+DEVBLOCK 0x52ec
+# wave_manager_sys::function_fa056daa@60
+DEVBLOCK 0x53b0
+# wave_manager::function_1c556906@b6
+DEVBLOCK 0x5d8e
+# wave_manager::function_1c556906@182
+DEVBLOCK 0x5e5a
+# wave_manager::add_spawn_function@4a
+DEVBLOCK 0x6632
+# wave_manager::remove_spawn_function@92
+DEVBLOCK 0x6a02

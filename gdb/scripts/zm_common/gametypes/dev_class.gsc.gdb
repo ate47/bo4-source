@@ -1,7 +1,9 @@
 NAME scripts\zm_common\gametypes\dev_class.gsc
 VERSION 0
 CHECKSUM 0x7fd13e3c
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # dev_class::dev_cac_init@554
 STRING "<dev string:x10e>" 0x5cc
 # dev_class::dev_cac_init@53c
@@ -114,3 +116,50 @@ STRING "<dev string:xe0>" 0x544 0x55c
 STRING "<dev string:xe6>" 0x594
 # dev_class::dev_cac_init@504
 STRING "<dev string:xfa>" 0x57c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# dev_class::dev_cac_init@22
+DEVBLOCK 0x9a
+# dev_class::dev_cac_camera@a
+DEVBLOCK 0x7e2
+# dev_class::dev_cac_dpad_think@2a
+DEVBLOCK 0x912
+# dev_class::next_in_list@1a
+DEVBLOCK 0xb1a
+# dev_class::prev_in_list@1a
+DEVBLOCK 0xbca
+# dev_class::dev_cac_set_player_model@2
+DEVBLOCK 0xc72
+# dev_class::dev_cac_cycle_body@22
+DEVBLOCK 0xcba
+# dev_class::dev_cac_cycle_head@22
+DEVBLOCK 0xdb2
+# dev_class::dev_cac_cycle_character@22
+DEVBLOCK 0xeba
+# dev_class::dev_cac_cycle_render_options@1a
+DEVBLOCK 0xfba
+# dev_class::dev_cac_player_valid@2
+DEVBLOCK 0x100a
+# dev_class::dev_cac_cycle_player@1a
+DEVBLOCK 0x1062
+# dev_class::highlight_player@2
+DEVBLOCK 0x1142
+# dev_class::dev_cac_overlay_think@a
+DEVBLOCK 0x119a
+# dev_class::dev_cac_overlay_update@a
+DEVBLOCK 0x1212
+# dev_class::dev_cac_overlay_destroy@12
+DEVBLOCK 0x1232
+# dev_class::dev_cac_overlay_create@2a
+DEVBLOCK 0x12ea
+# dev_class::color@32
+DEVBLOCK 0x2072
+# dev_class::dev_cac_gdt_update_think@3a
+DEVBLOCK 0x211a
+# dev_class::sort_greatest@2a
+DEVBLOCK 0x230a
+# dev_class::sort_least@2a
+DEVBLOCK 0x23da
+# dev_class::dev_cac_set_model_range@1a
+DEVBLOCK 0x249a

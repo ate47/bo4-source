@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai\zombie_shared.gsc
 VERSION 0
 CHECKSUM 0x6d38bb11
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zombie_shared::donotetracksforeverproc@f0
 STRING "<dev string:x12d>" 0x14c0
 # zombie_shared::donotetracksforeverproc@100
@@ -22,3 +24,16 @@ STRING "<dev string:xb2>" 0x2f8
 STRING "<dev string:xba>" 0x2dc
 # zombie_shared::donotetracksforeverproc@e0
 STRING "<dev string:xde>" 0x14b0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zombie_shared::lookatposition@2a
+DEVBLOCK 0x26a
+# zombie_shared::lookatposition@5a
+DEVBLOCK 0x29a
+# zombie_shared::lookatposition@92
+DEVBLOCK 0x2d2
+# zombie_shared::donotetracksforeverproc@d4
+DEVBLOCK 0x14a4
+# zombie_shared::movetooriginovertime@88
+DEVBLOCK 0x1950

@@ -1,7 +1,9 @@
 NAME scripts\mp_common\devgui.gsc
 VERSION 0
 CHECKSUM 0x4d91b194
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # devgui::__init__@b8 devgui::devgui_add_player_weapons@17c devgui::devgui_attachment_cycling_clear@14 devgui::devgui_attachment_cycling_update@104 devgui::devgui_attachment_cycling_update@124 devgui::devgui_attachment_cycling_update@1c0 devgui::devgui_attachment_cycling_update@224 devgui::devgui_attachment_cycling_update@268 devgui::devgui_attachment_cycling_think@48 devgui::devgui_give_weapon@2a0
 STRING "<dev string:x112>" 0x1e0 0x1474 0x1ac4 0x1bfc 0x1c1c 0x1cb8 0x1d1c 0x1d60 0x1ef0 0x22c8
 # devgui::__init__@e4
@@ -290,3 +292,78 @@ STRING "<dev string:x9f>" 0x1b0 0x1054
 STRING "<dev string:xc9>" 0x1c8 0x10d0
 # devgui::__init__@c0 devgui::devgui_player_weapons@444 devgui::devgui_player_weapons@470 devgui::devgui_player_weapons@4e0 devgui::devgui_player_weapons@570
 STRING "<dev string:xed>" 0x1e8 0x1124 0x1150 0x11c0 0x1250
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# devgui::__init__system__@2
+DEVBLOCK 0xd2
+# devgui::__init__@2
+DEVBLOCK 0x12a
+# devgui::on_player_connect@2
+DEVBLOCK 0x4a2
+# devgui::devgui_player_spawn@3a
+DEVBLOCK 0x50a
+# devgui::devgui_player_spawn_think@32
+DEVBLOCK 0x652
+# devgui::devgui_vehicle_spawn_think@a
+DEVBLOCK 0x7a2
+# devgui::function_cb7cee87@5a
+DEVBLOCK 0x8ea
+# devgui::function_42644f29@12
+DEVBLOCK 0xb92
+# devgui::devgui_player_weapons@62
+DEVBLOCK 0xd42
+# devgui::devgui_add_player_weapons@72
+DEVBLOCK 0x136a
+# devgui::devgui_add_player_weap_command@22
+DEVBLOCK 0x1532
+# devgui::devgui_weapon_think@a
+DEVBLOCK 0x15aa
+# devgui::hero_art_on_player_connect@2
+DEVBLOCK 0x164a
+# devgui::devgui_weapon_asset_name_display_think@6a
+DEVBLOCK 0x16e2
+# devgui::devgui_attachment_cycling_clear@a
+DEVBLOCK 0x1aba
+# devgui::devgui_attachment_cycling_update@62
+DEVBLOCK 0x1b5a
+# devgui::devgui_attachment_cycling_think@1a
+DEVBLOCK 0x1ec2
+# devgui::devgui_give_weapon@ca
+DEVBLOCK 0x20f2
+# devgui::devgui_give_weapon@ce
+DEVBLOCK 0x20f6
+# devgui::devgui_give_weapon@ea
+DEVBLOCK 0x2112
+# devgui::devgui_handle_player_command@2a
+DEVBLOCK 0x28aa
+# devgui::init_debug_center_screen@a
+DEVBLOCK 0x29ca
+# devgui::debug_center_screen@2
+DEVBLOCK 0x2afa
+# devgui::add_vehicle_at_eye_trace@2a
+DEVBLOCK 0x2bca
+# devgui::watch_player_death@12
+DEVBLOCK 0x2cea
+# devgui::devgui_add_ve_map_switches@2
+DEVBLOCK 0x2d72
+# devgui::function_6a24e58f@92
+DEVBLOCK 0x2e62
+# devgui::function_7bef8d25@1a
+DEVBLOCK 0x3452
+# devgui::function_46b22d99@22
+DEVBLOCK 0x3602
+# devgui::function_be0f9897@22
+DEVBLOCK 0x37c2
+# devgui::function_773432e2@22
+DEVBLOCK 0x39a2
+# devgui::function_e4b86469@12
+DEVBLOCK 0x3bea
+# devgui::function_51cc2292@12
+DEVBLOCK 0x3d1a
+# devgui::function_9fb69cba@2
+DEVBLOCK 0x3e8a
+# devgui::function_354e12a4@52
+DEVBLOCK 0x3f12
+# devgui::function_57edec18@1a
+DEVBLOCK 0x41b2

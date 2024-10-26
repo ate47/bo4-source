@@ -1,7 +1,9 @@
 NAME scripts\zm_common\gametypes\zstandard.gsc
 VERSION 0
 CHECKSUM 0x7e27490
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zstandard::function_6c2b3729@a8
 STRING "<dev string:x126>" 0x1010
 # zstandard::function_6c2b3729@c0
@@ -54,3 +56,38 @@ STRING "<dev string:x38>" 0xfc8
 STRING "<dev string:x8a>" 0xfe0
 # zstandard::function_6c2b3729@90
 STRING "<dev string:xdf>" 0xff8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zstandard::main@722
+DEVBLOCK 0xec2
+# zstandard::function_6c2b3729@32
+DEVBLOCK 0xf9a
+# zstandard::function_2f63dc81@3a
+DEVBLOCK 0x1192
+# zstandard::function_e0c53cf@26
+DEVBLOCK 0x25de
+# zstandard::function_cd6476e@2a
+DEVBLOCK 0x3c7a
+# zstandard::function_ac4cc1ba@c8
+DEVBLOCK 0x4a18
+# zstandard::function_ec53cb2c@a
+DEVBLOCK 0x7a5a
+# zstandard::function_21669ebc@a0
+DEVBLOCK 0x7bb8
+# zstandard::function_21669ebc@242
+DEVBLOCK 0x7d5a
+# zstandard::function_21669ebc@342
+DEVBLOCK 0x7e5a
+# zstandard::function_21669ebc@3ba
+DEVBLOCK 0x7ed2
+# zstandard::function_cab8ebff@40
+DEVBLOCK 0x85d8
+# zstandard::function_cab8ebff@c2
+DEVBLOCK 0x865a
+# zstandard::function_cab8ebff@10a
+DEVBLOCK 0x86a2
+# zstandard::function_cab8ebff@162
+DEVBLOCK 0x86fa
+# zstandard::function_cab8ebff@25a
+DEVBLOCK 0x87f2

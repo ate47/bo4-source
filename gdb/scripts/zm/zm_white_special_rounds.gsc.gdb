@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_white_special_rounds.gsc
 VERSION 0
 CHECKSUM 0x6d5273da
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_white_special_rounds::function_778aec95@2cc
 STRING "<dev string:x101>" 0x33fc
 # zm_white_special_rounds::function_778aec95@38c
@@ -54,3 +56,52 @@ STRING "<dev string:xc3>" 0x2c78
 STRING "<dev string:xe1>" 0x2c98
 # zm_white_special_rounds::function_778aec95@2bc
 STRING "<dev string:xf6>" 0x33ec
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_white_special_rounds::init@25c
+DEVBLOCK 0xf84
+# zm_white_special_rounds::function_2fc11fb8@14
+DEVBLOCK 0x2c0c
+# zm_white_special_rounds::function_2fc11fb8@36
+DEVBLOCK 0x2c2e
+# zm_white_special_rounds::function_2fc11fb8@56
+DEVBLOCK 0x2c4e
+# zm_white_special_rounds::function_2fc11fb8@76
+DEVBLOCK 0x2c6e
+# zm_white_special_rounds::function_2fc11fb8@96
+DEVBLOCK 0x2c8e
+# zm_white_special_rounds::function_778aec95@262
+DEVBLOCK 0x3392
+# zm_white_special_rounds::function_778aec95@382
+DEVBLOCK 0x34b2
+# zm_white_special_rounds::function_27a8604b@194
+DEVBLOCK 0x3f3c
+# zm_white_special_rounds::function_85644731@2
+DEVBLOCK 0x5002
+# zm_white_special_rounds::function_1fef0f43@6a
+DEVBLOCK 0x5102
+# zm_white_special_rounds::function_1605f69a@22
+DEVBLOCK 0x5172
+# zm_white_special_rounds::function_94cdb242@6e
+DEVBLOCK 0x5266
+# zm_white_special_rounds::function_cd39be3@2a
+DEVBLOCK 0x5312
+# zm_white_special_rounds::function_ab8edf2c@76
+DEVBLOCK 0x545e
+# zm_white_special_rounds::function_8f9249e9@2
+DEVBLOCK 0x550a
+# zm_white_special_rounds::function_19e428bc@2
+DEVBLOCK 0x557a
+# zm_white_special_rounds::function_2330b278@868
+DEVBLOCK 0x6540
+# zm_white_special_rounds::function_2330b278@d1a
+DEVBLOCK 0x69f2
+# zm_white_special_rounds::function_2330b278@dae
+DEVBLOCK 0x6a86
+# zm_white_special_rounds::function_2330b278@e46
+DEVBLOCK 0x6b1e
+# zm_white_special_rounds::function_6acd363d@aa
+DEVBLOCK 0x6ffa
+# zm_white_special_rounds::function_696a0eca@37a
+DEVBLOCK 0x7cf2

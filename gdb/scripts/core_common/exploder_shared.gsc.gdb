@@ -1,7 +1,9 @@
 NAME scripts\core_common\exploder_shared.gsc
 VERSION 0
 CHECKSUM 0xf833917
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # exploder::reportexploderids@90
 STRING "<dev string:x11c>" 0x2108
 # exploder::activate_individual_exploder@a4
@@ -30,3 +32,28 @@ STRING "<dev string:xcc>" 0xbe0
 STRING "<dev string:xe2>" 0xbf4
 # exploder::reportexploderids@3c
 STRING "<dev string:xfc>" 0x20b4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# exploder::__main__@434
+DEVBLOCK 0x624
+# exploder::__main__@504
+DEVBLOCK 0x6f4
+# exploder::__main__@5d4
+DEVBLOCK 0x7c4
+# exploder::__main__@9e8
+DEVBLOCK 0xbd8
+# exploder::brush_delete@78
+DEVBLOCK 0x1bf8
+# exploder::brush_show@3c
+DEVBLOCK 0x1cdc
+# exploder::reportexploderids@22
+DEVBLOCK 0x209a
+# exploder::activate_individual_exploder@9a
+DEVBLOCK 0x24ea
+# exploder::kill_exploder@3c
+DEVBLOCK 0x29cc
+# exploder::earthquake@2e
+DEVBLOCK 0x2b4e
+# exploder::rumble@a4
+DEVBLOCK 0x2ce4

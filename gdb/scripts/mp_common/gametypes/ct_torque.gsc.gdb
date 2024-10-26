@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\ct_torque.gsc
 VERSION 0
 CHECKSUM 0xa18d04d2
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ct_torque::function_d69c54a8@b0
 STRING "<dev string:x115>" 0x5b50
 # ct_torque::function_d69c54a8@c8
@@ -64,3 +66,20 @@ STRING "<dev string:xa1b>" 0x5e6c 0x5ec0
 STRING "<dev string:xa2c>" 0x5e64 0x5eb8
 # ct_torque::function_d69c54a8@94
 STRING "<dev string:xb1>" 0x5b34
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ct_torque::function_6db6572b@264
+DEVBLOCK 0xdd4
+# ct_torque::spawn_zombies@27c
+DEVBLOCK 0x16bc
+# ct_torque::function_76a85acc@a
+DEVBLOCK 0x22c2
+# ct_torque::function_5a57b177@13c
+DEVBLOCK 0x242c
+# ct_torque::vip_checkpoint_action@1c4
+DEVBLOCK 0x3fb4
+# ct_torque::function_b47c8ec8@a
+DEVBLOCK 0x45c2
+# ct_torque::function_d69c54a8@22
+DEVBLOCK 0x5ac2

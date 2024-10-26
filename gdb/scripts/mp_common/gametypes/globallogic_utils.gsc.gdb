@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\globallogic_utils.gsc
 VERSION 0
 CHECKSUM 0xf3852e2c
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # globallogic_utils::print_map_errors@b0
 STRING "<dev string:x10a>" 0x1910
 # globallogic_utils::assertproperplacement@bc globallogic_utils::assertproperplacement@1fc
@@ -30,3 +32,30 @@ STRING "<dev string:xae>" 0x1898
 STRING "<dev string:xd7>" 0x18c8
 # globallogic_utils::print_map_errors@98
 STRING "<dev string:xe1>" 0x18f8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# globallogic_utils::assertproperplacement@22
+DEVBLOCK 0x61a
+# globallogic_utils::assertproperplacement@15c
+DEVBLOCK 0x754
+# globallogic_utils::assertproperplacement@29c
+DEVBLOCK 0x894
+# globallogic_utils::getscoreremaining@12
+DEVBLOCK 0xe7a
+# globallogic_utils::getscoreperminute@12
+DEVBLOCK 0xf9a
+# globallogic_utils::getestimatedtimeuntilscorelimit@1a
+DEVBLOCK 0x1082
+# globallogic_utils::waitfortimeornotifynoartillery@32
+DEVBLOCK 0x11c2
+# globallogic_utils::debugline@1a
+DEVBLOCK 0x14ca
+# globallogic_utils::function_8d61a6c2@3a
+DEVBLOCK 0x1612
+# globallogic_utils::function_8d61a6c2@3e
+DEVBLOCK 0x1616
+# globallogic_utils::function_8d61a6c2@5a
+DEVBLOCK 0x1632
+# globallogic_utils::print_map_errors@30
+DEVBLOCK 0x1890

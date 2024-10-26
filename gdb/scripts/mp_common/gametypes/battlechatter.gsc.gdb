@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\battlechatter.gsc
 VERSION 0
 CHECKSUM 0x45788f36
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # battlechatter::response_key@44
 STRING "<dev string:x105>" 0xdc8c
 # battlechatter::response_key@4c
@@ -36,3 +38,30 @@ STRING "<dev string:xe6>" 0xdc74
 STRING "<dev string:xf0>" 0xdc7c
 # battlechatter::response_key@3c
 STRING "<dev string:xfb>" 0xdc84
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# battlechatter::__init__@5a
+DEVBLOCK 0xc7a
+# battlechatter::incoming_projectile_alert@54
+DEVBLOCK 0x6bd4
+# battlechatter::devgui_think@12
+DEVBLOCK 0xd5ba
+# battlechatter::test_other_dialog@32
+DEVBLOCK 0xd9ea
+# battlechatter::test_player_dialog@a
+DEVBLOCK 0xdab2
+# battlechatter::test_taacom_dialog@a
+DEVBLOCK 0xdb22
+# battlechatter::test_commander_dialog@a
+DEVBLOCK 0xdb8a
+# battlechatter::play_test_dialog@12
+DEVBLOCK 0xdbfa
+# battlechatter::response_key@2
+DEVBLOCK 0xdc4a
+# battlechatter::play_conv_self_other@32
+DEVBLOCK 0xdd92
+# battlechatter::play_conv_other_self@32
+DEVBLOCK 0xdeda
+# battlechatter::play_conv_other_other@52
+DEVBLOCK 0xe042

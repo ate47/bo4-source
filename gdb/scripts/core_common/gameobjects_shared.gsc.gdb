@@ -1,7 +1,9 @@
 NAME scripts\core_common\gameobjects_shared.gsc
 VERSION 0
 CHECKSUM 0xf90f452
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # gameobjects::show_waypoint@64
 STRING "<dev string:x112>" 0xc114
 # gameobjects::gameobject_is_player_looking_at@74
@@ -48,3 +50,80 @@ STRING "<dev string:x6a>" 0x56a4
 STRING "<dev string:xa3>" 0x6da4
 # gameobjects::hide_waypoint@64
 STRING "<dev string:xd3>" 0xc04c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# gameobjects::defaultuseratescalercallback@44
+DEVBLOCK 0x2374
+# gameobjects::defaultallowweaponscallback@3c
+DEVBLOCK 0x24dc
+# gameobjects::create_carry_object@274
+DEVBLOCK 0x2ae4
+# gameobjects::give_object@1a
+DEVBLOCK 0x35ca
+# gameobjects::should_be_reset@1a6
+DEVBLOCK 0x4dd6
+# gameobjects::take_object@ba
+DEVBLOCK 0x51e2
+# gameobjects::take_object@1a2
+DEVBLOCK 0x52ca
+# gameobjects::function_6e870d38@12
+DEVBLOCK 0x569a
+# gameobjects::watchholdusedrop@5e
+DEVBLOCK 0x5bf6
+# gameobjects::watchholdusedrop@82
+DEVBLOCK 0x5c1a
+# gameobjects::function_2544bab6@56
+DEVBLOCK 0x613e
+# gameobjects::create_use_object@27c
+DEVBLOCK 0x6d9c
+# gameobjects::function_4d047b8d@20
+DEVBLOCK 0x7100
+# gameobjects::function_4d047b8d@42
+DEVBLOCK 0x7122
+# gameobjects::get_earliest_claim_player@3a
+DEVBLOCK 0x7d82
+# gameobjects::set_claim_team@a
+DEVBLOCK 0x9b1a
+# gameobjects::hide_waypoint@5c
+DEVBLOCK 0xc044
+# gameobjects::show_waypoint@5c
+DEVBLOCK 0xc10c
+# gameobjects::gameobject_is_player_looking_at@6a
+DEVBLOCK 0xcf42
+# gameobjects::set_carry_icon@a
+DEVBLOCK 0xd3fa
+# gameobjects::can_interact_with@294
+DEVBLOCK 0xe604
+# gameobjects::set_absolute_visible_and_interact_team@24
+DEVBLOCK 0xe89c
+# gameobjects::get_next_obj_id@74
+DEVBLOCK 0xe974
+# gameobjects::release_obj_id@12
+DEVBLOCK 0xe9ba
+# gameobjects::release_obj_id@7e
+DEVBLOCK 0xea26
+# gameobjects::release_obj_id@82
+DEVBLOCK 0xea2a
+# gameobjects::create_pack_object@84
+DEVBLOCK 0xed54
+# gameobjects::create_pack_object@1e4
+DEVBLOCK 0xeeb4
+# gameobjects::create_pack_object@2cc
+DEVBLOCK 0xef9c
+# gameobjects::set_pack_icon@a
+DEVBLOCK 0xf422
+# gameobjects::init_game_objects@bc
+DEVBLOCK 0xf52c
+# cinteractobj::__destructor@2
+DEVBLOCK 0xf5ba
+# cinteractobj::init_game_object@90
+DEVBLOCK 0xf698
+# cinteractobj::init_game_object@160
+DEVBLOCK 0xf768
+# cinteractobj::init_game_object@694
+DEVBLOCK 0xfc9c
+# cinteractobj::create_gameobject_trigger@300
+DEVBLOCK 0x10008
+# cinteractobj::create_gameobject_trigger@370
+DEVBLOCK 0x10078

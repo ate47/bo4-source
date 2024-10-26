@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_white.gsc
 VERSION 0
 CHECKSUM 0x1b0e3456
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_white::white_devgui@60
 STRING "<dev string:x15c>" 0x4fc0
 # zm_white::white_devgui@78
@@ -38,3 +40,12 @@ STRING "<dev string:x49e>" 0x529c
 STRING "<dev string:xa4>" 0x4f90
 # zm_white::white_devgui@48
 STRING "<dev string:xfc>" 0x4fa8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_white::main@ac2
+DEVBLOCK 0x179a
+# zm_white::main@c42
+DEVBLOCK 0x191a
+# zm_white::white_devgui@a
+DEVBLOCK 0x4f6a

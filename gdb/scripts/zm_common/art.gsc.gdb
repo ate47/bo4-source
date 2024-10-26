@@ -1,7 +1,9 @@
 NAME scripts\zm_common\art.gsc
 VERSION 0
 CHECKSUM 0xb20e7678
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # art::dumpsettings@210
 STRING "<dev string:x10c>" 0x1658
 # art::dumpsettings@240
@@ -52,3 +54,14 @@ STRING "<dev string:xdc>" 0x15c8
 STRING "<dev string:xec>" 0x15f8
 # art::dumpsettings@1e0
 STRING "<dev string:xfc>" 0x1628
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# art::__init__@114
+DEVBLOCK 0x1e4
+# art::artfxprintln@12
+DEVBLOCK 0x242
+# art::tweakart@3a
+DEVBLOCK 0x54a
+# art::dumpsettings@2
+DEVBLOCK 0x144a

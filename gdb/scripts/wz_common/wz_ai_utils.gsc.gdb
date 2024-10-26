@@ -1,7 +1,9 @@
 NAME scripts\wz_common\wz_ai_utils.gsc
 VERSION 0
 CHECKSUM 0x652d802b
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wz_ai_utils::debug_ai@9c
 STRING "<dev string:x103>" 0xb3c
 # wz_ai_utils::debug_ai@b8
@@ -64,3 +66,24 @@ STRING "<dev string:xea>" 0x8d8
 STRING "<dev string:xee>" 0xb08
 # wz_ai_utils::debug_ai@80
 STRING "<dev string:xfa>" 0xb20
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wz_ai_utils::__init__@48
+DEVBLOCK 0x2f8
+# wz_ai_utils::function_b4f41a02@7a
+DEVBLOCK 0x6e2
+# wz_ai_utils::debug_ai@42
+DEVBLOCK 0xae2
+# wz_ai_utils::function_7adc1e46@b2
+DEVBLOCK 0x22aa
+# wz_ai_utils::ai_wz_can_see@8a
+DEVBLOCK 0x28a2
+# wz_ai_utils::function_bdb2b85b@d0
+DEVBLOCK 0x4a48
+# wz_ai_utils::function_bdb2b85b@274
+DEVBLOCK 0x4bec
+# wz_ai_utils::function_bdb2b85b@2fc
+DEVBLOCK 0x4c74
+# wz_ai_utils::function_bdb2b85b@322
+DEVBLOCK 0x4c9a

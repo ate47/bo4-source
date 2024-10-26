@@ -1,7 +1,9 @@
 NAME scripts\zm_common\fx.gsc
 VERSION 0
 CHECKSUM 0xfe1d36c3
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # fx::print_org@50
 STRING "<dev string:x38>" 0xe0
 # fx::print_org@68
@@ -22,3 +24,8 @@ STRING "<dev string:x94>" 0x1a8
 STRING "<dev string:xa6>" 0x1d0
 # fx::print_org@168
 STRING "<dev string:xb9>" 0x1f8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# fx::print_org@22
+DEVBLOCK 0xb2

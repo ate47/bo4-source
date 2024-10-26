@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_utility_zstandard.gsc
 VERSION 0
 CHECKSUM 0x654eb4aa
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_utility::function_34bcd465@1d0
 STRING "<dev string:x115>" 0x1f80
 # zm_utility::function_34bcd465@1e4
@@ -30,3 +32,28 @@ STRING "<dev string:x8b>" 0x1034
 STRING "<dev string:xe1>" 0x1b24
 # zm_utility::drop_key@8c
 STRING "<dev string:xfd>" 0x1b34
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_utility::function_9ac7ed7d@ea
+DEVBLOCK 0x100a
+# zm_utility::function_9ac7ed7d@10a
+DEVBLOCK 0x102a
+# zm_utility::drop_key@74
+DEVBLOCK 0x1b1c
+# zm_utility::function_34bcd465@1bc
+DEVBLOCK 0x1f6c
+# zm_utility::function_c492c4d6@fc
+DEVBLOCK 0x22b4
+# zm_utility::function_c492c4d6@100
+DEVBLOCK 0x22b8
+# zm_utility::function_1e856719@4a
+DEVBLOCK 0x23da
+# zm_utility::function_1e856719@a2
+DEVBLOCK 0x2432
+# zm_utility::function_1e856719@12a
+DEVBLOCK 0x24ba
+# zm_utility::function_a877cd10@a
+DEVBLOCK 0x2902
+# zm_utility::function_a877cd10@e
+DEVBLOCK 0x2906

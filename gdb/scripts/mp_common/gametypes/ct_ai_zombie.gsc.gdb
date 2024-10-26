@@ -1,4 +1,44 @@
 NAME scripts\mp_common\gametypes\ct_ai_zombie.gsc
 VERSION 0
 CHECKSUM 0x1e2b4937
-
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# mp_ai_zombie::initzombiebehaviors@2
+DEVBLOCK 0xa2a
+# mp_ai_zombie::initzombiebehaviors@72
+DEVBLOCK 0xa9a
+# mp_ai_zombie::initzombiebehaviors@da
+DEVBLOCK 0xb02
+# mp_ai_zombie::initzombiebehaviors@142
+DEVBLOCK 0xb6a
+# mp_ai_zombie::initzombiebehaviors@1aa
+DEVBLOCK 0xbd2
+# mp_ai_zombie::initzombiebehaviors@212
+DEVBLOCK 0xc3a
+# mp_ai_zombie::initzombiebehaviors@27a
+DEVBLOCK 0xca2
+# mp_ai_zombie::initzombiebehaviors@2e2
+DEVBLOCK 0xd0a
+# mp_ai_zombie::initzombiebehaviors@34a
+DEVBLOCK 0xd72
+# mp_ai_zombie::initzombiebehaviors@3b2
+DEVBLOCK 0xdda
+# mp_ai_zombie::initzombiebehaviors@41a
+DEVBLOCK 0xe42
+# mp_ai_zombie::initzombiebehaviors@482
+DEVBLOCK 0xeaa
+# mp_ai_zombie::initzombiebehaviors@4ea
+DEVBLOCK 0xf12
+# mp_ai_zombie::initzombiebehaviors@552
+DEVBLOCK 0xf7a
+# mp_ai_zombie::initzombiebehaviors@5ba
+DEVBLOCK 0xfe2
+# mp_ai_zombie::initzombiebehaviors@622
+DEVBLOCK 0x104a
+# mp_ai_zombie::initzombiebehaviors@68a
+DEVBLOCK 0x10b2
+# mp_ai_zombie::initzombiebehaviors@6f2
+DEVBLOCK 0x111a
+# mp_ai_zombie::initzombiebehaviors@75a
+DEVBLOCK 0x1182

@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_red_main_quest.gsc
 VERSION 0
 CHECKSUM 0x69452013
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_red_main_quest::play_think@d7c
 STRING "<dev string:x107>" 0x12da4
 # zm_red_main_quest::play_think@d9c
@@ -44,3 +46,62 @@ STRING "<dev string:xcb>" 0x12d44
 STRING "<dev string:xe9>" 0x12d64
 # zm_red_main_quest::play_think@d5c
 STRING "<dev string:xf6>" 0x12d84
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_red_main_quest::shoot_roots_setup@e0
+DEVBLOCK 0x8828
+# zm_red_main_quest::defeat_gegenees_setup@74
+DEVBLOCK 0x975c
+# zm_red_main_quest::take_spear_setup@78
+DEVBLOCK 0x9bd0
+# zm_red_main_quest::place_spear_setup@48
+DEVBLOCK 0x9f68
+# zm_red_main_quest::sundial_puzzle_setup@38
+DEVBLOCK 0xa3a0
+# zm_red_main_quest::take_ankh_setup@6c
+DEVBLOCK 0xd064
+# zm_red_main_quest::give_ankh_setup@74
+DEVBLOCK 0xd2f4
+# zm_red_main_quest::defend_ra_setup@38
+DEVBLOCK 0xd5a8
+# zm_red_main_quest::take_staff_setup@13c
+DEVBLOCK 0x10474
+# zm_red_main_quest::give_staff_setup@7c
+DEVBLOCK 0x108dc
+# zm_red_main_quest::function_29a8dcd4@72
+DEVBLOCK 0x110f2
+# zm_red_main_quest::function_488a4eb2@8a
+DEVBLOCK 0x11222
+# zm_red_main_quest::play_setup@5a
+DEVBLOCK 0x11a72
+# zm_red_main_quest::play_cleanup@302
+DEVBLOCK 0x11da2
+# zm_red_main_quest::play_think@bde
+DEVBLOCK 0x12c06
+# zm_red_main_quest::play_think@c9a
+DEVBLOCK 0x12cc2
+# zm_red_main_quest::play_think@f20
+DEVBLOCK 0x12f48
+# zm_red_main_quest::function_14727b8f@1f4
+DEVBLOCK 0x14c2c
+# zm_red_main_quest::function_14727b8f@7e2
+DEVBLOCK 0x1521a
+# zm_red_main_quest::blood_setup@92
+DEVBLOCK 0x1861a
+# zm_red_main_quest::door_interact_setup@74
+DEVBLOCK 0x18d3c
+# zm_red_main_quest::mid_igc_setup@17e
+DEVBLOCK 0x198be
+# zm_red_main_quest::cleanse_setup@23a
+DEVBLOCK 0x1c0f2
+# zm_red_main_quest::push_ballista_setup@38
+DEVBLOCK 0x1d210
+# zm_red_main_quest::ignite_ballista_setup@40
+DEVBLOCK 0x1d9b8
+# zm_red_main_quest::teleport_setup@78
+DEVBLOCK 0x1e080
+# zm_red_main_quest::function_69e1a1fc@2
+DEVBLOCK 0x1ed7a
+# zm_red_main_quest::function_25bb4829@32
+DEVBLOCK 0x1f16a

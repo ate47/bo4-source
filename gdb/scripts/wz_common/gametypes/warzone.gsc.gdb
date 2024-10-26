@@ -1,7 +1,9 @@
 NAME scripts\wz_common\gametypes\warzone.gsc
 VERSION 0
 CHECKSUM 0x7aa8270e
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # warzone::function_23600e7d@110 warzone::function_23600e7d@7d0
 STRING "<dev string:x123>" 0x1bc0 0x2280
 # warzone::function_23600e7d@1c0
@@ -110,3 +112,116 @@ STRING "<dev string:x77>" 0x1924
 STRING "<dev string:xab>" 0x194c
 # warzone::function_23600e7d@c8
 STRING "<dev string:xec>" 0x1b78
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# warzone::main@e2a
+DEVBLOCK 0x162a
+# warzone::function_5d7553c9@2
+DEVBLOCK 0x17aa
+# warzone::function_5d7553c9@108
+DEVBLOCK 0x18b0
+# warzone::function_c2a75696@12
+DEVBLOCK 0x18fa
+# warzone::function_23600e7d@94
+DEVBLOCK 0x1b44
+# warzone::function_23600e7d@c0
+DEVBLOCK 0x1b70
+# warzone::function_23600e7d@108
+DEVBLOCK 0x1bb8
+# warzone::function_23600e7d@1b8
+DEVBLOCK 0x1c68
+# warzone::function_23600e7d@598
+DEVBLOCK 0x2048
+# warzone::function_23600e7d@5ba
+DEVBLOCK 0x206a
+# warzone::function_23600e7d@5e2
+DEVBLOCK 0x2092
+# warzone::function_23600e7d@60a
+DEVBLOCK 0x20ba
+# warzone::function_23600e7d@632
+DEVBLOCK 0x20e2
+# warzone::function_23600e7d@65a
+DEVBLOCK 0x210a
+# warzone::function_23600e7d@682
+DEVBLOCK 0x2132
+# warzone::function_23600e7d@6aa
+DEVBLOCK 0x215a
+# warzone::function_23600e7d@6d2
+DEVBLOCK 0x2182
+# warzone::function_23600e7d@6fa
+DEVBLOCK 0x21aa
+# warzone::function_23600e7d@722
+DEVBLOCK 0x21d2
+# warzone::function_23600e7d@752
+DEVBLOCK 0x2202
+# warzone::function_23600e7d@772
+DEVBLOCK 0x2222
+# warzone::function_23600e7d@7c8
+DEVBLOCK 0x2278
+# warzone::function_23600e7d@848
+DEVBLOCK 0x22f8
+# warzone::function_23600e7d@87a
+DEVBLOCK 0x232a
+# warzone::function_23600e7d@924
+DEVBLOCK 0x23d4
+# warzone::function_23600e7d@980
+DEVBLOCK 0x2430
+# warzone::function_23600e7d@a46
+DEVBLOCK 0x24f6
+# warzone::function_23600e7d@a94
+DEVBLOCK 0x2544
+# warzone::function_23600e7d@b02
+DEVBLOCK 0x25b2
+# warzone::function_23600e7d@b36
+DEVBLOCK 0x25e6
+# warzone::function_23600e7d@b8a
+DEVBLOCK 0x263a
+# warzone::function_23600e7d@bd4
+DEVBLOCK 0x2684
+# warzone::function_23600e7d@bf2
+DEVBLOCK 0x26a2
+# warzone::function_23600e7d@c1a
+DEVBLOCK 0x26ca
+# warzone::function_23600e7d@c7e
+DEVBLOCK 0x272e
+# warzone::function_23600e7d@d10
+DEVBLOCK 0x27c0
+# warzone::function_23600e7d@d50
+DEVBLOCK 0x2800
+# warzone::function_23600e7d@d8a
+DEVBLOCK 0x283a
+# warzone::function_23600e7d@e96
+DEVBLOCK 0x2946
+# warzone::function_23600e7d@ec2
+DEVBLOCK 0x2972
+# warzone::function_23600e7d@eea
+DEVBLOCK 0x299a
+# warzone::function_3b0db3c2@72
+DEVBLOCK 0x2e4a
+# warzone::start_insertion@2
+DEVBLOCK 0x2f1a
+# warzone::start_warzone@a2
+DEVBLOCK 0x3112
+# warzone::on_player_spawned@4c6
+DEVBLOCK 0x3bf6
+# warzone::function_e91890a7@1a4
+DEVBLOCK 0x6fac
+# warzone::function_2f66bc37@2
+DEVBLOCK 0x741a
+# warzone::function_cb4b48d5@1a
+DEVBLOCK 0x74aa
+# warzone::function_1e150a0b@7c
+DEVBLOCK 0x7c5c
+# warzone::function_3c8be2d2@cc
+DEVBLOCK 0x80cc
+# warzone::function_3c8be2d2@284
+DEVBLOCK 0x8284
+# warzone::function_b777ff94@5a
+DEVBLOCK 0x8782
+# warzone::function_77319881@42
+DEVBLOCK 0x8cc2
+# warzone::function_77319881@7a
+DEVBLOCK 0x8cfa
+# warzone::function_cc5d43a1@a
+DEVBLOCK 0x8db2

@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_white_toast.gsc
 VERSION 0
 CHECKSUM 0x52b43ab5
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_white_toast::function_ca3759b1@db0 zm_white_toast::function_ca3759b1@dc8
 STRING "<dev string:x119>" 0x2740 0x2758
 # zm_white_toast::function_ca3759b1@e30 zm_white_toast::function_ca3759b1@e48
@@ -28,3 +30,36 @@ STRING "<dev string:xb0>" 0x1eb8 0x1ed0
 STRING "<dev string:xd0>" 0x1fa0 0x1fb8
 # zm_white_toast::function_ca3759b1@9c8 zm_white_toast::function_ca3759b1@9e0
 STRING "<dev string:xe2>" 0x2358 0x2370
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_white_toast::function_94c0714@72
+DEVBLOCK 0x162a
+# zm_white_toast::function_94c0714@186
+DEVBLOCK 0x173e
+# zm_white_toast::function_ca3759b1@118
+DEVBLOCK 0x1aa8
+# zm_white_toast::function_ca3759b1@24e
+DEVBLOCK 0x1bde
+# zm_white_toast::function_ca3759b1@33a
+DEVBLOCK 0x1cca
+# zm_white_toast::function_ca3759b1@4d2
+DEVBLOCK 0x1e62
+# zm_white_toast::function_ca3759b1@5ba
+DEVBLOCK 0x1f4a
+# zm_white_toast::function_ca3759b1@972
+DEVBLOCK 0x2302
+# zm_white_toast::function_ca3759b1@d5a
+DEVBLOCK 0x26ea
+# zm_white_toast::function_ca3759b1@dda
+DEVBLOCK 0x276a
+# zm_white_toast::function_ca3759b1@106a
+DEVBLOCK 0x29fa
+# zm_white_toast::function_ca3759b1@130a
+DEVBLOCK 0x2c9a
+# zm_white_toast::soul_captured@26
+DEVBLOCK 0x643e
+# zm_white_toast::function_dbbdda4c@23a
+DEVBLOCK 0x6a32
+# zm_white_toast::function_dbbdda4c@2be
+DEVBLOCK 0x6ab6

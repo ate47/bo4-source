@@ -1,7 +1,9 @@
 NAME scripts\core_common\dialog_shared.gsc
 VERSION 0
 CHECKSUM 0x6310e6af
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # dialog_shared::test_player_dialog@28 dialog_shared::play_test_dialog@30
 STRING "<dev string:x11b>" 0x61a0 0x62e8
 # dialog_shared::response_key@24
@@ -38,3 +40,32 @@ STRING "<dev string:xbf>" 0x5cc0
 STRING "<dev string:xdc>" 0x5ce8
 # dialog_shared::devgui_think@98
 STRING "<dev string:xf8>" 0x5d10
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# dialog_shared::__init__@52
+DEVBLOCK 0xd52
+# dialog_shared::water_vox@88
+DEVBLOCK 0x1e08
+# dialog_shared::incoming_projectile_alert@54
+DEVBLOCK 0x3254
+# dialog_shared::devgui_think@12
+DEVBLOCK 0x5c8a
+# dialog_shared::test_other_dialog@32
+DEVBLOCK 0x60ba
+# dialog_shared::test_player_dialog@a
+DEVBLOCK 0x6182
+# dialog_shared::test_taacom_dialog@a
+DEVBLOCK 0x61f2
+# dialog_shared::test_commander_dialog@a
+DEVBLOCK 0x625a
+# dialog_shared::play_test_dialog@12
+DEVBLOCK 0x62ca
+# dialog_shared::response_key@2
+DEVBLOCK 0x6312
+# dialog_shared::play_conv_self_other@32
+DEVBLOCK 0x645a
+# dialog_shared::play_conv_other_self@32
+DEVBLOCK 0x65a2
+# dialog_shared::play_conv_other_other@52
+DEVBLOCK 0x670a

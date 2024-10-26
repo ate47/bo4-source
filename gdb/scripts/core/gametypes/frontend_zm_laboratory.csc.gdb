@@ -1,7 +1,9 @@
 NAME scripts\core\gametypes\frontend_zm_laboratory.csc
 VERSION 0
 CHECKSUM 0x78150261
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_laboratory::function_1a17b820@19c
 STRING "<dev string:x104>" 0x1f14
 # zm_laboratory::function_1a17b820@1c8
@@ -70,3 +72,44 @@ STRING "<dev string:x97>" 0x1e60 0x1ee8 0x1f20
 STRING "<dev string:x9c>" 0x1ecc
 # zm_laboratory::function_1a17b820@160
 STRING "<dev string:xd8>" 0x1ed8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_laboratory::function_250232f4@96a
+DEVBLOCK 0x1322
+# zm_laboratory::function_250232f4@1376
+DEVBLOCK 0x1d2e
+# zm_laboratory::function_250232f4@1394
+DEVBLOCK 0x1d4c
+# zm_laboratory::function_1a17b820@72
+DEVBLOCK 0x1dea
+# zm_laboratory::function_b78fb1b0@1a
+DEVBLOCK 0x21aa
+# zm_laboratory::function_66051772@22
+DEVBLOCK 0x23aa
+# zm_laboratory::function_a8f6e36c@1a
+DEVBLOCK 0x2aa2
+# zm_laboratory::function_8192c9cf@1a
+DEVBLOCK 0x2b62
+# zm_laboratory::function_ef574f9c@12
+DEVBLOCK 0x3472
+# zm_laboratory::function_f0252f42@12
+DEVBLOCK 0x3532
+# zm_laboratory::function_18d7cd9b@22
+DEVBLOCK 0x36aa
+# zm_laboratory::function_b3efb400@1a
+DEVBLOCK 0x398a
+# zm_laboratory::function_7ee5e3a2@562
+DEVBLOCK 0x5b02
+# zm_laboratory::function_365bef4@740
+DEVBLOCK 0x72c8
+# zm_laboratory::function_4053acdb@84
+DEVBLOCK 0x7d1c
+# zm_laboratory::function_254a0f6d@8a
+DEVBLOCK 0x855a
+# zm_laboratory::function_feeedd3d@1a
+DEVBLOCK 0x99da
+# zm_laboratory::function_8cd01001@ce
+DEVBLOCK 0xb1f6
+# zm_laboratory::function_8cd01001@d2
+DEVBLOCK 0xb1fa

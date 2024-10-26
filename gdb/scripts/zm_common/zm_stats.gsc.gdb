@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_stats.gsc
 VERSION 0
 CHECKSUM 0x8c0c54ca
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_stats::function_ea5b4947@1b4
 STRING "<dev string:x10e>" 0x8534
 # zm_stats::function_ea5b4947@1c8
@@ -42,3 +44,40 @@ STRING "<dev string:x57>" 0x492c
 STRING "<dev string:xa8>" 0x4a0c
 # zm_stats::increment_challenge_stat@48
 STRING "<dev string:xf2>" 0x4bc0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_stats::set_global_stat@72
+DEVBLOCK 0x356a
+# zm_stats::function_8e274b32@5c
+DEVBLOCK 0x483c
+# zm_stats::function_a05b3b23@62
+DEVBLOCK 0x4922
+# zm_stats::registerchand_grow_@5a
+DEVBLOCK 0x4a02
+# zm_stats::increment_challenge_stat@40
+DEVBLOCK 0x4bb8
+# zm_stats::increment_challenge_stat@f2
+DEVBLOCK 0x4c6a
+# zm_stats::adjustrecentstats@2
+DEVBLOCK 0x7f4a
+# zm_stats::function_ea5b4947@1aa
+DEVBLOCK 0x852a
+# zm_stats::function_94335f4a@1d4
+DEVBLOCK 0x895c
+# zm_stats::function_c0c6ab19@78
+DEVBLOCK 0x8a78
+# zm_stats::function_c0c6ab19@102
+DEVBLOCK 0x8b02
+# zm_stats::function_c0c6ab19@23e
+DEVBLOCK 0x8c3e
+# zm_stats::function_7f377150@1e2
+DEVBLOCK 0x908a
+# zm_stats::function_7f377150@26e
+DEVBLOCK 0x9116
+# zm_stats::function_55109709@1f2
+DEVBLOCK 0x9572
+# zm_stats::function_55109709@22a
+DEVBLOCK 0x95aa
+# zm_stats::function_55109709@28e
+DEVBLOCK 0x960e

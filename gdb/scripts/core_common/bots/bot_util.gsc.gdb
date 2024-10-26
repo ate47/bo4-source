@@ -1,7 +1,9 @@
 NAME scripts\core_common\bots\bot_util.gsc
 VERSION 0
 CHECKSUM 0xabaf243d
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # bot_util::function_cf70f2fe@60 bot_util::function_cf70f2fe@9c bot_util::function_cf70f2fe@10c
 STRING "<dev string:x10a>" 0x480 0x4bc 0x52c
 # bot_util::function_cf70f2fe@a4
@@ -20,3 +22,22 @@ STRING "<dev string:x9b>" 0x284
 STRING "<dev string:xbb>" 0x36c 0x3ac
 # bot_util::function_e449b57@5c
 STRING "<dev string:xe0>" 0x3b4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# bot_util::function_23cbc6c1@30
+DEVBLOCK 0xe8
+# bot_util::function_23cbc6c1@6a
+DEVBLOCK 0x122
+# bot_util::function_33834a13@2
+DEVBLOCK 0x27a
+# bot_util::function_e449b57@a
+DEVBLOCK 0x362
+# bot_util::function_e449b57@4a
+DEVBLOCK 0x3a2
+# bot_util::function_cf70f2fe@56
+DEVBLOCK 0x476
+# bot_util::function_cf70f2fe@92
+DEVBLOCK 0x4b2
+# bot_util::function_cf70f2fe@104
+DEVBLOCK 0x524

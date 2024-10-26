@@ -1,7 +1,9 @@
 NAME scripts\abilities\ability_power.gsc
 VERSION 0
 CHECKSUM 0x6f19c61c
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ability_power::cpower_print@30
 STRING "<dev string:x38>" 0x108
 # ability_power::cpower_print@40
@@ -18,3 +20,14 @@ STRING "<dev string:x68>" 0x92c 0xb90
 STRING "<dev string:x75>" 0x93c 0xba0
 # ability_power::power_loss_event@8c
 STRING "<dev string:x86>" 0xb84
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ability_power::cpower_print@2a
+DEVBLOCK 0x102
+# ability_power::power_gain_event_score@d4
+DEVBLOCK 0x3a4
+# ability_power::power_gain_event@140
+DEVBLOCK 0x918
+# ability_power::power_loss_event@84
+DEVBLOCK 0xb7c

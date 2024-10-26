@@ -1,7 +1,9 @@
 NAME scripts\core_common\bots\bot_traversals.gsc
 VERSION 0
 CHECKSUM 0x8bc191f5
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # bot::volume_traversal@3d4
 STRING "<dev string:x10c>" 0x8dc
 # bot::traversal_timeout@64
@@ -46,3 +48,46 @@ STRING "<dev string:xbb>" 0x764
 STRING "<dev string:xce>" 0x7d8
 # bot::volume_traversal@33c
 STRING "<dev string:xe9>" 0x844
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# bot::callback_botentereduseredge@5c
+DEVBLOCK 0x14c
+# bot::callback_botentereduseredge@126
+DEVBLOCK 0x216
+# bot::volume_traversal@11a
+DEVBLOCK 0x622
+# bot::volume_traversal@1bc
+DEVBLOCK 0x6c4
+# bot::volume_traversal@252
+DEVBLOCK 0x75a
+# bot::volume_traversal@2c6
+DEVBLOCK 0x7ce
+# bot::volume_traversal@334
+DEVBLOCK 0x83c
+# bot::volume_traversal@3cc
+DEVBLOCK 0x8d4
+# bot::traversal_timeout@5a
+DEVBLOCK 0x9f2
+# bot::analyze@23c
+DEVBLOCK 0xcbc
+# bot::mantle_traversal@a
+DEVBLOCK 0xed2
+# bot::ledge_traversal@32
+DEVBLOCK 0xfca
+# bot::jump_traversal@a
+DEVBLOCK 0x116a
+# bot::fall_traversal@a
+DEVBLOCK 0x123a
+# bot::walk_traversal@1a
+DEVBLOCK 0x130a
+# bot::teleport@12
+DEVBLOCK 0x149a
+# bot::mantle@2a
+DEVBLOCK 0x156a
+# bot::edge_approach@38
+DEVBLOCK 0x1668
+# bot::jump@a
+DEVBLOCK 0x17ba
+# bot::fall@2
+DEVBLOCK 0x1862

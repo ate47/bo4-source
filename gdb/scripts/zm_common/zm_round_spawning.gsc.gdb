@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_round_spawning.gsc
 VERSION 0
 CHECKSUM 0x3606c197
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_round_spawning::function_979b03db@204
 STRING "<dev string:x136>" 0x2e14
 # zm_round_spawning::function_e84b609c@104
@@ -120,3 +122,90 @@ STRING "<dev string:x91>" 0x29c 0x4e4 0x1084 0x11d4 0x1464 0x1494
 STRING "<dev string:xb1>" 0x514
 # zm_round_spawning::function_2463a38a@14 zm_round_spawning::function_5bc2cea1@14
 STRING "<dev string:xe7>" 0xe34 0xfdc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_round_spawning::function_cc103b38@ac
+DEVBLOCK 0x20c
+# zm_round_spawning::function_376e51ef@12
+DEVBLOCK 0x26a
+# zm_round_spawning::function_376e51ef@3a
+DEVBLOCK 0x292
+# zm_round_spawning::function_376e51ef@1de
+DEVBLOCK 0x436
+# zm_round_spawning::function_306ce518@12
+DEVBLOCK 0x4b2
+# zm_round_spawning::function_306ce518@3a
+DEVBLOCK 0x4da
+# zm_round_spawning::function_306ce518@6a
+DEVBLOCK 0x50a
+# zm_round_spawning::function_b4a8f95a@1d4
+DEVBLOCK 0x7fc
+# zm_round_spawning::function_d36196b1@72
+DEVBLOCK 0x8ba
+# zm_round_spawning::function_43aed0ca@b2
+DEVBLOCK 0xa1a
+# zm_round_spawning::function_43aed0ca@1c8
+DEVBLOCK 0xb30
+# zm_round_spawning::function_2463a38a@a
+DEVBLOCK 0xe2a
+# zm_round_spawning::function_5bc2cea1@a
+DEVBLOCK 0xfd2
+# zm_round_spawning::function_2876740e@12
+DEVBLOCK 0x1052
+# zm_round_spawning::function_2876740e@3a
+DEVBLOCK 0x107a
+# zm_round_spawning::function_9bf14a10@12
+DEVBLOCK 0x11a2
+# zm_round_spawning::function_9bf14a10@3a
+DEVBLOCK 0x11ca
+# zm_round_spawning::function_2669b95a@12
+DEVBLOCK 0x1432
+# zm_round_spawning::function_2669b95a@3a
+DEVBLOCK 0x145a
+# zm_round_spawning::function_2669b95a@6a
+DEVBLOCK 0x148a
+# zm_round_spawning::__main__@2
+DEVBLOCK 0x18b2
+# zm_round_spawning::function_b2dabfc@74
+DEVBLOCK 0x1afc
+# zm_round_spawning::function_b2dabfc@14c
+DEVBLOCK 0x1bd4
+# zm_round_spawning::function_4990741c@1f0
+DEVBLOCK 0x1e18
+# zm_round_spawning::function_3d5b3f85@12c
+DEVBLOCK 0x201c
+# zm_round_spawning::function_12b8d86@11e
+DEVBLOCK 0x225e
+# zm_round_spawning::function_191ae5ec@92
+DEVBLOCK 0x258a
+# zm_round_spawning::function_f3635804@14e
+DEVBLOCK 0x27a6
+# zm_round_spawning::function_979b03db@1fa
+DEVBLOCK 0x2e0a
+# zm_round_spawning::function_e84b609c@f2
+DEVBLOCK 0x3162
+# zm_round_spawning::function_44298b05@13e
+DEVBLOCK 0x3426
+# zm_round_spawning::function_b72a438d@ce
+DEVBLOCK 0x35d6
+# zm_round_spawning::function_a845f70f@d6
+DEVBLOCK 0x3a06
+# zm_round_spawning::function_d7864087@49e
+DEVBLOCK 0x3eee
+# zm_round_spawning::function_d7864087@82c
+DEVBLOCK 0x427c
+# zm_round_spawning::function_d7864087@99c
+DEVBLOCK 0x43ec
+# zm_round_spawning::function_d7864087@b70
+DEVBLOCK 0x45c0
+# zm_round_spawning::function_3cfb36aa@4a
+DEVBLOCK 0x476a
+# zm_round_spawning::function_3cfb36aa@a6
+DEVBLOCK 0x47c6
+# zm_round_spawning::function_bc9fd0f8@94
+DEVBLOCK 0x50d4
+# zm_round_spawning::devgui@a
+DEVBLOCK 0x51a2
+# zm_round_spawning::function_fc42d325@1c2
+DEVBLOCK 0x57aa

@@ -1,7 +1,9 @@
 NAME scripts\core_common\persistence_shared.gsc
 VERSION 0
 CHECKSUM 0x62a1b0ac
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # persistence::challenge_complete@2d8 persistence::challenge_complete@304 persistence::challenge_complete@4b8
 STRING "<dev string:x38>" 0x1088 0x10b4 0x1268
 # persistence::challenge_complete@464
@@ -12,3 +14,12 @@ STRING "<dev string:x43>" 0x1258
 STRING "<dev string:x55>" 0x12d8 0x1338 0x13a0
 # persistence::challenge_complete@538 persistence::challenge_complete@598 persistence::challenge_complete@600
 STRING "<dev string:x5b>" 0x12e8 0x1348 0x13b0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# persistence::adjust_recent_stats@2
+DEVBLOCK 0x372
+# persistence::challenge_complete@2d0
+DEVBLOCK 0x1080
+# persistence::challenge_complete@41a
+DEVBLOCK 0x11ca

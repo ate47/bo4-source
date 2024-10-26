@@ -1,7 +1,9 @@
 NAME scripts\wz_common\wz_progression.gsc
 VERSION 0
 CHECKSUM 0xd51ac912
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wz_progression::team_eliminated@b0
 STRING "<dev string:x123>" 0x2080
 # wz_progression::team_eliminated@c8 wz_progression::function_5648f82@6c
@@ -32,3 +34,42 @@ STRING "<dev string:xcd>" 0x168c
 STRING "<dev string:xd9>" 0x16bc
 # wz_progression::team_eliminated@4c
 STRING "<dev string:xeb>" 0x201c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wz_progression::give_xp@48
+DEVBLOCK 0xe28
+# wz_progression::function_f874ca5e@18
+DEVBLOCK 0x11c8
+# wz_progression::player_connected@a
+DEVBLOCK 0x128a
+# wz_progression::function_2c8aac6@22
+DEVBLOCK 0x13ea
+# wz_progression::function_2c8aac6@d4
+DEVBLOCK 0x149c
+# wz_progression::function_2c8aac6@22a
+DEVBLOCK 0x15f2
+# wz_progression::function_fb20ad56@10
+DEVBLOCK 0x1858
+# wz_progression::function_d61fdbef@10
+DEVBLOCK 0x18c8
+# wz_progression::function_67949803@10
+DEVBLOCK 0x1938
+# wz_progression::function_a0fea1a9@10
+DEVBLOCK 0x1d70
+# wz_progression::function_3217b0d2@10
+DEVBLOCK 0x1de0
+# wz_progression::function_6a7970fe@10
+DEVBLOCK 0x1ed8
+# wz_progression::team_eliminated@42
+DEVBLOCK 0x2012
+# wz_progression::team_eliminated@a6
+DEVBLOCK 0x2076
+# wz_progression::function_5648f82@4a
+DEVBLOCK 0x22d2
+# wz_progression::on_player_killed@28
+DEVBLOCK 0x36e0
+# wz_progression::on_challenge_complete@20
+DEVBLOCK 0x53e0
+# wz_progression::function_f6dc1aa9@a
+DEVBLOCK 0x60b2

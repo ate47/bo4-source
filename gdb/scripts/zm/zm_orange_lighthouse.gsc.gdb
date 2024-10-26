@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_orange_lighthouse.gsc
 VERSION 0
 CHECKSUM 0xfe477d13
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_orange_lighthouse::devgui@60
 STRING "<dev string:x167>" 0x3310
 # zm_orange_lighthouse::devgui@78
@@ -38,3 +40,16 @@ STRING "<dev string:xc5>" 0x32cc
 STRING "<dev string:xd9>" 0x32c4
 # zm_orange_lighthouse::devgui@48
 STRING "<dev string:xe6>" 0x32f8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_orange_lighthouse::__init__@5a
+DEVBLOCK 0x4aa
+# zm_orange_lighthouse::function_ad646ef8@64
+DEVBLOCK 0x12dc
+# zm_orange_lighthouse::function_f5a342bc@2
+DEVBLOCK 0x3122
+# zm_orange_lighthouse::devgui@a
+DEVBLOCK 0x32ba
+# zm_orange_lighthouse::function_f6d23861@2
+DEVBLOCK 0x349a

@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_mansion.gsc
 VERSION 0
 CHECKSUM 0x7519e965
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_mansion::devgui_setup@410
 STRING "<dev string:x103b>" 0x7ea8
 # zm_mansion::devgui_setup@428
@@ -464,3 +466,62 @@ STRING "<dev string:xf25>" 0x7e58
 STRING "<dev string:xf7f>" 0x7e70
 # zm_mansion::devgui_setup@3f8
 STRING "<dev string:xfe9>" 0x7e90
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_mansion::opt_in@252
+DEVBLOCK 0x11ba
+# zm_mansion::main@aea
+DEVBLOCK 0x1d62
+# zm_mansion::main@103a
+DEVBLOCK 0x22b2
+# zm_mansion::main@1362
+DEVBLOCK 0x25da
+# zm_mansion::on_player_spawned@31a
+DEVBLOCK 0x29d2
+# zm_mansion::function_60a2e5e1@2
+DEVBLOCK 0x2ce2
+# zm_mansion::on_player_bleedout@2
+DEVBLOCK 0x2d8a
+# zm_mansion::update_player_hud@9e
+DEVBLOCK 0x3576
+# zm_mansion::update_player_hud@136
+DEVBLOCK 0x360e
+# zm_mansion::function_ea36bce3@9e
+DEVBLOCK 0x38e6
+# zm_mansion::function_ea36bce3@156
+DEVBLOCK 0x399e
+# zm_mansion::function_802dde1f@20
+DEVBLOCK 0x4330
+# zm_mansion::function_d4ff1dd6@a
+DEVBLOCK 0x7a3a
+# zm_mansion::devgui_setup@2
+DEVBLOCK 0x7a9a
+# zm_mansion::function_3f147b12@ca
+DEVBLOCK 0x89ba
+# zm_mansion::open_sesame@2
+DEVBLOCK 0xae72
+# zm_mansion::function_a8dfebca@a
+DEVBLOCK 0xafc2
+# zm_mansion::function_1aba9a64@a
+DEVBLOCK 0xb1da
+# zm_mansion::function_a72077f8@22
+DEVBLOCK 0xb332
+# zm_mansion::function_2527ee2d@2
+DEVBLOCK 0xb482
+# zm_mansion::function_ed41e7ca@2
+DEVBLOCK 0xb53a
+# zm_mansion::function_cdb82bab@a
+DEVBLOCK 0xb642
+# zm_mansion::function_89244213@a
+DEVBLOCK 0xb862
+# zm_mansion::function_6802b9c8@a
+DEVBLOCK 0xb93a
+# zm_mansion::function_7a1bd36c@a
+DEVBLOCK 0xbb3a
+# zm_mansion::function_e907bb3d@a
+DEVBLOCK 0xbd3a
+# zm_mansion::function_ae21a5ee@2a
+DEVBLOCK 0xbe12
+# zm_mansion::function_d7bc714e@a
+DEVBLOCK 0xbef2

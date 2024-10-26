@@ -1,7 +1,9 @@
 NAME scripts\mp_common\player\player_loadout.gsc
 VERSION 0
 CHECKSUM 0xa8147ed6
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # loadout::give_special_offhand@1c0 loadout::give_ultimate@1b8
 STRING "<dev string:x10e>" 0x4f90 0x53e8
 # loadout::give_special_offhand@214
@@ -52,3 +54,58 @@ STRING "<dev string:xb7>" 0x2254
 STRING "<dev string:xc7>" 0x2260
 # loadout::function_f436358b@10c
 STRING "<dev string:xde>" 0x2d04
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# loadout::weapon_class_register@164
+DEVBLOCK 0x1aa4
+# loadout::function_8624b793@32
+DEVBLOCK 0x1d72
+# loadout::function_97d216fa@a
+DEVBLOCK 0x1ee2
+# loadout::give_killstreaks@ea
+DEVBLOCK 0x224a
+# loadout::function_f436358b@102
+DEVBLOCK 0x2cfa
+# loadout::get_class_num@32
+DEVBLOCK 0x2dc2
+# loadout::get_class_num@108
+DEVBLOCK 0x2e98
+# loadout::get_class_num@144
+DEVBLOCK 0x2ed4
+# loadout::get_class_num@1c2
+DEVBLOCK 0x2f52
+# loadout::give_special_offhand@154
+DEVBLOCK 0x4f24
+# loadout::give_special_offhand@200
+DEVBLOCK 0x4fd0
+# loadout::give_ultimate@14c
+DEVBLOCK 0x537c
+# loadout::function_3d16577a@12
+DEVBLOCK 0x557a
+# loadout::give_loadout@ec
+DEVBLOCK 0x56ac
+# loadout::give_loadout@13a
+DEVBLOCK 0x56fa
+# loadout::register_perks@dc
+DEVBLOCK 0x641c
+# loadout::cac_modified_damage@62
+DEVBLOCK 0x64a2
+# loadout::cac_modified_damage@7a
+DEVBLOCK 0x64ba
+# loadout::cac_modified_damage@92
+DEVBLOCK 0x64d2
+# loadout::cac_modified_damage@e6
+DEVBLOCK 0x6526
+# loadout::cac_modified_damage@1e8
+DEVBLOCK 0x6628
+# loadout::cac_modified_damage@25e
+DEVBLOCK 0x669e
+# loadout::cac_modified_damage@324
+DEVBLOCK 0x6764
+# loadout::cac_modified_damage@3cc
+DEVBLOCK 0x680c
+# loadout::cac_modified_damage@4d4
+DEVBLOCK 0x6914
+# loadout::cac_modified_damage@522
+DEVBLOCK 0x6962

@@ -1,7 +1,9 @@
 NAME scripts\core\gametypes\frontend.csc
 VERSION 0
 CHECKSUM 0xaab067cf
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # frontend::function_23bc6f08@d8 frontend::function_fb399a61@1b0
 STRING "<dev string:x106>" 0x4230 0x50f8
 # frontend::function_23bc6f08@e8
@@ -180,3 +182,92 @@ STRING "<dev string:xec>" 0x4200
 STRING "<dev string:xf7>" 0x4210
 # frontend::function_23bc6f08@c8 frontend::function_fb399a61@1d4
 STRING "<dev string:xff>" 0x4220 0x511c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# frontend::function_89c6128e@c4
+DEVBLOCK 0x158c
+# frontend::handle_inspect_player@d4
+DEVBLOCK 0x3014
+# frontend::function_37304ace@ce
+DEVBLOCK 0x3676
+# frontend::function_37304ace@f2
+DEVBLOCK 0x369a
+# frontend::function_37304ace@112
+DEVBLOCK 0x36ba
+# frontend::function_37304ace@132
+DEVBLOCK 0x36da
+# frontend::function_37304ace@152
+DEVBLOCK 0x36fa
+# frontend::function_c9f8c5e9@62
+DEVBLOCK 0x3a9a
+# frontend::function_da10fc8f@22
+DEVBLOCK 0x3d8a
+# frontend::function_93ccf33d@4a
+DEVBLOCK 0x3f42
+# frontend::function_23bc6f08@52
+DEVBLOCK 0x41aa
+# frontend::function_2351cba1@12
+DEVBLOCK 0x4492
+# frontend::function_4920c25a@132
+DEVBLOCK 0x466a
+# frontend::function_92087f1b@a
+DEVBLOCK 0x4dfa
+# frontend::function_622b5dc0@a
+DEVBLOCK 0x4ea2
+# frontend::function_fb399a61@b2
+DEVBLOCK 0x4ffa
+# frontend::function_fb399a61@134
+DEVBLOCK 0x507c
+# frontend::function_5d6480a0@62
+DEVBLOCK 0x56aa
+# frontend::function_f2c538de@9a
+DEVBLOCK 0x59d2
+# frontend::function_d583ca36@a
+DEVBLOCK 0x5ec2
+# frontend::function_db3c4c69@c2
+DEVBLOCK 0x5faa
+# frontend::function_db3c4c69@11c
+DEVBLOCK 0x6004
+# frontend::function_3d29f330@a
+DEVBLOCK 0x66b2
+# frontend::function_671eb8fa@2
+DEVBLOCK 0x6772
+# frontend::function_ea9a5e69@72
+DEVBLOCK 0x680a
+# frontend::function_ea9a5e69@1be
+DEVBLOCK 0x6956
+# frontend::function_ea9a5e69@1fa
+DEVBLOCK 0x6992
+# frontend::function_ea9a5e69@232
+DEVBLOCK 0x69ca
+# frontend::function_4cd43ca2@ca
+DEVBLOCK 0x6d6a
+# frontend::function_deed1dbf@26a
+DEVBLOCK 0x78e2
+# frontend::function_deed1dbf@454
+DEVBLOCK 0x7acc
+# frontend::function_deed1dbf@4e0
+DEVBLOCK 0x7b58
+# frontend::localclientconnect@32
+DEVBLOCK 0x7cf2
+# frontend::localclientconnect@30c
+DEVBLOCK 0x7fcc
+# frontend::personalize_characters_watch@8c
+DEVBLOCK 0x8b84
+# frontend::function_d9a44ae1@84
+DEVBLOCK 0x8d94
+# frontend::choose_taunts_camera_watch@54
+DEVBLOCK 0x906c
+# frontend::lobby_main@39c
+DEVBLOCK 0xb8f4
+# frontend::update_room2_devgui@a
+DEVBLOCK 0xc292
+# frontend::update_mp_lobby_room_devgui@12
+DEVBLOCK 0xc2d2
+# frontend::function_a71254a9@c6
+DEVBLOCK 0xc58e
+# frontend::function_a71254a9@ca
+DEVBLOCK 0xc592
+# frontend::function_73b8462a@1d2
+DEVBLOCK 0xecca

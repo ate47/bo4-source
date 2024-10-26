@@ -1,7 +1,9 @@
 NAME scripts\core_common\death_circle.gsc
 VERSION 0
 CHECKSUM 0x3173c675
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # death_circle::shuffle_circles@1d0
 STRING "<dev string:x110>" 0xf58
 # death_circle::function_27d5d349@48
@@ -92,3 +94,44 @@ STRING "<dev string:xbb>" 0xb90
 STRING "<dev string:xc7>" 0xba0
 # death_circle::shuffle_circles@17c
 STRING "<dev string:xfb>" 0xf04
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# death_circle::__init__@222
+DEVBLOCK 0x58a
+# death_circle::function_d81873aa@a
+DEVBLOCK 0x98a
+# death_circle::function_114f128a@a
+DEVBLOCK 0x9f2
+# death_circle::add_circle@130
+DEVBLOCK 0xb80
+# death_circle::shuffle_circles@174
+DEVBLOCK 0xefc
+# death_circle::shuffle_circles@1c6
+DEVBLOCK 0xf4e
+# death_circle::start@b6
+DEVBLOCK 0x1ac6
+# death_circle::function_ba02cfb5@232
+DEVBLOCK 0x3842
+# death_circle::function_27d5d349@3e
+DEVBLOCK 0x3c7e
+# death_circle::devgui_loop@12
+DEVBLOCK 0x4332
+# death_circle::devgui_clear@2
+DEVBLOCK 0x4632
+# death_circle::debug_loop@ba
+DEVBLOCK 0x4742
+# death_circle::function_ded40950@4a
+DEVBLOCK 0x4be2
+# death_circle::function_81ccccb6@12
+DEVBLOCK 0x4e52
+# death_circle::devgui_shuffle@12
+DEVBLOCK 0x4faa
+# death_circle::simulate@42
+DEVBLOCK 0x50da
+# death_circle::simulate@56
+DEVBLOCK 0x50ee
+# death_circle::draw_circle@8a
+DEVBLOCK 0x53d2
+# death_circle::circle_color@3a
+DEVBLOCK 0x5ae2

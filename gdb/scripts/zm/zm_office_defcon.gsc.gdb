@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_office_defcon.gsc
 VERSION 0
 CHECKSUM 0x61b2115f
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_office_defcon::function_d2f6cecb@14 zm_office_defcon::function_d2f6cecb@30
 STRING "<dev string:x38>" 0x21fc 0x2218
 # zm_office_defcon::function_d2f6cecb@88 zm_office_defcon::function_d2f6cecb@148 zm_office_defcon::function_d2f6cecb@1a0
@@ -18,3 +20,8 @@ STRING "<dev string:x98>" 0x2480 0x24d0
 STRING "<dev string:xa5>" 0x2540
 # zm_office_defcon::function_d2f6cecb@398
 STRING "<dev string:xb5>" 0x2580
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_office_defcon::function_d2f6cecb@a
+DEVBLOCK 0x21f2

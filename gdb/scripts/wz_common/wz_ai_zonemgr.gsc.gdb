@@ -1,7 +1,9 @@
 NAME scripts\wz_common\wz_ai_zonemgr.gsc
 VERSION 0
 CHECKSUM 0x21c82446
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wz_ai_zonemgr::function_d0055419@e8
 STRING "<dev string:x10c>" 0x1790
 # wz_ai_zonemgr::function_d0055419@100
@@ -96,3 +98,36 @@ STRING "<dev string:x775>" 0x81d8
 STRING "<dev string:x8c>" 0x1760
 # wz_ai_zonemgr::function_d0055419@d0
 STRING "<dev string:xcb>" 0x1778
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wz_ai_zonemgr::__init__@cc4
+DEVBLOCK 0xf34
+# wz_ai_zonemgr::__init__@f7a
+DEVBLOCK 0x11ea
+# wz_ai_zonemgr::function_5a46c509@4a
+DEVBLOCK 0x13fa
+# wz_ai_zonemgr::spawn_a_zombie@1a
+DEVBLOCK 0x158a
+# wz_ai_zonemgr::function_d0055419@4a
+DEVBLOCK 0x16f2
+# wz_ai_zonemgr::function_dc16557c@a2
+DEVBLOCK 0x2082
+# wz_ai_zonemgr::function_dc16557c@508
+DEVBLOCK 0x24e8
+# wz_ai_zonemgr::function_83dc6d93@d8
+DEVBLOCK 0x26a0
+# wz_ai_zonemgr::function_630eb346@20
+DEVBLOCK 0x2a70
+# wz_ai_zonemgr::function_71d1b294@92
+DEVBLOCK 0x4412
+# wz_ai_zonemgr::function_5f0d105a@490
+DEVBLOCK 0x5430
+# wz_ai_zonemgr::function_7b0c014e@2ce
+DEVBLOCK 0x5ce6
+# wz_ai_zonemgr::function_41101f23@44
+DEVBLOCK 0x7494
+# wz_ai_zonemgr::function_f3e8cf82@62
+DEVBLOCK 0x7e72
+# wz_ai_zonemgr::function_49d2e080@2a
+DEVBLOCK 0x807a

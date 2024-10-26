@@ -1,7 +1,9 @@
 NAME scripts\core_common\duplicaterender_mgr.csc
 VERSION 0
 CHECKSUM 0x7b358a4c
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # duplicate_render::apply_filter@f8
 STRING "<dev string:x38>" 0x16f0
 # duplicate_render::apply_filter@124
@@ -14,3 +16,10 @@ STRING "<dev string:x51>" 0x175c
 STRING "<dev string:x75>" 0x1770
 # duplicate_render::apply_filter@188
 STRING "<dev string:x7c>" 0x1780
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# duplicate_render::set_dr_flag@42
+DEVBLOCK 0x1052
+# duplicate_render::apply_filter@ce
+DEVBLOCK 0x16c6

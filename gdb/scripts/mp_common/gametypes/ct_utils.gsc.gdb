@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\ct_utils.gsc
 VERSION 0
 CHECKSUM 0xa4e2a170
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ct_utils::colbounds_off@58
 STRING "<dev string:x12a>" 0xcfe8
 # ct_utils::function_95f28639@54
@@ -36,3 +38,40 @@ STRING "<dev string:x68>" 0x6b7c
 STRING "<dev string:x9e>" 0xcc74
 # ct_utils::colbounds_on@3c
 STRING "<dev string:xf9>" 0xce6c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ct_utils::__init__@4a8
+DEVBLOCK 0xe78
+# ct_utils::function_1eef023d@44
+DEVBLOCK 0x28ec
+# ct_utils::function_1eef023d@c4
+DEVBLOCK 0x296c
+# ct_utils::function_18696050@66
+DEVBLOCK 0x2a46
+# ct_utils::function_f9ed304d@ee
+DEVBLOCK 0x4576
+# ct_utils::function_785eb2ca@1c
+DEVBLOCK 0x6b74
+# ct_utils::player_collisionbox@260
+DEVBLOCK 0xa1f0
+# ct_utils::function_e96cc63f@328
+DEVBLOCK 0xba78
+# ct_utils::function_9ab507a9@164
+DEVBLOCK 0xcc6c
+# ct_utils::colbounds_on@32
+DEVBLOCK 0xce62
+# ct_utils::colbounds_off@50
+DEVBLOCK 0xcfe0
+# ct_utils::function_95f28639@4a
+DEVBLOCK 0xd162
+# ct_utils::function_a3f8ddfa@2a
+DEVBLOCK 0xd6fa
+# ct_utils::function_5160be8c@7c
+DEVBLOCK 0xe7cc
+# ct_utils::function_dfd7add4@1a
+DEVBLOCK 0xfc62
+# ct_utils::timer_freeze@2
+DEVBLOCK 0x10072
+# ct_utils::function_bb58b6f4@22
+DEVBLOCK 0x100e2

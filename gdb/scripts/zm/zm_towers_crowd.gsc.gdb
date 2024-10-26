@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_towers_crowd.gsc
 VERSION 0
 CHECKSUM 0x37210e09
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_towers_crowd::function_e0bb973@37c
 STRING "<dev string:x1015>" 0x5ea4
 # zm_towers_crowd::function_e0bb973@3fc
@@ -112,3 +114,32 @@ STRING "<dev string:xfc9>" 0x5d28
 STRING "<dev string:xfdc>" 0x5da8
 # zm_towers_crowd::function_e0bb973@2fc
 STRING "<dev string:xff7>" 0x5e24
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_towers_crowd::init@a
+DEVBLOCK 0x6fa
+# zm_towers_crowd::init@2d4
+DEVBLOCK 0x9c4
+# zm_towers_crowd::crowd_throw_item@882
+DEVBLOCK 0x2eb2
+# zm_towers_crowd::crowd_throw_item@d52
+DEVBLOCK 0x3382
+# zm_towers_crowd::crowd_throw_item@e42
+DEVBLOCK 0x3472
+# zm_towers_crowd::function_b8dfa139@480
+DEVBLOCK 0x39c8
+# zm_towers_crowd::function_f3e454c1@a
+DEVBLOCK 0x3b02
+# zm_towers_crowd::function_9da7999d@276
+DEVBLOCK 0x3e4e
+# zm_towers_crowd::function_acab98ce@42c
+DEVBLOCK 0x42bc
+# zm_towers_crowd::function_692a63ae@36
+DEVBLOCK 0x503e
+# zm_towers_crowd::function_fbf74c49@2
+DEVBLOCK 0x5602
+# zm_towers_crowd::function_eb6ff6a5@2a
+DEVBLOCK 0x5a42
+# zm_towers_crowd::function_e0bb973@4a
+DEVBLOCK 0x5b72

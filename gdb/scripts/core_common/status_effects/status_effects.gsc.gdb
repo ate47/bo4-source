@@ -1,7 +1,9 @@
 NAME scripts\core_common\status_effects\status_effects.gsc
 VERSION 0
 CHECKSUM 0x7858dea4
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # status_effect::status_effects_devgui_add_player_status_effects@e4
 STRING "<dev string:x133>" 0x62c
 # status_effect::status_effects_devgui_add_player_grenades@54
@@ -46,3 +48,34 @@ STRING "<dev string:x95>" 0x514
 STRING "<dev string:xa1>" 0x594
 # status_effect::status_effects_devgui_add_player_status_effects@a8
 STRING "<dev string:xb4>" 0x5f0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# status_effect::__init__@62
+DEVBLOCK 0x132
+# status_effect::on_player_connect@18
+DEVBLOCK 0x170
+# status_effect::on_player_disconnect@2
+DEVBLOCK 0x19a
+# status_effect::status_effects_init@2
+DEVBLOCK 0x24a
+# status_effect::status_effects_devgui_player_disconnect@a
+DEVBLOCK 0x342
+# status_effect::status_effects_devgui_player_connect@12
+DEVBLOCK 0x3b2
+# status_effect::function_2a302935@2a
+DEVBLOCK 0x4da
+# status_effect::status_effects_devgui_add_player_status_effects@32
+DEVBLOCK 0x57a
+# status_effect::status_effects_devgui_add_player_grenades@3a
+DEVBLOCK 0x6aa
+# status_effect::status_effects_devgui_add_player_command@2a
+DEVBLOCK 0x7da
+# status_effect::status_effects_devgui_think@12
+DEVBLOCK 0x892
+# status_effect::function_64ba1c7e@12
+DEVBLOCK 0xa12
+# status_effect::status_effects_set_active_effect@1a
+DEVBLOCK 0xa7a
+# status_effect::status_effects_give_grenade@6a
+DEVBLOCK 0xb62

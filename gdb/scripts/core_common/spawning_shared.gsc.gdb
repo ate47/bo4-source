@@ -1,7 +1,9 @@
 NAME scripts\core_common\spawning_shared.gsc
 VERSION 0
 CHECKSUM 0x9d0100c0
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # spawning::clear_and_add_spawn_points@64
 STRING "<dev string:x144>" 0x21cc
 # spawning::place_spawn_points@70 spawning::place_spawn_points@9c spawning::drop_spawn_points@48
@@ -34,3 +36,42 @@ STRING "<dev string:x38>" 0x16fc
 STRING "<dev string:x72>" 0x1c00
 # spawning::get_best_spawnpoint@2b0
 STRING "<dev string:xd9>" 0x1c60
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# spawning::__init__@382
+DEVBLOCK 0x5ea
+# spawning::is_spawn_trapped@a
+DEVBLOCK 0x10b2
+# spawning::onspawnplayer@a0
+DEVBLOCK 0x1410
+# spawning::onspawnplayer@382
+DEVBLOCK 0x16f2
+# spawning::get_best_spawnpoint@244
+DEVBLOCK 0x1bf4
+# spawning::get_best_spawnpoint@248
+DEVBLOCK 0x1bf8
+# spawning::get_best_spawnpoint@2a4
+DEVBLOCK 0x1c54
+# spawning::get_best_spawnpoint@2a8
+DEVBLOCK 0x1c58
+# spawning::clear_and_add_spawn_points@5c
+DEVBLOCK 0x21c4
+# spawning::setup_trigger_enabled_spawn_points@17c
+DEVBLOCK 0x3314
+# spawning::setup_trigger_enabled_spawn_points@27a
+DEVBLOCK 0x3412
+# spawning::place_spawn_points@66
+DEVBLOCK 0x394e
+# spawning::place_spawn_points@92
+DEVBLOCK 0x397a
+# spawning::drop_spawn_points@3e
+DEVBLOCK 0x3a46
+# spawning::get_random_intermission_point@7c
+DEVBLOCK 0x4274
+# spawning::function_4c00b132@2a
+DEVBLOCK 0x44f2
+# spawning::spawnpoint_debug@aa
+DEVBLOCK 0x4722
+# spawning::render_spawnpoints_triggers@42
+DEVBLOCK 0x4ba2

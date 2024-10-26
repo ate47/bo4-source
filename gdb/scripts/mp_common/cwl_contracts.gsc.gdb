@@ -1,7 +1,9 @@
 NAME scripts\mp_common\cwl_contracts.gsc
 VERSION 0
 CHECKSUM 0xacfa1589
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # contracts::function_17a92a99@68
 STRING "<dev string:x110>" 0x1408
 # contracts::function_17a92a99@9c
@@ -108,3 +110,22 @@ STRING "<dev string:xcf>" 0x13ec
 STRING "<dev string:xdf>" 0x13e0
 # contracts::function_17a92a99@74
 STRING "<dev string:xfb>" 0x1414
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# contracts::finalize_init@192
+DEVBLOCK 0x2fa
+# contracts::function_902ef0de@32
+DEVBLOCK 0xc3a
+# contracts::function_902ef0de@302
+DEVBLOCK 0xf0a
+# contracts::devgui_setup@a
+DEVBLOCK 0x1302
+# contracts::function_17a92a99@1a
+DEVBLOCK 0x13ba
+# contracts::function_7f05e018@1a
+DEVBLOCK 0x15ba
+# contracts::function_ef925b75@1a
+DEVBLOCK 0x16f2
+# contracts::function_295a8005@1a
+DEVBLOCK 0x17b2

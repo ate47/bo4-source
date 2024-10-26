@@ -1,7 +1,9 @@
 NAME scripts\mp_common\draft.gsc
 VERSION 0
 CHECKSUM 0x5f24974d
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # draft::function_21f5a2c1@1a0
 STRING "<dev string:x113>" 0x1560
 # draft::function_21f5a2c1@1ac
@@ -64,3 +66,60 @@ STRING "<dev string:xc6>" 0x1244
 STRING "<dev string:xde>" 0x12e0
 # draft::all_players_connected@11c
 STRING "<dev string:xfd>" 0x12f4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# draft::__init__@174
+DEVBLOCK 0x3fc
+# draft::__init__@18c
+DEVBLOCK 0x414
+# draft::function_6bea5139@2
+DEVBLOCK 0x442
+# draft::function_95c03d66@a
+DEVBLOCK 0x492
+# draft::function_947fe5c4@2a
+DEVBLOCK 0x522
+# draft::function_e8a5f9ba@32
+DEVBLOCK 0x622
+# draft::start_cooldown@28
+DEVBLOCK 0x8e0
+# draft::clear_cooldown@10
+DEVBLOCK 0xa18
+# draft::select_character@48
+DEVBLOCK 0xcf0
+# draft::function_9f408cf7@20
+DEVBLOCK 0xfa8
+# draft::function_c5394b83@3c
+DEVBLOCK 0x11a4
+# draft::all_players_connected@56
+DEVBLOCK 0x122e
+# draft::all_players_connected@100
+DEVBLOCK 0x12d8
+# draft::function_21f5a2c1@198
+DEVBLOCK 0x1558
+# draft::decrement@a
+DEVBLOCK 0x1772
+# draft::draft_run@92
+DEVBLOCK 0x18fa
+# draft::assign_remaining_players@718
+DEVBLOCK 0x2548
+# draft::assign_remaining_players@7bc
+DEVBLOCK 0x25ec
+# draft::assign_remaining_players@9fa
+DEVBLOCK 0x282a
+# draft::assign_remaining_players@c22
+DEVBLOCK 0x2a52
+# draft::assign_remaining_players@cee
+DEVBLOCK 0x2b1e
+# draft::draft_finalize@e2
+DEVBLOCK 0x2ef2
+# draft::draft_finalize@342
+DEVBLOCK 0x3152
+# draft::set_draft_stage@48
+DEVBLOCK 0x31c0
+# draft::start@50
+DEVBLOCK 0x3488
+# draft::open@18
+DEVBLOCK 0x3568
+# draft::open@68
+DEVBLOCK 0x35b8

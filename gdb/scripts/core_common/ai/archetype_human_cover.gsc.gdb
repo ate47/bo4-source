@@ -1,4 +1,54 @@
 NAME scripts\core_common\ai\archetype_human_cover.gsc
 VERSION 0
 CHECKSUM 0x6fa72ff9
-
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# archetype_human_cover::registerbehaviorscriptfunctions@2
+DEVBLOCK 0x1fa
+# archetype_human_cover::registerbehaviorscriptfunctions@6a
+DEVBLOCK 0x262
+# archetype_human_cover::registerbehaviorscriptfunctions@d2
+DEVBLOCK 0x2ca
+# archetype_human_cover::registerbehaviorscriptfunctions@13a
+DEVBLOCK 0x332
+# archetype_human_cover::registerbehaviorscriptfunctions@1a2
+DEVBLOCK 0x39a
+# archetype_human_cover::registerbehaviorscriptfunctions@20a
+DEVBLOCK 0x402
+# archetype_human_cover::registerbehaviorscriptfunctions@272
+DEVBLOCK 0x46a
+# archetype_human_cover::registerbehaviorscriptfunctions@2da
+DEVBLOCK 0x4d2
+# archetype_human_cover::registerbehaviorscriptfunctions@342
+DEVBLOCK 0x53a
+# archetype_human_cover::registerbehaviorscriptfunctions@3aa
+DEVBLOCK 0x5a2
+# archetype_human_cover::registerbehaviorscriptfunctions@412
+DEVBLOCK 0x60a
+# archetype_human_cover::registerbehaviorscriptfunctions@47a
+DEVBLOCK 0x672
+# archetype_human_cover::registerbehaviorscriptfunctions@4e2
+DEVBLOCK 0x6da
+# archetype_human_cover::registerbehaviorscriptfunctions@54a
+DEVBLOCK 0x742
+# archetype_human_cover::registerbehaviorscriptfunctions@5b2
+DEVBLOCK 0x7aa
+# archetype_human_cover::registerbehaviorscriptfunctions@61a
+DEVBLOCK 0x812
+# archetype_human_cover::registerbehaviorscriptfunctions@682
+DEVBLOCK 0x87a
+# archetype_human_cover::registerbehaviorscriptfunctions@6ea
+DEVBLOCK 0x8e2
+# archetype_human_cover::registerbehaviorscriptfunctions@752
+DEVBLOCK 0x94a
+# archetype_human_cover::registerbehaviorscriptfunctions@7ba
+DEVBLOCK 0x9b2
+# archetype_human_cover::registerbehaviorscriptfunctions@822
+DEVBLOCK 0xa1a
+# archetype_human_cover::registerbehaviorscriptfunctions@88a
+DEVBLOCK 0xa82
+# archetype_human_cover::registerbehaviorscriptfunctions@8f2
+DEVBLOCK 0xaea
+# archetype_human_cover::registerbehaviorscriptfunctions@95a
+DEVBLOCK 0xb52

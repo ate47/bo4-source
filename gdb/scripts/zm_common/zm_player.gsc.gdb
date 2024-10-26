@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_player.gsc
 VERSION 0
 CHECKSUM 0x1edae358
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_player::callback_playerdamage@66c zm_player::callback_playerdamage@6d0
 STRING "<dev string:x106>" 0x194c 0x19b0
 # zm_player::callback_playerdamage@678 zm_player::callback_playerdamage@6dc
@@ -68,3 +70,44 @@ STRING "<dev string:x7d>" 0x1560
 STRING "<dev string:xa8>" 0x162c
 # zm_player::callback_playerdamage@3c4
 STRING "<dev string:xcb>" 0x16a4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_player::getfreespawnpoint@42
+DEVBLOCK 0x80a
+# zm_player::callback_playerdamage@16c
+DEVBLOCK 0x144c
+# zm_player::callback_playerdamage@278
+DEVBLOCK 0x1558
+# zm_player::callback_playerdamage@344
+DEVBLOCK 0x1624
+# zm_player::callback_playerdamage@3ba
+DEVBLOCK 0x169a
+# zm_player::callback_playerdamage@644
+DEVBLOCK 0x1924
+# zm_player::callback_playerdamage@89a
+DEVBLOCK 0x1b7a
+# zm_player::onplayerspawned@8a
+DEVBLOCK 0x27aa
+# zm_player::get_player_out_of_playable_area_monitor_wait_time@2
+DEVBLOCK 0x2ff2
+# zm_player::player_out_of_playable_area_monitor@1ba
+DEVBLOCK 0x31ea
+# zm_player::player_out_of_playable_area_monitor@1e2
+DEVBLOCK 0x3212
+# zm_player::player_prevent_damage@9a
+DEVBLOCK 0x3eda
+# zm_player::player_revive_monitor@210
+DEVBLOCK 0x4340
+# zm_player::spawnspectator@1a8
+DEVBLOCK 0x45e0
+# zm_player::spectator_respawn@1a
+DEVBLOCK 0x4bda
+# zm_player::spectator_respawn@3a
+DEVBLOCK 0x4bfa
+# zm_player::get_valid_spawn_location@9c
+DEVBLOCK 0x524c
+# zm_player::player_intermission@162
+DEVBLOCK 0x71c2
+# zm_player::slowdown@ce
+DEVBLOCK 0x77ee

@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\bounty.gsc
 VERSION 0
 CHECKSUM 0x47c27dbc
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # bounty::function_36f403@20c bounty::function_8de67419@bc
 STRING "<dev string:x38>" 0x571c 0x637c
 # bounty::function_b1dcb019@18
@@ -30,3 +32,32 @@ STRING "<dev string:xbc>" 0x7964
 STRING "<dev string:xcb>" 0x7958
 # bounty::function_b968a61c@128
 STRING "<dev string:xd2>" 0x7ab0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# bounty::main@494
+DEVBLOCK 0xc04
+# bounty::onstartgametype@2e2
+DEVBLOCK 0x1b5a
+# bounty::function_9659b3b4@2
+DEVBLOCK 0x1eea
+# bounty::function_d764db12@2
+DEVBLOCK 0x1f5a
+# bounty::function_f878f4bf@4a
+DEVBLOCK 0x4b1a
+# bounty::function_554b5692@a
+DEVBLOCK 0x502a
+# bounty::function_554b5692@54
+DEVBLOCK 0x5074
+# bounty::function_f9a7a3d8@a
+DEVBLOCK 0x5142
+# bounty::function_5db7fc11@a
+DEVBLOCK 0x5252
+# bounty::function_36f403@202
+DEVBLOCK 0x5712
+# bounty::function_8de67419@b2
+DEVBLOCK 0x6372
+# bounty::function_b1dcb019@12
+DEVBLOCK 0x7892
+# bounty::function_b968a61c@12
+DEVBLOCK 0x799a

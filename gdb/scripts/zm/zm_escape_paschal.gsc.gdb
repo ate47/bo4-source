@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_escape_paschal.gsc
 VERSION 0
 CHECKSUM 0xb2014965
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # paschal::function_b6abb124@7c
 STRING "<dev string:x102>" 0x65dc
 # paschal::function_f1d0739@39c
@@ -68,3 +70,48 @@ STRING "<dev string:x85>" 0x42d8
 STRING "<dev string:xd2>" 0x553c 0x58ec
 # paschal::function_1875f44f@23c
 STRING "<dev string:xe5>" 0x62dc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# paschal::step_1@7a
+DEVBLOCK 0x2322
+# paschal::function_db632f7@2
+DEVBLOCK 0x426a
+# paschal::function_69864bdb@a
+DEVBLOCK 0x4302
+# paschal::function_d8d3d62@3a2
+DEVBLOCK 0x5532
+# paschal::function_26e380c2@2b2
+DEVBLOCK 0x58e2
+# paschal::function_1875f44f@232
+DEVBLOCK 0x62d2
+# paschal::function_b6abb124@72
+DEVBLOCK 0x65d2
+# paschal::function_f1d0739@392
+DEVBLOCK 0x6992
+# paschal::function_c4a07f79@32
+DEVBLOCK 0x6a0a
+# paschal::function_750df71a@84
+DEVBLOCK 0x733c
+# paschal::function_676ccd91@2
+DEVBLOCK 0x8bc2
+# paschal::function_52e31e1a@72
+DEVBLOCK 0x8db2
+# paschal::function_d053b82c@3a
+DEVBLOCK 0x93f2
+# paschal::function_1802df85@2
+DEVBLOCK 0x959a
+# paschal::function_249c62e7@2
+DEVBLOCK 0x961a
+# paschal::function_6af89001@a
+DEVBLOCK 0x971a
+# paschal::step_4@284
+DEVBLOCK 0x9abc
+# paschal::function_a7c869fb@1f4
+DEVBLOCK 0xcf54
+# paschal::function_e15cfd01@2
+DEVBLOCK 0x112c2
+# paschal::function_1b504133@a
+DEVBLOCK 0x11342
+# paschal::function_bba62242@2a
+DEVBLOCK 0x14462

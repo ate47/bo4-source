@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_red_ww_quests.gsc
 VERSION 0
 CHECKSUM 0xfa975ba3
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_red_ww_quests::function_9fe8bfeb@6c
 STRING "<dev string:x10f>" 0x174dc
 # zm_red_ww_quests::function_dcfed198@58
@@ -70,3 +72,62 @@ STRING "<dev string:xdf>" 0x1729c
 STRING "<dev string:xef>" 0x172bc
 # zm_red_ww_quests::function_681ce100@284
 STRING "<dev string:xff>" 0x172dc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_red_ww_quests::function_9c17f532@67c
+DEVBLOCK 0x290c
+# zm_red_ww_quests::function_4a16a553@24
+DEVBLOCK 0x2f64
+# zm_red_ww_quests::function_7e94450c@ac
+DEVBLOCK 0x31fc
+# zm_red_ww_quests::function_aeaedb3c@282
+DEVBLOCK 0x130fa
+# zm_red_ww_quests::function_51a8e408@22
+DEVBLOCK 0x167a2
+# zm_red_ww_quests::function_e3a8b066@2a
+DEVBLOCK 0x168a2
+# zm_red_ww_quests::function_9dc3d269@a
+DEVBLOCK 0x16a9a
+# zm_red_ww_quests::function_34c06bf9@a
+DEVBLOCK 0x16b0a
+# zm_red_ww_quests::function_f241b684@1a
+DEVBLOCK 0x16b7a
+# zm_red_ww_quests::function_6bf10cf9@22
+DEVBLOCK 0x16cda
+# zm_red_ww_quests::function_11a0f6f8@12
+DEVBLOCK 0x16e52
+# zm_red_ww_quests::function_c5d7d69b@1a
+DEVBLOCK 0x16f4a
+# zm_red_ww_quests::function_681ce100@7a
+DEVBLOCK 0x170d2
+# zm_red_ww_quests::function_9fe8bfeb@12
+DEVBLOCK 0x17482
+# zm_red_ww_quests::function_dcfed198@1a
+DEVBLOCK 0x17532
+# zm_red_ww_quests::function_d6e30032@42
+DEVBLOCK 0x1767a
+# zm_red_ww_quests::function_ec9bf2a@32
+DEVBLOCK 0x177ea
+# zm_red_ww_quests::function_30ecec0c@22
+DEVBLOCK 0x178f2
+# zm_red_ww_quests::function_a5efeb8d@22
+DEVBLOCK 0x17b0a
+# zm_red_ww_quests::function_4594e669@2a
+DEVBLOCK 0x17da2
+# zm_red_ww_quests::function_b8b8845@a
+DEVBLOCK 0x17f32
+# zm_red_ww_quests::function_318c3039@a
+DEVBLOCK 0x17f8a
+# zm_red_ww_quests::function_37deb555@1a
+DEVBLOCK 0x1805a
+# zm_red_ww_quests::function_d8765f3d@2
+DEVBLOCK 0x181aa
+# zm_red_ww_quests::function_233156e3@1a
+DEVBLOCK 0x1824a
+# zm_red_ww_quests::function_c4614158@62
+DEVBLOCK 0x18452
+# zm_red_ww_quests::function_d963daa9@2
+DEVBLOCK 0x18782
+# zm_red_ww_quests::function_405e6a83@12
+DEVBLOCK 0x187da

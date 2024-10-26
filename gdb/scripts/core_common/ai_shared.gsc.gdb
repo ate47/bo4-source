@@ -1,7 +1,9 @@
 NAME scripts\core_common\ai_shared.gsc
 VERSION 0
 CHECKSUM 0x3b9b5f93
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ai::shoot_at_target@94
 STRING "<dev string:x12c>" 0xb9c
 # ai::shoot_at_target@e8
@@ -78,3 +80,44 @@ STRING "<dev string:x7b>" 0x3a4
 STRING "<dev string:x9e>" 0x6a4
 # ai::shoot_at_target@70
 STRING "<dev string:xfb>" 0xb78
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ai::set_pacifist@a
+DEVBLOCK 0x302
+# ai::disable_pain@2
+DEVBLOCK 0x352
+# ai::enable_pain@2
+DEVBLOCK 0x39a
+# ai::waittill_dead@8c
+DEVBLOCK 0x69c
+# ai::shoot_at_target@66
+DEVBLOCK 0xb6e
+# ai::shoot_at_target@8a
+DEVBLOCK 0xb92
+# ai::shoot_at_target@e0
+DEVBLOCK 0xbe8
+# ai::shoot_at_target@10a
+DEVBLOCK 0xc12
+# ai::patrol@4e
+DEVBLOCK 0x17fe
+# ai::patrol@96
+DEVBLOCK 0x1846
+# ai::patrol@15c
+DEVBLOCK 0x190c
+# ai::patrol@398
+DEVBLOCK 0x1b48
+# ai::patrol@430
+DEVBLOCK 0x1be0
+# ai::bloody_death@30
+DEVBLOCK 0x1fe8
+# ai::bloody_death@5a
+DEVBLOCK 0x2012
+# ai::bloody_death@e2
+DEVBLOCK 0x209a
+# ai::function_470c0597@22
+DEVBLOCK 0x25f2
+# ai::function_470c0597@4a
+DEVBLOCK 0x261a
+# ai::function_470c0597@72
+DEVBLOCK 0x2642

@@ -1,7 +1,9 @@
 NAME scripts\core_common\flag_shared.csc
 VERSION 0
 CHECKSUM 0x7034d5b7
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # flag::init@68
 STRING "<dev string:x38>" 0x100
 # flag::init@74
@@ -16,3 +18,20 @@ STRING "<dev string:xaa>" 0x34c
 STRING "<dev string:xc9>" 0x42c
 # flag::delete@38
 STRING "<dev string:xdf>" 0xb38
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# flag::init@4c
+DEVBLOCK 0xe4
+# flag::init@5e
+DEVBLOCK 0xf6
+# flag::set@a
+DEVBLOCK 0x192
+# flag::set@e
+DEVBLOCK 0x196
+# flag::clear@a
+DEVBLOCK 0x342
+# flag::get@a
+DEVBLOCK 0x422
+# flag::delete@2e
+DEVBLOCK 0xb2e

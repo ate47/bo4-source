@@ -1,7 +1,9 @@
 NAME scripts\zm_common\gametypes\spawnlogic.gsc
 VERSION 0
 CHECKSUM 0x6557dbce
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # spawnlogic::storespawndata@65c
 STRING "<dev string:x104>" 0x1c6c
 # spawnlogic::storespawndata@714
@@ -106,3 +108,94 @@ STRING "<dev string:xec>" 0x1818
 STRING "<dev string:xf1>" 0x182c 0x1844
 # spawnlogic::storespawndata@5ec
 STRING "<dev string:xf6>" 0x1bfc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# spawnlogic::main@a
+DEVBLOCK 0x15a
+# spawnlogic::main@1fc
+DEVBLOCK 0x34c
+# spawnlogic::addspawnpointsinternal@1f4
+DEVBLOCK 0x84c
+# spawnlogic::placespawnpoints@4c
+DEVBLOCK 0xa7c
+# spawnlogic::placespawnpoints@76
+DEVBLOCK 0xaa6
+# spawnlogic::placespawnpoints@ea
+DEVBLOCK 0xb1a
+# spawnlogic::dropspawnpoints@3e
+DEVBLOCK 0xbae
+# spawnlogic::getspawnpoint_final@1e2
+DEVBLOCK 0x10ba
+# spawnlogic::getbestweightedspawnpoint@204
+DEVBLOCK 0x1344
+# spawnlogic::checkbad@22
+DEVBLOCK 0x13ea
+# spawnlogic::badspawnline@32
+DEVBLOCK 0x155a
+# spawnlogic::storespawndata@6a
+DEVBLOCK 0x167a
+# spawnlogic::readspawndata@aa
+DEVBLOCK 0x1ef2
+# spawnlogic::drawspawndata@32
+DEVBLOCK 0x28ea
+# spawnlogic::vectostr@a
+DEVBLOCK 0x2d32
+# spawnlogic::strtovec@12
+DEVBLOCK 0x2dc2
+# spawnlogic::getallalliedandenemyplayers@28
+DEVBLOCK 0x3028
+# spawnlogic::initweights@46
+DEVBLOCK 0x31e6
+# spawnlogic::getspawnpoint_nearteam@86
+DEVBLOCK 0x3556
+# spawnlogic::getspawnpoint_nearteam@268
+DEVBLOCK 0x3738
+# spawnlogic::getspawnpoint_nearteam@348
+DEVBLOCK 0x3818
+# spawnlogic::getspawnpoint_nearteam@48c
+DEVBLOCK 0x395c
+# spawnlogic::spawnlogic_begin@2
+DEVBLOCK 0x3f52
+# spawnlogic::watchspawnprofile@2
+DEVBLOCK 0x3fca
+# spawnlogic::spawnprofile@1a
+DEVBLOCK 0x40aa
+# spawnlogic::spawngraphcheck@2
+DEVBLOCK 0x41ba
+# spawnlogic::spawngraph@82
+DEVBLOCK 0x42a2
+# spawnlogic::drawspawngraph@4a
+DEVBLOCK 0x4862
+# spawnlogic::setupspawngraphpoint@12
+DEVBLOCK 0x4962
+# spawnlogic::spawngraphline@2a
+DEVBLOCK 0x49d2
+# spawnlogic::loopbotspawns@3a
+DEVBLOCK 0x4ac2
+# spawnlogic::allowspawndatareading@2a
+DEVBLOCK 0x4e3a
+# spawnlogic::showdeathsdebug@32
+DEVBLOCK 0x5042
+# spawnlogic::spawnweightdebug@58
+DEVBLOCK 0x5548
+# spawnlogic::debugnearbyplayers@22
+DEVBLOCK 0x58f2
+# spawnlogic::avoidweapondamage@158
+DEVBLOCK 0x5e18
+# spawnlogic::spawnpointupdate@166
+DEVBLOCK 0x620e
+# spawnlogic::spawnpointupdate@492
+DEVBLOCK 0x653a
+# spawnlogic::avoidvisibleenemies@140
+DEVBLOCK 0x6b98
+# spawnlogic::avoidvisibleenemies@24c
+DEVBLOCK 0x6ca4
+# spawnlogic::avoidvisibleenemies@490
+DEVBLOCK 0x6ee8
+# spawnlogic::avoidspawnreuse@1e8
+DEVBLOCK 0x7178
+# spawnlogic::avoidsamespawn@98
+DEVBLOCK 0x7288
+# spawnlogic::getrandomintermissionpoint@64
+DEVBLOCK 0x7354

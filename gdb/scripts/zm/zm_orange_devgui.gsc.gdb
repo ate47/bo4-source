@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_orange_devgui.gsc
 VERSION 0
 CHECKSUM 0xfcb1a228
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_orange_devgui::devgui@80
 STRING "<dev string:x14e>" 0x1f0
 # zm_orange_devgui::devgui@98
@@ -68,3 +70,12 @@ STRING "<dev string:x97a>" 0x784
 STRING "<dev string:x987>" 0x7a4
 # zm_orange_devgui::devgui@68
 STRING "<dev string:xde>" 0x1d8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_orange_devgui::init@2
+DEVBLOCK 0xd2
+# zm_orange_devgui::jump_to@12
+DEVBLOCK 0x10a
+# zm_orange_devgui::devgui@2a
+DEVBLOCK 0x19a

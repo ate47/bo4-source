@@ -1,7 +1,9 @@
 NAME scripts\zm\ai\zm_ai_skeleton.gsc
 VERSION 0
 CHECKSUM 0xc9a69a40
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_ai_skeleton::function_6d3ecc88@40
 STRING "<dev string:x13c>" 0x2308
 # zm_ai_skeleton::function_6d3ecc88@58
@@ -38,3 +40,24 @@ STRING "<dev string:x88>" 0xf98
 STRING "<dev string:x98>" 0x22d4
 # zm_ai_skeleton::function_6d3ecc88@28
 STRING "<dev string:xe4>" 0x22f0
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_ai_skeleton::__init__@12
+DEVBLOCK 0x24a
+# zm_ai_skeleton::__init__@3e8
+DEVBLOCK 0x620
+# zm_ai_skeleton::__init__@424
+DEVBLOCK 0x65c
+# zm_ai_skeleton::function_64ab9843@a
+DEVBLOCK 0x6da
+# zm_ai_skeleton::function_64ab9843@e
+DEVBLOCK 0x6de
+# zm_ai_skeleton::function_c9f197d2@66
+DEVBLOCK 0xf36
+# zm_ai_skeleton::function_6d3ecc88@2
+DEVBLOCK 0x22ca
+# zm_ai_skeleton::function_6ae10cf1@a
+DEVBLOCK 0x2392
+# zm_ai_skeleton::function_2d69eef6@32
+DEVBLOCK 0x2552

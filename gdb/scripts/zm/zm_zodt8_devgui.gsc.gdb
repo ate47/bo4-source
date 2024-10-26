@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_zodt8_devgui.gsc
 VERSION 0
 CHECKSUM 0x7849051b
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_zodt8_devgui::function_5d346946@78
 STRING "<dev string:x102>" 0x138
 # zm_zodt8_devgui::function_5d346946@90
@@ -66,3 +68,32 @@ STRING "<dev string:x689>" 0xf9c
 STRING "<dev string:x85>" 0x108
 # zm_zodt8_devgui::function_5d346946@60
 STRING "<dev string:xc9>" 0x120
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_zodt8_devgui::function_5d346946@2
+DEVBLOCK 0xc2
+# zm_zodt8_devgui::function_78c32556@12
+DEVBLOCK 0x2a2
+# zm_zodt8_devgui::function_7edbb38@2
+DEVBLOCK 0x692
+# zm_zodt8_devgui::function_4110a06f@2
+DEVBLOCK 0x6ca
+# zm_zodt8_devgui::function_10dafedb@2
+DEVBLOCK 0x75a
+# zm_zodt8_devgui::function_1d9dddd0@2
+DEVBLOCK 0x7d2
+# zm_zodt8_devgui::function_853d8116@2
+DEVBLOCK 0x8ba
+# zm_zodt8_devgui::function_649d5f75@a
+DEVBLOCK 0x9aa
+# zm_zodt8_devgui::function_a368f5ed@32
+DEVBLOCK 0xa22
+# zm_zodt8_devgui::give_flare@32
+DEVBLOCK 0xb6a
+# zm_zodt8_devgui::function_51855e65@72
+DEVBLOCK 0xce2
+# zm_zodt8_devgui::function_51855e65@112
+DEVBLOCK 0xd82
+# zm_zodt8_devgui::function_51855e65@200
+DEVBLOCK 0xe70

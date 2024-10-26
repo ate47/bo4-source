@@ -1,7 +1,9 @@
 NAME scripts\wz_common\wz_contracts.gsc
 VERSION 0
 CHECKSUM 0x5c5e29b3
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # wz_contracts::devgui_setup@cc
 STRING "<dev string:x106>" 0x3974
 # wz_contracts::devgui_setup@c0
@@ -262,3 +264,14 @@ STRING "<dev string:xe03>" 0x42a8
 STRING "<dev string:xe9>" 0x394c
 # wz_contracts::devgui_setup@98
 STRING "<dev string:xef>" 0x3940
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# wz_contracts::finalize_init@58a
+DEVBLOCK 0x732
+# wz_contracts::function_902ef0de@3a
+DEVBLOCK 0x1a42
+# wz_contracts::function_902ef0de@37a
+DEVBLOCK 0x1d82
+# wz_contracts::devgui_setup@1a
+DEVBLOCK 0x38c2

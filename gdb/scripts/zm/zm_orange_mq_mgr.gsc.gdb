@@ -1,7 +1,9 @@
 NAME scripts\zm\zm_orange_mq_mgr.gsc
 VERSION 0
 CHECKSUM 0xcc0c900b
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_orange_mq_mgr::function_d4147875@384
 STRING "<dev string:x109>" 0x10ec
 # zm_orange_mq_mgr::function_d4147875@430
@@ -38,3 +40,40 @@ STRING "<dev string:x93>" 0x1048
 STRING "<dev string:xb4>" 0x1074
 # zm_orange_mq_mgr::function_d4147875@33c
 STRING "<dev string:xd1>" 0x10a4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_orange_mq_mgr::function_d4147875@d8
+DEVBLOCK 0xe40
+# zm_orange_mq_mgr::function_d4147875@154
+DEVBLOCK 0xebc
+# zm_orange_mq_mgr::function_d4147875@1c4
+DEVBLOCK 0xf2c
+# zm_orange_mq_mgr::function_d4147875@2d8
+DEVBLOCK 0x1040
+# zm_orange_mq_mgr::function_d4147875@302
+DEVBLOCK 0x106a
+# zm_orange_mq_mgr::function_d4147875@332
+DEVBLOCK 0x109a
+# zm_orange_mq_mgr::function_d4147875@37a
+DEVBLOCK 0x10e2
+# zm_orange_mq_mgr::function_d4147875@426
+DEVBLOCK 0x118e
+# zm_orange_mq_mgr::function_d4147875@452
+DEVBLOCK 0x11ba
+# zm_orange_mq_mgr::function_d4147875@4c2
+DEVBLOCK 0x122a
+# zm_orange_mq_mgr::function_d4147875@4ea
+DEVBLOCK 0x1252
+# zm_orange_mq_mgr::function_d4147875@542
+DEVBLOCK 0x12aa
+# zm_orange_mq_mgr::function_c40f70df@46
+DEVBLOCK 0x1836
+# zm_orange_mq_mgr::function_c40f70df@1d0
+DEVBLOCK 0x19c0
+# zm_orange_mq_mgr::function_c40f70df@26a
+DEVBLOCK 0x1a5a
+# zm_orange_mq_mgr::function_c40f70df@2c2
+DEVBLOCK 0x1ab2
+# zm_orange_mq_mgr::function_c40f70df@328
+DEVBLOCK 0x1b18

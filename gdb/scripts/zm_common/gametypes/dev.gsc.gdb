@@ -1,7 +1,9 @@
 NAME scripts\zm_common\gametypes\dev.gsc
 VERSION 0
 CHECKSUM 0x93d485f5
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # dev::updatedevsettingszm@214 dev::updatedevsettings@13e4 dev::testdvars@60
 STRING "<dev string:x107>" 0xa64 0x205c 0x2f08
 # dev::updatedevsettingszm@2c4
@@ -136,3 +138,102 @@ STRING "<dev string:xdf>" 0x9c8
 STRING "<dev string:xe3>" 0x9fc
 # dev::updatedevsettingszm@1a4
 STRING "<dev string:xf3>" 0x9f4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# dev::__init__system__@2
+DEVBLOCK 0xda
+# dev::__init__@2
+DEVBLOCK 0x132
+# dev::init@1a
+DEVBLOCK 0x182
+# dev::on_player_connect@2
+DEVBLOCK 0x492
+# dev::warpalltohost@12
+DEVBLOCK 0x4b2
+# dev::warpalltoplayer@62
+DEVBLOCK 0x55a
+# dev::updatedevsettingszm@a2
+DEVBLOCK 0x8f2
+# dev::updatedevsettings@13a
+DEVBLOCK 0xdb2
+# dev::devgui_spawn_think@12
+DEVBLOCK 0x2292
+# dev::devgui_unlimited_ammo@2a
+DEVBLOCK 0x246a
+# dev::devgui_unlimited_momentum@2a
+DEVBLOCK 0x25ca
+# dev::devgui_increase_momentum@32
+DEVBLOCK 0x26fa
+# dev::devgui_health_debug@1a
+DEVBLOCK 0x27f2
+# dev::giveextraperks@12
+DEVBLOCK 0x2b12
+# dev::giveextraperks@50
+DEVBLOCK 0x2b50
+# dev::xkillsy@2a
+DEVBLOCK 0x2bf2
+# dev::testscriptruntimeerrorassert@2
+DEVBLOCK 0x2d1a
+# dev::testscriptruntimeerrorassert@c
+DEVBLOCK 0x2d24
+# dev::testscriptruntimeerror2@a
+DEVBLOCK 0x2d52
+# dev::testscriptruntimeerror1@2
+DEVBLOCK 0x2d9a
+# dev::testscriptruntimeerror@a
+DEVBLOCK 0x2dca
+# dev::testdvars@1a
+DEVBLOCK 0x2ec2
+# dev::showonespawnpoint@7a
+DEVBLOCK 0x3032
+# dev::showspawnpoints@1a
+DEVBLOCK 0x34ea
+# dev::hidespawnpoints@2
+DEVBLOCK 0x35ba
+# dev::showstartspawnpoints@52
+DEVBLOCK 0x363a
+# dev::hidestartspawnpoints@2
+DEVBLOCK 0x3822
+# dev::print3duntilnotified@32
+DEVBLOCK 0x3882
+# dev::lineuntilnotified@2a
+DEVBLOCK 0x38fa
+# dev::dvar_turned_on@a
+DEVBLOCK 0x394a
+# dev::new_hud@32
+DEVBLOCK 0x39aa
+# dev::set_hudelem@42
+DEVBLOCK 0x3a92
+# dev::set_hudelem@46
+DEVBLOCK 0x3a96
+# dev::print_weapon_name@22
+DEVBLOCK 0x3bea
+# dev::set_equipment_list@2
+DEVBLOCK 0x3d2a
+# dev::set_grenade_list@2
+DEVBLOCK 0x3f0a
+# dev::take_all_grenades_and_equipment@12
+DEVBLOCK 0x412a
+# dev::equipment_dev_gui@12
+DEVBLOCK 0x41ea
+# dev::grenade_dev_gui@12
+DEVBLOCK 0x4332
+# dev::devstraferunpathdebugdraw@b2
+DEVBLOCK 0x451a
+# dev::devhelipathdebugdraw@82
+DEVBLOCK 0x4962
+# dev::draworiginlines@1a
+DEVBLOCK 0x4cca
+# dev::drawtargetnametext@22
+DEVBLOCK 0x4dda
+# dev::drawnoteworthytext@22
+DEVBLOCK 0x4e52
+# dev::draworigintext@2a
+DEVBLOCK 0x4ed2
+# dev::drawspeedacceltext@22
+DEVBLOCK 0x4f92
+# dev::drawpath@52
+DEVBLOCK 0x50a2
+# dev::drawpathsegment@42
+DEVBLOCK 0x51e2

@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_zonemgr.gsc
 VERSION 0
 CHECKSUM 0xe72a2717
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_zonemgr::zone_init@4a8
 STRING "<dev string:x109>" 0x1928
 # zm_zonemgr::zone_init@534
@@ -56,3 +58,64 @@ STRING "<dev string:xed>" 0x17a8 0x17c4
 STRING "<dev string:xf1>" 0x17e0
 # zm_zonemgr::zone_init@49c
 STRING "<dev string:xf5>" 0x191c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_zonemgr::__init__@2
+DEVBLOCK 0x31a
+# zm_zonemgr::__init__@d2
+DEVBLOCK 0x3ea
+# zm_zonemgr::get_zone_magic_boxes@4e
+DEVBLOCK 0x8f6
+# zm_zonemgr::get_zone_zbarriers@4e
+DEVBLOCK 0x976
+# zm_zonemgr::zone_init@14a
+DEVBLOCK 0x15ca
+# zm_zonemgr::zone_init@25c
+DEVBLOCK 0x16dc
+# zm_zonemgr::zone_init@386
+DEVBLOCK 0x1806
+# zm_zonemgr::zone_init@492
+DEVBLOCK 0x1912
+# zm_zonemgr::zone_init@52c
+DEVBLOCK 0x19ac
+# zm_zonemgr::zone_init@5ce
+DEVBLOCK 0x1a4e
+# zm_zonemgr::zone_init@61a
+DEVBLOCK 0x1a9a
+# zm_zonemgr::enable_zone@42
+DEVBLOCK 0x284a
+# zm_zonemgr::make_zone_adjacent@f8
+DEVBLOCK 0x2c30
+# zm_zonemgr::manage_zones@c2
+DEVBLOCK 0x382a
+# zm_zonemgr::manage_zones@130
+DEVBLOCK 0x3898
+# zm_zonemgr::manage_zones@1a2
+DEVBLOCK 0x390a
+# zm_zonemgr::manage_zones@1e4
+DEVBLOCK 0x394c
+# zm_zonemgr::manage_zones@260
+DEVBLOCK 0x39c8
+# zm_zonemgr::manage_zones@382
+DEVBLOCK 0x3aea
+# zm_zonemgr::manage_zones@39a
+DEVBLOCK 0x3b02
+# zm_zonemgr::manage_zones@a1e
+DEVBLOCK 0x4186
+# zm_zonemgr::debug_show_spawn_locations@3a
+DEVBLOCK 0x4202
+# zm_zonemgr::_debug_zones@2c2
+DEVBLOCK 0x4dca
+# zm_zonemgr::function_74a20786@2
+DEVBLOCK 0x4ea2
+# zm_zonemgr::function_8a9003ae@224
+DEVBLOCK 0x516c
+# zm_zonemgr::function_8a9003ae@466
+DEVBLOCK 0x53ae
+# zm_zonemgr::function_8a9003ae@4e0
+DEVBLOCK 0x5428
+# zm_zonemgr::function_54fc7938@22
+DEVBLOCK 0x54ca
+# zm_zonemgr::function_54fc7938@4a
+DEVBLOCK 0x54f2

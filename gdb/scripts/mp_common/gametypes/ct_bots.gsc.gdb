@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\ct_bots.gsc
 VERSION 0
 CHECKSUM 0x46ee717f
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # ct_bots::function_c2cfffdd@d4
 STRING "<dev string:x106>" 0x500c
 # ct_bots::debug_bots@160 ct_bots::debug_bots@2d0 ct_bots::debug_bots@440
@@ -48,3 +50,12 @@ STRING "<dev string:xe6>" 0x1c1c
 STRING "<dev string:xeb>" 0x1d94
 # ct_bots::debug_bots@c70 ct_bots::debug_bots@cb8
 STRING "<dev string:xf9>" 0x1e38 0x1e80
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# ct_bots::function_fa0d912f@80
+DEVBLOCK 0x540
+# ct_bots::debug_bots@8a
+DEVBLOCK 0x1252
+# ct_bots::function_c2cfffdd@cc
+DEVBLOCK 0x5004

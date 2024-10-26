@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_crafting.gsc
 VERSION 0
 CHECKSUM 0xae481bf2
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_crafting::function_126fc77c@7c
 STRING "<dev string:x118>" 0x1c1c
 # zm_crafting::function_987a472@1e0
@@ -48,3 +50,56 @@ STRING "<dev string:xaa>" 0xf38
 STRING "<dev string:xbf>" 0x101c
 # zm_crafting::function_126fc77c@28
 STRING "<dev string:xdd>" 0x1bc8
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_crafting::__main__@8a
+DEVBLOCK 0x3a2
+# zm_crafting::setup_craftfoundry@260
+DEVBLOCK 0x6c8
+# zm_crafting::setup_tables@d8
+DEVBLOCK 0x7c8
+# zm_crafting::setup_tables@21a
+DEVBLOCK 0x90a
+# zm_crafting::reset_table@2
+DEVBLOCK 0x942
+# zm_crafting::function_c1552513@5e
+DEVBLOCK 0xa3e
+# zm_crafting::function_b18074d0@49a
+DEVBLOCK 0xf0a
+# zm_crafting::function_b18074d0@4be
+DEVBLOCK 0xf2e
+# zm_crafting::get_component@b2
+DEVBLOCK 0x1012
+# zm_crafting::get_component@d2
+DEVBLOCK 0x1032
+# zm_crafting::function_126fc77c@1e
+DEVBLOCK 0x1bbe
+# zm_crafting::function_126fc77c@72
+DEVBLOCK 0x1c12
+# zm_crafting::function_987a472@1d6
+DEVBLOCK 0x27e6
+# zm_crafting::function_35f5c90b@38
+DEVBLOCK 0x31d0
+# zm_crafting::function_35f5c90b@76
+DEVBLOCK 0x320e
+# zm_crafting::function_f37c4bb5@56e
+DEVBLOCK 0x3fae
+# zm_crafting::function_3012605d@22
+DEVBLOCK 0x59aa
+# zm_crafting::function_e197bb07@a
+DEVBLOCK 0x5ae2
+# zm_crafting::function_e5af6b6e@32
+DEVBLOCK 0x5b22
+# zm_crafting::function_e9e4a1d0@22
+DEVBLOCK 0x5bea
+# zm_crafting::function_4765f5b3@a
+DEVBLOCK 0x5c82
+# zm_crafting::devgui_get_players@1a
+DEVBLOCK 0x5caa
+# zm_crafting::devgui_think@32
+DEVBLOCK 0x5dc2
+# zm_crafting::function_3e29352d@a
+DEVBLOCK 0x601a
+# zm_crafting::function_fe738a08@42
+DEVBLOCK 0x6082

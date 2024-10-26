@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_customgame.gsc
 VERSION 0
 CHECKSUM 0xcb5018f6
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_custom::function_338abd6d@109c
 STRING "<dev string:x1011>" 0xbfdc
 # zm_custom::function_338abd6d@1044
@@ -512,3 +514,22 @@ STRING "<dev string:xfc2>" 0xc0e4
 STRING "<dev string:xfd6>" 0xc08c
 # zm_custom::function_338abd6d@10f4
 STRING "<dev string:xff4>" 0xc034
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_custom::function_d776b402@2
+DEVBLOCK 0x59a
+# zm_custom::function_d776b402@162
+DEVBLOCK 0x6fa
+# zm_custom::function_901b751c@3c
+DEVBLOCK 0x824
+# zm_custom::function_901b751c@40
+DEVBLOCK 0x828
+# zm_custom::function_34c2aeb5@2e2
+DEVBLOCK 0x541a
+# zm_custom::function_3ca8ca85@2
+DEVBLOCK 0xa4ea
+# zm_custom::function_172decfc@7a
+DEVBLOCK 0xaafa
+# zm_custom::function_338abd6d@2
+DEVBLOCK 0xaf42

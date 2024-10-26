@@ -1,7 +1,9 @@
 NAME scripts\core\gametypes\frontend.gsc
 VERSION 0
 CHECKSUM 0x6f952b01
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # frontend::dailychallengedevguithink@fc
 STRING "<dev string:x11c>" 0x65c
 # frontend::dailychallengedevguithink@104 frontend::dailychallengedevguithink@12c frontend::dailychallengedevguithink@150 frontend::function_2cdf0184@1d4 frontend::function_2cdf0184@34c
@@ -182,3 +184,42 @@ STRING "<dev string:x89>" 0x438
 STRING "<dev string:xe5>" 0x4d8
 # frontend::dailychallengedevguithink@f0
 STRING "<dev string:xfc>" 0x650
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# frontend::main@132
+DEVBLOCK 0x22a
+# frontend::callback_playerconnect@2
+DEVBLOCK 0x282
+# frontend::dailychallengedevguiinit@2a
+DEVBLOCK 0x2d2
+# frontend::function_83f052f2@2
+DEVBLOCK 0x402
+# frontend::function_5f1dd5aa@12
+DEVBLOCK 0x46a
+# frontend::dailychallengedevguithink@22
+DEVBLOCK 0x582
+# frontend::function_27d2e95a@72
+DEVBLOCK 0x76a
+# frontend::function_1c289498@1a
+DEVBLOCK 0xafa
+# frontend::function_1c289498@1e
+DEVBLOCK 0xafe
+# frontend::function_c209f336@22
+DEVBLOCK 0xbd2
+# frontend::function_87e397ba@1a
+DEVBLOCK 0xdea
+# frontend::function_2cdf0184@4a
+DEVBLOCK 0x10ca
+# frontend::function_1fcf4d0e@1a
+DEVBLOCK 0x152a
+# frontend::function_8aa5abd4@12
+DEVBLOCK 0x159a
+# frontend::function_41cd078d@2
+DEVBLOCK 0x15ea
+# frontend::function_e4ea0153@a
+DEVBLOCK 0x16a2
+# frontend::function_daf9ea48@62
+DEVBLOCK 0x1862
+# frontend::function_9eac333e@12
+DEVBLOCK 0x1b7a

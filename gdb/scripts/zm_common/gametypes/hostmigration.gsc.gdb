@@ -1,7 +1,9 @@
 NAME scripts\zm_common\gametypes\hostmigration.gsc
 VERSION 0
 CHECKSUM 0x7e563662
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # hostmigration::hostmigrationtimerthink_internal@140
 STRING "<dev string:x114>" 0x13e8
 # hostmigration::hostmigrationtimerthink@a4
@@ -32,3 +34,30 @@ STRING "<dev string:x99>" 0x758
 STRING "<dev string:xc2>" 0xe4c
 # hostmigration::host_migration_respawn@1c
 STRING "<dev string:xe0>" 0xfbc
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# hostmigration::debug_script_structs@12
+DEVBLOCK 0x1ea
+# hostmigration::callback_hostmigration@114
+DEVBLOCK 0x744
+# hostmigration::callback_hostmigration@3e2
+DEVBLOCK 0xa12
+# hostmigration::callback_hostmigration@812
+DEVBLOCK 0xe42
+# hostmigration::host_migration_respawn@12
+DEVBLOCK 0xfb2
+# hostmigration::hostmigrationtimerthink_internal@138
+DEVBLOCK 0x13e0
+# hostmigration::hostmigrationtimerthink@9c
+DEVBLOCK 0x1534
+# hostmigration::waitlongdurationwithhostmigrationpause@30
+DEVBLOCK 0x16a0
+# hostmigration::waitlongdurationwithhostmigrationpause@ca
+DEVBLOCK 0x173a
+# hostmigration::waitlongdurationwithgameendtimeupdate@28
+DEVBLOCK 0x17b8
+# hostmigration::waitlongdurationwithgameendtimeupdate@d8
+DEVBLOCK 0x1868
+# hostmigration::hostmigration_put_player_in_better_place@2e4
+DEVBLOCK 0x1e7c

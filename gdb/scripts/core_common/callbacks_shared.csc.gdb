@@ -1,7 +1,9 @@
 NAME scripts\core_common\callbacks_shared.csc
 VERSION 0
 CHECKSUM 0xb62e4349
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # callback::codecallback_maprestart@14
 STRING "<dev string:x126>" 0x1394
 # callback::codecallback_localclientconnect@14
@@ -24,3 +26,30 @@ STRING "<dev string:x9f>" 0x86c
 STRING "<dev string:xce>" 0x1348
 # callback::codecallback_statechange@11c
 STRING "<dev string:xfc>" 0x135c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# callback::add_callback@3a
+DEVBLOCK 0x3ea
+# callback::add_entity_callback@3a
+DEVBLOCK 0x572
+# callback::function_52ac9652@3a
+DEVBLOCK 0x71a
+# callback::remove_callback@3a
+DEVBLOCK 0x842
+# callback::remove_callback@5a
+DEVBLOCK 0x862
+# callback::codecallback_statechange@fe
+DEVBLOCK 0x133e
+# callback::codecallback_maprestart@a
+DEVBLOCK 0x138a
+# callback::codecallback_localclientconnect@a
+DEVBLOCK 0x13f2
+# callback::codecallback_glasssmash@a
+DEVBLOCK 0x1452
+# callback::function_d3771684@1c
+DEVBLOCK 0x1514
+# callback::function_c1d1f779@1c
+DEVBLOCK 0x160c
+# callback::codecallback_hostmigration@a
+DEVBLOCK 0x20b2

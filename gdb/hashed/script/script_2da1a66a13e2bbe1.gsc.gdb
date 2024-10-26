@@ -1,7 +1,9 @@
 NAME script_2da1a66a13e2bbe1
 VERSION 0
 CHECKSUM 0x45e306ee
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # namespace_fddd83bd::guns@360
 STRING "<dev string:x116>" 0x9d8
 # namespace_fddd83bd::guns@73c
@@ -62,3 +64,66 @@ STRING "<dev string:x9e>" 0x654
 STRING "<dev string:xba>" 0x790
 # namespace_fddd83bd::guns@1ac
 STRING "<dev string:xea>" 0x824
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# namespace_fddd83bd::fall@52
+DEVBLOCK 0x4aa
+# namespace_fddd83bd::fall@152
+DEVBLOCK 0x5aa
+# namespace_fddd83bd::grav@2
+DEVBLOCK 0x5da
+# namespace_fddd83bd::grav@72
+DEVBLOCK 0x64a
+# namespace_fddd83bd::guns@10e
+DEVBLOCK 0x786
+# namespace_fddd83bd::guns@1a2
+DEVBLOCK 0x81a
+# namespace_fddd83bd::guns@356
+DEVBLOCK 0x9ce
+# namespace_fddd83bd::guns@732
+DEVBLOCK 0xdaa
+# namespace_fddd83bd::time@52
+DEVBLOCK 0x1042
+# namespace_fddd83bd::time@14e
+DEVBLOCK 0x113e
+# namespace_fddd83bd::brew@2
+DEVBLOCK 0x1212
+# namespace_fddd83bd::cola@2
+DEVBLOCK 0x12ba
+# namespace_fddd83bd::soda@2
+DEVBLOCK 0x1362
+# namespace_fddd83bd::function_28e2ddd5@1a
+DEVBLOCK 0x1422
+# namespace_fddd83bd::noob@42
+DEVBLOCK 0x14ea
+# namespace_fddd83bd::noob@142
+DEVBLOCK 0x15ea
+# namespace_fddd83bd::bank@2a
+DEVBLOCK 0x16da
+# namespace_fddd83bd::door@b2
+DEVBLOCK 0x184a
+# namespace_fddd83bd::warp@2a
+DEVBLOCK 0x1c2a
+# namespace_fddd83bd::shed@102
+DEVBLOCK 0x203a
+# namespace_fddd83bd::shed@21e
+DEVBLOCK 0x2156
+# namespace_fddd83bd::shed@242
+DEVBLOCK 0x217a
+# namespace_fddd83bd::nuke@a
+DEVBLOCK 0x21ba
+# namespace_fddd83bd::hero@2a
+DEVBLOCK 0x227a
+# namespace_fddd83bd::puke@2
+DEVBLOCK 0x2312
+# namespace_fddd83bd::puke@8a
+DEVBLOCK 0x239a
+# namespace_fddd83bd::club@2
+DEVBLOCK 0x2632
+# namespace_fddd83bd::club@aa
+DEVBLOCK 0x26da
+# namespace_fddd83bd::duck@2
+DEVBLOCK 0x270a
+# namespace_fddd83bd::duck@9a
+DEVBLOCK 0x27a2

@@ -1,7 +1,9 @@
 NAME scripts\mp_common\gametypes\prop.gsc
 VERSION 0
 CHECKSUM 0xabfbcec0
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # prop::function_32041818@138 prop::function_32041818@168
 STRING "<dev string:x10d>" 0x74a8 0x74d8
 # prop::function_32041818@140 prop::function_32041818@324 prop::function_32041818@334
@@ -72,3 +74,44 @@ STRING "<dev string:xe1>" 0x7428 0x7458 0x7488
 STRING "<dev string:xef>" 0x7450 0x7624 0x7634
 # prop::function_32041818@110 prop::function_32041818@2ec prop::function_32041818@2fc
 STRING "<dev string:xfe>" 0x7480 0x765c 0x766c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# prop::main@e0a
+DEVBLOCK 0x186a
+# prop::useprophudserver@2
+DEVBLOCK 0x336a
+# prop::handleprop@1a4
+DEVBLOCK 0x4774
+# prop::handleprop@282
+DEVBLOCK 0x4852
+# prop::getthirdpersonrangeforsize@32
+DEVBLOCK 0x494a
+# prop::getthirdpersonheightoffsetforsize@30
+DEVBLOCK 0x4a20
+# prop::function_d43d7033@46
+DEVBLOCK 0x582e
+# prop::function_63d4897@62
+DEVBLOCK 0x6bb2
+# prop::function_32041818@a
+DEVBLOCK 0x737a
+# prop::getpropsize@22
+DEVBLOCK 0x7802
+# prop::getpropsize@b6
+DEVBLOCK 0x7896
+# prop::choosebestpropforkillcam@be
+DEVBLOCK 0x85d6
+# prop::stillalivexp@a2
+DEVBLOCK 0x8d1a
+# prop::function_1ee6f124@2c
+DEVBLOCK 0x980c
+# prop::ondeadevent@1e
+DEVBLOCK 0xaa4e
+# prop::function_d24f3562@a
+DEVBLOCK 0xb2e2
+# prop::function_a3f4820@20e
+DEVBLOCK 0xbdee
+# prop::propminigameupdateshowwinner@94
+DEVBLOCK 0xc084
+# prop::function_5099a828@94
+DEVBLOCK 0xc734

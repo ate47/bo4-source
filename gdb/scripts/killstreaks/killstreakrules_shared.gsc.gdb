@@ -1,7 +1,9 @@
 NAME scripts\killstreaks\killstreakrules_shared.gsc
 VERSION 0
 CHECKSUM 0x2b2c1bfb
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # killstreakrules::iskillstreakallowed@2fc
 STRING "<dev string:x100>" 0x11dc
 # killstreakrules::iskillstreakallowed@3e0
@@ -32,3 +34,56 @@ STRING "<dev string:xde>" 0x1074
 STRING "<dev string:xe9>" 0x1154
 # killstreakrules::iskillstreakallowed@2bc
 STRING "<dev string:xf1>" 0x119c
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# killstreakrules::addkillstreaktorule@7c
+DEVBLOCK 0x2bc
+# killstreakrules::killstreakstart@5a
+DEVBLOCK 0x41a
+# killstreakrules::killstreakstart@5e
+DEVBLOCK 0x41e
+# killstreakrules::killstreakstart@a6
+DEVBLOCK 0x466
+# killstreakrules::killstreakstart@184
+DEVBLOCK 0x544
+# killstreakrules::killstreakstart@374
+DEVBLOCK 0x734
+# killstreakrules::killstreakstop@6a
+DEVBLOCK 0x99a
+# killstreakrules::killstreakstop@6e
+DEVBLOCK 0x99e
+# killstreakrules::killstreakstop@92
+DEVBLOCK 0x9c2
+# killstreakrules::killstreakstop@aa
+DEVBLOCK 0x9da
+# killstreakrules::killstreakstop@17c
+DEVBLOCK 0xaac
+# killstreakrules::killstreakstop@1da
+DEVBLOCK 0xb0a
+# killstreakrules::killstreakstop@218
+DEVBLOCK 0xb48
+# killstreakrules::killstreakstop@232
+DEVBLOCK 0xb62
+# killstreakrules::killstreakstop@2b0
+DEVBLOCK 0xbe0
+# killstreakrules::killstreakstop@308
+DEVBLOCK 0xc38
+# killstreakrules::iskillstreakallowed@72
+DEVBLOCK 0xf52
+# killstreakrules::iskillstreakallowed@76
+DEVBLOCK 0xf56
+# killstreakrules::iskillstreakallowed@9a
+DEVBLOCK 0xf7a
+# killstreakrules::iskillstreakallowed@17e
+DEVBLOCK 0x105e
+# killstreakrules::iskillstreakallowed@260
+DEVBLOCK 0x1140
+# killstreakrules::iskillstreakallowed@2b2
+DEVBLOCK 0x1192
+# killstreakrules::iskillstreakallowed@2f4
+DEVBLOCK 0x11d4
+# killstreakrules::iskillstreakallowed@3d6
+DEVBLOCK 0x12b6
+# killstreakrules::killstreak_debug_text@a
+DEVBLOCK 0x133a

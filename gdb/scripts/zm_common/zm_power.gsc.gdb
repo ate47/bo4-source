@@ -1,7 +1,9 @@
 NAME scripts\zm_common\zm_power.gsc
 VERSION 0
 CHECKSUM 0xf34d6590
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_power::door_power_on@1c
 STRING "<dev string:x109>" 0x24fc
 # zm_power::door_power_off@1c
@@ -36,3 +38,40 @@ STRING "<dev string:xae>" 0x1d3c
 STRING "<dev string:xce>" 0x224c
 # zm_power::global_power@74
 STRING "<dev string:xeb>" 0x22a4
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_power::__main__@2a
+DEVBLOCK 0x2b2
+# zm_power::debug_powered_items@22
+DEVBLOCK 0x2fa
+# zm_power::revert_power@36
+DEVBLOCK 0x1986
+# zm_power::revert_power@ca
+DEVBLOCK 0x1a1a
+# zm_power::add_local_power@2c
+DEVBLOCK 0x1ab4
+# zm_power::end_local_power@a
+DEVBLOCK 0x1d32
+# zm_power::global_power@12
+DEVBLOCK 0x2242
+# zm_power::global_power@6a
+DEVBLOCK 0x229a
+# zm_power::global_power@96
+DEVBLOCK 0x22c6
+# zm_power::door_power_on@12
+DEVBLOCK 0x24f2
+# zm_power::door_power_off@12
+DEVBLOCK 0x255a
+# zm_power::door_local_power_on@12
+DEVBLOCK 0x25c2
+# zm_power::door_local_power_off@12
+DEVBLOCK 0x262a
+# zm_power::zombie_power_off@1a
+DEVBLOCK 0x27c2
+# zm_power::stun_zombie@44
+DEVBLOCK 0x287c
+# zm_power::perk_power_on@12
+DEVBLOCK 0x29f2
+# zm_power::perk_power_off@90
+DEVBLOCK 0x2b18

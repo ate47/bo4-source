@@ -1,7 +1,9 @@
 NAME scripts\zm_common\rat.gsc
 VERSION 0
 CHECKSUM 0x10dd63d7
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # rat::__init__@20c
 STRING "<dev string:x102>" 0x314
 # rat::__init__@234
@@ -110,3 +112,72 @@ STRING "<dev string:xbf>" 0x29c
 STRING "<dev string:xd6>" 0x2c4
 # rat::__init__@1e4
 STRING "<dev string:xeb>" 0x2ec
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# rat::__init__system__@2
+DEVBLOCK 0xc2
+# rat::__init__@2
+DEVBLOCK 0x10a
+# rat::function_e1bdc812@a
+DEVBLOCK 0x63a
+# rat::function_303319e9@52
+DEVBLOCK 0x6b2
+# rat::function_a6f7ea4a@a
+DEVBLOCK 0x81a
+# rat::function_94ac25d9@42
+DEVBLOCK 0x89a
+# rat::function_8f340c78@42
+DEVBLOCK 0x99a
+# rat::function_d52c7fc3@2a
+DEVBLOCK 0xaca
+# rat::function_d87f9fe1@12
+DEVBLOCK 0xc22
+# rat::function_6ea9a113@6a
+DEVBLOCK 0xcc2
+# rat::function_ff8f5737@2a
+DEVBLOCK 0xe62
+# rat::function_5b9ddfdb@2a
+DEVBLOCK 0xfba
+# rat::function_e2143adf@a
+DEVBLOCK 0x10f2
+# rat::function_1bd3da0f@42
+DEVBLOCK 0x116a
+# rat::function_d49caa1a@a
+DEVBLOCK 0x129a
+# rat::function_ea4b3f00@42
+DEVBLOCK 0x1302
+# rat::function_c79c0501@a
+DEVBLOCK 0x13f2
+# rat::function_3bbff2c5@12
+DEVBLOCK 0x147a
+# rat::function_123195b9@a
+DEVBLOCK 0x14fa
+# rat::function_684f2efb@6a
+DEVBLOCK 0x1572
+# rat::function_c3aa7d01@12
+DEVBLOCK 0x1712
+# rat::function_125e2d8d@22
+DEVBLOCK 0x1782
+# rat::function_e7dffcf9@2a
+DEVBLOCK 0x1832
+# rat::function_7a11ca68@2a
+DEVBLOCK 0x1982
+# rat::function_782c6850@2a
+DEVBLOCK 0x1ad2
+# rat::function_3d37c034@32
+DEVBLOCK 0x1c12
+# rat::function_38d6a592@a
+DEVBLOCK 0x1cd2
+# rat::function_26a15f4d@a
+DEVBLOCK 0x1d12
+# rat::function_1428d95e@2a
+DEVBLOCK 0x1d72
+# rat::function_63a39134@a
+DEVBLOCK 0x1e5a
+# rat::function_b8181e0d@12
+DEVBLOCK 0x1e92
+# rat::function_ff8061ca@a
+DEVBLOCK 0x1ed2
+# rat::derriesezombiespawnnavmeshtest@c2
+DEVBLOCK 0x1fc2

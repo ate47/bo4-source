@@ -1,7 +1,9 @@
 NAME scripts\zm_common\callings\zm_callings_devgui.gsc
 VERSION 0
 CHECKSUM 0xb146f5
-
+######################################################
+####################  DEV STRINGS  ###################
+######################################################
 # zm_callings_devgui::function_1d4f22e4@64 zm_callings_devgui::function_1d4f22e4@88
 STRING "<dev string:x131>" 0x2ac 0x2d0
 # zm_callings_devgui::function_1d4f22e4@80 zm_callings_devgui::function_1d4f22e4@178 zm_callings_devgui::function_1d4f22e4@3d8
@@ -40,3 +42,14 @@ STRING "<dev string:xb2>" 0x1e4
 STRING "<dev string:xc6>" 0x1f4
 # zm_callings_devgui::function_9f47471@1a8
 STRING "<dev string:xcb>" 0x228
+######################################################
+####################  DEV BLOCKS  ####################
+######################################################
+# zm_callings_devgui::function_9f47471@3a
+DEVBLOCK 0xba
+# zm_callings_devgui::function_1d4f22e4@5a
+DEVBLOCK 0x2a2
+# zm_callings_devgui::function_8a37e046@3a
+DEVBLOCK 0x802
+# zm_callings_devgui::function_6cbc14bb@2a
+DEVBLOCK 0x912
