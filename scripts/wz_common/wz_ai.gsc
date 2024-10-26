@@ -75,7 +75,7 @@ function function_afce0cdb(spawn_loc) {
             return;
         }
         while (!(isdefined(zone.is_occupied) && zone.is_occupied)) {
-            wait(randomintrange(2, 6));
+            wait randomintrange(2, 6);
         }
         if (!isdefined(patroller)) {
             if (isdefined(zone.is_vehicle) && zone.is_vehicle) {
@@ -111,7 +111,7 @@ function function_afce0cdb(spawn_loc) {
             }
         }
         while (isdefined(zone.is_occupied) && zone.is_occupied) {
-            wait(randomintrange(2, 6));
+            wait randomintrange(2, 6);
         }
         if (isdefined(patroller)) {
             patroller delete();
@@ -146,7 +146,7 @@ function function_77a4c7ab() {
                 break;
             }
         }
-        wait(randomfloatrange(2, 4));
+        wait randomfloatrange(2, 4);
     }
 }
 
@@ -199,7 +199,7 @@ function function_f8e46115(node, oldgoalradius) {
     self endon("488af40167c3a4a7");
     if (isdefined(self.enemy)) {
         self.goalradius = oldgoalradius;
-        wait(randomintrange(3, 6));
+        wait randomintrange(3, 6);
         self thread function_f8e46115(node, oldgoalradius);
         return;
     }
@@ -222,7 +222,7 @@ function function_f8e46115(node, oldgoalradius) {
     while (!isatgoal) {
         goalinfo = self function_4794d6a3();
         isatgoal = isdefined(goalinfo.isatgoal) && goalinfo.isatgoal || self isapproachinggoal() && isdefined(self.overridegoalpos);
-        wait(1);
+        wait 1;
     }
     if (isdefined(node.target)) {
         self thread function_f8e46115(getnode(node.target, "targetname"), oldgoalradius);
@@ -241,7 +241,7 @@ function function_7820dead() {
     waitresult = self waittill(#"damage");
     if (isdefined(waitresult.attacker) && isplayer(waitresult.attacker)) {
         self.favoriteenemy = waitresult.attacker;
-        wait(5);
+        wait 5;
         self.favoriteenemy = undefined;
     }
     self thread function_7820dead();
@@ -280,7 +280,7 @@ function function_b25a6169() {
                 }
             }
         }
-        wait(randomintrange(3, 6));
+        wait randomintrange(3, 6);
     }
 }
 
@@ -292,7 +292,7 @@ function function_af46682(patroller) {
     level endon(#"game_ended", #"hash_12a8f2c59a67e4fc");
     patroller endon(#"death");
     while (!isdefined(level.deathcircle)) {
-        wait(1);
+        wait 1;
     }
     while (isdefined(patroller)) {
         distsq = distance2dsquared(patroller.origin, level.deathcircle.origin);
@@ -300,7 +300,7 @@ function function_af46682(patroller) {
             patroller dodamage(patroller.health, patroller.origin, level.deathcircle);
             self.var_c6328f73 = 0;
         }
-        wait(randomint(10));
+        wait randomint(10);
     }
 }
 

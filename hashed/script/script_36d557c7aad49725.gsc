@@ -40,7 +40,7 @@ function zombie_arm_blood_splash(localclientnum, oldval, newval, bnewent, biniti
 // Checksum 0x7dd77ea, Offset: 0x320
 // Size: 0xac
 function bathtub_fake_soul_sfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    wait(0.2);
+    wait 0.2;
     bathtub = struct::get(#"zombie_bathub", "targetname");
     if (isdefined(bathtub)) {
         playsound(localclientnum, #"zmb_sq_souls_impact", bathtub.origin);

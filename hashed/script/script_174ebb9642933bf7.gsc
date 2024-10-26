@@ -163,7 +163,7 @@ function function_f6e748b() {
 // Checksum 0x219267bb, Offset: 0x820
 // Size: 0x34
 function function_f726e44(count, max) {
-    wait(randomfloatrange(0.25, 0.5));
+    wait randomfloatrange(0.25, 0.5);
 }
 
 // Namespace namespace_df88241c/namespace_a366d2a9
@@ -348,7 +348,7 @@ function function_9e97e0f7() {
 // Size: 0x32
 function function_de265920(var_d25bbdd5) {
     level flag::clear(#"hash_2a1fc2e349c48462");
-    wait(5);
+    wait 5;
 }
 
 // Namespace namespace_df88241c/namespace_a366d2a9
@@ -366,6 +366,6 @@ function function_70a8e26c() {
 // Checksum 0x327b92be, Offset: 0x12f0
 // Size: 0xc
 function function_d7e9e2ff() {
-    wait(0.1);
+    wait 0.1;
 }
 

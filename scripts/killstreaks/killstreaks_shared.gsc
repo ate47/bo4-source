@@ -473,7 +473,7 @@ function register_dev_dvars(killstreaktype) {
     // Size: 0x138
     function register_devgui(killstreaktype) {
         level endon(#"game_ended");
-        wait(randomintrange(2, 20) * float(function_60d95f53()) / 1000);
+        wait randomintrange(2, 20) * float(function_60d95f53()) / 1000;
         give_type_all = "<dev string:x311>";
         give_type_enemy = "<dev string:x318>";
         if (isdefined(level.killstreaks[killstreaktype].devdvar)) {
@@ -1912,7 +1912,7 @@ function play_killstreak_ready_dialog(killstreaktype, taacomwaittime) {
         return;
     }
     if (isdefined(taacomwaittime)) {
-        wait(taacomwaittime);
+        wait taacomwaittime;
     }
     self play_taacom_dialog("ready", killstreaktype);
 }
@@ -1975,11 +1975,11 @@ function player_killstreak_threat_tracking(killstreaktype) {
                 if (dialog_shared::dialog_chance("killstreakSpotChance")) {
                     player dialog_shared::play_killstreak_threat(killstreaktype);
                 }
-                wait(dialog_shared::mpdialog_value("killstreakSpotDelay", 0));
+                wait dialog_shared::mpdialog_value("killstreakSpotDelay", 0);
                 break;
             }
         }
-        wait(dialog_shared::mpdialog_value("killstreakSpotInterval", float(function_60d95f53()) / 1000));
+        wait dialog_shared::mpdialog_value("killstreakSpotInterval", float(function_60d95f53()) / 1000);
     }
 }
 
@@ -2067,7 +2067,7 @@ function private initialspawnprotection() {
     self.specialty_nottargetedbyairsupport = 1;
     self clientfield::set("killstreak_spawn_protection", 1);
     self val::set(#"killstreak_spawn_protection", "ignoreme", 1);
-    wait(level.spawnprotectiontime);
+    wait level.spawnprotectiontime;
     self clientfield::set("killstreak_spawn_protection", 0);
     self.specialty_nottargetedbyairsupport = undefined;
     self val::reset(#"killstreak_spawn_protection", "ignoreme");
@@ -2091,7 +2091,7 @@ function private initialspawnprotection() {
             if (cmd != "<dev string:x74>") {
                 setdvar(#"debug_killstreak", "<dev string:x74>");
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -2790,7 +2790,7 @@ function clear_using_remote(immediate, skipnotify, gameended) {
 // Size: 0x20
 function hide_tablet() {
     self endon(#"disconnect");
-    wait(0.2);
+    wait 0.2;
 }
 
 // Namespace killstreaks/killstreaks_shared
@@ -2897,7 +2897,7 @@ function init_ride_killstreak_internal(streak, always_allow) {
 function clear_ride_intro(delay) {
     self endon(#"disconnect");
     if (isdefined(delay)) {
-        wait(delay);
+        wait delay;
     }
     self thread hud::screen_fade_in(0);
 }
@@ -3691,10 +3691,10 @@ function is_ricochet_protected(player) {
         debug_frames = int(debug_wait / float(function_60d95f53()) / 1000) + 1;
         while (true) {
             if (getdvarint(#"scr_ricochet_protection_debug", 0) == 0) {
-                wait(2);
+                wait 2;
                 continue;
             }
-            wait(debug_wait);
+            wait debug_wait;
             foreach (player in level.players) {
                 if (!isdefined(player)) {
                     continue;

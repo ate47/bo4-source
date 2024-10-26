@@ -100,7 +100,7 @@ function main() {
 function function_93a140f7() {
     level endon(#"end_game");
     while (level.var_a43a746d < 2) {
-        wait(2);
+        wait 2;
     }
     zm_sq::start(#"main_quest");
 }
@@ -111,7 +111,7 @@ function function_93a140f7() {
 // Size: 0x1a
 function function_cb512dd4(var_5ea5c94d) {
     if (!var_5ea5c94d) {
-        wait(10);
+        wait 10;
     }
 }
 
@@ -151,10 +151,10 @@ function function_d4147875(var_5ea5c94d) {
     zm_orange_lights::function_b1c6d4f2();
     level flag::set(#"hold_round_end");
     level thread play_outro();
-    wait(320);
+    wait 320;
     println("<dev string:x38>");
     level thread lui::screen_flash(0.2, 7, 7, 1, "black");
-    wait(0.3);
+    wait 0.3;
     level.var_583a0efc = getstatuseffect(#"zm_orange_outro");
     println("<dev string:x5c>");
     hud_disable();
@@ -184,14 +184,14 @@ function function_d4147875(var_5ea5c94d) {
         player thread function_c40f70df(n_player);
         n_player++;
     }
-    wait(1);
+    wait 1;
     println("<dev string:x136>");
     namespace_3b9dec72::function_303ab700();
     println("<dev string:x157>");
     level.var_9441bf02 = spawn("script_origin", (0, 0, 0));
     level.var_9441bf02 playloopsound(#"hash_503b99b370ac70b9");
     println("<dev string:x172>");
-    wait(5);
+    wait 5;
     println("<dev string:x1a3>");
     level.musicsystemoverride = 1;
     music::setmusicstate("sam_eddie_walk");
@@ -207,12 +207,12 @@ function function_d4147875(var_5ea5c94d) {
     }
     namespace_3b9dec72::function_10add6a8();
     namespace_3b9dec72::function_ddbe2dbb(1000);
-    wait(5);
+    wait 5;
     level thread lui::screen_flash(10, 30, 5, 1, "white");
     while (!flag::get("sam_music_done")) {
-        wait(0.5);
+        wait 0.5;
     }
-    wait(8);
+    wait 8;
 }
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr
@@ -220,7 +220,7 @@ function function_d4147875(var_5ea5c94d) {
 // Checksum 0x1e20ac38, Offset: 0x13f8
 // Size: 0x2c
 function music_watcher() {
-    wait(120);
+    wait 120;
     level flag::set(#"sam_music_done");
 }
 
@@ -233,7 +233,7 @@ function function_895265b1(var_5ea5c94d, ended_early) {
     level.var_9441bf02 delete();
     level.musicsystemoverride = 0;
     music::setmusicstate("none");
-    wait(2);
+    wait 2;
     level notify(#"end_game");
 }
 
@@ -288,7 +288,7 @@ function function_b20c4898() {
     self endon(#"death");
     while (true) {
         self status_effect::status_effect_apply(level.var_583a0efc, undefined, self, 0);
-        wait(30);
+        wait 30;
     }
 }
 
@@ -322,12 +322,12 @@ function function_c40f70df(var_21c1ba1) {
         case #"crouch":
             self setstance("stand");
             println("<dev string:x20d>" + var_21c1ba1 + "<dev string:x248>");
-            wait(0.2);
+            wait 0.2;
             break;
         case #"prone":
             self setstance("stand");
             println("<dev string:x20d>" + var_21c1ba1 + "<dev string:x273>");
-            wait(1);
+            wait 1;
             break;
         }
     }

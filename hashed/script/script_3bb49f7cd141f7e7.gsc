@@ -69,11 +69,11 @@ function is_active() {
 function private point_watcher(var_1532dab3 = 1, var_94d24883 = 0.9) {
     level endon(#"hash_2669c6e7b1eb2e4b", #"end_game", #"hash_7646638df88a3656");
     self endon(#"disconnect");
-    wait(15);
+    wait 15;
     while (true) {
         if (isalive(self) && !self laststand::player_is_in_laststand() && isdefined(self.score) && self.score > level.var_2e5ed433) {
             self dodamage(var_1532dab3, self.origin);
-            wait(var_94d24883);
+            wait var_94d24883;
         }
         waitframe(1);
     }

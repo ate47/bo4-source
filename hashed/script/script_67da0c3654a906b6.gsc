@@ -34,7 +34,7 @@ function __init__() {
 function private on_begin(var_93fc795f, var_a7c52900, var_c8a36f90) {
     var_a7c52900 = zm_trial::function_5769f26a(var_a7c52900);
     level.var_1c8f9eba = var_c8a36f90;
-    wait(6);
+    wait 6;
     foreach (player in getplayers()) {
         if (isdefined(var_c8a36f90)) {
             switch (var_c8a36f90) {
@@ -85,7 +85,7 @@ function private movement_watcher(var_93fc795f, var_98de1f93) {
             } else {
                 n_wait_time = max(0.5, var_9b7f7d9b / 190);
             }
-            wait(n_wait_time);
+            wait n_wait_time;
         }
         waitframe(1);
     }
@@ -160,17 +160,17 @@ function private function_9c988cd8(var_93fc795f, var_98de1f93, var_e898f976 = 0)
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
     if (!var_e898f976) {
-        wait(12);
+        wait 12;
     }
     while (true) {
         if (var_e898f976) {
-            wait(randomfloatrange(10, 25));
+            wait randomfloatrange(10, 25);
         } else {
             waitframe(1);
         }
         while (isalive(self) && !self laststand::player_is_in_laststand() && !self function_26f124d8()) {
             self function_6b13a114(var_93fc795f, var_98de1f93);
-            wait(1);
+            wait 1;
         }
     }
 }

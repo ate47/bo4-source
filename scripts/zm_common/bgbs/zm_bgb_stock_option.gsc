@@ -58,7 +58,7 @@ function enable() {
 function disable() {
     self endon(#"disconnect");
     self notify(#"hash_120ea24fd48cb17a");
-    wait(0.1);
+    wait 0.1;
     if (self hasperk("specialty_ammodrainsfromstockfirst")) {
         self perks::perk_unsetperk("specialty_ammodrainsfromstockfirst");
     }

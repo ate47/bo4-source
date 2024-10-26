@@ -151,7 +151,7 @@ function private function_8b87e57c(timer_label, grace_period, timer_value) {
     if (!isdefined(level.var_869f4c31)) {
         level.var_869f4c31 = timer_value;
     }
-    wait(grace_period);
+    wait grace_period;
     timer_label = isdefined(timer_label) ? timer_label : #"";
     if (!level.var_f995ece6 zm_trial_timer::is_open(self)) {
         level.var_f995ece6 zm_trial_timer::open(self);
@@ -159,7 +159,7 @@ function private function_8b87e57c(timer_label, grace_period, timer_value) {
         level.var_f995ece6 zm_trial_timer::set_under_round_rules(self, 1);
     }
     self zm_trial_util::start_timer(timer_value);
-    wait(timer_value);
+    wait timer_value;
     zm_trial::fail(#"hash_73f632514ab7d15");
 }
 

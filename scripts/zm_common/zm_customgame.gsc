@@ -841,7 +841,7 @@ function function_2717f4b3() {
     level endon(#"game_ended");
     self endon(#"disconnect");
     level flag::wait_till("all_players_spawned");
-    wait(9);
+    wait 9;
     self iprintlnbold(#"hash_329de7d3aa04177c");
 }
 
@@ -855,7 +855,7 @@ function function_deae84ba() {
     level endon(#"game_ended");
     self endon(#"disconnect");
     level flag::wait_till("all_players_spawned");
-    wait(10);
+    wait 10;
     self iprintlnbold(#"hash_6d446c2466f066ac");
 }
 
@@ -869,7 +869,7 @@ function function_343353f8() {
     level endon(#"game_ended");
     self endon(#"disconnect");
     level flag::wait_till("all_players_spawned");
-    wait(8);
+    wait 8;
     self iprintlnbold(#"hash_1225b8e31a9ffb76");
 }
 
@@ -883,7 +883,7 @@ function function_41ed4017() {
     level endon(#"game_ended");
     self endon(#"disconnect");
     level flag::wait_till("all_players_spawned");
-    wait(11);
+    wait 11;
     self iprintlnbold(#"hash_d77fc2d11c6deb1");
 }
 
@@ -1005,7 +1005,7 @@ function private function_74b79f63() {
     function_928be07c();
     level waittill(#"all_players_spawned");
     function_7a8180ae();
-    wait(5);
+    wait 5;
     switch (function_901b751c(#"zmdoorstate")) {
     case 1:
     default:
@@ -1186,7 +1186,7 @@ function private function_74b79f63() {
 function private function_214e109e() {
     level waittill(#"start_of_round");
     if (function_901b751c(#"zmroundcap") && function_901b751c(#"startround") > function_901b751c(#"zmroundcap")) {
-        wait(1);
+        wait 1;
         function_9be9c072("zmRoundCap");
     }
 }
@@ -1303,7 +1303,7 @@ function private drain_health(var_c454f44e) {
         waitframe(1);
     }
     while (true) {
-        wait(var_c454f44e);
+        wait var_c454f44e;
         if (self.health <= 0 || self laststand::player_is_in_laststand() || isdefined(self.var_eb319d10) && self.var_eb319d10) {
             waitframe(1);
             continue;
@@ -1818,7 +1818,7 @@ function private function_6129676c() {
     level endon(#"game_ended");
     level flagsys::wait_till("gameplay_started");
     clientfield::set_world_uimodel("ZMHudGlobal.trials.gameStartTime", gettime());
-    wait(timer);
+    wait timer;
     function_9be9c072("zmTimeCap");
 }
 

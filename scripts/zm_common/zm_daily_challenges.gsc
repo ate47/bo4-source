@@ -385,7 +385,7 @@ function challenge_ingame_time_tracking() {
     self endon(#"stop_challenge_ingame_time_tracking");
     level flag::wait_till("start_zombie_round_logic");
     for (;;) {
-        wait(1);
+        wait 1;
         zm_stats::increment_client_stat("ZM_DAILY_CHALLENGE_INGAME_TIME");
     }
 }
@@ -420,7 +420,7 @@ function increment_windows_repaired(s_barrier) {
 function private rebuild_timer() {
     self endon(#"disconnect");
     self.b_dc_rebuild_timer_active = 1;
-    wait(45);
+    wait 45;
     if (self.n_dc_barriers_rebuilt >= 5) {
         self zm_stats::increment_challenge_stat(#"zm_daily_rebuild_windows");
         /#

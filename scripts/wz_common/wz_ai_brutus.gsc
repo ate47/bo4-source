@@ -524,7 +524,7 @@ function function_b510a832() {
             }
             if (waitresult._notify !== "timeout") {
                 idle_time = randomfloatrange(3, 5);
-                wait(idle_time);
+                wait idle_time;
             }
         }
     }

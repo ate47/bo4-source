@@ -326,7 +326,7 @@ function private function_db62d88a() {
     if (isdefined(w_current) && isdefined(w_current.isheroweapon) && w_current.isheroweapon) {
         self val::set(#"nosferatu_latch", "disable_weapons", 1);
     }
-    wait(8);
+    wait 8;
     self val::reset(#"nosferatu_latch", "ignoreme");
 }
 

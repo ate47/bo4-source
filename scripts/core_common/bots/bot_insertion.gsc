@@ -268,7 +268,7 @@ function function_c9a18304(params) {
             if (length(self getvelocity()) * 0.0568182 > 110) {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         var_26a66f9d = &function_d26744ff;
         var_2706b530 = function_9ea8f9d6();

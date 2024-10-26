@@ -33,9 +33,9 @@ function default_onforfeit(team) {
     level endon(#"abort forfeit");
     forfeit_delay = 20;
     announcement(game.strings[#"opponent_forfeiting_in"], forfeit_delay, 0);
-    wait(10);
+    wait 10;
     announcement(game.strings[#"opponent_forfeiting_in"], 10, 0);
-    wait(10);
+    wait 10;
     endreason = #"";
     if (!isdefined(team)) {
         setdvar(#"ui_text_endreason", game.strings[#"players_forfeited"]);

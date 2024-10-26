@@ -82,7 +82,7 @@ function function_7f3b4877() {
     n_start_time = gettime();
     n_total_time = 0;
     while (isdefined(level.active_powerups) && level.active_powerups.size) {
-        wait(0.5);
+        wait 0.5;
         n_current_time = gettime();
         n_total_time = (n_current_time - n_start_time) / 1000;
         if (n_total_time >= 28) {

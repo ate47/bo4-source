@@ -151,7 +151,7 @@ function function_e5437696(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_d598fd7e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.n_fx_id = util::playfxontag(localclientnum, level._effect[#"ritual_gobo"], self, "tag_origin");
-        wait(1.6);
+        wait 1.6;
         util::playfxontag(localclientnum, level._effect[#"hash_180f832f742958d6"], self, "tag_origin");
         return;
     }

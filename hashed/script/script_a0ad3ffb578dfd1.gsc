@@ -85,7 +85,7 @@ function function_a425bf07() {
             if (!(isdefined(b_played) && b_played)) {
                 i--;
             }
-            wait(0.25);
+            wait 0.25;
             s_trigger_loc waittill(#"trigger_activated");
         }
     }
@@ -100,7 +100,7 @@ function function_e7fd1a33() {
     var_f21d9eb3 = int(self.origin[0] - 12);
     n_max_x = int(self.origin[0] + 12);
     while (isdefined(self)) {
-        wait(randomintrange(15, 30));
+        wait randomintrange(15, 30);
         while (true) {
             b_move = 1;
             players = util::get_active_players();
@@ -117,7 +117,7 @@ function function_e7fd1a33() {
             if (b_move) {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         n_rotate = randomintrange(160, 200);
         n_x_move = randomintrange(var_f21d9eb3, n_max_x);
@@ -213,7 +213,7 @@ function function_59ecbee4() {
         } else {
             var_5c608f55 hide();
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -228,7 +228,7 @@ function function_240b713f() {
         } else {
             level.var_7f5f5e6b = 0;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -350,7 +350,7 @@ function function_63c3fd24(var_314c1b5a) {
             } else {
                 self.var_68c35930 playloopsound(#"hash_2367dae4a69a4294");
             }
-            wait(1);
+            wait 1;
             self.var_68c35930 zm_vo::function_cf1e151c(var_314c1b5a[self.var_68c35930.script_int]);
             level flag::clear(#"phonograph_playing");
             self.var_68c35930 notify(#"hash_53eb32eaa511640c");
@@ -560,14 +560,14 @@ function function_e1a452f5(e_homunculus, var_21bb918c, var_c8279d50) {
         if (isalive(player)) {
             weapon = player getcurrentweapon();
             if (player === self && isdefined(weapon) && player adsbuttonpressed() && util::getweaponclass(weapon) === #"weapon_sniper") {
-                wait(0.2);
+                wait 0.2;
                 if (isalive(player)) {
                     level notify(#"hash_57175159706ca9bf");
                     e_homunculus setvisibletoplayer(player);
                     var_21bb918c setvisibletoplayer(player);
                     var_c8279d50 setvisibletoplayer(player);
                     do {
-                        wait(0.25);
+                        wait 0.25;
                     } while (isalive(player) && player adsbuttonpressed() && player istouching(t_vis) && player util::is_looking_at(e_homunculus));
                     if (isalive(player)) {
                         e_homunculus setinvisibletoplayer(player);
@@ -577,7 +577,7 @@ function function_e1a452f5(e_homunculus, var_21bb918c, var_c8279d50) {
                 }
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -606,7 +606,7 @@ function function_c867ac0a(e_homunculus, var_21bb918c, var_c8279d50) {
     var_c8279d50.var_55e11aa9 linkto(level.e_sway);
     a_angles = function_a7ae2066();
     function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"start");
-    wait(1);
+    wait 1;
     function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"y");
     function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"o");
     function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, #"u");
@@ -715,7 +715,7 @@ function function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, str_letter) {
     var_c8279d50.origin = var_c8279d50.var_55e11aa9.origin;
     var_21bb918c linkto(level.e_sway);
     var_c8279d50 linkto(level.e_sway);
-    wait(1.25);
+    wait 1.25;
 }
 
 // Namespace namespace_57873b62/namespace_8125d942
@@ -790,7 +790,7 @@ function function_678d6318() {
                 }
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
     var_8940de41 = function_7199779e();
     var_ff439c7c = struct::get_array(#"hash_12938a97ea1a6c1");
@@ -919,7 +919,7 @@ function function_bef7f017(s_trigger_loc) {
                 break;
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
     s_trigger_loc waittill(#"trigger_activated");
 }
@@ -952,7 +952,7 @@ function function_24d85b68() {
             }
             waitframe(1);
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

@@ -309,7 +309,7 @@ function trail_fx(localclientnum, trail_fx, trail_tag) {
 function heli_comlink_lights_on_after_wait(localclientnum, wait_time) {
     self endon(#"death");
     self endon(#"heli_comlink_lights_off");
-    wait(wait_time);
+    wait wait_time;
     self heli_comlink_lights_on(localclientnum);
 }
 

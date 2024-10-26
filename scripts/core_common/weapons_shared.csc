@@ -103,7 +103,7 @@ function function_903d2d4c(local_client_num) {
             forcestreamxmodel(#"hash_253fe56e77e698b3");
             level.var_644fb9ec = 1;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -114,7 +114,7 @@ function function_903d2d4c(local_client_num) {
 function function_ec73770b(local_client_num) {
     player = self;
     player endon(#"death", #"disconnect");
-    wait(randomfloatrange(0.1, 0.5));
+    wait randomfloatrange(0.1, 0.5);
     var_935615f7 = #"mountable_point";
     obj_id = undefined;
     var_8e35a928 = 0;
@@ -137,9 +137,9 @@ function function_ec73770b(local_client_num) {
             }
         }
         if (!var_4798772a) {
-            wait(0.5);
+            wait 0.5;
         }
-        wait(0.016);
+        wait 0.016;
         if (false) {
             start_time = util::get_start_time();
         }

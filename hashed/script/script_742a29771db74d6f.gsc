@@ -121,7 +121,7 @@ function function_88df772a(player, var_c895e25d, var_b1100790, var_f0996295 = 0)
         if (player.var_26b0547b === var_b1100790) {
             self set_timer(player, var_c895e25d, var_b1100790);
         }
-        wait(1);
+        wait 1;
         var_c895e25d--;
         if (!isdefined(player.var_26b0547b)) {
             player.var_26b0547b = var_b1100790;

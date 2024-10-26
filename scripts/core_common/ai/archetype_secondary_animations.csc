@@ -158,7 +158,7 @@ function private secondaryfacialanimationthink(localclientnum) {
         if (self.archetype == #"human" && self clientfield::get("facial_dial")) {
             self._currentfacestate = "inactive";
             self clearcurrentfacialanim(localclientnum);
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         animoverride = self getfacialanimoverride(localclientnum);
@@ -182,18 +182,18 @@ function private secondaryfacialanimationthink(localclientnum) {
                     self._currentfacestate = "inactive";
                     self clearcurrentfacialanim(localclientnum);
                 }
-                wait(0.5);
+                wait 0.5;
                 continue;
             }
             break;
         }
         closestplayer = arraygetclosest(self.origin, level.localplayers, getdvarint(#"ai_clientfacialculldist", 2000));
         if (!isdefined(closestplayer)) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (!self hasdobj(localclientnum) || !self hasanimtree()) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         currfacestate = self._currentfacestate;
@@ -229,7 +229,7 @@ function private secondaryfacialanimationthink(localclientnum) {
         if (self._currentfacestate == "death") {
             break;
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -244,7 +244,7 @@ function private applynewfaceanim(localclientnum, animation, clearoncompletion =
         if (self hasdobj(localclientnum) && self hasanimtree()) {
             self setflaggedanimknob(#"ai_secondary_facial_anim", animation, 1, 0.1, 1);
             if (clearoncompletion) {
-                wait(getanimlength(animation));
+                wait getanimlength(animation);
                 clearcurrentfacialanim(localclientnum);
             }
         }

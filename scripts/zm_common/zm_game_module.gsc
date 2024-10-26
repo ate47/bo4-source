@@ -171,7 +171,7 @@ function zombie_goto_round(target_round) {
             enemy kill(undefined, undefined, undefined, undefined, undefined, 1);
         }
     }
-    wait(5);
+    wait 5;
     corpses = getcorpsearray();
     foreach (corpse in corpses) {
         if (isactorcorpse(corpse)) {
@@ -200,9 +200,9 @@ function create_fireworks(launch_spots, min_wait, max_wait, randomize) {
         }
         foreach (spot in launch_spots) {
             level thread fireworks_launch(spot);
-            wait(randomfloatrange(min_wait, max_wait));
+            wait randomfloatrange(min_wait, max_wait);
         }
-        wait(randomfloatrange(min_wait, max_wait));
+        wait randomfloatrange(min_wait, max_wait);
     }
 }
 

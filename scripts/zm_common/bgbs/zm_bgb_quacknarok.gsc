@@ -90,7 +90,7 @@ function actor_death_override(s_data) {
 // Checksum 0x12c69633, Offset: 0x4a8
 // Size: 0x3c
 function function_645efd58() {
-    wait(randomintrange(15, 25));
+    wait randomintrange(15, 25);
     if (isdefined(self)) {
         self delete();
     }

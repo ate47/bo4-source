@@ -52,7 +52,7 @@ function private function_597cbfb8(slot, weapon, force = 0) {
         if (!isalive(self) || game.state != "playing") {
             return;
         }
-        wait(1);
+        wait 1;
         if (self gadgetisready(slot)) {
             return;
         }
@@ -91,7 +91,7 @@ function private onplayerkilled(params) {
 // Checksum 0x915d2f04, Offset: 0x860
 // Size: 0x4c
 function private function_9ede386f(slot) {
-    wait(0.1);
+    wait 0.1;
     self gadgetpowerset(slot, 0);
     self function_19ed70ca(slot, 1);
 }

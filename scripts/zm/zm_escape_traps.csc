@@ -73,7 +73,7 @@ function rumble_fan_trap(localclientnum, oldval, newval, bnewent, binitialsnap, 
             if (isinarray(getlocalplayers(), self)) {
                 self playrumbleonentity(localclientnum, "damage_light");
             }
-            wait(0.25);
+            wait 0.25;
         }
         return;
     }
@@ -245,7 +245,7 @@ function rumble_spinning_trap(localclientnum, oldval, newval, bnewent, binitials
             if (isinarray(getlocalplayers(), self)) {
                 self playrumbleonentity(localclientnum, "damage_light");
             }
-            wait(0.25);
+            wait 0.25;
         }
         return;
     }

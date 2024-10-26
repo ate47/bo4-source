@@ -400,12 +400,12 @@ function function_2cc4144b(var_83225a27) {
     level.bottle_spawn_location = util::spawn_model("tag_origin", self.origin, self.angles);
     if (isdefined(level.bottle_spawn_location)) {
         level.bottle_spawn_location.origin += (0, 0, 15);
-        wait(1);
+        wait 1;
         self notify(#"bottle_spawned");
         self thread start_perk_bottle_cycling();
         self thread perk_bottle_motion();
         var_ceb50987 = zm_perks::get_perk_weapon_model(var_83225a27);
-        wait(3);
+        wait 3;
         self notify(#"done_cycling");
         if (isdefined(level.bottle_spawn_location)) {
             level.bottle_spawn_location setmodel(var_ceb50987);
@@ -438,7 +438,7 @@ function start_perk_bottle_cycling() {
             if (isdefined(str_model) && isdefined(level.bottle_spawn_location)) {
                 level.bottle_spawn_location setmodel(str_model);
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -504,7 +504,7 @@ function function_bb1ac745(s_altar) {
             switch (cmd) {
             case #"cycle_altar":
                 function_44481969();
-                wait(1);
+                wait 1;
                 break;
             }
             waitframe(1);

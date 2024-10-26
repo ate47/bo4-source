@@ -377,7 +377,7 @@ function function_c436ab98() {
         if (!zm_utility::is_player_valid(self.favoriteenemy)) {
             self.favoriteenemy = get_favorite_enemy();
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

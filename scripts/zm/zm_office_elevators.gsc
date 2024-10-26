@@ -341,7 +341,7 @@ function call_box_think(elevator) {
         if (!elev_clear) {
             zm_utility::play_sound_at_pos("no_purchase", self.origin);
             self sethintstring(#"hash_2af4a28719c51767");
-            wait(1);
+            wait 1;
             if (function_8b1a219a()) {
                 self sethintstring(#"hash_4e2495c99a50f326");
             } else {
@@ -358,7 +358,7 @@ function call_box_think(elevator) {
             elevator disable_elevator_buys();
             self thread elevator_move_to(elevator);
         }
-        wait(0.05);
+        wait 0.05;
     }
 }
 
@@ -443,7 +443,7 @@ function elevator_buy_think(elevator) {
         if (!elev_clear) {
             zm_utility::play_sound_at_pos("no_purchase", self.origin);
             self sethintstring(#"hash_2af4a28719c51767");
-            wait(1);
+            wait 1;
             self sethintstring(level.var_31560d97, elevator.cost);
         } else if (zm_utility::is_player_valid(who) && who zm_score::can_player_purchase(elevator.cost) && who can_buy_elevator()) {
             elevator.active = 1;
@@ -464,7 +464,7 @@ function elevator_buy_think(elevator) {
             zm_utility::play_sound_at_pos("no_purchase", self.origin);
             who zm_audio::create_and_play_dialog(#"general", #"outofmoney");
         }
-        wait(0.05);
+        wait 0.05;
     }
 }
 
@@ -914,7 +914,7 @@ function redirect_zombies(destination) {
     if (!num_players == players.size) {
         return;
     }
-    wait(2);
+    wait 2;
     location = getnode(destination, "targetname");
     if (isdefined(location)) {
         poi = spawn("script_origin", location.origin);
@@ -989,7 +989,7 @@ function function_eee9c340(var_73803951) {
     } else {
         test_vol = self.var_8e5e8534;
     }
-    wait(0.6);
+    wait 0.6;
     foreach (ai in getaiarray()) {
         if (isdefined(ai.allowdeath) && !ai.allowdeath) {
             continue;
@@ -1018,7 +1018,7 @@ function function_dec13a5b() {
         }
         level waittill(#"host_migration_end");
         level thread function_1576e092();
-        wait(1.5);
+        wait 1.5;
         a_players = getplayers();
         var_ed7230a5 = [];
         foreach (e_player in a_players) {
@@ -1053,7 +1053,7 @@ function function_dec13a5b() {
                 }
             }
         }
-        wait(5);
+        wait 5;
         a_players = getplayers();
         foreach (player in a_players) {
             player val::reset("host_migration", "allowdeath");
@@ -1071,7 +1071,7 @@ function private function_da48c149(s_pos) {
     self dontinterpolate();
     self setorigin(s_pos.origin);
     do {
-        wait(1);
+        wait 1;
         if (!(isdefined(self zm_utility::in_playable_area()) && self zm_utility::in_playable_area())) {
             self dontinterpolate();
             self setorigin(s_pos.origin);

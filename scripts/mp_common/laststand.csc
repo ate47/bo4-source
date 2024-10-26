@@ -92,7 +92,7 @@ function function_8960f852(oldval, newval) {
         duration -= 0.1;
         self postfx::function_c8b5f318("pstfx_drowning", #"outer radius", value);
         self postfx::function_c8b5f318("pstfx_drowning", #"inner radius", value - 0.8);
-        wait(0.1);
+        wait 0.1;
     }
 }
 

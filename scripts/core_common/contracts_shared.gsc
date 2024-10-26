@@ -271,7 +271,7 @@ function increment_contract(var_38280f2f, delta = 1) {
                 [[ var_300afbc8 ]]();
             }
             profilestop();
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -351,7 +351,7 @@ function increment_contract(var_38280f2f, delta = 1) {
 // Checksum 0x6f48547b, Offset: 0x1570
 // Size: 0x330
 function function_d589391f() {
-    wait(1);
+    wait 1;
     if (!isdefined(level.var_43a0c4a2)) {
         return;
     }
@@ -372,10 +372,10 @@ function function_d589391f() {
     }
     level endon(#"game_ended");
     for (players = getplayers(); players.size == 0 || gamestate::is_state("pregame"); players = getplayers()) {
-        wait(1);
+        wait 1;
     }
     while (true) {
-        wait(0.1);
+        wait 0.1;
         players = getplayers();
         if (players.size == 0) {
             continue;

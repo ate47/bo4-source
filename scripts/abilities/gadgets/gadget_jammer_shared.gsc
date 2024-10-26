@@ -282,7 +282,7 @@ function private function_b8c5ab9c(jammer, player, attackingplayer) {
     player setempjammed(1);
     scoreevents::processscoreevent(#"disrupted_enemy", attackingplayer, undefined, level.var_578f7c6d.weapon);
     function_58f8bf08(jammer, attackingplayer, player);
-    wait(level.var_578f7c6d.customsettings.var_f29418f1);
+    wait level.var_578f7c6d.customsettings.var_f29418f1;
     if (!isdefined(player)) {
         return;
     }
@@ -306,7 +306,7 @@ function private function_ca8a005e(jammer, gadget, attackingplayer) {
     if (isdefined(gadget.weapon.var_775d2aad) && gadget.weapon.var_775d2aad) {
         thread function_4a82368f(gadget, gadget.owner);
     }
-    wait(gadget.weapon.var_416021d8);
+    wait gadget.weapon.var_416021d8;
     if (!isdefined(attackingplayer)) {
         return;
     }

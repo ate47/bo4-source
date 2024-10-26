@@ -155,7 +155,7 @@ function initrotatingrig() {
 function rotaterig() {
     for (;;) {
         self rotateyaw(-360, 60);
-        wait(60);
+        wait 60;
     }
 }
 
@@ -169,11 +169,11 @@ function swayrig() {
         z = randomintrange(-200, -100);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
         z = randomintrange(100, 200);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
     }
 }
 
@@ -320,7 +320,7 @@ function destroyuav(attacker, weapon) {
         target_remove(self);
     }
     self unlink();
-    wait(0.5);
+    wait 0.5;
     arrayremovevalue(level.spawneduavs, self);
     if (isdefined(self)) {
         self notify(#"delete");
@@ -375,7 +375,7 @@ function ontimeout() {
     }
     self removeactiveuav();
     airsupport::leave(10);
-    wait(10);
+    wait 10;
     if (target_istarget(self)) {
         target_remove(self);
     }
@@ -397,7 +397,7 @@ function ontimecheck() {
 // Size: 0x74
 function startuavfx() {
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         playfxontag("killstreaks/fx_uav_lights", self, "tag_origin");
         self playloopsound(#"veh_uav_engine_loop", 1);
@@ -410,7 +410,7 @@ function startuavfx() {
 // Size: 0x84
 function playafterburnerfx() {
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         self stoploopsound();
         team = util::getotherteam(self.team);

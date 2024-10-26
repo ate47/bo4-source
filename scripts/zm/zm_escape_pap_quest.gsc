@@ -120,7 +120,7 @@ function function_124362b5(is_powered) {
             var_a8d69fbd playsound(#"hash_3a18ced95ae72103");
             var_a8d69fbd playloopsound(#"hash_3a1bb2d95ae92746");
             var_a8d69fbd notify(#"hash_7f8e7011812dff48");
-            wait(2);
+            wait 2;
             e_player = zm_utility::get_closest_player(var_a8d69fbd.origin);
             e_player thread zm_audio::create_and_play_dialog(#"pap", #"build", undefined, 1);
             scene::play(#"aib_vign_zm_mob_pap_ghosts");
@@ -154,7 +154,7 @@ function private function_26cff57(a_ents) {
         playsoundatposition(#"hash_7804a63a2ff82145", s_lightning_bridge.origin);
         a_ents[#"pap"] waittill(#"fade_in_end");
         s_lightning_near = struct::get("lightning_near");
-        wait(1);
+        wait 1;
         e_player = zm_utility::get_closest_player(s_lightning_near.origin);
         e_player zm_audio::create_and_play_dialog(#"pap", #"react", undefined, 1);
     }
@@ -331,10 +331,10 @@ function function_1f54733b(var_d40e1ced = 0) {
 // Size: 0x8c
 function function_1106e7e8(master_switch, n_delay = 0) {
     level flag::wait_till("start_zombie_round_logic");
-    wait(n_delay);
+    wait n_delay;
     zm_escape::function_9738dcda(master_switch);
     level flag::wait_till("power_on1");
-    wait(n_delay);
+    wait n_delay;
     zm_escape::function_3fcd201d(master_switch);
 }
 
@@ -396,7 +396,7 @@ function function_c0bc0375() {
             a_e_pack = getentarray("zm_pack_a_punch", "targetname");
             for (e_pack = self; self == e_pack; e_pack = array::random(a_e_pack)) {
             }
-            wait(5);
+            wait 5;
             switch (e_pack.script_string) {
             case #"roof":
                 level scene::play(#"aib_vign_zm_mob_pap_ghosts");

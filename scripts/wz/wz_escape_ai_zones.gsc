@@ -55,7 +55,7 @@ function spawn_special_ai() {
     for (i = 0; i < num_to_spawn; i++) {
         var_eb5de65e = var_f71adb48[i];
         wz_ai_utils::function_ac114e1f(var_eb5de65e, #"hash_618248fca82d83a6", #"cellhouse");
-        wait(0.1);
+        wait 0.1;
     }
 }
 

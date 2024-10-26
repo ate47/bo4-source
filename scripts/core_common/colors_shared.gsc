@@ -319,7 +319,7 @@ function __main__() {
                 just_turned_on = 0;
                 draw_color_friendlies();
             }
-            wait(0.25);
+            wait 0.25;
         }
     }
 
@@ -875,7 +875,7 @@ function ai_sets_goal_with_delay(node) {
     self endon(#"death");
     delay = my_current_node_delays();
     if (delay) {
-        wait(delay);
+        wait delay;
     }
     ai_sets_goal(node);
 }
@@ -951,7 +951,7 @@ function process_color_order_to_ai(node, trigger, counter) {
     }
     if (!my_current_node_delays()) {
         if (isdefined(counter)) {
-            wait(counter * randomfloatrange(0.2, 0.35));
+            wait counter * randomfloatrange(0.2, 0.35);
         }
     }
     self ai_sets_goal(node);
@@ -1036,7 +1036,7 @@ function process_stop_short_of_node(node) {
 // Size: 0x26
 function wait_for_killanimscript_or_time(timer) {
     self endon(#"killanimscript");
-    wait(timer);
+    wait timer;
 }
 
 // Namespace colors/colors_shared
@@ -1053,7 +1053,7 @@ function reached_node_but_could_not_claim_it(node) {
             continue;
         }
         ai[i] notify(#"eject_from_my_node");
-        wait(1);
+        wait 1;
         self notify(#"eject_from_my_node");
         return true;
     }
@@ -1216,7 +1216,7 @@ function colornode_spawn_reinforcement(classname, fromcolor) {
             spawn = spawner spawner::spawn();
             if (spawner::spawn_failed(spawn)) {
                 thread lock_spawner_for_awhile();
-                wait(1);
+                wait 1;
                 continue;
             }
             level notify(#"reinforcement_spawned", {#entity:spawn});
@@ -1288,7 +1288,7 @@ function colornode_replace_on_death() {
         correct_colored_friendlies = get_force_color_guys(#"allies", color_order[color]);
         correct_colored_friendlies = array::filter_classname(correct_colored_friendlies, 1, classname);
         if (!correct_colored_friendlies.size) {
-            wait(2);
+            wait 2;
             continue;
         }
         players = getplayers();
@@ -1332,7 +1332,7 @@ function friendly_spawner_vision_checker() {
     successes = 0;
     for (;;) {
         level flag::wait_till_clear("respawn_friendlies");
-        wait(1);
+        wait 1;
         if (!isdefined(level.respawn_spawner)) {
             continue;
         }
@@ -1433,7 +1433,7 @@ function getclasscolorhash(classname, fromcolor) {
 // Size: 0x44
 function lock_spawner_for_awhile() {
     level flag::set("friendly_spawner_locked");
-    wait(2);
+    wait 2;
     level flag::clear("friendly_spawner_locked");
 }
 

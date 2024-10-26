@@ -50,7 +50,7 @@ function init() {
 // Checksum 0x91c7c994, Offset: 0x5f0
 // Size: 0x2d0
 function function_583cad13(var_2753f06a) {
-    wait(1);
+    wait 1;
     b_played = 0;
     a_players = arraycopy(level.players);
     if (!isdefined(level.host)) {
@@ -148,15 +148,15 @@ function function_2e565334() {
     while (true) {
         if (zm_vo::is_player_speaking(self) && self.str_vo_being_spoken === #"hash_1242b7914448ebc7") {
             while (!isdefined(self.var_4377124)) {
-                wait(0.1);
+                wait 0.1;
             }
-            wait(1);
+            wait 1;
             if (!(isdefined(level.var_3c9cfd6f) && level.var_3c9cfd6f)) {
                 self zm_audio::do_player_or_npc_playvox(#"hash_3708596aed65f96a", 1);
             }
             continue;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -287,7 +287,7 @@ function function_865209df(category, flag, delay = 2, var_ba54b77d = -1, n_range
     if (isstring(delay)) {
         self waittill(delay);
     } else if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     player_vo = function_bf1b121a(var_ba54b77d, n_range, var_618a04);
     b_flag = level flag::get(flag);
@@ -375,7 +375,7 @@ function function_e162fac3(weapon, str_vo_line) {
 // Size: 0x5c
 function function_cda40569(n_delay, str_alias, n_variant, str_endon) {
     level endon(str_endon);
-    wait(n_delay);
+    wait n_delay;
     level.pablo_npc thread zm_hms_util::function_6a0d675d(str_alias, n_variant, 0, 1);
 }
 
@@ -411,7 +411,7 @@ function function_3d6809e9() {
     level.var_b2b15659 = 1;
     while (true) {
         level waittill(#"end_of_round");
-        wait(5);
+        wait 5;
         if (level.var_1c53964e zm_audio::can_speak()) {
             break;
         }
@@ -420,7 +420,7 @@ function function_3d6809e9() {
     function_fd24e47f(#"hash_58f39ce928f3a523");
     while (true) {
         level waittill(#"end_of_round");
-        wait(5);
+        wait 5;
         if (level.var_1c53964e zm_audio::can_speak()) {
             break;
         }

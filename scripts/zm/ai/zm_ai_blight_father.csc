@@ -386,7 +386,7 @@ function function_1a4f64a() {
     self.var_7fd3b200 = 0;
     self thread function_cf88b888();
     self waittill(#"hash_3af6fe8d4a8fac02");
-    wait(1);
+    wait 1;
     self thread function_1ca2497b();
 }
 
@@ -409,7 +409,7 @@ function function_cf88b888() {
             var_893a571 = 1;
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -432,7 +432,7 @@ function function_1ca2497b() {
             var_e935ecce = 1;
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

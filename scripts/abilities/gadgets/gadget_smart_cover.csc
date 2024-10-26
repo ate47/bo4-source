@@ -349,7 +349,7 @@ function startmicrowavefx(localclientnum) {
     microwavefxent.fxnames = [];
     microwavefxent.fxhashs = [];
     self thread cleanupfx(localclientnum, microwavefxent);
-    wait(0.3);
+    wait 0.3;
     while (true) {
         /#
             if (getdvarint(#"scr_microwave_turret_fx_debug", 0)) {
@@ -358,7 +358,7 @@ function startmicrowavefx(localclientnum) {
             }
         #/
         if (turret.should_update_fx == 0) {
-            wait(1);
+            wait 1;
             continue;
         }
         if (isdefined(level.last_microwave_turret_fx_trace) && level.last_microwave_turret_fx_trace == gettime()) {
@@ -386,13 +386,13 @@ function startmicrowavefx(localclientnum) {
         need_to_rebuild |= microwavefxent microwavefxhash(traceleft, origin, "left");
         level.last_microwave_turret_fx_trace = gettime();
         if (!need_to_rebuild) {
-            wait(1);
+            wait 1;
             continue;
         }
-        wait(0.1);
+        wait 0.1;
         microwavefxent playmicrowavefx(localclientnum, trace, traceright, traceleft, origin, turret.team);
         turret.should_update_fx = 0;
-        wait(1);
+        wait 1;
     }
 }
 

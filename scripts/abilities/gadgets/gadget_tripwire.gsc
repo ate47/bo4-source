@@ -182,7 +182,7 @@ function on_tripwire_spawn(watcher, player) {
     self.entityenemyinfluencer = self influencers::create_entity_enemy_influencer("claymore", player.team);
     self.destroyablebytrophysystem = 0;
     self.detonating = 0;
-    wait(level.var_c72e8c51.var_e14f5fca);
+    wait level.var_c72e8c51.var_e14f5fca;
     player notify(#"tripwire_spawn", {#tripwire:self});
     self clientfield::set("tripwire_state", 1);
     arrayinsert(level.tripwires, self, level.tripwires.size);
@@ -207,7 +207,7 @@ function function_15566346(ent) {
             self thread function_9e546fb3(undefined, self.weapon, undefined, undefined);
         }
         oldpos = curpos;
-        wait(float(function_60d95f53()) / 1000);
+        wait float(function_60d95f53()) / 1000;
     }
 }
 
@@ -552,7 +552,7 @@ function function_9e546fb3(attacker, weapon, target, var_2f6adbe3, tripper) {
         if (isdefined(var_2f6adbe3)) {
             var_2f6adbe3.detonating = 1;
         }
-        wait(level.var_c72e8c51.var_7f1fc1ee);
+        wait level.var_c72e8c51.var_7f1fc1ee;
         if (!isdefined(self)) {
             return;
         }
@@ -614,7 +614,7 @@ function function_9e546fb3(attacker, weapon, target, var_2f6adbe3, tripper) {
         }
     }
     self ghost();
-    wait(0.1);
+    wait 0.1;
     if (!isdefined(self)) {
         return;
     }

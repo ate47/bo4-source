@@ -67,7 +67,7 @@ function private function_53d906fd(localclientnum) {
                 level function_6b5dfd6c(localclientnum, 0, 0, i, player);
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

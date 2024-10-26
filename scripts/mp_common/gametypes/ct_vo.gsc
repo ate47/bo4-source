@@ -173,7 +173,7 @@ function function_62b6f78a(str_vo, var_3a78a180 = 1) {
 function function_56ed19d9() {
     self endoncallback(&function_d7a1a570, #"death");
     if (self.var_27405e0f > 0) {
-        wait(self.var_27405e0f);
+        wait self.var_27405e0f;
     } else {
         /#
             iprintlnbold("<dev string:x38>" + self.var_8701e993);
@@ -217,7 +217,7 @@ function function_d7a1a570(_hash) {
 // Size: 0x32
 function function_bdb97813(b_disable, n_delay) {
     if (isdefined(n_delay)) {
-        wait(n_delay);
+        wait n_delay;
     }
     level.var_3f407ec2 = b_disable;
 }
@@ -234,7 +234,7 @@ function function_3ca1b77d(var_d9da07d1 = 1) {
     } else {
         return;
     }
-    wait(0.1);
+    wait 0.1;
     n_start_time = gettime() / 1000;
     while (true) {
         if (isdefined(var_d9da07d1) && var_d9da07d1) {
@@ -294,10 +294,10 @@ function function_dad9897f(str_vo, var_520123e0 = 45, n_wait = 30) {
     b_first = 1;
     do {
         if (b_first) {
-            wait(var_520123e0);
+            wait var_520123e0;
             b_first = 0;
         } else {
-            wait(n_wait);
+            wait n_wait;
         }
         self function_3ca1b77d();
         self.var_ca6e5bf1 = str_vo;
@@ -340,7 +340,7 @@ function vo_on_damage(str_vo, var_f4b1cabb = 1, n_rest = 10, var_515667fb = #"ax
             e_player function_3ca1b77d();
             e_player function_831e0584(array(str_vo));
         }
-        wait(n_rest);
+        wait n_rest;
     } while (var_f4b1cabb);
 }
 
@@ -392,7 +392,7 @@ function function_625a37f9(vo, _notify, b_once = 1, var_cd53c705 = 1, var_dfbbbc
         } else {
             e_player function_3820390e(array(vo), 1);
         }
-        wait(var_dfbbbce6);
+        wait var_dfbbbce6;
     } while (!(isdefined(b_once) && b_once));
 }
 
@@ -447,7 +447,7 @@ function function_14b08e49(a_str_vo, var_f031f5a) {
         level thread function_b3c04dfd(var_f031f5a);
     }
     if (isdefined(20)) {
-        wait(20);
+        wait 20;
     }
     level.var_3e17f129 = 1;
     while (true) {
@@ -475,7 +475,7 @@ function function_14b08e49(a_str_vo, var_f031f5a) {
             level.var_de17b8a3 = 0;
             level.var_6ee32682 = gettime() / 1000;
         }
-        wait(20);
+        wait 20;
     }
     level.var_3e17f129 = undefined;
 }
@@ -576,7 +576,7 @@ function function_b0c62cf3(a_str_vo) {
 // Checksum 0xb7d80370, Offset: 0x1c10
 // Size: 0x26
 function function_b86d3b7d() {
-    wait(0.1);
+    wait 0.1;
     while (level.var_77e9434e > 0) {
         waitframe(1);
     }
@@ -595,7 +595,7 @@ function function_b86d3b7d() {
             adddebugcommand("<dev string:x7a>");
         }
         while (true) {
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarstring(#"hash_31b5762ac1fb40cf", "<dev string:x77>");
             if (cmd == "<dev string:x77>") {
                 continue;

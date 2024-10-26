@@ -95,7 +95,7 @@ function function_15263a60(radius) {
     #/
     while (true) {
         fxblocksight(self, radius);
-        wait(0.75);
+        wait 0.75;
     }
 }
 
@@ -206,7 +206,7 @@ function function_c2e7fcb4() {
     player endoncallback(&function_7033488b, #"death", #"disconnect");
     player.in_enemy_mute_smoke = player clientfield::get("in_enemy_mute_smoke") == 1;
     player.var_2118ca55 = player clientfield::get("inFriendlyMuteSmoke") == 1;
-    wait(randomfloatrange(0.1, 0.6));
+    wait randomfloatrange(0.1, 0.6);
     while (true) {
         in_enemy_mute_smoke = player function_79583198();
         if (player.in_enemy_mute_smoke != in_enemy_mute_smoke) {
@@ -223,7 +223,7 @@ function function_c2e7fcb4() {
             player.var_2118ca55 = var_2118ca55;
             clientfield::set("inFriendlyMuteSmoke", var_2118ca55);
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -254,7 +254,7 @@ function function_41470017(var_56d6af0e, applicant) {
     self endon(#"hash_2d871144da153bc1", #"death", #"disconnect");
     self thread status_effect::status_effect_apply(var_56d6af0e, undefined, applicant, 0, 1200);
     while (true) {
-        wait(1);
+        wait 1;
         self thread status_effect::status_effect_apply(var_56d6af0e, undefined, applicant, 1, 1000);
     }
 }
@@ -354,13 +354,13 @@ function function_20c7dcdc(position, duration, startsound, stopsound, loopsound)
         smokesound playloopsound(loopsound);
     }
     if (duration > 0.5) {
-        wait(duration - 0.5);
+        wait duration - 0.5;
     }
     if (isdefined(stopsound)) {
         thread sound::play_in_space(stopsound, position);
     }
     smokesound stoploopsound(0.5);
-    wait(0.5);
+    wait 0.5;
     smokesound delete();
 }
 

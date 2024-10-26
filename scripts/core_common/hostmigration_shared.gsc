@@ -87,7 +87,7 @@ function matchstarttimerconsole_internal(counttime) {
     waittillframeend();
     level endon(#"match_start_timer_beginning");
     luinotifyevent(#"create_prematch_timer", 2, gettime() + int(counttime * 1000), 1);
-    wait(counttime);
+    wait counttime;
 }
 
 // Namespace hostmigration/hostmigration_shared
@@ -124,7 +124,7 @@ function hostmigrationwait() {
     potm::forceinit();
     level notify(#"host_migration_countdown_begin");
     thread matchstarttimerconsole("match_starting_in", 5);
-    wait(5);
+    wait 5;
 }
 
 // Namespace hostmigration/hostmigration_shared
@@ -145,7 +145,7 @@ function waittillhostmigrationcountdown() {
 // Size: 0x20
 function hostmigrationwaitforplayers() {
     level endon(#"hostmigration_enoughplayers");
-    wait(15);
+    wait 15;
 }
 
 // Namespace hostmigration/hostmigration_shared
@@ -200,7 +200,7 @@ function waittillhostmigrationstarts(duration) {
         return;
     }
     level endon(#"host_migration_begin");
-    wait(duration);
+    wait duration;
 }
 
 // Namespace hostmigration/hostmigration_shared
@@ -275,7 +275,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
         while (isdefined(level.hostmigrationtimer)) {
             endtime += 1000;
             setgameendtime(int(endtime));
-            wait(1);
+            wait 1;
         }
     }
     /#
@@ -286,7 +286,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
     while (isdefined(level.hostmigrationtimer)) {
         endtime += 1000;
         setgameendtime(int(endtime));
-        wait(1);
+        wait 1;
     }
     return gettime() - starttime;
 }

@@ -230,7 +230,7 @@ function camera_snow(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
             if (isalive(self) && self util::function_50ed1561(localclientnum)) {
                 self.var_77f256b5 = playfxoncamera(localclientnum, level._effect[#"step7_snow"], undefined, anglestoforward(self.angles), anglestoup(self.angles));
             }
-            wait(0.25);
+            wait 0.25;
         }
         return;
     }
@@ -275,7 +275,7 @@ function function_1697bc59(localclientnum, oldval, newval, bnewent, binitialsnap
         s_loc = struct::get(#"hash_1f307b5cf6d83aff");
         for (n_z_offset = 400; level flag::get(#"hash_13dc8f128d50bada"); n_z_offset *= -1) {
             physicsexplosionsphere(localclientnum, s_loc.origin + (0, 0, n_z_offset), 3200, 32, 0.1, undefined, undefined, 1, 1, 1);
-            wait(randomintrange(3, 6));
+            wait randomintrange(3, 6);
         }
     }
 }
@@ -320,7 +320,7 @@ function function_c6880d07(localclientnum, oldval, newval, bnewent, binitialsnap
         self thread postfx::playpostfxbundle(#"pstfx_frost_loop");
         while (n_val <= 0.33) {
             self function_116b95e5(#"pstfx_frost_loop", "Reveal Threshold", n_val);
-            wait(0.25);
+            wait 0.25;
             n_val += 0.01;
         }
         return;
@@ -350,7 +350,7 @@ function function_9ecc1074(localclientnum) {
             if (self util::function_50ed1561(localclientnum)) {
                 self.var_733dd716 = playfxoncamera(localclientnum, level._effect[#"hash_1e7095084eda811c"], (0, 0, 0), (1, 0, 0), (0, 0, 1));
             }
-            wait(randomintrange(15, 20));
+            wait randomintrange(15, 20);
         }
     }
 }
@@ -392,7 +392,7 @@ function function_bcb676b9() {
     while (n_val > 0) {
         self function_116b95e5(#"pstfx_frost_loop", "Reveal Threshold", n_val);
         n_val -= 0.1;
-        wait(3);
+        wait 3;
     }
     self postfx::stoppostfxbundle(#"pstfx_frost_loop");
 }
@@ -536,7 +536,7 @@ function function_9a686624(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         fx = util::playfxontag(localclientnum, level._effect[#"glyph_activate"], self, "tag_origin");
         playsound(localclientnum, #"hash_6dfc68e5f7739824", self.origin);
-        wait(3.5);
+        wait 3.5;
         if (isdefined(fx)) {
             stopfx(localclientnum, fx);
         }
@@ -707,14 +707,14 @@ function function_14dcccc6(localclientnum, oldval, newval, bnewent, binitialsnap
         while (n_pulse < 1 && isdefined(self)) {
             self mapshaderconstant(0, 0, "scriptVector0", 1, n_pulse, 0, 0);
             n_pulse += n_pulse_increment;
-            wait(0.1);
+            wait 0.1;
         }
         n_cycle_time = randomfloatrange(2, 8);
         n_pulse_increment = (1 - 0.4) / n_cycle_time / 0.1;
         while (0.4 < n_pulse && isdefined(self)) {
             self mapshaderconstant(0, 0, "scriptVector0", 1, n_pulse, 0, 0);
             n_pulse -= n_pulse_increment;
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -731,7 +731,7 @@ function function_9f92e675(localclientnum, oldval, newval, bnewent, binitialsnap
         util::playfxontag(localclientnum, level._effect[#"tree_activate"], self, "tag_origin");
         self playsound(localclientnum, #"hash_35bdc93fbbad3294");
         self.var_3765ceb0 = self playloopsound(#"hash_453bd80432d8f383");
-        wait(0.25);
+        wait 0.25;
         while (isdefined(self)) {
             physicsexplosionsphere(localclientnum, self.origin, 3000, 1, 4, 1, 1, 1, 1, 1);
             waitframe(randomintrange(5, 10));

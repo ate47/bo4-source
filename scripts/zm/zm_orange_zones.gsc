@@ -380,7 +380,7 @@ function function_8e0b371() {
         } else {
             self zm_hud::function_29780fb5(#"");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -543,13 +543,13 @@ function function_f7a190a8(str_wait_flag, var_ab660f9a, str_location, var_39acfd
         level flag::wait_till(str_wait_flag);
     }
     if (isdefined(var_ab660f9a)) {
-        wait(var_ab660f9a);
+        wait var_ab660f9a;
     }
     for (var_33625d75 = function_ab7f70b9(self); var_33625d75 !== str_location; var_33625d75 = function_ab7f70b9(self)) {
-        wait(0.5);
+        wait 0.5;
     }
     for (var_33625d75 = function_ab7f70b9(self); var_33625d75 === str_location; var_33625d75 = function_ab7f70b9(self)) {
-        wait(0.5);
+        wait 0.5;
     }
     self thread zm_audio::function_713192b1(str_location, var_39acfdda);
 }
@@ -623,7 +623,7 @@ function function_cbb8e588() {
     while (true) {
         foreach (player in getplayers()) {
             if (player zm_zonemgr::get_player_zone() === "artifact_storage" && player cansee(blood)) {
-                wait(1);
+                wait 1;
                 if (player cansee(blood) && player zm_audio::can_speak() && !level flag::get(#"hell_on_earth")) {
                     player zm_orange_util::function_51b752a9(#"hash_21c0a11438981749");
                     return;

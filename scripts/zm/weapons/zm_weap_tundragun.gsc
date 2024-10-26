@@ -53,7 +53,7 @@ function private function_4baa4ca1() {
         var_648864c9 = self.no_gib;
         self.no_gib = 1;
     }
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         self.no_gib = var_648864c9;
     }

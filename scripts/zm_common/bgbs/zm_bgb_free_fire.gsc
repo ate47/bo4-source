@@ -41,7 +41,7 @@ function enable() {
 function disable() {
     self endon(#"disconnect");
     self notify(#"hash_1b878c77be2d017b");
-    wait(0.1);
+    wait 0.1;
     if (self hasperk("specialty_freefire")) {
         self perks::perk_unsetperk("specialty_freefire");
     }

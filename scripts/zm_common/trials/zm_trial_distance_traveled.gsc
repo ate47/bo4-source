@@ -67,7 +67,7 @@ function function_ed4d5d4(var_38282db8) {
     n_distance_traveled = 0;
     self zm_trial_util::function_2190356a(int(n_distance_traveled), 1);
     self zm_trial_util::function_c2cd0cba(var_38282db8);
-    wait(12);
+    wait 12;
     var_31409e15 = self.origin;
     while (true) {
         var_abf38d09 = distance(self.origin, var_31409e15) * 0.0254;

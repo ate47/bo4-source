@@ -334,7 +334,7 @@ function function_ba054e47() {
         e_pap_door playsound(#"hash_1ca46207f2ed8876");
         e_pap_door rotateyaw(180, 1.5);
         e_pap_door playsound(#"hash_41e4c1b28052a5f3");
-        wait(1.5);
+        wait 1.5;
         var_c72d9a7c hide();
         var_c72d9a7c notsolid();
         level flag::wait_till_clear("pap_power_ready");
@@ -357,7 +357,7 @@ function function_fb29042d() {
     e_pap_door playsound(#"hash_1ca46207f2ed8876");
     e_pap_door rotateyaw(180, 1.5);
     e_pap_door playsound(#"hash_41e4c1b28052a5f3");
-    wait(1.5);
+    wait 1.5;
     var_c72d9a7c hide();
     var_c72d9a7c notsolid();
 }
@@ -596,9 +596,9 @@ function function_486119ea() {
             level clientfield::set("portal_map_magicbox_lights_init", 1);
             break;
         }
-        wait(1);
+        wait 1;
     }
-    wait(1);
+    wait 1;
     clientfield::set("portal_map_" + var_75666412, 1);
     level thread function_1f712bb1();
     level thread function_da0655c7();
@@ -613,7 +613,7 @@ function function_486119ea() {
             waitframe(1);
             var_75666412 = var_469863c6;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -660,7 +660,7 @@ function function_1f712bb1() {
     if (var_5b117f94 == "bunker1_chest" || var_5b117f94 == "bunker2_chest") {
         return undefined;
     }
-    wait(3);
+    wait 3;
     level.var_af3a53b2 = util::spawn_model("tag_origin", level.chests[level.chest_index].origin + (0, 0, -75));
     level.var_af3a53b2.angles = level.chests[level.chest_index].angles + (-90, 0, -90);
     playfxontag(level._effect[#"hash_572a14944ad27060"], level.var_af3a53b2, "tag_origin");
@@ -691,7 +691,7 @@ function function_da0655c7() {
         if (var_5b117f94 == "bunker1_chest" || var_5b117f94 == "bunker2_chest") {
             continue;
         }
-        wait(0.1);
+        wait 0.1;
         level.var_3caf613d[i] = util::spawn_model("tag_origin", level.chests[i].origin + (0, 0, -75));
         level.var_3caf613d[i].angles = level.chests[level.chest_index].angles + (-90, 0, -90);
         playfxontag(level._effect[#"hash_572a14944ad27060"], level.var_3caf613d[i], "tag_origin");
@@ -714,7 +714,7 @@ function function_da0655c7() {
 // Size: 0x176
 function function_cf95fbb7() {
     while (!isdefined(level.chests)) {
-        wait(0.1);
+        wait 0.1;
     }
     level.var_3caf613d = [];
     for (i = 0; i < 7; i++) {
@@ -722,7 +722,7 @@ function function_cf95fbb7() {
         if (var_5b117f94 == "bunker1_chest" || var_5b117f94 == "bunker2_chest") {
             continue;
         }
-        wait(0.1);
+        wait 0.1;
         level.var_3caf613d[i] = util::spawn_model("tag_origin", level.chests[i].origin + (0, 0, -75));
         level.var_3caf613d[i].angles = level.chests[level.chest_index].angles + (-90, 0, -90);
         playfxontag(level._effect[#"hash_572a14944ad27060"], level.var_3caf613d[i], "tag_origin");
@@ -740,7 +740,7 @@ function function_e5c88b7b() {
     level clientfield::set("portal_map_fire_sale", 0);
     var_469863c6 = function_789961d3();
     clientfield::set("portal_map_" + var_469863c6, 0);
-    wait(1);
+    wait 1;
     clientfield::set("portal_map_" + var_469863c6, 1);
     level thread function_e5c88b7b();
 }
@@ -802,7 +802,7 @@ function function_cf100865() {
     var_cfa7dc7e = level flag::get("dog_round");
     while (var_cfa7dc7e == 1) {
         var_cfa7dc7e = level flag::get("dog_round");
-        wait(1);
+        wait 1;
     }
     function_1c074340();
 }
@@ -966,7 +966,7 @@ function function_7e6cf034() {
         level.var_e120ae98 = &function_cc45705b;
         break;
     }
-    wait(5);
+    wait 5;
     switch (zm_custom::function_901b751c(#"zmpowerdoorstate")) {
     case 1:
     default:

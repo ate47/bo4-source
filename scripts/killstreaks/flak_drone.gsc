@@ -63,13 +63,13 @@ function state_off_enter(params) {
 function state_off_update(params) {
     self endon(#"change_state", #"death");
     while (!isdefined(self.parent)) {
-        wait(0.1);
+        wait 0.1;
     }
     self.parent endon(#"death");
     while (true) {
         self setspeed(400);
         if (isdefined(self.inpain) && self.inpain) {
-            wait(0.1);
+            wait 0.1;
         }
         self vehclearlookat();
         self.current_pathto_pos = undefined;
@@ -117,7 +117,7 @@ function state_off_update(params) {
             self updateflakdronespeed();
             self function_a57c34b7(self.current_pathto_pos);
         }
-        wait(randomfloatrange(0.1, 0.2));
+        wait randomfloatrange(0.1, 0.2);
     }
 }
 
@@ -235,7 +235,7 @@ function spawnflakrocket(missile, spawnpos, parent) {
 function cleanupaftermissiledeath(rocket, flak_drone) {
     missile = self;
     missile waittill(#"death");
-    wait(0.5);
+    wait 0.5;
     if (isdefined(rocket)) {
         rocket delete();
     }
@@ -269,7 +269,7 @@ function state_death_update(params) {
         playfxontag(#"explosions/fx_vexp_wasp_gibb_death", self, "tag_origin");
         self ghost();
         self notsolid();
-        wait(5);
+        wait 5;
         if (isdefined(self)) {
             self delete();
         }
@@ -290,7 +290,7 @@ function drone_pain_for_time(time, stablizeparam, restorelookpoint) {
         while (gettime() < self.painstarttime + int(time * 1000)) {
             self setvehvelocity(self.velocity * stablizeparam);
             self setangularvelocity(self getangularvelocity() * stablizeparam);
-            wait(0.1);
+            wait 0.1;
         }
         if (isdefined(restorelookpoint)) {
             restorelookent = spawn("script_model", restorelookpoint);
@@ -299,7 +299,7 @@ function drone_pain_for_time(time, stablizeparam, restorelookpoint) {
             self vehlookat(restorelookent);
             self turretsettarget(0, restorelookent);
             restorelookent thread util::function_f9af3d43(1.5);
-            wait(1.5);
+            wait 1.5;
             self vehclearlookat();
             self turretcleartarget(0);
         }
@@ -441,7 +441,7 @@ function shutdown(explode) {
     if (isdefined(drone) && !isdefined(drone.parent)) {
         drone ghost();
         drone notsolid();
-        wait(5);
+        wait 5;
         if (isdefined(drone)) {
             drone delete();
         }

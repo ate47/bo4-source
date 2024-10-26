@@ -197,7 +197,7 @@ function function_7854a074() {
         #/
         self thread scene::play(self.scriptbundlename, "Shot 1");
         self.var_b0902cc0 = "Shot 1";
-        wait(randomfloatrange(20, 30));
+        wait randomfloatrange(20, 30);
         /#
             level thread function_a5242577(self, (1, 1, 0));
         #/

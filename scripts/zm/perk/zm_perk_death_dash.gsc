@@ -369,7 +369,7 @@ function function_1dbd75d3(var_85dcb56c) {
         self zm_perks::function_2ac7579(self.var_d675d730.var_775a4a2a, 2, #"perk_death_dash");
     }
     self thread function_7d72c6f9(var_85dcb56c);
-    wait(var_85dcb56c);
+    wait var_85dcb56c;
     self thread reset_cooldown();
 }
 
@@ -382,7 +382,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self.var_d675d730.var_471d9402 = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_d675d730.var_775a4a2a, 0, #"perk_dying_wish");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         self.var_d675d730.var_471d9402 -= 0.1;
         self.var_d675d730.var_471d9402 = math::clamp(self.var_d675d730.var_471d9402, 0, var_85dcb56c);
         n_percentage = 1 - self.var_d675d730.var_471d9402 / var_85dcb56c;

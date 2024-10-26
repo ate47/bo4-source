@@ -117,7 +117,7 @@ function function_d5d96302(center, radius) {
     }
     /#
         while (getplayers().size == 0) {
-            wait(0.5);
+            wait 0.5;
         }
     #/
     vehicle = spawner spawnfromspawner("insertion_plane", 1, 1);
@@ -523,7 +523,7 @@ function function_584c9f1() {
 // Checksum 0x1a05e14f, Offset: 0x1ff0
 // Size: 0x64
 function function_836fe662() {
-    wait(1);
+    wait 1;
     if (isdefined(level.deathcircleindex)) {
         level clientfield::set_world_uimodel("hudItems.warzone.reinsertionIndex", level.deathcircleindex + 1);
         return;
@@ -557,7 +557,7 @@ function function_fec68e5c() {
     player_insertion::function_ff107056(level.insertion);
     level.insertion.players = arraycopy(function_b2df2693());
     level thread function_de24c569();
-    wait(0.5 + 0.1);
+    wait 0.5 + 0.1;
     player_insertion::function_a5fd9aa8(level.insertion);
     foreach (player in level.insertion.players) {
         player.var_c5134737 = 1;
@@ -568,14 +568,14 @@ function function_fec68e5c() {
     level.insertion flagsys::wait_till_timeout(1 + 2.5 + 0.5, #"insertion_presentation_completed");
     level.reinsertion.vehicle player_insertion::function_bc16f3b4(level.insertion);
     assert(10 > 0);
-    wait(10);
+    wait 10;
     foreach (player in level.insertion.players) {
         if (!isdefined(player) || isdefined(player.var_97b0977) && player.var_97b0977) {
             continue;
         }
         player clientfield::set_to_player("infiltration_final_warning", 1);
     }
-    wait(5);
+    wait 5;
     player_insertion::function_a5fd9aa8(level.insertion);
     foreach (player in level.insertion.players) {
         if (!isdefined(player) || isdefined(player.var_97b0977) && player.var_97b0977) {
@@ -584,7 +584,7 @@ function function_fec68e5c() {
         player flagsys::set(#"hash_224cb97b8f682317");
         player flagsys::set(#"hash_287397edba8966f9");
     }
-    wait(1);
+    wait 1;
     level.reinsertion.vehicle clientfield::set("infiltration_transport", 0);
 }
 
@@ -696,7 +696,7 @@ function function_5425f45d() {
     function private function_c833e81f(killer) {
         self endon(#"disconnect");
         self dodamage(self.health + 10000, self.origin + (0, 0, 1), killer);
-        wait(1);
+        wait 1;
         self dodamage(self.health + 10000, self.origin + (0, 0, 1), killer);
     }
 

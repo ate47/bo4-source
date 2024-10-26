@@ -73,7 +73,7 @@ function private on_end(round_reset) {
 // Size: 0xca8
 function private function_452ec7b3() {
     level endon(#"end_of_round");
-    wait(12);
+    wait 12;
     var_2fe28f97 = 1;
     while (isdefined(self.var_247c8132)) {
         level.var_c8b84806 = [];
@@ -156,7 +156,7 @@ function private function_452ec7b3() {
             }
             waitframe(1);
         } while (!var_5630b1e);
-        wait(self.n_defend_time);
+        wait self.n_defend_time;
         if (isdefined(s_hill.script_noteworthy)) {
             self.var_247c8132 = struct::get(s_hill.script_noteworthy);
         } else {
@@ -168,11 +168,11 @@ function private function_452ec7b3() {
         foreach (player in getplayers()) {
             player zm_utility::function_ba39d198(self.var_df62490a, 0);
         }
-        wait(1);
+        wait 1;
     }
     level flag::clear(#"spawn_zombies");
     level zm_utility::function_9ad5aeb1(0, 1, 1);
-    wait(3);
+    wait 3;
     level flag::clear(#"infinite_round_spawning");
     level flag::clear(#"pause_round_timeout");
     level.zombie_total = 0;
@@ -284,7 +284,7 @@ function private damage_watcher() {
                 self dodamage(var_16e6b8ea, self.origin);
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -332,7 +332,7 @@ function private function_ff66b979() {
         player stop_timer();
     }
     var_a0328dd5 = gettime();
-    wait(5);
+    wait 5;
     foreach (player in getplayers()) {
         if (!isdefined(player.var_356935bb)) {
             player thread damage_watcher();

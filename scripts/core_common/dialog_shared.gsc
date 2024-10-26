@@ -147,7 +147,7 @@ function get_dialog_bundle_alias(dialogbundle, dialogkey) {
 // Checksum 0x36e700db, Offset: 0x19a8
 // Size: 0x3c
 function pick_boost_number() {
-    wait(5);
+    wait 5;
     level clientfield::set("boost_number", randomint(4));
 }
 
@@ -260,7 +260,7 @@ function water_vox() {
         return;
     }
     while (true) {
-        wait(interval);
+        wait interval;
         if (self isplayerunderwater()) {
             if (!self.voxunderwatertime && !self.voxemergebreath) {
                 self stopsounds();
@@ -559,7 +559,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
         return;
     }
     while (true) {
-        wait(waittime);
+        wait waittime;
         if (waittime > 0.2) {
             waittime /= 2;
         }
@@ -619,9 +619,9 @@ function heavy_weapon_success_reaction() {
         }
         allies[allies.size] = player;
     }
-    wait(mpdialog_value("enemyKillDelay", 0) + 0.1);
+    wait mpdialog_value("enemyKillDelay", 0) + 0.1;
     while (self.playingdialog) {
-        wait(0.5);
+        wait 0.5;
     }
     allies = arraysort(allies, self.origin);
     foreach (player in allies) {
@@ -647,7 +647,7 @@ function play_promotion_reaction() {
     if (!level.teambased) {
         return;
     }
-    wait(9);
+    wait 9;
     players = self get_friendly_players();
     players = arraysort(players, self.origin);
     selfdialog = self getmpdialogname();
@@ -770,7 +770,7 @@ function wait_play_dialog(waittime, dialogkey, dialogflags, dialogbuffer, enemy,
         if (isdefined(endnotify)) {
             self endon(endnotify);
         }
-        wait(waittime);
+        wait waittime;
     }
     self thread play_dialog(dialogkey, dialogflags, dialogbuffer, enemy);
 }
@@ -870,7 +870,7 @@ function wait_dialog_buffer(dialogbuffer) {
     level endon(#"game_ended");
     self.playingdialog = 1;
     if (isdefined(dialogbuffer) && dialogbuffer > 0) {
-        wait(dialogbuffer);
+        wait dialogbuffer;
     }
     self.playingdialog = 0;
     self.playinggadgetreadydialog = 0;
@@ -1400,7 +1400,7 @@ function game_end_vox(winner, tie) {
         setdvar(#"testalias_taacom", "<dev string:xdc>");
         setdvar(#"testalias_commander", "<dev string:xf8>");
         while (true) {
-            wait(1);
+            wait 1;
             player = util::gethostplayer();
             if (!isdefined(player)) {
                 continue;
@@ -1472,7 +1472,7 @@ function game_end_vox(winner, tie) {
         if (!isdefined(delay)) {
             delay = 0;
         }
-        wait(delay);
+        wait delay;
         self playsoundontag(getdvarstring(#"testalias_player", "<dev string:xbc>"), "<dev string:x11b>");
     }
 
@@ -1484,7 +1484,7 @@ function game_end_vox(winner, tie) {
         if (!isdefined(delay)) {
             delay = 0;
         }
-        wait(delay);
+        wait delay;
         self playlocalsound(getdvarstring(#"testalias_taacom", "<dev string:xbc>"));
     }
 
@@ -1496,7 +1496,7 @@ function game_end_vox(winner, tie) {
         if (!isdefined(delay)) {
             delay = 0;
         }
-        wait(delay);
+        wait delay;
         self playlocalsound(getdvarstring(#"testalias_commander", "<dev string:xbc>"));
     }
 
@@ -1544,7 +1544,7 @@ function game_end_vox(winner, tie) {
     function play_conv_self_other() {
         num = randomintrange(0, 4);
         self play_test_dialog("<dev string:x18a>" + num);
-        wait(4);
+        wait 4;
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
@@ -1567,7 +1567,7 @@ function game_end_vox(winner, tie) {
                 break;
             }
         }
-        wait(4);
+        wait 4;
         self play_test_dialog("<dev string:x197>" + player response_key() + num);
     }
 
@@ -1585,7 +1585,7 @@ function game_end_vox(winner, tie) {
                 break;
             }
         }
-        wait(4);
+        wait 4;
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
                 player play_test_dialog("<dev string:x197>" + firstplayer response_key() + num);

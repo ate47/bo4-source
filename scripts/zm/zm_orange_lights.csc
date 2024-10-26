@@ -141,7 +141,7 @@ function orange_deactivate_radiant_exploders_client(localclientnum, oldval, newv
         if (isdefined(level.var_989f7c7c)) {
             foreach (exploder_id in level.var_989f7c7c) {
                 exploder::kill_exploder(exploder_id);
-                wait(0.3);
+                wait 0.3;
             }
             level.var_989f7c7c = undefined;
         }

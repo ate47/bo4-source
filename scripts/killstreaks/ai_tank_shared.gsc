@@ -110,7 +110,7 @@ function function_1210a3d6(mantis) {
     if (isdefined(level.var_5d492b75)) {
         [[ level.var_5d492b75 ]](mantis, 1);
     }
-    wait(3);
+    wait 3;
     if (!isdefined(mantis)) {
         return;
     }
@@ -200,7 +200,7 @@ function register() {
 // Size: 0x3c
 function function_203098f4(waittime) {
     self endon(#"disconnect");
-    wait(waittime);
+    wait waittime;
     lui::screen_fade_in(0);
 }
 
@@ -505,7 +505,7 @@ function crateland(crate, category, owner, team, context) {
     context.max_dist_from_location = 96;
     if (!crate function_b2acf3f2(crate.origin, context) || !isdefined(owner) || util::function_fbce7263(team, owner.team) || owner emp::enemyempactive() && !owner hasperk(#"specialty_immuneemp")) {
         killstreakrules::killstreakstop(category, team, crate.package_contents_id);
-        wait(10);
+        wait 10;
         if (isdefined(level.var_30264985)) {
             level.var_cf82598a = 1;
         }
@@ -1017,7 +1017,7 @@ function private state_combat_enter(params) {
 // Size: 0x28c
 function function_f358791() {
     self endon(#"death", #"change_state");
-    wait(1);
+    wait 1;
     for (;;) {
         if (isdefined(self.isstunned) && self.isstunned) {
             self.favoriteenemy = undefined;
@@ -1275,7 +1275,7 @@ function turretfireupdate() {
     while (true) {
         if (self.avoid_shooting_owner === 1 && isdefined(self.owner)) {
             if (self vehicle_ai::owner_in_line_of_fire()) {
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
         }
@@ -1288,21 +1288,21 @@ function turretfireupdate() {
                 self vehlookat(self.enemy);
                 waitframe(1);
                 if (!self.turretontarget) {
-                    wait(0.1);
+                    wait 0.1;
                 }
                 if (self.turretontarget && isdefined(self.enemy)) {
                     self vehicle_ai::fire_for_time(randomfloatrange(self.settings.burstfiredurationmin, self.settings.burstfiredurationmax), 0, self.enemy);
                 }
                 if (isdefined(self.enemy) && isai(self.enemy)) {
-                    wait(randomfloatrange(self.settings.burstfireaidelaymin, self.settings.burstfireaidelaymax));
+                    wait randomfloatrange(self.settings.burstfireaidelaymin, self.settings.burstfireaidelaymax);
                 } else {
-                    wait(randomfloatrange(self.settings.burstfiredelaymin, self.settings.burstfiredelaymax));
+                    wait randomfloatrange(self.settings.burstfiredelaymin, self.settings.burstfiredelaymax);
                 }
             }
-            wait(1);
+            wait 1;
             continue;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1381,7 +1381,7 @@ function function_dd91d091(params) {
         } else {
             self asmrequestsubstate(#"hash_236f963ae1728eb3");
         }
-        wait(randomintrange(2, 5));
+        wait randomintrange(2, 5);
     }
 }
 
@@ -1583,7 +1583,7 @@ function state_combat_update(params) {
             self setbrake(1);
             vehicle_ai::clearallmovement(1);
             self asmrequestsubstate(#"hash_236f963ae1728eb3");
-            wait(1);
+            wait 1;
         }
     }
 }
@@ -1693,7 +1693,7 @@ function tank_timeout_callback() {
         player clientfield::set_player_uimodel("hudItems.tankState", 0);
     }
     cleanup_targeting(player);
-    wait(0.25);
+    wait 0.25;
     self notify(#"death");
 }
 
@@ -1848,7 +1848,7 @@ function tank_low_health_fx() {
     }
     self.damage_fx setmodel(#"tag_origin");
     self.damage_fx linkto(self, "tag_turret", (0, 0, -14), (0, 0, 0));
-    wait(0.1);
+    wait 0.1;
     playfxontag(level.ai_tank_damage_fx, self.damage_fx, "tag_origin");
 }
 
@@ -2135,7 +2135,7 @@ function tank_death_think(hardpointname) {
     if (isdefined(self.aim_entity)) {
         self.aim_entity delete();
     }
-    wait(1);
+    wait 1;
     if (isdefined(self)) {
         self delete();
     }
@@ -2157,7 +2157,7 @@ function tank_too_far_from_nav_mesh_abort_think() {
     self endon(#"death");
     not_on_nav_mesh_count = 0;
     for (;;) {
-        wait(1);
+        wait 1;
         not_on_nav_mesh_count = isdefined(getclosestpointonnavmesh(self.origin, 480)) ? 0 : not_on_nav_mesh_count + 1;
         if (not_on_nav_mesh_count >= 4) {
             self notify(#"death");
@@ -2309,7 +2309,7 @@ function update_client_ammo(ammo_count, driver_only_update = 0) {
 // Size: 0x8a
 function watch_target(owner, target_index) {
     self endon(#"death");
-    wait(3);
+    wait 3;
     if (isalive(self)) {
         level.var_aca462a0[target_index] multi_stage_target_lockon::set_targetstate(owner, 0);
         owner.var_6b2d5c29[target_index].state = 0;
@@ -2416,10 +2416,10 @@ function reload_rockets(player) {
     player setvehicleweaponwaitduration(weapon_wait_duration_ms);
     player setvehicleweaponwaitendtime(gettime() + weapon_wait_duration_ms);
     self playsoundtoplayer(#"hash_67ccc430f6e101f3", player);
-    wait(bundle.ksweaponreloadtime);
+    wait bundle.ksweaponreloadtime;
     self.numberrockets = 4;
     self update_client_ammo(self.numberrockets);
-    wait(0.4);
+    wait 0.4;
     if (!self.isstunned) {
         self disabledriverfiring(0);
     }
@@ -2448,7 +2448,7 @@ function watchwater() {
     var_29ed3475 = 12.5;
     inwater = 0;
     while (!inwater) {
-        wait(0.3);
+        wait 0.3;
         depth = getwaterheight(self.origin) - self.origin[2];
         inwater = depth > var_8a7edebd;
         if (isdefined(self.owner) && isdefined(self.controlled) && self.controlled) {

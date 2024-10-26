@@ -519,7 +519,7 @@ function function_199b1814(str_tower, str_encounter) {
         }
         function_79071b9a(str_enemy, s_spawn, s_scene);
         if (level.var_4118581a || str_encounter == #"tigers" && i < var_e482422a.size) {
-            wait(1);
+            wait 1;
         }
     }
     s_waitresult = level waittill(#"hash_2ea1048758a3ff14");
@@ -736,7 +736,7 @@ function function_499b080d(str_tower, str_encounter) {
                 break;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
     switch (str_tower) {
     case #"danu":

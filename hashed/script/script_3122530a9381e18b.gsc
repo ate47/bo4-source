@@ -213,7 +213,7 @@ function private start_step_2() {
         #/
     }
     while (zm_white_main_quest::function_6cebbce1()) {
-        wait(3);
+        wait 3;
     }
     var_685c8f1e = struct::get_array("mk2v_pole_target");
     level.var_9eccff99.var_685c8f1e = array::randomize(var_685c8f1e);

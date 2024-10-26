@@ -41,12 +41,12 @@ function function_6889bb61(var_74d544ba) {
     }
     self disableweapons();
     self val::set(#"hash_784a49b49cc8c292", "freezecontrols", 1);
-    wait(0.5);
+    wait 0.5;
     self function_c7106205();
     self clientfield::set_to_player("screen_blur", 0);
-    wait(1);
+    wait 1;
     level flag::set("desc_countdown_start");
-    wait(3);
+    wait 3;
     ct_utils::function_9aca2fa0("ct_spawn");
     level notify(#"hash_44623efd9f4d41a4");
     if (self.sessionstate == "playing") {
@@ -56,7 +56,7 @@ function function_6889bb61(var_74d544ba) {
     }
     level notify(#"hash_3779df13251ba6f7");
     level flag::set("desc_countdown_done");
-    wait(0.95);
+    wait 0.95;
     if (isdefined(level.var_c3af52cc)) {
         self [[ level.var_c3af52cc ]]();
         self thread ct_utils::function_d3fd7ef7();
@@ -91,11 +91,11 @@ function function_c7106205() {
 // Size: 0x8c
 function function_4b4ca178() {
     e_player = ct_utils::get_player();
-    wait(0.5);
+    wait 0.5;
     e_player playsound("uin_timer_1");
-    wait(1.5);
+    wait 1.5;
     e_player playsound("uin_timer_1");
-    wait(1);
+    wait 1;
     e_player playsound("uin_timer_1");
 }
 
@@ -171,6 +171,6 @@ function function_d10b39de(b_success) {
     } else if (isdefined(level.var_ac397acd)) {
         self [[ level.var_ac397acd ]](#"fail_fadeout");
     }
-    wait(4);
+    wait 4;
 }
 

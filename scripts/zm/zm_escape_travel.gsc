@@ -120,7 +120,7 @@ function gondola_hostmigration() {
             player val::set("host_migration", "takedamage", 0);
         }
         level waittill(#"host_migration_end");
-        wait(0.5);
+        wait 0.5;
         if (!(isdefined(level.e_gondola.is_moving) && level.e_gondola.is_moving)) {
             if (level.e_gondola.location == "roof") {
                 var_cd3296d7 = getnode("nd_on_top_r", "targetname");
@@ -135,9 +135,9 @@ function gondola_hostmigration() {
             }
         }
         function_815e3997();
-        wait(1);
+        wait 1;
         player_escaped_gondola_failsafe();
-        wait(5);
+        wait 5;
         a_players = getplayers();
         foreach (player in a_players) {
             player val::reset("host_migration", "allowdeath");
@@ -621,7 +621,7 @@ function move_gondola(b_suppress_doors_close = 0) {
     e_gondola.is_moving = 0;
     e_gondola thread tear_down_gondola_poi();
     level flag::clear("gondola_doors_moving");
-    wait(1);
+    wait 1;
     if (e_gondola.location == "roof") {
         e_gondola.location = "docks";
         str_zone = "zone_dock_gondola";
@@ -668,7 +668,7 @@ function gondola_lights_green() {
 // Checksum 0x7834461c, Offset: 0x37a8
 // Size: 0x1a
 function function_c64e4079() {
-    wait(5);
+    wait 5;
     level.var_fed9dc06 = 1;
 }
 
@@ -677,7 +677,7 @@ function function_c64e4079() {
 // Checksum 0x6a9c7493, Offset: 0x37d0
 // Size: 0x1a
 function function_565994f0() {
-    wait(5);
+    wait 5;
     level.var_fed9dc06 = 0;
 }
 
@@ -686,7 +686,7 @@ function function_565994f0() {
 // Checksum 0xe11e50b8, Offset: 0x37f8
 // Size: 0x11e
 function check_when_gondola_moves_if_groundent_is_undefined(e_gondola) {
-    wait(1);
+    wait 1;
     a_zombies = getaiteamarray(level.zombie_team);
     a_zombies = util::get_array_of_closest(e_gondola.origin, a_zombies);
     for (i = 0; i < a_zombies.size; i++) {
@@ -787,7 +787,7 @@ function function_dc269d0d(a_zombies, e_gondola) {
 // Checksum 0xf166c488, Offset: 0x3db8
 // Size: 0xa4
 function function_6a4544e() {
-    wait(7);
+    wait 7;
     var_1b66809c = array_players_on_gondola();
     if (var_1b66809c.size == 1) {
         var_1b66809c[0] zm_audio::create_and_play_dialog(#"gondola", #"ride_solo", undefined, 1);
@@ -806,7 +806,7 @@ function gondola_physics_explosion(n_move_time) {
     self endon(#"movedone");
     for (i = 0; i < 2; i++) {
         physicsexplosionsphere(self.origin, 1000, 0.1, 0.1);
-        wait(n_move_time / 2);
+        wait n_move_time / 2;
     }
 }
 
@@ -816,8 +816,8 @@ function gondola_physics_explosion(n_move_time) {
 // Size: 0x74
 function function_d8e07db3() {
     self playloopsound(#"zmb_gondola_cooldown_lp", 1);
-    wait(10);
-    wait(2);
+    wait 10;
+    wait 2;
     self stoploopsound(0.5);
     self playsound(#"hash_5ecb872a9078d4bf");
 }
@@ -884,7 +884,7 @@ function private function_da48c149(s_pos) {
     self dontinterpolate();
     self setorigin(s_pos.origin);
     do {
-        wait(1);
+        wait 1;
         if (!(isdefined(self zm_utility::in_playable_area()) && self zm_utility::in_playable_area())) {
             self dontinterpolate();
             self setorigin(s_pos.origin);
@@ -902,7 +902,7 @@ function gondola_cooldown() {
     foreach (trigger in a_t_call) {
         trigger sethintstring(#"hash_72dc5724ddfb88b5");
     }
-    wait(10);
+    wait 10;
     gondola_lights_green();
 }
 

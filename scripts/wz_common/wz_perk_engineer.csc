@@ -67,7 +67,7 @@ function private function_7800b9c2(localclientnum) {
             var_94c264dd |= self [[ self.var_53204996 ]](localclientnum);
         }
         if (!var_94c264dd && self.var_100abb43.size == 0) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         var_5ef114b0 = [];
@@ -97,7 +97,7 @@ function private function_7800b9c2(localclientnum) {
             waitframe(1);
         }
         self.var_100abb43 = var_5ef114b0;
-        wait(0.2);
+        wait 0.2;
     }
 }
 

@@ -617,13 +617,13 @@ function initialspawnprotection(specialtyname, spawnmonitorspeed) {
     }
     if (specialtyname == "specialty_nottargetedbyairsupport") {
         self.specialty_nottargetedbyairsupport = 1;
-        wait(level.spawnprotectiontime);
+        wait level.spawnprotectiontime;
         self.specialty_nottargetedbyairsupport = undefined;
         return;
     }
     if (!self hasperk(specialtyname)) {
         self setperk(specialtyname);
-        wait(level.spawnprotectiontime);
+        wait level.spawnprotectiontime;
         self unsetperk(specialtyname);
     }
 }

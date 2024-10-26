@@ -41,7 +41,7 @@ function function_2cdcf5c3() {
 // Size: 0x224
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0.3));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0.3);
     scene::add_scene_func(#"hash_32e1d63da1ac27c1", &function_8efe95d4, "play");
     scene::add_scene_func(#"hash_415d5821c256de56", &function_8efe95d4, "play");
     if (util::isfirstround()) {

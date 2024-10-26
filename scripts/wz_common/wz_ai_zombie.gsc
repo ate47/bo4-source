@@ -627,7 +627,7 @@ function function_9c573bc6() {
         return;
     }
     self collidewithactors(0);
-    wait(2);
+    wait 2;
     self collidewithactors(1);
 }
 
@@ -1321,7 +1321,7 @@ function private function_25b61968() {
     self endon(#"death");
     self thread function_d1675b11();
     while (true) {
-        wait(0.5);
+        wait 0.5;
         waitresult = self waittill(#"weapon_fired");
         switch (waitresult._notify) {
         case #"weapon_fired":
@@ -1332,7 +1332,7 @@ function private function_25b61968() {
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
-// Params 4, eflags: 0x20
+// Params 4, eflags: 0x20 variadic
 // Checksum 0xfa892c77, Offset: 0x6348
 // Size: 0x86
 function function_e732359c(position, var_4603c944, entity, ...) {
@@ -1478,7 +1478,7 @@ function private function_76f8bf36(entity) {
             goal = entity.origin;
         }
         entity setgoal(goal);
-        wait(randomfloatrange(3, 5));
+        wait randomfloatrange(3, 5);
     }
 }
 
@@ -1561,7 +1561,7 @@ function function_102ca651(entity) {
     entity setgoal(investigate_point);
     entity waittill(#"goal_changed");
     entity waittill(#"goal");
-    wait(randomfloatrange(2, 5));
+    wait randomfloatrange(2, 5);
     entity.var_b4b8ad5f = undefined;
 }
 
@@ -2222,7 +2222,7 @@ function function_d4f2933d() {
         }
         if (waitresult._notify !== "timeout") {
             idle_time = randomfloatrange(3, 5);
-            wait(idle_time);
+            wait idle_time;
         }
     }
 }
@@ -2304,7 +2304,7 @@ function private function_af47322e() {
         }
         if (waitresult._notify !== "timeout") {
             idle_time = randomfloatrange(3, 5);
-            wait(idle_time);
+            wait idle_time;
         }
     }
 }
@@ -2337,9 +2337,9 @@ function private function_101763c9() {
         if (!isdefined(spawn_point)) {
             self kill();
         }
-        wait(2);
+        wait 2;
         self forceteleport(spawn_point.origin, spawn_point.angles);
-        wait(2);
+        wait 2;
         while (isdefined(self.var_381e689e) && self.var_381e689e) {
             players_in_zone = [];
             players = getplayers();
@@ -2364,7 +2364,7 @@ function private function_101763c9() {
                 }
                 break;
             }
-            wait(0.2);
+            wait 0.2;
         }
         self.var_8ba6ede3 = 1;
         self waittill(#"not_underground");
@@ -2766,10 +2766,10 @@ function delayed_zombie_eye_glow(var_80bea5a6) {
     self endon(#"death");
     if (isdefined(self.in_the_ground) && self.in_the_ground || isdefined(self.in_the_ceiling) && self.in_the_ceiling) {
         while (!isdefined(self.create_eyes)) {
-            wait(0.1);
+            wait 0.1;
         }
     } else {
-        wait(0.5);
+        wait 0.5;
     }
     self zombie_eye_glow(var_80bea5a6);
 }
@@ -3139,7 +3139,7 @@ function damage_over_time(dmg, delay, attacker) {
     }
     while (true) {
         if (isdefined(delay)) {
-            wait(delay);
+            wait delay;
         }
         if (isdefined(self)) {
             if (isdefined(attacker)) {
@@ -3208,7 +3208,7 @@ function powerup_wobble() {
         yaw = self.angles[1] + yaw;
         new_angles = (-60 + randomint(120), yaw, -45 + randomint(90));
         self rotateto(new_angles, waittime, waittime * 0.5, waittime * 0.5);
-        wait(randomfloat(waittime - 0.1));
+        wait randomfloat(waittime - 0.1);
     }
 }
 
@@ -3219,7 +3219,7 @@ function powerup_wobble() {
 function powerup_timeout() {
     self endon(#"powerup_grabbed", #"death", #"powerup_reset");
     self show();
-    wait(15);
+    wait 15;
     self hide_and_show();
     self notify(#"powerup_timedout");
     self delete();
@@ -3238,14 +3238,14 @@ function hide_and_show() {
             self show();
         }
         if (i < 15) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (i < 25) {
-            wait(0.25);
+            wait 0.25;
             continue;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -3344,7 +3344,7 @@ function zmbaivox_playvox(zombie, type, override, priority, delayambientvox = 0)
         } else {
             playbacktime = 1;
         }
-        wait(playbacktime);
+        wait playbacktime;
         zombie.talking = 0;
         zombie.currentvox = undefined;
         zombie.currentvoxpriority = 1;
@@ -3358,7 +3358,7 @@ function zmbaivox_playvox(zombie, type, override, priority, delayambientvox = 0)
 function zmbaivox_ambientdelay() {
     self notify(#"sndambientdelay");
     self endon(#"sndambientdelay", #"death", #"disconnect");
-    wait(1);
+    wait 1;
     self.delayambientvox = 0;
 }
 
@@ -3432,7 +3432,7 @@ function play_ambient_zombie_vocals() {
         }
         bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
-        wait(randomfloatrange(1, float));
+        wait randomfloatrange(1, float);
     }
 }
 
@@ -3465,7 +3465,7 @@ function function_625a781d() {
         }
         bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
-        wait(randomfloatrange(1, float));
+        wait randomfloatrange(1, float);
     }
 }
 
@@ -3522,7 +3522,7 @@ function function_d1675b11() {
         level._audio_zbv_shared_ent_list = getaiarchetypearray(#"zombie");
     }
     while (true) {
-        wait(1);
+        wait 1;
         t = gettime();
         if (t > level._zbv_vox_last_update_time + 1000) {
             level._zbv_vox_last_update_time = t;
@@ -3559,7 +3559,7 @@ function function_d1675b11() {
                 yaw = angleclamp180(yaw);
                 z_diff = self.origin[2] - zombs[i].origin[2];
                 if ((yaw < -95 || yaw > 95) && abs(z_diff) < 50) {
-                    wait(0.1);
+                    wait 0.1;
                     if (isdefined(zombs[i]) && isalive(zombs[i])) {
                         bhtnactionstartevent(zombs[i], "behind");
                         zombs[i] notify(#"bhtn_action_notify", {#action:"behind"});
@@ -3570,7 +3570,7 @@ function function_d1675b11() {
             }
         }
         if (played_sound) {
-            wait(2.5);
+            wait 2.5;
         }
     }
 }

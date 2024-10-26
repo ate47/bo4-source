@@ -134,7 +134,7 @@ function function_93eab559() {
         return;
     }
     level thread p9_wood_lumber_01_1x4_64_01();
-    wait(1);
+    wait 1;
     level thread zm_audio::sndannouncerplayvox("dogstart");
 }
 
@@ -182,7 +182,7 @@ function function_ffa01525() {
         n_default_wait = 0.75;
         break;
     }
-    wait(n_default_wait);
+    wait n_default_wait;
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -231,7 +231,7 @@ function function_c79d744e(s_spawn_loc) {
     assert(isdefined(self), "<dev string:x38>");
     assert(isalive(self), "<dev string:x4d>");
     self zombie_dog_util::zombie_setup_attack_properties_dog();
-    wait(0.1);
+    wait 0.1;
     self show();
     self setfreecameralockonallowed(1);
     self val::reset(#"dog_spawn", "ignoreme");
@@ -269,7 +269,7 @@ function function_2438d55e(s_spawn_loc) {
         }
         return;
     }
-    wait(1);
+    wait 1;
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -430,7 +430,7 @@ function function_f46db405() {
         n_default_wait = 0.75;
         break;
     }
-    wait(n_default_wait);
+    wait n_default_wait;
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -556,7 +556,7 @@ function function_d1371239(var_a9e4d1ee) {
         #/
         if (isdefined(ai)) {
             ai thread function_acab3515();
-            wait(randomfloatrange(1.5, 3.5));
+            wait randomfloatrange(1.5, 3.5);
         }
         var_a9e4d1ee--;
         waitframe(1);
@@ -603,7 +603,7 @@ function function_f3ce0f2b(player) {
     player endon(#"disconnect");
     self.favoriteenemy = player;
     for (n_timer = 5; n_timer > 0 && zm_utility::is_player_valid(player); n_timer--) {
-        wait(1);
+        wait 1;
     }
 }
 

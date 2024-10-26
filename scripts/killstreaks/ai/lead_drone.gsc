@@ -110,7 +110,7 @@ function state_death_update(params) {
 // Size: 0x28c
 function function_f358791() {
     self endon(#"death", #"change_state");
-    wait(1);
+    wait 1;
     for (;;) {
         if (isdefined(self.isstunned) && self.isstunned) {
             self.favoriteenemy = undefined;
@@ -138,7 +138,7 @@ function function_f358791() {
             }
         }
         self.var_dac49144 = function_b2cc6703(targets);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -365,7 +365,7 @@ function state_combat_enter(params) {
 function reload() {
     self laseroff();
     clientfield::set("lead_drone_reload", 1);
-    wait(2);
+    wait 2;
     clientfield::set("lead_drone_reload", 0);
     self.ai.bulletsinclip = self.ai.clipsize;
 }
@@ -507,11 +507,11 @@ function state_combat_update(params) {
     self thread attackthread();
     for (;;) {
         if (isdefined(self.ignoreall) && self.ignoreall) {
-            wait(1);
+            wait 1;
             continue;
         }
         if (isdefined(self.owner) && isdefined(level.var_fdf0dff2) && ![[ level.var_fdf0dff2 ]](self.owner)) {
-            wait(1);
+            wait 1;
             continue;
         }
         if (!ispointinnavvolume(self.origin, "navvolume_small")) {
@@ -524,7 +524,7 @@ function state_combat_update(params) {
         if (isdefined(protectdest)) {
             self function_a57c34b7(protectdest, 1, 1);
         }
-        wait(1);
+        wait 1;
     }
 }
 

@@ -191,7 +191,7 @@ function function_eea02302(localclientnum) {
     }
     self playsound(0, "wpn_tomahawk_charge_" + self.var_9adf602d);
     self.var_9adf602d++;
-    wait(1.5);
+    wait 1.5;
     self.var_9adf602d = 1;
 }
 

@@ -152,7 +152,7 @@ function function_34f5c98(localclientnum, oldval, newval, bnewent, binitialsnap,
         playfx(localclientnum, level._effect[#"hash_16c2570acb38a0ed"], self.origin, anglestoforward(self.angles), anglestoup(self.angles));
         playrumbleonposition(localclientnum, #"hash_743b325bf45e1c8c", self.origin);
         playsound(localclientnum, #"hash_188d7d9f6b62346f", (0, 0, 0));
-        wait(0.75);
+        wait 0.75;
         if (isdefined(self)) {
             playfx(localclientnum, level._effect[#"hash_2498ee8a7586b418"], self.origin, anglestoforward(self.angles), anglestoup(self.angles));
         }
@@ -171,7 +171,7 @@ function function_5218405b(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         s_loc = struct::get(#"spark_loc");
         playfx(localclientnum, level._effect[#"hash_3524e302fa83d12e"], s_loc.origin, anglestoforward(s_loc.angles), anglestoup(s_loc.angles));
-        wait(0.5);
+        wait 0.5;
         playrumbleonposition(localclientnum, #"hash_743b325bf45e1c8c", s_loc.origin);
     }
 }
@@ -282,7 +282,7 @@ function flare_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         if (newval == 1) {
             if (!isdefined(self.fx)) {
                 self.fx = util::playfxontag(localclientnum, level._effect[#"hash_21893413efec355e"], self, "tag_origin");
-                wait(1.5);
+                wait 1.5;
                 if (isdefined(self)) {
                     playfx(localclientnum, level._effect[#"hash_76a20bbf3432c804"], self.origin);
                 }
@@ -290,7 +290,7 @@ function flare_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         } else if (newval == 2) {
             if (!isdefined(self.fx)) {
                 self.fx = util::playfxontag(localclientnum, level._effect[#"hash_2377de258e66b4ce"], self, "tag_origin");
-                wait(1.5);
+                wait 1.5;
                 if (isdefined(self)) {
                     playfx(localclientnum, level._effect[#"hash_4817a1dbc7bf4ca4"], self.origin);
                 }
@@ -298,7 +298,7 @@ function flare_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         } else if (newval == 3) {
             if (!isdefined(self.fx)) {
                 self.fx = util::playfxontag(localclientnum, level._effect[#"hash_55ab46637a8fbcb3"], self, "tag_origin");
-                wait(1.5);
+                wait 1.5;
                 if (isdefined(self)) {
                     playfx(localclientnum, level._effect[#"hash_3ddf14b70581a57"], self.origin);
                 }

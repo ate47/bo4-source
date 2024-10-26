@@ -667,7 +667,7 @@ function private function_c33d4387() {
 // Checksum 0xc813e909, Offset: 0x2d38
 // Size: 0x26
 function private function_46aa5dda() {
-    wait(randomfloatrange(4, 5));
+    wait randomfloatrange(4, 5);
     self.is_claimed = undefined;
 }
 
@@ -861,7 +861,7 @@ function private function_5c3c88fe(location) {
     var_d0feb0fe thread function_6d9aeb0f();
     var_d0feb0fe thread function_3ec863f5();
     while (n_gas_time <= 7) {
-        wait(1);
+        wait 1;
         n_gas_time += 1;
     }
     var_d0feb0fe delete();
@@ -897,7 +897,7 @@ function function_3ec863f5() {
                 player status_effect::status_effect_apply(getstatuseffect(#"zm_white_nova_gas"), undefined, player, 1);
             }
         }
-        wait(0.15);
+        wait 0.15;
     }
 }
 
@@ -925,7 +925,7 @@ function function_850768d1(b_respawn = 0) {
         }
         self clientfield::set("nova_buff_aura_clientfield", 1);
         self.voiceprefix = "zombie_buff";
-        wait(0.5);
+        wait 0.5;
         if (isdefined(self) && isalive(self)) {
             s_movespeed = self zombie_utility::function_33da7a07();
             if (s_movespeed == "sprint") {
@@ -1116,7 +1116,7 @@ function shoot_spore(spore, target) {
     target_velocity = target getvelocity();
     target_location = target getcentroid() + target_velocity * 0.5;
     spore.origin = start_location;
-    wait(0.1);
+    wait 0.1;
     spore clientfield::set("white_nova_crawler_spore_clientfield", 1);
     spore moveto(target_location, 0.5);
     spore waittill(#"movedone");

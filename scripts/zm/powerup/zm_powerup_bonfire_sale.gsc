@@ -100,17 +100,17 @@ function toggle_bonfire_sale_on() {
 // Checksum 0x7fbdbcc6, Offset: 0x628
 // Size: 0xfc
 function setup_bonfiresale_audio() {
-    wait(2);
+    wait 2;
     intercom = getentarray("intercom", "targetname");
     while (true) {
         while (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") == 0) {
-            wait(0.2);
+            wait 0.2;
         }
         for (i = 0; i < intercom.size; i++) {
             intercom[i] thread play_bonfiresale_audio();
         }
         while (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") == 1) {
-            wait(0.1);
+            wait 0.1;
         }
         level notify(#"firesale_over");
     }

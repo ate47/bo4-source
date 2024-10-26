@@ -440,7 +440,7 @@ function function_ebe4d15c() {
         if (level flag::get("round_reset")) {
             return;
         }
-        wait(1);
+        wait 1;
     }
     level.var_13473346 = 0;
 }
@@ -631,7 +631,7 @@ function function_63a4a57a() {
     var_d4061661 = array(#"zone_starting_area_tunnel", #"zone_starting_area_center", #"zone_starting_area_danu", #"zone_starting_area_ra", #"zone_starting_area_odin", #"zone_starting_area_zeus", #"zone_danu_hallway", #"zone_ra_hallway", #"zone_odin_hallway", #"zone_zeus_hallway");
     level flag::wait_till("all_players_spawned");
     while (true) {
-        wait(1);
+        wait 1;
         var_c83ad6e3 = 0;
         foreach (e_player in util::get_active_players()) {
             if (e_player zm_zonemgr::is_player_in_zone(var_d4061661)) {
@@ -814,7 +814,7 @@ function custom_pandora_fx_func() {
         level flag::wait_till("start_zombie_round_logic");
         level._box_initialized = 1;
     }
-    wait(1);
+    wait 1;
     if (isdefined(self) && isdefined(self.pandora_light)) {
         if (self.zbarrier.script_string === "t8_magicbox") {
             playfxontag(level._effect[#"hash_21167096dfea3409"], self.pandora_light, "tag_origin");

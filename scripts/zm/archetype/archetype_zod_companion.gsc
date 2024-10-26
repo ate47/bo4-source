@@ -523,7 +523,7 @@ function private zodcompanioncollisionservice(entity) {
 function private function_d0371e1e() {
     self endon(#"death");
     self collidewithactors(0);
-    wait(2);
+    wait 2;
     self collidewithactors(1);
 }
 
@@ -558,7 +558,7 @@ function private function_818f64d1(var_d2a1361a) {
     self.var_8dc43281 = 1;
     self setgoal(var_d2a1361a, 1);
     self waittill(#"goal");
-    wait(1);
+    wait 1;
     self.var_8dc43281 = 0;
 }
 
@@ -573,7 +573,7 @@ function private function_d5390a05(var_33d955f9) {
     var_b2546f7 = arraygetclosest(var_33d955f9, var_cf5caf08);
     self setgoal(var_b2546f7.origin, 1);
     self waittill(#"goal");
-    wait(1);
+    wait 1;
     self.var_7e56b71c = 0;
 }
 
@@ -654,7 +654,7 @@ function zod_companion_revive_player(player) {
     } else {
         self thread animation::play("ai_robot_base_stn_exposed_revive", self, angles, 1.5);
     }
-    wait(0.67);
+    wait 0.67;
     player clientfield::set("being_robot_revived", 1);
     player thread laststand::revive_hud_show_n_fade(#"hash_3346a327a4a83f8", 3, undefined);
     self waittill(#"robot_revive_complete");
@@ -965,7 +965,7 @@ function manage_companion() {
                 self define_new_leader();
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

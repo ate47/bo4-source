@@ -90,9 +90,9 @@ function function_40dfe103() {
 function function_829b14de() {
     while (true) {
         self movez(100, 5);
-        wait(5);
+        wait 5;
         self movez(-100, 5);
-        wait(5);
+        wait 5;
     }
 }
 

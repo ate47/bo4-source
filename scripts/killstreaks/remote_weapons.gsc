@@ -202,7 +202,7 @@ function watchremotetriggerdisable() {
     weapon.remoteowner endon(#"disconnect");
     while (true) {
         weapon.usetrigger triggerenable(!weapon.remoteowner iswallrunning());
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -378,19 +378,19 @@ function endremotecontrolweaponuse(exitrequestedbyowner, gameended) {
     }
     if (isdefined(weapon.remoteowner) && remote_controlled) {
         if (isdefined(weapon.remoteweaponshutdowndelay)) {
-            wait(weapon.remoteweaponshutdowndelay);
+            wait weapon.remoteweaponshutdowndelay;
         }
         player = weapon.remoteowner;
         if (player.dofutz === 1) {
             player clientfield::set_to_player("static_postfx", 1);
-            wait(1);
+            wait 1;
             if (isdefined(player)) {
                 player clientfield::set_to_player("static_postfx", 0);
                 player.dofutz = 0;
             }
         } else if (!exitrequestedbyowner && weapon.watch_remote_weapon_death === 1 && !isalive(weapon)) {
             weapon.dontfreeme = 1;
-            wait(isdefined(weapon.watch_remote_weapon_death_duration) ? weapon.watch_remote_weapon_death_duration : 1);
+            wait isdefined(weapon.watch_remote_weapon_death_duration) ? weapon.watch_remote_weapon_death_duration : 1;
             weapon.dontfreeme = undefined;
         }
         if (isdefined(player)) {
@@ -457,7 +457,7 @@ function fadetoblackandbackin() {
 // Size: 0x70
 function stunstaticfx(duration) {
     self endon(#"remove_remote_weapon");
-    wait(duration - 0.5);
+    wait duration - 0.5;
     for (time = duration - 0.5; time < duration; time += 0.05) {
         waitframe(1);
     }
@@ -518,7 +518,7 @@ function function_3c9e877a() {
 function do_static_fx() {
     self set_static(1);
     owner = self.owner;
-    wait(2);
+    wait 2;
     if (isdefined(owner)) {
         owner function_3c9e877a();
     }

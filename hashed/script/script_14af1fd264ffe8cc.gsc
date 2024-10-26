@@ -187,7 +187,7 @@ function function_3165516b(var_1e2067f4, var_35477d79) {
     util::wait_network_frame();
     self clientfield::set("" + #"hash_47490b879090eb55", 0);
     self clientfield::set("" + #"hash_7b1dd5c08e2585c", 0);
-    wait(1.3);
+    wait 1.3;
     level thread namespace_c8efdadc::function_9c8540b4(self, var_a3f33bc5);
 }
 
@@ -381,7 +381,7 @@ function function_29e6dc49(var_be164210 = 1, var_6c9485fc = 15) {
     level thread zm_utility::function_4a25b584(v_loc, var_6c9485fc, 100, 1, 0.25, 200, level.var_b3556b34);
     if (isdefined(var_be164210) && var_be164210) {
         self.var_a7b66476 = 1;
-        wait(5);
+        wait 5;
         self.var_a7b66476 = undefined;
     }
 }
@@ -1000,12 +1000,12 @@ function function_51fd2597(var_b9b24 = 1) {
             yaw = self.angles[1] + yaw;
             new_angles = (-60 + randomint(120), yaw, -45 + randomint(90));
             var_4e7cc086 rotateto(new_angles, waittime, waittime * 0.5, waittime * 0.5);
-            wait(randomfloat(waittime - 0.1));
+            wait randomfloat(waittime - 0.1);
             continue;
         }
         new_angles = (self.angles[0], self.angles[1] + 45, self.angles[2]);
         var_4e7cc086 rotateto(new_angles, 2, 2 * 0.05, 2 * 0.05);
-        wait(2);
+        wait 2;
     }
 }
 
@@ -1039,7 +1039,7 @@ function pickup_timeout(e_player, var_cbfbd48a, var_22b0e42b = 15) {
     if (isdefined(e_player)) {
         e_player endon(#"death");
     }
-    wait(var_22b0e42b);
+    wait var_22b0e42b;
     for (i = 0; i < 40; i++) {
         if (i % 2) {
             self ghost();
@@ -1047,14 +1047,14 @@ function pickup_timeout(e_player, var_cbfbd48a, var_22b0e42b = 15) {
             self show();
         }
         if (i < 15) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (i < 25) {
-            wait(0.25);
+            wait 0.25;
             continue;
         }
-        wait(0.1);
+        wait 0.1;
     }
     self ghost();
     self.b_timeout = 1;
@@ -1163,7 +1163,7 @@ function function_abd417dc(var_7ed75e97, var_5876e0e2 = undefined, b_upgraded = 
     var_20abc870 = self.s_tribute_bowl.var_8f683ef8;
     n_power = length(mdl_reward.origin - var_20abc870);
     var_cef149e8 = mdl_reward zm_utility::fake_physicslaunch(var_20abc870 + (0, 0, 50), n_power);
-    wait(var_cef149e8);
+    wait var_cef149e8;
     b_give_reward = self function_cdb9fba6(mdl_reward, 0, 0, 1);
     if (b_give_reward) {
         self playsound(#"hash_1c696244a9a3dbbf");
@@ -1204,7 +1204,7 @@ function function_e08e4c9c(str_bgb, var_8b84b3ce) {
     level.var_d1c9bbc4[level.var_d1c9bbc4.size] = mdl_reward;
     n_power = length(mdl_reward.origin - var_8b84b3ce);
     var_cef149e8 = mdl_reward zm_utility::fake_physicslaunch(var_8b84b3ce, n_power);
-    wait(var_cef149e8);
+    wait var_cef149e8;
     e_player = level function_c45635c7(mdl_reward, 1, 1, 1);
     if (isplayer(e_player)) {
         e_player thread give_bgb(str_bgb);
@@ -1247,7 +1247,7 @@ function function_445c5623(var_aa4f9213, var_8b84b3ce, var_b7e0faf0 = 1) {
     level.var_d1c9bbc4[level.var_d1c9bbc4.size] = mdl_reward;
     n_power = length(mdl_reward.origin - var_8b84b3ce);
     var_cef149e8 = mdl_reward zm_utility::fake_physicslaunch(var_8b84b3ce + (0, 0, 50), n_power);
-    wait(var_cef149e8);
+    wait var_cef149e8;
     e_player = level function_c45635c7(mdl_reward, 0, 1, var_b7e0faf0);
     if (isplayer(e_player)) {
         level thread zm_audio::sndannouncerplayvox(var_aa4f9213);
@@ -1279,7 +1279,7 @@ function function_ae58bd73(var_8b84b3ce) {
     level.var_d1c9bbc4[level.var_d1c9bbc4.size] = mdl_reward;
     n_power = length(mdl_reward.origin - var_8b84b3ce);
     var_cef149e8 = mdl_reward zm_utility::fake_physicslaunch(var_8b84b3ce, n_power);
-    wait(var_cef149e8);
+    wait var_cef149e8;
     e_player = level function_c45635c7(mdl_reward, 1, 1, 1);
     if (isplayer(e_player)) {
         weapon = e_player getcurrentweapon();
@@ -1298,7 +1298,7 @@ function function_c45635c7(mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1) {
     if (isdefined(b_rotate) && b_rotate) {
         mdl_reward thread function_51fd2597(var_b9b24);
     }
-    wait(2);
+    wait 2;
     while (!(isdefined(mdl_reward.b_timeout) && mdl_reward.b_timeout)) {
         e_collision = undefined;
         a_players = getplayers();
@@ -1384,7 +1384,7 @@ function function_529e8585(var_fd6264f6) {
     self endon(#"powerup_timedout", #"powerup_stolen", #"death");
     self playsound(#"hash_e3e5f7c83015171");
     self playloopsound(#"hash_2adfa98b79668366");
-    wait(var_fd6264f6);
+    wait var_fd6264f6;
     waitresult = self waittill(#"powerup_grabbed");
     if (isdefined(waitresult.e_grabber) && isplayer(waitresult.e_grabber)) {
         waitresult.e_grabber playsound(#"hash_1c696244a9a3dbbf");

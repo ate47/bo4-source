@@ -155,7 +155,7 @@ function function_496d0824(var_3bc2d545, var_e8456387, team, killstreak_id) {
     plane.var_66e0652a = var_66e0652a;
     plane thread function_6fb32e6d();
     owner waittill(#"hash_6a70219902316c7e");
-    wait(1.5);
+    wait 1.5;
     if (function_1f3792ee(plane)) {
         plane notify(#"hash_1fe75f940ce5fd52", {#is_killed:0});
     }
@@ -167,7 +167,7 @@ function function_496d0824(var_3bc2d545, var_e8456387, team, killstreak_id) {
 // Size: 0xac
 function function_6fb32e6d() {
     plane = self;
-    wait(0.5);
+    wait 0.5;
     if (function_1f3792ee(plane)) {
         bundle = level.killstreaks[#"artillery_barrage"].script_bundle;
         playfxontag(bundle.var_61feee4, plane, "tag_fx_engine2");
@@ -400,7 +400,7 @@ function function_598dc586(plane, position, yaw, team, killstreak_id, fly_height
     #/
     initialoffset = (0, 0, 0);
     if (isdefined(bundle.var_d784077a)) {
-        wait(bundle.var_d784077a);
+        wait bundle.var_d784077a;
     }
     for (sweep = 0; sweep < bundle.var_b88f3e5a && function_1f3792ee(plane); sweep++) {
         for (var_41c99c37 = 0; var_41c99c37 < bundle.var_b32c8349 && function_1f3792ee(plane); var_41c99c37++) {
@@ -454,13 +454,13 @@ function function_598dc586(plane, position, yaw, team, killstreak_id, fly_height
             self thread function_5a0d2864(var_71d1c0cb, var_d8497bd7, var_5bbbb605, var_a1c7fa61, self.team, killstreak_id);
             self thread function_5a0d2864(var_8cdd6f66, var_6bd2a8a7, var_3fddb9e8, var_7575c35, self.team, killstreak_id);
             plane playsound(#"hash_3e7e330ab5fcdcd");
-            wait(bundle.var_768e166a);
+            wait bundle.var_768e166a;
         }
         if (sweep + 1 < bundle.var_b88f3e5a && bundle.var_de725346 > 0 && function_1f3792ee(plane)) {
-            wait(bundle.var_de725346);
+            wait bundle.var_de725346;
         }
     }
-    wait(3);
+    wait 3;
     owner notify(#"hash_6a70219902316c7e");
 }
 
@@ -499,9 +499,9 @@ function function_5a0d2864(startpoint, endpoint, targetpoint, angles, team, kill
     var_c786830e = max(bundle.var_98a3d82c - 0.1, 0.1);
     var_c786830e = min(var_c786830e, 1.5);
     shell moveto(endpoint, bundle.var_98a3d82c, 0, var_c786830e);
-    wait(bundle.var_98a3d82c * 0.5);
+    wait bundle.var_98a3d82c * 0.5;
     velocity = shell getvelocity();
-    wait(bundle.var_98a3d82c * 0.5);
+    wait bundle.var_98a3d82c * 0.5;
     remainingdistance = distance2d(shell.origin, targetpoint);
     halfgravity = getdvarfloat(#"bg_gravity", 0) * 0.5;
     dxy = abs(remainingdistance);
@@ -540,7 +540,7 @@ function function_5a0d2864(startpoint, endpoint, targetpoint, angles, team, kill
 // Checksum 0x3208933a, Offset: 0x2c18
 // Size: 0x3c
 function function_ae65820c(delay) {
-    wait(delay);
+    wait delay;
     if (isdefined(self)) {
         self playloopsound(#"hash_6e9ee0f0f9ecd8d7");
     }
@@ -564,7 +564,7 @@ function function_8ebde515(attacker, weapon) {
     }
     self setmodel(#"tag_origin");
     self stoploopsound();
-    wait(0.5);
+    wait 0.5;
     self delete();
 }
 
@@ -621,7 +621,7 @@ function function_9b3c6309(attacker) {
         playfx(bundle.ksexplosionfx, self.origin);
     }
     self stoploopsound();
-    wait(0.1);
+    wait 0.1;
     self delete();
 }
 
@@ -665,7 +665,7 @@ function function_6cd200d2() {
         target_remove(plane);
     }
     if (killed) {
-        wait(randomfloatrange(0.1, 0.2));
+        wait randomfloatrange(0.1, 0.2);
         plane function_62b8d1d7();
         plane function_ab90e44c();
         plane thread function_b27d956d();
@@ -682,13 +682,13 @@ function function_6cd200d2() {
         var_8518e93e = randomfloatrange(3, 4);
         plane setplanebarrelroll(randomfloatrange(0.0833333, 0.111111), randomfloatrange(4, 5));
         plane_speed = plane getspeedmph();
-        wait(0.7);
+        wait 0.7;
         plane setspeed(plane_speed * 1.5, 20);
-        wait(var_8518e93e - 0.7);
+        wait var_8518e93e - 0.7;
         plane function_f6f579e3();
-        wait(0.1);
+        wait 0.1;
         plane ghost();
-        wait(0.5);
+        wait 0.5;
     } else {
         plane function_4b1354ff();
     }
@@ -720,11 +720,11 @@ function function_ab90e44c() {
 // Size: 0x10c
 function function_b27d956d() {
     bundle = level.killstreaks[#"artillery_barrage"].script_bundle;
-    wait(randomfloatrange(0.2, 0.4));
+    wait randomfloatrange(0.2, 0.4);
     playfxontag(bundle.var_328ce6e4, self, "tag_fx_engine5");
     playfxontag(bundle.var_545fa8c2, self, "tag_fx_engine4");
     self playsound(level.heli_sound[#"crash"]);
-    wait(randomfloatrange(0.2, 0.4));
+    wait randomfloatrange(0.2, 0.4);
     playfxontag(bundle.var_328ce6e4, self, "tag_fx_engine3");
 }
 

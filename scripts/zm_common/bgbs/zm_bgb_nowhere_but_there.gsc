@@ -78,7 +78,7 @@ function activation() {
     if (isdefined(level.var_1e480ea7)) {
         self [[ level.var_1e480ea7 ]]();
     }
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self.var_aba36467) && self.var_aba36467) {
         self unlink();
         self.var_aba36467 = undefined;
@@ -102,11 +102,11 @@ function activation() {
             ai dodamage(ai.health + 1000, self.origin, self);
         }
     }
-    wait(0.2);
+    wait 0.2;
     self val::reset(#"zm_bgb_nowhere_but_there", "freezecontrols");
     self thread function_87fa80cf();
     self.var_25c3de32 = undefined;
-    wait(3);
+    wait 3;
     self val::reset(#"zm_bgb_nowhere_but_there", "ignoreme");
     self.var_ca944973 = undefined;
     self notify(#"hash_55489b8cb6c75352");
@@ -354,7 +354,7 @@ function private function_87fa80cf() {
     self endon("5a76aace912e2da5");
     self endon(#"death");
     self.var_4ed95eb7 = 1;
-    wait(15);
+    wait 15;
     self.var_4ed95eb7 = undefined;
 }
 

@@ -15,7 +15,7 @@
         level thread dev_cac_gdt_update_think();
         var_b7b0fdc0 = getdvarint(#"hash_158f81eb73a459bd", 0);
         for (var_1db243f1 = getdvarint(#"hash_729117f20b736ab4", 0); ; var_1db243f1 = deathfxindex) {
-            wait(0.5);
+            wait 0.5;
             reset = 1;
             if (getdvarstring(#"scr_disable_cac_2") != "<dev string:x38>") {
                 continue;
@@ -320,7 +320,7 @@
     // Size: 0x44
     function highlight_player() {
         self sethighlighted(1);
-        wait(1);
+        wait 1;
         self sethighlighted(0);
     }
 

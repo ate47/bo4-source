@@ -27,7 +27,7 @@ function function_c720fa94() {
 // Size: 0x15e
 function update_doomsday_clock(var_e323931b) {
     while (var_e323931b.is_updating === 1) {
-        wait(0.05);
+        wait 0.05;
     }
     var_e323931b.is_updating = 1;
     if (var_e323931b.position == 0) {

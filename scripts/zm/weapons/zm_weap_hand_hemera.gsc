@@ -148,7 +148,7 @@ function function_d8a9b5a6(weapon) {
                 self thread function_8e7f5291(e_projectile);
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
     self clientfield::set("hemera_proj_flash", 0);
 }
@@ -293,7 +293,7 @@ function is_valid_target(e_target, n_range) {
 function set_projectile(n_index) {
     self endon(#"death");
     self.n_index = n_index;
-    wait(0.1);
+    wait 0.1;
     self clientfield::increment("hemera_shoot");
 }
 
@@ -332,7 +332,7 @@ function function_8e7f5291(e_projectile, ai_zombie, n_damage) {
             }
             if (isdefined(ai_zombie)) {
                 e_projectile moveto(ai_zombie getcentroid(), n_time);
-                wait(n_time - 0.05);
+                wait n_time - 0.05;
             }
         } else if (isdefined(ai_zombie)) {
             var_4d8b7233 = 0;
@@ -357,7 +357,7 @@ function function_8e7f5291(e_projectile, ai_zombie, n_damage) {
             } else {
                 e_projectile moveto(v_end, n_time);
             }
-            wait(n_time - 0.05);
+            wait n_time - 0.05;
             if (isdefined(ai_zombie) && ai_zombie.var_6f84b820 === #"boss") {
                 if (isdefined(ai_zombie gettagorigin("j_tail_1"))) {
                     n_hit_dist_sq = 2500;
@@ -452,7 +452,7 @@ function function_30239376(e_target) {
 // Size: 0x34
 function projectile_timeout() {
     self endon(#"death");
-    wait(5);
+    wait 5;
     self delete();
 }
 
@@ -531,7 +531,7 @@ function function_aa6f2b4() {
     if (isalive(self)) {
         self clientfield::set("hemera_proj_death", 1);
     }
-    wait(1);
+    wait 1;
     if (isdefined(self)) {
         self clientfield::set("hemera_proj_death", 0);
     }
@@ -608,7 +608,7 @@ function function_8a56ed15(s_notify) {
         self.mdl_beam clientfield::set("" + #"hemera_beam", 0);
         self.mdl_beam delete();
     }
-    wait(0.1);
+    wait 0.1;
     self.var_e34577ca = undefined;
 }
 
@@ -640,7 +640,7 @@ function function_8bf301a6() {
         n_damage = 5000;
         n_range = 6400;
     }
-    wait(0.3);
+    wait 0.3;
     while (true) {
         a_e_targets = zm_hero_weapon::function_7c3681f7();
         foreach (e_target in a_e_targets) {
@@ -648,7 +648,7 @@ function function_8bf301a6() {
                 self thread function_dced5aef(e_target, level.w_hand_hemera, n_damage, 1);
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -658,7 +658,7 @@ function function_8bf301a6() {
 // Size: 0x18c
 function function_1e39fbc5(weapon) {
     self endon(#"death", #"stop_beaming", #"weapon_change");
-    wait(0.3);
+    wait 0.3;
     while (zm_utility::is_player_valid(self) && self attackbuttonpressed()) {
         self thread function_6e71e724();
         n_ammo = self getweaponammoclip(weapon);
@@ -677,7 +677,7 @@ function function_1e39fbc5(weapon) {
             }
             self notify(#"stop_beaming");
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -718,7 +718,7 @@ function function_e56c350e(e_target, b_charged, n_damage) {
         e_target.marked_for_death = 1;
         e_target clientfield::set("hemera_proj_death", 1);
         e_target thread ai::stun(2);
-        wait(1);
+        wait 1;
         e_target clientfield::set("hemera_proj_death", 0);
         gibserverutils::annihilate(e_target);
         n_damage = e_target.health + 999;
@@ -734,7 +734,7 @@ function function_e56c350e(e_target, b_charged, n_damage) {
     }
     e_target.var_61768419 = 0;
     e_target.var_8ac7cc49 = 0;
-    wait(0.1);
+    wait 0.1;
     if (isdefined(e_target)) {
         e_target.marked_for_death = 0;
     }

@@ -394,7 +394,7 @@ function function_8c000d3b() {
                     self clientfield::set("sndActorUnderwater", 0);
                 }
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 }
@@ -479,7 +479,7 @@ function function_486119ea() {
         if (isdefined(var_75666412)) {
             break;
         }
-        wait(1);
+        wait 1;
     }
     level thread function_1f712bb1();
     level thread function_da0655c7();
@@ -491,7 +491,7 @@ function function_486119ea() {
             waitframe(1);
             var_75666412 = var_469863c6;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -513,7 +513,7 @@ function function_789961d3() {
 function function_1f712bb1() {
     var_5b117f94 = level.chests[level.chest_index].script_noteworthy;
     var_e503dc79 = level.chest_index;
-    wait(3);
+    wait 3;
     switch (var_5b117f94) {
     case #"lighthouse_level_1_chest":
         level.var_af3a53b2 = function_19a4e7cf(1500, var_e503dc79);
@@ -557,7 +557,7 @@ function function_2336a7c8() {
 function function_da0655c7() {
     level waittill(#"fire_sale_on");
     level function_2336a7c8();
-    wait(0.1);
+    wait 0.1;
     function_cf95fbb7();
     level waittill(#"fire_sale_off");
     if (isdefined(level.var_2a15c034)) {
@@ -575,7 +575,7 @@ function function_da0655c7() {
 // Size: 0x354
 function function_cf95fbb7() {
     while (!isdefined(level.chests)) {
-        wait(0.1);
+        wait 0.1;
     }
     level.var_2a15c034 = [];
     for (i = 0; i < 8; i++) {
@@ -667,7 +667,7 @@ function function_227dcc04() {
             level flag::set(#"hash_7a06360d0821c8e1");
             level thread function_b5695720();
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -710,7 +710,7 @@ function function_6be9c49c() {
 // Size: 0x74
 function play_avalanche() {
     level endon(#"end_game");
-    wait(2);
+    wait 2;
     level thread scene::play("p8_fxanim_zm_ora_spawn_avalanche_bundle");
     exploder::exploder("fxexp_avalanche_event_fx");
     callback::function_50fdac80(&play_avalanche);

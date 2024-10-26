@@ -326,7 +326,7 @@ function private function_e05b2c36() {
     self endoncallback(&function_c9a2941c, #"death");
     self.b_nosferatu_damage_fx = 1;
     self val::set(#"nosferatu", "health_regen", 0);
-    wait(self.var_cd35302f);
+    wait self.var_cd35302f;
     self val::reset(#"nosferatu", "health_regen");
     waitframe(5);
     self.var_cd35302f = undefined;
@@ -764,7 +764,7 @@ function function_13b48cdd(var_c9528359, queryresult) {
             ai thread function_b2a2b29e();
             ai.favoriteenemy = zm_utility::get_closest_valid_player(ai.origin, []);
             point thread nosferatu_spawn_fx(ai, {#origin:point.origin, #angles:self.angles});
-            wait(0.2);
+            wait 0.2;
         }
         var_c9528359--;
         waitframe(1);
@@ -793,7 +793,7 @@ function nosferatu_spawn_fx(ai, ent) {
     ai endon(#"death");
     ai val::set(#"nosferatu_spawn", "allowdeath", 0);
     ai setfreecameralockonallowed(0);
-    wait(1.5);
+    wait 1.5;
     earthquake(0.5, 0.75, ent.origin, 1000);
     if (isdefined(ai.favoriteenemy)) {
         angle = vectortoangles(ai.favoriteenemy.origin - ent.origin);
@@ -807,7 +807,7 @@ function nosferatu_spawn_fx(ai, ent) {
     assert(isdefined(ai), "<dev string:x159>");
     assert(isalive(ai), "<dev string:x16e>");
     ai val::reset(#"nosferatu_spawn", "allowdeath");
-    wait(0.1);
+    wait 0.1;
     ai show();
     ai setfreecameralockonallowed(1);
     ai val::reset(#"nosferatu_spawn", "ignoreme");

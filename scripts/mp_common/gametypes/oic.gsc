@@ -237,7 +237,7 @@ function onendgame(var_c1e98979) {
 // Checksum 0xbf39ba1a, Offset: 0x10a8
 // Size: 0x114
 function saveoffallplayersammo() {
-    wait(1);
+    wait 1;
     for (playerindex = 0; playerindex < level.players.size; playerindex++) {
         player = level.players[playerindex];
         if (!isdefined(player)) {

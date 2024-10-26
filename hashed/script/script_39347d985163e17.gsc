@@ -85,7 +85,7 @@ function private function_68af83a9(s_event) {
 // Size: 0x41a
 function function_cec06121(var_264ee2f5) {
     level endon(#"hash_7646638df88a3656");
-    wait(12);
+    wait 12;
     foreach (player in getplayers()) {
         player zm_trial_util::function_bf710271();
     }
@@ -111,7 +111,7 @@ function function_cec06121(var_264ee2f5) {
                 var_9a1edfd9 thread spawn_weapon(max(var_264ee2f5 - 10, 10));
             }
         }
-        wait(var_264ee2f5);
+        wait var_264ee2f5;
     }
 }
 

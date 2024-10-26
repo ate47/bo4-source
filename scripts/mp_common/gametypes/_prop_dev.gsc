@@ -445,10 +445,10 @@
     function function_92f23bcd(val) {
         self endon(#"letgo");
         function_ea8e45a8(val);
-        wait(0.5);
+        wait 0.5;
         while (true) {
             function_ea8e45a8(val);
-            wait(0.05);
+            wait 0.05;
         }
     }
 
@@ -478,10 +478,10 @@
     function function_cdf89a29(val) {
         self endon(#"letgo");
         function_75154360(val);
-        wait(0.05);
+        wait 0.05;
         while (true) {
             function_75154360(val);
-            wait(0.05);
+            wait 0.05;
         }
     }
 
@@ -1039,7 +1039,7 @@
         start = end + (0, 0, 100);
         magicbullet(weapon, start, end, enemybot);
         player waittilltimeout(0.3, #"damage");
-        wait(0.05);
+        wait 0.05;
         player.health = player.maxhealth;
     }
 

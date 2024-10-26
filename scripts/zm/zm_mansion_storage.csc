@@ -54,7 +54,7 @@ function function_3e37bb63(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xb4
 function function_5e130882(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self.fx = util::playfxontag(localclientnum, level._effect[#"hash_6a63e8eb86cc88e2"], self, "tag_origin");
-    wait(3);
+    wait 3;
     if (isdefined(self) && isdefined(self.fx)) {
         stopfx(localclientnum, self.fx);
     }

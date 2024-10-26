@@ -142,7 +142,7 @@ function play_intro_cinematic(localclientnum) {
             level.var_368aaeb9[localclientnum] = "cam_draft_intro";
             playmaincamxcam(localclientnum, level.var_99ef4320[team], 0, "cam_draft_intro", "", var_17e3fc35.origin, var_17e3fc35.angles);
             duration = getcamanimtime(level.var_99ef4320[team]);
-            wait(float(duration) / 1000);
+            wait float(duration) / 1000;
             level.draftintroplayed[localclientnum] = 1;
         }
     }

@@ -156,7 +156,7 @@ function function_9a9b5f49(spot) {
     self.mdl_anchor moveto(spot.origin, 0.05);
     self.mdl_anchor rotateto(spot.angles, 0.05);
     self.mdl_anchor waittill(#"movedone", #"death");
-    wait(0.05);
+    wait 0.05;
     self show();
     if (!isdefined(self.var_9ed3cc11)) {
         self.var_9ed3cc11 = self function_e827fc0e();

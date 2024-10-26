@@ -165,7 +165,7 @@ function private update_players(local_client_num) {
             waitframe(1);
             continue;
         }
-        wait(var_40425722);
+        wait var_40425722;
     }
 }
 

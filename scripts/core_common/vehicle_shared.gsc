@@ -1183,7 +1183,7 @@ function set_speed(speed, rate, msg) {
                 print3d(self.origin + (0, 0, 192), "<dev string:x186>" + msg, (1, 1, 1), 1, 3);
                 waitframe(1);
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -1235,7 +1235,7 @@ function script_resume_speed(msg, rate) {
         number = self.resumemsgs.size;
         self.resumemsgs[number] = msg;
         self thread print_resume_speed(gettime() + int(3 * 1000));
-        wait(3);
+        wait 3;
         newarray = [];
         for (i = 0; i < self.resumemsgs.size; i++) {
             if (i != number) {
@@ -1520,7 +1520,7 @@ function play_looped_fx_on_tag(effect, durration, tag) {
     thread _play_looped_fx_on_tag_origin_update(tag, effectorigin);
     while (true) {
         playfx(effect, effectorigin.origin, effectorigin.upvec);
-        wait(durration);
+        wait durration;
     }
 }
 
@@ -1685,12 +1685,12 @@ function _vehicle_bad_place() {
     while (true) {
         if (!self.script_badplace) {
             while (!self.script_badplace) {
-                wait(0.5);
+                wait 0.5;
             }
         }
         speed = self getspeedmph();
         if (speed <= 0) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (speed < 5) {
@@ -1709,7 +1709,7 @@ function _vehicle_bad_place() {
         } else {
             bp_direction = anglestoforward(self.angles);
         }
-        wait(0.5 + 0.05);
+        wait 0.5 + 0.05;
     }
 }
 
@@ -2350,7 +2350,7 @@ function is_destructible() {
 function attack_group_think() {
     self endon(#"death", #"switch group", #"killed all targets");
     if (isdefined(self.script_vehicleattackgroupwait)) {
-        wait(self.script_vehicleattackgroupwait);
+        wait self.script_vehicleattackgroupwait;
     }
     for (;;) {
         group = getentarray("script_vehicle", "classname");
@@ -2371,7 +2371,7 @@ function attack_group_think() {
             }
         }
         if (valid_targets.size == 0) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         for (;;) {
@@ -2390,9 +2390,9 @@ function attack_group_think() {
                 if (self.fire_delay_max < self.fire_delay_min) {
                     self.fire_delay_max = self.fire_delay_min;
                 }
-                wait(randomintrange(self.fire_delay_min, self.fire_delay_max));
+                wait randomintrange(self.fire_delay_min, self.fire_delay_max);
             } else {
-                wait(randomintrange(4, 6));
+                wait randomintrange(4, 6);
             }
             self fireweapon();
         }
@@ -2613,7 +2613,7 @@ function function_fa4236af(params) {
             var_b0c85051 = math::clamp(var_b0c85051, 0.25, 1.5);
             self takeplayercontrol();
             self playsound(self.var_42cfec27);
-            wait(var_b0c85051);
+            wait var_b0c85051;
             if (!(isdefined(params.var_30a04b16) && params.var_30a04b16)) {
                 self returnplayercontrol();
             }
@@ -2622,7 +2622,7 @@ function function_fa4236af(params) {
     self toggle_sounds(1);
     if (isdefined(params.var_32a85fa1)) {
         self takeplayercontrol();
-        wait(params.var_32a85fa1);
+        wait params.var_32a85fa1;
         if (!(isdefined(params.var_30a04b16) && params.var_30a04b16)) {
             self returnplayercontrol();
         }
@@ -2822,7 +2822,7 @@ function monitor_missiles_locked_on_to_me(player, wait_time = 0.1) {
     while (true) {
         closest_attacker = player get_closest_attacker_with_missile_locked_on_to_me(monitored_entity);
         player setvehiclelockedonbyent(closest_attacker);
-        wait(wait_time);
+        wait wait_time;
     }
 }
 
@@ -2982,7 +2982,7 @@ function monitor_damage_as_occupant(player) {
     if (!isdefined(self.maxhealth)) {
         self.maxhealth = self.healthdefault;
     }
-    wait(0.1);
+    wait 0.1;
     player update_damage_as_occupant(self.maxhealth - self.health, self.maxhealth);
     while (true) {
         self waittill(#"damage");
@@ -3085,7 +3085,7 @@ function enable_laser(b_enable, n_index) {
                             setdvar(#"debug_vehicle_spawn", 0);
                             continue;
                         }
-                        wait(0.3);
+                        wait 0.3;
                     }
                     if (player buttonpressed("<dev string:x3b9>")) {
                         dynamic_spawn_dummy_model hide();
@@ -3093,7 +3093,7 @@ function enable_laser(b_enable, n_index) {
                         if (type_index >= vehicleassets.size) {
                             type_index = 0;
                         }
-                        wait(0.3);
+                        wait 0.3;
                     }
                     if (player buttonpressed("<dev string:x3c6>")) {
                         dynamic_spawn_dummy_model hide();
@@ -3101,7 +3101,7 @@ function enable_laser(b_enable, n_index) {
                         if (type_index < 0) {
                             type_index = vehicleassets.size - 1;
                         }
-                        wait(0.3);
+                        wait 0.3;
                     }
                     dynamic_spawn_hud settext("<dev string:x3d2>" + function_9e72a96(vehicleassets[type_index].name));
                     dynamic_spawn_dummy_model setmodel(vehicleassets[type_index].model);
@@ -3114,7 +3114,7 @@ function enable_laser(b_enable, n_index) {
                 dynamic_spawn_hud destroy();
                 dynamic_spawn_dummy_model delete();
             }
-            wait(2);
+            wait 2;
         }
     }
 
@@ -3203,7 +3203,7 @@ function private function_bbd487c2() {
     e_player endon(#"disconnect");
     level endon(#"game_ended");
     for (b_do_delete = 0; !b_do_delete; b_do_delete = 1) {
-        wait(5);
+        wait 5;
         dist = distance2d(self.origin, e_player.origin);
         if (isalive(e_player) && dist > 3000) {
         }
@@ -3565,7 +3565,7 @@ function update_flare_ability(player, var_55716d54, active_time = 5, cooldown_ti
             player playsoundtoplayer(#"hash_35af2f72517d10ab", player);
             self fire_flares(player, flare_tag, active_time);
             player clientfield::set_player_uimodel("vehicle.bindingCooldown" + var_55716d54 + ".cooldown", 0);
-            wait(var_bca5c6c1);
+            wait var_bca5c6c1;
             self.var_40d7d1f2 = 0;
             level thread function_1bb979ca(flarecooldown, player, var_55716d54);
             player playsoundtoplayer(#"hash_62742dd7b6e513e", player);
@@ -3594,7 +3594,7 @@ function function_8aab5d53(player, var_55716d54) {
             }
         }
         player clientfield::set_player_uimodel("vehicle.bindingCooldown" + var_55716d54 + ".cooldown", var_42775dfe);
-        wait(0.05);
+        wait 0.05;
     }
 }
 
@@ -3653,7 +3653,7 @@ function fire_flares(player, flare_tag = undefined, flare_lifetime = undefined) 
         flare_lifetime = max(var_f9a2afb9[var_558d81a6] - var_558d81a6 * 0.15, 0.5);
         flare thread move_flare(self, (0, 0, -200), 0.5, 0.25, flare_lifetime, flare_tag);
         flare thread function_9ff1a886(self);
-        wait(0.15);
+        wait 0.15;
     }
 }
 
@@ -3732,10 +3732,10 @@ function move_flare(owner, gravity, var_2434a7ac, var_2d0d8b66, max_time, flare_
             break;
         }
         self moveto(movetopos, var_2d0d8b66);
-        wait(var_2d0d8b66);
+        wait var_2d0d8b66;
     }
     if (gettime() < end_time) {
-        wait((end_time - gettime()) / 1000);
+        wait (end_time - gettime()) / 1000;
     }
     self delete();
 }
@@ -3816,7 +3816,7 @@ function function_1bb979ca(n_cooldown_time, e_player, var_a18a512) {
         var_50d0d640 = mapfloat(0, var_d969828b, 0, 1, var_e41dced6);
         e_player clientfield::set_player_uimodel("vehicle.bindingCooldown" + var_a18a512 + ".cooldown", var_50d0d640);
         var_e41dced6++;
-        wait(0.05);
+        wait 0.05;
     }
 }
 
@@ -3857,9 +3857,9 @@ function function_f2fa0421(n_health) {
     self notify(#"hash_7d33424c72addcf1");
     self endon(#"death", #"hash_7d33424c72addcf1");
     if (isdefined(level.playerhealth_regularregendelay)) {
-        wait(float(level.playerhealth_regularregendelay) / 1000);
+        wait float(level.playerhealth_regularregendelay) / 1000;
     } else {
-        wait(3);
+        wait 3;
     }
     var_ab73d707 = int(self.healthdefault * 0.0083);
     while (self.health < n_health) {
@@ -3873,7 +3873,7 @@ function function_f2fa0421(n_health) {
                 e_occupant update_damage_as_occupant(self.maxhealth - self.health, self.maxhealth);
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

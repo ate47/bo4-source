@@ -16,9 +16,9 @@
 function brush_delete() {
     num = self.v[#"exploder"];
     if (isdefined(self.v[#"delay"])) {
-        wait(self.v[#"delay"]);
+        wait self.v[#"delay"];
     } else {
-        wait(0.05);
+        wait 0.05;
     }
     if (!isdefined(self.model)) {
         return;
@@ -37,7 +37,7 @@ function brush_delete() {
 // Size: 0x8c
 function brush_show() {
     if (isdefined(self.v[#"delay"])) {
-        wait(self.v[#"delay"]);
+        wait self.v[#"delay"];
     }
     assert(isdefined(self.model));
     self.model show();
@@ -50,7 +50,7 @@ function brush_show() {
 // Size: 0x224
 function brush_throw() {
     if (isdefined(self.v[#"delay"])) {
-        wait(self.v[#"delay"]);
+        wait self.v[#"delay"];
     }
     ent = undefined;
     if (isdefined(self.v[#"target"])) {
@@ -71,7 +71,7 @@ function brush_throw() {
     self.model rotatevelocity((x, y, z), 12);
     self.model movegravity((x, y, z), 12);
     self.v[#"exploder"] = undefined;
-    wait(6);
+    wait 6;
     self.model delete();
 }
 

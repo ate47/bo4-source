@@ -84,7 +84,7 @@ function trap_audio(trap) {
 function play_electrical_sound(trap) {
     trap endon(#"trap_done");
     while (true) {
-        wait(randomfloatrange(0.1, 0.5));
+        wait randomfloatrange(0.1, 0.5);
         playsoundatposition(#"hash_6b9160d5f97e5ecb", self.origin);
     }
 }
@@ -128,7 +128,7 @@ function damage(trap) {
             self playsound(#"hash_5183b687ad8d715a");
             self thread zombie_death::flame_death_fx();
             playfxontag(level._effect[#"character_fire_death_torso"], self, "J_SpineLower");
-            wait(randomfloat(1.25));
+            wait randomfloat(1.25);
         } else {
             refs[0] = "guts";
             refs[1] = "right_arm";
@@ -144,7 +144,7 @@ function damage(trap) {
             }
             bhtnactionstartevent(self, "electrocute");
             self notify(#"bhtn_action_notify", {#action:"electrocute"});
-            wait(randomfloat(1.25));
+            wait randomfloat(1.25);
             self playsound(#"hash_5183b687ad8d715a");
         }
     }

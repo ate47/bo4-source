@@ -72,7 +72,7 @@ function zombie_open_sesame() {
         waitframe(1);
     }
     level notify(#"open_sesame");
-    wait(1);
+    wait 1;
     setdvar(#"zombie_unlock_all", 0);
 }
 

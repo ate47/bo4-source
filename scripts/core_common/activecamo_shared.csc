@@ -446,7 +446,7 @@ function function_42887bfe(stage, tagname, layer, impulse, var_d71e8c6e) {
         self function_78233d29(stage.rob, tagname, var_604ae5c3, brightness);
         self function_78233d29(stage.rob, tagname, var_d6637dc6, fade);
         self function_78233d29(stage.rob, tagname, var_ea35682d, tint);
-        wait(max(lerptime, 0.5));
+        wait max(lerptime, 0.5);
         if (!isdefined(self) || !isplayer(self)) {
             return;
         }

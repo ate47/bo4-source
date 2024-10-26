@@ -91,7 +91,7 @@ function jump_pad_think() {
 // Checksum 0x5609f4fe, Offset: 0x4b0
 // Size: 0x64
 function delayed_jump_pad_start(who) {
-    wait(0.5);
+    wait 0.5;
     if (who istouching(self)) {
         self thread trigger::function_thread(who, &jump_pad_start, &jump_pad_cancel);
     }
@@ -129,10 +129,10 @@ function jump_pad_start(ent_player, endon_condition) {
         } else {
             self playsound(#"evt_jump_pad_charge");
         }
-        wait(self.script_wait);
+        wait self.script_wait;
     } else {
         self playsound(#"evt_jump_pad_charge");
-        wait(1);
+        wait 1;
     }
     if (isdefined(self.script_parameters) && isdefined(level._jump_pad_override[self.script_parameters])) {
         end_point = self [[ level._jump_pad_override[self.script_parameters] ]](ent_player);
@@ -264,7 +264,7 @@ function jump_pad_start(ent_player, endon_condition) {
         return;
     }
     if (ent_player istouching(self)) {
-        wait(0.5);
+        wait 0.5;
         if (ent_player istouching(self)) {
             self jump_pad_start(ent_player, endon_condition);
         }
@@ -308,7 +308,7 @@ function jump_pad_move(vec_direction, flt_time, struct_poi, trigger) {
     self._padded = 1;
     self.lander = 1;
     self setstance("stand");
-    wait(0.1);
+    wait 0.1;
     if (isdefined(trigger.script_label)) {
         if (issubstr(trigger.script_label, "low")) {
             self.jump_pad_current = undefined;
@@ -385,9 +385,9 @@ function disconnect_failsafe_pad_poi_clean() {
 // Size: 0x8c
 function failsafe_pad_poi_clean(ent_trig, ent_poi) {
     if (isdefined(ent_trig.script_wait)) {
-        wait(ent_trig.script_wait);
+        wait ent_trig.script_wait;
     } else {
-        wait(0.5);
+        wait 0.5;
     }
     if (isdefined(ent_poi)) {
         level jump_pad_ignore_poi_cleanup(ent_poi);
@@ -471,7 +471,7 @@ function stop_chasing_the_sky(ent_poi) {
                 }
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
     self._pad_follow = 0;
     self.ignore_cleanup_mgr = 0;

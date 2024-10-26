@@ -45,7 +45,7 @@ function private function_3b8e5273(localclientnum) {
         if (!(isdefined(level.shield_streaming) && level.shield_streaming)) {
             level.shield_streaming = 1;
             forcestreamxmodel(#"c_t8_zmb_dlc2_skeleton_shield");
-            wait(3);
+            wait 3;
             stopforcestreamingxmodel(#"c_t8_zmb_dlc2_skeleton_shield");
             level.shield_streaming = 0;
         }

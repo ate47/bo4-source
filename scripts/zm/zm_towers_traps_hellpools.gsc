@@ -268,7 +268,7 @@ function function_1d86d117() {
     }
     self notify(#"trap_activate");
     level notify(#"trap_activate", self);
-    wait(1);
+    wait 1;
     self.activated_by_player thread function_45a2294f(self.script_string);
     foreach (e_trap in level.var_482bcfef) {
         if (e_trap.script_string === self.script_string) {
@@ -298,10 +298,10 @@ function function_45a2294f(str_id) {
         }
     }
     level notify(#"traps_activated", {#var_be3f58a:str_id});
-    wait(15);
+    wait 15;
     level notify(#"traps_cooldown", {#var_be3f58a:str_id});
     n_cooldown = zm_traps::function_da13db45(60, self);
-    wait(n_cooldown);
+    wait n_cooldown;
     level notify(#"traps_available", {#var_be3f58a:str_id});
 }
 
@@ -399,7 +399,7 @@ function function_db9410fa(e_trap) {
             return;
         }
         self clientfield::set("acid_trap_death_fx", 1);
-        wait(0.75);
+        wait 0.75;
         if (isalive(self)) {
             level notify(#"trap_kill", {#e_victim:self, #e_trap:e_trap});
             self dodamage(self.health + 666, self.origin, e_trap);
@@ -437,7 +437,7 @@ function function_506285c3(t_damage) {
 // Checksum 0x5af47502, Offset: 0x1e90
 // Size: 0x44
 function function_6f5e73b5(var_c34665fc) {
-    wait(1);
+    wait 1;
     if (isdefined(self)) {
         self.var_62b59590 = 0;
         self clientfield::set_to_player("acid_trap_postfx", 0);

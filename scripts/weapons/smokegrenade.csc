@@ -139,7 +139,7 @@ function function_e69d0e4d(local_client_num) {
             }
             var_e098466f = var_7bf0773f;
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 

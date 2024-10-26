@@ -1101,7 +1101,7 @@ function update_on_poi_removal(zombie_poi) {
 // Size: 0x192
 function invalidate_attractor_pos(attractor_pos, zombie) {
     if (!isdefined(self) || !isdefined(attractor_pos)) {
-        wait(0.1);
+        wait 0.1;
         return undefined;
     }
     if (isdefined(self.attractor_positions) && !array_check_for_dupes_using_compare(self.attractor_positions, attractor_pos, &poi_locations_equal)) {
@@ -1119,7 +1119,7 @@ function invalidate_attractor_pos(attractor_pos, zombie) {
             }
         }
     } else {
-        wait(0.1);
+        wait 0.1;
     }
     return get_zombie_point_of_interest(zombie.origin);
 }
@@ -1715,7 +1715,7 @@ function vehicle_outline_watcher(origin, chunks_grate) {
 // Checksum 0x29897792, Offset: 0x5fb0
 // Size: 0x5c
 function show_grate_pull() {
-    wait(0.53);
+    wait 0.53;
     self show();
     self vibrate((0, 270, 0), 0.2, 0.4, 0.4);
 }
@@ -2050,7 +2050,7 @@ function grate_order_destroyed(chunks_repair_grate) {
 // Checksum 0x468fdeef, Offset: 0x7340
 // Size: 0x24
 function show_grate_repair() {
-    wait(0.34);
+    wait 0.34;
     self hide();
 }
 
@@ -2297,7 +2297,7 @@ function play_loopsound_on_ent(ref) {
         self endon(#"stop_debug_breadcrumbs");
         while (true) {
             if (getdvarint(#"zombie_debug", 0) != 2) {
-                wait(1);
+                wait 1;
                 continue;
             }
             waitframe(1);
@@ -2349,7 +2349,7 @@ function do_player_vo(snd, variation_count) {
         level.player_is_speaking = 1;
         self playsoundwithnotify(sound, "sound_done");
         self waittill(#"sound_done");
-        wait(2);
+        wait 2;
         level.player_is_speaking = 0;
     }
 }
@@ -2529,7 +2529,7 @@ function update_zone_name() {
             self.previous_zone_name = self.zone_name;
         }
         self.zone_name = get_current_zone();
-        wait(randomfloatrange(0.5, 1));
+        wait randomfloatrange(0.5, 1);
     }
 }
 
@@ -2865,9 +2865,9 @@ function ignore_triggers(timer) {
     self endon(#"death");
     self.ignoretriggers = 1;
     if (isdefined(timer)) {
-        wait(timer);
+        wait timer;
     } else {
-        wait(0.5);
+        wait 0.5;
     }
     self.ignoretriggers = 0;
 }
@@ -3035,7 +3035,7 @@ function waittill_not_moving() {
         return;
     }
     for (prevorigin = self.origin; true; prevorigin = self.origin) {
-        wait(0.15);
+        wait 0.15;
         if (self.origin == prevorigin) {
             break;
         }
@@ -3109,7 +3109,7 @@ function clear_run_anim() {
 // Size: 0x99e
 function track_players_intersection_tracker() {
     level endon(#"end_game");
-    wait(5);
+    wait 5;
     var_76013453 = [];
     /#
         if (!isdefined(level.var_9db63456)) {
@@ -3237,7 +3237,7 @@ function track_players_intersection_tracker() {
             }
         }
         var_76013453 = var_93bba48c;
-        wait(1);
+        wait 1;
     }
 }
 
@@ -3539,7 +3539,7 @@ function general_vox_timer(timer, type) {
     level endon(#"end_game");
     println("<dev string:x3a1>" + type + "<dev string:x3c1>" + timer + "<dev string:x3c7>");
     while (timer > 0) {
-        wait(1);
+        wait 1;
         timer--;
     }
     level.votimer[type] = timer;
@@ -3950,7 +3950,7 @@ function clear_streamer_hint() {
 // Size: 0x44
 function wait_clear_streamer_hint(lifetime) {
     self endon(#"wait_clear_streamer_hint");
-    wait(lifetime);
+    wait lifetime;
     if (isdefined(self)) {
         self clear_streamer_hint();
     }
@@ -4663,7 +4663,7 @@ function function_4a25b584(v_start_pos, var_487ba56d, n_radius = 512, b_randomiz
         if (isdefined(level.var_b4ff4ec)) {
             e_powerup thread [[ level.var_b4ff4ec ]](n_move_time);
         }
-        wait(var_79ced64);
+        wait var_79ced64;
     }
     if (is_standard()) {
         level.var_ec45f213 = 1;

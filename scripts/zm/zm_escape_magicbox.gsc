@@ -56,11 +56,11 @@ function custom_joker_movement() {
     level.var_c7626f2a[#"box_lock"] = &pebble::function_bdd1bac8;
     level notify(#"hash_219aba01ff2d6de4");
     playsoundatposition(#"hash_7c7d8771a48e8871", mdl_lock.origin);
-    wait(0.5);
+    wait 0.5;
     level notify(#"weapon_fly_away_start");
-    wait(1);
+    wait 1;
     mdl_lock rotateyaw(3000, 4, 4);
-    wait(3);
+    wait 3;
     mdl_lock movez(20, 0.5, 0.5);
     mdl_lock waittill(#"movedone");
     mdl_lock movez(-100, 0.5, 0.5);
@@ -81,7 +81,7 @@ function watch_for_lock() {
     self notify(#"kill_chest_think");
     self.grab_weapon_hint = 0;
     self.chest_user = undefined;
-    wait(0.1);
+    wait 0.1;
     self thread zm_unitrigger::register_static_unitrigger(self.unitrigger_stub, &zm_magicbox::magicbox_unitrigger_think);
     self thread zm_magicbox::treasure_chest_think();
 }
@@ -118,7 +118,7 @@ function magic_box_locks() {
     self clientfield::set("magicbox_open_fx", 0);
     self setzbarrierpiecestate(5, "closing");
     while (self getzbarrierpiecestate(5) == "closing") {
-        wait(0.5);
+        wait 0.5;
     }
     self notify(#"locked");
 }
@@ -131,7 +131,7 @@ function magic_box_unlocks() {
     self playsound(#"zmb_hellbox_unlock");
     self setzbarrierpiecestate(5, "opening");
     while (self getzbarrierpiecestate(5) == "opening") {
-        wait(0.5);
+        wait 0.5;
     }
     self setzbarrierpiecestate(2, "closed");
     self showzbarrierpiece(2);
@@ -176,7 +176,7 @@ function set_locked_magicbox_state(state) {
         }
         if (isdefined(e_box)) {
             while (distance(level.players[0].origin, e_box.origin) > 128) {
-                wait(1);
+                wait 1;
             }
             e_box.zbarrier zm_magicbox::set_magic_box_zbarrier_state("<dev string:x5d>");
         }

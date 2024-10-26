@@ -161,7 +161,7 @@ function function_250232f4(localclientnum) {
             if (var_8de02736) {
                 function_3dd68dd9(localclientnum);
                 setdvar(#"hash_56728884d2904809", 0);
-                wait(0.5);
+                wait 0.5;
             }
         }
     }
@@ -179,14 +179,14 @@ function function_250232f4(localclientnum) {
         level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "<dev string:x417>");
         level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "<dev string:x417>");
         level.var_32f68719 = 1;
-        wait(3);
+        wait 3;
         while (true) {
             for (i = 0; i < 3; i++) {
                 function_7ee5e3a2(localclientnum, array::random(level.var_49f26c00.var_ece3d654), array::random(level.var_49f26c00.var_9eec6f29), level.var_32f68719);
-                wait(4);
+                wait 4;
             }
             function_365bef4(localclientnum, level.var_32f68719);
-            wait(3);
+            wait 3;
         }
     }
 
@@ -579,24 +579,24 @@ function function_c7117688(localclientnum) {
     level.var_49f26c00.var_53ec42bc function_9b8f7969(var_bc9784a7);
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_fill_finish");
     exploder::exploder(var_19d0b0e2[0]);
-    wait(0.5);
+    wait 0.5;
     level.var_49f26c00.var_1266bfca function_523d7d8b(localclientnum, "mixer_02_bath_fluid_fx_jnt", var_7953f5b8);
     level.var_49f26c00.var_1266bfca function_9b8f7969(var_35bcf6f0);
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_fill_finish");
     exploder::exploder(var_19d0b0e2[1]);
-    wait(0.5);
+    wait 0.5;
     level.var_49f26c00.var_ffa61a49 function_523d7d8b(localclientnum, "mixer_03_bath_fluid_fx_jnt", var_6b14d93a);
     level.var_49f26c00.var_ffa61a49 function_9b8f7969(var_237e5273);
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_fill_finish");
     exploder::exploder(var_19d0b0e2[2]);
-    wait(0.75);
+    wait 0.75;
     level util::delay(0.25, #"laboratory_closed", &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_drain");
     level util::delay(0.5, #"laboratory_closed", &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_drain");
     level util::delay(0.75, #"laboratory_closed", &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_drain");
     exploder::stop_exploder(var_19d0b0e2[0]);
     exploder::stop_exploder(var_19d0b0e2[1]);
     exploder::stop_exploder(var_19d0b0e2[2]);
-    wait(1);
+    wait 1;
     level flag::set(#"hash_4f26b4e33ddb3509");
 }
 
@@ -912,7 +912,7 @@ function function_7ee5e3a2(localclientnum, var_367ac609, var_509eb1e5, b_debug =
     level scene::stop(#"p8_fxanim_core_frontend_zm_lab_centrifuge_bundle");
     if (isdefined(level.var_49f26c00.var_42c70173)) {
         level scene::stop(level.var_49f26c00.var_42c70173, 1);
-        wait(0.1);
+        wait 0.1;
     }
     var_80ff7445 = var_509eb1e5 - level.var_49f26c00.var_9af0d684;
     if (var_80ff7445 > 0) {
@@ -1193,7 +1193,7 @@ function function_365bef4(localclientnum, b_debug = 0) {
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_lab_in", 0, "", "", s_cam.origin, s_cam.angles);
     playsound(localclientnum, #"hash_3e1e95a35dedc6bc");
     level thread scene::play(level.var_49f26c00.var_42c70173, level.var_49f26c00.var_febe408a + "_exit");
-    wait(0.5);
+    wait 0.5;
     function_6198ffc(1, 0);
     level.var_49f26c00.var_b273f2b6 thread function_b05ea28d(undefined, undefined, 0.5);
     level thread util::delay(0.5, array(#"laboratory_closed", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_flask_tube_fluid_bundle", "fill");
@@ -1210,7 +1210,7 @@ function function_365bef4(localclientnum, b_debug = 0) {
     level thread util::delay(var_ceb7615a + 0.2, array(#"laboratory_closed", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_activate");
     level thread util::delay(var_ceb7615a + 0.4, array(#"laboratory_closed", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_activate");
     level waittill(#"centrifuge_fluid_filled");
-    wait(1);
+    wait 1;
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_centrifuge_fluid_bundle", "drain");
     level waittill(#"centrifuge_fluid_drained");
     function_a8188266(0, 2);
@@ -1237,7 +1237,7 @@ function function_365bef4(localclientnum, b_debug = 0) {
     var_68636981 = gettime();
     var_fbd388ca = float(var_68636981 - var_fc9cafb5) / 1000;
     if (var_fbd388ca < 1.5) {
-        wait(1.5 - var_fbd388ca);
+        wait 1.5 - var_fbd388ca;
     }
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
         function_b760318d(3);
@@ -1261,7 +1261,7 @@ function function_365bef4(localclientnum, b_debug = 0) {
     function_a8f6e36c(localclientnum, 3);
     function_a8f6e36c(localclientnum, 4);
     if (b_debug) {
-        wait(3);
+        wait 3;
     } else {
         waitresult = level waittill(#"mix_again");
     }
@@ -1341,7 +1341,7 @@ function function_4053acdb(localclientnum) {
         level thread function_3dd68dd9(localclientnum, 0.5);
         function_b760318d(3);
         level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_create");
-        wait(1.25);
+        wait 1.25;
     } else {
         function_b760318d(1);
         level thread function_3dd68dd9(localclientnum, 0.5);
@@ -1367,10 +1367,10 @@ function function_4053acdb(localclientnum) {
     function_8192c9cf(localclientnum, 0);
     if (isdefined(level.var_49f26c00.var_f6e518bb)) {
         level waittill(#"talisman_show_label");
-        wait(1);
+        wait 1;
     } else {
         level waittill(#"bottle3_start_fill");
-        wait(1);
+        wait 1;
     }
     function_a8f6e36c(localclientnum, 3);
     function_a8f6e36c(localclientnum, 4);
@@ -1444,7 +1444,7 @@ function function_254a0f6d(localclientnum) {
         level util::delay(0, array(#"laboratory_closed", #"hash_1d604ddf352ddcca"), &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "press_no_create");
         level flag::set(#"hash_c5112e5b6ad4e15");
     }
-    wait(1.5);
+    wait 1.5;
     level thread function_ce974bbe(localclientnum, 0);
     level thread function_f76d78f5(localclientnum, 0);
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_bottle_dof", 500, "", "", s_cam.origin, s_cam.angles);
@@ -1482,7 +1482,7 @@ function function_8ab548f5(localclientnum) {
         level util::delay(0.25, #"laboratory_closed", &scene::play, #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle", "exit");
     }
     function_9dee7481();
-    wait(1);
+    wait 1;
     level thread function_ce974bbe(localclientnum, 1);
     level thread function_f76d78f5(localclientnum, 1);
     playmaincamxcam(localclientnum, "ui_scene_cam_zm_lab_out", 0, "", "", s_cam.origin, s_cam.angles);
@@ -1769,16 +1769,16 @@ function fill_bottle(localclientnum, var_1a44a9d9, var_6d1c3912, var_7046a27c, v
     if (isstring(var_7046a27c) || ishash(var_7046a27c)) {
         level waittill(var_7046a27c);
     } else if (isdefined(var_7046a27c)) {
-        wait(var_7046a27c);
+        wait var_7046a27c;
     }
     util::playfxontag(localclientnum, level._effect[#"hash_3a65d1b462add54a"], self.mdl_bottle, var_92ecfb94);
-    wait(0.5);
+    wait 0.5;
     self.mdl_bottle thread function_b05ea28d(#"hash_772e420e766fbc4e", 0, 0.5, undefined, undefined, &function_bf3a0fbe, var_6cf17519);
     level thread function_6605d119(localclientnum, var_d5db956e);
 }
 
 // Namespace zm_laboratory/frontend_zm_laboratory
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x21 linked variadic
 // Checksum 0x84a3bbe9, Offset: 0xacb8
 // Size: 0xc8
 function function_6605d119(localclientnum, ...) {
@@ -2037,7 +2037,7 @@ function function_7492cbc7(var_a82b834c = 0.5, var_ee6bcd51 = #"hash_6f36cd3b183
         }
         if (var_d2e7cd73) {
             self function_78233d29(var_ee6bcd51, "", "Tint", var_ca93c4d5);
-            wait(var_a82b834c);
+            wait var_a82b834c;
         } else {
             var_8fc81e63 = gettime();
             n_time_end = gettime() + int(var_a82b834c * 1000);

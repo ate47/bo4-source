@@ -153,7 +153,7 @@ function pegasus_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
     level beam::launch(var_10d4f67d, str_feather, self, str_tag, "beam8_zm_red_peg_lightning_strike", 1);
     self playsound(localclientnum, #"hash_61c057ffadb7a5af");
     level thread chaos_explosion(localclientnum);
-    wait(0.3);
+    wait 0.3;
     level beam::kill(var_10d4f67d, str_feather, self, str_tag, "beam8_zm_red_peg_lightning_strike");
 }
 
@@ -163,7 +163,7 @@ function pegasus_beam_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 // Size: 0x94
 function chaos_explosion(localclientnum) {
     s_chaos = array::random(struct::get_array("chaos_exp"));
-    wait(randomfloatrange(0.2, 1));
+    wait randomfloatrange(0.2, 1);
     playfx(localclientnum, level._effect[#"chaos_breakout"], s_chaos.origin);
 }
 

@@ -172,7 +172,7 @@ function function_7273c33d(s_loc, var_2c30f72f = 1) {
     self forceteleport(s_loc.origin, s_loc.angles);
     self ghost();
     playsoundatposition(#"zmb_hellhound_prespawn", s_loc.origin);
-    wait(1.5);
+    wait 1.5;
     if (var_2c30f72f) {
         self clientfield::increment("dog_spawn_fx");
         playsoundatposition(#"zmb_hellhound_bolt", s_loc.origin);
@@ -184,7 +184,7 @@ function function_7273c33d(s_loc, var_2c30f72f = 1) {
     assert(zm_utility::is_magic_bullet_shield_enabled(self), "<dev string:x68>");
     self zombie_dog_util::zombie_setup_attack_properties_dog();
     self util::stop_magic_bullet_shield();
-    wait(0.1);
+    wait 0.1;
     self show();
     self setfreecameralockonallowed(1);
     self val::reset(#"dog_spawn", "ignoreme");
@@ -246,9 +246,9 @@ function function_1abf5396(var_cba19e17) {
             waitresult.activator dodamage(10, waitresult.activator.origin);
             waitresult.activator clientfield::increment_to_player("" + #"hash_257c215ab25a21c5");
             waitresult.activator playsoundtoplayer(#"hash_75318bcffca7ff06", waitresult.activator);
-            wait(4);
+            wait 4;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -285,7 +285,7 @@ function function_8164716a() {
             level flag::set(#"hash_7039457b1cc827de");
             break;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -321,7 +321,7 @@ function function_6a1500f1() {
     level flag::wait_till("start_zombie_round_logic");
     var_f3b29ae8 = 0;
     while (true) {
-        wait(randomfloatrange(1, 20));
+        wait randomfloatrange(1, 20);
         for (i = 0; i < 2; i++) {
             if (isdefined(self function_3477b4e6(a_bad_zones)) && self function_3477b4e6(a_bad_zones)) {
                 self.var_3643da89 = 1;
@@ -336,9 +336,9 @@ function function_6a1500f1() {
             exploder::exploder("fxexp_script_lightning_0" + var_cd6bd640);
             level thread function_2d4f5b73();
             if (i == 0) {
-                wait(randomfloatrange(0.3, 0.8));
+                wait randomfloatrange(0.3, 0.8);
             } else {
-                wait(randomfloatrange(0.2, 0.5));
+                wait randomfloatrange(0.2, 0.5);
             }
             if (isdefined(self.var_3643da89) && self.var_3643da89) {
                 self util::set_lighting_state(level.lighting_state);
@@ -347,7 +347,7 @@ function function_6a1500f1() {
             }
             exploder::stop_exploder("fxexp_script_lightning_0" + var_cd6bd640);
             if (i == 0) {
-                wait(randomfloatrange(0.3, 0.5));
+                wait randomfloatrange(0.3, 0.5);
             }
         }
     }
@@ -364,7 +364,7 @@ function function_2d4f5b73() {
     if (!level.var_4b695095) {
         level.var_4b695095 = 1;
         playsoundatposition("amb_thunder_strike_script", (6559, 17376, 3893));
-        wait(3);
+        wait 3;
         level.var_4b695095 = 0;
     }
 }
@@ -647,7 +647,7 @@ function make_wobble() {
     yaw = self.angles[1] + yaw;
     new_angles = (-60 + randomint(120), yaw, -45 + randomint(90));
     self rotateto(new_angles, waittime, waittime * 0.5, waittime * 0.5);
-    wait(randomfloat(waittime - 0.1));
+    wait randomfloat(waittime - 0.1);
 }
 
 // Namespace zm_escape_util/zm_escape_util
@@ -699,7 +699,7 @@ function function_37aed203(var_f1404f73, b_use_spawn_fx = 1) {
     waitframe(1);
     var_61a5b0ea = struct::get("s_teleport_br_kill");
     var_f1404f73 forceteleport(var_61a5b0ea.origin);
-    wait(0.1);
+    wait 0.1;
     if (isalive(var_f1404f73)) {
         var_f1404f73 kill();
     }

@@ -49,7 +49,7 @@ function init_shared() {
 function updatedvars() {
     while (true) {
         level.weaponobjectdebug = getdvarint(#"scr_weaponobject_debug", 0);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -428,7 +428,7 @@ function waitanddetonate(object, delay, attacker, weapon) {
         delay = empfxdelay;
     }
     if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     if (isdefined(attacker) && isplayer(attacker) && isdefined(attacker.pers[#"team"]) && isdefined(object.owner) && isdefined(object.owner.pers) && isdefined(object.owner.pers[#"team"])) {
         if (level.teambased) {
@@ -454,7 +454,7 @@ function waitandfizzleout(object, delay) {
     object.detonated = 1;
     object notify(#"fizzleout");
     if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     if (isdefined(object.var_cea6a2fb)) {
         object.var_cea6a2fb placeables::forceshutdown();
@@ -616,7 +616,7 @@ function weapon_object_timeout(watcher, timeoutoverride) {
     weapon_instance = self;
     weapon_instance endon(#"death", #"cancel_timeout");
     timeoutval = isdefined(timeoutoverride) ? timeoutoverride : watcher.timeout;
-    wait(timeoutval);
+    wait timeoutval;
     if (isdefined(watcher) && isdefined(watcher.ontimeout)) {
         weapon_instance thread [[ watcher.ontimeout ]]();
         return;
@@ -717,7 +717,7 @@ function weaponobjectdamage(watcher) {
         break;
     }
     if (level.weaponobjectexplodethisframe) {
-        wait(0.1 + randomfloat(0.4));
+        wait 0.1 + randomfloat(0.4);
     } else {
         waitframe(1);
     }
@@ -787,7 +787,7 @@ function stunstart(watcher, time) {
         self.owner val::set(#"weaponobjects", "freezecontrols", 1);
     }
     if (isdefined(time)) {
-        wait(time);
+        wait time;
     } else {
         return;
     }
@@ -820,7 +820,7 @@ function weaponstun() {
     self.stun_fx = spawn("script_model", origin);
     self.stun_fx setmodel(#"tag_origin");
     self thread stunfxthink(self.stun_fx);
-    wait(0.1);
+    wait 0.1;
     playfxontag(level._equipment_spark_fx, self.stun_fx, "tag_origin");
 }
 
@@ -860,7 +860,7 @@ function function_f245df1e() {
     self endon(#"death");
     randangle = randomfloat(360);
     playfx(level._equipment_emp_destroy_fx, self.origin + (0, 0, 5), (cos(randangle), sin(randangle), 0), anglestoup(self.angles));
-    wait(1.1);
+    wait 1.1;
     deleteent();
 }
 
@@ -1102,7 +1102,7 @@ function proximityalarmloop(watcher, owner) {
     }
     delaytimesec = float(self.weapon.proximityalarmactivationdelay) / 1000;
     if (delaytimesec > 0) {
-        wait(delaytimesec);
+        wait delaytimesec;
         if (!isdefined(self)) {
             return;
         }
@@ -1116,7 +1116,7 @@ function proximityalarmloop(watcher, owner) {
     alarmstatus = "off";
     var_af12fba0 = undefined;
     while (true) {
-        wait(0.05);
+        wait 0.05;
         if (!isdefined(self.owner) || !isplayer(self.owner)) {
             return;
         }
@@ -1140,7 +1140,7 @@ function proximityalarmloop(watcher, owner) {
         players = getplayers();
         detectentities = arraycombine(players, actors, 0, 0);
         foreach (entity in detectentities) {
-            wait(0.05);
+            wait 0.05;
             if (!isdefined(entity)) {
                 continue;
             }
@@ -1836,7 +1836,7 @@ function proximityweaponobject_spawnprotect(watcher, ent) {
             arrayremovevalue(self.protected_entities, ent);
             return;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -1874,9 +1874,9 @@ function proximityweaponobject_dodetonation(watcher, ent, traceorigin) {
     if (isdefined(watcher.activatesound)) {
         self playsound(watcher.activatesound);
     }
-    wait(watcher.detectiongraceperiod);
+    wait watcher.detectiongraceperiod;
     if (isplayer(ent) && ent hasperk(#"specialty_delayexplosive")) {
-        wait(getdvarfloat(#"perk_delayexplosivetime", 0));
+        wait getdvarfloat(#"perk_delayexplosivetime", 0);
     }
     self entityheadicons::setentityheadicon("none");
     self.origin = traceorigin;
@@ -1897,7 +1897,7 @@ function proximityweaponobject_dodetonation(watcher, ent, traceorigin) {
 function proximityweaponobject_activationdelay(watcher) {
     self util::waittillnotmoving();
     if (watcher.activationdelay) {
-        wait(watcher.activationdelay);
+        wait watcher.activationdelay;
     }
 }
 
@@ -2038,7 +2038,7 @@ function deleteonkillbrush(player) {
                 return;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -2738,7 +2738,7 @@ function function_d9c08e94(var_2f190eaf, var_46f3f2d3) {
         return;
     }
     self endon(#"death");
-    wait(float(var_2f190eaf) / 1000);
+    wait float(var_2f190eaf) / 1000;
     if (isdefined(var_46f3f2d3)) {
         self [[ var_46f3f2d3 ]]();
     }
@@ -2755,7 +2755,7 @@ function function_d9c08e94(var_2f190eaf, var_46f3f2d3) {
         self endon(#"stop_disarmthink", #"death");
         setdvar(#"scr_switch_team", "<dev string:x6f>");
         while (true) {
-            wait(0.5);
+            wait 0.5;
             devgui_int = getdvarint(#"scr_switch_team", 0);
             if (devgui_int != 0) {
                 team = "<dev string:x72>";
@@ -2767,7 +2767,7 @@ function function_d9c08e94(var_2f190eaf, var_46f3f2d3) {
                 }
                 if (!isdefined(player)) {
                     println("<dev string:x7f>");
-                    wait(1);
+                    wait 1;
                     continue;
                 }
                 entity itemhacked(watcher, player);

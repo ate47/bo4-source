@@ -68,7 +68,7 @@ function private function_6a04c6e6() {
     self endon(#"disconnect");
     level endon(#"hash_34f9cf7500b33c6b", #"end_game");
     while (true) {
-        wait(randomfloatrange(level.var_935c100a, level.var_33146b2e));
+        wait randomfloatrange(level.var_935c100a, level.var_33146b2e);
         if (isalive(self)) {
             if (self isusingoffhand()) {
                 self forceoffhandend();

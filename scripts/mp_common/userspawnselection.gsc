@@ -463,7 +463,7 @@ function watchforselectiontimeout() {
             self luinotifyevent(#"force_spawn_selection");
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

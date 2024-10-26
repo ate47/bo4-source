@@ -175,7 +175,7 @@ function function_4c6f90cd() {
         return;
     }
     self.var_3f789444 = 1;
-    wait(2);
+    wait 2;
     if (self.var_3f789444 === 1) {
         var_baafc291 = level.zombie_health * level.var_b0a3611a;
         if (self.health <= var_baafc291) {
@@ -247,7 +247,7 @@ function function_ea0c7ed8() {
                 return;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -288,7 +288,7 @@ function function_b52931e7() {
 // Size: 0x5c
 function function_26a271e6() {
     self endon(#"death", #"hash_668824b34b3076bc");
-    wait(5);
+    wait 5;
     self thread zm_audio::create_and_play_dialog(#"freeze", #"exert");
 }
 
@@ -300,7 +300,7 @@ function function_4ab00cab() {
     level endon(#"end_game");
     self endon(#"death", #"player_frozen");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         foreach (e_water in level.a_e_water) {
             if (!self istouching(e_water) || self laststand::player_is_in_laststand()) {
                 self thread function_6cf1cc01();
@@ -339,7 +339,7 @@ function function_6577cacc() {
         self.var_36a93d1 = 0;
     }
     while (true) {
-        wait(1);
+        wait 1;
         self.var_36a93d1++;
         if (self.var_2e6aa97d === 1) {
             var_24e0e73d = 30;
@@ -372,7 +372,7 @@ function function_121f8a53() {
     self endon(#"death", #"hash_668824b34b3076bc");
     while (true) {
         self dodamage(20, self.origin);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -387,7 +387,7 @@ function function_d2dd1f2b() {
         return;
     }
     while (true) {
-        wait(1);
+        wait 1;
         self.var_36a93d1--;
         if (self.var_36a93d1 <= 0) {
             self.var_36a93d1 = 0;
@@ -516,7 +516,7 @@ function function_67981637() {
     self endon(#"death");
     while (self.var_7dc2d507) {
         self shellshock(#"slowview", 1.1);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -612,12 +612,12 @@ function function_6cadbaff() {
 function function_8eb7b0f7() {
     self endon(#"death", #"hash_53bfad7081c69dee");
     if (level flag::get(#"break_freeze_faster")) {
-        wait(3);
+        wait 3;
         self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
         self notify(#"hash_53bfad7081c69dee");
         return;
     }
-    wait(5);
+    wait 5;
     self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
     self notify(#"hash_53bfad7081c69dee");
 }
@@ -640,7 +640,7 @@ function function_e8485ac0() {
     self endon(#"death");
     n_counter = 0;
     while (true) {
-        wait(0.1);
+        wait 0.1;
         n_counter += 0.1;
         if (n_counter >= 1) {
             self.var_1ed2984a = 0;
@@ -713,11 +713,11 @@ function function_e22d95bc() {
         switch (str_stance) {
         case #"crouch":
             self setstance("stand");
-            wait(0.2);
+            wait 0.2;
             break;
         case #"prone":
             self setstance("stand");
-            wait(1);
+            wait 1;
             break;
         }
     }
@@ -805,7 +805,7 @@ function function_e2d41c8d(s_start) {
     function update_hud_elem(player) {
         player endon(#"death");
         while (true) {
-            wait(0.1);
+            wait 0.1;
             player notify(#"update_frost_state");
         }
     }

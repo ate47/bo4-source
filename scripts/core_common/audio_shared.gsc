@@ -138,7 +138,7 @@ function playtargetmissilesound(alias, looping) {
         if (time > 0) {
             do {
                 self playlocalsound(alias);
-                wait(time);
+                wait time;
             } while (looping);
         }
     }

@@ -863,7 +863,7 @@ function function_a80cb651(activecamo, stagenum) {
             s_result = self waittilltimeout(float(stage.info.resettimer) / 1000, stage.info.resetnotify);
         } else if (stage.info.resettimer > 0) {
             stage.resettime = gettime() + stage.info.resettimer;
-            wait(float(stage.info.resettimer) / 1000);
+            wait float(stage.info.resettimer) / 1000;
         } else {
             s_result = self waittill(stage.info.resetnotify);
         }
@@ -956,7 +956,7 @@ function function_a80cb651(activecamo, stagenum) {
         if (!isdefined(level.var_630fbd77)) {
             return;
         }
-        wait(2);
+        wait 2;
         root = level.var_630fbd77 + "<dev string:x28d>";
         players = getplayers();
         for (i = 0; i < players.size; i++) {
@@ -1079,7 +1079,7 @@ function function_a80cb651(activecamo, stagenum) {
     // Size: 0x350
     function devgui_think() {
         for (;;) {
-            wait(0.5);
+            wait 0.5;
             reset = 1;
             host = util::gethostplayer();
             switch (getdvarstring(#"hash_3e1bb44a57b02ed8")) {

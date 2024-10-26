@@ -587,7 +587,7 @@ function private function_8a5fe651(pap_machine, current_weapon) {
         return false;
     }
     if (self isswitchingweapons()) {
-        wait(0.1);
+        wait 0.1;
         if (!isdefined(self) || isdefined(self) && self isswitchingweapons()) {
             return false;
         }
@@ -744,7 +744,7 @@ function private third_person_weapon_upgrade(current_weapon, current_weaponoptio
     } else {
         pap_machine playsound(#"zmb_perks_packa_upgrade");
     }
-    wait(var_397d50da);
+    wait var_397d50da;
     pap_machine setweapon(pap_machine.unitrigger_stub.upgrade_weapon);
     pap_machine setweaponoptions(pap_machine.unitrigger_stub.upgrade_weapon_options);
     pap_machine set_pap_zbarrier_state("eject_gun");
@@ -761,7 +761,7 @@ function private third_person_weapon_upgrade(current_weapon, current_weaponoptio
 // Size: 0x4c
 function private function_ecb78870() {
     self flag::set("pap_in_retrigger_delay");
-    wait(level.var_a3b71a00);
+    wait level.var_a3b71a00;
     self flag::clear("pap_in_retrigger_delay");
 }
 
@@ -896,7 +896,7 @@ function private wait_for_timeout(weapon, packa_timer, player, var_a86430cb, var
     } else {
         n_timeout = level.pack_a_punch.timeout;
     }
-    wait(n_timeout);
+    wait n_timeout;
     level notify(#"pap_timeout", {#var_5e879929:self, #e_player:player});
     self notify(#"pap_timeout", {#e_player:player});
     packa_timer stoploopsound(0.05);
@@ -936,7 +936,7 @@ function private wait_for_timeout(weapon, packa_timer, player, var_a86430cb, var
 function private wait_for_disconnect(player) {
     self endon(#"pap_taken", #"pap_timeout");
     while (isdefined(player)) {
-        wait(0.1);
+        wait 0.1;
     }
     println("<dev string:x22f>");
     self notify(#"pap_player_disconnected");
@@ -952,7 +952,7 @@ function private destroy_weapon_in_blackout() {
     pap_machine flag::wait_till("Pack_A_Punch_off");
     pap_machine set_pap_zbarrier_state("take_gun");
     pap_machine.pack_player playlocalsound(level.zmb_laugh_alias);
-    wait(1.5);
+    wait 1.5;
     pap_machine set_pap_zbarrier_state("power_off");
 }
 
@@ -1056,7 +1056,7 @@ function private pap_powered() {
 function private pap_take_gun() {
     self setzbarrierpiecestate(1, "opening");
     self setzbarrierpiecestate(3, "opening");
-    wait(0.1);
+    wait 0.1;
     if (self.classname === "zbarrier_zm_castle_packapunch" || self.classname === "zbarrier_zm_tomb_packapunch") {
         self clientfield::set("pap_working_FX", 1);
     }
@@ -1212,9 +1212,9 @@ function function_bdbf43e6(str_state) {
 function function_ea57e209() {
     self endon(#"zbarrier_state_change");
     while (true) {
-        wait(randomfloatrange(180, 1800));
+        wait randomfloatrange(180, 1800);
         self setzbarrierpiecestate(4, "opening");
-        wait(randomfloatrange(180, 1800));
+        wait randomfloatrange(180, 1800);
         self setzbarrierpiecestate(4, "closing");
     }
 }

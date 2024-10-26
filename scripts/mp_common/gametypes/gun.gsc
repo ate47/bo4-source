@@ -188,7 +188,7 @@ function inactivitykick() {
         return;
     }
     while (level.inactivitykick > self.timeplayed[#"total"]) {
-        wait(1);
+        wait 1;
     }
     if (self.pers[#"participation"] == 0 && self.pers[#"time_played_moving"] < 1) {
         globallogic::gamehistoryplayerkicked();
@@ -293,7 +293,7 @@ function addguntoprogression(weaponname, attachment1, attachment2, attachment3, 
 // Size: 0x4c
 function takeoldweapon(oldweapon) {
     self endon(#"death", #"disconnect");
-    wait(1);
+    wait 1;
     self takeweapon(oldweapon);
 }
 
@@ -411,7 +411,7 @@ function demoteplayer(attacker) {
 function infiniteammo() {
     self endon(#"death", #"disconnect");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         weapon = self getcurrentweapon();
         self givemaxammo(weapon);
     }

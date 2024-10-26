@@ -472,7 +472,7 @@ function function_6a9e68bf(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_d7aac18b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     n_fx = playfx(localclientnum, level._effect[#"hash_797e7381ba62ff8a"], self.origin);
     playsound(localclientnum, #"hash_3bf3dbe329c0568b", self.origin);
-    wait(0.1);
+    wait 0.1;
     stopfx(localclientnum, n_fx);
 }
 
@@ -1380,7 +1380,7 @@ function function_d482f96b(localclientnum, newval) {
             if (var_1a458c97) {
                 n_wait = 0.5;
             }
-            wait(n_wait);
+            wait n_wait;
         }
     }
 }
@@ -1629,7 +1629,7 @@ function function_83a7c416(localclientnum) {
             }
             self thread function_9631e11c(mdl_fx, str_tag);
             n_random_wait = randomfloatrange(0.1, 0.25);
-            wait(n_random_wait);
+            wait n_random_wait;
         }
     }
 }
@@ -1640,7 +1640,7 @@ function function_83a7c416(localclientnum) {
 // Size: 0x8c
 function function_9631e11c(mdl_fx, str_tag) {
     n_random_wait = randomfloatrange(1, 2);
-    wait(n_random_wait);
+    wait n_random_wait;
     if (isdefined(self)) {
         level beam::kill(self, str_tag, mdl_fx, "tag_origin", "beam8_zm_red_peg_lightning_strike");
     }
@@ -1655,7 +1655,7 @@ function function_842fb5d0(localclientnum, oldval, newval, bnewent, binitialsnap
     self endon(#"death");
     util::playfxontag(localclientnum, level._effect[#"hash_44330c38e995c437"], self, "link_p8_zm_red_ballista");
     playsound(localclientnum, #"hash_39c2296cc1b913b9", self gettagorigin("link_p8_zm_red_ballista"));
-    wait(1);
+    wait 1;
     util::playfxontag(localclientnum, level._effect[#"hash_76947a7b04c592a6"], self, "link_p8_zm_red_ballista_arrow_whole");
     playsound(localclientnum, #"hash_39c2296cc1b913b9", self gettagorigin("link_p8_zm_red_ballista_arrow_whole"));
 }

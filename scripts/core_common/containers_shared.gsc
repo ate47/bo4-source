@@ -118,7 +118,7 @@ function setup_general_container_bundle(str_targetname, str_intel_vo, str_narrat
         e_who = waitresult.activator;
     } else {
         rand_time = randomfloatrange(1, 1.5);
-        wait(rand_time);
+        wait rand_time;
     }
     e_trigger delete();
     level thread scene::play(str_targetname, "targetname");
@@ -138,7 +138,7 @@ function setup_general_container_bundle(str_targetname, str_intel_vo, str_narrat
         e_collectable = spawn("script_model", v_pos);
         e_collectable setmodel(#"p7_int_narrative_collectable");
         e_collectable.angles = v_angles;
-        wait(1);
+        wait 1;
         e_trigger = create_locker_trigger(s_struct.origin, 64, "Press [{+activate}] to pickup collectable");
         waitresult = e_trigger waittill(#"trigger");
         e_who = waitresult.activator;

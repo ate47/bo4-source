@@ -594,7 +594,7 @@ function matchstarttimer() {
                 visionsetnaked("default", 3);
             }
             counttime--;
-            wait(1);
+            wait 1;
         }
     } else {
         visionsetnaked("default", 1);
@@ -736,7 +736,7 @@ function gamehistoryplayerquit() {
         self.pers[#"matchesplayedstatstracked"] = undefined;
     }
     uploadstats(self);
-    wait(1);
+    wait 1;
 }
 
 // Namespace globallogic/globallogic
@@ -860,7 +860,7 @@ function endgame(winner, endreasontext) {
         print("<dev string:x9b>");
     #/
     if (!isdefined(level.skipgameend) || !level.skipgameend) {
-        wait(5);
+        wait 5;
     }
     exitlevel(0);
 }
@@ -887,13 +887,13 @@ function bbplayermatchend(gamelength, endreasonstring, gameover) {
 // Size: 0x78
 function roundendwait(defaultdelay, matchbonus) {
     if (!matchbonus) {
-        wait(defaultdelay);
+        wait defaultdelay;
         level notify(#"round_end_done");
         return;
     }
-    wait(defaultdelay / 2);
+    wait defaultdelay / 2;
     level notify(#"give_match_bonus");
-    wait(defaultdelay / 2);
+    wait defaultdelay / 2;
     level notify(#"round_end_done");
 }
 
@@ -1007,11 +1007,11 @@ function updategametypedvars() {
         thread checkscorelimit();
         if (isdefined(level.starttime)) {
             if (globallogic_utils::gettimeremaining() < 3000) {
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1348,7 +1348,7 @@ function prematchperiod() {
     if (level.prematchperiod > 0) {
         thread matchstarttimer();
         waitforplayers();
-        wait(level.prematchperiod);
+        wait level.prematchperiod;
     } else {
         matchstarttimerskip();
         waitframe(1);
@@ -1373,7 +1373,7 @@ function graceperiod() {
     if (isdefined(level.graceperiodfunc)) {
         [[ level.graceperiodfunc ]]();
     } else {
-        wait(level.graceperiod);
+        wait level.graceperiod;
     }
     level notify(#"grace_period_ending");
     waitframe(1);
@@ -1637,7 +1637,7 @@ function callback_startgametype() {
         if (getdvarint(#"scr_writeconfigstrings", 0) == 1) {
             level.skipgameend = 1;
             level.roundlimit = 1;
-            wait(1);
+            wait 1;
             thread forceend(0);
         }
         if (getdvarint(#"scr_hostmigrationtest", 0) == 1) {
@@ -1655,7 +1655,7 @@ function callback_startgametype() {
     function forcedebughostmigration() {
         while (true) {
             hostmigration::waittillhostmigrationdone();
-            wait(60);
+            wait 60;
             starthostmigration();
             hostmigration::waittillhostmigrationdone();
         }

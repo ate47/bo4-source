@@ -122,7 +122,7 @@ function tryusepredatormissile(lifeid) {
 // Size: 0x3c
 function function_203098f4(waittime) {
     self endon(#"disconnect");
-    wait(waittime);
+    wait waittime;
     lui::screen_fade_in(0.1);
 }
 
@@ -222,7 +222,7 @@ function _fire(lifeid, player, team, killstreak_id) {
     }
     player playsoundtoplayer(#"hash_1f70287e92a32746", player);
     animlen = getanimlength(#"hash_4b6a7686ae8c1f16");
-    wait(animlen * 0.7);
+    wait animlen * 0.7;
     if (!isdefined(player)) {
         return false;
     }
@@ -373,7 +373,7 @@ function getbestspawnpoint(remotemissilespawnpoints) {
 // Size: 0x44
 function function_9761dd1d() {
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     self clientfield::set("remote_missile_fired", 1);
 }
 
@@ -389,7 +389,7 @@ function watch_missile_kill_z() {
     kill_z = level.remotemissile_kill_z;
     rocket endon(#"remotemissle_killstreak_done", #"death");
     while (rocket.origin[2] > kill_z) {
-        wait(0.1);
+        wait 0.1;
     }
     rocket detonate();
 }
@@ -430,7 +430,7 @@ function hackedpostfunction(hacker) {
 function rotaterig() {
     for (;;) {
         self rotateyaw(-360, 60);
-        wait(60);
+        wait 60;
     }
 }
 
@@ -444,11 +444,11 @@ function swayrig() {
         z = randomintrange(-200, -100);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
         z = randomintrange(100, 200);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
     }
 }
 
@@ -458,7 +458,7 @@ function swayrig() {
 // Size: 0x4c
 function waitthendelete(waittime) {
     self endon(#"delete", #"death");
-    wait(waittime);
+    wait waittime;
     self delete();
 }
 
@@ -588,7 +588,7 @@ function missile_brake_timeout_watch() {
     rocket clientfield::set("remote_missile_brakes", 1);
     rocket playsound(#"wpn_remote_missile_brake_npc");
     player playlocalsound(#"wpn_remote_missile_brake_plr");
-    wait(1.5);
+    wait 1.5;
     if (isdefined(self)) {
         rocket clientfield::set("remote_missile_brakes", 0);
         self setmissilebrake(0);
@@ -1059,7 +1059,7 @@ function missile_deploy_watch(rocket) {
     level endon(#"game_ended");
     params = level.killstreakbundle[#"remote_missile"];
     var_dc54c0bd = isdefined(params.var_538e1d5) ? params.var_538e1d5 : 3000;
-    wait(0.25);
+    wait 0.25;
     while (self attackbuttonpressed()) {
         waitframe(1);
     }
@@ -1125,7 +1125,7 @@ function bomblet_camera_waiter(rocket) {
     level endon(#"game_ended");
     delay = getdvarfloat(#"scr_rmbomblet_camera_delaytime", 1);
     self waittill(#"bomblet_exploded");
-    wait(delay);
+    wait delay;
     rocket notify(#"death");
     self notify(#"remotemissile_done");
 }
@@ -1136,7 +1136,7 @@ function bomblet_camera_waiter(rocket) {
 // Size: 0x64
 function setup_bomblet_map_icon() {
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     self clientfield::set("remote_missile_bomblet_fired", 1);
     self clientfield::set("enemyvehicle", 1);
 }
@@ -1271,7 +1271,7 @@ function remotemissile_bda_dialog() {
         if (!isdefined(bdadialog)) {
             return;
         }
-        wait(dialog_shared::mpdialog_value("remoteMissileResultDelay", 0));
+        wait dialog_shared::mpdialog_value("remoteMissileResultDelay", 0);
         if (!isdefined(self)) {
             return;
         }

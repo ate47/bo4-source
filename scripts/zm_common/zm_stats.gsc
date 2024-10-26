@@ -1611,7 +1611,7 @@ function uploadstatssoon() {
     self notify(#"upload_stats_soon");
     self endon(#"upload_stats_soon");
     self endon(#"disconnect");
-    wait(1);
+    wait 1;
     uploadstats(self);
 }
 
@@ -1637,7 +1637,7 @@ function function_b14863c1() {
     level thread function_cb8a5c29();
     level thread function_c5f9ea85();
     while (true) {
-        wait(getdvar(#"hash_83577689a2e58b3", 180));
+        wait getdvar(#"hash_83577689a2e58b3", 180);
         function_ea5b4947();
     }
 }
@@ -1668,7 +1668,7 @@ function function_c5f9ea85() {
         player.var_78c18942 = 0;
     }
     while (true) {
-        wait(1);
+        wait 1;
         if (!(isdefined(level.var_b8cbd9e6) && level.var_b8cbd9e6)) {
             foreach (player in level.players) {
                 if (!isdefined(player.var_78c18942)) {

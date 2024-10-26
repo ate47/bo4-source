@@ -471,13 +471,13 @@ function finalsurvivoruav(finalsurvivor) {
     removeuav = 0;
     while (true) {
         prevpos = finalsurvivor.origin;
-        wait(4);
+        wait 4;
         if (removeuav) {
             setteamspyplane(game.attackers, 0);
             util::set_team_radar(game.var_6280b6a7, 0);
             removeuav = 0;
         }
-        wait(6);
+        wait 6;
         if (distancesquared(prevpos, finalsurvivor.origin) < 200 * 200) {
             setteamspyplane(game.attackers, 1);
             util::set_team_radar(game.attackers, 1);
@@ -690,7 +690,7 @@ function choosefirstinfected() {
         level.infect_timer mp_infect_timer::function_8c8674a4(player, 8);
     }
     for (i = 1; i <= 8; i++) {
-        wait(1);
+        wait 1;
         foreach (player in level.players) {
             if (8 - i) {
                 level.infect_timer mp_infect_timer::function_8c8674a4(player, 8 - i);
@@ -709,7 +709,7 @@ function choosefirstinfected() {
         level.infect_choosingfirstinfected = 0;
     }
     level notify(#"abort forfeit");
-    wait(30);
+    wait 30;
     foreach (player in level.players) {
         if (player.team == #"allies") {
             scoreevents::processscoreevent("infected_survive_30_seconds", player);
@@ -1075,7 +1075,7 @@ function function_df1183b3() {
     level endon(#"game_ended");
     level notify(#"hash_674fa4643cd81a8c");
     level endon(#"hash_674fa4643cd81a8c");
-    wait(30);
+    wait 30;
     forcespawnteam(game.defenders);
 }
 

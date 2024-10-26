@@ -106,7 +106,7 @@ function function_f4472adf(a_ents) {
 function function_53bac096(b_hide) {
     if (isdefined(level.var_7652563c) && level.var_7652563c) {
         level thread scene::play("aib_vign_cust_zm_red_orcl", "idle");
-        wait(0.2);
+        wait 0.2;
     }
     if (!isdefined(level.var_bb7822b7)) {
         return;

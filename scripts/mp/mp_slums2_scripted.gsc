@@ -42,7 +42,7 @@ function on_game_playing() {
     if (!getdvarint(#"hash_14f8907ba73d8e4f", 1)) {
         return;
     }
-    wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
+    wait getdvarfloat(#"hash_68cf1e8e429452b0", 0);
     if (util::isfirstround()) {
         level scene::add_scene_func(#"p8_fxanim_mp_slu_cop_car_explosion_bundle", &function_33022f5b, "play");
         level thread scene::play(#"p8_fxanim_mp_slu_cop_car_explosion_bundle");

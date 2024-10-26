@@ -47,7 +47,7 @@ function nuked_population_sign_think(localclientnum) {
     var_80ac8621 rotateroll(step, 0.05);
     var_3c0c17f2 rotateroll(step, 0.05);
     for (;;) {
-        wait(1);
+        wait 1;
         var_c510abcc = 0;
         players = getlocalplayers();
         foreach (localplayer in players) {
@@ -117,7 +117,7 @@ function set_dvar_float_if_unset(dvar, value) {
     function function_102a701c(tens, ones) {
         while (!isdefined(tens) || !isdefined(ones)) {
             iprintlnbold("<dev string:x38>");
-            wait(2);
+            wait 2;
         }
     }
 

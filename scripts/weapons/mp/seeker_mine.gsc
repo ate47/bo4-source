@@ -392,7 +392,7 @@ function private shock_rumble_loop() {
     }
     while (isdefined(self) && (isdefined(self.var_dda9b735.isshocked) ? self.var_dda9b735.isshocked : 0)) {
         self playrumbleonentity("shock_rumble");
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -509,7 +509,7 @@ function watchtargetdeath(seekermine) {
         scoreevents::processscoreevent(#"seeker_shock_mine_paralyzed_headshot", seekermine.owner, self, params.weapon);
         seekermine.owner globallogic_score::specialistmedalachievement(level.var_9d47488.weapon, undefined);
     }
-    wait(2);
+    wait 2;
     if (isdefined(seekermine)) {
         seekermine function_afd97197();
     }
@@ -534,7 +534,7 @@ function function_d688b485(var_1a9a5cee) {
 // Size: 0x44
 function function_7fe95ae0(var_1a9a5cee) {
     var_1a9a5cee endon(#"death");
-    wait(11);
+    wait 11;
     if (isdefined(var_1a9a5cee)) {
         var_1a9a5cee delete();
     }
@@ -679,19 +679,19 @@ function function_dfbbefb8() {
         level.var_9d47488.prompt seeker_mine_prompt::open(self, 0);
         self thread function_44cae5c5(level.var_9d47488.tunables.var_1f80b74);
     }
-    wait(level.var_9d47488.tunables.var_2fa95b34);
+    wait level.var_9d47488.tunables.var_2fa95b34;
     self.var_dda9b735.prompt = 1;
     if (self status_effect::function_3c54ae98(5) > 0) {
         return;
     }
     self thread function_7d2591b();
-    wait(level.var_9d47488.tunables.var_170c494e);
+    wait level.var_9d47488.tunables.var_170c494e;
     self.var_dda9b735.prompt = 2;
     self.var_dda9b735.var_aacd5e7c = gettime();
-    wait(level.var_9d47488.tunables.var_5ee35075);
-    wait(level.var_9d47488.tunables.var_b9cf9139);
+    wait level.var_9d47488.tunables.var_5ee35075;
+    wait level.var_9d47488.tunables.var_b9cf9139;
     self.var_dda9b735.prompt = 0;
-    wait(level.var_9d47488.tunables.var_9bdbf8df);
+    wait level.var_9d47488.tunables.var_9bdbf8df;
     self notify(#"hash_13bc4f053f8da5b0");
     self.var_dda9b735.prompt = 3;
 }
@@ -836,7 +836,7 @@ function function_24d08109(seekermine, waitduration, var_26b2b1bb, state) {
     self endon(#"death");
     self waittilltimeout(waitduration, #"hash_89051c7805b3d19");
     if (state == 1) {
-        wait(level.var_9d47488.tunables.var_e8e9a9cc);
+        wait level.var_9d47488.tunables.var_e8e9a9cc;
     } else {
         thread function_e380fde7(undefined, undefined, 0, 0, 0);
     }
@@ -860,7 +860,7 @@ function function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, 
     self notify("49a0bba57c17e324");
     self endon("49a0bba57c17e324");
     self endon(#"death");
-    wait(animdelay);
+    wait animdelay;
     if (isdefined(var_84a7f98e) && var_84a7f98e == level.weaponnone) {
         var_84a7f98e = undefined;
     }

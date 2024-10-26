@@ -71,7 +71,7 @@ function function_c51132ba(localclientnum, oldval, newval, bnewent, binitialsnap
         self endon(#"death");
         while (true) {
             print3d(self.origin, newval, (1, 1, 0), 1, 0.4, 15);
-            wait(0.2);
+            wait 0.2;
         }
     }
 

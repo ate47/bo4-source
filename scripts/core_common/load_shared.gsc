@@ -133,7 +133,7 @@ function keep_time() {
                 }
                 setdvar(#"level_notify", "<dev string:x38>");
             }
-            wait(0.2);
+            wait 0.2;
         }
     }
 
@@ -148,7 +148,7 @@ function keep_time() {
                 util::clientnotify(val);
                 setdvar(#"client_notify", "<dev string:x38>");
             }
-            wait(0.2);
+            wait 0.2;
         }
     }
 
@@ -264,11 +264,11 @@ function player_throwgrenade_timer() {
     self.lastgrenadetime = 0;
     while (true) {
         while (!self isthrowinggrenade()) {
-            wait(0.05);
+            wait 0.05;
         }
         self.lastgrenadetime = gettime();
         while (self isthrowinggrenade()) {
-            wait(0.05);
+            wait 0.05;
         }
     }
 }
@@ -337,7 +337,7 @@ function water_think() {
             if (players_in_water_count == 0) {
                 break;
             }
-            wait(0.5);
+            wait 0.5;
         }
         waitframe(1);
     }

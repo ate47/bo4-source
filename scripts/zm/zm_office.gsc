@@ -212,7 +212,7 @@ function function_7437db04() {
                 }
             }
         }
-        wait(0.5);
+        wait 0.5;
         foreach (str_scene in var_43148fe7) {
             scene::stop(str_scene, 1);
         }
@@ -264,7 +264,7 @@ function registergondola_moving_watcher() {
     exploder::exploder("fxexp_script_power_on");
     level waittill(#"hash_21249b4d1ece37b5");
     exploder::exploder("fxexp_script_power_off");
-    wait(2.5);
+    wait 2.5;
     var_4d8e3426.var_72873bf hide();
 }
 
@@ -275,7 +275,7 @@ function registergondola_moving_watcher() {
 function function_8aea12() {
     var_c6025348 = getentarray("lab_light_spinning_off", "script_noteworthy");
     var_a8947e7c = getentarray("lab_light_spinning_on", "script_noteworthy");
-    wait(1);
+    wait 1;
     foreach (light in var_a8947e7c) {
         light hide();
     }
@@ -447,7 +447,7 @@ function function_4a3d7c9e(trigger) {
             e_player.var_4eee81de = 1;
             trigger playsound(#"evt_metal_detector");
             e_player thread function_f9229e0c(trigger);
-            wait(2);
+            wait 2;
         }
     }
 }
@@ -459,7 +459,7 @@ function function_4a3d7c9e(trigger) {
 function function_f9229e0c(e_trigger) {
     self endon(#"death");
     while (self istouching(e_trigger)) {
-        wait(0.1);
+        wait 0.1;
     }
     self.var_4eee81de = 0;
 }
@@ -485,7 +485,7 @@ function setupmusic() {
 // Size: 0x4c
 function play_starting_vox() {
     level flag::wait_till("start_zombie_round_logic");
-    wait(6);
+    wait 6;
     level thread namespace_8f53e87b::play_pentagon_announcer_vox(#"hash_4728c591d3ef4bea");
 }
 
@@ -514,14 +514,14 @@ function function_cbc7dc41() {
         foreach (screen in var_458dae44) {
             screen show();
         }
-        wait(1 + randomfloat(5));
+        wait 1 + randomfloat(5);
         foreach (screen in var_458dae44) {
             screen hide();
         }
         foreach (screen in var_828004fa) {
             screen show();
         }
-        wait(randomfloat(1));
+        wait randomfloat(1);
         foreach (screen in var_828004fa) {
             screen hide();
         }
@@ -587,7 +587,7 @@ function function_335eca01() {
         level.activeplayers[i] setplayerangles(a_s_start_pos[i].angles);
         level.activeplayers[i] val::set(#"outro_scene", "freezecontrols", 0);
     }
-    wait(5);
+    wait 5;
     level flag::set("spawn_zombies");
 }
 

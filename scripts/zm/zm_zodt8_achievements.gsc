@@ -134,7 +134,7 @@ function function_934d3464() {
                 self notify(#"hash_5a83ec4a73b3dc6");
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -147,7 +147,7 @@ function function_6b34cb92() {
     while (true) {
         level waittill(#"end_of_round");
         if (level.round_number >= 20) {
-            wait(2);
+            wait 2;
             /#
                 iprintlnbold("<dev string:x8e>");
             #/
@@ -180,7 +180,7 @@ function function_d814403c() {
                     self.var_6ba87fa[self.var_6ba87fa.size] = level.s_pap_quest.var_88aa74e.prefabname;
                 }
                 if (self.var_6ba87fa.size > 3) {
-                    wait(1);
+                    wait 1;
                     if (isdefined(self)) {
                         /#
                             iprintlnbold("<dev string:xbd>" + self getentnum());
@@ -219,7 +219,7 @@ function function_1b454689() {
                 }
                 if (self.var_b5982a89.size > 7) {
                     self waittill(#"fasttravel_finished", #"death");
-                    wait(1);
+                    wait 1;
                     if (isdefined(self)) {
                         /#
                             iprintlnbold("<dev string:xed>" + self getentnum());
@@ -305,7 +305,7 @@ function function_ec3040dd() {
             self.var_8c5df11c = 1;
             return;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -355,7 +355,7 @@ function function_52f9045f() {
             self zm_utility::giveachievement_wrapper("ZM_ZODT8_ROCK_PAPER", 0);
             return;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -392,7 +392,7 @@ function function_b97662b6() {
             self zm_utility::giveachievement_wrapper("ZM_ZODT8_SWIMMING", 0);
             return;
         }
-        wait(2);
+        wait 2;
     }
 }
 

@@ -254,7 +254,7 @@ function private function_35d7925d(effect) {
         if (self gestures::play_gesture(effect.var_b5207a36, undefined, 0)) {
             return;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

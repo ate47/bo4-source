@@ -157,7 +157,7 @@ function function_15652808(str_archetype) {
 // Checksum 0x45b754fb, Offset: 0xcd8
 // Size: 0x16
 function function_288a0226() {
-    wait(10);
+    wait 10;
     self.b_cooldown = 0;
 }
 
@@ -340,7 +340,7 @@ function start_drummers() {
     level endon(#"end_game");
     while (true) {
         level waittill(#"hash_37b8eeaed85f1b4c");
-        wait(0.06);
+        wait 0.06;
         level scene::play("special_round_drummers", "targetname");
     }
 }
@@ -406,7 +406,7 @@ function function_85324f75(var_8657f7ff = 0) {
         var_7a79774b = getstatuseffect("dot_corrosive_catalyst");
     }
     if (level.start_round == level.round_number) {
-        wait(5);
+        wait 5;
     }
     while (true) {
         trigger_midpoint = self.origin + (0, 0, 72);
@@ -453,7 +453,7 @@ function function_618c268f(e_source) {
     if (self istouching(var_60bb2505) || self istouching(vol_opposite_tunnel)) {
         n_delay = 0.1;
     }
-    wait(n_delay);
+    wait n_delay;
     self.var_b9b1038f = undefined;
     if (distancesquared(self.origin, var_c1538db) > 128 * 128) {
         self.var_7b2f6755 = undefined;
@@ -474,7 +474,7 @@ function function_71c7c70b(var_c1ff0b19) {
 // Size: 0x160
 function function_39a9e7ce() {
     var_629da31e = zm_custom::function_901b751c(#"zmlaststandduration");
-    wait(1.5);
+    wait 1.5;
     level notify(#"kill_special_round_fog");
     var_60bb2505 = getent("vol_spawn_area", "targetname");
     vol_opposite_tunnel = getent("vol_opposite_tunnel", "targetname");

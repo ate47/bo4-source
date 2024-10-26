@@ -236,7 +236,7 @@ function function_665b4fa6() {
             }
             if (b_using) {
                 self.e_crank rotateroll(-36, 0.1);
-                wait(0.1);
+                wait 0.1;
                 playsoundatposition(#"hash_12cbe85436ddc720", self.origin);
                 self.var_191e6b71 -= 0.1;
                 var_ba7236d5++;
@@ -450,7 +450,7 @@ function function_d41f7e0e() {
             break;
         }
         e_who thread function_5dbd6a40(self);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -481,7 +481,7 @@ function function_5dbd6a40(s_zipline_use) {
         } else {
             self val::set(#"hash_dcfa1d5e7f80cba", "disable_weapons", 1);
         }
-        wait(1);
+        wait 1;
     }
     vnd_start = getvehiclenode(s_zipline_use.target, "targetname");
     self.var_b20b0960 = spawner::simple_spawn_single(getent("veh_fasttravel", "targetname"));
@@ -611,11 +611,11 @@ function function_fc9707f4(vnd_start, s_zipline_use) {
         switch (str_stance) {
         case #"crouch":
             self setstance("stand");
-            wait(0.2);
+            wait 0.2;
             break;
         case #"prone":
             self setstance("stand");
-            wait(1);
+            wait 1;
             break;
         }
     }
@@ -661,7 +661,7 @@ function function_b9addb5e(zipline) {
 function function_a949ddac() {
     self endon(#"disconnect");
     self.var_b20b0960 endon(#"reached_end_node");
-    wait(0.5);
+    wait 0.5;
     while (true) {
         foreach (ai in getaiteamarray(level.zombie_team)) {
             if (distancesquared(self.origin, ai.origin) < 324) {
@@ -707,7 +707,7 @@ function function_994538a5(s_zipline_use) {
 function function_a393b77f() {
     self endon(#"disconnect");
     self.var_7b2ac934 = 1;
-    wait(10);
+    wait 10;
     self.var_7b2ac934 = 0;
 }
 

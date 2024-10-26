@@ -218,16 +218,16 @@ function defend_areas() {
     zm_utility::open_door(array("door_hallend_to_grand_staircase", "door_to_entrance_hall"), undefined, undefined, 1);
     level thread scene::play("entrance_hall_exploding_door", "targetname");
     str_next_defend = #"grand_staircase";
-    wait(5);
+    wait 5;
     zm_utility::function_11101458(str_next_defend);
-    wait(10);
+    wait 10;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 35);
     zm_utility::function_fef4b36a(str_next_defend);
     var_6152b664 = getent("use_elec_switch", "targetname");
     var_6152b664 triggerenable(1);
     trigger::use("use_elec_switch");
-    wait(10);
+    wait 10;
     str_second_defend = array::random(array(#"cellar", #"library", #"dining_room"));
     if (str_second_defend == #"cellar") {
         level thread zm_utility::open_door(array("door_to_cellar"));
@@ -236,17 +236,17 @@ function defend_areas() {
     } else {
         level thread zm_utility::open_door(array("door_to_dining_room_lower", "debris_to_dining_room_upper"));
     }
-    wait(5);
+    wait 5;
     zm_utility::function_11101458(str_second_defend);
     s_defend_area = zm_utility::function_a877cd10(str_second_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     zm_utility::function_fef4b36a(str_second_defend);
     level zm_utility::open_door(array("debris_startwest_to_mainhall", "debris_starteast_to_mainhall"), undefined, undefined, 1);
-    wait(5);
+    wait 5;
     str_next_defend = #"main_hall";
     zm_utility::function_11101458(str_next_defend);
     registertrench_dogs_coop_round();
-    wait(15);
+    wait 15;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     level thread zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7);
     level flag::wait_till("started_defend_area");
@@ -265,9 +265,9 @@ function defend_areas() {
     }
     level flag::set("open_pap");
     level thread zm_utility::open_door(array("door_main_hall_to_forest_entrance"));
-    wait(5);
+    wait 5;
     level thread registerlast_truck_headshot_();
-    wait(30);
+    wait 30;
     if (str_second_defend == #"library") {
         str_next_defend = #"cemetery";
         level thread zm_utility::open_door(array("debris_cemetery_entrance", "debris_cemetery", "door_to_library", "door_to_library_floor"));
@@ -276,7 +276,7 @@ function defend_areas() {
         level thread zm_utility::open_door(array("gate_greenhouse", "door_dining_room_to_greenhouse_entrance", "door_to_dining_room_lower", "debris_to_dining_room_upper"));
     }
     zm_utility::function_11101458(str_next_defend);
-    wait(15);
+    wait 15;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7);
     zm_utility::function_fef4b36a(str_next_defend);
@@ -287,7 +287,7 @@ function defend_areas() {
     /#
         iprintlnbold("<dev string:x38>");
     #/
-    wait(7);
+    wait 7;
     level thread zm_utility::open_door(array("door_to_cellar", "door_to_dining_room_lower", "debris_to_dining_room_upper", "door_dining_room_to_greenhouse_entrance", "gate_greenhouse", "door_to_library_floor", "door_to_library", "debris_cemetery_entrance", "debris_cemetery"), undefined, undefined, 0);
     level thread function_a97f7327();
     function_39364bed();
@@ -347,7 +347,7 @@ function function_39364bed() {
     str_next_defend = array::random(array(#"billiards_room", #"cellar", #"library"));
     while (true) {
         zm_utility::function_11101458(str_next_defend);
-        wait(45);
+        wait 45;
         s_defend_area = zm_utility::function_a877cd10(str_next_defend);
         zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
         zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7);

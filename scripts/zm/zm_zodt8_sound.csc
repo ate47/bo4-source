@@ -84,7 +84,7 @@ function soundloopthink() {
 // Checksum 0xf413fe2, Offset: 0x458
 // Size: 0x34
 function function_a6e35dcd() {
-    wait(3);
+    wait 3;
     audio::playloopat("amb_iceberg_cracking_loop", (-863, 5324, 1451));
 }
 

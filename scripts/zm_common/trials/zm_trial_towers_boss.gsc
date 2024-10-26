@@ -52,7 +52,7 @@ function __init__() {
 function private on_begin(var_6325d314, var_52b8b3a2, n_time) {
     level flag::clear(#"spawn_zombies");
     callback::on_spawned(&zm_towers_main_quest::function_d4e923e7);
-    wait(10);
+    wait 10;
     level thread scene::play(#"p8_fxanim_zm_towers_boss_arena_gate_raise_bundle", "Shot 3");
     level thread function_353ea592();
 }
@@ -79,7 +79,7 @@ function private function_353ea592() {
     level flag::clear(#"pause_round_timeout");
     level.zombie_total = 0;
     level thread zm_utility::function_9ad5aeb1(0, 1, 1, 0);
-    wait(5);
+    wait 5;
     level notify(#"kill_round");
     level notify(#"kill_round_wait");
 }
@@ -111,7 +111,7 @@ function private function_8318a404() {
     }
     level thread lui::screen_flash(0.5, 2, 1, 1, (1, 1, 1));
     level thread zm_utility::function_9ad5aeb1(0, 1, 1, 0);
-    wait(1);
+    wait 1;
     var_ff91be3a = struct::get_array("s_zm_towers_port_to_boss", "targetname");
     var_a10268d3 = getplayers();
     for (i = 0; i < var_a10268d3.size; i++) {
@@ -128,7 +128,7 @@ function private function_8318a404() {
 function private boss_fight() {
     self notify("4b6131952d06894a");
     self endon("4b6131952d06894a");
-    wait(5);
+    wait 5;
     zm_towers_crowd::function_5c1184e(0);
     zm_towers_crowd::function_aec5ec5a(1);
     level.var_9a992b09 = 1;
@@ -157,7 +157,7 @@ function private boss_fight() {
     array::thread_all(level.players, &function_3d487e02);
     e_elephant = spawner::simple_spawn_single(sp_spawner, &function_f9da4403, var_47312393, #"hash_266f53fb994e6120");
     while (!isdefined(e_elephant.ai.riders) || e_elephant.ai.riders.size < 2) {
-        wait(0.1);
+        wait 0.1;
     }
     level util::delay(2, undefined, &clientfield::set, "crowd_react_boss", 1);
     level.var_27d781ea = 1;
@@ -232,7 +232,7 @@ function private function_92e1954c() {
     while (true) {
         level waittill(#"hash_3aa3137f1bf70773");
         level.var_49328379 = 1;
-        wait(30);
+        wait 30;
         level.var_49328379 = 0;
     }
 }
@@ -248,7 +248,7 @@ function private function_4d682898() {
     while (true) {
         level waittill(#"basket_hit");
         level.var_8b66546e = 1;
-        wait(30);
+        wait 30;
         level.var_8b66546e = 0;
     }
 }
@@ -301,7 +301,7 @@ function private function_dd2db3df() {
     }
     if (isdefined(tower)) {
         tower thread scene::play();
-        wait(scene::function_12479eba(#"p8_fxanim_zm_towers_boss_arena_tower_entrance_bundle"));
+        wait scene::function_12479eba(#"p8_fxanim_zm_towers_boss_arena_tower_entrance_bundle");
         if (isdefined(level.boss_entry_tower_remains)) {
             level.boss_entry_tower_remains show();
         }
@@ -317,7 +317,7 @@ function private function_95785950(var_c625106d, var_86163b89, n_stage, var_39ac
     self endon("683195b7da79b6b9");
     level endon(#"end_game", #"boss_battle_done");
     while (true) {
-        wait(var_c625106d);
+        wait var_c625106d;
         if (isdefined(var_86163b89) && var_86163b89) {
             continue;
         }

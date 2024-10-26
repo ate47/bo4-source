@@ -140,7 +140,7 @@ function stoppoisoningandflareonspawn() {
 function spawnplayerprediction() {
     self endon(#"disconnect", #"end_respawn", #"game_ended", #"joined_spectators", #"spawned");
     while (true) {
-        wait(0.5);
+        wait 0.5;
         if (isdefined(level.onspawnplayerunified) && getdvarint(#"scr_disableunifiedspawning", 0) == 0) {
             spawning::onspawnplayer_unified(1);
             continue;
@@ -336,7 +336,7 @@ function forcespawn(time) {
     if (!isdefined(time)) {
         time = 60;
     }
-    wait(time);
+    wait time;
     if (isdefined(self.hasspawned) && self.hasspawned) {
         return;
     }
@@ -449,7 +449,7 @@ function spawnintermission(usedefaultcallback) {
             }
             self closeingamemenu();
             for (waittime = 4; waittime; waittime -= 0.25) {
-                wait(0.25);
+                wait 0.25;
             }
         }
     }

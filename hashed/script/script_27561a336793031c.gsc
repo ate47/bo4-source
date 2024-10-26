@@ -69,7 +69,7 @@ function private function_13db986c(var_53c7b205) {
         if (isalive(self) && !self laststand::player_is_in_laststand()) {
             self dodamage(var_53c7b205, self.origin);
         }
-        wait(1);
+        wait 1;
     }
 }
 

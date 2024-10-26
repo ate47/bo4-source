@@ -230,7 +230,7 @@ function private monitor_objective(s_challenge, a_weapons) {
     foreach (n_objective_id in s_challenge.a_n_objective_ids) {
         objective_setinvisibletoplayer(n_objective_id, self);
     }
-    wait(12);
+    wait 12;
     while (true) {
         foreach (weapon in a_weapons) {
             weapon_upgraded = zm_weapons::get_upgrade_weapon(weapon);

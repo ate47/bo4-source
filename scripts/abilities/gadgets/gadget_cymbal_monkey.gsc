@@ -210,7 +210,7 @@ function function_127fb8f3(cymbal_monkey, attackingplayer) {
     if (isdefined(level._equipment_emp_destroy_fx)) {
         playfx(level._equipment_emp_destroy_fx, cymbal_monkey.origin + (0, 0, 5), (cos(randangle), sin(randangle), 0), anglestoup(cymbal_monkey.angles));
     }
-    wait(1.1);
+    wait 1.1;
     playfx(#"hash_65c5042becfbaa7d", cymbal_monkey.origin);
     cymbal_monkey function_4f90c4c2();
 }

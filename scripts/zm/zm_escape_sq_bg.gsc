@@ -113,7 +113,7 @@ function sq_bg_macguffin_think() {
 function wait_and_hide_sq_bg_macguffin() {
     self notify(#"restart_show_timer");
     self endon(#"restart_show_timer", #"caught_by_tomahawk", #"sq_bg_macguffin_received_by_player", #"death");
-    wait(1.6);
+    wait 1.6;
     if (isdefined(self)) {
         self ghost();
     }
@@ -185,7 +185,7 @@ function check_sq_bg_progress() {
             e_player thread play_sq_bg_collected_vo();
         }
     }
-    wait(1);
+    wait 1;
     if (isplayer(e_player)) {
         e_player playsound(#"zmb_easteregg_laugh");
     }
@@ -197,7 +197,7 @@ function check_sq_bg_progress() {
 // Size: 0x44
 function play_sq_bg_collected_vo() {
     self endon(#"disconnect");
-    wait(1);
+    wait 1;
     self thread zm_utility::do_player_general_vox("quest", "pick_up_easter_egg");
 }
 
@@ -222,7 +222,7 @@ function give_sq_bg_reward(var_dd7441ab) {
                         self setinvisibletoplayer(e_active_player, 1);
                     }
                 }
-                wait(3);
+                wait 3;
                 foreach (e_active_player in level.activeplayers) {
                     self setvisibletoplayer(e_active_player);
                     if (function_8b1a219a()) {
@@ -248,7 +248,7 @@ function give_sq_bg_reward(var_dd7441ab) {
 function private function_d61275a7() {
     self clientfield::set("" + #"bg_spawn_fx", 0);
     self ghost();
-    wait(5);
+    wait 5;
     self delete();
 }
 
@@ -262,7 +262,7 @@ function sq_bg_spawn_rumble() {
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator)) {
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

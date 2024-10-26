@@ -144,7 +144,7 @@ function watchspikelauncheritemcountchanged(watcher) {
                 self setcontrolleruimodelvalue("spikeLauncherCounter.spikesReady", currentitemcount);
                 lastitemcount = currentitemcount;
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -157,7 +157,7 @@ function spikesdetonating(watcher) {
     spikecount = getspikelauncheractivespikecount(watcher);
     if (spikecount > 0) {
         self setcontrolleruimodelvalue("spikeLauncherCounter.blasting", 1);
-        wait(2);
+        wait 2;
         self setcontrolleruimodelvalue("spikeLauncherCounter.blasting", 0);
     }
 }
@@ -329,7 +329,7 @@ function delayedspikedetonation(attacker, weapon) {
     owner = self.owner;
     self.owner.spikedelay += 0.3;
     waittillframeend();
-    wait(delaytime);
+    wait delaytime;
     owner.spikedelay -= 0.3;
     if (isdefined(self)) {
         self weapondetonate(attacker, weapon);
@@ -376,7 +376,7 @@ function onspawncrossbowbolt(watcher, player) {
 function onspawncrossbowbolt_internal(watcher, player) {
     player endon(#"disconnect");
     self endon(#"death");
-    wait(0.25);
+    wait 0.25;
     linkedent = self getlinkedent();
     if (!isdefined(linkedent) || !isvehicle(linkedent)) {
         self.takedamage = 0;

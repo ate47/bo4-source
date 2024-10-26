@@ -106,9 +106,9 @@ function private function_8656d7d1(localclientnum) {
 function function_c98e67ae(localclientnum) {
     self notify("3ae575e255539f29");
     self endon("3ae575e255539f29");
-    wait(10);
+    wait 10;
     while (true) {
-        wait(0.2);
+        wait 0.2;
         players = getplayers(localclientnum);
         var_f3108b8 = function_5c10bd79(localclientnum);
         foreach (player in players) {

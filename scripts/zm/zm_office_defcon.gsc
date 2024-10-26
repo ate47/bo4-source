@@ -181,7 +181,7 @@ function play_defcon5_alarms() {
     foreach (var_745f7c4 in var_674c8f1b) {
         var_745f7c4 stoploopsound(0.5);
     }
-    wait(1);
+    wait 1;
     array::delete_all(var_674c8f1b);
 }
 
@@ -208,7 +208,7 @@ function start_defcon_countdown() {
     level notify(#"defcon_activated");
     level.defcon_countdown_time = 30;
     while (level.defcon_level > 1) {
-        wait(level.defcon_countdown_time / 4);
+        wait level.defcon_countdown_time / 4;
         level.defcon_level--;
         level thread defcon_sign_lights();
     }
@@ -229,7 +229,7 @@ function special_pack_time_spawning() {
         point.is_enabled = 0;
     }
     while (level.defcon_level >= 3) {
-        wait(0.1);
+        wait 0.1;
     }
     foreach (point in level.var_f0ff37fe) {
         point.is_enabled = 1;
@@ -245,7 +245,7 @@ function defcon_pack_poi() {
     players = getplayers();
     poi1 = getent("pack_room_poi1", "targetname");
     poi2 = getent("pack_room_poi2", "targetname");
-    wait(0.5);
+    wait 0.5;
     num_players = zm_zonemgr::get_players_in_zone(zone_name);
     if (num_players == players.size) {
         if (level.zones[#"war_room_zone_south"].is_enabled) {
@@ -258,7 +258,7 @@ function defcon_pack_poi() {
     }
     while (num_players >= players.size && level flag::get("defcon_active")) {
         num_players = zm_zonemgr::get_players_in_zone(zone_name);
-        wait(0.1);
+        wait 0.1;
     }
     poi1 zm_utility::deactivate_zombie_point_of_interest();
     poi2 zm_utility::deactivate_zombie_point_of_interest();
@@ -319,9 +319,9 @@ function pack_door_init() {
         }
         var_ae0ee842 = 1;
         level flag::wait_till_clear("defcon_active");
-        wait(0.1);
+        wait 0.1;
         while (!is_packroom_clear()) {
-            wait(0.1);
+            wait 0.1;
         }
         if (var_ae0ee842 == 1) {
             for (i = 0; i < doors.size; i++) {
@@ -361,7 +361,7 @@ function pack_hideaway_init() {
         hideaway waittill(#"movedone");
         hideaway stoploopsound(1);
         hideaway playsound("evt_packapunch_revolve_end");
-        wait(40);
+        wait 40;
         hideaway movez(116 * -1, 2.5);
         hideaway playsound("evt_packapunch_revolve_start");
         hideaway playloopsound("evt_packapunch_revolve_loop");
@@ -415,7 +415,7 @@ function pack_door_solid_thread() {
             self disconnectpaths();
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -436,7 +436,7 @@ function function_cacd3270() {
     function function_d2f6cecb() {
         if (!level flag::get("<dev string:x38>")) {
             level flag::set("<dev string:x38>");
-            wait(1);
+            wait 1;
         }
         level.defcon_level = 5;
         if (level.zombie_vars[#"zombie_powerup_bonfire_sale_on"] == 0 || !level flag::get("<dev string:x43>")) {

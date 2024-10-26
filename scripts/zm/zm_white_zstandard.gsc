@@ -77,7 +77,7 @@ function init_level_vars() {
 // Checksum 0x5bfd3318, Offset: 0xca0
 // Size: 0x2c
 function function_43240e81() {
-    wait(1);
+    wait 1;
     clientfield::set("portal_maps_init", 1);
 }
 
@@ -139,7 +139,7 @@ function defend_areas() {
     level thread function_b4cae8b9();
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(25);
+    wait 25;
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level flag::set(#"hash_50990d5b9376f50d");
     level flag::set(#"power_on1");
@@ -164,21 +164,21 @@ function defend_areas() {
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(25);
+    wait 25;
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level flag::set(#"pap_power_ready");
     level registerlast_truck_headshot_();
     zm_utility::function_fef4b36a(str_next_defend);
     str_next_defend = #"power_room";
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
-    wait(10);
+    wait 10;
     var_420e4589 = array("bunker_beds_to_bunker_power_debris");
     level zm_utility::open_door(var_420e4589, undefined, undefined, 1);
     zm_round_spawning::function_306ce518(#"nova_crawler", &intro_nova_crawler);
     level thread function_bee94926();
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(25);
+    wait 25;
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level flag::set("power_on3");
     level flag::set("bunker_power_event");
@@ -211,7 +211,7 @@ function defend_areas() {
     level thread function_5554ed4b();
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(25);
+    wait 25;
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level flag::set(#"hash_3bb140702c2b1323");
     zm_utility::function_fef4b36a(str_next_defend);
@@ -266,7 +266,7 @@ function function_c87db3f7(str_next_defend) {
     level.s_portal_power thread zm_white_portals::disable_teleporter();
     level.s_portal_street_mid thread zm_white_portals::disable_teleporter();
     level waittill(#"hash_7a04a7fb98fa4e4d");
-    wait(2);
+    wait 2;
     level.s_portal_power thread zm_white_portals::reenable_teleporter();
     level.s_portal_street_mid thread zm_white_portals::reenable_teleporter();
 }
@@ -423,7 +423,7 @@ function function_a39e7a56() {
                 n_delay = isdefined(zombie_utility::get_zombie_var(#"zombie_spawn_delay")) ? zombie_utility::get_zombie_var(#"zombie_spawn_delay") : zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5");
                 level.defend_spawns++;
             }
-            wait(n_delay);
+            wait n_delay;
             return true;
         }
     }
@@ -466,7 +466,7 @@ function function_466fb0ff(str_last_defend) {
     str_next_defend = zm_utility::function_40ef77ab(str_last_defend);
     for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); true; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
         util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-        wait(25);
+        wait 25;
         level thread function_c87db3f7();
         zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7);
         str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
@@ -480,13 +480,13 @@ function function_466fb0ff(str_last_defend) {
     // Checksum 0xd08ba7a7, Offset: 0x30a0
     // Size: 0x112
     function function_1dcc39ae() {
-        wait(5);
+        wait 5;
         str_next_defend = zm_utility::function_40ef77ab("<dev string:x5f>");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
         while (true) {
             zm_utility::function_11101458(str_next_defend);
-            wait(5);
+            wait 5;
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);
             str_previous_defend = str_next_defend;
             str_next_defend = zm_utility::function_40ef77ab(str_next_defend);

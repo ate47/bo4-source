@@ -73,7 +73,7 @@ function on_game_playing() {
     if (getdvarint(#"hash_1ee1f013d124a26a", 0)) {
         function_50059d86();
     }
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0.3));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0.3);
     if (getdvarint(#"hash_1ee1f013d124a26a", 1)) {
         level thread scene::skipto_end(#"p8_fxanim_mp_urban_building_open_bundle");
         var_968ca543 = struct::get("p8_fxanim_mp_urban_remote_tank_armor_test_bundle", "scriptbundlename");
@@ -147,7 +147,7 @@ function function_50059d86() {
 function function_d611b306() {
     self.script_play_multiple = 1;
     self.barrage = 1;
-    wait(randomfloatrange(8, 35));
+    wait randomfloatrange(8, 35);
     i = 0;
     while (self.barrage) {
         self scene::play();
@@ -156,7 +156,7 @@ function function_d611b306() {
             self.barrage = 0;
             break;
         }
-        wait(randomfloatrange(45, 200));
+        wait randomfloatrange(45, 200);
     }
 }
 
@@ -190,7 +190,7 @@ function function_c7fff230() {
         if (!self.var_f04c9969) {
             return;
         }
-        wait(180);
+        wait 180;
         self scene::play(self.scriptbundlename, "Shot 2");
         self scene::play(self.scriptbundlename, "Shot 1");
     }

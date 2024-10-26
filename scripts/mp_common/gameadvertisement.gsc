@@ -49,7 +49,7 @@ function sessionadvertisementcheck() {
     level endon(#"game_end");
     for (currentadvertisedstatus = undefined; true; currentadvertisedstatus = advertise) {
         sessionadvertcheckwait = getdvarint(#"sessionadvertcheckwait", 1);
-        wait(sessionadvertcheckwait);
+        wait sessionadvertcheckwait;
         advertise = [[ level.var_a962eeb6 ]]();
         if (!isdefined(currentadvertisedstatus) || isdefined(advertise) && currentadvertisedstatus != advertise) {
             println("<dev string:x38>" + (advertise ? "<dev string:x4d>" : "<dev string:x54>"));
@@ -258,7 +258,7 @@ function default_rules() {
         level.sessionadverthud_4a_text = "<dev string:x15e>";
         level.sessionadverthud_4b_text = "<dev string:x15e>";
         while (true) {
-            wait(1);
+            wait 1;
             showdebughud = getdvarint(#"sessionadvertshowdebughud", 0);
             level.sessionadverthud_0_text = "<dev string:x161>";
             if (level.sessionadvertstatus == 0) {

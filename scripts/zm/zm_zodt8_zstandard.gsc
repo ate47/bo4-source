@@ -203,7 +203,7 @@ function defend_areas() {
         level zm_utility::open_door("grand_stairs_suites_door", undefined, undefined, 1);
     }
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-    wait(15);
+    wait 15;
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
     zm_round_spawning::function_306ce518(#"stoker", &function_cb0be2c5);
     var_cec10eb3 = 20;
@@ -277,7 +277,7 @@ function function_466fb0ff() {
         } else if (str_next_defend == #"cargo_hold") {
             level thread zm_utility::open_door("cargo_hold_door", undefined, 10);
         }
-        wait(45);
+        wait 45;
         zm_zonemgr::function_8caa21df(var_679cd7a8.a_str_zones);
         zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7);
         var_55a36349 = 0;
@@ -298,13 +298,13 @@ function function_466fb0ff() {
         player = util::gethostplayer();
         player util::waittill_stance_button_pressed();
         zm_utility::function_92162963("<dev string:x7a>");
-        wait(0.5);
+        wait 0.5;
         player util::waittill_stance_button_pressed();
         zm_utility::function_92162963("<dev string:xa9>");
-        wait(0.5);
+        wait 0.5;
         player util::waittill_stance_button_pressed();
         zm_utility::function_92162963("<dev string:xd4>");
-        wait(0.5);
+        wait 0.5;
         player util::waittill_stance_button_pressed();
         zm_utility::function_92162963("<dev string:xf7>");
     }
@@ -314,13 +314,13 @@ function function_466fb0ff() {
     // Checksum 0x24039e20, Offset: 0x1b10
     // Size: 0x112
     function function_1dcc39ae() {
-        wait(5);
+        wait 5;
         str_next_defend = zm_utility::function_40ef77ab("<dev string:x123>");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
         while (true) {
             zm_utility::function_11101458(str_next_defend);
-            wait(5);
+            wait 5;
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);
             str_previous_defend = str_next_defend;
             str_next_defend = zm_utility::function_40ef77ab(str_next_defend);

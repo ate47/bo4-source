@@ -82,7 +82,7 @@ function private function_889abd74() {
         }
         if (var_9faecc20 && !(isdefined(self.var_30f75b88) && self.var_30f75b88) && isalive(self) && !self laststand::player_is_in_laststand() && n_distance > 200) {
             self dodamage(2, self.origin);
-            wait(1);
+            wait 1;
         }
         waitframe(1);
         if (var_da67715 > 0) {
@@ -97,7 +97,7 @@ function private function_889abd74() {
 // Size: 0x5a0
 function private function_eb301e1b() {
     level endon(#"hash_7646638df88a3656");
-    wait(randomintrange(0, 3));
+    wait randomintrange(0, 3);
     var_c98c4943 = array::random(array("monkey_loc", "bull_loc", "dl_loc"));
     nd_start = getvehiclenode(var_c98c4943 + "_trail_start_node", "targetname");
     level.e_ghost = util::spawn_model("tag_origin", nd_start.origin, nd_start.angles);
@@ -118,7 +118,7 @@ function private function_eb301e1b() {
         level.e_ghost linkto(level.e_ghost.e_mover);
         level.e_ghost.e_mover thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.e_ghost);
         level.e_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.e_ghost.mdl_head);
-        wait(5);
+        wait 5;
         var_c98c4943 = array::random(array("monkey_loc", "bull_loc", "dl_loc"));
         nd_start = getvehiclenode(var_c98c4943 + "_trail_start_node", "targetname");
         level.e_ghost.e_mover thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.e_ghost);
@@ -128,7 +128,7 @@ function private function_eb301e1b() {
         level.e_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_walk_01", level.e_ghost.mdl_head);
         level.e_ghost.e_mover moveto(nd_start.origin, 20);
         level.e_ghost.e_mover rotateto(nd_start.angles, 20);
-        wait(20);
+        wait 20;
         stop_timers();
         level.e_ghost.e_mover scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");
         level.e_ghost scene::stop(#"aib_vign_zm_mnsn_ghost_walk_01");

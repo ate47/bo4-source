@@ -246,10 +246,10 @@ function private function_d58cd2d5(localclientnum) {
     var_2d81ef5f = array::randomize(var_2d81ef5f);
     var_4423d870 = var_2d81ef5f[0] + (0, 0, randomfloatrange(0.4, 0.8));
     e_clavicle = createdynentandlaunch(localclientnum, "c_t8_zmb_titanic_stoker_clavicle1_gibbed", var_659c63b, var_ff623659, var_659c63b, var_4423d870 * randomfloatrange(0.6, 1.2));
-    wait(0.1);
+    wait 0.1;
     var_4423d870 = var_2d81ef5f[1] + (0, 0, randomfloatrange(0.4, 0.8));
     e_arm = createdynentandlaunch(localclientnum, "c_t8_zmb_titanic_stoker_upperarm1_gibbed", var_99625f1a, var_cf1365cd, var_99625f1a, var_4423d870 * randomfloatrange(0.6, 1.2));
-    wait(0.1);
+    wait 0.1;
     var_4423d870 = var_2d81ef5f[2] + (0, 0, randomfloatrange(0.4, 0.8));
     e_boot = createdynentandlaunch(localclientnum, "c_t8_zmb_titanic_stoker_boot1_gibbed", var_11fd1705, var_741c873, var_11fd1705, var_4423d870 * randomfloatrange(0.6, 1.2));
 }

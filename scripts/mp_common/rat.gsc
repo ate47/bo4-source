@@ -64,7 +64,7 @@
         }
         bot thread testenemy(team);
         bot thread deathcounter();
-        wait(2);
+        wait 2;
         pos = (float(params.x), float(params.y), float(params.z));
         bot setorigin(pos);
         if (isdefined(params.ax)) {

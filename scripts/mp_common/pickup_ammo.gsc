@@ -117,7 +117,7 @@ function private function_7a80944d(player) {
     level endon(#"game_ended");
     self endon(#"death");
     player endon(#"disconnect");
-    wait(isdefined(level.pickup_respawn_time) ? level.pickup_respawn_time : 0);
+    wait isdefined(level.pickup_respawn_time) ? level.pickup_respawn_time : 0;
     if (isdefined(self.objectiveid)) {
         objective_setvisibletoplayer(self.objectiveid, player);
     }

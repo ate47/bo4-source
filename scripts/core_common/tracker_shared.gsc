@@ -143,7 +143,7 @@ function function_a7e7bda0() {
                 player.var_7241f6e3 = undefined;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

@@ -136,7 +136,7 @@ function function_29aabbb3() {
     wait_time = 0;
     self.var_46c276a4 = 1;
     while (!isdefined(self.favoriteenemy)) {
-        wait(1);
+        wait 1;
         wait_time++;
         if (wait_time > 5) {
             self zm_cleanup::do_cleanup_check(0);
@@ -161,7 +161,7 @@ function function_fa5d232f() {
         } else {
             var_906c0a07 = self.goalradius;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

@@ -445,7 +445,7 @@ function givelastattackerwarning(team) {
         } else {
             fullhealthtime += interval;
         }
-        wait(interval);
+        wait interval;
         if (self.health == self.maxhealth && fullhealthtime >= 3) {
             break;
         }
@@ -855,7 +855,7 @@ function bombplantedmusicdelay() {
         }
     #/
     if (time > 1) {
-        wait(time);
+        wait time;
         thread globallogic_audio::set_music_on_team("timeOutQuiet");
     }
 }
@@ -990,7 +990,7 @@ function bombplanted(destroyedobj, player) {
     if (isdefined(level.var_81536c1d) && level.var_81536c1d) {
         return;
     }
-    wait(3);
+    wait 3;
     globallogic::function_a3e3bd39(game.attackers, 1);
 }
 
@@ -1021,7 +1021,7 @@ function bombdefused(defusedobject, player) {
     if (isdefined(level.var_81536c1d) && level.var_81536c1d) {
         return;
     }
-    wait(1.5);
+    wait 1.5;
     setgameendtime(0);
     globallogic::function_a3e3bd39(game.defenders, 11);
 }
@@ -1031,7 +1031,7 @@ function bombdefused(defusedobject, player) {
 // Checksum 0x61d51f61, Offset: 0x4f20
 // Size: 0x64
 function private set_ui_team() {
-    wait(0.05);
+    wait 0.05;
     if (game.attackers == #"allies") {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
         return;

@@ -163,7 +163,7 @@ function function_8ba3d474(var_a276c861) {
         level.a_cachinas val::set("yellow_snowball_quest", "allowDeath", 0);
         level.a_cachinas thread function_f77c5d83();
         while (level.var_c2dce33e > 0) {
-            wait(1);
+            wait 1;
         }
     }
 }
@@ -335,7 +335,7 @@ function function_cf298764() {
                 is_done = 1;
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -466,7 +466,7 @@ function function_68789b17() {
         } else {
             level.var_74f3565a += 0.1;
         }
-        wait(0.1);
+        wait 0.1;
     }
     level notify(#"hash_4e1c4cd8c0b0a609");
     level.var_733d6b98 clientfield::set_to_player("spleen_carry_sound", 0);
@@ -514,7 +514,7 @@ function function_b4b483e7() {
                 iprintlnbold("<dev string:xc9>");
             }
         #/
-        wait(2.5);
+        wait 2.5;
     }
 }
 
@@ -542,7 +542,7 @@ function function_17567d83() {
         } else {
             n_wait_time = 1.5;
         }
-        wait(n_wait_time);
+        wait n_wait_time;
     }
 }
 

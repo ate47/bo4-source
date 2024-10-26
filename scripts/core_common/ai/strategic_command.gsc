@@ -628,7 +628,7 @@ function private _debuggameobjects() {
     }
 
     // Namespace strategiccommandutility/strategic_command
-    // Params 4, eflags: 0x24
+    // Params 4, eflags: 0x24 variadic
     // Checksum 0x6f4b725b, Offset: 0x32b8
     // Size: 0xdc
     function private function_15462dcd(pos, color, channel, ...) {

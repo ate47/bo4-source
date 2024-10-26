@@ -84,7 +84,7 @@ function force_stream_changed(localclientnum, oldval, newval, bnewent, binitials
 // Size: 0x4c
 function stream_model_for_time(localclientnum, model, time) {
     util::lock_model(model);
-    wait(time);
+    wait time;
     util::unlock_model(model);
 }
 

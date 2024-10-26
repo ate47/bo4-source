@@ -2808,11 +2808,11 @@ function private robotgivewasp(entity) {
 // Size: 0x136
 function private robotdeploywasp(entity) {
     entity endon(#"death");
-    wait(randomfloatrange(7, 10));
+    wait randomfloatrange(7, 10);
     if (isdefined(entity) && isdefined(entity.wasp)) {
         spawnoffset = (5, -15, 0);
         while (!ispointinnavvolume(entity.wasp.origin + spawnoffset, "small volume")) {
-            wait(1);
+            wait 1;
         }
         entity.wasp unlink();
         wasp = spawnvehicle("spawner_bo3_wasp_enemy", entity.wasp.origin + spawnoffset, (0, 0, 0));
@@ -2827,7 +2827,7 @@ function private robotdeploywasp(entity) {
 // Size: 0x4c
 function private rapsdetonatecountdown(entity) {
     entity endon(#"death");
-    wait(randomfloatrange(20, 30));
+    wait randomfloatrange(20, 30);
     raps::detonate();
 }
 

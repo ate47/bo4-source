@@ -31,7 +31,7 @@ function function_2602ff58(localclientnum, oldval, newval, bnewent, binitialsnap
     self endon(#"death");
     self playrenderoverridebundle(#"hash_1d387211bf187bab");
     util::playfxontag(localclientnum, level._effect[#"hash_41c6282937fa564d"], self, "j_spinelower");
-    wait(0.55);
+    wait 0.55;
     util::playfxontag(localclientnum, level._effect[#"hash_41c6282937fa564d"], self, "j_spinelower");
     util::playfxontag(localclientnum, level._effect[#"hash_537eedf1dffba786"], self, "j_spinelower");
     util::playfxontag(localclientnum, level._effect[#"hash_41c6282937fa564d"], self, "j_head");

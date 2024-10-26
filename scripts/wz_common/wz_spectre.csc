@@ -52,7 +52,7 @@ function function_14430aff(localclientnum, oldval, newval, bnewent, binitialsnap
         }
     }
     self thread function_49c88376(localclientnum, newval);
-    wait(0.5);
+    wait 0.5;
     if (self function_d2503806(#"hash_79bdfb09e317953")) {
         if (self ishidden()) {
             self function_f6e99a8d(#"hash_79bdfb09e317953");
@@ -74,13 +74,13 @@ function function_14430aff(localclientnum, oldval, newval, bnewent, binitialsnap
 function private function_49c88376(localclientnum, value) {
     self endon(#"death");
     if (!value && function_5c10bd79(localclientnum) == self) {
-        wait(0.3);
+        wait 0.3;
         if (self hasdobj(localclientnum)) {
             playtagfxset(localclientnum, "tagfx8_plyr_spectre_transformation_wz_1p", self);
         }
         return;
     }
-    wait(0.1);
+    wait 0.1;
     if (self hasdobj(localclientnum)) {
         playtagfxset(localclientnum, "tagfx8_plyr_spectre_transformation_wz_3p", self);
     }

@@ -1226,7 +1226,7 @@ function private function_f5f699aa() {
     function update_dvars() {
         while (true) {
             level.stokerdebug = getdvarint(#"scr_stokerdebug", 0);
-            wait(1);
+            wait 1;
         }
     }
 

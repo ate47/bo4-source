@@ -135,13 +135,13 @@ function knock_brazier_setup(b_skipped) {
 // Checksum 0x9fa98775, Offset: 0x1280
 // Size: 0x204
 function knock_brazier_cleanup(b_skipped, var_19e802fa) {
-    wait(0.05);
+    wait 0.05;
     level.var_1285519 clientfield::set("" + #"hash_42cc4bf5e47478c5", 0);
     level.var_1285519 clientfield::set("" + #"hash_3b746cf6eec416b2", 1);
     level scene::play("p8_fxanim_zm_towers_ww_quest_bowl_bundle");
     level clientfield::set("" + #"hash_584e8f7433246444", 1);
     level flag::set(#"hash_17f15c9242ddea6f");
-    wait(1);
+    wait 1;
     switch (level.var_9f950fe2) {
     case #"danu":
         str_clientfield = "" + #"hash_418c1c843450232b";
@@ -391,9 +391,9 @@ function function_7ffb149d() {
 function function_a1e2245(b_skipped) {
     if (!b_skipped) {
         level flag::wait_till(#"hash_40f20925227353f4");
-        wait(2);
+        wait 2;
         level.var_ea8de547 clientfield::increment("" + #"ww_quest_melting");
-        wait(3);
+        wait 3;
     }
 }
 
@@ -618,7 +618,7 @@ function function_a616131a(b_skipped) {
     mdl_jar notsolid();
     mdl_jar clientfield::set("" + #"hash_2c6f04d08665dbda", 1);
     n_time = mdl_jar zm_utility::fake_physicslaunch(var_8fa68ef.origin, 1000);
-    wait(n_time);
+    wait n_time;
     mdl_jar.origin = var_8fa68ef.origin;
     mdl_jar.angles = var_8fa68ef.angles;
     mdl_jar clientfield::set("" + #"hash_2a332df32456c86f", 1);
@@ -697,7 +697,7 @@ function function_8c32234c(b_skipped, var_19e802fa) {
 function function_336ee69f() {
     level endon(#"end_game");
     self endon(#"death");
-    wait(3);
+    wait 3;
     self clientfield::increment("" + #"hash_48ad84f9cf6a33f0");
 }
 

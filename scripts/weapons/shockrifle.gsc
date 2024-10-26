@@ -114,7 +114,7 @@ function function_c1aa8f6b(watcher) {
 function function_a0081b68(ent) {
     self endon(#"death");
     ent waittill(#"death");
-    wait(level.var_a5ff950.var_e6dccd20);
+    wait level.var_a5ff950.var_e6dccd20;
     self function_7ce0a335(undefined, undefined, undefined);
 }
 
@@ -144,7 +144,7 @@ function function_aa6e2f52(watcher, owner) {
         self function_92eabc2f(waitresult.hitent, 1);
     }
     playfxontag("weapon/fx8_hero_sig_shockrifle_spike_active", self, "tag_fx");
-    wait(isdefined(level.var_a5ff950.var_aded392d) ? level.var_a5ff950.var_aded392d : 0);
+    wait isdefined(level.var_a5ff950.var_aded392d) ? level.var_a5ff950.var_aded392d : 0;
     if (isdefined(waitresult.hitent) && isdefined(owner) && util::function_fbce7263(waitresult.hitent.team, owner.team)) {
         self thread function_5fff8c45(watcher, waitresult.hitent);
     }
@@ -349,7 +349,7 @@ function function_c80bac1f(shockcharge, var_51415470, shockduration) {
     self setstance("crouch");
     self disableweaponcycling();
     firstraisetime = isdefined(shocked_hands.firstraisetime) ? shocked_hands.firstraisetime : 1;
-    wait(firstraisetime);
+    wait firstraisetime;
     self allowcrouch(1);
     self allowprone(0);
     self allowstand(0);
@@ -367,7 +367,7 @@ function function_c80bac1f(shockcharge, var_51415470, shockduration) {
             scoreevents::processscoreevent(#"tempest_shock_chain", owner, self, level.shockrifleweapon);
         }
     }
-    wait(shockduration);
+    wait shockduration;
     if (isdefined(self)) {
         self notify(#"hash_16c7de1837351e82");
     }
@@ -471,7 +471,7 @@ function function_7ce0a335(attacker, weapon, target) {
     self ghost();
     self notsolid();
     self stoploopsound(0.5);
-    wait(level.var_a5ff950.shockduration + 1);
+    wait level.var_a5ff950.shockduration + 1;
     self delete();
 }
 
@@ -480,7 +480,7 @@ function function_7ce0a335(attacker, weapon, target) {
 // Checksum 0x36770ae3, Offset: 0x1de8
 // Size: 0x24
 function function_1c34cd1b(object) {
-    wait(5);
+    wait 5;
     object delete();
 }
 

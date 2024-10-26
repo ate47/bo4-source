@@ -24,7 +24,7 @@ function turret_microwave_sound_start(localclientnum) {
         return;
     }
     self playsound(0, #"wpn_micro_turret_start");
-    wait(0.7);
+    wait 0.7;
     origin = self gettagorigin("tag_flash");
     angles = self gettagangles("tag_flash");
     forward = anglestoforward(angles);
@@ -77,7 +77,7 @@ function turret_microwave_sound_updater() {
             self.microwave_audio_end = trace[#"position"];
             soundupdatelineemitter(#"wpn_micro_turret_loop", previousstart, previousend, self.microwave_audio_start, self.microwave_audio_end);
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -153,7 +153,7 @@ function startmicrowavefx(localclientnum) {
     microwavefxent.fxhashs = [];
     self thread updatemicrowaveaim(microwavefxent);
     self thread cleanupfx(localclientnum, microwavefxent);
-    wait(0.3);
+    wait 0.3;
     while (true) {
         /#
             if (getdvarint(#"scr_microwave_turret_fx_debug", 0)) {
@@ -162,7 +162,7 @@ function startmicrowavefx(localclientnum) {
             }
         #/
         if (turret.should_update_fx == 0) {
-            wait(1);
+            wait 1;
             continue;
         }
         if (isdefined(level.last_microwave_turret_fx_trace) && level.last_microwave_turret_fx_trace == gettime()) {
@@ -190,13 +190,13 @@ function startmicrowavefx(localclientnum) {
         need_to_rebuild |= microwavefxent microwavefxhash(traceleft, origin, "left");
         level.last_microwave_turret_fx_trace = gettime();
         if (!need_to_rebuild) {
-            wait(1);
+            wait 1;
             continue;
         }
-        wait(0.1);
+        wait 0.1;
         microwavefxent playmicrowavefx(localclientnum, trace, traceright, traceleft, origin);
         turret.should_update_fx = 0;
-        wait(1);
+        wait 1;
     }
 }
 
@@ -215,7 +215,7 @@ function updatemicrowaveaim(microwavefxent) {
             turret.should_update_fx = 1;
             last_angles = angles;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

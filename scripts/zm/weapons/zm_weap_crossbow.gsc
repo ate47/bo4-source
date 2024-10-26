@@ -276,7 +276,7 @@ function function_615d8c38(params) {
 function function_6119da66() {
     self endon(#"death");
     self.var_410503e = 1;
-    wait(1);
+    wait 1;
     self.var_410503e = undefined;
 }
 
@@ -535,7 +535,7 @@ function function_e1c4ab06(params) {
         var_832a6071 = 0;
         n_time = 5;
     }
-    wait(0.5);
+    wait 0.5;
     while (n_time > 0 && isalive(self) && isdefined(self.var_2c2980d3) && self.var_2c2980d3) {
         level.var_7cfd8159 = array::remove_dead(level.var_7cfd8159);
         a_zombies = array::exclude(getaiteamarray(level.zombie_team), level.var_7cfd8159);
@@ -562,7 +562,7 @@ function function_e1c4ab06(params) {
                         ai clientfield::set("" + #"hash_690509b9a2ec2ef3", 1);
                         ai function_9fa5e527(5);
                     }
-                    wait(0.05);
+                    wait 0.05;
                 }
                 /#
                     if (isalive(ai) && !isdefined(ai.maxhealth) && isdefined(ai.archetype)) {
@@ -583,7 +583,7 @@ function function_e1c4ab06(params) {
         if (!isalive(self) || !(isdefined(self.var_2c2980d3) && self.var_2c2980d3)) {
             break;
         }
-        wait(1);
+        wait 1;
         n_time -= 1;
     }
     a_zombies = array::exclude(getaiteamarray(level.zombie_team), level.var_7cfd8159);

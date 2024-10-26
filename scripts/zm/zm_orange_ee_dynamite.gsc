@@ -178,7 +178,7 @@ function function_168f686b(e_holder, w_item) {
     } else {
         b_silent = 1;
     }
-    wait(1);
+    wait 1;
     if (b_silent) {
         zm_audio::function_6191af93(#"component_pickup", #"dynamite", #"component_pickup", #"silent", 100);
         zm_audio::function_6191af93(#"component_pickup", #"bomb_part", #"component_pickup", #"silent", 100);
@@ -280,7 +280,7 @@ function function_e58f823f() {
             self thread function_87f8b232();
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -412,23 +412,23 @@ function function_2e1427a3() {
     /#
         iprintln("<dev string:x53>");
     #/
-    wait(1);
+    wait 1;
     /#
         iprintln("<dev string:x53>");
     #/
-    wait(1);
+    wait 1;
     /#
         iprintln("<dev string:x53>");
     #/
-    wait(1);
+    wait 1;
     e_bomb clientfield::increment("" + #"dynamite_explosion_fx", 1);
     level function_d8f300c3(self.origin);
     playsoundatposition(#"hash_2b694b905abf1892", e_bomb.origin);
     e_bomb playrumbleonentity("zm_orange_dynamite_bomb_explosion");
-    wait(0.1);
+    wait 0.1;
     e_bomb hide();
     self notify(#"hash_126c823a82e09010");
-    wait(2.5);
+    wait 2.5;
     e_bomb delete();
 }
 

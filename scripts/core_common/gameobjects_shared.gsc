@@ -136,7 +136,7 @@ class cinteractobj {
                     break;
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -1138,7 +1138,7 @@ function pickup_object_delay(origin) {
         if (distancesquared(self.origin, origin) > 4096) {
             break;
         }
-        wait(0.2);
+        wait 0.2;
     }
     self.canpickupobject = 1;
 }
@@ -1265,7 +1265,7 @@ function give_object(object) {
         count = 0;
         while (self ismeleeing() && count < 10) {
             count++;
-            wait(0.2);
+            wait 0.2;
         }
         self giveweapon(object.carryweapon);
         if (self isswitchingweapons()) {
@@ -1665,7 +1665,7 @@ function pickup_timeout(minz, maxz) {
         return;
     }
     if (isdefined(self.autoresettime)) {
-        wait(self.autoresettime);
+        wait self.autoresettime;
         if (!isdefined(self.carrier)) {
             self thread return_home();
         }
@@ -1735,7 +1735,7 @@ function take_object(object) {
 // Size: 0x8c
 function wait_take_carry_weapon(weapon) {
     self thread take_carry_weapon_on_death(weapon);
-    wait(max(0, weapon.firetime - 2 * float(function_60d95f53()) / 1000));
+    wait max(0, weapon.firetime - 2 * float(function_60d95f53()) / 1000);
     self take_carry_weapon(weapon);
 }
 
@@ -2671,7 +2671,7 @@ function check_gameobject_reenable() {
         }
         if (isdefined(self.b_auto_reenable) && self.b_auto_reenable) {
             self disable_object();
-            wait(1);
+            wait 1;
             self.e_object flag::clear("gameobject_end_use");
             self enable_object();
         } else {
@@ -3235,7 +3235,7 @@ function use_hold_think(player, disableweaponcyclingduringhold) {
 // Size: 0x74
 function waitthenfreezeplayercontrolsifgameendedstill(wait_time = 1) {
     player = self;
-    wait(wait_time);
+    wait wait_time;
     if (isdefined(player) && level.gameended) {
         player val::set(#"gameobjects_gameended", "freezecontrols", 1);
     }

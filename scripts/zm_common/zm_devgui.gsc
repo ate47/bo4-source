@@ -129,7 +129,7 @@
         while (true) {
             cmd = getdvar(#"zombie_devgui_hud", "<dev string:x38>");
             if (cmd == "<dev string:x38>") {
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
             if (strstartswith(cmd, "<dev string:x95>")) {
@@ -153,7 +153,7 @@
     // Size: 0x44
     function player_on_connect() {
         level flag::wait_till("<dev string:xa6>");
-        wait(1);
+        wait 1;
         if (isdefined(self)) {
             zombie_devgui_player_menu(self);
         }
@@ -219,7 +219,7 @@
                 if (ai.team != ai_spawner.team) {
                     ai.team = ai_spawner.team;
                 }
-                wait(0.5);
+                wait 0.5;
                 if (isvehicle(ai)) {
                     ai.origin = trace[#"position"];
                     ai function_a57c34b7(trace[#"position"]);
@@ -780,11 +780,11 @@
         zombie_devgui_open_sesame();
         setdvar(#"zombie_default_max", 0);
         zombie_devgui_goto_round(20);
-        wait(2);
+        wait 2;
         spawner = level.zombie_spawners[0];
         slums_station = (808, -1856, 544);
         enemy = zombie_utility::spawn_zombie(spawner, spawner.targetname);
-        wait(1);
+        wait 1;
         while (isdefined(enemy) && enemy.completed_emerging_into_playable_area !== 1) {
             waitframe(1);
         }
@@ -870,7 +870,7 @@
     function function_3b534f9c() {
         level.zombie_devgui_gun = getdvarstring(#"hash_1c9225f4f6e82068");
         for (;;) {
-            wait(0.1);
+            wait 0.1;
             cmd = getdvarstring(#"hash_1c9225f4f6e82068");
             if (isdefined(cmd) && cmd.size > 0) {
                 level.zombie_devgui_gun = cmd;
@@ -880,7 +880,7 @@
                 }
                 setdvar(#"hash_1c9225f4f6e82068", "<dev string:x38>");
             }
-            wait(0.1);
+            wait 0.1;
             cmd = getdvarstring(#"hash_1c9228f4f6e82581");
             if (isdefined(cmd) && cmd.size > 0) {
                 level.zombie_devgui_gun = cmd;
@@ -890,7 +890,7 @@
                 }
                 setdvar(#"hash_1c9228f4f6e82581", "<dev string:x38>");
             }
-            wait(0.1);
+            wait 0.1;
             cmd = getdvarstring(#"hash_1c9227f4f6e823ce");
             if (isdefined(cmd) && cmd.size > 0) {
                 level.zombie_devgui_gun = cmd;
@@ -900,7 +900,7 @@
                 }
                 setdvar(#"hash_1c9227f4f6e823ce", "<dev string:x38>");
             }
-            wait(0.1);
+            wait 0.1;
             cmd = getdvarstring(#"hash_1c922af4f6e828e7");
             if (isdefined(cmd) && cmd.size > 0) {
                 level.zombie_devgui_gun = cmd;
@@ -920,7 +920,7 @@
     function zombie_weapon_devgui_think() {
         level.zombie_devgui_gun = getdvarstring(#"zombie_devgui_gun");
         for (;;) {
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarstring(#"zombie_devgui_gun");
             if (isdefined(cmd) && cmd.size > 0) {
                 level.zombie_devgui_gun = cmd;
@@ -1043,7 +1043,7 @@
         level.zombie_devgui_give_ability = getdvarstring(#"zombie_devgui_give_ability");
         level.zombie_devgui_take_ability = getdvarstring(#"zombie_devgui_take_ability");
         for (;;) {
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarstring(#"zombie_devgui_give_ability");
             if (!isdefined(level.zombie_devgui_give_ability) || level.zombie_devgui_give_ability != cmd) {
                 if (cmd == "<dev string:xb65>") {
@@ -1055,7 +1055,7 @@
                     array::thread_all(getplayers(), &zombie_devgui_ability_give, level.zombie_devgui_give_ability);
                 }
             }
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarstring(#"zombie_devgui_take_ability");
             if (!isdefined(level.zombie_devgui_take_ability) || level.zombie_devgui_take_ability != cmd) {
                 level.zombie_devgui_take_ability = cmd;
@@ -1106,7 +1106,7 @@
     // Size: 0x86
     function zombie_devgui_watch_input() {
         level flag::wait_till("<dev string:xa6>");
-        wait(1);
+        wait 1;
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             players[i] thread watch_debug_input();
@@ -1137,7 +1137,7 @@
     // Checksum 0x4b430987, Offset: 0x4d88
     // Size: 0x6c
     function force_drink() {
-        wait(0.01);
+        wait 0.01;
         build_weapon = getweapon(#"zombie_builder");
         self thread gestures::function_f3e2696f(self, build_weapon, undefined, 2.5, undefined, undefined, undefined);
     }
@@ -1902,7 +1902,7 @@
                 break;
             }
             setdvar(#"zombie_devgui", "<dev string:x38>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -1940,7 +1940,7 @@
     function devgui_all_spawn() {
         player = util::gethostplayer();
         bot::add_bots(3, player.team);
-        wait(0.1);
+        wait 0.1;
         zombie_devgui_goto_round(8);
     }
 
@@ -2011,7 +2011,7 @@
         guy = zombie_utility::spawn_zombie(spawner);
         if (isdefined(guy)) {
             guy.script_string = "<dev string:x6e8>";
-            wait(0.5);
+            wait 0.5;
             guy forceteleport(trace[#"position"], player.angles + (0, 180, 0));
         }
         return guy;
@@ -2110,7 +2110,7 @@
             waitframe(1);
         }
         level notify(#"open_sesame");
-        wait(1);
+        wait 1;
         setdvar(#"zombie_unlock_all", 0);
     }
 
@@ -2137,7 +2137,7 @@
         level flag::wait_till("<dev string:xa6>");
         while (true) {
             while (!any_player_in_noclip()) {
-                wait(1);
+                wait 1;
             }
             setdvar(#"scr_fog_disable", 1);
             setdvar(#"r_fog_disable", 1);
@@ -2145,7 +2145,7 @@
                 setculldist(0);
             }
             while (any_player_in_noclip()) {
-                wait(1);
+                wait 1;
             }
             setdvar(#"scr_fog_disable", 0);
             setdvar(#"r_fog_disable", 0);
@@ -2339,7 +2339,7 @@
             self.preserving_turbines = 1;
             while (true) {
                 self.turbine_health = 1200;
-                wait(1);
+                wait 1;
             }
         }
         self.preserving_turbines = 0;
@@ -2369,7 +2369,7 @@
                         }
                     }
                 }
-                wait(0.1);
+                wait 0.1;
             }
         }
         self.preserving_equipment = 0;
@@ -2418,7 +2418,7 @@
         self thread zm_placeable_mine::setup_for_player(weapon);
         while (true) {
             self givemaxammo(weapon);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -2443,7 +2443,7 @@
         }
         while (true) {
             self givemaxammo(wpn_type);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -2466,7 +2466,7 @@
         self zm_loadout::set_player_lethal_grenade(weapon);
         while (true) {
             self givemaxammo(weapon);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -2505,7 +2505,7 @@
             self [[ level.zombiemode_devgui_cymbal_monkey_give ]]();
             while (true) {
                 self givemaxammo(getweapon(#"cymbal_monkey"));
-                wait(1);
+                wait 1;
             }
         }
     }
@@ -2529,7 +2529,7 @@
             self [[ level.var_5076c574 ]]();
             while (true) {
                 self givemaxammo(level.w_black_hole_bomb);
-                wait(1);
+                wait 1;
             }
         }
     }
@@ -2553,7 +2553,7 @@
             self [[ level.var_3079bbd7 ]]();
             while (true) {
                 self givemaxammo(level.w_quantum_bomb);
-                wait(1);
+                wait 1;
             }
         }
     }
@@ -2577,7 +2577,7 @@
             self [[ level.var_42cebfa6 ]]();
             while (true) {
                 self givemaxammo(level.w_nesting_dolls);
-                wait(1);
+                wait 1;
             }
         }
     }
@@ -2601,7 +2601,7 @@
             self [[ level.var_153af402 ]]();
             while (true) {
                 self givemaxammo(getweapon(#"emp_grenade"));
-                wait(1);
+                wait 1;
             }
         }
     }
@@ -2675,7 +2675,7 @@
                     }
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -2728,7 +2728,7 @@
             self.maxhealth = 100000;
             self.health = 100000;
             self waittill(#"player_revived", #"perk_used", #"spawned_player");
-            wait(2);
+            wait 2;
         }
     }
 
@@ -2747,7 +2747,7 @@
             self.maxhealth = 10;
             self.health = 10;
             self waittill(#"player_revived", #"perk_used", #"spawned_player");
-            wait(2);
+            wait 2;
         }
     }
 
@@ -2768,7 +2768,7 @@
                     break;
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -2951,7 +2951,7 @@
         level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), target_round);
         zm_round_logic::set_round_number(target_round - 1);
         level notify(#"kill_round");
-        wait(1);
+        wait 1;
         zombies = getaiteamarray(level.zombie_team);
         if (isdefined(zombies)) {
             for (i = 0; i < zombies.size; i++) {
@@ -3461,7 +3461,7 @@
         level endon(#"devgui_chest_end_monitor");
         for (;;) {
             level.chest_accessed = 0;
-            wait(5);
+            wait 5;
         }
     }
 
@@ -3606,18 +3606,18 @@
         }
         for (i = 0; i < 10; i++) {
             zombie_devgui_give_powerup("<dev string:xd68>", 1, self.origin);
-            wait(0.25);
+            wait 0.25;
         }
         zombie_devgui_give_powerup("<dev string:xd74>", 1, self.origin);
-        wait(0.25);
+        wait 0.25;
         zombie_devgui_give_powerup("<dev string:xd81>", 1, self.origin);
-        wait(0.25);
+        wait 0.25;
         zombie_devgui_give_powerup("<dev string:xd91>", 1, self.origin);
-        wait(0.25);
+        wait 0.25;
         zombie_devgui_give_powerup("<dev string:xd9d>", 1, self.origin);
-        wait(0.25);
+        wait 0.25;
         zombie_devgui_give_powerup("<dev string:xda7>", 1, self.origin);
-        wait(0.25);
+        wait 0.25;
     }
 
     // Namespace zm_devgui/zm_devgui
@@ -3709,7 +3709,7 @@
                 }
                 break;
             }
-            wait(0.25);
+            wait 0.25;
         }
     }
 
@@ -3880,7 +3880,7 @@
     // Checksum 0x344b39f2, Offset: 0xec78
     // Size: 0x24
     function testscriptruntimeerrorassert() {
-        wait(1);
+        wait 1;
         assert(0);
     }
 
@@ -3908,12 +3908,12 @@
     // Checksum 0xe86e26af, Offset: 0xed20
     // Size: 0xdc
     function testscriptruntimeerror() {
-        wait(5);
+        wait 5;
         for (;;) {
             if (getdvarstring(#"scr_testscriptruntimeerror") != "<dev string:x3b>") {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         myerror = getdvarstring(#"scr_testscriptruntimeerror");
         setdvar(#"scr_testscriptruntimeerror", "<dev string:x3b>");
@@ -3982,7 +3982,7 @@
         while (level.round_number < var_a6f3b62c) {
             foreach (round_info in var_59ed21fc) {
                 if (level.round_number < round_info[0]) {
-                    wait(round_info[1]);
+                    wait round_info[1];
                     break;
                 }
             }
@@ -3991,7 +3991,7 @@
                 ai kill();
             }
             adddebugcommand("<dev string:xfb5>");
-            wait(0.2);
+            wait 0.2;
         }
         setdvar(#"runtime_time_scale", 1);
     }
@@ -4064,7 +4064,7 @@
     // Size: 0x298
     function function_c774d870() {
         for (;;) {
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarint(#"hash_5b8785c3d6383b3a", 0);
             if (isdefined(cmd) && cmd == 1) {
                 iprintlnbold("<dev string:x1129>");
@@ -4298,7 +4298,7 @@
                     zero_idle_movement = 0;
                 }
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -4308,7 +4308,7 @@
     // Size: 0x24a
     function debug_center_screen() {
         level.center_screen_debug_hudelem_active = 1;
-        wait(0.1);
+        wait 0.1;
         level.center_screen_debug_hudelem1 = newdebughudelem(level.players[0]);
         level.center_screen_debug_hudelem1.alignx = "<dev string:x12d4>";
         level.center_screen_debug_hudelem1.aligny = "<dev string:xecf>";
@@ -4342,7 +4342,7 @@
         setdvar(#"hash_46eec505e691414c", "<dev string:x38>");
         setdvar(#"hash_74f1952a0f93d08e", -1);
         while (true) {
-            wait(0.1);
+            wait 0.1;
             var_9261da43 = getdvar(#"hash_46eec505e691414c", "<dev string:x38>");
             var_10acd4fa = getdvar(#"hash_74f1952a0f93d08e", -1);
             if (var_9261da43 == "<dev string:x38>" && var_10acd4fa == -1) {
@@ -4373,7 +4373,7 @@
     // Size: 0x21c
     function function_7c9dd642() {
         while (!isdefined(level.var_a16c38d9)) {
-            wait(0.1);
+            wait 0.1;
         }
         path = "<dev string:x12f8>";
         cmd = "<dev string:x1308>";

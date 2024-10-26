@@ -70,16 +70,16 @@ function vehicle_rumble(localclientnum) {
     radius_squared = rumblestruct.radius * rumblestruct.radius;
     while (true) {
         if (distancesquared(self.origin, level.localplayers[localclientnum].origin) > radius_squared || self getspeed() < 35) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         if (isdefined(self.rumbleon) && !self.rumbleon) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         self playrumblelooponentity(localclientnum, level.vehicle_rumble[type].rumble);
         while (distancesquared(self.origin, level.localplayers[localclientnum].origin) < radius_squared && self getspeed() > 5) {
-            wait(self.rumble_basetime + randomfloat(self.rumble_randomaditionaltime));
+            wait self.rumble_basetime + randomfloat(self.rumble_randomaditionaltime);
         }
         self stoprumble(localclientnum, level.vehicle_rumble[type].rumble);
     }

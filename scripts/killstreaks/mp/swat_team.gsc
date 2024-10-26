@@ -693,7 +693,7 @@ function function_416a0a80(owner) {
                 objective_setprogress(self.var_134eefb9, health_percent);
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1147,7 +1147,7 @@ function private function_67c394f2(helicopter, destination) {
 // Size: 0x4c
 function swat_helicopter_explode(helicopter) {
     helicopter helicopter::function_e1058a3e();
-    wait(0.1);
+    wait 0.1;
     if (isdefined(helicopter)) {
         helicopter delete();
     }
@@ -1267,7 +1267,7 @@ function private function_21f27c75(helicopter) {
     rope = helicopter.rope;
     helicopter notify(#"hash_6d5d50a125188a1b");
     helicopter.rope thread animation::play("p8_fxanim_gp_vehicle_lb_swat_rappel_drop_anim", helicopter, "tag_origin", 1, 0.2, 0.1, undefined, undefined, undefined, 0);
-    wait(0.5);
+    wait 0.5;
     function_d4331865(rope);
 }
 
@@ -1432,7 +1432,7 @@ function function_18a9058c() {
     self.ai.var_e90b47c1 = gettime();
     while (isalive(self)) {
         if (isdefined(self.ai.var_e90b47c1) && gettime() <= self.ai.var_e90b47c1) {
-            wait(1);
+            wait 1;
             continue;
         }
         players = getplayers();
@@ -1447,7 +1447,7 @@ function function_18a9058c() {
                 break;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1780,7 +1780,7 @@ function private function_820e7c92(owner, var_1c996690, nodes, context) {
     helicopter thread function_5ca48510(helicopter, var_1c996690);
     wait_start = gettime();
     while (helicopter.origin[2] - var_1c996690[2] > 620 && gettime() - wait_start < 1000) {
-        wait(0.1);
+        wait 0.1;
     }
     level thread function_61baa879(helicopter);
     position = 0;
@@ -1794,7 +1794,7 @@ function private function_820e7c92(owner, var_1c996690, nodes, context) {
         }
         position++;
     }
-    wait(6.4);
+    wait 6.4;
     helicopter thread function_21f27c75(helicopter);
     context.deployed = 1;
     helicopter thread function_9fe56d0b(helicopter);
@@ -1997,7 +1997,7 @@ function function_48d57bc8() {
         laser_weapon = getweapon(self.weapon.name, "steadyaim");
         self ai::gun_remove();
         self ai::gun_switchto(laser_weapon, "right");
-        wait(2);
+        wait 2;
         if (isdefined(self.var_e09b732c) && self.var_e09b732c) {
             return;
         }
@@ -2048,7 +2048,7 @@ function function_8821879c(killstreak_id) {
                     if (isdefined(self.var_6c0553ea.remoteweapon)) {
                         self.var_6c0553ea.remoteweapon function_944f0911("");
                     }
-                    wait(3);
+                    wait 3;
                     if (isdefined(self.var_6c0553ea.remoteweapon)) {
                         if (!self gamepadusedlast()) {
                             self.var_6c0553ea.remoteweapon function_944f0911(#"hash_600af0ac4af0b090");
@@ -2064,7 +2064,7 @@ function function_8821879c(killstreak_id) {
                     if (isdefined(self.var_6c0553ea.remoteweapon)) {
                         self.var_6c0553ea.remoteweapon function_944f0911("");
                     }
-                    wait(3);
+                    wait 3;
                     if (isdefined(self.var_6c0553ea.remoteweapon)) {
                         if (!self gamepadusedlast()) {
                             self.var_6c0553ea.remoteweapon function_944f0911(#"hash_167e638f51287532");
@@ -2081,7 +2081,7 @@ function function_8821879c(killstreak_id) {
             if (isdefined(self.var_6c0553ea.remoteweapon)) {
                 self.var_6c0553ea.remoteweapon function_944f0911("");
             }
-            wait(5);
+            wait 5;
             if (isdefined(self.var_6c0553ea.remoteweapon)) {
                 if (self.var_5f43fa0c == "swat_guard") {
                     if (!self gamepadusedlast()) {
@@ -2383,7 +2383,7 @@ function swat_escort(playgesture = 1) {
             }
             function_4c2ed78d(owner);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -2564,7 +2564,7 @@ function function_ac0e6696() {
             util::wait_network_frame();
             self delete();
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

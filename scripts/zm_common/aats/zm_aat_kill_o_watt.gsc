@@ -101,7 +101,7 @@ function function_fbd6ea47(player) {
     self endon(#"death");
     self clientfield::set("zm_aat_kill_o_watt" + "_zap", 1);
     self lightning_chain::arc_damage_ent(player, 2, level.var_7fe61e7a);
-    wait(6);
+    wait 6;
     self thread function_439d6573();
 }
 

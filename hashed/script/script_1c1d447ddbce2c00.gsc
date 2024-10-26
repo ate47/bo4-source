@@ -56,7 +56,7 @@ function nuked_population_sign_think() {
         } else {
             level flag::clear(#"hash_35762ecd1ee8f3c1");
         }
-        wait(0.05);
+        wait 0.05;
     }
 }
 

@@ -33,7 +33,7 @@ function private function_2d47ee1e(var_6ed927a6, var_caba78c2, waittime, var_ef5
     if (isdefined(vehicledrop) && vehicledrop && !isdefined(vehicletype)) {
         return;
     }
-    wait(randomfloatrange(var_caba78c2, waittime));
+    wait randomfloatrange(var_caba78c2, waittime);
     if (isdefined(var_6ed927a6) && !vehicledrop) {
         level callback::callback(#"hash_258e15865427fb62", var_6ed927a6);
         if (isdefined(level.var_ef5dbc90[var_6ed927a6])) {

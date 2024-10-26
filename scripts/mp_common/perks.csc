@@ -57,7 +57,7 @@ function updatesitrepscan() {
     while (true) {
         self function_3d033f52(0, level.sitrepscan1_enable, level.sitrepscan1_setdesat, level.sitrepscan1_setsolid, level.sitrepscan1_setoutline, level.sitrepscan1_setlinewidth, level.sitrepscan1_setradius, level.sitrepscan1_setfalloff);
         self function_3d033f52(1, level.sitrepscan2_enable, level.sitrepscan2_setdesat, level.sitrepscan2_setsolid, level.sitrepscan2_setoutline, level.sitrepscan2_setlinewidth, level.sitrepscan2_setradius, level.sitrepscan2_setfalloff);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -84,7 +84,7 @@ function updatesitrepscan() {
             level.sitrepscan2_setfalloff = getdvarfloat(#"scr_sitrepscan2_setfalloff", level.sitrepscan2_setfalloff);
             level.sitrepscan2_setdesat = getdvarfloat(#"scr_sitrepscan2_setdesat", level.sitrepscan2_setdesat);
             level.friendlycontentoutlines = getdvarint(#"friendlycontentoutlines", level.friendlycontentoutlines);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -203,7 +203,7 @@ function on_player_spawned(local_client_num) {
                 self.last_perks = perks;
                 self notify(#"perks_changed");
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -529,7 +529,7 @@ function monitor_detectnearbyenemies(local_client_num) {
             setuimodelvalue(var_e4ed29e4, 0);
             previousenemydetectedbitfield = 0;
             if (isdefined(level.var_783d3911) && gettime() < level.var_783d3911 + 12000) {
-                wait(0.5);
+                wait 0.5;
                 continue;
             }
             self waittill(#"death", #"spawned", #"perks_changed");
@@ -543,7 +543,7 @@ function monitor_detectnearbyenemies(local_client_num) {
                 }
             }
             previousenemydetectedbitfield = 0;
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (self.var_7122b2ff == 0) {
@@ -699,7 +699,7 @@ function monitor_detectnearbyenemies(local_client_num) {
             }
             enemylosttime += 0.05;
         }
-        wait(0.05);
+        wait 0.05;
     }
     setuimodelvalue(var_e4ed29e4, 1);
 }
@@ -711,7 +711,7 @@ function monitor_detectnearbyenemies(local_client_num) {
 function function_c90f8547(var_8bced359, var_832d6681, delay_time) {
     self endon(#"death");
     if (isdefined(delay_time) && delay_time > 0) {
-        wait(delay_time);
+        wait delay_time;
     }
     setuimodelvalue(var_8bced359, var_832d6681);
 }

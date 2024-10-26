@@ -114,7 +114,7 @@ function private function_fb346efb() {
     level flagsys::wait_till(#"hash_405e46788e83af41");
     lastcircleindex = level.deathcircles.size - 1;
     while (level.deathcircleindex < lastcircleindex) {
-        wait(1);
+        wait 1;
     }
     var_8e3c3c5b = level.deathcircles[level.deathcircleindex];
     level.var_590e0497 = [];
@@ -272,7 +272,7 @@ function private clear_prompts(activator) {
     // Size: 0x168
     function private function_a6eac3b7() {
         while (true) {
-            wait(0.25);
+            wait 0.25;
             dvarstr = getdvarstring(#"scr_give_player_score", "<dev string:x38>");
             if (dvarstr == "<dev string:x38>") {
                 continue;

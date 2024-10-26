@@ -171,9 +171,9 @@ function function_13f107c4(ai, ent) {
     ai endon(#"death");
     ai val::set(#"crawler_spawn", "allowdeath", 0);
     ai setfreecameralockonallowed(0);
-    wait(1);
+    wait 1;
     ai clientfield::increment("crawler_portal_spawn_fx");
-    wait(1.5);
+    wait 1.5;
     playsoundatposition(#"evt_teleporter_go", ent.origin);
     if (isdefined(ai.favoriteenemy)) {
         angle = vectortoangles(ai.favoriteenemy.origin - ent.origin);
@@ -186,7 +186,7 @@ function function_13f107c4(ai, ent) {
     assert(isdefined(ai), "<dev string:x38>");
     assert(isalive(ai), "<dev string:x4d>");
     ai val::reset(#"crawler_spawn", "allowdeath");
-    wait(0.1);
+    wait 0.1;
     ai show();
     ai setfreecameralockonallowed(1);
     ai val::reset(#"crawler_spawn", "ignoreme");
@@ -205,9 +205,9 @@ function function_6b3512d() {
     level flag::set(#"hash_2a1fc2e349c48462");
     level flag::init(#"hash_429b6157c77015a2");
     while (isdefined(level.intermission) && level.intermission) {
-        wait(1);
+        wait 1;
     }
-    wait(0.1);
+    wait 0.1;
     level.zombie_total += 40;
     if (isdefined(level.var_e2aef122)) {
         level.var_e2aef122 += 40;
@@ -307,7 +307,7 @@ function function_fe02a12f() {
 function function_2ce54724() {
     while (level.var_4b9c09fd > 0) {
         level flag::wait_till_clear(#"hash_26e9fe6561459de3");
-        wait(0.1);
+        wait 0.1;
     }
     level flag::clear(#"nova_crawlers_round");
 }

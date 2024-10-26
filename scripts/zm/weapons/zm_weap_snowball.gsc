@@ -86,7 +86,7 @@ function on_grenade_fired(s_params) {
 function private function_6e2124f7() {
     self endon(#"disconnect");
     clientfield::set_to_player("" + #"hash_78aa1dc141a3e27", 1);
-    wait(0.5);
+    wait 0.5;
     clientfield::set_to_player("" + #"hash_78aa1dc141a3e27", 0);
 }
 
@@ -97,7 +97,7 @@ function private function_6e2124f7() {
 function private function_2291fc03() {
     self endon(#"disconnect");
     clientfield::set_to_player("" + #"hash_2fafddfa9f85b8aa", 1);
-    wait(0.5);
+    wait 0.5;
     clientfield::set_to_player("" + #"hash_2fafddfa9f85b8aa", 0);
 }
 

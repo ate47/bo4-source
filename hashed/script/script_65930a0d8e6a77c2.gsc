@@ -37,7 +37,7 @@ function trap_activate() {
     level.var_a19e2d89 playloopsound(#"hash_5ca6140cea7b68ca");
     level.var_7012847c = 1;
     self.var_67dd3af6 = 1;
-    wait(self._trap_duration);
+    wait self._trap_duration;
     self.var_67dd3af6 = undefined;
     level exploder::stop_exploder("fxexp_trap_poison");
     level.var_a19e2d89 stoploopsound(0.5);
@@ -86,7 +86,7 @@ function trap_player_damage(t_trap) {
             } else {
                 self dodamage(self.maxhealth / 2.75, self.origin, undefined, t_trap);
             }
-            wait(1);
+            wait 1;
         }
         self.is_in_acid = undefined;
     }
@@ -104,7 +104,7 @@ function function_d5ee5b15() {
         self.var_31f1bba7 = 1;
         self clientfield::set_to_player("" + #"hash_686e5c0d7af86361", 1);
     }
-    wait(5);
+    wait 5;
     self.var_31f1bba7 = undefined;
     self clientfield::set_to_player("" + #"hash_686e5c0d7af86361", 0);
 }
@@ -179,7 +179,7 @@ function trap_damage(t_trap) {
 // Checksum 0xfbefe1a5, Offset: 0xbd0
 // Size: 0x26
 function trap_damage_cooldown(e_victim) {
-    wait(0.5);
+    wait 0.5;
     if (isdefined(e_victim)) {
         e_victim.var_7822ecda = undefined;
     }
@@ -190,7 +190,7 @@ function trap_damage_cooldown(e_victim) {
 // Checksum 0x2b6288f1, Offset: 0xc00
 // Size: 0x16
 function function_49d1db63() {
-    wait(0.5);
+    wait 0.5;
     level.var_b8d87306 = undefined;
 }
 
@@ -200,7 +200,7 @@ function function_49d1db63() {
 // Size: 0x26
 function function_a023d131() {
     self endon(#"death");
-    wait(8);
+    wait 8;
     self.var_6e294228 = undefined;
 }
 

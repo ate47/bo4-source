@@ -37,12 +37,12 @@ function is_winner(outcome, team_or_player) {
 function testshock() {
     self endon(#"death", #"disconnect");
     for (;;) {
-        wait(3);
+        wait 3;
         numshots = randomint(6);
         for (i = 0; i < numshots; i++) {
             iprintlnbold(numshots);
             self shellshock(#"frag_grenade_mp", 0.2);
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -62,7 +62,7 @@ function testhps() {
         if (self thread killstreaks::give(hp)) {
             self playlocalsound(level.killstreaks[hp].informdialog);
         }
-        wait(20);
+        wait 20;
     }
 }
 
@@ -193,16 +193,16 @@ function playtickingsound(gametype_tick_sound) {
         self playsound(gametype_tick_sound);
         if (time > 10) {
             time -= 1;
-            wait(1);
+            wait 1;
         } else if (time > 4) {
             time -= 0.5;
-            wait(0.5);
+            wait 0.5;
         } else if (time > 1) {
             time -= 0.4;
-            wait(0.4);
+            wait 0.4;
         } else {
             time -= 0.3;
-            wait(0.3);
+            wait 0.3;
         }
         hostmigration::waittillhostmigrationdone();
     }
@@ -240,7 +240,7 @@ function gametimer() {
             game.playabletimepassed += gettime() - prevtime;
         }
         prevtime = gettime();
-        wait(1);
+        wait 1;
     }
 }
 
@@ -252,7 +252,7 @@ function disableplayerroundstartdelay() {
     player = self;
     player endon(#"death", #"disconnect");
     if (getroundstartdelay()) {
-        wait(getroundstartdelay());
+        wait getroundstartdelay();
     }
     player disableroundstartdelay();
 }
@@ -394,7 +394,7 @@ function getestimatedtimeuntilscorelimit(team) {
 function rumbler() {
     self endon(#"disconnect");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         self playrumbleonentity("damage_heavy");
     }
 }
@@ -405,7 +405,7 @@ function rumbler() {
 // Size: 0x24
 function waitfortimeornotify(time, notifyname) {
     self endon(notifyname);
-    wait(time);
+    wait time;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -414,10 +414,10 @@ function waitfortimeornotify(time, notifyname) {
 // Size: 0x60
 function waitfortimeornotifynoartillery(time, notifyname) {
     self endon(notifyname);
-    wait(time);
+    wait time;
     while (isdefined(level.artilleryinprogress)) {
         assert(level.artilleryinprogress);
-        wait(0.25);
+        wait 0.25;
     }
 }
 

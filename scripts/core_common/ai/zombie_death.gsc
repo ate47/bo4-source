@@ -10,9 +10,9 @@
 function on_fire_timeout() {
     self endon(#"death");
     if (isdefined(self.flame_fx_timeout)) {
-        wait(self.flame_fx_timeout);
+        wait self.flame_fx_timeout;
     } else {
-        wait(8);
+        wait 8;
     }
     if (isdefined(self) && isalive(self)) {
         self.is_on_fire = 0;
@@ -59,7 +59,7 @@ function flame_death_fx() {
             if (isdefined(self.weapon_specific_fire_death_torso_fx)) {
                 fire_death_torso_fx = self.weapon_specific_fire_death_torso_fx;
             }
-            wait(1);
+            wait 1;
             tagarray = [];
             tagarray[0] = "j_elbow_le";
             tagarray[1] = "j_elbow_ri";
@@ -67,7 +67,7 @@ function flame_death_fx() {
             tagarray[3] = "j_knee_le";
             tagarray = randomize_array(tagarray);
             self fx::play(fire_death_sm_fx, (0, 0, 0), (0, 0, 0), "stop_flame_damage", 1, tagarray[0]);
-            wait(1);
+            wait 1;
             tagarray[0] = "j_wrist_ri";
             tagarray[1] = "j_wrist_le";
             if (!isdefined(self.a.gib_ref) || self.a.gib_ref != "no_legs") {

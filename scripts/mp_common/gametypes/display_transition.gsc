@@ -66,7 +66,7 @@ function function_81d670f5() {
 function private function_b8e20f5f(transition, outcome, var_f6e1baec, var_b6818fc8, func) {
     if (isdefined(var_f6e1baec) && var_f6e1baec) {
         if ((isdefined(var_b6818fc8) ? var_b6818fc8 : 0) != 0) {
-            wait(float(var_b6818fc8) / 1000);
+            wait float(var_b6818fc8) / 1000;
         }
         [[ func ]](transition, outcome);
     }
@@ -175,7 +175,7 @@ function function_c6f81aa1(time) {
     if (time <= 0) {
         time = 0.1;
     }
-    wait(time);
+    wait time;
     if (!isdefined(player)) {
         return;
     }
@@ -679,14 +679,14 @@ function function_ad717b18(var_c139bfe2) {
     }
     var_f05b8779 = delay / 2;
     if (var_f05b8779 > 0) {
-        wait(var_f05b8779);
+        wait var_f05b8779;
         var_f05b8779 = delay / 2;
     } else {
         var_f05b8779 = delay / 2 + var_f05b8779;
     }
     level notify(#"give_match_bonus");
     if (var_f05b8779 > 0) {
-        wait(var_f05b8779);
+        wait var_f05b8779;
     }
 }
 

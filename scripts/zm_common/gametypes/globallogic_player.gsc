@@ -293,7 +293,7 @@ function spectate_player_watcher() {
             }
             self.watchingactiveclient = 0;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -319,7 +319,7 @@ function callback_playermigrated() {
 // Size: 0x20
 function inform_clientvm_of_migration() {
     self endon(#"disconnect");
-    wait(1);
+    wait 1;
 }
 
 // Namespace globallogic_player/globallogic_player

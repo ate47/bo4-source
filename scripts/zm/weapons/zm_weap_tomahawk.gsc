@@ -116,7 +116,7 @@ function private function_932e24b(w_weapon) {
     while (n_total_time < 8) {
         n_power += var_eec22f7e;
         self gadgetpowerset(self gadgetgetslot(w_weapon), n_power);
-        wait(0.25);
+        wait 0.25;
         n_current_time = gettime();
         n_total_time = (n_current_time - n_start_time) / 1000;
     }
@@ -139,7 +139,7 @@ function private watch_for_tomahawk_charge() {
             self thread play_charge_fx(w_grenade);
             self thread function_9310fcc0(w_grenade);
             self waittill(#"grenade_fire", #"grenade_throw_cancelled");
-            wait(0.1);
+            wait 0.1;
             self.n_tomahawk_cooking_time = undefined;
         }
     }
@@ -182,10 +182,10 @@ function private play_charge_fx(w_grenade) {
 function private function_9310fcc0(w_grenade) {
     self endon(#"death", #"disconnect", #"grenade_fire", #"grenade_throw_cancelled");
     self thread tomahawk_rumble(3);
-    wait(1);
+    wait 1;
     while (true) {
         self playrumbleonentity("damage_light");
-        wait(0.3);
+        wait 0.3;
     }
 }
 
@@ -325,7 +325,7 @@ function private tomahawk_thrown(e_grenade) {
 function private check_for_time_out(e_grenade) {
     self endon(#"disconnect");
     e_grenade endon(#"death");
-    wait(0.5);
+    wait 0.5;
     e_grenade notify(#"time_out");
 }
 
@@ -460,7 +460,7 @@ function private function_e865484a(mdl_tomahawk, a_ai_zombie, var_65f2e452) {
         var_bfed4a7 = n_dist / 1600;
         var_bfed4a7 = var_bfed4a7 < 0.05 ? 0.05 : var_bfed4a7;
         self thread function_c7ddedb2(mdl_tomahawk, ai_zombie, var_bfed4a7);
-        wait(var_bfed4a7);
+        wait var_bfed4a7;
         var_65f2e452++;
         if (var_65f2e452 >= 5) {
             return var_65f2e452;
@@ -478,7 +478,7 @@ function private function_c7ddedb2(mdl_tomahawk, ai_zombie, var_bfed4a7 = 0.25) 
     if (isalive(ai_zombie) && !(isdefined(ai_zombie.hit_by_tomahawk) && ai_zombie.hit_by_tomahawk)) {
         v_target = ai_zombie gettagorigin("J_Head");
         mdl_tomahawk moveto(v_target, var_bfed4a7);
-        wait(var_bfed4a7);
+        wait var_bfed4a7;
         if (isalive(ai_zombie)) {
             ai_zombie.hit_by_tomahawk = 1;
             if (self.var_4f8fb07f == #"tomahawk_t8_upgraded") {
@@ -517,13 +517,13 @@ function tomahawk_return_player(mdl_tomahawk, var_65f2e452, n_move_speed = 1600)
             if (var_65f2e452 < 5) {
                 self function_723cb8bd(mdl_tomahawk);
                 var_65f2e452++;
-                wait(0.1);
+                wait 0.1;
             } else {
                 if (!isdefined(n_total_time)) {
                     n_start_time = gettime();
                     n_total_time = 0;
                 }
-                wait(0.1);
+                wait 0.1;
                 n_current_time = gettime();
                 n_total_time = (n_current_time - n_start_time) / 1000;
                 var_e65ebf4 = self function_e2c00ed6(mdl_tomahawk, n_move_speed, n_total_time);
@@ -619,7 +619,7 @@ function private tomahawk_spin() {
     self endon(#"death");
     while (isdefined(self)) {
         self rotatepitch(90, 0.2);
-        wait(0.15);
+        wait 0.15;
     }
 }
 

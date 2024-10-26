@@ -133,7 +133,7 @@ function turn_z(player) {
 // Size: 0xdc
 function zombie_death_time_limit(e_attacker) {
     self endon(#"death");
-    wait(30);
+    wait 30;
     self clientfield::set("zm_aat_brain_decay", 0);
     self clientfield::increment("zm_aat_brain_decay_exp", 1);
     var_8651a024 = self getcentroid();

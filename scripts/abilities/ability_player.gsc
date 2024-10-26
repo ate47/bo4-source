@@ -969,19 +969,19 @@ function tutorial_hints(slot, weapon, var_8430d11b, var_6c65cb8d, var_eadf8864, 
             break;
         }
         if (self isinvehicle() || self function_8bc54983() || self scene::is_igc_active() || self isplayinganimscripted()) {
-            wait(5);
+            wait 5;
             continue;
         }
         if (self tutorial_timer(weapon, "recentlyUsed")) {
-            wait(5);
+            wait 5;
             continue;
         }
         if (self tutorial_timer(weapon, "recentlyEquip")) {
-            wait(5);
+            wait 5;
             continue;
         }
         if (self tutorial_timer(weapon, "recentlyReady")) {
-            wait(5);
+            wait 5;
             continue;
         }
         if (!self tutorial_timer(weapon, "recentlyEquipText") && isdefined(var_6c65cb8d) && isdefined(var_be7c29a3) && self [[ var_be7c29a3 ]](slot, weapon)) {
@@ -998,7 +998,7 @@ function tutorial_hints(slot, weapon, var_8430d11b, var_6c65cb8d, var_eadf8864, 
                 self function_374c4352(var_eadf8864);
             #/
         }
-        wait(5);
+        wait 5;
     }
 }
 
@@ -1071,7 +1071,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
         if (!isdefined(level.abilities_devgui_base)) {
             return;
         }
-        wait(2);
+        wait 2;
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (players[i] != self) {
@@ -1456,7 +1456,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
             setdvar(#"hash_67d528f29bfc7c97", "<dev string:x64>");
             setdvar(#"scr_abilities_devgui_cmd", "<dev string:x64>");
             setdvar(#"scr_abilities_devgui_player", "<dev string:x2f6>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -1662,7 +1662,7 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
                     }
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -1676,11 +1676,11 @@ function function_fc4dc54(var_6fcde3b6 = 0) {
         }
         if (self isinmovemode("<dev string:x2fb>")) {
             adddebugcommand("<dev string:x2fb>");
-            wait(0.5);
+            wait 0.5;
         }
         if (self isinmovemode("<dev string:x301>")) {
             adddebugcommand("<dev string:x301>");
-            wait(0.5);
+            wait 0.5;
         }
         if (var_a5c8eb94 == "<dev string:x30a>") {
             startindex = self player_role::get();

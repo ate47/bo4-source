@@ -102,7 +102,7 @@ function vehiclespawnthread(veh_name, origin, angles, time_interval) {
     while (true) {
         vehicle = veh_spawner spawnfromspawner(veh_name, 1, 1, 1);
         if (!isdefined(vehicle)) {
-            wait(randomfloatrange(1, 2));
+            wait randomfloatrange(1, 2);
             continue;
         }
         vehicle asmrequestsubstate(#"locomotion@movement");
@@ -121,7 +121,7 @@ function vehiclespawnthread(veh_name, origin, angles, time_interval) {
         vehicle waittill(#"death");
         vehicle vehicle_death::deletewhensafe(0.25);
         if (isdefined(time_interval)) {
-            wait(time_interval);
+            wait time_interval;
         }
     }
 }
@@ -164,7 +164,7 @@ function watchplayerexitrequestthread(player) {
     player endon(#"death", #"disconnect");
     vehicle = self;
     vehicle endon(#"death");
-    wait(1.5);
+    wait 1.5;
     while (true) {
         timeused = 0;
         while (player usebuttonpressed()) {

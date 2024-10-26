@@ -320,7 +320,7 @@ function function_9d166ae8(w_minigun) {
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon === w_minigun && s_result._notify == "weapon_melee") {
             self playsoundontag("wpn_minigun_lvl3_throw", "j_head");
-            wait(1.35);
+            wait 1.35;
             self thread zm_hero_weapon::function_4e984e83(w_minigun, 1);
             var_79db2feb = self gettagorigin("tag_weapon_right");
             var_79db2feb += (0, 0, 15);
@@ -410,7 +410,7 @@ function function_13409329(v_end_pos, w_minigun) {
         }
     }
     for (i = 0; i < var_367c14cc.size; i++) {
-        wait(randomfloatrange(0.1, 0.3));
+        wait randomfloatrange(0.1, 0.3);
         if (!isdefined(var_367c14cc[i])) {
             continue;
         }

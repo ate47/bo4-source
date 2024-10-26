@@ -122,7 +122,7 @@ function function_8d93c592(w_curr) {
 // Size: 0xdc
 function function_f8fdc6ad(w_curr) {
     self endoncallback(&stop_beam, #"death");
-    wait(0.1);
+    wait 0.1;
     while (zm_utility::is_player_valid(self) && self isfiring() && self getweaponammoclip(w_curr) > 0 && !self ismeleeing() && !self isswitchingweapons()) {
         waitframe(1);
     }
@@ -240,7 +240,7 @@ function function_3ac73c92(e_player, b_upgraded) {
 function function_3821f26e() {
     self notify(#"hash_3def847106434aab");
     self endon(#"death", #"hash_3def847106434aab");
-    wait(1);
+    wait 1;
     self.var_a8f3f795 = 0;
 }
 
@@ -294,7 +294,7 @@ function function_57f0555a(e_player) {
     self endon(#"death");
     self clientfield::set("" + #"hash_784061e6c2684e58", 1);
     self lightning_chain::arc_damage_ent(e_player, 2, level.var_f3d38af6);
-    wait(6);
+    wait 6;
     self thread function_ae5c4e8b();
 }
 

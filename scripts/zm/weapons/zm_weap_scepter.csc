@@ -282,7 +282,7 @@ function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap
                 self.var_5427d523 = 1;
                 self.var_aa9e07fe[localclientnum] = util::playfxontag(localclientnum, level._effect[#"scepter_heal"], self, "j_spine4");
                 fxhandle = self.var_aa9e07fe[localclientnum];
-                wait(0.5);
+                wait 0.5;
                 if (isdefined(fxhandle)) {
                     stopfx(localclientnum, fxhandle);
                     if (isdefined(self)) {

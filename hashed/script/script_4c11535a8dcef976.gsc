@@ -105,7 +105,7 @@ class class_727456f3 {
             var_10b20309 gameobjects::enable_object();
         }
         function_a94c7265(var_c0a091bc);
-        wait(isdefined(m_s_bundle.var_82e65b20) ? m_s_bundle.var_82e65b20 : 0);
+        wait isdefined(m_s_bundle.var_82e65b20) ? m_s_bundle.var_82e65b20 : 0;
         if (isdefined(m_s_bundle.var_fd4a26f0) && m_s_bundle.var_fd4a26f0 && m_s_bundle.var_46d9acb0 == "auto_down") {
             thread function_69474136(1);
         }
@@ -170,7 +170,7 @@ class class_727456f3 {
             var_10b20309 gameobjects::enable_object();
         }
         function_a94c7265(var_c0a091bc);
-        wait(isdefined(m_s_bundle.var_82e65b20) ? m_s_bundle.var_82e65b20 : 0);
+        wait isdefined(m_s_bundle.var_82e65b20) ? m_s_bundle.var_82e65b20 : 0;
         if (isdefined(m_s_bundle.var_fd4a26f0) && m_s_bundle.var_fd4a26f0 && m_s_bundle.var_46d9acb0 == "auto_up") {
             thread function_6ff61192(1);
             return;
@@ -513,7 +513,7 @@ class class_727456f3 {
     function function_cae3f0e7() {
         while (true) {
             waitresult = m_e_trigger waittill(#"trigger");
-            wait(isdefined(m_s_bundle.var_95726484) ? m_s_bundle.var_95726484 : 0);
+            wait isdefined(m_s_bundle.var_95726484) ? m_s_bundle.var_95726484 : 0;
             e_player = waitresult.activator;
             if (e_player istouching(m_e_trigger)) {
                 if (!self flag::get("elevator_moving")) {

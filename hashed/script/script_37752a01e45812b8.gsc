@@ -68,7 +68,7 @@ function freeze_quest_cleanup(var_a276c861, var_19e802fa) {
     }
     var_e08890fb = getent("freeze_mode_button", "targetname");
     var_e08890fb movez(var_e08890fb.script_int, 2, 0.2, 0.2);
-    wait(1.5);
+    wait 1.5;
     var_57e06cb = struct::get("freeze_mode_struct", "targetname");
     var_57e06cb zm_hms_util::function_6099877a(72, "end_game", #"hash_6001ebf204288bf8", #"hash_3fe9eae6f03accce");
     var_898a45da = level.var_45827161[level.round_number + 1];
@@ -159,7 +159,7 @@ function function_e42e358e() {
     level endon(#"end_game");
     self endon(#"death", #"player_frozen");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!self issprinting() && !self laststand::player_is_in_laststand()) {
             self function_f0bdc5df();
             return;
@@ -189,7 +189,7 @@ function function_1b305413() {
     level endon(#"end_game");
     self endon(#"death", #"player_frozen");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (self issprinting() || self laststand::player_is_in_laststand()) {
             self player_sprinting();
             return;
@@ -222,7 +222,7 @@ function function_6577cacc() {
         self.var_36a93d1 = 0;
     }
     while (true) {
-        wait(1);
+        wait 1;
         self.var_36a93d1++;
         var_24e0e73d = 15;
         if (self.var_36a93d1 >= var_24e0e73d) {

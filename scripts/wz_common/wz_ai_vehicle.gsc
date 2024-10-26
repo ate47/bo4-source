@@ -15,7 +15,7 @@
 // Size: 0x44
 function function_e1a09b01() {
     level endon(#"game_ended");
-    wait(4);
+    wait 4;
     if (isdefined(self)) {
         self delete();
     }
@@ -60,11 +60,11 @@ function path_update_interrupt_by_attacker() {
 function path_update_interrupt() {
     self notify(#"path_update_interrupt_by_attacker");
     self endon(#"death", #"change_state", #"near_goal", #"reached_end_node", #"amws_end_interrupt_watch", #"path_update_interrupt_by_attacker");
-    wait(1);
+    wait 1;
     while (true) {
         if (isdefined(self.current_pathto_pos)) {
             if (distance2dsquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
-                wait(0.2);
+                wait 0.2;
                 self notify(#"near_goal");
             }
         }
@@ -77,7 +77,7 @@ function path_update_interrupt() {
                 self notify(#"near_goal");
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -118,7 +118,7 @@ function state_combat_update(params) {
                 self function_d4c687c9();
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

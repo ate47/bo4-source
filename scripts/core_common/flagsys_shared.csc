@@ -22,7 +22,7 @@ function set_for_time(n_time, str_flag) {
     self notify("__flag::set_for_time__" + str_flag);
     self endon("__flag::set_for_time__" + str_flag);
     set(str_flag);
-    wait(n_time);
+    wait n_time;
     clear(str_flag);
 }
 

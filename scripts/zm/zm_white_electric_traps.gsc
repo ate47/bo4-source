@@ -212,7 +212,7 @@ function function_f118c57a(e_player) {
         self.var_6b64b967 = 0;
         self.var_41ee2ddc = 0;
         n_cooldown = zm_traps::function_da13db45(60, e_who);
-        wait(n_cooldown);
+        wait n_cooldown;
         function_91ecec97(self.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
         self.var_41ee2ddc = 1;
         playsoundatposition(#"zmb_trap_ready", self.origin);
@@ -244,7 +244,7 @@ function function_193dbfbb() {
         for (i = 0; i < 2 / n_check_time; i++) {
             self thread function_a01c3869(n_sequence);
             self thread function_fae74a9e(n_sequence);
-            wait(n_check_time);
+            wait n_check_time;
         }
         n_total_time += 2;
     }
@@ -328,7 +328,7 @@ function function_6ae39b5() {
     while (n_total_time < 40) {
         self thread function_a01c3869();
         self thread function_fae74a9e();
-        wait(n_check_time);
+        wait n_check_time;
         n_total_time += n_check_time;
     }
     self function_8f250fa1();
@@ -346,10 +346,10 @@ function function_242055cf() {
     for (i = 0; i < var_65c6475f; i++) {
         mdl_laser moveto(self.origin, 2);
         mdl_laser waittill(#"movedone");
-        wait(1);
+        wait 1;
         mdl_laser moveto(v_start_pos, 2);
         mdl_laser waittill(#"movedone");
-        wait(1);
+        wait 1;
     }
 }
 
@@ -400,7 +400,7 @@ function electrocute_zombie(e_activator, e_volume) {
         }
         bhtnactionstartevent(self, "electrocute");
         self notify(#"bhtn_action_notify", {#action:"electrocute"});
-        wait(randomfloat(1.25));
+        wait randomfloat(1.25);
         self playsound(#"hash_5183b687ad8d715a");
     }
     self dodamage(self.health + 666, self.origin, e_activator, e_volume);

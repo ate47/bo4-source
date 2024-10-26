@@ -114,7 +114,7 @@ function private function_f2d27140(var_6a87ce6d) {
     self notify(#"hash_44144f80f295a13f");
     self playsound(#"hash_7c91fa775c8a0134");
     self playloopsound(#"hash_2367dae4a69a4294");
-    wait(1);
+    wait 1;
     if (isdefined(var_6a87ce6d)) {
         self zm_vo::function_cf1e151c(level.var_4687b0d0[var_6a87ce6d]);
     }
@@ -190,7 +190,7 @@ function private function_6aad582c(e_player) {
     }
     level flag::set(#"phonograph_playing");
     e_player playsoundtoplayer(var_59c8624c, e_player);
-    wait(soundgetplaybacktime(var_59c8624c) * 0.001);
+    wait soundgetplaybacktime(var_59c8624c) * 0.001;
     e_player.var_57c1fd86 = 1;
     level flag::clear(#"phonograph_playing");
 }
@@ -293,7 +293,7 @@ function function_a3a23636() {
                 level.var_d2867f97 = e_player zm_vo::function_a2bd5a0c(#"hash_4a084873bbb64d39", 0, 0, 9999);
             }
         }
-        wait(1);
+        wait 1;
     }
     level.var_d2867f97 = undefined;
 }
@@ -356,7 +356,7 @@ function function_70c90053() {
     self endon(#"death", #"flag_gazing_stone_in_use");
     v_stone = self.origin + (0, 0, 8);
     while (true) {
-        wait(randomintrange(27, 31));
+        wait randomintrange(27, 31);
         e_closest_player = arraygetclosest(v_stone, util::get_active_players(), 768);
         if (isalive(e_closest_player) && e_closest_player util::is_player_looking_at(v_stone, 0.6, 0)) {
             e_closest_player zm_audio::create_and_play_dialog(#"seer_stone", #"nag", undefined, 1);
@@ -591,7 +591,7 @@ function function_a3a92098() {
             callback::remove_on_spawned(&function_a3a92098);
             return;
         }
-        wait(2);
+        wait 2;
     }
 }
 

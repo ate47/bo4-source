@@ -96,7 +96,7 @@ function activation(var_fad9ed02 = 1) {
     if (isdefined(level.var_a9c40fde)) {
         self [[ level.var_a9c40fde ]]();
     }
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self.var_b520496e) && self.var_b520496e) {
         self unlink();
         self.var_b520496e = undefined;
@@ -120,13 +120,13 @@ function activation(var_fad9ed02 = 1) {
             ai dodamage(ai.health + 1000, self.origin, self);
         }
     }
-    wait(0.2);
+    wait 0.2;
     self val::reset(#"hash_7d2b25df35ca5b3", "freezecontrols");
     if (var_fad9ed02) {
         self zm_stats::increment_challenge_stat(#"gum_gobbler_anywhere_but_here");
     }
     self.var_ffe2c4d7 = undefined;
-    wait(3);
+    wait 3;
     self val::reset(#"hash_7d2b25df35ca5b3", "ignoreme");
     self notify(#"hash_3e4335abc3d58a0b");
 }

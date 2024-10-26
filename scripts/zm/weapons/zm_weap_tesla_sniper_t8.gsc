@@ -118,11 +118,11 @@ function function_e0525d4e(var_6a3758f2, e_source, meansofdeath, weapon, shitloc
         zombie clientfield::set("zm_aat_kill_o_watt" + "_zap", 1);
         zombie ai::stun();
     }
-    wait(0.5);
+    wait 0.5;
     var_bf7a56c5 = int(ceil(a_zombies.size / 3));
     for (i = 0; i < a_zombies.size; i++) {
         if (i % var_bf7a56c5 == 0) {
-            wait(1.5 / 3);
+            wait 1.5 / 3;
         }
         if (isdefined(a_zombies[i])) {
             a_zombies[i] function_4764da22(e_source, meansofdeath, weapon, undefined);
@@ -150,7 +150,7 @@ function function_4764da22(e_source, meansofdeath, weapon, shitloc) {
 function function_487ae8a7(e_source, meansofdeath, weapon, shitloc) {
     self endon(#"death");
     level endon(#"end_game");
-    wait(randomfloatrange(3.5, 4));
+    wait randomfloatrange(3.5, 4);
     if (isdefined(self)) {
         self function_4764da22(e_source, meansofdeath, weapon, shitloc);
     }
@@ -211,7 +211,7 @@ function function_5253f1fb(player) {
     self endon(#"death");
     self clientfield::set("zm_aat_kill_o_watt" + "_zap", 1);
     self lightning_chain::arc_damage_ent(player, 2, level.var_79959866.base.var_38cd3d0e);
-    wait(randomfloatrange(3.5, 4));
+    wait randomfloatrange(3.5, 4);
     self thread function_80fa8760();
 }
 

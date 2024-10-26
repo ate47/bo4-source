@@ -46,13 +46,13 @@ function init() {
         callback::on_joined_team(&on_joined_team);
         callback::on_joined_spectate(&on_joined_spectators);
         level thread update_balance_dvar();
-        wait(0.15);
+        wait 0.15;
         level thread update_player_times();
         level thread function_badbaae6();
         return;
     }
     callback::on_connect(&on_free_player_connect);
-    wait(0.15);
+    wait 0.15;
     level thread update_player_times();
 }
 
@@ -117,7 +117,7 @@ function function_badbaae6() {
         if (game.state == "playing") {
             function_351a57a9();
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -135,7 +135,7 @@ function update_player_times() {
         if (isdefined(level.players[nexttoupdate])) {
             level.players[nexttoupdate] update_played_time();
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -206,7 +206,7 @@ function update_balance_dvar() {
     for (;;) {
         level.teambalance = getdvarint(#"scr_teambalance", 0);
         level.timeplayedcap = getdvarint(#"scr_timeplayedcap", 1800);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -289,7 +289,7 @@ function track_free_played_time() {
                 self.timeplayed[#"other"]++;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 

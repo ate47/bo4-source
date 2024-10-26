@@ -165,7 +165,7 @@ function function_65c804dc() {
         level.s_apd_trap.var_6b64b967 = 0;
         level.s_apd_trap.var_41ee2ddc = 0;
         n_cooldown = zm_traps::function_da13db45(60, e_who);
-        wait(n_cooldown);
+        wait n_cooldown;
         level.s_apd_trap.var_41ee2ddc = 1;
         function_91ecec97(level.s_apd_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
         playsoundatposition(#"zmb_trap_ready", self.origin);
@@ -197,7 +197,7 @@ function apd_trap_activate(e_player) {
                 ai thread function_25ede6c7(self);
             }
         }
-        wait(3);
+        wait 3;
         n_total_time += 3;
     }
 }

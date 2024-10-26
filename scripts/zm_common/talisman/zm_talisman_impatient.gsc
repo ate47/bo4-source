@@ -52,7 +52,7 @@ function special_revive() {
         return;
     }
     if (level.zombie_total <= 3) {
-        wait(1);
+        wait 1;
     }
     n_target_kills = level.zombie_player_killed_count + 100;
     while (level.zombie_player_killed_count < n_target_kills && level.zombie_total >= 3) {
@@ -61,7 +61,7 @@ function special_revive() {
     self.var_135a4148 = zm_round_logic::get_round_number();
     self zm_player::spectator_respawn_player();
     self val::set(#"talisman_impatient", "ignoreme");
-    wait(5);
+    wait 5;
     self val::reset(#"talisman_impatient", "ignoreme");
 }
 

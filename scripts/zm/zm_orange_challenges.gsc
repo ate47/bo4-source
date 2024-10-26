@@ -287,7 +287,7 @@ function function_af2eff2e() {
 // Size: 0x2e
 function function_2a4de81f() {
     level endon(#"end_game");
-    wait(5);
+    wait 5;
     self.var_5ac3d786 = 1;
 }
 
@@ -440,7 +440,7 @@ function function_735037d4() {
     if (isdefined(self.e_lock)) {
         self.e_lock delete();
     }
-    wait(0.5);
+    wait 0.5;
     self.e_lid rotatepitch(-95, 2, 0, 0.666667);
     self.e_lid playsound(#"hash_1cfa90c531f36b92");
     self.e_lid waittill(#"rotatedone");
@@ -881,11 +881,11 @@ function function_4ce023ff() {
     }
     if (self.n_current_progress === 0) {
         self function_1e4147b3(5, 3);
-        wait(5);
+        wait 5;
     }
     if (self.n_current_progress === 1) {
         self function_1e4147b3(10, 2.75);
-        wait(5);
+        wait 5;
     }
     if (self.n_current_progress === 2) {
         self function_1e4147b3(15, 2.5);
@@ -908,7 +908,7 @@ function function_1e4147b3(var_a5d77ed0, var_a5bc211a) {
     self.var_d71fc7c = 0;
     while (var_77ba553d < var_a5d77ed0) {
         b_success = 0;
-        wait(var_a5bc211a);
+        wait var_a5bc211a;
         while (!b_success) {
             e_target = array::random(self.var_975e7731);
             if (!isdefined(e_target.b_is_up) || !e_target.b_is_up) {
@@ -952,10 +952,10 @@ function function_a80a048d(s_challenge) {
     level endon(#"end_game");
     self endon(#"hash_759e710e575d89bb");
     s_challenge endon(#"hash_1a4fcb205b5695b5", s_challenge.str_notify);
-    wait(0.5);
+    wait 0.5;
     self rotateyaw(360, s_challenge.var_8aa74ff0 - 1);
     self waittill(#"rotatedone");
-    wait(0.5);
+    wait 0.5;
     if (isdefined(s_challenge.var_49201a73) && s_challenge.var_49201a73) {
         s_challenge.var_49201a73 = 0;
         s_challenge thread function_b0770e43();
@@ -1243,7 +1243,7 @@ function function_e845253b() {
             self function_544b63c0(self.n_current_progress);
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1491,7 +1491,7 @@ function function_f1da3c8(s_challenge) {
     s_challenge endon(s_challenge.str_notify);
     self endon(#"death", #"hash_1ae87f50e75564f3", #"piss_spilled");
     while (true) {
-        wait(1);
+        wait 1;
         if (isdefined(self.var_ab5095e1) && self.var_ab5095e1) {
             self playsound("zmb_pee_slosh");
         }
@@ -1522,7 +1522,7 @@ function function_3bb5cdd9(s_challenge_station) {
     a_n_sequence = array::randomize(a_n_sequence);
     self.a_n_sequence = a_n_sequence;
     self function_c40f1feb(s_challenge_station);
-    wait(1);
+    wait 1;
     s_challenge_station.var_5ac3d786 = 1;
 }
 
@@ -1596,7 +1596,7 @@ function function_472fa2ca(s_challenge) {
                 s_challenge function_544b63c0(s_challenge.n_current_progress);
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1948,7 +1948,7 @@ function function_f5f83516() {
         if (isdefined(self.worldgundw)) {
             self.worldgundw rotateto(new_angles, waittime, waittime * 0.5, waittime * 0.5);
         }
-        wait(randomfloat(waittime - 0.1));
+        wait randomfloat(waittime - 0.1);
     }
 }
 
@@ -2207,7 +2207,7 @@ function function_fd8a137e(n_time = 0) {
     self notify(#"hash_b296fe3ccb7d273");
     self endon(#"disconnect", #"hash_b296fe3ccb7d273");
     if (n_time > 0) {
-        wait(n_time);
+        wait n_time;
     }
     foreach (e_player in getplayers()) {
         level zm_ui_inventory::function_7df6bb60(#"zm_orange_challenges", 0, e_player);

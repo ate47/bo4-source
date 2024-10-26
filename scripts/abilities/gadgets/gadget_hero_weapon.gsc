@@ -191,7 +191,7 @@ function hero_wait_for_out_of_ammo(slot, weapon) {
     self notify(#"hero_noammo");
     self endon(#"hero_noammo");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         gadgetslot = self gadgetgetslot(weapon);
         if (gadgetslot != slot) {
             return;

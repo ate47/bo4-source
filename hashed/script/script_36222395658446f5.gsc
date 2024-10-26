@@ -190,7 +190,7 @@ function function_cf58d5fe() {
     self endon(#"disconnect");
     foreach (var_fb8c33cc in level.var_7a736cd5) {
         while (!self flag::exists(var_fb8c33cc)) {
-            wait(1);
+            wait 1;
         }
     }
     self flag::wait_till_all(level.var_7a736cd5);
@@ -285,7 +285,7 @@ function function_3c616882() {
             level.var_4024aaf6 thread function_f23ddf20(e_player);
             e_player flag::set(#"hash_548a6763233817f5");
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -313,7 +313,7 @@ function private function_831aa56d(e_player, var_69970c6) {
     w_current = e_player.currentweapon;
     e_player giveweapon(getweapon(#"knife"));
     e_player switchtoweapon(w_current);
-    wait(0.5);
+    wait 0.5;
     level.var_4024aaf6 rotateyaw(720, 1);
     level.var_4024aaf6 waittill(#"rotatedone");
     function_6fc1189b();
@@ -416,7 +416,7 @@ function private function_6fc1189b() {
 // Size: 0xde
 function function_f30298e4() {
     level endon(#"hash_421aca00fd70d9ea");
-    wait(5);
+    wait 5;
     level.var_4024aaf6 movez(level.var_4024aaf6.var_56a5d127, 1.5);
     level.var_4024aaf6 waittill(#"movedone");
     if (isdefined(level.var_4024aaf6.var_55484b66)) {
@@ -604,7 +604,7 @@ function function_352a977a() {
             level.var_288dc330 stoploopsound();
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -659,7 +659,7 @@ function function_139dd88c() {
             level.var_57808c93 stoploopsound();
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -714,7 +714,7 @@ function function_34759490(e_player) {
             level.var_dc120ff3 stoploopsound();
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -923,7 +923,7 @@ function function_858b2d2f() {
             level.var_bff24582 clientfield::set("" + #"hash_228caf5cb0610875", 0);
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -987,7 +987,7 @@ function function_588dcdff() {
         } else {
             self.var_946c0773 = 0;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1139,7 +1139,7 @@ function function_666a9223() {
             if (!player hasweapon(getweapon(#"spork_alcatraz"))) {
                 while (!isdefined(player.var_1c4683c4)) {
                     player.var_1c4683c4 = player.slot_weapons[#"melee_weapon"];
-                    wait(0.1);
+                    wait 0.1;
                 }
                 w_current = player.currentweapon;
                 player zm_melee_weapon::award_melee_weapon(#"spork_alcatraz");

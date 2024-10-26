@@ -146,7 +146,7 @@ function function_77e4073b(var_5ea5c94d, ended_early) {
 // Checksum 0x6173aa0, Offset: 0xe28
 // Size: 0x28c
 function function_ede90521() {
-    wait(2);
+    wait 2;
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
@@ -180,7 +180,7 @@ function function_ede90521() {
 // Size: 0x1f4
 function private function_a5fa6428() {
     level endon(#"end_game", #"vessel_found");
-    wait(2);
+    wait 2;
     zm_hms_util::function_3c173d37();
     level.var_60b08c24 zm_hms_util::function_6a0d675d(#"hash_33c988fee37ea6da", 0, 0, 1);
     level.var_60b08c24 zm_hms_util::function_6a0d675d(#"hash_33c988fee37ea6da", 1, 0, 1);

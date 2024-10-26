@@ -121,7 +121,7 @@ function private function_9a0f234b() {
 // Size: 0x8c
 function private function_9fdcf13f() {
     self endon(#"disconnect");
-    wait(1);
+    wait 1;
     callback::on_ai_damage(&function_af221ee1);
     self waittill(#"death", #"hero_katana_expired");
     callback::remove_on_ai_damage(&function_af221ee1);
@@ -264,11 +264,11 @@ function function_119af40d(w_katana) {
             self thread flagsys::set_for_time(1, "katana_dash");
             self.var_5605c31e = 1;
             self thread function_7903608c(w_katana);
-            wait(1);
+            wait 1;
             self notify(#"hash_50c324a04c7e0b09");
             self.var_5605c31e = undefined;
             while (self adsbuttonpressed()) {
-                wait(0.1);
+                wait 0.1;
             }
         }
         waitframe(1);
@@ -389,7 +389,7 @@ function function_269ad6a5(w_katana) {
     self thread function_8520d1c9(var_f1149aba, str_hitloc, w_katana);
     waitframe(10);
     self thread function_8520d1c9(var_f1149aba, str_hitloc, w_katana);
-    wait(0.1);
+    wait 0.1;
     self.var_5605c31e = undefined;
 }
 

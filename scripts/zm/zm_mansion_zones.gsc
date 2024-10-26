@@ -144,7 +144,7 @@ function function_8e0b371() {
         } else {
             self zm_hud::function_29780fb5(#"");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

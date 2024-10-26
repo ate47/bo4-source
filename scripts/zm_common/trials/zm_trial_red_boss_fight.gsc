@@ -75,17 +75,17 @@ function private start_boss_fight() {
         red_boss_battle::function_dfaf17c8();
         level thread red_boss_battle::function_3a2efd4e(0, 0, 0);
     } else {
-        wait(12);
+        wait 12;
         level lui::screen_fade_out(1);
         level thread red_boss_battle::function_3a2efd4e(0, 0, 1);
-        wait(0.5);
+        wait 0.5;
         level thread lui::screen_fade_in(1);
     }
     level flag::wait_till(#"boss_battle_complete");
     level flag::clear(#"infinite_round_spawning");
     level flag::clear(#"pause_round_timeout");
     level.zombie_total = 0;
-    wait(5);
+    wait 5;
     level notify(#"kill_round_wait");
 }
 

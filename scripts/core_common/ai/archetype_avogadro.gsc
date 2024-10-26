@@ -191,7 +191,7 @@ function function_80fc1a78(time) {
     self notify("3a74e555d7969d08");
     self endon(#"death", #"hash_7d29584dcbbe7d67", "4c2f097babffd515");
     self show();
-    wait(time);
+    wait time;
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
@@ -326,7 +326,7 @@ function private shoot_bolt_wait(entity) {
     target_pos = enemy geteye();
     bolt.origin = source_pos;
     bolt endon(#"death");
-    wait(0.1);
+    wait 0.1;
     bolt clientfield::set("" + #"hash_699d5bb1a9339a93", 1);
     bolt moveto(target_pos, 0.2);
     bolt waittill(#"movedone");

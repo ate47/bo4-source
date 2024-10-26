@@ -108,7 +108,7 @@ function function_53e45f4e() {
             self clientfield::set("" + #"force_stream_model", 0);
         }
         b_in_range = undefined;
-        wait(2);
+        wait 2;
     }
 }
 
@@ -239,7 +239,7 @@ function function_7e7626b5() {
             player thread zm_vo::function_a2bd5a0c(#"hash_28aa1fc068bb2e3b", 1);
             self delete();
         }
-        wait(1);
+        wait 1;
     }
 }
 

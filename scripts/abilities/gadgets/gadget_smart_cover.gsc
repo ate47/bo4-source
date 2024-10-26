@@ -197,7 +197,7 @@ function function_b397b517(timeoutoverride) {
     if ((isdefined(timeouttime) ? timeouttime : 0) == 0) {
         return;
     }
-    wait(timeouttime);
+    wait timeouttime;
     if (isdefined(self)) {
         self thread function_2a494565(1);
     }
@@ -252,7 +252,7 @@ function function_bd071599(player, smartcover) {
     }
     player clientfield::set_player_uimodel("huditems.abilityHoldToActivate", 0);
     player clientfield::set_player_uimodel("huditems.abilityDelayProgress", 0);
-    wait(isdefined(level.smartcoversettings.bundle.detonationtime) ? level.smartcoversettings.bundle.detonationtime : 0);
+    wait isdefined(level.smartcoversettings.bundle.detonationtime) ? level.smartcoversettings.bundle.detonationtime : 0;
     player.var_622765b5 = 0;
     player.var_d3bf8986 = 1;
     smartcover function_2a494565(1);
@@ -981,7 +981,7 @@ function turretdebugwatch() {
             waitframe(1);
             continue;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1106,7 +1106,7 @@ function microwaveentity(entity) {
             }
         }
         if (isdefined(entity.microwavedamageinitialdelay)) {
-            wait(randomfloatrange(0.1, 0.3));
+            wait randomfloatrange(0.1, 0.3);
             entity.microwavedamageinitialdelay = undefined;
         }
         entity thread status_effect::status_effect_apply(var_2b29cf8c, level.smartcoversettings.smartcoverweapon, self, 0);
@@ -1135,7 +1135,7 @@ function microwaveentity(entity) {
                 scoreevents::processscoreevent(#"hpm_suppress", turret.owner, entity, level.smartcoversettings.smartcoverweapon, turret.playersdamaged.size);
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

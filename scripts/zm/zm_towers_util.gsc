@@ -63,7 +63,7 @@ function function_48f49769() {
         if (isdefined(self.worldgundw)) {
             self.worldgundw rotateto(new_angles, waittime, waittime * 0.5, waittime * 0.5);
         }
-        wait(randomfloat(waittime - 0.1));
+        wait randomfloat(waittime - 0.1);
     }
 }
 
@@ -197,7 +197,7 @@ function function_afd37143(str_line) {
 function private function_9821b7f1(str_line) {
     self endon(#"disconnect");
     while (isdefined(self.zmannouncertalking) && self.zmannouncertalking || isdefined(self.isspeaking) && self.isspeaking || isdefined(self.var_5b6ebfd0) && self.var_5b6ebfd0) {
-        wait(0.5);
+        wait 0.5;
     }
     level zm_audio::sndannouncerplayvox(str_line, self);
 }

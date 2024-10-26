@@ -111,7 +111,7 @@ function function_de03ab6f() {
     if (time < 60) {
         time = 3;
     }
-    wait(time);
+    wait time;
 }
 
 // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
@@ -137,7 +137,7 @@ function function_f7dd380e() {
         waitframe(5);
         reached_score = function_efa3251f();
     } while (!reached_score);
-    wait(3);
+    wait 3;
 }
 
 // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
@@ -167,7 +167,7 @@ function function_b121d5f5() {
         if (i == 9) {
             exploder::exploder("fxexp_rocket_ignition");
         }
-        wait(1.2);
+        wait 1.2;
     }
 }
 
@@ -493,14 +493,14 @@ function kill_equipment(rocket_kill_trig) {
 // Size: 0xc0
 function function_c42e2ec1() {
     while (true) {
-        wait(3);
+        wait 3;
         function_aa8af5cd(level.var_40263d6, "evt_base_alarm");
-        wait(3);
+        wait 3;
         function_b121d5f5();
         function_aa8af5cd(level.var_40263d6, "evt_rocket_alarm");
-        wait(5);
+        wait 5;
         function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_3");
-        wait(3);
+        wait 3;
         function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_7");
     }
 }

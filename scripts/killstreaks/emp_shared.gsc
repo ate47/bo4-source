@@ -99,12 +99,12 @@ function deployempturret(emp) {
     emp.vehicle setanim(#"o_turret_emp_core_deploy", 1);
     length = getanimlength(#"o_turret_emp_core_deploy");
     emp.vehicle clientfield::set("emp_turret_deploy", 1);
-    wait(length * 0.75);
+    wait length * 0.75;
     emp.vehicle thread playempfx();
     emp.vehicle playsound(#"mpl_emp_turret_activate");
     emp.vehicle setanim(#"o_turret_emp_core_spin", 1);
     player thread emp_jamenemies(emp, 0);
-    wait(length * 0.25);
+    wait length * 0.25;
     emp.vehicle clearanim(#"o_turret_emp_core_deploy", 0);
 }
 
@@ -350,7 +350,7 @@ function emp_jamenemies(empent, hacked) {
     level notify(#"emp_updated");
     level notify(#"emp_deployed");
     visionsetnaked("flash_grenade", 1.5);
-    wait(0.1);
+    wait 0.1;
     visionsetnaked("flash_grenade", 0);
     visionsetnaked("default", 5);
     radius = isdefined(level.empkillstreakbundle.ksdamageradius) ? level.empkillstreakbundle.ksdamageradius : 750;

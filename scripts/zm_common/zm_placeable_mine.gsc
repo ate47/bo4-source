@@ -132,7 +132,7 @@ function private safe_to_plant() {
 // Checksum 0x1c5ffc79, Offset: 0x5f0
 // Size: 0x2c
 function private wait_and_detonate() {
-    wait(0.1);
+    wait 0.1;
     self detonate(self.owner);
 }
 
@@ -332,7 +332,7 @@ function private placeable_mine_damage() {
         break;
     }
     if (level.satchelexplodethisframe) {
-        wait(0.1 + randomfloat(0.4));
+        wait 0.1 + randomfloat(0.4);
     } else {
         waitframe(1);
     }

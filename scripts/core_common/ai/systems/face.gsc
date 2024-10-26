@@ -25,7 +25,7 @@ function saygenericdialogue(typestring) {
         importance = 0.4;
         break;
     case #"pain_bullet":
-        wait(0.01);
+        wait 0.01;
         importance = 0.4;
         break;
     default:
@@ -97,7 +97,7 @@ function playidleface() {
 function playfacethread(facialanim, str_script_alias, importance, notifystring, waitornot, timetowait, player_or_team) {
     self endon(#"death");
     if (!isdefined(str_script_alias)) {
-        wait(1);
+        wait 1;
         self notify(notifystring);
         return;
     }
@@ -123,7 +123,7 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
     if (self.istalking) {
         if (isdefined(self.a.currentdialogimportance)) {
             if (importance < self.a.currentdialogimportance) {
-                wait(1);
+                wait 1;
                 self notify(notifystring);
                 return;
             } else if (importance == self.a.currentdialogimportance) {
@@ -220,9 +220,9 @@ function _play_sound_to_player_with_notify(soundalias, player_or_team, uniquenot
     }
     n_playbacktime = soundgetplaybacktime(soundalias);
     if (n_playbacktime > 0) {
-        wait(n_playbacktime * 0.001);
+        wait n_playbacktime * 0.001;
     } else {
-        wait(1);
+        wait 1;
     }
     self notify(uniquenotify);
 }
@@ -284,7 +284,7 @@ function playface_waitfornotify(waitforstring, notifystring, killmestring) {
 // Size: 0x56
 function playface_waitfortime(time, notifystring, killmestring) {
     self endon(#"death", killmestring);
-    wait(time);
+    wait time;
     self.a.facewaitforresult = "time";
     self notify(notifystring);
 }

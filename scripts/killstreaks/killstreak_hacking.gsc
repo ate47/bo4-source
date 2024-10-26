@@ -172,7 +172,7 @@ function _update_health(hacker) {
         killstreakentity endon(#"killstreak_switch_team_singleton", #"death");
         setdvar(#"scr_killstreak_switch_team", "<dev string:xc4>");
         while (true) {
-            wait(0.5);
+            wait 0.5;
             devgui_int = getdvarint(#"scr_killstreak_switch_team", 0);
             if (devgui_int != 0) {
                 team = "<dev string:xc7>";
@@ -184,7 +184,7 @@ function _update_health(hacker) {
                 }
                 if (!isdefined(player)) {
                     println("<dev string:xd4>");
-                    wait(1);
+                    wait 1;
                     continue;
                 }
                 if (!isdefined(killstreakentity.killstreak_hackedcallback)) {
@@ -196,7 +196,7 @@ function _update_health(hacker) {
                 killstreakentity notify(#"killstreak_hacked", {#hacker:player});
                 killstreakentity.previouslyhacked = 1;
                 killstreakentity [[ killstreakentity.killstreak_hackedcallback ]](player);
-                wait(0.5);
+                wait 0.5;
                 setdvar(#"scr_killstreak_switch_team", 0);
                 return;
             }

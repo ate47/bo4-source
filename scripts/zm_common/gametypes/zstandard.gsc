@@ -241,7 +241,7 @@ function function_3b5fc043() {
 // Size: 0x44
 function intro_vox() {
     level endon(#"end_game");
-    wait(4);
+    wait 4;
     level thread zm_audio::sndannouncerplayvox(#"game_start");
 }
 
@@ -285,15 +285,15 @@ function function_744ee8ce() {
         level flag::wait_till_any(a_str_flags);
     }
     if (isdefined(self.script_delay)) {
-        wait(self.script_delay);
+        wait self.script_delay;
     }
     if (isdefined(self.script_objective)) {
-        wait(3);
+        wait 3;
         n_obj_id = gameobjects::get_next_obj_id();
         objective_add(n_obj_id, "active", self.origin, self.script_objective);
         function_da7940a3(n_obj_id, 1);
     }
-    wait(10);
+    wait 10;
     if (isdefined(n_obj_id)) {
         gameobjects::release_obj_id(n_obj_id);
     }
@@ -304,7 +304,7 @@ function function_744ee8ce() {
         var_ca20f133 = math::cointoss(75);
     }
     if (var_ca20f133) {
-        wait(randomfloatrange(1, 4));
+        wait randomfloatrange(1, 4);
         self.e_powerup = self zm_utility::function_ce46d95e(self.origin, isdefined(self.b_permanent) && self.b_permanent);
     }
 }
@@ -382,7 +382,7 @@ function function_c7201cb9() {
     level flag::wait_till("start_zombie_round_logic");
     while (true) {
         if (level.players.size == 1) {
-            wait(7);
+            wait 7;
             continue;
         }
         zm_score::function_bc9de425();
@@ -413,7 +413,7 @@ function function_c7201cb9() {
                 }
             }
         }
-        wait(7);
+        wait 7;
     }
 }
 
@@ -444,7 +444,7 @@ function function_6be33257() {
             if (player.var_72b24dc2 <= 5) {
                 player.var_72b24dc2 = 6;
             }
-            wait(1);
+            wait 1;
             continue;
         }
         switch (level.players.size) {
@@ -497,7 +497,7 @@ function function_6be33257() {
                 player.var_72b24dc2 = 6;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -804,7 +804,7 @@ function function_e03ea502() {
 function function_a097cde6() {
     self endon(#"disconnect");
     self.var_5288b14b = 1;
-    wait(0.5);
+    wait 0.5;
     self.var_5288b14b = undefined;
 }
 
@@ -823,11 +823,11 @@ function function_c1ab015e() {
     self thread tube_gruesome();
     clientfield::set_world_uimodel("PlayerList.client" + self.entity_num + ".multiplier_blink", 1);
     util::wait_network_frame();
-    wait(5);
+    wait 5;
     while (self.var_7e008e0c > 0) {
         self playsoundtoplayer(#"hash_10a416158cd8fd3a", self);
         self notify(#"multiplier_timeout");
-        wait(1);
+        wait 1;
     }
 }
 
@@ -839,7 +839,7 @@ function tube_gruesome() {
     self endon(#"hash_18be4b1da8bbed9b", #"disconnect", #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"hash_b696fc900429737", #"player_grabbed_key", #"multiplier_timeout");
     while (true) {
         self playsoundtoplayer(#"hash_11d338092fefba12", self);
-        wait(0.55);
+        wait 0.55;
     }
 }
 
@@ -1208,7 +1208,7 @@ function function_ac4cc1ba() {
                 ai_zombie thread zombie_utility::set_zombie_run_cycle("run");
             }
         }
-        wait(1);
+        wait 1;
         n_time++;
         a_ai_zombies = zombie_utility::get_round_enemy_array();
     }
@@ -1805,7 +1805,7 @@ function function_3166e32b() {
             level.var_b9f167ba self_revive_visuals_rush::open(self);
             for (i = 0; i < 5; i++) {
                 level.var_b9f167ba self_revive_visuals_rush::set_revive_time(self, 5 - i);
-                wait(1);
+                wait 1;
             }
         }
         self playsoundtoplayer(#"hash_1526662237d7780f", self);
@@ -1868,7 +1868,7 @@ function function_31094dd(var_a8903530 = 0) {
         return;
     }
     level.var_f5682bb8 thread zm_arcade_timer::function_88df772a(self, 120, #"hash_5e3423d08973905", 1);
-    wait(120);
+    wait 120;
     self notify(#"hash_387bb170e38042d5");
     self zm_player::spectator_respawn_player();
     self clientfield::set_world_uimodel("PlayerList.client" + self.entity_num + ".playerIsDowned", 0);
@@ -1909,7 +1909,7 @@ function function_9850b18() {
     self clientfield::set_to_player("" + #"hash_321b58d22755af74", 1);
     self playsound(#"zmb_bgb_plainsight_start");
     self playloopsound(#"zmb_bgb_plainsight_loop", 1);
-    wait(6);
+    wait 6;
     self stoploopsound(1);
     self playsound(#"zmb_bgb_plainsight_end");
     self clientfield::set_to_player("" + #"hash_321b58d22755af74", 0);
@@ -1939,7 +1939,7 @@ function function_4faf4020(str_notify) {
 function function_ae6cb441() {
     self endon(#"disconnect");
     level endon(#"end_game");
-    wait(0.25);
+    wait 0.25;
     w_current = self getcurrentweapon();
     n_stock_size = self getweaponammostock(w_current);
     n_clip_size = self getweaponammoclipsize(w_current);
@@ -2037,7 +2037,7 @@ function function_21669ebc(restart = 0) {
         println("<dev string:x30b>" + level.round_number + "<dev string:x327>" + players.size);
         level.round_start_time = gettime();
         while (level.zm_loc_types[#"zombie_location"].size <= 0) {
-            wait(0.1);
+            wait 0.1;
         }
         /#
             zkeys = getarraykeys(level.zones);
@@ -2087,7 +2087,7 @@ function function_21669ebc(restart = 0) {
         }
         if (zm_custom::function_901b751c(#"zmroundcap") == level.round_number && level.round_number != 0) {
             level.var_458eec65 = 1;
-            wait(3);
+            wait 3;
             zm_custom::function_9be9c072(#"zmroundcap");
             return;
         }
@@ -2145,7 +2145,7 @@ function function_cab8ebff(var_5707265b = 120) {
             var_5707265b = getdvarint(#"hash_1f243f823e1838d4", 0);
         }
     #/
-    wait(1);
+    wait 1;
     /#
         level thread zm_round_logic::print_zombie_counts();
         level thread zm_round_logic::sndmusiconkillround();
@@ -2165,7 +2165,7 @@ function function_cab8ebff(var_5707265b = 120) {
         if ((!var_7e5b8365 || level flag::get("end_round_wait")) && !level flag::get(#"infinite_round_spawning")) {
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -2220,7 +2220,7 @@ function function_f26f8251(str_archetype, n_player_count) {
     }
     for (i = 0; i < n_count_total; i++) {
         if (i == 0 && isdefined(self.var_37dc6df8)) {
-            wait(self.var_37dc6df8);
+            wait self.var_37dc6df8;
         }
         ai = undefined;
         while (!isdefined(ai)) {

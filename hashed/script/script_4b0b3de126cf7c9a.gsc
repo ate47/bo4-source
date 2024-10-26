@@ -55,7 +55,7 @@ function function_ad31c153() {
     self endon(#"death", #"bled_out");
     if (self laststand::player_is_in_laststand()) {
         self waittill(#"player_revived");
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -98,7 +98,7 @@ function function_81eaae89(e_player) {
 function function_40935801() {
     self notify(#"picked_up_pap");
     self endon(#"picked_up_pap", #"death", #"bled_out");
-    wait(30);
+    wait 30;
     self function_ad31c153();
     var_e8145621 = self getweaponslistprimaries();
     w_current_weapon = self getcurrentweapon();
@@ -127,7 +127,7 @@ function function_40935801() {
 function function_35ae342e(e_player) {
     if (e_player isthrowinggrenade()) {
         while (e_player getcurrentweapon() == getweapon(#"none")) {
-            wait(0.1);
+            wait 0.1;
         }
     }
     w_current_weapon = e_player getcurrentweapon();
@@ -160,7 +160,7 @@ function function_35ae342e(e_player) {
 function private function_d0ea0364(w_upgrade_weapon) {
     self notify("picked_up_pap_" + w_upgrade_weapon.name);
     self endon("picked_up_pap_" + w_upgrade_weapon.name);
-    wait(30);
+    wait 30;
     var_75c77fa = self zm_weapons::get_base_weapon(w_upgrade_weapon);
     a_w_weapons = self getweaponslist();
     foreach (w_weapon in a_w_weapons) {

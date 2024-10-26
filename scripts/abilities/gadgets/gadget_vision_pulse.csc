@@ -149,7 +149,7 @@ function function_5f4276b8() {
 // Size: 0x50
 function function_3e2cd736(local_client_num) {
     self endon(#"stop_googles");
-    wait(0.8);
+    wait 0.8;
     level.vision_pulse[local_client_num] = 1;
     level notify(#"hash_7f642789ed08aae0");
 }
@@ -160,7 +160,7 @@ function function_3e2cd736(local_client_num) {
 // Size: 0x50
 function function_43c942dc(local_client_num) {
     self endon(#"stop_googles");
-    wait(0.85);
+    wait 0.85;
     level.vision_pulse[local_client_num] = 0;
     level notify(#"hash_7f642789ed08aae0");
 }
@@ -282,7 +282,7 @@ function function_844dbcb7(localclientnum) {
     self notify(#"hash_72d43e802a417711");
     self endon(#"hash_72d43e802a417711");
     self endon(#"activation_confirmed");
-    wait(2);
+    wait 2;
     if (isdefined(self) && self function_da43934d()) {
         self stop_postfx(1);
         self clearanim(#"pt_recon_t8_stand_vision_pulse_goggles_down_loop", 0);
@@ -418,7 +418,7 @@ function do_vision_local_pulse(localclientnum) {
 // Size: 0x74
 function function_85790e6c(localclientnum) {
     self endon(#"death", #"disconnect", #"rob_cleanup");
-    wait(1);
+    wait 1;
     self stop_postfx();
     self function_f4ebfe85(localclientnum);
 }

@@ -378,7 +378,7 @@ function onscoreclosemusic() {
             level notify(#"sndmusichalfway");
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -545,7 +545,7 @@ function function_7913d068(hideduration) {
         } else if (var_4dd94c4c == 0 && n_current_time >= 0) {
             playsoundatposition("uin_ph_ready", (0, 0, 0));
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -668,7 +668,7 @@ function whistlestarttimer_internal(counttime) {
     waittillframeend();
     while (counttime > 0 && !level.gameended) {
         counttime--;
-        wait(1);
+        wait 1;
     }
 }
 
@@ -801,7 +801,7 @@ function get_alive_nonspecating_players(team) {
 function function_3a38741e() {
     level notify(#"huntersforfeit");
     level endon(#"huntersforfeit", #"game_ended");
-    wait(5);
+    wait 5;
     numhunters = 0;
     foreach (player in level.players) {
         if (isdefined(player) && isalive(player) && player.team === game.attackers) {
@@ -1887,7 +1887,7 @@ function waittillrecoveredhealth(time, interval) {
         } else {
             fullhealthtime += interval;
         }
-        wait(interval);
+        wait interval;
         if (self.health == self.maxhealth && fullhealthtime >= time) {
             break;
         }
@@ -2616,7 +2616,7 @@ function waittillcanspawnclient() {
     self endon(#"started_spawnplayer", #"disconnect");
     level endon(#"game_ended");
     for (;;) {
-        wait(0.05);
+        wait 0.05;
         if (isdefined(self) && isdefined(self.curclass) && (self.sessionstate == "spectator" || !isalive(self))) {
             self.pers[#"lives"] = 1;
             self globallogic_spawn::spawnclient();
@@ -3062,10 +3062,10 @@ function propminigameupdateshowwinner(hud, winyoffset, winfontscale) {
     showtime = 2.5;
     fadetime = 0.5;
     hud.fontscale = winfontscale;
-    wait(movetime + showtime);
+    wait movetime + showtime;
     hud.alpha = 0;
     /#
-        wait(fadetime);
+        wait fadetime;
     #/
 }
 
@@ -3136,7 +3136,7 @@ function function_19f7e795(player) {
     level endon(#"game_ended");
     if (!isdefined(player.var_a920bfdd)) {
         function_241f7953();
-        wait(0.1);
+        wait 0.1;
         clone = util::spawn_player_clone(player, "pb_stand_alert");
         weapon = player getcurrentweapon();
         if (isdefined(weapon.worldmodel)) {
@@ -3467,9 +3467,9 @@ function function_f6f7aa90(titlelabel) {
 // Size: 0x34
 function function_58fbc880() {
     level endon(#"game_ended");
-    wait(5.5);
-    wait(1);
-    wait(1);
+    wait 5.5;
+    wait 1;
+    wait 1;
 }
 
 // Namespace prop/prop
@@ -3491,7 +3491,7 @@ function function_45080877(player) {
 function function_2e77fae3(delaytime) {
     level endon(#"game_ended");
     if (isdefined(delaytime)) {
-        wait(delaytime);
+        wait delaytime;
     }
     hunters = getlivingplayersonteam(game.attackers);
     var_1d660206 = array::merge_sort(hunters, &function_d2b8eac6);
@@ -3711,7 +3711,7 @@ function _updateclonepathing() {
                 self._clone_goal_max_dist = 750;
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -3772,7 +3772,7 @@ function function_80334286(damage, attacker, direction_vec, point, meansofdeath,
 // Checksum 0xb9d7fe9b, Offset: 0xe910
 // Size: 0x64
 function private set_ui_team() {
-    wait(0.05);
+    wait 0.05;
     if (game.attackers == #"allies") {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
         return;

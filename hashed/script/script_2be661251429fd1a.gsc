@@ -1514,7 +1514,7 @@ function function_8f5d7136(actionparams) {
     while (!self function_a39f313c() || self getcurrentweapon() != scorestreakweapon) {
         self waittill(#"hash_347a612b61067eb3");
     }
-    wait(0.5);
+    wait 0.5;
     self bot_action::function_8a2b82ad(actionparams);
     self bot_action::aim_at_target(actionparams);
     while (self botgetlookdot() < 0.999 || self istraversing()) {
@@ -1593,13 +1593,13 @@ function activate_turret(actionparams) {
         self bot_action::function_8a2b82ad(actionparams);
         self bot_action::aim_at_target(actionparams);
     }
-    wait(0.5);
+    wait 0.5;
     starttime = gettime();
     while (self getcurrentweapon() == scorestreakweapon && gettime() - starttime < 1000) {
         self bottapbutton(0);
         self waittill(#"hash_347a612b61067eb3");
     }
-    wait(1);
+    wait 1;
     while (!self function_a39f313c() || self getcurrentweapon() == level.weaponnone) {
         self waittill(#"hash_347a612b61067eb3");
     }
@@ -1617,7 +1617,7 @@ function function_27f291e1(actionparams) {
     while (!isdefined(self.rocket) && gettime() - starttime < 4000) {
         self waittill(#"hash_347a612b61067eb3");
     }
-    wait(1);
+    wait 1;
     starttime = gettime();
     boosted = 0;
     while (isdefined(self.rocket)) {
@@ -1654,7 +1654,7 @@ function function_27f291e1(actionparams) {
                 boosted = 1;
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
     while (!self function_a39f313c() || self getcurrentweapon() == level.weaponnone) {
         self waittill(#"hash_347a612b61067eb3");
@@ -1682,7 +1682,7 @@ function function_7d799351(actionparams) {
             self bot_action::aim_at_target(actionparams);
         }
         self bottapbutton(0);
-        wait(0.5);
+        wait 0.5;
     }
 }
 

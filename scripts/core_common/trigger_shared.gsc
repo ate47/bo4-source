@@ -273,7 +273,7 @@ function friendly_respawn_trigger(trigger) {
             level.respawn_spawner = spawner;
         }
         level flag::set("respawn_friendlies");
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -286,7 +286,7 @@ function friendly_respawn_clear(trigger) {
     while (true) {
         trigger waittill(#"trigger");
         level flag::clear("respawn_friendlies");
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -373,7 +373,7 @@ function trigger_once(s_info) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0xe3f74422, Offset: 0x15c0
 // Size: 0xf2
 function get_all(...) {
@@ -394,7 +394,7 @@ function get_all(...) {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0x2a5ceadc, Offset: 0x16c0
 // Size: 0x72
 function is_trigger_of_type(...) {
@@ -455,7 +455,7 @@ function _trigger_wait(e_entity) {
     while (true) {
         if (is_look_trigger()) {
             waitresult = self waittill(#"trigger_look");
-            wait(self.delaynotify);
+            wait self.delaynotify;
             e_other = waitresult.activator;
             if (isdefined(e_entity)) {
                 if (e_other !== e_entity) {
@@ -464,7 +464,7 @@ function _trigger_wait(e_entity) {
             }
         } else if (self.classname === "trigger_damage") {
             waitresult = self waittill(#"trigger");
-            wait(self.delaynotify);
+            wait self.delaynotify;
             e_other = waitresult.activator;
             if (isdefined(e_entity)) {
                 if (e_other !== e_entity) {
@@ -473,7 +473,7 @@ function _trigger_wait(e_entity) {
             }
         } else {
             waitresult = self waittill(#"trigger");
-            wait(self.delaynotify);
+            wait self.delaynotify;
             e_other = waitresult.activator;
             if (isdefined(e_entity)) {
                 if (isarray(e_entity)) {
@@ -610,7 +610,7 @@ function is_trigger_once() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0x696c5e08, Offset: 0x2190
 // Size: 0x1b2
 function wait_till_any(...) {
@@ -682,7 +682,7 @@ function trigger_on_timeout(n_time, b_cancel_on_triggered = 1, str_name, str_key
         }
     }
     trig endon(#"death");
-    wait(n_time);
+    wait n_time;
     trig use();
 }
 
@@ -848,7 +848,7 @@ function trigger_wait() {
 }
 
 // Namespace trigger/trigger_shared
-// Params 2, eflags: 0x20
+// Params 2, eflags: 0x20 variadic
 // Checksum 0x595c9d20, Offset: 0x2d00
 // Size: 0x10c
 function run(func, ...) {

@@ -85,16 +85,16 @@ function function_a1b7b263(e_player) {
     var_51dacd00 = 0;
     var_4da5977e = (0, randomfloatrange(0, 360), 0);
     s_waitresult = self waittill(#"stationary");
-    wait(1);
+    wait 1;
     while (var_51dacd00 < 6) {
         var_5543f2a9 = array::random(level.var_e027f904);
         e_player magicgrenadetype(var_5543f2a9, self getcentroid(), get_launch_velocity(var_4da5977e), 1);
         self playsound(#"hash_23ebdfd906eaff00");
         var_4da5977e += (0, randomfloatrange(60, 180), 0);
         var_51dacd00++;
-        wait(0.4);
+        wait 0.4;
     }
-    wait(1);
+    wait 1;
     self detonate(e_player);
 }
 

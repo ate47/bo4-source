@@ -219,7 +219,7 @@ function exploder_stop(num) {
 // Size: 0x3c
 function exploder_sound() {
     if (isdefined(self.script_delay)) {
-        wait(self.script_delay);
+        wait self.script_delay;
     }
     self playsound(level.scr_sound[self.script_sound]);
 }
@@ -321,7 +321,7 @@ function trail_effect() {
     if (!isdefined(self.v[#"trailfxtimeout"])) {
         return;
     }
-    wait(self.v[#"trailfxtimeout"]);
+    wait self.v[#"trailfxtimeout"];
     if (isdefined(temp_ent)) {
         temp_ent delete();
     }
@@ -354,7 +354,7 @@ function exploder_delay() {
         max_delay = self.v[#"delay_max"];
     }
     if (min_delay > 0) {
-        wait(randomfloatrange(min_delay, max_delay));
+        wait randomfloatrange(min_delay, max_delay);
     }
 }
 
@@ -376,9 +376,9 @@ function exploder_playsound() {
 function brush_delete() {
     num = self.v[#"exploder"];
     if (isdefined(self.v[#"delay"])) {
-        wait(self.v[#"delay"]);
+        wait self.v[#"delay"];
     } else {
-        wait(0.05);
+        wait 0.05;
     }
     if (!isdefined(self.model)) {
         return;
@@ -397,7 +397,7 @@ function brush_delete() {
 // Size: 0x8c
 function brush_show() {
     if (isdefined(self.v[#"delay"])) {
-        wait(self.v[#"delay"]);
+        wait self.v[#"delay"];
     }
     assert(isdefined(self.model));
     self.model show();
@@ -410,7 +410,7 @@ function brush_show() {
 // Size: 0x224
 function brush_throw() {
     if (isdefined(self.v[#"delay"])) {
-        wait(self.v[#"delay"]);
+        wait self.v[#"delay"];
     }
     ent = undefined;
     if (isdefined(self.v[#"target"])) {
@@ -431,7 +431,7 @@ function brush_throw() {
     self.model rotatevelocity((x, y, z), 12);
     self.model movegravity((x, y, z), 12);
     self.v[#"exploder"] = undefined;
-    wait(6);
+    wait 6;
     self.model delete();
 }
 
@@ -445,9 +445,9 @@ function exploder_trigger(trigger, script_value) {
     trigger trigger::wait_till();
     if (isdefined(trigger.script_chance) && randomfloat(1) > trigger.script_chance) {
         if (isdefined(trigger.script_delay)) {
-            wait(trigger.script_delay);
+            wait trigger.script_delay;
         } else {
-            wait(4);
+            wait 4;
         }
         level thread exploder_trigger(trigger, script_value);
         return;
@@ -659,7 +659,7 @@ function exploder_damage() {
     }
     damage = self.v[#"damage"];
     origin = self.v[#"origin"];
-    wait(delay);
+    wait delay;
     self.model radiusdamage(origin, radius, damage, damage / 3);
 }
 
@@ -701,7 +701,7 @@ function rumble() {
 // Checksum 0x3629af0f, Offset: 0x2dd8
 // Size: 0x2c
 function stop_after_duration(name, duration) {
-    wait(duration);
+    wait duration;
     stop_exploder(name);
 }
 

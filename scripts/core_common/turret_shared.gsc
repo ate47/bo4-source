@@ -100,7 +100,7 @@ function watch_for_flash_and_stun(n_index) {
             }
             self.stunned = 1;
             stop(n_index, 1);
-            wait(randomfloatrange(5, 7));
+            wait randomfloatrange(5, 7);
             self.stunned = undefined;
         }
     }
@@ -124,7 +124,7 @@ function emp_watcher(n_index) {
                 self laseroff();
             }
             stop(n_index, 1);
-            wait(randomfloatrange(5, 7));
+            wait randomfloatrange(5, 7);
             self.emped = undefined;
             if (isdefined(_get_turret_data(n_index).has_laser)) {
                 self laseron();
@@ -493,7 +493,7 @@ function _shoot_turret_at_target(e_target, n_time, v_offset, n_index, b_just_onc
 // Size: 0xa2
 function _waittill_turret_on_target(e_target, n_index) {
     do {
-        wait(isdefined(self.waittill_turret_on_target_delay) ? self.waittill_turret_on_target_delay : 0.5);
+        wait isdefined(self.waittill_turret_on_target_delay) ? self.waittill_turret_on_target_delay : 0.5;
         if (!isdefined(n_index) || n_index == 0) {
             self waittill(#"turret_on_target");
             continue;
@@ -605,7 +605,7 @@ function _turret_think(n_index, v_offset) {
         s_turret flag::wait_till_clear("turret manual");
         n_time_now = gettime();
         if (self _check_for_paused(n_index) || isdefined(self.emped) || isdefined(self.stunned)) {
-            wait(turret_think_time);
+            wait turret_think_time;
             continue;
         }
         if (!isdefined(s_turret.e_target) || s_turret.e_target.health < 0) {
@@ -649,7 +649,7 @@ function _turret_think(n_index, v_offset) {
         if (!(isdefined(s_turret.disable_ai_getoff) && s_turret.disable_ai_getoff) && _has_nearby_player_enemy(n_index, self)) {
             _drop_turret(n_index, 0);
         }
-        wait(turret_think_time);
+        wait turret_think_time;
     }
 }
 
@@ -808,7 +808,7 @@ function _user_check(n_index) {
         v_color = (0, 0, 1);
         while (true) {
             if (!getdvarint(#"g_debugturrets", 0)) {
-                wait(0.2);
+                wait 0.2;
                 continue;
             }
             has_target = isdefined(get_target(n_index));
@@ -980,7 +980,7 @@ function _burst_fire(n_max_time, n_index) {
         s_turret.n_burst_fire_time = 0;
         n_time_since_last_shot = float(gettime() - s_turret.n_last_fire_time) / 1000;
         if (n_time_since_last_shot < n_burst_wait) {
-            wait(n_burst_wait - n_time_since_last_shot);
+            wait n_burst_wait - n_time_since_last_shot;
         }
     } else {
         n_burst_time -= s_turret.n_burst_fire_time;
@@ -992,10 +992,10 @@ function _burst_fire(n_max_time, n_index) {
         fire(n_index);
         n_total_time += n_fire_time;
         s_turret.n_burst_fire_time += n_fire_time;
-        wait(n_fire_time);
+        wait n_fire_time;
     }
     if (n_burst_wait > 0) {
-        wait(n_burst_wait);
+        wait n_burst_wait;
     }
     return n_burst_time + n_burst_wait;
 }
@@ -1176,7 +1176,7 @@ function track_lens_flare() {
                 self toggle_lensflare(0);
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

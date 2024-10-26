@@ -36,7 +36,7 @@ function on_player_connect(localclientnum) {
 // Size: 0x1fa
 function bloody_tracker(localclientnum) {
     while (true) {
-        wait(0.2);
+        wait 0.2;
         if (!function_5778f82(localclientnum, #"specialty_tracker")) {
             continue;
         }

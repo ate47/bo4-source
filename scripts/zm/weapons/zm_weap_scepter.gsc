@@ -176,7 +176,7 @@ function private function_4521ac7e(w_curr, n_lvl) {
         self.var_1de56cc8 = 1;
         self thread function_be8ae52f(w_curr);
         self notify(#"ammo_reduction", {#weapon:w_curr});
-        wait(0.1);
+        wait 0.1;
         var_43b42a60 = 1;
         do {
             waitframe(1);
@@ -568,7 +568,7 @@ function function_254a7556() {
     self endon(#"disconnect", #"laststand", #"stop_damage");
     while (true) {
         self thread scepter_rumble(5);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -605,7 +605,7 @@ function reset_override(s_params) {
         e_revivee.var_84280a99 = undefined;
         val::reset(#"zm_weap_scepter", "disable_health_regen_delay");
         e_revivee.var_4fc8bf2a = undefined;
-        wait(0.2);
+        wait 0.2;
         e_revivee.var_fbc66a96 = undefined;
         if (e_revivee clientfield::get("" + #"zombie_scepter_revive")) {
             if (isdefined(e_revivee)) {
@@ -757,7 +757,7 @@ function function_97429d68(n_time = 5) {
         self thread namespace_9ff9f642::slowdown(#"hash_6c580993aa401a5b");
     }
     self clientfield::set("" + #"zombie_scepter_stun", 1);
-    wait(n_time);
+    wait n_time;
     if (!(isdefined(self.var_693f4e69) && self.var_693f4e69)) {
         self clientfield::set("" + #"zombie_scepter_stun", 0);
     }
@@ -786,7 +786,7 @@ function function_75e6e51c(n_time = 5, e_attacker) {
     }
     self clientfield::set("" + #"zombie_scepter_stun", 1);
     for (x = 0; x < n_time / 0.5; x++) {
-        wait(0.5);
+        wait 0.5;
         [[ level.var_cfeea502 ]]->waitinqueue(self);
         self dodamage(n_damage, self.origin, e_attacker, e_attacker);
     }
@@ -1056,7 +1056,7 @@ function beacon_rumble() {
     self endon(#"disconnect", #"beacon_fx_off");
     while (isdefined(self.mdl_beacon)) {
         self.mdl_beacon playrumbleonentity(#"hash_2bdce8ff08474d57");
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -1108,7 +1108,7 @@ function beacon_loop(w_beacon, var_4eaa1f4c) {
         if (!isdefined(var_adaf2ccb)) {
             var_adaf2ccb = 0.25;
         }
-        wait(var_adaf2ccb);
+        wait var_adaf2ccb;
     }
 }
 
@@ -1264,7 +1264,7 @@ function function_4451b45f() {
     self notify("50c5b852bd6ed496");
     self endon("50c5b852bd6ed496");
     self function_eae0296b(#"hero_scepter_lv2");
-    wait(0.3);
+    wait 0.3;
     self function_89fc5431();
 }
 

@@ -88,11 +88,11 @@ function function_1ed795b7(localclientnum, oldval, newval, bnewent, binitialsnap
             exploder::stop_exploder("fxexp_script_boardroom_flicker");
             waitframe(1);
             exploder::exploder("fxexp_script_boardroom_flicker");
-            wait(randomfloatrange(0.1, 0.5));
+            wait randomfloatrange(0.1, 0.5);
             exploder::stop_exploder("fxexp_script_boardroom_flicker");
-            wait(randomfloatrange(0.025, 0.125));
+            wait randomfloatrange(0.025, 0.125);
         }
-        wait(0.3);
+        wait 0.3;
     }
 }
 
@@ -105,11 +105,11 @@ function function_93f4e0e6(localclientnum, oldval, newval, bnewent, binitialsnap
         exploder::stop_exploder("fxexp_script_flicker_dim");
         waitframe(1);
         exploder::exploder("fxexp_script_flicker_always");
-        wait(randomfloatrange(0.1, 0.5));
+        wait randomfloatrange(0.1, 0.5);
         exploder::exploder("fxexp_script_flicker_dim");
         waitframe(1);
         exploder::stop_exploder("fxexp_script_flicker_always");
-        wait(randomfloatrange(0.025, 0.125));
+        wait randomfloatrange(0.025, 0.125);
     }
 }
 

@@ -52,7 +52,7 @@ function function_3781ff37(b_pause, str_perk, str_result, n_slot) {
 function function_9335851() {
     self endon(#"disconnect", #"hash_73b1e35c66a4e898");
     while (true) {
-        wait(1);
+        wait 1;
         a_weapons = self getweaponslistprimaries();
         foreach (weapon in a_weapons) {
             w_current = self getcurrentweapon();

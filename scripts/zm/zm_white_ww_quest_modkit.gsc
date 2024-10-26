@@ -186,7 +186,7 @@ function function_584d6092(e_user) {
     e_user.var_382b64f2 = undefined;
     e_user.var_f7694097 = undefined;
     e_user.var_9c20e2c9 = undefined;
-    wait(4.1);
+    wait 4.1;
     self.b_in_use = undefined;
 }
 
@@ -221,7 +221,7 @@ function function_9dc2db01(var_4bef01e6, str_color) {
         break;
     }
     self scene::play("fill");
-    wait(var_4bef01e6);
+    wait var_4bef01e6;
     self scene::play("empty");
 }
 

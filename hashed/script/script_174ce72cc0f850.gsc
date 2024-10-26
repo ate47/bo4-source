@@ -97,7 +97,7 @@ function private soul_captured(var_f0e6c7a2, ent) {
 function private function_fab8c488() {
     self endon(#"death", #"event_end");
     while (self zm_hms_util::function_b8a27acc()) {
-        wait(0.1);
+        wait 0.1;
     }
     self thread player_enter_watcher();
     self thread function_b1e6482f();
@@ -110,7 +110,7 @@ function private function_fab8c488() {
 function private player_enter_watcher() {
     self endon(#"death", #"event_end");
     while (!self zm_hms_util::function_b8a27acc()) {
-        wait(0.1);
+        wait 0.1;
     }
     self notify(#"player_enter");
     self thread function_fab8c488();
@@ -122,7 +122,7 @@ function private player_enter_watcher() {
 // Size: 0x7c
 function private function_b1e6482f() {
     self endon(#"death", #"player_enter", #"event_end");
-    wait(5);
+    wait 5;
     level thread [[ level.var_345df07[self.id].var_af245552 ]]();
     end(self.id);
 }

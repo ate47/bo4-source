@@ -69,7 +69,7 @@ function play_banter(player1, player2, alias1, alias2) {
             waitframe(1);
         }
     }
-    wait(0.2);
+    wait 0.2;
     player2 playsound(-1, alias2);
 }
 

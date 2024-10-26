@@ -140,7 +140,7 @@ function function_b66b2f4d() {
     self endon(#"projectile_impact_explode", #"death");
     while (true) {
         self.var_59ba00f5 = self getvelocity();
-        wait(float(function_60d95f53()) / 1000);
+        wait float(function_60d95f53()) / 1000;
     }
 }
 
@@ -187,7 +187,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
             var_1b1117c6 = 1.2 * var_69d15ad0[#"fraction"];
             var_87d082a9 = normal;
             if (var_1b1117c6 > 0) {
-                wait(var_1b1117c6);
+                wait var_1b1117c6;
             }
         } else {
             return;
@@ -242,7 +242,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
             }
             var_bc9ec158 = 0.6 * var_69d15ad0[#"fraction"];
             if (var_bc9ec158 > 0) {
-                wait(var_bc9ec158);
+                wait var_bc9ec158;
             }
         }
     }
@@ -431,7 +431,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
 // Checksum 0x72227895, Offset: 0x2418
 // Size: 0x9c
 function function_42b9fdbe(weapon, loc, normal, duration, team, mdl_anchor) {
-    wait(randomfloatrange(0, 0.5));
+    wait randomfloatrange(0, 0.5);
     var_af1bdf1 = function_a25dee15(weapon, loc, normal, duration, team);
     var_af1bdf1 function_4e5a1dd3(mdl_anchor);
 }
@@ -553,7 +553,7 @@ function damageeffectarea(owner, position, killcament, normal, weapon, customset
         if (is_round_reset()) {
             break;
         }
-        wait(customsettings.var_90bd7d92);
+        wait customsettings.var_90bd7d92;
     }
     arrayremovevalue(self.var_ebf0b1c9, undefined);
     foreach (target in self.var_ebf0b1c9) {
@@ -645,7 +645,7 @@ function function_e7f6e154(n_count_per_network_frame = 1) {
 function stopfiresound() {
     firesound = self;
     firesound stoploopsound(2);
-    wait(0.5);
+    wait 0.5;
     if (isdefined(firesound)) {
         firesound delete();
     }
@@ -680,7 +680,7 @@ function function_9464e4ad(owner, position, killcament, normal, weapon, customse
         if (is_round_reset()) {
             break;
         }
-        wait(customsettings.var_8fbd03cb);
+        wait customsettings.var_8fbd03cb;
     }
     arrayremovevalue(self.var_ebf0b1c9, undefined);
     foreach (target in self.var_ebf0b1c9) {
@@ -923,7 +923,7 @@ function sndfiredamage() {
         self thread sndfiredamage_deleteent(self.sndfireent);
     }
     self.sndfireent playloopsound(#"chr_burn_start_loop", 0.5);
-    wait(3);
+    wait 3;
     if (isdefined(self.sndfireent)) {
         self.sndfireent delete();
         self.sndfireent = undefined;
@@ -983,7 +983,7 @@ function candofiredamage(killcament, victim, resetfiretime) {
 // Size: 0x44
 function resetfiredamage(entnum, time) {
     if (time > 0.05) {
-        wait(time - 0.05);
+        wait time - 0.05;
     }
     level.var_660293e0[entnum] = undefined;
 }

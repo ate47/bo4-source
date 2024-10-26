@@ -119,7 +119,7 @@ function event_handler[missile_fire] function_a3d258b6(eventstruct) {
         level.debug_missile_dots = [];
         while (true) {
             if (getdvarint(#"scr_debug_missile", 0) == 0) {
-                wait(0.5);
+                wait 0.5;
                 continue;
             }
             if (isdefined(missile)) {
@@ -652,7 +652,7 @@ function looplocalseeksound(alias, interval) {
     for (;;) {
         self playsoundforlocalplayer(alias);
         self playrumbleonentity("stinger_lock_rumble");
-        wait(interval / 2);
+        wait interval / 2;
     }
 }
 
@@ -684,13 +684,13 @@ function looplocallocksound(alias, interval) {
     for (;;) {
         self playsoundforlocalplayer(alias);
         self playrumbleonentity("stinger_lock_rumble");
-        wait(interval / 6);
+        wait interval / 6;
         self playsoundforlocalplayer(alias);
         self playrumbleonentity("stinger_lock_rumble");
-        wait(interval / 6);
+        wait interval / 6;
         self playsoundforlocalplayer(alias);
         self playrumbleonentity("stinger_lock_rumble");
-        wait(interval / 6);
+        wait interval / 6;
         self stoprumble("stinger_lock_rumble");
     }
     self.stingerlocksound = undefined;
@@ -1028,7 +1028,7 @@ function missiletarget_lockonmonitor(player, endon1, endon2) {
                 self clientfield::set("heli_warn_locked", 0);
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

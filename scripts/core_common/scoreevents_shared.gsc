@@ -146,9 +146,9 @@ function shouldaddrankxp(player) {
 // Size: 0x9c
 function uninterruptedobitfeedkills(attacker, weapon) {
     self endon(#"disconnect");
-    wait(0.1);
+    wait 0.1;
     util::waittillslowprocessallowed();
-    wait(0.1);
+    wait 0.1;
     if (isdefined(attacker)) {
         processscoreevent(#"uninterrupted_obit_feed_kills", attacker, self, weapon);
         attacker contracts::increment_contract(#"contract_mp_quad_feed");
@@ -161,7 +161,7 @@ function uninterruptedobitfeedkills(attacker, weapon) {
 // Size: 0x64
 function function_c046c773(waitduration, event, player, victim, weapon) {
     self endon(#"disconnect");
-    wait(waitduration);
+    wait waitduration;
     processscoreevent(event, player, victim, weapon);
 }
 
@@ -182,7 +182,7 @@ function isregisteredevent(type) {
 // Size: 0x4c
 function decrementlastobituaryplayercountafterfade() {
     level endon(#"reset_obituary_count");
-    wait(5);
+    wait 5;
     level.lastobituaryplayercount--;
     assert(level.lastobituaryplayercount >= 0);
 }

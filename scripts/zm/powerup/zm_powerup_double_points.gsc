@@ -93,7 +93,7 @@ function double_points_powerup(drop_item, player) {
     if (bgb::is_team_enabled(#"zm_bgb_temporal_gift")) {
         n_wait += 30;
     }
-    wait(n_wait);
+    wait n_wait;
     zombie_utility::set_zombie_var_team(#"zombie_point_scalar", team, 1);
     level._race_team_double_points = undefined;
     players = getplayers();

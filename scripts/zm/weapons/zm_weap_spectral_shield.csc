@@ -151,7 +151,7 @@ function private function_85e7adcf(localclientnum) {
             }
             var_61467197 = level.var_22a393d4.size;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -327,7 +327,7 @@ function function_64148d8e(localclientnum) {
         return;
     }
     self endon(#"death", #"hash_4ea2d9a0f785e09b");
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self) && isdefined(self.var_4cd8e6cb)) {
         self stoploopsound(self.var_4cd8e6cb);
         self.var_4cd8e6cb = undefined;
@@ -432,7 +432,7 @@ function function_3f83a22f(localclientnum, oldval, newval, bnewent, binitialsnap
             self.var_5427d523 = 1;
             self.var_aa9e07fe[localclientnum] = util::playfxontag(localclientnum, level._effect[#"spectral_heal"], self, "j_spine4");
             fxhandle = self.var_aa9e07fe[localclientnum];
-            wait(0.5);
+            wait 0.5;
             if (isdefined(fxhandle)) {
                 stopfx(localclientnum, fxhandle);
                 if (isdefined(self)) {
@@ -455,12 +455,12 @@ function private function_5ab769d8(localclientnum) {
     self notify(#"hash_360be32d770a6eb2");
     self endon(#"death", #"hash_360be32d770a6eb2", #"hash_4ea2d9a0f785e09b");
     self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_hit_rumble");
-    wait(0.5);
+    wait 0.5;
     while (true) {
         if (isplayer(self) && self function_21c0fa55()) {
             self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_rumble");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

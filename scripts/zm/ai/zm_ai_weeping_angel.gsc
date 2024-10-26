@@ -78,7 +78,7 @@ function private function_d8a99ae2() {
 // Size: 0x34
 function private function_487069e4() {
     self endon(#"death");
-    wait(1);
+    wait 1;
     self disableaimassist();
 }
 

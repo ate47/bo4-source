@@ -77,10 +77,10 @@ function ambient_flak_think(point) {
             point.is_firing = 1;
             playfx(0, level._effect[point.fx_id], point.origin, point.forward, point.up);
             thread sound::play_in_space(0, "wpn_triple25_fire", point.origin);
-            wait(0.2);
+            wait 0.2;
         }
         point.is_firing = 0;
-        wait(randomfloatrange(min_delay, max_delay));
+        wait randomfloatrange(min_delay, max_delay);
     }
 }
 
@@ -107,7 +107,7 @@ function ambient_flak_rotate(point) {
         for (i = 0; i < steps; i++) {
             point.forward += diff_forward;
             point.up += diff_up;
-            wait(0.1);
+            wait 0.1;
         }
         point.forward = forward;
         point.up = up;
@@ -132,7 +132,7 @@ function ambient_flak_flash(point, min_burst_time, max_burst_time) {
     fxpos = undefined;
     while (true) {
         if (!point.is_firing) {
-            wait(0.25);
+            wait 0.25;
             continue;
         }
         fxpos = point.origin + vectorscale(point.forward, randomintrange(min_dist, max_dist));
@@ -140,7 +140,7 @@ function ambient_flak_flash(point, min_burst_time, max_burst_time) {
         if (isdefined(level.timeofday) && (level.timeofday == "evening" || level.timeofday == "night")) {
             playfx(0, level._effect[#"flak_cloudflash_night"], fxpos);
         }
-        wait(randomfloatrange(min_burst_time, max_burst_time));
+        wait randomfloatrange(min_burst_time, max_burst_time);
     }
 }
 
@@ -295,9 +295,9 @@ function ambient_fakefire_think(point) {
                 bullettracer(point.origin, target);
             }
             playfx(0, level._effect[point.fx_id], point.origin, point.forward);
-            wait(randomfloatrange(betweenshotsmin, betweenshotsmax));
+            wait randomfloatrange(betweenshotsmin, betweenshotsmax);
         }
-        wait(randomfloatrange(reloadtimemin, reloadtimemax));
+        wait randomfloatrange(reloadtimemin, reloadtimemax);
     }
 }
 
@@ -467,7 +467,7 @@ function clock_run(time_values) {
             self rotatepitch(time_values[#"rotate_bit"], 0.05);
             prev_time = curr_time;
         }
-        wait(1);
+        wait 1;
     }
 }
 

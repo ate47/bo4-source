@@ -101,7 +101,7 @@ function function_bb4b8cd2(localclientnum, oldval, newval, bnewent, binitialsnap
         player_vec = player_pos - var_f6289db0.origin;
         angles = vectortoangles(player_vec);
         var_f6289db0 rotateto(angles, 0.2);
-        wait(0.2);
+        wait 0.2;
         if (isdefined(self)) {
             self thread postfx::playpostfxbundle(#"hash_37d0c10f478e0376");
             playsound(localclientnum, #"hash_50a56f17fc412b92", (0, 0, 0));

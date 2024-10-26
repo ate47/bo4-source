@@ -164,7 +164,7 @@ function init_heli_sound_values(heli_type, part_type, max_speed_vol, min_vol, ma
                 }
                 setdvar(#"helisounds", "<dev string:x38>");
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -517,7 +517,7 @@ function heli_idle_run_transition(heli_type, heli_part, wait_time, updown) {
                 }
             #/
         }
-        wait(wait_time);
+        wait wait_time;
     }
 }
 
@@ -538,7 +538,7 @@ function terrain_trace_brass() {
     trace_real_ent = undefined;
     pre_origin = (100000, 100000, 100000);
     while (isdefined(self)) {
-        wait(1 + randomfloatrange(0, 0.2));
+        wait 1 + randomfloatrange(0, 0.2);
         if (distancesquared(pre_origin, trace_ent.origin) < 144) {
             continue;
         }
@@ -597,7 +597,7 @@ function terrain_trace() {
     trace_real_ent = undefined;
     pre_origin = (100000, 100000, 100000);
     while (isdefined(self)) {
-        wait(1 + randomfloatrange(0, 0.2));
+        wait 1 + randomfloatrange(0, 0.2);
         if (distancesquared(pre_origin, trace_ent.origin) < 144) {
             continue;
         }
@@ -839,7 +839,7 @@ function drone_up_down_transition() {
     self thread drone_button_watch();
     while (true) {
         last_pos = self.origin[2];
-        wait(0.1);
+        wait 0.1;
         self.qrdrone_z_difference = last_pos - self.origin[2];
         if (self.qrdrone_z_difference < 0) {
             up_difference = self.qrdrone_z_difference * -1;
@@ -886,7 +886,7 @@ function drone_rotate_angle(heli_type, heli_part) {
     qr_ent_angle linkto(self, tag);
     while (true) {
         last_angle = abs(self.angles[1]);
-        wait(0.1);
+        wait 0.1;
         turning_speed = last_angle - abs(self.angles[1]);
         abs_turning_speed = abs(turning_speed);
         jet_stick_vol = audio::scale_speed(0, 5, 0, 0.4, abs_turning_speed);

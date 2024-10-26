@@ -195,7 +195,7 @@ function waittill_dead_or_dying_thread(ent) {
 // Checksum 0x413a5c28, Offset: 0xa40
 // Size: 0x26
 function waittill_dead_timeout(timeoutlength) {
-    wait(timeoutlength);
+    wait timeoutlength;
     self notify(#"thread_timed_out");
 }
 
@@ -433,7 +433,7 @@ function painwaitinterval(msec) {
     while (isalive(self)) {
         self waittill(#"pain");
         self.allowpain = 0;
-        wait(float(msec) / 1000);
+        wait float(msec) / 1000;
         self.allowpain = 1;
     }
 }
@@ -494,7 +494,7 @@ function patrol(start_path_node) {
                 wait_variability = self.currentgoal.script_wait_max - self.currentgoal.script_wait_min;
                 wait_time = self.currentgoal.script_wait_min + randomfloat(wait_variability);
                 self notify(#"patrol_goal", {#node:self.currentgoal});
-                wait(wait_time);
+                wait wait_time;
             } else {
                 self scene::play(self.currentgoal.scriptbundlename, self);
             }
@@ -537,7 +537,7 @@ function end_patrol_on_enemy_targetting() {
         if (isdefined(self.should_stop_patrolling) && self.should_stop_patrolling) {
             self end_and_clean_patrol_behaviors();
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -577,7 +577,7 @@ function bloody_death(n_delay, hit_loc) {
     }
     self.__bloody_death = 1;
     if (isdefined(n_delay)) {
-        wait(n_delay);
+        wait n_delay;
     }
     if (!isdefined(self) || !isalive(self)) {
         return;
@@ -692,7 +692,7 @@ function function_c2ee22a3(active) {
         var_672a1bab = 1000000;
         self function_aa4579e2(fov, var_672a1bab);
         while (isdefined(self) && self.var_62376916 === 1 && !isdefined(self.enemy)) {
-            wait(0.25);
+            wait 0.25;
         }
     }
     self.var_62376916 = 0;

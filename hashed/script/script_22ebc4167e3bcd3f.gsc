@@ -103,12 +103,12 @@ function step_1_cleanup(var_a276c861, var_19e802fa) {
 function function_6b107487() {
     level flag::set(#"hash_ed90925c898d1b0");
     self thread scene::play("Shot 1");
-    wait(1);
+    wait 1;
     var_e690c4cd = self.scene_ents[#"prop 1"];
     var_e690c4cd thread function_5ae9d41e();
     level thread zm_escape_vo_hooks::function_c179111e();
     self thread scene::play("Shot 2");
-    wait(getanimlength(#"hash_591fb71679a08ed8"));
+    wait getanimlength(#"hash_591fb71679a08ed8");
     level flag::set(#"hash_dd62a8822ea4a38");
 }
 
@@ -212,11 +212,11 @@ function crane_shock_box() {
             continue;
         }
         level flag::set(#"hash_2444d210a1dd0dd");
-        wait(1.6);
+        wait 1.6;
         var_217fca51 thread scene::play("Shot 2");
         n_anim_length = getanimlength(#"hash_3fbc33140c093c0d");
         n_anim_length -= 3.9;
-        wait(n_anim_length);
+        wait n_anim_length;
         level flag::set(#"hash_6f71660057a5952f");
         if (!level flag::get(#"hash_66f358c0066d77d8") && level flag::get(#"hash_dd62a8822ea4a38")) {
             foreach (e_player in level.activeplayers) {
@@ -226,14 +226,14 @@ function crane_shock_box() {
                 e_player thread function_1c670b79(var_217fca51);
             }
         }
-        wait(10);
+        wait 10;
         level notify(#"hash_2fd493c2a926e006");
         level flag::clear(#"hash_6f71660057a5952f");
         var_da5e0bea.var_8dfa1155 = 1;
         var_da5e0bea notify(#"turn_off");
         var_217fca51 thread scene::play("Shot 1");
         n_anim_length = getanimlength(#"hash_923a7a2394d952d");
-        wait(n_anim_length);
+        wait n_anim_length;
         level flag::clear(#"hash_2444d210a1dd0dd");
         var_da5e0bea.var_8dfa1155 = undefined;
     }
@@ -272,7 +272,7 @@ function function_6ff33a91(var_217fca51) {
     level flag::set(#"hash_66f358c0066d77d8");
     var_217fca51 thread scene::play("Shot 3");
     n_anim_length = getanimlength(#"hash_2bf732b76b5383ba");
-    wait(n_anim_length);
+    wait n_anim_length;
     mdl_spoon = var_217fca51.scene_ents[#"skeleton_arm"];
     mdl_spoon hide();
     function_ac52c6f1();
@@ -497,7 +497,7 @@ function function_d0bb3c35() {
     if (bgb::is_team_enabled(#"zm_bgb_temporal_gift")) {
         n_wait_time += 30;
     }
-    wait(n_wait_time);
+    wait n_wait_time;
     self zm_powerups::hide_and_show(&zm_powerups::powerup_hide, &zm_powerups::powerup_show);
     self delete();
 }

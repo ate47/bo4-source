@@ -223,7 +223,7 @@ function private run_step(ee, step, var_5ea5c94d) {
                 } else if (var_7f1ec3f3 == ee.skip_to_step) {
                     ee.skip_to_step = -1;
                 }
-                wait(0.5);
+                wait 0.5;
             }
         #/
         ee.current_step++;
@@ -397,7 +397,7 @@ function private function_df365859(notifyhash) {
                     return;
                 }
             }
-            wait(1);
+            wait 1;
         }
         if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
             iprintlnbold("<dev string:x448>" + function_9e72a96(ee.name) + "<dev string:x2c4>" + function_9e72a96(ee.steps[ee.current_step].name) + "<dev string:x456>");
@@ -414,7 +414,7 @@ function private function_df365859(notifyhash) {
         level notify(#"hash_6d8b1a4c632ecc9");
         level endon(#"hash_6d8b1a4c632ecc9");
         while (true) {
-            wait(1);
+            wait 1;
             cmd = getdvarstring(#"hash_319d902ea18eb39");
             setdvar(#"hash_319d902ea18eb39", "<dev string:x45c>");
             cmd = strtok(cmd, "<dev string:x2c4>");

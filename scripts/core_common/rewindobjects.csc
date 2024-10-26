@@ -57,7 +57,7 @@ function watchrewindableevents(localclientnum) {
                 }
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -88,7 +88,7 @@ function startrewindableevent(localclientnum, timekey) {
             self.event[timekey].timedfunction[timedfunctionkey] = 1;
             level thread [[ timedfunction.func ]](localclientnum, starttime, timedfunction.starttimesec, self.event[timekey].data);
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

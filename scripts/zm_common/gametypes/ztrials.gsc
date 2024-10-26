@@ -175,7 +175,7 @@ function private function_61fd0e87() {
     }
     if (!level flag::get("round_reset") && !level flag::get(#"trial_failed")) {
         zm_trial_util::function_96e10d88(1);
-        wait(3);
+        wait 3;
     }
 }
 
@@ -193,7 +193,7 @@ function private function_b8839207(e_door, n_cost) {
         } else {
             e_door zm_utility::set_hint_string(self, "default_buy_door", n_cost);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -207,7 +207,7 @@ function private function_b8839207(e_door, n_cost) {
         level.devcheater = 1;
         level.zombie_total = 0;
         level notify(#"kill_round");
-        wait(1);
+        wait 1;
         zombies = getaiteamarray(level.zombie_team);
         if (isdefined(zombies)) {
             for (i = 0; i < zombies.size; i++) {

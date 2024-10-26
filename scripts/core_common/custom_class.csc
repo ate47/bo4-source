@@ -208,7 +208,7 @@ function custom_class_attachment_select_focus(localclientnum) {
     if (isdefined(donotmovecamera) && donotmovecamera) {
         if (isdefined(weapon_name)) {
             preload_weapon_model(localclientnum, weapon_name, weaponattachmentintersection, 0);
-            wait(initialdelay);
+            wait initialdelay;
             wait_preload_weapon(localclientnum);
             update_weapon_script_model(localclientnum, weapon_name, weaponattachmentintersection, 0);
         }
@@ -546,7 +546,7 @@ function preload_weapon_watcher(localclientnum) {
             level notify("preload_weapon_complete_" + localclientnum);
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -681,10 +681,10 @@ function transition_camera(localclientnum, weapontype, camera, subxcam, initiald
     if (isdefined(newweaponstring)) {
         preload_weapon_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options);
     }
-    wait(initialdelay);
+    wait initialdelay;
     transition_camera_immediate(localclientnum, weapontype, camera, subxcam, lerpduration, notetrack);
     if (isdefined(newweaponstring)) {
-        wait(float(lerpduration) / 1000);
+        wait float(lerpduration) / 1000;
         wait_preload_weapon(localclientnum);
         update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options);
     }

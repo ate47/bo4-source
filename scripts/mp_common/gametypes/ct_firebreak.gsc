@@ -301,7 +301,7 @@ function j_fore_le_01() {
     }
     setbombtimer("A", 0);
     setmatchflag("bomb_timer_a", 0);
-    wait(0.1);
+    wait 0.1;
 }
 
 // Namespace ct_firebreak/ct_firebreak
@@ -404,9 +404,9 @@ function function_d6c7161f() {
                 level notify(#"beacon_destroyed");
                 e_player = getplayers()[0];
                 e_player thread ct_utils::function_785eb2ca();
-                wait(0.1);
+                wait 0.1;
                 s_beacon.e_beacon delete();
-                wait(1);
+                wait 1;
                 level thread ct_utils::function_bfa522d1(0);
                 level.var_f3bb2d59++;
             }
@@ -422,7 +422,7 @@ function function_66a805d4(e_player) {
     e_player endon(#"death", #"hash_4aaf6d6479e7cf20");
     while (true) {
         n_wait = randomfloatrange(0.1, 0.4);
-        wait(n_wait);
+        wait n_wait;
         n_offset = randomfloatrange(0.2, 60);
         v_pos = (self.origin[0], self.origin[1], self.origin[2] + n_offset);
         playfx(#"explosions/fx_exp_robot_stage3_evb", v_pos);
@@ -444,7 +444,7 @@ function function_95f8a9b5() {
             level.players[0] potm::bookmark(#"ct_firebreak", gettime(), level.players[0]);
             level.var_bd8b567a = 1;
             level thread function_d6cd1a2d();
-            wait(4);
+            wait 4;
             level.var_6bac32f8 = 0;
         }
         n_time = gettime() / 1000;

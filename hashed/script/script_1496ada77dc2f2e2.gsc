@@ -118,11 +118,11 @@ function private on_player_spawned() {
 // Size: 0x144
 function function_40c7a8fd() {
     level endon(#"hash_7646638df88a3656", #"end_game");
-    wait(3.5);
+    wait 3.5;
     foreach (player in getplayers()) {
         player clientfield::set_to_player("" + #"hash_b905d796914b710", 1);
     }
-    wait(2);
+    wait 2;
     setslowmotion(1, 1.25);
     level.var_79514f31 = spawn("script_origin", (0, 0, 0));
     level.var_79514f31 playloopsound(#"hash_1eafdf46ffbf2308");
@@ -160,7 +160,7 @@ function function_6d8cf829() {
     while (true) {
         n_perks = self.var_67ba1237.size + self.var_466b927f.size;
         self clientfield::set_to_player("" + #"hash_52347bec3f1339fd", n_perks);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -174,14 +174,14 @@ function private function_ad641569() {
     self endon(#"disconnect");
     level endoncallback(&function_1a109202, #"hash_7646638df88a3656", #"host_migration_begin");
     while (true) {
-        wait(randomintrangeinclusive(5, 15));
+        wait randomintrangeinclusive(5, 15);
         var_6eabfd9d = getstatuseffect("blind_zm_catalyst");
         n_duration = randomintrangeinclusive(5000, 7500);
         self status_effect::status_effect_apply(var_6eabfd9d, undefined, self, 0, n_duration);
-        wait(float(n_duration) / 1000);
+        wait float(n_duration) / 1000;
         var_3caa2c0f = getstatuseffect("deaf_electricity_catalyst");
         self status_effect::status_effect_apply(var_3caa2c0f, undefined, self, 0, n_duration);
-        wait(float(n_duration) / 1000);
+        wait float(n_duration) / 1000;
         if (self status_effect::function_4617032e(var_6eabfd9d.setype)) {
             self status_effect::function_408158ef(var_6eabfd9d.setype, var_6eabfd9d.var_18d16a6b);
         }
@@ -216,7 +216,7 @@ function function_1a109202(str_notify) {
 // Size: 0xb0
 function private function_604ff1eb() {
     level endon(#"hash_7646638df88a3656", #"end_game");
-    wait(5);
+    wait 5;
     foreach (player in getplayers()) {
         player thread function_ad641569();
     }

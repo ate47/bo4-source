@@ -146,7 +146,7 @@ function function_7e141cb5(weapon) {
                 self thread function_1fc2378f(e_projectile);
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -280,7 +280,7 @@ function set_projectile(n_index) {
     self endon(#"death");
     self.n_index = n_index;
     self setscale(0.05);
-    wait(0.1);
+    wait 0.1;
     self clientfield::increment("ouranos_shoot");
 }
 
@@ -317,7 +317,7 @@ function function_1fc2378f(e_projectile, ai_zombie, n_damage) {
             }
             if (isdefined(ai_zombie)) {
                 e_projectile moveto(ai_zombie getcentroid(), n_time);
-                wait(n_time - 0.05);
+                wait n_time - 0.05;
             }
         } else if (isdefined(ai_zombie)) {
             var_4d8b7233 = 0;
@@ -343,7 +343,7 @@ function function_1fc2378f(e_projectile, ai_zombie, n_damage) {
             } else {
                 e_projectile moveto(v_end, n_time);
             }
-            wait(n_time - 0.05);
+            wait n_time - 0.05;
             if (isdefined(ai_zombie) && ai_zombie.var_6f84b820 === #"boss") {
                 if (isdefined(ai_zombie gettagorigin("j_tail_1"))) {
                     n_hit_dist_sq = 2500;
@@ -436,7 +436,7 @@ function function_30239376(e_target) {
 // Size: 0x34
 function projectile_timeout() {
     self endon(#"death");
-    wait(5);
+    wait 5;
     self delete();
 }
 
@@ -600,7 +600,7 @@ function player_charged_shot(weapon) {
 function function_cf3b7cef() {
     self endon(#"death");
     self waittill(#"weapon_change", #"stop_beaming", #"weapon_fired");
-    wait(0.1);
+    wait 0.1;
     self.var_e34577ca = undefined;
 }
 
@@ -624,7 +624,7 @@ function function_a2065170() {
 // Size: 0x18c
 function function_1e39fbc5(weapon) {
     self endon(#"death", #"stop_beaming", #"weapon_change");
-    wait(0.3);
+    wait 0.3;
     while (zm_utility::is_player_valid(self) && self attackbuttonpressed()) {
         self thread function_6e71e724();
         n_ammo = self getweaponammoclip(weapon);
@@ -643,7 +643,7 @@ function function_1e39fbc5(weapon) {
             }
             self notify(#"stop_beaming");
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -671,7 +671,7 @@ function function_c7732ae7(w_curr) {
     } else {
         n_range = 2150;
     }
-    wait(0.3);
+    wait 0.3;
     while (true) {
         a_e_targets = zm_hero_weapon::function_7c3681f7();
         foreach (e_target in a_e_targets) {
@@ -685,7 +685,7 @@ function function_c7732ae7(w_curr) {
                 e_target notify(#"hash_62a477d53a6bbad");
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -756,7 +756,7 @@ function function_7a1456c5(e_target) {
             e_target thread function_d54becbd();
             e_target thread namespace_9ff9f642::slowdown(#"hash_1e38c032f8b8621c");
         }
-        wait(3);
+        wait 3;
         e_target notify(#"stop_slow");
         e_target.var_6cec0263 = undefined;
     }
@@ -769,7 +769,7 @@ function function_7a1456c5(e_target) {
 function function_d54becbd() {
     self endon(#"death", #"stop_slow");
     while (true) {
-        wait(randomfloatrange(1, 2.5));
+        wait randomfloatrange(1, 2.5);
         n_rand = randomint(3);
         if (n_rand == 2 && self.archetype !== #"catalyst") {
             self zombie_utility::function_df5afb5e(1);

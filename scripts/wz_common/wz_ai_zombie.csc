@@ -56,7 +56,7 @@ function rise_dust_fx(clientnum, billow_fx, burst_fx) {
     if (isdefined(burst_fx)) {
         playfx(clientnum, burst_fx, self.origin + (0, 0, randomintrange(5, 10)));
     }
-    wait(0.25);
+    wait 0.25;
     if (isdefined(billow_fx)) {
         playfx(clientnum, billow_fx, self.origin + (randomintrange(-10, 10), randomintrange(-10, 10), randomintrange(5, 10)));
     }

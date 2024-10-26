@@ -214,7 +214,7 @@ function function_c6366dbe() {
             }
             ai thread widows_wine_slow_zombie(self, var_3e5502b5, var_ca6267ad);
         }
-        wait(0.1);
+        wait 0.1;
     }
     self thread function_10519783();
 }
@@ -328,7 +328,7 @@ function widows_wine_vehicle_behavior(attacker, weapon) {
         if (self.archetype == #"raps") {
             self clientfield::set("winters_wail_freeze", 1);
             self._override_raps_combat_speed = 5;
-            wait(6);
+            wait 6;
             self dodamage(self.health + 1000, self.origin, attacker, undefined, "none", "MOD_EXPLOSIVE", 0, weapon);
             return;
         }
@@ -392,7 +392,7 @@ function function_276e3360() {
 function function_bcb4c0e3() {
     self endon(#"stop_widows_wine", #"death");
     while (true) {
-        wait(1);
+        wait 1;
         n_total_charges = self function_fc256a55();
         if (self.var_a33a5a37 < n_total_charges) {
             self.var_8376b1a += 1 / 60;

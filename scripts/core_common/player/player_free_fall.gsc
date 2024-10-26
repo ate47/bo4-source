@@ -94,7 +94,7 @@ function private function_6aac1790(var_dbb94a) {
 function private function_b6e83203(delay) {
     if (isdefined(delay)) {
         self endon(#"death", #"disconnect");
-        wait(delay);
+        wait delay;
     }
     parachute = self namespace_eb06e24d::get_parachute();
     var_dbb94a = parachute.("parachuteLit");

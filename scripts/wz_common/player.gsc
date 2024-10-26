@@ -112,7 +112,7 @@ function makegrenadedudanddestroy() {
     self endon(#"death");
     self notify(#"grenade_dud");
     self makegrenadedud();
-    wait(3);
+    wait 3;
     if (isdefined(self)) {
         self delete();
     }

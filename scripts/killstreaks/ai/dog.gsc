@@ -174,7 +174,7 @@ function function_8f876521() {
     self.ai.var_e90b47c1 = gettime();
     while (isalive(self)) {
         if (isdefined(self.ai.var_e90b47c1) && gettime() <= self.ai.var_e90b47c1) {
-            wait(1);
+            wait 1;
             continue;
         }
         players = getplayers();
@@ -189,7 +189,7 @@ function function_8f876521() {
                 break;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -654,15 +654,15 @@ function target_enemy(entity) {
 // Size: 0x170
 function function_df8cb62a(entity) {
     entity endon(#"death");
-    wait(1);
+    wait 1;
     while (entity.ai.state != 2 && isdefined(entity.ai.hasseenfavoriteenemy) && entity.ai.hasseenfavoriteenemy) {
         if (isdefined(entity.enemy) && distancesquared(entity.enemy.origin, entity.origin) <= 400 * 400 && entity cansee(entity.enemy)) {
             entity clientfield::set("ks_dog_bark", 1);
             entity playsound(#"hash_21775fa77c0df395");
-            wait(1.2);
+            wait 1.2;
             entity clientfield::set("ks_dog_bark", 0);
         }
-        wait(randomfloatrange(2, 4));
+        wait randomfloatrange(2, 4);
     }
 }
 

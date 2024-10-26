@@ -218,7 +218,7 @@ function private function_48b8fc19(localclientnum) {
     for (player = function_5c10bd79(localclientnum); !isdefined(player) || !isplayer(player) || !isdefined(player.type) || player.type != #"player" || player ishidden() || player isinfreefall() || player function_9a0edd92(); player = function_5c10bd79(localclientnum)) {
         waitframe(1);
     }
-    wait(15);
+    wait 15;
     for (index = 0; index < var_7d8899cd; index++) {
         point = function_b1702735(index);
         if (!isdefined(point) || !isdefined(point.itementry)) {

@@ -38,9 +38,9 @@ function private update_light(localclientnum) {
     while (true) {
         self.light_fx = util::playfxontag(localclientnum, #"hash_69272c24309abc33", self, "tag_fx_front");
         if (isdefined(self.attacking) && self.attacking) {
-            wait(0.25);
+            wait 0.25;
         } else {
-            wait(1);
+            wait 1;
         }
         stopfx(localclientnum, self.light_fx);
     }

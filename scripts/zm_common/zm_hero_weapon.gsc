@@ -471,7 +471,7 @@ function hero_weapon_on(n_slot, w_hero) {
 function hero_weapon_off(n_slot, w_hero) {
     self endon(#"death", #"hero_weapon_power_on");
     self.var_479965f7 = undefined;
-    wait(2);
+    wait 2;
     self notify(#"hero_weapon_power_off");
     w_current = self getcurrentweapon();
     self zm_weapons::switch_back_primary_weapon(w_current, 0, 1);
@@ -503,7 +503,7 @@ function function_9a100883(weapon_level, enabled) {
     self.var_821c9bf3 = 0;
     self.var_dc37311e = 0;
     while (self gadgetisactive(level.var_a53a05b5) || isdefined(self.var_fbe120be) && self.var_fbe120be || isdefined(self.var_61950f95) && self.var_61950f95) {
-        wait(1);
+        wait 1;
     }
     self waittilltimeout(2, #"weapon_change_complete");
     self playsound("zmb_weapon_upgrade_to_lvl_" + weapon_level + 1);
@@ -738,7 +738,7 @@ function function_60878f7f(w_weapon) {
                 return;
             }
             var_e3108f57 = var_a5be660b;
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -836,7 +836,7 @@ function function_cab29b9f() {
         return;
     }
     self val::set(#"hash_558d809e7921fa79", "takedamage", 0);
-    wait(0.5);
+    wait 0.5;
     self val::reset(#"hash_558d809e7921fa79", "takedamage");
 }
 
@@ -907,7 +907,7 @@ function function_acee2761(n_cooldown = 4) {
     }
     self.var_9c494830 = 1;
     self ai::stun();
-    wait(n_cooldown);
+    wait n_cooldown;
     self.var_9c494830 = 0;
 }
 
@@ -918,11 +918,11 @@ function function_acee2761(n_cooldown = 4) {
 function function_4e984e83(w_hero, var_cd2d38a0 = 0.35, var_7ebb048f = 0.15) {
     self endon(#"death");
     self ability_player::function_c22f319e(w_hero);
-    wait(var_cd2d38a0);
+    wait var_cd2d38a0;
     self.var_1d940ef6 = 1;
     self hideviewmodel();
     self waittill(#"weapon_change");
-    wait(var_7ebb048f);
+    wait var_7ebb048f;
     self showviewmodel();
     self.var_1d940ef6 = undefined;
 }

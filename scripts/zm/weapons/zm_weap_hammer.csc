@@ -113,7 +113,7 @@ function function_9f78a957(localclientnum) {
     self endon(#"death");
     while (isdefined(self)) {
         self playsound(0, "wpn_hammer_storm_bolt");
-        wait(randomfloatrange(0.2, 0.8));
+        wait randomfloatrange(0.2, 0.8);
     }
 }
 

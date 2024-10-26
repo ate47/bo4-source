@@ -110,7 +110,7 @@ function setup_wc_extracam_settings(localclientnum, extracam_data_struct) {
         waitframe(1);
     }
     if (extracam_data_struct.loadoutslot == "default_camo_render") {
-        wait(0.5);
+        wait 0.5;
     } else {
         level waittilltimeout(5, "paintshop_ready_" + extracam_data_struct.jobindex);
     }

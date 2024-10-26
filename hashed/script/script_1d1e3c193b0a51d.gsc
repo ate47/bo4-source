@@ -59,7 +59,7 @@ function private function_1633056a(var_16e6b8ea = 10) {
         if (isalive(self) && !self laststand::player_is_in_laststand() && self function_c81cdba2()) {
             self playsoundtoplayer(#"hash_6df374d848ba6a60", self);
             self dodamage(var_16e6b8ea, self.origin);
-            wait(1);
+            wait 1;
         }
         waitframe(1);
     }

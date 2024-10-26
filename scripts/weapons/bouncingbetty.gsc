@@ -69,7 +69,7 @@ function register() {
             level.bettyjumpheightwallangle = getdvarint(#"betty_onground_angle_threshold", level.bettyjumpheightwallangle);
             level.bettyjumpheightwallanglecos = cos(level.bettyjumpheightwallangle);
             level.bettyjumptime = getdvarfloat(#"betty_jump_time", level.bettyjumptime);
-            wait(3);
+            wait 3;
         }
     }
 
@@ -298,7 +298,7 @@ function bouncingbettyjumpandexplode() {
     explodepos = self.origin + jumpdir * jumpheight;
     self.killcament moveto(explodepos + self.killcamoffset, level.bettyjumptime, 0, level.bettyjumptime);
     self clientfield::set("bouncingbetty_state", 1);
-    wait(level.bettyjumptime);
+    wait level.bettyjumptime;
     self thread mineexplode(jumpdir, explodepos);
 }
 
@@ -318,7 +318,7 @@ function mineexplode(explosiondir, explodepos) {
     }
     self cylinderdamage(explosiondir * level.bettydamageheight, explodepos, level.bettydamageradius, level.bettydamageradius, level.bettydamagemax, level.bettydamagemin, self.owner, "MOD_EXPLOSIVE", self.weapon);
     self ghost();
-    wait(0.1);
+    wait 0.1;
     if (!isdefined(self) || !isdefined(self.owner)) {
         return;
     }

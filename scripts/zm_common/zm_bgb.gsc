@@ -269,7 +269,7 @@ function private bgb_player_monitor() {
                 bgb_devgui_acquire(var_522737d6);
             }
             setdvar(#"bgb_acquire_devgui", "<dev string:x79>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -341,7 +341,7 @@ function private bgb_player_monitor() {
         } else {
             self.bgb_debug_text settext("<dev string:x134>" + short_name);
         }
-        wait(1);
+        wait 1;
         if (#"none" == name) {
             self.bgb_debug_text fadeovertime(1);
             self.bgb_debug_text.alpha = 0;
@@ -691,7 +691,7 @@ function private bgb_bled_out_monitor() {
     self endon(#"bgb_bled_out_monitor");
     self waittill(#"bled_out");
     self notify(#"bgb_about_to_take_on_bled_out");
-    wait(0.1);
+    wait 0.1;
     self thread take();
 }
 

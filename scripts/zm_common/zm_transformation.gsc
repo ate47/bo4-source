@@ -591,9 +591,9 @@ function private update() {
     var_f38e5f93 = isdefined(level.var_f38e5f93) ? level.var_f38e5f93 : 1;
     while (true) {
         if (isdefined(var_52f926ed) && var_52f926ed) {
-            wait(var_f38e5f93);
+            wait var_f38e5f93;
         } else {
-            wait(0.2);
+            wait 0.2;
         }
         level flag::wait_till_clear(#"hash_670ec83e1acfadff");
         if (function_c3a1379e()) {
@@ -664,7 +664,7 @@ function function_bbaec2fd() {
         }
         registershack_walla = 0;
         while (true) {
-            wait(0.2);
+            wait 0.2;
             cmd = getdvarstring(#"hash_439ed91bbc9ac4c0", "<dev string:x103>");
             if (cmd == "<dev string:x103>") {
                 continue;
@@ -762,7 +762,7 @@ function function_bbaec2fd() {
             return;
         }
         zombie endon(#"death");
-        wait(0.5);
+        wait 0.5;
         while (function_abf1dcb4(var_70d26bfb)) {
             waitframe(1);
         }

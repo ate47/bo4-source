@@ -42,7 +42,7 @@ function open_door(a_str_door_names, var_47eb646a = 0, var_91ccb2d7, b_play_audi
     if (isstring(var_91ccb2d7) || ishash(var_91ccb2d7)) {
         self waittill(var_91ccb2d7);
     } else if (isdefined(var_91ccb2d7)) {
-        wait(var_91ccb2d7);
+        wait var_91ccb2d7;
     }
     if (b_play_audio) {
         util::playsoundonplayers(#"hash_5eca7fc11b300dd1");
@@ -290,7 +290,7 @@ function function_9ac7ed7d(var_d147b93a, var_5cd8902e, var_70516a9d) {
     /#
         adddebugcommand("<dev string:x8b>");
     #/
-    wait(0.5);
+    wait 0.5;
     function_511ee23e(0);
 }
 
@@ -482,7 +482,7 @@ function function_34bcd465() {
     level endon(#"end_game");
     n_timer = 15;
     if (n_timer > 0) {
-        wait(n_timer);
+        wait n_timer;
     }
     self.var_932d6747 = 1;
     var_887826bc = [];
@@ -542,7 +542,7 @@ function function_742f2c18(n_round, archetype, n_count_total, var_4f886dd2, var_
 // Size: 0x2c
 function function_601e9653() {
     n_wait = randomfloatrange(4, 10);
-    wait(n_wait);
+    wait n_wait;
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -705,7 +705,7 @@ function function_428cfaae(var_679cd7a8, var_6cc77d4e, hide_notify, n_obj_id, va
             objective_setvisibletoplayer(n_obj_id, self);
             objective_setinvisibletoplayer(var_e1feb2f6, self);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -717,7 +717,7 @@ function function_9704c82e(s_defend, var_e1feb2f6) {
     level endon(#"end_game");
     level waittill(#"hash_7a04a7fb98fa4e4d");
     level notify(#"hash_1dabaf25a56177a1");
-    wait(0.1);
+    wait 0.1;
     gameobjects::release_obj_id(var_e1feb2f6);
 }
 
@@ -811,7 +811,7 @@ function function_33798535(var_31721422, a_str_zones, var_ed1db1a7, var_6cc77d4e
         n_wait_time = 12;
         break;
     }
-    wait(n_wait_time);
+    wait n_wait_time;
     function_9757d4d2();
 }
 
@@ -877,7 +877,7 @@ function function_3b09971f(var_ed1db1a7, var_de0f1997, a_str_zones) {
             function_9757d4d2(1);
             level.var_54f329be = 1;
         }
-        wait(1);
+        wait 1;
         n_time_elapsed++;
         var_de0f1997--;
     }
@@ -894,7 +894,7 @@ function function_1f9d70f7(var_57465a1b) {
     var_f67c3dcd = level.zombie_powerups[#"nuke"].func_should_drop_with_regular_powerups;
     zm_powerups::powerup_remove_from_regular_drops(#"nuke");
     n_wait = var_57465a1b * 0.9;
-    wait(n_wait);
+    wait n_wait;
     level.zombie_powerups[#"nuke"].func_should_drop_with_regular_powerups = var_f67c3dcd;
 }
 
@@ -967,7 +967,7 @@ function function_f7bb860a() {
         }
         if (isdefined(var_db7e2eef) && function_25e3484e(var_db7e2eef)) {
             function_ce46d95e(var_db7e2eef, 0, 0);
-            wait(0.5);
+            wait 0.5;
         }
         for (i = 1; i < var_7819779.size; i++) {
             var_44863c4e = distance(var_7819779[i], var_db7e2eef);
@@ -975,7 +975,7 @@ function function_f7bb860a() {
             if (var_2ffd5b7f > 400 && var_44863c4e > 400 && function_25e3484e(var_7819779[i])) {
                 function_ce46d95e(var_7819779[i], 0, 0);
                 var_db7e2eef = var_7819779[i];
-                wait(0.5);
+                wait 0.5;
             }
         }
         if (function_25e3484e(s_defend_area.origin) && !isdefined(s_defend_area.e_powerup)) {
@@ -1041,7 +1041,7 @@ function function_766eff6(var_31721422, a_str_zones, var_de0f1997, var_f7c3c527)
         }
         n_time--;
         if (n_time >= 0) {
-            wait(1);
+            wait 1;
         }
     }
     if (level.var_f995ece6 zm_trial_timer::is_open(self)) {
@@ -1075,7 +1075,7 @@ function function_766eff6(var_31721422, a_str_zones, var_de0f1997, var_f7c3c527)
             level flag::clear(#"pause_round_timeout");
             level thread function_1aaa4f63(1);
         }
-        wait(1);
+        wait 1;
         var_f7c3c527--;
     }
     if (level.var_f995ece6 zm_trial_timer::is_open(self)) {
@@ -1195,7 +1195,7 @@ function player_left_zone(a_str_zones, var_8e2567b1, var_9faecc20) {
             if (!isalive(self) || self laststand::player_is_in_laststand()) {
                 break;
             }
-            wait(1);
+            wait 1;
             n_time--;
         }
         if (isalive(self) && !self laststand::player_is_in_laststand()) {

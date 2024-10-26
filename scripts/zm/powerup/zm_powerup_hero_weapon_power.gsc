@@ -67,7 +67,7 @@ function hero_weapon_power(e_player) {
 function private function_5792ec16() {
     self endon(#"disconnect");
     self.var_c09e6d59 = 1;
-    wait(2);
+    wait 2;
     self.var_c09e6d59 = undefined;
 }
 

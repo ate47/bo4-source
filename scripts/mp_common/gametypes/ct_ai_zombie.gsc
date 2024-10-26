@@ -244,7 +244,7 @@ function private function_9c573bc6() {
         return;
     }
     self collidewithactors(0);
-    wait(2);
+    wait 2;
     self collidewithactors(1);
 }
 
@@ -875,9 +875,9 @@ function private function_101763c9() {
         if (!isdefined(spawn_point)) {
             self kill();
         }
-        wait(2);
+        wait 2;
         self forceteleport(spawn_point.origin, spawn_point.angles);
-        wait(2);
+        wait 2;
         self.var_8ba6ede3 = 1;
         self waittill(#"not_underground");
     } else {
@@ -887,7 +887,7 @@ function private function_101763c9() {
             self kill();
         }
         self forceteleport(spawn_point.origin, spawn_point.angles);
-        wait(2);
+        wait 2;
         self.var_8ba6ede3 = 1;
         self waittill(#"not_underground");
     }
@@ -902,10 +902,10 @@ function delayed_zombie_eye_glow() {
     self endon(#"death");
     if (isdefined(self.in_the_ground) && self.in_the_ground || isdefined(self.in_the_ceiling) && self.in_the_ceiling) {
         while (!isdefined(self.create_eyes)) {
-            wait(0.1);
+            wait 0.1;
         }
     } else {
-        wait(0.5);
+        wait 0.5;
     }
     self zombie_eye_glow();
 }
@@ -1266,7 +1266,7 @@ function damage_over_time(dmg, delay, attacker, means_of_death) {
     }
     while (true) {
         if (isdefined(delay)) {
-            wait(delay);
+            wait delay;
         }
         if (isdefined(self)) {
             if (isdefined(attacker)) {
@@ -1373,7 +1373,7 @@ function zmbaivox_playvox(zombie, type, override, priority, delayambientvox = 0)
         } else {
             playbacktime = 1;
         }
-        wait(playbacktime);
+        wait playbacktime;
         zombie.talking = 0;
         zombie.currentvox = undefined;
         zombie.currentvoxpriority = 1;
@@ -1387,7 +1387,7 @@ function zmbaivox_playvox(zombie, type, override, priority, delayambientvox = 0)
 function zmbaivox_ambientdelay() {
     self notify(#"sndambientdelay");
     self endon(#"sndambientdelay", #"death", #"disconnect");
-    wait(2);
+    wait 2;
     self.delayambientvox = 0;
 }
 
@@ -1457,7 +1457,7 @@ function play_ambient_zombie_vocals() {
         }
         bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
-        wait(randomfloatrange(1, float));
+        wait randomfloatrange(1, float);
     }
 }
 

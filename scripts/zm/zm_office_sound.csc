@@ -84,7 +84,7 @@ function soundloopthink() {
 // Checksum 0xe1be1901, Offset: 0x400
 // Size: 0xe4
 function function_6e0048f1() {
-    wait(0.1);
+    wait 0.1;
     level waittill(#"poa");
     audio::playloopat(#"hash_441952a4718e4f31", (-720, 3949, -608));
     audio::playloopat(#"hash_441952a4718e4f31", (-729, 5238, -608));

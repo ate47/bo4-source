@@ -314,7 +314,7 @@ function contract_win(winner) {
     // Size: 0x9c
     function devgui_setup() {
         devgui_base = "<dev string:x6b>";
-        wait(3);
+        wait 3;
         function_e07e542b(devgui_base, undefined);
         function_17a92a99(devgui_base);
         function_7f05e018(devgui_base);

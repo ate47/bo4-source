@@ -470,7 +470,7 @@ function function_386de852() {
         if (!isalive(self) && self function_725b4d91() == 0) {
             self.var_a06951b7 += 250;
         }
-        wait(0.25);
+        wait 0.25;
     }
     self clientfield::set_player_uimodel("hudItems.armorIsOnCooldown", 0);
 }

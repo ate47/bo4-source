@@ -289,7 +289,7 @@ function on_bot_killed() {
     level endon(#"game_ended");
     self endon(#"spawned");
     self waittill(#"death_delay_finished");
-    wait(0.1);
+    wait 0.1;
     if (level.playerforcerespawn) {
         return;
     }
@@ -305,7 +305,7 @@ function respawn() {
     level endon(#"game_ended");
     while (true) {
         self bottapbutton(3);
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -383,7 +383,7 @@ function set_rank() {
     s = math::array_std_deviation(ranks, avg);
     rank = int(math::random_normal_distribution(avg, s, 0, level.maxrank));
     while (!isdefined(self.pers[#"rank"])) {
-        wait(0.1);
+        wait 0.1;
     }
     self.pers[#"rank"] = rank;
     self.pers[#"rankxp"] = rank::getrankinfominxp(rank);

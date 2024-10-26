@@ -169,7 +169,7 @@ function function_f8930fa1(time) {
         time = level.var_7a0aaea2;
     }
     if (time > (isdefined(level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4) ? level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 : 0)) {
-        wait(time - (isdefined(level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4) ? level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 : 0));
+        wait time - (isdefined(level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4) ? level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 : 0);
     }
     if (!isdefined(self)) {
         return;
@@ -177,9 +177,9 @@ function function_f8930fa1(time) {
         self [[ level.var_a1ca927c ]]();
     }
     remainingtime = isdefined(level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4) ? level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 : time > (isdefined(level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4) ? level.spawnbeaconsettings.settingsbundle.var_a0ffd0e4 : 0) ? 0 : time;
-    wait(remainingtime);
+    wait remainingtime;
     while (isdefined(level.spawnbeaconsettings.var_9d48e929) && level.spawnbeaconsettings.var_9d48e929 && isdefined(self) && isdefined(self.owner) && !isalive(self.owner)) {
-        wait(0.5);
+        wait 0.5;
     }
     if (!isdefined(self)) {
         return;
@@ -285,7 +285,7 @@ function private setupcallbacks() {
 // Checksum 0x41bf9ed9, Offset: 0x1008
 // Size: 0x54
 function private function_9ede386f(slot) {
-    wait(0.1);
+    wait 0.1;
     if (!isdefined(self)) {
         return;
     }
@@ -373,7 +373,7 @@ function updatethreat() {
         } else {
             objective_setgamemodeflags(spawnbeacon.objectiveid, 0);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -704,7 +704,7 @@ function function_425d8006() {
     function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_1068819a, spawnbeacon.team, undefined);
     function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_c5d0582b, util::getotherteam(spawnbeacon.team), undefined);
     setbombtimer(var_f1c32a14, gettime() + int(var_d7760961 * 1000));
-    wait(var_d7760961);
+    wait var_d7760961;
     spawnbeacon.isdisabled = 0;
     spawnbeacon notify(#"beacon_enabled");
 }

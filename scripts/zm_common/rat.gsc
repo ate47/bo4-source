@@ -496,7 +496,7 @@
             inrat = 1;
         }
         if (inrat) {
-            wait(10);
+            wait 10;
         }
         enemy = zm_devgui::devgui_zombie_spawn();
         enemy.is_rat_test = 1;
@@ -506,12 +506,12 @@
         failed_attack_spot = [];
         size = 0;
         failed_attack_spot_size = 0;
-        wait(0.2);
+        wait 0.2;
         foreach (zone in level.zones) {
             foreach (loc in zone.a_loc_types[#"zombie_location"]) {
                 angles = (0, 0, 0);
                 enemy forceteleport(loc.origin, angles);
-                wait(0.2);
+                wait 0.2;
                 node = undefined;
                 for (j = 0; j < level.exterior_goals.size; j++) {
                     if (isdefined(level.exterior_goals[j].script_string) && level.exterior_goals[j].script_string == loc.script_string) {
@@ -525,7 +525,7 @@
                         failed_node_origin[size] = node.origin;
                         size++;
                     }
-                    wait(0.2);
+                    wait 0.2;
                     for (j = 0; j < node.attack_spots.size; j++) {
                         isattackpath = enemy setgoal(node.attack_spots[j]);
                         if (!isattackpath) {
@@ -533,7 +533,7 @@
                             failed_attack_spot[failed_attack_spot_size] = node.attack_spots[j];
                             failed_attack_spot_size++;
                         }
-                        wait(0.2);
+                        wait 0.2;
                     }
                 }
             }

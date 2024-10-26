@@ -257,7 +257,7 @@ function function_977835f8() {
         } else {
             level flag::clear(#"hash_f244999377a9081");
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -330,12 +330,12 @@ function function_4f4e423f() {
             level flag::set(#"hash_598d4e6af1cf4c39");
             mdl_lever playsound(#"hash_3088af4bb5209a73");
             if (isdefined(e_player)) {
-                wait(1.5);
+                wait 1.5;
                 e_player zm_audio::create_and_play_dialog(#"engine_room", #"alarm");
             }
             break;
         }
-        wait(5);
+        wait 5;
         mdl_lever rotatepitch(120, 3);
         mdl_lever playsound(#"hash_3cd844a784afd0f");
         mdl_lever waittill(#"rotatedone");
@@ -380,14 +380,14 @@ function function_9e34f29() {
     exploder::exploder("exp_lgt_switchboard_gameplay");
     exploder::exploder("exp_lgt_switchboard_warning_redflash");
     exploder::exploder("exp_lgt_engine_warning_redflash");
-    wait(1.5);
+    wait 1.5;
     level thread scene::play(#"p8_fxanim_zm_zod_engine_pistons_full_speed_01_bundle", var_d8b371d4);
     level thread scene::play(#"p8_fxanim_zm_zod_engine_pistons_full_speed_02_bundle", var_1198639d);
     level thread scene::play(#"p8_fxanim_zm_zod_engine_propeller_shafts_01_fullspeed_bundle", var_f1d8c9e3);
     level thread scene::play(#"p8_fxanim_zm_zod_engine_propeller_shafts_02_fullspeed_bundle", var_ff6de50d);
     level thread scene::play(#"p8_fxanim_zm_zod_skybox_bundle", "event_impact");
     level thread function_a0f5819b();
-    wait(30);
+    wait 30;
     level waittill(#"end_of_round");
     level waittill(#"start_of_round");
     exploder::stop_exploder("exp_lgt_switchboard_gameplay");
@@ -494,7 +494,7 @@ function function_3702ff38() {
         e_hand = getent("engine_room_arm", "targetname");
         if (isdefined(e_hand)) {
             e_hand physicslaunch(e_hand.origin, (0, 0, 1));
-            wait(2);
+            wait 2;
             e_hand delete();
         }
         break;
@@ -585,7 +585,7 @@ function function_9be06570() {
     var_a3b04877 = util::spawn_model("tag_origin", level.var_92dc9c0d.origin + (0, 12, -2), level.var_92dc9c0d.angles);
     var_a3b04877 clientfield::set("" + #"portal_pass", 1);
     s_moveto = struct::get(level.var_92dc9c0d.target);
-    wait(3);
+    wait 3;
     while (isdefined(s_moveto)) {
         if (!isdefined(s_moveto.n_time)) {
             s_moveto.n_time = 2;
@@ -622,7 +622,7 @@ function function_9be06570() {
             }
         }
         if (s_moveto.var_ff81609a !== 1) {
-            wait(randomfloatrange(1, 2));
+            wait randomfloatrange(1, 2);
             if (!isalive(level.var_33918b88) || isdefined(level.var_33918b88) && distancesquared(level.var_33918b88.origin, var_a3b04877.origin) > 65536) {
                 function_9f2f0210(var_a3b04877);
                 return;
@@ -677,7 +677,7 @@ function function_cbee939b(var_a9e11cb7) {
             println("<dev string:x85>");
         }
     #/
-    wait(5);
+    wait 5;
     var_a9e11cb7 delete();
 }
 
@@ -719,7 +719,7 @@ function fishy_offering_step_1_setup(var_5ea5c94d) {
     foreach (spot in a_spots) {
         e_fish.origin = spot.origin;
         e_fish.angles = spot.angles;
-        wait(1);
+        wait 1;
         e_fish show();
         while (true) {
             s_result = e_fish waittill(#"damage");
@@ -800,7 +800,7 @@ function function_a343f892(a_ents) {
         scene::remove_scene_func(#"p8_fxanim_zm_zod_tentacle_bundle", &function_a343f892);
         mdl_kraken = a_ents[#"hash_3712f07fe0e1166c"];
         mdl_kraken hide();
-        wait(1.5);
+        wait 1.5;
         zm_powerups::specific_powerup_drop(#"free_perk", struct::get(#"hash_693bda099c0710af").origin + (0, 0, 16), undefined, undefined, undefined, 1, 1);
         if (isdefined(mdl_kraken)) {
             mdl_kraken delete();
@@ -1207,10 +1207,10 @@ function function_ae4e9016() {
                 playsoundatposition(#"hash_674add1cacda8f0a", level.var_8237e7d3.origin);
                 level.var_8237e7d3 playloopsound(#"hash_648b3ad720f4123", 0.1);
                 level.var_8237e7d3 thread scene::play(#"p8_fxanim_zm_zod_safe_cracker_ee_bundle", "combo_" + self.var_83fad8a9, level.var_8237e7d3);
-                wait(4);
+                wait 4;
                 playsoundatposition(#"hash_d47a6b375de9091", level.var_8237e7d3.origin);
                 level.var_8237e7d3 stoploopsound(0.05);
-                wait(1);
+                wait 1;
                 level.var_8237e7d3 scene::stop(#"p8_fxanim_zm_zod_safe_cracker_ee_bundle");
                 level.var_8237e7d3 unlink();
                 level.var_8237e7d3 linkto(self.var_6f7cfe6d);
@@ -1248,7 +1248,7 @@ function function_ae4e9016() {
             e_player.mdl_bone moveto(v_dest, 1.5, 1);
             e_player.mdl_bone playsound(#"hash_383e684a50e2025f");
             e_player.mdl_bone waittill(#"movedone");
-            wait(1);
+            wait 1;
             self.var_6f7cfe6d rotateyaw(-90, 0.25, 0.25);
             self.var_6f7cfe6d playsound(#"hash_1a6dadbf4537bb61");
             self.var_6f7cfe6d stoploopsound(0.5);
@@ -1307,7 +1307,7 @@ function function_e9104d6d(var_a276c861) {
                     break;
                 }
             #/
-            wait(3);
+            wait 3;
         }
         s_loc = struct::get(#"hash_43dc57b8641ea004");
         s_loc zm_unitrigger::create(undefined, undefined, &zm_unitrigger::function_69168e61);
@@ -1363,7 +1363,7 @@ function function_7f18a333() {
         mdl_car stoploopsound(1);
         mdl_car.angles = (0, 0, 0);
         exploder::stop_exploder("exp_bubbles_sink");
-        wait(3);
+        wait 3;
         mdl_car thread scene::play(#"hash_322be85f9a112e9");
         function_75bdcb53(mdl_car);
         if (!level flag::get(#"hash_3799c8bb28e2f2f")) {
@@ -1438,7 +1438,7 @@ function function_cd85b198() {
     s_target_loc = struct::get(#"hash_6cf786a7b61d7c70");
     n_time = e_item zm_utility::fake_physicslaunch(s_target_loc.origin, 600);
     e_item rotate((200, 90, 150));
-    wait(n_time);
+    wait n_time;
     fx::play(#"hash_43cec289a09441e9", s_target_loc.origin, s_target_loc.angles + (270, 0, 0));
     e_item notify(#"hash_1c8b3202700d2fb4");
     e_item.origin = s_target_loc.origin;
@@ -1457,9 +1457,9 @@ function function_f48b1de4() {
     self endon(#"death", #"car_reset", #"reached_end_node");
     while (true) {
         level waittill(#"klaxon_notify");
-        wait(randomfloatrange(0.1, 1));
+        wait randomfloatrange(0.1, 1);
         self playsound(#"hash_5ae1f398279d453");
-        wait(randomintrange(4, 7));
+        wait randomintrange(4, 7);
         self playsound(#"hash_2d1b8ed1a16ecfb1");
     }
 }
@@ -1485,7 +1485,7 @@ function function_f80bde48(player) {
         player endon(#"death", #"weapon_fired", #"weapon_ads");
         e_path = getent("berths_walk", "targetname");
         while (player getstance() === #"crouch" && player usebuttonpressed() && player istouching(e_path)) {
-            wait(0.2);
+            wait 0.2;
         }
         s_end = struct::get(#"hash_13758f136c6ab4bf");
         if (distance2dsquared(player.origin, s_end.origin) < 1024) {
@@ -1504,7 +1504,7 @@ function function_f80bde48(player) {
             }
         }
     }
-    wait(1);
+    wait 1;
 }
 
 // Namespace namespace_b45e3f05/namespace_2d696d7c
@@ -1563,7 +1563,7 @@ function function_127efb37(var_a276c861, var_19e802fa) {
 // Size: 0x44
 function function_98689e80() {
     level waittill(#"hash_4c84b8326097daf6");
-    wait(4);
+    wait 4;
     playsoundatposition(#"hash_5515ce05a0767859", (0, 0, 0));
 }
 
@@ -1579,7 +1579,7 @@ function function_23c7360a() {
         mdl_car playsound(#"hash_7beb8c1c8eed903d");
     }
     level clientfield::set("" + #"crash_fx", 1);
-    wait(0.5);
+    wait 0.5;
     v_loc = struct::get(#"hash_27613769597daaf0").origin;
     foreach (player in util::get_active_players()) {
         if (player util::is_looking_at(v_loc)) {
@@ -1589,7 +1589,7 @@ function function_23c7360a() {
             }
         }
     }
-    wait(5);
+    wait 5;
     mdl_car delete();
 }
 
@@ -1688,7 +1688,7 @@ function function_a5214a8d(w_frost_shield) {
 // Size: 0xac
 function function_bd64f794() {
     while (isdefined(self) && self util::is_spectating()) {
-        wait(1);
+        wait 1;
     }
     if (isdefined(self)) {
         self aat::acquire(getweapon(#"zhield_frost_dw"), "zm_aat_frostbite");
@@ -1805,7 +1805,7 @@ function function_e01b477f(var_2cb1cbce, var_46a3f206) {
     self playsound(#"hash_33fa1a9c8d819b09");
     self waittill(#"movedone");
     self hide();
-    wait(randomintrange(5, 10));
+    wait randomintrange(5, 10);
     self.origin = var_46a3f206.origin;
     self.angles = var_46a3f206.angles;
     self show();
@@ -1953,7 +1953,7 @@ function function_9fa09d36(mdl_flare) {
     mdl_flare flare_fx(mdl_flare.str_color);
     mdl_flare playsound(#"hash_3abb70f0e8764ecc");
     mdl_flare ghost();
-    wait(5);
+    wait 5;
     mdl_flare delete();
 }
 
@@ -2004,7 +2004,7 @@ function function_9a6d950f() {
 function function_74ae705a() {
     level endon(#"end_game");
     self endon(#"death");
-    wait(30 - 1.5);
+    wait 30 - 1.5;
     self show();
     self function_7ae29395();
 }
@@ -2044,7 +2044,7 @@ function function_5f7192b8() {
             player zm_score::add_to_player_score(n_points);
         }
     }
-    wait(1.5);
+    wait 1.5;
     exploder::exploder("fx_exp_flare_vista_red_white_blue");
     var_2cf73102 = [];
     foreach (s_launcher in level.a_s_launchers) {
@@ -2056,7 +2056,7 @@ function function_5f7192b8() {
     for (i = 0; i < 50; i++) {
         str_color = var_2cf73102[randomint(var_2cf73102.size)];
         fireworks_fx(str_color);
-        wait(randomfloatrange(0.1, 0.25));
+        wait randomfloatrange(0.1, 0.25);
     }
     level waittill(#"start_of_round");
     level.var_8c1a6e03 = undefined;
@@ -2074,7 +2074,7 @@ function fireworks_vo() {
             if (player zm_zonemgr::is_player_in_zone(a_zones)) {
                 b_result = player zm_audio::create_and_play_dialog(#"fireworks", #"react");
                 if (isdefined(b_result) && b_result) {
-                    wait(randomintrange(3, 6));
+                    wait randomintrange(3, 6);
                 }
             }
         }
@@ -2158,7 +2158,7 @@ function function_500ea537(params) {
                 self.var_df7eee28 = 1;
                 self dodamage(self.health, self.origin, player, player, "none", "MOD_MELEE", 0, getweapon(#"hash_6a9069969e6fa287"));
             }
-            wait(1);
+            wait 1;
             mdl_fx delete();
         }
     }
@@ -2230,9 +2230,9 @@ function function_cc7214a9(params) {
 // Size: 0x158
 function function_2c343fd8() {
     self endon(#"disconnect");
-    wait(1);
+    wait 1;
     self clientfield::set("" + #"hash_2c387ea19f228b5d", 1);
-    wait(2);
+    wait 2;
     self clientfield::set("" + #"hash_2c387ea19f228b5d", 0);
     var_5912c181 = getweapon(#"hash_6a9069969e6fa287");
     while (true) {
@@ -2334,7 +2334,7 @@ function function_41ee4286() {
             s_piano.var_32d36a7f = undefined;
             s_piano notify(#"hash_44c21ffb9cd24f2f");
             if (isdefined(e_player.var_32d36a7f)) {
-                wait(0.3);
+                wait 0.3;
             } else {
                 e_player.var_32d36a7f = var_1b79a086;
                 var_1bd4bb25 = 1;
@@ -2385,7 +2385,7 @@ function function_1f7f2030(var_2c2d042a) {
         }
         while (true) {
             print3d(self.origin, function_9e72a96(str_text), (1, 1, 0), 1, 1, 30);
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -2509,7 +2509,7 @@ function function_fd46b17e(str_notify) {
         level flag::wait_till_clear(#"moving_chest_now");
     }
     while (isdefined(level.var_2e1644f2) && level.var_2e1644f2) {
-        wait(0.1);
+        wait 0.1;
     }
     level endoncallback(&function_fd46b17e, #"moving_chest_now");
     var_52a1ab19 = level.chests[level.chest_index].zbarrier;
@@ -2534,7 +2534,7 @@ function function_fd46b17e(str_notify) {
             }
             var_52a1ab19 thread function_8baed388();
             while (isdefined(level.var_2e1644f2) && level.var_2e1644f2) {
-                wait(0.1);
+                wait 0.1;
             }
         }
     }

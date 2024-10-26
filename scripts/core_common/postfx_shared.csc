@@ -65,7 +65,7 @@ function localplayer_postfx_bundle_init(localclientnum) {
                 self thread exitpostfxbundle(var_38ce085);
                 setdvar(#"scr_exit_postfx_bundle", "<dev string:x38>");
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 

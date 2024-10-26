@@ -57,7 +57,7 @@ function function_f4515ba8(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x20a
 function private function_8847b8aa(localclientnum) {
     self endon(#"death", #"hash_395dfda1274cd506");
-    wait(1);
+    wait 1;
     a_str_tags = [];
     a_str_tags[0] = "j_elbow_le";
     a_str_tags[1] = "j_elbow_ri";
@@ -66,7 +66,7 @@ function private function_8847b8aa(localclientnum) {
     a_str_tags = array::randomize(a_str_tags);
     self.var_803e161e = [];
     self.var_803e161e[0] = util::playfxontag(localclientnum, level._effect[#"character_fire_death_sm"], self, a_str_tags[0]);
-    wait(1);
+    wait 1;
     a_str_tags[0] = "j_wrist_ri";
     a_str_tags[1] = "j_wrist_le";
     if (!(isdefined(self.missinglegs) && self.missinglegs)) {

@@ -152,7 +152,7 @@ function function_e4f3f17() {
     if ((isdefined(level.var_87226c31.bundle.timeout) ? level.var_87226c31.bundle.timeout : 0) == 0) {
         return;
     }
-    wait(level.var_87226c31.bundle.timeout);
+    wait level.var_87226c31.bundle.timeout;
     if (isdefined(self)) {
         self function_4ee7d46a(1);
     }
@@ -495,7 +495,7 @@ function ondamage() {
 // Checksum 0x7c88ef2b, Offset: 0x24d8
 // Size: 0x1c
 function function_cbc97710() {
-    wait(10);
+    wait 10;
     self delete();
 }
 
@@ -761,7 +761,7 @@ function private function_41225d9b(player, var_16505949) {
     player endon(#"death");
     player allowjump(0);
     player.var_10fb4c3d = 0;
-    wait(var_16505949);
+    wait var_16505949;
     player allowjump(1);
     player.var_10fb4c3d = 1;
 }

@@ -336,7 +336,7 @@ function handleplayerfasttravel(player, var_12230d08) {
     if (!isdefined(var_12230d08)) {
         return;
     }
-    wait(3);
+    wait 3;
     currentzone = player zm_utility::get_current_zone();
     currentorigin = player.origin;
     if (!isdefined(currentzone)) {

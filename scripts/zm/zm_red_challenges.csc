@@ -250,15 +250,15 @@ function function_c63a4f32(localclientnum, oldval, newval, bnewent, binitialsnap
         e_fx playsound(localclientnum, "zmb_sq_souls_release");
         e_fx.sfx_id = e_fx playloopsound(#"zmb_sq_souls_lp");
         util::playfxontag(localclientnum, level._effect[#"hash_fa374812e6016c9"][n_index], e_fx, "tag_origin");
-        wait(0.3);
+        wait 0.3;
         s_target = struct::get("s_apollo_challenge_fx_loc", "targetname");
         power = distance(e_fx.origin, s_target.origin);
         n_time = e_fx fake_physicslaunch(s_target.origin, power, 0.85);
-        wait(n_time);
+        wait n_time;
         e_fx playsound(localclientnum, "zmb_sq_souls_impact");
         e_fx stoploopsound(e_fx.sfx_id);
         util::playfxontag(localclientnum, level._effect[#"hash_eafc8632695ccef"][n_index], e_fx, "tag_origin");
-        wait(0.3);
+        wait 0.3;
         e_fx delete();
     }
 }

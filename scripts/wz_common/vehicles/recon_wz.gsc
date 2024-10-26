@@ -154,11 +154,11 @@ function private function_b96833b2(vehicle) {
             } else {
                 self clientfield::set_to_player("recon_out_of_circle", 0);
                 vehicle.var_3de57a77 = undefined;
-                wait(0.5);
+                wait 0.5;
             }
             continue;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -178,7 +178,7 @@ function private function_ec1a4a6b() {
             self notify(#"hash_363004a4e0ccc1f");
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -198,12 +198,12 @@ function private on_vehicle_killed(params) {
             }
         }
     }
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         self.var_4217cfcb = 1;
         self ghost();
     }
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self delete();
     }

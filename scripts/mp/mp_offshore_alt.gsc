@@ -47,7 +47,7 @@ function function_2cdcf5c3() {
 // Size: 0x1c4
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0);
     util::delay(0.2, undefined, &function_d29974fc);
     level thread function_fc73e385();
     if (util::isfirstround()) {
@@ -106,10 +106,10 @@ function function_fc73e385() {
 function function_c76ccdd2() {
     self.script_play_multiple = 1;
     self.barrage = 1;
-    wait(randomfloatrange(1, 10));
+    wait randomfloatrange(1, 10);
     while (self.barrage) {
         self scene::play();
-        wait(randomfloatrange(10, 20));
+        wait randomfloatrange(10, 20);
     }
 }
 

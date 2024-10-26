@@ -89,7 +89,7 @@ function player_freeze_trap_post_fx(localclientnum, oldval, newval, bnewent, bin
             self.var_b2ea9ecc = 0.5;
         }
         self postfx::function_c8b5f318(#"pstfx_frost_loop_fullscreen", #"reveal threshold", self.var_b2ea9ecc);
-        wait(0.05);
+        wait 0.05;
     }
     if (isdefined(self.var_f08ae416)) {
         self stoploopsound(self.var_f08ae416);

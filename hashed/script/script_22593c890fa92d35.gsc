@@ -65,7 +65,7 @@ function function_3e59cbbb(goal) {
     self player_insertion::function_723d686d();
     waitframe(1);
     self ghost();
-    wait(1);
+    wait 1;
     self delete();
 }
 

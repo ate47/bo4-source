@@ -182,7 +182,7 @@ function throwweapon(weapon, positiontag, scavenger, deleteweaponafterdropping) 
     if (!isdefined(startposition) || !isdefined(startangles)) {
         return;
     }
-    wait(waittime);
+    wait waittime;
     if (isdefined(self)) {
         endposition = self gettagorigin(positiontag);
         endangles = self gettagangles(positiontag);
@@ -411,7 +411,7 @@ function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfun
             timetaken = gettime() - time;
             if (timetaken < 0.05) {
                 println(gettime() + "<dev string:xbc>" + debugidentifier + "<dev string:xc0>" + flagname + "<dev string:x10c>" + returnednote + "<dev string:x11a>");
-                wait(0.05 - timetaken);
+                wait 0.05 - timetaken;
             }
         }
     }
@@ -451,7 +451,7 @@ function donotetracksfortimeproc(donotetracksforeverfunc, time, flagname, custom
 // Checksum 0xef5b5b23, Offset: 0x19f8
 // Size: 0x26
 function donotetracksfortimeendnotify(time) {
-    wait(time);
+    wait time;
     self notify(#"stop_notetracks");
 }
 

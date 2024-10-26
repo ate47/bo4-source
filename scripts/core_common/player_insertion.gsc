@@ -539,7 +539,7 @@ function function_82c73974(insertion) {
         insertion.otherplayers = [];
     }
     insertion thread function_c71552d0(insertion, 2, 2, 5, 1);
-    wait(2 + 0.1);
+    wait 2 + 0.1;
     level callback::add_callback(#"hash_774be40ec06d5212", &function_bcde1e07, insertion);
     insertion thread globallogic_audio::function_85818e24("matchstart");
     insertion thread function_a4deb676();
@@ -590,7 +590,7 @@ function function_35742117(insertion) {
         player val::set(#"player_insertion", "disablegadgets", 1);
     }
     insertion thread function_c71552d0(insertion, 2, 5, 5, 0);
-    wait(2 + 0.1);
+    wait 2 + 0.1;
     insertion thread globallogic_audio::function_85818e24("matchstart");
     level thread function_a4deb676();
     insertion flagsys::set(#"hash_122f326d72f4c884");
@@ -607,7 +607,7 @@ function function_35742117(insertion) {
         level callback::callback(#"hash_74b19f5972b0ee52", {#player:player});
     }
     function_dd34168c(insertion, #"insertion_begin_completed");
-    wait(5 + 5 / 3);
+    wait 5 + 5 / 3;
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
         if (!isalive(player)) {
@@ -631,7 +631,7 @@ function function_51c5f95f(insertion) {
     insertion.players = arraycopy(util::get_active_players());
     level function_948ac812(insertion);
     insertion thread function_c71552d0(insertion, 2, 2, 5, 1);
-    wait(2 + 0.1);
+    wait 2 + 0.1;
     insertion thread globallogic_audio::function_85818e24("matchstart");
     level thread function_a4deb676();
     insertion flagsys::set(#"hash_122f326d72f4c884");
@@ -646,7 +646,7 @@ function function_51c5f95f(insertion) {
             var_990e3011 = getdvarint(#"hash_96d977cb1cf39f8", 2);
         }
     #/
-    wait(var_990e3011);
+    wait var_990e3011;
     level callback::callback(#"hash_774be40ec06d5212");
     callback::remove_on_spawned(&function_aa3a20fb);
     function_a5fd9aa8(insertion);
@@ -679,7 +679,7 @@ function function_26fbfab4(insertion) {
         }
         player thread function_135ed50e();
     }
-    wait(var_850118f3);
+    wait var_850118f3;
 }
 
 // Namespace player_insertion/player_insertion
@@ -695,7 +695,7 @@ function function_135ed50e() {
         }
     #/
     self function_75488834();
-    wait(var_850118f3);
+    wait var_850118f3;
     self function_3a77bd05();
 }
 
@@ -934,7 +934,7 @@ function function_f2867466() {
             var_990e3011 = getdvarint(#"hash_96d977cb1cf39f8", 2);
         }
     #/
-    wait(var_990e3011);
+    wait var_990e3011;
     self function_adc8cff4(1);
 }
 
@@ -1029,22 +1029,22 @@ function function_ca5b6591(insertion, startorigin, endorigin, var_872f085f) {
     for (index = 0; index <= insertion.var_41091905.size; index++) {
         insertion.cameraent[index] moveto(insertion.cameraent[index].origin + rotatepoint(offset, var_872f085f), 50, 0, 0);
     }
-    wait(3.75);
+    wait 3.75;
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
         player playrumbleonentity(#"infiltration_rumble");
     }
-    wait(1);
+    wait 1;
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
         player playrumbleonentity(#"hash_233b436a07cd091a");
     }
-    wait(0.2);
+    wait 0.2;
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
         player playrumbleonentity(#"infiltration_rumble");
     }
-    wait(2);
+    wait 2;
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
         if (!isdefined(player)) {
@@ -1052,7 +1052,7 @@ function function_ca5b6591(insertion, startorigin, endorigin, var_872f085f) {
         }
         player playrumbleonentity(#"hash_62ba49f452a20378");
     }
-    wait(2);
+    wait 2;
     var_31a37076 = [];
     for (index = 0; index < insertion.players.size; index++) {
         player = insertion.players[index];
@@ -1084,7 +1084,7 @@ function function_ca5b6591(insertion, startorigin, endorigin, var_872f085f) {
         insertion.cameraent[index] moveto(targetpos, 4, 1, 0);
         insertion.cameraent[index] rotateto((var_872f085f[0] + 15, var_872f085f[1], var_872f085f[2]), 4, 1, 1);
     }
-    wait(4);
+    wait 4;
     for (index = 0; index <= insertion.var_41091905.size; index++) {
         if (!isdefined(insertion.cameraent[index])) {
             continue;
@@ -1553,7 +1553,7 @@ function function_45b56b0a(insertion, startpoint, endpoint, var_872f085f, vehicl
     insertion.var_933bdcf2.startorigin = rotatedstart;
     rotatedend = endpoint + rotatepoint(goaloffset, var_872f085f);
     insertion.var_933bdcf2.endorigin = rotatedend;
-    wait(0.5);
+    wait 0.5;
     insertion.var_933bdcf2 setrotorspeed(1);
     insertion.var_933bdcf2 setspeedimmediate(175);
     insertion.var_933bdcf2 setneargoalnotifydist(512);
@@ -1614,13 +1614,13 @@ function function_700e474f(startorigin, endorigin, var_872f085f, goal, index) {
             self thread function_84898b3f(firstgoal, var_9fa20618, endorigin, index);
         }
     #/
-    wait(0.25);
+    wait 0.25;
     self setrotorspeed(1);
     self setspeedimmediate(2);
     self vehlookat(firstgoal);
     self function_a57c34b7(firstgoal, 0, 0);
     if (index > 0) {
-        wait(0.75);
+        wait 0.75;
     }
     self setspeedimmediate(120);
     self thread function_71da60d1();
@@ -1640,7 +1640,7 @@ function function_700e474f(startorigin, endorigin, var_872f085f, goal, index) {
 // Checksum 0xbf88d4a5, Offset: 0x8a28
 // Size: 0x3c
 function function_71da60d1() {
-    wait(4);
+    wait 4;
     level notify(#"formation_start");
     self setspeed(150);
 }
@@ -1787,7 +1787,7 @@ function function_45644b08() {
     function private function_63793dbe() {
         time = getdvarfloat(#"hash_102dc944a54c88d9", 0);
         if (time) {
-            wait(time);
+            wait time;
             foreach (player in level.activeplayers) {
                 player flagsys::set(#"hash_224cb97b8f682317");
             }
@@ -1855,7 +1855,7 @@ function private function_afdad0c8(insertion, plane, startpoint, endpoint, var_6
         player flagsys::set(#"hash_224cb97b8f682317");
     }
     function_dd34168c(insertion, #"hash_60fcdd11812a0134");
-    wait(1);
+    wait 1;
     foreach (vehicle in insertion.var_41091905) {
         vehicle clientfield::set("infiltration_transport", 0);
     }
@@ -1873,7 +1873,7 @@ function private function_afdad0c8(insertion, plane, startpoint, endpoint, var_6
     if (isdefined(insertion.infilteament)) {
         insertion.infilteament delete();
     }
-    wait(5);
+    wait 5;
     currentvalue = level clientfield::get("infiltration_compass");
     newvalue = ~(1 << insertion.index) & currentvalue;
     level clientfield::set("infiltration_compass", newvalue);
@@ -1908,7 +1908,7 @@ function private function_6da3daa0(insertion, plane, startpoint, endpoint, var_6
     foreach (player in insertion.players) {
         player flagsys::set(#"hash_287397edba8966f9");
     }
-    wait(2);
+    wait 2;
     voiceevent("warPilotBail", undefined, {#insertion:insertion});
 }
 
@@ -1939,7 +1939,7 @@ function function_d11a5f0c(insertion) {
     }
     foreach (vehicle in insertion.var_41091905) {
         vehicle function_bc16f3b4(insertion);
-        wait(randomfloatrange(0.5, 1));
+        wait randomfloatrange(0.5, 1);
     }
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
@@ -2168,7 +2168,7 @@ function function_4feecc32() {
 // Size: 0x10c
 function function_2b276ae0() {
     self endon(#"disconnect", #"death");
-    wait(1);
+    wait 1;
     self setclientuivisibilityflag("weapon_hud_visible", 0);
     self val::reset(#"player_insertion", "freezecontrols");
     self function_4feecc32();
@@ -2224,7 +2224,7 @@ function function_c71552d0(insertion, fadeouttime, blacktime, fadeintime, rumble
             [[ lui_menu ]]->set_fadeovertime(player, int(fadeouttime * 1000));
         }
     }
-    wait(fadeouttime + blacktime);
+    wait fadeouttime + blacktime;
     insertion flagsys::wait_till_timeout(2, #"insertion_teleport_completed");
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
@@ -2236,7 +2236,7 @@ function function_c71552d0(insertion, fadeouttime, blacktime, fadeintime, rumble
         [[ lui_menu ]]->set_endalpha(player, 0);
         [[ lui_menu ]]->set_fadeovertime(player, int(fadeintime * 1000));
     }
-    wait(fadeintime);
+    wait fadeintime;
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
         [[ lui_menu ]]->close(player);
@@ -2448,7 +2448,7 @@ function function_8fc2a69e() {
         insertion.players = arraycopy(util::get_active_players());
         level function_948ac812(insertion);
         level thread function_c71552d0(insertion, 2, 2, 5, 1);
-        wait(2 + 0.1);
+        wait 2 + 0.1;
         level thread globallogic_audio::function_85818e24("<dev string:x285>");
         level thread function_a4deb676();
         insertion flagsys::set(#"hash_122f326d72f4c884");
@@ -2465,7 +2465,7 @@ function function_8fc2a69e() {
                 var_990e3011 = getdvarint(#"hash_96d977cb1cf39f8", 2);
             }
         #/
-        wait(var_990e3011);
+        wait var_990e3011;
         players = getplayers();
         players[0] function_adc8cff4();
     }

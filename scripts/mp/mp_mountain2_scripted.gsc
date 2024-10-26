@@ -59,7 +59,7 @@ function function_2cdcf5c3() {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
-        wait(getdvarfloat(#"hash_142927c6a6db817c", 0));
+        wait getdvarfloat(#"hash_142927c6a6db817c", 0);
         exploder::exploder("fxexp_blizzard");
         return;
     }

@@ -86,10 +86,10 @@ function function_68792ab6() {
                     break;
                 }
             #/
-            wait(1);
+            wait 1;
         }
         if (level.round_number == var_c43b94a8[i]) {
-            wait(randomintrange(10, 15));
+            wait randomintrange(10, 15);
         }
         function_99d6f707();
     }
@@ -188,9 +188,9 @@ function function_cb235436() {
 // Checksum 0x98357c30, Offset: 0xc70
 // Size: 0x5c
 function function_da95f7() {
-    wait(0.5);
+    wait 0.5;
     self clientfield::set("" + #"hash_28b770e7e782837", 1);
-    wait(0.8);
+    wait 0.8;
     self delete();
 }
 
@@ -208,7 +208,7 @@ function function_71461330() {
     level.var_dcd1e798 thread animation::play(level.var_9912ef7a);
     waitframe(2);
     var_ebfeac73 show();
-    wait(2);
+    wait 2;
     level thread function_48acb6ed(self.origin);
     var_ebfeac73 delete();
 }
@@ -228,7 +228,7 @@ function function_4204dba2() {
     level.var_dcd1e798 thread animation::play(level.var_9912ef7a);
     waitframe(2);
     var_2379bb0e show();
-    wait(2);
+    wait 2;
     level thread function_48acb6ed(e_machine.origin);
     self zm_perks::function_59fb56ff(1);
     var_2379bb0e delete();

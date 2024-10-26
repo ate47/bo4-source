@@ -178,7 +178,7 @@ function function_bbbc20bf(var_a7bc1cee = 0) {
     }
     if (var_a7bc1cee) {
         n_time = scene::function_8582657c(#"p8_fxanim_zm_towers_pap_sarcophagus_blood_01_bundle", "Shot 1");
-        wait(n_time);
+        wait n_time;
     }
 }
 
@@ -193,7 +193,7 @@ function function_bbbc20bf(var_a7bc1cee = 0) {
             foreach (str_index, s_defend_area in level.a_s_defend_areas) {
                 s_defend_area = zm_utility::function_a877cd10(str_index);
                 zm_utility::function_11101458(str_index);
-                wait(10);
+                wait 10;
                 zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 5);
             }
             waitframe(1);
@@ -256,7 +256,7 @@ function defend_areas() {
         level zm_utility::open_door("door_starting_area_to_ra_hallway", undefined, undefined, 1);
     }
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-    wait(25);
+    wait 25;
     zm_zonemgr::function_8caa21df(array(#"zone_danu_ground_floor", #"zone_ra_ground_floor"));
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 20);
@@ -277,14 +277,14 @@ function defend_areas() {
     }
     level zm_utility::open_door(var_420e4589, undefined, 8, 1);
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-    wait(45);
+    wait 45;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     s_defend_area zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level thread function_b03369f();
     zm_utility::function_11101458(#"temple");
     level thread activate_pap_altar();
-    wait(45);
+    wait 45;
     zm_zonemgr::zone_wait_till_enabled(#"zone_pap_room");
     zm_round_spawning::function_306ce518(#"gladiator_marauder", &function_69d1ce85);
     s_defend_area = zm_utility::function_a877cd10(#"temple");
@@ -304,7 +304,7 @@ function defend_areas() {
     }
     level zm_utility::open_door(var_420e4589, undefined, 8, 1);
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-    wait(45);
+    wait 45;
     level notify(#"hash_6a0d2b5af489c227");
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
@@ -314,7 +314,7 @@ function defend_areas() {
     zm_utility::function_fef4b36a(str_next_defend);
     str_next_defend = #"arena";
     zm_utility::function_11101458(#"arena");
-    wait(45);
+    wait 45;
     s_defend_area = zm_utility::function_a877cd10(#"arena");
     level thread zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7);
     level flag::wait_till("started_defend_area");
@@ -331,7 +331,7 @@ function defend_areas() {
     }
     level zm_utility::open_door(var_420e4589, undefined, 8, 1);
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-    wait(45);
+    wait 45;
     zm_round_spawning::function_306ce518(#"blight_father", &intro_blight_father);
     level util::delay("started_defend_area", "end_game", &zm_round_spawning::function_376e51ef, #"blight_father");
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
@@ -346,7 +346,7 @@ function defend_areas() {
     }
     level zm_utility::open_door(var_420e4589, undefined, 8, 1);
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-    wait(45);
+    wait 45;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7);
@@ -359,7 +359,7 @@ function defend_areas() {
     }
     level zm_utility::open_door(var_420e4589, undefined, 8, 1);
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-    wait(45);
+    wait 45;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7);
@@ -367,7 +367,7 @@ function defend_areas() {
     n_wait_time = 45;
     for (var_837cd1b4 = 0; true; var_837cd1b4++) {
         zm_utility::function_11101458(str_next_defend);
-        wait(n_wait_time);
+        wait n_wait_time;
         s_defend_area = zm_utility::function_a877cd10(str_next_defend);
         zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
         if (var_837cd1b4 == 3 || str_next_defend == #"arena") {
@@ -458,7 +458,7 @@ function function_11962516() {
     }
     zm_round_spawning::function_b4a8f95a(#"tiger", var_1a397ef, &zm_towers_special_rounds::function_f63225b8, &zm_towers_special_rounds::function_9a74f284, &zm_towers_special_rounds::function_a5dc8595, &zombie_tiger_util::function_ffa01525);
     zm_utility::function_fdb0368(var_1a397ef);
-    wait(2);
+    wait 2;
     zm_utility::function_9b7bc715(#"tiger", 1);
 }
 

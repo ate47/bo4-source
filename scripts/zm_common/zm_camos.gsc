@@ -206,7 +206,7 @@ function function_7b29c2d2(weapon) {
 function private function_160898c() {
     self notify(#"hash_7e9b17b054c01cb3");
     self endon(#"death", #"hash_7e9b17b054c01cb3");
-    wait(5);
+    wait 5;
     self.var_88ebd633.var_d9449a3 = 0;
 }
 
@@ -242,7 +242,7 @@ function function_432cf6d(weapon) {
 function private function_d01affa9() {
     self notify(#"hash_3dbf3a8521ba1621");
     self endon(#"death", #"hash_3dbf3a8521ba1621");
-    wait(7);
+    wait 7;
     self.var_88ebd633.var_bcacb3a3 = 0;
 }
 

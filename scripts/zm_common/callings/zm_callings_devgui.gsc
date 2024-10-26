@@ -96,7 +96,7 @@
                 target = var_d1017f27.var_e226ec4f;
                 iprintln(self.name + "<dev string:x213>" + function_9e72a96(var_d1017f27.var_ad971622) + "<dev string:x226>" + progress + "<dev string:x238>" + target);
             }
-            wait(n_interval);
+            wait n_interval;
         }
     }
 

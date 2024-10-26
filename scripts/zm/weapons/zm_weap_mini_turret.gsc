@@ -317,7 +317,7 @@ function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, sh
         self.owner [[ level.playequipmentdestroyedonplayer ]]();
     }
     var_980fde21 = self.turret;
-    wait(0.1);
+    wait 0.1;
     if (isdefined(turretvehicle)) {
         turretvehicle ghost();
         turretvehicle notsolid();
@@ -329,7 +329,7 @@ function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, sh
         }
         if (isdefined(turretvehicle)) {
             turretvehicle.dontfreeme = undefined;
-            wait(0.5);
+            wait 0.5;
         }
         if (isdefined(turretvehicle)) {
             turretvehicle delete();
@@ -383,7 +383,7 @@ function turret_laser_watch() {
         } else if (islaseron(veh)) {
             veh vehicle::enable_laser(0, 0);
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -424,18 +424,18 @@ function turretscanning() {
     veh endon(#"death", #"death_started", #"end_turret_scanning");
     veh.turret_target = undefined;
     veh.do_not_clear_targets_during_think = 1;
-    wait(0.8);
+    wait 0.8;
     veh playsound(#"mpl_turret_startup");
     veh playloopsound(#"hash_69240c6db92da5bf");
     while (true) {
         if (veh.controlled || !veh.turret_enabled) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (isdefined(veh.enemy)) {
             if (isvehicle(veh.enemy) && issentient(veh.enemy) && !(veh.enemy.var_232915af === 1)) {
                 veh setignoreent(veh.enemy, 1);
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
         }
@@ -465,10 +465,10 @@ function turretscanning() {
                 if (var_afae28e0 && isdefined(veh.turret_target) && isdefined(veh.turret_target.var_e78602fc) && veh.turret_target.var_e78602fc == veh) {
                     veh.owner playsoundtoplayer(#"hash_7ea486136cd776c", veh.owner);
                     veh.turretrotscale = 1;
-                    wait(randomfloatrange(0.05, 0.2));
+                    wait randomfloatrange(0.05, 0.2);
                 }
             } else {
-                wait(0.25);
+                wait 0.25;
             }
             continue;
         }
@@ -560,7 +560,7 @@ function function_31477582() {
     max_delta = 1;
     while (true) {
         if (!isdefined(self.turret)) {
-            wait(1);
+            wait 1;
             continue;
         }
         trace = physicstrace(self.origin + (0, 0, 0), self.origin + (0, 0, -10), (-3, -3, -1), (3, 3, 1), self.turret, 1 | 16);
@@ -572,7 +572,7 @@ function function_31477582() {
             continue;
         }
         max_delta = 1;
-        wait(1);
+        wait 1;
     }
 }
 

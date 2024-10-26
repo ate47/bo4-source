@@ -179,7 +179,7 @@ function function_aafe4c74() {
             iprintln("<dev string:x53>" + level.var_bb42ed2);
             iprintln("<dev string:x61>" + level.var_9d4a9561);
             iprintln("<dev string:x6f>" + level.var_b8c2e6df);
-            wait(5);
+            wait 5;
         }
     }
 
@@ -388,7 +388,7 @@ function function_9415d18b() {
 function timeout_wait() {
     level endon(#"game_ended");
     self endon(#"reset");
-    wait(60);
+    wait 60;
     /#
         level.var_bb42ed2++;
     #/
@@ -497,7 +497,7 @@ function function_b8a3dde4() {
     if (wait_time < 0) {
         wait_time = level.cleandepositonlinetime * 0.05;
     }
-    wait(wait_time);
+    wait wait_time;
     if (!isdefined(self.baseeffect)) {
         return;
     }
@@ -530,7 +530,7 @@ function function_fd08eb25() {
                     globallogic_audio::play_2d_on_team("mpl_fracture_sting_powerdown", team);
                 }
             }
-            wait(level.var_2576eaeb);
+            wait level.var_2576eaeb;
         }
         var_79efdaa0 = function_e3e1cf54(var_696c0ca5);
         deposithub = level.cleandeposithubs[var_79efdaa0];
@@ -557,7 +557,7 @@ function function_fd08eb25() {
             }
         }
         var_696c0ca5 = var_79efdaa0;
-        wait(level.cleandepositonlinetime);
+        wait level.cleandepositonlinetime;
         smart_cover::function_60a53911(deposithub.trigger);
         concertina_wire::function_60a53911(deposithub.trigger);
         deposithub gameobjects::disable_object();

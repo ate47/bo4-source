@@ -1013,7 +1013,7 @@ function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_
     var_eb325a79 = self ai::function_9139c839().var_9e5ebf3c;
     var_b446b077 = self ai::function_9139c839().var_94fefe66;
     var_3fa92868 = self ai::function_9139c839().var_52bddd4;
-    wait(self ai::function_9139c839().var_20c6e4ca);
+    wait self ai::function_9139c839().var_20c6e4ca;
     while (isdefined(var_892397fd)) {
         if (var_892397fd.var_f3d1c928 >= max_trail_iterations) {
             var_892397fd thread function_124486ee(0);
@@ -1021,7 +1021,7 @@ function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_
             var_892397fd function_1974d26f(var_3fa92868, var_b446b077, var_eb325a79);
             var_892397fd.var_f3d1c928 += 1;
         }
-        wait(var_eb325a79);
+        wait var_eb325a79;
     }
 }
 
@@ -1170,7 +1170,7 @@ function private function_124486ee(delay) {
     var_6927cfa0 = 40;
     var_c45ef84c = 60 * 60;
     if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     if (isdefined(var_892397fd)) {
         var_892397fd notify(#"detonated");

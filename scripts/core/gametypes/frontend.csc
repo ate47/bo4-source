@@ -329,7 +329,7 @@ function blackscreen_watcher() {
         waitresult = level waittill(#"streamer_change");
         var_d0b01271 = waitresult.var_d0b01271;
         setuimodelvalue(blackscreenuimodel, 1);
-        wait(0.1);
+        wait 0.1;
         while (true) {
             charready = 1;
             if (isdefined(var_d0b01271)) {
@@ -339,7 +339,7 @@ function blackscreen_watcher() {
             if (charready && sceneready) {
                 break;
             }
-            wait(0.1);
+            wait 0.1;
         }
         setuimodelvalue(blackscreenuimodel, 0);
     }
@@ -411,7 +411,7 @@ function update_inspection_character(localclientnum, xuid, menu_name) {
         params = {#anim_name:[[ var_d0b01271 ]]->function_8144231c()};
         [[ var_d0b01271 ]]->update(params);
         for (iterations = 0; !isdefined(var_23904c1d) && iterations < 15; iterations++) {
-            wait(1);
+            wait 1;
             var_23904c1d = getcharactercustomizationforxuid(localclientnum, xuid);
         }
         [[ var_d0b01271 ]]->function_1ec9448d(0);
@@ -485,7 +485,7 @@ function function_daa3f7d0(localclientnum, weaponinfo, should_update_weapon_opti
             level.var_44011752 show();
             level thread scene::stop(#"scene_frontend_inspection_weapon");
         }
-        wait(0.1);
+        wait 0.1;
         info = function_f2f10929(current_weapon);
         render_options = function_140a6212(weaponinfo.camoindex, 0, weaponinfo.weaponmodelslot, 0, 0, 0);
         level.var_44011752 useweaponmodel(current_weapon, undefined, render_options);
@@ -538,7 +538,7 @@ function entityspawned(localclientnum) {
             adddebugcommand(localclientnum, "<dev string:x66>" + var_34415027 + "<dev string:x75>" + i + "<dev string:x9a>");
         }
         while (true) {
-            wait(0.1);
+            wait 0.1;
             var_879980c4 = getdvarint(#"hash_563d2a49168a665c", -1);
             if (var_879980c4 != var_408e7d77) {
                 var_f44acc91 = level.var_e362b5d9[var_879980c4];
@@ -649,7 +649,7 @@ function entityspawned(localclientnum) {
         }
         [[ var_d0b01271 ]]->update({#var_c76f3e47:1, #var_5bd51249:8, #var_13fb1841:4, #scene:scene_name, #scene_shot:shot_name});
         do {
-            wait(0.5);
+            wait 0.5;
         } while (![[ var_d0b01271 ]]->function_ea4ac9f8());
         var_f75a02ea = function_9e72a96(function_b14806c6(character_index, mode));
         if (var_b34f01f0) {
@@ -789,7 +789,7 @@ function entityspawned(localclientnum) {
                 level thread function_fb399a61(localclientnum);
                 return;
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -833,7 +833,7 @@ function entityspawned(localclientnum) {
         setdvar(#"char_render", "<dev string:x4b>");
         var_f7a528f2 = "<dev string:x4b>";
         while (true) {
-            wait(0.1);
+            wait 0.1;
             if (getdvarstring(#"char_render", var_f7a528f2) != var_f7a528f2) {
                 var_f7a528f2 = getdvarstring(#"char_render");
                 if (var_f7a528f2 != "<dev string:x4b>") {
@@ -875,10 +875,10 @@ function entityspawned(localclientnum) {
             }
             iteration = 0;
             do {
-                wait(0.5);
+                wait 0.5;
                 iteration++;
             } while (!weapon_model isstreamed(8, 4) && iteration < 1);
-            wait(2);
+            wait 2;
             function_da10fc8f(localclientnum, "<dev string:x28c>" + weapon_name + "<dev string:x12a>" + weapon_name + "<dev string:x29e>" + var_9ce34e01 + "<dev string:x148>");
         }
     }
@@ -987,7 +987,7 @@ function entityspawned(localclientnum) {
         weapon_name = "<dev string:x4b>";
         var_f7a528f2 = "<dev string:x4b>";
         while (true) {
-            wait(0.1);
+            wait 0.1;
             if (getdvarstring(#"hash_1311d7636a782655", weapon_name) != weapon_name) {
                 weapon_name = getdvarstring(#"hash_1311d7636a782655");
                 if (weapon_name != "<dev string:x4b>") {
@@ -1028,7 +1028,7 @@ function entityspawned(localclientnum) {
     function function_3d29f330(localclientnum) {
         util::add_devgui(localclientnum, "<dev string:x3cb>" + "<dev string:x1ae>", "<dev string:x3df>");
         while (getdvarint(#"hash_2a806885aa30e65b", 0) == 0) {
-            wait(1);
+            wait 1;
         }
         util::remove_devgui(localclientnum, "<dev string:x3cb>" + "<dev string:x1ae>");
         function_ea9a5e69(localclientnum);
@@ -1069,7 +1069,7 @@ function entityspawned(localclientnum) {
         setdvar(#"hash_4243dd01393aa940", "<dev string:x4b>");
         var_f7a528f2 = "<dev string:x4b>";
         while (true) {
-            wait(0.1);
+            wait 0.1;
             if (getdvarstring(#"hash_4243dd01393aa940", var_f7a528f2) != var_f7a528f2) {
                 var_f7a528f2 = getdvarstring(#"hash_4243dd01393aa940");
                 if (var_f7a528f2 != "<dev string:x4b>") {
@@ -1235,7 +1235,7 @@ function function_deed1dbf(localclientnum) {
     attempts = 0;
     limit = 20;
     do {
-        wait(1);
+        wait 1;
         var_ca56648b = function_3d72f7e7(localclientnum);
         attempts += 1;
     } while (var_ca56648b == 0 && attempts < limit);
@@ -1615,7 +1615,7 @@ function choose_taunts_camera_watch(localclientnum, menu_name) {
     [[ var_d0b01271 ]]->update(params);
     [[ var_d0b01271 ]]->function_4240a39a(0, undefined);
     playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_preview", "", s_cam.origin, s_cam.angles);
-    wait(3);
+    wait 3;
 }
 
 // Namespace frontend/frontend
@@ -1682,7 +1682,7 @@ function function_f00765ad(localclientnum, xuid, ccobject, index, var_3f0e790b) 
     [[ ccobject ]]->set_character_mode(session_mode);
     var_23904c1d = getcharactercustomizationforxuid(localclientnum, xuid);
     while (!isdefined(var_23904c1d) && iterations < 15) {
-        wait(1);
+        wait 1;
         var_23904c1d = getcharactercustomizationforxuid(localclientnum, xuid);
         iterations++;
     }
@@ -1889,7 +1889,7 @@ function function_6e9fbb54(localclientnum, var_baeecec7 = undefined) {
         [[ level.cycle_frozen_moment_char_current ]]->function_15a8906a(level.var_4c6f850d[level.var_47863282]);
         [[ level.cycle_frozen_moment_char_current ]]->update(params);
         while (![[ level.cycle_frozen_moment_char_current ]]->function_ea4ac9f8()) {
-            wait(0.1);
+            wait 0.1;
         }
         if (isdefined(level.var_4c6f850d) && isdefined(level.var_4c6f850d[level.var_47863282])) {
             level.var_37fcc91f = "play";
@@ -1904,7 +1904,7 @@ function function_6e9fbb54(localclientnum, var_baeecec7 = undefined) {
     if (!(isdefined(level.var_3cea0f38) && level.var_3cea0f38) && isdefined(level.var_4c6f850d) && level.var_4c6f850d.size > 1 && level.var_e8250c7b.size > 1) {
         level.var_3cea0f38 = 1;
         while (![[ level.cycle_frozen_moment_char_current ]]->function_ea4ac9f8()) {
-            wait(0.1);
+            wait 0.1;
         }
         if (isdefined(var_baeecec7)) {
             level.var_202758dc = var_baeecec7;
@@ -1933,7 +1933,7 @@ function function_6e9fbb54(localclientnum, var_baeecec7 = undefined) {
             }
             level.var_723bf922 = next_scene;
             while (isdefined(level.var_723bf922) && !forcestreambundle(level.var_723bf922)) {
-                wait(0.1);
+                wait 0.1;
             }
             if (isdefined(level.var_723bf922)) {
                 params = {#var_c76f3e47:1, #var_d8cb38a9:1, #var_8d3b5f69:1};
@@ -2083,7 +2083,7 @@ function toggle_postfx(localclientnum, on_off, postfx) {
 // Size: 0xb2
 function function_ae99571d(localclientnum) {
     while (!isdefined(level.var_7208b551)) {
-        wait(0.1);
+        wait 0.1;
     }
     var_f44acc91 = level.var_e362b5d9[level.var_be02eda3];
     var_d53ddee1 = function_25f808c9(localclientnum, var_f44acc91.mode, var_f44acc91.role_index);
@@ -2225,7 +2225,7 @@ function lobby_main(localclientnum, menu_name, state) {
                 var_d53ddee1 = level.var_4e236556;
             } else {
                 while (!isdefined(level.var_7208b551)) {
-                    wait(0.1);
+                    wait 0.1;
                 }
                 var_f44acc91 = level.var_e362b5d9[level.var_be02eda3];
                 var_d53ddee1 = character_customization::function_7474681d(localclientnum, var_f44acc91.mode, var_f44acc91.role_index);
@@ -2235,7 +2235,7 @@ function lobby_main(localclientnum, menu_name, state) {
             controllermodel = getuimodelforcontroller(localclientnum);
             var_aa16ae79 = getuimodel(controllermodel, "SpecialistHeadquarters.ChosenSpecialistID");
             for (character_index = getuimodelvalue(var_aa16ae79); !isdefined(character_index) || character_index == 0; character_index = getuimodelvalue(var_aa16ae79)) {
-                wait(0.1);
+                wait 0.1;
             }
             level notify("menu_change" + localclientnum, {#menu:"directorTraining", #status:"opened", #state:character_index, #mode:1});
         } else if (state == "inspect_specialist" && level.lastlobbystate === "inspect_specialist") {
@@ -2335,7 +2335,7 @@ function function_a71254a9(localclientnum, play, player_data, var_1c5551d6 = 0, 
     assert(!play || isdefined(player_data));
     if (play && (!isdefined(level.var_8013e6bd) || character_customization::function_aa5382ed(level.var_4e236556, player_data))) {
         while (!isdefined(level.var_7208b551)) {
-            wait(0.1);
+            wait 0.1;
         }
         if (isdefined(var_7318f7f0)) {
             var_53511779 = var_7318f7f0;
@@ -2561,7 +2561,7 @@ function function_3e7aaaea(localclientnum, weapon_model, waitresult) {
                 weapon_model useweaponmodel(weapon, undefined, render_options);
                 weapon_model setscale(var_2d45743e.scale);
                 activecamo::function_374e37a0(localclientnum, weapon_model, var_3594168e, level.var_324c3190);
-                wait(var_9d7ee952);
+                wait var_9d7ee952;
             }
         }
     }
@@ -2810,7 +2810,7 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
             var_5f26f63 += v_forward;
             var_46abe989 += anglestoforward((0, var_5f26f63[1], 0));
             [[ self ]]->function_82e05d64().var_d35ebd8e = playfx(localclientnum, var_cc8a3490, var_46abe989, anglestoforward(var_5f26f63), anglestoup(var_5f26f63));
-            wait(0.3);
+            wait 0.3;
         }
     }
     character_model = [[ self ]]->function_217b10ed();
@@ -2821,7 +2821,7 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
             var_bee5328d += v_forward;
             var_78a78382 += anglestoforward((0, var_bee5328d[1], 0));
             [[ self ]]->function_82e05d64().var_bef648d0 = playfx(localclientnum, var_7d89d45, var_78a78382, anglestoforward(var_bee5328d), anglestoup(var_bee5328d));
-            wait(0.5);
+            wait 0.5;
         }
     }
     character_model = [[ self ]]->function_217b10ed();

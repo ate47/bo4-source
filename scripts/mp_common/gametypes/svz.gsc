@@ -142,13 +142,13 @@ function function_fe170e7() {
         return;
     }
     if (!(isdefined(self.var_417bcbbd) && self.var_417bcbbd)) {
-        wait(0.5);
+        wait 0.5;
         if (!isdefined(self)) {
             return;
         }
         playfxontag("player/fx8_plyr_infect_change_flash_3p", self, "j_spine4");
         self playsoundontag(#"hash_757c35cbad846c27", "j_spine4");
-        wait(0.5);
+        wait 0.5;
         if (!isdefined(self)) {
             return;
         }
@@ -237,7 +237,7 @@ function onscoreclosemusic() {
             level notify(#"sndmusichalfway");
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -432,7 +432,7 @@ function onendgame(var_c1e98979) {
 function onconnect() {
     waitframe(1);
     if (level.ingraceperiod === 1 && level.draftstage != 3) {
-        wait(1);
+        wait 1;
         draft::assign_remaining_players(self);
     }
 }

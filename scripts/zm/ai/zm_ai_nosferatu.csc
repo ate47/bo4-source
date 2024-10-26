@@ -67,7 +67,7 @@ function function_3a03717(localclientnum) {
         if (n_dist < 400) {
             function_36e4ebd4(localclientnum, "damage_light");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

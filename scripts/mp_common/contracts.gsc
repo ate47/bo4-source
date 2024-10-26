@@ -458,7 +458,7 @@ function function_8af6a5a() {
     // Size: 0xe4
     function devgui_setup() {
         devgui_base = "<dev string:x6b>";
-        wait(3);
+        wait 3;
         function_e07e542b(devgui_base, undefined);
         function_17a92a99(devgui_base);
         function_b308be00(devgui_base);

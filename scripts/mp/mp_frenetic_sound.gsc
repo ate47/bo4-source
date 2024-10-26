@@ -15,7 +15,7 @@ function main() {
 // Size: 0xa8
 function function_f14af27() {
     while (true) {
-        wait(300);
+        wait 300;
         playsoundatposition(#"hash_4eb7a29f1b1a264", (905, 50, 1091));
         playsoundatposition(#"hash_44f8b894cb0ec41e", (1053, 975, 304));
         playsoundatposition(#"hash_44f8b794cb0ec26b", (1218, -1599, 270));

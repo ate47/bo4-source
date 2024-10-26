@@ -54,7 +54,7 @@ function __init__() {
     function function_6bea5139() {
         self notify("<dev string:x3b>");
         self endon("<dev string:x3b>");
-        wait(5);
+        wait 5;
         level.var_5fa54158 = "<dev string:x38>";
     }
 
@@ -103,7 +103,7 @@ function __init__() {
                         player function_947fe5c4(autoselection);
                     }
                 }
-                wait(1);
+                wait 1;
             }
         }
     }
@@ -171,7 +171,7 @@ function start_cooldown() {
         timeleft = (var_e5e81b59 - gettime()) / 1000;
         player clientfield::set_player_uimodel("PositionDraft.cooldown", int(timeleft));
         player.var_7d68fce3 = timeleft;
-        wait(1);
+        wait 1;
     }
     player.var_7d68fce3 = 0;
     player clientfield::set_player_uimodel("PositionDraft.cooldown", 0);
@@ -274,7 +274,7 @@ function function_ca33311e() {
         foreach (player in level.players) {
             player resetinactivitytimer();
         }
-        wait(5);
+        wait 5;
     }
 }
 
@@ -394,13 +394,13 @@ function function_21f5a2c1() {
 // Size: 0x19c
 function wait_for_players() {
     while (!function_d255fb3e()) {
-        wait(0.2);
+        wait 0.2;
     }
     level.var_b318d3d1 = getgametypesetting(#"drafttime") + getgametypesetting(#"hash_4e4352bd1aaeedfe") + 20;
     function_ee80d2e8(int(max(0, level.var_b318d3d1)));
     starttime = gettime();
     while (!all_players_connected()) {
-        wait(0.2);
+        wait 0.2;
         if (function_c5394b83(starttime, 20)) {
             break;
         }
@@ -472,11 +472,11 @@ function draft_run() {
                     ready = 0;
                 }
             }
-            wait(1);
+            wait 1;
         }
     } else {
         while (!function_d255fb3e()) {
-            wait(1);
+            wait 1;
         }
         level.var_9205f2e8 = gettime();
         while (timeremaining > 0 && !level.gameended) {
@@ -501,7 +501,7 @@ function draft_run() {
                 level clientfield::set_world_uimodel("PositionDraft.timeRemaining", 0);
                 break;
             }
-            wait(1);
+            wait 1;
         }
         level clientfield::set_world_uimodel("PositionDraft.timeRemaining", 0);
     }
@@ -519,7 +519,7 @@ function draft_run() {
 // Size: 0x2c
 function function_404f08f3() {
     level clientfield::set_world_uimodel("PositionDraft.timeRemaining", 0);
-    wait(2);
+    wait 2;
 }
 
 // Namespace draft/draft
@@ -666,7 +666,7 @@ function assign_remaining_players(only_assign_player) {
                 println("<dev string:x1f4>");
                 globallogic::exit_level();
                 while (true) {
-                    wait(10);
+                    wait 10;
                 }
             }
             if (!isdefined(selectedcharacter) || selectedcharacter == 0) {
@@ -710,12 +710,12 @@ function game_start() {
         }
         timeremaining = decrement(timeremaining);
         if (timeremaining == 0) {
-            wait(0.75);
+            wait 0.75;
             luinotifyevent(#"quick_fade", 0);
-            wait(0.25);
+            wait 0.25;
             continue;
         }
-        wait(1);
+        wait 1;
     }
     level notify(#"hash_4c62fe02843b1a98");
     level thread globallogic::sndsetmatchsnapshot(0);

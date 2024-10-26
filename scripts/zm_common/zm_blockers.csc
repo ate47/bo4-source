@@ -145,7 +145,7 @@ function function_e6eed4fe(str_fx_name, var_d34b6d2b, var_6142f944, n_new_val) {
         }
         util::playfxontag(var_6142f944, str_fx_name, var_4da473fc, "tag_origin");
         playsound(var_6142f944, var_d34b6d2b, var_4da473fc.origin);
-        wait(2);
+        wait 2;
         if (isdefined(var_4da473fc)) {
             var_4da473fc delete();
         }

@@ -123,7 +123,7 @@
                 function_bf14041f(var_9e1b22d);
                 setdvar(#"scr_set_spawns", "<dev string:x164>");
             }
-            wait(1);
+            wait 1;
         }
     }
 

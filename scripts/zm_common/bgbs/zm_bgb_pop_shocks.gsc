@@ -40,7 +40,7 @@ function event() {
     self endon(#"disconnect", #"death", #"bgb_update");
     self.var_727695ba = 5;
     while (self.var_727695ba > 0) {
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -151,7 +151,7 @@ function tesla_death(player) {
     self endon(#"death");
     player endon(#"disconnect");
     self thread function_f724a242(1);
-    wait(2);
+    wait 2;
     player zm_stats::increment_challenge_stat(#"hash_133575f669ffc55c");
     foreach (weapon in player getweaponslist()) {
         if (weapon.statname == #"bowie_knife") {

@@ -130,10 +130,10 @@ function function_dc12d0bd(activator) {
     level scene::play(#"hash_711c3c97dc4804e2", "finger_down");
     level thread scene::play(#"hash_711c3c97dc4804e2", "down_idle");
     level thread scene::play(#"hash_2f32b57967d58743", "button_in_idle");
-    wait(0);
+    wait 0;
     level scene::play(#"hash_711c3c97dc4804e2", "finger_up");
     level thread scene::play(#"hash_711c3c97dc4804e2", "up_idle");
-    wait(10);
+    wait 10;
     level scene::play(#"hash_2f32b57967d58743", "button_out");
     level thread scene::play(#"hash_2f32b57967d58743", "button_out_idle");
     self gameobjects::enable_object();
@@ -165,7 +165,7 @@ function function_7ea86b26(a_ents) {
         return;
     }
     finger endon(#"death");
-    wait(0.1);
+    wait 0.1;
     var_ce56e2f0 triggerenable(1);
     finger waittill(#"stop_damage");
     var_ce56e2f0 triggerenable(0);
@@ -347,9 +347,9 @@ function function_3f6f8daa() {
             }
             speaker playsoundwithnotify(var_22082d80, "radio_done");
             speaker waittill(#"radio_done", #"death");
-            wait(0.2);
+            wait 0.2;
         }
-        wait(randomfloatrange(30, 35));
+        wait randomfloatrange(30, 35);
     }
 }
 
@@ -414,9 +414,9 @@ function function_77156d1e() {
                 }
                 speaker playsoundwithnotify(line, "skit_done");
                 speaker waittill(#"skit_done", #"death");
-                wait(0.2);
+                wait 0.2;
             }
-            wait(randomfloatrange(15, 45));
+            wait randomfloatrange(15, 45);
         }
     }
 }

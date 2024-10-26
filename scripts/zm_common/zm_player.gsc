@@ -185,7 +185,7 @@ function player_track_ammo_count() {
     ammolowcount = 0;
     ammooutcount = 0;
     while (true) {
-        wait(0.5);
+        wait 0.5;
         weapon = self getcurrentweapon();
         if (weapon == level.weaponnone || weapon.skiplowammovox) {
             continue;
@@ -226,14 +226,14 @@ function player_track_ammo_count() {
                 ammolowcount++;
             }
         } else if (ammooutcount < 1) {
-            wait(0.5);
+            wait 0.5;
             if (self getcurrentweapon() !== weapon) {
                 continue;
             }
             self zm_audio::create_and_play_dialog(#"ammo", #"out");
             ammooutcount++;
         }
-        wait(20);
+        wait 20;
     }
 }
 
@@ -242,7 +242,7 @@ function player_track_ammo_count() {
 // Checksum 0x47f1d1a4, Offset: 0xfd0
 // Size: 0x94
 function spawn_vo() {
-    wait(1);
+    wait 1;
     players = getplayers();
     if (players.size > 1) {
         player = array::random(players);
@@ -287,7 +287,7 @@ function callback_playerlaststand(einflictor, eattacker, idamage, smeansofdeath,
 function breakafter(time, damage, piece) {
     self notify(#"breakafter");
     self endon(#"breakafter");
-    wait(time);
+    wait time;
     self dodamage(damage, self.origin, undefined, undefined);
 }
 
@@ -744,18 +744,18 @@ function player_out_of_playable_area_monitor() {
     while (!isdefined(self.characterindex)) {
         waitframe(1);
     }
-    wait(0.15 * self.characterindex);
+    wait 0.15 * self.characterindex;
     while (true) {
         if (self.sessionstate == "spectator") {
-            wait(get_player_out_of_playable_area_monitor_wait_time());
+            wait get_player_out_of_playable_area_monitor_wait_time();
             continue;
         }
         if (isdefined(self.hostmigrationcontrolsfrozen) && self.hostmigrationcontrolsfrozen) {
-            wait(get_player_out_of_playable_area_monitor_wait_time());
+            wait get_player_out_of_playable_area_monitor_wait_time();
             continue;
         }
         if (self.var_f22c83f5 === 1) {
-            wait(get_player_out_of_playable_area_monitor_wait_time());
+            wait get_player_out_of_playable_area_monitor_wait_time();
             continue;
         }
         if (!self in_life_brush() && (self in_kill_brush() || !self in_enabled_playable_area() || isdefined(level.player_out_of_playable_area_override) && isdefined(self [[ level.player_out_of_playable_area_override ]]()) && self [[ level.player_out_of_playable_area_override ]]())) {
@@ -765,11 +765,11 @@ function player_out_of_playable_area_monitor() {
                 #/
                 /#
                     if (isdefined(level.kill_thread_test_mode) && level.kill_thread_test_mode) {
-                        wait(get_player_out_of_playable_area_monitor_wait_time());
+                        wait get_player_out_of_playable_area_monitor_wait_time();
                         continue;
                     }
                     if (self isinmovemode("<dev string:x176>", "<dev string:x17c>") || isdefined(level.disable_kill_thread) && level.disable_kill_thread || getdvarint(#"zombie_cheat", 0) > 0) {
-                        wait(get_player_out_of_playable_area_monitor_wait_time());
+                        wait get_player_out_of_playable_area_monitor_wait_time();
                         continue;
                     }
                 #/
@@ -791,7 +791,7 @@ function player_out_of_playable_area_monitor() {
                 self.var_dad8bef6 = undefined;
             }
         }
-        wait(get_player_out_of_playable_area_monitor_wait_time());
+        wait get_player_out_of_playable_area_monitor_wait_time();
     }
 }
 
@@ -823,7 +823,7 @@ function function_de3936f8(var_ffb1863c) {
             } else {
                 self takeweapon(var_3ba4bf7d[0]);
             }
-            wait(1);
+            wait 1;
             if (!self getweaponslistprimaries().size) {
                 self zm_loadout::give_start_weapon(1);
             }
@@ -840,7 +840,7 @@ function player_monitor_travel_dist() {
     self endon(#"stop_player_monitor_travel_dist", #"disconnect");
     n_current_distance = 0;
     for (prevpos = self.origin; isdefined(self); prevpos = self.origin) {
-        wait(0.1);
+        wait 0.1;
         if (self.var_16735873 !== 1) {
             n_distance = distance(self.origin, prevpos);
             self.pers[#"distance_traveled"] = self.pers[#"distance_traveled"] + n_distance;
@@ -861,7 +861,7 @@ function player_monitor_time_played() {
     self endon(#"stop_player_monitor_time_played", #"disconnect");
     level flag::wait_till("start_zombie_round_logic");
     for (;;) {
-        wait(1);
+        wait 1;
         zm_stats::increment_client_stat("time_played_total");
     }
 }
@@ -879,7 +879,7 @@ function zm_breadcrumbs() {
         if (isalive(self)) {
             recordbreadcrumbdataforplayer(self);
         }
-        wait(waittime);
+        wait waittime;
     }
 }
 
@@ -1057,7 +1057,7 @@ function spawnspectator() {
         return;
     }
     if (isdefined(level.no_spectator) && level.no_spectator) {
-        wait(3);
+        wait 3;
         exitlevel();
     }
     self.is_zombie = 1;
@@ -1162,7 +1162,7 @@ function spectators_respawn() {
             e_player = players[i];
             e_player spectator_respawn_player();
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1479,13 +1479,13 @@ function play_door_dialog() {
                 continue;
             }
             while (dist < 4900 && timer < 3) {
-                wait(0.5);
+                wait 0.5;
                 timer++;
             }
             if (dist > 4900 && timer >= 3) {
                 self playsound(#"door_deny");
                 players[i] zm_audio::create_and_play_dialog(#"general", #"outofmoney");
-                wait(3);
+                wait 3;
                 self notify(#"warning_dialog");
             }
         }
@@ -1502,7 +1502,7 @@ function remove_ignore_attacker() {
     if (!isdefined(level.ignore_enemy_timer)) {
         level.ignore_enemy_timer = 0.4;
     }
-    wait(level.ignore_enemy_timer);
+    wait level.ignore_enemy_timer;
     self.ignoreattacker = undefined;
 }
 
@@ -1804,7 +1804,7 @@ function player_fake_death() {
     self setstance("prone");
     self val::set(#"fake_death", "ignoreme", 1);
     self val::set(#"fake_death", "takedamage", 0);
-    wait(1);
+    wait 1;
     self val::set(#"fake_death", "freezecontrols", 1);
 }
 
@@ -1832,7 +1832,7 @@ function player_killed_override(einflictor, attacker, idamage, smeansofdeath, we
 // Size: 0x62
 function screen_fade_in(n_time, v_color, str_menu_id, var_b675738a = 0) {
     lui::screen_fade(n_time, 0, 1, v_color, 0, str_menu_id, var_b675738a);
-    wait(n_time);
+    wait n_time;
 }
 
 // Namespace zm_player/zm_player
@@ -1866,7 +1866,7 @@ function player_intermission() {
         points = array::randomize(points);
     }
     self zm_utility::create_streamer_hint(points[0].origin, points[0].angles, 0.9);
-    wait(5);
+    wait 5;
     self lui::screen_fade_out(1, undefined, undefined, 1);
     self.sessionstate = "intermission";
     self.spectatorclient = -1;
@@ -1883,12 +1883,12 @@ function player_intermission() {
             nextpoint = points[i + 1];
             self setorigin(point.origin);
             self setplayerangles(point.angles);
-            wait(0.15);
+            wait 0.15;
             self notify(#"player_intermission_spawned");
             if (isdefined(nextpoint)) {
                 self zm_utility::create_streamer_hint(nextpoint.origin, nextpoint.angles, 0.9);
                 self screen_fade_in(2, undefined, undefined, 1);
-                wait(3);
+                wait 3;
                 self lui::screen_fade_out(2, undefined, undefined, 1);
                 continue;
             }
@@ -2000,7 +2000,7 @@ function slowdown(str_type, var_a47cf2b2) {
                 return;
             }
             n_duration = self.a_n_slowdown_timeouts[str_lowest_type] - n_time;
-            wait(n_duration);
+            wait n_duration;
             self.a_n_slowdown_timeouts[str_lowest_type] = undefined;
         }
     }

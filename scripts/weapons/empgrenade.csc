@@ -139,7 +139,7 @@ function monitordistance(localclientnum) {
                 current_static_value = 1;
             }
             filter::set_filter_tactical_amount(localplayer, 2, current_static_value);
-            wait(0.1);
+            wait 0.1;
         }
     }
 }

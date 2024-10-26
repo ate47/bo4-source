@@ -128,7 +128,7 @@ function clone_animate(animtype) {
 // Checksum 0x8e797d0a, Offset: 0x790
 // Size: 0x9a
 function clone_actor_animate(animtype) {
-    wait(0.1);
+    wait 0.1;
     switch (animtype) {
     case #"laststand":
         self setanimstatefromasd("laststand");

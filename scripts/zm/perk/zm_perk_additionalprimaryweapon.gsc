@@ -156,7 +156,7 @@ function function_1a9f3a91() {
     self notify(#"hash_499749b8848c21fd");
     self endon(#"disconnect", #"hash_4dba2ff9e70127f5", #"hash_499749b8848c21fd");
     while (isdefined(self.s_loadout)) {
-        wait(0.05);
+        wait 0.05;
     }
     var_3ba4bf7d = self getweaponslistprimaries();
     if (var_3ba4bf7d.size < level.additionalprimaryweapon_limit) {

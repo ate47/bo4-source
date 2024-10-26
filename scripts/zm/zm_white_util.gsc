@@ -87,7 +87,7 @@ function function_e08cd7b(category, subcategory) {
 // Checksum 0xb460e73c, Offset: 0xac8
 // Size: 0x3a8
 function function_5d7d0c85(var_2753f06a) {
-    wait(1);
+    wait 1;
     b_played = 0;
     a_players = arraycopy(level.players);
     if (!isdefined(level.host)) {
@@ -140,7 +140,7 @@ function function_5d7d0c85(var_2753f06a) {
 function function_733a6ab7(e_player, var_50a85511, e_computer, var_21fd1ca8) {
     level endon(#"end_game");
     e_player zm_hms_util::function_51b752a9(var_50a85511);
-    wait(1);
+    wait 1;
     e_computer thread zm_hms_util::function_6a0d675d(var_21fd1ca8, -1, 1);
 }
 
@@ -176,7 +176,7 @@ function function_491673da(var_21fd1ca8) {
 // Size: 0x64
 function function_31e7b76f(n_delay, e_computer, var_21fd1ca8, str_cancel) {
     level endon(#"end_game", str_cancel);
-    wait(n_delay);
+    wait n_delay;
     e_computer thread zm_hms_util::function_6a0d675d(var_21fd1ca8, 0, 1);
 }
 
@@ -209,7 +209,7 @@ function function_2389bb7a(str_sound) {
     foreach (player in level.players) {
         player playsoundtoplayer(str_sound, player);
     }
-    wait(n_wait);
+    wait n_wait;
 }
 
 // Namespace zm_white_util/zm_white_util
@@ -244,7 +244,7 @@ function function_f4a39bc4() {
         while (true) {
             level waittill(#"open_sesame");
             function_f4a39bc4();
-            wait(1);
+            wait 1;
         }
     }
 

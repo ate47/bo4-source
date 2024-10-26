@@ -367,11 +367,11 @@ function private function_d13b1540(vehicle) {
             } else {
                 self clientfield::set_to_player("recon_out_of_circle", 0);
                 vehicle.var_3de57a77 = undefined;
-                wait(0.5);
+                wait 0.5;
             }
             continue;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -526,7 +526,7 @@ function function_ea9fe221(dart, collision) {
     if (isdefined(collision) && collision) {
         waittime = 2;
     }
-    wait(waittime);
+    wait waittime;
     if (isdefined(player) && isplayer(player)) {
         player setclientuivisibilityflag("hud_visible", 1);
         player val::reset(#"dart", "freezecontrols");
@@ -555,12 +555,12 @@ function private on_vehicle_killed(params) {
     if (isdefined(self.owner) && isplayer(self.owner)) {
         self.owner leave_dart(self);
     }
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         self.var_4217cfcb = 1;
         self ghost();
     }
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self delete();
     }

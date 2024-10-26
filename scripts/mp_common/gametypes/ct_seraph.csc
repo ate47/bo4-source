@@ -26,7 +26,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Size: 0xe6
 function function_649c09ac(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval != oldval && newval) {
-        wait(1);
+        wait 1;
         s_loc = struct::get("s_vase_loc", "targetname");
         v_angles = (0, 0, 0);
         v_velocity = (0, 0, 0);

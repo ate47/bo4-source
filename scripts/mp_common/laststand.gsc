@@ -336,7 +336,7 @@ function function_d5db8d2e(attacker, weapon) {
                 setdvar(#"scr_last_stand", "<dev string:x38>");
                 return;
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -361,7 +361,7 @@ function function_d5db8d2e(attacker, weapon) {
                 target dodamage(target.health, target.origin);
                 setdvar(#"scr_last_stand", "<dev string:x38>");
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -626,7 +626,7 @@ function laststand_bleedout(bleedouttime, var_969fabf4) {
             self waittilltimeout(float(var_9da219f5 - time) / 1000, #"update_bleedout");
         }
         while (self.var_969fabf4 > 0 && isdefined(self.revivetrigger) && isdefined(self.revivetrigger.beingrevived) && self.revivetrigger.beingrevived == 1) {
-            wait(0.1);
+            wait 0.1;
         }
     }
     if (self.var_d887a4ad === 1) {
@@ -643,7 +643,7 @@ function laststand_bleedout(bleedouttime, var_969fabf4) {
 function laststand_invulnerability() {
     self endon(#"disconnect", #"death");
     self enableinvulnerability();
-    wait(level.var_5c13c13f);
+    wait level.var_5c13c13f;
     self disableinvulnerability();
 }
 
@@ -696,7 +696,7 @@ function bleed_out() {
         var_d7e063c = getdvarfloat(#"hash_44de9418bb6289ac", 1.5);
         self playsoundtoplayer(#"hash_11d39dca0f911535", self);
         self lui::screen_fade(var_d7e063c, 1, 0, "black", 0);
-        wait(var_d7e063c + 0.2);
+        wait var_d7e063c + 0.2;
         self lui::screen_fade(var_d7e063c, 0, 1, "black", 0);
     }
     if (isdefined(self) && self.no_respawn !== 1) {
@@ -716,7 +716,7 @@ function respawn_player_after_time(n_time_seconds) {
     }
     self waittill(#"spawned_spectator");
     level endon(#"objective_changed");
-    wait(n_time_seconds);
+    wait n_time_seconds;
     if (self.sessionstate == #"spectator") {
         self thread globallogic_spawn::waitandspawnclient();
     }
@@ -759,7 +759,7 @@ function revive_trigger_think() {
     self endon(#"death", #"stop_revive_trigger");
     level endon(#"game_ended");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!isdefined(self.revivetrigger)) {
             self notify(#"stop_revive_trigger");
         }
@@ -1202,7 +1202,7 @@ function auto_revive(reviver) {
     self function_102748f8();
     if (var_8c0cedb7 >= gettime()) {
         revive_wait_time = (var_8c0cedb7 - gettime()) / 1000;
-        wait(revive_wait_time);
+        wait revive_wait_time;
     }
     if (!isdefined(self)) {
         return;
@@ -1234,7 +1234,7 @@ function revive_success(reviver, b_track_stats = 1) {
     self function_102748f8();
     self.var_d887a4ad = 1;
     revive_wait_time = getdvarint(#"hash_77107267fe87b359", 350) / 1000;
-    wait(revive_wait_time);
+    wait revive_wait_time;
     if (!isdefined(self)) {
         return;
     }
@@ -1283,7 +1283,7 @@ function revive_success(reviver, b_track_stats = 1) {
 function revive_hud_think() {
     level endon(#"game_ended");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!laststand::player_any_player_in_laststand()) {
             continue;
         }
@@ -1310,7 +1310,7 @@ function revive_hud_think() {
             }
         }
         if (revived) {
-            wait(3.5);
+            wait 3.5;
         }
     }
 }

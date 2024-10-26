@@ -113,7 +113,7 @@ function private pablo_intro() {
             }
             break;
         }
-        wait(1);
+        wait 1;
     }
     level flag::set(#"pablo_intro");
     while (true) {
@@ -133,7 +133,7 @@ function private pablo_intro() {
             level flag::set(#"hash_641f14d0b2fd57d7");
             break;
         }
-        wait(1);
+        wait 1;
     }
     level.pablo_npc thread function_1dc9b29a();
     level.pablo_npc thread function_57c115a8();
@@ -163,10 +163,10 @@ function private function_57c115a8() {
                 var_93843138 = self function_17440011();
             }
             level thread function_e44c7c0c(str_nag, var_93843138);
-            wait(60);
+            wait 60;
             continue;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -310,17 +310,17 @@ function function_d9161909(index) {
 function private function_12d23d57() {
     while (true) {
         function_a61b8406();
-        wait(1);
+        wait 1;
         for (i = 0; i < 12; i++) {
             function_5ff0d681(i);
-            wait(1);
+            wait 1;
             function_d9161909(i);
-            wait(0.5);
+            wait 0.5;
         }
-        wait(3);
+        wait 3;
         function_6c49e9aa();
         function_d9161909(0);
-        wait(3);
+        wait 3;
     }
 }
 
@@ -344,7 +344,7 @@ function private function_39614d4b() {
             level thread [[ s_info.func_interact ]]();
         }
     }
-    wait(1);
+    wait 1;
     self thread function_9f77ef2(s_info);
     function_6c49e9aa();
     /#
@@ -405,7 +405,7 @@ function private function_1dc9b29a() {
                 }
             } else if (s_info.var_fcab5f41 == #"hash_1856b015429225fa") {
                 level thread function_e44c7c0c(s_info.var_fcab5f41, 0);
-                wait(0.5);
+                wait 0.5;
                 self.var_cb3ed98f[10].var_fcab5f41 = #"";
             } else if (s_info.var_fcab5f41 === #"hash_38aad0b1eae4093a" && !level flag::get(#"hash_59d5ba61f4b8f405") && !level flag::get(#"hash_6a7b24db9087b2eb")) {
                 level flag::set(#"hash_6a7b24db9087b2eb");
@@ -421,7 +421,7 @@ function private function_1dc9b29a() {
             if (!s_info.var_f6856302) {
                 function_5ff0d681(s_info.n_obj);
             }
-            wait(1);
+            wait 1;
             function_a61b8406();
             /#
                 iprintlnbold("<dev string:x86>");
@@ -437,7 +437,7 @@ function private function_1dc9b29a() {
             }
             self waittill(#"hash_688d0bffbc9f5888");
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -468,7 +468,7 @@ function function_e435077() {
         } else {
             var_a3992d9c += 1;
         }
-        wait(1);
+        wait 1;
     }
     level.pablo_npc notify(#"hash_ed7147b69728896");
     level.var_f45a0bfd.is_moving = 1;
@@ -479,7 +479,7 @@ function function_e435077() {
     /#
         iprintlnbold("<dev string:x55>");
     #/
-    wait(1);
+    wait 1;
     if (!s_info.var_f6856302) {
         function_d9161909(s_info.n_obj);
     }

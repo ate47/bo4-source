@@ -38,14 +38,14 @@ function event_handler[level_init] main(eventstruct) {
 // Size: 0x12c
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0.3));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0.3);
     if (util::isfirstround()) {
         level util::delay(getdvarfloat(#"hash_187afb4d5f703a4a", 0.2), undefined, &scene::play, "p8_fxanim_mp_hacienda_helicopter_flyover_bundle", "Shot 2");
         exploder::stop_exploder("fxexp_sprinklers");
         level util::delay(1.5, undefined, &exploder::exploder, "fxexp_sprinklers");
         return;
     }
-    wait(1);
+    wait 1;
     exploder::stop_exploder("fxexp_heli_leaves_idle");
 }
 
@@ -62,7 +62,7 @@ function function_2cdcf5c3() {
         level thread scene::play("p8_fxanim_mp_hacienda_helicopter_flyover_bundle", "Shot 1");
         return;
     }
-    wait(1);
+    wait 1;
     exploder::exploder("fxexp_sprinklers");
 }
 
@@ -116,7 +116,7 @@ function function_45cfd64e(e_activator) {
     foreach (var_41e76654 in self.var_a43a7410.var_8090ebe4) {
         linktraversal(var_41e76654);
     }
-    wait(getdvarfloat(#"hash_1760dea2c00cbd93", 5));
+    wait getdvarfloat(#"hash_1760dea2c00cbd93", 5);
     level thread function_9940fbb9(self.var_ebd977d);
     array::thread_all(self.a_s_buttons, &gameobjects::enable_object);
 }
@@ -154,9 +154,9 @@ function function_393b459a(e_activator) {
         foreach (str_exploder in a_exploders) {
             util::delay(randomfloat(0.6), undefined, &exploder::exploder, str_exploder);
         }
-        wait(1.4);
+        wait 1.4;
     }
-    wait(getdvarfloat(#"hash_3201af3906143d06", 5) + 0.6);
+    wait getdvarfloat(#"hash_3201af3906143d06", 5) + 0.6;
     level thread function_9940fbb9(self.var_ebd977d);
     array::thread_all(self.a_s_buttons, &gameobjects::enable_object);
 }
@@ -204,7 +204,7 @@ function function_886f3928(e_activator) {
     level thread function_9940fbb9(self.var_ebd977d, "busy");
     array::thread_all(self.a_mdl_doors, &function_dd0b407b);
     array::wait_till(self.a_mdl_doors, "hidden_door_moved");
-    wait(getdvarfloat(#"hash_5b883b04d5499fd6", 5));
+    wait getdvarfloat(#"hash_5b883b04d5499fd6", 5);
     level thread function_9940fbb9(self.var_ebd977d);
     array::thread_all(self.a_s_buttons, &gameobjects::enable_object);
 }

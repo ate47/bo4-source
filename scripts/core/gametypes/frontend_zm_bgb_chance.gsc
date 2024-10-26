@@ -60,7 +60,7 @@
             }
             setdvar(#"bgb_test_power_boost_devgui", "<dev string:x38>");
             setdvar(#"bgb_test_success_fail_devgui", "<dev string:x38>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 

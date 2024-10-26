@@ -1194,11 +1194,11 @@ function private function_bb454fe6() {
     valid_range = level._unitriggers.largest_radius + 15;
     valid_range_sq = valid_range * valid_range;
     while (!isdefined(level.active_zone_names)) {
-        wait(0.1);
+        wait 0.1;
     }
     while (true) {
         if (isdefined(level.var_dc25ba05) && level.var_dc25ba05) {
-            wait(2);
+            wait 2;
             continue;
         }
         waited = 0;

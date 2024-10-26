@@ -494,7 +494,7 @@ function trigger_monitor_visibility(name, whenvisible) {
                 self setinvisibletoplayer(player);
             }
         }
-        wait(randomfloatrange(0.2, 0.5));
+        wait randomfloatrange(0.2, 0.5);
     }
 }
 

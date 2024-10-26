@@ -164,7 +164,7 @@ function function_81058b09(var_d92ac80e) {
 // Size: 0x3c
 function explosion_fx() {
     self endon(#"death");
-    wait(0.3);
+    wait 0.3;
     self clientfield::increment("perk_tortoise_explosion");
 }
 

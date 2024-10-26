@@ -39,7 +39,7 @@ function private on_begin(n_max_zombies, var_2ec39966, str_zone1, str_zone2, var
     if (isdefined(n_max_zombies)) {
         n_max_zombies = zm_trial::function_5769f26a(n_max_zombies);
     }
-    wait(5);
+    wait 5;
     if (isdefined(var_2ec39966)) {
         self.var_2ec39966 = var_2ec39966;
         zm_utility::function_75fd65f9(self.var_2ec39966, 1);
@@ -98,7 +98,7 @@ function private function_65e6d40c(a_str_zones, n_max_zombies = 0) {
                 return;
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

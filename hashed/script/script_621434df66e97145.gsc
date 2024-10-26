@@ -186,7 +186,7 @@ function function_79eec899() {
         level.s_shower_trap.var_6b64b967 = 0;
         level.s_shower_trap.var_41ee2ddc = 0;
         n_cooldown = zm_traps::function_da13db45(60, e_who);
-        wait(n_cooldown);
+        wait n_cooldown;
         function_91ecec97(level.s_shower_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
         level.s_shower_trap.var_41ee2ddc = 1;
         playsoundatposition(#"zmb_trap_ready", self.origin);
@@ -204,7 +204,7 @@ function function_17b07f6c(e_player) {
     while (n_total_time < 40) {
         self thread function_9c9d3bdc(e_player);
         self thread function_17f9c268();
-        wait(0.1);
+        wait 0.1;
         n_total_time += 0.1;
     }
     self thread shower_trap_fx(0);
@@ -235,7 +235,7 @@ function function_a77f3804(e_activator, e_volume) {
     }
     self clientfield::set("shower_trap_death_fx", 1);
     level notify(#"hash_336bf8053ce21208", {#e_player:e_activator});
-    wait(randomfloatrange(0.25, 0.5));
+    wait randomfloatrange(0.25, 0.5);
     if (isalive(self)) {
         self zombie_utility::gib_random_parts();
         self thread function_d55cc959();
@@ -268,7 +268,7 @@ function shower_trap_fx(var_9d9f02b4) {
 // Checksum 0x56bdac6a, Offset: 0x1728
 // Size: 0x34
 function function_d55cc959() {
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self clientfield::set("shower_trap_death_fx", 0);
     }
@@ -320,7 +320,7 @@ function function_24c4375b() {
         return;
     }
     self clientfield::set_to_player("player_shower_trap_post_fx", 1);
-    wait(1);
+    wait 1;
     self.var_e613b44 = 0;
     self clientfield::set_to_player("player_shower_trap_post_fx", 0);
 }
@@ -419,7 +419,7 @@ function function_64fa1b6a() {
         level.s_fire_trap.var_6b64b967 = 0;
         level.s_fire_trap.var_41ee2ddc = 0;
         n_cooldown = zm_traps::function_da13db45(60, e_who);
-        wait(n_cooldown);
+        wait n_cooldown;
         function_91ecec97(level.s_fire_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
         level.s_fire_trap.var_41ee2ddc = 1;
         playsoundatposition(#"zmb_trap_ready", self.origin);
@@ -437,7 +437,7 @@ function fire_trap_activate(e_player) {
     while (n_total_time < 40) {
         self thread function_bd117af1(e_player);
         self thread function_956ddb52();
-        wait(0.1);
+        wait 0.1;
         n_total_time += 0.1;
     }
     self thread fire_trap_fx(0);
@@ -474,7 +474,7 @@ function function_11e5b2ee(e_activator, e_volume) {
             self playsound(#"zmb_ignite");
             self thread zombie_death::flame_death_fx();
             playfxontag(level._effect[#"character_fire_death_torso"], self, "J_SpineLower");
-            wait(randomfloat(1.25));
+            wait randomfloat(1.25);
         } else {
             refs[0] = "guts";
             refs[1] = "right_arm";
@@ -485,7 +485,7 @@ function function_11e5b2ee(e_activator, e_volume) {
             refs[6] = "head";
             self.a.gib_ref = refs[randomint(refs.size)];
             playsoundatposition(#"wpn_zmb_electrap_zap", self.origin);
-            wait(randomfloat(1.25));
+            wait randomfloat(1.25);
             self playsound(#"wpn_zmb_electrap_zap");
         }
     }
@@ -543,7 +543,7 @@ function function_5c6fd230(s_trap) {
         }
         self notify(#"burned");
         self dodamage(50, self.origin);
-        wait(0.2);
+        wait 0.2;
         self.is_burning = undefined;
     }
 }
@@ -558,7 +558,7 @@ function function_867c70bf() {
         return;
     }
     self clientfield::set_to_player("player_fire_trap_post_fx", 1);
-    wait(1.45);
+    wait 1.45;
     self.is_burning = undefined;
     self clientfield::set_to_player("player_fire_trap_post_fx", 0);
 }
@@ -649,7 +649,7 @@ function function_7fffc105() {
         level.s_spinning_trap.var_6b64b967 = 0;
         level.s_spinning_trap.var_41ee2ddc = 0;
         n_cooldown = zm_traps::function_da13db45(60, e_who);
-        wait(n_cooldown);
+        wait n_cooldown;
         function_91ecec97(level.s_spinning_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
         level.s_spinning_trap.var_41ee2ddc = 1;
         playsoundatposition(#"zmb_trap_ready", self.origin);
@@ -670,7 +670,7 @@ function spinning_trap_activate(e_player) {
         self thread function_74a809fd();
         self thread function_b45556a4(e_player);
         self thread function_fcac4b4e();
-        wait(0.1);
+        wait 0.1;
         n_total_time += 0.1;
     }
     self notify(#"spinning_trap_complete");
@@ -832,18 +832,18 @@ function function_1259cbbb(s_trap) {
             self.var_c87b7253 = 1;
             if (self.health >= 200) {
                 self dodamage(50, self.origin, undefined, e_volume);
-                wait(0.75);
+                wait 0.75;
                 self.var_c87b7253 = 0;
                 return;
             }
             if (self.health >= 100) {
                 self dodamage(35, self.origin, undefined, e_volume);
-                wait(0.75);
+                wait 0.75;
                 self.var_c87b7253 = 0;
                 return;
             }
             self dodamage(15, self.origin, undefined, e_volume);
-            wait(0.75);
+            wait 0.75;
             self.var_c87b7253 = 0;
         }
     }
@@ -854,7 +854,7 @@ function function_1259cbbb(s_trap) {
 // Checksum 0xe04bd3dd, Offset: 0x4098
 // Size: 0x34
 function a_a_arms() {
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self clientfield::set("spinning_trap_blood_fx", 0);
     }

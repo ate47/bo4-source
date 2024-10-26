@@ -90,7 +90,7 @@ function private setup_lighthouse() {
         }
         if (isdefined(var_611e46b7)) {
             while (var_611e46b7 scene::is_playing("melt")) {
-                wait(0.25);
+                wait 0.25;
             }
             var_611e46b7 thread zm_orange_pap::function_69a4b74b(1);
             if (isdefined(var_611e46b7.target)) {
@@ -141,7 +141,7 @@ function function_dbad2f5a() {
     self.vh_target.e_spotlight clientfield::set("" + #"trials_lighthouse_beam", 2);
     self.vh_target thread zm_orange_lighthouse::function_18f63949();
     self zm_orange_lighthouse::function_2b2f2a7f();
-    wait(1);
+    wait 1;
     self.vh_target thread function_b502c51(self.var_da138ae4);
 }
 
@@ -166,7 +166,7 @@ function private function_b502c51(nd_start) {
 function function_f223e16f(round_reset) {
     self endon(#"death");
     self.vh_target.b_moving = 0;
-    wait(2);
+    wait 2;
     self.vh_target clientfield::set("" + #"hash_19bce46b8ab82440", 0);
     self.vh_target.e_spotlight delete();
     self.vh_target delete();

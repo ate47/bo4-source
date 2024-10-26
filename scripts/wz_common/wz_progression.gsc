@@ -502,7 +502,7 @@ function on_vehicle_enter(vehicle, player, seatindex) {
 // Size: 0x7c
 function function_d0c523bf() {
     self endon(#"death", #"exit_vehicle", #"disconnect");
-    wait(5);
+    wait 5;
     if (self isinvehicle()) {
         self stats::function_d40764f3(#"vehicle_escapes", 1);
     }
@@ -524,7 +524,7 @@ function function_f8072c71(player) {
     var_7c6311c4 = self.vehicleclass === "boat";
     var_f03db647 = !var_b01d9212 && !var_7c6311c4;
     while (isdefined(self) && isdefined(player)) {
-        wait(1);
+        wait 1;
         if (isdefined(self) && isdefined(player)) {
             distancetraveled = int(distancetraveled + distance2d(self.origin, prevposition));
             prevposition = self.origin;
@@ -598,7 +598,7 @@ function function_da21a17c() {
     prevposition = self.origin;
     distancetraveled = 0;
     while (isdefined(self)) {
-        wait(1);
+        wait 1;
         if (isdefined(self)) {
             distancetraveled = int(distancetraveled + distance2d(self.origin, prevposition));
             prevposition = self.origin;

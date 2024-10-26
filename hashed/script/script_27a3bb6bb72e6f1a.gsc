@@ -189,7 +189,7 @@ function function_a5ed4dd9(var_6c367c57, var_e7c0257b, var_4eec77ed) {
         level.var_abf198ff[2] function_b736b1a2(10, 10, 10);
         level.var_abf198ff[4] function_b736b1a2(10, 10, 10);
         level.var_abf198ff[6] function_b736b1a2(10, 10, 10);
-        wait(10);
+        wait 10;
         level.var_abf198ff[1] function_b736b1a2(10, 10, 10);
         level.var_abf198ff[3] function_b736b1a2(10, 10, 10);
         level.var_abf198ff[5] function_b736b1a2(10, 10, 10);
@@ -198,16 +198,16 @@ function function_a5ed4dd9(var_6c367c57, var_e7c0257b, var_4eec77ed) {
     case 7:
         level.var_abf198ff[0] function_b736b1a2(3, 1, 3);
         level.var_abf198ff[4] function_b736b1a2(3, 1, 3);
-        wait(1);
+        wait 1;
         level.var_abf198ff[1] function_b736b1a2(3, 1, 3);
         level.var_abf198ff[5] function_b736b1a2(3, 1, 3);
-        wait(1);
+        wait 1;
         level.var_abf198ff[2] function_b736b1a2(3, 1, 3);
         level.var_abf198ff[6] function_b736b1a2(3, 1, 3);
-        wait(1);
+        wait 1;
         level.var_abf198ff[3] function_b736b1a2(3, 1, 3);
         level.var_abf198ff[7] function_b736b1a2(3, 1, 3);
-        wait(1);
+        wait 1;
         break;
     }
 }
@@ -276,15 +276,15 @@ function fire_column_activate(var_6c367c57 = 2, var_e7c0257b = 2, var_5330caa5) 
     self thread function_97d7f14c();
     while (true) {
         var_5330caa5 thread scene::play("shot 1");
-        wait(0.6);
+        wait 0.6;
         self.var_94de9684 = 1;
         self thread function_62725b64();
-        wait(var_6c367c57);
+        wait var_6c367c57;
         self notify(#"hash_1cfd2a665a996180");
         var_5330caa5 thread scene::play("shot 2");
-        wait(0.3);
+        wait 0.3;
         self.var_94de9684 = 0;
-        wait(var_e7c0257b);
+        wait var_e7c0257b;
     }
 }
 
@@ -318,7 +318,7 @@ function function_62725b64() {
                 }
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -397,7 +397,7 @@ function function_a29b80e8(e_victim) {
 // Size: 0x36
 function function_6f5e73b5(e_victim) {
     e_victim endon(#"death");
-    wait(1);
+    wait 1;
     e_victim.var_52f07157 = 0;
 }
 

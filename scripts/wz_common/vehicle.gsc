@@ -543,7 +543,7 @@ function private function_e63726f6() {
     self endon(#"death");
     while (true) {
         self waittill(#"hash_57887008fa0fd8ad");
-        wait(0.75);
+        wait 0.75;
         if (self function_2c2c30e0()) {
             break;
         }
@@ -791,13 +791,13 @@ function private function_b3caeebc(player) {
         if (self function_ea4291d3()) {
             player clientfield::set_player_uimodel("vehicle.missileLock", 2);
             self playsoundtoplayer(#"hash_445c9fb1793c4259", player);
-            wait(0.25);
+            wait 0.25;
             continue;
         }
         if (self function_df786031()) {
             player clientfield::set_player_uimodel("vehicle.missileLock", 1);
             self playsoundtoplayer(#"hash_107b6827696673cb", player);
-            wait(0.25);
+            wait 0.25;
             continue;
         }
         player clientfield::set_player_uimodel("vehicle.missileLock", 0);
@@ -848,7 +848,7 @@ function private function_6aa73a2a(missile, vehicle) {
         }
         var_6ce65309 = (dist - 10) / range;
         beep_interval = lerpfloat(0.05, 0.2, var_6ce65309);
-        wait(beep_interval);
+        wait beep_interval;
     }
 }
 
@@ -1891,7 +1891,7 @@ function private function_e8e41bbb() {
                 fxorg delete();
             }
             self notify(#"unbeached");
-            wait(5);
+            wait 5;
         }
         waitframe(1);
     }
@@ -2059,16 +2059,16 @@ function private function_b0dd571a() {
                 }
             }
             if (var_19dbcac7 < 1000) {
-                wait(0.25);
+                wait 0.25;
             } else if (var_19dbcac7 < 2000) {
-                wait(1);
+                wait 1;
             } else {
                 time = math::clamp(int(var_19dbcac7 / 1000), 1, 5);
-                wait(time);
+                wait time;
             }
             continue;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -2105,10 +2105,10 @@ function private function_638d1ade() {
             } else if (isdefined(self.var_8382289e) && !(isdefined(self.var_1ba362d5) && self.var_1ba362d5)) {
                 self function_f11207a9();
             }
-            wait(0.1);
+            wait 0.1;
             continue;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -2186,14 +2186,14 @@ function private function_260f32b3(exit = 0) {
 // Size: 0x120
 function private function_8bb6a990() {
     self endon(#"death", #"cancel_malfunction", #"hash_3c7ae83e462fe4e2", #"pilot_exit", #"hash_41dbbf5434aab9e0");
-    wait(5);
+    wait 5;
     self clientfield::set("flickerlights", 2);
     while (true) {
         self function_dae7aaf3();
-        wait(randomfloatrange(1, 3));
+        wait randomfloatrange(1, 3);
         self function_260f32b3();
         self clientfield::set("flickerlights", 2);
-        wait(randomfloatrange(3, 10));
+        wait randomfloatrange(3, 10);
     }
 }
 
@@ -2213,7 +2213,7 @@ function private function_f46dd7b0() {
     shutdowntime = gettime() + 30000;
     while (true) {
         if (gettime() < shutdowntime) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         self function_a98ae5fe();
@@ -2787,7 +2787,7 @@ function function_3a7426cf(params) {
     self endon(#"change_state", #"death");
     damagetime = gettime() + 15000;
     while (true) {
-        wait(0.25);
+        wait 0.25;
         if (self function_479389f3()) {
             self vehicle_ai::set_state("landed");
             return;
@@ -2837,7 +2837,7 @@ function function_b705c816(params) {
         return;
     }
     if (self vehicle_ai::get_previous_state() === "off") {
-        wait(2);
+        wait 2;
     }
     while (true) {
         if (isdefined(self.emped) && self.emped || isdefined(self.jammed) && self.jammed) {
@@ -3195,7 +3195,7 @@ function function_4e74bed7(params) {
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer") && isalive(self)) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
-        wait(timeleft);
+        wait timeleft;
     }
     self heli_emp_done(params);
 }
@@ -3253,7 +3253,7 @@ function function_c9620f20(params) {
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer") && isalive(self)) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
-        wait(timeleft);
+        wait timeleft;
     }
     self function_9e6e374a(params);
 }

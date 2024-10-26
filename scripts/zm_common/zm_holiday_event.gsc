@@ -95,7 +95,7 @@ function function_e12bc077() {
         level.var_17bf15ba = self;
         zm_transform::function_5db4f2f5(self, 1);
         while (isalive(self) && !self clientfield::get("zombie_eye_glow")) {
-            wait(1);
+            wait 1;
         }
         if (isalive(self)) {
             self clientfield::set("" + #"hash_59e8c30d5e28dad3", 1);
@@ -172,7 +172,7 @@ function function_23287dd() {
                     break;
                 }
                 level.var_23d44713 moveto(ai_zombie.origin + (0, 0, 60), n_move_time);
-                wait(0.1);
+                wait 0.1;
                 if (n_move_time > 0.1) {
                     n_move_time -= 0.1;
                 }
@@ -180,7 +180,7 @@ function function_23287dd() {
             if (isalive(ai_zombie)) {
                 level.var_23d44713.origin = ai_zombie.origin + (0, 0, 60);
                 while (isalive(ai_zombie) && !ai_zombie clientfield::get("zombie_eye_glow")) {
-                    wait(1);
+                    wait 1;
                 }
                 if (isalive(ai_zombie)) {
                     level.var_23d44713 playsound(#"zmb_sq_souls_impact");
@@ -261,7 +261,7 @@ function function_4634a866() {
             s_chest.pandora_light delete();
             s_chest thread [[ level.pandora_show_func ]]();
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

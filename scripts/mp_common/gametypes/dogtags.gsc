@@ -267,12 +267,12 @@ function bounce() {
         self.visuals[0] rotateyaw(180, 0.5);
         self.visuals[1] moveto(toppos, 0.5, 0.15, 0.15);
         self.visuals[1] rotateyaw(180, 0.5);
-        wait(0.5);
+        wait 0.5;
         self.visuals[0] moveto(bottompos, 0.5, 0.15, 0.15);
         self.visuals[0] rotateyaw(180, 0.5);
         self.visuals[1] moveto(bottompos, 0.5, 0.15, 0.15);
         self.visuals[1] rotateyaw(180, 0.5);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -339,7 +339,7 @@ function dt_respawn() {
 // Size: 0x7a
 function waittillcanspawnclient() {
     for (;;) {
-        wait(0.05);
+        wait 0.05;
         if (isdefined(self) && (self.sessionstate == "spectator" || !isalive(self))) {
             self.pers[#"lives"] = 1;
             self thread [[ level.spawnclient ]]();

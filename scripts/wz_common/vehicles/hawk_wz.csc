@@ -98,7 +98,7 @@ function private hawk_think(localclientnum) {
 function private function_23a9e4af(localclientnum) {
     self endon(#"death");
     while (!isdefined(self.owner)) {
-        wait(0.1);
+        wait 0.1;
     }
     if (isplayer(self.owner) && self.owner function_21c0fa55()) {
         setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.hawkActive"), 1);

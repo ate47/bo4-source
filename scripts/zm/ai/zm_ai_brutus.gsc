@@ -759,7 +759,7 @@ function smoke_vo(v_pos) {
                 var_55c47118 notify(#"hash_617485dc39ba3f5e");
             }
         }
-        wait(randomfloatrange(0.666667, 1.33333));
+        wait randomfloatrange(0.666667, 1.33333);
     }
 }
 

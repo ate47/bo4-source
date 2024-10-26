@@ -165,7 +165,7 @@ function fishing_buoy_splash() {
     self notify("affb149f13915ab");
     self endon("affb149f13915ab");
     self clientfield::set("fishing_buoy_splash", 1);
-    wait(0.5);
+    wait 0.5;
     self clientfield::set("fishing_buoy_splash", 0);
 }
 
@@ -177,7 +177,7 @@ function fishing_splash() {
     self notify("23dba81fc67053dc");
     self endon("23dba81fc67053dc");
     self clientfield::set("fishing_splash", 1);
-    wait(1);
+    wait 1;
     self clientfield::set("fishing_splash", 0);
 }
 
@@ -198,7 +198,7 @@ function function_7a1e21a9(fishing_rock, v_origin, player) {
     }
     buoy thread fishing_splash();
     time = self fake_physicslaunch(buoy.origin, final_origin, 200, height_offset);
-    wait(time);
+    wait time;
     fishing_rock.dropping_item = 0;
     if (isdefined(self)) {
         self.origin = final_origin;
@@ -329,7 +329,7 @@ function function_8e8c4fef(time, pos) {
     self notify("230f045151c08d1e");
     self endon("230f045151c08d1e");
     self endon(#"death", #"fishing_done");
-    wait(time);
+    wait time;
     self.origin = pos;
 }
 
@@ -355,7 +355,7 @@ function function_b828bd39(player, dynent) {
     self.origin = dynent.var_be4b82e0;
     while (dynent.var_fb09ad1c == 2 && !dynent.dropping_item) {
         time = randomintrange(5, 7);
-        wait(time);
+        wait time;
         dynent.var_3fa8a746 = 1;
         player playrumbleonentity("fishing_rumble");
         self thread fishing_buoy_splash();
@@ -421,7 +421,7 @@ function function_ed446f40(dynent) {
         dynent.buoy moveto(dynent.var_87de0f0d, 1);
         dynent.buoy hide();
     }
-    wait(2);
+    wait 2;
     dynent.fisherman = undefined;
     dynent.isfishing = 0;
 }

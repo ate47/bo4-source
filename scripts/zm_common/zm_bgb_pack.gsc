@@ -375,12 +375,12 @@ function function_c47c57e8() {
     self endon(#"hash_25f0b773a3164732", #"disconnect");
     for (;;) {
         if (!self secondaryoffhandbuttonpressed()) {
-            wait(0.05);
+            wait 0.05;
             continue;
         }
         self.var_8ef176f3 = 1;
         for (;;) {
-            wait(0.05);
+            wait 0.05;
             if (!self secondaryoffhandbuttonpressed()) {
                 break;
             }
@@ -399,12 +399,12 @@ function function_619ee0f4() {
     self.zmb_weapons_mastery_lmg = 0;
     for (;;) {
         if (!self secondaryoffhandbuttonpressed()) {
-            wait(0.05);
+            wait 0.05;
             continue;
         }
         self.zmb_weapons_mastery_lmg = 1;
         for (;;) {
-            wait(0.05);
+            wait 0.05;
             if (!self secondaryoffhandbuttonpressed()) {
                 break;
             }
@@ -423,12 +423,12 @@ function function_261a46f4() {
     self.var_6e1ea617 = 0;
     for (;;) {
         if (!self actionslotfourbuttonpressed()) {
-            wait(0.05);
+            wait 0.05;
             continue;
         }
         self.var_6e1ea617 = 1;
         for (;;) {
-            wait(0.05);
+            wait 0.05;
             if (!self actionslotfourbuttonpressed()) {
                 break;
             }
@@ -597,7 +597,7 @@ function slot_cooldown(n_index) {
         }
     #/
     self thread function_7dd2a9c9(n_index, n_cooldown);
-    wait(0.05);
+    wait 0.05;
     result = self waittilltimeout(n_cooldown, #"hash_738988561a113fac");
     /#
         if (result._notify === "<dev string:xc3>") {
@@ -631,7 +631,7 @@ function function_7dd2a9c9(n_index, n_cooldown) {
         var_729b3c2f = 0;
         n_count = 0;
         while (var_729b3c2f <= 1) {
-            wait(0.05);
+            wait 0.05;
             n_count++;
             var_729b3c2f += n_step;
             var_729b3c2f = math::clamp(var_729b3c2f, 0, 1);
@@ -665,7 +665,7 @@ function private function_d84ec5ee(var_707fd977) {
         var_729b3c2f = 0;
         n_count = 0;
         while (var_729b3c2f < 1) {
-            wait(0.05);
+            wait 0.05;
             n_count++;
             var_729b3c2f += n_step;
             var_729b3c2f = math::clamp(var_729b3c2f, 0, 1);
@@ -911,7 +911,7 @@ function function_59004002(str_bgb, b_disable = 1) {
     // Size: 0x268
     function private setup_devgui() {
         level flagsys::wait_till("<dev string:x2a1>");
-        wait(1);
+        wait 1;
         bgb_devgui_base = "<dev string:x2bc>";
         keys = getarraykeys(level.bgb);
         zm_devgui::add_custom_devgui_callback(&function_c1091a8f);

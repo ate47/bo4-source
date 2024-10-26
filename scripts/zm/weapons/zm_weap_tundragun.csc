@@ -56,7 +56,7 @@ function function_4017174b(localclientnum, w_weapon) {
     n_old_ammo = -1;
     n_shader_val = 0;
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!isdefined(self)) {
             return;
         }

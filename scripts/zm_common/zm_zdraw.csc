@@ -124,7 +124,7 @@
                 function_cd7ed6c5(params, 0, 1);
                 setdvar(#"zdraw", "<dev string:x38>");
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 

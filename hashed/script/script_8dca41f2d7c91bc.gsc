@@ -89,7 +89,7 @@ function private function_15c362c9() {
         player bgb_pack::function_59004002(#"zm_bgb_anywhere_but_here", 1);
         player bgb_pack::function_59004002(#"zm_bgb_nowhere_but_there", 1);
     }
-    wait(12);
+    wait 12;
     var_a3006a8a = array(#"air", #"death", #"earth", #"light");
     foreach (player in getplayers()) {
         if (isdefined(self.var_7881756e)) {
@@ -114,7 +114,7 @@ function private function_d38bb58b(var_32e3ef04) {
     self zm_trial_util::function_63060af4(0);
     if (self flag::get(#"ww_combat_active") || self flag::get(#"hash_3247dad158e8b329")) {
         self flag::wait_till_clear_all(array(#"ww_combat_active", #"hash_3247dad158e8b329"));
-        wait(5);
+        wait 5;
     }
     while (isdefined(self.var_16735873) && self.var_16735873) {
         waitframe(1);
@@ -173,10 +173,10 @@ function function_109ebdc3(e_player) {
     str_stance = e_player getstance();
     switch (str_stance) {
     case #"crouch":
-        wait(0.2);
+        wait 0.2;
         break;
     case #"prone":
-        wait(1);
+        wait 1;
         break;
     }
     if (isdefined(self.var_f172b16e)) {
@@ -207,7 +207,7 @@ function function_109ebdc3(e_player) {
     if (isdefined(self.var_f172b16e)) {
         e_player clientfield::set(self.var_f172b16e, 0);
     }
-    wait(3);
+    wait 3;
     if (!level flag::get("round_reset")) {
         self thread function_4ff0c5fd(e_player);
         self thread function_eee5f1e5(e_player);
@@ -331,7 +331,7 @@ function function_4ff0c5fd(e_player) {
             ai_zombie forceteleport(s_spawn.origin, s_spawn.angles);
             self thread zm_red_ww_quests::function_a6300fa2(ai_zombie);
         }
-        wait(n_wait_time);
+        wait n_wait_time;
     }
 }
 

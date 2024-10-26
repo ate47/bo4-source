@@ -259,7 +259,7 @@ function function_5e2c9b64(e_target, weapon) {
 // Size: 0x6c
 function function_a5ed760f() {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    wait(0.1);
+    wait 0.1;
     self clientfield::increment("" + #"hash_aefa3d014b0fa1b", 1);
 }
 
@@ -348,7 +348,7 @@ function private function_dc7f8e67(player) {
     var_fc51fa3d = level.hero_weapon_stats[#"chakram"][#"kill_limit"][player.var_72d6f15d];
     var_e68de849 = level.hero_weapon_stats[#"chakram"][#"max_range"][player.var_72d6f15d];
     var_931acaa7 = level.hero_weapon_stats[#"chakram"][#"seek_range"][player.var_72d6f15d];
-    wait(var_e9ada947);
+    wait var_e9ada947;
     n_kills = 0;
     if (!isdefined(player.e_seeker)) {
         e_seeker = util::spawn_model(level.hero_weapon_stats[#"chakram"][#"throw_model"][player.var_72d6f15d], player gettagorigin("tag_weapon_left"));
@@ -387,7 +387,7 @@ function private function_dc7f8e67(player) {
     if (isdefined(e_seeker)) {
         e_seeker hide();
     }
-    wait(var_9884ff29);
+    wait var_9884ff29;
     if (isalive(player)) {
         player setweaponammoclip(player.slot_weapons[#"hero_weapon"], 1);
     }
@@ -474,7 +474,7 @@ function private function_e3ad524a() {
                 self.e_seeker moveto(v_end, var_c5eb6fda);
             }
         }
-        wait(0.1);
+        wait 0.1;
         var_fcb3d955 = self.e_seeker.origin;
     } while (n_time_elapsed < var_afbf7a56);
     return 0;
@@ -594,7 +594,7 @@ function private function_3adb0798(e_target, n_kills) {
             self thread function_96835348(e_target);
             return 1;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -683,7 +683,7 @@ function private function_96835348(e_target) {
 function private function_20d19d65(n_time) {
     self endon(#"death");
     self.var_f7f67d2c = 1;
-    wait(n_time);
+    wait n_time;
     self.var_f7f67d2c = 0;
 }
 
@@ -695,7 +695,7 @@ function private function_8d4b8171(v_position, v_normal) {
     mdl_fx = util::spawn_model("tag_origin", v_position, v_normal);
     mdl_fx endon(#"death");
     mdl_fx clientfield::set("" + #"hash_302e96545259ba6b", 1);
-    wait(1.5);
+    wait 1.5;
     mdl_fx delete();
 }
 
@@ -723,7 +723,7 @@ function private function_b475223e(weapon) {
         self thread function_f9b883ea();
         self function_481a494b(weapon);
         self function_892bdee2();
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -814,7 +814,7 @@ function private function_481a494b(var_5f94a2e7) {
                 waitframe(1);
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

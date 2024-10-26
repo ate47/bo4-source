@@ -130,7 +130,7 @@ function function_cfd06f57(localclientnum) {
         } else {
             function_d9a960f2(1, 12, 8698);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -165,7 +165,7 @@ function function_1edfdbc1(localclientnum) {
         } else {
             function_815076cb(var_7beb3a32, 0);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -192,7 +192,7 @@ function function_161106e1(localclientnum) {
             }
             function_b4c6383f(var_834a617c[var_ef80e13b], 1, 855309);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -237,7 +237,7 @@ function function_a78bbf22(localclientnum) {
                 self.var_9623f1d5[ga] = 0;
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -362,7 +362,7 @@ function function_1d13e2db(localclientnum) {
                 break;
             }
         }
-        wait(0.3);
+        wait 0.3;
     }
 }
 
@@ -393,7 +393,7 @@ function function_af712255(localclientnum) {
             }
             function_b4c6383f(var_80324f69[i], 1, 1513239);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -428,7 +428,7 @@ function function_88dc3170(localclientnum) {
             }
             function_b4c6383f(var_524f546[i], 1, 1513239);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

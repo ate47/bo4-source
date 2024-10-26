@@ -1315,7 +1315,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
             break;
         }
         axe moveto(move_pos, 0.1);
-        wait(0.1);
+        wait 0.1;
         total_dist += interval_dist;
         if (total_dist >= max_dist) {
             break;
@@ -1342,7 +1342,7 @@ function function_78b33d6c(spin_dir = 1) {
     while (true) {
         spin_rate = 0.2;
         self rotateyaw(360 * spin_dir, spin_rate);
-        wait(spin_rate);
+        wait spin_rate;
     }
 }
 
@@ -1430,7 +1430,7 @@ function private function_137ed431(axe, var_a4388d06, spin_dir) {
         move_pos = axe.origin + var_7900b267 * interval_dist;
         self function_88d65504(axe, var_7900b267, move_pos);
         axe moveto(move_pos, 0.1);
-        wait(0.1);
+        wait 0.1;
         var_8abea022 = distancesquared(axe.origin, tag_pos);
         if (var_8abea022 < var_6cdcefc1) {
             break;

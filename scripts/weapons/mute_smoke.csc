@@ -52,7 +52,7 @@ function function_783a1c07(weapon) {
 function function_12e09509(localclientnum = 0) {
     level notify("previs_mute_smoke_" + localclientnum);
     level endon("previs_mute_smoke_" + localclientnum);
-    wait(10);
+    wait 10;
     var_46e1fb08 = spawn(localclientnum, (0, 0, 0), "script_model");
     var_37b85cb5 = spawn(localclientnum, (0, 0, 0), "script_model");
     var_618fb067 = spawn(localclientnum, (0, 0, 0), "script_model");
@@ -80,7 +80,7 @@ function function_12e09509(localclientnum = 0) {
             if (previs_weapon == level.var_1850a22d) {
                 waitframe(1);
             } else {
-                wait(0.2);
+                wait 0.2;
             }
         } else {
             waitframe(1);
@@ -252,7 +252,7 @@ function function_a189ab2e(localclientnum, enemy) {
         if (var_8c0e537d != can_see_enemy) {
             enemy duplicate_render::set_hacker_tool_hacked(localclientnum, can_see_enemy);
         }
-        wait(0.016);
+        wait 0.016;
     }
 }
 

@@ -797,7 +797,7 @@ function function_659f7dc(var_1ef5a3ba, var_3e853b2e, var_25ad32e1) {
 // Checksum 0x7b033bc9, Offset: 0x32b8
 // Size: 0x15c
 function private function_d6f929d6() {
-    wait(2);
+    wait 2;
     level.var_4f654f3a = 1;
     var_b50d0caa = getdvarfloat(#"hash_13a346481f092189", 0);
     var_7f6396f0 = getdvarfloat(#"hash_5b9ffb659d9e0093", 0);
@@ -923,7 +923,7 @@ function function_57d8515c() {
     level.var_b6752258 = isdefined(getgametypesetting(#"hash_1df445b9d1af641f")) ? getgametypesetting(#"hash_1df445b9d1af641f") : 0;
     level waittill(#"game_playing");
     for (;;) {
-        wait(level.var_df437ed2);
+        wait level.var_df437ed2;
         playerschecked = 0;
         players = getplayers();
         foreach (player in players) {
@@ -1501,7 +1501,7 @@ function updatezonemultikills() {
         self.recentzonekillcount = 0;
     }
     self.recentzonekillcount++;
-    wait(4);
+    wait 4;
     if (self.recentzonekillcount > 1) {
         self stats::function_dad108fa(#"multikill_2_zone_attackers", 1);
     }
@@ -2211,6 +2211,6 @@ function trophy_defense(origin, radius) {
 // Size: 0x26
 function waittilltimeoutordeath(timeout) {
     self endon(#"death");
-    wait(timeout);
+    wait timeout;
 }
 

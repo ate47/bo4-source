@@ -92,7 +92,7 @@ function stopmicrowave() {
                 waitframe(1);
                 continue;
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -201,7 +201,7 @@ function microwaveentity(entity) {
             }
         }
         if (isdefined(entity.microwavedamageinitialdelay)) {
-            wait(randomfloatrange(0.1, 0.3));
+            wait randomfloatrange(0.1, 0.3);
             entity.microwavedamageinitialdelay = undefined;
         }
         entity dodamage(damage, turret.origin, turret.owner, turret, 0, "MOD_TRIGGER_HURT", 0, turretweapon);
@@ -228,7 +228,7 @@ function microwaveentity(entity) {
         if (isplayer(entity) && entity.microwaveeffect % 3 == 2) {
             scoreevents::processscoreevent(#"hpm_suppress", turret.owner, entity, turretweapon);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

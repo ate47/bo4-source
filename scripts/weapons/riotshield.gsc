@@ -62,7 +62,7 @@ function watchriotshieldpickup() {
     self waittill(#"pickup_riotshield");
     self endon(#"weapon_change");
     println("<dev string:x38>");
-    wait(0.5);
+    wait 0.5;
     println("<dev string:x72>");
     currentweapon = self getcurrentweapon();
     self.hasriotshield = self hasriotshield();
@@ -384,7 +384,7 @@ function damagethendestroyriotshield(attacker, weapon) {
     if (isdefined(attacker) && attacker != self.owner && isplayer(attacker)) {
         scoreevents::processscoreevent(#"destroyed_shield", attacker, self.owner, weapon);
     }
-    wait(getdvarfloat(#"riotshield_destroyed_cleanup_time", 0));
+    wait getdvarfloat(#"riotshield_destroyed_cleanup_time", 0);
     self delete();
 }
 

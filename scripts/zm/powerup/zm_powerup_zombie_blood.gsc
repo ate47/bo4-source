@@ -159,7 +159,7 @@ function make_zombie_blood_entity() {
     // Size: 0x7c
     function function_98b48c31() {
         level flagsys::wait_till("<dev string:x68>");
-        wait(1);
+        wait 1;
         zm_devgui::add_custom_devgui_callback(&function_9170df8e);
         adddebugcommand("<dev string:x83>");
         adddebugcommand("<dev string:xd4>");

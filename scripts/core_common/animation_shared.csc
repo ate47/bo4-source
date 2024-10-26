@@ -189,7 +189,7 @@ function add_notetrack_func(funcname, func) {
 }
 
 // Namespace animation/animation_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xd5ed63f2, Offset: 0xea0
 // Size: 0x118
 function add_global_notetrack_handler(str_note, func, ...) {

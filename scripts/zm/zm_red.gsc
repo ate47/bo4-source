@@ -352,7 +352,7 @@ function function_a7641284() {
     var_af2013df = array(#"hash_67695ee69c57c0b2", #"hash_61de3b8fe6f6a35");
     level flag::wait_till_all(var_af2013df);
     while (true) {
-        wait(1);
+        wait 1;
         var_c91c19bb = 0;
         foreach (player in getplayers()) {
             t_pap = getent("trigger_pap_defend", "targetname");
@@ -616,7 +616,7 @@ function private function_a3e22935() {
     level notify(#"hash_49085a6baf9c2c27");
     level waittill(#"host_migration_end");
     level thread function_c000f08b();
-    wait(1);
+    wait 1;
     level notify(#"hash_39eae7c03390a3a7");
 }
 
@@ -706,7 +706,7 @@ function companys_() {
     level waittill(#"hash_1cf28f130f16e2eb");
     self.no_eye_glow = undefined;
     self thread zombie_utility::zombie_eye_glow();
-    wait(randomfloatrange(1.6, 2.9));
+    wait randomfloatrange(1.6, 2.9);
     self thread scene::play(#"aib_zm_red_ampthtr_zombie_trnsfxd", "Shot 2", self);
 }
 
@@ -886,7 +886,7 @@ function function_a14d96ed() {
     foreach (starting_zombie in level.a_mdl_zombies) {
         if (isdefined(starting_zombie)) {
             starting_zombie thread function_a4e2970b(0);
-            wait(0.5);
+            wait 0.5;
         }
     }
 }
@@ -1355,7 +1355,7 @@ function function_598a6222() {
 // Checksum 0x69ce2102, Offset: 0x6408
 // Size: 0x748
 function function_c02e63(var_2753f06a) {
-    wait(1);
+    wait 1;
     if (!isdefined(level.host)) {
         return false;
     }
@@ -2106,7 +2106,7 @@ function function_fbf0e632() {
         foreach (player in a_players) {
             player setorigin(s_ride.origin + (randomintrange(-16, 16), randomintrange(-16, 16), 0));
         }
-        wait(1);
+        wait 1;
     }
 
     // Namespace zm_red/zm_red
@@ -2122,7 +2122,7 @@ function function_fbf0e632() {
         level scene::init("<dev string:x25c3>");
         zm_devgui::zombie_devgui_open_sesame();
         level zm_utility::function_9ad5aeb1(1);
-        wait(1);
+        wait 1;
         level flag::set(#"hash_4083e9da0ba41dec");
         var_ff91be3a = struct::get_array("<dev string:x25fb>", "<dev string:x44>");
         var_a10268d3 = level.players;

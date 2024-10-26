@@ -303,11 +303,11 @@ function teleport_player(user) {
     playfx(level._effect[#"portal_dest"], var_298e4578.origin, (1, 0, 0), (0, 0, 1));
     playsoundatposition(#"evt_teleporter_go", var_298e4578.origin);
     user playsoundtoplayer(#"hash_39876bf613387fef", user);
-    wait(0.5);
+    wait 0.5;
     user function_96e88318();
     util::setclientsysstate("levelNotify", "cool_fx", user);
     util::setclientsysstate("levelNotify", "ae1", user);
-    wait(1.25);
+    wait 1.25;
     if (level flag::get("dog_round")) {
         util::setclientsysstate("levelNotify", "vis4", user);
         return;
@@ -332,7 +332,7 @@ function function_96e88318(str_notify) {
 function function_c234a5ce() {
     self endoncallback(&function_4f5d4783, #"death");
     self val::set(#"teleport_exit", "ignoreme", 1);
-    wait(1);
+    wait 1;
     self function_4f5d4783();
 }
 
@@ -361,7 +361,7 @@ function cooldown_portal_timer(e_user) {
     self.a_e_users[self.a_e_users.size] = e_user;
     self function_cb7c6fc7(e_user, 0);
     for (time = 0; !level flag::get("defcon_active") && time < 20 || time < 2; time++) {
-        wait(1);
+        wait 1;
     }
     arrayremovevalue(self.a_e_users, e_user);
     self function_cb7c6fc7(e_user, 1);
@@ -627,7 +627,7 @@ function function_9d689cc4(portal, portal_exit) {
     self.b_ignore_cleanup = 1;
     self thread function_554c780b();
     while (distancesquared(self.origin, portal.origin) > self.goalradius * self.goalradius) {
-        wait(0.1);
+        wait 0.1;
     }
     self notify(#"reached_portal");
     self.var_3f667178 = undefined;
@@ -673,7 +673,7 @@ function function_71be28e1(zombie, start_portal, end_portal) {
     zombie.b_ignore_cleanup = 1;
     zombie forceteleport(level.s_zombie_teleport_room.origin);
     zombie setentitypaused(1);
-    wait(3);
+    wait 3;
     end_target = end_portal.var_52a6f692[0];
     zombie setentitypaused(0);
     zombie forceteleport(end_portal.origin + anglestoforward(end_portal.angles) * randomfloatrange(0, 32), end_target.angles);
@@ -691,7 +691,7 @@ function function_71be28e1(zombie, start_portal, end_portal) {
 // Size: 0x3e
 function function_554c780b() {
     self endon(#"death", #"reached_portal");
-    wait(2);
+    wait 2;
     self.b_ignore_cleanup = self.var_693b80bb;
 }
 
@@ -946,7 +946,7 @@ function function_45a968e4() {
     while (true) {
         self.var_9f43786e = n_cycle_time;
         while (self.var_9f43786e > 0) {
-            wait(1);
+            wait 1;
             self.var_9f43786e--;
         }
         self function_63283830();
@@ -1025,7 +1025,7 @@ function enable_cage_portal(b_enable = 1) {
 // Size: 0x4c
 function function_1bf7bc9e() {
     self endon(#"death");
-    wait(0.5);
+    wait 0.5;
     array::random(level.a_s_portals) teleport_player(self);
 }
 

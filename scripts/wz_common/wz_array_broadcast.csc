@@ -67,9 +67,9 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                     struct thread function_72e8e600();
                     waitframe(1);
                 }
-                wait(20);
+                wait 20;
                 playsound(0, "evt_broadcast_alarm", (4292, 18990, 6528));
-                wait(2);
+                wait 2;
                 playsound(0, "evt_broadcast_alarm", (4292, 18990, 6528));
                 eventstruct.ent thread function_44e1ce2e(0);
             }
@@ -132,13 +132,13 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
             audio::playloopat(#"hash_39c8dfc4efa25b26", struct.origin);
         }
     }
-    wait(30);
+    wait 30;
     self endon(#"broadcast_off");
     var_5be26843 = struct::get_array("array_emergency_broadcast", "targetname");
     foreach (struct in var_5be26843) {
         audio::playloopat(#"hash_39c8dfc4efa25b26", struct.origin);
     }
-    wait(3);
+    wait 3;
     if (isdefined(getgametypesetting(#"wzzombieapocalypse")) && getgametypesetting(#"wzzombieapocalypse")) {
         while (var_ffe2b6da < 8) {
             foreach (struct in var_5be26843) {
@@ -162,9 +162,9 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
                 if (!var_20d3ff69) {
                     var_e668b651 = 1;
                 }
-                wait(1);
+                wait 1;
             }
-            wait(1);
+            wait 1;
             var_ffe2b6da++;
             struct.var_7a993bec = playsound(0, #"hash_6ee08a10b9c18ba7", struct.origin);
         }
@@ -191,14 +191,14 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
                 if (!var_20d3ff69) {
                     var_e668b651 = 1;
                 }
-                wait(1);
+                wait 1;
             }
-            wait(1);
+            wait 1;
             var_ffe2b6da++;
             struct.var_7a993bec = playsound(0, #"hash_6ee08a10b9c18ba7", struct.origin);
         }
     }
-    wait(10);
+    wait 10;
     foreach (struct in var_5be26843) {
         audio::stoploopat(#"hash_39c8dfc4efa25b26", struct.origin);
     }
@@ -211,9 +211,9 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
 // Size: 0x74
 function function_72e8e600() {
     for (loopcount = 0; loopcount < 10; loopcount++) {
-        wait(randomintrange(1, 2));
+        wait randomintrange(1, 2);
         playsound(0, #"hash_7e2183e61d5335a8", self.origin);
-        wait(3);
+        wait 3;
     }
 }
 

@@ -60,7 +60,7 @@ function nuke_powerup(drop_item, player_team, var_264cf1f9) {
     foreach (ai_enemy in getaiteamarray(level.zombie_team)) {
         ai_enemy ai::stun(1.5);
     }
-    wait(0.5);
+    wait 0.5;
     zombies = getaiteamarray(level.zombie_team);
     zombies = arraysort(zombies, location);
     zombies_nuked = [];
@@ -87,7 +87,7 @@ function nuke_powerup(drop_item, player_team, var_264cf1f9) {
         }
     }
     for (i = 0; i < zombies_nuked.size; i++) {
-        wait(randomfloatrange(0.1, 0.3));
+        wait randomfloatrange(0.1, 0.3);
         if (!isdefined(zombies_nuked[i])) {
             continue;
         }
@@ -143,7 +143,7 @@ function nuke_delay_spawning(n_spawn_delay) {
         level flag::clear(#"hash_21921ed511559aa3");
         return;
     }
-    wait(n_spawn_delay);
+    wait n_spawn_delay;
     if (!(isdefined(level.disable_nuke_delay_spawning) && level.disable_nuke_delay_spawning) && b_spawn_zombies_before_nuke) {
         level flag::set("spawn_zombies");
     }
@@ -173,7 +173,7 @@ function function_9a79647b(var_8de6cf73) {
 // Size: 0xa4
 function nuke_damage_func() {
     self endon(#"death");
-    wait(randomfloatrange(0.1, 0.7));
+    wait randomfloatrange(0.1, 0.7);
     self thread zombie_death::flame_death_fx();
     self playsound(#"evt_nuked");
     self dodamage(self.maxhealth * self.var_3b6e5508, self.origin);

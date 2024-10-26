@@ -45,7 +45,7 @@ function on_game_playing() {
     if (!getdvarint(#"hash_14f8907ba73d8e4f", 1)) {
         return;
     }
-    wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
+    wait getdvarfloat(#"hash_68cf1e8e429452b0", 0);
     if (util::isfirstround()) {
         level thread scene::add_scene_func(#"p8_fxanim_mp_jun_napalm_drop_bundle", &function_69a9563e, "Shot 2");
         level thread scene::play(#"p8_fxanim_mp_jun_napalm_drop_bundle", "Shot 2");

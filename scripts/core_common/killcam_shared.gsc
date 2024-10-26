@@ -331,7 +331,7 @@ function do_final_killcam() {
         }
         player thread final_killcam(winner);
     }
-    wait(0.1);
+    wait 0.1;
     while (are_any_players_watching()) {
         waitframe(1);
     }
@@ -476,7 +476,7 @@ function killcam(attackernum, targetnum, killcam_entity_info, weapon, meansofdea
 function set_entity(killcamentityindex, delayms) {
     self endon(#"disconnect", #"end_killcam", #"spawned");
     if (delayms > 0) {
-        wait(float(delayms) / 1000);
+        wait float(delayms) / 1000;
     }
     self.killcamentity = killcamentityindex;
 }
@@ -501,7 +501,7 @@ function set_killcam_entities(entity_info, killcamstarttime) {
 // Size: 0x5c
 function wait_killcam_time() {
     self endon(#"disconnect", #"end_killcam", #"begin_killcam");
-    wait(self.killcamlength - 0.05);
+    wait self.killcamlength - 0.05;
     self end_killcam();
 }
 
@@ -514,12 +514,12 @@ function wait_final_killcam_slowdown(deathtime, starttime) {
     secondsuntildeath = float(deathtime - starttime) / 1000;
     deathtime = gettime() + int(secondsuntildeath * 1000);
     waitbeforedeath = 2;
-    wait(max(0, secondsuntildeath - waitbeforedeath));
+    wait max(0, secondsuntildeath - waitbeforedeath);
     util::setclientsysstate("levelNotify", "sndFKsl");
     setslowmotion(1, 0.25, waitbeforedeath);
-    wait(waitbeforedeath + 0.5);
+    wait waitbeforedeath + 0.5;
     setslowmotion(0.25, 1, 1);
-    wait(0.5);
+    wait 0.5;
 }
 
 // Namespace killcam/killcam_shared
@@ -642,7 +642,7 @@ function spectator_killcam_cleanup(attacker) {
     attacker endon(#"disconnect");
     waitresult = attacker waittill(#"begin_killcam");
     waittime = max(0, waitresult.start_time - self.deathtime - 50);
-    wait(waittime);
+    wait waittime;
     self end(0);
 }
 

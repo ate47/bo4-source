@@ -363,7 +363,7 @@ function private function_7d162bd0(projectile, entity) {
             }
             util::wait_network_frame();
             var_b12a43cc clientfield::increment("gegenees_spear_miss_cf");
-            wait(0.25);
+            wait 0.25;
             var_b12a43cc.in_use = 0;
         }
         return;

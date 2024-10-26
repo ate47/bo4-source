@@ -66,7 +66,7 @@ function flamethrower_tornado_fx(localclientnum, oldval, newval, bnewent, biniti
 // Size: 0x8a
 function function_ea05550b(localclientnum) {
     self endon(#"death", #"hash_4a10e61d27734104");
-    wait(0.1);
+    wait 0.1;
     self playsound(localclientnum, #"hash_2e4b3d95b5a51afa");
     self.var_180064c2 = self playloopsound(#"hash_468cabb7402e170e");
 }
@@ -87,7 +87,7 @@ function function_4e325cd6(localclientnum, oldval, newval, bnewent, binitialsnap
                 e_player playrumbleonentity(localclientnum, "damage_heavy");
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 

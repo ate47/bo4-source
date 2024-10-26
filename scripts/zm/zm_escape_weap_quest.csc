@@ -65,7 +65,7 @@ function function_e4a48a64(localclientnum, oldval, newval, bnewent, binitialsnap
         self stoploopsound(self.var_dd081ca4);
     }
     self.var_8eb4e749 = util::playfxontag(localclientnum, level._effect[#"hell_portal_close"], self, "tag_origin");
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self)) {
         if (isdefined(self.var_78ef40db)) {
             stopfx(localclientnum, self.var_78ef40db);

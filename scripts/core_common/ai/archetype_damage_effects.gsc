@@ -42,7 +42,7 @@ function private function_6fedb40d() {
     }
     self clientfield::set("arch_actor_fire_fx", 1);
     self.var_73c36602 = 1;
-    wait(isdefined(self.var_ab2486b4 / 1000) ? self.var_ab2486b4 / 1000 : 3);
+    wait isdefined(self.var_ab2486b4 / 1000) ? self.var_ab2486b4 / 1000 : 3;
     self clientfield::set("arch_actor_fire_fx", 0);
     self.var_73c36602 = 0;
 }

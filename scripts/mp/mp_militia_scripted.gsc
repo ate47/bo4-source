@@ -41,7 +41,7 @@ function __main__() {
 // Size: 0x94
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
+    wait getdvarfloat(#"hash_68cf1e8e429452b0", 0);
     if (util::isfirstround()) {
         level thread scene::play(#"p8_fxanim_mp_militia_air_tanker_bundle", "Shot 2");
     }

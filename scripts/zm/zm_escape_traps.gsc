@@ -232,7 +232,7 @@ function function_9c2d463d(t_damage) {
         self function_1395e596();
         self dodamage(self.maxhealth * 0.3, t_damage.origin, undefined, t_damage);
         playsoundatposition("zmb_trap_fan_grind", self.origin);
-        wait(0.1);
+        wait 0.1;
     }
     if (isalive(self)) {
         self clientfield::set("fan_trap_blood_fx", 0);
@@ -284,7 +284,7 @@ function private function_1395e596() {
 function fan_trap_timeout() {
     self endon(#"trap_finished");
     for (n_duration = 0; n_duration < 25; n_duration += 0.05) {
-        wait(0.05);
+        wait 0.05;
     }
     self notify(#"trap_finished");
 }
@@ -316,7 +316,7 @@ function fan_trap_rumble(e_player) {
         if (e_player istouching(self.t_rumble)) {
             e_player clientfield::set_to_player("rumble_fan_trap", 1);
             e_player.fan_trap_rumble = 1;
-            wait(0.25);
+            wait 0.25;
             continue;
         }
         e_player clientfield::set_to_player("rumble_fan_trap", 0);
@@ -391,7 +391,7 @@ function zombie_fan_trap_death() {
 // Checksum 0xa4c83e5, Offset: 0x1c30
 // Size: 0x34
 function stop_fan_trap_blood_fx() {
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self clientfield::set("fan_trap_blood_fx", 0);
     }
@@ -529,7 +529,7 @@ function function_efd61793(t_damage) {
                 }
                 self zm_audio::playerexert("cough");
             }
-            wait(1);
+            wait 1;
         }
         self.is_in_acid = undefined;
     }
@@ -558,7 +558,7 @@ function function_9699194a(t_damage) {
         self.marked_for_death = 1;
         self clientfield::set("acid_trap_death_fx", 1);
         level notify(#"hash_317f58ba0d580c27", {#e_player:t_damage.activated_by_player});
-        wait(randomfloatrange(0.25, 2));
+        wait randomfloatrange(0.25, 2);
         if (isalive(self)) {
             self zombie_utility::gib_random_parts();
             self thread stop_acid_death_fx();
@@ -577,7 +577,7 @@ function function_9699194a(t_damage) {
         self.var_143964f0 = self.var_12745932;
         self.var_12745932 = 1;
         self dodamage(self.maxhealth * 0.2, t_damage.origin, t_damage.activated_by_player, t_damage);
-        wait(0.3);
+        wait 0.3;
     }
     if (isalive(self)) {
         self clientfield::set("acid_trap_death_fx", 0);
@@ -611,7 +611,7 @@ function acid_trap_fx(e_trap) {
 // Checksum 0xe5a00ed0, Offset: 0x2ae0
 // Size: 0x34
 function stop_acid_death_fx() {
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self clientfield::set("acid_trap_death_fx", 0);
     }
@@ -720,7 +720,7 @@ function activate_zm_spinning_trap() {
     self thread function_61791b8b(var_a5fa009d);
     self thread function_4a15e725();
     self thread function_c3ac9950();
-    wait(1.2);
+    wait 1.2;
     self thread zm_traps::trap_damage();
     self waittill(#"trap_finished");
     self.in_use = undefined;
@@ -839,7 +839,7 @@ function function_1f7e661f(t_damage) {
         return;
     }
     self dodamage(self.maxhealth * 0.2, self.origin, undefined, t_damage);
-    wait(0.25);
+    wait 0.25;
     if (isdefined(self)) {
         self.var_1adc13ad = undefined;
     }
@@ -886,7 +886,7 @@ function private function_c846fd12() {
 function function_4a15e725() {
     self endon(#"trap_finished");
     for (n_duration = 0; n_duration < 25; n_duration += 0.05) {
-        wait(0.05);
+        wait 0.05;
     }
     self notify(#"trap_finished");
 }
@@ -918,7 +918,7 @@ function spinning_trap_rumble(e_player) {
         if (e_player istouching(self.t_rumble)) {
             e_player clientfield::set_to_player("rumble_spinning_trap", 1);
             e_player.b_spinning_trap_rumble = 1;
-            wait(0.25);
+            wait 0.25;
             continue;
         }
         e_player clientfield::set_to_player("rumble_spinning_trap", 0);
@@ -932,7 +932,7 @@ function spinning_trap_rumble(e_player) {
 // Checksum 0x44f41834, Offset: 0x4128
 // Size: 0x34
 function a_a_arms() {
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self clientfield::set("spinning_trap_blood_fx", 0);
     }
@@ -1093,7 +1093,7 @@ function trap_move_switch() {
         mdl_handle rotatepitch(-180, 0.5);
         mdl_handle playsound(#"amb_sparks_l_b");
     }
-    wait(0.5);
+    wait 0.5;
     self notify(#"switch_activated");
     self waittill(#"available");
     self zapper_light_green();

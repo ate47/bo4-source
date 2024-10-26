@@ -822,7 +822,7 @@ function getlockontime(target, weapon) {
             level.hackertoollostsightlimitms = getdvarint(#"scr_hackertoollostsightlimitms", 1000);
             level.hackertoollockonradius = getdvarfloat(#"scr_hackertoollockonradius", 20);
             level.hackertoollockonfov = getdvarint(#"scr_hackertoollockonfov", 65);
-            wait(1);
+            wait 1;
         }
     }
 

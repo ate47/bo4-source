@@ -109,7 +109,7 @@ function function_dab102b8(e_attacker, weapon) {
     self notify(#"hash_6f92e6943e40092b");
     self endon(#"hash_6f92e6943e40092b", #"death");
     for (i = 0; i < 8; i++) {
-        wait(0.375);
+        wait 0.375;
         self.var_cbf4894c += 0.125;
         if (self.var_cbf4894c >= 1) {
             break;

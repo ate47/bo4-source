@@ -254,7 +254,7 @@ function power_consume_timer_think(slot, weapon) {
     }
     time = gettime();
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!isdefined(self._gadgets_player[slot])) {
             return;
         }

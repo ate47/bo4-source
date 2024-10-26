@@ -150,7 +150,7 @@ function update_trigger_visibility() {
             }
             self setinvisibletoplayer(player);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

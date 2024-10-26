@@ -68,9 +68,9 @@ function gunfireloopfxthread(fxid, fxpos, shotsmin, shotsmax, shotdelaymin, shot
         shotnum = shotsbase + randomint(shotsrange);
         for (i = 0; i < shotnum; i++) {
             triggerfx(fxent);
-            wait(shotdelaybase + randomfloat(shotdelayrange));
+            wait shotdelaybase + randomfloat(shotdelayrange);
         }
-        wait(betweensetsbase + randomfloat(betweensetsrange));
+        wait betweensetsbase + randomfloat(betweensetsrange);
     }
 }
 
@@ -120,10 +120,10 @@ function gunfireloopfxvecthread(fxid, fxpos, fxpos2, shotsmin, shotsmax, shotdel
             if (delay < 0.05) {
                 delay = 0.05;
             }
-            wait(delay);
+            wait delay;
         }
-        wait(shotdelaybase + randomfloat(shotdelayrange));
-        wait(betweensetsbase + randomfloat(betweensetsrange));
+        wait shotdelaybase + randomfloat(shotdelayrange);
+        wait betweensetsbase + randomfloat(betweensetsrange);
     }
 }
 

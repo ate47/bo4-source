@@ -22,7 +22,7 @@
 #/
 
 // Namespace stats/player_stats
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x21 linked variadic
 // Checksum 0x7d4d009b, Offset: 0x198
 // Size: 0x68
 function get_stat(localclientnum, ...) {
@@ -34,7 +34,7 @@ function get_stat(localclientnum, ...) {
 }
 
 // Namespace stats/player_stats
-// Params 3, eflags: 0x20
+// Params 3, eflags: 0x20 variadic
 // Checksum 0x75a37c2b, Offset: 0x208
 // Size: 0x68
 function function_842e069e(localclientnum, sessionmode, ...) {

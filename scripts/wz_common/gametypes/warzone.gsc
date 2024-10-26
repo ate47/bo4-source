@@ -351,7 +351,7 @@ function private function_23600e7d() {
                     println("<dev string:x3dd>" + level.var_8ca0499);
                     while (timeleft > 0) {
                         timeleft -= 1;
-                        wait(1);
+                        wait 1;
                         if (level.activeplayers.size >= level.var_8fcd8a61) {
                             break;
                         }
@@ -360,7 +360,7 @@ function private function_23600e7d() {
                 }
             }
             if (level.activeplayers.size < level.var_a132ca2b) {
-                wait(5);
+                wait 5;
                 var_fb9555e1 = 3;
                 continue;
             }
@@ -374,7 +374,7 @@ function private function_23600e7d() {
         if (level.var_493d04d3 <= 0 && level.activeplayers.size < level.var_e9d6c52f) {
             if (var_fb9555e1 > 0) {
                 println("<dev string:x456>" + level.activeplayers.size);
-                wait(5);
+                wait 5;
                 var_fb9555e1--;
                 println("<dev string:x49b>" + var_fb9555e1);
                 continue;
@@ -400,7 +400,7 @@ function private function_23600e7d() {
                     }
                 }
                 var_e09e5160 = level.activeplayers.size;
-                wait(2);
+                wait 2;
                 println("<dev string:x580>" + evolution);
                 continue;
             }
@@ -411,7 +411,7 @@ function private function_23600e7d() {
         timeleft = level.evolution_interval;
         while (timeleft > 0) {
             timeleft -= 1;
-            wait(1);
+            wait 1;
             if (level.activeplayers.size >= level.var_a132ca2b) {
                 break;
             }
@@ -513,7 +513,7 @@ function private start_insertion() {
             return;
         }
         while (getplayers().size == 0) {
-            wait(0.5);
+            wait 0.5;
         }
     #/
     level flagsys::set(#"spawning_allowed");
@@ -1066,7 +1066,7 @@ function function_ded0be06(params) {
         foreach (player in getplayers()) {
             player luinotifyevent(#"create_prematch_timer", 3, gettime() + 60000, 1, 1);
         }
-        wait(60);
+        wait 60;
     }
     var_f1a61e0 = 0;
     foreach (var_a505a9b4 in params.var_dfa2cc2c) {
@@ -1157,7 +1157,7 @@ function function_3832a0d2(team) {
             }
         }
     }
-    wait(5);
+    wait 5;
     globallogic_audio::leader_dialog("warTeamWon", team);
 }
 
@@ -1187,7 +1187,7 @@ function function_b5f4c9d8(team) {
 // Checksum 0x270fb890, Offset: 0x5b30
 // Size: 0x3a
 function function_9498e451(team) {
-    wait(1);
+    wait 1;
     while (isdefined(level.var_fec861a7) && level.var_fec861a7) {
         waitframe(1);
     }
@@ -1238,7 +1238,7 @@ function on_end_game(var_c1e98979) {
     match::function_af2e264f(winner);
     match::function_35702443(var_1167be0c);
     setmatchflag("game_ended", 0);
-    wait(2);
+    wait 2;
     setmatchflag("game_ended", 1);
 }
 
@@ -1886,7 +1886,7 @@ function private _teleport_player(origin, angles, var_9914886a = 0) {
     self.oobdisabled = 1;
     fadetime = 0.5;
     self thread hud::fade_to_black_for_x_sec(0, 1, fadetime, fadetime);
-    wait(fadetime);
+    wait fadetime;
     self.var_63b63c2 = 1;
     self unlink();
     self setorigin(origin);
@@ -2022,11 +2022,11 @@ function function_ec375172(player) {
     var_410bcc74 = isdefined(getgametypesetting(#"wzplayerinsertiontypeindex")) ? getgametypesetting(#"wzplayerinsertiontypeindex") : 0;
     switch (var_410bcc74) {
     case 0:
-        wait(0.1);
+        wait 0.1;
         playfxontag(#"hash_57f2dadebce0586c", player, "j_spine4");
         break;
     case 1:
-        wait(0.1);
+        wait 0.1;
         break;
     }
 }

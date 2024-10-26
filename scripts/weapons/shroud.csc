@@ -244,7 +244,7 @@ function private function_25f0bf77(localclientnum) {
             i = 0;
         }
         var_bec8c458 = i;
-        wait(0.1);
+        wait 0.1;
     }
 }
 

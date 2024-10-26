@@ -276,7 +276,7 @@ function function_7bf69748(localclientnum) {
                 }
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -359,7 +359,7 @@ function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap
         function_1a7aaaa8(localclientnum, "<dev string:xb0>" + self getentitynumber());
     #/
     if (newval) {
-        wait(0.2);
+        wait 0.2;
         if (isdefined(self) && isdefined(self.owner)) {
             self.owner.nobloodoverlay = 1;
             self.owner util::waittill_dobj(localclientnum);

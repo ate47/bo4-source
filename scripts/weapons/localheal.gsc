@@ -128,7 +128,7 @@ function function_c04c8002() {
     level endon(#"game_ended");
     self notify("2c5ea250cf8b9681");
     self endon("2c5ea250cf8b9681");
-    wait(1);
+    wait 1;
     self.localheal = undefined;
     self.var_b6672e47 = undefined;
     self.var_9db94fe3 = undefined;

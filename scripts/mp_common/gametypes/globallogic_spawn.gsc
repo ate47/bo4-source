@@ -572,7 +572,7 @@ function spawnplayerprediction() {
         return;
     }
     while (true) {
-        wait(0.5);
+        wait 0.5;
         spawning::onspawnplayer(1);
     }
 }
@@ -891,7 +891,7 @@ function forcespawn(time) {
     if (!isdefined(time)) {
         time = 60;
     }
-    wait(time);
+    wait time;
     if (isdefined(self.hasspawned) && self.hasspawned) {
         return;
     }
@@ -934,7 +934,7 @@ function kickifidontspawninternal() {
         if (!(isdefined(level.inprematchperiod) && level.inprematchperiod) && self isstreamerready()) {
             break;
         }
-        wait(5);
+        wait 5;
     }
     waittime = 90;
     if (getdvarstring(#"scr_kick_time") != "") {
@@ -1188,7 +1188,7 @@ function waitandspawnclient(timealreadypassed) {
             hud_message::setlowermessage(#"hash_7d1a0e5bd191fce", var_821200bb);
             self thread respawn_asspectator(self.origin + (0, 0, 60), self.angles);
             spawnedasspectator = 1;
-            wait(var_821200bb);
+            wait var_821200bb;
         }
         self.teamkillpunish = 0;
     }
@@ -1263,9 +1263,9 @@ function function_6c23d45b(time, notifyname) {
             hud_message::setlowermessage(game.strings[#"waiting_to_spawn"], timeleft);
         }
         if (timeleft > 0 && timeleft < 1) {
-            wait(timeleft);
+            wait timeleft;
         } else {
-            wait(1);
+            wait 1;
         }
         timeleft -= 1;
     }

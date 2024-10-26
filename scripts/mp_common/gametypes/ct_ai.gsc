@@ -173,7 +173,7 @@ function function_1495c8c(v_origin, v_angles, anim_name) {
 function hide_pop() {
     self endon(#"death");
     self ghost();
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self)) {
         self show();
         waitframe(1);

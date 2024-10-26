@@ -63,10 +63,10 @@ function on_spawn(watcher) {
 // Size: 0x68
 function play_footsteps() {
     self endon(#"death", #"hash_5a09ded231e405ad");
-    wait(0.25);
+    wait 0.25;
     while (true) {
         self playsound(#"fly_step_sprint_plr_default");
-        wait(0.23);
+        wait 0.23;
     }
 }
 
@@ -77,7 +77,7 @@ function play_footsteps() {
 function function_e9d18b65() {
     self endon(#"death");
     grenade = self;
-    wait(0.2);
+    wait 0.2;
     weapon = getweapon(grenade.var_f64cb8d.weapon);
     var_fa7f044f = 0;
     while (true) {
@@ -92,7 +92,7 @@ function function_e9d18b65() {
                 grenade function_7c24c60f(weapon.reloadtime);
                 continue;
             }
-            wait(weapon.firetime);
+            wait weapon.firetime;
         }
         if (var_fa7f044f >= weapon.clipsize) {
             var_fa7f044f = 0;
@@ -100,7 +100,7 @@ function function_e9d18b65() {
             continue;
         }
         burst_delay = randomfloatrange(grenade.var_f64cb8d.var_c8670194, grenade.var_f64cb8d.var_ebc63eca);
-        wait(burst_delay);
+        wait burst_delay;
     }
 }
 
@@ -111,11 +111,11 @@ function function_e9d18b65() {
 function function_7c24c60f(reloadtime) {
     self endon(#"death");
     time_ratio = reloadtime / 3;
-    wait(time_ratio);
+    wait time_ratio;
     self playsound(#"hash_337f5ae3f1674ad3");
-    wait(time_ratio);
+    wait time_ratio;
     self playsound(#"hash_7a315f233edf3cba");
-    wait(time_ratio);
+    wait time_ratio;
 }
 
 // Namespace decoygrenade/decoy_grenade

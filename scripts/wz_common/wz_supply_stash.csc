@@ -68,7 +68,7 @@ function private function_53d906fd(localclientnum) {
                 drop update_fx(localclientnum, playfx, state);
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -94,7 +94,7 @@ function private function_fd3f6235(localclientnum) {
                 drop update_fx(localclientnum, playfx, state);
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

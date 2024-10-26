@@ -108,7 +108,7 @@ function function_29543c() {
     e_player = s_info.activator;
     b_say = e_player zm_audio::create_and_play_dialog(#"zone_dock", #"react_0", undefined, 1);
     if (isdefined(b_say) && b_say && e_player zm_characters::is_character(array(#"hash_1aa57ef704f24fa5", #"hash_36bc80636f0fdac4"))) {
-        wait(soundgetplaybacktime(#"hash_6598db6cd61c4aad") / 1000);
+        wait soundgetplaybacktime(#"hash_6598db6cd61c4aad") / 1000;
         e_nikolai = undefined;
         foreach (var_a7cf1037 in level.players) {
             if (var_a7cf1037 zm_characters::is_character(array(#"hash_22e6f7e13c3a99ef", #"hash_46b92e1337b43236"))) {
@@ -225,7 +225,7 @@ function function_963edada() {
         if (isdefined(b_play) && b_play) {
             level flag::set(#"hash_59cfca3c898df56d");
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -301,7 +301,7 @@ function function_f118f554() {
 // Size: 0x144
 function private function_5860fce9() {
     self endon(#"disconnect");
-    wait(10);
+    wait 10;
     if (isalive(self)) {
         b_say = self zm_vo::function_a2bd5a0c(#"hash_227bd68a057f7198", 0, 1);
         if (b_say && isalive(self) && level.activeplayers.size > 1) {
@@ -413,7 +413,7 @@ function private function_a78a3261() {
 // Size: 0xe4
 function function_818b85eb() {
     self endon(#"death", #"disconnect");
-    wait(1);
+    wait 1;
     if (!isdefined(self)) {
         return;
     }

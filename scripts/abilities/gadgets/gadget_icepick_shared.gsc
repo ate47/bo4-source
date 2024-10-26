@@ -510,7 +510,7 @@ function private starthack(player) {
     function_aaf0a382(player.var_be9a0b4b[0], player);
     player clientfield::set_player_uimodel("IcePickInfo.hackFinished", 1);
     player clientfield::set_to_player("currentlybeinghackedplayer", -2);
-    wait(0.75);
+    wait 0.75;
     if (!isdefined(player)) {
         return;
     }
@@ -875,7 +875,7 @@ function function_39026c34(attackingplayer, var_11a83c3a, var_4f6e2cbe) {
 // Size: 0x5c
 function private function_9a1266be() {
     self endon(#"death", #"hash_2945c35e0b146804", #"hash_5e72464fef90323e");
-    wait(1);
+    wait 1;
     self function_de8a54a6(0.01);
 }
 
@@ -1065,7 +1065,7 @@ function private function_b76c8353(hacker) {
     while (gettime() < var_49c01cfb) {
         timeelapsed = gettime() - starttime;
         var_2d62ff4b = timeelapsed / var_a1a18ce2;
-        wait(0.1);
+        wait 0.1;
     }
     if (!isdefined(hacker.var_1d6ad02e)) {
         hacker.var_1d6ad02e = gameobjects::get_next_obj_id();

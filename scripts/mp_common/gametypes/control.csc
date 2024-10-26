@@ -372,7 +372,7 @@ function function_185b0894(localclientnum, oldval, newval) {
             }
             zone.lastprogress = progress;
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 

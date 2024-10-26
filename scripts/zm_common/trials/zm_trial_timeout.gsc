@@ -150,7 +150,7 @@ function function_d3eb9969() {
 function private function_28663a8f() {
     self endon(#"death");
     level endon(#"hash_7646638df88a3656");
-    wait(1);
+    wait 1;
     if (!(isdefined(self.completed_emerging_into_playable_area) && self.completed_emerging_into_playable_area) && self.archetype === #"zombie") {
         self waittill(#"completed_emerging_into_playable_area");
     }
@@ -173,7 +173,7 @@ function private function_28663a8f() {
                         }
                     }
                     if (var_9b06f383) {
-                        wait(1);
+                        wait 1;
                         break;
                     }
                 }
@@ -231,7 +231,7 @@ function private function_8b87e57c(timer_label, grace_period, timer_value, var_1
     if (!isdefined(level.var_869f4c31)) {
         level.var_869f4c31 = timer_value;
     }
-    wait(grace_period);
+    wait grace_period;
     timer_label = isdefined(timer_label) ? timer_label : #"";
     level thread function_14a98a41(timer_label, timer_value);
     foreach (player in getplayers()) {
@@ -245,7 +245,7 @@ function private function_8b87e57c(timer_label, grace_period, timer_value, var_1
             player val::reset("zm_trial_timeout", "freezecontrols");
         }
     }
-    wait(timer_value);
+    wait timer_value;
     zm_trial::fail(var_1215371f);
 }
 
@@ -255,7 +255,7 @@ function private function_8b87e57c(timer_label, grace_period, timer_value, var_1
 // Size: 0xf4
 function private function_31f197c2() {
     self endon(#"disconnect");
-    wait(0.5);
+    wait 0.5;
     var_9a703be9 = level.var_869f4c31;
     while (var_9a703be9 == level.var_869f4c31) {
         waitframe(1);
@@ -279,7 +279,7 @@ function private function_14a98a41(str_label, n_time_limit) {
     level.var_489d6aa2 = str_label;
     level.var_869f4c31 = n_time_limit;
     while (true) {
-        wait(1);
+        wait 1;
         level.var_869f4c31--;
     }
 }
@@ -295,7 +295,7 @@ function private function_ff66b979() {
             level.var_f995ece6 zm_trial_timer::close(player);
         }
     }
-    wait(5);
+    wait 5;
     level thread function_8b87e57c(level.var_489d6aa2, 0, level.var_869f4c31);
 }
 

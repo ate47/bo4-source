@@ -191,7 +191,7 @@ function function_dfd17bd3() {
 // Size: 0x1c4
 function announce_round_winner(delay) {
     if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     winner = round::get_winner();
     if (!isdefined(winner) || isplayer(winner)) {
@@ -218,7 +218,7 @@ function announce_round_winner(delay) {
 // Checksum 0xc2366958, Offset: 0x14c8
 // Size: 0xe4
 function announce_game_winner(outcome) {
-    wait(battlechatter::mpdialog_value("announceWinnerDelay", 0));
+    wait battlechatter::mpdialog_value("announceWinnerDelay", 0);
     if (level.teambased) {
         if (outcome::get_flag(outcome, "tie") || !match::function_c10174e7()) {
             leader_dialog("gameDraw");
@@ -427,7 +427,7 @@ function wait_for_player_dialog() {
     self endon(#"disconnect", #"flush_dialog");
     level endon(#"game_ended");
     while (self.playingdialog) {
-        wait(0.5);
+        wait 0.5;
     }
     self thread play_next_killstreak_dialog();
 }
@@ -494,7 +494,7 @@ function play_next_killstreak_dialog() {
 function wait_next_killstreak_dialog(waittime) {
     self endon(#"disconnect", #"flush_dialog");
     level endon(#"game_ended");
-    wait(waittime);
+    wait waittime;
     self thread play_next_killstreak_dialog();
 }
 
@@ -660,7 +660,7 @@ function play_next_leader_dialog() {
 function wait_next_leader_dialog(dialogbuffer) {
     self endon(#"disconnect", #"flush_dialog");
     level endon(#"game_ended");
-    wait(dialogbuffer);
+    wait dialogbuffer;
     self thread play_next_leader_dialog();
 }
 
@@ -1018,7 +1018,7 @@ function sndmusictimelimitwatcher() {
             level notify(#"sndmusichalfway");
             return;
         }
-        wait(2);
+        wait 2;
     }
 }
 

@@ -809,7 +809,7 @@ function function_69e60a10(var_e4204b3) {
                 break;
             }
             setdvar(#"scr_give_wz_item", 0);
-            wait(0.5);
+            wait 0.5;
         }
     }
 

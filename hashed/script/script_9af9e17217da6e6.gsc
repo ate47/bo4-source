@@ -391,7 +391,7 @@ function function_fde77b55(mdl_coil) {
         for (i = 1; i < getplayers().size + 1; i++) {
             a_str_flags[a_str_flags.size] = "symbol_hit_player_" + i;
         }
-        wait(getplayers().size * 0.35);
+        wait getplayers().size * 0.35;
         if (level flag::get_all(a_str_flags)) {
             level scene::play(#"p8_fxanim_zm_man_beam_device_bundle", "shot 2");
             var_2782a2fe = getent("beam_man", "targetname");
@@ -602,7 +602,7 @@ function ring_watcher(player) {
     }
     if (var_4a92152c <= 5 * 5 && var_b2a31570 <= 5 * 5 && var_a0357e49 <= 5 * 5) {
         level flag::set(#"rings_done");
-        wait(0.5);
+        wait 0.5;
         if (isalive(player)) {
             player zm_audio::create_and_play_dialog(#"light_beam", #"aligned");
         }
@@ -617,7 +617,7 @@ function function_71d1b235() {
     level flag::wait_till(#"rings_done");
     playrumbleonposition("zm_mansion_atlas_globe_set_rumble", level.mdl_ring_outer.origin);
     level.mdl_crystal_inner playsound(#"hash_2647ce5bb2e14502");
-    wait(2);
+    wait 2;
     s_atlas = struct::get("s_atl");
     s_atlas thread scene::play("melt");
     e_head = getent("head_collision", "targetname");
@@ -630,7 +630,7 @@ function function_71d1b235() {
     function_f856cc2();
     var_1ed057a1 = getent("beam_obs", "targetname");
     var_1ed057a1 clientfield::set("" + #"ley_lines", 2);
-    wait(4);
+    wait 4;
     e_head disconnectpaths();
     var_9283def2 = array("zone_main_hall", "zone_main_hall_north", "zone_start_east", "zone_start_west", "zone_grand_staircase");
     a_players = [];
@@ -647,7 +647,7 @@ function function_71d1b235() {
     if (a_players.size) {
         array::random(a_players) zm_audio::create_and_play_dialog(#"atlas_stat", #"collapse");
     }
-    wait(2);
+    wait 2;
     level scene::stop(#"p8_fxanim_zm_man_atlas_control_panel_bundle");
     level scene::play(#"p8_fxanim_zm_man_atlas_control_panel_bundle", "close");
 }
@@ -766,12 +766,12 @@ function function_250cf19b() {
                 array::wait_till(array(self.mdl_door_right, self.mdl_door_left), "movedone");
                 continue;
             }
-            wait(0.25);
+            wait 0.25;
         }
         self.mdl_door_right stoploopsound();
         self.mdl_wheel stoploopsound();
         if (getplayers().size == 1) {
-            wait(1);
+            wait 1;
         }
         if (!level flag::get(#"wheel_locked")) {
             level scene::stop(#"p8_fxanim_zm_man_dome_crank_bundle");
@@ -793,7 +793,7 @@ function function_250cf19b() {
                 array::wait_till(array(self.mdl_door_right, self.mdl_door_left), "movedone");
             }
             if (isdefined(var_c5af0345)) {
-                wait(0.25 * var_c5af0345);
+                wait 0.25 * var_c5af0345;
                 var_c5af0345 = undefined;
             }
             level scene::stop(#"p8_fxanim_zm_man_dome_crank_bundle");
@@ -1106,11 +1106,11 @@ function combo_watcher() {
     while (true) {
         level flag::wait_till(#"combo_dialed");
         for (i = 0; i < 3; i++) {
-            wait(0.75);
+            wait 0.75;
             mdl_base hidepart(level.var_21d0f5ee[level.var_5c086e54[0] - 1] + "_01");
             mdl_base hidepart(level.var_21d0f5ee[level.var_5c086e54[1] - 1] + "_02");
             mdl_base hidepart(level.var_21d0f5ee[level.var_5c086e54[2] - 1] + "_03");
-            wait(0.5);
+            wait 0.5;
             playsoundatposition(#"hash_7391894450e708c9", mdl_base gettagorigin(level.var_21d0f5ee[level.var_5c086e54[1] - 1] + "_02"));
             mdl_base showpart(level.var_21d0f5ee[level.var_5c086e54[0] - 1] + "_01");
             mdl_base showpart(level.var_21d0f5ee[level.var_5c086e54[1] - 1] + "_02");
@@ -1135,7 +1135,7 @@ function combo_watcher() {
         mdl_wheel playsound(#"hash_12c1d713dd5a5d68");
         level.var_ee0a344c = undefined;
         level.var_5c086e54 = undefined;
-        wait(5);
+        wait 5;
         function_9513d3a6();
         foreach (var_6142bc53 in level.var_21d0f5ee) {
             mdl_wheel showpart("tag_wheel_" + var_6142bc53);
@@ -1241,7 +1241,7 @@ function function_3d93d103() {
     self endon(#"disconnect");
     self.var_12c0dec1 = 1;
     self playsound(#"hash_613cef4818d77aca");
-    wait(1.6);
+    wait 1.6;
     if (isplayer(self)) {
         self.var_12c0dec1 = undefined;
     }
@@ -1315,7 +1315,7 @@ function tube_shoot() {
     level.mdl_telescope clientfield::set("" + #"power_beam", 2);
     level.mdl_telescope playsound(#"hash_7602966ff564e065");
     level.mdl_telescope playloopsound(#"hash_69b6d00136d35f2b");
-    wait(5.3);
+    wait 5.3;
     level thread zm_utility::function_9ad5aeb1(0, 1, 0, 1, 0);
     foreach (player in getplayers()) {
         player setlightingstate(1);
@@ -1339,7 +1339,7 @@ function tube_shoot() {
 // Size: 0x6c
 function function_f3668a9() {
     level flag::wait_till(#"hash_b240a9137ecc6f9");
-    wait(15);
+    wait 15;
     level flag::set(#"spawn_zombies");
     level flag::set(#"zombie_drop_powerups");
 }
@@ -1350,7 +1350,7 @@ function function_f3668a9() {
 // Size: 0x2dc
 function function_c888f1f4() {
     level endon(#"greenhouse_open");
-    wait(8);
+    wait 8;
     exploder::exploder("exp_lgt_telescope_base_door");
     trigger = trigger::wait_till("scope_door_open", "targetname", undefined, 0);
     mdl_stone = getent("stone_obs", "targetname");
@@ -1401,14 +1401,14 @@ function function_31e641f5() {
                 break;
             }
             self clientfield::set("" + #"stone_glow", 1);
-            wait(0.1);
+            wait 0.1;
             n_time += 0.1;
         }
         if (b_using == 1) {
             self playsound(#"hash_e1ac3a86a1144fc");
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     array::run_all(util::get_active_players(), &clientfield::increment_to_player, "" + #"mansion_mq_rumble", 1);
     level flag::set(#"disable_fast_travel");
@@ -1421,7 +1421,7 @@ function function_31e641f5() {
     self waittill(#"movedone");
     self clientfield::set("" + #"stone_pickup", 1);
     self thread function_a8ddd91f();
-    wait(1);
+    wait 1;
     self.var_4c4f2b6 = self.angles;
     self thread mansion_util::function_da5cd631();
     level flag::set(#"house_defend");
@@ -1437,12 +1437,12 @@ function function_a8ddd91f() {
     level flag::wait_till(#"hash_b240a9137ecc6f9");
     level thread zm_utility::function_9ad5aeb1(0, 1, 0, 1, 0);
     level.var_84b2907f = undefined;
-    wait(2);
+    wait 2;
     mdl_stone = getent("stone_obs", "targetname");
     mdl_stone notify(#"stop_spin");
     mdl_stone stoploopsound();
     mdl_stone playsound(#"hash_3019afe90c2eb3aa");
-    wait(0.5);
+    wait 0.5;
     mdl_stone rotateto(mdl_stone.var_4c4f2b6, 1);
     mdl_stone waittill(#"rotatedone");
     mdl_stone clientfield::set("" + #"stone_soul", 0);
@@ -1490,7 +1490,7 @@ function function_78a99a79() {
 function wave_1() {
     level endon(#"hash_b240a9137ecc6f9");
     level flag::wait_till(#"house_defend");
-    wait(2);
+    wait 2;
     n_players = getplayers().size;
     switch (n_players) {
     case 1:
@@ -1534,7 +1534,7 @@ function wave_1() {
             }
         }
         level flag::clear(#"hash_29b12646045186fa");
-        wait(randomfloatrange(0.2, 0.5));
+        wait randomfloatrange(0.2, 0.5);
     }
     level flag::clear(#"hash_29b12646045186fa");
     function_aa1d0bc6();
@@ -1585,7 +1585,7 @@ function function_655a2fcc() {
         if (level.var_e12e0420 < 5) {
             return;
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -1595,7 +1595,7 @@ function function_655a2fcc() {
 // Size: 0x2c4
 function wave_2() {
     level endon(#"hash_b240a9137ecc6f9");
-    wait(2);
+    wait 2;
     switch (getplayers().size) {
     case 1:
         n_wolves = 20;
@@ -1627,9 +1627,9 @@ function wave_2() {
             var_69024a6a thread zm_mansion_special_rounds::function_c79d744e(s_spawn_loc);
             var_69024a6a callback::function_d8abfc3d(#"on_ai_killed", &function_831a12ae);
         }
-        wait(0.25);
+        wait 0.25;
         while (level.var_20f423f6 > getplayers().size * 4) {
-            wait(0.25);
+            wait 0.25;
         }
     }
     level flag::clear(#"hash_29b12646045186fa");
@@ -1666,7 +1666,7 @@ function function_a918c691() {
         if (level.var_20f423f6 < 3) {
             return;
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -1676,7 +1676,7 @@ function function_a918c691() {
 // Size: 0x3fc
 function wave_3() {
     level endon(#"hash_b240a9137ecc6f9");
-    wait(3.5);
+    wait 3.5;
     n_players = getplayers().size;
     switch (n_players) {
     case 1:
@@ -1730,7 +1730,7 @@ function wave_3() {
             }
             level flag::clear(#"hash_29b12646045186fa");
         }
-        wait(6 - n_players / 2);
+        wait 6 - n_players / 2;
     }
     function_acf54a6a();
 }
@@ -1792,7 +1792,7 @@ function function_acf54a6a() {
             level flag::set(#"hash_b240a9137ecc6f9");
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 

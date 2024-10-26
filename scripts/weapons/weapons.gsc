@@ -546,7 +546,7 @@ function function_d2c66128(origin, angles) {
 // Size: 0x5c
 function delete_pickup_after_awhile() {
     self endon(#"death");
-    wait(60);
+    wait 60;
     if (!isdefined(self)) {
         return;
     }
@@ -1186,7 +1186,7 @@ function function_2698203b(params) {
 // Size: 0x44
 function wait_and_delete_dud(waittime) {
     self endon(#"death");
-    wait(waittime);
+    wait waittime;
     if (isdefined(self)) {
         self delete();
     }
@@ -1435,11 +1435,11 @@ function play_concussion_sound(duration) {
     concussionsound playsound(#"");
     concussionsound playloopsound(#"");
     if (duration > 0.5) {
-        wait(duration - 0.5);
+        wait duration - 0.5;
     }
     concussionsound playsound(#"");
     concussionsound stoploopsound(0.5);
-    wait(0.5);
+    wait 0.5;
     concussionsound notify(#"delete");
     concussionsound delete();
 }
@@ -1747,7 +1747,7 @@ function limited_pickup(limited_info) {
 // Size: 0x7c
 function track_cooked_detonation(attacker, weapon, cooktime) {
     self endon(#"trophy_destroyed");
-    wait(float(weapon.fusetime) / 1000);
+    wait float(weapon.fusetime) / 1000;
     if (!isdefined(self)) {
         return;
     }
@@ -1768,7 +1768,7 @@ function ninebang_doninebang(attacker, weapon, cooktime) {
     if (!cookstages) {
         cookstages = 3;
     }
-    wait(float(weapon.fusetime) / 1000);
+    wait float(weapon.fusetime) / 1000;
     for (i = 0; i < cookstages; i++) {
         if (!isdefined(self)) {
             return;
@@ -1778,10 +1778,10 @@ function ninebang_doninebang(attacker, weapon, cooktime) {
         }
         attacker magicgrenadeplayer(weapon.grenadeweapon, self.origin, (0, 0, 0));
         if ((i + 1) % 3 == 0) {
-            wait(var_9729fdb9);
+            wait var_9729fdb9;
             continue;
         }
-        wait(intervaltime);
+        wait intervaltime;
     }
     if (isdefined(self)) {
         self delete();

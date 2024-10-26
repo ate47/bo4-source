@@ -99,14 +99,14 @@ function play_boost_vox(localclientnum, oldval, newval, bnewent, binitialsnap, f
 // Size: 0x124
 function play_boost_start_vox(localclientnum) {
     self endon(#"death");
-    wait(2);
+    wait 2;
     playbackid = self play_dialog("boostStart" + level.boostnumber, localclientnum);
     if (isdefined(playbackid) && playbackid >= 0) {
         while (soundplaying(playbackid)) {
-            wait(0.05);
+            wait 0.05;
         }
     }
-    wait(0.5);
+    wait 0.5;
     level.booststartresponse = "boostStartResp" + level.mpboostresponse[self getmpdialogname()] + level.boostnumber;
     if (isdefined(level.boostresponseentnum)) {
         responder = getentbynum(localclientnum, level.boostresponseentnum);
@@ -260,7 +260,7 @@ function play_dialog(dialogkey, localclientnum) {
 // Size: 0x4a
 function update_voice_origin(voicebox) {
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!isdefined(self) || !isdefined(voicebox)) {
             return;
         }
@@ -273,7 +273,7 @@ function update_voice_origin(voicebox) {
 // Checksum 0x7ab4a552, Offset: 0x1058
 // Size: 0x24
 function delete_after(waittime) {
-    wait(waittime);
+    wait waittime;
     self delete();
 }
 

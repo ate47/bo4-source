@@ -275,7 +275,7 @@ function init() {
     // Size: 0x52
     function function_340107d4() {
         while (true) {
-            wait(2);
+            wait 2;
             level.var_724cf71 = getdvarint(#"scr_ekia", level.var_724cf71);
         }
     }
@@ -1043,7 +1043,7 @@ function showobjectivenotificationuiforallplayers(missiontype, delay) {
             delay += menudelay;
         }
     }
-    wait(delay);
+    wait delay;
     foreach (player in level.players) {
         team = player.pers[#"team"];
         if (team === #"spectator") {
@@ -1099,7 +1099,7 @@ function matchstarttimer() {
                     var_b9ef7eae[var_b9ef7eae.size] = player;
                 }
             }
-            wait(1);
+            wait 1;
         }
     } else {
         mpintro_visionset_deactivate_func();
@@ -1420,7 +1420,7 @@ function gamehistoryplayerkicked() {
         self.pers[#"matchesplayedstatstracked"] = undefined;
     }
     uploadstats(self);
-    wait(1);
+    wait 1;
 }
 
 // Namespace globallogic/globallogic
@@ -1445,7 +1445,7 @@ function gamehistoryplayerquit() {
     }
     uploadstats(self);
     if (!self ishost()) {
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1566,7 +1566,7 @@ function getroundlength() {
 // Checksum 0xdae2c015, Offset: 0x6f88
 // Size: 0x44
 function waitanduploadstats(player, waittime) {
-    wait(waittime);
+    wait waittime;
     if (isplayer(player)) {
         uploadstats(player);
     }
@@ -1963,7 +1963,7 @@ function private function_3526a519() {
         if (var_e61d6eb0.size >= 100) {
             function_92d1707f(#"hash_55f923de6ff3632b", #"entries", var_e61d6eb0);
             var_e61d6eb0 = [];
-            wait(0.1);
+            wait 0.1;
         }
     }
     if (var_e61d6eb0.size > 0) {
@@ -1989,7 +1989,7 @@ function private function_e4335431() {
         if (var_726f6c6.size >= 100) {
             function_92d1707f(#"hash_7cd6488eb92cb736", #"entries", var_726f6c6);
             var_726f6c6 = [];
-            wait(0.1);
+            wait 0.1;
         }
     }
     if (var_726f6c6.size > 0) {
@@ -2007,7 +2007,7 @@ function private function_159d7b6f() {
     var_69cbb8c = [];
     for (i = 0; i < itemcount; i++) {
         if (i % 100 == 0) {
-            wait(0.1);
+            wait 0.1;
         }
         item = function_b1702735(i);
         if (!isdefined(summary[item.targetname])) {
@@ -2041,7 +2041,7 @@ function private function_159d7b6f() {
             var_69cbb8c[item.targetname].count = var_69cbb8c[item.targetname].count + 1;
         }
     }
-    wait(0.1);
+    wait 0.1;
     item_data = [];
     foreach (location_name, location in summary) {
         if (isdefined(location.itemtypes)) {
@@ -2059,7 +2059,7 @@ function private function_159d7b6f() {
                             var_cae7fe15 = {#seed:level.item_spawn_seed, #event_count:item_data.size};
                             function_92d1707f(#"hash_67dcbe8b30edd15a", #"summary", var_cae7fe15, #"entries", item_data);
                             item_data = [];
-                            wait(0.1);
+                            wait 0.1;
                         }
                     }
                 }
@@ -2078,11 +2078,11 @@ function private function_159d7b6f() {
 // Size: 0x4c
 function private function_2506a4ec() {
     function_3526a519();
-    wait(0.1);
+    wait 0.1;
     function_e4335431();
-    wait(0.1);
+    wait 0.1;
     function_159d7b6f();
-    wait(0.1);
+    wait 0.1;
 }
 
 // Namespace globallogic/globallogic
@@ -2295,7 +2295,7 @@ function private function_5c159ad3() {
     util::preload_frontend();
     gamerep::gamerepanalyzeandreport();
     thread function_4e7d44bd();
-    wait(1);
+    wait 1;
     if (!sessionmodeiswarzonegame()) {
         thread sendafteractionreport();
     }
@@ -2582,11 +2582,11 @@ function updategametypedvars() {
         thread checkroundscorelimit();
         if (isdefined(level.starttime)) {
             if (globallogic_utils::gettimeremaining() < 30000) {
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -2882,7 +2882,7 @@ function updateteamstatus() {
     level notify(#"updating_team_status");
     level endon(#"updating_team_status", #"game_ended");
     waittillframeend();
-    wait(0);
+    wait 0;
     if (gamestate::is_game_over()) {
         return;
     }
@@ -3125,17 +3125,17 @@ function timelimitclock() {
             }
             if (!using_tickets_as_time) {
                 if (timeleftint <= 5) {
-                    wait(0.5);
+                    wait 0.5;
                     continue;
                 } else if (timeleft - floor(timeleft) >= 0.05) {
-                    wait(timeleft - floor(timeleft));
+                    wait timeleft - floor(timeleft);
                 }
             }
         }
         if (using_tickets_as_time && !level.timerstopped) {
             timeleftint = [[ level.get_tickets_as_time ]]();
             if (timeleftint <= 0) {
-                wait(1);
+                wait 1;
             } else {
                 oldtimeleftint = timeleftint;
                 while (!level.timerstopped && oldtimeleftint == timeleftint && timeleftint > 0) {
@@ -3145,7 +3145,7 @@ function timelimitclock() {
             }
             continue;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -3157,11 +3157,11 @@ function timelimitclock_intermission(waittime) {
     setgameendtime(gettime() + int(waittime * 1000));
     clockobject = spawn("script_origin", (0, 0, 0));
     if (waittime >= 10) {
-        wait(waittime - 10);
+        wait waittime - 10;
     }
     for (;;) {
         clockobject playsound(#"mpl_ui_timer_countdown");
-        wait(1);
+        wait 1;
     }
 }
 
@@ -3211,7 +3211,7 @@ function private function_b4262bec() {
     level endon(#"game_ended");
     level.friendlyfire = level.var_78d89cdd;
     level.var_40eaa459 = 1;
-    wait(level.var_6aec2d48);
+    wait level.var_6aec2d48;
     level.friendlyfire = level.var_a65e8e93;
     level.var_40eaa459 = 0;
 }
@@ -3347,7 +3347,7 @@ function waitforplayers() {
         if (level.rankedmatch && gettime() - starttime > int(120 * 1000)) {
             exit_level();
             while (true) {
-                wait(10);
+                wait 10;
             }
         }
     }
@@ -3391,7 +3391,7 @@ function prematchperiod() {
     if (level.prematchperiod > 0) {
         thread prematchwaitingforplayers();
         waitforplayers();
-        wait(level.prematchperiod);
+        wait level.prematchperiod;
     } else {
         matchstarttimerskip();
         waitframe(1);
@@ -3416,7 +3416,7 @@ function graceperiod() {
     if (isdefined(level.graceperiodfunc)) {
         [[ level.graceperiodfunc ]]();
     } else {
-        wait(level.graceperiod);
+        wait level.graceperiod;
     }
     level notify(#"grace_period_ending");
     waitframe(1);
@@ -3782,7 +3782,7 @@ function callback_startgametype() {
         if (getdvarint(#"scr_writeconfigstrings", 0) == 1) {
             level.skipgameend = 1;
             level.roundlimit = 1;
-            wait(1);
+            wait 1;
             thread forceend(0);
         }
         if (getdvarint(#"scr_hostmigrationtest", 0) == 1) {
@@ -3816,7 +3816,7 @@ function function_54b079aa() {
     function forcedebughostmigration() {
         while (true) {
             hostmigration::waittillhostmigrationdone();
-            wait(60);
+            wait 60;
             starthostmigration();
             hostmigration::waittillhostmigrationdone();
         }
@@ -3896,11 +3896,11 @@ function updaterankedmatch(outcome) {
 // Size: 0x154
 function annihilatorgunplayerkilleffect(attacker, weapon, smeansofdeath) {
     if (smeansofdeath == "MOD_IMPACT") {
-        wait(weapon.fusetime / 1000);
+        wait weapon.fusetime / 1000;
     } else if (weapon.fusetime != 0) {
-        wait(0.1);
+        wait 0.1;
     } else {
-        wait(0.45);
+        wait 0.45;
     }
     if (!isdefined(self)) {
         return;
@@ -3911,7 +3911,7 @@ function annihilatorgunplayerkilleffect(attacker, weapon, smeansofdeath) {
     }
     codesetclientfield(self, "annihilate_effect", 1);
     earthquake(0.3, 0.75, self.origin, 500);
-    wait(0.1);
+    wait 0.1;
     if (!isdefined(self)) {
         return;
     }
@@ -3927,9 +3927,9 @@ function annihilatorgunactorkilleffect(attacker, weapon) {
     waitresult = self waittill(#"actor_corpse");
     body = waitresult.corpse;
     if (weapon.fusetime != 0) {
-        wait(weapon.fusetime * 0.001);
+        wait weapon.fusetime * 0.001;
     } else {
-        wait(0.45);
+        wait 0.45;
     }
     if (!isdefined(self)) {
         return;
@@ -3952,14 +3952,14 @@ function annihilatorgunactorkilleffect(attacker, weapon) {
 // Checksum 0xa4f643d3, Offset: 0x10198
 // Size: 0xcc
 function pineapplegunplayerkilleffect(attacker) {
-    wait(0.1);
+    wait 0.1;
     if (!isdefined(self)) {
         return;
     }
     playsoundatposition(#"evt_annihilation_npc", self.origin);
     codesetclientfield(self, "pineapplegun_effect", 1);
     self shake_and_rumble(0, 0.3, 0.35, 1);
-    wait(0.1);
+    wait 0.1;
     if (!isdefined(self)) {
         return;
     }
@@ -3993,7 +3993,7 @@ function bowplayerkilleffect() {
 function pineapplegunactorkilleffect() {
     waitresult = self waittill(#"actor_corpse");
     body = waitresult.corpse;
-    wait(0.75);
+    wait 0.75;
     if (!isdefined(self)) {
         return;
     }
@@ -4013,7 +4013,7 @@ function pineapplegunactorkilleffect() {
 // Size: 0xee
 function shake_and_rumble(n_delay, shake_size, shake_time, rumble_num) {
     if (isdefined(n_delay) && n_delay > 0) {
-        wait(n_delay);
+        wait n_delay;
     }
     nmagnitude = shake_size;
     nduration = shake_time;
@@ -4022,7 +4022,7 @@ function shake_and_rumble(n_delay, shake_size, shake_time, rumble_num) {
     earthquake(nmagnitude, nduration, v_pos, nradius);
     for (i = 0; i < rumble_num; i++) {
         self playrumbleonentity("damage_heavy");
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -4101,7 +4101,7 @@ function doweaponspecificcorpseeffects(body, einflictor, attacker, idamage, smea
 function burncorpse() {
     self endon(#"death");
     codesetclientfield(self, "burned_effect", 1);
-    wait(6);
+    wait 6;
     codesetclientfield(self, "burned_effect", 0);
 }
 

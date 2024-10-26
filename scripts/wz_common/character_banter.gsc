@@ -150,7 +150,7 @@ function function_4d9b2d83(players, lookup) {
 // Size: 0x42
 function stop() {
     if (level.prematchperiod > 10) {
-        wait(level.prematchperiod - 10);
+        wait level.prematchperiod - 10;
     }
     level notify(#"stop_banter");
     level.var_8dcd4dc8 = undefined;

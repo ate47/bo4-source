@@ -90,7 +90,7 @@ function function_2ee2d021() {
 // Checksum 0x7c803975, Offset: 0x900
 // Size: 0x2c
 function function_f79b96ac() {
-    wait(1);
+    wait 1;
     clientfield::set_world_uimodel("ZMHudGlobal.trials.showScoreboard", 1);
 }
 
@@ -636,7 +636,7 @@ function function_d0348c2c(var_69cbd99d = 0) {
     }
     var_b9721d87 = self offhandweaponsenabled();
     self disableoffhandweapons();
-    wait(0.25);
+    wait 0.25;
     if (var_b9721d87) {
         self enableoffhandweapons();
     }

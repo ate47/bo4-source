@@ -745,7 +745,7 @@ function private forward_euler_integration(e_move, v_target_landing, n_initial_s
         hostmigration::waittillhostmigrationdone();
         e_move moveto(position, 0.1);
         if (!landed) {
-            wait(0.1);
+            wait 0.1;
         }
     }
 }

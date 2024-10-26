@@ -234,7 +234,7 @@ function private on_player_killed(params) {
             adddebugcommand("<dev string:x586>");
         }
         while (true) {
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarstring(#"hash_70cb00491d863294", "<dev string:x44>");
             if (cmd == "<dev string:x44>") {
                 continue;
@@ -496,14 +496,14 @@ function function_a82cad64(ai_zone) {
             return;
         }
         if (isdefined(ai_zone.var_18bccc89)) {
-            wait(1);
+            wait 1;
             if (isdefined(ai_zone.var_18bccc89)) {
                 ai_zone.var_18bccc89 clientfield::set("magicboxflag", 1);
             }
         }
         if (isdefined(ai_zone.var_18c11294)) {
             ai_zone.var_18c11294 delete();
-            wait(1);
+            wait 1;
         }
         if (isdefined(ai_zone.var_374e59f9)) {
             ai_zone.var_374e59f9 delete();
@@ -511,11 +511,11 @@ function function_a82cad64(ai_zone) {
         if (isdefined(ai_zone.var_484efd06)) {
             ai_zone.var_484efd06 delete();
         }
-        wait(1);
+        wait 1;
         if (isdefined(ai_zone.var_18bccc89)) {
             ai_zone.var_18bccc89 thread move_box(3.2, 200);
         }
-        wait(5);
+        wait 5;
         ai_zone.var_7f923f43 = 0;
     }
 }
@@ -570,7 +570,7 @@ function move_box(n_duration, n_dist) {
         n_duration = 0.25;
     }
     self moveto(end_point, n_duration, 0.1, 0.1);
-    wait(n_duration);
+    wait n_duration;
     if (isdefined(self)) {
         self clientfield::set("magicboxflag", 3);
     }
@@ -597,7 +597,7 @@ function function_9e142fa2(n_duration, n_dist) {
         n_duration = 0.25;
     }
     self moveto(end_point, n_duration, 0.1, 0.1);
-    wait(n_duration);
+    wait n_duration;
     if (isdefined(self)) {
         self delete();
     }
@@ -616,7 +616,7 @@ function function_bbad9099(ai_zone, var_c0d8ceca) {
         ai_zone.var_18bccc89 hide();
         ai_zone.var_18bccc89 playsound(#"hash_1530a7e6184b9b2e");
     }
-    wait(7.5);
+    wait 7.5;
     if (isdefined(stash)) {
         item_world::function_160294c7(stash);
         ai_zone.var_7f923f43 = 0;
@@ -625,7 +625,7 @@ function function_bbad9099(ai_zone, var_c0d8ceca) {
         ai_zone.var_18bccc89 show();
         ai_zone.var_18bccc89 thread move_box(3.2, 200);
     }
-    wait(5);
+    wait 5;
     ai_zone.var_7f923f43 = 0;
 }
 
@@ -643,14 +643,14 @@ function function_4e0be090(ai_zone) {
         ai_zone.var_46a58d6e = 1;
         ai_zone.var_d2954f43 = level.var_d2954f43;
         if (isdefined(ai_zone.var_18bccc89)) {
-            wait(1);
+            wait 1;
             if (isdefined(ai_zone.var_18bccc89)) {
                 ai_zone.var_18bccc89 clientfield::set("magicboxflag", 1);
             }
         }
         if (isdefined(ai_zone.var_18c11294)) {
             ai_zone.var_18c11294 delete();
-            wait(1);
+            wait 1;
         }
         if (isdefined(ai_zone.var_374e59f9)) {
             ai_zone.var_374e59f9 thread function_9e142fa2(3.2, 200);
@@ -775,7 +775,7 @@ function function_1944a471() {
 function function_b5a875df() {
     level endon(#"game_ended", #"hash_12a8f2c59a67e4fc", #"hash_329c3f546e49cb9f");
     while (!isdefined(level.deathcircle)) {
-        wait(1);
+        wait 1;
     }
     while (isdefined(level.deathcircle)) {
         radiussq = level.deathcircle.radius * level.deathcircle.radius;
@@ -818,7 +818,7 @@ function function_b5a875df() {
                 }
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -849,7 +849,7 @@ function function_2345f7a7() {
                 }
             }
         }
-        wait(randomfloatrange(1, 2));
+        wait randomfloatrange(1, 2);
     }
 }
 
@@ -1332,7 +1332,7 @@ function function_7b0c014e() {
                 }
             }
         }
-        wait(randomfloatrange(2, 3));
+        wait randomfloatrange(2, 3);
     }
 }
 
@@ -1759,7 +1759,7 @@ function function_1c8ea11(category) {
         }
         zone.lock_zone = 1;
         last_zone = zone;
-        wait(2);
+        wait 2;
         function_41101f23(zone, 0);
         waitframe(1);
     }
@@ -1850,7 +1850,7 @@ function function_f3e8cf82() {
                     iprintlnbold("<dev string:x775>");
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 

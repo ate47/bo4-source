@@ -281,7 +281,7 @@ function spawn_item(w_item, v_origin, v_angles, var_f93e465d = 1) {
                     sphere(item.origin, 6, (0, 0, 1), 1, 0, 12, 20);
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 

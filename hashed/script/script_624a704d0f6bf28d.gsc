@@ -49,7 +49,7 @@ function private soul_capture(localclientnum, oldval, newval, bnewent, binitials
     if (isdefined(def.var_6a1c7649)) {
         level [[ def.var_6a1c7649 ]](localclientnum, def, capture_point);
     }
-    wait(0.3);
+    wait 0.3;
     e_fx delete();
 }
 

@@ -43,11 +43,11 @@ function function_e5f05a92() {
     mdl_gate = getent("arena_gate_east", "targetname");
     mdl_clip linkto(mdl_gate);
     level flag::wait_till("begin_spawning");
-    wait(2.5);
+    wait 2.5;
     mdl_gate movez(100, 3);
     mdl_gate playsound(#"hash_2dfa3192317aab20");
     mdl_gate clientfield::set("entry_gate_dust", 1);
-    wait(3);
+    wait 3;
     var_ac1242dd = 0;
     vol_spawn_area = getent("vol_spawn_area", "targetname");
     while (!var_ac1242dd) {
@@ -91,12 +91,12 @@ function function_e5f05a92() {
     level notify(#"hash_576f1c2e68b31710");
     mdl_gate movez(100 * -1, 0.5);
     mdl_gate playsound(#"hash_7f2e66132114e68c");
-    wait(0.5);
+    wait 0.5;
     zm_zonemgr::function_d68ef0f9("zone_starting_area_tunnel");
     exploder::exploder("exp_gate_slam");
     exploder::exploder("exp_lgt_player_start");
     level util::clientnotify("crowd_ducker_lvlstart");
-    wait(10);
+    wait 10;
     if (level clientfield::get("crowd_react") == 3) {
         level clientfield::set("crowd_react", 0);
     }
@@ -128,13 +128,13 @@ function function_c49fe830() {
     while (true) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (!isinarray(var_7529ade9, str_zone)) {
-            wait(30);
+            wait 30;
             str_zone = self zm_zonemgr::get_player_zone();
             if (!isinarray(var_7529ade9, str_zone) && !level.var_c9942395) {
                 break;
             }
         }
-        wait(1);
+        wait 1;
     }
     var_d4061661 = array("zone_starting_area_center", "zone_starting_area_danu", "zone_starting_area_ra", "zone_starting_area_odin", "zone_starting_area_zeus");
     while (true) {
@@ -144,7 +144,7 @@ function function_c49fe830() {
             self thread zm_audio::create_and_play_dialog(#"location_enter", #"arena");
             break;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -156,7 +156,7 @@ function function_a1379826() {
     self notify("774a09e7ee8e5620");
     self endon("774a09e7ee8e5620");
     level.var_c9942395 = 1;
-    wait(45);
+    wait 45;
     level.var_c9942395 = 0;
 }
 

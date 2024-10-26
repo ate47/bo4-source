@@ -37,7 +37,7 @@ function function_52b6cd8b(localclientnum, oldvalue, newvalue, bnewent, binitial
 function monitor_footsteps(localclientnum) {
     while (clientfield::get("decoy_grenade_footsteps") === 1) {
         self playsound(localclientnum, #"hash_4990634cec4a1aff");
-        wait(0.23);
+        wait 0.23;
     }
 }
 

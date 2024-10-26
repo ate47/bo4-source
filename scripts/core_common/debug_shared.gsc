@@ -58,7 +58,7 @@
             } else {
                 level notify(#"debug_key_value");
             }
-            wait(randomfloatrange(0.133333, 0.266667));
+            wait randomfloatrange(0.133333, 0.266667);
         }
     }
 
@@ -86,7 +86,7 @@
                 }
                 waitframe(1);
             }
-            wait(1);
+            wait 1;
         }
     }
 

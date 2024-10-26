@@ -73,7 +73,7 @@ function function_18d7622a(info) {
         level util::delay(2.5, undefined, &exploder::exploder, "fxexp_teleporter_b_light_cooldwn");
         player setorigin(groundtrace(destination.origin, destination.origin + (0, 0, -16), 0, player)[#"position"]);
         player setplayerangles(destination.angles);
-        wait(10);
+        wait 10;
         if (isdefined(self)) {
             foreach (trig in self.triggers) {
                 trig.var_2c3d4111 = 0;

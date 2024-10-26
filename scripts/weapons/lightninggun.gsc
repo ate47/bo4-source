@@ -39,7 +39,7 @@ function init_shared() {
     // Size: 0xaa
     function update_dvars() {
         while (true) {
-            wait(1);
+            wait 1;
             level.weaponlightninggunkillcamtime = getdvarfloat(#"scr_lightninggunkillcamtime", 0.35);
             level.weaponlightninggunkillcamdecelpercent = getdvarfloat(#"scr_lightninggunkillcamdecelpercent", 0.25);
             level.weaponlightninggunkillcamoffset = getdvarfloat(#"scr_lightninggunkillcamoffset", 150);
@@ -63,7 +63,7 @@ function lightninggun_start_damage_effects(eattacker) {
         self setelectrifiedstate(1);
         self.electrifiedby = eattacker;
         self playrumbleonentity("lightninggun_victim");
-        wait(2);
+        wait 2;
         self.electrifiedby = undefined;
         self setelectrifiedstate(0);
     }
@@ -97,7 +97,7 @@ function lightninggun_arc_fx(arc_source_pos, arc_target, arc_target_pos, distanc
         return;
     }
     if (distancesq < level.lightninggun_arc_fx_min_range_sq) {
-        wait(waittime);
+        wait waittime;
         killcamentity delete();
         if (isdefined(arc_target)) {
             arc_target.killcamkilledbyent = undefined;
@@ -126,7 +126,7 @@ function lightninggun_arc_fx(arc_source_pos, arc_target, arc_target_pos, distanc
 // Size: 0x15c
 function lightninggun_arc(delay, eattacker, arc_source, arc_source_origin, arc_source_pos, arc_target, arc_target_pos, distancesq) {
     if (delay) {
-        wait(delay);
+        wait delay;
         if (!isdefined(arc_target) || !isalive(arc_target)) {
             return;
         }
@@ -250,14 +250,14 @@ function lightninggun_damage_response(eattacker, einflictor, weapon, meansofdeat
     if (self.archetype === "mp_dog") {
         self dodamage(self.health, source_pos, eattacker, einflictor, "none", "MOD_PISTOL_BULLET", 0, level.weaponlightninggunarc);
     }
-    wait(2);
+    wait 2;
     if (isdefined(self) && isdefined(self.body)) {
         arc_source_origin = self.body.origin;
         arc_source_pos = self.body gettagorigin("j_spineupper");
     }
     self thread lightninggun_find_arc_targets(eattacker, arc_source, arc_source_origin, arc_source_pos);
     if (isdefined(killcamentity)) {
-        wait(0.45);
+        wait 0.45;
         killcamentity delete();
         if (isdefined(arc_source)) {
             arc_source.killcamkilledbyent = undefined;

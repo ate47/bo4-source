@@ -190,14 +190,14 @@ function function_7e3a43c3() {
 // Checksum 0x7e591e10, Offset: 0xf78
 // Size: 0x8c
 function delay_for_clients_then_execute(func) {
-    wait(0.1);
+    wait 0.1;
     players = getlocalplayers();
     for (x = 0; x < players.size; x++) {
         while (!clienthassnapshot(x)) {
             waitframe(1);
         }
     }
-    wait(0.1);
+    wait 0.1;
     level thread [[ func ]]();
 }
 
@@ -230,9 +230,9 @@ function basic_player_connect(localclientnum) {
 function force_update_player_clientfields(localclientnum) {
     self endon(#"death");
     while (!clienthassnapshot(localclientnum)) {
-        wait(0.25);
+        wait 0.25;
     }
-    wait(0.25);
+    wait 0.25;
     self processclientfieldsasifnew();
 }
 
@@ -637,7 +637,7 @@ function do_headshot_gib_fx() {
         playfx(i, level._effect[#"headshot_nochunks"], fxorigin, forwardvec, upvec);
     }
     playsound(0, #"zmb_zombie_head_gib", fxorigin);
-    wait(0.3);
+    wait 0.3;
     if (isdefined(self)) {
         players = level.localplayers;
         for (i = 0; i < players.size; i++) {
@@ -665,7 +665,7 @@ function do_gib_fx(tag) {
 function do_gib(model, tag) {
     start_pos = self gettagorigin(tag);
     start_angles = self gettagangles(tag);
-    wait(0.016);
+    wait 0.016;
     end_pos = undefined;
     angles = undefined;
     if (!isdefined(self)) {
@@ -721,7 +721,7 @@ function check_should_gib() {
 function resetgibcounter() {
     self endon(#"disconnect");
     while (true) {
-        wait(level.gibresettime);
+        wait level.gibresettime;
         level.gibtimer = 0;
         level.gibcount = 0;
     }
@@ -1057,11 +1057,11 @@ function rise_dust_fx(clientnum, type, billow_fx, burst_fx) {
     if (isdefined(burst_fx)) {
         playfx(clientnum, burst_fx, self.origin + (0, 0, randomintrange(5, 10)));
     }
-    wait(0.25);
+    wait 0.25;
     if (isdefined(billow_fx)) {
         playfx(clientnum, billow_fx, self.origin + (randomintrange(-10, 10), randomintrange(-10, 10), randomintrange(5, 10)));
     }
-    wait(2);
+    wait 2;
     dust_time = 5.5;
     dust_interval = 0.3;
     player = level.localplayers[clientnum];
@@ -1080,7 +1080,7 @@ function rise_dust_fx(clientnum, type, billow_fx, burst_fx) {
             return;
         }
         util::playfxontag(clientnum, effect, self, dust_tag);
-        wait(dust_interval);
+        wait dust_interval;
     }
 }
 
@@ -1099,7 +1099,7 @@ function on_player_laststand(localclientnum) {
 function end_last_stand(clientnum) {
     self waittill(#"laststandend");
     println("<dev string:xe1>" + clientnum);
-    wait(0.7);
+    wait 0.7;
     println("<dev string:x101>");
     playsound(clientnum, #"revive_gasp");
 }
@@ -1116,7 +1116,7 @@ function last_stand_thread(clientnum) {
     for (vol = 0.5; true; vol = 1) {
         id = playsound(clientnum, #"chr_heart_beat");
         setsoundvolume(id, vol);
-        wait(pause);
+        wait pause;
         if (pause < 2) {
             pause *= 1.05;
             if (pause > 2) {

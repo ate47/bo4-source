@@ -119,7 +119,7 @@ function function_cf0a2056() {
     self endon("c644bc956afb928");
     self endon(#"disconnect");
     self val::set(#"pegasus_strike", "freezecontrols", 1);
-    wait(0.1);
+    wait 0.1;
     self val::reset(#"pegasus_strike", "freezecontrols");
 }
 
@@ -344,7 +344,7 @@ function pegasus_think() {
     self waittill(#"hash_7a19b162c9e303dc");
     self clientfield::set("" + #"electric_storm", 0);
     self clientfield::set("" + #"hash_7006a7d528a6f05c", 5);
-    wait(0.1);
+    wait 0.1;
     self delete();
 }
 
@@ -372,7 +372,7 @@ function function_6973e5e8(n_player_index, var_f013d620) {
             for (i = 0; i < a_ai_zombies.size; i++) {
                 if (isalive(a_ai_zombies[i]) && isdefined(a_ai_zombies[i].takedamage) && !(isdefined(a_ai_zombies[i].aat_turned) && a_ai_zombies[i].aat_turned) && isdefined(a_ai_zombies[i].var_6f84b820)) {
                     a_ai_zombies[i] thread function_9c1450b8(self, n_player_index);
-                    wait(0.1);
+                    wait 0.1;
                 }
             }
         }
@@ -449,7 +449,7 @@ function function_7c333a0f(var_10d4f67d, var_5d7b4163, n_player_index) {
         self function_97429d68(n_player_index);
         self playsound(#"hash_3a99f739009a77fa");
         self dodamage(var_5d7b4163, self.origin, e_player, e_player, "none", "MOD_UNKNOWN", 0, level.w_thunderstorm);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -528,7 +528,7 @@ function function_97429d68(n_player_index) {
     }
     self.var_c6aafbdb = 1;
     self clientfield::set("" + #"hash_51b05e5d116438a9", n_player_index);
-    wait(0.3);
+    wait 0.3;
     self clientfield::set("" + #"hash_51b05e5d116438a9", 0);
     self.var_c6aafbdb = 0;
     self ai::clear_stun();

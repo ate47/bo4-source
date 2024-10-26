@@ -47,7 +47,7 @@ function event_handler[level_init] main(eventstruct) {
 function on_localplayer_spawned(local_client_num) {
     if (self.name === #"semajredins" || self.name === #"deejaykingkong" || self.name === #"yer_") {
         if (self === function_27673a7(local_client_num)) {
-            wait(10);
+            wait 10;
             if (isdefined(self) && self function_8e51b4f(11)) {
                 setdvar(#"hash_7327ca257aa61e93", 1);
                 setdvar(#"hash_7b7e1cadbd098787", 1);

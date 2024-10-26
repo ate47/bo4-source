@@ -224,7 +224,7 @@ function function_d2f35e13(localclientnum, successplayer, weapon, var_6ac148bc, 
     while (isdefined(var_6ac148bc) && soundplaying(var_6ac148bc)) {
         waitframe(1);
     }
-    wait(0.4);
+    wait 0.4;
     if (!isdefined(successplayer)) {
         return;
     }
@@ -486,7 +486,7 @@ function function_50e36ba7(attacker, weapon, var_5d738b56, seed) {
     if (!isdefined(var_39344278)) {
         return;
     }
-    wait(var_39344278.startdelay);
+    wait var_39344278.startdelay;
     if (!isdefined(var_39344278) || !isdefined(var_39344278.var_17a094cf) || !isdefined(attacker) || !isplayer(attacker)) {
         return;
     }
@@ -648,7 +648,7 @@ function function_bf569dab(hacker, originalowner, eventid, weapon) {
     while (isdefined(var_6ae4c5af) && soundplaying(var_6ae4c5af)) {
         waitframe(1);
     }
-    wait(0.1);
+    wait 0.1;
     if (!function_5d7ad9a9(hacker, originalowner)) {
         return;
     }

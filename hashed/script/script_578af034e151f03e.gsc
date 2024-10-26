@@ -44,7 +44,7 @@ function function_d531af7d(client_num, state) {
     for (i = 0; i < level.var_c1947c95[client_num].size; i++) {
         tele = level.var_c1947c95[client_num][i];
         tele notify(stop_notify);
-        wait(0.2);
+        wait 0.2;
         tele thread function_ecd6c9b9(screen_to_display, "stop_tv_swap");
     }
 }
@@ -64,7 +64,7 @@ function function_349aed4a(client_num) {
     for (i = 0; i < level.var_c1947c95[client_num].size; i++) {
         tele = level.var_c1947c95[client_num][i];
         tele setmodel(level.var_1c9068af[0]);
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -77,13 +77,13 @@ function function_ecd6c9b9(var_240e555b, endon_notify) {
     while (true) {
         for (i = 0; i < var_240e555b.size; i++) {
             self setmodel(var_240e555b[i]);
-            wait(3);
+            wait 3;
         }
         if (6 > randomint(100) && isdefined(level.var_be9b9bfc)) {
             self setmodel(level.var_be9b9bfc[randomint(level.var_be9b9bfc.size)]);
-            wait(2);
+            wait 2;
         }
-        wait(1);
+        wait 1;
     }
 }
 

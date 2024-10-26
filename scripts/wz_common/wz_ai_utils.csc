@@ -54,7 +54,7 @@ function function_46c950(localclientnum, oldval, newval, bnewent, binitialsnap, 
 // Checksum 0xc1e63882, Offset: 0x5a0
 // Size: 0x3c
 function function_645efd58() {
-    wait(randomintrange(15, 25));
+    wait randomintrange(15, 25);
     if (isdefined(self)) {
         setdynentenabled(self, 0);
     }

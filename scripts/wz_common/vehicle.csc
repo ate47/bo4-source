@@ -391,23 +391,23 @@ function private function_732976d8(localclientnum, vehicle) {
         }
         if (!vehicle isdrivingvehicle(self) && self function_21c0fa55()) {
             self function_d1731820(localclientnum);
-            wait(1);
+            wait 1;
             continue;
         }
         trace = bullettrace(vehicle.origin, vehicle.origin - offsetorigin, 0, vehicle, 1);
         distsqr = distancesquared(vehicle.origin, trace[#"position"]);
         if (trace[#"fraction"] == 1) {
             self function_d1731820(localclientnum);
-            wait(1);
+            wait 1;
             continue;
         }
         if (distsqr > var_26408b5d) {
             self function_d1731820(localclientnum);
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         self function_ff8d2820(localclientnum, "fallwind_loop_slow");
-        wait(0.2);
+        wait 0.2;
     }
     self function_d1731820(localclientnum);
 }
@@ -496,7 +496,7 @@ function private function_8fd2e04f(localclientnum) {
                 }
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

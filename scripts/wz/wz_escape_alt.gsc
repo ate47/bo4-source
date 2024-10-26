@@ -745,7 +745,7 @@ function function_78d5fb9b() {
                 break;
             }
             setdvar(#"scr_give_wz_item", 0);
-            wait(0.5);
+            wait 0.5;
         }
     }
 

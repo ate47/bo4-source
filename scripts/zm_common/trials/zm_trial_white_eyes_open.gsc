@@ -40,12 +40,12 @@ function private on_begin() {
     level.disable_nuke_delay_spawning = 1;
     level flag::clear("spawn_zombies");
     level thread lui::screen_flash(0.2, 1.3, 0.5, 1, "black");
-    wait(0.2);
+    wait 0.2;
     foreach (player in getplayers()) {
         player setmovespeedscale(0);
         player thread teleport_player();
     }
-    wait(0.1);
+    wait 0.1;
     foreach (player in getplayers()) {
         player.e_weeper = zombie_utility::spawn_zombie(spawner, spawner.targetname, undefined, level.round_number);
         var_9d88bc68 = anglestoforward(player.angles);
@@ -58,14 +58,14 @@ function private on_begin() {
         player.e_weeper val::set(#"mee_2", "takedamage", 0);
         player.e_weeper val::set(#"mee_2", "ignoreme", 1);
         player.e_weeper.team = #"team3";
-        wait(0.1);
+        wait 0.1;
     }
     level.e_weeper = zombie_utility::spawn_zombie(spawner, spawner.targetname, undefined, level.round_number);
     level.e_weeper.var_72411ccf = &function_660c908;
     level.e_weeper val::set(#"mee_2", "takedamage", 0);
     level.e_weeper val::set(#"mee_2", "ignoreme", 1);
     level.e_weeper.team = #"team3";
-    wait(1.5);
+    wait 1.5;
     level.disable_nuke_delay_spawning = 0;
     level flag::set("spawn_zombies");
     foreach (player in getplayers()) {

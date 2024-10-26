@@ -65,7 +65,7 @@ function function_e308175e(alias, v_pos, e_player) {
     } else {
         playsoundatposition(alias, v_pos);
     }
-    wait(n_wait_time);
+    wait n_wait_time;
     if (isdefined(e_tag)) {
         e_tag delete();
     }
@@ -88,7 +88,7 @@ function function_52c3fe8d(a_audio, v_pos) {
 function function_d6dadf85(alias, player, entity) {
     n_wait_time = float(soundgetplaybacktime(alias)) / 1000;
     entity playsoundtoplayer(alias, player);
-    wait(n_wait_time);
+    wait n_wait_time;
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -673,12 +673,12 @@ function function_715588b3() {
             if (b_using == 0 || util::get_active_players().size == 0) {
                 break;
             }
-            wait(0.1);
+            wait 0.1;
         }
         if (b_using == 1) {
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     s_unitrigger notify(#"hash_4993ab35c53e0b5c");
     zm_unitrigger::unregister_unitrigger(s_unitrigger);

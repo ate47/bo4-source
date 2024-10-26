@@ -214,7 +214,7 @@ function private splatter(localclientnum) {
     splatter_opacity = getdvarfloat(#"hash_95576df1970dd46", 1);
     start_splatter(localclientnum);
     initial_delay = math::clamp(getdvarint(#"hash_41140ec15abcde62", 100), 10, 3000);
-    wait(float(initial_delay) / 1000);
+    wait float(initial_delay) / 1000;
     if (!isdefined(self)) {
         end_splatter(localclientnum);
         return;
@@ -232,7 +232,7 @@ function private splatter(localclientnum) {
         filter::function_9ff66ea3(localclientnum, 6, 0, splatter_opacity);
         waitframe(1);
     }
-    wait(getdvarfloat(#"hash_624718787e051400", 1.5));
+    wait getdvarfloat(#"hash_624718787e051400", 1.5);
     if (!isdefined(self)) {
         end_splatter(localclientnum);
         return;

@@ -295,7 +295,7 @@ function private function_b952c1b(ai_zombie) {
     n_total_time = 0;
     while (n_dist_sq > 256 && isalive(self)) {
         var_88f24b00 moveto(self function_7eae6d92(var_88f24b00), n_move_time);
-        wait(0.1);
+        wait 0.1;
         if (isalive(self)) {
             n_current_time = gettime();
             n_total_time = (n_current_time - n_start_time) / 1000;
@@ -309,7 +309,7 @@ function private function_b952c1b(ai_zombie) {
     var_88f24b00 clientfield::set("" + #"hash_7a8b6df890ccc630", 0);
     util::wait_network_frame();
     var_88f24b00 delete();
-    wait(0.1);
+    wait 0.1;
     self playsoundontag(#"zmb_sq_souls_impact", "tag_weapon_right");
     self clientfield::increment("" + #"hash_7663ae2eb866d2eb");
     self.var_9fd623ed = math::clamp(self.var_9fd623ed + 1, 0, self.var_f7c822b5 * 3);
@@ -645,7 +645,7 @@ function function_750abd36() {
 function function_a9521272(player, fling_vec, index) {
     delay = self.var_45233b;
     if (isdefined(delay) && delay > 0.05) {
-        wait(delay);
+        wait delay;
     }
     if (!isalive(self)) {
         return;
@@ -680,7 +680,7 @@ function function_a9521272(player, fling_vec, index) {
 function zombie_knockdown(player, gib) {
     delay = self.var_45233b;
     if (isdefined(delay) && delay > 0.05) {
-        wait(delay);
+        wait delay;
     }
     if (!isalive(self)) {
         return;
@@ -799,7 +799,7 @@ function private function_dc44932e(var_c34665fc) {
 // Size: 0x4a
 function private function_423e10ee() {
     self endon(#"death", #"hash_1b7c4bada7fa6175", #"hash_7a5ea8904c04f16b");
-    wait(180);
+    wait 180;
     self.var_4154aa8f = 1;
 }
 
@@ -911,7 +911,7 @@ function function_d1a7390b(w_curr) {
             }
         }
         e_last_target = undefined;
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1068,7 +1068,7 @@ function private function_8103698() {
     self.var_aef7bb46 = 1;
     self thread function_da5e7ec0();
     self ai::stun();
-    wait(1);
+    wait 1;
     self ai::clear_stun();
 }
 
@@ -1078,7 +1078,7 @@ function private function_8103698() {
 // Size: 0x2a
 function private function_da5e7ec0() {
     self endon(#"death");
-    wait(12.5);
+    wait 12.5;
     self.var_aef7bb46 = undefined;
 }
 

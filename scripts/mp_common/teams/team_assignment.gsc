@@ -740,13 +740,13 @@ function function_a9822793() {
     // Size: 0x144
     function function_1aa0418f() {
         while (true) {
-            wait(3);
+            wait 3;
             players = getplayers();
             if (players.size > 0 && players[0] isstreamerready()) {
                 setdvar(#"devgui_bot", "<dev string:x247>");
-                wait(3);
+                wait 3;
                 function_a9822793();
-                wait(1);
+                wait 1;
                 bots = bot::get_bots();
                 foreach (bot in bots) {
                     level thread bot::remove_bot(bot);

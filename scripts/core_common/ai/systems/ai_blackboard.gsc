@@ -35,7 +35,7 @@ function private _updateevents() {
             }
             level.__ai_blackboard[eventname] = liveevents;
         }
-        wait(waittime);
+        wait waittime;
     }
 }
 

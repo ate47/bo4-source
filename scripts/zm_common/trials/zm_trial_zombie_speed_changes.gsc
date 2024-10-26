@@ -68,7 +68,7 @@ function private function_4458377c() {
             waitframe(1);
         }
         n_wait_time = randomfloatrange(1, 2);
-        wait(n_wait_time);
+        wait n_wait_time;
     }
 }
 
@@ -84,7 +84,7 @@ function function_fe65f5a6(var_b7358df3, e_player, n_timeout = 1) {
     }
     self thread namespace_9ff9f642::slowdown(#"zm_trial_zombie_speed_changes", 0.75);
     n_delay_time = randomfloatrange(2, 5);
-    wait(n_delay_time);
+    wait n_delay_time;
     self thread namespace_9ff9f642::slowdown(#"zm_trial_zombie_speed_changes", var_b7358df3);
     self playsound(#"hash_46661e1d0062f53b");
     if (math::cointoss(20)) {

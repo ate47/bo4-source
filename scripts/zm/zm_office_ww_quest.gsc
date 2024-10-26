@@ -206,7 +206,7 @@ function function_ff891275() {
     while (true) {
         self waittill(#"damage");
         self function_b128ee4f();
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -323,7 +323,7 @@ function function_1e50cd08(var_63eb3fcd) {
 function function_9257b202(e_player) {
     self endon(#"death");
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-    wait(5);
+    wait 5;
     self function_1e50cd08(4);
     level.s_ww_quest_reward function_68f68bb4();
     while (level.pentann_is_speaking === 1) {
@@ -348,7 +348,7 @@ function function_75e384bc(color) {
         }
         var_1f1110b3 show();
         level.var_b6a4a602 hide();
-        wait(2);
+        wait 2;
         level.var_b6a4a602 show();
         var_1f1110b3 hide();
         return;
@@ -491,13 +491,13 @@ function function_1e479c72() {
             level.var_6504d315.n_next++;
             if (level.var_6504d315.n_next > 2) {
                 function_fa833e73();
-                wait(0.1);
+                wait 0.1;
                 break;
             }
         } else {
             level.var_6504d315.n_next = 0;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -523,7 +523,7 @@ function function_2375274a() {
         plaque.v_start = plaque.origin;
         plaque moveto(plaque.v_start + (0, 0, 10), 0.5);
     }
-    wait(0.3);
+    wait 0.3;
     level.plaque_door scene::play("fall");
 }
 
@@ -600,7 +600,7 @@ function function_63572ef0() {
         waitresult = self waittill(#"damage");
         if (waitresult.mod === "MOD_GRENADE_SPLASH") {
             self function_4c07537f();
-            wait(0.1);
+            wait 0.1;
             break;
         }
     }
@@ -617,9 +617,9 @@ function function_4c07537f() {
     self.e_photo.fx_ent.angles = self.e_photo.angles;
     self.e_photo.fx = playfxontag(var_998a2c39, self.e_photo.fx_ent, "tag_origin");
     self.e_photo show();
-    wait(0.1);
+    wait 0.1;
     function_65337201(4, level.s_code_machine.a_n_codes[2], 20);
-    wait(0.1);
+    wait 0.1;
     level thread function_f25bac74("t_code3_photo", #"hash_19e148fcc7add789");
 }
 
@@ -666,7 +666,7 @@ function function_e0c5fd41() {
 // Size: 0x8c
 function function_85bd10() {
     function_65337201(5, level.s_code_machine.a_n_codes[3], 30);
-    wait(1);
+    wait 1;
     level.s_code4 notify(#"code_revealed");
     level.s_code4.var_354f5b9b = 0;
     level thread function_f25bac74("t_code4_photo", #"hash_799f9af88bb20656");
@@ -695,7 +695,7 @@ function function_c056a0ad() {
         self show();
         function_81ed41a8();
         level waittill(#"pack_room_reset");
-        wait(1);
+        wait 1;
     }
 }
 

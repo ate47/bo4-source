@@ -89,7 +89,7 @@ function function_d84b013b(localclientnum, b_freeze) {
             }
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

@@ -116,7 +116,7 @@ function trackvelocity() {
     self endon(#"death");
     for (;;) {
         self.oldorigin = self.origin;
-        wait(0.2);
+        wait 0.2;
     }
 }
 

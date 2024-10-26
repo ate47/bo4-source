@@ -29,7 +29,7 @@ function claymore_spawned(localclientnum) {
     self util::waittill_dobj(localclientnum);
     while (true) {
         if (isdefined(self.stunned) && self.stunned) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         self.claymorelaserfxid = util::playfxontag(localclientnum, #"_t6/weapon/claymore/fx_claymore_laser", self, "tag_fx");

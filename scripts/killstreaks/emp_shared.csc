@@ -40,7 +40,7 @@ function monitor_emp_killstreaks() {
                 update_distance_to_closest_emp(localclientnum, distance(local_player.origin, closest_enemy_emp.origin));
             }
         }
-        wait(has_at_least_one_active_enemy_turret ? 0.1 : 0.7);
+        wait has_at_least_one_active_enemy_turret ? 0.1 : 0.7;
     }
 }
 
@@ -132,12 +132,12 @@ function emp_turret_deploy(localclientnum) {
     self useanimtree("generic");
     self setanimrestart(#"o_turret_emp_core_deploy", 1, 0, 1);
     length = getanimlength(#"o_turret_emp_core_deploy");
-    wait(length * 0.75);
+    wait length * 0.75;
     self useanimtree("generic");
     self setanim(#"o_turret_emp_core_spin", 1);
     self.fxhandle = util::playfxontag(localclientnum, #"killstreaks/fx_emp_core", self, "tag_fx");
     self thread cleanup_fx_on_shutdown(localclientnum, self.fxhandle);
-    wait(length * 0.25);
+    wait length * 0.25;
     self setanim(#"o_turret_emp_core_deploy", 0);
 }
 

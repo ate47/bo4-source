@@ -188,7 +188,7 @@ function function_1338d0fa(var_60d70418) {
             linktraversal(node);
         }
     }
-    wait(5);
+    wait 5;
     array::thread_all(self.var_af0b3945, &gameobjects::enable_object, 1);
     exploder::exploder("fxexp_catwalk_on");
     exploder::stop_exploder("fxexp_catwalk_off");
@@ -215,7 +215,7 @@ function function_2cdcf5c3() {
 function function_c3c859e1() {
     array::delete_all(getentarray("sun_block", "targetname"));
     level flag::wait_till("first_player_spawned");
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0);
     exploder::exploder("fxexp_alarm_lights");
     if (!getgametypesetting(#"allowmapscripting")) {
         exploder::exploder("fxexp_catwalk_off");
@@ -237,7 +237,7 @@ function function_c3c859e1() {
     level scene::skipto_end(#"p8_fxanim_mp_silo_helicopter_crash_bundle", undefined, undefined, 1);
     level.var_82ec8690 = getent("radar_globe_damaged", "targetname");
     level.var_82ec8690 show();
-    wait(1);
+    wait 1;
     level.var_491d6ac5 = getent("radar_globe_pristine", "targetname");
     level.var_491d6ac5 hide();
 }
@@ -262,7 +262,7 @@ function function_fffbeb7f() {
     exploder::exploder("fxexp_globe_explosion");
     var_58763506 = (-5555.25, -5398.75, 20);
     playrumbleonposition("mp_silo_globe_explosion", var_58763506);
-    wait(1.25);
+    wait 1.25;
     level.var_491d6ac5 hide();
 }
 

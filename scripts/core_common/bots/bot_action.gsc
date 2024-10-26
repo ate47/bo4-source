@@ -499,7 +499,7 @@ function private function_7a456ee0(notifyhash) {
 function private action_timeout(actionname) {
     self endon(#"hash_5b4f399c08222e2", #"death", #"entering_last_stand", #"enter_vehicle", #"animscripted_start", #"hash_1728f8b5de3bde13");
     level endon(#"game_ended");
-    wait(10);
+    wait 10;
     if (!isbot(self)) {
         return;
     }
@@ -1750,7 +1750,7 @@ function melee_enemy(actionparams) {
     self function_e69a1e2e(actionparams);
     self bottapbutton(2);
     if (sessionmodeiszombiesgame()) {
-        wait(0.5);
+        wait 0.5;
         return;
     }
     self waittill(#"hash_347a612b61067eb3");
@@ -2022,7 +2022,7 @@ function function_36ca6d92(actionparams) {
         self waittill(#"hash_347a612b61067eb3");
     }
     self function_b74c1de4();
-    wait(0.1);
+    wait 0.1;
     while (self isswitchingweapons()) {
         self waittill(#"hash_347a612b61067eb3");
     }

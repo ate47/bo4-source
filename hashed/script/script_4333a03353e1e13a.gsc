@@ -243,7 +243,7 @@ function function_a6b42ff1() {
             self thread function_67769412();
             self notify(#"hash_5a853b3e231b86db");
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -261,7 +261,7 @@ function function_a3780502() {
             self thread function_67769412();
             self notify(#"hash_5a853b3e231b86db");
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -305,7 +305,7 @@ function function_b5fc069b() {
     self.var_cd75ce36 = 3;
     self thread function_ac9a3646();
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (self function_385a554d()) {
             self.var_cd75ce36 -= 0.1;
             if (self.var_cd75ce36 <= 0) {
@@ -403,7 +403,7 @@ function function_4578fdfd() {
     self.var_cd75ce36 = 3;
     self thread function_ac9a3646();
     while (true) {
-        wait(0.1);
+        wait 0.1;
         s_touching = self function_1036f994();
         if (level flag::get(#"hash_3028604821838259") && s_touching.var_50d20c23) {
             self.var_cd75ce36 -= 0.1;
@@ -520,7 +520,7 @@ function fling_player(v_flinger) {
     } else {
         self thread zm_audio::create_and_play_dialog(#"flinger", #"react");
     }
-    wait(var_cef149e8);
+    wait var_cef149e8;
     if (isdefined(self.var_3456a2d2)) {
         self.var_3456a2d2 delete();
     }
@@ -756,7 +756,7 @@ function function_4aad77c2() {
 // Size: 0x34
 function function_b040671c() {
     level endon(#"end_game");
-    wait(10);
+    wait 10;
     self thread function_67769412();
 }
 
@@ -766,7 +766,7 @@ function function_b040671c() {
 // Size: 0x34
 function function_5fb97eb1() {
     level endon(#"end_game");
-    wait(10);
+    wait 10;
     self thread function_d8d2ddc6();
 }
 

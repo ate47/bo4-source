@@ -141,7 +141,7 @@ function function_b1c6d4f2() {
     if (isdefined(level.var_7b4e19aa)) {
         foreach (exploder_id in level.var_7b4e19aa) {
             exploder::kill_exploder(exploder_id);
-            wait(0.3);
+            wait 0.3;
         }
         level.var_7b4e19aa = undefined;
     }

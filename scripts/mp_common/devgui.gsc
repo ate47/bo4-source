@@ -77,7 +77,7 @@
     // Checksum 0xdf54d33a, Offset: 0x4d0
     // Size: 0x148
     function devgui_player_spawn() {
-        wait(1);
+        wait 1;
         player_devgui_base_mp = "<dev string:x1df>";
         waitframe(1);
         players = getplayers();
@@ -113,7 +113,7 @@
                 }
             }
             setdvar(#"mp_lockspawn_command_devgui", "<dev string:x68>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -154,7 +154,7 @@
         setdvar(#"scr_boast_gesture", "<dev string:x68>");
         util::add_devgui(player_devgui_base + "<dev string:x265>", "<dev string:x274>" + "<dev string:x27b>" + "<dev string:x28f>");
         while (getdvarstring(#"scr_boast_gesture", "<dev string:x68>") == "<dev string:x68>") {
-            wait(1);
+            wait 1;
         }
         game.var_461b2589 = 1;
         setdvar(#"scr_boast_gesture", "<dev string:x68>");
@@ -308,7 +308,7 @@
                 devgui_handle_player_command(&devgui_give_weapon, weapon_name);
             }
             setdvar(#"mp_weap_devgui", "<dev string:x68>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -337,7 +337,7 @@
         colors[colors.size] = (1, 0, 1);
         colors[colors.size] = (0, 1, 1);
         for (;;) {
-            wait(update_time);
+            wait update_time;
             display = getdvarint(#"mp_weap_asset_name_display_devgui", 0);
             if (!display) {
                 continue;
@@ -452,7 +452,7 @@
         iprintlnbold(msg);
         self takeweapon(currentweapon);
         currentweapon = getweapon(rootweapon.name, attachments[0], attachments[1], attachments[2], attachments[3], attachments[4], attachments[5]);
-        wait(0.25);
+        wait 0.25;
         self giveweapon(currentweapon, undefined);
         self switchtoweapon(currentweapon);
     }
@@ -479,7 +479,7 @@
             if ("<dev string:x44a>" == state) {
                 array::thread_all(getplayers(), &devgui_attachment_cycling_update);
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -494,7 +494,7 @@
         self endon(#"devgui_give_ammo");
         endtime = gettime() + 10000;
         while (!isalive(self) && gettime() < endtime) {
-            wait(0.25);
+            wait 0.25;
         }
         if (!isalive(self)) {
             util::warning("<dev string:x453>" + weapon_name + "<dev string:x465>" + self.name + "<dev string:x46c>" + self.name + "<dev string:x478>");
@@ -667,7 +667,7 @@
     // Size: 0x9a
     function debug_center_screen() {
         level.var_7929a046 = 1;
-        wait(0.1);
+        wait 0.1;
         level.var_f9f04b00 debug_center_screen::open(level.players[0], 1);
         level waittill(#"stop center screen debug");
         level.var_f9f04b00 debug_center_screen::close(level.players[0]);
@@ -728,7 +728,7 @@
         setdvar(#"hash_3a3f995b08f2b9b8", -1);
         setdvar(#"hash_2aab28ebf600b8c7", -1);
         setdvar(#"hash_4874e2dd28221d6c", -1);
-        wait(0.5);
+        wait 0.5;
         path = "<dev string:x5c6>";
         cmd = "<dev string:x5e5>";
         util::add_devgui(path + "<dev string:x608>", cmd + "<dev string:x610>");
@@ -758,7 +758,7 @@
             var_ca373442 = level.scorelimit;
         }
         var_ca373442 = math::clamp(var_ca373442, 0, 300);
-        wait(0.5);
+        wait 0.5;
         for (score = 0; score <= var_ca373442; score++) {
             var_8acb4d22 = int(score / 10) * 10;
             var_daf8d664 = int(score / 10) * 10 + 10;
@@ -788,7 +788,7 @@
                 [[ level._setteamscore ]](#"axis", var_46c53e6e);
                 setdvar(#"hash_4874e2dd28221d6c", -1);
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -799,11 +799,11 @@
     function function_7bef8d25() {
         level notify(#"hash_6a8b1c9e1485919d");
         level endon(#"hash_6a8b1c9e1485919d");
-        wait(5);
+        wait 5;
         function_e4b86469();
-        wait(1);
+        wait 1;
         while (true) {
-            wait(0.25);
+            wait 0.25;
             remaining_health = getdvarint(#"hash_28af507d964c5802", 0);
             if (remaining_health <= 0) {
                 continue;
@@ -829,11 +829,11 @@
     function function_46b22d99() {
         level notify(#"hash_4c09c9d01060d7ad");
         level endon(#"hash_4c09c9d01060d7ad");
-        wait(2);
+        wait 2;
         function_9fb69cba();
-        wait(0.5);
+        wait 0.5;
         while (true) {
-            wait(0.5);
+            wait 0.5;
             if (level.gameended) {
                 continue;
             }
@@ -846,7 +846,7 @@
             var_c585681e = 0.25;
             setgametypesetting("<dev string:x6a3>", var_c585681e);
             for (aborted = 0; !level.gameended && !aborted; aborted = getgametypesetting(#"timelimit") != var_c585681e) {
-                wait(0.5);
+                wait 0.5;
             }
             if (!aborted) {
                 setgametypesetting("<dev string:x6a3>", var_53b4c3ae);
@@ -861,11 +861,11 @@
     function function_be0f9897() {
         level notify(#"hash_7528b3262d076f59");
         level endon(#"hash_7528b3262d076f59");
-        wait(5.5);
+        wait 5.5;
         function_51cc2292();
-        wait(1);
+        wait 1;
         while (true) {
-            wait(0.25);
+            wait 0.25;
             damage = getdvarint(#"scr_damage_health", 0);
             if (damage == 0) {
                 continue;
@@ -899,11 +899,11 @@
         level notify(#"hash_6534754fb1d75ea7");
         level endon(#"hash_6534754fb1d75ea7");
         while (!isdefined(level.scoreinfo)) {
-            wait(1);
+            wait 1;
         }
         function_354e12a4();
         while (true) {
-            wait(0.1);
+            wait 0.1;
             actionid = getdvarint(#"hash_649ea18bd5e55893", -1);
             var_97c83f66 = getdvarint(#"hash_6ad3f58a8e0a1e59", -1);
             hotstreakstage = getdvarint(#"scr_hotstreak_stage", -1);

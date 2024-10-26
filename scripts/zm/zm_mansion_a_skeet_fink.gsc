@@ -148,7 +148,7 @@ function function_ff75fde6(var_a276c861) {
         if (zm_utility::is_trials()) {
             while (true) {
                 b_success = level.var_d5f74526 function_29a3aca4();
-                wait(1);
+                wait 1;
                 if (b_success) {
                     break;
                 }
@@ -164,7 +164,7 @@ function function_ff75fde6(var_a276c861) {
             return;
         }
         b_success = level.var_d5f74526 function_29a3aca4();
-        wait(1);
+        wait 1;
         if (!b_success) {
             function_834e6f7();
             level waittill(#"forever");
@@ -194,7 +194,7 @@ function function_abf0bf8c() {
             if (isdefined(s_waitresult.position) && distancesquared(s_waitresult.position, self.origin) < 100) {
                 level.var_d5f74526 notify(#"hash_5a5c7c802e5f3037", {#var_c8407ea2:self.script_int, #var_740e1e0e:self.var_740e1e0e, #attacker:s_waitresult.attacker});
                 self.var_740e1e0e ghost();
-                wait(1);
+                wait 1;
                 if (isdefined(self.var_740e1e0e)) {
                     self.var_740e1e0e delete();
                 }
@@ -267,9 +267,9 @@ function function_39e0636(var_a276c861) {
             mdl_stake = util::spawn_model(#"hash_1a8e66a7966f8086", var_f2dc13a0.origin, var_f2dc13a0.angles);
             mdl_stake moveto(var_ae18fb21.origin, 3.6, 3.6);
             mdl_stake rotateto(var_ae18fb21.angles, 3.6, 3.6);
-            wait(3.6 * 0.7);
+            wait 3.6 * 0.7;
             mdl_stake playsound("zmb_sk_tree_branch_fall");
-            wait(3.6 * 0.3);
+            wait 3.6 * 0.3;
             mdl_stake clientfield::set("" + #"hash_486960f190957256", 1);
             playrumbleonposition("grenade_rumble", var_ae18fb21.origin);
             earthquake(0.5, 0.8, var_ae18fb21.origin, 512);
@@ -428,7 +428,7 @@ function private function_eb6f728f() {
     while (true) {
         if (level flag::get("round_reset")) {
             level flag::wait_till_clear("round_reset");
-            wait(7);
+            wait 7;
         } else if (namespace_11abec5a::is_active(w_stake_knife)) {
             n_nosferatus = zm_ai_nosferatu::function_853b43e8();
             if (n_nosferatus < 10) {
@@ -438,7 +438,7 @@ function private function_eb6f728f() {
                 }
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 

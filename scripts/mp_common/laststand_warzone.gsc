@@ -395,7 +395,7 @@ function function_d5db8d2e(attacker, weapon) {
                 setdvar(#"scr_last_stand", "<dev string:x38>");
                 return;
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -420,7 +420,7 @@ function function_d5db8d2e(attacker, weapon) {
                 target dodamage(1000, target.origin);
                 setdvar(#"scr_last_stand", "<dev string:x38>");
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -668,7 +668,7 @@ function function_102748f8() {
 function laststand_enable_player_weapons() {
     self endon(#"disconnect");
     if (isdefined(self.var_60956d6) && self.var_60956d6.name == #"sig_blade") {
-        wait(0.03);
+        wait 0.03;
     }
     self takeweapon(level.var_e273f858);
     self enableweaponcycling();
@@ -710,7 +710,7 @@ function laststand_clean_up_on_interrupt(playerbeingrevived) {
 function laststand_bleedout_damage() {
     self endoncallback(&function_99fa3916, #"player_revived", #"death", #"bled_out");
     self val::set(#"laststand", #"takedamage", 0);
-    wait(level.var_5c13c13f);
+    wait level.var_5c13c13f;
     self val::reset(#"laststand", #"takedamage");
     while (true) {
         waitresult = self waittill(#"laststand_damage");
@@ -833,7 +833,7 @@ function laststand_bleedout(bleedouttime, var_969fabf4) {
 function laststand_invulnerability() {
     self endon(#"disconnect", #"death");
     self enableinvulnerability();
-    wait(level.var_5c13c13f);
+    wait level.var_5c13c13f;
     self disableinvulnerability();
 }
 
@@ -929,7 +929,7 @@ function bleed_out(var_40d90c02) {
         var_d7e063c = getdvarfloat(#"hash_44de9418bb6289ac", 1.5);
         self playsoundtoplayer(#"hash_11d39dca0f911535", self);
         self lui::screen_fade(var_d7e063c, 1, 0, "black", 0);
-        wait(var_d7e063c + 0.2);
+        wait var_d7e063c + 0.2;
         self lui::screen_fade(var_d7e063c, 0, 1, "black", 0);
     }
     self notify(#"hash_6b045e0bc320bbee");
@@ -947,7 +947,7 @@ function respawn_player_after_time(n_time_seconds) {
     }
     self waittill(#"spawned_spectator");
     level endon(#"objective_changed");
-    wait(n_time_seconds);
+    wait n_time_seconds;
     if (self.sessionstate == #"spectator") {
         self thread globallogic_spawn::waitandspawnclient();
     }
@@ -999,7 +999,7 @@ function revive_trigger_think() {
     self endon(#"stop_revive_trigger");
     teams = self function_2b77bc35();
     enemy_teams = function_fb02bdd4(teams);
-    wait(0.1);
+    wait 0.1;
     while (isdefined(self) && !(isdefined(level.gameended) && level.gameended)) {
         if (!isdefined(self)) {
             break;
@@ -1031,7 +1031,7 @@ function revive_trigger_think() {
                 }
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1496,7 +1496,7 @@ function revive_success(reviver, b_track_stats = 1) {
     }
     self.var_d887a4ad = 1;
     revive_wait_time = getdvarint(#"hash_77107267fe87b359", 350) / 1000;
-    wait(revive_wait_time);
+    wait revive_wait_time;
     if (!isdefined(self)) {
         return;
     }

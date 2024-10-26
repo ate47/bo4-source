@@ -268,7 +268,7 @@ function groom_lake_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 function crawler_portal_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     self endon(#"death");
     warmup_fx = util::playfxontag(localclientnum, "maps/zm_office/fx8_teleporter_ready", self, "j_spine2");
-    wait(1.5);
+    wait 1.5;
     if (isdefined(warmup_fx)) {
         deletefx(localclientnum, warmup_fx);
     }
@@ -282,12 +282,12 @@ function crawler_portal_spawn_fx(localclientnum, oldval, newval, bnewent, biniti
 function war_room_map_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
     if (newval) {
-        wait(1);
+        wait 1;
         self playrenderoverridebundle("rob_zm_off_table_plotting_map");
         return;
     }
     playfx(localclientnum, level._effect[#"hash_3ae2cb0d50ae8e3e"], self.origin, (1, 0, 0), (0, 0, 1));
-    wait(1);
+    wait 1;
     self stoprenderoverridebundle("rob_zm_off_table_plotting_map");
 }
 

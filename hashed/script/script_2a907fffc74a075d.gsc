@@ -31,7 +31,7 @@ function init() {
 // Checksum 0x88035008, Offset: 0x160
 // Size: 0xb0
 function init_decals() {
-    wait(0.1);
+    wait 0.1;
     if (!zm_utility::is_ee_enabled()) {
         var_c85b91c4 = findvolumedecalindexarray("freerangeanimalcrackers");
         foreach (n_index in var_c85b91c4) {
@@ -56,7 +56,7 @@ function function_3653f153(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self util::waittill_dobj(localclientnum);
         while (true) {
-            wait(10);
+            wait 10;
             function_d11e8e8d(localclientnum);
             function_5200214e(localclientnum);
             function_5200214e(localclientnum);
@@ -212,11 +212,11 @@ function function_3653f153(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x74
 function function_d11e8e8d(localclientnum) {
     var_a4f5395a = util::playfxontag(localclientnum, #"hash_431dfa76576eb899", self, "tag_origin");
-    wait(0.25);
+    wait 0.25;
     if (isdefined(var_a4f5395a)) {
         killfx(localclientnum, var_a4f5395a);
     }
-    wait(0.25);
+    wait 0.25;
 }
 
 // Namespace namespace_57873b62/namespace_8125d942
@@ -225,11 +225,11 @@ function function_d11e8e8d(localclientnum) {
 // Size: 0x74
 function function_5200214e(localclientnum) {
     var_a4f5395a = util::playfxontag(localclientnum, #"hash_431dfa76576eb899", self, "tag_origin");
-    wait(0.75);
+    wait 0.75;
     if (isdefined(var_a4f5395a)) {
         killfx(localclientnum, var_a4f5395a);
     }
-    wait(0.25);
+    wait 0.25;
 }
 
 // Namespace namespace_57873b62/namespace_8125d942
@@ -237,7 +237,7 @@ function function_5200214e(localclientnum) {
 // Checksum 0xad93b051, Offset: 0x1060
 // Size: 0xc
 function function_bbf9723b() {
-    wait(0.5);
+    wait 0.5;
 }
 
 // Namespace namespace_57873b62/namespace_8125d942
@@ -245,6 +245,6 @@ function function_bbf9723b() {
 // Checksum 0x4f863f83, Offset: 0x1078
 // Size: 0xc
 function function_ca7f5c75() {
-    wait(1.5);
+    wait 1.5;
 }
 

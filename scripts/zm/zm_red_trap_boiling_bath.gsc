@@ -38,7 +38,7 @@ function trap_activate() {
     level.var_bae901ce = 1;
     level function_922c05f();
     self thread zm_traps::trap_damage();
-    wait(self._trap_duration);
+    wait self._trap_duration;
     playsoundatposition("zmb_water_deactivate", level.var_d6ef5bfd.origin);
     level.var_d6ef5bfd stoploopsound(0.5);
     level notify(#"hash_36bc97f51bb2bc8");
@@ -146,7 +146,7 @@ function trap_damage(t_trap) {
 // Checksum 0x7884c8fb, Offset: 0xa38
 // Size: 0x26
 function trap_damage_cooldown(e_victim) {
-    wait(0.5);
+    wait 0.5;
     if (isdefined(e_victim)) {
         e_victim.var_99557baf = undefined;
     }
@@ -157,7 +157,7 @@ function trap_damage_cooldown(e_victim) {
 // Checksum 0x3e9b762b, Offset: 0xa68
 // Size: 0x16
 function function_49d1db63() {
-    wait(0.5);
+    wait 0.5;
     level.var_9b2dd86 = undefined;
 }
 
@@ -198,7 +198,7 @@ function function_3a067395(str_exploder) {
     if (str_exploder == "fxexp_trap_bath_bloody_lvl1") {
         level.var_4a0ddedd = 1;
         level exploder::exploder("fxexp_trap_bath_bloody_lvl1_linger");
-        wait(30);
+        wait 30;
         level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl1_linger");
         level.var_4a0ddedd = 0;
         level exploder::stop_exploder("exp_lgt_bath_trap");
@@ -206,12 +206,12 @@ function function_3a067395(str_exploder) {
     }
     level.var_30ec2c9a = 1;
     level exploder::exploder("fxexp_trap_bath_bloody_lvl2_linger");
-    wait(30);
+    wait 30;
     level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl2_linger");
     level.var_30ec2c9a = 0;
     level.var_4a0ddedd = 1;
     level exploder::exploder("fxexp_trap_bath_bloody_lvl1_linger");
-    wait(30);
+    wait 30;
     level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl1_linger");
     level.var_4a0ddedd = 0;
     level exploder::stop_exploder("exp_lgt_bath_trap");

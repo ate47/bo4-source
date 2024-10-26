@@ -828,7 +828,7 @@ function zone_flag_wait(flag_name) {
 // Size: 0x54
 function door_close_disconnect(flag_name) {
     while (level flag::get(flag_name)) {
-        wait(1);
+        wait 1;
     }
     self.is_connected = 0;
     level thread zone_flag_wait(flag_name);
@@ -974,7 +974,7 @@ function manage_zones(initial_zone) {
             debug_show_spawn_locations();
         #/
         level.active_zone_names = get_active_zone_names();
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1162,7 +1162,7 @@ function _debug_zones() {
                 n++;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1281,7 +1281,7 @@ function function_228ae7e() {
     level endon(#"game_ended");
     while (true) {
         function_d4cf2b9b();
-        wait(randomfloatrange(0.5, 1));
+        wait randomfloatrange(0.5, 1);
     }
 }
 

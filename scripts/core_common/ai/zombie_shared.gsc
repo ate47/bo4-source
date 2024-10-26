@@ -7,7 +7,7 @@
 // Checksum 0xe2f940ee, Offset: 0x210
 // Size: 0x24
 function deleteatlimit() {
-    wait(30);
+    wait 30;
     self delete();
 }
 
@@ -372,7 +372,7 @@ function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfun
             timetaken = gettime() - time;
             if (timetaken < 0.05) {
                 println(gettime() + "<dev string:xde>" + flagname + "<dev string:x12d>" + returnednote + "<dev string:x13b>");
-                wait(0.05 - timetaken);
+                wait 0.05 - timetaken;
             }
         }
     }
@@ -410,7 +410,7 @@ function donotetracksfortime(time, flagname, customfunction, var1) {
 // Checksum 0x8ca9221d, Offset: 0x1668
 // Size: 0x26
 function donotetracksfortimeendnotify(time) {
-    wait(time);
+    wait time;
     self notify(#"stop_notetracks");
 }
 

@@ -44,7 +44,7 @@ function function_2cdcf5c3() {
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
     level flag::wait_till("first_player_spawned");
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0);
     if (util::isfirstround()) {
         level thread scene::play("p8_fxanim_mp_mad_lemurs_01_bundle", "run");
         level thread scene::play("p8_fxanim_mp_mad_heli_aid_bundle");

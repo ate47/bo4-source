@@ -44,7 +44,7 @@ function challenge_completed() {
     /#
         iprintlnbold("<dev string:x38>");
     #/
-    wait(3);
+    wait 3;
     if (level.var_a7b0c29c.size == 0) {
         function_8bddfcc3();
         return;
@@ -118,7 +118,7 @@ function function_1b350677() {
         } else if (level.var_f0efd877 && !function_c32f5235()) {
             function_bc0ec5b3(0);
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

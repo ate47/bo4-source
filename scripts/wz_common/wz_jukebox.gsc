@@ -79,7 +79,7 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
 // Checksum 0xf1d3a7e8, Offset: 0x488
 // Size: 0x24
 function function_d143760c() {
-    wait(2);
+    wait 2;
     function_e2a06860(self, 2);
 }
 
@@ -88,7 +88,7 @@ function function_d143760c() {
 // Checksum 0xa12f714f, Offset: 0x4b8
 // Size: 0x24
 function function_b55a0a4() {
-    wait(2);
+    wait 2;
     function_e2a06860(self, 1);
 }
 

@@ -772,7 +772,7 @@ function onpickup(player) {
 // Size: 0x46
 function onpickupmusicstate(player) {
     self endon(#"disconnect", #"death");
-    wait(6);
+    wait 6;
     if (player.isflagcarrier) {
     }
 }

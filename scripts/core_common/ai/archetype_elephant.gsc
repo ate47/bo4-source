@@ -163,7 +163,7 @@ function function_e1df3626(phase) {
 // Size: 0x3c
 function private function_7f012c08() {
     self endon(#"death");
-    wait(1);
+    wait 1;
     self clientfield::set("boss_death_rob", 0);
 }
 
@@ -215,10 +215,10 @@ function elephantstartdeath(elephant) {
     elephant clientfield::set("towers_boss_eye_fx_cf", 0);
     elephant.skipdeath = 1;
     elephant thread animation::play(deathanim, elephant.origin, elephant.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
-    wait(10);
+    wait 10;
     if (isdefined(elephant)) {
         elephant function_e1df3626(phase);
-        wait(2.7);
+        wait 2.7;
         if (isdefined(elephant)) {
             if (phase == #"hash_266f56fb994e6639") {
                 elephant thread function_452a76a8(elephant);
@@ -243,7 +243,7 @@ function elephantstartdeath(elephant) {
             soulball.var_dd6fe31f = 1;
             var_1801a239 = struct::get("soul_exit", "targetname");
             pos = getclosestpointonnavmesh(var_1801a239.origin, 500, 30);
-            wait(1);
+            wait 1;
             soulball vehicle_ai::set_state("soul");
             soulball.ai.var_a38db64f = pos;
         }
@@ -255,7 +255,7 @@ function elephantstartdeath(elephant) {
 // Checksum 0x9c73cfb3, Offset: 0x1b28
 // Size: 0x24
 function function_78f4a0d1() {
-    wait(20);
+    wait 20;
     if (isdefined(self)) {
         self delete();
     }
@@ -266,7 +266,7 @@ function function_78f4a0d1() {
 // Checksum 0x1bcb7144, Offset: 0x1b58
 // Size: 0x34
 function function_106b6b29() {
-    wait(4.5);
+    wait 4.5;
     playsoundatposition(#"hash_4cf49c7c9533b539", (0, 0, 0));
 }
 
@@ -427,7 +427,7 @@ function function_9d14fcee() {
 // Checksum 0xa0d7a4d0, Offset: 0x2998
 // Size: 0x734
 function function_48f6761d(elephant, waittime = 0) {
-    wait(waittime);
+    wait waittime;
     elephant detach(self.ai.armor, "tag_origin");
     if (elephant isattached(#"hash_4f282285ef50e3ee", "tag_origin")) {
         elephant detach(#"hash_4f282285ef50e3ee", "tag_origin");
@@ -601,7 +601,7 @@ function private function_978a4592(elephant, rider) {
                 rider animation::play(rider.ai.var_9ca71a12, elephant, aligntag, 1.5, 0.2, 0.1, undefined, undefined, undefined, 0);
             }
             rider.ai.attacking = 0;
-            wait(randomintrange(1, 2));
+            wait randomintrange(1, 2);
         } else if (isdefined(level.var_5feff7d0)) {
             var_c3f91959 = [[ level.var_5feff7d0 ]](elephant, rider);
             if (isdefined(var_c3f91959)) {
@@ -617,7 +617,7 @@ function private function_978a4592(elephant, rider) {
                     rider animation::play(rider.ai.var_9ca71a12, elephant, aligntag, 1.2, 0.2, 0.1, undefined, undefined, undefined, 0);
                 }
                 rider.ai.attacking = 0;
-                wait(randomintrange(1, 2));
+                wait randomintrange(1, 2);
             }
         }
         waitframe(1);
@@ -651,7 +651,7 @@ function private function_1cd7a6d7(elephant, rider) {
             assert(isdefined(rider.ai.var_bd0ffccf));
             rider animation::play(rider.ai.var_bd0ffccf, elephant, aligntag, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
             rider.ai.inpain = 0;
-            wait(randomintrange(3, 4));
+            wait randomintrange(3, 4);
         }
         waitframe(1);
     }
@@ -894,7 +894,7 @@ function private function_4c731a08() {
 function private function_4ccdadc3() {
     self endon(#"death");
     while (!isdefined(self.ai.phase)) {
-        wait(0.1);
+        wait 0.1;
     }
     if (self.ai.phase == #"hash_266f56fb994e6639") {
         self clientfield::set("towers_boss_eye_fx_cf", 2);
@@ -1379,7 +1379,7 @@ function private function_f51431a9(elephant) {
             }
             break;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1474,7 +1474,7 @@ function function_ce8fe2b0(entity, splitorigin) {
             recordsphere(launchpoint, 15, (0, 0, 0), "<dev string:x41>");
         #/
     }
-    wait(0.5);
+    wait 0.5;
     targets = getplayers();
     for (i = 0; i < targets.size; i++) {
         target = targets[i];
@@ -1930,7 +1930,7 @@ function private function_707d0196(player, mod, shitloc) {
         elephant = zombie_utility::spawn_zombie(elephant_spawner, undefined, elephant_spawner);
         elephant.ai.phase = phase;
         if (isdefined(elephant)) {
-            wait(0.5);
+            wait 0.5;
             elephant forceteleport(trace[#"position"], player.angles + (0, 180, 0));
         }
     }
@@ -1961,7 +1961,7 @@ function private function_707d0196(player, mod, shitloc) {
         adddebugcommand("<dev string:x78b>");
         while (true) {
             setdvar(#"hash_7a7fc216709f1aa4", "<dev string:x4a>");
-            wait(0.2);
+            wait 0.2;
             cmd = getdvarstring(#"hash_7a7fc216709f1aa4", "<dev string:x4a>");
             if (cmd == "<dev string:x4a>") {
                 continue;

@@ -253,7 +253,7 @@ function teamoutcomenotify(outcome) {
     self luinotifyevent(#"show_outcome", 5, var_14f94126, outcometext, int(matchbonus), winnerenum, var_277c7d47);
     if (var_277c7d47 && game.roundsplayed < level.roundlimit) {
         self luinotifyevent(#"hash_84895967cf4425c");
-        wait(1);
+        wait 1;
     }
 }
 

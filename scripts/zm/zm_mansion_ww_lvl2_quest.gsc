@@ -202,7 +202,7 @@ function function_514a3f80() {
     zm_items::function_4d230236(zm_crafting::get_component(#"zitem_chaos_lvl3_part_1"), &function_b9cbdac6);
     zm_items::function_4d230236(zm_crafting::get_component(#"zitem_chaos_lvl3_part_2"), &function_b9cbdac6);
     level flagsys::wait_till_any(array(#"power_on1", #"hash_2daf5bdda85cc660"));
-    wait(randomintrange(20, 30));
+    wait randomintrange(20, 30);
     s_machine = struct::get("s_pr_mach");
     s_machine scene::play("Open");
     exploder::exploder("exp_lgt_prima_disp_green_sml");
@@ -272,7 +272,7 @@ function private function_29f66f1a(var_21839a96, var_57ec466d) {
     exploder::exploder("exp_lgt_prima_disp_red_sml");
     exploder::exploder_stop("exp_lgt_prima_disp_green_sml");
     s_machine thread scene::play("init");
-    wait(12);
+    wait 12;
     level thread function_672eb1dc(var_21839a96, var_57ec466d);
     s_machine scene::play("Finish");
     exploder::exploder("exp_lgt_prima_disp_green_lrg");
@@ -285,7 +285,7 @@ function private function_29f66f1a(var_21839a96, var_57ec466d) {
 // Size: 0x3c
 function function_6f29b131() {
     self endon(#"death");
-    wait(2.5);
+    wait 2.5;
     if (isdefined(self)) {
         self delete();
     }
@@ -297,7 +297,7 @@ function function_6f29b131() {
 // Size: 0xa0
 function function_672eb1dc(var_21839a96, var_57ec466d) {
     s_loc = struct::get("s_prima_material_spawn_loc");
-    wait(5);
+    wait 5;
     var_58b3e56b = mansion_util::function_89e9bca5(var_21839a96, s_loc.origin, s_loc.angles);
     playsoundatposition(var_57ec466d, var_58b3e56b.origin);
     level notify(#"hash_144b3192f03325f3");
@@ -344,7 +344,7 @@ function ww_lvl2_crafted(e_player) {
     e_player zm_weapons::weapon_take(level.var_f086136b);
     e_player thread zm_vo::function_a2bd5a0c(#"hash_ab2e19733266586", 1);
     e_player zm_weapons::weapon_give(self.stub.blueprint.var_54a97edd);
-    wait(0.1);
+    wait 0.1;
     unitrigger_stub zm_crafting::reset_table();
     unitrigger_stub.prompt_and_visibility_func = &function_7aa50bb7;
 }

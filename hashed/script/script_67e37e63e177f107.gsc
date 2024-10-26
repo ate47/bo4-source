@@ -225,7 +225,7 @@ function function_3e16dec3(params) {
 function function_ef0bfb9d() {
     self endon(#"death");
     self endon(#"change_state");
-    wait(0.5);
+    wait 0.5;
     while (true) {
         enemies = util::function_81ccf6d3(self.team);
         alltargets = arraysort(enemies, self function_d3a9800e(), 1);
@@ -272,7 +272,7 @@ function function_413aacb3(target) {
 function function_55be8453() {
     self endon(#"death");
     self endon(#"change_state");
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self.favoriteenemy)) {
         if (util::within_fov(self.origin, self.angles, self.favoriteenemy.origin, 0.939)) {
             distsqtotarget = distancesquared(self.favoriteenemy.origin, self function_d3a9800e());
@@ -335,7 +335,7 @@ function function_419f8ccb() {
 // Checksum 0x95b91acf, Offset: 0x1200
 // Size: 0x2c
 function function_469f1e03(fxent) {
-    wait(0.1);
+    wait 0.1;
     fxent delete();
 }
 
@@ -350,7 +350,7 @@ function state_death_update(params) {
     }
     fxent = self.fxent;
     vehicle_ai::defaultstate_death_update(params);
-    wait(2);
+    wait 2;
     if (isdefined(fxent)) {
         level thread function_469f1e03(fxent);
     }

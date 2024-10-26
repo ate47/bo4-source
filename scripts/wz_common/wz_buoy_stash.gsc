@@ -45,7 +45,7 @@ function __main__() {
 function function_c621758a() {
     var_90b35a6a = struct::get_array("buoy_stash", "targetname");
     foreach (scene in var_90b35a6a) {
-        wait(randomint(4));
+        wait randomint(4);
         scene thread scene::play(#"p8_fxanim_wz_floating_buoy_bundle");
     }
     if (!level.var_f45d4bf5) {
@@ -85,7 +85,7 @@ function function_5a6d95() {
                 self clientfield::set("buoy_light_fx_changed", 1);
                 break;
             }
-            wait(1);
+            wait 1;
         }
     }
 }

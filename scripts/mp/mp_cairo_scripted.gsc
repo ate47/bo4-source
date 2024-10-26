@@ -134,7 +134,7 @@ function function_69cdac99() {
             foreach (var_cb4f5d9 in var_34f4feb8) {
                 playsoundatposition(var_c7ecf728[var_fc58d99c], var_cb4f5d9);
             }
-            wait(randomfloatrange(34, 65));
+            wait randomfloatrange(34, 65);
         }
     }
 }

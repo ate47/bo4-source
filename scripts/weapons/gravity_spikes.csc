@@ -35,7 +35,7 @@ function __init__() {
     function updatedvars() {
         while (true) {
             level.dirt_enable_gravity_spikes = getdvarint(#"scr_dirt_enable_gravity_spikes", level.dirt_enable_gravity_spikes);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -80,7 +80,7 @@ function do_gravity_spike_fx(localclientnum, owner, weapon, position) {
     explosion_radius = isdefined(weapon) ? weapon.explosionradius : 250;
     radius_per_circle = (explosion_radius - radius_of_effect) / number_of_circles;
     for (circle = 0; circle < number_of_circles; circle++) {
-        wait(0.1);
+        wait 0.1;
         radius_for_this_circle = radius_per_circle * (circle + 1);
         number_for_this_circle = base_number_of_effects + additional_number_of_effects_per_circle * circle;
         thread do_gravity_spike_fx_circle(localclientnum, owner, position, radius_for_this_circle, number_for_this_circle);

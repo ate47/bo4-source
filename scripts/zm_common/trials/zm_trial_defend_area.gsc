@@ -117,7 +117,7 @@ function private on_end(round_reset) {
 // Size: 0x3c
 function private function_492f4c79() {
     level endon(#"hash_7646638df88a3656");
-    wait(12);
+    wait 12;
     zm_utility::function_75fd65f9(self.var_f7f308cd, 1);
 }
 
@@ -199,7 +199,7 @@ function private zone_watcher(challenge, var_2d5ebf67, var_530e040f) {
     level endon(#"hash_7646638df88a3656");
     self.var_4cb0b91f = 0;
     self zm_utility::function_ba39d198(challenge.var_df62490a, 0);
-    wait(12);
+    wait 12;
     self zm_utility::function_ba39d198(challenge.var_df62490a, 1);
     if (getgametypesetting("zmTrialsVariant") && level.round_number > 20) {
         var_d4862226 = 90;
@@ -219,7 +219,7 @@ function private damage_watcher(var_a4a28ac7) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656", #"host_migration_begin");
     if (isdefined(var_a4a28ac7) && var_a4a28ac7) {
-        wait(12);
+        wait 12;
     }
     while (true) {
         /#
@@ -239,7 +239,7 @@ function private damage_watcher(var_a4a28ac7) {
                 self dodamage(var_16e6b8ea, self.origin);
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -256,7 +256,7 @@ function private function_ff66b979() {
         player stop_timer();
     }
     var_a0328dd5 = gettime();
-    wait(5);
+    wait 5;
     foreach (player in getplayers()) {
         if (!isdefined(player.var_e5cde66)) {
             player thread damage_watcher(0);
@@ -276,7 +276,7 @@ function private function_ff66b979() {
 function private function_dae80de6() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    wait(5);
+    wait 5;
     s_challenge = zm_trial::function_a36e8c38(#"defend_area");
     s_defend_area = struct::get(s_challenge.var_f7f308cd);
     s_result = positionquery_source_navigation(s_defend_area.origin, 64, 1500, 100, 32);
@@ -302,7 +302,7 @@ function private function_dae80de6() {
     while (var_3dbf02b9.size) {
         if (!function_e1378d07()) {
             self bot_util::function_33834a13();
-            wait(1);
+            wait 1;
             continue;
         }
         v_position = array::random(var_3dbf02b9);
@@ -311,7 +311,7 @@ function private function_dae80de6() {
         if (!function_e1378d07()) {
             self bot_util::function_33834a13();
         }
-        wait(randomintrange(5, 10));
+        wait randomintrange(5, 10);
     }
 }
 

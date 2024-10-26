@@ -72,7 +72,7 @@ function function_988b8f91(e_attacker, w_weapon) {
                 util::wait_network_frame();
             }
         }
-        wait(0.25);
+        wait 0.25;
         a_e_blasted_zombies = array::remove_dead(a_e_blasted_zombies);
         a_e_blasted_zombies = array::remove_undefined(a_e_blasted_zombies);
         foreach (var_8eee7949 in a_e_blasted_zombies) {
@@ -99,13 +99,13 @@ function function_cd252d6e(e_attacker, w_weapon) {
             e_attacker zm_stats::increment_challenge_stat(#"zombie_hunter_plasmatic_burst");
         }
         i++;
-        wait(0.5);
+        wait 0.5;
     }
     if (self ishidden()) {
         while (self ishidden()) {
-            wait(0.5);
+            wait 0.5;
         }
-        wait(0.5);
+        wait 0.5;
     }
     self.var_1e7e5205 = undefined;
     self thread clientfield::set("zm_aat_plasmatic_burst" + "_burn", 0);

@@ -115,7 +115,7 @@ function function_2beb73f6(var_5ea5c94d, ended_early) {
 // Checksum 0x4da8c7f3, Offset: 0x588
 // Size: 0x74
 function setup_phone_audio() {
-    wait(1);
+    wait 1;
     level.var_2363fbdb = 0;
     level.var_c2e6ed5a = 0;
     level.var_1c33dba2 = getentarray("secret_phone_trig", "targetname");
@@ -155,13 +155,13 @@ function function_a546fd97() {
             level.var_2363fbdb += 1;
             self.e_phone scene::play("ring");
             if (level.var_2363fbdb == 3) {
-                wait(1);
+                wait 1;
                 self thread function_7dbe8985();
-                wait(1);
+                wait 1;
             }
             self waittill(#"dialog_played");
             self.e_phone scene::play("blinking");
-            wait(1);
+            wait 1;
         }
     }
 }

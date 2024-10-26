@@ -158,7 +158,7 @@ function function_e6937bfa() {
         level endon(#"kill_round");
     #/
     while (level.zombie_total > 3) {
-        wait(3);
+        wait 3;
     }
     for (a_ai_zombies = zombie_utility::get_round_enemy_array(); a_ai_zombies.size > 0 || level.zombie_total > 0; a_ai_zombies = zombie_utility::get_round_enemy_array()) {
         if (a_ai_zombies.size <= 3) {
@@ -166,7 +166,7 @@ function function_e6937bfa() {
                 ai_zombie thread registercentrifuge_zip_doormember();
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -184,7 +184,7 @@ function private registercentrifuge_zip_doormember() {
             self.var_eceaa835 = 1;
             if (self.zombie_move_speed !== "sprint" && self.zombie_move_speed !== "super_sprint") {
                 while (!isdefined(self.favoriteenemy) || distancesquared(self.favoriteenemy.origin, self.origin) < 65536) {
-                    wait(1);
+                    wait 1;
                 }
                 self zombie_utility::set_zombie_run_cycle("sprint");
             }
@@ -269,21 +269,21 @@ function round_spawning() {
         var_404e4288 = zombie_utility::get_current_zombie_count();
         var_3cafeff5 = 0;
         while (var_404e4288 >= level.zombie_ai_limit || level.zombie_total <= 0 && !level flag::get(#"infinite_round_spawning")) {
-            wait(0.1);
+            wait 0.1;
             zm_quick_spawning::function_367e3573();
             var_404e4288 = zombie_utility::get_current_zombie_count();
             continue;
         }
         while (zombie_utility::get_current_actor_count() >= level.zombie_actor_limit) {
             zombie_utility::clear_all_corpses();
-            wait(0.1);
+            wait 0.1;
         }
         if (flag::exists("world_is_paused")) {
             level flag::wait_till_clear("world_is_paused");
         }
         level flag::wait_till("spawn_zombies");
         while (level.zm_loc_types[#"zombie_location"].size <= 0) {
-            wait(0.1);
+            wait 0.1;
         }
         run_custom_ai_spawn_checks();
         if (isdefined(level.hostmigrationtimer) && level.hostmigrationtimer) {
@@ -304,7 +304,7 @@ function round_spawning() {
             var_3cafeff5 = var_6095c0b6.var_3cafeff5;
         }
         if (var_3cafeff5) {
-            wait(isdefined(zombie_utility::get_zombie_var(#"zombie_spawn_delay")) ? zombie_utility::get_zombie_var(#"zombie_spawn_delay") : zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5"));
+            wait isdefined(zombie_utility::get_zombie_var(#"zombie_spawn_delay")) ? zombie_utility::get_zombie_var(#"zombie_spawn_delay") : zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5");
             continue;
         }
         util::wait_network_frame();
@@ -341,9 +341,9 @@ function function_4e8157cd(var_404e4288, var_8dd554ee) {
             ai ai::set_behavior_attribute("can_juke", 0);
         }
         if (level.zombie_respawns > 0) {
-            wait(0.1);
+            wait 0.1;
         } else if (var_404e4288 < var_8dd554ee) {
-            wait(0.1);
+            wait 0.1;
         } else {
             var_3cafeff5 = 1;
         }
@@ -497,7 +497,7 @@ function round_spawning_test() {
         spawner = array::random(level.zombie_spawners);
         ai = zombie_utility::spawn_zombie(spawner, spawner.targetname, spawn_point);
         ai waittill(#"death");
-        wait(5);
+        wait 5;
     }
 }
 
@@ -520,10 +520,10 @@ function round_start() {
         if (isdefined(level.zombie_round_start_delay)) {
             n_delay = level.zombie_round_start_delay;
         }
-        wait(n_delay);
+        wait n_delay;
     }
     if (getdvarint(#"scr_writeconfigstrings", 0) == 1) {
-        wait(5);
+        wait 5;
         exitlevel();
         return;
     }
@@ -596,11 +596,11 @@ function round_one_up() {
         if (isdefined(level.host_ended_game) && level.host_ended_game) {
             return;
         }
-        wait(6.25);
+        wait 6.25;
         level notify(#"intro_hud_done");
-        wait(2);
+        wait 2;
     } else {
-        wait(2.5);
+        wait 2.5;
     }
     reportmtu(level.round_number);
 }
@@ -758,7 +758,7 @@ function round_think(restart = 0) {
         println("<dev string:x106>" + level.round_number + "<dev string:x122>" + level.players.size);
         level.round_start_time = gettime();
         while (level.zm_loc_types[#"zombie_location"].size <= 0) {
-            wait(0.1);
+            wait 0.1;
         }
         /#
             zkeys = getarraykeys(level.zones);
@@ -799,7 +799,7 @@ function round_think(restart = 0) {
         }
         if (!level flag::get("round_reset") && zm_custom::function_901b751c(#"zmroundcap") == level.round_number && level.round_number != 0) {
             level.var_458eec65 = 1;
-            wait(3);
+            wait 3;
             zm_custom::function_9be9c072("zmRoundCap");
             return;
         }
@@ -875,7 +875,7 @@ function round_timeout() {
         level flag::wait_till_any(array("power_on", "enable_round_timeout"));
     }
     while (level.zombie_total > 0) {
-        wait(1);
+        wait 1;
     }
     n_timeout = isdefined(level.var_2e3a6cbe) ? level.var_2e3a6cbe : 600;
     var_18836dd9 = zombie_utility::get_current_zombie_count();
@@ -892,7 +892,7 @@ function round_timeout() {
                 }
             }
         }
-        wait(1);
+        wait 1;
         var_18836dd9 = var_a456111d;
         var_a456111d = zombie_utility::get_current_zombie_count();
     }
@@ -998,7 +998,7 @@ function get_zombie_spawn_delay(n_round) {
                 level.debug_zombie_count_hud destroy();
                 level.debug_zombie_count_hud = undefined;
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -1024,7 +1024,7 @@ function round_wait() {
             level waittill(#"forever");
         }
     #/
-    wait(1);
+    wait 1;
     /#
         level thread print_zombie_counts();
         level thread sndmusiconkillround();
@@ -1039,7 +1039,7 @@ function round_wait() {
         if (level flag::get("round_reset")) {
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1058,7 +1058,7 @@ function sndmusiconkillround() {
 // Checksum 0x789b8530, Offset: 0x4368
 // Size: 0x8c
 function play_level_start_vox_delayed() {
-    wait(3);
+    wait 3;
     players = getplayers();
     if (players.size <= 0) {
         return;

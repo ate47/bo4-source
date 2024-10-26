@@ -314,7 +314,7 @@ function function_3be2d17f(watcher, player) {
 function function_b649601a() {
     self.vehicle endon(#"death");
     self.vehicle clientfield::set("ultimate_turret_init", 1);
-    wait(0.25);
+    wait 0.25;
     self.vehicle clientfield::set("ultimate_turret_open", 1);
 }
 
@@ -478,7 +478,7 @@ function hackedcallbackpost(hacker) {
 function play_deploy_anim_after_wait(wait_time) {
     turret = self;
     turret endon(#"death");
-    wait(wait_time);
+    wait wait_time;
     turret play_deploy_anim();
 }
 
@@ -626,7 +626,7 @@ function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, sh
         self.owner [[ level.playequipmentdestroyedonplayer ]]();
     }
     var_980fde21 = self.turret;
-    wait(0.1);
+    wait 0.1;
     turretvehicle ghost();
     turretvehicle notsolid();
     turretvehicle waittilltimeout(2, #"remote_weapon_end");
@@ -635,7 +635,7 @@ function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, sh
             waitframe(1);
         }
         turretvehicle.dontfreeme = undefined;
-        wait(0.5);
+        wait 0.5;
         if (isdefined(turretvehicle)) {
             turretvehicle delete();
         }
@@ -664,7 +664,7 @@ function enableturretafterwait(wait_time) {
     if (isdefined(self.owner)) {
         self.owner endon(#"disconnect", #"joined_team", #"joined_spectators");
     }
-    wait(wait_time);
+    wait wait_time;
     self.turret_enabled = 1;
 }
 
@@ -736,7 +736,7 @@ function turret_laser_watch() {
         } else if (islaseron(veh)) {
             veh vehicle::enable_laser(0, 0);
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -801,7 +801,7 @@ function function_fefefcc4() {
     veh = self;
     turret_index = 0;
     veh endon(#"death", #"death_started", #"end_turret_scanning");
-    wait(0.8);
+    wait 0.8;
     bundle = get_killstreak_bundle();
     var_beeadda8 = isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 300;
     while (true) {
@@ -835,7 +835,7 @@ function function_fefefcc4() {
             }
         }
         wait_time = veh.var_3413afc5 == #"standard_sight" ? 0.25 : 0.1;
-        wait(wait_time);
+        wait wait_time;
     }
 }
 
@@ -934,7 +934,7 @@ function function_b8952a40(turret_index) {
         } else {
             veh turretsettarget(turret_index, veh.enemy, var_559acfe);
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -947,7 +947,7 @@ function turretscanning() {
     veh endon(#"death", #"death_started", #"end_turret_scanning");
     veh.turret_target = undefined;
     veh.do_not_clear_targets_during_think = 1;
-    wait(0.8);
+    wait 0.8;
     veh playsound(#"mpl_turret_startup");
     veh playloopsound(#"hash_69240c6db92da5bf");
     bundle = get_killstreak_bundle();
@@ -967,18 +967,18 @@ function turretscanning() {
         #/
         if (isdefined(veh.isstunned) && veh.isstunned || isdefined(veh.isjammed) && veh.isjammed) {
             veh function_fc58f46f();
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (veh.controlled || !veh.turret_enabled) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (isdefined(veh.enemy)) {
             if (!is_valid_target(veh.enemy, veh.team)) {
                 veh setignoreent(veh.enemy, 1);
                 veh function_fc58f46f();
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
             var_2aa33bf1 = 0;
@@ -990,7 +990,7 @@ function turretscanning() {
             if (var_2aa33bf1) {
                 veh setpersonalignore(veh.enemy, 1);
                 veh function_fc58f46f();
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
             if (!isdefined(veh.var_7eb3ebd5[veh.enemy getentitynumber()]) && veh targetting_delay::function_1c169b3a(veh.enemy)) {
@@ -1031,10 +1031,10 @@ function turretscanning() {
                         veh.owner playsoundtoplayer(#"hash_7ea486136cd776c", veh.owner);
                     }
                     veh.turretrotscale = 1;
-                    wait(randomfloatrange(0.05, 0.2));
+                    wait randomfloatrange(0.05, 0.2);
                 }
             } else {
-                wait(0.25);
+                wait 0.25;
             }
             continue;
         }
@@ -1079,7 +1079,7 @@ function turretscanning() {
                 while (attempts < max_tries && !isdefined(veh.enemylastseentime) && isdefined(veh.enemy)) {
                     veh getperfectinfo(self.enemy, 0);
                     attempts++;
-                    wait(0.1);
+                    wait 0.1;
                 }
             }
         }
@@ -1213,7 +1213,7 @@ function function_31477582() {
     max_delta = 1;
     while (true) {
         if (!isdefined(self.turret)) {
-            wait(1);
+            wait 1;
             continue;
         }
         trace = physicstrace(self.origin + (0, 0, 15), self.origin + (0, 0, -10), (-3, -3, -1), (3, 3, 1), self.turret, 1 | 16);
@@ -1225,7 +1225,7 @@ function function_31477582() {
             continue;
         }
         max_delta = 1;
-        wait(1);
+        wait 1;
     }
 }
 

@@ -132,7 +132,7 @@ function function_cd674a85() {
         n_default_wait = 0.75;
         break;
     }
-    wait(n_default_wait);
+    wait n_default_wait;
 }
 
 // Namespace zombie_werewolf_util/ai_werewolf_util
@@ -267,7 +267,7 @@ function function_774f6e70(s_spawn_loc, var_58a8a3cb = 1, var_cda6f9a7 = undefin
         zm_ai_utility::start_patrol(self, s_patrol.path, s_patrol.loops, var_cda6f9a7, var_d5e7e76d);
         if (var_58a8a3cb) {
             for (n_timer = randomintrange(60, 90); n_timer > 0 && level.var_9427911d > 15; n_timer--) {
-                wait(1);
+                wait 1;
             }
             zm_ai_utility::stop_patrol(self);
         }

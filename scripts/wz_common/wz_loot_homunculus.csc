@@ -38,7 +38,7 @@ function function_5aaf5515(localclientnum, dynent) {
     dynent endon(#"hash_178cf342d49af85f");
     while (isdefined(dynent) & function_8a8a409b(dynent) && function_ffdbe8c2(dynent) !== 2) {
         dynent.var_46e47933 = playsound(localclientnum, "mus_homunculus_dance", dynent.origin);
-        wait(7.5);
+        wait 7.5;
     }
 }
 

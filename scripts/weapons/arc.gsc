@@ -33,7 +33,7 @@ function init_arc(weapon, var_26b2b1bb) {
     // Size: 0x4a
     function update_dvars() {
         while (true) {
-            wait(1);
+            wait 1;
             level.var_6d3af47 = getdvarint(#"hash_6e465f7410cc100f", 0);
         }
     }
@@ -218,7 +218,7 @@ function find_arc_targets(var_26b2b1bb, eattacker, arc_source, arc_source_origin
 // Size: 0x1f6
 function function_30a9a6c1(var_26b2b1bb, delay, eattacker, arc_source, var_9a099e60, arc_source_origin, arc_source_pos, arc_target, arc_target_pos, depth, var_4d3cc1a7 = 1) {
     if (delay) {
-        wait(float(delay) / 1000);
+        wait float(delay) / 1000;
         if (!function_33d5b9a6(var_26b2b1bb, eattacker, arc_source, arc_source_origin, depth, arc_target, var_4d3cc1a7)) {
             return;
         }

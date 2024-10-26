@@ -14,7 +14,7 @@ function main() {
 // Size: 0x48
 function function_5831bc23() {
     while (true) {
-        wait(300);
+        wait 300;
         playsound(0, #"hash_5727281a9dcec94e", (-587, 2988, 1901));
     }
 }

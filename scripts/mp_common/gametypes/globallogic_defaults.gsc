@@ -40,9 +40,9 @@ function default_onforfeit(params) {
     level endon(#"forfeit in progress", #"abort forfeit");
     forfeit_delay = 20;
     announcement(game.strings[#"opponent_forfeiting_in"], forfeit_delay, 0);
-    wait(10);
+    wait 10;
     announcement(game.strings[#"opponent_forfeiting_in"], 10, 0);
-    wait(10);
+    wait 10;
     if (!isdefined(params)) {
         round::set_winner(level.players[0]);
     } else {

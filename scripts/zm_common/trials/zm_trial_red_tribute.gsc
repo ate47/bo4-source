@@ -127,7 +127,7 @@ function private function_6fa5c86() {
             level flag::clear("infinite_round_spawning");
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -146,7 +146,7 @@ function on_ai_spawned() {
 function private track_spawns() {
     self endon(#"death");
     level endon(#"hash_7646638df88a3656");
-    wait(1);
+    wait 1;
     if (!(isdefined(self.var_12745932) && self.var_12745932)) {
         level.var_ddd04c77++;
         if (level.var_ddd04c77 >= level.var_38b15968) {

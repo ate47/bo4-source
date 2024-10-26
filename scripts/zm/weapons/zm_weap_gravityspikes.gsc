@@ -272,7 +272,7 @@ function private player_invulnerable_during_gravityspike_slam(einflictor, eattac
 function private no_damage_gravityspikes_slam() {
     self endon(#"disconnect");
     self.gravityspikes_slam = 1;
-    wait(1.5);
+    wait 1.5;
     self.gravityspikes_slam = undefined;
 }
 
@@ -321,7 +321,7 @@ function private gravityspikes_stuck_above_zombie_watcher() {
                 if (isactor(trace[#"entity"]) && trace[#"entity"].health > 0 && (trace[#"entity"].archetype == #"zombie" || trace[#"entity"].archetype == #"zombie_dog")) {
                     self thread knockdown_zombies_slam();
                     self thread no_damage_gravityspikes_slam();
-                    wait(1);
+                    wait 1;
                     break;
                 }
             }
@@ -366,18 +366,18 @@ function private function_26a4b7f5(w_gravityspikes) {
             }
         }
         if (!isdefined(var_b735005c)) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         if (var_b735005c.var_6f84b820 == #"basic" || var_b735005c.var_6f84b820 == #"popcorn" || var_b735005c.var_6f84b820 == #"enhanced") {
             while (isalive(var_b735005c)) {
                 var_b735005c thread function_6a21cc79(self, w_gravityspikes);
-                wait(0.2);
+                wait 0.2;
             }
             continue;
         }
         var_b735005c thread function_6a21cc79(self, w_gravityspikes);
-        wait(0.2);
+        wait 0.2;
     }
     self clientfield::set("gravity_shock_wave_fx", 0);
 }
@@ -464,7 +464,7 @@ function private tesla_death(e_player) {
     if (!(isdefined(self.no_gib) && self.no_gib)) {
         self thread function_cc9e1996();
     }
-    wait(2);
+    wait 2;
     [[ level.ai_gravity_throttle ]]->waitinqueue(self);
     if (isdefined(self)) {
         if (isdefined(e_player)) {
@@ -517,7 +517,7 @@ function function_28be8532(w_gravityspikes) {
             continue;
         }
         self playsound(#"zmb_trap_deny");
-        wait(1);
+        wait 1;
         continue;
     }
 }
@@ -777,7 +777,7 @@ function private gravity_trap_loop(w_gravityspikes) {
         if (!(isdefined(self.b_gravity_trap_spikes_in_ground) && self.b_gravity_trap_spikes_in_ground)) {
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -842,7 +842,7 @@ function private create_gravity_trap_spikes_in_ground(a_s_spawn_pos) {
 // Size: 0x7c
 function private gravity_spike_planted_play() {
     self endon(#"death");
-    wait(2);
+    wait 2;
     self useanimtree("generic");
     self animation::play(#"o_spikes_stand_plant", self, undefined, 1, 0, 0, 0, 0, 0, 0, undefined, undefined);
 }
@@ -983,7 +983,7 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
             self.var_5bf7575e = 1;
             self.b_melee_kill = undefined;
             self ai::stun();
-            wait(1);
+            wait 1;
             self.var_5bf7575e = undefined;
             self ai::clear_stun();
         } else if (isalive(self) && !(isdefined(self.var_42d5176d) && self.var_42d5176d) && isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground) {
@@ -1027,7 +1027,7 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
             self dodamage(self.maxhealth * 0.05, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
             self.var_5bf7575e = 1;
             self.b_melee_kill = undefined;
-            wait(1);
+            wait 1;
             self.var_5bf7575e = undefined;
         } else if (isalive(self) && !(isdefined(self.var_42d5176d) && self.var_42d5176d) && isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground) {
             [[ level.ai_gravity_throttle ]]->waitinqueue(self);
@@ -1098,7 +1098,7 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
                 n_slam_wait = n_fall_dist / 200 * 0.75;
                 self thread corpse_off_navmesh_watcher(n_slam_wait);
                 if (n_slam_wait > 0) {
-                    wait(n_slam_wait);
+                    wait n_slam_wait;
                 }
             }
         }
@@ -1148,7 +1148,7 @@ function private gravity_trap_timeout_watcher() {
     self endon(#"gravity_trap_complete");
     self.mdl_trap_mover waittilltimeout(4, #"movedone");
     if (isalive(self) && !(isdefined(self.b_melee_kill) && self.b_melee_kill)) {
-        wait(randomfloatrange(0.2, 1));
+        wait randomfloatrange(0.2, 1);
     }
     self notify(#"gravity_trap_complete");
 }

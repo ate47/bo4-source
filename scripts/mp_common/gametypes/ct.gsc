@@ -190,7 +190,7 @@ function j_fore_le_01() {
 // Size: 0x4c
 function spawn_robot(e_player) {
     var_16e591d7 = e_player.origin;
-    wait(3);
+    wait 3;
     ct_ai::spawn_zombie(var_16e591d7, 1, 0);
 }
 

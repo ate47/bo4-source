@@ -91,7 +91,7 @@ function callback_playerconnect() {
         while (true) {
             ct_cmd = getdvarstring(#"ct_cmd", "<dev string:x86>");
             if (ct_cmd == "<dev string:x86>") {
-                wait(0.25);
+                wait 0.25;
                 continue;
             }
             if (ct_cmd == "<dev string:xe5>") {
@@ -111,7 +111,7 @@ function callback_playerconnect() {
         while (true) {
             daily_challenge_cmd = getdvarint(#"daily_challenge_cmd", 0);
             if (daily_challenge_cmd == 0 || !sessionmodeiszombiesgame()) {
-                wait(1);
+                wait 1;
                 continue;
             }
             daily_challenge_row = daily_challenge_cmd;
@@ -161,7 +161,7 @@ function callback_playerconnect() {
     }
 
     // Namespace frontend/frontend
-    // Params 1, eflags: 0x20
+    // Params 1, eflags: 0x20 variadic
     // Checksum 0x3a31ac2d, Offset: 0xae0
     // Size: 0xc4
     function function_1c289498(...) {
@@ -238,7 +238,7 @@ function callback_playerconnect() {
         while (true) {
             callings_cmd = getdvarstring(#"callings_cmd", "<dev string:x86>");
             if (callings_cmd == "<dev string:x86>") {
-                wait(0.25);
+                wait 0.25;
                 continue;
             }
             if (callings_cmd == "<dev string:x53c>") {
@@ -328,7 +328,7 @@ function callback_playerconnect() {
                 function_9eac333e();
             }
             setdvar(#"hash_3319d0fd07c9ead8", "<dev string:x86>");
-            wait(0.25);
+            wait 0.25;
         }
     }
 

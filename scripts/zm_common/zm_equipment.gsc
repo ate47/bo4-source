@@ -305,7 +305,7 @@ function equipment_spawn_think() {
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (player zm_utility::in_revive_trigger() || player zm_utility::is_drinking()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (!is_limited(self.equipment) || !limited_in_use(self.equipment)) {
@@ -322,7 +322,7 @@ function equipment_spawn_think() {
             player give(self.equipment);
             continue;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -618,7 +618,7 @@ function show_hint(equipment) {
     if (isdefined(self.do_not_display_equipment_pickup_hint) && self.do_not_display_equipment_pickup_hint) {
         return;
     }
-    wait(0.5);
+    wait 0.5;
     text = get_howto_hint(equipment);
     self show_hint_text(text);
 }

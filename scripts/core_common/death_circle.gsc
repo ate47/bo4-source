@@ -327,7 +327,7 @@ function function_dca12a73() {
 // Checksum 0x95b0d906, Offset: 0x1908
 // Size: 0x4a
 function private function_ccac34f8(var_36aa237c, var_11dc771d) {
-    wait(var_36aa237c);
+    wait var_36aa237c;
     level clientfield::set_world_uimodel("hudItems.warzone.collapse", var_11dc771d);
     level.var_56baa802 = var_11dc771d;
 }
@@ -366,7 +366,7 @@ function start() {
     level flagsys::wait_till(#"insertion_teleport_completed");
     level.var_56baa802 = gettime() + int((waitsec + level.var_a425ed89) * 1000);
     level clientfield::set_world_uimodel("hudItems.warzone.collapse", level.var_56baa802);
-    wait(level.var_a425ed89);
+    wait level.var_a425ed89;
     level.deathcircle = spawn("script_model", initcircle.origin);
     level.deathcircle.targetname = "death_circle";
     level.deathcircle setmodel("tag_origin");
@@ -477,7 +477,7 @@ function start() {
             setmatchflag("bomb_timer_a", 1);
             setbombtimer("A", gettime() + 1000 + int(var_904b645e * 1000));
             function_55bf22ef();
-            wait(var_904b645e);
+            wait var_904b645e;
             setmatchflag("bomb_timer_a", 0);
             level clientfield::set_world_uimodel("hudItems.warzone.collapseTimerState", 0);
         }
@@ -531,11 +531,11 @@ function private countdown(waitsec, circleindex, nextcircle) {
         voiceevent("warCircleDetected");
     }
     if (waitsec > 15 && waitsec >= 45) {
-        wait(waitsec - 15);
+        wait waitsec - 15;
         voiceevent("warCircleCollapseImminent");
-        wait(15);
+        wait 15;
     } else {
-        wait(waitsec);
+        wait waitsec;
     }
     voiceevent("warCircleCollapseOccurring");
     playsoundatposition(#"hash_3fb30e7a85b2bf7e", (0, 0, 0));
@@ -926,7 +926,7 @@ function function_4dc40125() {
         adddebugcommand("<dev string:x47b>");
         adddebugcommand("<dev string:x4d1>");
         while (true) {
-            wait(0.25);
+            wait 0.25;
             dvarstr = getdvarstring(#"devgui_deathcircle", "<dev string:x519>");
             if (dvarstr == "<dev string:x519>") {
                 continue;
@@ -1111,14 +1111,14 @@ function function_4dc40125() {
             if (var_f3ca456b.size + level.deathcircles.size >= var_9a165bb5) {
                 var_de130ab9 = {#var_91393a2d:var_1baf9723};
                 function_92d1707f(#"hash_3a9b483e717d26be", #"info", var_de130ab9, #"circles", var_f3ca456b);
-                wait(1);
+                wait 1;
                 var_f3ca456b = [];
             }
         }
         if (var_f3ca456b.size >= 0) {
             var_de130ab9 = {#var_91393a2d:var_1baf9723};
             function_92d1707f(#"hash_3a9b483e717d26be", #"info", var_de130ab9, #"circles", var_f3ca456b);
-            wait(1);
+            wait 1;
         }
     }
 

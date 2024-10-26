@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_fixup/character_unlock_fixup
-// Params 5, eflags: 0x20
+// Params 5, eflags: 0x20 variadic
 // Checksum 0x2b076203, Offset: 0x138
 // Size: 0x20e
 function register_character_unlock(unlock_name, unlock_stat, item, var_f27097cc, ...) {

@@ -62,7 +62,7 @@ function function_54922a21() {
         }
         if (b_charged) {
             self function_a059fe7f();
-            wait(1);
+            wait 1;
             continue;
         }
         waitframe(1);

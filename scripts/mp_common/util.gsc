@@ -276,7 +276,7 @@ function wait_endon(waittime, endonstring, endonstring2, endonstring3, endonstri
     if (isdefined(endonstring4)) {
         self endon(endonstring4);
     }
-    wait(waittime);
+    wait waittime;
     return true;
 }
 
@@ -361,7 +361,7 @@ function trigger_thread(ent, on_enter_payload, on_exit_payload) {
         self thread [[ on_enter_payload ]](ent, endon_condition);
     }
     while (isdefined(ent) && ent istouching(self)) {
-        wait(0.01);
+        wait 0.01;
     }
     ent notify(endon_condition);
     if (isdefined(ent) && isdefined(on_exit_payload)) {

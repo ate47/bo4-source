@@ -258,7 +258,7 @@ function triggercheck(target) {
                 } else {
                     target.preferrednextpos = 1;
                 }
-                wait(0.25);
+                wait 0.25;
             }
         }
     }
@@ -275,9 +275,9 @@ function damagetarget(dir) {
         switch (dir) {
         case 1:
             self rotateroll(self.angles[1] + 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self rotateroll(self.angles[1] - 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self playsound("amb_target_flip");
             break;
         case 2:
@@ -294,23 +294,23 @@ function damagetarget(dir) {
             break;
         case 3:
             self rotateroll(self.angles[0] - 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self rotateroll(self.angles[0] + 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self playsound("amb_target_flip");
             break;
         case 4:
             self rotateroll(self.angles[1] - 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self rotateroll(self.angles[1] + 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self playsound("amb_target_flip");
             break;
         case 5:
             self rotateroll(self.angles[0] - 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self rotateroll(self.angles[0] + 90, 0.1);
-            wait(0.2);
+            wait 0.2;
             self playsound("amb_target_flip");
             break;
         }
@@ -327,7 +327,7 @@ function damagetargetlights(speaker, alias, exploderhandle) {
         self waittill(#"damage");
         speaker playsound(alias);
         exploder::exploder(exploderhandle);
-        wait(0.5);
+        wait 0.5;
         exploder::stop_exploder(exploderhandle);
     }
 }
@@ -396,54 +396,54 @@ function rotatetarget(dir, deg, speed, pausetime) {
         case 1:
             self rotateyaw(self.angles[2] + deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             self rotateyaw(self.angles[2] - deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             break;
         case 2:
             self rotateyaw(self.angles[2] - deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             self rotateyaw(self.angles[2] + deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             break;
         case 3:
             self rotateroll(self.angles[0] + deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             self rotateroll(self.angles[0] - deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             break;
         case 4:
             self rotateroll(self.angles[0] - deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             self rotateroll(self.angles[0] + deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             break;
         case 5:
             self rotateroll(self.angles[1] + deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             self rotateroll(self.angles[1] - deg, speed);
             self playsound("amb_target_rotate");
-            wait(pausetime);
+            wait pausetime;
             break;
         case 6:
             self rotatepitch(self.angles[1] - deg, speed);
-            wait(pausetime);
+            wait pausetime;
             self rotatepitch(self.angles[1] + deg, speed);
-            wait(pausetime);
+            wait pausetime;
             break;
         case 7:
             self rotateto((self.angles[0] + 90, self.angles[1] - 90, self.angles[2] + 45), speed);
-            wait(pausetime);
+            wait pausetime;
             self rotateto((self.angles[0] - 90, self.angles[1] + 90, self.angles[2] - 45), speed);
-            wait(pausetime);
+            wait pausetime;
             break;
         }
     }

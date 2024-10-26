@@ -186,7 +186,7 @@ function bomblets_deployed(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x7c
 function destruction_watcher(localclientnum, clientobjid) {
     self waittill(#"death", #"cleanup_objectives");
-    wait(0.1);
+    wait 0.1;
     if (isdefined(clientobjid)) {
         objective_delete(localclientnum, clientobjid);
         util::releaseobjid(localclientnum, clientobjid);
@@ -222,7 +222,7 @@ function hud_update(localclientnum) {
         prev_z = cur_z;
         remainingtime = 1 - (gettime() - birthtime) / lifetime;
         setuimodelvalue(var_2c36f843, remainingtime);
-        wait(delay);
+        wait delay;
     }
 }
 

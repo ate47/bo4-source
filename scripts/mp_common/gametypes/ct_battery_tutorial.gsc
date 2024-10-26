@@ -64,7 +64,7 @@ function init() {
 // Checksum 0x7c9d6817, Offset: 0x10a8
 // Size: 0x2c
 function function_d0ad09c5(effect) {
-    wait(randomfloatrange(0, 0.5));
+    wait randomfloatrange(0, 0.5);
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -86,7 +86,7 @@ function function_c9ff0dce() {
         } else if (level.var_ad7c0539 === 5 && level flag::get("war_machine") || level.var_ad7c0539 === 6 || level.var_ad7c0539 === 7 || level.var_ad7c0539 === 8 || level.var_ad7c0539 === 9) {
             self thread function_fef38fec();
         } else if (level.var_ad7c0539 === 10) {
-            wait(0.5);
+            wait 0.5;
             if (isdefined(level.var_2159a10d) && level.var_2159a10d) {
                 level ct_vo::play_vo(#"hash_7dfd3741e740a503", 1);
             }
@@ -338,7 +338,7 @@ function function_eef19056() {
     ct_vo::function_3ca1b77d();
     level ct_vo::play_vo(#"hash_70c47bde48968268", 1);
     level.var_e72728b8 = array(#"hero_pineapplegun");
-    wait(0.1);
+    wait 0.1;
     player thread ct_utils::function_61c3d59c(#"hash_77fa7edf837436cb", undefined);
     level thread ct_vo::play_vo(#"hash_14876e22977a8688", 0);
     level thread ct_vo::function_14b08e49(array(#"hash_7b37d7228954ffca"), "stop_target_nag");
@@ -355,9 +355,9 @@ function function_eef19056() {
         if (isdefined(waypoint) && !level flag::get("grenade_rock")) {
             waypoint ct_utils::function_f9ed304d();
         }
-        wait(0.1);
+        wait 0.1;
         level notify(#"stop_target_nag");
-        wait(0.5);
+        wait 0.5;
         while (!isalive(player)) {
             waitframe(1);
         }
@@ -386,21 +386,21 @@ function function_2f726e0f() {
         level.players[0] thread function_abd58b32();
         level.players[0] ct_vo::play_vo(#"hash_652da47d15a2ff49", 1);
         level.var_e72728b8 = array(#"hero_pineapplegun");
-        wait(0.1);
+        wait 0.1;
         level.players[0] thread ct_utils::function_61c3d59c(#"hash_15afb4b819807139", undefined);
         level flag::wait_till_any(array("grenade_stick", "reset_sticky"));
         ct_utils::function_c2a10fc();
         if (level flag::get("reset_sticky")) {
             level flag::clear("reset_sticky");
             level.players[0] ct_utils::function_49e0c5bc(0, 0);
-            wait(1);
+            wait 1;
         }
         ct_utils::function_654280be();
         ct_vo::function_3ca1b77d();
         while (!isalive(level.players[0])) {
             waitframe(1);
         }
-        wait(1);
+        wait 1;
     }
     level.players[0] ct_vo::play_vo(#"hash_374bbcc2c0a73764", 1);
     level notify(#"hash_4c9c5fbc89779e64");
@@ -421,7 +421,7 @@ function function_27e2d4aa() {
     ct_vo::function_3ca1b77d();
     while (!level flag::get("grenade_room")) {
         level.var_e72728b8 = array(#"eq_cluster_semtex_grenade", #"hero_pineapplegun");
-        wait(0.5);
+        wait 0.5;
         level.var_e72728b8 = array(#"hero_pineapplegun");
         level thread ct_vo::function_14b08e49(array(#"hash_581e7d390944eea6"), "stop_room_nag");
         s_loc = struct::get("s_grenade_room_target", "targetname");
@@ -438,14 +438,14 @@ function function_27e2d4aa() {
                 waypoint ct_utils::function_f9ed304d();
             }
         }
-        wait(0.1);
+        wait 0.1;
         ct_utils::function_654280be();
         ct_utils::function_c2a10fc();
-        wait(0.5);
+        wait 0.5;
     }
     ct_vo::function_c72e58c1();
     ct_vo::function_47ece28d();
-    wait(0.1);
+    wait 0.1;
     level.players[0] ct_vo::play_vo(#"hash_4a3fa914d1ccc37c", 1);
     level notify(#"stop_grenade_room_collision");
     level notify(#"stop_grenade_room_swim_collision");
@@ -466,7 +466,7 @@ function function_a03539a3() {
     level notify(#"start_grenade_room_swim_collision");
     while (!level flag::get("boat_enemies_dead")) {
         ct_vo::function_3ca1b77d();
-        wait(0.5);
+        wait 0.5;
         level thread ct_vo::play_vo(#"hash_4a3fab14d1ccc6e2");
         level.var_66b3c127 = struct::get_array("s_battery_behind_cover_soldiers", "targetname");
         level.var_9f073b4 = 0;
@@ -484,21 +484,21 @@ function function_a03539a3() {
         if (!level flag::get("boat_enemies_dead")) {
             level.players[0] ct_utils::function_49e0c5bc(0, 0);
         }
-        wait(0.1);
+        wait 0.1;
         if (isdefined(waypoint)) {
             waypoint ct_utils::function_f9ed304d();
         }
         while (!isalive(level.players[0])) {
             waitframe(1);
         }
-        wait(0.5);
+        wait 0.5;
     }
     level notify(#"hash_4c9c5fbc89779e64");
     ct_vo::function_c72e58c1();
     ct_vo::function_47ece28d();
     level thread ct_vo::play_vo(#"hash_281160c4a36c9dd0", 0);
     ct_utils::function_c2a10fc();
-    wait(2);
+    wait 2;
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -535,9 +535,9 @@ function function_bd6468f() {
     level.players[0] thread ct_vo::play_vo(#"hash_6385b89e518f7792", 0);
     n_len = soundgetplaybacktime(#"hash_6385b89e518f7792") / 1000;
     if (n_len - 2.5 > 0) {
-        wait(n_len - 2.5);
+        wait n_len - 2.5;
     } else {
-        wait(2);
+        wait 2;
     }
     var_1c549f7d = level.players[0] gamepadusedlast() ? #"hash_ed0eccfd92ed982" : #"hash_5e850d009a2366a2";
     level.players[0] thread ct_utils::function_61c3d59c(var_1c549f7d, undefined);
@@ -559,7 +559,7 @@ function function_bd6468f() {
         level.players[0] ct_vo::play_vo(#"hash_fbb33cda7463db4", 1);
         level thread ct_vo::function_14b08e49(array(#"hash_707aff02c0ababb9"), "stop_gib_nag");
         while (isalive(level.players[0]) && !level flag::get("gib_done")) {
-            wait(1);
+            wait 1;
             if (isalive(level.players[0])) {
                 a_enemies = level.players[0] ct_bots::function_dde6edbd();
                 if (!isdefined(a_enemies) || isdefined(a_enemies) && a_enemies.size < 1) {
@@ -567,18 +567,18 @@ function function_bd6468f() {
                 }
             }
         }
-        wait(1);
+        wait 1;
         if (!level flag::get("gib_done")) {
             level.players[0] ct_utils::function_49e0c5bc(0, 0);
         } else {
-            wait(1);
+            wait 1;
             if (!isalive(level.players[0])) {
                 level flag::clear("gib_done");
             }
         }
         ct_utils::function_c2a10fc();
         level notify(#"stop_gib_nag");
-        wait(1);
+        wait 1;
     }
     while (!isalive(level.players[0])) {
         waitframe(1);
@@ -604,7 +604,7 @@ function function_bd7019ff() {
         level.players[0] thread ct_utils::function_61c3d59c(#"hash_2e379a9a40b2463", undefined);
         level.players[0] thread function_c35855fd(1);
         while (isalive(level.players[0]) && !level flag::get("dock_cleared_1")) {
-            wait(1);
+            wait 1;
         }
         level notify(#"player_died");
         if (!level flag::get("dock_cleared_1")) {
@@ -613,10 +613,10 @@ function function_bd7019ff() {
         while (!isalive(level.players[0])) {
             waitframe(1);
         }
-        wait(0.5);
+        wait 0.5;
     }
     while (!level flag::get("dock_cleared_2")) {
-        wait(1);
+        wait 1;
         level.var_66b3c127 = struct::get_array("s_war_machine_aoe_guy_2");
         level.var_9f073b4 = 0;
         level thread ct_bots::activate_bots(level.var_66b3c127.size, #"axis");
@@ -633,7 +633,7 @@ function function_bd7019ff() {
             while (!isalive(level.players[0])) {
                 waitframe(1);
             }
-            wait(0.5);
+            wait 0.5;
             level.players[0] thread ct_utils::function_61c3d59c(#"hash_2e379a9a40b2463", undefined);
         }
     }
@@ -641,7 +641,7 @@ function function_bd7019ff() {
     level notify(#"stop_area_nag");
     ct_utils::function_c2a10fc();
     ct_vo::function_3ca1b77d();
-    wait(0.5);
+    wait 0.5;
     level notify(#"stop_war_machine_dock_forward_collision");
     level notify(#"start_war_machine_wall_bounce_collision");
     level notify(#"start_war_machine_wall_bounce_forward_collision");
@@ -679,11 +679,11 @@ function function_8d7d4d37() {
         level.players[0] thread function_f47cc92a();
         level.players[0] thread function_4f228e34();
         while (isalive(level.players[0]) && !level flag::get("patrol_dead")) {
-            wait(1);
+            wait 1;
         }
         if (!level flag::get("patrol_dead")) {
             level notify(#"bounce_failed");
-            wait(0.5);
+            wait 0.5;
             level.players[0] ct_utils::function_49e0c5bc(0, 0);
             ct_vo::function_c72e58c1();
             ct_vo::function_47ece28d();
@@ -732,7 +732,7 @@ function function_de37fc52() {
         level.players[0] thread function_8cff7e18();
         level.players[0] thread function_cc38079e();
         while (isalive(level.players[0]) && !level flag::get("window_hit")) {
-            wait(1);
+            wait 1;
         }
         if (!level flag::get("window_hit")) {
             level.players[0] ct_utils::function_49e0c5bc(0, 0);
@@ -748,7 +748,7 @@ function function_de37fc52() {
         if (level flag::get("window_hit")) {
             break;
         }
-        wait(1.5);
+        wait 1.5;
     }
     ct_utils::function_9aca2fa0("ct_action");
     level notify(#"stop_arc_nag");
@@ -757,7 +757,7 @@ function function_de37fc52() {
     ct_vo::function_3ca1b77d();
     level thread ct_vo::play_vo(#"hash_6923d897f72b52d4", 0);
     n_len = soundgetplaybacktime(#"hash_6923d897f72b52d4") / 1000;
-    wait(n_len - 3.5);
+    wait n_len - 3.5;
     level notify(#"stop_war_machine_arc_window_collision");
 }
 
@@ -776,7 +776,7 @@ function function_18161780() {
     while (!level flag::get("mantis_dead_1")) {
         ct_vo::function_3ca1b77d();
         level.players[0] ct_vo::play_vo(#"hash_324ec2f3d371715e", 1);
-        wait(0.5);
+        wait 0.5;
         ct_vo::function_3ca1b77d();
         level notify(#"hash_4c9c5fbc89779e64");
         level thread ct_vo::play_vo(#"hash_324ec3f3d3717311", 0);
@@ -798,7 +798,7 @@ function function_18161780() {
         while (!isalive(level.players[0])) {
             waitframe(1);
         }
-        wait(0.5);
+        wait 0.5;
     }
     while (!level flag::get("mantis_dead_2")) {
         level.players[0] spawn_mantis("s_battery_mantis_2", 3);
@@ -819,7 +819,7 @@ function function_18161780() {
         while (!isalive(level.players[0])) {
             waitframe(1);
         }
-        wait(0.5);
+        wait 0.5;
     }
     while (!level flag::get("mantis_dead_3")) {
         level.players[0] spawn_mantis("s_battery_mantis_3", 2);
@@ -841,12 +841,12 @@ function function_18161780() {
         while (!isalive(level.players[0])) {
             waitframe(1);
         }
-        wait(0.5);
+        wait 0.5;
         level notify(#"stop_nag");
     }
     ct_utils::function_c2a10fc();
     ct_utils::function_9aca2fa0("ct_action");
-    wait(0.5);
+    wait 0.5;
     ct_vo::function_3ca1b77d();
     level.players[0] ct_vo::function_831e0584(array(#"hash_1e4ccf71b4216e7b", #"hash_1e4cce71b4216cc8", #"hash_1e4cd171b42171e1"), 1);
     ct_vo::function_3ca1b77d();
@@ -877,11 +877,11 @@ function function_be0b44be() {
     level thread ct_vo::play_vo(#"hash_6ca8fb135975685a", 0);
     function_e17f2b8a();
     callback::remove_on_player_killed_with_params(&ct_utils::function_944e4110);
-    wait(1);
+    wait 1;
     ct_vo::function_3ca1b77d();
     level ct_vo::play_vo("vox_tvoi_tutor_batt_end_0", 1);
     level ct_vo::play_vo("vox_tvoi_tutor_batt_end_1", 1);
-    wait(1);
+    wait 1;
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -912,7 +912,7 @@ function function_30128519() {
         if (level.var_ff7ed5c8 >= 500) {
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     level.players[0] ct_vo::play_vo(#"hash_791a82dcb88e4978", 1);
 }
@@ -924,7 +924,7 @@ function function_30128519() {
 function function_f7113889() {
     self endon(#"death");
     level endon(#"scorestreak_earned", #"scorestreak_done");
-    wait(60);
+    wait 60;
     level thread ct_vo::function_14b08e49(array(#"hash_417649333d51a8d1"), "stop_score_nag");
 }
 
@@ -951,7 +951,7 @@ function function_8e068518() {
         level.var_66b3c127 = struct::get_array("s_killstreak_spawn", "targetname");
         level.var_9f073b4 = 0;
         ct_bots::activate_bots(level.var_66b3c127.size, #"axis");
-        wait(0.5);
+        wait 0.5;
         while (level.var_2159a10d && !(isdefined(level.var_51ff7a58) && level.var_51ff7a58) && isalive(level.players[0])) {
             waitframe(1);
         }
@@ -963,9 +963,9 @@ function function_8e068518() {
             globallogic_score::_setplayermomentum(level.players[0], level.var_ff7ed5c8);
         }
         level flag::set("stop_reinforce");
-        wait(0.1);
+        wait 0.1;
         if (!isalive(level.players[0])) {
-            wait(1);
+            wait 1;
             level.players[0] ct_utils::function_49e0c5bc(1);
             ct_utils::function_79957328(0.5);
         }
@@ -977,7 +977,7 @@ function function_8e068518() {
         while (!isalive(level.players[0])) {
             waitframe(1);
         }
-        wait(1);
+        wait 1;
         ct_utils::function_9aca2fa0("ct_action");
     }
 }
@@ -1025,7 +1025,7 @@ function function_e17f2b8a() {
             var_de7f669b = level.players[0] gamepadusedlast() ? #"hash_4e288d0b0adc213" : #"hash_5f4c5d85edf703ed";
             level.players[0] thread ct_utils::function_61c3d59c(var_de7f669b, undefined);
             ct_utils::function_e44c5b8e(#"planemortar", 0);
-            wait(0.1);
+            wait 0.1;
             ct_utils::function_daa27144();
             level thread function_7f8a8489();
             level.players[0] ct_utils::function_49e0c5bc(0);
@@ -1045,7 +1045,7 @@ function function_e17f2b8a() {
                 ct_utils::function_c2a10fc();
                 a_ai_enemies = level.players[0] ct_bots::function_dde6edbd();
                 n_alive = a_ai_enemies.size;
-                wait(5);
+                wait 5;
                 level.var_3a0d2784 = 0;
                 level.players[0] val::reset("scorestreak_protect", "takedamage");
                 a_bots = level.players[0] ct_bots::function_dde6edbd();
@@ -1069,9 +1069,9 @@ function function_e17f2b8a() {
             }
             ct_utils::function_c2a10fc();
         }
-        wait(0.5);
+        wait 0.5;
         level.players[0] ct_utils::function_49e0c5bc(0);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1124,7 +1124,7 @@ function spawn_mantis(str_loc, n_wait) {
             var_c361acde.overridevehicledamage = &function_2aab1550;
             level thread function_c8eefe3b(var_c361acde);
         }
-        wait(n_wait);
+        wait n_wait;
     }
 }
 
@@ -1160,14 +1160,14 @@ function function_119c4576(s_loc) {
     self endon(#"death");
     s_goal = struct::get(s_loc.target);
     self setgoal(s_goal.origin, 1);
-    wait(0.2);
+    wait 0.2;
     self clientfield::set("enemy_vehicle_keyline_render", 1);
-    wait(3);
+    wait 3;
     while (true) {
         if (isalive(level.players[0])) {
             self setgoal(level.players[0]);
         }
-        wait(randomfloatrange(2, 3));
+        wait randomfloatrange(2, 3);
     }
 }
 
@@ -1189,9 +1189,9 @@ function function_d0bcce1(n_index) {
         if (b_all_dead) {
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
-    wait(1);
+    wait 1;
     level flag::set("mantis_dead_" + n_index);
 }
 
@@ -1269,7 +1269,7 @@ function function_58c62280(b_keyline, b_ignoreall) {
             self val::reset(#"grenade_bot", "ignoreall");
         }
     }
-    wait(0.1);
+    wait 0.1;
     if (isdefined(s_loc.script_noteworthy)) {
         if (s_loc.script_noteworthy == "sticky_grenade_target") {
             self thread function_8670e3b1(s_loc);
@@ -1353,7 +1353,7 @@ function give_bot_weapon() {
 // Size: 0x44
 function function_25dcfd55() {
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     self clientfield::set("enemy_keyline_render", 1);
 }
 
@@ -1365,7 +1365,7 @@ function function_a40b5f9c() {
     self endon(#"death");
     self thread function_807b6bac();
     var_5168e40f = 0;
-    wait(3);
+    wait 3;
     while (true) {
         if (isalive(level.players[0]) && !level.players[0] util::is_player_looking_at(self getcentroid(), 0.7) && !var_5168e40f) {
             level.waypoint = ct_utils::create_waypoint(#"hash_4c8740a012a13b31", self.origin + (0, 0, 32), self.angles + (0, 90, 0), #"any", undefined, 20, undefined);
@@ -1417,7 +1417,7 @@ function function_c1c7228f() {
     self endon(#"death", #"enemy_arrived");
     trigger::wait_till("trigger_enemy_patrol_arrive");
     level flag::set("enemy_arrived");
-    wait(2.5);
+    wait 2.5;
     level ct_vo::play_vo(#"hash_6d25f9768578adff", 1);
 }
 
@@ -1430,7 +1430,7 @@ function function_c4d7c637(s_loc) {
     s_goal = struct::get(s_loc.target);
     level flag::wait_till("grenade_room");
     self setlowready(0);
-    wait(s_loc.script_wait);
+    wait s_loc.script_wait;
     self thread ct_utils::function_5b59f3b7(s_goal.origin, s_goal.angles, 32);
 }
 
@@ -1445,11 +1445,11 @@ function function_fdf5f193(s_loc) {
     self thread ct_utils::function_5b59f3b7(s_goal.origin, s_goal.angles, 32);
     self thread ct_bots::function_35e77034(getweapon(#"ar_accurate_t8"), 1);
     self val::set(#"grenade_bot", "ignoreall", 1);
-    wait(4);
+    wait 4;
     self.var_2925fedc = s_target.origin;
     while (isalive(self)) {
         self bot::function_b78e1ebf();
-        wait(randomfloatrange(0.1, 0.3));
+        wait randomfloatrange(0.1, 0.3);
     }
 }
 
@@ -1496,7 +1496,7 @@ function function_d91a23c7() {
         ct_utils::kill_all_bots(0, 1);
         return;
     }
-    wait(0.1);
+    wait 0.1;
     a_bots = level.players[0] ct_bots::function_dde6edbd();
     foreach (bot in a_bots) {
         if (isalive(bot)) {
@@ -1585,7 +1585,7 @@ function grenade_rock_watcher(s_loc) {
 // Size: 0x4c
 function function_fcfbe225() {
     level endon(#"combattraining_logic_finished");
-    wait(0.25);
+    wait 0.25;
     level ct_vo::play_vo(#"hash_652da17d15a2fa30", 1);
 }
 
@@ -1600,7 +1600,7 @@ function function_abd58b32() {
     while (true) {
         waitresult = level.players[0] waittill(#"grenade_fire");
         level notify(#"stop_grenade_nag");
-        wait(1);
+        wait 1;
         if (!level flag::get("grenade_stick") && !ct_vo::function_5d127774() && waitresult.weapon === getweapon(#"eq_cluster_semtex_grenade")) {
             level.players[0] ct_vo::play_vo(#"hash_6dd8907f24c397a9", 1);
         }
@@ -1662,7 +1662,7 @@ function function_7810b056() {
     level thread ct_bots::activate_bots(level.var_66b3c127.size, #"axis");
     ct_vo::function_3ca1b77d();
     level flag::wait_till("grenade_room_explode");
-    wait(1.5);
+    wait 1.5;
     a_bots = ct_bots::function_fbe3dcbb();
     foreach (bot in a_bots) {
         bot dodamage(bot.health + 100, bot.origin, self, undefined, undefined, "MOD_GRENADE_SPLASH");
@@ -1681,7 +1681,7 @@ function function_2fb096bf() {
     level.var_9f073b4 = 0;
     level thread ct_bots::activate_bots(level.var_66b3c127.size, #"axis");
     level flag::wait_till("grenade_room_explode");
-    wait(1.5);
+    wait 1.5;
     a_bots = ct_bots::function_fbe3dcbb();
     foreach (bot in a_bots) {
         bot dodamage(bot.health + 100, bot.origin, self, undefined, undefined, "MOD_GRENADE_SPLASH");
@@ -1707,7 +1707,7 @@ function function_31bf458c(waypoint) {
     if (isdefined(waypoint)) {
         waypoint ct_utils::function_f9ed304d();
     }
-    wait(1);
+    wait 1;
     level flag::set("boat_enemies_dead");
 }
 
@@ -1766,11 +1766,11 @@ function function_232a26ae() {
     self endon(#"death");
     level thread ct_vo::function_14b08e49(array(#"hash_7a2f183f7483bbe2"), "stop_nag");
     while (!self isplayerswimming()) {
-        wait(0.5);
+        wait 0.5;
     }
     self thread function_88761fc8();
     level notify(#"stop_nag");
-    wait(1);
+    wait 1;
     level.players[0] ct_vo::play_vo(#"hash_281161c4a36c9f83", 1);
 }
 
@@ -1784,7 +1784,7 @@ function function_88761fc8() {
     while (true) {
         if (self isplayerswimming() && level.ct_shared_warning ct_shared_warning::is_open(self)) {
             self ct_utils::function_f272fff4();
-            wait(0.1);
+            wait 0.1;
         }
         waitframe(1);
     }
@@ -1798,7 +1798,7 @@ function function_c35855fd(n_index) {
     self endon(#"death");
     level endon(#"player_died");
     ct_utils::function_654280be();
-    wait(1);
+    wait 1;
     level flag::set("dock_cleared_" + n_index);
 }
 
@@ -1810,7 +1810,7 @@ function function_4f228e34() {
     self endon(#"death");
     level endon(#"bounce_failed");
     ct_utils::function_654280be();
-    wait(1);
+    wait 1;
     level flag::set("patrol_dead");
 }
 
@@ -1880,7 +1880,7 @@ function function_8e12a34(waypoint) {
 function function_abc3a00d() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    wait(0.25);
+    wait 0.25;
     a_bots = self ct_bots::function_dde6edbd();
     foreach (bot in a_bots) {
         bot dodamage(bot.health + 100, bot.origin + (0, -100, 40), self, undefined, undefined, "MOD_EXPLOSIVE", 0, getweapon(#"hero_pineapplegun"));
@@ -1963,7 +1963,7 @@ function function_5a67767d(v_org) {
 function reinforce_enemy(s_loc) {
     level endon(#"scorestreak_done");
     self waittill(#"death");
-    wait(randomfloatrange(0.5, 1.5));
+    wait randomfloatrange(0.5, 1.5);
     if (!level flag::get("stop_reinforce")) {
         if (level flag::get("scorestreak_done")) {
             return;

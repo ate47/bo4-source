@@ -174,7 +174,7 @@ function fasttravel_start_fx(localclientnum, oldval, newval, bnewent, binitialsn
             mdl_fx = util::spawn_model(localclientnum, "tag_origin", self.origin, v_angles);
             waitframe(1);
             util::playfxontag(localclientnum, level._effect[#"fasttravel_start"], mdl_fx, "tag_origin");
-            wait(1.5);
+            wait 1.5;
             mdl_fx delete();
         }
     }
@@ -202,7 +202,7 @@ function play_fasttravel_end_fx(localclientnum, var_b8763ebc = "fasttravel_end")
         mdl_fx = util::spawn_model(localclientnum, "tag_origin", self.origin, v_angles);
         waitframe(1);
         util::playfxontag(localclientnum, level._effect[var_b8763ebc], mdl_fx, "tag_origin");
-        wait(1.15);
+        wait 1.15;
         mdl_fx delete();
     }
 }

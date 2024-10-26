@@ -171,6 +171,6 @@ function host_migration(localclientnum) {
 // Checksum 0x2e296605, Offset: 0x7c8
 // Size: 0xa
 function prevent_round_switch_animation() {
-    wait(3);
+    wait 3;
 }
 

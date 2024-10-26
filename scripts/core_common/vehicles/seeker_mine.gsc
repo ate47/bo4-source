@@ -52,7 +52,7 @@ function __init__() {
     // Size: 0x4a
     function update_dvars() {
         while (true) {
-            wait(1);
+            wait 1;
             level.var_d3c21969 = getdvarint(#"hash_6b0c29fe436582f0", 0);
         }
     }
@@ -556,7 +556,7 @@ function private function_82e5be34() {
     self endon(#"change_state");
     while (true) {
         currentdir = anglestoforward(self.angles);
-        wait(1);
+        wait 1;
         newdir = anglestoforward(self.angles);
         if (vectordot(currentdir, newdir) < -0.5) {
             if (isdefined(self.settings.var_f282dc0a)) {
@@ -786,7 +786,7 @@ function function_3e3b6ce1() {
     if (isdefined(self.var_c5c8c31)) {
         delay = self.var_c5c8c31;
         self.var_c5c8c31 = undefined;
-        wait(delay);
+        wait delay;
     }
     while (true) {
         if (isdefined(self.favoriteenemy)) {

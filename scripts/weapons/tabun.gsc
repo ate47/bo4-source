@@ -59,7 +59,7 @@ function checkdvarupdates() {
         level.fx_tabun_radius1 = getdvarint(#"scr_fx_tabun_radius1", level.fx_tabun_radius1);
         level.fx_tabun_radius2 = getdvarint(#"scr_fx_tabun_radius2", level.fx_tabun_radius2);
         level.fx_tabun_radius3 = getdvarint(#"scr_fx_tabun_radius3", level.fx_tabun_radius3);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -124,10 +124,10 @@ function damageeffectarea(owner, position, radius, height, killcament) {
                 }
             }
         }
-        wait(loopwaittime);
+        wait loopwaittime;
     }
     if (level.tabungasduration < level.poisonduration) {
-        wait(level.poisonduration - level.tabungasduration);
+        wait level.poisonduration - level.tabungasduration;
     }
     shockeffectarea delete();
     gaseffectarea delete();
@@ -175,13 +175,13 @@ function damageinpoisonarea(gaseffectarea, killcament, trace, position) {
             }
             self val::set(#"tabun", "show_hud", 0);
         }
-        wait(1);
+        wait 1;
         trace = bullettrace(position, self.origin + (0, 0, 12), 0, self);
     }
     tabunshocksound stoploopsound(0.5);
-    wait(0.5);
+    wait 0.5;
     thread sound::play_in_space(level.sound_shock_tabun_stop, position);
-    wait(0.5);
+    wait 0.5;
     tabunshocksound notify(#"delete");
     tabunshocksound delete();
     self val::reset(#"tabun", "show_hud");
@@ -368,10 +368,10 @@ function playtabunsound(position) {
     tabunsound.origin = position;
     tabunsound playsound(level.sound_tabun_start);
     tabunsound playloopsound(level.sound_tabun_loop);
-    wait(level.tabungasduration);
+    wait level.tabungasduration;
     thread sound::play_in_space(level.sound_tabun_stop, position);
     tabunsound stoploopsound(0.5);
-    wait(0.5);
+    wait 0.5;
     tabunsound delete();
 }
 

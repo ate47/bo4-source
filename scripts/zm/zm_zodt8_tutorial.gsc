@@ -117,10 +117,10 @@ function function_99bc766a() {
     if (isdefined(level.tutorial_complete) && level.tutorial_complete) {
         luinotifyevent(#"tutorial_complete", 0);
         self lui::screen_fade_in(1);
-        wait(10);
+        wait 10;
     }
     exitlevel(0);
-    wait(666);
+    wait 666;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -218,7 +218,7 @@ function tutorial_reset() {
     if (isdefined(level.tutorial_reset)) {
         self [[ level.tutorial_reset ]]();
     }
-    wait(0.5);
+    wait 0.5;
     self lui::screen_fade_in(0.5, "white");
     self function_e326c0a();
     self setstance("stand");
@@ -461,7 +461,7 @@ function function_cf5f5964(spawnerstr, ignore = 0, bot = undefined, b_play_fx = 
         if (spawnerstr == "tutorial_catalyst_spawner") {
             zombie setcandamage(0);
             zombie.var_f256a4d9 = 0;
-            wait(1);
+            wait 1;
             zm_transform::function_9acf76e6(zombie, "catalyst_plasma_tutorial");
             level endon(#"transformation_interrupted");
             eventstruct = level waittill(#"transformation_complete");
@@ -489,7 +489,7 @@ function function_fac53b63(var_70b300bb, b_play_fx) {
     level endon(#"tutorial_reset");
     foreach (spawnerstr in var_70b300bb) {
         if (spawnerstr == "tutorial_zm_spawner_points_4") {
-            wait(3);
+            wait 3;
         }
         function_cf5f5964(spawnerstr, undefined, undefined, b_play_fx);
     }
@@ -626,7 +626,7 @@ function tutorial() {
     level.tutorialplayer function_e0c7d69(0);
     self thread lui::screen_fade_out(3);
     clientfield::set_world_uimodel("hudItems.ztut.showLocation", 0);
-    wait(1);
+    wait 1;
     function_cc60408f(array(#"hash_48af8239068e44f2", #"hash_53d43a46bc0ebcd8"), "end_game");
     music::setmusicstate("zodt8_death");
     level.tutorial_complete = 1;
@@ -646,7 +646,7 @@ function function_558fab23() {
 // Checksum 0x509483f6, Offset: 0x3cb8
 // Size: 0xa
 function function_6313c411() {
-    wait(1);
+    wait 1;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -654,7 +654,7 @@ function function_6313c411() {
 // Checksum 0xb90dcc9d, Offset: 0x3cd0
 // Size: 0xc4
 function function_e30183a6() {
-    wait(2);
+    wait 2;
     level thread scene::play("p8_fxanim_zm_zod_smokestack_01_bundle", "Shot 1");
     level thread scene::play("p8_fxanim_zm_zod_smokestack_02_bundle", "Shot 1");
     level thread scene::play("p8_fxanim_zm_zod_smokestack_wire_snap_bundle", "Shot 1");
@@ -696,7 +696,7 @@ function function_513e90cf() {
     self magicbox();
     self function_88b4ae49();
     function_edf32a3b(3);
-    wait(3);
+    wait 3;
     music::setmusicstate("tutorial_beginner_end");
     self lui::screen_fade_out(5);
 }
@@ -761,7 +761,7 @@ function function_2517cb55() {
     self function_fac53b63(array("tutorial_zm_spawner_shoot_zombie"), 1);
     level.var_a4ad706d[0] thread function_16c8867e(self);
     self function_e326c0a();
-    wait(0.5);
+    wait 0.5;
     level thread function_68da8e33(#"hash_71b1fc8d67ee8cea");
     self thread function_3e1e39f8(#"hash_49df76352370f4a6", "shoot_zombie_completed", &function_3d825fe, 9999);
     self thread function_261ed63c(#"hash_66a9e9a056f5aa26", 6, "shoot_zombie_completed");
@@ -774,7 +774,7 @@ function function_2517cb55() {
     if (self getweaponammoclip(w_pistol) != self getweaponammoclipsize(w_pistol)) {
         level thread function_68da8e33(#"hash_316ebf182aa3396b", 0.4);
         self function_3e1e39f8(#"hash_42258c918b04d5f2", "reload_completed", &function_44514728, 9999);
-        wait(0.5);
+        wait 0.5;
         level flag::wait_till_clear("tutorial_vo_playing");
     }
     function_68da8e33(#"hash_2d6e6c147db9a32a", 0.5);
@@ -844,7 +844,7 @@ function points() {
     self.reset_score = self.score;
     function_6e9fe428(&points_reset);
     self thread function_fac53b63(array("tutorial_zm_spawner_points_1", "tutorial_zm_spawner_points_2", "tutorial_zm_spawner_points_3", "tutorial_zm_spawner_points_4"), 1);
-    wait(3);
+    wait 3;
     level thread function_68da8e33(#"hash_51f56d21fa70d946");
     if (!self adsbuttonpressed()) {
         self thread function_3e1e39f8(#"hash_c360659fdde1ca7", "ads_completed", &function_7b8a4b02);
@@ -855,7 +855,7 @@ function points() {
     function_68da8e33(#"hash_50dc77fec1759941", 0.5);
     level thread function_68da8e33(#"hash_7d2527b8d4294bec", 0.4);
     self thread function_3e1e39f8(#"hash_23375fb65c0b9e2d", "melee_completed", &function_568b7e4b, 8);
-    wait(1);
+    wait 1;
     level flag::wait_till_clear("tutorial_vo_playing");
 }
 
@@ -893,7 +893,7 @@ function function_979b1a9f() {
 // Size: 0x5c
 function rounds() {
     function_269d9f82("blocker_pre_repair");
-    wait(2);
+    wait 2;
     function_edf32a3b(2);
     level thread function_68da8e33(#"hash_2b436347f157eca9");
 }
@@ -1007,11 +1007,11 @@ function function_88b4ae49() {
     self.reset_score = self.score;
     function_6e9fe428(&function_dc366ad7);
     self function_fac53b63(array("tutorial_zm_spawner_playerwilldie_1", "tutorial_zm_spawner_playerwilldie_2", "tutorial_zm_spawner_playerwilldie_3", "tutorial_zm_spawner_playerwilldie_4", "tutorial_zm_spawner_playerwilldie_5", "tutorial_zm_spawner_playerwilldie_6"));
-    wait(2);
+    wait 2;
     level thread function_68da8e33("vox_beginner_end_narr_1");
     if (isdefined(level.var_70fed833)) {
         self function_fac53b63(array("tutorial_zm_spawner_playerwilldie_1", "tutorial_zm_spawner_playerwilldie_2", "tutorial_zm_spawner_playerwilldie_3", "tutorial_zm_spawner_playerwilldie_4", "tutorial_zm_spawner_playerwilldie_5", "tutorial_zm_spawner_playerwilldie_6"));
-        wait(3);
+        wait 3;
         self function_fac53b63(array("tutorial_zm_spawner_playerwilldie_1", "tutorial_zm_spawner_playerwilldie_2", "tutorial_zm_spawner_playerwilldie_3", "tutorial_zm_spawner_playerwilldie_4", "tutorial_zm_spawner_playerwilldie_5", "tutorial_zm_spawner_playerwilldie_6"));
     }
     self function_fb2e7309();
@@ -1044,14 +1044,14 @@ function function_bfd3a7b1() {
     function_edf32a3b(8);
     util::streamer_wait();
     if (level.var_ecdc2cb1 == 0) {
-        wait(2);
+        wait 2;
         self lui::screen_fade_in(1);
     } else {
         level flag::set("tutorial_intro_screen_over");
         music::setmusicstate("tutorial_intermediate_start");
         level flag::wait_till("gameplay_started");
         function_68da8e33(#"hash_63a9147fdc583023", 0.5);
-        wait(1);
+        wait 1;
     }
     self function_e326c0a();
     self perks();
@@ -1084,7 +1084,7 @@ function function_bfd3a7b1() {
     self zm_perks::function_9bdf581f(#"specialty_extraammo", 1);
     self zm_perks::function_9bdf581f(#"specialty_cooldown", 2);
     self zm_perks::function_9bdf581f(#"specialty_deadshot", 3);
-    wait(1);
+    wait 1;
     self zm_laststand::function_3d685b5f(0);
     self freeze_player_controls();
     self function_2b4bf122(5500);
@@ -1113,7 +1113,7 @@ function perks() {
     self waittill(#"perk_purchased");
     var_fe79c035 clientfield::set("tutorial_keyline_fx", 2);
     s_objective function_384bed55(0);
-    wait(3);
+    wait 3;
     function_cc60408f(array(#"hash_10ca276bd3dd458e", #"hash_2c2903a363c22b07"), "vo_done");
     function_b12c3aec(0);
 }
@@ -1206,7 +1206,7 @@ function equipment() {
 // Size: 0x94
 function function_2d2a2ec6() {
     level endon(#"end_game", #"tutorial_reset");
-    wait(0.6);
+    wait 0.6;
     level.var_634ee380 = zm_powerups::specific_powerup_drop("nuke", self.origin, #"allies", 0.1, undefined, 1);
     self kill();
 }
@@ -1349,7 +1349,7 @@ function cooperative() {
     open_door("library_boat_deck_door");
     function_269d9f82("barrier_pre_shield");
     level.tutorialbot zm_score::player_reduce_points("take_specified", 1500);
-    wait(1);
+    wait 1;
     level thread function_68da8e33(#"hash_3c5d15448b5aa428");
     level.tutorialbot set_bot_goal("tutorial_bot_shield_part");
     function_b12c3aec();
@@ -1372,7 +1372,7 @@ function crafting() {
     } else {
         assert(0, "<dev string:x52>");
     }
-    wait(1);
+    wait 1;
     function_68da8e33(#"hash_5caf3fd084d30b3e");
     var_97a0a08e = getweapon("zitem_rocketshield_part_1");
     while (!zm_items::player_has(self, var_97a0a08e)) {
@@ -1433,7 +1433,7 @@ function crafting() {
     if (self getcurrentweapon() != shield) {
         level thread function_68da8e33(#"hash_22a9c5a0eed67aea", 0.5);
         self thread function_3e1e39f8(#"hash_4253963241ceddbb", "shield_equipped", undefined, 9999);
-        wait(0.6);
+        wait 0.6;
         while (!(self getcurrentweapon() == shield)) {
             waitframe(1);
         }
@@ -1461,7 +1461,7 @@ function function_e35fa479() {
         e_target = level.var_a4ad706d[randomint(level.var_a4ad706d.size)];
         self setentitytarget(e_target);
         e_target waittill(#"death");
-        wait(randomfloatrange(1, 2));
+        wait randomfloatrange(1, 2);
         function_1eaaceab(level.var_a4ad706d);
     }
 }
@@ -1500,9 +1500,9 @@ function power() {
     self.is_drinking = 1;
     s_objective function_384bed55(0);
     e_power clientfield::set("tutorial_keyline_fx", 2);
-    wait(2);
+    wait 2;
     level thread function_68da8e33(#"hash_11c00751543070b6");
-    wait(12);
+    wait 12;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1574,9 +1574,9 @@ function special_weapons() {
 // Size: 0x64
 function function_b024c4f4() {
     self endon(#"hammer_equipped", #"death");
-    wait(5);
+    wait 5;
     level thread function_68da8e33("vox_advance_hammer_nag_narr_0");
-    wait(3);
+    wait 3;
     tutorial_reset();
 }
 
@@ -1635,7 +1635,7 @@ function pap() {
     var_812ed519 hide();
     function_68da8e33(#"hash_223704d87588d3a1", 0.5);
     level thread function_68da8e33(#"hash_7d57e8643f403794", 1);
-    wait(1);
+    wait 1;
     a_pap = getentarray("zm_pack_a_punch", "targetname");
     a_pap[3] clientfield::set("tutorial_keyline_fx", 1);
     s_objective = struct::get("objective_pos_pap", "targetname");
@@ -1983,7 +1983,7 @@ function function_1cc39f51(str_door, str_model, var_811aae17 = 1) {
 // Size: 0xc4
 function function_68da8e33(str_alias, n_delay) {
     if (isdefined(n_delay)) {
-        wait(n_delay);
+        wait n_delay;
     }
     level.var_851fb552 stopsounds();
     level.var_851fb552 zm_vo::vo_clear();
@@ -2002,7 +2002,7 @@ function function_cc60408f(a_str_alias, str_endon) {
     self endon(str_endon);
     foreach (str_alias in a_str_alias) {
         function_68da8e33(str_alias);
-        wait(0.3);
+        wait 0.3;
     }
 }
 
@@ -2012,7 +2012,7 @@ function function_cc60408f(a_str_alias, str_endon) {
 // Size: 0x44
 function function_261ed63c(str_alias, n_time, str_endon) {
     self endon(str_endon);
-    wait(n_time);
+    wait n_time;
     level thread function_68da8e33(str_alias);
 }
 

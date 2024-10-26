@@ -344,7 +344,7 @@ function laundry_day(var_a276c861) {
         if (isplayer(s_result.attacker)) {
             s_dryer.t_damage playsound(#"hash_33b90d54346e57e" + var_57724709);
             var_57724709++;
-            wait(8.1);
+            wait 8.1;
         }
         if (var_57724709 >= 3) {
             break;
@@ -672,7 +672,7 @@ function function_626dcd44() {
     self flag::init(#"hash_11ab20934759ebc3");
     while (!isdefined(self.var_67e1d531)) {
         self.var_67e1d531 = self._gadgets_player[1];
-        wait(1);
+        wait 1;
     }
     self flag::wait_till(#"hash_46915cd7994e2d33");
     self thread function_f8c71bba();
@@ -710,7 +710,7 @@ function function_f8c71bba() {
                 self thread function_1877cfe4();
                 break;
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
     return false;
@@ -728,7 +728,7 @@ function function_766c869a(e_tomahawk) {
         if (self istouching(var_e9d35a09) || isdefined(e_tomahawk) && e_tomahawk istouching(var_e9d35a09)) {
             self thread specimen_storage_orb_();
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -741,7 +741,7 @@ function private specimen_storage_orb_() {
     self endon("2b2c70e1dbc33e81" + #"hash_6cd90d6d3f75e742");
     self endon(#"disconnect", #"hash_18c7b52cebad7171", #"hash_7c4e730154e3c002");
     self.var_67ea42af = 1;
-    wait(25);
+    wait 25;
     self.var_67ea42af = undefined;
 }
 
@@ -763,7 +763,7 @@ function function_1877cfe4(e_tomahawk) {
             self notify(#"hash_67898531e66a70ff");
             self notify(#"hash_7c4e730154e3c002");
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -879,7 +879,7 @@ function function_4d6642e9(var_c6b58daa) {
                 continue;
             }
             if (var_c6b58daa.b_visible) {
-                wait(0.9);
+                wait 0.9;
                 if (isdefined(var_c6b58daa.mdl_glyph)) {
                     var_c6b58daa.b_visible = 0;
                     var_c6b58daa.mdl_glyph setinvisibletoplayer(self);
@@ -963,7 +963,7 @@ function function_27ae51c4(e_player) {
     }
     playsoundatposition(#"hash_6f61076a871fcbab", mdl_fx.origin);
     mdl_fx clientfield::set("" + #"hash_46dbc12bdc275121", 1);
-    wait(5);
+    wait 5;
     mdl_fx delete();
 }
 
@@ -1112,7 +1112,7 @@ function function_4d8d3da5(e_player) {
                 var_ae8517dd setvisibletoplayer(e_player);
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -1122,7 +1122,7 @@ function function_4d8d3da5(e_player) {
 // Size: 0x34
 function function_2cadc850() {
     self endon(#"death");
-    wait(12);
+    wait 12;
     self delete();
 }
 
@@ -1176,7 +1176,7 @@ function function_c6472238(e_player) {
         if (distance2dsquared(self.origin, e_player.origin) < 144400) {
             self notify(#"hash_4607576ad3772956");
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1381,7 +1381,7 @@ function function_ed96eb60(e_activator) {
             hidemiscmodels("walnut_02");
         }
         level.var_1a50fe78++;
-        wait(2);
+        wait 2;
         var_a705e738 delete();
         if (level.var_1a50fe78 < 3) {
             var_a705e738 = util::spawn_model("tag_origin", var_3d454522.origin, var_3d454522.angles);
@@ -1393,9 +1393,9 @@ function function_ed96eb60(e_activator) {
             } else if (self.targetname == "walnut_teleporter_02") {
                 showmiscmodels("walnut_01");
             }
-            wait(5);
+            wait 5;
             var_a705e738 delete();
-            wait(25);
+            wait 25;
             var_e52414d4 setmodel(#"p8_zm_esc_teleporter_device");
             var_3d454522.var_623f6a70 = 1;
             return;
@@ -1516,7 +1516,7 @@ function function_63afa952(var_a276c861) {
     level.var_bdd8273d thread function_a852bfdc();
     s_result = level waittill(#"hash_763832898999092c");
     level.var_bdd8273d playsound(#"hash_1588095b858588d");
-    wait(0.5);
+    wait 0.5;
     level.var_bdd8273d clientfield::set("" + #"hash_59623b8b4fc694c8", 2);
     level.var_bdd8273d movez(60, 1, 0.25, 0.25);
     level.var_bdd8273d playsound(#"hash_4c37b6324bbe1f4b");
@@ -1612,7 +1612,7 @@ function private audio_log() {
         foreach (mdl_reel in a_mdl_reels) {
             mdl_reel.spinning = 1;
             mdl_reel thread function_175057ad();
-            wait(0.5);
+            wait 0.5;
         }
     } else if (!isdefined(self.var_d81f2c52)) {
         self.var_d81f2c52 = spawn("script_origin", self.origin);
@@ -1622,306 +1622,306 @@ function private audio_log() {
     switch (self.script_int) {
     case 1:
         playsoundatposition(#"hash_23fe2e98c6c58414", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe2e98c6c58414") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe2e98c6c58414") * 0.001;
         function_d61f989(#"hash_6453fd4f9c20993d", self.origin);
         playsoundatposition(#"hash_23fe2f98c6c585c7", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe2f98c6c585c7") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe2f98c6c585c7") * 0.001;
         playsoundatposition(#"hash_23fe3098c6c5877a", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe3098c6c5877a") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe3098c6c5877a") * 0.001;
         function_d61f989(#"hash_6453fb4f9c2095d7", self.origin);
-        wait(1);
+        wait 1;
         function_d61f989(#"hash_6453f84f9c2090be", self.origin);
         playsoundatposition(#"hash_23fe3198c6c5892d", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe3198c6c5892d") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe3198c6c5892d") * 0.001;
         function_d61f989(#"hash_6453f94f9c209271", self.origin);
         playsoundatposition(#"hash_23fe2a98c6c57d48", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe2a98c6c57d48") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe2a98c6c57d48") * 0.001;
         function_d61f989(#"hash_6453f64f9c208d58", self.origin);
         playsoundatposition(#"hash_23fe2b98c6c57efb", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe2b98c6c57efb") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe2b98c6c57efb") * 0.001;
         playsoundatposition(#"hash_23fe2c98c6c580ae", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe2c98c6c580ae") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe2c98c6c580ae") * 0.001;
         playsoundatposition(#"hash_23fe2d98c6c58261", self.origin);
-        wait(soundgetplaybacktime(#"hash_23fe2d98c6c58261") * 0.001);
+        wait soundgetplaybacktime(#"hash_23fe2d98c6c58261") * 0.001;
         break;
     case 2:
         playsoundatposition(#"hash_15768d7058a98edb", self.origin);
-        wait(soundgetplaybacktime(#"hash_15768d7058a98edb") * 0.001);
+        wait soundgetplaybacktime(#"hash_15768d7058a98edb") * 0.001;
         playsoundatposition(#"hash_15768c7058a98d28", self.origin);
-        wait(soundgetplaybacktime(#"hash_15768c7058a98d28") * 0.001);
+        wait soundgetplaybacktime(#"hash_15768c7058a98d28") * 0.001;
         playsoundatposition(#"hash_21e2aae6a803dce0", self.origin);
-        wait(soundgetplaybacktime(#"hash_21e2aae6a803dce0") * 0.001);
+        wait soundgetplaybacktime(#"hash_21e2aae6a803dce0") * 0.001;
         function_d61f989(#"hash_21c98671572b0a70", self.origin);
         playsoundatposition(#"hash_21e2abe6a803de93", self.origin);
-        wait(soundgetplaybacktime(#"hash_21e2abe6a803de93") * 0.001);
+        wait soundgetplaybacktime(#"hash_21e2abe6a803de93") * 0.001;
         playsoundatposition(#"hash_21e2ace6a803e046", self.origin);
-        wait(soundgetplaybacktime(#"hash_21e2ace6a803e046") * 0.001);
+        wait soundgetplaybacktime(#"hash_21e2ace6a803e046") * 0.001;
         playsoundatposition(#"hash_21e2ade6a803e1f9", self.origin);
-        wait(soundgetplaybacktime(#"hash_21e2ade6a803e1f9") * 0.001);
+        wait soundgetplaybacktime(#"hash_21e2ade6a803e1f9") * 0.001;
         playsoundatposition(#"hash_21e2aee6a803e3ac", self.origin);
-        wait(soundgetplaybacktime(#"hash_21e2aee6a803e3ac") * 0.001);
+        wait soundgetplaybacktime(#"hash_21e2aee6a803e3ac") * 0.001;
         break;
     case 3:
         function_d61f989(#"hash_23cc07d5d8b05cdf", self.origin);
-        wait(1.8);
+        wait 1.8;
         playsoundatposition(#"hash_25bacd9289857a44", self.origin);
-        wait(soundgetplaybacktime(#"hash_25bacd9289857a44") * 0.001);
+        wait soundgetplaybacktime(#"hash_25bacd9289857a44") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4f5eef83174e040a", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4f5eef83174e040a") * 0.001);
+        wait soundgetplaybacktime(#"hash_4f5eef83174e040a") * 0.001;
         playsoundatposition(#"hash_25bacf9289857daa", self.origin);
-        wait(soundgetplaybacktime(#"hash_25bacf9289857daa") * 0.001);
+        wait soundgetplaybacktime(#"hash_25bacf9289857daa") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4f5ee183174dec40", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4f5ee183174dec40") * 0.001);
+        wait soundgetplaybacktime(#"hash_4f5ee183174dec40") * 0.001;
         playsoundatposition(#"hash_25bac192898565e0", self.origin);
-        wait(soundgetplaybacktime(#"hash_25bac192898565e0") * 0.001);
+        wait soundgetplaybacktime(#"hash_25bac192898565e0") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4f695b8317571013", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4f695b8317571013") * 0.001);
+        wait soundgetplaybacktime(#"hash_4f695b8317571013") * 0.001;
         playsoundatposition(#"hash_25b0b992897d03c3", self.origin);
-        wait(soundgetplaybacktime(#"hash_25b0b992897d03c3") * 0.001);
+        wait soundgetplaybacktime(#"hash_25b0b992897d03c3") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4f695d8317571379", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4f695d8317571379") * 0.001);
+        wait soundgetplaybacktime(#"hash_4f695d8317571379") * 0.001;
         playsoundatposition(#"hash_25b0bb92897d0729", self.origin);
-        wait(soundgetplaybacktime(#"hash_25b0bb92897d0729") * 0.001);
+        wait soundgetplaybacktime(#"hash_25b0bb92897d0729") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4f695f83175716df", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4f695f83175716df") * 0.001);
+        wait soundgetplaybacktime(#"hash_4f695f83175716df") * 0.001;
         function_d61f989(#"hash_23cc08d5d8b05e92", self.origin);
         playsoundatposition(#"hash_25b0bd92897d0a8f", self.origin);
-        wait(soundgetplaybacktime(#"hash_25b0bd92897d0a8f") * 0.001);
+        wait soundgetplaybacktime(#"hash_25b0bd92897d0a8f") * 0.001;
         playsoundatposition(#"hash_29be819f5341e1dc", self.origin);
-        wait(soundgetplaybacktime(#"hash_29be819f5341e1dc") * 0.001);
+        wait soundgetplaybacktime(#"hash_29be819f5341e1dc") * 0.001;
         playsoundatposition(#"hash_25b0bf92897d0df5", self.origin);
-        wait(soundgetplaybacktime(#"hash_25b0bf92897d0df5") * 0.001);
+        wait soundgetplaybacktime(#"hash_25b0bf92897d0df5") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4f69638317571dab", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4f69638317571dab") * 0.001);
+        wait soundgetplaybacktime(#"hash_4f69638317571dab") * 0.001;
         playsoundatposition(#"hash_29be889f5341edc1", self.origin);
-        wait(soundgetplaybacktime(#"hash_29be889f5341edc1") * 0.001);
+        wait soundgetplaybacktime(#"hash_29be889f5341edc1") * 0.001;
         playsoundatposition(#"hash_25b3be92897f4219", self.origin);
-        wait(soundgetplaybacktime(#"hash_25b3be92897f4219") * 0.001);
+        wait soundgetplaybacktime(#"hash_25b3be92897f4219") * 0.001;
         playsoundatposition(#"hash_29c1849f53441ccc", self.origin);
-        wait(soundgetplaybacktime(#"hash_29c1849f53441ccc") * 0.001);
+        wait soundgetplaybacktime(#"hash_29c1849f53441ccc") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4f65f38317542984", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4f65f38317542984") * 0.001);
+        wait soundgetplaybacktime(#"hash_4f65f38317542984") * 0.001;
         playsoundatposition(#"hash_25b3bb92897f3d00", self.origin);
-        wait(soundgetplaybacktime(#"hash_25b3bb92897f3d00") * 0.001);
+        wait soundgetplaybacktime(#"hash_25b3bb92897f3d00") * 0.001;
         break;
     case 4:
         playsoundatposition(#"hash_15e36767f47d3f8", self.origin);
-        wait(soundgetplaybacktime(#"hash_15e36767f47d3f8") * 0.001);
+        wait soundgetplaybacktime(#"hash_15e36767f47d3f8") * 0.001;
         playsoundatposition(#"hash_15e37767f47d5ab", self.origin);
-        wait(soundgetplaybacktime(#"hash_15e37767f47d5ab") * 0.001);
+        wait soundgetplaybacktime(#"hash_15e37767f47d5ab") * 0.001;
         playsoundatposition(#"hash_15e38767f47d75e", self.origin);
-        wait(soundgetplaybacktime(#"hash_15e38767f47d75e") * 0.001);
+        wait soundgetplaybacktime(#"hash_15e38767f47d75e") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_35f3cbfc08f0133e", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_35f3cbfc08f0133e") * 0.001);
+        wait soundgetplaybacktime(#"hash_35f3cbfc08f0133e") * 0.001;
         playsoundatposition(#"hash_15e32767f47cd2c", self.origin);
-        wait(soundgetplaybacktime(#"hash_15e32767f47cd2c") * 0.001);
+        wait soundgetplaybacktime(#"hash_15e32767f47cd2c") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_35f3c5fc08f0090c", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_35f3c5fc08f0090c") * 0.001);
+        wait soundgetplaybacktime(#"hash_35f3c5fc08f0090c") * 0.001;
         playsoundatposition(#"hash_15ab4767f44c13b", self.origin);
-        wait(soundgetplaybacktime(#"hash_15ab4767f44c13b") * 0.001);
+        wait soundgetplaybacktime(#"hash_15ab4767f44c13b") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_35dc45fc08dc50ab", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_35dc45fc08dc50ab") * 0.001);
+        wait soundgetplaybacktime(#"hash_35dc45fc08dc50ab") * 0.001;
         playsoundatposition(#"hash_15ab6767f44c4a1", self.origin);
-        wait(soundgetplaybacktime(#"hash_15ab6767f44c4a1") * 0.001);
+        wait soundgetplaybacktime(#"hash_15ab6767f44c4a1") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_35dc47fc08dc5411", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_35dc47fc08dc5411") * 0.001);
+        wait soundgetplaybacktime(#"hash_35dc47fc08dc5411") * 0.001;
         playsoundatposition(#"hash_15ab8767f44c807", self.origin);
-        wait(soundgetplaybacktime(#"hash_15ab8767f44c807") * 0.001);
+        wait soundgetplaybacktime(#"hash_15ab8767f44c807") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_35dc49fc08dc5777", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_35dc49fc08dc5777") * 0.001);
+        wait soundgetplaybacktime(#"hash_35dc49fc08dc5777") * 0.001;
         playsoundatposition(#"hash_15aba767f44cb6d", self.origin);
-        wait(soundgetplaybacktime(#"hash_15aba767f44cb6d") * 0.001);
+        wait soundgetplaybacktime(#"hash_15aba767f44cb6d") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_35dc4bfc08dc5add", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_35dc4bfc08dc5add") * 0.001);
+        wait soundgetplaybacktime(#"hash_35dc4bfc08dc5add") * 0.001;
         playsoundatposition(#"hash_15aac767f44b3a3", self.origin);
-        wait(soundgetplaybacktime(#"hash_15aac767f44b3a3") * 0.001);
+        wait soundgetplaybacktime(#"hash_15aac767f44b3a3") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_35dc3dfc08dc4313", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_35dc3dfc08dc4313") * 0.001);
+        wait soundgetplaybacktime(#"hash_35dc3dfc08dc4313") * 0.001;
         playsoundatposition(#"hash_1572e767f41a7b2", self.origin);
-        wait(soundgetplaybacktime(#"hash_1572e767f41a7b2") * 0.001);
+        wait soundgetplaybacktime(#"hash_1572e767f41a7b2") * 0.001;
         break;
     case 5:
         playsoundatposition(#"hash_5bf62e19d6a6a36a", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf62e19d6a6a36a") * 0.001);
+        wait soundgetplaybacktime(#"hash_5bf62e19d6a6a36a") * 0.001;
         playsoundatposition(#"hash_5bf62d19d6a6a1b7", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf62d19d6a6a1b7") * 0.001);
+        wait soundgetplaybacktime(#"hash_5bf62d19d6a6a1b7") * 0.001;
         function_d61f989(#"hash_466d0b7b0866b5a1", self.origin);
-        wait(1.5);
+        wait 1.5;
         playsoundatposition(#"hash_3ba33944c02f59c2", self.origin);
-        wait(soundgetplaybacktime(#"hash_3ba33944c02f59c2") * 0.001);
+        wait soundgetplaybacktime(#"hash_3ba33944c02f59c2") * 0.001;
         playsoundatposition(#"hash_5bf62b19d6a69e51", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf62b19d6a69e51") * 0.001);
+        wait soundgetplaybacktime(#"hash_5bf62b19d6a69e51") * 0.001;
         playsoundatposition(#"hash_3ba33344c02f4f90", self.origin);
-        wait(soundgetplaybacktime(#"hash_3ba33344c02f4f90") * 0.001);
+        wait soundgetplaybacktime(#"hash_3ba33344c02f4f90") * 0.001;
         function_d61f989(#"hash_466d087b0866b088", self.origin);
         playsoundatposition(#"hash_5bf62919d6a69aeb", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf62919d6a69aeb") * 0.001);
+        wait soundgetplaybacktime(#"hash_5bf62919d6a69aeb") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4bc8176f7ba9f733", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4bc8176f7ba9f733") * 0.001);
+        wait soundgetplaybacktime(#"hash_4bc8176f7ba9f733") * 0.001;
         playsoundatposition(#"hash_5bf62719d6a69785", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf62719d6a69785") * 0.001);
+        wait soundgetplaybacktime(#"hash_5bf62719d6a69785") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4bc8256f7baa0efd", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4bc8256f7baa0efd") * 0.001);
+        wait soundgetplaybacktime(#"hash_4bc8256f7baa0efd") * 0.001;
         playsoundatposition(#"hash_5bf99519d6a98846", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf99519d6a98846") * 0.001);
+        wait soundgetplaybacktime(#"hash_5bf99519d6a98846") * 0.001;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4bc5156f7ba7bdf6", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4bc5156f7ba7bdf6") * 0.001);
+        wait soundgetplaybacktime(#"hash_4bc5156f7ba7bdf6") * 0.001;
         function_d61f989(#"hash_466d097b0866b23b", self.origin);
         playsoundatposition(#"hash_5bf99319d6a984e0", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf99319d6a984e0") * 0.001);
-        wait(1);
+        wait soundgetplaybacktime(#"hash_5bf99319d6a984e0") * 0.001;
+        wait 1;
         function_d61f989(#"hash_466d0e7b0866baba", self.origin);
         playsoundatposition(#"hash_3b98c944c02646ed", self.origin);
-        wait(soundgetplaybacktime(#"hash_3b98c944c02646ed") * 0.001);
-        wait(1.3);
+        wait soundgetplaybacktime(#"hash_3b98c944c02646ed") * 0.001;
+        wait 1.3;
         function_d61f989(#"hash_466d0f7b0866bc6d", self.origin);
         playsoundatposition(#"hash_3b98c244c0263b08", self.origin);
-        wait(soundgetplaybacktime(#"hash_3b98c244c0263b08") * 0.001);
-        wait(0.6);
+        wait soundgetplaybacktime(#"hash_3b98c244c0263b08") * 0.001;
+        wait 0.6;
         function_d61f989(#"hash_466d0c7b0866b754", self.origin);
         playsoundatposition(#"hash_5bf99a19d6a990c5", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf99a19d6a990c5") * 0.001);
-        wait(0.35);
+        wait soundgetplaybacktime(#"hash_5bf99a19d6a990c5") * 0.001;
+        wait 0.35;
         playsoundatposition(#"hash_3b98c444c0263e6e", self.origin);
-        wait(soundgetplaybacktime(#"hash_3b98c444c0263e6e") * 0.001);
-        wait(0.5);
+        wait soundgetplaybacktime(#"hash_3b98c444c0263e6e") * 0.001;
+        wait 0.5;
         playsoundatposition(#"hash_5bf99819d6a98d5f", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf99819d6a98d5f") * 0.001);
-        wait(0.6);
+        wait soundgetplaybacktime(#"hash_5bf99819d6a98d5f") * 0.001;
+        wait 0.6;
         if (level.var_a0ddc1d0) {
             playsoundatposition(#"hash_4bc51e6f7ba7cd41", self.origin);
         }
-        wait(soundgetplaybacktime(#"hash_4bc51e6f7ba7cd41") * 0.001);
-        wait(0.5);
+        wait soundgetplaybacktime(#"hash_4bc51e6f7ba7cd41") * 0.001;
+        wait 0.5;
         function_d61f989(#"hash_466d0d7b0866b907", self.origin);
         playsoundatposition(#"hash_5bf99e19d6a99791", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bf99e19d6a99791") * 0.001);
-        wait(3.1);
+        wait soundgetplaybacktime(#"hash_5bf99e19d6a99791") * 0.001;
+        wait 3.1;
         playsoundatposition(#"hash_5bfd1b19d6aca1cf", self.origin);
-        wait(soundgetplaybacktime(#"hash_5bfd1b19d6aca1cf") * 0.001);
-        wait(4.47);
+        wait soundgetplaybacktime(#"hash_5bfd1b19d6aca1cf") * 0.001;
+        wait 4.47;
         playsoundatposition(#"hash_3b9c4b44c02959aa", self.origin);
-        wait(soundgetplaybacktime(#"hash_3b9c4b44c02959aa") * 0.001);
+        wait soundgetplaybacktime(#"hash_3b9c4b44c02959aa") * 0.001;
         break;
     case 6:
         playsoundatposition(#"hash_2d1d88cf90cfcdfa", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d88cf90cfcdfa") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d88cf90cfcdfa") * 0.001;
         playsoundatposition(#"hash_2d1d89cf90cfcfad", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d89cf90cfcfad") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d89cf90cfcfad") * 0.001;
         playsoundatposition(#"hash_2d1d82cf90cfc3c8", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d82cf90cfc3c8") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d82cf90cfc3c8") * 0.001;
         playsoundatposition(#"hash_2d1d83cf90cfc57b", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d83cf90cfc57b") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d83cf90cfc57b") * 0.001;
         playsoundatposition(#"hash_2d1d84cf90cfc72e", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d84cf90cfc72e") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d84cf90cfc72e") * 0.001;
         playsoundatposition(#"hash_2d1d85cf90cfc8e1", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d85cf90cfc8e1") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d85cf90cfc8e1") * 0.001;
         playsoundatposition(#"hash_2d1d7ecf90cfbcfc", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d7ecf90cfbcfc") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d7ecf90cfbcfc") * 0.001;
         playsoundatposition(#"hash_2d1d7fcf90cfbeaf", self.origin);
-        wait(soundgetplaybacktime(#"hash_2d1d7fcf90cfbeaf") * 0.001);
+        wait soundgetplaybacktime(#"hash_2d1d7fcf90cfbeaf") * 0.001;
         break;
     case 7:
         playsoundatposition(#"hash_50c0423d01c93f52", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c0423d01c93f52") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c0423d01c93f52") * 0.001;
         playsoundatposition(#"hash_50c0433d01c94105", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c0433d01c94105") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c0433d01c94105") * 0.001;
         playsoundatposition(#"hash_50c0403d01c93bec", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c0403d01c93bec") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c0403d01c93bec") * 0.001;
         playsoundatposition(#"hash_50c0413d01c93d9f", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c0413d01c93d9f") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c0413d01c93d9f") * 0.001;
         playsoundatposition(#"hash_50c03e3d01c93886", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c03e3d01c93886") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c03e3d01c93886") * 0.001;
         playsoundatposition(#"hash_50c03f3d01c93a39", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c03f3d01c93a39") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c03f3d01c93a39") * 0.001;
         playsoundatposition(#"hash_50c03c3d01c93520", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c03c3d01c93520") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c03c3d01c93520") * 0.001;
         playsoundatposition(#"hash_50c03d3d01c936d3", self.origin);
-        wait(soundgetplaybacktime(#"hash_50c03d3d01c936d3") * 0.001);
+        wait soundgetplaybacktime(#"hash_50c03d3d01c936d3") * 0.001;
         break;
     case 8:
         playsoundatposition(#"hash_56c3c2f784568cad", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c3c2f784568cad") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c3c2f784568cad") * 0.001;
         playsoundatposition(#"hash_56c3c1f784568afa", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c3c1f784568afa") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c3c1f784568afa") * 0.001;
         playsoundatposition(#"hash_56c034f78453658c", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c034f78453658c") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c034f78453658c") * 0.001;
         playsoundatposition(#"hash_56c035f78453673f", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c035f78453673f") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c035f78453673f") * 0.001;
         playsoundatposition(#"hash_56c036f7845368f2", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c036f7845368f2") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c036f7845368f2") * 0.001;
         playsoundatposition(#"hash_56c037f784536aa5", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c037f784536aa5") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c037f784536aa5") * 0.001;
         playsoundatposition(#"hash_56c030f784535ec0", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c030f784535ec0") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c030f784535ec0") * 0.001;
         playsoundatposition(#"hash_56c031f784536073", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c031f784536073") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c031f784536073") * 0.001;
         playsoundatposition(#"hash_56c032f784536226", self.origin);
-        wait(soundgetplaybacktime(#"hash_56c032f784536226") * 0.001);
+        wait soundgetplaybacktime(#"hash_56c032f784536226") * 0.001;
         break;
     case 9:
         playsoundatposition(#"hash_42613a08be275478", self.origin);
-        wait(soundgetplaybacktime(#"hash_42613a08be275478") * 0.001);
+        wait soundgetplaybacktime(#"hash_42613a08be275478") * 0.001;
         playsoundatposition(#"hash_42613908be2752c5", self.origin);
-        wait(soundgetplaybacktime(#"hash_42613908be2752c5") * 0.001);
+        wait soundgetplaybacktime(#"hash_42613908be2752c5") * 0.001;
         playsoundatposition(#"hash_42613808be275112", self.origin);
-        wait(soundgetplaybacktime(#"hash_42613808be275112") * 0.001);
+        wait soundgetplaybacktime(#"hash_42613808be275112") * 0.001;
         playsoundatposition(#"hash_371426db436fcdef", self.origin);
-        wait(soundgetplaybacktime(#"hash_371426db436fcdef") * 0.001);
+        wait soundgetplaybacktime(#"hash_371426db436fcdef") * 0.001;
         playsoundatposition(#"hash_371425db436fcc3c", self.origin);
-        wait(soundgetplaybacktime(#"hash_371425db436fcc3c") * 0.001);
+        wait soundgetplaybacktime(#"hash_371425db436fcc3c") * 0.001;
         playsoundatposition(#"hash_371428db436fd155", self.origin);
-        wait(soundgetplaybacktime(#"hash_371428db436fd155") * 0.001);
+        wait soundgetplaybacktime(#"hash_371428db436fd155") * 0.001;
         playsoundatposition(#"hash_371427db436fcfa2", self.origin);
-        wait(soundgetplaybacktime(#"hash_371427db436fcfa2") * 0.001);
+        wait soundgetplaybacktime(#"hash_371427db436fcfa2") * 0.001;
         break;
     case 10:
         playsoundatposition(#"hash_15968033f07920d6", self.origin);
-        wait(soundgetplaybacktime(#"hash_15968033f07920d6") * 0.001);
+        wait soundgetplaybacktime(#"hash_15968033f07920d6") * 0.001;
         playsoundatposition(#"hash_15968133f0792289", self.origin);
-        wait(soundgetplaybacktime(#"hash_15968133f0792289") * 0.001);
+        wait soundgetplaybacktime(#"hash_15968133f0792289") * 0.001;
         playsoundatposition(#"hash_15967e33f0791d70", self.origin);
-        wait(soundgetplaybacktime(#"hash_15967e33f0791d70") * 0.001);
+        wait soundgetplaybacktime(#"hash_15967e33f0791d70") * 0.001;
         playsoundatposition(#"hash_15967f33f0791f23", self.origin);
-        wait(soundgetplaybacktime(#"hash_15967f33f0791f23") * 0.001);
+        wait soundgetplaybacktime(#"hash_15967f33f0791f23") * 0.001;
         playsoundatposition(#"hash_15968c33f079353a", self.origin);
-        wait(soundgetplaybacktime(#"hash_15968c33f079353a") * 0.001);
+        wait soundgetplaybacktime(#"hash_15968c33f079353a") * 0.001;
         playsoundatposition(#"hash_15968d33f07936ed", self.origin);
-        wait(soundgetplaybacktime(#"hash_15968d33f07936ed") * 0.001);
+        wait soundgetplaybacktime(#"hash_15968d33f07936ed") * 0.001;
         break;
     }
     if (isdefined(self.var_d81f2c52)) {

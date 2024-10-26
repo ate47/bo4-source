@@ -464,7 +464,7 @@ function function_2ea36422() {
     self endon(#"disconnect");
     for (i = 1; i > 8; i++) {
         self playsound("zmb_ee_gtr_sting_" + i);
-        wait(2);
+        wait 2;
     }
 }
 

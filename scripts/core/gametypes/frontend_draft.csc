@@ -483,7 +483,7 @@ function function_66e7c332(index) {
     self endon("6f575c6893d429f0");
     self endon(#"cancel_spray");
     setuimodelvalue([[ self ]]->function_82e05d64().var_5da50127, index);
-    wait(5);
+    wait 5;
     self cancel_spray();
 }
 

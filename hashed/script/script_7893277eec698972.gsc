@@ -191,7 +191,7 @@ function private function_a20e6e5d() {
 function private function_ca409b53() {
     level endon(#"hash_1562cc6d96b2bc4", #"hash_1562cc6d96b2bc4", #"end_game");
     level.var_86d6efbf rotate((0, 360, 0));
-    wait(15);
+    wait 15;
     level.var_86d6efbf zm_powerups::hide_and_show(&ghost, &show);
     level.var_86d6efbf playsound(#"hash_5a2daa895f64b2e2");
     level.var_85a8dbba delete();
@@ -244,10 +244,10 @@ function private step_3_setup(var_a276c861) {
             namespace_617a54f4::function_3f808d3d(level.var_f9f50915.script_noteworthy);
             level waittill(#"hash_17332cf9062484a6");
             namespace_617a54f4::function_2a94055d(level.var_f9f50915.script_noteworthy);
-            wait(1);
+            wait 1;
             level.var_f9f50915.mdl_chest stoploopsound(1);
             level.var_f9f50915.mdl_chest thread scene::play(#"p8_fxanim_zm_zod_kraken_chest_bundle", "close", level.var_f9f50915.mdl_chest);
-            wait(3);
+            wait 3;
             playfx(#"hash_6c0eb029adb5f6c6", level.var_f9f50915.mdl_chest.origin);
             if (level.var_e2ce1fe1 < 2) {
                 level.var_f9f50915.mdl_chest delete();
@@ -398,7 +398,7 @@ function private step_4_cleanup(var_a276c861, var_19e802fa) {
 // Checksum 0x18940070, Offset: 0x1ed8
 // Size: 0x8c
 function function_d3351bf7(a_ents) {
-    wait(5);
+    wait 5;
     if (isdefined(a_ents[#"kraken_tentacle"])) {
         a_ents[#"kraken_tentacle"] delete();
     }
@@ -412,7 +412,7 @@ function function_d3351bf7(a_ents) {
 function private function_a8fff4b0() {
     level endon(#"end_game");
     self.mdl_chest thread scene::play(#"p8_fxanim_zm_zod_kraken_chest_bundle", "close", self.mdl_chest);
-    wait(3);
+    wait 3;
     v_offset = anglestoup(self.mdl_chest.angles) * 26;
     var_5792d83f = util::spawn_model(level.var_3a67ac0e[level.var_2e2dab8d], self.mdl_chest.origin + v_offset, self.mdl_chest.angles);
     if (level.var_3a67ac0e[level.var_2e2dab8d] == #"p7_compass_vintage") {
@@ -423,7 +423,7 @@ function private function_a8fff4b0() {
     self.mdl_chest thread scene::play(#"p8_fxanim_zm_zod_kraken_chest_bundle", "open", self.mdl_chest);
     level flag::wait_till(#"hash_2889330d50a4cc38");
     self.mdl_chest thread scene::play(#"p8_fxanim_zm_zod_kraken_chest_bundle", "close", self.mdl_chest);
-    wait(3);
+    wait 3;
     playfx(#"hash_6c0eb029adb5f6c6", level.var_f9f50915.mdl_chest.origin);
     var_5792d83f delete();
     self.mdl_chest delete();
@@ -856,7 +856,7 @@ function private function_3ef485b1(t_trig) {
 function private function_74df2b21(t_trig) {
     level endon(#"end_game");
     t_trig endon(#"picked_up");
-    wait(30);
+    wait 30;
     level.var_ab242e52--;
     t_trig notify(#"hash_cf18f85af2935e8");
     t_trig.var_abf1e2f7 delete();
@@ -872,16 +872,16 @@ function function_7edbaf3a(v_origin) {
     self moveto(v_origin + (0, 0, 1), 0.5, 0.4);
     self waittill(#"movedone");
     self clientfield::set("" + #"hash_1c8f8a5e03b36070", 1);
-    wait(randomfloat(2));
+    wait randomfloat(2);
     for (n_wait = 3; true; n_wait = max(0.25, n_wait - 0.25)) {
-        wait(n_wait);
+        wait n_wait;
         n_move_x = randomfloatrange(0.1, 0.5);
         var_a6fa9fe7 = randomfloatrange(0.1, 0.5);
         var_ac28398c = randomintrange(-180, 180);
         self moveto(self.origin + (n_move_x, var_a6fa9fe7, 0), 0.15);
         self rotatevelocity((0, var_ac28398c, 0), 0.15);
         self waittill(#"movedone");
-        wait(0.25);
+        wait 0.25;
         var_ac28398c = randomintrange(-180, 180);
         self moveto(self.origin - (n_move_x, var_a6fa9fe7, 0), 0.15);
         self rotatevelocity((0, var_ac28398c, 0), 0.15);

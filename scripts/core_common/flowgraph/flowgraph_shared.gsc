@@ -396,7 +396,7 @@ function onflowgraphrun() {
 // Checksum 0x3f69f6aa, Offset: 0x1890
 // Size: 0x1e
 function waitfunc(x, f_seconds) {
-    wait(f_seconds);
+    wait f_seconds;
     return true;
 }
 

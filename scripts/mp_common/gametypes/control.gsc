@@ -685,14 +685,14 @@ function main_loop() {
         waitframe(1);
     }
     thread hide_timer_on_game_end();
-    wait(1);
+    wait 1;
     sound::play_on_players("mp_suitcase_pickup");
     if (level.zonespawntime && !(isdefined(level.neutralzone) && level.neutralzone)) {
         foreach (zone in level.zones) {
             zone.gameobject gameobjects::set_flags(1);
         }
         update_objective_hint_message(level.objectivehintpreparezone);
-        wait(level.zonespawntime);
+        wait level.zonespawntime;
         foreach (zone in level.zones) {
             zone.gameobject gameobjects::set_flags(0);
         }
@@ -731,7 +731,7 @@ function audio_loop() {
                 break;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -747,7 +747,7 @@ function function_23bedaa1() {
         for (i = 0; i < level.zones.size; i++) {
             update_timer(i, 0);
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -849,7 +849,7 @@ function private hide_timer_on_game_end() {
 // Checksum 0xf2ef59f0, Offset: 0x3f98
 // Size: 0xb6
 function private give_held_credit(touchlist, team) {
-    wait(0.05);
+    wait 0.05;
     util::waittillslowprocessallowed();
     foreach (touch in touchlist) {
         player = gameobjects::function_73944efe(touchlist, touch);
@@ -1298,7 +1298,7 @@ function award_capture_points_neutral(team) {
         score = 5;
     }
     while (!level.gameended) {
-        wait(seconds);
+        wait seconds;
         hostmigration::waittillhostmigrationdone();
         globallogic_score::giveteamscoreforobjective(team, score);
     }
@@ -1315,7 +1315,7 @@ function award_capture_points(team) {
     seconds = 1;
     score = 1;
     while (!level.gameended) {
-        wait(seconds);
+        wait seconds;
         hostmigration::waittillhostmigrationdone();
         if (!is_zone_contested(self)) {
             if (level.scoreperplayer) {
@@ -1417,14 +1417,14 @@ function player_use_loop(gameobject) {
     }
     while (true) {
         while (!isdefined(gameobject.userate) || isdefined(gameobject.userate) && gameobject.userate == 0 || gameobject.claimteam == "none") {
-            wait(0.2);
+            wait 0.2;
         }
         any_capture_progress = 0;
         any_decay_progress = 0;
         measure_progress_end_time = level.time + 5000;
         while (level.time < measure_progress_end_time) {
             prev_progress = gameobject.curprogress;
-            wait(1);
+            wait 1;
             if (gameobject.curprogress > prev_progress) {
                 any_capture_progress = 1;
                 continue;
@@ -1756,7 +1756,7 @@ function on_use_update_neutral(team, progress, change) {
 // Checksum 0x689aeb66, Offset: 0x7b10
 // Size: 0x84
 function private set_ui_team() {
-    wait(0.05);
+    wait 0.05;
     if (game.attackers == #"allies" || isdefined(level.neutralzone) && level.neutralzone) {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
         return;
@@ -1848,7 +1848,7 @@ function function_caff2d60() {
                 level.var_b9d36d8e[1] = 0;
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

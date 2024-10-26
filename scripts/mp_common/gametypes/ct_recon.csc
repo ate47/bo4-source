@@ -26,7 +26,7 @@ function event_handler[gametype_init] main(eventstruct) {
 function function_8bca10ba(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     while (true) {
         fx = playfx(localclientnum, "blood/fx8_blood_cam_impact_spray_zm", self.origin);
-        wait(2);
+        wait 2;
     }
 }
 

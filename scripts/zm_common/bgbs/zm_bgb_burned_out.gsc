@@ -54,7 +54,7 @@ function event() {
         if (3 <= var_3c24cb96) {
             return;
         }
-        wait(1.5);
+        wait 1.5;
     }
 }
 

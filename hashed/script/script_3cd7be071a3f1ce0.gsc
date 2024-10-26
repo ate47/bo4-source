@@ -95,7 +95,7 @@ function function_959fcbff(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_4c82cdad375db1a2");
             self.var_a0bfa25b = self playloopsound(#"hash_7449f6af6a74ea36");
         }
-        wait(2);
+        wait 2;
         self.var_f756621f = util::playfxontag(localclientnum, level._effect[#"hash_418533e3f4de4e1a"], self, "tag_origin");
     }
 }
@@ -239,7 +239,7 @@ function function_3c4642b1(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x5c
 function function_443d6ae(localclientnum) {
     self endon(#"death", #"hash_ac788aea26a8b23");
-    wait(0.15);
+    wait 0.15;
     self playrenderoverridebundle(#"hash_429426f01ad84c8b");
 }
 

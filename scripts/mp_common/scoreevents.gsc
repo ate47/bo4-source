@@ -1388,7 +1388,7 @@ function resetrecentkillvariables() {
 function function_179829ab(timeout) {
     self endon(#"death");
     level endon(#"game_ended");
-    wait(timeout);
+    wait timeout;
 }
 
 // Namespace scoreevents/scoreevents
@@ -1404,7 +1404,7 @@ function updateoneshotmultikills(victim, weapon, firsttimedamaged, meansofdeath)
     }
     self.oneshotmultikills++;
     self.oneshotmultikillsdamagetime = firsttimedamaged;
-    wait(1);
+    wait 1;
     if (self.oneshotmultikills > 1) {
         processscoreevent(#"kill_enemies_one_bullet", self, victim, weapon);
         self contracts::increment_contract(#"hash_45b74ebf1ab2fd47");

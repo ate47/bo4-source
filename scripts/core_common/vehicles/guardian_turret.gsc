@@ -64,7 +64,7 @@ function function_21304ee6(params) {
     guardian endon(#"death", #"change_state");
     if (isdefined(guardian.enemy)) {
         auto_turret::sentry_turret_alert_sound();
-        wait(0.5);
+        wait 0.5;
     }
     guardian startmicrowave();
     while (true) {
@@ -73,7 +73,7 @@ function function_21304ee6(params) {
             guardian turretsettarget(0, guardian.enemy);
         }
         guardian vehicle_ai::evaluate_connections();
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -115,11 +115,11 @@ function function_e341abb9(totalfiretime, enemy) {
     guardian = self;
     guardian endon(#"death", #"change_state");
     auto_turret::sentry_turret_alert_sound();
-    wait(0.1);
+    wait 0.1;
     weapon = guardian seatgetweapon(0);
     firetime = weapon.firetime;
     for (time = 0; time < totalfiretime; time += firetime) {
-        wait(firetime);
+        wait firetime;
     }
 }
 

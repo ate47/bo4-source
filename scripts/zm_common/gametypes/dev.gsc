@@ -73,7 +73,7 @@
         callback::on_connect(&on_player_connect);
         for (;;) {
             updatedevsettings();
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -495,7 +495,7 @@
         self notify(#"devgui_unlimited_ammo");
         self endon(#"devgui_unlimited_ammo", #"disconnect");
         for (;;) {
-            wait(1);
+            wait 1;
             primary_weapons = self getweaponslistprimaries();
             offhand_weapons_and_alts = array::exclude(self getweaponslist(1), primary_weapons);
             weapons = arraycombine(primary_weapons, offhand_weapons_and_alts, 0, 0);
@@ -518,7 +518,7 @@
         level notify(#"devgui_unlimited_momentum");
         level endon(#"devgui_unlimited_momentum");
         for (;;) {
-            wait(1);
+            wait 1;
             players = getplayers();
             foreach (player in players) {
                 if (!isdefined(player)) {
@@ -638,7 +638,7 @@
     // Checksum 0xff6d2dd7, Offset: 0x2d18
     // Size: 0x24
     function testscriptruntimeerrorassert() {
-        wait(1);
+        wait 1;
         assert(0);
     }
 
@@ -666,12 +666,12 @@
     // Checksum 0xae6a0491, Offset: 0x2dc0
     // Size: 0xdc
     function testscriptruntimeerror() {
-        wait(5);
+        wait 5;
         for (;;) {
             if (getdvarstring(#"scr_testscriptruntimeerror") != "<dev string:x3b>") {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         myerror = getdvarstring(#"scr_testscriptruntimeerror");
         setdvar(#"scr_testscriptruntimeerror", "<dev string:x3b>");
@@ -688,12 +688,12 @@
     // Checksum 0xa2b4999c, Offset: 0x2ea8
     // Size: 0x104
     function testdvars() {
-        wait(5);
+        wait 5;
         for (;;) {
             if (getdvarstring(#"scr_testdvar") != "<dev string:x38>") {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         tokens = strtok(getdvarstring(#"scr_testdvar"), "<dev string:x107>");
         dvarname = tokens[0];
@@ -913,7 +913,7 @@
     function print_weapon_name() {
         self notify(#"print_weapon_name");
         self endon(#"print_weapon_name");
-        wait(0.2);
+        wait 0.2;
         if (self isswitchingweapons()) {
             waitresult = self waittill(#"weapon_change_complete");
             fail_safe = 0;
@@ -997,7 +997,7 @@
         set_grenade_list();
         setdvar(#"scr_give_equipment", "<dev string:x38>");
         while (true) {
-            wait(0.5);
+            wait 0.5;
             devgui_int = getdvarint(#"scr_give_equipment", 0);
             if (devgui_int != 0) {
                 for (i = 0; i < level.players.size; i++) {
@@ -1018,7 +1018,7 @@
         set_grenade_list();
         setdvar(#"scr_give_grenade", "<dev string:x38>");
         while (true) {
-            wait(0.5);
+            wait 0.5;
             devgui_int = getdvarint(#"scr_give_grenade", 0);
             if (devgui_int != 0) {
                 for (i = 0; i < level.players.size; i++) {
@@ -1108,7 +1108,7 @@
                 waitframe(1);
                 continue;
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -1178,7 +1178,7 @@
             if (getdvarint(#"scr_devhelipathsdebugdraw", 0) == 0) {
                 level notify(endonmsg);
                 drawtime = maxdrawtime;
-                wait(1);
+                wait 1;
             }
             waitframe(1);
         }

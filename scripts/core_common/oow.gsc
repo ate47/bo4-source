@@ -53,7 +53,7 @@ function on_game_playing() {
 // Size: 0x118
 function function_e8f5803d() {
     while (true) {
-        wait(5);
+        wait 5;
         foreach (team, _ in level.teams) {
             foreach (player in level.aliveplayers[team]) {
                 if (!isdefined(player)) {

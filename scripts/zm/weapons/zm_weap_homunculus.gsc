@@ -165,7 +165,7 @@ function function_dcaa7a4a(e_grenade, var_bbab4f84, var_c4a5788c, var_2f916462) 
         }
         e_grenade.mdl_anchor unlink();
         e_grenade thread function_6a1f299b(e_grenade.mdl_anchor);
-        wait(0.1);
+        wait 0.1;
         e_grenade zm_utility::create_zombie_point_of_interest(var_c4a5788c, var_bbab4f84, 10000);
         var_3fb36683 = e_grenade zm_utility::create_zombie_point_of_interest_attractor_positions(undefined, undefined, 128, 1);
         if (var_3fb36683) {
@@ -307,14 +307,14 @@ function function_cc9535d0(var_c4a5788c, var_bbab4f84, var_2f916462) {
             if (!a_ai_zombies.size) {
                 if (b_attacked) {
                     b_first_loop = undefined;
-                    wait(0.1);
+                    wait 0.1;
                     self function_f33bde5c();
                     break;
                 } else if (isdefined(b_first_loop) && b_first_loop) {
                     b_first_loop = undefined;
                     break;
                 } else {
-                    wait(0.1);
+                    wait 0.1;
                     continue;
                 }
             }
@@ -342,7 +342,7 @@ function function_cc9535d0(var_c4a5788c, var_bbab4f84, var_2f916462) {
         }
         self.var_69e642c7 thread scene::play(#"aib_t8_zm_zod_homunculus_idle_01", self.mdl_anchor);
         self zm_utility::deactivate_zombie_point_of_interest();
-        wait(0.1);
+        wait 0.1;
         self zm_utility::create_zombie_point_of_interest(var_c4a5788c, var_bbab4f84, 10000);
         self zm_utility::create_zombie_point_of_interest_attractor_positions(undefined, undefined, 128);
         waitframe(1);
@@ -442,7 +442,7 @@ function private function_45eb4c80() {
         n_cooldown_time = 3;
         break;
     }
-    wait(n_cooldown_time);
+    wait n_cooldown_time;
     self.var_8ea10940 = undefined;
 }
 
@@ -491,9 +491,9 @@ function sndattackvox() {
     self endon(#"explode");
     while (true) {
         self waittill(#"sndkillvox");
-        wait(0.25);
+        wait 0.25;
         self playsound(#"wpn_octobomb_attack_vox");
-        wait(2.5);
+        wait 2.5;
     }
 }
 
@@ -606,7 +606,7 @@ function function_e383ca2f() {
     mdl_anchor = self.mdl_anchor;
     mdl_anchor clientfield::set("" + #"hash_2d49d2cf3d339e18", 1);
     self flag::set(#"hash_5e780b1a8f2d1e3b");
-    wait(0.2);
+    wait 0.2;
     mdl_anchor delete();
     for (i = 0; i < level.a_homunculus.size; i++) {
         if (!isdefined(level.a_homunculus[i])) {

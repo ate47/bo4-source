@@ -228,7 +228,7 @@ function function_3a81c97b() {
     level endon(#"end_game");
     level flag::wait_till("begin_spawning");
     while (level.round_number < 15) {
-        wait(1);
+        wait 1;
     }
     spawner::remove_global_spawn_function(#"zombie", &function_d63cd762);
 }
@@ -277,7 +277,7 @@ function function_8e0b371() {
         } else {
             self zm_hud::function_29780fb5(#"");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

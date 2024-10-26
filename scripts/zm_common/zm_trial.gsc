@@ -301,7 +301,7 @@ function function_361e2cb0() {
     playsoundatposition(#"hash_6a80142d79605bc6", (0, 0, 0));
     zm_trial_util::set_game_state(2);
     level.var_7fe57c6b = 1;
-    wait(3);
+    wait 3;
     level notify(#"hash_4c09c9d01060d7ad");
     level notify(#"end_game");
 }
@@ -322,7 +322,7 @@ function function_18b797ec() {
         player closemenu("StartMenu_Main");
     }
     zm_trial_util::set_game_state(3);
-    wait(3);
+    wait 3;
     level notify(#"hash_4c09c9d01060d7ad");
     level notify(#"end_game");
 }
@@ -378,7 +378,7 @@ function function_5769f26a(var_c00ecbf1) {
 // Size: 0x1fc
 function private reset_round() {
     level.custom_spawnplayer = undefined;
-    wait(3);
+    wait 3;
     function_47ed291b();
     level lui::screen_fade_out(0.5);
     level notify(#"hash_2f976f64c9301e7f");
@@ -407,7 +407,7 @@ function private reset_round() {
 function function_64e7056f() {
     var_971a40d8 = getdvarfloat(#"hash_30076a8d362ea423", -0.5);
     setdvar(#"hash_30076a8d362ea423", 0.5);
-    wait(0.5);
+    wait 0.5;
     setdvar(#"hash_30076a8d362ea423", var_971a40d8);
 }
 
@@ -419,7 +419,7 @@ function function_ae725d63(n_delay = 8) {
     if (level flag::get("round_reset")) {
         level flag::wait_till_clear("round_reset");
         if (n_delay > 0) {
-            wait(n_delay);
+            wait n_delay;
         }
     }
 }

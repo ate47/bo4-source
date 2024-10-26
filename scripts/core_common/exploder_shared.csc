@@ -307,7 +307,7 @@ function exploder_delay() {
         max_delay = self.v[#"delay_max"];
     }
     if (min_delay > 0) {
-        wait(randomfloatrange(min_delay, max_delay));
+        wait randomfloatrange(min_delay, max_delay);
     }
 }
 
@@ -507,7 +507,7 @@ function playexploderfx(clientnum) {
 // Checksum 0xc13b76df, Offset: 0x2230
 // Size: 0x2c
 function stop_after_duration(name, duration) {
-    wait(duration);
+    wait duration;
     stop_exploder(name);
 }
 

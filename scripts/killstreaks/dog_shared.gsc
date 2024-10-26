@@ -254,7 +254,7 @@ function set_state(state, var_deeb4ee7) {
         if (isdefined(self.script_owner)) {
             self.script_owner globallogic_score::function_d3ca3608(#"hash_28a8b95557ddc249");
         }
-        wait(0.5);
+        wait 0.5;
     }
     self ai_state::set_state(state);
 }
@@ -329,11 +329,11 @@ function function_458bc8de(dog) {
     dog endon(#"death");
     dog notify(#"hash_27a4203e237c5098");
     dog endon(#"hash_27a4203e237c5098");
-    wait(0.5);
+    wait 0.5;
     while (true) {
         if (!(isdefined(level.var_347a87db) && level.var_347a87db) && self offhandspecialbuttonpressed() && !self function_104d7b4d() && !self isusingoffhand()) {
             dog toggle_state(self);
-            wait(0.5);
+            wait 0.5;
         }
         waitframe(1);
     }

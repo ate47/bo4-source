@@ -142,13 +142,13 @@ function function_2509f629(localclientnum, var_77e629d2 = 1) {
     } else if (!var_77e629d2 && isdefined(self gettagorigin("tag_flash2"))) {
         self.var_59bda7f4 = util::playfxontag(localclientnum, level._effect[#"hash_25f9bd45ee59a7eb"], self, "tag_flash2");
     }
-    wait(0.5);
+    wait 0.5;
     if (var_77e629d2 && viewmodelhastag(localclientnum, "tag_flash2")) {
         self.var_b43205fd = playviewmodelfx(localclientnum, level._effect[#"hash_389b5fcf2a0e0690"], "tag_flash2");
     } else if (!var_77e629d2 && isdefined(self gettagorigin("tag_flash2"))) {
         self.var_b43205fd = util::playfxontag(localclientnum, level._effect[#"hash_38a26bcf2a1439a2"], self, "tag_flash2");
     }
-    wait(0.5);
+    wait 0.5;
     if (var_77e629d2 && viewmodelhastag(localclientnum, "tag_flash2")) {
         self.var_33fb8596 = playviewmodelfx(localclientnum, level._effect[#"hash_665c75d58cefe3d1"], "tag_flash2");
         return;

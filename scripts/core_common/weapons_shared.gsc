@@ -57,7 +57,7 @@ function on_player_spawned() {
         player = self;
         gameobject_link = undefined;
         while (true) {
-            wait(float(function_60d95f53()) / 1000);
+            wait float(function_60d95f53()) / 1000;
             if (self.sessionstate != "<dev string:x38>") {
                 continue;
             }
@@ -125,7 +125,7 @@ function function_c0101095(weapon, forward, var_62e5b78) {
 function function_f40168d3() {
     self endon(#"death");
     self clientfield::set("deathfx", 1);
-    wait(0.25);
+    wait 0.25;
     self delete();
 }
 
@@ -153,10 +153,10 @@ function function_e870d33d() {
     vehicle = undefined;
     var_13ab34e1 = undefined;
     while (isdefined(player.var_766deb67)) {
-        wait(float(function_60d95f53()) / 1000);
+        wait float(function_60d95f53()) / 1000;
     }
     while (true) {
-        wait(float(function_60d95f53()) / 1000);
+        wait float(function_60d95f53()) / 1000;
         current_weapon = player getcurrentweapon();
         if (current_weapon == level.weaponnone) {
             continue;
@@ -253,14 +253,14 @@ function function_e870d33d() {
                     var_394fad2b = 0;
                     break;
                 }
-                wait(float(function_60d95f53()) / 1000);
+                wait float(function_60d95f53()) / 1000;
             }
             while (gettime() < var_4308b3d8) {
                 if (player playerads() == 0) {
                     var_394fad2b = 0;
                     break;
                 }
-                wait(float(function_60d95f53()) / 1000);
+                wait float(function_60d95f53()) / 1000;
             }
             var_628f1aed = 0;
             if (var_394fad2b) {
@@ -274,7 +274,7 @@ function function_e870d33d() {
                 player.var_e7e2e3e5 = 1;
                 player.var_766deb67 = vehicle;
                 while (player adsbuttonpressed()) {
-                    wait(float(function_60d95f53()) / 1000);
+                    wait float(function_60d95f53()) / 1000;
                     slot = player gadgetgetslot(current_weapon.altweapon != level.weaponnone ? current_weapon.altweapon : current_weapon);
                     if (0 <= slot && slot < 3) {
                         power = player gadgetpowerget(slot);
@@ -297,7 +297,7 @@ function function_e870d33d() {
             }
             if (var_628f1aed) {
                 while (true) {
-                    wait(float(function_60d95f53()) / 1000);
+                    wait float(function_60d95f53()) / 1000;
                     current_weapon = player getcurrentweapon();
                     if (current_weapon == level.weaponnone) {
                         continue;
@@ -308,7 +308,7 @@ function function_e870d33d() {
                     break;
                 }
             } else if (vehicle_used) {
-                wait(0.4);
+                wait 0.4;
             }
             continue;
         }
@@ -325,7 +325,7 @@ function function_e870d33d() {
                 var_7db1ac70 = 0;
                 continue;
             }
-            wait(float(function_60d95f53()) / 1000);
+            wait float(function_60d95f53()) / 1000;
         }
     }
 }
@@ -344,7 +344,7 @@ function function_18a9a4e4(settings) {
     player endon(#"death", #"disconnect");
     rumble_delay = float(isdefined(settings.var_efe13502) ? settings.var_efe13502 : 0.5);
     if (rumble_delay > 0) {
-        wait(rumble_delay);
+        wait rumble_delay;
     }
     if (player playerads() == 0) {
         return;

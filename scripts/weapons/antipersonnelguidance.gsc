@@ -332,7 +332,7 @@ function seekersound(alias, looping, id) {
         time = soundgetplaybacktime(alias) * 0.001;
         do {
             self playlocalsound(alias);
-            wait(time);
+            wait time;
         } while (looping);
         self stoprumble("stinger_lock_rumble");
     }

@@ -21,7 +21,7 @@ function autoexec init_fire_fx() {
 // Size: 0x66
 function on_fire_timeout(localclientnum) {
     self endon(#"death");
-    wait(12);
+    wait 12;
     if (isdefined(self) && isalive(self)) {
         self.is_on_fire = 0;
         self notify(#"stop_flame_damage");
@@ -58,7 +58,7 @@ function flame_death_fx(localclientnum) {
     }
     if (isdefined(level._effect) && isdefined(level._effect[#"character_fire_death_sm"])) {
         if (self.archetype !== "parasite" && self.archetype !== "raps") {
-            wait(1);
+            wait 1;
             tagarray = [];
             tagarray[0] = "J_Elbow_LE";
             tagarray[1] = "J_Elbow_RI";
@@ -66,7 +66,7 @@ function flame_death_fx(localclientnum) {
             tagarray[3] = "J_Knee_LE";
             tagarray = randomize_array(tagarray);
             util::playfxontag(localclientnum, level._effect[#"character_fire_death_sm"], self, tagarray[0]);
-            wait(1);
+            wait 1;
             tagarray[0] = "J_Wrist_RI";
             tagarray[1] = "J_Wrist_LE";
             if (!(isdefined(self.missinglegs) && self.missinglegs)) {

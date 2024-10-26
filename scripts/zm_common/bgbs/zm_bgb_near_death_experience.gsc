@@ -216,7 +216,7 @@ function function_991be229(e_player, str_notify) {
     e_player endon(str_notify, #"disconnect");
     self endon(#"disconnect", #"zm_bgb_near_death_experience_complete");
     while (!self function_d5c9a81(e_player) && !e_player function_d5c9a81(self)) {
-        wait(0.1);
+        wait 0.1;
     }
     return true;
 }
@@ -229,7 +229,7 @@ function function_3895d86(e_player, str_notify) {
     e_player endon(str_notify, #"disconnect");
     self endon(#"disconnect", #"zm_bgb_near_death_experience_complete");
     while (self function_d5c9a81(e_player) || e_player function_d5c9a81(self)) {
-        wait(0.1);
+        wait 0.1;
     }
 }
 

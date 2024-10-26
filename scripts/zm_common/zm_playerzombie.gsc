@@ -189,7 +189,7 @@ function playerzombie_infinite_health() {
         if (self.health < bighealth) {
             self.health = bighealth;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

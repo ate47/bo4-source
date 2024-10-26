@@ -180,7 +180,7 @@ function function_30146e82(player) {
 // Checksum 0x1efdda6, Offset: 0x1b80
 // Size: 0x3c
 function pick_boost_number() {
-    wait(5);
+    wait 5;
     level clientfield::set("boost_number", randomint(4));
 }
 
@@ -1220,12 +1220,12 @@ function function_7c107ed4(attacker, weapon, victim, inflictor) {
 // Checksum 0xad7f8845, Offset: 0x5aa0
 // Size: 0x23c
 function function_a43a3519(waittime, gadgetweapon) {
-    wait(waittime + 0.1);
+    wait waittime + 0.1;
     if (!isdefined(self) || !isdefined(self.var_f6201e80) || !isplayer(self.var_f6201e80) || self.var_f6201e80 hasperk(#"specialty_quieter")) {
         return;
     }
     while (self.var_f6201e80.playingdialog === 1) {
-        wait(0.3);
+        wait 0.3;
         if (!isdefined(self) || !isdefined(self.var_f6201e80)) {
             return;
         }
@@ -1462,7 +1462,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
         return;
     }
     while (true) {
-        wait(waittime);
+        wait waittime;
         if (waittime > 0.2) {
             waittime /= 2;
         }
@@ -1533,9 +1533,9 @@ function heavy_weapon_success_reaction() {
         }
         allies[allies.size] = player;
     }
-    wait(mpdialog_value("enemyKillDelay", 0) + 0.1);
+    wait mpdialog_value("enemyKillDelay", 0) + 0.1;
     while (self.playingdialog) {
-        wait(0.5);
+        wait 0.5;
     }
     allies = arraysort(allies, self.origin);
     foreach (player in allies) {
@@ -1564,7 +1564,7 @@ function play_promotion_reaction() {
     if (!level.teambased) {
         return;
     }
-    wait(9);
+    wait 9;
     players = self get_friendly_players();
     players = arraysort(players, self.origin);
     selfdialog = self getmpdialogname();
@@ -1812,7 +1812,7 @@ function wait_play_dialog(waittime, dialogkey, dialogflags, dialogbuffer, enemy,
         if (isdefined(endnotify)) {
             self endon(endnotify);
         }
-        wait(waittime);
+        wait waittime;
     }
     self thread play_dialog(dialogkey, dialogflags, dialogbuffer, enemy);
 }
@@ -1829,7 +1829,7 @@ function function_f57e565f(dialogkey, entity, waittime) {
     }
     dialogalias = entity get_player_dialog_alias(dialogkey, undefined);
     if (isdefined(waittime) && waittime > 0) {
-        wait(waittime);
+        wait waittime;
         if (!isdefined(self) || isdefined(self.playingdialog) && self.playingdialog || !isplayer(self) || !isdefined(entity) || self == entity && self isplayerunderwater() || !isplayer(entity)) {
             return;
         }
@@ -1925,7 +1925,7 @@ function function_5896274(waittime, dialogalias, dialogflags, dialogbuffer, enem
         if (isdefined(endnotify)) {
             self endon(endnotify);
         }
-        wait(waittime);
+        wait waittime;
     }
     self thread function_a48c33ff(dialogalias, dialogflags, dialogbuffer, enemy);
 }
@@ -1993,7 +1993,7 @@ function wait_dialog_buffer(dialogbuffer) {
     level endon(#"game_ended");
     self.playingdialog = 1;
     if (isdefined(dialogbuffer) && dialogbuffer > 0) {
-        wait(dialogbuffer);
+        wait dialogbuffer;
     }
     self.playingdialog = 0;
     self.var_6765d33e = 0;
@@ -2296,7 +2296,7 @@ function function_e3ebbf87(var_aa988d26, var_c1132df6) {
         level endon(#"game_ended");
     }
     waittime = mpdialog_value("calloutTriggerDelay", 0);
-    wait(waittime);
+    wait waittime;
     if (!isdefined(self) || !isplayer(self) || self isplayerunderwater()) {
         return;
     }
@@ -3457,7 +3457,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
         setdvar(#"testalias_taacom", "<dev string:x94>");
         setdvar(#"testalias_commander", "<dev string:xb0>");
         while (true) {
-            wait(1);
+            wait 1;
             player = util::gethostplayer();
             if (!isdefined(player)) {
                 continue;
@@ -3529,7 +3529,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
         if (!isdefined(delay)) {
             delay = 0;
         }
-        wait(delay);
+        wait delay;
         self playsoundontag(getdvarstring(#"testalias_player", "<dev string:x74>"), "<dev string:xd3>");
     }
 
@@ -3541,7 +3541,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
         if (!isdefined(delay)) {
             delay = 0;
         }
-        wait(delay);
+        wait delay;
         self playlocalsound(getdvarstring(#"testalias_taacom", "<dev string:x74>"));
     }
 
@@ -3553,7 +3553,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
         if (!isdefined(delay)) {
             delay = 0;
         }
-        wait(delay);
+        wait delay;
         self playlocalsound(getdvarstring(#"testalias_commander", "<dev string:x74>"));
     }
 
@@ -3601,7 +3601,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
     function play_conv_self_other() {
         num = randomintrange(0, 4);
         self play_test_dialog("<dev string:x132>" + num);
-        wait(4);
+        wait 4;
         players = arraysort(level.players, self.origin);
         foreach (player in players) {
             if (player != self && isalive(player)) {
@@ -3624,7 +3624,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
                 break;
             }
         }
-        wait(4);
+        wait 4;
         self play_test_dialog("<dev string:x13f>" + player response_key() + num);
     }
 
@@ -3642,7 +3642,7 @@ function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay
                 break;
             }
         }
-        wait(4);
+        wait 4;
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
                 player play_test_dialog("<dev string:x13f>" + firstplayer response_key() + num);

@@ -304,7 +304,7 @@ function function_a898afdc() {
         return;
     }
     level flag::set("mission_failed");
-    wait(0.1);
+    wait 0.1;
     level notify(#"combattraining_logic_finished", {#success:0});
 }
 
@@ -336,7 +336,7 @@ function function_37adbd8f() {
     }
     level thread ct_utils::function_bfa522d1(0);
     level thread function_61011245();
-    wait(2);
+    wait 2;
 }
 
 // Namespace ct_nomad/ct_nomad
@@ -450,7 +450,7 @@ function function_42a4603() {
     self.var_5ab7c19c = e_player.angles;
     self.var_bab91f2 = 500;
     self thread ct_bots::function_956b904a();
-    wait(12);
+    wait 12;
     self.var_1574ae06 = undefined;
     self.var_bab91f2 = 1200;
 }
@@ -500,7 +500,7 @@ function function_62e9842e(var_4d4513ee) {
     }
     e_player = getplayers()[0];
     e_player thread ct_utils::function_329f9ba6(#"hash_3701a39ca23497ed", 5, "red", 2);
-    wait(3);
+    wait 3;
     a_ai = getaiarray();
     if (a_ai.size > 0) {
         level thread ct_bots::activate_bots(2, #"axis");
@@ -656,7 +656,7 @@ function function_2ff69a5d() {
     self endon(#"death");
     level flag::wait_till_any(array("mission_success", "mission_failed"));
     self dog::function_441cdbb6();
-    wait(0.5);
+    wait 0.5;
 }
 
 // Namespace ct_nomad/ct_nomad
@@ -736,7 +736,7 @@ function function_61011245() {
 // Checksum 0x90f440e1, Offset: 0x2ae8
 // Size: 0x7c
 function function_d2ae88f1() {
-    wait(1);
+    wait 1;
     e_player = getplayers(#"allies")[0];
     e_player endon(#"death");
     e_player ct_utils::function_329f9ba6(#"hash_137035fcfbcfbfa7", 4, "green", 2);

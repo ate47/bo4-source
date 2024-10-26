@@ -123,7 +123,7 @@ function function_97d0a8af(local_client_num, obj_id, x, y, clientnum) {
     self notify("68f151c5b262427f");
     self endon("68f151c5b262427f");
     while (isdefined(level.localplayers[local_client_num].infiltrating) && level.localplayers[local_client_num].infiltrating) {
-        wait(0.1);
+        wait 0.1;
     }
     objective_delete(local_client_num, obj_id);
     objective_add(local_client_num, obj_id, "active", #"teammate_waypoint", (x, y, 0), #"none", clientnum);
@@ -279,7 +279,7 @@ function function_f8c70ad7(localclientnum) {
                 setsoundvolume(var_408847b6.var_2f3960f5, 1);
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -408,7 +408,7 @@ function private function_3dadedf8(localclientnum) {
             }
         }
         players = undefined;
-        wait(0.2);
+        wait 0.2;
     }
 }
 

@@ -282,7 +282,7 @@ function on_game_playing() {
     playsoundatposition("evt_spawn_alarm", (-576, 464, 41));
     playsoundatposition("evt_spawn_alarm", (744, -45, 163));
     playsoundatposition("evt_spawn_alarm", (1251, 471, 194));
-    wait(3);
+    wait 3;
     var_d362b824 = randomint(2);
     if (var_d362b824 == 1) {
         playsoundatposition("vox_pa_generic_spawn_a_01", (1356, 159, 165));
@@ -295,7 +295,7 @@ function on_game_playing() {
         playsoundatposition("vox_pa_generic_spawn_a_01", (-461, 1547, -121));
         playsoundatposition("vox_pa_generic_spawn_a_01", (345, 1540, -134));
         playsoundatposition("vox_pa_generic_spawn_a_01", (721, 730, 56));
-        wait(2);
+        wait 2;
         playsoundatposition("vox_pa_generic_spawn_a_02", (1356, 159, 165));
         playsoundatposition("vox_pa_generic_spawn_a_02", (726, 3, 181));
         playsoundatposition("vox_pa_generic_spawn_a_02", (353, 962, 284));
@@ -306,7 +306,7 @@ function on_game_playing() {
         playsoundatposition("vox_pa_generic_spawn_a_02", (-461, 1547, -121));
         playsoundatposition("vox_pa_generic_spawn_a_02", (345, 1540, -134));
         playsoundatposition("vox_pa_generic_spawn_a_02", (721, 730, 56));
-        wait(2);
+        wait 2;
         playsoundatposition("vox_pa_generic_spawn_a_03", (1356, 159, 165));
         playsoundatposition("vox_pa_generic_spawn_a_03", (726, 3, 181));
         playsoundatposition("vox_pa_generic_spawn_a_03", (353, 962, 284));
@@ -317,7 +317,7 @@ function on_game_playing() {
         playsoundatposition("vox_pa_generic_spawn_a_03", (-461, 1547, -121));
         playsoundatposition("vox_pa_generic_spawn_a_03", (345, 1540, -134));
         playsoundatposition("vox_pa_generic_spawn_a_03", (721, 730, 56));
-        wait(2);
+        wait 2;
         playsoundatposition("vox_pa_generic_spawn_a_04", (1356, 159, 165));
         playsoundatposition("vox_pa_generic_spawn_a_04", (726, 3, 181));
         playsoundatposition("vox_pa_generic_spawn_a_04", (353, 962, 284));
@@ -340,7 +340,7 @@ function on_game_playing() {
     playsoundatposition("vox_pa_generic_spawn_b_01", (-461, 1547, -121));
     playsoundatposition("vox_pa_generic_spawn_b_01", (345, 1540, -134));
     playsoundatposition("vox_pa_generic_spawn_b_01", (721, 730, 56));
-    wait(2);
+    wait 2;
     playsoundatposition("vox_pa_generic_spawn_b_02", (1356, 159, 165));
     playsoundatposition("vox_pa_generic_spawn_b_02", (726, 3, 181));
     playsoundatposition("vox_pa_generic_spawn_b_02", (353, 962, 284));
@@ -351,7 +351,7 @@ function on_game_playing() {
     playsoundatposition("vox_pa_generic_spawn_b_02", (-461, 1547, -121));
     playsoundatposition("vox_pa_generic_spawn_b_02", (345, 1540, -134));
     playsoundatposition("vox_pa_generic_spawn_b_02", (721, 730, 56));
-    wait(2);
+    wait 2;
     playsoundatposition("vox_pa_generic_spawn_b_03", (1356, 159, 165));
     playsoundatposition("vox_pa_generic_spawn_b_03", (726, 3, 181));
     playsoundatposition("vox_pa_generic_spawn_b_03", (353, 962, 284));
@@ -362,7 +362,7 @@ function on_game_playing() {
     playsoundatposition("vox_pa_generic_spawn_b_03", (-461, 1547, -121));
     playsoundatposition("vox_pa_generic_spawn_b_03", (345, 1540, -134));
     playsoundatposition("vox_pa_generic_spawn_b_03", (721, 730, 56));
-    wait(2);
+    wait 2;
     playsoundatposition("vox_pa_generic_spawn_b_04", (1356, 159, 165));
     playsoundatposition("vox_pa_generic_spawn_b_04", (726, 3, 181));
     playsoundatposition("vox_pa_generic_spawn_b_04", (353, 962, 284));
@@ -402,7 +402,7 @@ function function_ff61a79d() {
         var_f7f8b739 = getentarray("mannequin", "targetname");
         if (var_f7f8b739.size < 25) {
             level thread spawn_mannequin();
-            wait(1);
+            wait 1;
         }
         waitframe(1);
     }
@@ -449,7 +449,7 @@ function function_d38af2b() {
             level thread function_bf48abde();
         }
         level thread scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle");
-        wait(4);
+        wait 4;
         level scene::play(#"cin_nuketown_4_movie_sh010");
         level scene::play(#"hash_428edf03d5cf177");
         return;
@@ -464,29 +464,29 @@ function function_d38af2b() {
     playsoundatposition("vox_pa_ee_warning", (-461, 1547, -121));
     playsoundatposition("vox_pa_ee_warning", (345, 1540, -134));
     playsoundatposition("vox_pa_ee_warning", (721, 730, 56));
-    wait(17);
+    wait 17;
     function_36b1fa1c(0);
-    wait(3);
+    wait 3;
     function_36b1fa1c(1);
-    wait(2);
+    wait 2;
     function_36b1fa1c(2);
-    wait(3);
+    wait 3;
     function_36b1fa1c(3);
-    wait(2);
+    wait 2;
     function_36b1fa1c(4);
-    wait(2);
+    wait 2;
     function_36b1fa1c(5);
-    wait(2);
+    wait 2;
     function_36b1fa1c(6);
-    wait(2);
+    wait 2;
     function_36b1fa1c(7);
-    wait(3);
+    wait 3;
     function_36b1fa1c(8);
-    wait(2);
+    wait 2;
     function_36b1fa1c(9);
-    wait(2);
+    wait 2;
     function_36b1fa1c(10);
-    wait(3);
+    wait 3;
     function_36b1fa1c(11);
     var_c6970da1 = getent("mannequin_destructible_inside_train", "targetname");
     if (isdefined(var_c6970da1)) {

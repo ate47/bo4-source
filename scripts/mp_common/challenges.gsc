@@ -1654,10 +1654,10 @@ function private function_4039ce49() {
     player = self;
     player endon(#"disconnect");
     while (game.state != "playing") {
-        wait(1);
+        wait 1;
     }
     wait_time = randomfloatrange(3, 5);
-    wait(wait_time);
+    wait wait_time;
     if (!isdefined(player)) {
         return;
     }
@@ -2359,7 +2359,7 @@ function killedbasedefender(objective) {
 // Size: 0x26
 function waittilltimeoutordeath(timeout) {
     self endon(#"death");
-    wait(timeout);
+    wait timeout;
 }
 
 // Namespace challenges/challenges
@@ -2537,7 +2537,7 @@ function flakjacketprotectedmp() {
     if (!self function_6c32d092(#"talent_flakjacket")) {
         return;
     }
-    wait(2);
+    wait 2;
     self stats::function_dad108fa(#"survive_with_flak", 1);
 }
 

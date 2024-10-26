@@ -807,7 +807,7 @@ function checkforemp() {
 function supplydropgrenadetimeout(team, killstreak_id, weapon) {
     self endon(#"death", #"stationary");
     grenade_lifetime = 10;
-    wait(grenade_lifetime);
+    wait grenade_lifetime;
     if (!isdefined(self)) {
         return;
     }
@@ -1001,7 +1001,7 @@ function dropeverythingtouchingcrate(origin) {
 // Size: 0x4c
 function dropalltogroundaftercratedelete(crate, crate_origin) {
     crate waittill(#"death");
-    wait(0.1);
+    wait 0.1;
     crate dropeverythingtouchingcrate(crate_origin);
 }
 
@@ -1141,7 +1141,7 @@ function cratedelete(drop_all_to_ground) {
 // Size: 0x5e
 function stationarycrateoverride() {
     self endon(#"death", #"stationary");
-    wait(4);
+    wait 4;
     self.angles = self.angles;
     self.origin = self.origin;
     self notify(#"stationary");
@@ -1153,7 +1153,7 @@ function stationarycrateoverride() {
 // Size: 0x44
 function timeoutcratewaiter() {
     self endon(#"death", #"stationary");
-    wait(20);
+    wait 20;
     self cratedelete(1);
 }
 
@@ -1271,14 +1271,14 @@ function do_supply_drop_detonation(weapon, owner) {
     self util::waittillnotmoving();
     self.angles = (0, self.angles[1], 90);
     fuse_time = float(weapon.fusetime) / 1000;
-    wait(fuse_time);
+    wait fuse_time;
     if (!isdefined(owner) || !owner emp::enemyempactive()) {
         thread smokegrenade::playsmokesound(self.origin, 6, level.sound_smoke_start, level.sound_smoke_stop, level.sound_smoke_loop);
         playfxontag(level._supply_drop_smoke_fx, self, "tag_fx");
         proj_explosion_sound = weapon.projexplosionsound;
         sound::play_in_space(proj_explosion_sound, self.origin);
     }
-    wait(3);
+    wait 3;
     self delete();
 }
 
@@ -1343,7 +1343,7 @@ function deleteonownerleave() {
 // Size: 0x3c
 function waitanddelete(time) {
     self endon(#"death");
-    wait(time);
+    wait time;
     self delete();
 }
 
@@ -1435,7 +1435,7 @@ function unlinkonrotation(crate) {
     self endon(#"delete");
     crate endon(#"death", #"stationary");
     waitbeforerotationcheck = getdvarfloat(#"scr_supplydrop_killcam_rot_wait", 0.5);
-    wait(waitbeforerotationcheck);
+    wait waitbeforerotationcheck;
     mincos = getdvarfloat(#"scr_supplydrop_killcam_max_rot", 0.999);
     cosine = 1;
     currentdirection = vectornormalize(anglestoforward(crate.angles));
@@ -1536,7 +1536,7 @@ function watch_explosive_crate() {
             player challenges::disarmedhackedcarepackage();
         }
     }
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         self cratedelete();
     }
@@ -1551,7 +1551,7 @@ function loop_sound(alias, interval) {
     self endon(#"death");
     while (true) {
         playsoundatposition(alias, self.origin);
-        wait(interval);
+        wait interval;
         interval /= 1.2;
         if (interval < 0.08) {
             break;
@@ -1621,7 +1621,7 @@ function cratekill() {
         if (numframesstationary >= maxframestillstationary) {
             break;
         }
-        wait(0.01);
+        wait 0.01;
     }
 }
 
@@ -1672,10 +1672,10 @@ function cratedroptogroundkill() {
             cratedroptogroundtrace(start);
             start = self getpointinbounds(-1, -1, 0);
             cratedroptogroundtrace(start);
-            wait(0.2);
+            wait 0.2;
             continue;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -2679,7 +2679,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
             }
         }
         if (wait_for_drop) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         break;
@@ -2774,7 +2774,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
     chopper notify(#"drop_crate", {#position:chopper.origin, #direction:chopper.angles, #owner:chopper.owner});
     chopper.droptime = gettime();
     chopper playsound(#"veh_supply_drop");
-    wait(0.7);
+    wait 0.7;
     if (isdefined(level.killstreakweapons[weapon])) {
         chopper killstreaks::play_pilot_dialog_on_owner("waveStartFinal", level.killstreakweapons[weapon], chopper.killstreak_id);
     }
@@ -2804,7 +2804,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
 // Checksum 0x20958bd7, Offset: 0xbf00
 // Size: 0x4c
 function function_e16ff9df(delay) {
-    wait(delay);
+    wait delay;
     if (!isdefined(self)) {
         return;
     }
@@ -2898,7 +2898,7 @@ function helidestroyed() {
         self.owner notify(#"payload_fail");
     }
     self setspeed(25, 5);
-    wait(randomfloatrange(0.5, 1.5));
+    wait randomfloatrange(0.5, 1.5);
     self notify(#"hash_525537be2de4c159", {#position:self.origin, #direction:self.angles, #owner:self.owner});
     lbexplode();
 }
@@ -2935,7 +2935,7 @@ function lbspin(speed) {
     self setyawspeed(speed, speed, speed);
     while (isdefined(self)) {
         self settargetyaw(self.angles[1] + speed * 0.9);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -2958,7 +2958,7 @@ function refcountdecchopper(team, killstreak_id) {
     function supply_drop_dev_gui() {
         setdvar(#"scr_supply_drop_gui", "<dev string:x6d>");
         while (true) {
-            wait(0.5);
+            wait 0.5;
             devgui_string = getdvarstring(#"scr_supply_drop_gui");
             level.dev_gui_supply_drop = devgui_string;
         }

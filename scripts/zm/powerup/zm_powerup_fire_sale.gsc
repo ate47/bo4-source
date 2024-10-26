@@ -104,7 +104,7 @@ function check_to_clear_fire_sale() {
     while (firesale_chest_is_leaving()) {
         waitframe(1);
     }
-    wait(1);
+    wait 1;
     level.disable_firesale_drop = undefined;
 }
 
@@ -175,7 +175,7 @@ function apply_fire_sale_to_chest() {
     if (self.zbarrier.state == "leaving") {
         self.zbarrier waittilltimeout(10, #"left");
     }
-    wait(0.1);
+    wait 0.1;
     self thread zm_magicbox::show_chest();
 }
 

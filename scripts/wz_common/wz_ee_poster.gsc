@@ -127,7 +127,7 @@ function function_7a1e21a9(v_loc) {
         v_loc = trace[#"position"];
     }
     time = self wz_ai_utils::fake_physicslaunch(v_loc, 100);
-    wait(time);
+    wait time;
     if (isdefined(self)) {
         self.origin = v_loc;
     }

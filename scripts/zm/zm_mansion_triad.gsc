@@ -350,7 +350,7 @@ function cleanup_step_3(var_5ea5c94d, ended_early) {
     e_stone = getent("stone_forest", "targetname");
     e_stone playsound(#"hash_224d8c48960f71ee");
     e_stone stoploopsound();
-    wait(3);
+    wait 3;
     var_a484bb88 = struct::get("kp1_end");
     var_febddc3e = struct::get("kp2_end");
     var_c0c5878c = struct::get("kp3_end");
@@ -380,7 +380,7 @@ function cleanup_step_3(var_5ea5c94d, ended_early) {
         level.var_c22f75e6 playsound(#"hash_20cc4a02f0ac5e7b");
     }
     if (!var_5ea5c94d) {
-        wait(3);
+        wait 3;
     }
     if (ended_early) {
         namespace_617a54f4::function_2a94055d("soul_capture_kp1");
@@ -473,7 +473,7 @@ function cleanup_step_4(var_5ea5c94d, ended_early) {
 // Checksum 0x4d6eb4a3, Offset: 0x30a0
 // Size: 0x24
 function kp_cleanup() {
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self delete();
     }
@@ -600,7 +600,7 @@ function function_2aa04f9f() {
                 if (self.script_int != 3) {
                     self waittill(#"fire_end");
                 } else {
-                    wait(1.5);
+                    wait 1.5;
                 }
                 if (self.script_int == 3) {
                     if (isalive(e_player) && !(isdefined(e_player.var_aed1893c[#"hash_7a226c41930a49a3"]) && e_player.var_aed1893c[#"hash_7a226c41930a49a3"])) {
@@ -627,7 +627,7 @@ function function_2aa04f9f() {
                 }
                 continue;
             }
-            wait(1.5);
+            wait 1.5;
             a_s_locs = struct::get_array(self.script_noteworthy, "script_noteworthy");
             foreach (s_loc in a_s_locs) {
                 s_loc notify(#"fire_end");
@@ -718,7 +718,7 @@ function function_566d3cd2() {
 // Size: 0x54
 function function_3c832025() {
     self clientfield::set("" + #"hash_51257ec597a8f84f", 0);
-    wait(1.5);
+    wait 1.5;
     if (isdefined(self)) {
         self delete();
     }
@@ -816,7 +816,7 @@ function function_265858d6() {
 function function_30fe35b(str_tag, str_model, n_wait) {
     self showpart(str_tag, str_model, 1);
     self playsoundontag(#"hash_7c38eb0531ca63ee", str_tag);
-    wait(n_wait);
+    wait n_wait;
     if (isdefined(self)) {
         self hidepart(str_tag, str_model, 1);
     }
@@ -858,7 +858,7 @@ function function_4490aa7d() {
     util::wait_network_frame();
     e_wisp clientfield::set("" + #"wisp_fx", 1);
     mdl_symbol show();
-    wait(2.5);
+    wait 2.5;
     e_wisp thread function_d409a74f(mdl_symbol);
     e_wisp waittill(#"hash_6df5566461d13967");
     e_wisp moveto(s_loc.origin, 0.25);
@@ -908,7 +908,7 @@ function function_d409a74f(mdl_symbol) {
             n_timer = 0;
         }
         n_dist = undefined;
-        wait(0.25);
+        wait 0.25;
     }
     self moveto(mdl_symbol.origin + (0, 0, 46), 2);
     self waittill(#"movedone");
@@ -925,7 +925,7 @@ function function_d409a74f(mdl_symbol) {
         mdl_symbol clientfield::set("" + #"hash_2108935a0c33f89a", 0);
         break;
     }
-    wait(2);
+    wait 2;
     mdl_symbol delete();
 }
 
@@ -1273,7 +1273,7 @@ function function_92227ee8(a_ents) {
 function function_444d9cf8() {
     level endon(#"hash_3a7ba7e53fa848e9");
     level flag::wait_till_all(array(#"kp1_connect", #"kp2_connect", #"kp3_connect"));
-    wait(0.5);
+    wait 0.5;
     s_kp1 = struct::get("kp1_line_source");
     level.kp1 = util::spawn_model("tag_origin", s_kp1.origin, s_kp1.angles);
     s_kp2 = struct::get("kp2_line_source");
@@ -1317,7 +1317,7 @@ function private function_df2c4d2d() {
                 }
             }
         }
-        wait(1);
+        wait 1;
     }
     level.var_411ea43b delete();
 }
@@ -1370,7 +1370,7 @@ function function_a78b58f6(n_active, var_e05ded9, var_39cddd2a) {
                 ai_werewolf callback::function_d8abfc3d(#"on_ai_killed", &teleporter_digger_hacked_before_breached_imp);
             }
         }
-        wait(5);
+        wait 5;
     }
 }
 
@@ -1434,14 +1434,14 @@ function function_31e641f5() {
                 break;
             }
             self clientfield::set("" + #"stone_glow", 1);
-            wait(0.1);
+            wait 0.1;
             n_time += 0.1;
         }
         if (b_using == 1) {
             self playsound(#"hash_c8be5b775b7ca39");
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     array::run_all(util::get_active_players(), &clientfield::increment_to_player, "" + #"mansion_mq_rumble", 1);
     level flag::set(#"disable_fast_travel");
@@ -1455,7 +1455,7 @@ function function_31e641f5() {
     self moveto(s_dest.origin, 3);
     self waittill(#"movedone");
     self clientfield::set("" + #"stone_pickup", 1);
-    wait(1);
+    wait 1;
     self.var_4c4f2b6 = self.angles;
     self thread mansion_util::function_da5cd631((0, 180, 0));
     level flag::set(#"forest_assault");
@@ -1473,7 +1473,7 @@ function function_6f244e() {
     self thread mansion_pap::function_c9c7a593();
     self thread function_3c07c22e();
     a_s_locs = struct::get_array("wisp_loc");
-    wait(randomfloatrange(1.5, 2.5));
+    wait randomfloatrange(1.5, 2.5);
     while (!level flag::get(#"hash_6402d013069eb3a")) {
         v_loc = self function_3f504167();
         if (!isdefined(v_loc)) {
@@ -1485,7 +1485,7 @@ function function_6f244e() {
         if (isdefined(n_time) && n_time > 0) {
             self moveto(v_loc + (0, 0, 45), n_time);
             self waittill(#"movedone");
-            wait(randomfloatrange(1.5, 2.5));
+            wait randomfloatrange(1.5, 2.5);
         }
         n_time = undefined;
         v_loc = undefined;
@@ -1582,7 +1582,7 @@ function function_5ffc956(v_zombie_origin) {
         level.var_be97413 = 1 === e_closest_player zm_audio::create_and_play_dialog(#"kill", #"knight_trap", undefined, 1);
     }
     if (isdefined(level.var_be97413) && level.var_be97413) {
-        wait(25);
+        wait 25;
         level.var_be97413 = 0;
     }
 }
@@ -1595,13 +1595,13 @@ function function_b646e75d() {
     level endon(#"hash_106bb5214b1fb1e6");
     level flag::wait_till(#"hash_6402d013069eb3a");
     level thread zm_utility::function_9ad5aeb1(0, 1, 0, 1, 0);
-    wait(2);
+    wait 2;
     mdl_stone = getent("stone_forest", "targetname");
     s_loc = struct::get("kp_forest");
     mdl_stone notify(#"stop_spin");
     mdl_stone stoploopsound();
     mdl_stone playsound(#"hash_7fb9d3b7c445909f");
-    wait(0.5);
+    wait 0.5;
     mdl_stone rotateto(mdl_stone.v_start_angles, 1);
     mdl_stone moveto(mdl_stone.v_start_origin, 2);
     mdl_stone waittill(#"movedone");
@@ -1696,7 +1696,7 @@ function forest_assault() {
     level flag::clear(#"zombie_drop_powerups");
     level.var_be97413 = 0;
     callback::on_ai_killed(&function_de68c9b7);
-    wait(2);
+    wait 2;
     level thread mansion_util::function_bb613572(function_d11cc23b(), #"hash_6402d013069eb3a");
     level thread _angles_cp_medal_no_deaths();
     level flag::wait_till("forest_final");
@@ -1713,7 +1713,7 @@ function forest_assault() {
 // Size: 0x64
 function function_769c307c() {
     level endon(#"boss_fight_started");
-    wait(15);
+    wait 15;
     level flag::set(#"spawn_zombies");
     level flag::set(#"zombie_drop_powerups");
 }
@@ -1743,7 +1743,7 @@ function private function_3d151222(var_f49ead21, var_5e1197bc) {
 // Size: 0x3b8
 function _angles_cp_medal_no_deaths() {
     function_f0a7d11b();
-    wait(10);
+    wait 10;
     switch (getplayers().size) {
     case 1:
         n_num = 64;
@@ -1766,18 +1766,18 @@ function _angles_cp_medal_no_deaths() {
     var_a1fc54b0 = 0;
     var_3833f77b = 0;
     while (!level flag::get(#"hash_6402d013069eb3a")) {
-        wait(1);
+        wait 1;
         if (!var_a1fc54b0 && level.var_3dd9f9be >= n_next_wave) {
             var_a1fc54b0 = 1;
             level flag::set(#"hash_29b12646045186fa");
-            wait(15 - getplayers().size);
+            wait 15 - getplayers().size;
             level flag::clear(#"hash_29b12646045186fa");
         }
         if (!var_3833f77b && level.var_3dd9f9be >= n_num) {
             var_3833f77b = 1;
             level flag::set("forest_final");
             level flag::set(#"hash_29b12646045186fa");
-            wait(15 - getplayers().size);
+            wait 15 - getplayers().size;
             level flag::clear(#"hash_29b12646045186fa");
         }
         a_zombies = getaiarchetypearray(#"zombie");
@@ -1821,7 +1821,7 @@ function function_b5ab717() {
     }
     level thread function_a78b58f6(n_active, n_num, #"hash_6402d013069eb3a");
     while (level.var_b02bf6d2 < n_num) {
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -1893,13 +1893,13 @@ function trigger_forest_entrance() {
                 break;
             }
             e_door clientfield::set("" + #"stone_glow", 1);
-            wait(0.1);
+            wait 0.1;
         }
         if (b_using == 1) {
             e_door playsound(#"hash_6e67bd5897b45cb1");
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     player = array::random(zm_vo::function_347f7d34());
     if (isdefined(player)) {
@@ -1920,7 +1920,7 @@ function function_a112ed5e() {
     array::run_all(util::get_active_players(), &freezecontrolsallowlook, 1);
     array::run_all(util::get_active_players(), &val::set, "boss_door_opening", "ignoreme", 1);
     array::run_all(util::get_active_players(), &val::set, "boss_door_opening", "takedamage", 0);
-    wait(1);
+    wait 1;
     array::run_all(util::get_active_players(), &clientfield::increment_to_player, "" + #"mansion_mq_rumble", 1);
     var_3f81f68b = getent("relic_greenhouse", "targetname");
     var_b32bc0a = getent("relic_cemetery", "targetname");
@@ -1931,7 +1931,7 @@ function function_a112ed5e() {
         var_3f81f68b clientfield::set("" + #"stone_glow", 0);
         var_b32bc0a clientfield::set("" + #"stone_glow", 0);
         var_d73febbe clientfield::set("" + #"stone_glow", 0);
-        wait(1.25);
+        wait 1.25;
         level.var_bc889083 show();
         level.var_bc889083 = undefined;
         mdl_door delete();
@@ -1940,10 +1940,10 @@ function function_a112ed5e() {
         var_d73febbe delete();
     }
     level scene::play(#"p8_fxanim_zm_man_druid_door_bundle");
-    wait(2.5);
+    wait 2.5;
     zm_sq::start(#"zm_mansion_ww");
     level flag::set(#"main_quest_completed");
-    wait(2);
+    wait 2;
     array::run_all(util::get_active_players(), &freezecontrolsallowlook, 0);
     array::run_all(util::get_active_players(), &val::reset, "boss_door_opening", "ignoreme");
     array::run_all(util::get_active_players(), &val::reset, "boss_door_opening", "takedamage");

@@ -74,7 +74,7 @@ function play_siege(str_anim, n_rate = 1) {
         return;
     }
     n_length = function_658484f7(str_anim);
-    wait(n_length);
+    wait n_length;
 }
 
 // Namespace animation/animation_shared
@@ -452,7 +452,7 @@ function add_notetrack_func(funcname, func) {
 }
 
 // Namespace animation/animation_shared
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0x2e251bd5, Offset: 0x1f38
 // Size: 0x128
 function add_global_notetrack_handler(str_note, func, pass_notify_params, ...) {

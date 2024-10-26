@@ -113,12 +113,12 @@ function function_91fabcb(mdl_item, b_clean_up = 0) {
     while (true) {
         s_result = self waittill(#"trigger");
         mdl_item clientfield::set("" + #"forcestream_crafted_item", 1);
-        wait(3);
+        wait 3;
         mdl_item clientfield::set("" + #"forcestream_crafted_item", 0);
         while (isdefined(s_result.activator) && s_result.activator istouching(self)) {
-            wait(1.6);
+            wait 1.6;
         }
-        wait(16);
+        wait 16;
     }
 }
 
@@ -141,7 +141,7 @@ function function_25f97da0() {
         s_result = self waittill(#"hash_1c35eb15aa210d6");
         if (isdefined(s_result.var_9fa6220c) && isdefined(s_result.var_9fa6220c.script_string) && s_result.var_9fa6220c.script_string == "spartan_monument") {
             self forcestreambundle(#"p8_fxanim_zm_red_drakaina_bundle");
-            wait(3);
+            wait 3;
             self function_66b6e720(#"p8_fxanim_zm_red_drakaina_bundle");
         }
     }
@@ -157,7 +157,7 @@ function function_e968fd4f() {
         s_result = self waittill(#"hash_1c35eb15aa210d6");
         if (isdefined(s_result.var_9fa6220c) && isdefined(s_result.var_9fa6220c.script_string) && s_result.var_9fa6220c.script_string == "center_of_the_world") {
             level clientfield::set("" + #"hash_761511e09cb8324e", 1);
-            wait(3);
+            wait 3;
             level clientfield::set("" + #"hash_761511e09cb8324e", 0);
         }
     }

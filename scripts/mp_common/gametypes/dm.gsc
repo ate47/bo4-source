@@ -102,7 +102,7 @@ function onscoreclosemusic() {
                 return;
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

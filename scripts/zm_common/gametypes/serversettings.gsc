@@ -61,7 +61,7 @@ function main() {
     }
     for (;;) {
         updateserversettings();
-        wait(5);
+        wait 5;
     }
 }
 

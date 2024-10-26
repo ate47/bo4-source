@@ -205,7 +205,7 @@ function function_fd8a137e(n_time = 0) {
     self notify(#"hash_b296fe3ccb7d273");
     self endon(#"disconnect", #"hash_b296fe3ccb7d273");
     if (n_time > 0) {
-        wait(n_time);
+        wait n_time;
     }
     level zm_ui_inventory::function_7df6bb60(#"zm_towers_challenges", 0, self);
     level zm_ui_inventory::function_7df6bb60(#"zm_towers_challenges_progress", 0, self);
@@ -251,7 +251,7 @@ function function_1583001a(e_player, var_986431d3) {
     }
     level thread zm_audio::sndannouncerplayvox(var_38e7a8be);
     var_986431d3.challenge_struct thread function_702ac990(e_player, e_trig);
-    wait(0.1);
+    wait 0.1;
     foreach (player in getplayers()) {
         if (player != e_player) {
             if (player flag::exists(#"flag_player_completed_all_challenges") && player flag::get(#"flag_player_completed_all_challenges")) {
@@ -303,10 +303,10 @@ function function_702ac990(e_player, e_trig) {
             self.var_4931480f sethintstringforplayer(e_player, #"hash_5501784aa04e0df2");
             var_a9bf0d0d = self.n_challenges_complete;
             while (isdefined(self.var_25276720) && self.var_25276720 flag::get(#"flag_player_initialized_reward") && !self.var_25276720 flag::get(#"hash_6534297bbe7e180d")) {
-                wait(0.5);
+                wait 0.5;
             }
             while (var_a9bf0d0d == self.n_challenges_complete) {
-                wait(0.5);
+                wait 0.5;
             }
             continue;
         }
@@ -326,7 +326,7 @@ function function_702ac990(e_player, e_trig) {
                 level thread function_45f9a547();
             }
         }
-        wait(2.75);
+        wait 2.75;
         if (!isdefined(e_trig) || !isdefined(e_trig.banner) || !isdefined(e_player)) {
             continue;
         }
@@ -334,7 +334,7 @@ function function_702ac990(e_player, e_trig) {
             continue;
         }
         if (e_player !== self.var_25276720) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (e_trig.banner haspart(level.var_286b00eb[self.n_challenges_complete])) {
@@ -466,14 +466,14 @@ function function_45f9a547() {
     level flag::set("challenge_trap_piece_spawned");
     fx_model = util::spawn_model("tag_origin", level.var_b56b2097.origin);
     fx_model clientfield::set("blue_glow", 1);
-    wait(1);
+    wait 1;
     level.var_b56b2097 show();
     mdl_clip = getent("mdl_acid_trap_cauldron_piece_clip", "targetname");
     mdl_clip solid();
-    wait(1);
+    wait 1;
     if (isdefined(fx_model)) {
         fx_model clientfield::set("blue_glow", 0);
-        wait(1);
+        wait 1;
         fx_model delete();
     }
 }
@@ -606,7 +606,7 @@ function function_c6d050e9(b_success = 0) {
 // Checksum 0x5bc1b15e, Offset: 0x3388
 // Size: 0xa4
 function function_6c97a983(mdl_head, var_e7f5e1c1, var_64ddce5c, n_time = 2.25) {
-    wait(n_time);
+    wait n_time;
     var_e7f5e1c1 delete();
     var_64ddce5c clientfield::increment("banner_soul_burst");
     var_64ddce5c delete();
@@ -1213,7 +1213,7 @@ function function_1fe5e1a3(e_player) {
             self function_c6d050e9();
         }
         self function_544b63c0(n_progress);
-        wait(1);
+        wait 1;
     }
     self function_544b63c0(n_progress);
     self notify(#"hash_60b65dbde4aab0c8");
@@ -1603,7 +1603,7 @@ function function_fc8ff5f4(e_player) {
             }
             var_6bf81b9d.var_29f318bb = 0;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -1776,7 +1776,7 @@ function function_577792a1(e_trig, e_player) {
         } else {
             self sethintstring(#"hash_710531ce6bfa48c8");
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 

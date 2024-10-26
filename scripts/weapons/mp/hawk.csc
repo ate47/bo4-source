@@ -55,7 +55,7 @@ function private hawk_spawned(localclientnum) {
 function private function_23a9e4af(localclientnum) {
     self endon(#"death");
     while (!isdefined(self.owner)) {
-        wait(0.1);
+        wait 0.1;
     }
     if (isplayer(self.owner) && self.owner function_21c0fa55()) {
         setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.hawkActive"), 1);
@@ -294,7 +294,7 @@ function function_5a1bf101(localclientnum) {
                     var_6c8b920a = [];
                     var_c0443ab2 = 0;
                 }
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
         }

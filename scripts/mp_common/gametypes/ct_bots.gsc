@@ -235,7 +235,7 @@ function function_71ec2b36() {
 // Size: 0x84
 function function_aa870283(n_delay, var_4406a529 = 0, var_8c5f03d7 = 1, var_dd200d99 = 1) {
     if (n_delay) {
-        wait(n_delay);
+        wait n_delay;
     } else {
         waitframe(1);
     }
@@ -261,7 +261,7 @@ function function_26d45f32(var_4406a529 = 0, var_8c5f03d7 = 1, var_dd200d99 = 1)
             while (!self hasweapon(var_46ccfe18)) {
                 waitframe(1);
             }
-            wait(0.1);
+            wait 0.1;
         }
         self switchtoweapon(var_46ccfe18);
         do {
@@ -301,7 +301,7 @@ function function_fd2d220e(var_742b083e = undefined) {
         return;
     }
     if (isdefined(var_742b083e)) {
-        wait(var_742b083e);
+        wait var_742b083e;
     }
     if (isdefined(self.var_de9764de)) {
         foreach (weapon in self.var_de9764de) {
@@ -348,7 +348,7 @@ function function_e31c5d7a() {
 function function_7d86a450() {
     self endon(#"disconnect", #"death");
     for (;;) {
-        wait(1);
+        wait 1;
         primary_weapons = self getweaponslistprimaries();
         for (i = 0; i < primary_weapons.size; i++) {
             weapon = primary_weapons[i];
@@ -856,7 +856,7 @@ function function_b8eff92a(var_edab5327) {
 function checkfortimeout(waittime) {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators", #"reset_pathing");
     if (isdefined(waittime)) {
-        wait(waittime);
+        wait waittime;
     }
     self.navmeshpoint = undefined;
     self.var_86ba7e6d = 0;
@@ -870,9 +870,9 @@ function checkfortimeout(waittime) {
 function registerspecialty_earnmoremomentumspawnstart() {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators", #"bot_goal_reached", #"reset_pathing");
     if (isdefined(self.var_fc5b0b7f)) {
-        wait(self.var_fc5b0b7f);
+        wait self.var_fc5b0b7f;
     } else {
-        wait(randomfloatrange(0.01, 0.5));
+        wait randomfloatrange(0.01, 0.5);
     }
     self notify(#"hash_1213d70444c626d4", "stop_wander");
     self.navmeshpoint = undefined;
@@ -925,9 +925,9 @@ function function_f83f2862() {
 function function_6c89913a(var_daa4b90a = 1) {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators", #"reset_pathing");
     self.var_2925fedc = self.origin + (10, 0, 0);
-    wait(var_daa4b90a);
+    wait var_daa4b90a;
     self.var_2925fedc = self.origin + (-10, 0, 0);
-    wait(var_daa4b90a);
+    wait var_daa4b90a;
     self.var_2925fedc = self.origin + (0, 0, 10);
 }
 
@@ -1425,7 +1425,7 @@ function function_59458966(nd_spawn, n_state) {
         self waittill(#"goal");
         if (isdefined(nd_spawn.script_wait) && nd_spawn.script_wait > 0) {
             self thread function_abe81a6b();
-            wait(nd_spawn.script_wait);
+            wait nd_spawn.script_wait;
             self notify(#"stop_end");
         }
     }

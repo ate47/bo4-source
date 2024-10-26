@@ -168,13 +168,13 @@ function private function_d1dabace(n_time = 30) {
     level.func_override_wallbuy_prompt = &function_3d4fea64;
     level.func_magicbox_update_prompt_use_override = &function_bf591b5a;
     level.var_7f7fd2ac = gettime() + int(n_time * 1000);
-    wait(12);
+    wait 12;
     level.var_7f7fd2ac = gettime() + int(n_time * 1000);
     foreach (player in getplayers()) {
         player zm_trial_util::function_128378c9(n_time);
         player.var_838c00de = 1;
     }
-    wait(n_time);
+    wait n_time;
     function_59d771f7();
 }
 

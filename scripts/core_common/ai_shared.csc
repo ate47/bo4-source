@@ -13,7 +13,7 @@ function autoexec main() {
 #namespace ai;
 
 // Namespace ai/ai_shared
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x21 linked variadic
 // Checksum 0x828ac357, Offset: 0xa0
 // Size: 0x132
 function add_ai_spawn_function(func_spawn, ...) {
@@ -48,7 +48,7 @@ function function_932006d1(func_spawn) {
 }
 
 // Namespace ai/ai_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0x607d5cb3, Offset: 0x2a0
 // Size: 0x1e0
 function add_archetype_spawn_function(str_archetype, func_spawn, ...) {

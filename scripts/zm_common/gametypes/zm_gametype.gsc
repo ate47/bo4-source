@@ -194,7 +194,7 @@ function do_game_mode_shellshock() {
     self endon(#"disconnect");
     self._being_shellshocked = 1;
     self shellshock(#"grief_stab_zm", 0.75);
-    wait(0.75);
+    wait 0.75;
     self._being_shellshocked = 0;
 }
 
@@ -744,7 +744,7 @@ function player_hotjoin() {
     val::set(#"initial_black", "takedamage", 0);
     val::set(#"initial_black", "ignoreme");
     val::set(#"initial_black", "freezecontrols");
-    wait(0.5);
+    wait 0.5;
     self zm_player::spawnspectator();
     music::setmusicstate("none");
     self.is_hotjoining = 0;
@@ -757,7 +757,7 @@ function player_hotjoin() {
     }
     self util::streamer_wait(undefined, 0, 30);
     if (isdefined(level.var_58d27156)) {
-        wait(level.var_58d27156);
+        wait level.var_58d27156;
     }
     initialblackend();
     val::reset(#"initial_black", "hide");

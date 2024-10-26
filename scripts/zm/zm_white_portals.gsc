@@ -329,7 +329,7 @@ function teleport_player(user) {
     playfx(level._effect[#"portal_dest"], var_298e4578.origin, (1, 0, 0), (0, 0, 1));
     playsoundatposition(#"evt_teleporter_go", var_298e4578.origin);
     user playsoundtoplayer(#"hash_39876bf613387fef", user);
-    wait(0.5);
+    wait 0.5;
     user function_96e88318();
     user notify(#"teleporting_done");
     util::setclientsysstate("levelNotify", "cool_fx", user);
@@ -352,7 +352,7 @@ function function_96e88318(str_notify) {
 function function_c234a5ce() {
     self endoncallback(&function_4f5d4783, #"death");
     self val::set(#"teleport_exit", "ignoreme", 1);
-    wait(1);
+    wait 1;
     self function_4f5d4783();
 }
 
@@ -391,7 +391,7 @@ function cooldown_portal_timer(e_user) {
     }
     self.a_e_users[self.a_e_users.size] = e_user;
     self function_cb7c6fc7(e_user, 0);
-    wait(20);
+    wait 20;
     arrayremovevalue(self.a_e_users, e_user);
     self function_cb7c6fc7(e_user, 1);
     playsoundatposition(#"hash_1c870a3a31a2dcf9", self.origin);
@@ -563,7 +563,7 @@ function function_9d689cc4(portal, portal_exit) {
     self.b_ignore_cleanup = 1;
     self thread function_554c780b();
     while (distancesquared(self.origin, portal.origin) > self.goalradius * self.goalradius) {
-        wait(0.1);
+        wait 0.1;
     }
     self notify(#"reached_portal");
     self.var_3f667178 = undefined;
@@ -608,7 +608,7 @@ function function_71be28e1(zombie, start_portal, end_portal) {
     zombie.b_ignore_cleanup = 1;
     zombie forceteleport(level.s_zombie_teleport_room.origin);
     zombie setentitypaused(1);
-    wait(3);
+    wait 3;
     if (!isdefined(zombie)) {
         return;
     }
@@ -628,7 +628,7 @@ function function_71be28e1(zombie, start_portal, end_portal) {
 // Size: 0x3e
 function function_554c780b() {
     self endon(#"death", #"reached_portal");
-    wait(2);
+    wait 2;
     self.b_ignore_cleanup = self.var_693b80bb;
 }
 
@@ -972,7 +972,7 @@ function function_a54a70b3() {
     self endon(#"death");
     self.b_locked = 1;
     for (time = 0; time < 20; time++) {
-        wait(1);
+        wait 1;
     }
     self.b_locked = 0;
 }

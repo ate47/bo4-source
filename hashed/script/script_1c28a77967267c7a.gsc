@@ -72,7 +72,7 @@ function function_9d9bff80(var_2fe3186e, attacker) {
     level endon(#"end_game");
     var_b7fc8c3e = var_2fe3186e + (0, 0, 64);
     self playsound("vox_musicbox_start_sama_" + randomint(3));
-    wait(1);
+    wait 1;
     e_sam = util::spawn_model("p8_zm_music_box_samantha_trap", self.var_1a61db89.origin, (0, self.angles[1] + 180, 0));
     a_zombies = getaiteamarray(level.zombie_team);
     a_zombies = arraysortclosest(a_zombies, var_2fe3186e, 25, 0, 350);
@@ -97,10 +97,10 @@ function function_9d9bff80(var_2fe3186e, attacker) {
         }
     }
     e_sam thread scene::play(#"p8_zm_ora_music_box_bundle", "one_shot", e_sam);
-    wait(0.5);
+    wait 0.5;
     self.var_1a61db89 hide();
     self.var_1a61db89 clientfield::set("" + #"hash_136e9d44e7e2e888", 0);
-    wait(1);
+    wait 1;
     foreach (e_zombie in a_zombies) {
         if (isalive(e_zombie)) {
             var_c0225146 = var_b7fc8c3e + vectornormalize(e_zombie getcentroid() - var_b7fc8c3e) * 80;
@@ -114,7 +114,7 @@ function function_9d9bff80(var_2fe3186e, attacker) {
             e_zombie function_4ada560e();
         }
     }
-    wait(2);
+    wait 2;
     foreach (e_zombie in a_zombies) {
         if (isalive(e_zombie)) {
             e_zombie function_4ada560e();
@@ -137,7 +137,7 @@ function function_9d9bff80(var_2fe3186e, attacker) {
         level.var_f1907c72 notify(#"music_box");
     }
     e_sam playsound("vox_musicbox_end_sama_" + randomint(3));
-    wait(1.5);
+    wait 1.5;
     e_sam thread scene::stop();
     e_sam delete();
     self.var_1a61db89 delete();
@@ -149,7 +149,7 @@ function function_9d9bff80(var_2fe3186e, attacker) {
 // Checksum 0xbee61416, Offset: 0xea8
 // Size: 0x84
 function function_6b8c9160() {
-    wait(4);
+    wait 4;
     if (!level flag::get(#"hash_621d31a87bd6d05b") && level.var_98138d6b >= 2) {
         level.var_1c53964e thread zm_hms_util::function_6a0d675d("vox_musicbox_first");
     }

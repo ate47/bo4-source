@@ -146,7 +146,7 @@ function private function_b02e4a26(player) {
 function function_d4f9ecb(duration) {
     turretvehicle = self;
     turretvehicle endon(#"death", #"delete");
-    wait(duration);
+    wait duration;
     turretvehicle function_21f16a35();
 }
 
@@ -282,7 +282,7 @@ function function_fefefcc4() {
     turretvehicle = self;
     turret_index = 0;
     turretvehicle endon(#"death", #"death_started", #"end_turret_scanning");
-    wait(0.8);
+    wait 0.8;
     bundle = get_killstreak_bundle();
     var_beeadda8 = isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 300;
     while (true) {
@@ -316,7 +316,7 @@ function function_fefefcc4() {
             }
         }
         wait_time = turretvehicle.var_3413afc5 == #"standard_sight" ? 0.25 : 0.1;
-        wait(wait_time);
+        wait wait_time;
     }
 }
 
@@ -389,7 +389,7 @@ function turretscanning() {
     turretvehicle endon(#"death", #"death_started", #"end_turret_scanning");
     turretvehicle.turret_target = undefined;
     turretvehicle.do_not_clear_targets_during_think = 1;
-    wait(0.8);
+    wait 0.8;
     turretvehicle playsound(#"mpl_turret_startup");
     turretvehicle playloopsound(#"hash_69240c6db92da5bf");
     bundle = get_killstreak_bundle();
@@ -409,14 +409,14 @@ function turretscanning() {
         #/
         if (isdefined(turretvehicle.isstunned) && turretvehicle.isstunned || isdefined(turretvehicle.isjammed) && turretvehicle.isjammed) {
             turretvehicle function_fc58f46f();
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (isdefined(turretvehicle.enemy)) {
             if (!is_valid_target(turretvehicle.enemy, turretvehicle.team)) {
                 turretvehicle setignoreent(turretvehicle.enemy, 1);
                 turretvehicle function_fc58f46f();
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
             var_2aa33bf1 = 0;
@@ -428,7 +428,7 @@ function turretscanning() {
             if (var_2aa33bf1) {
                 turretvehicle setpersonalignore(turretvehicle.enemy, 1);
                 turretvehicle function_fc58f46f();
-                wait(0.1);
+                wait 0.1;
                 continue;
             }
             if (!isdefined(turretvehicle.var_7eb3ebd5[turretvehicle.enemy getentitynumber()]) && turretvehicle targetting_delay::function_1c169b3a(turretvehicle.enemy)) {
@@ -469,10 +469,10 @@ function turretscanning() {
                         turretvehicle.owner playsoundtoplayer(#"hash_7ea486136cd776c", turretvehicle.owner);
                     }
                     turretvehicle.turretrotscale = 1;
-                    wait(randomfloatrange(0.05, 0.2));
+                    wait randomfloatrange(0.05, 0.2);
                 }
             } else {
-                wait(0.25);
+                wait 0.25;
             }
             continue;
         }
@@ -517,7 +517,7 @@ function turretscanning() {
                 while (attempts < max_tries && !isdefined(turretvehicle.enemylastseentime) && isdefined(turretvehicle.enemy)) {
                     turretvehicle getperfectinfo(self.enemy, 0);
                     attempts++;
-                    wait(0.1);
+                    wait 0.1;
                 }
             }
         }

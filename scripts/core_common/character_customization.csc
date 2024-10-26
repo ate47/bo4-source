@@ -413,7 +413,7 @@ class class_7da27482 {
         self endon(#"cancel_gesture");
         if (wait_until_model_steam_ends && isdefined(var_1d18f5c7)) {
             while (!function_ea4ac9f8()) {
-                wait(0.25);
+                wait 0.25;
             }
         }
         var_2ec36514 = var_cbcee022;
@@ -422,7 +422,7 @@ class class_7da27482 {
         if (isdefined(gesture) && isdefined(gesture.animation)) {
             self endon(#"hash_578cb70e92c24a5a", #"cancel_gesture");
             while (!isdefined(var_cbcee022) && !isdefined(var_54430cb6)) {
-                wait(0.1);
+                wait 0.1;
             }
             var_a7e34ee1 = var_228f64da getcurrentanimscriptedname();
             var_99789677 = var_a7e34ee1 === gesture.animation || var_a7e34ee1 === gesture.intro || var_a7e34ee1 === gesture.outro;
@@ -1888,9 +1888,9 @@ function setup_character_extracam_settings(localclientnum, var_d0b01271, extraca
         waitframe(1);
     }
     if (isdefined(extracam_data_struct.defaultimagerender) && extracam_data_struct.defaultimagerender) {
-        wait(0.5);
+        wait 0.5;
     } else {
-        wait(0.1);
+        wait 0.1;
     }
     setextracamrenderready(extracam_data_struct.jobindex);
     extracam_data_struct.jobindex = undefined;

@@ -253,7 +253,7 @@ function function_1ca135cf(n_int) {
     if (level.var_94975706 == 1) {
         e_bush = getent("burning_man_shrub", "targetname");
         e_bush clientfield::set("" + #"stick_fire", 1);
-        wait(1);
+        wait 1;
         e_bush clientfield::set("" + #"stick_fire", 0);
         waitframe(1);
         e_bush delete();
@@ -565,7 +565,7 @@ function private function_d8ca90b7() {
                 return;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -581,7 +581,7 @@ function private function_959fcbff(player) {
         zm_unitrigger::unregister_unitrigger(level.var_d2ff3b06);
         level.var_d2ff3b06 = undefined;
     }
-    wait(2);
+    wait 2;
     level.var_e34d55ef setmodel(#"p8_zm_man_dead_tree_branches_burned");
     if (player zm_characters::is_character(array(#"hash_5ebf024e1559c04a"))) {
         player thread function_3ce20299();
@@ -604,7 +604,7 @@ function private function_959fcbff(player) {
     player.e_linkto clientfield::set("" + #"hash_69b312bcaae6308b", 1);
     player clientfield::set("" + #"hash_30aa04edc476253f", 1);
     player.e_linkto movez(-80, 1.5);
-    wait(0.375);
+    wait 0.375;
     a_players = getplayers();
     arrayremovevalue(a_players, player);
     foreach (e_player in a_players) {
@@ -634,7 +634,7 @@ function private function_959fcbff(player) {
     player.e_linkto moveto(s_end_pos.origin, 3);
     player.e_linkto rotateroll(120, 3);
     player thread function_e84d4271();
-    wait(2);
+    wait 2;
     player thread lui::screen_fade_out(1, (0.8, 0.24, 0.15));
     level waittilltimeout(10, #"hash_132b5b79b9aeaf9e");
     player notify(#"tunnel_complete");
@@ -676,7 +676,7 @@ function private function_959fcbff(player) {
 function private function_3b71b7a7() {
     self endon(#"disconnect");
     self setvisibletoall();
-    wait(0.25);
+    wait 0.25;
     a_players = getplayers();
     arrayremovevalue(a_players, self);
     foreach (e_player in a_players) {
@@ -772,7 +772,7 @@ function private function_e84d4271() {
     self endon(#"disconnect", #"tunnel_complete");
     while (true) {
         self playrumbleonentity("hell_tube_rumble");
-        wait(0.3);
+        wait 0.3;
     }
 }
 
@@ -808,7 +808,7 @@ function function_c5c7d880() {
         s_notify = self waittill(#"hash_1fe68a6b935c321d");
         if (zm_utility::is_player_valid(s_notify.reviver)) {
             s_notify.reviver zm_audio::create_and_play_dialog(#"plr_ghost", #"revive", undefined, 1);
-            wait(randomintrange(20, 20 * 3));
+            wait randomintrange(20, 20 * 3);
         }
     }
 }
@@ -902,14 +902,14 @@ function function_31e641f5() {
                 break;
             }
             self clientfield::set("" + #"stone_glow", 1);
-            wait(0.1);
+            wait 0.1;
             n_time += 0.1;
         }
         if (b_using == 1) {
             self playsound(#"hash_41620678756defa6");
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     array::run_all(util::get_active_players(), &clientfield::increment_to_player, "" + #"mansion_mq_rumble", 1);
     exploder::exploder("fxexp_barrier_gameplay_cemetery");
@@ -924,7 +924,7 @@ function function_31e641f5() {
     level thread function_e3eb2cfd();
     self.var_4c4f2b6 = self.angles;
     self thread mansion_util::function_da5cd631((0, 180, 0));
-    wait(1);
+    wait 1;
     level flag::set(#"cemetery_defend");
     level thread zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
 }
@@ -936,12 +936,12 @@ function function_31e641f5() {
 function function_e3eb2cfd() {
     level endon(#"cemetery_open");
     level flag::wait_till(#"cemetery_done");
-    wait(2);
+    wait 2;
     mdl_stone = getent("health_stone", "targetname");
     mdl_stone notify(#"stop_spin");
     mdl_stone stoploopsound();
     mdl_stone playsound(#"hash_3eaae008a56e81e8");
-    wait(0.5);
+    wait 0.5;
     mdl_stone rotateto(mdl_stone.v_start_angles, 2);
     mdl_stone moveto(mdl_stone.v_start_origin, 3);
     mdl_stone waittill(#"movedone");
@@ -1035,7 +1035,7 @@ function function_50955e48() {
 function function_599edfb8(a_ents) {
     level.var_e34d55ef = a_ents[#"prop 1"];
     level.var_e34d55ef.var_71c444c7 = a_ents[#"prop 1"].model;
-    wait(0.2);
+    wait 0.2;
     level notify(#"hash_68c10418963ac1fc");
 }
 
@@ -1177,7 +1177,7 @@ function private function_1e60e7d2() {
         var_e04d003f = zm_characters::function_d35e4c92();
         str_vo = "vox_generic_responses_negative_plr_" + var_e04d003f + "_" + randomint(9);
         self zm_vo::vo_say(str_vo, 0, 1, 1000);
-        wait(randomintrange(30, 30 * 3));
+        wait randomintrange(30, 30 * 3);
         level.var_f1028094[#"hash_21903abfb2fb71dd"] = 0;
     }
 }
@@ -1231,7 +1231,7 @@ function lead_player(nd_start, player) {
     self ghost();
     self.mdl_head ghost();
     var_dafa2b89 clientfield::set("" + #"stick_fire", 1);
-    wait(1);
+    wait 1;
     var_dafa2b89 thread scene::stop();
     self thread scene::stop();
     playsoundatposition(#"hash_72a28324d62874cc", self.origin);
@@ -1291,9 +1291,9 @@ function function_45cfa31(mdl_ghost) {
     level waittill(#"hash_10a51d6f30d3daf8");
     self zm_vo::vo_say(var_8954c16e, 0, 1, 9999, 1, 1, 1);
     while (!mdl_ghost zm_zonemgr::entity_in_zone("zone_cemetery_graveyard", 0) && !mdl_ghost zm_zonemgr::entity_in_zone("zone_cemetery_mausoleum", 0)) {
-        wait(1);
+        wait 1;
     }
-    wait(1.5);
+    wait 1.5;
     self zm_vo::vo_say(var_80192cb1, 0, 1, 9999, 1, 1, 1);
 }
 
@@ -1483,7 +1483,7 @@ function wave_1() {
         if (x == a_s_locs.size) {
             x = 0;
         }
-        wait(randomfloatrange(0.2, 0.5));
+        wait randomfloatrange(0.2, 0.5);
     }
     level flag::clear(#"hash_29b12646045186fa");
     level thread function_2bffa0a5();
@@ -1504,7 +1504,7 @@ function function_c9775ddf(params) {
 function function_2bffa0a5() {
     level endon(#"cemetery_done");
     while (level.var_ba177d48 > 3) {
-        wait(1);
+        wait 1;
     }
     level flag::set(#"hash_684b700932f4018f");
 }
@@ -1561,7 +1561,7 @@ function wave_2() {
             level flag::set(#"hash_29b12646045186fa");
         } else {
             i--;
-            wait(1);
+            wait 1;
         }
         if (x == a_s_locs.size) {
             x = 0;
@@ -1586,7 +1586,7 @@ function function_d1027329(params) {
 function function_93b1a1a4() {
     level endon(#"cemetery_done");
     while (level.var_3c6f81fe > 3 + getplayers().size) {
-        wait(1);
+        wait 1;
     }
     level flag::set(#"hash_6100d5ec10bed5cc");
 }
@@ -1627,7 +1627,7 @@ function wave_3() {
         if (x == a_s_locs.size) {
             x = 0;
         }
-        wait(0.25);
+        wait 0.25;
     }
     level flag::clear(#"hash_29b12646045186fa");
     level thread function_b77d225a();
@@ -1648,7 +1648,7 @@ function function_10aefe00(params) {
 function function_b77d225a() {
     level endon(#"cemetery_done");
     while (level.var_50b2aa84 > 4) {
-        wait(1);
+        wait 1;
     }
     level flag::set(#"hash_12f4b41ff140e181");
 }
@@ -1666,7 +1666,7 @@ function wave_4() {
             ai_bat.no_powerups = 1;
             ai_bat zm_score::function_acaab828();
         }
-        wait(0.25);
+        wait 0.25;
     }
     n_players = getplayers().size;
     switch (n_players) {
@@ -1717,7 +1717,7 @@ function wave_4() {
             continue;
         }
         i--;
-        wait(1);
+        wait 1;
     }
     level flag::clear(#"hash_29b12646045186fa");
     level thread function_2268f8e8();
@@ -1738,7 +1738,7 @@ function function_1736030d(params) {
 function function_2268f8e8() {
     level endon(#"cemetery_done");
     while (level.var_a908db33) {
-        wait(1);
+        wait 1;
     }
     level flag::set(#"hash_6a70f9021505a71e");
 }
@@ -1803,7 +1803,7 @@ function function_9ca03a70(str_script_noteworthy = "bat_location") {
 // Size: 0x5c
 function function_9c6147b1(n_max = 24) {
     while (getaiteamarray(level.zombie_team).size > int(n_max)) {
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1813,7 +1813,7 @@ function function_9c6147b1(n_max = 24) {
 // Size: 0x6c
 function function_f3668a9() {
     level flag::wait_till(#"cemetery_done");
-    wait(15);
+    wait 15;
     level flag::set(#"spawn_zombies");
     level flag::set(#"zombie_drop_powerups");
 }

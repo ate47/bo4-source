@@ -120,7 +120,7 @@ function function_f389e70d(localclientnum) {
         self.var_aac4aa35 = undefined;
     }
     self.var_e0580f33 = util::playfxontag(localclientnum, level._effect[#"hash_1e4fa83f4db14c46"], self, "j_spine4");
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self.var_e0580f33)) {
         stopfx(localclientnum, self.var_e0580f33);
     }

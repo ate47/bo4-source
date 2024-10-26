@@ -117,7 +117,7 @@ function rumble_gondola(localclientnum, oldval, newval, bnewent, binitialsnap, f
             if (isinarray(getlocalplayers(), self)) {
                 self playrumbleonentity(localclientnum, "reload_small");
             }
-            wait(0.25);
+            wait 0.25;
         }
         return;
     }
@@ -138,7 +138,7 @@ function function_1bccf046(localclientnum, oldval, newval, bnewent, binitialsnap
         self endon(#"hash_2e4f137d472e68e9");
         while (true) {
             self playrumbleonentity(localclientnum, "reload_small");
-            wait(0.25);
+            wait 0.25;
         }
         return;
     }
@@ -161,9 +161,9 @@ function function_eef4ae09(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_a104a4cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     var_83771283 = struct::get("s_break_large_metal");
     playrumbleonposition(localclientnum, "zm_escape_metal_rumble1", var_83771283.origin);
-    wait(3);
+    wait 3;
     playrumbleonposition(localclientnum, "zm_escape_metal_rumble2", var_83771283.origin);
-    wait(5);
+    wait 5;
     playrumbleonposition(localclientnum, "zm_escape_metal_rumble3", var_83771283.origin);
 }
 
@@ -186,7 +186,7 @@ function private function_37c86e6e(localclientnum) {
     level endon(#"hash_46a6202f04dd1722");
     s_sound_origin = struct::get("s_b_64_sound");
     while (true) {
-        wait(randomfloatrange(3, 5));
+        wait randomfloatrange(3, 5);
     }
 }
 
@@ -210,7 +210,7 @@ function private function_b2b92c61(localclientnum) {
     level endon(#"hash_63732bb5f380f042");
     while (true) {
         exploder::exploder("fxexp_building64_lightning");
-        wait(randomfloatrange(1.5, 3));
+        wait randomfloatrange(1.5, 3);
     }
 }
 
@@ -271,7 +271,7 @@ function set_player_pbg_bank(localclientnum, oldval, newval, bnewent, binitialsn
 // Checksum 0x12ece5ef, Offset: 0x1608
 // Size: 0x164
 function startzmbspawnersoundloops() {
-    wait(2);
+    wait 2;
     loopers = struct::get_array("spawn_location", "script_noteworthy");
     if (isdefined(loopers) && loopers.size > 0) {
         delay = 0;

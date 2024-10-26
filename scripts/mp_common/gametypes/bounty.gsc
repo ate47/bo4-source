@@ -197,7 +197,7 @@ function private onconnect() {
     }
     self clientfield::set_to_player("bountyMoney", self.pers[#"money"]);
     if (level.ingraceperiod === 1 && level.draftstage != 3) {
-        wait(1);
+        wait 1;
         draft::assign_remaining_players(self);
     }
 }
@@ -390,7 +390,7 @@ function private function_c04cc87c() {
             player freezecontrols(1);
             player globallogic_ui::closemenus();
         }
-        wait(1);
+        wait 1;
     } else {
         foreach (player in level.players) {
             player globallogic_ui::closemenus();
@@ -425,7 +425,7 @@ function private function_c04cc87c() {
             }
         }
         timeremaining--;
-        wait(1);
+        wait 1;
     }
     level.var_324e2795 = 0;
     level.purchasephase = 0;
@@ -774,7 +774,7 @@ function private givelastattackerwarning(team) {
         } else {
             fullhealthtime += interval;
         }
-        wait(interval);
+        wait interval;
         if (self.health == self.maxhealth && fullhealthtime >= 3) {
             break;
         }
@@ -905,7 +905,7 @@ function private function_319af5a2(player) {
                 continue;
             }
         }
-        wait(level.var_651c849);
+        wait level.var_651c849;
         level.var_3e14d8dd -= level.var_16fd9420;
         if (level.var_3e14d8dd < level.var_714ddf4a) {
             level.var_3e14d8dd = level.var_714ddf4a;
@@ -1020,7 +1020,7 @@ function private function_7cb5420e(delay) {
         return;
     }
     if (isdefined(delay)) {
-        wait(delay);
+        wait delay;
     }
     var_fa5724d5 = function_7f8c4043();
     level.var_8fcae189 = ir_strobe::function_284b1d4c(var_fa5724d5, #"wpn_t8_eqp_grenade_smoke_world");
@@ -1051,7 +1051,7 @@ function private function_f878f4bf(var_fa5724d5, context) {
     assert(isdefined(var_fa5724d5));
     level.var_8fcae189 = ir_strobe::function_284b1d4c(var_fa5724d5, #"wpn_t8_eqp_grenade_smoke_world");
     var_8ff770b8 = randomfloatrange(level.var_aad1f6f2, level.var_8ce231e3);
-    wait(var_8ff770b8);
+    wait var_8ff770b8;
     destination = getstartorigin(var_fa5724d5, (0, 0, 0), #"ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2");
     var_6aa266d6 = helicopter::getvalidrandomstartnode(destination).origin;
     helicopter = function_d23cf101(var_6aa266d6, vectortoangles(destination - var_6aa266d6), context);
@@ -1064,7 +1064,7 @@ function private function_f878f4bf(var_fa5724d5, context) {
     helicopter thread function_4af1c786(helicopter, var_fa5724d5);
     wait_start = gettime();
     while (helicopter.origin[2] - var_fa5724d5[2] > 620 && gettime() - wait_start < 1000) {
-        wait(0.1);
+        wait 0.1;
     }
     level thread function_f9a7a3d8(helicopter);
     if (!isdefined(level.var_ad7774db)) {
@@ -1155,7 +1155,7 @@ function private function_b48e2739(helicopter) {
     helicopter.rope thread animation::play(#"hash_3d52f6faf02fd23", helicopter, "tag_origin_animate", 1, 0.2, 0.1, undefined, undefined, undefined, 0);
     playfxontag(#"hash_24fa7e1844b116bb", helicopter.rope, "duffel_attach_jnt");
     var_314ff04b = getanimlength(#"hash_3d52f6faf02fd23") + 15;
-    wait(var_314ff04b);
+    wait var_314ff04b;
     function_b09faaf8(helicopter);
 }
 
@@ -1348,7 +1348,7 @@ function private destroy_heli(helicopter) {
         }
     }
     helicopter helicopter::function_e1058a3e();
-    wait(0.1);
+    wait 0.1;
     if (isdefined(helicopter)) {
         helicopter delete();
     }
@@ -1609,7 +1609,7 @@ function private function_bdba96e1() {
     startpoint = helicopter::getvalidrandomstartnode(droppoint).origin;
     startpoint = (startpoint[0], startpoint[1], droppoint[2]);
     timer = randomintrange(level.var_8e8e80c6, level.var_374a483e);
-    wait(timer);
+    wait timer;
     supplydropveh = spawnvehicle(#"vehicle_t8_mil_helicopter_transport_mp", startpoint, vectortoangles(vectornormalize(droppoint - startpoint)));
     supplydropveh.goalradius = 128;
     supplydropveh.goalheight = 128;
@@ -1653,7 +1653,7 @@ function private function_6d1352cb(droppoint) {
     }
     self function_a57c34b7(exitpoint);
     timeout = distance(self.origin, exitpoint) / 1000;
-    wait(timeout);
+    wait timeout;
     self delete();
 }
 
@@ -1662,7 +1662,7 @@ function private function_6d1352cb(droppoint) {
 // Checksum 0x2c6f1281, Offset: 0x72a8
 // Size: 0x1dc
 function private function_9ec1d15() {
-    wait(2.01);
+    wait 2.01;
     self physicslaunch();
     self waittill(#"stationary");
     self.trigger = spawn("trigger_radius_use", self.origin, 0, 100, 60);
@@ -1763,11 +1763,11 @@ function resume_time() {
     function function_b968a61c() {
         level notify(#"hash_7069fa0a73642e1f");
         level endon(#"hash_7069fa0a73642e1f");
-        wait(1);
+        wait 1;
         function_b1dcb019();
-        wait(1);
+        wait 1;
         while (true) {
-            wait(0.25);
+            wait 0.25;
             var_9b37b387 = getdvarint(#"hash_312d65fd43c7008c", 0);
             if (var_9b37b387 <= 0) {
                 continue;

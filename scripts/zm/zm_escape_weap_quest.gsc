@@ -216,7 +216,7 @@ function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
     if (self.var_43bd3b5 == 0) {
         self flag::wait_till(#"wolf_intro_anim_complete");
     } else {
-        wait(var_66a8d5fc);
+        wait var_66a8d5fc;
     }
     self notify(#"wolf_eating");
     if (self.var_43bd3b5 < 5) {
@@ -247,7 +247,7 @@ function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
     }
     var_678e573f moveto(v_pos, var_391fd0d5, var_391fd0d5);
     var_678e573f rotateto(v_angles_forward + var_5dedf8ea, var_66a8d5fc);
-    wait(var_391fd0d5);
+    wait var_391fd0d5;
     if (isdefined(ai_zombie)) {
         ai_zombie unlink();
         ai_zombie clientfield::set("" + #"hash_588871862d19b97d", 0);
@@ -299,7 +299,7 @@ function which_eating_anim() {
 // Size: 0x2a4
 function soul_catcher_state_manager() {
     self endon(#"hash_13c5316203561c4f");
-    wait(1);
+    wait 1;
     self flag::init(#"wolf_intro_anim_complete");
     if (self.script_noteworthy == "rune_3") {
         self.var_740e1e0e = getent("rune_3", "targetname");
@@ -337,7 +337,7 @@ function function_ee929ece() {
         var_ba0da6c = array::random(level.var_22f00ccf);
         self.s_scene thread scene::play(var_ba0da6c);
         var_c74251a4 = scene::function_8582657c(self.s_scene.scriptbundlename, var_ba0da6c);
-        wait(var_c74251a4 + randomintrange(4, 10));
+        wait var_c74251a4 + randomintrange(4, 10);
     }
 }
 
@@ -363,7 +363,7 @@ function soul_catchers_charged() {
             level notify(#"soul_catchers_charged");
             break;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -415,7 +415,7 @@ function function_41b1af8c() {
     if (!zm_utility::is_classic()) {
         return;
     }
-    wait(3.5);
+    wait 3.5;
     a_players = getplayers();
     a_closest = util::get_array_of_closest(self.origin, a_players);
     for (i = 0; i < a_closest.size; i++) {
@@ -431,7 +431,7 @@ function function_41b1af8c() {
 // Checksum 0xabd509f, Offset: 0x1eb8
 // Size: 0xd8
 function first_wolf_encounter_vo(e_activator) {
-    wait(2);
+    wait 2;
     a_closest = function_74c96a90(e_activator);
     for (i = 0; i < a_closest.size; i++) {
         if (!(isdefined(a_closest[i].dontspeak) && a_closest[i].dontspeak)) {
@@ -485,7 +485,7 @@ function tomahawk_pickup() {
     var_fd22f9df = struct::get("tom_pil");
     mdl_tomahawk = var_fd22f9df.scene_ents[#"prop 2"];
     mdl_tomahawk waittill(#"hash_72879554ff8d0b60");
-    wait(0.5);
+    wait 0.5;
     mdl_tomahawk playloopsound(#"amb_tomahawk_swirl");
     s_pos_trigger = struct::get("t_tom_pos", "targetname");
     if (isdefined(s_pos_trigger)) {
@@ -590,9 +590,9 @@ function function_b5b00d86() {
     self enableweapons();
     self enableoffhandweapons();
     self freezecontrols(1);
-    wait(0.1);
+    wait 0.1;
     self gestures::function_56e00fbf("gestable_zombie_tomahawk_flourish", undefined, 0);
-    wait(1.5);
+    wait 1.5;
     if (isdefined(self.var_16735873) && self.var_16735873) {
         self disableweapons();
         self freezecontrols(0);
@@ -637,7 +637,7 @@ function function_6300f001() {
                 waitframe(1);
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 

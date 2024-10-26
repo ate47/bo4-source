@@ -179,7 +179,7 @@ function function_eeb3bf92(var_1483b30b) {
     n_time_left = var_1483b30b;
     self zm_perks::function_13880aa5(self.var_95df0a1b, 1, #"perk_dying_wish");
     while (n_time_left > 0) {
-        wait(0.1);
+        wait 0.1;
         n_time_left -= 0.1;
         n_time_left = math::clamp(n_time_left, 0, var_1483b30b);
         n_percentage = n_time_left / var_1483b30b;
@@ -263,7 +263,7 @@ function function_d2bbaa76(var_85dcb56c) {
         self zm_perks::function_2ac7579(self.var_95df0a1b, 2, #"perk_dying_wish");
     }
     self thread function_7d72c6f9(var_85dcb56c);
-    wait(var_85dcb56c);
+    wait var_85dcb56c;
     self thread reset_cooldown();
 }
 
@@ -276,7 +276,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self.var_3e48c35a = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_95df0a1b, 0, #"perk_dying_wish");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         self.var_3e48c35a -= 0.1;
         self.var_3e48c35a = math::clamp(self.var_3e48c35a, 0, var_85dcb56c);
         n_percentage = 1 - self.var_3e48c35a / var_85dcb56c;

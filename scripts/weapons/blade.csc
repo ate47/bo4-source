@@ -151,7 +151,7 @@ function watch_timeout(localclientnum) {
     self notify("33717749f8cb9ab");
     self endon("33717749f8cb9ab");
     self endon(#"death");
-    wait(0.5);
+    wait 0.5;
     self.var_2ba49f48.blendout = 1;
     util::lerp_generic(localclientnum, 375, &function_2789edf8);
     self.var_2ba49f48 = undefined;

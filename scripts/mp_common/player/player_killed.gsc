@@ -703,7 +703,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         if (isdefined(self.var_342564dd) && self.var_342564dd && self == attacker) {
             waitframe(1);
         } else {
-            wait(0.25);
+            wait 0.25;
         }
     }
     weaponclass = util::getweaponclass(weapon);
@@ -1309,7 +1309,7 @@ function private team_kill(einflictor, attacker, smeansofdeath, weapon, shitloc)
 function private wait_and_suicide() {
     self endon(#"disconnect");
     self val::set(#"wait_and_suicide", "freezecontrols");
-    wait(0.25);
+    wait 0.25;
     self val::reset(#"wait_and_suicide", "freezecontrols");
     self suicide();
 }
@@ -1684,9 +1684,9 @@ function private function_8826f676() {
 function private function_f9dc085a() {
     if (isdefined(self.killstreak_delay_killcam)) {
         while (isdefined(self.killstreak_delay_killcam)) {
-            wait(0.1);
+            wait 0.1;
         }
-        wait(2);
+        wait 2;
         self killstreaks::reset_killstreak_delay_killcam();
     }
 }
@@ -1793,7 +1793,7 @@ function function_a932bf9c() {
                 break;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1909,7 +1909,7 @@ function private delayed_ragdoll(ent, shitloc, vdir, weapon, einflictor, smeanso
     }
     waittime = startfrac * getanimlength(deathanim);
     if (waittime > 0) {
-        wait(waittime);
+        wait waittime;
     }
     if (isdefined(ent)) {
         ent startragdoll();

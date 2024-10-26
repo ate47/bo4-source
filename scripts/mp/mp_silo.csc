@@ -115,7 +115,7 @@ function helo_spawn_flavor_rope_pulse(localclientnum, oldval, newval, bnewent, b
             break;
         }
         ropepulse(pos, 1, 1024, 5, 60);
-        wait(randomfloatrange(0.12, 0.25));
+        wait randomfloatrange(0.12, 0.25);
     }
 }
 

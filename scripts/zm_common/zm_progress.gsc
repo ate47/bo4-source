@@ -156,7 +156,7 @@ function function_48098d30(player, params) {
         forwarddir = anglestoforward(angles);
         playfx(params.fx_name, player getplayercamerapos(), forwarddir, (0, 1, 0));
         if (params.fx_loop > 0) {
-            wait(params.fx_loop);
+            wait params.fx_loop;
             continue;
         }
         return;

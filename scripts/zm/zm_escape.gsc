@@ -244,7 +244,7 @@ function function_2723556b() {
 // Size: 0x17c
 function function_30a6ae7c() {
     if (getdvarint(#"splitscreen_playercount", 1) > 2) {
-        wait(1.6);
+        wait 1.6;
         level thread scene::stop("p8_fxanim_zm_esc_crumbling_rocks_lavapit_warden_bundle", 1);
         level thread scene::stop("p8_fxanim_zm_esc_power_panel_bldg64_01_bundle", 1);
         level thread scene::stop("p8_fxanim_zm_esc_power_panel_bldg64_02_bundle", 1);
@@ -351,7 +351,7 @@ function private function_83c0bb0d() {
             level clientfield::set("" + #"hash_29fea4571b8649a0", 0);
             var_41ac1ae7 = 0;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -425,7 +425,7 @@ function function_7e67379d() {
         } else {
             self clientfield::set_to_player("" + #"player_pbg_bank", 0);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -592,7 +592,7 @@ function function_8e0b371() {
         } else {
             self zm_hud::function_29780fb5(#"");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -1012,7 +1012,7 @@ function function_e6797b71() {
             }
             e_player clientfield::set("" + #"hash_500a87b29014ef02", 0);
         }
-        wait(1);
+        wait 1;
     }
 }
 

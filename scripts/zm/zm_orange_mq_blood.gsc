@@ -155,7 +155,7 @@ function blood_think() {
             if (level flag::get(#"blood_hints")) {
                 level.var_4adebdfc playsoundtoplayer(level.var_60b08c24.var_489c2917 + "_apot_0", player);
             }
-            wait(2);
+            wait 2;
         }
     }
     level.s_mq_blood_vessel_loc thread function_ee4a200b();
@@ -191,7 +191,7 @@ function function_ee4a200b() {
     self.vessel clientfield::set("" + #"hash_1b72c208f2964e24", 0);
     level notify(#"vessel_collected");
     level flag::clear(#"blood_waiting");
-    wait(2);
+    wait 2;
     level.s_mq_blood_vessel_loc thread blood_think();
 }
 
@@ -202,7 +202,7 @@ function function_ee4a200b() {
 function function_15f8d6f0() {
     var_3269dfa3 = (isdefined(self.var_b92e42da) ? self.var_b92e42da : getdvarfloat(#"player_laststandbleedouttime", 0)) * 0.25;
     var_3269dfa3 = getdvarfloat(#"hash_1d447d6b4492bf4f", var_3269dfa3);
-    wait(var_3269dfa3 - 0.5);
+    wait var_3269dfa3 - 0.5;
     self thread zm_laststand::auto_revive(self, 0, 0);
 }
 
@@ -217,7 +217,7 @@ function blood_event() {
     level flag::set(#"blood_active");
     var_84f1a7ae = zombie_utility::ai_calculate_health(3000, level.round_number) * level.var_9e3c632e;
     level.var_4adebdfc.health = var_84f1a7ae;
-    wait(2);
+    wait 2;
     level.var_4adebdfc val::set(#"mq_blood", "takedamage", 1);
     self thread blood_move();
     while (level.var_4adebdfc.health > int(var_84f1a7ae * 0.666667)) {
@@ -334,13 +334,13 @@ function function_c2d403f(n_index) {
             if (self.b_frozen) {
                 if (self.b_primed) {
                     self moveto(level.s_mq_blood_vessel_loc.vessel.origin, 0.7, 0.1, 0.1);
-                    wait(0.7);
+                    wait 0.7;
                     level.var_64f7b41e++;
                     self thread util::delayed_delete(0.1);
                 } else {
                     var_3a253a6f = max(distance(self.origin, level.var_e70fa660[n_index].origin) / 1000, 1);
                     self moveto(level.var_e70fa660[n_index].origin, var_3a253a6f, 0.2, 0.2);
-                    wait(var_3a253a6f);
+                    wait var_3a253a6f;
                     self.b_primed = 1;
                     self notify(#"primed");
                     self clientfield::set("" + #"hash_5dd642a0bd6e6cb9", 1);
@@ -403,7 +403,7 @@ function function_a4fa2df0(n_index) {
         loc = array::random(var_a4cd10ea);
         var_3a253a6f = max(distance(self.origin, loc.origin) / 1000, 1);
         self moveto(loc.origin + (0, 0, 50), var_3a253a6f, 0.2, 0.2);
-        wait(var_3a253a6f);
+        wait var_3a253a6f;
         self.b_near = 0;
         while (!self.b_near) {
             a_players = zm_vo::function_347f7d34();

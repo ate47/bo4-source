@@ -57,7 +57,7 @@ function function_8921af36() {
 }
 
 // Namespace stats/player_stats
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0xfe68475f, Offset: 0x320
 // Size: 0xc0
 function get_stat(...) {
@@ -77,7 +77,7 @@ function get_stat(...) {
 }
 
 // Namespace stats/player_stats
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0x822f6119, Offset: 0x3e8
 // Size: 0xc0
 function function_6d50f14b(...) {
@@ -97,7 +97,7 @@ function function_6d50f14b(...) {
 }
 
 // Namespace stats/player_stats
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0xe6beaab2, Offset: 0x4b0
 // Size: 0xc0
 function function_ff8f4f17(...) {
@@ -117,7 +117,7 @@ function function_ff8f4f17(...) {
 }
 
 // Namespace stats/player_stats
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0x33a78da4, Offset: 0x578
 // Size: 0x12a
 function set_stat(...) {
@@ -142,7 +142,7 @@ function set_stat(...) {
 }
 
 // Namespace stats/player_stats
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0xa4b264c2, Offset: 0x6b0
 // Size: 0x152
 function inc_stat(...) {

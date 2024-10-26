@@ -90,7 +90,7 @@ function function_c9509a9c(params) {
 function function_4df181ef() {
     self endoncallback(&function_8407e8ae, #"death", #"game_ended");
     self clientfield::set_to_player("player_hit_freezing_snowball", 1);
-    wait(2);
+    wait 2;
     self clientfield::set_to_player("player_hit_freezing_snowball", 0);
 }
 

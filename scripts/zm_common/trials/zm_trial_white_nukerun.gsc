@@ -57,9 +57,9 @@ function private on_begin() {
 // Size: 0x488
 function nuke_loop() {
     level endon(#"hash_7646638df88a3656");
-    wait(5);
+    wait 5;
     while (true) {
-        wait(10);
+        wait 10;
         a_locations = struct::get_array("dog_location", "script_noteworthy");
         players = getplayers();
         valid_players = [];
@@ -113,7 +113,7 @@ function nuke_loop() {
         location = zm_utility::groundpos(loc.origin);
         level thread function_fe74909(location);
         level waittill(#"hash_4d75b8766027b0f2");
-        wait(10);
+        wait 10;
     }
 }
 
@@ -124,7 +124,7 @@ function nuke_loop() {
 function function_fe74909(drop_point) {
     playsoundatposition(#"hash_1fc67d7ad7445bbf", (-521, -1972, -82));
     playsoundatposition(#"hash_1fc67c7ad7445a0c", (-1146, -1956, -92));
-    wait(3);
+    wait 3;
     level.var_dcd1e798 = getent("perk_machine_mover", "targetname");
     level.var_dcd1e798 useanimtree("generic");
     var_2379bb0e = util::spawn_model("p7_zm_power_up_nuke", drop_point);
@@ -134,7 +134,7 @@ function function_fe74909(drop_point) {
     level.var_dcd1e798 thread animation::play("p8_fxanim_zm_white_perk_machine_dummy_fly_in");
     waitframe(2);
     var_2379bb0e show();
-    wait(3.5);
+    wait 3.5;
     level thread namespace_9efb8d22::function_48acb6ed(drop_point);
     playrumbleonposition("zm_white_perk_impact", drop_point);
     playrumbleonposition("zm_white_perk_aftershock", drop_point);

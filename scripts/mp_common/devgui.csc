@@ -49,11 +49,11 @@ function __init__() {
         frontend_slots = 3;
         for (slot = 0; slot < frontend_slots; slot++) {
             add_contract_slot(localclientnum, slot);
-            wait(0.1);
+            wait 0.1;
         }
-        wait(0.1);
+        wait 0.1;
         add_blackjack_contract(localclientnum);
-        wait(0.1);
+        wait 0.1;
         add_devgui_scheduler(localclientnum);
         level thread watch_devgui();
         level.mp_contracts_devgui_added = 1;
@@ -198,7 +198,7 @@ function __init__() {
                 add_devgui_cmd(localclientnum, root + by_index_name + index_submenu_name, cmds);
                 cmds_added++;
                 if (cmds_added >= max_cmd_to_add) {
-                    wait(0.1);
+                    wait 0.1;
                     cmds_added = 0;
                 }
             }
@@ -306,7 +306,7 @@ function __init__() {
         level notify(#"watch_devgui_client_mp_singleton");
         level endon(#"watch_devgui_client_mp_singleton");
         while (true) {
-            wait(0.1);
+            wait 0.1;
             if (!dvar_has_value("<dev string:x692>")) {
                 continue;
             }

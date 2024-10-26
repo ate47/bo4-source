@@ -260,14 +260,14 @@ function function_86c058b() {
     level.var_66b3c127 = struct::get_array("s_vision_pulse_axis", "targetname");
     level.var_9f073b4 = 0;
     level thread ct_bots::activate_bots(level.var_66b3c127.size, #"axis");
-    wait(0.2);
+    wait 0.2;
     level.var_e72728b8 = array(#"eq_sensor");
     level thread ct_vo::function_14b08e49(array(#"hash_dd77a0770d28e66"), "stop_nag");
     e_player = getplayers()[0];
     e_player waittill(#"vision_pulse_on");
     level notify(#"stop_nag");
     ct_utils::function_c2a10fc();
-    wait(0.75);
+    wait 0.75;
     level thread ct_vo::function_831e0584(array(#"hash_2a475119c0c9d7db", #"hash_76711f94e9fc32da"), 0);
     level notify(#"hash_3c13162d215d8698");
     level notify(#"stop_opening_collision_exit");
@@ -280,10 +280,10 @@ function function_86c058b() {
     e_player thread ct_utils::function_61c3d59c(#"hash_76d83574c8576dcd", undefined);
     level.var_54c1ce00 = level.var_32ae304;
     level.var_32ae304 = undefined;
-    wait(3.5);
+    wait 3.5;
     level notify(#"hash_60c1587995518e92");
     level waittill(#"hash_18806b37ec38ff49");
-    wait(4);
+    wait 4;
     ct_vo::function_831e0584(array(#"hash_76712094e9fc348d"), 1);
     ct_utils::function_d00e0eeb();
     ct_utils::function_c2a10fc();
@@ -293,7 +293,7 @@ function function_86c058b() {
     level notify(#"hash_15f7db94fb4253cf");
     level notify(#"stop_execution_collision");
     level notify(#"stop_execution_exit_collision");
-    wait(0.1);
+    wait 0.1;
 }
 
 // Namespace ct_recon_tutorial/ct_recon_tutorial
@@ -314,7 +314,7 @@ function function_5598747a() {
     a_str_vo = array("vox_tvoi_tutor_reco_sensor_dart_0", "vox_tvoi_tutor_reco_sensor_dart_1");
     ct_vo::function_831e0584(a_str_vo, 1);
     level thread ct_vo::function_831e0584(array(#"hash_a8bcd8c98df0294"), 1);
-    wait(1.5);
+    wait 1.5;
     level.var_e72728b8 = array(#"gadget_vision_pulse");
     e_player = getplayers()[0];
     e_player thread ct_utils::function_61c3d59c(#"hash_c71232da049f689", undefined);
@@ -353,7 +353,7 @@ function function_5598747a() {
     ct_vo::function_3ca1b77d();
     ct_vo::function_831e0584(array(#"hash_6ece745489e4c50a", #"hash_6ece755489e4c6bd"), 1);
     level.var_e72728b8 = undefined;
-    wait(0.1);
+    wait 0.1;
 }
 
 // Namespace ct_recon_tutorial/ct_recon_tutorial
@@ -366,7 +366,7 @@ function function_a71a97eb(var_25da558a, var_a05aef62, var_6c27391b, var_2cfdf73
         level waittill(var_25da558a);
     }
     if (isdefined(var_a05aef62)) {
-        wait(var_a05aef62);
+        wait var_a05aef62;
     }
     e_player = getplayers()[0];
     a_bots = e_player ct_bots::function_71ec2b36();
@@ -420,7 +420,7 @@ function function_8d107060() {
     e_player = getplayers()[0];
     e_player thread ct_utils::function_61c3d59c(#"hash_7804ec43ffd16028", undefined);
     e_player ct_bots::function_26d45f32(1, 1, 1);
-    wait(6);
+    wait 6;
     level thread function_a71a97eb(undefined, 4, undefined, "s_two_guys_friendly_loc");
     ct_utils::function_51c89e00(1, #"allies");
     level.var_271da9fa = [];
@@ -514,7 +514,7 @@ function function_6728bf85() {
     e_player = getplayers()[0];
     e_player ct_bots::function_26d45f32(1, 1, 1);
     ct_vo::function_831e0584(array(#"hash_4a8d1e7e7e423b65"), 0);
-    wait(0.1);
+    wait 0.1;
 }
 
 // Namespace ct_recon_tutorial/ct_recon_tutorial
@@ -552,7 +552,7 @@ function function_1f031934() {
     waitframe(1);
     ct_vo::function_831e0584(array(#"hash_4a8d1d7e7e4239b2"), 1);
     level thread ct_vo::function_831e0584(array(#"hash_4a8d1b7e7e42364c"), 0);
-    wait(0.1);
+    wait 0.1;
     e_player = getplayers()[0];
     e_player thread ct_utils::function_61c3d59c(#"hash_6e7ef3de4616f397", undefined);
     level thread ct_vo::function_14b08e49(array(#"hash_233e42de1d3dc67d"), "stop_nag");
@@ -576,15 +576,15 @@ function function_1f031934() {
     level thread function_f8b711ef(2, var_8a7d22ef, "s_defend_left_attackers_loc");
     function_cc52d21a("s_recon_left_side_attackers", 15, 2);
     level.var_e6db911d = 1;
-    wait(0.5);
+    wait 0.5;
     ct_utils::function_d00e0eeb();
-    wait(0.5);
+    wait 0.5;
     level.var_a32f4757 = struct::get_array("s_right_attack_loc", "targetname");
     level.var_1c1866de = 0;
     level thread ct_vo::function_41e59aeb(array(#"hash_41a9a2d29deed27"), 1);
     level thread function_f8b711ef(2, var_6fef4c03, "s_defend_left_wave2_loc");
     level thread function_f8b711ef(2, var_8a7d22ef, "s_defend_right_wave2_loc");
-    wait(3);
+    wait 3;
     function_cc52d21a("s_recon_right_side_attackers", 15, 2);
     ct_utils::function_d00e0eeb();
     ct_utils::function_9aca2fa0("ct_action");
@@ -597,7 +597,7 @@ function function_1f031934() {
 // Size: 0x140
 function function_f8b711ef(n_delay, a_bots, var_f54eb40a) {
     level endon(#"combattraining_logic_finished");
-    wait(n_delay);
+    wait n_delay;
     a_locs = struct::get_array(var_f54eb40a, "targetname");
     n_loc_index = 0;
     foreach (bot in a_bots) {
@@ -627,7 +627,7 @@ function function_cc52d21a(var_260aad25, var_6f8083d4, var_75efba72) {
     }
     level thread ct_bots::activate_bots(var_e8d6f89, #"axis");
     n_start_time = gettime() / 1000;
-    wait(1);
+    wait 1;
     level.var_e6db911d = 0;
     while (true) {
         n_time = gettime() / 1000;
@@ -690,7 +690,7 @@ function function_f6c6baf3() {
     level notify(#"start_block_start_collision");
     level notify(#"start_zombies_collision");
     playsoundatposition(#"hash_e9c6b8a406318e9", (275, -1840, 874));
-    wait(3);
+    wait 3;
     level thread ct_vo::function_831e0584(array(#"hash_71c199093aa347bd"), 1);
     level thread function_a71a97eb(undefined, 0.1, undefined, "s_bot_approach_church_loc");
     level notify(#"stop_flanking_exit_collision");
@@ -731,7 +731,7 @@ function function_f6c6baf3() {
     level.e_blightfather.overrideactordamage = &function_a5f160e7;
     e_player = getplayers()[0];
     e_player thread ct_bots::function_fd2d220e(0);
-    wait(7);
+    wait 7;
     level thread ct_vo::function_41e59aeb(array(#"hash_75d35181fe648687", #"hash_75d35081fe6484d4"), 1);
     var_6ee32682 = gettime() / 1000;
     while (isalive(level.e_blightfather)) {
@@ -821,7 +821,7 @@ function function_39f9d433() {
     e_player thread ct_utils::function_61c3d59c(undefined, undefined, "dynobj_KillZombies");
     e_player ct_utils::function_80bf685b(50 * level.var_6cd64bc3);
     e_player.var_d5d10814 = undefined;
-    wait(0.1);
+    wait 0.1;
     n_cost = killstreaks::get_killstreak_momentum_cost(e_player, level.var_b4a06c5b);
     n_max_zombies = n_cost / 50 - 6;
     level thread function_bb44f289(10, n_max_zombies, 1);
@@ -837,7 +837,7 @@ function function_39f9d433() {
             ct_utils::function_e44c5b8e(#"overwatch_helicopter", 25);
             e_player thread ct_utils::function_68848e5("overwatch_helicopter");
             level thread kill_all_zombies();
-            wait(1.5);
+            wait 1.5;
             e_player = getplayers()[0];
             globallogic_score::_setplayermomentum(e_player, 0);
             e_player thread ct_utils::function_80bf685b(0);
@@ -880,7 +880,7 @@ function function_94c8f1d8(n_max_zombies) {
             zombie.overrideactordamage = &function_a5f160e7;
             zombie.health = int(zombie.health * 0.5);
             zombie val::set(#"zombie_vp", "ignoreme", 1);
-            wait(0.3);
+            wait 0.3;
         }
         if (isdefined(level.var_79671f89) && level.var_79671f89) {
             break;
@@ -955,7 +955,7 @@ function function_bb44f289(var_7e6c18d7, var_d8036031, var_8a787b15) {
             }
             spawn_zombie(s_loc);
             level.var_6f71c916 -= 1;
-            wait(1);
+            wait 1;
         }
         waitframe(1);
     }
@@ -1028,7 +1028,7 @@ function function_79d4c106() {
     e_player ct_utils::give_weapon("ray_gun");
     e_player thread ct_gadgets::function_1be7e4f(#"ray_gun");
     level thread function_bb44f289(10, 19, 0);
-    wait(0.5);
+    wait 0.5;
     var_6256b329 = gettime() / 1000 + 40;
     while (level.var_6f71c916) {
         n_time = gettime() / 1000;
@@ -1071,7 +1071,7 @@ function function_79d4c106() {
     waitframe(1);
     level.var_77e9434e = 0;
     level thread ct_vo::function_831e0584(array(#"hash_398e7ef7d4d05522"), 1);
-    wait(0.1);
+    wait 0.1;
     ct_vo::function_3ca1b77d();
 }
 
@@ -1141,7 +1141,7 @@ function function_58c62280(n_goal_radius, b_ignoreall, b_keyline) {
 // Size: 0x34
 function function_b1b0c7e9() {
     self endon(#"death");
-    wait(0.2);
+    wait 0.2;
     self ct_bots::disablebot();
 }
 
@@ -1156,7 +1156,7 @@ function function_1d2b336(s_start_loc) {
     self ct_utils::give_weapon(#"ar_accurate_t8");
     b_crouched = 0;
     if (isdefined(s_start_loc.script_noteworthy) && s_start_loc.script_noteworthy == "crouch") {
-        wait(0.5);
+        wait 0.5;
         b_crouched = 1;
         self bot_stance::crouch();
     }
@@ -1197,7 +1197,7 @@ function function_1d2b336(s_start_loc) {
 function function_75345caf(s_start_loc) {
     self endon(#"death");
     level waittill(#"hash_3c13162d215d8698");
-    wait(1);
+    wait 1;
     self clientfield::set("enemy_keyline_render", 1);
     s_loc = struct::get("s_enemy_vp_loc", "targetname");
     self thread ct_utils::function_f3b02850(s_loc, 32);
@@ -1237,7 +1237,7 @@ function function_9b0a398a(s_loc) {
     s_path = struct::get(s_loc.target, "targetname");
     self thread ct_utils::function_f3b02850(s_loc, 48);
     self bot_stance::crouch();
-    wait(0.5);
+    wait 0.5;
     n_start_time = gettime() / 1000;
     var_3a9de7bb = 0;
     var_e4e157c8 = 0;
@@ -1326,11 +1326,11 @@ function function_35bd7aef(s_loc) {
     level waittill(#"hash_439e586d5a4210cd");
     self val::reset(#"ai_church", "ignoreme");
     n_delay = randomfloatrange(0.2, 0.8);
-    wait(n_delay);
+    wait n_delay;
     s_target = struct::get(s_loc.target, "targetname");
     self thread ct_utils::function_5b59f3b7(s_target.origin, s_target.angles, 32);
     self.favoriteenemy = getplayers()[0];
-    wait(3);
+    wait 3;
     self val::reset(#"ai_church", "ignoreall");
     s_path = level.var_28cbbd60[level.var_68629f1];
     level.var_68629f1++;

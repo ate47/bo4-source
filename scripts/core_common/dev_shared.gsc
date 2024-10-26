@@ -430,7 +430,7 @@
                 body_customization_process_command(character_index);
                 setdvar(#"char_devgui", "<dev string:x1de>");
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -517,7 +517,7 @@
                 function_a432e633();
             }
             setdvar(#"scr_givegesture", "<dev string:x1de>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -562,7 +562,7 @@
     // Checksum 0xd865e538, Offset: 0x2dd8
     // Size: 0x20
     function draw_pathnodes_stop() {
-        wait(5);
+        wait 5;
         level notify(#"draw_pathnode_stop");
     }
 

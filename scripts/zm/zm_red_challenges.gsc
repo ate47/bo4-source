@@ -359,7 +359,7 @@ function function_e3f96252() {
     }
     level flag::wait_till("all_players_connected");
     level thread setup_models();
-    wait(1);
+    wait 1;
     level flag::set("fl_challenges_initialized");
     level flag::wait_till("power_on");
     level flag::set("fl_challenges_active");
@@ -712,7 +712,7 @@ function stop_challenge(var_c91a0fe1) {
     foreach (player in getplayers()) {
         player notify(#"stop_challenge");
     }
-    wait(0.1);
+    wait 0.1;
     foreach (player in getplayers()) {
         player zm_red_util::function_7e30f24c();
     }
@@ -824,7 +824,7 @@ function function_8d1fd2d8() {
 function function_4a88eb80() {
     level endon(#"hash_61075af70fbd9082");
     for (var_53a794b0 = gettime() / 1000; true; var_53a794b0 = n_time) {
-        wait(2);
+        wait 2;
         n_time = gettime() / 1000;
         foreach (player in getplayers()) {
             b_reward = 0;
@@ -968,7 +968,7 @@ function function_1d60215() {
             }
             player.var_f94035ca = n_time;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -1198,7 +1198,7 @@ function function_5ee56208(var_5acfb6d) {
                 }
             }
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -1316,7 +1316,7 @@ function player_progress_bar() {
 function function_a17a600() {
     level endon(#"hash_61075af70fbd9082");
     while (true) {
-        wait(60);
+        wait 60;
         level.var_c94140cf = level.var_8f94c541[level.var_fe19836];
         level.var_fe19836++;
         if (level.var_fe19836 >= level.var_8f94c541.size) {
@@ -1446,7 +1446,7 @@ function function_8ff7b0bb() {
                 }
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
     foreach (player in getplayers()) {
         player thread zm_vo::vo_say(#"hash_3d7811c8269d75cf", 0, 1, 9999, 1, 1, 1);

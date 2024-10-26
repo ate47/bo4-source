@@ -193,16 +193,16 @@ function private function_d8ee4d6a(eattacker) {
     self.var_95468c43 = 1;
     if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"popcorn") {
         self thread namespace_9ff9f642::slowdown(#"hash_6ff4731de876ab68");
-        wait(1);
+        wait 1;
     } else if (self.var_6f84b820 == #"boss") {
-        wait(1);
+        wait 1;
     } else if (self.var_6f84b820 == #"basic" || self.var_6f84b820 == #"enhanced") {
         if (self zombie_utility::function_33da7a07() !== "walk") {
             self thread function_c95fe16();
         }
         while (isdefined(self.is_on_fire) && self.is_on_fire) {
             self thread namespace_9ff9f642::slowdown(#"hash_6a420a16118789e1");
-            wait(3);
+            wait 3;
         }
     }
     self.var_95468c43 = undefined;
@@ -216,7 +216,7 @@ function private function_c95fe16() {
     self endon(#"death");
     self zombie_utility::set_zombie_run_cycle_override_value("walk");
     while (isdefined(self.is_on_fire) && self.is_on_fire) {
-        wait(0.1);
+        wait 0.1;
     }
     self zombie_utility::set_zombie_run_cycle_restore_from_override();
 }
@@ -715,12 +715,12 @@ function private function_72601dd2(e_player, var_ab287846, n_push_away, n_lift_h
         } else if (self.var_6f84b820 == #"heavy") {
             self zombie_utility::setup_zombie_knockdown(e_player);
             self dodamage(self.maxhealth * 0.2, v_origin, e_player, e_player, "none", "MOD_BURNED", 0, w_flamethrower);
-            wait(1);
+            wait 1;
             self.var_d9e7a08a = undefined;
         } else {
             self thread function_d8ee4d6a(e_player);
             self dodamage(self.maxhealth * 0.16, v_origin, e_player, e_player, "none", "MOD_BURNED", 0, w_flamethrower);
-            wait(1);
+            wait 1;
             self.var_d9e7a08a = undefined;
         }
         return;
@@ -804,7 +804,7 @@ function private function_943cd1e3(e_player, ai_zombie) {
             e_player notify(#"hash_20d02a4b6d08596d");
             return;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

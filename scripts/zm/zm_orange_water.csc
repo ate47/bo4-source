@@ -167,7 +167,7 @@ function function_1a2f062a(localclientnum) {
             var_a193c879 = self.var_f809ca21 * 100;
             debug2dtext((5, 540, 0), "<dev string:x38>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
         #/
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -194,7 +194,7 @@ function function_7c64a377(localclientnum) {
             var_a193c879 = self.var_f809ca21 * 100;
             debug2dtext((5, 540, 0), "<dev string:x38>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
         #/
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -218,7 +218,7 @@ function function_17e6f9f3(localclientnum) {
             var_a193c879 = self.var_f809ca21 * 100;
             debug2dtext((5, 540, 0), "<dev string:x38>" + var_a193c879, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
         #/
-        wait(0.2);
+        wait 0.2;
     }
     if (isalive(self) && !self.var_7c8ad424 && self postfx::function_556665f2("pstfx_frost_loop_fullscreen_zmo")) {
         self postfx::stoppostfxbundle("pstfx_frost_loop_fullscreen_zmo");
@@ -287,7 +287,7 @@ function function_88fdd1ff() {
         self.var_2591ed7c moveto(self.origin + (0, 0, 1000 - var_a69bb213), 0.01);
         var_41b4b0fa = audio::scale_speed(0.5, 1, 0.6, 1, self.var_f809ca21);
         setsoundpitch(self.var_2591ed7c.var_2e95bcd3, var_41b4b0fa);
-        wait(0.2);
+        wait 0.2;
     }
     self.var_2591ed7c delete();
     self.var_2591ed7c = undefined;

@@ -495,7 +495,7 @@ function function_8c5b87a7(localclientnum) {
 // Checksum 0x29215a70, Offset: 0x3020
 // Size: 0x1c
 function function_e8a1c9e1() {
-    wait(3);
+    wait 3;
     self delete();
 }
 
@@ -618,7 +618,7 @@ function function_2585c107() {
             self.var_608d2b77 = var_79fd35f9;
             soundupdatelineemitter(#"hash_3d5a33369bbe2308", var_f370dc28, var_37b53ba7, self.var_da4fd8df, self.var_608d2b77);
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -773,7 +773,7 @@ function function_ae2a3a29(localclientnum) {
         } else {
             self.var_b3341e1e = util::playfxontag(localclientnum, level._effect[#"hash_76e124284b12709f"], self, "j_head");
         }
-        wait(randomfloatrange(0.9, 1.1));
+        wait randomfloatrange(0.9, 1.1);
     }
 }
 
@@ -819,7 +819,7 @@ function function_7f21fc5b(localclientnum, str_type) {
             break;
         }
         self.boss_player_snow_fx = playfxoncamera(localclientnum, level._effect[str_type], (0, 0, 0), anglestoforward(self.angles), anglestoup(self.angles));
-        wait(randomfloatrange(0.4, 0.7));
+        wait randomfloatrange(0.4, 0.7);
     }
 }
 

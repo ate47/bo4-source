@@ -183,7 +183,7 @@ function setfogsliders() {
             } else {
                 setexpfog(100000000, 100000001, 0, 0, 0, 0);
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 

@@ -143,7 +143,7 @@ function addspawnpointsinternal(team, spawnpointname) {
     if (!level.teamspawnpoints[team].size) {
         println("<dev string:x3b>" + spawnpointname + "<dev string:x4a>");
         callback::abort_level();
-        wait(1);
+        wait 1;
         return;
     }
 }
@@ -196,7 +196,7 @@ function placespawnpoints(spawnpointname) {
     if (!spawnpoints.size) {
         println("<dev string:x69>" + spawnpointname + "<dev string:x4a>");
         callback::abort_level();
-        wait(1);
+        wait 1;
         return;
     }
     for (index = 0; index < spawnpoints.size; index++) {
@@ -699,7 +699,7 @@ function getbestweightedspawnpoint(spawnpoints) {
         textoffset = (0, 0, -12);
         while (true) {
             if (!isdefined(level.curspawndata)) {
-                wait(0.5);
+                wait 0.5;
                 continue;
             }
             for (i = 0; i < level.curspawndata.friends.size; i++) {
@@ -1117,7 +1117,7 @@ function spawnlogic_begin() {
     function spawngraphcheck() {
         while (true) {
             if (getdvarint(#"scr_spawngraph", 0) < 1) {
-                wait(3);
+                wait 3;
                 continue;
             }
             thread spawngraph();
@@ -1186,7 +1186,7 @@ function spawnlogic_begin() {
                 waitframe(1);
             }
             if (!level.players.size || !isdefined(level.players[0].team) || level.players[0].team == "<dev string:x206>" || !isdefined(level.players[0].curclass)) {
-                wait(1);
+                wait 1;
                 continue;
             }
             level.players[0] getspawnpoint_nearteam(fakespawnpoints);
@@ -1251,7 +1251,7 @@ function spawnlogic_begin() {
     function loopbotspawns() {
         while (true) {
             if (getdvarint(#"scr_killbots", 0) < 1) {
-                wait(3);
+                wait 3;
                 continue;
             }
             if (!isdefined(level.players)) {
@@ -1285,7 +1285,7 @@ function spawnlogic_begin() {
                 }
             }
             if (getdvarstring(#"scr_killbottimer") != "<dev string:x38>") {
-                wait(getdvarfloat(#"scr_killbottimer", 0));
+                wait getdvarfloat(#"scr_killbottimer", 0);
                 continue;
             }
             waitframe(1);
@@ -1309,7 +1309,7 @@ function spawnlogic_begin() {
                 if (isdefined(relval) && relval != "<dev string:x38>") {
                     setdvar(#"scr_spawnidcycle", "<dev string:x38>");
                 } else {
-                    wait(0.5);
+                    wait 0.5;
                     continue;
                 }
             }
@@ -1332,7 +1332,7 @@ function spawnlogic_begin() {
     function showdeathsdebug() {
         while (true) {
             if (!getdvarint(#"scr_spawnpointdebug", 0)) {
-                wait(3);
+                wait 3;
                 continue;
             }
             time = gettime();
@@ -1385,11 +1385,11 @@ function spawnlogic_begin() {
 function updatedeathinfodebug() {
     while (true) {
         if (!getdvarint(#"scr_spawnpointdebug", 0)) {
-            wait(3);
+            wait 3;
             continue;
         }
         updatedeathinfo();
-        wait(3);
+        wait 3;
     }
 }
 
@@ -1403,7 +1403,7 @@ function spawnweightdebug(spawnpoints) {
     /#
         while (true) {
             if (!getdvarint(#"scr_spawnpointdebug", 0)) {
-                wait(3);
+                wait 3;
                 continue;
             }
             textoffset = (0, 0, -12);
@@ -1446,7 +1446,7 @@ function spawnweightdebug(spawnpoints) {
 function profiledebug() {
     while (true) {
         if (!getdvarint(#"scr_spawnpointprofile", 0)) {
-            wait(3);
+            wait 3;
             continue;
         }
         for (i = 0; i < level.spawnpoints.size; i++) {

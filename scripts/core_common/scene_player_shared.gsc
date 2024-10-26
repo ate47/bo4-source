@@ -514,7 +514,7 @@ class csceneplayer : csceneobject {
         if (b_enable) {
             while (isalive(player)) {
                 player playrumbleonentity("damage_heavy");
-                wait(0.1);
+                wait 0.1;
             }
             player stoprumble("damage_heavy");
             return;
@@ -532,7 +532,7 @@ class csceneplayer : csceneobject {
         if (b_enable) {
             while (isalive(player)) {
                 player playrumbleonentity("damage_light");
-                wait(0.3);
+                wait 0.3;
             }
             player stoprumble("damage_light");
             return;

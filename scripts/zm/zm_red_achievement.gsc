@@ -68,7 +68,7 @@ function private function_653f23be() {
         if (!isdefined(str_zone) || !isinarray(var_76f21e6b, str_zone)) {
             return;
         }
-        wait(1);
+        wait 1;
     }
     /#
         self iprintlnbold("<dev string:x55>");

@@ -430,7 +430,7 @@ function event_handler[event_cf200f34] function_209450ae(eventstruct) {
         adddebugcommand("<dev string:x80>");
         adddebugcommand("<dev string:xd3>");
         while (true) {
-            wait(0.25);
+            wait 0.25;
             dvarstr = getdvarstring(#"hash_40f9f26f308dd924", "<dev string:x11b>");
             if (dvarstr == "<dev string:x11b>") {
                 continue;

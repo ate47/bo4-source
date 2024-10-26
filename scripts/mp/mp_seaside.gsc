@@ -57,7 +57,7 @@ function precache() {
 // Size: 0x11c
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0);
     if (util::isfirstround()) {
         if (!(isdefined(level.var_2a0adaaa) && level.var_2a0adaaa)) {
             level clientfield::set("remove_blood_decals", 1);

@@ -98,7 +98,7 @@ function function_ec301a0d() {
     if (!self.var_8f145772) {
         self.var_8f145772 = 1;
         self playsoundtoplayer(#"zmb_bgb_alchemical_ammoget", self);
-        wait(0.5);
+        wait 0.5;
         if (isdefined(self)) {
             self.var_8f145772 = 0;
         }

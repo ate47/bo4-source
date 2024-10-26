@@ -80,7 +80,7 @@ function function_da63d789(localclientnum, oldval, newval, bnewent, binitialsnap
                         var_77e629d2 = 0;
                         self thread function_da5e1d54(localclientnum, fx_blue_fire);
                     }
-                    wait(0.1);
+                    wait 0.1;
                 }
                 if (isdefined(fx_blue_fire)) {
                     killfx(localclientnum, fx_blue_fire);

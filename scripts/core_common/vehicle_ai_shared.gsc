@@ -140,12 +140,12 @@ function __fire_for_rounds_internal(firecount, fireinterval, turretidx, target) 
     counter = 0;
     while (counter < firecount) {
         if (self.avoid_shooting_owner === 1 && self owner_in_line_of_fire()) {
-            wait(fireinterval);
+            wait fireinterval;
             continue;
         }
         self fireturret(turretidx, target);
         counter++;
-        wait(fireinterval);
+        wait fireinterval;
     }
 }
 
@@ -336,7 +336,7 @@ function javelin_losetargetatrighttime(target, gunnerindex) {
 function javelin_losetargetatrighttimeprojectile(proj, target) {
     self endon(#"death");
     proj endon(#"death");
-    wait(2);
+    wait 2;
     sound_played = undefined;
     while (isdefined(target)) {
         if (proj getvelocity()[2] < -150) {
@@ -350,7 +350,7 @@ function javelin_losetargetatrighttimeprojectile(proj, target) {
                 break;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -394,7 +394,7 @@ function waittill_asm_timeout(timeout) {
     self endon(#"death");
     self notify(#"end_asm_timeout_thread");
     self endon(#"end_asm_timeout_thread");
-    wait(timeout);
+    wait timeout;
     self notify(#"asm_complete", {#substate:"__timeout__"});
 }
 
@@ -565,7 +565,7 @@ function burning_thread(attacker, inflictor) {
     interval = max(secondsperonedamage, 0.5);
     for (damage = 0; util::timesince(starttime) < lastingtime; damage -= damageint) {
         previoustime = gettime();
-        wait(interval);
+        wait interval;
         damage += util::timesince(previoustime) * damagepersecond;
         damageint = int(damage);
         self dodamage(damageint, self.origin, attacker, self, "none", "MOD_BURNED");
@@ -580,7 +580,7 @@ function burning_thread(attacker, inflictor) {
 // Size: 0x36
 function iff_notifymeinnsec(time, note) {
     self endon(#"death");
-    wait(time);
+    wait time;
     self notify(note);
 }
 
@@ -621,12 +621,12 @@ function iff_override_team_switch_behavior(team) {
     self val::set(#"iff_override", "ignoreme", 1);
     self start_scripted();
     self vehicle::lights_off();
-    wait(0.1);
-    wait(1);
+    wait 0.1;
+    wait 1;
     self setteam(team);
     self blink_lights_for_time(1);
     self stop_scripted();
-    wait(1);
+    wait 1;
     self val::reset(#"iff_override", "ignoreme");
 }
 
@@ -638,12 +638,12 @@ function blink_lights_for_time(time) {
     self endon(#"death");
     starttime = gettime();
     self vehicle::lights_off();
-    wait(0.1);
+    wait 0.1;
     while (gettime() < starttime + int(time * 1000)) {
         self vehicle::lights_off();
-        wait(0.2);
+        wait 0.2;
         self vehicle::lights_on();
-        wait(0.2);
+        wait 0.2;
     }
     self vehicle::lights_on();
 }
@@ -1394,12 +1394,12 @@ function defaultstate_emped_update(params) {
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer")) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
-        wait(timeleft);
+        wait timeleft;
     }
     self.abnormal_status.emped = 0;
     self vehicle::toggle_emp_fx(0);
     self emp_startup_fx();
-    wait(1);
+    wait 1;
     self evaluate_connections();
 }
 
@@ -1586,7 +1586,7 @@ function defaultstate_pain_exit(params) {
 // Size: 0x4c
 function function_97e9de18(params) {
     self endon(#"death", #"change_state");
-    wait(0.2);
+    wait 0.2;
     self evaluate_connections();
 }
 
@@ -1940,7 +1940,7 @@ function private function_e057db25(var_2d1cbdd9, goalpos, vararg) {
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
-// Params 1, eflags: 0x20
+// Params 1, eflags: 0x20 variadic
 // Checksum 0x11ace4ed, Offset: 0x6e50
 // Size: 0x526
 function function_1d436633(...) {

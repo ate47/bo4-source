@@ -80,11 +80,11 @@ function vo() {
     self endon(#"death");
     e_enemy = undefined;
     a_vo = zm_audio::get_valid_lines(#"hash_76d06b092be0a0de");
-    wait(15);
+    wait 15;
     while (true) {
         function_c03b6f46(90000, 640000);
         e_enemy = self.enemy;
-        wait(randomfloatrange(2, 4));
+        wait randomfloatrange(2, 4);
         function_c03b6f46(90000, 640000);
         if (self.enemy === e_enemy && !level.var_7e0bfb6) {
             level.var_7e0bfb6 = 1;
@@ -96,7 +96,7 @@ function vo() {
                 }
             }
         }
-        wait(randomfloatrange(40, 80));
+        wait randomfloatrange(40, 80);
         level.var_7e0bfb6 = 0;
     }
 }
@@ -108,7 +108,7 @@ function vo() {
 function function_c03b6f46(var_4e77d211, var_3551e3b9) {
     self endon(#"death");
     while (true) {
-        wait(randomfloatrange(0.666667, 1.33333));
+        wait randomfloatrange(0.666667, 1.33333);
         if (zm_utility::is_player_valid(self.enemy)) {
             n_dist_sq = distance2dsquared(self.origin, self.enemy.origin);
             if (n_dist_sq > var_4e77d211 && n_dist_sq < var_3551e3b9) {
@@ -300,7 +300,7 @@ function function_5d0001ad() {
         n_default_wait = 1;
         break;
     }
-    wait(n_default_wait);
+    wait n_default_wait;
 }
 
 // Namespace zombie_gladiator_util/ai_gladiator_util

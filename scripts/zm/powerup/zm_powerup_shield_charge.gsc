@@ -98,13 +98,13 @@ function shield_on_hud(drop_item, player_team) {
     function full_ammo_move_hud(player_team) {
         players = getplayers(player_team);
         players[0] playsoundtoteam("<dev string:x4a>", player_team);
-        wait(0.5);
+        wait 0.5;
         move_fade_time = 1.5;
         self fadeovertime(move_fade_time);
         self moveovertime(move_fade_time);
         self.y = 270;
         self.alpha = 0;
-        wait(move_fade_time);
+        wait move_fade_time;
         self destroy();
     }
 
@@ -114,7 +114,7 @@ function shield_on_hud(drop_item, player_team) {
     // Size: 0x7c
     function shield_devgui() {
         level flagsys::wait_till("<dev string:x5a>");
-        wait(1);
+        wait 1;
         zm_devgui::add_custom_devgui_callback(&shield_devgui_callback);
         adddebugcommand("<dev string:x75>");
         adddebugcommand("<dev string:xc8>");

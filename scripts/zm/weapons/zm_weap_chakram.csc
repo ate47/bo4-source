@@ -191,7 +191,7 @@ function function_522aa0e9(localclientnum, oldval, newval, bnewent, binitialsnap
             self playrumblelooponentity(localclientnum, #"hash_2415ce1fdc3f50c5");
         } else {
             util::playfxontag(localclientnum, level._effect[#"hash_5c2ba805602ea484"], self, "tag_origin");
-            wait(1);
+            wait 1;
             if (isdefined(self) && self.weapon === getweapon(#"hero_chakram_lv3")) {
                 self.var_779b5b35[localclientnum] = util::playfxontag(localclientnum, level._effect[#"hash_455a47023bc1da46"], self, "tag_origin");
                 var_779b5b35 = self.var_779b5b35[localclientnum];

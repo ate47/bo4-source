@@ -156,7 +156,7 @@ function function_751c64a4(localclientnum, oldval, newval, bnewent, binitialsnap
     v_origin = self.origin;
     playsound(localclientnum, #"hash_1bb8f665af965ffb", self.sound_origin);
     audio::stoploopat(#"hash_23133277b3364bd2", self.sound_origin);
-    wait(1);
+    wait 1;
     playfx(localclientnum, "zm_weapons/fx8_www_dazed_vortex_end", v_origin, v_forward, v_up);
 }
 
@@ -312,9 +312,9 @@ function function_9fe38370(localclientnum, newval, str_tag) {
 function function_84884488(localclientnum) {
     self endon(#"death");
     self zm_utility::good_barricade_damaged(localclientnum);
-    wait(0.7);
+    wait 0.7;
     self playrenderoverridebundle(#"hash_429426f01ad84c8b");
-    wait(0.7);
+    wait 0.7;
     if (self.archetype === #"zombie" || self.archetype === #"catalyst" || self.archetype === #"nosferatu") {
         if (!isdefined(level.var_4fea6622)) {
             level.var_4fea6622 = 0;

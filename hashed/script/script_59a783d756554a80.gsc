@@ -139,7 +139,7 @@ function function_132e0bea() {
     if (isdefined(power_trig)) {
         waitresult = power_trig waittill(#"trigger");
         user = waitresult.activator;
-        wait(2);
+        wait 2;
         while (isdefined(user) && isdefined(user.isspeaking) && user.isspeaking) {
             waitframe(1);
         }
@@ -192,7 +192,7 @@ function function_2389bb7a(str_sound) {
             player playsoundtoplayer(str_sound, player);
         }
     }
-    wait(n_wait);
+    wait n_wait;
 }
 
 // Namespace namespace_8f53e87b/namespace_8f53e87b
@@ -204,7 +204,7 @@ function function_b66105cb() {
     for (i = 0; i < structs.size; i++) {
         playsoundatposition(#"hash_703767be61fa24c0", structs[i].origin);
     }
-    wait(0.5);
+    wait 0.5;
 }
 
 // Namespace namespace_8f53e87b/namespace_8f53e87b

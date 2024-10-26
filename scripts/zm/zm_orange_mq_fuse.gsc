@@ -103,7 +103,7 @@ function function_742dfdb5(var_a276c861) {
         level function_95dff91b();
         level.s_fuse.e_model show();
         if (level.var_98138d6b > 1) {
-            wait(2);
+            wait 2;
             level.var_1c53964e zm_hms_util::function_6a0d675d("vox_fuse_lighthouse", 0, 0, 1);
         }
         level.var_9d5b2598 setcandamage(1);
@@ -113,7 +113,7 @@ function function_742dfdb5(var_a276c861) {
         level.var_e48733ef val::set("mq_fuse_step", "allowDeath", 0);
         level.var_e48733ef thread function_d6a4619a();
         while (level.var_d02bca0 > 0) {
-            wait(1);
+            wait 1;
         }
         if (level.var_98138d6b > 1) {
             level.var_1c53964e zm_hms_util::function_6a0d675d("vox_fuse_partial_charge", 0, 0, 1);
@@ -245,7 +245,7 @@ function function_9e34b0d4(var_a276c861, var_19e802fa) {
         level.s_fuse.e_model show();
         return;
     }
-    wait(3);
+    wait 3;
     exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_left");
     exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_right");
 }
@@ -260,12 +260,12 @@ function function_c723e684(var_a276c861) {
             level thread namespace_617a54f4::function_3f808d3d(var_b4602d24.var_b9989e12);
         }
         while (level.var_6b43507a > 0) {
-            wait(1);
+            wait 1;
         }
         if (level.var_98138d6b > 1) {
             level.var_1c53964e thread zm_hms_util::function_6a0d675d("vox_fuse_complete_charge", 0, 0, 1);
         }
-        wait(3);
+        wait 3;
         level exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_base_1");
         level exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_base_2");
         level exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_base_3");

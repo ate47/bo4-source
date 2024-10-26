@@ -168,7 +168,7 @@ function on_player_connect() {
                 function_ac0bfb9c();
                 return;
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -218,7 +218,7 @@ function on_player_connect() {
             }
             level.players[0] rank::codecallback_rankup({#rank:rank_number, #prestige:0, #unlock_tokens_added:1});
             setdvar(#"scr_notif_devgui_rank", 0);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -330,7 +330,7 @@ function on_player_connect() {
             setdvar(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
             setdvar(#"scr_notif_devgui_gun_lvl_item_index", 0);
             setdvar(#"scr_notif_devgui_gun_lvl_rank_id", 0);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -417,7 +417,7 @@ function on_player_connect() {
             player persistence::codecallback_challengecomplete({#reward:xpreward, #max:maxvalue, #row:row, #table_number:table - 1, #challenge_type:type, #item_index:itemindex, #challenge_index:challengeid});
             setdvar(#"scr_notif_devgui_challenge_row", 0);
             setdvar(#"scr_notif_devgui_challenge_table", 0);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -431,7 +431,7 @@ function on_player_connect() {
             if (timeout == 0) {
                 timeout = 1;
             }
-            wait(timeout);
+            wait timeout;
             medal = getdvarint(#"scr_popupmedal", 0);
             challenge = getdvarint(#"scr_popupchallenge", 0);
             rank = getdvarint(#"scr_popuprank", 0);

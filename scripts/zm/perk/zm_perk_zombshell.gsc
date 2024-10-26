@@ -154,9 +154,9 @@ function shell_explosion(e_attacker, w_weapon) {
     physicsexplosionsphere(v_origin, 128, 0, 5, 500, 500);
     e_attacker thread aoe_think(e_attacker.e_zombshell.origin);
     if (e_attacker hasperk(#"specialty_mod_zombshell")) {
-        wait(8);
+        wait 8;
     } else {
-        wait(8);
+        wait 8;
     }
     e_attacker.e_zombshell clientfield::set("" + #"zombshell_aoe", 0);
     e_attacker notify(#"zombshell_aoe");
@@ -164,7 +164,7 @@ function shell_explosion(e_attacker, w_weapon) {
     e_attacker thread zombshell_cooldown(e_attacker.var_c0832831);
     e_attacker.var_491bd66d++;
     e_attacker.var_c0832831 += 15;
-    wait(0.1);
+    wait 0.1;
     if (isdefined(e_attacker.e_zombshell)) {
         e_attacker.e_zombshell delete();
     }
@@ -201,7 +201,7 @@ function aoe_think(var_4eaa1f4c) {
         if (!isdefined(var_adaf2ccb)) {
             var_adaf2ccb = 0.25;
         }
-        wait(var_adaf2ccb);
+        wait var_adaf2ccb;
     }
 }
 
@@ -270,7 +270,7 @@ function function_a8e6f773(n_time = 3) {
     } else {
         self thread namespace_9ff9f642::slowdown(#"hash_5d9e1ae933ad6f87");
     }
-    wait(n_time);
+    wait n_time;
     self.var_36c260a2 = undefined;
 }
 
@@ -302,7 +302,7 @@ function function_279e31b8(e_owner) {
             self clientfield::set_to_player("" + #"hash_5f545b88ba3e2938", 1);
             self.var_9c1c5b59 = 1;
         }
-        wait(0.5);
+        wait 0.5;
     }
     if (isdefined(self.var_9c1c5b59) && self.var_9c1c5b59) {
         self function_993d228c();
@@ -340,7 +340,7 @@ function zombshell_cooldown(var_85dcb56c) {
         self zm_perks::function_2ac7579(self.var_849c3bcf, 2, #"perk_zombshell");
     }
     self thread function_7d72c6f9(var_85dcb56c);
-    wait(var_85dcb56c);
+    wait var_85dcb56c;
     self thread reset_cooldown();
 }
 
@@ -353,7 +353,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self.var_fc63c7bc = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_849c3bcf, 0, #"perk_zombshell");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         self.var_fc63c7bc -= 0.1;
         self.var_fc63c7bc = math::clamp(self.var_fc63c7bc, 0, var_85dcb56c);
         n_percentage = 1 - self.var_fc63c7bc / var_85dcb56c;

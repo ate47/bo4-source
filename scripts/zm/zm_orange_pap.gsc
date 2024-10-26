@@ -226,7 +226,7 @@ function function_3f5218e3() {
 // Size: 0x1ac
 function function_7f6c9513() {
     exploder::exploder("fxexp_water_pipe_gush");
-    wait(0.1);
+    wait 0.1;
     foreach (var_769eb6a9 in level.var_680cd28) {
         var_769eb6a9 hide();
     }
@@ -234,9 +234,9 @@ function function_7f6c9513() {
         var_940bb44a show();
     }
     exploder::exploder("fxexp_water_pipe_gush");
-    wait(1);
+    wait 1;
     exploder::exploder("fxexp_fire_fx_ship_stage_1");
-    wait(1);
+    wait 1;
     exploder::exploder("fxexp_fire_fx_ship_stage_2");
     level flag::set(#"hash_6f7fd3d4d070db87");
     level.var_9cc989a5 delete();
@@ -381,7 +381,7 @@ function function_1556161f() {
     }
     level.var_7d8bf93f = level.var_4d8e32c8[level.var_f6f7a368];
     if (!level.var_6ed7c585 && level.var_7d8bf93f == level.var_9d121dce && level.var_4d8e32c8.size > 1) {
-        wait(1);
+        wait 1;
         function_1556161f();
     }
 }
@@ -421,7 +421,7 @@ function function_ec4984c3() {
     level notify(#"hash_355e5e0bbf3760db");
     level.var_7d8bf93f flag::wait_till("pap_waiting_for_user");
     level flag::wait_till(#"hash_78cf83ad057b4f1f");
-    wait(3);
+    wait 3;
     zm_bgb_anywhere_but_here::function_886fce8f(1);
     zm_orange_zones::function_3b77181c(0);
     zm_utility::function_9ad5aeb1(1, 0, 1, 0, 0);
@@ -441,7 +441,7 @@ function function_80a40c1c() {
                 }
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -466,7 +466,7 @@ function function_704c6738(event, mod, hit_location, zombie_team, damage_weapon)
 // Checksum 0xcc545280, Offset: 0x1fa8
 // Size: 0x5c
 function apc_restart_retreat() {
-    wait(4);
+    wait 4;
     level.musicsystemoverride = 1;
     music::setmusicstate("golden_pap_defend");
     level thread zm_orange_util::function_fd24e47f(#"hash_84fa084a2617bf4", -1, 0, 1);

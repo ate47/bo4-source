@@ -350,9 +350,9 @@ function function_4b5c96a0() {
 // Checksum 0x1c8f149e, Offset: 0x1930
 // Size: 0x54
 function function_7b738fd() {
-    wait(1);
+    wait 1;
     self clientfield::set_to_player("vision_pulse", 1);
-    wait(1.25);
+    wait 1.25;
     self clientfield::set_to_player("vision_pulse", 0);
 }
 

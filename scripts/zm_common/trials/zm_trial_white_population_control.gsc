@@ -98,7 +98,7 @@ function private function_75f0aac6() {
             level flag::clear(#"infinite_round_spawning");
             level flag::set(#"hold_round_end");
             level zm_utility::function_9ad5aeb1(1, 1, 0, 1, 0);
-            wait(5);
+            wait 5;
             level flag::clear(#"hold_round_end");
             break;
         }
@@ -166,7 +166,7 @@ function nuked_population_sign_think(n_base = 99) {
                 level.population_count = n_ones + n_tens * 10;
                 var_aa6e55d3++;
             }
-            wait(0.05);
+            wait 0.05;
         }
         while (level.population_count == 0) {
             if (var_aa6e55d3 < level.total_zombies_killed - level.zombie_total_subtract) {
@@ -182,7 +182,7 @@ function nuked_population_sign_think(n_base = 99) {
                 level.population_count = n_ones + n_tens * 10;
                 var_aa6e55d3++;
             }
-            wait(0.05);
+            wait 0.05;
         }
     }
 }

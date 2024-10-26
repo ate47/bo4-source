@@ -211,7 +211,7 @@ function playerlaststand(einflictor, attacker, idamage, smeansofdeath, weapon, v
         }
     }
     if (isdefined(self.intermission) && self.intermission) {
-        wait(0.5);
+        wait 0.5;
         self stopsounds();
         level waittill(#"forever");
     }
@@ -340,7 +340,7 @@ function wait_and_revive() {
         self thread laststand::revive_hud_show_n_fade(#"zombie/reviving_solo", 1);
     }
     while (self.var_16735873 === 1) {
-        wait(0.1);
+        wait 0.1;
     }
     if (isdefined(level.a_revive_success_perk_func)) {
         foreach (func in level.a_revive_success_perk_func) {
@@ -369,7 +369,7 @@ function function_e0f05bad(var_c34665fc) {
 // Size: 0x4e
 function refire_player_downed() {
     self endon(#"player_revived", #"death");
-    wait(1);
+    wait 1;
     if (self.num_perks) {
         self notify(#"player_downed");
     }
@@ -682,7 +682,7 @@ function laststand_give_pistol() {
 // Size: 0x64
 function wait_switch_weapon(n_delay, w_weapon) {
     self endon(#"player_revived", #"zombified", #"disconnect");
-    wait(n_delay);
+    wait n_delay;
     self switchtoweapon(w_weapon);
 }
 
@@ -719,13 +719,13 @@ function laststand_bleedout(delay) {
         self.bleedout_time -= 1;
         level clientfield::set("laststand_update" + self getentitynumber(), self.bleedout_time / delay);
         level.var_ff482f76 zm_laststand_client::set_bleedout_progress(self, self.bleedout_time / delay);
-        wait(1);
+        wait 1;
     }
     while (self.var_16735873 === 1) {
-        wait(0.1);
+        wait 0.1;
     }
     while (isdefined(self.revivetrigger) && isdefined(self.revivetrigger.beingrevived) && self.revivetrigger.beingrevived) {
-        wait(0.1);
+        wait 0.1;
     }
     self notify(#"bled_out");
     globallogic_player::function_b2873ebe();
@@ -930,14 +930,14 @@ function function_76043ec3() {
     self endon(#"disconnect", #"zombified", #"player_revived", #"bled_out");
     level endon(#"end_game");
     while (self usebuttonpressed()) {
-        wait(1);
+        wait 1;
     }
     if (!isdefined(self.var_c2bb0cce)) {
         return;
     }
     self.var_c6a6f334 = 0;
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!isdefined(self.var_c2bb0cce)) {
             continue;
         }
@@ -1059,7 +1059,7 @@ function revive_trigger_think(t_secondary) {
     self endon(#"disconnect", #"zombified", #"stop_revive_trigger", #"death");
     level endon(#"end_game");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (isdefined(t_secondary)) {
             t_revive = t_secondary;
         } else {
@@ -1550,7 +1550,7 @@ function revive_force_revive(reviver) {
 function revive_hud_think() {
     level endon(#"last_player_died");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!laststand::player_any_player_in_laststand()) {
             continue;
         }
@@ -1585,7 +1585,7 @@ function revive_hud_think() {
                 players[i] thread laststand::revive_hud_show_n_fade(#"hash_453f3038b87fbc77", 3, playertorevive);
             }
             playertorevive.revivetrigger.createtime = undefined;
-            wait(3.5);
+            wait 3.5;
         }
     }
 }

@@ -35,7 +35,7 @@ function __init__() {
 function function_aad9199e(pulsedenemy) {
     pulsedenemy notify(#"hash_7dc65ec6fe251daf");
     pulsedenemy endon(#"hash_7dc65ec6fe251daf", #"death", #"disconnect");
-    wait(float(level.weaponvisionpulse.var_9d776ba6) / 1000);
+    wait float(level.weaponvisionpulse.var_9d776ba6) / 1000;
     if (isdefined(pulsedenemy)) {
         pulsedenemy.ispulsed = 0;
         pulsedenemy.var_5379bee8 = undefined;
@@ -59,7 +59,7 @@ function function_fc3478b7(pulsedenemy) {
 // Size: 0xac
 function function_c0520f6f(victim, waittime) {
     self endon(#"disconnect", #"death", #"emp_vp_jammed");
-    wait(float(waittime) / 1000);
+    wait float(waittime) / 1000;
     if (isalive(victim)) {
         scoreevents::processscoreevent(#"hash_5fa940b319171088", self, victim, level.weaponvisionpulse);
     }
@@ -90,7 +90,7 @@ function awardscore() {
                 }
             }
         }
-        wait(float(waittime) / 1000);
+        wait float(waittime) / 1000;
     }
 }
 

@@ -185,7 +185,7 @@ function function_bd81f4e2(user) {
     if (level.var_db90b274 <= 0) {
         level.var_a83c1620 show();
         level.var_2a66053e show();
-        wait(0.1);
+        wait 0.1;
         level.var_d5fff1a7 hide();
         level.var_3830a0d3 hide();
         playsoundatposition(#"hash_4b169927b4789180", (0, 0, 0));

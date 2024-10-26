@@ -55,7 +55,7 @@ function function_dab39bb8(rocket) {
             enemy thread battlechatter::play_killstreak_threat("remote_missile");
             var_b5e50364 = 1;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

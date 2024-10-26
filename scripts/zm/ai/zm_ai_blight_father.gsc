@@ -1265,7 +1265,7 @@ function private function_96f5d05a(entity, var_4c0587b) {
 // Size: 0x6c
 function private function_55cba1f3(prone_2_run_roll) {
     self endon(#"death", #"hash_46064b6c2cb5cf20");
-    wait(15);
+    wait 15;
     if (isdefined(prone_2_run_roll)) {
         function_25f9cc48(prone_2_run_roll);
     }
@@ -1672,7 +1672,7 @@ function private function_5e853c85(grappler) {
                 grappler function_76c1f56f();
                 function_c526065b(grappler);
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -1861,7 +1861,7 @@ function private function_d5ba6cc6(blight_father, player) {
     player clientfield::set_to_player("blight_father_vomit_postfx_clientfield", 1);
     while (isdefined(blight_father) && isalive(blight_father) && zm_utility::is_player_valid(blight_father.e_grapplee, undefined, undefined, undefined, 0) && blight_father.e_grapplee === player) {
         player dodamage(blight_father ai::function_9139c839().var_b995c667, blight_father.origin, blight_father, blight_father);
-        wait(blight_father ai::function_9139c839().var_7334215);
+        wait blight_father ai::function_9139c839().var_7334215;
     }
     if (isdefined(player)) {
         player clientfield::set_to_player("blight_father_vomit_postfx_clientfield", 0);
@@ -2099,7 +2099,7 @@ function private function_d6e82d62(stub) {
     if (isdefined(stub.var_bebc05f5)) {
         stub thread function_b9a828e1(stub.var_bebc05f5);
     }
-    wait(getdvarfloat(#"hash_2f19f037c4f8ddc9", 2));
+    wait getdvarfloat(#"hash_2f19f037c4f8ddc9", 2);
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -2432,7 +2432,7 @@ function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_
     var_eb325a79 = self ai::function_9139c839().var_9e5ebf3c;
     var_b446b077 = self ai::function_9139c839().var_94fefe66;
     var_3fa92868 = self ai::function_9139c839().var_52bddd4;
-    wait(self ai::function_9139c839().var_20c6e4ca);
+    wait self ai::function_9139c839().var_20c6e4ca;
     while (isdefined(var_892397fd)) {
         if (!zombie_utility::is_player_valid(var_892397fd.missile_target, 1)) {
             var_892397fd.missile_target = undefined;
@@ -2451,7 +2451,7 @@ function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_
             var_892397fd function_1974d26f(var_3fa92868, var_b446b077, var_eb325a79);
             var_892397fd.var_f3d1c928 += 1;
         }
-        wait(var_eb325a79);
+        wait var_eb325a79;
     }
 }
 
@@ -2595,7 +2595,7 @@ function private function_124486ee(delay) {
     var_6927cfa0 = 40;
     var_c45ef84c = 40 * 40;
     if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     if (isdefined(var_892397fd)) {
         var_892397fd notify(#"detonated");

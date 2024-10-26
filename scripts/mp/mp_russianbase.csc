@@ -136,7 +136,7 @@ function function_bfd25720(localclientnum) {
     a_v_pa[4] = (138, -36, 504);
     a_v_pa[5] = (974, -630, 501);
     while (true) {
-        wait(randomintrange(120, 180));
+        wait randomintrange(120, 180);
         foreach (v_pa in a_v_pa) {
             playsound(localclientnum, #"hash_5e4a6db5676d1cbd", v_pa);
         }

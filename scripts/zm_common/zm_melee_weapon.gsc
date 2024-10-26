@@ -358,37 +358,37 @@ function melee_weapon_think(weapon, cost, flourish_fn, vo_dialog_id, flourish_we
             continue;
         }
         if (player zm_utility::in_revive_trigger()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (player isthrowinggrenade()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (player zm_utility::is_drinking()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (zm_trial_disable_buys::is_active()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         player_has_weapon = player hasweapon(weapon);
         if (player_has_weapon || player zm_loadout::has_powerup_weapon()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (player isswitchingweapons()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         current_weapon = player getcurrentweapon();
         if (zm_loadout::is_placeable_mine(current_weapon) || zm_equipment::is_equipment(current_weapon)) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (player laststand::player_is_in_laststand() || isdefined(player.intermission) && player.intermission) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (isdefined(player.check_override_melee_wallbuy_purchase)) {

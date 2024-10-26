@@ -60,7 +60,7 @@ function resetscorechain() {
 function scorechaintimer() {
     self notify(#"score_chain_timer");
     self endon(#"reset_score_chain", #"score_chain_timer", #"death", #"disconnect");
-    wait(20);
+    wait 20;
     self thread resetscorechain();
 }
 
@@ -205,7 +205,7 @@ function _giveplayerkillstreakinternal(player, momentum, oldmomentum, killstreak
     function setplayermomentumdebug() {
         setdvar(#"sv_momentumpercent", 0);
         while (true) {
-            wait(1);
+            wait 1;
             momentumpercent = getdvarfloat(#"sv_momentumpercent", 0);
             if (momentumpercent != 0) {
                 player = util::gethostplayer();

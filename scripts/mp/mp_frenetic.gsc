@@ -64,7 +64,7 @@ function rotate() {
         } else if (self.script_noteworthy == "y") {
             self rotatepitch(360, self.speed);
         }
-        wait(self.speed - 0.1);
+        wait self.speed - 0.1;
     }
 }
 
@@ -74,7 +74,7 @@ function rotate() {
 // Size: 0x20c
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0.5));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0.5);
     if (util::isfirstround()) {
         level scene::add_scene_func(#"p8_fxanim_mp_frenetic_flyaway_tarp_bundle", &function_dd64960c, "play");
         level thread scene::play(#"p8_fxanim_mp_frenetic_solar_panels_bundle");

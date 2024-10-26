@@ -165,7 +165,7 @@ function release_control(notifyhash) {
 function traversal_timeout(params) {
     self endon(#"death", #"hash_a729d7d4c6847f6", #"hash_612231aa5def85e2");
     level endon(#"game_ended");
-    wait(3.5);
+    wait 3.5;
     /#
         self botprinterror("<dev string:x137>" + params.startnode.origin);
     #/

@@ -38,7 +38,7 @@ function function_ca0a1ea4() {
 // Size: 0x204
 function function_9e94a567() {
     while (!(isdefined(level.gameended) && level.gameended)) {
-        wait(0.5);
+        wait 0.5;
         score = 0;
         winning_teams = [];
         if (!isdefined(level.teams)) {

@@ -283,7 +283,7 @@ function function_a0068ca0(einflictor, eattacker, idamage, idflags, smeansofdeat
 // Size: 0x3c
 function wait_and_explode() {
     self endon(#"death");
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self)) {
         self function_520df983(self);
     }
@@ -409,7 +409,7 @@ function function_5c15f6d6() {
         if (isdefined(self.protectdest) && isdefined(self.heligoalpos)) {
             self vehclearlookat();
             if (self.var_eaf98cf === self.protectdest && self.var_d9b0ae19 === self.heligoalpos) {
-                wait(1);
+                wait 1;
                 continue;
             }
             self.var_eaf98cf = self.protectdest;
@@ -432,7 +432,7 @@ function function_5c15f6d6() {
             }
             self setgoalyaw(yaw);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -467,7 +467,7 @@ function function_c4b00a04(startnode, protectdest, hardpointtype, heli_team) {
             self helicopter::function_86012f82(newdest.origin, 1);
             self waittill(#"near_goal");
         } else {
-            wait(var_520e3459);
+            wait var_520e3459;
         }
         hostmigration::waittillhostmigrationdone();
     }
@@ -690,7 +690,7 @@ function private on_player_killed(params) {
         swat_gunner.bda = 0;
     }
     swat_gunner.bda++;
-    wait(1);
+    wait 1;
     if (!isdefined(swat_gunner) || !isdefined(swat_gunner.script_owner)) {
         return;
     }

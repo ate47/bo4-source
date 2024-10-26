@@ -186,7 +186,7 @@ function function_dc8b6da() {
     self endon(#"disconnect");
     self forcestreambundle("p8_fxanim_zm_zod_iceberg_bundle");
     level flag::wait_till(#"start_zombie_round_logic");
-    wait(20);
+    wait 20;
     self function_66b6e720("p8_fxanim_zm_zod_iceberg_bundle");
 }
 
@@ -195,7 +195,7 @@ function function_dc8b6da() {
 // Checksum 0x1b8c76cc, Offset: 0x23b0
 // Size: 0x3c
 function function_42cfb9f0(a_ents) {
-    wait(0.65);
+    wait 0.65;
     playrumbleonposition(#"hash_7b580995b5562bfc", self.origin);
 }
 
@@ -584,7 +584,7 @@ function private function_a987d50f() {
             exploder::stop_exploder("exp_lgt_fakemoon_c_deck");
             var_3f2d17a4 = 1;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -604,7 +604,7 @@ function function_96c0d840() {
             showmiscmodels("coal_warm");
         }
         level waittill(#"hash_74a58a7760ce1b5c");
-        wait(12);
+        wait 12;
         showmiscmodels("coal_cold");
     }
 }
@@ -619,7 +619,7 @@ function function_d515e5e7() {
         while (var_f2c45ac3 > level.round_number) {
             level waittill(#"end_of_round");
         }
-        wait(randomint(10));
+        wait randomint(10);
         exploder::exploder("fx_exp_flare_vista_white");
     }
 }
@@ -630,16 +630,16 @@ function function_d515e5e7() {
 // Size: 0xe6
 function function_ef155de5() {
     level flag::wait_till("start_zombie_round_logic");
-    wait(25);
+    wait 25;
     while (true) {
         exploder::exploder("exp_lgt_sos");
-        wait(randomintrange(5, 55));
+        wait randomintrange(5, 55);
         exploder::exploder_stop("exp_lgt_sos");
-        wait(5);
+        wait 5;
         exploder::exploder("exp_lgt_cqd");
-        wait(randomintrange(5, 55));
+        wait randomintrange(5, 55);
         exploder::exploder_stop("exp_lgt_cqd");
-        wait(5);
+        wait 5;
     }
 }
 
@@ -681,7 +681,7 @@ function function_704f6133() {
     mdl_artifact moveto(mdl_artifact.origin + var_7b8000e5, 5, 1, 3);
     mdl_artifact waittill(#"movedone");
     mdl_artifact setmodel(#"hash_2c0078538e398b4f");
-    wait(2.5);
+    wait 2.5;
     mdl_artifact clientfield::set("activate_sentinel_artifact", 0);
     foreach (player in util::get_active_players()) {
         player playrumbleonentity("zm_power_on_rumble");
@@ -702,9 +702,9 @@ function function_704f6133() {
     level thread function_377b1d6d();
     level thread function_6058ef28();
     level thread function_531fd4b6();
-    wait(0.1);
+    wait 0.1;
     mdl_artifact delete();
-    wait(7.5);
+    wait 7.5;
     if (isalive(s_result.player)) {
         s_result.player zm_audio::create_and_play_dialog(#"sentinel", #"key");
     }
@@ -908,7 +908,7 @@ function function_1d8df872(b_on) {
 // Size: 0x4c
 function function_39dfeedc() {
     level flag::clear(#"hash_7060183fc29995b4");
-    wait(150);
+    wait 150;
     level flag::set(#"hash_7060183fc29995b4");
 }
 
@@ -1052,7 +1052,7 @@ function function_b8378fa9(str_shot, str_trigger) {
 function function_4b17dd44(a_ents) {
     level flag::wait_till_any(array("connect_forecastle_to_bridge", "connect_forecastle_to_state_rooms"));
     while (zm_zonemgr::any_player_in_zone("zone_forecastle_upper") || zm_zonemgr::any_player_in_zone("zone_forecastle_lower") || zm_zonemgr::any_player_in_zone("zone_bridge") || zm_zonemgr::any_player_in_zone("zone_state_rooms_front")) {
-        wait(1);
+        wait 1;
     }
     if (isdefined(a_ents[#"p8_fxanim_zm_zod_iceberg_forecastle_damage_ice_chunks_mod"])) {
         a_ents[#"p8_fxanim_zm_zod_iceberg_forecastle_damage_ice_chunks_mod"] delete();
@@ -1726,12 +1726,12 @@ function function_51581a6c() {
     while (true) {
         t_result = trigger::wait_till("trigger_water_drippies", "targetname", self);
         if (self isplayerunderwater()) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         self clientfield::set_to_player("water_drippies", 1);
         while (!self isplayerunderwater() && self istouching(t_result)) {
-            wait(0.5);
+            wait 0.5;
         }
         if (!level flag::get(#"hash_7060183fc29995b4") && self zm_zonemgr::is_player_in_zone("zone_cargo")) {
             continue;
@@ -1750,12 +1750,12 @@ function function_f1a16811() {
     while (true) {
         t_result = trigger::wait_till("trigger_water_drippies_fore", "targetname", self);
         if (!(isdefined(level.water_drained_fore) && level.water_drained_fore) || level flag::get(#"hash_7060183fc29995b4") || self isplayerunderwater()) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         self clientfield::set_to_player("water_drippies", 1);
         while (!level flag::get(#"hash_7060183fc29995b4") && !self isplayerunderwater() && self istouching(t_result)) {
-            wait(0.25);
+            wait 0.25;
         }
         self clientfield::set_to_player("water_drippies", 0);
     }
@@ -1768,7 +1768,7 @@ function function_f1a16811() {
 function function_4ec55dd() {
     level endon(#"hash_25d8c88ff3f91ee5");
     while (true) {
-        wait(randomintrange(10, 20));
+        wait randomintrange(10, 20);
         if (isalive(self) && self zm_zonemgr::is_player_in_zone(array("zone_forecastle_upper", "zone_forecastle_lower"))) {
             self clientfield::increment_to_player("water_splashies", 1);
         }
@@ -1835,7 +1835,7 @@ function function_8e0b371() {
         } else {
             self zm_hud::function_29780fb5(#"");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -2000,7 +2000,7 @@ function function_255747bd() {
                 return;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -2079,7 +2079,7 @@ function function_8c000d3b() {
                     }
                 }
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 }

@@ -327,7 +327,7 @@ function function_bbca669b(e_activator, dynent) {
     if (isdefined(e_activator) && isdefined(dynent)) {
         e_activator notify(#"hash_2f586f8df1e6596d");
         e_activator endon(#"hash_2f586f8df1e6596d", #"hash_59db65b924f851e4", #"hash_f787bd652d7a4b", #"disconnect");
-        wait(5);
+        wait 5;
         e_activator thread function_c1cc29be(e_activator, dynent);
     }
 }
@@ -356,10 +356,10 @@ function function_c1cc29be(e_activator, dynent) {
         }
         if (var_954ac27a) {
             dynent.canuse = 0;
-            wait(1.5 + 0.25);
+            wait 1.5 + 0.25;
             var_62002857 = 0;
             e_activator thread function_f451b137();
-            wait(2);
+            wait 2;
             e_activator function_172e72fa();
             if (var_954ac27a) {
                 str_code = "" + var_8171dd3a + var_8dfff656 + var_44e1e41b;
@@ -432,7 +432,7 @@ function fireworks_ee() {
 // Size: 0x3c
 function function_a746f03f() {
     level endon(#"game_ended");
-    wait(60);
+    wait 60;
     exploder::kill_exploder("fx_exploder_fireworks_ee");
 }
 
@@ -478,7 +478,7 @@ function function_172e72fa() {
 // Size: 0x64
 function function_b4231440(localclientnum) {
     self.var_3c43a180 = util::playfxontag(localclientnum, #"hash_1a61f16f38e7e93d", self, "tag_animate");
-    wait(1);
+    wait 1;
     stopfx(localclientnum, self.var_3c43a180);
 }
 
@@ -489,7 +489,7 @@ function function_b4231440(localclientnum) {
 function function_e0df40bf(localclientnum) {
     self endon(#"death");
     level endon(#"game_ended");
-    wait(60);
+    wait 60;
     if (isdefined(self.var_1ad66d1)) {
         stopfx(self.localclientnum, self.var_1ad66d1);
     }

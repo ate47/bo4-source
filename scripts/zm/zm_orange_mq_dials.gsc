@@ -74,7 +74,7 @@ function function_77ed3bab(var_5ea5c94d) {
             s_dial thread function_1e5c0d3b();
         }
         while (!function_5a73ee80()) {
-            wait(1);
+            wait 1;
         }
     }
 }
@@ -133,21 +133,21 @@ function private function_1e5c0d3b() {
             self.var_e5f66b29 = 1;
             self.dial_model show();
             self.dial_model playsound("zmb_vessel_drop");
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         self.dial_model playsound("zmb_quest_dial_turn");
         b_left = e_who lavapit_breach_(self.dial_model);
         if (b_left) {
             self.dial_model rotatepitch(36, 0.2, 0.03, 0.06);
-            wait(0.2);
+            wait 0.2;
             self.n_value++;
         } else {
             self.dial_model rotatepitch(-36, 0.2, 0.03, 0.06);
-            wait(0.2);
+            wait 0.2;
             self.n_value--;
         }
-        wait(0.2);
+        wait 0.2;
         if (self.n_value > 9) {
             self.n_value = 0;
         }

@@ -221,7 +221,7 @@ function function_3da195ec(weapon) {
 function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
     self endon(#"disconnect");
     if (self function_6a7a1533(var_c5b25bc5)) {
-        wait(1);
+        wait 1;
         self zm_score::add_to_player_score(var_97f3fbb7);
     }
 }
@@ -319,7 +319,7 @@ function private function_68992377(var_c5b25bc5, var_97f3fbb7) {
     }
 
     // Namespace namespace_e38c57c1/namespace_e38c57c1
-    // Params 3, eflags: 0x20
+    // Params 3, eflags: 0x20 variadic
     // Checksum 0x42959f1a, Offset: 0x1040
     // Size: 0x74
     function function_c1ccd7f3(var_fc09f1a3, n_player, ...) {

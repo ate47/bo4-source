@@ -226,7 +226,7 @@ function private __init__() {
             var_7099d03[var_7099d03.size] = {#origin:v_origin, #stand:v_stand, #var_e45e8f33:var_e45e8f33, #var_d8aec942:var_d8aec942};
         }
         closefile(file);
-        wait(0.5);
+        wait 0.5;
         iprintlnbold("<dev string:x6d7>");
         adddebugcommand("<dev string:x727>");
         player = util::gethostplayer();
@@ -264,7 +264,7 @@ function private __init__() {
                 player setplayerangles(var_543a44a5);
                 var_d4714efb = level.var_eedfa327;
                 iprintlnbold("<dev string:x738>" + level.var_eedfa327);
-                wait(0.1);
+                wait 0.1;
             }
             waitframe(1);
         }
@@ -284,7 +284,7 @@ function private __init__() {
         player = util::gethostplayer();
         n_index = 0;
         var_d4714efb = 0;
-        wait(1);
+        wait 1;
         iprintlnbold("<dev string:x78a>");
         while (level.var_f9efe895) {
             if (player adsbuttonpressed() && player function_78931318("<dev string:x7de>")) {
@@ -307,7 +307,7 @@ function private __init__() {
                 player setplayerangles(var_543a44a5);
                 var_d4714efb = n_index;
                 iprintlnbold("<dev string:x7ea>" + n_index);
-                wait(0.1);
+                wait 0.1;
             }
             waitframe(1);
         }
@@ -327,7 +327,7 @@ function private __init__() {
         }
         var_d4714efb = 0;
         v_offset = (0, 0, 50);
-        wait(1);
+        wait 1;
         iprintlnbold("<dev string:x816>");
         adddebugcommand("<dev string:x727>");
         while (level.var_f0d72128) {
@@ -353,7 +353,7 @@ function private __init__() {
                 player setplayerangles(var_543a44a5);
                 var_d4714efb = level.var_99026891;
                 iprintlnbold("<dev string:x86d>" + level.var_99026891);
-                wait(0.1);
+                wait 0.1;
             }
             waitframe(1);
         }
@@ -401,7 +401,7 @@ function private __init__() {
     function private function_cdd9b388() {
         while (true) {
             if (getdvarint(#"hash_326974dd9b8c3414", 0)) {
-                wait(1);
+                wait 1;
             } else {
                 waitframe(1);
             }
@@ -523,7 +523,7 @@ function private __init__() {
             }
             if (getdvarint(#"hash_7701b1eb7e173692", 0)) {
                 if (!level.var_938d798a) {
-                    wait(0.5);
+                    wait 0.5;
                     level.var_938d798a = 1;
                     level thread function_938d798a();
                 }
@@ -533,7 +533,7 @@ function private __init__() {
             }
             if (getdvarint(#"hash_cb3296a761d4f6c", 0)) {
                 if (!level.var_f9efe895) {
-                    wait(0.5);
+                    wait 0.5;
                     level.var_f9efe895 = 1;
                     level thread function_f9efe895();
                 }
@@ -543,7 +543,7 @@ function private __init__() {
             }
             if (getdvarint(#"hash_4f4c47d52d6ad262", 0)) {
                 if (!level.var_f0d72128) {
-                    wait(0.5);
+                    wait 0.5;
                     level.var_f0d72128 = 1;
                     level thread function_f0d72128();
                 }

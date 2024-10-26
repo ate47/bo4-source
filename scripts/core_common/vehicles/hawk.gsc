@@ -158,7 +158,7 @@ function hawk_destroy(var_bb2c398b = 0) {
             owner clientfield::set_to_player("static_postfx", 1);
             hawk vehicle_ai::set_state("death");
             hawk ghost();
-            wait(var_9e2fe80f);
+            wait var_9e2fe80f;
             if (isdefined(owner)) {
                 owner clientfield::set_to_player("static_postfx", 0);
             }
@@ -189,7 +189,7 @@ function hawk_destroy(var_bb2c398b = 0) {
             owner camerasetposition(cam.origin);
             owner camerasetlookat(hawk.origin);
             owner cameraactivate(1);
-            wait(var_9e2fe80f);
+            wait var_9e2fe80f;
             if (isdefined(owner)) {
                 owner cameraactivate(0);
             }
@@ -203,7 +203,7 @@ function hawk_destroy(var_bb2c398b = 0) {
         hawk vehicle_ai::set_state("death");
         hawk ghost();
     }
-    wait(0.5);
+    wait 0.5;
     if (isdefined(hawk)) {
         hawk delete();
     }

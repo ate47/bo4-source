@@ -157,7 +157,7 @@ function private getsquad(squadname) {
 function private thinksquad(squadname) {
     while (true) {
         if ([[ level._squads[squadname] ]]->think()) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         removesquad(squadname);
@@ -185,7 +185,7 @@ function private squadmemberthink() {
     if (!isdefined(self.script_aisquadname)) {
         return;
     }
-    wait(0.5);
+    wait 0.5;
     self.squadname = self.script_aisquadname;
     if (isdefined(self.squadname)) {
         if (!isdefined(level._squads[self.squadname])) {
@@ -240,7 +240,7 @@ function private squadmemberthink() {
                     }
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 }

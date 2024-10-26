@@ -396,7 +396,7 @@ function function_1b057db2() {
     if (isdefined(self.var_f97921ea)) {
         var_a4137bf5 = gettime() - self.var_f97921ea;
         if (var_a4137bf5 < 850) {
-            wait(float(850 - var_a4137bf5) / 1000);
+            wait float(850 - var_a4137bf5) / 1000;
         }
     }
     var_37ea2019 = 0;
@@ -448,11 +448,11 @@ function function_c4770b46(vehicle) {
 function watch_timeout(duration) {
     self endon(#"death");
     var_65bcb0ae = duration * 0.5;
-    wait(var_65bcb0ae);
+    wait var_65bcb0ae;
     if (isdefined(self.owner)) {
         self.owner thread killstreaks::play_taacom_dialog("hawkWeaponTimeHalf");
     }
-    wait(var_65bcb0ae);
+    wait var_65bcb0ae;
     if (isdefined(self.owner)) {
         self.owner thread killstreaks::play_taacom_dialog("hawkWeaponTimeEnd");
     }

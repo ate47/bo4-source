@@ -59,7 +59,7 @@ function private event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     }
     if (isdefined(eventstruct.ent) && eventstruct.ent.targetname === "asylum_toilet") {
         if (eventstruct.state === 3) {
-            wait(3);
+            wait 3;
             if (isdefined(eventstruct.ent.target)) {
                 s_sound = struct::get(eventstruct.ent.target, "targetname");
                 if (isdefined(s_sound)) {

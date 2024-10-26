@@ -89,11 +89,11 @@ function function_92c29649() {
     initial_black = lui::get_luimenu("InitialBlack");
     if (isdefined(initial_black)) {
         [[ initial_black ]]->close(self);
-        wait(1);
+        wait 1;
         [[ initial_black ]]->close(self);
-        wait(1);
+        wait 1;
         [[ initial_black ]]->close(self);
-        wait(1);
+        wait 1;
         [[ initial_black ]]->close(self);
     }
 }
@@ -113,7 +113,7 @@ function function_c11071a8() {
     while (!aretexturesloaded()) {
         waitframe(1);
     }
-    wait(0.5);
+    wait 0.5;
     array::thread_all(getplayers(), &function_92c29649);
     player = getplayers()[0];
     if (isdefined(player)) {
@@ -620,7 +620,7 @@ function function_8e22d234() {
 // Checksum 0xc88bf21b, Offset: 0x2e30
 // Size: 0x1fc
 function function_b4ebcd8a() {
-    wait(0.5);
+    wait 0.5;
     var_10e6d37f = 0;
     var_3e22bae5 = [];
     mode = currentsessionmode();
@@ -654,7 +654,7 @@ function function_51450191() {
         if (self function_15e5c1da(#"bronze_stars") == 10) {
             self function_399964c8(1);
             self giveachievement("st_stargazer");
-            wait(1);
+            wait 1;
             self giveachievement("st_skirmisher");
         }
     }

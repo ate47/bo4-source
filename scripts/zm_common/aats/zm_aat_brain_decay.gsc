@@ -241,7 +241,7 @@ function zombie_kill_tracker(e_attacker) {
         } else {
             var_a57adbdc = 1;
         }
-        wait(1);
+        wait 1;
     }
     self notify(#"hash_1bbb03bd582e937f");
 }

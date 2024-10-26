@@ -92,7 +92,7 @@ function function_39c9e020() {
         if (zm_hms_util::any_player_in_zone(a_str_zones)) {
             break;
         }
-        wait(1);
+        wait 1;
     }
     a_e_players = [];
     foreach (e_player in getplayers()) {
@@ -124,7 +124,7 @@ function sun_deck_watcher() {
         if (zm_hms_util::any_player_in_zone("sun_deck")) {
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     level thread function_d096f18f();
 }
@@ -140,7 +140,7 @@ function function_d096f18f() {
     level.var_ab11c23d rotatevelocity((0, -1440, 0), 4.5, 3);
     level thread function_39d9b290();
     exploder::exploder("fxexp_portal_115_start");
-    wait(5);
+    wait 5;
     level.var_ab11c23d rotateto((-90, level.var_ab11c23d.angles[1], 0), 0.2);
     level zm_orange_util::function_fd24e47f(#"hash_1003004a8ca44bb3", -1, 1);
     var_6df66af8 = float(soundgetplaybacktime(#"hash_2e5e53739622d4e5")) / 1000;
@@ -153,19 +153,19 @@ function function_d096f18f() {
     level.npc_pablo linkto(e_mover);
     e_mover moveto(s_start.origin, 1);
     level thread zm_orange_pablo::function_e44c7c0c(#"hash_1a974fe7a0edddab");
-    wait(1);
+    wait 1;
     zm_ui_inventory::function_7df6bb60(#"zm_orange_objective_progress", 12);
     e_mover moveto(e_mover.origin + (0, 0, 4000), var_6df66af8 - 1);
-    wait(var_6df66af8 - 3);
+    wait var_6df66af8 - 3;
     exploder::stop_exploder("fxexp_portal_115_start");
     exploder::exploder("fxexp_portal_115_end");
-    wait(2);
+    wait 2;
     level.npc_pablo delete();
     e_orb delete();
     e_mover delete();
     level thread function_bf106bdf();
     level zm_orange_util::function_fd24e47f(#"hash_1a974fe7a0edddab");
-    wait(1);
+    wait 1;
     level.var_1c53964e thread zm_hms_util::function_6a0d675d(#"hash_635ca3634ea94ee9");
 }
 
@@ -179,7 +179,7 @@ function function_8a707841(n_loop_time) {
     self clientfield::set("lighthouse_on", 0);
     while (n_time_elapsed < n_loop_time) {
         self clientfield::increment("" + #"hash_6c84cb8d22df46f0", 1);
-        wait(n_wait_time);
+        wait n_wait_time;
         n_time_elapsed += n_wait_time;
         n_wait_time = max(n_wait_time * 0.85, 0.1);
     }
@@ -192,7 +192,7 @@ function function_8a707841(n_loop_time) {
 function function_39d9b290() {
     level endon(#"end_game");
     a_e_fallbacks = zm_zonemgr::get_players_in_zone("sun_deck", 1);
-    wait(1);
+    wait 1;
     a_e_players = zm_zonemgr::get_players_in_zone("sun_deck", 1);
     if (a_e_players.size == 0) {
         a_e_players = a_e_fallbacks;

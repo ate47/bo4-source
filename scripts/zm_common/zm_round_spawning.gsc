@@ -681,9 +681,9 @@ function function_6e064f4c(str_archetype) {
 // Size: 0x9c
 function private function_bb169fc9(var_a630f8a4) {
     level [[ var_a630f8a4.m_func_start ]]();
-    wait(1);
+    wait 1;
     level thread zm_audio::function_bca32e49("roundstart", "special", undefined, 2);
-    wait(2);
+    wait 2;
     var_d25bbdd5 = level function_979b03db(var_a630f8a4);
     level thread function_30ed7851(var_a630f8a4, var_d25bbdd5);
 }
@@ -697,7 +697,7 @@ function private function_979b03db(var_a630f8a4) {
     while (true) {
         var_404e4288 = zombie_utility::get_current_zombie_count();
         if (var_404e4288 >= level.zombie_ai_limit) {
-            wait(0.25);
+            wait 0.25;
             continue;
         }
         level flag::wait_till("spawn_zombies");

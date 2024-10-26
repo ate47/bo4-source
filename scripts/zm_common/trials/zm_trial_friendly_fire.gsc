@@ -88,7 +88,7 @@ function private on_begin(var_9e0a2a85 = 1) {
             bot = bot::add_bot(var_be33ceec);
         } while (!isdefined(bot));
         bot.var_247fdf5 = 1;
-        wait(1);
+        wait 1;
         if (bot util::is_spectating()) {
             bot zm_player::spectator_respawn_player();
         }
@@ -154,11 +154,11 @@ function private function_e2c5e34c() {
     level endon(#"hash_7646638df88a3656");
     while (true) {
         self val::reset("zm_trial_friendly_fire", "ignoreme");
-        wait(randomintrange(3, 5));
+        wait randomintrange(3, 5);
         if (function_e1378d07()) {
             self val::set("zm_trial_friendly_fire", "ignoreme", 1);
         }
-        wait(randomintrange(5, 10));
+        wait randomintrange(5, 10);
     }
 }
 

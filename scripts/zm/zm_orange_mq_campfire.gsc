@@ -121,7 +121,7 @@ function function_1ad84248() {
             n_wait = float(soundgetplaybacktime(story)) / 1000;
             self.vessel.story = story;
             self.vessel playsound(story);
-            wait(n_wait);
+            wait n_wait;
             if (level.var_80c25d0a === 2 || level.var_80c25d0a === 4 || level.var_80c25d0a === 6) {
                 level.var_80c25d0a = 115;
             }
@@ -133,7 +133,7 @@ function function_1ad84248() {
             n_wait = float(soundgetplaybacktime(var_76f4999d)) / 1000;
             self.vessel.story = var_76f4999d;
             self.vessel playsound(var_76f4999d);
-            wait(n_wait);
+            wait n_wait;
             level.var_80c25d0a = 99;
         }
     }
@@ -172,7 +172,7 @@ function function_561d9cff() {
     zm_hms_util::pause_zombies(1, 1);
     level flag::set(#"hold_round_end");
     level.sndvoxoverride = 1;
-    wait(5);
+    wait 5;
     story = #"";
     switch (level.var_96eedc2a) {
     case 1:
@@ -195,7 +195,7 @@ function function_561d9cff() {
     #/
     n_wait = float(soundgetplaybacktime(story)) / 1000;
     self.vessel playsound(story);
-    wait(n_wait);
+    wait n_wait;
     level.sndvoxoverride = undefined;
     level flag::clear(#"hold_round_end");
     zm_hms_util::pause_zombies(0);

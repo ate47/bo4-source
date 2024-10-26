@@ -133,7 +133,7 @@ function function_10b4d6ac(weapon) {
                 self thread function_26819e32(e_projectile);
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -249,7 +249,7 @@ function is_valid_target(e_target, n_range) {
 function set_projectile(n_index) {
     self endon(#"death");
     self.n_index = n_index;
-    wait(0.1);
+    wait 0.1;
     self clientfield::increment("charon_shoot");
 }
 
@@ -288,7 +288,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
             }
             if (isdefined(ai_zombie)) {
                 e_projectile moveto(ai_zombie getcentroid(), n_time);
-                wait(n_time - 0.05);
+                wait n_time - 0.05;
             }
         } else if (isdefined(ai_zombie)) {
             var_4d8b7233 = 0;
@@ -313,7 +313,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
             } else {
                 e_projectile moveto(v_end, n_time);
             }
-            wait(n_time - 0.05);
+            wait n_time - 0.05;
             if (isdefined(ai_zombie) && ai_zombie.var_6f84b820 === #"boss") {
                 if (isdefined(ai_zombie gettagorigin("j_tail_1"))) {
                     n_hit_dist_sq = 2500;
@@ -409,7 +409,7 @@ function function_30239376(e_target) {
 // Size: 0x34
 function projectile_timeout() {
     self endon(#"death");
-    wait(5);
+    wait 5;
     self delete();
 }
 
@@ -538,7 +538,7 @@ function function_dd7bc108(weapon) {
     e_projectile = util::spawn_model("tag_origin", self gettagorigin("tag_flash"), self gettagangles("tag_flash"));
     if (isdefined(e_projectile)) {
         e_projectile function_39e6dc29(a_trace[#"position"]);
-        wait(0.1);
+        wait 0.1;
     }
     if (isdefined(v_on_nav)) {
         var_330f37da = v_on_nav;
@@ -562,7 +562,7 @@ function function_dd7bc108(weapon) {
             self.var_79e746a9 zm_utility::deactivate_zombie_point_of_interest();
         }
     }
-    wait(0.1);
+    wait 0.1;
     self clientfield::set("charon_flash", 0);
 }
 
@@ -581,7 +581,7 @@ function function_39e6dc29(v_end) {
     self moveto(v_end, n_time);
     self waittill(#"movedone");
     self clientfield::set("" + #"charon_impact", 2);
-    wait(0.1);
+    wait 0.1;
     self delete();
 }
 
@@ -603,9 +603,9 @@ function charon_pool(n_damage) {
         self thread function_249b5556(n_damage);
         self notify(#"hash_52d2f17ac6d67de2");
         if (n_damage == 5000) {
-            wait(15);
+            wait 15;
         } else {
-            wait(22);
+            wait 22;
         }
         if (isdefined(var_79e746a9)) {
             var_79e746a9 zm_utility::deactivate_zombie_point_of_interest();
@@ -689,7 +689,7 @@ function function_ccd87945(e_player) {
         e_player.var_b1224954.n_dragged++;
         e_player notify(#"hash_175b1370e662293a", {#var_b1224954:e_player.var_b1224954});
     }
-    wait(randomfloatrange(0.5, 1.5));
+    wait randomfloatrange(0.5, 1.5);
     self.e_attacker = e_player;
     if (isdefined(level.var_50ce2afd)) {
         e_player thread [[ level.var_50ce2afd ]]();
@@ -737,7 +737,7 @@ function function_31d8c58() {
     if (level.n_dragged < 0) {
         level.n_dragged = 0;
     }
-    wait(3);
+    wait 3;
     if (isdefined(self)) {
         self.allowdeath = 1;
         self.skipdeath = 1;
@@ -748,7 +748,7 @@ function function_31d8c58() {
         } else {
             self dodamage(self.health + 100, mdl_tag.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
         }
-        wait(0.5);
+        wait 0.5;
         if (isalive(self)) {
             self show();
         }
@@ -760,7 +760,7 @@ function function_31d8c58() {
 // Checksum 0xf02cbe26, Offset: 0x33d0
 // Size: 0x7c
 function function_8a38ce84() {
-    wait(3.8);
+    wait 3.8;
     if (isdefined(self.var_58b95)) {
         self.var_58b95 delete();
     }
@@ -791,15 +791,15 @@ function function_197896ad(e_target, n_damage) {
         [[ level.var_844d377c ]]->waitinqueue(e_target);
         e_target clientfield::increment("" + #"hash_3681b677c0d46042");
         e_target ai::stun(3);
-        wait(0.8);
+        wait 0.8;
         if (isdefined(e_target)) {
             e_target thread namespace_9ff9f642::slowdown(#"hash_583272dc38f3f8a8");
         }
-        wait(0.7);
+        wait 0.7;
         if (isdefined(e_target)) {
             e_target thread namespace_9ff9f642::slowdown(#"hash_60f12378572cf8e");
         }
-        wait(1);
+        wait 1;
         if (isalive(e_target)) {
             if (isdefined(e_target.skipdeath) && e_target.skipdeath) {
                 e_target hide();
@@ -810,12 +810,12 @@ function function_197896ad(e_target, n_damage) {
                 e_target dodamage(n_damage, e_target.origin, self, self, "none", "MOD_UNKNOWN", 0, level.w_hand_charon_uncharged);
             }
         }
-        wait(0.1);
+        wait 0.1;
         if (isdefined(e_target)) {
             e_target.var_131a4fb0 = 0;
             e_target.var_61768419 = 0;
         }
-        wait(0.5);
+        wait 0.5;
         if (isalive(e_target)) {
             e_target show();
         }
@@ -836,7 +836,7 @@ function function_2a67ef83(e_target, n_damage) {
         if (randomint(6) == 0) {
             e_target thread ai::stun(1);
         }
-        wait(2);
+        wait 2;
     }
     e_target thread namespace_9ff9f642::function_520f4da5(#"hash_583272dc38f3f8a8");
 }
@@ -847,7 +847,7 @@ function function_2a67ef83(e_target, n_damage) {
 // Size: 0x5a
 function function_da454404() {
     self endon(#"death");
-    wait(3);
+    wait 3;
     if (isdefined(self) && isdefined(self.var_47d982a1) && self.var_47d982a1) {
         self.var_47d982a1 = 0;
         self.var_317b8f00 = 0;

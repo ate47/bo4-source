@@ -70,11 +70,11 @@ function private follow_path() {
         endtime += self.structs[0].script_int;
         movetime = function_5bab934a(self.structs[0], endtime);
         self function_49ed8678(self.structs[1].origin, movetime);
-        wait(movetime);
+        wait movetime;
         endtime += self.structs[1].script_int;
         movetime = function_5bab934a(self.structs[1], endtime);
         self function_49ed8678(self.structs[0].origin, movetime);
-        wait(movetime);
+        wait movetime;
     }
 }
 
@@ -102,7 +102,7 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
         if (isdefined(var_daedea1b.stateanim)) {
             function_e2a06860(dynent, dynent.hitindex);
             animlength = getanimlength(var_daedea1b.stateanim);
-            wait(animlength);
+            wait animlength;
             function_e2a06860(dynent, 0);
             dynent.hitindex = 1 + dynent.hitindex % 2;
         }

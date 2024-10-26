@@ -58,7 +58,7 @@ class throttle {
                     continue;
                 }
                 var_3cd6b18f[var_3cd6b18f.size] = entity;
-                wait(updaterate_);
+                wait updaterate_;
             }
         }
         processed_++;
@@ -103,7 +103,7 @@ class throttle {
     function private _updatethrottlethread(throttle) {
         while (isdefined(throttle)) {
             [[ throttle ]]->_updatethrottle();
-            wait(throttle.updaterate_);
+            wait throttle.updaterate_;
         }
     }
 

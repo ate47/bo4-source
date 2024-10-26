@@ -100,7 +100,7 @@ function private function_8aefaae3(s_burn) {
         }
     }
     while (true) {
-        wait(1);
+        wait 1;
         n_total_damage = 0;
         var_25c61d06 = 0;
         var_2af3b934 = undefined;

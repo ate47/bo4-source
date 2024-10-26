@@ -85,7 +85,7 @@ function private __init__() {
         util::add_debug_command("<dev string:x86>");
         util::add_debug_command("<dev string:xa9>");
         while (true) {
-            wait(0.1);
+            wait 0.1;
             cmd = getdvarstring(#"hash_209287456d55fca1", "<dev string:x38>");
             if (cmd == "<dev string:x38>") {
                 continue;
@@ -245,7 +245,7 @@ function private __init__() {
 function hide_pop(var_16dd87ad) {
     self endon(#"death");
     self ghost();
-    wait(isdefined(var_16dd87ad) ? var_16dd87ad : 0.5);
+    wait isdefined(var_16dd87ad) ? var_16dd87ad : 0.5;
     if (isdefined(self)) {
         self show();
         util::wait_network_frame();
@@ -316,9 +316,9 @@ function function_c9a1a3bd(spot_origin, spot_angles, anim_name, var_c2a69066) {
     self clientfield::set("zombie_riser_fx", 0);
     self pathmode("dont move", 1);
     spawn_point = self.ai_zone.spawn_points[randomint(self.ai_zone.spawn_points.size)];
-    wait(2);
+    wait 2;
     self forceteleport(spawn_point.origin, spawn_point.angles);
-    wait(2);
+    wait 2;
     self pathmode("move allowed");
     self solid();
     self function_55625f76(spawn_point.origin, spawn_point.angles, self.spawn_anim);
@@ -353,7 +353,7 @@ function function_92c7e9a9(ai_zone) {
             if (n_duration > 0.2) {
                 wisp moveto(end_point, n_duration, 0.1, 0.1);
             }
-            wait(n_duration);
+            wait n_duration;
         }
         if (isalive(self) && isdefined(wisp)) {
             wisp linkto(self, "j_helmet", (0, 0, 0), (0, 0, 0));
@@ -365,7 +365,7 @@ function function_92c7e9a9(ai_zone) {
                 end_point = wisp.origin + (0, 0, 60);
                 n_duration = 1;
                 wisp moveto(end_point, n_duration, 0.1, 0.1);
-                wait(n_duration);
+                wait n_duration;
             }
         }
     }
@@ -629,7 +629,7 @@ function function_7a1e21a9(attacker, v_origin, min_radius = 50, max_radius = 70,
     } else {
         self playsound(#"zmb_spawn_powerup");
     }
-    wait(time);
+    wait time;
     if (isdefined(self)) {
         self.origin = dest_origin;
     }
@@ -882,7 +882,7 @@ function function_9a5f0c0(startpt, endpt) {
     self.origin = startpt + (0, 0, 10);
     time = self fake_physicslaunch(endpt, 100);
     self playsound(#"zmb_spawn_powerup");
-    wait(time);
+    wait time;
     if (isdefined(self)) {
         self.origin = endpt;
     }

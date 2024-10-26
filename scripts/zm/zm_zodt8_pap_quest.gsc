@@ -200,7 +200,7 @@ function function_5c299a0f(player) {
         }
     } else {
         self.pap_machine function_214cd6b3();
-        wait(1);
+        wait 1;
         level flag::set("pap_quest_complete");
         if (isalive(player)) {
             player util::delay(2.25, "death", &zm_audio::create_and_play_dialog, #"pap", #"activate");
@@ -216,7 +216,7 @@ function function_5c299a0f(player) {
 // Size: 0x3c
 function function_214cd6b3() {
     self clientfield::set("pap_chunk_big_rune", 1);
-    wait(1.8);
+    wait 1.8;
     function_a48b2870();
 }
 
@@ -602,7 +602,7 @@ function pap_machine_rune_on() {
         if (!level flag::get("<dev string:x50>")) {
             level waittill(#"stairs_pap_location");
         }
-        wait(0.1);
+        wait 0.1;
         level flag::set("<dev string:x7e>");
     }
 
@@ -630,11 +630,11 @@ function pap_machine_rune_on() {
     // Size: 0x82
     function function_d7dc7c3e(var_c8407ea2) {
         self clientfield::set("<dev string:xce>", var_c8407ea2);
-        wait(3);
+        wait 3;
         self clientfield::set("<dev string:xe3>", var_c8407ea2);
-        wait(3);
+        wait 3;
         self clientfield::set("<dev string:xe3>", 0);
-        wait(2);
+        wait 2;
     }
 
     // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
@@ -643,9 +643,9 @@ function pap_machine_rune_on() {
     // Size: 0x5a
     function function_a2a8d76e(var_c8407ea2) {
         self clientfield::set("<dev string:xfa>", var_c8407ea2);
-        wait(3);
+        wait 3;
         self clientfield::set("<dev string:xfa>", 1);
-        wait(2);
+        wait 2;
     }
 
     // Namespace zodt8_pap_quest/zm_zodt8_pap_quest

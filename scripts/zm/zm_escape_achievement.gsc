@@ -120,7 +120,7 @@ function private function_e5df009() {
             if (!isdefined(str_zone) || !isinarray(var_76f21e6b, str_zone)) {
                 self notify(#"hash_b5d3534da3f4508");
             }
-            wait(1);
+            wait 1;
         }
     }
     self zm_utility::giveachievement_wrapper("zm_escape_west_side");

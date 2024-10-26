@@ -36,7 +36,7 @@ function private __main__() {
 // Checksum 0xf4ce94c6, Offset: 0x1c8
 // Size: 0x104
 function on_ai_killed(s_params) {
-    wait(0.15);
+    wait 0.15;
     if (s_params.weapon === level.var_b77d3496 && isdefined(self) && isactor(self) && isdefined(s_params.eattacker)) {
         var_5b84ed9a = s_params.eattacker getcentroid();
         var_2640e082 = 15 * (vectornormalize(self getcentroid() - var_5b84ed9a) + (0, 0, 0.1));

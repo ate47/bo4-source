@@ -87,7 +87,7 @@ function watch_time_penalties(team) {
     while (true) {
         penalty_interval = isdefined(getgametypesetting(#"ticketslostontimeinterval")) ? getgametypesetting(#"ticketslostontimeinterval") : 0;
         if (penalty_interval <= 0) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         frames_to_wait = int(ceil(penalty_interval / float(function_60d95f53()) / 1000));

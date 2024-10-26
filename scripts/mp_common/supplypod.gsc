@@ -470,7 +470,7 @@ function function_827486aa(var_d3213f00, var_7497ba51 = 1) {
         }
     }
     if (var_7497ba51 && !var_d3213f00) {
-        wait((isdefined(level.var_934fb97.bundle.var_fd663ee0) ? level.var_934fb97.bundle.var_fd663ee0 : 0) / 1000);
+        wait (isdefined(level.var_934fb97.bundle.var_fd663ee0) ? level.var_934fb97.bundle.var_fd663ee0 : 0) / 1000;
     }
     profilestart();
     function_9d4aabb9(var_d3213f00);
@@ -542,7 +542,7 @@ function private function_5761966a(supplypod) {
     while (isdefined(supplypod.var_7b7607df[player.clientid]) && supplypod.var_7b7607df[player.clientid] > gettime()) {
         timeremaining = float(supplypod.var_7b7607df[player.clientid] - gettime()) / 1000;
         if (timeremaining > 0) {
-            wait(timeremaining);
+            wait timeremaining;
         }
     }
     objective_setinvisibletoplayer(supplypod.var_134eefb9, player);
@@ -757,7 +757,7 @@ function function_9abdee8c(object) {
 function function_1446053f(player) {
     self endon(#"death");
     player endon(#"death");
-    wait(0.2);
+    wait 0.2;
     if (isdefined(self) && isdefined(player)) {
         self function_a1434496(undefined, player, 1);
     }

@@ -216,7 +216,7 @@ function timer(n_time, str_endon, x = 1080, y = 200, height = 60) {
     if (isdefined(str_endon)) {
         self waittilltimeout(n_time, str_endon);
     } else {
-        wait(n_time);
+        wait n_time;
     }
     self closeluimenu(lui);
 }
@@ -485,7 +485,7 @@ function screen_flash(n_fadein_time, n_hold_time, n_fadeout_time, n_target_alpha
         return;
     }
     self _screen_fade(n_fadein_time, n_target_alpha, 0, v_color, b_force_close_menu);
-    wait(n_hold_time);
+    wait n_hold_time;
     self _screen_fade(n_fadeout_time, 0, n_target_alpha, v_color, b_force_close_menu);
 }
 
@@ -509,7 +509,7 @@ function screen_fade(n_time, n_target_alpha = 1, n_start_alpha = 0, v_color, b_f
 // Size: 0x52
 function screen_fade_out(n_time, v_color, str_menu_id, var_b675738a) {
     screen_fade(n_time, 1, 0, v_color, 0, str_menu_id, var_b675738a);
-    wait(n_time);
+    wait n_time;
 }
 
 // Namespace lui/lui_shared
@@ -518,7 +518,7 @@ function screen_fade_out(n_time, v_color, str_menu_id, var_b675738a) {
 // Size: 0x52
 function screen_fade_in(n_time, v_color, str_menu_id, var_b675738a) {
     screen_fade(n_time, 0, 1, v_color, 1, str_menu_id, var_b675738a);
-    wait(n_time);
+    wait n_time;
 }
 
 // Namespace lui/lui_shared
@@ -626,7 +626,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
         level.n_fade_debug_time = n_debug_time;
     #/
     if (n_time > 0) {
-        wait(n_time);
+        wait n_time;
     }
     if (isint(lui_menu)) {
         self setluimenudata(lui_menu, #"fadeovertime", 0);

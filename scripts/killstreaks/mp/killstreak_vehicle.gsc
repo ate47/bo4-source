@@ -320,7 +320,7 @@ function watch_exit() {
 function function_e99d09a3() {
     self endon(#"shutdown");
     for (inwater = 0; !inwater; inwater = trace[#"fraction"] < 1) {
-        wait(0.5);
+        wait 0.5;
         trace = physicstrace(self.origin + (0, 0, 10), self.origin + (0, 0, 6), (-2, -2, -2), (2, 2, 2), self, 4);
     }
     self function_822e1f64();
@@ -334,7 +334,7 @@ function watch_water() {
     self endon(#"shutdown");
     var_8a7edebd = 10;
     for (inwater = 0; !inwater; inwater = depth > var_8a7edebd) {
-        wait(0.5);
+        wait 0.5;
         depth = getwaterheight(self.origin) - self.origin[2];
     }
     self function_822e1f64();
@@ -475,7 +475,7 @@ function on_death(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, s
     if (isdefined(player)) {
         player val::set(#"hash_7412aa1ce117e2a5", "freezecontrols");
         vehicle thread function_de865657(var_2105be53);
-        wait(0.2);
+        wait 0.2;
         player val::reset(#"hash_7412aa1ce117e2a5", "freezecontrols");
     } else {
         vehicle thread function_de865657(var_2105be53);
@@ -506,7 +506,7 @@ function watch_game_ended() {
 // Size: 0x4a
 function function_de865657(waittime) {
     self endon(#"death");
-    wait(waittime);
+    wait waittime;
     self ghost();
     self.var_4217cfcb = 1;
 }

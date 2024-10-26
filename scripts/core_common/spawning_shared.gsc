@@ -531,7 +531,7 @@ function private add_spawn_points_internal(team, spawnpoints, list = 0) {
 }
 
 // Namespace spawning/spawning_shared
-// Params 3, eflags: 0x20
+// Params 3, eflags: 0x20 variadic
 // Checksum 0x2670e03a, Offset: 0x2168
 // Size: 0x238
 function clear_and_add_spawn_points(str_team, classnames, ...) {
@@ -616,7 +616,7 @@ function private update_explored_start_spawn_points_for_team(team) {
     level endon("update_explored_start_spawn_points_for_team" + string(team));
     while (true) {
         if (!isdefined(level.spawn_start[team])) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         players = getplayers();
@@ -643,7 +643,7 @@ function private update_explored_start_spawn_points_for_team(team) {
         if (allplayersspawned) {
             break;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -656,7 +656,7 @@ function private update_explored_spawn_points_for_team(team, explored_radius_sq)
     level endon("update_explored_spawn_points_for_team" + string(team));
     while (true) {
         if (!isdefined(level.teamspawnpoints[team])) {
-            wait(1);
+            wait 1;
             continue;
         }
         players = getplayers();
@@ -677,7 +677,7 @@ function private update_explored_spawn_points_for_team(team, explored_radius_sq)
             }
             spawn_exploration_wait_for_one_frame();
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -940,7 +940,7 @@ function place_spawn_points(spawnpointname) {
         println("<dev string:x18e>" + spawnpointname + "<dev string:x196>");
         assert(spawnpoints.size, "<dev string:x18e>" + spawnpointname + "<dev string:x196>");
         callback::abort_level();
-        wait(1);
+        wait 1;
         return;
     }
     for (index = 0; index < spawnpoints.size; index++) {
@@ -1249,7 +1249,7 @@ function function_a782529(e_player) {
                     render_spawnpoints_triggers(trig);
                 }
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 

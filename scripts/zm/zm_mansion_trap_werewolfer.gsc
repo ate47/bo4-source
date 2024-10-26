@@ -112,7 +112,7 @@ function function_408fcb87() {
                 player riotshield::player_damage_shield(5);
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -123,9 +123,9 @@ function function_408fcb87() {
 function function_38b44aab() {
     level notify(#"traps_cooldown", {#var_be3f58a:self.script_string});
     n_cooldown = zm_traps::function_da13db45(self._trap_cooldown_time, self.activated_by_player);
-    wait(n_cooldown);
+    wait n_cooldown;
     self.mdl_handle rotatepitch(-90, 0.5);
-    wait(0.5);
+    wait 0.5;
     level.var_4cca20a9 clientfield::set("" + #"hash_17df66ef5f71c0de", 1);
     level notify(#"traps_available", {#var_be3f58a:self.script_string});
 }
@@ -191,12 +191,12 @@ function ai_damage(e_trap) {
         }
         bhtnactionstartevent(self, "electrocute");
         self notify(#"bhtn_action_notify", {#action:"electrocute"});
-        wait(randomfloat(1.25));
+        wait randomfloat(1.25);
         self function_a3059f6(e_trap);
     } else {
         self function_a3059f6(e_trap);
     }
-    wait(2);
+    wait 2;
     self.var_3e60a85e = undefined;
 }
 

@@ -229,7 +229,7 @@ function private function_d193f583(localclientnum) {
     if (!isdefined(self.var_8e748ffa)) {
         self.var_8e748ffa = self playloopsound(#"hash_6d1e9399310efe71");
     }
-    wait(2);
+    wait 2;
     if (isdefined(self.var_8e748ffa)) {
         self stoploopsound(self.var_8e748ffa);
         self.var_8e748ffa = undefined;
@@ -267,7 +267,7 @@ function private function_f9a794dc(localclientnum) {
             } else {
                 self.var_fa938ed8 = 1;
             }
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         self.var_23c215c -= var_4eb46607;
@@ -302,22 +302,22 @@ function function_eba88fd(localclientnum) {
             }
         }
         if (self.var_23c215c > 20) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (self.var_23c215c > 15) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         if (self.var_23c215c > 10) {
-            wait(0.4);
+            wait 0.4;
             continue;
         }
         if (self.var_23c215c > 5) {
-            wait(1);
+            wait 1;
             continue;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -431,7 +431,7 @@ function function_bbfe3432(localclientnum) {
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", var_be5f61d5);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", var_be5f61d5);
         var_be5f61d5 /= 2.5;
-        wait(0.3);
+        wait 0.3;
     }
 }
 

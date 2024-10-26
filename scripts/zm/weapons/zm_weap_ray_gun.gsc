@@ -49,7 +49,7 @@ function on_ai_killed(s_params) {
 function ai_disintegrate() {
     self endon(#"death");
     self clientfield::increment("raygun_disintegrate", 1);
-    wait(1);
+    wait 1;
     self delete();
 }
 

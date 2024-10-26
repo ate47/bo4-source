@@ -43,7 +43,7 @@ function on_game_playing() {
     if (!getdvarint(#"hash_14f8907ba73d8e4f", 1)) {
         return;
     }
-    wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
+    wait getdvarfloat(#"hash_68cf1e8e429452b0", 0);
     if (util::isfirstround()) {
         level thread scene::play(#"p8_fxanim_mp_icebreaker_ice_shelf_bundle", "Shot 2");
         level scene::play(#"p8_fxanim_mp_icebreaker_container_drop_bundle", "Shot 2");
@@ -64,7 +64,7 @@ function function_2cdcf5c3() {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
-        wait(getdvarfloat(#"hash_142927c6a6db817c", 0));
+        wait getdvarfloat(#"hash_142927c6a6db817c", 0);
         level thread scene::play(#"p8_fxanim_mp_icebreaker_container_drop_bundle", "Shot 1");
         level thread scene::play(#"p8_fxanim_mp_icebreaker_ice_shelf_bundle", "Shot 1");
         return;

@@ -576,7 +576,7 @@ function function_6cd38e99(var_f5716a6, var_18e8905a) {
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xa9707dd6, Offset: 0x2c18
 // Size: 0xc4
 function function_f8679f8d(var_ea0a46dc, var_8c987230, ...) {
@@ -586,12 +586,12 @@ function function_f8679f8d(var_ea0a46dc, var_8c987230, ...) {
             continue;
         }
         e_zombie thread [[ var_8c987230 ]](vararg);
-        wait(0.1);
+        wait 0.1;
     }
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0x8e40cce8, Offset: 0x2ce8
 // Size: 0x36
 function function_a7c67ad6(ai_enemy, var_ea0a46dc, var_8c987230, ...) {
@@ -608,7 +608,7 @@ function function_a7c67ad6(ai_enemy, var_ea0a46dc, var_8c987230, ...) {
         self endon(str_endon);
         while (true) {
             print3d(v_origin, str_text, (0, 1, 0), 1, 0.7, 3);
-            wait(0.1);
+            wait 0.1;
         }
     }
 
@@ -654,7 +654,7 @@ function function_2d3beb68(var_ea0a46dc, e_attacker) {
     /#
         iprintlnbold("<dev string:x24b>" + var_1deac56b + "<dev string:x251>" + level.var_74cf08b1.damagevalues[0] + "<dev string:x265>" + function_9e72a96(self.archetype));
     #/
-    wait(0.6);
+    wait 0.6;
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
@@ -677,7 +677,7 @@ function function_a851c777(var_ea0a46dc, e_attacker) {
     /#
         iprintln("<dev string:x38>" + function_9e72a96(self.archetype) + "<dev string:x42>" + self getentnum() + "<dev string:x46>" + n_damage);
     #/
-    wait(0.6);
+    wait 0.6;
     switch (var_ea0a46dc) {
     case 0:
         self clientfield::set("" + #"hash_1dd40649a6474f30", 0);
@@ -733,7 +733,7 @@ function function_ca108f41(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     if (isdefined(e_attacker)) {
         e_attacker flag::wait_till_timeout(10, "flag_player_clear_charged_shot");
     } else {
-        wait(10);
+        wait 10;
     }
     e_origin notify(#"hash_775ddc8cde7b36e4");
     e_trigger notify(#"hash_775ddc8cde7b36e4");
@@ -771,7 +771,7 @@ function shrink_globe() {
     self clientfield::set("" + #"hash_64f62d9a3170948e", 1);
     self waittill(#"hash_775ddc8cde7b36e4");
     self clientfield::set("" + #"hash_64f62d9a3170948e", 0);
-    wait(2);
+    wait 2;
     self delete();
 }
 
@@ -785,12 +785,12 @@ function function_e607e26e(e_attacker) {
     while (true) {
         self waittill(#"touch");
         self function_f8679f8d(3, &function_c9b2e87f, e_attacker);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0x59b7af34, Offset: 0x3710
 // Size: 0x2d2
 function function_c9b2e87f(...) {
@@ -822,7 +822,7 @@ function function_c9b2e87f(...) {
         waitframe(1);
         self ghost();
         self thread namespace_9ff9f642::slowdown(#"hash_193617f42c166879");
-        wait(1);
+        wait 1;
         if (isdefined(e_attacker)) {
             e_attacker notify(#"zombie_shrunk");
         }
@@ -858,7 +858,7 @@ function function_936c6968(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     if (isdefined(e_attacker)) {
         e_attacker flag::wait_till_timeout(12, "flag_player_clear_charged_shot");
     } else {
-        wait(12);
+        wait 12;
     }
     e_trigger notify(#"hash_51bbb146cbe1a24d");
     e_trigger delete();
@@ -873,7 +873,7 @@ function function_936c6968(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
             level.var_2ec91d6e[var_a257f75d] = -1;
         }
     }
-    wait(2);
+    wait 2;
     e_vortex delete();
 }
 
@@ -887,12 +887,12 @@ function function_e46e9108(e_vortex, v_origin, e_attacker) {
     while (true) {
         self waittill(#"touch");
         self function_f8679f8d(0, &function_bbbbc4d0, v_origin, e_attacker);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0x2246fa77, Offset: 0x3d88
 // Size: 0x8c
 function function_bbbbc4d0(...) {
@@ -968,10 +968,10 @@ function function_ad3de341(e_attacker) {
                 self.n_zombie_custom_goal_radius = 8;
                 self.v_zombie_custom_goal_pos = v_loc;
                 self waittill(#"goal");
-                wait(randomfloatrange(0.1, 2));
+                wait randomfloatrange(0.1, 2);
             }
         }
-        wait(randomfloatrange(0.1, 0.3));
+        wait randomfloatrange(0.1, 0.3);
     }
 }
 
@@ -1040,7 +1040,7 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
     if (isdefined(e_attacker)) {
         e_attacker flag::wait_till_timeout(12, "flag_player_clear_charged_shot");
     } else {
-        wait(12);
+        wait 12;
     }
     e_trigger notify(#"end_spin_cycle");
     e_trigger delete();
@@ -1055,7 +1055,7 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
             level.var_2ec91d6e[var_a257f75d] = -1;
         }
     }
-    wait(2);
+    wait 2;
     e_tornado delete();
 }
 
@@ -1069,12 +1069,12 @@ function function_b3d8a8c4(v_origin, e_attacker, e_tornado) {
     while (true) {
         self waittill(#"touch");
         self function_f8679f8d(1, &function_e5e6e403, e_attacker, e_tornado);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0xa461cba, Offset: 0x48b0
 // Size: 0x3f2
 function function_e5e6e403(...) {
@@ -1097,7 +1097,7 @@ function function_e5e6e403(...) {
     case #"bat":
     case #"zombie_dog":
         self.marked_for_death = 1;
-        wait(0.5);
+        wait 0.5;
         self function_61b2f057(e_attacker, level.var_74cf08b1);
         break;
     case #"catalyst":
@@ -1109,7 +1109,7 @@ function function_e5e6e403(...) {
         self val::set(#"ww_ignoreme", "ignoreme", 1);
         self val::set(#"ww_ignorall", "ignoreall", 1);
         self util::delay(randomfloatrange(0.5, 1.5), "death", &function_c5eccfa2);
-        wait(2);
+        wait 2;
         self.var_4a4430c5 = undefined;
         for (i = 0; i < 4; i++) {
             if (!e_tornado.var_9f00aa3b[i]) {
@@ -1120,10 +1120,10 @@ function function_e5e6e403(...) {
         }
         if (isdefined(self.var_4a4430c5)) {
             self util::delay(randomfloatrange(0.5, 1.5), "death", &function_c5eccfa2);
-            wait(randomfloatrange(3, 5));
+            wait randomfloatrange(3, 5);
             e_tornado.var_9f00aa3b[self.var_4a4430c5] = 0;
         }
-        wait(0.5);
+        wait 0.5;
         self thread function_3ebc5d0c(e_attacker);
         break;
     default:
@@ -1183,7 +1183,7 @@ function function_6476c708(e_attacker, e_tornado) {
     self endon(#"death");
     s_waitresult = e_tornado waittill(#"end_spin_cycle", #"death");
     if (s_waitresult._notify === "end_spin_cycle") {
-        wait(0.5);
+        wait 0.5;
     }
     self thread function_3ebc5d0c(e_attacker);
 }
@@ -1269,7 +1269,7 @@ function function_b9078d40(v_origin, e_attacker, var_a257f75d) {
     if (isdefined(e_attacker)) {
         e_attacker flag::wait_till_timeout(12, "flag_player_clear_charged_shot");
     } else {
-        wait(12);
+        wait 12;
     }
     e_trigger notify(#"hash_7e07bb5b7a331e0b");
     e_trigger delete();
@@ -1319,12 +1319,12 @@ function function_1beb7376(e_attacker) {
                 }
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x21 linked variadic
 // Checksum 0x84a86d9, Offset: 0x57c8
 // Size: 0x3aa
 function function_886f2b8d(...) {
@@ -1357,9 +1357,9 @@ function function_886f2b8d(...) {
         self.marked_for_death = 1;
         self thread function_9253dc3e(2.2);
         self thread namespace_9ff9f642::slowdown(#"hash_7f87c0765184088f");
-        wait(1.5);
+        wait 1.5;
         self thread namespace_9ff9f642::slowdown(#"hash_193617f42c166879");
-        wait(0.7);
+        wait 0.7;
         self clientfield::set("" + #"hash_3bedaaea2c17af23", 1);
         self notsolid();
         if (isdefined(var_8007b1a0)) {
@@ -1367,7 +1367,7 @@ function function_886f2b8d(...) {
         }
         self val::set(#"hash_4ca9f93d2b6aefb2", "ignoreall", 1);
         self val::set(#"hash_6fc94bc41cfa5e91", "ignoreme", 1);
-        wait(0.5);
+        wait 0.5;
         self function_61b2f057(e_attacker, level.var_4b14202f);
         break;
     default:
@@ -1384,7 +1384,7 @@ function function_e8ab7e4d(var_8007b1a0, var_446e486f, n_move_time) {
     var_2d9e33ca = util::spawn_model(#"tag_origin", var_446e486f);
     var_2d9e33ca clientfield::set("" + #"hash_69b312bcaae6308b", 1);
     var_2d9e33ca moveto(var_8007b1a0, n_move_time);
-    wait(n_move_time);
+    wait n_move_time;
     var_2d9e33ca delete();
 }
 
@@ -1393,7 +1393,7 @@ function function_e8ab7e4d(var_8007b1a0, var_446e486f, n_move_time) {
 // Checksum 0x1cce097c, Offset: 0x5c40
 // Size: 0x2c
 function function_9253dc3e(n_delay) {
-    wait(n_delay);
+    wait n_delay;
     if (isdefined(self)) {
         self ghost();
     }

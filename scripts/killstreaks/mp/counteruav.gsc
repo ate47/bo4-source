@@ -160,7 +160,7 @@ function initrotatingrig() {
 function rotaterig() {
     for (;;) {
         self rotateyaw(360, 60);
-        wait(60);
+        wait 60;
     }
 }
 
@@ -174,11 +174,11 @@ function swayrig() {
         z = randomintrange(-200, -100);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
         z = randomintrange(100, 200);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
     }
 }
 
@@ -215,7 +215,7 @@ function movementmanagerthink(teamorentnum) {
             destination = level.counter_uav_positions[newindex];
             level.counter_uav_position_index[teamorentnum] = newindex;
             level notify("counter_uav_move_" + teamorentnum);
-            wait(5 + randomintrange(5, 10));
+            wait 5 + randomintrange(5, 10);
         }
     }
 }
@@ -284,7 +284,7 @@ function maintaincouteruaventities() {
     // Size: 0x34
     function waitanddebugdrawoffsetlist() {
         level endon(#"game_ended");
-        wait(10);
+        wait 10;
         debugdrawoffsetlist();
     }
 
@@ -476,7 +476,7 @@ function counteruavmove() {
 // Size: 0x54
 function playfx(name) {
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         playfxontag(name, self, "tag_origin");
     }
@@ -521,7 +521,7 @@ function ontimeout() {
     }
     self.owner globallogic_audio::play_taacom_dialog("timeout", "counteruav");
     self airsupport::leave(5);
-    wait(5);
+    wait 5;
     self removeactivecounteruav();
     if (target_istarget(self)) {
         target_remove(self);
@@ -583,11 +583,11 @@ function deletecounteruav() {
     if (isdefined(params.var_bb6c29b4) && isdefined(self.var_d02ddb8e) && self.var_d02ddb8e == getweapon(#"shock_rifle")) {
         self thread playfx(params.var_bb6c29b4);
     }
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         self setmodel(#"tag_origin");
     }
-    wait(0.2);
+    wait 0.2;
     if (isdefined(self)) {
         self notify(#"delete");
         self delete();

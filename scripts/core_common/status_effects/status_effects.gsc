@@ -196,7 +196,7 @@ function on_end_game() {
             }
             setdvar(#"scr_status_effects_devgui_cmd", "<dev string:x38>");
             setdvar(#"scr_status_effects_devgui_arg", "<dev string:x38>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 

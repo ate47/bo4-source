@@ -229,9 +229,9 @@ function private function_13339b58(istank) {
     self unlink();
     self animscripted("parachute_closed", self.origin, self.angles, var_e1c31bea, "normal", "root", 1, 0);
     animlength = getanimlength("parachute_closed");
-    wait(animlength * 0.35);
+    wait animlength * 0.35;
     self clientfield::set("supply_drop_parachute_rob", 0);
-    wait(animlength * 0.65);
+    wait animlength * 0.65;
     self delete();
 }
 
@@ -274,7 +274,7 @@ function private function_500a6615(itemspawnlist = #"supply_drop_stash_parent_dl
         supplydrop moveto(groundpoint, movetime);
         supplydrop playsound("evt_supply_drop");
         var_f6dfa3da = isdefined(supplydrop.var_abd32694) && supplydrop.var_abd32694 ? 0.25 : 1;
-        wait(var_f6dfa3da);
+        wait var_f6dfa3da;
         supplydropparachute = spawn("script_model", (0, 0, 0));
         supplydropparachute.targetname = "supply_drop_chute";
         supplydropparachute.origin = supplydrop.origin;
@@ -380,9 +380,9 @@ function private function_ba3be344() {
     var_57e06aea = function_eafcba42(startpoint, endpoint);
     self.var_57e06aea = var_57e06aea;
     self setspeed(50);
-    wait(0.5);
+    wait 0.5;
     self thread function_c2edbefb(var_57e06aea);
-    wait(0.5);
+    wait 0.5;
     self setspeed(100);
 }
 
@@ -649,7 +649,7 @@ function private function_924a11ff(itemspawnlist) {
     self dontinterpolate();
     self setmodel("p8_fxanim_wz_supply_stash_04_mod");
     items = self namespace_65181344::function_5eada592(itemspawnlist, 1);
-    wait(60);
+    wait 60;
     if (isdefined(self)) {
         self clientfield::set("supply_drop_fx", 0);
     }
@@ -680,11 +680,11 @@ function private function_c2edbefb(path, droppoint, var_86928932 = 1, var_2118f7
             if (var_f155e743) {
                 if (distancesquared(droppoint, self.origin) < 128 * 128) {
                     if (var_86928932) {
-                        wait(2);
+                        wait 2;
                     }
                     self thread function_500a6615(var_2118f785);
                     if (var_86928932) {
-                        wait(1);
+                        wait 1;
                     }
                     break;
                 }

@@ -418,7 +418,7 @@ function function_345ea423(localclientnum) {
     self endon("4e849ddafe66746f");
     self endon(#"death", #"hash_5f06618b8c668b18");
     n_random_wait = randomfloatrange(1, 3);
-    wait(n_random_wait);
+    wait n_random_wait;
     while (true) {
         e_client = function_5c10bd79(localclientnum);
         if (self === e_client && function_d17ae3cc(localclientnum)) {
@@ -426,7 +426,7 @@ function function_345ea423(localclientnum) {
         } else {
             util::playfxontag(localclientnum, level._effect[#"hash_1f7511354d1e7631"], self, "j_head");
         }
-        wait(3);
+        wait 3;
     }
 }
 
@@ -660,7 +660,7 @@ function crowd_react_boss(localclientnum, oldval, newval, bnewent, binitialsnap,
     if (newval) {
         a_structs = struct::get_array("mus_crowd_bossbattle", "targetname");
         foreach (s_struct in a_structs) {
-            wait(randomfloatrange(0.15, 0.5));
+            wait randomfloatrange(0.15, 0.5);
         }
     }
 }
@@ -762,27 +762,27 @@ function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5c60a6f5f1a9d64a")), "set_playback_speed", var_55a37c48);
-        wait(1.733 / var_55a37c48);
+        wait 1.733 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5596d5887d732c0e", #"hash_5596d4887d732a5b", #"hash_5596d3887d7328a8", #"hash_5596da887d73348d", #"hash_5596d9887d7332da")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_neutral":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_dec580832649b0")), "set_playback_speed", var_55a37c48);
-        wait(1.733 / var_55a37c48);
+        wait 1.733 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_146c97641992ac6c", #"hash_146c9a641992b185", #"hash_146c99641992afd2", #"hash_146c94641992a753")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_cheer":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_1ce343c6e117581e")), "set_playback_speed", var_55a37c48);
-        wait(2.033 / var_55a37c48);
+        wait 2.033 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4da666f21f604782", #"hash_4da665f21f6045cf", #"hash_4da664f21f60441c", #"hash_4da663f21f604269", #"hash_4da662f21f6040b6")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_seated":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4d9e626e573c7720")), "set_playback_speed", var_55a37c48);
-        wait(3.8333 / var_55a37c48);
+        wait 3.8333 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_73397fae2c5e2e65", #"hash_73397cae2c5e294c", #"hash_73397dae2c5e2aff", #"hash_73397aae2c5e25e6", #"hash_73397bae2c5e2799", #"hash_733978ae2c5e2280")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_neutral":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4cff3d99c8e94c1")), "set_playback_speed", var_55a37c48);
-        wait(5 / var_55a37c48);
+        wait 5 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_146c97641992ac6c", #"hash_146c9a641992b185", #"hash_146c99641992afd2", #"hash_146c94641992a753")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_cheer":
@@ -790,22 +790,22 @@ function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
         break;
     case #"neutral_to_seated":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6938770d4f4e8ff2")), "set_playback_speed", var_55a37c48);
-        wait(3.9 / var_55a37c48);
+        wait 3.9 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_73397fae2c5e2e65", #"hash_73397cae2c5e294c", #"hash_73397dae2c5e2aff", #"hash_73397aae2c5e25e6", #"hash_73397bae2c5e2799", #"hash_733978ae2c5e2280")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_angry":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_130c0f8d88ebfed1")), "set_playback_speed", var_55a37c48);
-        wait(5 / var_55a37c48);
+        wait 5 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_5596d5887d732c0e", #"hash_5596d4887d732a5b", #"hash_5596d3887d7328a8", #"hash_5596da887d73348d", #"hash_5596d9887d7332da")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_cheer":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6c2063a701bdda05")), "set_playback_speed", var_55a37c48);
-        wait(3.333 / var_55a37c48);
+        wait 3.333 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4da666f21f604782", #"hash_4da665f21f6045cf", #"hash_4da664f21f60441c", #"hash_4da663f21f604269", #"hash_4da662f21f6040b6")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_seated":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_72e771137a0c1fb4")), "set_playback_speed", var_55a37c48);
-        wait(2.7 / var_55a37c48);
+        wait 2.7 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_73397fae2c5e2e65", #"hash_73397cae2c5e294c", #"hash_73397dae2c5e2aff", #"hash_73397aae2c5e25e6", #"hash_73397bae2c5e2799", #"hash_733978ae2c5e2280")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_angry":
@@ -813,7 +813,7 @@ function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
         break;
     case #"cheer_to_neutral":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_4573975901365b65")), "set_playback_speed", var_55a37c48);
-        wait(5 / var_55a37c48);
+        wait 5 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_146c97641992ac6c", #"hash_146c9a641992b185", #"hash_146c99641992afd2", #"hash_146c94641992a753")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated":
@@ -842,27 +842,27 @@ function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_2e2971c6c8f10114")), "set_playback_speed", var_55a37c48);
-        wait(2.7);
+        wait 2.7;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6b167472b1814bb2")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_neutral":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_12629d4e935c4656")), "set_playback_speed", var_55a37c48);
-        wait(2.7 / var_55a37c48);
+        wait 2.7 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_69dc776360ba1330")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated_to_cheer":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_2da56ff9700d9164")), "set_playback_speed", var_55a37c48);
-        wait(2.7 / var_55a37c48);
+        wait 2.7 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_43f1a9a1879ea5d6")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_seated":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6c024bd52bb7e766")), "set_playback_speed", var_55a37c48);
-        wait(5 / var_55a37c48);
+        wait 5 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_f31fa5dc0acf5f")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_neutral":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_baf5290a3576eed")), "set_playback_speed", var_55a37c48);
-        wait(8.333 / var_55a37c48);
+        wait 8.333 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_69dc776360ba1330")), "set_playback_speed", var_55a37c48);
         break;
     case #"angry_to_cheer":
@@ -870,22 +870,22 @@ function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
         break;
     case #"neutral_to_seated":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_3e5b404caf7e8b58")), "set_playback_speed", var_55a37c48);
-        wait(5 / var_55a37c48);
+        wait 5 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_f31fa5dc0acf5f")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_angry":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_196682111694d8f1")), "set_playback_speed", var_55a37c48);
-        wait(8.333 / var_55a37c48);
+        wait 8.333 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6b167472b1814bb2")), "set_playback_speed", var_55a37c48);
         break;
     case #"neutral_to_cheer":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6afc936043f3a9f9")), "set_playback_speed", var_55a37c48);
-        wait(8.333 / var_55a37c48);
+        wait 8.333 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_43f1a9a1879ea5d6")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_seated":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_6f45d5578dd7000a")), "set_playback_speed", var_55a37c48);
-        wait(5 / var_55a37c48);
+        wait 5 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_f31fa5dc0acf5f")), "set_playback_speed", var_55a37c48);
         break;
     case #"cheer_to_angry":
@@ -893,7 +893,7 @@ function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
         break;
     case #"cheer_to_neutral":
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_556eddf8af2677b1")), "set_playback_speed", var_55a37c48);
-        wait(6.666 / var_55a37c48);
+        wait 6.666 / var_55a37c48;
         smodelanimcmd(str_group, "unpause", "set_anim", array::random(array(#"hash_69dc776360ba1330")), "set_playback_speed", var_55a37c48);
         break;
     case #"seated":
@@ -917,7 +917,7 @@ function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
 // Size: 0x34
 function function_1bb8e9c4() {
     if (math::cointoss()) {
-        wait(randomfloatrange(0.15, 0.5));
+        wait randomfloatrange(0.15, 0.5);
     }
 }
 
@@ -945,7 +945,7 @@ function _crowd_react_wave() {
     level endon(#"hash_53c191bb10cd9670");
     for (var_1cc68a25 = 0; true; var_1cc68a25 = 0) {
         level thread function_1e3bd96a(array("siege_crowd_stand_a_grp27", "siege_crowd_stand_b_grp27", "siege_crowd_stand_c_grp27", "siege_crowd_stand_d_grp27")[var_1cc68a25], "seated_to_cheer", 2);
-        wait(2);
+        wait 2;
         level thread function_1e3bd96a(array("siege_crowd_stand_a_grp27", "siege_crowd_stand_b_grp27", "siege_crowd_stand_c_grp27", "siege_crowd_stand_d_grp27")[var_1cc68a25], "cheer_to_seated", 2);
         var_1cc68a25++;
         if (var_1cc68a25 > array("siege_crowd_stand_a_grp27", "siege_crowd_stand_b_grp27", "siege_crowd_stand_c_grp27", "siege_crowd_stand_d_grp27").size - 1) {
@@ -1053,7 +1053,7 @@ function function_9ed12c12(localclientnum, str_alias) {
     foreach (s_struct in a_structs) {
         if (isdefined(s_struct.script_int) && s_struct.script_int) {
             playsound(localclientnum, str_alias, s_struct.origin);
-            wait(randomfloatrange(0.15, 0.5));
+            wait randomfloatrange(0.15, 0.5);
         }
     }
 }
@@ -1071,13 +1071,13 @@ function function_cdc077de(localclientnum) {
     foreach (s_struct in a_structs) {
         if (isdefined(s_struct.script_int) && s_struct.script_int) {
             playsound(localclientnum, #"hash_7ef570749fdb2ff2" + n_int, s_struct.origin);
-            wait(randomfloatrange(0.15, 0.5));
+            wait randomfloatrange(0.15, 0.5);
             n_int++;
         }
     }
     level notify(#"hash_18e33e7f341865b5");
     level notify(#"hash_61e23ff49a338bcf");
-    wait(3);
+    wait 3;
     if (zm_utility::is_standard() || zm_utility::is_trials()) {
         return;
     }
@@ -1147,7 +1147,7 @@ function function_ba9941c(localclientnum, newval) {
             playsound(localclientnum, "mus_crowd_" + var_1f2066a + "_special_start", s_struct.origin);
             waitframe(1);
         }
-        wait(6.3);
+        wait 6.3;
         foreach (s_struct in a_structs) {
             var_1f2066a = s_struct.script_string;
             audio::playloopat("mus_crowd_" + var_1f2066a + "_special_loop", s_struct.origin);
@@ -1188,13 +1188,13 @@ function function_ba9941c(localclientnum, newval) {
 function function_f68a332e(localclientnum, var_12ae4a7b) {
     a_structs = struct::get_array("mus_crowd_bossbattle", "targetname");
     if (var_12ae4a7b) {
-        wait(4);
+        wait 4;
         foreach (s_struct in a_structs) {
             var_1f2066a = s_struct.script_string;
             playsound(localclientnum, "mus_crowd_" + var_1f2066a + "_boss_start", s_struct.origin);
             waitframe(1);
         }
-        wait(4.8);
+        wait 4.8;
         foreach (s_struct in a_structs) {
             var_1f2066a = s_struct.script_string;
             audio::playloopat("mus_crowd_" + var_1f2066a + "_boss_loop", s_struct.origin);
@@ -1207,7 +1207,7 @@ function function_f68a332e(localclientnum, var_12ae4a7b) {
         playsound(localclientnum, "mus_crowd_" + var_1f2066a + "_boss_end", s_struct.origin);
         waitframe(1);
     }
-    wait(1);
+    wait 1;
     foreach (s_struct in a_structs) {
         var_1f2066a = s_struct.script_string;
         audio::stoploopat("mus_crowd_" + var_1f2066a + "_boss_loop", s_struct.origin);
@@ -1561,7 +1561,7 @@ function function_ee4f01d8(localclientnum, oldval, newval, bnewent, binitialsnap
     foreach (s_crowd in a_s_crowd) {
         playsound(localclientnum, #"hash_4857544e0712e0cc", s_crowd.origin);
         n_random_wait = randomfloatrange(0.15, 0.5);
-        wait(n_random_wait);
+        wait n_random_wait;
     }
 }
 
@@ -2173,7 +2173,7 @@ function function_4c2b87ed(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x13363984, Offset: 0xcc40
 // Size: 0x164
 function startzmbspawnersoundloops() {
-    wait(2);
+    wait 2;
     loopers = struct::get_array("spawn_location", "script_noteworthy");
     if (isdefined(loopers) && loopers.size > 0) {
         delay = 0;

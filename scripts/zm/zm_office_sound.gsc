@@ -45,7 +45,7 @@ function function_f71796ca() {
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition(str_alias, self.origin);
         level notify(#"hash_66f9802695ce6503", {#var_6831e121:self.script_int});
-        wait(n_wait);
+        wait n_wait;
     }
 }
 
@@ -56,7 +56,7 @@ function function_f71796ca() {
 function function_e856acd2() {
     level endon(#"hash_2bfc849b35affc0c", #"end_game");
     while (true) {
-        wait(randomintrange(20, 60));
+        wait randomintrange(20, 60);
         playsoundatposition(#"hash_2c5321deab41da10", self.origin);
     }
 }
@@ -78,7 +78,7 @@ function function_bc327ddf() {
                 foreach (struct in a_structs) {
                     zm_unitrigger::unregister_unitrigger(struct.s_unitrigger);
                 }
-                wait(5);
+                wait 5;
                 level thread zm_audio::sndmusicsystem_stopandflush();
                 waitframe(1);
                 level thread zm_audio::sndmusicsystem_playstate("ee_song_2");

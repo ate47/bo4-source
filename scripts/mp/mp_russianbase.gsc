@@ -65,7 +65,7 @@ function init_train() {
         if (math::cointoss()) {
             level scene::play(#"hash_520d4c0a17bb9b12");
         }
-        wait(randomintrange(100, 130));
+        wait randomintrange(100, 130);
     }
 }
 
@@ -181,11 +181,11 @@ function function_80c5243b(e_activator) {
     array::thread_all(crane.buttons, &gameobjects::disable_object);
     crane moveto(destination, 4);
     crane playsound("evt_gantry_start");
-    wait(3.35);
+    wait 3.35;
     if (b_kill) {
         crane.kill_trig.var_2563dc55 = 1;
     }
-    wait(0.65);
+    wait 0.65;
     crane.veh_kill.do_kill = 0;
     crane.kill_trig.var_2563dc55 = 0;
     crane function_e0954c11();

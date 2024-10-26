@@ -147,7 +147,7 @@ function function_65509998(activator) {
             linktraversal(node);
         }
     }
-    wait(0);
+    wait 0;
     foreach (gameobject in gameobjects) {
         gameobject.e_object.origin = gameobject.origin;
         if (isdefined(gameobject.move_to) && move_to.script_noteworthy != gameobject.move_to.script_noteworthy) {

@@ -260,7 +260,7 @@ function soundrandom_thread(localclientnum, randsound) {
     randsound.playing = 1;
     level thread soundrandom_notifywait(notify_name, randsound);
     while (true) {
-        wait(randomfloatrange(randsound.script_wait_min, randsound.script_wait_max));
+        wait randomfloatrange(randsound.script_wait_min, randsound.script_wait_max);
         if (isdefined(randsound.script_sound) && isdefined(randsound.playing) && randsound.playing) {
             playsound(localclientnum, randsound.script_sound, randsound.origin);
         }
@@ -523,7 +523,7 @@ function function_a3010aae(ent, on_enter_payload, on_exit_payload) {
         [[ on_enter_payload ]](ent);
     }
     while (isdefined(ent) && isdefined(self) && ent istouching(self)) {
-        wait(wait_time);
+        wait wait_time;
     }
     if (isdefined(ent)) {
         if (isdefined(on_exit_payload)) {
@@ -716,7 +716,7 @@ function mantle_wait(alias, localclientnum) {
 // Checksum 0x2f435f25, Offset: 0x2ad0
 // Size: 0x28
 function trig_leave_bump(ent) {
-    wait(1);
+    wait 1;
     ent notify(#"left_mantle");
 }
 
@@ -853,14 +853,14 @@ function move_sound_along_line() {
         }
         closest_dist = distancesquared(getlocalclientpos(0), self.origin);
         if (closest_dist > 1048576) {
-            wait(2);
+            wait 2;
             continue;
         }
         if (closest_dist > 262144) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
-        wait(0.05);
+        wait 0.05;
     }
 }
 
@@ -886,7 +886,7 @@ function stoploopat(aliasname, origin) {
 // Size: 0x34
 function soundwait(id) {
     while (soundplaying(id)) {
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -999,7 +999,7 @@ function soundplayuidecodeloop(decodestring, playtimems) {
         fake_ent = spawn(0, (0, 0, 0), "script_origin");
         if (isdefined(fake_ent)) {
             fake_ent playloopsound(#"uin_notify_data_loop");
-            wait(float(playtimems) / 1000);
+            wait float(playtimems) / 1000;
             fake_ent stopallloopsounds(0);
         }
         level.playinguidecodeloop = undefined;
@@ -1150,7 +1150,7 @@ function weapon_butt_sounds(localclientnum, oldval, newval, bnewent, binitialsna
 // Checksum 0x557243ba, Offset: 0x3e28
 // Size: 0x2c
 function set_sound_context_defaults() {
-    wait(2);
+    wait 2;
     setsoundcontext("foley", "normal");
 }
 
@@ -1397,7 +1397,7 @@ function sndsprintbreath(localclientnum) {
                     }
                 }
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -1425,7 +1425,7 @@ function function_d6bc7279(sound) {
     self.var_29054134 = 1;
     while (true) {
         self playsound(0, sound);
-        wait(2.5);
+        wait 2.5;
     }
 }
 
@@ -1463,13 +1463,13 @@ function function_bd07593a() {
         if (self util::is_on_side(#"allies")) {
             if (self isplayersprinting()) {
                 self playsound(0, #"hash_2dc9c76844261d06");
-                wait(1);
+                wait 1;
             } else {
                 self playsound(0, #"hash_70b507d0e243536d");
-                wait(2.5);
+                wait 2.5;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1493,7 +1493,7 @@ function function_350920b9() {
     if (!isdefined(self.var_5730fa36)) {
         self.var_5730fa36 = self playloopsound(#"hash_7a6b427867364957");
     }
-    wait(2);
+    wait 2;
     if (isdefined(self.var_5730fa36)) {
         self stoploopsound(self.var_5730fa36);
         self.var_5730fa36 = undefined;

@@ -218,7 +218,7 @@ function function_3353845b(localclientnum) {
         return;
     }
     while (true) {
-        wait(n_waittime);
+        wait n_waittime;
         if (n_chance >= randomint(100)) {
             if (self.var_655d9e4b === 0 || gettime() - var_d82f94cd >= self.var_655d9e4b) {
                 self playsound(localclientnum, self.var_e95193b8[randomintrangeinclusive(0, 2)][self.var_25e6f383]);
@@ -613,7 +613,7 @@ function setup_personality_character_exerts() {
 // Size: 0x11c
 function function_b7fc06b2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     function_17e1650c(4);
-    wait(25);
+    wait 25;
     var_17623425 = 4;
     n_time = 0;
     var_1713b028 = (4 - 1) / (45 - 25) / 1;
@@ -621,7 +621,7 @@ function function_b7fc06b2(localclientnum, oldval, newval, bnewent, binitialsnap
         n_time += 1;
         var_17623425 -= var_1713b028;
         function_17e1650c(var_17623425);
-        wait(1);
+        wait 1;
     }
     function_17e1650c(1);
 }

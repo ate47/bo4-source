@@ -133,7 +133,7 @@ function watch_for_dud(actor) {
     self.mdl_monkey.dud = 1;
     self playsound(#"zmb_vox_monkey_scream");
     self.monk_scream_vox = 1;
-    wait(3);
+    wait 3;
     if (isdefined(self.mdl_monkey)) {
         self.mdl_monkey delete();
     }
@@ -167,12 +167,12 @@ function watch_for_emp(actor) {
     if (isdefined(level._equipment_emp_destroy_fx)) {
         playfx(level._equipment_emp_destroy_fx, self.origin + (0, 0, 5), (0, randomfloat(360), 0));
     }
-    wait(0.15);
+    wait 0.15;
     self.attract_to_origin = 0;
     self zm_utility::deactivate_zombie_point_of_interest();
-    wait(1);
+    wait 1;
     self detonate();
-    wait(1);
+    wait 1;
     if (isdefined(self.mdl_monkey)) {
         self.mdl_monkey delete();
     }
@@ -268,7 +268,7 @@ function hide_owner(owner) {
 // Checksum 0xd1334175, Offset: 0xe10
 // Size: 0x27c
 function proximity_detonate(owner) {
-    wait(1.5);
+    wait 1.5;
     if (!isdefined(self)) {
         return;
     }
@@ -355,7 +355,7 @@ function player_throw_cymbal_monkey(e_grenade, num_attractors, max_attract_dist,
             playfxontag(level._effect[#"monkey_glow"], e_grenade.mdl_monkey, "tag_weapon");
             valid_poi = e_grenade is_on_navmesh(self);
             if (valid_poi && isdefined(e_grenade.var_45eaa114) && e_grenade.var_45eaa114) {
-                wait(0.1);
+                wait 0.1;
                 e_grenade zm_utility::create_zombie_point_of_interest(max_attract_dist, num_attractors, 10000);
                 valid_poi = e_grenade zm_utility::create_zombie_point_of_interest_attractor_positions(attract_dist_diff, undefined, level.valid_poi_max_radius, 1);
                 if (valid_poi) {
@@ -461,7 +461,7 @@ function monkey_cleanup(e_grenade) {
     while (true) {
         if (!isdefined(e_grenade)) {
             if (isdefined(self.dud) && self.dud) {
-                wait(6);
+                wait 6;
             }
             if (isdefined(self.simulacrum)) {
                 self.simulacrum delete();
@@ -533,7 +533,7 @@ function function_875fd1df() {
 // Checksum 0x39a5b6a5, Offset: 0x1f10
 // Size: 0x34
 function play_delayed_explode_vox() {
-    wait(6.5);
+    wait 6.5;
     if (isdefined(self)) {
         self playsound(#"zmb_vox_monkey_explode");
     }
@@ -601,7 +601,7 @@ function play_zombie_groans() {
     while (true) {
         if (isdefined(self)) {
             self playsound(#"zmb_vox_zombie_groan");
-            wait(randomfloatrange(2, 3));
+            wait randomfloatrange(2, 3);
             continue;
         }
         return;

@@ -92,7 +92,7 @@ function function_40e83b36(n_spread) {
 function function_845f2546() {
     self endon(#"death");
     self.titusmarked = 1;
-    wait(1);
+    wait 1;
     self.titusmarked = undefined;
 }
 
@@ -104,13 +104,13 @@ function function_9ef27f88(n_fuse_timer, attacker, weapon) {
     self endon(#"death", #"titus_target_timeout");
     self thread titus_target_timeout(n_fuse_timer);
     if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"boss") {
-        wait(n_fuse_timer);
+        wait n_fuse_timer;
         self.var_c541eedd = undefined;
         return;
     }
     self thread function_8882e03(attacker);
     self ai::stun(n_fuse_timer);
-    wait(n_fuse_timer);
+    wait n_fuse_timer;
     self notify(#"hash_1c822785c3e778b5", {#attacker:attacker});
     self dodamage(self.health + 1000, self.origin, attacker, attacker, "none", "MOD_GRENADE", 0, weapon);
 }
@@ -142,7 +142,7 @@ function function_2b03f05f() {
 // Size: 0x36
 function titus_target_timeout(n_fuse_timer) {
     self endon(#"death");
-    wait(n_fuse_timer);
+    wait n_fuse_timer;
     self notify(#"titus_target_timeout");
 }
 
@@ -290,7 +290,7 @@ function private function_d72c4a61() {
             util::wait_network_frame();
             function_d82e684c(1);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -719,7 +719,7 @@ function private function_b1abe6ab(t_damage, weapon) {
     while (isdefined(t_damage) && self istouching(t_damage)) {
         self dodamage(1, t_damage.origin, undefined, undefined, "torso_lower", "MOD_BURNED", 0, weapon);
         self playrumbleonentity("damage_light");
-        wait(0.4);
+        wait 0.4;
     }
     self.var_bfe9b833 = undefined;
 }
@@ -771,7 +771,7 @@ function function_b826901d(eattacker, var_223fc6f5, weapon) {
 // Size: 0x254
 function private function_dc3470c5(shitloc, vpoint, eattacker, weapon) {
     self endon(#"death");
-    wait(0.5);
+    wait 0.5;
     if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"boss") {
         self thread function_ba9e077b(eattacker, vpoint, 100, weapon);
         self thread function_78f754f7(eattacker, weapon);
@@ -814,7 +814,7 @@ function private function_78f754f7(eattacker, weapon) {
         } else {
             self dodamage(n_dmg, self.origin, undefined, undefined, undefined, "MOD_BURNED", 0, weapon);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -927,7 +927,7 @@ function private function_faa2e2e5(eattacker, weapon) {
         } else {
             self dodamage(n_dmg, self.origin, undefined, undefined, undefined, "MOD_BURNED", 0, weapon);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -960,7 +960,7 @@ function private function_7f95d262(eattacker, weapon) {
     n_start_time = gettime();
     for (n_total_time = 0; n_total_time < 4; n_total_time = (n_current_time - n_start_time) / 1000) {
         self thread namespace_9ff9f642::slowdown(#"hash_716657b9842cfd1b");
-        wait(1);
+        wait 1;
         n_current_time = gettime();
     }
     self dodamage(self.health + 100, self getcentroid(), eattacker, eattacker, "torso_lower", "MOD_BURNED", 0, weapon);
@@ -1165,7 +1165,7 @@ function function_b1347a6() {
             if (isdefined(var_13202c94.worldgun)) {
                 var_13202c94.worldgun delete();
             }
-            wait(0.5);
+            wait 0.5;
             e_player.is_pack_splatting = undefined;
             e_player.var_393e2617 = undefined;
             level flag::clear(#"hash_634424410f574c1c");
@@ -1180,7 +1180,7 @@ function function_b1347a6() {
 // Size: 0x9c
 function wait_for_timeout(var_607f49de) {
     self endon(#"disconnect", #"acid_taken", #"player_obtained_acidgat");
-    wait(15);
+    wait 15;
     level flag::clear(#"hash_634424410f574c1c");
     if (isdefined(self)) {
         self.is_pack_splatting = undefined;
@@ -1197,10 +1197,10 @@ function wait_for_timeout(var_607f49de) {
 // Size: 0x20c
 function blundergat_upgrade_station_inject(var_f2528cbc, e_player) {
     level flag::set(#"hash_72c4671390c83158");
-    wait(0.5);
+    wait 0.5;
     self playsound(#"zmb_acidgat_upgrade_machine");
     self thread scene::init(#"p8_fxanim_zm_esc_packasplat_bundle", self);
-    wait(5);
+    wait 5;
     if (isdefined(self.worldgun)) {
         self.worldgun delete();
     }
@@ -1210,7 +1210,7 @@ function blundergat_upgrade_station_inject(var_f2528cbc, e_player) {
         self.worldgun = zm_utility::spawn_weapon_model(getweapon(#"ww_blundergat_acid_t8_upgraded"), undefined, self.v_weapon_origin, self.v_weapon_angles);
     }
     self thread scene::play(#"p8_fxanim_zm_esc_packasplat_bundle", self);
-    wait(1);
+    wait 1;
     level flag::clear(#"hash_72c4671390c83158");
     level flag::set(#"hash_634424410f574c1c");
     if (isdefined(e_player)) {

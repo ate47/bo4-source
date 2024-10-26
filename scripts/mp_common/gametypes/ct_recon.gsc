@@ -247,7 +247,7 @@ function j_fore_le_01() {
 // Size: 0x192
 function function_98783e17() {
     level flag::wait_till("combat_training_started");
-    wait(1);
+    wait 1;
     var_1411e20e = getplayers(#"axis");
     foreach (bot in var_1411e20e) {
         bot clientfield::set("set_vip", 1);
@@ -326,7 +326,7 @@ function function_eb0c2a6a(n_delay) {
     if (var_70ff5c3a >= 17) {
         return;
     }
-    wait(n_delay);
+    wait n_delay;
     level thread function_cf02ad5c();
     entities = bot::get_bots();
     foreach (entity in entities) {
@@ -346,7 +346,7 @@ function function_cf02ad5c() {
     e_player = getplayers(#"allies")[0];
     e_player endon(#"death");
     level.ct_recon_enemy_reinforcement ct_recon_enemy_reinforcement::open(e_player);
-    wait(3);
+    wait 3;
     level.ct_recon_enemy_reinforcement ct_recon_enemy_reinforcement::close(e_player);
 }
 

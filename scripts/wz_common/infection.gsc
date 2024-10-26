@@ -135,7 +135,7 @@ function on_player_spawned() {
             self freezecontrolsallowlook(1);
             self ghost();
             self thread function_cc4a1b88();
-            wait(0.5);
+            wait 0.5;
             if (!isdefined(self)) {
                 return;
             }
@@ -389,7 +389,7 @@ function private function_cabd9ff3(eventstruct) {
     function private function_cdd9b388() {
         while (true) {
             if (getdvarint(#"wz_respawn_points", 0)) {
-                wait(1);
+                wait 1;
             } else {
                 waitframe(1);
             }

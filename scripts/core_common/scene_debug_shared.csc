@@ -226,7 +226,7 @@
         while (true) {
             if (held) {
                 scene_list_settext(names, selected, str_title, 30);
-                wait(0.5);
+                wait 0.5;
             } else {
                 scene_list_settext(names, selected, str_title, 1);
             }
@@ -440,7 +440,7 @@
                 setdvar(#"scr_show_shot_info_for_igcs", 1);
                 setdvar(#"cg_drawfps", 0);
                 adddebugcommand(0, "<dev string:x208>");
-                wait(1);
+                wait 1;
             }
         #/
     }
@@ -521,7 +521,7 @@
                     self.debug_display = 0;
                     break;
                 }
-                wait(debug_time);
+                wait debug_time;
             }
         }
     }

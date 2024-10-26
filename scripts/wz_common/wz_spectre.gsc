@@ -79,7 +79,7 @@ function private function_f82142f8(isspectre) {
     role = self player_role::get();
     if (isspectre) {
         if (role != 57) {
-            wait(0.5);
+            wait 0.5;
             self.var_fcb62e3f = role;
             self player_role::set(57);
             self setcharacteroutfit(0);
@@ -94,7 +94,7 @@ function private function_f82142f8(isspectre) {
             self function_ab96a9b5("decal", 0);
         }
     } else if (role == 57) {
-        wait(0.5);
+        wait 0.5;
         self function_9299d039();
     }
     self clientfield::set_player_uimodel("hudItems.isSpectre", isspectre);

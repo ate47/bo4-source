@@ -175,7 +175,7 @@ function complete_hacking_object(obj) {
 function watch_timeout(obj, time) {
     obj notify(#"hackable_watch_timeout");
     obj endon(#"hackable_watch_timeout");
-    wait(time);
+    wait time;
     if (isdefined(obj)) {
         fail_hacking_object(obj);
     }

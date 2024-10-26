@@ -169,7 +169,7 @@ function waittill_string(msg, ent) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x20
+// Params 1, eflags: 0x20 variadic
 // Checksum 0xdced80e1, Offset: 0x868
 // Size: 0x9c
 function waittill_multiple(...) {
@@ -193,7 +193,7 @@ function waittill_either(msg1, msg2) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x20
+// Params 1, eflags: 0x20 variadic
 // Checksum 0xcc5573d9, Offset: 0x948
 // Size: 0x1c4
 function waittill_multiple_ents(...) {
@@ -313,7 +313,7 @@ function waittill_any_ents_two(ent1, string1, ent2, string2) {
 }
 
 // Namespace util/util_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0x844e9b0f, Offset: 0xf00
 // Size: 0x3a
 function single_func(entity, func, ...) {
@@ -546,7 +546,7 @@ function _delay(time_or_notify, str_endon, func, arg1, arg2, arg3, arg4, arg5, a
     if (ishash(time_or_notify) || isstring(time_or_notify)) {
         self waittill(time_or_notify);
     } else {
-        wait(time_or_notify);
+        wait time_or_notify;
     }
     single_func(self, func, arg1, arg2, arg3, arg4, arg5, arg6);
 }
@@ -571,7 +571,7 @@ function _delay_notify(time_or_notify, str_notify, str_endon) {
     if (ishash(time_or_notify) || isstring(time_or_notify)) {
         self waittill(time_or_notify);
     } else {
-        wait(time_or_notify);
+        wait time_or_notify;
     }
     self notify(str_notify);
 }
@@ -640,7 +640,7 @@ function timer_wait(n_wait) {
     if (isdefined(self.n_length)) {
         n_wait = min(n_wait, get_time_left());
     }
-    wait(n_wait);
+    wait n_wait;
     n_current_time = get_time_in_seconds();
     return n_current_time;
 }
@@ -857,13 +857,13 @@ function server_wait(localclientnum, seconds, waitbetweenchecks, level_endon) {
         endtime = starttime + int(seconds * 1000);
         while (getservertime(0) < endtime && getservertime(0) >= lasttime) {
             lasttime = getservertime(0);
-            wait(waitbetweenchecks);
+            wait waitbetweenchecks;
         }
         if (lasttime < getservertime(0)) {
             waitcompletedsuccessfully = 1;
         }
     } else {
-        wait(seconds);
+        wait seconds;
         waitcompletedsuccessfully = 1;
     }
     return waitcompletedsuccessfully;
@@ -1513,7 +1513,7 @@ function function_16fb0a3b() {
 }
 
 // Namespace util/util_shared
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0x3d618388, Offset: 0x42b8
 // Size: 0x17c
 function lerp_generic(localclientnum, duration, callback, ...) {
@@ -1777,7 +1777,7 @@ function is_arena_lobby() {
 function script_wait() {
     n_time = gettime();
     if (isdefined(self.script_wait)) {
-        wait(self.script_wait);
+        wait self.script_wait;
         if (isdefined(self.script_wait_add)) {
             self.script_wait += self.script_wait_add;
         }
@@ -1785,11 +1785,11 @@ function script_wait() {
     n_min = isdefined(self.script_wait_min) ? self.script_wait_min : 0;
     n_max = isdefined(self.script_wait_max) ? self.script_wait_max : 0;
     if (n_max > n_min) {
-        wait(randomfloatrange(n_min, n_max));
+        wait randomfloatrange(n_min, n_max);
         self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
         self.script_wait_max += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     } else if (n_min > 0) {
-        wait(n_min);
+        wait n_min;
         self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     }
     return gettime() - n_time;

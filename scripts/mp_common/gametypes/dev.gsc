@@ -98,7 +98,7 @@ function init() {
         }
         for (;;) {
             updatedevsettings();
-            wait(0.5);
+            wait 0.5;
         }
     #/
 }
@@ -110,7 +110,7 @@ function init() {
 function on_player_connected() {
     /#
         if (isdefined(level.devgui_unlimited_ammo) && level.devgui_unlimited_ammo) {
-            wait(1);
+            wait 1;
             self thread devgui_unlimited_ammo();
         }
     #/
@@ -157,7 +157,7 @@ function on_player_connected() {
                     println("<dev string:xcd>");
                     continue;
                 }
-                wait(1);
+                wait 1;
                 if (isbot(ent)) {
                     ent killstreaks::give(keys[i]);
                 } else {
@@ -321,7 +321,7 @@ function on_player_connected() {
                 }
                 level.players[0] setplayerangles(averageangles);
                 level.players[0] setorigin(averageorigin);
-                wait(5);
+                wait 5;
                 setdvar(#"r_streamdumpdistance", 2);
             }
         }
@@ -603,7 +603,7 @@ function on_player_connected() {
                     }
                     level.players[0] setplayerangles(averageangles);
                     level.players[0] setorigin(averageorigin);
-                    wait(5);
+                    wait 5;
                     setdvar(#"r_streamdumpdistance", 2);
                 }
             }
@@ -945,7 +945,7 @@ function on_player_connected() {
         self endon(#"devgui_unlimited_ammo");
         self endon(#"disconnect");
         for (;;) {
-            wait(1);
+            wait 1;
             primary_weapons = self getweaponslistprimaries();
             offhand_weapons_and_alts = array::exclude(self getweaponslist(1), primary_weapons);
             weapons = arraycombine(primary_weapons, offhand_weapons_and_alts, 0, 0);
@@ -977,7 +977,7 @@ function on_player_connected() {
         level notify(#"devgui_unlimited_momentum");
         level endon(#"devgui_unlimited_momentum");
         for (;;) {
-            wait(1);
+            wait 1;
             players = getplayers();
             foreach (player in players) {
                 if (!isdefined(player)) {
@@ -1111,7 +1111,7 @@ function on_player_connected() {
     // Checksum 0xac8bfb5, Offset: 0x5208
     // Size: 0x24
     function testscriptruntimeerrorassert() {
-        wait(1);
+        wait 1;
         assert(0);
     }
 
@@ -1120,7 +1120,7 @@ function on_player_connected() {
     // Checksum 0xffc9024f, Offset: 0x5238
     // Size: 0x2c
     function testscriptruntimeassertmsgassert() {
-        wait(1);
+        wait 1;
         assertmsg("<dev string:x582>");
     }
 
@@ -1129,7 +1129,7 @@ function on_player_connected() {
     // Checksum 0x6727ef9, Offset: 0x5270
     // Size: 0x2c
     function testscriptruntimeerrormsgassert() {
-        wait(1);
+        wait 1;
         errormsg("<dev string:x59b>");
     }
 
@@ -1157,12 +1157,12 @@ function on_player_connected() {
     // Checksum 0x4f5bd2d9, Offset: 0x5320
     // Size: 0x12c
     function testscriptruntimeerror() {
-        wait(5);
+        wait 5;
         for (;;) {
             if (getdvarstring(#"scr_testscriptruntimeerror") != "<dev string:x3b>") {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         myerror = getdvarstring(#"scr_testscriptruntimeerror");
         setdvar(#"scr_testscriptruntimeerror", "<dev string:x3b>");
@@ -1183,12 +1183,12 @@ function on_player_connected() {
     // Checksum 0x8c34d7c7, Offset: 0x5458
     // Size: 0x104
     function testdvars() {
-        wait(5);
+        wait 5;
         for (;;) {
             if (getdvarstring(#"scr_testdvar") != "<dev string:x38>") {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         tokens = strtok(getdvarstring(#"scr_testdvar"), "<dev string:x134>");
         dvarname = tokens[0];
@@ -1203,12 +1203,12 @@ function on_player_connected() {
     // Checksum 0x2f864775, Offset: 0x5568
     // Size: 0x234
     function addenemyheli() {
-        wait(5);
+        wait 5;
         for (;;) {
             if (getdvarint(#"scr_spawnenemyheli", 0) > 0) {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         enemyheli = getdvarint(#"scr_spawnenemyheli", 0);
         setdvar(#"scr_spawnenemyheli", 0);
@@ -1220,7 +1220,7 @@ function on_player_connected() {
         ent = getormakebot(team);
         if (!isdefined(ent)) {
             println("<dev string:xcd>");
-            wait(1);
+            wait 1;
             thread addenemyheli();
             return;
         }
@@ -1228,7 +1228,7 @@ function on_player_connected() {
         case 1:
             level.helilocation = ent.origin;
             ent thread helicopter::usekillstreakhelicopter("<dev string:x602>");
-            wait(0.5);
+            wait 0.5;
             ent notify(#"confirm_location", {#position:level.helilocation});
             break;
         case 2:
@@ -1252,7 +1252,7 @@ function on_player_connected() {
         ent = bot::add_bot(team);
         if (isdefined(ent)) {
             sound::play_on_players("<dev string:x617>");
-            wait(1);
+            wait 1;
         }
         return ent;
     }
@@ -1262,12 +1262,12 @@ function on_player_connected() {
     // Checksum 0x60e92e2b, Offset: 0x5888
     // Size: 0x25c
     function addtestcarepackage() {
-        wait(5);
+        wait 5;
         for (;;) {
             if (getdvarint(#"scr_givetestsupplydrop", 0) > 0) {
                 break;
             }
-            wait(1);
+            wait 1;
         }
         supplydrop = getdvarint(#"scr_givetestsupplydrop", 0);
         team = "<dev string:xc0>";
@@ -1287,7 +1287,7 @@ function on_player_connected() {
         ent = getormakebot(team);
         if (!isdefined(ent)) {
             println("<dev string:xcd>");
-            wait(1);
+            wait 1;
             thread addtestcarepackage();
             return;
         }
@@ -1340,7 +1340,7 @@ function on_player_connected() {
                 level notify(#"kill_all_engage_dist_debug");
                 laststate = currentstate;
             }
-            wait(0.3);
+            wait 0.3;
         }
     }
 
@@ -1697,7 +1697,7 @@ function on_player_connected() {
         larry.model = spawn("<dev string:x909>", (0, 0, 0));
         larry.model setmodel(#"defaultactor");
         larry.ai = [];
-        wait(0.1);
+        wait 0.1;
         for (;;) {
             waitframe(1);
             if (larry.ai.size > 0) {
@@ -1932,7 +1932,7 @@ function on_player_connected() {
         /#
             self notify(#"print_weapon_name");
             self endon(#"print_weapon_name");
-            wait(0.2);
+            wait 0.2;
             if (self isswitchingweapons()) {
                 waitresult = self waittill(#"weapon_change_complete");
                 fail_safe = 0;
@@ -2021,7 +2021,7 @@ function on_player_connected() {
         set_grenade_list();
         setdvar(#"scr_give_equipment", "<dev string:x38>");
         while (true) {
-            wait(0.5);
+            wait 0.5;
             devgui_int = getdvarint(#"scr_give_equipment", 0);
             if (devgui_int != 0) {
                 for (i = 0; i < level.players.size; i++) {
@@ -2042,7 +2042,7 @@ function on_player_connected() {
         set_grenade_list();
         setdvar(#"scr_give_grenade", "<dev string:x38>");
         while (true) {
-            wait(0.5);
+            wait 0.5;
             devgui_int = getdvarint(#"scr_give_grenade", 0);
             if (devgui_int != 0) {
                 for (i = 0; i < level.players.size; i++) {
@@ -2166,7 +2166,7 @@ function on_player_connected() {
                 waitframe(1);
                 continue;
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -2236,7 +2236,7 @@ function on_player_connected() {
             if (getdvarint(#"scr_devhelipathsdebugdraw", 0) == 0) {
                 level notify(endonmsg);
                 drawtime = maxdrawtime;
-                wait(1);
+                wait 1;
             }
             waitframe(1);
         }

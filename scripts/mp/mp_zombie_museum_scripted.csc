@@ -99,7 +99,7 @@ function exhibit_vo(localclientnum, oldval, newval, bnewent, binitialsnap, field
                 waitframe(1);
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

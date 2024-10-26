@@ -104,7 +104,7 @@ function wait_network_frame(n_count = 1) {
         }
         return;
     }
-    wait(0.1 * n_count);
+    wait 0.1 * n_count;
 }
 
 // Namespace util/util_shared
@@ -135,7 +135,7 @@ function clear_streamer_hint() {
 // Size: 0x44
 function wait_clear_streamer_hint(lifetime) {
     self endon(#"wait_clear_streamer_hint");
-    wait(lifetime);
+    wait lifetime;
     if (isdefined(self)) {
         self clear_streamer_hint();
     }
@@ -467,7 +467,7 @@ function waittill_level_string(msg, ent, otherent) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x20
+// Params 1, eflags: 0x20 variadic
 // Checksum 0x55aadb9b, Offset: 0x1ba8
 // Size: 0x9c
 function waittill_multiple(...) {
@@ -506,7 +506,7 @@ function break_glass(n_radius = 50) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x20
+// Params 1, eflags: 0x20 variadic
 // Checksum 0x36f0c65a, Offset: 0x1d40
 // Size: 0x1c4
 function waittill_multiple_ents(...) {
@@ -598,7 +598,7 @@ function waittill_level_any_timeout(n_timeout, otherent, string1, string2, strin
 // Size: 0x56
 function _timeout(delay) {
     self endon(#"die");
-    wait(delay);
+    wait delay;
     self notify(#"returned", {#msg:"timeout"});
 }
 
@@ -666,7 +666,7 @@ function isstunned() {
 }
 
 // Namespace util/util_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0x8837140, Offset: 0x2438
 // Size: 0x3a
 function single_func(entity, func, ...) {
@@ -796,7 +796,7 @@ function call_func(s_func) {
 }
 
 // Namespace util/util_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xbeab1519, Offset: 0x2be0
 // Size: 0x3c
 function single_thread(entity, func, ...) {
@@ -949,14 +949,14 @@ function script_delay() {
     n_time = gettime();
     self.var_653e059d = 1;
     if (isdefined(self.script_delay)) {
-        wait(self.script_delay);
+        wait self.script_delay;
     }
     n_min_delay = isdefined(self.script_delay_min) ? self.script_delay_min : 0;
     n_max_delay = isdefined(self.script_delay_max) ? self.script_delay_max : 0;
     if (n_max_delay > n_min_delay) {
-        wait(randomfloatrange(n_min_delay, n_max_delay));
+        wait randomfloatrange(n_min_delay, n_max_delay);
     } else if (n_min_delay > 0) {
-        wait(n_min_delay);
+        wait n_min_delay;
     }
     self.var_653e059d = undefined;
     return gettime() - n_time;
@@ -1266,7 +1266,7 @@ function _delay(time_or_notify, str_endon, func, arg1, arg2, arg3, arg4, arg5, a
     if (ishash(time_or_notify) || isstring(time_or_notify)) {
         self waittill(time_or_notify);
     } else {
-        wait(time_or_notify);
+        wait time_or_notify;
     }
     single_thread(self, func, arg1, arg2, arg3, arg4, arg5, arg6);
 }
@@ -1312,7 +1312,7 @@ function _delay_notify(time_or_notify, str_notify, str_endon, arg1) {
     if (ishash(time_or_notify) || isstring(time_or_notify)) {
         self waittill(time_or_notify);
     } else {
-        wait(time_or_notify);
+        wait time_or_notify;
     }
     self notify(str_notify, arg1);
 }
@@ -1563,7 +1563,7 @@ function wait_endon(waittime, endonstring, endonstring2, endonstring3, endonstri
     if (isdefined(endonstring4)) {
         self endon(endonstring4);
     }
-    wait(waittime);
+    wait waittime;
     return true;
 }
 
@@ -1651,7 +1651,7 @@ function timer_wait(n_wait) {
     if (isdefined(self.n_length)) {
         n_wait = min(n_wait, get_time_left());
     }
-    wait(n_wait);
+    wait n_wait;
     n_current_time = get_time_in_seconds();
     return n_current_time;
 }
@@ -1689,7 +1689,7 @@ function delete_on_death_or_notify(e_to_delete, str_notify, str_clientfield = un
     if (isdefined(e_to_delete)) {
         if (isdefined(str_clientfield)) {
             e_to_delete clientfield::set(str_clientfield, 0);
-            wait(0.1);
+            wait 0.1;
         }
         e_to_delete delete();
     }
@@ -1755,7 +1755,7 @@ function waittill_asset_loaded(str_type, str_name) {
 function script_wait() {
     n_time = gettime();
     if (isdefined(self.script_wait)) {
-        wait(self.script_wait);
+        wait self.script_wait;
         if (isdefined(self.script_wait_add)) {
             self.script_wait += self.script_wait_add;
         }
@@ -1763,11 +1763,11 @@ function script_wait() {
     n_min = isdefined(self.script_wait_min) ? self.script_wait_min : 0;
     n_max = isdefined(self.script_wait_max) ? self.script_wait_max : 0;
     if (n_max > n_min) {
-        wait(randomfloatrange(n_min, n_max));
+        wait randomfloatrange(n_min, n_max);
         self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
         self.script_wait_max += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     } else if (n_min > 0) {
-        wait(n_min);
+        wait n_min;
         self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     }
     return gettime() - n_time;
@@ -2389,7 +2389,7 @@ function waittillnotmoving() {
         return;
     }
     for (prevorigin = self.origin; true; prevorigin = self.origin) {
-        wait(0.15);
+        wait 0.15;
         if (self.origin == prevorigin) {
             break;
         }
@@ -2513,7 +2513,7 @@ function deleteaftertime(time) {
 // Size: 0x3c
 function deleteaftertimethread(time) {
     self endon(#"death");
-    wait(time);
+    wait time;
     self delete();
 }
 
@@ -2523,7 +2523,7 @@ function deleteaftertimethread(time) {
 // Size: 0x34
 function waitfortime(time = 0) {
     if (time > 0) {
-        wait(time);
+        wait time;
     }
 }
 
@@ -2537,7 +2537,7 @@ function waitfortimeandnetworkframe(time = 0) {
     elapsed_time = (gettime() - start_time_ms) * 0.001;
     remaining_time = time - elapsed_time;
     if (remaining_time > 0) {
-        wait(remaining_time);
+        wait remaining_time;
     }
 }
 
@@ -2809,7 +2809,7 @@ function auto_delete(n_mode = 1, n_min_time_alive = 0, n_dist_horizontal = 0, n_
     n_dist_horizontal_sq = n_dist_horizontal * n_dist_horizontal;
     while (true) {
         do {
-            wait(randomfloatrange(n_think_time - n_think_time / 3, n_think_time + n_think_time / 3));
+            wait randomfloatrange(n_think_time - n_think_time / 3, n_think_time + n_think_time / 3);
         } while (isdefined(self.birthtime) && float(gettime() - self.birthtime) / 1000 < n_min_time_alive);
         n_tests_passed = 0;
         foreach (player in level.players) {
@@ -3351,7 +3351,7 @@ function ground_position(v_start, n_max_dist = 5000, n_ground_offset = 0, e_igno
 // Checksum 0xd2c7ea75, Offset: 0xa380
 // Size: 0x2a
 function delayed_notify(str_notify, f_delay_seconds) {
-    wait(f_delay_seconds);
+    wait f_delay_seconds;
     if (isdefined(self)) {
         self notify(str_notify);
     }
@@ -3363,7 +3363,7 @@ function delayed_notify(str_notify, f_delay_seconds) {
 // Size: 0x6c
 function delayed_delete(f_delay_seconds) {
     assert(isentity(self));
-    wait(f_delay_seconds);
+    wait f_delay_seconds;
     if (isdefined(self) && isentity(self)) {
         self delete();
     }
@@ -4291,7 +4291,7 @@ function function_72cbea07(player, weapon) {
 function ghost_wait_show(wait_time = 0.1) {
     self endon(#"death");
     self ghost();
-    wait(wait_time);
+    wait wait_time;
     self show();
 }
 
@@ -4314,7 +4314,7 @@ function ghost_wait_show_to_player(player, wait_time = 0.1, self_endon_string1) 
     self ghost();
     self setinvisibletoall();
     self setvisibletoplayer(player);
-    wait(wait_time);
+    wait wait_time;
     if (!isdefined(self.abort_ghost_wait_show_to_player)) {
         self showtoplayer(player);
     }
@@ -4338,7 +4338,7 @@ function ghost_wait_show_to_others(player, wait_time = 0.1, self_endon_string1) 
     }
     self ghost();
     self setinvisibletoplayer(player);
-    wait(wait_time);
+    wait wait_time;
     if (!isdefined(self.abort_ghost_wait_show_to_others)) {
         self show();
         self setinvisibletoplayer(player);
@@ -4423,7 +4423,7 @@ function make_sentient() {
 // Size: 0x3c
 function function_f9af3d43(time) {
     self endon(#"death");
-    wait(time);
+    wait time;
     self delete();
 }
 
@@ -4683,7 +4683,7 @@ function function_22bf0a4a() {
 #namespace namespace_2e6206f9;
 
 // Namespace namespace_2e6206f9/util_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0x5d00a5e6, Offset: 0xded0
 // Size: 0x2dc
 function register_callback(str_kvp, func, ...) {
@@ -4815,7 +4815,7 @@ function callback(str_kvp) {
 }
 
 // Namespace namespace_2e6206f9/util_shared
-// Params 3, eflags: 0x20
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xe9a80f99, Offset: 0xe8a8
 // Size: 0xca
 function custom_callback(str_name, str_kvp, ...) {

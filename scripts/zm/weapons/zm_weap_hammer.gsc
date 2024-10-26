@@ -161,7 +161,7 @@ function private function_82466b73(weapon) {
 // Size: 0x274
 function private function_70dbf9d1(player) {
     player endon(#"weapon_change", #"disconnect", #"bled_out");
-    wait(0.5);
+    wait 0.5;
     player playsound(#"hash_334d4a903f12856f");
     v_start = player geteye();
     v_forward = player getweaponforwarddir();
@@ -200,7 +200,7 @@ function storm_think() {
     }
     self.e_storm clientfield::set("" + #"hammer_storm", 1);
     self thread function_fd8e3604();
-    wait(10);
+    wait 10;
     self.e_storm clientfield::set("" + #"hammer_storm", 0);
     util::wait_network_frame();
     self.e_storm delete();
@@ -464,7 +464,7 @@ function function_fd8e3604() {
     while (true) {
         a_e_targets = zm_hero_weapon::function_7c3681f7();
         array::thread_all(a_e_targets, &storm_check, self);
-        wait(0.05);
+        wait 0.05;
     }
 }
 
@@ -523,7 +523,7 @@ function function_97429d68() {
             bhtnactionstartevent(self, "electrocute");
         }
     }
-    wait(0.2);
+    wait 0.2;
     self ai::clear_stun();
     self clientfield::set("" + #"hero_hammer_stun", 0);
     self.var_c6aafbdb = 0;
@@ -577,11 +577,11 @@ function staff_lightning_ball_kill_zombies(e_attacker) {
             foreach (zombie in a_zombies) {
                 if (staff_lightning_is_target_valid(zombie)) {
                     e_attacker thread staff_lightning_arc_fx(self, zombie);
-                    wait(0.05);
+                    wait 0.05;
                 }
             }
         }
-        wait(0.05);
+        wait 0.05;
     }
 }
 
@@ -653,7 +653,7 @@ function staff_lightning_ball_damage_over_time(e_source, e_target, e_attacker) {
     while (isdefined(e_source) && isalive(e_target)) {
         e_target thread stun_zombie();
         w_attack = e_source.str_weapon;
-        wait(0.25);
+        wait 0.25;
         if (!isalive(e_target)) {
             break;
         }
@@ -730,7 +730,7 @@ function function_1ca3b529(e_attacker, n_amount, w_damage, str_mod) {
 function lightning_ball_wait(n_lifetime_after_move) {
     level endon(#"lightning_ball_created");
     self waittill(#"movedone");
-    wait(n_lifetime_after_move);
+    wait n_lifetime_after_move;
     return true;
 }
 

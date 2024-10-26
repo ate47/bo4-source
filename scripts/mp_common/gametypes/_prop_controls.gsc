@@ -927,7 +927,7 @@ function flashlockpropkey() {
     }
     newscale = self.lockpropkey.startfontscale + 0.75;
     self.lockpropkey.fontscale = newscale;
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self.lockpropkey)) {
         self.lockpropkey.fontscale = self.lockpropkey.startfontscale;
     }

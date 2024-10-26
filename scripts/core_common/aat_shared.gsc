@@ -112,7 +112,7 @@ function private function_33f0ddd3(s_event) {
                 }
             }
             setdvar(#"aat_acquire_devgui", "<dev string:x38>");
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -142,7 +142,7 @@ function private function_33f0ddd3(s_event) {
         } else {
             self.aat_debug_text.color = (1, 1, 1);
         }
-        wait(1);
+        wait 1;
         self.aat_debug_text fadeovertime(1);
         self.aat_debug_text.color = (1, 1, 1);
         if ("<dev string:x55>" == name) {

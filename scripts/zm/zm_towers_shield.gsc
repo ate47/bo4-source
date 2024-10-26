@@ -809,7 +809,7 @@ function function_3624f8c8(str_piece) {
     }
     self clientfield::increment_to_player(var_73f25fd);
     if (n_drop_time > 0) {
-        wait(n_drop_time);
+        wait n_drop_time;
     }
     self flag::set(var_f4c9f09a);
     self flag::wait_till(var_f00b4f9f);

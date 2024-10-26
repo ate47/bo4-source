@@ -155,10 +155,10 @@ function function_45a2294f(str_id) {
         }
     }
     level notify(#"traps_activated", {#var_be3f58a:str_id});
-    wait(30);
+    wait 30;
     level notify(#"traps_cooldown", {#var_be3f58a:str_id});
     n_cooldown = zm_traps::function_da13db45(60, self);
-    wait(n_cooldown);
+    wait n_cooldown;
     level notify(#"traps_available", {#var_be3f58a:str_id});
 }
 
@@ -178,7 +178,7 @@ function function_6f34f900() {
             continue;
         }
         var_82cc90a0 = e_player.health;
-        wait(0.85);
+        wait 0.85;
         if (isdefined(e_player) && var_82cc90a0 == e_player.health) {
             e_player notify(#"hash_731c84be18ae9fa3");
         }
@@ -252,7 +252,7 @@ function player_damage(t_damage) {
             n_damage *= 0.5;
         }
         self dodamage(n_damage, self.origin, undefined, t_damage);
-        wait(0.1);
+        wait 0.1;
         self.is_burning = undefined;
     }
     self setstance("crouch");

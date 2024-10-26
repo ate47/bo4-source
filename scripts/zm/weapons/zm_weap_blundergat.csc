@@ -201,7 +201,7 @@ function private function_6af9874(localclientnum, newval) {
     n_spread = 0;
     var_ea2ed6dc = [];
     var_aebebb0e = [];
-    wait(0.5);
+    wait 0.5;
     switch (newval) {
     case 1:
         var_ea2ed6dc[0] = "zombie_fire_fx_torso";
@@ -315,7 +315,7 @@ function private function_6af9874(localclientnum, newval) {
     while (isalive(self) && isdefined(var_ea2ed6dc[n_spread])) {
         self.var_70ed1f91[self.var_70ed1f91.size] = util::playfxontag(localclientnum, level._effect[var_ea2ed6dc[n_spread]], self, var_aebebb0e[n_spread]);
         n_spread++;
-        wait(0.5);
+        wait 0.5;
     }
 }
 

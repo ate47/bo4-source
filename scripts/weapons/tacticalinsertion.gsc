@@ -316,7 +316,7 @@ function canceltackinsertionbutton() {
 function cancel_button_press() {
     self endon(#"disconnect", #"end_killcam", #"abort_killcam");
     while (true) {
-        wait(0.05);
+        wait 0.05;
         if (self canceltackinsertionbutton()) {
             break;
         }

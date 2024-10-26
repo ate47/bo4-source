@@ -435,7 +435,7 @@ function damage_feedback_get_dead(victim, mod, weapon, stage) {
         self notify(#"kill_hitmarker_fade");
         self endon(#"kill_hitmarker_fade", #"disconnect");
         self.hud_damagefeedback.alpha = 1;
-        wait(0.25);
+        wait 0.25;
         self.hud_damagefeedback fadeovertime(0.3);
         self.hud_damagefeedback.alpha = 0;
     }

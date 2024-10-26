@@ -291,7 +291,7 @@ function private function_1eddba48() {
     self.hawk.controlling = 0;
     self clientfield::set_to_player("static_postfx", 1);
     var_9e2fe80f = isdefined(level.hawk_settings.bundle.var_2f47b335) ? level.hawk_settings.bundle.var_2f47b335 : 0.5;
-    wait(var_9e2fe80f);
+    wait var_9e2fe80f;
     if (isdefined(self)) {
         self clientfield::set_to_player("static_postfx", 0);
     }
@@ -375,7 +375,7 @@ function function_1b057db2() {
     if (isdefined(self.var_f97921ea)) {
         var_a4137bf5 = gettime() - self.var_f97921ea;
         if (var_a4137bf5 < 850) {
-            wait(float(850 - var_a4137bf5) / 1000);
+            wait float(850 - var_a4137bf5) / 1000;
         }
     }
     var_37ea2019 = 0;

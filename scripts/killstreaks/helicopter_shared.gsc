@@ -316,7 +316,7 @@ function heli_update_global_dvars(debug_refresh) {
         }
         level.heli_missile_reload_time = getdvar(#"scr_heli_missile_reload_time", 5);
         level.heli_warning_distance = getdvar(#"scr_heli_warning_distance", 500);
-        wait(1);
+        wait 1;
     } while (isdefined(debug_refresh));
 }
 
@@ -411,7 +411,7 @@ function onflakdronedestroyed() {
 // Size: 0x50
 function explodeoncontact(hardpointtype) {
     self endon(#"death");
-    wait(10);
+    wait 10;
     for (;;) {
         self waittill(#"touch");
         self thread heli_explode();
@@ -663,11 +663,11 @@ function heli_missile_regen() {
         if (self.missile_ammo >= level.heli_missile_max) {
             self waittill(#"missile fired");
         } else if (self.currentstate == "heavy smoke") {
-            wait(level.heli_missile_regen_time / 4);
+            wait level.heli_missile_regen_time / 4;
         } else if (self.currentstate == "light smoke") {
-            wait(level.heli_missile_regen_time / 2);
+            wait level.heli_missile_regen_time / 2;
         } else {
-            wait(level.heli_missile_regen_time);
+            wait level.heli_missile_regen_time;
         }
         if (self.missile_ammo < level.heli_missile_max) {
             self.missile_ammo++;
@@ -719,7 +719,7 @@ function heli_targeting(missilesenabled, hardpointtype) {
             /#
                 debug_print_target();
             #/
-            wait(self.targeting_delay);
+            wait self.targeting_delay;
             continue;
         }
         if (targets.size == 1) {
@@ -753,7 +753,7 @@ function heli_targeting(missilesenabled, hardpointtype) {
         } else if (targetsmissile.size > 1) {
             assignsecondarytargets(targetsmissile);
         }
-        wait(self.targeting_delay);
+        wait self.targeting_delay;
         /#
             debug_print_target();
         #/
@@ -1089,7 +1089,7 @@ function heli_reset() {
 function heli_wait(waittime) {
     self endon(#"death", #"crashing", #"evasive");
     self thread heli_hover();
-    wait(waittime);
+    wait waittime;
     heli_reset();
     self notify(#"stop hover");
 }
@@ -1133,7 +1133,7 @@ function wait_for_killed() {
 // Size: 0x3c
 function wait_for_bda_timeout() {
     self endon(#"killed");
-    wait(2.5);
+    wait 2.5;
     if (!isdefined(self)) {
         return;
     }
@@ -1410,7 +1410,7 @@ function heli_active_camo_damage_update(damage) {
         return;
     }
     heli heli_set_active_camo_state(2);
-    wait(1);
+    wait 1;
     heli heli_set_active_camo_state(1);
 }
 
@@ -1424,7 +1424,7 @@ function heli_active_camo_damage_disable() {
     heli notify(#"heli_active_camo_damage_disable");
     heli endon(#"heli_active_camo_damage_disable");
     heli heli_set_active_camo_state(0);
-    wait(10);
+    wait 10;
     heli.active_camo_damage = 0;
     heli.active_camo_disabled = 0;
     heli heli_set_active_camo_state(1);
@@ -1508,7 +1508,7 @@ function notify_player(player, playernotify, delay) {
         return;
     }
     player endon(#"disconnect", playernotify);
-    wait(delay);
+    wait delay;
     player notify(playernotify);
 }
 
@@ -1519,7 +1519,7 @@ function notify_player(player, playernotify, delay) {
 function play_going_down_vo(delay) {
     self.owner endon(#"disconnect");
     self endon(#"death");
-    wait(delay);
+    wait delay;
 }
 
 // Namespace helicopter/helicopter_shared
@@ -1616,7 +1616,7 @@ function damagedrotorfx() {
 // Size: 0x3c
 function waitthenexplode(time) {
     self endon(#"death");
-    wait(time);
+    wait time;
     self thread heli_explode();
 }
 
@@ -1683,7 +1683,7 @@ function heli_secondary_explosions() {
         self thread trail_fx(level.chopper_fx[#"smoke"][#"trail"], self checkhelicoptertag("tail_rotor_jnt"), "stop tail smoke");
     }
     self thread trail_fx(level.chopper_fx[#"fire"][#"trail"][#"large"], self checkhelicoptertag("tag_engine_left"), "stop body fire");
-    wait(3);
+    wait 3;
     if (!isdefined(self)) {
         return;
     }
@@ -1701,7 +1701,7 @@ function heli_spin(speed) {
     self setyawspeed(speed, speed / 3, speed / 3);
     while (isdefined(self)) {
         self settargetyaw(self.angles[1] + speed * 0.9);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1711,7 +1711,7 @@ function heli_spin(speed) {
 // Size: 0x94
 function spinsoundshortly() {
     self endon(#"death");
-    wait(0.25);
+    wait 0.25;
     self stoploopsound();
     waitframe(1);
     self playloopsound(level.heli_sound[#"spinloop"]);
@@ -1797,7 +1797,7 @@ function function_e1058a3e() {
 function heli_explode() {
     self endon(#"death");
     self function_e1058a3e();
-    wait(0.1);
+    wait 0.1;
     assert(isdefined(self.destroyfunc));
     self [[ self.destroyfunc ]]();
 }
@@ -1886,7 +1886,7 @@ function function_62eb6272(var_70031e7b) {
     self vehclearlookat();
     exitangles = vectortoangles(var_b4c35bb7 - self.origin);
     self setgoalyaw(exitangles[1]);
-    wait(1.5);
+    wait 1.5;
     if (!isdefined(self)) {
         return;
     }
@@ -2006,7 +2006,7 @@ function heli_fly(currentnode, startwait, hardpointtype) {
     self.reached_dest = 0;
     heli_reset();
     pos = self.origin;
-    wait(startwait);
+    wait startwait;
     while (isdefined(currentnode.target)) {
         var_6cfa3712 = getentarray(currentnode.target, "targetname");
         assert(isdefined(var_6cfa3712), "<dev string:x293>");
@@ -2137,7 +2137,7 @@ function heli_mobilespawn(protectdest) {
     #/
     heli_reset();
     self sethoverparams(50, 100, 50);
-    wait(2);
+    wait 2;
     set_heli_speed_normal();
     self set_goal_pos(protectdest, 1);
     self waittill(#"near_goal");
@@ -2165,7 +2165,7 @@ function function_656691ab() {
             self notify(#"hash_340ab3c2b94ff86a");
             break;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -2270,7 +2270,7 @@ function function_438e7b44(startnode, protectdest, hardpointtype, heli_team) {
     self endon(#"flying", #"abandoned");
     self.reached_dest = 0;
     heli_reset();
-    wait(2);
+    wait 2;
     currentdest = protectdest;
     nodeheight = protectdest[2];
     nextnode = startnode;
@@ -2309,7 +2309,7 @@ function function_438e7b44(startnode, protectdest, hardpointtype, heli_team) {
             if (isdefined(var_2ca2e589) && var_2ca2e589) {
                 var_2ca2e589 = 0;
             } else {
-                wait(5);
+                wait 5;
             }
         } else {
             waittillframeend();
@@ -2323,7 +2323,7 @@ function function_438e7b44(startnode, protectdest, hardpointtype, heli_team) {
                     var_2ca2e589 = 0;
                 }
             } else {
-                wait(time);
+                wait time;
             }
         }
         prevdest = currentdest;
@@ -2458,7 +2458,7 @@ function updatespeedonlock() {
     while (true) {
         self waittill(#"locking on", #"locking on hacking");
         self updatespeed();
-        wait(1);
+        wait 1;
     }
 }
 
@@ -2489,7 +2489,7 @@ function updatetargetyaw() {
             yaw = math::get_2d_yaw(self.origin, self.var_6c63b409);
             self settargetyaw(yaw);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -2526,7 +2526,7 @@ function fire_missile(smissiletype, ishots = 1, etarget) {
         emissile.killcament = self;
         self.lastrocketfiretime = gettime();
         if (i < ishots - 1) {
-            wait(weaponshoottime);
+            wait weaponshoottime;
         }
     }
 }
@@ -2572,7 +2572,7 @@ function attack_secondary(hardpointtype) {
                 }
                 antithreat += 100;
                 self.missiletarget.antithreat = antithreat;
-                wait(level.heli_missile_rof);
+                wait level.heli_missile_rof;
                 if (!isdefined(self.secondarytarget) || isdefined(self.secondarytarget) && self.missiletarget != self.secondarytarget) {
                     break;
                 }
@@ -2638,7 +2638,7 @@ function missile_support(target_player, rof, instantfire, endon_notify) {
     }
     self.turret_giveup = 0;
     if (!instantfire) {
-        wait(rof);
+        wait rof;
         self.turret_giveup = 1;
         self notify(#"give up");
     }
@@ -2673,7 +2673,7 @@ function missile_support(target_player, rof, instantfire, endon_notify) {
         return;
     }
     if (instantfire) {
-        wait(rof);
+        wait rof;
         self notify(#"missile ready");
     }
 }
@@ -2706,7 +2706,7 @@ function attack_primary(hardpointtype) {
                 }
                 self notify(#"turret_on_target");
                 self heli_set_active_camo_state(0);
-                wait(level.heli_turret_spinup_delay);
+                wait level.heli_turret_spinup_delay;
                 weaponshoottime = self.defaultweapon.firetime;
                 self setvehweapon(self.defaultweapon);
                 for (i = 0; i < level.heli_turretclipsize; i++) {
@@ -2730,7 +2730,7 @@ function attack_primary(hardpointtype) {
                     waitframe(1);
                 }
                 self notify(#"turret reloading");
-                wait(level.heli_turretreloadtime);
+                wait level.heli_turretreloadtime;
                 self heli_set_active_camo_state(1);
                 if (isdefined(self.turrettarget) && isalive(self.turrettarget)) {
                     antithreat += 100;
@@ -2848,7 +2848,7 @@ function playpilotdialog(dialog, time, voice, shouldwait) {
     self endon(#"death");
     level endon(#"remote_end");
     if (isdefined(time)) {
-        wait(time);
+        wait time;
     }
     if (!isdefined(self.pilotvoicenumber)) {
         self.pilotvoicenumber = 0;
@@ -2874,11 +2874,11 @@ function playpilottalking(shouldwait, soundalias) {
         if (isdefined(shouldwait) && !shouldwait) {
             return;
         }
-        wait(1);
+        wait 1;
     }
     self.pilottalking = 1;
     self playlocalsound(soundalias);
-    wait(3);
+    wait 3;
     self.pilottalking = 0;
 }
 

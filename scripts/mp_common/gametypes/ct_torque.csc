@@ -22,7 +22,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Size: 0x84
 function danger_pstfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     postfx::playpostfxbundle(#"pstfx_danger");
-    wait(1);
+    wait 1;
     postfx::stoppostfxbundle(#"pstfx_danger");
 }
 

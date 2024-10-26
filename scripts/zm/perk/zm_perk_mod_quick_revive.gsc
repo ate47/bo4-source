@@ -80,7 +80,7 @@ function monitor_health_regen() {
             continue;
         }
         self thread function_118be9d8();
-        wait(3);
+        wait 3;
     }
 }
 
@@ -95,7 +95,7 @@ function function_118be9d8() {
     if (!self hasperk(#"specialty_sprintspeed")) {
         self perks::perk_setperk(#"specialty_sprintspeed");
     }
-    wait(3);
+    wait 3;
     if (self hasperk(#"specialty_sprintspeed")) {
         self perks::perk_unsetperk(#"specialty_sprintspeed");
     }

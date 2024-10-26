@@ -129,7 +129,7 @@ function function_270aecf7() {
         level.s_freeze_trap.var_6b64b967 = 0;
         level.s_freeze_trap.var_41ee2ddc = 0;
         n_cooldown = zm_traps::function_da13db45(60, e_who);
-        wait(n_cooldown);
+        wait n_cooldown;
         function_91ecec97(level.s_freeze_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
         level.s_freeze_trap.var_41ee2ddc = 1;
         playsoundatposition(#"zmb_trap_ready", self.origin);
@@ -155,7 +155,7 @@ function function_4bbed101(e_player) {
     while (n_total_time < 40) {
         self thread function_3d9b6ed6(e_player);
         self thread function_c38e2c52();
-        wait(0.1);
+        wait 0.1;
         n_total_time += 0.1;
     }
     if (isdefined(level.s_soapstone) && isdefined(level.s_soapstone.s_placement) && level.s_soapstone.var_e15f0d15 === 1) {
@@ -195,7 +195,7 @@ function function_3d9b6ed6(e_activator) {
 function function_92f341d0(e_activator, e_volume) {
     self endon(#"death");
     self.marked_for_death = 1;
-    wait(randomfloatrange(0.25, 0.5));
+    wait randomfloatrange(0.25, 0.5);
     if (isalive(self)) {
         self.water_damage = 1;
         if (isplayer(level.s_freeze_trap.activated_by_player)) {
@@ -224,7 +224,7 @@ function freeze_trap_fx(var_9d9f02b4) {
 // Checksum 0x11fe6253, Offset: 0x1188
 // Size: 0x34
 function function_cedd130e() {
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self clientfield::set("freeze_trap_death_fx", 0);
     }
@@ -277,9 +277,9 @@ function function_be814134() {
     }
     self clientfield::set_to_player("player_freeze_trap_post_fx", 1);
     self playsoundtoplayer(#"hash_35baaf86bb47b64d", self);
-    wait(0.25);
+    wait 0.25;
     self clientfield::set_to_player("player_freeze_trap_post_fx", 0);
-    wait(1);
+    wait 1;
     self.var_88eddb97 = 0;
 }
 

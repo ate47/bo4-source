@@ -160,7 +160,7 @@ function electric_cherry_laststand() {
                     a_zombies[i] thread electric_cherry_stun();
                     a_zombies[i] thread electric_cherry_shock_fx();
                 }
-                wait(0.1);
+                wait 0.1;
                 if (isalive(self) && isalive(a_zombies[i])) {
                     a_zombies[i] dodamage(1000, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.weapondefault);
                 }
@@ -225,7 +225,7 @@ function electric_cherry_stun() {
     }
     self ai::stun(4);
     self val::set(#"electric_cherry_stun", "ignoreall", 1);
-    wait(4);
+    wait 4;
     if (isdefined(self)) {
         self ai::clear_stun();
         self val::reset(#"electric_cherry_stun", "ignoreall");
@@ -314,7 +314,7 @@ function electric_cherry_reload_attack() {
                         }
                         a_zombies[i] thread electric_cherry_shock_fx();
                     }
-                    wait(0.1);
+                    wait 0.1;
                     if (isdefined(a_zombies[i]) && isalive(a_zombies[i])) {
                         a_zombies[i] dodamage(perk_dmg, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.weapondefault);
                     }
@@ -337,7 +337,7 @@ function electric_cherry_cooldown_timer(current_weapon) {
         n_reload_time *= getdvarfloat(#"perk_weapreloadmultiplier", 0);
     }
     n_cooldown_time = n_reload_time + 3;
-    wait(n_cooldown_time);
+    wait n_cooldown_time;
     self.consecutive_electric_cherry_attacks = 0;
 }
 
@@ -389,7 +389,7 @@ function electric_cherry_reload_fx(n_fraction) {
     } else {
         self clientfield::set("electric_cherry_reload_fx", 3);
     }
-    wait(1);
+    wait 1;
     self clientfield::set("electric_cherry_reload_fx", 0);
 }
 

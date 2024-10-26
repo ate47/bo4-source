@@ -205,7 +205,7 @@ function claymore_detonation(e_planter) {
         }
         if (ent damageconetrace(self.origin, self) > 0) {
             self playsound(#"wpn_claymore_alert");
-            wait(0.4);
+            wait 0.4;
             if (isdefined(self.owner)) {
                 self detonate(self.owner);
                 return;
@@ -280,7 +280,7 @@ function function_cbb2f05b(watcher) {
         }
     }
     if (level.weaponobjectexplodethisframe) {
-        wait(0.1 + randomfloat(0.4));
+        wait 0.1 + randomfloat(0.4);
     } else {
         waitframe(1);
     }

@@ -608,7 +608,7 @@ function handledeath(animationname, attacker) {
     self.skipdeath = 1;
     self.diedinscriptedanim = 1;
     totaltime = getanimlength(animationname);
-    wait(totaltime - 0.2);
+    wait totaltime - 0.2;
     self killwrapper(attacker);
 }
 

@@ -409,7 +409,7 @@ function getunownedflagneareststart(team, excludeflag) {
     function domdebug() {
         while (true) {
             if (getdvarint(#"scr_domdebug", 0) != 1) {
-                wait(2);
+                wait 2;
                 continue;
             }
             while (true) {
@@ -795,7 +795,7 @@ function onuse(sentient) {
 // Size: 0x4c
 function totaldomination(team) {
     level endon(#"flag_captured", #"game_ended");
-    wait(180);
+    wait 180;
     challenges::totaldomination(team);
 }
 
@@ -818,7 +818,7 @@ function watchforbflagcap() {
 // Size: 0x40
 function endwatchforbflagcapaftertime(time) {
     level endon(#"game_ended");
-    wait(60);
+    wait 60;
     level notify(#"endwatchforbflagcapaftertime");
 }
 
@@ -1057,7 +1057,7 @@ function updatedomscores() {
                 return;
             }
         }
-        wait(5);
+        wait 5;
         hostmigration::waittillhostmigrationdone();
     }
 }
@@ -1367,7 +1367,7 @@ function updateattackermultikills() {
         self.recentdomattackerkillcount = 0;
     }
     self.recentdomattackerkillcount++;
-    wait(4);
+    wait 4;
     if (self.recentdomattackerkillcount > 1) {
         self challenges::domattackermultikill(self.recentdomattackerkillcount);
     }

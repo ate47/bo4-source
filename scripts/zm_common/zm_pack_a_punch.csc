@@ -106,7 +106,7 @@ function function_2a80c24d(localclientnum, oldval, newval, bnewent, binitialsnap
         stopfx(localclientnum, self.n_pap_idle_fx);
         self.n_pap_idle_fx = undefined;
     }
-    wait(1);
+    wait 1;
     if (isdefined(self.var_4d7e8438)) {
         self.var_4d7e8438 delete();
     }
@@ -143,7 +143,7 @@ function pap_working_fx_handler(localclientnum, oldval, newval, bnewent, binitia
         stopfx(localclientnum, self.n_pap_fx);
         self.n_pap_fx = undefined;
     }
-    wait(1);
+    wait 1;
     if (isdefined(self.mdl_fx)) {
         self.mdl_fx delete();
     }

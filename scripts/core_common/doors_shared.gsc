@@ -347,7 +347,7 @@ class cdoor {
                 open();
                 flag::wait_till_clear("animating");
                 if (isdefined(m_s_bundle.var_6270dafc) && m_s_bundle.var_6270dafc) {
-                    wait(isdefined(m_s_bundle.var_be86269a) ? m_s_bundle.var_be86269a : 0);
+                    wait isdefined(m_s_bundle.var_be86269a) ? m_s_bundle.var_be86269a : 0;
                     if (isdefined(m_e_trigger_player)) {
                         var_ceedbc10 = m_e_trigger.maxs[0] * m_e_trigger.maxs[0];
                         while (isdefined(m_e_trigger_player) && m_e_trigger_player istouching(m_e_trigger)) {
@@ -675,7 +675,7 @@ class cdoor {
             if (b_enable) {
                 while (true) {
                     open_internal(b_enable, randomfloatrange(n_delay_min, n_delay_max));
-                    wait(randomfloatrange(n_delay_min, n_delay_max));
+                    wait randomfloatrange(n_delay_min, n_delay_max);
                     close_internal(b_enable, randomfloatrange(n_delay_min, n_delay_max));
                 }
             } else {
@@ -1371,7 +1371,7 @@ function door_update(c_door) {
         c_door flag::wait_till("open");
         if (c_door.m_door_open_delay_time > 0) {
             c_door.m_e_door notify(#"door_waiting_to_open", {#player:c_door.m_e_trigger_player});
-            wait(c_door.m_door_open_delay_time);
+            wait c_door.m_door_open_delay_time;
         }
         [[ c_door ]]->open_internal();
         c_door flag::wait_till_clear("open");
@@ -1540,7 +1540,7 @@ function door_wait_until_user_release(c_door, e_triggerer, str_kill_on_door_noti
     if (isdefined(str_kill_on_door_notify)) {
         c_door endon(str_kill_on_door_notify);
     }
-    wait(0.25);
+    wait 0.25;
     max_dist_sq = c_door.m_s_bundle.door_trigger_radius * c_door.m_s_bundle.door_trigger_radius;
     b_pressed = 1;
     n_dist = 0;
@@ -1588,7 +1588,7 @@ function door_debug_line(v_origin) {
         /#
             line(v_start, v_end, (0, 0, 1));
         #/
-        wait(0.1);
+        wait 0.1;
     }
 }
 

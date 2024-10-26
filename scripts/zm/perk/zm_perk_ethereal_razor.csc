@@ -88,7 +88,7 @@ function function_8f9318d5(localclientnum, oldval, newval, bnewent, binitialsnap
     self function_e6bf47a3();
     if (!self zm_utility::function_f8796df3(localclientnum)) {
         self.var_e59cd78 = util::playfxontag(localclientnum, level._effect[#"hash_4de2dbcd551f1fb7"], self, self function_a5b9c520(localclientnum));
-        wait(0.3);
+        wait 0.3;
         self function_e6bf47a3();
     }
 }
@@ -103,7 +103,7 @@ function function_680538e2(localclientnum, oldval, newval, bnewent, binitialsnap
     self function_e6bf47a3();
     if (!self zm_utility::function_f8796df3(localclientnum)) {
         self.var_e59cd78 = util::playfxontag(localclientnum, level._effect[#"hash_4de2dbcd551f1fb7"], self, self function_a5b9c520(localclientnum));
-        wait(0.3);
+        wait 0.3;
         self function_e6bf47a3();
     }
 }

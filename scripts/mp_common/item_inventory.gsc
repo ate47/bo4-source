@@ -265,7 +265,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
                 dropitem endon(#"death");
                 if (weaponname == #"basketball") {
                     dropitem setinvisibletoplayer(self);
-                    wait(0.25);
+                    wait 0.25;
                     if (isdefined(self)) {
                         dropitem setvisibletoplayer(self);
                     }
@@ -279,7 +279,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
                         self._trophy_system_ammo1 = var_aec6fa7f;
                     }
                 }
-                wait(0.5);
+                wait 0.5;
                 if (!isdefined(dropitem)) {
                     return;
                 }
@@ -313,7 +313,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
                         break;
                     }
                 }
-                wait(0.5);
+                wait 0.5;
                 if (isdefined(self) && self hasweapon(eventstruct.weapon, 1)) {
                     weaponoptions = self calcweaponoptions(var_f94ce554[randomintrange(0, var_f94ce554.size)], 0, 0);
                     self updateweaponoptions(eventstruct.weapon, weaponoptions);
@@ -3656,7 +3656,7 @@ function use_killstreak(networkid, item) {
         return;
     }
     self sethintstring(#"hash_37605398dce96965");
-    wait(1.5);
+    wait 1.5;
     if (isdefined(self)) {
         self sethintstring(#"");
     }

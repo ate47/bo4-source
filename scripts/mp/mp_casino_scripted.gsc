@@ -44,7 +44,7 @@ function on_game_playing() {
     if (util::function_94a3be2()) {
         return;
     }
-    wait(getdvarfloat(#"hash_68cf1e8e429452b0", 0));
+    wait getdvarfloat(#"hash_68cf1e8e429452b0", 0);
     if (util::isfirstround()) {
         array::run_all(getentarray("spawn_flavor_veh", "script_noteworthy"), &show);
         level thread scene::skipto_end("p8_fxanim_mp_cas_swat_driveup_bundle");

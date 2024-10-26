@@ -96,7 +96,7 @@ function function_ac7d2bdd(n_time = 0.5) {
             self thread function_4d6c7d92(i, n_time);
         }
     }
-    wait(n_time);
+    wait n_time;
 }
 
 // Namespace ct_gadgets/ct_gadgets
@@ -126,7 +126,7 @@ function function_4d6c7d92(var_e8ee1cd1, n_time = 0) {
             if (!isdefined(self.var_bb7ec6ae) || !(isdefined(self.var_bb7ec6ae[var_e8ee1cd1]) && self.var_bb7ec6ae[var_e8ee1cd1])) {
                 self gadgetpowerset(var_e8ee1cd1, n_power);
             }
-            wait(var_128b4383);
+            wait var_128b4383;
         }
         self.var_5c519f98[var_e8ee1cd1] = 0;
         if (!function_f2f3407(gadget.name)) {
@@ -262,7 +262,7 @@ function function_144e61da(n_slot, str_endon) {
         if (isalive(e_player) && isdefined(gadget) && function_f2f3407(gadget.name)) {
             e_player gadgetpowerset(n_slot, 100);
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -372,7 +372,7 @@ function get_slot(str_weapon_name) {
 // Size: 0x5c
 function function_fb68ca34(n_delay) {
     e_player = getplayers()[0];
-    wait(n_delay);
+    wait n_delay;
     e_player val::reset(#"spawn_player", "disablegadgets");
 }
 

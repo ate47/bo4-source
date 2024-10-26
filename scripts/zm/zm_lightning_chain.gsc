@@ -243,7 +243,7 @@ function private lc_flag_hit(enemy, hit) {
 function private lc_do_damage(source_enemy, arc_num, player, params) {
     player endon(#"disconnect");
     if (arc_num > 1) {
-        wait(randomfloatrange(0.2, 0.6) * arc_num);
+        wait randomfloatrange(0.2, 0.6) * arc_num;
     }
     if (!isdefined(self) || !isalive(self)) {
         return;
@@ -374,7 +374,7 @@ function lc_play_death_fx(arc_num, params) {
 // Size: 0x29c
 function lc_play_arc_fx(target, params) {
     if (!isdefined(self) || !isdefined(target)) {
-        wait(params.arc_travel_time);
+        wait params.arc_travel_time;
         return;
     }
     tag = "J_SpineUpper";

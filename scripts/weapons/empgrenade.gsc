@@ -116,7 +116,7 @@ function applyemp(attacker, explosionpoint) {
     self setempjammed(1);
     self thread empgrenadedeathwaiter();
     if (self.empduration > 0) {
-        wait(self.empduration);
+        wait self.empduration;
     }
     if (isdefined(self)) {
         self notify(#"empgrenadetimedout");

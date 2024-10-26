@@ -125,7 +125,7 @@ function function_fff5377e(localclientnum) {
                 }
             }
         }
-        wait(0.05);
+        wait 0.05;
     }
 }
 

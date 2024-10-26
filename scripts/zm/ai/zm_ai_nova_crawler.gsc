@@ -247,7 +247,7 @@ function private function_4632879c(entity) {
             }
             players[i] clientfield::set_to_player("nova_crawler_gas_cloud_postfx_clientfield", 0);
         }
-        wait(1);
+        wait 1;
     }
     players = getplayers();
     for (i = 0; i < players.size; i++) {

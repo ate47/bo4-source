@@ -14,7 +14,7 @@
         dev_cac_camera_on = 0;
         level thread dev_cac_gdt_update_think();
         for (;;) {
-            wait(0.5);
+            wait 0.5;
             reset = 1;
             if (getdvarstring(#"scr_disable_cac_2") != "<dev string:x38>") {
                 continue;
@@ -310,7 +310,7 @@
     // Size: 0x44
     function highlight_player() {
         self sethighlighted(1);
-        wait(1);
+        wait 1;
         self sethighlighted(0);
     }
 

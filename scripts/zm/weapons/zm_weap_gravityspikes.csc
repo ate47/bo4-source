@@ -120,7 +120,7 @@ function gravity_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
             self.var_cacf63a9 = self playloopsound(#"hash_9c25e71ff13ac77");
         }
         util::playfxontag(localclientnum, level._effect[#"gravityspikes_trap_start"], self, "tag_origin");
-        wait(0.5);
+        wait 0.5;
         if (isdefined(self) && isdefined(self.b_gravity_trap_fx) && self.b_gravity_trap_fx) {
             self.n_gravity_trap_fx = util::playfxontag(localclientnum, level._effect[#"gravityspikes_trap_loop"], self, "tag_origin");
         }
@@ -177,7 +177,7 @@ function private gravity_trap_rumble(localclientnum) {
     self endon(#"vortex_stop", #"death");
     while (isdefined(self)) {
         self playrumbleonentity(localclientnum, "zm_weap_gravityspikes_vortex");
-        wait(0.15);
+        wait 0.15;
     }
 }
 

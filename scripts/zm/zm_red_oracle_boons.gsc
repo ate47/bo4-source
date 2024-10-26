@@ -308,7 +308,7 @@ function private function_c69ff317(chest) {
     self endon(#"death");
     chest.zbarrier endon(#"weapon_grabbed");
     if (isdefined(chest.zbarrier.weapon_model) && isdefined(chest.chest_user) && self == chest.chest_user) {
-        wait(11);
+        wait 11;
         if (self function_3b81466e(3) == 1) {
             self thread function_c3778d8a(3, 3);
             chest.var_1f9dff37 = 1;
@@ -350,7 +350,7 @@ function private function_4e1abe8f() {
     while (true) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (!zm_utility::is_player_valid(self) || !isdefined(str_zone) || !isdefined(level.var_eb91e07c[str_zone]) || level.round_number < level.var_eb91e07c[str_zone] + 3) {
-            wait(5);
+            wait 5;
             continue;
         }
         a_items = getitemarray();
@@ -362,7 +362,7 @@ function private function_4e1abe8f() {
                 }
             }
         }
-        wait(5);
+        wait 5;
     }
 }
 
@@ -429,7 +429,7 @@ function private function_e1bfb2de() {
     self endon(#"death");
     level flag::wait_till("all_players_spawned");
     level flag::wait_till("power_on");
-    wait(5);
+    wait 5;
     while (true) {
         var_59130748 = 0;
         if (isarray(level.active_powerups) && level.active_powerups.size) {
@@ -449,7 +449,7 @@ function private function_e1bfb2de() {
                 }
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -517,7 +517,7 @@ function private function_de053460(pap_machine) {
     assert(isdefined(var_2ff5c7ee.upgrade_weapon), "<dev string:x69>");
     w_current = var_2ff5c7ee.current_weapon;
     self waittill(#"player_revived");
-    wait(1);
+    wait 1;
     while (isdefined(self.isspeaking) && self.isspeaking) {
         waitframe(1);
     }
@@ -575,7 +575,7 @@ function private function_3fe13b7b() {
             continue;
         }
         s_result = self waittill(#"player_revived", #"bled_out");
-        wait(1);
+        wait 1;
         a_current_perks = arraycopy(self.var_466b927f);
         var_2c7d72cf = array::randomize(var_2c7d72cf);
         for (i = 0; i < var_2c7d72cf.size; i++) {
@@ -615,7 +615,7 @@ function private function_3fe13b7b() {
 function private function_c3778d8a(n_boon, n_delay = undefined) {
     self endon(#"death");
     if (isdefined(n_delay)) {
-        wait(n_delay);
+        wait n_delay;
     }
     switch (n_boon) {
     case 0:
@@ -693,7 +693,7 @@ function private function_edb554f3() {
     self endon("2d3e894ede4eef0e");
     self endon(#"death");
     self.var_6a885e6e = 1;
-    wait(180);
+    wait 180;
     self.var_6a885e6e = 0;
 }
 

@@ -116,7 +116,7 @@ function function_c2e32573(str_notify, a_str_vo, var_4bb99e1c = 1, var_763c80f1,
         v_origin = s_waitresult.v_origin;
         if (isdefined(var_763c80f1)) {
             playsoundatposition(var_763c80f1, v_origin);
-            wait(1.5);
+            wait 1.5;
         }
         if (var_4bb99e1c) {
             playsoundatposition(str_vo, v_origin);
@@ -142,7 +142,7 @@ function function_d24a0f09(str_vo, var_e688ce8f = 0) {
     n_duration = float(n_duration) / 1000;
     n_duration -= var_e688ce8f;
     if (n_duration > 0) {
-        wait(n_duration);
+        wait n_duration;
     }
 }
 
@@ -161,7 +161,7 @@ function function_a38e222b() {
         var_e25ba3b3 = spawn("script_origin", waitresult.v_origin);
         var_e25ba3b3 playsound(#"hash_d4b330503498b0f");
         var_e25ba3b3 playloopsound(#"hash_1da1dccdd4a06b31");
-        wait(2);
+        wait 2;
         switch (i) {
         case 0:
             a_str_vo = array(#"hash_4e3fb2f478282bfd", #"hash_4e3fb1f478282a4a", #"hash_29468385390c3a5", #"hash_4e3faff4782826e4", #"hash_29462385390b973");
@@ -223,7 +223,7 @@ function function_cfb5afb3(var_237f80b0, var_54bb7f87) {
         break;
     }
     if (isdefined(n_waittime)) {
-        wait(n_waittime);
+        wait n_waittime;
         return;
     }
     waitframe(1);
@@ -693,7 +693,7 @@ function function_ffc6c45f() {
     level endon(#"end_game");
     self endon(#"death");
     while (true) {
-        wait(1);
+        wait 1;
         var_89a92e6f = 0;
         foreach (e_player in level.players) {
             if (zm_utility::is_player_valid(e_player, 0, 0) && e_player istouching(self)) {
@@ -983,7 +983,7 @@ function function_2cb83322(var_1600546f, var_759598cf) {
     level notify(#"quit_crying");
     var_9185084 stopsounds();
     playsoundatposition(#"hash_70d9fd993e01154d", s_crying.origin);
-    wait(0.75);
+    wait 0.75;
     level.var_b2b15659 = 1;
     playsoundatposition(var_759598cf, s_crying.origin);
     function_d24a0f09(var_759598cf);
@@ -999,7 +999,7 @@ function function_415b58b1(var_1600546f, s_crying, var_9185084) {
     level endon(#"game_end", #"quit_crying");
     while (true) {
         var_9185084 playsound(var_1600546f);
-        wait(12);
+        wait 12;
     }
 }
 
@@ -1015,7 +1015,7 @@ function function_d6e81c01(var_cc9813c7, var_e504825e) {
     level.s_remus.var_12b6c455++;
     e_activator = level.s_remus.a_objects[level.s_remus.var_12b6c455] zm_unitrigger::function_fac87205("");
     e_activator playsoundtoplayer(#"hash_cfcdb12c4cc0476", e_activator);
-    wait(4);
+    wait 4;
     if (isdefined(var_e504825e)) {
         level.var_b2b15659 = 1;
         playsoundatposition(var_e504825e, level.s_remus.a_objects[level.s_remus.var_12b6c455].origin);

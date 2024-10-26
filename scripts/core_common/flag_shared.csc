@@ -53,7 +53,7 @@ function _delay_set(n_delay, str_flag, str_cancel) {
         self endon(str_cancel);
     }
     self endon(#"death");
-    wait(n_delay);
+    wait n_delay;
     set(str_flag);
 }
 
@@ -65,7 +65,7 @@ function set_for_time(n_time, str_flag) {
     self notify("__flag::set_for_time__" + str_flag);
     self endon("__flag::set_for_time__" + str_flag);
     set(str_flag);
-    wait(n_time);
+    wait n_time;
     clear(str_flag);
 }
 

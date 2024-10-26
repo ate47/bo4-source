@@ -347,7 +347,7 @@ function function_cee7424b(v_impact, var_bdbde2d2, n_duration) {
             ai clientfield::set("water_tricannon_slow_fx", 1);
             ai thread function_16149496();
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 

@@ -65,7 +65,7 @@ function private function_ad32d69(var_b2c60867, timeout, var_ca735ce8, var_a4a28
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656", #"host_migration_begin");
     if (isdefined(var_a4a28ac7) && var_a4a28ac7) {
-        wait(12);
+        wait 12;
     }
     self.var_b2c60867 = var_b2c60867;
     self.var_e14296de = level.time;
@@ -82,7 +82,7 @@ function private function_ad32d69(var_b2c60867, timeout, var_ca735ce8, var_a4a28
             level.var_f995ece6 zm_trial_timer::close(self);
         }
         self zm_trial_util::stop_timer();
-        wait(3.75);
+        wait 3.75;
         self zm_trial_util::start_timer(timeout);
         self.var_e14296de = level.time;
         self.var_60fa6139 = level.time + timeout * 1000;
@@ -101,7 +101,7 @@ function private damage_monitor(var_a4a28ac7) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656", #"host_migration_begin");
     if (isdefined(var_a4a28ac7) && var_a4a28ac7) {
-        wait(12);
+        wait 12;
     }
     while (true) {
         if (self.var_60fa6139 < level.time && self.b_teleporting === 0 && self.sessionstate != "spectator" && !self laststand::player_is_in_laststand() && !(isdefined(self.var_eb319d10) && self.var_eb319d10)) {
@@ -117,7 +117,7 @@ function private damage_monitor(var_a4a28ac7) {
                 waitframe(1);
             } else {
                 self dodamage(var_16e6b8ea, self.origin);
-                wait(1);
+                wait 1;
             }
             continue;
         }
@@ -138,7 +138,7 @@ function private function_ff66b979() {
         player zm_trial_util::stop_timer();
     }
     var_a0328dd5 = gettime();
-    wait(5);
+    wait 5;
     foreach (player in getplayers()) {
         timer_delta = var_a0328dd5 - player.var_e14296de;
         player thread function_ad32d69(player.var_b2c60867, player.n_timeout_time, int(float(timer_delta) / 1000), 0);

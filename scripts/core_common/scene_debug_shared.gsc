@@ -304,7 +304,7 @@
             }
             if (held) {
                 scene_list_settext(names, selected, str_title, b_shot_menu, 10);
-                wait(0.5);
+                wait 0.5;
             } else {
                 scene_list_settext(names, selected, str_title, b_shot_menu, 1);
             }
@@ -550,7 +550,7 @@
                 setdvar(#"scr_show_shot_info_for_igcs", 1);
                 setdvar(#"cg_drawfps", 0);
                 adddebugcommand("<dev string:x355>");
-                wait(1);
+                wait 1;
             }
         #/
     }
@@ -621,7 +621,7 @@
                     scene debug_display(debug_frames);
                 }
             }
-            wait(debug_time);
+            wait debug_time;
         }
     }
 
@@ -756,9 +756,9 @@
         while (true) {
             if (getdvarint(#"scr_postfx_igc_loop", 0)) {
                 array::run_all(level.activeplayers, &clientfield::increment_to_player, "<dev string:x43a>", 1);
-                wait(4);
+                wait 4;
             }
-            wait(1);
+            wait 1;
         }
     }
 

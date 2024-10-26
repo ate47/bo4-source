@@ -492,7 +492,7 @@ function removespawnmessageshortly(delay) {
     self endon(#"disconnect");
     waittillframeend();
     self endon(#"end_respawn");
-    wait(delay);
+    wait delay;
     self hud_message::clearlowermessage();
 }
 

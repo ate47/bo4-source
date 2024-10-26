@@ -267,7 +267,7 @@ function function_d79b3148(localclientnum, driver) {
         return;
     }
     while (true) {
-        wait(0.1);
+        wait 0.1;
         speed = self getspeed();
         player = function_5c10bd79(localclientnum);
         if (isdefined(self.var_c6a9216)) {

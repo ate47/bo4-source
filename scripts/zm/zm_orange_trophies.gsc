@@ -134,7 +134,7 @@ function function_a0367a9() {
     self endon(#"death");
     self endon(#"disconnect");
     self endon(#"bells_complete");
-    wait(12);
+    wait 12;
     self notify(#"bells_failed");
     self.var_c4baf001 = 0;
     self thread function_790e5d6();
@@ -177,7 +177,7 @@ function function_b9f47977(e_zombie) {
 function function_e140ff5c() {
     self endon(#"cleanup_freezegun_triggers");
     while (true) {
-        wait(1);
+        wait 1;
     }
 }
 
@@ -205,7 +205,7 @@ function function_4ff2cfd9(s_result) {
 // Size: 0x6c
 function function_6c88da5b() {
     while (level.var_a43a746d < 5) {
-        wait(1);
+        wait 1;
     }
     /#
         iprintlnbold("<dev string:x38>" + "<dev string:x96>");
@@ -567,7 +567,7 @@ function function_82947e72() {
                 iprintlnbold("<dev string:x38>" + "<dev string:xf4>");
             #/
             s_result.attacker zm_utility::giveachievement_wrapper("zm_orange_jar", 0);
-            wait(3);
+            wait 3;
             self show();
             self setcandamage(1);
         }

@@ -40,7 +40,7 @@ function private _cleanup() {
                 [[ func ]](level.deathcircle, level.deathcircles[level.deathcircleindex - 1]);
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 

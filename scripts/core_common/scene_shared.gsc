@@ -786,7 +786,7 @@ function _trigger_stop(trig) {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0xd0aaf22, Offset: 0x37b0
 // Size: 0x1e4
 function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
@@ -810,7 +810,7 @@ function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0x4cfea210, Offset: 0x39a0
 // Size: 0x1e4
 function function_d8a83a50(str_scenedef, func, var_e21c4c4c = "play", ...) {
@@ -1325,7 +1325,7 @@ function function_845e67f0(var_b93683c = 0, var_3667c53d = 4, var_f7d56e76 = arr
     if (isstring(var_b93683c) || ishash(var_b93683c)) {
         level waittill(var_b93683c);
     } else {
-        wait(var_b93683c);
+        wait var_b93683c;
     }
     a_ai = [];
     foreach (ent in self.scene_ents) {
@@ -1355,7 +1355,7 @@ function breach_slow_time(var_3667c53d) {
     foreach (e_player in util::get_players()) {
         e_player setmovespeedscale(0.3);
     }
-    wait(0.3);
+    wait 0.3;
     if (isstring(var_3667c53d) || ishash(var_3667c53d)) {
         util::waittill_any_ents(self, "breach_cleared", level, var_3667c53d);
     } else {
@@ -1379,7 +1379,7 @@ function function_9bf1aeb9(a_ai) {
     if (a_ai.size > 0) {
         ai::waittill_dead(a_ai);
     } else {
-        wait(0.5);
+        wait 0.5;
     }
     self notify(#"breach_cleared");
 }
@@ -1509,7 +1509,7 @@ function _play_instance(s_tracker, str_scenedef = self.scriptbundlename, a_ents,
     }
     b_play = 1;
     if (str_mode !== "init" && isdefined(self.script_delay) && self.script_delay > 0) {
-        wait(self.script_delay);
+        wait self.script_delay;
     }
     if (self.scriptbundlename === str_scenedef) {
         if (!(isdefined(self.script_play_multiple) && self.script_play_multiple)) {
@@ -2416,7 +2416,7 @@ function function_a4ad0308(o_scene) {
             while (isdefined(level.chyron_text_active) && level.chyron_text_active) {
                 waitframe(1);
             }
-            wait(3);
+            wait 3;
         }
         waitframe(1);
     }
@@ -2711,7 +2711,7 @@ function synced_delete(str_scene) {
             self pathmode("dont move");
         }
     }
-    wait(1);
+    wait 1;
     self delete();
 }
 

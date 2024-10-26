@@ -1208,7 +1208,7 @@ function function_903ea2a5() {
             }
         }
         while (true) {
-            wait(0.25);
+            wait 0.25;
             dvarstr = getdvarstring(#"devgui_bot", "<dev string:x38>");
             if (dvarstr == "<dev string:x38>") {
                 continue;
@@ -1855,7 +1855,7 @@ function function_85e7342b() {
     function bot_joinleave_loop() {
         active = 0;
         while (true) {
-            wait(1);
+            wait 1;
             joinleavecount = getdvarint(#"debug_bot_joinleave", 0);
             if (!joinleavecount) {
                 if (active) {
@@ -1871,12 +1871,12 @@ function function_85e7342b() {
             botcount = bot_count();
             if (botcount > 0 && randomint(100) < 30) {
                 remove_random_bot();
-                wait(2);
+                wait 2;
             } else if (botcount < joinleavecount) {
                 add_bot();
-                wait(2);
+                wait 2;
             }
-            wait(randomintrange(1, 3));
+            wait randomintrange(1, 3);
         }
     }
 
@@ -1975,7 +1975,7 @@ function populate_bots() {
             if (!isdefined(bot)) {
                 return;
             }
-            wait(0.5);
+            wait 0.5;
         }
         return;
     }
@@ -2000,7 +2000,7 @@ function monitor_bot_team_population(maxallies, maxaxis) {
     }
     fill_balanced_teams(maxallies, maxaxis);
     while (true) {
-        wait(3);
+        wait 3;
         allies = getplayers(#"allies");
         axis = getplayers(#"axis");
         if (allies.size > maxallies && remove_best_bot(allies)) {
@@ -2041,7 +2041,7 @@ function monitor_bot_population(maxfree) {
         waitframe(1);
     }
     while (true) {
-        wait(3);
+        wait 3;
         players = getplayers();
         if (players.size < maxfree) {
             add_bot();

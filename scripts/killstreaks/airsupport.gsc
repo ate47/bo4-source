@@ -139,7 +139,7 @@ function clearuplocationselection() {
 // Size: 0x3c
 function stoploopsoundaftertime(time) {
     self endon(#"death");
-    wait(time);
+    wait time;
     self stoploopsound(2);
 }
 
@@ -214,9 +214,9 @@ function callstrike(flightplan) {
     plane_seperation = 25;
     side_offset = vectorscale(side, plane_seperation);
     level thread planestrike(flightplan.owner, requireddeathcount, startpoint, endpoint, bombtime, flytime, flightplan.speed, flightplan.bombspeedscale, direction, flightplan.planespawncallback);
-    wait(flightplan.planespacing);
+    wait flightplan.planespacing;
     level thread planestrike(flightplan.owner, requireddeathcount, startpoint + side_offset, endpoint + side_offset, bombtime, flytime, flightplan.speed, flightplan.bombspeedscale, direction, flightplan.planespawncallback);
-    wait(flightplan.planespacing);
+    wait flightplan.planespacing;
     side_offset = vectorscale(side, -1 * plane_seperation);
     level thread planestrike(flightplan.owner, requireddeathcount, startpoint + side_offset, endpoint + side_offset, bombtime, flytime, flightplan.speed, flightplan.bombspeedscale, direction, flightplan.planespawncallback);
 }
@@ -240,7 +240,7 @@ function planestrike(owner, requireddeathcount, pathstart, pathend, bombtime, fl
     if (isdefined(planespawnedfunction)) {
         plane [[ planespawnedfunction ]](owner, requireddeathcount, pathstart, pathend, bombtime, bombspeedscale, flytime, flyspeed);
     }
-    wait(flytime);
+    wait flytime;
     plane notify(#"delete");
     plane delete();
 }
@@ -476,7 +476,7 @@ function gethelipath(start, goal) {
 function function_a43d04ef(goalorigin) {
     self endon(#"death", #"hash_41aaa8d75d168e0a");
     distthresholdsq = 40000;
-    wait(20);
+    wait 20;
     while (true) {
         distsq = distancesquared(self.origin, goalorigin);
         if (distsq <= distthresholdsq) {
@@ -750,7 +750,7 @@ function getstrikepath(target, height, halfdistance, yaw) {
 // Checksum 0x62a70fa0, Offset: 0x2968
 // Size: 0x74
 function doglassdamage(pos, radius, max, min, mod) {
-    wait(randomfloatrange(0.05, 0.15));
+    wait randomfloatrange(0.05, 0.15);
     glassradiusdamage(pos, radius, max, min, mod);
 }
 
@@ -886,7 +886,7 @@ function initrotatingrig() {
 function rotaterig() {
     for (;;) {
         self rotateyaw(-360, 60);
-        wait(60);
+        wait 60;
     }
 }
 
@@ -900,11 +900,11 @@ function swayrig() {
         z = randomintrange(-200, -100);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
         z = randomintrange(100, 200);
         time = randomintrange(3, 6);
         self moveto(centerorigin + (0, 0, z), time, 1, 1);
-        wait(time);
+        wait time;
     }
 }
 
@@ -914,7 +914,7 @@ function swayrig() {
 // Size: 0x3c
 function stoprotation(time) {
     self endon(#"death");
-    wait(time);
+    wait time;
     self stoploopsound();
 }
 
@@ -1074,7 +1074,7 @@ function getrandomhelicopterstartorigin() {
                 if (isdefined(projectile) && projectile) {
                     thread debug_draw_bomb_explosion(prevpos);
                 }
-                wait(0.2);
+                wait 0.2;
             }
         }
     }
@@ -1276,7 +1276,7 @@ function monitorspeed(spawnprotectiontime) {
     }
     self.nottargettedai_underminspeedtimer = 0;
     if (isdefined(spawnprotectiontime)) {
-        wait(spawnprotectiontime);
+        wait spawnprotectiontime;
     }
     while (true) {
         velocity = self getvelocity();
@@ -1286,7 +1286,7 @@ function monitorspeed(spawnprotectiontime) {
         } else {
             self.nottargettedai_underminspeedtimer = 0;
         }
-        wait(waitperiod);
+        wait waitperiod;
     }
 }
 

@@ -62,7 +62,7 @@ function function_2cdcf5c3() {
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
     level flag::wait_till("first_player_spawned");
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0);
     level util::delay(1.5, undefined, &function_fb047aa8);
     level util::delay(1.5, undefined, &stop_exploders);
     level thread scene::play(#"p8_fxanim_mp_ele_tree_gust_01_bundle", "shot 2");

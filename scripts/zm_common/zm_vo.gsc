@@ -89,7 +89,7 @@ function private function_fb728280() {
         if (zm_round_logic::get_round_number() == n_round) {
             level waittill(#"end_of_round");
         }
-        wait(3);
+        wait 3;
     }
     while (true) {
         n_round = zm_round_logic::get_round_number();
@@ -103,7 +103,7 @@ function private function_fb728280() {
             }
         }
         level waittill(#"end_of_round");
-        wait(5);
+        wait 5;
     }
 }
 
@@ -194,7 +194,7 @@ function private _play_banter(var_3e24b5d5, var_a33019a0, a_players, b_force = 0
             } while (n_index <= 20);
             waitframe(1);
         }
-        wait(randomfloatrange(0.333333, 0.666667));
+        wait randomfloatrange(0.333333, 0.666667);
     } while (!(__timeout__ >= 0 && __timeout__ - float(gettime() - var_a51f2d59) / 1000 <= 0));
     level thread function_396064c0(0);
     return false;
@@ -431,7 +431,7 @@ function function_396064c0(var_e29db913 = 1) {
     self notify("6f78b87488cdfba0");
     self endon("6f78b87488cdfba0");
     if (!(isdefined(var_e29db913) && var_e29db913)) {
-        wait(2);
+        wait 2;
     }
     level.var_b625a184 = var_e29db913 ? 1 : undefined;
 }
@@ -502,7 +502,7 @@ function function_18d309e5(n_timeout, var_ec88b612, a_players) {
         if (var_f5f6332.size) {
             break;
         }
-        wait(randomfloatrange(0.2, 0.4));
+        wait randomfloatrange(0.2, 0.4);
     } while (!(__timeout__ >= 0 && __timeout__ - float(gettime() - var_a51f2d59) / 1000 <= 0));
     return var_f5f6332;
 }
@@ -736,7 +736,7 @@ function private function_597484c3(n_delay, var_56f97c91, var_d7714e4e) {
     level.var_62281818[level.var_62281818.size] = self;
     zm_audio::sndvoxoverride(1);
     if (n_delay > 0) {
-        wait(n_delay);
+        wait n_delay;
     }
     zm_audio::play_vo_internal(var_56f97c91, var_d7714e4e ? self : undefined);
     vo_clear();

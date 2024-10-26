@@ -209,7 +209,7 @@ function j_fore_le_01() {
     setbombtimer("A", 0);
     setmatchflag("bomb_timer_a", 0);
     if (level flag::get("mission_failed")) {
-        wait(0.1);
+        wait 0.1;
         level notify(#"combattraining_logic_finished", {#success:0});
     }
 }
@@ -249,7 +249,7 @@ function function_671e5ede() {
     if (var_468ef41) {
         level thread function_544df02a(1, level.var_a62b1ae0.origin);
     }
-    wait(1);
+    wait 1;
     var_2f41d654 = 1;
     while (var_2f41d654) {
         a_bots = ct_bots::function_fbe3dcbb();

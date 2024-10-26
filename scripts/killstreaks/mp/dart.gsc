@@ -55,7 +55,7 @@ function __init__() {
 // Size: 0x66
 function wait_dart_timed_out(time) {
     self endon(#"disconnect", #"death", #"dart_throw_failed", #"dart_entered");
-    wait(time);
+    wait time;
     self notify(#"dart_throw_timed_out");
 }
 
@@ -545,7 +545,7 @@ function watchammo() {
     }
     dart disabledriverfiring(1);
     if (shotcount > 0) {
-        wait(params.ksdartwaittimeafterlastshot);
+        wait params.ksdartwaittimeafterlastshot;
         dart stop_remote_weapon();
     }
 }
@@ -627,7 +627,7 @@ function leave_dart() {
             if (!isdefined(params.ksdartcamerawatchduration)) {
                 params.ksdartcamerawatchduration = 2;
             }
-            wait(params.ksdartcamerawatchduration);
+            wait params.ksdartcamerawatchduration;
             if (isdefined(owner)) {
                 owner cameraactivate(0);
             }
@@ -671,7 +671,7 @@ function deleteonconditions(condition) {
 // Size: 0x4c
 function waitthendelete(waittime) {
     self endon(#"delete", #"death");
-    wait(waittime);
+    wait waittime;
     self delete();
 }
 
@@ -681,7 +681,7 @@ function waitthendelete(waittime) {
 // Size: 0x116
 function play_bda_dialog(pilotindex) {
     self endon(#"game_ended", #"death");
-    wait(0.5);
+    wait 0.5;
     if (!isdefined(self.dartbda) || self.dartbda == 0) {
         bdadialog = "killNone";
     } else if (self.dartbda == 1) {

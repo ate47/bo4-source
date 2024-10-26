@@ -139,10 +139,10 @@ function waiting_for_next_dog_spawn(count, max) {
         default_wait = 0.75;
     }
     if (isdefined(count) && isdefined(max)) {
-        wait(max(default_wait - count / max, 0.05));
+        wait max(default_wait - count / max, 0.05);
         return;
     }
-    wait(max(default_wait - 0.5, 0.05));
+    wait max(default_wait - 0.5, 0.05);
 }
 
 // Namespace zombie_dog_util/ai_dog_util
@@ -150,7 +150,7 @@ function waiting_for_next_dog_spawn(count, max) {
 // Checksum 0xa101c50c, Offset: 0xa70
 // Size: 0xc
 function function_d544de30() {
-    wait(0.25);
+    wait 0.25;
 }
 
 // Namespace zombie_dog_util/ai_dog_util
@@ -174,7 +174,7 @@ function dog_spawn_fx(ai, ent) {
     ai pathmode("dont move", 1);
     playsoundatposition(#"zmb_hellhound_prespawn", ent.origin);
     ai clientfield::increment("dog_spawn_fx");
-    wait(1.5);
+    wait 1.5;
     playsoundatposition(#"zmb_hellhound_bolt", ent.origin);
     ai pathmode("move allowed", 1);
     earthquake(0.5, 0.75, ent.origin, 1000);
@@ -191,7 +191,7 @@ function dog_spawn_fx(ai, ent) {
     assert(isalive(ai), "<dev string:x4d>");
     ai zombie_setup_attack_properties_dog();
     ai val::reset(#"dog_spawn", "allowdeath");
-    wait(0.1);
+    wait 0.1;
     ai show();
     ai setfreecameralockonallowed(1);
     ai val::reset(#"dog_spawn", "ignoreme");
@@ -377,7 +377,7 @@ function dog_round_start() {
     dog_health_increase();
     players = getplayers();
     array::thread_all(players, &play_dog_round);
-    wait(5);
+    wait 5;
     level thread function_c5ab118d();
 }
 
@@ -399,7 +399,7 @@ function dog_round_stop(var_d25bbdd5) {
     level thread zm_audio::sndmusicsystem_playstate("dog_end");
     zm::increment_dog_round_stat("finished");
     level.dog_round_count += 1;
-    wait(5);
+    wait 5;
     if (isdefined(level.var_539f36cd)) {
         [[ level.var_539f36cd ]]();
     } else {
@@ -421,7 +421,7 @@ function function_5f1ef789(var_d25bbdd5) {
     level flag::clear("dog_clips");
     level thread zm_audio::sndmusicsystem_playstate("dog_end");
     zm::increment_dog_round_stat("finished");
-    wait(5);
+    wait 5;
     level thread clientfield::set("dog_round_fog_bank", 0);
 }
 
@@ -431,7 +431,7 @@ function function_5f1ef789(var_d25bbdd5) {
 // Size: 0x8c
 function play_dog_round() {
     variation_count = 5;
-    wait(4.5);
+    wait 4.5;
     players = getplayers();
     num = randomintrange(0, players.size);
     players[num] zm_audio::create_and_play_dialog(#"general", #"dog_spawn");
@@ -545,7 +545,7 @@ function dog_death() {
             level thread dog_explode_fx(self, self.origin);
             self ghost();
             self notsolid();
-            wait(1);
+            wait 1;
         }
         if (isdefined(self)) {
             self delete();
@@ -608,7 +608,7 @@ function dog_behind_audio() {
     self waittill(#"dog_running", #"dog_combat");
     bhtnactionstartevent(self, "close");
     self notify(#"bhtn_action_notify", {#action:"close"});
-    wait(3);
+    wait 3;
     while (true) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
@@ -617,11 +617,11 @@ function dog_behind_audio() {
                 if (abs(dogangle) > 90 && distance2d(self.origin, players[i].origin) > 100) {
                     bhtnactionstartevent(self, "close");
                     self notify(#"bhtn_action_notify", {#action:"close"});
-                    wait(3);
+                    wait 3;
                 }
             }
         }
-        wait(0.75);
+        wait 0.75;
     }
 }
 
@@ -653,10 +653,10 @@ function dog_clip_monitor() {
                     dog_is_alive = 1;
                 }
             }
-            wait(1);
+            wait 1;
         }
         level flag::clear("dog_clips");
-        wait(1);
+        wait 1;
     }
 }
 
@@ -682,7 +682,7 @@ function dog_run_think() {
         if (isdefined(level.custom_dog_target_validity_check)) {
             self [[ level.custom_dog_target_validity_check ]]();
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -695,7 +695,7 @@ function dog_stalk_audio() {
     while (true) {
         bhtnactionstartevent(self, "ambient");
         self notify(#"bhtn_action_notify", {#action:"ambient"});
-        wait(randomfloatrange(3, 6));
+        wait randomfloatrange(3, 6);
     }
 }
 

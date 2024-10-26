@@ -192,7 +192,7 @@ function start_timed_vortex(effect_version, v_vortex_origin, n_vortex_radius, n_
         n_currtime = gettime() - n_starttime;
     }
     n_time_to_wait_for_explosion = n_vortex_time_cl - n_vortex_time_sv + 0.35;
-    wait(n_time_to_wait_for_explosion);
+    wait n_time_to_wait_for_explosion;
     svortex.in_use = 0;
     arrayremovevalue(level.vortex_manager.a_active_vorticies, s_active_vortex);
     vortex_explosion(v_vortex_origin, eattacker, n_vortex_explosion_radius);
@@ -266,7 +266,7 @@ function player_vortex_visionset(name) {
     thread visionset_mgr::activate("visionset", name + "_visionset", self, 0.25, 2, 0.25);
     thread visionset_mgr::activate("overlay", name + "_blur", self, 0.25, 2, 0.25);
     self.idgun_vision_on = 1;
-    wait(2.5);
+    wait 2.5;
     self.idgun_vision_on = 0;
 }
 
@@ -331,7 +331,7 @@ function state_idgun_crush_update(params) {
             self.crush_anim_started = 1;
         }
         fly_ent.origin += veh_to_black_hole_vec * 8;
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -376,7 +376,7 @@ function switch_to_crush_asm(black_hole_center) {
             self asmrequestsubstate(#"hash_1d57c7f1617da95b");
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -390,7 +390,7 @@ function state_idgun_flying_death_update(params) {
         self.parasiteenemy.hunted_by--;
     }
     self playsound(#"zmb_parasite_explo");
-    wait(0.2);
+    wait 0.2;
     self delete();
 }
 

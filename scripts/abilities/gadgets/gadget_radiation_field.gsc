@@ -119,7 +119,7 @@ function sndonoverride_eye_() {
     redline = 0.75;
     player notify(#"hash_477083bb681cce64");
     while (true) {
-        wait(rate);
+        wait rate;
         cur_time += rate;
         percent = min(1, cur_time / total_time);
         if (isdefined(player.var_e9791ff9)) {
@@ -147,7 +147,7 @@ function sndonoverride_eye_() {
     }
     cur_time = 0;
     while (true) {
-        wait(rate);
+        wait rate;
         cur_time += rate;
         percent = min(1, 1 - player.health / start_health);
         value = redline + percent * (1 - redline);
@@ -239,7 +239,7 @@ function function_1503c832(weapon) {
 function state_watch(state_id, time) {
     player = self;
     player endon(#"radiation_shutdown");
-    wait(time);
+    wait time;
     if (isdefined(player)) {
         player notify("state_done_" + state_id);
     }
@@ -461,7 +461,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
                 player [[ level.playgadgetsuccess ]](weapon, undefined, undefined, undefined);
             }
         }
-        wait(dt);
+        wait dt;
         radius += radius_delta;
         half_height += var_a9e00cb3;
         if (radius > max_radius) {
@@ -514,7 +514,7 @@ function function_3cbab338(var_fb096220) {
 function function_579fff1b() {
     player = self;
     player endon(#"death", #"disconnect", #"radiation_shutdown");
-    wait(isdefined(player.gadget_weapon.var_1123a989 / 1000) ? player.gadget_weapon.var_1123a989 / 1000 : 0.5);
+    wait isdefined(player.gadget_weapon.var_1123a989 / 1000) ? player.gadget_weapon.var_1123a989 / 1000 : 0.5;
     if (player function_d79b93e(player.gadget_weapon.var_44c79c09)) {
         waspressed = player fragbuttonpressed();
         for (var_5aea88c3 = waspressed; (!var_5aea88c3 || waspressed) && player function_ff04e054(); var_5aea88c3 = player fragbuttonpressed()) {
@@ -536,7 +536,7 @@ function function_579fff1b() {
 function waitanddelete(time) {
     self ghost();
     self endon(#"death");
-    wait(time);
+    wait time;
     self delete();
 }
 

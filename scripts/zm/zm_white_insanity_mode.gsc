@@ -206,7 +206,7 @@ function function_d7fe6be2() {
                 level flag::clear(#"shed_waiting");
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -219,7 +219,7 @@ function reset_wisp() {
     level.var_d416f0ff.vh_wisp.origin = nd_start.origin;
     level.var_d416f0ff.vh_wisp.angles = nd_start.angles;
     level.var_d416f0ff.vh_wisp vehicle::get_on_path(nd_start);
-    wait(0.5);
+    wait 0.5;
     level.var_d416f0ff.vh_wisp clientfield::set("fx8_insanity_wisp", 1);
 }
 
@@ -252,7 +252,7 @@ function function_dba32984() {
         is_player_touching = 1;
         a_e_players = getplayers();
         while (is_player_touching) {
-            wait(0.25);
+            wait 0.25;
             foreach (e_player in a_e_players) {
                 is_player_touching = 0;
                 if (e_player istouching(self.var_ef55363f)) {
@@ -291,7 +291,7 @@ function function_4bcfb4d9() {
             level flag::wait_till_clear(#"hash_35762ecd1ee8f3c1");
             namespace_456de992::door_powerup_drop(level.perk_type, level.ammodrop.origin);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -344,7 +344,7 @@ function insanity_mode_step3_setup(var_5ea5c94d) {
             /#
                 iprintlnbold("<dev string:xdb>");
             #/
-            wait(0.5);
+            wait 0.5;
             level.var_c2511d7b = getplayers();
             s_insanity_mode_confirmation zm_unitrigger::create(str_hint, 96);
             zm_unitrigger::function_89380dda(s_insanity_mode_confirmation.s_unitrigger, 1);
@@ -437,7 +437,7 @@ function function_1541f1c9() {
     playsoundatposition(#"hash_83b85ca3e963765", (0, 0, 0));
     level thread lui::screen_flash(1, 2, 1, 1, "white");
     array::run_all(getaiarray(), &namespace_9ff9f642::freeze);
-    wait(1);
+    wait 1;
     zm_white_main_quest::function_32c317fb();
     zm_white_portals::function_5c2807fc();
     function_69a6d31a(1);
@@ -451,7 +451,7 @@ function function_1541f1c9() {
     for (i = 0; i < a_e_players.size; i++) {
         a_e_players[i] zm_fasttravel::function_2aed1d83(var_a0b0c8c4[i], 1);
     }
-    wait(2 + 1);
+    wait 2 + 1;
     function_411302d7();
     level thread zm_audio::sndannouncerplayvox(undefined, undefined, "vox_event_insanitystart_avoa_0");
     level thread function_b693a570();
@@ -478,7 +478,7 @@ function function_b693a570() {
         if (var_432c4ea2.size <= 0) {
             var_432c4ea2 = array::randomize(var_5f530783);
         }
-        wait(1);
+        wait 1;
     }
 }
 

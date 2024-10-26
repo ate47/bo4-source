@@ -530,7 +530,7 @@ function function_162c09a8(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     self stoprenderoverridebundle("rob_gaia_bush_transform_start");
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self playrenderoverridebundle("rob_gaia_bush_transform_finish");
     }
@@ -544,7 +544,7 @@ function function_162c09a8(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_a3c7c7fa(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         playsound(localclientnum, #"hash_2545ab11d0e8966a", self.origin);
-        wait(0.5);
+        wait 0.5;
         if (isdefined(self)) {
             self.var_8eb4e749 = playfx(localclientnum, level._effect[#"hash_501b5bcc2ef34bb5"], self.origin + (0, 0, 45) + anglestoforward(self.angles) * -6, anglestoforward(self.angles), anglestoup(self.angles));
             self playrenderoverridebundle("rob_zm_gaia_portal_dissolve");

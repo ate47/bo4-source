@@ -293,7 +293,7 @@ function function_993730f4() {
 // Size: 0x6c
 function function_a67de655(e_player) {
     e_player zm_orange_util::function_51b752a9(#"hash_7e030fccc2c5a121");
-    wait(1);
+    wait 1;
     if (level.var_98138d6b > 1) {
         level.var_1c53964e thread zm_hms_util::function_6a0d675d(#"hash_7cc5c64ef2e9f6bf");
     }
@@ -628,7 +628,7 @@ function function_735037d4() {
     if (isdefined(self.e_lock)) {
         self.e_lock delete();
     }
-    wait(0.5);
+    wait 0.5;
     self.e_lid rotatepitch(-90, 2, 0, 0.666667);
     self.e_lid playsound(#"hash_1cfa90c531f36b92");
     self.e_lid waittill(#"rotatedone");

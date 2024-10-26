@@ -167,7 +167,7 @@ function function_ffa01525() {
         n_default_wait = 0.25;
         break;
     }
-    wait(n_default_wait);
+    wait n_default_wait;
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util

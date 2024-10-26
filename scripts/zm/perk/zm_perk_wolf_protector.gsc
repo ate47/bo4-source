@@ -183,7 +183,7 @@ function function_ce74ad2e() {
     level endon(#"end_game");
     self endon(#"death", #"disconnect", #"wolf_protector_spawn");
     self.var_669304d0 = 1;
-    wait(4);
+    wait 4;
     if (self.var_2dc0d63c <= level.zombie_health * 6 || self.var_841cdb3 <= 6) {
         self.var_669304d0 = 0;
     }
@@ -205,7 +205,7 @@ function function_f3cd6eac() {
             #/
             self playsound(#"hash_7c5128882f070d07");
             self notify(#"wolf_protector_spawn");
-            wait(1.5);
+            wait 1.5;
             if (zm_utility::is_player_valid(self, undefined, undefined, undefined, 0) && self hasperk(#"specialty_wolf_protector")) {
                 self function_d0c6285a();
             }
@@ -250,7 +250,7 @@ function function_d0c6285a() {
             ai clientfield::increment("wolf_protector_spawn_fx");
             ai thread clientfield::set("wolf_protector_fx", 1);
             ai ghost();
-            wait(0.6);
+            wait 0.6;
             if (isdefined(ai)) {
                 ai show();
                 ai spawn_shockwave();
@@ -362,7 +362,7 @@ function function_eb6d99d7(var_1483b30b) {
     n_time_left = var_1483b30b;
     self zm_perks::function_13880aa5(self.var_7d46fb46, 1, #"perk_wolf_protector");
     while (n_time_left > 0) {
-        wait(0.1);
+        wait 0.1;
         n_time_left -= 0.1;
         n_time_left = math::clamp(n_time_left, 0, var_1483b30b);
         n_percentage = n_time_left / var_1483b30b;
@@ -384,7 +384,7 @@ function function_166fb685(var_85dcb56c) {
         self zm_perks::function_2ac7579(self.var_7d46fb46, 2, #"perk_wolf_protector");
     }
     self thread function_7d72c6f9(var_85dcb56c);
-    wait(var_85dcb56c);
+    wait var_85dcb56c;
     self thread reset_cooldown();
 }
 
@@ -397,7 +397,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self.var_72c60d5 = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_7d46fb46, 0, #"perk_wolf_protector");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         self.var_72c60d5 -= 0.1;
         self.var_72c60d5 = math::clamp(self.var_72c60d5, 0, var_85dcb56c);
         n_percentage = 1 - self.var_72c60d5 / var_85dcb56c;

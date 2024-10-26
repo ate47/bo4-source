@@ -178,7 +178,7 @@ function private breadcrumbs() {
         if (isalive(self)) {
             recordbreadcrumbdataforplayer(self);
         }
-        wait(waittime);
+        wait waittime;
     }
 }
 
@@ -190,14 +190,14 @@ function private travel_dist() {
     self endon(#"death", #"disconnect");
     waittime = 1;
     minimummovedistance = 16;
-    wait(4);
+    wait 4;
     if (!isdefined(self.pers[#"movement_update_count"])) {
         self.pers[#"movement_update_count"] = 0;
     }
     prevpos = self.origin;
     positionptm = self.origin;
     while (true) {
-        wait(waittime);
+        wait waittime;
         if (self util::isusingremote()) {
             self waittill(#"stopped_using_remote");
             prevpos = self.origin;
@@ -336,14 +336,14 @@ function private inactivity() {
     self endon(#"disconnect");
     self notify(#"player_monitor_inactivity");
     self endon(#"player_monitor_inactivity");
-    wait(10);
+    wait 10;
     while (true) {
         if (isdefined(self)) {
             if (self isremotecontrolling() || self util::isusingremote() || isdefined(level.inprematchperiod) && level.inprematchperiod || isdefined(self.var_4c45f505) && self.var_4c45f505) {
                 self resetinactivitytimer();
             }
         }
-        wait(5);
+        wait 5;
     }
 }
 

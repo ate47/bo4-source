@@ -92,7 +92,7 @@ function electric_cherry_stun() {
     }
     self ai::stun();
     self val::set(#"electric_cherry_stun", "ignoreall", 1);
-    wait(4);
+    wait 4;
     if (isdefined(self)) {
         self ai::clear_stun();
         self val::reset(#"electric_cherry_stun", "ignoreall");
@@ -220,7 +220,7 @@ function function_81622feb() {
     self notify(#"hash_2e9b55fc4344af57");
     self endon(#"disconnect", #"hash_2e9b55fc4344af57");
     self thread function_857ced89();
-    wait(self.var_dbaad7dd);
+    wait self.var_dbaad7dd;
     self playsoundtoplayer(#"hash_ea37a7d6cf6bfb3", self);
     self notify(#"hash_5435513976a87bce");
     self.var_c25a91ee = 0;
@@ -251,7 +251,7 @@ function function_857ced89() {
     var_8b3ae2d6 = var_9ade76c0 / 10;
     self zm_perks::function_13880aa5(3, var_8b3ae2d6, #"perk_electric_cherry");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         n_time_left -= 0.1;
         n_time_left = math::clamp(n_time_left, 0, var_9ade76c0);
         n_percentage = n_time_left / var_9ade76c0;

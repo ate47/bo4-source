@@ -32,7 +32,7 @@ function event_handler[level_init] main(eventstruct) {
 // Size: 0x84
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0.3));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0.3);
     if (util::isfirstround()) {
         exploder::exploder("fxexp_tanker_explosion");
     }

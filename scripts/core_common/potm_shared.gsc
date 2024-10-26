@@ -333,11 +333,11 @@ function function_b0bc26b3(deathtime, starttime) {
     waitbeforedeath = 1;
     timetowait = max(0, float(var_a7e16ed3) / 1000 - waitbeforedeath);
     game.var_a1e9e96a = gettime() + timetowait * 1000;
-    wait(timetowait);
+    wait timetowait;
     util::setclientsysstate("levelNotify", "sndFKsl");
     self playlocalsound(#"hash_96a5f3e5e8749c6");
     setslowmotion(1, 0.25, waitbeforedeath);
-    wait(waitbeforedeath);
+    wait waitbeforedeath;
     self playlocalsound(#"hash_38072640bdeb5b48");
     setslowmotion(0.25, 1, 1);
     game.var_a1e9e96a = undefined;
@@ -678,7 +678,7 @@ function private function_60211cf4(sequence) {
             if (function_caf394b8(event.duration)) {
                 setslowmotion(starttimescale, currenttimescale, event.duration);
             }
-            wait(event.duration);
+            wait event.duration;
         }
         cameraindex++;
     } while (cameraindex < sequence.params.events.size);
@@ -688,7 +688,7 @@ function private function_60211cf4(sequence) {
     }
     timeelapsed = float(gettime() - currenttime) / 1000;
     if (sequence.duration > timeelapsed) {
-        wait(sequence.duration - timeelapsed);
+        wait sequence.duration - timeelapsed;
     }
 }
 
@@ -826,7 +826,7 @@ function private function_b1b3bfc5(event, var_50c26ba) {
     }
     foreach (sequence in var_353e7913) {
         if (isdefined(sequence.var_cef682cb) && sequence.var_cef682cb == 1) {
-            wait(sequence.duration);
+            wait sequence.duration;
             continue;
         }
         function_60211cf4(sequence);
@@ -844,7 +844,7 @@ function private function_a85adb2c(delta) {
     time = gettime();
     delta -= 300;
     if (delta > 0) {
-        wait(float(delta) / 1000);
+        wait float(delta) / 1000;
     }
     luinotifyevent(#"post_potm_transition");
 }
@@ -890,7 +890,7 @@ function function_b6a5e7fa(repeatcount = 1) {
     setmatchflag("potm", 1);
     luinotifyevent(#"pre_potm_transition");
     level notify(#"pre_potm");
-    wait(0.25);
+    wait 0.25;
     exit = 0;
     count = 0;
     game.var_142de1de = 1;
@@ -940,7 +940,7 @@ function function_b6a5e7fa(repeatcount = 1) {
                 }
                 player thread play_potm_on_player(event);
             }
-            wait(0.1);
+            wait 0.1;
             while (killcam::are_any_players_watching() && !exit) {
                 for (index = 0; index < level.players.size; index++) {
                     player = level.players[index];
@@ -962,7 +962,7 @@ function function_b6a5e7fa(repeatcount = 1) {
     if (exit) {
         self notify(#"hash_17418db31d60118f");
         luinotifyevent(#"post_potm_transition");
-        wait(0.3);
+        wait 0.3;
     }
     foreach (player in level.players) {
         player killcam::spawn_end_of_final_killcam();

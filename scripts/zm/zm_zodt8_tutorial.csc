@@ -38,7 +38,7 @@ function event_handler[level_init] main(eventstruct) {
 // Size: 0x19c
 function function_9fc8cc9c(localclientnum) {
     do {
-        wait(1);
+        wait 1;
     } while (!isdefined(getent(localclientnum, "altar_icon_0", "targetname")));
     for (i = 0; i < 4; i++) {
         mdl_icon = getent(localclientnum, "altar_icon_" + i, "targetname");

@@ -153,7 +153,7 @@ function function_7424eebb() {
         } else {
             self function_7b5fc171();
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 

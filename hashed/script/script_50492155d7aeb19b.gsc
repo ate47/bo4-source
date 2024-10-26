@@ -56,7 +56,7 @@ function private function_8bb2443b() {
             self zm_custom::function_db030433();
             self zm_score::player_reduce_points("take_specified", level.var_b31000be);
         }
-        wait(1);
+        wait 1;
     }
 }
 

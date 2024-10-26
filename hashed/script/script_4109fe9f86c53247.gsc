@@ -69,7 +69,7 @@ function function_68b149a2(var_64e17761) {
     self endon("59cd2610cddc7a0b");
     level endon(#"hash_7646638df88a3656");
     self endon(#"disconnect");
-    wait(12);
+    wait 12;
     while (true) {
         var_4cda8676 = 0;
         foreach (var_c1f5749f in var_64e17761) {
@@ -89,7 +89,7 @@ function function_68b149a2(var_64e17761) {
                 self allowslide(0);
                 self thread function_7d81b8c1();
             }
-            wait(1);
+            wait 1;
         } else {
             if (self.var_86278a02 === 0) {
                 self.var_86278a02 = 1;
@@ -98,7 +98,7 @@ function function_68b149a2(var_64e17761) {
                 self thread function_d2dd1f2b();
                 self clientfield::set_to_player("" + #"hash_13f1aaee7ebf9986", 0);
             }
-            wait(1);
+            wait 1;
         }
         waitframe(1);
     }
@@ -116,7 +116,7 @@ function function_7d81b8c1() {
         self.var_8b5609a4 = 0;
     }
     while (true) {
-        wait(1);
+        wait 1;
         self.var_8b5609a4++;
         if (self.var_2e6aa97d === 1) {
             var_24e0e73d = 15;
@@ -197,7 +197,7 @@ function function_d2dd1f2b() {
         return;
     }
     while (true) {
-        wait(1);
+        wait 1;
         self.var_36a93d1--;
         if (self.var_36a93d1 <= 0) {
             self.var_36a93d1 = 0;

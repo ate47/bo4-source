@@ -138,7 +138,7 @@ function timeout_lerp_thread(timeout, opt_param_2, opt_param_3) {
     for (player_index = 0; player_index < players.size; player_index++) {
         self set_state_active(players[player_index], 1);
     }
-    wait(timeout);
+    wait timeout;
     deactivate(self.type, self.name);
 }
 
@@ -148,7 +148,7 @@ function timeout_lerp_thread(timeout, opt_param_2, opt_param_3) {
 // Size: 0x6c
 function timeout_lerp_thread_per_player(player, timeout, opt_param_2, opt_param_3) {
     self set_state_active(player, 1);
-    wait(timeout);
+    wait timeout;
     deactivate_per_player(self.type, self.name, player);
 }
 
@@ -250,7 +250,7 @@ function ramp_in_out_thread(ramp_in, full_period, ramp_out) {
     if (isfunctionptr(full_period)) {
         self [[ full_period ]]();
     } else {
-        wait(full_period);
+        wait full_period;
     }
     level notify(#"kill_ramp_in_out_thread_hold_func");
     start_time = gettime();
@@ -288,7 +288,7 @@ function ramp_in_out_thread_per_player_internal(player, ramp_in, full_period, ra
     if (isfunctionptr(full_period)) {
         player [[ full_period ]]();
     } else {
-        wait(full_period);
+        wait full_period;
     }
     start_time = gettime();
     end_time = start_time + int(ramp_out * 1000);

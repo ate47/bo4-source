@@ -361,7 +361,7 @@ function function_a217c7b4(b_success) {
         entity delete();
     }
     if (b_success && true && isdefined(level.var_38c87b5) && level.var_38c87b5) {
-        wait(2);
+        wait 2;
         e_player = getplayers(#"allies")[0];
         e_player val::set(#"potm", "freezecontrols", 1);
         println("<dev string:x38>");
@@ -370,7 +370,7 @@ function function_a217c7b4(b_success) {
         println("<dev string:x83>");
         e_player = getplayers(#"allies")[0];
         e_player val::reset(#"potm", "freezecontrols");
-        wait(0.3);
+        wait 0.3;
     }
     e_player = getplayers(#"allies")[0];
     e_player ct_ui::function_fa910e34(b_success, var_cd803a6b);

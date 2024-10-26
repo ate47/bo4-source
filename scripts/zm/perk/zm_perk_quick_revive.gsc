@@ -171,7 +171,7 @@ function turn_revive_on() {
 // Size: 0x466
 function unhide_quickrevive() {
     while (zm_perks::players_are_in_perk_area(level.quick_revive_machine)) {
-        wait(0.1);
+        wait 0.1;
     }
     if (isdefined(level.quick_revive_machine_clip)) {
         level.quick_revive_machine_clip show();

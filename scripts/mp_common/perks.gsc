@@ -140,7 +140,7 @@ function monitorgpsjammer() {
             level notify(#"radar_status_change");
         }
         timesincedistancecheck += timeperiodsec;
-        wait(timeperiodsec);
+        wait timeperiodsec;
     }
 }
 
@@ -233,7 +233,7 @@ function monitorsengrenjammer() {
             level notify(#"radar_status_change");
         }
         timesincedistancecheck += timeperiodsec;
-        wait(timeperiodsec);
+        wait timeperiodsec;
     }
 }
 

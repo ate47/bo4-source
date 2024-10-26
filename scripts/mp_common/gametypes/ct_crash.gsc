@@ -80,7 +80,7 @@ function function_ee93e2d4(weapon, source_player) {
 // Size: 0x26
 function function_bcf30399() {
     level.var_3574b65f = 1;
-    wait(7);
+    wait 7;
     level.var_3574b65f = 0;
 }
 
@@ -345,7 +345,7 @@ function function_807d5645() {
 // Size: 0x1f4
 function function_836b3d02() {
     level endon(#"combattraining_logic_finished");
-    wait(20);
+    wait 20;
     var_6207d37d = 0;
     while (true) {
         if (true) {
@@ -379,7 +379,7 @@ function function_836b3d02() {
             if (!isdefined(e_captive)) {
                 return;
             }
-            wait(10);
+            wait 10;
             var_6207d37d = 0;
             break;
         case 4:
@@ -549,7 +549,7 @@ function function_9087a4b6() {
     while (true) {
         level waittill(#"friendly_revived");
         level.var_3bdcb692 = 1;
-        wait(10);
+        wait 10;
         level.var_3bdcb692 = 0;
     }
 }

@@ -412,7 +412,7 @@ function private function_f0adf9c() {
 // Size: 0x4c
 function function_765a2e96() {
     self endon(#"death", #"disconnect");
-    wait(1.5);
+    wait 1.5;
     self sethintstring("");
 }
 

@@ -90,7 +90,7 @@ function function_f37ba127() {
             self zm_utility::giveachievement_wrapper("zm_white_unlock", 0);
             return;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -222,7 +222,7 @@ function function_5e1138a2() {
             self.var_c9f12812[waitresult.n_slot] = 1;
             self thread perk_watcher();
             for (i = 0; i < 35; i++) {
-                wait(1);
+                wait 1;
                 if (self function_91cfddc4()) {
                     /#
                         iprintlnbold("<dev string:x143>" + i + 1);

@@ -213,7 +213,7 @@ function state_unaware_update(params) {
         }
         self turretsettargetangles(0, (scanning_pitch, scanning_arc, 0));
         self vehicle_ai::evaluate_connections();
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -237,7 +237,7 @@ function function_f2d20a04(params) {
     self endon(#"change_state");
     if (isdefined(self.enemy)) {
         sentry_turret_alert_sound();
-        wait(0.5);
+        wait 0.5;
     }
     while (true) {
         if (isdefined(self.enemy) && self cansee(self.enemy)) {
@@ -245,31 +245,31 @@ function function_f2d20a04(params) {
             if (isdefined(self.enemy) && self haspart("tag_minigun_spin")) {
                 self turretsettarget(0, self.enemy);
                 self setturretspinning(1);
-                wait(0.5);
+                wait 0.5;
             }
             for (i = 0; i < 3; i++) {
                 if (isdefined(self.enemy) && isalive(self.enemy) && self cansee(self.enemy)) {
                     self turretsettarget(0, self.enemy);
-                    wait(0.1);
+                    wait 0.1;
                     waittime = randomfloatrange(self.settings.var_ddd34f14, self.settings.var_80f38c52);
                     if (self.settings.disablefiring !== 1) {
                         self sentry_turret_fire_for_time(waittime, self.enemy);
                     } else {
-                        wait(waittime);
+                        wait waittime;
                     }
                 }
                 if (isdefined(self.enemy) && isplayer(self.enemy)) {
-                    wait(randomfloatrange(self.settings.var_77e64d20, self.settings.var_d4e8eb34));
+                    wait randomfloatrange(self.settings.var_77e64d20, self.settings.var_d4e8eb34);
                     continue;
                 }
-                wait(randomfloatrange(self.settings.var_dd6ae92f, self.settings.var_be5db78d));
+                wait randomfloatrange(self.settings.var_dd6ae92f, self.settings.var_be5db78d);
             }
             self setturretspinning(0);
             if (isdefined(self.enemy) && isalive(self.enemy) && self cansee(self.enemy)) {
                 if (isplayer(self.enemy)) {
-                    wait(randomfloatrange(0.5, 1.3));
+                    wait randomfloatrange(0.5, 1.3);
                 } else {
-                    wait(randomfloatrange(0.5, 1.3) * 2);
+                    wait randomfloatrange(0.5, 1.3) * 2;
                 }
             }
         }
@@ -279,7 +279,7 @@ function function_f2d20a04(params) {
         } else {
             n_cooldown_time = 0.5;
         }
-        wait(n_cooldown_time);
+        wait n_cooldown_time;
     }
 }
 
@@ -299,14 +299,14 @@ function sentry_turret_fire_for_time(totalfiretime, enemy) {
     self endon(#"death");
     self endon(#"change_state");
     sentry_turret_alert_sound();
-    wait(0.1);
+    wait 0.1;
     weapon = self seatgetweapon(0);
     firetime = weapon.firetime;
     time = 0;
     is_minigun = 0;
     while (time < totalfiretime) {
         self fireweapon(0, enemy);
-        wait(firetime);
+        wait firetime;
         time += firetime;
     }
     if (is_minigun) {
@@ -379,13 +379,13 @@ function state_emped_update(params) {
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer")) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
-        wait(timeleft);
+        wait timeleft;
     }
     self.abnormal_status.emped = 0;
     self vehicle::toggle_emp_fx(0);
     self vehicle_ai::emp_startup_fx();
     self rest_turret(0);
-    wait(1);
+    wait 1;
     self vehicle_ai::evaluate_connections();
 }
 
@@ -459,7 +459,7 @@ function function_862359b8() {
     self endon(#"death");
     if (isdefined(self)) {
         self stoploopsound(0.5);
-        wait(2);
+        wait 2;
         if (isdefined(self)) {
             self delete();
         }

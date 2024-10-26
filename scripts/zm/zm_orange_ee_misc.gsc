@@ -207,7 +207,7 @@ function function_a4e86068() {
     do {
         if (false) {
             b_delayed = 1;
-            wait(1);
+            wait 1;
             continue;
         }
         n_next_round = level.round_number + 1;
@@ -280,7 +280,7 @@ function function_a1b4b25d(var_d25bbdd5) {
     zm_round_spawning::function_df803678(&zombie_dog_util::function_ed67c5e7);
     level thread zm_audio::sndmusicsystem_playstate("dog_end");
     level.zombie_round_start_delay = undefined;
-    wait(5);
+    wait 5;
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
@@ -311,7 +311,7 @@ function function_c83f59db() {
 // Size: 0x3c
 function function_5bfaa04() {
     n_time = zm_round_logic::get_zombie_spawn_delay(level.round_number + level.var_1c921b2b);
-    wait(n_time);
+    wait n_time;
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
@@ -406,7 +406,7 @@ function function_bfb15d08() {
     zm_ui_inventory::function_7df6bb60("flinger_gear_box_1", 0);
     zm_orange_pablo::function_b9e15919(1);
     level flag::set(#"hash_59d5ba61f4b8f405");
-    wait(15);
+    wait 15;
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
@@ -527,7 +527,7 @@ function function_b37bdeb4() {
     zm_ui_inventory::function_7df6bb60("flinger_gear_box_2", 0);
     zm_orange_pablo::function_b9e15919(1);
     level flag::set(#"hash_59d5ba61f4b8f405");
-    wait(15);
+    wait 15;
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
@@ -784,7 +784,7 @@ function edge_watcher() {
     while (!level flag::get(#"edge_launched")) {
         if (self istouching(level.var_4ac8ef63) && !(isdefined(level.var_4ac8ef63.b_claimed) && level.var_4ac8ef63.b_claimed)) {
             level.var_4ac8ef63.b_claimed = 1;
-            wait(0.5);
+            wait 0.5;
             self thread function_bc1ff036();
             while (self istouching(level.var_4ac8ef63)) {
                 var_68460903 = self getnormalizedcameramovement();
@@ -792,14 +792,14 @@ function edge_watcher() {
                 #/
                 if (abs(var_68460903[1]) < 0.9 || self getstance() != "crouch") {
                     level.var_4ac8ef63.b_claimed = 0;
-                    wait(3);
+                    wait 3;
                     self thread edge_watcher();
                     return;
                 }
                 waitframe(1);
             }
             level.var_4ac8ef63.b_claimed = 0;
-            wait(3);
+            wait 3;
         }
         waitframe(1);
     }
@@ -812,7 +812,7 @@ function edge_watcher() {
 function function_bc1ff036() {
     level endon(#"end_game");
     self endon(#"death");
-    wait(2.4);
+    wait 2.4;
     if (level.var_4ac8ef63.b_claimed) {
         self.var_e5340f3e = 1;
     }
@@ -838,7 +838,7 @@ function function_8bc27fd3(var_5ea5c94d) {
                     return;
                 }
             }
-            wait(1);
+            wait 1;
         }
     }
 }
@@ -888,7 +888,7 @@ function edge_exit_watcher() {
     s_notify = self waittilltimeout(120, #"entering_last_stand", #"edge_exit");
     if (isalive(self) && (self zm_zonemgr::is_player_in_zone(array("edge")) || self istouching(edge_life_brush))) {
         self thread lui::screen_flash(3, 1, 0.5, 1, "white");
-        wait(3.5);
+        wait 3.5;
         if (self isusingoffhand()) {
             self forceoffhandend();
         }
@@ -969,10 +969,10 @@ function function_cabcfdd2() {
         self waittill(#"trigger_activated");
         var_b3ee22cc++;
         playsoundatposition(#"hash_71d9e237e73ab437", self.origin);
-        wait(0.5);
+        wait 0.5;
         if (var_b3ee22cc >= 3) {
             playsoundatposition(#"hash_4d9caefa6e6dd2e7", self.origin);
-            wait(3);
+            wait 3;
             level flag::set(#"hash_431a5026505d71aa");
         }
     }

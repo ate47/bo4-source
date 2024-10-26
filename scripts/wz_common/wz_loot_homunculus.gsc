@@ -87,7 +87,7 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     var_7580ce3e = spawnstruct();
     var_7580ce3e.origin = dynent.origin + (0, 0, 32);
     function_e2a06860(dynent, 2);
-    wait(0.7);
+    wait 0.7;
     if (isdefined(dynent)) {
         function_e2a06860(dynent, 3);
     }
@@ -132,7 +132,7 @@ function function_7a1e21a9(v_loc) {
         v_loc = trace[#"position"];
     }
     time = self wz_ai_utils::fake_physicslaunch(v_loc, 100);
-    wait(time);
+    wait time;
     if (isdefined(self)) {
         self.origin = v_loc;
     }

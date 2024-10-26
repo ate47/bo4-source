@@ -118,7 +118,7 @@ function private function_25c6cba0(entity, origin) {
 // Size: 0x3c
 function private function_ef1b9d42() {
     self endon(#"death");
-    wait(5);
+    wait 5;
     self clientfield::set("zombie_electric_burst_stun_friendly_clientfield", 0);
 }
 
@@ -137,7 +137,7 @@ function private function_79e38cc4(origin) {
                 players[i] status_effect::status_effect_apply(level.var_f8eb6737, undefined, players[i], 0);
             }
         }
-        wait(time_step);
+        wait time_step;
         var_74d136f5 += time_step;
     }
 }

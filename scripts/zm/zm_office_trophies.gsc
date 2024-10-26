@@ -255,7 +255,7 @@ function function_d62a70b4() {
 function function_98390b60() {
     level endon(#"hash_40475441c5bdca82");
     while (function_1cc0b38a()) {
-        wait(1);
+        wait 1;
     }
     level.var_2ae5b6fb = undefined;
 }

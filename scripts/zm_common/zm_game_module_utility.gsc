@@ -31,7 +31,7 @@ function rotate_ring(forward) {
     }
     while (true) {
         self rotateyaw(dir, 9);
-        wait(9);
+        wait 9;
     }
 }
 

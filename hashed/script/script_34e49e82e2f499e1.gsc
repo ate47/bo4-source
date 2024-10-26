@@ -137,7 +137,7 @@ function function_dabe7910() {
     self endon("2a2995dfcd2ea5d3");
     level endon(#"game_ended");
     self endon(#"death");
-    wait(104);
+    wait 104;
     function_e2a06860(self, 0);
 }
 

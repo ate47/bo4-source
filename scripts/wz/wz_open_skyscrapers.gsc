@@ -486,7 +486,7 @@ function function_2560f130() {
                 player setorigin(var_4ff6627b[n_index].origin);
                 player setplayerangles((0, var_4ff6627b[n_index].angles[1], 0));
                 var_d4714efb = n_index;
-                wait(0.1);
+                wait 0.1;
             }
             waitframe(1);
         }
@@ -1466,7 +1466,7 @@ function function_2560f130() {
             player = util::gethostplayer();
             n_index = 0;
             var_d4714efb = 0;
-            wait(3);
+            wait 3;
             while (true) {
                 if (player util::up_button_pressed()) {
                     if (n_index < level.totalspawnpoints.size - 1) {
@@ -1485,7 +1485,7 @@ function function_2560f130() {
                     player setorigin(level.totalspawnpoints[n_index].origin);
                     player setplayerangles((0, level.totalspawnpoints[n_index].angles[1], 0));
                     var_d4714efb = n_index;
-                    wait(0.1);
+                    wait 0.1;
                 }
                 if (player buttonpressed("<dev string:x5bb>")) {
                     spawn = level.totalspawnpoints[n_index];
@@ -1512,7 +1512,7 @@ function function_2560f130() {
                 break;
             }
             setdvar(#"scr_give_wz_item", 0);
-            wait(0.5);
+            wait 0.5;
         }
     }
 

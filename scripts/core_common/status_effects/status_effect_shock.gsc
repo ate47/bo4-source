@@ -70,7 +70,7 @@ function private shock_rumble_loop(duration) {
     goaltime = gettime() + int(duration * 1000);
     while (gettime() < goaltime && isdefined(self.owner)) {
         self.owner playrumbleonentity("proximity_grenade");
-        wait(1);
+        wait 1;
     }
 }
 

@@ -104,9 +104,9 @@ function on_player_spawned() {
 // Size: 0x84
 function fade_to_black_for_x_sec(startwait, blackscreenwait, fadeintime, fadeouttime, shadername) {
     self endon(#"disconnect");
-    wait(startwait);
+    wait startwait;
     self lui::screen_fade_out(fadeintime, shadername);
-    wait(blackscreenwait);
+    wait blackscreenwait;
     self lui::screen_fade_in(fadeouttime, shadername);
 }
 
@@ -276,7 +276,7 @@ function function_9b9f0fd8(str_identifier, var_cc966c56, b_success = 1, e_player
         return;
     }
     var_776f69c5 flag::set("updating");
-    wait(0.75);
+    wait 0.75;
     if (isdefined(s_objective.s_radiant.var_b6340ad0) && isdefined(s_objective.s_radiant.var_b6340ad0[var_cc966c56]) && s_objective.s_radiant.var_b6340ad0[var_cc966c56]) {
         clientfield::set_world_uimodel(var_67af9061 + ".progressType", 0);
         s_objective.s_radiant.var_b6340ad0[var_cc966c56] = undefined;
@@ -307,7 +307,7 @@ function function_9b9f0fd8(str_identifier, var_cc966c56, b_success = 1, e_player
         a_e_players = util::get_players(var_cc966c56);
     }
     s_objective function_a192bfac(a_e_players, var_cc966c56, n_state);
-    wait(5);
+    wait 5;
     var_268f9951 = 0;
     if (var_776f69c5.var_85444a6a === s_objective) {
         var_268f9951 = 1;
@@ -459,7 +459,7 @@ function private function_da72e57e(var_776f69c5, var_67af9061, var_cc966c56) {
     if (clientfield::get_world_uimodel(var_67af9061 + ".activeObjective.objId") != var_e563ad04.var_f84d27e3) {
         clientfield::set_world_uimodel(var_67af9061 + ".activeObjective.objId", var_e563ad04.var_f84d27e3);
         clientfield::set_world_uimodel(var_67af9061 + ".activeObjective.state", 0);
-        wait(1);
+        wait 1;
         var_e563ad04.var_53ea10a7[var_cc966c56] = 1;
         if (isdefined(var_e563ad04.var_4df20a3b) && var_e563ad04.var_4df20a3b) {
             var_776f69c5.var_d201303e = 1;
@@ -527,7 +527,7 @@ function function_e5ae6379(var_ea5acf75 = #"none", var_f30c60cd = 1) {
         if (isdefined(var_e563ad04.var_852d1dbb) && var_e563ad04.var_852d1dbb) {
             var_e563ad04 function_e16f5c1b();
         } else {
-            wait(2.25);
+            wait 2.25;
         }
         foreach (var_cc966c56 in array(#"axis", #"allies")) {
             var_776f69c5 = level.var_6371e281[var_cc966c56];
@@ -565,7 +565,7 @@ function function_e5ae6379(var_ea5acf75 = #"none", var_f30c60cd = 1) {
         }
     }
     if (var_5ebfaa95.size) {
-        wait(5);
+        wait 5;
         foreach (var_cc966c56 in var_5ebfaa95) {
             var_776f69c5 = level.var_6371e281[var_cc966c56];
             var_67af9061 = "hudItems.cpObjective." + level.teams[var_cc966c56];
@@ -626,7 +626,7 @@ function private function_e16f5c1b() {
         return;
     }
     level thread objective_result(var_ea5acf75, var_2d3a83aa, var_733d0d81);
-    wait(5);
+    wait 5;
     function_ba453727();
     level notify(#"hash_3a83767fc316ef21");
 }
@@ -1034,7 +1034,7 @@ function private function_6609ffc(var_cc966c56, n_progress) {
     if (!isdefined(level.var_d1623b35[var_7dd3cd12])) {
         level.var_d1623b35[var_7dd3cd12] = 0;
     }
-    wait(randomfloatrange(0.5, 3));
+    wait randomfloatrange(0.5, 3);
     var_1f533a56 = n_progress - 10;
     if (randomint(100) > 90 && n_progress + 2.5 < 100) {
         var_8b3ae2d6 = n_progress + 2.5;
@@ -1144,11 +1144,11 @@ function mission_result(str_winning_team, var_db3d629e = #"hash_6ef5bcff7fb1d1ab
             voiceparams = {#team:#"allies", #side:#"allies", #targetname:level.mission_name};
             voiceevent("mssn_fail", undefined, voiceparams);
         }
-        wait(1);
+        wait 1;
         array::thread_all(a_players, &val::set, "mission_result", "freezecontrols_allowlook", 1);
-        wait(1);
+        wait 1;
         array::thread_all(a_players, &lui::screen_fade_out, 2, undefined, "mission_result", 1);
-        wait(2.5);
+        wait 2.5;
         /#
             iprintln("<dev string:x38>" + var_c8b60423 + "<dev string:x63>");
         #/
@@ -1164,7 +1164,7 @@ function mission_result(str_winning_team, var_db3d629e = #"hash_6ef5bcff7fb1d1ab
         array::thread_all(a_players, &val::reset, "mission_result", "takedamage");
         return;
     }
-    wait(4);
+    wait 4;
     function_ba453727();
 }
 
@@ -1207,7 +1207,7 @@ function function_ba453727() {
         }
     }
     if (var_407fef8b.size) {
-        wait(1);
+        wait 1;
         foreach (e_player in var_407fef8b) {
             e_player closeluimenu(e_player.var_ac2de17e);
         }
@@ -1302,7 +1302,7 @@ function function_e1f39986(str_team, str_objective, b_success = 1, e_player) {
         a_e_players = util::get_players(var_cc966c56);
     }
     _plant_player_tablet_state function_a192bfac(a_e_players, var_cc966c56, n_state);
-    wait(5);
+    wait 5;
     level function_faab2ef9(var_776f69c5, var_67af9061, _plant_player_tablet_state, a_e_players);
 }
 

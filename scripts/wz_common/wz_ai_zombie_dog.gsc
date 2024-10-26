@@ -185,7 +185,7 @@ function private zombiedogintro() {
     self setfreecameralockonallowed(0);
     self clientfield::increment("dog_spawn_fx");
     playsoundatposition(#"zmb_hellhound_prespawn", self.origin);
-    wait(1.5);
+    wait 1.5;
     playsoundatposition(#"zmb_hellhound_bolt", self.origin);
     earthquake(0.5, 0.75, self.origin, 1000);
     playsoundatposition(#"zmb_hellhound_spawn", self.origin);
@@ -198,7 +198,7 @@ function private zombiedogintro() {
     self dontinterpolate();
     self forceteleport(self.origin, angles);
     self val::reset(#"dog_spawn", "allowdeath");
-    wait(0.1);
+    wait 0.1;
     self show();
     self setfreecameralockonallowed(1);
     self val::reset(#"dog_spawn", "ignoreme");
@@ -453,7 +453,7 @@ function play_ambient_zombie_vocals() {
         }
         bhtnactionstartevent(self, type);
         self notify(#"bhtn_action_notify", {#action:type});
-        wait(randomfloatrange(1.5, float));
+        wait randomfloatrange(1.5, float);
     }
 }
 

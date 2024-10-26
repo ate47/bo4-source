@@ -242,7 +242,7 @@ function private function_bb17ec5a() {
             }
             waitframe(1);
         }
-        wait(0.1);
+        wait 0.1;
     }
     self drop_to_ground();
     self.attacking = undefined;
@@ -373,7 +373,7 @@ function function_127fb8f3(homunculus, attackingplayer) {
     if (isdefined(level._equipment_emp_destroy_fx)) {
         playfx(level._equipment_emp_destroy_fx, homunculus.origin + (0, 0, 5), (cos(randangle), sin(randangle), 0), anglestoup(homunculus.angles));
     }
-    wait(1.1);
+    wait 1.1;
     homunculus function_7bfc867f();
 }
 

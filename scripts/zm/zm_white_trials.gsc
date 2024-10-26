@@ -92,7 +92,7 @@ function function_1a2500e5() {
     foreach (player in getplayers()) {
         player thread teleport_player();
     }
-    wait(0.5);
+    wait 0.5;
     level.var_f44e37f7 = level.var_806abe8f;
 }
 
@@ -167,7 +167,7 @@ function function_1bc491ab() {
         ai.health = int(ai.health * 2);
         level.zombie_total--;
         n_delay = isdefined(zombie_utility::get_zombie_var(#"zombie_spawn_delay")) ? zombie_utility::get_zombie_var(#"zombie_spawn_delay") : zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5");
-        wait(n_delay);
+        wait n_delay;
         return true;
     }
     return false;
@@ -215,17 +215,17 @@ function spawn_done(n_threshold) {
         self zm_ai_avogadro::function_ed39491e(1);
     }
     while (n_threshold > level.total_zombies_killed - level.zombie_total_subtract) {
-        wait(0.1);
+        wait 0.1;
     }
     if (isdefined(level.e_avogadro)) {
         self zm_ai_avogadro::function_ed39491e(4);
         exploder::exploder("fxexp_pyramid_capture");
         level.vol_toast_trap = getent("vol_toast_trap", "targetname");
         while (isdefined(level.e_avogadro) && !level.e_avogadro istouching(level.vol_toast_trap)) {
-            wait(0.1);
+            wait 0.1;
         }
         while (isdefined(level.e_avogadro)) {
-            wait(0.1);
+            wait 0.1;
         }
         level thread zm_white_toast::function_3418b6f6();
     }

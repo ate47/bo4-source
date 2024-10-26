@@ -133,7 +133,7 @@ function function_cd53088e(params) {
         e_player = waitresult.activator;
         if (isplayer(e_player) && e_player flag::get(#"hash_30ae3926b2d211db")) {
             e_player clientfield::set_to_player("" + #"place_spoon", 0);
-            wait(0.1);
+            wait 0.1;
             e_player clientfield::set_to_player("" + #"fill_blood", 8);
             e_player flag::set(#"hash_3ade5b9424a14f81");
             playsoundatposition(#"hash_70c32e03adb92ec1", level.var_92a01e03.origin);
@@ -159,7 +159,7 @@ function private function_5ec2f851() {
             self clientfield::set_to_player("" + #"hash_cc5b97a575d4d6d", 1);
             self notify(#"hash_17b0a36fa17ca61a");
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -207,7 +207,7 @@ function function_7927b4f1() {
         } else {
             self.var_3909389c = 0;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -326,12 +326,12 @@ function function_48d7e846() {
     level flag::set(#"hash_79e07d3dcfbfb5ae");
     level.var_4b9d0136 thread scene::play(#"p8_fxanim_zm_esc_water_tower_bundle", level.var_4b9d0136);
     level thread clientfield::increment("" + #"hash_cd028842e18845e", 1);
-    wait(3);
+    wait 3;
     e_closest = arraygetclosest(level.var_4b9d0136.origin, zm_vo::function_347f7d34());
     if (isalive(e_closest)) {
         e_closest thread zm_audio::create_and_play_dialog(#"catwalk", #"hash_30b3d33fbe5f5328");
     }
-    wait(2);
+    wait 2;
     if (!isdefined(level.a_tomahawk_pickup_funcs)) {
         level.a_tomahawk_pickup_funcs = [];
     } else if (!isarray(level.a_tomahawk_pickup_funcs)) {
@@ -436,7 +436,7 @@ function function_14a795c2(e_player) {
             if (!player hasweapon(getweapon(#"spoon_alcatraz"))) {
                 while (!isdefined(player.var_1c4683c4)) {
                     player.var_1c4683c4 = player.slot_weapons[#"melee_weapon"];
-                    wait(0.1);
+                    wait 0.1;
                 }
                 w_current = player.currentweapon;
                 player giveweapon(getweapon(#"spoon_alcatraz"));

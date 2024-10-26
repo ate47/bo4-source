@@ -228,7 +228,7 @@ function state_stationary_update(params) {
     self notify(#"stop_rocket_firing_thread");
     vehicle_ai::clearalllookingandtargeting();
     vehicle_ai::clearallmovement();
-    wait(1);
+    wait 1;
     self cobra_raise();
     mintime = 6;
     maxtime = 12;
@@ -273,7 +273,7 @@ function state_stationary_update(params) {
                 }
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
     self notify(#"stop_rocket_firing_thread");
     vehicle_ai::clearalllookingandtargeting();
@@ -341,7 +341,7 @@ function turretfireupdate() {
     while (true) {
         if (self.avoid_shooting_owner === 1 && isdefined(self.owner)) {
             if (self vehicle_ai::owner_in_line_of_fire()) {
-                wait(0.5);
+                wait 0.5;
                 continue;
             }
         }
@@ -353,7 +353,7 @@ function turretfireupdate() {
             }
             waitframe(1);
             if (!self.gunner1ontarget) {
-                wait(0.5);
+                wait 0.5;
             }
             if (self.gunner1ontarget) {
                 if (isdefined(self.enemy) && self cansee(self.enemy)) {
@@ -363,16 +363,16 @@ function turretfireupdate() {
                     self setturretspinning(0);
                 }
                 if (isdefined(self.enemy) && isai(self.enemy)) {
-                    wait(randomfloatrange(self.settings.burstfireaidelaymin, self.settings.burstfireaidelaymax));
+                    wait randomfloatrange(self.settings.burstfireaidelaymin, self.settings.burstfireaidelaymax);
                 } else {
-                    wait(randomfloatrange(self.settings.burstfiredelaymin, self.settings.burstfiredelaymax));
+                    wait randomfloatrange(self.settings.burstfiredelaymin, self.settings.burstfiredelaymax);
                 }
             } else {
-                wait(0.5);
+                wait 0.5;
             }
             continue;
         }
-        wait(0.4);
+        wait 0.4;
     }
 }
 
@@ -415,7 +415,7 @@ function state_combat_update(params) {
             self.lock_evading |= self.locking_on_hacking;
         }
         if (isdefined(self.inpain) && self.inpain) {
-            wait(0.1);
+            wait 0.1;
         } else if (!isdefined(self.enemy)) {
             should_slow_down_at_goal = 1;
             if (self.lock_evading) {
@@ -444,7 +444,7 @@ function state_combat_update(params) {
                 if (!(isdefined(self.var_23eff037) && self.var_23eff037)) {
                     self playsound(#"hash_7c4742a949425295");
                     self.var_23eff037 = 1;
-                    wait(0.5);
+                    wait 0.5;
                 }
             }
             if (self.shouldgotonewposition == 0) {
@@ -515,7 +515,7 @@ function aim_and_fire_rocket_launcher(aim_time) {
     self notify(#"stop_rocket_firing_thread");
     self endon(#"death", #"change_state", #"stop_rocket_firing_thread");
     if (!self.turretontarget) {
-        wait(aim_time);
+        wait aim_time;
     }
     if (isdefined(self.enemy) && self.turretontarget && !(isdefined(self.var_a8c60b0e) && self.var_a8c60b0e)) {
         util::cooldown("rocket", self.settings.rocketcooldown);
@@ -566,7 +566,7 @@ function waittill_weapon_lock_or_timeout(wait_time) {
 // Checksum 0xcc25ca2, Offset: 0x24b0
 // Size: 0x74
 function wait_evasion_reaction_time() {
-    wait(randomfloatrange(isdefined(self.settings.enemy_evasion_reaction_time_min) ? self.settings.enemy_evasion_reaction_time_min : 0.1, isdefined(self.settings.enemy_evasion_reaction_time_max) ? self.settings.enemy_evasion_reaction_time_max : 0.2));
+    wait randomfloatrange(isdefined(self.settings.enemy_evasion_reaction_time_min) ? self.settings.enemy_evasion_reaction_time_min : 0.1, isdefined(self.settings.enemy_evasion_reaction_time_max) ? self.settings.enemy_evasion_reaction_time_max : 0.2);
 }
 
 // Namespace amws/amws
@@ -580,7 +580,7 @@ function firerocketlauncher(enemy) {
         self turretsettarget(0, enemy);
         self waittilltimeout(1, #"turret_on_target");
         self playsound(#"hash_713f03be0cf78d55");
-        wait(1.2);
+        wait 1.2;
         if (self.variant == "armored") {
             vehicle_ai::fire_for_rounds(1, 0, enemy);
             return;
@@ -933,11 +933,11 @@ function path_update_interrupt_by_attacker() {
 function path_update_interrupt() {
     self notify(#"path_update_interrupt_by_attacker");
     self endon(#"death", #"change_state", #"near_goal", #"reached_end_node", #"amws_end_interrupt_watch", #"path_update_interrupt_by_attacker");
-    wait(1);
+    wait 1;
     while (true) {
         if (isdefined(self.current_pathto_pos)) {
             if (distance2dsquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
-                wait(0.2);
+                wait 0.2;
                 self notify(#"near_goal");
             }
         }
@@ -950,7 +950,7 @@ function path_update_interrupt() {
                 self notify(#"near_goal");
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 

@@ -36,7 +36,7 @@ function private on_begin(var_899c6d17) {
     } else {
         var_899c6d17 = 0;
     }
-    wait(6);
+    wait 6;
     foreach (player in getplayers()) {
         player thread reset_points(var_899c6d17);
     }

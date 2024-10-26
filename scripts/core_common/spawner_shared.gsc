@@ -491,7 +491,7 @@ function go_to_node_using_funcs(node, get_target_func, set_goal_func_quits, opti
                 node notify(#"script_requires_player");
                 break;
             }
-            wait(0.1);
+            wait 0.1;
         }
         if (isdefined(node.script_aigroup)) {
             waittill_ai_group_cleared(node.script_aigroup);
@@ -1223,7 +1223,7 @@ function get_ai_group_ai(aigroup) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0x5b73222f, Offset: 0x46e8
 // Size: 0x148
 function add_global_spawn_function(team, spawn_func, ...) {
@@ -1245,7 +1245,7 @@ function add_global_spawn_function(team, spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x20
+// Params 2, eflags: 0x20 variadic
 // Checksum 0x446e3a63, Offset: 0x4838
 // Size: 0x19c
 function add_ai_spawn_function(spawn_func, ...) {
@@ -1267,7 +1267,7 @@ function add_ai_spawn_function(spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xa353548c, Offset: 0x49e0
 // Size: 0x148
 function add_archetype_spawn_function(archetype, spawn_func, ...) {
@@ -1289,7 +1289,7 @@ function add_archetype_spawn_function(archetype, spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x20
+// Params 3, eflags: 0x20 variadic
 // Checksum 0x365d1ec1, Offset: 0x4b30
 // Size: 0x1a4
 function function_89a2cd87(archetype, spawn_func, ...) {
@@ -1327,7 +1327,7 @@ function remove_global_spawn_function(team, func) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x21 linked variadic
 // Checksum 0x26f9c0d, Offset: 0x4dd0
 // Size: 0xc6
 function add_spawn_function(spawn_func, ...) {
@@ -1393,7 +1393,7 @@ function remove_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xce6fc222, Offset: 0x5278
 // Size: 0x1e8
 function simple_spawn(name_or_spawners, spawn_func, ...) {
@@ -1428,7 +1428,7 @@ function simple_spawn(name_or_spawners, spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x20
+// Params 3, eflags: 0x20 variadic
 // Checksum 0x4291b4cc, Offset: 0x5468
 // Size: 0xc8
 function simple_spawn_single(name_or_spawner, spawn_func, ...) {

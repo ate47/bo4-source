@@ -497,11 +497,11 @@ function private function_be9ade6d(entity) {
 // Size: 0x114
 function private function_15b528d9(duration, var_2610777) {
     self endoncallback(&function_866bf053, #"death", #"disconnect");
-    wait(float(function_60d95f53()) / 1000 * var_2610777);
+    wait float(function_60d95f53()) / 1000 * var_2610777;
     if (zm_utility::is_player_valid(self)) {
         self val::set(#"avogadro_aoe", "disable_weapons", 1);
         self status_effect::status_effect_apply(getstatuseffect(#"zm_white_nova_gas"), undefined, self, 1);
-        wait(duration);
+        wait duration;
         function_866bf053();
     }
 }

@@ -95,7 +95,7 @@ function private on_ai_killed(params) {
 // Size: 0x3c
 function private function_492f4c79() {
     level endon(#"hash_7646638df88a3656");
-    wait(12);
+    wait 12;
     zm_utility::function_75fd65f9(self.var_f7f308cd, 1);
 }
 

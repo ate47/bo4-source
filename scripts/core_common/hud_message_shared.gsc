@@ -48,7 +48,7 @@ function playnotifyloop(duration) {
     if (duration < 1) {
         duration = 1;
     }
-    wait(duration);
+    wait duration;
     playnotifyloop delete();
 }
 
@@ -101,7 +101,7 @@ function clearlowermessage() {
 // Size: 0x74
 function private function_fa47c5af() {
     self endon(#"hash_6ceeeb477ece797b", #"disconnect");
-    wait(1);
+    wait 1;
     level.lower_message lower_message::set_message(self, #"");
     level.lower_message lower_message::set_countdowntimeseconds(self, 0);
 }

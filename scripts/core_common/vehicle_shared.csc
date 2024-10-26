@@ -231,13 +231,13 @@ function function_a87e7c22(subtarget) {
             self.var_d2c05029[subtarget] = time + 150;
             bone = self submodelboneforsubtarget(subtarget);
             self playrenderoverridebundle(#"hash_20bdbaa0db5eb57d", bone);
-            wait(0.1);
+            wait 0.1;
             self stoprenderoverridebundle(#"hash_20bdbaa0db5eb57d", bone);
         }
         return;
     }
     self playrenderoverridebundle(#"hash_20bdbaa0db5eb57d");
-    wait(0.15);
+    wait 0.15;
     self stoprenderoverridebundle(#"hash_20bdbaa0db5eb57d");
 }
 
@@ -257,14 +257,14 @@ function rumble(localclientnum) {
     zoffset = -1 * self.rumbleradius;
     self.player_touching = 0;
     radius_squared = self.rumbleradius * self.rumbleradius;
-    wait(2);
+    wait 2;
     while (true) {
         if (!isdefined(level.localplayers[localclientnum]) || distancesquared(self.origin, level.localplayers[localclientnum].origin) > radius_squared || self getspeed() == 0) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         if (isdefined(self.rumbleon) && !self.rumbleon) {
-            wait(0.2);
+            wait 0.2;
             continue;
         }
         self playrumblelooponentity(localclientnum, self.rumbletype);
@@ -274,7 +274,7 @@ function rumble(localclientnum) {
             if (time_to_wait <= 0) {
                 time_to_wait = 0.05;
             }
-            wait(time_to_wait);
+            wait time_to_wait;
         }
         if (isdefined(level.localplayers[localclientnum])) {
             self stoprumble(localclientnum, self.rumbletype);
@@ -399,7 +399,7 @@ function play_boost(localclientnum, var_a7ba3864) {
 // Size: 0x6c
 function kill_boost(localclientnum, var_1ca9b241) {
     self endon(#"death");
-    wait(self.boostduration + 0.5);
+    wait self.boostduration + 0.5;
     self notify(#"end_boost");
     if (isdefined(var_1ca9b241)) {
         stopfx(localclientnum, var_1ca9b241);
@@ -445,16 +445,16 @@ function aircraft_dustkick() {
     while (isdefined(self)) {
         fxarray = self.treadfxnamearray;
         if (!isdefined(fxarray)) {
-            wait(1);
+            wait 1;
             continue;
         }
         trace = bullettrace(self.origin, self.origin - (0, 0, 700 * 2), 0, self, 1);
         distsqr = distancesquared(self.origin, trace[#"position"]);
         if (trace[#"fraction"] < 0.01 || distsqr < 0 * 0) {
-            wait(0.2);
+            wait 0.2;
             continue;
         } else if (trace[#"fraction"] >= 1 || distsqr > 700 * 700) {
-            wait(1);
+            wait 1;
             continue;
         }
         if (0 * 0 < distsqr && distsqr < 700 * 700) {
@@ -469,10 +469,10 @@ function aircraft_dustkick() {
             velocity = self getvelocity();
             speed = length(velocity);
             waittime = mapfloat(10, 100, 1, 0.2, speed);
-            wait(waittime);
+            wait waittime;
             continue;
         }
-        wait(1);
+        wait 1;
         continue;
     }
 }
@@ -1086,7 +1086,7 @@ function delayed_fx_thread(localclientnum, name, fx, tag, delay) {
         return;
     }
     if (isdefined(delay) && delay > 0) {
-        wait(delay);
+        wait delay;
     }
     fx_handle = util::playfxontag(localclientnum, fx, self, tag);
     if (!isdefined(self.fx_handles[name])) {
@@ -1491,7 +1491,7 @@ function function_18758bfa(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval && !binitialsnap) {
         self endon(#"death");
         if (isdefined(self.var_6e8da11c) && self.var_6e8da11c > 0) {
-            wait(self.var_6e8da11c);
+            wait self.var_6e8da11c;
         }
         if (!isdefined(self.fx_handles)) {
             self.fx_handles = [];
@@ -1517,7 +1517,7 @@ function function_18758bfa(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, self.var_68f20b20);
         }
         if (isdefined(handle) && isdefined(self.var_b321fcb3) && self.var_b321fcb3 > 0) {
-            wait(self.var_b321fcb3);
+            wait self.var_b321fcb3;
             if (isfxplaying(localclientnum, handle)) {
                 stopfx(localclientnum, handle);
                 arrayremovevalue(self.fx_handles[#"smolder"], handle, 0);
@@ -1981,7 +1981,7 @@ function damage_filter_off(localclientnum) {
             level.localplayers[0].damage_filter_intensity = 0;
         }
         filter::set_filter_vehicle_damage_amount(level.localplayers[0], 3, level.localplayers[0].damage_filter_intensity);
-        wait(0.016667);
+        wait 0.016667;
     }
 }
 
@@ -1999,7 +1999,7 @@ function damage_filter_light(localclientnum) {
             level.localplayers[0].damage_filter_intensity = 0.5;
         }
         filter::set_filter_vehicle_damage_amount(level.localplayers[0], 3, level.localplayers[0].damage_filter_intensity);
-        wait(0.016667);
+        wait 0.016667;
     }
 }
 
@@ -2016,7 +2016,7 @@ function damage_filter_heavy(localclientnum) {
             level.localplayers[0].damage_filter_intensity = 1;
         }
         filter::set_filter_vehicle_damage_amount(level.localplayers[0], 3, level.localplayers[0].damage_filter_intensity);
-        wait(0.016667);
+        wait 0.016667;
     }
 }
 

@@ -45,11 +45,11 @@ class robotphalanx {
             _releaserobots(tier1robots_);
             tier1robots_ = [];
             _assignphalanxstance(tier2robots_, "crouch");
-            wait(randomfloatrange(5, 7));
+            wait randomfloatrange(5, 7);
             _releaserobots(tier2robots_);
             tier2robots_ = [];
             _assignphalanxstance(tier3robots_, "crouch");
-            wait(randomfloatrange(5, 7));
+            wait randomfloatrange(5, 7);
             _releaserobots(tier3robots_);
             tier3robots_ = [];
         }
@@ -72,7 +72,7 @@ class robotphalanx {
     function resumeadvance() {
         if (!scattered_) {
             _assignphalanxstance(tier1robots_, "stand");
-            wait(1);
+            wait 1;
             forward = vectornormalize(endposition_ - startposition_);
             _movephalanxtier(tier1robots_, phalanxtype_, "phalanx_tier1", endposition_, forward);
             _movephalanxtier(tier2robots_, phalanxtype_, "phalanx_tier2", endposition_, forward);
@@ -154,7 +154,7 @@ class robotphalanx {
     // Size: 0x28
     function private _updatephalanxthread(phalanx) {
         while ([[ phalanx ]]->_updatephalanx()) {
-            wait(1);
+            wait 1;
         }
     }
 
@@ -195,7 +195,7 @@ class robotphalanx {
         foreach (robot in robots) {
             _resumefire(robot);
             _releaserobot(robot);
-            wait(randomfloatrange(0.5, 5));
+            wait randomfloatrange(0.5, 5);
         }
     }
 

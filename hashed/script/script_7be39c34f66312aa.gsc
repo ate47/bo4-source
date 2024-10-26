@@ -55,13 +55,13 @@ function magic_box_update() {
         case #"no_power":
             util::setclientsysstate("box_indicator", level.var_ce7f71ea);
             while (!level flag::get("power_on") && level.zombie_vars[#"zombie_powerup_fire_sale_on"] == 0) {
-                wait(0.1);
+                wait 0.1;
             }
             break;
         case #"fire_sale":
             util::setclientsysstate("box_indicator", level.var_f6d11e0b);
             while (level.zombie_vars[#"zombie_powerup_fire_sale_on"] == 1) {
-                wait(0.1);
+                wait 0.1;
             }
             break;
         case #"box_available":
@@ -70,14 +70,14 @@ function magic_box_update() {
                 util::setclientsysstate("box_indicator", var_7aa396b9);
             }
             while (!flag::get("moving_chest_now") && level.zombie_vars[#"zombie_powerup_fire_sale_on"] == 0) {
-                wait(0.1);
+                wait 0.1;
             }
             break;
         default:
             util::setclientsysstate("box_indicator", level.var_ce7f71ea);
             break;
         }
-        wait(1);
+        wait 1;
     }
 }
 

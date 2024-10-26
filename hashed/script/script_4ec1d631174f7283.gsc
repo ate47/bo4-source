@@ -50,11 +50,11 @@ function __main__() {
 function private function_4d231aa() {
     self endon(#"death");
     while (true) {
-        wait(3);
+        wait 3;
         self setblackboardattribute("_stance", "crouch");
-        wait(3);
+        wait 3;
         self setblackboardattribute("_stance", "stand");
-        wait(3);
+        wait 3;
         self setblackboardattribute("_stance", "swim");
     }
 }
@@ -152,7 +152,7 @@ function function_303ab700() {
                 println("<dev string:xc0>");
                 player.var_fa2d1151 = spawn("script_model", var_16a2c824);
                 player.var_fa2d1151.angles = samantha.angles;
-                wait(1);
+                wait 1;
                 if (isdefined(player) && isdefined(player.var_fa2d1151)) {
                     player dontinterpolate();
                     player setorigin(var_16a2c824);
@@ -160,7 +160,7 @@ function function_303ab700() {
                     waitframe(1);
                     println("<dev string:xe6>" + player.name + "<dev string:x106>");
                     function_8e56bb21(player, player.var_fa2d1151, var_16a2c824, samantha.angles);
-                    wait(1);
+                    wait 1;
                 }
                 player_index++;
             }

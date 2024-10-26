@@ -255,7 +255,7 @@ function j_fore_le_01() {
     setbombtimer("A", 0);
     setmatchflag("bomb_timer_a", 0);
     if (level flag::get("mission_failed")) {
-        wait(0.1);
+        wait 0.1;
         level notify(#"combattraining_logic_finished", {#success:0});
     }
 }
@@ -491,7 +491,7 @@ function function_f704f55c() {
     }
     while (true) {
         level waittill(#"robot_killed");
-        wait(10);
+        wait 10;
         spawn_robot(1);
     }
 }
@@ -702,7 +702,7 @@ function function_8aa1c633() {
             adddebugcommand("<dev string:x52>");
         }
         while (true) {
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarstring(#"hash_527da51d610a31b1", "<dev string:x38>");
             if (cmd == "<dev string:x38>") {
                 continue;

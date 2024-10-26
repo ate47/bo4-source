@@ -62,7 +62,7 @@ function function_57755268() {
     level.var_84199d1 = 1;
     level.var_4e4909a6 = undefined;
     level endon(#"hash_7646638df88a3656");
-    wait(5);
+    wait 5;
     level notify(#"kill_round_wait");
 }
 

@@ -334,7 +334,7 @@ function drop_robot() {
     level.robot playsound(#"evt_safeguard_robot_land");
     chopper thread drop_heli_leave();
     while (level.robot flagsys::get(#"in_vehicle")) {
-        wait(1);
+        wait 1;
     }
     level.robot.patharray = patharray;
     level.robot.pathindex = 0;
@@ -385,7 +385,7 @@ function drop_robot() {
 // Size: 0x154
 function drop_heli_leave() {
     chopper = self;
-    wait(1);
+    wait 1;
     supplydropspeed = getdvarint(#"scr_supplydropspeedleaving", 250);
     supplydropaccel = getdvarint(#"scr_supplydropaccelleaving", 60);
     chopper setspeed(supplydropspeed, supplydropaccel);
@@ -895,7 +895,7 @@ function reboot_robot() {
         aiutility::attachriotshield(self, getweapon("riotshield"), "wpn_t7_shield_riot_world_lh", "tag_stowed_back");
     }
     self ai::set_behavior_attribute("shutdown", 0);
-    wait(getanimlength(#"ai_robot_rogue_ctrl_crc_shutdown_2_alert"));
+    wait getanimlength(#"ai_robot_rogue_ctrl_crc_shutdown_2_alert");
     if (isdefined(self)) {
         self.canwalk = 1;
     }
@@ -993,7 +993,7 @@ function check_blocked_goal_and_kill() {
         return 0;
     }
     if (gettime() < (isdefined(self.blocked_wait_end_time) ? self.blocked_wait_end_time : 0)) {
-        wait(float(self.blocked_wait_end_time - gettime()) / 1000);
+        wait float(self.blocked_wait_end_time - gettime()) / 1000;
     }
     goalonnavmesh = self get_closest_point_on_nav_mesh_for_current_goal();
     previousgoal = self.pathindex > 0 && !isdefined(self.immediategoaloverride) ? self.patharray[self.pathindex - 1] : self.origin;
@@ -1054,7 +1054,7 @@ function watch_goal_becoming_blocked(goal) {
     level endon(#"game_ended");
     disttogoalsqr = 1e+09;
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (isdefined(self.traversestartnode)) {
             self waittill(#"traverse_end");
             continue;
@@ -1091,7 +1091,7 @@ function watch_becoming_blocked_at_goal() {
     atsameposcount = 0;
     iterationcount = 0;
     while (self.moving) {
-        wait(0.1);
+        wait 0.1;
         if (distancesquared(startpos, self.origin) < 1) {
             atsameposcount++;
         }
@@ -1305,7 +1305,7 @@ function is_path_distance_to_goal_too_long(&patharray, toolongthreshold) {
                 }
                 setdvar(#"scr_escort_robot_reset_path", 0);
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 
@@ -1360,7 +1360,7 @@ function robot_move_chatter() {
         if (self.moving) {
             self playsoundontag("vox_robot_chatter", "J_Head");
         }
-        wait(randomfloatrange(1.5, 2.5));
+        wait randomfloatrange(1.5, 2.5);
     }
 }
 
@@ -1456,7 +1456,7 @@ function track_escort_time(player) {
     self thread wait_escort_shutdown(player);
     consecutiveescorts = 0;
     while (true) {
-        wait(1);
+        wait 1;
         touching = 0;
         foreach (touch in self.touchlist[self.team]) {
             if (touch.player == player) {
@@ -1596,7 +1596,7 @@ function watch_robot_enter(robot) {
 // Size: 0x3c
 function explode_robot_after_wait(wait_time) {
     robot = self;
-    wait(wait_time);
+    wait wait_time;
     if (isdefined(robot)) {
         robot explode_robot();
     }
@@ -1697,7 +1697,7 @@ function destroy_supply_crate_blocking_goal(dirtogoal) {
     if (isdefined(bestcrate)) {
         playfx(level._supply_drop_explosion_fx, bestcrate.origin);
         playsoundatposition(#"wpn_grenade_explode", bestcrate.origin);
-        wait(0.1);
+        wait 0.1;
         bestcrate supplydrop::cratedelete();
         return true;
     }

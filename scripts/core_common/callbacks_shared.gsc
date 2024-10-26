@@ -202,7 +202,7 @@ function on_finalize_initialization(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xf89be2a2, Offset: 0xc38
 // Size: 0x44
 function on_connect(func, obj, ...) {
@@ -778,7 +778,7 @@ function function_27d9ab8(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xad8ddd2f, Offset: 0x2080
 // Size: 0x44
 function on_trigger(func, obj, ...) {
@@ -794,7 +794,7 @@ function remove_on_trigger(func, obj) {
 }
 
 // Namespace callback/callbacks_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xfaa7acc, Offset: 0x2118
 // Size: 0x44
 function on_trigger_once(func, obj, ...) {
@@ -1429,7 +1429,7 @@ function event_handler[event_69572c01] function_2073f6dc(eventstruct) {
 function event_handler[sidemission_launch] codecallback_launchsidemission(eventstruct) {
     switchmap_preload(eventstruct.name, eventstruct.game_type);
     luinotifyevent(#"open_side_mission_countdown", 1, eventstruct.list_index);
-    wait(10);
+    wait 10;
     luinotifyevent(#"close_side_mission_countdown");
     switchmap_switch();
 }

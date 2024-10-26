@@ -140,7 +140,7 @@ function function_76e94d52() {
         if (self function_75a76099()) {
             var_d8b1f3e3 = self getweaponammoclip(var_d49d10b0);
             if (self getweaponammoclip(var_d49d10b0) <= 0) {
-                wait(1);
+                wait 1;
                 if (isdefined(self.var_3b55baa1) && isdefined(self.var_e01bb56) && self function_75a76099()) {
                     self zm_loadout::set_player_lethal_grenade(self.var_3b55baa1);
                     self zm_weapons::weapon_give(self.var_3b55baa1, 1, 0);
@@ -149,7 +149,7 @@ function function_76e94d52() {
                     self.var_3b55baa1 = undefined;
                     self.var_e01bb56 = undefined;
                     self function_820a63e9(n_slot, 1);
-                    wait(1);
+                    wait 1;
                     self function_820a63e9(n_slot, 0);
                     self callback::remove_on_laststand(&function_3bb2f43b);
                     self notify(#"grenade_change");
@@ -163,7 +163,7 @@ function function_76e94d52() {
             self.var_e01bb56 = undefined;
             self notify(#"grenade_change");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

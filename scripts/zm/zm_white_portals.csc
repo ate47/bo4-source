@@ -211,7 +211,7 @@ function portal_ready_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 // Size: 0xc4
 function crawler_portal_spawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     warmup_fx = util::playfxontag(localclientnum, "maps/zm_office/fx8_teleporter_ready", self, "j_spine2");
-    wait(1.5);
+    wait 1.5;
     if (isdefined(warmup_fx)) {
         deletefx(localclientnum, warmup_fx);
     }

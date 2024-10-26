@@ -287,7 +287,7 @@ function private function_42a1dabd() {
     var_ee3cfcfe = {#origin:self.origin, #angles:self.angles};
     var_ee3cfcfe thread scene::play(var_67f0b3a6, array(self));
     self.var_e0c4c154 = 0;
-    wait(wait_time + randomfloatrange(0.1, 1));
+    wait wait_time + randomfloatrange(0.1, 1);
     [[ level.var_3291f056 ]]->waitinqueue(self);
     var_708e5e40 = undefined;
     players = getentitiesinradius(self.origin, 120, 1);
@@ -404,10 +404,10 @@ function private function_f78e62a8() {
         to_point = var_51601537.origin - self.var_fab8d6ce.origin;
         self.var_fab8d6ce clientfield::set("" + #"spartoi_reassemble_clientfield", 1);
         self.var_fab8d6ce moveto(self.var_fab8d6ce.origin + to_point / 2 + (0, 0, 20), 1.6, 0.5);
-        wait(1.6);
+        wait 1.6;
         if (isdefined(self.var_fab8d6ce)) {
             self.var_fab8d6ce moveto(var_51601537.origin, 1.6, 0, 0.5);
-            wait(1.6);
+            wait 1.6;
         }
     }
     if (isdefined(self.var_fab8d6ce)) {

@@ -119,28 +119,28 @@ function last_valid_position(update_rate) {
     self endon(#"stop_last_valid_position", #"disconnect");
     while (!isdefined(self.last_valid_position)) {
         self.last_valid_position = getclosestpointonnavmesh(self.origin, 2048, 0);
-        wait(update_rate);
+        wait update_rate;
     }
     while (isdefined(self)) {
         if (isdefined(level.var_cdc822b) && ![[ level.var_cdc822b ]]()) {
-            wait(update_rate);
+            wait update_rate;
             continue;
         }
         playerradius = self getpathfindingradius();
         if (distance2dsquared(self.origin, self.last_valid_position) < playerradius * playerradius && (self.origin[2] - self.last_valid_position[2]) * (self.origin[2] - self.last_valid_position[2]) < 16 * 16) {
-            wait(update_rate);
+            wait update_rate;
             continue;
         }
         if (self isplayerswimming()) {
             if (isdefined(self.var_5d991645)) {
                 if (distancesquared(self.origin, self.var_5d991645) < playerradius * playerradius) {
-                    wait(update_rate);
+                    wait update_rate;
                     continue;
                 }
             }
             ground_pos = groundtrace(self.origin + (0, 0, 8), self.origin + (0, 0, -100000), 0, self)[#"position"];
             if (!isdefined(ground_pos)) {
-                wait(update_rate);
+                wait update_rate;
                 continue;
             }
             position = getclosestpointonnavmesh(ground_pos, 100, playerradius);
@@ -151,7 +151,7 @@ function last_valid_position(update_rate) {
         } else if (ispointonnavmesh(self.origin, self)) {
             self.last_valid_position = self.origin;
         } else if (!ispointonnavmesh(self.origin, self) && ispointonnavmesh(self.last_valid_position, self) && distance2dsquared(self.origin, self.last_valid_position) < 32 * 32 && (self.origin[2] - self.last_valid_position[2]) * (self.origin[2] - self.last_valid_position[2]) < 32 * 32) {
-            wait(update_rate);
+            wait update_rate;
             continue;
         } else {
             position = getclosestpointonnavmesh(self.origin, 100, playerradius);
@@ -173,7 +173,7 @@ function last_valid_position(update_rate) {
                 self.last_valid_position = self [[ level.var_a6a84389 ]](playerradius);
             }
         }
-        wait(update_rate);
+        wait update_rate;
     }
 }
 
@@ -637,7 +637,7 @@ function function_6f6c29e(var_b66879ad) {
 }
 
 // Namespace player/player_shared
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x21 linked variadic
 // Checksum 0x485aa377, Offset: 0x2450
 // Size: 0xa8
 function function_2f80d95b(player_func, ...) {
@@ -648,7 +648,7 @@ function function_2f80d95b(player_func, ...) {
 }
 
 // Namespace player/player_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x21 linked variadic
 // Checksum 0xc445f89a, Offset: 0x2500
 // Size: 0x98
 function function_4dcd9a89(players, player_func, ...) {
@@ -658,7 +658,7 @@ function function_4dcd9a89(players, player_func, ...) {
 }
 
 // Namespace player/player_shared
-// Params 3, eflags: 0x20
+// Params 3, eflags: 0x20 variadic
 // Checksum 0xdc200b8f, Offset: 0x25a0
 // Size: 0xc0
 function function_7629df88(team, player_func, ...) {
@@ -671,7 +671,7 @@ function function_7629df88(team, player_func, ...) {
 }
 
 // Namespace player/player_shared
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x21 linked variadic
 // Checksum 0x59510324, Offset: 0x2668
 // Size: 0xc8
 function function_e7f18b20(player_func, ...) {

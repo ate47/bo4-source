@@ -46,7 +46,7 @@ function robot_burn(localclientnum, oldval, newval, bnewent, binitialsnap, field
 // Checksum 0x9ee97ed4, Offset: 0x3b8
 // Size: 0x90
 function watch_fx_shutdown(localclientnum, fxhandles) {
-    wait(3);
+    wait 3;
     foreach (fx in fxhandles) {
         stopfx(localclientnum, fx);
     }

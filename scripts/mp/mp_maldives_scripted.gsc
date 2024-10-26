@@ -94,9 +94,9 @@ function function_bc78a4d0(activator) {
 // Size: 0x64
 function function_8e65b1f2() {
     level endon(#"game_ended");
-    wait(3.5);
+    wait 3.5;
     self.var_64c54a7d triggerenable(1);
-    wait(7);
+    wait 7;
     self.var_64c54a7d triggerenable(0);
 }
 

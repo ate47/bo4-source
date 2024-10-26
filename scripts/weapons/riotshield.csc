@@ -46,7 +46,7 @@ function riotshield_deploy_anim(localclientnum, instant) {
         util::playfxontag(localclientnum, level._effect[#"riotshield_dust"], self, "tag_origin");
     }
     if (!instant) {
-        wait(0.8);
+        wait 0.8;
     }
     self.shieldlightfx = util::playfxontag(localclientnum, level._effect[#"riotshield_light"], self, "tag_fx");
 }
@@ -82,7 +82,7 @@ function riotshield_destroy_anim(localclientnum) {
     self playsound(localclientnum, #"wpn_shield_destroy");
     self useanimtree("generic");
     self setanim(#"o_riot_stand_destroyed", 1, 0, 1);
-    wait(1);
+    wait 1;
     self setforcenotsimple();
 }
 

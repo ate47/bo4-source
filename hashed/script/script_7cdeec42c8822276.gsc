@@ -41,7 +41,7 @@ function function_fac06066() {
     zm_powerups::function_74b8ec6b("double_points");
     callback::on_ai_killed(&function_1cae4e0a);
     level thread function_bcae2e4b();
-    wait(15);
+    wait 15;
     level thread round_spawning();
 }
 
@@ -129,11 +129,11 @@ function round_spawning() {
     n_spawn_delay = zm_round_logic::get_zombie_spawn_delay(level.var_37769559);
     while (level.var_bdc8b034.size > 0) {
         for (var_404e4288 = zombie_utility::get_current_zombie_count(); var_404e4288 >= level.zombie_ai_limit; var_404e4288 = zombie_utility::get_current_zombie_count()) {
-            wait(0.1);
+            wait 0.1;
         }
         while (zombie_utility::get_current_actor_count() >= level.zombie_actor_limit) {
             zombie_utility::clear_all_corpses();
-            wait(0.1);
+            wait 0.1;
         }
         level flag::wait_till_clear(#"hash_21921ed511559aa3");
         str_archetype = get_archetype();
@@ -149,12 +149,12 @@ function round_spawning() {
             if (ai ai::has_behavior_attribute("can_juke")) {
                 ai ai::set_behavior_attribute("can_juke", 0);
             }
-            wait(n_spawn_delay);
+            wait n_spawn_delay;
         }
         util::wait_network_frame();
     }
     while (zombie_utility::get_current_zombie_count() > 0) {
-        wait(0.1);
+        wait 0.1;
     }
     level thread end_round();
 }
@@ -197,7 +197,7 @@ function spawn_archetype(str_archetype) {
 // Size: 0x34
 function end_round() {
     level endon(#"hash_3e95ff63d623d736");
-    wait(15);
+    wait 15;
     function_d89bf8aa();
 }
 

@@ -176,7 +176,7 @@ function override_spawn(ispredictedspawn) {
 function function_bb9099b9() {
     self endon(#"disconnect");
     while (!self isstreamerready()) {
-        wait(0.5);
+        wait 0.5;
     }
     if (game.state == "pregame") {
         if (isdefined(level.var_fd167bf6)) {
@@ -271,7 +271,7 @@ function private function_c263fd97() {
     var_2ee361bf = getdvarint(#"hash_6e24885f4fa8a2a2", 10000);
     println("<dev string:x45>");
     while (gettime() < starttime + var_ffa47239) {
-        wait(0.5);
+        wait 0.5;
         now = gettime();
         self clientfield::set_player_uimodel("hudItems.streamerLoadFraction", (now - starttime) / (var_ffa47239 + var_2ee361bf));
     }
@@ -282,7 +282,7 @@ function private function_c263fd97() {
     var_ccb4a8be = player_free_fall::function_d2a1520c();
     streamermodelhint(var_ccb4a8be, float(var_ffa47239 + var_2ee361bf) / 1000);
     while (true) {
-        wait(0.5);
+        wait 0.5;
         now = gettime();
         self clientfield::set_player_uimodel("hudItems.streamerLoadFraction", (now - starttime) / (var_ffa47239 + var_2ee361bf));
         if (now > var_4fcc3493) {

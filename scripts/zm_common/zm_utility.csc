@@ -51,9 +51,9 @@ function ignore_triggers(timer) {
     self endon(#"death");
     self.ignoretriggers = 1;
     if (isdefined(timer)) {
-        wait(timer);
+        wait timer;
     } else {
-        wait(0.5);
+        wait 0.5;
     }
     self.ignoretriggers = 0;
 }

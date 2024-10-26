@@ -228,9 +228,9 @@ function private function_f192f00b(localclientnum, rob) {
     self function_78233d29(rob, "", "U Offset", randomfloatrange(0, 1));
     self function_78233d29(rob, "", "V Offset", randomfloatrange(0, 1));
     self function_78233d29(rob, "", "Threshold", 1);
-    wait(float(level.blood.rob.hold_time) / 1000);
+    wait float(level.blood.rob.hold_time) / 1000;
     self thread ramprobsetting(localclientnum, 1, 0, level.blood.rob.fade_time, "Threshold");
-    wait(float(level.blood.rob.fade_time) / 1000);
+    wait float(level.blood.rob.fade_time) / 1000;
     self stoprenderoverridebundle(rob);
 }
 
@@ -423,8 +423,8 @@ function private splatter_postfx(localclientnum, player, damage, var_cd141ca2, d
     }
     level thread rampvalue(localclientnum, 0, opacity, var_587ce5b0, var_cd141ca2, "Opacity");
     level thread rampvalue(localclientnum, 0, blur, var_587ce5b0, var_cd141ca2, "Blur Amount");
-    wait(float(var_587ce5b0) / 1000);
-    wait(float(hold_time) / 1000);
+    wait float(var_587ce5b0) / 1000;
+    wait float(hold_time) / 1000;
     level thread rampvalue(localclientnum, opacity, 0, var_49774f1, var_cd141ca2, "Opacity");
     level thread rampvalue(localclientnum, blur, 0, var_49774f1, var_cd141ca2, "Blur Amount");
 }
@@ -561,11 +561,11 @@ function private function_8d8880(localclientnum) {
             for (pulse = 0; pulse < 2; pulse++) {
                 self notify(#"pulse_blood");
                 self thread function_c0cdd1f2(localclientnum, 0, 1, level.blood.var_f2de135e.var_562c41de[pulse], #"damage pulse", self.pstfx_blood);
-                wait(float(level.blood.var_f2de135e.var_562c41de[pulse]) / 1000);
-                wait(float(level.blood.var_f2de135e.var_18f673f1[pulse]) / 1000);
+                wait float(level.blood.var_f2de135e.var_562c41de[pulse]) / 1000;
+                wait float(level.blood.var_f2de135e.var_18f673f1[pulse]) / 1000;
                 self thread function_c0cdd1f2(localclientnum, 1, 0, level.blood.var_f2de135e.var_92fc0d45[pulse], #"damage pulse", self.pstfx_blood);
-                wait(float(level.blood.var_f2de135e.var_92fc0d45[pulse]) / 1000);
-                wait(float(level.blood.var_f2de135e.var_5b5500f7[pulse]) / 1000);
+                wait float(level.blood.var_f2de135e.var_92fc0d45[pulse]) / 1000;
+                wait float(level.blood.var_f2de135e.var_5b5500f7[pulse]) / 1000;
             }
         }
     }
@@ -643,7 +643,7 @@ function private play_new_stage_rumble(localclientnum) {
     self endon(#"death", #"disconnect");
     for (i = 0; i < 2; i++) {
         self playrumbleonentity(localclientnum, "new_health_stage");
-        wait(0.4);
+        wait 0.4;
     }
 }
 

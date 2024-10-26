@@ -287,7 +287,7 @@ function zombie_faller_watch_player(player) {
             }
             incloserange = 0;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -312,7 +312,7 @@ function zombie_fall_wait() {
                         }
                     }
                 }
-                wait(0.5);
+                wait 0.5;
             }
         }
     }
@@ -439,9 +439,9 @@ function zombie_fall_fx(spot) {
     playsoundatposition(#"zmb_zombie_spawn", spot.origin);
     self endon(#"death");
     spot endon(#"stop_zombie_fall_fx");
-    wait(1);
+    wait 1;
     if (self.zombie_move_speed != "sprint") {
-        wait(1);
+        wait 1;
     }
 }
 
@@ -452,7 +452,7 @@ function zombie_fall_fx(spot) {
 function zombie_fall_burst_fx() {
     self endon(#"stop_zombie_fall_fx", #"fall_anim_finished");
     playfx(level._effect[#"rise_burst"], self.origin + (0, 0, randomintrange(5, 10)));
-    wait(0.25);
+    wait 0.25;
     playfx(level._effect[#"rise_billow"], self.origin + (randomintrange(-10, 10), randomintrange(-10, 10), randomintrange(5, 10)));
 }
 
@@ -468,7 +468,7 @@ function zombie_fall_dust_fx(zombie) {
     dust_interval = 0.3;
     for (t = 0; t < dust_time; t += dust_interval) {
         playfxontag(level._effect[#"rise_dust"], zombie, dust_tag);
-        wait(dust_interval);
+        wait dust_interval;
     }
 }
 
@@ -570,7 +570,7 @@ function do_zombie_emerge(spot) {
     }
     self zombie_faller_emerge(spot);
     self.create_eyes = 1;
-    wait(0.1);
+    wait 0.1;
     self notify(#"risen", {#find_flesh_struct_string:spot.script_string});
     self zombie_faller_enable_location();
 }
@@ -601,7 +601,7 @@ function zombie_emerge_fx(spot) {
     playsoundatposition(#"zmb_zombie_spawn", spot.origin);
     self endon(#"death");
     spot endon(#"stop_zombie_fall_fx");
-    wait(1);
+    wait 1;
 }
 
 // Namespace zm_ai_faller/zm_ai_faller
@@ -616,7 +616,7 @@ function zombie_emerge_dust_fx(zombie) {
     dust_interval = 0.5;
     for (t = 0; t < dust_time; t += dust_interval) {
         playfxontag(level._effect[#"rise_dust"], zombie, dust_tag);
-        wait(dust_interval);
+        wait dust_interval;
     }
 }
 

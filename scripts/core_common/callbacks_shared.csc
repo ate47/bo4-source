@@ -1040,9 +1040,9 @@ function event_handler[gadget_visionpulsereveal] codecallback_gadgetvisionpulse_
 // Size: 0x8c
 function private fade_to_black_for_x_sec(startwait, blackscreenwait, fadeintime, fadeouttime, shadername) {
     self endon(#"disconnect");
-    wait(startwait);
+    wait startwait;
     self lui::screen_fade_out(fadeintime, shadername);
-    wait(blackscreenwait);
+    wait blackscreenwait;
     if (isdefined(self)) {
         self lui::screen_fade_in(fadeouttime, shadername);
     }

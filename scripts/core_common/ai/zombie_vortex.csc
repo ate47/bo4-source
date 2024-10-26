@@ -62,7 +62,7 @@ function vortex_shake_and_rumble(localclientnum, v_vortex_origin) {
     self endon(#"vortex_stop");
     while (true) {
         self playrumbleonentity(localclientnum, "zod_idgun_vortex_interior");
-        wait(0.075);
+        wait 0.075;
     }
 }
 
@@ -94,7 +94,7 @@ function function_2dd3c5bc(localclientnum, vortex_fx_handle, vposition, fx_vorte
     stopfx(localclientnum, vortex_fx_handle);
     audio::stoploopat("wpn_idgun_portal_loop", vposition);
     playsound(0, #"wpn_idgun_portal_stop", vposition);
-    wait(0.15);
+    wait 0.15;
     self notify(#"vortex_stop");
     var_ad8208a9 = playfx(localclientnum, fx_vortex_explosion, vposition);
     setfxignorepause(localclientnum, var_ad8208a9, 1);
@@ -102,7 +102,7 @@ function function_2dd3c5bc(localclientnum, vortex_fx_handle, vposition, fx_vorte
     waitframe(1);
     self playrumbleonentity(localclientnum, "zod_idgun_vortex_shockwave");
     vision_blur(localclientnum, undefined, 1);
-    wait(0.1);
+    wait 0.1;
     vision_blur(localclientnum, undefined, 0);
 }
 

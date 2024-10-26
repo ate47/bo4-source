@@ -78,7 +78,7 @@ function function_e35eee4d() {
         if (!canbeseen) {
             self delete();
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

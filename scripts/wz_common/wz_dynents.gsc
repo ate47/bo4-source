@@ -143,7 +143,7 @@ function function_ad26976() {
         foreach (vehicle_corpse in vehicle_corpses) {
             vehicle_corpse delete();
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -364,7 +364,7 @@ function elevator_move(elevator) {
     }
     elevator.moving = 1;
     elevator.button playsound("evt_elevator_button_bell");
-    wait(0.5);
+    wait 0.5;
     elevator thread function_ad26976();
     elevator playsound("evt_elevator_start");
     elevator playloopsound("evt_elevator_move", 0);

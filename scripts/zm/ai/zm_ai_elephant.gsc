@@ -254,7 +254,7 @@ function private function_d13a21cb(entity, projectile) {
         grenade thread function_7d162bd0(grenade);
     }
     projectile clientfield::set("towers_boss_head_proj_fx_cf", 0);
-    wait(0.1);
+    wait 0.1;
     projectile delete();
 }
 

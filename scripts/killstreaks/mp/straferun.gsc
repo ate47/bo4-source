@@ -185,7 +185,7 @@ function function_c24cc26a() {
     }
     var_13d70215 = var_2974acb8 * var_2974acb8;
     while (true) {
-        wait(0.1);
+        wait 0.1;
         if (!isdefined(self)) {
             return;
         }
@@ -243,7 +243,7 @@ function function_c24cc26a() {
 // Size: 0x6c
 function playcontrail() {
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     playfxontag(level.straferuncontrailfx, self, "tag_origin");
     self playloopsound(#"veh_a10_engine_loop", 1);
 }
@@ -475,7 +475,7 @@ function startstrafe() {
             }
         #/
         count++;
-        wait(weaponshoottime);
+        wait weaponshoottime;
     }
 }
 
@@ -534,7 +534,7 @@ function firerockets() {
                 rocket thread airsupport::debug_draw_bomb_path(undefined, (0, 0.5, 0), 400);
             }
         #/
-        wait(level.straferunrocketdelay);
+        wait level.straferunrocketdelay;
     }
 }
 
@@ -600,7 +600,7 @@ function leavemap() {
     if (isdefined(self.killcament)) {
         self.killcament unlink();
     }
-    wait(5);
+    wait 5;
     if (isdefined(self)) {
         if (isdefined(self.killcament)) {
             self.killcament delete();
@@ -622,7 +622,7 @@ function explode() {
     if (isdefined(self.killcament)) {
         self.killcament unlink();
     }
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self)) {
         if (isdefined(self.killcament)) {
             self.killcament delete();
@@ -792,7 +792,7 @@ function straferunshellshock(straferun) {
     self.beingstraferunshellshocked = 1;
     params = getstatuseffect("deaf_straferun");
     self status_effect::status_effect_apply(params, level.straferunrocketweapon, straferun.owner, 0, int(level.straferunshellshockduration * 1000));
-    wait(level.straferunshellshockduration + 1);
+    wait level.straferunshellshockduration + 1;
     self.beingstraferunshellshocked = 0;
 }
 
@@ -817,7 +817,7 @@ function createkillcams(numkillcams, numrockets) {
 function resetkillcams(time) {
     self endon(#"death");
     if (isdefined(time)) {
-        wait(time);
+        wait time;
     }
     for (i = 0; i < level.straferunkillcams.rockets.size; i++) {
         level.straferunkillcams.rockets[i] resetrocketkillcament(self, i);
@@ -932,7 +932,7 @@ function unlinkwhenclose(selectedtarget, targetorigin, plane) {
             self.angles = (0, 0, 0);
             return;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

@@ -118,7 +118,7 @@ function function_6a61388f(vehicle) {
             return;
         }
         self.var_1e8d9480 += 0.5;
-        wait(0.5);
+        wait 0.5;
     }
 }
 

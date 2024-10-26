@@ -324,7 +324,7 @@ function on_touch(player) {
     self gameobjects::set_model_visibility(0);
     self gameobjects::allow_use(#"none");
     if (level.pickupitemrespawn) {
-        wait(pickup_item.respawn_time);
+        wait pickup_item.respawn_time;
         self thread respawn_pickup();
     }
 }

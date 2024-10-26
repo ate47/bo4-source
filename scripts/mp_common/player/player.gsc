@@ -65,7 +65,7 @@ function spectate_player_watcher() {
             }
             self.watchingactiveclient = 0;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -89,7 +89,7 @@ function doublexp_timer() {
     if (!level.onlinegame) {
         return;
     }
-    wait(60);
+    wait 60;
     if (level.onlinegame) {
         if (!isdefined(self)) {
             return;
@@ -114,7 +114,7 @@ function on_player_spawned() {
     profilestop();
     if (function_8b1a219a()) {
         self allowjump(0);
-        wait(0.5);
+        wait 0.5;
         if (!isdefined(self)) {
             return;
         }
@@ -163,23 +163,23 @@ function last_valid_position() {
     while (!isdefined(self.last_valid_position) && isdefined(self)) {
         origin = self function_c3eed624();
         self.last_valid_position = getclosestpointonnavmesh(origin, 2048, 0);
-        wait(0.1);
+        wait 0.1;
     }
     while (isdefined(self)) {
         origin = self function_c3eed624();
         if (getdvarint(#"hash_1a597b008cc91bd8", 0) > 0) {
-            wait(1);
+            wait 1;
             continue;
         }
         playerradius = self getpathfindingradius();
         if (distance2dsquared(origin, self.last_valid_position) < playerradius * playerradius && (origin[2] - self.last_valid_position[2]) * (origin[2] - self.last_valid_position[2]) < 16 * 16) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (ispointonnavmesh(origin, self)) {
             self.last_valid_position = origin;
         } else if (!ispointonnavmesh(origin, self) && ispointonnavmesh(self.last_valid_position, self) && distance2dsquared(origin, self.last_valid_position) < 32 * 32) {
-            wait(0.1);
+            wait 0.1;
             continue;
         } else {
             position = getclosestpointonnavmesh(origin, 100, playerradius);
@@ -187,7 +187,7 @@ function last_valid_position() {
                 self.last_valid_position = position;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

@@ -180,7 +180,7 @@ function function_cc5ed6ff(pitch, min_pitch, max_pitch, var_2ff50798, var_9988e8
             vel = self getvelocity();
             speed = length(vel);
             iprintlnbold("<dev string:xaf>" + speed + "<dev string:xbc>" + viewpitch);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -238,7 +238,7 @@ function on_oob(local_client_num, params) {
 // Size: 0x3c
 function function_7c653916(timesec) {
     self endon(#"death");
-    wait(timesec);
+    wait timesec;
     self delete();
 }
 
@@ -316,7 +316,7 @@ function function_a993866(localclientnum, var_9a17b15c) {
     }
     if (var_9a17b15c > 0) {
         self endon(#"death", #"freefallend", #"disconnect");
-        wait(var_9a17b15c);
+        wait var_9a17b15c;
     }
     println(self.name + "<dev string:xdf>" + var_9a17b15c);
     trail_fx = namespace_eb06e24d::get_trailfx();
@@ -381,7 +381,7 @@ function function_ba7365ff(localclientnum, height, fxid) {
             self thread function_ada640c5(localclientnum, fxid);
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -504,7 +504,7 @@ function ground_trace(startpos, owner) {
 // Size: 0x44
 function function_5789287a() {
     self endon(#"death");
-    wait(1.75);
+    wait 1.75;
     self stoprenderoverridebundle(#"hash_336cece53ae2342f");
 }
 
@@ -536,7 +536,7 @@ function parachute_detach() {
         parachute playrenderoverridebundle(#"hash_336cece53ae2342f");
         parachute thread function_5789287a();
         parachute animation::play(#"p8_fxanim_wz_parachute_player_anim", self.origin, self.angles);
-        wait(1);
+        wait 1;
         parachute delete();
     }
 }

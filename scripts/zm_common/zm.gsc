@@ -357,15 +357,15 @@ function fade_out_intro_screen_zm(hold_black_time = 0.2) {
     if (isdefined(level.var_fdba6f4b)) {
         [[ level.var_fdba6f4b ]]();
     } else {
-        wait(hold_black_time);
+        wait hold_black_time;
     }
     level flag::set("initial_blackscreen_passed");
     level clientfield::set("sndZMBFadeIn", 1);
-    wait(level.var_ab367500);
+    wait level.var_ab367500;
     if (isdefined(level.var_3a382f82)) {
-        wait(level.var_3a382f82);
+        wait level.var_3a382f82;
     } else {
-        wait(1.6);
+        wait 1.6;
     }
     level flag::set("gameplay_started");
     level clientfield::set("gameplay_started", 1);
@@ -414,7 +414,7 @@ function onallplayersready() {
         waitframe(1);
     }
     level util::streamer_wait(undefined, 2, 15);
-    wait(5);
+    wait 5;
     function_5fad41b5();
     n_start_delay = 3;
     level thread util::delay(n_start_delay, "game_ended", &flag::set, "start_zombie_round_logic");
@@ -422,14 +422,14 @@ function onallplayersready() {
     set_intermission_point();
     n_black_screen = n_start_delay + 2;
     level thread fade_out_intro_screen_zm(n_black_screen);
-    wait(n_black_screen);
+    wait n_black_screen;
     level.n_gameplay_start_time = gettime();
     clientfield::set("game_start_time", level.n_gameplay_start_time);
     level notify(#"initial_fade_in_complete");
     /#
         rat::function_7d22c1c9();
     #/
-    wait(n_start_delay);
+    wait n_start_delay;
     luinotifyevent(#"hash_3aef0da8363893b6");
 }
 
@@ -455,7 +455,7 @@ function function_9a8ab40f() {
 // Checksum 0x827f3b50, Offset: 0x2800
 // Size: 0x4c
 function function_d797f41f(n_waittime = 1) {
-    wait(n_waittime);
+    wait n_waittime;
     if (!zm_utility::is_tutorial()) {
         music::setmusicstate("none");
     }
@@ -1020,7 +1020,7 @@ function zombie_intro_screen(string1, string2, string3, string4, string5) {
 function players_playing() {
     players = getplayers();
     level.players_playing = players.size;
-    wait(20);
+    wait 20;
     players = getplayers();
     level.players_playing = players.size;
 }
@@ -1489,7 +1489,7 @@ function function_51133aa1() {
         response = waitresult.response;
         if (response == "restart_level_zm") {
             level thread zm_gametype::zm_map_restart();
-            wait(666);
+            wait 666;
             continue;
         }
         if (response == "resume_end_game") {
@@ -1504,9 +1504,9 @@ function function_51133aa1() {
 // Size: 0x78
 function function_d723e40() {
     level endon(#"resume_end_game");
-    wait(1);
+    wait 1;
     luinotifyevent(#"hash_1fc4832b89307895", 0);
-    wait(zombie_utility::get_zombie_var(#"hash_6bae95928bbe8f1"));
+    wait zombie_utility::get_zombie_var(#"hash_6bae95928bbe8f1");
     level notify(#"resume_end_game");
 }
 
@@ -1546,7 +1546,7 @@ function function_6c369691() {
             ai val::set(#"end_game", "ignoreall", 1);
             ai thread zm_cleanup::no_target_override(ai);
             if (n_index % 2) {
-                wait(0.05);
+                wait 0.05;
             }
         }
     }
@@ -1614,7 +1614,7 @@ function end_game() {
     zombie_utility::set_zombie_var(#"zombie_powerup_insta_kill_time", 0);
     zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", 0);
     zombie_utility::set_zombie_var(#"zombie_powerup_double_points_time", 0);
-    wait(0.1);
+    wait 0.1;
     game_over = [];
     survived = [];
     players = getplayers();
@@ -1685,7 +1685,7 @@ function end_game() {
         if (!(isdefined(level.host_ended_game) && level.host_ended_game) && getdvarint(#"hash_2a088de8afba1c99", 0) > 1) {
             luinotifyevent(#"force_scoreboard", 0);
             map_restart(1);
-            wait(666);
+            wait 666;
         }
     #/
     luinotifyevent(#"force_scoreboard", 1, 1);
@@ -1701,7 +1701,7 @@ function end_game() {
         level thread zm_trial_util::function_f79b96ac();
     }
     if (potm::function_afe21831() == 0) {
-        wait(zombie_utility::get_zombie_var(#"zombie_intermission_time"));
+        wait zombie_utility::get_zombie_var(#"zombie_intermission_time");
     }
     players = getplayers();
     for (i = 0; i < players.size; i++) {
@@ -1711,7 +1711,7 @@ function end_game() {
     }
     level notify(#"stop_intermission");
     array::thread_all(getplayers(), &zm_player::player_exit_level);
-    wait(1.5);
+    wait 1.5;
     players = getplayers();
     for (i = 0; i < players.size; i++) {
         players[i] cameraactivate(0);
@@ -1720,11 +1720,11 @@ function end_game() {
         if (!(isdefined(level.host_ended_game) && level.host_ended_game) && getdvarint(#"hash_2a088de8afba1c99", 0)) {
             luinotifyevent(#"force_scoreboard", 1, 0);
             map_restart(1);
-            wait(666);
+            wait 666;
         }
     #/
     exitlevel(0);
-    wait(666);
+    wait 666;
 }
 
 // Namespace zm/zm
@@ -1743,7 +1743,7 @@ function end_game_player_was_spectator() {
 // Size: 0x2a
 function disable_end_game_intermission(delay) {
     level.disable_intermission = 1;
-    wait(delay);
+    wait delay;
     level.disable_intermission = undefined;
 }
 
@@ -1757,7 +1757,7 @@ function check_end_game_intermission_delay() {
             if (!isdefined(level.disable_intermission)) {
                 break;
             }
-            wait(0.01);
+            wait 0.01;
         }
     }
 }
@@ -1832,7 +1832,7 @@ function function_dccccaf2() {
     self endon(#"disconnect", #"death");
     self notify(#"_zombie_game_over");
     self.score = self.score_total;
-    wait(0.51);
+    wait 0.51;
     self lui::screen_fade_out(1);
     level waittill(#"play_potm");
     self lui::screen_fade_in(0.1);
@@ -1864,15 +1864,15 @@ function intermission() {
         players[i] stopsounds();
     }
     if (potm_enabled) {
-        wait(5);
+        wait 5;
         level thread potm::play_potm(2);
         waitframe(1);
         level notify(#"play_potm");
         level waittill(#"potm_finished");
-        wait(2.25);
+        wait 2.25;
         return;
     }
-    wait(5.25);
+    wait 5.25;
     players = getplayers();
     for (i = 0; i < players.size; i++) {
         players[i] clientfield::set("zmbLastStand", 0);
@@ -1899,7 +1899,7 @@ function zombie_game_over_death() {
         if (isdefined(zombies[i].ignore_game_over_death) && zombies[i].ignore_game_over_death) {
             continue;
         }
-        wait(0.5 + randomfloat(2));
+        wait 0.5 + randomfloat(2);
         if (isdefined(zombies[i])) {
             if (!isvehicle(zombies[i])) {
                 zombies[i] zombie_utility::zombie_head_gib();
@@ -1958,7 +1958,7 @@ function default_delayed_exit() {
         if (!self.ignoreme) {
             break;
         }
-        wait(0.1);
+        wait 0.1;
     }
     self thread default_find_exit_point();
 }

@@ -52,7 +52,7 @@ function spawn_flavor_apc_explosion(localclientnum, oldval, newval, bnewent, bin
     forcestreamxmodel(model);
     playfx(localclientnum, "explosions/fx8_vexp_fav_buggy", self gettagorigin("tag_body_d0"), anglestoforward(self gettagangles("tag_body_d0")));
     playrumbleonposition(localclientnum, "mp_embassy_apc_explosion", self.origin);
-    wait(2);
+    wait 2;
     stopforcestreamingxmodel(model);
 }
 

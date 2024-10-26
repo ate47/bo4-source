@@ -93,7 +93,7 @@ function function_deaba617(localclientnum, oldval, newval, bnewent, binitialsnap
             if (isdefined(self)) {
                 self function_78233d29(#"hash_589cf36f110e3f4a", "", "DNI Glow", n_val);
             }
-            wait(0.05);
+            wait 0.05;
             n_val += 0.1;
         }
         if (isdefined(self)) {

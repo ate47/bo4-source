@@ -107,7 +107,7 @@ function main() {
         level waittill(#"hash_7646638df88a3656");
         if (level.var_c3a029eb === 1 && level.round_number >= 29) {
             level thread lui::screen_flash(0.2, 3, 0.5, 1, "black");
-            wait(0.2);
+            wait 0.2;
             foreach (player in getplayers()) {
                 player clientfield::set_to_player("" + #"hash_78b8d89d34b32241", 0);
             }
@@ -273,7 +273,7 @@ function function_ff0b7907() {
     level clientfield::set("" + #"hash_72b5b0359ca48427", 1);
     playsoundatposition(#"hash_431cadb65b1777ce", (0, 0, 0));
     level thread lui::screen_flash(0.2, 0.5, 1, 0.8, "white");
-    wait(0.2);
+    wait 0.2;
     setlightingstate(1);
     level clientfield::set("" + #"lava_control", 1);
     level clientfield::set("" + #"hash_5e69ee96304ec40b", 1);
@@ -326,7 +326,7 @@ function function_7206d28() {
 function function_b93ad88d() {
     level endon(#"hash_2f8bcdedfd04a879");
     level.zones[#"ice_floe"].is_enabled = 0;
-    wait(1);
+    wait 1;
     level.zones[#"ice_floe"].is_enabled = 1;
 }
 
@@ -362,7 +362,7 @@ function blood_buff() {
     self.ignore_all_poi = 1;
     self.var_38255de6 = 1;
     self.instakill_func = &zm_powerups::function_16c2586a;
-    wait(0.5);
+    wait 0.5;
     while (!isdefined(self) || isdefined(self) && !isalive(self)) {
         waitframe(1);
     }
@@ -387,7 +387,7 @@ function function_8532d13f() {
     if (isdefined(level.var_4adebdfc)) {
         level.var_4adebdfc clientfield::set("" + #"hash_10906b9ce905bda8", 0);
     }
-    wait(3);
+    wait 3;
     origin = self gettagorigin("j_spine4");
     level.var_4adebdfc.origin = origin;
     level.var_4adebdfc linkto(self, "j_spine4");

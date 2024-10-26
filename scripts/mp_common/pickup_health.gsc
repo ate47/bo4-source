@@ -115,7 +115,7 @@ function private offhealthregen(slot, weapon) {
 // Checksum 0x62b0b445, Offset: 0x6b0
 // Size: 0x24
 function private healingdone() {
-    wait(0.5);
+    wait 0.5;
     self function_2bcfabea();
 }
 
@@ -156,7 +156,7 @@ function private function_7a80944d(player) {
     level endon(#"game_ended");
     self endon(#"death");
     player endon(#"disconnect");
-    wait(isdefined(level.pickup_respawn_time) ? level.pickup_respawn_time : 0);
+    wait isdefined(level.pickup_respawn_time) ? level.pickup_respawn_time : 0;
     if (isdefined(self.objectiveid)) {
         objective_setvisibletoplayer(self.objectiveid, player);
     }

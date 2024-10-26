@@ -78,7 +78,7 @@ function registerbehaviorscriptfunctions() {
 // Checksum 0x3586dca1, Offset: 0xbc0
 // Size: 0x21c
 function private function_686ab596() {
-    wait(5);
+    wait 5;
     while (true) {
         var_dfd6386 = getdvarstring(#"hash_27ecb7addfd5db25", "");
         ais = getaiarchetypearray(#"civilian");
@@ -101,7 +101,7 @@ function private function_686ab596() {
                 break;
             }
         }
-        wait(0.05);
+        wait 0.05;
     }
 }
 

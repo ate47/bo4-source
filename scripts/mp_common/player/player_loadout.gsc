@@ -347,7 +347,7 @@ function private function_6bc4927f() {
 // Size: 0x18e
 function private function_8624b793() {
     /#
-        wait(0.5);
+        wait 0.5;
         for (i = 0; i < 1024; i++) {
             iteminfo = getunlockableiteminfofromindex(i, 0);
             if (!isdefined(iteminfo)) {
@@ -1374,9 +1374,9 @@ function private function_b61852e1() {
     self endon("25e412c683e8d36");
     waitframe(1);
     self luinotifyevent(#"hash_21e30e91084f7e66", 0);
-    wait(0.1);
+    wait 0.1;
     self luinotifyevent(#"hash_21e30e91084f7e66", 0);
-    wait(0.5);
+    wait 0.5;
     self luinotifyevent(#"hash_21e30e91084f7e66", 0);
 }
 
@@ -1629,7 +1629,7 @@ function private offhealthregen(slot, weapon) {
 // Size: 0x64
 function private function_c57586b8() {
     self endon(#"disconnect");
-    wait(0.5);
+    wait 0.5;
     self gadget_health_regen::power_off();
     if (isdefined(self.gadget_health_regen_slot)) {
         self function_19ed70ca(self.gadget_health_regen_slot, 1);

@@ -112,7 +112,7 @@ function defend_areas() {
     level flag::set("lighthouse_points");
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(25);
+    wait 25;
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     zm_utility::function_fef4b36a(str_next_defend);
     if (math::cointoss()) {
@@ -134,7 +134,7 @@ function defend_areas() {
     level thread function_b4cae8b9();
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(25);
+    wait 25;
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level flag::set(#"hash_50990d5b9376f50d");
     zm_utility::function_fef4b36a(str_next_defend);
@@ -149,7 +149,7 @@ function defend_areas() {
         }
     }
     level thread registerlast_truck_headshot_();
-    wait(5);
+    wait 5;
     if (level flag::get("beach_points")) {
         var_420e4589 = array("beach_to_gangway", "gangway_to_stern");
         var_49f2dcca = arraycombine(var_49f2dcca, array("cargo_hold_to_artifact_storage", "artifact_storage_to_forecastle"), 0, 0);
@@ -168,7 +168,7 @@ function defend_areas() {
     level thread function_6091b49b();
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(25);
+    wait 25;
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level flag::set(#"hash_13bc135937af9be2");
     level flag::set("power_on2");
@@ -189,12 +189,12 @@ function defend_areas() {
     level zm_utility::open_door(var_420e4589, undefined, undefined, 1);
     level flag::set("cargo_hold_to_artifact_storage");
     level thread function_c87db3f7();
-    wait(10);
+    wait 10;
     function_4fe4866f();
-    wait(10);
+    wait 10;
     util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
     zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
-    wait(45);
+    wait 45;
     level thread function_c87db3f7();
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45);
     level flag::set("power_on3");
@@ -224,7 +224,7 @@ function function_c87db3f7(str_next_defend) {
     level flag::wait_till("started_defend_area");
     level flag::set("fasttravel_disabled");
     level waittill(#"hash_7a04a7fb98fa4e4d");
-    wait(2);
+    wait 2;
     level flag::clear("fasttravel_disabled");
 }
 
@@ -354,7 +354,7 @@ function function_a39e7a56() {
         if (isdefined(ai)) {
             n_delay = isdefined(zombie_utility::get_zombie_var(#"zombie_spawn_delay")) ? zombie_utility::get_zombie_var(#"zombie_spawn_delay") : zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5");
             level.defend_spawns++;
-            wait(n_delay);
+            wait n_delay;
             return true;
         }
     }
@@ -396,7 +396,7 @@ function function_466fb0ff(str_last_defend) {
     str_next_defend = zm_utility::function_40ef77ab(str_last_defend);
     for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); true; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
         util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
-        wait(25);
+        wait 25;
         level thread function_c87db3f7();
         zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7);
         str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
@@ -410,13 +410,13 @@ function function_466fb0ff(str_last_defend) {
     // Checksum 0x82aa32be, Offset: 0x2b70
     // Size: 0x112
     function function_1dcc39ae() {
-        wait(5);
+        wait 5;
         str_next_defend = zm_utility::function_40ef77ab("<dev string:x5f>");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
         while (true) {
             zm_utility::function_11101458(str_next_defend);
-            wait(5);
+            wait 5;
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);
             str_previous_defend = str_next_defend;
             str_next_defend = zm_utility::function_40ef77ab(str_next_defend);

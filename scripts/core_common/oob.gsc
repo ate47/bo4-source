@@ -275,7 +275,7 @@ function function_c5278cb0(vehicle) {
             self enter_oob(vehicle);
             self waittill(#"oob_exit");
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -414,7 +414,7 @@ function watchforleave(entity) {
         } else {
             self resetoobtimer();
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 

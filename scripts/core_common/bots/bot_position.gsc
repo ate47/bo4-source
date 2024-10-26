@@ -359,7 +359,7 @@ function function_ba7966f8() {
             var_4cdb8c05 = currentweapon;
             ammo = self getammocount(currentweapon);
             if (ammo <= 0) {
-                wait(randomintrange(4, 5));
+                wait randomintrange(4, 5);
                 currentweapon = self getcurrentweapon();
                 if (currentweapon == var_4cdb8c05) {
                     ammo = self getammocount(currentweapon);
@@ -369,7 +369,7 @@ function function_ba7966f8() {
                 }
             }
         }
-        wait(randomintrange(2, 4));
+        wait randomintrange(2, 4);
     }
 }
 

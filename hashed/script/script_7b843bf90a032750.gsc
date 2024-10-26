@@ -70,10 +70,10 @@ function private on_end(round_reset) {
 function private function_e997bb0b(var_73d6ae36) {
     level endon(#"hash_7646638df88a3656", #"end_game");
     if (isdefined(var_73d6ae36)) {
-        wait(var_73d6ae36);
+        wait var_73d6ae36;
     } else {
         n_delay = zm_round_logic::get_delay_between_rounds();
-        wait(n_delay + 0);
+        wait n_delay + 0;
     }
     while (true) {
         foreach (player in getplayers()) {
@@ -97,7 +97,7 @@ function private function_e997bb0b(var_73d6ae36) {
                 player dodamage(self.var_6633a592, player.origin);
             }
         }
-        wait(self.var_ead3a0f2);
+        wait self.var_ead3a0f2;
     }
 }
 

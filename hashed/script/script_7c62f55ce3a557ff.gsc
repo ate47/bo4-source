@@ -182,7 +182,7 @@ function private function_f332f2b7(n_spawn, str_zone_name, var_dde9ff11, var_68f
             var_33882d9b++;
         }
         if (isdefined(level.var_152c591) && level.var_152c591 && !(isdefined(level.var_a2831281) && level.var_a2831281)) {
-            wait(randomfloatrange(15, 45));
+            wait randomfloatrange(15, 45);
         }
         util::wait_network_frame();
     }
@@ -360,7 +360,7 @@ function get_brutus_spawn_pos_val(var_ed72e56b) {
 // Size: 0x3a
 function brutus_spawn_prologue(spawn_pos) {
     playsoundatposition(#"zmb_ai_brutus_prespawn", spawn_pos.origin);
-    wait(3);
+    wait 3;
 }
 
 // Namespace zombie_brutus_util/ai_brutus_util
@@ -413,7 +413,7 @@ function brutus_round_tracker() {
             if (isdefined(level.var_cab8d080) && level.var_cab8d080) {
                 level.var_cab8d080 = undefined;
             } else {
-                wait(randomfloatrange(level.var_dc8fa5e1, level.var_63a02bd7));
+                wait randomfloatrange(level.var_dc8fa5e1, level.var_63a02bd7);
             }
             if (attempt_brutus_spawn(function_7265bed3())) {
                 level.var_6e1b47ab = 1;
@@ -444,7 +444,7 @@ function private function_7265bed3() {
 // Size: 0x36
 function brutus_round_spawn_failsafe_respawn() {
     while (true) {
-        wait(2);
+        wait 2;
         if (attempt_brutus_spawn(1)) {
             break;
         }
@@ -567,7 +567,7 @@ function function_4621cb04(w_component) {
     mdl_key thread function_f57a7d55(w_item);
     mdl_key thread function_69740610(w_item);
     while (isdefined(w_item)) {
-        wait(0.25);
+        wait 0.25;
     }
     mdl_key delete();
 }
@@ -585,7 +585,7 @@ function function_f57a7d55(w_item) {
         yaw = self.angles[1] + yaw;
         new_angles = (-60 + randomint(120), yaw, -45 + randomint(90));
         self rotateto(new_angles, waittime, waittime * 0.5, waittime * 0.5);
-        wait(randomfloat(waittime - 0.1));
+        wait randomfloat(waittime - 0.1);
     }
 }
 
@@ -595,7 +595,7 @@ function function_f57a7d55(w_item) {
 // Size: 0x114
 function function_69740610(w_item) {
     self endon(#"death");
-    wait(15);
+    wait 15;
     for (i = 0; i < 40; i++) {
         if (i % 2) {
             self ghost();
@@ -603,14 +603,14 @@ function function_69740610(w_item) {
             self show();
         }
         if (i < 15) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (i < 25) {
-            wait(0.25);
+            wait 0.25;
             continue;
         }
-        wait(0.1);
+        wait 0.1;
     }
     self clientfield::set("powerup_grabbed_fx", 2);
     util::wait_network_frame();
@@ -750,7 +750,7 @@ function brutus_check_zone() {
                 }
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -768,7 +768,7 @@ function brutus_watch_enemy() {
                 self.favoriteenemy = function_9a78baba(var_1cc3df76);
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -803,7 +803,7 @@ function private function_9a78baba(var_1cc3df76) {
 function brutus_lockdown_client_effects(delay) {
     self endon(#"death", #"brutus_cleanup");
     if (isdefined(delay)) {
-        wait(delay);
+        wait delay;
     }
     if (self.var_41455ab0) {
         self.var_41455ab0 = 0;

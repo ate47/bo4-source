@@ -77,7 +77,7 @@ function __main__() {
             zombie_utility::set_zombie_var(#"thundergun_gib_damage", getdvarint(#"scr_thundergun_gib_damage", 0));
             zombie_utility::set_zombie_var(#"thundergun_knockdown_range", getdvarint(#"scr_thundergun_knockdown_range", 0));
             zombie_utility::set_zombie_var(#"thundergun_knockdown_damage", getdvarint(#"scr_thundergun_knockdown_damage", 0));
-            wait(0.5);
+            wait 0.5;
         }
     }
 

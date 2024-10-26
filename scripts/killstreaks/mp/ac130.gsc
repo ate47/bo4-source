@@ -121,7 +121,7 @@ function rotaterig(bundle) {
     var_d57617dd = isdefined(bundle.var_dff95af) ? bundle.var_dff95af : 300;
     while (true) {
         self rotateyaw(360, var_d57617dd);
-        wait(var_d57617dd);
+        wait var_d57617dd;
     }
 }
 
@@ -140,7 +140,7 @@ function activatemaingunner(killstreaktype) {
         if (attempts > 50) {
             return 0;
         }
-        wait(0.1);
+        wait 0.1;
     }
     player val::set(#"spawnac130", "freezecontrols");
     result = player spawnac130();
@@ -381,7 +381,7 @@ function function_cc756b8d() {
 // Size: 0x44
 function function_31d18ab9() {
     self endon(#"death");
-    wait(isdefined(5) ? 5 : 0);
+    wait isdefined(5) ? 5 : 0;
     self function_cc756b8d();
 }
 
@@ -434,7 +434,7 @@ function function_d4896942(bundle) {
         ac130 playsound(#"hash_713a3ce01967434e");
         ac130.var_7132bbb7 = 1;
         self killstreaks::play_pilot_dialog_on_owner("damageEvaded", "ac130", self.killstreak_id);
-        wait(isdefined(bundle.var_2eeb71d2) ? bundle.var_2eeb71d2 : 5);
+        wait isdefined(bundle.var_2eeb71d2) ? bundle.var_2eeb71d2 : 5;
         ac130.var_7132bbb7 = undefined;
     }
 }
@@ -481,7 +481,7 @@ function function_849819e9(missile, bundle, var_61bbac7a) {
                 return;
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -498,7 +498,7 @@ function function_6650cc9c(missile, bundle, var_2f984f68) {
         return;
     }
     missile endon(#"death");
-    wait(0.2);
+    wait 0.2;
     neardist = isdefined(bundle.var_4004fbc) ? bundle.var_4004fbc : 10;
     fardist = isdefined(bundle.var_364ccfdc) ? bundle.var_364ccfdc : 100;
     range = fardist - neardist;
@@ -517,7 +517,7 @@ function function_6650cc9c(missile, bundle, var_2f984f68) {
         }
         var_6ce65309 = (dist - neardist) / range;
         beep_interval = lerpfloat(var_6f2344f0, var_cd12ce4c, var_6ce65309);
-        wait(beep_interval);
+        wait beep_interval;
     }
 }
 
@@ -624,7 +624,7 @@ function function_c137f6f8(ac130) {
     ac130 endon(#"death", #"ac130_shutdown");
     self endon(#"disconnect");
     map_center = airsupport::getmapcenter();
-    wait(0.1);
+    wait 0.1;
     var_74a46de6 = ac130 function_90d45d34(0);
     view_pos = self getplayercamerapos();
     self setplayerangles(vectortoangles(map_center - view_pos) - var_74a46de6);
@@ -659,7 +659,7 @@ function function_5cdcce1e(player) {
             ac130 updatedrivabletimeforalloccupants(ac130.killstreak_duration, ac130.killstreak_end_time);
             var_2990ddbd = seat_index;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -669,7 +669,7 @@ function function_5cdcce1e(player) {
 // Size: 0x4c
 function hidecompassafterwait(waittime) {
     self endon(#"death", #"disconnect");
-    wait(waittime);
+    wait waittime;
     self killstreaks::hide_compass();
 }
 
@@ -849,10 +849,10 @@ function function_dea7ec6a(einflictor, eattacker, idamage, idflags, smeansofdeat
 // Size: 0x5e
 function wait_and_explode() {
     self endon(#"death");
-    wait(2);
+    wait 2;
     if (isdefined(self)) {
         self vehicle::do_death_fx();
-        wait(0.25);
+        wait 0.25;
         if (isdefined(self)) {
             self notify(#"ac130_shutdown");
         }
@@ -910,18 +910,18 @@ function playlockonsoundsthread(player, heli) {
     player endon(#"disconnect", #"gunner_left");
     heli endon(#"death", #"crashing", #"leaving");
     heli.locksounds = spawn("script_model", heli.origin);
-    wait(0.1);
+    wait 0.1;
     heli.locksounds linkto(heli, "tag_origin");
     while (true) {
         heli waittill(#"locking on");
         while (true) {
             if (enemyislocking(heli)) {
                 heli.locksounds playsoundtoplayer(#"hash_fa62d8cec85b1a0", player);
-                wait(0.125);
+                wait 0.125;
             }
             if (enemylockedon(heli)) {
                 heli.locksounds playsoundtoplayer(#"hash_1683ed70beb3f2", player);
-                wait(0.125);
+                wait 0.125;
             }
             if (!enemyislocking(heli) && !enemylockedon(heli)) {
                 heli.locksounds stopsounds();
@@ -991,7 +991,7 @@ function function_cd679760(startnode, destnodes) {
         profilestop();
         firstpass = 0;
     }
-    wait(waittime);
+    wait waittime;
 }
 
 // Namespace ac130/ac130
@@ -1033,7 +1033,7 @@ function watchlocationchangethread(destnodes) {
         ac130 waittill(#"goal");
         if (player.moves > 0) {
             waittime = randomintrange(settings.var_efac0f7a, settings.var_18d458d2);
-            wait(float(waittime) / 1000);
+            wait float(waittime) / 1000;
         }
         player.moves++;
         node = self updateareanodes(destnodes, 1);
@@ -1065,7 +1065,7 @@ function setplayermovedrecentlythread() {
     ac130 endon(#"delete", #"ac130_shutdown");
     mymove = self.moves;
     level.ac130.playermovedrecently = 1;
-    wait(100);
+    wait 100;
     if (mymove === self.moves && isdefined(level.ac130)) {
         level.ac130.playermovedrecently = 0;
     }
@@ -1206,10 +1206,10 @@ function function_3939b657(vehicle) {
             vehicle turretcleartarget(0);
             vehicle turretsettargetangles(0, (15, 0, 0));
             if (isdefined(enemy)) {
-                wait(2 + randomfloat(0.5));
+                wait 2 + randomfloat(0.5);
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1238,7 +1238,7 @@ function function_631f02c5(isprimaryweapon) {
     } else {
         self.secondarykill = (isdefined(self.secondarykill) ? self.secondarykill : 0) + 1;
     }
-    wait(2.5);
+    wait 2.5;
     if (!isdefined(self)) {
         return;
     }
@@ -1301,7 +1301,7 @@ function function_d55529() {
     bundle = level.killstreaks[#"ac130"].script_bundle;
     playfxontag(bundle.var_545fa8c2, self, "tag_fx_engine3");
     self playsound(level.heli_sound[#"crash"]);
-    wait(0.1);
+    wait 0.1;
     playfxontag(bundle.var_545fa8c2, self, "tag_fx_engine4");
 }
 
@@ -1314,7 +1314,7 @@ function function_ae354bc7() {
     bundle = level.killstreaks[#"ac130"].script_bundle;
     playfxontag(bundle.var_465c35a5, self, "tag_fx_engine1");
     self playsound(level.heli_sound[#"crash"]);
-    wait(0.1);
+    wait 0.1;
     playfxontag(bundle.var_465c35a5, self, "tag_fx_engine6");
 }
 
@@ -1338,7 +1338,7 @@ function function_cd29787b() {
 function function_60e3edcc() {
     plane = self;
     plane endon(#"death");
-    wait(randomfloatrange(0.1, 0.2));
+    wait randomfloatrange(0.1, 0.2);
     if (false) {
         goalx = randomfloatrange(650, 700);
         goaly = randomfloatrange(650, 700);
@@ -1351,13 +1351,13 @@ function function_60e3edcc() {
         var_8518e93e = randomfloatrange(3, 4);
         plane setplanebarrelroll(randomfloatrange(0.0833333, 0.111111), randomfloatrange(4, 5));
         plane_speed = plane getspeedmph();
-        wait(0.7);
+        wait 0.7;
         plane setspeed(plane_speed * 1.5, 300);
-        wait(var_8518e93e - 0.7);
+        wait var_8518e93e - 0.7;
     }
     plane function_cd29787b();
-    wait(0.1);
+    wait 0.1;
     plane ghost();
-    wait(0.5);
+    wait 0.5;
 }
 

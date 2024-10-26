@@ -320,7 +320,7 @@ function trap_activate(trap, who) {
         }
     #/
     n_cooldown = function_da13db45(trap._trap_cooldown_time, who);
-    wait(n_cooldown);
+    wait n_cooldown;
     playsoundatposition(#"zmb_trap_ready", trap.origin);
     if (isdefined(level.sndtrapfunc)) {
         level thread [[ level.sndtrapfunc ]](trap, 0);
@@ -346,7 +346,7 @@ function private update_trigger_visibility() {
                 self setinvisibletoplayer(player, 0);
             }
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 
@@ -448,7 +448,7 @@ function trap_activate_fire() {
         fx_points[i] thread trap_audio_fx(self);
     }
     self thread trap_damage();
-    wait(self._trap_duration);
+    wait self._trap_duration;
     self notify(#"trap_done");
 }
 
@@ -466,18 +466,18 @@ function trap_activate_rotating() {
     for (i = 0; i < self._trap_movers.size; i++) {
         self._trap_movers[i] rotateyaw(360, 5, 4.5);
     }
-    wait(5);
+    wait 5;
     step = 1.5;
     for (t = 0; t < self._trap_duration; t += step) {
         for (i = 0; i < self._trap_movers.size; i++) {
             self._trap_movers[i] rotateyaw(360, step);
         }
-        wait(step);
+        wait step;
     }
     for (i = 0; i < self._trap_movers.size; i++) {
         self._trap_movers[i] rotateyaw(360, 5, 0, 4.5);
     }
-    wait(5);
+    wait 5;
     for (i = 0; i < self._trap_movers.size; i++) {
         self._trap_movers[i].angles = old_angles;
     }
@@ -619,7 +619,7 @@ function player_elec_damage(trigger) {
         } else {
             self dodamage(150, self.origin, undefined, trigger);
         }
-        wait(1);
+        wait 1;
         self.is_burning = undefined;
     }
 }
@@ -644,7 +644,7 @@ function player_fire_damage() {
             return;
         }
         self dodamage(50, self.origin);
-        wait(0.1);
+        wait 0.1;
         self.is_burning = undefined;
     }
 }
@@ -665,7 +665,7 @@ function zombie_trap_death(e_trap, param) {
                 self playsound(#"zmb_ignite");
                 self thread zombie_death::flame_death_fx();
                 playfxontag(level._effect[#"character_fire_death_torso"], self, "J_SpineLower");
-                wait(randomfloat(1.25));
+                wait randomfloat(1.25);
             } else {
                 refs[0] = "guts";
                 refs[1] = "right_arm";
@@ -676,7 +676,7 @@ function zombie_trap_death(e_trap, param) {
                 refs[6] = "head";
                 self.a.gib_ref = refs[randomint(refs.size)];
                 playsoundatposition(#"wpn_zmb_electrap_zap", self.origin);
-                wait(randomfloat(1.25));
+                wait randomfloat(1.25);
                 self playsound(#"wpn_zmb_electrap_zap");
             }
         }
@@ -727,7 +727,7 @@ function zombie_flame_watch() {
 function play_elec_vocals() {
     if (isdefined(self)) {
         org = self.origin;
-        wait(0.15);
+        wait 0.15;
         playsoundatposition(#"zmb_elec_vocals", org);
         playsoundatposition(#"wpn_zmb_electrap_zap", org);
         playsoundatposition(#"zmb_exp_jib_zombie", org);
@@ -753,7 +753,7 @@ function electroctute_death_fx() {
         playfxontag(level._effect[#"elec_torso"], self, "J_SpineLower");
     }
     self playsound(#"zmb_elec_jib_zombie");
-    wait(1);
+    wait 1;
     tagarray = [];
     tagarray[0] = "J_Elbow_LE";
     tagarray[1] = "J_Elbow_RI";
@@ -764,7 +764,7 @@ function electroctute_death_fx() {
         playfxontag(level._effect[#"elec_md"], self, tagarray[0]);
     }
     self playsound(#"zmb_elec_jib_zombie");
-    wait(1);
+    wait 1;
     self playsound(#"zmb_elec_jib_zombie");
     tagarray[0] = "J_Wrist_RI";
     tagarray[1] = "J_Wrist_LE";
@@ -786,7 +786,7 @@ function electroctute_death_fx() {
 function electrocute_timeout() {
     self endon(#"death");
     self playloopsound(#"amb_fire_manager_0");
-    wait(12);
+    wait 12;
     self stoploopsound();
     if (isdefined(self) && isalive(self)) {
         self.is_electrocuted = 0;
@@ -803,7 +803,7 @@ function trap_dialog() {
     level endon(#"switch_flipped");
     timer = 0;
     while (true) {
-        wait(0.5);
+        wait 0.5;
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (!isdefined(players[i])) {
@@ -815,7 +815,7 @@ function trap_dialog() {
                 continue;
             }
             if (dist < 4900 && timer < 3) {
-                wait(0.5);
+                wait 0.5;
                 timer++;
             }
             if (!isdefined(players[i])) {
@@ -824,7 +824,7 @@ function trap_dialog() {
             if (dist < 4900 && timer == 3) {
                 index = zm_utility::get_player_index(players[i]);
                 plr = "plr_" + index + "_";
-                wait(3);
+                wait 3;
                 self notify(#"warning_dialog");
             }
         }
@@ -979,7 +979,7 @@ function function_a1812da9() {
     self notify(#"hash_337fc06844d7d1bb");
     self endon(#"disconnect", #"hash_337fc06844d7d1bb");
     self.var_9beb4442 = 1;
-    wait(0.25);
+    wait 0.25;
     self.var_9beb4442 = undefined;
 }
 

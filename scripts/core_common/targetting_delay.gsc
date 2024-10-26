@@ -53,7 +53,7 @@ function function_7e1a12ce(radius) {
                 }
             }
         }
-        wait(update_interval);
+        wait update_interval;
     }
 }
 

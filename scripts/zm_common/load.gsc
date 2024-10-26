@@ -97,7 +97,7 @@ function start_intro_screen_zm() {
         players[i] lui::screen_fade_out(0, undefined);
         players[i] val::set(#"start_intro_screen_zm", "freezecontrols");
     }
-    wait(1);
+    wait 1;
 }
 
 // Namespace load/load

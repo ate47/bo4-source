@@ -145,9 +145,9 @@ function private run_step_1() {
         pixendevent();
         exploder::stop_exploder("fxexp_mk2_Z_smoke_orange_emit_closet_" + level.var_74170866.s_cabinet.script_string);
         exploder::exploder("fxexp_mk2_Z_fire_closet_door_" + level.var_74170866.s_cabinet.script_string);
-        wait(1);
+        wait 1;
         array::run_all(level.var_74170866.s_cabinet.a_e_doors, &delete);
-        wait(0.5);
+        wait 0.5;
         exploder::stop_exploder("fxexp_mk2_Z_fire_closet_door_" + level.var_74170866.s_cabinet.script_string);
         s_cabinet = level.var_74170866.s_cabinet;
     }
@@ -225,7 +225,7 @@ function private start_step_2() {
         #/
     }
     while (zm_white_main_quest::function_6cebbce1()) {
-        wait(3);
+        wait 3;
     }
     exploder::exploder("fxexp_mk2_Z_smoke_chimney_" + level.var_74170866.s_fireplace.script_string + "_house");
     level.var_74170866.n_step = 2;
@@ -251,7 +251,7 @@ function private run_step_2() {
     }
     exploder::stop_exploder("fxexp_mk2_Z_smoke_chimney_" + level.var_74170866.s_fireplace.script_string + "_house");
     level.var_74170866.s_fireplace.var_7126b6eb triggerenable(0);
-    wait(1);
+    wait 1;
     exploder::exploder("fxexp_mk2_Z_fire_chimney_" + level.var_74170866.s_fireplace.script_string + "_house");
     pixendevent();
     start_step_3();

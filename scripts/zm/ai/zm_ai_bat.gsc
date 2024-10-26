@@ -186,11 +186,11 @@ function private function_1076a2e0() {
     self endon(#"change_state", #"death");
     while (true) {
         if (isdefined(self.ignoreall) && self.ignoreall) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         if (istargetvalid(self.var_c4e19d3)) {
-            wait(0.5);
+            wait 0.5;
             continue;
         }
         target = gettarget();
@@ -202,7 +202,7 @@ function private function_1076a2e0() {
             self vehlookat(self.var_c4e19d3);
             self turretsettarget(0, self.var_c4e19d3);
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -233,7 +233,7 @@ function private function_776e45e5() {
             self zm_cleanup::cleanup_zombie();
             return;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -315,7 +315,7 @@ function private function_1b029905() {
             newai.maxhealth *= waitresult.data.healthmultiplier;
             newai.health = newai.maxhealth;
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -406,7 +406,7 @@ function function_630752f6(notifyhash) {
 // Size: 0x34
 function private function_88d81715() {
     self endon(#"death");
-    wait(1.5);
+    wait 1.5;
     self ghost();
 }
 
@@ -433,7 +433,7 @@ function function_47c795bc(params) {
     mover moveto(self.origin + (0, 0, 30), 0.6, acceleration);
     mover waittill(#"movedone");
     waittime = 0.1;
-    wait(waittime);
+    wait waittime;
     acceleration = 0.6;
     mover moveto(movepos, movetime, acceleration);
     mover waittill(#"movedone");
@@ -445,7 +445,7 @@ function function_47c795bc(params) {
     if (isdefined(mover)) {
         mover delete();
     }
-    wait(1);
+    wait 1;
     self delete();
 }
 
@@ -469,7 +469,7 @@ function state_death_update(params) {
     }
     self vehicle_death::death_fx();
     self val::set(#"zm_ai_bat", #"hide", 2);
-    wait(1);
+    wait 1;
     self delete();
 }
 
@@ -500,7 +500,7 @@ function function_2b369c9f() {
                 [[ level.var_d9f4b654 ]](self);
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -596,7 +596,7 @@ function state_combat_update(params) {
     self asmrequestsubstate(#"locomotion@movement");
     for (;;) {
         if (isdefined(self.ignoreall) && self.ignoreall) {
-            wait(1);
+            wait 1;
             continue;
         }
         if (!ispointinnavvolume(self.origin, "navvolume_small")) {
@@ -618,7 +618,7 @@ function state_combat_update(params) {
                 self.ai.var_e7d26c0f++;
             }
         }
-        wait(randomintrange(3, 5));
+        wait randomintrange(3, 5);
     }
 }
 

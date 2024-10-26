@@ -6,7 +6,7 @@
 #namespace array;
 
 // Namespace array/array_shared
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0x41ce9769, Offset: 0xa0
 // Size: 0x196
 function filter(&array, b_keep_keys, func_filter, ...) {
@@ -335,7 +335,7 @@ function flagsys_wait(&array, str_flag) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x21 linked
+// Params 2, eflags: 0x21 linked variadic
 // Checksum 0x61dba8a2, Offset: 0x12a8
 // Size: 0x106
 function flagsys_wait_any_flag(&array, ...) {
@@ -803,12 +803,12 @@ function spread_all(&entities, func, arg1, arg2, arg3, arg4, arg5) {
             if (isdefined(ent)) {
                 util::single_thread(ent, func, arg1, arg2, arg3, arg4, arg5);
             }
-            wait(randomfloatrange(0.0666667, 0.133333));
+            wait randomfloatrange(0.0666667, 0.133333);
         }
         return;
     }
     util::single_thread(entities, func, arg1, arg2, arg3, arg4, arg5);
-    wait(randomfloatrange(0.0666667, 0.133333));
+    wait randomfloatrange(0.0666667, 0.133333);
 }
 
 // Namespace array/array_shared
@@ -954,7 +954,7 @@ function function_e01a747e(val, arg) {
     // Checksum 0x819c3247, Offset: 0x2ee0
     // Size: 0xc6
     function function_f2d037b1() {
-        wait(5);
+        wait 5;
         for (maxval = 0; maxval < 100; maxval++) {
             for (i = 0; i < 100; i++) {
                 minval = randomintrangeinclusive(0, maxval);
@@ -1015,7 +1015,7 @@ function function_e01a747e(val, arg) {
     // Checksum 0x2b028563, Offset: 0x3248
     // Size: 0xce
     function function_81d0d595() {
-        wait(5);
+        wait 5;
         for (maxval = 0; maxval < 100; maxval++) {
             for (i = 0; i < 100; i++) {
                 minval = randomintrangeinclusive(0, maxval);

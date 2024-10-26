@@ -217,7 +217,7 @@ function function_4b35e9ac() {
 function function_5d642307() {
     self endon(#"death");
     self.var_e35c7b7e = 1;
-    wait(0.1);
+    wait 0.1;
     self.var_e35c7b7e = undefined;
 }
 

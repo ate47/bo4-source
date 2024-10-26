@@ -612,7 +612,7 @@ function function_b74b9f01(entity) {
 // Checksum 0x9d0f61a0, Offset: 0x2b28
 // Size: 0x24
 function private function_fc2777d9() {
-    wait(3);
+    wait 3;
     if (isdefined(self)) {
         self delete();
     }
@@ -1452,7 +1452,7 @@ function function_8fa45bb0() {
         } else {
             var_76ed16d4++;
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1466,11 +1466,11 @@ function function_dfe1236() {
         if (isdefined(self.talking) && self.talking) {
             self.var_db792001 stoploopsound();
             while (isdefined(self.talking) && self.talking) {
-                wait(0.5);
+                wait 0.5;
             }
             self.var_db792001 playloopsound(#"hash_6875b34c441a8695");
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 

@@ -267,7 +267,7 @@ function function_c8ba0b8e() {
 function zombie_damage_failsafe() {
     self endon(#"death");
     while (true) {
-        wait(0.5);
+        wait 0.5;
         if (!isalive(self.enemy) || !isplayer(self.enemy) || !self istouching(self.enemy)) {
             continue;
         }
@@ -296,7 +296,7 @@ function zombie_damage_failsafe() {
                 self.enemy dodamage(self.enemy.health + 1000, self.enemy.origin, self, self, "none", "MOD_RIFLE_BULLET");
                 break;
             }
-            wait(0.5);
+            wait 0.5;
         }
     }
 }
@@ -398,7 +398,7 @@ function zombie_entered_playable() {
                 }
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -425,7 +425,7 @@ function zombie_assure_node() {
             return;
         }
     }
-    wait(2);
+    wait 2;
     nodes = array::get_all_closest(self.origin, level.exterior_goals, undefined, 20);
     if (isdefined(nodes)) {
         self.entrance_nodes = nodes;
@@ -446,7 +446,7 @@ function zombie_assure_node() {
     /#
         self zombie_history("<dev string:xe9>");
     #/
-    wait(20);
+    wait 20;
     self dodamage(self.health + 10, self.origin);
     if (isdefined(level.put_timed_out_zombies_back_in_queue) && level.put_timed_out_zombies_back_in_queue && !(isdefined(self.has_been_damaged_by_player) && self.has_been_damaged_by_player)) {
         level.zombie_total++;
@@ -695,7 +695,7 @@ function zombie_boardtear_offset_fx_horizontle(chunk, node) {
         chunk clientfield::set("tearin_board_vertical_fx", 1);
         return;
     }
-    wait(randomfloatrange(0.2, 0.4));
+    wait randomfloatrange(0.2, 0.4);
 }
 
 // Namespace zm_spawner/zm_spawner
@@ -739,7 +739,7 @@ function zombie_boardtear_offset_fx_verticle(chunk, node) {
         chunk clientfield::set("tearin_board_horizontal_fx", 1);
         return;
     }
-    wait(randomfloatrange(0.2, 0.4));
+    wait randomfloatrange(0.2, 0.4);
 }
 
 // Namespace zm_spawner/zm_spawner
@@ -768,27 +768,27 @@ function zombie_bartear_offset_fx_verticle(chunk) {
         switch (randomint(9)) {
         case 0:
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_top");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_bottom");
             break;
         case 1:
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_top");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_bottom");
             break;
         case 2:
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_top");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_bottom");
             break;
         case 3:
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_top");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_bottom");
             break;
         case 4:
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_top");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_bottom");
             break;
         case 5:
@@ -816,27 +816,27 @@ function zombie_bartear_offset_fx_horizontle(chunk) {
         switch (randomint(10)) {
         case 0:
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_left");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_right");
             break;
         case 1:
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_left");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_right");
             break;
         case 2:
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_left");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_right");
             break;
         case 3:
             playfxontag(level._effect[#"fx_zombie_bar_break"], chunk, "Tag_fx_left");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_right");
             break;
         case 4:
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_left");
-            wait(randomfloatrange(0, 0.3));
+            wait randomfloatrange(0, 0.3);
             playfxontag(level._effect[#"fx_zombie_bar_break_lite"], chunk, "Tag_fx_right");
             break;
         case 5:
@@ -890,7 +890,7 @@ function check_zbarrier_piece_for_zombie_death(chunk_index, zbarrier, zombie) {
 // Size: 0x44
 function check_for_zombie_death(zombie) {
     self endon(#"destroyed");
-    wait(2.5);
+    wait 2.5;
     self zm_blockers::update_states("repaired");
 }
 
@@ -976,7 +976,7 @@ function zombie_ragdoll_then_explode(launchvector, attacker) {
     if (isdefined(launchvector)) {
         self launchragdoll(launchvector);
     }
-    wait(2.1);
+    wait 2.1;
     if (isdefined(self)) {
         self ghost();
         self util::delay(0.25, undefined, &zm_utility::self_delete);
@@ -1095,7 +1095,7 @@ function private function_2cc66() {
 // Size: 0x1e8
 function damage_on_fire(player, weapon) {
     self endon(#"death", #"stop_flame_damage");
-    wait(2);
+    wait 2;
     while (isdefined(self.is_on_fire) && self.is_on_fire) {
         if (level.round_number < 6) {
             dmg = level.zombie_health * randomfloatrange(0.2, 0.3);
@@ -1111,7 +1111,7 @@ function damage_on_fire(player, weapon) {
         } else {
             self dodamage(dmg, self.origin);
         }
-        wait(randomfloatrange(1, 3));
+        wait randomfloatrange(1, 3);
     }
 }
 
@@ -1753,9 +1753,9 @@ function zombie_rise_fx(zombie) {
     }
     zombie endon(#"death");
     self endon(#"stop_zombie_rise_fx");
-    wait(1);
+    wait 1;
     if (zombie.zombie_move_speed != "sprint") {
-        wait(1);
+        wait 1;
     }
 }
 
@@ -1795,7 +1795,7 @@ function zombie_rise_burst_fx(zombie) {
 // Size: 0x160
 function zombie_rise_dust_fx(ai_zombie) {
     ai_zombie endon(#"death");
-    wait(2);
+    wait 2;
     if (!isdefined(self.script_string)) {
         str_fx = "rise_dust";
     } else {
@@ -1816,7 +1816,7 @@ function zombie_rise_dust_fx(ai_zombie) {
     }
     for (t = 0; t < 5.5; t += 0.3) {
         playfxontag(level._effect[str_fx], ai_zombie, "J_SpineUpper");
-        wait(0.3);
+        wait 0.3;
     }
 }
 
@@ -1830,7 +1830,7 @@ function zombie_tesla_head_gib() {
         return;
     }
     if (randomint(100) < zombie_utility::get_zombie_var(#"tesla_head_gib_chance")) {
-        wait(randomfloatrange(0.53, 1));
+        wait randomfloatrange(0.53, 1);
         self zombie_utility::zombie_head_gib();
         return;
     }
@@ -1876,7 +1876,7 @@ function zombie_complete_emerging_into_playable_area() {
 function function_1446cbd3() {
     self endon(#"death");
     self collidewithactors(1);
-    wait(1.5);
+    wait 1.5;
     self setfreecameralockonallowed(1);
 }
 
@@ -1896,7 +1896,7 @@ function function_45bb11e4(spot) {
     self.mdl_anchor moveto(spot.origin, 0.05);
     self.mdl_anchor rotateto(spot.angles, 0.05);
     self.mdl_anchor waittill(#"movedone", #"death");
-    wait(0.05);
+    wait 0.05;
     self.create_eyes = 1;
     self show();
     if (!isdefined(self.var_9ed3cc11)) {

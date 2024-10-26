@@ -175,7 +175,7 @@ function simple_timed_explosion(destructible_event, attacker) {
         wait_times[0] = 5;
         wait_times[1] = 10;
     }
-    wait(randomintrange(wait_times[0], wait_times[1]));
+    wait randomintrange(wait_times[0], wait_times[1]);
     simple_explosion(attacker);
 }
 
@@ -308,7 +308,7 @@ function destructible_car_death_notify() {
 // Size: 0x54
 function destructible_car_fire_think(attacker) {
     self endon(#"death");
-    wait(randomintrange(7, 10));
+    wait randomintrange(7, 10);
     self thread destructible_car_explosion(attacker);
 }
 
@@ -319,7 +319,7 @@ function destructible_car_fire_think(attacker) {
 function breakafter(time, damage, piece) {
     self notify(#"breakafter");
     self endon(#"breakafter");
-    wait(time);
+    wait time;
     self dodamage(damage, self.origin, undefined, undefined);
 }
 

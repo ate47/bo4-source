@@ -63,7 +63,7 @@ function is_active() {
 // Size: 0x2c2
 function private movement_watcher() {
     self endon(#"disconnect", #"hash_17c41292130032eb");
-    wait(zm_round_logic::get_delay_between_rounds() - 2);
+    wait zm_round_logic::get_delay_between_rounds() - 2;
     while (true) {
         var_89276ce9 = 0;
         var_197c85d1 = self getvelocity();
@@ -84,9 +84,9 @@ function private movement_watcher() {
         }
         if (var_89276ce9) {
             if (zm_trial_defend_area::is_active() && isdefined(self.var_ccee13fc) && self.var_ccee13fc) {
-                wait(1);
+                wait 1;
             } else {
-                wait(0.2);
+                wait 0.2;
             }
             continue;
         }

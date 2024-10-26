@@ -269,15 +269,15 @@ function function_787cd537(first_time, leftswing, weapon = level.weaponnone) {
 // Size: 0x124
 function function_a9e0db86(player) {
     player thread function_787cd537(1, 1, player.var_fd05e363);
-    wait(0.15);
+    wait 0.15;
     player thread function_787cd537(0, 1, player.var_fd05e363);
     if (player.var_fd05e363 == level.hero_weapon[#"sword_pistol"][1] || player.var_fd05e363 == level.hero_weapon[#"sword_pistol"][2]) {
-        wait(0.35);
+        wait 0.35;
         player thread function_787cd537(1, 0, player.var_fd05e363);
-        wait(0.15);
+        wait 0.15;
         player thread function_787cd537(0, 0, player.var_fd05e363);
     }
-    wait(0.1);
+    wait 0.1;
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
@@ -813,7 +813,7 @@ function function_37106789(player, weapon) {
                 waitframe(1);
             }
         }
-        wait(0.25);
+        wait 0.25;
         if (n_time_elapsed >= 5) {
             break;
         }

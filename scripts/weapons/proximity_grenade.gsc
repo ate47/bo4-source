@@ -63,7 +63,7 @@ function init_shared() {
             level.proximitychaingraceperiod = getdvarint(#"scr_proximitychaingraceperiod", level.proximitychaingraceperiod);
             level.proximitychainboltspeed = getdvarfloat(#"scr_proximitychainboltspeed", level.proximitychainboltspeed);
             level.proximitygrenadeprotectedtime = getdvarfloat(#"scr_proximitygrenadeprotectedtime", level.proximitygrenadeprotectedtime);
-            wait(1);
+            wait 1;
         }
     }
 
@@ -248,7 +248,7 @@ function cleanupproximitychainent() {
     self.cleanup = 1;
     any_active = 1;
     while (any_active) {
-        wait(1);
+        wait 1;
         if (!isdefined(self)) {
             return;
         }
@@ -310,7 +310,7 @@ function proximitygrenadechain(eattacker, einflictor, killcament, weapon, meanso
     proximitychain.proximitychainent addplayertochain(self);
     proximitychain.activeendtime = endtime + int(delay * 1000) + level.proximitychaingraceperiod;
     if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     if (!isdefined(proximitychain.proximitychainent.cleanup)) {
         proximitychain.proximitychainent thread cleanupproximitychainent();
@@ -487,14 +487,14 @@ function damageplayerinradius(position, eattacker, killcament) {
                 killcament util::deleteaftertime(3 + level.proximitygrenadedotdamagetime * (level.proximitygrenadedotdamageinstances - i));
             }
             self dodamage(damage, position, eattacker, killcament, "none", "MOD_GAS", 0, getweapon(#"proximity_grenade_aoe"));
-            wait(level.proximitygrenadedotdamagetime);
+            wait level.proximitygrenadedotdamagetime;
         }
         if (gettime() - g_time < int(level.proximitygrenadeduration * 1000)) {
-            wait(float(gettime() - g_time) / 1000);
+            wait float(gettime() - g_time) / 1000;
         }
         self val::reset(#"grenade_damage", "show_hud");
     } else {
-        wait(level.proximitygrenadeprotectedtime);
+        wait level.proximitygrenadeprotectedtime;
     }
     self clientfield::set_to_player("tazered", 0);
 }
@@ -526,7 +526,7 @@ function deleteentonownerdeath(owner) {
 // Size: 0x36
 function deleteentaftertime() {
     self endon(#"delete");
-    wait(10);
+    wait 10;
     self notify(#"deletesound");
 }
 

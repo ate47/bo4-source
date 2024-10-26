@@ -536,7 +536,7 @@ function private disable_offhand_weapons() {
     self endon(#"disconnect");
     was_enabled = self offhandweaponsenabled();
     self disableoffhandweapons();
-    wait(1);
+    wait 1;
     if (was_enabled) {
         self enableoffhandweapons();
     }
@@ -588,7 +588,7 @@ function private monitor_objective(challenge) {
     foreach (n_objective_id in challenge.a_n_objective_ids) {
         objective_setinvisibletoplayer(n_objective_id, self);
     }
-    wait(12);
+    wait 12;
     while (true) {
         if (self function_f3fdd8f7()) {
             foreach (n_objective_id in challenge.a_n_objective_ids) {

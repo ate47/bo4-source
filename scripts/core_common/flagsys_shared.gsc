@@ -30,7 +30,7 @@ function update_flag_dvars() {
                 set_val(str_dvar, getdvarint(str_dvar, 0));
             }
         }
-        wait(randomfloatrange(0.666667, 1.33333));
+        wait randomfloatrange(0.666667, 1.33333);
     }
 }
 
@@ -96,7 +96,7 @@ function set_for_time(n_time, str_flag) {
     self notify("__flag::set_for_time__" + str_flag);
     self endon("__flag::set_for_time__" + str_flag);
     set(str_flag);
-    wait(n_time);
+    wait n_time;
     clear(str_flag);
 }
 

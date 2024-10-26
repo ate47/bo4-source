@@ -403,7 +403,7 @@ function pickup_spin() {
     self playloopsound(#"hash_3b9597774dea00d6");
     while (true) {
         self rotateyaw(180, 1);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -452,7 +452,7 @@ function function_45a2294f(str_id) {
         }
     }
     level notify(#"traps_activated", {#var_be3f58a:str_id});
-    wait(30);
+    wait 30;
     level notify(#"traps_cooldown", {#var_be3f58a:str_id});
     n_cooldown = zm_traps::function_da13db45(30, self);
     foreach (e_trap in level.var_ba53c5c5) {
@@ -460,7 +460,7 @@ function function_45a2294f(str_id) {
             e_trap.is_cooling = 1;
         }
     }
-    wait(n_cooldown);
+    wait n_cooldown;
     level notify(#"traps_available", {#var_be3f58a:str_id});
     foreach (e_trap in level.var_ba53c5c5) {
         if (e_trap.script_string === str_id) {
@@ -483,7 +483,7 @@ function activate_trap(e_player) {
         }
         self function_7d9e84f9();
         self thread function_21fd7c39();
-        wait(30);
+        wait 30;
         self deactivate_trap();
     }
 }

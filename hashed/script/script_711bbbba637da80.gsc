@@ -390,9 +390,9 @@ function function_d4ec8793(localclientnum, oldval, newval, bnewent, binitialsnap
                 var_d69c0e43 = 0.5;
             }
             playsound(localclientnum, var_16bdddd2[i], self geteye());
-            wait(var_d69c0e43);
+            wait var_d69c0e43;
             self notify(#"hash_3949754fec155f1e");
-            wait(0.5);
+            wait 0.5;
         }
     }
 }

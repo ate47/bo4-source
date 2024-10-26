@@ -104,7 +104,7 @@ function slow_watcher(var_bdbde2d2) {
     if (var_bdbde2d2 == #"hash_5a1a7bceb3b8fded") {
         n_wait = 15;
     }
-    wait(n_wait);
+    wait n_wait;
     self.var_4592c713 = 0;
 }
 
@@ -255,7 +255,7 @@ function freezegun_do_shatter(params, shatter_trigger, crumple_trigger) {
 function freezegun_wait_for_shatter(params, shatter_trigger, crumple_trigger) {
     shatter_trigger endon(#"death", #"cleanup_freezegun_triggers");
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     orig_attacker = params.eattacker;
     s_notify = shatter_trigger waittill(#"damage");
     if (isdefined(s_notify.eattacker) && orig_attacker == s_notify.eattacker && s_notify.smeansofdeath == "MOD_PROJECTILE" && (s_notify.weapon == level.w_freezegun || s_notify.weapon == level.w_freezegun_upgraded)) {
@@ -286,7 +286,7 @@ function freezegun_do_crumple(params, shatter_trigger, crumple_trigger) {
 function freezegun_wait_for_crumple(params, shatter_trigger, crumple_trigger) {
     crumple_trigger endon(#"death", #"cleanup_freezegun_triggers");
     self endon(#"death");
-    wait(0.1);
+    wait 0.1;
     crumple_trigger waittill(#"trigger");
     self thread freezegun_do_crumple(params, shatter_trigger, crumple_trigger);
 }
@@ -382,7 +382,7 @@ function function_9a01c5b0() {
 function function_e31780b1() {
     level endon(#"game_ended");
     self endon(#"death");
-    wait(10);
+    wait 10;
     if (isdefined(self)) {
         self delete();
     }

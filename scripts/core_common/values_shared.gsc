@@ -66,7 +66,7 @@ function __init__() {
 }
 
 // Namespace val/values_shared
-// Params 5, eflags: 0x21 linked
+// Params 5, eflags: 0x21 linked variadic
 // Checksum 0x5b2cf81, Offset: 0x8d8
 // Size: 0x15e
 function register(str_name, var_3509ed3e, call_on = "$self", func, ...) {
@@ -103,7 +103,7 @@ function private assert_registered(str_name) {
 }
 
 // Namespace val/values_shared
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0x9ce9cb4a, Offset: 0xae0
 // Size: 0x86
 function default_func(str_name, call_on, value, ...) {
@@ -147,7 +147,7 @@ function set(str_id, str_name, value) {
 function set_for_time(n_time, str_id, str_name, value) {
     self endon(#"death");
     set(str_id, str_name, value);
-    wait(n_time);
+    wait n_time;
     reset(str_id, str_name);
 }
 
@@ -430,7 +430,7 @@ function private set_ignore_health_regen_delay(b_value = 1) {
 /#
 
     // Namespace val/values_shared
-    // Params 4, eflags: 0x24
+    // Params 4, eflags: 0x24 variadic
     // Checksum 0xed43bebf, Offset: 0x1780
     // Size: 0xfe
     function private validate(str_name, call_on, func, ...) {

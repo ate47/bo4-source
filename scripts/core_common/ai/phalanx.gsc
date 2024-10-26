@@ -41,11 +41,11 @@ class phalanx {
             _releasesentients(sentienttiers_[#"phalanx_tier1"]);
             sentienttiers_[#"phalanx_tier1"] = [];
             _assignphalanxstance(sentienttiers_[#"phalanx_tier2"], "crouch");
-            wait(randomfloatrange(5, 7));
+            wait randomfloatrange(5, 7);
             _releasesentients(sentienttiers_[#"phalanx_tier2"]);
             sentienttiers_[#"phalanx_tier2"] = [];
             _assignphalanxstance(sentienttiers_[#"phalanx_tier3"], "crouch");
-            wait(randomfloatrange(5, 7));
+            wait randomfloatrange(5, 7);
             _releasesentients(sentienttiers_[#"phalanx_tier3"]);
             sentienttiers_[#"phalanx_tier3"] = [];
         }
@@ -68,7 +68,7 @@ class phalanx {
     function resumeadvance() {
         if (!scattered_) {
             _assignphalanxstance(sentienttiers_[#"phalanx_tier1"], "stand");
-            wait(1);
+            wait 1;
             forward = vectornormalize(endposition_ - startposition_);
             _movephalanxtier(sentienttiers_[#"phalanx_tier1"], phalanxtype_, "phalanx_tier1", endposition_, forward);
             _movephalanxtier(sentienttiers_[#"phalanx_tier2"], phalanxtype_, "phalanx_tier2", endposition_, forward);
@@ -155,7 +155,7 @@ class phalanx {
     // Size: 0x28
     function private _updatephalanxthread(phalanx) {
         while ([[ phalanx ]]->_updatephalanx()) {
-            wait(1);
+            wait 1;
         }
     }
 
@@ -196,7 +196,7 @@ class phalanx {
         foreach (sentient in sentients) {
             _resumefire(sentient);
             _releasesentient(sentient);
-            wait(randomfloatrange(0.5, 5));
+            wait randomfloatrange(0.5, 5);
         }
     }
 

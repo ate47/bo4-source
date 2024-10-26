@@ -165,7 +165,7 @@ function private function_5e7b3f16(localclientnum, time) {
         return;
     }
     self setcontrollerlightbarcolor(localclientnum, color);
-    wait(time);
+    wait time;
     if (isdefined(self)) {
         self setcontrollerlightbarcolor(localclientnum);
     }

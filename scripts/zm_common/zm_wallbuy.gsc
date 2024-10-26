@@ -624,7 +624,7 @@ function weapon_spawn_think() {
             continue;
         }
         if (!player zm_magicbox::can_buy_weapon(0)) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (isdefined(self.stub) && isdefined(self.stub.require_look_from) && self.stub.require_look_from) {
@@ -636,11 +636,11 @@ function weapon_spawn_think() {
             }
         }
         if (player zm_loadout::has_powerup_weapon()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (zm_trial_disable_buys::is_active()) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         player_has_weapon = player zm_weapons::has_weapon_or_upgrade(self.weapon);
@@ -791,7 +791,7 @@ function weapon_spawn_think() {
                     if (isdefined(weaponindex)) {
                         player recordmapevent(7, gettime(), player.origin, level.round_number, weaponindex, cost);
                     }
-                    wait(1);
+                    wait 1;
                 }
             } else {
                 zm_utility::play_sound_on_ent("no_purchase");

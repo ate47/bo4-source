@@ -163,7 +163,7 @@ function fade_bundle(localclientnum, flag, bundle, fadeduration) {
     if (flag::get(flag)) {
         util::lerp_generic(localclientnum, fadeduration, &function_9e7290f5, 1, 0, bundle);
     }
-    wait(float(fadeduration) / 1000);
+    wait float(fadeduration) / 1000;
     stop_bundle(flag, bundle, 0);
 }
 

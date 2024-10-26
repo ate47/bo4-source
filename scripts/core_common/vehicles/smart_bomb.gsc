@@ -84,7 +84,7 @@ function state_emped_update(params) {
         forward = vectornormalize((self getvelocity()[0], self getvelocity()[1], 0));
         side = vectorcross(forward, (0, 0, 1)) * math::randomsign();
         self function_a57c34b7(self.origin + side * 500 + forward * randomfloat(400), 0, 0);
-        wait(0.6);
+        wait 0.6;
         self function_d4c687c9();
         self waittilltimeout(1.5, #"veh_collision");
         self kill(self.origin, self.abnormal_status.attacker, self.abnormal_status.inflictor, getweapon(#"emp"));
@@ -105,7 +105,7 @@ function state_combat_update(params) {
     self thread detonation_monitor();
     for (;;) {
         if (isdefined(self.inpain) && self.inpain) {
-            wait(0.1);
+            wait 0.1;
             continue;
         }
         if (!isdefined(self.enemy)) {
@@ -183,7 +183,7 @@ function state_combat_update(params) {
             if (isdefined(best_point)) {
                 foundpath = self function_a57c34b7(best_point.origin, 0, 1);
             } else {
-                wait(1);
+                wait 1;
             }
             if (foundpath) {
                 self.prevmovedir = vectornormalize(best_point.origin - self.origin);
@@ -192,7 +192,7 @@ function state_combat_update(params) {
                 pathfailcount = 0;
                 self vehicle_ai::waittill_pathing_done();
             } else {
-                wait(1);
+                wait 1;
             }
             continue;
         }
@@ -214,7 +214,7 @@ function state_combat_update(params) {
                     detonate();
                 }
             }
-            wait(0.2);
+            wait 0.2;
             pixbeginevent(#"hash_4ded38bdb584c50b");
             queryresult = positionquery_source_navigation(self.origin, 0, self.settings.max_move_dist, self.settings.max_move_dist, self.radius, self);
             pixbeginevent(#"hash_4ded38bdb584c50b");
@@ -223,11 +223,11 @@ function state_combat_update(params) {
                 self function_a57c34b7(point.origin, 0, 0);
                 self.current_pathto_pos = undefined;
                 self thread path_update_interrupt();
-                wait(2);
+                wait 2;
                 self notify(#"near_goal");
             }
         }
-        wait(0.2);
+        wait 0.2;
     }
 }
 
@@ -316,7 +316,7 @@ function prevent_stuck() {
     self endon(#"change_state", #"death");
     self notify(#"end_prevent_stuck");
     self endon(#"end_prevent_stuck");
-    wait(2);
+    wait 2;
     count = 0;
     previous_origin = undefined;
     while (true) {
@@ -329,7 +329,7 @@ function prevent_stuck() {
         if (count > 10) {
             detonate();
         }
-        wait(1);
+        wait 1;
     }
 }
 
@@ -358,7 +358,7 @@ function jump_detonate() {
     }
     self launchvehicle((0, 0, 1) * self.jumpforce, (0, 0, 0), 1);
     self.is_jumping = 1;
-    wait(0.4);
+    wait 0.4;
     for (time_to_land = 0.6; time_to_land > 0; time_to_land -= 0.05) {
         if (check_detonation_dist(self.origin, self.enemy)) {
             self detonate();
@@ -403,7 +403,7 @@ function detonation_monitor() {
     self endon(#"death", #"change_state");
     lastenemy = undefined;
     while (true) {
-        wait(0.2);
+        wait 0.2;
         try_detonate();
         if (isdefined(self.var_345c5167)) {
             [[ self.var_345c5167 ]]();
@@ -601,18 +601,18 @@ function path_update_interrupt() {
     self endon(#"death", #"change_state", #"near_goal", #"reached_end_node");
     self notify(#"path_update_interrupt");
     self endon(#"path_update_interrupt");
-    wait(0.1);
+    wait 0.1;
     while (true) {
         if (isdefined(self.current_pathto_pos)) {
             if (distance2dsquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
-                wait(0.5);
+                wait 0.5;
                 self notify(#"near_goal");
             }
             targetpos = function_dcecac3c();
             if (isdefined(targetpos)) {
                 if (distancesquared(self.origin, targetpos) > 400 * 400) {
                     repath_range = self.settings.repath_range * 2;
-                    wait(0.1);
+                    wait 0.1;
                 } else {
                     repath_range = self.settings.repath_range;
                 }
@@ -636,10 +636,10 @@ function path_update_interrupt() {
                 speedtouse = self.settings.defaultmovespeed;
                 self setspeed(speedtouse);
             }
-            wait(0.2);
+            wait 0.2;
             continue;
         }
-        wait(0.4);
+        wait 0.4;
     }
 }
 
@@ -766,7 +766,7 @@ function function_2a91d5ee() {
 // Size: 0x154
 function function_12857be3() {
     self endon(#"death");
-    wait(randomfloatrange(0.25, 1.5));
+    wait randomfloatrange(0.25, 1.5);
     if (isdefined(self.sndalias[#"spawn"])) {
         if (isdefined(self.enemy) && isdefined(self.enemy.team)) {
             foreach (player in level.players) {

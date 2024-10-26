@@ -113,7 +113,7 @@ function function_8327d26e() {
             self.zbarrier.weapon_model_dw notify(#"kill_weapon_movement");
         }
     }
-    wait(0.1);
+    wait 0.1;
     self notify(#"trigger", {#activator:level});
 }
 

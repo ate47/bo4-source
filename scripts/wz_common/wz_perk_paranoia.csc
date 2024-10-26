@@ -152,7 +152,7 @@ function private function_3e9077b(localclientnum) {
             while (soundplaying(var_2b836fea)) {
                 waitframe(1);
             }
-            wait(randomfloat(1));
+            wait randomfloat(1);
         }
         waitframe(1);
     }

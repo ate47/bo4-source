@@ -171,7 +171,7 @@ function function_2c09c7d2(var_5ea5c94d, ended_early) {
     }
     level.var_cd51aa28 = 5;
     zm_hms_util::function_e308175e(#"hash_3bd00f2e3293cc1a", level.var_a7a99ef1.origin);
-    wait(1);
+    wait 1;
     zm_hms_util::function_e308175e(#"hash_63eaabff22eb9bab", level.var_a7a99ef1.origin);
 }
 

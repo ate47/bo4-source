@@ -1408,7 +1408,7 @@ function private function_d94efa98() {
     self endon(#"death");
     self notify("7ba5a8cb350587cf");
     self endon("7ba5a8cb350587cf");
-    wait(5);
+    wait 5;
     self.var_ad7ae074 = undefined;
 }
 
@@ -1590,7 +1590,7 @@ function private function_42673a26(player) {
                 array::thread_all(devgui_get_players(), &function_3e29352d, w_comp);
                 setdvar(#"hash_3a357be22156749e", "<dev string:x1be>");
             }
-            wait(1);
+            wait 1;
         }
     }
 

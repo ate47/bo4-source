@@ -1271,7 +1271,7 @@ function function_f6ea9af9(flag) {
                 waitframe(1);
                 function_5726a711();
             }
-            wait(1);
+            wait 1;
         }
     }
 
@@ -1324,7 +1324,7 @@ function function_f6ea9af9(flag) {
                 }
                 setdvar(#"scr_trapd_int", 0);
             }
-            wait(1);
+            wait 1;
         }
         thread debug_init();
     }

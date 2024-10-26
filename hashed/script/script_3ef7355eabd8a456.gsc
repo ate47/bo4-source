@@ -348,10 +348,10 @@ function function_9f206255() {
     v_starting_origin = var_453ce50f.origin;
     var_5287d229 = var_453ce50f.angles;
     v_forward = anglestoforward(var_453ce50f.angles);
-    wait(0.5);
+    wait 0.5;
     var_453ce50f playsound("evt_ee_punchcard_insert");
     var_453ce50f moveto(var_453ce50f.origin + v_forward * -14, 3);
-    wait(1);
+    wait 1;
     level flag::set(#"card_inserted");
     var_453ce50f waittill(#"movedone");
     var_453ce50f hide();

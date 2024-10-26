@@ -38,11 +38,11 @@ function function_f90464da(localclientnum, oldval, newval, bnewent, binitialsnap
         if (isdefined(self)) {
             self playrumbleonentity(localclientnum, #"hash_38a12b73c9342fd9");
         }
-        wait(0.3);
+        wait 0.3;
         if (isdefined(self)) {
             self playrumbleonentity(localclientnum, #"hash_38a12b73c9342fd9");
         }
-        wait(0.3);
+        wait 0.3;
         if (isdefined(self)) {
             self playrumbleonentity(localclientnum, #"hash_38a12b73c9342fd9");
         }

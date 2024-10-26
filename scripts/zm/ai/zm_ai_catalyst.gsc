@@ -595,7 +595,7 @@ function private function_21cbb589(behaviortreeentity, asmstatename) {
 function private function_d697a1e3() {
     self endon(#"hash_321b8431208f19bd", #"death");
     self clientfield::set("electricity_catalyst_blast", 1);
-    wait(self ai::function_9139c839().var_ce7e1def);
+    wait self ai::function_9139c839().var_ce7e1def;
     while (true) {
         foreach (player in level.players) {
             if (isdefined(player.var_6b8f84c7) || isdefined(player.var_a0a1475c) && player.var_a0a1475c) {
@@ -681,13 +681,13 @@ function private function_e7a0424c(behaviortreeentity) {
     blind_status_effect = getstatuseffect("blind_zm_catalyst");
     self status_effect::status_effect_apply(blind_status_effect, undefined, self.var_6b8f84c7, 0, var_116cfaae);
     self util::delay(1.3, undefined, &zm_audio::create_and_play_dialog, #"hash_4c7748b237c6fcbe", #"react");
-    wait(float(var_116cfaae) / 1000);
+    wait float(var_116cfaae) / 1000;
     if (self status_effect::function_4617032e(blind_status_effect.setype)) {
         self status_effect::function_408158ef(blind_status_effect.setype, blind_status_effect.var_18d16a6b);
     }
     util::wait_network_frame();
     self status_effect::status_effect_apply(getstatuseffect("deaf_electricity_catalyst"), undefined, self.var_6b8f84c7, 0, var_a7594ae8);
-    wait(float(var_a7594ae8) / 1000);
+    wait float(var_a7594ae8) / 1000;
     self function_73961a38();
 }
 
@@ -963,7 +963,7 @@ function private function_f9f8d9e6() {
     level.var_e1ade08 = self ai::function_9139c839().var_f00dd43c;
     self thread zm_audio::play_ambient_zombie_vocals();
     self thread zm_audio::zmbaivox_notifyconvert();
-    wait(self ai::function_9139c839().var_65b97e5e);
+    wait self ai::function_9139c839().var_65b97e5e;
     if (isdefined(self)) {
         self function_12cb11ca();
     }
@@ -992,11 +992,11 @@ function private function_75070c6() {
             if (isalive(zombie) && isdefined(zombie.var_d53c2370) && zombie.var_d53c2370 && !(isdefined(zombie.var_5c8ac43e) && zombie.var_5c8ac43e)) {
                 if (zombie.origin[2] >= self.origin[2] && abs(zombie.origin[2] - self.origin[2]) <= trigger_height && distancesquared(zombie.origin, self.origin) <= var_a00ff069) {
                     zombie thread function_e5e8cbd2(0);
-                    wait(2);
+                    wait 2;
                 }
             }
         }
-        wait(randomfloatrange(0.1, 0.2));
+        wait randomfloatrange(0.1, 0.2);
     }
 }
 
@@ -1444,7 +1444,7 @@ function round_spawn() {
         }
         catalyst_zombie = zombie_utility::spawn_zombie(catalyst_spawner, undefined, catalyst_spawner);
         if (isdefined(catalyst_zombie)) {
-            wait(0.5);
+            wait 0.5;
             catalyst_zombie zm_transform::function_bbaec2fd();
             catalyst_zombie forceteleport(trace[#"position"], player.angles + (0, 180, 0));
             if (catalyst_zombie.catalyst_type == 1) {

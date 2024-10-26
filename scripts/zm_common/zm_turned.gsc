@@ -54,7 +54,7 @@ function setup_zombie_exerts() {
 function delay_turning_on_eyes() {
     self endon(#"death", #"disconnect");
     util::wait_network_frame();
-    wait(0.1);
+    wait 0.1;
     self clientfield::set("player_has_eyes", 1);
 }
 
@@ -70,7 +70,7 @@ function turn_to_zombie() {
         return;
     }
     while (isdefined(self.is_in_process_of_humanify) && self.is_in_process_of_humanify) {
-        wait(0.1);
+        wait 0.1;
     }
     if (!level flag::get("pregame")) {
         self playsoundtoplayer(#"evt_spawn", self);
@@ -161,7 +161,7 @@ function turn_to_human() {
         return;
     }
     while (isdefined(self.is_in_process_of_zombify) && self.is_in_process_of_zombify) {
-        wait(0.1);
+        wait 0.1;
     }
     self playsoundtoplayer(#"evt_spawn", self);
     playsoundatposition(#"evt_disappear_3d", self.origin);

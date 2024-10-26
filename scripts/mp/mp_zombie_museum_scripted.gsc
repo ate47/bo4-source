@@ -185,7 +185,7 @@ function function_4967eb5a(activator) {
     }
     self gameobjects::disable_object(1);
     self clientfield::set("exhibit_vo", value);
-    wait(60);
+    wait 60;
     if (isdefined(self)) {
         self gameobjects::enable_object(1);
         self clientfield::set("exhibit_vo", 0);
@@ -225,7 +225,7 @@ function function_ac341c2c() {
     while (isdefined(speaker)) {
         speaker playsoundwithnotify("vox_muse_lobby_pa", "pa_done");
         speaker waittill(#"pa_done", #"death");
-        wait(randomfloatrange(60, 120));
+        wait randomfloatrange(60, 120);
     }
 }
 

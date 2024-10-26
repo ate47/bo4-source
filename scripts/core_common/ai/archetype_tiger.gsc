@@ -645,7 +645,7 @@ function private function_39fd9a43() {
     self notify("55a4d4707a42299b");
     self endon("55a4d4707a42299b");
     self endon(#"death");
-    wait(4);
+    wait 4;
     self.var_4dc477c = 0;
 }
 

@@ -125,7 +125,7 @@ function private function_34835ec7() {
                 return var_5e879929;
             }
         }
-        wait(1);
+        wait 1;
     }
 }
 

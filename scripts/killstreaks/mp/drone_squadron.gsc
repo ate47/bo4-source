@@ -536,7 +536,7 @@ function watchwater() {
     drone_squadron = self;
     drone_squadron endon(#"drone_squadron_shutdown");
     while (true) {
-        wait(0.1);
+        wait 0.1;
         trace = physicstrace(self.origin + (0, 0, 10), self.origin + (0, 0, 6), (-2, -2, -2), (2, 2, 2), self, 4);
         if (trace[#"fraction"] < 1) {
             break;

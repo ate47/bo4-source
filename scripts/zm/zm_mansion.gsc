@@ -564,7 +564,7 @@ function function_91430bcc(str_weapon) {
                 }
             }
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -780,7 +780,7 @@ function function_802dde1f() {
         if (level flag::get("round_reset")) {
             break;
         }
-        wait(1);
+        wait 1;
     }
     level.var_13473346 = 0;
 }
@@ -952,7 +952,7 @@ function function_4b4b59ed(spot) {
 // Size: 0x9c
 function function_5734f4d9() {
     self endon(#"death");
-    wait(0.3);
+    wait 0.3;
     self fx::play("zombie_jump_in_glass_burst", self.origin, self.angles, 7);
     glassradiusdamage(self.origin, 128, 128, 64);
     playrumbleonposition("damage_heavy", self.origin);
@@ -1022,7 +1022,7 @@ function function_2d164b86() {
     }
     mdl_artifact clientfield::set("" + #"activate_mansion_artifact", 2);
     var_3f772556 clientfield::set("" + #"hash_44ee99a6591fe600", 0);
-    wait(3);
+    wait 3;
     var_3f772556 delete();
     mdl_artifact setmodel(#"hash_57d5802b9383f9c7");
     mdl_artifact clientfield::set("" + #"activate_mansion_artifact", 3);
@@ -1147,7 +1147,7 @@ function function_94cf8d37(var_62406c, var_62c4256, n_acceleration, n_speed) {
     var_62c4256 vehicle::get_on_and_go_path(nd_spline);
     var_62c4256 clientfield::set("" + #"hash_602ae5683c010563", 0);
     var_62c4256 clientfield::increment("" + #"hash_4bd91c5285da0899", 1);
-    wait(0.1);
+    wait 0.1;
     var_62c4256 delete();
 }
 
@@ -1218,7 +1218,7 @@ function function_e764a14b() {
 // Size: 0x3c
 function function_2ef77fbf() {
     level endon(#"end_game");
-    wait(3);
+    wait 3;
     zm_power::turn_power_on_and_open_doors(3);
 }
 
@@ -1383,7 +1383,7 @@ function play_outro_igc() {
     level flag::set(#"pause_round_timeout");
     level lui::screen_fade_out(1.6, "white");
     level util::delay(1.6, "end_game", &zm_utility::function_9ad5aeb1, 0, 0, 1, 0, 0);
-    wait(1.6);
+    wait 1.6;
     level thread function_5bfd87e9();
     if (!isdefined(level.e_scarlett)) {
         level.e_scarlett = util::spawn_anim_model(#"hash_68e43aaeda249da8");
@@ -1585,7 +1585,7 @@ function function_ff767eac() {
         adddebugcommand("<dev string:x6ed>");
         adddebugcommand("<dev string:x757>");
         adddebugcommand("<dev string:x7b7>");
-        wait(0.5);
+        wait 0.5;
         adddebugcommand("<dev string:x813>");
         adddebugcommand("<dev string:x87f>");
         adddebugcommand("<dev string:x8ed>");
@@ -1606,7 +1606,7 @@ function function_ff767eac() {
         adddebugcommand("<dev string:xed5>");
         adddebugcommand("<dev string:xf25>");
         adddebugcommand("<dev string:xf7f>");
-        wait(0.5);
+        wait 0.5;
         adddebugcommand("<dev string:xfe9>");
         adddebugcommand("<dev string:x103b>");
         adddebugcommand("<dev string:x108f>");
@@ -1655,7 +1655,7 @@ function function_ff767eac() {
         adddebugcommand("<dev string:x244c>");
         adddebugcommand("<dev string:x24ae>");
         adddebugcommand("<dev string:x251a>");
-        wait(0.5);
+        wait 0.5;
         adddebugcommand("<dev string:x257c>");
         adddebugcommand("<dev string:x25da>");
         adddebugcommand("<dev string:x2642>");
@@ -1702,7 +1702,7 @@ function function_ff767eac() {
         adddebugcommand("<dev string:x348f>");
         adddebugcommand("<dev string:x34ee>");
         adddebugcommand("<dev string:x354f>");
-        wait(0.5);
+        wait 0.5;
         if (zm_utility::is_ee_enabled()) {
             adddebugcommand("<dev string:x35a7>");
             adddebugcommand("<dev string:x3619>");
@@ -1903,7 +1903,7 @@ function function_ff767eac() {
             if (cmd !== "<dev string:x3c3f>") {
                 break;
             }
-            wait(1);
+            wait 1;
         case #"hash_369a377d29f023e4":
             a_stones = [];
             if (!isdefined(a_stones)) {
@@ -2364,7 +2364,7 @@ function function_ff767eac() {
         do {
             array::thread_all(var_8f129c8e, &mansion_pap::function_1a82ca71, undefined, 0);
             array::wait_till(var_8f129c8e, "<dev string:x3fb3>");
-            wait(1.5);
+            wait 1.5;
         } while (getdvarint(#"hash_2340f8cb271f85fd", 0));
         level notify(#"hash_48ee29312bd2ad06");
     }
@@ -2376,11 +2376,11 @@ function function_ff767eac() {
     function function_89244213(var_8f129c8e) {
         level endon(#"hash_48ee29312bd2ad06");
         while (isdefined(1)) {
-            wait(2);
+            wait 2;
             array::thread_all(var_8f129c8e, &clientfield::set, "<dev string:x3f5a>" + #"hash_47b8db8cde2c4291", 13);
-            wait(2);
+            wait 2;
             level notify(#"hash_5a23f461b8ae05a4");
-            wait(2);
+            wait 2;
             array::thread_all(var_8f129c8e, &clientfield::set, "<dev string:x3f5a>" + #"hash_47b8db8cde2c4291", 0);
         }
     }

@@ -360,7 +360,7 @@ function function_924f922d(localclientnum, oldval, newval, bnewent, binitialsnap
         self playrenderoverridebundle(#"hash_51b6bba95848bab8");
         forcestreamxmodel(str_model);
         while (isdefined(self) && self.b_force_stream) {
-            wait(1);
+            wait 1;
             e_player = function_5c10bd79(localclientnum);
             if (!isdefined(e_player) || !isdefined(self)) {
                 continue;
@@ -451,7 +451,7 @@ function function_5fc23aa1(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     self stoprenderoverridebundle(#"hash_42273a05e6150ef0");
-    wait(6);
+    wait 6;
     if (isdefined(self)) {
         self function_f6e99a8d(#"hash_42273a05e6150ef0");
         self playrenderoverridebundle(#"hash_1b29e0471c3a0eb7");

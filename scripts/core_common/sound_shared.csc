@@ -50,7 +50,7 @@ function loop_on_client(sound_alias, min_delay, max_delay, end_on) {
     }
     for (;;) {
         play_on_client(sound_alias);
-        wait(min_delay + randomfloat(max_delay));
+        wait min_delay + randomfloat(max_delay);
     }
 }
 

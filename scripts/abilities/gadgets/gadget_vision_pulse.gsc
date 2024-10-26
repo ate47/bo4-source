@@ -193,7 +193,7 @@ function gadget_vision_pulse_off(slot, weapon) {
 // Size: 0x3b4
 function gadget_vision_pulse_start(slot, weapon) {
     self endon(#"disconnect", #"death", #"emp_vp_jammed", #"shutdown_vision_pulse", #"hash_7e581b90612825f4");
-    wait(0.1);
+    wait 0.1;
     if (isdefined(self._pulse_ent)) {
         return;
     }
@@ -264,7 +264,7 @@ function shutdown_vision_pulse(spottedenemy, immediate, weapon) {
 // Size: 0x114
 function function_19bef771(weapon) {
     self endon(#"death", #"shutdown_vision_pulse", #"hash_7e581b90612825f4");
-    wait(float(weapon.var_4d88a1ff) / 1000);
+    wait float(weapon.var_4d88a1ff) / 1000;
     self disableoffhandweapons();
     self switchtooffhand(level.weaponvisionpulse);
     waitframe(1);
@@ -283,7 +283,7 @@ function function_19bef771(weapon) {
 // Size: 0x84
 function wait_until_is_done(slot, timepulse) {
     self endon(#"hash_7e581b90612825f4", #"shutdown_vision_pulse", #"death");
-    wait(float(timepulse) / 1000);
+    wait float(timepulse) / 1000;
     self globallogic_score::function_d3ca3608(#"hash_32591f4be1bf4f22");
 }
 
@@ -304,7 +304,7 @@ function gadget_vision_pulse_flicker(slot, weapon) {
             set_gadget_vision_pulse_status("^2" + "Normal");
             return;
         }
-        wait(0.25);
+        wait 0.25;
     }
 }
 

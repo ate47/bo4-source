@@ -1103,7 +1103,7 @@ function function_61a9bc58() {
 /#
 
     // Namespace zm_lockdown_util/zm_lockdown_util
-    // Params 4, eflags: 0x20
+    // Params 4, eflags: 0x20 variadic
     // Checksum 0xeb0573cb, Offset: 0x3cb0
     // Size: 0x136
     function function_78eae22a(entity, stub, reason, ...) {
@@ -1263,7 +1263,7 @@ function function_61a9bc58() {
         var_3bd3c0c1 = (-16, -16, 0);
         var_cbe5413e = (16, 16, 32);
         while (true) {
-            wait(0.5);
+            wait 0.5;
             entity = getentbynum(getdvarint(#"zm_lockdown_ent", -1));
             if (!isdefined(entity)) {
                 continue;

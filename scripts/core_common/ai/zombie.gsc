@@ -1364,7 +1364,7 @@ function function_79fe956f() {
         self.var_9ed3cc11 = self function_e827fc0e();
     }
     self pushplayer(1);
-    wait(2);
+    wait 2;
     if (isdefined(self.var_9ed3cc11)) {
         self pushplayer(self.var_9ed3cc11);
         self.var_9ed3cc11 = undefined;
@@ -1395,7 +1395,7 @@ function function_22762653() {
         self.var_9ed3cc11 = self function_e827fc0e();
     }
     self pushplayer(1);
-    wait(2);
+    wait 2;
     if (isdefined(self.var_9ed3cc11)) {
         self pushplayer(self.var_9ed3cc11);
         self.var_9ed3cc11 = undefined;

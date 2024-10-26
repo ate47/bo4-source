@@ -66,7 +66,7 @@ function slow_raps_trigger() {
         if (isvehicle(other) && isdefined(other.archetype) && other.archetype == "raps") {
             other thread slow_raps(self);
         }
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -89,7 +89,7 @@ function slow_raps(trigger) {
     } else {
         self setspeed(0.5 * self.settings.defaultmovespeed);
     }
-    wait(1);
+    wait 1;
     self resumespeed();
     self.slow_trigger = undefined;
 }

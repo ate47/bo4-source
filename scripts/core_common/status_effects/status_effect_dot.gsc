@@ -81,7 +81,7 @@ function private dot_rumble_loop() {
     rumble = isdefined(self.dotrumble) ? self.dotrumble : "status_effect_dot";
     while (isdefined(self) && isdefined(self.owner)) {
         self.owner playrumbleonentity(rumble);
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -152,7 +152,7 @@ function private function_5236325e(applicant, killcament) {
                 var_6307def9 -= var_4ba055ed;
             }
         }
-        wait(self.var_5cf129b8 / 1000);
+        wait self.var_5cf129b8 / 1000;
         self function_ae0405e2(applicant);
     }
 }

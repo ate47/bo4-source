@@ -212,7 +212,7 @@ function private function_413cffae(n_interval, e_player) {
             }
         }
         e_player val::reset("weapon_rotation", "disable_weapons");
-        wait(n_interval);
+        wait n_interval;
         e_player function_27cd9d6();
         e_player val::set("weapon_rotation", "disable_weapons", 1);
         e_player function_27cd9d6(0.15);

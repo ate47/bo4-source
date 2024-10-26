@@ -241,7 +241,7 @@ function function_f359c8a0(s_key, e_player) {
 // Checksum 0xc3cf3192, Offset: 0x24b0
 // Size: 0x62
 function reset_computer(n_delay = 1) {
-    wait(n_delay);
+    wait n_delay;
     level.var_18f1ca6e notify(#"hash_23cb7679bd15f5aa");
     reset_code();
     level.var_18f1ca6e.is_idling = 1;
@@ -1076,7 +1076,7 @@ function function_5e0b6734(var_b995184a, var_2199b576, var_ec214a86, var_d1201d6
                 break;
             }
         }
-        wait(1);
+        wait 1;
     }
     self thread function_7a1b3cff();
 }
@@ -1127,9 +1127,9 @@ function function_eb17b80b() {
 function function_7a1b3cff() {
     for (i = 0; i < 3; i++) {
         self function_eb17b80b();
-        wait(0.5);
+        wait 0.5;
         self function_80707067();
-        wait(0.5);
+        wait 0.5;
     }
     self function_eb17b80b();
     self notify(#"hash_6cb5d5beb3730446");
@@ -1191,42 +1191,42 @@ function function_6ef53601(var_7e123df8) {
     case #"blink":
         self function_a196c54b();
         self showpart("tag_glitch");
-        wait(0.2);
+        wait 0.2;
         self function_a196c54b();
         self showpart("tag_blink_cycle_all");
         break;
     case #"dynamic":
         self function_a196c54b();
         self showpart("tag_glitch");
-        wait(0.2);
+        wait 0.2;
         self function_a196c54b();
         self showpart("tag_dynamic");
         break;
     case #"glitch":
         self function_a196c54b();
         self showpart("tag_glitch");
-        wait(0.2);
+        wait 0.2;
         self function_a196c54b();
         self showpart("tag_glitch");
         break;
     case #"style1":
         self function_a196c54b();
         self showpart("tag_glitch");
-        wait(0.2);
+        wait 0.2;
         self function_a196c54b();
         self showpart("tag_style1");
         break;
     case #"style2":
         self function_a196c54b();
         self showpart("tag_glitch");
-        wait(0.2);
+        wait 0.2;
         self function_a196c54b();
         self showpart("tag_style2");
         break;
     case #"vector":
         self function_a196c54b();
         self showpart("tag_glitch");
-        wait(0.2);
+        wait 0.2;
         self function_a196c54b();
         self showpart("tag_vector");
         break;
@@ -1243,7 +1243,7 @@ function function_450060dd() {
     self thread function_a196c54b();
     n_start_time = gettime();
     while (gettime() < n_start_time + 60000) {
-        wait(0.5);
+        wait 0.5;
     }
     level thread reset_computer();
 }
@@ -1261,7 +1261,7 @@ function function_cafaeead() {
                 level.var_18f1ca6e thread function_67621880();
             }
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -1278,7 +1278,7 @@ function function_67621880() {
     while (true) {
         var_745db666 = array::randomize(var_745db666);
         self thread function_6ef53601(var_745db666[0]);
-        wait(randomfloatrange(5, 10));
+        wait randomfloatrange(5, 10);
     }
 }
 
@@ -1360,7 +1360,7 @@ function function_60f15ca8() {
     level.var_5d577798 hidepart("tag_screen_static");
     level.var_5d577798 showpart("tag_screen_broken");
     level.var_5d577798 hidepart("tag_screen_unbroken");
-    wait(2);
+    wait 2;
     var_a94d1ca3 playsound(#"hash_51945414465e1801");
     var_a94d1ca3 moveto(var_73a8928d + (0, -6, 0), 0.3);
 }
@@ -1399,7 +1399,7 @@ function rushmore_speech_hamilton() {
             b_spoke = 1;
             continue;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -1423,7 +1423,7 @@ function rushmore_speech_franklin() {
             b_spoke = 1;
             continue;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -1447,7 +1447,7 @@ function rushmore_speech_madison() {
             b_spoke = 1;
             continue;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -1471,7 +1471,7 @@ function rushmore_speech_jefferson() {
             b_spoke = 1;
             continue;
         }
-        wait(2);
+        wait 2;
     }
 }
 
@@ -1495,7 +1495,7 @@ function rushmore_speech_flag() {
             b_spoke = 1;
             continue;
         }
-        wait(2);
+        wait 2;
     }
 }
 

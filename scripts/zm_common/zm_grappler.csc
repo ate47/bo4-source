@@ -74,7 +74,7 @@ function grappler_beam(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 function function_34e3f163(player, tag, pivot, delay) {
     player endon(#"grappler_done", #"death");
     pivot endon(#"death");
-    wait(delay);
+    wait delay;
     thread grapple_beam(player, tag, pivot);
 }
 

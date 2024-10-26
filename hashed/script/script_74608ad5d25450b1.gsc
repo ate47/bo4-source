@@ -308,7 +308,7 @@ function function_c6c9eeef(s_params) {
 // Size: 0x34
 function private function_53817e75() {
     self endon(#"death");
-    wait(5);
+    wait 5;
     self set_frozen(0);
 }
 

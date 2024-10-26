@@ -87,7 +87,7 @@ function function_35d1c69f(localclientnum, player, weapon) {
 function group_mega_round_end_abcd_talking(localclientnum = 0) {
     level notify("previs_deployable_" + localclientnum);
     level endon("previs_deployable_" + localclientnum);
-    wait(10);
+    wait 10;
     previs_model = spawn(localclientnum, (0, 0, 0), "script_model");
     previs_weapon = getweapon(#"eq_alarm");
     var_5929417d = 0;
@@ -107,7 +107,7 @@ function group_mega_round_end_abcd_talking(localclientnum = 0) {
             if (isdefined(previs_model)) {
                 previs_model hide();
             }
-            wait(0.2);
+            wait 0.2;
         } else {
             waitframe(1);
         }

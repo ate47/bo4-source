@@ -489,7 +489,7 @@ function function_f05235a0() {
     self endon(#"death");
     self clientfield::set("" + #"hash_5e1264789183cde1", 1);
     playsoundatposition(#"hash_452b9f142d5f6352", self.origin);
-    wait(1);
+    wait 1;
     self delete();
 }
 
@@ -519,7 +519,7 @@ function function_6e678915() {
     self endon(#"death");
     while (isdefined(self)) {
         for (b_player_in_range = 0; !b_player_in_range; b_player_in_range = 1) {
-            wait(randomintrangeinclusive(4, 8));
+            wait randomintrangeinclusive(4, 8);
             player = zm_hms_util::function_3815943c();
             if (isdefined(player)) {
                 distance = distance(player.origin, self.origin);
@@ -537,12 +537,12 @@ function function_6e678915() {
                         if (isdefined(self) && isdefined(player)) {
                             angles = function_794aee3c(player.origin, self, 1);
                             self rotateto(angles, 1);
-                            wait(1);
+                            wait 1;
                         }
                     }
                 }
             }
-            wait(randomintrangeinclusive(4, 8));
+            wait randomintrangeinclusive(4, 8);
         }
     }
 }
@@ -575,7 +575,7 @@ function function_61e129a8() {
     do {
         if (level flag::get(#"hash_7cc3b03eefb11fc") && !level flag::get(#"crawler_step_complete") || level flag::get(#"hash_6ebb9d0d0539bf68") && !level flag::get(#"hash_7c2ae917559738ec")) {
             b_delayed = 1;
-            wait(1);
+            wait 1;
             continue;
         }
         n_next_round = level.round_number + 1;
@@ -651,7 +651,7 @@ function function_bc9a7799(var_d25bbdd5) {
     level thread zm_audio::sndmusicsystem_playstate("dog_end");
     level.fn_custom_zombie_spawner_selection = undefined;
     level.zombie_round_start_delay = undefined;
-    wait(5);
+    wait 5;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -682,7 +682,7 @@ function function_b76df747() {
 // Size: 0x3c
 function function_e2d1e574() {
     n_time = zm_round_logic::get_zombie_spawn_delay(level.round_number + level.var_d2fac739);
-    wait(n_time);
+    wait n_time;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -703,7 +703,7 @@ function function_6af32608() {
         level.var_dcd1e798 thread animation::play("p8_fxanim_zm_white_perk_machine_dummy_fly_in");
         waitframe(2);
         var_2379bb0e show();
-        wait(3.5);
+        wait 3.5;
         level thread namespace_9efb8d22::function_48acb6ed(var_c9e07c3e);
         playrumbleonposition("zm_white_perk_impact", var_c9e07c3e);
         playrumbleonposition("zm_white_perk_aftershock", var_c9e07c3e);
@@ -819,7 +819,7 @@ function function_800ff39e() {
     e_door = getent("mee_2_door", "targetname");
     e_door playsound("zmb_shed_door_open");
     e_door rotateto((0, 202, 0), 1);
-    wait(2);
+    wait 2;
     var_e979d075 = getentarray("e_mee_2_weeper_final", "targetname");
     while (level.e_weeper function_7f971d26() || level.e_partner function_7f971d26() || var_e979d075[0] function_7f971d26()) {
         waitframe(1);
@@ -846,7 +846,7 @@ function function_800ff39e() {
     var_c3a00a1a delete();
     e_door playsound("zmb_shed_door_close");
     e_door rotateto((0, 340, 0), 1);
-    wait(2);
+    wait 2;
     e_player = waitresult.activator;
     s_reward = struct::get("s_mee_2_reward", "targetname");
     mdl_reward = spawn("script_model", s_reward.origin);
@@ -867,7 +867,7 @@ function function_d10bf985() {
     self endon(#"death");
     while (true) {
         if (isdefined(self.is_inert) && self.is_inert) {
-            wait(2);
+            wait 2;
             if (isdefined(self.is_inert) && self.is_inert) {
                 self.kill_brush = spawn("trigger_radius", self.origin, 0, 30, 72);
                 self.kill_brush.script_noteworthy = "kill_brush";

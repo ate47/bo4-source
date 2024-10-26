@@ -88,9 +88,9 @@ function add(entity, dyingplayer, team) {
 // Checksum 0xaaa7298b, Offset: 0x3f0
 // Size: 0x6c
 function destroy_slowly(timeout, deathiconobjid) {
-    wait(timeout);
+    wait timeout;
     objective_setstate(deathiconobjid, "done");
-    wait(1);
+    wait 1;
     objective_delete(deathiconobjid);
     gameobjects::release_obj_id(deathiconobjid);
 }

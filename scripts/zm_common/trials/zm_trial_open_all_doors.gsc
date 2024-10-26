@@ -128,7 +128,7 @@ function private function_b2fa4678() {
             }
             var_c43a6efa = var_54e16eaa;
         }
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -138,7 +138,7 @@ function private function_b2fa4678() {
 // Size: 0x1b4
 function private monitor_timer(n_timer) {
     level endon(#"hash_7646638df88a3656");
-    wait(12);
+    wait 12;
     foreach (player in getplayers()) {
         player zm_trial_util::function_128378c9(n_timer, 1, #"hash_c2b77be4cf5b142");
     }

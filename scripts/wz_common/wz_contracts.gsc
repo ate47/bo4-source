@@ -327,7 +327,7 @@ function on_player_killed() {
 // Size: 0x3e
 function function_e49226a4() {
     self endon(#"death");
-    wait(10);
+    wait 10;
     if (isplayer(self)) {
         self.var_6f3e3a9c = undefined;
     }
@@ -339,7 +339,7 @@ function function_e49226a4() {
 // Size: 0x3e
 function function_db2da6f7() {
     self endon(#"disconnect");
-    wait(0.25);
+    wait 0.25;
     if (isplayer(self)) {
         self.var_c9daf540 = undefined;
     }
@@ -1016,7 +1016,7 @@ function function_5648f82(team) {
     // Size: 0xa24
     function devgui_setup() {
         devgui_base = "<dev string:x6b>";
-        wait(3);
+        wait 3;
         contracts::function_e07e542b(devgui_base, undefined);
         var_c8d599b5 = "<dev string:x7b>";
         var_78a6fb52 = devgui_base + "<dev string:xb7>";

@@ -157,7 +157,7 @@ function loop_in_space(alias, origin, ender) {
     org playloopsound(alias);
     level waittill(ender);
     org stoploopsound();
-    wait(0.1);
+    wait 0.1;
     org delete();
 }
 

@@ -131,7 +131,7 @@ function function_edb1add2() {
 function init_step_1(var_a276c861) {
     if (!var_a276c861) {
         while (level.var_e93e5852 < 6) {
-            wait(1);
+            wait 1;
         }
         level flag::wait_till("open_pap");
     }
@@ -184,7 +184,7 @@ function cleanup_step_2(var_5ea5c94d, ended_early) {
         level.monolith_ghost.var_c176969a notify(#"reached_end_node");
         level.monolith_ghost.var_c176969a delete();
     }
-    wait(3);
+    wait 3;
     if (isdefined(s_monolith.var_f4ecfb70)) {
         s_monolith.var_f4ecfb70 delete();
     }
@@ -476,7 +476,7 @@ function function_a6978e42(nd_start) {
     self.var_c176969a thread scene::stop();
     self thread scene::stop();
     while (isdefined(level.e_guide)) {
-        wait(1);
+        wait 1;
     }
     level flag::set(#"hash_f3875ca909e696f");
 }
@@ -662,7 +662,7 @@ function function_9ee098d5() {
     e_trigger = getent("e_possess_trigger", "targetname");
     while (var_ac3fdee1 < 4) {
         while (isdefined(level.e_guide)) {
-            wait(1);
+            wait 1;
         }
         e_possessed = self function_5270aabe(e_trigger);
         if (isdefined(v_drop)) {
@@ -676,7 +676,7 @@ function function_9ee098d5() {
         if (!fx_org istouching(e_trigger)) {
             fx_org.origin = self.origin;
         }
-        wait(0.15);
+        wait 0.15;
         if (isdefined(e_possessed)) {
             fx_org clientfield::increment("" + #"hash_4d45dc65a8307183");
             n_time = function_c5a4ae6(fx_org.origin, e_possessed.origin);
@@ -727,7 +727,7 @@ function function_9ee098d5() {
         } else {
             level.monolith_ghost.var_dafa2b89.origin = self.origin;
         }
-        wait(1.5);
+        wait 1.5;
         level.monolith_ghost show();
         level.monolith_ghost.mdl_head show();
         level.monolith_ghost thread mansion_pap::function_c9c7a593();
@@ -750,7 +750,7 @@ function function_9ee098d5() {
             level.monolith_ghost.var_dafa2b89 thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost);
             level.monolith_ghost thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", level.monolith_ghost.mdl_head);
         }
-        wait(randomintrangeinclusive(3, 5));
+        wait randomintrangeinclusive(3, 5);
     }
     level.monolith_ghost.var_dafa2b89 thread scene::stop();
     level.monolith_ghost thread scene::stop();
@@ -795,7 +795,7 @@ function function_5270aabe(e_trigger) {
                 }
             }
         }
-        wait(1.5);
+        wait 1.5;
     }
 }
 
@@ -964,7 +964,7 @@ function function_9768c04b() {
 // Size: 0x4c
 function function_cc11b6fd() {
     level endon(#"end_crypt_unlock");
-    wait(30);
+    wait 30;
     level.var_6a17ff24 = 0;
     level flag::clear(#"hash_2e0f59cef233a264");
 }
@@ -1034,7 +1034,7 @@ function open_crypt() {
     }
     level thread scene::play("p8_fxanim_zm_man_crypt_bundle");
     exploder::exploder("exp_lgt_crypt_normal");
-    wait(4);
+    wait 4;
     if (isdefined(e_clip)) {
         e_clip notsolid();
         e_clip connectpaths();
@@ -1064,7 +1064,7 @@ function function_520a8a02() {
             level flag::clear(#"hash_864c8ec1475abdc");
             array::run_all(mdl_gates, &movez, 40, 0.5);
         }
-        wait(0.5);
+        wait 0.5;
     }
     var_77663e28 delete();
 }
@@ -1161,13 +1161,13 @@ function function_a9bfed2d() {
                 ai_nosferatu zm_score::function_acaab828();
                 ai_nosferatu forceteleport(s_spawn_loc.origin, s_spawn_loc.angles);
                 s_spawn_loc = undefined;
-                wait(randomfloatrange(n_wait_min, n_wait_max));
+                wait randomfloatrange(n_wait_min, n_wait_max);
             }
         }
     }
     while (var_219a33e2.size > 1) {
         array::remove_dead(var_219a33e2, 0);
-        wait(1.5);
+        wait 1.5;
     }
     level flag::set(#"hash_38fe2a57d5f9d6ba");
     playsoundatposition(#"hash_7bd7306de23aa3bd", (0, 0, 0));
@@ -1355,7 +1355,7 @@ function waitandfizzleout(object, delay) {
     object.detonated = 1;
     object notify(#"fizzleout");
     if (delay > 0) {
-        wait(delay);
+        wait delay;
     }
     object deleteent();
 }
@@ -1380,7 +1380,7 @@ function deleteent(attacker, emp, target) {
         level endon(#"hash_aa10db1b6143db9");
         while (isdefined(self)) {
             print3d(self.origin, n_drop, (0, 1, 0), 1, 0.4, 10);
-            wait(0.2);
+            wait 0.2;
         }
     }
 

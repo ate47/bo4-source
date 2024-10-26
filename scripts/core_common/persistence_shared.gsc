@@ -361,7 +361,7 @@ function event_handler[player_gunchallengecomplete] codecallback_gunchallengecom
 function upload_stats_soon() {
     self notify(#"upload_stats_soon");
     self endon(#"upload_stats_soon", #"disconnect");
-    wait(1);
+    wait 1;
     uploadstats(self);
 }
 

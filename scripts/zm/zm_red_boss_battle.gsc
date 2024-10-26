@@ -255,7 +255,7 @@ function function_3a2efd4e(b_cheated = 0, var_7982b1c8 = 1, var_8ef91a04 = 1) {
     }
     level thread function_f6306dea();
     music::setmusicstate("boss_battle_stage_1");
-    wait(3);
+    wait 3;
     level thread function_756474bf();
 }
 
@@ -420,11 +420,11 @@ function function_756474bf() {
     zm_bgb_anywhere_but_here::function_886fce8f();
     level.zombie_ai_limit = var_12e5a581;
     level flag::wait_till(#"hash_315fae99adaebfb4");
-    wait(3);
+    wait 3;
     level thread function_263a0b8();
     level flag::wait_till_timeout(300, #"hash_15ba89b2357ff618");
     if (flag::get(#"pegasus_attacking")) {
-        wait(3);
+        wait 3;
     }
     function_79611ef0(1);
     level flag::wait_till(#"hash_6dab61ca45a8eaea");
@@ -485,7 +485,7 @@ function function_8b1f9518() {
 // Size: 0xac
 function function_170c8b16() {
     level.s_boss_battle.mdl_perseus zm_vo::vo_say(#"hash_43413288a913e03", 0, 1, 9999);
-    wait(1);
+    wait 1;
     e_vo_player = array::random(util::get_active_players(#"allies"));
     if (isdefined(e_vo_player)) {
         e_vo_player thread zm_vo::function_a2bd5a0c(#"hash_6589e76f2431dda0", 1);
@@ -1041,7 +1041,7 @@ function function_f6306dea() {
     while (true) {
         while (level flag::get(#"hash_59553ef93adcfe51")) {
             level flag::set(#"hash_44d76e9e7b9e0ebd");
-            wait(0.2);
+            wait 0.2;
         }
         level flag::clear(#"hash_44d76e9e7b9e0ebd");
         if (math::cointoss()) {
@@ -1091,7 +1091,7 @@ function function_7a7b5e79() {
     var_22f02aa3 = struct::get_array("boss_attack_1");
     for (s_loc = struct::get("first_strike", "script_string"); true; s_loc = undefined) {
         while (level flag::get(#"hash_7be183aa6a4cbe7") || level flag::get(#"hash_6dab61ca45a8eaea")) {
-            wait(1);
+            wait 1;
         }
         level flag::set(#"pegasus_attacking");
         var_22f02aa3 = array::filter(var_22f02aa3, 0, &function_a695c70b);
@@ -1102,12 +1102,12 @@ function function_7a7b5e79() {
             s_loc = var_22f02aa3[0];
         }
         s_loc function_b8510127();
-        wait(1.1);
+        wait 1.1;
         s_loc thread function_ca661e4b(0, _town_pap_quest_complete);
         s_loc function_1ce83bec();
         level flag::clear(#"pegasus_attacking");
         _town_pap_quest_complete++;
-        wait(level.s_boss_battle.var_4652a428);
+        wait level.s_boss_battle.var_4652a428;
     }
 }
 
@@ -1129,7 +1129,7 @@ function function_1ce83bec() {
                 var_c5374ab4 = 60;
             }
         }
-        wait(var_c5374ab4);
+        wait var_c5374ab4;
         level notify(#"hash_4d25b32acbac5117");
         self scene::play(#"aib_vign_cust_zm_red_boss2_atk_01", "fail_end");
         level.s_boss_battle.var_36f0e240 = 0;
@@ -1149,7 +1149,7 @@ function function_1ce83bec() {
 function function_8e7ffff8() {
     self endon(#"death");
     level waittill(#"hash_4be6553c5ac0ec2b", #"hash_7646638df88a3656");
-    wait(1);
+    wait 1;
     if (isdefined(self)) {
         self delete();
     }
@@ -1342,7 +1342,7 @@ function function_d9802986() {
             e_target = a_e_active_players[0];
         }
         if (!isdefined(e_target)) {
-            wait(0.3);
+            wait 0.3;
             continue;
         }
         b_target_found = 1;
@@ -1379,7 +1379,7 @@ function private function_732c74f7(n_max_time) {
     str_target_zone = self zm_zonemgr::get_player_zone();
     n_time = 0;
     while (!isdefined(str_target_zone)) {
-        wait(0.3);
+        wait 0.3;
         n_time += 0.3;
         if (isdefined(n_max_time)) {
             if (n_time > n_max_time) {
@@ -1468,7 +1468,7 @@ function private function_b4723f8e(v_origin, e_pegasus) {
                 e_player dodamage(10, v_origin);
             }
         }
-        wait(0.5);
+        wait 0.5;
         if (n_radius < 1000) {
             n_radius = math::clamp(n_radius + 50, 256, 1000);
         }
@@ -1483,7 +1483,7 @@ function private function_b4723f8e(v_origin, e_pegasus) {
 function lightning_flash() {
     self clientfield::set_to_player("" + #"pegasus_shellshock", 1);
     self clientfield::increment_to_player("" + #"hash_3bb8b5cda11eecc6");
-    wait(0.25);
+    wait 0.25;
     self clientfield::set_to_player("" + #"pegasus_shellshock", 0);
 }
 
@@ -1507,7 +1507,7 @@ function private function_325b6d95(v_origin) {
                 e_player dodamage(10, v_origin);
             }
         }
-        wait(0.5);
+        wait 0.5;
         n_iterations--;
     }
 }
@@ -1587,7 +1587,7 @@ function function_4a58a0(e_perseus) {
                 var_c5374ab4 = 60;
             }
         }
-        wait(var_c5374ab4);
+        wait var_c5374ab4;
         if (level flag::get(#"hash_6dab61ca45a8eaea")) {
             level notify(#"perseus_defeated");
             e_perseus thread function_caa7eeb();
@@ -1805,7 +1805,7 @@ function private function_54c795f6() {
             }
         #/
         level flag::wait_till_clear(#"hash_59553ef93adcfe51");
-        wait(0.2);
+        wait 0.2;
     }
     level flag::set(#"hash_59553ef93adcfe51");
     level flag::wait_till(#"hash_44d76e9e7b9e0ebd");
@@ -2124,7 +2124,7 @@ function function_bc717eee(v_destination) {
     playsoundatposition(#"hash_5e07cc4ee28c44e7", e_perseus.origin);
     playfx(level._effect[#"hash_65a9f0574c7cd2db"], var_2ff979fa.origin, v_forward, (1, 0, 0));
     playfx(level._effect[#"hash_3d64776928022f66"], e_perseus gettagorigin("j_spine4"), v_forward, (1, 0, 0));
-    wait(2);
+    wait 2;
     var_2ff979fa delete();
 }
 
@@ -2295,7 +2295,7 @@ function private function_4c17036d(e_attacker, b_hero_weapon = 0) {
 function stat_tracker_setup(b_skipped) {
     level endon(#"end_game", #"stat_tracker" + "_ended_early");
     while (!level flag::exists(#"hash_5a7f1f9adac6dc8c") || !level flag::exists(#"boss_battle_complete")) {
-        wait(1);
+        wait 1;
     }
     level flag::wait_till_all(array(#"hash_5a7f1f9adac6dc8c", #"boss_battle_complete"));
 }
@@ -2357,7 +2357,7 @@ function function_9bc4f8cb() {
 // Checksum 0x96f28c7f, Offset: 0xa768
 // Size: 0x98
 function cleanup_final() {
-    wait(1);
+    wait 1;
     foreach (ai_zombie in getaiteamarray(level.zombie_team)) {
         if (isdefined(ai_zombie)) {
             ai_zombie thread cleanup_zombie();
@@ -2373,7 +2373,7 @@ function cleanup_zombie() {
     self endon(#"death");
     self clientfield::increment("" + #"zombie_delete");
     self val::set("cleanup_zombie", "ignoreall", 1);
-    wait(0.5);
+    wait 0.5;
     self delete();
 }
 
@@ -2422,7 +2422,7 @@ function cleanup_zombie() {
                 var_9df8166f = 1;
                 function_2003ebc9(2);
             }
-            wait(0.4);
+            wait 0.4;
         }
     }
 
@@ -2436,7 +2436,7 @@ function cleanup_zombie() {
         self endon(#"death");
         while (true) {
             print3d(self.origin, "<dev string:x6f7>" + self.health, (1, 1, 0), 1, 2, 3);
-            wait(0.1);
+            wait 0.1;
         }
     }
 

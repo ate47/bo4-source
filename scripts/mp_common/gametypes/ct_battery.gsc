@@ -357,7 +357,7 @@ function function_62449dad() {
                 }
                 helicopterturretmaxangle = getdvar(#"scr_helicopterturretmaxangle", level.helicopterturretmaxangle);
                 while (isdefined(self.turrettarget) && isalive(self.turrettarget) && self helicopter::turret_target_check(self.turrettarget, helicopterturretmaxangle) == 0) {
-                    wait(0.1);
+                    wait 0.1;
                 }
                 if (!isdefined(self.turrettarget) || !isalive(self.turrettarget)) {
                     break;
@@ -369,8 +369,8 @@ function function_62449dad() {
                 self notify(#"turret_on_target");
                 if (self.pilotistalking) {
                 }
-                wait(1);
-                wait(level.heli_turret_spinup_delay);
+                wait 1;
+                wait level.heli_turret_spinup_delay;
                 weaponshoottime = self.defaultweapon.firetime;
                 self setvehweapon(self.defaultweapon);
                 for (i = 0; i < level.heli_turretclipsize; i++) {
@@ -391,11 +391,11 @@ function function_62449dad() {
                         }
                     }
                     if (i < level.heli_turretclipsize - 1) {
-                        wait(weaponshoottime);
+                        wait weaponshoottime;
                     }
                 }
                 self notify(#"turret reloading");
-                wait(level.heli_turretreloadtime);
+                wait level.heli_turretreloadtime;
                 if (isdefined(self.turrettarget) && isalive(self.turrettarget)) {
                     antithreat += 100;
                     self.turrettarget.antithreat = antithreat;
@@ -409,7 +409,7 @@ function function_62449dad() {
             }
         }
         self function_d9adace1();
-        wait(self.var_847fac28);
+        wait self.var_847fac28;
     }
 }
 
@@ -449,7 +449,7 @@ function function_303fcbd8() {
                 }
                 antithreat += 100;
                 self.missiletarget.antithreat = antithreat;
-                wait(level.heli_missile_rof);
+                wait level.heli_missile_rof;
                 if (!isdefined(self.secondarytarget) || isdefined(self.secondarytarget) && self.missiletarget != self.secondarytarget) {
                     break;
                 }
@@ -458,7 +458,7 @@ function function_303fcbd8() {
                 self.missiletarget.antithreat = undefined;
             }
         }
-        wait(5);
+        wait 5;
     }
 }
 
@@ -502,7 +502,7 @@ function function_560c5174(currentnode, startwait, hardpointtype) {
     self.reached_dest = 0;
     helicopter::heli_reset();
     pos = self.origin;
-    wait(startwait);
+    wait startwait;
     while (isdefined(currentnode.target)) {
         a_nextnode = function_430510ec(currentnode.target, "targetname");
         if (a_nextnode.size > 1) {
@@ -590,7 +590,7 @@ function function_ab637f96(waittime, var_f49cf7e0 = 0) {
     if (var_f49cf7e0 > 0) {
         self thread function_40c7d949(var_f49cf7e0);
     }
-    wait(waittime);
+    wait waittime;
     self notify(#"hash_1ef47c427ec739d7");
 }
 
@@ -876,10 +876,10 @@ function j_fore_le_01() {
     e_player thread ct_utils::function_329f9ba6(#"hash_3e63055cff392ca5", 10, "grey", 1);
     e_player thread ct_utils::function_61c3d59c(#"hash_789ced07ae5c9a0b", undefined);
     e_player wave_enemy_bot(1);
-    wait(1);
+    wait 1;
     e_player thread ct_utils::function_329f9ba6(#"hash_5949f76edc389803", 4, "red", 1);
     e_player wave_enemy_bot(2);
-    wait(1);
+    wait 1;
     e_player thread ct_utils::function_329f9ba6(#"hash_5949f76edc389803", 4, "red", 1);
     e_player wave_enemy_bot(3);
     e_player thread function_9be2d75f();
@@ -903,7 +903,7 @@ function function_701302a8() {
     e_player ct_utils::objcounter_init(#"hash_1b6372a0a5dc0fef", 0, level.var_ae0bbaac.size, 1, 1);
     while (level.var_ae0bbaac.size > 0) {
         function_1eaaceab(level.var_ae0bbaac);
-        wait(1);
+        wait 1;
     }
 }
 
@@ -940,7 +940,7 @@ function function_52d196f2(n_difficulty = 2) {
     while (level.a_vh_choppers.size > 0 || level.var_ae0bbaac.size > 0) {
         function_1eaaceab(level.a_vh_choppers);
         function_1eaaceab(level.var_ae0bbaac);
-        wait(0.5);
+        wait 0.5;
     }
     e_player ct_utils::function_8b7a2fdd();
 }
@@ -982,7 +982,7 @@ function function_4674d2e7() {
         var_1c5e8282 = distance(self.origin, s_notify.v_loc);
         if (var_1c5e8282 < 4) {
             ct_utils::get_player() thread ct_utils::magic_explosion(self.origin);
-            wait(0.1);
+            wait 0.1;
             self delete();
         }
         waitframe(1);
@@ -1012,7 +1012,7 @@ function wave_enemy_bot(var_764a1fa0) {
     ct_utils::get_player() ct_utils::objcounter_init(#"hash_1b6372a0a5dc0fef", 0, level.var_4d4de8f9.size, 1, 1);
     while (level.var_4d4de8f9.size > 0) {
         function_1eaaceab(level.var_4d4de8f9);
-        wait(0.1);
+        wait 0.1;
     }
 }
 
@@ -1029,7 +1029,7 @@ function function_e12a129(v_target) {
         self.n_multikill++;
         if (!(isdefined(self.var_439da772) && self.var_439da772)) {
             self.var_439da772 = 1;
-            wait(2);
+            wait 2;
             self.n_multikill = 0;
             self.var_439da772 = 0;
             return;
@@ -1079,7 +1079,7 @@ function function_f75c4ec2(v_target) {
             adddebugcommand("<dev string:x2a6>");
         }
         while (true) {
-            wait(0.25);
+            wait 0.25;
             cmd = getdvarstring(#"hash_16e650a0fe963515", "<dev string:x84>");
             if (cmd == "<dev string:x84>") {
                 continue;
@@ -1093,7 +1093,7 @@ function function_f75c4ec2(v_target) {
                         if (isalive(var_c95e2891)) {
                             var_c95e2891 dodamage(100000, var_c95e2891.origin);
                             function_1eaaceab(level.var_ae0bbaac, 0);
-                            wait(0.1);
+                            wait 0.1;
                         }
                     }
                 }

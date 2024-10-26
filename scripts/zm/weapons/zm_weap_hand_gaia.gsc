@@ -130,7 +130,7 @@ function function_10b4d6ac(weapon) {
             } else {
                 self thread function_ce711b5c(e_projectile);
             }
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -269,7 +269,7 @@ function is_valid_target(e_target, n_range) {
 function set_projectile(n_index) {
     self endon(#"death");
     self.n_index = n_index;
-    wait(0.1);
+    wait 0.1;
     self clientfield::increment("" + #"gaia_shoot");
 }
 
@@ -305,7 +305,7 @@ function function_ce711b5c(e_projectile, ai_zombie, n_damage) {
             }
             if (isdefined(ai_zombie)) {
                 e_projectile moveto(ai_zombie getcentroid(), n_time);
-                wait(n_time - 0.05);
+                wait n_time - 0.05;
             }
         } else if (isdefined(ai_zombie)) {
             var_4d8b7233 = 0;
@@ -330,7 +330,7 @@ function function_ce711b5c(e_projectile, ai_zombie, n_damage) {
             } else {
                 e_projectile moveto(v_end, n_time);
             }
-            wait(n_time - 0.05);
+            wait n_time - 0.05;
             if (isdefined(ai_zombie) && ai_zombie.var_6f84b820 === #"boss") {
                 if (isdefined(ai_zombie gettagorigin("j_tail_1"))) {
                     n_hit_dist_sq = 2500;
@@ -420,7 +420,7 @@ function function_30239376(e_target) {
 // Size: 0x34
 function projectile_timeout() {
     self endon(#"death");
-    wait(5);
+    wait 5;
     self delete();
 }
 
@@ -561,7 +561,7 @@ function function_dd7bc108(weapon) {
             mdl_spike thread function_33f9ab00(a_e_targets, self.currentweapon);
         }
         n_inc += 50;
-        wait(0.1);
+        wait 0.1;
         if (isdefined(mdl_spike) && isdefined(mdl_spike.var_6fe9ec3f) && mdl_spike.var_6fe9ec3f) {
             var_d29931f9++;
         }
@@ -579,7 +579,7 @@ function function_dd7bc108(weapon) {
 // Checksum 0x3476fb46, Offset: 0x2910
 // Size: 0x1a
 function function_35f548bc() {
-    wait(1.8);
+    wait 1.8;
     level.var_a8472176 = 1;
 }
 
@@ -602,7 +602,7 @@ function function_33f9ab00(a_e_targets, weapon) {
             }
         }
     }
-    wait(1.5);
+    wait 1.5;
     self spike_explode(v_pos, weapon);
 }
 
@@ -618,7 +618,7 @@ function spike_explode(v_pos, weapon) {
         n_dist = 40000;
     }
     self thread scene::play("p8_fxanim_zm_red_gaia_spikes_bundle", "explode", self);
-    wait(0.1);
+    wait 0.1;
     level notify(#"hash_3ac605b3a73cc198", {#v_origin:v_pos});
     a_e_targets = function_3874b38f();
     foreach (e_target in a_e_targets) {
@@ -632,7 +632,7 @@ function spike_explode(v_pos, weapon) {
             self thread function_5bca6886(e_target, v_dir);
         }
     }
-    wait(1.5);
+    wait 1.5;
     self delete();
 }
 
@@ -660,7 +660,7 @@ function function_1e39fbc5() {
             n_ammo--;
         }
         self setweaponammoclip(level.w_hand_gaia, n_ammo);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -699,7 +699,7 @@ function function_85d88e17(e_target, b_charged, v_dir, n_damage) {
         e_target.marked_for_death = 1;
         w_weapon = level.w_hand_gaia;
         e_target zm_utility::function_ffc279(v_dir, self, undefined, w_weapon);
-        wait(randomfloatrange(1.5, 2));
+        wait randomfloatrange(1.5, 2);
         if (isdefined(e_target)) {
             gibserverutils::annihilate(e_target);
             n_damage = e_target.health + 999;
@@ -747,7 +747,7 @@ function function_f2f6947f(e_target) {
         e_target thread namespace_9ff9f642::slowdown(#"hash_315cdbcb170fa2c4");
         break;
     }
-    wait(3);
+    wait 3;
     e_target.var_317b8f00 = 0;
 }
 

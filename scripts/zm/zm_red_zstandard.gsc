@@ -223,9 +223,9 @@ function defend_areas() {
         zm_utility::open_door(array("eastern_plaza_to_upper_road", "amphitheater_backstage"), undefined, undefined, 1);
     }
     str_next_defend = #"amphitheater";
-    wait(5);
+    wait 5;
     zm_utility::function_11101458(str_next_defend);
-    wait(10);
+    wait 10;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     level notify(#"hash_20632257a91d251a");
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 35, undefined, s_defend_area.var_9fc5eea1);
@@ -236,16 +236,16 @@ function defend_areas() {
     } else {
         zm_utility::open_door(array("apollo_temple_to_eastern_plaza", "eastern_plaza_to_upper_road"), undefined, undefined, 1);
     }
-    wait(10);
+    wait 10;
     str_second_defend = array::random(array(#"bathhouse", #"offering"));
     if (str_second_defend == #"bathhouse") {
         level thread zm_utility::open_door(array("western_plaza_to_bathhouse_upper", "intersection_of_treasuries_to_bathhouse_inner"));
     } else {
         level thread zm_utility::open_door(array("eastern_plaza_to_temple_terrace", "stoa_of_the_athenians_to_intersection_of_treasuries"));
     }
-    wait(5);
+    wait 5;
     zm_utility::function_11101458(str_second_defend);
-    wait(15);
+    wait 15;
     s_defend_area = zm_utility::function_a877cd10(str_second_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45, undefined, s_defend_area.var_9fc5eea1);
     zm_utility::function_fef4b36a(str_second_defend);
@@ -258,25 +258,25 @@ function defend_areas() {
     } else {
         level thread zm_utility::open_door(array("river_acheron_to_serpents_pass"));
     }
-    wait(5);
+    wait 5;
     zm_utility::function_11101458(str_next_defend);
-    wait(15);
+    wait 15;
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     level thread zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, undefined, undefined, s_defend_area.var_9fc5eea1);
     level flag::wait_till("started_defend_area");
     level waittill(#"hash_7a04a7fb98fa4e4d");
     zm_utility::function_fef4b36a(str_next_defend);
-    wait(8);
+    wait 8;
     level thread function_a97f7327();
     level thread zm_utility::open_door(array("cliff_tombs_to_drakaina_arena", "serpents_pass_to_drakaina_arena", "western_plaza_to_bathhouse_upper", "intersection_of_treasuries_to_bathhouse_inner", "western_plaza_to_bathhouse_upper", "intersection_of_treasuries_to_bathhouse_inner", "river_acheron_to_cliff_tombs", "river_acheron_to_serpents_pass", "apollo_temple_to_western_plaza", "western_plaza_to_monument_of_craterus", "apollo_temple_to_eastern_plaza", "eastern_plaza_to_temple_terrace", "apollo_temple_to_western_plaza", "apollo_temple_to_eastern_plaza"));
-    wait(20);
+    wait 20;
     if (str_second_defend == #"bathhouse") {
         str_next_defend = #"offering";
     } else {
         str_next_defend = #"bathhouse";
     }
     zm_utility::function_11101458(str_next_defend);
-    wait(15);
+    wait 15;
     level util::delay(45, undefined, &zm_round_spawning::function_376e51ef, #"gegenees");
     s_defend_area = zm_utility::function_a877cd10(str_next_defend);
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, undefined, undefined, s_defend_area.var_9fc5eea1);
@@ -340,7 +340,7 @@ function function_39364bed() {
     str_next_defend = array::random(array(#"center", #"temple", #"spartan"));
     while (true) {
         zm_utility::function_11101458(str_next_defend);
-        wait(45);
+        wait 45;
         s_defend_area = zm_utility::function_a877cd10(str_next_defend);
         zm_zonemgr::function_8caa21df(s_defend_area.a_str_zones);
         zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, undefined, undefined, s_defend_area.var_9fc5eea1);

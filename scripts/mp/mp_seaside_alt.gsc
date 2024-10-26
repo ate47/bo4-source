@@ -43,7 +43,7 @@ function precache() {
 // Size: 0xb4
 function on_game_playing() {
     array::delete_all(getentarray("sun_block", "targetname"));
-    wait(getdvarfloat(#"hash_205d729c5c415715", 0.3));
+    wait getdvarfloat(#"hash_205d729c5c415715", 0.3);
     if (util::isfirstround()) {
         if (getdvarint(#"hash_1ee1f013d124a26a", 0)) {
             level thread scene::play(#"p8_fxanim_mp_seaside_tanks_bundle");

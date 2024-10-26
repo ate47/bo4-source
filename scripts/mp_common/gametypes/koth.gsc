@@ -332,7 +332,7 @@ function kothmainloop() {
         waitframe(1);
     }
     pause_time();
-    wait(5);
+    wait 5;
     setbombtimer("A", 0);
     setmatchflag("bomb_timer_a", 0);
     thread hidetimerdisplayongameend();
@@ -348,7 +348,7 @@ function kothmainloop() {
             updateobjectivehintmessage(level.objectivehintpreparezone);
             setmatchflag("bomb_timer_a", 1);
             setbombtimer("A", int(gettime() + 1000 + int(level.zonespawntime * 1000)));
-            wait(level.zonespawntime);
+            wait level.zonespawntime;
             level.zone.gameobject gameobjects::set_flags(0);
             globallogic_audio::leader_dialog("kothOnline", undefined, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
         }
@@ -381,9 +381,9 @@ function kothmainloop() {
         level notify(#"zone_reset");
         setmatchflag("bomb_timer_a", 0);
         spawn_next_zone();
-        wait(0.5);
+        wait 0.5;
         thread forcespawnteam(ownerteam);
-        wait(0.5);
+        wait 0.5;
     }
 }
 
@@ -409,7 +409,7 @@ function forcespawnteam(team) {
         }
         if (player.pers[#"team"] == team) {
             player notify(#"force_spawn");
-            wait(0.1);
+            wait 0.1;
         }
     }
 }
@@ -709,7 +709,7 @@ function movezoneaftertime(time) {
     level endon(#"game_ended", #"zone_reset");
     level.zonemovetime = gettime() + int(time * 1000);
     level.zonedestroyedbytimer = 0;
-    wait(time);
+    wait time;
     if (isdefined(level.overtime) && level.overtime) {
         return;
     }
@@ -740,7 +740,7 @@ function awardcapturepoints(team, lastcaptureteam) {
     seconds = 1;
     score = 1;
     while (!level.gameended) {
-        wait(seconds);
+        wait seconds;
         hostmigration::waittillhostmigrationdone();
         if (!level.zone.gameobject.iscontested) {
             if (level.scoreperplayer) {

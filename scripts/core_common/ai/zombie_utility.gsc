@@ -577,7 +577,7 @@ function isinset(input, set) {
 // Size: 0x3e
 function notifyaftertime(notifystring, killmestring, time) {
     self endon(#"death", killmestring);
-    wait(time);
+    wait time;
     self notify(notifystring);
 }
 
@@ -626,7 +626,7 @@ function notifyaftertime(notifystring, killmestring, time) {
 // Checksum 0x48c46be1, Offset: 0x1f68
 // Size: 0x1e
 function debugtimeout() {
-    wait(5);
+    wait 5;
     self notify(#"timeout");
 }
 
@@ -1489,7 +1489,7 @@ function get_desired_origin() {
 function hide_pop() {
     self endon(#"death");
     self ghost();
-    wait(0.5);
+    wait 0.5;
     if (isdefined(self)) {
         self show();
         util::wait_network_frame();
@@ -1515,7 +1515,7 @@ function finish_rise_notetracks(note, spot) {
     if (note == "deathout" || note == "deathhigh") {
         self.zombie_rise_death_out = 1;
         self notify(#"zombie_rise_death_out");
-        wait(2);
+        wait 2;
         spot notify(#"stop_zombie_rise_fx");
     }
 }
@@ -1585,10 +1585,10 @@ function delayed_zombie_eye_glow() {
     self endon(#"death");
     if (isdefined(self.in_the_ground) && self.in_the_ground || isdefined(self.in_the_ceiling) && self.in_the_ceiling) {
         while (!isdefined(self.create_eyes)) {
-            wait(0.1);
+            wait 0.1;
         }
     } else {
-        wait(0.5);
+        wait 0.5;
     }
     self zombie_eye_glow();
 }
@@ -1630,10 +1630,10 @@ function round_spawn_failsafe_debug_draw() {
     for (prevorigin = self.origin; true; prevorigin = self.origin) {
         if (isdefined(level.toggle_keyline_always) && level.toggle_keyline_always) {
             self clientfield::set("zombie_keyline_render", 1);
-            wait(1);
+            wait 1;
             continue;
         }
-        wait(4);
+        wait 4;
         if (isdefined(self.lastchunk_destroy_time)) {
             if (gettime() - self.lastchunk_destroy_time < 8000) {
                 continue;
@@ -1668,9 +1668,9 @@ function round_spawn_failsafe() {
         if (!isdefined(level.failsafe_waittime)) {
             level.failsafe_waittime = 30;
         }
-        wait(level.failsafe_waittime);
+        wait level.failsafe_waittime;
         if (isdefined(self.missinglegs) && self.missinglegs) {
-            wait(10);
+            wait 10;
         }
         if (isdefined(self.is_inert) && self.is_inert) {
             continue;
@@ -2447,7 +2447,7 @@ function damage_over_time(dmg, delay, attacker, means_of_death) {
     }
     while (true) {
         if (isdefined(delay)) {
-            wait(delay);
+            wait delay;
         }
         if (isdefined(self)) {
             var_223fc6f5 = self gettagorigin("j_neck");
@@ -2762,7 +2762,7 @@ function run_ignore_player_handler() {
             self asmsetanimationrate(var_fd8e23d9);
         }
         while (true) {
-            wait(1);
+            wait 1;
             animation_rate = self ai::function_9139c839().var_450edb3b;
             if (!isdefined(animation_rate)) {
                 return;

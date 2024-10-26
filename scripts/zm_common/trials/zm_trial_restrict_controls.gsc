@@ -36,7 +36,7 @@ function __init__() {
 // Size: 0x2fa
 function private on_begin(var_bd9d962 = #"invert") {
     level endon(#"hash_7646638df88a3656");
-    wait(5);
+    wait 5;
     level.var_2439365b = var_bd9d962;
     switch (level.var_2439365b) {
     case #"invert":
@@ -114,7 +114,7 @@ function private function_3d8fa20a() {
     self endon("63943c3872eb77bc");
     self endon(#"death");
     level endon(#"hash_7646638df88a3656");
-    wait(5);
+    wait 5;
     while (self zm_utility::is_jumping()) {
         waitframe(1);
     }
@@ -156,7 +156,7 @@ function private function_dc856fd8() {
 // Size: 0x184
 function private function_a5b02a07() {
     self endon(#"death");
-    wait(0.5);
+    wait 0.5;
     n_players = getplayers().size;
     switch (n_players) {
     case 1:

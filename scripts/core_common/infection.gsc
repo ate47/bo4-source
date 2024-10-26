@@ -189,7 +189,7 @@ function give_body() {
 // Size: 0x128
 function function_da08f4d0() {
     self endon(#"death");
-    wait(randomintrange(2, 4));
+    wait randomintrange(2, 4);
     while (true) {
         str_alias = #"hash_61fc4fa3eeafcf07";
         n_wait_min = 2;
@@ -202,7 +202,7 @@ function function_da08f4d0() {
         if (self hasdobj() && self haspart("j_spine4")) {
             self playsoundontag(str_alias, "j_spine4");
         }
-        wait(randomintrange(n_wait_min, n_wait_max));
+        wait randomintrange(n_wait_min, n_wait_max);
     }
 }
 

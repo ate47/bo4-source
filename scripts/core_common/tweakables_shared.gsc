@@ -389,7 +389,7 @@ function updateuitweakables(debug_refresh) {
                 settweakablelastvalue("hud", clienttweakable, curvalue);
             }
         }
-        wait(randomfloatrange(0.9, 1.1));
+        wait randomfloatrange(0.9, 1.1);
     } while (isdefined(debug_refresh));
 }
 

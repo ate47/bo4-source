@@ -2066,7 +2066,7 @@ function _trigger_stop(trig) {
 }
 
 // Namespace scene/scene_shared
-// Params 4, eflags: 0x21 linked
+// Params 4, eflags: 0x21 linked variadic
 // Checksum 0xe27ce2d4, Offset: 0xadc0
 // Size: 0x184
 function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
@@ -2978,7 +2978,7 @@ function _play_instance(s_tracker, str_scenedef = self.scriptbundlename, a_ents,
     #/
     if (str_mode != "init") {
         if (isdefined(self.script_delay) && self.script_delay > 0) {
-            wait(self.script_delay);
+            wait self.script_delay;
         }
         if (isdefined(o_scene)) {
             thread [[ o_scene ]]->play(str_shot, b_test_run, str_mode);

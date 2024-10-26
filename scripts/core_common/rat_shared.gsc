@@ -128,7 +128,7 @@
                 }
             }
             ratreportcommandresult(params._id, 0, "<dev string:x2eb>");
-            wait(1);
+            wait 1;
             return;
         }
         return util::gethostplayer();

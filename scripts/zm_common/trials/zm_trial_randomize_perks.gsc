@@ -58,14 +58,14 @@ function private function_83fa47e8() {
     level endon(#"hash_7646638df88a3656");
     self bgb_pack::function_59004002(#"zm_bgb_perk_up", 1);
     self bgb_pack::function_59004002(#"zm_bgb_perkaholic", 1);
-    wait(8);
+    wait 8;
     if (isdefined(self.var_2a62e678)) {
         self.var_cdc2b986 = self zm_weapons::get_player_weapondata(self.var_2a62e678);
     }
     var_45a6b64a = arraycopy(self.var_cd5d9345);
     self.var_5046ea5e = self zm_trial_util::function_3f8a4145(0);
     self.var_5046ea5e.var_cd5d9345 = var_45a6b64a;
-    wait(1);
+    wait 1;
     self.var_cd5d9345 = [];
     for (n_slot = 0; n_slot < 4; n_slot++) {
         var_67017da5 = self.var_5046ea5e.var_8f0c164f[n_slot];
