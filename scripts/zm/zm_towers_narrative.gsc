@@ -291,15 +291,15 @@ function function_b116e882(var_237f80b0, var_54bb7f87, var_5876458) {
 function function_831dcf3e() {
     level endon(#"end_game");
     var_8a88c4c8 = getent("mdl_narrative_dirt", "targetname");
-    var_d65b49c5 = getentarray("t_narrative_hoop", "targetname");
+    a_t_braziers = getentarray("t_narrative_hoop", "targetname");
     if (!zm_utility::is_ee_enabled()) {
         var_8a88c4c8 delete();
     } else {
         level.var_75fb83c = 0;
-        level.var_3d8b20c0 = var_d65b49c5.size;
-        foreach (var_2f1adb8e in var_d65b49c5) {
-            var_2f1adb8e flag::init(#"hash_6e4b1162d4626a6e");
-            var_2f1adb8e thread function_51f7da68();
+        level.var_3d8b20c0 = a_t_braziers.size;
+        foreach (t_brazier in a_t_braziers) {
+            t_brazier flag::init(#"hash_6e4b1162d4626a6e");
+            t_brazier thread function_51f7da68();
         }
         level flag::wait_till(#"hash_61f2d2e8517e7f57");
         callback::on_connect(&function_da2c37fc);
@@ -307,13 +307,13 @@ function function_831dcf3e() {
         level flag::wait_till(#"hash_407e0345ce2708de");
         callback::remove_on_connect(&function_da2c37fc);
     }
-    foreach (var_2f1adb8e in var_d65b49c5) {
-        mdl_fx = getent(var_2f1adb8e.target, "targetname");
+    foreach (t_brazier in a_t_braziers) {
+        mdl_fx = getent(t_brazier.target, "targetname");
         if (zm_utility::is_ee_enabled()) {
             mdl_fx clientfield::set("" + #"hash_5afda864f8b64f5c", 0);
         }
         mdl_fx delete();
-        var_2f1adb8e delete();
+        t_brazier delete();
     }
     vol_pedestal = getent("vol_narrative_smash", "targetname");
     vol_pedestal delete();
@@ -351,9 +351,9 @@ function function_51f7da68() {
         return;
     }
     level.var_75fb83c = 0;
-    var_d65b49c5 = getentarray("t_narrative_hoop", "targetname");
-    arrayremovevalue(var_d65b49c5, self);
-    array::thread_all(var_d65b49c5, &function_51f7da68);
+    a_t_braziers = getentarray("t_narrative_hoop", "targetname");
+    arrayremovevalue(a_t_braziers, self);
+    array::thread_all(a_t_braziers, &function_51f7da68);
     self thread function_51f7da68();
 }
 

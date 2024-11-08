@@ -1,4 +1,4 @@
-#using script_1c28a77967267c7a;
+#using scripts\zm\equip\zm_equip_music_box.gsc;
 #using scripts\zm\zm_orange_zones.gsc;
 #using scripts\zm\zm_orange_util.gsc;
 #using scripts\zm\zm_orange_pablo.gsc;
@@ -63,8 +63,8 @@ function init_flags() {
 // Checksum 0x88685034, Offset: 0x570
 // Size: 0xfc
 function main() {
-    zm_items::function_4d230236(getweapon(#"hash_7ca6dc6b2bfb8745"), &function_13febd4b);
-    zm_items::function_4d230236(getweapon(#"hash_7ca6d96b2bfb822c"), &function_13febd4b);
+    zm_items::function_4d230236(getweapon(#"zitem_orange_zipline_crank_part_1"), &function_13febd4b);
+    zm_items::function_4d230236(getweapon(#"zitem_orange_zipline_crank_part_2"), &function_13febd4b);
     callback::on_connect(&on_player_connect);
     level.var_4a04c327 = array("facility_front", "facility_back", "lighthouse_to_facility");
     function_53b616a4();
@@ -126,13 +126,13 @@ function function_4dc96e66() {
 // Size: 0x112
 function function_13febd4b(e_holder, w_item) {
     switch (w_item.name) {
-    case #"hash_7ca6dc6b2bfb8745":
+    case #"zitem_orange_zipline_crank_part_1":
         level.var_1537d233++;
         level flag::set(#"hash_7d230fa8f283c105");
         level zm_ui_inventory::function_7df6bb60("zm_orange_zipquest_crank_1", 1);
         self playsound(#"hash_3ec95ad193e1c377");
         break;
-    case #"hash_7ca6d96b2bfb822c":
+    case #"zitem_orange_zipline_crank_part_2":
         level.var_1537d233++;
         level zm_ui_inventory::function_7df6bb60("zm_orange_zipquest_crank_2", 1);
         self playsound(#"hash_3ec95ad193e1c377");

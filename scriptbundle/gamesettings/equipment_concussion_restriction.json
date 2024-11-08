@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "equipment_concussion_restriction",
-    "displayname": "#hash_7cf054cda28390c7",
+    "displayname": "#weapon/stun_grenade",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

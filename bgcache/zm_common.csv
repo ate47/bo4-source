@@ -3213,7 +3213,7 @@ weapon,hero_sword_pistol_lh_lv3_zm,294cdc4f7d8
 weapon,hash_198d7067115d11d4,294cdcb7638
 weapon,shotgun_trenchgun_t8_zm,294cdc422b8
 weapon,hero_sword_pistol_lv2_zm,294cdc92178
-weapon,hash_1a236a40aa917c34,294cdb53bc8
+weapon,eq_frag_grenade_extra_zm,294cdb53bc8
 weapon,launcher_standard_t8_upgraded_zm,294cdbb7a38
 weapon,sniper_mini14_t8_upgraded_zm,294cdc48d48
 weapon,shotgun_pump_t8_upgraded_zm,294cdcea018
@@ -3306,7 +3306,7 @@ weapon,hash_5713ea534ae6a6c7,294cdc23888
 weapon,sticky_grenade_zm,294cdcdb5a8
 weapon,zombie_perk_bottle_slider,294cdbe2438
 weapon,hash_582702d577bf4da1,294cdc6b768
-weapon,hash_5847649e274f1933,294cdc3b828
+weapon,eq_frag_grenade_zm,294cdc3b828
 weapon,hash_5b10080871ad106c,294cdce2038
 weapon,hash_5b208277c641b3bb,294cdb6e608
 weapon,proximity_grenade_zm,294cdc462a8
@@ -8853,7 +8853,7 @@ string,zmweapon/tr_midburst_t8_upgraded,0
 string,hash_3367be9cb3de4426,0
 string,hash_33c5a3d6ed967788,0
 string,hash_33f013eacb53964c,0
-string,hash_33fc08c2de8f6c8d,0
+string,weapon/incendiary_grenade,0
 string,hash_3408e555887fd0de,0
 string,hash_344916eb222ad1b6,0
 string,hash_3453caca2c7cb342,0

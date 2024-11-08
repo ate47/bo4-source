@@ -6,17 +6,12 @@ Dump of some parts of BO4 using [Atian Call of Duty Tools](https://github.com/at
 
 ## Want to earn $50?
 
-I'M NOT JOKING, I WILL GIVE **\$50** TO ANYONE ABLE TO GIVE ME AN UNHASHED VALUE OF ONE OF THESE GROUPS: (Or **\$100** IF YOU FIND ONE FROM BOTH GROUPS)
+I'M NOT JOKING, I WILL GIVE **\$50** TO ANYONE ABLE TO GIVE ME AN UNHASHED VALUE OF ONE OF THESE:
 
 ```
 Alistair's Folly - hash_138efe2bb30be63c
 Chaos Theory - hash_138f012bb30beb55
 Alistair's Annihilator - hash_138f002bb30be9a2
-
-Richtofen Matryoshka Dolls - hash_291e1c117ebbf5e6
-Demspey Matryoshka Dolls - hash_7a42b57be462143f
-Nikolai Matryoshka Dolls - hash_7264d6f24a950a5b
-Takeo Matryoshka Dolls - hash_579652e2459b8c74
 ```
 
 ## Pools
@@ -86,5 +81,5 @@ Thanks to these people for the hashes.
 - Scobalula and the others from the [Greyhound package index](https://github.com/Scobalula/GreyhoundPackageIndex) repository.
 - Richkiller, we wish him all the best where he can be.
 - Jek47
-- Luisete2105
+- Luisete2105 (Congrat for the matryoshkas)
 - All the others I forgot to mention.

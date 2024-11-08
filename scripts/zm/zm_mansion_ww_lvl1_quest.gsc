@@ -301,16 +301,16 @@ function init_lock() {
     self.n_solution = n_solution;
     self thread function_175e4696(var_1e30344b);
     self thread function_4e833729();
-    var_3aadd17 = array::random(a_n_solutions);
-    self thread scramble_lock(var_3aadd17);
+    n_random_start = array::random(a_n_solutions);
+    self thread scramble_lock(n_random_start);
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe522fcf1, Offset: 0x14c0
 // Size: 0xee
-function scramble_lock(var_3aadd17) {
-    for (i = 0; i < var_3aadd17; i++) {
+function scramble_lock(n_random_start) {
+    for (i = 0; i < n_random_start; i++) {
         self notify(#"rotate_lock");
         self playsound(#"hash_559df0c493fb2378");
         self rotateroll(-90, 0.5);

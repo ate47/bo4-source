@@ -28,7 +28,7 @@
 #altar,#activate_generic,#hash_a87bd666db70dc5,0,0,false,false,false,false
 #pap,#activate,#vox_pap_activate,0,0,false,false,false,false
 #stoker_key,#pick_up,#hash_4995c22c93873b21,0,0,true,false,false,false
-#hash_26a9f2114c4dc662,#build,#hash_461b4cf8bf87a9cf,0,0,true,false,false,false
+#distillation_kit,#build,#hash_461b4cf8bf87a9cf,0,0,true,false,false,false
 #fast_travel,#end,#hash_4d6d4cd2bfc6d91c,50,0,false,true,false,false
 #component_pickup,#hash_d2d731e2804301b,#hash_4a69ee1b53bfa83d,0,0,true,false,false,false
 #component_pickup,#hash_4223e614aaaeb5be,#hash_1778cc9d8b022754,0,0,true,false,false,false

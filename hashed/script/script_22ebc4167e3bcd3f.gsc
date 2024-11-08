@@ -636,7 +636,7 @@ function function_be995f48(mdl_tomahawk, mdl_powerup) {
     // Checksum 0xe87f8261, Offset: 0x2d00
     // Size: 0xd4
     function function_7101d54f() {
-        w_component = zm_crafting::get_component(#"hash_1e5657f6a6f09389");
+        w_component = zm_crafting::get_component(#"zitem_spectral_shield_part_3");
         foreach (e_player in level.activeplayers) {
             e_player zm_crafting::function_3e29352d(w_component);
         }

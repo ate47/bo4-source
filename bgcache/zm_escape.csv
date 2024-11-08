@@ -734,7 +734,7 @@ weapon,ww_blundergat_fire_t8_unfinished_zm,2305eddbaa8
 weapon,hero_minigun_t8_lv2_zm,2305ed92678
 weapon,spork_alcatraz_zm,2305ed826b8
 weapon,hash_73ece7ad89ad188,2305ee0a498
-weapon,hash_92593c8f4179c9f,2305edcbae8
+weapon,zitem_spectral_shield_part_3_zm,2305edcbae8
 weapon,spknifeork_flourish_zm,2305edf8f88
 weapon,hash_c05a67703cb5449,2305edc25b8
 weapon,spoon_alcatraz_flourish_zm,2305edfe4c8
@@ -754,8 +754,8 @@ weapon,hash_25c3b1ea7a485f69,2305ed9e648
 weapon,ww_blundergat_fire_t8_upgraded_zm,2305edca598
 weapon,hash_2c32102272f9d449,2305edf24f8
 weapon,hash_2f2554ceaa4eaa3f,2305edb9088
-weapon,hash_30c2d7b8823b3b05,2305ee0f9d8
-weapon,hash_322697bda96aeeaa,2305ede0fe8
+weapon,zitem_spectral_shield_part_1_zm,2305ee0f9d8
+weapon,zitem_spectral_shield_part_2_zm,2305ede0fe8
 weapon,hero_flamethrower_t8_lv2_zm,2305ee23988
 weapon,golden_knife_zm,2305edc9048
 weapon,hero_katana_t8_lv3_zm,2305edcfad8
@@ -771,7 +771,7 @@ weapon,hero_gravityspikes_t8_lv1_zm,2305ee1b9a8
 weapon,smg_thompson_t8_zm,2305edbd078
 weapon,ww_blundergat_t8_upgraded_zm,2305ee1a458
 weapon,hash_53a5b00d62fef21d,2305ee1cef8
-weapon,hash_545160e7d44dc3a7,2305edd7ab8
+weapon,zitem_acid_gat_part_3_zm,2305edd7ab8
 weapon,hero_minigun_t8_lv1_zm,2305ed87bf8
 weapon,hash_54b3ac1f0d689077,2305ed8bbe8
 weapon,hash_57fcbff622b2ad9f,2305ee064a8
@@ -791,8 +791,8 @@ weapon,hash_6f4c2e4fdace9754,2305ed9d0f8
 weapon,hash_7507f9c3c526368c,2305ee2a418
 weapon,hash_77eb0451c840bdf3,2305ee34e98
 weapon,hash_7966256a6008ad65,2305ed95118
-weapon,hash_7beea4d76271620d,2305edde548
-weapon,hash_7d5344dc89a29252,2305edb5098
+weapon,zitem_acid_gat_part_1_zm,2305edde548
+weapon,zitem_acid_gat_part_2_zm,2305edb5098
 weapon,hash_7db4d013c2bc18e2,2305ee37938
 gesture,hash_5386b723938dfda,2305eb462e0
 gesture,hash_c9191ad04ac315e,2305eb19df8

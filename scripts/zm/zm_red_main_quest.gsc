@@ -4678,11 +4678,11 @@ function function_9cb5a6ac(str_ww, str_task, n_act, n_spotlight, var_d8d4faff) {
     var_b1224954 = self.var_b1224954;
     if (isdefined(var_b1224954)) {
         var_b1224954 delete();
-        var_79e746a9 = self.var_79e746a9;
-        if (isdefined(var_79e746a9)) {
-            var_79e746a9 zm_utility::deactivate_zombie_point_of_interest();
-            var_79e746a9 clientfield::set("charon_pool", 0);
-            var_79e746a9 delete();
+        mdl_aoe = self.mdl_aoe;
+        if (isdefined(mdl_aoe)) {
+            mdl_aoe zm_utility::deactivate_zombie_point_of_interest();
+            mdl_aoe clientfield::set("charon_pool", 0);
+            mdl_aoe delete();
         }
     }
     wait 0.5;
@@ -4779,10 +4779,10 @@ function function_5ea46511(str_ww) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x277f413, Offset: 0x16370
 // Size: 0xee
-function function_4900fd63(s_spotlight, var_515ad80f = 0) {
+function function_4900fd63(s_spotlight, b_backstage = 0) {
     level endon(#"end_game", #"play" + "_ended_early", #"hash_285de4ce79135552");
     self endon(#"entering_last_stand", #"death");
-    if (!var_515ad80f) {
+    if (!b_backstage) {
         while (!self function_813c4629(s_spotlight)) {
             waitframe(1);
         }

@@ -748,15 +748,15 @@ function function_530c54e3() {
 // Checksum 0x4745004d, Offset: 0x34c8
 // Size: 0x148
 function smoke_vo(v_pos) {
-    var_55c47118 = spawn("trigger_radius", v_pos, 0, 200, 80);
-    var_55c47118 endon(#"death");
-    var_55c47118 thread function_9a4a6d02();
+    t_smoke = spawn("trigger_radius", v_pos, 0, 200, 80);
+    t_smoke endon(#"death");
+    t_smoke thread function_9a4a6d02();
     while (true) {
-        waitresult = var_55c47118 waittill(#"trigger");
+        waitresult = t_smoke waittill(#"trigger");
         if (isplayer(waitresult.activator)) {
             b_played = waitresult.activator zm_audio::create_and_play_dialog(#"brutus", #"smoke_react");
             if (isdefined(b_played) && b_played) {
-                var_55c47118 notify(#"hash_617485dc39ba3f5e");
+                t_smoke notify(#"hash_617485dc39ba3f5e");
             }
         }
         wait randomfloatrange(0.666667, 1.33333);

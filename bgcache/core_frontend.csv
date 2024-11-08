@@ -3319,7 +3319,7 @@ weapon,hash_190c73dc10dd5998,294cdbdf998
 weapon,shotgun_trenchgun_t8_mp,294cdbe6428
 weapon,hash_19a1b96c6810440c,294cdb4fbd8
 weapon,hero_sword_pistol_lv2_mp,294cdbef958
-weapon,hash_1c1c8c36aa65a855,294cdb865a8
+weapon,eq_seeker_mine_mp,294cdb865a8
 weapon,pistol_topbreak_t8_mp,294cdba6528
 weapon,hero_gravityspikes_t8_lv2_mp,294cdbb4f98
 weapon,hash_1feb410195b728a9,294cdb6fb58
@@ -7700,7 +7700,7 @@ string,hash_6a9c5353f6e0729,0
 string,hash_7129c2ef942745a,0
 string,hash_72b5e12c9c5b3bf,0
 string,weapon/sig_buckler_dw,0
-string,hash_796ecbec9ffbdcd,0
+string,weapon/seeker_mine,0
 string,hash_809faea44b6c591,0
 string,mpui/extclip,0
 string,hash_870732dcf823d00,0
@@ -7980,7 +7980,7 @@ string,hash_4f0d8ebb363015e0,0
 string,hash_4f23c6ecb321fa19,0
 string,hash_502a6c16b4316823,0
 string,hash_502cca55de20d536,0
-string,hash_504ad2d8233fb0ac,0
+string,weapon/sensor_dart,0
 string,hash_506621193b404166,0
 string,hash_5071aa2f1fc20b4c,0
 string,hash_50acb81dbe07fbfe,0

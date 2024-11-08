@@ -1,7 +1,7 @@
 {
     "name": "#molotov_fire_cp",
     "baseWeapon": "#molotov_fire",
-    "displayname": "#hash_7e05f134e41a0f45",
+    "displayname": "#weapon/molotov_grenade",
     "sessionMode": "campaign",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

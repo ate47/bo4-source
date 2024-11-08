@@ -1347,7 +1347,7 @@ function function_16288b92(str_type, s_loc, mdl_key, vol_transform) {
         s_trigger_loc = struct::get("vol_" + s_stub.str_hint);
         var_47323b73.vol_defend = spawn("trigger_radius", s_trigger_loc.origin, 0, s_trigger_loc.radius, s_trigger_loc.height);
         var_47323b73.vol_defend.targetname = s_trigger_loc.targetname;
-        var_47323b73.var_159100b7 = mdl_key.targetname;
+        var_47323b73.str_source = mdl_key.targetname;
         level flag::wait_till("clock");
         var_991cace9 delete();
         wait 1;

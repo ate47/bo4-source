@@ -1219,7 +1219,7 @@ function function_f5a3ba79() {
         a_w_items = getitemarray();
         var_a72ea4cb = undefined;
         foreach (w_item in a_w_items) {
-            if (w_item.item == getweapon(#"hash_1e5656f6a6f091d6")) {
+            if (w_item.item == getweapon(#"zitem_spectral_shield_part_2")) {
                 var_a72ea4cb = w_item;
                 break;
             }
@@ -1238,14 +1238,14 @@ function function_f5a3ba79() {
                     var_4c1425d3 = array::random(var_20ca90ea);
                 }
             }
-            var_a705e738 = util::spawn_model("tag_origin", var_4c1425d3.origin, var_4c1425d3.angles);
+            mdl_spark = util::spawn_model("tag_origin", var_4c1425d3.origin, var_4c1425d3.angles);
             if (!isdefined(var_4c1425d3.s_unitrigger_stub)) {
                 var_4c1425d3.s_unitrigger_stub = var_4c1425d3 zm_unitrigger::create("", 96, &function_442fe4d3);
             } else {
                 zm_unitrigger::register_unitrigger(var_4c1425d3.s_unitrigger_stub, &function_442fe4d3);
             }
-            var_4c1425d3.var_a705e738 = var_a705e738;
-            var_a705e738 clientfield::set("" + #"hash_4be2ce4248d80d22", 1);
+            var_4c1425d3.mdl_spark = mdl_spark;
+            mdl_spark clientfield::set("" + #"hash_4be2ce4248d80d22", 1);
         }
         level waittill(#"between_round_over");
         var_20ca90ea = struct::get_array("afterlife_trigger");
@@ -1253,8 +1253,8 @@ function function_f5a3ba79() {
             if (isdefined(var_4c1425d3.s_unitrigger_stub)) {
                 zm_unitrigger::unregister_unitrigger(var_4c1425d3.s_unitrigger_stub);
             }
-            if (isdefined(var_4c1425d3.var_a705e738)) {
-                var_4c1425d3.var_a705e738 delete();
+            if (isdefined(var_4c1425d3.mdl_spark)) {
+                var_4c1425d3.mdl_spark delete();
             }
         }
     }
@@ -1286,8 +1286,8 @@ function function_442fe4d3() {
             break;
         }
     }
-    if (isdefined(self.stub.related_parent.var_a705e738)) {
-        self.stub.related_parent.var_a705e738 delete();
+    if (isdefined(self.stub.related_parent.mdl_spark)) {
+        self.stub.related_parent.mdl_spark delete();
     }
     zm_unitrigger::unregister_unitrigger(self.stub);
 }
@@ -1369,10 +1369,10 @@ function function_ed96eb60(e_activator) {
             var_1da0aee8 = getent("mdl_walnut_teleporter_2", "targetname");
             var_e52414d4 = getent("mdl_walnut_teleporter_1", "targetname");
         }
-        var_a705e738 = util::spawn_model("tag_origin", self.origin, self.angles);
+        mdl_spark = util::spawn_model("tag_origin", self.origin, self.angles);
         playsoundatposition(#"wpn_zmb_electrap_zap", self.origin);
         waitframe(2);
-        var_a705e738 clientfield::increment("" + #"hash_ce418c45d804842");
+        mdl_spark clientfield::increment("" + #"hash_ce418c45d804842");
         e_activator playrumbleonentity(#"zm_escape_walnut");
         var_1da0aee8 setmodel(#"p8_zm_esc_teleporter_device_off");
         if (self.targetname == "walnut_teleporter_01") {
@@ -1382,19 +1382,19 @@ function function_ed96eb60(e_activator) {
         }
         level.var_1a50fe78++;
         wait 2;
-        var_a705e738 delete();
+        mdl_spark delete();
         if (level.var_1a50fe78 < 3) {
-            var_a705e738 = util::spawn_model("tag_origin", var_3d454522.origin, var_3d454522.angles);
+            mdl_spark = util::spawn_model("tag_origin", var_3d454522.origin, var_3d454522.angles);
             playsoundatposition(#"wpn_zmb_electrap_zap", var_3d454522.origin);
             waitframe(2);
-            var_a705e738 clientfield::increment("" + #"hash_ce418c45d804842");
+            mdl_spark clientfield::increment("" + #"hash_ce418c45d804842");
             if (self.targetname == "walnut_teleporter_01") {
                 showmiscmodels("walnut_02");
             } else if (self.targetname == "walnut_teleporter_02") {
                 showmiscmodels("walnut_01");
             }
             wait 5;
-            var_a705e738 delete();
+            mdl_spark delete();
             wait 25;
             var_e52414d4 setmodel(#"p8_zm_esc_teleporter_device");
             var_3d454522.var_623f6a70 = 1;

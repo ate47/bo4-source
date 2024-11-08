@@ -144,8 +144,8 @@ function function_4e782d34(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     if (isdefined(self.var_dd761cc9)) {
-        stopfx(localclientnum, self.var_6f41492);
-        self.var_6f41492 = undefined;
+        stopfx(localclientnum, self.fx_pickup_glow);
+        self.fx_pickup_glow = undefined;
     }
 }
 

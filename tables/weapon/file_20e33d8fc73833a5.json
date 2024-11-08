@@ -1,7 +1,7 @@
 {
     "name": "#hash_20e33d8fc73833a5",
     "baseWeapon": "#molotov_fire_wall",
-    "displayname": "#hash_33fc08c2de8f6c8d",
+    "displayname": "#weapon/incendiary_grenade",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

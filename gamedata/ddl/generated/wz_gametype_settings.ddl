@@ -569,7 +569,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -1352,7 +1352,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -2134,7 +2134,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -2914,7 +2914,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -3692,7 +3692,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -4470,7 +4470,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -5248,7 +5248,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -6024,7 +6024,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -6795,7 +6795,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -7565,7 +7565,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -8333,7 +8333,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -9102,7 +9102,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -9869,7 +9869,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -10635,7 +10635,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -11398,7 +11398,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -12160,7 +12160,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -12920,7 +12920,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -13680,7 +13680,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -14439,7 +14439,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -15196,7 +15196,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -15952,7 +15952,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -16707,7 +16707,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -17461,7 +17461,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -18213,7 +18213,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -18963,7 +18963,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -19713,7 +19713,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -20463,7 +20463,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -21212,7 +21212,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -21960,7 +21960,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -22706,7 +22706,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -23451,7 +23451,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -24195,7 +24195,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -24938,7 +24938,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -25680,7 +25680,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -26421,7 +26421,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -27160,7 +27160,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -27898,7 +27898,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -28629,7 +28629,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;
@@ -29359,7 +29359,7 @@ struct gametypesettings {
     bit hash_4bdd1bd86b610871;
     bit wzenablemotorcycle;
     bit hash_17f17e92c2654659;
-    bit hash_5408e974098bc234;
+    bit wzenableraygunmark2variants;
     bit wzenablespectregrenade;
     bit hash_7226479da761e69d;
     bit hash_76c2c603f164eb31;

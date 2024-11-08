@@ -3016,7 +3016,7 @@ function private function_4885ce1(params) {
     state = self vehicle_ai::get_current_state();
     if (state === "driving") {
         player = self getseatoccupant(0);
-        if (!isdefined(player) || !player function_6947dde2()) {
+        if (!isdefined(player) || !player vehiclemovedownbuttonpressed()) {
             return;
         }
         move = player getnormalizedmovement();

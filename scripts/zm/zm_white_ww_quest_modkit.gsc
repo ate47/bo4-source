@@ -48,7 +48,7 @@ function init() {
 // Checksum 0x8c8828cb, Offset: 0x618
 // Size: 0x130
 function function_456e91dd() {
-    a_w_parts = array(getweapon(#"hash_eb070d4a71cdba8"), getweapon(#"hash_eb073d4a71ce0c1"), getweapon(#"hash_eb072d4a71cdf0e"));
+    a_w_parts = array(getweapon(#"zitem_white_ww_modkit_part_1"), getweapon(#"zitem_white_ww_modkit_part_2"), getweapon(#"zitem_white_ww_modkit_part_3"));
     a_e_items = getitemarray();
     foreach (e_item in a_e_items) {
         if (isinarray(a_w_parts, e_item.item)) {

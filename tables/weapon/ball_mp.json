@@ -1,7 +1,7 @@
 {
     "name": "#ball_mp",
     "baseWeapon": "#ball",
-    "displayname": "#hash_122c21f52bcb5bfb",
+    "displayname": "#weapon/ball",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

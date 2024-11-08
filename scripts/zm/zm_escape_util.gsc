@@ -281,7 +281,7 @@ function function_8164716a() {
                 break;
             }
         }
-        if (zm_items::player_has(level.players[0], zm_crafting::get_component(#"hash_1e5657f6a6f09389"))) {
+        if (zm_items::player_has(level.players[0], zm_crafting::get_component(#"zitem_spectral_shield_part_3"))) {
             level flag::set(#"hash_7039457b1cc827de");
             break;
         }
@@ -296,7 +296,7 @@ function function_8164716a() {
 function function_2def6c82() {
     a_mdl_parts = getitemarray();
     foreach (mdl_part in a_mdl_parts) {
-        if (mdl_part.item == getweapon(#"hash_1e5656f6a6f091d6")) {
+        if (mdl_part.item == getweapon(#"zitem_spectral_shield_part_2")) {
             mdl_part clientfield::set("" + #"hash_76662556681a502c", 1);
         }
     }

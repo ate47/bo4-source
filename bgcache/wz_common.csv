@@ -4559,7 +4559,7 @@ weapon,hash_55842a0f98605a32,2a889046628
 weapon,hash_56ab98b062adb7f5,2a8891d8a88
 weapon,hash_56c80303c0a5a587,2a889163708
 weapon,hash_5908bed1355cbb74,2a8891377b8
-weapon,hash_5989367244ae779c,2a88912cd38
+weapon,pistol_revolver_t8_gold_wz,2a88912cd38
 weapon,lmg_heavy_t8_wz,2a888f87e78
 weapon,melee_actionfigure_t8_wz,2a888f893c8
 weapon,hero_annihilator_wz,2a8890ba458
@@ -12079,7 +12079,7 @@ string,hash_337772a447c34221,0
 string,hash_3388e9e4797ab68d,0
 string,hash_33c5a3d6ed967788,0
 string,hash_33f013eacb53964c,0
-string,hash_33fc08c2de8f6c8d,0
+string,weapon/incendiary_grenade,0
 string,hash_34f83c239da58b2d,0
 string,hash_350931f36a825309,0
 string,mpui/quickdraw2,0
@@ -12205,7 +12205,7 @@ string,hash_4f23c6ecb321fa19,0
 string,weapon/sniper_powerbolt_t8,0
 string,hash_502cca55de20d536,0
 string,hash_5034ceace0cadfe5,0
-string,hash_504ad2d8233fb0ac,0
+string,weapon/sensor_dart,0
 string,hash_506621193b404166,0
 string,hash_5071aa2f1fc20b4c,0
 string,hash_5082acdba9528232,0
@@ -14340,7 +14340,7 @@ soundalias,hash_b5d38e417eb9b05,0
 soundalias,hash_b5d4175764d36d0,0
 soundalias,hash_b5f77ef0f4433e9,0
 soundalias,hash_b622e0efec68c8a,0
-soundalias,hash_b63902d771b1953,0
+soundalias,evt_annihilation,0
 soundalias,hash_b63e141745958fc,0
 soundalias,hash_b66e9db19666cdb,0
 soundalias,hash_b68ba0c394c7750,0

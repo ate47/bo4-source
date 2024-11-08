@@ -1,7 +1,7 @@
 {
     "name": "#hash_68aa9e4957c38ccc",
     "baseWeapon": "#hash_5624a55eb03372d0",
-    "displayname": "#hash_33fc08c2de8f6c8d",
+    "displayname": "#weapon/incendiary_grenade",
     "sessionMode": "warzone",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

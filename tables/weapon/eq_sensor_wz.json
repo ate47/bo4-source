@@ -1,7 +1,7 @@
 {
     "name": "#eq_sensor_wz",
     "baseWeapon": "#eq_sensor",
-    "displayname": "#hash_504ad2d8233fb0ac",
+    "displayname": "#weapon/sensor_dart",
     "sessionMode": "warzone",
     "itemIndex": 86,
     "dualWieldWeaponIndex": 0,

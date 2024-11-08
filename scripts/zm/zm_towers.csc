@@ -45,8 +45,8 @@ function event_handler[level_init] main(eventstruct) {
     clientfield::register("scriptmover", "entry_gate_dust", 1, 1, "int", &function_ce727843, 0, 0);
     clientfield::register("scriptmover", "zombie_head_pickup_glow", 1, 1, "int", &function_b675c8b2, 0, 0);
     clientfield::register("scriptmover", "blue_glow", 1, 1, "int", &toggle_blue_glow, 0, 0);
-    clientfield::register("scriptmover", "" + #"chaos_ball", 1, 1, "int", &function_f3866f6b, 0, 0);
-    clientfield::register("scriptmover", "sentinel_artifact_fx_mist", 1, 1, "int", &function_46125384, 0, 0);
+    clientfield::register("scriptmover", "" + #"chaos_ball", 1, 1, "int", &toggle_chaos_ball, 0, 0);
+    clientfield::register("scriptmover", "sentinel_artifact_fx_mist", 1, 1, "int", &toggle_sentinel_artifact_mist_fx, 0, 0);
     clientfield::register("allplayers", "force_pap_models", 1, 1, "int", &function_5eaabec, 0, 1);
     clientfield::register("world", "special_round_smoke", 1, 1, "int", &function_94675baf, 0, 0);
     clientfield::register("allplayers", "special_round_camera", 1, 2, "int", &special_round_camera_fx, 0, 1);
@@ -589,7 +589,7 @@ function toggle_blue_glow(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Params 7, eflags: 0x1 linked
 // Checksum 0x8ff53f7f, Offset: 0x4f30
 // Size: 0xbe
-function function_f3866f6b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function toggle_chaos_ball(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_9f5d50f5 = util::playfxontag(localclientnum, level._effect[#"chaos_ball"], self, "tag_origin");
         return;
@@ -619,7 +619,7 @@ function function_fd119bd7(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xa770fef7, Offset: 0x50c0
 // Size: 0xbe
-function function_46125384(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function toggle_sentinel_artifact_mist_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_c1713f0a = util::playfxontag(localclientnum, level._effect[#"hash_73172b799c18404e"], self, "tag_origin");
         return;
@@ -1097,8 +1097,8 @@ function function_21a2fea4(localclientnum, var_a0d24aa6) {
         var_5babe62d = randomintrange(1, 4);
     }
     foreach (s_struct in a_structs) {
-        var_1f2066a = s_struct.script_string;
-        playsound(localclientnum, "mus_crowd_" + var_1f2066a + var_ffc05b22 + var_5babe62d, s_struct.origin);
+        str_instrument = s_struct.script_string;
+        playsound(localclientnum, "mus_crowd_" + str_instrument + var_ffc05b22 + var_5babe62d, s_struct.origin);
         waitframe(1);
     }
 }
@@ -1143,14 +1143,14 @@ function function_ba9941c(localclientnum, newval) {
     a_structs = struct::get_array("mus_crowd", "targetname");
     if (newval == 14) {
         foreach (s_struct in a_structs) {
-            var_1f2066a = s_struct.script_string;
-            playsound(localclientnum, "mus_crowd_" + var_1f2066a + "_special_start", s_struct.origin);
+            str_instrument = s_struct.script_string;
+            playsound(localclientnum, "mus_crowd_" + str_instrument + "_special_start", s_struct.origin);
             waitframe(1);
         }
         wait 6.3;
         foreach (s_struct in a_structs) {
-            var_1f2066a = s_struct.script_string;
-            audio::playloopat("mus_crowd_" + var_1f2066a + "_special_loop", s_struct.origin);
+            str_instrument = s_struct.script_string;
+            audio::playloopat("mus_crowd_" + str_instrument + "_special_loop", s_struct.origin);
             waitframe(1);
         }
         if (isdefined(level.var_a46ee0d5) && level.var_a46ee0d5) {
@@ -1166,11 +1166,11 @@ function function_ba9941c(localclientnum, newval) {
     }
     if (newval == 15 || newval == 16) {
         foreach (s_struct in a_structs) {
-            var_1f2066a = s_struct.script_string;
+            str_instrument = s_struct.script_string;
             if (newval == 15) {
-                playsound(localclientnum, "mus_crowd_" + var_1f2066a + "_special_end", s_struct.origin);
+                playsound(localclientnum, "mus_crowd_" + str_instrument + "_special_end", s_struct.origin);
             }
-            audio::stoploopat("mus_crowd_" + var_1f2066a + "_special_loop", s_struct.origin);
+            audio::stoploopat("mus_crowd_" + str_instrument + "_special_loop", s_struct.origin);
             waitframe(1);
         }
         if (isdefined(level.var_a46ee0d5) && level.var_a46ee0d5) {
@@ -1190,27 +1190,27 @@ function function_f68a332e(localclientnum, var_12ae4a7b) {
     if (var_12ae4a7b) {
         wait 4;
         foreach (s_struct in a_structs) {
-            var_1f2066a = s_struct.script_string;
-            playsound(localclientnum, "mus_crowd_" + var_1f2066a + "_boss_start", s_struct.origin);
+            str_instrument = s_struct.script_string;
+            playsound(localclientnum, "mus_crowd_" + str_instrument + "_boss_start", s_struct.origin);
             waitframe(1);
         }
         wait 4.8;
         foreach (s_struct in a_structs) {
-            var_1f2066a = s_struct.script_string;
-            audio::playloopat("mus_crowd_" + var_1f2066a + "_boss_loop", s_struct.origin);
+            str_instrument = s_struct.script_string;
+            audio::playloopat("mus_crowd_" + str_instrument + "_boss_loop", s_struct.origin);
             waitframe(1);
         }
         return;
     }
     foreach (s_struct in a_structs) {
-        var_1f2066a = s_struct.script_string;
-        playsound(localclientnum, "mus_crowd_" + var_1f2066a + "_boss_end", s_struct.origin);
+        str_instrument = s_struct.script_string;
+        playsound(localclientnum, "mus_crowd_" + str_instrument + "_boss_end", s_struct.origin);
         waitframe(1);
     }
     wait 1;
     foreach (s_struct in a_structs) {
-        var_1f2066a = s_struct.script_string;
-        audio::stoploopat("mus_crowd_" + var_1f2066a + "_boss_loop", s_struct.origin);
+        str_instrument = s_struct.script_string;
+        audio::stoploopat("mus_crowd_" + str_instrument + "_boss_loop", s_struct.origin);
         waitframe(1);
     }
 }

@@ -446,7 +446,7 @@ function autoexec function_45a212c0() {
     if (!(isdefined(getgametypesetting(#"wzenabledeathoforion")) && getgametypesetting(#"wzenabledeathoforion"))) {
         wz_common_fixup::item_remover(var_a12b4736, var_87d0eef8, #"death_of_orion_t8_item");
     }
-    if (!(isdefined(getgametypesetting(#"hash_5408e974098bc234")) && getgametypesetting(#"hash_5408e974098bc234"))) {
+    if (!(isdefined(getgametypesetting(#"wzenableraygunmark2variants")) && getgametypesetting(#"wzenableraygunmark2variants"))) {
         wz_common_fixup::item_remover(var_a12b4736, var_87d0eef8, #"ray_gun_mk2x_t8_item");
         wz_common_fixup::item_remover(var_a12b4736, var_87d0eef8, #"ray_gun_mk2y_t8_item");
         wz_common_fixup::item_remover(var_a12b4736, var_87d0eef8, #"ray_gun_mk2z_t8_item");

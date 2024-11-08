@@ -228,9 +228,9 @@ function event_handler[level_init] main(eventstruct) {
     getweapon(#"zitem_silver_bullet_part_1").var_62a98b13 = #"charcoal";
     getweapon(#"zitem_silver_bullet_part_2").var_62a98b13 = #"guano";
     getweapon(#"zitem_silver_bullet_part_3").var_62a98b13 = #"sulfur";
-    getweapon(#"hash_11ae647a1f0d9704").var_25bb96cc = #"hash_70ba93e662197328";
-    getweapon(#"hash_11ae677a1f0d9c1d").var_25bb96cc = #"hash_70ba93e662197328";
-    getweapon(#"hash_11ae667a1f0d9a6a").var_25bb96cc = #"hash_70ba93e662197328";
+    getweapon(#"zitem_silver_molten_part_1").var_25bb96cc = #"hash_70ba93e662197328";
+    getweapon(#"zitem_silver_molten_part_2").var_25bb96cc = #"hash_70ba93e662197328";
+    getweapon(#"zitem_silver_molten_part_3").var_25bb96cc = #"hash_70ba93e662197328";
     getweapon(#"zitem_silver_bullet_part_1").var_25bb96cc = #"hash_69e071a8eb1f216e";
     getweapon(#"zitem_silver_bullet_part_2").var_25bb96cc = #"hash_b94435b24bcdaf7";
     getweapon(#"zitem_silver_bullet_part_3").var_25bb96cc = #"hash_7b5b4849016125ac";
@@ -447,9 +447,9 @@ function function_3bd89e18() {
 function function_fa17b8da() {
     var_8ef8659 = zm_crafting::get_component(#"zitem_silver_bullet_part_2");
     var_2631c53e = zm_crafting::get_component(#"zitem_silver_bullet_part_3");
-    var_602e9ffa = zm_crafting::get_component(#"hash_11ae647a1f0d9704");
-    var_725ec45a = zm_crafting::get_component(#"hash_11ae677a1f0d9c1d");
-    var_c970f275 = zm_crafting::get_component(#"hash_11ae667a1f0d9a6a");
+    var_602e9ffa = zm_crafting::get_component(#"zitem_silver_molten_part_1");
+    var_725ec45a = zm_crafting::get_component(#"zitem_silver_molten_part_2");
+    var_c970f275 = zm_crafting::get_component(#"zitem_silver_molten_part_3");
     foreach (a_item_spawns in level.item_spawns) {
         foreach (var_d1f8412f in a_item_spawns) {
             var_dae71351 = 0;

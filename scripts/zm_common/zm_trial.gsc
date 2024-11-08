@@ -332,7 +332,7 @@ function function_18b797ec() {
 // Checksum 0x75495dda, Offset: 0x1578
 // Size: 0xe
 function function_ba9853db() {
-    return level.var_df8480a0;
+    return level.trial_strikes;
 }
 
 // Namespace zm_trial/zm_trial
@@ -341,8 +341,8 @@ function function_ba9853db() {
 // Size: 0x6c
 function function_fe2ecb6(count) {
     assert(count >= 0 && count <= 3);
-    level.var_df8480a0 = count;
-    clientfield::set_world_uimodel("ZMHudGlobal.trials.strikes", level.var_df8480a0);
+    level.trial_strikes = count;
+    clientfield::set_world_uimodel("ZMHudGlobal.trials.strikes", level.trial_strikes);
 }
 
 // Namespace zm_trial/zm_trial

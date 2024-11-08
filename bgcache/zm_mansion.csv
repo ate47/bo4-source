@@ -1159,7 +1159,7 @@ xmodelalias,hash_2a9633190b2b12c6,294cf044f20
 xmodelalias,hash_612e15b05a54b6c5,294cf044be0
 xmodelalias,hash_675d196ace257446,294cf045260
 weapon,zhield_dw_zm,294cdbe8ec8
-weapon,hash_13188921c711b031,294cdb93ac8
+weapon,zitem_rocketshield_part_2_zm,294cdb93ac8
 weapon,stake_knife_zm,294cdb81068
 weapon,hash_1783057563ce1ca2,294cdbc8f48
 weapon,hash_18df25a269d0417f,294cdb7d078
@@ -1169,10 +1169,10 @@ weapon,hash_2ab63008299706dc,294cdb45158
 weapon,zhield_lh_zm,294cdcfb528
 weapon,hash_300b5026595febfd,294cdbe3988
 weapon,hash_35471ac6392c871f,294cdb650d8
-weapon,hash_356d84033a052424,294cdbc24b8
-weapon,hash_3948c811380fcd46,294cdb7fb18
+weapon,zitem_silver_molten_part_1_zm,294cdbc24b8
+weapon,zitem_silver_molten_part_3_zm,294cdb7fb18
 weapon,hash_39c9e53910c6e402,294cdbcb9e8
-weapon,hash_3ce9451a2bd662e4,294cdcef558
+weapon,zitem_rocketshield_part_3_zm,294cdcef558
 weapon,hash_3e43a30cffbde52d,294cdbea418
 weapon,buildable_piece_zm,294cdbf23f8
 weapon,hash_3fabe38d02a0f4ba,294cdbdf998
@@ -1190,9 +1190,9 @@ weapon,hash_61612e3e819376de,294cdc9a158
 weapon,hash_61bd2dddf7c9dbc2,294cdbe7978
 weapon,hash_62121eddf8120244,294cdb6d0b8
 weapon,hash_62d2ea43a8cf6113,294cdb865a8
-weapon,hash_6435a41b474a98db,294cdb99008
+weapon,zitem_silver_molten_part_2_zm,294cdb99008
 weapon,zombie_ai_defaultmelee,294cdcc20b8
-weapon,hash_6a40892d11e16a06,294cdcf5fe8
+weapon,zitem_rocketshield_part_1_zm,294cdcf5fe8
 weapon,blight_father_melee,294cdb97ab8
 weapon,hash_7194c5a34e898833,294cdbd39c8
 weapon,zitem_silver_bullet_part_3_zm,294cdb4d138

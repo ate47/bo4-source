@@ -143,7 +143,7 @@ function is_grief() {
 // Params 6, eflags: 0x1 linked
 // Checksum 0xa99d7c79, Offset: 0xa40
 // Size: 0xfa
-function function_d6046228(var_67441581, var_756ee4e5, var_bcb9de3e, var_299ea954, str_trials, var_1e31f083) {
+function function_d6046228(str_classic, var_756ee4e5, var_bcb9de3e, var_299ea954, str_trials, var_1e31f083) {
     if (is_trials()) {
         if (function_8b1a219a() && isdefined(var_1e31f083)) {
             return var_1e31f083;
@@ -160,7 +160,7 @@ function function_d6046228(var_67441581, var_756ee4e5, var_bcb9de3e, var_299ea95
     if (function_8b1a219a() && isdefined(var_756ee4e5)) {
         return var_756ee4e5;
     }
-    return var_67441581;
+    return str_classic;
 }
 
 // Namespace zm_utility/zm_utility

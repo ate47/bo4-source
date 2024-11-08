@@ -4,7 +4,7 @@
 
 #namespace music_box;
 
-// Namespace music_box/namespace_72079786
+// Namespace music_box/zm_equip_music_box
 // Params 0, eflags: 0x2
 // Checksum 0x5fe15137, Offset: 0x190
 // Size: 0x3c
@@ -12,7 +12,7 @@ function autoexec __init__system__() {
     system::register(#"music_box", &__init__, undefined, undefined);
 }
 
-// Namespace music_box/namespace_72079786
+// Namespace music_box/zm_equip_music_box
 // Params 0, eflags: 0x1 linked
 // Checksum 0x56ab8783, Offset: 0x1d8
 // Size: 0x10c
@@ -22,7 +22,7 @@ function __init__() {
     clientfield::register("actor", "" + #"hash_4881cb6bc59fdc49", 24000, 1, "int", &function_e722a4fd, 0, 0);
 }
 
-// Namespace music_box/namespace_72079786
+// Namespace music_box/zm_equip_music_box
 // Params 7, eflags: 0x0
 // Checksum 0xb66b7fb4, Offset: 0x2f0
 // Size: 0x17e
@@ -50,7 +50,7 @@ function function_3224694(localclientnum, oldval, newval, bnewent, binitialsnap,
     }
 }
 
-// Namespace music_box/namespace_72079786
+// Namespace music_box/zm_equip_music_box
 // Params 7, eflags: 0x0
 // Checksum 0x122cbfc5, Offset: 0x478
 // Size: 0x6c
@@ -60,7 +60,7 @@ function function_7ee98254(localclientnum, oldval, newval, bnewent, binitialsnap
     }
 }
 
-// Namespace music_box/namespace_72079786
+// Namespace music_box/zm_equip_music_box
 // Params 7, eflags: 0x1 linked
 // Checksum 0x55884b70, Offset: 0x4f0
 // Size: 0xbe
@@ -79,7 +79,7 @@ function function_67fa988c(localclientnum, oldval, newval, bnewent, binitialsnap
     }
 }
 
-// Namespace music_box/namespace_72079786
+// Namespace music_box/zm_equip_music_box
 // Params 7, eflags: 0x1 linked
 // Checksum 0x8ca37175, Offset: 0x5b8
 // Size: 0xd4
@@ -95,7 +95,7 @@ function function_9c964ccc(localclientnum, oldval, newval, bnewent, binitialsnap
     }
 }
 
-// Namespace music_box/namespace_72079786
+// Namespace music_box/zm_equip_music_box
 // Params 7, eflags: 0x1 linked
 // Checksum 0xe1c370d, Offset: 0x698
 // Size: 0xbe

@@ -20,8 +20,8 @@ function autoexec __init__system__() {
 // Checksum 0x3913ac70, Offset: 0x1a8
 // Size: 0x44a
 function __init__() {
-    clientfield::register("scriptmover", "" + #"aoe_indicator", 16000, 1, "counter", &function_60d8c392, 0, 0);
-    clientfield::register("scriptmover", "" + #"electric_storm", 16000, 1, "int", &function_83e58cf4, 0, 0);
+    clientfield::register("scriptmover", "" + #"aoe_indicator", 16000, 1, "counter", &aoe_indicator_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"electric_storm", 16000, 1, "int", &electric_storm_fx, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_7006a7d528a6f05c", 16000, 3, "int", &function_6e837718, 0, 0);
     clientfield::register("actor", "" + #"hash_51b05e5d116438a9", 16000, 3, "int", &function_46a56fe2, 0, 0);
     clientfield::register("actor", "" + #"hash_561a1fd86bc1a53a", 16000, 1, "int", &function_ab086ad8, 0, 0);
@@ -72,7 +72,7 @@ function function_ab086ad8(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xf5375a65, Offset: 0x7a0
 // Size: 0x74
-function function_60d8c392(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function aoe_indicator_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self util::playfxontag(localclientnum, level._effect[#"aoe_marker"], self, "tag_origin");
 }
 
@@ -80,7 +80,7 @@ function function_60d8c392(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x14077d6e, Offset: 0x820
 // Size: 0x10a
-function function_83e58cf4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function electric_storm_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     switch (newval) {
     case 0:
         if (isdefined(self.var_d00cf6ff)) {

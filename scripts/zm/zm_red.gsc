@@ -1245,11 +1245,11 @@ function function_ea8d45ef(a_ents) {
 // Size: 0x10c
 function function_625a9bcf() {
     level zm_audio::function_6191af93(#"shield_piece", #"pickup", "", "");
-    w_component = zm_crafting::get_component(#"hash_fb7df72cfdf8492");
+    w_component = zm_crafting::get_component(#"zitem_zhield_zpear_part_1");
     zm_items::function_4d230236(w_component, &function_a3fd9b43);
-    w_component = zm_crafting::get_component(#"hash_fb7de72cfdf82df");
+    w_component = zm_crafting::get_component(#"zitem_zhield_zpear_part_2");
     zm_items::function_4d230236(w_component, &function_3fbc19fb);
-    w_component = zm_crafting::get_component(#"hash_fb7dd72cfdf812c");
+    w_component = zm_crafting::get_component(#"zitem_zhield_zpear_part_3");
     zm_items::function_4d230236(w_component, &function_9f645f7);
 }
 
@@ -1282,11 +1282,11 @@ function function_9f645f7(e_holder, w_item) {
 // Checksum 0x7e760e68, Offset: 0x6040
 // Size: 0xb6
 function function_8f72e6b8() {
-    w_component = zm_crafting::get_component(#"hash_5b9dc0415a4521f3");
+    w_component = zm_crafting::get_component(#"zitem_red_strike_part_1");
     w_component.var_62a98b13 = #"anvil_brontes";
-    w_component = zm_crafting::get_component(#"hash_5b9dc1415a4523a6");
+    w_component = zm_crafting::get_component(#"zitem_red_strike_part_2");
     w_component.var_62a98b13 = #"hammer_arges";
-    w_component = zm_crafting::get_component(#"hash_5b9dc2415a452559");
+    w_component = zm_crafting::get_component(#"zitem_red_strike_part_3");
     w_component.var_62a98b13 = #"hash_2ac16e115b8e401a";
 }
 

@@ -840,15 +840,15 @@ function water_init() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x8683d2d0, Offset: 0x53e8
 // Size: 0x224
-function function_ea9f953(var_fad7ef6a = 1, var_3e58f0ee = 1) {
-    if (var_fad7ef6a) {
+function function_ea9f953(b_fore = 1, b_aft = 1) {
+    if (b_fore) {
         t_use_water_pump_fore = getent("t_use_water_pump_fore", "targetname");
         var_52a797c0 = struct::get("water_pump_fore", "targetname");
         var_52a797c0 scene::play(#"p8_fxanim_zm_zod_water_pump_bundle", "end");
         level thread function_b0a7ca7(t_use_water_pump_fore, var_52a797c0, level.e_clip_water_fore, "water_drained_fore", 40, level.var_1b85943e, -1.5, "fxexp_ambient_drain_cargo", "exp_lgt_underwater_cargo", "sfx_waterdrain_fore");
         level exploder::exploder("exp_lgt_underwater_cargo");
     }
-    if (var_3e58f0ee) {
+    if (b_aft) {
         t_use_water_pump_aft = getent("t_use_water_pump_aft", "targetname");
         var_a3423419 = struct::get("water_pump_aft", "targetname");
         var_a3423419 scene::play(#"p8_fxanim_zm_zod_water_pump_bundle", "end");

@@ -65,7 +65,7 @@ function init_level_vars() {
     zm_round_spawning::function_2876740e(#"stoker", &function_c3b9a076);
     zm_round_spawning::function_2876740e(#"blight_father", &function_30cd3df);
     zm_round_spawning::function_2876740e(#"catalyst", &function_dbf2f421);
-    level thread zm_crafting::function_ca244624(#"hash_6f259b259997271a");
+    level thread zm_crafting::function_ca244624(#"zblueprint_zod_tricannon_upgrade");
     callback::on_spawned(&function_944ac830);
 }
 

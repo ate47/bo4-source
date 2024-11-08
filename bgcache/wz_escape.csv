@@ -1158,7 +1158,7 @@ weapon,hash_56c80303c0a5a587,2a889163708
 weapon,flare_gun_wz,2a889055098
 weapon,ar_galil_t8_wz,2a888f82938
 weapon,hash_5908bed1355cbb74,2a8891377b8
-weapon,hash_5989367244ae779c,2a88912cd38
+weapon,pistol_revolver_t8_gold_wz,2a88912cd38
 weapon,lmg_heavy_t8_wz,2a888f87e78
 weapon,melee_actionfigure_t8_wz,2a888f893c8
 weapon,hero_annihilator_wz,2a8890ba458
@@ -7372,7 +7372,7 @@ string,hash_4f23c6ecb321fa19,0
 string,weapon/sniper_powerbolt_t8,0
 string,hash_502cca55de20d536,0
 string,hash_5034ceace0cadfe5,0
-string,hash_504ad2d8233fb0ac,0
+string,weapon/sensor_dart,0
 string,hash_506621193b404166,0
 string,hash_5071aa2f1fc20b4c,0
 string,hash_50acb81dbe07fbfe,0

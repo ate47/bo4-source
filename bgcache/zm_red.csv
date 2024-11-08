@@ -999,7 +999,7 @@ xmodelalias,hash_3e8b51671f06b5d0,294cf0450c0
 xmodelalias,hash_532027e580429777,294cf045260
 xmodelalias,hash_612e15b05a54b6c5,294cf044be0
 xmodelalias,hash_7f231dad1f762070,294cf045400
-weapon,hash_926e91ff5b89775,294cdb5d0f8
+weapon,zitem_red_strike_part_1_zm,294cdb5d0f8
 weapon,hash_cefc023f78e833b,294cdb8fad8
 weapon,hash_1371d83fac514d34,294cdcca098
 weapon,ww_hand_c_upgraded_zm,294cdb650d8
@@ -1019,12 +1019,12 @@ weapon,zhield_zpear_lh_zm,294cdb6d0b8
 weapon,hash_479f8de44d618b68,294cdbce488
 weapon,ww_hand_o_zm,294cdbc4f58
 weapon,ww_hand_g_upgraded_zm,294cdb6a618
-weapon,hash_52f3a2b4a892382e,294cdb690c8
+weapon,zitem_zhield_zpear_part_1_zm,294cdb690c8
 weapon,ww_hand_g_zm,294cdcf4a98
 weapon,riotshield_zm,294cdb51128
 weapon,hash_5998a631b4da4974,294cdcf1ff8
-weapon,hash_6017e92b40590eda,294cdcfb528
-weapon,hash_6189a5306794f90f,294cdb610e8
+weapon,zitem_red_strike_part_2_zm,294cdcfb528
+weapon,zitem_red_strike_part_3_zm,294cdb610e8
 weapon,ww_hand_o_uncharged_zm,294cdcf3548
 weapon,hash_63f23229c38b7e13,294cdb93ac8
 weapon,ww_hand_c_uncharged_zm,294cdb7fb18
@@ -1035,8 +1035,8 @@ weapon,ww_hand_o_upgraded_zm,294cdbdf998
 weapon,ww_hand_g_uncharged_zm,294cdbccf38
 weapon,ww_hand_h_upgraded_zm,294cdbd39c8
 weapon,ww_hand_h_zm,294cdbee408
-weapon,hash_7a5abea43688032c,294cdbd4f18
-weapon,hash_7f3282a960a723f9,294cdd00a68
+weapon,zitem_zhield_zpear_part_3_zm,294cdbd4f18
+weapon,zitem_zhield_zpear_part_2_zm,294cdd00a68
 gesture,hash_1ec9e66bcf52e6f,294cd8ba228
 gesture,hash_c9191ad04ac315e,294cd8d9df8
 gesture,hash_e88f702b7e4b63b,294cd8bb470

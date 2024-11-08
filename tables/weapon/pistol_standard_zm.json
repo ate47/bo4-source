@@ -1,7 +1,7 @@
 {
     "name": "#pistol_standard_zm",
     "baseWeapon": "#pistol_standard",
-    "displayname": "#hash_4531a58b5628609b",
+    "displayname": "#weapon/pistol_standard",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

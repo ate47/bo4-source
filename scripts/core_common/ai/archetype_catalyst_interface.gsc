@@ -8,6 +8,6 @@
 // Checksum 0x8ec5a080, Offset: 0x88
 // Size: 0x6c
 function registercatalystinterfaceattributes() {
-    ai::registermatchedinterface(#"catalyst", #"gravity", "normal", array("low", "normal"), &zombiebehavior::function_db26137a);
+    ai::registermatchedinterface(#"catalyst", #"gravity", "normal", array("low", "normal"), &zombiebehavior::zombiegravity);
 }
 

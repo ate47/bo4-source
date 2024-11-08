@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "equipment_seekermine_restriction",
-    "displayname": "#hash_796ecbec9ffbdcd",
+    "displayname": "#weapon/seeker_mine",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

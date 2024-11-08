@@ -1,7 +1,7 @@
 {
     "name": "#concussion_grenade_mp",
     "baseWeapon": "#concussion_grenade",
-    "displayname": "#hash_7cf054cda28390c7",
+    "displayname": "#weapon/stun_grenade",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

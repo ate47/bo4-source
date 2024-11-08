@@ -353,7 +353,7 @@ function propinputwatch() {
             continue;
         }
         if (msg == "spin") {
-            self function_9bc7ac53();
+            self propspin();
             continue;
         }
         if (msg == "changeProp") {
@@ -397,7 +397,7 @@ function proplockunlock() {
 // Params 0, eflags: 0x0
 // Checksum 0x8658091d, Offset: 0x15f8
 // Size: 0xd4
-function function_9bc7ac53() {
+function propspin() {
     self.propent unlink();
     self.propent.angles += (0, 45, 0);
     self.propent.origin = self.propanchor.origin;

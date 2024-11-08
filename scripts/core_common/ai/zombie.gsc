@@ -1559,7 +1559,7 @@ function private function_cbbae5cb(entity, mocompanim, mocompanimblendouttime, m
 // Params 4, eflags: 0x0
 // Checksum 0xd02d9dbb, Offset: 0x6580
 // Size: 0x11c
-function function_db26137a(entity, attribute, oldvalue, value) {
+function zombiegravity(entity, attribute, oldvalue, value) {
     if (value == "low") {
         self.low_gravity = 1;
         if (!isdefined(self.low_gravity_variant) && isdefined(level.var_d9ffddf4)) {

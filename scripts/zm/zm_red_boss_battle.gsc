@@ -1566,12 +1566,12 @@ function function_4a58a0(e_perseus) {
     } else {
         e_perseus.var_cd1eedcd--;
     }
-    level thread function_bc717eee(v_destination);
+    level thread perseus_teleport_fx(v_destination);
     e_perseus scene::play(#"aib_vign_cust_zm_red_boss1_stg3_teleport_start_01", level.s_boss_battle.var_d82d0e73);
     e_perseus.origin = v_destination;
     e_perseus.angles = s_target.angles;
     level thread function_766fb0b1(e_perseus.origin);
-    level thread function_bc717eee((20323.7, 21819.1, 1419.25));
+    level thread perseus_teleport_fx((20323.7, 21819.1, 1419.25));
     e_perseus scene::play(#"hash_732e3b38ca890511", "start", level.s_boss_battle.var_d82d0e73);
     if (level.s_boss_battle.var_ad3f929f >= level.s_boss_battle.var_1e4f5dab) {
         level thread function_14833fc2();
@@ -2111,7 +2111,7 @@ function function_85593a2(v_point) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xc03d947c, Offset: 0x9760
 // Size: 0x224
-function function_bc717eee(v_destination) {
+function perseus_teleport_fx(v_destination) {
     e_sword = level.s_boss_battle.var_5e9e4c15;
     e_perseus = level.s_boss_battle.mdl_perseus;
     v_forward = anglestoforward(e_perseus.angles);
@@ -2265,12 +2265,12 @@ function function_1722dae1() {
     self endon(#"death");
     while (true) {
         s_waitresult = self waittill(#"aoe_damage");
-        if (s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt" || s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt_2") {
+        if (s_waitresult.str_source == "zm_aoe_chaos_bolt" || s_waitresult.str_source == "zm_aoe_chaos_bolt_2") {
             self status_effect::status_effect_apply(level.s_boss_battle.var_b42f3b39, undefined, level.s_boss_battle.mdl_perseus, 0, 3000);
             zm_hero_weapon::function_3fe4a02e(self, 50);
             continue;
         }
-        if (s_waitresult.var_159100b7 == "zm_aoe_strafe_storm") {
+        if (s_waitresult.str_source == "zm_aoe_strafe_storm") {
             self status_effect::status_effect_apply(level.s_boss_battle.var_86d9f46c);
             self clientfield::increment_to_player("" + #"hash_3bb8b5cda11eecc6");
         }

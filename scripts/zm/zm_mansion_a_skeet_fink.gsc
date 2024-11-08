@@ -487,18 +487,18 @@ function function_9bb74431(var_f0e6c7a2, ent) {
 // Checksum 0x151aea71, Offset: 0x27c8
 // Size: 0x104
 function function_ed59d8e4() {
-    var_d9d51621 = undefined;
-    while (!isdefined(var_d9d51621)) {
+    e_give_player = undefined;
+    while (!isdefined(e_give_player)) {
         a_players = util::get_active_players(#"allies");
         foreach (e_player in a_players) {
             if (zm_utility::can_use(e_player)) {
-                var_d9d51621 = e_player;
+                e_give_player = e_player;
                 break;
             }
         }
         waitframe(1);
     }
-    zm_items::player_pick_up(var_d9d51621, getweapon(#"hash_4aa70c9036cc210e"));
+    zm_items::player_pick_up(e_give_player, getweapon(#"hash_4aa70c9036cc210e"));
 }
 
 // Namespace mansion_a_skeet_fink/zm_mansion_a_skeet_fink

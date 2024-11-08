@@ -89,11 +89,11 @@ function init() {
 // Checksum 0x9a979a7d, Offset: 0x1060
 // Size: 0x13c
 function function_73808ab9(a_ents) {
-    var_f57bbec0 = a_ents[#"prop 1"];
+    mdl_brazier = a_ents[#"prop 1"];
     s_fx = struct::get(#"hash_495fb43788e05676");
     mdl_fx = util::spawn_model("tag_origin", s_fx.origin, s_fx.angles);
     s_fx struct::delete();
-    mdl_fx linkto(var_f57bbec0, "tag_fx_jnt");
+    mdl_fx linkto(mdl_brazier, "tag_fx_jnt");
     mdl_fx clientfield::set("" + #"hash_42cc4bf5e47478c5", 1);
     level.var_1285519 = mdl_fx;
     level scene::remove_scene_func("p8_fxanim_zm_towers_ww_quest_bowl_bundle", &function_73808ab9, "init");

@@ -174,7 +174,7 @@ function pap_quest_init() {
     level.player_out_of_playable_area_monitor_callback = &player_out_of_playable_area_monitor_callback;
     scene::init(#"p8_fxanim_zm_red_geg_bundle");
     level scene::init(#"p8_fxanim_zm_red_drakaina_bundle");
-    w_component = zm_crafting::get_component(#"hash_fb7df72cfdf8492");
+    w_component = zm_crafting::get_component(#"zitem_zhield_zpear_part_1");
     zm_items::function_4d230236(w_component, &function_86531922);
     mdl_blocker = getent("pap_arena_blocker", "targetname");
     mdl_blocker setinvisibletoall();
@@ -540,8 +540,8 @@ function function_fd16ebb0(ai) {
             break;
         }
     }
-    if (isdefined(level.crafting_components[#"hash_fb7df72cfdf8492"]) && !(isdefined(var_91a451a1) && var_91a451a1)) {
-        w_component = zm_crafting::get_component(#"hash_fb7df72cfdf8492");
+    if (isdefined(level.crafting_components[#"zitem_zhield_zpear_part_1"]) && !(isdefined(var_91a451a1) && var_91a451a1)) {
+        w_component = zm_crafting::get_component(#"zitem_zhield_zpear_part_1");
         if (!zm_items::player_has(level.players[0], w_component)) {
             level thread function_38a41b56(w_component, ai);
         }
@@ -2459,9 +2459,9 @@ function function_278687dd(var_3d0af5d4, var_24f3d84e) {
 // Size: 0xe4
 function function_1545931a() {
     if (zm_custom::function_901b751c(#"zmequipmentisenabled")) {
-        zm_items::function_4d230236(zm_crafting::get_component(#"hash_5b9dc0415a4521f3"), &function_3e5c42f5);
-        zm_items::function_4d230236(zm_crafting::get_component(#"hash_5b9dc1415a4523a6"), &function_3e5c42f5);
-        zm_items::function_4d230236(zm_crafting::get_component(#"hash_5b9dc2415a452559"), &function_3e5c42f5);
+        zm_items::function_4d230236(zm_crafting::get_component(#"zitem_red_strike_part_1"), &function_3e5c42f5);
+        zm_items::function_4d230236(zm_crafting::get_component(#"zitem_red_strike_part_2"), &function_3e5c42f5);
+        zm_items::function_4d230236(zm_crafting::get_component(#"zitem_red_strike_part_3"), &function_3e5c42f5);
     }
 }
 
@@ -2475,13 +2475,13 @@ function function_3e5c42f5(e_holder, w_item) {
     }
     zm_crafting::function_d1f16587(#"zblueprint_red_strike", &function_7250e6b9);
     switch (w_item.name) {
-    case #"hash_5b9dc0415a4521f3":
+    case #"zitem_red_strike_part_1":
         zm_ui_inventory::function_7df6bb60(#"hash_770d4d2226eb79", 1);
         break;
-    case #"hash_5b9dc1415a4523a6":
+    case #"zitem_red_strike_part_2":
         zm_ui_inventory::function_7df6bb60(#"hash_770a4d2226e660", 1);
         break;
-    case #"hash_5b9dc2415a452559":
+    case #"zitem_red_strike_part_3":
         zm_ui_inventory::function_7df6bb60(#"hash_770b4d2226e813", 1);
         break;
     }

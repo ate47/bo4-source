@@ -4933,7 +4933,7 @@ function function_3d487e02() {
     weapon = getweapon(#"eq_molotov");
     while (true) {
         waitresult = self waittill(#"aoe_damage");
-        if (waitresult.var_159100b7 == "zm_aoe_spear" || waitresult.var_159100b7 == "zm_aoe_spear_small" || waitresult.var_159100b7 == "zm_aoe_spear_big") {
+        if (waitresult.str_source == "zm_aoe_spear" || waitresult.str_source == "zm_aoe_spear_small" || waitresult.str_source == "zm_aoe_spear_big") {
             self status_effect::status_effect_apply(params, weapon, undefined, 0, 3000, undefined, waitresult.origin);
             if (!(isdefined(b_success) && b_success)) {
                 b_success = self zm_audio::create_and_play_dialog(#"m_quest", #"spear_warn");

@@ -88,8 +88,8 @@ function function_158a3a18(attacker, mod, weapon, var_e1ec1eee = 0) {
     if (var_e1ec1eee) {
         self.var_cbf4894c = 0.4;
     } else {
-        var_1b767d36 = zm_weapons::get_base_weapon(weapon);
-        var_fa87e189 = var_1b767d36.firetime;
+        n_baseweapon = zm_weapons::get_base_weapon(weapon);
+        var_fa87e189 = n_baseweapon.firetime;
         self.var_cbf4894c -= var_fa87e189 * 1.5;
         if (self.var_cbf4894c <= 0.4) {
             self.var_cbf4894c = 0.4;

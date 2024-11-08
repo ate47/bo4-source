@@ -1,7 +1,7 @@
 {
     "name": "#hash_4e869339dcdd0e0c",
     "baseWeapon": "#molotov_fire_tall",
-    "displayname": "#hash_33fc08c2de8f6c8d",
+    "displayname": "#weapon/incendiary_grenade",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

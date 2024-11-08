@@ -24,9 +24,9 @@ function init() {
     clientfield::register("scriptmover", "" + #"hash_3ec0452110ea5621", 16000, 1, "int", &function_8d9ce264, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_5da65e20d966c63f", 16000, 1, "counter", &function_cb64dcb1, 0, 0);
     clientfield::register("scriptmover", "" + #"artifact_glow", 16000, 1, "int", &artifact_fx, 0, 0);
-    clientfield::register("scriptmover", "" + #"perseus_teleport", 16000, 1, "counter", &function_bc717eee, 0, 0);
-    clientfield::register("scriptmover", "" + #"pegasus_teleport", 16000, 1, "int", &function_7993c728, 0, 0);
-    clientfield::register("scriptmover", "" + #"pegasus_ambient", 16000, 1, "int", &function_ee7e8a00, 0, 0);
+    clientfield::register("scriptmover", "" + #"perseus_teleport", 16000, 1, "counter", &perseus_teleport_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"pegasus_teleport", 16000, 1, "int", &pegasus_teleport_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"pegasus_ambient", 16000, 1, "int", &pegasus_ambient_fx, 0, 0);
     clientfield::register("vehicle", "" + #"hash_5da65e20d966c63f", 16000, 1, "counter", &function_cb64dcb1, 0, 0);
     clientfield::register("vehicle", "" + #"hash_463ff879b8d656bb", 16000, 1, "int", &function_c96c5397, 0, 0);
     clientfield::register("vehicle", "" + #"perseus_energy", 16000, 1, "int", &function_192be936, 0, 0);
@@ -55,7 +55,7 @@ function init() {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x37f974ae, Offset: 0xac8
 // Size: 0x84
-function function_ee7e8a00(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function pegasus_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         util::playfxontag(localclientnum, level._effect[#"shield_gegenees"], self, "tag_origin");
     }
@@ -89,7 +89,7 @@ function function_5f8c1946(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xe1a193f3, Offset: 0xda8
 // Size: 0x104
-function function_bc717eee(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function perseus_teleport_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (isdefined(self gettagorigin("j_spine4"))) {
         playfx(localclientnum, level._effect[#"perseus_teleport"], self gettagorigin("j_spine4"), anglestoup(self.angles));
         playsound(localclientnum, #"hash_20e6275c6513eb95", self gettagorigin("j_spine4"));
@@ -100,7 +100,7 @@ function function_bc717eee(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xb2b1d048, Offset: 0xeb8
 // Size: 0x1fe
-function function_7993c728(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function pegasus_teleport_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         if (!isdefined(self.var_f252bba1)) {
             self.var_f252bba1 = playfx(localclientnum, level._effect[#"pegasus_teleport"], self gettagorigin("j_h_chest"), self gettagangles("j_h_chest"));

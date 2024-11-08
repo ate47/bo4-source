@@ -277,11 +277,11 @@ function function_7fe60e9e(entity) {
         dir = anglestoforward(var_872c6826);
     }
     velocity = dir * 1110;
-    var_1a3b2274 = "gegenees_spear_projectile";
+    str_spear = "gegenees_spear_projectile";
     if (isdefined(entity.var_e946c8e8) && entity.var_e946c8e8) {
-        var_1a3b2274 = "gegenees_golden_spear_projectile";
+        str_spear = "gegenees_golden_spear_projectile";
     }
-    spearweapon = getweapon(var_1a3b2274);
+    spearweapon = getweapon(str_spear);
     var_a137cb9f = entity gettagorigin("tag_inhand");
     var_eb549b4f = entity.favoriteenemy.origin;
     projectile = magicbullet(spearweapon, var_a137cb9f, var_eb549b4f, entity, entity.favoriteenemy);
@@ -874,11 +874,11 @@ function private function_3f8833df() {
 function function_59e9f77b() {
     if (isdefined(self.var_cc7959e1) && self.var_cc7959e1) {
         self clientfield::set("gegenees_spear_tip_effect", 0);
-        var_1a3b2274 = "c_t8_zmb_dlc2_gegenees_spear";
+        str_spear = "c_t8_zmb_dlc2_gegenees_spear";
         if (isdefined(self.var_e946c8e8) && self.var_e946c8e8) {
-            var_1a3b2274 = "c_t8_zmb_dlc2_gegenees_spear_golden";
+            str_spear = "c_t8_zmb_dlc2_gegenees_spear_golden";
         }
-        self detach(var_1a3b2274, "tag_inhand");
+        self detach(str_spear, "tag_inhand");
         self.var_cc7959e1 = 0;
     }
 }
@@ -889,11 +889,11 @@ function function_59e9f77b() {
 // Size: 0xa4
 function function_d06af584() {
     if (!(isdefined(self.var_cc7959e1) && self.var_cc7959e1)) {
-        var_1a3b2274 = "c_t8_zmb_dlc2_gegenees_spear";
+        str_spear = "c_t8_zmb_dlc2_gegenees_spear";
         if (isdefined(self.var_e946c8e8) && self.var_e946c8e8) {
-            var_1a3b2274 = "c_t8_zmb_dlc2_gegenees_spear_golden";
+            str_spear = "c_t8_zmb_dlc2_gegenees_spear_golden";
         }
-        self attach(var_1a3b2274, "tag_inhand");
+        self attach(str_spear, "tag_inhand");
         self.var_cc7959e1 = 1;
         self clientfield::set("gegenees_spear_tip_effect", 1);
     }

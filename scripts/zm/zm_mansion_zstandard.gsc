@@ -414,9 +414,9 @@ function function_fe69176c() {
     a_w_component[0] = zm_crafting::get_component(#"zitem_silver_bullet_part_1");
     a_w_component[1] = zm_crafting::get_component(#"zitem_silver_bullet_part_2");
     a_w_component[2] = zm_crafting::get_component(#"zitem_silver_bullet_part_3");
-    a_w_component[3] = zm_crafting::get_component(#"hash_11ae647a1f0d9704");
-    a_w_component[4] = zm_crafting::get_component(#"hash_11ae677a1f0d9c1d");
-    a_w_component[5] = zm_crafting::get_component(#"hash_11ae667a1f0d9a6a");
+    a_w_component[3] = zm_crafting::get_component(#"zitem_silver_molten_part_1");
+    a_w_component[4] = zm_crafting::get_component(#"zitem_silver_molten_part_2");
+    a_w_component[5] = zm_crafting::get_component(#"zitem_silver_molten_part_3");
     a_e_items = getitemarray();
     foreach (e_item in a_e_items) {
         if (isinarray(a_w_component, e_item.item)) {

@@ -54,7 +54,7 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_9093a47e = &function_b8839207;
     level.round_end_custom_logic = &function_61fd0e87;
     level.round_number = 0;
-    level.var_df8480a0 = 0;
+    level.trial_strikes = 0;
     level flag::init(#"ztrial", 1);
     callback::on_connect(&function_8277ff43);
     level._supress_survived_screen = 1;

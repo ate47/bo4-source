@@ -180,10 +180,10 @@ function function_7e61f202(mdl_banner) {
 // Checksum 0x1edd7962, Offset: 0x1368
 // Size: 0x1a0
 function function_99cdcc10() {
-    var_d65b49c5 = getentarray("t_challenge_brazier_trigger", "script_noteworthy");
+    a_t_braziers = getentarray("t_challenge_brazier_trigger", "script_noteworthy");
     var_155201f2 = getentarray("t_zm_towers_cleat_damage_trig", "script_noteworthy");
     var_b2966463 = getentarray("t_challenge_cleat_hint_trig", "script_noteworthy");
-    a_t_challenges = arraycombine(var_d65b49c5, var_155201f2, 0, 0);
+    a_t_challenges = arraycombine(a_t_braziers, var_155201f2, 0, 0);
     a_t_challenges = arraycombine(a_t_challenges, var_b2966463, 0, 0);
     level flag::set(#"hash_7e6d1a215978eac4");
     foreach (t_challenge in a_t_challenges) {
@@ -438,8 +438,8 @@ function function_c3158242(var_38e7a8be) {
     arrayremovevalue(a_e_players, self);
     foreach (e_player in a_e_players) {
         if (isdefined(e_player) && isdefined(e_player.challenge_struct) && e_player flag::exists("flag_player_completed_all_challenges") && !e_player flag::get("flag_player_completed_all_challenges")) {
-            var_26c18935 = e_player.challenge_struct.targetname;
-            switch (var_26c18935) {
+            str_brazier = e_player.challenge_struct.targetname;
+            switch (str_brazier) {
             case #"danu_brazier":
                 var_4bceacc8 = #"hash_597c4173f2fd41a4";
                 break;

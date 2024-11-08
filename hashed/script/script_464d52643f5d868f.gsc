@@ -108,8 +108,8 @@ function function_84f1c310() {
         level.musicsystemoverride = 1;
         music::setmusicstate("escape_catwalk");
         s_sparks = struct::get("catwalk_door_spark");
-        var_9e431d6d = util::spawn_model("tag_origin", s_sparks.origin, s_sparks.angles);
-        var_9e431d6d clientfield::set("" + #"hash_144c7c2895ed95c", 1);
+        mdl_sparks = util::spawn_model("tag_origin", s_sparks.origin, s_sparks.angles);
+        mdl_sparks clientfield::set("" + #"hash_144c7c2895ed95c", 1);
         mdl_gate = undefined;
         foreach (mdl_door in t_catwalk_door.doors) {
             if (mdl_door.classname == "script_model") {
@@ -118,7 +118,7 @@ function function_84f1c310() {
             }
         }
         if (isdefined(mdl_gate)) {
-            level thread function_40312eda(var_9e431d6d, mdl_gate);
+            level thread function_40312eda(mdl_sparks, mdl_gate);
         }
         level.var_2ea46461 clientfield::increment("" + #"hash_48f1f50c412d80c7");
         level.var_b2b15659 = 1;
@@ -218,11 +218,11 @@ function function_fd3fa3a3() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xe7f49f91, Offset: 0x1710
 // Size: 0x84
-function function_40312eda(var_9e431d6d, mdl_gate) {
-    v_new_position = var_9e431d6d.origin + mdl_gate.script_vector;
-    var_9e431d6d moveto(v_new_position, 1, 0.25, 0.25);
+function function_40312eda(mdl_sparks, mdl_gate) {
+    v_new_position = mdl_sparks.origin + mdl_gate.script_vector;
+    mdl_sparks moveto(v_new_position, 1, 0.25, 0.25);
     wait 1.25;
-    var_9e431d6d delete();
+    mdl_sparks delete();
 }
 
 // Namespace namespace_f2502da8/namespace_f2502da8

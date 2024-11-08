@@ -545,21 +545,21 @@ function function_dd7bc108(weapon) {
     } else {
         return;
     }
-    if (isdefined(self.var_79e746a9)) {
-        self.var_79e746a9 delete();
-        self.var_79e746a9 zm_utility::deactivate_zombie_point_of_interest();
+    if (isdefined(self.mdl_aoe)) {
+        self.mdl_aoe delete();
+        self.mdl_aoe zm_utility::deactivate_zombie_point_of_interest();
     }
     if (isdefined(self.var_b1224954)) {
         self.var_b1224954 delete();
     }
-    self.var_79e746a9 = util::spawn_model("tag_origin", var_330f37da, (-90, 0, 0));
-    if (isdefined(self.var_79e746a9)) {
+    self.mdl_aoe = util::spawn_model("tag_origin", var_330f37da, (-90, 0, 0));
+    if (isdefined(self.mdl_aoe)) {
         self.var_b1224954 = spawn("trigger_radius_new", var_330f37da, 512 | 1, 100, 60);
         if (isdefined(self.var_b1224954)) {
             self thread charon_pool(n_damage);
         } else {
-            self.var_79e746a9 delete();
-            self.var_79e746a9 zm_utility::deactivate_zombie_point_of_interest();
+            self.mdl_aoe delete();
+            self.mdl_aoe zm_utility::deactivate_zombie_point_of_interest();
         }
     }
     wait 0.1;
@@ -594,12 +594,12 @@ function charon_pool(n_damage) {
         var_49981df5 = self.var_b1224954;
         var_49981df5 endon(#"death");
     }
-    if (isdefined(self) && isdefined(self.var_79e746a9)) {
-        var_79e746a9 = self.var_79e746a9;
-        var_79e746a9 clientfield::set("charon_pool", 1);
-        var_79e746a9 zm_utility::create_zombie_point_of_interest(200, 16, 1000);
-        var_79e746a9 zm_utility::create_zombie_point_of_interest_attractor_positions(undefined, undefined, 100, 1);
-        var_79e746a9.var_8305fd51 = #"charon_pool";
+    if (isdefined(self) && isdefined(self.mdl_aoe)) {
+        mdl_aoe = self.mdl_aoe;
+        mdl_aoe clientfield::set("charon_pool", 1);
+        mdl_aoe zm_utility::create_zombie_point_of_interest(200, 16, 1000);
+        mdl_aoe zm_utility::create_zombie_point_of_interest_attractor_positions(undefined, undefined, 100, 1);
+        mdl_aoe.var_8305fd51 = #"charon_pool";
         self thread function_249b5556(n_damage);
         self notify(#"hash_52d2f17ac6d67de2");
         if (n_damage == 5000) {
@@ -607,10 +607,10 @@ function charon_pool(n_damage) {
         } else {
             wait 22;
         }
-        if (isdefined(var_79e746a9)) {
-            var_79e746a9 zm_utility::deactivate_zombie_point_of_interest();
-            var_79e746a9 clientfield::set("charon_pool", 0);
-            var_79e746a9 delete();
+        if (isdefined(mdl_aoe)) {
+            mdl_aoe zm_utility::deactivate_zombie_point_of_interest();
+            mdl_aoe clientfield::set("charon_pool", 0);
+            mdl_aoe delete();
         }
         if (isdefined(var_49981df5)) {
             var_49981df5 delete();

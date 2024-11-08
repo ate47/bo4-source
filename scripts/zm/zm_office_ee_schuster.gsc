@@ -193,8 +193,8 @@ function function_8c80503() {
 // Size: 0xe8
 function function_d4c6dc0d() {
     self.var_b21e0263 = 1;
-    var_4ca5f5d0 = getent(self.target2, "targetname");
-    var_df4e73a7 = getentarray(var_4ca5f5d0.target, "targetname");
+    e_recorder = getent(self.target2, "targetname");
+    var_df4e73a7 = getentarray(e_recorder.target, "targetname");
     while (self.var_b21e0263 && var_df4e73a7.size > 0) {
         var_df4e73a7[0] rotatepitch(45, 1);
         wait 0.1;

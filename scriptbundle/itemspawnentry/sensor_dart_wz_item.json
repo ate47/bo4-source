@@ -6,7 +6,7 @@
     "type": "itemspawnentry",
     "angleoffsetz": -90,
     "name": "sensor_dart_wz_item",
-    "displayname": "#hash_504ad2d8233fb0ac",
+    "displayname": "#weapon/sensor_dart",
     "stackcount": 1,
     "icon": "#hash_e02c2f146b573f8",
     "modelscale": 1,

@@ -1,7 +1,7 @@
 {
     "name": "#hash_212971a275b370e6",
     "baseWeapon": "#molotov_fire_small",
-    "displayname": "#hash_33fc08c2de8f6c8d",
+    "displayname": "#weapon/incendiary_grenade",
     "sessionMode": "warzone",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

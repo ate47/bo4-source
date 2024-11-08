@@ -298,7 +298,7 @@ function gadget_on(slot, weapon) {
             potentialtarget function_9fe3d492();
         }
     }
-    player function_6628dc23(slot, weapon);
+    player do_gadget(slot, weapon);
 }
 
 // Namespace locaheal/localheal
@@ -314,7 +314,7 @@ function gadget_off(slot, weapon) {
 // Params 2, eflags: 0x0
 // Checksum 0xc32689bb, Offset: 0x14f0
 // Size: 0x34c
-function function_6628dc23(slot, weapon) {
+function do_gadget(slot, weapon) {
     player = self;
     var_1edc9e27 = 0;
     player.var_b6971302 = 0;

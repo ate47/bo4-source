@@ -72,7 +72,7 @@ function init_level_vars() {
 // Size: 0x20a
 function function_9217567c() {
     level waittill(#"all_players_spawned");
-    w_item = zm_crafting::get_component(#"hash_1e5657f6a6f09389");
+    w_item = zm_crafting::get_component(#"zitem_spectral_shield_part_3");
     e_player = array::random(level.players);
     zm_items::player_pick_up(e_player, w_item);
     foreach (a_s_crafting in level.var_4fe2f84d) {

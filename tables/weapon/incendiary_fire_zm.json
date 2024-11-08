@@ -1,7 +1,7 @@
 {
     "name": "#incendiary_fire_zm",
     "baseWeapon": "#incendiary_fire",
-    "displayname": "#hash_33fc08c2de8f6c8d",
+    "displayname": "#weapon/incendiary_grenade",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

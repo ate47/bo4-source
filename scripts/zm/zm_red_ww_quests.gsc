@@ -3097,7 +3097,7 @@ function function_3462981(s_params) {
 // Checksum 0x3ccd362b, Offset: 0x101b0
 // Size: 0x10e
 function function_3b0917e6(eventstruct) {
-    if (eventstruct.weapon === getweapon(#"hash_fb7df72cfdf8492") || eventstruct.weapon === getweapon(#"hash_fb7de72cfdf82df") || eventstruct.weapon === getweapon(#"hash_fb7dd72cfdf812c")) {
+    if (eventstruct.weapon === getweapon(#"zitem_zhield_zpear_part_1") || eventstruct.weapon === getweapon(#"zitem_zhield_zpear_part_2") || eventstruct.weapon === getweapon(#"zitem_zhield_zpear_part_3")) {
         return;
     }
     if (eventstruct.event === "take_weapon" && eventstruct.weapon === getweapon(#"zhield_zpear_dw")) {

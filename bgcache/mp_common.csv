@@ -1348,7 +1348,7 @@ model,veh_t8_civ_forklift_modular_manned_forklift_dirty_yellow,294cb88f088
 model,hash_77619c598b1c4d8a,294cb9a7a98
 model,wpn_t8_eqp_heal_aid_view,294cb7780b8
 model,veh_t8_mil_atv_recon_guard_middle,294cb894338
-model,hash_7795d969e6d83601,294cb8ba198
+model,c_zsf_robot_grunt_body,294cb8ba198
 model,hash_77a8c49b43311746,294cb8e3b08
 model,hash_77bc325d0575b1d0,294cb8fc768
 model,attach_t8_pistol_revolver_uber_sig_02_world,294cb6f44d8
@@ -1491,7 +1491,7 @@ weapon,hash_19a1b96c6810440c,294cdb4fbd8
 weapon,explodable_barrel_mp,294cdc1e348
 weapon,briefcase_bomb_mp,294cdc4e288
 weapon,hash_1bb3b0c39433e8ca,294cdcb7638
-weapon,hash_1c1c8c36aa65a855,294cdb865a8
+weapon,eq_seeker_mine_mp,294cdb865a8
 weapon,ct_hack_tool,294cdc63788
 weapon,remote_missile_missile_mp,294cdc28dc8
 weapon,hash_1edcfc90683eeeff,294cdb466a8
@@ -7375,7 +7375,7 @@ string,weapon/sig_buckler_dw,0
 string,hash_74b9d32ca1f06d9,0
 string,hash_74fa1e5aa0983f9,0
 string,hash_7657f4c839045d4,0
-string,hash_796ecbec9ffbdcd,0
+string,weapon/seeker_mine,0
 string,hash_7b43013359063e4,0
 string,hash_7d1a0e5bd191fce,0
 string,hash_7e2cbfe41e92efa,0
@@ -7388,7 +7388,7 @@ string,hash_870732dcf823d00,0
 string,hash_8a60229db7d9f06,0
 string,hash_9340177dbe3be9f,0
 string,hash_94c2bd8b788ebca,0
-string,hash_96312b11b47045b,0
+string,weapon/bouncingbetty,0
 string,hash_963e4c4a1430d25,0
 string,hash_9d6017f6c7829ad,0
 string,hash_9e43b70f5fc84ff,0
@@ -7468,7 +7468,7 @@ string,hash_11cfa6d5f521dede,0
 string,hash_11d17195d5833bc4,0
 string,hash_11e3720e6124f94d,0
 string,hash_122631a880bd0d73,0
-string,hash_122c21f52bcb5bfb,0
+string,weapon/ball,0
 string,hash_12473d7e6ed6e752,0
 string,hash_12b8870765d411f6,0
 string,mpui/uber,0
@@ -7912,7 +7912,7 @@ string,hash_44d60a6e6ed2a53c,0
 string,mpui/suppressed,0
 string,killstreak/uav,0
 string,hash_452fd06faf792671,0
-string,hash_4531a58b5628609b,0
+string,weapon/pistol_standard,0
 string,hash_453ecbd9693dd1d3,0
 string,hash_4543a2946f3c8852,0
 string,hash_45a3bff655f149b1,0
@@ -8007,7 +8007,7 @@ string,hash_50137242db8bc97a,0
 string,hash_502cca55de20d536,0
 string,hash_504843f8a8fe0230,0
 string,hash_5048d939a2207733,0
-string,hash_504ad2d8233fb0ac,0
+string,weapon/sensor_dart,0
 string,hash_506621193b404166,0
 string,hash_5071aa2f1fc20b4c,0
 string,hash_5079687d6a87790c,0
@@ -8286,7 +8286,7 @@ string,hash_6ad369658d92591d,0
 string,hash_6ae27e26f75793db,0
 string,hash_6aee422878d572b9,0
 string,hash_6b153adcd9c8cfcb,0
-string,hash_6b367452eadb21b2,0
+string,weapon/flashbang,0
 string,hash_6b89b23449a8ae13,0
 string,hash_6b94e754d048dae9,0
 string,hash_6bea5c334a4ab164,0
@@ -8437,7 +8437,7 @@ string,hash_7c95f989fe2a83e4,0
 string,hash_7cafa946822ee652,0
 string,hash_7cd3acd9a7728e43,0
 string,mpui/mms,0
-string,hash_7cf054cda28390c7,0
+string,weapon/stun_grenade,0
 string,hash_7d076ea2dc0661a2,0
 string,hash_7d2ab288acd31d2a,0
 string,hash_7d37cafde0ab4ecd,0
@@ -10611,7 +10611,7 @@ soundalias,hash_b5d4175764d36d0,0
 soundalias,hash_b5e00bf57762b86,0
 soundalias,hash_b5f77ef0f4433e9,0
 soundalias,hash_b622e0efec68c8a,0
-soundalias,hash_b63902d771b1953,0
+soundalias,evt_annihilation,0
 soundalias,hash_b63e141745958fc,0
 soundalias,hash_b66e9db19666cdb,0
 soundalias,hash_b68ba0c394c7750,0

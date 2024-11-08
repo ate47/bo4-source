@@ -2035,9 +2035,9 @@ function function_384bed55(b_on = 1) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x1d7e956a, Offset: 0x9e30
 // Size: 0x3b8
-function function_269d9f82(var_9b7aaa46, b_on = 1) {
+function function_269d9f82(str_barrier, b_on = 1) {
     var_d3c21d73 = (0, 0, 48);
-    var_d23fea4f = struct::get_array(var_9b7aaa46, "targetname");
+    var_d23fea4f = struct::get_array(str_barrier, "targetname");
     if (isdefined(b_on) && b_on) {
         foreach (s_position in var_d23fea4f) {
             s_position.mdl_pos = util::spawn_model("tag_origin", s_position.origin, s_position.angles);

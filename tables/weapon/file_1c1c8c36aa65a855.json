@@ -1,7 +1,7 @@
 {
-    "name": "#hash_1c1c8c36aa65a855",
+    "name": "#eq_seeker_mine_mp",
     "baseWeapon": "#eq_seeker_mine",
-    "displayname": "#hash_796ecbec9ffbdcd",
+    "displayname": "#weapon/seeker_mine",
     "sessionMode": "multiplayer",
     "itemIndex": 90,
     "dualWieldWeaponIndex": 0,

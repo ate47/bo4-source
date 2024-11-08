@@ -363,7 +363,7 @@ function function_e162fac3(weapon, str_vo_line) {
         return #"thundergun";
     } else if (weapon === getweapon(#"tundragun")) {
         return #"tundragun";
-    } else if (weapon === getweapon(#"hash_7a42b57be462143f")) {
+    } else if (weapon === getweapon(#"eq_nesting_doll_grenade")) {
         return #"matryoshka";
     }
     return str_vo_line;
@@ -464,7 +464,7 @@ function function_fe8ee9f0(var_b36eb2ad, var_7f70dbec = 1) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4b805186, Offset: 0x1fa8
 // Size: 0x88
-function function_60403468() {
+function get_player_wonder_weapon() {
     foreach (w_wonder in level.a_w_wonder) {
         if (self hasweapon(w_wonder)) {
             return w_wonder;
@@ -477,7 +477,7 @@ function function_60403468() {
 // Checksum 0x992eee45, Offset: 0x2040
 // Size: 0x1c
 function function_3d581a6() {
-    return isdefined(self function_60403468());
+    return isdefined(self get_player_wonder_weapon());
 }
 
 // Namespace zm_orange_util/zm_orange_util
@@ -504,7 +504,7 @@ function function_5cd05b9(w_weapon_1, w_weapon_2) {
 // Size: 0x1a8
 function function_adb657dd(e_player) {
     w_give = self.stub.related_parent.w_pickup;
-    w_take = e_player function_60403468();
+    w_take = e_player get_player_wonder_weapon();
     if (isdefined(w_take)) {
         if (function_5cd05b9(w_take, w_give)) {
             self sethintstring(zm_utility::function_d6046228(#"hash_1ee18bf56df7a29b", #"hash_39d6b1ad0b94f111"));
@@ -528,7 +528,7 @@ function function_c3d56ed8() {
     w_give = self.w_pickup;
     s_waitresult = self waittill(#"trigger_activated");
     e_player = s_waitresult.e_who;
-    w_take = e_player function_60403468();
+    w_take = e_player get_player_wonder_weapon();
     b_give_weapon = 1;
     if (isdefined(w_take)) {
         if (function_5cd05b9(w_take, w_give)) {
