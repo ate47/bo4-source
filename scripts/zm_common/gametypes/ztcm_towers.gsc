@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_round_logic.gsc;
-#using scripts\zm_common\gametypes\ztcm.gsc;
-#using scripts\zm_common\gametypes\zm_gametype.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_round_logic;
+#using scripts\zm_common\gametypes\ztcm;
+#using scripts\zm_common\gametypes\zm_gametype;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\struct;
 
 #namespace ztcm_towers;
 

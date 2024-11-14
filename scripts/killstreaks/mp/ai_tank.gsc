@@ -1,13 +1,13 @@
-#using scripts\killstreaks\mp\supplydrop.gsc;
-#using scripts\killstreaks\mp\killstreak_vehicle.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\killstreaks\ai_tank_shared.gsc;
-#using scripts\killstreaks\ai\patrol.gsc;
+#using scripts\killstreaks\mp\supplydrop;
+#using scripts\killstreaks\mp\killstreak_vehicle;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\clientfield_shared;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\ai_tank_shared;
+#using scripts\killstreaks\ai\patrol;
 
 #namespace ai_tank;
 

@@ -1,10 +1,10 @@
-#using scripts\zm_common\callbacks.csc;
-#using scripts\zm_common\zm_utility.csc;
-#using scripts\zm_common\zm_trial_util.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm_common\callbacks;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial;
 

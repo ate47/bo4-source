@@ -1,8 +1,8 @@
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\lui_shared.gsc;
-#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\animation_shared;
 
 #namespace teleport;
 

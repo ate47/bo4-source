@@ -1,7 +1,7 @@
-#using scripts\zm\zm_office_teleporters.gsc;
-#using scripts\zm\zm_office_elevators.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm\zm_office_teleporters;
+#using scripts\zm\zm_office_elevators;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_aa2f0fe;
 

@@ -1,9 +1,9 @@
-#using scripts\killstreaks\ai\target.gsc;
-#using scripts\killstreaks\ai\escort.gsc;
-#using scripts\killstreaks\ai\state.gsc;
-#using scripts\core_common\entityheadicons_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\killstreaks\ai\target;
+#using scripts\killstreaks\ai\escort;
+#using scripts\killstreaks\ai\state;
+#using scripts\core_common\entityheadicons_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\array_shared;
 
 #namespace ai_patrol;
 

@@ -1,12 +1,12 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\gametypes\battlechatter.gsc;
-#using scripts\abilities\gadgets\gadget_concertina_wire.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\abilities\gadgets\gadget_concertina_wire;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace concertina_wire;
 

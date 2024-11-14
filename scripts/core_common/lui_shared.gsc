@@ -1,13 +1,13 @@
 #using script_4194df57536e11ed;
 #using script_50719ad9bcd4b183;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\array_shared;
 
 #namespace lui;
 

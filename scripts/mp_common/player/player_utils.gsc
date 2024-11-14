@@ -1,12 +1,12 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\killstreaks\mp\killstreaks.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\killstreaks\killstreaks_util.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\core_common\hud_message_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\mp_common\util;
+#using scripts\killstreaks\mp\killstreaks;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\killstreaks\killstreaks_util;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\core_common\hud_message_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
 
 #namespace player;
 

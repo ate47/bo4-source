@@ -1,5 +1,5 @@
-#using scripts\core_common\serverfield_shared.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\serverfield_shared;
+#using scripts\core_common\system_shared;
 
 #namespace status_effect_suppress;
 

@@ -1,6 +1,6 @@
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\core_common\ai\archetype_utility.gsc;
-#using scripts\core_common\ai\archetype_robot.gsc;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\archetype_robot;
 
 #namespace robotinterface;
 

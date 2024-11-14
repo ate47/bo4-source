@@ -1,8 +1,8 @@
-#using scripts\mp_common\gametypes\round.gsc;
-#using scripts\mp_common\gametypes\overtime.gsc;
-#using scripts\mp_common\gametypes\outcome.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\mp_common\gametypes\round;
+#using scripts\mp_common\gametypes\overtime;
+#using scripts\mp_common\gametypes\outcome;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\core_common\system_shared;
 
 #namespace match;
 

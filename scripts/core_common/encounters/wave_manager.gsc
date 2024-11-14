@@ -1,12 +1,12 @@
-#using scripts\core_common\encounters\aispawning.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\trigger_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\encounters\aispawning;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\trigger_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace wave_manager_sys;
 

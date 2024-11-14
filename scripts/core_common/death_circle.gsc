@@ -1,11 +1,11 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\match_record.gsc;
-#using scripts\core_common\map.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\match_record;
+#using scripts\core_common\map;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace death_circle;
 

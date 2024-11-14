@@ -1,5 +1,5 @@
-#using scripts\weapons\tabun.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\tabun;
+#using scripts\core_common\system_shared;
 
 #namespace tabun;
 

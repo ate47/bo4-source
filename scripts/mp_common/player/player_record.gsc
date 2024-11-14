@@ -1,14 +1,14 @@
-#using scripts\mp_common\player\player_loadout.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\mp_common\gametypes\globallogic_score.gsc;
-#using scripts\core_common\persistence_shared.gsc;
-#using scripts\core_common\player\player_role.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\player\player_loadout.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\rank_shared.gsc;
-#using scripts\core_common\contracts_shared.gsc;
-#using scripts\core_common\bb_shared.gsc;
+#using scripts\mp_common\player\player_loadout;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\core_common\persistence_shared;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\player\player_loadout;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\rank_shared;
+#using scripts\core_common\contracts_shared;
+#using scripts\core_common\bb_shared;
 
 #namespace player_record;
 

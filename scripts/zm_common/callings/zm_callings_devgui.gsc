@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_devgui.gsc;
-#using scripts\zm_common\callings\zm_callings.gsc;
-#using scripts\core_common\flag_shared.gsc;
+#using scripts\zm_common\zm_devgui;
+#using scripts\zm_common\callings\zm_callings;
+#using scripts\core_common\flag_shared;
 
 #namespace zm_callings_devgui;
 

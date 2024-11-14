@@ -1,12 +1,12 @@
-#using scripts\zm_common\zm_utility.csc;
-#using scripts\zm\zm_lightning_chain.csc;
-#using scripts\core_common\serverfield_shared.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\beam_shared.csc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm\zm_lightning_chain;
+#using scripts\core_common\serverfield_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\beam_shared;
 
 #namespace zm_weap_hand_ouranos;
 

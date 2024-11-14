@@ -1,11 +1,11 @@
-#using scripts\mp\mp_seaside_sound.csc;
-#using scripts\mp\mp_seaside_fx.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\scene_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\mp\mp_seaside_sound;
+#using scripts\mp\mp_seaside_fx;
+#using scripts\mp_common\load;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace mp_seaside;
 

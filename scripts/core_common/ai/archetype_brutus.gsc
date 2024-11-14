@@ -1,7 +1,7 @@
-#using scripts\core_common\ai\archetype_brutus_interface.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\ai\archetype_brutus_interface;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\spawner_shared;
 
 #namespace archetypebrutus;
 

@@ -1,5 +1,5 @@
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\zm\archetype\archetype_zod_companion.gsc;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\zm\archetype\archetype_zod_companion;
 
 #namespace zodcompanioninterface;
 

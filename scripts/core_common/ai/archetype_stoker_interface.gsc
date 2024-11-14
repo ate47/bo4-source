@@ -1,5 +1,5 @@
-#using scripts\core_common\ai\archetype_stoker.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\archetype_stoker;
+#using scripts\core_common\ai\systems\ai_interface;
 
 #namespace stokerinterface;
 

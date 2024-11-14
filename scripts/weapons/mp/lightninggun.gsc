@@ -1,5 +1,5 @@
-#using scripts\weapons\lightninggun.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\lightninggun;
+#using scripts\core_common\system_shared;
 
 #namespace lightninggun;
 

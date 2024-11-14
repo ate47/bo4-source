@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_trial.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_disable_buys;
 

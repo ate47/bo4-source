@@ -1,16 +1,16 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm\ai\zm_ai_dog_interface.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\ai\archetype_mocomps_utility.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
-#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
-#using scripts\core_common\ai\archetype_utility.gsc;
-#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
-#using scripts\core_common\ai\systems\animation_state_machine_utility.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm\ai\zm_ai_dog_interface;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\ai\archetype_mocomps_utility;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks;
+#using scripts\core_common\ai\systems\animation_state_machine_utility;
 
 #namespace zm_ai_dog;
 

@@ -1,5 +1,5 @@
-#using scripts\weapons\smokegrenade.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\smokegrenade;
+#using scripts\core_common\system_shared;
 
 #namespace smokegrenade;
 

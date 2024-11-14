@@ -1,4 +1,4 @@
-#using scripts\core_common\scene_objects_shared.gsc;
+#using scripts\core_common\scene_objects_shared;
 
 #namespace scene;
 

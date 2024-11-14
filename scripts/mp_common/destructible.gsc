@@ -1,7 +1,7 @@
-#using scripts\mp_common\gametypes\battlechatter.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\challenges_shared;
 
 #namespace destructible;
 

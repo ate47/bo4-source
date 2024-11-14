@@ -1,5 +1,5 @@
-#using scripts\zm\zm_towers_zstandard.csc;
-#using scripts\core_common\util_shared.csc;
+#using scripts\zm\zm_towers_zstandard;
+#using scripts\core_common\util_shared;
 
 #namespace zm_towers_gamemodes;
 

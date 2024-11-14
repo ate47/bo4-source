@@ -1,8 +1,8 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\sound_shared.csc;
-#using scripts\core_common\exploder_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\sound_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace fx;
 

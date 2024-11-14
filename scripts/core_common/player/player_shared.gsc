@@ -1,9 +1,9 @@
-#using scripts\core_common\player\player_loadout.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\player\player_loadout;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace player;
 

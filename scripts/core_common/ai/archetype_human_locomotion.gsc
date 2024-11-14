@@ -1,7 +1,7 @@
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
-#using scripts\core_common\ai\systems\behavior_state_machine.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai\systems\behavior_state_machine;
+#using scripts\core_common\ai\systems\ai_interface;
 
 #namespace archetype_human_locomotion;
 

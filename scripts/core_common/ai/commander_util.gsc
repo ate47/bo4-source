@@ -1,4 +1,4 @@
-#using scripts\core_common\ai\planner_commander.gsc;
+#using scripts\core_common\ai\planner_commander;
 
 #namespace commander_util;
 

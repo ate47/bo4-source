@@ -1,7 +1,7 @@
-#using scripts\mp_common\gametypes\ct_utils.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\renderoverridebundle.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\mp_common\gametypes\ct_utils;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\renderoverridebundle;
+#using scripts\core_common\clientfield_shared;
 
 #namespace ct_core;
 

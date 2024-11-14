@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\flag_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\flag_shared;
 
 #namespace namespace_a71af4de;
 

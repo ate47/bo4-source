@@ -1,4 +1,4 @@
-#using scripts\mp_common\gametypes\ct_core.csc;
+#using scripts\mp_common\gametypes\ct_core;
 
 #namespace ct_prophet;
 

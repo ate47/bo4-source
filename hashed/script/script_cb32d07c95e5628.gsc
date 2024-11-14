@@ -1,7 +1,7 @@
-#using scripts\mp_common\item_world_util.gsc;
-#using scripts\mp_common\item_drop.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\mp_common\item_world_util;
+#using scripts\mp_common\item_drop;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\struct;
 
 #namespace namespace_65181344;
 

@@ -1,5 +1,5 @@
-#using scripts\abilities\gadgets\gadget_concertina_wire.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\abilities\gadgets\gadget_concertina_wire;
+#using scripts\core_common\system_shared;
 
 #namespace concertina_wire;
 

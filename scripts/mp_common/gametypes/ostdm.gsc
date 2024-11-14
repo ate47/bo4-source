@@ -1,6 +1,6 @@
-#using scripts\mp_common\gametypes\tdm.gsc;
-#using scripts\mp_common\gametypes\os.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
+#using scripts\mp_common\gametypes\tdm;
+#using scripts\mp_common\gametypes\os;
+#using scripts\mp_common\gametypes\globallogic_audio;
 
 #namespace ostdm;
 

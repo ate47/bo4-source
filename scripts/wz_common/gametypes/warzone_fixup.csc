@@ -1,4 +1,4 @@
-#using scripts\mp_common\item_world_fixup.csc;
+#using scripts\mp_common\item_world_fixup;
 
 #namespace warzone_fixup;
 

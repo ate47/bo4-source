@@ -1,13 +1,13 @@
-#using scripts\weapons\smokegrenade.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\shoutcaster.csc;
-#using scripts\core_common\renderoverridebundle.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\flag_shared.csc;
+#using scripts\weapons\smokegrenade;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\shoutcaster;
+#using scripts\core_common\renderoverridebundle;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\flag_shared;
 #using script_4daa124bc391e7ed;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\abilities\gadgets\gadget_vision_pulse.csc;
+#using scripts\core_common\callbacks_shared;
+#using scripts\abilities\gadgets\gadget_vision_pulse;
 
 #namespace player;
 

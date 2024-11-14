@@ -1,6 +1,6 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\challenges_shared;
 
 #namespace ballistic_knife;
 

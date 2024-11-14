@@ -1,16 +1,16 @@
-#using scripts\zm_common\zm_weapons.csc;
-#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_utility;
 #using script_624a704d0f6bf28d;
-#using scripts\zm_common\zm_powerups.csc;
-#using scripts\core_common\water_surface.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\flagsys_shared.csc;
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\array_shared.csc;
+#using scripts\zm_common\zm_powerups;
+#using scripts\core_common\water_surface;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace zodt8_sentinel;
 

@@ -1,14 +1,14 @@
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\map.gsc;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\map;
 #using script_71e26f08f03b7a7a;
-#using scripts\mp_common\load.gsc;
-#using scripts\core_common\compass.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\death_circle.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\load;
+#using scripts\core_common\compass;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\death_circle;
+#using scripts\core_common\callbacks_shared;
 
 #namespace namespace_ebd5f10d;
 

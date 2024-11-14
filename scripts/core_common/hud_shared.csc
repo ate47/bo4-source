@@ -1,4 +1,4 @@
-#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\system_shared;
 #using script_40114edfb27a2dd9;
 
 #namespace hud;

@@ -1,13 +1,13 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\gametypes\globallogic_ui.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spectating.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\persistence_shared.gsc;
-#using scripts\core_common\gamestate.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\gametypes\globallogic_ui;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spectating;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\persistence_shared;
+#using scripts\core_common\gamestate;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace teams;
 

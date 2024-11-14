@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_powerups;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_trial_board_everything;
 

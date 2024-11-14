@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_maptable.gsc;
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_melee_weapon.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_maptable;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_melee_weapon;
+#using scripts\zm_common\zm_loadout;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_weap_bowie;
 

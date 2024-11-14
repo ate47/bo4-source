@@ -1,4 +1,4 @@
-#using scripts\mp_common\item_world_util.gsc;
+#using scripts\mp_common\item_world_util;
 
 #namespace namespace_a0d533d1;
 

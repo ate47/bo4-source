@@ -1,5 +1,5 @@
-#using scripts\weapons\ballistic_knife.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\ballistic_knife;
+#using scripts\core_common\system_shared;
 
 #namespace ballistic_knife;
 

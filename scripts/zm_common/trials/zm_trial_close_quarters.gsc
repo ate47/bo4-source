@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm.gsc;
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_trial_close_quarters;
 

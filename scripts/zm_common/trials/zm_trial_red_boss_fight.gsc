@@ -1,14 +1,14 @@
-#using scripts\zm\zm_red_fasttravel.gsc;
-#using scripts\zm\zm_red_boss_battle.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_aoe.gsc;
-#using scripts\core_common\lui_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm\zm_red_fasttravel;
+#using scripts\zm\zm_red_boss_battle;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_aoe;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_red_boss_fight;
 

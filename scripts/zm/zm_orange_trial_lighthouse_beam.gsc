@@ -1,19 +1,19 @@
-#using scripts\zm\zm_orange_pap.gsc;
-#using scripts\zm\zm_orange_lighthouse.gsc;
-#using scripts\zm_common\zm_pack_a_punch.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm\zm_orange_pap;
+#using scripts\zm\zm_orange_lighthouse;
+#using scripts\zm_common\zm_pack_a_punch;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_loadout;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_orange_trial_lighthouse_beam;
 

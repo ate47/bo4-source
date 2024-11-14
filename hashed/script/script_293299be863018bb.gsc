@@ -1,7 +1,7 @@
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\zm_common\zm_sq.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm\zm_hms_util;
+#using scripts\zm_common\zm_sq;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
 
 #namespace namespace_6f62781f;
 

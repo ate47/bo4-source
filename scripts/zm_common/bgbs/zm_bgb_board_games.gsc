@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_blockers.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_blockers;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_bgb_board_games;
 

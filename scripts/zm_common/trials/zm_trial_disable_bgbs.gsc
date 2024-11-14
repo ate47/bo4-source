@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_bgb_pack.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_bgb_pack;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_disable_bgbs;
 

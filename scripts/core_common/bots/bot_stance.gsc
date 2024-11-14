@@ -1,6 +1,6 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\ai_shared;
 
 #namespace bot_stance;
 

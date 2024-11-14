@@ -1,5 +1,5 @@
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\rank_shared.gsc;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\rank_shared;
 
 #namespace gamerep;
 

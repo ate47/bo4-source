@@ -1,10 +1,10 @@
-#using scripts\zm_common\bgbs\zm_bgb_newtonian_negation.gsc;
-#using scripts\zm_common\zm_bgb_pack.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\bgbs\zm_bgb_newtonian_negation;
+#using scripts\zm_common\zm_bgb_pack;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_mansion_billiards;
 

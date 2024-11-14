@@ -1,7 +1,7 @@
-#using scripts\wz_common\wz_ai_utils.gsc;
-#using scripts\wz_common\wz_ai_zonemgr.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\wz_common\wz_ai_utils;
+#using scripts\wz_common\wz_ai_zonemgr;
+#using scripts\core_common\struct;
+#using scripts\core_common\array_shared;
 
 #namespace wz_escape_ai_zones;
 

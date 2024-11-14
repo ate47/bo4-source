@@ -1,19 +1,19 @@
-#using scripts\wz_common\gametypes\warzone.gsc;
-#using scripts\mp_common\player\player_record.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\wz_common\gametypes\warzone;
+#using scripts\mp_common\player\player_record;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
 #using script_1d29de500c266470;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\match_record.gsc;
-#using scripts\core_common\loot_tracking.gsc;
-#using scripts\core_common\gamestate.gsc;
-#using scripts\core_common\contracts_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\match_record;
+#using scripts\core_common\loot_tracking;
+#using scripts\core_common\gamestate;
+#using scripts\core_common\contracts_shared;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace wz_medals;
 

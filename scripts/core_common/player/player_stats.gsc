@@ -1,5 +1,5 @@
-#using scripts\weapons\weapons.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\weapons\weapons;
+#using scripts\core_common\util_shared;
 
 #namespace stats;
 

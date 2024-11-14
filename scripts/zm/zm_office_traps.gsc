@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_ui_inventory.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_items.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
+#using scripts\zm_common\zm_ui_inventory;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_items;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\flag_shared;
 
 #namespace zm_office_traps;
 

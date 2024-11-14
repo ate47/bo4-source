@@ -1,10 +1,10 @@
-#using scripts\killstreaks\killstreakrules_shared.gsc;
-#using scripts\killstreaks\airsupport.gsc;
-#using scripts\killstreaks\killstreaks_util.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\influencers_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\killstreaks\killstreakrules_shared;
+#using scripts\killstreaks\airsupport;
+#using scripts\killstreaks\killstreaks_util;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\influencers_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace planemortar;
 

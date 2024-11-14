@@ -1,8 +1,8 @@
-#using scripts\core_common\oob.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\oob;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace deployable;
 

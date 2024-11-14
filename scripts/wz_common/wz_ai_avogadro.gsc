@@ -1,20 +1,20 @@
-#using scripts\wz_common\wz_ai_zombie.gsc;
-#using scripts\wz_common\wz_ai_utils.gsc;
-#using scripts\mp_common\player\player_damage.gsc;
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
-#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\core_common\ai\archetype_avogadro.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\infection.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\wz_common\wz_ai_zombie;
+#using scripts\wz_common\wz_ai_utils;
+#using scripts\mp_common\player\player_damage;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\archetype_avogadro;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\infection;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace wz_ai_avogadro;
 

@@ -1,12 +1,12 @@
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\zm_common\zm_challenges.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_perks;
+#using scripts\zm_common\zm_challenges;
+#using scripts\zm_common\zm;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace zm_perk_mod_electric_cherry;
 

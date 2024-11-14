@@ -1,7 +1,7 @@
-#using scripts\weapons\heatseekingmissile.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\weapons\heatseekingmissile;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace multilockap_guidance;
 

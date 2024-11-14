@@ -1,14 +1,14 @@
-#using scripts\zm\zm_orange_water.gsc;
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_player.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm\zm_orange_water;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_player;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\struct;
 
 #namespace namespace_73718f25;
 

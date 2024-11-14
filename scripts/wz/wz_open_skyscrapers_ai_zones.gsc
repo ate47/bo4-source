@@ -1,4 +1,4 @@
-#using scripts\wz_common\wz_ai_zonemgr.gsc;
+#using scripts\wz_common\wz_ai_zonemgr;
 
 #namespace wz_open_skyscrapers_ai_zones;
 

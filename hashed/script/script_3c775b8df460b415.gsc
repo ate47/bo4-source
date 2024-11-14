@@ -1,11 +1,11 @@
-#using scripts\zm_common\trials\zm_trial_defend_area.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_round_logic.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\trials\zm_trial_defend_area;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_round_logic;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace namespace_9b24ce43;
 

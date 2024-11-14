@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_hero_weapon.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_hero_weapon;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace namespace_e7fb1aea;
 

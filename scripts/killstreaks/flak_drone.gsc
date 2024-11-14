@@ -1,10 +1,10 @@
-#using scripts\weapons\heatseekingmissile.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\vehicle_death_shared.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\weapons\heatseekingmissile;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\vehicle_death_shared;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace flak_drone;
 

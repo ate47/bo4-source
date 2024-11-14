@@ -1,20 +1,20 @@
-#using scripts\zm_common\trials\zm_trial_disable_buys.gsc;
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_laststand.gsc;
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\zm_common\zm_contracts.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\activecamo_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\trials\zm_trial_disable_buys;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_laststand;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_contracts;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\activecamo_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_melee_weapon;
 

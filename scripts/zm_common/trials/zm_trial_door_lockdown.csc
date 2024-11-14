@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_trial.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_door_lockdown;
 

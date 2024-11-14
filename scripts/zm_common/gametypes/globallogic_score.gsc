@@ -1,15 +1,15 @@
-#using scripts\zm_common\util.gsc;
-#using scripts\zm_common\bb.gsc;
-#using scripts\zm_common\gametypes\globallogic_utils.gsc;
-#using scripts\zm_common\gametypes\globallogic_audio.gsc;
-#using scripts\zm_common\gametypes\globallogic.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\rank_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\bb_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\util;
+#using scripts\zm_common\bb;
+#using scripts\zm_common\gametypes\globallogic_utils;
+#using scripts\zm_common\gametypes\globallogic_audio;
+#using scripts\zm_common\gametypes\globallogic;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\rank_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\bb_shared;
+#using scripts\core_common\struct;
 
 #namespace globallogic_score;
 

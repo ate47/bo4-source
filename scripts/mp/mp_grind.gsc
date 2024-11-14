@@ -1,6 +1,6 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\core_common\compass.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\load;
+#using scripts\core_common\compass;
 
 #namespace mp_grind;
 

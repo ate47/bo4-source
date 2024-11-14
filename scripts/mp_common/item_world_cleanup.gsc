@@ -1,12 +1,12 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\mp_common\item_world.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\abilities\gadgets\gadget_homunculus.gsc;
-#using scripts\abilities\gadgets\gadget_cymbal_monkey.gsc;
-#using scripts\abilities\gadgets\gadget_tripwire.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\abilities\gadgets\gadget_homunculus;
+#using scripts\abilities\gadgets\gadget_cymbal_monkey;
+#using scripts\abilities\gadgets\gadget_tripwire;
 
 #namespace item_world_cleanup;
 

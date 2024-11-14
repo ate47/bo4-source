@@ -1,11 +1,11 @@
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\abilities\ability_util.gsc;
-#using scripts\abilities\ability_player.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\abilities\ability_util;
+#using scripts\abilities\ability_player;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace gadget_health_regen;
 

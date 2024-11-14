@@ -1,12 +1,12 @@
 #using script_39ee47b0c71ab0f1;
 #using script_13ba67412d79c7f;
-#using scripts\zm_common\zm_utility.csc;
-#using scripts\zm_common\zm_trial.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_util;
 

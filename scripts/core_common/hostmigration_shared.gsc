@@ -1,6 +1,6 @@
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\potm_shared.gsc;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\potm_shared;
 
 #namespace hostmigration;
 

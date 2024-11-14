@@ -1,11 +1,11 @@
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_customgame.gsc;
-#using scripts\zm_common\callings\zm_callings_devgui.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_spawner;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_customgame;
+#using scripts\zm_common\callings\zm_callings_devgui;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
 
 #namespace zm_callings;
 

@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_player.gsc;
-#using scripts\zm_common\zm_laststand.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_player;
+#using scripts\zm_common\zm_laststand;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_bgb_join_the_party;
 

@@ -1,12 +1,12 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\gametypes\battlechatter.gsc;
-#using scripts\abilities\gadgets\gadget_vision_pulse.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\abilities\gadgets\gadget_vision_pulse;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace gadget_vision_pulse;
 

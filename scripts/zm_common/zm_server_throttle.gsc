@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\struct;
 
 #namespace zm_server_throttle;
 

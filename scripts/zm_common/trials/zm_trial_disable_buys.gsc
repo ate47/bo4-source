@@ -1,15 +1,15 @@
-#using scripts\zm_common\zm_traps.gsc;
-#using scripts\zm_common\zm_pack_a_punch.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_magicbox.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_traps;
+#using scripts\zm_common\zm_pack_a_punch;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_magicbox;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_disable_buys;
 

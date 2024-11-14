@@ -1,13 +1,13 @@
-#using scripts\zm_common\zm_utility.csc;
-#using scripts\zm_common\zm.csc;
-#using scripts\zm_common\util.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm;
+#using scripts\zm_common\util;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_zdraw;
 

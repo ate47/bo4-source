@@ -1,6 +1,6 @@
-#using scripts\zm\zm_lightning_chain.csc;
-#using scripts\zm_common\zm_bgb.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm\zm_lightning_chain;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\system_shared;
 
 #namespace zm_bgb_pop_shocks;
 

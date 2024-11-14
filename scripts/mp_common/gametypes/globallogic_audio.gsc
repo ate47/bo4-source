@@ -1,16 +1,16 @@
-#using scripts\mp_common\gametypes\round.gsc;
-#using scripts\mp_common\gametypes\outcome.gsc;
-#using scripts\mp_common\gametypes\match.gsc;
-#using scripts\mp_common\gametypes\globallogic_utils.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\mp_common\gametypes\battlechatter.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\sound_shared.gsc;
-#using scripts\core_common\music_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\audio_shared.gsc;
+#using scripts\mp_common\gametypes\round;
+#using scripts\mp_common\gametypes\outcome;
+#using scripts\mp_common\gametypes\match;
+#using scripts\mp_common\gametypes\globallogic_utils;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\sound_shared;
+#using scripts\core_common\music_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\audio_shared;
 
 #namespace globallogic_audio;
 

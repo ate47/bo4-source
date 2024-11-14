@@ -1,9 +1,9 @@
-#using scripts\core_common\throttle_shared.gsc;
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\player\player_loadout.gsc;
-#using scripts\core_common\ai\systems\shared.gsc;
-#using scripts\core_common\hud_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\throttle_shared;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\player\player_loadout;
+#using scripts\core_common\ai\systems\shared;
+#using scripts\core_common\hud_shared;
+#using scripts\core_common\array_shared;
 
 #namespace ammo;
 

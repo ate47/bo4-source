@@ -1,7 +1,7 @@
-#using scripts\core_common\system_shared.csc;
-#using scripts\killstreaks\ultimate_turret_shared.csc;
-#using scripts\killstreaks\mp\killstreak_vehicle.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\system_shared;
+#using scripts\killstreaks\ultimate_turret_shared;
+#using scripts\killstreaks\mp\killstreak_vehicle;
+#using scripts\core_common\struct;
 
 #namespace ultimate_turret;
 

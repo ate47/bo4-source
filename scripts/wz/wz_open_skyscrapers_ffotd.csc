@@ -1,4 +1,4 @@
-#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\system_shared;
 
 #namespace wz_open_skyscrapers_ffotd;
 

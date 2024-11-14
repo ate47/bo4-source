@@ -1,12 +1,12 @@
 #using script_24c32478acf44108;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_trial_zombie_speed_changes;
 

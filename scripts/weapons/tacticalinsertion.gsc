@@ -1,10 +1,10 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\damagefeedback_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\damagefeedback_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\challenges_shared;
 
 #namespace tacticalinsertion;
 

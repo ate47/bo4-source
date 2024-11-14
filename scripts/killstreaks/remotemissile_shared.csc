@@ -1,11 +1,11 @@
-#using scripts\killstreaks\killstreak_detect.csc;
+#using scripts\killstreaks\killstreak_detect;
 #using script_5520b91a8aa516ab;
 #using script_7bee869df82e0445;
-#using scripts\core_common\shoutcaster.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\shoutcaster;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace remotemissile;
 

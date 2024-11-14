@@ -1,6 +1,6 @@
-#using scripts\mp_common\item_world.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\array_shared.csc;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\array_shared;
 
 #namespace wz_jukebox;
 

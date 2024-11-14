@@ -1,5 +1,5 @@
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\killstreaks\killstreakrules_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\killstreaks\killstreakrules_shared;
 
 #namespace killstreakrules;
 

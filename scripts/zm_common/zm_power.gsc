@@ -1,20 +1,20 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\zm_common\zm_customgame.gsc;
-#using scripts\zm_common\zm_blockers.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\zm_common\util.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\potm_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\demo_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_perks;
+#using scripts\zm_common\zm_customgame;
+#using scripts\zm_common\zm_blockers;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\util;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\potm_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\demo_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_power;
 

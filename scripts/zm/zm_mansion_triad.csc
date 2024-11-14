@@ -1,15 +1,15 @@
-#using scripts\zm\ai\zm_ai_stoker.csc;
-#using scripts\zm_common\zm_weapons.csc;
-#using scripts\zm_common\zm_wallbuy.csc;
-#using scripts\zm_common\zm_utility.csc;
+#using scripts\zm\ai\zm_ai_stoker;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_wallbuy;
+#using scripts\zm_common\zm_utility;
 #using script_624a704d0f6bf28d;
-#using scripts\zm_common\zm_pack_a_punch.csc;
-#using scripts\zm_common\zm.csc;
-#using scripts\zm_common\load.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\beam_shared.csc;
+#using scripts\zm_common\zm_pack_a_punch;
+#using scripts\zm_common\zm;
+#using scripts\zm_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\beam_shared;
 
 #namespace mansion_triad;
 

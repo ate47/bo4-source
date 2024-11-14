@@ -1,5 +1,5 @@
-#using scripts\core_common\system_shared.csc;
-#using scripts\mp_common\item_world_fixup.csc;
+#using scripts\core_common\system_shared;
+#using scripts\mp_common\item_world_fixup;
 
 #namespace wz_common_fixup;
 

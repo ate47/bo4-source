@@ -1,17 +1,17 @@
-#using scripts\zm_common\gametypes\globallogic_score.gsc;
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm_pack_a_punch_util.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\table_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\gametypes\globallogic_score;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_spawner;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_pack_a_punch_util;
+#using scripts\zm_common\zm_loadout;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\table_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_daily_challenges;
 

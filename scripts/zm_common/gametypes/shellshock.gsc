@@ -1,8 +1,8 @@
-#using scripts\zm_common\util.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\util;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace shellshock;
 

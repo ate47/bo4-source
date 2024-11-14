@@ -1,8 +1,8 @@
-#using scripts\core_common\values_shared.gsc;
+#using scripts\core_common\values_shared;
 #using script_3819e7a1427df6d2;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace phalanx;
 

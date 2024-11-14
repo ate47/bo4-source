@@ -1,13 +1,13 @@
-#using scripts\core_common\visionset_mgr_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\status_effects\status_effect_explosive_damage.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\player\player_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\abilities\gadgets\gadget_health_regen.gsc;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\status_effects\status_effect_explosive_damage;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\player\player_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\abilities\gadgets\gadget_health_regen;
 
 #namespace healthoverlay;
 

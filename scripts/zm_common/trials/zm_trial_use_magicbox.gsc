@@ -1,8 +1,8 @@
-#using scripts\zm_common\callbacks.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\callbacks;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_use_magicbox;
 

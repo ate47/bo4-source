@@ -1,5 +1,5 @@
-#using scripts\killstreaks\killstreak_detect.csc;
-#using scripts\core_common\renderoverridebundle.csc;
+#using scripts\killstreaks\killstreak_detect;
+#using scripts\core_common\renderoverridebundle;
 #using script_4daa124bc391e7ed;
 
 #namespace killstreak_bundles;

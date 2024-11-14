@@ -1,5 +1,5 @@
-#using scripts\zm\zm_red_zstandard.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\zm\zm_red_zstandard;
+#using scripts\core_common\util_shared;
 
 #namespace zm_red_gamemodes;
 

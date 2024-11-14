@@ -1,12 +1,12 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\gametypes\globallogic_score.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\contracts_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\contracts_shared;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace contracts;
 

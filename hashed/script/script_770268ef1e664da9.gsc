@@ -1,10 +1,10 @@
 #using script_55cdac8f3eaa44cd;
 #using script_1b4af057274ffcd0;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\ai\planner_generic_commander.gsc;
-#using scripts\core_common\ai\planner_commander_utility.gsc;
-#using scripts\core_common\ai\planner_commander.gsc;
-#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\ai\planner_generic_commander;
+#using scripts\core_common\ai\planner_commander_utility;
+#using scripts\core_common\ai\planner_commander;
+#using scripts\core_common\ai\systems\planner;
 
 #namespace namespace_42cba673;
 

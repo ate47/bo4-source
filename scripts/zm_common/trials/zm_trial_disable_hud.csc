@@ -1,7 +1,7 @@
-#using scripts\zm\perk\zm_perk_death_perception.csc;
-#using scripts\zm_common\zm.csc;
-#using scripts\zm_common\zm_trial.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm\perk\zm_perk_death_perception;
+#using scripts\zm_common\zm;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_disable_hud;
 

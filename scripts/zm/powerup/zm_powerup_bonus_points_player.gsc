@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm_contracts.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_contracts;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\laststand_shared;
 
 #namespace zm_powerup_bonus_points_player;
 

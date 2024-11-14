@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\zm_common\zm.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm;
 #using script_24c32478acf44108;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_weap_wraith_fire;
 

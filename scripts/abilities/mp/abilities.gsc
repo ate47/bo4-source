@@ -1,16 +1,16 @@
-#using scripts\abilities\ability_util.gsc;
-#using scripts\abilities\ability_power.gsc;
-#using scripts\abilities\ability_player.gsc;
-#using scripts\abilities\ability_gadgets.gsc;
-#using scripts\core_common\visionset_mgr_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\abilities\ability_util;
+#using scripts\abilities\ability_power;
+#using scripts\abilities\ability_player;
+#using scripts\abilities\ability_gadgets;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace abilities;
 

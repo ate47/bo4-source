@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\perks.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_perks;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\perks;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_perk_mod_quick_revive;
 

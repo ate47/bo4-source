@@ -1,5 +1,5 @@
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\zm\ai\zm_ai_ghost.gsc;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\zm\ai\zm_ai_ghost;
 
 #namespace zm_ai_ghost_interface;
 

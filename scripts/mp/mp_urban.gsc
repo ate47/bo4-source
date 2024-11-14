@@ -1,13 +1,13 @@
-#using scripts\core_common\doors_shared.gsc;
-#using scripts\mp\mp_urban_sound.gsc;
-#using scripts\mp\mp_urban_fx.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\compass.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\doors_shared;
+#using scripts\mp\mp_urban_sound;
+#using scripts\mp\mp_urban_fx;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\compass;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace mp_urban;
 

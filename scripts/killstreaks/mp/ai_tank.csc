@@ -1,5 +1,5 @@
-#using scripts\core_common\system_shared.csc;
-#using scripts\killstreaks\ai_tank_shared.csc;
+#using scripts\core_common\system_shared;
+#using scripts\killstreaks\ai_tank_shared;
 
 #namespace ai_tank;
 

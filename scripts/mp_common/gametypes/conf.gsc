@@ -1,18 +1,18 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\player\player_utils.gsc;
-#using scripts\mp_common\gametypes\spawning.gsc;
-#using scripts\mp_common\gametypes\match.gsc;
-#using scripts\mp_common\gametypes\hostmigration.gsc;
-#using scripts\mp_common\gametypes\globallogic_score.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\mp_common\gametypes\dogtags.gsc;
-#using scripts\mp_common\gametypes\ct_tutorial_skirmish.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\spawning_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\player\player_utils;
+#using scripts\mp_common\gametypes\spawning;
+#using scripts\mp_common\gametypes\match;
+#using scripts\mp_common\gametypes\hostmigration;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\mp_common\gametypes\dogtags;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\spawning_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\gameobjects_shared;
 
 #namespace conf;
 

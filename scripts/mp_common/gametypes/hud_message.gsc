@@ -1,8 +1,8 @@
-#using scripts\mp_common\teams\teams.gsc;
-#using scripts\mp_common\gametypes\overtime.gsc;
-#using scripts\mp_common\gametypes\outcome.gsc;
-#using scripts\core_common\hud_message_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\mp_common\teams\teams;
+#using scripts\mp_common\gametypes\overtime;
+#using scripts\mp_common\gametypes\outcome;
+#using scripts\core_common\hud_message_shared;
+#using scripts\core_common\util_shared;
 
 #namespace hud_message;
 

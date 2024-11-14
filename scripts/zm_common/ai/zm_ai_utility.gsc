@@ -1,17 +1,17 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\ai\systems\gib;
 #using script_2c5daa95f8fec03c;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace zm_ai_utility;
 

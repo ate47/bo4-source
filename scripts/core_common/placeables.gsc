@@ -1,9 +1,9 @@
-#using scripts\weapons\deployable.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\oob.gsc;
-#using scripts\core_common\laststand_shared.gsc;
+#using scripts\weapons\deployable;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\oob;
+#using scripts\core_common\laststand_shared;
 
 #namespace placeables;
 

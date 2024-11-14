@@ -1,7 +1,7 @@
-#using scripts\core_common\math_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace archetype_damage_effects;
 

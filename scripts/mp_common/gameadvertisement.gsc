@@ -1,7 +1,7 @@
-#using scripts\mp_common\gametypes\globallogic_utils.gsc;
-#using scripts\mp_common\gametypes\dev.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\gametypes\globallogic_utils;
+#using scripts\mp_common\gametypes\dev;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace gameadvertisement;
 

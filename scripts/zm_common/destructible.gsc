@@ -1,8 +1,8 @@
-#using scripts\zm_common\gametypes\globallogic_player.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\gametypes\globallogic_player;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\struct;
 
 #namespace destructible;
 

@@ -1,9 +1,9 @@
-#using scripts\wz_common\wz_nixie_tubes.csc;
-#using scripts\wz\wz_escape_ffotd.csc;
-#using scripts\core_common\exploder_shared.csc;
-#using scripts\mp_common\item_world.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\util_shared.csc;
+#using scripts\wz_common\wz_nixie_tubes;
+#using scripts\wz\wz_escape_ffotd;
+#using scripts\core_common\exploder_shared;
+#using scripts\mp_common\item_world;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
 
 #namespace wz_escape;
 

@@ -1,14 +1,14 @@
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\zm\zm_office_ww_quest.gsc;
-#using scripts\zm\zm_office_teleporters.gsc;
+#using scripts\core_common\exploder_shared;
+#using scripts\zm\zm_office_ww_quest;
+#using scripts\zm\zm_office_teleporters;
 #using script_59a783d756554a80;
-#using scripts\zm_common\zm_pack_a_punch.gsc;
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_pack_a_punch;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_office_defcon;
 

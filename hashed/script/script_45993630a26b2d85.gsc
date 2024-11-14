@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_983e5028;
 

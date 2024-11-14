@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
 
 #namespace sticky_grenade;
 

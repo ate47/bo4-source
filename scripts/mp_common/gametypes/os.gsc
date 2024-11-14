@@ -1,5 +1,5 @@
-#using scripts\mp_common\player\player_loadout.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\mp_common\player\player_loadout;
+#using scripts\core_common\gameobjects_shared;
 
 #namespace os;
 

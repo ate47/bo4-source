@@ -1,18 +1,18 @@
-#using scripts\mp_common\player\player_killed.gsc;
-#using scripts\mp_common\player\player_damage.gsc;
-#using scripts\mp_common\player\player_disconnect.gsc;
-#using scripts\mp_common\player\player_connect.gsc;
-#using scripts\mp_common\player\player_callbacks.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\bots\bot_traversals.gsc;
-#using scripts\mp_common\gametypes\hostmigration.gsc;
-#using scripts\mp_common\gametypes\globallogic_scriptmover.gsc;
-#using scripts\mp_common\gametypes\globallogic_actor.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\core_common\globallogic\globallogic_vehicle.gsc;
-#using scripts\weapons\deployable.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\player\player_killed;
+#using scripts\mp_common\player\player_damage;
+#using scripts\mp_common\player\player_disconnect;
+#using scripts\mp_common\player\player_connect;
+#using scripts\mp_common\player\player_callbacks;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\bots\bot_traversals;
+#using scripts\mp_common\gametypes\hostmigration;
+#using scripts\mp_common\gametypes\globallogic_scriptmover;
+#using scripts\mp_common\gametypes\globallogic_actor;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\core_common\globallogic\globallogic_vehicle;
+#using scripts\weapons\deployable;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace callback;
 

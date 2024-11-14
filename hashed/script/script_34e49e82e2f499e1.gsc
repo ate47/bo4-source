@@ -1,8 +1,8 @@
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\struct;
 #using script_cb32d07c95e5628;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\mp_common\item_world.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_21c59b5;
 

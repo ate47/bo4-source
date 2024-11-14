@@ -1,20 +1,20 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm\zm_office_cleanup.gsc;
-#using scripts\zm\zm_office_teleporters.gsc;
-#using scripts\zm\zm_office_floors.gsc;
-#using scripts\zm_common\zm_cleanup_mgr.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm\zm_office_cleanup;
+#using scripts\zm\zm_office_teleporters;
+#using scripts\zm\zm_office_floors;
+#using scripts\zm_common\zm_cleanup_mgr;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_spawner;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_office_elevators;
 

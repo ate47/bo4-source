@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_melee_weapon.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_melee_weapon;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_weap_galvaknuckles_t8;
 

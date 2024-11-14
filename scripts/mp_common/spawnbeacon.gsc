@@ -1,19 +1,19 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\weapons\deployable.gsc;
-#using scripts\mp_common\userspawnselection.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\mp_common\draft.gsc;
-#using scripts\core_common\match_record.gsc;
-#using scripts\core_common\spawnbeacon_shared.gsc;
-#using scripts\core_common\influencers_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_score.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\weapons\weaponobjects;
+#using scripts\weapons\deployable;
+#using scripts\mp_common\userspawnselection;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\draft;
+#using scripts\core_common\match_record;
+#using scripts\core_common\spawnbeacon_shared;
+#using scripts\core_common\influencers_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\globallogic\globallogic_score;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\array_shared;
 
 #namespace spawn_beacon;
 

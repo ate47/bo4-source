@@ -1,4 +1,4 @@
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\clientfield_shared;
 
 #namespace archetype_human;
 

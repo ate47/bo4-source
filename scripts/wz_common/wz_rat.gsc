@@ -1,11 +1,11 @@
-#using scripts\mp_common\laststand_warzone.gsc;
-#using scripts\mp_common\item_world.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\rat_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\mp_common\laststand_warzone;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\rat_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flagsys_shared;
 
 #namespace rat;
 

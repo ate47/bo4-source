@@ -1,11 +1,11 @@
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\weapons\weapons.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\killstreaks\killstreakrules_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\weapons\weapons;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\math_shared;
+#using scripts\killstreaks\killstreakrules_shared;
+#using scripts\core_common\struct;
 
 #namespace airsupport;
 

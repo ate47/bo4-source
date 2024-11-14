@@ -1,6 +1,6 @@
-#using scripts\core_common\throttle_shared.gsc;
-#using scripts\core_common\ai\archetype_utility.gsc;
-#using scripts\core_common\ai\systems\init.gsc;
+#using scripts\core_common\throttle_shared;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\systems\init;
 
 #namespace shared;
 

@@ -1,6 +1,6 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\bots\bot_position.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\bots\bot_position;
 
 #namespace mp_bot_position;
 

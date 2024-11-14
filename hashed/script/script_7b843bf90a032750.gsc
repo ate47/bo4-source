@@ -1,11 +1,11 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_round_logic.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_round_logic;
+#using scripts\zm_common\zm_spawner;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_a476311c;
 

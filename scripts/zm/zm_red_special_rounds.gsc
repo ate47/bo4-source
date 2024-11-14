@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_round_spawning.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_round_spawning;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\math_shared;
 
 #namespace zm_red_special_rounds;
 

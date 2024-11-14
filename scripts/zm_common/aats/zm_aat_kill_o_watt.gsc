@@ -1,10 +1,10 @@
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\zm_common\callbacks.gsc;
-#using scripts\zm\zm_lightning_chain.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\aat_shared.gsc;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\zm_common\callbacks;
+#using scripts\zm\zm_lightning_chain;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\aat_shared;
 
 #namespace zm_aat_kill_o_watt;
 

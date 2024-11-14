@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_pack_a_punch_util.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_pack_a_punch_util;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_upgrade_multiple;
 

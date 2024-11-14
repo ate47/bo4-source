@@ -1,5 +1,5 @@
-#using scripts\core_common\ai\planner_commander.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\planner_commander;
+#using scripts\core_common\ai\systems\ai_interface;
 
 #namespace commanderinterface;
 

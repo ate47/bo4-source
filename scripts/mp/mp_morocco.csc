@@ -1,6 +1,6 @@
-#using scripts\mp\mp_morocco_scripted.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\util_shared.csc;
+#using scripts\mp\mp_morocco_scripted;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
 
 #namespace mp_morocco;
 

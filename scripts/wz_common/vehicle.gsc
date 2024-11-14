@@ -1,22 +1,22 @@
-#using scripts\abilities\gadgets\gadget_jammer_shared.gsc;
+#using scripts\abilities\gadgets\gadget_jammer_shared;
 #using script_578e247c429144f6;
 #using script_48bb1764a662152d;
 #using script_1cf46b33555422b7;
 #using script_5961deb533dad533;
-#using scripts\wz_common\wz_progression.gsc;
-#using scripts\wz_common\wz_contracts.gsc;
-#using scripts\mp_common\item_world.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\infection.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\vehicle_death_shared.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\wz_common\wz_progression;
+#using scripts\wz_common\wz_contracts;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\infection;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\vehicle_death_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
 
 #namespace wz_vehicle;
 

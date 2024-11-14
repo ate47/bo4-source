@@ -1,8 +1,8 @@
-#using scripts\core_common\sound_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\sound_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace ambient;
 

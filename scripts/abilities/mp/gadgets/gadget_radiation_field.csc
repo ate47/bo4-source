@@ -1,5 +1,5 @@
-#using scripts\abilities\gadgets\gadget_radiation_field.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\abilities\gadgets\gadget_radiation_field;
+#using scripts\core_common\system_shared;
 
 #namespace gadget_radiation_field;
 

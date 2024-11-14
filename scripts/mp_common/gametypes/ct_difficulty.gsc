@@ -1,15 +1,15 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\mp_common\gametypes\ct_utils.gsc;
-#using scripts\mp_common\gametypes\ct_ui.gsc;
-#using scripts\mp_common\gametypes\ct_bots.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\potm_shared.gsc;
-#using scripts\core_common\player\player_role.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\mp_common\gametypes\ct_utils;
+#using scripts\mp_common\gametypes\ct_ui;
+#using scripts\mp_common\gametypes\ct_bots;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\potm_shared;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
 
 #namespace ct_difficulty;
 

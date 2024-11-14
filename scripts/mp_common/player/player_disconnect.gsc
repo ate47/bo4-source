@@ -1,9 +1,9 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\gamerep.gsc;
-#using scripts\mp_common\player\player_record.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\core_common\gamestate.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\gamerep;
+#using scripts\mp_common\player\player_record;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\core_common\gamestate;
 
 #namespace player;
 

@@ -1,6 +1,6 @@
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\callbacks_shared;
 #using script_3819e7a1427df6d2;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\clientfield_shared;
 
 #namespace archetype_damage_effects;
 

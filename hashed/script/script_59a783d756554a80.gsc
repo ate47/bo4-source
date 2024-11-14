@@ -1,15 +1,15 @@
-#using scripts\zm\zm_office_floors.gsc;
-#using scripts\zm_common\zm_characters.gsc;
-#using scripts\zm_common\callbacks.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\zm_common\zm_vo.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm\zm_office_floors;
+#using scripts\zm_common\zm_characters;
+#using scripts\zm_common\callbacks;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\zm_vo;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_8f53e87b;
 

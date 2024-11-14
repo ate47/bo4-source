@@ -1,11 +1,11 @@
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\array_shared;
 
 #namespace nesting_doll_grenade;
 

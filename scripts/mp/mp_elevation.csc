@@ -1,9 +1,9 @@
-#using scripts\mp\mp_elevation_sound.csc;
-#using scripts\mp\mp_elevation_fx.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\mp_common\util.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\util_shared.csc;
+#using scripts\mp\mp_elevation_sound;
+#using scripts\mp\mp_elevation_fx;
+#using scripts\core_common\callbacks_shared;
+#using scripts\mp_common\util;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
 
 #namespace mp_elevation;
 

@@ -1,8 +1,8 @@
 #using script_c5bc2e592d581d0;
-#using scripts\core_common\ai\planner_squad_utility.gsc;
-#using scripts\core_common\ai\planner_commander_utility.gsc;
-#using scripts\core_common\ai\planner_commander.gsc;
-#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\ai\planner_squad_utility;
+#using scripts\core_common\ai\planner_commander_utility;
+#using scripts\core_common\ai\planner_commander;
+#using scripts\core_common\ai\systems\planner;
 
 #namespace namespace_42cba673;
 

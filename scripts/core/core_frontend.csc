@@ -1,6 +1,6 @@
-#using scripts\core\core_frontend_sound.csc;
-#using scripts\core\core_frontend_fx.csc;
-#using scripts\core_common\util_shared.csc;
+#using scripts\core\core_frontend_sound;
+#using scripts\core\core_frontend_fx;
+#using scripts\core_common\util_shared;
 
 #namespace core_frontend;
 

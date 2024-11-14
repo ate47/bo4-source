@@ -1,6 +1,6 @@
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\mp_common\item_world.gsc;
-#using scripts\mp_common\item_drop.gsc;
+#using scripts\core_common\player\player_stats;
+#using scripts\mp_common\item_world;
+#using scripts\mp_common\item_drop;
 
 #namespace namespace_10277d51;
 

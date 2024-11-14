@@ -1,5 +1,5 @@
-#using scripts\wz_common\character_unlock_fixup.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\wz_common\character_unlock_fixup;
+#using scripts\core_common\system_shared;
 
 #namespace character_unlock_bruno_fixup;
 

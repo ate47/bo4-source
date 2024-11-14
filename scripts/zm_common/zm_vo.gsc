@@ -1,18 +1,18 @@
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_round_spawning.gsc;
-#using scripts\zm_common\zm_round_logic.gsc;
-#using scripts\zm_common\zm_characters.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\player\player_role.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_round_spawning;
+#using scripts\zm_common\zm_round_logic;
+#using scripts\zm_common\zm_characters;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace zm_vo;
 

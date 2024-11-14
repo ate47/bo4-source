@@ -1,13 +1,13 @@
-#using scripts\mp_common\player\player_utils.gsc;
-#using scripts\mp_common\gametypes\globallogic_score.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\hud_util_shared.gsc;
-#using scripts\core_common\hud_message_shared.gsc;
-#using scripts\core_common\gamestate.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\mp_common\player\player_utils;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\hud_util_shared;
+#using scripts\core_common\hud_message_shared;
+#using scripts\core_common\gamestate;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\flagsys_shared;
 
 #namespace player;
 

@@ -1,7 +1,7 @@
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\util_shared;
 
 #namespace rat;
 

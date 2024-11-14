@@ -1,8 +1,8 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\math_shared.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\math_shared;
 
 #namespace sprint_boost_grenade;
 

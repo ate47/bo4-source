@@ -1,7 +1,7 @@
-#using scripts\core_common\ai\systems\fx_character.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\ai_shared.csc;
+#using scripts\core_common\ai\systems\fx_character;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace zm_ai_avogadro;
 

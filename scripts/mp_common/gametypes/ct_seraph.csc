@@ -1,6 +1,6 @@
-#using scripts\mp_common\gametypes\ct_core.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\mp_common\gametypes\ct_core;
+#using scripts\core_common\struct;
+#using scripts\core_common\clientfield_shared;
 #using script_4196ba3abca31535;
 
 #namespace ct_seraph;

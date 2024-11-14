@@ -1,5 +1,5 @@
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\system_shared;
 
 #namespace ai_puppeteer;
 

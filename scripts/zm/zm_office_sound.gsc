@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_office_sound;
 

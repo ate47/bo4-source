@@ -1,14 +1,14 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\throttle_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm\zm_hms_util;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\throttle_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace music_box;
 

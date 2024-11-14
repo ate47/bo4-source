@@ -1,7 +1,7 @@
-#using scripts\mp_common\item_world_fixup.csc;
-#using scripts\mp_common\item_inventory.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\mp_common\item_world_fixup;
+#using scripts\mp_common\item_inventory;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace character_unlock;
 

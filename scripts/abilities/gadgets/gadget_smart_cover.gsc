@@ -1,19 +1,19 @@
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_score.gsc;
-#using scripts\core_common\influencers_shared.gsc;
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\weapons\deployable.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\gestures.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\damagefeedback_shared.gsc;
-#using scripts\core_common\damage.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\abilities\ability_player.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\globallogic\globallogic_score;
+#using scripts\core_common\influencers_shared;
+#using scripts\weapons\weaponobjects;
+#using scripts\weapons\deployable;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\gestures;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\damagefeedback_shared;
+#using scripts\core_common\damage;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\abilities\ability_player;
+#using scripts\core_common\array_shared;
 
 #namespace smart_cover;
 

@@ -1,11 +1,11 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
-#using scripts\zm_common\zm_laststand.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\ai\zombie_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_spawner;
+#using scripts\zm_common\zm_laststand;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\ai\zombie_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_ai_faller;
 

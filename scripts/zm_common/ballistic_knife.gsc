@@ -1,14 +1,14 @@
-#using scripts\zm_common\zm_player.gsc;
-#using scripts\zm_common\zm_laststand.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\weapons\ballistic_knife.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_player;
+#using scripts\zm_common\zm_laststand;
+#using scripts\zm_common\zm;
+#using scripts\weapons\weaponobjects;
+#using scripts\weapons\ballistic_knife;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace ballistic_knife;
 

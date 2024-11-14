@@ -1,13 +1,13 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\bots\bot_action.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\bots\bot_position.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\bots\bot_action;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\bots\bot_position;
 
 #namespace zm_bot_position;
 

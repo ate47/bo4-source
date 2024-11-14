@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_customgame.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\zm_common\zm_customgame;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\util_shared;
 
 #namespace namespace_6a81d072;
 

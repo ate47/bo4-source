@@ -1,4 +1,4 @@
-#using scripts\core_common\flagsys_shared.csc;
+#using scripts\core_common\flagsys_shared;
 
 #namespace item_world_fixup;
 

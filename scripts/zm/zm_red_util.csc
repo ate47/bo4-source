@@ -1,4 +1,4 @@
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\core_common\clientfield_shared;
 #using script_63fbdc46fe0ddab1;
 
 #namespace zm_red_util;

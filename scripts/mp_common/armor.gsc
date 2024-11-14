@@ -1,10 +1,10 @@
-#using scripts\weapons\weapon_utils.gsc;
-#using scripts\core_common\weapons_shared.gsc;
-#using scripts\core_common\perks.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\weapons\weapon_utils;
+#using scripts\core_common\weapons_shared;
+#using scripts\core_common\perks;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace armor;
 

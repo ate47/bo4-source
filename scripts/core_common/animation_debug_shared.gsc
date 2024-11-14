@@ -1,6 +1,6 @@
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\animation_shared;
 
 #namespace animation;
 

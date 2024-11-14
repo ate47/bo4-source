@@ -1,6 +1,6 @@
-#using scripts\weapons\tacticalinsertion.gsc;
-#using scripts\weapons\hacker_tool.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\tacticalinsertion;
+#using scripts\weapons\hacker_tool;
+#using scripts\core_common\system_shared;
 
 #namespace tacticalinsertion;
 

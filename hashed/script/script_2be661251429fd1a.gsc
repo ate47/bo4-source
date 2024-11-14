@@ -1,19 +1,19 @@
-#using scripts\weapons\localheal.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\killstreaks\killstreakrules_shared.gsc;
-#using scripts\killstreaks\killstreaks_util.gsc;
-#using scripts\mp_common\teams\teams.gsc;
-#using scripts\mp_common\supplypod.gsc;
-#using scripts\abilities\gadgets\gadget_smart_cover.gsc;
-#using scripts\abilities\gadgets\gadget_concertina_wire.gsc;
-#using scripts\weapons\deployable.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\bots\bot_position.gsc;
-#using scripts\core_common\bots\bot_action.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\weapons\localheal;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\killstreakrules_shared;
+#using scripts\killstreaks\killstreaks_util;
+#using scripts\mp_common\teams\teams;
+#using scripts\mp_common\supplypod;
+#using scripts\abilities\gadgets\gadget_smart_cover;
+#using scripts\abilities\gadgets\gadget_concertina_wire;
+#using scripts\weapons\deployable;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\bots\bot_position;
+#using scripts\core_common\bots\bot_action;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\ai_shared;
 
 #namespace namespace_104c3c75;
 

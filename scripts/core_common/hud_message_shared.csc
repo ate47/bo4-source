@@ -1,4 +1,4 @@
-#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\system_shared;
 #using script_61ec16c9c8ab8dcc;
 
 #namespace hud_message;

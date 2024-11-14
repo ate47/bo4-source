@@ -1,7 +1,7 @@
-#using scripts\mp_common\util.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\util_shared.csc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\load;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\util_shared;
 
 #namespace mp_station;
 

@@ -1,5 +1,5 @@
-#using scripts\weapons\shockrifle.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\shockrifle;
+#using scripts\core_common\system_shared;
 
 #namespace shockrifle;
 

@@ -1,7 +1,7 @@
-#using scripts\mp_common\item_world_fixup.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\mp_common\item_world_fixup;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace character_unlock_fixup;
 

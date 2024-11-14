@@ -1,7 +1,7 @@
-#using scripts\mp\mp_icebreaker_water.gsc;
-#using scripts\mp\mp_icebreaker_scripted.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\core_common\compass.gsc;
+#using scripts\mp\mp_icebreaker_water;
+#using scripts\mp\mp_icebreaker_scripted;
+#using scripts\mp_common\load;
+#using scripts\core_common\compass;
 
 #namespace mp_icebreaker;
 

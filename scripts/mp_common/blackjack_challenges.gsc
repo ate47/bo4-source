@@ -1,9 +1,9 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\player\player_role.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace blackjack_challenges;
 

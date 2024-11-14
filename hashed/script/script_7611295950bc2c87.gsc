@@ -1,5 +1,5 @@
-#using scripts\mp_common\item_world.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_518109fe;
 

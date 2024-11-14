@@ -1,14 +1,14 @@
-#using scripts\killstreaks\planemortar_shared.gsc;
-#using scripts\killstreaks\killstreakrules_shared.gsc;
-#using scripts\killstreaks\killstreak_hacking.gsc;
-#using scripts\killstreaks\airsupport.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\weapons\heatseekingmissile.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\influencers_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
+#using scripts\killstreaks\planemortar_shared;
+#using scripts\killstreaks\killstreakrules_shared;
+#using scripts\killstreaks\killstreak_hacking;
+#using scripts\killstreaks\airsupport;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\core_common\util_shared;
+#using scripts\weapons\heatseekingmissile;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\influencers_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\challenges_shared;
 
 #namespace artillery_barrage;
 

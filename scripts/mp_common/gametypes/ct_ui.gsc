@@ -1,11 +1,11 @@
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\mp_common\gametypes\round.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\mp_common\gametypes\ct_vo.gsc;
-#using scripts\mp_common\gametypes\ct_utils.gsc;
-#using scripts\mp_common\gametypes\ct_gadgets.gsc;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\mp_common\gametypes\round;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\mp_common\gametypes\ct_vo;
+#using scripts\mp_common\gametypes\ct_utils;
+#using scripts\mp_common\gametypes\ct_gadgets;
 
 #namespace ct_ui;
 

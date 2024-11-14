@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\zm_common\zm_armor.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_armor;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\laststand_shared;
 
 #namespace zm_bgb_suit_up;
 

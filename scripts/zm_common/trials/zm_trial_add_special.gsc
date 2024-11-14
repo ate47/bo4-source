@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_round_spawning.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_round_spawning;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_add_special;
 

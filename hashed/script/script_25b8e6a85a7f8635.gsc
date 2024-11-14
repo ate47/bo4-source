@@ -1,18 +1,18 @@
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\zm\zm_white_util.gsc;
-#using scripts\zm_common\zm_pack_a_punch_util.gsc;
-#using scripts\zm_common\zm_pack_a_punch.gsc;
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\core_common\animation_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\trigger_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\zm\zm_white_util;
+#using scripts\zm_common\zm_pack_a_punch_util;
+#using scripts\zm_common\zm_pack_a_punch;
+#using scripts\zm_common\zm_perks;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\trigger_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_9efb8d22;
 

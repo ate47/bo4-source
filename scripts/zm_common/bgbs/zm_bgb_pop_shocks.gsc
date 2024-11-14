@@ -1,12 +1,12 @@
-#using scripts\core_common\ai\systems\gib.gsc;
-#using scripts\zm\zm_lightning_chain.gsc;
-#using scripts\zm_common\trials\zm_trial_headshots_only.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\systems\gib;
+#using scripts\zm\zm_lightning_chain;
+#using scripts\zm_common\trials\zm_trial_headshots_only;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\ai_shared;
 
 #namespace zm_bgb_pop_shocks;
 

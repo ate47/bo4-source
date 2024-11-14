@@ -1,17 +1,17 @@
 #using script_702b73ee97d18efe;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\mp_common\player\player_loadout.gsc;
-#using scripts\mp_common\pickup_health.gsc;
-#using scripts\mp_common\perks.gsc;
-#using scripts\mp_common\gametypes\menus.gsc;
-#using scripts\mp_common\armor.gsc;
-#using scripts\abilities\ability_player.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\player\player_loadout.gsc;
-#using scripts\core_common\loadout_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\mp_common\player\player_loadout;
+#using scripts\mp_common\pickup_health;
+#using scripts\mp_common\perks;
+#using scripts\mp_common\gametypes\menus;
+#using scripts\mp_common\armor;
+#using scripts\abilities\ability_player;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\player\player_loadout;
+#using scripts\core_common\loadout_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace dynamic_loadout;
 

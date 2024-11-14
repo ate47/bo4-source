@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_pack_a_punch_util.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\activecamo_shared.gsc;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_pack_a_punch_util;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\activecamo_shared;
 
 #namespace zm_camos;
 

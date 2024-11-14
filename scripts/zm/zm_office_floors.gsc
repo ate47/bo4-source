@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\laststand_shared;
 
 #namespace zm_office_floors;
 

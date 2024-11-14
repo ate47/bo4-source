@@ -1,16 +1,16 @@
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\core_common\lui_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\music_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\music_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_c1466447;
 

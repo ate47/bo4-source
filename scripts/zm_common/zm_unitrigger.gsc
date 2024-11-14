@@ -1,13 +1,13 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_lockdown_util.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_lockdown_util;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_unitrigger;
 

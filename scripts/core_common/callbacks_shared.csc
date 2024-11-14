@@ -1,12 +1,12 @@
-#using scripts\core_common\lui_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\scene_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\exploder_shared.csc;
-#using scripts\core_common\audio_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\animation_shared.csc;
-#using scripts\core_common\activecamo_shared.csc;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\audio_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\activecamo_shared;
 
 #namespace callback;
 

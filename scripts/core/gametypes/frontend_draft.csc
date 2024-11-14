@@ -1,9 +1,9 @@
-#using scripts\core_common\dialog_shared.csc;
-#using scripts\core_common\player\player_role.csc;
-#using scripts\core_common\character_customization.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\dialog_shared;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\character_customization;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace draft;
 

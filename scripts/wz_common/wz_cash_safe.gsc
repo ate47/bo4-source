@@ -1,13 +1,13 @@
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\mp_common\item_world.gsc;
-#using scripts\mp_common\item_inventory.gsc;
-#using scripts\mp_common\item_drop.gsc;
-#using scripts\mp_common\gametypes\globallogic_score.gsc;
-#using scripts\mp_common\dynent_world.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\player\player_stats;
+#using scripts\mp_common\item_world;
+#using scripts\mp_common\item_inventory;
+#using scripts\mp_common\item_drop;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\mp_common\dynent_world;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace wz_cash_safe;
 

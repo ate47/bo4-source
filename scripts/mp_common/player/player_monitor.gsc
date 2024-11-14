@@ -1,10 +1,10 @@
-#using scripts\mp_common\bb.gsc;
-#using scripts\core_common\match_record.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\gamestate.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\mp_common\gametypes\globallogic_utils.gsc;
+#using scripts\mp_common\bb;
+#using scripts\core_common\match_record;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\gamestate;
+#using scripts\core_common\clientfield_shared;
+#using scripts\mp_common\gametypes\globallogic_utils;
 
 #namespace player_monitor;
 

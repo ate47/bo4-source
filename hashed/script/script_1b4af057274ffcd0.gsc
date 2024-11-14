@@ -1,11 +1,11 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\ai\strategic_command.gsc;
-#using scripts\core_common\ai\planner_squad.gsc;
-#using scripts\core_common\ai\planner_commander.gsc;
-#using scripts\core_common\ai\systems\planner_blackboard.gsc;
-#using scripts\core_common\ai\systems\planner.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\ai\strategic_command;
+#using scripts\core_common\ai\planner_squad;
+#using scripts\core_common\ai\planner_commander;
+#using scripts\core_common\ai\systems\planner_blackboard;
+#using scripts\core_common\ai\systems\planner;
+#using scripts\core_common\ai\systems\blackboard;
 
 #namespace namespace_e4f52212;
 

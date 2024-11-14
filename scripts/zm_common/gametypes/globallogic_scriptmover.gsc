@@ -1,4 +1,4 @@
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\callbacks_shared;
 
 #namespace globallogic_scriptmover;
 

@@ -1,11 +1,11 @@
-#using scripts\killstreaks\killstreaks_util.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\bots\bot_position.gsc;
-#using scripts\core_common\bots\bot_stance.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\killstreaks\killstreaks_util;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\bots\bot_position;
+#using scripts\core_common\bots\bot_stance;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\ai_shared;
 
 #namespace bot_action;
 

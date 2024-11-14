@@ -1,14 +1,14 @@
-#using scripts\zm_common\zm_round_logic.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\zm_common\util.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_round_logic;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm;
+#using scripts\zm_common\util;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_game_module;
 

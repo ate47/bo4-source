@@ -1,19 +1,19 @@
-#using scripts\mp_common\player\player_utils.gsc;
-#using scripts\mp_common\gametypes\overtime.gsc;
-#using scripts\mp_common\gametypes\outcome.gsc;
-#using scripts\mp_common\gametypes\hud_message.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\potm_shared.gsc;
-#using scripts\core_common\player\player_shared.gsc;
-#using scripts\core_common\player\player_role.gsc;
-#using scripts\core_common\killcam_shared.gsc;
-#using scripts\core_common\music_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\mp_common\player\player_utils;
+#using scripts\mp_common\gametypes\overtime;
+#using scripts\mp_common\gametypes\outcome;
+#using scripts\mp_common\gametypes\hud_message;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\potm_shared;
+#using scripts\core_common\player\player_shared;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\killcam_shared;
+#using scripts\core_common\music_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
 
 #namespace display_transition;
 

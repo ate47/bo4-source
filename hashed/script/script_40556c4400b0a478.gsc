@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_devgui.gsc;
-#using scripts\zm\ai\zm_ai_brutus.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
+#using scripts\zm_common\zm_devgui;
+#using scripts\zm\ai\zm_ai_brutus;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
 
 #namespace namespace_9d28c60;
 

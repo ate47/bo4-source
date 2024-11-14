@@ -1,5 +1,5 @@
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\zm\ai\zm_ai_gladiator.gsc;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\zm\ai\zm_ai_gladiator;
 
 #namespace zm_ai_gladiator_interface;
 

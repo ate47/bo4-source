@@ -1,4 +1,4 @@
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_81245006;
 

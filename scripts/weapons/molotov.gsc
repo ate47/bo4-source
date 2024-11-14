@@ -1,16 +1,16 @@
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\core_common\influencers_shared.gsc;
-#using scripts\weapons\weapons.gsc;
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_score.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\killcam_shared.gsc;
-#using scripts\core_common\entityheadicons_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\core_common\influencers_shared;
+#using scripts\weapons\weapons;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\globallogic\globallogic_score;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\killcam_shared;
+#using scripts\core_common\entityheadicons_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace molotov;
 

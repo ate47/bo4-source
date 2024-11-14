@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\callbacks.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\callbacks;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_white_trophies;
 

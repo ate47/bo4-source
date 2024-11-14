@@ -1,6 +1,6 @@
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\popups_shared.gsc;
-#using scripts\killstreaks\emp_shared.gsc;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\popups_shared;
+#using scripts\killstreaks\emp_shared;
 
 #namespace killstreakrules;
 

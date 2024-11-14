@@ -1,13 +1,13 @@
-#using scripts\mp_common\util.gsc;
+#using scripts\mp_common\util;
 #using script_6b221588ece2c4aa;
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\weapons_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\weapons_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace weaponobjects;
 

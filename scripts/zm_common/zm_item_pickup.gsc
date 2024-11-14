@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_unitrigger;
 
 #namespace zm_item_pickup;
 

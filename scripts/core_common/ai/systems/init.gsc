@@ -1,6 +1,6 @@
-#using scripts\core_common\ai\archetype_utility.gsc;
-#using scripts\core_common\ai\systems\shared.gsc;
-#using scripts\core_common\name_shared.gsc;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\systems\shared;
+#using scripts\core_common\name_shared;
 
 #namespace init;
 

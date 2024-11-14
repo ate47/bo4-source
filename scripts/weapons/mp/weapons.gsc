@@ -1,6 +1,6 @@
-#using scripts\weapons\weapons.gsc;
-#using scripts\core_common\weapons_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\weapons;
+#using scripts\core_common\weapons_shared;
+#using scripts\core_common\system_shared;
 
 #namespace weapons;
 

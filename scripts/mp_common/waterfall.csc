@@ -1,7 +1,7 @@
-#using scripts\core_common\water_surface.csc;
-#using scripts\core_common\trigger_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\filter_shared.csc;
+#using scripts\core_common\water_surface;
+#using scripts\core_common\trigger_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\filter_shared;
 
 #namespace waterfall;
 

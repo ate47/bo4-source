@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
 
 #namespace zm_bgb_conflagration_liquidation;
 

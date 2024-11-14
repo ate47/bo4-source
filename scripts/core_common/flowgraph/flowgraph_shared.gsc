@@ -1,4 +1,4 @@
-#using scripts\core_common\flowgraph\flowgraph_core.gsc;
+#using scripts\core_common\flowgraph\flowgraph_core;
 
 #namespace flowgraph_logic;
 

@@ -1,6 +1,6 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\duplicaterender_mgr.csc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\duplicaterender_mgr;
 
 #namespace antipersonnel_guidance;
 

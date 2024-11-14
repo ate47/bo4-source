@@ -1,4 +1,4 @@
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_frontend_zm_bgb_chance;
 

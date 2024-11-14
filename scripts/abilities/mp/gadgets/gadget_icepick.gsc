@@ -1,10 +1,10 @@
-#using scripts\mp_common\callbacks.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\abilities\gadgets\gadget_icepick_shared.gsc;
+#using scripts\mp_common\callbacks;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
+#using scripts\abilities\gadgets\gadget_icepick_shared;
 
 #namespace icepick;
 

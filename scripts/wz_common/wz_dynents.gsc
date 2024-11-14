@@ -1,17 +1,17 @@
-#using scripts\weapons\trophy_system.gsc;
-#using scripts\weapons\sensor_dart.gsc;
-#using scripts\abilities\gadgets\gadget_homunculus.gsc;
-#using scripts\abilities\gadgets\gadget_cymbal_monkey.gsc;
-#using scripts\abilities\gadgets\gadget_tripwire.gsc;
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\dynent_world.gsc;
-#using scripts\core_common\gestures.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\trophy_system;
+#using scripts\weapons\sensor_dart;
+#using scripts\abilities\gadgets\gadget_homunculus;
+#using scripts\abilities\gadgets\gadget_cymbal_monkey;
+#using scripts\abilities\gadgets\gadget_tripwire;
+#using scripts\mp_common\util;
+#using scripts\mp_common\dynent_world;
+#using scripts\core_common\gestures;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace wz_dynents;
 

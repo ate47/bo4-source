@@ -1,4 +1,4 @@
-#using scripts\core_common\flagsys_shared.gsc;
+#using scripts\core_common\flagsys_shared;
 
 #namespace system;
 

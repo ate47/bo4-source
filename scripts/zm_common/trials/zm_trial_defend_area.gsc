@@ -1,18 +1,18 @@
 #using script_2595527427ea71eb;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\zm_common\zm_laststand.gsc;
-#using scripts\core_common\bots\bot_util.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_laststand;
+#using scripts\core_common\bots\bot_util;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_trial_defend_area;
 

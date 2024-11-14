@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_bgb.csc;
-#using scripts\core_common\visionset_mgr_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_bgb_now_you_see_me;
 

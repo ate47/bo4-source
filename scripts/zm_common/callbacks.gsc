@@ -1,16 +1,16 @@
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\bots\bot_traversals.gsc;
-#using scripts\zm_common\gametypes\hostmigration.gsc;
-#using scripts\zm_common\gametypes\globallogic_scriptmover.gsc;
-#using scripts\zm_common\gametypes\globallogic_player.gsc;
-#using scripts\zm_common\gametypes\globallogic_actor.gsc;
-#using scripts\zm_common\gametypes\globallogic.gsc;
-#using scripts\core_common\globallogic\globallogic_vehicle.gsc;
-#using scripts\weapons\deployable.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\bots\bot_traversals;
+#using scripts\zm_common\gametypes\hostmigration;
+#using scripts\zm_common\gametypes\globallogic_scriptmover;
+#using scripts\zm_common\gametypes\globallogic_player;
+#using scripts\zm_common\gametypes\globallogic_actor;
+#using scripts\zm_common\gametypes\globallogic;
+#using scripts\core_common\globallogic\globallogic_vehicle;
+#using scripts\weapons\deployable;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\struct;
 
 #namespace callback;
 

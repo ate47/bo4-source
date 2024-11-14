@@ -1,7 +1,7 @@
-#using scripts\mp_common\item_drop.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\mp_common\item_drop;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\clientfield_shared;
 
 #namespace wz_ai;
 

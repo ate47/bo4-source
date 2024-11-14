@@ -1,8 +1,8 @@
-#using scripts\zm\zm_hms_util.gsc;
+#using scripts\zm\zm_hms_util;
 #using script_3e5ec44cfab7a201;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\flag_shared.gsc;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\flag_shared;
 
 #namespace namespace_bd74bbd2;
 

@@ -1,9 +1,9 @@
 #using script_24c32478acf44108;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\ai\zombie_death.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\ai\zombie_death;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace zm_attachments;
 

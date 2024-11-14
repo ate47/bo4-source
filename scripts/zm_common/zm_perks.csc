@@ -1,11 +1,11 @@
-#using scripts\zm_common\zm_utility.csc;
-#using scripts\zm_common\zm_loadout.csc;
-#using scripts\zm_common\zm_customgame.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\array_shared.csc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_customgame;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace zm_perks;
 

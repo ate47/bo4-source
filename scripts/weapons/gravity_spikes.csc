@@ -1,6 +1,6 @@
-#using scripts\core_common\explode.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\audio_shared.csc;
+#using scripts\core_common\explode;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\audio_shared;
 
 #namespace gravity_spikes;
 

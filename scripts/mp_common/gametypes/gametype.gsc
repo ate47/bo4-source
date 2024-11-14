@@ -1,8 +1,8 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\userspawnselection.gsc;
-#using scripts\mp_common\gametypes\globallogic_score.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\userspawnselection;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\core_common\util_shared;
 
 #namespace gametype;
 

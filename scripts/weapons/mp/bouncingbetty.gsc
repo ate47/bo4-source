@@ -1,5 +1,5 @@
-#using scripts\weapons\bouncingbetty.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\bouncingbetty;
+#using scripts\core_common\system_shared;
 
 #namespace bouncingbetty;
 

@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_customgame.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_customgame;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace zm_red_achievement;
 

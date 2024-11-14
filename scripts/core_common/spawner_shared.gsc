@@ -1,14 +1,14 @@
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\colors_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\colors_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\struct;
 
 #namespace spawner;
 

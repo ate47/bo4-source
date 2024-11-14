@@ -1,6 +1,6 @@
-#using scripts\killstreaks\ai\state.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\killstreaks\ai\state;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace ai_leave;
 

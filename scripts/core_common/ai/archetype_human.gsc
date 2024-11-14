@@ -1,15 +1,15 @@
 #using script_3819e7a1427df6d2;
-#using scripts\core_common\ai\archetype_utility.gsc;
-#using scripts\core_common\ai\archetype_human_interface.gsc;
-#using scripts\core_common\ai\systems\gib.gsc;
-#using scripts\core_common\ai\systems\destructible_character.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\core_common\ai\systems\ai_blackboard.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\archetype_human_interface;
+#using scripts\core_common\ai\systems\gib;
+#using scripts\core_common\ai\systems\destructible_character;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\systems\ai_blackboard;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace archetype_human;
 

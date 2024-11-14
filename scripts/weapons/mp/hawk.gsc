@@ -1,17 +1,17 @@
 #using script_342e0d1a78771d3f;
 #using script_5afbda9de6000ad9;
-#using scripts\core_common\gestures.gsc;
-#using scripts\core_common\oob.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\killstreaks\airsupport.gsc;
-#using scripts\core_common\vehicles\hawk.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_score.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\core_common\gestures;
+#using scripts\core_common\oob;
+#using scripts\core_common\vehicle_shared;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\airsupport;
+#using scripts\core_common\vehicles\hawk;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\globallogic\globallogic_score;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 
 #namespace hawk_mp;
 

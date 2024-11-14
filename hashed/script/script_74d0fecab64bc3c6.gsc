@@ -1,5 +1,5 @@
-#using scripts\wz_common\character_unlock_fixup.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\wz_common\character_unlock_fixup;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_d0919546;
 

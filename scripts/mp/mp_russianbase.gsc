@@ -1,16 +1,16 @@
-#using scripts\mp_common\load.gsc;
-#using scripts\mp_common\draft.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\trigger_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\compass.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\mp_common\load;
+#using scripts\mp_common\draft;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\trigger_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\compass;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace mp_russianbase;
 

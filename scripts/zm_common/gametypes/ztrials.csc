@@ -1,13 +1,13 @@
-#using scripts\zm_common\zm_trial.csc;
+#using scripts\zm_common\zm_trial;
 #using script_45657e86e8f90414;
 #using script_1793e0dffb81a6c8;
 #using script_70ab01a7690ea256;
-#using scripts\zm_common\trials\zm_trial_disable_hud.csc;
-#using scripts\zm_common\trials\zm_trial_disable_buys.csc;
+#using scripts\zm_common\trials\zm_trial_disable_hud;
+#using scripts\zm_common\trials\zm_trial_disable_buys;
 #using script_5afd8ff8f8304cc4;
-#using scripts\zm_common\zm_trial_util.csc;
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
 
 #namespace ztrials;
 

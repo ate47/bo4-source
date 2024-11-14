@@ -1,14 +1,14 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm_daily_challenges.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\ai\zombie_death.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\lui_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_daily_challenges;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\ai\zombie_death;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace zm_powerup_nuke;
 

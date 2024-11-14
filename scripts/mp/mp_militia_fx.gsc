@@ -1,4 +1,4 @@
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\struct;
 
 #namespace mp_militia_fx;
 

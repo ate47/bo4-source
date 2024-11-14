@@ -1,11 +1,11 @@
-#using scripts\core_common\shoutcaster.csc;
-#using scripts\core_common\animation_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\visionset_mgr_shared.csc;
-#using scripts\core_common\player\player_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\shoutcaster;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\core_common\player\player_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace gadget_vision_pulse;
 

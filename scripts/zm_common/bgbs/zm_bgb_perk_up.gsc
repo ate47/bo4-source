@@ -1,13 +1,13 @@
-#using scripts\zm_common\trials\zm_trial_randomize_perks.gsc;
-#using scripts\zm_common\trials\zm_trial_disable_perks.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\trials\zm_trial_randomize_perks;
+#using scripts\zm_common\trials\zm_trial_disable_perks;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_perks;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_bgb_perk_up;
 

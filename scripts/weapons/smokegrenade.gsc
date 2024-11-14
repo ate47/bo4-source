@@ -1,9 +1,9 @@
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_score.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\globallogic\globallogic_score;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\sound_shared;
 
 #namespace smokegrenade;
 

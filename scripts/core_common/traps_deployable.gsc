@@ -1,18 +1,18 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\weapons\trapd.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\placeables.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\damagefeedback_shared.gsc;
-#using scripts\core_common\damage.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\weapons\trapd;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\placeables;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\damagefeedback_shared;
+#using scripts\core_common\damage;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace traps_deployable;
 

@@ -1,18 +1,18 @@
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\trigger_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\system_shared;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\trigger_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_placeable_mine;
 

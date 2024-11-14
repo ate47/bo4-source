@@ -1,7 +1,7 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\flagsys_shared.csc;
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
 
 #namespace array;
 

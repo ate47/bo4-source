@@ -1,2 +1,2 @@
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\struct;
 

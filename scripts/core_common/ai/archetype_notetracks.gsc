@@ -1,9 +1,9 @@
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\ai\systems\shared.gsc;
-#using scripts\core_common\ai\systems\gib.gsc;
-#using scripts\core_common\ai\systems\animation_state_machine_notetracks.gsc;
-#using scripts\core_common\ai\archetype_utility.gsc;
-#using scripts\core_common\ai\archetype_human_cover.gsc;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\ai\systems\shared;
+#using scripts\core_common\ai\systems\gib;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\archetype_human_cover;
 
 #namespace animationstatenetwork;
 

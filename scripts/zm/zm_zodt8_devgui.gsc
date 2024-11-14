@@ -1,14 +1,14 @@
 #using script_7893277eec698972;
 #using script_311952573639271c;
-#using scripts\zm\zm_zodt8_sentinel_trial.gsc;
-#using scripts\zm\zm_zodt8_pap_quest.gsc;
-#using scripts\zm\zm_zodt8.gsc;
-#using scripts\zm_common\zm_trial_util.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_magicbox.gsc;
-#using scripts\zm_common\zm_devgui.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\zm\zm_zodt8_sentinel_trial;
+#using scripts\zm\zm_zodt8_pap_quest;
+#using scripts\zm\zm_zodt8;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_magicbox;
+#using scripts\zm_common\zm_devgui;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_zodt8_devgui;
 

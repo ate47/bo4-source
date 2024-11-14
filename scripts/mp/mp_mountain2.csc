@@ -1,9 +1,9 @@
-#using scripts\mp\mp_mountain2_scripted.csc;
-#using scripts\mp\mp_mountain2_sound.csc;
-#using scripts\mp\mp_mountain2_fx.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\mp\mp_mountain2_scripted;
+#using scripts\mp\mp_mountain2_sound;
+#using scripts\mp\mp_mountain2_fx;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace mp_mountain2;
 

@@ -1,5 +1,5 @@
-#using scripts\weapons\lightninggun.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\weapons\lightninggun;
+#using scripts\core_common\system_shared;
 
 #namespace lightninggun;
 

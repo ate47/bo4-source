@@ -1,5 +1,5 @@
-#using scripts\weapons\hacker_tool.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\hacker_tool;
+#using scripts\core_common\system_shared;
 
 #namespace hacker_tool;
 

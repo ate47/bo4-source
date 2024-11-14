@@ -1,16 +1,16 @@
 #using script_7c62f55ce3a557ff;
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_vo.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm_customgame.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_vo;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_customgame;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_1063645;
 

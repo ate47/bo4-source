@@ -1,5 +1,5 @@
-#using scripts\weapons\trophy_system.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\weapons\trophy_system;
+#using scripts\core_common\system_shared;
 
 #namespace trophy_system;
 

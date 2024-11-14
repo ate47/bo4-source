@@ -1,11 +1,11 @@
-#using scripts\mp\mp_militia_scripted.gsc;
-#using scripts\mp\mp_militia_sound.gsc;
-#using scripts\mp\mp_militia_fx.gsc;
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\compass.gsc;
+#using scripts\mp\mp_militia_scripted;
+#using scripts\mp\mp_militia_sound;
+#using scripts\mp\mp_militia_fx;
+#using scripts\mp_common\util;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\compass;
 
 #namespace mp_militia;
 

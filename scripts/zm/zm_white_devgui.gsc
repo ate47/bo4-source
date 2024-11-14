@@ -1,10 +1,10 @@
-#using scripts\zm\zm_white_mee.gsc;
+#using scripts\zm\zm_white_mee;
 #using script_724752ab26bff81b;
-#using scripts\zm\zm_white_special_rounds.gsc;
-#using scripts\zm_common\zm_ui_inventory.gsc;
+#using scripts\zm\zm_white_special_rounds;
+#using scripts\zm_common\zm_ui_inventory;
 #using script_ab862743b3070a;
-#using scripts\zm_common\zm_devgui.gsc;
-#using scripts\core_common\flag_shared.gsc;
+#using scripts\zm_common\zm_devgui;
+#using scripts\core_common\flag_shared;
 
 #namespace zm_white_devgui;
 

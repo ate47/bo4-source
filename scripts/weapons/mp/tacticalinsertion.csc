@@ -1,5 +1,5 @@
-#using scripts\weapons\tacticalinsertion.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\weapons\tacticalinsertion;
+#using scripts\core_common\system_shared;
 
 #namespace tacticalinsertion;
 

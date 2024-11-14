@@ -1,5 +1,5 @@
-#using scripts\mp_common\gametypes\overtime.gsc;
-#using scripts\mp_common\gametypes\outcome.gsc;
+#using scripts\mp_common\gametypes\overtime;
+#using scripts\mp_common\gametypes\outcome;
 
 #namespace round;
 

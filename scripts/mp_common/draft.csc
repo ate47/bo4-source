@@ -1,14 +1,14 @@
-#using scripts\killstreaks\killstreak_detect.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\shoutcaster.csc;
-#using scripts\core_common\dialog_shared.csc;
-#using scripts\core_common\player\player_role.csc;
-#using scripts\core_common\character_customization.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\serverfield_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\killstreaks\killstreak_detect;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\shoutcaster;
+#using scripts\core_common\dialog_shared;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\character_customization;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\serverfield_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
 
 #namespace draft;
 

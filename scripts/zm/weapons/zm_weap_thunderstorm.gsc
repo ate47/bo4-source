@@ -1,19 +1,19 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\weapons\deployable.gsc;
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\laststand_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\weapons\deployable;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_equipment;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\laststand_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\ai\systems\gib;
 
 #namespace zm_weap_thunderstorm;
 

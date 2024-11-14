@@ -1,4 +1,4 @@
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\struct;
 
 #namespace wz_firing_range;
 

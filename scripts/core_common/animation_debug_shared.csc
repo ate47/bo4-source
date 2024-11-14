@@ -1,5 +1,5 @@
-#using scripts\core_common\flagsys_shared.csc;
-#using scripts\core_common\animation_shared.csc;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\animation_shared;
 
 #namespace animation;
 

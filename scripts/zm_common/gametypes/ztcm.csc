@@ -1,5 +1,5 @@
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
 
 #namespace ztcm;
 

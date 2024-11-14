@@ -1,6 +1,6 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\lui_shared.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\lui_shared;
 
 #namespace util;
 

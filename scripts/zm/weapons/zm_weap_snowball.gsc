@@ -1,14 +1,14 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\core_common\trigger_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\zm;
+#using scripts\core_common\trigger_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai\systems\gib;
 
 #namespace zm_weap_snowball;
 

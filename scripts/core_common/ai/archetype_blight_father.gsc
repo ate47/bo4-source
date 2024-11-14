@@ -1,8 +1,8 @@
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\ai\archetype_blight_father_interface.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
-#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\ai\archetype_blight_father_interface;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\spawner_shared;
 
 #namespace archetypeblightfather;
 

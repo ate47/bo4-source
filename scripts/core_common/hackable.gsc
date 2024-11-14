@@ -1,5 +1,5 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\array_shared;
 
 #namespace hackable;
 

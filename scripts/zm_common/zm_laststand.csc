@@ -2,13 +2,13 @@
 #using script_6409d04aa560106c;
 #using script_3b8f43c68572f06;
 #using script_70ab01a7690ea256;
-#using scripts\zm_common\zm_hero_weapon.csc;
-#using scripts\zm_common\util.csc;
-#using scripts\zm_common\load.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\zm_common\zm_hero_weapon;
+#using scripts\zm_common\util;
+#using scripts\zm_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_laststand;
 

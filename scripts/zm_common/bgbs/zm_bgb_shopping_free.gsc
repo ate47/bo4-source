@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_bgb_shopping_free;
 

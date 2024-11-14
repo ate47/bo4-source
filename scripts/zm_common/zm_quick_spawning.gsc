@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai\zombie_utility;
 
 #namespace zm_quick_spawning;
 

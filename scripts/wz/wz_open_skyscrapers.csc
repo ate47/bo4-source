@@ -1,19 +1,19 @@
-#using scripts\wz_common\wz_holiday.csc;
-#using scripts\wz_common\wz_jukebox.csc;
-#using scripts\wz_common\wz_asylum.csc;
-#using scripts\wz_common\wz_array_broadcast.csc;
+#using scripts\wz_common\wz_holiday;
+#using scripts\wz_common\wz_jukebox;
+#using scripts\wz_common\wz_asylum;
+#using scripts\wz_common\wz_array_broadcast;
 #using script_58d14a82f7aa9d6d;
-#using scripts\wz_common\wz_nuketown_sign.csc;
-#using scripts\wz_common\wz_buoy_stash.csc;
+#using scripts\wz_common\wz_nuketown_sign;
+#using scripts\wz_common\wz_buoy_stash;
 #using script_4da75c87643c8b07;
-#using scripts\wz\wz_open_skyscrapers_ffotd.csc;
-#using scripts\wz_common\wz_firing_range.csc;
-#using scripts\wz\wz_open_skyscrapers_sound.csc;
-#using scripts\wz\wz_open_skyscrapers_fx.csc;
-#using scripts\mp_common\item_world.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\wz\wz_open_skyscrapers_ffotd;
+#using scripts\wz_common\wz_firing_range;
+#using scripts\wz\wz_open_skyscrapers_sound;
+#using scripts\wz\wz_open_skyscrapers_fx;
+#using scripts\mp_common\item_world;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace wz_open_skyscrapers;
 

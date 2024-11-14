@@ -1,10 +1,10 @@
-#using scripts\mp_common\teams\teams.gsc;
-#using scripts\mp_common\gametypes\round.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\platoons.gsc;
-#using scripts\core_common\infection.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\teams\teams;
+#using scripts\mp_common\gametypes\round;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\platoons;
+#using scripts\core_common\infection;
+#using scripts\core_common\callbacks_shared;
 
 #namespace platoons;
 

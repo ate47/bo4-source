@@ -1,8 +1,8 @@
-#using scripts\core_common\teams.gsc;
-#using scripts\core_common\player\player_role.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spectating.gsc;
-#using scripts\core_common\platoons.gsc;
+#using scripts\core_common\teams;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spectating;
+#using scripts\core_common\platoons;
 
 #namespace infection;
 

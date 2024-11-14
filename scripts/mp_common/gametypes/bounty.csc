@@ -1,10 +1,10 @@
-#using scripts\core_common\vehicle_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\killstreaks\mp\killstreak_vehicle.csc;
-#using scripts\mp_common\laststand.csc;
-#using scripts\mp_common\dynamic_loadout.csc;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\clientfield_shared;
+#using scripts\killstreaks\mp\killstreak_vehicle;
+#using scripts\mp_common\laststand;
+#using scripts\mp_common\dynamic_loadout;
 
 #namespace bounty;
 

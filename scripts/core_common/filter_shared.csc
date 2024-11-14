@@ -1,5 +1,5 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\postfx_shared;
 
 #namespace filter;
 

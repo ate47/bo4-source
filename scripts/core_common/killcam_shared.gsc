@@ -1,14 +1,14 @@
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\visionset_mgr_shared.gsc;
-#using scripts\weapons\tacticalinsertion.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spectating.gsc;
-#using scripts\core_common\potm_shared.gsc;
-#using scripts\core_common\hud_util_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\weapons\tacticalinsertion;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spectating;
+#using scripts\core_common\potm_shared;
+#using scripts\core_common\hud_util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace killcam;
 

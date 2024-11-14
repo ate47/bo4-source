@@ -1,5 +1,5 @@
-#using scripts\killstreaks\killstreak_hacking.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\killstreaks\killstreak_hacking;
+#using scripts\core_common\clientfield_shared;
 
 #namespace killstreak_detect;
 

@@ -1,11 +1,11 @@
-#using scripts\core_common\throttle_shared.gsc;
-#using scripts\zm\perk\zm_perk_death_dash.gsc;
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\core_common\throttle_shared;
+#using scripts\zm\perk\zm_perk_death_dash;
+#using scripts\zm_common\zm_perks;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\ai\zombie_utility;
 
 #namespace zm_perk_mod_death_dash;
 

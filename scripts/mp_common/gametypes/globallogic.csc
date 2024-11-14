@@ -1,16 +1,16 @@
-#using scripts\killstreaks\killstreak_detect.csc;
-#using scripts\mp_common\player\player.csc;
-#using scripts\mp_common\gametypes\display_transition.csc;
-#using scripts\core_common\renderoverridebundle.csc;
-#using scripts\core_common\animation_shared.csc;
-#using scripts\core_common\visionset_mgr_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\player\player_shared.csc;
-#using scripts\core_common\killcam_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\array_shared.csc;
+#using scripts\killstreaks\killstreak_detect;
+#using scripts\mp_common\player\player;
+#using scripts\mp_common\gametypes\display_transition;
+#using scripts\core_common\renderoverridebundle;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_shared;
+#using scripts\core_common\killcam_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace globallogic;
 

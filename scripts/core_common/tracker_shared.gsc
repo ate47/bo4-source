@@ -1,10 +1,10 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_player.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\globallogic\globallogic_player;
+#using scripts\core_common\struct;
+#using scripts\core_common\array_shared;
 
 #namespace tracker;
 

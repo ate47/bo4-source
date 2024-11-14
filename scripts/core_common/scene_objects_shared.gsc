@@ -1,20 +1,20 @@
-#using scripts\core_common\scene_vehicle_shared.gsc;
-#using scripts\core_common\scene_model_shared.gsc;
-#using scripts\core_common\scene_actor_shared.gsc;
-#using scripts\core_common\scene_player_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\teleport_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\lui_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\bots\bot_util.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\animation_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\scene_vehicle_shared;
+#using scripts\core_common\scene_model_shared;
+#using scripts\core_common\scene_actor_shared;
+#using scripts\core_common\scene_player_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\teleport_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\bots\bot_util;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\struct;
 
 #namespace scene;
 

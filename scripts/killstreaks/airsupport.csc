@@ -1,4 +1,4 @@
-#using scripts\core_common\rewindobjects.csc;
+#using scripts\core_common\rewindobjects;
 
 #namespace airsupport;
 

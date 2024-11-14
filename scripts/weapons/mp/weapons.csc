@@ -1,5 +1,5 @@
-#using scripts\weapons\weapons.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\weapons\weapons;
+#using scripts\core_common\system_shared;
 
 #namespace weapons;
 

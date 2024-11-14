@@ -1,13 +1,13 @@
-#using scripts\weapons\acid_bomb.csc;
-#using scripts\mp_common\vehicle.csc;
-#using scripts\mp_common\callbacks.csc;
-#using scripts\abilities\gadgets\gadget_vision_pulse.csc;
-#using scripts\core_common\vehicle_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\killstreaks\helicopter_shared.csc;
-#using scripts\killstreaks\airsupport.csc;
-#using scripts\core_common\footsteps_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\weapons\acid_bomb;
+#using scripts\mp_common\vehicle;
+#using scripts\mp_common\callbacks;
+#using scripts\abilities\gadgets\gadget_vision_pulse;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\system_shared;
+#using scripts\killstreaks\helicopter_shared;
+#using scripts\killstreaks\airsupport;
+#using scripts\core_common\footsteps_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace callback;
 

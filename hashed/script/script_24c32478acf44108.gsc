@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\ai\systems\gib.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\ai\systems\gib;
 
 #namespace namespace_9ff9f642;
 

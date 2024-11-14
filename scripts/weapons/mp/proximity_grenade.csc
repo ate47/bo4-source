@@ -1,5 +1,5 @@
-#using scripts\weapons\proximity_grenade.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\weapons\proximity_grenade;
+#using scripts\core_common\system_shared;
 
 #namespace proximity_grenade;
 

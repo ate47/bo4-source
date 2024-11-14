@@ -1,17 +1,17 @@
-#using scripts\mp\mp_silo_sound.gsc;
-#using scripts\mp\mp_silo_fx.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\compass.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\mp\mp_silo_sound;
+#using scripts\mp\mp_silo_fx;
+#using scripts\mp_common\load;
+#using scripts\mp_common\gametypes\globallogic_spawn;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\compass;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\array_shared;
 
 #namespace mp_silo;
 

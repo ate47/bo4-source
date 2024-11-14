@@ -1,13 +1,13 @@
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\mp_common\gametypes\battlechatter.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\killstreaks\planemortar_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
+#using scripts\mp_common\util;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\planemortar_shared;
+#using scripts\core_common\challenges_shared;
 
 #namespace planemortar;
 

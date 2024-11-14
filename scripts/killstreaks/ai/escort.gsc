@@ -1,10 +1,10 @@
-#using scripts\killstreaks\ai\tracking.gsc;
-#using scripts\killstreaks\ai\target.gsc;
-#using scripts\killstreaks\ai\state.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\killstreaks\ai\tracking;
+#using scripts\killstreaks\ai\target;
+#using scripts\killstreaks\ai\state;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\array_shared;
 
 #namespace ai_escort;
 

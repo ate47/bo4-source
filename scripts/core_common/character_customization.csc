@@ -1,12 +1,12 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\scene_shared.csc;
-#using scripts\core_common\duplicaterender_mgr.csc;
-#using scripts\core_common\animation_shared.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\multi_extracam.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\activecamo_shared.csc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\duplicaterender_mgr;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\multi_extracam;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\activecamo_shared;
 
 #namespace character_customization;
 

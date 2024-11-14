@@ -1,15 +1,15 @@
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\abilities\ability_util.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_score.gsc;
-#using scripts\core_common\drown.gsc;
-#using scripts\core_common\contracts_shared.gsc;
-#using scripts\core_common\activecamo_shared.gsc;
-#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\abilities\ability_util;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\globallogic\globallogic_score;
+#using scripts\core_common\drown;
+#using scripts\core_common\contracts_shared;
+#using scripts\core_common\activecamo_shared;
+#using scripts\abilities\ability_player;
 
 #namespace challenges;
 

@@ -1,18 +1,18 @@
-#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\scene_shared;
 #using script_64914218f744517b;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\filter_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\scriptbundle_shared.csc;
-#using scripts\core_common\scene_debug_shared.csc;
-#using scripts\core_common\lui_shared.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\flagsys_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\animation_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\filter_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\scriptbundle_shared;
+#using scripts\core_common\scene_debug_shared;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\struct;
 
 #namespace scene;
 

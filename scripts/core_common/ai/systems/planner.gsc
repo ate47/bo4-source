@@ -1,4 +1,4 @@
-#using scripts\core_common\ai\systems\planner_blackboard.gsc;
+#using scripts\core_common\ai\systems\planner_blackboard;
 
 #namespace planner;
 

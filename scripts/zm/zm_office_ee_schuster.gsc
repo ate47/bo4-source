@@ -1,11 +1,11 @@
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\zm_common\zm_sq.gsc;
-#using scripts\zm_common\zm_characters.gsc;
+#using scripts\zm\zm_hms_util;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\array_shared;
+#using scripts\zm_common\zm_sq;
+#using scripts\zm_common\zm_characters;
 
 #namespace zm_office_ee_schuster;
 

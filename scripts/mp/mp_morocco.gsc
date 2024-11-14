@@ -1,10 +1,10 @@
-#using scripts\mp\mp_morocco_scripted.gsc;
-#using scripts\mp\mp_morocco_sound.gsc;
-#using scripts\mp\mp_morocco_fx.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\compass.gsc;
+#using scripts\mp\mp_morocco_scripted;
+#using scripts\mp\mp_morocco_sound;
+#using scripts\mp\mp_morocco_fx;
+#using scripts\mp_common\load;
+#using scripts\mp_common\gametypes\globallogic_spawn;
+#using scripts\core_common\struct;
+#using scripts\core_common\compass;
 
 #namespace mp_morocco;
 

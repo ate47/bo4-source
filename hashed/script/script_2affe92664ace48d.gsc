@@ -1,18 +1,18 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_round_spawning.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\zm_common\ai\zm_ai_utility.gsc;
-#using scripts\zm_common\trials\zm_trial_add_special.gsc;
-#using scripts\zm\ai\zm_ai_tiger.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\ai\archetype_tiger.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_round_spawning;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\ai\zm_ai_utility;
+#using scripts\zm_common\trials\zm_trial_add_special;
+#using scripts\zm\ai\zm_ai_tiger;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\ai\archetype_tiger;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai_shared;
 
 #namespace zombie_tiger_util;
 

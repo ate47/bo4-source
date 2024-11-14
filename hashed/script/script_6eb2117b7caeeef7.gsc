@@ -1,17 +1,17 @@
-#using scripts\weapons\deployable.gsc;
-#using scripts\killstreaks\ultimate_turret_shared.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\killstreaks\killstreak_bundles.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\turret_shared.gsc;
-#using scripts\core_common\targetting_delay.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\weapons\deployable;
+#using scripts\killstreaks\ultimate_turret_shared;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\killstreak_bundles;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\turret_shared;
+#using scripts\core_common\targetting_delay;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\callbacks_shared;
 
 #namespace ultimate_turret;
 

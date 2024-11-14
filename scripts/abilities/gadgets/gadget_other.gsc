@@ -1,5 +1,5 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\abilities\ability_player.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\abilities\ability_player;
 
 #namespace gadget_other;
 

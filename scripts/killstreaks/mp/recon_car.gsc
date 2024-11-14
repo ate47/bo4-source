@@ -1,15 +1,15 @@
-#using scripts\mp_common\player\player_utils.gsc;
-#using scripts\killstreaks\mp\killstreak_vehicle.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\killstreaks\remote_weapons.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\killstreaks\killstreak_detect.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\player\player_utils;
+#using scripts\killstreaks\mp\killstreak_vehicle;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\killstreaks\remote_weapons;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\killstreak_detect;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace recon_car;
 

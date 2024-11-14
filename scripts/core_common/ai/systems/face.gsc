@@ -1,4 +1,4 @@
-#using scripts\core_common\math_shared.gsc;
+#using scripts\core_common\math_shared;
 
 #namespace face;
 

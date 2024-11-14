@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\perks.gsc;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\perks;
 
 #namespace zm_bgb_always_done_swiftly;
 

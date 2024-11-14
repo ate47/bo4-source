@@ -1,8 +1,8 @@
-#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
-#using scripts\core_common\ai\archetype_mannequin_interface.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
-#using scripts\core_common\ai\zombie.gsc;
-#using scripts\core_common\spawner_shared.gsc;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai\archetype_mannequin_interface;
+#using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\ai\zombie;
+#using scripts\core_common\spawner_shared;
 
 #namespace mannequinbehavior;
 

@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_maptable.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm_common\zm_maptable;
+#using scripts\core_common\system_shared;
 
 #namespace zm_weap_bowie;
 

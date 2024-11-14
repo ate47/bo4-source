@@ -1,8 +1,8 @@
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\weapons_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\weapons_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 #using script_67c87580908a0a00;
 
 #namespace activecamo;

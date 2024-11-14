@@ -1,8 +1,8 @@
-#using scripts\killstreaks\killstreak_detect.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\array_shared.csc;
+#using scripts\killstreaks\killstreak_detect;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
 
 #namespace icepick;
 

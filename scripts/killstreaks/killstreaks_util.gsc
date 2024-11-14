@@ -1,5 +1,5 @@
-#using scripts\abilities\ability_util.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\abilities\ability_util;
+#using scripts\core_common\util_shared;
 
 #namespace killstreaks;
 

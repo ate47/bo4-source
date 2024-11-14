@@ -1,5 +1,5 @@
-#using scripts\mp_common\item_world.gsc;
-#using scripts\core_common\player\player_stats.gsc;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\player\player_stats;
 
 #namespace wz_jukebox;
 

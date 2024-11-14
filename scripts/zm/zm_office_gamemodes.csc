@@ -1,5 +1,5 @@
-#using scripts\zm\zm_office_zstandard.csc;
-#using scripts\core_common\util_shared.csc;
+#using scripts\zm\zm_office_zstandard;
+#using scripts\core_common\util_shared;
 
 #namespace zm_office_gamemodes;
 

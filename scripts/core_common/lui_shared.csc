@@ -1,13 +1,13 @@
 #using script_1da833573eb80e61;
 #using script_2feaeed9ab01d6f7;
-#using scripts\core_common\multi_extracam.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\character_customization.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\multi_extracam;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\character_customization;
+#using scripts\core_common\struct;
 
 #namespace lui;
 

@@ -1,8 +1,8 @@
-#using scripts\core_common\trigger_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\sound_shared.gsc;
-#using scripts\core_common\fx_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\trigger_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\sound_shared;
+#using scripts\core_common\fx_shared;
+#using scripts\core_common\struct;
 
 #namespace exploder;
 

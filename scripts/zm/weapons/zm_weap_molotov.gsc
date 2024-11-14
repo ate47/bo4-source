@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_equipment.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
 
 #namespace zm_weap_molotov;
 

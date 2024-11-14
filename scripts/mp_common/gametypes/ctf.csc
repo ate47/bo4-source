@@ -1,7 +1,7 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\shoutcaster.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\shoutcaster;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace ctf;
 

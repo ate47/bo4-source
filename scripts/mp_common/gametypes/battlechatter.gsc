@@ -1,16 +1,16 @@
-#using scripts\weapons\weapon_utils.gsc;
-#using scripts\weapons\grapple.gsc;
-#using scripts\mp_common\gametypes\match.gsc;
-#using scripts\mp_common\gametypes\globallogic_utils.gsc;
-#using scripts\mp_common\gametypes\globallogic_audio.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\core_common\player\player_role.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\weapons\weapon_utils;
+#using scripts\weapons\grapple;
+#using scripts\mp_common\gametypes\match;
+#using scripts\mp_common\gametypes\globallogic_utils;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\core_common\player\player_role;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace battlechatter;
 

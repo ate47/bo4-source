@@ -1,16 +1,16 @@
-#using scripts\core_common\vehicle_shared.csc;
-#using scripts\mp_common\item_world_util.csc;
+#using scripts\core_common\vehicle_shared;
+#using scripts\mp_common\item_world_util;
 #using script_68c78107b4aa059c;
 #using script_5e5ac8c591dedeed;
 #using script_c1eebdc8cad5d78;
-#using scripts\mp_common\item_inventory.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\flagsys_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\mp_common\item_inventory;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 #using script_474309807eb94f34;
-#using scripts\core_common\activecamo_shared.csc;
+#using scripts\core_common\activecamo_shared;
 
 #namespace item_world;
 

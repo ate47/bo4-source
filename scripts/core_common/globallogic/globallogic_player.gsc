@@ -1,5 +1,5 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\weapons_shared.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\weapons_shared;
 
 #namespace globallogic_player;
 

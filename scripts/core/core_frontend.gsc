@@ -1,5 +1,5 @@
-#using scripts\core\core_frontend_sound.gsc;
-#using scripts\core\core_frontend_fx.gsc;
+#using scripts\core\core_frontend_sound;
+#using scripts\core\core_frontend_fx;
 
 #namespace core_frontend;
 

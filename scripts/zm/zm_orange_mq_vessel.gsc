@@ -1,18 +1,18 @@
-#using scripts\zm\zm_orange_util.gsc;
-#using scripts\zm\zm_orange_ee_dynamite.gsc;
-#using scripts\zm_common\zm_ui_inventory.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_sq.gsc;
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\flag_shared.gsc;
+#using scripts\zm\zm_orange_util;
+#using scripts\zm\zm_orange_ee_dynamite;
+#using scripts\zm_common\zm_ui_inventory;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_sq;
+#using scripts\zm\zm_hms_util;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\flag_shared;
 
 #namespace zm_orange_mq_vessel;
 

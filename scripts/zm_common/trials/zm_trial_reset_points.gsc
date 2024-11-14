@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\zm_common\zm_score.gsc;
-#using scripts\zm_common\zm_laststand.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_laststand;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_reset_points;
 

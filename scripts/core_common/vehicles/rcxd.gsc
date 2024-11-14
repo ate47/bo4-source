@@ -1,7 +1,7 @@
-#using scripts\core_common\vehicles\smart_bomb.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\vehicles\smart_bomb;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\system_shared;
 
 #namespace rcxd;
 

@@ -1,13 +1,13 @@
-#using scripts\core_common\perks.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\ai\strategic_command.gsc;
-#using scripts\core_common\ai\planner_squad_utility.gsc;
-#using scripts\core_common\ai\planner_squad.gsc;
-#using scripts\core_common\ai\systems\planner_blackboard.gsc;
-#using scripts\core_common\ai\systems\planner.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\perks;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\ai\strategic_command;
+#using scripts\core_common\ai\planner_squad_utility;
+#using scripts\core_common\ai\planner_squad;
+#using scripts\core_common\ai\systems\planner_blackboard;
+#using scripts\core_common\ai\systems\planner;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai_shared;
 
 #namespace namespace_5bb8bcd5;
 

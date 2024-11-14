@@ -1,4 +1,4 @@
-#using scripts\core_common\hostmigration_shared.gsc;
+#using scripts\core_common\hostmigration_shared;
 
 #namespace hostmigration;
 

@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\zm_common\zm_perks;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_perk_mystery;
 

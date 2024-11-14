@@ -1,4 +1,4 @@
-#using scripts\mp_common\item_world_fixup.csc;
+#using scripts\mp_common\item_world_fixup;
 
 #namespace wz_open_skyscrapers_fixup;
 

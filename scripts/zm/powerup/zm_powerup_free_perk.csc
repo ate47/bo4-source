@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_powerups.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\zm_common\zm_powerups;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
 
 #namespace zm_powerup_free_perk;
 

@@ -1,17 +1,17 @@
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\zm_common\zm_item_pickup.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm\zm_hms_util;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\zm_item_pickup;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\core_common\struct;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_cc08081f;
 

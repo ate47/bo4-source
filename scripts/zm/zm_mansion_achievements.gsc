@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace mansion_achievements;
 

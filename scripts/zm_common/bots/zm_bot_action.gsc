@@ -1,7 +1,7 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\bots\bot_action.gsc;
-#using scripts\core_common\bots\bot.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\bots\bot_action;
+#using scripts\core_common\bots\bot;
 
 #namespace zm_bot_action;
 

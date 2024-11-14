@@ -1,5 +1,5 @@
-#using scripts\zm\zm_zodt8_zstandard.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\zm\zm_zodt8_zstandard;
+#using scripts\core_common\util_shared;
 
 #namespace zm_zodt8_gamemodes;
 

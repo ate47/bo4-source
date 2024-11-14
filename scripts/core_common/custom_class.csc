@@ -1,9 +1,9 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\lui_shared.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\postfx_shared.csc;
-#using scripts\core_common\duplicaterender_mgr.csc;
-#using scripts\core_common\activecamo_shared.csc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\duplicaterender_mgr;
+#using scripts\core_common\activecamo_shared;
 
 #namespace customclass;
 

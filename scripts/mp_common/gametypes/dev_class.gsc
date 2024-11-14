@@ -1,5 +1,5 @@
-#using scripts\mp_common\gametypes\dev.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\mp_common\gametypes\dev;
+#using scripts\core_common\util_shared;
 
 #namespace dev_class;
 

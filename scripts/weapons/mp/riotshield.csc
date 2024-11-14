@@ -1,5 +1,5 @@
-#using scripts\weapons\riotshield.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\weapons\riotshield;
+#using scripts\core_common\system_shared;
 
 #namespace riotshield;
 

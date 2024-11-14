@@ -1,12 +1,12 @@
-#using scripts\mp_common\item_world_util.csc;
-#using scripts\mp_common\item_world.csc;
+#using scripts\mp_common\item_world_util;
+#using scripts\mp_common\item_world;
 #using script_c1eebdc8cad5d78;
-#using scripts\core_common\player\player_stats.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\flagsys_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace item_inventory;
 

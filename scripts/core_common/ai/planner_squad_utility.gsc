@@ -1,11 +1,11 @@
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\bots\bot_chain.gsc;
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\ai\strategic_command.gsc;
-#using scripts\core_common\ai\systems\planner.gsc;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\bots\bot_chain;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\ai\strategic_command;
+#using scripts\core_common\ai\systems\planner;
 
 #namespace planner_squad_utility;
 

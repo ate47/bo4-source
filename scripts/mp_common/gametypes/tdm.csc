@@ -1,7 +1,7 @@
-#using scripts\core_common\util_shared.csc;
-#using scripts\mp_common\gametypes\ct_tutorial_skirmish.csc;
-#using scripts\mp_common\gametypes\globallogic_score.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\core_common\struct;
 
 #namespace tdm;
 

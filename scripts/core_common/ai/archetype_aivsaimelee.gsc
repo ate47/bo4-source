@@ -1,9 +1,9 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\ai\archetype_utility.gsc;
-#using scripts\core_common\ai\systems\behavior_tree_utility.gsc;
-#using scripts\core_common\ai_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\struct;
 
 #namespace archetype_aivsaimelee;
 

@@ -1,21 +1,21 @@
 #using script_724752ab26bff81b;
 #using script_174ce72cc0f850;
-#using scripts\zm\zm_white_main_quest.gsc;
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\zm\zm_white_special_rounds.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\zm_common\zm_ui_inventory.gsc;
-#using scripts\zm_common\zm_item_pickup.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\zm_common\zm_vo.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm\zm_white_main_quest;
+#using scripts\zm\zm_hms_util;
+#using scripts\zm\zm_white_special_rounds;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\zm_common\zm_ui_inventory;
+#using scripts\zm_common\zm_item_pickup;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\zm_vo;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_ca03bbb4;
 

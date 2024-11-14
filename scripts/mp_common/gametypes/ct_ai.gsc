@@ -1,11 +1,11 @@
-#using scripts\mp_common\gametypes\ct_utils.gsc;
-#using scripts\mp_common\gametypes\ct_bots.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\values_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\bots\bot_stance.gsc;
+#using scripts\mp_common\gametypes\ct_utils;
+#using scripts\mp_common\gametypes\ct_bots;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\values_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\bots\bot_stance;
 
 #namespace ct_ai;
 

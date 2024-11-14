@@ -1,8 +1,8 @@
-#using scripts\mp\mp_frenetic_sound.csc;
-#using scripts\mp\mp_frenetic_fx.csc;
-#using scripts\mp_common\load.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\mp\mp_frenetic_sound;
+#using scripts\mp\mp_frenetic_fx;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace mp_frenetic;
 

@@ -1,5 +1,5 @@
-#using scripts\core_common\bots\bot.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\ai\systems\ai_interface;
 
 #namespace botinterface;
 

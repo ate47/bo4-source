@@ -1,5 +1,5 @@
-#using scripts\core_common\ai\archetype_blight_father.gsc;
-#using scripts\core_common\ai\systems\ai_interface.gsc;
+#using scripts\core_common\ai\archetype_blight_father;
+#using scripts\core_common\ai\systems\ai_interface;
 
 #namespace blightfatherinterface;
 

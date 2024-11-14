@@ -1,7 +1,7 @@
-#using scripts\zm\zm_orange_water.gsc;
-#using scripts\zm_common\zm_powerups.gsc;
-#using scripts\zm_common\zm.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm\zm_orange_water;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm;
+#using scripts\core_common\system_shared;
 
 #namespace zm_weap_tundragun;
 

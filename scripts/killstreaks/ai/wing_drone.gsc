@@ -1,15 +1,15 @@
-#using scripts\killstreaks\remote_weapons.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\killstreaks\ai\lead_drone.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\vehicle_death_shared.gsc;
-#using scripts\core_common\turret_shared.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\killstreaks\remote_weapons;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\ai\lead_drone;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\vehicle_death_shared;
+#using scripts\core_common\turret_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
 
 #namespace wing_drone;
 

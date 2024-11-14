@@ -1,17 +1,17 @@
-#using scripts\zm\zm_trap_electric.gsc;
-#using scripts\zm\zm_lightning_chain.gsc;
-#using scripts\zm\zm_white_util.gsc;
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\zm_common\zm_traps.gsc;
-#using scripts\zm_common\zm_audio.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm\zm_trap_electric;
+#using scripts\zm\zm_lightning_chain;
+#using scripts\zm\zm_white_util;
+#using scripts\zm\zm_hms_util;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\zm_common\zm_traps;
+#using scripts\zm_common\zm_audio;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\array_shared;
 
 #namespace zm_white_apd_trap;
 

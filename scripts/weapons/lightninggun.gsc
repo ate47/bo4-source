@@ -1,9 +1,9 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\player\player_shared.gsc;
-#using scripts\core_common\killcam_shared.gsc;
-#using scripts\core_common\damage.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\abilities\ability_power.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\player\player_shared;
+#using scripts\core_common\killcam_shared;
+#using scripts\core_common\damage;
+#using scripts\core_common\callbacks_shared;
+#using scripts\abilities\ability_power;
 
 #namespace lightninggun;
 

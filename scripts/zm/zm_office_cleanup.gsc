@@ -1,13 +1,13 @@
-#using scripts\zm\zm_office_defcon.gsc;
-#using scripts\zm\zm_office_teleporters.gsc;
-#using scripts\zm\zm_office_floors.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
-#using scripts\zm_common\zm_cleanup_mgr.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\ai\zombie_utility.gsc;
+#using scripts\zm\zm_office_defcon;
+#using scripts\zm\zm_office_teleporters;
+#using scripts\zm\zm_office_floors;
+#using scripts\zm_common\zm_spawner;
+#using scripts\zm_common\zm_cleanup_mgr;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\ai\zombie_utility;
 
 #namespace zm_office_cleanup;
 

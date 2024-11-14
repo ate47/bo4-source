@@ -1,13 +1,13 @@
-#using scripts\mp_common\player\player_utils.gsc;
-#using scripts\mp_common\gametypes\battlechatter.gsc;
-#using scripts\mp_common\challenges.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\killstreaks\killstreaks_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\killstreaks\helicopter_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
+#using scripts\mp_common\player\player_utils;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\mp_common\challenges;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\killstreaks\helicopter_shared;
+#using scripts\core_common\challenges_shared;
 
 #namespace helicopter;
 

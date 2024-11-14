@@ -1,8 +1,8 @@
-#using scripts\mp_common\gametypes\ct_firebreak_tutorial.csc;
-#using scripts\mp_common\gametypes\ct_core.csc;
-#using scripts\core_common\renderoverridebundle.csc;
-#using scripts\core_common\oob.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\mp_common\gametypes\ct_firebreak_tutorial;
+#using scripts\mp_common\gametypes\ct_core;
+#using scripts\core_common\renderoverridebundle;
+#using scripts\core_common\oob;
+#using scripts\core_common\clientfield_shared;
 #using script_127edb82eabcb791;
 
 #namespace ct_firebreak;

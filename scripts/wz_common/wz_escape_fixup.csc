@@ -1,5 +1,5 @@
-#using scripts\mp_common\item_world_fixup.csc;
-#using scripts\wz_common\wz_common_fixup.csc;
+#using scripts\mp_common\item_world_fixup;
+#using scripts\wz_common\wz_common_fixup;
 
 #namespace wz_escape_fixup;
 

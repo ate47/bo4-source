@@ -1,9 +1,9 @@
-#using scripts\zm\zm_office_floors.gsc;
-#using scripts\zm_common\zm_ui_inventory.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
-#using scripts\zm_common\zm_maptable.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm\zm_office_floors;
+#using scripts\zm_common\zm_ui_inventory;
+#using scripts\zm_common\zm_spawner;
+#using scripts\zm_common\zm_maptable;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_ff847c6a;
 

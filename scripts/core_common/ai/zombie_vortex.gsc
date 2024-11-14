@@ -1,9 +1,9 @@
-#using scripts\core_common\vehicle_ai_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\visionset_mgr_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
 
 #namespace zombie_vortex;
 

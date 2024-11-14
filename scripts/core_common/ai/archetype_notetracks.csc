@@ -1,4 +1,4 @@
-#using scripts\core_common\ai_shared.csc;
+#using scripts\core_common\ai_shared;
 
 #namespace notetracks;
 

@@ -1,13 +1,13 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\gamestate.gsc;
-#using scripts\wz_common\wz_ai_utils.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\gamestate;
+#using scripts\wz_common\wz_ai_utils;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\struct;
 #using script_cb32d07c95e5628;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace namespace_87f097c4;
 

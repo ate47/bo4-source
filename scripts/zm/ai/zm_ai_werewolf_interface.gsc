@@ -1,5 +1,5 @@
-#using scripts\core_common\ai\systems\ai_interface.gsc;
-#using scripts\zm\ai\zm_ai_werewolf.gsc;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\zm\ai\zm_ai_werewolf;
 
 #namespace zm_ai_werewolf_interface;
 

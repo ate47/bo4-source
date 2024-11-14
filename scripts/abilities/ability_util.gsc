@@ -1,5 +1,5 @@
-#using scripts\abilities\ability_player.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\abilities\ability_player;
+#using scripts\core_common\util_shared;
 
 #namespace ability_util;
 

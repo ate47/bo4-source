@@ -1,4 +1,4 @@
-#using scripts\core_common\sound_shared.gsc;
+#using scripts\core_common\sound_shared;
 
 #namespace zombie_shared;
 

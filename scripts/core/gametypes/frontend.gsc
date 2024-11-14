@@ -1,10 +1,10 @@
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\popups_shared.gsc;
-#using scripts\core_common\gamestate.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\animation_shared.gsc;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\popups_shared;
+#using scripts\core_common\gamestate;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\animation_shared;
 
 #namespace frontend;
 

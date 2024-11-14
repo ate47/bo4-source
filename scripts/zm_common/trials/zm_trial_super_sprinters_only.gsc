@@ -1,6 +1,6 @@
 #using script_444bc5b4fa0fe14f;
-#using scripts\zm_common\zm_trial.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_trial;
+#using scripts\core_common\system_shared;
 
 #namespace zm_trial_super_sprinters_only;
 

@@ -1,11 +1,11 @@
-#using scripts\zm_common\zm_vo.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_traps.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_contracts.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\zm_common\zm_vo;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_traps;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_contracts;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_red_trap_boiling_bath;
 

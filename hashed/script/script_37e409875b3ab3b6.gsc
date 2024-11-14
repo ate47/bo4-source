@@ -3,13 +3,13 @@
 #using script_770268ef1e664da9;
 #using script_1b4af057274ffcd0;
 #using script_37e409875b3ab3b6;
-#using scripts\core_common\ai\planner_squad_utility.gsc;
-#using scripts\core_common\ai\planner_generic_squad.gsc;
-#using scripts\core_common\ai\planner_generic_commander.gsc;
-#using scripts\core_common\ai\planner_commander_utility.gsc;
-#using scripts\core_common\ai\planner_commander.gsc;
-#using scripts\core_common\ai\systems\planner.gsc;
-#using scripts\core_common\ai\systems\blackboard.gsc;
+#using scripts\core_common\ai\planner_squad_utility;
+#using scripts\core_common\ai\planner_generic_squad;
+#using scripts\core_common\ai\planner_generic_commander;
+#using scripts\core_common\ai\planner_commander_utility;
+#using scripts\core_common\ai\planner_commander;
+#using scripts\core_common\ai\systems\planner;
+#using scripts\core_common\ai\systems\blackboard;
 
 #namespace namespace_4932f496;
 

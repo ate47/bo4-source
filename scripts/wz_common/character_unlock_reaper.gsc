@@ -1,10 +1,10 @@
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\wz_common\character_unlock_fixup.gsc;
-#using scripts\wz_common\character_unlock.gsc;
-#using scripts\mp_common\gametypes\globallogic.gsc;
-#using scripts\mp_common\teams\teams.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\player\player_stats;
+#using scripts\wz_common\character_unlock_fixup;
+#using scripts\wz_common\character_unlock;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\mp_common\teams\teams;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace character_unlock_reaper;
 

@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_devgui.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
+#using scripts\zm_common\zm_devgui;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\spawner_shared;
 
 #namespace zm_ai_mannequin;
 

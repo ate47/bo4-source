@@ -1,5 +1,5 @@
 #using script_5de8a8ac9320a0bf;
-#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\system_shared;
 
 #namespace mp_devgui;
 

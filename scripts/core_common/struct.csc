@@ -1,4 +1,4 @@
-#using scripts\core_common\scene_shared.csc;
+#using scripts\core_common\scene_shared;
 
 #namespace struct;
 

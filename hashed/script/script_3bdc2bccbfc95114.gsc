@@ -1,4 +1,4 @@
-#using scripts\core_common\scene_shared.gsc;
+#using scripts\core_common\scene_shared;
 
 #namespace timecard_control;
 

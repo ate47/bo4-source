@@ -1,9 +1,9 @@
 #using script_3819e7a1427df6d2;
-#using scripts\core_common\status_effects\status_effect_util.gsc;
-#using scripts\core_common\damage.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\player\player_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\status_effects\status_effect_util;
+#using scripts\core_common\damage;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\player\player_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace arc;
 

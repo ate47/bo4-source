@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\visionset_mgr_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\visionset_mgr_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_bgb_now_you_see_me;
 

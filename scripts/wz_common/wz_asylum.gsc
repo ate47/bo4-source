@@ -1,7 +1,7 @@
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\mp_common\item_world.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\core_common\struct;
+#using scripts\core_common\clientfield_shared;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\system_shared;
 
 #namespace wz_asylum;
 

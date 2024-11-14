@@ -1,20 +1,20 @@
-#using scripts\weapons\weapon_utils.gsc;
-#using scripts\core_common\weapons_shared.gsc;
-#using scripts\core_common\vehicle_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\spawner_shared.gsc;
-#using scripts\core_common\scoreevents_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\loadout_shared.gsc;
-#using scripts\core_common\globallogic\globallogic_score.gsc;
-#using scripts\core_common\globallogic\globallogic_player.gsc;
-#using scripts\core_common\gamestate.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\dialog_shared.gsc;
-#using scripts\core_common\damagefeedback_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\weapons\weapon_utils;
+#using scripts\core_common\weapons_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\scoreevents_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\loadout_shared;
+#using scripts\core_common\globallogic\globallogic_score;
+#using scripts\core_common\globallogic\globallogic_player;
+#using scripts\core_common\gamestate;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\dialog_shared;
+#using scripts\core_common\damagefeedback_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace globallogic_vehicle;
 

@@ -1,9 +1,9 @@
-#using scripts\mp_common\player\player.csc;
-#using scripts\core_common\flag_shared.csc;
-#using scripts\core_common\renderoverridebundle.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\mp_common\player\player;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\renderoverridebundle;
+#using scripts\core_common\clientfield_shared;
 #using script_5978de81803f618a;
-#using scripts\core_common\struct.csc;
+#using scripts\core_common\struct;
 
 #namespace infect;
 

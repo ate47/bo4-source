@@ -1,7 +1,7 @@
-#using scripts\mp_common\dynamic_loadout.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\gestures.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
+#using scripts\mp_common\dynamic_loadout;
+#using scripts\core_common\struct;
+#using scripts\core_common\gestures;
+#using scripts\core_common\gameobjects_shared;
 
 #namespace pickup_ammo;
 

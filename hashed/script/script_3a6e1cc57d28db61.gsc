@@ -1,6 +1,6 @@
 #using script_cb32d07c95e5628;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\core_common\struct;
+#using scripts\core_common\callbacks_shared;
 
 #namespace namespace_f0884ae5;
 

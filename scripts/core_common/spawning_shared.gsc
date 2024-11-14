@@ -1,14 +1,14 @@
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\flagsys_shared.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\weapons\tacticalinsertion.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\math_shared.gsc;
-#using scripts\core_common\influencers_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\util_shared;
+#using scripts\weapons\tacticalinsertion;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\influencers_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace spawning;
 

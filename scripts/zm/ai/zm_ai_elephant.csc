@@ -1,4 +1,4 @@
-#using scripts\core_common\ai\archetype_elephant.csc;
+#using scripts\core_common\ai\archetype_elephant;
 
 #namespace zm_ai_elephant;
 

@@ -1,5 +1,5 @@
-#using scripts\mp_common\item_world_fixup.gsc;
-#using scripts\wz_common\wz_common_fixup.gsc;
+#using scripts\mp_common\item_world_fixup;
+#using scripts\wz_common\wz_common_fixup;
 
 #namespace namespace_96ab18d4;
 

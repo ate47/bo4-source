@@ -1,13 +1,13 @@
-#using scripts\killstreaks\killstreak_bundles.csc;
-#using scripts\killstreaks\flak_drone.csc;
-#using scripts\core_common\vehicle_shared.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\duplicaterender_mgr.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\helicopter_sounds_shared.csc;
-#using scripts\core_common\fx_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\struct.csc;
+#using scripts\killstreaks\killstreak_bundles;
+#using scripts\killstreaks\flak_drone;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\duplicaterender_mgr;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\helicopter_sounds_shared;
+#using scripts\core_common\fx_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
 
 #namespace helicopter;
 

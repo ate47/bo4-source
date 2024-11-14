@@ -1,7 +1,7 @@
-#using scripts\wz_common\character_unlock_fixup.csc;
-#using scripts\mp_common\item_world.csc;
-#using scripts\core_common\system_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
+#using scripts\wz_common\character_unlock_fixup;
+#using scripts\mp_common\item_world;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace character_unlock_takeo;
 

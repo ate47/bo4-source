@@ -1,7 +1,7 @@
-#using scripts\zm_common\gametypes\hostmigration.gsc;
-#using scripts\zm_common\gametypes\globallogic_score.gsc;
-#using scripts\core_common\hud_message_shared.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\zm_common\gametypes\hostmigration;
+#using scripts\zm_common\gametypes\globallogic_score;
+#using scripts\core_common\hud_message_shared;
+#using scripts\core_common\struct;
 
 #namespace globallogic_utils;
 

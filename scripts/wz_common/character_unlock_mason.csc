@@ -1,9 +1,9 @@
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\wz_common\character_unlock_fixup.csc;
-#using scripts\mp_common\item_world_fixup.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\core_common\callbacks_shared;
+#using scripts\wz_common\character_unlock_fixup;
+#using scripts\mp_common\item_world_fixup;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\system_shared;
 
 #namespace character_unlock_mason;
 

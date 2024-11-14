@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\system_shared;
 
 #namespace zm_bgb_danger_closest;
 

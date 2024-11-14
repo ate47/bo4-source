@@ -1,9 +1,9 @@
-#using scripts\weapons\weaponobjects.csc;
-#using scripts\core_common\renderoverridebundle.csc;
-#using scripts\core_common\struct.csc;
-#using scripts\core_common\array_shared.csc;
-#using scripts\core_common\callbacks_shared.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\renderoverridebundle;
+#using scripts\core_common\struct;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace wz_perk_engineer;
 

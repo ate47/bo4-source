@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_spawner.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_spawner;
 
 #namespace zm_puppet;
 

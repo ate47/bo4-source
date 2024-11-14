@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_perks.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\zm_common\zm_perks;
+#using scripts\core_common\system_shared;
 
 #namespace zm_perk_mod_tortoise;
 

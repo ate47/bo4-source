@@ -1,6 +1,6 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\util_shared;
 
 #namespace weaponobjects;
 

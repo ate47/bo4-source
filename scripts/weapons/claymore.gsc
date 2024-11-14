@@ -1,6 +1,6 @@
-#using scripts\weapons\weaponobjects.gsc;
-#using scripts\weapons\proximity_grenade.gsc;
-#using scripts\core_common\system_shared.gsc;
+#using scripts\weapons\weaponobjects;
+#using scripts\weapons\proximity_grenade;
+#using scripts\core_common\system_shared;
 
 #namespace claymore;
 

@@ -1,16 +1,16 @@
-#using scripts\zm_common\zm_zonemgr.gsc;
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_player.gsc;
-#using scripts\zm_common\zm_perks.gsc;
-#using scripts\zm_common\callbacks.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\player\player_stats.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\contracts_shared.gsc;
-#using scripts\core_common\challenges_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\zm_common\zm_zonemgr;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_player;
+#using scripts\zm_common\zm_perks;
+#using scripts\zm_common\callbacks;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\contracts_shared;
+#using scripts\core_common\challenges_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace contracts;
 

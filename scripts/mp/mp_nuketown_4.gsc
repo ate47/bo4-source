@@ -1,19 +1,19 @@
-#using scripts\core_common\ai_shared.gsc;
+#using scripts\core_common\ai_shared;
 #using script_67c9a990c0db216c;
-#using scripts\core_common\lui_shared.gsc;
-#using scripts\core_common\animation_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\mp\mp_nuketown_4_sound.gsc;
-#using scripts\mp\mp_nuketown_4_fx.gsc;
-#using scripts\mp_common\util.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\compass.gsc;
-#using scripts\core_common\struct.gsc;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\mp\mp_nuketown_4_sound;
+#using scripts\mp\mp_nuketown_4_fx;
+#using scripts\mp_common\util;
+#using scripts\mp_common\load;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\compass;
+#using scripts\core_common\struct;
 
 #namespace mp_nuketown_4;
 

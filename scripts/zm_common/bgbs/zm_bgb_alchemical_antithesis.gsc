@@ -1,9 +1,9 @@
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_stats.gsc;
-#using scripts\zm_common\zm_loadout.gsc;
-#using scripts\zm_common\zm_bgb.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\core_common\math_shared.gsc;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_bgb;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\math_shared;
 
 #namespace zm_bgb_alchemical_antithesis;
 

@@ -1,7 +1,7 @@
-#using scripts\abilities\gadgets\gadget_vision_pulse.csc;
-#using scripts\core_common\util_shared.csc;
-#using scripts\core_common\renderoverridebundle.csc;
-#using scripts\core_common\flag_shared.csc;
+#using scripts\abilities\gadgets\gadget_vision_pulse;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\renderoverridebundle;
+#using scripts\core_common\flag_shared;
 
 #namespace shoutcaster;
 

@@ -1,6 +1,6 @@
-#using scripts\wz_common\character_unlock_fixup.csc;
-#using scripts\mp_common\item_world_fixup.csc;
-#using scripts\core_common\system_shared.csc;
+#using scripts\wz_common\character_unlock_fixup;
+#using scripts\mp_common\item_world_fixup;
+#using scripts\core_common\system_shared;
 
 #namespace character_unlock_nomad;
 

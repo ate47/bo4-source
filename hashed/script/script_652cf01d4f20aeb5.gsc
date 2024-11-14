@@ -1,18 +1,18 @@
-#using scripts\zm\zm_orange_util.gsc;
-#using scripts\zm\zm_hms_util.gsc;
-#using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here.gsc;
-#using scripts\zm_common\zm_weapons.gsc;
-#using scripts\zm_common\zm_utility.gsc;
-#using scripts\zm_common\zm_unitrigger.gsc;
-#using scripts\zm_common\zm_ui_inventory.gsc;
-#using scripts\zm_common\zm_sq.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\core_common\scene_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\exploder_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
-#using scripts\core_common\array_shared.gsc;
+#using scripts\zm\zm_orange_util;
+#using scripts\zm\zm_hms_util;
+#using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
+#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_unitrigger;
+#using scripts\zm_common\zm_ui_inventory;
+#using scripts\zm_common\zm_sq;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\array_shared;
 
 #namespace namespace_5449c7ba;
 

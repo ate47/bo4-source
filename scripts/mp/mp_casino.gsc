@@ -1,7 +1,7 @@
-#using scripts\mp\mp_casino_scripted.gsc;
-#using scripts\core_common\struct.gsc;
-#using scripts\mp_common\load.gsc;
-#using scripts\core_common\compass.gsc;
+#using scripts\mp\mp_casino_scripted;
+#using scripts\core_common\struct;
+#using scripts\mp_common\load;
+#using scripts\core_common\compass;
 
 #namespace mp_casino;
 

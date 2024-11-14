@@ -1,18 +1,18 @@
-#using scripts\mp_common\player\player_utils.gsc;
-#using scripts\mp_common\player\player_loadout.gsc;
-#using scripts\mp_common\gametypes\globallogic_spawn.gsc;
-#using scripts\mp_common\gametypes\ct_utils.gsc;
-#using scripts\mp_common\gametypes\ct_gadgets.gsc;
-#using scripts\mp_common\gametypes\ct_ruin_tutorial.gsc;
-#using scripts\mp_common\gametypes\ct_core.gsc;
-#using scripts\mp_common\gametypes\ct_bots.gsc;
-#using scripts\core_common\util_shared.gsc;
-#using scripts\core_common\spawning_shared.gsc;
-#using scripts\core_common\potm_shared.gsc;
-#using scripts\core_common\gameobjects_shared.gsc;
-#using scripts\core_common\flag_shared.gsc;
-#using scripts\core_common\clientfield_shared.gsc;
-#using scripts\core_common\callbacks_shared.gsc;
+#using scripts\mp_common\player\player_utils;
+#using scripts\mp_common\player\player_loadout;
+#using scripts\mp_common\gametypes\globallogic_spawn;
+#using scripts\mp_common\gametypes\ct_utils;
+#using scripts\mp_common\gametypes\ct_gadgets;
+#using scripts\mp_common\gametypes\ct_ruin_tutorial;
+#using scripts\mp_common\gametypes\ct_core;
+#using scripts\mp_common\gametypes\ct_bots;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\spawning_shared;
+#using scripts\core_common\potm_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\callbacks_shared;
 
 #namespace ct_ruin;
 

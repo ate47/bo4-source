@@ -1,5 +1,5 @@
-#using scripts\zm\zm_orange_zstandard.gsc;
-#using scripts\core_common\util_shared.gsc;
+#using scripts\zm\zm_orange_zstandard;
+#using scripts\core_common\util_shared;
 
 #namespace zm_orange_gamemodes;
 

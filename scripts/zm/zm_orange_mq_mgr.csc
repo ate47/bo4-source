@@ -1,14 +1,14 @@
-#using scripts\zm\zm_orange_mq_sendoff.csc;
+#using scripts\zm\zm_orange_mq_sendoff;
 #using script_6fdaa897ed596805;
-#using scripts\zm\zm_orange_mq_fuse.csc;
-#using scripts\zm\zm_orange_mq_hell.csc;
-#using scripts\zm\zm_orange_mq_campfire.csc;
-#using scripts\zm\zm_orange_mq_blood.csc;
-#using scripts\zm\perk\zm_perk_death_perception.csc;
-#using scripts\zm_common\zm_utility.csc;
-#using scripts\zm_common\zm.csc;
-#using scripts\core_common\exploder_shared.csc;
-#using scripts\core_common\clientfield_shared.csc;
+#using scripts\zm\zm_orange_mq_fuse;
+#using scripts\zm\zm_orange_mq_hell;
+#using scripts\zm\zm_orange_mq_campfire;
+#using scripts\zm\zm_orange_mq_blood;
+#using scripts\zm\perk\zm_perk_death_perception;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\clientfield_shared;
 
 #namespace zm_orange_mq_mgr;
 

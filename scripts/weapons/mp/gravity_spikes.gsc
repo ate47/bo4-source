@@ -1,7 +1,7 @@
-#using scripts\mp_common\gametypes\battlechatter.gsc;
-#using scripts\weapons\gravity_spikes.gsc;
-#using scripts\core_common\system_shared.gsc;
-#using scripts\abilities\ability_player.gsc;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\weapons\gravity_spikes;
+#using scripts\core_common\system_shared;
+#using scripts\abilities\ability_player;
 
 #namespace gravity_spikes;
 
