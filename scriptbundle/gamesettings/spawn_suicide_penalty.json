@@ -19,11 +19,11 @@
     "var_9b3ef183": "20",
     "var_8d115528": "18",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "spawn_suicide_penalty",
     "displayname": "#hash_1bb6fdf1212d31ab",
     "label1": "#menu/disabled",
-    "label2": "#hash_7201503206ce2d27",
+    "label2": "#menu/1_second",
     "var_9de86f42": 17,
     "setting": "spawnsuicidepenalty"
 }

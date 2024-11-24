@@ -1,7 +1,7 @@
 {
     "name": "#eq_grapple_ct",
     "baseWeapon": "#eq_grapple_ct",
-    "displayname": "#hash_2d272d013fc30895",
+    "displayname": "#weapon/grapple",
     "sessionMode": "all",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

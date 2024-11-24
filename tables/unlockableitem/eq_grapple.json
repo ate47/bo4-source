@@ -1,9 +1,9 @@
 {
     "name": "",
     "nameHash": "#eq_grapple",
-    "displayName": "#hash_2d272d013fc30895",
+    "displayName": "#weapon/grapple",
     "displayNameShort": "#hash_3046dd369d8a186d",
-    "description": "#hash_2c7e88684ac0783f",
+    "description": "#weapon/grapple_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_equipment_eq_grapple",

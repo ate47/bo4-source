@@ -1,11 +1,11 @@
 {
     "options": [
         {
-            "label": "#hash_8b484298ae7d4a7",
+            "label": "#warzone/minimap_square",
             "value": "0"
         },
         {
-            "label": "#hash_53f021c8dfa0b890",
+            "label": "#warzone/minimap_round",
             "value": "1"
         }
     ],

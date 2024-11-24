@@ -1,7 +1,7 @@
 {
     "name": "#hash_3bda1463816cec20",
     "baseWeapon": "#hero_bowlauncher2",
-    "displayname": "#hash_f10bcab5934b2f9",
+    "displayname": "#weapon/hero_bowlauncher",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

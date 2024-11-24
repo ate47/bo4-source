@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "perk_dexterity_restriction",
-    "displayname": "#hash_22beb8a68fe81742",
+    "displayname": "#menu/talent_dexterity",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

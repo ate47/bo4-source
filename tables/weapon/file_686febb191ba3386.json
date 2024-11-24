@@ -1,7 +1,7 @@
 {
     "name": "#hash_686febb191ba3386",
     "baseWeapon": "#eq_collapse_grenade",
-    "displayname": "#hash_7c5c4488b8ad747e",
+    "displayname": "#warzone/collapse_grenade",
     "sessionMode": "warzone",
     "itemIndex": 64,
     "dualWieldWeaponIndex": 0,

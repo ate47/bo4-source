@@ -132,10 +132,10 @@ function function_5f259315() {
 // Checksum 0x354aef79, Offset: 0x1698
 // Size: 0x184
 function register_steps() {
-    zm_sq::register(#"zm_mansion_ley_line", #"step_1", #"hash_2388f47d8d90bdfb", &init_step_1, &cleanup_step_1);
-    zm_sq::register(#"zm_mansion_ley_line", #"step_2", #"hash_2388f57d8d90bfae", &init_step_2, &cleanup_step_2);
-    zm_sq::register(#"zm_mansion_ley_line", #"step_3", #"hash_2388f67d8d90c161", &init_step_3, &cleanup_step_3);
-    zm_sq::register(#"zm_mansion_ley_line", #"step_4", #"hash_2388f77d8d90c314", &init_step_4, &cleanup_step_4);
+    zm_sq::register(#"zm_mansion_ley_line", #"step_1", #"ley_line_step_1", &init_step_1, &cleanup_step_1);
+    zm_sq::register(#"zm_mansion_ley_line", #"step_2", #"ley_line_step_2", &init_step_2, &cleanup_step_2);
+    zm_sq::register(#"zm_mansion_ley_line", #"step_3", #"ley_line_step_3", &init_step_3, &cleanup_step_3);
+    zm_sq::register(#"zm_mansion_ley_line", #"step_4", #"ley_line_step_4", &init_step_4, &cleanup_step_4);
 }
 
 // Namespace namespace_a8113e97/zm_mansion_ley_line

@@ -22,12 +22,12 @@
     "var_3ec0b888": "20",
     "var_246e83e4": "15",
     "type": "gamesettings",
-    "label": "#hash_bcb8739fdb0870b",
+    "label": "#menu/x_minutes",
     "var_5a6dee5a": 1,
     "name": "time_limit",
     "displayname": "#hash_62c13100f00ec8ed",
-    "label1": "#hash_52b38f6fb98e8982",
-    "label2": "#hash_666d89ef0248d1ef",
+    "label1": "#menu/unlimited",
+    "label2": "#menu/1_minute",
     "var_9de86f42": 20,
     "setting": "timeLimit"
 }

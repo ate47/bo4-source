@@ -11,10 +11,10 @@
     "var_dfed6968": "15",
     "var_71ce0d1f": "20",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "idle_flag_reset_time",
     "displayname": "#hash_8fc7a08b3a2f1f8",
-    "label1": "#hash_52b38f6fb98e8982",
+    "label1": "#menu/unlimited",
     "var_9de86f42": 9,
     "setting": "idleFlagResetTime"
 }

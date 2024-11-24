@@ -1,7 +1,7 @@
 {
     "options": [
         {
-            "label": "#hash_6ad13a07527ba434",
+            "label": "#menu/indicator_icon",
             "value": "2"
         },
         {
@@ -9,7 +9,7 @@
             "value": "1"
         },
         {
-            "label": "#hash_fc96a8486de30c0",
+            "label": "#menu/indicator_full",
             "value": "0"
         }
     ],

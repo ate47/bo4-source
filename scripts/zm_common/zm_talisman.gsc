@@ -32,10 +32,10 @@ function on_player_connect() {
     var_ea4558f5 = function_b143666d(var_e18c5d7, 4);
     n_remaining = 0;
     if (isdefined(s_talisman)) {
-        if (!isdefined(var_ea4558f5.var_14c94e49)) {
-            var_ea4558f5.var_14c94e49 = 0;
+        if (!isdefined(var_ea4558f5.talismanrarity)) {
+            var_ea4558f5.talismanrarity = 0;
         }
-        s_talisman.rarity = var_ea4558f5.var_14c94e49;
+        s_talisman.rarity = var_ea4558f5.talismanrarity;
         n_remaining = self function_bd6a3188(s_talisman.namehash);
     }
     var_88049519 = 0;

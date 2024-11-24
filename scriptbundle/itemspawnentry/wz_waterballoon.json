@@ -7,7 +7,7 @@
     "type": "itemspawnentry",
     "var_77d2cbb5": "#wpn_t8_wz_water_balloon_world",
     "name": "wz_waterballoon",
-    "displayname": "#hash_45e61d7aa4721759",
+    "displayname": "#weapon/water_balloon",
     "var_36781d9f": "fly_drop_waterball",
     "stackcount": 20,
     "var_32ceba33": 1,

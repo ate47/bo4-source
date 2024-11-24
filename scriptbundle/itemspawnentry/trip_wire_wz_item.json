@@ -6,7 +6,7 @@
     "type": "itemspawnentry",
     "angleoffsetz": -65,
     "name": "trip_wire_wz_item",
-    "displayname": "#hash_50d8b3b5944ed86c",
+    "displayname": "#weapon/tripwire",
     "stackcount": 1,
     "icon": "#ui_icon_equipment_eq_tripwire",
     "modelscale": 1,

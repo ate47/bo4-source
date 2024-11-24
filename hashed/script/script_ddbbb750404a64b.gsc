@@ -22,7 +22,7 @@ function __init__() {
     if (!zm_trial::is_trial_mode()) {
         return;
     }
-    zm_trial::register_challenge(#"hash_69bf786a279d4ca6", &on_begin, &on_end);
+    zm_trial::register_challenge(#"round_ending_zone", &on_begin, &on_end);
 }
 
 // Namespace namespace_287e05a2/namespace_287e05a2

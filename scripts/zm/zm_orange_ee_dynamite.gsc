@@ -40,7 +40,7 @@ function init() {
 // Checksum 0x6053bc63, Offset: 0x4b0
 // Size: 0x4e4
 function main() {
-    level flag::init(#"hash_98e32feb5b8ac79");
+    level flag::init(#"debug_dynamite_zombie");
     level flag::init(#"hash_16c15e4538336bb5");
     level.var_d867b9f3 = array(zm_crafting::get_component("zitem_orange_dynamite_bomb_part_1"), zm_crafting::get_component("zitem_orange_dynamite_bomb_part_2"), zm_crafting::get_component("zitem_orange_dynamite_bomb_part_3"));
     level.var_1daa43ee = 1;
@@ -204,7 +204,7 @@ function private function_e3203a2() {
     if (level flag::get(#"hash_16c15e4538336bb5")) {
         return;
     }
-    if (level.var_1daa43ee && self.archetype === #"zombie" && self.var_9fde8624 !== #"zombie_electric" && (math::cointoss(20) || level flag::get(#"hash_98e32feb5b8ac79"))) {
+    if (level.var_1daa43ee && self.archetype === #"zombie" && self.var_9fde8624 !== #"zombie_electric" && (math::cointoss(20) || level flag::get(#"debug_dynamite_zombie"))) {
         while (!isdefined(self.spawn_pos)) {
             waitframe(1);
         }
@@ -222,7 +222,7 @@ function function_8427e524() {
     self notify(#"dynamited");
     self thread zm_orange_util::function_865209df(#"dynamite_zombie", #"hash_c38f82bacfe540c");
     level.var_1daa43ee = 0;
-    level flag::clear(#"hash_98e32feb5b8ac79");
+    level flag::clear(#"debug_dynamite_zombie");
     self.var_f3908ae9 = 1;
     self clientfield::set("" + #"hash_6adfdd12c9656e1c", 1);
     self function_4baeb885();
@@ -245,7 +245,7 @@ function function_8427e524() {
                 level function_d8f300c3(self.origin);
                 playsoundatposition(#"hash_7b838586b7ef0d9d", self.origin);
             } else {
-                level flag::set(#"hash_98e32feb5b8ac79");
+                level flag::set(#"debug_dynamite_zombie");
             }
             level.var_1daa43ee = 1;
         }

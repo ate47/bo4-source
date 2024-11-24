@@ -1,9 +1,9 @@
 {
     "contracticon": "#hash_798c142e53c24b87",
-    "contracttitle": "#hash_4edf2f08fe6b3bf5",
+    "contracttitle": "#menu/contract_tedd",
     "name": "loot_contract_tedd",
     "var_4b258f2c": "#hash_3327bf2f86887aa7",
-    "contractdescription": "#hash_6c5b6756876bbdc6",
+    "contractdescription": "#menu/blackout_character",
     "var_f15e270f": "#white",
     "var_1c057e8c": "#loot07_ui_icon_blackmarket_itemshop_bundle_tedd",
     "var_e08fc162": "#hash_5086f3c5ddd389df"

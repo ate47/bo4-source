@@ -32,11 +32,11 @@ function init_shared() {
     weaponobjects::function_e6400478(#"eq_sensor", &function_eb12ff13, 1);
     globallogic_score::register_kill_callback(getweapon("eq_sensor"), &function_4d8676af);
     globallogic_score::function_86f90713(getweapon("eq_sensor"), &function_4d8676af);
-    level.var_1f151eb = getweapon("eq_sensor");
+    level.sensordartweapon = getweapon("eq_sensor");
     if (getgametypesetting(#"competitivesettings") === 1) {
         level.var_e88e144b = getscriptbundle("sensor_custom_settings_comp");
-    } else if (isdefined(level.var_1f151eb.customsettings)) {
-        level.var_e88e144b = getscriptbundle(level.var_1f151eb.customsettings);
+    } else if (isdefined(level.sensordartweapon.customsettings)) {
+        level.var_e88e144b = getscriptbundle(level.sensordartweapon.customsettings);
     } else {
         level.var_e88e144b = getscriptbundle("sensor_custom_settings");
     }
@@ -50,10 +50,10 @@ function init_shared() {
 // Size: 0x70
 function function_1c601b99() {
     if (isdefined(level.var_1b900c1d)) {
-        [[ level.var_1b900c1d ]](level.var_1f151eb, &function_bff5c062);
+        [[ level.var_1b900c1d ]](level.sensordartweapon, &function_bff5c062);
     }
     if (isdefined(level.var_a5dacbea)) {
-        [[ level.var_a5dacbea ]](level.var_1f151eb, &weaponobjects::function_127fb8f3);
+        [[ level.var_a5dacbea ]](level.sensordartweapon, &weaponobjects::function_127fb8f3);
     }
 }
 

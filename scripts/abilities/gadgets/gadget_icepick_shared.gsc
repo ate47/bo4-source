@@ -1009,7 +1009,7 @@ function private function_6b9d6894(player) {
         case #"id":
             if (!(isdefined(player.var_c1911c44) ? player.var_c1911c44 : 0) && waitresult.intpayload === 1) {
                 if (isdefined(level.var_fdb0a658) && level.var_fdb0a658) {
-                    player iprintlnbold(#"hash_77195fae71b9bcdd");
+                    player iprintlnbold(#"weapon/icepick_unavailable");
                     player switchtoweapon();
                     return;
                 }

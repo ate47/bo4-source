@@ -22,7 +22,7 @@
     "sound660": "#uin_unavailable_charging",
     "var_8a03df2b": "#mp/claymore_pickup",
     "var_2f3ca476": "#mp/claymore_hacking",
-    "projexplosionsound": "#hash_60443bcf1b754ae9",
+    "projexplosionsound": "#exp_claymore",
     "properties": {
         "var_f56ac2bd": "",
         "spawninfluencer": "",

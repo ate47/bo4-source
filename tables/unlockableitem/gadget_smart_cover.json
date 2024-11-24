@@ -1,9 +1,9 @@
 {
     "name": "",
     "nameHash": "#gadget_smart_cover",
-    "displayName": "#hash_3cf5343acd975b86",
+    "displayName": "#weapon/smartcover",
     "displayNameShort": "#hash_3046dd369d8a186d",
-    "description": "#hash_f3cff30ab7ddb76",
+    "description": "#weapon/smartcover_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_gadget_smart_cover_mp",

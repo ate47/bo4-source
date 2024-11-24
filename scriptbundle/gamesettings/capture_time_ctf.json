@@ -16,11 +16,11 @@
     "var_d606e712": "8",
     "var_7997ae35": "10",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "capture_time_ctf",
-    "displayname": "#hash_4fe06b8b1804bf79",
+    "displayname": "#menu/pickup_time",
     "label1": "#menu/instant",
-    "var_71b6e020": "#hash_7201503206ce2d27",
+    "var_71b6e020": "#menu/1_second",
     "var_9de86f42": 14,
     "setting": "captureTime"
 }

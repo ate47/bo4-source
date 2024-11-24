@@ -1718,7 +1718,7 @@ function function_fbf0e632() {
         case #"hash_50d92ca3c6c7c2a8":
             level thread function_71a6c3ea();
             return 1;
-        case #"hash_993396a4206a1e9":
+        case #"enable_cave_zone":
             level thread function_f39d0796();
             return 1;
         case #"hash_4abb72859ec9576c":

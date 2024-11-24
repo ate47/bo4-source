@@ -7,9 +7,9 @@
     "var_dfed6968": "45",
     "var_71ce0d1f": "60",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "prematch_period",
-    "displayname": "#hash_40f791c3fee0c263",
+    "displayname": "#menu/prematch_timer",
     "var_9de86f42": 5,
     "setting": "prematchperiod"
 }

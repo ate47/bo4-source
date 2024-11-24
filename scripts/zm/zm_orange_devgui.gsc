@@ -105,8 +105,8 @@
                 zm_orange_ee_dynamite::function_61511fcf(1);
                 zm_orange_ee_dynamite::function_61511fcf(2);
                 break;
-            case #"hash_3c6c8aaf444d0e1a":
-                level flag::set(#"hash_98e32feb5b8ac79");
+            case #"max_dynamite_chance":
+                level flag::set(#"debug_dynamite_zombie");
                 break;
             case #"hash_4f92a974297244f1":
                 if (!isdefined(level.var_969fe3f1)) {

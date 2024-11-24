@@ -1,13 +1,13 @@
 {
-    "hinttext": "#hash_4ef5f815b0ce93c4",
+    "hinttext": "#menu/scoring_hint",
     "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",
     "name": "score_per_player",
     "displayname": "#menu/scoring",
-    "label1": "#hash_675b77ac44dd0ffb",
-    "label2": "#hash_4389613147ed224f",
+    "label1": "#menu/constant",
+    "label2": "#menu/player_additive",
     "var_9de86f42": 2,
     "setting": "scorePerPlayer"
 }

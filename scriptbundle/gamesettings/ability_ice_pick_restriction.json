@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "ability_ice_pick_restriction",
-    "displayname": "#hash_48c19a59d96859f3",
+    "displayname": "#weapon/hero_icepick",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

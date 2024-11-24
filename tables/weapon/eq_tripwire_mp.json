@@ -1,7 +1,7 @@
 {
     "name": "#eq_tripwire_mp",
     "baseWeapon": "#eq_tripwire",
-    "displayname": "#hash_50d8b3b5944ed86c",
+    "displayname": "#weapon/tripwire",
     "sessionMode": "multiplayer",
     "itemIndex": 85,
     "dualWieldWeaponIndex": 0,

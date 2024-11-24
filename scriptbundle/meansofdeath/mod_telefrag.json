@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_telefrag",
-    "displayname": "#hash_7b89f94e5abd475",
+    "displayname": "#ui/mod_telefrag",
     "icon": "#ui_icon_meansofdeath_suicide",
     "iconlarge": "#ui_icon_meansofdeath_suicide_xl"
 }

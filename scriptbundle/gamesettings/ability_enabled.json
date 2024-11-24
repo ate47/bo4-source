@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "ability_enabled",
-    "displayname": "#hash_42b0406d40a9544e",
+    "displayname": "#menu/special_weaponry",
     "var_9de86f42": 2,
     "setting": "specialistAbilityEnabled_allies_1",
     "var_82c732a7": 1

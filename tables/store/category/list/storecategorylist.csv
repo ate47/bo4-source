@@ -1,8 +1,8 @@
 id,name,nameHashed,displayName,image,productsCount,visibility
-0,featured,#featured,#hash_79b5ec48c6e4d1cb,#hash_f7a6e852f61d737,11,true
-1,common_pc,#common_pc,#hash_483f54a8cff752c,#hash_28252f0d8c571626,9,true
+0,featured,#featured,#menu/store_featured,#hash_f7a6e852f61d737,11,true
+1,common_pc,#common_pc,#menu/store_additional,#hash_28252f0d8c571626,9,true
 2,codpoints,#codpoints,#hash_293582834683fcc5,#hash_618641a90515c89e,7,true
 3,mpdlc,#mpdlc,#hash_767da271883e42ee,#hash_618641a90515c89e,6,false
 4,zmdlc,#zmdlc,#hash_22f962ee6f885bb6,#hash_618641a90515c89e,6,false
 5,cross_title,#cross_title,#hash_66c4a4616603d38a,#hash_f7a6e852f61d737,14,false
-6,code,#code,#hash_185959da897dcba4,#hash_618641a90515c89e,3,false
+6,code,#code,#menu/store_code,#hash_618641a90515c89e,3,false

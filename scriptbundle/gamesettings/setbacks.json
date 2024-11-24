@@ -1,5 +1,5 @@
 {
-    "hinttext": "#hash_337c33282ffbd23d",
+    "hinttext": "#menu/setbacks_hint",
     "configstringfiletype": "scriptbundle",
     "var_f2038d90": "7",
     "var_fc4aa21e": "8",
@@ -13,10 +13,10 @@
     "var_9b4871a2": "10",
     "var_8d1ed54f": "9",
     "type": "gamesettings",
-    "label": "#hash_480e91d9d66acd07",
+    "label": "#menu/x_weapons",
     "name": "setbacks",
-    "displayname": "#hash_7d6e8c8d72eb5c33",
-    "label2": "#hash_2d42c79ffc5f952e",
+    "displayname": "#menu/setbacks",
+    "label2": "#menu/x_weapon",
     "var_9de86f42": 11,
     "setting": "setbacks"
 }

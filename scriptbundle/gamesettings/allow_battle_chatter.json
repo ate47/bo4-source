@@ -1,9 +1,9 @@
 {
-    "hinttext": "#hash_4ed5c2ec5c21018a",
+    "hinttext": "#menu/battlechatter_hint",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "allow_battle_chatter",
-    "displayname": "#hash_e5b6096c58beed6",
+    "displayname": "#menu/battlechatter",
     "var_9de86f42": 2,
     "setting": "allowBattleChatter",
     "var_82c732a7": 1

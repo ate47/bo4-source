@@ -30,9 +30,9 @@ function autoexec __init__system__() {
 function __init__() {
     registerbehaviorscriptfunctions();
     function_6bb82ac9();
-    clientfield::register("scriptmover", "" + #"hash_699d5bb1a9339a93", 16000, 1, "int");
-    clientfield::register("actor", "" + #"hash_4466de6137f54b59", 16000, 1, "int");
-    clientfield::register("actor", "" + #"hash_2eec8fc21495a18c", 16000, 2, "int");
+    clientfield::register("scriptmover", "" + #"avogadro_bolt_fx", 16000, 1, "int");
+    clientfield::register("actor", "" + #"avogadro_phase_fx", 16000, 1, "int");
+    clientfield::register("actor", "" + #"avogadro_health_fx", 16000, 2, "int");
     spawner::add_archetype_spawn_function(#"avogadro", &function_ee579eb5);
     spawner::function_89a2cd87(#"avogadro", &function_d1359818);
     callback::on_player_damage(&function_99ce086a);
@@ -43,7 +43,7 @@ function __init__() {
 // Checksum 0xbdfeb2e3, Offset: 0x3b0
 // Size: 0x2e
 function __main__() {
-    level.var_2ea60515 = getstatuseffect(#"hash_3a1f530cdb5f75f4");
+    level.var_2ea60515 = getstatuseffect(#"avogadro_shock_slowed");
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
@@ -165,14 +165,14 @@ function function_99ce086a(inflictor, attacker, damage, flags, meansofdeath, wea
 // Size: 0xfc
 function function_dbc638a8(entity) {
     if (entity.health < entity.maxhealth * 0.33) {
-        entity clientfield::set("" + #"hash_2eec8fc21495a18c", 1);
+        entity clientfield::set("" + #"avogadro_health_fx", 1);
         return;
     }
     if (entity.health < entity.maxhealth * 0.66) {
-        entity clientfield::set("" + #"hash_2eec8fc21495a18c", 2);
+        entity clientfield::set("" + #"avogadro_health_fx", 2);
         return;
     }
-    entity clientfield::set("" + #"hash_2eec8fc21495a18c", 3);
+    entity clientfield::set("" + #"avogadro_health_fx", 3);
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
@@ -200,7 +200,7 @@ function function_80fc1a78(time) {
 // Size: 0xc6
 function private function_66dd488a() {
     foreach (bolt in level.avogadrobolts) {
-        if (isalive(bolt.owner) || bolt clientfield::get("" + #"hash_699d5bb1a9339a93") == 1) {
+        if (isalive(bolt.owner) || bolt clientfield::get("" + #"avogadro_bolt_fx") == 1) {
             continue;
         }
         return bolt;
@@ -321,17 +321,17 @@ function private shoot_bolt_wait(entity) {
     enemy = entity.favoriteenemy;
     self.shield = 0;
     self notify(#"stop_health");
-    self clientfield::set("" + #"hash_2eec8fc21495a18c", 0);
+    self clientfield::set("" + #"avogadro_health_fx", 0);
     source_pos = self gettagorigin("tag_weapon_right");
     target_pos = enemy geteye();
     bolt.origin = source_pos;
     bolt endon(#"death");
     wait 0.1;
-    bolt clientfield::set("" + #"hash_699d5bb1a9339a93", 1);
+    bolt clientfield::set("" + #"avogadro_bolt_fx", 1);
     bolt moveto(target_pos, 0.2);
     bolt waittill(#"movedone");
     bolt check_bolt_impact(entity, enemy);
-    bolt clientfield::set("" + #"hash_699d5bb1a9339a93", 0);
+    bolt clientfield::set("" + #"avogadro_bolt_fx", 0);
     if (isdefined(bolt.owner)) {
         function_cbdce009(bolt);
     }
@@ -427,7 +427,7 @@ function function_3b8d314c(entity) {
     entity.var_1ce249af = 0;
     entity.is_phasing = 1;
     if (isdefined(self.var_f3bbe853) && self.var_f3bbe853) {
-        entity clientfield::set("" + #"hash_4466de6137f54b59", 1);
+        entity clientfield::set("" + #"avogadro_phase_fx", 1);
     }
     if (gettime() - entity.var_7fde19e8 > 1000) {
         entity.var_9bff71aa = 0;
@@ -456,7 +456,7 @@ function function_dbba31c1(entity) {
     entity.is_phasing = undefined;
     entity.var_7fde19e8 = gettime();
     if (isdefined(self.var_f3bbe853) && self.var_f3bbe853) {
-        entity clientfield::set("" + #"hash_4466de6137f54b59", 0);
+        entity clientfield::set("" + #"avogadro_phase_fx", 0);
     }
 }
 

@@ -1,4 +1,4 @@
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 68;
 metatable "hash_178fce93499e4607";
 
@@ -45,7 +45,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 67;
 metatable "hash_70d06f10db7f6e5c";
 
@@ -92,7 +92,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 66;
 metatable "hash_519dd0b1f166ae4d";
 
@@ -139,7 +139,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 65;
 metatable "hash_a02825d6474e523d";
 
@@ -186,7 +186,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 64;
 metatable "hash_8be4c06784302ccd";
 
@@ -233,7 +233,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 63;
 metatable "hash_432e13e3db2e7099";
 
@@ -280,7 +280,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 62;
 metatable "hash_f1f69f189c50f1b";
 
@@ -327,7 +327,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 61;
 metatable "hash_b0a4a65fadaa06d7";
 
@@ -374,7 +374,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 60;
 metatable "hash_e422b9af57c905f6";
 
@@ -421,7 +421,7 @@ struct hash_32aeae7311d2cd9b {
 
 
 /////////////////////////////////////////////////
-begin "hash_436d5d0f2c842370";
+begin "gamedata/ddl/generated/wz_loadouts_sv.ddl";
 version 59;
 metatable "hash_4330853e2b77ba41";
 

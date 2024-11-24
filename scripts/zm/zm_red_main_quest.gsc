@@ -6817,7 +6817,7 @@ function function_13c87ace(var_a276c861, var_19e802fa) {
 // Checksum 0xf3ed1d9, Offset: 0x1ec58
 // Size: 0xf4
 function narrative_room(var_a276c861) {
-    level flag::set(#"hash_38ace2856b88126");
+    level flag::set(#"connect_portico_zones");
     mdl_door = getent("portico_model", "targetname");
     mdl_door rotateyaw(129, 1.6);
     var_3400a741 = getentarray("portico_clip", "targetname");

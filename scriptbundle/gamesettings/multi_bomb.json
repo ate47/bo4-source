@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "multi_bomb",
-    "displayname": "#hash_902844272532641",
+    "displayname": "#menu/multi_bomb",
     "var_9de86f42": 2,
     "setting": "multiBomb",
     "var_82c732a7": 1

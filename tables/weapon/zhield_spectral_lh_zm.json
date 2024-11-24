@@ -1,7 +1,7 @@
 {
     "name": "#zhield_spectral_lh_zm",
     "baseWeapon": "#zhield_spectral_lh",
-    "displayname": "#hash_75a60f01e15b18ed",
+    "displayname": "#zmweapon/shield_spectral",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

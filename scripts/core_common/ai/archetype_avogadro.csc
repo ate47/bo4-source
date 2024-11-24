@@ -19,9 +19,9 @@ function autoexec __init__system__() {
 // Checksum 0xfd4f3f17, Offset: 0x1b0
 // Size: 0x13c
 function __init__() {
-    clientfield::register("scriptmover", "" + #"hash_699d5bb1a9339a93", 16000, 1, "int", &function_9452b8f1, 0, 0);
-    clientfield::register("actor", "" + #"hash_4466de6137f54b59", 16000, 1, "int", &function_1d2d070c, 0, 0);
-    clientfield::register("actor", "" + #"hash_2eec8fc21495a18c", 16000, 2, "int", &function_ae4cd3d4, 0, 0);
+    clientfield::register("scriptmover", "" + #"avogadro_bolt_fx", 16000, 1, "int", &function_9452b8f1, 0, 0);
+    clientfield::register("actor", "" + #"avogadro_phase_fx", 16000, 1, "int", &function_1d2d070c, 0, 0);
+    clientfield::register("actor", "" + #"avogadro_health_fx", 16000, 2, "int", &function_ae4cd3d4, 0, 0);
     ai::add_archetype_spawn_function(#"avogadro", &initavogadro);
 }
 

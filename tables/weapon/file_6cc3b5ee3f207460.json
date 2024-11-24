@@ -1,6 +1,6 @@
 {
     "name": "#hash_6cc3b5ee3f207460",
-    "baseWeapon": "#hash_2b28c65b29371ab0",
+    "baseWeapon": "#dualoptic_baseweapon",
     "displayname": "#weapon/baseweapon",
     "sessionMode": "multiplayer",
     "itemIndex": 0,

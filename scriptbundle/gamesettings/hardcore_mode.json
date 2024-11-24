@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "hardcore_mode",
-    "displayname": "#hash_1e9b460a5eac3df1",
+    "displayname": "#menu/rules_hardcore",
     "var_9de86f42": 2,
     "setting": "hardcoreMode",
     "var_82c732a7": 1

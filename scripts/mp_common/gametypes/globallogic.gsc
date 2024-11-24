@@ -1897,10 +1897,10 @@ function function_692f2157() {
 // Size: 0x254
 function end_round(var_c1e98979) {
     if (sessionmodeismultiplayergame() && var_c1e98979 === 6) {
-        if (isdefined(level.var_81536c1d) && level.var_81536c1d) {
+        if (isdefined(level.roundending) && level.roundending) {
             return;
         }
-        level.var_81536c1d = 1;
+        level.roundending = 1;
         if (!isdefined(level.var_a5c930dd)) {
             level.var_a5c930dd = 0;
         }

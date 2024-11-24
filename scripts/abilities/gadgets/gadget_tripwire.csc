@@ -25,9 +25,9 @@ function __init__() {
     callback::add_callback(#"hash_2fc4cfecaed47583", &function_bd054816);
     clientfield::register("missile", "tripwire_state", 1, 2, "int", &function_6868fab3, 1, 1);
     clientfield::register("scriptmover", "tripwire_solo_beam_fx", 1, 1, "int", &function_9233eb94, 0, 0);
-    level.var_c27600b0 = getweapon("eq_tripwire");
-    if (isdefined(level.var_c27600b0.customsettings)) {
-        level.var_c72e8c51 = getscriptbundle(level.var_c27600b0.customsettings);
+    level.tripwireweapon = getweapon("eq_tripwire");
+    if (isdefined(level.tripwireweapon.customsettings)) {
+        level.var_c72e8c51 = getscriptbundle(level.tripwireweapon.customsettings);
     } else {
         level.var_c72e8c51 = getscriptbundle("tripwire_custom_settings");
     }
@@ -58,7 +58,7 @@ function function_330a13a6(params) {
 // Checksum 0x6dc85a78, Offset: 0x568
 // Size: 0x6e
 function function_bd054816(params) {
-    if (level.var_c27600b0 != params.offhand_weapon) {
+    if (level.tripwireweapon != params.offhand_weapon) {
         return;
     }
     if (params.using_offhand) {
@@ -198,7 +198,7 @@ function function_9233eb94(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x7e
 function function_2a919ef0(localclientnum) {
     currentoffhand = function_e9fe14ee(localclientnum);
-    if (level.var_c27600b0 != currentoffhand) {
+    if (level.tripwireweapon != currentoffhand) {
         return false;
     }
     if (!function_96d4f30e(localclientnum)) {
@@ -302,17 +302,17 @@ function function_95d56693() {
 // Size: 0x54c
 function update_previs(localclientnum) {
     player = self;
-    function_3e8d9b27(localclientnum, level.var_c27600b0, 1);
+    function_3e8d9b27(localclientnum, level.tripwireweapon, 1);
     facing_angles = getlocalclientangles(localclientnum);
     forward = anglestoforward(facing_angles);
     up = anglestoup(facing_angles);
-    velocity = function_711c258(forward, up, level.var_c27600b0);
+    velocity = function_711c258(forward, up, level.tripwireweapon);
     eye_pos = getlocalclienteyepos(localclientnum);
-    trace1 = function_e6ba3ec9(eye_pos, velocity, 0, level.var_c27600b0, level.var_41427f32);
+    trace1 = function_e6ba3ec9(eye_pos, velocity, 0, level.tripwireweapon, level.var_41427f32);
     level.tripwire.localclients[localclientnum].model.origin = trace1[#"position"];
     level.tripwire.localclients[localclientnum].model.angles = (angleclamp180(vectortoangles(trace1[#"normal"])[0] + 90), vectortoangles(trace1[#"normal"])[1], 0);
     level.tripwire.localclients[localclientnum].model.hitent = trace1[#"entity"];
-    if (isdefined(level.tripwire.localclients[localclientnum].model.hitent) && level.tripwire.localclients[localclientnum].model.hitent.weapon == level.var_c27600b0) {
+    if (isdefined(level.tripwire.localclients[localclientnum].model.hitent) && level.tripwire.localclients[localclientnum].model.hitent.weapon == level.tripwireweapon) {
         level.var_41427f32 = level.tripwire.localclients[localclientnum].model.hitent;
     }
     if (level.tripwire.wires.size > 0) {

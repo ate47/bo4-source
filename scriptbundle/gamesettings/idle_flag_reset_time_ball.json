@@ -9,7 +9,7 @@
     "var_dfed6968": "15",
     "var_71ce0d1f": "30",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "idle_flag_reset_time_ball",
     "displayname": "#hash_1122d81521503c7",
     "label1": "#menu/instant",

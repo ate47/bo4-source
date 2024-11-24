@@ -1,11 +1,11 @@
 {
     "options": [
         {
-            "label": "#hash_6aeab676cefc7412",
+            "label": "#warzone/ui_show",
             "value": "0"
         },
         {
-            "label": "#hash_15d00dd142d3824f",
+            "label": "#warzone/ui_hide",
             "value": "3"
         }
     ],

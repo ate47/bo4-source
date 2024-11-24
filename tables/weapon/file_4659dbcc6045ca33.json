@@ -1,7 +1,7 @@
 {
     "name": "#hash_4659dbcc6045ca33",
     "baseWeapon": "#ultimate_turret_deploy",
-    "displayname": "#hash_7a37b2fcb855abe4",
+    "displayname": "#weapon/ultimate_turret",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

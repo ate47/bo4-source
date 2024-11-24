@@ -1,4 +1,4 @@
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 77;
 metatable "hash_eaab3d23c59259e8";
 
@@ -48,7 +48,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[35];
+    hash_768aeb6b928320d outfit_breadcrumbs[35];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[35];
 };
 
@@ -84,7 +84,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 76;
 metatable "hash_5c93246f87606f55";
 
@@ -134,7 +134,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[35];
+    hash_768aeb6b928320d outfit_breadcrumbs[35];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[35];
 };
 
@@ -170,7 +170,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 75;
 metatable "hash_1cffdd4c79cf6a09";
 
@@ -220,7 +220,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -256,7 +256,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 74;
 metatable "hash_26207b2829a9ad96";
 
@@ -306,7 +306,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -342,7 +342,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 73;
 metatable "hash_cec2eebf7bbdbbc9";
 
@@ -392,7 +392,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -428,7 +428,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 72;
 metatable "hash_65dd9e62e4a7227d";
 
@@ -478,7 +478,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -514,7 +514,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 71;
 metatable "hash_204125132fab4170";
 
@@ -564,7 +564,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -600,7 +600,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 70;
 metatable "hash_d71b1e7be3f310c3";
 
@@ -650,7 +650,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -686,7 +686,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 69;
 metatable "hash_c64262e3ce873a8c";
 
@@ -736,7 +736,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -770,7 +770,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 68;
 metatable "hash_7c8a107fdf198475";
 
@@ -820,7 +820,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -854,7 +854,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 67;
 metatable "hash_109564565f17f9fa";
 
@@ -904,7 +904,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -938,7 +938,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 66;
 metatable "hash_a8a07a5cc9e40dd4";
 
@@ -989,7 +989,7 @@ struct character {
     uint9 hash_44ed9a1ad38be40[3];
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1023,7 +1023,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 65;
 metatable "hash_29543360f4bd4b52";
 
@@ -1075,7 +1075,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1109,7 +1109,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 64;
 metatable "hash_60151e1f0d80e7c3";
 
@@ -1159,7 +1159,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1193,7 +1193,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 63;
 metatable "hash_b66588010e7628bc";
 
@@ -1243,7 +1243,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1277,7 +1277,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 62;
 metatable "hash_5ee7161f675bb220";
 
@@ -1327,7 +1327,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1361,7 +1361,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 61;
 metatable "hash_3e8f7e3e4ad7d60e";
 
@@ -1411,7 +1411,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1445,7 +1445,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 60;
 metatable "hash_36ea9923bbc89d60";
 
@@ -1494,7 +1494,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1528,7 +1528,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 59;
 metatable "hash_2beeacb677625428";
 
@@ -1577,7 +1577,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1611,7 +1611,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 58;
 metatable "hash_b4dbf6398ced7685";
 
@@ -1660,7 +1660,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1694,7 +1694,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 57;
 metatable "hash_89126cc47e5b4212";
 
@@ -1742,7 +1742,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1775,7 +1775,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 56;
 metatable "hash_4f57d188f18a90e";
 
@@ -1823,7 +1823,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1856,7 +1856,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 55;
 metatable "hash_dd14574705403bfa";
 
@@ -1903,7 +1903,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -1937,7 +1937,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 54;
 metatable "hash_6c060e737f83991c";
 
@@ -1984,7 +1984,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2018,7 +2018,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 53;
 metatable "hash_b25ddac4c8f8fb22";
 
@@ -2065,7 +2065,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2098,7 +2098,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 52;
 metatable "hash_57fa9172d3d4423f";
 
@@ -2145,7 +2145,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2178,7 +2178,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 51;
 metatable "hash_c627550bbece648c";
 
@@ -2225,7 +2225,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2258,7 +2258,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 50;
 metatable "hash_242c457de60a80a1";
 
@@ -2305,7 +2305,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2338,7 +2338,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 49;
 metatable "hash_d4b60e2f67c7c282";
 
@@ -2384,7 +2384,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2417,7 +2417,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 48;
 metatable "hash_d0b4f55784add562";
 
@@ -2463,7 +2463,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2496,7 +2496,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 47;
 metatable "hash_1f4367303ea29be4";
 
@@ -2542,7 +2542,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2575,7 +2575,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 46;
 metatable "hash_7c123545327013ed";
 
@@ -2626,7 +2626,7 @@ struct hash_5fe8e8cb2b27ba05 {
 struct character {
     uint6 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2654,7 +2654,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 45;
 metatable "hash_25ea62fd4e2f5320";
 
@@ -2704,7 +2704,7 @@ struct hash_5fe8e8cb2b27ba05 {
 struct character {
     uint6 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2732,7 +2732,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 44;
 metatable "hash_7d676db5a44fdcbc";
 
@@ -2782,7 +2782,7 @@ struct hash_5fe8e8cb2b27ba05 {
 struct character {
     uint6 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[8];
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2810,7 +2810,7 @@ struct hash_705fa6d3f50ff148 {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 43;
 metatable "hash_a3d7f438c2c3e4a3";
 
@@ -2891,7 +2891,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 42;
 metatable "hash_675b1c186f8669e9";
 
@@ -2972,7 +2972,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 41;
 metatable "hash_945c06d900f199ae";
 
@@ -3053,7 +3053,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 40;
 metatable "hash_5572e25a6c775646";
 
@@ -3134,7 +3134,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 39;
 metatable "hash_5f6205e1b86b9a7";
 
@@ -3215,7 +3215,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 38;
 metatable "hash_9b947367c667aa7a";
 
@@ -3310,7 +3310,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 37;
 metatable "hash_db0ae0c800432b80";
 
@@ -3404,7 +3404,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 36;
 metatable "hash_72fdf48f7a716a30";
 
@@ -3498,7 +3498,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 35;
 metatable "hash_1ed75a60fc026eaf";
 
@@ -3592,7 +3592,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 34;
 metatable "hash_147d1c742ce208bf";
 
@@ -3686,7 +3686,7 @@ struct hash_487a06a811f1cadc {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 33;
 metatable "hash_707b3233cf105b8d";
 
@@ -3791,7 +3791,7 @@ struct mix_s {
 
 
 /////////////////////////////////////////////////
-begin "hash_7e220ef64a5b9330";
+begin "gamedata/ddl/generated/zm_loadouts_sv.ddl";
 version 32;
 metatable "hash_eb65245767de0f94";
 

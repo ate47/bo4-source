@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_explosive",
-    "displayname": "#hash_44e3d47c862ff18c",
+    "displayname": "#ui/mod_explosive",
     "icon": "#ui_icon_meansofdeath_explosive_death",
     "iconlarge": "#ui_icon_meansofdeath_explosive_death_xl"
 }

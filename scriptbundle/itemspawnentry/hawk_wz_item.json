@@ -1,6 +1,6 @@
 {
     "amount": 1,
-    "description": "#hash_693cbd6544eb9cf9",
+    "description": "#weapon/hawk_desc",
     "configstringfiletype": "scriptbundle",
     "model": "#wpn_t8_eqp_drone_hawk_world_static",
     "weapon": "weapon#eq_hawk_wz",

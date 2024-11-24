@@ -29,11 +29,11 @@ function __init__() {
     clientfield::register("scriptmover", "tripwire_solo_beam_fx", 1, 1, "int");
     callback::on_connect(&function_d863663f);
     weaponobjects::function_e6400478(#"eq_tripwire", &function_9f97e1a3, 1);
-    level.var_c27600b0 = getweapon("eq_tripwire");
+    level.tripwireweapon = getweapon("eq_tripwire");
     if (getgametypesetting(#"competitivesettings") === 1) {
         level.var_c72e8c51 = getscriptbundle("tripwire_custom_settings_comp");
-    } else if (isdefined(level.var_c27600b0.customsettings)) {
-        level.var_c72e8c51 = getscriptbundle(level.var_c27600b0.customsettings);
+    } else if (isdefined(level.tripwireweapon.customsettings)) {
+        level.var_c72e8c51 = getscriptbundle(level.tripwireweapon.customsettings);
     } else {
         level.var_c72e8c51 = getscriptbundle("tripwire_custom_settings");
     }
@@ -162,8 +162,8 @@ function on_tripwire_spawn(watcher, player) {
     self endon(#"death");
     weaponobjects::onspawnuseweaponobject(watcher, player);
     self.var_2d045452 = watcher;
-    self.weapon = level.var_c27600b0;
-    self setweapon(level.var_c27600b0);
+    self.weapon = level.tripwireweapon;
+    self setweapon(level.tripwireweapon);
     waitresult = self waittill(#"stationary");
     self util::make_sentient();
     self.hitnormal = waitresult.normal;

@@ -1,9 +1,9 @@
 {
-    "hinttext": "#hash_4176115384a6011e",
+    "hinttext": "#menu/scorestreaks_hint",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "loadout_killstreaks_enabled",
-    "displayname": "#hash_34a315d3be479fea",
+    "displayname": "#menu/scorestreaks",
     "var_9de86f42": 2,
     "setting": "loadoutKillstreaksEnabled",
     "var_82c732a7": 1

@@ -383,7 +383,7 @@ function laststand_disable_player_weapons() {
     self disableweaponcycling();
     var_df4942c2 = self getweaponslist(1);
     self.lastactiveweapon = self getcurrentweapon();
-    self.laststandpistol = function_549df594();
+    self.laststandpistol = indeploying_ui();
     foreach (weapon in var_df4942c2) {
         if (weapon == self.laststandpistol) {
             function_f351748e(weapon);
@@ -577,7 +577,7 @@ function function_f161bb2d() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfcfb375a, Offset: 0x26d8
 // Size: 0x19a
-function function_549df594() {
+function indeploying_ui() {
     var_2a32d68 = self.var_d84718d1;
     if (!isdefined(var_2a32d68)) {
         var_2a32d68 = [];

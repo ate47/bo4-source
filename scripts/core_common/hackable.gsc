@@ -43,7 +43,7 @@ function add_hackable_object(obj, test_callback, start_callback, fail_callback, 
         obj.hackable_timeout = getdvarfloat(#"scr_hacker_default_timeout", 0);
     }
     if (!isdefined(obj.hackable_progress_prompt)) {
-        obj.hackable_progress_prompt = #"hash_7080e1304a0ce47d";
+        obj.hackable_progress_prompt = #"weapon/hacking";
     }
     if (!isdefined(obj.hackable_cost_mult)) {
         obj.hackable_cost_mult = 1;

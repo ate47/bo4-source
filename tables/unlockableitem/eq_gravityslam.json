@@ -1,9 +1,9 @@
 {
     "name": "",
     "nameHash": "#eq_gravityslam",
-    "displayName": "#hash_7b7c34efa5954735",
+    "displayName": "#weapon/gravityslam",
     "displayNameShort": "#hash_3046dd369d8a186d",
-    "description": "#hash_639c0c8ef484f61f",
+    "description": "#weapon/gravityslam_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_eq_gravityslam_mp",

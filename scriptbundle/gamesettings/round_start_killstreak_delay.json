@@ -20,11 +20,11 @@
     "var_8d115528": "30",
     "var_246e83e4": "60",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "round_start_killstreak_delay",
-    "displayname": "#hash_4251e917ce4f58a5",
+    "displayname": "#menu/killstreak_delay",
     "label1": "#menu/disabled",
-    "label2": "#hash_7201503206ce2d27",
+    "label2": "#menu/1_second",
     "var_9de86f42": 18,
     "setting": "roundStartKillstreakDelay"
 }

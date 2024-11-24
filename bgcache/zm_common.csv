@@ -3577,7 +3577,7 @@ rumble,hash_2415ce1fdc3f50c5,294cf2bced8
 rumble,hash_25737886a28a3a7b,294cf2ba970
 rumble,zm_weap_scepter_melee_rumble,294cf2bc2c0
 rumble,hash_27471bde81e12116,294cf2baa90
-rumble,hash_274946fc88d1749d,294cf2baad8
+rumble,barrel_explosion,294cf2baad8
 rumble,reload_medium,294cf2babb0
 rumble,shotgun_fire,294cf2babf8
 rumble,hash_2bdce8ff08474d57,294cf2bc818
@@ -8855,7 +8855,7 @@ string,hash_33c5a3d6ed967788,0
 string,hash_33f013eacb53964c,0
 string,weapon/incendiary_grenade,0
 string,hash_3408e555887fd0de,0
-string,hash_344916eb222ad1b6,0
+string,weapon/proximity_grenade,0
 string,hash_3453caca2c7cb342,0
 string,hash_34a417201bd40701,0
 string,hash_34a741ede3224fef,0
@@ -10192,7 +10192,7 @@ soundalias,hash_7cb2ddc3f730d3d,0
 soundalias,hash_7cc99ca3ab6329b,0
 soundalias,hash_7cd33e0a44c632c,0
 soundalias,hash_7d90c9b76f2e4ad,0
-soundalias,hash_7d91a2256aaf0fe,0
+soundalias,prj_crack,0
 soundalias,hash_7d95228dbf920cc,0
 soundalias,hash_7db8b31961c060c,0
 soundalias,hash_7dea1b4f24581d4,0
@@ -11361,7 +11361,7 @@ soundalias,hash_14f2d9b8e66e1a2d,0
 soundalias,hash_14f3b31842748b0f,0
 soundalias,hash_14f4844e8b0f0485,0
 soundalias,hash_14f5104610856f3e,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_14f7574d2f374c17,0
 soundalias,hash_14fd0856bc482aba,0
 soundalias,hash_14ff277f443b38a9,0
@@ -18062,7 +18062,7 @@ soundalias,hash_6038ed29624036bb,0
 soundalias,hash_603965bb962dc33f,0
 soundalias,hash_603b3de4e8652a23,0
 soundalias,hash_603cfa60a647b5bf,0
-soundalias,hash_60443bcf1b754ae9,0
+soundalias,exp_claymore,0
 soundalias,hash_60481ac24a9bd144,0
 soundalias,hash_604c21ffadab1ff0,0
 soundalias,hash_604d67eea1dc128b,0

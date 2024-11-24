@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "draft_enabled",
-    "displayname": "#hash_56533a4f70527c84",
+    "displayname": "#menu/draft_enabled",
     "var_9de86f42": 2,
     "setting": "draftEnabled",
     "var_82c732a7": 1

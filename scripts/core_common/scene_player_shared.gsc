@@ -1048,7 +1048,7 @@ class csceneplayer : csceneobject {
     function function_d3541c6f(player) {
         if (isdefined(player.var_777951c)) {
             player takeweapon(player.var_777951c);
-            player val::reset(#"hash_42d78b644f22da0b", "take_weapons");
+            player val::reset(#"weapon_shot_specific", "take_weapons");
             player player::switch_to_primary_weapon(1);
             player.var_777951c = undefined;
         }
@@ -1068,7 +1068,7 @@ class csceneplayer : csceneobject {
         w_slot = player loadout::function_18a77b37(var_d4c489c0);
         var_e4b15461 = player getcurrentweapon();
         if (w_slot != var_e4b15461) {
-            player val::set(#"hash_42d78b644f22da0b", "take_weapons", 1);
+            player val::set(#"weapon_shot_specific", "take_weapons", 1);
             player giveweapon(w_slot);
             player switchtoweaponimmediate(w_slot);
             player.var_777951c = w_slot;
@@ -1096,7 +1096,7 @@ class csceneplayer : csceneobject {
                 function_c7246a4a(player, "secondary");
             } else {
                 a_weapon_options = player getweaponoptions(w_primary);
-                player val::set(#"hash_42d78b644f22da0b", "take_weapons", 1);
+                player val::set(#"weapon_shot_specific", "take_weapons", 1);
                 player giveweapon(getweapon(#"ar_accurate_t8"), a_weapon_options);
                 player switchtoweaponimmediate(getweapon(#"ar_accurate_t8"), 1);
                 player.var_777951c = getweapon(#"ar_accurate_t8");

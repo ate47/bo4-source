@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "ability_cleanse_restriction",
-    "displayname": "#hash_1501cd3959ac6c7c",
+    "displayname": "#weapon/gadget_cleanse",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

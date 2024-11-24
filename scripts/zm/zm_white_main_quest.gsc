@@ -171,8 +171,8 @@ function function_ba863dca() {
     zm_sq::register(#"zm_white_mq_canister", #"canister_start", #"zm_white_mq_canister_step1", &zm_white_mq_canister_setup, &zm_white_mq_canister_cleanup);
     zm_sq::register(#"zm_white_mq_circuit", #"circuit_start", #"zm_white_mq_circuit_step1", &zm_white_mq_circuit_setup, &_that_peek);
     zm_sq::register(#"zm_white_mq_server", #"server_start", #"zm_white_mq_server_step1", &zm_white_mq_server_setup, &zm_white_mq_server_cleanup);
-    zm_sq::register(#"zm_white_mq_mannequin", #"hash_2873e4263b1aed76", #"hash_5bf53c01af16d950", &function_32a04434, &function_d221a1e8);
-    zm_sq::register(#"zm_white_mq_mannequin", #"hash_2873e3263b1aebc3", #"hash_5bf53f01af16de69", &function_553ec923, &function_b7fa863b);
+    zm_sq::register(#"zm_white_mq_mannequin", #"mannequin_step_1", #"zm_white_mq_mannequin_step1", &zm_white_mq_mannequin_setup, &zm_white_mq_mannequin_cleanup);
+    zm_sq::register(#"zm_white_mq_mannequin", #"mannequin_step_2", #"zm_white_mq_mannequin_step2", &function_553ec923, &function_b7fa863b);
     level.var_8bc5329 = [];
     level.var_8bc5329[0] = [];
     level.var_8bc5329[0][#"quest"] = #"zm_white_mq_crawler";
@@ -3814,7 +3814,7 @@ function function_10e36c24() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x76a5173b, Offset: 0x12630
 // Size: 0x84
-function function_32a04434(var_5ea5c94d) {
+function zm_white_mq_mannequin_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         level flag::set(#"hash_6ebb9d0d0539bf68");
         level mannequin_step();
@@ -3827,7 +3827,7 @@ function function_32a04434(var_5ea5c94d) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x676f1ac, Offset: 0x126c0
 // Size: 0x140
-function function_d221a1e8(var_5ea5c94d, ended_early) {
+function zm_white_mq_mannequin_cleanup(var_5ea5c94d, ended_early) {
     e_mccain = getent("atlas_ct", "targetname");
     if (var_5ea5c94d || ended_early) {
         level flag::set(#"hash_3b808ddcae9fea60");

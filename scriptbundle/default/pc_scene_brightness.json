@@ -1,6 +1,6 @@
 {
     "descriptionimage": "#hash_245954b2187c4133",
-    "description": "#hash_2add90130a14039c",
+    "description": "#menu/brightness_desc",
     "var_60fcfffa": "#menu/on",
     "var_10e01ad5": 1,
     "var_7d936886": 1,
@@ -8,7 +8,7 @@
     "var_43a952c1": 0.2,
     "maxvalue": 1,
     "name": "pc_scene_brightness",
-    "displayname": "#hash_64ade150ffb574d4",
+    "displayname": "#menu/brightness",
     "rangestartvalue": -1,
     "var_d6897f56": 1,
     "decimalplace": 0.01,

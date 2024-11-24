@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "perk_scavenger_restriction",
-    "displayname": "#hash_2b66b26e77226a96",
+    "displayname": "#menu/talent_scavenger",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

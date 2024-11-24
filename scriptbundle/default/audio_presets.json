@@ -9,7 +9,7 @@
             "value": "1"
         },
         {
-            "label": "#hash_131b2086c9ab776f",
+            "label": "#menu/high_boost",
             "value": "2"
         },
         {
@@ -28,7 +28,7 @@
     "var_43a952c1": 1,
     "maxvalue": 1,
     "name": "audio_presets",
-    "displayname": "#hash_64358215620a8410",
+    "displayname": "#menu/audio_presets",
     "var_66faec87": 10,
     "statname": "snd_menu_presets",
     "var_b7401319": "#menu/off"

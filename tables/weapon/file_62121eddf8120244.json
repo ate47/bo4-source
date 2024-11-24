@@ -1,7 +1,7 @@
 {
     "name": "#hash_62121eddf8120244",
     "baseWeapon": "#stoker_coal_bomb",
-    "displayname": "#hash_344916eb222ad1b6",
+    "displayname": "#weapon/proximity_grenade",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

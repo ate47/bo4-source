@@ -1,7 +1,7 @@
 {
     "name": "#hash_212e90a0bc53dafb",
     "baseWeapon": "#eq_decoy_grenade",
-    "displayname": "#hash_46bd2e256bd93747",
+    "displayname": "#weapon/decoy_grenade",
     "sessionMode": "warzone",
     "itemIndex": 72,
     "dualWieldWeaponIndex": 0,

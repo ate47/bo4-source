@@ -21,7 +21,7 @@
     "var_246e83e4": "4500",
     "label": "#menu/x_money",
     "name": "bag_money",
-    "displayname": "#hash_4aca36e041ff5c04",
+    "displayname": "#menu/bag_money",
     "var_9de86f42": 10,
     "setting": "bountyBagOMoneyMoney"
 }

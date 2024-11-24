@@ -1,14 +1,14 @@
 {
     "name": "cross_title",
     "nameHash": "#cross_title",
-    "displayName": "#hash_17795c7bc303ac80",
+    "displayName": "#menu/cross_title",
     "imageName": "#1115325376032266039",
     "visibility": false,
     "products": [
         "#hash_3629fa6a15b5c782",
         "#hash_33252cc4cf2bf2be",
         "#hash_5c84c2910c186cbc",
-        "#hash_1f920ab9d93ae669",
+        "#mw4game",
         "#hash_4d26aad8d082eee3",
         "#hash_158622d13ff5db32",
         "#prestige_token",

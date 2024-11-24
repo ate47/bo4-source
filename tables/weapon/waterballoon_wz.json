@@ -1,7 +1,7 @@
 {
     "name": "#waterballoon_wz",
     "baseWeapon": "#waterballoon",
-    "displayname": "#hash_45e61d7aa4721759",
+    "displayname": "#weapon/water_balloon",
     "sessionMode": "warzone",
     "itemIndex": 36,
     "dualWieldWeaponIndex": 0,

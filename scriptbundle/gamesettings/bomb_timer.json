@@ -14,13 +14,13 @@
     "var_8d1ed54f": "90",
     "var_d606e712": "150",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "bomb_timer",
-    "displayname": "#hash_3fac1c8ef613be09",
-    "var_c3da8466": "#hash_666d89ef0248d1ef",
+    "displayname": "#menu/bomb_timer",
+    "var_c3da8466": "#menu/1_minute",
     "var_9de86f42": 12,
     "var_93986477": "#hash_5dbd9f48fce80488",
-    "var_90e95f19": "#hash_716a48cbc5e7e779",
+    "var_90e95f19": "#menu/2_minutes",
     "var_bb1eb383": "#hash_71034403a0922b19",
     "setting": "bombTimer"
 }

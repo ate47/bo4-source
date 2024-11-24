@@ -14,10 +14,10 @@
     "var_8d1ed54f": "10",
     "var_d606e712": "24",
     "type": "gamesettings",
-    "label": "#hash_437e754ae41682ef",
+    "label": "#menu/x_rounds",
     "name": "score_limit_sd_dem",
     "displayname": "#hash_647bbaec62cf62ac",
-    "label1": "#hash_52b38f6fb98e8982",
+    "label1": "#menu/unlimited",
     "var_9de86f42": 12,
     "setting": "scoreLimit"
 }

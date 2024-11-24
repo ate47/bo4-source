@@ -4,7 +4,7 @@
     "var_2ecceeab": "#molotov_kill",
     "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
-    "var_1253685d": "#hash_2c230b161d5d749b",
+    "var_1253685d": "#molotov_burn",
     "vmtype": "both",
     "var_16abf654": "#hash_7c62ccd07521550f",
     "name": "dot_molotov_scoreevents",

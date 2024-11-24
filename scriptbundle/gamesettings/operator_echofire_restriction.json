@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "operator_echofire_restriction",
-    "displayname": "#hash_492d12ccc1b2ef86",
+    "displayname": "#weapon/uber_firingunit",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

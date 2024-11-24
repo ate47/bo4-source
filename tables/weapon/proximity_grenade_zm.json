@@ -1,7 +1,7 @@
 {
     "name": "#proximity_grenade_zm",
     "baseWeapon": "#proximity_grenade",
-    "displayname": "#hash_344916eb222ad1b6",
+    "displayname": "#weapon/proximity_grenade",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

@@ -14,10 +14,10 @@ function init_shared(var_4b51853b) {
     clientfield::register("scriptmover", "concertinaWireDroopyBits", 1, 3, "int", &function_3a927971, 0, 0);
     level.var_87226c31 = spawnstruct();
     level.var_87226c31.bundle = getscriptbundle(var_4b51853b);
-    level.var_87226c31.var_3e7344ee = getweapon(#"eq_concertina_wire");
+    level.var_87226c31.concertinawireweapon = getweapon(#"eq_concertina_wire");
     level.var_87226c31.var_546a220c = "concertina_wire_objective_default";
     level.var_87226c31.var_925bbb2 = [];
-    deployable::register_deployable(level.var_87226c31.var_3e7344ee, 1);
+    deployable::register_deployable(level.var_87226c31.concertinawireweapon, 1);
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -112,7 +112,7 @@ function function_1c2930c7(localclientnum) {
         if (!isdefined(player)) {
             break;
         }
-        var_b43e8dc2 = player function_287dcf4b(level.var_87226c31.bundle.var_63aab046, level.var_87226c31.bundle.maxwidth, 0, 0, level.var_87226c31.var_3e7344ee);
+        var_b43e8dc2 = player function_287dcf4b(level.var_87226c31.bundle.var_63aab046, level.var_87226c31.bundle.maxwidth, 0, 0, level.var_87226c31.concertinawireweapon);
         if (!isdefined(var_b43e8dc2) && !var_ccfe777) {
             var_ccfe777 = 1;
             player function_bf191832(0, (0, 0, 0), (0, 0, 0));

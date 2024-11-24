@@ -11,11 +11,11 @@
     "var_dfed6968": "7.5",
     "var_71ce0d1f": "10",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "destroy_time",
-    "displayname": "#hash_7e1a441e7d737d19",
-    "var_c3da8466": "#hash_666d89ef0248d1ef",
-    "label1": "#hash_7201503206ce2d27",
+    "displayname": "#menu/destroy_time",
+    "var_c3da8466": "#menu/1_minute",
+    "label1": "#menu/1_second",
     "var_9de86f42": 9,
     "setting": "destroyTime"
 }

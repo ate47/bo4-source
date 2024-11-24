@@ -1,7 +1,7 @@
 {
     "name": "#hash_61bd2dddf7c9dbc2",
     "baseWeapon": "#stoker_coal_bomb",
-    "displayname": "#hash_344916eb222ad1b6",
+    "displayname": "#weapon/proximity_grenade",
     "sessionMode": "campaign",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

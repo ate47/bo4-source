@@ -9,7 +9,7 @@
     "type": "gamesettings",
     "label": "#menu/x_balls",
     "name": "ball_count",
-    "displayname": "#hash_27d0130496c3e80e",
+    "displayname": "#menu/ball_count",
     "label1": "#menu/1_ball",
     "var_9de86f42": 5,
     "setting": "ballCount"

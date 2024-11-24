@@ -11,10 +11,10 @@
     "var_dfed6968": "15",
     "var_71ce0d1f": "20",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "flag_respawn_time",
     "displayname": "#hash_2ff274a94db73526",
-    "label1": "#hash_7201503206ce2d27",
+    "label1": "#menu/1_second",
     "var_9de86f42": 9,
     "setting": "flagRespawnTime"
 }

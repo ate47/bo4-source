@@ -1,7 +1,7 @@
 {
     "name": "#ultimate_turret_wz",
     "baseWeapon": "#ultimate_turret",
-    "displayname": "#hash_7a37b2fcb855abe4",
+    "displayname": "#weapon/ultimate_turret",
     "sessionMode": "warzone",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

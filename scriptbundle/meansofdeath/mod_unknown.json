@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_unknown",
-    "displayname": "#hash_7cceb74accb55241",
+    "displayname": "#ui/mod_unknown",
     "icon": "#ui_icon_meansofdeath_unknown",
     "iconlarge": "#ui_icon_meansofdeath_unknown_xl"
 }

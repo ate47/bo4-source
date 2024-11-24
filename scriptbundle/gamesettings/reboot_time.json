@@ -18,10 +18,10 @@
     "var_7997ae35": "30",
     "var_8d115528": "60",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "reboot_time",
     "displayname": "#hash_1c65ea6a88934af6",
-    "label1": "#hash_7201503206ce2d27",
+    "label1": "#menu/1_second",
     "var_9de86f42": 16,
     "setting": "rebootTime"
 }

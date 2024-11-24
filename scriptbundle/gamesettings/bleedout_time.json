@@ -14,10 +14,10 @@
     "var_8d1ed54f": "60",
     "var_d606e712": "120",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "bleedout_time",
-    "displayname": "#hash_35fc99405248e7b1",
-    "label1": "#hash_7201503206ce2d27",
+    "displayname": "#menu/bleedout_time",
+    "label1": "#menu/1_second",
     "var_9de86f42": 12,
     "setting": "lastStandTimer"
 }

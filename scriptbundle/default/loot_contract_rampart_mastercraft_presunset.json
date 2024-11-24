@@ -1,7 +1,7 @@
 {
     "contracticon": "#hash_56da16753b8ff8a5",
     "relateditemname": "#weapon/ar_damage_t8",
-    "contracttitle": "#hash_14b5d9340a966af6",
+    "contracttitle": "#menu/contract_afterburner",
     "name": "loot_contract_rampart_mastercraft_presunset",
     "var_69b5a265": "core_frontend_ar_damage_sig_02",
     "var_4b258f2c": "#hash_360085279a89449d",

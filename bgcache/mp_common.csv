@@ -1919,7 +1919,7 @@ gesturetable,hash_245ba74b62e3c219,294cd9beab0
 gesturetable,hash_24d086f6a415b8ec,294cd9bfa20
 gesturetable,hash_2c75f3bef8443438,294cd9bf880
 gesturetable,hash_2e66d71bf64bcd83,294cd9be158
-gesturetable,hash_2f260890f2f083b2,294cd9bf818
+gesturetable,gestable_radio,294cd9bf818
 gesturetable,hash_2ff77ff899cd0a3e,294cd9be1c0
 gesturetable,gestable_default,294cd9bda08
 gesturetable,hash_3378e932765b280f,294cd9bee58
@@ -1963,9 +1963,9 @@ rumble,smg_fire,294cf2ba6a0
 rumble,grapple_reel,294cf2ba6e8
 rumble,hash_1bae92d322fe732b,294cf2bcaa0
 rumble,hash_217a158aac0f6479,294cf2ba850
-rumble,hash_246e9e7e02218662,294cf2bc4b8
+rumble,rcbomb_explosion,294cf2bc4b8
 rumble,bow_fire,294cf2ba9b8
-rumble,hash_274946fc88d1749d,294cf2baad8
+rumble,barrel_explosion,294cf2baad8
 rumble,hash_29506ce1c471fb78,294cf2bc590
 rumble,hash_29dda3d6a80b7a2c,294cf2bc230
 rumble,shotgun_fire,294cf2babf8
@@ -1984,11 +1984,11 @@ rumble,hash_37945215019ab043,294cf2bb030
 rumble,minigun_rumble,294cf2bc668
 rumble,lightninggun_fire,294cf2bc308
 rumble,microwave_rumble_med,294cf2bc9c8
-rumble,hash_3dd1619d015e95de,294cf2bb198
+rumble,bow_draw,294cf2bb198
 rumble,hash_40192bc096b73db2,294cf2bc350
 rumble,grapple_miss,294cf2bb270
 rumble,pistol_fire,294cf2bb300
-rumble,hash_4620272826f8618e,294cf2bc398
+rumble,lightninggun_charge,294cf2bc398
 rumble,hash_47433cb7c8cca603,294cf2bc860
 rumble,microwave_rumble_low,294cf2bc818
 rumble,hash_47c1ea770ec6f649,294cf2bc2c0
@@ -2022,7 +2022,7 @@ rumble,hash_7558c590e11517c6,294cf2bced8
 rumble,raps_rumble,294cf2bcf20
 rumble,grapple_hit,294cf2bc428
 rumble,hash_7fbdfa5ac7cedfc9,294cf2bc038
-shellshock,hash_4c7b5c53d134927,294cf34a800
+shellshock,shellshock_blur,294cf34a800
 shellshock,status_effect_slowed,294cf3496c0
 shellshock,hash_2b52b9a74014da20,294cf349a80
 shellshock,status_effect_slowed_concertina_wire_pc,294cf34ac80
@@ -2034,7 +2034,7 @@ shellshock,lightninggun,294cf34ab00
 shellshock,shellshock_blur_pc,294cf34a740
 shellshock,hash_7fd5008cadfdfa21,294cf34ae00
 statuseffect,microwave_slowed,294cf3514c0
-statuseffect,hash_160f88dec9e68a1,294cf351710
+statuseffect,dot_purifier,294cf351710
 statuseffect,blind,294cf34d400
 statuseffect,shock_seeker_no_response,294cf3532d0
 statuseffect,hash_f16d7c5fa5bfb7e,294cf34efc0
@@ -2058,7 +2058,7 @@ statuseffect,hash_40d2f7286416ea67,294cf350b80
 statuseffect,hash_41ed8019748927e5,294cf34f460
 statuseffect,hash_4571e9bb8d1be2af,294cf3522a0
 statuseffect,deaf_tinnitus,294cf350930
-statuseffect,hash_57c6ca32810425f9,294cf350490
+statuseffect,wound_purifier,294cf350490
 statuseffect,shock_seeker_secondary,294cf34e680
 statuseffect,hacking,294cf350dd0
 statuseffect,shock_rifle_shock,294cf353e60
@@ -7078,7 +7078,7 @@ scriptbundle,sig_blade_scoreevents,294cf29ea88
 scriptbundle,default_shrapnel_settings,294cf2a2988
 scriptbundle,hash_5bf0e6e130e1b2e5,294cf2aa508
 scriptbundle,charm_flat_earth,294cf2a13c8
-scriptbundle,hash_5c62de527b645cf7,294cf2ae408
+scriptbundle,package_chopper,294cf2ae408
 scriptbundle,killstreak_recon_car,294cf2b7308
 scriptbundle,charm_paintshop,294cf2a1408
 scriptbundle,charm_crab,294cf2a1448
@@ -7207,7 +7207,7 @@ scriptbundle,blops_pilot3_kls_mothership,294cf2a58c8
 scriptbundle,blops_droneop1_kls_dart,294cf2a7848
 scriptbundle,activecamoinfo_t8_headshot_zm,294cf29b2c8
 scriptbundle,activecamoinfo_t8_sig_ar_modular_porcelain,294cf29b308
-scriptbundle,hash_70be313c62e679ec,294cf2ade88
+scriptbundle,package_concertina,294cf2ade88
 scriptbundle,activecamoinfo_t8_headshot_wz,294cf29b348
 scriptbundle,awareness_deadsilence,294cf2a62c8
 scriptbundle,charm_pixel_alien,294cf2a1908
@@ -7286,8 +7286,8 @@ menu,hud,0
 material,compass_supply_drop_black,294cc898400
 material,compass_supply_drop_white,294cc9438f8
 material,headicon_dead,294cc04fb38
-material,hash_1914ee11d4e1259d,294cc95efb8
-material,hash_1949768db78be418,294cc9a02f8
+material,hud_ks_minigun,294cc95efb8
+material,hud_ks_m32,294cc9a02f8
 material,t7_hud_ks_wpn_turret_drop,294cc911498
 material,waypoint_recon_artillery_strike,294cc6c1bc8
 material,t7_hud_waypoints_safeguard_location,294cc6d6af0
@@ -7297,7 +7297,7 @@ material,white,294cc042d40
 material,t7_hud_ks_drone_amws_drop,294cc7de8b0
 material,waypoint_dogtags,294cc5bb668
 material,t7_hud_ks_rolling_thunder_drop,294cc792fb0
-string,hash_17b3f5215733de,0
+string,weapon/bomb,0
 string,mpui/stalker,0
 string,hash_95c5021b448b56,0
 string,hash_9b21599b0be92c,0
@@ -7316,7 +7316,7 @@ string,hash_1e6dbca449a65f9,0
 string,mpui/dualoptic,0
 string,hash_2323687d4a52a88,0
 string,hash_246cf95fb4e6777,0
-string,hash_276cefbe153ce10,0
+string,weapon/gadget_placeholder,0
 string,hash_27b6146148b0768,0
 string,hash_29d476be9b1e85f,0
 string,mp_ph_whistling,0
@@ -7434,7 +7434,7 @@ string,hash_ed0eccfd92ed982,0
 string,hash_ed462849e1bee29,0
 string,hash_ed5a1b280795e6e,0
 string,hash_ee567911dd1ce83,0
-string,hash_f10bcab5934b2f9,0
+string,weapon/hero_bowlauncher,0
 string,hash_f132b2ca7bae8be,0
 string,mp_ph_final_whistle,0
 string,hash_f3011ec9092dca2,0
@@ -7689,7 +7689,7 @@ string,hash_2cab672fd372f942,0
 string,weapon/launcher_standard_t8,0
 string,hash_2d003d6a1240093c,0
 string,hash_2d1a463cfe8da8e2,0
-string,hash_2d272d013fc30895,0
+string,weapon/grapple,0
 string,hash_2d6734965a69006d,0
 string,hash_2d85a60f366822d1,0
 string,explosive,0
@@ -7697,7 +7697,7 @@ string,hash_2dfd1305d6a5cf37,0
 string,hash_2e3f0f83040d38d4,0
 string,hash_2e6a69983429b0aa,0
 string,mpui/reflex,0
-string,hash_2ec8042138d1e89c,0
+string,weapon/local_heal,0
 string,hash_2ef12070900a4e87,0
 string,hash_2f154c11e8e3cc84,0
 string,hash_2f154d11e8e3ce37,0
@@ -7744,7 +7744,7 @@ string,hash_33c0a447b3903430,0
 string,hash_33c5a3d6ed967788,0
 string,hash_33f013eacb53964c,0
 string,hash_3440c27a76738802,0
-string,hash_344916eb222ad1b6,0
+string,weapon/proximity_grenade,0
 string,hash_347504f7414c2861,0
 string,hash_34939972c050fe1e,0
 string,hash_34d0ee5d4c21542d,0
@@ -7868,7 +7868,7 @@ string,hash_40df26c0224dd23d,0
 string,hash_4102d1a57d770256,0
 string,hash_41159f797a914d3a,0
 string,mpui/extbarrel,0
-string,hash_41477fa6d6f8ddc8,0
+string,weapon/sig_lmg,0
 string,hash_414ce3af89eedef1,0
 string,explosive fast,0
 string,hash_41675721bd9111d3,0
@@ -8017,7 +8017,7 @@ string,hash_508f1a5bc110c570,0
 string,hash_5097457fdcdb6265,0
 string,hash_509dac27c7bd944a,0
 string,hash_50acb81dbe07fbfe,0
-string,hash_50d8b3b5944ed86c,0
+string,weapon/tripwire,0
 string,hash_51252660f83e3872,0
 string,mission_koth,0
 string,hash_5168ae1a4907adb6,0
@@ -8093,7 +8093,7 @@ string,hash_5835ce824db9fc92,0
 string,hash_5848783f573e71ab,0
 string,hash_586bcb5821dba7e3,0
 string,hash_5885b4abb984f9df,0
-string,hash_58a2a5bf8163e55a,0
+string,weapon/slow_grenade,0
 string,hash_58b28a271da6d740,0
 string,hash_58b7aeee47f428da,0
 string,hash_58ce4aa1038595d4,0
@@ -8118,7 +8118,7 @@ string,hash_5a1802aa5de6267f,0
 string,hash_5a18e045bc733537,0
 string,mp/battleshield_hint,0
 string,hash_5a4d8af7a28e6f6d,0
-string,hash_5a5353f936938cbf,0
+string,weapon/supply_drop,0
 string,hash_5a56cba3ed5be5a4,0
 string,mpui/hipgrip,0
 string,hash_5abca820cfab2cd8,0
@@ -8297,7 +8297,7 @@ string,mp_ph_starts_in,0
 string,hash_6c753e4261a11107,0
 string,hash_6c8d7834e1591a50,0
 string,hash_6c91358f5569fb30,0
-string,hash_6cc59d3b1037f8e4,0
+string,weapon/blind_grenade,0
 string,hash_6cda25bb032409cc,0
 string,hash_6cf104078fcdf403,0
 string,hash_6cf10fe813765772,0
@@ -8411,7 +8411,7 @@ string,hash_7a14b6f139fe708a,0
 string,hash_7a1505df3fd0ed5b,0
 string,hash_7a1ca44da026f58c,0
 string,hash_7a2e2caa5f180ee3,0
-string,hash_7a37b2fcb855abe4,0
+string,weapon/ultimate_turret,0
 string,hash_7a4289cde4df7d84,0
 string,mpui/dw_desc,0
 string,hash_7a780871028530f5,0
@@ -8422,7 +8422,7 @@ string,hash_7afac73e4e0688d4,0
 string,hash_7b15978f7b8174f7,0
 string,hash_7b4c84d5307fea60,0
 string,hash_7b787c42f3808a76,0
-string,hash_7b7c34efa5954735,0
+string,weapon/gravityslam,0
 string,hash_7b955bb502e82e12,0
 string,hash_7ba5cee192e14a3c,0
 string,hash_7bbd382da03b8aaf,0
@@ -8571,7 +8571,7 @@ objective,hash_c4e4d4888b0eab9,0
 objective,hash_10b60fe281bbfeca,0
 objective,faction_allies,0
 objective,headicon_dead,0
-objective,hash_1449033c574cc056,0
+objective,deployable_barrier,0
 objective,hash_14f53e0433721169,0
 objective,hash_15f6e3728e503f47,0
 objective,flag_taken,0
@@ -8656,7 +8656,7 @@ objective,hash_6c8e8f17eff83518,0
 objective,hash_6c8e9217eff83a31,0
 objective,hash_6cff9cefb99a67d1,0
 objective,hash_6d0ae20f80247e21,0
-objective,hash_6daf2187828671f8,0
+objective,infil_deposit,0
 objective,spawnbeacon_objective_disable,0
 objective,hash_6e2665f9ab62d5ba,0
 objective,exposed_hacker,0
@@ -8895,7 +8895,7 @@ lui_elem_uid,ct_shared_objcounter,294cf544fb8
 lui_elem_uid,ct_recon_melee_vip,294cf545030
 lui_elem_uid,ct_recon_enemy_reinforcement,294cf545168
 lui_elem_uid,full_screen_movie,294cf5449a0
-lui_elem_uid,hash_5ed4bac47d869d95,294cf545288
+lui_elem_uid,captured_bar,294cf545288
 lui_elem_uid,propcontrols,294cf544f88
 lui_elem_uid,bountyhunterloadout,294cf5452a0
 lui_elem_uid,progress_bar,294cf545438
@@ -10049,7 +10049,7 @@ soundalias,hash_7cee4c56e2e0ea5,0
 soundalias,hash_7d7cabcbc10b002,0
 soundalias,hash_7d8d45ccd4a93b4,0
 soundalias,hash_7d90c9b76f2e4ad,0
-soundalias,hash_7d91a2256aaf0fe,0
+soundalias,prj_crack,0
 soundalias,hash_7d95228dbf920cc,0
 soundalias,hash_7db8b31961c060c,0
 soundalias,hash_7e44924d9b0b53d,0
@@ -12054,7 +12054,7 @@ soundalias,hash_14f1da7c189eb249,0
 soundalias,hash_14f2d9b8e66e1a2d,0
 soundalias,hash_14f3b31842748b0f,0
 soundalias,hash_14f4844e8b0f0485,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_14f7574d2f374c17,0
 soundalias,hash_14fa368d1d8e4b3e,0
 soundalias,hash_14fc1adfa17c54ca,0
@@ -15028,7 +15028,7 @@ soundalias,hash_286116b19d22ffc3,0
 soundalias,hash_2868238ba068155c,0
 soundalias,hash_2869196e4dba4911,0
 soundalias,hash_286bfcb72646147d,0
-soundalias,hash_286f4dcd23e829ab,0
+soundalias,uin_purchase,0
 soundalias,hash_2870934eb70e9576,0
 soundalias,hash_2870a94c75a854fd,0
 soundalias,hash_28716572df948812,0
@@ -22221,7 +22221,7 @@ soundalias,hash_56f7afe79a5d4b71,0
 soundalias,hash_56f94190d2078c16,0
 soundalias,hash_56fdf5ba0b375ad8,0
 soundalias,hash_56ff4dddbdb81433,0
-soundalias,hash_56ffa2dd01c7a407,0
+soundalias,cac_enter,0
 soundalias,hash_5700cbccfba9f054,0
 soundalias,hash_5702c7e78f9c51c0,0
 soundalias,hash_570446c9d134328c,0
@@ -29549,7 +29549,7 @@ client_lui_elem,insertion_passenger_count,294cf544fe8
 client_lui_elem,success_screen,294cf5452d0
 client_lui_elem,ct_recon_enemy_reinforcement,294cf545168
 client_lui_elem,ct_timer_mod_ticks,294cf545378
-client_lui_elem,hash_5ed4bac47d869d95,294cf545288
+client_lui_elem,captured_bar,294cf545288
 client_lui_elem,multi_stage_target_lockon,294cf545270
 client_lui_elem,ct_shared_aar,294cf545390
 client_lui_elem,progress_bar,294cf545438

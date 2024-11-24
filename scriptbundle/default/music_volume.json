@@ -7,7 +7,7 @@
     "var_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "music_volume",
-    "displayname": "#hash_1a83fb214f7d2081",
+    "displayname": "#menu/music_volume",
     "var_d6897f56": 1,
     "var_66faec87": 1,
     "statname": "snd_menu_music",

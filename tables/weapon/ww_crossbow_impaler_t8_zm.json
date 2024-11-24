@@ -1,7 +1,7 @@
 {
     "name": "#ww_crossbow_impaler_t8_zm",
     "baseWeapon": "#ww_crossbow_impaler_t8",
-    "displayname": "#hash_3f07f486b081b54f",
+    "displayname": "#zmweapon/impaler",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

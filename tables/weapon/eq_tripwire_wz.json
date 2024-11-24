@@ -1,7 +1,7 @@
 {
     "name": "#eq_tripwire_wz",
     "baseWeapon": "#eq_tripwire",
-    "displayname": "#hash_50d8b3b5944ed86c",
+    "displayname": "#weapon/tripwire",
     "sessionMode": "warzone",
     "itemIndex": 85,
     "dualWieldWeaponIndex": 0,

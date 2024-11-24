@@ -3000,7 +3000,7 @@ function private on_host_migration_end(params) {
                 case #"destroy_weakpoint":
                     function_cab68577(cmd[1]);
                     break;
-                case #"hash_396b84907b30a71c":
+                case #"debug_purchase_lockdown":
                     setdvar(#"hash_3ec02cda135af40f", !getdvarint(#"hash_3ec02cda135af40f", 0));
                     break;
                 case #"debug_dmg":

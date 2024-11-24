@@ -31,7 +31,7 @@ function __init__() {
     clientfield::register("actor", "zombie_electric_burst_stun_friendly_clientfield", 21000, 1, "int");
     clientfield::register("toplayer", "zombie_electric_burst_postfx_clientfield", 21000, 1, "counter");
     callback::on_player_damage(&function_4639701a);
-    level.var_f8eb6737 = getstatuseffect(#"hash_3a1f530cdb5f75f4");
+    level.var_f8eb6737 = getstatuseffect(#"avogadro_shock_slowed");
     /#
         zm_devgui::function_c7dd7a17("<dev string:x38>", "<dev string:x41>");
     #/

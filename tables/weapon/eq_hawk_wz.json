@@ -12,7 +12,7 @@
     "gadgetIconAvailable": "#ui_icon_equipment_drone_hawk",
     "viewmodel": "#wpn_t8_eqp_drone_hawk_view",
     "worldModel": "#wpn_t8_eqp_drone_hawk_world",
-    "var_96850284": "#hash_183378b0adc79a13",
+    "var_96850284": "#jammer_hawk",
     "sound90": "#hash_7a870114eef277ac",
     "sound340": "#hash_10ff4ceac07b790",
     "sound370": "#hash_5015373547292517",

@@ -49,7 +49,7 @@ struct root {
     char ui_contextual_1[24];
     char ui_contextual_2[24];
     char ui_contextual_3[24];
-    char hash_106ed758fbe7895e[24];
+    char lookdown[24];
     char quickcallout[24];
     char hash_65a1a52171bbaea2[24];
     char scorestreak1[24];

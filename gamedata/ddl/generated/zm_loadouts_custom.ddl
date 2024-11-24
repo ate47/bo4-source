@@ -48,7 +48,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[35];
+    hash_768aeb6b928320d outfit_breadcrumbs[35];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[35];
 };
 
@@ -134,7 +134,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[35];
+    hash_768aeb6b928320d outfit_breadcrumbs[35];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[35];
 };
 
@@ -220,7 +220,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -306,7 +306,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -392,7 +392,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -478,7 +478,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -564,7 +564,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -650,7 +650,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -736,7 +736,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -820,7 +820,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -904,7 +904,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -989,7 +989,7 @@ struct character {
     uint9 hash_44ed9a1ad38be40[3];
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1075,7 +1075,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1159,7 +1159,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1243,7 +1243,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1327,7 +1327,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1411,7 +1411,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1494,7 +1494,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1577,7 +1577,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1660,7 +1660,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1742,7 +1742,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1823,7 +1823,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1903,7 +1903,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -1984,7 +1984,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2065,7 +2065,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2145,7 +2145,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2225,7 +2225,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -2305,7 +2305,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };

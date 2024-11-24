@@ -1,7 +1,7 @@
 {
     "name": "#sig_lmg_mp",
     "baseWeapon": "#sig_lmg",
-    "displayname": "#hash_41477fa6d6f8ddc8",
+    "displayname": "#weapon/sig_lmg",
     "sessionMode": "multiplayer",
     "itemIndex": 114,
     "dualWieldWeaponIndex": 0,

@@ -19,10 +19,10 @@
     "var_8d115528": "3500",
     "var_3ec0b888": "5000",
     "var_246e83e4": "4500",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "extraction_time",
     "displayname": "#hash_73dfbfaee9ab1ce",
-    "label1": "#hash_7201503206ce2d27",
+    "label1": "#menu/1_second",
     "var_9de86f42": 7,
     "setting": "bountyDepositSiteCaptureTime"
 }

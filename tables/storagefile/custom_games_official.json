@@ -1,5 +1,5 @@
 {
     "name": "#custom_games_official",
     "nameStr": "custom_games_official",
-    "ddl": "#hash_3bce221d560cd5f5"
+    "ddl": "#gamedata/ddl/generated/mp_custom_game.ddl"
 }

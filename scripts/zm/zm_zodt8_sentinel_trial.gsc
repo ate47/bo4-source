@@ -155,7 +155,7 @@ function init_steps() {
     zm_sq::register(#"main_quest", #"step_7", #"main_quest_step_7", &function_8ec70b18, &function_71a8bce1);
     zm_sq::register(#"main_quest", #"step_8", #"main_quest_step_8", &function_5b7a1511, &function_98cdd988);
     zm_sq::register(#"main_quest", #"step_9", #"main_quest_step_9", &function_f4b715c1, &function_b4d0381e);
-    zm_sq::register(#"main_quest", #"outro_igc", #"main_quest_step_10", &function_594ebc75, &function_60d50c62, 1, &function_48837477);
+    zm_sq::register(#"main_quest", #"outro_igc", #"main_quest_step_10", &function_594ebc75, &warzonecompassnorth, 1, &function_48837477);
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -3947,7 +3947,7 @@ function end_game() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x5ad924a1, Offset: 0x134d8
 // Size: 0x14
-function function_60d50c62(var_5ea5c94d, ended_early) {
+function warzonecompassnorth(var_5ea5c94d, ended_early) {
     
 }
 

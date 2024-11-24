@@ -10,7 +10,7 @@
     "var_dfed6968": "7.5",
     "var_71ce0d1f": "10",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "wave_respawn_delay",
     "displayname": "#hash_4b9dd26fcf02fe2",
     "label1": "#menu/disabled",

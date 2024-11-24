@@ -28,8 +28,8 @@ function autoexec __init__system__() {
 // Checksum 0x2fdf1da5, Offset: 0x260
 // Size: 0x6c
 function __init__() {
-    level.var_7048dda4 = getweapon("ultimate_turret");
-    deployable::register_deployable(level.var_7048dda4, undefined, &function_b02e4a26);
+    level.ultimateturretweapon = getweapon("ultimate_turret");
+    deployable::register_deployable(level.ultimateturretweapon, undefined, &function_b02e4a26);
     callback::on_item_use(&on_item_use);
 }
 
@@ -52,7 +52,7 @@ function private on_item_use(params) {
 // Size: 0x5f4
 function function_6c288c45(spawnorigin, spawnangles) {
     self endon(#"death", #"disconnect");
-    self stats::function_e24eec31(level.var_7048dda4, #"used", 1);
+    self stats::function_e24eec31(level.ultimateturretweapon, #"used", 1);
     turretvehicle = spawnvehicle("veh_ultimate_turret_wz", spawnorigin, spawnangles);
     if (!isdefined(turretvehicle)) {
         return;
@@ -118,7 +118,7 @@ function function_6c288c45(spawnorigin, spawnangles) {
 // Checksum 0xc5717257, Offset: 0xa08
 // Size: 0x1a8
 function private function_b02e4a26(player) {
-    var_b43e8dc2 = player function_287dcf4b(35, 115, 0, 0, level.var_7048dda4);
+    var_b43e8dc2 = player function_287dcf4b(35, 115, 0, 0, level.ultimateturretweapon);
     if (!var_b43e8dc2.isvalid) {
         player function_bf191832(0, (0, 0, 0), (0, 0, 0));
         return var_b43e8dc2;
@@ -156,10 +156,10 @@ function function_d4f9ecb(duration) {
 // Size: 0x70
 function function_1c601b99() {
     if (isdefined(level.var_1b900c1d)) {
-        [[ level.var_1b900c1d ]](level.var_7048dda4, &function_bff5c062);
+        [[ level.var_1b900c1d ]](level.ultimateturretweapon, &function_bff5c062);
     }
     if (isdefined(level.var_a5dacbea)) {
-        [[ level.var_a5dacbea ]](level.var_7048dda4, &function_127fb8f3);
+        [[ level.var_a5dacbea ]](level.ultimateturretweapon, &function_127fb8f3);
     }
 }
 

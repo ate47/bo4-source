@@ -958,8 +958,8 @@ function private function_8030d0d2(planner, params) {
             if (getdvarint(#"hash_43057e52c6abc0a", 0)) {
                 function_8f74831a();
             }
-            if (getdvarint(#"hash_2b3c1b6ddd04dcf0", 0)) {
-                function_bd34d468();
+            if (getdvarint(#"debug_zm_wallbuys", 0)) {
+                debug_zm_wallbuys();
             }
             waitframe(1);
         }
@@ -980,7 +980,7 @@ function private function_8030d0d2(planner, params) {
     // Params 0, eflags: 0x0
     // Checksum 0x9ebcc75c, Offset: 0x4a10
     // Size: 0x54
-    function function_bd34d468() {
+    function debug_zm_wallbuys() {
         if (!isdefined(level.var_b1090a59)) {
             level.var_b1090a59 = function_6e494c0e();
         }

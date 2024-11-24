@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_drown",
-    "displayname": "#hash_eeae2d9c47dfe8d",
+    "displayname": "#ui/mod_drown",
     "icon": "#ui_icon_meansofdeath_drowned",
     "iconlarge": "#ui_icon_meansofdeath_drowned_xl"
 }

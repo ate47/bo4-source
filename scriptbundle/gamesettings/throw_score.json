@@ -11,9 +11,9 @@
     "var_dfed6968": "4",
     "var_71ce0d1f": "5",
     "type": "gamesettings",
-    "label": "#hash_399145de9cf614d9",
+    "label": "#menu/x_points",
     "name": "throw_score",
-    "displayname": "#hash_53c107abeede6fb0",
+    "displayname": "#menu/throw_score",
     "label1": "#menu/1_point",
     "var_9de86f42": 9,
     "setting": "throwScore"

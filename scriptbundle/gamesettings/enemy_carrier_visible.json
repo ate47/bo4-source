@@ -6,7 +6,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "enemy_carrier_visible",
-    "displayname": "#hash_1094bfda4b223c96",
+    "displayname": "#menu/enemy_carrier",
     "label1": "#menu/disabled",
     "var_71b6e020": "#menu/delayed",
     "label2": "#menu/enabled",

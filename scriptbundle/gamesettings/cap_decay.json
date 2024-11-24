@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "cap_decay",
-    "displayname": "#hash_6f203f145241d56c",
+    "displayname": "#menu/cap_decay",
     "var_9de86f42": 2,
     "setting": "capDecay",
     "var_82c732a7": 1

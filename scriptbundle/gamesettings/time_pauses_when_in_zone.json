@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "time_pauses_when_in_zone",
-    "displayname": "#hash_1f08b7fa6a47c0fb",
+    "displayname": "#menu/time_pause",
     "var_9de86f42": 2,
     "setting": "timePausesWhenInZone",
     "var_82c732a7": 1

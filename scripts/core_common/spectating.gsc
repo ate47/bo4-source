@@ -283,7 +283,7 @@ function function_34460764(team) {
 // Params 2, eflags: 0x0
 // Checksum 0xcef69866, Offset: 0xf20
 // Size: 0xd8
-function function_ef775048(team, var_6f1b46b8) {
+function function_ef775048(team, spectate_team) {
     self endon(#"disconnect");
     waitframe(1);
     if (level.alivecount[team]) {
@@ -291,7 +291,7 @@ function function_ef775048(team, var_6f1b46b8) {
     }
     players = getplayers(team);
     foreach (player in players) {
-        player function_493d2e03(var_6f1b46b8);
+        player function_493d2e03(spectate_team);
     }
 }
 

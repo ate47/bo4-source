@@ -1,7 +1,7 @@
 {
-    "hinttext": "#hash_73c2e805bd1d7d02",
+    "hinttext": "#menu/announcer_hint",
     "name": "allow_announcer",
-    "displayname": "#hash_15c6be752542ed1e",
+    "displayname": "#menu/announcer",
     "setting": "allowAnnouncer",
     "var_82c732a7": 1
 }

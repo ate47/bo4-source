@@ -55,7 +55,7 @@
 22,#,#,#,#,#double_damage,#,#,#,#,#,#,#,#
 23,#press_start,#hash_31952300837d21df,#hash_6ae39edd46d28071,#,#reset_loadout,#zombie_fists,#,#,#,#,#,#,#
 24,#unhealthy,#hash_53312ce351118dea,#hash_e2ea7c626d786da,#,#hash_250115340b2e27a5,#,#50,#15,#1,#25,#,#,#
-24,#,#,#,#,#hash_69bf786a279d4ca6,#,#zone_engine,#zone_upper_engine_room,#,#,#,#,#
+24,#,#,#,#,#round_ending_zone,#,#zone_engine,#zone_upper_engine_room,#,#,#,#,#
 25,#fore,#hash_2b3de11ad126b0d1,#hash_7042938200bbf8eb,#,#defend_area,#s_destination_forecastle,#hash_38c04b840a758d4,#hash_4722942539bdd37,#zone_forecastle_upper,#zone_forecastle_lower,#,#,#
 25,#,#,#,#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
 25,#,#,#,#,#hash_c2ef6223096d3ca,#,#,#,#,#,#,#,#

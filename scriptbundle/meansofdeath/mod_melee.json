@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_melee",
-    "displayname": "#hash_7efc95e2aceb4d73",
+    "displayname": "#ui/mod_melee",
     "icon": "#ui_icon_meansofdeath_melee",
     "iconlarge": "#ui_icon_meansofdeath_melee_xl"
 }

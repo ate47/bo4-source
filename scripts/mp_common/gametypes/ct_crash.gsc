@@ -561,7 +561,7 @@ function function_9087a4b6() {
 function function_6b37f8a5() {
     self endon(#"death");
     if (isdefined(level.var_8a300598) && level.var_8a300598) {
-        level.var_e8c8fc4 luielembar_ct::close(self);
+        level.captured_bar luielembar_ct::close(self);
         waitframe(1);
     }
     level.xpos = 750;
@@ -569,21 +569,21 @@ function function_6b37f8a5() {
     level.width = 50;
     level.height = 8;
     level.var_8a300598 = 1;
-    self ct_utils::function_7b70bd74(level.var_e8c8fc4, level.xpos, level.ypos, level.width, level.height);
-    level.var_e8c8fc4 luielembar_ct::set_color(self, 1, 0, 0);
+    self ct_utils::function_7b70bd74(level.captured_bar, level.xpos, level.ypos, level.width, level.height);
+    level.captured_bar luielembar_ct::set_color(self, 1, 0, 0);
     level.var_db674473 = 0;
     while (isdefined(level.var_f78f9034)) {
-        level.var_e8c8fc4 luielembar_ct::set_bar_percent(self, level.var_db674473);
+        level.captured_bar luielembar_ct::set_bar_percent(self, level.var_db674473);
         if (level flag::get("mission_success") || level flag::get("mission_failed")) {
             break;
         }
-        level.var_e8c8fc4 luielembar_ct::function_e5898fd7(self, level.xpos);
-        level.var_e8c8fc4 luielembar_ct::function_58a135d3(self, level.ypos);
-        level.var_e8c8fc4 luielembar_ct::set_width(self, level.width);
-        level.var_e8c8fc4 luielembar_ct::set_height(self, level.height);
+        level.captured_bar luielembar_ct::function_e5898fd7(self, level.xpos);
+        level.captured_bar luielembar_ct::function_58a135d3(self, level.ypos);
+        level.captured_bar luielembar_ct::set_width(self, level.width);
+        level.captured_bar luielembar_ct::set_height(self, level.height);
         waitframe(1);
     }
-    level.var_e8c8fc4 luielembar_ct::close(self);
+    level.captured_bar luielembar_ct::close(self);
     level.var_8a300598 = 0;
 }
 

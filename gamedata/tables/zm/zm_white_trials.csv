@@ -1,7 +1,7 @@
 0,#zm_white_default,#,#,#,#,#,#,#,#,#,#,#,#
 1,#hash_7ac908d3550cdbbe,#hash_6269f07516f26789,#hash_a3f529029c76943,#,#defend_area,#hash_365a8d2e0a21ad1f,#hash_347769c185a82a43,#hash_3b98ce4689a33c1e,#zone_security_checkpoint,#,#,#,#
 2,#hash_27897abffa9137fc,#hash_6269ed7516f26270,#hash_44bfe0ecd80c6d8,#,#hash_27897abffa9137fc,#,#,#,#,#,#,#,#
-3,#hash_274a2240f4d02a25,#hash_6269ee7516f26423,#hash_68f57be57b8709f5,#,#hash_69bf786a279d4ca6,#zone_culdesac_green,#zone_culdesac_yellow,#,#,#,#,#,#
+3,#hash_274a2240f4d02a25,#hash_6269ee7516f26423,#hash_68f57be57b8709f5,#,#round_ending_zone,#zone_culdesac_green,#zone_culdesac_yellow,#,#,#,#,#,#
 4,#piss_around,#hash_6269f37516f26ca2,#hash_415e5f11a4e4cf72,#,#restrict_loadout,#hash_7416cabf26f52c5f,#,#,#,#,#,#,#
 5,#duck,#hash_6269f47516f26e55,#hash_47b85b5f86fbeff,#,#hash_64d77357e69aee75,#crouch,#,#,#,#,#,#,#
 6,#and_cover,#hash_6269f17516f2693c,#hash_2dc36277fb350dc4,#,#hash_64d77357e69aee75,#prone,#,#,#,#,#,#,#

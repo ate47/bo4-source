@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "dropped_tag_respawn",
-    "displayname": "#hash_300ee106231e0731",
+    "displayname": "#menu/dog_tags",
     "var_9de86f42": 2,
     "setting": "droppedTagRespawn",
     "var_82c732a7": 1

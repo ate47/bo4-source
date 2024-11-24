@@ -21,11 +21,11 @@
     "var_3ec0b888": "1000",
     "var_246e83e4": "750",
     "type": "gamesettings",
-    "label": "#hash_399145de9cf614d9",
+    "label": "#menu/x_points",
     "var_5a6dee5a": 1,
     "name": "round_score_limit_control",
     "displayname": "#hash_1498e581616dccc0",
-    "label1": "#hash_52b38f6fb98e8982",
+    "label1": "#menu/unlimited",
     "var_9de86f42": 19,
     "setting": "scoreLimit"
 }

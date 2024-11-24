@@ -1,11 +1,11 @@
 {
     "options": [
         {
-            "label": "#hash_3b9f82963f90a6f0",
+            "label": "#warzone/items_use",
             "value": "0"
         },
         {
-            "label": "#hash_6c64c260c9efa2dd",
+            "label": "#warzone/items_cycle",
             "value": "1"
         }
     ],

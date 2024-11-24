@@ -108,7 +108,7 @@
                 {
                     "map": "#zm_zodt8",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": false
                 }
@@ -216,7 +216,7 @@
                 {
                     "map": "#zm_towers",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": true
                 }
@@ -324,7 +324,7 @@
                 {
                     "map": "#zm_escape",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": false
                 }
@@ -432,7 +432,7 @@
                 {
                     "map": "#zm_office",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": false
                 }
@@ -540,7 +540,7 @@
                 {
                     "map": "#zm_mansion",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": false
                 }
@@ -648,7 +648,7 @@
                 {
                     "map": "#zm_red",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": false
                 }
@@ -756,7 +756,7 @@
                 {
                     "map": "#zm_white",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": false
                 }
@@ -864,7 +864,7 @@
                 {
                     "map": "#zm_orange",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_41162f83a371d70d",
+                    "gametype": "#gametype_zm_zstandard",
                     "weight": 1,
                     "isFree": false
                 }

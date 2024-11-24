@@ -1,7 +1,7 @@
 {
     "name": "#prc_mp_objective",
     "displayName": "#hash_24478a903275510a",
-    "description": "#hash_3f39168570a692fa",
+    "description": "#menu/objective_desc",
     "sortOrder": 1,
     "fields": {
         "var_af8f68ab": "#hash_40b914e320dd97d6",

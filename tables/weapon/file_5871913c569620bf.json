@@ -1,7 +1,7 @@
 {
     "name": "#hash_5871913c569620bf",
     "baseWeapon": "#sig_lmg_alt",
-    "displayname": "#hash_41477fa6d6f8ddc8",
+    "displayname": "#weapon/sig_lmg",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

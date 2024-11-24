@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_electrocuted",
-    "displayname": "#hash_6e7fd636da841524",
+    "displayname": "#ui/mod_electrocuted",
     "icon": "#ui_icon_meansofdeath_suicide",
     "iconlarge": "#ui_icon_meansofdeath_suicide_xl"
 }

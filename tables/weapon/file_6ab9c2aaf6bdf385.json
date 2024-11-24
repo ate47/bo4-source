@@ -1,7 +1,7 @@
 {
     "name": "#hash_6ab9c2aaf6bdf385",
     "baseWeapon": "#hash_5cbd4b0312ddb5ff",
-    "displayname": "#hash_50d8b3b5944ed86c",
+    "displayname": "#weapon/tripwire",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

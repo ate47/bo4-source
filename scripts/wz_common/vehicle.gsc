@@ -1591,8 +1591,8 @@ function private function_2014e301(player) {
     self endon(#"death");
     while (true) {
         self waittill(#"weapon_fired");
-        var_3212abd9 = self seatgetweapon(0);
-        var_610cfafc = int(var_3212abd9.reloadtime * 1000);
+        tankweapon = self seatgetweapon(0);
+        var_610cfafc = int(tankweapon.reloadtime * 1000);
         player setvehicleweaponwaitduration(var_610cfafc);
         player setvehicleweaponwaitendtime(gettime() + var_610cfafc);
     }

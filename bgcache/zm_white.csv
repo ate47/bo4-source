@@ -1,5 +1,5 @@
 type,name,ptr
-vehicle,hash_cc0da768150d81,294cf11ebe8
+vehicle,misc_camera,294cf11ebe8
 model,hash_a4c2c6b05763cb,294cb92b778
 model,wpn_t7_zmb_knife_bowie_view,294cb847418
 model,hash_16ee59565cf271d,294cb8a9098
@@ -678,9 +678,9 @@ weapon,special_ballisticknife_freezing_t8_dw_zm,294cdb725f8
 weapon,hash_2189643e0691e777,294cdc67778
 weapon,zitem_white_bear_bomb_part_2_zm,294cdc60ce8
 weapon,hash_22d1e4b32d842ae4,294cdb75098
-weapon,hash_25c3b1ea7a485f69,294cdc063a8
+weapon,ray_gun_mk2_zm,294cdc063a8
 weapon,zitem_white_ww_modkit_part_3_zm,294cdce7578
-weapon,hash_28a15b3ef401ed10,294cdcd0b28
+weapon,ray_gun_mk2z_upgraded_zm,294cdcd0b28
 weapon,zitem_white_mmtd_part_3_zm,294cdbc64a8
 weapon,zhield_lh_zm,294cdc64cd8
 weapon,hash_2c32102272f9d449,294cdbea418
@@ -690,7 +690,7 @@ weapon,hero_flamethrower_t8_lv2_zm,294cdba4fd8
 weapon,hash_393ecc48dea0e23c,294cdbc0f68
 weapon,hero_katana_t8_lv3_zm,294cdbce488
 weapon,ray_gun_mk2z_zm,294cdb81068
-weapon,hash_3ba428c53ad5ac2c,294cdbb3a48
+weapon,ray_gun_mk2v_upgraded_zm,294cdbb3a48
 weapon,hash_3dfb86de416b5192,294cdc9f698
 weapon,buildable_piece_zm,294cdb8a598
 weapon,ar_accurate_t8_zm,294cda7d478
@@ -725,7 +725,7 @@ weapon,hero_katana_t8_lv1_zm,294cdb6a618
 weapon,cymbal_monkey_zm,294cdbe0ee8
 weapon,ray_gun_mk2y_zm,294cdbccf38
 weapon,hash_6bc98c4c2176f9b8,294cdbc3a08
-weapon,hash_6c6c671421bc80b5,294cdb89048
+weapon,ray_gun_mk2y_upgraded_zm,294cdb89048
 weapon,hash_7507f9c3c526368c,294cdcce088
 weapon,hash_76aaea267598babf,294cdb426b8
 weapon,hash_7db4d013c2bc18e2,294cdb7d078
@@ -812,18 +812,18 @@ rumble,defaultweapon_fire,294cf2ba190
 rumble,zm_white_nuke_impact,294cf2bc8f0
 rumble,zm_shield_damage,294cf2bc500
 rumble,hash_71fceb6e20f9fbdc,294cf2bbcd8
-shellshock,hash_4c7b5c53d134927,294cf34a800
+shellshock,shellshock_blur,294cf34a800
 shellshock,explosion_shock,294cf34a440
 shellshock,shellshock_blur_pc,294cf34a740
 shellshock,explosion_zm,294cf34ac80
-statuseffect,hash_160f88dec9e68a1,294cf351710
+statuseffect,dot_purifier,294cf351710
 statuseffect,hash_19533caf858a9f3b,294cf350490
 statuseffect,zm_white_nova_gas,294cf351270
 statuseffect,hash_2608bf886a137e8e,294cf34c870
 statuseffect,hash_320c81d91eb89d73,294cf353770
 statuseffect,hash_3552c44f5e6ff87d,294cf350b80
-statuseffect,hash_3a1f530cdb5f75f4,294cf350930
-statuseffect,hash_57c6ca32810425f9,294cf350240
+statuseffect,avogadro_shock_slowed,294cf350930
+statuseffect,wound_purifier,294cf350240
 xcam,hash_9c4ea39463d14ac,294cf369d00
 xcam,hash_db5c34f7d9e1861,294cf36cac0
 xcam,hash_e8baf96fedf0a48,294cf35e900
@@ -3632,7 +3632,7 @@ string,weapon/fraggrenade,0
 string,hash_ee567911dd1ce83,0
 string,hash_f3011ec9092dca2,0
 string,weapon/ar_accurate_t8,0
-string,hash_f5422dffabdf8f3,0
+string,zombie/item_meat,0
 string,hash_100d349fbdcacb2b,0
 string,hash_1014fb82e4e32c24,0
 string,mpui/vzoom,0
@@ -3974,7 +3974,7 @@ string,hash_5abca820cfab2cd8,0
 string,hash_5acae5f224c146a9,0
 string,hash_5afd03a588cd1c62,0
 string,hash_5b005aa1fe5cd936,0
-string,hash_5b4330351c2e1f64,0
+string,zombie/grab_riotshield,0
 string,hash_5b7536f294f156a6,0
 string,hash_5c07441c7372a5f3,0
 string,hash_5c28147c226eb600,0
@@ -4030,7 +4030,7 @@ string,hash_677a56d7dd089956,0
 string,hash_67e3bd58716e5f3e,0
 string,hash_6801c3df1d9b2a37,0
 string,hash_683c616025752252,0
-string,hash_687c0230505673f9,0
+string,zombie/craft_riot,0
 string,hash_688a1b241ffb922e,0
 string,hash_68aa6bf5db640dde,0
 string,hash_68ae5772aec47222,0
@@ -4946,7 +4946,7 @@ soundalias,hash_b37d29ff68d703b,0
 soundalias,hash_b4240c8acc904ba,0
 soundalias,hash_b459f6cbb1cdea4,0
 soundalias,hash_b4aa53d5d5b9a99,0
-soundalias,hash_b7e482d65612b89,0
+soundalias,amb_bunker,0
 soundalias,hash_b8e8a80de17e21e,0
 soundalias,hash_b8e8c80de17e584,0
 soundalias,hash_b8e8d80de17e737,0
@@ -5536,7 +5536,7 @@ soundalias,hash_14f13a9a66281d9b,0
 soundalias,hash_14f13b9a66281f4e,0
 soundalias,hash_14f13c9a66282101,0
 soundalias,hash_14f231da01619a7f,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_14f95f9e5343cac4,0
 soundalias,hash_14f9619e5343ce2a,0
 soundalias,hash_14f9629e5343cfdd,0

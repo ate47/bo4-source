@@ -1,9 +1,9 @@
 {
     "name": "perk_cooldown",
     "nameHash": "#perk_cooldown",
-    "displayName": "#hash_7f472a1c8dbfaa3a",
+    "displayName": "#menu/cooldown",
     "displayNameShort": "#",
-    "description": "#hash_38c5caa7f400dc0a",
+    "description": "#menu/cooldown_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_perks_zm_timeslip",

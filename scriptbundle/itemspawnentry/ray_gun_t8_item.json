@@ -1,6 +1,6 @@
 {
     "amount": 1,
-    "description": "#hash_b5a9e121eb22e9",
+    "description": "#weapon/ray_gun_desc",
     "configstringfiletype": "scriptbundle",
     "weapon": "weapon#ray_gun_wz",
     "type": "itemspawnentry",

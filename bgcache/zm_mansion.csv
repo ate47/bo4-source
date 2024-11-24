@@ -1,5 +1,5 @@
 type,name,ptr
-vehicle,hash_cc0da768150d81,294cf11ebe8
+vehicle,misc_camera,294cf11ebe8
 vehicle,hash_72c6c555ef9bc8e5,294cf0c1738
 model,hash_405f53425f8f8e,294cb922088
 model,p7_zm_ctl_candle_holder_vintage_sml,294cb75c278
@@ -3861,7 +3861,7 @@ string,hash_ee567911dd1ce83,0
 string,hash_ef90f6c4217d879,0
 string,hash_f1db4a15f0e12bb,0
 string,hash_f3011ec9092dca2,0
-string,hash_f5422dffabdf8f3,0
+string,zombie/item_meat,0
 string,hash_f8daa20b2e5a2ce,0
 string,hash_fc698faab2e9a15,0
 string,mpui/vzoom,0
@@ -3886,7 +3886,7 @@ string,hash_13d29462fd0d57ab,0
 string,hash_13f64b913a8510ce,0
 string,hash_1415168bdbf687ad,0
 string,hash_14b9981c6e3d2f76,0
-string,hash_15397900097c254e,0
+string,zombie/grab_shield,0
 string,hash_15b50559752dd744,0
 string,hash_15cf0d46af70291b,0
 string,mpui/null,0
@@ -4001,7 +4001,7 @@ string,hash_33c5a3d6ed967788,0
 string,hash_33e523e840caec34,0
 string,hash_33e7f205d1a4abdb,0
 string,hash_33f013eacb53964c,0
-string,hash_344916eb222ad1b6,0
+string,weapon/proximity_grenade,0
 string,hash_34f259136740edfd,0
 string,hash_34f83c239da58b2d,0
 string,mpui/quickdraw2,0
@@ -4052,7 +4052,7 @@ string,hash_3e968f73a7d7e44e,0
 string,hash_3ea748d6a647de7b,0
 string,mpui/gl_desc,0
 string,hash_3ee20f103a454178,0
-string,hash_3f07f486b081b54f,0
+string,zmweapon/impaler,0
 string,mpui/is_desc,0
 string,hash_3f5e4aa38f9aeba5,0
 string,hash_408a1c689730dd71,0
@@ -4255,7 +4255,7 @@ string,mpui/dw_desc,0
 string,hash_7a780871028530f5,0
 string,hash_7a899f8fa9163c6e,0
 string,hash_7afac73e4e0688d4,0
-string,hash_7afcbd7b37054026,0
+string,zombie/craft_shield,0
 string,hash_7b8a03d0c40ea097,0
 string,hash_7bbe615a9a441e5f,0
 string,hash_7bc5748f7802e011,0

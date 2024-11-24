@@ -5,7 +5,7 @@
     "value1": "50",
     "type": "gamesettings",
     "name": "server_msec",
-    "displayname": "#hash_3dbc57e3099e1693",
+    "displayname": "#menu/server_rate",
     "label1": "#menu/normal",
     "label2": "#menu/fast",
     "var_9de86f42": 2,

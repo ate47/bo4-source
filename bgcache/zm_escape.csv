@@ -1,5 +1,5 @@
 type,name,ptr
-vehicle,hash_cc0da768150d81,230602d1fc8
+vehicle,misc_camera,230602d1fc8
 vehicle,hash_2e67a436e47d1f84,230602d39f8
 vehicle,hash_741d76f17830f464,230602d5428
 model,hash_831446a5db74c3,2305ca204e8
@@ -750,7 +750,7 @@ weapon,hero_gravityspikes_t8_lv2_zm,2305ed93bc8
 weapon,zhield_spectral_lh_upgraded_zm,2305edfa4d8
 weapon,brutus_melee,2305ed9a658
 weapon,hash_23139323ee602453,2305edc7af8
-weapon,hash_25c3b1ea7a485f69,2305ed9e648
+weapon,ray_gun_mk2_zm,2305ed9e648
 weapon,ww_blundergat_fire_t8_upgraded_zm,2305edca598
 weapon,hash_2c32102272f9d449,2305edf24f8
 weapon,hash_2f2554ceaa4eaa3f,2305edb9088
@@ -888,10 +888,10 @@ rumble,zm_weap_special_activate_rumble,230604fca58
 rumble,zm_weap_scepter_ray_hit_rumble,230604fcaa0
 shellshock,hash_640e615236430645,2306058a740
 shellshock,explosion_shock,2306058a440
-statuseffect,hash_160f88dec9e68a1,23060590930
+statuseffect,dot_purifier,23060590930
 statuseffect,hash_19533caf858a9f3b,23060590240
 statuseffect,hash_2608bf886a137e8e,2306058c870
-statuseffect,hash_57c6ca32810425f9,230605906e0
+statuseffect,wound_purifier,230605906e0
 xcam,hash_5a55a7e66229120,230605a88c0
 xcam,hash_5a8e07e6625aaa9,230605adb40
 xcam,hash_5abe67e6627eab2,230605a9b80
@@ -3784,7 +3784,7 @@ string,hash_ebd3d1458a3b46e,0
 string,hash_ecb311bfa753664,0
 string,hash_ee567911dd1ce83,0
 string,hash_f3011ec9092dca2,0
-string,hash_f5422dffabdf8f3,0
+string,zombie/item_meat,0
 string,hash_f76546edee4a6a1,0
 string,hash_1014fb82e4e32c24,0
 string,mpui/vzoom,0
@@ -4216,7 +4216,7 @@ string,hash_751feed02ba9abc4,0
 string,hash_7564cce16f4274f6,0
 string,mpui/damage,0
 string,hash_758d93baadbc199d,0
-string,hash_75a60f01e15b18ed,0
+string,zmweapon/shield_spectral,0
 string,hash_75c36a6b651e7775,0
 string,hash_7664f631b276facc,0
 string,hash_7667bd0f83307360,0
@@ -5307,7 +5307,7 @@ soundalias,hash_14ec6e3c9eb7ed07,0
 soundalias,hash_14ec6f3c9eb7eeba,0
 soundalias,hash_14ec703c9eb7f06d,0
 soundalias,hash_14f231da01619a7f,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_15269b1a0691d443,0
 soundalias,hash_1529c2109b67c926,0
 soundalias,hash_1530a7e6184b9b2e,0

@@ -87,13 +87,13 @@ string,hash_cef88785ed00590,0
 string,hash_d77fc2d11c6deb1,0
 string,hash_ddc319addc8bcb2,0
 string,hash_e0fa688fb248886,0
-string,hash_f133b808bee8968,0
+string,zombie/round,0
 string,hash_f267d2561d974d7,0
 string,hash_fe988f7e566ff4d,0
 string,hash_fea06394ae21371,0
 string,hash_10a895033b20c705,0
 string,hash_10cc78ab5ba5a7f2,0
-string,hash_10f6b7650d3dfcba,0
+string,zombie/powerup_pap,0
 string,hash_114f96a9d16cc6bb,0
 string,hash_117f528808767024,0
 string,hash_11c1749ce5b09c1f,0
@@ -149,7 +149,7 @@ string,zombie/trap_locked,0
 string,hash_228c88065496b9fe,0
 string,hash_229abc68467e92ce,0
 string,zombie_weaponammohacked_cfill_bgb_secret_shopper,0
-string,hash_230c3d7e5d559d19,0
+string,zombie/extra_life,0
 string,hash_2355bebe5034477a,0
 string,hash_237b1e920f98800b,0
 string,hash_23c1c09e94181fdb,0
@@ -270,7 +270,7 @@ string,hash_49930b2942e5fa93,0
 string,hash_499c3242364f1755,0
 string,hash_49bed62fb20d6ed0,0
 string,hash_4a311ac05dc9a883,0
-string,hash_4a6866a0dc9013f8,0
+string,zombie/building,0
 string,hash_4a6901dda0793d3c,0
 string,zombie/perk_electric_cherry,0
 string,hash_4b18cdd522ca58f7,0
@@ -303,7 +303,7 @@ string,hash_5253833fcb69e672,0
 string,hash_52d9f5f60cd6de90,0
 string,hash_52e05a9ea3e881ea,0
 string,hash_53005c8d5b45bca3,0
-string,hash_53aebb70d9b9cec3,0
+string,zombie/perk_divetonuke,0
 string,hash_53fd856df9288be7,0
 string,hash_5483a959bcbbba41,0
 string,hash_54b0f0ec952ddba8,0
@@ -407,7 +407,7 @@ string,hash_753fe45bee19e131,0
 string,hash_75977ef6e92a8fb9,0
 string,hash_75a75e4d68452af4,0
 string,hash_75ed79ad5c01b965,0
-string,hash_7605483f37772a32,0
+string,zombie/reviving,0
 string,hash_7641ba4524584595,0
 string,hash_765b6a6e9523c15a,0
 string,hash_7667bd0f83307360,0

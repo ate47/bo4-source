@@ -1,11 +1,11 @@
 {
     "options": [
         {
-            "label": "#hash_51f219a3a9c8578f",
+            "label": "#warzone/pickups_hold",
             "value": "0"
         },
         {
-            "label": "#hash_22510ef8643293fd",
+            "label": "#warzone/pickups_press",
             "value": "1"
         }
     ],

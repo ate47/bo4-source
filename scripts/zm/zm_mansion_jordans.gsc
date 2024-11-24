@@ -51,12 +51,12 @@ function init() {
 // Checksum 0xf7fa9513, Offset: 0x3e8
 // Size: 0x244
 function register_steps() {
-    zm_sq::register(#"zm_jordans_painting", #"step_1", #"hash_21ed75bc8122939c", &function_f62d9f65, &function_6134319c);
-    zm_sq::register(#"zm_jordans_reward", #"step_1", #"hash_af33b9072da5dc1", &function_653412f4, &function_f1611d1);
-    zm_sq::register(#"zm_jordans_reward", #"step_2", #"hash_af3389072da58a8", &function_db5aff40, &function_4056f452);
-    zm_sq::register(#"zm_jordans_reward", #"step_3", #"hash_af3399072da5a5b", &function_c7da583f, &function_2a93c8cc);
-    zm_sq::register(#"zm_jordans_reward", #"step_4", #"hash_af33e9072da62da", &function_ae072499, &function_57e9237a);
-    zm_sq::register(#"zm_jordans_reward", #"step_5", #"hash_af33f9072da648d", &function_9c3b8102, &function_4a0f87c7);
+    zm_sq::register(#"zm_jordans_painting", #"step_1", #"jordans_painting_step_1", &function_f62d9f65, &function_6134319c);
+    zm_sq::register(#"zm_jordans_reward", #"step_1", #"jordans_reward_step_1", &function_653412f4, &function_f1611d1);
+    zm_sq::register(#"zm_jordans_reward", #"step_2", #"jordans_reward_step_2", &function_db5aff40, &function_4056f452);
+    zm_sq::register(#"zm_jordans_reward", #"step_3", #"jordans_reward_step_3", &function_c7da583f, &function_2a93c8cc);
+    zm_sq::register(#"zm_jordans_reward", #"step_4", #"jordans_reward_step_4", &function_ae072499, &function_57e9237a);
+    zm_sq::register(#"zm_jordans_reward", #"step_5", #"jordans_reward_step_5", &function_9c3b8102, &function_4a0f87c7);
 }
 
 // Namespace mansion_jordans/zm_mansion_jordans

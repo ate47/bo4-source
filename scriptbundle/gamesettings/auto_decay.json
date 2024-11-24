@@ -14,11 +14,11 @@
     "var_8d1ed54f": "25",
     "var_d606e712": "45",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "auto_decay",
     "displayname": "#hash_d973c9b6c2792d3",
     "label1": "#menu/disabled",
-    "label2": "#hash_7201503206ce2d27",
+    "label2": "#menu/1_second",
     "var_9de86f42": 12,
     "setting": "autoDecayTime"
 }

@@ -1,7 +1,7 @@
 {
     "name": "#hash_1bb3b0c39433e8ca",
     "baseWeapon": "#hash_2383a337e1d77aa2",
-    "displayname": "#hash_6cc59d3b1037f8e4",
+    "displayname": "#weapon/blind_grenade",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

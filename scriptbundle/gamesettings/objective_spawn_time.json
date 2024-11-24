@@ -9,10 +9,10 @@
     "var_dfed6968": "15",
     "var_71ce0d1f": "30",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "objective_spawn_time",
     "displayname": "#hash_192e572fd2ceea9e",
-    "var_ab8053b2": "#hash_666d89ef0248d1ef",
+    "var_ab8053b2": "#menu/1_minute",
     "label1": "#menu/disabled",
     "var_9de86f42": 7,
     "setting": "objectiveSpawnTime"

@@ -6,7 +6,7 @@
     "type": "itemspawnentry",
     "angleoffsetz": 180,
     "name": "barricade_wz_item",
-    "displayname": "#hash_3cf5343acd975b86",
+    "displayname": "#weapon/smartcover",
     "stackcount": 1,
     "icon": "#ui_icon_gadget_smart_cover_mp",
     "modelscale": 0.5,

@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 // Size: 0x27a
 function __init__() {
     clientfield::register("actor", "" + #"gaia_impact_zombie", 16000, 1, "counter", &gaia_impact_zombie_fx, 0, 0);
-    clientfield::register("scriptmover", "" + #"gaia_shoot", 16000, 1, "counter", &function_e8dc2680, 0, 0);
+    clientfield::register("scriptmover", "" + #"gaia_shoot", 16000, 1, "counter", &mostmost_mo, 0, 0);
     clientfield::register("scriptmover", "" + #"gaia_impact", 16000, 1, "counter", &gaia_impact_fx, 0, 0);
     clientfield::register("scriptmover", "" + #"spike_explode", 16000, 1, "counter", &function_10485953, 0, 0);
     clientfield::register("scriptmover", "" + #"spike_spawn", 16000, 1, "counter", &function_3672d8a5, 0, 0);
@@ -59,7 +59,7 @@ function gaia_impact_zombie_fx(localclientnum, oldval, newval, bnewent, binitial
 // Params 7, eflags: 0x1 linked
 // Checksum 0xead6c9e0, Offset: 0x550
 // Size: 0xaa
-function function_e8dc2680(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function mostmost_mo(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     util::playfxontag(localclientnum, level._effect[#"hash_10c872875a19ee24"], self, "tag_origin");
     if (!isdefined(self.n_sfx)) {
         self.n_sfx = self playloopsound(#"hash_bc432b7cd09e11d");

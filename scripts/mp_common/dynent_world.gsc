@@ -78,7 +78,7 @@ function private create_use_trigger() {
     usetrigger triggerenable(0);
     usetrigger usetriggerignoreuseholdtime();
     usetrigger function_4bf6de9a(0);
-    usetrigger function_c96c67a5(0);
+    usetrigger skip1_ski(0);
     usetrigger function_89fca53b(1);
     usetrigger function_49462027(1, 1 | 16 | 1024);
     usetrigger callback::on_trigger_once(&function_46502841);

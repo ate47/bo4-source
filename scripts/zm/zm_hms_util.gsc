@@ -38,7 +38,7 @@ function __init__() {
         if (getdvarint(#"hash_79f58c97fc43e423", 0)) {
             level thread function_774b42ac();
         }
-        if (getdvarint(#"hash_4912911249444062", 0)) {
+        if (getdvarint(#"debug_event_log", 0)) {
             level.var_df9f1a00 = [];
             callback::on_ai_spawned(&function_df54cbcd);
             callback::on_ai_killed(&function_86b062a6);
@@ -793,7 +793,7 @@ function function_df67a12d(category, subcategory) {
     // Params 4, eflags: 0x0
     // Checksum 0x16edc3a5, Offset: 0x2aa8
     // Size: 0x162
-    function function_af49a1e9(str_event, data1, data2, data3) {
+    function log_debug_event(str_event, data1, data2, data3) {
         if (!isdefined(data1)) {
             data1 = "<dev string:x9d>";
         }
@@ -818,7 +818,7 @@ function function_df67a12d(category, subcategory) {
     // Size: 0x74
     function function_df54cbcd() {
         if (!isvehicle(self)) {
-            function_af49a1e9("<dev string:xa0>", self.actor_id, function_9e72a96(self.archetype));
+            log_debug_event("<dev string:xa0>", self.actor_id, function_9e72a96(self.archetype));
             self thread function_fc28e798();
         }
     }
@@ -832,7 +832,7 @@ function function_df67a12d(category, subcategory) {
         if (self.var_c39323b5 === 1) {
             str_event = "<dev string:xb9>";
         }
-        function_af49a1e9(str_event, self.actor_id, function_9e72a96(self.archetype));
+        log_debug_event(str_event, self.actor_id, function_9e72a96(self.archetype));
     }
 
     // Namespace zm_hms_util/zm_hms_util
@@ -840,7 +840,7 @@ function function_df67a12d(category, subcategory) {
     // Checksum 0x42e011e, Offset: 0x2d18
     // Size: 0x2c
     function function_acd2ba83() {
-        function_af49a1e9("<dev string:xc9>", level.round_number);
+        log_debug_event("<dev string:xc9>", level.round_number);
     }
 
     // Namespace zm_hms_util/zm_hms_util
@@ -859,7 +859,7 @@ function function_df67a12d(category, subcategory) {
     function function_fc28e798() {
         self endon(#"death");
         self waittill(#"completed_emerging_into_playable_area");
-        function_af49a1e9("<dev string:xd7>", self.actor_id, function_9e72a96(self.archetype));
+        log_debug_event("<dev string:xd7>", self.actor_id, function_9e72a96(self.archetype));
     }
 
     // Namespace zm_hms_util/zm_hms_util

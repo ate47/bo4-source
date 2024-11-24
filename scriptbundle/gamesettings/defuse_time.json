@@ -19,10 +19,10 @@
     "var_9b3ef183": "10",
     "var_8d115528": "9.5",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "defuse_time",
-    "displayname": "#hash_16dad343a8912d83",
-    "label1": "#hash_7201503206ce2d27",
+    "displayname": "#menu/defuse_time",
+    "label1": "#menu/1_second",
     "var_9de86f42": 17,
     "setting": "defuseTime"
 }

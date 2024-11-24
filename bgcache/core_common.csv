@@ -5826,7 +5826,7 @@ gesturetable,gestable_default,294cd9bda08
 gesturetable,hash_37196faafcd2fea7,294cd9bdad8
 gesturetable,hash_441ca49fc989c533,294cd9bdb40
 gesturetable,hash_4ff648436b7c00df,294cd9bddb0
-gesturetable,hash_51967216e2c913cb,294cd9bdba8
+gesturetable,gestable_blinded,294cd9bdba8
 gesturetable,hash_571976b340bb0dea,294cd9bdc10
 gesturetable,hash_574c1059ac378b5e,294cd9bde18
 gesturetable,hash_73c524ecdadd3e26,294cd9bdc78
@@ -5864,7 +5864,7 @@ rumble,bow_fire,294cf2ba9b8
 rumble,sprint_rumble,294cf2baa00
 rumble,hash_269f59e0e447e94d,294cf2baa48
 rumble,hash_27471bde81e12116,294cf2baa90
-rumble,hash_274946fc88d1749d,294cf2baad8
+rumble,barrel_explosion,294cf2baad8
 rumble,rcbomb_slide,294cf2bab20
 rumble,doublejump_rumble_loop,294cf2bab68
 rumble,reload_medium,294cf2babb0
@@ -5888,7 +5888,7 @@ rumble,sprint_rumble_start,294cf2bb078
 rumble,stinger_lock_rumble,294cf2bb0c0
 rumble,hash_3a5bdaaa0b187aa9,294cf2bb108
 rumble,glass_break,294cf2bb150
-rumble,hash_3dd1619d015e95de,294cf2bb198
+rumble,bow_draw,294cf2bb198
 rumble,hitmarker_rumble,294cf2bb1e0
 rumble,hash_4250c3326e0f75e3,294cf2bb228
 rumble,grapple_miss,294cf2bb270
@@ -5952,7 +5952,7 @@ shellshock,riotshield_slowed,294cf349600
 shellshock,status_effect_slowed,294cf3496c0
 shellshock,victoryscreen,294cf349780
 shellshock,tabun_gas_mp,294cf349840
-shellshock,hash_2460cc5fa8f85fe7,294cf349900
+shellshock,hold_breath,294cf349900
 shellshock,emp_shock,294cf3499c0
 shellshock,hash_2b52b9a74014da20,294cf349a80
 shellshock,shock_field,294cf349b40
@@ -17126,7 +17126,7 @@ talent,hash_7e27ff25eb4887c1,294cf52aa28
 statusicon,hud_status_dead,294cc621170
 statusicon,$default,294cc04c6d0
 menu,playofthematchwidget,0
-menu,hash_939d3ebe5834db3,0
+menu,potm_debug,0
 menu,locationselector,0
 menu,fullscreenwhite,0
 menu,hash_31d451731b462b30,0
@@ -18934,7 +18934,7 @@ string,hash_411b1a87f66d4d23,0
 string,hash_413adacca05247c4,0
 string,hash_413d68b6a2f85d86,0
 string,mpui/extbarrel,0
-string,hash_41477fa6d6f8ddc8,0
+string,weapon/sig_lmg,0
 string,hash_414ce3af89eedef1,0
 string,hash_41623e53a7d67e77,0
 string,hash_41675721bd9111d3,0
@@ -19061,7 +19061,7 @@ string,hash_45d164b5f002c2e4,0
 string,hash_45d36cd4b3bb6578,0
 string,hash_45d42db6c2bc5573,0
 string,hash_45e294c334b5e4a9,0
-string,hash_45e61d7aa4721759,0
+string,weapon/water_balloon,0
 string,hash_45ea5b692fe5a314,0
 string,contract/ar_kills,0
 string,hash_46018b257ada0a8e,0
@@ -19088,7 +19088,7 @@ string,hash_46b3449b07a7b8c9,0
 string,hash_46b3459b07a7ba7c,0
 string,hash_46b3479b07a7bde2,0
 string,hash_46b3489b07a7bf95,0
-string,hash_46bd2e256bd93747,0
+string,weapon/decoy_grenade,0
 string,hash_46c400fc25fb4b94,0
 string,hash_46d3456c3ac27c8c,0
 string,hash_46e17a19247693ad,0
@@ -20387,7 +20387,7 @@ string,hash_7705cb8207f499e9,0
 string,hash_770aee1af45f2f87,0
 string,hash_77111d057befe108,0
 string,hash_771421be468ef5d5,0
-string,hash_77195fae71b9bcdd,0
+string,weapon/icepick_unavailable,0
 string,hash_772052076f9290b9,0
 string,weapon/lmg_stealth_t8,0
 string,hash_7725a43a5e8755ad,0
@@ -20510,7 +20510,7 @@ string,hash_7c3af08c059fb67a,0
 string,hash_7c437fefe94eeadf,0
 string,hash_7c5aef3c3f69516f,0
 string,hash_7c5c15d486a30e1e,0
-string,hash_7c5c4488b8ad747e,0
+string,warzone/collapse_grenade,0
 string,hash_7c6e9b189069ea8f,0
 string,hash_7c75da9b203287fe,0
 string,hash_7c7a353f15149cb4,0
@@ -21319,10 +21319,10 @@ client_tagfxset,jammer_smartcover,294ce898168
 client_tagfxset,icepick_tankrobot,294ce8982a8
 client_tagfxset,jammer_tankrobot,294ce8982c8
 client_tagfxset,icepick_supplypod,294ce898188
-client_tagfxset,hash_6b0c6d5d5a9c87d9,294ce8982e8
+client_tagfxset,jammer_rcxd,294ce8982e8
 client_tagfxset,gadget_spawnbeacon_teamlight,294ce898308
-client_tagfxset,hash_710dfc5ae991cc15,294ce898328
-client_tagfxset,hash_7147950ba2720330,294ce898348
+client_tagfxset,icepick_rcxd,294ce898328
+client_tagfxset,jammer_cymbal,294ce898348
 client_tagfxset,jammer_seeker,294ce898028
 client_tagfxset,icepick_sensordart,294ce897be8
 client_tagfxset,jammer_sensordart,294ce897ae8

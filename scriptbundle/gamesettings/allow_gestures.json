@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "allow_gestures",
-    "displayname": "#hash_54dc4592eb11ec15",
+    "displayname": "#menu/allow_gestures",
     "var_9de86f42": 2,
     "setting": "boastEnabled",
     "var_82c732a7": 1

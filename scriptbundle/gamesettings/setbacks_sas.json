@@ -12,10 +12,10 @@
     "var_71ce0d1f": "4",
     "var_8d1ed54f": "50",
     "type": "gamesettings",
-    "label": "#hash_399145de9cf614d9",
+    "label": "#menu/x_points",
     "name": "setbacks_sas",
-    "displayname": "#hash_7d6e8c8d72eb5c33",
-    "label1": "#hash_4fd8347bec56528c",
+    "displayname": "#menu/setbacks",
+    "label1": "#menu/all_points",
     "label2": "#menu/1_point",
     "var_9de86f42": 10,
     "setting": "setbacks"

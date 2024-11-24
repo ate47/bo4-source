@@ -19,11 +19,11 @@
     "var_9b3ef183": "30",
     "var_8d115528": "25",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "preround_period",
     "displayname": "#hash_4d3aed9c5ecc443a",
     "label1": "#menu/disabled",
-    "label2": "#hash_7201503206ce2d27",
+    "label2": "#menu/1_second",
     "var_9de86f42": 17,
     "setting": "preroundperiod"
 }

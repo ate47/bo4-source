@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "perk_lightweight_restriction",
-    "displayname": "#hash_7a68bd36137b4aae",
+    "displayname": "#menu/talent_lightweight",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

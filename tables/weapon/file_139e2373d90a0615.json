@@ -1,7 +1,7 @@
 {
     "name": "#hash_139e2373d90a0615",
     "baseWeapon": "#gadget_health_regen_squad",
-    "displayname": "#hash_1501cd3959ac6c7c",
+    "displayname": "#weapon/gadget_cleanse",
     "sessionMode": "warzone",
     "itemIndex": 4,
     "dualWieldWeaponIndex": 0,

@@ -4501,10 +4501,10 @@ function function_a61ebb46(str_hint) {
             case #"hash_84bd3681b5c97a1":
                 level.var_5d40bf7e = 1;
                 break;
-            case #"hash_535c50e942322f33":
+            case #"weapon_watch_on":
                 e_player thread function_bb58b6f4();
                 break;
-            case #"hash_5827c15b7b5d19f7":
+            case #"weapon_watch_off":
                 e_player notify(#"hash_665982d72456ad87");
                 break;
             }

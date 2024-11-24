@@ -149,7 +149,7 @@ function on_menu_response(params) {
         if (response == "changecharacter" || response == "randomcharacter" || response == "ready" || response == "opendraft" || response == "closedraft") {
             self [[ level.draftmenu ]](response, intpayload);
         } else if (response == "change_specialist") {
-            self [[ level.var_2a43ad89 ]](intpayload);
+            self [[ level.specialistmenu ]](intpayload);
         } else if (response == "weapon_updated") {
             if (self.dead !== 1 && self.health != 0) {
                 self iprintlnbold(game.strings[#"hash_b71875e85956ea"]);
@@ -198,7 +198,7 @@ function function_2d1eb0ec(intpayload) {
     if (var_f4cd8d56 == 1) {
         var_e7a0076b = isdefined(callout.var_82887152) ? callout.var_82887152 : callout.var_799fa983;
     } else if (var_f4cd8d56 == 2) {
-        var_e7a0076b = callout.var_3c799f50;
+        var_e7a0076b = callout.titleready;
     }
     if (isdefined(callout)) {
         if (!isdefined(self.calloutspamtimeout)) {

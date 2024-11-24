@@ -1,7 +1,7 @@
 {
     "name": "#hash_1fb38d64d8773f0",
     "baseWeapon": "#eq_slow_grenade",
-    "displayname": "#hash_58a2a5bf8163e55a",
+    "displayname": "#weapon/slow_grenade",
     "sessionMode": "multiplayer",
     "itemIndex": 66,
     "dualWieldWeaponIndex": 0,

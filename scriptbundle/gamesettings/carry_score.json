@@ -11,9 +11,9 @@
     "var_dfed6968": "4",
     "var_71ce0d1f": "5",
     "type": "gamesettings",
-    "label": "#hash_399145de9cf614d9",
+    "label": "#menu/x_points",
     "name": "carry_score",
-    "displayname": "#hash_491c364488e3abab",
+    "displayname": "#menu/carry_score",
     "label1": "#menu/1_point",
     "var_9de86f42": 9,
     "setting": "carryScore"

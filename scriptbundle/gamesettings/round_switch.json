@@ -9,9 +9,9 @@
     "type": "gamesettings",
     "label": "#hash_6e36be7afbe498e7",
     "name": "round_switch",
-    "displayname": "#hash_4f9f789e106b83be",
+    "displayname": "#menu/round_switch",
     "label1": "#menu/disabled",
-    "label2": "#hash_66e9852ea83ebd55",
+    "label2": "#menu/every_round",
     "var_9de86f42": 5,
     "setting": "roundSwitch"
 }

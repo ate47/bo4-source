@@ -1,9 +1,9 @@
 {
-    "hinttext": "#hash_56b4b91bdbe9dd24",
+    "hinttext": "#menu/headshotsonly_hint",
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "mp_only_headshots",
-    "displayname": "#hash_4bedc13a6fa34084",
+    "displayname": "#menu/headshotsonly",
     "var_9de86f42": 2,
     "setting": "specialistOnlyHeadshots_allies_1",
     "var_82c732a7": 1

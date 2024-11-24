@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_gas",
-    "displayname": "#hash_7f85de48fcd0c0fa",
+    "displayname": "#ui/mod_gas",
     "icon": "#ui_icon_meansofdeath_suicide",
     "iconlarge": "#ui_icon_meansofdeath_suicide_xl"
 }

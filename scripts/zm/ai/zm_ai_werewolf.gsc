@@ -196,7 +196,7 @@ function private registerbehaviorscriptfunctions() {
 // Checksum 0x694ba5e4, Offset: 0x1580
 // Size: 0x48
 function werewolfshouldstun(entity) {
-    if (zm_behavior::zombieshouldstun(entity) && function_833670b7(entity)) {
+    if (zm_behavior::zombieshouldstun(entity) && hardcoremenu rul(entity)) {
         return true;
     }
     return false;
@@ -206,7 +206,7 @@ function werewolfshouldstun(entity) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x958d8846, Offset: 0x15d0
 // Size: 0xbc
-function private function_833670b7(entity) {
+function private hardcoremenu rul(entity) {
     var_7a69f7e9 = blackboard::getblackboardevents("wrwlf_stun");
     if (isdefined(var_7a69f7e9) && var_7a69f7e9.size) {
         foreach (event in var_7a69f7e9) {

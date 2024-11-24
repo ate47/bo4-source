@@ -105,9 +105,9 @@ function start_stick_man() {
 // Checksum 0xcfc214b3, Offset: 0xc08
 // Size: 0x124
 function register_steps() {
-    zm_sq::register(#"zm_mansion_stick_man", #"step_1", #"hash_6e38611b5382ee7f", &init_step_1, &cleanup_step_1);
-    zm_sq::register(#"zm_mansion_stick_man", #"step_2", #"hash_6e38621b5382f032", &init_step_2, &cleanup_step_2);
-    zm_sq::register(#"zm_mansion_stick_man", #"step_3", #"hash_6e38631b5382f1e5", &init_step_3, &cleanup_step_3);
+    zm_sq::register(#"zm_mansion_stick_man", #"step_1", #"stick_man_step_1", &init_step_1, &cleanup_step_1);
+    zm_sq::register(#"zm_mansion_stick_man", #"step_2", #"stick_man_step_2", &init_step_2, &cleanup_step_2);
+    zm_sq::register(#"zm_mansion_stick_man", #"step_3", #"stick_man_step_3", &init_step_3, &cleanup_step_3);
 }
 
 // Namespace namespace_b6ca3ccc/zm_mansion_stick_man
@@ -143,7 +143,7 @@ function cleanup_step_1(var_a276c861, var_19e802fa) {
         e_bush delete();
     }
     if (var_a276c861 || var_19e802fa) {
-        level notify(#"hash_425e8c53dcecb85d");
+        level notify(#"skip_step_1");
         s_scene = struct::get(#"p8_fxanim_zm_man_wm_01_bundle", "scriptbundlename");
         s_scene thread scene::play("Shot 1");
         var_fe0f27ef = getentarray("living_tree", "targetname");
@@ -266,7 +266,7 @@ function function_1ca135cf(n_int) {
 // Size: 0x8c
 function function_4b15ba35(a_ents) {
     level endon(#"hash_7ffc33bb45377f5e");
-    level waittill(#"hash_68c10418963ac1fc", #"hash_425e8c53dcecb85d");
+    level waittill(#"hash_68c10418963ac1fc", #"skip_step_1");
     if (isdefined(a_ents[#"prop 1"])) {
         a_ents[#"prop 1"] delete();
     }

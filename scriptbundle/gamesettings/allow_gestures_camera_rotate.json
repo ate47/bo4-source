@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "allow_gestures_camera_rotate",
-    "displayname": "#hash_32c19fd02b6c8704",
+    "displayname": "#menu/gesture_camera",
     "var_9de86f42": 2,
     "setting": "boastAllowCam",
     "var_82c732a7": 1

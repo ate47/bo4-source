@@ -1,7 +1,7 @@
 {
     "name": "#hash_41ea6e05429cdf17",
     "baseWeapon": "#gadget_seeker_mine",
-    "displayname": "#hash_276cefbe153ce10",
+    "displayname": "#weapon/gadget_placeholder",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

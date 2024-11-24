@@ -303,7 +303,7 @@ function function_ca3759b1() {
     level.var_f8fdb172 function_3ea7f25d();
     level thread canister_instruct();
     level thread function_abb0b62();
-    level thread function_1cc4b08e();
+    level thread downed_react();
     level thread function_927c0f2e();
     level thread function_8149ceff();
     level thread function_1fba7fc2();
@@ -869,7 +869,7 @@ function function_abb0b62() {
     while (true) {
         wait randomintrangeinclusive(5, 10);
         b_spoke = 0;
-        s_results = level waittill(#"hash_7edbeeb2b6f53bfe");
+        s_results = level waittill(#"avogadro_damage_react");
         e_player = s_results.e_player;
         if (!var_51f3793d) {
             if (e_player zm_audio::can_speak()) {
@@ -900,12 +900,12 @@ function function_abb0b62() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5196e16d, Offset: 0x4fd8
 // Size: 0x106
-function function_1cc4b08e() {
+function downed_react() {
     level endon(#"game_ended", #"avog_captured");
     while (true) {
         wait randomintrangeinclusive(5, 10);
         b_spoke = 0;
-        s_results = level waittill(#"hash_3a603bc69204f012");
+        s_results = level waittill(#"avogadro_downed_react");
         if (isdefined(level.e_avogadro)) {
             if (level.e_avogadro zm_audio::can_speak()) {
                 zm_hms_util::function_3c173d37();

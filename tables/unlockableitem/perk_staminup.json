@@ -1,9 +1,9 @@
 {
     "name": "perk_staminup",
     "nameHash": "#perk_staminup",
-    "displayName": "#hash_3725b1a6773d4dc0",
+    "displayName": "#menu/staminup",
     "displayNameShort": "#",
-    "description": "#hash_390cd9268976e48",
+    "description": "#menu/staminup_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_perks_zm_staminup",

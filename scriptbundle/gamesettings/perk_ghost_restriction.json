@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "perk_ghost_restriction",
-    "displayname": "#hash_3df7b1d6be866b29",
+    "displayname": "#menu/talent_ghost",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

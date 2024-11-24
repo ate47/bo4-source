@@ -13,7 +13,7 @@
                 }
             ],
             "description": "#hash_47cde512453830c5",
-            "var_308a9b83": 0.005,
+            "surveychance": 0.005,
             "title": "#hash_1871a9be264ce732"
         }
     ],
@@ -31,7 +31,7 @@
                 }
             ],
             "description": "#hash_47cde512453830c5",
-            "var_308a9b83": 0.005,
+            "surveychance": 0.005,
             "title": "#hash_1871a9be264ce732"
         }
     ],
@@ -58,7 +58,7 @@
                 }
             ],
             "description": "#hash_58e24cd38cd1d20d",
-            "var_308a9b83": 1,
+            "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "#hash_7130895060cfded6"
@@ -78,7 +78,7 @@
                 }
             ],
             "description": "#hash_47cde512453830c5",
-            "var_308a9b83": 0.005,
+            "surveychance": 0.005,
             "title": "#hash_1871a9be264ce732"
         }
     ],
@@ -96,7 +96,7 @@
                 }
             ],
             "description": "#hash_47cde512453830c5",
-            "var_308a9b83": 0.005,
+            "surveychance": 0.005,
             "title": "#hash_1871a9be264ce732",
             "var_33ba47f0": 501
         }
@@ -124,7 +124,7 @@
                 }
             ],
             "description": "#hash_a77d3d06eb40a65",
-            "var_308a9b83": 1,
+            "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "#hash_380a0eaf6220607e"
@@ -153,7 +153,7 @@
                 }
             ],
             "description": "#hash_2a88bdf212b6ff6d",
-            "var_308a9b83": 1,
+            "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "#hash_7de72c11a18dc504"
@@ -182,7 +182,7 @@
                 }
             ],
             "description": "#hash_4218a1d3b7a25bc9",
-            "var_308a9b83": 1,
+            "surveychance": 1,
             "devonly": 1,
             "randomizebuttonorder": 1,
             "title": "#hash_4b5964d0ada3421e"

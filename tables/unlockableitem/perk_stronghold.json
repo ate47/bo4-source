@@ -1,9 +1,9 @@
 {
     "name": "perk_stronghold",
     "nameHash": "#perk_stronghold",
-    "displayName": "#hash_3a80534c837a63b5",
+    "displayName": "#menu/stronghold",
     "displayNameShort": "#",
-    "description": "#hash_1ca3c3f7ed6bfb9f",
+    "description": "#menu/stronghold_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_perks_zm_stonecoldstronghold",

@@ -1,12 +1,12 @@
 {
-    "var_cd1b278e": "#hash_26c0be258c969bf4",
+    "var_cd1b278e": "#menu/move_back",
     "var_917feb54": "#xenon_stick_move_turn",
     "name": "stick_layout_legacy",
     "var_9cb0c5cd": "#xenon_stick_move_look",
     "var_c724d0d1": 2,
     "var_53e7bdc7": "#hash_6190a394a838ade9",
     "var_92e90c8c": "#hash_27793ef5304e6191",
-    "var_38a7d78b": "#hash_2bee423609583a01",
-    "var_40dbf9f7": "#hash_5597f5dd8a0c5760",
+    "var_38a7d78b": "#menu/look_down",
+    "var_40dbf9f7": "#menu/move_forward",
     "var_abf9bb85": "#menu/look_up"
 }

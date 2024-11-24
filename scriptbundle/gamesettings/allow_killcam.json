@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "allow_killcam",
-    "displayname": "#hash_2432a6579bbde420",
+    "displayname": "#menu/allow_killcam",
     "var_9de86f42": 2,
     "setting": "allowKillcam",
     "var_82c732a7": 1

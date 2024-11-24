@@ -1,7 +1,7 @@
 {
     "name": "#briefcase_bomb_mp",
     "baseWeapon": "#briefcase_bomb",
-    "displayname": "#hash_17b3f5215733de",
+    "displayname": "#weapon/bomb",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

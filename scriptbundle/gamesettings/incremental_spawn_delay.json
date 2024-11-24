@@ -19,11 +19,11 @@
     "var_9b3ef183": "60",
     "var_8d115528": "50",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "incremental_spawn_delay",
     "displayname": "#hash_364632ebb6269a05",
     "label1": "#menu/disabled",
-    "label2": "#hash_7201503206ce2d27",
+    "label2": "#menu/1_second",
     "var_9de86f42": 17,
     "setting": "incrementalSpawnDelay"
 }

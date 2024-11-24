@@ -43,7 +43,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[35];
+    hash_768aeb6b928320d outfit_breadcrumbs[35];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[35];
 };
 
@@ -111,7 +111,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[35];
+    hash_768aeb6b928320d outfit_breadcrumbs[35];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[35];
 };
 
@@ -179,7 +179,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -247,7 +247,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -315,7 +315,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -383,7 +383,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -450,7 +450,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -517,7 +517,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -584,7 +584,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -651,7 +651,7 @@ struct charactercontext {
 struct character {
     uint6 selectedoutfit;
     uint6 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[32];
+    hash_768aeb6b928320d outfit_breadcrumbs[32];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[32];
 };
 
@@ -718,7 +718,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -785,7 +785,7 @@ struct character {
     uint9 hash_44ed9a1ad38be40[3];
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -852,7 +852,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -917,7 +917,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -982,7 +982,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[24];
+    hash_768aeb6b928320d outfit_breadcrumbs[24];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[24];
 };
 
@@ -1047,7 +1047,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1112,7 +1112,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1175,7 +1175,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1234,7 +1234,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1283,7 +1283,7 @@ struct character {
     uint5 selectedoutfit;
     uint5 hash_4d9fceac8ff24cbd;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1331,7 +1331,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1378,7 +1378,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
 };
 
@@ -1424,7 +1424,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -1471,7 +1471,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -1518,7 +1518,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -1565,7 +1565,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -1612,7 +1612,7 @@ struct charactercontext {
 struct character {
     uint5 selectedoutfit;
     uint11 hash_20d6751cb2f9ca09[9];
-    hash_768aeb6b928320d hash_7cf85c301a206997[16];
+    hash_768aeb6b928320d outfit_breadcrumbs[16];
     hash_32aeae7311d2cd9b hash_e5c77948998e49[16];
     bit hash_f48e22ced35e56d[1024];
 };
@@ -1642,7 +1642,7 @@ struct root {
 
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[50];
+    wzcharacter characters[50];
     uint6 hash_6a8bd5071bcb463c;
     uint6 hash_6eb648836297a49d;
     bit hash_6daffc8ba44646eb;
@@ -1656,9 +1656,9 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
-    hash_1b8c44968f4c52b6 hash_7cf85c301a206997[32];
+    hash_1b8c44968f4c52b6 outfit_breadcrumbs[32];
     variant showcaseweapon;
     hash_22abd41674c242a4 hash_e5c77948998e49[32];
 };
@@ -1701,7 +1701,7 @@ struct root {
 
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[50];
+    wzcharacter characters[50];
     uint6 hash_6a8bd5071bcb463c;
     uint6 hash_6eb648836297a49d;
     bit hash_6daffc8ba44646eb;
@@ -1715,9 +1715,9 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
-    hash_1b8c44968f4c52b6 hash_7cf85c301a206997[32];
+    hash_1b8c44968f4c52b6 outfit_breadcrumbs[32];
     variant showcaseweapon;
     hash_22abd41674c242a4 hash_e5c77948998e49[32];
 };
@@ -1760,7 +1760,7 @@ struct root {
 
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[50];
+    wzcharacter characters[50];
     uint6 hash_6a8bd5071bcb463c;
     uint6 hash_6eb648836297a49d;
     bit hash_6daffc8ba44646eb;
@@ -1774,7 +1774,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -1823,7 +1823,7 @@ struct root {
 
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[50];
+    wzcharacter characters[50];
     uint6 hash_6a8bd5071bcb463c;
     uint6 hash_6eb648836297a49d;
     bit hash_6daffc8ba44646eb;
@@ -1837,7 +1837,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -1887,7 +1887,7 @@ struct root {
 
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -1899,7 +1899,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -1949,7 +1949,7 @@ struct root {
 
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -1961,7 +1961,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -2011,7 +2011,7 @@ struct root {
 
 struct hash_16fd550e78e8ba94 {
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2023,7 +2023,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -2073,7 +2073,7 @@ struct root {
 struct hash_16fd550e78e8ba94 {
     uint10 loadoutversion;
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2085,7 +2085,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -2135,7 +2135,7 @@ struct root {
 struct hash_16fd550e78e8ba94 {
     uint10 loadoutversion;
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2147,7 +2147,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -2197,7 +2197,7 @@ struct root {
 struct hash_16fd550e78e8ba94 {
     uint10 loadoutversion;
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2209,7 +2209,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -2259,7 +2259,7 @@ struct root {
 struct hash_16fd550e78e8ba94 {
     uint10 loadoutversion;
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2271,7 +2271,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint6 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[32];
     variant showcaseweapon;
@@ -2322,7 +2322,7 @@ struct root {
 struct hash_16fd550e78e8ba94 {
     uint10 loadoutversion;
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2334,7 +2334,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     uint3 selectedoutfit;
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[4];
     variant showcaseweapon;
@@ -2385,7 +2385,7 @@ struct root {
 struct hash_16fd550e78e8ba94 {
     uint10 loadoutversion;
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2397,7 +2397,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     hash_3cff0c833d630ba2 hash_b56427620aa34e1[1];
     variant showcaseweapon;
     hash_22abd41674c242a4 hash_e5c77948998e49[1];
@@ -2449,7 +2449,7 @@ struct root {
 struct hash_16fd550e78e8ba94 {
     uint10 loadoutversion;
     charactercontext charactercontext;
-    hash_20913c25e83d91ab characters[40];
+    wzcharacter characters[40];
     bit hash_6daffc8ba44646eb;
     padbit __pad[7];
 };
@@ -2462,7 +2462,7 @@ struct charactercontext {
     uint32 charactermode;
 };
 
-struct hash_20913c25e83d91ab {
+struct wzcharacter {
     hash_7389780d42f5735e itemlist[4];
     variant showcaseweapon;
     uint6 selectedcharacteritems[4];

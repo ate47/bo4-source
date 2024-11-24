@@ -7,7 +7,7 @@
     "var_dfed6968": "2",
     "type": "gamesettings",
     "name": "player_health_regen_time",
-    "displayname": "#hash_107587a7d443aa95",
+    "displayname": "#menu/health_regeneration",
     "var_684ccd4c": "#menu/fast",
     "label1": "#menu/disabled",
     "var_71b6e020": "#menu/normal",

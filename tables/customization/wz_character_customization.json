@@ -49,7 +49,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -177,7 +177,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -305,7 +305,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -433,7 +433,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -561,7 +561,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -689,7 +689,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -817,7 +817,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -945,7 +945,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1073,7 +1073,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1201,7 +1201,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1329,7 +1329,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1386,7 +1386,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1443,7 +1443,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1500,7 +1500,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1557,7 +1557,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1616,7 +1616,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1675,7 +1675,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1734,7 +1734,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1793,7 +1793,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1846,7 +1846,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1905,7 +1905,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -1964,7 +1964,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2023,7 +2023,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2082,7 +2082,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2140,7 +2140,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2199,7 +2199,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2258,7 +2258,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2317,7 +2317,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2370,7 +2370,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2423,7 +2423,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2476,7 +2476,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2529,7 +2529,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2584,7 +2584,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2639,7 +2639,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2694,7 +2694,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2749,7 +2749,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2804,7 +2804,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2859,7 +2859,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2914,7 +2914,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -2969,7 +2969,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3021,7 +3021,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3075,7 +3075,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3129,7 +3129,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3183,7 +3183,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3237,7 +3237,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3291,7 +3291,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3395,7 +3395,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3454,7 +3454,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3556,7 +3556,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3613,7 +3613,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3670,7 +3670,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3727,7 +3727,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3784,7 +3784,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3841,7 +3841,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3898,7 +3898,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -3955,7 +3955,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4008,7 +4008,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4103,7 +4103,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4161,7 +4161,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4218,7 +4218,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4276,7 +4276,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4333,7 +4333,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4387,7 +4387,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4441,7 +4441,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4499,7 +4499,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4557,7 +4557,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4615,7 +4615,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4711,7 +4711,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4769,7 +4769,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4827,7 +4827,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4885,7 +4885,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -4943,7 +4943,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -5001,7 +5001,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -5058,7 +5058,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",
@@ -5115,7 +5115,7 @@
             "category": {
                 "name": "#prc_mp_slayer",
                 "displayName": "#hash_481f4d1215e979eb",
-                "description": "#hash_1c01013be2691f1b",
+                "description": "#menu/slayer_desc",
                 "sortOrder": 0,
                 "fields": {
                     "var_af8f68ab": "#hash_51202badea0c3c13",

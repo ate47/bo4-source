@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "perk_resistance_restriction",
-    "displayname": "#hash_78bebf6517dcd233",
+    "displayname": "#menu/talent_resistance",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

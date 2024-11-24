@@ -19,10 +19,10 @@
     "var_8d115528": "3500",
     "var_3ec0b888": "5000",
     "var_246e83e4": "4500",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "extraction_extra_time",
     "displayname": "#hash_e736b19f6814b3f",
-    "label2": "#hash_7201503206ce2d27",
+    "label2": "#menu/1_second",
     "var_9de86f42": 8,
     "setting": "bountyDepositExtraTime"
 }

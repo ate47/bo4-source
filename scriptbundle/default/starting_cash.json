@@ -21,7 +21,7 @@
     "var_246e83e4": "4500",
     "label": "#menu/x_money",
     "name": "starting_cash",
-    "displayname": "#hash_38970a3e259e317",
+    "displayname": "#menu/starting_cash",
     "var_9de86f42": 19,
     "setting": "bountyStartMoney"
 }

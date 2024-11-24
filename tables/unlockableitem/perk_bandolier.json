@@ -1,9 +1,9 @@
 {
     "name": "perk_bandolier",
     "nameHash": "#perk_bandolier",
-    "displayName": "#hash_535a5ff211e43829",
+    "displayName": "#menu/bandolier",
     "displayNameShort": "#",
-    "description": "#hash_3e654fa19c523423",
+    "description": "#menu/bandolier_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_perks_zm_bandolierbandit",

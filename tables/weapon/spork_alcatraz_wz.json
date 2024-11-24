@@ -1,7 +1,7 @@
 {
     "name": "#spork_alcatraz_wz",
     "baseWeapon": "#spork_alcatraz",
-    "displayname": "#hash_608942d662beb5ae",
+    "displayname": "#zmweapon/spork_knife",
     "sessionMode": "warzone",
     "itemIndex": 29,
     "dualWieldWeaponIndex": 0,

@@ -13,7 +13,7 @@
     "type": "gamesettings",
     "label": "#menu/noloc",
     "name": "kill_event_score_multiplier",
-    "displayname": "#hash_26d4fa9a55965aeb",
+    "displayname": "#menu/score_multiplier",
     "var_9de86f42": 9,
     "setting": "killEventScoreMultiplier"
 }

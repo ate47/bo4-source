@@ -879,7 +879,7 @@ rumble,hash_71fceb6e20f9fbdc,2a88a79bcd8
 rumble,hash_772f3a128d16acc3,2a88a79c158
 rumble,hash_7a7eacfb6ce82094,2a88a79c2c0
 rumble,anim_med,2a88a79c548
-shellshock,hash_4c7b5c53d134927,2a88a82ab00
+shellshock,shellshock_blur,2a88a82ab00
 shellshock,hash_1f0b5b7bc16ff850,2a88a82a740
 shellshock,hash_2b52b9a74014da20,2a88a829a80
 shellshock,shellshock_blur_pc,2a88a82a800
@@ -3380,7 +3380,7 @@ string,hash_72b5e12c9c5b3bf,0
 string,weapon/sig_buckler_dw,0
 string,hash_74af66549232171,0
 string,hash_7bbf2a5487ffe0c,0
-string,hash_7e22d297c477292,0
+string,zmweapon/shield_sword,0
 string,mpui/extclip,0
 string,hash_870732dcf823d00,0
 string,hash_9340177dbe3be9f,0
@@ -3406,7 +3406,7 @@ string,hash_ed407098b77bc91,0
 string,hash_ee567911dd1ce83,0
 string,hash_f06f1d12b9e06bb,0
 string,hash_f3011ec9092dca2,0
-string,hash_f5422dffabdf8f3,0
+string,zombie/item_meat,0
 string,mpui/vzoom,0
 string,hash_107cd70abcec1413,0
 string,hash_110075b9efe67cd0,0
@@ -4864,7 +4864,7 @@ soundalias,hash_14e5857838150fa7,0
 soundalias,hash_14edc840592d3e35,0
 soundalias,hash_14f231da01619a7f,0
 soundalias,hash_14f2d0df9953942d,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_1515c80c9085f1fb,0
 soundalias,hash_1520069daa9734fd,0
 soundalias,hash_152604b019b20a40,0

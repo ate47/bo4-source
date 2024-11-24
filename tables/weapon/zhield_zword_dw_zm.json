@@ -1,7 +1,7 @@
 {
     "name": "#zhield_zword_dw_zm",
     "baseWeapon": "#zhield_zword_dw",
-    "displayname": "#hash_7e22d297c477292",
+    "displayname": "#zmweapon/shield_sword",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

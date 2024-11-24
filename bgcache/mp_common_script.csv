@@ -148,7 +148,7 @@ string,hash_4df55b9b501cd6e,0
 string,hash_51a0f083a5566a3,0
 string,hash_6f642c413cada13,0
 string,hash_98ed6fcdd53296f,0
-string,hash_a9213d7fcad1656,0
+string,warzone/button_finish,0
 string,hash_cd63faed592da03,0
 string,hash_d0e6185dd4d6c37,0
 string,hash_ddc319addc8bcb2,0
@@ -202,7 +202,7 @@ string,hash_6801c86cca2c568a,0
 string,hash_68d9a667406d9e2e,0
 string,hash_6aafef0e08aaf136,0
 string,mpl_killstreak_heli,0
-string,hash_6ba778165639acc4,0
+string,warzone/button_revive,0
 string,hash_6e4cedc56165f367,0
 string,hash_6eed535fde1e064b,0
 string,hash_6f6e84671b89c829,0

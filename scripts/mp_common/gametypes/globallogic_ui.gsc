@@ -36,7 +36,7 @@ function setupcallbacks() {
     level.autoassign = &menuautoassign;
     level.spectator = &menuspectator;
     level.curclass = &menuclass;
-    level.var_2a43ad89 = &function_9ed118fe;
+    level.specialistmenu = &menuspecialist;
     level.teammenu = &menuteam;
     level.draftmenu = &menupositiondraft;
     level.autocontrolplayer = &menuautocontrolplayer;
@@ -404,7 +404,7 @@ function menuclass(response, forcedclass, updatecharacterindex, closemenus) {
 // Params 1, eflags: 0x0
 // Checksum 0x21afc0c9, Offset: 0x1a60
 // Size: 0x2fc
-function function_9ed118fe(characterindex) {
+function menuspecialist(characterindex) {
     self endon(#"disconnect");
     if (!isdefined(characterindex)) {
         println("<dev string:x3b>");

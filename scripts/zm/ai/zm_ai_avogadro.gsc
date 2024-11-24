@@ -326,9 +326,9 @@ function private function_8f7ba033(inflictor, attacker, damage, flags, meansofda
         self.var_8c6c9045 = dir * -1;
     } else if (gettime() > self.var_a8669c90 && function_dbe3b78a(meansofdamage, weapon)) {
         self.var_fad7a0b8 = 1;
-        level notify(#"hash_3a603bc69204f012");
+        level notify(#"avogadro_downed_react");
     } else if (!function_dbe3b78a(meansofdamage, weapon)) {
-        level notify(#"hash_7edbeeb2b6f53bfe", {#e_player:attacker});
+        level notify(#"avogadro_damage_react", {#e_player:attacker});
     }
     return var_7aa37d9f;
 }
@@ -872,7 +872,7 @@ function private function_11d4db33() {
 // Checksum 0x5baff560, Offset: 0x3d18
 // Size: 0x3c
 function private function_4b206a3b(entity) {
-    entity clientfield::set("" + #"hash_2eec8fc21495a18c", 0);
+    entity clientfield::set("" + #"avogadro_health_fx", 0);
 }
 
 // Namespace zm_ai_avogadro/zm_ai_avogadro

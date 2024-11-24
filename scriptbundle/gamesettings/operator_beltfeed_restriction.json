@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "operator_beltfeed_restriction",
-    "displayname": "#hash_5b241d3d4fdd92e5",
+    "displayname": "#weapon/uber_beltfed",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

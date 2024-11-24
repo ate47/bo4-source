@@ -1056,7 +1056,7 @@ function function_356caede(team) {
     height = getdvarint(#"hash_48068f92d21e2a64", 15);
     foreach (player in players) {
         if (player can_revive(self, 1, height)) {
-            self.revivetrigger setrevivehintstring(#"hash_a9213d7fcad1656", team);
+            self.revivetrigger setrevivehintstring(#"warzone/button_finish", team);
             break;
         }
     }
@@ -1198,7 +1198,7 @@ function function_55f6978f(team) {
     players = getplayers(team, self.revivetrigger.origin, self.revivetrigger.radius);
     foreach (player in players) {
         if (player can_revive(self, 1)) {
-            self.revivetrigger setrevivehintstring(#"hash_6ba778165639acc4", team);
+            self.revivetrigger setrevivehintstring(#"warzone/button_revive", team);
             break;
         }
     }

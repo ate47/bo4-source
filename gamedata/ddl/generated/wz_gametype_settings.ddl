@@ -287,7 +287,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -337,7 +337,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -1070,7 +1070,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -1120,7 +1120,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -1853,7 +1853,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -1903,7 +1903,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -2634,7 +2634,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -2683,7 +2683,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -3412,7 +3412,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -3461,7 +3461,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -4190,7 +4190,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -4239,7 +4239,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -4968,7 +4968,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -5017,7 +5017,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -5745,7 +5745,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -5794,7 +5794,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -6516,7 +6516,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -6565,7 +6565,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -7287,7 +7287,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -7336,7 +7336,7 @@ struct gametypesettings {
     bit hash_418adedc5cf0a538;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -8056,7 +8056,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -8104,7 +8104,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -8825,7 +8825,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -8873,7 +8873,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -9593,7 +9593,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -9641,7 +9641,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -10360,7 +10360,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -10408,7 +10408,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -11126,7 +11126,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -11174,7 +11174,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -11889,7 +11889,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -11937,7 +11937,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -12649,7 +12649,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -12697,7 +12697,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -13409,7 +13409,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -13457,7 +13457,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -14168,7 +14168,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -14216,7 +14216,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -14926,7 +14926,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -14974,7 +14974,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -15683,7 +15683,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -15731,7 +15731,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -16439,7 +16439,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -16486,7 +16486,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -17194,7 +17194,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -17241,7 +17241,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -17948,7 +17948,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -17995,7 +17995,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -18699,7 +18699,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -18746,7 +18746,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -19448,7 +19448,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -19495,7 +19495,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -20198,7 +20198,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -20245,7 +20245,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -20948,7 +20948,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -20995,7 +20995,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -21697,7 +21697,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -21744,7 +21744,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -22445,7 +22445,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -22492,7 +22492,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -23191,7 +23191,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -23237,7 +23237,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -23936,7 +23936,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -23981,7 +23981,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -24679,7 +24679,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -24724,7 +24724,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -25421,7 +25421,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -25466,7 +25466,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -26162,7 +26162,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -26207,7 +26207,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -26902,7 +26902,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -26947,7 +26947,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -27641,7 +27641,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablewallbuyasylum;
     bit wzenablerampage;
     bit wzenablerampart;
@@ -27686,7 +27686,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -28378,7 +28378,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -28421,7 +28421,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -29108,7 +29108,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -29151,7 +29151,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -29837,7 +29837,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -29880,7 +29880,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -30562,7 +30562,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -30605,7 +30605,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -31286,7 +31286,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -31329,7 +31329,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -32009,7 +32009,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -32052,7 +32052,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -32731,7 +32731,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -32774,7 +32774,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -33453,7 +33453,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -33496,7 +33496,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -34172,7 +34172,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -34215,7 +34215,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -34891,7 +34891,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -34934,7 +34934,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -35609,7 +35609,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -35652,7 +35652,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -36326,7 +36326,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -36369,7 +36369,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -37043,7 +37043,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -37086,7 +37086,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -37759,7 +37759,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -37801,7 +37801,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -38474,7 +38474,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -38516,7 +38516,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -39186,7 +39186,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -39227,7 +39227,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -39895,7 +39895,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -39936,7 +39936,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -40603,7 +40603,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -40644,7 +40644,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -41311,7 +41311,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -41352,7 +41352,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -42018,7 +42018,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -42059,7 +42059,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -42725,7 +42725,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -42766,7 +42766,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -43431,7 +43431,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -43472,7 +43472,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -44135,7 +44135,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -44176,7 +44176,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -44839,7 +44839,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -44880,7 +44880,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -45542,7 +45542,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -45583,7 +45583,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -46245,7 +46245,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -46286,7 +46286,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -46945,7 +46945,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -46986,7 +46986,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -47643,7 +47643,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -47684,7 +47684,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -48341,7 +48341,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -48382,7 +48382,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -49039,7 +49039,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -49080,7 +49080,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -49736,7 +49736,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -49777,7 +49777,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -50427,7 +50427,7 @@ struct gametypesettings {
     bit wzenablecordite;
     bit hash_78e459ad87509a46;
     bit wzenablelv2armor;
-    bit hash_573e2e0af06e90a5;
+    bit wzenablegoldenspork;
     bit wzenablerampage;
     bit wzenablerampart;
     bit deathcirclerespawn;
@@ -50468,7 +50468,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -51156,7 +51156,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -51843,7 +51843,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -52529,7 +52529,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -53214,7 +53214,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -53899,7 +53899,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -54582,7 +54582,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -55264,7 +55264,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -55946,7 +55946,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -56626,7 +56626,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -57303,7 +57303,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -57978,7 +57978,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -58653,7 +58653,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -59328,7 +59328,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -60002,7 +60002,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -60675,7 +60675,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -61347,7 +61347,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -62016,7 +62016,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -62685,7 +62685,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;
@@ -63353,7 +63353,7 @@ struct gametypesettings {
     bit hash_62665aebde32c8ae;
     bit hash_75370c9c920502fc;
     bit hash_18c053cae82c1167;
-    bit hash_5a53f3b3ea6cb7be;
+    bit wzenableblackjackstash;
     bit hash_6cf5f53d1fbb1066;
     bit hash_1d4c395693ce04fe;
     bit wzenableslaybell;

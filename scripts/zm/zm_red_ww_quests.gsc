@@ -2239,7 +2239,7 @@ function function_86780a1e() {
 // Checksum 0xb50fe956, Offset: 0xc378
 // Size: 0x3a4
 function function_79a8a785(var_542837e6, e_player) {
-    e_player endon(#"disconnect", #"hash_3a05c7c89bb72260");
+    e_player endon(#"disconnect", #"debug_flame_taken");
     var_542837e6 endon(#"hash_2b524e51784167cc");
     while (true) {
         if (var_542837e6 flag::get("light_source_brazier_lit")) {
@@ -4842,7 +4842,7 @@ function function_8d47bf8(e_player) {
         var_6041471b = struct::get_array("<dev string:x13a>", "<dev string:x9b>");
         var_6041471b[0] flag::clear("<dev string:x16e>");
         var_6041471b[0].var_e5c25ff9 clientfield::set("<dev string:x189>" + #"hash_5faf31a2c4d4f4c6", 0);
-        var_6041471b[0] notify(#"hash_3a05c7c89bb72260");
+        var_6041471b[0] notify(#"debug_flame_taken");
         a_players[0] clientfield::set("<dev string:x189>" + #"hash_e683dccc6a8e152", 1);
         s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<dev string:x189>" + #"hash_e683dccc6a8e152");
         s_quest thread light_energy_carry(a_players[0]);
@@ -4869,7 +4869,7 @@ function function_8d47bf8(e_player) {
         if (isdefined(var_6041471b[0].var_e5c25ff9)) {
             var_6041471b[0].var_e5c25ff9 clientfield::set("<dev string:x189>" + #"hash_5faf31a2c4d4f4c6", 0);
         }
-        var_6041471b[0] notify(#"hash_3a05c7c89bb72260");
+        var_6041471b[0] notify(#"debug_flame_taken");
         a_players[0] thread light_countdown(23);
         a_players[0] clientfield::set("<dev string:x189>" + #"hash_e683dccc6a8e152", 1);
         s_quest thread function_9aa74e4(var_6041471b[0], a_players[0], "<dev string:x189>" + #"hash_e683dccc6a8e152");

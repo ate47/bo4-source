@@ -7,7 +7,7 @@
     "var_dfed6968": "3",
     "type": "gamesettings",
     "name": "zm_friendly_fire_type",
-    "displayname": "#hash_51d585e182917910",
+    "displayname": "#menu/friendlyfire",
     "var_684ccd4c": "#menu/shared",
     "label1": "#menu/disabled",
     "var_71b6e020": "#mpui/reflect",
@@ -15,7 +15,7 @@
     "var_9de86f42": 4,
     "var_8319ab81": "#hash_2ea1d3dad36ef98c",
     "var_997e5846": "#hash_1e57780c9021d2e6",
-    "var_4c593dfd": "#hash_106a321cf38c560",
-    "var_35fb1141": "#hash_106a321cf38c560",
+    "var_4c593dfd": "#menu/friendlyfire_hint",
+    "var_35fb1141": "#menu/friendlyfire_hint",
     "setting": "zmFriendlyFireType"
 }

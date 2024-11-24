@@ -1,7 +1,7 @@
 {
     "name": "#eq_localheal_mp",
     "baseWeapon": "#eq_localheal",
-    "displayname": "#hash_2ec8042138d1e89c",
+    "displayname": "#weapon/local_heal",
     "sessionMode": "multiplayer",
     "itemIndex": 104,
     "dualWieldWeaponIndex": 0,

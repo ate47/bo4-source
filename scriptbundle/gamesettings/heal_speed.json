@@ -8,7 +8,7 @@
     "type": "gamesettings",
     "label": "#menu/normal",
     "name": "heal_speed",
-    "displayname": "#hash_557baa96c8c3a909",
+    "displayname": "#menu/heal_speed",
     "var_684ccd4c": "#menu/instant",
     "label1": "#menu/slow",
     "var_71b6e020": "#menu/fast",

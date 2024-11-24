@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_crush",
-    "displayname": "#hash_407564ab1150d1dc",
+    "displayname": "#ui/mod_crush",
     "icon": "#ui_icon_meansofdeath_crushed",
     "iconlarge": "#ui_icon_meansofdeath_crushed_xl"
 }

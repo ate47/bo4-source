@@ -9,7 +9,7 @@
     "type": "gamesettings",
     "label": "#menu/x_zones",
     "name": "zone_count",
-    "displayname": "#hash_276d6500aad8fb77",
+    "displayname": "#menu/multi_zone",
     "label1": "#menu/1_zone",
     "var_9de86f42": 5,
     "setting": "zoneCount"

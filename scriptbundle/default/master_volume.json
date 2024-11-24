@@ -7,7 +7,7 @@
     "var_43a952c1": 0.1,
     "maxvalue": 1,
     "name": "master_volume",
-    "displayname": "#hash_52c400dad31609c0",
+    "displayname": "#menu/master_volume",
     "var_d6897f56": 1,
     "var_66faec87": 1,
     "statname": "snd_menu_master",

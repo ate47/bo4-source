@@ -987,7 +987,7 @@ function bombplanted(destroyedobj, player) {
         zone.waypoint gameobjects::disable_object();
     }
     setgameendtime(0);
-    if (isdefined(level.var_81536c1d) && level.var_81536c1d) {
+    if (isdefined(level.roundending) && level.roundending) {
         return;
     }
     wait 3;
@@ -1018,7 +1018,7 @@ function bombdefused(defusedobject, player) {
     player playbombdefuse();
     level notify(#"bomb_defused");
     thread globallogic_audio::set_music_on_team("silent");
-    if (isdefined(level.var_81536c1d) && level.var_81536c1d) {
+    if (isdefined(level.roundending) && level.roundending) {
         return;
     }
     wait 1.5;

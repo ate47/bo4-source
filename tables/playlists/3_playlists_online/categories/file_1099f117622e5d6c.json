@@ -99,7 +99,7 @@
                 {
                     "map": "#zm_zodt8",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_2a4c013991812fa",
+                    "gametype": "#gametype_zm_ztutorial",
                     "weight": 1,
                     "isFree": false
                 }
@@ -198,7 +198,7 @@
                 {
                     "map": "#zm_zodt8",
                     "mapPlatformMask": 7,
-                    "gametype": "#hash_2a4c013991812fa",
+                    "gametype": "#gametype_zm_ztutorial",
                     "weight": 1,
                     "isFree": false
                 }

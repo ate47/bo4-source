@@ -12,11 +12,11 @@
     "var_71ce0d1f": "4",
     "var_8d1ed54f": "9",
     "type": "gamesettings",
-    "label": "#hash_437e754ae41682ef",
+    "label": "#menu/x_rounds",
     "var_5a6dee5a": 1,
     "name": "round_limit",
     "displayname": "#hash_c3e6eece99d208c",
-    "label1": "#hash_52b38f6fb98e8982",
+    "label1": "#menu/unlimited",
     "label2": "#menu/1_round",
     "var_9de86f42": 10,
     "setting": "roundLimit"

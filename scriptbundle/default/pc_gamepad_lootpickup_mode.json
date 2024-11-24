@@ -1,7 +1,7 @@
 {
     "descriptionimage": "#hash_7ff90f0bea8ed361",
     "description": "#hash_67cdaadc390c26cc",
-    "var_60fcfffa": "#hash_22510ef8643293fd",
+    "var_60fcfffa": "#warzone/pickups_press",
     "var_10e01ad5": 1,
     "var_7d936886": 1,
     "var_86a04811": 1,
@@ -15,5 +15,5 @@
     "statname": "warzoneInstantPickups",
     "var_82c732a7": 1,
     "var_d4e288e": 1,
-    "var_b7401319": "#hash_51f219a3a9c8578f"
+    "var_b7401319": "#warzone/pickups_hold"
 }

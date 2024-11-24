@@ -19,10 +19,10 @@
     "var_9b3ef183": "10",
     "var_8d115528": "9.5",
     "type": "gamesettings",
-    "label": "#hash_22a7b89757514dfb",
+    "label": "#menu/x_seconds",
     "name": "plant_time",
-    "displayname": "#hash_a37b98bd85f83a8",
-    "label1": "#hash_7201503206ce2d27",
+    "displayname": "#menu/plant_time",
+    "label1": "#menu/1_second",
     "var_9de86f42": 17,
     "setting": "plantTime"
 }

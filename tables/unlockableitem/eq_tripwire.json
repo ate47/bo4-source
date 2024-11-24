@@ -1,9 +1,9 @@
 {
     "name": "",
     "nameHash": "#eq_tripwire",
-    "displayName": "#hash_50d8b3b5944ed86c",
+    "displayName": "#weapon/tripwire",
     "displayNameShort": "#hash_3046dd369d8a186d",
-    "description": "#hash_6f39a510077f8214",
+    "description": "#weapon/tripwire_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_equipment_eq_tripwire",

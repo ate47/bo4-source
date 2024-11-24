@@ -284,10 +284,10 @@ function private on_player_killed(params) {
                 case #"debug_off":
                     level.var_e066667d = 0;
                     break;
-                case #"hash_527b24640ca77051":
+                case #"debug_zone_on":
                     level.var_e12ea40c = 1;
                     break;
-                case #"hash_4e941d01806d00ed":
+                case #"debug_zone_off":
                     level.var_e12ea40c = 0;
                     break;
                 case #"instakill_on":

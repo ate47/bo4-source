@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "player_force_respawn",
-    "displayname": "#hash_63372429fcb6b315",
+    "displayname": "#menu/force_respawn",
     "var_9de86f42": 2,
     "setting": "playerForceRespawn",
     "var_82c732a7": 1

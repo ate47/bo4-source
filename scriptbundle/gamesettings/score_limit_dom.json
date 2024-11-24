@@ -21,10 +21,10 @@
     "var_3ec0b888": "2000",
     "var_246e83e4": "1500",
     "type": "gamesettings",
-    "label": "#hash_399145de9cf614d9",
+    "label": "#menu/x_points",
     "name": "score_limit_dom",
-    "displayname": "#hash_164d8128eb1e8207",
-    "label1": "#hash_52b38f6fb98e8982",
+    "displayname": "#menu/score_limit",
+    "label1": "#menu/unlimited",
     "var_9de86f42": 19,
     "setting": "scoreLimit"
 }

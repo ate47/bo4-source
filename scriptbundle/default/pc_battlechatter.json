@@ -7,7 +7,7 @@
     "var_86a04811": 1,
     "var_43a952c1": 0.1,
     "name": "pc_battlechatter",
-    "displayname": "#hash_51e3f9f7905c3003",
+    "displayname": "#menu/mp_dialog",
     "decimalplace": 0.01,
     "var_66faec87": 1,
     "statname": "snd_multiplayer_character_voice",

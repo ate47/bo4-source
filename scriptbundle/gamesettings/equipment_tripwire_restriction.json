@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "equipment_tripwire_restriction",
-    "displayname": "#hash_50d8b3b5944ed86c",
+    "displayname": "#weapon/tripwire",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

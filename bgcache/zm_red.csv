@@ -1,5 +1,5 @@
 type,name,ptr
-vehicle,hash_cc0da768150d81,294cf11ebe8
+vehicle,misc_camera,294cf11ebe8
 model,p8_fxp_fluid_droplet_blood_hirez_charon,294cb7880a8
 model,p8_fxanim_zm_red_ww_shell_mound_dks_mod,294cb80c318
 model,hash_3dc948aa9159b3,294cba30e68
@@ -1099,7 +1099,7 @@ rumble,hash_7549b81fb3f26c47,294cf2bc938
 rumble,zm_red_pegasus_clear_rumble,294cf2bc278
 rumble,hash_78384ae5c2a95e85,294cf2bc620
 rumble,reload_large,294cf2bbe40
-shellshock,hash_4c7b5c53d134927,294cf34a800
+shellshock,shellshock_blur,294cf34a800
 shellshock,hash_1f0b5b7bc16ff850,294cf34aa40
 shellshock,hash_2b52b9a74014da20,294cf349a80
 shellshock,shellshock_blur_pc,294cf34a980
@@ -3884,7 +3884,7 @@ string,hash_e6b6ba489f41f01,0
 string,hash_eb276333b85f293,0
 string,hash_ee567911dd1ce83,0
 string,hash_f3011ec9092dca2,0
-string,hash_f5422dffabdf8f3,0
+string,zombie/item_meat,0
 string,hash_101271d2fdd13f6c,0
 string,mpui/vzoom,0
 string,hash_106d425e41e8c240,0

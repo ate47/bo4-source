@@ -1,9 +1,9 @@
 {
     "name": "",
     "nameHash": "#gadget_spawnbeacon",
-    "displayName": "#hash_1633ce92cad338fd",
+    "displayName": "#weapon/spawnbeacon",
     "displayNameShort": "#",
-    "description": "#hash_6dfcb7fcac988147",
+    "description": "#weapon/spawnbeacon_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_equipment_gadget_spawnbeacon",

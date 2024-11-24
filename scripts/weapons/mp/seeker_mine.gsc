@@ -51,9 +51,9 @@ function __init__() {
     var_e37678fe = getweapon("seeker_mine_arc");
     bundle = getscriptbundle("seeker_mine_arc_settings");
     arc::init_arc(var_e37678fe, bundle);
-    level.var_a7010207 = getweapon(#"eq_seeker_mine");
-    if (isdefined(level.var_a7010207.customsettings)) {
-        level.var_4b3541d4 = getscriptbundle(level.var_a7010207.customsettings);
+    level.seekermineweapon = getweapon(#"eq_seeker_mine");
+    if (isdefined(level.seekermineweapon.customsettings)) {
+        level.var_4b3541d4 = getscriptbundle(level.seekermineweapon.customsettings);
         return;
     }
     level.var_4b3541d4 = getscriptbundle("seeker_mine_custom_settings");

@@ -109,7 +109,7 @@ function autoexec function_45a212c0() {
     if (isdefined(getgametypesetting(#"wzenablecontrabandstash")) && getgametypesetting(#"wzenablecontrabandstash")) {
         wz_common_fixup::item_replacer(var_b5014996, var_f8a4c541, #"blackjack_ammo_stash_parent_placeholder", #"blackjack_ammo_stash_parent_guns");
     }
-    if (isdefined(getgametypesetting(#"hash_5a53f3b3ea6cb7be")) && getgametypesetting(#"hash_5a53f3b3ea6cb7be")) {
+    if (isdefined(getgametypesetting(#"wzenableblackjackstash")) && getgametypesetting(#"wzenableblackjackstash")) {
     }
     if (!(isdefined(getgametypesetting(#"wzenableoperatorweapons")) && getgametypesetting(#"wzenableoperatorweapons"))) {
         wz_common_fixup::item_remover(var_a12b4736, var_87d0eef8, #"ar_fastfire_t8_operator_item");

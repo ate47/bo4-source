@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "decay_progress",
-    "displayname": "#hash_547a4540faf55ddb",
+    "displayname": "#menu/decay_progress",
     "var_9de86f42": 2,
     "setting": "decayProgress",
     "var_82c732a7": 1

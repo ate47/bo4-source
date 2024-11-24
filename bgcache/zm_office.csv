@@ -540,7 +540,7 @@ weapon,hero_gravityspikes_t8_lv2_zm,2305edfa4d8
 weapon,zitem_riotshield_part_2_zm,2305edee508
 weapon,hash_22d1e4b32d842ae4,2305edc9048
 weapon,hash_23139323ee602453,2305edcfad8
-weapon,hash_25c3b1ea7a485f69,2305edbd078
+weapon,ray_gun_mk2_zm,2305edbd078
 weapon,zhield_lh_zm,2305edda558
 weapon,hash_2c32102272f9d449,2305eda50d8
 weapon,hero_flamethrower_t8_lv2_zm,2305ed9e648
@@ -635,10 +635,10 @@ rumble,zm_shield_damage,230604fc500
 rumble,hash_71fceb6e20f9fbdc,230604fbcd8
 shellshock,hash_640e615236430645,2306058a740
 shellshock,explosion_shock,2306058a440
-statuseffect,hash_160f88dec9e68a1,23060590930
+statuseffect,dot_purifier,23060590930
 statuseffect,hash_19533caf858a9f3b,230605906e0
 statuseffect,hash_2608bf886a137e8e,2306058c870
-statuseffect,hash_57c6ca32810425f9,23060590240
+statuseffect,wound_purifier,23060590240
 xcam,hash_7947590a0364c26,230605ad180
 xcam,hash_9c4ea39463d14ac,230605ac340
 xcam,hash_db5c34f7d9e1861,230605a9940
@@ -2762,7 +2762,7 @@ string,hash_e74ddeb9095e2d0,0
 string,hash_ed01e635dadf8cb,0
 string,hash_ee567911dd1ce83,0
 string,hash_f3011ec9092dca2,0
-string,hash_f5422dffabdf8f3,0
+string,zombie/item_meat,0
 string,hash_100d349fbdcacb2b,0
 string,hash_1014fb82e4e32c24,0
 string,mpui/vzoom,0
@@ -3021,7 +3021,7 @@ string,zmweapon/ray_gun_mk2_upgraded,0
 string,hash_5abca820cfab2cd8,0
 string,hash_5acae5f224c146a9,0
 string,hash_5afd03a588cd1c62,0
-string,hash_5b4330351c2e1f64,0
+string,zombie/grab_riotshield,0
 string,hash_5b7536f294f156a6,0
 string,hash_5c28147c226eb600,0
 string,hash_5c7aea3fdc5a464e,0
@@ -3073,7 +3073,7 @@ string,hash_66d33b296eb64fbc,0
 string,hash_672c8450c778c664,0
 string,mpui/stalker2,0
 string,hash_67ddc0f0c16c1216,0
-string,hash_687c0230505673f9,0
+string,zombie/craft_riot,0
 string,hash_6889b45faad48255,0
 string,hash_688a1b241ffb922e,0
 string,hash_68aa6bf5db640dde,0
@@ -3557,7 +3557,7 @@ soundalias,hash_9b946d695a3c920,0
 soundalias,hash_9bd77354a50f6df,0
 soundalias,hash_9c25e71ff13ac77,0
 soundalias,hash_9cac787a23f5aa9,0
-soundalias,hash_9cb7ad5d462e8ea,0
+soundalias,amb_owl,0
 soundalias,hash_9d8700b30f47c05,0
 soundalias,hash_9e1632ea03cebb1,0
 soundalias,hash_9e1642ea03ced64,0
@@ -3901,7 +3901,7 @@ soundalias,hash_14ec6e3c9eb7ed07,0
 soundalias,hash_14ec6f3c9eb7eeba,0
 soundalias,hash_14ec703c9eb7f06d,0
 soundalias,hash_14f231da01619a7f,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_150b11a569fc9e03,0
 soundalias,hash_15269b1a0691d443,0
 soundalias,hash_1530a7e6184b9b2e,0
@@ -5101,7 +5101,7 @@ soundalias,hash_3a9c54d77cfa8067,0
 soundalias,hash_3a9c55d77cfa821a,0
 soundalias,hash_3a9c56d77cfa83cd,0
 soundalias,hash_3a9e9e1522bd98bf,0
-soundalias,hash_3ab81bd5a7476ff7,0
+soundalias,amb_fax,0
 soundalias,hash_3abe63d3d32acaa4,0
 soundalias,hash_3ad868775d1364b0,0
 soundalias,hash_3ad86c775d136b7c,0

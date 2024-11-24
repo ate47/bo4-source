@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "equipment_enabled",
-    "displayname": "#hash_599d6c82f99c6547",
+    "displayname": "#menu/equipment_enabled",
     "var_9de86f42": 2,
     "setting": "specialistEquipmentEnabled_allies_1",
     "var_82c732a7": 1

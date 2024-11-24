@@ -50,14 +50,14 @@ function watchforgravityspikeexplosion() {
         return;
     }
     weapon_proximity = getweapon(#"hero_gravityspikes");
-    var_55ee3ee6 = getweapon(#"eq_gravityslam");
+    weapon_gravityslam = getweapon(#"eq_gravityslam");
     while (true) {
         waitresult = level waittill(#"explode");
         weapon = waitresult.weapon;
         owner_cent = waitresult.owner_cent;
         position = waitresult.position;
         localclientnum = waitresult.localclientnum;
-        if (weapon.rootweapon == getweapon(#"none") || weapon.rootweapon != weapon_proximity && weapon.rootweapon != var_55ee3ee6) {
+        if (weapon.rootweapon == getweapon(#"none") || weapon.rootweapon != weapon_proximity && weapon.rootweapon != weapon_gravityslam) {
             continue;
         }
         if (isdefined(owner_cent) && owner_cent function_21c0fa55() && level.dirt_enable_gravity_spikes) {

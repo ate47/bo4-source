@@ -102,9 +102,9 @@ function init_clientfields() {
 // Checksum 0x5ba6de63, Offset: 0xbb0
 // Size: 0x12c
 function init_steps() {
-    zm_sq::register(#"zm_mansion_ww", #"step_1", #"hash_5c5b3a59a850616e", &function_5c5680f5, &function_9eb08be3);
-    zm_sq::register(#"zm_mansion_ww", #"step_2", #"hash_5c5b3959a8505fbb", &function_df7c8713, &function_1e450b1a);
-    zm_sq::register(#"zm_mansion_ww", #"step_3", #"hash_5c5b3859a8505e08", &function_f242ac9f, &function_43f5567a, 1);
+    zm_sq::register(#"zm_mansion_ww", #"step_1", #"ww_step_1", &function_5c5680f5, &function_9eb08be3);
+    zm_sq::register(#"zm_mansion_ww", #"step_2", #"ww_step_2", &function_df7c8713, &function_1e450b1a);
+    zm_sq::register(#"zm_mansion_ww", #"step_3", #"ww_step_3", &function_f242ac9f, &function_43f5567a, 1);
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww

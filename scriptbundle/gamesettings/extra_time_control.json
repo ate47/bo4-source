@@ -13,12 +13,12 @@
     "var_9b4871a2": "5",
     "var_8d1ed54f": "4.5",
     "type": "gamesettings",
-    "label": "#hash_bcb8739fdb0870b",
+    "label": "#menu/x_minutes",
     "name": "extra_time_control",
-    "displayname": "#hash_17a635e4999d0205",
+    "displayname": "#menu/extra_time",
     "label1": "#menu/disabled",
-    "var_71b6e020": "#hash_666d89ef0248d1ef",
-    "label2": "#hash_5fe7998279b8aca6",
+    "var_71b6e020": "#menu/1_minute",
+    "label2": "#menu/30_seconds",
     "var_9de86f42": 11,
     "setting": "extraTime"
 }

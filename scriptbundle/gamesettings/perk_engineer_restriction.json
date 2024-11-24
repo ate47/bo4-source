@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "perk_engineer_restriction",
-    "displayname": "#hash_544a8f347fd6ff8f",
+    "displayname": "#menu/talent_engineer",
     "label1": "#menu/enabled",
     "label2": "#menu/disabled",
     "var_9de86f42": 2,

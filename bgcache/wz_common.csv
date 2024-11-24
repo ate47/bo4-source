@@ -4866,7 +4866,7 @@ gesturetable,gestable_command_thanks,2a888e9e088
 gesturetable,hash_472d6af900d8e082,2a888e9e498
 gesturetable,hash_4adea50b34ecc0e6,2a888e9e840
 gesturetable,hash_517f3998a911fe73,2a888e9eb80
-gesturetable,hash_51967216e2c913cb,2a888e9dba8
+gesturetable,gestable_blinded,2a888e9dba8
 gesturetable,hash_571976b340bb0dea,2a888e9dc10
 gesturetable,gestable_command_hello,2a888e9e500
 gesturetable,hash_5c7b37fc29441fbc,2a888e9e0f0
@@ -4896,11 +4896,11 @@ rumble,smg_fire,2a88a79a6a0
 rumble,hash_1b194e26c256036c,2a88a79c668
 rumble,grapple_reel,2a88a79a6e8
 rumble,hash_217a158aac0f6479,2a88a79a850
-rumble,hash_246e9e7e02218662,2a88a79cce0
+rumble,rcbomb_explosion,2a88a79cce0
 rumble,hash_25737886a28a3a7b,2a88a79a970
 rumble,bow_fire,2a88a79a9b8
 rumble,hash_27471bde81e12116,2a88a79aa90
-rumble,hash_274946fc88d1749d,2a88a79aad8
+rumble,barrel_explosion,2a88a79aad8
 rumble,hash_29dda3d6a80b7a2c,2a88a79c1e8
 rumble,reload_medium,2a88a79abb0
 rumble,shotgun_fire,2a88a79abf8
@@ -4914,11 +4914,11 @@ rumble,minigun_rumble,2a88a79cc08
 rumble,hash_3a5bdaaa0b187aa9,2a88a79b108
 rumble,lightninggun_fire,2a88a79c0c8
 rumble,microwave_rumble_med,2a88a79ce00
-rumble,hash_3dd1619d015e95de,2a88a79b198
+rumble,bow_draw,2a88a79b198
 rumble,hash_40192bc096b73db2,2a88a79cc50
 rumble,grapple_miss,2a88a79b270
 rumble,pistol_fire,2a88a79b300
-rumble,hash_4620272826f8618e,2a88a79cd70
+rumble,lightninggun_charge,2a88a79cd70
 rumble,microwave_rumble_low,2a88a79cdb8
 rumble,damage_death_circle,2a88a79c6f8
 rumble,microwave_rumble_high,2a88a79cf20
@@ -4944,7 +4944,7 @@ rumble,hash_7c5e29ac97ee5c63,2a88a79bf18
 rumble,reload_small,2a88a79bf60
 rumble,hash_7dd6fef6710af3ba,2a88a79bff0
 rumble,hash_7fbdfa5ac7cedfc9,2a88a79c038
-shellshock,hash_4c7b5c53d134927,2a88a82a800
+shellshock,shellshock_blur,2a88a82a800
 shellshock,hash_2b52b9a74014da20,2a88a829a80
 shellshock,status_effect_slowed_concertina_wire_pc,2a88a82abc0
 shellshock,explosion_shock,2a88a82a440
@@ -4962,10 +4962,10 @@ statuseffect,microwave_dot,2a88a831020
 statuseffect,hash_40dce028641f17d7,2a88a832050
 statuseffect,blind_swat_grenade,2a88a82daf0
 statuseffect,deaf_tinnitus,2a88a830490
-statuseffect,hash_57c6ca32810425f9,2a88a830240
+statuseffect,wound_purifier,2a88a830240
 statuseffect,shock_rifle_shock,2a88a830dd0
 statuseffect,hash_69ef83683f1291d8,2a88a832990
-statuseffect,hash_7f600626f01df157,2a88a832e30
+statuseffect,dot_purifier_wz,2a88a832e30
 xcam,hash_1c967c46984c34f,2a88a83df40
 xcam,hash_332f22c38d9ea7a,2a88a83e000
 xcam,hash_40f5f7f4e5c7096,2a88a83e0c0
@@ -11851,8 +11851,8 @@ menu,t7hud_mp,0
 material,compass_supply_drop_black,2a887fdb878
 material,compass_supply_drop_white,2a887fd01a8
 material,headicon_dead,2a88752fb38
-material,hash_1914ee11d4e1259d,2a887f94010
-material,hash_1949768db78be418,2a887e67cf8
+material,hud_ks_minigun,2a887f94010
+material,hud_ks_m32,2a887e67cf8
 material,t7_hud_ks_wpn_turret_drop,2a887d9fdc0
 material,waypoint_recon_artillery_strike,2a887a7cee8
 material,mpflag_spectator,2a887d11cc8
@@ -11935,7 +11935,7 @@ string,weapon/ar_fastfire_t8_operator,0
 string,wz/medical_stash,0
 string,weapon/ar_galil_t8,0
 string,hash_14b9981c6e3d2f76,0
-string,hash_1501cd3959ac6c7c,0
+string,weapon/gadget_cleanse,0
 string,weapon/ar_peacekeeper_t8,0
 string,hash_15b50559752dd744,0
 string,hash_15cf0d46af70291b,0
@@ -11958,7 +11958,7 @@ string,hash_193c1c010f81e229,0
 string,weapon/willy_pete,0
 string,hash_1960a6223dd21d1a,0
 string,hash_19ab29890f4ebb91,0
-string,hash_19b0b2bf6f91eb63,0
+string,warzone/spknifeork_t8,0
 string,hash_1aed0f38cbd8815a,0
 string,zmweapon/homunculus,0
 string,hash_1ba34a96495cd9ce,0
@@ -12050,7 +12050,7 @@ string,weapon/wraith_fire,0
 string,hash_2cab672fd372f942,0
 string,weapon/launcher_standard_t8,0
 string,hash_2d003d6a1240093c,0
-string,hash_2d272d013fc30895,0
+string,weapon/grapple,0
 string,hash_2d85a60f366822d1,0
 string,hash_2d93e9364b720411,0
 string,hash_2e849d595fc7e02b,0
@@ -12127,7 +12127,7 @@ string,hash_3e968f73a7d7e44e,0
 string,mpui/gl_desc,0
 string,hash_3ee20f103a454178,0
 string,hash_3ef744e8fe8025ee,0
-string,hash_3f07f486b081b54f,0
+string,zmweapon/impaler,0
 string,mpui/is_desc,0
 string,weapon/bowie,0
 string,killstreak/dart,0
@@ -12159,10 +12159,10 @@ string,hash_453ecbd9693dd1d3,0
 string,weapon/sniper_fastrechamber_t8,0
 string,hash_458fcfd4caae9ae2,0
 string,hash_45d36cd4b3bb6578,0
-string,hash_45e61d7aa4721759,0
+string,weapon/water_balloon,0
 string,mpui/holo,0
 string,hash_464fb4d63791df24,0
-string,hash_46bd2e256bd93747,0
+string,weapon/decoy_grenade,0
 string,weapon/shotgun_precision_t8,0
 string,weapon/smg_vmp_t8,0
 string,weapon/melee_amuletfist_t8,0
@@ -12210,7 +12210,7 @@ string,hash_506621193b404166,0
 string,hash_5071aa2f1fc20b4c,0
 string,hash_5082acdba9528232,0
 string,hash_50acb81dbe07fbfe,0
-string,hash_50d8b3b5944ed86c,0
+string,weapon/tripwire,0
 string,hash_51252660f83e3872,0
 string,mpui/none,0
 string,hash_52068defb1e33ac2,0
@@ -12281,7 +12281,7 @@ string,hash_602e0ff43b44d408,0
 string,weapon/ar_stealth_t8_operator,0
 string,hash_6063cd6ae0f6ce28,0
 string,hash_607993fb651c3014,0
-string,hash_608942d662beb5ae,0
+string,zmweapon/spork_knife,0
 string,hash_60a2e99cf0e191e1,0
 string,hash_60ad70a7e7b392a0,0
 string,hash_60aeeec1490ce332,0
@@ -12404,7 +12404,7 @@ string,hash_78ae51044520d606,0
 string,hash_78b448d799b46550,0
 string,hash_78bf3a61cf52e257,0
 string,hash_78d753143b405d88,0
-string,hash_7a37b2fcb855abe4,0
+string,weapon/ultimate_turret,0
 string,hash_7a4289cde4df7d84,0
 string,hash_7a55ec7348fc5d58,0
 string,mpui/dw_desc,0
@@ -12417,7 +12417,7 @@ string,hash_7ba5cee192e14a3c,0
 string,hash_7bbe615a9a441e5f,0
 string,weapon/smg_folding_t8,0
 string,hash_7bf8bcf55e2bd26e,0
-string,hash_7c5c4488b8ad747e,0
+string,warzone/collapse_grenade,0
 string,mpui/mms,0
 string,hash_7d3e69af1a992cec,0
 string,hash_7d4c19fb8173c5ee,0
@@ -12532,7 +12532,7 @@ objective,hash_c4e4d4888b0eab9,0
 objective,hash_10b60fe281bbfeca,0
 objective,faction_allies,0
 objective,headicon_dead,0
-objective,hash_1449033c574cc056,0
+objective,deployable_barrier,0
 objective,hash_14f53e0433721169,0
 objective,hash_15f6e3728e503f47,0
 objective,flag_taken,0
@@ -12624,7 +12624,7 @@ objective,hash_6c8e8f17eff83518,0
 objective,hash_6c8e9217eff83a31,0
 objective,hash_6cff9cefb99a67d1,0
 objective,hash_6d0ae20f80247e21,0
-objective,hash_6daf2187828671f8,0
+objective,infil_deposit,0
 objective,spawnbeacon_objective_disable,0
 objective,hash_6e2665f9ab62d5ba,0
 objective,exposed_hacker,0
@@ -13855,7 +13855,7 @@ soundalias,hash_7cd33e0a44c632c,0
 soundalias,hash_7cee4c56e2e0ea5,0
 soundalias,hash_7d43801bc1558ce,0
 soundalias,hash_7d90c9b76f2e4ad,0
-soundalias,hash_7d91a2256aaf0fe,0
+soundalias,prj_crack,0
 soundalias,hash_7d95228dbf920cc,0
 soundalias,hash_7db8b31961c060c,0
 soundalias,hash_7dc344072f1f6dc,0
@@ -15665,7 +15665,7 @@ soundalias,hash_14f231da01619a7f,0
 soundalias,hash_14f2d9b8e66e1a2d,0
 soundalias,hash_14f3b31842748b0f,0
 soundalias,hash_14f4844e8b0f0485,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_14f7574d2f374c17,0
 soundalias,hash_14f8a0a200f0f84d,0
 soundalias,hash_14f9710ec92b8019,0
@@ -18321,7 +18321,7 @@ soundalias,hash_285c51a3a53950b4,0
 soundalias,hash_28680d70a06aa40b,0
 soundalias,hash_2868238ba068155c,0
 soundalias,hash_2869196e4dba4911,0
-soundalias,hash_286f4dcd23e829ab,0
+soundalias,uin_purchase,0
 soundalias,hash_28716572df948812,0
 soundalias,hash_287197aa5217b0c2,0
 soundalias,hash_2871a79a8fa8e1c4,0
@@ -24824,7 +24824,7 @@ soundalias,hash_56fc6c07980fa89f,0
 soundalias,hash_56fd8181181d6789,0
 soundalias,hash_56fdf5ba0b375ad8,0
 soundalias,hash_56ff4dddbdb81433,0
-soundalias,hash_56ffa2dd01c7a407,0
+soundalias,cac_enter,0
 soundalias,hash_5700cbccfba9f054,0
 soundalias,hash_5702c7e78f9c51c0,0
 soundalias,hash_5704a9c21ba14bc9,0

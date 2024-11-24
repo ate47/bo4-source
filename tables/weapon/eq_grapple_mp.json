@@ -1,7 +1,7 @@
 {
     "name": "#eq_grapple_mp",
     "baseWeapon": "#eq_grapple",
-    "displayname": "#hash_2d272d013fc30895",
+    "displayname": "#weapon/grapple",
     "sessionMode": "multiplayer",
     "itemIndex": 87,
     "dualWieldWeaponIndex": 0,

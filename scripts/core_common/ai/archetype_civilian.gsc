@@ -80,10 +80,10 @@ function registerbehaviorscriptfunctions() {
 function private function_686ab596() {
     wait 5;
     while (true) {
-        var_dfd6386 = getdvarstring(#"hash_27ecb7addfd5db25", "");
+        debug_civ_mode = getdvarstring(#"debug_civ_mode", "");
         ais = getaiarchetypearray(#"civilian");
         foreach (ai in ais) {
-            switch (var_dfd6386) {
+            switch (debug_civ_mode) {
             case #"riot":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "riot");
                 ai setteam(#"team3");

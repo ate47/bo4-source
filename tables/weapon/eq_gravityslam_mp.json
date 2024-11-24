@@ -1,7 +1,7 @@
 {
     "name": "#eq_gravityslam_mp",
     "baseWeapon": "#eq_gravityslam",
-    "displayname": "#hash_7b7c34efa5954735",
+    "displayname": "#weapon/gravityslam",
     "sessionMode": "multiplayer",
     "itemIndex": 107,
     "dualWieldWeaponIndex": 0,

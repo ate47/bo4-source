@@ -34,7 +34,7 @@
     "label": "#menu/x_lives",
     "name": "team_num_lives",
     "displayname": "#hash_2fbdf16561a46aca",
-    "label1": "#hash_52b38f6fb98e8982",
+    "label1": "#menu/unlimited",
     "label2": "#menu/1_life",
     "var_9de86f42": 29,
     "setting": "teamNumLives"

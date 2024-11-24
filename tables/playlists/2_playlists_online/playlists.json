@@ -769,13 +769,13 @@
         },
         {
             "index": 78,
-            "name": "#hash_41162f83a371d70d",
+            "name": "#gametype_zm_zstandard",
             "description": "#",
             "mode": "#zstandard"
         },
         {
             "index": 79,
-            "name": "#hash_3f5ca727e8114fe5",
+            "name": "#gametype_zm_ztrials",
             "description": "#",
             "mode": "#ztrials"
         },
@@ -787,7 +787,7 @@
         },
         {
             "index": 81,
-            "name": "#hash_2a4c013991812fa",
+            "name": "#gametype_zm_ztutorial",
             "description": "#",
             "mode": "#ztutorial"
         },

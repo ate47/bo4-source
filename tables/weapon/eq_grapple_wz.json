@@ -1,7 +1,7 @@
 {
     "name": "#eq_grapple_wz",
     "baseWeapon": "#eq_grapple",
-    "displayname": "#hash_2d272d013fc30895",
+    "displayname": "#weapon/grapple",
     "sessionMode": "warzone",
     "itemIndex": 87,
     "dualWieldWeaponIndex": 0,

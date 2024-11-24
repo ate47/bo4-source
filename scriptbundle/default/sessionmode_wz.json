@@ -2,7 +2,7 @@
     "defaultgametype": "warzone_quad",
     "abbreviation": "wz",
     "name": "sessionmode_wz",
-    "selectdescription": "#hash_45b95a0b6dcb128b",
+    "selectdescription": "#menu/warzone_desc",
     "displayname": "#menu/warzone",
     "defaultmap": "wz_open_skyscrapers"
 }

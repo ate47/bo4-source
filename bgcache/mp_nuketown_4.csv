@@ -803,7 +803,7 @@ soundalias,vox_pa_generic_spawn_b_02,0
 soundalias,vox_pa_generic_spawn_b_03,0
 soundalias,vox_pa_generic_spawn_b_04,0
 soundalias,hash_1a2157137bd3288b,0
-soundalias,hash_1a5d88f8e2660141,0
+soundalias,exp_barrel,0
 soundalias,hash_1a6485b96677518d,0
 soundalias,hash_1c202bc98f3511c1,0
 soundalias,hash_1f8259f0bfc3e203,0
@@ -813,7 +813,7 @@ soundalias,hash_200e28bcd26bab77,0
 soundalias,hash_200e2ebcd26bb5a9,0
 soundalias,hash_208f0fa01c042df2,0
 soundalias,hash_2149db0c502305e3,0
-soundalias,hash_217562090a15ff8f,0
+soundalias,amb_radio,0
 soundalias,hash_221985ff9195445a,0
 soundalias,hash_2250c1fa4b3ba63b,0
 soundalias,hash_2292879155c54477,0

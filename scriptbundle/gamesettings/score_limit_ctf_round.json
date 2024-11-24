@@ -11,8 +11,8 @@
     "type": "gamesettings",
     "label": "#menu/x_flags",
     "name": "score_limit_ctf_round",
-    "displayname": "#hash_4201be29369b61fb",
-    "label1": "#hash_52b38f6fb98e8982",
+    "displayname": "#menu/capture_limit",
+    "label1": "#menu/unlimited",
     "label2": "#menu/1_flag",
     "var_9de86f42": 7,
     "setting": "scoreLimit"

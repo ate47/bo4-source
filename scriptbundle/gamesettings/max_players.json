@@ -15,7 +15,7 @@
     "type": "gamesettings",
     "label": "#menu/noloc",
     "name": "max_players",
-    "displayname": "#hash_5fdfb30cb2b8484a",
+    "displayname": "#menu/max_players",
     "var_9de86f42": 12,
     "setting": "maxPlayers"
 }

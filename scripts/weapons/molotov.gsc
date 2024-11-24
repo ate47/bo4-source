@@ -911,7 +911,7 @@ function resetfiredamage(entnum, time) {
 // Size: 0xb4
 function function_1493c734(origin, radius, color, alpha, time) {
     /#
-        debug_fire = getdvarint(#"hash_58042b6209e0c2a6", 0);
+        debug_fire = getdvarint(#"debug_molotov_fire", 0);
         if (debug_fire > 0) {
             if (debug_fire > 1) {
                 radius = int(radius / debug_fire);

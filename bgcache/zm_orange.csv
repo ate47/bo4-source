@@ -630,7 +630,7 @@ weapon,hero_gravityspikes_t8_lv2_zm,294cdcf3548
 weapon,zitem_riotshield_part_2_zm,294cdc2b868
 weapon,eq_nesting_doll_grenade_zm,294cdbdf998
 weapon,hash_22d1e4b32d842ae4,294cdc4cd38
-weapon,hash_25c3b1ea7a485f69,294cdbf7938
+weapon,ray_gun_mk2_zm,294cdbf7938
 weapon,zitem_orange_dynamite_bomb_part_3_zm,294cdbdb9a8
 weapon,zitem_orange_dynamite_bomb_part_1_zm,294cdb9cff8
 weapon,zhield_lh_zm,294cdc0b8e8
@@ -768,17 +768,17 @@ rumble,zm_shield_damage,294cf2bce48
 rumble,zm_orange_dynamite_bomb_explosion,294cf2bcc50
 rumble,dtp_rumble,294cf2bbc90
 rumble,hash_71fceb6e20f9fbdc,294cf2bbcd8
-shellshock,hash_4c7b5c53d134927,294cf34aa40
+shellshock,shellshock_blur,294cf34aa40
 shellshock,slowview,294cf34a740
 shellshock,electrocution,294cf34a800
 shellshock,explosion_shock,294cf34a440
 shellshock,shellshock_blur_pc,294cf34a980
-statuseffect,hash_160f88dec9e68a1,294cf351270
+statuseffect,dot_purifier,294cf351270
 statuseffect,zm_orange_outro,294cf350490
 statuseffect,hash_19533caf858a9f3b,294cf350930
 statuseffect,hash_2608bf886a137e8e,294cf34c870
-statuseffect,hash_3a1f530cdb5f75f4,294cf353770
-statuseffect,hash_57c6ca32810425f9,294cf350b80
+statuseffect,avogadro_shock_slowed,294cf353770
+statuseffect,wound_purifier,294cf350b80
 xcam,hash_9c4ea39463d14ac,294cf36ab40
 xcam,hash_db5c34f7d9e1861,294cf36ae40
 xcam,hash_16d2791a641b8f64,294cf36bd40
@@ -3673,7 +3673,7 @@ string,hash_5abca820cfab2cd8,0
 string,hash_5acae5f224c146a9,0
 string,hash_5ada8641cf6032ce,0
 string,hash_5afd03a588cd1c62,0
-string,hash_5b4330351c2e1f64,0
+string,zombie/grab_riotshield,0
 string,hash_5b7536f294f156a6,0
 string,hash_5c07441c7372a5f3,0
 string,hash_5c28147c226eb600,0
@@ -3733,7 +3733,7 @@ string,hash_6771074908d56993,0
 string,hash_67cb673a3dc7be00,0
 string,hash_682f7d4cd40349d6,0
 string,hash_6875903d42d6d8ba,0
-string,hash_687c0230505673f9,0
+string,zombie/craft_riot,0
 string,hash_688a1b241ffb922e,0
 string,hash_68aa6bf5db640dde,0
 string,hash_68d9874cbebdbca2,0
@@ -4051,7 +4051,7 @@ soundalias,hash_3a4f25a6a57eb90,0
 soundalias,hash_3a4f35a6a57ed43,0
 soundalias,hash_3a4f45a6a57eef6,0
 soundalias,hash_3a7f0b385439243,0
-soundalias,hash_3a92ca736e763fd,0
+soundalias,amb_campfire,0
 soundalias,hash_3b145cecff639a0,0
 soundalias,hash_3b146cecff63b53,0
 soundalias,hash_3b147cecff63d06,0
@@ -4700,7 +4700,7 @@ soundalias,hash_14e20a5a16521e8a,0
 soundalias,hash_14e20b5a1652203d,0
 soundalias,hash_14e5857838150fa7,0
 soundalias,hash_14f231da01619a7f,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_14f8a0a200f0f84d,0
 soundalias,hash_1501a17d9a1d46f4,0
 soundalias,hash_1501ac2c67353c70,0

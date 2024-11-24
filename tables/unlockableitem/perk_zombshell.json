@@ -1,9 +1,9 @@
 {
     "name": "perk_zombshell",
     "nameHash": "#perk_zombshell",
-    "displayName": "#hash_6b559ef33e6c2803",
+    "displayName": "#menu/zombshell",
     "displayNameShort": "#",
-    "description": "#hash_17e4dced1caf2e95",
+    "description": "#menu/zombshell_desc",
     "wzDescription": "#",
     "zmDescription": "#",
     "previewImage": "#ui_icon_perks_zombshell",

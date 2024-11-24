@@ -1,5 +1,5 @@
 type,name,ptr
-vehicle,hash_cc0da768150d81,2a88a592b88
+vehicle,misc_camera,2a88a592b88
 model,hash_2dafd6fb83616e,2a886d176c8
 model,c_t8_zmb_2ndclass_female_body3_g_blegsoff,2a886d738b8
 model,c_t8_zmb_3rdclass_male_body4_split_skin3,2a886c449a8
@@ -3831,7 +3831,7 @@ string,hash_e6b6ba489f41f01,0
 string,hash_eb05b70f6927e88,0
 string,hash_ee567911dd1ce83,0
 string,hash_f3011ec9092dca2,0
-string,hash_f5422dffabdf8f3,0
+string,zombie/item_meat,0
 string,hash_fc714290197baba,0
 string,mpui/vzoom,0
 string,hash_11416e3dffba8d50,0
@@ -3860,7 +3860,7 @@ string,hash_14651a427e1b9f98,0
 string,hash_14754dac7b0290c6,0
 string,hash_14941d3a753c4a6f,0
 string,hash_14b9981c6e3d2f76,0
-string,hash_15397900097c254e,0
+string,zombie/grab_shield,0
 string,hash_1544925c6fc2b561,0
 string,hash_15494c7927282ad6,0
 string,hash_15783325b3eeefd5,0
@@ -3980,7 +3980,7 @@ string,hash_334ff5daed081f31,0
 string,hash_33c5a3d6ed967788,0
 string,hash_33f013eacb53964c,0
 string,hash_3427b86de4fb527b,0
-string,hash_344916eb222ad1b6,0
+string,weapon/proximity_grenade,0
 string,hash_34b52b88e2ff0049,0
 string,zmweapon/ww_tricannon_fire_t8,0
 string,hash_34dfed25a796d563,0
@@ -4270,7 +4270,7 @@ string,hash_7a899f8fa9163c6e,0
 string,hash_7a93670a32eaa8cf,0
 string,hash_7ad135e043cefb4b,0
 string,hash_7afac73e4e0688d4,0
-string,hash_7afcbd7b37054026,0
+string,zombie/craft_shield,0
 string,hash_7b8e9ff889f16cb0,0
 string,hash_7bbe615a9a441e5f,0
 string,hash_7bf8bcf55e2bd26e,0
@@ -5285,7 +5285,7 @@ soundalias,hash_14d00fd983cca9da,0
 soundalias,hash_14d85c78380a3fa0,0
 soundalias,hash_14e5857838150fa7,0
 soundalias,hash_14f231da01619a7f,0
-soundalias,hash_14f53cf6790e140d,0
+soundalias,fly_scope_zoom,0
 soundalias,hash_15160ff706b23cba,0
 soundalias,hash_15188606315e38c8,0
 soundalias,hash_1518ac1a16817dad,0

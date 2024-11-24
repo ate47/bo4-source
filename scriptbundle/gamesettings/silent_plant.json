@@ -3,7 +3,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "silent_plant",
-    "displayname": "#hash_4ebd0d592cdbeee0",
+    "displayname": "#menu/silent_plant",
     "var_9de86f42": 2,
     "setting": "silentPlant",
     "var_82c732a7": 1

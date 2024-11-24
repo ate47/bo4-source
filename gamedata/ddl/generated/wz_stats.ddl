@@ -51,7 +51,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -66,7 +66,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[133];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -256,7 +256,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -450,7 +450,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -465,7 +465,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[133];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -655,7 +655,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -849,7 +849,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -864,7 +864,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[132];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -1054,7 +1054,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -1248,7 +1248,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -1263,7 +1263,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[132];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -1453,7 +1453,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -1647,7 +1647,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -1662,7 +1662,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[131];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -1852,7 +1852,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -2046,7 +2046,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -2061,7 +2061,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[129];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -2251,7 +2251,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -2445,7 +2445,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -2460,7 +2460,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[129];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -2650,7 +2650,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -2844,7 +2844,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -2859,7 +2859,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[127];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -3049,7 +3049,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -3243,7 +3243,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -3258,7 +3258,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[127];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -3448,7 +3448,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -3642,7 +3642,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -3657,7 +3657,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[126];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -3847,7 +3847,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -4041,7 +4041,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -4056,7 +4056,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[125];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -4246,7 +4246,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -4440,7 +4440,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -4455,7 +4455,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[125];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -4645,7 +4645,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -4839,7 +4839,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -4854,7 +4854,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[125];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -5044,7 +5044,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -5238,7 +5238,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -5253,7 +5253,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[124];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -5443,7 +5443,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -5637,7 +5637,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -5652,7 +5652,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[123];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -5842,7 +5842,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -6036,7 +6036,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -6051,7 +6051,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[121];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -6241,7 +6241,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -6435,7 +6435,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -6450,7 +6450,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[120];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -6640,7 +6640,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -6834,7 +6834,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -6849,7 +6849,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[119];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -7039,7 +7039,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -7233,7 +7233,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -7248,7 +7248,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[118];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -7438,7 +7438,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -7632,7 +7632,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -7647,7 +7647,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[116];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -7837,7 +7837,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -8031,7 +8031,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -8046,7 +8046,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[110];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -8236,7 +8236,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -8430,7 +8430,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -8445,7 +8445,7 @@ struct root {
     hash_1898703fb0109487 hash_6326a574b8674519[110];
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -8635,7 +8635,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -8829,7 +8829,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[52];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[52];
     uint32 uploadbandwidth;
@@ -8843,7 +8843,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[52];
@@ -9027,7 +9027,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -9220,7 +9220,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[51];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[51];
     uint32 uploadbandwidth;
@@ -9234,7 +9234,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[51];
@@ -9418,7 +9418,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -9611,7 +9611,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[50];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[50];
     uint32 uploadbandwidth;
@@ -9625,7 +9625,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[50];
@@ -9809,7 +9809,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -10002,7 +10002,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[49];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[49];
     uint32 uploadbandwidth;
@@ -10016,7 +10016,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[49];
@@ -10200,7 +10200,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -10393,7 +10393,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
@@ -10407,7 +10407,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[48];
@@ -10591,7 +10591,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -10783,7 +10783,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
@@ -10797,7 +10797,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[48];
@@ -10981,7 +10981,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -11173,7 +11173,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
@@ -11187,7 +11187,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[48];
@@ -11371,7 +11371,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -11563,7 +11563,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[48];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[48];
     uint32 uploadbandwidth;
@@ -11577,7 +11577,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[48];
@@ -11761,7 +11761,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -11953,7 +11953,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[47];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[47];
     uint32 uploadbandwidth;
@@ -11967,7 +11967,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[47];
@@ -12151,7 +12151,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -12343,7 +12343,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
@@ -12357,7 +12357,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[44];
@@ -12541,7 +12541,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -12733,7 +12733,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[44];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[44];
     uint32 uploadbandwidth;
@@ -12747,7 +12747,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[44];
@@ -12930,7 +12930,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
@@ -13122,7 +13122,7 @@ struct root {
     hash_2e1d3d3bb036d22c playerstatsbygametype[38];
     byte demonwareflags[32];
     float skill_rating;
-    hash_491be2fc5d00eea5 hash_4e249739468187c[10];
+    contract_s hash_4e249739468187c[10];
     int32 unlocktokencount_attachment;
     float hash_2363e7e74077b1c0[38];
     uint32 uploadbandwidth;
@@ -13136,7 +13136,7 @@ struct root {
     uint64 securexuid;
     hash_6b3db80d498eb06 playerstatslist[996];
     hash_402baff65ae9b838 clantagstats;
-    hash_491be2fc5d00eea5 contracts[10];
+    contract_s contracts[10];
     float skill_variance;
     int32 mp_loot_xp_due;
     float hash_3a7324ad328f0e2e[38];
@@ -13319,7 +13319,7 @@ struct hash_2e1d3d3bb036d22c {
     hash_6b3db80d498eb06 kdratio;
 };
 
-struct hash_491be2fc5d00eea5 {
+struct contract_s {
     uint16 index;
     uint24 hash_32271b98ab28ea47;
     uint24 hash_32271a98ab28e894;
