@@ -1,10 +1,10 @@
-#using scripts\wz_common\character_unlock_fixup;
-#using scripts\wz_common\character_unlock;
-#using scripts\mp_common\gametypes\globallogic;
 #using script_71e26f08f03b7a7a;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\wz_common\character_unlock;
+#using scripts\wz_common\character_unlock_fixup;
 
 #namespace character_unlock_menendez;
 

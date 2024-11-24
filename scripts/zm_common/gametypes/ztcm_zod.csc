@@ -1,6 +1,6 @@
 #using scripts\core_common\callbacks_shared;
-#using scripts\zm_common\gametypes\ztcm;
 #using scripts\core_common\struct;
+#using scripts\zm_common\gametypes\ztcm;
 
 #namespace ztcm_zod;
 

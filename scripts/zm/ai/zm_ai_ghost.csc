@@ -1,6 +1,6 @@
 #using scripts\core_common\ai\systems\fx_character;
-#using scripts\core_common\system_shared;
 #using scripts\core_common\ai_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_ai_ghost;
 

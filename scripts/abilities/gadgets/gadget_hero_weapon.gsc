@@ -1,6 +1,6 @@
-#using scripts\core_common\system_shared;
-#using scripts\core_common\callbacks_shared;
 #using scripts\abilities\ability_player;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace hero_weapon;
 

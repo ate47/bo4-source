@@ -1,10 +1,10 @@
+#using scripts\abilities\ability_player;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\sound_shared;
 #using scripts\core_common\status_effects\status_effect_util;
 #using scripts\core_common\util_shared;
-#using scripts\core_common\sound_shared;
-#using scripts\core_common\player\player_stats;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\callbacks_shared;
-#using scripts\abilities\ability_player;
 
 #namespace mute_smoke;
 

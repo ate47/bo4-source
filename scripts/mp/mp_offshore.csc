@@ -1,7 +1,7 @@
-#using scripts\mp\mp_offshore_sound;
-#using scripts\mp\mp_offshore_fx;
-#using scripts\mp_common\load;
 #using scripts\core_common\util_shared;
+#using scripts\mp\mp_offshore_fx;
+#using scripts\mp\mp_offshore_sound;
+#using scripts\mp_common\load;
 
 #namespace mp_offshore;
 

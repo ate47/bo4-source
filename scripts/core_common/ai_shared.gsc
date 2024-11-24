@@ -1,13 +1,13 @@
 #using scripts\core_common\ai\systems\ai_interface;
 #using scripts\core_common\ai\systems\shared;
-#using scripts\core_common\values_shared;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\scene_shared;
-#using scripts\core_common\flagsys_shared;
-#using scripts\core_common\flag_shared;
-#using scripts\core_common\colors_shared;
 #using scripts\core_common\array_shared;
+#using scripts\core_common\colors_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\scene_shared;
 #using scripts\core_common\struct;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\values_shared;
 
 #namespace ai;
 

@@ -1,12 +1,12 @@
-#using scripts\mp\mp_firingrange2_scripted;
-#using scripts\core_common\exploder_shared;
-#using scripts\core_common\util_shared;
-#using scripts\mp\mp_firingrange2_sound;
-#using scripts\mp\mp_firingrange2_fx;
-#using scripts\mp_common\load;
-#using scripts\core_common\scene_shared;
-#using scripts\core_common\compass;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\compass;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\util_shared;
+#using scripts\mp\mp_firingrange2_fx;
+#using scripts\mp\mp_firingrange2_scripted;
+#using scripts\mp\mp_firingrange2_sound;
+#using scripts\mp_common\load;
 
 #namespace mp_firingrange2;
 

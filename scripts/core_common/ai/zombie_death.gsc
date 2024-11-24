@@ -1,5 +1,5 @@
-#using scripts\core_common\fx_shared;
 #using scripts\core_common\ai\systems\gib;
+#using scripts\core_common\fx_shared;
 
 #namespace zombie_death;
 

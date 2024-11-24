@@ -1,10 +1,10 @@
-#using scripts\mp_common\util;
-#using scripts\mp_common\gametypes\battlechatter;
 #using scripts\abilities\gadgets\gadget_radiation_field;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\mp_common\util;
 
 #namespace gadget_radiation_field;
 

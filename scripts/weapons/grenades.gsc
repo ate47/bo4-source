@@ -1,5 +1,5 @@
-#using scripts\weapons\weaponobjects;
 #using scripts\core_common\clientfield_shared;
+#using scripts\weapons\weaponobjects;
 
 #namespace grenades;
 

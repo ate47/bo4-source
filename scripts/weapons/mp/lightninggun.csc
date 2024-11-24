@@ -1,5 +1,5 @@
-#using scripts\weapons\lightninggun;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\lightninggun;
 
 #namespace lightninggun;
 

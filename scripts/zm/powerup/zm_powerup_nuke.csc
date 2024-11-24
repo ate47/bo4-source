@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_powerups;
 #using scripts\core_common\ai\zombie_death;
-#using scripts\core_common\system_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_powerups;
 
 #namespace zm_powerup_nuke;
 

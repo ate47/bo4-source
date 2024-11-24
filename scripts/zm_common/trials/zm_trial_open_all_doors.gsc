@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_trial;
-#using scripts\zm_common\zm_trial_util;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_trial_util;
 
 #namespace zm_trial_open_all_doors;
 

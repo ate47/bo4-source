@@ -1,19 +1,19 @@
-#using scripts\core_common\values_shared;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\animation_shared;
+#using scripts\core_common\bots\bot_action;
+#using scripts\core_common\bots\bot_chain;
+#using scripts\core_common\bots\bot_interface;
+#using scripts\core_common\bots\bot_position;
+#using scripts\core_common\bots\bot_stance;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\gameobjects_shared;
 #using scripts\core_common\math_shared;
 #using scripts\core_common\player\player_role;
-#using scripts\core_common\gameobjects_shared;
-#using scripts\core_common\callbacks_shared;
-#using scripts\core_common\bots\bot_stance;
-#using scripts\core_common\bots\bot_position;
-#using scripts\core_common\bots\bot_interface;
-#using scripts\core_common\bots\bot_chain;
-#using scripts\core_common\bots\bot_action;
-#using scripts\core_common\animation_shared;
-#using scripts\core_common\ai_shared;
-#using scripts\core_common\ai\systems\blackboard;
-#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\values_shared;
 
 #namespace bot;
 

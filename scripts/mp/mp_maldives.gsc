@@ -1,6 +1,6 @@
+#using scripts\core_common\compass;
 #using scripts\core_common\doors_shared;
 #using scripts\mp_common\load;
-#using scripts\core_common\compass;
 
 #namespace mp_maldives;
 

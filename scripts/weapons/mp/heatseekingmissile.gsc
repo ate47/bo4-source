@@ -1,5 +1,5 @@
-#using scripts\weapons\heatseekingmissile;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\heatseekingmissile;
 
 #namespace heatseekingmissile;
 

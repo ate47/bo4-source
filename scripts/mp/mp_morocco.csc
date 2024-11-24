@@ -1,6 +1,6 @@
+#using scripts\core_common\util_shared;
 #using scripts\mp\mp_morocco_scripted;
 #using scripts\mp_common\load;
-#using scripts\core_common\util_shared;
 
 #namespace mp_morocco;
 

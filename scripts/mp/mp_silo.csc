@@ -1,9 +1,9 @@
-#using scripts\mp\mp_silo_sound;
-#using scripts\mp\mp_silo_fx;
-#using scripts\mp_common\load;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\util_shared;
+#using scripts\mp\mp_silo_fx;
+#using scripts\mp\mp_silo_sound;
+#using scripts\mp_common\load;
 
 #namespace mp_silo;
 

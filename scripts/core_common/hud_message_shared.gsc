@@ -1,6 +1,6 @@
 #using script_272c2c9da7e6858;
-#using scripts\core_common\system_shared;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
 
 #namespace hud_message;
 

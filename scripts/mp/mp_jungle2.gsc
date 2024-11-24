@@ -1,6 +1,6 @@
+#using scripts\core_common\compass;
 #using scripts\mp\mp_jungle2_scripted;
 #using scripts\mp_common\load;
-#using scripts\core_common\compass;
 
 #namespace mp_jungle2;
 

@@ -1,7 +1,7 @@
 #using scripts\core_common\array_shared;
-#using scripts\core_common\system_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\postfx_shared;
+#using scripts\core_common\system_shared;
 
 #namespace zm_red_oracle_boons;
 

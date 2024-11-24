@@ -1,12 +1,12 @@
 #using scripts\core_common\ai\archetype_aivsaimelee;
-#using scripts\core_common\array_shared;
 #using scripts\core_common\ai\archetype_mocomps_utility;
-#using scripts\core_common\ai\systems\shared;
-#using scripts\core_common\ai\systems\gib;
-#using scripts\core_common\ai\systems\behavior_tree_utility;
-#using scripts\core_common\ai\systems\behavior_state_machine;
 #using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\systems\behavior_state_machine;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai\systems\gib;
+#using scripts\core_common\ai\systems\shared;
 #using scripts\core_common\ai_shared;
+#using scripts\core_common\array_shared;
 
 #namespace aiutility;
 

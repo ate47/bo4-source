@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_score;
-#using scripts\zm_common\zm_bgb_pack;
-#using scripts\zm_common\zm_bgb;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_bgb_pack;
+#using scripts\zm_common\zm_score;
 
 #namespace zm_bgb_point_drops;
 

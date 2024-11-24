@@ -1,9 +1,9 @@
+#using scripts\core_common\ai\systems\shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\hud_shared;
+#using scripts\core_common\player\player_loadout;
 #using scripts\core_common\throttle_shared;
 #using scripts\weapons\weaponobjects;
-#using scripts\core_common\player\player_loadout;
-#using scripts\core_common\ai\systems\shared;
-#using scripts\core_common\hud_shared;
-#using scripts\core_common\array_shared;
 
 #namespace ammo;
 

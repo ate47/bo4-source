@@ -1,7 +1,7 @@
-#using scripts\core_common\system_shared;
 #using scripts\core_common\callbacks_shared;
-#using scripts\killstreaks\killstreaks_util;
+#using scripts\core_common\system_shared;
 #using scripts\killstreaks\killstreaks_shared;
+#using scripts\killstreaks\killstreaks_util;
 
 #namespace globallogic_player;
 

@@ -1,10 +1,10 @@
-#using scripts\core_common\vehicles\auto_turret;
-#using scripts\core_common\vehicle_shared;
-#using scripts\core_common\vehicle_ai_shared;
-#using scripts\core_common\turret_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\microwave_turret_shared;
 #using scripts\core_common\clientfield_shared;
+#using scripts\core_common\microwave_turret_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\turret_shared;
+#using scripts\core_common\vehicle_ai_shared;
+#using scripts\core_common\vehicle_shared;
+#using scripts\core_common\vehicles\auto_turret;
 
 #namespace guardian_turret;
 

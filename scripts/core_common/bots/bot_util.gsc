@@ -1,8 +1,8 @@
-#using scripts\core_common\struct;
-#using scripts\core_common\bots\bot_chain;
-#using scripts\core_common\bots\bot_action;
-#using scripts\core_common\bots\bot;
 #using scripts\core_common\ai_shared;
+#using scripts\core_common\bots\bot;
+#using scripts\core_common\bots\bot_action;
+#using scripts\core_common\bots\bot_chain;
+#using scripts\core_common\struct;
 
 #namespace bot_util;
 

@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_weapons;
-#using scripts\zm_common\zm_wallbuy;
-#using scripts\zm_common\zm_customgame;
-#using scripts\zm_common\zm_bgb;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_customgame;
+#using scripts\zm_common\zm_wallbuy;
+#using scripts\zm_common\zm_weapons;
 
 #namespace zm_bgb_wall_to_wall_clearance;
 

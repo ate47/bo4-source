@@ -1,8 +1,8 @@
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
 #using scripts\core_common\util_shared;
 #using scripts\mp_common\gametypes\ct_tutorial_skirmish;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\callbacks_shared;
-#using scripts\core_common\struct;
 
 #namespace sd;
 

@@ -1,10 +1,10 @@
+#using scripts\core_common\struct;
+#using scripts\core_common\util_shared;
+#using scripts\mp\mp_firingrange2_alt_fx;
 #using scripts\mp\mp_firingrange2_alt_scripted;
 #using scripts\mp\mp_firingrange2_alt_sound;
-#using scripts\mp\mp_firingrange2_alt_fx;
-#using scripts\mp_common\util;
 #using scripts\mp_common\load;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\struct;
+#using scripts\mp_common\util;
 
 #namespace mp_firingrange2_alt;
 

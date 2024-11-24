@@ -1,6 +1,6 @@
 #using scripts\core_common\system_shared;
-#using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_melee_weapon;
+#using scripts\zm_common\zm_weapons;
 
 #namespace zm_weap_spoon;
 

@@ -1,7 +1,7 @@
-#using scripts\core_common\ai\strategic_command;
 #using scripts\core_common\ai\planner_commander;
-#using scripts\core_common\ai\systems\planner;
+#using scripts\core_common\ai\strategic_command;
 #using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai\systems\planner;
 
 #namespace plannergenericcommander;
 

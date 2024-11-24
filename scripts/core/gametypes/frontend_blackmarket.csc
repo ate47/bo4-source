@@ -1,12 +1,12 @@
 #using scripts\core\gametypes\frontend;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\struct;
-#using scripts\core_common\scene_shared;
-#using scripts\core_common\lui_shared;
-#using scripts\core_common\exploder_shared;
-#using scripts\core_common\character_customization;
-#using scripts\core_common\callbacks_shared;
 #using scripts\core_common\array_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\character_customization;
+#using scripts\core_common\exploder_shared;
+#using scripts\core_common\lui_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
 
 #namespace blackmarket;
 

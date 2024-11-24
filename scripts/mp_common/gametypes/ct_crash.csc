@@ -1,8 +1,8 @@
-#using scripts\mp_common\gametypes\ct_core;
-#using scripts\mp_common\gametypes\ct_crash_tutorial;
-#using scripts\core_common\clientfield_shared;
 #using script_38dc72b5220a1a67;
 #using script_ef0f46d70331b6f;
+#using scripts\core_common\clientfield_shared;
+#using scripts\mp_common\gametypes\ct_core;
+#using scripts\mp_common\gametypes\ct_crash_tutorial;
 
 #namespace ct_crash;
 

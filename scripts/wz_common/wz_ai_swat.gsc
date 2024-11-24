@@ -1,7 +1,7 @@
 #using scripts\core_common\ai\systems\animation_state_machine_mocomp;
 #using scripts\core_common\ai\systems\behavior_tree_utility;
-#using scripts\core_common\util_shared;
 #using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 
 #namespace wz_ai_swat;
 

@@ -1,11 +1,11 @@
-#using scripts\core_common\system_shared;
-#using scripts\core_common\shaderanim_shared;
-#using scripts\core_common\postfx_shared;
-#using scripts\core_common\math_shared;
-#using scripts\core_common\flagsys_shared;
-#using scripts\core_common\flag_shared;
-#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\animation_debug_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\flagsys_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\shaderanim_shared;
+#using scripts\core_common\system_shared;
 
 #namespace animation;
 

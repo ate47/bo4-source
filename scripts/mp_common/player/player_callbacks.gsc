@@ -1,8 +1,8 @@
-#using scripts\mp_common\player\player_damage;
-#using scripts\mp_common\gametypes\globallogic_ui;
-#using scripts\core_common\util_shared;
 #using scripts\core_common\scoreevents_shared;
 #using scripts\core_common\status_effects\status_effect_util;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\gametypes\globallogic_ui;
+#using scripts\mp_common\player\player_damage;
 
 #namespace player;
 

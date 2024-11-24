@@ -1,16 +1,16 @@
+#using scripts\core_common\array_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 #using scripts\zm\zm_red_challenges_rewards;
-#using scripts\zm_common\zm_weapons;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_trial_util;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_utility;
-#using scripts\zm_common\zm_trial_util;
-#using scripts\zm_common\zm_trial;
-#using scripts\zm_common\zm_loadout;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\callbacks_shared;
-#using scripts\core_common\array_shared;
-#using scripts\core_common\struct;
+#using scripts\zm_common\zm_weapons;
 
 #namespace namespace_5c5619de;
 

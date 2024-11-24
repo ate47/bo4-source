@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_powerups;
-#using scripts\zm_common\zm_player;
-#using scripts\zm_common\zm_bgb;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_player;
+#using scripts\zm_common\zm_powerups;
 
 #namespace zm_bgb_extra_credit;
 

@@ -1,5 +1,5 @@
-#using scripts\core_common\lui_shared;
 #using scripts\core_common\clientfield_shared;
+#using scripts\core_common\lui_shared;
 
 #namespace zm_trial_timer;
 

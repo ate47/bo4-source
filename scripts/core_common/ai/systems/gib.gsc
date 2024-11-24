@@ -1,8 +1,8 @@
-#using scripts\core_common\throttle_shared;
-#using scripts\core_common\ai\systems\shared;
 #using scripts\core_common\ai\systems\destructible_character;
+#using scripts\core_common\ai\systems\shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\struct;
+#using scripts\core_common\throttle_shared;
 
 #namespace gib;
 

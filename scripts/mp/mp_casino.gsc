@@ -1,7 +1,7 @@
-#using scripts\mp\mp_casino_scripted;
-#using scripts\core_common\struct;
-#using scripts\mp_common\load;
 #using scripts\core_common\compass;
+#using scripts\core_common\struct;
+#using scripts\mp\mp_casino_scripted;
+#using scripts\mp_common\load;
 
 #namespace mp_casino;
 

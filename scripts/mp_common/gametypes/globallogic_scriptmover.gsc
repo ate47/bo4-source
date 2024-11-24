@@ -1,7 +1,7 @@
-#using scripts\core_common\weapons_shared;
-#using scripts\core_common\globallogic\globallogic_player;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\damage;
+#using scripts\core_common\globallogic\globallogic_player;
+#using scripts\core_common\weapons_shared;
 
 #namespace globallogic_scriptmover;
 

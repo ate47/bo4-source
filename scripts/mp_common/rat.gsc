@@ -1,10 +1,10 @@
 #using scripts\core_common\bots\bot;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\rat_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 #using scripts\mp_common\gametypes\dev;
 #using scripts\mp_common\util;
-#using scripts\core_common\rat_shared;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\callbacks_shared;
 
 #namespace rat;
 

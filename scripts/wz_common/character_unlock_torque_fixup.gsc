@@ -1,5 +1,5 @@
-#using scripts\wz_common\character_unlock_fixup;
 #using scripts\core_common\system_shared;
+#using scripts\wz_common\character_unlock_fixup;
 
 #namespace character_unlock_torque_fixup;
 

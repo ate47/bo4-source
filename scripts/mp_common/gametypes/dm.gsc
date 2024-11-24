@@ -1,15 +1,15 @@
-#using scripts\mp_common\util;
-#using scripts\mp_common\player\player_utils;
+#using scripts\core_common\spawning_shared;
+#using scripts\core_common\util_shared;
+#using scripts\killstreaks\killstreaks_shared;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\mp_common\gametypes\globallogic_spawn;
 #using scripts\mp_common\gametypes\match;
 #using scripts\mp_common\gametypes\round;
-#using scripts\mp_common\gametypes\globallogic_spawn;
-#using scripts\mp_common\gametypes\globallogic_score;
-#using scripts\mp_common\gametypes\globallogic_audio;
-#using scripts\mp_common\gametypes\globallogic;
-#using scripts\mp_common\gametypes\ct_tutorial_skirmish;
-#using scripts\killstreaks\killstreaks_shared;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\spawning_shared;
+#using scripts\mp_common\player\player_utils;
+#using scripts\mp_common\util;
 
 #namespace dm;
 

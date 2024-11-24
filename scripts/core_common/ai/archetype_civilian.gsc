@@ -1,17 +1,17 @@
-#using scripts\core_common\util_shared;
-#using scripts\core_common\array_shared;
+#using scripts\core_common\ai\archetype_civilian_interface;
 #using scripts\core_common\ai\archetype_human_cover;
+#using scripts\core_common\ai\archetype_utility;
+#using scripts\core_common\ai\systems\ai_blackboard;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\systems\animation_state_machine_utility;
+#using scripts\core_common\ai\systems\behavior_state_machine;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai\systems\blackboard;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\array_shared;
 #using scripts\core_common\laststand_shared;
 #using scripts\core_common\spawner_shared;
-#using scripts\core_common\ai\archetype_civilian_interface;
-#using scripts\core_common\ai\systems\ai_interface;
-#using scripts\core_common\ai\systems\ai_blackboard;
-#using scripts\core_common\ai\systems\behavior_tree_utility;
-#using scripts\core_common\ai\systems\behavior_state_machine;
-#using scripts\core_common\ai\systems\animation_state_machine_utility;
-#using scripts\core_common\ai\systems\blackboard;
-#using scripts\core_common\ai\archetype_utility;
-#using scripts\core_common\ai_shared;
+#using scripts\core_common\util_shared;
 
 #namespace archetype_civilian;
 

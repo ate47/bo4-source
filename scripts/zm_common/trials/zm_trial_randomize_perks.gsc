@@ -1,10 +1,10 @@
-#using scripts\zm_common\zm_weapons;
-#using scripts\zm_common\zm_perks;
-#using scripts\zm_common\zm_trial_util;
-#using scripts\zm_common\zm_trial;
-#using scripts\zm_common\zm_bgb_pack;
-#using scripts\core_common\util_shared;
 #using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\zm_common\zm_bgb_pack;
+#using scripts\zm_common\zm_perks;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_weapons;
 
 #namespace zm_trial_randomize_perks;
 

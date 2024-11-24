@@ -1,13 +1,13 @@
-#using scripts\zm_common\zm_weapons;
-#using scripts\zm_common\zm_utility;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\zm_common\util;
 #using scripts\zm_common\zm_stats;
 #using scripts\zm_common\zm_talisman;
-#using scripts\zm_common\util;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\array_shared;
-#using scripts\core_common\struct;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_weapons;
 
 #namespace zm_talisman_box_guarantee_box_only;
 

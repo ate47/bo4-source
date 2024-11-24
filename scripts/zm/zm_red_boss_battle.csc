@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_aoe;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\struct;
-#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\beam_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\util_shared;
+#using scripts\zm_common\zm_aoe;
 
 #namespace red_boss_battle;
 

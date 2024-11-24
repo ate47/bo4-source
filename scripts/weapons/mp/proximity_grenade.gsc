@@ -1,5 +1,5 @@
-#using scripts\weapons\proximity_grenade;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\proximity_grenade;
 
 #namespace proximity_grenade;
 

@@ -1,9 +1,9 @@
+#using scripts\core_common\array_shared;
+#using scripts\core_common\character_customization;
 #using scripts\core_common\dialog_shared;
 #using scripts\core_common\player\player_role;
-#using scripts\core_common\character_customization;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\array_shared;
 #using scripts\core_common\struct;
+#using scripts\core_common\util_shared;
 
 #namespace draft;
 

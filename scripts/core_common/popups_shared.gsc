@@ -1,11 +1,11 @@
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\rank_shared;
-#using scripts\core_common\player\player_stats;
-#using scripts\core_common\persistence_shared;
-#using scripts\core_common\medals_shared;
-#using scripts\core_common\flag_shared;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\medals_shared;
+#using scripts\core_common\persistence_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\rank_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 
 #namespace popups;
 

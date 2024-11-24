@@ -1,7 +1,7 @@
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\system_shared;
 #using scripts\zm_common\trials\zm_trial_reset_loadout;
 #using scripts\zm_common\zm_perks;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\clientfield_shared;
 
 #namespace zm_perk_bandolier;
 

@@ -1,5 +1,5 @@
-#using scripts\mp_common\gametypes\globallogic_utils;
 #using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\gametypes\globallogic_utils;
 
 #namespace radar_sweeps;
 

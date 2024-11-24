@@ -1,8 +1,8 @@
-#using scripts\mp_common\gametypes\battlechatter;
-#using scripts\mp_common\gametypes\globallogic_audio;
-#using scripts\killstreaks\ultimate_turret_shared;
 #using scripts\core_common\player\player_stats;
 #using scripts\core_common\system_shared;
+#using scripts\killstreaks\ultimate_turret_shared;
+#using scripts\mp_common\gametypes\battlechatter;
+#using scripts\mp_common\gametypes\globallogic_audio;
 
 #namespace ultimate_turret;
 

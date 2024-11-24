@@ -1,5 +1,5 @@
-#using scripts\mp_common\gametypes\globallogic_utils;
 #using scripts\core_common\util_shared;
+#using scripts\mp_common\gametypes\globallogic_utils;
 
 #namespace events;
 

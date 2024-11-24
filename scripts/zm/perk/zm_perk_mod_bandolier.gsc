@@ -1,6 +1,6 @@
-#using scripts\zm_common\zm_weapons;
-#using scripts\zm_common\zm_perks;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_perks;
+#using scripts\zm_common\zm_weapons;
 
 #namespace zm_perk_mod_bandolier;
 

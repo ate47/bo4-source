@@ -1,22 +1,22 @@
 #using script_6951ea86fdae9ae0;
-#using scripts\zm_common\trials\zm_trial_restrict_loadout;
-#using scripts\zm_common\zm_utility;
-#using scripts\zm_common\zm_stats;
-#using scripts\zm_common\zm_score;
-#using scripts\zm_common\zm_perks;
-#using scripts\zm_common\zm_net;
-#using scripts\zm_common\zm;
-#using scripts\zm_common\util;
 #using scripts\core_common\ai\zombie_utility;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\array_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 #using scripts\core_common\values_shared;
 #using scripts\core_common\visionset_mgr_shared;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\math_shared;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\array_shared;
-#using scripts\core_common\ai_shared;
-#using scripts\core_common\struct;
+#using scripts\zm_common\trials\zm_trial_restrict_loadout;
+#using scripts\zm_common\util;
+#using scripts\zm_common\zm;
+#using scripts\zm_common\zm_net;
+#using scripts\zm_common\zm_perks;
+#using scripts\zm_common\zm_score;
+#using scripts\zm_common\zm_stats;
+#using scripts\zm_common\zm_utility;
 
 #namespace zm_perk_electric_cherry;
 

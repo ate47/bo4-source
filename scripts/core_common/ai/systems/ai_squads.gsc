@@ -1,7 +1,7 @@
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\array_shared;
 #using scripts\core_common\spawner_shared;
 #using scripts\core_common\system_shared;
-#using scripts\core_common\array_shared;
-#using scripts\core_common\ai_shared;
 
 #namespace aisquads;
 

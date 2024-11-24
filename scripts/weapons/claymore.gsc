@@ -1,6 +1,6 @@
-#using scripts\weapons\weaponobjects;
-#using scripts\weapons\proximity_grenade;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\proximity_grenade;
+#using scripts\weapons\weaponobjects;
 
 #namespace claymore;
 

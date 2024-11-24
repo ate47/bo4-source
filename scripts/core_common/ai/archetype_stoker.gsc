@@ -1,6 +1,6 @@
-#using scripts\core_common\ai\systems\blackboard;
-#using scripts\core_common\ai\systems\ai_interface;
 #using scripts\core_common\ai\archetype_stoker_interface;
+#using scripts\core_common\ai\systems\ai_interface;
+#using scripts\core_common\ai\systems\blackboard;
 #using scripts\core_common\spawner_shared;
 
 #namespace archetype_stoker;

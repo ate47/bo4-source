@@ -1,5 +1,5 @@
-#using scripts\abilities\ability_util;
 #using scripts\abilities\ability_gadgets;
+#using scripts\abilities\ability_util;
 
 #namespace ability_power;
 

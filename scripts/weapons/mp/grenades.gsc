@@ -1,5 +1,5 @@
-#using scripts\weapons\grenades;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\grenades;
 
 #namespace grenades;
 

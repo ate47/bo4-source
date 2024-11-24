@@ -1,8 +1,8 @@
 #using scripts\core_common\ai\archetype_human_rpg_interface;
-#using scripts\core_common\ai\systems\blackboard;
 #using scripts\core_common\ai\systems\ai_interface;
-#using scripts\core_common\spawner_shared;
+#using scripts\core_common\ai\systems\blackboard;
 #using scripts\core_common\ai_shared;
+#using scripts\core_common\spawner_shared;
 
 #namespace archetype_human_rpg;
 

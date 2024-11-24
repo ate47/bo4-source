@@ -1,8 +1,8 @@
+#using scripts\core_common\compass;
+#using scripts\mp\mp_slums2_fx;
 #using scripts\mp\mp_slums2_scripted;
 #using scripts\mp\mp_slums2_sound;
-#using scripts\mp\mp_slums2_fx;
 #using scripts\mp_common\load;
-#using scripts\core_common\compass;
 
 #namespace mp_slums2;
 

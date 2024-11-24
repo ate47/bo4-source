@@ -1,6 +1,6 @@
 #using scripts\core_common\clientfield_shared;
-#using scripts\mp_common\gametypes\ct_nomad_tutorial;
 #using scripts\mp_common\gametypes\ct_core;
+#using scripts\mp_common\gametypes\ct_nomad_tutorial;
 
 #namespace ct_nomad;
 

@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_audio;
-#using scripts\zm_common\zm_score;
-#using scripts\zm_common\zm_powerups;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_audio;
+#using scripts\zm_common\zm_powerups;
+#using scripts\zm_common\zm_score;
 
 #namespace zm_powerup_bonus_points_team;
 

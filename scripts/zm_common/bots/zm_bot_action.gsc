@@ -1,7 +1,7 @@
-#using scripts\core_common\system_shared;
 #using scripts\core_common\ai_shared;
-#using scripts\core_common\bots\bot_action;
 #using scripts\core_common\bots\bot;
+#using scripts\core_common\bots\bot_action;
+#using scripts\core_common\system_shared;
 
 #namespace zm_bot_action;
 

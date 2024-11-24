@@ -1,7 +1,7 @@
-#using scripts\mp_common\gametypes\ct_tutorial_skirmish;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\shoutcaster;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\shoutcaster;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\gametypes\ct_tutorial_skirmish;
 
 #namespace dom;
 

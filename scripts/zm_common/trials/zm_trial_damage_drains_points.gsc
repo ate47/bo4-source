@@ -1,9 +1,9 @@
+#using scripts\core_common\array_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_trial;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\callbacks_shared;
-#using scripts\core_common\array_shared;
 
 #namespace zm_trial_damage_drains_points;
 

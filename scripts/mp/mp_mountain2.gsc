@@ -1,8 +1,8 @@
-#using scripts\mp\mp_mountain2_scripted;
+#using scripts\core_common\compass;
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\struct;
+#using scripts\mp\mp_mountain2_scripted;
 #using scripts\mp_common\load;
-#using scripts\core_common\compass;
 
 #namespace mp_mountain2;
 

@@ -1,7 +1,7 @@
-#using scripts\core_common\bots\bot;
 #using scripts\core_common\ai\strategic_command;
-#using scripts\core_common\ai\systems\planner_blackboard;
 #using scripts\core_common\ai\systems\planner;
+#using scripts\core_common\ai\systems\planner_blackboard;
+#using scripts\core_common\bots\bot;
 
 #namespace plannersquad;
 

@@ -1,9 +1,9 @@
-#using scripts\core_common\system_shared;
-#using scripts\core_common\struct;
-#using scripts\core_common\shoutcaster;
-#using scripts\killstreaks\killstreak_bundles;
-#using scripts\killstreaks\dog_shared;
 #using scripts\core_common\ai_shared;
+#using scripts\core_common\shoutcaster;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
+#using scripts\killstreaks\dog_shared;
+#using scripts\killstreaks\killstreak_bundles;
 
 #namespace dog;
 

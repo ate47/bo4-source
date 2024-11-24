@@ -1,6 +1,6 @@
 #using scripts\core_common\player\player_stats;
-#using scripts\mp_common\item_world;
 #using scripts\mp_common\item_drop;
+#using scripts\mp_common\item_world;
 
 #namespace wz_blast_doors;
 

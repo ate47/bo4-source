@@ -1,5 +1,5 @@
-#using scripts\core_common\util_shared;
 #using scripts\core_common\targetting_delay;
+#using scripts\core_common\util_shared;
 
 #namespace ai_target;
 

@@ -1,10 +1,10 @@
+#using scripts\core_common\compass;
+#using scripts\core_common\struct;
+#using scripts\mp\mp_morocco_fx;
 #using scripts\mp\mp_morocco_scripted;
 #using scripts\mp\mp_morocco_sound;
-#using scripts\mp\mp_morocco_fx;
-#using scripts\mp_common\load;
 #using scripts\mp_common\gametypes\globallogic_spawn;
-#using scripts\core_common\struct;
-#using scripts\core_common\compass;
+#using scripts\mp_common\load;
 
 #namespace mp_morocco;
 

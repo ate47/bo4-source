@@ -1,10 +1,10 @@
-#using scripts\mp_common\teams\teams;
-#using scripts\mp_common\teams\platoons;
 #using scripts\core_common\bots\bot;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\teams;
 #using scripts\core_common\platoons;
 #using scripts\core_common\system_shared;
+#using scripts\core_common\teams;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\teams\platoons;
+#using scripts\mp_common\teams\teams;
 
 #namespace teams;
 

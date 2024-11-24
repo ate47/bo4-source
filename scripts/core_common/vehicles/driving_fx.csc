@@ -1,6 +1,6 @@
-#using scripts\core_common\vehicle_shared;
-#using scripts\core_common\postfx_shared;
 #using scripts\core_common\audio_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\vehicle_shared;
 
 #namespace driving_fx;
 

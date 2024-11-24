@@ -1,9 +1,9 @@
-#using scripts\core_common\player\player_stats;
-#using scripts\core_common\weapons_shared;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\callbacks_shared;
 #using scripts\core_common\activecamo_shared_util;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\player\player_stats;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\core_common\weapons_shared;
 
 #namespace activecamo;
 

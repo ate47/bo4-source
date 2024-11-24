@@ -1,8 +1,8 @@
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\system_shared;
 #using scripts\zm\perk\zm_perk_stronghold;
 #using scripts\zm_common\zm_perks;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\callbacks_shared;
 
 #namespace zm_perk_mod_stronghold;
 

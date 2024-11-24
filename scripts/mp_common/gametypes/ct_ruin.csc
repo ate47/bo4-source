@@ -1,7 +1,7 @@
-#using scripts\core_common\util_shared;
 #using scripts\core_common\clientfield_shared;
-#using scripts\mp_common\gametypes\ct_ruin_tutorial;
+#using scripts\core_common\util_shared;
 #using scripts\mp_common\gametypes\ct_core;
+#using scripts\mp_common\gametypes\ct_ruin_tutorial;
 
 #namespace ct_ruin;
 

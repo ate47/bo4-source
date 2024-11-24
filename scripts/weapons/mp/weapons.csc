@@ -1,5 +1,5 @@
-#using scripts\weapons\weapons;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\weapons;
 
 #namespace weapons;
 

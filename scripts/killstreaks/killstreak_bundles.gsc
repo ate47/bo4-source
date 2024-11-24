@@ -1,5 +1,5 @@
-#using scripts\core_common\weapons_shared;
 #using scripts\core_common\struct;
+#using scripts\core_common\weapons_shared;
 
 #namespace killstreak_bundles;
 

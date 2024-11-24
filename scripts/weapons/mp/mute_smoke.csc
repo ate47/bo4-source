@@ -1,5 +1,5 @@
-#using scripts\weapons\mute_smoke;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\mute_smoke;
 
 #namespace mute_smoke;
 

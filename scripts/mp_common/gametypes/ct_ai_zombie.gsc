@@ -1,17 +1,17 @@
-#using scripts\mp_common\armor;
-#using scripts\core_common\math_shared;
-#using scripts\core_common\ai\systems\gib;
-#using scripts\core_common\ai\systems\behavior_tree_utility;
-#using scripts\core_common\ai\systems\behavior_state_machine;
-#using scripts\core_common\ai\systems\animation_state_machine_notetracks;
-#using scripts\core_common\ai\zombie;
 #using scripts\core_common\ai\archetype_damage_utility;
-#using scripts\core_common\values_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\spawner_shared;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\ai\systems\animation_state_machine_notetracks;
+#using scripts\core_common\ai\systems\behavior_state_machine;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
+#using scripts\core_common\ai\systems\gib;
+#using scripts\core_common\ai\zombie;
 #using scripts\core_common\array_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\math_shared;
+#using scripts\core_common\spawner_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\values_shared;
+#using scripts\mp_common\armor;
 
 #namespace mp_ai_zombie;
 

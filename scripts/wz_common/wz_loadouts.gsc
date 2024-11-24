@@ -1,8 +1,8 @@
-#using scripts\mp_common\item_world;
-#using scripts\mp_common\item_inventory_util;
-#using scripts\mp_common\item_inventory;
-#using scripts\core_common\util_shared;
 #using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
+#using scripts\mp_common\item_inventory;
+#using scripts\mp_common\item_inventory_util;
+#using scripts\mp_common\item_world;
 
 #namespace wz_loadouts;
 

@@ -1,8 +1,8 @@
-#using scripts\mp_common\util;
-#using scripts\mp_common\userspawnselection;
-#using scripts\mp_common\gametypes\globallogic_score;
-#using scripts\mp_common\gametypes\globallogic_audio;
 #using scripts\core_common\util_shared;
+#using scripts\mp_common\gametypes\globallogic_audio;
+#using scripts\mp_common\gametypes\globallogic_score;
+#using scripts\mp_common\userspawnselection;
+#using scripts\mp_common\util;
 
 #namespace gametype;
 

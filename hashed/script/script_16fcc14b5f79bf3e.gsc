@@ -1,9 +1,9 @@
-#using scripts\zm\zm_red_main_quest;
-#using scripts\zm_common\zm_ui_inventory;
-#using scripts\zm_common\zm_trial;
-#using scripts\core_common\flag_shared;
 #using scripts\core_common\clientfield_shared;
+#using scripts\core_common\flag_shared;
 #using scripts\core_common\system_shared;
+#using scripts\zm\zm_red_main_quest;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_ui_inventory;
 
 #namespace namespace_efec71f7;
 

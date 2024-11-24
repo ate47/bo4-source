@@ -1,5 +1,5 @@
-#using scripts\core_common\burnplayer;
 #using script_38dc72b5220a1a67;
+#using scripts\core_common\burnplayer;
 
 #namespace ct_firebreak_tutorial;
 

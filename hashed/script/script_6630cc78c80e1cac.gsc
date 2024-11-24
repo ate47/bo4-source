@@ -1,11 +1,11 @@
-#using scripts\core_common\system_shared;
-#using scripts\core_common\struct;
-#using scripts\core_common\flag_shared;
 #using scripts\core_common\array_shared;
-#using scripts\zm_common\zm_vo;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
 #using scripts\zm_common\zm_characters;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_unitrigger;
+#using scripts\zm_common\zm_vo;
 
 #namespace namespace_a35b0e2;
 

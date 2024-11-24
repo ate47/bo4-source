@@ -1,7 +1,7 @@
-#using scripts\core_common\ai\systems\behavior_tree_utility;
 #using scripts\core_common\ai\archetype_utility;
-#using scripts\core_common\math_shared;
+#using scripts\core_common\ai\systems\behavior_tree_utility;
 #using scripts\core_common\ai_shared;
+#using scripts\core_common\math_shared;
 
 #namespace aiutility;
 

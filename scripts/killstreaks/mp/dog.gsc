@@ -1,8 +1,8 @@
-#using scripts\core_common\system_shared;
-#using scripts\core_common\struct;
-#using scripts\killstreaks\killstreaks_shared;
-#using scripts\killstreaks\dog_shared;
 #using scripts\abilities\ability_power;
+#using scripts\core_common\struct;
+#using scripts\core_common\system_shared;
+#using scripts\killstreaks\dog_shared;
+#using scripts\killstreaks\killstreaks_shared;
 
 #namespace dog;
 

@@ -1,7 +1,7 @@
-#using scripts\zm_common\zm_stats;
-#using scripts\zm_common\zm_customgame;
-#using scripts\zm_common\zm_bgb;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_bgb;
+#using scripts\zm_common\zm_customgame;
+#using scripts\zm_common\zm_stats;
 
 #namespace zm_bgb_wall_power;
 

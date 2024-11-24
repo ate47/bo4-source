@@ -1,6 +1,6 @@
 #using script_cb32d07c95e5628;
-#using scripts\core_common\struct;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\struct;
 
 #namespace item_spawn_group;
 

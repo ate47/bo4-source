@@ -1,8 +1,8 @@
-#using scripts\zm_common\zm_inventory;
-#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\flag_shared;
 #using scripts\core_common\system_shared;
+#using scripts\zm_common\zm_inventory;
 
 #namespace zm_ui_inventory;
 

@@ -1,13 +1,13 @@
 #using scripts\core_common\ai\archetype_nosferatu;
+#using scripts\core_common\ai\systems\fx_character;
+#using scripts\core_common\ai_shared;
+#using scripts\core_common\callbacks_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\postfx_shared;
+#using scripts\core_common\system_shared;
+#using scripts\core_common\util_shared;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_utility;
-#using scripts\core_common\callbacks_shared;
-#using scripts\core_common\ai\systems\fx_character;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\system_shared;
-#using scripts\core_common\postfx_shared;
-#using scripts\core_common\clientfield_shared;
-#using scripts\core_common\ai_shared;
 
 #namespace zm_ai_nosferatu;
 

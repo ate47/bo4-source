@@ -1,5 +1,5 @@
-#using scripts\core_common\values_shared;
 #using scripts\core_common\popups_shared;
+#using scripts\core_common\values_shared;
 #using scripts\killstreaks\emp_shared;
 
 #namespace killstreakrules;

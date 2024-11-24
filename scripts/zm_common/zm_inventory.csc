@@ -1,5 +1,5 @@
-#using scripts\zm_common\zm_maptable;
 #using scripts\core_common\util_shared;
+#using scripts\zm_common\zm_maptable;
 
 #namespace zm_inventory;
 

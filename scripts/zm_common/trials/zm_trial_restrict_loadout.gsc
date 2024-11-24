@@ -1,17 +1,17 @@
-#using scripts\zm_common\trials\zm_trial_disable_hero_weapons;
-#using scripts\zm_common\zm_weapons;
-#using scripts\zm_common\zm_utility;
-#using scripts\zm_common\zm_trial_util;
-#using scripts\zm_common\zm_traps;
-#using scripts\zm_common\zm_equipment;
-#using scripts\zm_common\zm_trial;
-#using scripts\zm_common\zm_loadout;
-#using scripts\core_common\gameobjects_shared;
-#using scripts\core_common\struct;
+#using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\flag_shared;
+#using scripts\core_common\gameobjects_shared;
+#using scripts\core_common\struct;
 #using scripts\core_common\system_shared;
-#using scripts\core_common\array_shared;
+#using scripts\zm_common\trials\zm_trial_disable_hero_weapons;
+#using scripts\zm_common\zm_equipment;
+#using scripts\zm_common\zm_loadout;
+#using scripts\zm_common\zm_traps;
+#using scripts\zm_common\zm_trial;
+#using scripts\zm_common\zm_trial_util;
+#using scripts\zm_common\zm_utility;
+#using scripts\zm_common\zm_weapons;
 
 #namespace zm_trial_restrict_loadout;
 

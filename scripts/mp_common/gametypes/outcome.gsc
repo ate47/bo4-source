@@ -1,6 +1,6 @@
-#using scripts\mp_common\gametypes\globallogic_score;
-#using scripts\mp_common\gametypes\globallogic;
 #using scripts\core_common\flagsys_shared;
+#using scripts\mp_common\gametypes\globallogic;
+#using scripts\mp_common\gametypes\globallogic_score;
 
 #namespace outcome;
 

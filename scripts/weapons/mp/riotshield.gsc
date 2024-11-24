@@ -1,5 +1,5 @@
-#using scripts\weapons\riotshield;
 #using scripts\core_common\system_shared;
+#using scripts\weapons\riotshield;
 
 #namespace riotshield;
 

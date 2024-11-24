@@ -1,6 +1,6 @@
-#using scripts\core_common\duplicaterender_mgr;
-#using scripts\core_common\clientfield_shared;
 #using scripts\core_common\audio_shared;
+#using scripts\core_common\clientfield_shared;
+#using scripts\core_common\duplicaterender_mgr;
 
 #namespace mute_smoke;
 

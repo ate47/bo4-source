@@ -1,6 +1,6 @@
-#using scripts\weapons\weaponobjects;
-#using scripts\weapons\proximity_grenade;
 #using scripts\weapons\molotov;
+#using scripts\weapons\proximity_grenade;
+#using scripts\weapons\weaponobjects;
 
 #namespace trapd;
 

@@ -1,6 +1,6 @@
-#using scripts\mp_common\gametypes\ct_core;
-#using scripts\killstreaks\helicopter_shared;
 #using scripts\killstreaks\ai_tank_shared;
+#using scripts\killstreaks\helicopter_shared;
+#using scripts\mp_common\gametypes\ct_core;
 
 #namespace ct_battery;
 

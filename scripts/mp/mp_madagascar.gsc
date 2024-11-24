@@ -1,14 +1,14 @@
-#using scripts\mp\mp_madagascar_sound;
-#using scripts\mp\mp_madagascar_fx;
-#using scripts\mp_common\util;
-#using scripts\mp_common\load;
-#using scripts\core_common\scene_shared;
-#using scripts\core_common\flag_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
-#using scripts\core_common\util_shared;
-#using scripts\core_common\struct;
 #using scripts\core_common\compass;
+#using scripts\core_common\flag_shared;
+#using scripts\core_common\scene_shared;
+#using scripts\core_common\struct;
+#using scripts\core_common\util_shared;
+#using scripts\mp\mp_madagascar_fx;
+#using scripts\mp\mp_madagascar_sound;
+#using scripts\mp_common\load;
+#using scripts\mp_common\util;
 
 #namespace mp_madagascar;
 
