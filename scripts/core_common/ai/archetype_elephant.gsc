@@ -16,7 +16,7 @@
 #using scripts\core_common\ai\systems\behavior_tree_utility;
 #using scripts\core_common\status_effects\status_effect_util;
 #using scripts\core_common\ai\archetype_locomotion_utility;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\systems\animation_state_machine_mocomp;
 #using scripts\core_common\ai\systems\animation_state_machine_notetracks;
 #using scripts\core_common\ai_shared;

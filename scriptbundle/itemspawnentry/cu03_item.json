@@ -32,7 +32,7 @@
     "model": "#hash_221bc927a6f7912a",
     "type": "itemspawnentry",
     "hintstring": "#hash_225a5cf3f4ceae68",
-    "unlockableitemref": "#hash_69cf38b861b57f9f",
+    "unlockableitemref": "#wz_character_buffassault",
     "name": "cu03_item",
     "displayname": "#hash_225a5cf3f4ceae68",
     "icon": "#hash_209c5ca19ae67be8",

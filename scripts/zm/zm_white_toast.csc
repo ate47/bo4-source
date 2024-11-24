@@ -1,7 +1,7 @@
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_wallbuy;
 #using scripts\zm_common\zm_utility;
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm;
@@ -20,11 +20,11 @@
 // Checksum 0xa207f6c2, Offset: 0x1c0
 // Size: 0x374
 function init_clientfields() {
-    namespace_617a54f4::function_d8383812(#"sc_toast_apd", 8000, "cp_toast_apd", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_diner", 8000, "cp_toast_diner", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_lounge", 8000, "cp_toast_lounge", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_storage", 8000, "cp_toast_storage", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_beds", 8000, "cp_toast_beds", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_apd", 8000, "cp_toast_apd", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_diner", 8000, "cp_toast_diner", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_lounge", 8000, "cp_toast_lounge", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_storage", 8000, "cp_toast_storage", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_beds", 8000, "cp_toast_beds", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
     clientfield::register("scriptmover", "soul_capture_filled", 1, 1, "int", &function_2a58f409, 0, 0);
     clientfield::register("scriptmover", "soul_capture_depleted", 1, 1, "int", &function_6295ef8c, 0, 0);
     clientfield::register("zbarrier", "discharge_pap", 1, 1, "int", &discharge_pap, 0, 0);

@@ -4,7 +4,7 @@
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_ui_inventory;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_powerups;
@@ -34,7 +34,7 @@ function init() {
     level.a_s_chests = struct::get_array(#"hash_396f65af88a25e7d");
     foreach (s_chest in level.a_s_chests) {
         s_chest chest_init();
-        namespace_617a54f4::function_d8383812(s_chest.script_noteworthy, 1, s_chest, &function_62f0c1c, &function_32edfed);
+        zm_sq_modules::function_d8383812(s_chest.script_noteworthy, 1, s_chest, &function_62f0c1c, &function_32edfed);
     }
     if (zm_custom::function_901b751c(#"zmwonderweaponisenabled")) {
         zm_sq::register(#"hash_1222a3e832bad772", #"hash_2725edd09b4bb1b6", #"hash_13b316981d67e1ad", &step_1_setup, &step_1_cleanup);
@@ -241,9 +241,9 @@ function private step_3_setup(var_a276c861) {
         level.var_e2ce1fe1 = 0;
         while (level.var_e2ce1fe1 < 3) {
             function_887ad605();
-            namespace_617a54f4::function_3f808d3d(level.var_f9f50915.script_noteworthy);
+            zm_sq_modules::function_3f808d3d(level.var_f9f50915.script_noteworthy);
             level waittill(#"hash_17332cf9062484a6");
-            namespace_617a54f4::function_2a94055d(level.var_f9f50915.script_noteworthy);
+            zm_sq_modules::function_2a94055d(level.var_f9f50915.script_noteworthy);
             wait 1;
             level.var_f9f50915.mdl_chest stoploopsound(1);
             level.var_f9f50915.mdl_chest thread scene::play(#"p8_fxanim_zm_zod_kraken_chest_bundle", "close", level.var_f9f50915.mdl_chest);
@@ -273,7 +273,7 @@ function private step_3_setup(var_a276c861) {
 // Size: 0x1b0
 function private step_3_cleanup(var_a276c861, var_19e802fa) {
     if (var_19e802fa) {
-        namespace_617a54f4::function_2a94055d(level.var_f9f50915.script_noteworthy);
+        zm_sq_modules::function_2a94055d(level.var_f9f50915.script_noteworthy);
     }
     level.var_2e2dab8d = randomint(level.var_b26f906a.size);
     level.var_f3abf34a = struct::get(level.var_b26f906a[level.var_2e2dab8d]);

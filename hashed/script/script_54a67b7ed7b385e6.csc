@@ -1,6 +1,6 @@
 #using scripts\core_common\util_shared;
 #using script_442f1042340e6bf1;
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\core_common\struct;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\callbacks_shared;
@@ -22,7 +22,7 @@ function init() {
     level._effect[#"hash_39f5cccf6d3254d0"] = #"hash_39d7ae4b883e7e75";
     a_s_chests = struct::get_array(#"hash_396f65af88a25e7d");
     foreach (s_chest in a_s_chests) {
-        namespace_617a54f4::function_d8383812(s_chest.script_noteworthy, 1, s_chest.script_noteworthy, 400, level._effect[#"soul_fx"], level._effect[#"hash_169b53a5e4572fdc"]);
+        zm_sq_modules::function_d8383812(s_chest.script_noteworthy, 1, s_chest.script_noteworthy, 400, level._effect[#"soul_fx"], level._effect[#"hash_169b53a5e4572fdc"]);
     }
     clientfield::register("scriptmover", "" + #"clue_fx", 1, 1, "int", &clue_fx, 0, 0);
     clientfield::register("scriptmover", "" + #"despawn_fx", 1, 1, "int", &despawn_fx, 0, 0);

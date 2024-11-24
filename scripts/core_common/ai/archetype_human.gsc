@@ -1,4 +1,4 @@
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\archetype_utility;
 #using scripts\core_common\ai\archetype_human_interface;
 #using scripts\core_common\ai\systems\gib;

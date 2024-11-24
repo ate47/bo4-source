@@ -8,7 +8,7 @@
         "#scripts/zm/zm_towers_ffotd.gsc",
         "#scripts/zm/ai/zm_ai_gladiator.gsc",
         "#script_22272f0ebd9de783",
-        "#script_684097158a90b5c3",
+        "#scripts/zm_common/util/ai_gladiator_util.gsc",
         "#scripts/zm/ai/zm_ai_tiger.gsc",
         "#scripts/zm/powerup/zm_powerup_free_perk.gsc",
         "#script_153be0dd975d4b00",

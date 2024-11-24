@@ -1,5 +1,5 @@
 #using scripts\zm_common\zm;
-#using script_698dd790cdc4965f;
+#using scripts\zm_common\trials\zm_trial_disable_upgraded_weapons;
 #using scripts\zm_common\zm_loadout;
 #using scripts\zm_common\zm_trial_util;
 #using scripts\zm_common\zm_trial;
@@ -121,7 +121,7 @@ function private function_6a8979c9() {
     foreach (weapon in self getweaponslist(1)) {
         if (zm_loadout::is_hero_weapon(weapon) || isdefined(weapon.isriotshield) && weapon.isriotshield) {
             self lockweapon(weapon);
-        } else if (!namespace_83dc3729::is_active() || !isarray(level.var_af806901) || !isdefined(level.var_af806901[weapon.name])) {
+        } else if (!zm_trial_disable_upgraded_weapons::is_active() || !isarray(level.var_af806901) || !isdefined(level.var_af806901[weapon.name])) {
             self unlockweapon(weapon);
         }
         if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {

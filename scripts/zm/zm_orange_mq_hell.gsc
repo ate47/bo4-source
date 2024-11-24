@@ -2,7 +2,7 @@
 #using scripts\zm\zm_orange_pap;
 #using scripts\zm\zm_orange_zones;
 #using scripts\zm\zm_orange_fasttravel_ziplines;
-#using script_4333a03353e1e13a;
+#using scripts\zm\zm_orange_fasttravel_flinger;
 #using scripts\zm\zm_orange_ee_dynamite;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
 #using scripts\core_common\ai\systems\gib;
@@ -17,7 +17,7 @@
 #using scripts\zm_common\zm_round_logic;
 #using scripts\zm_common\zm_item_pickup;
 #using scripts\zm_common\zm_powerups;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm\zm_hms_util;
@@ -51,11 +51,11 @@ function preload() {
     clientfield::register("vehicle", "" + #"lantern_explode_fx", 24000, 1, "counter");
     clientfield::register("toplayer", "" + #"hash_78b8d89d34b32241", 24000, 2, "int");
     clientfield::register("scriptmover", "" + #"lantern_outline", 24000, 1, "int");
-    namespace_617a54f4::function_d8383812(#"sc_lantern_1", 24000, "sc_lantern_1", &function_36eb3c96, &function_defd8c26, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_2", 24000, "sc_lantern_2", &function_36eb3c96, &function_defd8c26, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_3", 24000, "sc_lantern_3", &function_36eb3c96, &function_defd8c26, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_4", 24000, "sc_lantern_4", &function_36eb3c96, &function_defd8c26, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_end", 24000, "sc_lantern_end", &function_36eb3c96, &function_f578fb22, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_1", 24000, "sc_lantern_1", &function_36eb3c96, &function_defd8c26, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_2", 24000, "sc_lantern_2", &function_36eb3c96, &function_defd8c26, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_3", 24000, "sc_lantern_3", &function_36eb3c96, &function_defd8c26, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_4", 24000, "sc_lantern_4", &function_36eb3c96, &function_defd8c26, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_end", 24000, "sc_lantern_end", &function_36eb3c96, &function_f578fb22, 1);
     level flag::init(#"hell_on_earth");
     init_2();
 }
@@ -393,7 +393,7 @@ function function_25c6ed8d() {
     var_d49079c = 0;
     foreach (e_player in getplayers()) {
         if (zombie_utility::is_player_valid(e_player, 0, 0)) {
-            e_player thread namespace_6036de69::fling_player(vol_fling);
+            e_player thread zm_orange_fasttravel_flinger::fling_player(vol_fling);
             e_player playsound(#"hash_7f08b47352413d9a");
             if (!var_d49079c) {
                 e_player thread function_6f0a7fea();
@@ -525,7 +525,7 @@ function function_f578fb22(var_f0e6c7a2, ent) {
 // Checksum 0xd11afd90, Offset: 0x2770
 // Size: 0x2e4
 function function_5e3a92e() {
-    namespace_617a54f4::function_2a94055d(self.var_5f9f040);
+    zm_sq_modules::function_2a94055d(self.var_5f9f040);
     level thread function_a4210fd2(6);
     playsoundatposition(#"evt_nuke_flash", (0, 0, 0));
     a_e_players = getplayers();
@@ -594,7 +594,7 @@ function function_9be0a8a6(str_id) {
     s_sc = struct::get(str_id, "script_noteworthy");
     s_sc.var_7944be4a = 0;
     s_sc.var_5f9f040 = hash(str_id);
-    namespace_617a54f4::function_3f808d3d(s_sc.var_5f9f040);
+    zm_sq_modules::function_3f808d3d(s_sc.var_5f9f040);
     /#
         iprintlnbold("<dev string:x7b>");
     #/
@@ -621,7 +621,7 @@ function function_e2b8d7bb() {
 function function_3c3bee91() {
     level.var_5d5b7e8e.var_a41818b5 setspeedimmediate(0);
     function_95557832();
-    namespace_617a54f4::function_3f808d3d(#"sc_lantern_end");
+    zm_sq_modules::function_3f808d3d(#"sc_lantern_end");
     level thread zm_orange_util::function_fd24e47f(#"hash_6f4de6a856d64c98");
     /#
         iprintlnbold("<dev string:xad>");
@@ -633,7 +633,7 @@ function function_3c3bee91() {
     wait 15;
     zm_orange_util::function_fd24e47f(#"hash_5aba3394c65e8f8c");
     wait 5;
-    namespace_617a54f4::function_2a94055d(#"sc_lantern_end");
+    zm_sq_modules::function_2a94055d(#"sc_lantern_end");
     zm_hms_util::pause_zombies(1);
     if (getplayers().size > 1) {
         level thread zm_player::spectators_respawn();

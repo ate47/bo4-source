@@ -2,7 +2,7 @@
     "amount": 1,
     "description": "#hash_5456229cfd85d43b",
     "configstringfiletype": "scriptbundle",
-    "weapon": "weapon#hash_6042372cd71b6dd0",
+    "weapon": "weapon#ww_random_ray_gun1_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 90,
     "var_65b3a12": 6,

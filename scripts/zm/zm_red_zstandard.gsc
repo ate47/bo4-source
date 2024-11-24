@@ -1,7 +1,7 @@
 #using scripts\zm\zm_red_util;
 #using scripts\zm\ai\zm_ai_catalyst;
-#using script_4d00889cf8c807d5;
-#using script_3aa54d3cb36ea43f;
+#using scripts\zm_common\util\ai_skeleton_util;
+#using scripts\zm_common\util\ai_gegenees_util;
 #using scripts\zm_common\zm_characters;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;

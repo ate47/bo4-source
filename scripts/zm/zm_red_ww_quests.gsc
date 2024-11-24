@@ -11,8 +11,8 @@
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_customgame;
 #using scripts\core_common\ai\zombie_utility;
-#using script_4d00889cf8c807d5;
-#using script_3aa54d3cb36ea43f;
+#using scripts\zm_common\util\ai_skeleton_util;
+#using scripts\zm_common\util\ai_gegenees_util;
 #using scripts\zm_common\zm_vo;
 #using scripts\zm_common\zm_player;
 #using scripts\zm_common\zm_bgb_pack;
@@ -28,7 +28,7 @@
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_weapons;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm;
 #using scripts\core_common\throttle_shared;
 #using scripts\core_common\trigger_shared;
@@ -102,10 +102,10 @@ function init() {
     clientfield::register("scriptmover", "" + #"hash_3a6cd708b9ee114c", 16000, 1, "int");
     clientfield::register("scriptmover", "" + #"hash_3e1feb871865ccd5", 16000, 1, "int");
     clientfield::register("actor", "" + #"ww_combat_fx", 16000, getminbitcountfornum(4), "int");
-    namespace_617a54f4::function_d8383812(#"ww_sc_earth", 16000, "ww_sc_g", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"ww_sc_death", 16000, "ww_sc_c", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"ww_sc_light", 16000, "ww_sc_h", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"ww_sc_air", 16000, "ww_sc_o", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_earth", 16000, "ww_sc_g", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_death", 16000, "ww_sc_c", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_light", 16000, "ww_sc_h", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_air", 16000, "ww_sc_o", &is_soul_capture, &soul_captured, 1);
     level.var_bd33ecba = level.zombie_ai_limit;
     if (!isdefined(level.var_bd33ecba)) {
         level.var_bd33ecba = 24;
@@ -3828,10 +3828,10 @@ function function_aeaedb3c() {
 // Checksum 0x645089ae, Offset: 0x133e8
 // Size: 0x84
 function function_ec538ada() {
-    namespace_617a54f4::function_3f808d3d(#"ww_sc_earth");
-    namespace_617a54f4::function_3f808d3d(#"ww_sc_death");
-    namespace_617a54f4::function_3f808d3d(#"ww_sc_light");
-    namespace_617a54f4::function_3f808d3d(#"ww_sc_air");
+    zm_sq_modules::function_3f808d3d(#"ww_sc_earth");
+    zm_sq_modules::function_3f808d3d(#"ww_sc_death");
+    zm_sq_modules::function_3f808d3d(#"ww_sc_light");
+    zm_sq_modules::function_3f808d3d(#"ww_sc_air");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -3878,7 +3878,7 @@ function soul_captured(var_f0e6c7a2, ent) {
         level.var_50a078bd++;
         if (level.var_50a078bd >= 10) {
             level.var_b40a2558++;
-            namespace_617a54f4::function_2a94055d(#"ww_sc_earth");
+            zm_sq_modules::function_2a94055d(#"ww_sc_earth");
             s_quest = level.var_d225ea18[#"earth"];
             var_d02a32e2 = getent(s_quest.var_52584ae6, "targetname");
             var_d02a32e2 clientfield::set("" + #"hash_7f97409952dd051b", 0);
@@ -3890,7 +3890,7 @@ function soul_captured(var_f0e6c7a2, ent) {
         level.var_626adbe3++;
         if (level.var_626adbe3 >= 10) {
             level.var_b40a2558++;
-            namespace_617a54f4::function_2a94055d(#"ww_sc_death");
+            zm_sq_modules::function_2a94055d(#"ww_sc_death");
             s_quest = level.var_d225ea18[#"death"];
             var_d02a32e2 = getent(s_quest.var_52584ae6, "targetname");
             var_d02a32e2 clientfield::set("" + #"hash_7f97409952dd051b", 0);
@@ -3902,7 +3902,7 @@ function soul_captured(var_f0e6c7a2, ent) {
         level.var_2eadf8bc++;
         if (level.var_2eadf8bc >= 10) {
             level.var_b40a2558++;
-            namespace_617a54f4::function_2a94055d(#"ww_sc_light");
+            zm_sq_modules::function_2a94055d(#"ww_sc_light");
             s_quest = level.var_d225ea18[#"light"];
             var_d02a32e2 = getent(s_quest.var_52584ae6, "targetname");
             var_d02a32e2 clientfield::set("" + #"hash_7f97409952dd051b", 0);
@@ -3914,7 +3914,7 @@ function soul_captured(var_f0e6c7a2, ent) {
         level.var_a08be993++;
         if (level.var_a08be993 >= 10) {
             level.var_b40a2558++;
-            namespace_617a54f4::function_2a94055d(#"ww_sc_air");
+            zm_sq_modules::function_2a94055d(#"ww_sc_air");
             s_quest = level.var_d225ea18[#"air"];
             var_d02a32e2 = getent(s_quest.var_52584ae6, "targetname");
             var_d02a32e2 clientfield::set("" + #"hash_7f97409952dd051b", 0);

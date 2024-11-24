@@ -6,7 +6,7 @@
 #using scripts\zm_common\zm_spawner;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_round_spawning;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_behavior;
 #using scripts\zm_common\zm_score;
 #using scripts\core_common\ai\zombie_utility;

@@ -99,7 +99,7 @@ function zone_init() {
     zm_zonemgr::add_adjacent_zone("zone_intersection_of_treasuries_upper", "zone_bathhouse_inside", #"hash_17525acf356976a1", 0);
     zm_zonemgr::add_adjacent_zone("zone_intersection_of_treasuries_lower", "zone_spartan_east_to_treasuries", "connect_spartan_to_treasuries", 0);
     zm_zonemgr::add_adjacent_zone("zone_intersection_of_treasuries_lower", "zone_stoa_of_the_athenians_west", "connect_stoa_of_athenians_to_treasuries", 0);
-    zm_zonemgr::add_adjacent_zone("zone_intersection_of_treasuries_lower", "zone_intersection_of_treasuries_upper", #"hash_49defe7940c8d803", 0);
+    zm_zonemgr::add_adjacent_zone("zone_intersection_of_treasuries_lower", "zone_intersection_of_treasuries_upper", #"connect_treasuries_zones", 0);
     zm_zonemgr::add_adjacent_zone("zone_stoa_of_the_athenians_east", "zone_temple_to_stoa_of_the_athenians", #"hash_6d71447c1ac2346a", 0);
     zm_zonemgr::add_adjacent_zone("zone_stoa_of_the_athenians_east", "zone_temple_to_stoa_of_the_athenians", #"hash_319f89db9006c766", 0);
     zm_zonemgr::add_adjacent_zone("zone_stoa_of_the_athenians_east", "zone_stoa_of_athenians_to_spartan_upper", "connect_stoa_of_athenians_to_spartan", 0);
@@ -135,7 +135,7 @@ function zone_init() {
     a_t_doors = getentarray("zombie_door", "targetname");
     level thread function_9391e6d6();
     level thread function_74c5dbb7();
-    level thread function_f74719fa();
+    level thread connect_treasuries_zones();
     level thread function_8b43360c();
     level thread function_8eefbadf();
     level thread function_ca0c498e();
@@ -173,11 +173,11 @@ function function_74c5dbb7() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x495266f9, Offset: 0x18a8
 // Size: 0x94
-function function_f74719fa() {
+function connect_treasuries_zones() {
     level endon(#"end_game");
     level flag::wait_till("start_zombie_round_logic");
     level flag::wait_till_any(array("connect_stoa_of_athenians_to_treasuries", "connect_spartan_to_treasuries", #"hash_17525acf356976a1"));
-    level flag::set(#"hash_49defe7940c8d803");
+    level flag::set(#"connect_treasuries_zones");
 }
 
 // Namespace zm_red_zones/zm_red_zones

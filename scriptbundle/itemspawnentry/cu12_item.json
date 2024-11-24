@@ -29,7 +29,7 @@
     "model": "#hash_61d19335b4846949",
     "type": "itemspawnentry",
     "hintstring": "#hash_6fc8012ad54d50c7",
-    "unlockableitemref": "#hash_5b711b9952035f9b",
+    "unlockableitemref": "#wz_character_diego",
     "name": "cu12_item",
     "displayname": "#hash_6fc8012ad54d50c7",
     "icon": "#hash_232d09479bc6677",

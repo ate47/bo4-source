@@ -3,7 +3,7 @@
 #using scripts\zm\zm_orange_zones;
 #using scripts\zm\zm_orange_util;
 #using scripts\zm\zm_orange_lighthouse;
-#using script_4333a03353e1e13a;
+#using scripts\zm\zm_orange_fasttravel_flinger;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
 #using script_4b80fc97d8469299;
 #using scripts\zm_common\callbacks;
@@ -437,7 +437,7 @@ function function_80a40c1c() {
         if (level.zones[#"ice_floe"].is_enabled === 0) {
             foreach (e_player in getplayers()) {
                 if (e_player istouching(level.var_f7c50c66)) {
-                    e_player namespace_6036de69::fling_player(level.var_f7c50c66);
+                    e_player zm_orange_fasttravel_flinger::fling_player(level.var_f7c50c66);
                 }
             }
         }

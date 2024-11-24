@@ -12,7 +12,7 @@
         "#scripts/zm/ai/zm_ai_catalyst.gsc",
         "#scripts/zm/ai/zm_ai_dog.gsc",
         "#scripts/zm/ai/zm_ai_dog_interface.gsc",
-        "#script_ab862743b3070a",
+        "#scripts/zm_common/util/ai_dog_util.gsc",
         "#scripts/zm/powerup/zm_powerup_zombie_blood.gsc",
         "#scripts/zm/zm_escape_ffotd.gsc"
     ],
@@ -25,7 +25,7 @@
         "#script_1fcfc043eedf7cec",
         "#scripts/zm/ai/zm_ai_ghost.csc",
         "#scripts/zm/ai/zm_ai_catalyst.csc",
-        "#script_5fb8da2731850d9e",
+        "#scripts/zm_common/util/ai_dog_util.csc",
         "#scripts/zm/powerup/zm_powerup_zombie_blood.csc",
         "#scripts/zm/zm_escape_ffotd.csc"
     ]

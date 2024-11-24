@@ -2,7 +2,7 @@
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_wallbuy;
 #using scripts\zm_common\zm_utility;
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm_common\zm;
 #using scripts\zm_common\load;
@@ -29,13 +29,13 @@ function init_clientfields() {
     clientfield::register("scriptmover", "" + #"triad_beam", 8000, getminbitcountfornum(3), "int", &triad_beam, 0, 0);
     clientfield::register("scriptmover", "" + #"wisp_fx", 8000, 2, "int", &function_41640257, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_2108935a0c33f89a", 8000, getminbitcountfornum(3), "int", &function_b24b4025, 0, 0);
-    namespace_617a54f4::function_d8383812(#"soul_capture_kp1", 8000, #"kp_1", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"soul_capture_kp2", 8000, #"kp_2", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"soul_capture_kp3", 8000, #"kp_3", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"soul_capture_kp1_halfway", 8000, #"kp_1_halfway", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"soul_capture_kp2_halfway", 8000, #"kp_2_halfway", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"soul_capture_kp3_halfway", 8000, #"kp_3_halfway", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"soul_capture_forest", 8000, #"kp_forest", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"soul_capture_kp1", 8000, #"kp_1", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"soul_capture_kp2", 8000, #"kp_2", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"soul_capture_kp3", 8000, #"kp_3", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"soul_capture_kp1_halfway", 8000, #"kp_1_halfway", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"soul_capture_kp2_halfway", 8000, #"kp_2_halfway", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"soul_capture_kp3_halfway", 8000, #"kp_3_halfway", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"soul_capture_forest", 8000, #"kp_forest", 400, level._effect[#"kp_projectile"], level._effect[#"hash_27063b90fbaa52"], undefined, undefined, 1);
 }
 
 // Namespace mansion_triad/zm_mansion_triad

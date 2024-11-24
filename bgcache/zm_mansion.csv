@@ -1162,7 +1162,7 @@ weapon,zhield_dw_zm,294cdbe8ec8
 weapon,zitem_rocketshield_part_2_zm,294cdb93ac8
 weapon,stake_knife_zm,294cdb81068
 weapon,hash_1783057563ce1ca2,294cdbc8f48
-weapon,hash_18df25a269d0417f,294cdb7d078
+weapon,ww_random_ray_gun3_charged_zm,294cdb7d078
 weapon,zitem_silver_bullet_part_2_zm,294cdc88c48
 weapon,hash_1d04d1f6697e589e,294cdb690c8
 weapon,hash_2ab63008299706dc,294cdb45158
@@ -1171,7 +1171,7 @@ weapon,hash_300b5026595febfd,294cdbe3988
 weapon,hash_35471ac6392c871f,294cdb650d8
 weapon,zitem_silver_molten_part_1_zm,294cdbc24b8
 weapon,zitem_silver_molten_part_3_zm,294cdb7fb18
-weapon,hash_39c9e53910c6e402,294cdbcb9e8
+weapon,ww_random_ray_gun2_charged_zm,294cdbcb9e8
 weapon,zitem_rocketshield_part_3_zm,294cdcef558
 weapon,hash_3e43a30cffbde52d,294cdbea418
 weapon,buildable_piece_zm,294cdbf23f8
@@ -1185,11 +1185,11 @@ weapon,ww_crossbow_impaler_t8_zm,294cdc362e8
 weapon,hash_5ce45eb5c7502585,294cdb96568
 weapon,hash_5d81702cbc01eec2,294cdb4bbe8
 weapon,hash_5e481ebaee7fd92a,294cdb5e648
-weapon,hash_601c4a2cd6fabedc,294cdd03508
-weapon,hash_61612e3e819376de,294cdc9a158
+weapon,ww_random_ray_gun1_zm,294cdd03508
+weapon,ww_random_ray_gun3_zm,294cdc9a158
 weapon,hash_61bd2dddf7c9dbc2,294cdbe7978
 weapon,hash_62121eddf8120244,294cdb6d0b8
-weapon,hash_62d2ea43a8cf6113,294cdb865a8
+weapon,ww_random_ray_gun2_zm,294cdb865a8
 weapon,zitem_silver_molten_part_2_zm,294cdb99008
 weapon,zombie_ai_defaultmelee,294cdcc20b8
 weapon,zitem_rocketshield_part_1_zm,294cdcf5fe8

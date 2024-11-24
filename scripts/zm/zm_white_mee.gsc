@@ -1,7 +1,7 @@
-#using script_25b8e6a85a7f8635;
+#using scripts\zm\zm_white_perk_pap;
 #using scripts\zm\zm_hms_util;
 #using scripts\zm_common\zm_player;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_behavior;
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_zonemgr;
@@ -704,7 +704,7 @@ function function_6af32608() {
         waitframe(2);
         var_2379bb0e show();
         wait 3.5;
-        level thread namespace_9efb8d22::function_48acb6ed(var_c9e07c3e);
+        level thread zm_white_perk_pap::function_48acb6ed(var_c9e07c3e);
         playrumbleonposition("zm_white_perk_impact", var_c9e07c3e);
         playrumbleonposition("zm_white_perk_aftershock", var_c9e07c3e);
         level thread zm_powerups::specific_powerup_drop("free_perk", var_c9e07c3e, undefined, 0.1, undefined, 1);

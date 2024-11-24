@@ -1,4 +1,4 @@
-#using script_25b8e6a85a7f8635;
+#using scripts\zm\zm_white_perk_pap;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_powerups;
 #using scripts\zm_common\zm_trial_util;
@@ -135,7 +135,7 @@ function function_fe74909(drop_point) {
     waitframe(2);
     var_2379bb0e show();
     wait 3.5;
-    level thread namespace_9efb8d22::function_48acb6ed(drop_point);
+    level thread zm_white_perk_pap::function_48acb6ed(drop_point);
     playrumbleonposition("zm_white_perk_impact", drop_point);
     playrumbleonposition("zm_white_perk_aftershock", drop_point);
     level.var_7540bc25 = zm_powerups::specific_powerup_drop("nuke", drop_point, undefined, 0.1, undefined, 0);

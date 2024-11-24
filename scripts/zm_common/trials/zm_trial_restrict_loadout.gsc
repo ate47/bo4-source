@@ -1,4 +1,4 @@
-#using script_35d3717bf2cbee8f;
+#using scripts\zm_common\trials\zm_trial_disable_hero_weapons;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_trial_util;
@@ -256,7 +256,7 @@ function private on_begin(var_e097dc07, var_f5300808) {
         break;
     case #"hash_7416cabf26f52c5f":
         var_e7beaa5 = zm_weapons::function_ed29dde5("pistol", 0, 1);
-        var_e7beaa5 = arraycombine(var_e7beaa5, array(#"hash_138efe2bb30be63c", #"hash_138f012bb30beb55", #"hash_46ad37ce8122812e", #"hash_138f002bb30be9a2", #"hash_3a8348f19a7e7629", #"ray_gun"), 0, 0);
+        var_e7beaa5 = arraycombine(var_e7beaa5, array(#"ww_random_ray_gun1", #"ww_random_ray_gun2", #"ww_random_ray_gun2_charged", #"ww_random_ray_gun3", #"ww_random_ray_gun3_charged", #"ray_gun"), 0, 0);
         var_fda63ae3 = function_f1dd7bf8(array("pistol_standard_t8", "pistol_burst_t8", "pistol_revolver_t8"));
         level zm_trial::function_25ee130(1);
         break;
@@ -614,7 +614,7 @@ function function_5fbf572(weapon, var_2f0cc3aa = 0) {
     if (var_2f0cc3aa && is_active(1) && isdefined(weapon) && is_melee_allowed(weapon)) {
         return true;
     }
-    if (is_active(1) || namespace_fc5170d1::is_active() || self function_635f9c02(weapon)) {
+    if (is_active(1) || zm_trial_disable_hero_weapons::is_active() || self function_635f9c02(weapon)) {
         if (isplayer(self)) {
             self zm_trial_util::function_97444b02();
         }

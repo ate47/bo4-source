@@ -29,7 +29,7 @@
     "model": "#p8_wz_cu_bottle",
     "type": "itemspawnentry",
     "hintstring": "#hash_3a1ebd341ba4f3f8",
-    "unlockableitemref": "#hash_40d3a04ab73da3fa",
+    "unlockableitemref": "#wz_character_dempsey",
     "name": "cu15_item",
     "displayname": "#hash_3a1ebd341ba4f3f8",
     "icon": "#ui_icon_inventory_perk_juggernog",

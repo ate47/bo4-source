@@ -4,7 +4,7 @@
 #using scripts\zm\zm_white_portals;
 #using scripts\zm\zm_white_special_rounds;
 #using scripts\zm\zm_hms_util;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_pack_a_punch;

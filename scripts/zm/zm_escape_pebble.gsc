@@ -5,7 +5,7 @@
 #using script_668c4fbb94671fb4;
 #using scripts\zm\zm_escape_util;
 #using scripts\zm_common\ai\zm_ai_utility;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_unitrigger;

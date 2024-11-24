@@ -1,7 +1,7 @@
 #using scripts\zm\zm_red_util;
 #using scripts\zm\zm_red;
 #using scripts\zm\perk\zm_perk_electric_cherry;
-#using script_4d00889cf8c807d5;
+#using scripts\zm_common\util\ai_skeleton_util;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
 #using scripts\zm_common\zm_vo;
 #using scripts\zm_common\zm_utility_zstandard;

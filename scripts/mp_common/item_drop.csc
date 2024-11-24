@@ -1,6 +1,6 @@
 #using scripts\mp_common\item_world_util;
 #using scripts\mp_common\item_world;
-#using script_c1eebdc8cad5d78;
+#using scripts\mp_common\item_inventory_util;
 #using scripts\mp_common\item_inventory;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\flagsys_shared;

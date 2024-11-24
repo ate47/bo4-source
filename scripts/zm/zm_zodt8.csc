@@ -1,10 +1,10 @@
 #using scripts\zm\weapons\zm_weap_riotshield;
 #using script_54a67b7ed7b385e6;
 #using scripts\zm\zm_zodt8_tutorial;
-#using script_5504fe574aed77a8;
+#using scripts\zm\zm_zodt8_side_quests;
 #using scripts\zm\zm_zodt8_sentinel_trial;
 #using scripts\zm\zm_zodt8_pap_quest;
-#using script_2a907fffc74a075d;
+#using scripts\zm\zm_zodt8_narrative;
 #using scripts\zm\zm_zodt8_eye;
 #using scripts\zm\zm_zodt8_sound;
 #using scripts\zm\powerup\zm_powerup_free_perk;
@@ -79,7 +79,7 @@ function event_handler[level_init] main(eventstruct) {
     zodt8_sentinel::init();
     namespace_4a807bff::init();
     namespace_b45e3f05::init();
-    namespace_57873b62::init();
+    zodt8_narrative::init();
     zm_audio_sq::init();
     load::main();
     init_water();

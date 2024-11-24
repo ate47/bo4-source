@@ -1,4 +1,4 @@
-#using script_387eab232fe22983;
+#using scripts\zm_common\util\ai_werewolf_util;
 #using scripts\zm\ai\zm_ai_nosferatu;
 #using scripts\zm\ai\zm_ai_catalyst;
 #using scripts\zm\zm_mansion;

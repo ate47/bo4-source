@@ -4,16 +4,6 @@ Dump of some parts of BO4 using [Atian Call of Duty Tools](https://github.com/at
 
 ![logo](logo.png)
 
-## Want to earn $50?
-
-I'M NOT JOKING, I WILL GIVE **\$50** TO ANYONE ABLE TO GIVE ME AN UNHASHED VALUE OF ONE OF THESE:
-
-```
-Alistair's Folly - hash_138efe2bb30be63c
-Chaos Theory - hash_138f012bb30beb55
-Alistair's Annihilator - hash_138f002bb30be9a2
-```
-
 ## Pools
 
 Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blob/master/docs/notes/xassetpools.csv))

@@ -33,7 +33,7 @@
     "model": "#hash_2bce8292eb632293",
     "type": "itemspawnentry",
     "hintstring": "#hash_6b8f87d007d03e59",
-    "unlockableitemref": "#hash_4349d21cde0ca3be",
+    "unlockableitemref": "#wz_character_reaper",
     "name": "cu35_item",
     "displayname": "#hash_6b8f87d007d03e59",
     "icon": "#hash_1bd93a98da71618b",

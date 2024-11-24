@@ -3,7 +3,7 @@
 #using scripts\core_common\util_shared;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\callbacks_shared;
-#using script_67c87580908a0a00;
+#using scripts\core_common\activecamo_shared_util;
 
 #namespace activecamo;
 

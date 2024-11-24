@@ -5,7 +5,7 @@
         "#scripts/zm/zm_office_ffotd.gsc",
         "#scripts/zm/ai/zm_ai_dog_interface.gsc",
         "#scripts/zm/weapons/zm_weap_freezegun.gsc",
-        "#script_ab862743b3070a",
+        "#scripts/zm_common/util/ai_dog_util.gsc",
         "#script_799eb7fe6ae01a89",
         "#scripts/core_common/ai/archetype_nova_crawler.gsc",
         "#scripts/core_common/ai/archetype_nova_crawler_interface.gsc",
@@ -28,7 +28,7 @@
     "cscScripts": [
         "#scripts/zm/zm_office_ffotd.csc",
         "#scripts/zm/weapons/zm_weap_freezegun.csc",
-        "#script_5fb8da2731850d9e",
+        "#scripts/zm_common/util/ai_dog_util.csc",
         "#scripts/core_common/ai/archetype_nova_crawler.csc",
         "#script_711f23e6ccc0babd",
         "#scripts/zm/ai/zm_ai_nova_crawler.csc",

@@ -146,7 +146,7 @@
         "#scripts/zm_common/gametypes/globallogic_ui.gsc",
         "#scripts/zm_common/gametypes/globallogic_utils.gsc",
         "#scripts/zm_common/talisman/zm_talisman_permanent_heroweap_armor.gsc",
-        "#script_ab862743b3070a",
+        "#scripts/zm_common/util/ai_dog_util.gsc",
         "#scripts/zm_common/zm_contracts.gsc",
         "#scripts/zm_common/zm_devgui.gsc",
         "#scripts/zm_common/zm_holiday_event.gsc",
@@ -279,7 +279,7 @@
         "#scripts/zm_common/destructible.csc",
         "#scripts/zm_common/global_fx.csc",
         "#scripts/zm_common/radiant_live_update.csc",
-        "#script_5fb8da2731850d9e",
+        "#scripts/zm_common/util/ai_dog_util.csc",
         "#scripts/zm_common/zm_holiday_event.csc",
         "#scripts/zm_common/zm_weapons.csc"
     ]

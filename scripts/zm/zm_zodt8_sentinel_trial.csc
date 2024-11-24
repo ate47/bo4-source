@@ -1,6 +1,6 @@
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_utility;
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_powerups;
 #using scripts\core_common\water_surface;
 #using scripts\core_common\util_shared;
@@ -130,14 +130,14 @@ function init_fx() {
 // Checksum 0xb727e42f, Offset: 0x1520
 // Size: 0x344
 function function_91be5845() {
-    namespace_617a54f4::function_d8383812(#"hash_41a5c5168ffb2a97", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_2e7f9a3bff90af4a"], level._effect[#"hash_59916e76378fa3d8"], undefined, &function_7729e81c);
-    namespace_617a54f4::function_d8383812(#"hash_400a481490a4e390", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_573af1567956ac69"], level._effect[#"hash_1e6b4bfa36f9487b"], undefined, &function_7729e81c);
-    namespace_617a54f4::function_d8383812(#"hash_5562e324d230f057", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_538a9337bb9927da"], level._effect[#"hash_4b9011909a431ac8"], undefined, &function_7729e81c);
-    namespace_617a54f4::function_d8383812(#"hash_41fae186552f1259", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_3dba8e7d212e4382"], level._effect[#"hash_50a595992ac285d0"], undefined, &function_7729e81c);
-    namespace_617a54f4::function_d8383812(#"hash_7182a46bb3cdf577", 1, #"hash_7182a46bb3cdf577", 111, level._effect[#"hash_2e7f9a3bff90af4a"], level._effect[#"hash_59916e76378fa3d8"], undefined);
-    namespace_617a54f4::function_d8383812(#"hash_466c2764cc790370", 1, #"hash_466c2764cc790370", 111, level._effect[#"hash_573af1567956ac69"], level._effect[#"hash_1e6b4bfa36f9487b"], undefined);
-    namespace_617a54f4::function_d8383812(#"hash_34f2b4c4f7d74137", 1, #"hash_34f2b4c4f7d74137", 111, level._effect[#"hash_538a9337bb9927da"], level._effect[#"hash_4b9011909a431ac8"], undefined);
-    namespace_617a54f4::function_d8383812(#"hash_49ad34a64ecaebb9", 1, #"hash_49ad34a64ecaebb9", 111, level._effect[#"hash_3dba8e7d212e4382"], level._effect[#"hash_50a595992ac285d0"], undefined);
+    zm_sq_modules::function_d8383812(#"hash_41a5c5168ffb2a97", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_2e7f9a3bff90af4a"], level._effect[#"hash_59916e76378fa3d8"], undefined, &function_7729e81c);
+    zm_sq_modules::function_d8383812(#"hash_400a481490a4e390", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_573af1567956ac69"], level._effect[#"hash_1e6b4bfa36f9487b"], undefined, &function_7729e81c);
+    zm_sq_modules::function_d8383812(#"hash_5562e324d230f057", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_538a9337bb9927da"], level._effect[#"hash_4b9011909a431ac8"], undefined, &function_7729e81c);
+    zm_sq_modules::function_d8383812(#"hash_41fae186552f1259", 1, #"hash_3d7f94e7862a63ab", 50, level._effect[#"hash_3dba8e7d212e4382"], level._effect[#"hash_50a595992ac285d0"], undefined, &function_7729e81c);
+    zm_sq_modules::function_d8383812(#"hash_7182a46bb3cdf577", 1, #"hash_7182a46bb3cdf577", 111, level._effect[#"hash_2e7f9a3bff90af4a"], level._effect[#"hash_59916e76378fa3d8"], undefined);
+    zm_sq_modules::function_d8383812(#"hash_466c2764cc790370", 1, #"hash_466c2764cc790370", 111, level._effect[#"hash_573af1567956ac69"], level._effect[#"hash_1e6b4bfa36f9487b"], undefined);
+    zm_sq_modules::function_d8383812(#"hash_34f2b4c4f7d74137", 1, #"hash_34f2b4c4f7d74137", 111, level._effect[#"hash_538a9337bb9927da"], level._effect[#"hash_4b9011909a431ac8"], undefined);
+    zm_sq_modules::function_d8383812(#"hash_49ad34a64ecaebb9", 1, #"hash_49ad34a64ecaebb9", 111, level._effect[#"hash_3dba8e7d212e4382"], level._effect[#"hash_50a595992ac285d0"], undefined);
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial

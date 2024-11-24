@@ -14,7 +14,7 @@
     "model": "#p8_wz_cu_wrist_guard",
     "type": "itemspawnentry",
     "hintstring": "#hash_762c9dc85d0a4ffa",
-    "unlockableitemref": "#hash_7df6a35b9b5ef697",
+    "unlockableitemref": "#wz_character_scarlett_dlc0",
     "name": "cu30_item",
     "displayname": "#hash_762c9dc85d0a4ffa",
     "icon": "#hash_82eeebafc18fc5c",

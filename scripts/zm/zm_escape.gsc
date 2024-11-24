@@ -18,7 +18,7 @@
 #using script_46cea9e5d4ef9e21;
 #using scripts\zm\zm_escape_fx;
 #using script_602009d88d859543;
-#using script_464d52643f5d868f;
+#using scripts\zm\zm_escape_catwalk_event;
 #using scripts\zm\zm_escape_achievement;
 #using scripts\zm\weapons\zm_weap_flamethrower;
 #using scripts\zm\weapons\zm_weap_gravityspikes;
@@ -34,8 +34,8 @@
 #using scripts\zm\weapons\zm_weap_blundergat;
 #using scripts\zm\weapons\zm_weap_claymore;
 #using scripts\zm\powerup\zm_powerup_zombie_blood;
-#using script_7c62f55ce3a557ff;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_brutus_util;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_pack_a_punch_util;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm\zm_escape_trials;
@@ -110,7 +110,7 @@ function event_handler[level_init] main(eventstruct) {
     clientfield::register("allplayers", "" + #"hash_500a87b29014ef02", 1, 1, "int");
     clientfield::register("toplayer", "" + #"player_pbg_bank", 1, 1, "int");
     clientfield::register("vehicle", "" + #"gondola_light", 1, 1, "int");
-    namespace_f2502da8::init_clientfields();
+    zm_escape_catwalk_event::init_clientfields();
     namespace_9d58c1cd::init_clientfields();
     zm_escape_util::init_clientfields();
     namespace_1063645::init_clientfields();
@@ -175,7 +175,7 @@ function event_handler[level_init] main(eventstruct) {
     level.custom_magic_box_selection_logic = &function_3511e2af;
     callback::on_spawned(&function_29ec1ad7);
     level thread function_e6797b71();
-    level thread namespace_f2502da8::function_4989fd7e();
+    level thread zm_escape_catwalk_event::function_4989fd7e();
     level thread function_2141ca97();
     level thread function_8d0c655f();
     level thread function_11794ed8();
@@ -1105,7 +1105,7 @@ function function_172ac1b5() {
     // Size: 0x8e
     function function_71a6c3ea() {
         zm_devgui::zombie_devgui_open_sesame();
-        level thread namespace_f2502da8::function_e11ac4f5();
+        level thread zm_escape_catwalk_event::function_e11ac4f5();
         namespace_9d58c1cd::function_7101d54f();
         var_ccc575d7 = getent("<dev string:x3be>", "<dev string:x3ce>");
         var_ccc575d7 notify(#"blast_attack");
@@ -1171,7 +1171,7 @@ function function_172ac1b5() {
     // Size: 0x34
     function open_sesame_watcher() {
         level waittill(#"open_sesame");
-        level thread namespace_f2502da8::function_e11ac4f5();
+        level thread zm_escape_catwalk_event::function_e11ac4f5();
     }
 
     // Namespace zm_escape/zm_escape

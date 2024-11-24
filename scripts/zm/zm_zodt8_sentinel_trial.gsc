@@ -10,7 +10,7 @@
 #using scripts\zm_common\zm_ui_inventory;
 #using scripts\zm_common\zm_transformation;
 #using scripts\zm_common\zm_stats;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_round_spawning;
 #using scripts\zm_common\zm_round_logic;
@@ -171,12 +171,12 @@ function function_91be5845() {
     foreach (s_spark in level.a_s_sparks) {
         s_spark.script_noteworthy = var_ffba1428[0];
         arrayremovevalue(var_ffba1428, var_ffba1428[0], 0);
-        namespace_617a54f4::function_d8383812(s_spark.script_noteworthy, 1, s_spark, &function_b6db8da0, &function_6ae57d29);
+        zm_sq_modules::function_d8383812(s_spark.script_noteworthy, 1, s_spark, &function_b6db8da0, &function_6ae57d29);
     }
-    namespace_617a54f4::function_d8383812(#"hash_7182a46bb3cdf577", 1, #"hash_7182a46bb3cdf577", &function_36df874b, &function_800855df);
-    namespace_617a54f4::function_d8383812(#"hash_466c2764cc790370", 1, #"hash_466c2764cc790370", &function_36df874b, &function_800855df);
-    namespace_617a54f4::function_d8383812(#"hash_34f2b4c4f7d74137", 1, #"hash_34f2b4c4f7d74137", &function_36df874b, &function_800855df);
-    namespace_617a54f4::function_d8383812(#"hash_49ad34a64ecaebb9", 1, #"hash_49ad34a64ecaebb9", &function_36df874b, &function_800855df);
+    zm_sq_modules::function_d8383812(#"hash_7182a46bb3cdf577", 1, #"hash_7182a46bb3cdf577", &function_36df874b, &function_800855df);
+    zm_sq_modules::function_d8383812(#"hash_466c2764cc790370", 1, #"hash_466c2764cc790370", &function_36df874b, &function_800855df);
+    zm_sq_modules::function_d8383812(#"hash_34f2b4c4f7d74137", 1, #"hash_34f2b4c4f7d74137", &function_36df874b, &function_800855df);
+    zm_sq_modules::function_d8383812(#"hash_49ad34a64ecaebb9", 1, #"hash_49ad34a64ecaebb9", &function_36df874b, &function_800855df);
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -914,10 +914,10 @@ function function_ba182aaa(var_5ea5c94d, ended_early) {
             showmiscmodels("<dev string:x1b4>");
         }
         if (ended_early) {
-            namespace_617a54f4::function_2a94055d(#"hash_41a5c5168ffb2a97");
-            namespace_617a54f4::function_2a94055d(#"hash_400a481490a4e390");
-            namespace_617a54f4::function_2a94055d(#"hash_5562e324d230f057");
-            namespace_617a54f4::function_2a94055d(#"hash_41fae186552f1259");
+            zm_sq_modules::function_2a94055d(#"hash_41a5c5168ffb2a97");
+            zm_sq_modules::function_2a94055d(#"hash_400a481490a4e390");
+            zm_sq_modules::function_2a94055d(#"hash_5562e324d230f057");
+            zm_sq_modules::function_2a94055d(#"hash_41fae186552f1259");
             level notify(#"hash_7b7d380d73a2ba58");
         }
     #/
@@ -985,7 +985,7 @@ function function_1c841015() {
     while (true) {
         foreach (s_spark in level.a_s_sparks) {
             level thread function_bcdb8fc4(s_spark);
-            namespace_617a54f4::function_3f808d3d(s_spark.script_noteworthy);
+            zm_sq_modules::function_3f808d3d(s_spark.script_noteworthy);
         }
         foreach (str_flag in a_flags) {
             level flag::clear(str_flag);
@@ -1137,7 +1137,7 @@ function function_6ae57d29(s_struct, ai_killed) {
 // Checksum 0x91f074e1, Offset: 0x6060
 // Size: 0x12c
 function function_3965c201(s_struct) {
-    namespace_617a54f4::function_2a94055d(s_struct.script_noteworthy);
+    zm_sq_modules::function_2a94055d(s_struct.script_noteworthy);
     level flag::set(#"hash_27a2746eb30e61c");
     util::delay("end_of_round", undefined, &flag::clear, #"hash_27a2746eb30e61c");
     s_portal = struct::get(s_struct.target);
@@ -1499,7 +1499,7 @@ function function_818b63da() {
 // Checksum 0xc4c52b0, Offset: 0x7a80
 // Size: 0x5f4
 function function_ad0eee44(str_element) {
-    namespace_617a54f4::function_3f808d3d(#"hash_34f827c2750a5a25" + str_element);
+    zm_sq_modules::function_3f808d3d(#"hash_34f827c2750a5a25" + str_element);
     s_artifact = struct::get(#"hash_34f827c2750a5a25" + str_element);
     s_moveto = struct::get(s_artifact.target);
     level flag::clear(#"hash_3e80d503318a5674");
@@ -1520,7 +1520,7 @@ function function_ad0eee44(str_element) {
     }
     mdl_artifact bobbing((0, 0, 1), 2, 3);
     level flag::wait_till(#"hash_317170e3689d18aa" + str_element);
-    namespace_617a54f4::function_2a94055d(#"hash_34f827c2750a5a25" + str_element);
+    zm_sq_modules::function_2a94055d(#"hash_34f827c2750a5a25" + str_element);
     waitframe(1);
     if (level flag::get(#"hash_511653209a0c8cc5" + str_element + "_completed")) {
         switch (str_element) {

@@ -5,8 +5,8 @@
 #using scripts\zm\zm_escape_util;
 #using script_668c4fbb94671fb4;
 #using scripts\zm_common\zm_loadout;
-#using script_ab862743b3070a;
-#using script_7c62f55ce3a557ff;
+#using scripts\zm_common\util\ai_dog_util;
+#using scripts\zm_common\util\ai_brutus_util;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;

@@ -1,6 +1,6 @@
 #using scripts\mp_common\item_world_util;
 #using scripts\mp_common\item_world;
-#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_inventory_util;
 #using scripts\mp_common\item_inventory;
 #using scripts\core_common\util_shared;
 #using scripts\core_common\throttle_shared;
@@ -146,7 +146,7 @@ function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &dro
         if (itementry.itemtype == #"weapon") {
             continue;
         }
-        maxstacksize = namespace_a0d533d1::function_cfa794ca(0, itementry);
+        maxstacksize = item_inventory_util::function_cfa794ca(0, itementry);
         if (var_fee0423a && !(isdefined(itementry.stackable) && itementry.stackable)) {
             for (var_604c3ae6 = 0; var_604c3ae6 < index; var_604c3ae6++) {
                 if (drop_item_id[var_604c3ae6] == -1) {
@@ -746,7 +746,7 @@ function drop_inventory(player) {
         count = isdefined(inventoryitem.count) ? inventoryitem.count : 1;
         amount = inventoryitem.amount;
         if (isdefined(item_weapon) && inventoryitem.itementry.itemtype == #"weapon") {
-            var_4f21d62e = namespace_a0d533d1::function_2b83d3ff(inventoryitem);
+            var_4f21d62e = item_inventory_util::function_2b83d3ff(inventoryitem);
             inventoryitem.weaponoptions = player item_inventory::function_fc04b237(var_4f21d62e, inventoryitem.weaponoptions);
             var_ca577a9c = player getweaponammoclip(var_4f21d62e);
             amount = min(item_weapon.clipsize, var_ca577a9c);
@@ -894,7 +894,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     if (isdefined(item.itementry.var_340eac1f) && item.itementry.var_340eac1f) {
         originalattachments = item.attachments;
         item.attachments = attachments;
-        if (!namespace_a0d533d1::function_ee669356(item)) {
+        if (!item_inventory_util::function_ee669356(item)) {
             if (isdefined(item.itementry.baseweapon)) {
                 item = function_4ba8fde(item.itementry.baseweapon);
             } else {
@@ -959,7 +959,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
         dropitem delete();
         return;
     }
-    if (!namespace_a0d533d1::function_70b12595(dropitem)) {
+    if (!item_inventory_util::function_70b12595(dropitem)) {
         dropitem clientfield::set("item_world_attachments", 1);
     } else {
         dropitem clientfield::set("item_world_attachments", 0);

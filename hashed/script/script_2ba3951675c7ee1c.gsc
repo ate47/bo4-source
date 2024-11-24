@@ -1,7 +1,7 @@
 #using scripts\zm\weapons\zm_weap_blundergat;
 #using scripts\zm\zm_escape_util;
 #using scripts\zm_common\zm_weapons;
-#using script_7c62f55ce3a557ff;
+#using scripts\zm_common\util\ai_brutus_util;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_ui_inventory;
 #using scripts\zm_common\zm_powerups;

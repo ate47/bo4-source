@@ -69,7 +69,7 @@ function on_ai_killed(params) {
             if (isdefined(params.weapon) && isdefined(params.weapon.name)) {
                 str_weapon = params.weapon.name;
             }
-            a_revolvers = array(#"pistol_topbreak_t8", #"pistol_topbreak_t8_upgraded", #"pistol_revolver_t8", #"pistol_revolver_t8_gold", #"pistol_revolver_t8_upgraded", #"hash_138efe2bb30be63c", #"hash_138f012bb30beb55", #"hash_46ad37ce8122812e", #"hash_138f002bb30be9a2", #"hash_3a8348f19a7e7629");
+            a_revolvers = array(#"pistol_topbreak_t8", #"pistol_topbreak_t8_upgraded", #"pistol_revolver_t8", #"pistol_revolver_t8_gold", #"pistol_revolver_t8_upgraded", #"ww_random_ray_gun1", #"ww_random_ray_gun2", #"ww_random_ray_gun2_charged", #"ww_random_ray_gun3", #"ww_random_ray_gun3_charged");
             if (str_zone === "zone_library" && isdefined(str_weapon) && isinarray(a_revolvers, str_weapon)) {
                 e_attacker notify(#"hash_1ac06d8c0149a66c");
             }

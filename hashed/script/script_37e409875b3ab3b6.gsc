@@ -1,7 +1,7 @@
-#using script_c5bc2e592d581d0;
-#using script_55cdac8f3eaa44cd;
-#using script_770268ef1e664da9;
-#using script_1b4af057274ffcd0;
+#using scripts\zm_common\ai\planner_zm_squad_utility;
+#using scripts\zm_common\ai\planner_zm_generic_squad;
+#using scripts\zm_common\ai\planner_zm_generic_commander;
+#using scripts\zm_common\ai\planner_zm_commander_utility;
 #using script_37e409875b3ab3b6;
 #using scripts\core_common\ai\planner_squad_utility;
 #using scripts\core_common\ai\planner_generic_squad;

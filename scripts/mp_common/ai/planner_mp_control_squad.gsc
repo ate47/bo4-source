@@ -1,4 +1,4 @@
-#using script_16b1c195c0b9a9c;
+#using scripts\mp_common\ai\planner_mp_squad_utility;
 #using scripts\core_common\ai\planner_squad_utility;
 #using scripts\core_common\ai\planner_commander_utility;
 #using scripts\core_common\ai\planner_commander;

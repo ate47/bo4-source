@@ -11,7 +11,7 @@
         "#scripts/wz_common/wz_ai_zombie_dog.gsc",
         "#scripts/wz_common/wz_array_broadcast.gsc",
         "#scripts/wz_common/wz_asylum.gsc",
-        "#script_217568d3a92fb9b",
+        "#scripts/wz_common/wz_blast_doors.gsc",
         "#scripts/wz_common/wz_buoy_stash.gsc",
         "#scripts/wz_common/wz_holiday.gsc",
         "#scripts/wz_common/wz_loot_homunculus.gsc",

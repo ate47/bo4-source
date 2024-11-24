@@ -11,7 +11,7 @@
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_transformation;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_powerups;
@@ -26,8 +26,8 @@
 #using scripts\zm_common\zm_bgb;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm;
-#using script_387eab232fe22983;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_werewolf_util;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\core_common\vehicle_shared;
 #using scripts\core_common\spawner_shared;
 #using scripts\core_common\math_shared;
@@ -64,7 +64,7 @@ function init() {
     clientfield::register("vehicle", "" + #"hash_7a260c02e8c345c2", 8000, 1, "int");
     clientfield::register("actor", "" + #"hash_7a260c02e8c345c2", 8000, 1, "int");
     clientfield::register("world", "" + #"hash_5f0c4b68b2a6a75d", 16000, 1, "int");
-    namespace_617a54f4::function_d8383812("ee_asf_altar", 8000, #"a_skeet_fink_charge", &function_123eb361, &function_9bb74431, 1);
+    zm_sq_modules::function_d8383812("ee_asf_altar", 8000, #"a_skeet_fink_charge", &function_123eb361, &function_9bb74431, 1);
     register_steps();
     level.w_stake_knife = getweapon(#"stake_knife");
     level thread function_93bd3e32();
@@ -405,7 +405,7 @@ function function_15c82a8a(var_a276c861) {
         level clientfield::set("" + #"hash_5f0c4b68b2a6a75d", 0);
         if (!var_a276c861) {
             level.var_f8babb50 = 0;
-            namespace_617a54f4::function_3f808d3d("ee_asf_altar");
+            zm_sq_modules::function_3f808d3d("ee_asf_altar");
             if (zm_utility::is_trials()) {
                 var_4b9c76d7 thread function_eb6f728f();
             }
@@ -477,7 +477,7 @@ function function_123eb361(var_88206a50, ent) {
 function function_9bb74431(var_f0e6c7a2, ent) {
     level.var_f8babb50++;
     if (level.var_f8babb50 >= 10) {
-        namespace_617a54f4::function_2a94055d("ee_asf_altar");
+        zm_sq_modules::function_2a94055d("ee_asf_altar");
         var_f0e6c7a2 notify(#"hash_20911f4af4e75472");
     }
 }

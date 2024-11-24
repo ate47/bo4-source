@@ -205,8 +205,8 @@ function function_69e60a10(var_e4204b3) {
         var_55a05f87 = 0;
         var_cbc7aaf6 = 0;
         var_ebd66b56 = [];
-        var_1d9375fc = struct::get_array("<dev string:xbb>", "<dev string:xd8>");
-        foreach (group in var_1d9375fc) {
+        item_spawn_groups = struct::get_array("<dev string:xbb>", "<dev string:xd8>");
+        foreach (group in item_spawn_groups) {
             group.debug_spawnpoints = [];
             var_f0179f4a = getdvarstring(#"hash_230734aeaaf8671", "<dev string:xe4>");
             if (isstring(group.target) && (var_f0179f4a == "<dev string:xe4>" || function_d72aa67e(var_f0179f4a, group.target))) {
@@ -219,7 +219,7 @@ function function_69e60a10(var_e4204b3) {
         adddebugcommand("<dev string:x101>");
         do {
             waitframe(8);
-            foreach (group in var_1d9375fc) {
+            foreach (group in item_spawn_groups) {
                 itemlistbundle = getscriptbundle(group.scriptbundlename);
                 if (!isdefined(itemlistbundle) || isdefined(itemlistbundle.vehiclespawner) && itemlistbundle.vehiclespawner || group.debug_spawnpoints.size == 0 || itemlistbundle.name === "<dev string:x10a>" || itemlistbundle.name === "<dev string:x127>" || itemlistbundle.name === "<dev string:x14a>") {
                     continue;
@@ -749,8 +749,8 @@ function function_69e60a10(var_e4204b3) {
         if (!getdvarint(#"hash_59e2d7722e56c1c6", 0)) {
             return;
         }
-        var_1d9375fc = struct::get_array("<dev string:xbb>", "<dev string:xd8>");
-        foreach (group in var_1d9375fc) {
+        item_spawn_groups = struct::get_array("<dev string:xbb>", "<dev string:xd8>");
+        foreach (group in item_spawn_groups) {
             switch (group.scriptbundlename) {
             case #"wz_escape_zodiac":
                 var_dc1ea650 = group;

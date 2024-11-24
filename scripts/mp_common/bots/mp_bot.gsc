@@ -1,5 +1,5 @@
 #using scripts\mp_common\bots\mp_bot_position;
-#using script_2be661251429fd1a;
+#using scripts\mp_common\bots\mp_bot_action;
 #using scripts\mp_common\ai\planner_mp_tdm_squad;
 #using scripts\mp_common\ai\planner_mp_tdm_commander;
 #using scripts\mp_common\ai\planner_mp_sd_squad;

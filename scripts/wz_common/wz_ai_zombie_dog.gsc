@@ -10,7 +10,7 @@
 #using scripts\core_common\infection;
 #using scripts\core_common\ai_shared;
 #using scripts\core_common\spawner_shared;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\systems\ai_interface;
 #using scripts\core_common\ai\systems\blackboard;
 #using scripts\core_common\ai\systems\behavior_tree_utility;

@@ -21,7 +21,7 @@
         "#scripts/zm/zm_towers_ffotd.gsc",
         "#scripts/zm/zm_towers_shield.gsc",
         "#script_153be0dd975d4b00",
-        "#script_684097158a90b5c3",
+        "#scripts/zm_common/util/ai_gladiator_util.gsc",
         "#script_22272f0ebd9de783"
     ],
     "cscScripts": [

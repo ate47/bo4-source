@@ -11,7 +11,7 @@
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_transformation;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_powerups;
@@ -23,8 +23,8 @@
 #using scripts\zm_common\zm_blockers;
 #using scripts\zm_common\zm_bgb;
 #using scripts\zm_common\zm_audio;
-#using script_387eab232fe22983;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_werewolf_util;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\core_common\vehicle_shared;
 #using scripts\core_common\values_shared;
 #using scripts\core_common\util_shared;

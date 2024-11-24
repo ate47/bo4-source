@@ -1,7 +1,7 @@
 #using scripts\zm\zm_escape_util;
 #using scripts\zm\zm_escape_vo_hooks;
 #using scripts\zm\zm_escape;
-#using script_7c62f55ce3a557ff;
+#using scripts\zm_common\util\ai_brutus_util;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_ui_inventory;

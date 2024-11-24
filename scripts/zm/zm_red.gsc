@@ -12,7 +12,7 @@
 #using scripts\zm\zm_red_fasttravel;
 #using scripts\zm\zm_red_power_quest;
 #using scripts\zm\zm_red_oracle_boons;
-#using script_14af1fd264ffe8cc;
+#using scripts\zm\zm_red_challenges_rewards;
 #using script_6c983b627f4a3d51;
 #using scripts\zm\zm_red_challenges;
 #using scripts\zm\zm_red_boss_battle;
@@ -28,8 +28,8 @@
 #using scripts\zm\ai\zm_ai_gegenees;
 #using scripts\abilities\ability_player;
 #using scripts\core_common\ai\zombie_utility;
-#using script_4d00889cf8c807d5;
-#using script_3aa54d3cb36ea43f;
+#using scripts\zm_common\util\ai_skeleton_util;
+#using scripts\zm_common\util\ai_gegenees_util;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_wallbuy;
@@ -2053,7 +2053,7 @@ function function_fbf0e632() {
     function function_7c8b5f27() {
         if (level flag::get("<dev string:x25b8>")) {
             n_amount = level.var_8b7ab859 / 4;
-            self namespace_f8f28e08::function_53a333a8(undefined, n_amount);
+            self zm_red_challenges_rewards::function_53a333a8(undefined, n_amount);
         }
     }
 

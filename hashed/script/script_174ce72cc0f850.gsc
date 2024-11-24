@@ -1,5 +1,5 @@
 #using scripts\zm\zm_hms_util;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\struct;
 #using scripts\core_common\flag_shared;
@@ -11,7 +11,7 @@
 // Checksum 0x944ade8b, Offset: 0xb8
 // Size: 0x116
 function register(id, version, script_noteworthy, var_92f252fd, var_af245552) {
-    namespace_617a54f4::function_d8383812(id, version, script_noteworthy, &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(id, version, script_noteworthy, &is_soul_capture, &soul_captured, 1);
     s_sc = struct::get(script_noteworthy, "script_noteworthy");
     s_sc.var_f929d531 = getent(s_sc.var_5ca82ce, "targetname");
     s_sc.var_f929d531.id = id;
@@ -29,7 +29,7 @@ function start(id) {
         s_sc = level.var_345df07[id];
         s_sc.var_7944be4a = 0;
         exploder::exploder(s_sc.fx_exp);
-        namespace_617a54f4::function_3f808d3d(id);
+        zm_sq_modules::function_3f808d3d(id);
         s_sc.var_f929d531 thread function_fab8c488();
     }
 }
@@ -42,7 +42,7 @@ function end(id) {
     if (level.var_d2540500[id].active === 1) {
         s_sc = level.var_345df07[id];
         exploder::stop_exploder(s_sc.fx_exp);
-        namespace_617a54f4::function_2a94055d(id);
+        zm_sq_modules::function_2a94055d(id);
         s_sc.var_f929d531 notify(#"event_end");
     }
 }

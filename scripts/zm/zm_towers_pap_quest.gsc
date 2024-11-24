@@ -1,8 +1,8 @@
 #using scripts\zm\zm_towers_util;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_ui_inventory;
-#using script_2affe92664ace48d;
-#using script_684097158a90b5c3;
+#using scripts\zm_common\util\ai_tiger_util;
+#using scripts\zm_common\util\ai_gladiator_util;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_pack_a_punch;

@@ -7,7 +7,7 @@
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_ui_inventory;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\core_common\math_shared;
 #using scripts\core_common\values_shared;
@@ -29,7 +29,7 @@
 function init() {
     init_flags();
     clientfield::register("scriptmover", "vril_device_glow", 24000, 1, "int");
-    namespace_617a54f4::function_d8383812(#"sc_ww_quest", 24000, "sc_ww_quest", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_ww_quest", 24000, "sc_ww_quest", &is_soul_capture, &soul_captured, 1);
 }
 
 // Namespace zm_orange_ww_quest/zm_orange_ww_quest
@@ -377,7 +377,7 @@ function ww_quest_step5_setup(var_5ea5c94d) {
     level.s_ww_quest.var_e0942fa0.var_c5e93537 = getent(level.s_ww_quest.var_e0942fa0.target, "targetname");
     if (!var_5ea5c94d) {
         level.s_ww_quest.var_e0942fa0.var_7944be4a = 0;
-        namespace_617a54f4::function_3f808d3d(level.s_ww_quest.var_e0942fa0.var_b9989e12);
+        zm_sq_modules::function_3f808d3d(level.s_ww_quest.var_e0942fa0.var_b9989e12);
         level flag::wait_till(#"hash_174f5682aa48c4b");
     }
 }
@@ -435,7 +435,7 @@ function soul_captured(var_f0e6c7a2, ent) {
 // Checksum 0x74d0cd40, Offset: 0x1e88
 // Size: 0x3c
 function function_a66f0de2() {
-    namespace_617a54f4::function_2a94055d(self.var_b9989e12);
+    zm_sq_modules::function_2a94055d(self.var_b9989e12);
     level flag::set(#"hash_174f5682aa48c4b");
 }
 

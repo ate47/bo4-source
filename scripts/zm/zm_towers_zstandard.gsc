@@ -1,5 +1,5 @@
-#using script_2affe92664ace48d;
-#using script_684097158a90b5c3;
+#using scripts\zm_common\util\ai_tiger_util;
+#using scripts\zm_common\util\ai_gladiator_util;
 #using scripts\zm\zm_towers_pap_quest;
 #using scripts\zm\zm_towers_crowd;
 #using scripts\zm\zm_towers_special_rounds;

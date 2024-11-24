@@ -22,7 +22,7 @@
 #using scripts\zm\ai\zm_ai_white_nova_crawler;
 #using scripts\zm_common\trials\zm_trial_special_enemy;
 #using script_174ebb9642933bf7;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\ai\zm_ai_utility;
 #using scripts\core_common\music_shared;
 #using scripts\core_common\exploder_shared;

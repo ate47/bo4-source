@@ -1,8 +1,8 @@
-#using script_4333a03353e1e13a;
+#using scripts\zm\zm_orange_fasttravel_flinger;
 #using scripts\zm\zm_orange_pablo;
 #using scripts\zm\zm_orange_util;
 #using scripts\zm\zm_hms_util;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\bgbs\zm_bgb_nowhere_but_there;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
 #using scripts\zm_common\zm_characters;
@@ -455,7 +455,7 @@ function function_a2993671() {
     player = s_notify.e_who;
     playsoundatposition(#"hash_20807cb66d31146e", self.origin);
     flinger = struct::get(self.target, "targetname");
-    flinger namespace_6036de69::function_60325438(0);
+    flinger zm_orange_fasttravel_flinger::function_60325438(0);
     if (!level flag::get(#"hash_72bd35eacb1940de")) {
         level flag::set(#"hash_72bd35eacb1940de");
         player thread zm_orange_util::function_51b752a9("vox_gear_box_pickup", -1, 0, 1);
@@ -474,7 +474,7 @@ function function_1856c416() {
     player = s_notify.e_who;
     playsoundatposition(#"hash_30a5ec16dcd18c49", self.origin);
     flinger = struct::get(self.target, "targetname");
-    flinger namespace_6036de69::function_60325438(1);
+    flinger zm_orange_fasttravel_flinger::function_60325438(1);
     player thread zm_orange_util::function_51b752a9("vox_generic_responses_positive", -1, 0, 0);
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
     if (self.var_db053a52 === 1) {

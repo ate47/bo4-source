@@ -1,8 +1,8 @@
 #using scripts\core_common\system_shared;
 #using scripts\zm\zm_white_portals;
 #using scripts\zm\zm_white_main_quest;
-#using script_48dd035d23bf8844;
-#using script_78e9e286015f2ec;
+#using scripts\zm\zm_white_door_powerup;
+#using scripts\zm\zm_white_computer_system;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_unitrigger;
@@ -289,7 +289,7 @@ function function_4bcfb4d9() {
         if (!level flag::get(#"hash_13cf89176254a394")) {
             level.door_powerup zm_powerups::powerup_delete();
             level flag::wait_till_clear(#"hash_35762ecd1ee8f3c1");
-            namespace_456de992::door_powerup_drop(level.perk_type, level.ammodrop.origin);
+            zm_white_door_powerup::door_powerup_drop(level.perk_type, level.ammodrop.origin);
         }
         wait 0.5;
     }
@@ -302,12 +302,12 @@ function function_4bcfb4d9() {
 function insanity_mode_step2_setup(var_5ea5c94d) {
     if (!var_5ea5c94d) {
         pixbeginevent(#"hash_7e38a18c8bc5484c");
-        level thread namespace_7d8e6ec3::function_5fbede7a();
+        level thread zm_white_computer_system::function_5fbede7a();
         var_7a5bbd26 = getent("insanity_mode_damage_trigger", "targetname");
         while (true) {
             waitresult = var_7a5bbd26 waittill(#"damage");
             if (waitresult.weapon == getweapon(#"bowie_knife_story_1")) {
-                level thread namespace_7d8e6ec3::function_60f15ca8();
+                level thread zm_white_computer_system::function_60f15ca8();
                 level flag::set(#"tv_broken");
                 break;
             }
@@ -356,7 +356,7 @@ function insanity_mode_step3_setup(var_5ea5c94d) {
             if (level flag::get(#"hash_12b747be855cc622") && !level flag::get(#"hash_7cd09ec15b9808a9")) {
                 zm_unitrigger::unregister_unitrigger(s_insanity_mode_confirmation.s_unitrigger);
                 zm_white_main_quest::function_63e4838b(0);
-                level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
+                level.countdown_clock zm_white_computer_system::function_9b1511fa();
             }
         }
     }
@@ -380,7 +380,7 @@ function insanity_mode_step3_cleanup(var_5ea5c94d, ended_early) {
 function timer_countdown() {
     level flag::clear(#"hash_12b747be855cc622");
     level endon(#"hash_12b747be855cc622");
-    level.countdown_clock namespace_7d8e6ec3::clock_countdown();
+    level.countdown_clock zm_white_computer_system::clock_countdown();
     level flag::set(#"hash_12b747be855cc622");
     /#
         iprintlnbold("<dev string:x12c>");

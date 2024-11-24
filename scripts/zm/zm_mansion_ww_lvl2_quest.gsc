@@ -163,7 +163,7 @@ function function_216d0545(s_notify) {
 function function_c9e23896() {
     level endon(#"hash_3b0bcf867c23b993");
     level waittill(#"hash_879562bd9e764a4");
-    var_9e030909 = getweapon(#"hash_138efe2bb30be63c");
+    var_9e030909 = getweapon(#"ww_random_ray_gun1");
     level flag::init("ww_lvl2_crafting_completed");
     level thread function_6231b511();
 }

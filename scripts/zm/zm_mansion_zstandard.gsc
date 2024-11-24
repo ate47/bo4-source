@@ -1,6 +1,6 @@
 #using scripts\zm\ai\zm_ai_catalyst;
 #using scripts\zm\ai\zm_ai_nosferatu;
-#using script_387eab232fe22983;
+#using scripts\zm_common\util\ai_werewolf_util;
 #using scripts\zm\zm_mansion;
 #using scripts\zm\zm_mansion_util;
 #using scripts\zm\zm_mansion_special_rounds;

@@ -19,8 +19,8 @@
 #using scripts\zm\zm_orange_fx;
 #using scripts\zm\zm_orange_freeze_trap;
 #using scripts\zm\zm_orange_fasttravel_ziplines;
-#using script_4333a03353e1e13a;
-#using script_37752a01e45812b8;
+#using scripts\zm\zm_orange_fasttravel_flinger;
+#using scripts\zm\zm_orange_ee_freeze_mode;
 #using scripts\zm\zm_orange_ee_yellow_snow;
 #using script_652cf01d4f20aeb5;
 #using scripts\zm\zm_orange_ee_tundragun;
@@ -43,7 +43,7 @@
 #using scripts\zm_common\zm_devgui;
 #using scripts\zm_common\zm_power;
 #using scripts\zm_common\zm_hud;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_vo;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;
@@ -134,7 +134,7 @@ function event_handler[level_init] main(eventstruct) {
     level namespace_5449c7ba::init();
     level zm_orange_ee_yellow_snow::preload();
     level zm_orange_fasttravel_ziplines::init();
-    level namespace_6036de69::init();
+    level zm_orange_fasttravel_flinger::init();
     level zm_orange_freeze_trap::init();
     level zm_orange_snowball_piles::init();
     level zm_orange_mq_mgr::preload();
@@ -172,8 +172,8 @@ function event_handler[level_init] main(eventstruct) {
     level thread zm_orange_ee_dynamite::main();
     level thread zm_orange_ee_tundragun::main();
     level thread namespace_5449c7ba::main();
-    level thread namespace_565e073b::main();
-    level thread namespace_6036de69::main();
+    level thread zm_orange_ee_freeze_mode::main();
+    level thread zm_orange_fasttravel_flinger::main();
     level thread zm_orange_fasttravel_ziplines::main();
     level thread zm_orange_freeze_trap::main();
     level thread zm_orange_mq_mgr::main();

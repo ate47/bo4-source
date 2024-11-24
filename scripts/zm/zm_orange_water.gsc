@@ -1,5 +1,5 @@
 #using scripts\zm\zm_orange_trials;
-#using script_37752a01e45812b8;
+#using scripts\zm\zm_orange_ee_freeze_mode;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_player;
@@ -404,7 +404,7 @@ function water_player_freeze() {
     self endoncallback(&function_c64292f, #"death");
     self.var_7dc2d507 = 1;
     self notify(#"player_frozen");
-    self namespace_565e073b::function_3931c78();
+    self zm_orange_ee_freeze_mode::function_3931c78();
     self function_bad6907c();
     self clientfield::set("" + #"hash_55543319943057f1", 1);
     self clientfield::set_to_player("" + #"hash_5160727729fd57a2", 1);

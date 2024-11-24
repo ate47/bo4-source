@@ -5,7 +5,7 @@
 #using scripts\zm\zm_office_teleporters;
 #using scripts\zm\zm_office_floors;
 #using scripts\zm_common\zm_sq;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_item_pickup;
 #using scripts\zm_common\zm_audio;

@@ -17,7 +17,7 @@
         "#scripts/zm/ai/zm_ai_blight_father.gsc",
         "#scripts/zm/ai/zm_ai_dog.gsc",
         "#scripts/zm/ai/zm_ai_dog_interface.gsc",
-        "#script_ab862743b3070a",
+        "#scripts/zm_common/util/ai_dog_util.gsc",
         "#scripts/zm/ai/zm_ai_stoker.gsc",
         "#scripts/core_common/ai/archetype_stoker_interface.gsc",
         "#scripts/core_common/ai/archetype_stoker.gsc"
@@ -33,7 +33,7 @@
         "#scripts/core_common/ai/archetype_nosferatu.csc",
         "#scripts/zm/ai/zm_ai_werewolf.csc",
         "#scripts/zm/ai/zm_ai_blight_father.csc",
-        "#script_5fb8da2731850d9e",
+        "#scripts/zm_common/util/ai_dog_util.csc",
         "#scripts/zm/ai/zm_ai_stoker.csc",
         "#scripts/core_common/ai/archetype_stoker.csc"
     ]

@@ -2,7 +2,7 @@
 #using scripts\zm\zm_orange_pablo;
 #using scripts\zm\zm_orange_util;
 #using scripts\zm\zm_hms_util;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_player;
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_zonemgr;
@@ -15,7 +15,7 @@
 #using scripts\zm_common\zm_powerups;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_audio;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\core_common\animation_shared;
 #using scripts\core_common\values_shared;
@@ -42,9 +42,9 @@ function preload() {
     clientfield::register("scriptmover", "fx8_reward_brazier_fire_blue", 24000, 1, "int");
     clientfield::register("scriptmover", "fx8_snowpile_swap", 24000, 1, "int");
     clientfield::register("toplayer", "spleen_carry_sound", 20000, 1, "int");
-    namespace_617a54f4::function_d8383812(#"snowball_campfire_1", 24000, "snowball_campfire_1", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"snowball_campfire_2", 24000, "snowball_campfire_2", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"snowball_campfire_3", 24000, "snowball_campfire_3", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"snowball_campfire_1", 24000, "snowball_campfire_1", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"snowball_campfire_2", 24000, "snowball_campfire_2", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"snowball_campfire_3", 24000, "snowball_campfire_3", &is_soul_capture, &soul_captured, 1);
     level flag::init(#"hash_5e095d53ae9513f5");
     level flag::init(#"hash_2b7269d8e32bf3d7");
 }
@@ -227,7 +227,7 @@ function function_37507fb7(var_a276c861) {
             }
             s_campfire.e_snd = spawn("script_origin", s_campfire.origin);
             s_campfire.e_snd playloopsound(#"hash_4557560b04b84279");
-            namespace_617a54f4::function_3f808d3d(s_campfire.var_b9989e12);
+            zm_sq_modules::function_3f808d3d(s_campfire.var_b9989e12);
             s_campfire waittill(#"hash_1f9b852104ab2c13");
             s_campfire.e_fire setmodel("p8_zm_gla_nor_fire_pit_01_wood_pile");
             switch (s_campfire.script_noteworthy) {
@@ -281,7 +281,7 @@ function soul_captured(var_f0e6c7a2, ent) {
 // Checksum 0xdd0709c6, Offset: 0x1610
 // Size: 0x2e
 function function_a66f0de2() {
-    namespace_617a54f4::function_2a94055d(self.var_b9989e12);
+    zm_sq_modules::function_2a94055d(self.var_b9989e12);
     self notify(#"hash_1f9b852104ab2c13");
 }
 

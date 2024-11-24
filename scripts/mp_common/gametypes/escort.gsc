@@ -38,7 +38,7 @@
 #using scripts\core_common\ai\systems\blackboard;
 #using scripts\core_common\ai\archetype_utility;
 #using scripts\core_common\ai\archetype_robot;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\abilities\gadgets\gadget_smart_cover;
 #using scripts\abilities\gadgets\gadget_concertina_wire;
 

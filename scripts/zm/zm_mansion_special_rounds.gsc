@@ -8,9 +8,9 @@
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_audio;
-#using script_387eab232fe22983;
+#using scripts\zm_common\util\ai_werewolf_util;
 #using scripts\zm\ai\zm_ai_stoker;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_round_logic;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\zm\zm_mansion_util;

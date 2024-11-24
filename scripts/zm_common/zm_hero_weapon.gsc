@@ -1,4 +1,4 @@
-#using script_35d3717bf2cbee8f;
+#using scripts\zm_common\trials\zm_trial_disable_hero_weapons;
 #using scripts\zm_common\trials\zm_trial_restrict_loadout;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_utility;
@@ -823,7 +823,7 @@ function function_29e4516d() {
 // Checksum 0x2460d360, Offset: 0x33f0
 // Size: 0x34
 function private function_9f3a3d48() {
-    return zm_trial_restrict_loadout::is_active(1) || namespace_fc5170d1::is_active();
+    return zm_trial_restrict_loadout::is_active(1) || zm_trial_disable_hero_weapons::is_active();
 }
 
 // Namespace zm_hero_weapon/zm_hero_weapon

@@ -2,7 +2,7 @@
 #using scripts\zm\zm_mansion_special_rounds;
 #using scripts\zm\ai\zm_ai_nosferatu;
 #using scripts\zm\ai\zm_ai_bat;
-#using script_1ef0852930d362dc;
+#using scripts\zm\weapons\zm_weap_random_ray_gun;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;
@@ -10,7 +10,7 @@
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_ui_inventory;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_player;
@@ -1078,7 +1078,7 @@ function function_ee901070(e_attacker) {
         self.var_b8391660 = 0;
         level flag::set(#"hash_1d477cd627a495d9");
         self thread function_a167efd7();
-        self thread namespace_82497b8a::function_b47bcfb0(e_attacker, 60);
+        self thread ww_random_ray_gun::function_b47bcfb0(e_attacker, 60);
         while (true) {
             if (!self.var_b8391660) {
                 self.n_zombie_custom_goal_radius = 96;

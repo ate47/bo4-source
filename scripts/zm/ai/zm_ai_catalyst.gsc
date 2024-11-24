@@ -23,7 +23,7 @@
 #using scripts\core_common\ai\systems\animation_state_machine_notetracks;
 #using scripts\core_common\ai\systems\animation_state_machine_utility;
 #using scripts\core_common\ai\zombie_utility;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\archetype_catalyst;
 #using scripts\core_common\values_shared;
 #using scripts\core_common\util_shared;

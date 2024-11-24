@@ -1,4 +1,4 @@
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\core_common\postfx_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\util_shared;
@@ -30,9 +30,9 @@ function main() {
 // Checksum 0x43474752, Offset: 0x1b8
 // Size: 0x184
 function init_clientfields() {
-    namespace_617a54f4::function_d8383812(#"little_bird_1", 24000, "little_bird_1", 400, level._effect[#"generator_soul"], level._effect[#"hash_25d427b0d162135a"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"little_bird_2", 24000, "little_bird_2", 400, level._effect[#"generator_soul"], level._effect[#"hash_25d427b0d162135a"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"little_bird_3", 24000, "little_bird_3", 400, level._effect[#"generator_soul"], level._effect[#"hash_25d427b0d162135a"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"little_bird_1", 24000, "little_bird_1", 400, level._effect[#"generator_soul"], level._effect[#"hash_25d427b0d162135a"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"little_bird_2", 24000, "little_bird_2", 400, level._effect[#"generator_soul"], level._effect[#"hash_25d427b0d162135a"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"little_bird_3", 24000, "little_bird_3", 400, level._effect[#"generator_soul"], level._effect[#"hash_25d427b0d162135a"], undefined, undefined, 1);
     clientfield::register("scriptmover", "elemental_shard_glow", 24000, 1, "int", &elemental_shard_glow, 0, 0);
 }
 

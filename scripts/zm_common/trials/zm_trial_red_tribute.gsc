@@ -1,4 +1,4 @@
-#using script_14af1fd264ffe8cc;
+#using scripts\zm\zm_red_challenges_rewards;
 #using scripts\zm_common\zm_trial_util;
 #using scripts\zm_common\zm_trial;
 #using scripts\zm_common\zm_score;
@@ -95,8 +95,8 @@ function private function_29bcf2f8() {
     if (isdefined(self.s_tribute_bowl) && isdefined(self.s_tribute_bowl.var_9d32404)) {
         self.s_tribute_bowl.var_9d32404 clientfield::set("" + #"hash_21f5fab6a3d22093", 0);
     }
-    self namespace_f8f28e08::set_tribute(0);
-    self namespace_f8f28e08::function_ae2c0ba5();
+    self zm_red_challenges_rewards::set_tribute(0);
+    self zm_red_challenges_rewards::function_ae2c0ba5();
     self zm_trial_util::function_63060af4(0);
     while (true) {
         s_waitresult = self waittill(#"hash_24326081081c2468");

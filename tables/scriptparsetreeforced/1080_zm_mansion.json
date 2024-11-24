@@ -20,7 +20,7 @@
         "#scripts/zm/ai/zm_ai_stoker.gsc",
         "#scripts/zm/ai/zm_ai_werewolf.gsc",
         "#scripts/zm/zm_mansion_ffotd.gsc",
-        "#script_ab862743b3070a"
+        "#scripts/zm_common/util/ai_dog_util.gsc"
     ],
     "cscScripts": [
         "#scripts/core_common/ai/archetype_blight_father.csc",
@@ -35,6 +35,6 @@
         "#scripts/zm/ai/zm_ai_stoker.csc",
         "#scripts/zm/ai/zm_ai_werewolf.csc",
         "#scripts/zm/zm_mansion_ffotd.csc",
-        "#script_5fb8da2731850d9e"
+        "#scripts/zm_common/util/ai_dog_util.csc"
     ]
 }

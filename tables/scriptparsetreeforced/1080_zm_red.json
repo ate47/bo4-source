@@ -12,10 +12,10 @@
         "#scripts/zm/ai/zm_ai_blight_father.gsc",
         "#scripts/zm/ai/zm_ai_catalyst.gsc",
         "#scripts/zm/ai/zm_ai_gegenees.gsc",
-        "#script_7b0eea022edb5ce2",
+        "#scripts/zm/weapons/zm_weap_spear_shield.gsc",
         "#scripts/zm/zm_red_ffotd.gsc",
-        "#script_3aa54d3cb36ea43f",
-        "#script_4d00889cf8c807d5"
+        "#scripts/zm_common/util/ai_gegenees_util.gsc",
+        "#scripts/zm_common/util/ai_skeleton_util.gsc"
     ],
     "cscScripts": [
         "#scripts/core_common/ai/archetype_skeleton.csc",
@@ -26,7 +26,7 @@
         "#scripts/zm/ai/zm_ai_blight_father.csc",
         "#scripts/zm/ai/zm_ai_catalyst.csc",
         "#scripts/zm/ai/zm_ai_gegenees.csc",
-        "#script_57233e021a270c56",
+        "#scripts/zm/weapons/zm_weap_spear_shield.csc",
         "#scripts/zm/zm_red_ffotd.csc"
     ]
 }

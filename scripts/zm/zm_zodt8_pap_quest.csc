@@ -1,7 +1,7 @@
 #using scripts\zm\weapons\zm_weap_riotshield;
 #using script_54a67b7ed7b385e6;
 #using scripts\zm\zm_zodt8_tutorial;
-#using script_5504fe574aed77a8;
+#using scripts\zm\zm_zodt8_side_quests;
 #using scripts\zm\zm_zodt8_sentinel_trial;
 #using scripts\zm\zm_zodt8_eye;
 #using scripts\zm\zm_zodt8_sound;

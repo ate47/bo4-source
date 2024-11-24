@@ -35,7 +35,7 @@
     "model": "#p8_wz_cu_handwritten_note",
     "type": "itemspawnentry",
     "hintstring": "#hash_4125cced23f321a2",
-    "unlockableitemref": "#hash_249bb8fb0872e4",
+    "unlockableitemref": "#wz_character_engineer",
     "name": "cu02_item",
     "displayname": "#hash_4125cced23f321a2",
     "icon": "#hash_78a18860c658feba",

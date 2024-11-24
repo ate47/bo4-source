@@ -1,7 +1,7 @@
 #using scripts\core_common\ai\archetype_brutus_interface;
 #using scripts\core_common\ai\archetype_brutus;
 #using scripts\zm\powerup\zm_powerup_nuke;
-#using script_7c62f55ce3a557ff;
+#using scripts\zm_common\util\ai_brutus_util;
 #using scripts\zm_common\ai\zm_ai_utility;
 #using script_24c32478acf44108;
 #using scripts\zm_common\zm_utility;
@@ -33,7 +33,7 @@
 #using scripts\core_common\ai\systems\blackboard;
 #using scripts\core_common\ai\systems\behavior_tree_utility;
 #using scripts\core_common\ai\archetype_locomotion_utility;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\archetype_utility;
 #using scripts\core_common\ai\systems\animation_state_machine_mocomp;
 #using scripts\core_common\ai\systems\animation_state_machine_utility;

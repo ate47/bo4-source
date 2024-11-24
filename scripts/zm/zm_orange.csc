@@ -8,7 +8,7 @@
 #using scripts\zm\zm_orange_lighthouse;
 #using scripts\zm\zm_orange_fx;
 #using scripts\zm\zm_orange_freeze_trap;
-#using script_1edaf4333ed0bece;
+#using scripts\zm\zm_orange_fasttravel_flinger;
 #using scripts\zm\zm_orange_ee_yellow_snow;
 #using scripts\zm\zm_orange_ee_tundragun;
 #using scripts\zm\zm_orange_ee_dynamite;
@@ -20,7 +20,7 @@
 #using scripts\zm\weapons\zm_weap_minigun;
 #using scripts\zm\weapons\zm_weap_cymbal_monkey;
 #using scripts\zm\weapons\zm_weap_riotshield;
-#using script_5fb8da2731850d9e;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm_common\zm_trial;
 #using scripts\zm_common\zm_characters;
@@ -82,7 +82,7 @@ function event_handler[level_init] main(eventstruct) {
     level zm_orange_ee_dynamite::init();
     level zm_orange_ee_tundragun::init();
     level zm_orange_ee_yellow_snow::preload();
-    level namespace_6036de69::init();
+    level zm_orange_fasttravel_flinger::init();
     level zm_orange_fasttravel_ziplines::init();
     level zm_orange_freeze_trap::init();
     level zm_orange_mq_mgr::preload();

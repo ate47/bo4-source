@@ -1,4 +1,4 @@
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\core_common\util_shared;
 
 #namespace namespace_a01a2431;
@@ -10,10 +10,10 @@
 function preload() {
     level._effect[#"hash_445a09d57b925de2"] = #"hash_59977c4c851916e0";
     level._effect[#"hash_22616c5de5b8bbf4"] = #"hash_1a06427eff8dfe13";
-    namespace_617a54f4::function_d8383812(#"sc_ww_screen1", 20000, "sc_ww_screen1", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_ww_screen2", 20000, "sc_ww_screen2", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_ww_screen3", 20000, "sc_ww_screen3", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_ww_screen4", 20000, "sc_ww_screen4", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_ww_screen1", 20000, "sc_ww_screen1", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_ww_screen2", 20000, "sc_ww_screen2", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_ww_screen3", 20000, "sc_ww_screen3", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_ww_screen4", 20000, "sc_ww_screen4", 400, level._effect[#"hash_445a09d57b925de2"], level._effect[#"hash_22616c5de5b8bbf4"], undefined, undefined, 1);
 }
 
 // Namespace namespace_a01a2431/namespace_a01a2431

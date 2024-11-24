@@ -15,8 +15,8 @@
 #using scripts\zm_common\zm_transformation;
 #using scripts\zm\ai\zm_ai_gegenees;
 #using scripts\zm_common\zm_characters;
-#using script_4d00889cf8c807d5;
-#using script_3aa54d3cb36ea43f;
+#using scripts\zm_common\util\ai_skeleton_util;
+#using scripts\zm_common\util\ai_gegenees_util;
 #using scripts\zm\weapons\zm_weap_hand_gaia;
 #using scripts\zm\weapons\zm_weap_hand_charon;
 #using script_24c32478acf44108;

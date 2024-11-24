@@ -6,7 +6,7 @@
         "#scripts/wz/wz_open_skyscrapers_fixup.gsc",
         "#scripts/wz_common/wz_array_broadcast.gsc",
         "#scripts/wz_common/wz_asylum.gsc",
-        "#script_217568d3a92fb9b",
+        "#scripts/wz_common/wz_blast_doors.gsc",
         "#scripts/wz_common/wz_buoy_stash.gsc",
         "#scripts/wz_common/wz_ai_brutus.gsc",
         "#scripts/wz_common/wz_fishing.gsc",

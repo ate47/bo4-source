@@ -1,5 +1,5 @@
 #using script_7893277eec698972;
-#using script_311952573639271c;
+#using scripts\zm\zm_zodt8_side_quests;
 #using scripts\zm\zm_zodt8_sentinel_trial;
 #using scripts\zm\zm_zodt8_pap_quest;
 #using scripts\zm\zm_zodt8;

@@ -1,4 +1,4 @@
-#using script_14af1fd264ffe8cc;
+#using scripts\zm\zm_red_challenges_rewards;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_utility;
@@ -150,11 +150,11 @@ function spawn_weapon(var_6d4294b0) {
 function function_33e89162(mdl_weapon, var_6d4294b0) {
     self zm_unitrigger::create(&function_c99662e7, 64, &function_ebd0491e);
     mdl_weapon thread clientfield::set("powerup_fx", 2);
-    mdl_weapon thread namespace_f8f28e08::function_51fd2597(1);
-    mdl_weapon thread namespace_f8f28e08::pickup_timeout(undefined, undefined, max(var_6d4294b0 - 5, 5));
+    mdl_weapon thread zm_red_challenges_rewards::function_51fd2597(1);
+    mdl_weapon thread zm_red_challenges_rewards::pickup_timeout(undefined, undefined, max(var_6d4294b0 - 5, 5));
     s_waitresult = self waittilltimeout(var_6d4294b0, #"boon_weapon_picked_up");
     if (s_waitresult._notify == "boon_weapon_picked_up" && isplayer(s_waitresult.player)) {
-        weapon_reward = s_waitresult.player namespace_f8f28e08::function_e2a25377(mdl_weapon.weapon.name);
+        weapon_reward = s_waitresult.player zm_red_challenges_rewards::function_e2a25377(mdl_weapon.weapon.name);
         s_waitresult.player unlockweapon(weapon_reward);
         if (!isdefined(s_waitresult.player.var_ad52095e)) {
             s_waitresult.player.var_ad52095e = [];

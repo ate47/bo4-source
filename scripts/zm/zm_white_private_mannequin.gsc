@@ -14,7 +14,7 @@
 #using scripts\core_common\struct;
 #using scripts\core_common\flag_shared;
 #using scripts\core_common\clientfield_shared;
-#using script_78e9e286015f2ec;
+#using scripts\zm\zm_white_computer_system;
 
 #namespace zm_white_private_mannequin;
 
@@ -159,7 +159,7 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
                     iprintlnbold("<dev string:x83>");
                 #/
                 level flag::set(#"hash_7524c96c167377ef");
-                level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
+                level.countdown_clock zm_white_computer_system::function_9b1511fa();
                 level function_d1086c12();
                 level thread timer_countdown();
             } else {
@@ -173,7 +173,7 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
                     iprintlnbold("<dev string:xa8>");
                 #/
                 level flag::set(#"hash_7524c96c167377ef");
-                level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
+                level.countdown_clock zm_white_computer_system::function_9b1511fa();
                 level function_5de15b91();
                 level thread timer_countdown();
             } else {
@@ -187,7 +187,7 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
                     iprintlnbold("<dev string:xce>");
                 #/
                 level flag::set(#"hash_7524c96c167377ef");
-                level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
+                level.countdown_clock zm_white_computer_system::function_9b1511fa();
                 level thread visit_prototype_minigun();
                 continue;
             }
@@ -217,7 +217,7 @@ function private_mannequin_step1_cleanup(var_5ea5c94d, ended_early) {
 function timer_countdown() {
     level flag::clear(#"hash_7524c96c167377ef");
     self endon(#"hash_7524c96c167377ef");
-    level.countdown_clock namespace_7d8e6ec3::clock_countdown();
+    level.countdown_clock zm_white_computer_system::clock_countdown();
     /#
         iprintlnbold("<dev string:xf6>");
     #/

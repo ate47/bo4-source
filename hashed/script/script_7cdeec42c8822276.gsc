@@ -1,7 +1,7 @@
 #using scripts\zm\zm_office_teleporters;
 #using scripts\zm\zm_office_special_rounds;
 #using script_174ebb9642933bf7;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_powerups;
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_round_logic;

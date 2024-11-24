@@ -848,8 +848,8 @@ function private function_c6477714(reset) {
     for (index = 0; index < override.var_ebfb74b9; index++) {
         var_8107154f[index] = index;
     }
-    var_1d9375fc = struct::get_array("scriptbundle_itemspawnlist", "classname");
-    foreach (group in var_1d9375fc) {
+    item_spawn_groups = struct::get_array("scriptbundle_itemspawnlist", "classname");
+    foreach (group in item_spawn_groups) {
         group.itemlistbundle = getscriptbundle(group.scriptbundlename);
         if (isdefined(group.itemlistbundle.vehiclespawner) && group.itemlistbundle.vehiclespawner) {
             spawnpoints = function_91b29d2a(group.target);
@@ -862,7 +862,7 @@ function private function_c6477714(reset) {
             group _spawn(reset);
         }
     }
-    foreach (group in var_1d9375fc) {
+    foreach (group in item_spawn_groups) {
         group.itemlistbundle = getscriptbundle(group.scriptbundlename);
         if (isdefined(group.itemlistbundle.supplystash) && group.itemlistbundle.supplystash) {
             dynents = getdynentarray(group.target, 1);
@@ -967,8 +967,8 @@ function function_50a2c746(&var_f38d5b52, reset = 1, var_87e9f374 = 0) {
         if (var_87e9f374) {
         }
     #/
-    var_1d9375fc = struct::get_array("scriptbundle_itemspawnlist", "classname");
-    foreach (group in var_1d9375fc) {
+    item_spawn_groups = struct::get_array("scriptbundle_itemspawnlist", "classname");
+    foreach (group in item_spawn_groups) {
         if (!isdefined(group.target)) {
             continue;
         }

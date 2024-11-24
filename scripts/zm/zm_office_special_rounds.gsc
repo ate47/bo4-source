@@ -9,7 +9,7 @@
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm;
 #using script_174ebb9642933bf7;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\values_shared;
 #using scripts\core_common\util_shared;

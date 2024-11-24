@@ -1,7 +1,7 @@
 #using scripts\zm\zm_escape_weap_quest;
 #using scripts\zm\zm_escape_vo_hooks;
 #using scripts\zm\weapons\zm_weap_spectral_shield;
-#using script_7c62f55ce3a557ff;
+#using scripts\zm_common\util\ai_brutus_util;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_utility;

@@ -1,4 +1,4 @@
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\core_common\audio_shared;
 #using scripts\core_common\postfx_shared;
 #using scripts\core_common\util_shared;
@@ -28,11 +28,11 @@ function preload() {
     clientfield::register("vehicle", "" + #"lantern_explode_fx", 24000, 1, "counter", &play_lantern_explode_fx, 0, 0);
     clientfield::register("toplayer", "" + #"hash_78b8d89d34b32241", 24000, 2, "int", &function_19f2f0f2, 0, 0);
     clientfield::register("scriptmover", "" + #"lantern_outline", 24000, 1, "int", &function_cbc22c9d, 0, 0);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_1", 24000, "sc_lantern_1", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_2", 24000, "sc_lantern_2", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_3", 24000, "sc_lantern_3", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_4", 24000, "sc_lantern_4", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lantern_end", 24000, "sc_lantern_end", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_1", 24000, "sc_lantern_1", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_2", 24000, "sc_lantern_2", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_3", 24000, "sc_lantern_3", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_4", 24000, "sc_lantern_4", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lantern_end", 24000, "sc_lantern_end", 400, level._effect[#"lantern_soul"], level._effect[#"hash_7336b7a4cc9d2581"], undefined, undefined, 1);
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell

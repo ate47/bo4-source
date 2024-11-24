@@ -23,7 +23,7 @@
 #using scripts\zm\zm_office_zones;
 #using scripts\zm\zm_office_elevators;
 #using scripts\zm\zm_office_fx;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using script_174ebb9642933bf7;
 #using scripts\zm_common\zm_pack_a_punch_util;
 #using scripts\zm_common\zm_pack_a_punch;

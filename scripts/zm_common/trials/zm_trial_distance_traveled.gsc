@@ -37,7 +37,7 @@ function private on_begin(var_38282db8) {
     foreach (player in getplayers()) {
         player thread function_ed4d5d4(var_38282db8);
     }
-    level.var_4220f02a = array(getweapon(#"launcher_standard_t8"), getweapon(#"hash_138efe2bb30be63c"), getweapon(#"hash_138f012bb30beb55"), getweapon(#"hash_46ad37ce8122812e"), getweapon(#"hash_138f002bb30be9a2"), getweapon(#"hash_3a8348f19a7e7629"));
+    level.var_4220f02a = array(getweapon(#"launcher_standard_t8"), getweapon(#"ww_random_ray_gun1"), getweapon(#"ww_random_ray_gun2"), getweapon(#"ww_random_ray_gun2_charged"), getweapon(#"ww_random_ray_gun3"), getweapon(#"ww_random_ray_gun3_charged"));
 }
 
 // Namespace zm_trial_distance_traveled/zm_trial_distance_traveled

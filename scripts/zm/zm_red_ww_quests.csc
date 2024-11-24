@@ -1,6 +1,6 @@
 #using scripts\core_common\exploder_shared;
 #using scripts\zm_common\zm_customgame;
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_utility;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\util_shared;
@@ -91,10 +91,10 @@ function init() {
     level._effect[#"hash_5d3f9aab20abf568"] = #"hash_4ee71079fa3bd589";
     level._effect[#"hash_28b5e7d929f598ee"] = #"hash_7d10580c812fce51";
     level._effect[#"hash_3f03e0537e170fc4"] = #"hash_647338beb2cb34ec";
-    namespace_617a54f4::function_d8383812(#"ww_sc_earth", 16000, #"ww_sc_g", 100, level._effect[#"hash_3c9241be63bb503e"], level._effect[#"hash_32278e3b7ad26e0"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"ww_sc_death", 16000, #"ww_sc_c", 100, level._effect[#"hash_3c9256be63bb73ed"], level._effect[#"hash_70ef864effe35b13"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"ww_sc_light", 16000, #"ww_sc_h", 100, level._effect[#"hash_3c924bbe63bb613c"], level._effect[#"hash_2c33b0af2f93389e"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"ww_sc_air", 16000, #"ww_sc_o", 100, level._effect[#"hash_3c9246be63bb58bd"], level._effect[#"hash_23f796cb2dcb35c3"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_earth", 16000, #"ww_sc_g", 100, level._effect[#"hash_3c9241be63bb503e"], level._effect[#"hash_32278e3b7ad26e0"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_death", 16000, #"ww_sc_c", 100, level._effect[#"hash_3c9256be63bb73ed"], level._effect[#"hash_70ef864effe35b13"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_light", 16000, #"ww_sc_h", 100, level._effect[#"hash_3c924bbe63bb613c"], level._effect[#"hash_2c33b0af2f93389e"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"ww_sc_air", 16000, #"ww_sc_o", 100, level._effect[#"hash_3c9246be63bb58bd"], level._effect[#"hash_23f796cb2dcb35c3"], undefined, undefined, 1);
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests

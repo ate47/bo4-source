@@ -1,6 +1,6 @@
 #using script_673e73d0695d82b8;
 #using scripts\mp_common\item_supply_drop;
-#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_inventory_util;
 #using scripts\mp_common\item_inventory;
 #using scripts\core_common\util_shared;
 #using scripts\core_common\system_shared;

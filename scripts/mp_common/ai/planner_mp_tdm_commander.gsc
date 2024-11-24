@@ -1,5 +1,5 @@
 #using scripts\mp_common\ai\planner_mp_tdm_squad;
-#using script_60f1433e7c9a921c;
+#using scripts\mp_common\ai\planner_mp_commander_utility;
 #using scripts\core_common\ai\planner_squad_utility;
 #using scripts\core_common\ai\planner_generic_commander;
 #using scripts\core_common\ai\planner_commander_utility;

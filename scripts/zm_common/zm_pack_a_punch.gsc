@@ -1,4 +1,4 @@
-#using script_698dd790cdc4965f;
+#using scripts\zm_common\trials\zm_trial_disable_upgraded_weapons;
 #using scripts\zm_common\trials\zm_trial_disable_buys;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_utility;
@@ -583,7 +583,7 @@ function private function_8a5fe651(pap_machine, current_weapon) {
             return false;
         }
     }
-    if (!self zm_magicbox::can_buy_weapon(0) || self laststand::player_is_in_laststand() || isdefined(self.intermission) && self.intermission || self isthrowinggrenade() || zm_trial_disable_buys::is_active() || namespace_83dc3729::is_active() || !self zm_weapons::can_upgrade_weapon(current_weapon) && !zm_weapons::weapon_supports_aat(current_weapon)) {
+    if (!self zm_magicbox::can_buy_weapon(0) || self laststand::player_is_in_laststand() || isdefined(self.intermission) && self.intermission || self isthrowinggrenade() || zm_trial_disable_buys::is_active() || zm_trial_disable_upgraded_weapons::is_active() || !self zm_weapons::can_upgrade_weapon(current_weapon) && !zm_weapons::weapon_supports_aat(current_weapon)) {
         return false;
     }
     if (self isswitchingweapons()) {

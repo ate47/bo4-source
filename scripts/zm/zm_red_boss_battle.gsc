@@ -2,14 +2,14 @@
 #using scripts\zm\weapons\zm_weap_hand_hemera;
 #using scripts\zm\weapons\zm_weap_hand_gaia;
 #using scripts\zm\weapons\zm_weap_hand_charon;
-#using script_14af1fd264ffe8cc;
+#using scripts\zm\zm_red_challenges_rewards;
 #using scripts\zm\zm_red_challenges;
 #using scripts\zm\zm_red_fasttravel;
 #using scripts\zm\zm_red;
 #using script_48288470fe0b53d;
 #using scripts\zm_common\bgbs\zm_bgb_shields_up;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
-#using script_3aa54d3cb36ea43f;
+#using scripts\zm_common\util\ai_gegenees_util;
 #using scripts\zm\ai\zm_ai_blight_father;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;
@@ -1663,8 +1663,8 @@ function function_caa7eeb() {
     self zm_vo::vo_say(#"hash_34171dfc4d06ae4b", 0, 1, 9999);
     level.var_92830991 = util::spawn_model(#"hash_7ad70aa7f6e8c41f", self.origin + (0, 0, 48), self.angles);
     level.var_92830991 setscale(4);
-    level.var_92830991 thread namespace_f8f28e08::function_51fd2597(0);
-    level.var_92830991 thread namespace_f8f28e08::function_f7cdf2f7(2);
+    level.var_92830991 thread zm_red_challenges_rewards::function_51fd2597(0);
+    level.var_92830991 thread zm_red_challenges_rewards::function_f7cdf2f7(2);
     playfx(level._effect[#"perseus_death"], level.var_92830991.origin - (0, 0, 16));
     array::run_all(level.s_boss_battle.var_d82d0e73, &ghost);
     array::run_all(level.s_boss_battle.var_d82d0e73, &notsolid);

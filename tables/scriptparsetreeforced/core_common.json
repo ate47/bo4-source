@@ -41,7 +41,7 @@
         "#scripts/core_common/ai/zombie_shared.gsc",
         "#scripts/core_common/ai/archetype_damage_effects.gsc",
         "#scripts/core_common/vehicle_ai_shared.gsc",
-        "#script_3819e7a1427df6d2",
+        "#scripts/core_common/ai/archetype_damage_utility.gsc",
         "#scripts/core_common/ai/archetype_human_cover.gsc",
         "#scripts/core_common/ai/archetype_locomotion_utility.gsc",
         "#scripts/core_common/hud_message_shared.gsc",

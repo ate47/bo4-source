@@ -12,7 +12,7 @@
 #using scripts\killstreaks\airsupport;
 #using scripts\core_common\ai\archetype_utility;
 #using scripts\core_common\animation_shared;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\vehicle_shared;
 #using scripts\core_common\vehicle_ai_shared;
 #using scripts\core_common\values_shared;

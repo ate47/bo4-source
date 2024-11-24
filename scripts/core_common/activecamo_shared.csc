@@ -4,7 +4,7 @@
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\struct;
-#using script_474309807eb94f34;
+#using scripts\core_common\activecamo_shared_util;
 
 #namespace activecamo;
 

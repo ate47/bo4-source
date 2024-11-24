@@ -15,13 +15,13 @@
 #using scripts\zm_common\zm_round_logic;
 #using scripts\zm_common\zm_round_spawning;
 #using scripts\zm_common\zm_zonemgr;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_vo;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\callbacks;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\core_common\music_shared;
 #using scripts\core_common\lui_shared;
 #using scripts\core_common\exploder_shared;
@@ -48,11 +48,11 @@ function preload() {
     s_lounge = struct::get("cp_toast_lounge", "script_noteworthy");
     s_storage = struct::get("cp_toast_storage", "script_noteworthy");
     s_beds = struct::get("cp_toast_beds", "script_noteworthy");
-    namespace_617a54f4::function_d8383812(#"sc_toast_apd", 8000, s_apd, &function_cdcaffd1, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_diner", 8000, s_diner, &function_cdcaffd1, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_lounge", 8000, s_lounge, &function_cdcaffd1, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_storage", 8000, s_storage, &function_cdcaffd1, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_toast_beds", 8000, s_beds, &function_cdcaffd1, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_apd", 8000, s_apd, &function_cdcaffd1, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_diner", 8000, s_diner, &function_cdcaffd1, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_lounge", 8000, s_lounge, &function_cdcaffd1, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_storage", 8000, s_storage, &function_cdcaffd1, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_toast_beds", 8000, s_beds, &function_cdcaffd1, &soul_captured, 1);
     clientfield::register("scriptmover", "soul_capture_filled", 1, 1, "int");
     clientfield::register("scriptmover", "soul_capture_depleted", 1, 1, "int");
     clientfield::register("zbarrier", "discharge_pap", 1, 1, "int");
@@ -177,7 +177,7 @@ function function_94c0714() {
     zm_hms_util::function_3c173d37();
     level.var_8200dc81 thread zm_hms_util::function_6a0d675d(#"hash_46be55ed9729001b", 0, 0);
     level flag::clear("world_is_paused");
-    namespace_617a54f4::function_3f808d3d("sc_toast_apd");
+    zm_sq_modules::function_3f808d3d("sc_toast_apd");
     s_apd = struct::get("cp_toast_apd", "script_noteworthy");
     while (!s_apd.charged) {
         wait 1;
@@ -1214,7 +1214,7 @@ function soul_captured(var_f0e6c7a2, ent) {
     if (var_f0e6c7a2.n_captured >= 28) {
         var_f0e6c7a2.charged = 1;
         var_f0e6c7a2.fx_handle clientfield::set("soul_capture_filled", 1);
-        namespace_617a54f4::function_2a94055d(var_f0e6c7a2.script_string);
+        zm_sq_modules::function_2a94055d(var_f0e6c7a2.script_string);
     }
 }
 
@@ -1289,14 +1289,14 @@ function function_dbbdda4c(e_player) {
         vol_test = getent(self.target, "targetname");
         vol_test.var_72f7bafe = struct::get_array(self.target, "script_noteworthy");
         level.e_avogadro.var_885c1824 = vol_test;
-        namespace_617a54f4::function_3f808d3d(self.script_string);
+        zm_sq_modules::function_3f808d3d(self.script_string);
         level waittill(#"toast_captured");
         self thread function_10dde0dd();
         while (!self.charged && self.n_captured > 0) {
             waitframe(1);
         }
         self notify(#"hash_4d9ae187d6e333c7");
-        namespace_617a54f4::function_2a94055d(self.script_string);
+        zm_sq_modules::function_2a94055d(self.script_string);
         level.e_avogadro.var_885c1824 = undefined;
         level flag::clear(#"hash_56dcbeaf295dd09e");
         if (self.charged) {

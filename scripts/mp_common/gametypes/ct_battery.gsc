@@ -24,7 +24,7 @@
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\bots\bot;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 
 #namespace ct_battery;
 

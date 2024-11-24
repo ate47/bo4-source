@@ -1,4 +1,4 @@
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\status_effects\status_effect_util;
 #using scripts\core_common\damage;
 #using scripts\core_common\util_shared;

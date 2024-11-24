@@ -2,7 +2,7 @@
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_wallbuy;
 #using scripts\zm_common\zm_utility;
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm;

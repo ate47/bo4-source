@@ -29,7 +29,7 @@
     "model": "#hash_7627fbcdaeb34398",
     "type": "itemspawnentry",
     "hintstring": "#hash_3262d00bd8c46e0d",
-    "unlockableitemref": "#hash_4816a81161ac66db",
+    "unlockableitemref": "#wz_character_bruno",
     "name": "cu11_item",
     "displayname": "#hash_3262d00bd8c46e0d",
     "icon": "#hash_6493279bea9d2c7a",

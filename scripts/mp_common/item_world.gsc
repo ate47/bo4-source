@@ -4,8 +4,8 @@
 #using scripts\mp_common\armor;
 #using scripts\mp_common\item_world_util;
 #using script_cb32d07c95e5628;
-#using script_3a6e1cc57d28db61;
-#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_spawn_groups;
+#using scripts\mp_common\item_inventory_util;
 #using scripts\mp_common\item_inventory;
 #using scripts\mp_common\item_drop;
 #using scripts\mp_common\dynent_world;
@@ -235,7 +235,7 @@ function private function_14b2eddf(item, player, networkid, itemid, itemcount, v
         weaponslotid = player item_inventory::function_b246c573(var_f0dc4e93);
     }
     remainingitems = player item_inventory::give_inventory_item(item, itemcount, undefined, slotid);
-    if (isdefined(weaponslotid) && isdefined(slotid) && namespace_a0d533d1::function_398b9770(weaponslotid, slotid)) {
+    if (isdefined(weaponslotid) && isdefined(slotid) && item_inventory_util::function_398b9770(weaponslotid, slotid)) {
         if (isdefined(item.networkid) && item_world_util::function_db35e94f(item.networkid)) {
             item = item_inventory::get_inventory_item(item.networkid);
         }
@@ -460,7 +460,7 @@ function private function_f7fb8a17(reset = 1) {
     var_6937495e = seedvalue << 1;
     var_6937495e |= reset ? 1 : 0;
     level clientfield::set("item_world_seed", var_6937495e);
-    level namespace_f0884ae5::setup(seedvalue, reset);
+    level item_spawn_group::setup(seedvalue, reset);
     level flagsys::set(#"item_world_initialized");
     if (reset) {
         level flagsys::set(#"item_world_reset");
@@ -542,7 +542,7 @@ function private function_199c092d(supplystash, player = undefined) {
     if (item.itementry.name !== #"resource_item_loot_locker_key") {
         return false;
     }
-    lootweapons = player namespace_a0d533d1::get_loot_weapons();
+    lootweapons = player item_inventory_util::get_loot_weapons();
     assert(lootweapons.size > 0);
     if (lootweapons.size <= 0) {
         return false;
@@ -1295,7 +1295,7 @@ function private function_7c84312d(origin, angles) {
             itementry = var_9b882d22.itementry;
             if (isdefined(itementry.weapon) && itementry.weapon != level.weaponnone) {
                 if (itementry.itemtype != #"ammo") {
-                    usetrigger setcursorhint("HINT_WEAPON_3D", namespace_a0d533d1::function_2b83d3ff(var_9b882d22));
+                    usetrigger setcursorhint("HINT_WEAPON_3D", item_inventory_util::function_2b83d3ff(var_9b882d22));
                     var_caafaa25 = #"";
                     if (isdefined(itementry.weapon)) {
                         var_caafaa25 = itementry.weapon.displayname;

@@ -1,8 +1,8 @@
 #using scripts\zm\zm_towers_util;
-#using script_1781ac145d783f87;
+#using scripts\zm\zm_towers_side_quests;
 #using scripts\zm\zm_towers;
-#using script_2affe92664ace48d;
-#using script_684097158a90b5c3;
+#using scripts\zm_common\util\ai_tiger_util;
+#using scripts\zm_common\util\ai_gladiator_util;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_utility;
@@ -328,7 +328,7 @@ function function_93eab559(var_b45e3d90 = 0) {
     }
     zm_towers_util::function_afd37143(#"special_round_start");
     if (level flag::get(#"hash_6205682540170b8")) {
-        level thread namespace_9d301ad2::function_5d0d1807();
+        level thread zm_towers_side_quests::function_5d0d1807();
     }
 }
 

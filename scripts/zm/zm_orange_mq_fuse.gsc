@@ -1,7 +1,7 @@
 #using scripts\zm\zm_orange_pablo;
 #using scripts\zm\zm_orange_util;
 #using scripts\zm\zm_hms_util;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_player;
 #using scripts\zm_common\zm_cleanup_mgr;
 #using scripts\zm_common\zm_zonemgr;
@@ -13,7 +13,7 @@
 #using scripts\zm_common\zm_powerups;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_audio;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\core_common\animation_shared;
 #using scripts\core_common\values_shared;
@@ -37,9 +37,9 @@
 // Checksum 0x843da4d5, Offset: 0x3b0
 // Size: 0x144
 function preload() {
-    namespace_617a54f4::function_d8383812(#"little_bird_1", 24000, "little_bird_1", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"little_bird_2", 24000, "little_bird_2", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"little_bird_3", 24000, "little_bird_3", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"little_bird_1", 24000, "little_bird_1", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"little_bird_2", 24000, "little_bird_2", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"little_bird_3", 24000, "little_bird_3", &is_soul_capture, &soul_captured, 1);
     clientfield::register("scriptmover", "elemental_shard_glow", 24000, 1, "int");
     level flag::init(#"hash_4923165da58bf5cf");
 }
@@ -257,7 +257,7 @@ function function_9e34b0d4(var_a276c861, var_19e802fa) {
 function function_c723e684(var_a276c861) {
     if (!var_a276c861) {
         foreach (var_b4602d24 in level.a_s_generators) {
-            level thread namespace_617a54f4::function_3f808d3d(var_b4602d24.var_b9989e12);
+            level thread zm_sq_modules::function_3f808d3d(var_b4602d24.var_b9989e12);
         }
         while (level.var_6b43507a > 0) {
             wait 1;
@@ -320,7 +320,7 @@ function function_a66f0de2() {
         level exploder::exploder("fxexp_electric_arcs_fx_to_lighthouse_base_1");
         break;
     }
-    namespace_617a54f4::function_2a94055d(self.var_b9989e12);
+    zm_sq_modules::function_2a94055d(self.var_b9989e12);
     playsoundatposition(#"hash_7cef2cb8d950a50", self.origin);
     level.var_6b43507a -= 1;
     self notify(#"hash_1f9b852104ab2c13");

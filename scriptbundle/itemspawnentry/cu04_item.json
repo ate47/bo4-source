@@ -32,7 +32,7 @@
     "model": "#p8_wz_cu_coin_fortune_bag_full",
     "type": "itemspawnentry",
     "hintstring": "#hash_3704dc2854dba865",
-    "unlockableitemref": "#hash_401c15c2505bf180",
+    "unlockableitemref": "#wz_character_recon",
     "name": "cu04_item",
     "displayname": "#hash_3704dc2854dba865",
     "icon": "#hash_2deb30f85fdbd34d",

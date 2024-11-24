@@ -18,20 +18,20 @@
 #using scripts\zm\zm_white_portals;
 #using scripts\zm\zm_white_toast;
 #using script_621434df66e97145;
-#using script_1c1d447ddbce2c00;
-#using script_25b8e6a85a7f8635;
+#using scripts\zm\zm_white_population_count;
+#using scripts\zm\zm_white_perk_pap;
 #using scripts\zm\zm_white_insanity_mode;
-#using script_48dd035d23bf8844;
+#using scripts\zm\zm_white_door_powerup;
 #using scripts\zm\zm_white_doomsday_clock;
-#using script_78e9e286015f2ec;
-#using script_2da1a66a13e2bbe1;
-#using script_2f877a0752174fc1;
+#using scripts\zm\zm_white_computer_system;
+#using scripts\zm\zm_white_cheat_codes;
+#using scripts\zm\zm_white_audio_interactables;
 #using scripts\zm\zm_white_zones;
 #using scripts\zm\zm_white_util;
 #using scripts\zm\zm_white_zstandard;
 #using scripts\zm\zm_white_gamemodes;
 #using scripts\zm\zm_hms_util;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm\weapons\zm_weap_claymore;
 #using scripts\zm\weapons\zm_weap_cymbal_monkey;
 #using scripts\zm\weapons\zm_weap_riotshield;
@@ -103,7 +103,7 @@ function event_handler[level_init] main(eventstruct) {
     level.var_7199d651 = 1;
     level.temporary_power_switch_logic = &zm_power::electric_switch;
     level.var_61afcb81 = 64;
-    namespace_9efb8d22::init_fx();
+    zm_white_perk_pap::init_fx();
     level.var_ef785c4c = 0;
     level thread init_pap();
     clientfield::register("scriptmover", "" + #"hash_28b770e7e782837", 1, 1, "int");
@@ -143,8 +143,8 @@ function event_handler[level_init] main(eventstruct) {
     level namespace_3b2b9e06::preload();
     level namespace_825eac6b::preload();
     level namespace_90b0490e::preload();
-    level namespace_7d8e6ec3::preload();
-    level namespace_fddd83bd::init();
+    level zm_white_computer_system::preload();
+    level zm_white_cheat_codes::init();
     load::main();
     setdvar(#"zombie_unlock_all", 0);
     level.zones = [];
@@ -177,11 +177,11 @@ function event_handler[level_init] main(eventstruct) {
     level thread zm_white_zones::function_fb29f7ca();
     level thread zm_white_portals::init();
     level thread zm_white_doomsday_clock::init();
-    level thread namespace_a71af4de::init();
+    level thread zm_white_population_count::init();
     level thread zm_white_special_rounds::init();
     level thread function_d574cfc6();
-    level thread namespace_cc08081f::init();
-    level thread namespace_7d8e6ec3::init();
+    level thread zm_white_audio_interactables::init();
+    level thread zm_white_computer_system::init();
     level thread zm_white_mee::init();
     level thread namespace_a01a2431::init();
     level thread namespace_87b5173f::init();
@@ -193,7 +193,7 @@ function event_handler[level_init] main(eventstruct) {
         level thread zm_white_devgui::init();
     #/
     if (!zm_utility::is_standard()) {
-        level thread namespace_456de992::init();
+        level thread zm_white_door_powerup::init();
     }
     if (level.round_number == 1 && isdefined(level.enable_magic) && level.enable_magic && level.gamedifficulty != 0) {
         level thread zm_white_mee::function_c4fbad3();
@@ -1087,7 +1087,7 @@ function function_cc45705b(a_s_respawn_points) {
                 break;
             case #"hash_310aefbe028b9475":
                 iprintln("<dev string:x49e>");
-                namespace_a71af4de::function_3134b684();
+                zm_white_population_count::function_3134b684();
                 break;
             case 0:
                 break;

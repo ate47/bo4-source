@@ -1,7 +1,7 @@
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_wallbuy;
 #using scripts\zm_common\zm_utility;
-#using script_624a704d0f6bf28d;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_pack_a_punch;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm;
@@ -34,14 +34,14 @@ function init_clientfields() {
     if (zm_utility::is_standard() || zm_custom::function_901b751c(#"zmpapenabled") == 2) {
         return;
     }
-    namespace_617a54f4::function_d8383812(#"sc_mh1", 8000, #"mh_cpt1", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_mh2", 8000, #"mh_cpt2", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_mh3", 8000, #"mh_cpt3", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lb1", 8000, #"lb_cpt1", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lb2", 8000, #"lb_cpt2", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_lb3", 8000, #"lb_cpt3", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_cl1", 8000, #"cl_cpt1", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
-    namespace_617a54f4::function_d8383812(#"sc_cl2", 8000, #"cl_cpt2", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_mh1", 8000, #"mh_cpt1", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_mh2", 8000, #"mh_cpt2", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_mh3", 8000, #"mh_cpt3", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lb1", 8000, #"lb_cpt1", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lb2", 8000, #"lb_cpt2", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_lb3", 8000, #"lb_cpt3", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_cl1", 8000, #"cl_cpt1", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
+    zm_sq_modules::function_d8383812(#"sc_cl2", 8000, #"cl_cpt2", 400, level._effect[#"pap_projectile"], level._effect[#"pap_projectile_end"], undefined, undefined, 1);
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest

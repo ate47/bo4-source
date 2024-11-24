@@ -12,9 +12,9 @@
 #using scripts\zm\zm_escape_paschal;
 #using scripts\zm\zm_escape_pap_quest;
 #using scripts\zm\zm_escape_fx;
-#using script_673ffe64518b7ffb;
-#using script_20bca15cf8b82d6b;
-#using script_5fb8da2731850d9e;
+#using scripts\zm\zm_escape_catwalk_event;
+#using scripts\zm_common\util\ai_brutus_util;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm\weapons\zm_weap_flamethrower;
 #using scripts\zm\weapons\zm_weap_gravityspikes;
 #using scripts\zm\weapons\zm_weap_katana;
@@ -70,7 +70,7 @@ function event_handler[level_init] main(eventstruct) {
     clientfield::register("allplayers", "" + #"hash_500a87b29014ef02", 1, 1, "int", &function_5e901c8c, 0, 1);
     clientfield::register("toplayer", "" + #"player_pbg_bank", 1, 1, "int", &set_player_pbg_bank, 0, 1);
     clientfield::register("vehicle", "" + #"gondola_light", 1, 1, "int", &gondola_light, 0, 1);
-    namespace_f2502da8::init_clientfields();
+    zm_escape_catwalk_event::init_clientfields();
     namespace_9d58c1cd::init_clientfields();
     zm_escape_util::init_clientfields();
     paschal::init();
@@ -84,7 +84,7 @@ function event_handler[level_init] main(eventstruct) {
     level._effect[#"hash_4d2e5c87bde94856"] = #"hash_4948d849a833ddd5";
     level._effect[#"hash_6dcb1f6ae15079d5"] = #"hash_52f9d9bb5648c0f3";
     level._effect[#"gondola_light"] = #"hash_45dbe6888cf8a19c";
-    namespace_f2502da8::init_fx();
+    zm_escape_catwalk_event::init_fx();
     level._uses_default_wallbuy_fx = 1;
     level._uses_sticky_grenades = 1;
     level._uses_taser_knuckles = 1;

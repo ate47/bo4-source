@@ -1,5 +1,5 @@
-#using script_3aa54d3cb36ea43f;
-#using script_4d00889cf8c807d5;
+#using scripts\zm_common\util\ai_gegenees_util;
+#using scripts\zm_common\util\ai_skeleton_util;
 #using scripts\core_common\ai\zombie_utility;
 #using script_2595527427ea71eb;
 #using scripts\zm_common\zm_bgb_pack;

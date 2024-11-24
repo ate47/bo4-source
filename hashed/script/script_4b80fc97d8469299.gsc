@@ -9,7 +9,7 @@
 #using scripts\zm_common\zm_round_spawning;
 #using scripts\zm_common\zm_unitrigger;
 #using scripts\zm_common\zm_utility;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\zm_common\zm_audio;
 #using scripts\zm\zm_hms_util;
@@ -31,11 +31,11 @@
 // Checksum 0x8817b212, Offset: 0x280
 // Size: 0x214
 function preload() {
-    namespace_617a54f4::function_d8383812(#"sc_pap_beach", 24000, "sc_pap_beach", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_pap_boathouse", 24000, "sc_pap_boathouse", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_pap_ship", 24000, "sc_pap_ship", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_pap_lagoon", 24000, "sc_pap_lagoon", &is_soul_capture, &soul_captured, 1);
-    namespace_617a54f4::function_d8383812(#"sc_pap_island", 24000, "sc_pap_island", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_pap_beach", 24000, "sc_pap_beach", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_pap_boathouse", 24000, "sc_pap_boathouse", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_pap_ship", 24000, "sc_pap_ship", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_pap_lagoon", 24000, "sc_pap_lagoon", &is_soul_capture, &soul_captured, 1);
+    zm_sq_modules::function_d8383812(#"sc_pap_island", 24000, "sc_pap_island", &is_soul_capture, &soul_captured, 1);
     clientfield::register("scriptmover", "" + #"hash_411947cf11cffb69", 24000, 1, "int");
     clientfield::register("scriptmover", "" + #"hash_249c83f6060ea7ba", 24000, 1, "int");
 }
@@ -369,7 +369,7 @@ function function_dc380897() {
         break;
     }
     var_deb6871b.var_b9989e12 = hash(var_deb6871b.script_noteworthy);
-    namespace_617a54f4::function_3f808d3d(var_deb6871b.var_b9989e12);
+    zm_sq_modules::function_3f808d3d(var_deb6871b.var_b9989e12);
     level flag::set(#"infinite_round_spawning");
     var_deb6871b waittill(#"hash_1f9b852104ab2c13");
     /#
@@ -476,7 +476,7 @@ function soul_captured(var_f0e6c7a2, ent) {
 // Checksum 0x2417befc, Offset: 0x2240
 // Size: 0xa4
 function function_a66f0de2() {
-    namespace_617a54f4::function_2a94055d(self.var_b9989e12);
+    zm_sq_modules::function_2a94055d(self.var_b9989e12);
     level.var_d7374603++;
     self notify(#"hash_1f9b852104ab2c13");
     level flag::clear(#"infinite_round_spawning");

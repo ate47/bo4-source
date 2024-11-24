@@ -1,4 +1,4 @@
-#using script_6b993fdc7adc35ec;
+#using scripts\mp_common\item_inventory_util;
 #using scripts\mp_common\item_inventory;
 #using scripts\core_common\weapons_shared;
 #using scripts\core_common\util_shared;
@@ -155,7 +155,7 @@ function private give_max_ammo(weaponslot) {
     if (!isdefined(item)) {
         return;
     }
-    weapon = namespace_a0d533d1::function_2b83d3ff(item);
+    weapon = item_inventory_util::function_2b83d3ff(item);
     if (!isdefined(weapon)) {
         return;
     }
@@ -165,7 +165,7 @@ function private give_max_ammo(weaponslot) {
         if (!isdefined(ammoitem.weapon) || ammoitem.weapon.ammoindex !== weapon.ammoindex) {
             continue;
         }
-        maxstockammo = namespace_a0d533d1::function_2879cbe0(self.inventory.var_7658cbec, ammoitem.weapon);
+        maxstockammo = item_inventory_util::function_2879cbe0(self.inventory.var_7658cbec, ammoitem.weapon);
         currentammostock = self getweaponammostock(ammoitem.weapon);
         var_9b9ba643 = maxstockammo - currentammostock;
         self function_fc9f8b05(weapon, var_9b9ba643);

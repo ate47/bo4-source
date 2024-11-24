@@ -5,7 +5,7 @@
 #using scripts\core_common\ai\systems\behavior_state_machine;
 #using scripts\core_common\ai\systems\animation_state_machine_notetracks;
 #using scripts\core_common\ai\zombie;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\values_shared;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\spawner_shared;

@@ -1,7 +1,7 @@
 #using scripts\zm\zm_orange_pablo;
 #using scripts\zm\zm_orange_util;
 #using scripts\zm\zm_hms_util;
-#using script_ab862743b3070a;
+#using scripts\zm_common\util\ai_dog_util;
 #using scripts\zm_common\zm_ui_inventory;
 #using scripts\zm_common\zm_player;
 #using scripts\zm_common\zm_cleanup_mgr;
@@ -14,7 +14,7 @@
 #using scripts\zm_common\zm_powerups;
 #using scripts\zm_common\zm_score;
 #using scripts\zm_common\zm_audio;
-#using script_3e5ec44cfab7a201;
+#using scripts\zm_common\zm_sq_modules;
 #using scripts\zm_common\zm_sq;
 #using scripts\core_common\animation_shared;
 #using scripts\core_common\values_shared;

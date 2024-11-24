@@ -1,15 +1,15 @@
 #using scripts\core_common\vehicle_shared;
 #using scripts\mp_common\item_world_util;
 #using script_68c78107b4aa059c;
-#using script_5e5ac8c591dedeed;
-#using script_c1eebdc8cad5d78;
+#using scripts\mp_common\item_spawn_groups;
+#using scripts\mp_common\item_inventory_util;
 #using scripts\mp_common\item_inventory;
 #using scripts\core_common\util_shared;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\flagsys_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\callbacks_shared;
-#using script_474309807eb94f34;
+#using scripts\core_common\activecamo_shared_util;
 #using scripts\core_common\activecamo_shared;
 
 #namespace item_world;
@@ -866,7 +866,7 @@ function private function_4e9220ab(localclientnum, oldval, newval, bnewent, bini
             clientdata.var_baf65690[vehicleentnum].servertime = 0;
         }
         if (issplitscreenhost(localclientnum)) {
-            level namespace_f0884ae5::setup(localclientnum, seed, reset);
+            level item_spawn_group::setup(localclientnum, seed, reset);
         }
         if (reset) {
             level thread function_48b8fc19(localclientnum);
@@ -957,7 +957,7 @@ function private function_192b39cd(localclientnum) {
 // Size: 0x248
 function private _set_weapon(localclientnum, item) {
     if (isdefined(item) && isdefined(item.itementry.weapon) && !isdefined(item.itementry.model) && isdefined(item.itementry.weapon.worldmodel)) {
-        weapon = namespace_a0d533d1::function_2b83d3ff(item);
+        weapon = item_inventory_util::function_2b83d3ff(item);
         camoweapon = undefined;
         weaponoptions = undefined;
         if (isdefined(getgametypesetting(#"hash_54fe37a58b87c7a0")) ? getgametypesetting(#"hash_54fe37a58b87c7a0") : 0) {
@@ -1112,7 +1112,7 @@ function private function_43d3ebe1(&items) {
     stash = item_world_util::function_31f5aa51(items[0]);
     var_e30063d2 = isdefined(stash) && isdefined(stash.lootlocker) && stash.lootlocker;
     if (var_e30063d2) {
-        lootweapons = self namespace_a0d533d1::get_loot_weapons();
+        lootweapons = self item_inventory_util::get_loot_weapons();
         if (lootweapons.size > 0) {
             var_41f13734 = lootweapons[0];
             for (index = 0; index < items.size; index++) {
@@ -1403,7 +1403,7 @@ function private function_eb396946(localclientnum) {
                     } else if (isdefined(item.itementry.weapon) && item.itementry.weapon != level.weaponnone) {
                         camoweapon = activecamo::function_385ef18d(item.itementry.weapon);
                         weaponoptions = self getbuildkitweaponoptions(localclientnum, camoweapon);
-                        streamweapon = namespace_a0d533d1::function_2b83d3ff(item);
+                        streamweapon = item_inventory_util::function_2b83d3ff(item);
                         forcestreamweaponrenderoptions(localclientnum, streamweapon, weaponoptions);
                         var_1988b305[streamweapon] = weaponoptions;
                     }
@@ -1538,14 +1538,14 @@ function private function_48ca0bbb(localclientnum) {
                     }
                 } else if (itementry.itemtype == #"weapon") {
                     var_a4250c2b = self item_inventory::function_d768ea30(localclientnum);
-                    if (namespace_a0d533d1::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
+                    if (item_inventory_util::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
                         var_77055f15 |= 512;
                     }
                 }
             } else if (itementry.itemtype == #"weapon") {
                 var_77055f15 = 2;
                 var_a4250c2b = self item_inventory::function_d768ea30(localclientnum);
-                if (namespace_a0d533d1::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
+                if (item_inventory_util::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
                     var_77055f15 |= 512;
                 }
             } else {

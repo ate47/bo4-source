@@ -4,7 +4,7 @@
 #using scripts\zm\weapons\zm_weap_riotshield;
 #using scripts\zm_common\zm_customgame;
 #using scripts\zm_common\zm_unitrigger;
-#using script_387eab232fe22983;
+#using scripts\zm_common\util\ai_werewolf_util;
 #using scripts\zm_common\zm_utility;
 #using scripts\zm_common\zm_traps;
 #using scripts\zm_common\zm_stats;

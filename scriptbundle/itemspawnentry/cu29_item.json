@@ -14,7 +14,7 @@
     "model": "#p8_wz_cu_medallion",
     "type": "itemspawnentry",
     "hintstring": "#hash_7870c79073d6908f",
-    "unlockableitemref": "#hash_3e4dc834e385c307",
+    "unlockableitemref": "#wz_character_diego_dlc0",
     "name": "cu29_item",
     "displayname": "#hash_7870c79073d6908f",
     "icon": "#hash_7d45ef3d7fb052f9",

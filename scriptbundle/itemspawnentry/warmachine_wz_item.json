@@ -32,7 +32,7 @@
     "model": "#wpn_t8_hero_war_machine_world",
     "weapon": "weapon#hero_pineapplegun_wz",
     "type": "itemspawnentry",
-    "unlockableitemref": "#hash_6afae4d580e740ba",
+    "unlockableitemref": "#wz_character_battery",
     "angleoffsetz": 90,
     "name": "warmachine_wz_item",
     "displayname": "#weapon/hero_pineapplegun",

@@ -21,7 +21,7 @@
 #using scripts\core_common\ai\systems\animation_state_machine_mocomp;
 #using scripts\core_common\ai\systems\ai_interface;
 #using scripts\core_common\ai\zombie_utility;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\systems\gib;
 #using scripts\core_common\struct;
 #using scripts\core_common\flag_shared;

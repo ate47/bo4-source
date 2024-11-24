@@ -1171,7 +1171,7 @@ weapon,ar_an94_t8_wz,2a888f9a8d8
 weapon,hash_5db5217589c5f3d7,2a8891ccab8
 weapon,ar_stealth_t8_wz,2a888fa28b8
 weapon,tr_flechette_t8_wz,2a888fa7df8
-weapon,hash_6042372cd71b6dd0,2a889157738
+weapon,ww_random_ray_gun1_wz,2a889157738
 weapon,launcher_standard_t8_wz,2a888fabde8
 weapon,willy_pete_wz,2a8891ca018
 weapon,willy_pete_zm,2a889098f88
@@ -6452,7 +6452,7 @@ scriptbundle,shrapnel_mini_turret,2a88a77fc48
 scriptbundle,fishing_hole_items,2a88a7939c8
 scriptbundle,equipment_list_low_ambush,2a88a7904c8
 scriptbundle,melee_bloody_bowie_t8_item,2a88a794d88
-scriptbundle,hash_1da9ceb74ddf1630,2a88a795408
+scriptbundle,cu08_list_escape,2a88a795408
 scriptbundle,guns_gold_trs_dlc1,2a88a7952c8
 scriptbundle,supply_drop_stash_parent_dlc1_flare_gun_heroes,2a88a78af48
 scriptbundle,c_t8_zmb_mob_brutus_boss_dst_def,2a88a7968c8
@@ -6601,7 +6601,7 @@ scriptbundle,blundergat_wz_item,2a88a7918c8
 scriptbundle,activecamoinfo_t8_fast_direct_action_kills_mystic_wz,2a88a779608
 scriptbundle,activecamoinfo_t8_fast_direct_action_kills_mystic_zm,2a88a779648
 scriptbundle,perk_item_squadlink,2a88a78bfc8
-scriptbundle,hash_36306d42eea65205,2a88a791f08
+scriptbundle,cu32_list_escape,2a88a791f08
 scriptbundle,ar_galil_t8_item,2a88a78b088
 scriptbundle,ar_modular_t8_gold_item,2a88a796cc8
 scriptbundle,lmg_standard_t8_item,2a88a78df48

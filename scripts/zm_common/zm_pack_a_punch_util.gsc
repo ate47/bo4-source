@@ -1,4 +1,4 @@
-#using script_698dd790cdc4965f;
+#using scripts\zm_common\trials\zm_trial_disable_upgraded_weapons;
 #using scripts\zm_common\trials\zm_trial_disable_buys;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_utility;
@@ -154,7 +154,7 @@ function update_hint_string(player) {
         self sethintstring(#"hash_55d25caf8f7bbb2f");
         return true;
     }
-    if (namespace_83dc3729::is_active()) {
+    if (zm_trial_disable_upgraded_weapons::is_active()) {
         return false;
     }
     var_cbf27833 = zm_weapons::is_weapon_upgraded(w_current);

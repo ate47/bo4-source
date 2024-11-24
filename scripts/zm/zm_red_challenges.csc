@@ -1,6 +1,6 @@
 #using scripts\zm_common\zm_utility;
-#using script_624a704d0f6bf28d;
-#using script_3535cbd276d2c358;
+#using scripts\zm_common\zm_sq_modules;
+#using scripts\zm\zm_red_challenges_rewards;
 #using scripts\core_common\util_shared;
 #using scripts\core_common\struct;
 #using scripts\core_common\clientfield_shared;
@@ -44,7 +44,7 @@ function init() {
     level._effect[#"hash_fa374812e6016c9"][4] = #"hash_6cfbd6f08cfc2656";
     level._effect[#"hash_eafc8632695ccef"][4] = #"hash_17bb97645fa8148b";
     level._effect[#"pickup_glow"] = #"zm_weapons/fx8_cymbal_monkey_light";
-    namespace_f8f28e08::init();
+    zm_red_challenges_rewards::init();
     level.var_7987392b = undefined;
 }
 

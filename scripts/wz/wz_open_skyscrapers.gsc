@@ -5,7 +5,7 @@
 #using script_34e49e82e2f499e1;
 #using scripts\wz_common\wz_jukebox;
 #using scripts\wz_common\wz_buoy_stash;
-#using script_217568d3a92fb9b;
+#using scripts\wz_common\wz_blast_doors;
 #using scripts\wz_common\wz_asylum;
 #using scripts\wz_common\wz_array_broadcast;
 #using scripts\wz_common\wz_firing_range;
@@ -201,8 +201,8 @@ function function_2560f130() {
         if (!getdvarint(#"hash_59e2d7722e56c1c6", 0)) {
             return;
         }
-        var_1d9375fc = struct::get_array("<dev string:x2ef>", "<dev string:x30c>");
-        foreach (group in var_1d9375fc) {
+        item_spawn_groups = struct::get_array("<dev string:x2ef>", "<dev string:x30c>");
+        foreach (group in item_spawn_groups) {
             switch (group.scriptbundlename) {
             case #"open_skyscraper_vehicles_arav":
                 var_d5d9cd1 = group;
@@ -362,8 +362,8 @@ function function_2560f130() {
         if (!getdvarint(#"hash_574de6ff609cc0b1", 0)) {
             return;
         }
-        var_1d9375fc = struct::get_array("<dev string:x2ef>", "<dev string:x30c>");
-        foreach (group in var_1d9375fc) {
+        item_spawn_groups = struct::get_array("<dev string:x2ef>", "<dev string:x30c>");
+        foreach (group in item_spawn_groups) {
             switch (group.scriptbundlename) {
             case #"open_skyscraper_vehicles_arav":
                 var_d5d9cd1 = group;
@@ -867,8 +867,8 @@ function function_2560f130() {
         var_55a05f87 = 0;
         var_cbc7aaf6 = 0;
         var_ebd66b56 = [];
-        var_1d9375fc = struct::get_array("<dev string:x2ef>", "<dev string:x30c>");
-        foreach (group in var_1d9375fc) {
+        item_spawn_groups = struct::get_array("<dev string:x2ef>", "<dev string:x30c>");
+        foreach (group in item_spawn_groups) {
             group.debug_spawnpoints = [];
             var_f0179f4a = getdvarstring(#"hash_230734aeaaf8671", "<dev string:x419>");
             if (isstring(group.target) && (var_f0179f4a == "<dev string:x419>" || function_d72aa67e(var_f0179f4a, group.target))) {
@@ -881,7 +881,7 @@ function function_2560f130() {
         adddebugcommand("<dev string:x41f>");
         do {
             waitframe(8);
-            foreach (group in var_1d9375fc) {
+            foreach (group in item_spawn_groups) {
                 itemlistbundle = getscriptbundle(group.scriptbundlename);
                 if (!isdefined(itemlistbundle) || isdefined(itemlistbundle.vehiclespawner) && itemlistbundle.vehiclespawner || group.debug_spawnpoints.size == 0 || itemlistbundle.name === "<dev string:x428>" || itemlistbundle.name === "<dev string:x445>" || itemlistbundle.name === "<dev string:x468>") {
                     continue;
@@ -1066,14 +1066,14 @@ function function_2560f130() {
     // Params 1, eflags: 0x0
     // Checksum 0x9cd1671b, Offset: 0x59e0
     // Size: 0x1f6
-    function function_5ef515a6(var_1d9375fc) {
+    function function_5ef515a6(item_spawn_groups) {
         n_total = 0;
-        foreach (group in var_1d9375fc) {
+        foreach (group in item_spawn_groups) {
             n_total += group.debug_spawnpoints.size;
         }
         while (getdvarint(#"hash_4701ef1aeafb2f3", 0)) {
             var_bd9acc19 = 50;
-            foreach (group in var_1d9375fc) {
+            foreach (group in item_spawn_groups) {
                 if (isstring(group.target)) {
                     var_bd9acc19 += 24;
                     debug2dtext((1300, var_bd9acc19, 0), group.target + "<dev string:x354>" + group.debug_spawnpoints.size, (1, 1, 1), 1, (0, 0, 0), 0.75);
@@ -1088,7 +1088,7 @@ function function_2560f130() {
     // Params 7, eflags: 0x0
     // Checksum 0xca22e431, Offset: 0x5be0
     // Size: 0x5d6
-    function function_317da0a9(var_1d9375fc, group, point, var_9b62e326, var_cc2e4f94, n_z, n_dist) {
+    function function_317da0a9(item_spawn_groups, group, point, var_9b62e326, var_cc2e4f94, n_z, n_dist) {
         b_failed = 0;
         b_close = 0;
         v_color = (0, 1, 0);
@@ -1109,7 +1109,7 @@ function function_2560f130() {
             v_angles = point.angles + (0, var_3e832e74, 0);
         }
         var_7cb887a8[i + 1] = point.origin + (0, 0, n_z) + vectorscale(anglestoup(point.angles), var_cc2e4f94);
-        foreach (group in var_1d9375fc) {
+        foreach (group in item_spawn_groups) {
             if (isarray(group.debug_spawnpoints)) {
                 var_2e0e7774 = arraysortclosest(group.debug_spawnpoints, point.origin, 20, 1, n_dist);
                 foreach (close in var_2e0e7774) {

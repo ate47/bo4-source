@@ -8,8 +8,8 @@
 #using scripts\zm\zm_towers_achievements;
 #using scripts\zm\zm_towers;
 #using scripts\zm_common\bgbs\zm_bgb_anywhere_but_here;
-#using script_2affe92664ace48d;
-#using script_684097158a90b5c3;
+#using scripts\zm_common\util\ai_tiger_util;
+#using scripts\zm_common\util\ai_gladiator_util;
 #using scripts\zm_common\zm_zonemgr;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_vo;

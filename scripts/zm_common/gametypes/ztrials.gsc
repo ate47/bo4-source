@@ -6,7 +6,7 @@
 #using scripts\zm_common\trials\zm_trial_add_special;
 #using scripts\zm_common\trials\zm_trial_upgrade_multiple;
 #using scripts\zm_common\trials\zm_trial_give_reward;
-#using script_35d3717bf2cbee8f;
+#using scripts\zm_common\trials\zm_trial_disable_hero_weapons;
 #using scripts\zm_common\trials\zm_trial_disable_hud;
 #using scripts\zm_common\trials\zm_trial_reset_loadout;
 #using scripts\zm_common\trials\zm_trial_timeout;

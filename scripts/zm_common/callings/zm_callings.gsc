@@ -106,7 +106,7 @@ function function_f3393d6a() {
     str_gametype = util::get_game_type();
     if (self.var_eb15d3ac == str_gametype) {
         s_tcm = level.var_314051a1.var_2e61f0ce[self.var_e06cb519].var_203c6468[self.var_bf6f8ec3];
-        foreach (task in s_tcm.var_272b4041) {
+        foreach (task in s_tcm.tcmpact) {
             self function_c3be3572(task.task, #"hash_647ebc7d24425fee", task.target, task.xp);
         }
         self function_c3be3572(s_tcm.tcmgoal, #"tcmgoal", s_tcm.tcmgoaltarget, s_tcm.tcmgoalxp, 0, 0);

@@ -12,7 +12,7 @@
 #using scripts\core_common\ai\systems\behavior_tree_utility;
 #using scripts\core_common\ai\systems\animation_state_machine_notetracks;
 #using scripts\core_common\ai\archetype_utility;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\system_shared;
 #using scripts\core_common\struct;
 #using scripts\core_common\spawner_shared;

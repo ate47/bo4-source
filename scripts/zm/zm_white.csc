@@ -7,7 +7,7 @@
 #using scripts\zm\weapons\zm_weap_riotshield;
 #using scripts\zm_common\zm_characters;
 #using scripts\zm\zm_white_sound;
-#using script_518e526a2898bf6d;
+#using scripts\zm\zm_white_cheat_codes;
 #using script_27a4aedb3d2a899b;
 #using script_3ba495e039989116;
 #using script_14e736d5e4272b3d;
@@ -19,7 +19,7 @@
 #using scripts\zm\zm_white_portals;
 #using scripts\zm\zm_white_toast;
 #using scripts\zm\zm_white_insanity_mode;
-#using script_28144a2871e71a78;
+#using scripts\zm\zm_white_computer_system;
 #using scripts\zm\zm_white_zstandard;
 #using scripts\zm_common\zm_weapons;
 #using scripts\zm_common\zm_wallbuy;
@@ -85,7 +85,7 @@ function event_handler[level_init] main(eventstruct) {
     level.zombiemode_using_sleightofhand_perk = 1;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_white_weapons.csv";
     level zm_white_zstandard::main();
-    level namespace_7d8e6ec3::preload();
+    level zm_white_computer_system::preload();
     level zm_white_special_rounds::register_clientfields();
     level zm_white_portals::init_clientfields();
     level namespace_a01a2431::preload();
@@ -94,7 +94,7 @@ function event_handler[level_init] main(eventstruct) {
     level namespace_3b2b9e06::preload();
     level namespace_825eac6b::preload();
     level namespace_90b0490e::preload();
-    level namespace_fddd83bd::init();
+    level zm_white_cheat_codes::init();
     load::main();
     level thread zm_white_sound::main();
     level thread zm_white_portals::init();

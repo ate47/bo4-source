@@ -8,7 +8,7 @@
 #using scripts\killstreaks\ai\escort;
 #using scripts\core_common\targetting_delay;
 #using scripts\core_common\ai\archetype_locomotion_utility;
-#using script_3819e7a1427df6d2;
+#using scripts\core_common\ai\archetype_damage_utility;
 #using scripts\core_common\ai\systems\blackboard;
 #using scripts\core_common\ai\systems\behavior_tree_utility;
 #using scripts\core_common\ai\systems\behavior_state_machine;

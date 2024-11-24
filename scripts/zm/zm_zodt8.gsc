@@ -1,10 +1,10 @@
-#using script_a0dec417269b39e;
+#using scripts\zm\zm_zodt8_trials;
 #using script_7893277eec698972;
 #using scripts\zm\zm_zodt8_tutorial;
-#using script_311952573639271c;
+#using scripts\zm\zm_zodt8_side_quests;
 #using scripts\zm\zm_zodt8_sentinel_trial;
 #using scripts\zm\zm_zodt8_pap_quest;
-#using script_a0ad3ffb578dfd1;
+#using scripts\zm\zm_zodt8_narrative;
 #using scripts\zm\zm_zodt8_eye;
 #using scripts\zm\zm_zodt8_achievements;
 #using scripts\zm\zm_zodt8_sound;
@@ -100,7 +100,7 @@ function event_handler[level_init] main(eventstruct) {
     namespace_4a807bff::init();
     namespace_b45e3f05::init();
     zodt8_achievements::init();
-    namespace_57873b62::init();
+    zodt8_narrative::init();
     zm_audio_sq::init();
     zodt8_sound::main();
     level thread function_86a8adbe();
