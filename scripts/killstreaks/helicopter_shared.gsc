@@ -2008,9 +2008,9 @@ function heli_fly(currentnode, startwait, hardpointtype) {
     pos = self.origin;
     wait startwait;
     while (isdefined(currentnode.target)) {
-        var_6cfa3712 = getentarray(currentnode.target, "targetname");
-        assert(isdefined(var_6cfa3712), "<dev string:x293>");
-        nextnode = var_6cfa3712[0];
+        nextnodes = getentarray(currentnode.target, "targetname");
+        assert(isdefined(nextnodes), "<dev string:x293>");
+        nextnode = nextnodes[0];
         pos = nextnode.origin + (0, 0, 30);
         if (isdefined(currentnode.script_airspeed) && isdefined(currentnode.script_accel)) {
             heli_speed = currentnode.script_airspeed;
@@ -2208,13 +2208,13 @@ function function_81cba63() {
 // Params 3, eflags: 0x0
 // Checksum 0xa3aa0c22, Offset: 0x8f60
 // Size: 0x41e
-function heli_get_protect_spot(protectdest, var_551cf1b9, heli_team) {
+function heli_get_protect_spot(protectdest, overrideradius, heli_team) {
     assert(isdefined(level.heli_protect_radius));
-    if (!isdefined(var_551cf1b9)) {
-        var_551cf1b9 = level.heli_protect_radius;
+    if (!isdefined(overrideradius)) {
+        overrideradius = level.heli_protect_radius;
     }
-    min_radius = int(var_551cf1b9 * 0.4);
-    max_radius = var_551cf1b9;
+    min_radius = int(overrideradius * 0.4);
+    max_radius = overrideradius;
     groundpos = getclosestpointonnavmesh(protectdest, 10000);
     assert(isdefined(level.var_17076139) && isdefined(level.var_c2bbc18f));
     assert(isdefined(level.var_c2bbc18f >= level.var_17076139));

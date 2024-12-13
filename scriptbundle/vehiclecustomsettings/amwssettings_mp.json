@@ -109,7 +109,7 @@
     "rocketcooldown": 7.5,
     "burstfireaidelaymin": 2,
     "burstfireaidelaymax": 2.5,
-    "var_fb3ce03c": 200,
+    "targeting_radius": 200,
     "meleedist": 50,
     "damage_radius": 150,
     "jump_height": 40,

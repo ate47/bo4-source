@@ -256,13 +256,13 @@ function function_789652f2(origin, owner, innerradius, outerradius, halfheight, 
 // Size: 0x1ee
 function function_ede09a4e(leader) {
     protectdest = undefined;
-    var_8c46694c = anglestoforward(leader.angles) * -1 * 125;
+    leader_back = anglestoforward(leader.angles) * -1 * 125;
     if (self.formation == "right") {
         var_7a1bb341 = anglestoright(leader.angles) * 125;
     } else {
         var_7a1bb341 = anglestoright(leader.angles) * -1 * 125;
     }
-    var_b4debf4a = leader.origin + var_8c46694c + var_7a1bb341;
+    var_b4debf4a = leader.origin + leader_back + var_7a1bb341;
     goalpos = self getclosestpointonnavvolume(var_b4debf4a, 2000);
     if (!isdefined(goalpos)) {
         goalpos = leader.origin;
@@ -292,13 +292,13 @@ function function_b0c75ada(leader) {
         return undefined;
     }
     protectdest = undefined;
-    var_8c46694c = anglestoforward(leader.angles) * -1 * 125;
+    leader_back = anglestoforward(leader.angles) * -1 * 125;
     if (self.formation == "right") {
         var_7a1bb341 = anglestoright(leader.angles) * 125;
     } else {
         var_7a1bb341 = anglestoright(leader.angles) * -1 * 125;
     }
-    var_b4debf4a = leader.origin + var_8c46694c + var_7a1bb341;
+    var_b4debf4a = leader.origin + leader_back + var_7a1bb341;
     groundpos = getclosestpointonnavmesh(var_b4debf4a, 10000);
     if (isdefined(groundpos)) {
         self.var_d6acaac4 = groundpos;

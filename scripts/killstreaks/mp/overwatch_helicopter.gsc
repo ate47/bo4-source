@@ -494,13 +494,13 @@ function function_af77f078(helicopter) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x1552a7e2, Offset: 0x24c8
 // Size: 0x42e
-function heli_get_protect_spot(protectdest, var_551cf1b9, heli_team) {
+function heli_get_protect_spot(protectdest, overrideradius, heli_team) {
     assert(isdefined(level.var_93215f31));
-    if (!isdefined(var_551cf1b9)) {
-        var_551cf1b9 = level.var_93215f31;
+    if (!isdefined(overrideradius)) {
+        overrideradius = level.var_93215f31;
     }
-    min_radius = int(var_551cf1b9 * 0.6);
-    max_radius = var_551cf1b9;
+    min_radius = int(overrideradius * 0.6);
+    max_radius = overrideradius;
     groundpos = getclosestpointonnavmesh(protectdest, 10000);
     assert(isdefined(level.var_bf127508) && isdefined(level.var_5f6d1a12));
     assert(isdefined(level.var_5f6d1a12 >= level.var_bf127508));

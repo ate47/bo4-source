@@ -3887,11 +3887,11 @@ function function_ff77beb1(otherplayer = undefined) {
     }
     player = self;
     if (isdefined(player.var_19bc935c)) {
-        player function_d4a848de(player.var_19bc935c);
+        player swap_character(player.var_19bc935c);
         player weapons::force_stowed_weapon_update();
         player.var_19bc935c = undefined;
         if (isdefined(otherplayer) && isdefined(otherplayer.var_19bc935c)) {
-            otherplayer function_d4a848de(otherplayer.var_19bc935c);
+            otherplayer swap_character(otherplayer.var_19bc935c);
             otherplayer weapons::force_stowed_weapon_update();
             otherplayer.var_19bc935c = undefined;
         }
@@ -3916,9 +3916,9 @@ function function_ff77beb1(otherplayer = undefined) {
         if (!isdefined(otherplayer.var_19bc935c)) {
             otherplayer.var_19bc935c = var_d8d89950;
         }
-        otherplayer function_d4a848de(var_9db4bbbe);
+        otherplayer swap_character(var_9db4bbbe);
         otherplayer function_269b4eca(var_9db4bbbe);
-        player function_d4a848de(var_d8d89950);
+        player swap_character(var_d8d89950);
         player function_269b4eca(var_d8d89950);
     }
 }
@@ -3927,7 +3927,7 @@ function function_ff77beb1(otherplayer = undefined) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x40eb0b26, Offset: 0xe1f0
 // Size: 0x5c
-function function_d4a848de(var_19bc935c) {
+function swap_character(var_19bc935c) {
     player = self;
     player setcharacterbodytype(var_19bc935c.bodytype);
     player setcharacteroutfit(var_19bc935c.outfit);

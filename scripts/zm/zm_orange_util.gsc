@@ -134,7 +134,7 @@ function private on_connect() {
     self zm_audio::function_6191af93(#"magicbox", #"homunculus", #"magicbox", #"monkey", 100);
     self zm_audio::function_6191af93(#"kill", #"homunculus", #"kill", #"monkey", 100);
     self zm_audio::function_87714659(&function_e08cd7b, #"roundstart", #"special");
-    level flag::wait_till(#"hash_621d31a87bd6d05b");
+    level flag::wait_till(#"music_box_first_use");
     self zm_audio::function_6191af93(#"kill", #"music_box", #"post_kill", #"music_box", 100);
 }
 

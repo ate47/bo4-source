@@ -200,10 +200,10 @@ function find_arc_targets(var_26b2b1bb, eattacker, arc_source, arc_source_origin
         delay = 0;
     }
     allplayers = util::get_active_players();
-    var_67dd5161 = arraysort(allplayers, arc_source_origin, 1);
+    closesttargets = arraysort(allplayers, arc_source_origin, 1);
     validtargets = 0;
-    for (i = 0; validtargets < var_26b2b1bb.var_755593b1 && i < var_67dd5161.size; i++) {
-        target = var_67dd5161[i];
+    for (i = 0; validtargets < var_26b2b1bb.var_755593b1 && i < closesttargets.size; i++) {
+        target = closesttargets[i];
         if (!function_33d5b9a6(var_26b2b1bb, eattacker, arc_source, arc_source_origin, depth, target, var_4d3cc1a7)) {
             continue;
         }

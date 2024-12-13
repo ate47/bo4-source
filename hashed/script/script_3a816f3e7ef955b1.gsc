@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 // Size: 0x44
 function __main__() {
     if (getdvarint(#"hash_6360671422e5591a", 1)) {
-        level thread function_e8c1851a();
+        level thread teleporters_init();
     }
 }
 
@@ -29,7 +29,7 @@ function __main__() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x9f4f0140, Offset: 0x2a0
 // Size: 0x14c
-function function_e8c1851a() {
+function teleporters_init() {
     var_92b18f69 = getentarray("teleporter", "targetname");
     var_6d7fa02e = struct::get_array("teleporter");
     foreach (trigger in var_92b18f69) {

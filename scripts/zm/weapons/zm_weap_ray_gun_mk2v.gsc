@@ -41,12 +41,12 @@ function __init__() {
     callback::add_weapon_fired(level.var_5bda3938, &on_weapon_fired);
     callback::function_4b58e5ab(&function_ae5c4e8b);
     callback::on_ai_killed(&on_ai_killed);
-    clientfield::register("allplayers", "" + #"hash_15cff60ea68de320", 20000, 2, "int");
-    clientfield::register("allplayers", "" + #"hash_7f4f3fbb9ccded2e", 20000, 1, "int");
+    clientfield::register("allplayers", "" + #"ray_gun_mk2v_beam_fire", 20000, 2, "int");
+    clientfield::register("allplayers", "" + #"ray_gun_mk2v_beam_flash", 20000, 1, "int");
     clientfield::register("actor", "" + #"hash_784061e6c2684e58", 20000, 1, "int");
     clientfield::register("actor", "" + #"hash_3b193ae69f9f4fac", 20000, 1, "counter");
     clientfield::register("actor", "" + #"ray_gun_mk2v_death", 20000, 1, "int");
-    clientfield::register("scriptmover", "" + #"hash_278ec0c224a81e7", 20000, 1, "int");
+    clientfield::register("scriptmover", "" + #"ray_gun_mk2v_stun_arc", 20000, 1, "int");
     if (!isdefined(level.var_46a7950a)) {
         level.var_46a7950a = new throttle();
         [[ level.var_46a7950a ]]->initialize(3, 0.1);
@@ -61,11 +61,11 @@ function on_weapon_fired(weapon) {
     if (self.var_1de56cc8 !== 1) {
         self.var_1de56cc8 = 1;
         if (weapon == level.var_5bda3938) {
-            self clientfield::set("" + #"hash_15cff60ea68de320", 2);
+            self clientfield::set("" + #"ray_gun_mk2v_beam_fire", 2);
         } else {
-            self clientfield::set("" + #"hash_15cff60ea68de320", 1);
+            self clientfield::set("" + #"ray_gun_mk2v_beam_fire", 1);
         }
-        self clientfield::set("" + #"hash_7f4f3fbb9ccded2e", 1);
+        self clientfield::set("" + #"ray_gun_mk2v_beam_flash", 1);
         self thread function_8d93c592(weapon);
         self thread function_f8fdc6ad(weapon);
     }
@@ -134,8 +134,8 @@ function function_f8fdc6ad(w_curr) {
 // Checksum 0xcb572edf, Offset: 0x9a0
 // Size: 0x76
 function stop_beam(s_notify) {
-    self clientfield::set("" + #"hash_15cff60ea68de320", 0);
-    self clientfield::set("" + #"hash_7f4f3fbb9ccded2e", 0);
+    self clientfield::set("" + #"ray_gun_mk2v_beam_fire", 0);
+    self clientfield::set("" + #"ray_gun_mk2v_beam_flash", 0);
     self.var_1de56cc8 = undefined;
     self notify(#"stop_damage");
 }
@@ -268,7 +268,7 @@ function function_58fb8f5e(e_player, b_upgraded = 0) {
             }
         }
     }
-    level notify(#"hash_4543ba0bff75332e", {#e_player:e_player});
+    level notify(#"ray_gun_mk2v_stun_hit", {#e_player:e_player});
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v
@@ -319,7 +319,7 @@ function function_6f9fb9d7(e_source, e_target) {
     v_target = e_target getcentroid();
     if (distancesquared(v_source, v_target) >= 4096) {
         e_fx = util::spawn_model("tag_origin", v_source);
-        e_fx clientfield::set("" + #"hash_278ec0c224a81e7", 1);
+        e_fx clientfield::set("" + #"ray_gun_mk2v_stun_arc", 1);
         e_fx moveto(v_target, 0.11);
         e_fx waittill(#"movedone");
         e_fx delete();

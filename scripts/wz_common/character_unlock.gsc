@@ -33,7 +33,7 @@ function __init__() {
 // Size: 0x82
 function function_b3681acb() {
     /#
-        if (getdvar(#"hash_62fbe70d500712c1", 0) == 1) {
+        if (getdvar(#"scr_debug_character_unlocks", 0) == 1) {
             return true;
         }
     #/

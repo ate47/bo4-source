@@ -52,7 +52,7 @@ function __init__() {
     zm_weapons::include_zombie_weapon(#"ww_hand_g_charged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_g_uncharged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_g_upgraded", 0);
-    namespace_9ff9f642::register_slowdown(#"hash_4689473b7f0df2f7", 0.1, 3);
+    namespace_9ff9f642::register_slowdown(#"gaia_slowdown_time", 0.1, 3);
     namespace_9ff9f642::register_slowdown(#"hash_2b068d1172ea957", 0.3, 3);
     namespace_9ff9f642::register_slowdown(#"hash_315cdbcb170fa2c4", 0.5, 3);
     callback::on_connect(&on_player_connect);
@@ -118,17 +118,17 @@ function function_10b4d6ac(weapon) {
         if (isdefined(e_projectile)) {
             e_projectile thread set_projectile(i);
             if (isdefined(a_e_targets) && isdefined(a_e_targets[i])) {
-                self thread function_ce711b5c(e_projectile, a_e_targets[i], n_damage);
+                self thread gaia_projectile(e_projectile, a_e_targets[i], n_damage);
             } else if (i == 1 && isdefined(a_e_targets[i - 1])) {
-                self thread function_ce711b5c(e_projectile, a_e_targets[i - 1], n_damage);
+                self thread gaia_projectile(e_projectile, a_e_targets[i - 1], n_damage);
             } else if (i == 2) {
                 if (isdefined(a_e_targets[i - 1])) {
-                    self thread function_ce711b5c(e_projectile, a_e_targets[i - 1], n_damage);
+                    self thread gaia_projectile(e_projectile, a_e_targets[i - 1], n_damage);
                 } else if (isdefined(a_e_targets[i - 2])) {
-                    self thread function_ce711b5c(e_projectile, a_e_targets[i - 2], n_damage);
+                    self thread gaia_projectile(e_projectile, a_e_targets[i - 2], n_damage);
                 }
             } else {
-                self thread function_ce711b5c(e_projectile);
+                self thread gaia_projectile(e_projectile);
             }
             wait 0.1;
         }
@@ -277,7 +277,7 @@ function set_projectile(n_index) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x1dae527c, Offset: 0x14e0
 // Size: 0x7fc
-function function_ce711b5c(e_projectile, ai_zombie, n_damage) {
+function gaia_projectile(e_projectile, ai_zombie, n_damage) {
     e_projectile endon(#"death");
     self endon(#"disconnect");
     e_projectile thread projectile_timeout();
@@ -593,7 +593,7 @@ function function_33f9ab00(a_e_targets, weapon) {
     foreach (e_target in a_e_targets) {
         if (isalive(e_target) && distancesquared(v_pos, e_target.origin) <= 60 * 60 && !(isdefined(e_target.var_317b8f00) && e_target.var_317b8f00) && !(isdefined(e_target.var_5a3ebaa3) && e_target.var_5a3ebaa3) && !(isdefined(e_target.var_339655cf) && e_target.var_339655cf) && v_pos[2] <= e_target.origin[2]) {
             if (isdefined(self.owner)) {
-                self.owner thread function_f2f6947f(e_target);
+                self.owner thread gaia_slow(e_target);
             }
             if (!(isdefined(self.var_6fe9ec3f) && self.var_6fe9ec3f) && !(isdefined(e_target.var_a447e680) && e_target.var_a447e680) && (e_target.archetype === #"zombie" || e_target.archetype === #"catalyst")) {
                 self.var_6fe9ec3f = 1;
@@ -619,7 +619,7 @@ function spike_explode(v_pos, weapon) {
     }
     self thread scene::play("p8_fxanim_zm_red_gaia_spikes_bundle", "explode", self);
     wait 0.1;
-    level notify(#"hash_3ac605b3a73cc198", {#v_origin:v_pos});
+    level notify(#"gaia_spike_exploded", {#v_origin:v_pos});
     a_e_targets = function_3874b38f();
     foreach (e_target in a_e_targets) {
         if (isalive(e_target) && !(isdefined(e_target.var_61768419) && e_target.var_61768419) && !(isdefined(e_target.var_5a3ebaa3) && e_target.var_5a3ebaa3) && !(isdefined(e_target.var_339655cf) && e_target.var_339655cf) && distancesquared(self.origin, e_target.origin) <= n_dist && abs(self.origin[2] - e_target.origin[2]) <= 20) {
@@ -724,7 +724,7 @@ function function_85d88e17(e_target, b_charged, v_dir, n_damage) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe042b549, Offset: 0x3368
 // Size: 0x172
-function function_f2f6947f(e_target) {
+function gaia_slow(e_target) {
     self endon(#"death");
     e_target endon(#"death");
     if (isdefined(e_target.var_317b8f00) && e_target.var_317b8f00) {
@@ -738,7 +738,7 @@ function function_f2f6947f(e_target) {
     case #"popcorn":
     case #"basic":
     case #"enhanced":
-        e_target thread namespace_9ff9f642::slowdown(#"hash_4689473b7f0df2f7");
+        e_target thread namespace_9ff9f642::slowdown(#"gaia_slowdown_time");
         break;
     case #"heavy":
         e_target thread namespace_9ff9f642::slowdown(#"hash_2b068d1172ea957");

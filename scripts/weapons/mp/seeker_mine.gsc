@@ -257,7 +257,7 @@ function function_3019d870(origin, angles) {
     mine playsound("mpl_seeker_mine_activate");
     mine vehicle::toggle_sounds(1);
     mine thread function_f43b3686(originalowner);
-    mine thread function_5731c02c();
+    mine thread watchabandoned();
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -275,7 +275,7 @@ function function_c7561b46(target) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x2f2f5dc3, Offset: 0x1478
 // Size: 0xf2
-function function_5731c02c() {
+function watchabandoned() {
     self endon(#"death");
     while (true) {
         if (!isdefined(self.owner) || !isdefined(self.owner.team) || self.owner.team != self.team || !self.owner hasweapon(level.var_9d47488.weapon) && !(isdefined(self.ishacked) && self.ishacked)) {

@@ -306,14 +306,14 @@ function function_1525b94c() {
         self start_challenge();
         return;
     }
-    self function_99698cd6();
+    self challenges_completed();
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
 // Params 0, eflags: 0x1 linked
 // Checksum 0x28075a3a, Offset: 0x1ba0
 // Size: 0x114
-function function_99698cd6() {
+function challenges_completed() {
     self notify(#"challenge_station_completed");
     self.var_6fb9ebb6 = 1;
     level.var_97a44fdd = undefined;

@@ -1,19 +1,19 @@
 {
     "attachments": [
         {
-            "var_6be1bec7": "laser_sight_wz_item"
+            "attachment_type": "laser_sight_wz_item"
         },
         {
-            "var_6be1bec7": "suppressor_wz_item"
+            "attachment_type": "suppressor_wz_item"
         },
         {
-            "var_6be1bec7": "foregrip_wz_item"
+            "attachment_type": "foregrip_wz_item"
         },
         {
-            "var_6be1bec7": "extmag_wz_item"
+            "attachment_type": "extmag_wz_item"
         },
         {
-            "var_6be1bec7": "tritium_wz_item"
+            "attachment_type": "tritium_wz_item"
         }
     ],
     "amount": 1,

@@ -264,9 +264,9 @@ function function_dc7906e8(einflictor, attacker, idamage, smeansofdeath, weapon,
     self.var_bfc8055f.attackernum = isdefined(attacker) ? attacker getentitynumber() : -1;
     self.laststandparams.attackerorigin = attacker.origin;
     if (isplayer(attacker)) {
-        self.laststandparams.var_83634238 = attacker getplayerangles();
+        self.laststandparams.attackerangles = attacker getplayerangles();
     } else {
-        self.laststandparams.var_83634238 = attacker.angles;
+        self.laststandparams.attackerangles = attacker.angles;
     }
     self.laststandparams.idamage = idamage;
     self.laststandparams.smeansofdeath = smeansofdeath;
@@ -275,7 +275,7 @@ function function_dc7906e8(einflictor, attacker, idamage, smeansofdeath, weapon,
     self.laststandparams.shitloc = shitloc;
     self.laststandparams.laststandstarttime = gettime();
     self.laststandparams.victimorigin = self.origin;
-    self.laststandparams.var_5fceefd4 = self getplayerangles();
+    self.laststandparams.victimangles = self getplayerangles();
     self.laststandparams.victimweapon = self.currentweapon;
     self.laststandparams.matchtime = gettime();
     self.laststandparams.bledout = 0;
@@ -592,7 +592,7 @@ function laststand_bleedout_damage() {
             self.bleedout_time = 0;
             self.var_1cc38de0 = 1;
             vattacker = isdefined(waitresult.eattacker) ? waitresult.eattacker : self;
-            self.var_a1d415ee = {#einflictor:waitresult.einflictor, #attacker:waitresult.eattacker, #attackerorigin:vattacker.origin, #var_83634238:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #idamage:waitresult.idamage, #smeansofdeath:waitresult.smeansofdeath, #sweapon:waitresult.weapon, #vdir:waitresult.vdir, #shitloc:waitresult.shitloc, #matchtime:function_f8d53445()};
+            self.var_a1d415ee = {#einflictor:waitresult.einflictor, #attacker:waitresult.eattacker, #attackerorigin:vattacker.origin, #attackerangles:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #idamage:waitresult.idamage, #smeansofdeath:waitresult.smeansofdeath, #sweapon:waitresult.weapon, #vdir:waitresult.vdir, #shitloc:waitresult.shitloc, #matchtime:function_f8d53445()};
             self notify(#"update_bleedout");
         }
         if (isdefined(self.var_d75a6ff5)) {

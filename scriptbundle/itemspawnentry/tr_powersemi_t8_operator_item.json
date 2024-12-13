@@ -1,19 +1,19 @@
 {
     "attachments": [
         {
-            "var_6be1bec7": "sniperscope_wz_item"
+            "attachment_type": "sniperscope_wz_item"
         },
         {
-            "var_6be1bec7": "advmag_wz_item"
+            "attachment_type": "advmag_wz_item"
         },
         {
-            "var_6be1bec7": "foregrip_wz_item"
+            "attachment_type": "foregrip_wz_item"
         },
         {
-            "var_6be1bec7": "uber"
+            "attachment_type": "uber"
         },
         {
-            "var_6be1bec7": "suppressor_wz_item"
+            "attachment_type": "suppressor_wz_item"
         }
     ],
     "amount": 1,

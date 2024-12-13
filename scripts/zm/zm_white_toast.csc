@@ -26,7 +26,7 @@ function init_clientfields() {
     zm_sq_modules::function_d8383812(#"sc_toast_storage", 8000, "cp_toast_storage", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
     zm_sq_modules::function_d8383812(#"sc_toast_beds", 8000, "cp_toast_beds", 400, level._effect[#"apd_projectile"], level._effect[#"hash_2ccbbf521f943fc4"], undefined, undefined, 1);
     clientfield::register("scriptmover", "soul_capture_filled", 1, 1, "int", &function_2a58f409, 0, 0);
-    clientfield::register("scriptmover", "soul_capture_depleted", 1, 1, "int", &function_6295ef8c, 0, 0);
+    clientfield::register("scriptmover", "soul_capture_depleted", 1, 1, "int", &canister_depleted, 0, 0);
     clientfield::register("zbarrier", "discharge_pap", 1, 1, "int", &discharge_pap, 0, 0);
     clientfield::register("scriptmover", "discharge_perk", 1, 1, "int", &discharge_perk, 0, 0);
     clientfield::register("scriptmover", "discharge_wallbuy", 1, 1, "int", &discharge_wallbuy, 0, 0);
@@ -65,7 +65,7 @@ function function_2a58f409(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x3619892, Offset: 0x798
 // Size: 0x84
-function function_6295ef8c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function canister_depleted(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         util::playfxontag(localclientnum, level._effect[#"hash_3215540730982960"], self, "tag_origin");
     }

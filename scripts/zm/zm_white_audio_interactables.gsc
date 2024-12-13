@@ -602,7 +602,7 @@ function function_93040a5d() {
     self setcandamage(1);
     self val::set("quest_mee", "allowDeath", 0);
     var_28999578 = array::randomize(array(0, 1, 2, 3, 4, 5, 6, 7, 8));
-    var_4854a91b = "vox_tedd_melee_tedd_";
+    base_alias = "vox_tedd_melee_tedd_";
     self endon(#"death");
     level.var_5da5aff4 = 0;
     while (!level.var_5da5aff4) {
@@ -615,7 +615,7 @@ function function_93040a5d() {
         }
         level.var_215e60c4.in_use = 1;
         if (var_28999578.size > 0) {
-            alias = var_4854a91b + var_28999578[0];
+            alias = base_alias + var_28999578[0];
             arrayremoveindex(var_28999578, 0);
         } else {
             alias = "vox_tedd_melee_final_tedd_0";

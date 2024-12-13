@@ -1709,7 +1709,7 @@ function on_use_update(team, progress, change) {
         if (self.touchlist[game.attackers].size == 0 && self.touchlist[game.defenders].size > 0) {
             self.var_670f7a7f = 1;
             foreach (st in self.touchlist[game.defenders]) {
-                scoreevents::processscoreevent(#"hash_6633004bacaa9787", st.player, undefined, undefined);
+                scoreevents::processscoreevent(#"zone_progress_drained", st.player, undefined, undefined);
             }
         }
     }

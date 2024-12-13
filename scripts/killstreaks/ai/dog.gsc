@@ -476,9 +476,9 @@ function private function_a78474f2() {
 // Size: 0x64
 function private get_favorite_enemy() {
     var_edc20efd = self ai_state::function_4af1ff64();
-    var_ff716a93 = self function_a78474f2();
-    if (isdefined(var_ff716a93)) {
-        return ai_target::function_84235351(var_ff716a93, var_edc20efd);
+    attack_origin = self function_a78474f2();
+    if (isdefined(attack_origin)) {
+        return ai_target::function_84235351(attack_origin, var_edc20efd);
     }
 }
 

@@ -1822,7 +1822,7 @@ function function_f47cc92a() {
     level endon(#"patrol_dead", #"wall_target_hit");
     self endon(#"death");
     level flag::wait_till("enemy_arrived");
-    level.var_54c1ce00 = level.var_32ae304;
+    level.temp_disable = level.var_32ae304;
     level.var_32ae304 = undefined;
     level notify(#"stop_war_machine_wall_bounce_forward_collision");
 }

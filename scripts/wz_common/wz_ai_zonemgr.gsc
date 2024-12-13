@@ -49,7 +49,7 @@ function __init__() {
     level.var_3fecd9c2 = 1;
     level.var_c4c0fb68 = isdefined(getgametypesetting(#"hash_3668350e780332a3")) ? getgametypesetting(#"hash_3668350e780332a3") : 0;
     level.warzonespawnanywhere = isdefined(getgametypesetting(#"wzspawnanywhere")) ? getgametypesetting(#"wzspawnanywhere") : 0;
-    level.var_d373b4e4 = isdefined(getgametypesetting(#"hash_14019eb043d9e43b")) ? getgametypesetting(#"hash_14019eb043d9e43b") : 0;
+    level.warzonezombiesmaxtest = isdefined(getgametypesetting(#"wzzombiesmaxtest")) ? getgametypesetting(#"wzzombiesmaxtest") : 0;
     level.warzonezombiesmaxcount = isdefined(getgametypesetting(#"wzzombiesmaxcount")) ? getgametypesetting(#"wzzombiesmaxcount") : 8;
     level.var_7b5ba689 = isdefined(getgametypesetting(#"wzgreeneyes")) ? getgametypesetting(#"wzgreeneyes") : 0;
     level.var_754d756 = (isdefined(getgametypesetting(#"hash_3e2d2cf6b1cc6c68")) ? getgametypesetting(#"hash_3e2d2cf6b1cc6c68") : 0) || (isdefined(getgametypesetting(#"hash_1b4a66a008f60927")) ? getgametypesetting(#"hash_1b4a66a008f60927") : 0);
@@ -59,7 +59,7 @@ function __init__() {
         numzm = getdvarint(#"hash_57d63269cdf0c97f", 0);
         if (0 < numzm) {
             iprintlnbold("Initing " + numzm + " zombies " + "\n");
-            level.var_d373b4e4 = 1;
+            level.warzonezombiesmaxtest = 1;
             level.warzonezombiesmaxcount = numzm;
         }
     }
@@ -1132,7 +1132,7 @@ function function_5f0d105a(zone_category, zone_name, spawner_type, var_aeae9f59,
     var_a59ba023.zone_name = var_a6ca601f.zone_name;
     var_a59ba023.minimap = var_a6ca601f.minimap;
     var_a59ba023.spawn_points = var_a6ca601f.spawn_points;
-    var_a59ba023.origin = var_a6ca601f.var_3f8af12a.origin;
+    var_a59ba023.origin = var_a6ca601f.root_node.origin;
     var_a59ba023.var_84b8298c = 0;
     var_a59ba023.is_occupied = 0;
     var_a59ba023.is_disabled = 0;
@@ -1203,7 +1203,7 @@ function function_adf8c26d(zone_category, zone_name, spawner_type, var_aeae9f59,
 // Checksum 0xcc3c0c46, Offset: 0x5638
 // Size: 0xd4
 function function_769a0b3f(ai_zone, zombie) {
-    if (!(isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0)) {
+    if (!(isdefined(getgametypesetting(#"wzzombiesbreakdoors")) ? getgametypesetting(#"wzzombiesbreakdoors") : 0)) {
         return;
     }
     if (!(isdefined(zombie.var_66c33b3) && zombie.var_66c33b3)) {
@@ -1220,7 +1220,7 @@ function function_769a0b3f(ai_zone, zombie) {
 // Checksum 0x6f90002f, Offset: 0x5718
 // Size: 0xcc
 function function_37411c68(ai_zone, zombie) {
-    if (!(isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0)) {
+    if (!(isdefined(getgametypesetting(#"wzzombiesbreakdoors")) ? getgametypesetting(#"wzzombiesbreakdoors") : 0)) {
         return;
     }
     if (isdefined(zombie.var_66c33b3) && zombie.var_66c33b3) {
@@ -1279,18 +1279,18 @@ function function_7b0c014e() {
     level.ai_zones = getentarray("wz_ai_zone", "targetname");
     foreach (ai_zone in level.ai_zones) {
         ai_zone.spawn_points = struct::get_array(ai_zone.target, "targetname");
-        ai_zone.var_3f8af12a = getnode(ai_zone.target, "targetname");
-        if (isdefined(ai_zone.var_3f8af12a) && isdefined(ai_zone.var_3f8af12a.script_noteworthy)) {
-            ai_zone.zone_name = ai_zone.var_3f8af12a.script_noteworthy;
+        ai_zone.root_node = getnode(ai_zone.target, "targetname");
+        if (isdefined(ai_zone.root_node) && isdefined(ai_zone.root_node.script_noteworthy)) {
+            ai_zone.zone_name = ai_zone.root_node.script_noteworthy;
         } else {
             ai_zone.zone_name = "unnamed";
         }
-        var_e2ee98e6 = struct::get(ai_zone.var_3f8af12a.target, "targetname");
+        var_e2ee98e6 = struct::get(ai_zone.root_node.target, "targetname");
         if (isdefined(var_e2ee98e6)) {
             ai_zone.minimap = spawn("script_model", var_e2ee98e6.origin);
             ai_zone.minimap.targetname = "zm_minimap";
         } else {
-            ai_zone.minimap = spawn("script_model", ai_zone.var_3f8af12a.origin);
+            ai_zone.minimap = spawn("script_model", ai_zone.root_node.origin);
             ai_zone.minimap.targetname = "zm_minimap";
         }
         ai_zone.minimap setmodel("tag_origin");
@@ -1476,7 +1476,7 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
         if (isdefined(traversal_start_node)) {
             other_node = getothernodeinnegotiationpair(traversal_start_node);
             if (eventstruct.state == 0) {
-                if (isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0) {
+                if (isdefined(getgametypesetting(#"wzzombiesbreakdoors")) ? getgametypesetting(#"wzzombiesbreakdoors") : 0) {
                     function_dc0a8e61(traversal_start_node, 0);
                     if (isdefined(other_node)) {
                         function_dc0a8e61(other_node, 0);
@@ -1495,7 +1495,7 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                 }
                 return;
             }
-            if (isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0) {
+            if (isdefined(getgametypesetting(#"wzzombiesbreakdoors")) ? getgametypesetting(#"wzzombiesbreakdoors") : 0) {
                 if (eventstruct.ent.health > 0) {
                     forward = anglestoforward(eventstruct.ent.angles);
                     if (eventstruct.state == 2) {

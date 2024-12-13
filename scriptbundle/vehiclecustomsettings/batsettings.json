@@ -44,7 +44,7 @@
     "name": "batsettings",
     "var_e7260470": 65,
     "rocketcooldown": 5,
-    "var_fb3ce03c": 200,
+    "targeting_radius": 200,
     "meleedist": 50,
     "secondary_death_fx_1": "#hash_658a00ea42586dbd",
     "damage_radius": 150,

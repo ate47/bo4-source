@@ -64,7 +64,7 @@ class class_7b5e0861 {
         var_e84fc5dc = bundle.var_f495bc84;
         var_28f1ce55 = bundle.var_90f05429;
         m_spawnsentity = bundle.spawnsentity;
-        var_656cbe2d = bundle.var_28bb5240;
+        var_656cbe2d = bundle.str_pickup;
         m_timeout = bundle.timeout;
         m_health = bundle.health;
         if (isdefined(m_health)) {

@@ -825,7 +825,7 @@ function function_c8e681c8() {
     ct_utils::function_c2a10fc();
     ct_vo::function_3ca1b77d();
     ct_vo::function_831e0584(array(#"hash_3c3ed6b85cba9c13", #"hash_404d0140e0490cd4"), 1);
-    level.var_54c1ce00 = level.var_32ae304;
+    level.temp_disable = level.var_32ae304;
     level.var_32ae304 = undefined;
     level.var_72c3ea74 = struct::get_array("s_firing_squad_loc", "targetname");
     level.var_da5432a2 = 0;
@@ -843,7 +843,7 @@ function function_c8e681c8() {
     level.var_4a4cff9b = 1;
     wait 2;
     ct_utils::kill_all_bots(undefined);
-    level.var_32ae304 = level.var_54c1ce00;
+    level.var_32ae304 = level.temp_disable;
     level notify(#"hash_4c9c5fbc89779e64");
     ct_utils::function_e9ab1003("s_seraph_soldier_loc_5_2");
     e_player = getplayers()[0];

@@ -630,7 +630,7 @@ function on_vehicle_damage(params) {
                     break;
                 case #"mod_rifle_bullet":
                 case #"mod_pistol_bullet":
-                    self playsoundtoplayer(#"hash_6dd3a55ee3658ca", occupant);
+                    self playsoundtoplayer(#"prj_bullet_impact_player_vehicle", occupant);
                     break;
                 }
             }
@@ -846,8 +846,8 @@ function private function_6aa73a2a(missile, vehicle) {
         if (var_38fa5914) {
             vehicle playsoundtoplayer(#"uin_ac130_alarm_missile_incoming", self);
         }
-        var_6ce65309 = (dist - 10) / range;
-        beep_interval = lerpfloat(0.05, 0.2, var_6ce65309);
+        normalizeddist = (dist - 10) / range;
+        beep_interval = lerpfloat(0.05, 0.2, normalizeddist);
         wait beep_interval;
     }
 }

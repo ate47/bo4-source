@@ -1,42 +1,64 @@
-begin "hash_18184f6fb88ec604";
-version 1;
-metatable "hash_7d3ac5db800c1ea9";
+// hash_18184f6fb88ec604
+// metatable "hash_7d3ac5db800c1ea9"
 
-struct root {
-    int32 ping;
+version 1 {
+    // idx 1 members 8 size 0x1f8
+    struct telemetry_header {
+        // offset 0x0, size 0x20
+        int changelist_number;
+        // offset 0x20, size 0x10
+        uint:16 source_version;
+        // offset 0x30, size 0x40
+        xhash action_type;
+        // offset 0x70, size 0x8
+        hash_54196e9e9860f0be platform;
+        // offset 0x78, size 0x100
+        string(32) build_version;
+        // offset 0x178, size 0x20
+        uint title_id;
+        // offset 0x198, size 0x20
+        uint hash_56a1b6d783aa7a25;
+        // offset 0x1b8, size 0x40
+        uint64 hash_f2ad74d8edb8204;
+    };
+
+    // idx 2 members 3 size 0xc0
+    struct client_header {
+        // offset 0x0, size 0x40
+        uint64 hash_4016bed15f9183f7;
+        // offset 0x40, size 0x40
+        uint64 uno_id;
+        // offset 0x80, size 0x40
+        uint64 user_id;
+    };
+
+    // idx 0 members 5
+    enum hash_54196e9e9860f0be {
+        pc, // 0x0,
+        neo, // 0x1,
+        xb1, // 0x2,
+        scorpio, // 0x3,
+        ps4, // 0x4
+    };
+
+    // idx 0 members 9 size 0x820
+    // offset 0x0, size 0x20
+    int ping;
+    // offset 0x20, size 0x1f8
     telemetry_header telemetry;
-    char server_location[32];
-    int32 best_ping;
+    // offset 0x218, size 0x100
+    string(32) server_location;
+    // offset 0x318, size 0x20
+    int best_ping;
+    // offset 0x338, size 0xc0
     client_header client;
-    char result[128];
-    int32 search_type;
-    bit ok;
-    padbit __pad[7];
-};
-
-struct telemetry_header {
-    int32 changelist_number;
-    uint16 source_version;
-    hash action_type;
-    hash_54196e9e9860f0be platform;
-    char build_version[32];
-    uint32 title_id;
-    uint32 hash_56a1b6d783aa7a25;
-    uint64 hash_f2ad74d8edb8204;
-};
-
-enum hash_54196e9e9860f0be {
-    "pc" = 0x0,
-    "neo" = 0x1,
-    "xb1" = 0x2,
-    "scorpio" = 0x3,
-    "ps4" = 0x4
-};
-
-struct client_header {
-    uint64 hash_4016bed15f9183f7;
-    uint64 uno_id;
-    uint64 user_id;
-};
-
+    // offset 0x3f8, size 0x400
+    string(128) result;
+    // offset 0x7f8, size 0x20
+    int search_type;
+    // offset 0x818, size 0x1
+    bool ok;
+    // offset 0x819, size 0x7
+    uint:1 __pad[7];
+}
 

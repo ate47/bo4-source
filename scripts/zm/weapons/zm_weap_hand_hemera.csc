@@ -27,17 +27,17 @@ function __init__() {
     clientfield::register("allplayers", "hemera_proj_flash", 16000, 1, "int", &function_c6d1bdb0, 0, 0);
     clientfield::register("allplayers", "hemera_beam_flash", 16000, 1, "int", &function_68e9fdbb, 0, 0);
     clientfield::register("actor", "hemera_proj_death", 16000, 1, "int", &function_ab086ad8, 0, 0);
-    clientfield::register("actor", "" + #"hash_5a8f1796382ec694", 16000, 1, "int", &function_3fd7be85, 0, 0);
+    clientfield::register("actor", "" + #"hemera_beam_death", 16000, 1, "int", &function_3fd7be85, 0, 0);
     level._effect[#"hemera_shoot"] = #"hash_520fd2427c5fcea3";
     level._effect[#"hash_b9d4268e0a3bccc"] = #"hash_2de436091e3fa43c";
     level._effect[#"hash_ba44e68e0a9efde"] = #"hash_2deb42091e45d74e";
     level._effect[#"hemera_proj_death_head"] = #"hash_57ff7c670774f7d";
     level._effect[#"hash_209c29b7e6706274"] = #"hash_47fe9ffe78c83012";
     level._effect[#"hash_1c1dafe5ebd971f8"] = #"hash_6400b8e89418b50e";
-    level._effect[#"hash_55fc6dcb648e2b70"] = #"hash_5493d96403f608c6";
+    level._effect[#"hemera_proj_impact"] = #"hash_5493d96403f608c6";
     level._effect[#"hash_3115c2658b6e4e0"] = #"hash_3b0b9cc4cdb70c89";
     level._effect[#"hash_318682658bd17f2"] = #"hash_3b12a8c4cdbd3f9b";
-    level._effect[#"hash_5a8f1796382ec694"] = #"hash_cb5ab216f90ba29";
+    level._effect[#"hemera_beam_death"] = #"hash_cb5ab216f90ba29";
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
@@ -60,7 +60,7 @@ function hemera_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap,
     } else {
         v_ang = anglestoforward(self.angles) * -1;
     }
-    playfx(localclientnum, level._effect[#"hash_55fc6dcb648e2b70"], v_org, v_ang);
+    playfx(localclientnum, level._effect[#"hemera_proj_impact"], v_org, v_ang);
     playsound(localclientnum, #"hash_6e5604c8cf7c55c0", self.origin);
 }
 
@@ -233,6 +233,6 @@ function function_3fd7be85(localclientnum, oldval, newval, bnewent, binitialsnap
     } else {
         v_org = self.origin;
     }
-    playfx(localclientnum, level._effect[#"hash_5a8f1796382ec694"], v_org, anglestoforward(self.angles));
+    playfx(localclientnum, level._effect[#"hemera_beam_death"], v_org, anglestoforward(self.angles));
 }
 

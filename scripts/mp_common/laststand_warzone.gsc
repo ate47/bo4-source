@@ -355,11 +355,11 @@ function function_dc7906e8(einflictor, attacker, idamage, smeansofdeath, weapon,
     self.laststandparams.einflictor = einflictor;
     self.laststandparams.attacker = attacker;
     self.laststandparams.victimorigin = self.origin;
-    self.laststandparams.var_5fceefd4 = self getplayerangles();
+    self.laststandparams.victimangles = self getplayerangles();
     self.laststandparams.victimweapon = self.currentweapon;
     vattacker = isdefined(attacker) ? attacker : self;
     self.laststandparams.attackerorigin = vattacker.origin;
-    self.laststandparams.var_83634238 = isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles;
+    self.laststandparams.attackerangles = isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles;
     self.laststandparams.idamage = idamage;
     self.laststandparams.smeansofdeath = smeansofdeath;
     self.laststandparams.sweapon = weapon;
@@ -369,7 +369,7 @@ function function_dc7906e8(einflictor, attacker, idamage, smeansofdeath, weapon,
     self.laststandparams.matchtime = function_f8d53445();
     self.laststandparams.bledout = 0;
     self.laststandparams.savedorigin = self.laststandparams.victimorigin;
-    self.laststandparams.savedangles = self.laststandparams.var_5fceefd4;
+    self.laststandparams.savedangles = self.laststandparams.victimangles;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -733,7 +733,7 @@ function laststand_bleedout_damage() {
             self.bleedout_time = 0;
             self.var_1cc38de0 = 1;
             vattacker = isdefined(attacker) ? attacker : self;
-            self.var_a1d415ee = {#einflictor:waitresult.einflictor, #attacker:attacker, #attackerorigin:vattacker.origin, #var_83634238:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #idamage:waitresult.idamage, #smeansofdeath:waitresult.smeansofdeath, #sweapon:waitresult.weapon, #vdir:waitresult.vdir, #shitloc:waitresult.shitloc, #matchtime:function_f8d53445()};
+            self.var_a1d415ee = {#einflictor:waitresult.einflictor, #attacker:attacker, #attackerorigin:vattacker.origin, #attackerangles:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #idamage:waitresult.idamage, #smeansofdeath:waitresult.smeansofdeath, #sweapon:waitresult.weapon, #vdir:waitresult.vdir, #shitloc:waitresult.shitloc, #matchtime:function_f8d53445()};
         }
         if (isdefined(self.var_d75a6ff5)) {
             self.var_d75a6ff5.damage += int(waitresult.idamage);

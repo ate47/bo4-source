@@ -45,12 +45,12 @@ function private __init__() {
     level.var_7dff87f1 = 0;
     level.item_gravity = getdvarint(#"bg_gravity", 0);
     if (isdefined(getgametypesetting(#"hash_3109a8794543000f")) && getgametypesetting(#"hash_3109a8794543000f")) {
-        if (isdefined(getgametypesetting(#"hash_42471cb0cbc19544")) && getgametypesetting(#"hash_42471cb0cbc19544")) {
+        if (isdefined(getgametypesetting(#"wzzombiesspawnammo")) && getgametypesetting(#"wzzombiesspawnammo")) {
             level.zombie_itemlist = #"zombie_itemlist_ammo_close_quarters";
         } else {
             level.zombie_itemlist = #"zombie_itemlist_close_quarters";
         }
-    } else if (isdefined(getgametypesetting(#"hash_42471cb0cbc19544")) && getgametypesetting(#"hash_42471cb0cbc19544")) {
+    } else if (isdefined(getgametypesetting(#"wzzombiesspawnammo")) && getgametypesetting(#"wzzombiesspawnammo")) {
         level.zombie_itemlist = #"zombie_itemlist_ammo";
     } else {
         level.zombie_itemlist = #"zombie_itemlist";
@@ -542,7 +542,7 @@ function ai_wz_can_see() {
     }
     n_max_dist = undefined;
     if ((isdefined(getgametypesetting(#"hash_26f00de198472b81")) ? getgametypesetting(#"hash_26f00de198472b81") : 0) && !(isdefined(getgametypesetting(#"hash_77af5743dec010ae")) ? getgametypesetting(#"hash_77af5743dec010ae") : 0)) {
-        n_max_dist = getdvarint(#"hash_5a59019abe7dc15d", 5000);
+        n_max_dist = getdvarint(#"wzzombiemaxtargetdist", 5000);
     }
     if (getdvarint(#"survival_prototype", 0)) {
         n_max_dist = 1650;
@@ -1172,7 +1172,7 @@ function function_516ff8da() {
 // Checksum 0xf9ff8b20, Offset: 0x5170
 // Size: 0x84
 function function_b7dc3ab4() {
-    if (isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0) {
+    if (isdefined(getgametypesetting(#"wzzombiesbreakdoors")) ? getgametypesetting(#"wzzombiesbreakdoors") : 0) {
         level function_71578099();
         return;
     }

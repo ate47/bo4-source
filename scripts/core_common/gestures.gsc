@@ -66,14 +66,14 @@ function clear_gesture() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa8bdbf04, Offset: 0x580
 // Size: 0x72
-function function_e198bde3(var_ee58f129) {
-    if (!isdefined(var_ee58f129)) {
+function function_e198bde3(gesturename) {
+    if (!isdefined(gesturename)) {
         return 0;
     }
-    if (var_ee58f129 == "") {
+    if (gesturename == "") {
         return 0;
     }
-    var_45e6768d = var_ee58f129;
+    var_45e6768d = gesturename;
     if (!ishash(var_45e6768d)) {
         var_45e6768d = hash(var_45e6768d);
     }
@@ -84,11 +84,11 @@ function function_e198bde3(var_ee58f129) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x4ce8ab5f, Offset: 0x600
 // Size: 0x192
-function function_a5202150(var_ee58f129, weaponname) {
+function function_a5202150(gesturename, weaponname) {
     if (!isdefined(level.gesturedata)) {
         level.gesturedata = [];
     }
-    var_45e6768d = function_e198bde3(var_ee58f129);
+    var_45e6768d = function_e198bde3(gesturename);
     if (!ishash(var_45e6768d)) {
         return;
     }
@@ -112,11 +112,11 @@ function function_a5202150(var_ee58f129, weaponname) {
 // Params 1, eflags: 0x0
 // Checksum 0x3d048ea7, Offset: 0x7a0
 // Size: 0xba
-function function_ba4529d4(var_ee58f129) {
+function function_ba4529d4(gesturename) {
     if (!isdefined(level.gesturedata)) {
         level.gesturedata = [];
     }
-    var_45e6768d = function_e198bde3(var_ee58f129);
+    var_45e6768d = function_e198bde3(gesturename);
     if (!ishash(var_45e6768d)) {
         return;
     }
@@ -130,8 +130,8 @@ function function_ba4529d4(var_ee58f129) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x26f4e297, Offset: 0x868
 // Size: 0x26e
-function function_8cc27b6d(var_ee58f129) {
-    var_45e6768d = function_e198bde3(var_ee58f129);
+function function_8cc27b6d(gesturename) {
+    var_45e6768d = function_e198bde3(gesturename);
     if (!ishash(var_45e6768d)) {
         return false;
     }
@@ -165,25 +165,25 @@ function function_8cc27b6d(var_ee58f129) {
 // Checksum 0x5c7d1349, Offset: 0xae0
 // Size: 0x72
 function function_c77349d4(var_851342cf) {
-    var_ee58f129 = undefined;
+    gesturename = undefined;
     if (isdefined(var_851342cf)) {
         weapon = self getcurrentweapon();
         stancetype = weapon.var_6566504b;
-        var_ee58f129 = function_d12fe2ad(var_851342cf, stancetype);
+        gesturename = function_d12fe2ad(var_851342cf, stancetype);
     }
-    return var_ee58f129;
+    return gesturename;
 }
 
 // Namespace gestures/gestures
 // Params 7, eflags: 0x1 linked
 // Checksum 0x760b682, Offset: 0xb60
 // Size: 0x8e
-function play_gesture(var_ee58f129, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall) {
+function play_gesture(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall) {
     if (!isdefined(self)) {
         return 0;
     }
-    if (self function_8cc27b6d(var_ee58f129)) {
-        return self function_b6cc48ed(var_ee58f129, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
+    if (self function_8cc27b6d(gesturename)) {
+        return self function_b6cc48ed(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
     }
     return 0;
 }
@@ -192,8 +192,8 @@ function play_gesture(var_ee58f129, target, var_a085312c, blendtime, starttime, 
 // Params 7, eflags: 0x1 linked
 // Checksum 0xdbaaef5d, Offset: 0xbf8
 // Size: 0x6a
-function function_b6cc48ed(var_ee58f129, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall) {
-    return self playgestureviewmodel(var_ee58f129, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
+function function_b6cc48ed(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall) {
+    return self playgestureviewmodel(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
 }
 
 // Namespace gestures/gestures
@@ -204,8 +204,8 @@ function function_56e00fbf(var_851342cf, target, var_a085312c, blendtime, startt
     if (!isdefined(self)) {
         return 0;
     }
-    var_ee58f129 = self function_c77349d4(var_851342cf);
-    return play_gesture(var_ee58f129, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
+    gesturename = self function_c77349d4(var_851342cf);
+    return play_gesture(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
 }
 
 // Namespace gestures/gestures
@@ -216,8 +216,8 @@ function function_e62f6dde(var_851342cf, target, var_a085312c, blendtime, startt
     if (!isdefined(self)) {
         return 0;
     }
-    var_ee58f129 = self function_c77349d4(var_851342cf);
-    return function_b6cc48ed(var_ee58f129, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
+    gesturename = self function_c77349d4(var_851342cf);
+    return function_b6cc48ed(gesturename, target, var_a085312c, blendtime, starttime, var_15fc620c, stopall);
 }
 
 // Namespace gestures/gestures

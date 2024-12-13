@@ -469,7 +469,7 @@ function waitthendelete(waittime) {
 function function_71f4cd34() {
     rocket = self;
     var_d0c52d0b = getweapon(#"hash_33be4792feeabece");
-    var_a70219cf = magicbullet(var_d0c52d0b, rocket.origin, rocket.origin + anglestoforward(rocket.angles) * 1000, rocket.owner);
+    mini_missile = magicbullet(var_d0c52d0b, rocket.origin, rocket.origin + anglestoforward(rocket.angles) * 1000, rocket.owner);
 }
 
 // Namespace remotemissile/remotemissile_shared

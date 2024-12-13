@@ -10,7 +10,7 @@
 // Size: 0x1dc
 function registercivilianinterfaceattributes() {
     ai::registermatchedinterface(#"civilian", #"disablearrivals", 0, array(1, 0), &aiutility::arrivalattributescallback);
-    ai::registermatchedinterface(#"civilian", #"hash_78e762abc4fbf1de", "calm", array("calm", "panic", "riot", "run"));
+    ai::registermatchedinterface(#"civilian", #"_civ_mode", "calm", array("calm", "panic", "riot", "run"));
     ai::registermatchedinterface(#"civilian", #"auto_escape", 1, array(1, 0));
     ai::registermatchedinterface(#"civilian", #"auto_wander", 1, array(1, 0));
     ai::registermatchedinterface(#"civilian", #"usegrenades", 1, array(1, 0));

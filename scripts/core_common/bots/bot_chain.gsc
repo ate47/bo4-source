@@ -15,7 +15,7 @@ class class_92792865 {
     var startstruct;
     var var_4de004b7;
     var var_d1e3e893;
-    var var_e7ce4106;
+    var activecolor;
 
     // Namespace class_92792865/bot_chain
     // Params 0, eflags: 0x9 linked
@@ -24,7 +24,7 @@ class class_92792865 {
     constructor() {
         var_4de004b7 = undefined;
         startstruct = undefined;
-        var_e7ce4106 = undefined;
+        activecolor = undefined;
         var_d1e3e893 = undefined;
     }
 
@@ -463,9 +463,9 @@ function private function_c2d874f1(var_72284260, bot) {
         return var_72284260;
     }
     var_1bfc6c1d = [];
-    if (isdefined(self.bot.var_53ffa4c4.var_e7ce4106)) {
+    if (isdefined(self.bot.var_53ffa4c4.activecolor)) {
         foreach (goal in goals) {
-            if (isdefined(goal.script_botchain_color) && goal.script_botchain_color == self.bot.var_53ffa4c4.var_e7ce4106) {
+            if (isdefined(goal.script_botchain_color) && goal.script_botchain_color == self.bot.var_53ffa4c4.activecolor) {
                 array::add(var_1bfc6c1d, goal);
             }
         }
@@ -613,7 +613,7 @@ function function_cf70f2fe(startstruct, resuming = 0) {
             self notify(var_4de004b7.script_notify);
         }
         if (isdefined(goal.script_botchain_color)) {
-            self.bot.var_53ffa4c4.var_e7ce4106 = goal.script_botchain_color;
+            self.bot.var_53ffa4c4.activecolor = goal.script_botchain_color;
         }
         if (isdefined(var_4de004b7.script_flag_set)) {
             level flag::set(var_4de004b7.script_flag_set);

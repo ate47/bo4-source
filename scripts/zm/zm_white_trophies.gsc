@@ -275,7 +275,7 @@ function function_91cfddc4() {
 function function_df71a9b9() {
     level endon(#"game_ended", #"hash_5aa1c9627e8626e0");
     while (true) {
-        waitresults = level waittill(#"hash_4543ba0bff75332e");
+        waitresults = level waittill(#"ray_gun_mk2v_stun_hit");
         e_attacker = waitresults.e_player;
         if (isplayer(e_attacker) && isdefined(e_attacker.var_5e47a087)) {
             a_e_zombies = getaiteamarray(level.zombie_team);

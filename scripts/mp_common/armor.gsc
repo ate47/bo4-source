@@ -415,7 +415,7 @@ function apply_damage(weapon, damage, smeansofdeath, eattacker, shitloc) {
     if (self.armor <= 0) {
         self.var_d6f11c60 = eattacker;
         self.var_e6c1bab8 = gettime();
-        self playsoundtoplayer(#"hash_22f2a16e63651515", self);
+        self playsoundtoplayer(#"prj_bullet_impact_armor_broken", self);
         self thread function_386de852();
         self function_51df9c0c(#"hash_6be738527a4213aa");
         if (perks::perk_hasperk(#"specialty_armor")) {

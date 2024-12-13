@@ -224,7 +224,7 @@
                 function_38964c72();
             }
             if (getdvarint(#"hash_4424a07b5272599a", 0) != 0) {
-                function_89b4b4c();
+                showmodels();
                 setdvar(#"hash_4424a07b5272599a", 0);
             }
             if (getdvarint(#"hash_84008139ad85e21", 0) != 0) {
@@ -1124,7 +1124,7 @@
     // Params 0, eflags: 0x0
     // Checksum 0x4ad3a648, Offset: 0x6088
     // Size: 0x226
-    function function_89b4b4c() {
+    function showmodels() {
         player = level.players[0];
         angles = player.angles;
         dir = anglestoforward(angles);

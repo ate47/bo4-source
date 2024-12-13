@@ -1,61 +1,100 @@
-begin "hash_71b9091973308166";
-version 10;
-metatable "hash_b50561ee11e06077";
+// hash_71b9091973308166
+// metatable "hash_b50561ee11e06077"
 
-struct root {
-    char note[32];
-    char hash_66171d46b926a0f4[48];
+version 10 {
+    // idx 1 members 8 size 0x1f8
+    struct telemetry_header {
+        // offset 0x0, size 0x20
+        int changelist_number;
+        // offset 0x20, size 0x10
+        uint:16 source_version;
+        // offset 0x30, size 0x40
+        xhash action_type;
+        // offset 0x70, size 0x8
+        hash_54196e9e9860f0be platform;
+        // offset 0x78, size 0x100
+        string(32) build_version;
+        // offset 0x178, size 0x20
+        uint title_id;
+        // offset 0x198, size 0x20
+        uint hash_56a1b6d783aa7a25;
+        // offset 0x1b8, size 0x40
+        uint64 hash_f2ad74d8edb8204;
+    };
+
+    // idx 2 members 3 size 0xc0
+    struct client_header {
+        // offset 0x0, size 0x40
+        uint64 hash_4016bed15f9183f7;
+        // offset 0x40, size 0x40
+        uint64 uno_id;
+        // offset 0x80, size 0x40
+        uint64 user_id;
+    };
+
+    // idx 3 members 3 size 0xc0
+    struct match_header {
+        // offset 0x0, size 0x40
+        uint64 match_id;
+        // offset 0x40, size 0x40
+        uint64 hash_c05315ddb26eb93;
+        // offset 0x80, size 0x40
+        uint64 lobby_id;
+    };
+
+    // idx 0 members 5
+    enum hash_54196e9e9860f0be {
+        pc, // 0x0,
+        neo, // 0x1,
+        xb1, // 0x2,
+        scorpio, // 0x3,
+        ps4, // 0x4
+    };
+
+    // idx 0 members 22 size 0xd40
+    // offset 0x0, size 0x100
+    string(32) note;
+    // offset 0x100, size 0x180
+    string(48) hash_66171d46b926a0f4;
+    // offset 0x280, size 0xc0
     match_header match;
-    int32 nodes;
+    // offset 0x340, size 0x20
+    int nodes;
+    // offset 0x360, size 0x1f8
     telemetry_header telemetry;
-    int32 run_time;
-    int32 hash_500de1697bd9326b;
+    // offset 0x558, size 0x20
+    int run_time;
+    // offset 0x578, size 0x20
+    int hash_500de1697bd9326b;
+    // offset 0x598, size 0x20
     float hash_7283f55e08b37f54;
+    // offset 0x5b8, size 0x20
     float hash_7283f65e08b38107;
-    int32 hash_578a31eeeebf8e86;
-    int32 hash_578a32eeeebf9039;
-    int32 samples;
-    int32 partition;
-    int32 hash_686b40e2c86148a;
-    int32 hash_686b50e2c86163d;
-    int32 hash_2b363900460040f3;
+    // offset 0x5d8, size 0x20
+    int hash_578a31eeeebf8e86;
+    // offset 0x5f8, size 0x20
+    int hash_578a32eeeebf9039;
+    // offset 0x618, size 0x20
+    int samples;
+    // offset 0x638, size 0x20
+    int partition;
+    // offset 0x658, size 0x20
+    int hash_686b40e2c86148a;
+    // offset 0x678, size 0x20
+    int hash_686b50e2c86163d;
+    // offset 0x698, size 0x20
+    int hash_2b363900460040f3;
+    // offset 0x6b8, size 0xc0
     client_header client;
-    char hash_171f242bdfe3c7d5[24];
-    char username[32];
-    char hash_6afd5eba293e8da6[128];
-    bit hash_277af36f6bbf409a;
-    padbit __pad[7];
-};
-
-struct match_header {
-    uint64 match_id;
-    uint64 hash_c05315ddb26eb93;
-    uint64 lobby_id;
-};
-
-struct telemetry_header {
-    int32 changelist_number;
-    uint16 source_version;
-    hash action_type;
-    hash_54196e9e9860f0be platform;
-    char build_version[32];
-    uint32 title_id;
-    uint32 hash_56a1b6d783aa7a25;
-    uint64 hash_f2ad74d8edb8204;
-};
-
-enum hash_54196e9e9860f0be {
-    "pc" = 0x0,
-    "neo" = 0x1,
-    "xb1" = 0x2,
-    "scorpio" = 0x3,
-    "ps4" = 0x4
-};
-
-struct client_header {
-    uint64 hash_4016bed15f9183f7;
-    uint64 uno_id;
-    uint64 user_id;
-};
-
+    // offset 0x778, size 0xc0
+    string(24) hash_171f242bdfe3c7d5;
+    // offset 0x838, size 0x100
+    string(32) username;
+    // offset 0x938, size 0x400
+    string(128) hash_6afd5eba293e8da6;
+    // offset 0xd38, size 0x1
+    bool hash_277af36f6bbf409a;
+    // offset 0xd39, size 0x7
+    uint:1 __pad[7];
+}
 

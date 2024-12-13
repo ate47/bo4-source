@@ -26,8 +26,8 @@ function autoexec __init__system__() {
 // Size: 0x1ce
 function __init__() {
     level.w_music_box = getweapon(#"music_box");
-    clientfield::register("scriptmover", "" + #"hash_136e9d44e7e2e888", 24000, 1, "int");
-    clientfield::register("scriptmover", "" + #"hash_77a1a7cd8eb3e86c", 1, 1, "int");
+    clientfield::register("scriptmover", "" + #"music_box_light_fx", 24000, 1, "int");
+    clientfield::register("scriptmover", "" + #"music_box_teleport", 1, 1, "int");
     clientfield::register("actor", "" + #"hash_4881cb6bc59fdc49", 24000, 1, "int");
     callback::on_grenade_fired(&on_grenade_fired);
     zm_loadout::register_lethal_grenade_for_level(#"music_box");
@@ -35,7 +35,7 @@ function __init__() {
         level.var_14160fb0 = new throttle();
         [[ level.var_14160fb0 ]]->initialize(4, 0.05);
     }
-    level flag::init(#"hash_621d31a87bd6d05b");
+    level flag::init(#"music_box_first_use");
     level thread callback::on_ai_killed(&function_da6a44df);
     level.var_722474af = &function_cdb0d1e;
 }
@@ -52,7 +52,7 @@ function on_grenade_fired(s_params) {
         e_grenade ghost();
         e_grenade.var_1a61db89 = util::spawn_model(e_grenade.model, e_grenade.origin, (0, self.angles[1] - 75, 0));
         e_grenade.var_1a61db89 linkto(e_grenade);
-        e_grenade.var_1a61db89 clientfield::set("" + #"hash_136e9d44e7e2e888", 1);
+        e_grenade.var_1a61db89 clientfield::set("" + #"music_box_light_fx", 1);
         e_grenade.weapon = s_params.weapon;
         s_waitresult = s_params.projectile waittill(#"stationary");
         if (e_grenade _second_compass_map_mp_ruins(self)) {
@@ -99,7 +99,7 @@ function function_9d9bff80(var_2fe3186e, attacker) {
     e_sam thread scene::play(#"p8_zm_ora_music_box_bundle", "one_shot", e_sam);
     wait 0.5;
     self.var_1a61db89 hide();
-    self.var_1a61db89 clientfield::set("" + #"hash_136e9d44e7e2e888", 0);
+    self.var_1a61db89 clientfield::set("" + #"music_box_light_fx", 0);
     wait 1;
     foreach (e_zombie in a_zombies) {
         if (isalive(e_zombie)) {
@@ -150,10 +150,10 @@ function function_9d9bff80(var_2fe3186e, attacker) {
 // Size: 0x84
 function function_6b8c9160() {
     wait 4;
-    if (!level flag::get(#"hash_621d31a87bd6d05b") && level.var_98138d6b >= 2) {
+    if (!level flag::get(#"music_box_first_use") && level.var_98138d6b >= 2) {
         level.var_1c53964e thread zm_hms_util::function_6a0d675d("vox_musicbox_first");
     }
-    level flag::set(#"hash_621d31a87bd6d05b");
+    level flag::set(#"music_box_first_use");
 }
 
 // Namespace music_box/zm_equip_music_box

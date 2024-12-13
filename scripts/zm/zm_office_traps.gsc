@@ -86,8 +86,8 @@ function function_cebfdd08() {
     self sethintstring(#"hash_100d349fbdcacb2b");
     self setcursorhint("HINT_NOICON");
     self usetriggerrequirelookat();
-    var_64479507 = getentarray(self.script_flag_wait, "targetname");
-    array::thread_all(var_64479507, &function_a72b7c27, self.script_flag_wait);
+    trap_trigger = getentarray(self.script_flag_wait, "targetname");
+    array::thread_all(trap_trigger, &function_a72b7c27, self.script_flag_wait);
     var_81f22deb = getent(self.script_string, "targetname");
     level thread function_5bd53e9b(var_81f22deb, self.script_flag_wait);
     if (zm_utility::is_standard()) {

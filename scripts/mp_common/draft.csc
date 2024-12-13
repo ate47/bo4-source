@@ -376,14 +376,14 @@ function function_6b532f83(localclientnum, var_de58f286, sessionmode) {
     anim_intro_name = undefined;
     anim_name = undefined;
     weapongroupanim = function_bb0565d0(var_de58f286);
-    if (isdefined(var_de58f286.var_625ec6da) && player_role::is_valid(var_de58f286.var_625ec6da.charactertype)) {
+    if (isdefined(var_de58f286.activecharacter) && player_role::is_valid(var_de58f286.activecharacter.charactertype)) {
         if (!isdefined(var_de58f286) || !isdefined(var_de58f286.var_91065a59) || !isdefined(var_de58f286.var_3afd181d)) {
             assert(isdefined(var_de58f286));
             assert(isdefined(var_de58f286.var_91065a59));
             assert(isdefined(var_de58f286.var_3afd181d));
             return;
         }
-        gender = getherogender(var_de58f286.var_625ec6da.charactertype, sessionmode);
+        gender = getherogender(var_de58f286.activecharacter.charactertype, sessionmode);
         if (var_de58f286.var_91065a59 != var_de58f286.var_3afd181d) {
             if (var_de58f286.var_91065a59) {
                 var_ca1716fe = weapongroupanim[#"ready"][gender];
@@ -429,17 +429,17 @@ function function_93a4f3c5(localclientnum, draftcharacter) {
     var_de58f286 = [[ draftcharacter ]]->function_82e05d64();
     if (player_role::is_valid(var_de58f286.focusedcharacterindex)) {
         var_3f83e0ee = character_customization::function_7474681d(localclientnum, sessionmode, [[ draftcharacter ]]->function_82e05d64().focusedcharacterindex);
-        if (!character_customization::function_aa5382ed(var_de58f286.var_625ec6da, var_3f83e0ee)) {
+        if (!character_customization::function_aa5382ed(var_de58f286.activecharacter, var_3f83e0ee)) {
             return false;
         }
-        [[ draftcharacter ]]->function_82e05d64().var_625ec6da = var_3f83e0ee;
-    } else if (!isdefined(var_de58f286.var_625ec6da) || character_customization::function_aa5382ed(var_de58f286.var_625ec6da, var_de58f286.var_c018da16)) {
-        function_1cf2437c(localclientnum, draftcharacter, var_de58f286.var_625ec6da, var_de58f286.var_c018da16);
-        var_de58f286.var_625ec6da = var_de58f286.var_c018da16;
+        [[ draftcharacter ]]->function_82e05d64().activecharacter = var_3f83e0ee;
+    } else if (!isdefined(var_de58f286.activecharacter) || character_customization::function_aa5382ed(var_de58f286.activecharacter, var_de58f286.var_c018da16)) {
+        function_1cf2437c(localclientnum, draftcharacter, var_de58f286.activecharacter, var_de58f286.var_c018da16);
+        var_de58f286.activecharacter = var_de58f286.var_c018da16;
     }
-    if (isdefined(var_de58f286.var_625ec6da) && player_role::is_valid(var_de58f286.var_625ec6da.charactertype)) {
+    if (isdefined(var_de58f286.activecharacter) && player_role::is_valid(var_de58f286.activecharacter.charactertype)) {
         [[ draftcharacter ]]->function_1ec9448d(0);
-        [[ draftcharacter ]]->function_15a8906a([[ draftcharacter ]]->function_82e05d64().var_625ec6da);
+        [[ draftcharacter ]]->function_15a8906a([[ draftcharacter ]]->function_82e05d64().activecharacter);
         function_799e0ac1(localclientnum, draftcharacter, 0);
     } else {
         [[ draftcharacter ]]->function_1ec9448d(1);
@@ -568,7 +568,7 @@ function update_team(localclientnum, var_4123f2c1) {
                     [[ draftcharacter ]]->function_82e05d64().player = player;
                     [[ draftcharacter ]]->function_82e05d64().var_c018da16 = player function_79a48799();
                     if (isdefined([[ draftcharacter ]]->function_82e05d64().var_c018da16) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().var_c018da16.charactertype) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().focusedcharacterindex)) {
-                        [[ draftcharacter ]]->function_82e05d64().var_625ec6da = undefined;
+                        [[ draftcharacter ]]->function_82e05d64().activecharacter = undefined;
                         [[ draftcharacter ]]->function_82e05d64().focusedcharacterindex = 0;
                     }
                     [[ draftcharacter ]]->function_82e05d64().primaryweapon = player getprimaryweapon();

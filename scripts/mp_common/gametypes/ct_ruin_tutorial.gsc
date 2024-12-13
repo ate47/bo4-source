@@ -1096,11 +1096,11 @@ function function_e340db61() {
         }
         level notify(#"hash_4c9c5fbc89779e64");
         b_first_time = 0;
-        level.var_54c1ce00 = level.var_32ae304;
+        level.temp_disable = level.var_32ae304;
         level.var_32ae304 = undefined;
         level thread function_1c78b967();
         result = level waittill(#"hash_6308f4ed0b129e5d", #"dodge_the_hellstorm_objective_success");
-        level.var_32ae304 = level.var_54c1ce00;
+        level.var_32ae304 = level.temp_disable;
         if (result._notify == "dodge_the_hellstorm_objective_success") {
             break;
         }

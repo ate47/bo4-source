@@ -506,9 +506,9 @@ function function_393e6d42() {
                 }
             }
             if (isdefined(level.var_6f1da91a)) {
-                var_3a76595 = level.var_6f1da91a[function_f701ad2a()];
-                if (isdefined(var_3a76595)) {
-                    foreach (var_61d77bf6 in var_3a76595) {
+                character_array = level.var_6f1da91a[function_f701ad2a()];
+                if (isdefined(character_array)) {
+                    foreach (var_61d77bf6 in character_array) {
                         if (isdefined(var_61d77bf6) && isdefined(var_61d77bf6.character)) {
                             function_4f269ca3(var_61d77bf6.character);
                         }
@@ -540,9 +540,9 @@ function function_393e6d42() {
             }
         }
         if (isdefined(level.var_6f1da91a)) {
-            var_3a76595 = level.var_6f1da91a[function_f701ad2a()];
-            if (isdefined(var_3a76595)) {
-                foreach (var_61d77bf6 in var_3a76595) {
+            character_array = level.var_6f1da91a[function_f701ad2a()];
+            if (isdefined(character_array)) {
+                foreach (var_61d77bf6 in character_array) {
                     if (isdefined(var_61d77bf6) && isdefined(var_61d77bf6.character) && var_61d77bf6.character._xuid === waitresult.xuid) {
                         var_d0b01271 = var_61d77bf6.character;
                         if (waitresult.gesture_index == -1) {

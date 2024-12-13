@@ -79,9 +79,9 @@ function clear_flag(outcome, flag) {
 // Size: 0xb4
 function function_2e00fa44(outcome) {
     flags = 0;
-    foreach (var_b4a9554f in level.var_9b671c3c) {
-        if (outcome flagsys::get(var_b4a9554f.flag)) {
-            flags |= var_b4a9554f.code_flag;
+    foreach (flag_type in level.var_9b671c3c) {
+        if (outcome flagsys::get(flag_type.flag)) {
+            flags |= flag_type.code_flag;
         }
     }
     return flags;

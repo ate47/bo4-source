@@ -1736,7 +1736,7 @@ function function_f275243f() {
     mdl_chaos = s_prophecy.mdl_chaos;
     v_target = mdl_chaos.origin;
     while (true) {
-        s_waitresult = level waittill(#"hash_3ac605b3a73cc198");
+        s_waitresult = level waittill(#"gaia_spike_exploded");
         v_hit = s_waitresult.v_origin;
         if (isdefined(v_hit)) {
             n_dist = distance2dsquared(v_hit, v_target);
@@ -2904,8 +2904,8 @@ function function_6511349e() {
     n_start_time = gettime();
     s_waitresult = level waittilltimeout(s_light.var_93919a1f, #"hash_d0d79bd22a685c1");
     if (s_waitresult._notify == #"hash_d0d79bd22a685c1") {
-        var_f661e07a = gettime();
-        s_light.var_93919a1f -= float(var_f661e07a - n_start_time) / 1000;
+        offset_con = gettime();
+        s_light.var_93919a1f -= float(offset_con - n_start_time) / 1000;
         return;
     }
     level notify(#"hash_4140f0472ba137c");
@@ -2927,8 +2927,8 @@ function function_e5352d71() {
             n_start_time = gettime();
             s_waitresult = level waittilltimeout(n_time_left, #"hash_d0d79bd22a685c1");
             if (s_waitresult._notify == #"hash_d0d79bd22a685c1") {
-                var_f661e07a = gettime();
-                n_time_passed = float(var_f661e07a - n_start_time) / 1000;
+                offset_con = gettime();
+                n_time_passed = float(offset_con - n_start_time) / 1000;
                 n_time_left -= n_time_passed;
                 var_83aeafd6 = s_waitresult.var_83aeafd6;
                 while (isdefined(var_83aeafd6) && isalive(var_83aeafd6)) {

@@ -32,7 +32,7 @@ function __init__() {
     clientfield::register("vehicle", "zm_aat_frostbite_trail_clientfield", 1, 1, "int");
     clientfield::register("actor", "zm_aat_frostbite_explosion_clientfield", 1, 1, "counter");
     clientfield::register("vehicle", "zm_aat_frostbite_explosion_clientfield", 1, 1, "counter");
-    namespace_9ff9f642::register_slowdown(#"hash_7cb479d48ba9bbd6", 0.1, 3);
+    namespace_9ff9f642::register_slowdown(#"zm_aat_frostbite_slowdown", 0.1, 3);
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite
@@ -96,7 +96,7 @@ function function_158a3a18(attacker, mod, weapon, var_e1ec1eee = 0) {
         }
     }
     self clientfield::set("zm_aat_frostbite_trail_clientfield", 1);
-    self thread namespace_9ff9f642::slowdown(#"hash_7cb479d48ba9bbd6", self.var_cbf4894c);
+    self thread namespace_9ff9f642::slowdown(#"zm_aat_frostbite_slowdown", self.var_cbf4894c);
     self thread function_dab102b8(attacker, weapon);
     self thread function_35d3ac3b();
 }
@@ -114,7 +114,7 @@ function function_dab102b8(e_attacker, weapon) {
         if (self.var_cbf4894c >= 1) {
             break;
         }
-        self thread namespace_9ff9f642::slowdown(#"hash_7cb479d48ba9bbd6", self.var_cbf4894c);
+        self thread namespace_9ff9f642::slowdown(#"zm_aat_frostbite_slowdown", self.var_cbf4894c);
     }
     self clientfield::set("zm_aat_frostbite_trail_clientfield", 0);
     self.var_cbf4894c = 1;
@@ -134,7 +134,7 @@ function function_35d3ac3b(attacker, mod, weapon) {
             level thread frostbite_explosion(self, self.origin, attacker, mod, weapon);
             return;
         }
-        self namespace_9ff9f642::function_520f4da5(#"hash_7cb479d48ba9bbd6");
+        self namespace_9ff9f642::function_520f4da5(#"zm_aat_frostbite_slowdown");
     }
 }
 

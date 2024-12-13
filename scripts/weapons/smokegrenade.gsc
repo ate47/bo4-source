@@ -221,11 +221,11 @@ function function_b4a975f1(attacker, victim, weapon, attackerweapon, meansofdeat
 // Params 1, eflags: 0x1 linked
 // Checksum 0xdcef04d, Offset: 0xe08
 // Size: 0xb2
-function function_367ce00e(var_7acab93a) {
+function function_367ce00e(skiptrigger) {
     foreach (trigger in level.smoke_grenade_triggers) {
         if (self istouching(trigger)) {
-            if (isdefined(var_7acab93a)) {
-                if (var_7acab93a != trigger) {
+            if (isdefined(skiptrigger)) {
+                if (skiptrigger != trigger) {
                     return trigger;
                 }
                 continue;
@@ -240,11 +240,11 @@ function function_367ce00e(var_7acab93a) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x7f7c9146, Offset: 0xec8
 // Size: 0xd4
-function function_4cc4db89(team, var_7acab93a) {
+function function_4cc4db89(team, skiptrigger) {
     foreach (trigger in level.smoke_grenade_triggers) {
         if (!trigger util::isenemyteam(team) && self istouching(trigger)) {
-            if (isdefined(var_7acab93a)) {
-                if (var_7acab93a != trigger) {
+            if (isdefined(skiptrigger)) {
+                if (skiptrigger != trigger) {
                     return trigger;
                 }
                 continue;

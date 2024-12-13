@@ -442,9 +442,9 @@ function createflagzone(trigger) {
     flag.flagbase = flagzone;
     flagzone.flag = flag;
     flagzone createflagspawninfluencer(entityteam);
-    var_e68cc7ba = spawn("trigger_radius", trigger.origin, 120);
-    smart_cover::function_18f38647(var_e68cc7ba);
-    concertina_wire::function_18f38647(var_e68cc7ba);
+    excludezone = spawn("trigger_radius", trigger.origin, 120);
+    smart_cover::function_18f38647(excludezone);
+    concertina_wire::function_18f38647(excludezone);
     return flagzone;
 }
 

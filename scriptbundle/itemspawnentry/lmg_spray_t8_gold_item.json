@@ -1,16 +1,16 @@
 {
     "attachments": [
         {
-            "var_6be1bec7": "pistol_grip_wz_item"
+            "attachment_type": "pistol_grip_wz_item"
         },
         {
-            "var_6be1bec7": "extbarrel_wz_item"
+            "attachment_type": "extbarrel_wz_item"
         },
         {
-            "var_6be1bec7": "acog_wz_item"
+            "attachment_type": "acog_wz_item"
         },
         {
-            "var_6be1bec7": "fastmag_wz_item"
+            "attachment_type": "fastmag_wz_item"
         }
     ],
     "amount": 1,

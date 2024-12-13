@@ -668,9 +668,9 @@ class csceneplayer : cscriptbundleobjectbase, csceneobject {
         var_57949b2d = n_start_time * getcamanimtime(animation);
         var_473877de = getservertime(clientnum) - var_57949b2d;
         if (isdefined(var_55b4f21e.var_ffc10b65)) {
-            var_94f3822c = getent(clientnum, var_55b4f21e.var_ffc10b65, "targetname");
+            rotation_target = getent(clientnum, var_55b4f21e.var_ffc10b65, "targetname");
         }
-        playmaincamxcam(clientnum, animation, var_8395d6f1, var_380af598, "", v_pos, v_ang, var_94f3822c, undefined, undefined, int(var_473877de));
+        playmaincamxcam(clientnum, animation, var_8395d6f1, var_380af598, "", v_pos, v_ang, rotation_target, undefined, undefined, int(var_473877de));
         wait_for_camera(animation, var_57949b2d);
     }
 

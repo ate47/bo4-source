@@ -30,7 +30,7 @@ function init() {
         function_36cc50(#"spawner_boct_zombie_dog_wz", 10, 4);
     } else if (isdefined(level.warzoneavogadroeverywhere) && level.warzoneavogadroeverywhere && isdefined(level.var_9196aafd) && level.var_9196aafd) {
         function_36cc50(#"spawner_boct_avogadro", 4, 2);
-    } else if (isdefined(level.var_d373b4e4) && level.var_d373b4e4) {
+    } else if (isdefined(level.warzonezombiesmaxtest) && level.warzonezombiesmaxtest) {
         function_f910ed8a();
     } else if (isdefined(level.var_fd7ef894) && level.var_fd7ef894) {
         function_f0b2e300();

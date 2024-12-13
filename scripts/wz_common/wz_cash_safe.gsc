@@ -116,10 +116,10 @@ function private function_fb346efb() {
     while (level.deathcircleindex < lastcircleindex) {
         wait 1;
     }
-    var_8e3c3c5b = level.deathcircles[level.deathcircleindex];
+    finalcircle = level.deathcircles[level.deathcircleindex];
     level.var_590e0497 = [];
     foreach (targetname, count in level.var_a6a3e12a) {
-        function_3387f756(targetname, var_8e3c3c5b.origin, var_8e3c3c5b.radius);
+        function_3387f756(targetname, finalcircle.origin, finalcircle.radius);
     }
 }
 

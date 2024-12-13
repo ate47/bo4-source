@@ -351,12 +351,12 @@ function private function_1aba0132() {
             distance = distance(self.origin, enemypos);
             eyeorigin = self gettagorigin("tag_eye");
             eyeangles = self gettagangles("tag_eye");
-            var_a4d90ed8 = anglestoforward(eyeangles);
+            eyedir = anglestoforward(eyeangles);
             /#
                 if (self cansee(self.enemy)) {
-                    recordline(eyeorigin, eyeorigin + var_a4d90ed8 * 100, (0, 1, 0), "<dev string:x38>");
+                    recordline(eyeorigin, eyeorigin + eyedir * 100, (0, 1, 0), "<dev string:x38>");
                 } else {
-                    recordline(eyeorigin, eyeorigin + var_a4d90ed8 * 100, (1, 0, 0), "<dev string:x38>");
+                    recordline(eyeorigin, eyeorigin + eyedir * 100, (1, 0, 0), "<dev string:x38>");
                 }
                 record3dtext("<dev string:x41>" + distance, self.origin, (0, 0, 1), "<dev string:x38>");
             #/

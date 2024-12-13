@@ -113,7 +113,7 @@ function getplaneflyheight(bundle) {
 // Params 4, eflags: 0x0
 // Checksum 0x53b4b192, Offset: 0x728
 // Size: 0x5a0
-function function_496d0824(var_3bc2d545, var_e8456387, team, killstreak_id) {
+function function_496d0824(sweep_start, var_e8456387, team, killstreak_id) {
     owner = self;
     owner endon(#"emp_jammed", #"joined_team", #"joined_spectators", #"disconnect");
     bundle = level.killstreaks[#"artillery_barrage"].script_bundle;
@@ -122,8 +122,8 @@ function function_496d0824(var_3bc2d545, var_e8456387, team, killstreak_id) {
     var_66e0652a = 26000;
     height = getplaneflyheight(bundle);
     plane_start = (level.mapcenter[0], level.mapcenter[1], height);
-    var_dca1c8d4 = self getteamcenter(self.team);
-    var_d1769adf = vectornormalize((var_dca1c8d4[0], var_dca1c8d4[1], height) - (level.mapcenter[0], level.mapcenter[1], height));
+    team_center = self getteamcenter(self.team);
+    var_d1769adf = vectornormalize((team_center[0], team_center[1], height) - (level.mapcenter[0], level.mapcenter[1], height));
     var_675219e7 = (level.mapcenter[0], level.mapcenter[1], height) + vectorscale(var_d1769adf, var_9bed4193);
     var_aff95821 = vectorcross((0, 0, 1), var_d1769adf);
     plane_start = var_675219e7 - vectorscale(var_aff95821, var_6c36c4dd);
@@ -148,7 +148,7 @@ function function_496d0824(var_3bc2d545, var_e8456387, team, killstreak_id) {
     plane thread heatseekingmissile::missiletarget_proximitydetonateincomingmissile("crashing", "death");
     plane thread function_6cd200d2();
     plane thread watchgameended();
-    owner thread function_598dc586(plane, var_3bc2d545, var_e8456387, team, killstreak_id, height);
+    owner thread function_598dc586(plane, sweep_start, var_e8456387, team, killstreak_id, height);
     owner childthread function_a9ef6d5d(plane, var_675219e7, var_aff95821, var_d1769adf);
     plane.var_f348056 = var_f348056;
     plane.var_493a2839 = var_aff95821;

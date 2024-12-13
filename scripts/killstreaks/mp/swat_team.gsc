@@ -773,7 +773,7 @@ function private function_ace0a9bc() {
     self ai::set_behavior_attribute("useGrenades", 0);
     self function_e69272bf();
     while (true) {
-        if (getdvarint(#"hash_6f66ef2c6ab70226", 0)) {
+        if (getdvarint(#"scr_debug_swat_behavior", 0)) {
             if (isdefined(self.likelyenemyposition)) {
                 /#
                     recordline(self.origin, self.likelyenemyposition, (0, 0, 1), "<dev string:x3b>");
@@ -1172,8 +1172,8 @@ function private spawn_swat_helicopter(owner, origin, angles, context) {
     helicopter.allowcontinuedlockonafterinvis = 1;
     helicopter.soundmod = "heli";
     helicopter.identifier_weapon = getweapon("player_air_vehicle1_main_turret_3rd_person_swat");
-    var_9a1bcc5b = 128;
-    helicopter setneargoalnotifydist(var_9a1bcc5b);
+    notifydist = 128;
+    helicopter setneargoalnotifydist(notifydist);
     helicopter.maxhealth = level.heli_maxhealth;
     helicopter.health = level.heli_maxhealth;
     helicopter.overridevehicledamage = &function_11038a4a;
@@ -1631,9 +1631,9 @@ function function_3b759619(var_1c996690) {
 function function_263d3e9e(var_1c996690, context, owner, secondattempt = 0) {
     if (getdvarint(#"hash_60d47d611bbc3bed", 1)) {
         if (!function_3b759619(var_1c996690)) {
-            var_986a13c3 = getclosesttacpoint(var_1c996690);
-            if (isdefined(var_986a13c3)) {
-                var_1c996690 = var_986a13c3.origin;
+            nearesttacpoint = getclosesttacpoint(var_1c996690);
+            if (isdefined(nearesttacpoint)) {
+                var_1c996690 = nearesttacpoint.origin;
             }
         }
         verticaloffset = getstartorigin(var_1c996690, (0, 0, 0), "ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2")[2] - var_1c996690[2];

@@ -215,7 +215,7 @@ function function_d7a1a570(_hash) {
 // Params 2, eflags: 0x0
 // Checksum 0x3f7bbf88, Offset: 0xa30
 // Size: 0x32
-function function_bdb97813(b_disable, n_delay) {
+function disable_vo(b_disable, n_delay) {
     if (isdefined(n_delay)) {
         wait n_delay;
     }

@@ -177,12 +177,12 @@ function addsupportedspawnpointtype(spawnpointtype, team) {
     if (!isdefined(level.supportedspawntypes)) {
         level.supportedspawntypes = [];
     }
-    var_79942a82 = spawnstruct();
-    var_79942a82.type = spawnpointtype;
+    spawnpointstruct = spawnstruct();
+    spawnpointstruct.type = spawnpointtype;
     if (isdefined(team)) {
-        var_79942a82.team = team;
+        spawnpointstruct.team = team;
     }
-    array::add(level.supportedspawntypes, var_79942a82);
+    array::add(level.supportedspawntypes, spawnpointstruct);
 }
 
 // Namespace globallogic_spawn/globallogic_spawn

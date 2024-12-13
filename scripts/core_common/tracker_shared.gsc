@@ -45,7 +45,7 @@ function function_c8241070(player, weapon) {
     if (!isdefined(level.trackerperk.var_75492b09[player.clientid])) {
         level.trackerperk.var_75492b09[player.clientid] = spawnstruct();
     }
-    level.trackerperk.var_75492b09[player.clientid].var_80ec1137 = gettime();
+    level.trackerperk.var_75492b09[player.clientid].lastfired = gettime();
     level.trackerperk.var_75492b09[player.clientid].var_2e0b3c25 = player.origin;
     level.trackerperk.var_75492b09[player.clientid].var_2672a259 = weapon;
     level.trackerperk.var_75492b09[player.clientid].var_851de005 = player;

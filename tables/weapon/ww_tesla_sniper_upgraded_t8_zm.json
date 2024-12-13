@@ -26,7 +26,7 @@
     "sound800": "#hash_17c846b05b70637f",
     "sound810": "#hash_17c846b05b70637f",
     "sound820": "#hash_17c846b05b70637f",
-    "hitsound": "#hash_6fa5ee734709aeac",
+    "hitsound": "#mpl_hit_alert_shockrifle",
     "var_8456d4d": "#damageeffecttype_electrical",
     "properties": {
         "var_f56ac2bd": "",

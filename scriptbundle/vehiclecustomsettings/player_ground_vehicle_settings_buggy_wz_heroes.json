@@ -73,7 +73,7 @@
     "var_e7260470": 65,
     "damagestate_lv1_numslots": 1,
     "rocketcooldown": 5,
-    "var_fb3ce03c": 200,
+    "targeting_radius": 200,
     "meleedist": 50,
     "damage_radius": 150,
     "vehicle_turret": "#hash_10dd6da6249fb08d",

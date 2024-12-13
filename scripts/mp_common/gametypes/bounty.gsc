@@ -1252,8 +1252,8 @@ function private function_d23cf101(origin, angles, context) {
     helicopter.allowcontinuedlockonafterinvis = 1;
     helicopter.soundmod = "heli";
     helicopter.takedamage = 0;
-    var_9a1bcc5b = 128;
-    helicopter setneargoalnotifydist(var_9a1bcc5b);
+    notifydist = 128;
+    helicopter setneargoalnotifydist(notifydist);
     bundle = level.var_4cfc17cc;
     helicopter.maxhealth = bundle.kshealth;
     helicopter.health = bundle.kshealth;

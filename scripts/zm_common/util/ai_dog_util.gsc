@@ -204,13 +204,13 @@ function dog_spawn_fx(ai, ent) {
 // Params 1, eflags: 0x0
 // Checksum 0x4cc25a54, Offset: 0xe68
 // Size: 0x114
-function dog_spawn_factory_logic(var_8f952661) {
+function dog_spawn_factory_logic(favorite_enemy) {
     dog_locs = array::randomize(level.zm_loc_types[#"dog_location"]);
     for (i = 0; i < dog_locs.size; i++) {
         if (isdefined(level.old_dog_spawn) && level.old_dog_spawn == dog_locs[i]) {
             continue;
         }
-        dist_squared = distancesquared(dog_locs[i].origin, var_8f952661.origin);
+        dist_squared = distancesquared(dog_locs[i].origin, favorite_enemy.origin);
         if (dist_squared > 160000 && dist_squared < 1000000) {
             level.old_dog_spawn = dog_locs[i];
             return dog_locs[i];

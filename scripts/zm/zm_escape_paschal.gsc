@@ -308,11 +308,11 @@ function step_1_cleanup(var_a276c861, var_19e802fa) {
         var_d388f9de thread scene::play();
         level thread scene::skipto_end("s_r_w_a_r", "Main & Idle Loop Out");
     }
-    var_7034e8dd = getent("w_h_f", "targetname");
+    mdl_pristine = getent("w_h_f", "targetname");
     var_f7afe1a0 = getent("w_h_f_d", "targetname");
     var_f7afe1a0 show();
-    if (isdefined(var_7034e8dd)) {
-        var_7034e8dd delete();
+    if (isdefined(mdl_pristine)) {
+        mdl_pristine delete();
     }
     var_96e39e55 delete();
     var_15d876af = getent("w_h_h_d_clip_m", "targetname");
@@ -456,8 +456,8 @@ function function_cf51e21a() {
     var_de399497 thread function_9e723e9();
     level thread scene::play("s_r_w_a_r", "Main & Idle Loop Out");
     wait 4.8;
-    var_7034e8dd = getent("w_h_f", "targetname");
-    var_7034e8dd hide();
+    mdl_pristine = getent("w_h_f", "targetname");
+    mdl_pristine hide();
     wait 1;
     level thread function_fc4ee98b();
 }

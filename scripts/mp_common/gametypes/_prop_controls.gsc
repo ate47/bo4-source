@@ -712,7 +712,7 @@ function set_pitch_roll_for_ground_normal(traceignore) {
     if (!isdefined(groundnormal)) {
         return;
     }
-    var_bcd5e04 = anglestoforward(self.angles);
+    ovf = anglestoforward(self.angles);
     ovr = anglestoright(self.angles);
     new_angles = vectortoangles(groundnormal);
     pitch = angleclamp180(new_angles[0] + 90);
@@ -724,7 +724,7 @@ function set_pitch_roll_for_ground_normal(traceignore) {
     } else {
         mod = 1;
     }
-    dot = vectordot(var_c13d4c82, var_bcd5e04);
+    dot = vectordot(var_c13d4c82, ovf);
     newpitch = dot * pitch;
     newroll = (1 - abs(dot)) * pitch * mod;
     self.angles = (newpitch, self.angles[1], newroll);
@@ -1033,8 +1033,8 @@ function canlock() {
             #/
             return 0;
         }
-        var_734faed8 = point[2] - org1[2];
-        if (var_734faed8 > 50) {
+        distz = point[2] - org1[2];
+        if (distz > 50) {
             point2 = getnearestpathpoint(org1, 50);
             if (!isdefined(point2)) {
                 /#

@@ -104,7 +104,7 @@ function private __init__() {
 // Checksum 0xc6a57a86, Offset: 0xe28
 // Size: 0x202
 function private __main__() {
-    if (isdefined(getgametypesetting(#"hash_2b2c167cf8889749")) ? getgametypesetting(#"hash_2b2c167cf8889749") : 0) {
+    if (isdefined(getgametypesetting(#"wzzombiesattackablesenabled")) ? getgametypesetting(#"wzzombiesattackablesenabled") : 0) {
         callback::add_callback(#"hash_70eeb7d813f149b2", &function_cf065988);
         callback::add_callback(#"hash_15858698313c5f32", &function_b0503d98);
         callback::add_callback(#"hash_6d9bdacc6c29cfa5", &function_68cc8bce);
@@ -385,7 +385,7 @@ function initzombiebehaviors() {
     assert(isscriptfunctionptr(&zombieshouldknockdown));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieshouldknockdown", &zombieshouldknockdown);
     assert(isscriptfunctionptr(&function_2a7b4aab));
-    behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_27c0b6c5a7e05804", &function_2a7b4aab);
+    behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieinwire", &function_2a7b4aab);
     assert(isscriptfunctionptr(&function_55b7ea22));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_336e28ae1ed4640b", &function_55b7ea22);
     assert(isscriptfunctionptr(&function_98b102d8));
@@ -431,7 +431,7 @@ function initzombiebehaviors() {
     assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     assert(!isdefined(&function_78106a79) || isscriptfunctionptr(&function_78106a79));
     assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    behaviortreenetworkutility::registerbehaviortreeaction(#"hash_43da8039096f842f", undefined, &function_78106a79, undefined);
+    behaviortreenetworkutility::registerbehaviortreeaction(#"wzzombiestunnedloop", undefined, &function_78106a79, undefined);
     assert(isscriptfunctionptr(&function_f8250d5e));
     behaviorstatemachine::registerbsmscriptapiinternal(#"wzzombieidleactionstart", &function_f8250d5e);
     assert(isscriptfunctionptr(&function_860d5d8));
@@ -441,7 +441,7 @@ function initzombiebehaviors() {
     assert(isscriptfunctionptr(&function_860d5d8));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieidleactionupdate", &function_860d5d8);
     assert(isscriptfunctionptr(&function_f37b0fbd));
-    behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_23cab4c0aa3e9ee0", &function_f37b0fbd);
+    behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombiewaitfortraversalstart", &function_f37b0fbd);
     animationstatenetwork::registernotetrackhandlerfunction("zombieRiserFx", &function_79c3a487);
     animationstatenetwork::registernotetrackhandlerfunction("showZombie", &showzombie);
     animationstatenetwork::registernotetrackhandlerfunction("damageDoor", &damagedoor);
@@ -1987,17 +1987,17 @@ function private function_b67c088d() {
 // Checksum 0x2fd7c157, Offset: 0x89d0
 // Size: 0x9a
 function private function_a9cfe717() {
-    var_158e7fe3 = undefined;
-    var_158e7fe3 = gadget_cymbal_monkey::function_4a5dff80(self);
+    closest_attractor = undefined;
+    closest_attractor = gadget_cymbal_monkey::function_4a5dff80(self);
     var_b26b6492 = gadget_homunculus::function_bd59a592(self);
     if (isdefined(var_b26b6492)) {
-        if (!isdefined(var_158e7fe3)) {
-            var_158e7fe3 = var_b26b6492;
+        if (!isdefined(closest_attractor)) {
+            closest_attractor = var_b26b6492;
         } else {
-            var_158e7fe3 = arraygetclosest(self.origin, array(var_158e7fe3, var_b26b6492));
+            closest_attractor = arraygetclosest(self.origin, array(closest_attractor, var_b26b6492));
         }
     }
-    return var_158e7fe3;
+    return closest_attractor;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -2644,7 +2644,7 @@ function private zombiegetupactionterminate(behaviortreeentity) {
 // Checksum 0x8104be5a, Offset: 0xb138
 // Size: 0x14e
 function private function_bfc25c77(entity) {
-    if (!(isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0)) {
+    if (!(isdefined(getgametypesetting(#"wzzombiesbreakdoors")) ? getgametypesetting(#"wzzombiesbreakdoors") : 0)) {
         return false;
     }
     startnode = entity.traversestartnode;

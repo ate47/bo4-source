@@ -37,45 +37,45 @@ function init() {
     clientfield::register("allplayers", "" + #"hash_11e36d278c735869", 16000, 1, "int", &function_b50a9153, 0, 0);
     clientfield::register("allplayers", "" + #"hash_e683dccc6a8e152", 16000, 1, "int", &function_f2536be, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_5208f90a0114c9e", 16000, var_5f0c1df8, "int", &function_32753a57, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_2c52721cfd82bab2", 16000, 1, "int", &function_aa98cb1e, 0, 0);
-    clientfield::register("toplayer", "" + #"hash_e2692f239454272", 16000, 1, "int", &function_199a48d4, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_27e137de4035c3b3", 16000, 1, "int", &function_c94905dc, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_3a38a1d1eda0d02f", 16000, 1, "int", &function_7df075f0, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_720392b899f6e8f8", 16000, 1, "int", &function_c06211fc, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_6d443dd8ae685236", 16000, 1, "int", &function_629b41e7, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_194ece8e9166daad", 16000, 1, "int", &function_a3c7c7fa, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_5d3f9aab20abf568", 16000, getminbitcountfornum(3), "int", &function_bd821441, 0, 0);
+    clientfield::register("scriptmover", "" + #"charon_portal_fx", 16000, 1, "int", &charon_portal_fx, 0, 0);
+    clientfield::register("toplayer", "" + #"hash_e2692f239454272", 16000, 1, "int", &charon_curse_fx, 0, 0);
+    clientfield::register("allplayers", "" + #"charon_teleport_postfx", 16000, 1, "int", &charon_teleport_postfx, 0, 0);
+    clientfield::register("allplayers", "" + #"ouranos_teleport_postfx", 16000, 1, "int", &ouranos_teleport_postfx, 0, 0);
+    clientfield::register("allplayers", "" + #"gaia_teleport_postfx", 16000, 1, "int", &gaia_teleport_postfx, 0, 0);
+    clientfield::register("allplayers", "" + #"hemera_teleport_postfx", 16000, 1, "int", &hemera_teleport_postfx, 0, 0);
+    clientfield::register("scriptmover", "" + #"gaia_portal_fx", 16000, 1, "int", &gaia_portal_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"gaia_sprout_fx", 16000, getminbitcountfornum(3), "int", &gaia_sprout_fx, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_3c85334429a971b4", 16000, 1, "int", &function_162c09a8, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_3a6cd708b9ee114c", 16000, 1, "int", &function_251065bc, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_3e1feb871865ccd5", 16000, 1, "int", &function_6aadcf90, 0, 0);
+    clientfield::register("scriptmover", "" + #"gaia_chaos_glow", 16000, 1, "int", &function_251065bc, 0, 0);
+    clientfield::register("scriptmover", "" + #"gaia_chaos_destroy", 16000, 1, "int", &gaia_chaos_destroy, 0, 0);
     clientfield::register("scriptmover", "" + #"ouranos_feather_hit_fx", 16000, 1, "counter", &ouranos_feather_hit_fx, 0, 0);
     clientfield::register("actor", "" + #"ww_combat_fx", 16000, getminbitcountfornum(4), "int", &ww_combat_fx, 0, 0);
-    level._effect[#"hash_53a237c54694d1b0"] = #"hash_13a5a3395df9015f";
-    level._effect[#"hash_6a91a55bce07566b"] = #"hash_45df7abd6ad1c06";
-    level._effect[#"hash_9108e2cdf6011d9"] = #"hash_105b525291a60488";
-    level._effect[#"hash_71bc6543e7c0f49c"] = #"hash_7c755acc6547a0fd";
-    level._effect[#"hash_46b14b999635a0e9"] = #"hash_7e62aa95417546aa";
-    level._effect[#"hash_492cd3282f15503b"] = #"hash_3a7504611a8ee7ef";
+    level._effect[#"charon_hand_available"] = #"hash_13a5a3395df9015f";
+    level._effect[#"hemera_hand_available"] = #"hash_45df7abd6ad1c06";
+    level._effect[#"gaia_hand_available"] = #"hash_105b525291a60488";
+    level._effect[#"ouranos_hand_available"] = #"hash_7c755acc6547a0fd";
+    level._effect[#"hemera_source_glow"] = #"hash_7e62aa95417546aa";
+    level._effect[#"hemera_shrine_glow"] = #"hash_3a7504611a8ee7ef";
     level._effect[#"hash_7ba74dab3ce4c1a9"] = #"hash_65d0dff5c51ac70d";
     level._effect[#"hash_223052fa57a81234"] = #"hash_4bd8c2963780c080";
     level._effect[#"hash_4982dd14ad4cfd2d"] = #"hash_7da081bd4cf99d11";
     level._effect[#"hash_7bae59ab3ceaf4bb"] = #"hash_65d7cbf5c520c3bf";
     level._effect[#"hash_22363efa57ac5be6"] = #"hash_4bdfce963786f392";
     level._effect[#"hash_4989c914ad52f9df"] = #"hash_7da76dbd4cff99c3";
-    level._effect[#"hash_6b4a9b0df04682ea"] = #"hash_281a29752dd70fec";
+    level._effect[#"hemera_bounce_glow"] = #"hash_281a29752dd70fec";
     level._effect[#"hash_1ba95bf40a5e2422"] = #"hash_1a423b45182c5613";
     level._effect[#"hash_3f63da724d02ddbd"] = #"hash_410c47b601f1eb2a";
-    level._effect[#"hash_1feb8c5d2b14d9fe"] = #"hash_a522275afc959a7";
-    level._effect[#"hash_501b5bcc2ef34bb5"] = #"hash_307731202349b92a";
+    level._effect[#"charon_portal_active"] = #"hash_a522275afc959a7";
+    level._effect[#"gaia_portal_active"] = #"hash_307731202349b92a";
     level._effect[#"hash_1df737ccb8838bac"] = #"hash_2b910e77f63948fb";
     level._effect[#"hash_4e4c7f6982d8ed31"] = #"hash_2fa2ffba30119b62";
     level._effect[#"hash_19da57144416b720"] = #"hash_17e7186ea20ae80c";
-    level._effect[#"hash_3a6cd708b9ee114c"] = #"hash_d0cf56779f6c4e1";
-    level._effect[#"hash_3e1feb871865ccd5"] = #"hash_2c52af4b97cdbc0a";
-    level._effect[#"hash_336619ce5231e7b"] = #"hash_569b6effe4db6f54";
-    level._effect[#"hash_44179bb7b5873ff4"] = #"hash_7b7ba0ac0755a064";
-    level._effect[#"hash_42efece38bdb4f8d"] = #"hash_7e9736ee8b5ec443";
-    level._effect[#"hash_1e9b97d1e10e2178"] = #"hash_194fead3457d21f5";
+    level._effect[#"gaia_chaos_glow"] = #"hash_d0cf56779f6c4e1";
+    level._effect[#"gaia_chaos_destroy"] = #"hash_2c52af4b97cdbc0a";
+    level._effect[#"gaia_combat_fx"] = #"hash_569b6effe4db6f54";
+    level._effect[#"charon_combat_fx"] = #"hash_7b7ba0ac0755a064";
+    level._effect[#"hemera_combat_fx"] = #"hash_7e9736ee8b5ec443";
+    level._effect[#"ouranos_combat_fx"] = #"hash_194fead3457d21f5";
     level._effect[#"hash_4024dfc409879380"] = #"hash_570e356dcecf7c0f";
     level._effect[#"hash_18794d000c118e97"] = #"hash_131f7254a32ca20e";
     level._effect[#"hash_799b84ee296b448d"] = #"hash_690957421115776c";
@@ -88,7 +88,7 @@ function init() {
     level._effect[#"hash_70ef864effe35b13"] = #"maps/zm_red/fx8_soul_charge_red";
     level._effect[#"hash_3c924bbe63bb613c"] = #"hash_36d2617efc112fc";
     level._effect[#"hash_2c33b0af2f93389e"] = #"hash_7425021c14828449";
-    level._effect[#"hash_5d3f9aab20abf568"] = #"hash_4ee71079fa3bd589";
+    level._effect[#"gaia_sprout_fx"] = #"hash_4ee71079fa3bd589";
     level._effect[#"hash_28b5e7d929f598ee"] = #"hash_7d10580c812fce51";
     level._effect[#"hash_3f03e0537e170fc4"] = #"hash_647338beb2cb34ec";
     zm_sq_modules::function_d8383812(#"ww_sc_earth", 16000, #"ww_sc_g", 100, level._effect[#"hash_3c9241be63bb503e"], level._effect[#"hash_32278e3b7ad26e0"], undefined, undefined, 1);
@@ -135,16 +135,16 @@ function ww_combat_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     if (newval > 0) {
         switch (newval) {
         case 1:
-            str_fx = level._effect[#"hash_44179bb7b5873ff4"];
+            str_fx = level._effect[#"charon_combat_fx"];
             break;
         case 2:
-            str_fx = level._effect[#"hash_1e9b97d1e10e2178"];
+            str_fx = level._effect[#"ouranos_combat_fx"];
             break;
         case 3:
-            str_fx = level._effect[#"hash_42efece38bdb4f8d"];
+            str_fx = level._effect[#"hemera_combat_fx"];
             break;
         case 4:
-            str_fx = level._effect[#"hash_336619ce5231e7b"];
+            str_fx = level._effect[#"gaia_combat_fx"];
             break;
         }
         if (isdefined(str_fx)) {
@@ -158,7 +158,7 @@ function ww_combat_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 // Checksum 0x6c9734a9, Offset: 0x1a28
 // Size: 0x7a
 function function_944d867a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"hash_9108e2cdf6011d9"], self, "tag_shrine_glow");
+    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"gaia_hand_available"], self, "tag_shrine_glow");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -166,7 +166,7 @@ function function_944d867a(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x555c432b, Offset: 0x1ab0
 // Size: 0x7a
 function function_9d8dd7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"hash_6a91a55bce07566b"], self, "tag_shrine_glow");
+    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"hemera_hand_available"], self, "tag_shrine_glow");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -174,7 +174,7 @@ function function_9d8dd7(localclientnum, oldval, newval, bnewent, binitialsnap, 
 // Checksum 0xbe90610c, Offset: 0x1b38
 // Size: 0x7a
 function function_2879e2a2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"hash_53a237c54694d1b0"], self, "tag_shrine_glow");
+    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"charon_hand_available"], self, "tag_shrine_glow");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -182,7 +182,7 @@ function function_2879e2a2(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x301e3f74, Offset: 0x1bc0
 // Size: 0x7a
 function function_dcfcbf53(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"hash_71bc6543e7c0f49c"], self, "tag_shrine_glow");
+    self.var_ce41d506 = util::playfxontag(localclientnum, level._effect[#"ouranos_hand_available"], self, "tag_shrine_glow");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -227,7 +227,7 @@ function function_283ae654(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xb4
 function function_4854ae4f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
-        self.var_4e35f286 = util::playfxontag(localclientnum, level._effect[#"hash_492cd3282f15503b"], self, "tag_origin");
+        self.var_4e35f286 = util::playfxontag(localclientnum, level._effect[#"hemera_shrine_glow"], self, "tag_origin");
         return;
     }
     if (isdefined(self.var_4e35f286)) {
@@ -254,7 +254,7 @@ function function_f8b29e52(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x20536692, Offset: 0x1f90
 // Size: 0x7a
 function function_251c7b6d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    self.var_4e35f286 = util::playfxontag(localclientnum, level._effect[#"hash_6b4a9b0df04682ea"], self, "tag_origin");
+    self.var_4e35f286 = util::playfxontag(localclientnum, level._effect[#"hemera_bounce_glow"], self, "tag_origin");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -262,7 +262,7 @@ function function_251c7b6d(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x70c764b2, Offset: 0x2018
 // Size: 0x7a
 function function_587efcf8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    self.var_4e35f286 = util::playfxontag(localclientnum, level._effect[#"hash_492cd3282f15503b"], self, "tag_origin");
+    self.var_4e35f286 = util::playfxontag(localclientnum, level._effect[#"hemera_shrine_glow"], self, "tag_origin");
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -381,9 +381,9 @@ function ouranos_feather_hit_fx(localclientnum, oldval, newval, bnewent, binitia
 // Params 7, eflags: 0x1 linked
 // Checksum 0xdd0f14eb, Offset: 0x2830
 // Size: 0x104
-function function_aa98cb1e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function charon_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
-        self.var_8eb4e749 = util::playfxontag(localclientnum, level._effect[#"hash_1feb8c5d2b14d9fe"], self, "tag_origin");
+        self.var_8eb4e749 = util::playfxontag(localclientnum, level._effect[#"charon_portal_active"], self, "tag_origin");
         playsound(localclientnum, #"hash_2545ab11d0e8966a", self.origin);
         return;
     }
@@ -397,7 +397,7 @@ function function_aa98cb1e(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x872a8764, Offset: 0x2940
 // Size: 0x8c
-function function_199a48d4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function charon_curse_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval && self util::function_50ed1561(localclientnum)) {
         self thread function_e887425a(localclientnum);
         return;
@@ -410,8 +410,8 @@ function function_199a48d4(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0xc7451ac3, Offset: 0x29d8
 // Size: 0xf2
 function function_e887425a(localclientnum) {
-    self notify(#"hash_18528469324226e0");
-    self endon(#"death", #"disconnect", #"hash_18528469324226e0");
+    self notify(#"charon_curse_fx");
+    self endon(#"death", #"disconnect", #"charon_curse_fx");
     if (!self postfx::function_556665f2(#"pstfx_zm_man_curse")) {
         self postfx::playpostfxbundle(#"pstfx_zm_man_curse");
     }
@@ -440,7 +440,7 @@ function function_761eecad(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x6d17a594, Offset: 0x2b90
 // Size: 0x22c
-function function_c94905dc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function charon_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (!isdefined(self.var_f252bba1)) {
         self.var_f252bba1 = [];
     }
@@ -473,7 +473,7 @@ function function_c94905dc(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x30f0890, Offset: 0x2dc8
 // Size: 0x232
-function function_bd821441(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function gaia_sprout_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     switch (newval) {
     case 0:
         if (isdefined(self.var_1685ad34)) {
@@ -491,17 +491,17 @@ function function_bd821441(localclientnum, oldval, newval, bnewent, binitialsnap
         break;
     case 1:
         if (!isdefined(self.var_1685ad34)) {
-            self.var_1685ad34 = util::playfxontag(localclientnum, level._effect[#"hash_5d3f9aab20abf568"], self, "tag_fx_lt");
+            self.var_1685ad34 = util::playfxontag(localclientnum, level._effect[#"gaia_sprout_fx"], self, "tag_fx_lt");
         }
         break;
     case 2:
         if (!isdefined(self.var_6a7be41c)) {
-            self.var_6a7be41c = util::playfxontag(localclientnum, level._effect[#"hash_5d3f9aab20abf568"], self, "tag_fx_rt");
+            self.var_6a7be41c = util::playfxontag(localclientnum, level._effect[#"gaia_sprout_fx"], self, "tag_fx_rt");
         }
         break;
     case 3:
         if (!isdefined(self.var_11f91edd)) {
-            self.var_11f91edd = util::playfxontag(localclientnum, level._effect[#"hash_5d3f9aab20abf568"], self, "tag_fx_mid");
+            self.var_11f91edd = util::playfxontag(localclientnum, level._effect[#"gaia_sprout_fx"], self, "tag_fx_mid");
         }
         break;
     }
@@ -541,12 +541,12 @@ function function_162c09a8(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x2a3bbc3e, Offset: 0x3190
 // Size: 0x1ac
-function function_a3c7c7fa(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function gaia_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         playsound(localclientnum, #"hash_2545ab11d0e8966a", self.origin);
         wait 0.5;
         if (isdefined(self)) {
-            self.var_8eb4e749 = playfx(localclientnum, level._effect[#"hash_501b5bcc2ef34bb5"], self.origin + (0, 0, 45) + anglestoforward(self.angles) * -6, anglestoforward(self.angles), anglestoup(self.angles));
+            self.var_8eb4e749 = playfx(localclientnum, level._effect[#"gaia_portal_active"], self.origin + (0, 0, 45) + anglestoforward(self.angles) * -6, anglestoforward(self.angles), anglestoup(self.angles));
             self playrenderoverridebundle("rob_zm_gaia_portal_dissolve");
         }
         return;
@@ -562,7 +562,7 @@ function function_a3c7c7fa(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x353c8e00, Offset: 0x3348
 // Size: 0x22c
-function function_629b41e7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function hemera_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (!isdefined(self.var_f252bba1)) {
         self.var_f252bba1 = [];
     }
@@ -595,7 +595,7 @@ function function_629b41e7(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x7344299, Offset: 0x3580
 // Size: 0x22c
-function function_c06211fc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function gaia_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (!isdefined(self.var_f252bba1)) {
         self.var_f252bba1 = [];
     }
@@ -628,7 +628,7 @@ function function_c06211fc(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xf53d36e7, Offset: 0x37b8
 // Size: 0x22c
-function function_7df075f0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function ouranos_teleport_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (!isdefined(self.var_f252bba1)) {
         self.var_f252bba1 = [];
     }
@@ -719,7 +719,7 @@ function function_251065bc(localclientnum, oldval, newval, bnewent, binitialsnap
             v_pos = self gettagorigin(str_tag);
         }
         if (isdefined(self) && isdefined(v_pos)) {
-            self.var_f9359f98 = util::playfxontag(localclientnum, level._effect[#"hash_3a6cd708b9ee114c"], self, str_tag);
+            self.var_f9359f98 = util::playfxontag(localclientnum, level._effect[#"gaia_chaos_glow"], self, str_tag);
         }
         return;
     }
@@ -732,7 +732,7 @@ function function_251065bc(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x3038a7e8, Offset: 0x3dd0
 // Size: 0x102
-function function_6aadcf90(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function gaia_chaos_destroy(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         switch (self.model) {
         case #"hash_17ff8b184015c0d0":
@@ -745,7 +745,7 @@ function function_6aadcf90(localclientnum, oldval, newval, bnewent, binitialsnap
             str_tag = "tag_center_03";
             break;
         }
-        self.var_11fa0a4a = util::playfxontag(localclientnum, level._effect[#"hash_3e1feb871865ccd5"], self, "tag_origin");
+        self.var_11fa0a4a = util::playfxontag(localclientnum, level._effect[#"gaia_chaos_destroy"], self, "tag_origin");
     }
 }
 

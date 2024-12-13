@@ -701,10 +701,10 @@ function private function_2798bb2(elephant, rider) {
         elephant waittill(#"hash_6537a2364ba9dcb3");
         rider show();
     }
-    if (isdefined(rider.ai.var_61a678fe)) {
+    if (isdefined(rider.ai.entryanim)) {
         rider unlink();
         rider.takedamage = 0;
-        rider animation::play(rider.ai.var_61a678fe, alignstruct.origin, alignstruct.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
+        rider animation::play(rider.ai.entryanim, alignstruct.origin, alignstruct.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
         rider.takedamage = 1;
         assert(isdefined(rider.ai.var_4f12fc77));
         rider linkto(elephant, rider.ai.var_4f12fc77, (0, 0, 0), (0, 0, 0));
@@ -797,9 +797,9 @@ function private function_d8c752e0() {
     rider.instakill_func = &function_707d0196;
     rider.allowdeath = 0;
     if (self.ai.phase == #"hash_266f53fb994e6120") {
-        rider.ai.var_61a678fe = #"hash_561cf85af113ff1e";
+        rider.ai.entryanim = #"hash_561cf85af113ff1e";
     } else {
-        rider.ai.var_61a678fe = #"hash_1447253275dbb643";
+        rider.ai.entryanim = #"hash_1447253275dbb643";
     }
     rider thread function_2798bb2(self, rider);
     rider = function_e5f2ff53(self, "tag_char_align_b", #"hash_2672ad69ba7c107");
@@ -807,9 +807,9 @@ function private function_d8c752e0() {
     rider.ai.var_4f12fc77 = "tag_char_align_b";
     rider.instakill_func = &function_707d0196;
     if (self.ai.phase == #"hash_266f53fb994e6120") {
-        rider.ai.var_61a678fe = #"hash_561cf75af113fd6b";
+        rider.ai.entryanim = #"hash_561cf75af113fd6b";
     } else {
-        rider.ai.var_61a678fe = #"hash_1447263275dbb7f6";
+        rider.ai.entryanim = #"hash_1447263275dbb7f6";
     }
     rider thread function_2798bb2(self, rider);
     if (isdefined(level.var_a52a5487) && level.var_a52a5487) {
@@ -817,13 +817,13 @@ function private function_d8c752e0() {
         rider.ai.var_758ed187 = #"hash_20cbd41b17321edc";
         rider.ai.var_4f12fc77 = "tag_char_align_c";
         rider.instakill_func = &function_707d0196;
-        rider.ai.var_61a678fe = #"hash_1447273275dbb9a9";
+        rider.ai.entryanim = #"hash_1447273275dbb9a9";
         rider thread function_2798bb2(self, rider);
         rider = function_e5f2ff53(self, "tag_char_align_d", #"hash_2672ad69ba7c107");
         rider.ai.var_758ed187 = #"hash_20cbd71b173223f5";
         rider.ai.var_4f12fc77 = "tag_char_align_d";
         rider.instakill_func = &function_707d0196;
-        rider.ai.var_61a678fe = #"hash_1447283275dbbb5c";
+        rider.ai.entryanim = #"hash_1447283275dbbb5c";
         rider thread function_2798bb2(self, rider);
     }
 }
@@ -1141,7 +1141,7 @@ function function_e864f0da(elephant, damage, attacker, point, dir, var_88cb1bf9)
     if (isdefined(var_dd54fdb1) && namespace_81245006::function_f29756fe(var_dd54fdb1) === 1) {
         attacker playhitmarker(undefined, 5, undefined, 1, 0);
         level notify(#"hash_3aa3137f1bf70773");
-        namespace_81245006::function_ef87b7e8(var_dd54fdb1, damage);
+        namespace_81245006::damageweakpoint(var_dd54fdb1, damage);
         /#
             iprintlnbold("<dev string:x4d>" + var_dd54fdb1.health);
         #/

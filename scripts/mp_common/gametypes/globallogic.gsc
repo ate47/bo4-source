@@ -572,15 +572,15 @@ function determineteamwinnerbygamestat(gamestat) {
 // Params 3, eflags: 0x0
 // Checksum 0xfc8eb91c, Offset: 0x32e8
 // Size: 0x86
-function compareteambyteamscore(var_1ada49b5, teamb, var_2a5c5ccb) {
-    assert(var_1ada49b5 !== "<dev string:x38>");
+function compareteambyteamscore(currentwinner, teamb, var_2a5c5ccb) {
+    assert(currentwinner !== "<dev string:x38>");
     teambscore = [[ level._getteamscore ]](teamb);
     if (teambscore == var_2a5c5ccb) {
         return undefined;
     } else if (teambscore > var_2a5c5ccb) {
         return teamb;
     }
-    return var_1ada49b5;
+    return currentwinner;
 }
 
 // Namespace globallogic/globallogic

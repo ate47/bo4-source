@@ -819,37 +819,37 @@ function function_9868e24e(player) {
                 continue;
             }
             uifield = level.var_aca462a0[ti];
-            var_8712c5b8 = player.var_6b2d5c29[ti];
+            target_info = player.var_6b2d5c29[ti];
             if (target.ignoreme === 1 || !isalive(target) || self.isjammed === 1) {
-                var_8712c5b8.state = 0;
+                target_info.state = 0;
             } else if (!bullettracepassed(origin, target.origin + (0, 0, 60), 0, player)) {
-                var_8712c5b8.state = 0;
-            } else if (var_8712c5b8.state != 4) {
+                target_info.state = 0;
+            } else if (target_info.state != 4) {
                 if (locking) {
                     good = util::within_fov(origin, angles, target.origin, fovcosine);
                     if (isdefined(good) && good && nlocks < self.numberrockets) {
-                        if (var_8712c5b8.state != 3) {
-                            if (var_8712c5b8.state == 2) {
-                                if (var_8712c5b8.var_8c0f6d2c < gettime()) {
-                                    var_8712c5b8.state = 3;
+                        if (target_info.state != 3) {
+                            if (target_info.state == 2) {
+                                if (target_info.var_8c0f6d2c < gettime()) {
+                                    target_info.state = 3;
                                     self playsoundtoplayer(#"hash_683ed977cfc2bf2b", player);
                                 }
                             } else {
-                                var_8712c5b8.state = 2;
-                                var_8712c5b8.var_8c0f6d2c = gettime() + 500;
+                                target_info.state = 2;
+                                target_info.var_8c0f6d2c = gettime() + 500;
                                 self playsoundtoplayer(#"hash_5386a095fd840c2e", player);
                             }
                         }
                         nlocks++;
                     } else {
-                        var_8712c5b8.state = 1;
+                        target_info.state = 1;
                     }
                 } else {
-                    var_8712c5b8.state = 1;
+                    target_info.state = 1;
                 }
             }
             uifield multi_stage_target_lockon::set_entnum(player, var_4ef4e267);
-            uifield multi_stage_target_lockon::set_targetstate(player, var_8712c5b8.state);
+            uifield multi_stage_target_lockon::set_targetstate(player, target_info.state);
         }
         foreach (target in enemies) {
             var_4ef4e267 = target getentitynumber();
@@ -2333,15 +2333,15 @@ function shoot_targets(projectile, max_missiles) {
             if (!isdefined(ti)) {
                 continue;
             }
-            var_8712c5b8 = owner.var_6b2d5c29[ti];
-            if (var_8712c5b8.state == 3) {
+            target_info = owner.var_6b2d5c29[ti];
+            if (target_info.state == 3) {
                 dir = target.origin + (0, 0, 40) - origin;
                 dir = vectornormalize(dir);
                 rocket = magicbullet(weapon, origin, origin + dir * 1000, owner);
                 if (isdefined(rocket) && rocket.classname === "rocket") {
                     rocket missile_settarget(target);
                     level.var_aca462a0[ti] multi_stage_target_lockon::set_targetstate(owner, 4);
-                    var_8712c5b8.state = 4;
+                    target_info.state = 4;
                     target thread watch_target(owner, ti);
                     var_e3a3ecd3++;
                     if (var_e3a3ecd3 >= max_missiles) {

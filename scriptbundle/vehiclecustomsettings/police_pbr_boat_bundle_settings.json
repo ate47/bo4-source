@@ -75,7 +75,7 @@
     "name": "police_pbr_boat_bundle_settings",
     "var_e7260470": 65,
     "rocketcooldown": 5,
-    "var_fb3ce03c": 200,
+    "targeting_radius": 200,
     "meleedist": 50,
     "damage_radius": 150,
     "vehicle_turret": "#hash_6bc8b54e11120c4c",

@@ -1012,7 +1012,7 @@ function function_1fba7fc2() {
     a_taunts[#"udem"] = array::randomize(array(0, 1, 2, 3));
     a_taunts[#"uric"] = array::randomize(array(0, 1, 2, 3));
     a_taunts[#"utak"] = array::randomize(array(0, 1, 2, 3));
-    var_4854a91b = "vox_boss_taunt_";
+    base_alias = "vox_boss_taunt_";
     while (true) {
         b_spoke = 0;
         wait randomintrangeinclusive(30, 60);
@@ -1034,7 +1034,7 @@ function function_1fba7fc2() {
                 var_d1e952c4 = array::random(valid_players);
                 str_name = var_d1e952c4 zm_vo::function_82f9bc9f();
                 if (var_d1e952c4 zm_audio::can_speak()) {
-                    alias = var_4854a91b + str_name + "_avog_" + a_taunts[str_name][0];
+                    alias = base_alias + str_name + "_avog_" + a_taunts[str_name][0];
                     zm_hms_util::function_3c173d37();
                     var_d1e952c4 zm_audio::do_player_or_npc_playvox(alias, 1);
                     arrayremoveindex(a_taunts[str_name], 0);

@@ -1790,11 +1790,11 @@ function private show_hint_text(text, show_for_time = 3.2, font_scale = 1.25, yp
 // Params 4, eflags: 0x1 linked
 // Checksum 0xc49c8d3c, Offset: 0x93a0
 // Size: 0x9e
-function function_3e1e39f8(str_text, str_notify, var_e6cc3687, n_timeout = 8) {
+function function_3e1e39f8(str_text, str_notify, func_timeout, n_timeout = 8) {
     level flag::wait_till_clear("tutorial_reset");
     self thread show_hint_text(str_text, n_timeout);
-    if (isdefined(var_e6cc3687)) {
-        self thread [[ var_e6cc3687 ]]();
+    if (isdefined(func_timeout)) {
+        self thread [[ func_timeout ]]();
     }
     self waittill(str_notify);
     self notify(#"hide_equipment_hint_text");

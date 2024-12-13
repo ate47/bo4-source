@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 // Checksum 0x59eefc55, Offset: 0x158
 // Size: 0x10c
 function __init__() {
-    clientfield::register("toplayer", "" + #"hash_55539d0cf92a8855", 1, 1, "counter", &function_d05553c6, 0, 0);
+    clientfield::register("toplayer", "" + #"hero_katana_vigor_postfx", 1, 1, "counter", &function_d05553c6, 0, 0);
     clientfield::register("allplayers", "" + #"hash_13ccfca7b26cec97", 1, 1, "int", &function_ea3e4435, 0, 1);
     clientfield::register("allplayers", "" + #"hash_7e2af117e18cb9fa", 1, 1, "int", &function_29c31d8d, 0, 1);
 }

@@ -63,8 +63,8 @@ function default_onforfeit(params) {
 // Checksum 0xfc770032, Offset: 0x348
 // Size: 0xdc
 function default_ondeadevent(team) {
-    var_2e0d5506 = round::get_winner();
-    if (isdefined(var_2e0d5506) && var_2e0d5506 != #"free") {
+    current_winner = round::get_winner();
+    if (isdefined(current_winner) && current_winner != #"free") {
         return;
     }
     if (isdefined(level.teams[team])) {

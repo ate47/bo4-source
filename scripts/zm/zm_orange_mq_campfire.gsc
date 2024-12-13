@@ -165,7 +165,7 @@ function function_561d9cff() {
     self.vessel clientfield::set("" + #"hash_1b72c208f2964e24", level.var_ed1e7d4d);
     self.vessel thread function_af39e9d5();
     self waittill(#"music_box");
-    level flag::set(#"hash_621d31a87bd6d05b");
+    level flag::set(#"music_box_first_use");
     level flag::set(#"hash_e8247a060147428");
     exploder::stop_exploder("fxexp_narr_campfire");
     exploder::exploder("fxexp_narr_campfire_blue");

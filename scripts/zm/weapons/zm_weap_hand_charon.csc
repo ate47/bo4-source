@@ -26,16 +26,16 @@ function __init__() {
     clientfield::register("scriptmover", "" + #"charon_impact", 16000, 2, "int", &function_12c042fc, 0, 0);
     clientfield::register("allplayers", "charon_flash", 16000, 1, "int", &function_3b17ff6f, 0, 0);
     clientfield::register("actor", "" + #"charon_death", 16000, 1, "counter", &function_120153b7, 0, 0);
-    clientfield::register("actor", "" + #"hash_3681b677c0d46042", 16000, 1, "counter", &function_b10c4057, 0, 0);
-    clientfield::register("actor", "" + #"hash_25691c415a4aea4c", 16000, 1, "int", &function_d64a6790, 0, 0);
+    clientfield::register("actor", "" + #"charon_zombie_impact", 16000, 1, "counter", &function_b10c4057, 0, 0);
+    clientfield::register("actor", "" + #"charon_pool_victim", 16000, 1, "int", &function_d64a6790, 0, 0);
     level._effect[#"charon_proj"] = #"hash_4952906e2b897ac8";
-    level._effect[#"hash_51c706450345c1cd"] = #"hash_3a0c132d4e39ba81";
-    level._effect[#"hash_30c814dd07c0c371"] = #"hash_25c4a39b373bfc67";
+    level._effect[#"charon_proj_charged"] = #"hash_3a0c132d4e39ba81";
+    level._effect[#"charon_proj_impact"] = #"hash_25c4a39b373bfc67";
     level._effect[#"hash_3a8801fc057183dc"] = #"hash_237010c93c358590";
     level._effect[#"hash_4ce416875acfbfab"] = #"hash_6c9f6d6353ff3c71";
     level._effect[#"hash_4cdd0a875ac98c99"] = #"hash_6ca6596354053923";
     level._effect[#"charon_pool"] = #"hash_3d88b8f128288ebe";
-    level._effect[#"hash_5ee102aba0c9d913"] = #"hash_6937321c4a8e7349";
+    level._effect[#"charon_impact_torso"] = #"hash_6937321c4a8e7349";
     level._effect[#"hash_74d5f15912f2e8ee"] = #"hash_7fca1782163cbb01";
     level._effect[#"hash_779c72a2983289e3"] = #"hash_55d06957e137b062";
     level._effect[#"hash_e84c5306b5ffdf7"] = #"hash_b3bc039e7aca94";
@@ -45,15 +45,15 @@ function __init__() {
     level._effect[#"hash_355fbaf759524a7c"] = #"hash_6d56f51f9b1fabaa";
     level._effect[#"hash_1b9a6c3712623d2b"] = #"hash_2ea0cefc397c3d81";
     level._effect[#"hash_2bb39e5073633f5b"] = #"hash_31e7c5600f464e95";
-    level._effect[#"hash_d5cfc4615beb4a"] = #"hash_30db2fdbdde25718";
+    level._effect[#"charon_impact_death"] = #"hash_30db2fdbdde25718";
     level._effect[#"hash_42346aa652a33c7b"] = #"hash_590a0c54ac9607c";
     level._effect[#"hash_288e913e9e23bec4"] = #"hash_623c4ff75bcaa1a9";
     level._effect[#"hash_206cb9f0d25ae508"] = #"hash_65cea36e2f1cd4c7";
     level._effect[#"hash_7f04d5cd3f06a37d"] = #"hash_413a7f11167bdef8";
-    level._effect[#"hash_2a346b70ef7e5eec"] = #"hash_2a095e7cd20884a9";
-    level._effect[#"hash_366d16ce6ca16fc6"] = #"hash_33cedc8be1b46bed";
-    level._effect[#"hash_76d2a3efe5f10d90"] = #"hash_214db8c579b8672b";
-    level._effect[#"hash_367b739a080b20a"] = #"hash_8f0bc31efc7463e";
+    level._effect[#"charon_drag_waist"] = #"hash_2a095e7cd20884a9";
+    level._effect[#"charon_pool_death"] = #"hash_33cedc8be1b46bed";
+    level._effect[#"charon_drag_puddle"] = #"hash_214db8c579b8672b";
+    level._effect[#"charon_impact_zombie"] = #"hash_8f0bc31efc7463e";
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
@@ -62,7 +62,7 @@ function __init__() {
 // Size: 0xee
 function function_c9df2670(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
-        self.n_fx = playfx(localclientnum, level._effect[#"hash_76d2a3efe5f10d90"], self.origin + (0, 0, 4), anglestoup(self.angles));
+        self.n_fx = playfx(localclientnum, level._effect[#"charon_drag_puddle"], self.origin + (0, 0, 4), anglestoup(self.angles));
         return;
     }
     if (isdefined(self.n_fx)) {
@@ -79,9 +79,9 @@ function function_d64a6790(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self zm_utility::good_barricade_damaged(localclientnum);
         if (isdefined(self gettagorigin("j_eyeball_le"))) {
-            var_3231a850 = util::playfxontag(localclientnum, level._effect[#"hash_366d16ce6ca16fc6"], self, "j_eyeball_le");
+            var_3231a850 = util::playfxontag(localclientnum, level._effect[#"charon_pool_death"], self, "j_eyeball_le");
         }
-        n_fx = playfx(localclientnum, level._effect[#"hash_76d2a3efe5f10d90"], self.origin, anglestoup(self.angles));
+        n_fx = playfx(localclientnum, level._effect[#"charon_drag_puddle"], self.origin, anglestoup(self.angles));
         wait 0.75;
         if (isdefined(self)) {
             self playrenderoverridebundle(#"hash_429426f01ad84c8b");
@@ -145,8 +145,8 @@ function function_120153b7(localclientnum, oldval, newval, bnewent, binitialsnap
     self zm_utility::good_barricade_damaged(localclientnum);
     self playrenderoverridebundle(#"hash_429426f01ad84c8b");
     if (isdefined(self gettagorigin("j_spine4"))) {
-        util::playfxontag(localclientnum, level._effect[#"hash_5ee102aba0c9d913"], self, "j_spine4");
-        util::playfxontag(localclientnum, level._effect[#"hash_d5cfc4615beb4a"], self, "j_spine4");
+        util::playfxontag(localclientnum, level._effect[#"charon_impact_torso"], self, "j_spine4");
+        util::playfxontag(localclientnum, level._effect[#"charon_impact_death"], self, "j_spine4");
         wait 0.75;
         util::playfxontag(localclientnum, level._effect[#"hash_355fbaf759524a7c"], self, "j_spine4");
     }
@@ -195,7 +195,7 @@ function function_b10c4057(localclientnum, oldval, newval, bnewent, binitialsnap
     if (!isdefined(v_org)) {
         return;
     }
-    playfx(localclientnum, level._effect[#"hash_367b739a080b20a"], v_org, anglestoforward(self.angles));
+    playfx(localclientnum, level._effect[#"charon_impact_zombie"], v_org, anglestoforward(self.angles));
     playsound(localclientnum, #"hash_1178a0c11728dc62", self.origin);
 }
 
@@ -220,7 +220,7 @@ function function_12c042fc(localclientnum, oldval, newval, bnewent, binitialsnap
         v_ang = anglestoforward(self.angles) * -1;
     }
     if (newval == 1) {
-        playfx(localclientnum, level._effect[#"hash_30c814dd07c0c371"], v_org, v_ang);
+        playfx(localclientnum, level._effect[#"charon_proj_impact"], v_org, v_ang);
     } else if (newval == 2) {
         playfx(localclientnum, level._effect[#"hash_3a8801fc057183dc"], v_org, v_ang);
     }

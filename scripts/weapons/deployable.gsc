@@ -103,9 +103,9 @@ function function_d60e5a06(center, radius) {
         level.var_160dcfef.var_1b8ab31d = array(level.var_160dcfef.var_1b8ab31d);
     }
     level.var_160dcfef.var_1b8ab31d[level.var_160dcfef.var_1b8ab31d.size] = var_5795c216;
-    var_81327e4b = level.var_160dcfef.var_d4ef836e;
+    returnid = level.var_160dcfef.var_d4ef836e;
     level.var_160dcfef.var_d4ef836e++;
-    return var_81327e4b;
+    return returnid;
 }
 
 // Namespace deployable/deployable

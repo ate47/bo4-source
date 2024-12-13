@@ -391,7 +391,7 @@ function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeat
                     if (isdefined(armorinfo)) {
                         self clientfield::set("stoker_fx_start_clientfield", armorinfo.fxindex);
                     }
-                    namespace_81245006::function_ef87b7e8(var_dd54fdb1, damagedone);
+                    namespace_81245006::damageweakpoint(var_dd54fdb1, damagedone);
                     var_fe16adf4 = 1;
                     bhtnactionstartevent(self, "pain");
                     if (namespace_81245006::function_f29756fe(var_dd54fdb1) === 3 || var_ae30c5b0 && self.var_5dc26e42 >= 1000) {

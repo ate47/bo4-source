@@ -1833,16 +1833,16 @@ function function_bba770de(localclientnum, itementry) {
 // Params 3, eflags: 0x0
 // Checksum 0x5df81870, Offset: 0xa340
 // Size: 0x186
-function can_pickup_ammo(localclientnum, item, var_1326fcc7 = undefined) {
+function can_pickup_ammo(localclientnum, item, ammoamount = undefined) {
     assert(isplayer(self));
     data = item_world::function_a7e98a1a(localclientnum);
     itementry = item.itementry;
     ammoweapon = itementry.weapon;
-    var_1326fcc7 = isdefined(itementry.amount) ? itementry.amount : isdefined(var_1326fcc7) ? var_1326fcc7 : 1;
+    ammoamount = isdefined(itementry.amount) ? itementry.amount : isdefined(ammoamount) ? ammoamount : 1;
     maxstockammo = item_inventory_util::function_2879cbe0(data.inventory.var_7658cbec, ammoweapon);
     currentammostock = self getweaponammostock(localclientnum, ammoweapon);
     var_9b9ba643 = maxstockammo - currentammostock;
-    addammo = int(min(var_1326fcc7, var_9b9ba643));
+    addammo = int(min(ammoamount, var_9b9ba643));
     return addammo > 0;
 }
 

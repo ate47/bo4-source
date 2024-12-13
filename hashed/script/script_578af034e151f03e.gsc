@@ -72,11 +72,11 @@ function function_349aed4a(client_num) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x85960f2c, Offset: 0x880
 // Size: 0xf0
-function function_ecd6c9b9(var_240e555b, endon_notify) {
+function function_ecd6c9b9(model_array, endon_notify) {
     self endon(endon_notify);
     while (true) {
-        for (i = 0; i < var_240e555b.size; i++) {
-            self setmodel(var_240e555b[i]);
+        for (i = 0; i < model_array.size; i++) {
+            self setmodel(model_array[i]);
             wait 3;
         }
         if (6 > randomint(100) && isdefined(level.var_be9b9bfc)) {

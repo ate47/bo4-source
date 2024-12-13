@@ -133,11 +133,11 @@ function function_74ee36be() {
 // Checksum 0x9b37f5a, Offset: 0x6e8
 // Size: 0x8e
 function function_69e60a10(var_e4204b3) {
-    var_8e3c3c5b = level.deathcircles[level.deathcircles.size - 1];
+    finalcircle = level.deathcircles[level.deathcircles.size - 1];
     hint = struct::get(var_e4204b3);
-    var_8e3c3c5b.var_3b9f4abf = hint.origin;
-    var_8e3c3c5b.mapwidth = 1024;
-    var_8e3c3c5b.mapheight = 1024;
+    finalcircle.var_3b9f4abf = hint.origin;
+    finalcircle.mapwidth = 1024;
+    finalcircle.mapheight = 1024;
 }
 
 /#

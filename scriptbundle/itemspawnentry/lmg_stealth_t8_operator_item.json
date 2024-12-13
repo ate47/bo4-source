@@ -1,22 +1,22 @@
 {
     "attachments": [
         {
-            "var_6be1bec7": "reddot_wz_item"
+            "attachment_type": "reddot_wz_item"
         },
         {
-            "var_6be1bec7": "stock_wz_item"
+            "attachment_type": "stock_wz_item"
         },
         {
-            "var_6be1bec7": "foregrip_wz_item"
+            "attachment_type": "foregrip_wz_item"
         },
         {
-            "var_6be1bec7": "fastmag_wz_item"
+            "attachment_type": "fastmag_wz_item"
         },
         {
-            "var_6be1bec7": "suppressor_wz_item"
+            "attachment_type": "suppressor_wz_item"
         },
         {
-            "var_6be1bec7": "pistol_grip_wz_item"
+            "attachment_type": "pistol_grip_wz_item"
         }
     ],
     "amount": 1,

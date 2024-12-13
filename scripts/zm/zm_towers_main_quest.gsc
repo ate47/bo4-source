@@ -2083,13 +2083,13 @@ function function_718cc148(a_array) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x3d4f581d, Offset: 0xb108
 // Size: 0x3aa
-function function_53f96a9e(var_7ecdee63) {
+function function_53f96a9e(str_aitype) {
     var_b9272bd9 = array("b", "c", "d", "m", "p", "r", "t", "w");
     foreach (var_9ffe8bc6 in var_b9272bd9) {
         self hidepart("tag_" + var_9ffe8bc6 + "_glyph");
         self hidepart("tag_" + var_9ffe8bc6 + "_glow");
     }
-    switch (var_7ecdee63) {
+    switch (str_aitype) {
     case #"spawner_zm_gladiator_marauder":
         self showpart("tag_m_glyph");
         self showpart("tag_m_glow");

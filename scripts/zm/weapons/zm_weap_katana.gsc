@@ -32,7 +32,7 @@ function autoexec __init__system__() {
 // Checksum 0xf0ac11ae, Offset: 0x1f8
 // Size: 0x2ec
 function __init__() {
-    clientfield::register("toplayer", "" + #"hash_55539d0cf92a8855", 1, 1, "counter");
+    clientfield::register("toplayer", "" + #"hero_katana_vigor_postfx", 1, 1, "counter");
     clientfield::register("allplayers", "" + #"hash_13ccfca7b26cec97", 1, 1, "int");
     clientfield::register("allplayers", "" + #"hash_7e2af117e18cb9fa", 1, 1, "int");
     level.hero_weapon[#"katana"][0] = getweapon(#"hero_katana_t8_lv1");
@@ -81,7 +81,7 @@ function private function_9a0f234b() {
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
         if (isinarray(level.hero_weapon[#"katana"], wpn_cur)) {
-            self clientfield::increment_to_player("" + #"hash_55539d0cf92a8855");
+            self clientfield::increment_to_player("" + #"hero_katana_vigor_postfx");
             self function_c43691a9(1);
             self thread function_8d02f57b(wpn_cur);
         } else if (isinarray(level.hero_weapon[#"katana"], wpn_prev)) {
@@ -137,7 +137,7 @@ function private function_756560e3() {
         waitresult = self waittill(#"hero_weapon_give");
         var_cad4df8e = waitresult.weapon;
         if (function_c740060f(var_cad4df8e, 2)) {
-            self clientfield::increment_to_player("" + #"hash_55539d0cf92a8855");
+            self clientfield::increment_to_player("" + #"hero_katana_vigor_postfx");
         }
     }
 }
@@ -356,14 +356,14 @@ function function_bed1fd9f() {
     self endon(#"disconnect");
     self playsound(#"hash_58397a948dd38b37");
     if (isdefined(self.var_4e6b62c3) && self.var_4e6b62c3) {
-        self notify(#"hash_6c803e34b0b06d90");
+        self notify(#"hero_katana_rush_toggle");
         return;
     }
     self val::set(#"hash_6b725a8367e0178a", "ignoreme");
     self.var_4e6b62c3 = 1;
     self clientfield::set("" + #"hash_7e2af117e18cb9fa", 1);
     self clientfield::set("" + #"hash_13ccfca7b26cec97", 1);
-    waitresult = self waittill(#"hero_katana_expired", #"hash_6c803e34b0b06d90");
+    waitresult = self waittill(#"hero_katana_expired", #"hero_katana_rush_toggle");
     if (waitresult._notify == #"hero_katana_expired") {
         self playsound(#"hash_58397a948dd38b37");
     }

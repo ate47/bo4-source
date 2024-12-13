@@ -731,11 +731,11 @@ function scoreeventplayerkill(data, time) {
             }
         }
         if (isdefined(victim.var_d6f11c60) && attacker == victim.var_d6f11c60 && victim.var_e6c1bab8 + 2000 > gettime()) {
-            var_21877ec1 = 1;
+            destroyedarmor = 1;
         } else if (meansofdeath == "MOD_HEAD_SHOT" && (isdefined(victim.armor) ? victim.armor : 0) > 0) {
-            var_21877ec1 = 1;
+            destroyedarmor = 1;
         }
-        if (isdefined(var_21877ec1) && var_21877ec1) {
+        if (isdefined(destroyedarmor) && destroyedarmor) {
             processscoreevent(#"kill_enemy_with_armor", attacker, victim, weapon);
         }
         assert(isdefined(attacker));

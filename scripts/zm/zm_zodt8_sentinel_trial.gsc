@@ -1677,10 +1677,10 @@ function function_83ad8f65(ai) {
 // Size: 0x23e
 function spawn_blightfather() {
     for (i = 0; i < 10; i++) {
-        var_75c89236 = 0;
+        n_attempts = 0;
         var_3d5dc4ac = undefined;
-        while (!isdefined(var_3d5dc4ac) && var_75c89236 < 10) {
-            var_75c89236++;
+        while (!isdefined(var_3d5dc4ac) && n_attempts < 10) {
+            n_attempts++;
             foreach (ai in getaiteamarray(level.zombie_team)) {
                 waitframe(1);
                 if (ai zm_ai_utility::function_db610082()) {

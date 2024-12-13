@@ -607,13 +607,13 @@ function spawn_mannequin() {
         mannequin = spawnactor("spawner_bo3_mannequin_female", spawn_point.origin, spawn_point.angles, "mannequin", 1, 1);
     }
     mannequin.var_e5031929 = var_e5031929;
-    var_74b33cc3 = var_ed5bd910[randomint(var_ed5bd910.size)];
+    landing_point = var_ed5bd910[randomint(var_ed5bd910.size)];
     var_2676a937 = 1000;
-    var_a25e6eb7 = distance(var_74b33cc3.origin, spawn_point.origin);
+    var_a25e6eb7 = distance(landing_point.origin, spawn_point.origin);
     var_9d78b877 = var_a25e6eb7 / var_2676a937;
     mannequin linkto(var_e5031929, "tag_origin", (0, 0, 0), (0, 0, 0));
     mannequin thread function_4eca5590();
-    var_e5031929 moveto(var_74b33cc3.origin, var_9d78b877, 3);
+    var_e5031929 moveto(landing_point.origin, var_9d78b877, 3);
     mannequin thread function_890902a(var_e5031929);
     rand = randomint(100);
     if (rand <= 35) {

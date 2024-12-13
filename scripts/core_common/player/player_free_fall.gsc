@@ -129,7 +129,7 @@ function private function_a7e644f6(eventstruct) {
         if (getdvarint(#"hash_bfa71d08f383550", 0)) {
             speed = 8800;
             velocity = anglestoforward(self getplayerangles()) * speed;
-            self function_2ffa8aaf(1, velocity, getdvarint(#"hash_bfa71d08f383550", 0) == 1);
+            self forcefreefall(1, velocity, getdvarint(#"hash_bfa71d08f383550", 0) == 1);
         }
     }
 }

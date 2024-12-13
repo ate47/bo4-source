@@ -999,12 +999,12 @@ function watchweaponchange() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x12439e79, Offset: 0x4ed0
 // Size: 0x6a
-function function_57f553e9(&var_85947e0d, maxallowed) {
-    if (var_85947e0d.size <= maxallowed) {
+function function_57f553e9(&coverlist, maxallowed) {
+    if (coverlist.size <= maxallowed) {
         return undefined;
     }
-    outstayed_spawner = array::pop_front(var_85947e0d, 0);
-    var_85947e0d = array::remove_undefined(var_85947e0d, 0);
+    outstayed_spawner = array::pop_front(coverlist, 0);
+    coverlist = array::remove_undefined(coverlist, 0);
     return outstayed_spawner;
 }
 

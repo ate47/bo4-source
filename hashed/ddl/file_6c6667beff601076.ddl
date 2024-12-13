@@ -1,52 +1,82 @@
-begin "hash_6c6667beff601076";
-version 2;
-metatable "hash_8589ccf257a9d60d";
+// hash_6c6667beff601076
+// metatable "hash_8589ccf257a9d60d"
 
-struct root {
+version 2 {
+    // idx 1 members 8 size 0x1f8
+    struct telemetry_header {
+        // offset 0x0, size 0x20
+        int changelist_number;
+        // offset 0x20, size 0x10
+        uint:16 source_version;
+        // offset 0x30, size 0x40
+        xhash action_type;
+        // offset 0x70, size 0x8
+        hash_54196e9e9860f0be platform;
+        // offset 0x78, size 0x100
+        string(32) build_version;
+        // offset 0x178, size 0x20
+        uint title_id;
+        // offset 0x198, size 0x20
+        uint hash_56a1b6d783aa7a25;
+        // offset 0x1b8, size 0x40
+        uint64 hash_f2ad74d8edb8204;
+    };
+
+    // idx 2 members 3 size 0xc0
+    struct client_header {
+        // offset 0x0, size 0x40
+        uint64 hash_4016bed15f9183f7;
+        // offset 0x40, size 0x40
+        uint64 uno_id;
+        // offset 0x80, size 0x40
+        uint64 user_id;
+    };
+
+    // idx 3 members 3 size 0xc0
+    struct match_header {
+        // offset 0x0, size 0x40
+        uint64 match_id;
+        // offset 0x40, size 0x40
+        uint64 hash_c05315ddb26eb93;
+        // offset 0x80, size 0x40
+        uint64 lobby_id;
+    };
+
+    // idx 0 members 5
+    enum hash_54196e9e9860f0be {
+        pc, // 0x0,
+        neo, // 0x1,
+        xb1, // 0x2,
+        scorpio, // 0x3,
+        ps4, // 0x4
+    };
+
+    // idx 0 members 13 size 0x598
+    // offset 0x0, size 0x40
     uint64 uid;
-    int32 kills;
+    // offset 0x40, size 0x20
+    int kills;
+    // offset 0x60, size 0xc0
     match_header match;
-    int32 score;
+    // offset 0x120, size 0x20
+    int score;
+    // offset 0x140, size 0x1f8
     telemetry_header telemetry;
-    int32 end_rank;
-    int32 hash_42b20df98ca70b5d;
-    char gamertag[24];
-    hash gametype;
+    // offset 0x338, size 0x20
+    int end_rank;
+    // offset 0x358, size 0x20
+    int hash_42b20df98ca70b5d;
+    // offset 0x378, size 0xc0
+    string(24) gamertag;
+    // offset 0x438, size 0x40
+    xhash gametype;
+    // offset 0x478, size 0xc0
     client_header client;
-    int32 deaths;
-    int32 assists;
-    int32 headshots;
-};
-
-struct match_header {
-    uint64 match_id;
-    uint64 hash_c05315ddb26eb93;
-    uint64 lobby_id;
-};
-
-struct telemetry_header {
-    int32 changelist_number;
-    uint16 source_version;
-    hash action_type;
-    hash_54196e9e9860f0be platform;
-    char build_version[32];
-    uint32 title_id;
-    uint32 hash_56a1b6d783aa7a25;
-    uint64 hash_f2ad74d8edb8204;
-};
-
-enum hash_54196e9e9860f0be {
-    "pc" = 0x0,
-    "neo" = 0x1,
-    "xb1" = 0x2,
-    "scorpio" = 0x3,
-    "ps4" = 0x4
-};
-
-struct client_header {
-    uint64 hash_4016bed15f9183f7;
-    uint64 uno_id;
-    uint64 user_id;
-};
-
+    // offset 0x538, size 0x20
+    int deaths;
+    // offset 0x558, size 0x20
+    int assists;
+    // offset 0x578, size 0x20
+    int headshots;
+}
 

@@ -287,11 +287,11 @@ function private function_76b4c572(localclientnum) {
             self.var_704e7b07[var_4ef4e267].visible = 0;
         }
     }
-    foreach (var_4ef4e267, var_8712c5b8 in self.var_704e7b07) {
-        var_8712c5b8.var_aaf744fe = var_8712c5b8.state === 1;
-        var_8712c5b8.state = 0;
-        var_8712c5b8.var_fb579b3e = var_8712c5b8.visible;
-        var_8712c5b8.visible = 0;
+    foreach (var_4ef4e267, target_info in self.var_704e7b07) {
+        target_info.var_aaf744fe = target_info.state === 1;
+        target_info.state = 0;
+        target_info.var_fb579b3e = target_info.visible;
+        target_info.visible = 0;
     }
 }
 
@@ -347,12 +347,12 @@ function private function_9ace0fb6(localclientnum) {
 // Params 1, eflags: 0x4
 // Checksum 0x7a7a8387, Offset: 0x17d8
 // Size: 0x60
-function private function_cfd3bed0(var_8712c5b8) {
-    if (!(isdefined(var_8712c5b8.visible) && var_8712c5b8.visible)) {
-        if (!isdefined(var_8712c5b8.var_1fe906d8)) {
+function private function_cfd3bed0(target_info) {
+    if (!(isdefined(target_info.visible) && target_info.visible)) {
+        if (!isdefined(target_info.var_1fe906d8)) {
             return false;
         }
-        if (gettime() - var_8712c5b8.var_1fe906d8 > 500) {
+        if (gettime() - target_info.var_1fe906d8 > 500) {
             return false;
         }
     }
@@ -426,9 +426,9 @@ function private function_d53feb8c(localclientnum, targets) {
                 }
             }
             assert(isdefined(ti));
-            var_4759b4d3 = project3dto2d(localclientnum, target.origin);
+            screen_origin = project3dto2d(localclientnum, target.origin);
             var_20a99afd = project3dto2d(localclientnum, target.origin + (0, 0, 60));
-            screen_height = distance2d(var_4759b4d3, var_20a99afd);
+            screen_height = distance2d(screen_origin, var_20a99afd);
             var_fcd926d5 = var_59d4144b * screen_height / 60;
             var_fcd926d5 = math::clamp(var_fcd926d5, var_e7c561e2, var_98977cea);
             setuimodelvalue(self.var_d32addbf[ti], var_fcd926d5);

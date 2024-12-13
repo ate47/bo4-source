@@ -91,8 +91,8 @@ function function_ff38b7b(params, tacbundle) {
         if (var_6acc1296 > 65536) {
             var_3e398697 = 0;
             foreach (ally in var_ff07f341) {
-                var_2c4028d8 = distancesquared(ally.origin, dogtag.origin);
-                if (var_2c4028d8 <= 65536) {
+                chunksdele = distancesquared(ally.origin, dogtag.origin);
+                if (chunksdele <= 65536) {
                     var_3e398697 = 1;
                     break;
                 }

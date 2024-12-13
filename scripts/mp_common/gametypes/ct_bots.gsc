@@ -808,11 +808,11 @@ function function_cc9c6a13(current_state) {
 // Params 1, eflags: 0x0
 // Checksum 0x73d19f60, Offset: 0x2f90
 // Size: 0x1fa
-function function_b8eff92a(var_edab5327) {
+function function_b8eff92a(desired_state) {
     if (isai(self)) {
         self.ignoreall = 0;
     }
-    switch (var_edab5327) {
+    switch (desired_state) {
     case 2:
         self.var_2925fedc = undefined;
         if (isai(self)) {

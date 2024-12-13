@@ -308,7 +308,7 @@ function private function_c263fd97() {
     self function_8cef1872();
     self setorigin(self.resurrect_origin);
     self show();
-    self function_2ffa8aaf(1, self.var_df8c6469, 0);
+    self forcefreefall(1, self.var_df8c6469, 0);
     self.var_df8c6469 = undefined;
     if (game.state == "pregame") {
         if (isdefined(level.var_fd167bf6)) {

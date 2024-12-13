@@ -77,7 +77,7 @@
     "name": "waspsettings_wz",
     "var_e7260470": 65,
     "rocketcooldown": 5,
-    "var_fb3ce03c": 200,
+    "targeting_radius": 200,
     "meleedist": 50,
     "damage_radius": 150,
     "jump_height": 40,

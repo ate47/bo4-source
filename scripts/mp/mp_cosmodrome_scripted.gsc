@@ -258,21 +258,21 @@ function function_269c793(a_ents) {
     if (isdefined(self.rocket_kill_trig)) {
         level endon(#"game_ended");
         a_ents[#"prop 3"] endon(#"death");
-        var_f81682b6 = util::spawn_model(#"tag_origin", self.rocket_kill_trig.origin);
-        var_f81682b6 linkto(a_ents[#"prop 3"]);
+        rumble_ent = util::spawn_model(#"tag_origin", self.rocket_kill_trig.origin);
+        rumble_ent linkto(a_ents[#"prop 3"]);
         a_ents[#"prop 3"] waittill(#"start_damage");
         a_ents[#"prop 3"] util::delay("line_23", undefined, &function_aa8af5cd, level.var_40263d6, "vox_rupa_pa_rocket_sequence_23");
         level.var_578a0ca4 thread function_7be405f8();
         self.rocket_kill_trig triggerenable(1);
         self.rocket_kill_trig callback::on_trigger(&function_971b8aa2);
         self thread function_6edeb4c2(a_ents[#"prop 3"]);
-        var_f81682b6 playrumblelooponentity("mp_cosdmodrome_rocket_rumble");
+        rumble_ent playrumblelooponentity("mp_cosdmodrome_rocket_rumble");
         a_ents[#"prop 3"] waittill(#"stop_damage");
         level thread function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_19");
         if (isdefined(self) && isdefined(self.rocket_kill_trig)) {
             self.rocket_kill_trig triggerenable(0);
         }
-        a_ents[#"prop 3"] thread util::delete_on_death(var_f81682b6);
+        a_ents[#"prop 3"] thread util::delete_on_death(rumble_ent);
         a_ents[#"prop 3"] waittill(#"cleared_tower");
         level thread function_aa8af5cd(level.var_40263d6, "vox_rupa_pa_rocket_sequence_20");
     }
@@ -491,7 +491,7 @@ function kill_equipment(rocket_kill_trig) {
 // Params 0, eflags: 0x0
 // Checksum 0xf1786b2, Offset: 0x21b8
 // Size: 0xc0
-function function_c42e2ec1() {
+function debug_pa() {
     while (true) {
         wait 3;
         function_aa8af5cd(level.var_40263d6, "evt_base_alarm");

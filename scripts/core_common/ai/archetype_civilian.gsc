@@ -85,17 +85,17 @@ function private function_686ab596() {
         foreach (ai in ais) {
             switch (debug_civ_mode) {
             case #"riot":
-                ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "riot");
+                ai::setaiattribute(ai, #"_civ_mode", "riot");
                 ai setteam(#"team3");
                 break;
             case #"panic":
-                ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "panic");
+                ai::setaiattribute(ai, #"_civ_mode", "panic");
                 break;
             case #"calm":
-                ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "calm");
+                ai::setaiattribute(ai, #"_civ_mode", "calm");
                 break;
             case #"run":
-                ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "run");
+                ai::setaiattribute(ai, #"_civ_mode", "run");
                 break;
             default:
                 break;
@@ -166,7 +166,7 @@ function private function_ebea502e(entity) {
 // Checksum 0xf652606e, Offset: 0x1088
 // Size: 0x42c
 function private rioterchoosepositionservice(entity) {
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") != "riot") {
+    if (entity getblackboardattribute(#"_civ_mode") != "riot") {
         return false;
     }
     if (!isdefined(entity.enemy)) {
@@ -228,7 +228,7 @@ function private rioterchoosepositionservice(entity) {
 // Checksum 0x7fc8fbae, Offset: 0x14c0
 // Size: 0x122
 function private civilianpanicescapechooseposition(entity) {
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "riot") {
+    if (entity getblackboardattribute(#"_civ_mode") == "riot") {
         return 0;
     }
     if (isdefined(entity.ai.escaping) && entity.ai.escaping) {
@@ -253,10 +253,10 @@ function private civilianwanderservice(entity) {
     if (isentity(entity getblackboardattribute("follow"))) {
         return false;
     }
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "riot") {
+    if (entity getblackboardattribute(#"_civ_mode") == "riot") {
         return false;
     }
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "panic" && ai::getaiattribute(entity, "auto_escape")) {
+    if (entity getblackboardattribute(#"_civ_mode") == "panic" && ai::getaiattribute(entity, "auto_escape")) {
         return false;
     }
     if (!ai::getaiattribute(entity, "auto_wander")) {
@@ -316,7 +316,7 @@ function private civilianfollowservice(entity) {
     if (!isentity(followent)) {
         return false;
     }
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "panic" && ai::getaiattribute(entity, "auto_escape")) {
+    if (entity getblackboardattribute(#"_civ_mode") == "panic" && ai::getaiattribute(entity, "auto_escape")) {
         return false;
     }
     if (function_ebea502e(entity)) {
@@ -387,7 +387,7 @@ function private civilianmoveactionfinalize(entity, asmstatename) {
 // Checksum 0xae6917cf, Offset: 0x1f10
 // Size: 0x34
 function private civilianispanicked(entity) {
-    return entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "panic";
+    return entity getblackboardattribute(#"_civ_mode") == "panic";
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -395,7 +395,7 @@ function private civilianispanicked(entity) {
 // Checksum 0x4dedc785, Offset: 0x1f50
 // Size: 0x22
 function private function_e27d2a1b() {
-    return ai::getaiattribute(self, #"hash_78e762abc4fbf1de");
+    return ai::getaiattribute(self, #"_civ_mode");
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -414,7 +414,7 @@ function private civilianarrivalallowed(entity) {
 // Checksum 0x20f720f, Offset: 0x1fc0
 // Size: 0x40
 function private civilianareturnsallowed(entity) {
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "calm") {
+    if (entity getblackboardattribute(#"_civ_mode") == "calm") {
         return false;
     }
     return true;
@@ -425,7 +425,7 @@ function private civilianareturnsallowed(entity) {
 // Checksum 0x12bf3473, Offset: 0x2008
 // Size: 0x40
 function civilianisrioter(entity) {
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "riot") {
+    if (entity getblackboardattribute(#"_civ_mode") == "riot") {
         return true;
     }
     return false;
@@ -543,7 +543,7 @@ function private civiliancleanuptothrowgrenade(behaviortreeentity) {
 // Checksum 0xbc4e7368, Offset: 0x2970
 // Size: 0x2e6
 function private rioterreaquireservice(entity) {
-    if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") != "riot") {
+    if (entity getblackboardattribute(#"_civ_mode") != "riot") {
         return false;
     }
     if (!isdefined(entity.reacquire_state)) {

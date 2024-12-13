@@ -501,7 +501,7 @@ function play_deploy_anim() {
 // Size: 0x28
 function oncancelplacement(turret) {
     if (isdefined(turret)) {
-        turret notify(#"hash_5f4a0ea8f3f4e0d0");
+        turret notify(#"ultimate_turret_shutdown");
     }
 }
 
@@ -651,7 +651,7 @@ function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, sh
 // Size: 0x28
 function onshutdown(turret) {
     if (isdefined(turret)) {
-        turret notify(#"hash_5f4a0ea8f3f4e0d0");
+        turret notify(#"ultimate_turret_shutdown");
     }
 }
 
@@ -1113,7 +1113,7 @@ function watchturretshutdown(player, killstreakid, team) {
     player endon(#"disconnect", #"joined_team", #"joined_spectators");
     player thread function_d6c5b32b(player, killstreakid, team);
     turret = self;
-    self waittill(#"hash_5f4a0ea8f3f4e0d0", #"death");
+    self waittill(#"ultimate_turret_shutdown", #"death");
     turretshutdown(killstreakid, team);
 }
 

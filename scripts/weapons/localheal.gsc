@@ -266,9 +266,9 @@ function function_9fe3d492() {
 // Size: 0xa4
 function function_ee175021(array, entnum) {
     inarray = undefined;
-    foreach (var_8712c5b8 in array) {
-        if (var_8712c5b8.entnum == entnum) {
-            inarray = var_8712c5b8;
+    foreach (target_info in array) {
+        if (target_info.entnum == entnum) {
+            inarray = target_info;
             break;
         }
     }

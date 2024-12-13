@@ -93,14 +93,14 @@ function private function_9ce07f7c(homunculus) {
 function private function_90cc805b(homunculus) {
     var_b1de6a06 = getentitiesinradius(homunculus.origin, 250, 15);
     var_9db93b2e = [];
-    foreach (var_6baf60af in var_b1de6a06) {
-        if (function_62318121(homunculus, var_6baf60af)) {
+    foreach (nearby_actor in var_b1de6a06) {
+        if (function_62318121(homunculus, nearby_actor)) {
             if (!isdefined(var_9db93b2e)) {
                 var_9db93b2e = [];
             } else if (!isarray(var_9db93b2e)) {
                 var_9db93b2e = array(var_9db93b2e);
             }
-            var_9db93b2e[var_9db93b2e.size] = var_6baf60af;
+            var_9db93b2e[var_9db93b2e.size] = nearby_actor;
         }
     }
     return arraysortclosest(var_9db93b2e, homunculus.origin, undefined, undefined, 250);

@@ -1079,8 +1079,8 @@ function function_ca5b6591(insertion, startorigin, endorigin, var_872f085f) {
             plane = insertion.var_41091905[0];
         }
         var_f945990b = plane.origin + (0, 0, 250);
-        var_21e6b5ae = anglestoforward(var_872f085f);
-        targetpos = var_f945990b + var_21e6b5ae * 150 * 17.6 * 4;
+        flightdirection = anglestoforward(var_872f085f);
+        targetpos = var_f945990b + flightdirection * 150 * 17.6 * 4;
         insertion.cameraent[index] moveto(targetpos, 4, 1, 0);
         insertion.cameraent[index] rotateto((var_872f085f[0] + 15, var_872f085f[1], var_872f085f[2]), 4, 1, 1);
     }
@@ -1264,10 +1264,10 @@ function private function_e3f18577() {
         if (refly > 2) {
             speed = 1000;
             velocity = direction * speed;
-            self function_2ffa8aaf(1, velocity, 0);
+            self forcefreefall(1, velocity, 0);
         } else {
             velocity = function_ba904ee2(direction * 2640);
-            self function_2ffa8aaf(1, velocity, 1);
+            self forcefreefall(1, velocity, 1);
         }
         if (refly % 2 == 0) {
             while (true) {
@@ -2091,7 +2091,7 @@ function player_freefall(aircraft) {
 // Size: 0x104
 function start_freefall(velocity, parachute) {
     self callback::function_d8abfc3d(#"freefall", &function_3b9bcf85);
-    self function_2ffa8aaf(1, velocity, parachute);
+    self forcefreefall(1, velocity, parachute);
     self.var_97b0977 = 1;
     self hud_message::clearlowermessage();
     self val::set(#"player_insertion", "disable_oob", 0);

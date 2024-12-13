@@ -82,7 +82,7 @@ function on_game_playing() {
         }
         foreach (door in elevator.doors) {
             door.var_856b91cc = struct::get(door.target);
-            door.var_fcab61eb = struct::get(door.var_856b91cc.target);
+            door.open_to = struct::get(door.var_856b91cc.target);
             if (door.script_noteworthy !== "top" && door.script_noteworthy !== "bottom") {
                 door linkto(elevator);
             }
@@ -165,9 +165,9 @@ function open_door(location) {
         return;
     }
     self.state = "opened";
-    var_fcab61eb = self.var_fcab61eb;
+    open_to = self.open_to;
     self unlink();
-    self moveto((var_fcab61eb.origin[0], var_fcab61eb.origin[1], self.origin[2]), 0.37);
+    self moveto((open_to.origin[0], open_to.origin[1], self.origin[2]), 0.37);
     self waittill(#"movedone", #"death");
     if (isdefined(self)) {
         self thread function_e0954c11();

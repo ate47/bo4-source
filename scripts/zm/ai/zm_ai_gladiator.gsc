@@ -1144,7 +1144,7 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
         }
         adjusted_damage = int(adjusted_damage);
         if (var_88e794fb) {
-            namespace_81245006::function_ef87b7e8(var_dd54fdb1, adjusted_damage);
+            namespace_81245006::damageweakpoint(var_dd54fdb1, adjusted_damage);
             /#
                 if (getdvarint(#"scr_weakpoint_debug", 0) > 0) {
                     iprintlnbold("<dev string:x93>" + var_dd54fdb1.health);

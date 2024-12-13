@@ -170,7 +170,7 @@ function private function_af85a094(inflictor, attacker, damage, idflags, meansof
     var_a0e07aaa = isdefined(weapon) && zm_loadout::is_hero_weapon(weapon);
     var_786d7e06 = zm_ai_utility::function_422fdfd4(self, attacker, weapon, boneindex, hitloc, point);
     if (var_786d7e06.registerzombie_bgb_used_reinforce && var_786d7e06.var_84ed9a13.type === #"armor") {
-        namespace_81245006::function_ef87b7e8(var_786d7e06.var_84ed9a13, damage);
+        namespace_81245006::damageweakpoint(var_786d7e06.var_84ed9a13, damage);
         if (namespace_81245006::function_f29756fe(var_786d7e06.var_84ed9a13) === 3) {
             if (isdefined(var_786d7e06.var_84ed9a13.var_641ce20e) && var_786d7e06.var_84ed9a13.var_641ce20e) {
                 namespace_81245006::function_6742b846(self, var_786d7e06.var_84ed9a13);
@@ -251,9 +251,9 @@ function private function_c9f197d2(var_4c3c217a = 1) {
         if (isdefined(weakpoints)) {
             foreach (weakpoint in weakpoints) {
                 if (weakpoint.type === #"weakpoint") {
-                    var_a875aa2b = namespace_81245006::function_f29756fe(weakpoint);
+                    weakpoint_state = namespace_81245006::function_f29756fe(weakpoint);
                     namespace_81245006::function_26901d33(weakpoint);
-                    namespace_81245006::function_6c64ebd3(weakpoint, var_a875aa2b);
+                    namespace_81245006::function_6c64ebd3(weakpoint, weakpoint_state);
                 }
             }
         }

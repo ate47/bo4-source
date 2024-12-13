@@ -48,7 +48,7 @@
     "var_e7260470": 100,
     "rocketcooldown": 5,
     "killedexplosionfx": "#hash_5b8d696874f5459a",
-    "var_fb3ce03c": 1000,
+    "targeting_radius": 1000,
     "meleedist": 50,
     "damage_radius": 200,
     "jump_height": 40,

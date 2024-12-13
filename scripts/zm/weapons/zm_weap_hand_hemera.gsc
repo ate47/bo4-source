@@ -43,7 +43,7 @@ function __init__() {
     clientfield::register("allplayers", "hemera_proj_flash", 16000, 1, "int");
     clientfield::register("allplayers", "hemera_beam_flash", 16000, 1, "int");
     clientfield::register("actor", "hemera_proj_death", 16000, 1, "int");
-    clientfield::register("actor", "" + #"hash_5a8f1796382ec694", 16000, 1, "int");
+    clientfield::register("actor", "" + #"hemera_beam_death", 16000, 1, "int");
     level.w_hand_hemera = getweapon(#"ww_hand_h");
     level.w_hand_hemera_charged = getweapon(#"ww_hand_h_charged");
     level.w_hand_hemera_uncharged = getweapon(#"ww_hand_h_uncharged");
@@ -57,7 +57,7 @@ function __init__() {
         level.var_ab6fef61 = new throttle();
         [[ level.var_ab6fef61 ]]->initialize(6, 0.1);
     }
-    namespace_9ff9f642::register_slowdown(#"hash_7e8287b2e2587da1", 0.6, 3);
+    namespace_9ff9f642::register_slowdown(#"hemera_slowdown_time", 0.6, 3);
     callback::add_weapon_fired(level.w_hand_hemera, &function_10b4d6ac);
     callback::add_weapon_fired(level.w_hand_hemera_charged, &function_dd7bc108);
     callback::add_weapon_fired(level.w_hand_hemera_uncharged, &function_10b4d6ac);
@@ -710,7 +710,7 @@ function function_e56c350e(e_target, b_charged, n_damage) {
     [[ level.var_ab6fef61 ]]->waitinqueue(e_target);
     w_weapon = level.w_hand_hemera_uncharged;
     if (isdefined(b_charged)) {
-        e_target clientfield::set("" + #"hash_5a8f1796382ec694", 1);
+        e_target clientfield::set("" + #"hemera_beam_death", 1);
         e_target.var_4dcd7a1c = 1;
         n_damage = e_target.health + 999;
         w_weapon = level.w_hand_hemera;

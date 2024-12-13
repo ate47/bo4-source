@@ -66,10 +66,10 @@ function function_7c4ef26b(predictedspawn) {
     spawning::onspawnplayer(predictedspawn);
     if (self.team == #"allies") {
         self thread function_7f166658();
-        var_fbd8f808 = function_5d9ec9e5();
-        if (isdefined(var_fbd8f808)) {
-            self setorigin(var_fbd8f808.origin);
-            self setplayerangles(var_fbd8f808.angles);
+        nd_node = function_5d9ec9e5();
+        if (isdefined(nd_node)) {
+            self setorigin(nd_node.origin);
+            self setplayerangles(nd_node.angles);
         }
     } else if (level flag::get("attack_event_active")) {
         self function_bf0cfe30();
@@ -266,10 +266,10 @@ function function_1082e3b7() {
 // Checksum 0x9acd43fe, Offset: 0x11a0
 // Size: 0x8c
 function function_bf0cfe30() {
-    var_fbd8f808 = function_b2de37ed();
-    self ct_utils::function_5b59f3b7(var_fbd8f808.origin, var_fbd8f808.angles, 256);
-    self setorigin(var_fbd8f808.origin);
-    self setplayerangles(var_fbd8f808.angles);
+    nd_node = function_b2de37ed();
+    self ct_utils::function_5b59f3b7(nd_node.origin, nd_node.angles, 256);
+    self setorigin(nd_node.origin);
+    self setplayerangles(nd_node.angles);
 }
 
 // Namespace ct_ajax/ct_ajax
@@ -282,12 +282,12 @@ function function_b2de37ed() {
         level.var_1dccc4d3 = getnodearray(str_name, "targetname");
         level.var_e6871c2 = 0;
     }
-    var_fbd8f808 = level.var_1dccc4d3[level.var_e6871c2];
+    nd_node = level.var_1dccc4d3[level.var_e6871c2];
     level.var_e6871c2++;
     if (level.var_e6871c2 >= level.var_1dccc4d3.size) {
         level.var_e6871c2 = 0;
     }
-    return var_fbd8f808;
+    return nd_node;
 }
 
 // Namespace ct_ajax/ct_ajax
@@ -309,8 +309,8 @@ function function_5d9ec9e5() {
         return undefined;
     }
     str_name = "ajax_player_respawn_" + level.var_347db8b6 + 1;
-    var_fbd8f808 = getnode(str_name, "targetname");
-    return var_fbd8f808;
+    nd_node = getnode(str_name, "targetname");
+    return nd_node;
 }
 
 // Namespace ct_ajax/ct_ajax

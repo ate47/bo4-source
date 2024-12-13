@@ -694,11 +694,11 @@ function transition_camera(localclientnum, weapontype, camera, subxcam, initiald
 // Params 3, eflags: 0x1 linked
 // Checksum 0x3106865c, Offset: 0x2af0
 // Size: 0x122
-function get_attachments_intersection(oldweapon, var_314432b2, var_6714c3a0) {
+function get_attachments_intersection(oldweapon, oldattachments, var_6714c3a0) {
     if (!isdefined(oldweapon)) {
         return var_6714c3a0;
     }
-    var_3f8fbddf = strtok(var_314432b2, "+");
+    var_3f8fbddf = strtok(oldattachments, "+");
     var_95e90a5e = strtok(var_6714c3a0, "+");
     if (!isdefined(var_3f8fbddf[0]) || var_3f8fbddf[0] != var_95e90a5e[0]) {
         return var_6714c3a0;

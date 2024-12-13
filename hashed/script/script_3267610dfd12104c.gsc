@@ -19,11 +19,11 @@
 function function_6f6f5189() {
     death_circle::init();
     if (isarray(level.deathcircles) && level.deathcircles.size > 0) {
-        var_8e3c3c5b = level.deathcircles[level.deathcircles.size - 1];
-        level.var_5c8bbb85 = var_8e3c3c5b.var_3b9f4abf;
-        level.var_6d8a1d51 = var_8e3c3c5b.mapwidth;
-        level.var_2a9f2129 = var_8e3c3c5b.mapheight;
-        level.var_398d38ce = var_8e3c3c5b.radius;
+        finalcircle = level.deathcircles[level.deathcircles.size - 1];
+        level.var_5c8bbb85 = finalcircle.var_3b9f4abf;
+        level.var_6d8a1d51 = finalcircle.mapwidth;
+        level.var_2a9f2129 = finalcircle.mapheight;
+        level.var_398d38ce = finalcircle.radius;
         if (!isdefined(level.var_6f535d7f)) {
             function_731497bb();
         }
@@ -39,9 +39,9 @@ function function_6f6f5189() {
         if ((isdefined(getgametypesetting(#"hash_453cdf8a6bd610d7")) ? getgametypesetting(#"hash_453cdf8a6bd610d7") : 0) && isdefined(level.var_a6a3e12a)) {
             function_320393b9();
         }
-        var_8e3c3c5b.var_3b9f4abf = level.var_5c8bbb85;
-        var_8e3c3c5b.mapwidth = level.var_6d8a1d51;
-        var_8e3c3c5b.mapheight = level.var_2a9f2129;
+        finalcircle.var_3b9f4abf = level.var_5c8bbb85;
+        finalcircle.mapwidth = level.var_6d8a1d51;
+        finalcircle.mapheight = level.var_2a9f2129;
     }
     if (util::get_game_type() == "warzone_dbno" || util::get_game_type() == "warzone_hot_pursuit" || util::get_game_type() == "warzone_pandemic_quad") {
         level thread namespace_3d2704b3::start(array(5, 4, 4, 4), 20, array(60, 45, 20));

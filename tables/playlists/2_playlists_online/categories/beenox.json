@@ -1116,7 +1116,7 @@
                 },
                 {
                     "type": 0,
-                    "name": "#hash_2ce00db5cd5003ff",
+                    "name": "#wzzombiesbreakdoors",
                     "value": "1",
                     "utcStartTime": 0,
                     "utcEndTime": 0,
@@ -1125,7 +1125,7 @@
                 },
                 {
                     "type": 0,
-                    "name": "#hash_2b2c167cf8889749",
+                    "name": "#wzzombiesattackablesenabled",
                     "value": "1",
                     "utcStartTime": 0,
                     "utcEndTime": 0,

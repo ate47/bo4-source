@@ -1566,7 +1566,7 @@ function end_game() {
     if (!isdefined(level.var_21e22beb)) {
         level.var_21e22beb = gettime();
     }
-    var_7da9f0c = isdefined(level.var_bccd8271) ? level.var_bccd8271 : gettime() - level.var_21e22beb;
+    game_length = isdefined(level.var_bccd8271) ? level.var_bccd8271 : gettime() - level.var_21e22beb;
     if (!isdefined(level.n_gameplay_start_time)) {
         level.n_gameplay_start_time = gettime();
     }
@@ -1654,10 +1654,10 @@ function end_game() {
     }
     zm_stats::update_players_stats_at_match_end(players);
     zm_stats::update_global_counters_on_match_end();
-    zm_stats::set_match_stat("gameLength", var_7da9f0c);
+    zm_stats::set_match_stat("gameLength", game_length);
     foreach (player in getplayers()) {
-        player zm_stats::function_9daadcaa("gameLength", var_7da9f0c);
-        player zm_stats::function_ae547e45("boas_gameLength", var_7da9f0c);
+        player zm_stats::function_9daadcaa("gameLength", game_length);
+        player zm_stats::function_ae547e45("boas_gameLength", game_length);
         player zm_stats::function_ae547e45("boas_numZombieRounds", level.round_number);
         player zm_stats::function_ae547e45("boas_score", player.score);
         if (isdefined(level.var_211e3a53)) {

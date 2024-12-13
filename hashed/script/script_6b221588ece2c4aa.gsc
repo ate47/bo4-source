@@ -267,11 +267,11 @@ function function_5742754c() {
 // Size: 0x16c
 function function_e98cee52(player, station) {
     primary_weapons = player getweaponslistprimaries();
-    var_c20b09e1 = 0;
+    gaveammo = 0;
     foreach (weapon in primary_weapons) {
-        var_c20b09e1 |= player function_61bdb626(weapon);
+        gaveammo |= player function_61bdb626(weapon);
     }
-    if (!var_c20b09e1) {
+    if (!gaveammo) {
         return;
     }
     if (!isdefined(station.last_ammo_resupply_time)) {

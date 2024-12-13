@@ -681,8 +681,8 @@ function private function_7d17822(status_effect_type) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xe42684d2, Offset: 0x24a0
 // Size: 0x1a
-function function_7505baeb(var_5c980521) {
-    level.var_90391bcc = var_5c980521;
+function function_7505baeb(callback_function) {
+    level.var_90391bcc = callback_function;
 }
 
 // Namespace status_effect/status_effect_util

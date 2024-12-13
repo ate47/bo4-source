@@ -672,7 +672,7 @@ function private function_cacd1506(var_84ed9a13, entity, inflictor, attacker, da
     if (namespace_81245006::function_f29756fe(var_84ed9a13) != 1) {
         return;
     }
-    namespace_81245006::function_ef87b7e8(var_84ed9a13, damage);
+    namespace_81245006::damageweakpoint(var_84ed9a13, damage);
     inflictor thread function_6f109d76(self);
     if (namespace_81245006::function_f29756fe(var_84ed9a13) == 3) {
         if (isdefined(level.var_c2981ce9[var_84ed9a13.var_51e8b151])) {

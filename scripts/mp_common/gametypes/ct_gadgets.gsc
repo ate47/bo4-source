@@ -201,8 +201,8 @@ function function_b0762fa0(n_slot) {
                             self gadgetpowerset(n_slot, 100);
                         }
                     } else if (!var_90a2bef0) {
-                        var_6624500e = isdefined(self.var_f3d589a1[n_slot]) ? self.var_f3d589a1[n_slot] : level.var_c8f47cbe;
-                        self function_4d6c7d92(n_slot, var_6624500e);
+                        filltime = isdefined(self.var_f3d589a1[n_slot]) ? self.var_f3d589a1[n_slot] : level.var_c8f47cbe;
+                        self function_4d6c7d92(n_slot, filltime);
                     }
                 } else if (isdefined(level.var_e72728b8) && isinarray(level.var_e72728b8, gadget.name)) {
                     self gadgetpowerset(n_slot, 0);

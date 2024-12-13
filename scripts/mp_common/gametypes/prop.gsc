@@ -1386,29 +1386,29 @@ function organizeproplist(inarray) {
 // Checksum 0x97a70488, Offset: 0x5ca8
 // Size: 0x182
 function randgetpropsizetoallocate() {
-    var_7e9c5521 = 10 * isdefined(level.proplist[50]);
-    var_640cfc88 = 30 * isdefined(level.proplist[75]);
-    var_dade57fb = 40 * isdefined(level.proplist[150]);
-    var_bc337198 = 20 * isdefined(level.proplist[250]);
-    var_b232d552 = 10 * isdefined(level.proplist[350]);
-    randomrange = var_7e9c5521 + var_640cfc88 + var_dade57fb + var_bc337198 + var_b232d552;
+    weight_xsmall = 10 * isdefined(level.proplist[50]);
+    weight_small = 30 * isdefined(level.proplist[75]);
+    weight_medium = 40 * isdefined(level.proplist[150]);
+    weight_large = 20 * isdefined(level.proplist[250]);
+    weight_xlarge = 10 * isdefined(level.proplist[350]);
+    randomrange = weight_xsmall + weight_small + weight_medium + weight_large + weight_xlarge;
     randomval = randomint(randomrange);
-    if (randomval < var_7e9c5521) {
+    if (randomval < weight_xsmall) {
         return 50;
     }
-    randomval -= var_7e9c5521;
-    if (randomval < var_640cfc88) {
+    randomval -= weight_xsmall;
+    if (randomval < weight_small) {
         return 75;
     }
-    randomval -= var_640cfc88;
-    if (randomval < var_dade57fb) {
+    randomval -= weight_small;
+    if (randomval < weight_medium) {
         return 150;
     }
-    randomval -= var_dade57fb;
-    if (randomval < var_bc337198) {
+    randomval -= weight_medium;
+    if (randomval < weight_large) {
         return 250;
     }
-    randomval -= var_bc337198;
+    randomval -= weight_large;
     return 350;
 }
 

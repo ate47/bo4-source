@@ -73,7 +73,7 @@ function function_9af806be(var_c5b25bc5) {
         self perks::perk_setperk(#"hash_130074ec6de7a431");
         break;
     case 5:
-        self perks::perk_setperk(#"hash_1bc7d0ea42d1d0a8");
+        self perks::perk_setperk(#"specialty_faction_helmet");
         break;
     case 6:
         self zm_laststand::function_3a00302e(1);
@@ -109,7 +109,7 @@ function function_2a94cd59() {
             self perks::perk_unsetperk(#"hash_130074ec6de7a431");
             break;
         case 5:
-            self perks::perk_unsetperk(#"hash_1bc7d0ea42d1d0a8");
+            self perks::perk_unsetperk(#"specialty_faction_helmet");
             break;
         case 6:
             self zm_laststand::function_409dc98e(1, 0);

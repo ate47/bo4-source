@@ -86,7 +86,7 @@
         "#scripts/weapons/acid_bomb.gsc"
     ],
     "cscScripts": [
-        "#script_10aeb2e4f2b455a1",
+        "#scripts\core_common\ai\systems\ai_interactables.csc",
         "#scripts/core_common/ai/archetype_secondary_animations.csc",
         "#script_4ce356960acfe7c8",
         "#scripts/core_common/ai/systems/destructible_character.csc",

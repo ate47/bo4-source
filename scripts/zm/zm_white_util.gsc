@@ -137,9 +137,9 @@ function function_5d7d0c85(var_2753f06a) {
 // Params 4, eflags: 0x0
 // Checksum 0xa42c6973, Offset: 0xe78
 // Size: 0x7c
-function function_733a6ab7(e_player, var_50a85511, e_computer, var_21fd1ca8) {
+function function_733a6ab7(e_player, player_alias, e_computer, var_21fd1ca8) {
     level endon(#"end_game");
-    e_player zm_hms_util::function_51b752a9(var_50a85511);
+    e_player zm_hms_util::function_51b752a9(player_alias);
     wait 1;
     e_computer thread zm_hms_util::function_6a0d675d(var_21fd1ca8, -1, 1);
 }
@@ -148,11 +148,11 @@ function function_733a6ab7(e_player, var_50a85511, e_computer, var_21fd1ca8) {
 // Params 3, eflags: 0x0
 // Checksum 0x1ee8d918, Offset: 0xf00
 // Size: 0xc4
-function function_c2cc8e(e_player, var_50a85511, var_21fd1ca8) {
+function function_c2cc8e(e_player, player_alias, var_21fd1ca8) {
     level endon(#"end_game");
     self endon(#"death", #"player_down", #"disconnect");
     zm_hms_util::function_3c173d37();
-    e_player zm_hms_util::function_51b752a9(var_50a85511);
+    e_player zm_hms_util::function_51b752a9(player_alias);
     zm_hms_util::function_3c173d37();
     e_player zm_audio::do_player_or_npc_playvox(var_21fd1ca8, 1);
 }

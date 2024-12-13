@@ -92,7 +92,7 @@ function get_targets() {
 // Params 2, eflags: 0x0
 // Checksum 0x97ad095e, Offset: 0x490
 // Size: 0x318
-function function_84235351(var_ff716a93, var_edc20efd) {
+function function_84235351(attack_origin, var_edc20efd) {
     targets = self get_targets();
     var_e0c224a4 = var_edc20efd * var_edc20efd;
     least_hunted = undefined;
@@ -117,7 +117,7 @@ function function_84235351(var_ff716a93, var_edc20efd) {
         if (!isdefined(getclosestpointonnavmesh(target.origin, 200, 1.2 * self getpathfindingradius()))) {
             continue;
         }
-        dist_squared = distancesquared(var_ff716a93, target.origin);
+        dist_squared = distancesquared(attack_origin, target.origin);
         var_e294ac7d = isplayer(target) ? target function_d730727f() : 1;
         var_97f7ad10 = var_e0c224a4 * var_e294ac7d;
         if (dist_squared > var_97f7ad10) {
@@ -142,12 +142,12 @@ function function_84235351(var_ff716a93, var_edc20efd) {
 // Params 2, eflags: 0x0
 // Checksum 0xde1f605d, Offset: 0x7b0
 // Size: 0x152
-function function_a13468f5(var_ff716a93, var_edc20efd) {
+function function_a13468f5(attack_origin, var_edc20efd) {
     targets = self get_targets();
     valid_targets = [];
     var_e0c224a4 = var_edc20efd * var_edc20efd;
     foreach (target in targets) {
-        dist_squared = distancesquared(var_ff716a93, target.origin);
+        dist_squared = distancesquared(attack_origin, target.origin);
         if (dist_squared > var_e0c224a4) {
             continue;
         }

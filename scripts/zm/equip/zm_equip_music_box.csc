@@ -17,8 +17,8 @@ function autoexec __init__system__() {
 // Checksum 0x56ab8783, Offset: 0x1d8
 // Size: 0x10c
 function __init__() {
-    clientfield::register("scriptmover", "" + #"hash_136e9d44e7e2e888", 24000, 1, "int", &function_67fa988c, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_77a1a7cd8eb3e86c", 1, 1, "int", &function_9c964ccc, 0, 0);
+    clientfield::register("scriptmover", "" + #"music_box_light_fx", 24000, 1, "int", &music_box_light_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"music_box_teleport", 1, 1, "int", &music_box_teleport, 0, 0);
     clientfield::register("actor", "" + #"hash_4881cb6bc59fdc49", 24000, 1, "int", &function_e722a4fd, 0, 0);
 }
 
@@ -64,7 +64,7 @@ function function_7ee98254(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x55884b70, Offset: 0x4f0
 // Size: 0xbe
-function function_67fa988c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function music_box_light_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (isdefined(self)) {
         if (newval == 1) {
             self.fx_handle = util::playfxontag(localclientnum, "zm_weapons/fx8_music_box_open_world", self, "tag_origin");
@@ -83,7 +83,7 @@ function function_67fa988c(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x8ca37175, Offset: 0x5b8
 // Size: 0xd4
-function function_9c964ccc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function music_box_teleport(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         waitframe(1);
         v_up = (360, 0, 0);

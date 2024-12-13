@@ -116,7 +116,7 @@ function hit_alert_sfx_mp(mod, inflictor, perkfeedback, weapon, victim, psoffset
         } else if (weapon.grappleweapon) {
             hitalias = #"hash_671bc9a2de453f2e";
         } else if (weapon.name == #"snowball") {
-            hitalias = #"hash_65089a4793316b63";
+            hitalias = #"mpl_hit_alert_snow";
         } else if (weapon.name == #"waterballoon") {
             hitalias = #"hash_1fd605562fb1fd3a";
         } else if (isvehicle(victim)) {
@@ -138,9 +138,9 @@ function hit_alert_sfx_mp(mod, inflictor, perkfeedback, weapon, victim, psoffset
             case #"player":
                 if (isdefined(idflags) && idflags & 2048 && isdefined(victim)) {
                     if (isdefined(victim.var_426947c4)) {
-                        hitalias = #"hash_74a7b6ba3604ede9";
+                        hitalias = #"mpl_hit_alert_armor_broke";
                     } else if (sessionmodeiswarzonegame()) {
-                        hitalias = #"hash_2248618b48085ce5";
+                        hitalias = #"mpl_hit_alert_armor_hit";
                     } else {
                         hitalias = #"mpl_hit_alert";
                     }
@@ -149,7 +149,7 @@ function hit_alert_sfx_mp(mod, inflictor, perkfeedback, weapon, victim, psoffset
                 } else if (isdefined(victim) && isdefined(victim.isaiclone) && victim.isaiclone) {
                     hitalias = #"mpl_hit_alert_clone";
                 } else if (isdefined(victim) && isdefined(victim.var_342564dd) && victim.var_342564dd) {
-                    hitalias = #"hash_3e284f9a53e3010b";
+                    hitalias = #"mpl_hit_alert_rad";
                 } else if (isdefined(victim) && isplayer(victim) && isdefined(victim.carryobject) && isdefined(victim.carryobject.hitsound) && isdefined(perkfeedback) && perkfeedback == "armor") {
                     hitalias = victim.carryobject.hitsound;
                 } else if (mod == "MOD_BURNED") {
@@ -215,7 +215,7 @@ function hit_alert_sfx_mp(mod, inflictor, perkfeedback, weapon, victim, psoffset
     } else if (isdefined(inflictor) && isdefined(inflictor.owner) && isdefined(inflictor.owner.soundmod)) {
         if (inflictor.owner.soundmod == #"player" && isdefined(idflags) && idflags & 2048 && isdefined(victim)) {
             if (isdefined(victim.var_426947c4)) {
-                hitalias = #"hash_74a7b6ba3604ede9";
+                hitalias = #"mpl_hit_alert_armor_broke";
             }
         }
     }

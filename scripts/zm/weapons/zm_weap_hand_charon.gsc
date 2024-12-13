@@ -44,8 +44,8 @@ function __init__() {
     clientfield::register("scriptmover", "" + #"charon_impact", 16000, 2, "int");
     clientfield::register("allplayers", "charon_flash", 16000, 1, "int");
     clientfield::register("actor", "" + #"charon_death", 16000, 1, "counter");
-    clientfield::register("actor", "" + #"hash_3681b677c0d46042", 16000, 1, "counter");
-    clientfield::register("actor", "" + #"hash_25691c415a4aea4c", 16000, 1, "int");
+    clientfield::register("actor", "" + #"charon_zombie_impact", 16000, 1, "counter");
+    clientfield::register("actor", "" + #"charon_pool_victim", 16000, 1, "int");
     level.w_hand_charon = getweapon(#"ww_hand_c");
     level.w_hand_charon_charged = getweapon(#"ww_hand_c_charged");
     level.w_hand_charon_uncharged = getweapon(#"ww_hand_c_uncharged");
@@ -54,8 +54,8 @@ function __init__() {
     zm_weapons::include_zombie_weapon(#"ww_hand_c_charged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_c_uncharged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_c_upgraded", 0);
-    namespace_9ff9f642::register_slowdown(#"hash_583272dc38f3f8a8", 0.7, 3);
-    namespace_9ff9f642::register_slowdown(#"hash_60f12378572cf8e", 0.3, 1);
+    namespace_9ff9f642::register_slowdown(#"charon_slowdown_time", 0.7, 3);
+    namespace_9ff9f642::register_slowdown(#"charon_dissolve_time", 0.3, 1);
     if (!isdefined(level.var_844d377c)) {
         level.var_844d377c = new throttle();
         [[ level.var_844d377c ]]->initialize(6, 0.1);
@@ -447,7 +447,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, v_to_target, n_d
             e_target dodamage(n_damage, e_target.origin, self, self, "none", "MOD_UNKNOWN", 0, weapon);
             break;
         case #"miniboss":
-            e_target clientfield::increment("" + #"hash_3681b677c0d46042");
+            e_target clientfield::increment("" + #"charon_zombie_impact");
             n_damage = int(n_damage * 0.3);
             e_target dodamage(n_damage, e_target.origin, self, self, "none", "MOD_UNKNOWN", 0, weapon);
             if (randomint(10) == 0) {
@@ -654,16 +654,16 @@ function function_249b5556(n_damage) {
                     case #"enhanced":
                         ai_zombie.var_47d982a1 = 1;
                         ai_zombie thread function_ccd87945(self);
-                        ai_zombie thread namespace_9ff9f642::slowdown(#"hash_583272dc38f3f8a8");
+                        ai_zombie thread namespace_9ff9f642::slowdown(#"charon_slowdown_time");
                         break;
                     case #"heavy":
                         ai_zombie.var_47d982a1 = 1;
-                        self thread function_2a67ef83(ai_zombie, n_damage);
+                        self thread charon_slow(ai_zombie, n_damage);
                         ai_zombie thread function_da454404();
                         break;
                     case #"miniboss":
                         ai_zombie.var_47d982a1 = 1;
-                        self thread function_2a67ef83(ai_zombie, n_damage);
+                        self thread charon_slow(ai_zombie, n_damage);
                         ai_zombie thread function_da454404();
                         break;
                     }
@@ -718,7 +718,7 @@ function function_31d8c58() {
     self.no_powerups = 1;
     self.var_131a4fb0 = 1;
     self notsolid();
-    self clientfield::set("" + #"hash_25691c415a4aea4c", 1);
+    self clientfield::set("" + #"charon_pool_victim", 1);
     var_f9d1df1d = vectornormalize(anglestoforward(self.angles));
     mdl_tag = util::spawn_model("tag_origin", self.origin, self.angles);
     mdl_tag.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + (0, -90, 0));
@@ -789,15 +789,15 @@ function function_197896ad(e_target, n_damage) {
             n_damage = n_damage;
         }
         [[ level.var_844d377c ]]->waitinqueue(e_target);
-        e_target clientfield::increment("" + #"hash_3681b677c0d46042");
+        e_target clientfield::increment("" + #"charon_zombie_impact");
         e_target ai::stun(3);
         wait 0.8;
         if (isdefined(e_target)) {
-            e_target thread namespace_9ff9f642::slowdown(#"hash_583272dc38f3f8a8");
+            e_target thread namespace_9ff9f642::slowdown(#"charon_slowdown_time");
         }
         wait 0.7;
         if (isdefined(e_target)) {
-            e_target thread namespace_9ff9f642::slowdown(#"hash_60f12378572cf8e");
+            e_target thread namespace_9ff9f642::slowdown(#"charon_dissolve_time");
         }
         wait 1;
         if (isalive(e_target)) {
@@ -826,11 +826,11 @@ function function_197896ad(e_target, n_damage) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x985a40b, Offset: 0x3758
 // Size: 0x144
-function function_2a67ef83(e_target, n_damage) {
+function charon_slow(e_target, n_damage) {
     self endon(#"death");
     e_target endon(#"death");
     e_target.var_317b8f00 = 1;
-    e_target thread namespace_9ff9f642::slowdown(#"hash_583272dc38f3f8a8");
+    e_target thread namespace_9ff9f642::slowdown(#"charon_slowdown_time");
     while (isdefined(self.var_b1224954) && isdefined(e_target.var_317b8f00) && e_target.var_317b8f00) {
         e_target dodamage(n_damage, e_target.origin, self, self, "none", "MOD_UNKNOWN", 0, level.w_hand_charon);
         if (randomint(6) == 0) {
@@ -838,7 +838,7 @@ function function_2a67ef83(e_target, n_damage) {
         }
         wait 2;
     }
-    e_target thread namespace_9ff9f642::function_520f4da5(#"hash_583272dc38f3f8a8");
+    e_target thread namespace_9ff9f642::function_520f4da5(#"charon_slowdown_time");
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon

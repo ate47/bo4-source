@@ -329,9 +329,9 @@ function function_5a1bf101(localclientnum) {
             if (!isdefined(var_6c8b920a[ti])) {
                 var_6c8b920a[ti] = now - 100 - 10;
             }
-            var_4759b4d3 = project3dto2d(localclientnum, target_player.origin);
+            screen_origin = project3dto2d(localclientnum, target_player.origin);
             var_20a99afd = project3dto2d(localclientnum, target_player.origin + (0, 0, 60));
-            screen_height = distance2d(var_4759b4d3, var_20a99afd);
+            screen_height = distance2d(screen_origin, var_20a99afd);
             var_fcd926d5 = var_59d4144b * screen_height / 60;
             var_fcd926d5 = math::clamp(var_fcd926d5, var_e7c561e2, var_98977cea);
             setuimodelvalue(var_1f3cc5f9[ti], var_fcd926d5);

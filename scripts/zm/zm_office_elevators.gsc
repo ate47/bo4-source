@@ -1067,7 +1067,7 @@ function function_dec13a5b() {
 // Checksum 0x53c5db9, Offset: 0x5cf8
 // Size: 0xd0
 function private function_da48c149(s_pos) {
-    var_75c89236 = 0;
+    n_attempts = 0;
     self dontinterpolate();
     self setorigin(s_pos.origin);
     do {
@@ -1076,8 +1076,8 @@ function private function_da48c149(s_pos) {
             self dontinterpolate();
             self setorigin(s_pos.origin);
         }
-        var_75c89236++;
-    } while (var_75c89236 < 5);
+        n_attempts++;
+    } while (n_attempts < 5);
 }
 
 // Namespace zm_office_elevators/zm_office_elevators

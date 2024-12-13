@@ -515,8 +515,8 @@ function function_6650cc9c(missile, bundle, var_2f984f68) {
         if (var_38fa5914) {
             ac130 playsoundtoplayer(var_2f984f68, ac130.owner);
         }
-        var_6ce65309 = (dist - neardist) / range;
-        beep_interval = lerpfloat(var_6f2344f0, var_cd12ce4c, var_6ce65309);
+        normalizeddist = (dist - neardist) / range;
+        beep_interval = lerpfloat(var_6f2344f0, var_cd12ce4c, normalizeddist);
         wait beep_interval;
     }
 }

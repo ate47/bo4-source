@@ -63,10 +63,10 @@ function function_81d670f5() {
 // Params 5, eflags: 0x4
 // Checksum 0x7eb137bd, Offset: 0x2e0
 // Size: 0x88
-function private function_b8e20f5f(transition, outcome, var_f6e1baec, var_b6818fc8, func) {
-    if (isdefined(var_f6e1baec) && var_f6e1baec) {
-        if ((isdefined(var_b6818fc8) ? var_b6818fc8 : 0) != 0) {
-            wait float(var_b6818fc8) / 1000;
+function private function_b8e20f5f(transition, outcome, feature_enabled, feature_time, func) {
+    if (isdefined(feature_enabled) && feature_enabled) {
+        if ((isdefined(feature_time) ? feature_time : 0) != 0) {
+            wait float(feature_time) / 1000;
         }
         [[ func ]](transition, outcome);
     }
@@ -481,9 +481,9 @@ function private function_e17d407e(transition, outcome) {
 // Params 3, eflags: 0x0
 // Checksum 0xe7877507, Offset: 0x1808
 // Size: 0x9c
-function function_b3214a0a(transition, outcome, var_61f85cf) {
-    if (isdefined(var_61f85cf)) {
-        if (var_61f85cf.type == "play_of_the_match") {
+function function_b3214a0a(transition, outcome, next_transition) {
+    if (isdefined(next_transition)) {
+        if (next_transition.type == "play_of_the_match") {
             level waittill(#"hash_4ead2cd3fa59f29b");
         }
         var_5a552ef6 = struct::get("team_pose_cam", "targetname");
@@ -512,8 +512,8 @@ function function_7e74281() {
 // Params 2, eflags: 0x0
 // Checksum 0xabedec03, Offset: 0x1aa0
 // Size: 0x34
-function function_b797319e(transition_type, var_e6825eda) {
-    self luinotifyevent(transition_type, 1, var_e6825eda);
+function function_b797319e(transition_type, transition_index) {
+    self luinotifyevent(transition_type, 1, transition_index);
 }
 
 // Namespace display_transition/display_transition
@@ -538,9 +538,9 @@ function function_d7b5082e() {
 // Params 4, eflags: 0x0
 // Checksum 0x9bf6efdd, Offset: 0x1b78
 // Size: 0x8e
-function display_transition(transition, var_e6825eda, outcome, lui_event) {
+function display_transition(transition, transition_index, outcome, lui_event) {
     level thread globallogic::sndsetmatchsnapshot(2);
-    player::function_e7f18b20(&function_b797319e, lui_event, var_e6825eda + 1);
+    player::function_e7f18b20(&function_b797319e, lui_event, transition_index + 1);
     [[ level.var_3a309902[transition.type] ]](transition, outcome);
 }
 
@@ -548,9 +548,9 @@ function display_transition(transition, var_e6825eda, outcome, lui_event) {
 // Params 3, eflags: 0x0
 // Checksum 0x6dbf3fd4, Offset: 0x1c10
 // Size: 0x62
-function function_f2ffece2(transition, outcome, var_61f85cf) {
+function shutdown_transition(transition, outcome, next_transition) {
     if (isdefined(level.var_5d720398[transition.type])) {
-        level thread [[ level.var_5d720398[transition.type] ]](transition, outcome, var_61f85cf);
+        level thread [[ level.var_5d720398[transition.type] ]](transition, outcome, next_transition);
     }
 }
 
@@ -605,7 +605,7 @@ function function_40a46b5b(transition, outcome) {
         }
     }
     if (transition.type == "outcome") {
-        if (isdefined(level.var_67a68459) && level.var_67a68459) {
+        if (isdefined(level.skip_outcome) && level.skip_outcome) {
             return true;
         }
     }
@@ -626,7 +626,7 @@ function function_7e8f8c47(transitions, outcome, lui_event) {
         if ((isdefined(transition.time) ? transition.time : 0) != 0) {
             round_end_wait(float(transition.time) / 1000);
         }
-        function_f2ffece2(transition, outcome, transitions[index + 1]);
+        shutdown_transition(transition, outcome, transitions[index + 1]);
     }
     clear_transition();
 }

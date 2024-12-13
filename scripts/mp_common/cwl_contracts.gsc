@@ -272,8 +272,8 @@ function function_a4c8ce2a(data) {
     player increment_cwl_contract(#"contract_wl_play_games");
     team = player.team;
     if (isdefined(level.placement[team]) && player.score > 0) {
-        var_414a209b = min(level.placement.size, 3);
-        for (i = 0; i < var_414a209b; i++) {
+        last_check = min(level.placement.size, 3);
+        for (i = 0; i < last_check; i++) {
             if (level.placement[team][i] == player) {
                 player increment_contract(#"contract_wl_top_3_team");
                 break;

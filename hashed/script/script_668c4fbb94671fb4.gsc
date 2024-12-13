@@ -239,7 +239,7 @@ function private function_486ef0f6() {
             var_aa11c23c clientfield::set("" + #"hash_632f7bc0b1a15f71", 2);
             exploder::exploder(var_81c75ce3);
             foreach (e_player in util::get_active_players()) {
-                e_player clientfield::increment_to_player("" + #"hash_55539d0cf92a8855");
+                e_player clientfield::increment_to_player("" + #"hero_katana_vigor_postfx");
                 e_player playrumbleonentity("damage_heavy");
             }
         } else {
@@ -788,8 +788,8 @@ function private function_bfe4e5a9(var_5faf08a9, n_entry) {
             if (!isdefined(self) || !(isdefined(self.var_da61dab6) && self.var_da61dab6)) {
                 return false;
             }
-            var_f661e07a = gettime();
-            n_total_time = (var_f661e07a - n_start_time) / 1000;
+            offset_con = gettime();
+            n_total_time = (offset_con - n_start_time) / 1000;
             if (n_total_time <= 1.25) {
                 var_751473a9 = #"code_dot";
             } else {
@@ -1948,7 +1948,7 @@ function private function_b80b6749() {
             iprintlnbold("<dev string:xe1>");
         #/
         foreach (e_player in util::get_active_players()) {
-            e_player clientfield::increment_to_player("" + #"hash_55539d0cf92a8855");
+            e_player clientfield::increment_to_player("" + #"hero_katana_vigor_postfx");
             e_player playsoundtoplayer(#"hash_3f03a6b2d8cfc1b9", e_player);
         }
         if (isdefined(level.var_9d950ce5.t_interact)) {
@@ -2069,8 +2069,8 @@ function private function_33701563() {
     callback::on_ai_killed(&function_c8d4b885);
     level.var_b1060d52 = 0;
     while (true) {
-        var_45143585 = array::random(var_64aaa12a);
-        var_81de1755 = util::spawn_model("tag_origin", var_45143585.origin, var_45143585.angles);
+        inventory_picku = array::random(var_64aaa12a);
+        var_81de1755 = util::spawn_model("tag_origin", inventory_picku.origin, inventory_picku.angles);
         self thread function_6bb299fa();
         self thread function_613cf0a7(var_81de1755);
         var_d61ccd7e = randomfloatrange(16, 29);

@@ -32,11 +32,11 @@ class class_727456f3 {
     function function_6ff61192(var_c0a091bc) {
         if (!self flag::get("elevator_moving")) {
             if (m_s_bundle.var_46d9acb0 == "auto_up" || m_s_bundle.var_46d9acb0 == "auto_down") {
-                function_f81a904b(var_c0a091bc);
+                moving_down(var_c0a091bc);
                 return;
             }
             if (var_de7ae77 > 1) {
-                function_f81a904b(var_c0a091bc);
+                moving_down(var_c0a091bc);
             }
         }
     }
@@ -48,11 +48,11 @@ class class_727456f3 {
     function function_69474136(var_c0a091bc) {
         if (!self flag::get("elevator_moving")) {
             if (m_s_bundle.var_46d9acb0 == "auto_up" || m_s_bundle.var_46d9acb0 == "auto_down") {
-                function_b6d6d989(var_c0a091bc);
+                moving_up(var_c0a091bc);
                 return;
             }
             if (var_de7ae77 < m_s_bundle.var_72b13147) {
-                function_b6d6d989(var_c0a091bc);
+                moving_up(var_c0a091bc);
             }
         }
     }
@@ -61,7 +61,7 @@ class class_727456f3 {
     // Params 2, eflags: 0x0
     // Checksum 0xe44342d0, Offset: 0x2960
     // Size: 0x4c4
-    function function_f81a904b(var_c0a091bc, var_d4d7abd5) {
+    function moving_down(var_c0a091bc, var_d4d7abd5) {
         self flag::set("elevator_moving");
         if (isdefined(var_10b20309) && isdefined(var_10b20309.mdl_gameobject.b_enabled) && var_10b20309.mdl_gameobject.b_enabled) {
             var_10b20309 gameobjects::disable_object();
@@ -126,7 +126,7 @@ class class_727456f3 {
     // Params 2, eflags: 0x0
     // Checksum 0xd0a1b604, Offset: 0x2498
     // Size: 0x4bc
-    function function_b6d6d989(var_c0a091bc, var_d4d7abd5) {
+    function moving_up(var_c0a091bc, var_d4d7abd5) {
         self flag::set("elevator_moving");
         if (isdefined(var_10b20309) && isdefined(var_10b20309.mdl_gameobject.b_enabled) && var_10b20309.mdl_gameobject.b_enabled) {
             var_10b20309 gameobjects::disable_object();

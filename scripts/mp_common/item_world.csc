@@ -1385,7 +1385,7 @@ function private function_eb396946(localclientnum) {
         if (!isdefined(var_f4b807cb) || !var_f4b807cb.size) {
             return;
         }
-        var_1988b305 = [];
+        nearbyweapons = [];
         var_d61d8afa = [];
         for (index = 0; index < var_f4b807cb.size; index++) {
             item = var_f4b807cb[index];
@@ -1399,21 +1399,21 @@ function private function_eb396946(localclientnum) {
                         weaponoptions = self getbuildkitweaponoptions(localclientnum, camoweapon);
                         streamweapon = item.weapon;
                         forcestreamweaponrenderoptions(localclientnum, streamweapon, weaponoptions);
-                        var_1988b305[streamweapon] = weaponoptions;
+                        nearbyweapons[streamweapon] = weaponoptions;
                     } else if (isdefined(item.itementry.weapon) && item.itementry.weapon != level.weaponnone) {
                         camoweapon = activecamo::function_385ef18d(item.itementry.weapon);
                         weaponoptions = self getbuildkitweaponoptions(localclientnum, camoweapon);
                         streamweapon = item_inventory_util::function_2b83d3ff(item);
                         forcestreamweaponrenderoptions(localclientnum, streamweapon, weaponoptions);
-                        var_1988b305[streamweapon] = weaponoptions;
+                        nearbyweapons[streamweapon] = weaponoptions;
                     }
                     continue;
                 }
                 if (item.itementry.itemtype == #"attachment") {
                     if (isdefined(item.itementry.attachments)) {
                         foreach (attachment in item.itementry.attachments) {
-                            if (isdefined(attachment.var_6be1bec7)) {
-                                var_d61d8afa[attachment.var_6be1bec7] = attachment.var_6be1bec7;
+                            if (isdefined(attachment.attachment_type)) {
+                                var_d61d8afa[attachment.attachment_type] = attachment.attachment_type;
                             }
                         }
                     }
@@ -1431,16 +1431,16 @@ function private function_eb396946(localclientnum) {
                     }
                 }
             }
-            if (var_1988b305.size) {
+            if (nearbyweapons.size) {
                 var_1bf1ce1 = getweaponattachments(currentweapon);
                 if (isdefined(var_1bf1ce1) && var_1bf1ce1.size) {
-                    foreach (key, weaponoptions in var_1988b305) {
-                        var_37eedd1 = weapon(key);
-                        if (var_37eedd1.rootweapon != currentweapon.rootweapon) {
+                    foreach (key, weaponoptions in nearbyweapons) {
+                        nearbyweapon = weapon(key);
+                        if (nearbyweapon.rootweapon != currentweapon.rootweapon) {
                             foreach (attachment in var_1bf1ce1) {
-                                if (attachment !== "null" && !weaponhasattachment(var_37eedd1, attachment)) {
-                                    streamweapon = getweapon(var_37eedd1.name, attachment);
-                                    if (isdefined(streamweapon) && streamweapon != var_37eedd1 && weaponhasattachment(streamweapon, attachment)) {
+                                if (attachment !== "null" && !weaponhasattachment(nearbyweapon, attachment)) {
+                                    streamweapon = getweapon(nearbyweapon.name, attachment);
+                                    if (isdefined(streamweapon) && streamweapon != nearbyweapon && weaponhasattachment(streamweapon, attachment)) {
                                         forcestreamweaponrenderoptions(localclientnum, streamweapon, weaponoptions);
                                     }
                                 }

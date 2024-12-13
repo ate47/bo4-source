@@ -88,19 +88,19 @@ function init() {
     clientfield::register("allplayers", "" + #"hash_11e36d278c735869", 16000, 1, "int");
     clientfield::register("allplayers", "" + #"hash_e683dccc6a8e152", 16000, 1, "int");
     clientfield::register("scriptmover", "" + #"hash_5208f90a0114c9e", 16000, var_5f0c1df8, "int");
-    clientfield::register("scriptmover", "" + #"hash_2c52721cfd82bab2", 16000, 1, "int");
+    clientfield::register("scriptmover", "" + #"charon_portal_fx", 16000, 1, "int");
     clientfield::register("toplayer", "" + #"hash_e2692f239454272", 16000, 1, "int");
-    clientfield::register("allplayers", "" + #"hash_27e137de4035c3b3", 16000, 1, "int");
-    clientfield::register("allplayers", "" + #"hash_3a38a1d1eda0d02f", 16000, 1, "int");
-    clientfield::register("allplayers", "" + #"hash_720392b899f6e8f8", 16000, 1, "int");
-    clientfield::register("allplayers", "" + #"hash_6d443dd8ae685236", 16000, 1, "int");
+    clientfield::register("allplayers", "" + #"charon_teleport_postfx", 16000, 1, "int");
+    clientfield::register("allplayers", "" + #"ouranos_teleport_postfx", 16000, 1, "int");
+    clientfield::register("allplayers", "" + #"gaia_teleport_postfx", 16000, 1, "int");
+    clientfield::register("allplayers", "" + #"hemera_teleport_postfx", 16000, 1, "int");
     clientfield::register("scriptmover", "" + #"hash_23ba81a7c071845d", 16000, 1, "int");
-    clientfield::register("scriptmover", "" + #"hash_194ece8e9166daad", 16000, 1, "int");
-    clientfield::register("scriptmover", "" + #"hash_5d3f9aab20abf568", 16000, getminbitcountfornum(3), "int");
+    clientfield::register("scriptmover", "" + #"gaia_portal_fx", 16000, 1, "int");
+    clientfield::register("scriptmover", "" + #"gaia_sprout_fx", 16000, getminbitcountfornum(3), "int");
     clientfield::register("scriptmover", "" + #"hash_3c85334429a971b4", 16000, 1, "int");
     clientfield::register("scriptmover", "" + #"ouranos_feather_hit_fx", 16000, 1, "counter");
-    clientfield::register("scriptmover", "" + #"hash_3a6cd708b9ee114c", 16000, 1, "int");
-    clientfield::register("scriptmover", "" + #"hash_3e1feb871865ccd5", 16000, 1, "int");
+    clientfield::register("scriptmover", "" + #"gaia_chaos_glow", 16000, 1, "int");
+    clientfield::register("scriptmover", "" + #"gaia_chaos_destroy", 16000, 1, "int");
     clientfield::register("actor", "" + #"ww_combat_fx", 16000, getminbitcountfornum(4), "int");
     zm_sq_modules::function_d8383812(#"ww_sc_earth", 16000, "ww_sc_g", &is_soul_capture, &soul_captured, 1);
     zm_sq_modules::function_d8383812(#"ww_sc_death", 16000, "ww_sc_c", &is_soul_capture, &soul_captured, 1);
@@ -551,7 +551,7 @@ function function_809767d(str_hand) {
         w_uncharged_hand = getweapon(#"ww_hand_h_uncharged");
         w_charged_hand = getweapon(#"ww_hand_h");
         s_quest.var_e5b61ee5 = getweapon(#"ww_hand_h_upgraded");
-        var_f172b16e = "" + #"hash_6d443dd8ae685236";
+        var_f172b16e = "" + #"hemera_teleport_postfx";
         s_quest.var_ea3032ca = "" + #"hash_1d886dddf28e80bc";
         var_a1327d58 = struct::get(#"s_ww_quests_light_box_interact");
         var_c476e1d9 = zm_utility::function_d6046228(#"hash_7bd41ec2e270824f", #"hash_6a0d5c52cd36b8ed");
@@ -579,7 +579,7 @@ function function_809767d(str_hand) {
         var_9bd3a2c6 = #"hash_44fcebf63da155c5";
         var_deb1f081 = #"hash_27fa9f75dc30dadd";
         var_39ceadb3 = #"hash_7ce546dbf9ee19dc";
-        var_a04ebe57 = "" + #"hash_2c52721cfd82bab2";
+        var_a04ebe57 = "" + #"charon_portal_fx";
         var_d39cfea7 = 1;
         s_quest.var_99aa2e37 = #"p8_fxanim_zm_red_ww_hand_charon_bundle";
         s_quest.var_7c6b53db = #"hash_1bf02c1e1384b7f3";
@@ -591,7 +591,7 @@ function function_809767d(str_hand) {
         s_quest.var_f72f5053 = #"hash_4978eae5057be225";
         s_quest.var_723cad8 = #"hash_1591f1fedee3d78d";
         mdl_uncharged_hand = getent("mdl_ww_uncharged_hand_death", "targetname");
-        var_f172b16e = "" + #"hash_27e137de4035c3b3";
+        var_f172b16e = "" + #"charon_teleport_postfx";
         s_quest.var_ea3032ca = "" + #"hash_7fb27e0252c756b";
         w_uncharged_hand = getweapon(#"ww_hand_c_uncharged");
         w_charged_hand = getweapon(#"ww_hand_c");
@@ -636,7 +636,7 @@ function function_809767d(str_hand) {
         s_quest.var_f72f5053 = #"hash_3195703b0c9c24b9";
         s_quest.var_723cad8 = #"hash_4446b28dae6b9f51";
         mdl_uncharged_hand = getent("mdl_ww_uncharged_hand_air", "targetname");
-        var_f172b16e = "" + #"hash_3a38a1d1eda0d02f";
+        var_f172b16e = "" + #"ouranos_teleport_postfx";
         s_quest.var_ea3032ca = "" + #"hash_1cdf2252d9f82767";
         w_uncharged_hand = getweapon(#"ww_hand_o_uncharged");
         w_charged_hand = getweapon(#"ww_hand_o");
@@ -676,7 +676,7 @@ function function_809767d(str_hand) {
         s_quest.var_f72f5053 = #"hash_207a52f6165120c8";
         s_quest.var_723cad8 = #"hash_5fa27320c347d3fa";
         mdl_uncharged_hand = getent("mdl_ww_uncharged_hand_earth", "targetname");
-        var_f172b16e = "" + #"hash_720392b899f6e8f8";
+        var_f172b16e = "" + #"gaia_teleport_postfx";
         s_quest.var_ea3032ca = "" + #"hash_4195d99bef577e46";
         w_uncharged_hand = getweapon(#"ww_hand_g_uncharged");
         w_charged_hand = getweapon(#"ww_hand_g");
@@ -2884,7 +2884,7 @@ function function_ca04e287(e_player) {
 function function_68080923(var_52666e80, mdl_tree) {
     level endon(#"end_game");
     level flag::wait_till("all_players_spawned");
-    self clientfield::set("" + #"hash_3a6cd708b9ee114c", 1);
+    self clientfield::set("" + #"gaia_chaos_glow", 1);
     zm_weap_hand_gaia::function_25513188(self);
     while (true) {
         s_result = level waittill(#"ww_gaia_hit");
@@ -2962,7 +2962,7 @@ function function_1775f520() {
     do {
         var_223e908d = util::spawn_model("tag_origin", self gettagorigin(str_tag), self gettagangles(str_tag));
     } while (!isdefined(var_223e908d));
-    var_223e908d clientfield::set("" + #"hash_3e1feb871865ccd5", 1);
+    var_223e908d clientfield::set("" + #"gaia_chaos_destroy", 1);
     wait 2;
     self delete();
     var_223e908d delete();
@@ -3138,7 +3138,7 @@ function function_1c5aedd8(e_player) {
         e_player takeweapon(level.w_sprout);
         level.var_643e7b15 showpart(s_quest.var_648b1679[s_quest.var_8baa00ae], "", 1);
         s_quest.var_8baa00ae++;
-        level.var_643e7b15 clientfield::set("" + #"hash_5d3f9aab20abf568", s_quest.var_8baa00ae);
+        level.var_643e7b15 clientfield::set("" + #"gaia_sprout_fx", s_quest.var_8baa00ae);
         if (s_quest.var_8baa00ae >= 3) {
             e_player thread zm_vo::vo_say(#"hash_825b37a44371712", 0.5, 1, 9999, 1, 1);
             s_quest thread function_4e2445e0();
@@ -3469,7 +3469,7 @@ function function_aea7779d(e_player) {
         } else if (isdefined(self.var_83a4152c)) {
             exploder::exploder(self.var_83a4152c);
         } else if (isdefined(self.mdl_return_portal)) {
-            self.mdl_return_portal clientfield::set("" + #"hash_194ece8e9166daad", 1);
+            self.mdl_return_portal clientfield::set("" + #"gaia_portal_fx", 1);
         }
         wait 4;
         self thread function_530d7ea0(1);
@@ -3758,15 +3758,15 @@ function function_2d281542(var_bcf66490) {
     self.mdl_portal endon(#"death");
     if (isdefined(var_bcf66490) && var_bcf66490) {
         wait 1.5;
-        level.var_643e7b15 clientfield::set("" + #"hash_5d3f9aab20abf568", 0);
+        level.var_643e7b15 clientfield::set("" + #"gaia_sprout_fx", 0);
         level thread scene::play("p8_fxanim_zm_red_gaia_portal_bundle", "grow");
         level waittill(#"hash_3d66510793795cd4");
-        self.mdl_portal clientfield::set("" + #"hash_194ece8e9166daad", var_bcf66490);
+        self.mdl_portal clientfield::set("" + #"gaia_portal_fx", var_bcf66490);
         return;
     }
     if (self.var_a1327d58 flag::get(#"hash_582906087b67b7c6")) {
         level thread scene::play("p8_fxanim_zm_red_gaia_portal_bundle", "retreat");
-        self.mdl_portal clientfield::set("" + #"hash_194ece8e9166daad", var_bcf66490);
+        self.mdl_portal clientfield::set("" + #"gaia_portal_fx", var_bcf66490);
     }
 }
 
@@ -4135,7 +4135,7 @@ function pack_portal_fx(s_pap_interact) {
         exploder::exploder(self.var_4d50be8e);
         playsoundatposition(#"hash_2545ab11d0e8966a", s_pap_interact.origin);
     } else if (isdefined(self.var_285af63c)) {
-        self.var_285af63c clientfield::set("" + #"hash_194ece8e9166daad", 1);
+        self.var_285af63c clientfield::set("" + #"gaia_portal_fx", 1);
     }
     wait 2;
     if (isdefined(self.var_a12d09a2)) {
@@ -4152,7 +4152,7 @@ function pack_portal_fx(s_pap_interact) {
         return;
     }
     if (isdefined(self.var_285af63c)) {
-        self.var_285af63c clientfield::set("" + #"hash_194ece8e9166daad", 0);
+        self.var_285af63c clientfield::set("" + #"gaia_portal_fx", 0);
     }
 }
 
@@ -4397,8 +4397,8 @@ function function_f2081007(e_player, s_pap_interact) {
             exploder::exploder(self.var_83a4152c);
             playsoundatposition(#"hash_2545ab11d0e8966a", s_pap_interact.origin);
         } else if (isdefined(self.mdl_return_portal)) {
-            self.mdl_return_portal clientfield::set("" + #"hash_194ece8e9166daad", 1);
-            self.var_285af63c clientfield::set("" + #"hash_194ece8e9166daad", 1);
+            self.mdl_return_portal clientfield::set("" + #"gaia_portal_fx", 1);
+            self.var_285af63c clientfield::set("" + #"gaia_portal_fx", 1);
         }
         wait 3;
         if (isdefined(self.var_f172b16e)) {
@@ -4452,8 +4452,8 @@ function function_f2081007(e_player, s_pap_interact) {
         return;
     }
     if (isdefined(self.mdl_return_portal)) {
-        self.mdl_return_portal clientfield::set("" + #"hash_194ece8e9166daad", 0);
-        self.var_285af63c clientfield::set("" + #"hash_194ece8e9166daad", 0);
+        self.mdl_return_portal clientfield::set("" + #"gaia_portal_fx", 0);
+        self.var_285af63c clientfield::set("" + #"gaia_portal_fx", 0);
     }
 }
 
@@ -4580,7 +4580,7 @@ function function_8d47bf8(e_player) {
     } else if (isdefined(self.var_83a4152c)) {
         exploder::stop_exploder(self.var_83a4152c);
     } else if (isdefined(self.mdl_return_portal)) {
-        self.mdl_return_portal clientfield::set("" + #"hash_194ece8e9166daad", 0);
+        self.mdl_return_portal clientfield::set("" + #"gaia_portal_fx", 0);
     }
     if (isdefined(self.var_f172b16e)) {
         e_player clientfield::set(self.var_f172b16e, 0);

@@ -96,10 +96,10 @@ function function_eaa4e6f7() {
 // Params 1, eflags: 0x0
 // Checksum 0x6f8805e5, Offset: 0x718
 // Size: 0x48
-function function_61f303f5(var_7da9f0c) {
+function function_61f303f5(game_length) {
     totaltimeplayed = self.timeplayed[#"total"];
-    if (totaltimeplayed > var_7da9f0c) {
-        totaltimeplayed = var_7da9f0c;
+    if (totaltimeplayed > game_length) {
+        totaltimeplayed = game_length;
     }
     return totaltimeplayed;
 }
@@ -122,10 +122,10 @@ function function_c9de50a6(player) {
 // Params 3, eflags: 0x0
 // Checksum 0xaa750aa0, Offset: 0x800
 // Size: 0xca
-function function_78e7b549(scale, type, var_7da9f0c) {
-    total_time_played = self function_61f303f5(var_7da9f0c);
+function function_78e7b549(scale, type, game_length) {
+    total_time_played = self function_61f303f5(game_length);
     spm = self rank::getspm();
-    playerscore = int(scale * var_7da9f0c / 60 * spm * total_time_played / var_7da9f0c);
+    playerscore = int(scale * game_length / 60 * spm * total_time_played / game_length);
     self thread givematchbonus(type, playerscore);
     self.matchbonus = playerscore;
 }

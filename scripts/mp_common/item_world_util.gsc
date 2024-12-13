@@ -229,8 +229,8 @@ function function_970b8d86(player, slotid, attachmentoffset = undefined) {
     assert(slotid >= 0 && slotid < 16 + 1 + 6 + 1 + 6 + 1);
     entnum = player getentitynumber();
     assert(entnum < 115);
-    var_f5e3c230 = entnum * (16 + 1 + 6 + 1 + 6 + 1) + slotid;
-    networkid = var_f5e3c230 + level.var_b52c46a6;
+    numoffset = entnum * (16 + 1 + 6 + 1 + 6 + 1) + slotid;
+    networkid = numoffset + level.var_b52c46a6;
     assert(networkid >= level.var_b52c46a6 && networkid <= level.var_c1fb34bd);
     return networkid;
 }
@@ -500,16 +500,16 @@ function function_35e06774(itementry, var_48cfb6ca = 0) {
     if (isdefined(itementry) && isdefined(itementry.weapon) && (isarray(itementry.attachments) || var_48cfb6ca)) {
         attachments = [];
         foreach (attachment in itementry.attachments) {
-            attachments[attachments.size] = attachment.var_6be1bec7;
+            attachments[attachments.size] = attachment.attachment_type;
         }
         if (var_48cfb6ca) {
             foreach (attachment in itementry.attachments) {
-                var_fe35755b = getscriptbundle(attachment.var_6be1bec7);
+                var_fe35755b = getscriptbundle(attachment.attachment_type);
                 if (!isdefined(var_fe35755b) || var_fe35755b.type != #"itemspawnentry" || !isarray(var_fe35755b.attachments)) {
                     continue;
                 }
                 foreach (var_a4559ed2 in var_fe35755b.attachments) {
-                    attachments[attachments.size] = var_a4559ed2.var_6be1bec7;
+                    attachments[attachments.size] = var_a4559ed2.attachment_type;
                 }
             }
         }

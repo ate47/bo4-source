@@ -27,7 +27,7 @@
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
     "sound820": "#hash_5ee962527afebfb1",
-    "hitsound": "#hash_6fa5ee734709aeac",
+    "hitsound": "#mpl_hit_alert_shockrifle",
     "customsettings": "#shock_rifle_custom_settings",
     "var_2e4a8800": "#hero_lightninggun_scoreevents",
     "var_8456d4d": "#damageeffecttype_electrical",

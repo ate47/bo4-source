@@ -4,8 +4,8 @@
 // Params 8, eflags: 0x0
 // Checksum 0x4e4a54c7, Offset: 0x68
 // Size: 0xd6
-function function_e9b061a8(state, start, update_goal, end, update_enemy, var_edc20efd, var_ff716a93, update_debug) {
-    level.extra_screen_electricity_.functions[state] = {#start:start, #update_goal:update_goal, #end:end, #update_enemy:update_enemy, #var_edc20efd:var_edc20efd, #var_ff716a93:var_ff716a93, #update_debug:update_debug};
+function function_e9b061a8(state, start, update_goal, end, update_enemy, var_edc20efd, attack_origin, update_debug) {
+    level.extra_screen_electricity_.functions[state] = {#start:start, #update_goal:update_goal, #end:end, #update_enemy:update_enemy, #var_edc20efd:var_edc20efd, #attack_origin:attack_origin, #update_debug:update_debug};
 }
 
 // Namespace ai_state/state
@@ -64,8 +64,8 @@ function function_4af1ff64() {
 // Checksum 0x7a3c12d2, Offset: 0x3d0
 // Size: 0x7a
 function function_a78474f2() {
-    if (isdefined(self.ai.state) && isdefined(level.extra_screen_electricity_.functions[self.ai.state].var_ff716a93)) {
-        return self [[ level.extra_screen_electricity_.functions[self.ai.state].var_ff716a93 ]]();
+    if (isdefined(self.ai.state) && isdefined(level.extra_screen_electricity_.functions[self.ai.state].attack_origin)) {
+        return self [[ level.extra_screen_electricity_.functions[self.ai.state].attack_origin ]]();
     }
     return undefined;
 }

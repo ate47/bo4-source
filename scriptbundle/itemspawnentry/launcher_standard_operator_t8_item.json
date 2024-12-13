@@ -1,13 +1,13 @@
 {
     "attachments": [
         {
-            "var_6be1bec7": "fastlockon"
+            "attachment_type": "fastlockon"
         },
         {
-            "var_6be1bec7": "damage_launcher"
+            "attachment_type": "damage_launcher"
         },
         {
-            "var_6be1bec7": "fastreload"
+            "attachment_type": "fastreload"
         }
     ],
     "amount": 1,

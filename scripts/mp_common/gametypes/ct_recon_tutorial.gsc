@@ -278,7 +278,7 @@ function function_86c058b() {
     level notify(#"start_execution_collision");
     level notify(#"start_execution_exit_collision");
     e_player thread ct_utils::function_61c3d59c(#"hash_76d83574c8576dcd", undefined);
-    level.var_54c1ce00 = level.var_32ae304;
+    level.temp_disable = level.var_32ae304;
     level.var_32ae304 = undefined;
     wait 3.5;
     level notify(#"hash_60c1587995518e92");
@@ -287,7 +287,7 @@ function function_86c058b() {
     ct_vo::function_831e0584(array(#"hash_76712094e9fc348d"), 1);
     ct_utils::function_d00e0eeb();
     ct_utils::function_c2a10fc();
-    level.var_32ae304 = level.var_54c1ce00;
+    level.var_32ae304 = level.temp_disable;
     e_player = getplayers()[0];
     e_player ct_bots::function_26d45f32(1, 1, 1);
     level notify(#"hash_15f7db94fb4253cf");

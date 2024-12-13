@@ -1369,7 +1369,7 @@ function function_2560f130() {
         base_damage = weapon.damagevalues[0];
         var_a41a6d87 = weapon.var_bbc8dbc;
         var_97ed9e7a = weapon.var_f06a2fee;
-        var_b62fd725 = weapon.var_a1252254;
+        var_b62fd725 = weapon.mass;
         var_c587700f = var_a41a6d87 / 2 * var_a41a6d87 / 2 * 3.14159 * 1e-06;
         vel = var_71c007dd * var_44345100;
         thread function_61e22785(tracepoint, distance * 39.3701, int(base_damage), (0, 1, 0));
@@ -1492,7 +1492,7 @@ function function_2560f130() {
                     info = spawn::function_f468d9a5(spawn);
                     player setorigin(info.origin);
                     player setplayerangles(info.angles);
-                    player function_2ffa8aaf(1, info.freefall, 0);
+                    player forcefreefall(1, info.freefall, 0);
                 }
                 waitframe(1);
             }

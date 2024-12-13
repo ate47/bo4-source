@@ -685,7 +685,7 @@ function function_5425f45d() {
         foreach (lucky in var_269add6e) {
             spawn_point = rotatepoint((radius, 0, 0), (0, randomint(360), 0));
             lucky setorigin(center + spawn_point + (0, 0, 20000));
-            lucky function_2ffa8aaf(1, (0, 0, 0), 0);
+            lucky forcefreefall(1, (0, 0, 0), 0);
         }
     }
 

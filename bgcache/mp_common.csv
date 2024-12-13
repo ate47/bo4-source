@@ -1581,7 +1581,7 @@ weapon,hash_448f6079cfbf6729,294cdb5e648
 weapon,hash_44b7ccdf19718604,294cdb85058
 weapon,sig_minigun_turret_44_mp,294cdc6f758
 weapon,sig_buckler_dw_mp,294cdbf3948
-weapon,hash_4659dbcc6045ca33,294cdbae508
+weapon,ultimate_turret_deploy_mp,294cdbae508
 weapon,hash_477c40f927d54900,294cdb49148
 weapon,hash_4a0bbd17ff6d500a,294cdba7a78
 weapon,hash_4a84280717235fae,294cdc20de8
@@ -9382,7 +9382,7 @@ soundalias,hash_363a41628ea3ad2,0
 soundalias,hash_36561504ed2c0af,0
 soundalias,hash_366de4267332239,0
 soundalias,hash_368b8f6de996cf7,0
-soundalias,hash_36ba64ff67209d0,0
+soundalias,prj_bullet_impact_dist_dirt,0
 soundalias,hash_36c2f081fbb1941,0
 soundalias,hash_36cb59b8d58a6e8,0
 soundalias,hash_36ee965c12c945f,0
@@ -9506,7 +9506,7 @@ soundalias,hash_43b871a2bd04d97,0
 soundalias,hash_43b99d61951e180,0
 soundalias,hash_43e449fb92e59b3,0
 soundalias,hash_43eca068008afe4,0
-soundalias,hash_4416323ec17dfaf,0
+soundalias,prj_bullet_impact_player_by,0
 soundalias,hash_4419c3fdd130542,0
 soundalias,hash_442404337d2da44,0
 soundalias,hash_443785451ec9871,0
@@ -9573,7 +9573,7 @@ soundalias,hash_4ae4e83e6f9f614,0
 soundalias,hash_4b19e77f9496803,0
 soundalias,pfx_t8_spark_med,0
 soundalias,hash_4b3c715f74cbe14,0
-soundalias,hash_4b3ed0465444285,0
+soundalias,prj_bullet_impact_piano,0
 soundalias,hash_4b4c5bbff1e336d,0
 soundalias,hash_4b5a740671f8de9,0
 soundalias,hash_4b64903b8409564,0
@@ -9904,7 +9904,7 @@ soundalias,hash_6d51a6cee5dfb51,0
 soundalias,hash_6dd37d320ff2d54,0
 soundalias,hash_6dd38d320ff2f07,0
 soundalias,hash_6dd39d320ff30ba,0
-soundalias,hash_6dd3a55ee3658ca,0
+soundalias,prj_bullet_impact_player_vehicle,0
 soundalias,hash_6dd3ad320ff326d,0
 soundalias,hash_6e080a57076b172,0
 soundalias,hash_6e2099e340c082f,0
@@ -10250,7 +10250,7 @@ soundalias,hash_8ffbc59cfa042a1,0
 soundalias,hash_904888a67fdc864,0
 soundalias,hash_9072c856e382849,0
 soundalias,hash_907381e0828f949,0
-soundalias,hash_90762c760c2f593,0
+soundalias,prj_bullet_impact_concrete,0
 soundalias,hash_9089431f271d797,0
 soundalias,hash_90b253d1ff40143,0
 soundalias,hash_914716fc946d933,0
@@ -10274,7 +10274,7 @@ soundalias,hash_932b105fde4eb9f,0
 soundalias,hash_932b205fde4ed52,0
 soundalias,hash_932b305fde4ef05,0
 soundalias,hash_934ba92798400d0,0
-soundalias,hash_936340a4beca79c,0
+soundalias,prj_bullet_impact_player_low,0
 soundalias,hash_93903b68d2e68c0,0
 soundalias,hash_93904b68d2e6a73,0
 soundalias,hash_93905b68d2e6c26,0
@@ -10789,7 +10789,7 @@ soundalias,hash_c7859254a670eb3,0
 soundalias,hash_c7a0e5e74b11bba,0
 soundalias,hash_c7b9fe8eb7717eb,0
 soundalias,hash_c7c62f7e3a7aa33,0
-soundalias,hash_c8051d106fc0b63,0
+soundalias,prj_bullet_impact_carpet,0
 soundalias,hash_c83ea8b0fba84b0,0
 soundalias,hash_c84a7b8ddbb30a0,0
 soundalias,hash_c8c7c4a7b6c279c,0
@@ -11352,7 +11352,7 @@ soundalias,hash_10589756672b2e3c,0
 soundalias,hash_105a4684bde0331e,0
 soundalias,hash_105e7a64cbd97b12,0
 soundalias,hash_105fdf4117857321,0
-soundalias,hash_10627a0a4f904728,0
+soundalias,prj_bullet_impact_player_med,0
 soundalias,hash_106b47e324710780,0
 soundalias,hash_106df5b84ad302f5,0
 soundalias,hash_106e0e4c2db38b07,0
@@ -12009,7 +12009,7 @@ soundalias,hash_149b6f2d2b9a8815,0
 soundalias,hash_14a04f88ecb99aef,0
 soundalias,hash_14a3253fd5ea9ad2,0
 soundalias,hash_14a48c8d21374457,0
-soundalias,hash_14a4fa9a84d5d1da,0
+soundalias,mpl_hit_alert_low,0
 soundalias,hash_14a61d1fd5dc9c60,0
 soundalias,hash_14a6b0529c8ecd16,0
 soundalias,hash_14a6e8348fcc38f8,0
@@ -12732,10 +12732,10 @@ soundalias,hash_197f5201f5d92588,0
 soundalias,hash_197f9771237751e0,0
 soundalias,hash_19847f65670ea102,0
 soundalias,hash_198682b92e7d3b28,0
-soundalias,hash_1988b4d73bae2563,0
+soundalias,prj_bullet_impact_metal,0
 soundalias,hash_198a0a42a0d2717e,0
 soundalias,hash_198ad5b367422ecd,0
-soundalias,hash_198d7674a008fbae,0
+soundalias,prj_bullet_impact_flesh,0
 soundalias,hash_198da0f9001dcc98,0
 soundalias,hash_198fd4c46cabae78,0
 soundalias,hash_199246bf836f8534,0
@@ -13220,7 +13220,7 @@ soundalias,hash_1c942dd062612dd2,0
 soundalias,hash_1c9532736534ae8f,0
 soundalias,hash_1c98452f54001f25,0
 soundalias,hash_1c99783aad1ce633,0
-soundalias,hash_1c9ab9dc0c0e0a3b,0
+soundalias,prj_bullet_impact_asphalt,0
 soundalias,hash_1c9caaa8ae96fef0,0
 soundalias,hash_1c9e33dc3950e799,0
 soundalias,hash_1c9ec92cfb1d700c,0
@@ -13583,7 +13583,7 @@ soundalias,hash_1ee4a7c5fc543bd6,0
 soundalias,hash_1ee5f337c6355dc1,0
 soundalias,hash_1ee6f6344a3544a1,0
 soundalias,hash_1ee912c71e4f85dc,0
-soundalias,hash_1ee92ff13948a73d,0
+soundalias,prj_bullet_impact_player,0
 soundalias,hash_1ee9305931f44c79,0
 soundalias,hash_1eeaa2b6bb119b77,0
 soundalias,hash_1eed301c02228db6,0
@@ -13629,7 +13629,7 @@ soundalias,hash_1f28354ab30a16ca,0
 soundalias,hash_1f29fac22fb33acb,0
 soundalias,hash_1f2be42e01e1c6cf,0
 soundalias,hash_1f2cbe10d20552e0,0
-soundalias,hash_1f2d5596c60d609b,0
+soundalias,prj_bullet_impact_foliage,0
 soundalias,hash_1f2ed3a203cf77ec,0
 soundalias,hash_1f2ffba7c651e8e7,0
 soundalias,hash_1f3068c325cae860,0
@@ -13800,7 +13800,7 @@ soundalias,hash_20518a1d2144d473,0
 soundalias,hash_20520337737931a8,0
 soundalias,hash_2052d8709436ffc5,0
 soundalias,hash_20540de0b4ac016c,0
-soundalias,hash_205510fd548ce9c6,0
+soundalias,prj_bullet_impact_headshot_player,0
 soundalias,hash_2058fbf83daa6317,0
 soundalias,hash_205ada86fdeef909,0
 soundalias,hash_205c83ac75849f80,0
@@ -14095,7 +14095,7 @@ soundalias,veh_supply_rotor,0
 soundalias,hash_2244b6348425dc76,0
 soundalias,hash_2246e1c2668647c3,0
 soundalias,hash_22478e79f6ed4610,0
-soundalias,hash_2248618b48085ce5,0
+soundalias,mpl_hit_alert_armor_hit,0
 soundalias,hash_22495be917916268,0
 soundalias,hash_22495ce91791641b,0
 soundalias,hash_22495de9179165ce,0
@@ -14194,7 +14194,7 @@ soundalias,hash_22ec06d14fa01a19,0
 soundalias,hash_22ee208eda0b9432,0
 soundalias,hash_22eebf44c35cc757,0
 soundalias,hash_22f0275e647e01e8,0
-soundalias,hash_22f2a16e63651515,0
+soundalias,prj_bullet_impact_armor_broken,0
 soundalias,hash_22f42e316df5147c,0
 soundalias,hash_22f5c1f528e684a4,0
 soundalias,hash_22f6ff0dc5a65b7d,0
@@ -15282,7 +15282,7 @@ soundalias,hash_2a1d92a95679e6bf,0
 soundalias,hash_2a1e9a7f46f2eb56,0
 soundalias,hash_2a1eebadbbaafb89,0
 soundalias,hash_2a2051806a9d3d51,0
-soundalias,hash_2a21dbb4c6669e43,0
+soundalias,prj_bullet_impact_crate,0
 soundalias,hash_2a23524931091f2a,0
 soundalias,hash_2a274ae7b8ccd141,0
 soundalias,hash_2a27e3d63e1129bc,0
@@ -16403,7 +16403,7 @@ soundalias,hash_318300be7b11ba0f,0
 soundalias,hash_31859800802acc8f,0
 soundalias,hash_3185e3ad37d8b947,0
 soundalias,hash_31867ad534753065,0
-soundalias,hash_318b8763001c74a1,0
+soundalias,prj_bullet_impact_rock,0
 soundalias,hash_318cd6d129b1317f,0
 soundalias,hash_318d9974762130ef,0
 soundalias,hash_318e411042e79841,0
@@ -16836,7 +16836,7 @@ soundalias,hash_343294d34611de9a,0
 soundalias,hash_343602315a722cb2,0
 soundalias,hash_34381864808ce567,0
 soundalias,hash_343a7f994e0ea03a,0
-soundalias,hash_343ad22b7ba0c7fc,0
+soundalias,prj_bullet_impact_teddybear,0
 soundalias,hash_343b0e2c41beed2f,0
 soundalias,hash_343c3a627eb36d15,0
 soundalias,hash_3440329f5031bb0c,0
@@ -16949,7 +16949,7 @@ soundalias,hash_34ef3155e746f221,0
 soundalias,hash_34efc02aa3473a46,0
 soundalias,hash_34f091cc0903d4cb,0
 soundalias,hash_34f361e156710f2a,0
-soundalias,hash_34f59236a8d332c5,0
+soundalias,prj_bullet_impact_default,0
 soundalias,hash_34f5e06a03eb4ae3,0
 soundalias,hash_34f705b0461d6ef2,0
 soundalias,hash_34f7835a37663806,0
@@ -17053,7 +17053,7 @@ soundalias,hash_358730312fff0692,0
 soundalias,hash_358b56a83d675b48,0
 soundalias,hash_358c1e6be26960d4,0
 soundalias,hash_35919b77e62edb78,0
-soundalias,hash_359292326720d202,0
+soundalias,prj_bullet_impact_grass,0
 soundalias,hash_35941b4867f0137b,0
 soundalias,hash_3595844007225256,0
 soundalias,hash_3597c3615863e484,0
@@ -17868,7 +17868,7 @@ soundalias,hash_3b07506f7bb730b5,0
 soundalias,hash_3b0b1efa5442508b,0
 soundalias,hash_3b0b5013cfdb9079,0
 soundalias,hash_3b0f213693edd55d,0
-soundalias,hash_3b1048441fef3b82,0
+soundalias,prj_bullet_impact_headshot,0
 soundalias,hash_3b113aeb5a2884a2,0
 soundalias,hash_3b12facd67a776d3,0
 soundalias,hash_3b133733005f1d3e,0
@@ -18220,7 +18220,7 @@ soundalias,hash_3d42b371a9d715f3,0
 soundalias,hash_3d42b471a9d717a6,0
 soundalias,hash_3d42b571a9d71959,0
 soundalias,hash_3d42dfe38141504d,0
-soundalias,hash_3d45f4f0e775b857,0
+soundalias,prj_bullet_impact_metal_thin,0
 soundalias,hash_3d47d2022f2f4195,0
 soundalias,hash_3d5030427be8d38e,0
 soundalias,hash_3d519173dfe12038,0
@@ -18340,7 +18340,7 @@ soundalias,hash_3e23cbf4467513c8,0
 soundalias,hash_3e253bc4db692fb5,0
 soundalias,mpl_hit_alert_burn,0
 soundalias,hash_3e262c0b871db206,0
-soundalias,hash_3e284f9a53e3010b,0
+soundalias,mpl_hit_alert_rad,0
 soundalias,hash_3e285f7efc5b50d9,0
 soundalias,hash_3e2ceac3dba5f87f,0
 soundalias,hash_3e2e07977d113e19,0
@@ -19318,7 +19318,7 @@ soundalias,hash_440e8c1b524b537a,0
 soundalias,hash_440ea749b501ecae,0
 soundalias,hash_440efef02cd42399,0
 soundalias,hash_44111725c84b4da2,0
-soundalias,hash_44152e6a44b8ccaf,0
+soundalias,prj_bullet_impact_ice,0
 soundalias,hash_441803333b23e1d5,0
 soundalias,hash_441a896866a5e1d2,0
 soundalias,hash_441b3fca11eb0111,0
@@ -19878,7 +19878,7 @@ soundalias,hash_47bf4f2d76cd6951,0
 soundalias,hash_47c3c21e47f8fde6,0
 soundalias,hash_47c52a8f6e6f222d,0
 soundalias,hash_47c866af05fb07db,0
-soundalias,hash_47c9788002ec7c38,0
+soundalias,prj_bullet_impact_bottle,0
 soundalias,hash_47ca084b122b1477,0
 soundalias,hash_47cb2fd87df6d8ed,0
 soundalias,hash_47ccd40d393ff8ee,0
@@ -19980,7 +19980,7 @@ soundalias,hash_4857eadf6e394309,0
 soundalias,hash_4858aeaf6a608f20,0
 soundalias,hash_485ce21f45be02b6,0
 soundalias,hash_485d990c10b86bcb,0
-soundalias,hash_4860eb9ccb46a7b6,0
+soundalias,prj_bullet_impact_player_high,0
 soundalias,hash_48619ee3763db6a4,0
 soundalias,hash_4861a4e3763dc0d6,0
 soundalias,hash_4865253b4e0dcb09,0
@@ -20305,7 +20305,7 @@ soundalias,hash_4a6c36c05dd253d8,0
 soundalias,hash_4a6d6e04e4ff66bf,0
 soundalias,hash_4a6eb0f1355aab0f,0
 soundalias,hash_4a6f13f6643560a8,0
-soundalias,hash_4a73271c36bc3b94,0
+soundalias,prj_bullet_impact_plate,0
 soundalias,hash_4a7394d084b6250a,0
 soundalias,hash_4a75dfd44b715890,0
 soundalias,hash_4a7649aee1651341,0
@@ -20623,7 +20623,7 @@ soundalias,hash_4c67be0b2b7ea453,0
 soundalias,hash_4c67dd70a71f9f66,0
 soundalias,hash_4c6a403a29079ae9,0
 soundalias,hash_4c6b59545abf735f,0
-soundalias,hash_4c6ef9b7d18bfaec,0
+soundalias,prj_bullet_impact_dist_metal,0
 soundalias,hash_4c700ff4cdd655d3,0
 soundalias,hash_4c7157ad91ee55fd,0
 soundalias,hash_4c75b5a5666fb07b,0
@@ -20697,7 +20697,7 @@ soundalias,hash_4cc7eef3458b3936,0
 soundalias,hash_4cc7fe53a39c2c98,0
 soundalias,hash_4cc996546fb3a24a,0
 soundalias,hash_4ccbfd7298ad64b3,0
-soundalias,hash_4cd578911ba283bf,0
+soundalias,prj_bullet_impact_plaster,0
 soundalias,hash_4cd8bea823d9127e,0
 soundalias,hash_4cd9b0af8307b15b,0
 soundalias,hash_4cdb507af629d412,0
@@ -20722,7 +20722,7 @@ soundalias,hash_4cfb2290f9c97448,0
 soundalias,hash_4cfc1c714fa6f474,0
 soundalias,hash_4cfca68175c2a8dc,0
 soundalias,hash_4cfdfcc9a6da8a3b,0
-soundalias,hash_4cfe263ccce978b5,0
+soundalias,prj_bullet_impact_brick,0
 soundalias,hash_4cfeda352eade8b8,0
 soundalias,hash_4d01f2e74ad98460,0
 soundalias,hash_4d024c686b015e3d,0
@@ -21046,7 +21046,7 @@ soundalias,hash_4f36e3c0084c4a9d,0
 soundalias,hash_4f378ff1bae02961,0
 soundalias,hash_4f38d8eca20db064,0
 soundalias,hash_4f3a05dd0046431f,0
-soundalias,hash_4f3b5590054f3224,0
+soundalias,prj_bullet_impact_cloth,0
 soundalias,hash_4f3ded41f0cadfcf,0
 soundalias,hash_4f40fac4828fc4a3,0
 soundalias,hash_4f4268e6f8c4af97,0
@@ -21687,7 +21687,7 @@ soundalias,hash_5377ed97790ce865,0
 soundalias,hash_53789948abf4132f,0
 soundalias,hash_5379de3c44cfc659,0
 soundalias,hash_537aff403baeaf7d,0
-soundalias,hash_537b093933ca42b0,0
+soundalias,prj_bullet_impact_robot,0
 soundalias,hash_537d880724248aac,0
 soundalias,hash_537e868a4ec641a2,0
 soundalias,hash_537fbcbfc4188290,0
@@ -22120,7 +22120,7 @@ soundalias,hash_563a86e682e6e86b,0
 soundalias,hash_563c06cf86c46524,0
 soundalias,hash_563d33b65b0ddc2a,0
 soundalias,hash_563dce53d4967bb5,0
-soundalias,hash_56419b8229de12e9,0
+soundalias,prj_bullet_impact_vase,0
 soundalias,hash_5641e728dab56d87,0
 soundalias,hash_5642bc79a094eac6,0
 soundalias,hash_56439dfc5fa9dbfa,0
@@ -22429,7 +22429,7 @@ soundalias,hash_585caac9c560188c,0
 soundalias,hash_585cc7369fdc4268,0
 soundalias,hash_585d1225f7503b56,0
 soundalias,hash_585f68587d79f19b,0
-soundalias,hash_5861ccdb6f1e8232,0
+soundalias,prj_bullet_impact_bark,0
 soundalias,hash_5863289a78629566,0
 soundalias,hash_58644aa2d268c157,0
 soundalias,hash_5864fc686d5f09a5,0
@@ -22662,7 +22662,7 @@ soundalias,hash_59c2c0707811dc2c,0
 soundalias,hash_59c61f700f9a4505,0
 soundalias,hash_59cacc33343ce581,0
 soundalias,hash_59ccdb51dc169e56,0
-soundalias,hash_59cea1d146bc30ba,0
+soundalias,prj_bullet_impact_rubber,0
 soundalias,hash_59d3d08f5ceafb51,0
 soundalias,hash_59d58a8ba253dda4,0
 soundalias,hash_59d9014d780b459e,0
@@ -23293,7 +23293,7 @@ soundalias,hash_5dfc538e8f8641e1,0
 soundalias,hash_5dfd9bcf14fbac63,0
 soundalias,hash_5e01e7dcd241d824,0
 soundalias,hash_5e029b4c6f2985fc,0
-soundalias,hash_5e02d7ec431bf951,0
+soundalias,prj_bullet_impact_dirt,0
 soundalias,hash_5e04463b1badf36a,0
 soundalias,hash_5e044692d0cb68e2,0
 soundalias,hash_5e0872b1a855ab58,0
@@ -23692,7 +23692,7 @@ soundalias,hash_6097394bd001ca3b,0
 soundalias,hash_6097887c376a8744,0
 soundalias,hash_6098273b8bebc3d8,0
 soundalias,hash_6098419a1d9b546f,0
-soundalias,hash_609aad746980c087,0
+soundalias,prj_bullet_impact_water,0
 soundalias,hash_609bad299f8eaaef,0
 soundalias,hash_609c34e2ec580c1c,0
 soundalias,hash_609e561eac078160,0
@@ -24330,7 +24330,7 @@ soundalias,hash_6484bd1052e90e48,0
 soundalias,hash_6484e6ce35242049,0
 soundalias,hash_64853020a1ed9ffe,0
 soundalias,hash_648b63a2f20def68,0
-soundalias,hash_648b768cba7c691d,0
+soundalias,prj_bullet_impact_wood,0
 soundalias,hash_648df838ffb718fe,0
 soundalias,hash_648fc87d4ed9e9b7,0
 soundalias,hash_64910d209db51214,0
@@ -24370,7 +24370,7 @@ soundalias,hash_64c1791357fae4b3,0
 soundalias,hash_64c4f6cefc5af75c,0
 soundalias,hash_64c734b85b7b1944,0
 soundalias,hash_64c82a2efba711e6,0
-soundalias,hash_64cae56a56b32aae,0
+soundalias,prj_bullet_impact_mud,0
 soundalias,hash_64cb9a122d2181c4,0
 soundalias,hash_64cbc82ca34041f0,0
 soundalias,hash_64cbc92ca34043a3,0
@@ -24635,7 +24635,7 @@ soundalias,hash_6689c301e755fae1,0
 soundalias,hash_668ac71ebab2c71c,0
 soundalias,hash_668b283a6befba5b,0
 soundalias,hash_668cf24d2365a63e,0
-soundalias,hash_668d9c6966b3d4d3,0
+soundalias,prj_bullet_impact_snow,0
 soundalias,hash_668f23843478f1c9,0
 soundalias,hash_668fdb1381d783ca,0
 soundalias,hash_6690500dde31959a,0
@@ -24772,7 +24772,7 @@ soundalias,hash_677b0549b20f750d,0
 soundalias,hash_677b307eed86ed5a,0
 soundalias,hash_677c30d5bd110ca8,0
 soundalias,hash_677dcda299064219,0
-soundalias,hash_678036691f8d5aca,0
+soundalias,prj_bullet_impact_sand,0
 soundalias,hash_67804e983badfc98,0
 soundalias,hash_67804f983badfe4b,0
 soundalias,hash_678050983badfffe,0
@@ -24865,7 +24865,7 @@ soundalias,hash_681470d3030baa30,0
 soundalias,hash_68154d92b85379e9,0
 soundalias,hash_68158fa4267b6f10,0
 soundalias,hash_681e7b61a14e7ffd,0
-soundalias,hash_681e828c3e667851,0
+soundalias,prj_bullet_impact_robot_fatal,0
 soundalias,hash_68222f6cac61ba12,0
 soundalias,hash_682360a2e369aad7,0
 soundalias,hash_6823b2d8af3be7fe,0
@@ -25698,7 +25698,7 @@ soundalias,hash_6d6b3c7c79244a0f,0
 soundalias,hash_6d6c47b3608ab002,0
 soundalias,hash_6d6d3810ff9fdcf3,0
 soundalias,hash_6d6d3bcfca2db391,0
-soundalias,hash_6d6f3146305d691a,0
+soundalias,prj_bullet_impact_paper,0
 soundalias,hash_6d6fa6d633d547f0,0
 soundalias,hash_6d6ff6d64b4627d9,0
 soundalias,hash_6d741dedc837ceea,0
@@ -25773,7 +25773,7 @@ soundalias,hash_6ddea559e2e80fc5,0
 soundalias,hash_6de0dbc827ca73e9,0
 soundalias,hash_6de48fd2668e0a5d,0
 soundalias,hash_6de4c736e19c6f77,0
-soundalias,hash_6de5933397c5fd7f,0
+soundalias,prj_bullet_impact_armor,0
 soundalias,hash_6de6356ae2bf3cb0,0
 soundalias,hash_6de6a523dc138bda,0
 soundalias,wpn_ammo_pickup_oldschool,0
@@ -26046,7 +26046,7 @@ soundalias,hash_6fa3f084fc51ab99,0
 soundalias,hash_6fa4d142624625ce,0
 soundalias,hash_6fa50ee9af407f34,0
 soundalias,hash_6fa5cf5bb91311a4,0
-soundalias,hash_6fa5ee734709aeac,0
+soundalias,mpl_hit_alert_shockrifle,0
 soundalias,hash_6fa912f84ba294f7,0
 soundalias,hash_6fa9e296827472b1,0
 soundalias,hash_6fab3e9de7c5f2b8,0
@@ -26503,7 +26503,7 @@ soundalias,hash_727a3900e1305d81,0
 soundalias,hash_727a3f5726d639e9,0
 soundalias,hash_727aa76a67c7dc4e,0
 soundalias,hash_727c2ef55e0fb019,0
-soundalias,hash_727e88d741115406,0
+soundalias,mpl_hit_alert_taser_low,0
 soundalias,hash_72807e4a3df0c5ab,0
 soundalias,hash_7280d835c9a50620,0
 soundalias,hash_72829aabe24ffaf5,0
@@ -26641,7 +26641,7 @@ soundalias,hash_7351a320c2b4afdd,0
 soundalias,hash_7352b662a6215bd3,0
 soundalias,hash_7353399f9153966f,0
 soundalias,hash_73578a5e54fc3559,0
-soundalias,hash_735a4e4311b25154,0
+soundalias,prj_bullet_impact_glass,0
 soundalias,hash_735a6244d7ef29a1,0
 soundalias,hash_735b01b14a89357a,0
 soundalias,hash_735b699dfdfbd802,0
@@ -26839,7 +26839,7 @@ soundalias,hash_74927bacf8b037eb,0
 soundalias,hash_74962d09e6aa0a93,0
 soundalias,hash_7496884d7d16334a,0
 soundalias,hash_74970ecec5c252d3,0
-soundalias,hash_7497502ac7327a6a,0
+soundalias,prj_bullet_impact_metal_car,0
 soundalias,hash_749920800af38193,0
 soundalias,hash_7499d0ebaaa4ee93,0
 soundalias,hash_749cd6f9bfe08b67,0
@@ -26847,7 +26847,7 @@ soundalias,hash_749d4edf383c520d,0
 soundalias,hash_749de8d6ae93b299,0
 soundalias,hash_74a2c025e308914d,0
 soundalias,hash_74a32596ced8c25c,0
-soundalias,hash_74a7b6ba3604ede9,0
+soundalias,mpl_hit_alert_armor_broke,0
 soundalias,hash_74a828de6848c972,0
 soundalias,hash_74ab9b1e430d2633,0
 soundalias,hash_74ac078ed2849e11,0
@@ -26880,7 +26880,7 @@ soundalias,hash_74c9a80f7d275687,0
 soundalias,hash_74c9d676d25f4966,0
 soundalias,hash_74cd995f2c80ea47,0
 soundalias,hash_74d19a4554a06a0a,0
-soundalias,hash_74d241bd6f54e62f,0
+soundalias,mpl_hit_alert_armor,0
 soundalias,hash_74d2d9dec3a7d38f,0
 soundalias,hash_74d3bdf8f54c52f1,0
 soundalias,hash_74d5b1e96940ed75,0
@@ -28161,7 +28161,7 @@ soundalias,hash_7d448901da8b5494,0
 soundalias,hash_7d459f1c6b6f137a,0
 soundalias,hash_7d4792a00ec268be,0
 soundalias,hash_7d4aca2b5f9bc3c3,0
-soundalias,hash_7d4d2aa52403506f,0
+soundalias,prj_bullet_impact_gravel,0
 soundalias,hash_7d4e250ccac9b2df,0
 soundalias,hash_7d4e3330f581d003,0
 soundalias,hash_7d4fe67d34709903,0
@@ -28346,7 +28346,7 @@ soundalias,hash_7ea3acbafac2fb54,0
 soundalias,hash_7ea5afa78c290ce2,0
 soundalias,hash_7ea6faf6d17f7583,0
 soundalias,hash_7eab2f25cd2d5c0c,0
-soundalias,hash_7eadf7d2d3a071f8,0
+soundalias,prj_bullet_impact_dist_wood,0
 soundalias,hash_7eaf6fa573d9efe1,0
 soundalias,hash_7eafe312715a08c9,0
 soundalias,hash_7eb1ae3ca7ed8608,0

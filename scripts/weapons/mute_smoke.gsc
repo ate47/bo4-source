@@ -49,12 +49,12 @@ function function_3c893ac6(owner, statweapon, grenadeweaponname, duration, total
         return;
     }
     onefoot = (0, 0, 12);
-    var_16ae7522 = isdefined(waitresult.position) ? waitresult.position : self.origin;
-    startpos = var_16ae7522 + onefoot;
+    smokeposition = isdefined(waitresult.position) ? waitresult.position : self.origin;
+    startpos = smokeposition + onefoot;
     smokeweapon = getweapon(grenadeweaponname);
-    smoke_detonate(owner, statweapon, smokeweapon, var_16ae7522, 250, totaltime, duration);
+    smoke_detonate(owner, statweapon, smokeweapon, smokeposition, 250, totaltime, duration);
     /#
-        function_9dddd194(var_16ae7522, (0, 0, 0.9));
+        function_9dddd194(smokeposition, (0, 0, 0.9));
     #/
 }
 
@@ -313,12 +313,12 @@ function function_a4998ccd(grenade_origin, player_origin, weapon) {
     forward = anglestoforward(facing_angles);
     up = anglestoup(facing_angles);
     velocity = function_711c258(forward, up, weapon);
-    var_1a11adab = vectortoangles(velocity);
+    grenadeangles = vectortoangles(velocity);
     speed = length(velocity);
-    var_2571f440 = var_1a11adab + (var_de0fa6f1, var_71c4a0d9, 0);
+    var_2571f440 = grenadeangles + (var_de0fa6f1, var_71c4a0d9, 0);
     var_d2922c1e = vectorscale(anglestoforward(var_2571f440), speed * var_46f48578);
     self magicgrenadeplayer(weapon, grenade_origin, var_d2922c1e);
-    var_c1917dbc = var_1a11adab + (var_99803ce, var_6b0817d7, 0);
+    var_c1917dbc = grenadeangles + (var_99803ce, var_6b0817d7, 0);
     var_c0cb8891 = vectorscale(anglestoforward(var_c1917dbc), speed * var_3300383);
     self magicgrenadeplayer(weapon, grenade_origin, var_c0cb8891);
 }

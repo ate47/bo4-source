@@ -4072,14 +4072,14 @@ function function_a3648315() {
 // Checksum 0x168c3e7b, Offset: 0xcfc8
 // Size: 0x44
 function function_ffc279(v_magnitude, e_attacker, n_damage, weapon) {
-    self thread function_315c8e4(v_magnitude, e_attacker, n_damage, weapon);
+    self thread launch_ragdoll(v_magnitude, e_attacker, n_damage, weapon);
 }
 
 // Namespace zm_utility/zm_utility
 // Params 4, eflags: 0x5 linked
 // Checksum 0x266314e2, Offset: 0xd018
 // Size: 0x104
-function private function_315c8e4(v_magnitude, e_attacker, n_damage = self.health, weapon) {
+function private launch_ragdoll(v_magnitude, e_attacker, n_damage = self.health, weapon) {
     self endon(#"death");
     if (!isdefined(weapon)) {
         weapon = level.weaponnone;

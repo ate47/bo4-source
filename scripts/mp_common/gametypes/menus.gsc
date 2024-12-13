@@ -97,7 +97,7 @@ function on_menu_response(params) {
     }
     if (response == "endround") {
         if (sessionmodeiswarzonegame()) {
-            level.var_67a68459 = 1;
+            level.skip_outcome = 1;
         }
         if (!level.gameended) {
             self globallogic::gamehistoryplayerquit();

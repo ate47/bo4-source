@@ -329,7 +329,7 @@ function private function_a1fce938() {
 // Size: 0x138
 function private function_7e633e59() {
     zombies = getaiteamarray(level.zombie_team);
-    var_86bf21bc = self.origin;
+    src_origin = self.origin;
     foreach (zombie in zombies) {
         if (!isalive(zombie)) {
             continue;
@@ -337,9 +337,9 @@ function private function_7e633e59() {
         if (zombie.archetype === #"gegenees") {
             continue;
         }
-        dist_sq = distancesquared(var_86bf21bc, zombie.origin);
+        dist_sq = distancesquared(src_origin, zombie.origin);
         if (dist_sq < 10000) {
-            zombie thread zombie_utility::setup_zombie_knockdown(var_86bf21bc);
+            zombie thread zombie_utility::setup_zombie_knockdown(src_origin);
             util::wait_network_frame();
         }
     }
@@ -925,7 +925,7 @@ function private function_ca5688e3(inflictor, attacker, damage, idflags, meansof
             adjusted_damage = int(damage * var_786d7e06.damage_scale * var_dd54fdb1.var_8223b0cf);
         }
         if (var_88e794fb) {
-            namespace_81245006::function_ef87b7e8(var_dd54fdb1, adjusted_damage);
+            namespace_81245006::damageweakpoint(var_dd54fdb1, adjusted_damage);
             /#
                 if (getdvarint(#"scr_weakpoint_debug", 0) > 0) {
                     iprintlnbold("<dev string:x49>" + var_dd54fdb1.health);

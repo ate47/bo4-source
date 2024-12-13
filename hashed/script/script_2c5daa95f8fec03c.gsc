@@ -158,7 +158,7 @@ function function_fab3ee3e(entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x684ca33a, Offset: 0x958
 // Size: 0x52
-function function_ef87b7e8(var_dd54fdb1, damage) {
+function damageweakpoint(var_dd54fdb1, damage) {
     var_dd54fdb1.health -= damage;
     if (var_dd54fdb1.health <= 0) {
         var_dd54fdb1.currstate = 3;
