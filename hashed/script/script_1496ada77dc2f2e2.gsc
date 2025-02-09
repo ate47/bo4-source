@@ -139,7 +139,7 @@ function private function_69fa75f8() {
         self clientfield::set_to_player("" + #"hash_1b9477ddcf30191f", 1);
         self function_e0c7d69(0);
         while (true) {
-            s_waitresult = self waittilltimeout(1, #"weapon_fired", #"hash_3e0895cd0cc16d2d", #"lightning_ball_created", #"hash_4d733389a8e35a7c");
+            s_waitresult = self waittilltimeout(1, #"weapon_fired", #"hash_3e0895cd0cc16d2d", #"lightning_ball_created", #"viper_bite_projectile");
             if (s_waitresult._notify != "timeout") {
                 self clientfield::set_to_player("" + #"hash_1b9477ddcf30191f", 0);
                 self function_e0c7d69(1);

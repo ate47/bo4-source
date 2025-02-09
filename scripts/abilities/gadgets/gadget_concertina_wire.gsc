@@ -30,7 +30,7 @@ function init_shared(var_4b51853b) {
     level.var_87226c31.concertinawireweapon = getweapon(#"eq_concertina_wire");
     level.var_87226c31.var_546a220c = "concertina_wire_objective_default";
     level.var_87226c31.var_925bbb2 = [];
-    level.var_87226c31.var_d6a27a84 = [];
+    level.var_87226c31.objectivezones = [];
     level.var_94029383 = &function_4ee7d46a;
     setdvar(#"hash_430cc236fe8b2561", 8);
     ability_player::register_gadget_should_notify(37, 1);
@@ -631,7 +631,7 @@ function function_dac69ad1(player, concertinawire) {
         }
         params = getstatuseffect(level.var_87226c31.bundle.var_1a6488fe);
         assert(isdefined(params), "<dev string:x9b>");
-        duration = params.var_77449e9;
+        duration = params.seduration;
         player.var_fee1c0df = gettime() + duration;
         if (var_1c365dd) {
             damageamount = isdefined(level.var_87226c31.bundle.var_24458de7) ? level.var_87226c31.bundle.var_24458de7 : 0;
@@ -796,7 +796,7 @@ function private function_2dd4aa9d(player) {
     if (!isdefined(player.var_673f6995) || player.var_673f6995 < gettime()) {
         params = getstatuseffect(level.var_87226c31.bundle.var_f6fdbda7);
         assert(isdefined(params), "<dev string:x9b>");
-        duration = params.var_77449e9;
+        duration = params.seduration;
         player.var_673f6995 = gettime() + duration;
         player.var_fc55d553 = 0;
     }

@@ -31,8 +31,8 @@ function init_shared() {
     }
     level.spawnbeaconsettings.userspawnbeacons = [];
     level.spawnbeaconsettings.availablespawnlists = [];
-    level.spawnbeaconsettings.var_d6a27a84 = [];
-    level.spawnbeaconsettings.var_d741a6a4 = [];
+    level.spawnbeaconsettings.objectivezones = [];
+    level.spawnbeaconsettings.audiothrottletracker = [];
     if (getgametypesetting(#"competitivesettings") === 1) {
         level.spawnbeaconsettings.settingsbundle = getscriptbundle("spawnbeacon_custom_settings_comp");
     } else {
@@ -69,7 +69,7 @@ function function_1c601b99() {
 // Size: 0x5c
 function function_bff5c062(spawnbeacon, attackingplayer) {
     spawnbeacon.var_d02ddb8e = getweapon(#"gadget_icepick");
-    spawnbeacon thread function_a9ff3efb(1);
+    spawnbeacon thread destroyspawnbeacon(1);
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -139,7 +139,7 @@ function function_cfabb62c(watcher) {
 // Size: 0x3c
 function function_f9d3fff8(player) {
     if (isdefined(self) && isdefined(self.spawnbeacon)) {
-        self.spawnbeacon thread function_a9ff3efb(0);
+        self.spawnbeacon thread destroyspawnbeacon(0);
     }
 }
 
@@ -149,7 +149,7 @@ function function_f9d3fff8(player) {
 // Size: 0x34
 function function_13ac856e() {
     if (isdefined(self) && isdefined(self.spawnbeacon)) {
-        self.spawnbeacon thread function_a9ff3efb(0);
+        self.spawnbeacon thread destroyspawnbeacon(0);
     }
 }
 
@@ -184,7 +184,7 @@ function function_f8930fa1(time) {
     if (!isdefined(self)) {
         return;
     }
-    self thread function_a9ff3efb(0);
+    self thread destroyspawnbeacon(0);
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -231,21 +231,21 @@ function beacon_spawned(watcher, owner) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x3885c717, Offset: 0xd40
 // Size: 0x116
-function function_d7cd849c(soundbank, team, excludeplayer) {
+function playcommanderaudio(soundbank, team, excludeplayer) {
     if (!isdefined(soundbank)) {
         return;
     }
-    if (!isdefined(level.spawnbeaconsettings.var_d741a6a4[soundbank])) {
-        level.spawnbeaconsettings.var_d741a6a4[soundbank] = 0;
+    if (!isdefined(level.spawnbeaconsettings.audiothrottletracker[soundbank])) {
+        level.spawnbeaconsettings.audiothrottletracker[soundbank] = 0;
     }
-    var_ad7969ca = level.spawnbeaconsettings.var_d741a6a4[soundbank];
-    if (var_ad7969ca != 0 && gettime() < int(5 * 1000) + var_ad7969ca) {
+    lasttimeplayed = level.spawnbeaconsettings.audiothrottletracker[soundbank];
+    if (lasttimeplayed != 0 && gettime() < int(5 * 1000) + lasttimeplayed) {
         return;
     }
     var_925a9324 = [];
     var_925a9324[0] = excludeplayer;
     killstreaks::leader_dialog(soundbank, team, var_925a9324, "spawnbeacon");
-    level.spawnbeaconsettings.var_d741a6a4[soundbank] = gettime();
+    level.spawnbeaconsettings.audiothrottletracker[soundbank] = gettime();
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -308,8 +308,8 @@ function function_8892377a() {
         self.pers[#"hash_677f229433c8735b"] = 0;
     }
     if (getdvarint(#"hash_da55c6d97d1dc52", 1) && (isdefined(level.var_6cd68fbe) ? level.var_6cd68fbe : 0) && self.pers[#"hash_677f229433c8735b"] >= 1) {
-        var_4dbaac09 = self gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
-        self thread function_9ede386f(var_4dbaac09);
+        spawnbeaconslot = self gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
+        self thread function_9ede386f(spawnbeaconslot);
     }
 }
 
@@ -415,7 +415,7 @@ function gadget_spawnbeacon_on(slot, playerweapon) {
 // Checksum 0x243b075f, Offset: 0x1718
 // Size: 0x1e
 function gadget_spawnbeacon_off(slot, weapon) {
-    self.var_c11172a1 = 0;
+    self.isbuildingspawnbeacon = 0;
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -427,7 +427,7 @@ function on_player_killed(s_params) {
         deleteobjective(self.spawnbeaconbuildprogressobjid);
         self.spawnbeaconbuildprogressobjid = undefined;
     }
-    if (isdefined(self.var_c11172a1) && self.var_c11172a1 && isdefined(s_params.eattacker)) {
+    if (isdefined(self.isbuildingspawnbeacon) && self.isbuildingspawnbeacon && isdefined(s_params.eattacker)) {
         killstreaks::processscoreevent(#"forward_spawn_stopped_activation", s_params.eattacker, undefined, level.spawnbeaconsettings.beaconweapon);
     }
 }
@@ -455,7 +455,7 @@ function deleteobjective(objectiveid) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x27bdfabd, Offset: 0x1868
 // Size: 0x166
-function function_4d9f82ce() {
+function calculatecooldownpenalty() {
     spawnbeacon = self;
     player = spawnbeacon.owner;
     if (!isdefined(player)) {
@@ -464,10 +464,10 @@ function function_4d9f82ce() {
     if (!player hasweapon(level.spawnbeaconsettings.beaconweapon)) {
         return;
     }
-    var_4dbaac09 = player gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
-    currentpower = player gadgetpowerget(var_4dbaac09) / 100;
+    spawnbeaconslot = player gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
+    currentpower = player gadgetpowerget(spawnbeaconslot) / 100;
     penalty = (isdefined(level.spawnbeaconsettings.settingsbundle.var_da5fcc2d) ? level.spawnbeaconsettings.settingsbundle.var_da5fcc2d : 0) - (isdefined(level.spawnbeaconsettings.settingsbundle.var_da5fcc2d) ? level.spawnbeaconsettings.settingsbundle.var_da5fcc2d : 0) * currentpower;
-    player.var_299012ff = int(penalty);
+    player.spawnbeaconcooldownpenalty = int(penalty);
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -477,16 +477,16 @@ function function_4d9f82ce() {
 function private function_e46fd633() {
     spawnbeacon = self;
     if (isdefined(level.spawnbeaconsettings.settingsbundle.var_d2110d43) ? level.spawnbeaconsettings.settingsbundle.var_d2110d43 : 0) {
-        spawnbeacon function_4d9f82ce();
+        spawnbeacon calculatecooldownpenalty();
     }
     var_b80d3663 = isdefined(spawnbeacon.var_d02ddb8e) && spawnbeacon.var_d02ddb8e.name === "gadget_icepick";
     if (isdefined(self.owner) && !var_b80d3663) {
         var_9a5be956 = self.owner;
         self.owner thread killstreaks::play_taacom_dialog("spawnBeaconDestroyedFriendly");
     }
-    function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_79efc1, util::getotherteam(spawnbeacon.team), spawnbeacon.var_846acfcf);
+    playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_79efc1, util::getotherteam(spawnbeacon.team), spawnbeacon.var_846acfcf);
     if (!var_b80d3663) {
-        function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_2ee73347, spawnbeacon.team, var_9a5be956);
+        playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_2ee73347, spawnbeacon.team, var_9a5be956);
         spawnbeacon.owner globallogic_score::function_5829abe3(spawnbeacon.var_846acfcf, spawnbeacon.var_d02ddb8e, level.spawnbeaconsettings.beaconweapon);
     }
 }
@@ -495,12 +495,12 @@ function private function_e46fd633() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xc0544248, Offset: 0x1bb0
 // Size: 0x9bc
-function function_a9ff3efb(var_d3213f00) {
+function destroyspawnbeacon(destroyedbyenemy) {
     self notify(#"hash_523ddcbd662010e5");
     self function_68a6ec15();
     self.var_ab0875aa = 1;
     spawnbeacon = self;
-    attacker = var_d3213f00 ? self.var_846acfcf : self.owner;
+    attacker = destroyedbyenemy ? self.var_846acfcf : self.owner;
     spawnbeacon dodamage(spawnbeacon.health + 10000, spawnbeacon.origin, attacker, undefined, undefined, "MOD_EXPLOSIVE");
     if (target_istarget(spawnbeacon)) {
         target_remove(spawnbeacon);
@@ -520,15 +520,15 @@ function function_a9ff3efb(var_d3213f00) {
         } else if (isdefined(level.spawnbeaconsettings.settingsbundle.var_b4ecfeb2)) {
             spawnbeacon playsound(level.spawnbeaconsettings.settingsbundle.var_b4ecfeb2);
         }
-        if (isdefined(var_d3213f00) && var_d3213f00) {
+        if (isdefined(destroyedbyenemy) && destroyedbyenemy) {
             self function_e46fd633();
         } else {
             if (isdefined(self.owner)) {
                 var_9a5be956 = self.owner;
                 self.owner thread killstreaks::play_taacom_dialog("spawnBeaconOfflineFriendly");
             }
-            function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_10c9ba2d, self.team, var_9a5be956);
-            function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_f29e64de, util::getotherteam(self.team), undefined);
+            playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_10c9ba2d, self.team, var_9a5be956);
+            playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_f29e64de, util::getotherteam(self.team), undefined);
         }
     }
     if (isdefined(level.spawnbeaconsettings.settingsbundle.var_35fbc280)) {
@@ -631,7 +631,7 @@ function getspawnbeaconspawns(origin) {
             continue;
         }
         var_dcf0e6cc = 0;
-        foreach (protectedzone in level.spawnbeaconsettings.var_d6a27a84) {
+        foreach (protectedzone in level.spawnbeaconsettings.objectivezones) {
             if (protectedzone istouching(spawnpoint.origin, (45, 45, 72))) {
                 var_dcf0e6cc = 1;
                 break;
@@ -701,8 +701,8 @@ function function_425d8006() {
     } else {
         var_f1c32a14 = "B";
     }
-    function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_1068819a, spawnbeacon.team, undefined);
-    function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_c5d0582b, util::getotherteam(spawnbeacon.team), undefined);
+    playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_1068819a, spawnbeacon.team, undefined);
+    playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_c5d0582b, util::getotherteam(spawnbeacon.team), undefined);
     setbombtimer(var_f1c32a14, gettime() + int(var_d7760961 * 1000));
     wait var_d7760961;
     spawnbeacon.isdisabled = 0;
@@ -727,7 +727,7 @@ function watchfordeath() {
     if (isdefined(waitresult.attacker) && isdefined(self) && isdefined(self.owner) && waitresult.attacker.team == self.owner.team) {
         var_b08a3652 = 0;
     }
-    self thread function_a9ff3efb(var_b08a3652);
+    self thread destroyspawnbeacon(var_b08a3652);
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -797,7 +797,7 @@ function function_639cb9da() {
     if (!isdefined(self)) {
         return;
     }
-    self function_a9ff3efb(0);
+    self destroyspawnbeacon(0);
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -821,7 +821,7 @@ function retreatedstartmelee(var_a820f9, spawns) {
     if (isdefined(level.spawnbeaconsettings.userspawnbeacons[player.clientid]) && level.spawnbeaconsettings.userspawnbeacons[player.clientid].size >= (isdefined(level.spawnbeaconsettings.settingsbundle.var_e3d3bd15) ? level.spawnbeaconsettings.settingsbundle.var_e3d3bd15 : 1)) {
         beacontoremove = level.spawnbeaconsettings.userspawnbeacons[player.clientid][0];
         if (isdefined(beacontoremove)) {
-            beacontoremove thread function_a9ff3efb(0);
+            beacontoremove thread destroyspawnbeacon(0);
         } else {
             level.spawnbeaconsettings.userspawnbeacons[self.clientid] = undefined;
         }
@@ -829,8 +829,8 @@ function retreatedstartmelee(var_a820f9, spawns) {
     slot = player gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
     player gadgetpowerreset(slot);
     player gadgetpowerset(slot, 0);
-    var_4dbaac09 = player gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
-    player function_69b5c53c(var_4dbaac09, 0);
+    spawnbeaconslot = player gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
+    player function_69b5c53c(spawnbeaconslot, 0);
     placedspawnbeacon = spawn("script_model", var_a820f9.origin);
     placedspawnbeacon setmodel(level.spawnbeaconsettings.beaconweapon.worldmodel);
     var_a820f9.spawnbeacon = placedspawnbeacon;
@@ -862,12 +862,12 @@ function retreatedstartmelee(var_a820f9, spawns) {
         placedspawnbeacon setcandamage(1);
     }
     placedspawnbeacon clientfield::set("enemyequip", 1);
-    placedspawnbeacon.var_99d2556b = gettime();
+    placedspawnbeacon.builttime = gettime();
     placedspawnbeacon.threatlevel = 0;
     placedspawnbeacon.spawncount = 0;
     placedspawnbeacon.uniqueid = function_9c87725b();
-    function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_69b1ff7, player getteam(), player);
-    function_d7cd849c(level.spawnbeaconsettings.settingsbundle.var_4f37dfe9, util::getotherteam(player getteam()), undefined);
+    playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_69b1ff7, player getteam(), player);
+    playcommanderaudio(level.spawnbeaconsettings.settingsbundle.var_4f37dfe9, util::getotherteam(player getteam()), undefined);
     if (isdefined(level.spawnbeaconsettings.settingsbundle.var_a0db3d4d)) {
         placedspawnbeacon playloopsound(level.spawnbeaconsettings.settingsbundle.var_a0db3d4d);
     }
@@ -938,9 +938,9 @@ function onplacespawnbeacon(spawnbeacon) {
 // Checksum 0xa9b60788, Offset: 0x3d38
 // Size: 0x8c
 function oncancelplacement(spawnbeacon) {
-    var_4dbaac09 = self gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
-    self gadgetdeactivate(var_4dbaac09, level.spawnbeaconsettings.beaconweapon, 0);
-    self gadgetpowerset(var_4dbaac09, 100);
+    spawnbeaconslot = self gadgetgetslot(level.spawnbeaconsettings.beaconweapon);
+    self gadgetdeactivate(spawnbeaconslot, level.spawnbeaconsettings.beaconweapon, 0);
+    self gadgetpowerset(spawnbeaconslot, 100);
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -953,7 +953,7 @@ function function_d82c03d4(player) {
     spawnbeacon endon(#"death");
     player waittill(#"joined_team");
     if (isdefined(spawnbeacon)) {
-        spawnbeacon thread function_a9ff3efb(0);
+        spawnbeacon thread destroyspawnbeacon(0);
     }
 }
 

@@ -366,9 +366,9 @@ function private function_5b7bbc40() {
         w_current = e_player getcurrentweapon();
         if (w_current == level.var_4e845c84 || w_current == level.var_58e17ce3) {
             if (e_player adsbuttonpressed()) {
-                e_player clientfield::set("" + #"hash_184a34e85c29399f", 0);
+                e_player clientfield::set("" + #"afterlife_vision_play", 0);
                 util::wait_network_frame();
-                e_player clientfield::set("" + #"hash_184a34e85c29399f", 1);
+                e_player clientfield::set("" + #"afterlife_vision_play", 1);
             }
         }
     }
@@ -1587,7 +1587,7 @@ function function_2992f8fe(e_ghost, var_5b9ba5a5) {
     wait 1.6;
     while (true) {
         var_da2705ac = self zm_utility::is_player_looking_at(e_ghost getcentroid());
-        var_8924ba8b = self clientfield::get("" + #"hash_184a34e85c29399f");
+        var_8924ba8b = self clientfield::get("" + #"afterlife_vision_play");
         var_383e18aa = isdefined(level.var_acc853e7.var_c95261d) && level.var_acc853e7.var_c95261d;
         if (var_da2705ac && (var_8924ba8b || var_383e18aa)) {
             if (!(isdefined(level.var_9cb7c32e) && level.var_9cb7c32e)) {
@@ -3070,7 +3070,7 @@ function private function_29d29761(e_ghost, var_5b9ba5a5) {
     e_ghost endon(#"death", #"ghost_seen");
     self endon(#"disconnect");
     while (true) {
-        if (self zm_utility::is_player_looking_at(e_ghost getcentroid()) && self clientfield::get("" + #"hash_184a34e85c29399f")) {
+        if (self zm_utility::is_player_looking_at(e_ghost getcentroid()) && self clientfield::get("" + #"afterlife_vision_play")) {
             if (!(isdefined(level.var_9cb7c32e) && level.var_9cb7c32e)) {
                 level.var_9cb7c32e = 1;
                 level function_629fa2c8(#"hash_57e9c23bed1bd753", self);
@@ -3232,21 +3232,21 @@ function function_1cda4094(e_player) {
     self.var_5bf7575e = 1;
     self ai::stun();
     self.instakill_func = &function_6472c628;
-    if (!self clientfield::get("" + #"hash_1b02e77fdbc51a4d")) {
+    if (!self clientfield::get("" + #"zombie_spectral_key_stun")) {
         var_21c1ba1 = e_player getentitynumber();
-        self clientfield::set("" + #"hash_1b02e77fdbc51a4d", var_21c1ba1 + 1);
-        e_player clientfield::set("" + #"hash_1efc6bf68f09d02c", 2);
+        self clientfield::set("" + #"zombie_spectral_key_stun", var_21c1ba1 + 1);
+        e_player clientfield::set("" + #"spectral_key_beam_flash", 2);
     }
     while (e_player.var_f1b20bef === self && isalive(self) && isdefined(self.var_c95261d) && self.var_c95261d) {
         waitframe(1);
     }
-    var_d64818ae = e_player clientfield::get("" + #"hash_1efc6bf68f09d02c");
+    var_d64818ae = e_player clientfield::get("" + #"spectral_key_beam_flash");
     if (e_player attackbuttonpressed() && var_d64818ae === 2) {
-        e_player clientfield::set("" + #"hash_1efc6bf68f09d02c", 1);
+        e_player clientfield::set("" + #"spectral_key_beam_flash", 1);
     }
     if (isalive(self)) {
-        if (self clientfield::get("" + #"hash_1b02e77fdbc51a4d")) {
-            self clientfield::set("" + #"hash_1b02e77fdbc51a4d", 0);
+        if (self clientfield::get("" + #"zombie_spectral_key_stun")) {
+            self clientfield::set("" + #"zombie_spectral_key_stun", 0);
         }
         self.var_5bf7575e = 0;
         self ai::clear_stun();
@@ -3274,7 +3274,7 @@ function private function_b952c1b(var_4bdd091b, str_tag = "j_spinelower") {
     var_4bdd091b endon(#"death", #"hash_71716a8e79096aee");
     v_pos = self getcentroid();
     var_88f24b00 = util::spawn_model("tag_origin", v_pos + (0, 0, 12), self.angles);
-    var_88f24b00 clientfield::set("" + #"hash_7a8b6df890ccc630", 1);
+    var_88f24b00 clientfield::set("" + #"spectral_key_essence", 1);
     var_88f24b00 playsound(#"zmb_sq_souls_release");
     n_dist = distance(var_88f24b00.origin, var_4bdd091b gettagorigin(str_tag));
     n_move_time = n_dist / 800;
@@ -3295,7 +3295,7 @@ function private function_b952c1b(var_4bdd091b, str_tag = "j_spinelower") {
         }
     }
     var_4bdd091b playsound(#"zmb_sq_souls_impact");
-    var_88f24b00 clientfield::set("" + #"hash_7a8b6df890ccc630", 0);
+    var_88f24b00 clientfield::set("" + #"spectral_key_essence", 0);
     wait 0.5;
     var_4bdd091b notify(#"hash_7b36770a2988e5d1");
     var_88f24b00 delete();

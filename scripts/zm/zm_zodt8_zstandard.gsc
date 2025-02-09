@@ -244,14 +244,14 @@ function defend_areas() {
 // Checksum 0xaea96384, Offset: 0x10a8
 // Size: 0x774
 function function_84139b27() {
-    zm_utility::function_c492c4d6(#"poop_deck", #"hash_82cab1897c803b8", array(#"zone_poop_deck"), array(#"engine_room", #"lounge", #"dining_hall", #"boat_deck"), #"hash_419e018f0a0f07fe", #"hash_5f80d9ba2fc090a");
-    zm_utility::function_c492c4d6(#"lounge", #"hash_18944a1360325a74", array(#"zone_lounge"), array(#"engine_room", #"poop_deck", #"cargo_hold", #"bridge"), #"hash_40ba277929e49516", #"hash_2bed1c6d7afa4192");
-    zm_utility::function_c492c4d6(#"dining_hall", #"hash_7ab52512f34acbe3", array(#"zone_dining_hall_fore", #"zone_dining_hall_aft"), array(#"poop_deck", #"engine_room", #"cargo_hold", #"forecastle"), #"hash_8a9d3480015e78b", #"hash_6bdaac7090cd4985");
-    zm_utility::function_c492c4d6(#"boat_deck", #"hash_3d0f15229df3eca2", array(#"zone_fore_deck"), array(#"bridge", #"engine_room", #"poop_deck", #"forecastle"), #"hash_7ed3d98c25f1502a", #"hash_4b2d803f03300036");
-    zm_utility::function_c492c4d6(#"forecastle", #"hash_4ceaaaca5eeb762e", array(#"zone_forecastle_lower", #"zone_forecastle_upper"), array(#"cargo_hold", #"bridge", #"boat_deck", #"dining_hall"), #"hash_27ad030950415bce", #"hash_fc714290197baba");
-    zm_utility::function_c492c4d6(#"engine_room", #"hash_1c2b2651f9ae026e", array(#"zone_upper_engine_room", #"zone_engine"), array(#"poop_deck", #"boat_deck", #"lounge", #"dining_hall"), #"hash_1f86bdff7abc4240", #"hash_7b8e9ff889f16cb0");
-    zm_utility::function_c492c4d6(#"cargo_hold", #"hash_59db20fe9332d7f8", array(#"zone_cargo"), array(#"forecastle", #"lounge", #"dining_hall", #"bridge"), #"hash_380fd44f5294766c", #"hash_49f3092df33c779c");
-    zm_utility::function_c492c4d6(#"bridge", #"hash_69b6ed066e710bd1", array(#"zone_bridge"), array(#"forecastle", #"cargo_hold", #"boat_deck", #"lounge"), #"hash_a3060fdfbbfdadb", #"hash_705b2c8817bf3775");
+    zm_utility::function_c492c4d6(#"poop_deck", #"s_mandatory_destination_poop_deck", array(#"zone_poop_deck"), array(#"engine_room", #"lounge", #"dining_hall", #"boat_deck"), #"hash_419e018f0a0f07fe", #"hash_5f80d9ba2fc090a");
+    zm_utility::function_c492c4d6(#"lounge", #"s_mandatory_destination_lounge", array(#"zone_lounge"), array(#"engine_room", #"poop_deck", #"cargo_hold", #"bridge"), #"hash_40ba277929e49516", #"hash_2bed1c6d7afa4192");
+    zm_utility::function_c492c4d6(#"dining_hall", #"s_mandatory_destination_dining_hall", array(#"zone_dining_hall_fore", #"zone_dining_hall_aft"), array(#"poop_deck", #"engine_room", #"cargo_hold", #"forecastle"), #"hash_8a9d3480015e78b", #"hash_6bdaac7090cd4985");
+    zm_utility::function_c492c4d6(#"boat_deck", #"s_mandatory_destination_obj_fore_deck", array(#"zone_fore_deck"), array(#"bridge", #"engine_room", #"poop_deck", #"forecastle"), #"hash_7ed3d98c25f1502a", #"hash_4b2d803f03300036");
+    zm_utility::function_c492c4d6(#"forecastle", #"s_mandatory_destination_obj_forecastle", array(#"zone_forecastle_lower", #"zone_forecastle_upper"), array(#"cargo_hold", #"bridge", #"boat_deck", #"dining_hall"), #"hash_27ad030950415bce", #"hash_fc714290197baba");
+    zm_utility::function_c492c4d6(#"engine_room", #"s_mandatory_destination_engine_room", array(#"zone_upper_engine_room", #"zone_engine"), array(#"poop_deck", #"boat_deck", #"lounge", #"dining_hall"), #"hash_1f86bdff7abc4240", #"hash_7b8e9ff889f16cb0");
+    zm_utility::function_c492c4d6(#"cargo_hold", #"s_mandatory_destination_obj_cargo", array(#"zone_cargo"), array(#"forecastle", #"lounge", #"dining_hall", #"bridge"), #"hash_380fd44f5294766c", #"hash_49f3092df33c779c");
+    zm_utility::function_c492c4d6(#"bridge", #"s_mandatory_destination_obj_bridge", array(#"zone_bridge"), array(#"forecastle", #"cargo_hold", #"boat_deck", #"lounge"), #"hash_a3060fdfbbfdadb", #"hash_705b2c8817bf3775");
     a_str_keys = getarraykeys(level.a_s_defend_areas);
     foreach (s_defend_area in level.a_s_defend_areas) {
         foreach (str_index in s_defend_area.a_str_next_defend) {

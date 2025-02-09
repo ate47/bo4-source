@@ -176,7 +176,7 @@ function givecustomloadout() {
         loadout = self loadout::get_loadout_slot("specialgrenade");
         loadout.weapon = secondaryoffhand;
         loadout.count = secondaryoffhandcount;
-        self ability_util::function_36a15b60(secondaryoffhand);
+        self ability_util::gadget_power_full(secondaryoffhand);
     }
     if (isbot(self) && !isdefined(level.botweapons[#"hero_annihilator_oic"])) {
         bot_action::register_bulletweapon(#"hero_annihilator_oic");

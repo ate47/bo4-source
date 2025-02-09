@@ -536,8 +536,8 @@ function function_fd08eb25() {
         deposithub = level.cleandeposithubs[var_79efdaa0];
         deposithub gameobjects::enable_object();
         deposithub gameobjects::allow_use(#"any");
-        smart_cover::function_18f38647(deposithub.trigger);
-        concertina_wire::function_18f38647(deposithub.trigger);
+        smart_cover::addprotectedzone(deposithub.trigger);
+        concertina_wire::addprotectedzone(deposithub.trigger);
         deposithub thread function_b8a3dde4();
         enableinfluencer(deposithub.influencer, 1);
         if (isdefined(level.var_1940f14e)) {
@@ -558,8 +558,8 @@ function function_fd08eb25() {
         }
         var_696c0ca5 = var_79efdaa0;
         wait level.cleandepositonlinetime;
-        smart_cover::function_60a53911(deposithub.trigger);
-        concertina_wire::function_60a53911(deposithub.trigger);
+        smart_cover::removeprotectedzone(deposithub.trigger);
+        concertina_wire::removeprotectedzone(deposithub.trigger);
         deposithub gameobjects::disable_object();
         deposithub gameobjects::allow_use(#"none");
         deposithub gameobjects::set_visible_team(#"none");

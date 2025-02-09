@@ -25,21 +25,21 @@ function autoexec __init__system__() {
 function __init__() {
     level.var_4e845c84 = getweapon(#"zhield_spectral_turret");
     level.var_22a393d4 = [];
-    clientfield::register("allplayers", "" + #"hash_184a34e85c29399f", 1, 1, "int", &function_b7608e70, 0, 0);
+    clientfield::register("allplayers", "" + #"afterlife_vision_play", 1, 1, "int", &afterlife_vision_play, 0, 0);
     clientfield::register("toplayer", "" + #"afterlife_window", 1, 1, "int", &afterlife_window, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_3c8cd47650fbb324", 1, 2, "int", &function_a694da18, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_e9b9b677ff2b8e2", 1, 1, "int", &function_e943883, 0, 1);
-    clientfield::register("allplayers", "" + #"hash_1efc6bf68f09d02c", 1, 2, "int", &function_f9a03171, 0, 0);
+    clientfield::register("scriptmover", "" + #"afterlife_entity_visibility", 1, 2, "int", &afterlife_entity_visibility, 0, 0);
+    clientfield::register("allplayers", "" + #"spectral_key_beam_fire", 1, 1, "int", &spectral_key_beam_fire, 0, 1);
+    clientfield::register("allplayers", "" + #"spectral_key_beam_flash", 1, 2, "int", &function_f9a03171, 0, 0);
     n_bits = getminbitcountfornum(4);
-    clientfield::register("actor", "" + #"hash_1b02e77fdbc51a4d", 1, n_bits, "int", &function_b570d455, 0, 0);
-    clientfield::register("vehicle", "" + #"hash_1b02e77fdbc51a4d", 1, n_bits, "int", &function_b570d455, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_1b02e77fdbc51a4d", 1, n_bits, "int", &function_b570d455, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_7a8b6df890ccc630", 1, 1, "int", &function_5655dc55, 0, 0);
+    clientfield::register("actor", "" + #"zombie_spectral_key_stun", 1, n_bits, "int", &function_b570d455, 0, 0);
+    clientfield::register("vehicle", "" + #"zombie_spectral_key_stun", 1, n_bits, "int", &function_b570d455, 0, 0);
+    clientfield::register("scriptmover", "" + #"zombie_spectral_key_stun", 1, n_bits, "int", &function_b570d455, 0, 0);
+    clientfield::register("scriptmover", "" + #"spectral_key_essence", 1, 1, "int", &function_5655dc55, 0, 0);
     clientfield::register("allplayers", "" + #"hash_7663ae2eb866d2eb", 1, 1, "counter", &function_50119cc1, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_e0f652f4a9ad8d5", 1, 2, "int", &function_36c349d0, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_5fc4ff8f1017bd0a", 1, 1, "counter", &function_6b58c030, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_6a04c04eae77e006", 1, 1, "counter", &function_107af28d, 0, 0);
-    clientfield::register("actor", "" + #"hash_3abdd4f4d64241e5", 1, 1, "int", &function_1b1ec967, 0, 0);
+    clientfield::register("allplayers", "" + #"spectral_key_charging", 1, 2, "int", &function_36c349d0, 0, 0);
+    clientfield::register("allplayers", "" + #"spectral_shield_blast", 1, 1, "counter", &function_6b58c030, 0, 0);
+    clientfield::register("scriptmover", "" + #"shield_crafting_fx", 1, 1, "counter", &shield_crafting_fx, 0, 0);
+    clientfield::register("actor", "" + #"spectral_blast_death", 1, 1, "int", &spectral_blast_death, 0, 0);
     clientfield::register("allplayers", "" + #"zombie_spectral_heal", 1, 1, "counter", &function_3f83a22f, 0, 0);
     level._effect[#"spectral_key_muzzle_flash1p"] = #"hash_1897770e10623dab";
     level._effect[#"spectral_key_muzzle_flash3p"] = #"hash_18906b0e105c0a99";
@@ -75,7 +75,7 @@ function __main__() {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x62e9f2, Offset: 0xca8
 // Size: 0x4dc
-function function_b7608e70(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function afterlife_vision_play(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (!isdefined(self.var_1d12110c)) {
         self.var_1d12110c = [];
     }
@@ -171,7 +171,7 @@ function afterlife_window(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Params 7, eflags: 0x1 linked
 // Checksum 0xc6045def, Offset: 0x1390
 // Size: 0x194
-function function_a694da18(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function afterlife_entity_visibility(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         if (!isdefined(level.var_22a393d4)) {
             level.var_22a393d4 = [];
@@ -218,7 +218,7 @@ function function_5681824(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xe43d8c64, Offset: 0x15f8
 // Size: 0xf2
-function function_1b1ec967(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function spectral_blast_death(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (isdefined(self.var_39306eaa)) {
         deletefx(localclientnum, self.var_39306eaa, 1);
         self.var_39306eaa = undefined;
@@ -236,7 +236,7 @@ function function_1b1ec967(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xe4fe5c7b, Offset: 0x16f8
 // Size: 0x10e
-function function_e943883(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function spectral_key_beam_fire(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death", #"disconnect", #"hash_3ed4154ad2e33ec3");
     if (!isdefined(self.var_2723e767)) {
         self.var_2723e767 = [];
@@ -730,7 +730,7 @@ function function_98890cd8(w_current, var_94c10bbd = 0) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x2c36f19d, Offset: 0x3728
 // Size: 0x74
-function function_107af28d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function shield_crafting_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::playfxontag(localclientnum, level._effect[#"shield_crafting"], self, "tag_origin");
 }
 

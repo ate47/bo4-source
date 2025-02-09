@@ -75,7 +75,7 @@ function init_flags() {
 // Checksum 0x83c7422c, Offset: 0x4b8
 // Size: 0x34
 function init_announcer() {
-    zm_audio::sndannouncervoxadd(#"hash_180baca4b791b352", #"hash_53687fb8d75cd0d");
+    zm_audio::sndannouncervoxadd(#"catwalk_warden_0_0", #"hash_53687fb8d75cd0d");
 }
 
 // Namespace zm_escape_vo_hooks/zm_escape_vo_hooks

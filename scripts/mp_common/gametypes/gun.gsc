@@ -343,7 +343,7 @@ function givecustomloadout(takeoldweapon = 0) {
         loadout = self loadout::get_loadout_slot("specialgrenade");
         loadout.weapon = secondaryoffhand;
         loadout.count = secondaryoffhandcount;
-        self ability_util::function_36a15b60(secondaryoffhand);
+        self ability_util::gadget_power_full(secondaryoffhand);
     }
     self setactionslot(3, "flourish_callouts");
     return currentweapon;

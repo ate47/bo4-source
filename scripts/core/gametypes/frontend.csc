@@ -201,7 +201,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0x85e48b78, Offset: 0x1748
 // Size: 0x84
 function function_e843475e(localclientnum, menuname) {
-    lui::createcameramenu(menuname, localclientnum, #"tag_align_frontend_background", #"hash_64fa56583c3b00bd");
+    lui::createcameramenu(menuname, localclientnum, #"tag_align_frontend_background", #"ui_scene_cam_background");
     lui::function_9d7ab167(menuname, localclientnum, 3, #"wz_inspection_struct", #"hash_191c3f4fc94449f1");
 }
 

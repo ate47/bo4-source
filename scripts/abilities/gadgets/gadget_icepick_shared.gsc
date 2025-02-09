@@ -777,7 +777,7 @@ function private function_aadad2c(attackingplayer, var_11a83c3a) {
     var_11a83c3a.var_e2131267 = attackingplayer;
     var_11a83c3a.var_20183706 = var_11a83c3a function_6c32d092(#"talent_resistance");
     var_559f4f0a = getstatuseffect("hacked");
-    duration = var_559f4f0a.var_77449e9;
+    duration = var_559f4f0a.seduration;
     if (var_11a83c3a.var_20183706) {
         settingsbundle = function_13f4415c();
         duration *= isdefined(settingsbundle.var_4624074e) ? settingsbundle.var_4624074e : 1;
@@ -818,7 +818,7 @@ function private function_bf744a1e(attackingplayer, var_11a83c3a) {
     settingsbundle = function_13f4415c();
     var_e7af1dd4 = var_11a83c3a function_6c32d092(#"talent_resistance") ? isdefined(settingsbundle.var_4624074e) ? settingsbundle.var_4624074e : 1 : 1;
     statuseffect = getstatuseffect("hacked");
-    additionaltime = statuseffect.var_77449e9 * var_e7af1dd4 * (isdefined(settingsbundle.var_9b5b082d) ? settingsbundle.var_9b5b082d : 1);
+    additionaltime = statuseffect.seduration * var_e7af1dd4 * (isdefined(settingsbundle.var_9b5b082d) ? settingsbundle.var_9b5b082d : 1);
     var_11a83c3a.hackendtime += additionaltime;
     var_11a83c3a status_effect::status_effect_apply(statuseffect, icepickweapon, attackingplayer, 0, additionaltime);
 }

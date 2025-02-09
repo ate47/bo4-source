@@ -1078,8 +1078,8 @@ function play_outro() {
         if (isdefined(player)) {
             player disableweaponfire();
         }
-        if (player clientfield::get("" + #"hash_9d9fb6cf3d5d3a6")) {
-            player clientfield::set("" + #"hash_9d9fb6cf3d5d3a6", 0);
+        if (player clientfield::get("" + #"chakram_whirlwind_fx")) {
+            player clientfield::set("" + #"chakram_whirlwind_fx", 0);
         }
     }
     namespace_c8efdadc::function_53bac096(1);

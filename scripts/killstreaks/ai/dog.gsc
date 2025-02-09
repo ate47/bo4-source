@@ -658,7 +658,7 @@ function function_df8cb62a(entity) {
     while (entity.ai.state != 2 && isdefined(entity.ai.hasseenfavoriteenemy) && entity.ai.hasseenfavoriteenemy) {
         if (isdefined(entity.enemy) && distancesquared(entity.enemy.origin, entity.origin) <= 400 * 400 && entity cansee(entity.enemy)) {
             entity clientfield::set("ks_dog_bark", 1);
-            entity playsound(#"hash_21775fa77c0df395");
+            entity playsound(#"aml_dog_run_bark");
             wait 1.2;
             entity clientfield::set("ks_dog_bark", 0);
         }
@@ -1018,7 +1018,7 @@ function function_668f9379(entity, mocompanim, mocompanimblendouttime, mocompani
 function event_handler[bhtn_action_start] function_df9abf31(eventstruct) {
     if (isdefined(self.archetype) && self.archetype == #"mp_dog") {
         if (eventstruct.action == "bark") {
-            self playsound(#"hash_21775fa77c0df395");
+            self playsound(#"aml_dog_run_bark");
         }
     }
 }

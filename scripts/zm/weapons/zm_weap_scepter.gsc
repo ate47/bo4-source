@@ -40,15 +40,15 @@ function autoexec __init__system__() {
 // Checksum 0x4c63d089, Offset: 0x340
 // Size: 0x61c
 function __init__() {
-    clientfield::register("allplayers", "" + #"hash_70c8a5d240e431ec", 1, 1, "counter");
+    clientfield::register("allplayers", "" + #"zombie_scepter_melee_impact", 1, 1, "counter");
     clientfield::register("allplayers", "" + #"zombie_scepter_melee", 1, 1, "counter");
     clientfield::register("allplayers", "" + #"zombie_scepter_heal", 1, 1, "counter");
     clientfield::register("actor", "" + #"zombie_scepter_stun", 1, 1, "int");
     clientfield::register("vehicle", "" + #"zombie_scepter_stun", 1, 1, "int");
     clientfield::register("scriptmover", "" + #"beacon_fx", 1, 1, "int");
     clientfield::register("allplayers", "" + #"skull_turret_beam_fire", 1, 2, "int");
-    clientfield::register("allplayers", "" + #"hash_6635e6da6fcfe594", 1, 2, "int");
-    clientfield::register("toplayer", "" + #"hash_2964d1cb7c4bd175", 1, 1, "counter");
+    clientfield::register("allplayers", "" + #"scepter_beam_flash", 1, 2, "int");
+    clientfield::register("toplayer", "" + #"hero_scepter_vigor_postfx", 1, 1, "counter");
     clientfield::register("allplayers", "" + #"zombie_scepter_revive", 1, 1, "int");
     clientfield::register("toplayer", "" + #"scepter_rumble", 1, 3, "counter");
     level.hero_weapon[#"scepter"][0] = getweapon(#"hero_scepter_lv1");
@@ -99,7 +99,7 @@ function private function_63e57124() {
         if (wpn_prev == level.hero_weapon[#"scepter"][0] || wpn_prev == level.hero_weapon[#"scepter"][1] || wpn_prev == level.hero_weapon[#"scepter"][2]) {
             self thread scepter_rumble(1);
             self clientfield::set("" + #"skull_turret_beam_fire", 0);
-            self clientfield::set("" + #"hash_6635e6da6fcfe594", 0);
+            self clientfield::set("" + #"scepter_beam_flash", 0);
             self notify(#"stop_damage");
             if (wpn_prev == level.hero_weapon[#"scepter"][1]) {
                 self thread function_89fc5431();
@@ -147,7 +147,7 @@ function private function_63e57124() {
 function private function_304a3c9b(var_c34665fc) {
     if (var_c34665fc === "hero_weapon_power_off" || var_c34665fc === "player_downed") {
         self clientfield::set("" + #"skull_turret_beam_fire", 0);
-        self clientfield::set("" + #"hash_6635e6da6fcfe594", 0);
+        self clientfield::set("" + #"scepter_beam_flash", 0);
         self.var_1de56cc8 = undefined;
         self notify(#"stop_damage");
     }
@@ -172,7 +172,7 @@ function private function_4521ac7e(w_curr, n_lvl) {
             continue;
         }
         self clientfield::set("" + #"skull_turret_beam_fire", n_lvl);
-        self clientfield::set("" + #"hash_6635e6da6fcfe594", n_lvl);
+        self clientfield::set("" + #"scepter_beam_flash", n_lvl);
         self.var_1de56cc8 = 1;
         self thread function_be8ae52f(w_curr);
         self notify(#"ammo_reduction", {#weapon:w_curr});
@@ -187,7 +187,7 @@ function private function_4521ac7e(w_curr, n_lvl) {
             }
         } while (zm_utility::is_player_valid(self) && self attackbuttonpressed() && !self fragbuttonpressed());
         self clientfield::set("" + #"skull_turret_beam_fire", 0);
-        self clientfield::set("" + #"hash_6635e6da6fcfe594", 0);
+        self clientfield::set("" + #"scepter_beam_flash", 0);
         self.var_1de56cc8 = undefined;
         self notify(#"stop_damage");
     }
@@ -218,7 +218,7 @@ function private function_4493c71b(weapon, n_lvl = 1) {
 // Size: 0xca
 function private function_eae0296b(str_level, b_postfx = 0) {
     if (b_postfx) {
-        self clientfield::increment_to_player("" + #"hash_2964d1cb7c4bd175");
+        self clientfield::increment_to_player("" + #"hero_scepter_vigor_postfx");
     }
     self.var_a0a1475c = 1;
     self notify(#"hash_11d4cfae418fcfe1");
@@ -360,7 +360,7 @@ function melee_zombies(weapon = level.weaponnone) {
         }
         e_target.chopped = 1;
         if (!var_f3edb3a6) {
-            self clientfield::increment("" + #"hash_70c8a5d240e431ec");
+            self clientfield::increment("" + #"zombie_scepter_melee_impact");
             var_f3edb3a6 = 1;
         }
         if (isdefined(e_target.var_73973410)) {
@@ -624,15 +624,15 @@ function function_37946a1d(s_params) {
         if (!isdefined(player)) {
             continue;
         }
-        player.n_level = player clientfield::get("" + #"hash_6635e6da6fcfe594");
+        player.n_level = player clientfield::get("" + #"scepter_beam_flash");
         if (player.n_level) {
-            player clientfield::set("" + #"hash_6635e6da6fcfe594", 0);
+            player clientfield::set("" + #"scepter_beam_flash", 0);
         }
     }
     waitframe(1);
     foreach (player in level.players) {
         if (zm_utility::is_player_valid(player) && isdefined(player.var_1de56cc8) && player.var_1de56cc8 && isdefined(player.n_level)) {
-            player clientfield::set("" + #"hash_6635e6da6fcfe594", player.n_level);
+            player clientfield::set("" + #"scepter_beam_flash", player.n_level);
         }
     }
 }
@@ -1055,7 +1055,7 @@ function beacon_fx_off() {
 function beacon_rumble() {
     self endon(#"disconnect", #"beacon_fx_off");
     while (isdefined(self.mdl_beacon)) {
-        self.mdl_beacon playrumbleonentity(#"hash_2bdce8ff08474d57");
+        self.mdl_beacon playrumbleonentity(#"zm_weap_scepter_planted_idle_rumble");
         wait 0.5;
     }
 }

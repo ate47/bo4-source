@@ -12,10 +12,10 @@
 // Method(s) 2 Total 2
 class class_92792865 {
 
+    var activecolor;
     var startstruct;
     var var_4de004b7;
     var var_d1e3e893;
-    var activecolor;
 
     // Namespace class_92792865/bot_chain
     // Params 0, eflags: 0x9 linked

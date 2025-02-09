@@ -1326,7 +1326,7 @@ function function_cc31a1fb() {
 // Size: 0x5c
 function function_31c6c56d() {
     self endon(#"death", #"hash_3ab0ebb5b062fd22");
-    self waittill(#"hash_63c1fbea5263c4f8");
+    self waittill(#"both_arms_destroyed");
     self flag::set(#"hash_40d65b70bdbb5939");
 }
 
@@ -2898,7 +2898,7 @@ function function_40f8980d() {
     foreach (e_player in util::get_active_players()) {
         w_hero_weapon = e_player.var_fd05e363;
         if (isdefined(w_hero_weapon)) {
-            e_player ability_util::function_36a15b60(w_hero_weapon);
+            e_player ability_util::gadget_power_full(w_hero_weapon);
             if (!e_player gadgetisactive(level.var_a53a05b5) && !e_player function_36dfc05f(level.var_a53a05b5)) {
                 e_player switchtoweaponimmediate(w_hero_weapon, 1);
             }
@@ -3277,7 +3277,7 @@ function function_7dba31c1(s_params) {
     if (isplayer(e_attacker)) {
         w_hero_weapon = e_attacker.var_fd05e363;
         if (isdefined(w_hero_weapon)) {
-            e_attacker ability_util::function_36a15b60(w_hero_weapon);
+            e_attacker ability_util::gadget_power_full(w_hero_weapon);
         }
     }
     arrayremovevalue(level.var_4bd942f3, self);

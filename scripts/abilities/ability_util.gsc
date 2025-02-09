@@ -142,7 +142,7 @@ function gadget_power_reset(gadgetweapon) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x835630b1, Offset: 0x610
 // Size: 0xd6
-function function_36a15b60(gadgetweapon) {
+function gadget_power_full(gadgetweapon) {
     if (isdefined(gadgetweapon)) {
         slot = self gadgetgetslot(gadgetweapon);
         if (slot >= 0 && slot < 3) {
@@ -203,7 +203,7 @@ function function_46b37314(fill_power) {
         if (isdefined(gadget_weapon)) {
             self function_1a38f0b0(gadget_weapon);
             if (isdefined(fill_power) && fill_power) {
-                self function_36a15b60(gadget_weapon);
+                self gadget_power_full(gadget_weapon);
             }
         }
     }
@@ -219,7 +219,7 @@ function function_ffd29673(fill_power) {
         if (isdefined(gadget_weapon)) {
             self function_1a38f0b0(gadget_weapon);
             if (isdefined(fill_power) && fill_power) {
-                self function_36a15b60(gadget_weapon);
+                self gadget_power_full(gadget_weapon);
             }
         }
     }
@@ -235,7 +235,7 @@ function function_b6d7e7e0(fill_power) {
         if (isdefined(gadget_weapon)) {
             self function_1a38f0b0(gadget_weapon);
             if (isdefined(fill_power) && fill_power) {
-                self function_36a15b60(gadget_weapon);
+                self gadget_power_full(gadget_weapon);
             }
         }
     }

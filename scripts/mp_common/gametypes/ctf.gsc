@@ -443,8 +443,8 @@ function createflagzone(trigger) {
     flagzone.flag = flag;
     flagzone createflagspawninfluencer(entityteam);
     excludezone = spawn("trigger_radius", trigger.origin, 120);
-    smart_cover::function_18f38647(excludezone);
-    concertina_wire::function_18f38647(excludezone);
+    smart_cover::addprotectedzone(excludezone);
+    concertina_wire::addprotectedzone(excludezone);
     return flagzone;
 }
 

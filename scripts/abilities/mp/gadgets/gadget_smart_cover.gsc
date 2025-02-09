@@ -60,7 +60,7 @@ function function_a430cceb(attacker, weapon) {
 function function_9a2b3318(origin, angles, player) {
     if (isdefined(level.smartcoversettings.bundle.var_bc78f60e)) {
         length2 = (level.smartcoversettings.bundle.var_bc78f60e + level.smartcoversettings.bundle.maxwidth) * (level.smartcoversettings.bundle.var_bc78f60e + level.smartcoversettings.bundle.maxwidth);
-        foreach (protectedzone in level.smartcoversettings.var_d6a27a84) {
+        foreach (protectedzone in level.smartcoversettings.objectivezones) {
             if (isdefined(protectedzone)) {
                 dist2 = distance2dsquared(origin, protectedzone.origin);
                 if (dist2 < length2) {
@@ -76,15 +76,15 @@ function function_9a2b3318(origin, angles, player) {
 // Params 1, eflags: 0x0
 // Checksum 0x584d81c2, Offset: 0x480
 // Size: 0x34
-function function_18f38647(zone) {
-    array::add(level.smartcoversettings.var_d6a27a84, zone);
+function addprotectedzone(zone) {
+    array::add(level.smartcoversettings.objectivezones, zone);
 }
 
 // Namespace smart_cover/gadget_smart_cover
 // Params 1, eflags: 0x0
 // Checksum 0x393c9bac, Offset: 0x4c0
 // Size: 0x34
-function function_60a53911(zone) {
-    arrayremovevalue(level.smartcoversettings.var_d6a27a84, zone);
+function removeprotectedzone(zone) {
+    arrayremovevalue(level.smartcoversettings.objectivezones, zone);
 }
 

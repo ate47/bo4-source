@@ -73,7 +73,7 @@ function function_c5d0e538() {
         if (isdefined(var_726be3fe)) {
             add_helico(var_726be3fe, #"hash_5e132c061625eb87");
         }
-        var_e18572a7 = getdynent(#"hash_678a1efded2b597a");
+        var_e18572a7 = getdynent(#"zombie_supply_stash_diner");
         if (isdefined(var_e18572a7)) {
             add_helico(var_e18572a7, #"hash_5e132c061625eb87");
         }
@@ -81,7 +81,7 @@ function function_c5d0e538() {
         if (isdefined(var_676cdb27)) {
             add_helico(var_676cdb27, #"hash_5e132c061625eb87");
         }
-        var_275d4dfc = getdynent(#"hash_2141ecb8d2d86b22");
+        var_275d4dfc = getdynent(#"zombie_supply_stash_lighthouse");
         if (isdefined(var_275d4dfc)) {
             add_helico(var_275d4dfc, #"hash_5e132c061625eb87");
         }
@@ -89,7 +89,7 @@ function function_c5d0e538() {
         if (isdefined(var_667d5645)) {
             add_helico(var_667d5645, #"hash_5e132c061625eb87");
         }
-        var_6d0e8b71 = getdynent(#"hash_1b83b702bbaae298");
+        var_6d0e8b71 = getdynent(#"zombie_supply_stash_boxinggym");
         if (isdefined(var_6d0e8b71)) {
             add_helico(var_6d0e8b71, #"hash_5e132c061625eb87");
         }

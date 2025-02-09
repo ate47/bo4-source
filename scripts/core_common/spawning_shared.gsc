@@ -460,8 +460,8 @@ function get_best_spawnpoint(point_team, influencer_team, player, predictedspawn
     }
     if (!predictedspawn) {
         var_c1c41f09 = 0;
-        if (isdefined(level.var_abb55703)) {
-            var_c1c41f09 = [[ level.var_abb55703 ]](player);
+        if (isdefined(level.playerspawnedfromspawnbeacon)) {
+            var_c1c41f09 = [[ level.playerspawnedfromspawnbeacon ]](player);
         }
         if (sessionmodeismultiplayergame()) {
             mpspawnpointsused = {#reason:"point used", #var_c734ddf2:getplayerspawnid(player), #x:spawn_point[#"origin"][0], #y:spawn_point[#"origin"][1], #z:spawn_point[#"origin"][2], #var_50641dd5:var_c1c41f09};

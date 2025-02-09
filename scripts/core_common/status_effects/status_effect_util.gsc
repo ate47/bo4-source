@@ -144,7 +144,7 @@ function status_effect_apply(var_756fda07, weapon, applicant, isadditive, durati
         return;
     }
     if (isdefined(var_894859a2)) {
-        var_756fda07.var_77449e9 *= var_894859a2;
+        var_756fda07.seduration *= var_894859a2;
         if (isdefined(durationoverride)) {
             durationoverride *= var_894859a2;
         }
@@ -490,7 +490,7 @@ function private update_duration(var_756fda07, var_b0144580, durationoverride, a
     if (isdefined(durationoverride)) {
         newduration = durationoverride;
     } else {
-        newduration = var_756fda07.var_77449e9;
+        newduration = var_756fda07.seduration;
     }
     newduration = int(newduration * (1 - resistance) * var_fb887b00);
     var_2226e3f0 = self.endtime;
@@ -537,7 +537,7 @@ function private function_57f33b96(var_756fda07, var_b0144580, durationoverride,
     if (isdefined(durationoverride)) {
         newduration = durationoverride;
     } else {
-        newduration = var_756fda07.var_77449e9;
+        newduration = var_756fda07.seduration;
     }
     newduration = int(newduration * (1 - resistance) * var_fb887b00);
     time = level.time;

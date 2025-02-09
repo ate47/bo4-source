@@ -284,7 +284,7 @@ function domflags() {
             if (isdefined(trigger)) {
                 trigger.visual = dom_flag;
                 trigger.script_label = dom_flag.script_label;
-                spawn_beacon::function_18f38647(trigger);
+                spawn_beacon::addprotectedzone(trigger);
             } else {
                 /#
                     util::error("<dev string:x68>" + dom_flag.script_label + "<dev string:x8a>" + dom_flag.target);
@@ -1758,7 +1758,7 @@ function isscoreboosting(player, flag) {
 function on_touch_use(sentient) {
     if (isplayer(sentient)) {
         if ((isdefined(self.contested) ? self.contested : 0) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
-            sentient playsoundtoplayer(#"hash_5daa27b37c13bc01", sentient);
+            sentient playsoundtoplayer(#"mpl_control_capture_contested", sentient);
             sentient.var_c8d27c06 = gettime() + 5000;
         }
     }
@@ -1781,7 +1781,7 @@ function onupdateuserate() {
                 foreach (struct in playerlist) {
                     player = struct.player;
                     if (isdefined(player) && isplayer(player) && (isdefined(player.var_c8d27c06) ? player.var_c8d27c06 : 0) < gettime()) {
-                        player playsoundtoplayer(#"hash_5daa27b37c13bc01", player);
+                        player playsoundtoplayer(#"mpl_control_capture_contested", player);
                         player.var_c8d27c06 = gettime() + 5000;
                     }
                 }

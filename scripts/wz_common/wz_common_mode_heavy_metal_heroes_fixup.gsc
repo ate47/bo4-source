@@ -1,19 +1,19 @@
 #using scripts\mp_common\item_world_fixup;
 #using scripts\wz_common\wz_common_fixup;
 
-#namespace namespace_731699f2;
+#namespace wz_common_mode_heavy_metal_heroes_fixup;
 
-// Namespace namespace_731699f2/namespace_731699f2
+// Namespace wz_common_mode_heavy_metal_heroes_fixup/wz_common_mode_heavy_metal_heroes_fixup
 // Params 0, eflags: 0x2
-// Checksum 0xc6be2665, Offset: 0x78
+// Checksum 0xa8f62c4a, Offset: 0x78
 // Size: 0x14
 function autoexec __init__() {
     function_b35b2850();
 }
 
-// Namespace namespace_731699f2/namespace_731699f2
+// Namespace wz_common_mode_heavy_metal_heroes_fixup/wz_common_mode_heavy_metal_heroes_fixup
 // Params 0, eflags: 0x1 linked
-// Checksum 0x9fbed28c, Offset: 0x98
+// Checksum 0x257c1af6, Offset: 0x98
 // Size: 0x6cc
 function function_b35b2850() {
     var_a12b4736 = &item_world_fixup::function_96ff7b88;

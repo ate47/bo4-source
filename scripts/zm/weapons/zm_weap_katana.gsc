@@ -33,8 +33,8 @@ function autoexec __init__system__() {
 // Size: 0x2ec
 function __init__() {
     clientfield::register("toplayer", "" + #"hero_katana_vigor_postfx", 1, 1, "counter");
-    clientfield::register("allplayers", "" + #"hash_13ccfca7b26cec97", 1, 1, "int");
-    clientfield::register("allplayers", "" + #"hash_7e2af117e18cb9fa", 1, 1, "int");
+    clientfield::register("allplayers", "" + #"katana_rush_postfx", 1, 1, "int");
+    clientfield::register("allplayers", "" + #"katana_rush_sfx", 1, 1, "int");
     level.hero_weapon[#"katana"][0] = getweapon(#"hero_katana_t8_lv1");
     level.hero_weapon[#"katana"][1] = getweapon(#"hero_katana_t8_lv2");
     level.hero_weapon[#"katana"][2] = getweapon(#"hero_katana_t8_lv3");
@@ -361,14 +361,14 @@ function function_bed1fd9f() {
     }
     self val::set(#"hash_6b725a8367e0178a", "ignoreme");
     self.var_4e6b62c3 = 1;
-    self clientfield::set("" + #"hash_7e2af117e18cb9fa", 1);
-    self clientfield::set("" + #"hash_13ccfca7b26cec97", 1);
+    self clientfield::set("" + #"katana_rush_sfx", 1);
+    self clientfield::set("" + #"katana_rush_postfx", 1);
     waitresult = self waittill(#"hero_katana_expired", #"hero_katana_rush_toggle");
     if (waitresult._notify == #"hero_katana_expired") {
         self playsound(#"hash_58397a948dd38b37");
     }
-    self clientfield::set("" + #"hash_7e2af117e18cb9fa", 0);
-    self clientfield::set("" + #"hash_13ccfca7b26cec97", 0);
+    self clientfield::set("" + #"katana_rush_sfx", 0);
+    self clientfield::set("" + #"katana_rush_postfx", 0);
     self val::reset(#"hash_6b725a8367e0178a", "ignoreme");
     self.var_4e6b62c3 = undefined;
 }

@@ -11,7 +11,7 @@
 
 #namespace zm_trap_buy_buttons;
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x2
 // Checksum 0x32e15bc5, Offset: 0x1e8
 // Size: 0x44
@@ -19,7 +19,7 @@ function autoexec __init__system__() {
     system::register(#"zm_trap_buy_buttons", &__init__, &__main__, undefined);
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x1 linked
 // Checksum 0x6f8e5b0, Offset: 0x238
 // Size: 0x24
@@ -27,7 +27,7 @@ function __init__() {
     callback::on_finalize_initialization(&init);
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x1 linked
 // Checksum 0x80f724d1, Offset: 0x268
 // Size: 0x4
@@ -35,7 +35,7 @@ function __main__() {
     
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x1 linked
 // Checksum 0x47e7656e, Offset: 0x278
 // Size: 0x188
@@ -52,7 +52,7 @@ function init() {
     }
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 1, eflags: 0x1 linked
 // Checksum 0xea5cfc6f, Offset: 0x408
 // Size: 0x4c
@@ -62,7 +62,7 @@ function function_cb307051(a_ents) {
     }
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 1, eflags: 0x1 linked
 // Checksum 0x79640a0b, Offset: 0x460
 // Size: 0x98
@@ -74,7 +74,7 @@ function function_81badccf(str_id) {
     }
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa7f89432, Offset: 0x500
 // Size: 0x98
@@ -86,7 +86,7 @@ function function_6087ebc2(str_id) {
     }
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 1, eflags: 0x1 linked
 // Checksum 0x19bb1bae, Offset: 0x5a0
 // Size: 0x98
@@ -98,7 +98,7 @@ function function_1b229077(str_id) {
     }
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x1 linked
 // Checksum 0xadca0f23, Offset: 0x640
 // Size: 0x126
@@ -122,7 +122,7 @@ function function_eac89317() {
     }
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x1 linked
 // Checksum 0xfaccdf34, Offset: 0x770
 // Size: 0x8c
@@ -132,7 +132,7 @@ function function_8cfecd54() {
     self.scene_ents[#"prop 1"] clientfield::set("trap_switch_red", 1);
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x1 linked
 // Checksum 0x646dafbc, Offset: 0x808
 // Size: 0x8c
@@ -142,7 +142,7 @@ function function_707cb9a9() {
     self.scene_ents[#"prop 1"] clientfield::set("trap_switch_green", 1);
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 0, eflags: 0x1 linked
 // Checksum 0xa8ecc20b, Offset: 0x8a0
 // Size: 0x6c
@@ -151,7 +151,7 @@ function function_baf2d8eb() {
     self.scene_ents[#"prop 1"] clientfield::set("trap_switch_smoke", 1);
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 2, eflags: 0x1 linked
 // Checksum 0xc474ec3b, Offset: 0x918
 // Size: 0x1e4
@@ -185,7 +185,7 @@ function function_ea998c9(var_458e12fe = 0, var_1798e06d = 0) {
     self triggerenable(1);
 }
 
-// Namespace zm_trap_buy_buttons/namespace_f78cb90a
+// Namespace zm_trap_buy_buttons/zm_towers_trap_buy_buttons
 // Params 1, eflags: 0x1 linked
 // Checksum 0x940bb938, Offset: 0xb08
 // Size: 0xe

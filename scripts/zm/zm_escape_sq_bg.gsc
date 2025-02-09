@@ -141,7 +141,7 @@ function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
             mdl_skull notify(#"caught_by_tomahawk");
             mdl_skull.origin = e_grenade.origin;
             mdl_skull linkto(mdl_tomahawk);
-            mdl_skull clientfield::set("" + #"hash_3c8cd47650fbb324", 2);
+            mdl_skull clientfield::set("" + #"afterlife_entity_visibility", 2);
             self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
             self thread give_player_macguffin_upon_receipt(mdl_tomahawk, mdl_skull);
             return true;

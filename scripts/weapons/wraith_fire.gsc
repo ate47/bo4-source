@@ -171,8 +171,8 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
     wallnormal = undefined;
     var_693f108f = undefined;
     var_8eb0a180 = getweapon(#"wraith_fire_fire");
-    var_f483ab45 = getweapon(#"hash_7d040bd867e93061");
-    var_fc031a6d = getweapon(#"hash_5624a55eb03372d0");
+    var_f483ab45 = getweapon(#"wraith_fire_fire_wall");
+    var_fc031a6d = getweapon(#"wraith_fire_steam");
     if (normal[2] < -0.5) {
         var_36c22d1d = position + vectorscale(normal, 2);
         var_8ae62b02 = var_36c22d1d - (0, 0, 240);
@@ -367,9 +367,9 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
         }
     }
     var_8eb0a180 = getweapon(#"wraith_fire_fire");
-    var_1c8ca3ba = getweapon(#"hash_753ba1d1412a4962");
-    var_c0fe81f1 = getweapon(#"hash_5e1f4dd6a8a34700");
-    var_fc031a6d = getweapon(#"hash_5624a55eb03372d0");
+    var_1c8ca3ba = getweapon(#"wraith_fire_fire_tall");
+    var_c0fe81f1 = getweapon(#"wraith_fire_fire_small");
+    var_fc031a6d = getweapon(#"wraith_fire_steam");
     var_6b23e1c9 = impactpos + normal * 1.5;
     forward = (1, 0, 0);
     if (abs(vectordot(forward, normal)) > 0.999) {

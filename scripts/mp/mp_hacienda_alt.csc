@@ -21,7 +21,7 @@ function event_handler[level_init] main(eventstruct) {
     load::main();
     level.domflagbasefxoverride = &dom_flag_base_fx_override;
     level.domflagcapfxoverride = &dom_flag_cap_fx_override;
-    level thread scene::play(#"hash_489f1d5fb79b12ab");
+    level thread scene::play(#"aib_vign_mp_hacienda_tiger_pacing_01");
     util::waitforclient(0);
 }
 

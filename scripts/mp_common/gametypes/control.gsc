@@ -802,7 +802,7 @@ function capture_loop(zone) {
     }
     zone.gameobject.ondecaycomplete = &on_decay_complete;
     zone thread function_31c391cf();
-    spawn_beacon::function_18f38647(zone.trigger);
+    spawn_beacon::addprotectedzone(zone.trigger);
     level waittill("zone_captured" + zone.zone_index, #"mission_timed_out");
     ownerteam = zone.gameobject gameobjects::get_owner_team();
     profilestart();
@@ -816,7 +816,7 @@ function capture_loop(zone) {
     zone.autodecaytime = level.autodecaytime;
     objective_setstate(zone.gameobject.objectiveid, "done");
     zone toggle_zone_effects(0);
-    spawn_beacon::function_60a53911(zone.trigger);
+    spawn_beacon::removeprotectedzone(zone.trigger);
     zone.gameobject gameobjects::disable_object();
     profilestop();
 }
@@ -918,7 +918,7 @@ function private function_bcaf6836() {
                 foreach (struct in playerlist) {
                     player = struct.player;
                     if (isdefined(player) && isplayer(player) && (isdefined(player.var_c8d27c06) ? player.var_c8d27c06 : 0) < gettime()) {
-                        player playsoundtoplayer(#"hash_5daa27b37c13bc01", player);
+                        player playsoundtoplayer(#"mpl_control_capture_contested", player);
                         player.var_c8d27c06 = gettime() + 5000;
                     }
                 }
@@ -934,7 +934,7 @@ function private function_bcaf6836() {
 function private on_touch_use(sentient) {
     if (isplayer(sentient)) {
         if (is_zone_contested(self) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
-            sentient playsoundtoplayer(#"hash_5daa27b37c13bc01", sentient);
+            sentient playsoundtoplayer(#"mpl_control_capture_contested", sentient);
             sentient.var_c8d27c06 = gettime() + 5000;
         }
         bb::function_95a5b5c2("entered_control_point", self.zoneindex, sentient.team, sentient.origin, sentient);

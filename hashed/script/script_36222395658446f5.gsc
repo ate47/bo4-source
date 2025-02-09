@@ -920,7 +920,7 @@ function function_858b2d2f() {
                 e_player switchtoweapon(w_current);
             }
             e_player flag::set(#"hash_f3f31bee1b786f2");
-            level.var_bff24582 clientfield::set("" + #"hash_228caf5cb0610875", 0);
+            level.var_bff24582 clientfield::set("" + #"magma_fireplace_fx", 0);
             return;
         }
         wait 0.1;

@@ -63,7 +63,7 @@ function function_b2755499(weapon, entity) {
     case #"hash_26ffb92552ae26be":
         returnweapon = getweapon("drone_squadron");
         break;
-    case #"hash_7eca6eae4128f3a0":
+    case #"player_air_vehicle1_main_turret_3rd_person":
         returnweapon = function_b53fa4ba(entity);
         break;
     case #"hash_61b88900b127386a":

@@ -543,7 +543,7 @@ function tomahawk_return_player(mdl_tomahawk, var_65f2e452, n_move_speed = 1600)
     self playsound("wpn_tomahawk_return");
     self notify(#"hash_1a7714f0d7e25f27");
     self waittilltimeout(8, #"hash_3d73720d4588203c");
-    self playsoundtoplayer(#"hash_5651c152f44645d1", self);
+    self playsoundtoplayer(#"wpn_tomahawk_cooldown_complete", self);
     self givemaxammo(getweapon(self.var_4f8fb07f));
     a_zombies = getaispeciesarray(level.zombie_team, "all");
     foreach (ai_zombie in a_zombies) {

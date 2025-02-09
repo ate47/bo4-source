@@ -34,13 +34,13 @@ function autoexec __init__system__() {
 // Size: 0x5a4
 function __init__() {
     clientfield::register("allplayers", "" + #"lightning_bolt_fx", 1, 1, "counter");
-    clientfield::register("toplayer", "" + #"hash_61e96e3005ea1d49", 1, 1, "counter");
+    clientfield::register("toplayer", "" + #"hero_hammer_armor_postfx", 1, 1, "counter");
     clientfield::register("scriptmover", "" + #"lightning_miss_fx", 1, 1, "int");
     clientfield::register("scriptmover", "" + #"hammer_storm", 1, 1, "int");
     clientfield::register("actor", "" + #"lightning_impact_fx", 1, 1, "int");
     clientfield::register("vehicle", "" + #"lightning_impact_fx", 1, 1, "int");
-    clientfield::register("actor", "" + #"hash_1e850b3e1aaeb945", 1, 1, "counter");
-    clientfield::register("vehicle", "" + #"hash_1e850b3e1aaeb945", 1, 1, "counter");
+    clientfield::register("actor", "" + #"hero_hammer_melee_impact_trail", 1, 1, "counter");
+    clientfield::register("vehicle", "" + #"hero_hammer_melee_impact_trail", 1, 1, "counter");
     clientfield::register("actor", "" + #"lightning_arc_fx", 1, 1, "int");
     clientfield::register("vehicle", "" + #"lightning_arc_fx", 1, 1, "int");
     clientfield::register("actor", "" + #"hero_hammer_stun", 1, 1, "int");
@@ -250,7 +250,7 @@ function function_439c9b04(player) {
 // Size: 0x8c
 function private activate_armor(weapon) {
     level callback::on_ai_killed(&function_1286cbf);
-    self clientfield::increment_to_player("" + #"hash_61e96e3005ea1d49");
+    self clientfield::increment_to_player("" + #"hero_hammer_armor_postfx");
     self waittill(#"weapon_change");
     level callback::remove_on_ai_killed(&function_1286cbf);
 }
@@ -314,7 +314,7 @@ function function_9799924f(e_target, weapon = level.weaponnone, var_3e3892a7, v_
         self playsoundtoplayer(#"hash_45070d2fde57b8aa", self);
         e_target dodamage(n_damage, self.origin, self, self, "none", "MOD_MELEE", 0, weapon);
         if (e_target.health <= 0) {
-            e_target clientfield::increment("" + #"hash_1e850b3e1aaeb945");
+            e_target clientfield::increment("" + #"hero_hammer_melee_impact_trail");
             e_target.ignoremelee = 1;
             switch (var_3e3892a7) {
             case 1:

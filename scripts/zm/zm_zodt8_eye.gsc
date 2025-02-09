@@ -345,10 +345,10 @@ function function_51e51897(var_5ea5c94d) {
     arrayremoveindex(level.sndplayervox, #"stoker", 1);
     arrayremoveindex(level.sndplayervox, #"kill", 1);
     arrayremoveindex(level.sndplayervox, #"fast_travel", 1);
-    arrayremoveindex(level.sndplayervox, #"hash_50660c7d730b03a1", 1);
-    arrayremoveindex(level.sndplayervox, #"hash_695932a4ae89574f", 1);
+    arrayremoveindex(level.sndplayervox, #"catalyst_decay_gas", 1);
+    arrayremoveindex(level.sndplayervox, #"catalyst_plasma_detonation", 1);
     arrayremoveindex(level.sndplayervox, #"hash_4433242e2d225df8", 1);
-    arrayremoveindex(level.sndplayervox, #"hash_4c7748b237c6fcbe", 1);
+    arrayremoveindex(level.sndplayervox, #"catalyst_radiant_scream", 1);
     level.var_923e8cb4 = struct::get_array("pd", "script_teleport");
     level.var_eeb98313 = &function_714f8756;
     level.custom_spawnplayer = &function_9bc4f8cb;

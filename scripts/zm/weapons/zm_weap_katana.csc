@@ -23,8 +23,8 @@ function autoexec __init__system__() {
 // Size: 0x10c
 function __init__() {
     clientfield::register("toplayer", "" + #"hero_katana_vigor_postfx", 1, 1, "counter", &function_d05553c6, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_13ccfca7b26cec97", 1, 1, "int", &function_ea3e4435, 0, 1);
-    clientfield::register("allplayers", "" + #"hash_7e2af117e18cb9fa", 1, 1, "int", &function_29c31d8d, 0, 1);
+    clientfield::register("allplayers", "" + #"katana_rush_postfx", 1, 1, "int", &katana_rush_postfx, 0, 1);
+    clientfield::register("allplayers", "" + #"katana_rush_sfx", 1, 1, "int", &katana_rush_sfx, 0, 1);
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
@@ -41,7 +41,7 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 // Params 7, eflags: 0x1 linked
 // Checksum 0xaa508717, Offset: 0x308
 // Size: 0x3b0
-function function_ea3e4435(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function katana_rush_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!isdefined(self.var_d3d459f)) {
         self.var_d3d459f = [];
     }
@@ -134,7 +134,7 @@ function private function_82ee4d9d(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x11ad8f31, Offset: 0x9b0
 // Size: 0x10e
-function function_29c31d8d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function katana_rush_sfx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         if (!isdefined(self.var_7804a42c)) {
             self playsound(localclientnum, #"hash_74fd1bb2db3d91ee");

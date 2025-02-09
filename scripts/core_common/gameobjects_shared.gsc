@@ -3263,7 +3263,7 @@ function take_use_weapon(useweapon) {
 // Size: 0x62
 function has_line_of_sight(player) {
     eye = player util::get_eye();
-    trace = sighttracepassed(eye, self.origin, 0, self.var_5ecd70, player);
+    trace = sighttracepassed(eye, self.origin, 0, self.parentobj, player);
     return trace;
 }
 

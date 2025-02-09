@@ -27,7 +27,7 @@ function __init__() {
 // Checksum 0xda9a5e75, Offset: 0x168
 // Size: 0x242
 function blind_apply(var_756fda07, weapon, applicant) {
-    self.owner.flashendtime = gettime() + var_756fda07.var_77449e9;
+    self.owner.flashendtime = gettime() + var_756fda07.seduration;
     self.owner.lastflashedby = applicant;
     if (self.owner == applicant) {
         return;

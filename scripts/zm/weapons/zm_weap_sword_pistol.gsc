@@ -25,17 +25,17 @@ function autoexec __init__system__() {
 // Checksum 0x1ac86b80, Offset: 0x290
 // Size: 0x7dc
 function __init__() {
-    clientfield::register("actor", "" + #"hash_663d94b765bbf524", 1, 1, "counter");
-    clientfield::register("vehicle", "" + #"hash_663d94b765bbf524", 1, 1, "counter");
-    clientfield::register("actor", "" + #"hash_4b4b5e4cb8fba5b", 1, 1, "counter");
-    clientfield::register("vehicle", "" + #"hash_4b4b5e4cb8fba5b", 1, 1, "counter");
-    clientfield::register("scriptmover", "" + #"hash_4d733389a8e35a7c", 1, 1, "int");
-    clientfield::register("actor", "" + #"hash_2b842a4f17120dfb", 1, 1, "counter");
-    clientfield::register("vehicle", "" + #"hash_2b842a4f17120dfb", 1, 1, "counter");
-    clientfield::register("actor", "" + #"hash_2bb63677db4333d4", 1, 1, "int");
-    clientfield::register("actor", "" + #"hash_513a7427138027da", 1, 1, "counter");
-    clientfield::register("vehicle", "" + #"hash_513a7427138027da", 1, 1, "counter");
-    clientfield::register("scriptmover", "" + #"hash_63827b1d4c75136f", 1, 1, "counter");
+    clientfield::register("actor", "" + #"sword_pistol_slice_right", 1, 1, "counter");
+    clientfield::register("vehicle", "" + #"sword_pistol_slice_right", 1, 1, "counter");
+    clientfield::register("actor", "" + #"sword_pistol_slice_left", 1, 1, "counter");
+    clientfield::register("vehicle", "" + #"sword_pistol_slice_left", 1, 1, "counter");
+    clientfield::register("scriptmover", "" + #"viper_bite_projectile", 1, 1, "int");
+    clientfield::register("actor", "" + #"viper_bite_projectile_impact", 1, 1, "counter");
+    clientfield::register("vehicle", "" + #"viper_bite_projectile_impact", 1, 1, "counter");
+    clientfield::register("actor", "" + #"viper_bite_bitten_fx", 1, 1, "int");
+    clientfield::register("actor", "" + #"dragon_roar_impact", 1, 1, "counter");
+    clientfield::register("vehicle", "" + #"dragon_roar_impact", 1, 1, "counter");
+    clientfield::register("scriptmover", "" + #"dragon_roar_explosion", 1, 1, "counter");
     clientfield::register("toplayer", "" + #"swordpistol_rumble", 1, 3, "counter");
     level.hero_weapon[#"sword_pistol"][0] = getweapon(#"hero_sword_pistol_lv1");
     level.hero_weapon[#"sword_pistol"][1] = getweapon(#"hero_sword_pistol_lv2");
@@ -156,10 +156,10 @@ function private function_6fe1307b(weapon) {
 function private blood_death_fx(var_14ef0a6c) {
     if (self.archetype === #"zombie") {
         if (var_14ef0a6c) {
-            self clientfield::increment("" + #"hash_4b4b5e4cb8fba5b", 1);
+            self clientfield::increment("" + #"sword_pistol_slice_left", 1);
             return;
         }
-        self clientfield::increment("" + #"hash_663d94b765bbf524", 1);
+        self clientfield::increment("" + #"sword_pistol_slice_right", 1);
     }
 }
 
@@ -477,7 +477,7 @@ function private function_698ddbd9(weapon) {
                 break;
             }
             if (isactor(e_target)) {
-                e_target clientfield::increment("" + #"hash_513a7427138027da");
+                e_target clientfield::increment("" + #"dragon_roar_impact");
                 if (n_level > 0 && i == a_e_targets.size - 1) {
                     var_fb504c3b = a_e_targets[i] getcentroid();
                     var_774fab40 = a_e_targets[i];
@@ -513,7 +513,7 @@ function private function_698ddbd9(weapon) {
         }
         self.var_4ecb8a5c dontinterpolate();
         self.var_4ecb8a5c.origin = var_fb504c3b;
-        self.var_4ecb8a5c clientfield::increment("" + #"hash_63827b1d4c75136f");
+        self.var_4ecb8a5c clientfield::increment("" + #"dragon_roar_explosion");
         var_2069eb4c = zm_hero_weapon::function_7c3681f7();
         var_2069eb4c = arraysortclosest(var_2069eb4c, var_2ed6f142, undefined, undefined, level.hero_weapon_stats[#"sword_pistol"][#"hash_634b06c9d5064145"]);
         if (isdefined(a_trace) && isdefined(a_trace[#"entity"]) && function_ffa5b184(a_trace[#"entity"].var_6f84b820 === #"inanimate")) {
@@ -632,12 +632,12 @@ function private function_e47a52e0(weapon) {
     n_time_travel = var_6ff1bf88 / n_move_speed;
     var_f0ccd955 = n_time_travel < 0.1 ? 0.1 : n_time_travel;
     self.var_7c78b80e moveto(v_end, var_f0ccd955);
-    self.var_7c78b80e clientfield::set("" + #"hash_4d733389a8e35a7c", 1);
+    self.var_7c78b80e clientfield::set("" + #"viper_bite_projectile", 1);
     self thread swordpistol_rumble(5);
     n_time_started = gettime() / 1000;
     n_time_elapsed = 0;
-    level notify(#"hash_4d733389a8e35a7c", {#player:self});
-    self notify(#"hash_4d733389a8e35a7c");
+    level notify(#"viper_bite_projectile", {#player:self});
+    self notify(#"viper_bite_projectile");
     while (n_time_elapsed < var_f0ccd955) {
         a_ai_targets = zm_hero_weapon::function_7c3681f7();
         a_ai_targets = util::get_array_of_closest(self.var_7c78b80e.origin, a_ai_targets, undefined, undefined, var_17af1110);
@@ -671,7 +671,7 @@ function private function_e47a52e0(weapon) {
         n_time_current = gettime() / 1000;
         n_time_elapsed = n_time_current - n_time_started;
     }
-    self.var_7c78b80e clientfield::set("" + #"hash_4d733389a8e35a7c", 0);
+    self.var_7c78b80e clientfield::set("" + #"viper_bite_projectile", 0);
     if (isalive(var_3c23401c)) {
         var_3c23401c thread function_72070f02(self, weapon);
         return;
@@ -818,7 +818,7 @@ function function_37106789(player, weapon) {
             break;
         }
     }
-    self clientfield::increment("" + #"hash_2b842a4f17120dfb");
+    self clientfield::increment("" + #"viper_bite_projectile_impact");
     self notify(#"hash_1404343e2a1a434c");
     waitframe(1);
     switch (self.var_6f84b820) {
@@ -843,7 +843,7 @@ function function_571d2d19(player, weapon) {
     self endon(#"death");
     if (isalive(self)) {
         self thread zm_hero_weapon::function_acee2761();
-        self clientfield::increment("" + #"hash_2b842a4f17120dfb");
+        self clientfield::increment("" + #"viper_bite_projectile_impact");
         waitframe(1);
         self dodamage(1000, self.origin, player, undefined, "none", "MOD_PROJECTILE", 0, weapon);
     }
@@ -855,7 +855,7 @@ function function_571d2d19(player, weapon) {
 // Size: 0x336
 function private function_3295542a(player, weapon) {
     var_344157ae = self getcentroid();
-    self clientfield::set("" + #"hash_2bb63677db4333d4", 1);
+    self clientfield::set("" + #"viper_bite_bitten_fx", 1);
     if (!isdefined(player.var_94a84ade)) {
         player.var_94a84ade = util::spawn_model("tag_origin", var_344157ae);
     } else {
@@ -863,7 +863,7 @@ function private function_3295542a(player, weapon) {
     }
     self waittill(#"hash_1404343e2a1a434c", #"death");
     if (isdefined(self)) {
-        self clientfield::set("" + #"hash_2bb63677db4333d4", 0);
+        self clientfield::set("" + #"viper_bite_bitten_fx", 0);
         self.var_69a981e6 = undefined;
     }
     if (isdefined(player)) {

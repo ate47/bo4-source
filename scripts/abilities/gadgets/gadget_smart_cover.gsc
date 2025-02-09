@@ -38,7 +38,7 @@ function init_shared() {
     level.smartcoversettings.var_546a220c = "smart_cover_objective_open";
     level.smartcoversettings.smartcoverweapon = getweapon("ability_smart_cover");
     level.smartcoversettings.var_4115bb3a = getweapon(#"hash_34575452eba07c65");
-    level.smartcoversettings.var_d6a27a84 = [];
+    level.smartcoversettings.objectivezones = [];
     setupdvars();
     ability_player::register_gadget_should_notify(27, 1);
     weaponobjects::function_e6400478(#"ability_smart_cover", &function_21e722f6, 1);

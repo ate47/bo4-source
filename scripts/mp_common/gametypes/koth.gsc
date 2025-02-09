@@ -212,7 +212,7 @@ function spawn_first_zone(delay) {
     #/
     level.zone enable_influencers(1);
     level.zone.gameobject.trigger allowtacticalinsertion(0);
-    spawn_beacon::function_18f38647(level.zone.trig);
+    spawn_beacon::addprotectedzone(level.zone.trig);
     matchrecordroundstart();
 }
 
@@ -233,7 +233,7 @@ function spawn_next_zone() {
             print("<dev string:x38>" + level.zone.trigorigin[0] + "<dev string:x4a>" + level.zone.trigorigin[1] + "<dev string:x4a>" + level.zone.trigorigin[2] + "<dev string:x4e>");
         #/
         level.zone enable_influencers(1);
-        spawn_beacon::function_18f38647(level.zone.trig);
+        spawn_beacon::addprotectedzone(level.zone.trig);
         matchrecordroundstart();
     }
     level.zone.gameobject.trigger allowtacticalinsertion(0);
@@ -377,7 +377,7 @@ function kothmainloop() {
         level.zone.gameobject gameobjects::set_model_visibility(0);
         level.zone.gameobject gameobjects::must_maintain_claim(0);
         level.zone togglezoneeffects(0);
-        spawn_beacon::function_60a53911(level.zone.trig);
+        spawn_beacon::removeprotectedzone(level.zone.trig);
         level notify(#"zone_reset");
         setmatchflag("bomb_timer_a", 0);
         spawn_next_zone();
@@ -468,7 +468,7 @@ function onupdateuserate() {
                     }
                     player = struct.player;
                     if (isdefined(player) && isplayer(player) && (isdefined(player.var_c8d27c06) ? player.var_c8d27c06 : 0) < gettime()) {
-                        player playsoundtoplayer(#"hash_5daa27b37c13bc01", player);
+                        player playsoundtoplayer(#"mpl_control_capture_contested", player);
                         player.var_c8d27c06 = gettime() + 5000;
                     }
                 }
@@ -485,7 +485,7 @@ function ontouchuse(sentient) {
     if (isplayer(sentient)) {
         self.var_464f0169 = self.iscontested;
         if (iszonecontested(self) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
-            sentient playsoundtoplayer(#"hash_5daa27b37c13bc01", sentient);
+            sentient playsoundtoplayer(#"mpl_control_capture_contested", sentient);
             sentient.var_c8d27c06 = gettime() + 5000;
         }
     }

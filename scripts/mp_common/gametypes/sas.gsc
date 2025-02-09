@@ -130,7 +130,7 @@ function givecustomloadout() {
     loadout.weapon = offhandprimary;
     loadout.count = 1;
     self ability_util::gadget_reset(offhandprimary, 0, 0, 1, 0);
-    self ability_util::function_36a15b60(offhandprimary);
+    self ability_util::gadget_power_full(offhandprimary);
     self.heroweapon = undefined;
     e_whippings = isdefined(getgametypesetting(#"hash_4ca06c610b5d53bd")) ? getgametypesetting(#"hash_4ca06c610b5d53bd") : 0;
     if (!e_whippings) {
@@ -141,7 +141,7 @@ function givecustomloadout() {
         loadout = self loadout::get_loadout_slot("specialgrenade");
         loadout.weapon = secondaryoffhand;
         loadout.count = secondaryoffhandcount;
-        self ability_util::function_36a15b60(secondaryoffhand);
+        self ability_util::gadget_power_full(secondaryoffhand);
     }
     self switchtoweapon(defaultweapon);
     self setspawnweapon(defaultweapon);

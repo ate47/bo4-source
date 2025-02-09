@@ -324,7 +324,7 @@ function function_7206d28() {
 // Checksum 0xb9eb3860, Offset: 0x1948
 // Size: 0x66
 function function_b93ad88d() {
-    level endon(#"hash_2f8bcdedfd04a879");
+    level endon(#"trials_round_end");
     level.zones[#"ice_floe"].is_enabled = 0;
     wait 1;
     level.zones[#"ice_floe"].is_enabled = 1;

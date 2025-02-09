@@ -35,7 +35,7 @@ function __init__() {
 // Checksum 0xf8d6db05, Offset: 0x248
 // Size: 0x74
 function function_6d7e1f79(localclientnum) {
-    self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_red", #"hash_76a36b718ab9858d");
+    self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_red", #"zm_ai/fx8_zombie_tiger_eye_glow_red");
     self.var_4703d488 = &function_3be6531a;
     self callback::on_shutdown(&on_entity_shutdown);
 }
@@ -59,10 +59,10 @@ function function_76110e92(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x84
 function function_3be6531a(localclientnum, turned) {
     if (turned) {
-        self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_green", #"hash_5ed7e32b7fd9a111");
+        self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_green", #"zm_ai/fx8_zombie_tiger_eye_glow_green");
         return;
     }
-    self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_red", #"hash_76a36b718ab9858d");
+    self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_red", #"zm_ai/fx8_zombie_tiger_eye_glow_red");
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger

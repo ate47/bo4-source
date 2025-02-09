@@ -18,8 +18,8 @@ function init() {
     clientfield::register("toplayer", "" + #"hash_3bb8b5cda11eecc6", 16000, 1, "counter", &function_b9329291, 0, 0);
     clientfield::register("scriptmover", "" + #"lightning_impact_fx", 16000, 1, "int", &function_ed1d0231, 0, 0);
     clientfield::register("scriptmover", "" + #"lightning_arc_fx", 16000, 1, "int", &function_37d1ee2e, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_2bb63677db4333d4", 16000, 1, "int", &function_5091797, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_2b842a4f17120dfb", 16000, 1, "counter", &function_e2680ff3, 0, 0);
+    clientfield::register("scriptmover", "" + #"viper_bite_bitten_fx", 16000, 1, "int", &function_5091797, 0, 0);
+    clientfield::register("scriptmover", "" + #"viper_bite_projectile_impact", 16000, 1, "counter", &function_e2680ff3, 0, 0);
     level._effect[#"hash_52f038f656770d3f"] = #"hash_433034414b39f1ef";
     level._effect[#"hash_52f039f656770ef2"] = #"hash_433035414b39f3a2";
     level._effect[#"hash_52f03af6567710a5"] = #"hash_7a9a94bbcf902878";
@@ -213,7 +213,7 @@ function function_5091797(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Size: 0xd4
 function function_e2680ff3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     str_fx_tag = isdefined(self gettagorigin("j_mainroot")) ? "j_mainroot" : "tag_driver";
-    util::playfxontag(localclientnum, level._effect[#"hash_2b842a4f17120dfb"], self, str_fx_tag);
+    util::playfxontag(localclientnum, level._effect[#"viper_bite_projectile_impact"], self, str_fx_tag);
     self playsound(0, #"hash_3098cba1f74bb5d1");
 }
 

@@ -22,11 +22,11 @@ function autoexec __init__system__() {
 // Size: 0x5d6
 function __init__() {
     clientfield::register("allplayers", "" + #"lightning_bolt_fx", 1, 1, "counter", &function_37d03e44, 0, 0);
-    clientfield::register("toplayer", "" + #"hash_61e96e3005ea1d49", 1, 1, "counter", &function_6765f5b4, 0, 0);
+    clientfield::register("toplayer", "" + #"hero_hammer_armor_postfx", 1, 1, "counter", &function_6765f5b4, 0, 0);
     clientfield::register("scriptmover", "" + #"lightning_miss_fx", 1, 1, "int", &function_93d275f2, 0, 0);
     clientfield::register("scriptmover", "" + #"hammer_storm", 1, 1, "int", &hammer_storm, 0, 0);
-    clientfield::register("actor", "" + #"hash_1e850b3e1aaeb945", 1, 1, "counter", &function_e6845153, 0, 0);
-    clientfield::register("vehicle", "" + #"hash_1e850b3e1aaeb945", 1, 1, "counter", &function_e6845153, 0, 0);
+    clientfield::register("actor", "" + #"hero_hammer_melee_impact_trail", 1, 1, "counter", &function_e6845153, 0, 0);
+    clientfield::register("vehicle", "" + #"hero_hammer_melee_impact_trail", 1, 1, "counter", &function_e6845153, 0, 0);
     clientfield::register("actor", "" + #"lightning_impact_fx", 1, 1, "int", &function_54b0b1b, 0, 0);
     clientfield::register("vehicle", "" + #"lightning_impact_fx", 1, 1, "int", &function_54b0b1b, 0, 0);
     clientfield::register("actor", "" + #"lightning_arc_fx", 1, 1, "int", &function_311f3501, 0, 0);

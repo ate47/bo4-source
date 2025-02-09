@@ -1094,7 +1094,7 @@ function private function_8e961216(slot, previous_weapon) {
         loadout.count = primaryoffhandcount;
         self ability_util::gadget_reset(primaryoffhand, changedclass, roundbased, firstround, changedspecialist);
         if (isdefined(level.specialistequipmentreadyonrespawn) && level.specialistequipmentreadyonrespawn) {
-            self ability_util::function_36a15b60(primaryoffhand);
+            self ability_util::gadget_power_full(primaryoffhand);
         }
     }
     pixendevent();
@@ -1152,7 +1152,7 @@ function function_c3448ab0(slot, previous_weapon, force_give_gadget_health_regen
         loadout.weapon = secondaryoffhand;
         loadout.count = secondaryoffhandcount;
         if (force_give_gadget_health_regen === 1) {
-            self ability_util::function_36a15b60(secondaryoffhand);
+            self ability_util::gadget_power_full(secondaryoffhand);
         } else {
             self ability_util::gadget_reset(secondaryoffhand, changedclass, roundbased, firstround, changedspecialist);
         }
@@ -1206,7 +1206,7 @@ function private give_special_offhand(slot, previous_weapon) {
         loadout.count = specialoffhandcount;
         self ability_util::gadget_reset(specialoffhand, changedclass, roundbased, firstround, changedspecialist);
         if (isdefined(level.specialistabilityreadyonrespawn) && level.specialistabilityreadyonrespawn) {
-            self ability_util::function_36a15b60(specialoffhand);
+            self ability_util::gadget_power_full(specialoffhand);
         }
         if (isdefined(self.var_ad1472a2) && self.var_ad1472a2 && specialoffhand.name == #"eq_gravityslam") {
             gadgetslot = self gadgetgetslot(specialoffhand);

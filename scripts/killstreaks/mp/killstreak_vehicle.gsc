@@ -537,7 +537,7 @@ function explode(attacker, weapon) {
     }
     attacker = self [[ level.figure_out_attacker ]](attacker);
     self vehicle_death();
-    var_d3213f00 = 0;
+    destroyedbyenemy = 0;
     var_3906173b = isdefined(weapon) && weapon.name === "gadget_icepick";
     if (!(isdefined(self.abandoned) && self.abandoned) && isplayer(attacker)) {
         bundle = self.var_22a05c26;
@@ -545,7 +545,7 @@ function explode(attacker, weapon) {
             if (isdefined(bundle)) {
                 attacker challenges::destroy_killstreak_vehicle(weapon, self, bundle.var_ebc402ca);
             }
-            var_d3213f00 = 1;
+            destroyedbyenemy = 1;
             if (isdefined(bundle)) {
                 self killstreaks::function_73566ec7(attacker, weapon, owner);
                 luinotifyevent(#"player_callout", 2, bundle.var_cbe3d7de, attacker.entnum);
@@ -564,7 +564,7 @@ function explode(attacker, weapon) {
     if (isdefined(bundle) && isdefined(bundle.var_bb6c29b4) && isdefined(weapon) && weapon == getweapon(#"shock_rifle")) {
         playfx(bundle.var_bb6c29b4, self.origin);
     }
-    return var_d3213f00;
+    return destroyedbyenemy;
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle

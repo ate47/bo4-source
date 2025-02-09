@@ -366,7 +366,7 @@ function function_bbde018c() {
     self.grenadetypeprimary = primaryoffhand;
     self.grenadetypeprimarycount = primaryoffhandcount;
     if (isdefined(level.specialistequipmentreadyonrespawn) && level.specialistequipmentreadyonrespawn) {
-        self ability_util::function_36a15b60(primaryoffhand);
+        self ability_util::gadget_power_full(primaryoffhand);
     }
     self giveweapon(level.weaponbasemelee);
     self.heroweapon = undefined;

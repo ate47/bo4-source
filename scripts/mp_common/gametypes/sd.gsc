@@ -521,8 +521,8 @@ function bombs() {
     for (index = 0; index < bombzones.size; index++) {
         trigger = bombzones[index];
         visuals = getentarray(bombzones[index].target, "targetname");
-        smart_cover::function_18f38647(trigger);
-        concertina_wire::function_18f38647(trigger);
+        smart_cover::addprotectedzone(trigger);
+        concertina_wire::addprotectedzone(trigger);
         name = #"sd" + trigger.script_label;
         waypointname = #"sd_waypoint" + trigger.script_label;
         trigger.angles = visuals[0].angles;

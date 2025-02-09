@@ -22,16 +22,16 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("actor", "" + #"zombie_slice_right", 1, 2, "counter", &function_8e1552b1, 1, 0);
     clientfield::register("actor", "" + #"zombie_slice_left", 1, 2, "counter", &function_6831ee4b, 1, 0);
-    clientfield::register("allplayers", "" + #"hash_aefa3d014b0fa1b", 1, 1, "counter", &function_97e2da8c, 1, 0);
-    clientfield::register("actor", "" + #"hash_1e22d429435cc148", 1, 1, "int", &function_f8183854, 1, 0);
-    clientfield::register("vehicle", "" + #"hash_1e22d429435cc148", 1, 1, "int", &function_f8183854, 1, 0);
-    clientfield::register("scriptmover", "" + #"hash_2a55372ad04eb0e5", 1, 1, "int", &function_29f91f81, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_302e96545259ba6b", 1, 1, "int", &function_852afbe9, 0, 0);
-    clientfield::register("actor", "" + #"hash_56421723ef2ac2fb", 1, 1, "counter", &function_b0c5c975, 0, 0);
-    clientfield::register("allplayers", "" + #"hash_9d9fb6cf3d5d3a6", 1, 1, "int", &function_522aa0e9, 0, 0);
-    clientfield::register("actor", "" + #"hash_3c3af9a781191429", 1, 1, "counter", &function_ab57c715, 1, 0);
-    clientfield::register("vehicle", "" + #"hash_3c3af9a781191429", 1, 1, "counter", &function_ab57c715, 1, 0);
-    clientfield::register("toplayer", "" + #"hash_7287b37a40c4ae6f", 1, 1, "counter", &function_24ce643c, 0, 0);
+    clientfield::register("allplayers", "" + #"chakram_melee_hit", 1, 1, "counter", &chakram_melee_hit, 1, 0);
+    clientfield::register("actor", "" + #"chakram_head_pop_fx", 1, 1, "int", &chakram_head_pop_fx, 1, 0);
+    clientfield::register("vehicle", "" + #"chakram_head_pop_fx", 1, 1, "int", &chakram_head_pop_fx, 1, 0);
+    clientfield::register("scriptmover", "" + #"chakram_throw_trail_fx", 1, 1, "int", &chakram_throw_trail_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"chakram_throw_impact_fx", 1, 1, "int", &chakram_throw_impact_fx, 0, 0);
+    clientfield::register("actor", "" + #"chakram_throw_special_impact_fx", 1, 1, "counter", &chakram_throw_special_impact_fx, 0, 0);
+    clientfield::register("allplayers", "" + #"chakram_whirlwind_fx", 1, 1, "int", &chakram_whirlwind_fx, 0, 0);
+    clientfield::register("actor", "" + #"chakram_whirlwind_shred_fx", 1, 1, "counter", &chakram_whirlwind_shred_fx, 1, 0);
+    clientfield::register("vehicle", "" + #"chakram_whirlwind_shred_fx", 1, 1, "counter", &chakram_whirlwind_shred_fx, 1, 0);
+    clientfield::register("toplayer", "" + #"chakram_speed_buff_postfx", 1, 1, "counter", &chakram_speed_buff_postfx, 0, 0);
     clientfield::register("toplayer", "" + #"chakram_rumble", 1, 3, "counter", &chakram_rumble, 0, 0);
     level._effect[#"sword_bloodswipe_r_1p"] = #"zombie/fx_sword_slash_right_1p_zod_zmb";
     level._effect[#"sword_bloodswipe_l_1p"] = #"zombie/fx_sword_slash_left_1p_zod_zmb";
@@ -78,7 +78,7 @@ function function_6831ee4b(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x86d4524d, Offset: 0xa98
 // Size: 0x90
-function function_97e2da8c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function chakram_melee_hit(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self zm_utility::function_f8796df3(localclientnum)) {
         playviewmodelfx(localclientnum, level._effect[#"hash_15593b3f860346f5"], "tag_fx8");
     }
@@ -88,7 +88,7 @@ function function_97e2da8c(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xf3a43ac3, Offset: 0xb30
 // Size: 0x7c
-function function_f8183854(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function chakram_head_pop_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         util::playfxontag(localclientnum, level._effect[#"hash_5f9bb382a47d637d"], self, "j_head");
     }
@@ -98,7 +98,7 @@ function function_f8183854(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x21ea6bbb, Offset: 0xbb8
 // Size: 0x126
-function function_29f91f81(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function chakram_throw_trail_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.fx_trail = util::playfxontag(localclientnum, level._effect[#"hash_6dca5478f1baf5ce"], self, "tag_fx");
         if (!isdefined(self.snd_looper)) {
@@ -119,7 +119,7 @@ function function_29f91f81(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xfc72bdfc, Offset: 0xce8
 // Size: 0xbc
-function function_852afbe9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function chakram_throw_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         playfx(localclientnum, level._effect[#"hash_3364e81f269deca0"], self.origin, anglestoforward(self.angles));
         playsound(localclientnum, #"hash_72a17706cb2656cd", self.origin);
@@ -130,7 +130,7 @@ function function_852afbe9(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xd51b0a62, Offset: 0xdb0
 // Size: 0xa4
-function function_b0c5c975(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function chakram_throw_special_impact_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         util::playfxontag(localclientnum, level._effect[#"hash_3364e81f269deca0"], self, "j_spine4");
         playsound(localclientnum, #"hash_72a17706cb2656cd", self.origin);
@@ -141,7 +141,7 @@ function function_b0c5c975(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xa8c89e7e, Offset: 0xe60
 // Size: 0x7c
-function function_24ce643c(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
+function chakram_speed_buff_postfx(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (!namespace_a6aea2c6::is_active(#"silent_film")) {
         self thread postfx::playpostfxbundle(#"hash_1663ca7cc81f9b17");
     }
@@ -151,7 +151,7 @@ function function_24ce643c(localclientnum, oldvalue, newvalue, bnewent, binitial
 // Params 7, eflags: 0x1 linked
 // Checksum 0x369d252b, Offset: 0xee8
 // Size: 0x6dc
-function function_522aa0e9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function chakram_whirlwind_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!isdefined(self.var_779b5b35)) {
         self.var_779b5b35 = [];
     }
@@ -187,8 +187,8 @@ function function_522aa0e9(localclientnum, oldval, newval, bnewent, binitialsnap
         if (self zm_utility::function_f8796df3(localclientnum)) {
             self.var_779b5b35[localclientnum] = playfxoncamera(localclientnum, level._effect[#"hash_6759261c70e31d0a"], (0, 0, 0), (1, 0, 0), (0, 0, 1));
             var_779b5b35 = self.var_779b5b35[localclientnum];
-            self thread postfx::playpostfxbundle(#"hash_42f753d2a430d5b5");
-            self playrumblelooponentity(localclientnum, #"hash_2415ce1fdc3f50c5");
+            self thread postfx::playpostfxbundle(#"pstfx_zm_chakram_whirlwind");
+            self playrumblelooponentity(localclientnum, #"zm_weap_chakram_whirlwind_rumble");
         } else {
             util::playfxontag(localclientnum, level._effect[#"hash_5c2ba805602ea484"], self, "tag_origin");
             wait 1;
@@ -205,7 +205,7 @@ function function_522aa0e9(localclientnum, oldval, newval, bnewent, binitialsnap
                         e_player thread zm_utility::function_ae3780f1(localclientnum, var_779b5b35, #"hash_1b4803a2f50e48ce");
                     }
                     e_player thread zm_utility::function_ae3780f1(localclientnum, var_4316c62f, #"hash_1b4803a2f50e48ce");
-                    e_player thread zm_utility::function_bb54a31f(localclientnum, #"hash_42f753d2a430d5b5", #"hash_1b4803a2f50e48ce");
+                    e_player thread zm_utility::function_bb54a31f(localclientnum, #"pstfx_zm_chakram_whirlwind", #"hash_1b4803a2f50e48ce");
                     e_player thread function_cfefd76a(localclientnum, var_c2545ba4, #"hash_1b4803a2f50e48ce");
                 }
             }
@@ -213,11 +213,11 @@ function function_522aa0e9(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     self playsound(localclientnum, #"hash_4f78bd85d9a43e3c");
-    if (self postfx::function_556665f2(#"hash_42f753d2a430d5b5")) {
-        self postfx::stoppostfxbundle(#"hash_42f753d2a430d5b5");
+    if (self postfx::function_556665f2(#"pstfx_zm_chakram_whirlwind")) {
+        self postfx::stoppostfxbundle(#"pstfx_zm_chakram_whirlwind");
     }
     if (self zm_utility::function_f8796df3(localclientnum)) {
-        self stoprumble(localclientnum, #"hash_2415ce1fdc3f50c5");
+        self stoprumble(localclientnum, #"zm_weap_chakram_whirlwind_rumble");
     }
     if (self zm_utility::function_f8796df3(localclientnum)) {
         playfxoncamera(localclientnum, level._effect[#"hash_6ac964121fa8b4bf"], (0, 0, 0), (1, 0, 0), (0, 0, 1));
@@ -246,7 +246,7 @@ function private function_cfefd76a(localclientnum, var_b3673abf, var_3ab46b9) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x2076129e, Offset: 0x16d0
 // Size: 0x74
-function function_ab57c715(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function chakram_whirlwind_shred_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::playfxontag(localclientnum, level._effect[#"hash_49a09babc9ee918a"], self, "j_spine4");
 }
 

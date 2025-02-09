@@ -109,18 +109,18 @@ function function_1e11d939(attacker, weapon) {
     }
     profilestart();
     self.exploding = 1;
-    var_d3213f00 = killstreak_vehicle::explode(attacker, weapon);
+    destroyedbyenemy = killstreak_vehicle::explode(attacker, weapon);
     if (isdefined(level.figure_out_attacker)) {
         attacker = self [[ level.figure_out_attacker ]](attacker);
     }
-    if (var_d3213f00 && isplayer(attacker)) {
+    if (destroyedbyenemy && isplayer(attacker)) {
         scoreevents::function_f40d64cc(attacker, self, weapon);
         if (isdefined(attacker)) {
             attacker stats::function_e24eec31(weapon, #"hash_3f3d8a93c372c67d", 1);
         }
     }
     profilestop();
-    return var_d3213f00;
+    return destroyedbyenemy;
 }
 
 // Namespace ai_tank/ai_tank

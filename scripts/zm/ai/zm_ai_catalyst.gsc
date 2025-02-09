@@ -499,7 +499,7 @@ function private function_e13aa91c() {
         foreach (player in level.players) {
             if (isalive(player) && !(isdefined(player.var_a0a1475c) && player.var_a0a1475c) && !player scene::is_igc_active() && distancesquared(player.origin, self.origin) <= self ai::function_9139c839().var_f3af70e6 * self ai::function_9139c839().var_f3af70e6 && (abs(player.origin[2] - trigger_midpoint[2]) <= self ai::function_9139c839().var_2a523c14 / 2 || abs(player geteye()[2] - trigger_midpoint[2]) <= self ai::function_9139c839().var_2a523c14 / 2)) {
                 player status_effect::status_effect_apply(var_7a79774b, undefined, self, 0);
-                player thread zm_audio::create_and_play_dialog(#"hash_50660c7d730b03a1", #"react");
+                player thread zm_audio::create_and_play_dialog(#"catalyst_decay_gas", #"react");
             }
         }
         waitframe(1);
@@ -680,7 +680,7 @@ function private function_e7a0424c(behaviortreeentity) {
     self thread function_e137506e(self.var_6b8f84c7);
     blind_status_effect = getstatuseffect("blind_zm_catalyst");
     self status_effect::status_effect_apply(blind_status_effect, undefined, self.var_6b8f84c7, 0, var_116cfaae);
-    self util::delay(1.3, undefined, &zm_audio::create_and_play_dialog, #"hash_4c7748b237c6fcbe", #"react");
+    self util::delay(1.3, undefined, &zm_audio::create_and_play_dialog, #"catalyst_radiant_scream", #"react");
     wait float(var_116cfaae) / 1000;
     if (self status_effect::function_4617032e(blind_status_effect.setype)) {
         self status_effect::function_408158ef(blind_status_effect.setype, blind_status_effect.var_18d16a6b);
@@ -830,7 +830,7 @@ function private function_3b07d86e() {
             player dodamage(var_2ffdfebc, v_blast_origin, self, self, "none", "MOD_EXPLOSIVE");
             var_6826a387 = getstatuseffect(#"hash_528115ad9eebc84f");
             player status_effect::status_effect_apply(var_6826a387, undefined, self, 0, undefined, undefined, v_blast_origin);
-            player thread zm_audio::create_and_play_dialog(#"hash_695932a4ae89574f", #"react");
+            player thread zm_audio::create_and_play_dialog(#"catalyst_plasma_detonation", #"react");
         }
         level thread function_49248f23(v_blast_origin, var_84dd3dd);
     }

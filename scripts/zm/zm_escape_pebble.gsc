@@ -522,14 +522,14 @@ function function_bdd1bac8(var_a1a0c2e3) {
         mdl_lock.var_2b6afc3c = 1;
     }
     var_21c1ba1 = self getentitynumber();
-    mdl_lock clientfield::set("" + #"hash_1b02e77fdbc51a4d", var_21c1ba1 + 1);
+    mdl_lock clientfield::set("" + #"zombie_spectral_key_stun", var_21c1ba1 + 1);
     while (true) {
         mdl_lock waittill(#"hash_2afc3e42ad78d30e");
         n_time = gettime();
         if (isdefined(mdl_lock) && !isdefined(mdl_lock.var_1e4fbc72) && n_time - mdl_lock.n_start_time > 1000) {
             mdl_lock.var_1e4fbc72 = 1;
             mdl_lock setmodel(#"hash_2ac3e09056fba532");
-            mdl_lock clientfield::set("" + #"hash_1b02e77fdbc51a4d", 0);
+            mdl_lock clientfield::set("" + #"zombie_spectral_key_stun", 0);
             foreach (e_player in level.activeplayers) {
                 e_player thread function_6272b55b();
             }
@@ -558,7 +558,7 @@ function function_96c2cea0(str_notify) {
     if (isdefined(mdl_lock.var_d86e9c27)) {
         mdl_lock.var_d86e9c27 = undefined;
     }
-    mdl_lock clientfield::set("" + #"hash_1b02e77fdbc51a4d", 0);
+    mdl_lock clientfield::set("" + #"zombie_spectral_key_stun", 0);
 }
 
 // Namespace pebble/zm_escape_pebble
@@ -1485,7 +1485,7 @@ function function_22927328(s_params) {
 // Size: 0x234
 function private function_beab34f9(v_origin) {
     mdl_fx = util::spawn_model("tag_origin", v_origin);
-    mdl_fx clientfield::set("" + #"hash_7a8b6df890ccc630", 1);
+    mdl_fx clientfield::set("" + #"spectral_key_essence", 1);
     mdl_fx playsound(#"zmb_sq_souls_release");
     mdl_fx playloopsound(#"zmb_sq_souls_lp");
     var_628578b4 = struct::get("s_m_b_stat_spawn");

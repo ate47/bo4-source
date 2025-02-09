@@ -2087,7 +2087,7 @@ function private function_158a1b7e() {
         }
         player zm_score::minus_to_player_score(500);
         self.stub thread zm_lockdown_util::function_61a9bc58();
-        player playsoundtoplayer(#"hash_4d5ca6fb8f2395de", player);
+        player playsoundtoplayer(#"zmb_powerup_vomit_cleaned", player);
     }
 }
 

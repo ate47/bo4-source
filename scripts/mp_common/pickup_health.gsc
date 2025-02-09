@@ -48,7 +48,7 @@ function function_e963e37d() {
         pickup.gameobject gameobjects::allow_use(#"any");
         pickup.gameobject gameobjects::set_use_time(0);
         pickup.gameobject.usecount = 0;
-        pickup.gameobject.var_5ecd70 = pickup;
+        pickup.gameobject.parentobj = pickup;
         pickup.gameobject.onuse = &function_5bb13b48;
     }
 }
@@ -129,7 +129,7 @@ function private function_5bb13b48(player) {
             if (isdefined(self.objectiveid)) {
                 objective_setinvisibletoplayer(self.objectiveid, player);
             }
-            self.var_5ecd70 setinvisibletoplayer(player);
+            self.parentobj setinvisibletoplayer(player);
             self.trigger setinvisibletoplayer(player);
             player playsoundtoplayer(#"hash_8a4d3f134fa94d7", player);
             self.usecount++;
@@ -143,7 +143,7 @@ function private function_5bb13b48(player) {
         }
     }
     if (!(isdefined(level.var_aff59367) && level.var_aff59367) && self.usecount >= level.var_ad9d03e7) {
-        self.var_5ecd70 delete();
+        self.parentobj delete();
         self gameobjects::disable_object(1);
     }
 }
@@ -160,7 +160,7 @@ function private function_7a80944d(player) {
     if (isdefined(self.objectiveid)) {
         objective_setvisibletoplayer(self.objectiveid, player);
     }
-    self.var_5ecd70 setvisibletoplayer(player);
+    self.parentobj setvisibletoplayer(player);
     self.trigger setvisibletoplayer(player);
 }
 

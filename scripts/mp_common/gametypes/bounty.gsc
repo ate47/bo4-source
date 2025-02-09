@@ -1675,7 +1675,7 @@ function private function_9ec1d15() {
     self.gameobject gameobjects::set_use_time(1.5);
     self.gameobject.onenduse = &function_d4a84cde;
     self.gameobject.usecount = 0;
-    self.gameobject.var_5ecd70 = self;
+    self.gameobject.parentobj = self;
     thread globallogic_audio::leader_dialog("bountyAirdropDetected");
 }
 

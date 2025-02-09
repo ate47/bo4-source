@@ -64,7 +64,7 @@ function function_8acd749d(entity, mocompanim, mocompanimblendouttime, mocompani
 // Checksum 0x1e134a79, Offset: 0x4a8
 // Size: 0x30
 function private function_e3151f98(entity) {
-    if (entity.var_9fde8624 === #"hash_65b3e15ded9326be") {
+    if (entity.var_9fde8624 === #"human_swat_gunner") {
         return true;
     }
     return false;

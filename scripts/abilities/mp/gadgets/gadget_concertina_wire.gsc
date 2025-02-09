@@ -63,7 +63,7 @@ function function_806b0f85(attacker, weapon) {
 function function_6190ae9e(origin, angles, player) {
     if (isdefined(level.var_87226c31.bundle.var_bc78f60e)) {
         length2 = (level.var_87226c31.bundle.var_bc78f60e + level.var_87226c31.bundle.maxwidth) * (level.var_87226c31.bundle.var_bc78f60e + level.var_87226c31.bundle.maxwidth);
-        foreach (protectedzone in level.var_87226c31.var_d6a27a84) {
+        foreach (protectedzone in level.var_87226c31.objectivezones) {
             if (isdefined(protectedzone)) {
                 dist2 = distance2dsquared(origin, protectedzone.origin);
                 if (dist2 < length2) {
@@ -79,15 +79,15 @@ function function_6190ae9e(origin, angles, player) {
 // Params 1, eflags: 0x0
 // Checksum 0xad58b3f7, Offset: 0x488
 // Size: 0x34
-function function_18f38647(zone) {
-    array::add(level.var_87226c31.var_d6a27a84, zone);
+function addprotectedzone(zone) {
+    array::add(level.var_87226c31.objectivezones, zone);
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
 // Params 1, eflags: 0x0
 // Checksum 0x1ca21011, Offset: 0x4c8
 // Size: 0x34
-function function_60a53911(zone) {
-    arrayremovevalue(level.var_87226c31.var_d6a27a84, zone);
+function removeprotectedzone(zone) {
+    arrayremovevalue(level.var_87226c31.objectivezones, zone);
 }
 

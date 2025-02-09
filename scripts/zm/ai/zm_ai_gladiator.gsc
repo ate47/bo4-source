@@ -1180,7 +1180,7 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
                     self.has_left_arm = 0;
                     if (!self.has_right_arm) {
                         if (!(isdefined(self.allowdeath) && self.allowdeath)) {
-                            self notify(#"hash_63c1fbea5263c4f8");
+                            self notify(#"both_arms_destroyed");
                         } else {
                             self kill(point, attacker, inflictor, weapon, 0, 1);
                         }
@@ -1199,7 +1199,7 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
                     self.has_right_arm = 0;
                     if (!self.has_left_arm) {
                         if (!(isdefined(self.allowdeath) && self.allowdeath)) {
-                            self notify(#"hash_63c1fbea5263c4f8");
+                            self notify(#"both_arms_destroyed");
                         } else {
                             self kill(point, attacker, inflictor, weapon, 0, 1);
                         }

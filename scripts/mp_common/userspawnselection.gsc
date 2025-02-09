@@ -34,7 +34,7 @@ function __init__() {
     level.usespawngroups = getgametypesetting(#"usespawngroups");
     level.spawngroups = [];
     level.next_spawn_group_index = 0;
-    level.var_abb55703 = &function_a316ca82;
+    level.playerspawnedfromspawnbeacon = &function_a316ca82;
     level.registeravailablespawnbeacon = &registeravailablespawnbeacon;
     level.var_13edf38c = &removespawnbeacon;
     level.spawnselect_timelimit_ms = getdvarint(#"spawnselect_timelimit_ms", 10000);
@@ -77,7 +77,7 @@ function function_93076e1d() {
 // Checksum 0x3de5d77e, Offset: 0x508
 // Size: 0x3e
 function function_a316ca82(player) {
-    spawnbeacon = player function_b9573d36();
+    spawnbeacon = player getspawnbeaconplayerspawnedfrom();
     if (isdefined(spawnbeacon)) {
         return true;
     }
@@ -244,7 +244,7 @@ function setspawngroupforplayer(selectedspawngroupindex) {
 // Params 0, eflags: 0x0
 // Checksum 0x956ed024, Offset: 0xbf0
 // Size: 0x180
-function function_b9573d36() {
+function getspawnbeaconplayerspawnedfrom() {
     player = self;
     if (level.spawnselectenabled !== 1 && level.var_6cd68fbe === 1) {
         return player.var_583f6cce;

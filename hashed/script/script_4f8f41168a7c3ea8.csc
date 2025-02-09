@@ -19,19 +19,19 @@ function autoexec __init__system__() {
 // Checksum 0x9134044, Offset: 0x158
 // Size: 0x872
 function __init__() {
-    clientfield::register("scriptmover", "" + #"hash_228caf5cb0610875", 1, getminbitcountfornum(4), "int", &function_a8e278b6, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_5f7eb9d1316d02a7", 1, 1, "int", &function_b2b48022, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_247e2f70c08b01f6", 1, 1, "int", &function_38caf7f2, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_f8ff865403f6655", 1, 1, "int", &function_82423f02, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_6954721e3aab6b22", 1, 2, "int", &function_aed4dc35, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_fireplace_fx", 1, getminbitcountfornum(4), "int", &magma_fireplace_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_fireplace_skull_fx", 1, 1, "int", &magma_fireplace_skull_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_door_barrier_fx", 1, 1, "int", &magma_door_barrier_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_glow_fx", 1, 1, "int", &magma_glow_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_urn_fire_fx", 1, 2, "int", &magma_urn_fire_fx, 0, 0);
     clientfield::register("scriptmover", "" + #"bg_spawn_fx", 1, 1, "int", &function_4707df22, 0, 0);
-    clientfield::register("toplayer", "" + #"hash_1a9944b03fae8660", 1, 1, "int", &function_beeca5c7, 0, 0);
-    clientfield::register("toplayer", "" + #"hash_c79e0b124c4b75", 1, 1, "counter", &function_ffeeebf3, 0, 0);
-    clientfield::register("toplayer", "" + #"hash_39d19b76b846a27f", 1, 1, "counter", &function_fcb0f78b, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_148c1ac364522c90", 1, 1, "int", &function_29cb0695, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_1142930568dc278b", 1, 1, "int", &function_99930d42, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_31f39c058ef79e2", 1, 1, "counter", &function_817977d1, 0, 0);
-    clientfield::register("scriptmover", "" + #"hash_3c74a33b8e1adb73", 1, 1, "counter", &function_928bef5f, 0, 0);
+    clientfield::register("toplayer", "" + #"magma_gat_glow_override", 1, 1, "int", &magma_gat_glow_override, 0, 0);
+    clientfield::register("toplayer", "" + #"magma_gat_glow_recharge", 1, 1, "counter", &magma_gat_glow_recharge, 0, 0);
+    clientfield::register("toplayer", "" + #"magma_gat_glow_shot_fired", 1, 1, "counter", &magma_gat_glow_shot_fired, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_essence_explode_fx", 1, 1, "int", &magma_essence_explode_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_gat_essence_fx", 1, 1, "int", &magma_gat_essence_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_gat_disappear_fx", 1, 1, "counter", &magma_gat_disappear_fx, 0, 0);
+    clientfield::register("scriptmover", "" + #"magma_urn_triggered_fx", 1, 1, "counter", &magma_urn_triggered_fx, 0, 0);
     clientfield::register("scriptmover", "" + #"hash_7692067c56d8b6cc", 1, 2, "int", &function_84e77740, 0, 0);
     level._effect[#"magma_fireplace"] = #"hash_50cd5a75aebe8def";
     level._effect[#"hash_22aea05cb07dd55e"] = #"hash_51005475aee9dd56";
@@ -51,14 +51,14 @@ function __init__() {
     level._effect[#"hash_54790ee0d9025900"] = #"hash_6fdfb9444067e8f4";
     level._effect[#"hash_5d3b4b76ea5885f6"] = #"hash_4835bd332e8a78c7";
     level._effect[#"hash_3932ab509a43ca38"] = #"hash_7c63ac8e5b0a88e6";
-    level._effect[#"hash_707e0698b9a2b882"] = #"hash_170bbc9437bc68c9";
+    level._effect[#"acid_gat_lock_fx"] = #"hash_170bbc9437bc68c9";
 }
 
 // Namespace namespace_fc5c8455/namespace_8d08012b
 // Params 7, eflags: 0x1 linked
 // Checksum 0xaad50a6d, Offset: 0x9d8
 // Size: 0x1ca
-function function_a8e278b6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_fireplace_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (isdefined(self.var_634618de)) {
         stopfx(localclientnum, self.var_634618de);
         self.var_634618de = undefined;
@@ -83,7 +83,7 @@ function function_a8e278b6(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xfc5848f7, Offset: 0xbb0
 // Size: 0xf6
-function function_b2b48022(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_fireplace_skull_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         if (isdefined(self.var_d96d2274)) {
             stopfx(localclientnum, self.var_d96d2274);
@@ -102,7 +102,7 @@ function function_b2b48022(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xef31b378, Offset: 0xcb0
 // Size: 0xf6
-function function_99930d42(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_gat_essence_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         if (isdefined(self.var_55792791)) {
             stopfx(localclientnum, self.var_55792791);
@@ -121,7 +121,7 @@ function function_99930d42(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xe1cc75d8, Offset: 0xdb0
 // Size: 0xf6
-function function_38caf7f2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_door_barrier_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         if (isdefined(self.var_57692f88)) {
             stopfx(localclientnum, self.var_57692f88);
@@ -140,7 +140,7 @@ function function_38caf7f2(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xdbf2f258, Offset: 0xeb0
 // Size: 0xf6
-function function_82423f02(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_glow_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         if (isdefined(self.var_4e35f286)) {
             stopfx(localclientnum, self.var_4e35f286);
@@ -159,7 +159,7 @@ function function_82423f02(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x7a9a65f1, Offset: 0xfb0
 // Size: 0x7c
-function function_29cb0695(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_essence_explode_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         util::playfxontag(localclientnum, level._effect[#"hash_40c10e05964e71b5"], self, "tag_origin");
     }
@@ -169,7 +169,7 @@ function function_29cb0695(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xb5bf0acf, Offset: 0x1038
 // Size: 0x74
-function function_817977d1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_gat_disappear_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     util::playfxontag(localclientnum, level._effect[#"hash_d9adad5b2ead852"], self, "tag_origin");
 }
 
@@ -177,7 +177,7 @@ function function_817977d1(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0xdf0dcd2c, Offset: 0x10b8
 // Size: 0x18c
-function function_beeca5c7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_gat_glow_override(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self playrenderoverridebundle(#"hash_4fb0136f51fcf7", "tag_weapon");
         self function_78233d29(#"hash_4fb0136f51fcf7", "tag_weapon", "Brightness", 0.7);
@@ -198,7 +198,7 @@ function function_beeca5c7(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x35ffb164, Offset: 0x1250
 // Size: 0x114
-function function_ffeeebf3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_gat_glow_recharge(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (!isdefined(self.var_23c215c)) {
         self.var_23c215c = 25;
     }
@@ -325,7 +325,7 @@ function function_eba88fd(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0xd7ccf058, Offset: 0x1930
 // Size: 0x76
-function function_fcb0f78b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_gat_glow_shot_fired(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (isdefined(self.var_23c215c)) {
         self.var_23c215c -= 6;
         if (self.var_23c215c < 0) {
@@ -338,7 +338,7 @@ function function_fcb0f78b(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x0
 // Checksum 0x293fb17f, Offset: 0x19b0
 // Size: 0x176
-function function_313e2c94(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_forging_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 2) {
         if (isdefined(self.var_634618de)) {
             stopfx(localclientnum, self.var_634618de);
@@ -365,7 +365,7 @@ function function_313e2c94(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x1 linked
 // Checksum 0x979961bd, Offset: 0x1b30
 // Size: 0x1c2
-function function_aed4dc35(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_urn_fire_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (isdefined(self.var_d8243293)) {
         stopfx(localclientnum, self.var_d8243293);
         self.var_d8243293 = undefined;
@@ -439,7 +439,7 @@ function function_bbfe3432(localclientnum) {
 // Params 7, eflags: 0x1 linked
 // Checksum 0x48fb5a11, Offset: 0x2088
 // Size: 0x9c
-function function_928bef5f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+function magma_urn_triggered_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     util::playfxontag(localclientnum, level._effect[#"hash_3932ab509a43ca38"], self, "tag_origin");
     playsound(localclientnum, #"hash_4cd38326868832c7", self.origin);
 }
@@ -448,7 +448,7 @@ function function_928bef5f(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7, eflags: 0x0
 // Checksum 0x77c09b46, Offset: 0x2130
 // Size: 0x74
-function function_c91db38a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    util::playfxontag(localclientnum, level._effect[#"hash_707e0698b9a2b882"], self, "tag_origin");
+function acid_gat_lock_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
+    util::playfxontag(localclientnum, level._effect[#"acid_gat_lock_fx"], self, "tag_origin");
 }
 

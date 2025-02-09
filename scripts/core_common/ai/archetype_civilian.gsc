@@ -182,8 +182,8 @@ function private rioterchoosepositionservice(entity) {
     isinbadplace = entity isinanybadplace();
     lastknownpos = entity lastknownpos(entity.enemy);
     dist = distance2d(entity.origin, lastknownpos);
-    var_1ebff8de = itsbeenawhile || !isatscriptgoal || isinbadplace;
-    if (!var_1ebff8de) {
+    shouldfindbetterposition = itsbeenawhile || !isatscriptgoal || isinbadplace;
+    if (!shouldfindbetterposition) {
         return false;
     }
     if (forcedgoal) {
@@ -269,8 +269,8 @@ function private civilianwanderservice(entity) {
     forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
     isatscriptgoal = entity isatgoal() || entity isapproachinggoal();
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
-    var_1ebff8de = itsbeenawhile || !isatscriptgoal;
-    if (!var_1ebff8de) {
+    shouldfindbetterposition = itsbeenawhile || !isatscriptgoal;
+    if (!shouldfindbetterposition) {
         return false;
     }
     if (forcedgoal) {
@@ -327,8 +327,8 @@ function private civilianfollowservice(entity) {
     forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
     isatscriptgoal = entity isatgoal() || entity isapproachinggoal();
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
-    var_1ebff8de = itsbeenawhile || !isatscriptgoal || distsq < 0 || distsq > followradiussq;
-    if (!var_1ebff8de) {
+    shouldfindbetterposition = itsbeenawhile || !isatscriptgoal || distsq < 0 || distsq > followradiussq;
+    if (!shouldfindbetterposition) {
         return false;
     }
     pixbeginevent("civilian_follow_tacquery");
